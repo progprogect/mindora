@@ -1,0 +1,172 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ */
+/* Design tokens (HSL) — SuccessWise brand                             */
+/* ------------------------------------------------------------------ */
+:root {
+  --sw-blue: 221 83% 53%;
+  --sw-blue-hover: 224 76% 48%;
+  --sw-blue-light: 214 100% 97%;
+  --sw-dark: 0 0% 4%;
+  --sw-grey: 220 9% 42%;
+  --sw-grey-light: 220 14% 96%;
+  --sw-border: 220 13% 91%;
+  --sw-success: 142 71% 45%;
+  --sw-success-light: 138 76% 97%;
+  --sw-amber: 38 92% 50%;
+  --sw-amber-light: 48 100% 96%;
+  --sw-red: 0 84% 60%;
+  --sw-white: 0 0% 100%;
+
+  --sw-gradient-start: 221 83% 53%;
+  --sw-gradient-end: 262 83% 58%;
+
+  --sw-radius: 1rem;
+  --sw-radius-sm: 0.625rem;
+  --sw-shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --sw-shadow-lg: 0 20px 40px -12px rgb(0 0 0 / 0.15);
+}
+
+@theme inline {
+  --color-sw-blue: hsl(var(--sw-blue));
+  --color-sw-blue-hover: hsl(var(--sw-blue-hover));
+  --color-sw-blue-light: hsl(var(--sw-blue-light));
+  --color-sw-dark: hsl(var(--sw-dark));
+  --color-sw-grey: hsl(var(--sw-grey));
+  --color-sw-grey-light: hsl(var(--sw-grey-light));
+  --color-sw-border: hsl(var(--sw-border));
+  --color-sw-success: hsl(var(--sw-success));
+  --color-sw-success-light: hsl(var(--sw-success-light));
+  --color-sw-amber: hsl(var(--sw-amber));
+  --color-sw-amber-light: hsl(var(--sw-amber-light));
+  --color-sw-red: hsl(var(--sw-red));
+  --color-sw-white: hsl(var(--sw-white));
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sw: var(--sw-radius);
+  --radius-sw-sm: var(--sw-radius-sm);
+
+  --animate-fade-up: fade-up 0.5s ease-out both;
+  --animate-fade-in: fade-in 0.4s ease-out both;
+  --animate-pulse-cta: pulse-cta 2.2s ease-in-out infinite;
+  --animate-marquee: marquee 22s linear infinite;
+  --animate-spin-wheel: spin-wheel 4.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  --animate-slide-up: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-count-ring: count-ring 1.4s ease-out forwards;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--sw-border));
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: hsl(var(--sw-dark));
+    background-color: hsl(var(--sw-white));
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Animations                                                          */
+/* ------------------------------------------------------------------ */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-cta {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--sw-blue) / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 10px hsl(var(--sw-blue) / 0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes spin-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(var(--wheel-final-rotation, 1800deg));
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes count-ring {
+  from {
+    stroke-dashoffset: var(--ring-circumference, 283);
+  }
+  to {
+    stroke-dashoffset: var(--ring-offset, 0);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utility helpers not easily expressed with Tailwind utilities         */
+/* ------------------------------------------------------------------ */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

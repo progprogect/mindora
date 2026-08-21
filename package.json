@@ -1,0 +1,39 @@
+{
+  "name": "successwise-quizzes",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "start": "serve dist -s -l tcp://0.0.0.0:${PORT:-3000}",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "convex:dev": "convex dev",
+    "convex:seed": "convex run products:seedDefaultProducts"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^6.8.1",
+    "@stripe/stripe-js": "^9.13.0",
+    "convex": "^1.44.0",
+    "lucide-react": "^1.33.0",
+    "posthog-js": "^1.418.6",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "serve": "^14.2.4",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
+  }
+}

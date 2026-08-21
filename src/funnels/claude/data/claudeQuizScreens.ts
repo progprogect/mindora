@@ -1,0 +1,322 @@
+import type { ClaudeQuestionScreenDef, ClaudeQuizScreenDef } from '@/funnels/claude/types/claudeQuiz'
+
+/**
+ * 1:1 port of the production Claude AI Certification quiz flow (array `h`
+ * in `claude-ai-certification-*.js`), captured live from
+ * https://www.successwise.ai/quiz/claude-ai-certification via Chrome
+ * DevTools MCP — see docs/claude_ai_certification/implementation-plan.md,
+ * Этап 2. 24 screens total: identity, social-proof, 16 questions,
+ * 3 interstitials, 1 certificate, loading, email.
+ */
+export const claudeQuizScreens: ClaudeQuizScreenDef[] = [
+  {
+    type: 'identity',
+    id: 'identity',
+    totalSteps: 16,
+    headline: "Let's Create Your Claude AI Learning Plan",
+    subtext: 'Have you ever used Claude?',
+    options: [
+      { emoji: '✅', label: 'Yes', value: 'yes' },
+      { emoji: '🔍', label: 'Not yet', value: 'not-yet' },
+    ],
+  },
+  {
+    type: 'social-proof',
+    id: 'positive-reinforcement',
+    totalSteps: 16,
+    headline: "You're ahead — but this is just the start",
+    copy: 'Getting started already puts you ahead of 83% of people — but the biggest gap happens next. Some people stay at the surface, others go deeper and unlock what AI can really do.',
+    ctaLabel: 'CONTINUE →',
+    echoKey: 'identity',
+    echoHeadline: {
+      yes: "You're ahead — but this is just the start",
+      'not-yet': "You're right on time — this is where it starts",
+    },
+    echoCopy: {
+      yes: 'Getting started already puts you ahead of 83% of people — but the biggest gap happens next. Some people stay at the surface, others go deeper and unlock what AI can really do.',
+      'not-yet': 'Most people begin exactly where you are — with no experience at all. In fact, some of our best students started from zero. The real difference is what you do next.',
+    },
+  },
+  {
+    type: 'question',
+    id: 'q1-purpose',
+    step: 1,
+    totalSteps: 16,
+    question: 'I want to learn Claude for...',
+    options: [
+      { emoji: '💼', label: 'Work tasks', value: 'work' },
+      { emoji: '🏠', label: 'Personal use', value: 'personal' },
+      { emoji: '📈', label: 'Growth — I love learning in-demand skills', value: 'growth' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q2-work-status',
+    step: 2,
+    totalSteps: 16,
+    question: "What's your current work status?",
+    options: [
+      { emoji: '💼', label: 'Full-time employee', value: 'full-time' },
+      { emoji: '✍️', label: 'Freelancer / Self-employed', value: 'freelancer' },
+      { emoji: '🏢', label: 'Business owner', value: 'business-owner' },
+      { emoji: '🔄', label: 'Between jobs / Career switcher', value: 'between-jobs' },
+      { emoji: '🔍', label: 'Exploring options', value: 'exploring' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q3-industry',
+    step: 3,
+    totalSteps: 16,
+    question: 'What field do you work in?',
+    options: [
+      { emoji: '💻', label: 'Tech & Software', value: 'tech' },
+      { emoji: '📣', label: 'Marketing & Content', value: 'marketing' },
+      { emoji: '💳', label: 'Finance & Consulting', value: 'finance' },
+      { emoji: '📚', label: 'Education & Research', value: 'education' },
+      { emoji: '⚖️', label: 'Legal & Compliance', value: 'legal' },
+      { emoji: '🏥', label: 'Healthcare', value: 'healthcare' },
+      { emoji: '🌐', label: 'Other', value: 'other' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q4-why-claude',
+    step: 4,
+    totalSteps: 16,
+    question: 'Why are you interested in Claude specifically?',
+    options: [
+      { emoji: '✍️', label: "I've heard it's better for writing & reasoning", value: 'writing' },
+      { emoji: '📄', label: 'It handles long documents better', value: 'documents' },
+      { emoji: '🔒', label: 'My company is adopting it', value: 'company' },
+      { emoji: '🤷', label: "I'm not sure yet — I want to find out", value: 'unsure' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q5-skill',
+    step: 5,
+    totalSteps: 16,
+    question: 'How would you rate your AI prompting skills?',
+    options: [
+      { emoji: '🌱', label: 'Beginner — I type basic questions', value: 'beginner' },
+      { emoji: '🙂', label: 'Intermediate — I get okay results', value: 'intermediate' },
+      { emoji: '💪', label: 'Advanced — I use structured prompts', value: 'advanced' },
+      { emoji: '🏆', label: 'Expert — I build complex workflows', value: 'expert' },
+    ],
+  },
+  {
+    type: 'interstitial',
+    id: 'interstitial-1',
+    totalSteps: 16,
+    headline: 'Most people use Claude at 10% of its potential',
+    copy: "The difference between a basic user and someone who's Claude-certified isn't talent — it's technique. Structured prompting, context management, and workflow design are all learnable skills.",
+    stat: '93% of our Claude graduates report saving 5+ hours per week within 14 days',
+    ctaLabel: 'KEEP GOING →',
+    echoKey: 'q5-skill',
+    echoHeadline: {
+      beginner: "Perfect — you're starting with a clean slate",
+      intermediate: "Good news — you're closer than you think",
+    },
+    echoCopy: {
+      beginner: "Beginners who follow a structured path actually progress faster than self-taught users who've built bad habits. You're in the ideal position.",
+      intermediate: "Most intermediate users plateau because they're missing the frameworks. A few key techniques will unlock dramatically better results.",
+    },
+  },
+  {
+    type: 'question',
+    id: 'q6-frustration',
+    step: 6,
+    totalSteps: 16,
+    question: 'What frustrates you most when using AI?',
+    options: [
+      { emoji: '🎯', label: "It doesn't give me what I actually want", value: 'bad-output' },
+      { emoji: '🔄', label: 'I have to keep re-prompting over and over', value: 're-prompting' },
+      { emoji: '⏰', label: "I don't know how to use it for my actual job", value: 'no-use-case' },
+      { emoji: '😵', label: 'There are too many features — I feel lost', value: 'overwhelmed' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q7-use-cases',
+    step: 7,
+    totalSteps: 16,
+    question: 'What do you want Claude to help you do?',
+    subtext: 'Pick the one that matters most right now',
+    options: [
+      { emoji: '✍️', label: 'Write emails, reports, and documents', value: 'writing' },
+      { emoji: '📊', label: 'Analyse data and research', value: 'analysis' },
+      { emoji: '💡', label: 'Brainstorm ideas and solve problems', value: 'brainstorm' },
+      { emoji: '🤖', label: 'Automate repetitive tasks', value: 'automation' },
+      { emoji: '💻', label: 'Write or review code', value: 'coding' },
+      { emoji: '📋', label: 'Summarise long documents', value: 'summarise' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q8-time-wasted',
+    step: 8,
+    totalSteps: 16,
+    question: 'How much time do you waste weekly on tasks Claude could do?',
+    options: [
+      { emoji: '⏱️', label: '1–3 hours', value: '1-3' },
+      { emoji: '⏱️', label: '3–5 hours', value: '3-5' },
+      { emoji: '⏱️', label: '5–10 hours', value: '5-10' },
+      { emoji: '⏱️', label: "10+ hours — I know, it's painful", value: '10-plus' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q9-learning',
+    step: 9,
+    totalSteps: 16,
+    question: 'How do you learn best?',
+    options: [
+      { emoji: '📱', label: 'Short, bite-sized lessons I can do on my phone', value: 'bite-sized' },
+      { emoji: '🎯', label: 'Real examples I can copy and adapt', value: 'examples' },
+      { emoji: '🔨', label: 'Hands-on projects with clear steps', value: 'projects' },
+      { emoji: '📺', label: 'Video walkthroughs', value: 'video' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q10-career',
+    step: 10,
+    totalSteps: 16,
+    question: 'How important is AI fluency for your career right now?',
+    options: [
+      { emoji: '🚨', label: 'Critical — I need this yesterday', value: 'critical' },
+      { emoji: '📈', label: 'Very important — it will set me apart', value: 'very' },
+      { emoji: '🤔', label: 'Somewhat — I want to stay competitive', value: 'somewhat' },
+      { emoji: '🧪', label: "I'm curious — exploring my options", value: 'curious' },
+    ],
+  },
+  {
+    type: 'interstitial',
+    id: 'interstitial-2',
+    totalSteps: 16,
+    headline: 'Companies are hiring for "Claude proficiency" right now',
+    quote: '"By 2027, 70% of knowledge workers will use AI assistants daily. Those who master them will command 40% higher salaries."',
+    quoteAttribution: '— Gartner Research, 2026',
+    copy: 'The Claude AI Certification gives you a verifiable credential and real-world skills that employers are actively seeking.',
+    ctaLabel: 'CONTINUE →',
+  },
+  {
+    type: 'certificate',
+    id: 'certificate-showcase',
+    totalSteps: 16,
+    headline: 'Earn your Claude AI Certificate of Mastery',
+    copy: "Don't just learn AI — prove it. Complete the SuccessWise.ai learning plan, pass the certification, and add an official credential to your resume and LinkedIn.",
+    ctaLabel: 'CONTINUE →',
+  },
+  {
+    type: 'question',
+    id: 'q11-certification',
+    step: 11,
+    totalSteps: 16,
+    question: 'Would a Claude AI Certification help your career?',
+    options: [
+      { emoji: '🏆', label: 'Absolutely — I want proof of my skills', value: 'yes-proof' },
+      { emoji: '📄', label: "Yes — I'd add it to my CV/LinkedIn", value: 'yes-cv' },
+      { emoji: '🤷', label: 'Maybe — depends what it covers', value: 'maybe' },
+      { emoji: '🎯', label: 'I care more about the skills than the cert', value: 'skills-only' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q12-blocker',
+    step: 12,
+    totalSteps: 16,
+    question: "What's stopping you from mastering Claude right now?",
+    options: [
+      { emoji: '🗺️', label: "I don't know where to start", value: 'no-start' },
+      { emoji: '⏰', label: "I don't have hours to spend learning", value: 'no-time' },
+      { emoji: '📚', label: 'Free resources are too scattered', value: 'scattered' },
+      { emoji: '💡', label: "I don't know what's possible", value: 'no-vision' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q13-previous',
+    step: 13,
+    totalSteps: 16,
+    question: 'Have you taken any AI courses before?',
+    options: [
+      { emoji: '🆕', label: 'No — this would be my first', value: 'first-time' },
+      { emoji: '📺', label: 'Watched free YouTube tutorials', value: 'youtube' },
+      { emoji: '💳', label: "Tried a paid course but didn't finish", value: 'paid-unfinished' },
+      { emoji: '✅', label: 'Yes, completed one — want to go deeper', value: 'completed' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q14-time',
+    step: 14,
+    totalSteps: 16,
+    question: 'How much time can you commit to learning Claude?',
+    subtext: 'Our course is designed to work with busy schedules',
+    options: [
+      { emoji: '⏱️', label: '10 minutes / day', value: '10min' },
+      { emoji: '⏱️', label: '15 minutes / day', value: '15min' },
+      { emoji: '⏱️', label: '20 minutes / day', value: '20min' },
+      { emoji: '⏱️', label: '30+ minutes / day', value: '30min' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q15-outcome',
+    step: 15,
+    totalSteps: 16,
+    question: 'After completing this certification, what matters most to you?',
+    options: [
+      { emoji: '💰', label: 'Earning more money with AI skills', value: 'earn-more' },
+      { emoji: '⚡', label: 'Getting 10× more done in less time', value: 'productivity' },
+      { emoji: '🏆', label: 'Having a credential to prove my skills', value: 'credential' },
+      { emoji: '🧠', label: 'Feeling confident and in control with AI', value: 'confidence' },
+    ],
+  },
+  {
+    type: 'question',
+    id: 'q16-income',
+    step: 16,
+    totalSteps: 16,
+    question: 'How much additional income would Claude skills unlock for you?',
+    options: [
+      { emoji: '🪙', label: '$500 / month', value: '500' },
+      { emoji: '💵', label: '$1,000 – $2,000 / month', value: '1000-2000' },
+      { emoji: '💰', label: '$3,000 – $5,000 / month', value: '3000-5000' },
+      { emoji: '💎', label: '$5,000+ / month', value: '5000-plus' },
+      { emoji: '😎', label: "It's about career value, not just money", value: 'career-value' },
+    ],
+  },
+  {
+    type: 'interstitial',
+    id: 'interstitial-3',
+    totalSteps: 16,
+    headline: 'Your personalised Claude mastery plan is almost ready',
+    copy: "Based on your answers, we're building a certification path tailored to your experience level, goals, and schedule. People with your profile typically see results within the first week.",
+    ctaLabel: 'BUILD MY PLAN →',
+  },
+  {
+    type: 'loading',
+    id: 'loading',
+    totalSteps: 16,
+    headline: 'Building your Claude AI Certification path...',
+  },
+  {
+    type: 'email',
+    id: 'email',
+    totalSteps: 16,
+    headline: 'Your Claude AI Certification plan is ready!',
+    subtext: 'Enter your email to unlock your personalised path — free, no credit card needed',
+    ctaLabel: 'UNLOCK MY PLAN →',
+  },
+]
+
+export function getClaudeScreenById(id: string): ClaudeQuizScreenDef | undefined {
+  return claudeQuizScreens.find((screen) => screen.id === id)
+}
+
+export function getClaudeQuestionScreens(): ClaudeQuestionScreenDef[] {
+  return claudeQuizScreens.filter((s): s is ClaudeQuestionScreenDef => s.type === 'question')
+}
