@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import Logo from '@/funnels/claude/components/Logo'
 
 interface ClaudeNameCaptureScreenProps {
   onSubmit: (name: string) => void
 }
 
-/** Port of `ve()` — «What should we call you?» with fixed bottom Continue CTA. */
+/** Port of `ve()` — «What should we call you?» with text wordmark header (no Logo, no back). */
 export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureScreenProps) {
   const [name, setName] = useState('')
   const inputRef = useRef<HTMLInputElement>(null)
@@ -24,9 +23,11 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
 
   return (
     <div className="flex min-h-dvh w-full flex-col overflow-x-hidden bg-sw-white">
-      <header className="sticky top-0 z-50 border-b border-sw-border bg-sw-white">
+      <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
         <div className="mx-auto flex h-14 max-w-lg items-center justify-center px-4">
-          <Logo />
+          <span className="text-base font-bold tracking-tight text-sw-dark">
+            SuccessWise<span className="text-sw-blue">.ai</span>
+          </span>
         </div>
       </header>
 
@@ -47,7 +48,7 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
           onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
           placeholder="Enter your first name"
           autoComplete="given-name"
-          className="w-full rounded-2xl border-2 border-sw-border bg-sw-white px-5 py-4 text-lg text-sw-dark placeholder:text-sw-grey/60 outline-none transition-colors focus:border-sw-blue"
+          className="w-full rounded-2xl border-2 border-sw-grey-border bg-sw-white px-5 py-4 text-lg text-sw-dark placeholder:text-sw-grey/60 outline-none transition-colors focus:border-sw-blue"
         />
       </main>
 

@@ -1,6 +1,6 @@
 import type { QuizProfile, QuizRole, QuizState } from '@/funnels/twenty-eight-day/types/quiz'
 
-export const QUIZ_STATE_KEY = 'sw_quiz_28day_state'
+export const QUIZ_STATE_KEY = 'sw_quiz_28day_state_v2'
 export const SALES_STEP_KEY = 'sw_quiz_28day_salesStep'
 export const QUIZ_RESULTS_KEY = 'sw_quiz_results'
 
@@ -56,6 +56,7 @@ export interface QuizResultsSnapshot {
   name: string | null
   profile: QuizProfile
   savedAt: number
+  product?: string
 }
 
 export function persistQuizResults(snapshot: QuizResultsSnapshot): void {

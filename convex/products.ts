@@ -1,10 +1,33 @@
-import { mutationGeneric, queryGeneric } from 'convex/server'
+import { internalQueryGeneric, mutationGeneric, queryGeneric } from 'convex/server'
+import { v } from 'convex/values'
 
 /**
- * `products.list` — read by SalesPlanScreen to render the 3 pricing cards.
+ * `products.list` — read by SalesPlanScreen for the $1 trial (monthly) and
+ * the expired-offer Monthly / 6-Month / 12-Month picker.
  * Seed real Stripe Price IDs via `seedDefaultProducts` (or the Convex
  * dashboard) before enabling checkout — see README "Convex setup".
  */
+export const _getById = internalQueryGeneric({
+  args: { id: v.string() },
+  handler: async (ctx, args) => {
+    try {
+      return await ctx.db.get(args.id as never)
+    } catch {
+      return null
+    }
+  },
+})
+
+export const _listActive = internalQueryGeneric({
+  args: {},
+  handler: async (ctx) => {
+    return ctx.db
+      .query('products')
+      .withIndex('by_active', (q) => q.eq('active', true))
+      .collect()
+  },
+})
+
 export const list = queryGeneric({
   args: {},
   handler: async (ctx) => {
@@ -16,29 +39,26 @@ export const list = queryGeneric({
 })
 
 /**
- * One-off seed helper — run once from the Convex dashboard function runner
+ * One-off seed helper — run from the Convex dashboard function runner
  * (or `npx convex run products:seedDefaultProducts`) after you have real
- * Stripe Price IDs. Safe to re-run: skips insertion if products already exist.
+ * Stripe Price IDs. Safe to re-run: inserts only missing intervals (1 / 6 / 12).
  */
 export const seedDefaultProducts = mutationGeneric({
   args: {},
   handler: async (ctx) => {
     const existing = await ctx.db.query('products').collect()
-    if (existing.length > 0) {
-      return { skipped: true, count: existing.length }
-    }
 
     const defaults = [
       {
         name: 'Monthly Plan',
-        stripePriceId: 'price_REPLACE_MONTHLY',
+        stripePriceId: process.env.STRIPE_MONTHLY_PRICE_ID ?? 'price_REPLACE_MONTHLY',
         price: 2900,
         intervalMonths: 1,
         active: true,
       },
       {
         name: '6-Month Plan',
-        stripePriceId: 'price_REPLACE_6MONTH',
+        stripePriceId: process.env.STRIPE_SIX_MONTH_PRICE_ID ?? 'price_REPLACE_6MONTH',
         price: 14900,
         intervalMonths: 6,
         badge: 'MOST POPULAR',
@@ -46,7 +66,7 @@ export const seedDefaultProducts = mutationGeneric({
       },
       {
         name: '12-Month Plan',
-        stripePriceId: 'price_REPLACE_12MONTH',
+        stripePriceId: process.env.STRIPE_TWELVE_MONTH_PRICE_ID ?? 'price_REPLACE_12MONTH',
         price: 23900,
         intervalMonths: 12,
         badge: 'BEST VALUE',
@@ -54,10 +74,14 @@ export const seedDefaultProducts = mutationGeneric({
       },
     ]
 
+    let inserted = 0
     for (const product of defaults) {
+      const alreadyHasInterval = existing.some((row) => row.intervalMonths === product.intervalMonths)
+      if (alreadyHasInterval) continue
       await ctx.db.insert('products', product)
+      inserted += 1
     }
 
-    return { skipped: false, count: defaults.length }
+    return { skipped: inserted === 0, count: existing.length + inserted, inserted }
   },
 })

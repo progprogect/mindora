@@ -8,9 +8,8 @@ export interface PlanView {
 }
 
 /**
- * Fallback plans shown while `products.list` is loading or if the Convex
- * deployment isn't configured yet. Replace with real Stripe-backed pricing
- * via `products.seedDefaultProducts` — see README "Convex setup".
+ * Fallback plans for the expired-offer picker (Monthly / 6 / 12).
+ * While the 10-minute $1 offer is live, checkout uses the monthly product only.
  */
 export const DEFAULT_PLANS: PlanView[] = [
   { id: 'monthly', name: 'Monthly Plan', price: 2900, intervalMonths: 1 },
@@ -18,10 +17,45 @@ export const DEFAULT_PLANS: PlanView[] = [
   { id: '12month', name: '12-Month Plan', price: 23900, intervalMonths: 12, badge: 'BEST VALUE' },
 ]
 
+/** Display metadata keyed by plan name — same labels as Claude expired picker. */
+export const PLAN_DISPLAY_META: Record<
+  string,
+  { label: string; periodLabel: string; months: number; badge?: string }
+> = {
+  'Monthly Plan': { label: '1 month', periodLabel: 'per month', months: 1 },
+  '6-Month Plan': { label: '6 months', periodLabel: 'every 6 months', months: 6, badge: 'MOST POPULAR' },
+  '12-Month Plan': { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
+}
+
+const META_BY_MONTHS: Record<number, { label: string; periodLabel: string; months: number; badge?: string }> = {
+  1: { label: '1 month', periodLabel: 'per month', months: 1 },
+  6: { label: '6 months', periodLabel: 'every 6 months', months: 6, badge: 'MOST POPULAR' },
+  12: { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
+}
+
+/** Marketing anchor price shown struck-through next to the $1 trial total (matches original copy). */
+export const ANCHOR_TOTAL_CENTS = 2999
+
+/** Amount charged today to start the trial. */
+export const TRIAL_TOTAL_CENTS = 100
+
 export function formatUsd(cents: number): string {
   return (cents / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' })
 }
 
 export function applyDiscount(price: number, percentOff: number): number {
   return Math.round(price * (1 - percentOff / 100))
+}
+
+export function planMeta(plan: PlanView) {
+  const extra = PLAN_DISPLAY_META[plan.name] ?? META_BY_MONTHS[plan.intervalMonths]
+  if (extra) {
+    return { ...extra, badge: plan.badge ?? extra.badge }
+  }
+  return {
+    label: plan.name,
+    periodLabel: 'per period',
+    months: plan.intervalMonths,
+    badge: plan.badge,
+  }
 }

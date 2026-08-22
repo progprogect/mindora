@@ -42,7 +42,7 @@ export default function ClaudeInterstitialScreen({ screen, answers, onContinue }
         ) : null}
 
         {screen.stat ? (
-          <div className="mb-5 w-full max-w-sm rounded-xl border border-sw-blue/25 bg-sw-blue-light px-4 py-3">
+          <div className="mb-5 w-full max-w-sm rounded-xl border border-sw-blue-border bg-sw-blue-light px-4 py-3">
             <p className="text-center text-xs leading-snug font-semibold text-sw-blue sm:text-sm">📊 {screen.stat}</p>
           </div>
         ) : null}

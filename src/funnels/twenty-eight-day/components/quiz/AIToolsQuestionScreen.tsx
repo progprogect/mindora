@@ -1,81 +1,125 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import type { AIToolsQuestionScreen as AIToolsScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
+import QuizOptionRadio from '@/funnels/twenty-eight-day/components/quiz/QuizOptionRadio'
 
 interface AIToolsQuestionScreenProps {
   screen: AIToolsScreenDef
   onAnswer: (optionId: string) => void
+  initialSelected?: string
 }
 
 const TOTAL_QUESTIONS = 18
 
 const AUTO_ADVANCE_DELAY_MS = 480
 
-/**
- * Generic colored-badge + emoji per tool (not the official logos — avoids
- * trademark/licensing issues while keeping each row instantly scannable).
- * Swap for self-hosted brand icons in `public/assets/ai-tools/` if you have
- * the rights to use them; see docs/28_day_quiz/implementation-plan.md.
- */
-const BADGE_STYLE: Record<string, { bg: string; emoji: string }> = {
-  new: { bg: 'bg-sw-grey-light', emoji: '🤔' },
-  chatgpt: { bg: 'bg-emerald-500', emoji: '🤖' },
-  claude: { bg: 'bg-orange-500', emoji: '🧠' },
-  gemini: { bg: 'bg-blue-500', emoji: '✨' },
-  copilot: { bg: 'bg-indigo-500', emoji: '🧭' },
-  midjourney: { bg: 'bg-violet-500', emoji: '🎨' },
-  perplexity: { bg: 'bg-teal-500', emoji: '🔎' },
+const TOOL_PNG: Record<string, { src: string; alt: string }> = {
+  chatgpt: { src: '/assets/tools/chatgpt.png', alt: 'ChatGPT' },
+  gemini: { src: '/assets/tools/gemini.png', alt: 'Google Gemini' },
+  copilot: { src: '/assets/tools/copilot.png', alt: 'Microsoft Copilot' },
+  midjourney: { src: '/assets/tools/midjourney.png', alt: 'Midjourney' },
 }
 
-export default function AIToolsQuestionScreen({ screen, onAnswer }: AIToolsQuestionScreenProps) {
-  const [selected, setSelected] = useState<string | null>(null)
+function BrandTile({ color, children }: { color: string; children: ReactNode }) {
+  return (
+    <div
+      className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl"
+      style={{ background: color }}
+    >
+      {children}
+    </div>
+  )
+}
+
+function ClaudeIcon() {
+  return (
+    <BrandTile color="rgb(217, 119, 87)">
+      <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden>
+        <path d="M14 6.5A5.5 5.5 0 1 0 14 13.5" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
+      </svg>
+    </BrandTile>
+  )
+}
+
+function PerplexityIcon() {
+  return (
+    <BrandTile color="rgb(32, 128, 141)">
+      <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden>
+        <line x1="10" y1="3" x2="10" y2="17" stroke="white" strokeWidth="2" strokeLinecap="round" />
+        <line x1="3" y1="10" x2="17" y2="10" stroke="white" strokeWidth="2" strokeLinecap="round" />
+        <line x1="5.05" y1="5.05" x2="14.95" y2="14.95" stroke="white" strokeWidth="2" strokeLinecap="round" />
+        <line x1="14.95" y1="5.05" x2="5.05" y2="14.95" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    </BrandTile>
+  )
+}
+
+function ToolIcon({ icon, emoji }: { icon: string; emoji?: string }) {
+  if (icon === 'new') {
+    return (
+      <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-sw-grey-light text-xl">
+        {emoji ?? '🤔'}
+      </div>
+    )
+  }
+  if (icon === 'claude') return <ClaudeIcon />
+  if (icon === 'perplexity') return <PerplexityIcon />
+  const png = TOOL_PNG[icon]
+  if (png) {
+    return <img src={png.src} alt={png.alt} className="h-9 w-9 flex-shrink-0 rounded-xl object-contain" />
+  }
+  return (
+    <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-sw-grey-light text-xl">
+      {emoji ?? '✨'}
+    </div>
+  )
+}
+
+export default function AIToolsQuestionScreen({
+  screen,
+  onAnswer,
+  initialSelected,
+}: AIToolsQuestionScreenProps) {
+  const [selected, setSelected] = useState<string | null>(initialSelected ?? null)
 
   const handleSelect = (optionId: string) => {
-    if (selected) return
+    if (selected && selected !== initialSelected) return
     setSelected(optionId)
     window.setTimeout(() => onAnswer(optionId), AUTO_ADVANCE_DELAY_MS)
   }
 
   return (
-    <div className="flex flex-col gap-6 py-4 animate-fade-up" key={screen.id}>
-      <div className="text-center">
-        <p className="text-xs font-bold tracking-wide text-sw-blue uppercase">
-          Question {screen.step} of {TOTAL_QUESTIONS}
-        </p>
-        <h1 className="mt-2 text-xl font-extrabold text-sw-dark sm:text-2xl">{screen.question}</h1>
-        {screen.subtitle ? <p className="mt-2 text-sm text-sw-grey">{screen.subtitle}</p> : null}
-      </div>
+    <div className="flex flex-1 flex-col animate-fade-up pt-8 pb-8">
+      <p className="mb-4 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">
+        Question {screen.step} of {TOTAL_QUESTIONS}
+      </p>
+      <h2 className="mb-6 text-center text-2xl leading-tight font-bold text-sw-dark sm:text-3xl">
+        {screen.question}
+      </h2>
+      {screen.subtitle ? <p className="mb-6 text-center text-sm text-sw-grey">{screen.subtitle}</p> : null}
 
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-3">
         {screen.options.map((option) => {
           const isSelected = selected === option.id
-          const badge = BADGE_STYLE[option.icon] ?? { bg: 'bg-sw-grey-light', emoji: '✨' }
-          const isPlainBadge = badge.bg === 'bg-sw-grey-light'
-
           return (
             <button
               key={option.id}
               type="button"
               onClick={() => handleSelect(option.id)}
-              disabled={Boolean(selected)}
-              className={`flex items-center gap-3 rounded-sw border-[2px] px-4 py-3 text-left text-sm font-semibold transition disabled:cursor-default ${
+              className={`flex w-full items-center gap-4 rounded-2xl border-2 px-5 py-4 text-left transition-all duration-200 active:scale-[0.98] ${
                 isSelected
-                  ? 'border-sw-blue bg-sw-blue-light text-sw-blue'
-                  : 'border-sw-border bg-sw-white text-sw-dark hover:border-sw-blue/60'
+                  ? 'scale-[0.99] border-sw-blue bg-sw-blue-light'
+                  : 'border-sw-grey-border bg-white hover:border-sw-blue hover:bg-sw-blue-light'
               }`}
             >
+              <ToolIcon icon={option.icon} emoji={option.emoji} />
               <span
-                className={`flex size-8 shrink-0 items-center justify-center rounded-full text-base ${badge.bg} ${isPlainBadge ? '' : 'text-white'}`}
-              >
-                {badge.emoji}
-              </span>
-              <span className="flex-1">{option.label}</span>
-              <span
-                className={`flex size-5 shrink-0 items-center justify-center rounded-full border-2 ${
-                  isSelected ? 'border-sw-blue' : 'border-sw-border'
+                className={`flex-1 text-base leading-snug font-semibold sm:text-lg ${
+                  isSelected ? 'text-sw-blue' : 'text-sw-dark'
                 }`}
               >
-                {isSelected ? <span className="size-2.5 rounded-full bg-sw-blue" /> : null}
+                {option.label}
               </span>
+              <QuizOptionRadio selected={isSelected} />
             </button>
           )
         })}

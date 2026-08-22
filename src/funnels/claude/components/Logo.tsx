@@ -23,7 +23,7 @@ export default function Logo() {
     <img
       src="/assets/logo-dark.png"
       alt="SuccessWise.ai"
-      className="h-6 w-auto"
+      className="h-7 w-auto object-contain"
       onError={() => setFailed(true)}
     />
   )

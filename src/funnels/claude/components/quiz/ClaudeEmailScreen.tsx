@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Check, Mail } from 'lucide-react'
+import { Check } from 'lucide-react'
 
 interface ClaudeEmailScreenProps {
   onSubmit: (email: string, consent: boolean) => Promise<void> | void
@@ -60,7 +60,9 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
 
         <div className="mb-3">
           <div className="relative">
-            <Mail className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-sw-grey" />
+            <span className="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2 text-lg text-sw-grey">
+              ✉️
+            </span>
             <input
               type="email"
               name="email"
@@ -70,7 +72,7 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
               onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
               placeholder="your@email.com"
               autoComplete="email"
-              className="w-full rounded-2xl border-2 border-sw-border bg-sw-white py-4 pr-5 pl-11 text-base text-sw-dark placeholder:text-sw-grey outline-none transition-colors focus:border-sw-blue"
+              className="w-full rounded-2xl border-2 border-sw-grey-border bg-sw-white py-4 pr-5 pl-11 text-base text-sw-dark placeholder:text-sw-grey outline-none transition-colors focus:border-sw-blue"
             />
           </div>
           {error ? <p className="mt-1.5 ml-1 text-xs text-sw-red">{error}</p> : null}
@@ -88,7 +90,7 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
           <span
             aria-hidden
             className={`mt-0.5 flex size-5 flex-shrink-0 items-center justify-center rounded-md border-2 transition-colors ${
-              consent ? 'border-sw-blue bg-sw-blue' : 'border-sw-border bg-sw-white'
+              consent ? 'border-sw-blue bg-sw-blue' : 'border-sw-grey-border bg-sw-white'
             }`}
           >
             {consent ? <Check className="size-3 text-sw-white" strokeWidth={2.5} /> : null}

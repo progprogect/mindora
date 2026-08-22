@@ -27,7 +27,7 @@ export default function ClaudeCertificateScreen({ onContinue }: ClaudeCertificat
           Claude AI skills.
         </p>
 
-        <div className="mb-6 w-full max-w-sm overflow-hidden rounded-xl border border-sw-blue/25 bg-sw-white p-2 shadow-lg">
+        <div className="mb-6 w-full max-w-sm overflow-hidden rounded-xl border border-sw-blue-border bg-sw-white p-2 shadow-lg">
           <AssetImage
             src="/assets/certificate.png"
             alt="Claude AI Certificate of Mastery"

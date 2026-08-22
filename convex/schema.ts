@@ -44,4 +44,12 @@ export default defineSchema({
     createdAt: v.number(),
     expiresAt: v.number(),
   }).index('by_session_key', ['sessionKey']),
+
+  processedStripePayments: defineTable({
+    paymentIntentId: v.string(),
+    customerId: v.string(),
+    subscriptionId: v.optional(v.string()),
+    email: v.optional(v.string()),
+    createdAt: v.number(),
+  }).index('by_payment_intent', ['paymentIntentId']),
 })

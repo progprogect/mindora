@@ -139,7 +139,9 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
         </div>
         <div>
           <p className="text-sm font-bold text-sw-dark">Potential time saved</p>
-          <p className="text-sm text-sw-grey">{profile.weeklyTimeSaved} per week with Claude mastery</p>
+          <p className="text-sm text-sw-grey">
+            <span>{profile.weeklyTimeSaved}</span> per week with Claude mastery
+          </p>
         </div>
       </div>
 

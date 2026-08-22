@@ -31,6 +31,36 @@ export const _createOffer = internalMutationGeneric({
   },
 })
 
+export const _getProcessedPayment = internalQueryGeneric({
+  args: { paymentIntentId: v.string() },
+  handler: async (ctx, args) => {
+    return ctx.db
+      .query('processedStripePayments')
+      .withIndex('by_payment_intent', (q) => q.eq('paymentIntentId', args.paymentIntentId))
+      .unique()
+  },
+})
+
+export const _recordProcessedPayment = internalMutationGeneric({
+  args: {
+    paymentIntentId: v.string(),
+    customerId: v.string(),
+    subscriptionId: v.optional(v.string()),
+    email: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const existing = await ctx.db
+      .query('processedStripePayments')
+      .withIndex('by_payment_intent', (q) => q.eq('paymentIntentId', args.paymentIntentId))
+      .unique()
+    if (existing) return existing._id
+    return ctx.db.insert('processedStripePayments', {
+      ...args,
+      createdAt: Date.now(),
+    })
+  },
+})
+
 /** Internal: upsert a checkout offer's percentOff (used by the Spin Wheel result). */
 export const _upsertOfferPercent = internalMutationGeneric({
   args: { sessionKey: v.string(), percentOff: v.number() },
@@ -127,45 +157,91 @@ interface StripeCustomer {
   id: string
 }
 
-interface StripeSetupIntent {
+interface StripePaymentIntent {
   id: string
   client_secret: string
+  next_action?: { redirect_to_url?: { url?: string } } | null
+}
+
+async function findOrCreateCustomer(email: string, funnel: string, productId: string): Promise<StripeCustomer> {
+  const search = await stripeRequest<{ data: StripeCustomer[] }>('/customers/search', {
+    query: `email:"${email}"`,
+  })
+  return (
+    search.data[0] ??
+    (await stripeRequest<StripeCustomer>('/customers', {
+      email,
+      'metadata[funnel]': funnel,
+      'metadata[productId]': productId,
+    }))
+  )
 }
 
 /**
- * `stripe.createTrialSetupIntent` — called from CheckoutSetupPage.
- * Creates (or reuses) a Stripe Customer for the lead's email and returns a
- * SetupIntent client secret so the frontend can collect card details for
- * the $1 trial via Stripe Elements (Payment/Setup Element, card saved for
- * the future recurring subscription created by your webhook handler).
+ * `stripe.createTrialPaymentIntent` — $1 PaymentIntent on the plan page.
+ * Card + wallets (Express Checkout). PayPal uses `createPayPalPaymentIntent`.
  */
-export const createTrialSetupIntent = actionGeneric({
+export const createTrialPaymentIntent = actionGeneric({
   args: {
     email: v.string(),
     productId: v.string(),
     funnel: v.string(),
   },
   handler: async (_ctx, args): Promise<{ clientSecret: string }> => {
-    const search = await stripeRequest<{ data: StripeCustomer[] }>('/customers/search', {
-      query: `email:"${args.email}"`,
-    })
-
-    const customer =
-      search.data[0] ??
-      (await stripeRequest<StripeCustomer>('/customers', {
-        email: args.email,
-        'metadata[funnel]': args.funnel,
-        'metadata[productId]': args.productId,
-      }))
-
-    const setupIntent = await stripeRequest<StripeSetupIntent>('/setup_intents', {
+    const customer = await findOrCreateCustomer(args.email, args.funnel, args.productId)
+    const paymentIntent = await stripeRequest<StripePaymentIntent>('/payment_intents', {
+      amount: '100',
+      currency: 'usd',
       customer: customer.id,
       'payment_method_types[]': 'card',
-      usage: 'off_session',
+      setup_future_usage: 'off_session',
       'metadata[funnel]': args.funnel,
       'metadata[productId]': args.productId,
+      'metadata[email]': args.email,
     })
-
-    return { clientSecret: setupIntent.client_secret }
+    return { clientSecret: paymentIntent.client_secret }
   },
 })
+
+/**
+ * Dedicated PayPal PaymentIntent — production `PayPalButton` calls
+ * `confirmPayPalPayment` then returns to `/checkout/setup?trial=1&funnel=`.
+ */
+export const createPayPalPaymentIntent = actionGeneric({
+  args: {
+    customerEmail: v.string(),
+    productId: v.string(),
+    funnel: v.string(),
+    returnUrl: v.optional(v.string()),
+    confirmAndRedirect: v.optional(v.boolean()),
+  },
+  handler: async (
+    _ctx,
+    args,
+  ): Promise<{ clientSecret: string; redirectUrl: string | null }> => {
+    const customer = await findOrCreateCustomer(args.customerEmail, args.funnel, args.productId)
+    const body: Record<string, string> = {
+      amount: '100',
+      currency: 'usd',
+      customer: customer.id,
+      'payment_method_types[]': 'paypal',
+      setup_future_usage: 'off_session',
+      'metadata[funnel]': args.funnel,
+      'metadata[productId]': args.productId,
+      'metadata[email]': args.customerEmail,
+    }
+    if (args.confirmAndRedirect && args.returnUrl) {
+      body.confirm = 'true'
+      body.return_url = args.returnUrl
+      body['payment_method_data[type]'] = 'paypal'
+    }
+    const paymentIntent = await stripeRequest<StripePaymentIntent>('/payment_intents', body)
+    return {
+      clientSecret: paymentIntent.client_secret,
+      redirectUrl: paymentIntent.next_action?.redirect_to_url?.url ?? null,
+    }
+  },
+})
+
+/** @deprecated Use `createTrialPaymentIntent`. Kept so existing Convex refs don't 404. */
+export const createTrialSetupIntent = createTrialPaymentIntent

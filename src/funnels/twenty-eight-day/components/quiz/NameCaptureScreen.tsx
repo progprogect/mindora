@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { UserRound } from 'lucide-react'
 import type { NameCaptureScreen as NameCaptureScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
+import QuizStickyCta from '@/funnels/twenty-eight-day/components/quiz/QuizStickyCta'
 
 interface NameCaptureScreenProps {
   screen: NameCaptureScreenDef
@@ -17,37 +17,30 @@ export default function NameCaptureScreen({ screen, onSubmit }: NameCaptureScree
   }
 
   return (
-    <div className="flex flex-1 flex-col justify-center gap-6 pb-28 animate-fade-up">
-      <div className="text-center">
-        <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-sw-blue-light">
-          <UserRound className="size-7 text-sw-blue" />
-        </div>
-        <h1 className="text-2xl font-extrabold text-sw-dark">{screen.title}</h1>
-        <p className="mt-2 text-sm text-sw-grey">{screen.subtitle}</p>
+    <>
+      <div className="flex w-full flex-1 flex-col px-4 pt-12 pb-40 animate-fade-up">
+        <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark sm:text-4xl">
+          {screen.title}
+        </h1>
+        <p className="mb-10 text-center text-sm text-sw-grey">{screen.subtitle}</p>
+
+        <input
+          type="text"
+          autoComplete="given-name"
+          autoFocus
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
+          placeholder="Enter your first name"
+          className="w-full rounded-2xl border-2 border-sw-grey-border bg-white px-5 py-4 text-lg text-sw-dark outline-none transition-colors placeholder:text-sw-grey/60 focus:border-sw-blue"
+        />
       </div>
 
-      <input
-        type="text"
-        autoComplete="given-name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
-        placeholder="Your first name"
-        className="w-full rounded-sw-sm border-[2px] border-sw-border px-4 py-3.5 text-base outline-none transition focus:border-sw-blue"
-      />
-
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-sw-border bg-sw-white/95 p-4 backdrop-blur safe-bottom">
-        <div className="mx-auto max-w-xl">
-          <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={!name.trim()}
-            className="w-full rounded-sw-sm bg-sw-blue py-3.5 font-extrabold tracking-wide text-sw-white transition hover:bg-sw-blue-hover disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            SEE MY RESULTS →
-          </button>
-        </div>
-      </div>
-    </div>
+      <QuizStickyCta>
+        <button type="button" onClick={handleSubmit} disabled={!name.trim()} className="sw-cta">
+          Continue
+        </button>
+      </QuizStickyCta>
+    </>
   )
 }

@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import { Check, Lock, ShieldCheck, Star } from 'lucide-react'
+import { Check, ShieldCheck } from 'lucide-react'
 import type { ClaudeProfile, ClaudeQuizAnswers } from '@/funnels/claude/types/claudeQuiz'
-import { DEFAULT_PLANS, PLAN_DISPLAY_META, applyDiscount, formatUsd, type PlanView } from '@/funnels/claude/data/plans'
+import { DEFAULT_PLANS, formatUsd, planMeta, type PlanView } from '@/funnels/claude/data/plans'
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { useCheckoutOfferAction, useProductsList, useTrackCheckoutInitiated } from '@/shared/lib/backend'
 import AssetImage from '@/shared/components/AssetImage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
+import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 
 interface ClaudeSalesPlanScreenProps {
   name: string
@@ -16,22 +17,22 @@ interface ClaudeSalesPlanScreenProps {
   percentOff: number
   onPercentOffResolved: (percentOff: number) => void
   onCheckoutSuccess: () => void
+  /** Expired-offer GET STARTED — prod navigates to `/checkout?product=`. */
+  onExpiredPlanContinue: (productId: string) => void
 }
 
 const FUNNEL = 'claude-ai-certification'
 const COUNTDOWN_SECONDS = 10 * 60
 
+function countdownStartSeconds(): number {
+  if (typeof window === 'undefined') return COUNTDOWN_SECONDS
+  return new URLSearchParams(window.location.search).get('offer') === 'ended' ? 0 : COUNTDOWN_SECONDS
+}
+
 const GOAL_LABEL_BY_ANSWER: Record<string, string> = {
   work: 'Work tasks',
   personal: 'Personal use',
   growth: 'Growth — learning in-demand skills',
-}
-
-const LEVEL_LABEL_BY_ANSWER: Record<string, string> = {
-  beginner: 'Beginner',
-  intermediate: 'Intermediate',
-  advanced: 'Advanced',
-  expert: 'Expert',
 }
 
 const IMPACT_BLOCKS: Array<{ emoji: string; bold: string; rest: string }> = [
@@ -112,16 +113,152 @@ function useCountdown(initialSeconds: number): { minutes: string; seconds: strin
   }
 }
 
+function StarRow({ count }: { count: number }) {
+  return (
+    <div className="flex gap-0.5 text-sm text-sw-amber">
+      {Array.from({ length: count }).map((_, i) => (
+        <span key={i}>★</span>
+      ))}
+    </div>
+  )
+}
+
+function resolveDisplayPlans(products: Array<PlanView> | undefined): PlanView[] {
+  const source = products && products.length >= 3 ? products : DEFAULT_PLANS
+  return [...source].sort((a, b) => a.price - b.price)
+}
+
+function ExpiredPlanPicker({
+  plans,
+  selectedPlanId,
+  onSelect,
+  onStart,
+}: {
+  plans: PlanView[]
+  selectedPlanId: string | undefined
+  onSelect: (id: string) => void
+  onStart: () => void
+}) {
+  const selected = plans.find((p) => p.id === selectedPlanId) ?? plans[0]
+  const meta = selected ? planMeta(selected) : null
+  const periodPrice = selected ? selected.price : 0
+  const monthly = selected && meta ? periodPrice / meta.months : 0
+
+  return (
+    <div className="mx-auto max-w-lg px-4 pb-6">
+      <h2 className="mb-1 text-center text-xl font-extrabold text-sw-dark">Choose your plan</h2>
+      <div className="mb-4 flex flex-col items-center gap-3">
+        <p className="text-center text-sm text-sw-grey">Select a plan to start your journey</p>
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          className="inline-flex cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-sw-blue transition-opacity hover:opacity-90"
+          style={{ backgroundColor: 'hsl(var(--sw-blue-light))' }}
+        >
+          🔄 Refresh page to unlock a new discount
+        </button>
+      </div>
+
+      <div className="mb-4 flex flex-col gap-3">
+        {plans.map((plan) => {
+          const display = planMeta(plan)
+          const isSelected = plan.id === selected?.id
+          const perMonth = plan.price / display.months
+
+          return (
+            <button
+              key={plan.id}
+              type="button"
+              onClick={() => onSelect(plan.id)}
+              className={`relative cursor-pointer overflow-hidden rounded-2xl border-2 text-left transition-all duration-150 ${
+                isSelected ? 'shadow-md' : 'border-sw-grey-border bg-sw-white hover:border-sw-grey'
+              }`}
+              style={
+                isSelected
+                  ? { borderColor: 'hsl(var(--sw-blue))', backgroundColor: 'hsl(var(--sw-blue-light))' }
+                  : { backgroundColor: 'white' }
+              }
+            >
+              {display.badge ? (
+                <div
+                  className="py-1 text-center text-[11px] font-bold tracking-wider text-sw-white uppercase"
+                  style={{
+                    backgroundColor:
+                      display.badge === 'BEST VALUE' ? 'hsl(var(--sw-success))' : 'hsl(var(--sw-blue))',
+                  }}
+                >
+                  {display.badge}
+                </div>
+              ) : null}
+              <div className="flex items-center justify-between px-5 py-5 sm:px-6">
+                <div className="flex items-center gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="flex size-5 shrink-0 items-center justify-center rounded-full border-2"
+                    style={{
+                      borderColor: isSelected ? 'hsl(var(--sw-blue))' : 'hsl(var(--sw-grey-border))',
+                    }}
+                  >
+                    {isSelected ? (
+                      <span className="size-2.5 rounded-full" style={{ backgroundColor: 'hsl(var(--sw-blue))' }} />
+                    ) : null}
+                  </span>
+                  <span className="text-lg font-extrabold text-sw-dark">{display.label}</span>
+                </div>
+                <div className="rounded-xl bg-sw-grey-light px-3 py-1.5">
+                  <div className="flex items-baseline gap-0.5">
+                    <span className="text-sm font-medium text-sw-grey">$</span>
+                    <span className="text-2xl font-extrabold text-sw-dark">{(perMonth / 100).toFixed(2)}</span>
+                    <span className="text-sm font-medium text-sw-grey"> /mo</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          )
+        })}
+      </div>
+
+      {selected && meta ? (
+        <p className="mb-5 text-center text-sm leading-relaxed text-sw-grey">
+          {formatUsd(periodPrice)} {meta.periodLabel}
+          {meta.months > 1 ? ` (${(monthly / 100).toFixed(2)}/month)` : null}. Cancel any time.
+        </p>
+      ) : null}
+
+      <button
+        type="button"
+        onClick={onStart}
+        disabled={!selected}
+        className="mb-4 w-full cursor-pointer rounded-full bg-sw-blue py-4 text-lg font-extrabold tracking-wide text-sw-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        GET STARTED
+      </button>
+
+      <div className="mb-2 flex flex-col items-center gap-2">
+        <p className="flex items-center gap-1.5 text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+            />
+          </svg>
+          Pay safe &amp; secure
+        </p>
+        <img
+          src="/assets/pay-safe-strip.png"
+          alt="Mastercard, Visa, Amex, Discover accepted"
+          className="h-8 w-auto object-contain"
+        />
+      </div>
+    </div>
+  )
+}
+
 /**
- * Port of `ClaudeSalesPlanScreen` (`ClaudeSalesPlanScreen-Cf1-v0h6.js`) —
- * hero, certificate preview, marquee, pricing + inline trial checkout,
- * impact/inclusion sections, testimonials and money-back guarantee.
- *
- * Pricing/checkout is wired to this repo's existing `InlineTrialCheckout`
- * (email + productId + funnel, per Этап 1 scaffold) rather than production's
- * plan-agnostic inline widget, so the user explicitly picks Monthly /
- * 6-Month / 12-Month before starting the $1 trial — matching the pattern
- * already used by `28_days_quiz/src/components/sales/SalesPlanScreen.tsx`.
+ * Port of `ClaudeSalesPlanScreen` (`ClaudeSalesPlanScreen-OPQZqTdA.js`) —
+ * hero, certificate, marquee, $1 trial checkout while the 10-minute offer
+ * is live, and the Monthly / 6-Month / 12-Month picker once it expires.
  */
 export default function ClaudeSalesPlanScreen({
   name,
@@ -131,21 +268,35 @@ export default function ClaudeSalesPlanScreen({
   percentOff,
   onPercentOffResolved,
   onCheckoutSuccess,
+  onExpiredPlanContinue,
 }: ClaudeSalesPlanScreenProps) {
-  const { minutes, seconds, expired } = useCountdown(COUNTDOWN_SECONDS)
+  const { minutes, seconds, expired } = useCountdown(countdownStartSeconds())
   const checkoutAnchorRef = useRef<HTMLDivElement>(null)
 
   const products = useProductsList()
-  const plans: PlanView[] = products?.length
-    ? products.map((p) => ({ id: p._id, name: p.name, price: p.price, intervalMonths: p.intervalMonths, badge: p.badge }))
-    : DEFAULT_PLANS
+  const convexPlans: PlanView[] | undefined = products?.length
+    ? products.map((p) => ({
+        id: p._id,
+        name: p.name,
+        price: p.price,
+        intervalMonths: p.intervalMonths,
+        badge: p.badge,
+      }))
+    : undefined
+  const plans = resolveDisplayPlans(convexPlans)
+  const trialPlan = plans.find((p) => p.intervalMonths === 1) ?? plans[0]
+  const offerPercent = percentOff >= 97 ? percentOff : 97
 
-  const defaultSelected = plans.find((p) => p.badge === 'MOST POPULAR') ?? plans[1] ?? plans[0]
-  const [selectedPlanId, setSelectedPlanId] = useState(defaultSelected?.id)
-  const [checkoutOpen, setCheckoutOpen] = useState(false)
+  const [selectedPlanId, setSelectedPlanId] = useState<string | undefined>()
 
   const trackCheckoutInitiated = useTrackCheckoutInitiated()
   const getCheckoutOffer = useCheckoutOfferAction()
+
+  useEffect(() => {
+    if (!plans.length || selectedPlanId) return
+    const popular = plans.find((p) => p.badge === 'MOST POPULAR')
+    setSelectedPlanId((popular ?? plans[1] ?? plans[0])?.id)
+  }, [plans, selectedPlanId])
 
   useEffect(() => {
     // Read-only: the Spin Wheel screen is the only place that *writes* the
@@ -156,29 +307,27 @@ export default function ClaudeSalesPlanScreen({
     const sessionKey = getCheckoutSessionKey()
     getCheckoutOffer(sessionKey).then((res) => onPercentOffResolved(res.percentOff))
     trackEvent('PricingViewed', { funnel: FUNNEL })
-    if (email) void trackCheckoutInitiated({ email, funnel: FUNNEL })
+    if (email) {
+      void trackCheckoutInitiated({ email, funnel: FUNNEL })
+      trackEvent('CheckoutStarted', { funnel: FUNNEL, planId: trialPlan?.id })
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const selectedPlan = plans.find((p) => p.id === selectedPlanId) ?? plans[0]
-  const effectivePercentOff = expired ? 0 : percentOff
+
   const goalLabel = answers['q1-purpose'] ? GOAL_LABEL_BY_ANSWER[answers['q1-purpose']] : undefined
-  const levelLabel = answers['q5-skill'] ? LEVEL_LABEL_BY_ANSWER[answers['q5-skill']] : undefined
+  const levelLabel = answers['q5-skill']
 
   const scrollToCheckout = () => {
+    document.getElementById('checkout-anchor')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     checkoutAnchorRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
-  const handleStartTrial = () => {
-    if (!email || !selectedPlan) return
-    trackEvent('CheckoutStarted', { funnel: FUNNEL, planId: selectedPlan.id })
-    setCheckoutOpen(true)
   }
 
   return (
     <div className="bg-sw-white" style={{ overflowX: 'clip' }}>
       {/* Sticky offer header */}
-      <div className="sticky top-0 z-50 border-b border-sw-border bg-sw-white">
+      <div className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
         <div className="mx-auto flex h-14 max-w-lg items-center justify-between gap-3 px-4">
           <div className="flex flex-col items-start">
             <span className="mb-0.5 text-[10px] leading-none font-semibold tracking-wide text-sw-grey uppercase">
@@ -227,7 +376,7 @@ export default function ClaudeSalesPlanScreen({
           <button
             type="button"
             onClick={() => window.location.reload()}
-            className="mb-5 inline-flex cursor-pointer items-center gap-2 rounded-full border border-sw-blue/25 bg-sw-blue-light px-4 py-1.5 text-sm font-bold text-sw-blue transition-opacity hover:opacity-90"
+            className="mb-5 inline-flex cursor-pointer items-center gap-2 rounded-full border border-sw-blue-border bg-sw-blue-light px-4 py-1.5 text-sm font-bold text-sw-blue transition-opacity hover:opacity-90"
           >
             🔄 Offer expired — refresh page for a new deal
           </button>
@@ -268,7 +417,7 @@ export default function ClaudeSalesPlanScreen({
 
       {/* Certificate preview */}
       <div className="mx-auto max-w-lg px-4 pb-6">
-        <div className="rounded-2xl border border-sw-blue/25 bg-gradient-to-br from-sw-blue-light to-sw-white p-3 shadow-lg">
+        <div className="rounded-2xl border border-sw-blue-border bg-gradient-to-br from-sw-blue-light to-sw-white p-3 shadow-lg">
           <AssetImage
             src="/assets/certificate.png"
             alt="Claude AI Certificate of Mastery"
@@ -311,119 +460,34 @@ export default function ClaudeSalesPlanScreen({
         </div>
       </div>
 
-      {/* Pricing / checkout */}
-      <div ref={checkoutAnchorRef} className="mx-auto max-w-lg px-4 pb-6">
-        <h2 className="mb-1 text-center text-xl font-extrabold text-sw-dark">
-          {expired ? (
-            'Choose your plan'
-          ) : (
-            <>
-              Choose a plan for after your <span className="text-sw-success">7-day free trial</span>
-            </>
-          )}
-        </h2>
-        {!expired ? (
-          <p className="mb-4 text-center text-sm font-semibold text-orange-500">
-            🕐 {effectivePercentOff}% discount — expires in {minutes}:{seconds}
-          </p>
+      <div id="checkout-anchor" ref={checkoutAnchorRef}>
+        {!expired && email && trialPlan ? (
+          <InlineTrialCheckout
+            email={email}
+            name={name}
+            productId={trialPlan.id}
+            funnel={FUNNEL}
+            percentOff={offerPercent}
+            onSuccess={onCheckoutSuccess}
+            highlights={CLAUDE_CHECKOUT_HIGHLIGHTS}
+          />
         ) : (
-          <p className="mb-4 text-center text-sm text-sw-grey">Your discount expired — refresh the page to unlock a new one.</p>
+          <ExpiredPlanPicker
+            plans={plans}
+            selectedPlanId={selectedPlan?.id}
+            onSelect={setSelectedPlanId}
+            onStart={() => {
+              if (!selectedPlan) return
+              trackEvent('CheckoutStarted', { funnel: FUNNEL, planId: selectedPlan.id })
+              try {
+                window.sessionStorage.setItem('sw_claude_selected_plan', JSON.stringify(selectedPlan))
+              } catch {
+                /* ignore */
+              }
+              onExpiredPlanContinue(selectedPlan.id)
+            }}
+          />
         )}
-
-        <div className="mb-4 flex flex-col gap-3">
-          {plans.map((plan) => {
-            const meta = PLAN_DISPLAY_META[plan.name] ?? { label: plan.name, periodLabel: 'per period' }
-            const discounted = applyDiscount(plan.price, effectivePercentOff)
-            const monthlyEquivalent = discounted / plan.intervalMonths
-            const isSelected = plan.id === selectedPlan?.id
-
-            return (
-              <button
-                key={plan.id}
-                type="button"
-                onClick={() => setSelectedPlanId(plan.id)}
-                className={`relative overflow-hidden rounded-2xl border-2 text-left transition-all duration-150 ${
-                  isSelected ? 'border-sw-blue bg-sw-blue-light shadow-md' : 'border-sw-border bg-sw-white hover:border-sw-grey'
-                }`}
-              >
-                {plan.badge ? (
-                  <div
-                    className={`py-1 text-center text-[11px] font-bold tracking-wider text-sw-white uppercase ${
-                      plan.badge === 'BEST VALUE' ? 'bg-sw-success' : 'bg-sw-blue'
-                    }`}
-                  >
-                    {plan.badge}
-                  </div>
-                ) : null}
-                <div className="flex items-center justify-between px-5 py-5 sm:px-6">
-                  <div className="flex items-center gap-3">
-                    <span
-                      aria-hidden="true"
-                      className={`flex size-5 shrink-0 items-center justify-center rounded-full border-2 ${
-                        isSelected ? 'border-sw-blue' : 'border-sw-border'
-                      }`}
-                    >
-                      {isSelected ? <span className="size-2.5 rounded-full bg-sw-blue" /> : null}
-                    </span>
-                    <div className="flex flex-col gap-1">
-                      <span className="text-lg font-extrabold text-sw-dark">{meta.label}</span>
-                      {effectivePercentOff > 0 ? (
-                        <span className="inline-block w-fit rounded-md bg-sw-blue px-2 py-0.5 text-[11px] font-bold text-sw-white uppercase">
-                          {effectivePercentOff}% OFF
-                        </span>
-                      ) : null}
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-end">
-                    <div className="rounded-xl bg-sw-grey-light px-3 py-1.5">
-                      <div className="flex items-baseline gap-0.5">
-                        <span className="text-sm font-medium text-sw-grey">$</span>
-                        <span className="text-2xl font-extrabold text-sw-dark">{(monthlyEquivalent / 100).toFixed(2)}</span>
-                        <span className="text-sm font-medium text-sw-grey"> /mo</span>
-                      </div>
-                    </div>
-                    {effectivePercentOff > 0 ? (
-                      <span className="mt-1 text-sm text-sw-grey line-through">
-                        {formatUsd(plan.price / plan.intervalMonths)}/mo
-                      </span>
-                    ) : null}
-                  </div>
-                </div>
-              </button>
-            )
-          })}
-        </div>
-
-        {selectedPlan ? (
-          <p className="mb-5 text-center text-sm leading-relaxed text-sw-grey">
-            {expired ? null : '7 day free trial, then '}
-            {formatUsd(applyDiscount(selectedPlan.price, effectivePercentOff))}{' '}
-            {PLAN_DISPLAY_META[selectedPlan.name]?.periodLabel ?? 'per period'}. Cancel any time.
-          </p>
-        ) : null}
-
-        {checkoutOpen && email && selectedPlan ? (
-          <div className="rounded-2xl border border-sw-border bg-sw-white p-4 shadow-lg animate-fade-up">
-            <p className="mb-3 text-sm font-bold text-sw-dark">Start your $1, 7-day trial</p>
-            <InlineTrialCheckout email={email} productId={selectedPlan.id} funnel={FUNNEL} onSuccess={onCheckoutSuccess} />
-          </div>
-        ) : (
-          <button
-            type="button"
-            onClick={handleStartTrial}
-            disabled={!email || !selectedPlan}
-            className="mb-4 w-full rounded-full bg-sw-blue py-4 text-lg font-extrabold tracking-wide text-sw-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            {expired ? 'GET STARTED' : 'START MY FREE 7 DAYS'}
-          </button>
-        )}
-
-        <div className="mb-2 flex flex-col items-center gap-2">
-          <div className="flex items-center gap-1.5 text-sm font-semibold text-sw-success">
-            <Lock className="size-4" />
-            Pay safe &amp; secure
-          </div>
-        </div>
       </div>
 
       {/* Impact blocks */}
@@ -466,11 +530,7 @@ export default function ClaudeSalesPlanScreen({
         <div className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:hidden">
           {TESTIMONIALS.map((t) => (
             <div key={t.name} className="w-72 shrink-0 snap-start rounded-2xl bg-sw-grey-light p-5">
-              <div className="flex gap-0.5 text-sw-amber">
-                {Array.from({ length: t.stars }).map((_, i) => (
-                  <Star key={i} className="size-4 fill-current" />
-                ))}
-              </div>
+              <StarRow count={t.stars} />
               <p className="mt-3 mb-4 text-sm leading-relaxed text-sw-dark">&ldquo;{t.quote}&rdquo;</p>
               <div>
                 <p className="text-sm font-bold text-sw-dark">{t.name}</p>
@@ -482,11 +542,7 @@ export default function ClaudeSalesPlanScreen({
         <div className="mx-auto hidden max-w-3xl gap-4 px-4 sm:grid sm:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <div key={t.name} className="flex flex-col rounded-2xl bg-sw-grey-light p-5">
-              <div className="flex gap-0.5 text-sw-amber">
-                {Array.from({ length: t.stars }).map((_, i) => (
-                  <Star key={i} className="size-4 fill-current" />
-                ))}
-              </div>
+              <StarRow count={t.stars} />
               <p className="mt-3 mb-4 flex-1 text-sm leading-relaxed text-sw-dark">&ldquo;{t.quote}&rdquo;</p>
               <div>
                 <p className="text-sm font-bold text-sw-dark">{t.name}</p>

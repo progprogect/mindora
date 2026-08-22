@@ -173,16 +173,27 @@ export default function ClaudeQuizPage() {
           answers={quizState.answers}
           percentOff={percentOff}
           onPercentOffResolved={setPercentOff}
-          onCheckoutSuccess={() => {
-            persistClaudeQuizResults({
-              answers: quizState.answers,
-              identity: quizState.identity,
-              email: quizState.submittedEmail,
-              name: quizState.submittedName,
-              quizType: 'claude-ai-certification',
-            })
-            navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
-          }}
+            onCheckoutSuccess={() => {
+              persistClaudeQuizResults({
+                answers: quizState.answers,
+                identity: quizState.identity,
+                email: quizState.submittedEmail,
+                name: quizState.submittedName,
+                quizType: 'claude-ai-certification',
+              })
+              navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
+            }}
+            onExpiredPlanContinue={(productId) => {
+              persistClaudeQuizResults({
+                answers: quizState.answers,
+                identity: quizState.identity,
+                email: quizState.submittedEmail,
+                name: quizState.submittedName,
+                product: productId,
+                quizType: 'claude-ai-certification',
+              })
+              window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`
+            }}
         />
       )
     }

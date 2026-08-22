@@ -43,7 +43,7 @@ export default function ClaudeQuestionScreen({ screen, initialValue, onSelect }:
               className={`flex w-full items-center gap-4 rounded-2xl border-2 px-5 py-5 text-left transition-all duration-200 active:scale-[0.98] ${
                 isSelected
                   ? 'scale-[0.99] border-sw-blue bg-sw-blue-light'
-                  : 'border-sw-border bg-sw-white hover:-translate-y-0.5 hover:scale-[1.02] hover:border-sw-blue hover:bg-sw-blue-light'
+                  : 'border-sw-grey-border bg-sw-white hover:border-sw-blue hover:bg-sw-blue-light'
               }`}
             >
               <span className="w-9 flex-shrink-0 text-center text-2xl" aria-hidden>

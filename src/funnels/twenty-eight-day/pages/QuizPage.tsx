@@ -9,7 +9,7 @@ import {
   persistQuizState,
   persistSalesStep,
 } from '@/funnels/twenty-eight-day/lib/quizStorage'
-import { buildProfile, getDominantEcho } from '@/funnels/twenty-eight-day/lib/scoring'
+import { buildProfile, getDominantEcho, getInterstitial1Variant } from '@/funnels/twenty-eight-day/lib/scoring'
 import { trackEvent, identifyUser } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useUpdateLeadName } from '@/shared/lib/backend'
 
@@ -150,7 +150,7 @@ export default function QuizPage() {
     (name: string) => {
       setQuizState((prev) => ({ ...prev, name, step: prev.step + 1 }))
       if (quizState.email) {
-        void updateLeadName({ email: quizState.email, name, funnel: FUNNEL })
+        void updateLeadName({ email: quizState.email, name })
       }
       persistQuizResults({
         role: quizState.role,
@@ -168,43 +168,85 @@ export default function QuizPage() {
   if (quizFinished) {
     const goToSalesStep = (step: number) => setSalesStep(step)
 
+    // The checkout page replaces the standard nav with its own sticky offer
+    // bar (matching the original — no back button/logo/progress dots there).
+    if (salesStep === 5) {
+      return (
+        <SalesPlanScreen
+          profile={profile}
+          email={quizState.email}
+          name={quizState.name}
+          answers={quizState.answers}
+          percentOff={percentOff}
+          onPercentOffResolved={setPercentOff}
+          onCheckoutSuccess={() => {
+            persistQuizResults({
+              role: quizState.role,
+              email: quizState.email,
+              name: quizState.name,
+              profile,
+              savedAt: Date.now(),
+            })
+            window.localStorage.setItem('sw_checkout_completed', 'true')
+            window.location.href = `/checkout/setup?trial=1&funnel=${FUNNEL}`
+          }}
+          onExpiredPlanContinue={(productId) => {
+            persistQuizResults({
+              role: quizState.role,
+              email: quizState.email,
+              name: quizState.name,
+              profile,
+              savedAt: Date.now(),
+              product: productId,
+            })
+            window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`
+          }}
+        />
+      )
+    }
+
     return (
-      <SalesFunnelLayout step={salesStep} onBack={salesStep > 0 ? () => goToSalesStep(salesStep - 1) : undefined}>
+      <SalesFunnelLayout
+        step={salesStep}
+        onBack={salesStep > 0 ? () => goToSalesStep(salesStep - 1) : undefined}
+        contentClassName={salesStep === 0 || salesStep === 4 ? 'p-0' : 'px-4 py-0'}
+        footer={
+          salesStep === 0 ? (
+            <button type="button" onClick={() => goToSalesStep(1)} className="sw-cta animate-pulse-cta">
+              See My Plan →
+            </button>
+          ) : salesStep === 1 ? (
+            <button type="button" onClick={() => goToSalesStep(2)} className="sw-cta animate-pulse-cta">
+              Continue →
+            </button>
+          ) : salesStep === 2 ? (
+            <button type="button" onClick={() => goToSalesStep(3)} className="sw-cta animate-pulse-cta">
+              Continue →
+            </button>
+          ) : salesStep === 3 ? (
+            <button type="button" onClick={() => goToSalesStep(4)} className="sw-cta animate-pulse-cta">
+              Start My 28-Day AI Challenge →
+            </button>
+          ) : undefined
+        }
+      >
         {salesStep === 0 && (
           <PersonalProfileScreen
             profile={profile}
             role={quizState.role}
             name={quizState.name}
-            onContinue={() => goToSalesStep(1)}
+            answers={quizState.answers}
           />
         )}
-        {salesStep === 1 && <SalesBenefitsScreen onContinue={() => goToSalesStep(2)} />}
-        {salesStep === 2 && <SalesBeforeAfterScreen onContinue={() => goToSalesStep(3)} />}
-        {salesStep === 3 && <SalesSocialProofScreen onContinue={() => goToSalesStep(4)} />}
+        {salesStep === 1 && <SalesBenefitsScreen profile={profile} answers={quizState.answers} />}
+        {salesStep === 2 && <SalesBeforeAfterScreen profile={profile} answers={quizState.answers} />}
+        {salesStep === 3 && <SalesSocialProofScreen />}
         {salesStep === 4 && (
           <SalesSpinWheelScreen
+            name={quizState.name}
             onFinish={(revealedPercentOff) => {
               setPercentOff(revealedPercentOff)
               goToSalesStep(5)
-            }}
-          />
-        )}
-        {salesStep === 5 && (
-          <SalesPlanScreen
-            role={quizState.role}
-            email={quizState.email}
-            name={quizState.name}
-            percentOff={percentOff}
-            onPercentOffResolved={setPercentOff}
-            onCheckoutSuccess={() => {
-              persistQuizResults({
-                role: quizState.role,
-                email: quizState.email,
-                name: quizState.name,
-                profile,
-                savedAt: Date.now(),
-              })
-              navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
             }}
           />
         )}
@@ -219,23 +261,38 @@ export default function QuizPage() {
   const progressCurrent = findProgressStep(quizState.step)
   const showProgress = quizState.step > 0 && !HIDE_PROGRESS_TYPES.has(currentScreen.type)
   const dominantEcho = getDominantEcho(quizState.answers)
+  const logoVariant = currentScreen.type === 'name-capture' ? 'text' : undefined
+  const ownsPadding = new Set(['identity', 'social-proof', 'interstitial', 'email', 'name-capture', 'loading'])
+  const quizFooter =
+    currentScreen.type === 'social-proof' ? (
+      <button type="button" onClick={handleAdvance} className="sw-cta animate-pulse-cta">
+        {currentScreen.ctaLabel}
+      </button>
+    ) : currentScreen.type === 'interstitial' ? (
+      <button type="button" onClick={handleAdvance} className="sw-cta animate-pulse-cta">
+        {currentScreen.ctaLabel}
+      </button>
+    ) : undefined
 
   return (
     <QuizScreenLayout
-      onBack={quizState.step > 0 && currentScreen.type !== 'loading' ? handleBack : undefined}
+      onBack={quizState.step > 0 && currentScreen.type !== 'name-capture' ? handleBack : undefined}
       currentStep={showProgress ? progressCurrent : undefined}
       totalSteps={showProgress ? 18 : undefined}
+      logoVariant={logoVariant}
+      pageClassName={currentScreen.type === 'identity' ? 'bg-sw-blue-light' : undefined}
+      contentClassName={ownsPadding.has(currentScreen.type) ? 'p-0' : 'px-4'}
+      footer={quizFooter}
     >
       {currentScreen.type === 'identity' && (
         <IdentityScreen screen={currentScreen} onSelect={handleIdentitySelect} />
       )}
-      {currentScreen.type === 'social-proof' && (
-        <SocialProofScreen screen={currentScreen} onContinue={handleAdvance} />
-      )}
+      {currentScreen.type === 'social-proof' && <SocialProofScreen screen={currentScreen} />}
       {currentScreen.type === 'question' && (
         <QuestionScreen
           key={currentScreen.id}
           screen={currentScreen}
+          initialSelected={quizState.answers[currentScreen.id]}
           onAnswer={(optionId) => handleQuestionAnswer(currentScreen.id, optionId)}
         />
       )}
@@ -243,11 +300,16 @@ export default function QuizPage() {
         <AIToolsQuestionScreen
           key={currentScreen.id}
           screen={currentScreen}
+          initialSelected={quizState.answers[currentScreen.id]}
           onAnswer={(optionId) => handleQuestionAnswer(currentScreen.id, optionId)}
         />
       )}
       {currentScreen.type === 'interstitial' && (
-        <InterstitialScreen screen={currentScreen} dominantEcho={dominantEcho} onContinue={handleAdvance} />
+        <InterstitialScreen
+          screen={currentScreen}
+          variantKey={currentScreen.id === 'interstitial-1' ? getInterstitial1Variant(quizState.answers) : null}
+          dominantEcho={currentScreen.id === 'interstitial-1' ? null : dominantEcho}
+        />
       )}
       {currentScreen.type === 'loading' && <LoadingScreen onComplete={handleLoadingComplete} />}
       {currentScreen.type === 'email' && <EmailScreen screen={currentScreen} onSubmit={handleEmailSubmit} />}

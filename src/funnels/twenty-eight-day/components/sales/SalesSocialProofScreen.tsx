@@ -1,69 +1,88 @@
-import { ShieldCheck, Star } from 'lucide-react'
+import { Star } from 'lucide-react'
 
-interface SalesSocialProofScreenProps {
-  onContinue: () => void
-}
+const STATS = [
+  { value: '100k+', label: 'Learners worldwide' },
+  { value: '4.8★', label: 'Average rating' },
+  { value: '93%', label: 'See results by day 7' },
+]
 
 const TESTIMONIALS = [
   {
-    name: 'Maria T.',
+    name: 'Sarah M.',
+    initials: 'SM',
     role: 'Marketing Manager',
-    quote: 'I automated my weekly reporting in 3 days and got 5 hours back every week. Wish I\u2019d started sooner.',
+    color: 'bg-sw-blue',
+    quote:
+      'I went from zero AI knowledge to using it every single day at work. The 28-day structure made it completely manageable — even with two kids.',
   },
   {
-    name: 'Diego M.',
-    role: 'Small Business Owner',
-    quote: 'The daily steps made it actually stick. First program like this that didn\u2019t feel overwhelming.',
+    name: 'James K.',
+    initials: 'JK',
+    role: 'Freelance Designer',
+    color: 'bg-teal-500',
+    quote: 'I automated 3 hours of work a week using skills from just the first 7 days. I genuinely wish I\'d started sooner.',
   },
   {
-    name: 'Priya K.',
-    role: 'Product Designer',
-    quote: 'My AI-readiness score went from 34 to 81 in a month. I finally feel ahead instead of behind.',
+    name: 'Priya R.',
+    initials: 'PR',
+    role: 'Career Changer',
+    color: 'bg-purple-500',
+    quote:
+      'Got my AI certificate and landed a new role within 6 weeks of finishing. The personal plan made all the difference.',
   },
 ]
 
-const TRUST_BADGES = ['Money-back guarantee', 'Cancel anytime', 'Secure checkout']
-
-export default function SalesSocialProofScreen({ onContinue }: SalesSocialProofScreenProps) {
+export default function SalesSocialProofScreen() {
   return (
-    <div className="flex flex-1 flex-col gap-6 py-4 animate-fade-up">
+    <div className="flex flex-1 flex-col gap-6 pt-4 pb-32 animate-fade-up">
       <div className="text-center">
-        <h1 className="text-2xl font-extrabold text-sw-dark">Join 40,000+ members</h1>
-        <p className="mt-2 text-sm text-sw-grey">Real results from people who started exactly where you are.</p>
+        <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
+          Join 100,000+
+          <br />
+          AI Learners
+        </h1>
+        <p className="mt-2 text-sm text-sw-grey">People just like you who took the first step</p>
       </div>
 
-      <div className="flex flex-col gap-3">
-        {TESTIMONIALS.map((t) => (
-          <div key={t.name} className="rounded-sw border border-sw-border bg-sw-white p-4 shadow-sw-card">
-            <div className="mb-2 flex text-sw-amber">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="size-3.5 fill-current" />
-              ))}
-            </div>
-            <p className="text-sm text-sw-dark">&ldquo;{t.quote}&rdquo;</p>
-            <p className="mt-2 text-xs font-semibold text-sw-grey">
-              {t.name} · {t.role}
-            </p>
+      <div className="grid grid-cols-3 gap-3">
+        {STATS.map((s) => (
+          <div
+            key={s.label}
+            className="flex flex-col items-center rounded-2xl border border-sw-blue/20 bg-sw-blue-light p-3 text-center"
+          >
+            <span className="mb-1 text-xl font-extrabold leading-none text-sw-blue">{s.value}</span>
+            <span className="text-xs font-medium leading-tight text-sw-grey">{s.label}</span>
           </div>
         ))}
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-sw bg-sw-grey-light px-4 py-3">
-        {TRUST_BADGES.map((badge) => (
-          <span key={badge} className="flex items-center gap-1.5 text-xs font-semibold text-sw-grey">
-            <ShieldCheck className="size-3.5 text-sw-success" />
-            {badge}
-          </span>
-        ))}
+      <div>
+        <p className="mb-4 text-center text-base font-extrabold text-sw-dark">What Our Learners Are Saying</p>
+        <div className="flex flex-col gap-3">
+          {TESTIMONIALS.map((t) => (
+            <div key={t.name} className="rounded-2xl border border-sw-border bg-sw-white p-5">
+              <div className="mb-3 flex items-center gap-3">
+                <div
+                  className={`flex size-10 shrink-0 items-center justify-center rounded-full text-xs font-bold text-sw-white ${t.color}`}
+                >
+                  {t.initials}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-bold leading-none text-sw-dark">{t.name}</p>
+                  <p className="text-xs text-sw-grey">{t.role}</p>
+                </div>
+                <div className="flex text-sw-amber">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className="size-4 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed text-sw-dark">&ldquo;{t.quote}&rdquo;</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <button
-        type="button"
-        onClick={onContinue}
-        className="mt-2 w-full animate-pulse-cta rounded-sw-sm bg-sw-blue py-3.5 font-extrabold tracking-wide text-sw-white transition hover:bg-sw-blue-hover"
-      >
-        CONTINUE →
-      </button>
     </div>
   )
 }

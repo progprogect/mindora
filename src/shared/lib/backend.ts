@@ -121,11 +121,30 @@ export function useSetCheckoutOfferPercentAction() {
   )
 }
 
-export function useCreateTrialSetupIntent() {
-  const act = useAction(anyApi.stripe.createTrialSetupIntent)
+export function useCreateTrialPaymentIntent() {
+  const act = useAction(anyApi.stripe.createTrialPaymentIntent)
   return useCallback(
     (args: { email: string; productId: string; funnel: string }) =>
       act(args) as Promise<{ clientSecret: string }>,
+    [act],
+  )
+}
+
+/** @deprecated Alias of `useCreateTrialPaymentIntent`. */
+export function useCreateTrialSetupIntent() {
+  return useCreateTrialPaymentIntent()
+}
+
+export function useCreatePayPalPaymentIntent() {
+  const act = useAction(anyApi.stripe.createPayPalPaymentIntent)
+  return useCallback(
+    (args: {
+      customerEmail: string
+      productId: string
+      funnel: string
+      returnUrl?: string
+      confirmAndRedirect?: boolean
+    }) => act(args) as Promise<{ clientSecret: string; redirectUrl: string | null }>,
     [act],
   )
 }

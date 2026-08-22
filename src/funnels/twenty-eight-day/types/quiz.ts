@@ -5,8 +5,8 @@ export interface QuizOption {
   label: string
   emoji?: string
   description?: string
-  /** Contribution to the 0-100 AI-readiness score (higher = more AI-ready). */
-  weight: number
+  /** Unused by production scoring (`ce` uses fixed maps, not option weights). */
+  weight?: number
   /** Tags an answer as "overwhelmed" / "avoidant" / etc. for interstitial echo copy. */
   echo?: string
 }
@@ -26,6 +26,7 @@ export interface SocialProofScreen {
   id: string
   title: string
   subtitle: string
+  heroImage?: string
   avatars: string[]
   avatarsCaption: string
   tagline: string
@@ -121,18 +122,20 @@ export interface QuizState {
 
 export type ScoreLabel = 'AI Newcomer' | 'AI Aware' | 'AI Ready' | 'AI Native'
 
-export interface QuizProfileStats {
-  timeSavedPerWeek: string
-  percentile: number
-  toolsToMaster: number
+export interface QuizProfileStat {
+  label: string
+  value: string
 }
 
 export interface QuizProfile {
   score: number
   scoreLabel: ScoreLabel
+  scoreTone: string
   archetype: string
+  archetypeEmoji: string
+  archetypeFocus: string
   insight: string
-  stats: QuizProfileStats
+  stats: QuizProfileStat[]
 }
 
 export const TOTAL_QUESTION_STEPS = 18

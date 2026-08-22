@@ -22,7 +22,7 @@ export default function ClaudeSalesFunnelLayout({
 }: ClaudeSalesFunnelLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden bg-sw-white">
-      <header className="sticky top-0 z-50 border-b border-sw-border bg-sw-white">
+      <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
         <div className="mx-auto flex h-14 max-w-lg items-center px-4">
           {onBack ? (
             <button

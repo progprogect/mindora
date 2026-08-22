@@ -1,4 +1,3 @@
-import { Star } from 'lucide-react'
 import AssetImage from '@/shared/components/AssetImage'
 import type { ClaudeQuizAnswers, ClaudeSocialProofScreenDef } from '@/funnels/claude/types/claudeQuiz'
 
@@ -55,9 +54,9 @@ export default function ClaudeSocialProofScreen({ screen, answers, onContinue }:
         {copy ? <p className="mb-8 max-w-xs text-center text-sm text-sw-grey">{copy}</p> : null}
 
         <div className="mb-8 flex items-center gap-1">
-          <span className="flex text-sw-amber">
+          <span className="flex text-lg leading-7 text-sw-amber">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="size-[18px] fill-current" />
+              <span key={i}>★</span>
             ))}
           </span>
           <span className="ml-1 text-xs font-medium text-sw-grey">4.9 / 5 from 12,400+ learners</span>

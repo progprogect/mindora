@@ -58,4 +58,5 @@ npm start
 | `/quiz/28-day-ai-challenge` | 28-day quiz funnel |
 | `/quiz/claude-ai-certification` | Claude quiz funnel |
 | `/checkout/setup?funnel=` | Unified post-checkout |
+| `/checkout?product=&funnel=` | Expired-offer $1 checkout |
 | `/terms-and-conditions`, `/privacy-policy`, `/subscription-terms` | Legal stubs |

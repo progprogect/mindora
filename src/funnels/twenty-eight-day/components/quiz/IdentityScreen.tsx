@@ -13,56 +13,64 @@ export default function IdentityScreen({ screen, onSelect }: IdentityScreenProps
   const textOptions = screen.options.filter((o) => o.variant === 'text')
 
   return (
-    <div className="flex flex-1 flex-col justify-center gap-6 bg-sw-blue-light py-8 animate-fade-up">
-      <div className="text-center">
-        <h1 className="text-3xl font-extrabold tracking-tight text-sw-dark sm:text-4xl">{screen.title}</h1>
-        <p className="mt-1.5 text-base font-semibold text-sw-blue">{screen.subtitle}</p>
-        <p className="mt-4 text-sm font-bold text-sw-dark">{screen.question}</p>
+    <div className="flex w-full flex-1 flex-col animate-fade-up">
+      <div className="px-5 pt-8 pb-5 text-center">
+        <h1 className="mb-1 text-[2.4rem] leading-[1.1] font-extrabold text-sw-dark sm:text-[2.8rem]">
+          {screen.title}
+        </h1>
+        <p className="mb-4 text-[1.1rem] font-semibold text-sw-blue sm:text-[1.2rem]">{screen.subtitle}</p>
+        <p className="text-[1.05rem] font-bold text-sw-dark">{screen.question}</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="mb-3 grid grid-cols-2 items-stretch gap-3 px-4">
         {photoOptions.map((option) => (
           <button
             key={option.id}
             type="button"
             onClick={() => onSelect(option.id)}
-            className="group flex flex-col overflow-hidden rounded-sw border-[2.5px] border-sw-blue bg-sw-white text-left shadow-sw-card transition hover:shadow-lg"
+            className="group grid cursor-pointer overflow-hidden rounded-2xl border-[2.5px] border-sw-blue bg-white shadow-md transition-all duration-150 hover:scale-[1.03] hover:shadow-xl hover:-translate-y-1 focus:outline-none active:scale-[0.97]"
           >
-            <AssetImage
-              src={option.photo ?? ''}
-              alt={option.label}
-              fallbackEmoji={option.emoji}
-              className="aspect-[4/5] w-full object-cover"
-            />
-            <div className="flex items-center justify-between gap-1 bg-sw-blue px-3 py-3">
-              <span className="text-sm font-bold leading-tight text-sw-white">{option.label}</span>
-              <ChevronRight className="size-4 shrink-0 text-sw-white" />
+            <div className="relative min-h-[180px] overflow-hidden bg-white">
+              <AssetImage
+                src={option.photo ?? ''}
+                alt={option.label}
+                fallbackEmoji={option.emoji}
+                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+              />
+            </div>
+            <div className="flex min-h-[72px] items-center justify-between gap-2 bg-sw-blue px-4 py-[14px]">
+              <span className="text-left text-[15px] leading-snug font-bold text-white">{option.label}</span>
+              <ChevronRight className="size-5 shrink-0 text-white" />
             </div>
           </button>
         ))}
       </div>
 
-      {textOptions.map((option) => (
-        <button
-          key={option.id}
-          type="button"
-          onClick={() => onSelect(option.id)}
-          className="flex w-full items-center justify-between gap-2 rounded-full border border-sw-border bg-sw-white px-5 py-4 text-sm font-bold text-sw-dark shadow-sw-card transition hover:border-sw-blue"
-        >
-          <span className="flex items-center gap-2">
-            <span aria-hidden>{option.emoji}</span>
-            {option.label}
-          </span>
-          <ChevronRight className="size-4 shrink-0 text-sw-grey" />
-        </button>
-      ))}
+      <div className="px-4">
+        {textOptions.map((option) => (
+          <button
+            key={option.id}
+            type="button"
+            onClick={() => onSelect(option.id)}
+            className="flex w-full items-center justify-between rounded-2xl border-[2px] border-white/70 bg-white px-5 py-4 text-left text-[15px] font-semibold text-sw-dark shadow-md transition-all duration-150 hover:scale-[1.02] hover:border-sw-blue hover:bg-sw-blue-light hover:-translate-y-0.5"
+          >
+            <span>
+              {option.emoji}
+              {option.label}
+            </span>
+            <ChevronRight className="ml-3 size-5 shrink-0 text-sw-grey" />
+          </button>
+        ))}
+      </div>
 
       {screen.trustLine ? (
-        <p className="text-center text-xs font-medium text-sw-grey">{screen.trustLine}</p>
+        <p className="mt-8 px-4 text-center text-[11px] text-sw-grey">{screen.trustLine}</p>
       ) : null}
 
-      <QuizTermsFooter />
-      <p className="text-center text-[10px] text-sw-grey/70">ClickTech Solutions LTD. T/A. SuccessWise.</p>
+      <div className="px-4">
+        <QuizTermsFooter />
+        <p className="mt-2 text-center text-[11px] text-sw-grey">ClickTech Solutions LTD. T/A. SuccessWise.</p>
+      </div>
     </div>
   )
 }

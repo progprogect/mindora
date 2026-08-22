@@ -3,6 +3,7 @@ import { ConvexProvider } from 'convex/react'
 import { convexClient } from '@/shared/lib/convexClient'
 import HomePage from '@/pages/HomePage'
 import CheckoutSetupPage from '@/pages/CheckoutSetupPage'
+import CheckoutPage from '@/pages/CheckoutPage'
 import LegalStubPage from '@/pages/LegalStubPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 import QuizPage from '@/funnels/twenty-eight-day/pages/QuizPage'
@@ -17,6 +18,7 @@ function App() {
           <Route path="/quiz/28-day-ai-challenge" element={<QuizPage />} />
           <Route path="/quiz/claude-ai-certification" element={<ClaudeQuizPage />} />
           <Route path="/checkout/setup" element={<CheckoutSetupPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
           <Route
             path="/terms-and-conditions"
             element={<LegalStubPage title="Terms & Conditions" />}
