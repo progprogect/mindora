@@ -1,0 +1,624 @@
+[
+  {
+    "id": "identity",
+    "type": "identity",
+    "totalSteps": 16,
+    "headline": "Master AI for Microsoft 365",
+    "subtext": "Have you ever used AI to help with Word, Excel, PowerPoint or Outlook?",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Yes",
+        "value": "yes"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Not yet",
+        "value": "not-yet"
+      }
+    ]
+  },
+  {
+    "id": "positive-reinforcement",
+    "type": "social-proof",
+    "totalSteps": 16,
+    "headline": "You're ahead — most people still do all of this by hand",
+    "copy": "Knowing AI can help already puts you ahead. The real advantage comes from using it across the apps you already live in — Word, Excel, PowerPoint, Outlook and Teams — so the work flows from one to the next instead of starting over each time.",
+    "ctaLabel": "CONTINUE →",
+    "echoKey": "identity",
+    "echoHeadline": {
+      "yes": "You're ahead — most people still do all of this by hand",
+      "not-yet": "Perfect timing — this is the biggest change to office work in years"
+    },
+    "echoCopy": {
+      "yes": "Knowing AI can help already puts you ahead. The real advantage comes from using it across the apps you already live in — Word, Excel, PowerPoint, Outlook and Teams — so the work flows from one to the next instead of starting over each time.",
+      "not-yet": "Most people still retype the same information into four different apps. You are about to learn how to brief AI once and carry the work through Word, Excel, PowerPoint, Outlook and Teams."
+    }
+  },
+  {
+    "id": "q1-m365-level",
+    "type": "question",
+    "step": 1,
+    "totalSteps": 16,
+    "question": "How confident are you with Microsoft 365 overall?",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Beginner — I know the basics of a couple of apps",
+        "value": "beginner"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Intermediate — I use several apps every week",
+        "value": "intermediate"
+      },
+      {
+        "emoji": "💪",
+        "label": "Advanced — formulas, templates, shared files",
+        "value": "advanced"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Expert — other people ask me for help",
+        "value": "expert"
+      }
+    ]
+  },
+  {
+    "id": "q2-work-status",
+    "type": "question",
+    "step": 2,
+    "totalSteps": 16,
+    "question": "What's your current work status?",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Full-time employee",
+        "value": "full-time"
+      },
+      {
+        "emoji": "✍️",
+        "label": "Freelancer / Self-employed",
+        "value": "freelancer"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Business owner",
+        "value": "business-owner"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Between jobs / Career switcher",
+        "value": "between-jobs"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Exploring options",
+        "value": "exploring"
+      }
+    ]
+  },
+  {
+    "id": "q3-industry",
+    "type": "question",
+    "step": 3,
+    "totalSteps": 16,
+    "question": "What field do you work in?",
+    "options": [
+      {
+        "emoji": "💻",
+        "label": "Tech & Software",
+        "value": "tech"
+      },
+      {
+        "emoji": "💳",
+        "label": "Finance & Accounting",
+        "value": "finance"
+      },
+      {
+        "emoji": "📣",
+        "label": "Marketing & Sales",
+        "value": "marketing"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Consulting & Strategy",
+        "value": "consulting"
+      },
+      {
+        "emoji": "📋",
+        "label": "Admin & Operations",
+        "value": "admin-ops"
+      },
+      {
+        "emoji": "🏥",
+        "label": "Healthcare",
+        "value": "healthcare"
+      },
+      {
+        "emoji": "🎓",
+        "label": "Education & Public Sector",
+        "value": "education"
+      },
+      {
+        "emoji": "🌐",
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "id": "q4-main-app",
+    "type": "question",
+    "step": 4,
+    "totalSteps": 16,
+    "question": "Which Microsoft 365 app eats most of your week?",
+    "options": [
+      {
+        "emoji": "📧",
+        "label": "Outlook — email and my calendar",
+        "value": "outlook"
+      },
+      {
+        "emoji": "📊",
+        "label": "Excel — data, numbers and reports",
+        "value": "excel"
+      },
+      {
+        "emoji": "📄",
+        "label": "Word — documents, reports and proposals",
+        "value": "word"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "PowerPoint — slides and presentations",
+        "value": "powerpoint"
+      },
+      {
+        "emoji": "👥",
+        "label": "Teams — meetings, chat and follow-ups",
+        "value": "teams"
+      }
+    ]
+  },
+  {
+    "id": "q5-pain-point",
+    "type": "question",
+    "step": 5,
+    "totalSteps": 16,
+    "question": "What's your biggest frustration with your Microsoft 365 work?",
+    "options": [
+      {
+        "emoji": "📥",
+        "label": "My inbox controls my day",
+        "value": "inbox"
+      },
+      {
+        "emoji": "🔁",
+        "label": "I retype the same information into different apps",
+        "value": "retyping"
+      },
+      {
+        "emoji": "🧱",
+        "label": "Starting from a blank page or blank slide",
+        "value": "blank-page"
+      },
+      {
+        "emoji": "📈",
+        "label": "Getting a clear answer out of my data",
+        "value": "data"
+      },
+      {
+        "emoji": "🗓️",
+        "label": "Meetings that produce no follow-through",
+        "value": "meetings"
+      },
+      {
+        "emoji": "💡",
+        "label": "I don't know what AI can actually do here",
+        "value": "unknown"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-1",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "The time goes on moving work between apps",
+    "copy": "Most office work is the same information rewritten: the spreadsheet becomes the slide, the slide becomes the email, the meeting becomes a document nobody reads. AI is at its most useful exactly there — carrying one properly briefed piece of work from one app to the next instead of you rebuilding it each time.",
+    "ctaLabel": "KEEP GOING →",
+    "echoKey": "q5-pain-point",
+    "echoHeadline": {
+      "inbox": "Your inbox can stop setting your agenda",
+      "retyping": "That retyping is the part AI removes first",
+      "blank-page": "A blank page is the easiest problem to solve here",
+      "data": "You can get to the answer in your data much faster",
+      "meetings": "A meeting can end with an owned, dated plan",
+      "unknown": "You're about to see exactly what's possible"
+    },
+    "echoCopy": {
+      "inbox": "You will learn how to get a long thread down to what was actually decided, what is still open, and what needs a reply from you — then draft that reply and read it before it goes anywhere.",
+      "retyping": "You will learn how to brief AI once and carry that work through Word, Excel, PowerPoint and Outlook, so the report, the slide and the email all come from the same source instead of three retypings.",
+      "blank-page": "You will learn how to turn rough notes into a working outline in Word or PowerPoint, so you start from a structure to improve rather than an empty page to fill.",
+      "data": "You will learn how to ask a spreadsheet a plain-English question, then check the figure in the sheet itself before you repeat it to anybody.",
+      "meetings": "You will learn how to prepare for a meeting, capture what was agreed, and turn it into named owners and real dates instead of a summary nobody acts on.",
+      "unknown": "Most people have not seen AI reshape a document, explain a formula, draft a deck outline, condense an email thread and prepare a meeting brief. That is the whole course."
+    }
+  },
+  {
+    "id": "q6-tasks",
+    "type": "question",
+    "step": 6,
+    "totalSteps": 16,
+    "question": "What would you hand over to AI first?",
+    "subtext": "Pick the one that matters most right now",
+    "options": [
+      {
+        "emoji": "📧",
+        "label": "Reading and replying to email",
+        "value": "email"
+      },
+      {
+        "emoji": "📄",
+        "label": "Writing and reshaping documents",
+        "value": "documents"
+      },
+      {
+        "emoji": "📊",
+        "label": "Analysing data and building formulas",
+        "value": "analysis"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "Building slides and presentations",
+        "value": "slides"
+      },
+      {
+        "emoji": "🗓️",
+        "label": "Meeting prep, notes and follow-ups",
+        "value": "meetings"
+      },
+      {
+        "emoji": "🔗",
+        "label": "Joining it all into one repeatable process",
+        "value": "workflow"
+      }
+    ]
+  },
+  {
+    "id": "q7-time-wasted",
+    "type": "question",
+    "step": 7,
+    "totalSteps": 16,
+    "question": "How much time each week goes on work AI could help with?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "1–3 hours",
+        "value": "1-3"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "3–5 hours",
+        "value": "3-5"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "5–10 hours",
+        "value": "5-10"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "10+ hours — I know, it's painful",
+        "value": "10-plus"
+      }
+    ]
+  },
+  {
+    "id": "q8-learning",
+    "type": "question",
+    "step": 8,
+    "totalSteps": 16,
+    "question": "How do you learn best?",
+    "options": [
+      {
+        "emoji": "📱",
+        "label": "Short lessons I can do on my phone",
+        "value": "bite-sized"
+      },
+      {
+        "emoji": "🎯",
+        "label": "Real prompts I can copy and adapt",
+        "value": "examples"
+      },
+      {
+        "emoji": "🔨",
+        "label": "Hands-on tasks using my own work",
+        "value": "projects"
+      },
+      {
+        "emoji": "📺",
+        "label": "Walkthroughs I can follow step by step",
+        "value": "video"
+      }
+    ]
+  },
+  {
+    "id": "q9-career",
+    "type": "question",
+    "step": 9,
+    "totalSteps": 16,
+    "question": "How important are AI skills in Microsoft 365 for your career?",
+    "options": [
+      {
+        "emoji": "🚨",
+        "label": "Critical — these apps are my daily job",
+        "value": "critical"
+      },
+      {
+        "emoji": "📈",
+        "label": "Very important — it will set me apart",
+        "value": "very"
+      },
+      {
+        "emoji": "🤔",
+        "label": "Somewhat — I mainly want to work faster",
+        "value": "somewhat"
+      },
+      {
+        "emoji": "🧪",
+        "label": "I'm curious — I want to see what's possible",
+        "value": "curious"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-2",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "You don't need a paid Copilot licence for this",
+    "copy": "Microsoft sells Copilot as a paid add-on, and most people learning this do not have it. The course covers three setups — Copilot inside the apps, a separate chat AI alongside them, or a free tier only — and every lesson can be completed on the free path. You choose your setup in the second lesson.",
+    "ctaLabel": "CONTINUE →"
+  },
+  {
+    "id": "q10-previous",
+    "type": "question",
+    "step": 10,
+    "totalSteps": 16,
+    "question": "Have you tried to learn this before?",
+    "options": [
+      {
+        "emoji": "🆕",
+        "label": "No — this would be my first time",
+        "value": "first-time"
+      },
+      {
+        "emoji": "📺",
+        "label": "Watched free videos and articles",
+        "value": "youtube"
+      },
+      {
+        "emoji": "💳",
+        "label": "Started a paid course but didn't finish",
+        "value": "paid-unfinished"
+      },
+      {
+        "emoji": "✅",
+        "label": "Yes — and I want to go further",
+        "value": "completed"
+      }
+    ]
+  },
+  {
+    "id": "q11-blocker",
+    "type": "question",
+    "step": 11,
+    "totalSteps": 16,
+    "question": "What's stopping you right now?",
+    "options": [
+      {
+        "emoji": "🗺️",
+        "label": "I don't know where to start",
+        "value": "no-start"
+      },
+      {
+        "emoji": "⏰",
+        "label": "I don't have hours to spend learning",
+        "value": "no-time"
+      },
+      {
+        "emoji": "📚",
+        "label": "Free resources are scattered and out of date",
+        "value": "scattered"
+      },
+      {
+        "emoji": "🔐",
+        "label": "I'm not sure what I'm allowed to paste into AI",
+        "value": "unsure-rules"
+      },
+      {
+        "emoji": "💡",
+        "label": "I don't know what's actually possible",
+        "value": "no-vision"
+      }
+    ]
+  },
+  {
+    "id": "q12-time",
+    "type": "question",
+    "step": 12,
+    "totalSteps": 16,
+    "question": "How much time can you give to learning?",
+    "subtext": "Lessons are short and self-paced, so you set the pace",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "10 minutes a day",
+        "value": "10min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "15 minutes a day",
+        "value": "15min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "20 minutes a day",
+        "value": "20min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "30+ minutes a day",
+        "value": "30min"
+      }
+    ]
+  },
+  {
+    "id": "q13-outcome",
+    "type": "question",
+    "step": 13,
+    "totalSteps": 16,
+    "question": "What matters most to you by the end?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "Get my time back every week",
+        "value": "save-time"
+      },
+      {
+        "emoji": "🌟",
+        "label": "Be the person who produces better work",
+        "value": "impress"
+      },
+      {
+        "emoji": "💰",
+        "label": "Add a skill that raises my market value",
+        "value": "earn-more"
+      },
+      {
+        "emoji": "💪",
+        "label": "Feel in control of my workload",
+        "value": "confidence"
+      }
+    ]
+  },
+  {
+    "id": "q14-income",
+    "type": "question",
+    "step": 14,
+    "totalSteps": 16,
+    "question": "What would these skills be worth to you?",
+    "options": [
+      {
+        "emoji": "🪙",
+        "label": "$500 / month",
+        "value": "500"
+      },
+      {
+        "emoji": "💵",
+        "label": "$1,000 – $2,000 / month",
+        "value": "1000-2000"
+      },
+      {
+        "emoji": "💰",
+        "label": "$3,000 – $5,000 / month",
+        "value": "3000-5000"
+      },
+      {
+        "emoji": "💎",
+        "label": "$5,000+ / month",
+        "value": "5000-plus"
+      },
+      {
+        "emoji": "😎",
+        "label": "It's about my time and my career, not money",
+        "value": "career-value"
+      }
+    ]
+  },
+  {
+    "id": "q15-app-spread",
+    "type": "question",
+    "step": 15,
+    "totalSteps": 16,
+    "question": "How many Microsoft 365 apps does a typical piece of your work touch?",
+    "options": [
+      {
+        "emoji": "1️⃣",
+        "label": "Usually just one",
+        "value": "one"
+      },
+      {
+        "emoji": "2️⃣",
+        "label": "Two — I move between a pair of them",
+        "value": "two"
+      },
+      {
+        "emoji": "3️⃣",
+        "label": "Three or four",
+        "value": "three-four"
+      },
+      {
+        "emoji": "🔗",
+        "label": "All of them — everything connects to everything",
+        "value": "all"
+      }
+    ]
+  },
+  {
+    "id": "q16-biggest-win",
+    "type": "question",
+    "step": 16,
+    "totalSteps": 16,
+    "question": "If AI could do ONE thing for your work, what would it be?",
+    "options": [
+      {
+        "emoji": "📥",
+        "label": "Hand me back my inbox",
+        "value": "clear-inbox"
+      },
+      {
+        "emoji": "📄",
+        "label": "Turn my notes into a finished document",
+        "value": "draft-document"
+      },
+      {
+        "emoji": "📊",
+        "label": "Tell me what my data actually says",
+        "value": "explain-data"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "Build the first draft of my slides",
+        "value": "draft-slides"
+      },
+      {
+        "emoji": "🔗",
+        "label": "Run one repeating process end to end",
+        "value": "run-process"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-3",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Your Microsoft 365 + AI plan is almost ready",
+    "copy": "We are matching your answers to the 24 lessons across the six modules — Foundations, Word, Excel and PowerPoint, Outlook, Teams and meetings, and connected workflows — starting with the app that is costing you the most time.",
+    "ctaLabel": "BUILD MY PLAN →"
+  },
+  {
+    "id": "loading",
+    "type": "loading",
+    "totalSteps": 16,
+    "headline": "Building your Microsoft 365 + AI plan..."
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "totalSteps": 16,
+    "headline": "Your Microsoft 365 + AI plan is ready!",
+    "subtext": "Enter your email to unlock your personalised path — free, no credit card needed",
+    "ctaLabel": "UNLOCK MY PLAN →"
+  }
+]

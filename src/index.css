@@ -17,6 +17,7 @@
   --sw-success-light: 138 76% 97%;
   --sw-amber: 38 92% 50%;
   --sw-amber-light: 48 100% 96%;
+  --sw-warning: 38 92% 50%;
   --sw-red: 0 84% 60%;
   --sw-white: 0 0% 100%;
 
@@ -43,6 +44,7 @@
   --color-sw-success-light: hsl(var(--sw-success-light));
   --color-sw-amber: hsl(var(--sw-amber));
   --color-sw-amber-light: hsl(var(--sw-amber-light));
+  --color-sw-warning: hsl(var(--sw-warning));
   --color-sw-red: hsl(var(--sw-red));
   --color-sw-white: hsl(var(--sw-white));
 
@@ -54,7 +56,8 @@
   --animate-fade-up: fade-up 0.5s ease-out both;
   --animate-fade-in: fade-in 0.4s ease-out both;
   --animate-pulse-cta: pulse-cta 2.2s ease-in-out infinite;
-  --animate-marquee: marquee 22s linear infinite;
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-marquee-rev: marquee-rev 32s linear infinite;
   --animate-spin-wheel: spin-wheel 4.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   --animate-slide-up: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
   --animate-count-ring: count-ring 1.4s ease-out forwards;
@@ -218,4 +221,146 @@
     rgba(255, 255, 255, 0.92) 40%,
     rgb(255, 255, 255) 65%
   );
+}
+
+/* ------------------------------------------------------------------ */
+/* Marketing (home / learn / legal) — local utilities, quiz tokens intact */
+/* ------------------------------------------------------------------ */
+@keyframes marquee-rev {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes emoji-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+@keyframes emoji-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes emoji-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes emoji-wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(36 99 235 / 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgb(36 99 235 / 0);
+  }
+}
+
+.sw-dots {
+  background-image: radial-gradient(hsl(var(--sw-grey-border)) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.sw-dots-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.animate-float {
+  animation: float 3.2s ease-in-out infinite;
+}
+
+.emoji-pulse {
+  animation: emoji-pulse 2s ease-in-out infinite;
+}
+
+.emoji-float {
+  animation: emoji-float 3s ease-in-out infinite;
+}
+
+.emoji-bounce {
+  animation: emoji-bounce 3s ease-in-out infinite;
+}
+
+.emoji-wiggle {
+  animation: emoji-wiggle 1.6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.2s ease-in-out infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
 }

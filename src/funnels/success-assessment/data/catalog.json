@@ -1,0 +1,458 @@
+[
+  {
+    "id": "q1-focus",
+    "type": "hero",
+    "step": 1,
+    "totalSteps": 12,
+    "question": "What's your #1 focus right now?",
+    "options": [
+      {
+        "emoji": "🚀",
+        "label": "Career & Business",
+        "value": "career-business",
+        "gradient": "linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%)"
+      },
+      {
+        "emoji": "💰",
+        "label": "Wealth & Freedom",
+        "value": "wealth-freedom",
+        "gradient": "linear-gradient(135deg, #065f46 0%, #059669 50%, #10b981 100%)"
+      },
+      {
+        "emoji": "💪",
+        "label": "Health & Vitality",
+        "value": "health-vitality",
+        "gradient": "linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #fb923c 100%)"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Mindset & Confidence",
+        "value": "mindset-confidence",
+        "gradient": "linear-gradient(135deg, #6b21a8 0%, #9333ea 50%, #a855f7 100%)"
+      }
+    ]
+  },
+  {
+    "id": "q2-identity",
+    "type": "large-card",
+    "step": 2,
+    "totalSteps": 12,
+    "question": "How would you describe yourself right now?",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Building my career",
+        "value": "career-employee",
+        "gradient": "linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 60%, #3b82f6 100%)"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Running a business",
+        "value": "business-founder",
+        "gradient": "linear-gradient(135deg, #14532d 0%, #16a34a 60%, #4ade80 100%)"
+      },
+      {
+        "emoji": "🌱",
+        "label": "Just getting started",
+        "value": "starting-out",
+        "gradient": "linear-gradient(135deg, #0f4c5c 0%, #0891b2 60%, #22d3ee 100%)"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Ready for a big change",
+        "value": "ready-to-change",
+        "gradient": "linear-gradient(135deg, #7c2d12 0%, #c2410c 60%, #fb923c 100%)"
+      }
+    ]
+  },
+  {
+    "id": "q3-state",
+    "type": "large-card",
+    "step": 3,
+    "totalSteps": 12,
+    "question": "Right now, honestly — I feel...",
+    "options": [
+      {
+        "emoji": "🔥",
+        "label": "Fired up",
+        "sublabel": "I'm ready for a big change",
+        "value": "fired-up",
+        "gradient": "linear-gradient(135deg, #92400e 0%, #d97706 50%, #fbbf24 100%)"
+      },
+      {
+        "emoji": "📈",
+        "label": "Good, but I can do more",
+        "sublabel": "I know I have more in me",
+        "value": "doing-ok",
+        "gradient": "linear-gradient(135deg, #064e3b 0%, #059669 50%, #6ee7b7 100%)"
+      },
+      {
+        "emoji": "😤",
+        "label": "Stuck",
+        "sublabel": "I need direction and a plan",
+        "value": "stuck",
+        "gradient": "linear-gradient(135deg, #1e293b 0%, #475569 50%, #94a3b8 100%)"
+      },
+      {
+        "emoji": "😴",
+        "label": "Overwhelmed",
+        "sublabel": "Burned out and need a reset",
+        "value": "overwhelmed",
+        "gradient": "linear-gradient(135deg, #4a1d96 0%, #7c3aed 50%, #a78bfa 100%)"
+      }
+    ]
+  },
+  {
+    "id": "social-proof-1",
+    "type": "social-proof",
+    "totalSteps": 12,
+    "headline": "You're in great company",
+    "stat": "500,000+ people have used SuccessWise to transform their life",
+    "copy": "Your personalised plan takes about 2 more minutes to build. We'll ask a few quick questions about your goals — then your custom Success Profile is ready.",
+    "ctaLabel": "LET'S BUILD MY PLAN →"
+  },
+  {
+    "id": "q4-challenge",
+    "type": "question",
+    "step": 4,
+    "totalSteps": 12,
+    "question": "What feels hardest for you right now?",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "Not progressing in my career fast enough",
+        "value": "career-stuck"
+      },
+      {
+        "emoji": "💸",
+        "label": "Financial pressure or not enough income",
+        "value": "money-stress"
+      },
+      {
+        "emoji": "😴",
+        "label": "Low energy — I'm burned out",
+        "value": "energy-low"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Overthinking or self-doubt",
+        "value": "mindset-blocks"
+      },
+      {
+        "emoji": "🤖",
+        "label": "Not using AI or technology to my advantage",
+        "value": "tech-behind"
+      },
+      {
+        "emoji": "🏢",
+        "label": "My business isn't growing fast enough",
+        "value": "business-slow"
+      }
+    ]
+  },
+  {
+    "id": "q5-motivation",
+    "type": "question",
+    "step": 5,
+    "totalSteps": 12,
+    "question": "What's pushing you to make a change now?",
+    "options": [
+      {
+        "emoji": "👨‍👩‍👧",
+        "label": "Providing more for my family",
+        "value": "family"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Personal ambition — I want more",
+        "value": "ambition"
+      },
+      {
+        "emoji": "😰",
+        "label": "Fear of falling behind my peers",
+        "value": "fear-behind"
+      },
+      {
+        "emoji": "💡",
+        "label": "I've had a wake-up call",
+        "value": "wake-up-call"
+      },
+      {
+        "emoji": "🔥",
+        "label": "The time is now — no more waiting",
+        "value": "now-or-never"
+      }
+    ]
+  },
+  {
+    "id": "q6-mindset",
+    "type": "question",
+    "step": 6,
+    "totalSteps": 12,
+    "question": "Which thought sounds most like you?",
+    "options": [
+      {
+        "emoji": "💡",
+        "label": "\"I know what to do — I just need to start\"",
+        "value": "know-need-start"
+      },
+      {
+        "emoji": "🗺️",
+        "label": "\"I don't know where to start\"",
+        "value": "dont-know"
+      },
+      {
+        "emoji": "🔁",
+        "label": "\"I've tried before but didn't stick\"",
+        "value": "tried-failed"
+      },
+      {
+        "emoji": "🛠️",
+        "label": "\"I'm capable — I just need the right system\"",
+        "value": "need-tools"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-a",
+    "type": "interstitial",
+    "totalSteps": 12,
+    "headline": "You're already ahead of most people",
+    "copy": "Most people know they need to change something. The fact you're taking action puts you in the top 10%.",
+    "stat": "87% of SuccessWise members report a breakthrough in their first 2 weeks",
+    "ctaLabel": "KEEP GOING →",
+    "echoKey": "q3-state",
+    "echoHeadline": {
+      "stuck": "Being stuck is temporary. Having a plan isn't.",
+      "overwhelmed": "Burnout is a signal, not a life sentence",
+      "fired-up": "You already have what it takes — let's direct it",
+      "doing-ok": "Good is the enemy of great — and you already know that"
+    },
+    "echoCopy": {
+      "stuck": "The biggest difference between people who break through and those who don't isn't talent — it's having a clear, structured system to follow.",
+      "overwhelmed": "You don't need more willpower. You need a lighter load and a smarter system. That's exactly what SuccessWise is designed for.",
+      "fired-up": "The most driven people aren't the ones who work hardest — they're the ones who work on the right things. We'll help you find yours.",
+      "doing-ok": "You're not stuck — you're ready to level up. SuccessWise will show you exactly where to focus to make the biggest leap."
+    }
+  },
+  {
+    "id": "q7-financial",
+    "type": "question",
+    "step": 7,
+    "totalSteps": 12,
+    "question": "How would you describe your finances right now?",
+    "options": [
+      {
+        "emoji": "😬",
+        "label": "Tight — I need more income",
+        "value": "tight"
+      },
+      {
+        "emoji": "🙂",
+        "label": "OK, but I want financial freedom",
+        "value": "ok-want-more"
+      },
+      {
+        "emoji": "📈",
+        "label": "Building — actively working on it",
+        "value": "building"
+      },
+      {
+        "emoji": "💎",
+        "label": "Comfortable — I want to grow wealth",
+        "value": "comfortable"
+      }
+    ]
+  },
+  {
+    "id": "q8-energy",
+    "type": "question",
+    "step": 8,
+    "totalSteps": 12,
+    "question": "How's your energy and wellbeing most days?",
+    "options": [
+      {
+        "emoji": "😴",
+        "label": "Constantly tired or burned out",
+        "value": "burned-out"
+      },
+      {
+        "emoji": "🤷",
+        "label": "Up and down — inconsistent",
+        "value": "inconsistent"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Decent, but not optimal",
+        "value": "decent"
+      },
+      {
+        "emoji": "⚡",
+        "label": "High energy — I feel great",
+        "value": "high-energy"
+      }
+    ]
+  },
+  {
+    "id": "q9-time",
+    "type": "question",
+    "step": 9,
+    "totalSteps": 12,
+    "question": "How much time can you give to personal growth each day?",
+    "subtext": "Consistency beats intensity — 10 minutes daily changes everything",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "5–10 minutes",
+        "value": "5-10min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "10–15 minutes",
+        "value": "10-15min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "20–30 minutes",
+        "value": "20-30min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "30+ minutes",
+        "value": "30plus"
+      }
+    ]
+  },
+  {
+    "id": "q10-tech",
+    "type": "question",
+    "step": 10,
+    "totalSteps": 12,
+    "question": "How comfortable are you with technology and AI?",
+    "options": [
+      {
+        "emoji": "👀",
+        "label": "I barely use them",
+        "value": "novice"
+      },
+      {
+        "emoji": "🙂",
+        "label": "I get by, but want to know more",
+        "value": "basic"
+      },
+      {
+        "emoji": "⚡",
+        "label": "I use them regularly",
+        "value": "regular"
+      },
+      {
+        "emoji": "🛠️",
+        "label": "Confident — I want advanced skills",
+        "value": "advanced"
+      }
+    ]
+  },
+  {
+    "id": "q11-vision",
+    "type": "question",
+    "step": 11,
+    "totalSteps": 12,
+    "question": "In 12 months, what does your life look like?",
+    "subtext": "Choose the one that excites you most",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Promoted, higher income, or career leap",
+        "value": "career-leap"
+      },
+      {
+        "emoji": "💰",
+        "label": "Financially free or earning more than ever",
+        "value": "financial-freedom"
+      },
+      {
+        "emoji": "💪",
+        "label": "Fit, energised and genuinely healthy",
+        "value": "health-transform"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Confident, focused and mentally sharp",
+        "value": "mindset-shift"
+      },
+      {
+        "emoji": "🤖",
+        "label": "AI-fluent and ahead of my industry",
+        "value": "tech-leader"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Business growing and genuinely thriving",
+        "value": "business-success"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-b",
+    "type": "interstitial",
+    "totalSteps": 12,
+    "headline": "Your success profile is almost ready",
+    "copy": "We're putting the final pieces together. One last question — then your personalised Success Profile is complete.",
+    "stat": "People who set a clear goal and reward are 3× more likely to follow through — Harvard Business Review",
+    "ctaLabel": "ALMOST DONE →",
+    "echoKey": "q11-vision",
+    "echoHeadline": {
+      "career-leap": "Your career breakthrough is closer than you think",
+      "financial-freedom": "Financial freedom isn't luck — it's a learnable skill",
+      "health-transform": "Your body responds fast to consistent input",
+      "mindset-shift": "A confident mindset is a skill you practise, not a trait you're born with",
+      "tech-leader": "AI fluency will be this decade's most valuable career skill",
+      "business-success": "Every thriving business is built by a relentlessly curious founder"
+    }
+  },
+  {
+    "id": "q12-reward",
+    "type": "question",
+    "step": 12,
+    "totalSteps": 12,
+    "question": "When you've hit your first big milestone, how will you celebrate?",
+    "subtext": "People who set rewards are 3× more likely to follow through",
+    "options": [
+      {
+        "emoji": "✈️",
+        "label": "Plan a trip or experience",
+        "value": "trip"
+      },
+      {
+        "emoji": "🍽️",
+        "label": "A great dinner out",
+        "value": "dinner"
+      },
+      {
+        "emoji": "💻",
+        "label": "New tech or something I've wanted",
+        "value": "purchase"
+      },
+      {
+        "emoji": "💰",
+        "label": "Put it towards savings or investing",
+        "value": "savings"
+      },
+      {
+        "emoji": "👨‍👩‍👧",
+        "label": "Something for the family",
+        "value": "family"
+      }
+    ]
+  },
+  {
+    "id": "loading",
+    "type": "loading",
+    "totalSteps": 12
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "totalSteps": 12
+  }
+]

@@ -1,0 +1,600 @@
+[
+  {
+    "id": "identity",
+    "type": "identity",
+    "totalSteps": 16,
+    "headline": "Master AI for PowerPoint",
+    "subtext": "Have you ever used AI to help build a presentation?",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Yes",
+        "value": "yes"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Not yet",
+        "value": "not-yet"
+      }
+    ]
+  },
+  {
+    "id": "positive-reinforcement",
+    "type": "social-proof",
+    "totalSteps": 16,
+    "headline": "You're ahead — most people still build slides the hard way",
+    "copy": "Knowing AI can help already puts you ahead. But the real advantage comes from knowing how to use it specifically for presentations — outlines, slide design, data storytelling, and delivery.",
+    "ctaLabel": "CONTINUE →",
+    "echoKey": "identity",
+    "echoHeadline": {
+      "yes": "You're ahead — most people still build slides the hard way",
+      "not-yet": "Perfect timing — AI + PowerPoint is the biggest productivity leap right now"
+    },
+    "echoCopy": {
+      "yes": "Knowing AI can help already puts you ahead. But the real advantage comes from knowing how to use it specifically for presentations — outlines, slide design, data storytelling, and delivery.",
+      "not-yet": "Most people still build every slide manually — and they don't know AI can do 80% of the work for them. You're about to discover something that will change how you present forever."
+    }
+  },
+  {
+    "id": "q1-powerpoint-level",
+    "type": "question",
+    "step": 1,
+    "totalSteps": 16,
+    "question": "How would you rate your PowerPoint skills?",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Beginner — I know the basics",
+        "value": "beginner"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Intermediate — I build decks regularly",
+        "value": "intermediate"
+      },
+      {
+        "emoji": "💪",
+        "label": "Advanced — animations, templates, brand decks",
+        "value": "advanced"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Expert — I design polished, professional decks",
+        "value": "expert"
+      }
+    ]
+  },
+  {
+    "id": "q2-work-status",
+    "type": "question",
+    "step": 2,
+    "totalSteps": 16,
+    "question": "What's your current work status?",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Full-time employee",
+        "value": "full-time"
+      },
+      {
+        "emoji": "✍️",
+        "label": "Freelancer / Self-employed",
+        "value": "freelancer"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Business owner",
+        "value": "business-owner"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Between jobs / Career switcher",
+        "value": "between-jobs"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Exploring options",
+        "value": "exploring"
+      }
+    ]
+  },
+  {
+    "id": "q3-industry",
+    "type": "question",
+    "step": 3,
+    "totalSteps": 16,
+    "question": "What field do you work in?",
+    "options": [
+      {
+        "emoji": "💻",
+        "label": "Tech & Software",
+        "value": "tech"
+      },
+      {
+        "emoji": "💳",
+        "label": "Finance & Accounting",
+        "value": "finance"
+      },
+      {
+        "emoji": "📣",
+        "label": "Marketing & Sales",
+        "value": "marketing"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Consulting & Strategy",
+        "value": "consulting"
+      },
+      {
+        "emoji": "📋",
+        "label": "Admin & Operations",
+        "value": "admin-ops"
+      },
+      {
+        "emoji": "🏥",
+        "label": "Healthcare",
+        "value": "healthcare"
+      },
+      {
+        "emoji": "🌐",
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "id": "q4-why-ai-powerpoint",
+    "type": "question",
+    "step": 4,
+    "totalSteps": 16,
+    "question": "Why are you interested in using AI with PowerPoint?",
+    "options": [
+      {
+        "emoji": "🤯",
+        "label": "Slide design overwhelms me — I want AI to help",
+        "value": "design"
+      },
+      {
+        "emoji": "⏰",
+        "label": "I waste hours building decks from scratch",
+        "value": "manual-tasks"
+      },
+      {
+        "emoji": "📊",
+        "label": "I want to turn data into a story faster",
+        "value": "storytelling"
+      },
+      {
+        "emoji": "👔",
+        "label": "My boss expects more polished decks from me",
+        "value": "expectations"
+      }
+    ]
+  },
+  {
+    "id": "q5-pain-point",
+    "type": "question",
+    "step": 5,
+    "totalSteps": 16,
+    "question": "What's your biggest presentation frustration?",
+    "options": [
+      {
+        "emoji": "🧱",
+        "label": "Staring at a blank slide, not knowing where to start",
+        "value": "blank-slide"
+      },
+      {
+        "emoji": "🎨",
+        "label": "Slides that look cluttered or unprofessional",
+        "value": "design"
+      },
+      {
+        "emoji": "📈",
+        "label": "Turning raw data into a clear story",
+        "value": "reports"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Rebuilding the same type of deck every week",
+        "value": "repetitive"
+      },
+      {
+        "emoji": "💡",
+        "label": "I don't know what AI can actually do for slides",
+        "value": "unknown"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-1",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Most people use PowerPoint at 10% of its potential",
+    "copy": "The difference between struggling with slides and mastering them isn't talent — it's knowing how to ask AI the right questions. With the right prompts, AI writes your outline, designs your slides, and tells the story your data is hiding in seconds.",
+    "stat": "93% of our graduates report saving 5+ hours per week within 14 days",
+    "ctaLabel": "KEEP GOING →",
+    "echoKey": "q5-pain-point",
+    "echoHeadline": {
+      "blank-slide": "Good news — AI turns a blank slide into a full outline instantly",
+      "design": "You'll never fight with cluttered layouts again",
+      "reports": "AI can turn raw data into a clear story in seconds",
+      "repetitive": "Those repeat decks? AI can template and automate all of them",
+      "unknown": "You're about to discover what's really possible"
+    },
+    "echoCopy": {
+      "blank-slide": "Describe your topic in plain English and AI builds a structured outline — headline, key points, and slide flow — instantly. No more staring at a blank screen.",
+      "design": "Messy layouts, inconsistent fonts, cluttered bullet points — AI suggests clean, professional slide designs in seconds instead of hours of fiddling.",
+      "reports": "Describe what your data shows, and AI builds the narrative, the chart recommendations, and the headline takeaway. Your decks will look like a strategy consultant built them.",
+      "repetitive": "AI can generate templates, repeat decks, and slide structures that eliminate the rebuild-from-scratch work you dread every week.",
+      "unknown": "Most people don't realise AI can write full presentation outlines, suggest slide designs, turn spreadsheets into charts, and polish your talking points — all from plain English instructions."
+    }
+  },
+  {
+    "id": "q6-tasks",
+    "type": "question",
+    "step": 6,
+    "totalSteps": 16,
+    "question": "What do you want AI to help you do in PowerPoint?",
+    "subtext": "Pick the one that matters most right now",
+    "options": [
+      {
+        "emoji": "🗂️",
+        "label": "Build my outline and structure",
+        "value": "outline"
+      },
+      {
+        "emoji": "🎨",
+        "label": "Design cleaner, more professional slides",
+        "value": "design"
+      },
+      {
+        "emoji": "📊",
+        "label": "Turn data into charts and insights",
+        "value": "charts"
+      },
+      {
+        "emoji": "✍️",
+        "label": "Write and tighten my talking points",
+        "value": "writing"
+      },
+      {
+        "emoji": "🤖",
+        "label": "Automate repetitive deck-building work",
+        "value": "automate"
+      },
+      {
+        "emoji": "🎤",
+        "label": "Prepare me to deliver with confidence",
+        "value": "delivery"
+      }
+    ]
+  },
+  {
+    "id": "q7-time-wasted",
+    "type": "question",
+    "step": 7,
+    "totalSteps": 16,
+    "question": "How much time do you waste weekly building presentations AI could speed up?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "1–3 hours",
+        "value": "1-3"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "3–5 hours",
+        "value": "3-5"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "5–10 hours",
+        "value": "5-10"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "10+ hours — I know, it's painful",
+        "value": "10-plus"
+      }
+    ]
+  },
+  {
+    "id": "q8-learning",
+    "type": "question",
+    "step": 8,
+    "totalSteps": 16,
+    "question": "How do you learn best?",
+    "options": [
+      {
+        "emoji": "📱",
+        "label": "Short, bite-sized lessons I can do on my phone",
+        "value": "bite-sized"
+      },
+      {
+        "emoji": "🎯",
+        "label": "Real slide examples I can copy and adapt",
+        "value": "examples"
+      },
+      {
+        "emoji": "🔨",
+        "label": "Hands-on projects with real presentations",
+        "value": "projects"
+      },
+      {
+        "emoji": "📺",
+        "label": "Video walkthroughs",
+        "value": "video"
+      }
+    ]
+  },
+  {
+    "id": "q9-career",
+    "type": "question",
+    "step": 9,
+    "totalSteps": 16,
+    "question": "How important are advanced PowerPoint + AI skills for your career?",
+    "options": [
+      {
+        "emoji": "🚨",
+        "label": "Critical — presentations are my daily tool",
+        "value": "critical"
+      },
+      {
+        "emoji": "📈",
+        "label": "Very important — it will set me apart",
+        "value": "very"
+      },
+      {
+        "emoji": "🤔",
+        "label": "Somewhat — I want to work faster",
+        "value": "somewhat"
+      },
+      {
+        "emoji": "🧪",
+        "label": "I'm curious — want to see what's possible",
+        "value": "curious"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-2",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Companies are hiring for \"AI-powered presentation\" skills right now",
+    "quote": "\"By 2027, professionals who combine presentation design with AI tools will be 3× more productive than those who don't — and compensated accordingly.\"",
+    "quoteAttribution": "— McKinsey Global Institute, 2026",
+    "copy": "PowerPoint isn't going away — but how people use it is changing fast. Those who learn to pair it with AI will do in minutes what used to take hours.",
+    "ctaLabel": "CONTINUE →"
+  },
+  {
+    "id": "q10-previous",
+    "type": "question",
+    "step": 10,
+    "totalSteps": 16,
+    "question": "Have you tried to improve your presentation skills before?",
+    "options": [
+      {
+        "emoji": "🆕",
+        "label": "No — this would be my first time",
+        "value": "first-time"
+      },
+      {
+        "emoji": "📺",
+        "label": "Watched YouTube tutorials",
+        "value": "youtube"
+      },
+      {
+        "emoji": "💳",
+        "label": "Tried a paid course but didn't finish",
+        "value": "paid-unfinished"
+      },
+      {
+        "emoji": "✅",
+        "label": "Yes — but I want to add AI to my toolkit",
+        "value": "completed"
+      }
+    ]
+  },
+  {
+    "id": "q11-blocker",
+    "type": "question",
+    "step": 11,
+    "totalSteps": 16,
+    "question": "What's stopping you from mastering PowerPoint with AI right now?",
+    "options": [
+      {
+        "emoji": "🗺️",
+        "label": "I don't know where to start",
+        "value": "no-start"
+      },
+      {
+        "emoji": "⏰",
+        "label": "I don't have hours to spend learning",
+        "value": "no-time"
+      },
+      {
+        "emoji": "📚",
+        "label": "Free resources are too scattered",
+        "value": "scattered"
+      },
+      {
+        "emoji": "💡",
+        "label": "I don't know what's actually possible",
+        "value": "no-vision"
+      }
+    ]
+  },
+  {
+    "id": "q12-time",
+    "type": "question",
+    "step": 12,
+    "totalSteps": 16,
+    "question": "How much time can you commit to learning?",
+    "subtext": "Our course is designed to work with busy schedules",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "10 minutes / day",
+        "value": "10min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "15 minutes / day",
+        "value": "15min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "20 minutes / day",
+        "value": "20min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "30+ minutes / day",
+        "value": "30min"
+      }
+    ]
+  },
+  {
+    "id": "q13-outcome",
+    "type": "question",
+    "step": 13,
+    "totalSteps": 16,
+    "question": "After completing this course, what matters most to you?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "Save hours every single week",
+        "value": "save-time"
+      },
+      {
+        "emoji": "🌟",
+        "label": "Impress my boss and colleagues",
+        "value": "impress"
+      },
+      {
+        "emoji": "💰",
+        "label": "Earn more with in-demand skills",
+        "value": "earn-more"
+      },
+      {
+        "emoji": "💪",
+        "label": "Feel confident presenting anything",
+        "value": "confidence"
+      }
+    ]
+  },
+  {
+    "id": "q14-income",
+    "type": "question",
+    "step": 14,
+    "totalSteps": 16,
+    "question": "How much additional income would advanced PowerPoint + AI skills unlock for you?",
+    "options": [
+      {
+        "emoji": "🪙",
+        "label": "$500 / month",
+        "value": "500"
+      },
+      {
+        "emoji": "💵",
+        "label": "$1,000 – $2,000 / month",
+        "value": "1000-2000"
+      },
+      {
+        "emoji": "💰",
+        "label": "$3,000 – $5,000 / month",
+        "value": "3000-5000"
+      },
+      {
+        "emoji": "💎",
+        "label": "$5,000+ / month",
+        "value": "5000-plus"
+      },
+      {
+        "emoji": "😎",
+        "label": "It's about career value, not just money",
+        "value": "career-value"
+      }
+    ]
+  },
+  {
+    "id": "q15-volume",
+    "type": "question",
+    "step": 15,
+    "totalSteps": 16,
+    "question": "How many presentations do you build or update in a typical month?",
+    "options": [
+      {
+        "emoji": "📄",
+        "label": "1–3 presentations",
+        "value": "1-3"
+      },
+      {
+        "emoji": "📁",
+        "label": "4–8 presentations",
+        "value": "4-8"
+      },
+      {
+        "emoji": "📚",
+        "label": "9–15 presentations",
+        "value": "9-15"
+      },
+      {
+        "emoji": "🗄️",
+        "label": "15+ — presentations run my life",
+        "value": "15-plus"
+      }
+    ]
+  },
+  {
+    "id": "q16-biggest-win",
+    "type": "question",
+    "step": 16,
+    "totalSteps": 16,
+    "question": "If AI could do ONE thing for your presentations, what would it be?",
+    "options": [
+      {
+        "emoji": "🗂️",
+        "label": "Build a complete outline from my raw notes",
+        "value": "build-outline"
+      },
+      {
+        "emoji": "📊",
+        "label": "Turn my raw data into a professional story",
+        "value": "instant-story"
+      },
+      {
+        "emoji": "🎨",
+        "label": "Design clean, polished slides for me",
+        "value": "design-slides"
+      },
+      {
+        "emoji": "🎤",
+        "label": "Help me deliver with more confidence",
+        "value": "deliver-confidence"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-3",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Your personalised PowerPoint + AI mastery plan is almost ready",
+    "copy": "Based on your answers, we're building a learning path tailored to your presentation level, goals, and schedule. People with your profile typically save 5+ hours in their first week.",
+    "ctaLabel": "BUILD MY PLAN →"
+  },
+  {
+    "id": "loading",
+    "type": "loading",
+    "totalSteps": 16,
+    "headline": "Building your AI + PowerPoint mastery path..."
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "totalSteps": 16,
+    "headline": "Your PowerPoint + AI plan is ready!",
+    "subtext": "Enter your email to unlock your personalised path — free, no credit card needed",
+    "ctaLabel": "UNLOCK MY PLAN →"
+  }
+]

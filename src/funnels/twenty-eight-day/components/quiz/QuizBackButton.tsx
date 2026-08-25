@@ -9,7 +9,7 @@ export default function QuizBackButton({ onClick }: QuizBackButtonProps) {
       type="button"
       onClick={onClick}
       aria-label="Go back"
-      className="flex size-8 shrink-0 items-center justify-center text-sw-dark transition hover:opacity-70"
+      className="flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-sw-dark transition-colors hover:bg-sw-grey-light"
     >
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
