@@ -5,6 +5,9 @@
     "node": "22"
   },
   "deploy": {
-    "startCommand": "npm start"
+    "startCommand": "npm start",
+    "variables": {
+      "RAILPACK_NO_SPA": "1"
+    }
   }
 }

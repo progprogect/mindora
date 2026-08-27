@@ -78,10 +78,17 @@ if (marketing) {
 }
 
 async function main() {
-  await runMigrations()
-  serve({ fetch: app.fetch, port: env.PORT }, (info) => {
-    console.log(`[api] listening on :${info.port}`)
+  // Bind first so Railway healthchecks do not kill the process during migrations.
+  serve({ fetch: app.fetch, port: env.PORT, hostname: '0.0.0.0' }, (info) => {
+    console.log(`[api] listening on ${info.address}:${info.port}`)
   })
+  if (!env.DATABASE_URL) return
+  try {
+    await runMigrations()
+    console.log('[api] migrations applied')
+  } catch (error: unknown) {
+    console.error('[api] migrations failed; SPA is up, API needs a reachable Postgres', error)
+  }
 }
 
 main().catch((error: unknown) => {

@@ -55,7 +55,13 @@ npm start
 
 `build` compiles the server and marketing SPA. Locally it also copies LMS from `../authorisation` → `./lms-dist`. The GitHub `mindora` clone (and Railway) does not include that sibling folder, so LMS UI is skipped there; `/login` and `/app` fall back to the marketing SPA. The process listens on `$PORT`. Healthcheck: `GET /api/health` (DB ping).
 
-Required Railway variables: `DATABASE_URL` (Postgres plugin), `SESSION_SECRET` (≥ 16 chars). If Railpack tries to publish `dist/` as a static site, set `RAILPACK_NO_SPA=1`. Node 22 is required (Vite 8).
+Required Railway variables (service → Variables):
+
+- `DATABASE_URL` = `${{Postgres.DATABASE_URL}}` (private URL of a Postgres plugin in the **same** project)
+- `SESSION_SECRET` — 16+ random characters
+- `RAILPACK_NO_SPA=1` if the builder tries to serve `dist/` as a static site
+
+Without Postgres the HTTP server still listens and serves the marketing SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
 
 Stripe webhook URL: `https://<railway>/stripe/webhook`.
 
