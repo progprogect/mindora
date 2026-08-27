@@ -53,7 +53,7 @@ npm run build
 npm start
 ```
 
-`build` compiles the server and marketing SPA. Locally it also copies LMS from `../authorisation` → `./lms-dist`. The GitHub `mindora` clone (and Railway) does not include that sibling folder, so LMS UI is skipped there; `/login` and `/app` fall back to the marketing SPA. The process listens on `$PORT`. Healthcheck: `GET /api/health` (DB ping).
+`build` compiles the server and marketing SPA (this is what Railway runs). LMS copy is `npm run build:all` locally (`../authorisation` → `./lms-dist`); it is not part of `npm run build`, so a GitHub/Railway clone without that sibling folder still succeeds. `/login` and `/app` fall back to the marketing SPA until LMS is vendored. The process listens on `$PORT`. Healthcheck: `GET /api/health`.
 
 Required Railway variables (service → Variables):
 

@@ -13,6 +13,11 @@ function run(command, args, cwd) {
   return result.status ?? 1
 }
 
+if (process.env.RAILWAY_ENVIRONMENT || process.env.RAILWAY_PROJECT_ID || process.env.RAILWAY_SERVICE_ID) {
+  console.warn('[lms] skipped on Railway (no sibling authorisation in this clone)')
+  process.exit(0)
+}
+
 if (!existsSync(path.join(src, 'package.json'))) {
   if (existsSync(destIndex)) {
     console.log('[lms] authorisation package not found; using existing lms-dist')
