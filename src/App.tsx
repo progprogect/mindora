@@ -1,7 +1,5 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { ConvexProvider } from 'convex/react'
-import { convexClient } from '@/shared/lib/convexClient'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
 import HomePage from '@/marketing/pages/HomePage'
 import PricingPage from '@/marketing/pages/PricingPage'
@@ -31,10 +29,9 @@ const EmptyCheckoutPage = lazy(() => import('@/checkout/EmptyCheckoutPage'))
 
 export default function App() {
   return (
-    <ConvexProvider client={convexClient}>
-      <BrowserRouter>
-        <Suspense fallback={<div className="min-h-dvh bg-white" />}>
-          <Routes>
+    <BrowserRouter>
+      <Suspense fallback={<div className="min-h-dvh bg-white" />}>
+        <Routes>
             <Route path="/quiz/28-day-ai-challenge" element={<QuizPage />} />
             <Route path="/quiz/claude-ai-certification" element={<ClaudeQuizPage />} />
             <Route path="/quiz/success-assessment" element={<SaQuizPage />} />
@@ -83,9 +80,8 @@ export default function App() {
             <Route path="/learn" element={<NotFoundPage />} />
             <Route path="/learn/*" element={<NotFoundPage />} />
             <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </ConvexProvider>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   )
 }

@@ -1,14 +1,8 @@
-import { useAction, useMutation, useQuery } from 'convex/react'
-import { anyApi } from 'convex/server'
-import { useCallback } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 /**
- * Thin, resilient wrappers around the Convex functions defined in `convex/`.
- * Built on `anyApi` (untyped function references) so the frontend compiles
- * and runs before `npx convex dev` has generated `convex/_generated/api`
- * for your deployment — see README "Convex setup" for the codegen step.
- *
- * Every write is fire-and-forget + try/caught: a Convex outage should never
+ * Thin, resilient wrappers around `/api`.
+ * Writes are fire-and-forget + try/caught: an API outage should never
  * block a user from moving through the quiz or sales funnel.
  */
 
@@ -22,36 +16,47 @@ export interface ProductDoc {
   active: boolean
 }
 
-export function useCaptureLead() {
-  const mutate = useMutation(anyApi.leads.capture)
-  return useCallback(
-    async (args: { email: string; funnel: string; consent: boolean }) => {
-      try {
-        await mutate(args)
-      } catch (error) {
-        console.warn('[convex] leads.capture failed', error)
-      }
+async function apiJson<T>(path: string, init?: RequestInit): Promise<T> {
+  const response = await fetch(path, {
+    credentials: 'include',
+    ...init,
+    headers: {
+      'Content-Type': 'application/json',
+      ...(init?.headers ?? {}),
     },
-    [mutate],
-  )
+  })
+  const data: unknown = await response.json().catch(() => ({}))
+  if (!response.ok) {
+    const message =
+      data && typeof data === 'object' && 'error' in data && typeof (data as { error: unknown }).error === 'string'
+        ? (data as { error: string }).error
+        : `Request failed (${response.status})`
+    throw new Error(message)
+  }
+  return data as T
+}
+
+export function useCaptureLead() {
+  return useCallback(async (args: { email: string; funnel: string; consent: boolean }) => {
+    try {
+      await apiJson('/api/leads', { method: 'POST', body: JSON.stringify(args) })
+    } catch (error) {
+      console.warn('[api] leads.capture failed', error)
+    }
+  }, [])
 }
 
 export function useUpdateLeadName() {
-  const mutate = useMutation(anyApi.leads.updateName)
-  return useCallback(
-    async (args: { email: string; name: string; funnel?: string }) => {
-      try {
-        await mutate(args)
-      } catch (error) {
-        console.warn('[convex] leads.updateName failed', error)
-      }
-    },
-    [mutate],
-  )
+  return useCallback(async (args: { email: string; name: string; funnel?: string }) => {
+    try {
+      await apiJson('/api/leads/name', { method: 'PATCH', body: JSON.stringify(args) })
+    } catch (error) {
+      console.warn('[api] leads.updateName failed', error)
+    }
+  }, [])
 }
 
 export function useSaveSurveyData() {
-  const mutate = useMutation(anyApi.leadSurveyData.saveSurveyData)
   return useCallback(
     async (args: {
       email: string
@@ -63,70 +68,83 @@ export function useSaveSurveyData() {
       archetype: string
     }) => {
       try {
-        await mutate(args)
+        await apiJson('/api/survey', { method: 'POST', body: JSON.stringify(args) })
       } catch (error) {
-        console.warn('[convex] leadSurveyData.saveSurveyData failed', error)
+        console.warn('[api] survey.save failed', error)
       }
     },
-    [mutate],
+    [],
   )
 }
 
 export function useTrackCheckoutInitiated() {
-  const mutate = useMutation(anyApi.leadSurveyData.trackCheckoutInitiated)
-  return useCallback(
-    async (args: { email: string; funnel: string }) => {
-      try {
-        await mutate(args)
-      } catch (error) {
-        console.warn('[convex] leadSurveyData.trackCheckoutInitiated failed', error)
-      }
-    },
-    [mutate],
-  )
+  return useCallback(async (args: { email: string; funnel: string }) => {
+    try {
+      await apiJson('/api/survey/checkout-initiated', { method: 'POST', body: JSON.stringify(args) })
+    } catch (error) {
+      console.warn('[api] survey.checkoutInitiated failed', error)
+    }
+  }, [])
 }
 
 /** Returns `undefined` while loading/unreachable — callers should fall back to `DEFAULT_PLANS`. */
 export function useProductsList(): ProductDoc[] | undefined {
-  return useQuery(anyApi.products.list, {}) as ProductDoc[] | undefined
+  const [products, setProducts] = useState<ProductDoc[] | undefined>(undefined)
+
+  useEffect(() => {
+    let cancelled = false
+    apiJson<ProductDoc[]>('/api/products')
+      .then((data) => {
+        if (!cancelled) setProducts(data)
+      })
+      .catch((error) => {
+        console.warn('[api] products.list failed', error)
+        if (!cancelled) setProducts(undefined)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  return products
 }
 
 export function useCheckoutOfferAction() {
-  const act = useAction(anyApi.stripe.getOrCreateCheckoutOffer)
-  return useCallback(
-    async (sessionKey: string): Promise<{ percentOff: number }> => {
-      try {
-        return (await act({ sessionKey })) as { percentOff: number }
-      } catch (error) {
-        console.warn('[convex] stripe.getOrCreateCheckoutOffer failed, using default offer', error)
-        return { percentOff: 50 }
-      }
-    },
-    [act],
-  )
+  return useCallback(async (sessionKey: string): Promise<{ percentOff: number }> => {
+    try {
+      return await apiJson<{ percentOff: number }>('/api/checkout/offer', {
+        method: 'POST',
+        body: JSON.stringify({ sessionKey }),
+      })
+    } catch (error) {
+      console.warn('[api] checkout.offer failed, using default offer', error)
+      return { percentOff: 50 }
+    }
+  }, [])
 }
 
 export function useSetCheckoutOfferPercentAction() {
-  const act = useAction(anyApi.stripe.setCheckoutOfferPercent)
-  return useCallback(
-    async (sessionKey: string, percentOff: number): Promise<{ percentOff: number }> => {
-      try {
-        return (await act({ sessionKey, percentOff })) as { percentOff: number }
-      } catch (error) {
-        console.warn('[convex] stripe.setCheckoutOfferPercent failed, using local value', error)
-        return { percentOff }
-      }
-    },
-    [act],
-  )
+  return useCallback(async (sessionKey: string, percentOff: number): Promise<{ percentOff: number }> => {
+    try {
+      return await apiJson<{ percentOff: number }>('/api/checkout/offer/percent', {
+        method: 'POST',
+        body: JSON.stringify({ sessionKey, percentOff }),
+      })
+    } catch (error) {
+      console.warn('[api] checkout.offer.percent failed, using local value', error)
+      return { percentOff }
+    }
+  }, [])
 }
 
 export function useCreateTrialPaymentIntent() {
-  const act = useAction(anyApi.stripe.createTrialPaymentIntent)
   return useCallback(
     (args: { email: string; productId: string; funnel: string }) =>
-      act(args) as Promise<{ clientSecret: string }>,
-    [act],
+      apiJson<{ clientSecret: string }>('/api/checkout/trial-intent', {
+        method: 'POST',
+        body: JSON.stringify(args),
+      }),
+    [],
   )
 }
 
@@ -136,7 +154,6 @@ export function useCreateTrialSetupIntent() {
 }
 
 export function useCreatePayPalPaymentIntent() {
-  const act = useAction(anyApi.stripe.createPayPalPaymentIntent)
   return useCallback(
     (args: {
       customerEmail: string
@@ -144,13 +161,16 @@ export function useCreatePayPalPaymentIntent() {
       funnel: string
       returnUrl?: string
       confirmAndRedirect?: boolean
-    }) => act(args) as Promise<{ clientSecret: string; redirectUrl: string | null }>,
-    [act],
+    }) =>
+      apiJson<{ clientSecret: string; redirectUrl: string | null }>('/api/checkout/paypal-intent', {
+        method: 'POST',
+        body: JSON.stringify(args),
+      }),
+    [],
   )
 }
 
 export function useSendMetaEventAction() {
-  const act = useAction(anyApi.meta.sendEvent)
   return useCallback(
     async (args: {
       eventName: string
@@ -160,11 +180,11 @@ export function useSendMetaEventAction() {
       customData?: Record<string, unknown>
     }) => {
       try {
-        await act(args)
+        await apiJson('/api/meta/event', { method: 'POST', body: JSON.stringify(args) })
       } catch (error) {
-        console.warn('[convex] meta.sendEvent failed', error)
+        console.warn('[api] meta.event failed', error)
       }
     },
-    [act],
+    [],
   )
 }

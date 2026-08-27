@@ -49,7 +49,7 @@ const CERTIFICATION_PATH_BY_LEVEL: Record<ClaudeSkillLevel, string> = {
   advanced: 'Power User → Automation → Expert Certification',
 }
 
-/** Mapping used when persisting `profileScore` to Convex (`leadSurveyData.saveSurveyData`). */
+/** Mapping used when persisting `profileScore` to `POST /api/survey`. */
 export const CLAUDE_PROFILE_SCORE_BY_LEVEL: Record<ClaudeSkillLevel, number> = {
   beginner: 25,
   intermediate: 55,

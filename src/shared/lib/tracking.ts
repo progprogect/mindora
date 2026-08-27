@@ -72,14 +72,14 @@ export type TrackedEventName =
   | 'TrialStarted'
 
 interface TrackEventOptions {
-  /** Called with the generated event_id so callers can forward it to Convex for CAPI dedup. */
+  /** Called with the generated event_id so callers can forward it to `/api/meta/event` for CAPI dedup. */
   onEventId?: (eventId: string) => void
 }
 
 /**
  * Fires a tracked funnel event to Meta Pixel (browser) and PostHog, sharing a
  * single `event_id` for browser/server (CAPI) deduplication — see
- * `sendServerEvent` in `convex/meta.ts` for the relay side.
+ * `POST /api/meta/event` for the relay side.
  */
 export function trackEvent(
   name: TrackedEventName,

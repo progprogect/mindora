@@ -1,62 +1,71 @@
-# SuccessWise Quizzes
+# SuccessWise
 
-Unified SPA combining two quiz funnels:
-
-- **28-Day AI Challenge** — `/quiz/28-day-ai-challenge`
-- **Claude AI Certification** — `/quiz/claude-ai-certification`
-
-Landing page at `/` lets users pick a quiz. Individual funnel source projects live in the parent monorepo (`28_days_quiz/`, `claude_ai_certification/`).
+Railway app: one Node process serves the marketing SPA, the LMS SPA, and `/api`. Postgres via `DATABASE_URL`. Convex is not used.
 
 ## Quick start
 
 ```bash
+cp .env.example .env
+# fill DATABASE_URL, SESSION_SECRET (16+ chars), Stripe keys
 npm install
 npm run dev
 ```
 
-Open `http://localhost:5173/` — landing with both quizzes.
+- Vite (marketing): `http://localhost:5173` (proxies `/api` and `/stripe` to `:3000`)
+- Funnel API: `http://localhost:3000` (runs migrations on start)
+- LMS (canonical): from `../authorisation`, `npm run dev` → web `:5175` + API `:3001` (do not proxy LMS to `:3000`)
 
-For Convex backend during development:
+Needs a running Postgres. Seed catalog prices after the first start:
 
 ```bash
-npm run convex:dev   # terminal 1
-npm run dev          # terminal 2
+npm run db:seed
 ```
+
+Local LMS login is `../authorisation` (`npm run dev`) with its own Postgres and `:3001`. This github API stays the funnel + Railway mirror until `createLmsApi` is mounted here.
 
 ## Environment variables
 
-Copy `.env.example` → `.env.local`:
+Copy `.env.example` → `.env` (or `.env.local`).
 
-| Variable | Purpose |
-|----------|---------|
-| `VITE_CONVEX_URL` | Convex deployment URL |
-| `VITE_STRIPE_PUBLISHABLE_KEY` | Stripe publishable key |
-| `VITE_META_PIXEL_ID` | Meta Pixel ID |
-| `VITE_META_CAPI_ENABLED` | Enable server-side CAPI relay |
-| `VITE_POSTHOG_KEY` / `VITE_POSTHOG_HOST` | PostHog analytics |
+| Variable | When | Purpose |
+|----------|------|---------|
+| `VITE_STRIPE_PUBLISHABLE_KEY` | build | Stripe.js |
+| `VITE_META_PIXEL_ID` | build | Meta Pixel |
+| `VITE_META_CAPI_ENABLED` | build | Relay browser events to `/api/meta/event` |
+| `VITE_POSTHOG_KEY` / `VITE_POSTHOG_HOST` | build | PostHog |
+| `DATABASE_URL` | runtime | Postgres |
+| `SESSION_SECRET` | runtime | Cookie HMAC (≥ 16 chars) |
+| `STRIPE_SECRET_KEY` | runtime | PaymentIntents + webhook |
+| `STRIPE_WEBHOOK_SECRET` | runtime | `POST /stripe/webhook` |
+| `STRIPE_*_PRICE_ID` | runtime | Recurring prices after the $1 trial |
+| `AUTH_RESEND_KEY` | runtime | OTP email (required in production) |
+| `META_ACCESS_TOKEN` | runtime | Conversions API |
+| `LMS_DIST` | runtime | Optional override; `npm run build` writes `./lms-dist` |
+| `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
+| `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |
 
-Server secrets (`STRIPE_SECRET_KEY`, etc.) are set on the Convex deployment, not in `.env`.
+`VITE_*` are inlined at **build**. Secrets stay runtime-only.
 
-## Build
+## Build / Railway
 
 ```bash
 npm run build
-npm run lint
-```
-
-Production static server (Railway):
-
-```bash
 npm start
 ```
+
+`build` compiles the server, marketing SPA, and LMS (`../authorisation` → `./lms-dist`). Nixpacks runs `build` then `start`. The process listens on `$PORT`, serves marketing `dist/` and LMS `lms-dist/` on the same origin, and checks `GET /api/health` (includes a DB ping).
+
+Stripe webhook URL: `https://<railway>/stripe/webhook`.
 
 ## Routes
 
 | Path | Page |
 |------|------|
-| `/` | Landing (variant A) |
+| `/` | Marketing home |
 | `/quiz/28-day-ai-challenge` | 28-day quiz funnel |
 | `/quiz/claude-ai-certification` | Claude quiz funnel |
-| `/checkout/setup?funnel=` | Unified post-checkout |
+| `/checkout/setup` | LMS account setup after trial (not the funnel stub) |
 | `/checkout?product=&funnel=` | Expired-offer $1 checkout |
-| `/terms-and-conditions`, `/privacy-policy`, `/subscription-terms` | Legal stubs |
+| `/login`, `/account/*`, `/app/*`, `/courses/*` | LMS SPA |
+| `/api/health` | Health + database |
+| `/api/me`, `/api/progress`, `/api/wise/*` | LMS session, XP, Wise |

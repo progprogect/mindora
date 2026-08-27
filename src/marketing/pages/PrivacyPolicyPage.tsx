@@ -151,7 +151,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Convex</strong> — Database and backend infrastructure
+              <strong>Railway / Postgres</strong> — Database and backend infrastructure
             </li>
             <li>
               <strong>Stripe</strong> — Payment processing

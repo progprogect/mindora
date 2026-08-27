@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Elements, useStripe } from '@stripe/react-stripe-js'
 import type { Stripe } from '@stripe/stripe-js'
 import { getStripe, isStripeConfigured } from '@/shared/lib/stripeClient'
-import { isConvexConfigured } from '@/shared/lib/convexClient'
 import { useCreatePayPalPaymentIntent } from '@/shared/lib/backend'
 
 interface PayPalButtonProps {
@@ -153,8 +152,8 @@ function PayPalButtonInner({
     try {
       onBeforeRedirect?.()
 
-      if (!isConvexConfigured) {
-        onError?.('PayPal is not connected yet. Please pay with card, or configure Convex and Stripe.')
+      if (!isStripeConfigured) {
+        onError?.('PayPal is not connected yet. Please pay with card, or configure Stripe.')
         return
       }
 
