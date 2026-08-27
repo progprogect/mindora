@@ -53,7 +53,9 @@ npm run build
 npm start
 ```
 
-`build` compiles the server, marketing SPA, and LMS (`../authorisation` → `./lms-dist`). Nixpacks runs `build` then `start`. The process listens on `$PORT`, serves marketing `dist/` and LMS `lms-dist/` on the same origin, and checks `GET /api/health` (includes a DB ping).
+`build` compiles the server and marketing SPA. Locally it also copies LMS from `../authorisation` → `./lms-dist`. The GitHub `mindora` clone (and Railway) does not include that sibling folder, so LMS UI is skipped there; `/login` and `/app` fall back to the marketing SPA. The process listens on `$PORT`. Healthcheck: `GET /api/health` (DB ping).
+
+Required Railway variables: `DATABASE_URL` (Postgres plugin), `SESSION_SECRET` (≥ 16 chars). If Railpack tries to publish `dist/` as a static site, set `RAILPACK_NO_SPA=1`. Node 22 is required (Vite 8).
 
 Stripe webhook URL: `https://<railway>/stripe/webhook`.
 

@@ -18,8 +18,11 @@ if (!existsSync(path.join(src, 'package.json'))) {
     console.log('[lms] authorisation package not found; using existing lms-dist')
     process.exit(0)
   }
-  console.error('[lms] missing ../authorisation and lms-dist/index.html')
-  process.exit(1)
+  // GitHub `mindora` / Railway clone is this folder only — sibling authorisation is not present.
+  console.warn(
+    '[lms] skipped: no ../authorisation in this clone. Funnel + API still build. LMS UI (/login, /app) is omitted until authorisation is present or lms-dist is checked in.',
+  )
+  process.exit(0)
 }
 
 if (!existsSync(path.join(src, 'node_modules'))) {
