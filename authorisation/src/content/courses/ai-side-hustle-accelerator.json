@@ -1,0 +1,2049 @@
+{
+  "id": "ai-side-hustle-accelerator",
+  "title": "AI Side Hustle Accelerator",
+  "subtitle": "7 proven AI-powered income streams. Launch your first in 48 hours.",
+  "totalDays": 21,
+  "totalXp": 3150,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "AI Income Foundations",
+      "subtitle": "The mindset shift, choosing your income stream, setting up your AI toolkit, and validating your first offer.",
+      "days": "Lessons 1–7",
+      "skill": "Choose your AI income stream, validate demand in 24 hours, and craft an irresistible first offer",
+      "lessonIds": [
+        "ash-1-ai-income-revolution",
+        "ash-2-seven-income-streams",
+        "ash-3-choose-your-stream",
+        "ash-4-ai-toolkit-for-earning",
+        "ash-5-validate-before-you-build",
+        "ash-6-your-first-offer",
+        "ash-7-price-for-profit"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Build & Launch in 48 Hours",
+      "subtitle": "Build your product or service, create your sales page, and make your first sale — all within a weekend.",
+      "days": "Lessons 8–14",
+      "skill": "Build an AI-powered product, write high-converting sales copy, and land your first paying customer",
+      "lessonIds": [
+        "ash-8-48hr-launch-blueprint",
+        "ash-9-ai-product-creation",
+        "ash-10-sales-pages-that-convert",
+        "ash-11-payment-delivery-systems",
+        "ash-12-launch-day-strategy",
+        "ash-13-freelance-fast-start",
+        "ash-14-automation-services"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Scale to Consistent Income",
+      "subtitle": "Grow beyond the first sale into a predictable, scalable income with multiple revenue streams.",
+      "days": "Lessons 15–21",
+      "skill": "Build recurring revenue, automate your marketing, and scale to £5K/month with AI-powered systems",
+      "lessonIds": [
+        "ash-15-recurring-revenue",
+        "ash-16-ai-marketing-autopilot",
+        "ash-17-client-pipeline",
+        "ash-18-stack-income-streams",
+        "ash-19-outsource-delegate",
+        "ash-20-5k-month-roadmap",
+        "ash-21-ninety-day-growth-plan"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ash-1-ai-income-revolution",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "The AI Income Revolution",
+      "subtitle": "Why now is the best time to start earning with AI",
+      "duration": "4 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Great Income Democratisation",
+          "body": "The barriers to entry for starting a business have just collapsed. You no longer need a team of designers, copywriters, or developers to launch a profitable venture. AI has levelled the playing field, allowing anyone with a laptop to compete with established agencies.",
+          "stat": "$1.8 Trillion",
+          "statLabel": "Market size of the AI economy by 2030"
+        },
+        {
+          "type": "content",
+          "headline": "Why Traditional Side Hustles Are Changing",
+          "body": "Old-school side hustles like manual data entry or basic freelance writing are being disrupted by automation. If a task can be done by a machine, it will be. To stay ahead, you must pivot from 'doing the work' to 'directing the AI to do the work'.",
+          "bullets": [
+            "Manual labour is being replaced by intelligent automation.",
+            "Speed is now the primary currency of the digital economy.",
+            "High-quality output is now accessible to everyone, not just experts."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Beginner's Advantage",
+          "body": "While seasoned professionals are often stuck in 'the way things have always been done', you have a clean slate. Beginners are more agile, more willing to experiment with new tools, and quicker to adapt to AI-driven workflows.",
+          "bullets": [
+            "No legacy processes to unlearn.",
+            "Ability to adopt 'AI-first' thinking immediately.",
+            "Access to tools that previously cost thousands of pounds."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 48-Hour Promise",
+          "body": "We believe in rapid results. By the end of this course, you will not just be learning theory; you will be building an income stream. Our goal is to get your first AI-generated sale within 48 hours of starting your project.",
+          "bullets": [
+            "Action-orientated approach over academic theory.",
+            "Focus on high-demand, low-friction digital products.",
+            "Systems designed for speed and scalability."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First AI Mindset Shift",
+          "body": "To start earning, you must stop viewing AI as a toy and start viewing it as a business partner. Complete this quick exercise to prepare for our next module.",
+          "bullets": [
+            "List one task you do daily that feels repetitive.",
+            "Ask yourself: 'How could a tool like ChatGPT or Claude automate 80% of this?'",
+            "Write down your answer in a notebook; this is your first potential product or service."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is being a beginner an advantage in the current AI economy?",
+          "type": "mcq",
+          "options": [
+            "Lack of legacy habits and faster adaptability",
+            "Beginners have more money to invest in software",
+            "AI tools are only available to those without experience",
+            "It is easier to find clients who don't know what AI is"
+          ],
+          "correctIndex": 0,
+          "explanation": "Beginners have a clean slate, allowing them to adopt AI-first workflows without the baggage of outdated traditional methods."
+        },
+        {
+          "question": "The '48-hour first sale' promise focuses on rapid execution rather than lengthy academic study.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "SuccessWise prioritises actionable, fast-paced implementation to get you earning as quickly as possible."
+        },
+        {
+          "question": "How should you view AI in the context of your side hustle?",
+          "type": "mcq",
+          "options": [
+            "As a replacement for all human interaction",
+            "As a business partner that scales your output",
+            "As a tool to do the work while you sleep exclusively",
+            "As a temporary trend that will disappear"
+          ],
+          "correctIndex": 1,
+          "explanation": "Viewing AI as a partner allows you to leverage its speed and intelligence while you provide the strategic direction."
+        }
+      ]
+    },
+    {
+      "id": "ash-2-seven-income-streams",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "7 AI Income Streams",
+      "subtitle": "Overview of every model — pick the one that fits your life",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Which AI path suits you?",
+          "body": "The AI gold rush is here, but not all paths lead to the same destination. Whether you want quick cash or long-term wealth, picking the right model is your first step to success.",
+          "stat": "7",
+          "statLabel": "Proven AI Income Streams"
+        },
+        {
+          "type": "content",
+          "headline": "Service-Based Models",
+          "body": "These models trade your time (leveraged by AI) for money. They offer the fastest path to your first £100.",
+          "bullets": [
+            "AI Freelancing: Use tools like ChatGPT or Midjourney to deliver copywriting, design, or video edits 5x faster. (Potential: £500+/mo, Time: 1 week)",
+            "AI Consulting: Help local businesses integrate AI into their workflow. (Potential: £1,000+/project, Time: 2–4 weeks)",
+            "Automation Services: Build \"Done-For-You\" workflows using Zapier & AI to save clients time. (Potential: £2,000+/mo, Time: 4 weeks)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Scalable Product Models",
+          "body": "Build once, sell many times. These models require more upfront effort but offer unlimited scaling.",
+          "bullets": [
+            "Digital Products: Sell AI-generated e-books, prompt guides, or Notion templates. (Potential: Passive income, Time: 2 weeks)",
+            "SaaS/Tool Building: Use no-code tools (like Bubble) to wrap AI into a specific utility app. (Potential: High, Time: 6+ weeks)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Content & Traffic Models",
+          "body": "Use AI to supercharge your content creation and monetise your audience.",
+          "bullets": [
+            "Affiliate Marketing: Create AI-optimised reviews and \"best-of\" lists to earn commissions. (Potential: Scaling, Time: 4 weeks)",
+            "Content Monetisation: Run YouTube channels or newsletters powered by AI research and drafting. (Potential: Ad/Sponsorship revenue, Time: 3 months)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'One Path' Challenge",
+          "body": "Don't try to master all seven. Choose one that aligns with your current skills. Answer this to lock it in:",
+          "bullets": [
+            "Step 1: Reflect on your goal. Do you need money *now* (Service) or *later* (Product/Content)?",
+            "Step 2: Write down one stream that excites you.",
+            "Step 3: Commit to spending the next 3 days exploring only that path."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which income stream is generally considered the fastest way to earn your first income?",
+          "type": "mcq",
+          "options": [
+            "Service-based models (Freelancing/Consulting)",
+            "SaaS/Tool Building",
+            "Building a YouTube channel",
+            "Affiliate Marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Service-based models allow you to leverage your existing skills with AI to provide immediate value to clients, leading to faster payments."
+        },
+        {
+          "question": "The best way to start is to attempt all 7 income streams simultaneously.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focus is key. Trying to do all seven at once leads to burnout and lack of progress. Master one before adding another."
+        },
+        {
+          "question": "Which model is best suited for building 'passive' income over the long term?",
+          "type": "mcq",
+          "options": [
+            "AI Consulting",
+            "Digital Products",
+            "Automation Services",
+            "AI Freelancing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Digital products (eBooks, templates) are created once and can be sold repeatedly without extra time investment per sale."
+        }
+      ]
+    },
+    {
+      "id": "ash-3-choose-your-stream",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "Choose Your First Income Stream",
+      "subtitle": "A decision framework based on your skills, time, and goals",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop chasing every shiny object",
+          "body": "AI offers a thousand ways to make money, but trying all of them is the fastest way to make zero. Today, we pick your lane.",
+          "stat": "100%",
+          "statLabel": "Focus Rate"
+        },
+        {
+          "type": "content",
+          "headline": "The 'Golden Trio' of Decision Making",
+          "body": "To pick the right side hustle, you must weigh these three factors honestly:",
+          "bullets": [
+            "Time: How many hours can you realistically commit per week?",
+            "Skills: What are you already good at? (Writing, design, coding, or organising?)",
+            "Urgency: Do you need cash this month, or are you building a long-term asset?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Skill + AI Formula",
+          "body": "Don't reinvent yourself. Use AI to supercharge your existing baseline. Your 'Superpower' is your current knowledge paired with AI speed.",
+          "bullets": [
+            "Writer + ChatGPT = Content Agency",
+            "Designer + Midjourney = Brand Identity Service",
+            "Admin + Automation = Workflow Consultant"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Decision Matrix",
+          "body": "Choose your path based on your current situation:",
+          "bullets": [
+            "Low Time + High Urgency: Service-based freelancing (editing, social media management).",
+            "High Time + Low Urgency: Content creation or building a niche AI-powered app.",
+            "Low Time + Low Urgency: Curated newsletters or affiliate marketing."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Action Plan",
+          "body": "Commit to one path for the next 30 days. Write down your decision and stick to it.",
+          "bullets": [
+            "Pick ONE stream from the matrix above.",
+            "Identify ONE AI tool that accelerates your specific workflow.",
+            "Delete any 'backup' business ideas from your notes for now."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it critical to choose only one income stream initially?",
+          "type": "mcq",
+          "options": [
+            "To avoid analysis paralysis and ensure mastery",
+            "Because AI tools only work on one niche at a time",
+            "To save money on software subscriptions",
+            "Because you are legally restricted to one stream"
+          ],
+          "correctIndex": 0,
+          "explanation": "Focus allows you to iterate faster and actually see results rather than spreading yourself too thin across multiple projects."
+        },
+        {
+          "question": "You should completely abandon your previous professional skills when starting an AI side hustle.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Your existing skills are your competitive advantage. AI should be used to supercharge those skills, not replace them."
+        },
+        {
+          "question": "If you have low time but high income urgency, which path is best?",
+          "type": "mcq",
+          "options": [
+            "Building a complex AI software app",
+            "Starting a long-form YouTube channel",
+            "Service-based freelancing using AI tools",
+            "Creating an online course"
+          ],
+          "correctIndex": 2,
+          "explanation": "Service-based freelancing provides the fastest path to cash because you are selling a direct result to a client immediately."
+        }
+      ]
+    },
+    {
+      "id": "ash-4-ai-toolkit-for-earning",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "The AI Toolkit for Earning",
+      "subtitle": "Essential tools for every income model",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't get lost in the AI noise",
+          "body": "There are thousands of AI tools out there, but you only need a handful to start building your income. Avoid 'shiny object syndrome' — let's build your lean, mean, earning machine.",
+          "stat": "3",
+          "statLabel": "Core tools to start"
+        },
+        {
+          "type": "content",
+          "headline": "The Essential AI Stack",
+          "body": "Your toolkit should cover text, visuals, and presentation. Start simple, scale later.",
+          "bullets": [
+            "Text Mastery: ChatGPT (Plus) or Claude for writing and strategy.",
+            "Visual Creation: Midjourney for high-end art or DALL-E 3 for ease of use.",
+            "Design & Layout: Canva Magic Studio to turn AI assets into professional products."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tools by Income Stream",
+          "body": "Not all side hustles require the same tech. Pick your lane to save time and money.",
+          "bullets": [
+            "Freelance Copywriters: Focus on Claude for nuance and tone matching.",
+            "Digital Product Creators: Use ChatGPT for content outlines + Canva for PDF design.",
+            "Content Creators: Use Midjourney for unique thumbnails and social headers."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Free vs. Paid Tiers",
+          "body": "You don't need a massive budget. Here is the reality of the 'minimum viable toolkit'.",
+          "bullets": [
+            "Start Free: Use ChatGPT (Free) and Canva (Free) to validate your idea.",
+            "Upgrade when Earning: Only pay for subscriptions once you have your first paying client.",
+            "Focus: Master one tool at a time rather than juggling five free accounts."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Toolkit Today",
+          "body": "Let's get your accounts ready and your workflow set up.",
+          "bullets": [
+            "Create a dedicated email account for your side hustle business.",
+            "Sign up for a free ChatGPT and Canva account.",
+            "Write down your 'Minimum Viable Toolkit' (max 3 tools) in your notebook."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the best strategy for choosing your AI tools when starting out?",
+          "type": "mcq",
+          "options": [
+            "Subscribe to every popular AI tool to stay ahead of the competition.",
+            "Focus on a Minimum Viable Toolkit of 2–3 tools to avoid overwhelm.",
+            "Wait until you have a £1,000 budget before signing up for any accounts.",
+            "Only use free tools, as paid ones are rarely worth the investment."
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting lean prevents 'shiny object syndrome'. You can scale your tech stack as your revenue grows."
+        },
+        {
+          "question": "You should immediately pay for premium AI subscriptions before you have your first client.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. It is better to validate your idea and start earning using free tiers before committing to monthly costs."
+        },
+        {
+          "question": "Which tool is best suited for turning AI-generated text and images into professional-looking digital products?",
+          "type": "mcq",
+          "options": [
+            "Midjourney",
+            "ChatGPT",
+            "Canva",
+            "Claude"
+          ],
+          "correctIndex": 2,
+          "explanation": "Canva is the industry standard for layout, design, and formatting your AI-generated assets into sellable products."
+        }
+      ]
+    },
+    {
+      "id": "ash-5-validate-before-you-build",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Validate Before You Build",
+      "subtitle": "How to test demand in 24 hours",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Building in the Dark",
+          "body": "Most AI side hustles fail because creators spend weeks building a product nobody actually wants. Today, we kill that habit. We're going to prove there's a market for your idea before you write a single line of code.",
+          "stat": "90%",
+          "statLabel": "of failed products had no validation"
+        },
+        {
+          "type": "content",
+          "headline": "The 'Smoke Test' Method",
+          "body": "A 'Smoke Test' is the art of selling a product that doesn't exist yet. By creating a simple landing page or social media post offering your AI service, you can measure genuine interest through clicks, emails, or pre-orders.",
+          "bullets": [
+            "Create a simple one-page description of your offer.",
+            "Add a clear call to action (waitlist, pre-order, or DM).",
+            "If nobody clicks, you've saved yourself weeks of wasted effort."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quick Validation Tools",
+          "body": "You don't need a fancy website. Here are free tools to test demand in under 24 hours:",
+          "bullets": [
+            "Carrd.co: Build a one-page landing page in 15 minutes.",
+            "Google Forms: Create a quick survey to gauge interest.",
+            "Twitter/LinkedIn poll: Ask your network directly what they would pay for."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Interpreting the Signals",
+          "body": "Validation is binary: it's either a 'Go' or a 'Pivot'. Don't be discouraged by zero interest — it's a data point that saves you time.",
+          "bullets": [
+            "10+ sign-ups or DMs = strong signal, proceed to build.",
+            "3–9 responses = tweak your messaging and test again.",
+            "0–2 responses = pivot your idea or target a different audience."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 24-Hour Validation Mission",
+          "body": "Draft a post for LinkedIn or X describing your AI service as if it's ready today.",
+          "bullets": [
+            "Write a 3-sentence pitch: Problem → Solution → Call to Action.",
+            "Post it publicly or share in a relevant community.",
+            "Goal: get 10 interested responses by this time tomorrow."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of a 'Smoke Test'?",
+          "type": "mcq",
+          "options": [
+            "To generate passive income immediately",
+            "To prove market demand before building the product",
+            "To practice your coding skills",
+            "To get followers on social media"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Smoke Test validates that real people want what you're offering, saving you from building something nobody needs."
+        },
+        {
+          "question": "If your validation test gets zero interest, you should keep building anyway.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zero interest is a clear signal to pivot. Change your messaging, target audience, or the offer itself before investing more time."
+        },
+        {
+          "question": "Which of these is a low-cost way to validate your AI idea?",
+          "type": "mcq",
+          "options": [
+            "Building a custom mobile app",
+            "Hiring a developer to build a prototype",
+            "Creating a simple landing page or social media poll",
+            "Buying a premium domain name"
+          ],
+          "correctIndex": 2,
+          "explanation": "A simple landing page or poll costs nothing and gives you real market feedback within hours."
+        }
+      ]
+    },
+    {
+      "id": "ash-6-your-first-offer",
+      "dayNumber": 6,
+      "moduleId": "module-1",
+      "title": "Your First Offer",
+      "subtitle": "Creating an irresistible value proposition",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Selling Tools, Start Selling Results",
+          "body": "Clients don't care that you use ChatGPT or Midjourney. They care about saving time, making money, or solving a painful problem. Your offer is the bridge between their current struggle and their desired future.",
+          "stat": "80%",
+          "statLabel": "of clients buy based on promised outcome"
+        },
+        {
+          "type": "content",
+          "headline": "The Irresistible Offer Formula",
+          "body": "To stand out, use a structured offer that removes friction and builds trust instantly. Combine these three elements:",
+          "bullets": [
+            "Outcome: Be specific about what they get (e.g., '10 high-converting social posts').",
+            "Timeframe: Define exactly when it will be delivered (e.g., 'in 48 hours').",
+            "Guarantee: Remove risk with a simple promise (e.g., 'or you don't pay')."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Positioning: Value Over Effort",
+          "body": "If you charge by the hour, you are penalised for being fast. When you use AI to work faster, you should be rewarded, not punished. Package your service as a fixed-price 'Productised Service'.",
+          "bullets": [
+            "Focus on the 'Transformation' provided.",
+            "Stop listing features; start listing benefits.",
+            "Price based on value to the client, not your cost of time."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Examples of AI-Powered Offers",
+          "body": "Your offer should sound like a professional solution, not a technical experiment:",
+          "bullets": [
+            "Bad: 'I will use AI to write your blog posts.'",
+            "Good: 'I will write 4 SEO-optimised blog posts that rank for your target keywords within 5 days, guaranteed.'",
+            "Bad: 'I can generate images for your brand.'",
+            "Good: 'A complete custom brand-asset library delivered in 72 hours, or it's free.'"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your First Offer",
+          "body": "Use the formula to write your first offer statement. Keep it simple and focused on the client's gain.",
+          "bullets": [
+            "Identify one specific service you can offer.",
+            "Add a clear, short timeframe for delivery.",
+            "Add a risk-reversal guarantee.",
+            "Write it down: 'I will [Deliverable] in [Timeframe] or [Guarantee].'"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why should you avoid selling your AI 'tools' as the primary focus?",
+          "type": "mcq",
+          "options": [
+            "Because clients prefer human-made work",
+            "Because clients pay for results, not the software you use",
+            "Because AI tools are too expensive to mention",
+            "Because it makes the work look too easy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients hire you to solve a problem or achieve a goal. The tools you use are just your internal process; the value lies in the outcome."
+        },
+        {
+          "question": "Charging by the hour is the best way to maximise profit when using AI.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI makes you faster. If you charge by the hour, you earn less money the more efficient you become. Charging for the result is much more profitable."
+        },
+        {
+          "question": "Which of these is the best example of a strong, value-based offer?",
+          "type": "mcq",
+          "options": [
+            "I will help you with AI tasks for £20 an hour",
+            "I will use AI to do your work faster",
+            "I will create 5 ready-to-post email newsletters for your brand in 24 hours, or your money back",
+            "I am an expert at prompting AI models"
+          ],
+          "correctIndex": 2,
+          "explanation": "This option includes a specific outcome, a clear timeframe, and a risk-reversal guarantee — the three elements of an irresistible offer."
+        }
+      ]
+    },
+    {
+      "id": "ash-7-price-for-profit",
+      "dayNumber": 7,
+      "moduleId": "module-1",
+      "title": "Price for Profit",
+      "subtitle": "Pricing strategies that maximise revenue",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Leaving Money on the Table",
+          "body": "Many beginners fall into the trap of underpricing their services due to impostor syndrome. Pricing correctly isn't just about covering costs; it's about reflecting the true value you deliver to your clients.",
+          "stat": "30%",
+          "statLabel": "Average revenue increase after value-based pricing shift"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Core Pricing Models",
+          "body": "Choosing the right structure is vital for your cash flow and sanity. Each model serves a different client need:",
+          "bullets": [
+            "Project-based: A fixed fee for a specific deliverable (great for clear-cut tasks).",
+            "Retainer: A recurring monthly fee for ongoing support (excellent for predictable income).",
+            "Value-based: Pricing based on the business impact you create, rather than time spent."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Calculating Your Minimum Viable Price",
+          "body": "Never guess your rates. Use a bottom-up approach to ensure your business remains sustainable.",
+          "bullets": [
+            "Total your monthly business expenses (software, tools, marketing).",
+            "Define your desired monthly profit margin.",
+            "Divide by your target number of billable hours to find your 'break-even' hourly rate.",
+            "Add a 20% buffer for taxes and unexpected downtime."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Psychology: Anchoring & Tiers",
+          "body": "Use the 'Good/Better/Best' framework to influence client decision-making and increase your average deal size.",
+          "bullets": [
+            "Anchoring: Present your most expensive 'Best' package first to set a high value perception.",
+            "The Middle Option: Most clients gravitate toward the 'Better' package as the safest choice.",
+            "Tiering: Offer different scopes of work so clients can choose what fits their budget."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Action Plan: Set Your Prices",
+          "body": "Review your current pricing or draft your first package today using these steps:",
+          "bullets": [
+            "Identify one service you offer and calculate the minimum price required to make it profitable.",
+            "Draft a 3-tier pricing structure (Good/Better/Best).",
+            "Commit to raising your prices by 10% for the next new client you onboard."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is value-based pricing often more profitable than hourly billing?",
+          "type": "mcq",
+          "options": [
+            "It is easier to calculate.",
+            "It rewards efficiency and the total impact delivered to the client.",
+            "Clients always prefer paying more.",
+            "It requires no negotiation."
+          ],
+          "correctIndex": 1,
+          "explanation": "Value-based pricing decouples your income from your time, allowing you to earn more as you become faster and provide higher business value."
+        },
+        {
+          "question": "You should wait until you have years of experience before raising your prices.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You should raise prices based on demand and the value you provide, not just the passage of time. If you are consistently booked, raise your rates."
+        },
+        {
+          "question": "What is the primary goal of the 'Good/Better/Best' tiered pricing strategy?",
+          "type": "mcq",
+          "options": [
+            "To confuse the client so they choose the cheapest option.",
+            "To ensure you only work with large corporations.",
+            "To guide client choice and increase average transaction value.",
+            "To reduce the amount of work you have to do."
+          ],
+          "correctIndex": 2,
+          "explanation": "Tiered pricing uses psychological anchoring to make the middle option seem like the best value, helping you capture more revenue."
+        }
+      ]
+    },
+    {
+      "id": "ash-8-48hr-launch-blueprint",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "The 48-Hour Launch Blueprint",
+      "subtitle": "Step-by-step speed framework for your first launch",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Speed Trumps Perfection",
+          "body": "In the world of AI side hustles, your greatest enemy is 'analysis paralysis'. Perfectionism is a trap that keeps you from getting real market feedback. By committing to a 48-hour launch, you force yourself to focus on the core value proposition.",
+          "stat": "48",
+          "statLabel": "Hours until market entry"
+        },
+        {
+          "type": "content",
+          "headline": "The 48-Hour Timeline",
+          "body": "Break your launch into three distinct phases to maintain momentum and ensure you don't get stuck in the weeds.",
+          "bullets": [
+            "Hours 0–12: The Build. Focus on your core AI-generated asset (eBook, prompt library, or template).",
+            "Hours 12–24: The Sales Page. Keep it simple — headline, problem you solve, and a clear call to action.",
+            "Hours 24–48: Launch & Promote. Share your link on social media, reach out to your network, engage in communities."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Toolstack for Rapid Deployment",
+          "body": "You don't need a complex website or custom code. Use these tools to get from idea to revenue in record time.",
+          "bullets": [
+            "Gumroad: Perfect for hosting digital products and handling payments instantly.",
+            "Carrd: The fastest way to build a high-converting, single-page website.",
+            "Stripe: The gold standard for secure, reliable payment processing.",
+            "Canva: Use AI-integrated tools for quick, professional-looking product graphics."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Minimum Viable Product Mindset",
+          "body": "Your first version doesn't need to be perfect — it needs to be useful. Ship the simplest version that solves the core problem, then improve based on real customer feedback.",
+          "bullets": [
+            "Focus on the 'Minimum Viable Product' (MVP) — cut everything non-essential.",
+            "If it doesn't solve a specific problem, remove it.",
+            "Your first sale is the most important milestone — not a polished product."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your 48-Hour Sprint",
+          "body": "Map out your personal 48-hour timeline starting this weekend.",
+          "bullets": [
+            "Block out 2 x 6-hour sessions in your calendar for the build phase.",
+            "Choose one platform (Gumroad or Carrd) and create your account now.",
+            "Write down the ONE product you will ship by Sunday evening."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is the 48-hour launch framework effective for beginners?",
+          "type": "mcq",
+          "options": [
+            "It guarantees your product will become a viral success.",
+            "It eliminates perfectionism and forces focus on market validation.",
+            "It allows you to spend more money on professional web design.",
+            "It ensures you don't have to talk to customers."
+          ],
+          "correctIndex": 1,
+          "explanation": "The 48-hour framework prevents 'analysis paralysis' by prioritising speed and core value, allowing you to gather real-world feedback quickly."
+        },
+        {
+          "question": "Your first product launch should be perfect before you share it publicly.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Perfectionism delays launches indefinitely. A shipped MVP that solves a real problem will always beat a perfect product that never launches."
+        },
+        {
+          "question": "Which platform is best for hosting and selling digital products with minimal setup?",
+          "type": "mcq",
+          "options": [
+            "A custom-built website",
+            "Gumroad",
+            "A WordPress blog",
+            "An enterprise CRM system"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gumroad handles product hosting, payment processing, and delivery in one platform — perfect for rapid launches."
+        }
+      ]
+    },
+    {
+      "id": "ash-9-ai-product-creation",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "AI-Powered Product Creation",
+      "subtitle": "Build digital products in hours not weeks",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Spending Months on Product Development",
+          "body": "The traditional digital product cycle is broken. By the time you finish writing an eBook manually, the market has often shifted. AI allows you to compress weeks of work into a single afternoon.",
+          "stat": "80%",
+          "statLabel": "Faster time-to-market using AI workflows"
+        },
+        {
+          "type": "content",
+          "headline": "Choose Your Digital Asset",
+          "body": "Not all products are created equal. Focus on high-leverage assets that solve specific, urgent problems for your target audience.",
+          "bullets": [
+            "eBooks: Deep dives into specific industry frameworks.",
+            "Prompt Packs: Curated libraries for specific niche tasks.",
+            "Templates: Notion setups, spreadsheet models, or design kits.",
+            "Mini-Courses: Short, actionable video or text-based modules."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The AI Creation Workflow",
+          "body": "Use ChatGPT as your co-author to move from a blank page to a complete draft in record time.",
+          "bullets": [
+            "Outline: Use AI to generate a 10-chapter structure based on a core problem.",
+            "Drafting: Write section-by-section to maintain depth and tone.",
+            "Refining: Ask AI to simplify complex jargon or add 'how-to' examples.",
+            "Polishing: Run a final grammar and consistency check."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Design and Quality Control",
+          "body": "Once the content is ready, use AI-assisted design tools to give your product a premium, professional look.",
+          "bullets": [
+            "Canva: Use Magic Design to generate layouts instantly.",
+            "Gamma: Create professional slide decks or mini-course pages from text prompts.",
+            "Editing: Always perform a manual review to inject your unique voice.",
+            "Packaging: Create high-quality mockups to make the product feel tangible."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Outline",
+          "body": "Pick a niche problem you know well. Use ChatGPT to generate a 5-chapter outline for a 20-page eBook.",
+          "bullets": [
+            "Open ChatGPT and prompt: 'Create a 5-chapter outline for an eBook about [your topic].'",
+            "Identify the 'quick win' section that you can write today.",
+            "Set a timer for 2 hours and draft that section using AI assistance."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of using AI for digital product creation?",
+          "type": "mcq",
+          "options": [
+            "Replacing the need for a target audience",
+            "Compressing the development timeline significantly",
+            "Guaranteeing high sales",
+            "Removing the need for quality control"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI allows for rapid drafting, outlining, and design, significantly reducing the time-to-market for digital products."
+        },
+        {
+          "question": "AI-generated content should be published immediately without manual review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Manual review is essential to ensure accuracy, maintain your unique brand voice, and add human expertise."
+        },
+        {
+          "question": "Which tool is best suited for quickly turning text into a presentation or course structure?",
+          "type": "mcq",
+          "options": [
+            "ChatGPT",
+            "Gamma",
+            "Notion",
+            "Excel"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gamma is specifically designed to create professional visual assets and presentations from simple text prompts."
+        }
+      ]
+    },
+    {
+      "id": "ash-10-sales-pages-that-convert",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Sales Pages That Convert",
+      "subtitle": "Write high-converting copy with AI",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Page is Your 24/7 Salesperson",
+          "body": "A product is only as good as the page that sells it. Most people fail because they focus on features rather than the transformation. AI helps you structure your copy for maximum persuasion.",
+          "stat": "50%",
+          "statLabel": "Average conversion lift with optimised 'above the fold' copy"
+        },
+        {
+          "type": "content",
+          "headline": "Anatomy of a High-Converting Page",
+          "body": "Every successful sales page follows a proven psychological flow to guide the visitor toward a purchase.",
+          "bullets": [
+            "Headline: A bold promise that addresses the reader's main pain point.",
+            "Pain/Agitation: Empathising with the problem to build rapport.",
+            "Solution: Introducing your product as the bridge to success.",
+            "Proof: Testimonials or data to build necessary trust.",
+            "Call to Action (CTA): A clear, low-friction instruction."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'Above the Fold' Rule",
+          "body": "Visitors decide within seconds whether to stay or bounce. Your 'above the fold' section (the area visible before scrolling) is the most critical real estate on your site.",
+          "bullets": [
+            "Strong Headline: Focus on the result, not the process.",
+            "Sub-headline: A brief explanation of how you deliver that result.",
+            "Primary CTA: A button that stands out visually.",
+            "Social Proof: A small indicator of existing users (e.g., 'Join 500+ creators')."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI-Driven Copywriting",
+          "body": "Use AI to iterate on your copy, testing different angles to see what resonates most with your audience.",
+          "bullets": [
+            "Tone Adjustment: Ask AI to rewrite copy with a 'persuasive' or 'empathetic' tone.",
+            "Headlines: Generate 10 variations of your main headline to A/B test.",
+            "Benefit Conversion: Use a prompt like 'Convert these product features into emotional benefits.'",
+            "Objection Handling: Ask AI to list the top 3 reasons a user wouldn't buy and write copy to address them."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Hero Section",
+          "body": "Open your chosen page builder (Carrd or Gumroad). Use ChatGPT to write a headline and sub-headline for your product.",
+          "bullets": [
+            "Prompt: 'Write 5 headline options for a sales page selling [your product] to [your audience].'",
+            "Pick your favourite and add a one-line sub-headline.",
+            "Add a CTA button with action-oriented text (e.g., \"Get Instant Access\")."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of the 'above the fold' section?",
+          "type": "mcq",
+          "options": [
+            "To list every feature of the product",
+            "To capture attention and encourage the visitor to keep reading",
+            "To display the price",
+            "To provide legal disclaimers"
+          ],
+          "correctIndex": 1,
+          "explanation": "The goal of the 'above the fold' area is to hook the reader immediately so they don't bounce from the page."
+        },
+        {
+          "question": "Focusing on product features is more effective than focusing on customer benefits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "People buy transformations and solutions to their problems, not just a list of technical features."
+        },
+        {
+          "question": "Which of these is a vital element for building trust on a sales page?",
+          "type": "mcq",
+          "options": [
+            "Complex jargon",
+            "Testimonials and social proof",
+            "Long, unformatted paragraphs",
+            "Hiding the price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social proof, such as testimonials, helps potential buyers feel confident that your solution works for others."
+        }
+      ]
+    },
+    {
+      "id": "ash-11-payment-delivery-systems",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "Payment & Delivery Systems",
+      "subtitle": "Set up frictionless checkout in under an hour",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Friction Kills Sales",
+          "body": "Every extra click, form field, or confusing step on your checkout page costs you money. The best product in the world won't sell if buying it is a hassle. Setting up a seamless payment system is non-negotiable.",
+          "stat": "70%",
+          "statLabel": "of online shoppers abandon checkout due to friction"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Payment Platform",
+          "body": "Pick the right tool based on your product type and target audience:",
+          "bullets": [
+            "Gumroad: Best all-in-one for beginners — handles hosting, payments, and delivery automatically.",
+            "Payhip: Great alternative with lower fees and strong EU VAT handling.",
+            "Stripe: Most flexible for custom builds, but requires more setup."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Automated Delivery That Delights",
+          "body": "Your delivery system should work 24/7 without you lifting a finger. A great post-purchase experience builds trust and repeat buyers.",
+          "bullets": [
+            "Instant download: Buyer pays → receives a download link immediately.",
+            "Email delivery: Use Gumroad or ConvertKit to send a welcome email + product link.",
+            "Access page: Use Notion or a private URL for course-style products."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Checkout Psychology & Protection",
+          "body": "Small tweaks at checkout can significantly increase your conversion rate:",
+          "bullets": [
+            "Urgency: Add \"Limited-time bonus included\" to increase impulse purchases.",
+            "Upsells: Offer a related product at checkout for 20–30% extra revenue.",
+            "Protection: Use Gumroad's built-in licence keys or watermarking to deter theft."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Checkout Today",
+          "body": "Don't wait until your product is perfect. Get your payment page live now.",
+          "bullets": [
+            "Create a free Gumroad account and add a placeholder product.",
+            "Set a price, upload a sample file, and configure instant delivery.",
+            "Do a test purchase with a £0 coupon to verify the full buyer experience."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is reducing checkout friction so important for sales?",
+          "type": "mcq",
+          "options": [
+            "It makes your product look more expensive.",
+            "Every extra step in the buying process increases the chance of the customer leaving.",
+            "It reduces the need for customer support.",
+            "It allows you to charge higher prices."
+          ],
+          "correctIndex": 1,
+          "explanation": "Studies show that up to 70% of shoppers abandon checkout when the process is too complicated. Every unnecessary step costs you a sale."
+        },
+        {
+          "question": "Gumroad is the best platform for every type of digital product business.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gumroad is excellent for beginners, but Stripe or Payhip may be better depending on your needs. The right platform depends on your product type, audience location, and technical comfort level."
+        },
+        {
+          "question": "What is the purpose of adding an upsell at checkout?",
+          "type": "mcq",
+          "options": [
+            "To confuse the customer into spending more.",
+            "To increase average order value by offering a related product.",
+            "To make the checkout process longer.",
+            "To collect more customer data."
+          ],
+          "correctIndex": 1,
+          "explanation": "A well-placed upsell offers genuine additional value. When relevant, it can boost revenue by 20–30% with no extra marketing spend."
+        }
+      ]
+    },
+    {
+      "id": "ash-12-launch-day-strategy",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "Launch Day Strategy",
+      "subtitle": "How to generate buzz and land your first sales",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Great Launch Is 80% Pre-Work",
+          "body": "Most people post their product link on launch day and wonder why nobody buys. The secret is that your launch starts 24 hours before you go live. Warm audiences buy; cold audiences scroll past.",
+          "stat": "3×",
+          "statLabel": "more sales from a warm audience vs a cold one"
+        },
+        {
+          "type": "content",
+          "headline": "The 24-Hour Pre-Launch Warm-Up",
+          "body": "Build anticipation the day before so your audience is primed to buy the moment you go live:",
+          "bullets": [
+            "Tease: Post \"Something big is coming tomorrow\" with a hint of the value.",
+            "Problem post: Share a relatable struggle your product solves.",
+            "Behind-the-scenes: Show a sneak peek of what you've built."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where and What to Post on Launch Day",
+          "body": "A multi-channel approach maximises reach. Post everywhere your audience lives:",
+          "bullets": [
+            "LinkedIn: Long-form story post — your journey building it + product link.",
+            "X (Twitter): Thread format — problem, solution, and a clear CTA.",
+            "Facebook/Reddit communities: Share value first, then mention your product naturally.",
+            "Personal network: Direct message 10 people who would genuinely benefit."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your First Customer & Testimonial",
+          "body": "Your first sale is not just revenue — it's proof. Treat your first customer like gold:",
+          "bullets": [
+            "Follow up personally to ask how they are finding the product.",
+            "Ask for honest feedback and use it to improve.",
+            "Request a short testimonial to display on your sales page."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your Launch Posts",
+          "body": "Use ChatGPT to draft your pre-launch and launch day social media posts right now.",
+          "bullets": [
+            "Prompt: 'Write a pre-launch teaser post for [your product] for LinkedIn — 150 words, conversational tone.'",
+            "Prompt: 'Write a launch day announcement post with a clear CTA for X/Twitter.'",
+            "Schedule both posts so you don't forget on the day."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is a 24-hour pre-launch warm-up important?",
+          "type": "mcq",
+          "options": [
+            "It gives you time to fix last-minute bugs.",
+            "It builds anticipation so your audience is primed to buy on launch day.",
+            "It allows you to raise your prices before launch.",
+            "It is required by most payment platforms."
+          ],
+          "correctIndex": 1,
+          "explanation": "Warm audiences who are already interested convert at a much higher rate than cold audiences seeing your product for the first time."
+        },
+        {
+          "question": "You should only post about your launch on one social media platform.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A multi-channel approach maximises reach. Each platform has a different audience, so posting on several gives your launch the best chance of success."
+        },
+        {
+          "question": "What is the most valuable thing you can get from your first customer?",
+          "type": "mcq",
+          "options": [
+            "A large order value.",
+            "A testimonial and honest feedback.",
+            "Permission to add them to a mailing list.",
+            "A referral to a business investor."
+          ],
+          "correctIndex": 1,
+          "explanation": "A genuine testimonial is social proof that builds trust with future buyers, and honest feedback helps you improve the product immediately."
+        }
+      ]
+    },
+    {
+      "id": "ash-13-freelance-fast-start",
+      "dayNumber": 13,
+      "moduleId": "module-2",
+      "title": "Freelance Fast-Start",
+      "subtitle": "Land your first AI freelance client this week",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your First Client Is Closer Than You Think",
+          "body": "You don't need a polished portfolio or years of experience to land your first freelance client. You need a clear offer, a professional presence, and the confidence to reach out. AI gives you the edge to deliver results that would have taken experts weeks.",
+          "stat": "59%",
+          "statLabel": "of businesses plan to increase AI freelancer hiring this year"
+        },
+        {
+          "type": "content",
+          "headline": "Where to Find Clients Fast",
+          "body": "Not all platforms are equal. Start where buyers are actively looking for AI help:",
+          "bullets": [
+            "Upwork: Post a profile focused on AI writing, design, or automation. Bid on 5 jobs per day.",
+            "Fiverr: Create a specific, well-titled gig (e.g., \"I will write 5 SEO blogs using AI in 48 hours\").",
+            "LinkedIn: Optimise your headline, then send 10 personalised connection requests to ideal clients daily.",
+            "Cold DMs: Message local business owners on Instagram or LinkedIn with a specific, value-first pitch."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Crafting a Winning Proposal with AI",
+          "body": "Most proposals are ignored because they're generic. AI helps you write hyper-personalised pitches in seconds:",
+          "bullets": [
+            "Research: Read the client's job post or website thoroughly before pitching.",
+            "Personalise: Ask ChatGPT to 'write a freelance proposal for [job description] that mentions their specific challenge'.",
+            "Lead with value: Open with what you understand about their problem, not your credentials.",
+            "Close with a CTA: End with a specific next step (e.g., \"Can we do a 15-minute call on Thursday?\")."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Delivering & Getting 5-Star Reviews",
+          "body": "Your reputation is your most valuable asset as a freelancer. Deliver beyond expectations from day one:",
+          "bullets": [
+            "Over-communicate: Send a progress update halfway through every project.",
+            "Over-deliver: Include a small unexpected bonus (an extra revision or a tip sheet).",
+            "Ask promptly: Request a review within 24 hours of delivery while the positive feeling is fresh."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Send Your First Pitch Today",
+          "body": "Don't wait for the perfect moment. Use AI to write and send a pitch right now.",
+          "bullets": [
+            "Find one job on Upwork or Fiverr that matches your chosen skill.",
+            "Use ChatGPT to write a personalised proposal using their job description.",
+            "Send it within the hour — speed signals enthusiasm to clients."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes a freelance proposal stand out from the competition?",
+          "type": "mcq",
+          "options": [
+            "Listing all your qualifications and certifications.",
+            "Personalising it to the client's specific problem and leading with value.",
+            "Offering the lowest price possible.",
+            "Making it as long and detailed as possible."
+          ],
+          "correctIndex": 1,
+          "explanation": "Generic proposals are ignored. Clients respond to pitches that show you've understood their specific challenge and can solve it."
+        },
+        {
+          "question": "You should wait until you have a full portfolio before reaching out to any clients.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You can create portfolio samples specifically for your pitch using AI tools. Waiting for a perfect portfolio is a form of procrastination."
+        },
+        {
+          "question": "When is the best time to ask a client for a review?",
+          "type": "mcq",
+          "options": [
+            "Several weeks after delivery, once they've had time to reflect.",
+            "Within 24 hours of delivery while the positive experience is fresh.",
+            "Only if they contact you first to say they are happy.",
+            "At the start of the project before work begins."
+          ],
+          "correctIndex": 1,
+          "explanation": "Reviews are most likely to be written when the positive experience is still fresh. Ask promptly and make it easy for them to respond."
+        }
+      ]
+    },
+    {
+      "id": "ash-14-automation-services",
+      "dayNumber": 14,
+      "moduleId": "module-2",
+      "title": "Automation Services",
+      "subtitle": "Sell done-for-you AI workflows to businesses",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Businesses Will Pay Premium for AI Automation",
+          "body": "Every business owner has repetitive tasks eating up their team's time. When you walk in with an AI-powered workflow that saves them 10 hours a week, you're not selling a service — you're selling back their time. That's worth serious money.",
+          "stat": "£2,000+",
+          "statLabel": "average monthly retainer for AI automation services"
+        },
+        {
+          "type": "content",
+          "headline": "What Automation Services Are",
+          "body": "You build AI-powered workflows using no-code tools that connect apps, trigger actions, and remove manual work:",
+          "bullets": [
+            "Zapier: Connect 6,000+ apps with automated triggers and actions.",
+            "Make.com: More powerful visual automation builder for complex workflows.",
+            "n8n: Open-source option for technical users who want full control."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "High-Demand Use Cases Businesses Pay For",
+          "body": "Focus on automations that directly save time or make money — these are the easiest to sell:",
+          "bullets": [
+            "Lead nurturing: Auto-send personalised follow-up emails when someone fills a form.",
+            "Social media scheduling: Auto-post AI-written content across multiple platforms.",
+            "Invoice processing: Auto-generate and send invoices when a project is marked complete.",
+            "Customer onboarding: Trigger welcome sequences and task lists for new clients."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pricing & the Retainer Opportunity",
+          "body": "Automation is a premium service because the value is ongoing. Structure your pricing to reflect that:",
+          "bullets": [
+            "Setup fee: Charge £500–£1,500 to build the initial workflow.",
+            "Monthly retainer: Charge £200–£800/month for maintenance and improvements.",
+            "ROI pitch: Calculate the hours saved × their hourly rate to justify your price easily."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your First Automation Opportunity",
+          "body": "Think of a business you know — even a local shop or a friend's company.",
+          "bullets": [
+            "Identify one repetitive task they do manually (booking confirmations, follow-up emails, etc.).",
+            "Create a free Zapier or Make.com account and explore if it can be automated.",
+            "Draft a one-paragraph pitch explaining the time saved and the cost to set it up."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are AI automation services particularly valuable to business clients?",
+          "type": "mcq",
+          "options": [
+            "They make businesses look more modern on social media.",
+            "They directly save time and reduce operational costs.",
+            "They replace the need for any human employees.",
+            "They are always cheaper than hiring staff."
+          ],
+          "correctIndex": 1,
+          "explanation": "Businesses pay premium prices for automations that demonstrably save their team's time, because time has a direct financial value."
+        },
+        {
+          "question": "The best way to price automation services is to charge a one-off fee and never follow up.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Monthly retainers for ongoing maintenance and improvements create predictable recurring income, which is far more valuable than one-off project fees."
+        },
+        {
+          "question": "Which of these is a high-demand automation use case businesses readily pay for?",
+          "type": "mcq",
+          "options": [
+            "Automating the creation of viral memes.",
+            "Automated lead nurturing and personalised follow-up emails.",
+            "Replacing a company's entire HR department.",
+            "Generating random content without a strategy."
+          ],
+          "correctIndex": 1,
+          "explanation": "Automated lead nurturing has a direct, measurable impact on revenue, making it one of the easiest automations to sell to businesses."
+        }
+      ]
+    },
+    {
+      "id": "ash-15-recurring-revenue",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "From One Sale to Recurring Revenue",
+      "subtitle": "Subscription and retainer models that pay you monthly",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop chasing the next paycheque",
+          "body": "Relying on one-off sales is the fastest path to burnout. To build a sustainable side hustle, you need to shift from 'gig' work to 'growth' work by creating recurring revenue streams.",
+          "stat": "3×",
+          "statLabel": "Higher business valuation for companies with recurring revenue"
+        },
+        {
+          "type": "content",
+          "headline": "The Subscription Advantage",
+          "body": "Subscription models provide predictable income. By offering a membership site or an AI-powered content library, you provide ongoing value that keeps clients paying month after month.",
+          "bullets": [
+            "Membership sites for niche AI templates and resources.",
+            "Content libraries updated weekly with fresh AI tools and guides.",
+            "Exclusive access to private AI workshops or Q&A sessions."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Retainer Model",
+          "body": "Retainers involve offering an ongoing AI service for a flat monthly fee. This is ideal for businesses that need consistent output but lack the time to manage AI tools themselves.",
+          "bullets": [
+            "Monthly AI social media management (posts, scheduling, engagement).",
+            "Routine SEO-optimised blog updates and content refreshes.",
+            "Ongoing data analysis or weekly report generation."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Converting One-Off Clients to Recurring",
+          "body": "Don't just finish a project and walk away. Propose a 'maintenance' or 'growth' package to your existing clients to ensure their AI solutions remain effective.",
+          "bullets": [
+            "Audit the client's ongoing needs after project delivery.",
+            "Offer a 'Continuous Improvement' package at a discounted monthly rate.",
+            "Provide a loyalty discount for 3-month or 6-month commitments."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your First Retainer Offer",
+          "body": "Draft a simple proposal for your last client, offering a monthly 'AI Support & Optimisation' package.",
+          "bullets": [
+            "Identify one recurring pain point your client has after project delivery.",
+            "Package your AI service as a specific monthly deliverable.",
+            "Set a fixed monthly price (aim for £300–£800/month)."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is a recurring revenue model superior to one-off sales?",
+          "type": "mcq",
+          "options": [
+            "It requires more daily effort.",
+            "It provides predictable monthly income and reduces stress.",
+            "It eliminates the need for marketing entirely.",
+            "It only works for large corporations."
+          ],
+          "correctIndex": 1,
+          "explanation": "Recurring revenue creates stability, allowing you to forecast earnings and reduce the stress of constant client hunting."
+        },
+        {
+          "question": "A retainer model involves selling a single AI tool to a client once.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A retainer is an agreement for ongoing services delivered monthly, not a single transaction."
+        },
+        {
+          "question": "What is the best way to convert a one-off client to a retainer?",
+          "type": "mcq",
+          "options": [
+            "Ignore them after the project and find new clients.",
+            "Offer a 'Continuous Improvement' package that addresses ongoing needs.",
+            "Demand they sign a five-year contract immediately.",
+            "Lower your prices to the minimum possible."
+          ],
+          "correctIndex": 1,
+          "explanation": "Offering ongoing value through maintenance or improvement packages makes it easy for the client to say yes to a recurring arrangement."
+        }
+      ]
+    },
+    {
+      "id": "ash-16-ai-marketing-autopilot",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "AI Marketing on Autopilot",
+      "subtitle": "Automated lead generation that works while you sleep",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Market Once, Reach Thousands",
+          "body": "Marketing shouldn't take all day. By using AI to build a 'flywheel' — a system where your content attracts leads and funnels them towards your services — you can automate your growth.",
+          "stat": "60%",
+          "statLabel": "Average time saved by using AI for content creation"
+        },
+        {
+          "type": "content",
+          "headline": "The Content Flywheel",
+          "body": "Use AI to repurpose one core piece of content into multiple formats. This keeps your social media and blog active without writing every post from scratch.",
+          "bullets": [
+            "Turn a long-form blog post into 10 social media posts.",
+            "Use AI to schedule posts across all platforms automatically.",
+            "Focus on high-value, problem-solving content that attracts ideal clients."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Nurture Funnels That Convert",
+          "body": "An email sequence is your silent salesperson. Use AI to write a series of nurture emails that educate subscribers and guide them toward booking a call or purchasing.",
+          "bullets": [
+            "Create a lead magnet (free guide, checklist) to capture email addresses.",
+            "Automate a 5-part 'welcome' sequence that builds trust over 7 days.",
+            "Use AI to personalise email content based on subscriber interests."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Measure What Matters",
+          "body": "Don't guess — use simple analytics to track which content drives the most enquiries. Focus your energy on what works and discard what doesn't.",
+          "bullets": [
+            "Track click-through rates on emails (aim for 3%+ CTR).",
+            "Monitor engagement rates on social posts (comments > likes).",
+            "Refine your lead magnets based on download numbers and feedback."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Lead Magnet",
+          "body": "Use ChatGPT to brainstorm a 'Problem-Solving Checklist' or 'Mini-Guide' to offer in exchange for email addresses.",
+          "bullets": [
+            "Identify a specific problem your ideal client faces daily.",
+            "Use AI to outline a 2-page PDF solution (checklist or framework).",
+            "Draft a social post promoting this free resource with a clear CTA."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of a 'content flywheel'?",
+          "type": "mcq",
+          "options": [
+            "To create more work for yourself.",
+            "To repurpose one piece of content for maximum reach across platforms.",
+            "To avoid social media entirely.",
+            "To post the exact same content everywhere without modification."
+          ],
+          "correctIndex": 1,
+          "explanation": "The flywheel effect comes from taking one core concept and spinning it into multiple formats, saving time while increasing exposure."
+        },
+        {
+          "question": "An email nurture sequence is designed to sell your product instantly on the first interaction.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Nurture sequences are designed to build trust and educate the lead over time before making a final offer."
+        },
+        {
+          "question": "Why should you use analytics in your marketing?",
+          "type": "mcq",
+          "options": [
+            "To make your reports look impressive.",
+            "To identify what content actually brings in leads and double down on it.",
+            "To prove you are working hard.",
+            "Analytics are not necessary for small businesses."
+          ],
+          "correctIndex": 1,
+          "explanation": "Analytics help you stop wasting time on marketing that doesn't work and focus on the strategies that actually gain traction."
+        }
+      ]
+    },
+    {
+      "id": "ash-17-client-pipeline",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Build a Client Pipeline",
+      "subtitle": "Never run out of work again",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "End the Feast-or-Famine Cycle",
+          "body": "Most freelancers struggle because they only look for work when they have none. A client pipeline ensures you always have prospects at different stages of your sales process.",
+          "stat": "80%",
+          "statLabel": "of successful freelancers use a systematic outreach habit"
+        },
+        {
+          "type": "content",
+          "headline": "The Sales Pipeline Stages",
+          "body": "Your pipeline is a journey. You need people in every stage to maintain consistent income:",
+          "bullets": [
+            "Awareness: They know you exist (social media, content, referrals).",
+            "Interest: They want your help (visited your page, replied to a message).",
+            "Conversion: They sign the contract (proposal sent, deal closed)."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Leverage Social Proof",
+          "body": "Testimonials are your best asset. When you finish a project, be proactive in asking for a review. Use these in your outreach to build instant trust.",
+          "bullets": [
+            "Ask for video or written feedback within 24 hours of delivery.",
+            "Showcase results and outcomes, not just tasks completed.",
+            "Turn testimonials into 'case studies' that tell a story."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'Daily 10' Rule",
+          "body": "Adopt the 'Daily 10' rule: send 10 personalised messages or connection requests every single working day. This simple habit keeps your pipeline full, regardless of market conditions.",
+          "bullets": [
+            "10 new connections on LinkedIn (targeted to your ideal client).",
+            "10 follow-ups with past leads who went quiet.",
+            "10 minutes of genuine engagement on others' posts (visibility)."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Pipeline Tracker",
+          "body": "Create a simple spreadsheet or use a free CRM tool to track your outreach efforts.",
+          "bullets": [
+            "List 5 past clients or contacts to check in with this week.",
+            "List 5 new prospects to approach with a personalised message.",
+            "Log your daily progress for one full week to build the habit."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 'Daily 10' rule?",
+          "type": "mcq",
+          "options": [
+            "Working 10 hours a day without breaks.",
+            "Sending 10 personalised outreach messages every working day.",
+            "Taking 10 breaks per day for mental health.",
+            "Charging a minimum of £10 per hour."
+          ],
+          "correctIndex": 1,
+          "explanation": "The Daily 10 is a habit of contacting 10 people daily to ensure your sales pipeline never goes dry."
+        },
+        {
+          "question": "Testimonials are only valuable if they come from large, well-known companies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Any positive feedback that demonstrates the value you provided is excellent social proof, regardless of the client's size."
+        },
+        {
+          "question": "Why does the 'feast-or-famine' cycle happen for freelancers?",
+          "type": "mcq",
+          "options": [
+            "Because there are too many clients available.",
+            "Because freelancers stop marketing when they are busy with projects.",
+            "Because AI is too competitive.",
+            "Because clients only hire in certain seasons."
+          ],
+          "correctIndex": 1,
+          "explanation": "Feast-or-famine happens when you stop filling your pipeline while working on current projects, leading to a gap once the project concludes."
+        }
+      ]
+    },
+    {
+      "id": "ash-18-stack-income-streams",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "Stack Multiple Income Streams",
+      "subtitle": "Combine models for financial stability",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Betting on One Horse",
+          "body": "Relying on a single income stream is the fastest way to hit a financial ceiling. By stacking complementary streams, you build a resilient business that thrives even if one source dips.",
+          "stat": "75%",
+          "statLabel": "of self-made millionaires have at least three income streams"
+        },
+        {
+          "type": "content",
+          "headline": "Why Diversification Matters",
+          "body": "Sticking to one model limits your reach and security. Diversification isn't about doing more work; it's about creating interconnected systems that feed each other.",
+          "bullets": [
+            "Protects you from platform changes or market shifts.",
+            "Smooths out seasonal income fluctuations.",
+            "Increases your overall brand authority."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Layering",
+          "body": "Don't sprint into five business models. Start with a core service and layer on 'passive' assets that solve the same problem for your audience.",
+          "bullets": [
+            "Freelancing + Digital Products: Sell templates of your work.",
+            "Content + Affiliate: Recommend tools you use daily.",
+            "Consulting + Courses: Scale your advice into a curriculum."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Avoiding the Burnout Trap",
+          "body": "The secret to stacking is leverage. Use AI and automation to handle the repetitive heavy lifting so your new streams don't require 2× the time.",
+          "bullets": [
+            "Master one stream before launching the next.",
+            "Use AI to repurpose content across platforms.",
+            "Focus on systems that run while you sleep."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your Next Layer",
+          "body": "Look at your current AI side hustle and identify a complementary asset you could build this week.",
+          "bullets": [
+            "Write down your current primary income source.",
+            "Brainstorm one 'low-effort' product (e.g., a checklist or guide).",
+            "Draft a 30-minute plan to create it using AI."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of stacking income streams?",
+          "type": "mcq",
+          "options": [
+            "To work more hours every week.",
+            "To build financial resilience and stability.",
+            "To pay more taxes.",
+            "To avoid learning new skills."
+          ],
+          "correctIndex": 1,
+          "explanation": "Stacking streams protects you from market volatility and platform changes, creating a more stable income."
+        },
+        {
+          "question": "You should launch multiple income streams simultaneously from day one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "It is better to master one stream and build a foundation before adding complexity to avoid burnout."
+        },
+        {
+          "question": "Which combination is a classic example of income stacking?",
+          "type": "mcq",
+          "options": [
+            "Freelancing and selling templates of your work.",
+            "Cleaning houses and coding simultaneously.",
+            "Writing books and driving a taxi.",
+            "Working two full-time jobs."
+          ],
+          "correctIndex": 0,
+          "explanation": "Freelancing provides cash flow, while selling templates of your work creates a scalable digital asset from the same expertise."
+        }
+      ]
+    },
+    {
+      "id": "ash-19-outsource-delegate",
+      "dayNumber": 19,
+      "moduleId": "module-3",
+      "title": "Outsource & Delegate with AI",
+      "subtitle": "Scale without burning out",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Are Not Your Business",
+          "body": "If your business collapses when you stop working, you don't have a business; you have a job. It is time to move from being the 'doer' to the 'director'.",
+          "stat": "40%",
+          "statLabel": "of small business owners report burnout as their biggest growth hurdle"
+        },
+        {
+          "type": "content",
+          "headline": "The AI-First Mentality",
+          "body": "Before hiring a human, hire an AI. Use LLMs to automate tasks that don't require human intuition, such as drafting emails, scheduling, or basic research.",
+          "bullets": [
+            "Use AI to draft Standard Operating Procedures (SOPs).",
+            "Automate repetitive admin tasks with Zapier + AI.",
+            "Free up your time for high-value strategic work."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Delegate First",
+          "body": "Don't delegate your core value proposition. Delegate the tasks that drain your energy and don't directly generate revenue.",
+          "bullets": [
+            "Inbox management and appointment setting.",
+            "Repetitive social media scheduling.",
+            "Data entry and basic research tasks."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your SOP Library",
+          "body": "Delegation fails without clear instructions. Create simple SOPs so that anyone — AI or human — can replicate your process.",
+          "bullets": [
+            "Record a screen-share video of you doing the task.",
+            "Use AI to convert the transcript into a written guide.",
+            "Keep instructions short, visual, and step-by-step."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Delegate' Audit",
+          "body": "Review your tasks from the last three days and find one process to outsource.",
+          "bullets": [
+            "List every task you performed this week.",
+            "Circle the ones that feel repetitive or administrative.",
+            "Write a prompt for ChatGPT to turn that task into an SOP."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should be your 'first' virtual team member?",
+          "type": "mcq",
+          "options": [
+            "A full-time employee.",
+            "An AI-powered tool.",
+            "Your family members.",
+            "An expensive consultant."
+          ],
+          "correctIndex": 1,
+          "explanation": "AI is the most cost-effective way to start delegating repetitive tasks before hiring human help."
+        },
+        {
+          "question": "You should delegate your core value proposition first.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always delegate the 'busy work' first, keeping the core value proposition (what you are best at) in your hands."
+        },
+        {
+          "question": "What is the purpose of an SOP?",
+          "type": "mcq",
+          "options": [
+            "To confuse employees.",
+            "To ensure consistency and scalability in your processes.",
+            "To increase operational costs.",
+            "To replace all human workers immediately."
+          ],
+          "correctIndex": 1,
+          "explanation": "SOPs ensure that tasks are performed correctly and consistently, allowing others to take over the work."
+        }
+      ]
+    },
+    {
+      "id": "ash-20-5k-month-roadmap",
+      "dayNumber": 20,
+      "moduleId": "module-3",
+      "title": "The £5K/Month Roadmap",
+      "subtitle": "Realistic milestones and targets",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The £5K Math is Simpler Than You Think",
+          "body": "Most people stay stuck because they view £5,000 as a giant mountain. When you break it down into units, it becomes a simple game of math.",
+          "stat": "£166",
+          "statLabel": "is all you need to earn daily to hit £5K/month"
+        },
+        {
+          "type": "content",
+          "headline": "Breaking Down the Numbers",
+          "body": "To hit £5K, you need to choose a path that fits your current capacity. You don't need thousands of customers; you need a focused offer.",
+          "bullets": [
+            "High-ticket: 5 clients at £1,000 each.",
+            "Mid-ticket: 10 clients at £500 each.",
+            "Volume: 100 units at £50 each."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Milestone Approach",
+          "body": "Don't try to jump from £0 to £5K overnight. Use a phased roadmap to build confidence and systems simultaneously.",
+          "bullets": [
+            "Month 1: £500 (Validation phase — prove people will pay).",
+            "Month 3: £2,000 (Systematisation phase — build repeatable processes).",
+            "Month 6: £5,000 (Scaling phase — automate and grow)."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Navigating Plateaus",
+          "body": "You will hit plateaus where growth feels slow. This is normal. It usually means your current 'system' has hit its capacity limit.",
+          "bullets": [
+            "Audit your conversion rates when growth stalls.",
+            "Increase your pricing if you are over-booked.",
+            "Automate or outsource the bottleneck task."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Calculate Your £5K Path",
+          "body": "Choose your preferred business model and calculate your personal targets.",
+          "bullets": [
+            "Select your pricing tier (Low, Mid, or High-ticket).",
+            "Calculate exactly how many sales you need per month.",
+            "Write this number on a sticky note and put it on your monitor."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is a valid way to reach £5,000 monthly?",
+          "type": "mcq",
+          "options": [
+            "100 sales at £50 each.",
+            "1,000 sales at £1 each.",
+            "1 sale at £100.",
+            "500 sales at £5 each."
+          ],
+          "correctIndex": 0,
+          "explanation": "100 units multiplied by £50 equals £5,000. This is a common path for digital product sellers."
+        },
+        {
+          "question": "It is normal to experience a plateau while scaling your income.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plateaus are a natural part of growth, signalling that your current processes need to be upgraded or automated."
+        },
+        {
+          "question": "What should be the focus in Month 1 of your roadmap?",
+          "type": "mcq",
+          "options": [
+            "Reaching £10,000 immediately.",
+            "Hiring a team of 10 people.",
+            "Validating the offer and hitting £500.",
+            "Creating complex software from scratch."
+          ],
+          "correctIndex": 2,
+          "explanation": "Month 1 is for validation — ensuring people actually want to pay for what you are offering."
+        }
+      ]
+    },
+    {
+      "id": "ash-21-ninety-day-growth-plan",
+      "dayNumber": 21,
+      "moduleId": "module-3",
+      "title": "Your 90-Day Growth Plan",
+      "subtitle": "Long-term scaling strategy for consistent income",
+      "duration": "5 min",
+      "xpValue": 150,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Think in Quarters, Not Days",
+          "body": "Daily tasks are for execution, but 90-day plans are for growth. By locking in a quarterly strategy, you stop chasing shiny objects and start building momentum.",
+          "stat": "90",
+          "statLabel": "days is the 'sweet spot' for testing a new business strategy"
+        },
+        {
+          "type": "content",
+          "headline": "The Quarterly Roadmap",
+          "body": "Divide your next 90 days into three clear phases. This structure keeps you focused and prevents overwhelm.",
+          "bullets": [
+            "Weeks 1–4 (Foundation): Build the offer and set up systems.",
+            "Weeks 5–8 (Growth): Drive traffic and start selling.",
+            "Weeks 9–12 (Scale): Optimise, automate, and increase prices."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tracking What Matters",
+          "body": "What gets measured gets managed. Stop tracking 'vanity metrics' like likes and focus on 'business metrics'.",
+          "bullets": [
+            "Conversion rate of landing pages.",
+            "Cost per lead or customer acquisition cost.",
+            "Monthly recurring revenue (MRR)."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pivot Point",
+          "body": "At the end of every 30 days, review your progress. If something isn't working, don't quit — pivot based on your data.",
+          "bullets": [
+            "Look at the data: Where are people dropping off?",
+            "Adjust your messaging or target audience.",
+            "Celebrate the small wins to keep your energy high."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your 90-Day Vision",
+          "body": "Write down your primary goal for the next 90 days using the roadmap structure.",
+          "bullets": [
+            "Define your one 'Big Goal' for the quarter.",
+            "Assign one focus area for each of the three months.",
+            "Set a date for your first monthly review."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the focus of the first 4 weeks in a 90-day plan?",
+          "type": "mcq",
+          "options": [
+            "Scaling to millions.",
+            "Foundation — building your offer and setting up systems.",
+            "Retiring from all other work.",
+            "Hiring a large team immediately."
+          ],
+          "correctIndex": 1,
+          "explanation": "The first month is dedicated to building your offer and setting up the systems needed for growth."
+        },
+        {
+          "question": "You should track vanity metrics like 'likes' to measure business growth.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vanity metrics look good but don't pay the bills. Focus on conversion rates and revenue."
+        },
+        {
+          "question": "How often should you review your progress during a 90-day plan?",
+          "type": "mcq",
+          "options": [
+            "Every single day.",
+            "Every 30 days.",
+            "Once a year.",
+            "Never — just stick to the original plan."
+          ],
+          "correctIndex": 1,
+          "explanation": "A 30-day review cycle is ideal for identifying what's working and making necessary pivots without constant disruption."
+        }
+      ]
+    }
+  ]
+}

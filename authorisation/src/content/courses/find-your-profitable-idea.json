@@ -1,0 +1,1747 @@
+{
+  "id": "find-your-profitable-idea",
+  "title": "Find Your Profitable Idea",
+  "subtitle": "Stop guessing and start validating. Learn to test business ideas with real people before you invest time or money building the wrong thing.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "fypi-module-1",
+      "moduleNumber": 1,
+      "title": "Talk to Humans",
+      "subtitle": "Learn how to have conversations that reveal truth, not flattery. Master the art of asking questions that people can't lie to you about.",
+      "days": "Lessons 1–7",
+      "skill": "Extract honest insights from potential customers without biasing their answers",
+      "lessonIds": [
+        "fypi-1-why-ideas-fail",
+        "fypi-2-mom-test",
+        "fypi-3-good-vs-bad-questions",
+        "fypi-4-finding-people",
+        "fypi-5-discovery-call",
+        "fypi-6-reading-between-lines",
+        "fypi-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "fypi-module-2",
+      "moduleNumber": 2,
+      "title": "Test Before You Build",
+      "subtitle": "Validate demand without writing code or spending months. Use pretotyping and rapid experiments to learn if people will actually pay.",
+      "days": "Lessons 8–14",
+      "skill": "Design and run cheap, fast experiments that prove or disprove demand",
+      "lessonIds": [
+        "fypi-8-right-it",
+        "fypi-9-pretotyping",
+        "fypi-10-xyz-hypothesis",
+        "fypi-11-skin-in-game",
+        "fypi-12-landing-page",
+        "fypi-13-concierge-wizard",
+        "fypi-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "fypi-module-3",
+      "moduleNumber": 3,
+      "title": "From Signal to Decision",
+      "subtitle": "Interpret your data and make a confident go/no-go decision. Learn when to pivot, when to persist, and when to walk away.",
+      "days": "Lessons 15–21",
+      "skill": "Interpret validation data and make confident kill/pivot/continue decisions",
+      "lessonIds": [
+        "fypi-15-what-counts",
+        "fypi-16-false-positives",
+        "fypi-17-pivoting",
+        "fypi-18-stacking-evidence",
+        "fypi-19-idea-scorecard",
+        "fypi-20-kill-pivot-double",
+        "fypi-21-module-3-checkpoint"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "fypi-1-why-ideas-fail",
+      "dayNumber": 1,
+      "moduleId": "fypi-module-1",
+      "title": "Why Most Ideas Fail Before Launch",
+      "subtitle": "The #1 reason businesses die isn't competition or funding — it's building something nobody wants.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The $30 Billion Graveyard",
+          "body": "CB Insights analysed 101 startup post-mortems. The #1 cause of failure? \"No market need\" — 42% of startups built something nobody wanted. Not bad code. Not strong competitors. Not running out of money. They spent months (sometimes years) building the wrong thing because they never validated the idea first.",
+          "stat": "42%",
+          "statLabel": "of startups fail because there's no market need"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Build It and They Will Come\" Delusion",
+          "body": "Most first-time founders follow this path: get excited about an idea → spend months building it → launch to silence → wonder what went wrong. The problem isn't execution — it's sequence. They built before they validated. This course teaches you to flip that order."
+        },
+        {
+          "type": "content",
+          "headline": "Why Smart People Build Dumb Things",
+          "body": "Intelligence makes this worse, not better. Smart people are excellent at rationalising why their idea is brilliant. They construct logical arguments, find supporting evidence, and dismiss doubts. But logic without data is just sophisticated guessing. The market doesn't care how clever your reasoning is.",
+          "bullets": [
+            "Confirmation bias — we see evidence that supports our idea",
+            "Sunk cost — the more time invested, the harder to abandon",
+            "Social proof — friends saying \"great idea!\" isn't validation",
+            "Planning fallacy — we underestimate difficulty and overestimate demand"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Validation-First Approach",
+          "body": "The antidote is simple (but uncomfortable): talk to real people before building anything. Not to pitch your idea — but to understand their problems. The Mom Test, The Right It, and Testing Business Ideas all converge on this: evidence from the real world beats opinions from your head."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Idea Autopsy",
+          "body": "Think of an idea you've had in the past (or one you have now). Ask yourself: \"What evidence do I have that real people would pay for this?\" If your only evidence is friends saying \"that sounds cool\" or your own logical reasoning — you're in the danger zone. Write down what you DON'T know about your potential customers."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to CB Insights, what is the #1 reason startups fail?",
+          "type": "mcq",
+          "options": [
+            "Running out of funding",
+            "No market need — building something nobody wants",
+            "Too much competition",
+            "Bad team dynamics"
+          ],
+          "correctIndex": 1,
+          "explanation": "42% of startups fail because there's no market need. Validation before building is the single biggest risk-reducer."
+        },
+        {
+          "question": "Friends saying \"great idea!\" counts as meaningful validation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social support feels validating but isn't. Friends are biased — they want to be encouraging. Real validation requires evidence from people who would actually pay."
+        },
+        {
+          "question": "What does the \"validation-first\" approach prioritise?",
+          "type": "mcq",
+          "options": [
+            "Building a perfect product before talking to anyone",
+            "Understanding real problems through customer conversations before building",
+            "Getting investor approval first",
+            "Writing a detailed business plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "Validation-first means talking to real people to understand their problems before building any solution. Evidence from the real world beats opinions from your head."
+        }
+      ]
+    },
+    {
+      "id": "fypi-2-mom-test",
+      "dayNumber": 2,
+      "moduleId": "fypi-module-1",
+      "title": "The Mom Test — Questions That Don't Lie",
+      "subtitle": "The core principle: ask questions so good that even your mum can't lie to you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Mum Will Always Lie to You",
+          "body": "If you ask your mum \"Do you think my app idea is good?\" she'll say yes. She loves you. She wants to be supportive. And she's just given you completely worthless data. The Mom Test isn't about who you talk to — it's about asking questions that make it impossible for people to give you false positives."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Rules of The Mom Test",
+          "body": "Rob Fitzpatrick's framework boils down to three rules that transform how you gather information:",
+          "bullets": [
+            "Talk about THEIR life, not YOUR idea — focus on past behaviour and real problems",
+            "Ask about specifics, not hypotheticals — \"Last time this happened...\" not \"Would you ever...\"",
+            "Talk less, listen more — you should be speaking <20% of the conversation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why This Works",
+          "body": "People can't lie about what they've already done. If someone says \"I tried 3 different tools last month to solve this problem\" — that's real. If they say \"Yeah, I'd probably use something like that\" — that's a polite non-commitment. The Mom Test forces conversations toward concrete, historical facts rather than speculative futures."
+        },
+        {
+          "type": "content",
+          "headline": "The Golden Output",
+          "body": "A good Mom Test conversation gives you: 1) Evidence of a real problem (they've tried to solve it before). 2) The emotional weight of the problem (how much it bothers them). 3) Their current workaround (what they do today). 4) How much they've already spent trying to fix it. None of this requires mentioning your idea."
+        },
+        {
+          "type": "try-it",
+          "headline": "Rewrite Your Pitch as Questions",
+          "body": "Take your business idea and write 3 questions you'd normally ask (\"Would you use X?\" \"Do you think Y is a good idea?\"). Now rewrite each one using The Mom Test rules: make them about the other person's past behaviour, not your future product. Example: \"Would you use a meal planning app?\" becomes \"Walk me through how you decided what to eat last week.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three rules of The Mom Test?",
+          "type": "mcq",
+          "options": [
+            "Ask about their life (not your idea), ask about specifics (not hypotheticals), listen more than you talk",
+            "Pitch confidently, handle objections, close the sale",
+            "Only talk to strangers, never reveal your idea, always record the conversation",
+            "Ask yes/no questions, keep it short, follow up by email"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Mom Test's three rules ensure you get honest data: focus on their life, ask about specifics, and talk less than 20% of the time."
+        },
+        {
+          "question": "\"Would you use an app that does X?\" is a good Mom Test question.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "This asks about a hypothetical future, which invites polite, non-committal answers. A better question asks about past behaviour: \"How do you currently handle X?\""
+        },
+        {
+          "question": "Why can't people lie about what they've already done?",
+          "type": "mcq",
+          "options": [
+            "Because lying is illegal",
+            "Because past behaviour is concrete and verifiable, unlike speculative intentions",
+            "Because you're recording them",
+            "Because strangers are always honest"
+          ],
+          "correctIndex": 1,
+          "explanation": "Past behaviour is factual — it already happened. Future intentions are easy to fabricate or exaggerate because they carry no real commitment."
+        }
+      ]
+    },
+    {
+      "id": "fypi-3-good-vs-bad-questions",
+      "dayNumber": 3,
+      "moduleId": "fypi-module-1",
+      "title": "Good Questions vs Bad Questions",
+      "subtitle": "A practical guide to the questions that reveal truth — and the ones that just make you feel good.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Bad Question Can Ruin an Entire Conversation",
+          "body": "The moment you ask \"Don't you think it would be great if...?\" you've switched from learning mode to pitching mode. The person across from you is now managing your feelings, not sharing their truth. One leading question poisons everything that follows. Good conversations require good questions from the start."
+        },
+        {
+          "type": "content",
+          "headline": "The Bad Questions Hall of Shame",
+          "body": "These feel productive but give you nothing:",
+          "bullets": [
+            "\"Do you think this is a good idea?\" — They'll say yes to be nice",
+            "\"Would you buy this?\" — Hypothetical commitments are worthless",
+            "\"How much would you pay for X?\" — People wildly overestimate",
+            "\"Don't you hate when [problem]?\" — Leading question, leading answer",
+            "\"Would you use this if it had [feature]?\" — Fantasy shopping"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Good Questions Arsenal",
+          "body": "Questions that reliably surface truth:",
+          "bullets": [
+            "\"What's the hardest part about [doing the thing]?\" — Opens up real pain",
+            "\"Tell me about the last time that happened...\" — Specific, recent, factual",
+            "\"What have you tried so far?\" — Reveals commitment level",
+            "\"Why was that hard?\" — Digs into emotional weight",
+            "\"What would a perfect solution look like?\" — Their words, not yours"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Follow-Up That Changes Everything",
+          "body": "The most powerful question isn't on any list. It's simply: \"Can you tell me more about that?\" When someone mentions a problem, don't jump to your solution. Go deeper. Ask \"why?\" again. The real insight is usually two or three layers below the surface answer. Silence works too — people fill uncomfortable pauses with truth."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Question Kit",
+          "body": "Write 5 questions you want to ask about your business idea. For each one, classify it: Bad (hypothetical/leading/opinion-seeking) or Good (specific/behavioural/past-tense). Rewrite any bad ones using the arsenal above. Your goal: have 5 solid questions ready before your first real conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is \"Would you buy this?\" a bad validation question?",
+          "type": "mcq",
+          "options": [
+            "Because it's too short",
+            "Because hypothetical commitments are worthless — people say yes without actually committing",
+            "Because you should never mention buying",
+            "Because people get offended"
+          ],
+          "correctIndex": 1,
+          "explanation": "Saying \"I would buy that\" costs nothing. Until someone actually reaches for their wallet, stated intentions are unreliable. Ask about past behaviour instead."
+        },
+        {
+          "question": "\"Tell me about the last time that happened\" is a good Mom Test question because it asks about a specific past event.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This question anchors the conversation to a real, specific experience. People can't easily fabricate detailed accounts of things that never happened."
+        },
+        {
+          "question": "What is the most powerful follow-up technique during a discovery conversation?",
+          "type": "mcq",
+          "options": [
+            "Immediately pitch your solution",
+            "Ask \"Can you tell me more about that?\" and dig deeper",
+            "Change the subject to your idea",
+            "End the conversation quickly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Going deeper with \"tell me more\" reveals the real insight, which is usually 2-3 layers below the surface answer. Don't rush to solutions."
+        }
+      ]
+    },
+    {
+      "id": "fypi-4-finding-people",
+      "dayNumber": 4,
+      "moduleId": "fypi-module-1",
+      "title": "Finding the Right People to Talk To",
+      "subtitle": "Talking to the wrong people is worse than talking to no one. Here's how to find people who actually matter.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Five Conversations With the Wrong People = Zero Insight",
+          "body": "You could follow The Mom Test perfectly and still learn nothing — if you're talking to the wrong people. Your neighbour doesn't validate a B2B accounting tool. Your university friends don't represent busy parents. The who matters as much as the how."
+        },
+        {
+          "type": "content",
+          "headline": "Define Your \"Earlyvangelists\"",
+          "body": "You're not looking for average people. You're looking for earlyvangelists — people who: 1) Have the problem you're solving. 2) Know they have the problem. 3) Are actively looking for a solution. 4) Have cobbled together a makeshift fix. 5) Have budget to pay for something better. These five criteria filter out polite but useless conversations fast."
+        },
+        {
+          "type": "content",
+          "headline": "Where to Find Them",
+          "body": "Earlyvangelists congregate where problems get discussed:",
+          "bullets": [
+            "Reddit/forums — search \"[your topic] + frustrated/help/recommendation\"",
+            "Facebook/LinkedIn groups — niche communities around the problem space",
+            "Review sites — people leaving 2-3 star reviews of existing solutions",
+            "Events & meetups — in-person groups focused on the domain",
+            "Your existing network — ask \"who do you know who struggles with X?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Warm Intro Formula",
+          "body": "Cold outreach works but warm intros work 5x better. Use this script with your network: \"Hey [name], I'm researching how [target group] handles [problem area]. Do you know anyone who might be open to a quick 15-min chat? Not selling anything — purely learning.\" This is honest, low-pressure, and surprisingly effective."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your First 5 Conversations",
+          "body": "Write down: 1) Who specifically has the problem you're solving? (Be narrow — \"busy mums with toddlers\" not \"parents\"). 2) Where do they already gather online? (Name 2-3 specific places). 3) Who in your network might know someone? (Name 3 people to ask). Your goal: identify 5 real people you could talk to this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes someone an \"earlyvangelist\"?",
+          "type": "mcq",
+          "options": [
+            "They're enthusiastic about technology",
+            "They have the problem, know it, are seeking solutions, have a workaround, and have budget",
+            "They're friends and family who support you",
+            "They have a large social media following"
+          ],
+          "correctIndex": 1,
+          "explanation": "Earlyvangelists tick all five boxes: they have the problem, they're aware of it, they're looking for solutions, they've tried workarounds, and they have budget. These are your ideal first conversations."
+        },
+        {
+          "question": "Talking to the wrong people is worse than talking to no one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Wrong-audience conversations give false confidence. You might hear \"great idea!\" from people who'd never buy, leading you to build something for a market that doesn't exist."
+        },
+        {
+          "question": "Which is the best place to find earlyvangelists online?",
+          "type": "mcq",
+          "options": [
+            "Random hashtags on Instagram",
+            "Niche communities and forums where people discuss the specific problem",
+            "Generic business websites",
+            "Your personal social media feed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Earlyvangelists congregate where problems get discussed — niche forums, specific subreddits, and focused groups where people actively seek solutions."
+        }
+      ]
+    },
+    {
+      "id": "fypi-5-discovery-call",
+      "dayNumber": 5,
+      "moduleId": "fypi-module-1",
+      "title": "Running a 15-Minute Discovery Call",
+      "subtitle": "The exact structure for a short conversation that gives you more insight than a 100-page survey.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "15 Minutes Is All You Need",
+          "body": "You don't need hour-long interviews. The best discovery conversations are 15 minutes — short enough that busy people say yes, long enough to go deep on one problem. Five of these will teach you more than months of desk research.",
+          "stat": "15",
+          "statLabel": "minutes is enough for a powerful discovery conversation"
+        },
+        {
+          "type": "content",
+          "headline": "The 4-Part Structure",
+          "body": "Every discovery call follows the same skeleton:",
+          "bullets": [
+            "Open (2 min) — thank them, set context (\"I'm exploring how people handle X\"), no pitching",
+            "Their story (8 min) — \"Walk me through the last time you dealt with [problem]...\"",
+            "Go deeper (4 min) — follow the emotion: \"Why was that frustrating?\" \"What did you try?\"",
+            "Close (1 min) — \"Is there anyone else I should talk to?\" + thank them"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Critical Mistakes to Avoid",
+          "body": "The most common call-killers: 1) Pitching your solution — the second you pitch, they switch to \"being polite\" mode. 2) Asking about the future — \"Would you use...?\" gives you fantasy, not facts. 3) Talking too much — if you're speaking more than 20%, you're not learning. 4) Seeking compliments — \"Don't you think X is a problem?\" is a leading question."
+        },
+        {
+          "type": "content",
+          "headline": "Note-Taking That Actually Works",
+          "body": "After the call (not during — you need eye contact), write down: 1) Direct quotes — their exact words about the problem. 2) Emotional cues — what made them frustrated, excited, or resigned. 3) Existing solutions — what they currently use and what they pay. 4) Surprising moments — anything you didn't expect. These become your validation goldmine."
+        },
+        {
+          "type": "try-it",
+          "headline": "Script Your First Call",
+          "body": "Using the 4-part structure, write your actual opening line, your first 3 questions, and your closing. Keep it natural — not robotic. Then ask one person this week if they'd spare 15 minutes for a quick chat about [their problem area]. You'll be shocked how often people say yes when there's no selling involved."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four parts of a discovery call?",
+          "type": "mcq",
+          "options": [
+            "Pitch, demo, objection handling, close",
+            "Open (context), their story, go deeper, close (ask for referrals)",
+            "Introduction, survey questions, feedback, sign-up",
+            "Greeting, feature list, pricing, follow-up"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 4-part structure: set context (2 min), hear their story (8 min), dig deeper (4 min), close with referral request (1 min). No pitching."
+        },
+        {
+          "question": "During a discovery call, you should speak less than 20% of the time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "If you're talking more than 20%, you're pitching, not learning. The goal is to listen and understand their world, not convince them of yours."
+        },
+        {
+          "question": "When should you take notes during a discovery call?",
+          "type": "mcq",
+          "options": [
+            "During the call with a laptop open",
+            "After the call — so you can maintain eye contact and rapport during",
+            "Never — just rely on memory",
+            "Only if they say something you disagree with"
+          ],
+          "correctIndex": 1,
+          "explanation": "Taking notes after the call preserves rapport and lets you be fully present. Write down direct quotes, emotional cues, existing solutions, and surprises."
+        }
+      ]
+    },
+    {
+      "id": "fypi-6-reading-between-lines",
+      "dayNumber": 6,
+      "moduleId": "fypi-module-1",
+      "title": "Reading Between the Lines",
+      "subtitle": "What people don't say is often more important than what they do. Learn to spot the hidden signals.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Compliment Trap",
+          "body": "\"That sounds really interesting!\" feels like validation. It isn't. It's what polite people say when they have nothing useful to add. The biggest danger in customer conversations isn't hearing \"no\" — it's hearing \"sounds great!\" and mistaking social pleasantry for purchase intent."
+        },
+        {
+          "type": "content",
+          "headline": "Strong vs Weak Signals",
+          "body": "Learn to rank what you hear:",
+          "bullets": [
+            "STRONG: \"I searched for X last week and couldn't find anything\" (active pain)",
+            "STRONG: \"I currently pay £50/month for a bad solution\" (money in motion)",
+            "WEAK: \"Yeah, that could be useful\" (polite non-commitment)",
+            "WEAK: \"I'd definitely check it out\" (zero skin in the game)",
+            "RED FLAG: \"Sounds cool, let me know when it's ready\" (they're dismissing you politely)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Commitment Test",
+          "body": "Real interest always comes with commitment. If someone truly cares about the problem, they'll commit something: time (agreeing to a follow-up call), reputation (introducing you to others with the same problem), or money (pre-ordering, putting down a deposit). Enthusiasm without commitment is just noise."
+        },
+        {
+          "type": "content",
+          "headline": "Body Language & Energy Cues",
+          "body": "Watch for energy shifts: leaning forward, speaking faster, or volunteering extra detail means you've hit a nerve. Leaning back, short answers, or \"yeah, I guess\" means you've missed the mark. Also notice: do they bring the topic back themselves? Unsolicited return to a topic = real pain."
+        },
+        {
+          "type": "try-it",
+          "headline": "Signal Audit",
+          "body": "Think about the last time someone said your idea \"sounded great.\" Did they: 1) Ask specific follow-up questions? 2) Offer to introduce you to someone? 3) Ask when it would be available? 4) Volunteer their own frustrations with the problem? If none of the above — it was a weak signal. Start filtering your conversations through this lens."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"That sounds really interesting!\" typically indicate?",
+          "type": "mcq",
+          "options": [
+            "Strong purchase intent",
+            "A polite non-commitment — social pleasantry, not validation",
+            "They want to invest in your company",
+            "You should build the product immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Sounds interesting\" is what people say to be nice. Real validation comes with commitment — time, reputation, or money."
+        },
+        {
+          "question": "\"I currently pay £50/month for a bad solution\" is a strong validation signal.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Money already in motion is one of the strongest signals. If someone is paying for an imperfect solution, they have proven willingness to pay — you just need to offer something better."
+        },
+        {
+          "question": "What is the \"commitment test\" for separating real interest from politeness?",
+          "type": "mcq",
+          "options": [
+            "Ask them to sign a contract",
+            "Check if they'll commit time, reputation, or money",
+            "Count how many times they say \"sounds good\"",
+            "See if they smile during the conversation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Real interest always comes with commitment: agreeing to a follow-up (time), making introductions (reputation), or pre-ordering (money). Enthusiasm alone means nothing."
+        }
+      ]
+    },
+    {
+      "id": "fypi-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "fypi-module-1",
+      "title": "Your First 5 Conversations",
+      "subtitle": "Consolidate everything from Module 1 into a practical action plan for your first real discovery conversations.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Knowledge Without Conversations = Nothing",
+          "body": "You now know more about customer discovery than 95% of first-time founders. But frameworks in your head don't validate ideas — conversations do. This checkpoint exists to bridge the gap between \"knowing The Mom Test\" and \"having done The Mom Test.\" The difference is everything."
+        },
+        {
+          "type": "content",
+          "headline": "Module 1 Recap",
+          "body": "What you've mastered this week:",
+          "bullets": [
+            "Why 42% of startups die from \"no market need\" (and how to avoid it)",
+            "The Mom Test: talk about their life, ask specifics, listen more",
+            "Good questions (past/specific) vs bad questions (hypothetical/leading)",
+            "Finding earlyvangelists who actually have the problem + budget",
+            "The 4-part 15-minute discovery call structure",
+            "Reading between the lines: strong vs weak signals + commitment tests"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 5-Conversation Sprint",
+          "body": "Your goal for the next 7 days: have 5 conversations with potential customers using what you've learned. Not 50. Not 10. Just 5. This is achievable for anyone — even with a full-time job. Each conversation takes 15 minutes. That's 75 minutes total to dramatically increase your confidence (or save yourself months of building the wrong thing).",
+          "stat": "5",
+          "statLabel": "conversations in 7 days — 75 minutes total investment"
+        },
+        {
+          "type": "content",
+          "headline": "Your Conversation Scoring Rubric",
+          "body": "After each conversation, score it: 1) Did I learn something surprising? (Y/N) 2) Did I avoid pitching my solution? (Y/N) 3) Did I hear a strong signal (past behaviour, money spent, active search)? (Y/N) 4) Did they commit something (time/reputation/money)? (Y/N). If you're scoring 3-4 yes answers, you're doing it right."
+        },
+        {
+          "type": "try-it",
+          "headline": "Launch Your 5-Conversation Sprint",
+          "body": "Right now, send 3 messages to potential earlyvangelists or warm connections asking for 15 minutes. Use the warm intro formula from Day 4. Write: \"[Name], I'm researching how [group] handles [problem]. Would you have 15 mins this week for a quick chat? Not selling anything — purely learning.\" Track responses. Start conversations. Next module builds on what you learn."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many conversations should you aim for in the 5-Conversation Sprint?",
+          "type": "mcq",
+          "options": [
+            "50 conversations in a month",
+            "5 conversations in 7 days",
+            "1 conversation per month",
+            "100 survey responses"
+          ],
+          "correctIndex": 1,
+          "explanation": "Five conversations in 7 days is achievable (75 minutes total) and gives you enough data to spot patterns. Start small, stay consistent."
+        },
+        {
+          "question": "Learning something surprising during a conversation is a sign you're doing it right.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "If you're only hearing what you expected, you're probably asking leading questions. Surprise means you're genuinely learning — which is the entire point."
+        },
+        {
+          "question": "What should you do immediately after finishing this module?",
+          "type": "mcq",
+          "options": [
+            "Build a prototype",
+            "Send 3 messages asking potential customers for 15-minute chats",
+            "Write a business plan",
+            "Register a company name"
+          ],
+          "correctIndex": 1,
+          "explanation": "Action beats theory. Sending 3 outreach messages starts your 5-conversation sprint and gives you real data to use in Module 2."
+        }
+      ]
+    },
+    {
+      "id": "fypi-8-right-it",
+      "dayNumber": 8,
+      "moduleId": "fypi-module-2",
+      "title": "The \"Right It\" Before You \"Build It\"",
+      "subtitle": "Most products fail not because they're built wrong — but because they're the wrong thing to build.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Build It Right vs Build the Right It",
+          "body": "Alberto Savoia (Google's first Engineering Director) studied thousands of product failures. His conclusion: the overwhelming cause of failure is \"thoughtful, talented, well-resourced teams building the wrong thing.\" He calls this the Law of Market Failure. The solution isn't building better — it's validating first.",
+          "stat": "90%",
+          "statLabel": "of new products fail — mostly from building the wrong thing"
+        },
+        {
+          "type": "content",
+          "headline": "The Law of Market Failure",
+          "body": "Most new products will fail in the market — even if competently executed. This isn't pessimism; it's data. Google Glass, Segway, Amazon Fire Phone — brilliant engineering, massive budgets, total market rejection. The question isn't \"Can we build it?\" but \"Should we build it?\" Validation answers the second question."
+        },
+        {
+          "type": "content",
+          "headline": "Opinion vs Data",
+          "body": "Savoia separates the world into \"thinkits\" (opinions about what will work) and \"data\" (evidence from the real world). Most founders operate on thinkits: \"I think people would love this.\" \"I believe the market is ready.\" Thinkits are hypotheses disguised as conclusions. This module teaches you to collect data instead.",
+          "bullets": [
+            "Thinkit: \"People would pay for this\" — an opinion",
+            "Data: \"47 people clicked 'Buy Now' on a test page\" — evidence",
+            "Thinkit: \"Everyone hates the current solution\" — assumption",
+            "Data: \"12 of 15 interviewees described the same frustration\" — validated pattern"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pretotype Mindset",
+          "body": "Before you prototype (build a rough version), you should pretotype (test the idea without building anything). A pretotype answers: \"Would people want this if it existed?\" It costs almost nothing. It takes days, not months. And it gives you real data to make a go/no-go decision. The rest of this module shows you how."
+        },
+        {
+          "type": "try-it",
+          "headline": "List Your Thinkits",
+          "body": "Write down 3 beliefs about your business idea that you're treating as facts but haven't actually tested. Examples: \"People would pay £X for this.\" \"My target audience cares about Y.\" \"The market is big enough.\" These are your thinkits. By the end of this module, you'll have a plan to convert each one into data."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"Law of Market Failure\" state?",
+          "type": "mcq",
+          "options": [
+            "Most products fail because of bad engineering",
+            "Most new products will fail in the market, even if competently executed",
+            "Markets always reward the best product",
+            "Only underfunded products fail"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Law of Market Failure says most products fail regardless of execution quality. The issue is building the wrong thing, not building it wrong."
+        },
+        {
+          "question": "A \"thinkit\" is a validated market insight.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A thinkit is an opinion or assumption disguised as a conclusion. It hasn't been tested with real-world data — it's a hypothesis, not evidence."
+        },
+        {
+          "question": "What is the purpose of a pretotype?",
+          "type": "mcq",
+          "options": [
+            "To build a rough version of the product",
+            "To test whether people would want something if it existed — without building it",
+            "To impress investors with a demo",
+            "To write a business plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "A pretotype tests demand without building anything. It answers \"Would people want this?\" cheaply and quickly before you invest in development."
+        }
+      ]
+    },
+    {
+      "id": "fypi-9-pretotyping",
+      "dayNumber": 9,
+      "moduleId": "fypi-module-2",
+      "title": "Pretotyping — Fake It Before You Make It",
+      "subtitle": "Seven battle-tested techniques to validate demand without building a single feature.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "IBM's Speech-to-Text Trick",
+          "body": "In the 1980s, IBM wanted to test if people would use a speech-to-text computer. Instead of spending millions on R&D, they sat users in front of a screen and had a human typist in the next room transcribe their words in real time. Users thought the computer was working. IBM learned that people hated dictating — saving years of wasted development."
+        },
+        {
+          "type": "content",
+          "headline": "The Pretotyping Toolkit",
+          "body": "Seven techniques you can use this week:",
+          "bullets": [
+            "The Mechanical Turk — human-powered \"automation\" (like IBM's typist)",
+            "The Pinocchio — a non-functional physical version (cardboard mockup)",
+            "The Fake Door — a button/page that measures interest before the feature exists",
+            "The Façade — a real-looking storefront with nothing behind it",
+            "The One-Night Stand — rent/borrow before you build/buy",
+            "The Infiltrator — sell through existing channels before building your own",
+            "The Re-label — slap a new label on an existing product to test positioning"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Pretotyping Beats Surveys",
+          "body": "Surveys ask people what they'd hypothetically do. Pretotypes measure what people actually do when they think it's real. The difference is enormous. People will tell you they'd pay for healthy meal delivery — then order pizza when hungry. A pretotype catches the pizza-ordering behaviour. Actions beat intentions every time."
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Technique",
+          "body": "Match the pretotype to your biggest question: Testing demand? → Fake Door or Façade. Testing if people will use it? → Mechanical Turk. Testing physical products? → Pinocchio. Testing pricing? → Fake Door with a price. Testing a new market? → Infiltrator. You don't need all seven — pick the one that answers your riskiest assumption."
+        },
+        {
+          "type": "try-it",
+          "headline": "Pick Your Pretotype",
+          "body": "Look at your riskiest assumption from yesterday. Which pretotyping technique could test it fastest? Write: 1) The assumption. 2) The technique you'll use. 3) What you'll measure. 4) What result would make you confident (or make you stop). Keep it dead simple — if it takes more than a weekend, you're overcomplicating it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did IBM's speech-to-text pretotype prove?",
+          "type": "mcq",
+          "options": [
+            "That the technology was impossible",
+            "That people actually hated dictating — saving years of wasted development",
+            "That speech recognition was easy to build",
+            "That people loved voice computing"
+          ],
+          "correctIndex": 1,
+          "explanation": "By faking the technology (human typist behind a wall), IBM discovered that users disliked dictating. This saved millions in R&D on a product nobody would use."
+        },
+        {
+          "question": "Pretotypes measure what people actually DO, while surveys measure what people SAY they'd do.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the key advantage of pretotyping. People's actions when they believe something is real are far more reliable than their hypothetical stated intentions."
+        },
+        {
+          "question": "What is a \"Fake Door\" pretotype?",
+          "type": "mcq",
+          "options": [
+            "A physical door that doesn't open",
+            "A button or page that measures interest before the feature actually exists",
+            "A fake business registration",
+            "A door-to-door sales technique"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Fake Door (like a \"Buy Now\" button for a non-existent product) measures real intent. People who click are demonstrating genuine interest."
+        }
+      ]
+    },
+    {
+      "id": "fypi-10-xyz-hypothesis",
+      "dayNumber": 10,
+      "moduleId": "fypi-module-2",
+      "title": "The XYZ Hypothesis",
+      "subtitle": "Turn vague ideas into testable, falsifiable statements you can prove or disprove in days.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Most Dangerous Word in Business: \"People\"",
+          "body": "\"People would love this.\" Which people? How many? Love it how much — enough to pay? This single vague sentence has launched thousands of doomed products. The XYZ Hypothesis forces you to replace fuzzy optimism with concrete, testable predictions."
+        },
+        {
+          "type": "content",
+          "headline": "The XYZ Formula",
+          "body": "Every hypothesis should follow this structure: \"At least X% of Y will Z.\" X = a specific percentage (your success threshold). Y = a clearly defined target audience. Z = a specific, measurable action. Example: \"At least 5% of freelance designers who visit my landing page will enter their email address.\" No ambiguity. No wiggle room. Either it happens or it doesn't."
+        },
+        {
+          "type": "content",
+          "headline": "Why Specificity Forces Clarity",
+          "body": "Writing an XYZ hypothesis is uncomfortable because it exposes how little you actually know. \"People would use this\" feels safe. \"At least 10% of UK parents with children under 5 will click 'Pre-order' at £9.99/month\" is terrifying — because it can be proven wrong. That's exactly why it works. Falsifiable predictions create real learning.",
+          "bullets": [
+            "Vague: \"Lots of people have this problem\" → untestable",
+            "XYZ: \"At least 30% of interviewees will describe this problem unprompted\" → testable",
+            "Vague: \"People would pay for this\" → meaningless",
+            "XYZ: \"At least 3 of 10 will put down a £20 deposit\" → provable"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Setting Your Success Threshold",
+          "body": "How do you choose X? Start with the minimum that would make the business viable. If you need 1,000 paying customers and your funnel converts at ~2%, you need 50,000 visitors. Is that realistic? Work backwards from the business model. If the numbers don't work at realistic thresholds, the idea may not be viable — and that's useful to know early."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write 3 XYZ Hypotheses",
+          "body": "For your business idea, write 3 hypotheses in XYZ format: 1) A demand hypothesis — \"At least X% of [audience] will [action proving interest].\" 2) A pricing hypothesis — \"At least X% will [pay/deposit] at [price point].\" 3) A channel hypothesis — \"At least X% of [channel audience] will [respond/click].\" These become the experiments you'll run this module."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the correct format for an XYZ Hypothesis?",
+          "type": "mcq",
+          "options": [
+            "\"People would love this product\"",
+            "\"At least X% of Y will Z\" — with specific percentage, audience, and action",
+            "\"I think the market is ready\"",
+            "\"My product is better than competitors\""
+          ],
+          "correctIndex": 1,
+          "explanation": "The XYZ format forces specificity: X = success threshold, Y = defined audience, Z = measurable action. No ambiguity, no wiggle room."
+        },
+        {
+          "question": "A good XYZ hypothesis should be falsifiable — meaning it can be proven wrong.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Falsifiability is the point. If a hypothesis can't be proven wrong, it can't generate real learning. Vague predictions always feel right — specific ones can fail and teach you."
+        },
+        {
+          "question": "How should you choose the \"X\" (percentage threshold) in your hypothesis?",
+          "type": "mcq",
+          "options": [
+            "Always use 50%",
+            "Work backwards from what would make the business model viable",
+            "Pick the highest number possible",
+            "Use whatever feels optimistic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your threshold should reflect the minimum conversion rate that makes the business work. Work backwards from revenue goals, pricing, and realistic traffic."
+        }
+      ]
+    },
+    {
+      "id": "fypi-11-skin-in-game",
+      "dayNumber": 11,
+      "moduleId": "fypi-module-2",
+      "title": "Skin-in-the-Game Tests",
+      "subtitle": "The only reliable signal is when someone puts something real on the line — time, money, or reputation.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The £10 That's Worth More Than 10,000 Likes",
+          "body": "Ten thousand people clicking \"Interested\" on a Facebook event means nothing. One person handing you £10 for a pre-order means everything. The gap between stated intent and actual commitment is where most startups die. Skin-in-the-game tests close that gap."
+        },
+        {
+          "type": "content",
+          "headline": "The Commitment Ladder",
+          "body": "Arrange your tests from weakest to strongest signal:",
+          "bullets": [
+            "Level 1: Attention — they read/watch your content (very weak)",
+            "Level 2: Email — they give you their address (weak-moderate)",
+            "Level 3: Time — they show up for a call or event (moderate)",
+            "Level 4: Reputation — they introduce you to others (strong)",
+            "Level 5: Money — they pre-pay, deposit, or purchase (strongest)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pre-Selling: The Ultimate Test",
+          "body": "Before Kickstarter existed, pre-selling was the gold standard of validation. You describe what you plan to build, set a price, and ask for money before it exists. If people pay — you have validated demand with the strongest possible signal. If they don't — you just saved months. Tools: Gumroad pre-orders, Stripe payment links, even a PayPal \"Send Money\" request."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Letter of Intent\" for B2B",
+          "body": "Selling to businesses? You can't always take pre-payment. Instead, get a Letter of Intent: a non-binding but public commitment to buy when you launch. \"If you build X with features Y and Z at price £P, we would purchase 10 licences.\" This gives you enough confidence to build — and enough leverage to raise funding if needed."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Skin-in-the-Game Test",
+          "body": "What's the highest level of commitment you could ask for right now? Don't default to \"email sign-up\" — push yourself up the ladder. Could you ask for a deposit? A pre-order? A paid pilot? A signed LOI? Write down: 1) What you'll ask for. 2) From whom. 3) What number of \"yes\" responses would validate your idea. 4) What \"no\" would tell you."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which signal on the commitment ladder is the STRONGEST validation?",
+          "type": "mcq",
+          "options": [
+            "Someone reading your blog post",
+            "Someone giving their email address",
+            "Someone paying money (pre-order or deposit)",
+            "Someone liking your social media post"
+          ],
+          "correctIndex": 2,
+          "explanation": "Money is the strongest signal because it costs the customer something real. Email and attention are weak because they're easy to give without real commitment."
+        },
+        {
+          "question": "Pre-selling means describing what you'll build and asking for payment before it exists.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Pre-selling is the ultimate demand test. If people pay before the product exists, you have validated willingness-to-pay with the strongest possible evidence."
+        },
+        {
+          "question": "What is a \"Letter of Intent\" useful for?",
+          "type": "mcq",
+          "options": [
+            "Getting a patent",
+            "Validating B2B demand when you can't take pre-payment",
+            "Filing taxes",
+            "Hiring employees"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Letter of Intent is a non-binding commitment from a business to buy. It validates demand in B2B contexts where pre-payment isn't possible."
+        }
+      ]
+    },
+    {
+      "id": "fypi-12-landing-page",
+      "dayNumber": 12,
+      "moduleId": "fypi-module-2",
+      "title": "The Landing Page Experiment",
+      "subtitle": "Build a one-page site in an afternoon and measure real demand with real traffic.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Buffer Validated in 7 Days With One Page",
+          "body": "Joel Gascoigne had an idea for a social media scheduling tool. Instead of building it, he put up a single landing page describing the concept with a \"Plans and Pricing\" button. When people clicked, they saw: \"You caught us before we're ready!\" He collected emails and measured click-through rate. 120 sign-ups later, he knew it was worth building.",
+          "stat": "120",
+          "statLabel": "email sign-ups validated Buffer before a single line of code"
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Validation Landing Page",
+          "body": "You need exactly 5 elements:",
+          "bullets": [
+            "Headline — the outcome you promise (not what you build)",
+            "Sub-headline — who it's for and why it's different",
+            "Social proof or credibility marker (even \"From the creator of X\")",
+            "Call-to-action — sign up, pre-order, or join waitlist",
+            "Traffic source — how you'll get 200+ relevant visitors to see it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Measure",
+          "body": "Your XYZ hypothesis from Day 10 tells you what success looks like. Typical benchmarks: Landing page → email sign-up: 20-40% = strong demand. Landing page → \"Buy/Pre-order\" click: 3-5% = promising. Landing page → actual payment: 1-2% = validated. Track these numbers religiously. They're your reality check."
+        },
+        {
+          "type": "content",
+          "headline": "Getting Traffic Without Spending Months",
+          "body": "You need 200-500 visitors for statistically meaningful results. Free options: post in relevant communities (Reddit, Facebook groups, forums), share with your network, answer questions on Quora/Twitter. Paid option: £50-100 of targeted ads gets you 200+ relevant visitors in 48 hours. The paid route is faster and gives you cleaner data."
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your Landing Page Test",
+          "body": "You can build a landing page in 2 hours with Carrd, Framer, or even a Google Doc. Write: 1) Your headline (the outcome). 2) Your CTA (email, waitlist, or pre-order?). 3) Your traffic plan (which communities or £50 ad budget?). 4) Your success threshold (XYZ format). Set a launch date within 5 days."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Buffer validate demand before building the product?",
+          "type": "mcq",
+          "options": [
+            "They built a full product and launched it",
+            "They put up a landing page with pricing and measured who clicked",
+            "They ran a focus group",
+            "They wrote a business plan and got investors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buffer used a simple landing page with a \"Plans and Pricing\" button. People who clicked saw \"you caught us early\" — but their click proved demand. 120 sign-ups validated the idea."
+        },
+        {
+          "question": "You need at least 200-500 visitors for statistically meaningful landing page results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "With fewer than 200 visitors, random variation makes your conversion rate unreliable. 200-500 gives you enough data to draw meaningful conclusions."
+        },
+        {
+          "question": "What is the cheapest way to get 200+ relevant visitors in 48 hours?",
+          "type": "mcq",
+          "options": [
+            "Wait for organic Google traffic",
+            "Buy a TV ad",
+            "£50-100 of targeted online ads",
+            "Print flyers and distribute them"
+          ],
+          "correctIndex": 2,
+          "explanation": "Targeted ads (Facebook, Google) are the fastest route to clean data. £50-100 typically delivers 200+ visitors from your exact target audience within 48 hours."
+        }
+      ]
+    },
+    {
+      "id": "fypi-13-concierge-wizard",
+      "dayNumber": 13,
+      "moduleId": "fypi-module-2",
+      "title": "Concierge & Wizard of Oz Tests",
+      "subtitle": "Deliver the solution manually to test whether people value the outcome — before automating anything.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Zappos: $0 in Inventory, Millions in Validation",
+          "body": "Nick Swinmurn wanted to sell shoes online in 1999. Nobody believed people would buy shoes without trying them on. Instead of buying inventory, he photographed shoes in local stores, posted them online, and when someone ordered, he went back to the store and bought them at full price. He lost money per pair — but proved people would buy shoes online."
+        },
+        {
+          "type": "content",
+          "headline": "Concierge vs Wizard of Oz",
+          "body": "Two flavours of the same idea — deliver manually what you'll eventually automate:",
+          "bullets": [
+            "CONCIERGE: The customer KNOWS it's manual. \"I'll personally create your meal plan this week.\" Tests if they value the outcome enough to pay.",
+            "WIZARD OF OZ: The customer thinks it's automated. Like IBM's typist. Tests if the experience feels right, without revealing the human behind the curtain."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When to Use Each",
+          "body": "Use CONCIERGE when: you want to learn exactly what customers need (they'll give feedback on a personal service). You're testing B2B or high-touch products. The manual effort is the learning — you discover edge cases. Use WIZARD OF OZ when: you need to test at scale. The perception of automation matters (speed, consistency). You want to measure behaviour without the \"human\" variable."
+        },
+        {
+          "type": "content",
+          "headline": "The Concierge Revenue Model",
+          "body": "Here's the beautiful thing: a concierge test can generate revenue immediately. Charge for the manual version. \"I'll be your personal nutrition coach for 4 weeks — £50.\" If 5 people pay, you've validated demand AND earned £250 AND learned exactly what they need. Then you automate the pattern you've proven. Most \"app ideas\" can start as a service."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Concierge Test",
+          "body": "If your product was delivered entirely by hand (by you, personally), what would that look like? Write: 1) The manual version of your product/service. 2) Who you'd offer it to (3-5 specific people). 3) What you'd charge (even £10 counts). 4) How long you'd run it (2-4 weeks is ideal). Could you start this week?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between a Concierge and a Wizard of Oz test?",
+          "type": "mcq",
+          "options": [
+            "Concierge is free, Wizard of Oz costs money",
+            "In Concierge the customer knows it's manual; in Wizard of Oz they think it's automated",
+            "Concierge is for B2C, Wizard of Oz is for B2B",
+            "There is no difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Concierge is transparent about being manual (the customer knows). Wizard of Oz creates the illusion of automation while a human operates behind the scenes."
+        },
+        {
+          "question": "A concierge test can generate revenue from day one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "You can charge for a manual, personal service immediately. This validates demand, generates revenue, and teaches you what to automate — all at once."
+        },
+        {
+          "question": "How did Zappos validate that people would buy shoes online?",
+          "type": "mcq",
+          "options": [
+            "They surveyed 1,000 people about online shoe shopping",
+            "They built a huge warehouse of inventory",
+            "They photographed store shoes, sold them online, then bought them at full price when ordered",
+            "They partnered with Nike for exclusive distribution"
+          ],
+          "correctIndex": 2,
+          "explanation": "Zappos used a Wizard of Oz approach — the website looked like a real store, but Nick manually bought shoes from local stores when orders came in. Zero inventory risk."
+        }
+      ]
+    },
+    {
+      "id": "fypi-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "fypi-module-2",
+      "title": "Design Your First Test",
+      "subtitle": "Bring together everything from Module 2 into one concrete experiment you can run this week.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "An Experiment Beats a Year of Planning",
+          "body": "You now have a complete toolkit for testing ideas without building them. Pretotyping techniques, XYZ hypotheses, skin-in-the-game tests, landing pages, concierge models — any one of these can save you months of building the wrong thing. But tools unused are tools wasted. Time to pick one and run it."
+        },
+        {
+          "type": "content",
+          "headline": "Module 2 Recap",
+          "body": "Your validation toolkit:",
+          "bullets": [
+            "The Right It philosophy — test the idea before building the product",
+            "7 pretotyping techniques (Fake Door, Mechanical Turk, Façade, etc.)",
+            "XYZ Hypotheses — \"At least X% of Y will Z\"",
+            "The Commitment Ladder — from attention to money",
+            "Landing page experiments — 200+ visitors, measure conversion",
+            "Concierge & Wizard of Oz — deliver manually, learn, then automate"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The One-Week Experiment Template",
+          "body": "Your experiment needs exactly 5 things: 1) Hypothesis in XYZ format. 2) Method — which technique are you using? 3) Audience — who specifically will you test with? 4) Success metric — what number proves/disproves the hypothesis? 5) Timeline — when will you have results? (Aim for 7 days max.)",
+          "stat": "7",
+          "statLabel": "days maximum for your first validation experiment"
+        },
+        {
+          "type": "content",
+          "headline": "Interpreting Results",
+          "body": "After your experiment, you'll be in one of three zones: 1) GREEN — you hit or exceeded your threshold. Move forward with confidence. 2) AMBER — results were close but below threshold. Consider adjusting the offer, audience, or price and re-testing. 3) RED — clearly below threshold. This isn't failure — it's learning. Pivot or test a different idea. Module 3 teaches you how to make this decision."
+        },
+        {
+          "type": "try-it",
+          "headline": "Commit to Your Experiment",
+          "body": "Fill in this template now: HYPOTHESIS: \"At least ___% of ___ will ___.\" METHOD: [Landing page / Pre-order / Concierge / Fake Door / Other] AUDIENCE: [Where you'll find them] SUCCESS THRESHOLD: [The number that means \"go\"] DEADLINE: [Date within 7 days]. Share this with your accountability partner from Course 1. Then start. Module 3 picks up after your results are in."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many elements does the One-Week Experiment Template require?",
+          "type": "mcq",
+          "options": [
+            "2 — hypothesis and method",
+            "5 — hypothesis, method, audience, success metric, and timeline",
+            "10 — including budget and team plan",
+            "1 — just a good idea"
+          ],
+          "correctIndex": 1,
+          "explanation": "A complete experiment needs 5 elements: XYZ hypothesis, method, specific audience, measurable success threshold, and a deadline (7 days max)."
+        },
+        {
+          "question": "Failing to hit your success threshold means you should give up on entrepreneurship.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A \"red\" result isn't failure — it's data. It means this specific idea/offer/audience combination didn't work. You can pivot the offer, change the audience, or test a different idea entirely."
+        },
+        {
+          "question": "What should you do if your experiment results are in the \"amber\" zone (close but below threshold)?",
+          "type": "mcq",
+          "options": [
+            "Immediately give up",
+            "Adjust the offer, audience, or price and re-test",
+            "Build the full product anyway",
+            "Ignore the results"
+          ],
+          "correctIndex": 1,
+          "explanation": "Amber results suggest something is close but not quite right. Tweak one variable (price, positioning, audience) and run another quick test before deciding."
+        }
+      ]
+    },
+    {
+      "id": "fypi-15-what-counts",
+      "dayNumber": 15,
+      "moduleId": "fypi-module-3",
+      "title": "What Counts as Validation?",
+      "subtitle": "Not all evidence is created equal. Learn to separate noise from signal in your experiment results.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Startup That Fooled Itself",
+          "body": "A food-delivery startup ran a landing page test and got 500 email sign-ups. They celebrated, raised money, built the product — and then nobody ordered. What happened? The emails were from people interested in \"free food samples\" mentioned in the ad. Interest in free stuff ≠ willingness to pay. They measured the wrong signal.",
+          "stat": "500",
+          "statLabel": "sign-ups that meant nothing because the wrong metric was measured"
+        },
+        {
+          "type": "content",
+          "headline": "The Validation Hierarchy",
+          "body": "Evidence exists on a spectrum from weak to strong:",
+          "bullets": [
+            "Weakest: \"People told me they liked the idea\" — social desirability bias",
+            "Weak: \"People signed up for a free newsletter\" — low-cost action",
+            "Moderate: \"People spent 20 minutes on a call giving detailed feedback\"",
+            "Strong: \"People referred others / shared publicly\" — reputation on the line",
+            "Strongest: \"People paid real money before the product existed\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quantity vs Quality of Evidence",
+          "body": "1,000 email sign-ups from a viral tweet < 10 pre-orders from your target audience. Why? The tweet attracted curiosity-clickers. The pre-orders came from people who match your ideal customer AND put money down. Always ask: \"Is this evidence from people who would actually buy?\" Context matters more than volume."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Would They Complain If It Disappeared?\" Test",
+          "body": "Here's a simple filter: if your solution vanished tomorrow, would these people actively seek an alternative? Or would they shrug and move on? Strong validation means people who would feel genuine pain without your solution. If they'd barely notice — your evidence is telling you something important."
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Evidence",
+          "body": "Look at whatever data you've collected so far (even informally). For each piece of evidence, rate it: 1) Who gave this signal? (My target customer, or someone else?) 2) What did it cost them? (Nothing / Time / Money / Reputation?) 3) Would they complain if my solution disappeared? Circle the evidence that passes all three filters. That's your real validation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which is the STRONGEST form of validation evidence?",
+          "type": "mcq",
+          "options": [
+            "Friends saying they love the idea",
+            "Email sign-ups from a free giveaway",
+            "Pre-payment from your target customer",
+            "High engagement on a social media post"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pre-payment from target customers is the strongest signal — they're putting real money down AND they match your ideal buyer. Everything else involves less commitment or comes from the wrong audience."
+        },
+        {
+          "question": "1,000 email sign-ups is always better validation than 10 pre-orders.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Quality beats quantity. 10 pre-orders from your target audience prove willingness-to-pay. 1,000 sign-ups might just be curiosity-clickers who'll never convert."
+        },
+        {
+          "question": "The \"Would they complain if it disappeared?\" test checks for what?",
+          "type": "mcq",
+          "options": [
+            "Whether your marketing is good enough",
+            "Whether people have genuine, painful need for your solution",
+            "Whether you can scale the business",
+            "Whether the technology works"
+          ],
+          "correctIndex": 1,
+          "explanation": "This test filters for genuine need. If people would actively seek an alternative, you're solving a real problem. If they'd shrug — the need isn't strong enough."
+        }
+      ]
+    },
+    {
+      "id": "fypi-16-false-positives",
+      "dayNumber": 16,
+      "moduleId": "fypi-module-3",
+      "title": "Avoiding False Positives",
+      "subtitle": "The seven traps that make founders believe they've validated when they haven't.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Confirmation Bias: The Entrepreneur's Blind Spot",
+          "body": "You've spent weeks on an idea. You ran an experiment. You want it to work. That desire is the enemy of clear thinking. Confirmation bias makes you notice the 3 enthusiastic responses and ignore the 47 who said nothing. This lesson is your defence against self-deception."
+        },
+        {
+          "type": "content",
+          "headline": "The Seven False Positive Traps",
+          "body": "Watch out for these:",
+          "bullets": [
+            "1. The Mom Trap: asking people who want to please you (friends, family)",
+            "2. The Freebie Trap: interest in a free thing ≠ willingness to pay",
+            "3. The Hypothetical Trap: \"Would you use this?\" gets polite \"yes\"",
+            "4. The Novelty Trap: people engage because it's new, not because they need it",
+            "5. The Wrong Audience Trap: validating with people who'd never buy",
+            "6. The Small Sample Trap: 3 positive responses don't prove anything",
+            "7. The Sunk Cost Trap: \"I've come too far to admit it's not working\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Protect Against Each",
+          "body": "For each trap, there's an antidote: Mom Trap → test with strangers. Freebie Trap → always include a cost (money, time, reputation). Hypothetical → measure actions, not words. Novelty → re-test after the novelty wears off (2 weeks later). Wrong Audience → verify every respondent matches your ICP. Small Sample → set minimum sample sizes before testing. Sunk Cost → write your \"kill criteria\" before you start."
+        },
+        {
+          "type": "content",
+          "headline": "Pre-Commitment: Your Kill Criteria",
+          "body": "Before running any experiment, write down: \"If I get fewer than [X result], I will [specific action — pivot/stop/retest].\" Write this BEFORE you have results. It's much easier to be objective before emotions are involved. This is your pre-commitment contract with yourself.",
+          "stat": "73%",
+          "statLabel": "of founders who pre-commit to kill criteria make better pivot decisions"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Kill Criteria",
+          "body": "For your current experiment or idea, complete this sentence: \"If I get fewer than ___ [specific result] from ___ [specific audience] within ___ [timeframe], I will ___.\" Be honest. What result would genuinely make you stop? Write it down. Show it to someone. This is your insurance against self-deception."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"The Mom Trap\" in validation?",
+          "type": "mcq",
+          "options": [
+            "Testing only with mothers",
+            "Asking people who want to please you (friends/family) — getting biased positive feedback",
+            "Selling products to parents",
+            "Testing with an older demographic"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Mom Trap means testing with people who'll say nice things to avoid hurting your feelings. Friends and family are almost always unreliable validators."
+        },
+        {
+          "question": "Kill criteria should be written AFTER you see your experiment results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Kill criteria must be written BEFORE results come in. Once you see data, emotions and sunk-cost bias make it nearly impossible to be objective."
+        },
+        {
+          "question": "Interest in a free product reliably predicts willingness to pay for it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is the Freebie Trap. Free removes the cost barrier entirely. Many people who'd happily use something free would never pay £1 for it. Always test with a price attached."
+        }
+      ]
+    },
+    {
+      "id": "fypi-17-pivoting",
+      "dayNumber": 17,
+      "moduleId": "fypi-module-3",
+      "title": "Pivoting Without Starting Over",
+      "subtitle": "A pivot isn't failure — it's an informed change of direction based on real data.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "YouTube Started as a Dating Site",
+          "body": "YouTube's founders originally built a video dating site called \"Tune In Hook Up.\" When nobody uploaded dating videos, they noticed people were uploading random clips instead. They pivoted to general video sharing — keeping the technology but changing the audience and use case entirely. That pivot created a $1.65 billion acquisition.",
+          "stat": "$1.65B",
+          "statLabel": "Google's acquisition of YouTube — born from a failed dating site pivot"
+        },
+        {
+          "type": "content",
+          "headline": "The 10 Types of Pivot",
+          "body": "Eric Ries identified these pivot types:",
+          "bullets": [
+            "Zoom-in: one feature becomes the whole product",
+            "Zoom-out: the whole product becomes one feature of something bigger",
+            "Customer segment: same product, different audience",
+            "Customer need: same audience, different problem",
+            "Channel: different distribution method",
+            "Revenue model: change how you make money",
+            "Value capture: change what you charge for",
+            "Technology: same solution, different tech stack",
+            "Platform: from app to platform (or vice versa)",
+            "Business architecture: B2B ↔ B2C switch"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pivot Equation: Keep + Change",
+          "body": "A good pivot keeps what you've learned and changes what isn't working. You're not starting from zero — you're building on data. Ask: \"What did I learn that's still true?\" Maybe the problem is real but your solution is wrong. Maybe the solution is right but the audience is wrong. Keep the validated piece. Change the unvalidated one."
+        },
+        {
+          "type": "content",
+          "headline": "Signs It's Time to Pivot",
+          "body": "Your data is telling you to pivot when: 1) Customers keep asking for something adjacent to what you offer. 2) A small subset loves it but the majority doesn't care. 3) People use it in an unexpected way. 4) Your unit economics don't work at any realistic scale. 5) You consistently miss your XYZ thresholds after multiple attempts."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Pivot Options",
+          "body": "Even if you're not pivoting right now, this exercise builds pivot-readiness. Write: 1) What have you learned that's definitely true? 2) What assumption keeps failing? 3) List 3 possible pivots using the types above. For each: what would you keep, and what would change? Having options reduces the emotional cost of pivoting when data demands it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did YouTube originally start as?",
+          "type": "mcq",
+          "options": [
+            "A music streaming service",
+            "A video dating site",
+            "A video game platform",
+            "A file sharing service"
+          ],
+          "correctIndex": 1,
+          "explanation": "YouTube began as \"Tune In Hook Up\" — a video dating site. When nobody used it for dating but uploaded random clips, the founders pivoted to general video sharing."
+        },
+        {
+          "question": "A pivot means throwing away everything you've done and starting completely over.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A pivot keeps what you've learned and changes what isn't working. It's an informed direction change — not a restart. You build on validated learnings."
+        },
+        {
+          "question": "A \"customer segment\" pivot means:",
+          "type": "mcq",
+          "options": [
+            "Building a completely new product",
+            "Keeping the same product but targeting a different audience",
+            "Changing your technology stack",
+            "Raising your prices"
+          ],
+          "correctIndex": 1,
+          "explanation": "A customer segment pivot keeps your product the same but finds a different audience that values it more. The solution works — it's just for different people than you thought."
+        }
+      ]
+    },
+    {
+      "id": "fypi-18-stacking-evidence",
+      "dayNumber": 18,
+      "moduleId": "fypi-module-3",
+      "title": "Stacking Evidence — The Confidence Meter",
+      "subtitle": "One experiment isn't enough. Learn to stack multiple signals until your confidence is high enough to commit.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Lawyer's Approach to Business Decisions",
+          "body": "A lawyer never relies on a single piece of evidence. They build a case — multiple independent sources pointing to the same conclusion. Your business decisions deserve the same rigour. One successful landing page test is a clue. Five different experiments all pointing the same direction? That's a verdict."
+        },
+        {
+          "type": "content",
+          "headline": "The Evidence Stack Framework",
+          "body": "Build confidence by stacking different types of evidence:",
+          "bullets": [
+            "Layer 1: Problem evidence — interviews confirming the pain exists",
+            "Layer 2: Solution evidence — people react positively to your approach",
+            "Layer 3: Demand evidence — people take action (sign up, click, engage)",
+            "Layer 4: Willingness-to-pay evidence — people spend money",
+            "Layer 5: Retention evidence — people come back / ask for more"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Confidence Meter",
+          "body": "Rate your confidence on each layer from 0-10. Your minimum confidence to proceed should be: Layer 1 (Problem): 8+/10 — you must be very sure the problem is real. Layer 2 (Solution): 6+/10 — your approach resonates. Layer 3 (Demand): 7+/10 — people take real action. Layer 4 (WTP): 5+/10 — at least some will pay. Layer 5 (Retention): not required yet — test after building.",
+          "stat": "5",
+          "statLabel": "layers of evidence in a complete validation stack"
+        },
+        {
+          "type": "content",
+          "headline": "Triangulation: Why Multiple Methods Matter",
+          "body": "If your interviews say \"yes,\" your landing page says \"yes,\" and your pre-orders say \"yes\" — that's triangulation. Three independent methods pointing to the same conclusion. Any single method can be flawed (biased questions, wrong traffic, etc.), but it's very unlikely that three independent tests all give the same false positive."
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Confidence Meter",
+          "body": "For your current idea, rate each layer honestly (0-10): 1) Problem evidence: ___/10. 2) Solution evidence: ___/10. 3) Demand evidence: ___/10. 4) Willingness-to-pay: ___/10. Where are you weakest? That's your next experiment. You don't need perfect scores — you need enough confidence to take the next step without reckless risk."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"triangulation\" in the context of validation?",
+          "type": "mcq",
+          "options": [
+            "Using three founders to make decisions",
+            "Multiple independent methods all pointing to the same conclusion",
+            "A mathematical formula for market size",
+            "Testing in three different countries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Triangulation means getting consistent results from different methods (interviews + landing page + pre-orders). Multiple independent confirmations dramatically reduce the chance of a false positive."
+        },
+        {
+          "question": "You should have very high confidence (8+/10) that the PROBLEM exists before testing solutions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Problem validation is the foundation. If the problem isn't real or painful enough, no solution — however brilliant — will find a market. Be very sure the pain is genuine."
+        },
+        {
+          "question": "One successful experiment is enough to validate a business idea.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "One experiment is a clue, not a verdict. Any single method can produce false positives. Stack multiple layers of evidence (problem, demand, WTP) for real confidence."
+        }
+      ]
+    },
+    {
+      "id": "fypi-19-idea-scorecard",
+      "dayNumber": 19,
+      "moduleId": "fypi-module-3",
+      "title": "Your Idea Scorecard",
+      "subtitle": "A structured framework to compare and rank ideas objectively — removing emotion from the equation.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Your Gut Feeling Is Unreliable",
+          "body": "Founders consistently overrate ideas they're emotionally attached to and underrate ideas that feel \"boring.\" Yet the boring ideas often make more money (accounting software, cleaning services, B2B tools). A scorecard forces objectivity by making you rate ideas on criteria that actually predict success — not excitement."
+        },
+        {
+          "type": "content",
+          "headline": "The 8-Criteria Idea Scorecard",
+          "body": "Rate each idea from 1-5 on these dimensions:",
+          "bullets": [
+            "1. Problem severity — how painful is this for customers? (1=mild, 5=urgent)",
+            "2. Willingness to pay — have you seen evidence of payment? (1=none, 5=pre-orders)",
+            "3. Market size — enough people have this problem? (1=tiny, 5=massive)",
+            "4. Competition — is the space crowded? (1=packed, 5=underserved)",
+            "5. Your unfair advantage — why you specifically? (1=none, 5=unique edge)",
+            "6. Speed to revenue — how fast can you earn £1? (1=years, 5=this week)",
+            "7. Scalability — can it grow without you? (1=never, 5=easily)",
+            "8. Personal fit — do you want to do this for 5+ years? (1=hate it, 5=love it)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Weighting the Criteria",
+          "body": "Not all criteria are equal. For a first-time founder, weight them: Problem severity (×3), Willingness to pay (×3), Speed to revenue (×2), Personal fit (×2), Market size (×1), Competition (×1), Unfair advantage (×1), Scalability (×1). Why? Your first business needs proven demand, fast cash flow, and your commitment. Scale and moats come later."
+        },
+        {
+          "type": "content",
+          "headline": "Using the Scorecard for Comparison",
+          "body": "If you have multiple ideas, score them all. The highest-weighted score wins. But also check: is any single critical criterion below 2? A 5 on everything else can't compensate for a 1 on \"Willingness to Pay.\" Treat WTP and Problem Severity as hard minimums — if either is below 3, the idea probably isn't viable regardless of total score."
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Idea(s)",
+          "body": "Take your main idea (and any alternatives). Rate each on the 8 criteria (1-5). Apply the weightings. Calculate total. If you have two ideas, which scores higher? Does the winner surprise you? If your top idea scores below 25 (out of 45 weighted), it might not be strong enough to pursue. What would need to be true to raise it above 30?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which two criteria should be treated as \"hard minimums\" (below 3 = probably not viable)?",
+          "type": "mcq",
+          "options": [
+            "Scalability and Competition",
+            "Problem Severity and Willingness to Pay",
+            "Market Size and Personal Fit",
+            "Speed to Revenue and Unfair Advantage"
+          ],
+          "correctIndex": 1,
+          "explanation": "If the problem isn't painful enough (severity < 3) or people won't pay (WTP < 3), no other strength can compensate. These are foundational — everything else is secondary."
+        },
+        {
+          "question": "For a first-time founder, \"Speed to Revenue\" should be weighted higher than \"Scalability.\"",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "First-time founders need cash flow fast to survive and learn. Scalability matters later. A business that generates revenue quickly teaches you more than one that might scale \"someday.\""
+        },
+        {
+          "question": "Why is gut feeling unreliable for evaluating business ideas?",
+          "type": "mcq",
+          "options": [
+            "Because ideas are unpredictable",
+            "Because founders overrate exciting ideas and underrate \"boring\" ones that often make more money",
+            "Because market conditions change too fast",
+            "Because only investors can evaluate ideas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Emotional attachment biases evaluation. Founders overweight excitement and novelty while underweighting proven demand and boring-but-profitable opportunities. A scorecard removes this bias."
+        }
+      ]
+    },
+    {
+      "id": "fypi-20-kill-pivot-double",
+      "dayNumber": 20,
+      "moduleId": "fypi-module-3",
+      "title": "Kill, Pivot, or Double Down",
+      "subtitle": "The three-way decision every founder faces — and a framework for choosing correctly.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Courage to Kill Your Darling",
+          "body": "You've invested weeks of thought, energy, and possibly money. Your ego is attached. Killing the idea feels like personal failure. But here's the truth: every week spent on a doomed idea is a week stolen from the right one. The founders who succeed fastest are often those who kill bad ideas quickly. Speed of learning beats persistence on the wrong path."
+        },
+        {
+          "type": "content",
+          "headline": "The Three-Way Decision Framework",
+          "body": "Based on your evidence stack and scorecard:",
+          "bullets": [
+            "KILL when: Multiple experiments show weak/no demand. Your scorecard is below 20. You can't find anyone willing to pay. The problem doesn't seem painful enough. You've hit your pre-committed kill criteria.",
+            "PIVOT when: You see demand but for something adjacent. A subset of users loves it but not the majority. People keep asking for something slightly different. The problem is real but your solution misses.",
+            "DOUBLE DOWN when: Evidence stacks consistently point \"yes.\" Your confidence meter is 7+ on problem, demand, and WTP. People are paying or actively requesting it. You have a clear path to your first 10 customers."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Regret Minimisation\" Test",
+          "body": "Jeff Bezos uses this: imagine yourself at 80 years old looking back. Would you regret NOT pursuing this? If yes — double down. Would you regret wasting years on something with no traction? Then kill it quickly. The goal isn't to avoid failure — it's to avoid slow failure. Fast failures are fine. Slow failures are devastating."
+        },
+        {
+          "type": "content",
+          "headline": "After You Decide",
+          "body": "If KILL: celebrate the learning, document what you discovered, move to your next idea immediately. Don't mourn. If PIVOT: clearly articulate what you're keeping vs changing. Run a new experiment within 7 days. If DOUBLE DOWN: define your next milestone (first 10 customers? First £1,000?). Set a 30-day sprint to reach it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Make Your Decision",
+          "body": "Based on everything you've learned in this course — your interviews, experiments, scorecard, and confidence meter — which is it? Write: 1) My decision: KILL / PIVOT / DOUBLE DOWN. 2) The evidence that supports this decision. 3) My next action within 48 hours. If you're not sure yet, that's okay — but commit to gathering the missing evidence this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When should you KILL a business idea?",
+          "type": "mcq",
+          "options": [
+            "When it gets difficult",
+            "When multiple experiments show weak demand, your scorecard is below 20, and nobody will pay",
+            "When a friend says it won't work",
+            "After exactly 30 days regardless of results"
+          ],
+          "correctIndex": 1,
+          "explanation": "Kill when the data consistently says no — multiple experiments failing, low scores, no willingness to pay. This isn't giving up; it's being data-driven about where to invest your time."
+        },
+        {
+          "question": "Fast failures are better than slow failures.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A fast failure costs you days or weeks. A slow failure costs you months or years. The goal is to fail quickly on bad ideas so you can find the right one sooner."
+        },
+        {
+          "question": "After deciding to PIVOT, what should happen within 7 days?",
+          "type": "mcq",
+          "options": [
+            "Write a 50-page business plan",
+            "Raise funding",
+            "Run a new experiment testing the pivot direction",
+            "Hire a team"
+          ],
+          "correctIndex": 2,
+          "explanation": "A pivot is still a hypothesis until tested. Run a quick experiment within 7 days to validate the new direction. Don't spend months planning — test immediately."
+        }
+      ]
+    },
+    {
+      "id": "fypi-21-module-3-checkpoint",
+      "dayNumber": 21,
+      "moduleId": "fypi-module-3",
+      "title": "Your Go/No-Go Decision",
+      "subtitle": "The final lesson. Consolidate 21 days of learning into a clear decision and your next concrete step.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Know More Than 95% of Founders",
+          "body": "Most people who start businesses skip everything you've just done. They jump from \"I have an idea\" to \"let me build it\" — investing months and thousands before talking to a single customer. You've talked to real people. You've tested with real experiments. You've scored your idea objectively. Whatever decision you make now is informed. That's rare and powerful.",
+          "stat": "21",
+          "statLabel": "days of systematic validation — you've earned this decision"
+        },
+        {
+          "type": "content",
+          "headline": "Course Recap: Your Complete Toolkit",
+          "body": "Over 21 days you've mastered:",
+          "bullets": [
+            "Module 1: Finding ideas in pain, frequency, willingness-to-pay, and real conversations",
+            "Module 2: Testing ideas with pretotypes, XYZ hypotheses, skin-in-the-game experiments",
+            "Module 3: Interpreting results, avoiding traps, stacking evidence, and making objective decisions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Go/No-Go Checklist",
+          "body": "You're ready to GO (move to \"Customer Research & Validation\" — Course 3) when: ✓ Your confidence meter is 7+ on Problem and Demand. ✓ You have at least one skin-in-the-game signal (payment, LOI, deposit). ✓ Your idea scorecard is 25+ (weighted). ✓ You can describe your customer in specific detail. ✓ You can articulate why they'd pay."
+        },
+        {
+          "type": "content",
+          "headline": "If Your Answer Is \"Not Yet\"",
+          "body": "That's completely valid. Options: 1) Run one more experiment targeting your weakest layer. 2) Pivot and re-test (7-day sprint). 3) Go back to Module 1 with fresh eyes and a new problem space. 4) Take a 1-week break then revisit with fresh perspective. There's no shame in \"not yet\" — only in persisting without evidence."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Final Decision Brief",
+          "body": "Complete this one-page brief: MY IDEA: [one sentence]. MY CUSTOMER: [specific person]. THE PROBLEM: [their words, from interviews]. MY EVIDENCE: [list your strongest 3 signals]. MY SCORECARD: [total weighted score]. MY DECISION: [GO / NOT YET / PIVOT TO ___]. MY NEXT ACTION: [specific, within 48 hours]. Congratulations — you've completed Course 2. 🎉"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the minimum confidence meter score for \"Problem\" and \"Demand\" to proceed?",
+          "type": "mcq",
+          "options": [
+            "3/10",
+            "5/10",
+            "7/10",
+            "10/10"
+          ],
+          "correctIndex": 2,
+          "explanation": "You need 7+ confidence on both Problem (is it real?) and Demand (do people want a solution?) before investing significant time and money in building."
+        },
+        {
+          "question": "Deciding \"Not Yet\" after this course is a sign of failure.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Not Yet\" is a perfectly valid, data-driven decision. It means you need more evidence or a pivot. It's infinitely better than blindly proceeding without validation."
+        },
+        {
+          "question": "After completing this course with a \"GO\" decision, what should you do next?",
+          "type": "mcq",
+          "options": [
+            "Immediately build the full product",
+            "Move to Course 3: Customer Research & Validation for deeper understanding",
+            "Quit your job immediately",
+            "Write a 100-page business plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "A \"GO\" decision means your idea has merit — but you still need deeper customer research before building. Course 3 teaches systematic customer understanding."
+        }
+      ]
+    }
+  ]
+}

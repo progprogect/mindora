@@ -1,0 +1,1592 @@
+{
+  "id": "eat-well-live-well",
+  "title": "Eat Well, Live Well",
+  "subtitle": "Your Complete Nutrition Foundation",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "ew-mod-1",
+      "title": "Understanding What You Eat",
+      "subtitle": "Build a clear, science-backed understanding of how food works in your body — from macronutrients and gut health to how modern food is processed and what your body actually needs.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding the fundamentals of nutrition and how food affects your body",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "ew-mod-2",
+      "title": "Eating for Energy, Performance & Longevity",
+      "subtitle": "Learn how to eat in ways that optimise your daily energy, protect your long-term health and support your brain, muscles and metabolism.",
+      "days": "Lessons 8–14",
+      "skill": "Choosing foods that maximise energy, protect health and support longevity",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "ew-mod-3",
+      "title": "Building Lasting Food Habits",
+      "subtitle": "Master the practical, psychological and social side of nutrition — building sustainable habits that work in real life, not just on paper.",
+      "days": "Lessons 15–21",
+      "skill": "Designing a personal nutrition strategy that lasts",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ew-8-blood-sugar",
+      "dayNumber": 8,
+      "title": "Blood Sugar Balance: The Energy Rollercoaster",
+      "subtitle": "Why blood sugar is the master switch for your daily energy — and how to keep it stable all day",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-8-c1",
+          "front": "What is blood sugar and why does it matter for daily energy?",
+          "back": "Blood sugar (blood glucose) is the main fuel your brain and cells run on. When it's stable, you feel alert, focused and energised. When it spikes and crashes — after refined carbs or sugary food — you experience the classic energy rollercoaster: a short burst of energy followed by fatigue, irritability, brain fog and cravings. Chronically unstable blood sugar is a root cause of type 2 diabetes and metabolic disease."
+        },
+        {
+          "id": "ew-8-c2",
+          "front": "What causes blood sugar spikes and crashes?",
+          "back": "Foods that digest quickly — refined carbohydrates, sugar, white bread, processed snacks, sugary drinks — flood the bloodstream with glucose rapidly. The body responds by releasing a large dose of insulin to clear the glucose. If insulin overshoots, blood sugar drops sharply, triggering fatigue, hunger and cravings for more sugar. This cycle repeats throughout the day in people eating a typical Western diet."
+        },
+        {
+          "id": "ew-8-c3",
+          "front": "Which foods keep blood sugar stable?",
+          "back": "Foods high in fibre, protein and healthy fat slow glucose absorption and produce gradual, sustained energy. These include: vegetables, legumes (lentils, chickpeas, beans), whole grains (oats, quinoa, brown rice), eggs, nuts, seeds and quality protein. They have a low glycaemic impact — they raise blood sugar slowly without triggering a large insulin spike."
+        },
+        {
+          "id": "ew-8-c4",
+          "front": "What is the \"food order\" trick for better blood sugar?",
+          "back": "Research by Dr Jessie Inchauspé (Glucose Goddess) shows that the order in which you eat your food significantly affects blood sugar response. Eating vegetables and protein before carbohydrates at any meal reduces post-meal glucose spikes by up to 73%. Start with salad or vegetables, then protein/fat, and eat carbohydrates last. This requires no change to what you eat — just the sequence."
+        },
+        {
+          "id": "ew-8-c5",
+          "front": "What is insulin resistance and how does food cause it?",
+          "back": "Insulin resistance occurs when cells become less responsive to insulin — requiring the pancreas to produce more and more to do the same job. Over years, this leads to chronically elevated blood sugar, weight gain (particularly around the abdomen), fatigue, brain fog and eventually type 2 diabetes. It's primarily caused by chronically eating too many refined carbohydrates and ultra-processed food, combined with inactivity."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-8-q1",
+          "question": "What causes the classic energy \"crash\" about an hour after eating sugary food?",
+          "options": [
+            "The food runs out of vitamins",
+            "Insulin overshoots, dropping blood sugar too low after a spike",
+            "You need to drink more water",
+            "Your metabolism speeds up temporarily"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sugary or refined food causes a rapid blood glucose spike, triggering a large insulin release. If insulin production overshoots, blood sugar drops below normal levels, causing fatigue, brain fog, irritability and hunger — the classic energy crash."
+        },
+        {
+          "id": "ew-8-q2",
+          "question": "According to research on food order, eating vegetables and protein before carbohydrates can reduce post-meal glucose spikes by how much?",
+          "options": [
+            "10–15%",
+            "20–30%",
+            "Up to 73%",
+            "Up to 90%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research published by Dr Jessie Inchauspé shows that eating vegetables first, then protein/fat, then carbohydrates at the same meal can reduce the post-meal glucose spike by up to 73% — with no change to what you eat, just the order."
+        },
+        {
+          "id": "ew-8-q3",
+          "question": "Which of these foods is best for stable blood sugar?",
+          "options": [
+            "White bread with jam",
+            "Sugary breakfast cereal with skimmed milk",
+            "Lentils with vegetables and olive oil",
+            "A commercial energy drink"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lentils are high in fibre and protein, slowing glucose absorption and producing a gradual, sustained energy release. The vegetables add further fibre and micronutrients, while olive oil slows digestion. This combination creates a low glycaemic response."
+        }
+      ]
+    },
+    {
+      "id": "ew-9-protein-muscle",
+      "dayNumber": 9,
+      "title": "Protein and Muscle: Eating to Stay Strong",
+      "subtitle": "Why protein is the most important macronutrient for body composition, strength and long-term independence",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-9-c1",
+          "front": "Why is protein so important beyond just building muscle?",
+          "back": "Protein is the structural material of your body — it builds and repairs muscle, bone, skin, hair, enzymes, hormones and antibodies. Every cell depends on proteins. Adequate protein intake reduces appetite (it's the most satiating macronutrient), preserves lean muscle during weight loss, supports immune function and slows age-related muscle loss (sarcopenia). Peter Attia calls protein \"the most underconsumed macronutrient.\""
+        },
+        {
+          "id": "ew-9-c2",
+          "front": "What is muscle protein synthesis and why does it matter?",
+          "back": "Muscle protein synthesis (MPS) is the process by which your body builds new muscle tissue. It's triggered by two things: resistance exercise and dietary protein. Your body constantly breaks down old muscle protein (muscle protein breakdown) and rebuilds it. When synthesis exceeds breakdown — through adequate protein and exercise — you maintain or build muscle. When breakdown exceeds synthesis — through low protein or inactivity — you gradually lose it."
+        },
+        {
+          "id": "ew-9-c3",
+          "front": "What are the best protein sources?",
+          "back": "Complete proteins (containing all essential amino acids) include: eggs, dairy (Greek yoghurt, cottage cheese), meat, poultry, fish and seafood. Plant-based complete proteins include: soy (edamame, tofu, tempeh), quinoa and hemp seeds. Incomplete plant proteins (legumes, nuts, grains) can be combined over the day to provide all essential amino acids. Variety across sources ensures a full amino acid spectrum."
+        },
+        {
+          "id": "ew-9-c4",
+          "front": "Does spreading protein intake throughout the day matter?",
+          "back": "Yes. Research suggests the body can only use roughly 30–40g of protein per meal for muscle protein synthesis — excess is used for energy or excreted. Spreading protein across 3–4 meals (rather than eating it all at dinner) maximises muscle-building signals throughout the day. Aim for 20–40g protein per meal rather than a single large dose."
+        },
+        {
+          "id": "ew-9-c5",
+          "front": "Can you eat too much protein?",
+          "back": "For healthy adults, eating up to 2–2.5g/kg body weight is well tolerated and safe according to current research. The concern about kidney damage from high protein is largely relevant to people with pre-existing kidney disease, not healthy individuals. The more common problem is eating too little protein — especially over 50, when muscle loss accelerates and protein needs increase."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-9-q1",
+          "question": "What are the two main triggers for muscle protein synthesis?",
+          "options": [
+            "Sleeping and eating carbohydrates",
+            "Resistance exercise and dietary protein",
+            "Cardio exercise and dietary fat",
+            "Hydration and vitamin D"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle protein synthesis — the rebuilding of muscle tissue — is primarily stimulated by resistance exercise (strength training) and adequate dietary protein. Both signals together produce much greater muscle-building response than either alone."
+        },
+        {
+          "id": "ew-9-q2",
+          "question": "Approximately how much protein per meal can the body use for muscle synthesis?",
+          "options": [
+            "5–10g",
+            "15–20g",
+            "30–40g",
+            "60–80g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests the body can utilise roughly 30–40g of protein per meal for muscle protein synthesis. Eating more than this at once doesn't produce proportionally greater muscle-building — which is why distributing protein across 3–4 meals is more effective than eating most of it in one sitting."
+        },
+        {
+          "id": "ew-9-q3",
+          "question": "Which of these is a plant-based complete protein source?",
+          "options": [
+            "Brown rice",
+            "Chickpeas",
+            "Tofu (soy)",
+            "Almonds"
+          ],
+          "correctIndex": 2,
+          "explanation": "Soy products like tofu, tempeh and edamame are among the few plant foods that contain all essential amino acids in adequate amounts — making them complete proteins. Brown rice, chickpeas and almonds are incomplete proteins that benefit from being combined with other plant protein sources."
+        }
+      ]
+    },
+    {
+      "id": "ew-10-healthy-fats",
+      "dayNumber": 10,
+      "title": "Healthy Fats: What to Eat and What to Avoid",
+      "subtitle": "Rehabilitating dietary fat — understanding omega-3s, olive oil and why the right fats are essential for brain and heart health",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-10-c1",
+          "front": "Why did dietary fat get such a bad reputation?",
+          "back": "In the 1960s–1980s, flawed research (partly funded by the sugar industry) led to the conclusion that dietary fat — especially saturated fat — caused heart disease. The resulting \"low-fat\" movement caused fat to be replaced with refined carbohydrates and sugar in processed foods, which almost certainly made the obesity and diabetes epidemics worse. The science has now shifted significantly: fat type matters far more than fat quantity."
+        },
+        {
+          "id": "ew-10-c2",
+          "front": "What are omega-3 fatty acids and why are they so important?",
+          "back": "Omega-3s (particularly EPA and DHA) are essential fatty acids — your body can't make them, so you must eat them. They build cell membranes throughout the body (especially the brain, which is 60% fat), reduce inflammation, protect cardiovascular health, support mood and reduce depression risk. The richest sources are oily fish: salmon, mackerel, sardines, anchovies and herring. Plant-based sources (flaxseed, walnuts, chia) provide ALA, which converts to DHA less efficiently."
+        },
+        {
+          "id": "ew-10-c3",
+          "front": "Why is extra virgin olive oil considered the gold standard cooking fat?",
+          "back": "Extra virgin olive oil (EVOO) is rich in oleic acid (a monounsaturated fat) and over 30 phenolic compounds with powerful anti-inflammatory properties. The PREDIMED study — the largest dietary intervention trial of its kind — found that a Mediterranean diet supplemented with extra EVOO reduced cardiovascular events by 30% and reduced risk of type 2 diabetes, breast cancer and cognitive decline. Use it generously on salads and for low-to-medium heat cooking."
+        },
+        {
+          "id": "ew-10-c4",
+          "front": "What fats should you limit or avoid?",
+          "back": "Trans fats (partially hydrogenated oils, found in some processed foods and margarines) are the most harmful — they raise LDL cholesterol, lower HDL cholesterol and directly increase heart disease risk. Most developed countries have now banned or restricted them. Excess refined seed oils (corn oil, sunflower oil, soybean oil) — high in omega-6 and used in most processed food — may promote inflammation when they heavily outweigh omega-3 intake."
+        },
+        {
+          "id": "ew-10-c5",
+          "front": "What is the most practical fat-related nutrition change most people can make?",
+          "back": "Replace the fats you cook with. Swap refined vegetable oils (sunflower, vegetable blends) for extra virgin olive oil. Eat oily fish 2–3 times per week for omega-3s. Snack on nuts (especially walnuts) and avocado rather than processed snacks. These three changes shift your fat profile significantly toward anti-inflammatory, heart-protective patterns without requiring major dietary overhaul."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-10-q1",
+          "question": "What did the PREDIMED study find about extra virgin olive oil and cardiovascular health?",
+          "options": [
+            "It had no significant effect",
+            "It increased cardiovascular risk",
+            "A Mediterranean diet with extra EVOO reduced cardiovascular events by 30%",
+            "Only Spanish people benefited"
+          ],
+          "correctIndex": 2,
+          "explanation": "The PREDIMED trial found that a Mediterranean diet supplemented with extra virgin olive oil (or nuts) reduced major cardiovascular events by 30% compared to a low-fat diet control. It also reduced risk of type 2 diabetes, breast cancer and cognitive decline."
+        },
+        {
+          "id": "ew-10-q2",
+          "question": "Why are omega-3 fatty acids classified as \"essential\"?",
+          "options": [
+            "They taste essential",
+            "The body cannot produce them — they must come from food",
+            "They are only found in expensive foods",
+            "They are essential only for athletes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Essential fatty acids are those the human body cannot synthesise on its own. Omega-3s (EPA and DHA) must come from diet. They are critical for brain structure, reducing inflammation, cardiovascular health and mood regulation."
+        },
+        {
+          "id": "ew-10-q3",
+          "question": "Which type of fat is considered most harmful to cardiovascular health?",
+          "options": [
+            "Saturated fat from dairy",
+            "Monounsaturated fat from olive oil",
+            "Trans fat (partially hydrogenated oils)",
+            "Omega-3 fat from fish"
+          ],
+          "correctIndex": 2,
+          "explanation": "Trans fats (partially hydrogenated oils) are the most harmful dietary fat — they raise LDL (bad) cholesterol, lower HDL (good) cholesterol and directly increase heart disease risk. Most developed countries have now banned or heavily restricted them in food production."
+        }
+      ]
+    },
+    {
+      "id": "ew-11-longevity-diet",
+      "dayNumber": 11,
+      "title": "The Longevity Diet: What the Research Says",
+      "subtitle": "What the world's longest-lived populations actually eat — and the evidence-based dietary patterns linked to a longer, healthier life",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-11-c1",
+          "front": "What is the Mediterranean diet and why is it so well-researched?",
+          "back": "The Mediterranean diet is the most studied dietary pattern in nutrition science, with decades of research linking it to reduced risk of heart disease, cancer, Alzheimer's, depression and all-cause mortality. It emphasises: abundant vegetables, fruits, legumes and whole grains; olive oil as the primary fat; regular fish; moderate dairy and poultry; limited red meat; and moderate wine with meals. It's a pattern of eating, not a strict regime."
+        },
+        {
+          "id": "ew-11-c2",
+          "front": "What do the \"Blue Zones\" teach us about diet and longevity?",
+          "back": "Blue Zones (Sardinia, Okinawa, Ikaria, Nicoya, Loma Linda) are regions with the world's highest concentrations of centenarians. Despite cultural differences, their diets share common patterns: predominantly plant-based, beans as a staple, minimal meat, unprocessed whole food, moderate calorie intake and meals eaten with others. None follow a specific named diet — they simply eat real, varied food in moderate amounts."
+        },
+        {
+          "id": "ew-11-c3",
+          "front": "What does Peter Attia's \"Outlive\" say about nutrition and longevity?",
+          "back": "Attia argues that the biggest dietary levers for longevity are: adequate protein (1.6g/kg+) to preserve muscle and avoid sarcopenia; limiting ultra-processed food; moderate calorie intake without chronic overconsumption; and time-restricted eating to support metabolic health. He is sceptical of extreme dietary dogma and emphasises personalised metabolic testing over one-size-fits-all prescriptions."
+        },
+        {
+          "id": "ew-11-c4",
+          "front": "What does Michael Greger's \"How Not to Die\" conclude about plant-based eating?",
+          "back": "Greger's analysis of the largest epidemiological studies concludes that a whole-food plant-based diet most consistently protects against the 15 leading causes of death, particularly heart disease, cancer and type 2 diabetes. He identifies his \"Daily Dozen\" — including dark leafy greens, berries, cruciferous vegetables, legumes, nuts and flaxseed — as the most evidence-backed longevity foods."
+        },
+        {
+          "id": "ew-11-c5",
+          "front": "What is the practical longevity nutrition summary?",
+          "back": "Despite expert disagreements on details, there is overwhelming consensus on the fundamentals: eat mostly whole plant foods; eat oily fish regularly; use olive oil; eat legumes frequently; minimise ultra-processed food and refined sugar; avoid smoking and excessive alcohol; maintain a healthy body weight. You don't need to pick a camp (carnivore, vegan, keto) — just follow the consensus fundamentals consistently."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-11-q1",
+          "question": "What do the \"Blue Zones\" — regions with the world's longest-lived populations — have in common nutritionally?",
+          "options": [
+            "They all follow strict ketogenic diets",
+            "They predominantly eat plant-based whole foods with beans as a staple",
+            "They eat very high amounts of animal protein",
+            "They fast for 3 days every week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Despite being geographically and culturally diverse, all Blue Zone populations eat predominantly plant-based diets with beans as a staple, minimal meat, unprocessed whole food and moderate portion sizes. None follow a specific named dietary philosophy."
+        },
+        {
+          "id": "ew-11-q2",
+          "question": "According to the Mediterranean diet research, what is the primary cooking and dressing fat?",
+          "options": [
+            "Butter",
+            "Sunflower oil",
+            "Extra virgin olive oil",
+            "Coconut oil"
+          ],
+          "correctIndex": 2,
+          "explanation": "Extra virgin olive oil is the primary fat in the Mediterranean dietary pattern — used generously for cooking, dressing and dipping. It is a key source of monounsaturated fats and phenolic anti-inflammatory compounds linked to the diet's cardiovascular and cognitive benefits."
+        },
+        {
+          "id": "ew-11-q3",
+          "question": "What does Peter Attia identify as the most important dietary lever for longevity?",
+          "options": [
+            "Eliminating all carbohydrates",
+            "Adequate protein intake to preserve muscle and avoid sarcopenia",
+            "Eating only organic food",
+            "Drinking green tea three times per day"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attia emphasises that preserving muscle mass through adequate protein intake (1.6g/kg+) is one of the most important nutritional strategies for longevity. Sarcopenia (muscle loss with age) is strongly linked to reduced healthspan and earlier death."
+        }
+      ]
+    },
+    {
+      "id": "ew-12-brain-food",
+      "dayNumber": 12,
+      "title": "Eating for Your Brain",
+      "subtitle": "How food shapes your mood, focus, memory and long-term cognitive health — and what to eat to protect your brain",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-12-c1",
+          "front": "How does food directly affect brain function?",
+          "back": "Your brain uses roughly 20% of your total energy despite being only 2% of your body weight. It needs a constant supply of glucose, oxygen and micronutrients. Critically, neurotransmitters (serotonin, dopamine, GABA) are synthesised from dietary amino acids and vitamins. What you eat also determines inflammation levels in the brain — and chronic neuroinflammation is now implicated in depression, anxiety, Alzheimer's and Parkinson's disease."
+        },
+        {
+          "id": "ew-12-c2",
+          "front": "What is the gut-brain axis and how does diet affect mood?",
+          "back": "The gut-brain axis is the biochemical signalling pathway between your gut and your brain. Your gut produces 90%+ of your serotonin and communicates via the vagus nerve, immune signals and hormones. Fermented foods (kefir, yoghurt, sauerkraut, kimchi) increase beneficial gut bacteria that produce mood-regulating compounds. A 2022 Stanford study found fermented food significantly reduced inflammatory markers and improved microbiome diversity."
+        },
+        {
+          "id": "ew-12-c3",
+          "front": "What are the best foods for brain health and cognitive protection?",
+          "back": "The MIND diet (a hybrid of Mediterranean and DASH diets, designed specifically for brain health) emphasises: leafy greens (6+ servings per week), berries (especially blueberries, 2+ per week), nuts, olive oil, whole grains, fish, legumes and poultry. These foods collectively reduce risk of Alzheimer's by up to 53% in observational studies — primarily through anti-inflammatory and antioxidant effects."
+        },
+        {
+          "id": "ew-12-c4",
+          "front": "How does blood sugar stability affect focus and cognition?",
+          "back": "Your brain is exquisitely sensitive to blood sugar fluctuations. When glucose is stable (through eating protein, fibre and healthy fats), focus and memory are sharp. When blood sugar spikes then crashes — from sugary food or skipping meals — the result is brain fog, difficulty concentrating, irritability and poor working memory. Stable blood sugar is one of the most controllable factors in daily cognitive performance."
+        },
+        {
+          "id": "ew-12-c5",
+          "front": "Which nutrients are most critical for long-term brain health?",
+          "back": "Key brain nutrients include: Omega-3 DHA (builds brain cell membranes — found in oily fish), B vitamins especially B12 and folate (essential for neurotransmitter synthesis and myelin sheath maintenance), vitamin D (neuroprotective — deficiency linked to depression and cognitive decline), magnesium (regulates NMDA receptors involved in learning and memory) and antioxidants (vitamin E, polyphenols — protect against oxidative brain damage)."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-12-q1",
+          "question": "What percentage of the body's total energy does the brain consume?",
+          "options": [
+            "5%",
+            "10%",
+            "20%",
+            "30%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Despite being only 2% of body weight, the brain consumes approximately 20% of total energy expenditure. It requires a constant, steady supply of glucose, oxygen and nutrients — making stable blood sugar and nutrient-dense eating especially important for cognitive function."
+        },
+        {
+          "id": "ew-12-q2",
+          "question": "Which dietary pattern was specifically designed to protect brain health and reduce Alzheimer's risk?",
+          "options": [
+            "The Paleo diet",
+            "The MIND diet (Mediterranean-DASH for neurodegenerative delay)",
+            "The ketogenic diet",
+            "The Ornish diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "The MIND diet was developed specifically to reduce dementia and Alzheimer's risk, combining elements of the Mediterranean and DASH diets. It emphasises leafy greens, berries, nuts, fish, olive oil and whole grains. Observational studies suggest it reduces Alzheimer's risk by up to 53%."
+        },
+        {
+          "id": "ew-12-q3",
+          "question": "Which omega-3 fatty acid is most important for brain cell structure?",
+          "options": [
+            "ALA (from flaxseed)",
+            "EPA (from fish oil)",
+            "DHA (from oily fish)",
+            "Linoleic acid"
+          ],
+          "correctIndex": 2,
+          "explanation": "DHA (docosahexaenoic acid) is the predominant omega-3 fatty acid in brain tissue and is essential for building and maintaining brain cell membranes. The brain is approximately 60% fat by dry weight, with DHA being one of its most abundant components. The richest food sources are oily fish."
+        }
+      ]
+    },
+    {
+      "id": "ew-13-meal-timing",
+      "dayNumber": 13,
+      "title": "Meal Timing: Does When You Eat Matter?",
+      "subtitle": "The science of circadian nutrition, time-restricted eating and whether breakfast is actually the most important meal of the day",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-13-c1",
+          "front": "Does the timing of meals affect metabolism and health?",
+          "back": "Yes — significantly. Your body has circadian clocks in virtually every organ that regulate metabolic processes on a 24-hour cycle. Insulin sensitivity, digestion speed and fat burning all vary by time of day. The body handles glucose more efficiently in the morning than in the evening. Eating in alignment with your circadian rhythm — more food earlier in the day, less at night — improves metabolic health markers."
+        },
+        {
+          "id": "ew-13-c2",
+          "front": "What is time-restricted eating (TRE) and what does the evidence say?",
+          "back": "Time-restricted eating means consuming all food within a set window (commonly 8–12 hours) and fasting for the remainder. Research shows TRE improves insulin sensitivity, reduces blood pressure, supports weight management and may improve cellular repair (autophagy). A practical approach: stop eating 2–3 hours before bed and delay breakfast 1–2 hours after waking. You don't need extreme fasting windows to get most of the benefit."
+        },
+        {
+          "id": "ew-13-c3",
+          "front": "Is breakfast the most important meal of the day?",
+          "back": "This claim has little scientific support — it was popularised partly by cereal manufacturers. Whether you eat breakfast matters far less than what you eat across the whole day. Some people genuinely perform better with a substantial morning meal; others function well without. What does matter: if you eat breakfast, make it high in protein and fibre (eggs, Greek yoghurt, oats) not ultra-processed cereal or pastries."
+        },
+        {
+          "id": "ew-13-c4",
+          "front": "Why is eating late at night problematic?",
+          "back": "Eating large meals close to bedtime disrupts multiple systems simultaneously: blood sugar rises and insulin is released when metabolic efficiency is lowest; digestion activity interferes with sleep quality; and it shortens your overnight fasting window, reducing time for cellular repair. Research consistently links late-night eating with worse metabolic health, poorer sleep and increased weight over time."
+        },
+        {
+          "id": "ew-13-c5",
+          "front": "How many meals per day is optimal?",
+          "back": "There is no universally optimal meal frequency. Three meals per day (with no snacking) tends to improve insulin sensitivity by allowing insulin levels to fall between meals. Constant grazing — eating every 1–2 hours — keeps insulin elevated all day, which may impair fat burning and metabolic health. The most important factors are total food quality and quantity across the day, not precise meal timing."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-13-q1",
+          "question": "When is insulin sensitivity highest — making the body best at processing glucose?",
+          "options": [
+            "Late at night",
+            "In the morning and early afternoon",
+            "During sleep",
+            "After midnight"
+          ],
+          "correctIndex": 1,
+          "explanation": "Circadian biology dictates that insulin sensitivity is highest in the morning and declines as the day progresses. This means the same meal causes a smaller blood sugar spike in the morning than in the evening — supporting the principle of eating more earlier and less later in the day."
+        },
+        {
+          "id": "ew-13-q2",
+          "question": "What eating window does most time-restricted eating research use?",
+          "options": [
+            "2–4 hours",
+            "5–6 hours",
+            "8–12 hours",
+            "16–18 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Most research on time-restricted eating uses an 8–12 hour eating window, which typically means stopping food intake 2–3 hours before bed and waiting 1–2 hours after waking before eating. This modest restriction produces metabolic benefits without the difficulty of more extreme fasting protocols."
+        },
+        {
+          "id": "ew-13-q3",
+          "question": "What did research find about the claim that breakfast is \"the most important meal of the day\"?",
+          "options": [
+            "It is definitively true for everyone",
+            "The claim has little scientific support and was partly popularised by cereal manufacturers",
+            "It is true only for children",
+            "It is true only for athletes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The idea that breakfast is universally the most important meal has little strong scientific backing. Observational correlations between breakfast-eating and better health may reflect general healthy-lifestyle habits rather than breakfast itself. The claim was actively marketed by cereal companies in the mid-20th century."
+        }
+      ]
+    },
+    {
+      "id": "ew-14-alcohol-sleep",
+      "dayNumber": 14,
+      "title": "Alcohol, Sleep and Recovery",
+      "subtitle": "What alcohol actually does to your body, how it disrupts sleep and recovery — and how to make informed choices",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-14-c1",
+          "front": "What does alcohol actually do to the body?",
+          "back": "Alcohol (ethanol) is a toxin that the liver works hard to metabolise and eliminate. It is a depressant that initially relaxes inhibitions by boosting GABA activity, then disrupts multiple systems: liver function (fatty liver, cirrhosis over time), gut microbiome (kills beneficial bacteria), immune function, hormone balance and sleep architecture. Any health benefit from moderate drinking is now disputed by large-scale research."
+        },
+        {
+          "id": "ew-14-c2",
+          "front": "How does alcohol affect sleep quality?",
+          "back": "Alcohol makes you fall asleep faster — but dramatically worsens sleep quality. It suppresses REM sleep (critical for memory consolidation and emotional processing), increases sleep fragmentation in the second half of the night, and causes rebound wakefulness as it wears off. Matthew Walker (Why We Sleep) describes alcohol as \"one of the most powerful suppressors of REM sleep known.\" Even one or two drinks reduce sleep quality measurably."
+        },
+        {
+          "id": "ew-14-c3",
+          "front": "Is there a \"safe\" level of alcohol consumption?",
+          "back": "The position has shifted. Earlier research suggested a J-curve — light drinkers had better outcomes than non-drinkers. Larger, better-controlled studies (including a 2018 Lancet analysis of 700,000 people) found no safe level for cancer risk, particularly breast, colon and liver cancer. The WHO now states: \"No level of alcohol consumption is safe for our health.\" For most adults, modest consumption is low-risk, but zero is lowest-risk."
+        },
+        {
+          "id": "ew-14-c4",
+          "front": "What impact does alcohol have on body composition and nutrition?",
+          "back": "Alcohol provides 7 calories per gram — almost as calorie-dense as fat — but with zero nutritional value (no protein, vitamins or minerals). The liver prioritises metabolising alcohol over fat burning, effectively pausing fat oxidation for hours after drinking. It also stimulates appetite, reduces willpower over food choices, disrupts gut bacteria and impairs protein synthesis — making it directly counterproductive to most body composition goals."
+        },
+        {
+          "id": "ew-14-c5",
+          "front": "What is a practical, informed approach to alcohol?",
+          "back": "The goal isn't necessarily abstinence — it's informed decision-making. If you drink, minimise frequency and quantity, avoid drinking within 3 hours of bedtime (worst time for sleep), don't drink on an empty stomach, stay hydrated and have regular alcohol-free days. Tracking your actual intake honestly often reveals it's higher than assumed. Many people find reducing alcohol markedly improves sleep, energy, mood and body composition."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-14-q1",
+          "question": "What type of sleep does alcohol most severely suppress?",
+          "options": [
+            "Deep slow-wave sleep (N3)",
+            "Light sleep (N1)",
+            "REM sleep (critical for memory and emotional processing)",
+            "Sleep onset"
+          ],
+          "correctIndex": 2,
+          "explanation": "Alcohol is a potent suppressor of REM sleep — the stage critical for memory consolidation, emotional regulation and creativity. Even moderate amounts significantly reduce REM sleep, particularly in the second half of the night, leaving you feeling unrestored despite adequate hours in bed."
+        },
+        {
+          "id": "ew-14-q2",
+          "question": "How many calories does alcohol provide per gram — and what nutritional value does it contain?",
+          "options": [
+            "4 calories per gram, with some vitamins",
+            "7 calories per gram, with zero nutritional value",
+            "9 calories per gram, with trace minerals",
+            "2 calories per gram, with antioxidants"
+          ],
+          "correctIndex": 1,
+          "explanation": "Alcohol provides 7 calories per gram — nearly as much as fat (9 cal/g) — but contains no protein, vitamins, minerals or other useful nutrients. These \"empty calories\" contribute to weight gain while delivering nothing to support health or performance."
+        },
+        {
+          "id": "ew-14-q3",
+          "question": "What did the 2018 Lancet analysis (700,000 people) conclude about safe levels of alcohol?",
+          "options": [
+            "One drink per day is safe for most adults",
+            "Red wine is protective for heart health",
+            "No level of alcohol consumption is completely safe for cancer risk",
+            "Alcohol is safe if consumed with food"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 2018 Global Burden of Disease study in The Lancet found that while light drinking had minimal cardiovascular risk, there was no safe level for cancer — particularly breast, colon and liver cancer. The study concluded that the safest level of alcohol consumption for overall health is zero."
+        }
+      ]
+    },
+    {
+      "id": "ew-1-foundations",
+      "dayNumber": 1,
+      "title": "The Foundations of Nutrition",
+      "subtitle": "What food actually is, what your body does with it, and why understanding the basics changes everything",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-1-c1",
+          "front": "What is nutrition, in the simplest terms?",
+          "back": "Nutrition is the process by which your body takes in food, breaks it down into usable components and uses those components for energy, growth, repair and regulation. Every cell in your body is built from and powered by what you eat. As Michael Pollan puts it: \"You are what you eat eats too.\""
+        },
+        {
+          "id": "ew-1-c2",
+          "front": "What are the three macronutrients and what does each do?",
+          "back": "The three macronutrients are carbohydrates (your body's primary energy source), protein (builds and repairs tissues, muscles, enzymes and hormones) and fat (provides concentrated energy, protects organs, enables hormone production and absorbs key vitamins). You need all three — the question is proportion and quality, not elimination."
+        },
+        {
+          "id": "ew-1-c3",
+          "front": "Why do so many nutrition \"rules\" contradict each other?",
+          "back": "Nutrition science is genuinely complex — your body is not a simple machine. Much popular nutrition advice is based on isolated studies, industry funding or reductionist thinking. Michael Pollan's simple heuristic cuts through the noise: \"Eat food. Not too much. Mostly plants.\" Focus on whole, minimally processed food and you'll be ahead of most dietary debates."
+        },
+        {
+          "id": "ew-1-c4",
+          "front": "What is the difference between a calorie and a nutrient?",
+          "back": "A calorie is a unit of energy — it tells you how much fuel a food provides. A nutrient is a substance your body needs to function: vitamins, minerals, amino acids, fatty acids, fibre. Two foods can have identical calories but vastly different nutrient profiles. A 200-calorie doughnut and a 200-calorie bowl of berries and nuts are not equivalent in what they deliver to your body."
+        },
+        {
+          "id": "ew-1-c5",
+          "front": "What is the single most important nutrition principle to remember?",
+          "back": "Eat mostly whole, minimally processed foods. This single principle, supported by virtually every long-term nutrition study, protects against heart disease, diabetes, cancer and cognitive decline. You don't need to count calories, track macros or follow a named diet. If you consistently choose real food over processed food, you're doing the most important thing right."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-1-q1",
+          "question": "Which of the following is NOT one of the three macronutrients?",
+          "options": [
+            "Carbohydrates",
+            "Vitamins",
+            "Protein",
+            "Fat"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three macronutrients are carbohydrates, protein and fat. Vitamins are micronutrients — needed in smaller amounts but still essential for health."
+        },
+        {
+          "id": "ew-1-q2",
+          "question": "What does Michael Pollan's food rule \"Eat food. Not too much. Mostly plants.\" emphasise?",
+          "options": [
+            "Counting calories precisely",
+            "Choosing whole, real foods over processed ones",
+            "Eating only plant-based food",
+            "Eating as little as possible"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Eat food\" means real, whole food — not processed food-like products. \"Not too much\" means moderate portions. \"Mostly plants\" means vegetables, fruits, grains and legumes should form the bulk of your diet."
+        },
+        {
+          "id": "ew-1-q3",
+          "question": "Why can two foods with the same calorie count affect your body differently?",
+          "options": [
+            "Calories are measured incorrectly",
+            "They have different nutrient profiles, fibre content and processing levels",
+            "The body only absorbs calories from certain foods",
+            "Calorie labels are always wrong"
+          ],
+          "correctIndex": 1,
+          "explanation": "A calorie measures energy, but foods also deliver (or lack) vitamins, minerals, fibre, phytonutrients and other compounds. How a food is processed also affects how quickly it's absorbed and how it impacts blood sugar, satiety and inflammation."
+        }
+      ]
+    },
+    {
+      "id": "ew-2-gut-health",
+      "dayNumber": 2,
+      "title": "Your Gut: The Engine of Health",
+      "subtitle": "How your digestive system works, why gut health matters far beyond digestion, and what feeds your microbiome",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-2-c1",
+          "front": "Why is the gut called \"the second brain\"?",
+          "back": "Your gut contains roughly 100 million neurons — more than your spinal cord — and produces over 90% of your body's serotonin (a mood-regulating neurotransmitter). The gut-brain axis is a two-way communication highway: your gut affects your mood, cognition, immunity and even sleep. As Giulia Enders explains in Gut, \"the gut is the body's largest sensory organ.\""
+        },
+        {
+          "id": "ew-2-c2",
+          "front": "What is the gut microbiome and why does it matter?",
+          "back": "Your gut microbiome is a community of roughly 38 trillion microorganisms living in your intestines — bacteria, fungi, viruses and archaea. These microbes help digest food, produce vitamins, train your immune system, regulate inflammation and influence your weight. Tim Spector's research shows that microbiome diversity is one of the strongest markers of overall health."
+        },
+        {
+          "id": "ew-2-c3",
+          "front": "What is the single best thing you can do for your gut health?",
+          "back": "Eat a diverse range of plant foods. Tim Spector's research found that people who eat 30+ different plant species per week have significantly more diverse and healthier gut microbiomes than those who eat fewer than 10. This includes vegetables, fruits, grains, legumes, nuts, seeds, herbs and spices — variety is more important than volume."
+        },
+        {
+          "id": "ew-2-c4",
+          "front": "What is fibre and why is it so important for gut health?",
+          "back": "Fibre is the indigestible part of plant foods. While you can't digest it, your gut bacteria can — they ferment fibre into short-chain fatty acids (SCFAs) that reduce inflammation, strengthen the gut lining, regulate blood sugar and may even protect against colon cancer. Most people eat roughly half the recommended 30g per day."
+        },
+        {
+          "id": "ew-2-c5",
+          "front": "What damages your gut microbiome?",
+          "back": "Ultra-processed foods, artificial sweeteners, unnecessary antibiotics, chronic stress, poor sleep and low dietary diversity all reduce microbiome diversity. A single course of broad-spectrum antibiotics can eliminate beneficial species that may take months to recover — if they recover at all. Protecting your gut means feeding it well and avoiding unnecessary damage."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-2-q1",
+          "question": "Approximately how many different plant species per week does research suggest for optimal gut health?",
+          "options": [
+            "5 or more",
+            "10 or more",
+            "30 or more",
+            "50 or more"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tim Spector's research (The Diet Myth, ZOE study) found that eating 30+ different plant species per week is associated with significantly greater microbiome diversity and better overall health markers."
+        },
+        {
+          "id": "ew-2-q2",
+          "question": "What do gut bacteria produce when they ferment dietary fibre?",
+          "options": [
+            "Glucose and fructose",
+            "Short-chain fatty acids (SCFAs)",
+            "Cholesterol",
+            "Adrenaline"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gut bacteria ferment fibre into short-chain fatty acids like butyrate, propionate and acetate. These SCFAs reduce inflammation, strengthen the gut lining and regulate blood sugar — they're a key reason fibre is so beneficial."
+        },
+        {
+          "id": "ew-2-q3",
+          "question": "Why is the gut sometimes called \"the second brain\"?",
+          "options": [
+            "It stores memories",
+            "It contains ~100 million neurons and produces most of the body's serotonin",
+            "It can think independently",
+            "It controls voluntary movement"
+          ],
+          "correctIndex": 1,
+          "explanation": "The enteric nervous system in the gut contains roughly 100 million neurons and produces over 90% of the body's serotonin. It communicates bidirectionally with the brain via the vagus nerve, influencing mood, cognition and overall wellbeing."
+        }
+      ]
+    },
+    {
+      "id": "ew-3-macronutrients",
+      "dayNumber": 3,
+      "title": "Macronutrients: Carbs, Protein and Fat",
+      "subtitle": "Understanding the three energy-providing nutrients — what they do, where to find them and how much you need",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-3-c1",
+          "front": "Are carbohydrates good or bad?",
+          "back": "Neither — the question is what type. Whole-food carbohydrates (vegetables, fruits, legumes, whole grains) come packaged with fibre, vitamins and minerals. They release energy gradually and feed your gut bacteria. Refined carbohydrates (white flour, sugar, processed snacks) have been stripped of fibre and nutrients, causing rapid blood sugar spikes. The food, not the macronutrient, determines the effect."
+        },
+        {
+          "id": "ew-3-c2",
+          "front": "How much protein do you actually need?",
+          "back": "For general health, research suggests 0.8–1.0g per kilogram of body weight per day. For active people or those over 50 (who need more to prevent muscle loss), 1.2–1.6g/kg is recommended. Peter Attia emphasises that most people, especially older adults, significantly undereat protein — which accelerates muscle loss and weakens bones."
+        },
+        {
+          "id": "ew-3-c3",
+          "front": "Why does dietary fat not automatically make you fat?",
+          "back": "Body fat is created when you consume more total energy than you burn — regardless of whether that energy comes from fat, carbs or protein. Dietary fat is essential: it provides energy, builds cell membranes, enables hormone production and helps absorb vitamins A, D, E and K. Healthy fats (olive oil, nuts, avocados, oily fish) are protective, not harmful."
+        },
+        {
+          "id": "ew-3-c4",
+          "front": "What is the difference between saturated and unsaturated fat?",
+          "back": "Saturated fats (found in butter, red meat, cheese) are solid at room temperature and — in excess — are associated with increased cardiovascular risk. Unsaturated fats (found in olive oil, nuts, avocados, fish) are liquid at room temperature and are associated with reduced heart disease risk. The goal isn't zero fat — it's replacing some saturated fat with unsaturated sources."
+        },
+        {
+          "id": "ew-3-c5",
+          "front": "Do you need to track macros to eat well?",
+          "back": "For most people, no. Macro tracking can be useful for specific goals (athletic performance, medical conditions), but it's unnecessary for general health. A simpler approach: build meals around vegetables, add a protein source, include healthy fats, and use whole-food carbohydrates as energy. This naturally produces good macronutrient balance without counting anything."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-3-q1",
+          "question": "What is the recommended daily protein intake for adults over 50 who want to maintain muscle?",
+          "options": [
+            "0.4–0.6g per kg body weight",
+            "0.8–1.0g per kg body weight",
+            "1.2–1.6g per kg body weight",
+            "2.5–3.0g per kg body weight"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research supports 1.2–1.6g of protein per kg of body weight for active people and those over 50. This higher range helps counteract age-related muscle loss (sarcopenia) and supports bone health."
+        },
+        {
+          "id": "ew-3-q2",
+          "question": "What makes refined carbohydrates different from whole-food carbohydrates?",
+          "options": [
+            "They contain more vitamins",
+            "They have been stripped of fibre and nutrients, causing rapid blood sugar spikes",
+            "They are always plant-based",
+            "They contain more protein"
+          ],
+          "correctIndex": 1,
+          "explanation": "Refining removes the fibre, vitamins and minerals that slow digestion and provide nutrition. What remains is rapidly absorbed starch or sugar that spikes blood glucose without delivering the beneficial compounds found in whole foods."
+        },
+        {
+          "id": "ew-3-q3",
+          "question": "Which vitamins require dietary fat to be absorbed?",
+          "options": [
+            "Vitamins B and C",
+            "Vitamins A, D, E and K",
+            "Vitamins B12 and folate",
+            "All vitamins equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vitamins A, D, E and K are fat-soluble — they need dietary fat to be absorbed and transported in the body. This is one reason why extremely low-fat diets can lead to nutrient deficiencies."
+        }
+      ]
+    },
+    {
+      "id": "ew-4-micronutrients",
+      "dayNumber": 4,
+      "title": "Micronutrients: The Invisible Essentials",
+      "subtitle": "Vitamins, minerals and phytonutrients — what they do, where to find them and how to get enough",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-4-c1",
+          "front": "What are micronutrients and why are they \"essential\"?",
+          "back": "Micronutrients are vitamins and minerals your body needs in small amounts but cannot produce itself — they must come from food. They're essential for energy production, immune function, bone health, brain function, DNA repair and hundreds of enzymatic reactions. Deficiency in even one micronutrient can cause fatigue, weakened immunity or long-term disease."
+        },
+        {
+          "id": "ew-4-c2",
+          "front": "What are the most common micronutrient deficiencies in modern diets?",
+          "back": "The most widespread deficiencies globally are: Vitamin D (limited sun exposure), iron (especially in women), magnesium (depleted soil, low vegetable intake), vitamin B12 (especially in plant-based diets), omega-3 fatty acids (low oily fish intake) and iodine. Many people eating a typical Western diet are technically \"overfed but undernourished.\""
+        },
+        {
+          "id": "ew-4-c3",
+          "front": "What are phytonutrients and why should you care?",
+          "back": "Phytonutrients (or phytochemicals) are protective compounds produced by plants — they give fruits and vegetables their colours. They include polyphenols, carotenoids, flavonoids and glucosinolates. Research shows they reduce inflammation, protect against cancer, support cardiovascular health and improve cognitive function. Eating a \"rainbow\" of colours ensures diverse phytonutrient intake."
+        },
+        {
+          "id": "ew-4-c4",
+          "front": "Is a supplement as good as getting nutrients from food?",
+          "back": "Generally, no. Nutrients in whole food come packaged with cofactors, fibre and other compounds that enhance absorption and effectiveness. Studies consistently show that nutrients from food are associated with health benefits, while the same nutrients in supplement form often show no benefit — and sometimes harm. Supplements make sense for specific deficiencies (e.g., vitamin D, B12) but cannot replace a poor diet."
+        },
+        {
+          "id": "ew-4-c5",
+          "front": "What is the simplest way to ensure you get enough micronutrients?",
+          "back": "Eat a wide variety of colourful, whole plant foods. Each colour represents different phytonutrients: red (lycopene), orange (beta-carotene), green (sulforaphane, folate), purple/blue (anthocyanins), white (allicin). Aim for variety across the week, not perfection at every meal. If you eat 30+ different plants per week, micronutrient deficiency becomes very unlikely."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-4-q1",
+          "question": "Why are nutrients from whole food generally better than supplements?",
+          "options": [
+            "Supplements are always harmful",
+            "Food provides nutrients alongside cofactors and fibre that enhance absorption",
+            "The body cannot absorb supplements at all",
+            "Supplements are too expensive to be effective"
+          ],
+          "correctIndex": 1,
+          "explanation": "Whole foods deliver nutrients in a complex matrix with fibre, cofactors and synergistic compounds that enhance absorption and effectiveness. Isolated nutrients in supplements often lack these benefits and may behave differently in the body."
+        },
+        {
+          "id": "ew-4-q2",
+          "question": "What do the different colours of fruits and vegetables represent?",
+          "options": [
+            "Different calorie levels",
+            "Different phytonutrients with unique health benefits",
+            "How ripe the food is",
+            "How much sugar they contain"
+          ],
+          "correctIndex": 1,
+          "explanation": "Plant colours come from phytonutrients — protective compounds with specific health benefits. Red indicates lycopene, orange indicates beta-carotene, purple/blue indicates anthocyanins, and green indicates compounds like sulforaphane and chlorophyll."
+        },
+        {
+          "id": "ew-4-q3",
+          "question": "Which of these is one of the most common micronutrient deficiencies in modern diets?",
+          "options": [
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin A",
+            "Biotin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vitamin D deficiency is extremely common, especially in northern latitudes where sun exposure is limited. It affects bone health, immunity, mood and inflammation. Many health authorities recommend supplementation during winter months."
+        }
+      ]
+    },
+    {
+      "id": "ew-5-processed-food",
+      "dayNumber": 5,
+      "title": "Ultra-Processed Food: What It Is and Why It Matters",
+      "subtitle": "Understanding the difference between processed and ultra-processed food — and why it's the biggest nutrition issue of our time",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-5-c1",
+          "front": "What is the difference between processed and ultra-processed food?",
+          "back": "All cooking is \"processing.\" The NOVA classification distinguishes between minimally processed (cutting, cooking, fermenting), processed (adding salt, oil, sugar to whole foods) and ultra-processed (industrial formulations made mostly from extracted substances and additives — not recognisable as food from a kitchen). Ultra-processed foods (UPFs) now make up 50–60% of calories in the UK and US diet."
+        },
+        {
+          "id": "ew-5-c2",
+          "front": "Why are ultra-processed foods harmful?",
+          "back": "UPFs are engineered to be hyper-palatable (hard to stop eating), calorie-dense but nutrient-poor, and rapidly absorbed. Research links high UPF intake to obesity, type 2 diabetes, heart disease, depression, cancer and earlier death — independent of their sugar, salt or fat content. It appears the processing itself, not just the ingredients, causes harm through mechanisms including gut microbiome disruption and inflammation."
+        },
+        {
+          "id": "ew-5-c3",
+          "front": "How can you identify ultra-processed food?",
+          "back": "Check the ingredients list. If it contains substances you wouldn't find in a home kitchen — emulsifiers, maltodextrin, high-fructose corn syrup, modified starches, hydrogenated oils, flavourings, colours — it's likely ultra-processed. A good rule: if the ingredients list is long and contains things your grandmother wouldn't recognise, be cautious."
+        },
+        {
+          "id": "ew-5-c4",
+          "front": "Does \"healthy\" branding mean a product isn't ultra-processed?",
+          "back": "Not at all. Many products marketed as healthy — protein bars, flavoured yoghurts, plant milks with additives, breakfast cereals, diet ready meals — are heavily ultra-processed. Marketing terms like \"natural,\" \"high protein,\" \"low fat\" or \"wholegrain\" have no regulated meaning and often disguise highly processed products. Always read the actual ingredients list."
+        },
+        {
+          "id": "ew-5-c5",
+          "front": "What is the practical takeaway about processed food?",
+          "back": "You don't need to be perfect. The goal isn't zero processed food — it's shifting the balance. If ultra-processed foods currently make up 50%+ of your diet, reducing to 30–40% makes a meaningful difference. Swap one UPF per day for a whole-food alternative: a handful of nuts instead of a cereal bar, an apple instead of crisps, home-cooked meals instead of ready meals."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-5-q1",
+          "question": "Approximately what percentage of calories in the typical UK/US diet come from ultra-processed foods?",
+          "options": [
+            "10–20%",
+            "25–35%",
+            "50–60%",
+            "75–85%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies show that ultra-processed foods now account for 50–60% of total calorie intake in the UK and US. This is a dramatic shift from just 50 years ago and correlates with rising rates of obesity, diabetes and other chronic diseases."
+        },
+        {
+          "id": "ew-5-q2",
+          "question": "What is the best way to identify ultra-processed food in a shop?",
+          "options": [
+            "Check the calorie count",
+            "Look for the ingredients list — long lists with unfamiliar additives indicate UPF",
+            "Choose items with \"natural\" on the label",
+            "Only buy organic products"
+          ],
+          "correctIndex": 1,
+          "explanation": "The ingredients list is the most reliable indicator. Ultra-processed foods typically contain long lists of substances not found in home kitchens: emulsifiers, modified starches, flavourings, colours and hydrogenated oils. Front-of-pack marketing claims are unreliable."
+        },
+        {
+          "id": "ew-5-q3",
+          "question": "Why are ultra-processed foods harmful beyond just their sugar/salt/fat content?",
+          "options": [
+            "They taste bad",
+            "The processing itself disrupts the gut microbiome and promotes inflammation",
+            "They are always more expensive",
+            "They contain no calories"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that ultra-processed foods cause harm through mechanisms beyond their macronutrient profile — including disrupting the gut microbiome, promoting systemic inflammation, being hyper-palatable (causing overconsumption) and displacing whole foods from the diet."
+        }
+      ]
+    },
+    {
+      "id": "ew-6-hydration",
+      "dayNumber": 6,
+      "title": "Hydration: More Than Just Drinking Water",
+      "subtitle": "How hydration affects your energy, brain function and health — and how to get it right without overthinking it",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-6-c1",
+          "front": "Why does hydration matter so much for performance and health?",
+          "back": "Your body is roughly 60% water. Even mild dehydration (1–2% body weight loss) impairs concentration, increases fatigue, worsens mood, reduces physical performance and can trigger headaches. Chronic low-level dehydration is associated with higher rates of kidney stones, urinary tract infections and may contribute to constipation and poor skin health."
+        },
+        {
+          "id": "ew-6-c2",
+          "front": "How much water do you actually need per day?",
+          "back": "There's no universal number. A reasonable baseline is 1.5–2.5 litres per day for most adults, but needs vary with body size, climate, activity level and diet (water-rich foods count). The best indicator is urine colour: pale straw = well hydrated, dark yellow = drink more. Thirst is a late signal — by the time you feel thirsty, you may already be mildly dehydrated."
+        },
+        {
+          "id": "ew-6-c3",
+          "front": "Do tea, coffee and other drinks count toward hydration?",
+          "back": "Yes. Despite the myth that caffeine dehydrates you, moderate coffee and tea consumption (3–4 cups per day) contributes to net hydration. The fluid content outweighs caffeine's mild diuretic effect. Herbal teas, milk, juice and water-rich foods (cucumber, watermelon, oranges, soups) all contribute. Only alcohol is a net dehydrator."
+        },
+        {
+          "id": "ew-6-c4",
+          "front": "What are the signs of chronic mild dehydration?",
+          "back": "Many people live in a state of chronic mild dehydration without realising it. Signs include: persistent low energy, afternoon fatigue, frequent headaches, difficulty concentrating, darker urine, dry skin, constipation and feeling hungry when you're actually thirsty. Simply increasing water intake often resolves these symptoms within days."
+        },
+        {
+          "id": "ew-6-c5",
+          "front": "What is the simplest hydration strategy?",
+          "back": "Drink a large glass of water first thing in the morning (you wake dehydrated after 7–8 hours without fluid), keep water visible and accessible throughout the day, drink before meals and check your urine colour periodically. Don't overthink it — consistent, moderate intake throughout the day beats trying to drink large volumes at once."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-6-q1",
+          "question": "What is the best indicator of whether you are well hydrated?",
+          "options": [
+            "How thirsty you feel",
+            "Urine colour — pale straw indicates good hydration",
+            "How much you sweat",
+            "Your body temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Urine colour is the most practical, reliable indicator of hydration status. Pale straw colour indicates good hydration; dark yellow or amber suggests you need more fluid. Thirst is a late signal that appears after dehydration has already begun."
+        },
+        {
+          "id": "ew-6-q2",
+          "question": "Does moderate coffee consumption (3–4 cups/day) dehydrate you?",
+          "options": [
+            "Yes, caffeine causes severe dehydration",
+            "No — the fluid content outweighs caffeine's mild diuretic effect",
+            "Only if you drink it black",
+            "Only in hot weather"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that moderate coffee and tea intake contributes to net hydration. While caffeine has a mild diuretic effect, the volume of fluid consumed with coffee far exceeds any additional water loss. Only alcohol is a significant net dehydrator."
+        },
+        {
+          "id": "ew-6-q3",
+          "question": "At what level of dehydration do cognitive performance and mood start to decline?",
+          "options": [
+            "5–6% body weight loss",
+            "3–4% body weight loss",
+            "1–2% body weight loss",
+            "Only when severely dehydrated"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that even mild dehydration — just 1–2% of body weight in fluid loss — is enough to impair concentration, increase fatigue, worsen mood and reduce physical performance. Most people don't notice this level of dehydration."
+        }
+      ]
+    },
+    {
+      "id": "ew-7-inflammation",
+      "dayNumber": 7,
+      "title": "Inflammation: How Food Heals or Harms",
+      "subtitle": "Understanding chronic inflammation — the silent driver of disease — and how your food choices directly control it",
+      "moduleId": "ew-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-7-c1",
+          "front": "What is inflammation and when is it helpful vs harmful?",
+          "back": "Acute inflammation is your body's healing response — redness, swelling and heat after an injury signal that repair is underway. This is helpful and temporary. Chronic low-grade inflammation is different: it's a persistent, system-wide immune response that damages tissues slowly over years. It's now recognised as a root driver of heart disease, cancer, diabetes, Alzheimer's and depression."
+        },
+        {
+          "id": "ew-7-c2",
+          "front": "How does food cause or reduce chronic inflammation?",
+          "back": "Ultra-processed foods, refined sugar, excess alcohol, trans fats and a diet low in fibre and plant foods promote chronic inflammation. Conversely, vegetables, fruits, omega-3 fats (oily fish, walnuts, flaxseed), polyphenol-rich foods (berries, dark chocolate, green tea, turmeric) and a diverse microbiome actively reduce inflammation. Your diet is the single most controllable inflammatory lever."
+        },
+        {
+          "id": "ew-7-c3",
+          "front": "What is the connection between gut health and inflammation?",
+          "back": "When the gut lining is damaged (by poor diet, stress or antibiotics), bacteria and toxins can \"leak\" into the bloodstream — triggering systemic immune activation. This \"intestinal permeability\" is now linked to autoimmune conditions, depression and metabolic disease. Fibre, fermented foods and polyphenols strengthen the gut barrier; ultra-processed food and alcohol weaken it."
+        },
+        {
+          "id": "ew-7-c4",
+          "front": "Which foods are the most powerfully anti-inflammatory?",
+          "back": "The strongest anti-inflammatory foods include: oily fish (salmon, mackerel, sardines — rich in omega-3), berries (especially blueberries, strawberries), leafy greens (spinach, kale), nuts (walnuts, almonds), extra virgin olive oil, turmeric, ginger, green tea and dark chocolate (>70% cocoa). Michael Greger's research shows that eating these consistently reduces inflammatory markers measurably."
+        },
+        {
+          "id": "ew-7-c5",
+          "front": "What is the practical takeaway for managing inflammation through food?",
+          "back": "You don't need to be perfect. Focus on two shifts: 1) Increase anti-inflammatory foods — more vegetables, berries, oily fish, nuts, olive oil and herbs/spices daily. 2) Reduce pro-inflammatory foods — less ultra-processed food, refined sugar, excessive red meat and alcohol. Even modest shifts in this balance reduce inflammatory markers within weeks."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-7-q1",
+          "question": "What is chronic low-grade inflammation linked to?",
+          "options": [
+            "Only joint pain",
+            "Heart disease, cancer, diabetes, Alzheimer's and depression",
+            "Only digestive problems",
+            "Only skin conditions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chronic low-grade inflammation is now recognised as a root driver of most major chronic diseases including cardiovascular disease, cancer, type 2 diabetes, Alzheimer's disease and clinical depression. It operates silently over years before symptoms appear."
+        },
+        {
+          "id": "ew-7-q2",
+          "question": "Which of these is a strongly anti-inflammatory food?",
+          "options": [
+            "White bread",
+            "Oily fish like salmon and mackerel",
+            "Sugary breakfast cereal",
+            "Processed deli meat"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oily fish (salmon, mackerel, sardines) are rich in omega-3 fatty acids (EPA and DHA) which are among the most potent natural anti-inflammatory compounds. Regular consumption measurably reduces inflammatory markers in the blood."
+        },
+        {
+          "id": "ew-7-q3",
+          "question": "How does a damaged gut lining contribute to chronic inflammation?",
+          "options": [
+            "It stops you absorbing vitamins",
+            "Bacteria and toxins leak into the bloodstream, triggering systemic immune activation",
+            "It makes food taste different",
+            "It speeds up digestion too much"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the gut barrier is compromised (intestinal permeability), bacterial fragments and toxins enter the bloodstream. The immune system responds with chronic, low-grade inflammation throughout the body — now linked to autoimmune conditions, metabolic disease and depression."
+        }
+      ]
+    },
+    {
+      "id": "ew-15-why-diets-fail",
+      "dayNumber": 15,
+      "title": "Why Diets Fail (and What Works Instead)",
+      "subtitle": "Understanding the psychology and biology behind why most diets don't stick — and what the evidence says actually works long-term",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-15-c1",
+          "front": "Why do most diets fail within a year?",
+          "back": "Studies show 80–95% of people who lose weight on a diet regain it within one to five years. The main reasons: restriction triggers biological hunger responses (hunger hormones rise, metabolism slows when calories drop), willpower is a finite resource that depletes under stress, and diets require sustained effort against your biology rather than changing the environment and habits that created the problem."
+        },
+        {
+          "id": "ew-15-c2",
+          "front": "What is the \"restrict-binge cycle\" and how does it work?",
+          "back": "The restrict-binge cycle is a predictable pattern: strict restriction leads to deprivation, which increases cravings and preoccupation with food. Eventually willpower gives way (especially under stress or social pressure) and overeating occurs. This is followed by guilt, further restriction — and the cycle repeats. Research shows that restriction itself (not a lack of willpower) is the primary cause of overeating in people who diet repeatedly."
+        },
+        {
+          "id": "ew-15-c3",
+          "front": "What does the evidence say actually produces lasting dietary change?",
+          "back": "The research consistently points to: gradual habit change rather than sudden overhaul, adding healthy foods before removing unhealthy ones, environmental design (changing what's available at home), building skills rather than relying on motivation, social support and identity change (\"I'm someone who eats well\" rather than \"I'm on a diet\"). Small sustainable changes maintained for months beat aggressive short-term interventions every time."
+        },
+        {
+          "id": "ew-15-c4",
+          "front": "What is the \"addition before subtraction\" strategy?",
+          "back": "Instead of starting with what you're giving up, start by adding in healthy foods. Add a serving of vegetables to lunch. Add a handful of nuts as a snack. Add water before meals. As healthy foods naturally take up more space in your diet, less room remains for unhealthy options. This approach works with psychology rather than against it — addition feels positive while restriction feels like deprivation."
+        },
+        {
+          "id": "ew-15-c5",
+          "front": "What is the single most predictive factor for long-term dietary success?",
+          "back": "Consistency over time, not perfection. Research on people who maintain major weight loss and dietary change long-term (the National Weight Control Registry) shows they don't have extraordinary willpower — they've changed their environment, routine and identity so that eating well becomes their default. \"Missing once never ruins progress. Missing twice starts a new habit.\" — James Clear, Atomic Habits."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-15-q1",
+          "question": "What percentage of people who lose weight on a diet regain it within 1–5 years?",
+          "options": [
+            "20–30%",
+            "40–50%",
+            "60–70%",
+            "80–95%"
+          ],
+          "correctIndex": 3,
+          "explanation": "Research consistently shows that 80–95% of people regain the weight lost on a diet within one to five years. This is primarily due to biological adaptations (increased hunger hormones, reduced metabolism) and the unsustainability of restriction-based approaches."
+        },
+        {
+          "id": "ew-15-q2",
+          "question": "What does the \"addition before subtraction\" strategy involve?",
+          "options": [
+            "Counting calories before tracking macros",
+            "Adding more meals before reducing portion sizes",
+            "Adding healthy foods to your diet before removing unhealthy ones",
+            "Adding exercise before changing diet"
+          ],
+          "correctIndex": 2,
+          "explanation": "The addition-before-subtraction approach starts by adding nutritious foods (vegetables, fruits, protein, water) rather than immediately removing favourites. As healthy foods take up more dietary space, unhealthy options naturally reduce. This works with psychology rather than against it."
+        },
+        {
+          "id": "ew-15-q3",
+          "question": "According to research on long-term dietary success, what is the most important factor?",
+          "options": [
+            "Extreme willpower and discipline",
+            "Following a strict named diet exactly",
+            "Consistency over time and environmental design",
+            "Counting every calorie precisely"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research on people who successfully maintain dietary change long-term shows they succeed through consistency, environmental design (changing what's available) and identity shifts — not through superior willpower. Making healthy eating the default removes the need for daily discipline."
+        }
+      ]
+    },
+    {
+      "id": "ew-16-identity-eating",
+      "dayNumber": 16,
+      "title": "Identity-Based Eating: Becoming Someone Who Eats Well",
+      "subtitle": "Why the most powerful nutritional change isn't about what you eat — it's about who you believe yourself to be",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-16-c1",
+          "front": "What is identity-based habit change and why does it work?",
+          "back": "James Clear (Atomic Habits) argues that lasting behaviour change happens at the identity level, not the outcome level. \"I'm trying to eat healthily\" is outcome-based — and fragile. \"I'm someone who takes care of their health\" is identity-based — and self-reinforcing. Every action that aligns with this identity is a vote for that identity. Over time, your behaviours and your identity converge, making healthy choices automatic rather than effortful."
+        },
+        {
+          "id": "ew-16-c2",
+          "front": "How do you start shifting your food identity?",
+          "back": "Start with small, consistent actions that align with the person you want to become. Cook one meal from scratch per week. Read ingredients labels. Bring lunch rather than buying ultra-processed food. Each of these acts, however small, is a vote for the identity \"I'm someone who takes food seriously.\" The accumulation of these small votes gradually changes how you see yourself — and how you act without thinking."
+        },
+        {
+          "id": "ew-16-c3",
+          "front": "What is the difference between \"process goals\" and \"outcome goals\" in nutrition?",
+          "back": "An outcome goal is \"I want to lose 10kg.\" A process goal is \"I will eat vegetables at every dinner this week.\" Outcome goals create motivation but offer no direction for daily action. Process goals are entirely under your control and create the behaviours that produce outcomes. Focusing on process — the daily habits — is consistently more effective than fixating on results that depend on complex, variable biology."
+        },
+        {
+          "id": "ew-16-c4",
+          "front": "How does self-compassion affect long-term eating behaviour?",
+          "back": "Research shows that self-compassion after dietary \"failures\" predicts better long-term eating than self-criticism. When people treat a bad eating day with curiosity (\"What triggered that?\") rather than shame (\"I'm weak\"), they return to healthy habits faster. Shame spirals lead to more overeating. Self-compassion interrupts this cycle. The goal is progress over perfection — one bad meal is irrelevant; the pattern matters."
+        },
+        {
+          "id": "ew-16-c5",
+          "front": "How does social identity affect what you eat?",
+          "back": "We are deeply influenced by the eating norms of our social groups. If your closest friends eat well, your chances of eating well rise dramatically. Research shows that eating behaviours are more \"contagious\" than most people realise — social norms, shared meals and what others order at restaurants all influence choices. Deliberately eating with people who share your food values, or finding a social group that supports healthy eating, is a powerful environmental lever."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-16-q1",
+          "question": "What does James Clear mean by \"identity-based habits\" in the context of eating?",
+          "options": [
+            "Following a specific diet based on your blood type",
+            "Shifting your self-image to \"someone who takes care of their health\" so healthy choices become automatic",
+            "Identifying your food intolerances",
+            "Copying the eating habits of successful people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clear argues that lasting behaviour change starts with identity — \"I am someone who eats well\" rather than \"I am trying to eat well.\" Every small healthy choice reinforces this identity until healthy eating becomes the default behaviour rather than a daily act of willpower."
+        },
+        {
+          "id": "ew-16-q2",
+          "question": "Why are process goals more effective than outcome goals for changing eating habits?",
+          "options": [
+            "Process goals are easier to measure on a scale",
+            "Process goals are entirely within your control and create the daily behaviours that produce results",
+            "Outcome goals are less motivating",
+            "Process goals require less effort"
+          ],
+          "correctIndex": 1,
+          "explanation": "Outcome goals (lose 10kg) depend on complex biology outside your full control. Process goals (eat vegetables at every dinner) are 100% within your control and create the consistent behaviours that produce outcomes over time. Focusing on process reduces anxiety and builds sustainable momentum."
+        },
+        {
+          "id": "ew-16-q3",
+          "question": "What does research show about self-compassion after a bad eating day?",
+          "options": [
+            "Self-criticism produces better results because it creates motivation",
+            "Self-compassion predicts faster return to healthy habits than self-criticism",
+            "Neither approach makes a difference",
+            "Self-compassion leads to giving up entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research consistently shows that treating dietary \"failures\" with self-compassion (curiosity rather than shame) leads to faster recovery and fewer repeat episodes of overeating. Shame and self-criticism create emotional distress that often triggers further overeating, whereas self-compassion interrupts the shame-binge cycle."
+        }
+      ]
+    },
+    {
+      "id": "ew-17-meal-planning",
+      "dayNumber": 17,
+      "title": "Simple Meal Planning That Actually Works",
+      "subtitle": "A practical, low-effort system for planning meals that saves time, reduces decision fatigue and makes healthy eating the default",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-17-c1",
+          "front": "Why is meal planning one of the highest-return nutrition habits?",
+          "back": "When you have no plan, you make food decisions when you are hungry, tired or stressed — the three states most likely to produce poor choices. Meal planning removes these decisions in advance, when you have full cognitive capacity and no hunger pressure. Studies show people who meal plan eat more vegetables, spend less on food, waste less, and eat fewer calories from ultra-processed sources."
+        },
+        {
+          "id": "ew-17-c2",
+          "front": "What is \"flexible meal planning\" and why is it more sustainable than rigid planning?",
+          "back": "Rigid meal planning (a different recipe every night) creates a high preparation burden that most people abandon within weeks. Flexible planning uses a looser structure: establish 5–7 \"template meals\" you enjoy and rotate them with small variations. Keep a batch of protein cooked, grains ready and vegetables prepped. Mix and match throughout the week. This requires planning once but cooking simply — far more sustainable than following recipes every night."
+        },
+        {
+          "id": "ew-17-c3",
+          "front": "What is the \"use a template, not a recipe\" approach?",
+          "back": "Instead of following different recipes each night, use flexible meal templates: Protein + Vegetable + Grain + Sauce. Monday: chicken + roasted broccoli + quinoa + lemon tahini. Thursday: salmon + stir-fried greens + brown rice + teriyaki. The template is the same; the ingredients vary. This dramatically reduces the cognitive load of planning while ensuring nutritionally balanced meals every night."
+        },
+        {
+          "id": "ew-17-c4",
+          "front": "What is batch cooking and how does it work practically?",
+          "back": "Batch cooking means preparing larger quantities of key components (not complete meals) on one or two days per week. Common batch items: cooked grains (oats, rice, quinoa), roasted vegetables, cooked legumes, a large protein source (whole chicken, poached fish, boiled eggs). These components take minutes to assemble into a variety of meals throughout the week, replacing the need to cook from scratch daily."
+        },
+        {
+          "id": "ew-17-c5",
+          "front": "What is the most common reason meal planning fails and how do you avoid it?",
+          "back": "Over-ambition. Most people plan elaborate meals requiring 45–60 minutes of cooking every night, burn out within two weeks and give up entirely. The solution: plan for effort level, not ideal meals. On busy days, plan 10-minute meals (eggs on greens, sardines on whole grain bread, Greek yoghurt with fruit and nuts). Save more involved cooking for when you have energy and time. Build the system around your real life, not your aspirational life."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-17-q1",
+          "question": "Why does meal planning improve dietary quality according to research?",
+          "options": [
+            "It forces you to count calories",
+            "It removes food decisions from moments of hunger, stress or tiredness",
+            "It makes food taste better",
+            "It always saves money"
+          ],
+          "correctIndex": 1,
+          "explanation": "Meal planning shifts food decisions to a calm, non-hungry state where better choices are made. Without a plan, decisions happen when hungry and tired — the states most likely to lead to ultra-processed, convenient but poor-quality food. Planning removes the friction from healthy choices."
+        },
+        {
+          "id": "ew-17-q2",
+          "question": "What is the \"Protein + Vegetable + Grain + Sauce\" approach to meal planning?",
+          "options": [
+            "A strict macro-counting diet",
+            "A flexible template that produces varied, balanced meals without needing recipes",
+            "A meal kit delivery system",
+            "A method for tracking micronutrients"
+          ],
+          "correctIndex": 1,
+          "explanation": "The template approach replaces the need for recipes with a simple formula. Varying the specific proteins, vegetables, grains and sauces within the template creates nutritional variety and avoids boredom — while keeping planning and preparation effort low and consistent."
+        },
+        {
+          "id": "ew-17-q3",
+          "question": "What is the most common reason meal planning fails long-term?",
+          "options": [
+            "It requires too much money",
+            "Over-ambition — planning complex meals that can't be sustained on busy days",
+            "It makes food boring",
+            "It requires professional cooking skills"
+          ],
+          "correctIndex": 1,
+          "explanation": "Over-ambition is the primary cause of meal planning failure. Planning elaborate recipes for every night creates unsustainable effort that most people abandon within weeks. Sustainable planning means matching meal complexity to available time and energy — including quick 10-minute options for busy days."
+        }
+      ]
+    },
+    {
+      "id": "ew-18-eating-busy",
+      "dayNumber": 18,
+      "title": "Eating Well on a Busy Schedule",
+      "subtitle": "Practical strategies for maintaining good nutrition even when time, energy and willpower are all in short supply",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-18-c1",
+          "front": "Why does busyness predictably lead to poor eating?",
+          "back": "When time and cognitive energy are depleted, the brain defaults to low-effort, high-reward choices. Ultra-processed food is specifically engineered to be the path of least resistance — convenient, cheap, immediately satisfying and heavily marketed. Without a system that makes healthy food equally convenient, busyness reliably produces poor eating. The solution is not more willpower; it is making healthy food easier to access than unhealthy alternatives."
+        },
+        {
+          "id": "ew-18-c2",
+          "front": "What are \"minimum viable meals\" and when should you use them?",
+          "back": "Minimum viable meals are the simplest, fastest nutritious options that require almost no preparation: tinned fish on whole grain bread with tomatoes, Greek yoghurt with berries and nuts, eggs scrambled with spinach, a handful of nuts with an apple, whole grain crackers with hummus and avocado. These aren't ideal — they're insurance. On a chaotic day, a minimum viable meal beats skipping meals or buying ultra-processed food."
+        },
+        {
+          "id": "ew-18-c3",
+          "front": "What is \"nutritional infrastructure\" and how do you build it?",
+          "back": "Nutritional infrastructure means stocking your environment with healthy, convenient defaults. A well-stocked kitchen doesn't require willpower — it makes healthy eating the path of least resistance. Key infrastructure: pre-washed salad, cooked grains, hard-boiled eggs or cooked chicken in the fridge; nuts, whole grain crackers and tinned fish in the cupboard; frozen vegetables always available. When healthy food is as fast as unhealthy food, choices improve dramatically."
+        },
+        {
+          "id": "ew-18-c4",
+          "front": "How do you eat well at your desk or during a busy work day?",
+          "back": "Key strategies: bring lunch from home at least 3 days per week (even simple ones), keep healthy snacks at your desk (nuts, fruit, yoghurt) so hunger doesn't drive you to vending machines, eat away from screens (mindless eating increases intake by 20–30%), stay hydrated throughout the day, and don't skip meals to work — this leads to blood sugar crashes and compensatory overeating later."
+        },
+        {
+          "id": "ew-18-c5",
+          "front": "What is the \"healthy convenience foods\" strategy?",
+          "back": "Not all convenience foods are ultra-processed. Many genuinely healthy foods are highly convenient: tinned fish (sardines, salmon, tuna), frozen vegetables (retain nearly as many nutrients as fresh), pre-cooked whole grains, tinned beans and lentils, full-fat Greek yoghurt, raw nuts, whole fruit, boiled eggs. Building your quick-meal repertoire around these foods means you can eat well in under 5 minutes without elaborate cooking."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-18-q1",
+          "question": "Why does busyness predictably lead to poor eating even for people who want to eat well?",
+          "options": [
+            "Busy people don't care about nutrition",
+            "The brain defaults to low-effort, high-reward food choices when depleted — and unhealthy food is engineered to be the easiest option",
+            "Healthy food is always more expensive when busy",
+            "Exercise makes you hungry for unhealthy food"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cognitive depletion reduces the brain's capacity for deliberate choice-making. Ultra-processed food is deliberately engineered to be maximally convenient and rewarding. Without a system that makes healthy food equally accessible, busyness will reliably produce poor dietary choices regardless of intention."
+        },
+        {
+          "id": "ew-18-q2",
+          "question": "By approximately how much does eating while looking at a screen increase food intake?",
+          "options": [
+            "5%",
+            "10–15%",
+            "20–30%",
+            "50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that eating while distracted by screens increases intake by 20–30% because it reduces awareness of fullness signals. Eating away from screens — even for just 10 minutes — allows the body's satiety signals to register and reduces mindless overconsumption."
+        },
+        {
+          "id": "ew-18-q3",
+          "question": "Which of these is a genuinely healthy \"convenience food\" that requires minimal preparation?",
+          "options": [
+            "A supermarket meal deal with crisps",
+            "A shop-bought protein bar with 20 ingredients",
+            "Tinned sardines on whole grain bread with tomatoes",
+            "Instant noodles"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tinned sardines are an outstanding convenience food: rich in protein, omega-3s, calcium (if eating bones) and vitamin D — all in under 2 minutes preparation. Combined with whole grain bread and fresh vegetables, they constitute a complete, highly nutritious meal."
+        }
+      ]
+    },
+    {
+      "id": "ew-19-mindful-eating",
+      "dayNumber": 19,
+      "title": "Mindful Eating: Hunger, Fullness and Your Food Relationship",
+      "subtitle": "How to reconnect with your body's signals, break automatic eating patterns and build a healthier relationship with food",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-19-c1",
+          "front": "What is mindful eating and how is it different from dieting?",
+          "back": "Mindful eating is paying deliberate attention to the experience of eating — hunger, taste, fullness, satisfaction — without judgment. Unlike dieting, it imposes no external rules about what or how much to eat. Instead, it reconnects you with internal signals that chronic dieting, distracted eating and ultra-processed food have disrupted. The goal is eating with awareness rather than restriction — which research shows produces better long-term outcomes than calorie counting."
+        },
+        {
+          "id": "ew-19-c2",
+          "front": "What is the hunger-fullness scale and how do you use it?",
+          "back": "The hunger-fullness scale rates hunger from 1 (ravenous) to 10 (uncomfortably full). Aim to start eating at 3–4 (hungry but not desperate) and stop at 6–7 (satisfied but not full). Eating when you reach 1–2 leads to fast eating and overshoot. Eating past 8–9 causes discomfort and calorie excess. Checking in periodically during meals — \"where am I on the scale now?\" — is the core practice of mindful eating."
+        },
+        {
+          "id": "ew-19-c3",
+          "front": "What is emotional eating and how do you respond to it?",
+          "back": "Emotional eating is using food to manage emotions — stress, boredom, loneliness, anxiety. Research suggests 40–60% of people eat in response to emotions regularly. Recognising the trigger is the first step: \"Am I physically hungry, or am I stressed/bored/upset?\" This creates a pause between the emotion and the automatic eating response. Gradually building a repertoire of non-food responses to emotions (a walk, calling someone, breathing) reduces emotional eating over time."
+        },
+        {
+          "id": "ew-19-c4",
+          "front": "Why does eating slowly improve food choices and prevent overeating?",
+          "back": "Satiety signals (particularly the hormone leptin) take roughly 15–20 minutes to reach the brain after eating begins. Eating quickly means you can consume far more than your body actually needs before feeling full. Eating slowly — putting down cutlery between bites, chewing thoroughly, pausing mid-meal — gives satiety signals time to register. Studies show slow eaters consistently consume fewer calories without feeling deprived."
+        },
+        {
+          "id": "ew-19-c5",
+          "front": "How does ultra-processed food disrupt natural hunger and fullness signals?",
+          "back": "Ultra-processed food is engineered to override satiety — through palatability (triggering dopamine reward circuits), caloric density, rapid digestion (no fibre to slow it) and specific combinations of fat, sugar and salt that short-circuit normal fullness responses. Research shows UPF consumers eat an average of 500 more calories per day than those eating matched whole food diets. Regular UPF consumption progressively dulls awareness of genuine hunger and fullness."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-19-q1",
+          "question": "Using the hunger-fullness scale, when is the ideal time to start eating?",
+          "options": [
+            "When you reach 1 (ravenous)",
+            "When you reach 3–4 (hungry but not desperate)",
+            "Only when you reach exactly 5 (neutral)",
+            "Only when you reach 7 (slightly full)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting to eat at 3–4 on the hunger scale (genuinely hungry but not ravenous) allows for relaxed, mindful eating. Waiting until 1–2 (ravenous) triggers fast, automatic eating that overshoots fullness. Eating too early (5–6) means eating from habit or emotion rather than true hunger."
+        },
+        {
+          "id": "ew-19-q2",
+          "question": "How long do satiety signals take to reach the brain after eating begins?",
+          "options": [
+            "1–2 minutes",
+            "5 minutes",
+            "15–20 minutes",
+            "45–60 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Satiety hormones, particularly leptin and CCK, take roughly 15–20 minutes to reach the brain after eating begins. Eating quickly allows you to consume far more than needed in that window. Slowing down gives the body time to register fullness and signal \"stop\" before overconsumption occurs."
+        },
+        {
+          "id": "ew-19-q3",
+          "question": "Approximately how many more daily calories do ultra-processed food consumers eat compared to matched whole-food diets?",
+          "options": [
+            "50–100 more calories",
+            "200 more calories",
+            "500 more calories",
+            "1,000 more calories"
+          ],
+          "correctIndex": 2,
+          "explanation": "A landmark 2019 NIH study found that people given unlimited ultra-processed food ate approximately 500 more calories per day than those given matched whole food — despite the meals being identical in calories, sugar, fat, fibre and macronutrients on paper. The UPF group also ate faster and reported less satiety."
+        }
+      ]
+    },
+    {
+      "id": "ew-20-social-eating",
+      "dayNumber": 20,
+      "title": "Navigating Social Situations, Eating Out and Travel",
+      "subtitle": "How to maintain good nutrition without social anxiety or missing out — practical strategies for every real-world eating scenario",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-20-c1",
+          "front": "Why do social situations derail healthy eating more than expected?",
+          "back": "Social eating is influenced by powerful norms: we tend to eat similar amounts to those around us (\"social facilitation of eating\"), feel pressure to match others' choices, experience food as social currency, and relax dietary intentions in celebratory contexts. Research shows people eat 35–75% more when dining in groups than alone. Understanding these dynamics — rather than fighting them with willpower — allows you to navigate them more intentionally."
+        },
+        {
+          "id": "ew-20-c2",
+          "front": "What are the most effective strategies for eating well at restaurants?",
+          "back": "Key strategies: look at the menu in advance and choose before hunger affects decisions; start with a salad or vegetable soup (reduces main course intake); order first (anchoring your choice before social influence sets in); ask for sauces on the side; choose grilled or baked over fried; treat alcohol as a conscious choice rather than an automatic one. The goal isn't to restrict enjoyment — it's to eat intentionally rather than reactively."
+        },
+        {
+          "id": "ew-20-c3",
+          "front": "How do you handle social pressure to eat (or drink) more than you want?",
+          "back": "Social pressure around food is real and deeply cultural. Effective responses that don't create conflict: \"I'm really enjoying this, I'm just savouring it slowly,\" \"I'm full but it's delicious\" or simply helping yourself then engaging in conversation so your plate isn't the focus. For alcohol: holding a drink you're not consuming works socially. You never need to explain or justify your food choices to anyone — a confident, non-defensive manner usually ends pressure."
+        },
+        {
+          "id": "ew-20-c4",
+          "front": "How do you maintain nutrition while travelling?",
+          "back": "Key travel strategies: carry portable healthy snacks (nuts, dried fruit, quality protein bars with short ingredients lists) to avoid airport and motorway service station food; find a local supermarket on arrival for fruit, yoghurt and whole food basics; choose hotel rooms with a fridge where possible; prioritise protein and vegetables at whatever meals are available; accept that perfection is impossible and focus on not letting several poor days become a total collapse of habits."
+        },
+        {
+          "id": "ew-20-c5",
+          "front": "What is the \"80/20 principle\" in practical nutrition?",
+          "back": "The 80/20 principle means eating well 80% of the time and not stressing about the other 20%. At a birthday dinner, eat the cake. At a wedding, enjoy yourself. On holiday, experience local food. One meal — or even a week — of indulgent eating doesn't meaningfully damage long-term health. What determines health outcomes is the consistent pattern over months and years, not isolated exceptions. Perfectionism around food often creates more psychological harm than the food itself."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-20-q1",
+          "question": "Research shows people eat how much more when dining in groups compared to eating alone?",
+          "options": [
+            "5–10% more",
+            "15–20% more",
+            "35–75% more",
+            "The same amount"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies on social facilitation of eating consistently find that people consume 35–75% more food when eating in groups. This is driven by extended meal duration, social distraction from satiety signals, matching others' intake, and the celebratory context of shared meals."
+        },
+        {
+          "id": "ew-20-q2",
+          "question": "When eating at a restaurant, what is one of the most effective strategies for eating better?",
+          "options": [
+            "Only order salads",
+            "Refuse all bread",
+            "Look at the menu in advance and decide before hunger and social pressure influence you",
+            "Ask the waiter to remove all the food"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pre-deciding your order before you arrive (or early in the menu-reading process, before hunger peaks) removes social influence and food-triggered craving from the decision. Research shows that pre-commitment to choices significantly reduces the impact of hunger and peer pressure on food selection."
+        },
+        {
+          "id": "ew-20-q3",
+          "question": "What does the \"80/20 principle\" in nutrition mean?",
+          "options": [
+            "Eat 80% protein and 20% carbohydrates",
+            "Fast 80% of the day and eat in a 20% window",
+            "Eat well 80% of the time and don't stress about the other 20%",
+            "Get 80% of calories from whole foods and 20% from supplements"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 80/20 principle acknowledges that perfectionism in nutrition is unnecessary and counterproductive. Eating well consistently 80% of the time produces excellent long-term outcomes. Stressing about the remaining 20% (special occasions, social meals, travel) creates psychological harm that outweighs any benefit."
+        }
+      ]
+    },
+    {
+      "id": "ew-21-personal-strategy",
+      "dayNumber": 21,
+      "title": "Your Personal Nutrition Strategy",
+      "subtitle": "Bringing it all together: building a nutrition approach that fits your life, values and goals — and lasts for decades",
+      "moduleId": "ew-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-21-c1",
+          "front": "Why is there no single perfect diet for everyone?",
+          "back": "Human metabolism, gut microbiome composition, food preferences, cultural backgrounds and practical constraints vary enormously between individuals. The ZOE project (Tim Spector's large-scale microbiome research) found that identical foods produce dramatically different blood sugar and fat responses in different people. The best diet is the one built from evidence-based principles but adapted to your specific body, lifestyle, tastes and circumstances."
+        },
+        {
+          "id": "ew-21-c2",
+          "front": "What are the non-negotiable nutrition fundamentals — the things that benefit virtually everyone?",
+          "back": "Despite individual variation, several principles hold across populations: 1) Eat mostly whole, minimally processed food. 2) Eat abundant vegetables and fruits. 3) Eat adequate protein (especially over 50). 4) Stay well hydrated. 5) Minimise ultra-processed food and refined sugar. 6) Eat oily fish or ensure omega-3 intake. 7) Limit alcohol. 8) Avoid smoking. These fundamentals, applied consistently, cover 90% of what nutrition science has to offer."
+        },
+        {
+          "id": "ew-21-c3",
+          "front": "How do you design a personal nutrition approach?",
+          "back": "Start with the fundamentals, then personalise. Ask: What are my main health goals (energy, weight, longevity, performance)? What foods do I genuinely enjoy? What are my practical constraints (time, budget, cooking ability, cultural context)? What dietary patterns does my family history suggest are important? Build habits around these realities, not an idealised version of yourself. A 70% adherence to a good diet beats 30% adherence to a perfect one."
+        },
+        {
+          "id": "ew-21-c4",
+          "front": "What is the role of experimentation in personal nutrition?",
+          "back": "Nutrition science gives population-level findings, but you are an individual. Experimentation — trying an eating window, eliminating a suspected trigger food, adding a new whole food — teaches you how your body specifically responds. Keep a simple food and energy journal for 2–3 weeks after any change to notice patterns. Your own data from your own body is the most valuable nutritional information you have."
+        },
+        {
+          "id": "ew-21-c5",
+          "front": "What is the most important mindset for lifelong good nutrition?",
+          "back": "Progress, not perfection. Nutrition is a practice maintained over decades, not a problem to solve once. Your approach will evolve as your life, body and knowledge change. Missing a week, going through a stressful period or eating poorly on holiday doesn't erase your progress — it's a normal part of a long-term practice. The goal is a sustainable, enjoyable way of eating that supports your life rather than controlling it. That's what eating well for life actually looks like."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-21-q1",
+          "question": "What did Tim Spector's ZOE research project find about individual responses to identical foods?",
+          "options": [
+            "Everyone responds to food in the same way",
+            "Identical foods produce dramatically different blood sugar and fat responses in different people",
+            "Diet does not affect blood sugar significantly",
+            "Only genetics determines how food is metabolised"
+          ],
+          "correctIndex": 1,
+          "explanation": "The ZOE study — one of the largest nutrition microbiome studies ever conducted — found enormous individual variation in how people respond to identical foods. Blood sugar and fat responses varied dramatically based on individual gut microbiome, genetics and lifestyle, supporting the case for personalised nutrition."
+        },
+        {
+          "id": "ew-21-q2",
+          "question": "Which of the following is one of the universal nutrition fundamentals that benefits virtually everyone?",
+          "options": [
+            "Following a strict ketogenic diet",
+            "Eliminating all animal products",
+            "Eating mostly whole, minimally processed food",
+            "Counting calories at every meal"
+          ],
+          "correctIndex": 2,
+          "explanation": "Eating mostly whole, minimally processed food is one of the most robustly supported nutrition principles across all populations and dietary philosophies. It underpins the Mediterranean diet, plant-based approaches, and virtually every evidence-based longevity dietary pattern."
+        },
+        {
+          "id": "ew-21-q3",
+          "question": "What is the most important mindset for maintaining good nutrition over a lifetime?",
+          "options": [
+            "Perfectionism — never eating unhealthily",
+            "Strict calorie tracking every day",
+            "Progress over perfection — a sustainable practice maintained consistently over decades",
+            "Following the same diet forever without adaptation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lifelong good nutrition is a practice, not a perfect state. Research on long-term healthy eaters shows they focus on consistent patterns rather than perfection, adapt their approach as life changes, recover quickly from setbacks, and prioritise enjoyment alongside health — making it sustainable for decades."
+        }
+      ]
+    }
+  ]
+}

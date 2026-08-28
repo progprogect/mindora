@@ -1,0 +1,1856 @@
+{
+  "id": "entrepreneurial-mindset",
+  "title": "The Entrepreneurial Mindset",
+  "subtitle": "Challenge conventional thinking about wealth and business. Learn to see opportunity through the lens of value creation, not time-for-money.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "em-module-1",
+      "moduleNumber": 1,
+      "title": "The Builder's Mindset",
+      "subtitle": "Challenge conventional thinking about wealth and business. Learn to see opportunity through the lens of value creation, not time-for-money.",
+      "days": "Lessons 1–7",
+      "skill": "Shift from consumer to producer thinking and identify scalable value",
+      "lessonIds": [
+        "em-1-fastlane-vs-slowlane",
+        "em-2-value-creation",
+        "em-3-zero-to-one-thinking",
+        "em-4-cents-framework",
+        "em-5-personal-mba-lens",
+        "em-6-consumer-to-producer",
+        "em-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "em-module-2",
+      "moduleNumber": 2,
+      "title": "Opportunity Recognition",
+      "subtitle": "Train yourself to spot profitable opportunities hiding in plain sight. Learn to evaluate ideas before investing time or money.",
+      "days": "Lessons 8–14",
+      "skill": "Evaluate market opportunities using structured frameworks",
+      "lessonIds": [
+        "em-8-market-gaps",
+        "em-9-ten-x-thinking",
+        "em-10-monopoly-mindset",
+        "em-11-pain-point-radar",
+        "em-12-value-equation",
+        "em-13-scoring-opportunities",
+        "em-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "em-module-3",
+      "moduleNumber": 3,
+      "title": "From Thinking to Doing",
+      "subtitle": "Bridge the gap between ideas and action. Build the habits and systems that turn entrepreneurial thinking into real-world results.",
+      "days": "Lessons 15–21",
+      "skill": "Overcome analysis paralysis and take your first entrepreneurial action",
+      "lessonIds": [
+        "em-15-analysis-paralysis",
+        "em-16-commitment-devices",
+        "em-17-first-dollar",
+        "em-18-risk-reframed",
+        "em-19-mvp-mindset",
+        "em-20-building-momentum",
+        "em-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "em-1-fastlane-vs-slowlane",
+      "dayNumber": 1,
+      "moduleId": "em-module-1",
+      "title": "The Fastlane vs the Slowlane",
+      "subtitle": "Why the conventional path to wealth is broken — and what the alternative actually looks like.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Wealth Formula Everyone Gets Wrong",
+          "body": "Most people follow the Slowlane formula: go to university, get a good job, save 10% of your salary, invest in index funds, and retire at 65. The maths doesn't lie — even with perfect discipline, this path takes 40+ years and depends on variables you don't control. There's a faster way.",
+          "stat": "40+",
+          "statLabel": "years the conventional wealth path requires"
+        },
+        {
+          "type": "content",
+          "headline": "The Slowlane Trap",
+          "body": "The Slowlane isn't wrong — it's just painfully slow. Your income is capped by your time (salary), your wealth grows linearly, and your biggest lever (compound interest) needs decades to work. Worse, it relies on things outside your control: job market, employer decisions, stock market returns.",
+          "bullets": [
+            "Wealth = Job Income + Market Returns × Time (decades)",
+            "Your salary has a ceiling — there are only so many hours to sell",
+            "One redundancy, recession, or illness resets the clock",
+            "You trade your best years for the promise of freedom later"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Fastlane Alternative",
+          "body": "Fastlane wealth is built by creating systems that generate value independent of your time. Instead of selling hours, you build something once that serves many. The formula changes completely: your income becomes disconnected from your time.",
+          "bullets": [
+            "Wealth = Units Sold × Profit per Unit (scale replaces time)",
+            "Build once, sell many — software, content, products, systems",
+            "Speed comes from leverage, not from working harder",
+            "Control: you set the price, the terms, and the direction"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Mindset Shift",
+          "body": "This isn't about getting rich quick — it's about getting rich in years, not decades. The Fastlane requires harder work upfront, more risk tolerance, and a fundamentally different relationship with time and value. But the trade-off is freedom while you're still young enough to enjoy it.",
+          "stat": "5–10",
+          "statLabel": "years to build meaningful wealth via the Fastlane (vs 40+ on the Slowlane)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Current Wealth Formula",
+          "body": "Write down your current income sources. For each one, answer: \"Is this limited by my time?\" and \"Could this grow 10x without me working 10x harder?\" If every source is time-bound, you're on the Slowlane. That's not a judgement — it's a starting point. Tomorrow we explore what to build instead."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fundamental difference between Slowlane and Fastlane wealth building?",
+          "type": "mcq",
+          "options": [
+            "Fastlane disconnects income from time by building scalable systems",
+            "Fastlane means taking bigger risks with stock market investments",
+            "Fastlane is about working longer hours than everyone else",
+            "Fastlane requires an inheritance or family money to start"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Fastlane formula replaces time-for-money with scalable value creation — building systems (products, services, businesses) that generate income independent of hours worked."
+        },
+        {
+          "question": "The Slowlane wealth formula depends heavily on factors you can control.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Slowlane relies on job market conditions, employer decisions, and stock market returns — all largely outside your personal control. This makes it fragile to external shocks."
+        },
+        {
+          "question": "According to the Fastlane framework, which formula best represents scalable wealth?",
+          "type": "mcq",
+          "options": [
+            "Units Sold × Profit per Unit",
+            "Hourly Rate × Hours Worked",
+            "Salary + Annual Bonus + Pension",
+            "Savings Rate × Investment Returns × Time"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scalable wealth comes from the equation: Units Sold × Profit per Unit. This allows income to grow without a proportional increase in time or effort."
+        }
+      ]
+    },
+    {
+      "id": "em-2-value-creation",
+      "dayNumber": 2,
+      "moduleId": "em-module-1",
+      "title": "Value Creation — The Only Business That Matters",
+      "subtitle": "Every successful business solves a problem. Learn to think in terms of value delivered, not products sold.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Nobody Cares About Your Product",
+          "body": "Customers don't buy products — they buy solutions to problems, transformations, and better versions of their lives. The entrepreneurs who win are the ones who obsess over the value they create for others, not the cleverness of what they've built. Value in, money out.",
+          "stat": "90%",
+          "statLabel": "of startups fail — most because they built something nobody needed"
+        },
+        {
+          "type": "content",
+          "headline": "The Value Hierarchy",
+          "body": "Not all value is created equal. The Personal MBA identifies five forms of value, each with different scalability and income potential. Understanding where your business sits on this hierarchy determines your ceiling.",
+          "bullets": [
+            "Products — create once, sell many times (highest leverage)",
+            "Subscriptions — recurring value exchange (predictable income)",
+            "Services — customised solutions (limited by your time)",
+            "Shared resources — platforms that connect buyers and sellers",
+            "Insurance/risk transfer — reducing uncertainty for others"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Value Test",
+          "body": "Before you build anything, it must pass this test: Does it save people time, make them money, reduce their pain, improve their status, or give them pleasure? If it doesn't clearly do at least one of these, it's not a business — it's a hobby.",
+          "bullets": [
+            "Save time → automation, convenience, speed",
+            "Make money → tools, training, systems that increase earnings",
+            "Reduce pain → remove friction, solve frustrations",
+            "Improve status → identity, belonging, recognition",
+            "Give pleasure → entertainment, experience, joy"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From Selfish to Selfless",
+          "body": "Counterintuitively, the most profitable businesses are the most generous. The more value you pour into others' lives, the more flows back. This isn't charity — it's strategy. Your income is a direct reflection of how much value you create and how many people you create it for.",
+          "stat": "1,000,000",
+          "statLabel": "people affected = millionaire. Impact and income are proportional."
+        },
+        {
+          "type": "try-it",
+          "headline": "The 5-Minute Value Audit",
+          "body": "Think of 3 products or services you've paid for recently. For each, write down: What problem did it solve? Which of the 5 value types does it represent (time, money, pain, status, pleasure)? Now flip it — what problems do YOU see around you that nobody is solving well? Write down 3 frustrations you've noticed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the value hierarchy, which form of value has the HIGHEST leverage for wealth creation?",
+          "type": "mcq",
+          "options": [
+            "Products (create once, sell many)",
+            "Services (customised solutions)",
+            "Hourly consulting",
+            "Freelance work"
+          ],
+          "correctIndex": 0,
+          "explanation": "Products offer the highest leverage because they can be created once and sold unlimited times without a proportional increase in effort or time."
+        },
+        {
+          "question": "A business must clearly save time, make money, reduce pain, improve status, or give pleasure to be viable.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The value test requires that any viable business clearly delivers at least one of these five forms of value. Without this, there's no compelling reason for customers to pay."
+        },
+        {
+          "question": "What does \"your income reflects the value you create\" actually mean in practice?",
+          "type": "mcq",
+          "options": [
+            "Serve more people with more value = more income",
+            "Work longer hours = more income",
+            "Charge higher prices regardless of value = more income",
+            "Cut costs as much as possible = more income"
+          ],
+          "correctIndex": 0,
+          "explanation": "Income scales with impact. The more people you serve and the more valuable your solution is to them, the more income flows back to you. It's about breadth and depth of value."
+        }
+      ]
+    },
+    {
+      "id": "em-3-zero-to-one-thinking",
+      "dayNumber": 3,
+      "moduleId": "em-module-1",
+      "title": "Zero to One Thinking",
+      "subtitle": "Why copying what works creates a race to the bottom — and how to build something genuinely new.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Competition Is for Losers",
+          "body": "Peter Thiel's controversial claim sounds arrogant, but the logic is airtight. When you compete in a crowded market, margins shrink, differentiation disappears, and everyone fights over the same customers. The real money is made by those who create entirely new categories — going from zero to one.",
+          "stat": "0 → 1",
+          "statLabel": "is worth more than 1 → 100. Creating something new beats incremental improvement."
+        },
+        {
+          "type": "content",
+          "headline": "Zero to One vs One to N",
+          "body": "Going from 1 to N means copying something that already works — opening another coffee shop, launching another social media tool, building another project management app. Going from 0 to 1 means creating something the world hasn't seen. Both can make money, but only one builds lasting advantage.",
+          "bullets": [
+            "1 to N: Compete on execution, price, or marketing (exhausting)",
+            "0 to 1: Create a new category or solve a problem in a fundamentally new way",
+            "Monopoly profits come from being the ONLY option, not the best option",
+            "Ask: \"What valuable company is nobody building?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Contrarian Question",
+          "body": "Thiel's favourite interview question: \"What important truth do very few people agree with you on?\" Your answer reveals your capacity for original thinking. In business, contrarian truths become competitive advantages — because nobody else is building on them.",
+          "bullets": [
+            "Conventional wisdom = priced in (everyone acts on it)",
+            "Contrarian truths = underpriced (only you are building on them)",
+            "The best businesses look like \"bad ideas\" to most people — until they don't",
+            "Examples: Airbnb (strangers sleeping in your home), Uber (unlicensed taxis)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Mini-Monopoly",
+          "body": "You don't need to be Google. Every monopoly starts small — dominating a tiny niche before expanding. Facebook started with Harvard students. Amazon started with books. Start so small that you can be the clear #1, then expand from a position of strength.",
+          "stat": "100%",
+          "statLabel": "market share in a tiny niche > 1% of a massive market"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Contrarian Truth",
+          "body": "Answer Thiel's question for yourself: \"What is something I believe about business, work, or my industry that most people would disagree with?\" Write 2–3 contrarian beliefs. Then for each, ask: \"If this were true, what kind of business would I build?\" This is where original ideas come from."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does Peter Thiel say \"competition is for losers\"?",
+          "type": "mcq",
+          "options": [
+            "Because competing in crowded markets destroys margins and differentiation",
+            "Because you should never work hard",
+            "Because monopolies are illegal and risky",
+            "Because small businesses can't compete with large ones"
+          ],
+          "correctIndex": 0,
+          "explanation": "In competitive markets, profits are competed away. Monopolies (even small ones) retain pricing power and margins because they offer something nobody else does."
+        },
+        {
+          "question": "A contrarian truth is valuable in business because very few people are building on it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Contrarian truths are underpriced opportunities. Since most people disagree, nobody else is building solutions based on that insight — giving you a potential monopoly position."
+        },
+        {
+          "question": "What is the recommended starting strategy for building a monopoly?",
+          "type": "mcq",
+          "options": [
+            "Dominate a tiny niche first, then expand outward",
+            "Launch in the biggest market possible for maximum reach",
+            "Copy the market leader and undercut on price",
+            "Wait until you have a perfect product before launching"
+          ],
+          "correctIndex": 0,
+          "explanation": "Every monopoly starts small. By dominating a tiny niche (like Facebook with Harvard), you build a defensible position and expand from strength rather than competing broadly."
+        }
+      ]
+    },
+    {
+      "id": "em-4-cents-framework",
+      "dayNumber": 4,
+      "moduleId": "em-module-1",
+      "title": "The CENTS Framework",
+      "subtitle": "Five criteria that separate real businesses from glorified hobbies — use this to evaluate any opportunity.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Not Every Business Is a Real Business",
+          "body": "Selling handmade candles on Etsy, driving for Uber, dropshipping generic products — these can generate income, but they're missing critical elements that create real wealth. The CENTS framework from The Millionaire Fastlane gives you five non-negotiable criteria for a business worth building.",
+          "stat": "5",
+          "statLabel": "criteria that separate wealth-building businesses from side hustles"
+        },
+        {
+          "type": "content",
+          "headline": "C — Control",
+          "body": "Do you control the key decisions? If your business depends on someone else's platform, algorithm, or approval, you don't have a business — you have a job with extra steps. Control means you set the prices, own the customer relationship, and can't be shut down by a third party.",
+          "bullets": [
+            "❌ No control: Uber driver, Amazon FBA seller, Instagram influencer",
+            "✅ Control: Own website, own product, direct customer relationships",
+            "Ask: \"Can someone else turn off my income with one decision?\"",
+            "If yes, you're renting — not owning"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "E — Entry & N — Need",
+          "body": "Entry: If anyone can do it with zero skill or investment, the market will be flooded and margins will collapse. Need: Your business must solve a real problem people already have — not a problem you have to convince them exists.",
+          "bullets": [
+            "Entry barrier protects your margins (skills, systems, relationships, capital)",
+            "Low entry = high competition = race to the bottom",
+            "Need means people are actively searching for or paying for a solution",
+            "\"Would people pay for this if I stopped marketing it?\" is the need test"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "T — Time & S — Scale",
+          "body": "Time: Can the business generate income without you being present? If you stop working, does income stop? Scale: Can you serve 10,000 customers as easily as 10? The combination of time detachment and scale is what creates exponential wealth.",
+          "stat": "∞",
+          "statLabel": "potential customers you can serve simultaneously = true scale"
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Business Idea",
+          "body": "Think of a business idea you've considered (or one you're running now). Score it 1–5 on each CENTS criterion: Control, Entry barrier, Need, Time detachment, Scale. Total score out of 25. Anything below 15 needs rethinking. Anything above 20 is worth serious investment. Write your scores and one action to improve your weakest area."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"Control\" mean in the CENTS framework?",
+          "type": "mcq",
+          "options": [
+            "You own the key decisions and can't be shut down by a third party",
+            "You control your employees and work schedule",
+            "You have a controlling stake in a public company",
+            "You can control customer behaviour through marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Control means you own the business infrastructure — your platform, your customer relationships, your pricing. No third party can turn off your income with one decision."
+        },
+        {
+          "question": "A business with low barriers to entry is desirable because it's easy to start.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Low entry barriers mean everyone floods in, margins collapse, and you race to the bottom. Higher barriers (skill, systems, capital, relationships) protect your profits."
+        },
+        {
+          "question": "Which combination creates exponential wealth potential?",
+          "type": "mcq",
+          "options": [
+            "Time detachment + Scale (income without you, serving unlimited customers)",
+            "Low prices + High volume",
+            "Long hours + High hourly rate",
+            "Multiple part-time jobs + Savings"
+          ],
+          "correctIndex": 0,
+          "explanation": "When income isn't tied to your time AND you can serve unlimited customers simultaneously, the growth potential becomes exponential rather than linear."
+        }
+      ]
+    },
+    {
+      "id": "em-5-personal-mba-lens",
+      "dayNumber": 5,
+      "moduleId": "em-module-1",
+      "title": "The Personal MBA Decision Lens",
+      "subtitle": "The essential mental models every entrepreneur needs — without spending two years and £100k on business school.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Don't Need an MBA",
+          "body": "The average MBA costs £60,000–£150,000 and takes 2 years. Yet the core principles of business — value creation, marketing, sales, delivery, and finance — can be understood in weeks, not years. Josh Kaufman identified the essential mental models that actually matter for entrepreneurs. Here are the ones that move the needle.",
+          "stat": "£100k+",
+          "statLabel": "average MBA cost — for knowledge you can learn in weeks"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Parts of Every Business",
+          "body": "Every business, from a lemonade stand to Apple, does exactly five things. Master these five and you have a functional business. Neglect any one and the whole thing collapses.",
+          "bullets": [
+            "1. Value Creation — discover what people need and build it",
+            "2. Marketing — attract attention and build desire",
+            "3. Sales — turn interest into paying customers",
+            "4. Value Delivery — give customers what you promised (and more)",
+            "5. Finance — bring in more money than you spend"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Key Mental Models for Decisions",
+          "body": "Entrepreneurs face hundreds of decisions daily. These mental models from The Personal MBA help you think clearly under uncertainty — without needing a consultant or a spreadsheet.",
+          "bullets": [
+            "Opportunity cost: every yes is a no to something else",
+            "Diminishing returns: more effort doesn't always mean more results",
+            "Minimum viable offer: the simplest thing you can sell that delivers value",
+            "Iteration speed: the faster you learn, the faster you win"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Iron Law of the Market",
+          "body": "No amount of marketing, hustle, or product perfection can overcome a lack of market demand. This is Kaufman's Iron Law: if people don't want what you're building, nothing else matters. The market always wins.",
+          "stat": "42%",
+          "statLabel": "of startups fail due to \"no market need\" — the #1 killer"
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Business Idea in 5 Parts",
+          "body": "Take any business idea and write one sentence for each of the 5 parts: (1) What value does it create? (2) How will people find out about it? (3) How do you close the sale? (4) How do you deliver? (5) Is the maths profitable? If you can't answer all five clearly, you've found your gap."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the 5 parts of every business according to The Personal MBA?",
+          "type": "mcq",
+          "options": [
+            "Value Creation, Marketing, Sales, Value Delivery, Finance",
+            "Product, Price, Place, Promotion, People",
+            "Idea, Funding, Launch, Growth, Exit",
+            "Vision, Mission, Strategy, Execution, Culture"
+          ],
+          "correctIndex": 0,
+          "explanation": "Every business performs exactly five functions: creating value, attracting attention (marketing), converting interest (sales), delivering value, and managing finances."
+        },
+        {
+          "question": "The \"Iron Law of the Market\" states that no amount of marketing can overcome a lack of demand.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Iron Law of the Market is absolute: if people don't want what you're building, no amount of hustle, funding, or marketing will save it. Market demand is the #1 requirement."
+        },
+        {
+          "question": "What does \"opportunity cost\" mean for entrepreneurs?",
+          "type": "mcq",
+          "options": [
+            "Every yes to one thing is a no to everything else you could be doing",
+            "The cost of finding new opportunities in the market",
+            "How much money you need to start a business",
+            "The financial risk of launching a new product"
+          ],
+          "correctIndex": 0,
+          "explanation": "Opportunity cost means that choosing to spend your time, money, or energy on one thing automatically means not spending it on alternatives. Entrepreneurs must choose wisely."
+        }
+      ]
+    },
+    {
+      "id": "em-6-consumer-to-producer",
+      "dayNumber": 6,
+      "moduleId": "em-module-1",
+      "title": "From Consumer to Producer",
+      "subtitle": "The single biggest identity shift that separates entrepreneurs from everyone else — and how to make it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're on One Side or the Other",
+          "body": "Every transaction has two sides: the person paying and the person getting paid. Consumers spend money to acquire things. Producers create things others spend money on. The wealthiest people in history all made the same shift — from the demand side of the equation to the supply side.",
+          "stat": "95%",
+          "statLabel": "of people stay on the consumer side their entire lives"
+        },
+        {
+          "type": "content",
+          "headline": "The Producer's Lens",
+          "body": "Once you make this shift, you never see the world the same way. Every frustration becomes a business idea. Every product you use triggers the question \"How did they build this?\" Every complaint you hear from others is a potential revenue stream.",
+          "bullets": [
+            "Consumer sees an ad and buys → Producer studies why the ad worked",
+            "Consumer complains about a problem → Producer builds the solution",
+            "Consumer scrolls content → Producer creates content that attracts customers",
+            "Consumer pays for convenience → Producer creates the convenience and collects"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Consumption Is the Enemy of Creation",
+          "body": "Time spent consuming is time not spent producing. This doesn't mean you can never relax — it means being intentional. The most successful entrepreneurs deliberately limit passive consumption and redirect that energy into building, testing, and creating.",
+          "bullets": [
+            "Average person: 3+ hours/day on social media (passive consumption)",
+            "Redirect even 1 hour/day to creation = 365 hours/year of building",
+            "Consumption feels productive (learning!) but production IS productive",
+            "Rule: consume only what directly feeds your current creation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Identity Shift",
+          "body": "This isn't about what you DO — it's about who you ARE. When you identify as a producer, you naturally ask different questions, notice different opportunities, and spend your time differently. The shift is subtle but its effects compound daily.",
+          "stat": "365",
+          "statLabel": "hours/year you can reclaim by shifting just 1 hour from consumption to production"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 24-Hour Producer Challenge",
+          "body": "For the next 24 hours, view everything through the producer's lens. When you buy something, ask \"How is this business structured?\" When you see a problem, ask \"Who would pay me to solve this?\" Write down 5 observations by end of day. This builds the mental muscle of opportunity recognition."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core difference between a consumer mindset and a producer mindset?",
+          "type": "mcq",
+          "options": [
+            "Consumers spend money to acquire; producers create things others pay for",
+            "Consumers are lazy; producers work 80-hour weeks",
+            "Consumers buy cheap; producers buy expensive",
+            "Consumers save money; producers invest in stocks"
+          ],
+          "correctIndex": 0,
+          "explanation": "The fundamental shift is from the demand side (paying for value) to the supply side (creating value others pay for). It's about which side of the transaction you're on."
+        },
+        {
+          "question": "Consuming educational content about business counts as \"production\" time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consumption — even educational consumption — is NOT production. Only creating, building, testing, and shipping count as production. Learning feels productive but isn't unless applied."
+        },
+        {
+          "question": "How does the \"producer's lens\" change how you see everyday frustrations?",
+          "type": "mcq",
+          "options": [
+            "Every frustration becomes a potential business opportunity",
+            "You stop getting frustrated because you're too busy",
+            "You learn to ignore problems that don't affect you",
+            "You complain more loudly so others fix the problems"
+          ],
+          "correctIndex": 0,
+          "explanation": "Through the producer's lens, problems become opportunities. Where consumers complain, producers ask \"Who would pay me to solve this?\" — and then build the solution."
+        }
+      ]
+    },
+    {
+      "id": "em-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "em-module-1",
+      "title": "Your Builder's Blueprint",
+      "subtitle": "Bring together everything from Module 1 into a clear, personal action framework for your entrepreneurial path.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Think Differently",
+          "body": "In 6 lessons, you've rewired how you think about wealth, value, competition, and opportunity. You understand the Fastlane formula, the CENTS framework, Zero-to-One thinking, and the producer mindset. But knowledge without application is entertainment. Today, we crystallise everything into YOUR personal blueprint.",
+          "stat": "6",
+          "statLabel": "mental models that now separate you from 95% of people"
+        },
+        {
+          "type": "content",
+          "headline": "Module 1 Recap — The Builder's Toolkit",
+          "body": "You now have a complete framework for entrepreneurial thinking. Let's consolidate what you've learned into a decision-making system you can use every day.",
+          "bullets": [
+            "Lesson 1: Fastlane vs Slowlane — scalable systems > trading time",
+            "Lesson 2: Value Creation — solve real problems for real people",
+            "Lesson 3: Zero to One — create new categories, avoid crowded competition",
+            "Lesson 4: CENTS Framework — Control, Entry, Need, Time, Scale",
+            "Lesson 5: Personal MBA — 5 parts of every business + mental models",
+            "Lesson 6: Producer Mindset — create more, consume less, spot opportunities"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Decision Filter",
+          "body": "From now on, when evaluating any business opportunity, run it through this sequence. If it fails at any step, either fix it or move on. This saves you months of wasted effort on ideas that were never going to work.",
+          "bullets": [
+            "Step 1: Does it solve a real need? (Iron Law of the Market)",
+            "Step 2: Can it scale beyond my time? (Fastlane test)",
+            "Step 3: Does it pass CENTS? (Score 15+ out of 25)",
+            "Step 4: Is there a contrarian angle? (Zero-to-One test)",
+            "Step 5: Can I articulate all 5 business parts? (Personal MBA test)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming in Module 2",
+          "body": "You now have the mindset. Next, you'll learn to see opportunities everywhere. Module 2 trains your \"opportunity radar\" — how to spot market gaps, evaluate them quickly, and identify the ones worth your time and energy. The shift from thinking to seeing.",
+          "stat": "7",
+          "statLabel": "new lessons on recognising and scoring real opportunities"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Builder's Blueprint",
+          "body": "On a single page, write: (1) Your current income model (Slowlane or Fastlane?), (2) One problem you've noticed that people would pay to solve, (3) Your CENTS score for that idea, (4) Your contrarian angle — what do you believe that others don't? (5) The #1 thing you need to learn next. This is your starting blueprint. Keep it visible."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the correct order for evaluating a business opportunity using the Builder's Decision Filter?",
+          "type": "mcq",
+          "options": [
+            "Real need → Scalable → Passes CENTS → Contrarian angle → 5 business parts",
+            "Contrarian angle → Build product → Find customers → Set price → Launch",
+            "Write business plan → Get funding → Hire team → Build product → Market it",
+            "Choose industry → Research competitors → Copy the leader → Undercut on price"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Decision Filter starts with market need (most important), then checks scalability, CENTS criteria, differentiation, and finally whether you can articulate all five business parts."
+        },
+        {
+          "question": "The CENTS framework requires a score of at least 15 out of 25 to be worth pursuing.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A CENTS score below 15 indicates the opportunity is missing critical elements (control, entry barriers, need, time detachment, or scale) and needs rethinking before investing."
+        },
+        {
+          "question": "Which is the FIRST and most important test in the Builder's Decision Filter?",
+          "type": "mcq",
+          "options": [
+            "Does it solve a real need? (Iron Law of the Market)",
+            "Can it scale beyond my time?",
+            "Is there a contrarian angle?",
+            "Does it pass the CENTS test?"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Iron Law of the Market comes first because without genuine demand, nothing else matters. No amount of scale, differentiation, or execution can overcome a lack of need."
+        }
+      ]
+    },
+    {
+      "id": "em-8-market-gaps",
+      "dayNumber": 8,
+      "moduleId": "em-module-2",
+      "title": "How to Spot a Market Gap",
+      "subtitle": "Train your brain to notice opportunities hiding in everyday frustrations, complaints, and workarounds.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Opportunities Are Invisible — Until They're Not",
+          "body": "Every successful business started because someone noticed a gap everyone else walked past. Airbnb saw empty spare rooms during a sold-out conference. Slack was an internal tool a gaming company built because existing chat apps were terrible. The opportunities are always there — you just need to learn how to see them.",
+          "stat": "72%",
+          "statLabel": "of billion-dollar startups solved a problem the founder personally experienced"
+        },
+        {
+          "type": "content",
+          "headline": "The 4 Sources of Market Gaps",
+          "body": "Market gaps don't appear randomly. They emerge from predictable patterns. Once you know where to look, you'll start seeing them everywhere — in conversations, in your own frustrations, in industries that haven't changed in decades.",
+          "bullets": [
+            "Friction gaps: something is harder than it should be (forms, processes, waiting)",
+            "Price gaps: existing solutions are overpriced for what they deliver",
+            "Audience gaps: a group is underserved by current options (too complex, wrong language)",
+            "Technology gaps: new tech enables something impossible 2 years ago"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Complaint Mining Method",
+          "body": "Your richest source of business ideas is other people's complaints. Reddit threads, app store reviews, Twitter rants, Facebook groups, and forum posts are goldmines of unmet needs. People literally tell you what they'd pay for — you just need to listen systematically.",
+          "bullets": [
+            "Search \"[industry] is broken\" or \"I wish there was...\" on Reddit/Twitter",
+            "Read 1-star reviews of existing products — complaints = opportunities",
+            "Join Facebook groups in your area of interest — note recurring frustrations",
+            "Ask: \"What do people work around because no good solution exists?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Time Machine Test",
+          "body": "Think about things people did manually 10 years ago that are now automated. Now look at what people still do manually today. Many of those manual processes will be automated or simplified in the next 5 years. You can be the person who builds that solution.",
+          "stat": "10 years",
+          "statLabel": "behind — many industries still operate with processes a decade out of date"
+        },
+        {
+          "type": "try-it",
+          "headline": "15-Minute Complaint Mining Sprint",
+          "body": "Pick one industry or topic you know well. Spend 15 minutes on Reddit, app store reviews, or a relevant Facebook group. Write down every complaint, frustration, or \"I wish...\" statement you find. Aim for at least 10. Circle the 3 that made you think \"I could solve that.\" This is your first opportunity longlist."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is NOT one of the 4 sources of market gaps?",
+          "type": "mcq",
+          "options": [
+            "Inspiration gaps (waiting for a creative idea to appear)",
+            "Friction gaps (something is harder than it should be)",
+            "Price gaps (existing solutions are overpriced)",
+            "Technology gaps (new tech enables something previously impossible)"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 4 sources are friction, price, audience, and technology gaps. \"Inspiration gaps\" is not a real category — opportunities come from systematic observation, not waiting for inspiration."
+        },
+        {
+          "question": "Reading 1-star reviews of existing products is a valid way to find business opportunities.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "One-star reviews are complaints about unmet needs. Each complaint is a potential opportunity — people are telling you exactly what they'd pay for if someone built it better."
+        },
+        {
+          "question": "What does the \"Time Machine Test\" ask you to consider?",
+          "type": "mcq",
+          "options": [
+            "What manual processes today will be automated in the next 5 years",
+            "Whether your idea would have worked 10 years ago",
+            "How long it will take to build your product",
+            "Whether you should invest in time-saving tools"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Time Machine Test identifies opportunities by looking at things people still do manually today that will inevitably be simplified or automated — you can be the one to build that."
+        }
+      ]
+    },
+    {
+      "id": "em-9-ten-x-thinking",
+      "dayNumber": 9,
+      "moduleId": "em-module-2",
+      "title": "10x Thinking — Why Incremental Fails",
+      "subtitle": "Why being 10% better is a trap — and why aiming for 10x forces you to think in fundamentally different ways.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A 10% Goal Makes You Work Harder. A 10x Goal Makes You Think Differently.",
+          "body": "When you aim to be 10% better than competitors, you optimise the existing system — slightly better features, slightly lower prices, slightly more marketing. But when you aim for 10x better, you're forced to throw out the old playbook entirely and create something fundamentally new. This is where real breakthroughs live.",
+          "stat": "10×",
+          "statLabel": "better requires completely rethinking the approach (not just trying harder)"
+        },
+        {
+          "type": "content",
+          "headline": "The Incremental Trap",
+          "body": "Most businesses compete on incremental improvements — a slightly faster app, slightly cheaper product, slightly nicer design. This is a losing strategy because everyone else is doing the same thing. You end up in a features war where nobody wins and margins shrink for everyone.",
+          "bullets": [
+            "10% better = same approach, more effort (exhausting, easily copied)",
+            "Customers barely notice 10% improvements (not worth switching for)",
+            "Competitors match your improvements within months",
+            "You compete on execution speed — whoever burns out last \"wins\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How 10x Thinking Works",
+          "body": "A 10x goal forces constraint-breaking. You can't make a car 10x faster by adding a bigger engine — you need to rethink transportation entirely. This is how SpaceX reduced launch costs by 10x (reusable rockets), and how Spotify made music access 10x better than buying albums.",
+          "bullets": [
+            "Ask: \"How would I deliver this value at 1/10th the cost?\"",
+            "Ask: \"How would I make this 10x faster/easier/more accessible?\"",
+            "Ask: \"What if the current approach is entirely wrong?\"",
+            "These questions force you to innovate rather than optimise"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to Apply 10x Thinking",
+          "body": "You don't need to be 10x better at everything — just at the one thing that matters most to your customer. Find the dimension they care about most (speed, price, simplicity, access) and go 10x on that single axis while being \"good enough\" on everything else.",
+          "stat": "1",
+          "statLabel": "dimension to dominate — pick the axis that matters most to customers"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10x Reframe",
+          "body": "Take one of the opportunities from yesterday's complaint mining. Now ask: \"How could I make this 10x better, cheaper, or faster than what currently exists?\" Write 3 wild ideas — they don't need to be practical yet. The point is to break your thinking out of incremental mode. One of those \"wild\" ideas might be your real opportunity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is aiming for 10% improvement a \"trap\" for entrepreneurs?",
+          "type": "mcq",
+          "options": [
+            "It leads to easily-copied incremental changes in a crowded competitive space",
+            "It's too easy and won't motivate you",
+            "Customers always demand at least 50% improvement",
+            "10% improvements are illegal in most markets"
+          ],
+          "correctIndex": 0,
+          "explanation": "Incremental improvements are easily matched by competitors, barely noticeable to customers, and trap you in exhausting execution wars rather than building genuine advantages."
+        },
+        {
+          "question": "10x thinking forces you to rethink the fundamental approach rather than optimising the current one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "You can't achieve 10x results with the same approach — the constraints force you to innovate at a fundamental level, which is where breakthrough opportunities emerge."
+        },
+        {
+          "question": "How should you apply 10x thinking to a business opportunity?",
+          "type": "mcq",
+          "options": [
+            "Be 10x better on the ONE dimension customers care about most",
+            "Be 10x better at everything simultaneously",
+            "Charge 10x more than competitors",
+            "Hire 10x more employees than your competitors"
+          ],
+          "correctIndex": 0,
+          "explanation": "You don't need to be 10x better at everything. Identify the single dimension customers value most and dominate that axis while being \"good enough\" on everything else."
+        }
+      ]
+    },
+    {
+      "id": "em-10-monopoly-mindset",
+      "dayNumber": 10,
+      "moduleId": "em-module-2",
+      "title": "The Monopoly Mindset",
+      "subtitle": "How to carve out a market position where you're the only real option — not one of dozens.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Best Position: No Competition",
+          "body": "Google captures 90%+ of search ad revenue. Apple captured 75%+ of smartphone profits with just 15% market share. These aren't flukes — they're the result of building defensible positions where direct competition barely exists. You don't need to be Google-sized to apply this thinking.",
+          "stat": "75%",
+          "statLabel": "of smartphone industry profit captured by Apple — with just 15% market share"
+        },
+        {
+          "type": "content",
+          "headline": "How to Build a Mini-Monopoly",
+          "body": "You don't need to dominate a billion-dollar market. You need to dominate YOUR market — however small. A monopoly at any scale means pricing power, loyal customers, and margins that let you reinvest and grow. Start small, win there, then expand.",
+          "bullets": [
+            "Narrow your focus until you're the obvious #1 choice",
+            "Combine 2–3 elements nobody else combines (unique intersection)",
+            "\"Best yoga app for pregnant women over 35\" = monopoly territory",
+            "Being the #1 choice for 1,000 people beats being option #47 for a million"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Four Types of Moat",
+          "body": "A moat is what protects your monopoly position from copycats. Without a moat, any advantage you build gets competed away. The deeper your moat, the longer you stay ahead.",
+          "bullets": [
+            "Network effects: product gets better as more people use it (marketplaces, communities)",
+            "Switching costs: too painful for customers to leave (data, integrations, habits)",
+            "Brand: customers trust you and won't consider alternatives (Apple, Nike)",
+            "Proprietary technology or data: you can do something nobody else can replicate"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Category of One",
+          "body": "The ultimate monopoly: create a new category where you're the default. Don't be a \"better project management tool\" — be \"the first async video workspace for remote teams.\" When you define the category, you set the rules and the reference point.",
+          "stat": "76%",
+          "statLabel": "of category-creating companies capture the majority of market economics"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Mini-Monopoly",
+          "body": "Take your best opportunity idea and answer: (1) Who is the NARROWEST audience I can dominate? (2) What 2–3 things can I combine that nobody else does? (3) What moat could I build over time (network, switching costs, brand, or technology)? (4) What new category could I name? Write your \"Category of One\" positioning statement."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"mini-monopoly\" in entrepreneurial terms?",
+          "type": "mcq",
+          "options": [
+            "Being the clear #1 choice in a narrow, well-defined market",
+            "A small company that breaks antitrust laws",
+            "Having the cheapest product in a large market",
+            "Controlling supply of a raw material"
+          ],
+          "correctIndex": 0,
+          "explanation": "A mini-monopoly means dominating a narrow niche — being the obvious, default choice for a specific audience. It gives you pricing power and margins without needing to be a giant company."
+        },
+        {
+          "question": "Network effects are a type of moat where the product gets better as more people use it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Network effects mean each new user adds value for existing users (e.g., marketplaces, social networks). This creates a self-reinforcing moat that's extremely hard for competitors to replicate."
+        },
+        {
+          "question": "Why is creating a new category advantageous?",
+          "type": "mcq",
+          "options": [
+            "You set the rules, define the reference point, and face no direct comparison",
+            "New categories have no customers, so there's no risk",
+            "Government regulations don't apply to new categories",
+            "It's easier to get media attention for something unusual"
+          ],
+          "correctIndex": 0,
+          "explanation": "When you create the category, you define what \"good\" looks like, set the competitive criteria, and become the default reference point. Competitors are always compared to YOU."
+        }
+      ]
+    },
+    {
+      "id": "em-11-pain-point-radar",
+      "dayNumber": 11,
+      "moduleId": "em-module-2",
+      "title": "Pain-Point Radar — Where Money Hides",
+      "subtitle": "The most profitable businesses don't sell features — they eliminate pain. Learn to measure and rank pain intensity.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "People Pay to Escape Pain — Not to Gain Pleasure",
+          "body": "Behavioural economics proves it: humans are 2–3x more motivated to avoid loss than to pursue gain. This is why painkiller businesses (solving urgent, acute problems) always outperform vitamin businesses (nice-to-have improvements). Find the pain, and you find the money.",
+          "stat": "2–3×",
+          "statLabel": "more motivated by pain avoidance than pleasure seeking (loss aversion)"
+        },
+        {
+          "type": "content",
+          "headline": "Painkillers vs Vitamins",
+          "body": "A vitamin is something that might help eventually — it's optional, easy to skip, and hard to sell. A painkiller solves an urgent, specific problem RIGHT NOW. Customers seek out painkillers; you have to persuade them to buy vitamins.",
+          "bullets": [
+            "Painkiller: \"My website is down and I'm losing £1,000/hour\" → urgent, valuable fix",
+            "Vitamin: \"I should probably improve my website design someday\" → optional, low urgency",
+            "Painkillers have: urgency, willingness to pay, active search behaviour",
+            "Test: \"Would someone wake up at 3am needing this?\" If yes → painkiller"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pain Intensity Scale",
+          "body": "Not all pain is equal. The higher the intensity, the more people will pay and the less marketing you need. Use this scale to rank opportunities: problems at level 8+ practically sell themselves.",
+          "bullets": [
+            "Level 1–3: Mild annoyance (won't pay much, hard to sell)",
+            "Level 4–6: Noticeable frustration (will pay if the solution is easy to find)",
+            "Level 7–8: Significant pain (actively searching for solutions, will pay premium)",
+            "Level 9–10: Acute/urgent crisis (will pay almost anything for immediate relief)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The FIRE Framework for Pain",
+          "body": "The best pains to solve score high on all four dimensions: Frequency (happens often), Intensity (hurts badly), Reach (affects many people), and Expense (costs them money or time). A problem that's frequent, intense, widespread, AND expensive is entrepreneurial gold.",
+          "stat": "F.I.R.E.",
+          "statLabel": "Frequency × Intensity × Reach × Expense = opportunity magnitude"
+        },
+        {
+          "type": "try-it",
+          "headline": "Score 5 Pain Points",
+          "body": "Take the complaints and frustrations from your earlier research. Pick 5 specific pain points and score each on the FIRE framework (1–10 for each dimension). Total score out of 40. Anything scoring 25+ is a strong opportunity. Anything scoring 30+ is exceptional. Which pain scores highest?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do \"painkiller\" businesses outperform \"vitamin\" businesses?",
+          "type": "mcq",
+          "options": [
+            "People are 2–3x more motivated to escape pain than pursue pleasure",
+            "Painkillers are easier to manufacture",
+            "The pharmaceutical industry has higher margins",
+            "Vitamins are regulated more strictly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Loss aversion means humans prioritise avoiding pain over gaining pleasure. Painkiller businesses solve urgent problems people actively seek solutions for, making them easier to sell."
+        },
+        {
+          "question": "A problem scoring at level 8+ on the pain intensity scale practically sells itself.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "At high pain intensity, people are actively searching for solutions and willing to pay premium prices. Marketing becomes about being found rather than convincing people they have a problem."
+        },
+        {
+          "question": "What does the \"R\" in the FIRE framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Reach (how many people are affected)",
+            "Revenue (how much money you can make)",
+            "Risk (how risky the solution is)",
+            "Retention (how long customers stay)"
+          ],
+          "correctIndex": 0,
+          "explanation": "FIRE stands for Frequency, Intensity, Reach, and Expense. Reach measures how many people experience this pain — a problem that affects millions is more valuable than one affecting hundreds."
+        }
+      ]
+    },
+    {
+      "id": "em-12-value-equation",
+      "dayNumber": 12,
+      "moduleId": "em-module-2",
+      "title": "The Value Equation",
+      "subtitle": "A simple formula that determines how much people will pay — and how to maximise your perceived value.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Some Products Sell for £10 and Others for £10,000",
+          "body": "The difference isn't quality alone — it's perceived value. Alex Hormozi's Value Equation shows that price tolerance is a function of four variables: the dream outcome, perceived likelihood of achieving it, time to result, and effort required. Master this equation and you control your pricing power.",
+          "stat": "4",
+          "statLabel": "variables that determine how much someone will pay for your solution"
+        },
+        {
+          "type": "content",
+          "headline": "The Value Equation Explained",
+          "body": "Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort & Sacrifice). To increase value, you either increase the top (bigger outcome, higher confidence) or decrease the bottom (faster results, less effort required).",
+          "bullets": [
+            "↑ Dream Outcome: make the transformation bigger and more desirable",
+            "↑ Perceived Likelihood: prove it works (testimonials, guarantees, credentials)",
+            "↓ Time Delay: deliver results faster (quick wins, immediate access)",
+            "↓ Effort & Sacrifice: make it easier for the customer (done-for-you, automation)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Applying the Equation to Opportunities",
+          "body": "When evaluating an opportunity, ask: how big is the dream outcome for the customer? Can I make results feel certain? Can I compress the time to results? Can I reduce the effort required? The opportunities where you can score highly on all four are the ones worth pursuing.",
+          "bullets": [
+            "Weight loss: outcome is clear, but time and effort are high → opportunity to reduce both",
+            "Business coaching: outcome is vague → opportunity to make it specific and guaranteed",
+            "Software tools: effort is high (learning curve) → opportunity to simplify",
+            "Courses: time delay is long → opportunity to deliver quick wins early"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Value Beats Price — Always",
+          "body": "You never have a \"pricing problem.\" You have a value problem. If people won't pay your price, it means the perceived value equation isn't compelling enough. Fix the equation (better outcome, higher certainty, faster results, less effort) and the price becomes irrelevant.",
+          "stat": "0",
+          "statLabel": "price objections when perceived value far exceeds the asking price"
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Opportunity's Value Equation",
+          "body": "Take your top opportunity and rate it 1–10 on each variable: (1) How desirable is the dream outcome? (2) How likely does the customer believe success is? (3) How fast do they get results? (4) How easy is it for them? Multiply (1×2) and divide by (3×4). Then write one idea to improve your weakest variable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the Value Equation formula?",
+          "type": "mcq",
+          "options": [
+            "(Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort)",
+            "Price × Quantity ÷ Cost",
+            "Revenue - Expenses = Profit",
+            "Features × Quality ÷ Price"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Value Equation shows that perceived value increases when you offer a bigger, more certain outcome and decreases when it takes longer or requires more effort from the customer."
+        },
+        {
+          "question": "According to the Value Equation, reducing the customer's effort increases perceived value.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Effort & Sacrifice is in the denominator — reducing it makes the overall value higher. That's why \"done-for-you\" services command premium prices over \"do-it-yourself\" alternatives."
+        },
+        {
+          "question": "If customers say your product is \"too expensive,\" what is the real problem?",
+          "type": "mcq",
+          "options": [
+            "The perceived value equation isn't compelling enough",
+            "You need to lower your price immediately",
+            "Your product has too many features",
+            "You're targeting the wrong income bracket"
+          ],
+          "correctIndex": 0,
+          "explanation": "Price objections are value objections in disguise. When perceived value far exceeds the price, objections disappear. Fix the outcome, certainty, speed, or ease — not the price."
+        }
+      ]
+    },
+    {
+      "id": "em-13-scoring-opportunities",
+      "dayNumber": 13,
+      "moduleId": "em-module-2",
+      "title": "Scoring Opportunities",
+      "subtitle": "A systematic framework to compare multiple opportunities and pick the one most likely to succeed.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The #1 Mistake: Falling in Love With Your First Idea",
+          "body": "Most aspiring entrepreneurs latch onto their first idea and never evaluate alternatives. Seasoned entrepreneurs generate 10+ ideas and systematically compare them before committing. The scoring framework you'll learn today prevents you from investing months in the wrong opportunity.",
+          "stat": "10+",
+          "statLabel": "ideas generated before choosing — successful entrepreneurs compare, not commit"
+        },
+        {
+          "type": "content",
+          "headline": "The Opportunity Scorecard",
+          "body": "Rate each opportunity across these 7 dimensions. Each scores 1–10. Total score out of 70. This isn't about finding a perfect 70 — it's about comparing relative strengths and spotting fatal weaknesses before you invest.",
+          "bullets": [
+            "1. Pain intensity (FIRE score): How badly do people need this solved?",
+            "2. Market size: Are there enough people with this problem?",
+            "3. Willingness to pay: Can/will they pay real money for a solution?",
+            "4. Your ability to deliver: Can YOU specifically build this?",
+            "5. CENTS score: Does it pass the scalability test?",
+            "6. Speed to revenue: How fast can you get your first paying customer?",
+            "7. Personal energy: Does this excite you enough to persist for years?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Fatal Flaws vs Fixable Weaknesses",
+          "body": "Not all low scores are equal. Some are fatal flaws that disqualify an idea entirely; others are fixable with the right approach. Knowing the difference saves you from abandoning good ideas — or persisting with doomed ones.",
+          "bullets": [
+            "FATAL: Low pain intensity (can't create urgency that doesn't exist)",
+            "FATAL: No willingness to pay (people want it free = not a business)",
+            "FIXABLE: Small market (can expand after dominating the niche)",
+            "FIXABLE: Slow speed to revenue (can build pre-sales or MVPs)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Decision: Commit, Pivot, or Kill",
+          "body": "After scoring, you have three choices. Commit to your top scorer and give it 90 days of focused effort. Pivot a promising-but-flawed idea by changing the audience, offer, or model. Kill anything with fatal flaws — no matter how exciting it feels.",
+          "stat": "90",
+          "statLabel": "days — the minimum focused commitment before evaluating results"
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Top 3 Opportunities",
+          "body": "Take the 3 best ideas from your earlier research. Score each on the 7-dimension framework (1–10 each). Add up the totals. Check for fatal flaws (pain intensity below 5 or willingness to pay below 5 = kill it). Your highest-scoring idea without fatal flaws is your primary opportunity. Write it down with conviction."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is a FATAL flaw that should disqualify a business idea?",
+          "type": "mcq",
+          "options": [
+            "Low pain intensity — people don't urgently need the problem solved",
+            "Small initial market size",
+            "Slow speed to first revenue",
+            "Low personal energy for the topic"
+          ],
+          "correctIndex": 0,
+          "explanation": "Low pain intensity is fatal because you can't create urgency that doesn't exist. Small markets and slow revenue are fixable, but absence of real need cannot be overcome."
+        },
+        {
+          "question": "Successful entrepreneurs typically commit to their first business idea without comparing alternatives.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Successful entrepreneurs generate multiple ideas and compare them systematically. Committing to the first idea without evaluation is the #1 mistake of aspiring entrepreneurs."
+        },
+        {
+          "question": "After scoring opportunities, what should you do with ideas that have fixable weaknesses but high overall scores?",
+          "type": "mcq",
+          "options": [
+            "Pivot — adjust the audience, offer, or model to address the weakness",
+            "Kill them immediately — any weakness means failure",
+            "Ignore the weakness and launch anyway",
+            "Wait until the weakness fixes itself"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fixable weaknesses (small market, slow revenue) can be addressed by pivoting the approach. Only fatal flaws (no pain, no willingness to pay) should kill an idea outright."
+        }
+      ]
+    },
+    {
+      "id": "em-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "em-module-2",
+      "title": "Your Opportunity Shortlist",
+      "subtitle": "Consolidate Module 2 into a clear, ranked shortlist of opportunities you're ready to act on.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Hundreds of Possibilities to One Clear Decision",
+          "body": "Over the past 7 lessons, you've learned to spot market gaps, think in 10x terms, build monopoly positions, identify pain points, calculate value equations, and score opportunities systematically. You now have a toolkit most aspiring entrepreneurs never develop. Today we sharpen it into a decision.",
+          "stat": "7",
+          "statLabel": "frameworks for recognising and evaluating opportunities — now in your toolkit"
+        },
+        {
+          "type": "content",
+          "headline": "Module 2 Recap — Your Opportunity Toolkit",
+          "body": "Let's consolidate the frameworks you now command. Each one gives you a different lens for evaluating the same opportunity — together, they create a comprehensive picture.",
+          "bullets": [
+            "Lesson 8: Market gaps — friction, price, audience, and technology gaps",
+            "Lesson 9: 10x thinking — be radically better on ONE dimension",
+            "Lesson 10: Monopoly mindset — niche domination, moats, category creation",
+            "Lesson 11: Pain-Point Radar — FIRE framework (Frequency, Intensity, Reach, Expense)",
+            "Lesson 12: Value Equation — outcome × likelihood ÷ time × effort",
+            "Lesson 13: Opportunity Scorecard — 7 dimensions, fatal flaws, commit/pivot/kill"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Shortlist Decision Framework",
+          "body": "You should now have 1–3 opportunities that scored well on your scorecard and have no fatal flaws. Here's how to make your final pick — because you need to commit to ONE before Module 3.",
+          "bullets": [
+            "Highest total score wins (if clearly ahead by 10+ points)",
+            "If scores are close, pick the one with fastest speed-to-revenue",
+            "Break remaining ties with personal energy (you'll need persistence)",
+            "Remember: a good idea executed > a perfect idea researched forever"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming in Module 3",
+          "body": "You've done the thinking. Now it's time to DO. Module 3 takes your chosen opportunity and turns it into action — your first experiment, your first dollar, your first customer. The gap between idea and action is where most people stall. Not you.",
+          "stat": "1",
+          "statLabel": "opportunity to commit to — from tomorrow, you build"
+        },
+        {
+          "type": "try-it",
+          "headline": "Finalise Your #1 Opportunity",
+          "body": "Write a one-paragraph \"opportunity statement\" for your top pick: (1) Who is it for? (2) What pain does it solve? (3) Why are you the right person to build it? (4) What makes it 10x better than alternatives? (5) What's your first experiment to test it? Pin this somewhere visible. This is your starting point for Module 3."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When two opportunities have similar scores, what should be the tiebreaker?",
+          "type": "mcq",
+          "options": [
+            "Speed to first revenue (fastest path to testing with real money)",
+            "Which idea sounds most impressive to friends",
+            "Which has the largest total addressable market",
+            "Which requires the most investment (bigger = better)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Speed to revenue is the best tiebreaker because it gets you real-world feedback fastest. A smaller idea that generates revenue in weeks teaches you more than a big idea that takes months."
+        },
+        {
+          "question": "By the end of Module 2, you should have committed to ONE primary opportunity.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 3 is about taking action on a specific opportunity. You need to commit to one focus before entering the execution phase — spreading energy across multiple ideas slows everything down."
+        },
+        {
+          "question": "What are the five elements of an \"opportunity statement\"?",
+          "type": "mcq",
+          "options": [
+            "Who it's for, what pain it solves, why you, what makes it 10x, first experiment",
+            "Product name, logo, tagline, website, social media",
+            "Revenue model, cost structure, funding needs, team, timeline",
+            "Industry, market size, growth rate, competitors, trends"
+          ],
+          "correctIndex": 0,
+          "explanation": "The opportunity statement forces clarity: specific audience, specific pain, personal fit, differentiation (10x), and immediate next action. It's a decision document, not a business plan."
+        }
+      ]
+    },
+    {
+      "id": "em-15-analysis-paralysis",
+      "dayNumber": 15,
+      "moduleId": "em-module-3",
+      "title": "The Analysis Paralysis Trap",
+      "subtitle": "Why overthinking kills more businesses than bad ideas — and the simple cure.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Graveyard of \"Almost\" Businesses",
+          "body": "For every business that fails in the market, a hundred die in someone's head — killed not by competition, but by one more spreadsheet, one more book, one more \"I'm not ready yet.\" Analysis paralysis isn't caution. It's fear wearing a lab coat."
+        },
+        {
+          "type": "content",
+          "headline": "Why Your Brain Loves Research Mode",
+          "body": "Research feels productive because it activates the same reward circuits as real progress. You feel smart. You feel prepared. But there's no risk — and without risk, there's no reward. MJ DeMarco calls this \"sidewalk behaviour disguised as fastlane thinking.\" You're moving sideways, not forward."
+        },
+        {
+          "type": "content",
+          "headline": "The 70% Rule",
+          "body": "Jeff Bezos uses the 70% rule: if you have 70% of the information you wish you had, act. Waiting for 90% means you're too slow. Most decisions are reversible — \"two-way doors.\" You can walk through, look around, and walk back. Only irreversible decisions deserve deep analysis."
+        },
+        {
+          "type": "content",
+          "headline": "The Information-Action Gap",
+          "body": "There's a point where more information actually reduces clarity. You start seeing contradictions. You second-guess. The cure: set a \"decide by\" date. Write down what you know, make your best call, and commit to learning from the outcome rather than from more research."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Decision Deadline",
+          "body": "Think of one business decision you've been postponing. Write it down with a hard deadline: \"I will decide X by [date].\" Now list the 3 things you'd need to know to feel 70% confident. If you already know them — your deadline is today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"70% rule\" suggest about decision-making?",
+          "type": "mcq",
+          "options": [
+            "Wait until you have 100% of the data",
+            "Act when you have about 70% of the information you wish you had",
+            "Spend 70% of your time on research",
+            "Only 70% of decisions matter"
+          ],
+          "correctIndex": 1,
+          "explanation": "Jeff Bezos advocates acting at ~70% information. Waiting for 90%+ makes you too slow in a fast-moving market."
+        },
+        {
+          "question": "Research always moves you closer to launching a business.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research can become a substitute for action. Beyond a point, more information reduces clarity and delays progress without reducing risk."
+        },
+        {
+          "question": "Which type of decision deserves deep analysis according to the \"two-way door\" concept?",
+          "type": "mcq",
+          "options": [
+            "Choosing a business name",
+            "Irreversible decisions you can't easily undo",
+            "Picking a logo colour",
+            "All decisions equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Two-way doors (reversible decisions) should be made quickly. Only one-way doors (irreversible) justify extended deliberation."
+        }
+      ]
+    },
+    {
+      "id": "em-16-commitment-devices",
+      "dayNumber": 16,
+      "moduleId": "em-module-3",
+      "title": "Commitment Devices That Force Action",
+      "subtitle": "How to make inaction more painful than action — so you have no choice but to move.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Burning the Ships",
+          "body": "When Cortés landed in the New World, he burned his ships. His men had exactly two options: conquer or die. Dramatic? Yes. Effective? Absolutely. Commitment devices work because they remove the escape route. When quitting isn't an option, you find a way."
+        },
+        {
+          "type": "content",
+          "headline": "Why Willpower Always Fails",
+          "body": "Willpower is a depleting resource. Every decision you make during the day drains it. By evening — when you planned to work on your side project — there's nothing left. Commitment devices bypass willpower entirely. They change the environment so the desired action is automatic or the undesired action is impossible."
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Types of Commitment Devices",
+          "body": "1) Social — Tell people your plan publicly. 2) Financial — Put money at stake (e.g., bet a friend £500 you'll launch by X date). 3) Environmental — Remove temptation (delete social media apps during work hours). 4) Identity — \"I am an entrepreneur\" vs \"I want to be an entrepreneur.\" 5) Contractual — Sign up for a market stall, buy a domain, book the meeting.",
+          "bullets": [
+            "Social — Tell people publicly",
+            "Financial — Put money at stake",
+            "Environmental — Remove temptation",
+            "Identity — Change how you describe yourself",
+            "Contractual — Book the stall, buy the domain"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Stacking Commitments for Momentum",
+          "body": "One commitment device is good. Three makes inaction almost impossible. Stack a social commitment (tell your partner), a financial one (pre-pay for a course booth), and an identity one (update your LinkedIn bio). Each device reinforces the others and creates a web of accountability."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Commitment Stack",
+          "body": "Choose one action you keep putting off for your business idea. Now pick two commitment devices from the five types and implement them TODAY. Examples: text a friend your deadline (social) + put £100 in an envelope to give away if you miss it (financial). Write them down and set a reminder."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are commitment devices more effective than relying on willpower?",
+          "type": "mcq",
+          "options": [
+            "They make you smarter",
+            "They change the environment so the action is automatic or inaction is painful",
+            "They increase your IQ",
+            "They eliminate the need for planning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Commitment devices bypass willpower (which depletes) by restructuring the environment or raising the cost of inaction."
+        },
+        {
+          "question": "An \"identity commitment\" means updating how you describe yourself (e.g., \"I am an entrepreneur\").",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Identity commitments shift your self-concept. When you see yourself as an entrepreneur, actions inconsistent with that identity create discomfort that drives action."
+        },
+        {
+          "question": "What makes \"stacking\" commitment devices powerful?",
+          "type": "mcq",
+          "options": [
+            "It looks impressive to others",
+            "Each device reinforces the others, making inaction nearly impossible",
+            "It costs less money",
+            "It replaces the need for a business plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stacking creates multiple accountability layers. If one device weakens, the others still keep you moving forward."
+        }
+      ]
+    },
+    {
+      "id": "em-17-first-dollar",
+      "dayNumber": 17,
+      "moduleId": "em-module-3",
+      "title": "Your First $1 — The Simplest Experiment",
+      "subtitle": "The fastest way to validate a business idea is to make someone pay for it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The $1 That Changes Everything",
+          "body": "Your first dollar from a stranger isn't just money — it's proof. Proof that someone values what you create enough to exchange their hard-earned cash for it. That single dollar separates you from 99% of \"wantrepreneurs\" who never get paid for their ideas.",
+          "stat": "$1",
+          "statLabel": "separates you from 99% of wantrepreneurs"
+        },
+        {
+          "type": "content",
+          "headline": "Why Revenue Before Product",
+          "body": "Most people build first and sell later. Smart entrepreneurs sell first and build later. A pre-sale, a consulting call, a landing page with a \"buy\" button — these test demand before you invest months building something nobody wants. The Personal MBA calls this \"testing to learn\" — every transaction is data."
+        },
+        {
+          "type": "content",
+          "headline": "The 48-Hour Revenue Challenge",
+          "body": "Here's the fastest path to your first dollar:",
+          "bullets": [
+            "Pick a skill or knowledge you already have",
+            "Find someone with a problem that skill solves",
+            "Offer a 1-hour consultation, a simple deliverable, or a guide for a small fee",
+            "Deliver it within 48 hours — no website or brand needed"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Your First Sale Teaches You",
+          "body": "Beyond validation, your first sale reveals: what people actually value (often different from what you assumed), how they describe their problem (use their words in your marketing), what they'd pay more for, and whether you enjoy delivering this work. One sale contains more insight than 100 hours of market research."
+        },
+        {
+          "type": "try-it",
+          "headline": "The $1 Challenge",
+          "body": "Can you earn $1 from a stranger in the next 7 days using a skill you already have? Write down: 1) The skill. 2) The specific problem it solves. 3) Who has that problem. 4) How you'll reach them (message, post, email). Now pick one person and make the offer. Not tomorrow — today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is \"sell first, build later\" a smarter approach?",
+          "type": "mcq",
+          "options": [
+            "It saves money on development",
+            "It tests demand before you invest months building something nobody wants",
+            "It's easier to code",
+            "Investors prefer it"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pre-selling validates demand with real money. Building without validation risks creating something the market doesn't want."
+        },
+        {
+          "question": "You need a website and brand before you can make your first sale.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your first sale needs only one person and one solution. A direct message or conversation can close a sale without any website or branding."
+        },
+        {
+          "question": "What does your first sale reveal beyond validation?",
+          "type": "mcq",
+          "options": [
+            "Only whether people will pay",
+            "How customers describe their problem, what they'd pay more for, and whether you enjoy the work",
+            "Just the right price point",
+            "Only market size"
+          ],
+          "correctIndex": 1,
+          "explanation": "A real transaction provides rich data: customer language, willingness to pay, adjacent needs, and your own engagement — far more than research alone."
+        }
+      ]
+    },
+    {
+      "id": "em-18-risk-reframed",
+      "dayNumber": 18,
+      "moduleId": "em-module-3",
+      "title": "Risk Isn't What You Think",
+      "subtitle": "Reframe entrepreneurial risk from \"gambling everything\" to calculated, reversible experiments.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Biggest Risk Is No Risk",
+          "body": "Society frames entrepreneurship as risky and employment as safe. But is spending 40 years dependent on a single income source — one you don't control — really \"safe\"? The Millionaire Fastlane argues the slowlane is the riskiest path of all: one redundancy, one health crisis, one market shift and your entire plan collapses."
+        },
+        {
+          "type": "content",
+          "headline": "Asymmetric Risk-Reward",
+          "body": "Smart entrepreneurs don't take big risks — they take asymmetric ones. An asymmetric bet is one where the downside is small and capped, but the upside is large and uncapped. Spending £200 to test a landing page: max loss is £200. Potential gain? A validated business worth millions. That's a 1:1000+ risk ratio.",
+          "stat": "1:1000+",
+          "statLabel": "risk-reward ratio of a well-structured experiment"
+        },
+        {
+          "type": "content",
+          "headline": "The Risk Stack Framework",
+          "body": "Decompose any venture into layers of risk and tackle each separately with small, cheap tests:",
+          "bullets": [
+            "Market risk — will people pay? (Test with pre-sales)",
+            "Execution risk — can you deliver? (Start with services)",
+            "Financial risk — can you afford to fail? (Time-box experiments)",
+            "Personal risk — can your life absorb this? (Keep your day job initially)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Time-Boxing Risk",
+          "body": "Instead of \"I'm starting a business,\" say \"I'm running a 30-day experiment.\" Time-boxing creates a natural decision point. After 30 days, you evaluate: continue, pivot, or stop — all guilt-free. This removes the identity pressure of \"I failed\" and replaces it with \"I learned the answer.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Risk Audit",
+          "body": "Write down what you believe is the biggest risk of your business idea. Now decompose it: Is it market risk, execution risk, financial risk, or personal risk? For each layer, write the cheapest, fastest test that would give you an answer. You'll likely discover the \"big scary risk\" is actually 3-4 small, testable questions."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an \"asymmetric bet\" in entrepreneurship?",
+          "type": "mcq",
+          "options": [
+            "A bet where you risk everything for a big payoff",
+            "A bet where the downside is small and capped but the upside is large and uncapped",
+            "A bet where risk and reward are equal",
+            "A bet that only works in tech startups"
+          ],
+          "correctIndex": 1,
+          "explanation": "Asymmetric bets limit downside while keeping upside open. Smart entrepreneurs structure every experiment this way."
+        },
+        {
+          "question": "Time-boxing an experiment (e.g., 30 days) removes the identity pressure of \"I failed.\"",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "When you frame it as a time-limited experiment, stopping becomes \"I got my answer\" rather than \"I'm a failure\" — this keeps you willing to try again."
+        },
+        {
+          "question": "According to the Risk Stack Framework, which layer should be tested with pre-sales?",
+          "type": "mcq",
+          "options": [
+            "Execution risk",
+            "Financial risk",
+            "Market risk",
+            "Personal risk"
+          ],
+          "correctIndex": 2,
+          "explanation": "Market risk (will people pay?) is best tested with pre-sales or landing page sign-ups — real money signals real demand."
+        }
+      ]
+    },
+    {
+      "id": "em-19-mvp-mindset",
+      "dayNumber": 19,
+      "moduleId": "em-module-3",
+      "title": "The MVP Mindset",
+      "subtitle": "Ship the ugliest version that works — then let customers tell you what to build next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Perfectionist's Curse",
+          "body": "Drew Houston spent 6 months building Dropbox before realising he could have validated the idea with a 3-minute video. Reid Hoffman said: \"If you're not embarrassed by the first version of your product, you launched too late.\" Perfection is procrastination in disguise."
+        },
+        {
+          "type": "content",
+          "headline": "What an MVP Actually Is",
+          "body": "An MVP isn't a crappy product. It's the smallest thing that tests your riskiest assumption. If your assumption is \"people will pay for meal planning,\" your MVP might be a Google Doc with 7 meal plans you sell for £5 — not an app with AI recommendations. The goal is learning speed, not feature completeness."
+        },
+        {
+          "type": "content",
+          "headline": "The Wizard of Oz MVP",
+          "body": "You don't need technology to test a tech idea. A \"Wizard of Oz\" MVP looks automated to the customer but is manually powered behind the scenes. Zappos started by photographing shoes in stores and fulfilling orders by hand. The customer experience was real — the automation was fake. This tests demand before you build."
+        },
+        {
+          "type": "content",
+          "headline": "Speed Beats Quality (At This Stage)",
+          "body": "Peter Thiel's \"zero to one\" applies here: going from nothing to something is infinitely harder than improving from 1 to 1.1. Your only job right now is to get to 1. Every feature you add before launch is a guess. After launch, every feature can be informed by real user feedback. Build less, learn faster."
+        },
+        {
+          "type": "try-it",
+          "headline": "Define Your MVP",
+          "body": "Write down the one riskiest assumption about your idea (the thing that, if wrong, kills the whole concept). Now design the simplest possible test for that assumption. Rules: it must take less than 1 week and cost less than £50. If it involves building an app, you're overcomplicating it. Think simpler."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of an MVP?",
+          "type": "mcq",
+          "options": [
+            "To impress investors",
+            "To test your riskiest assumption as fast as possible",
+            "To build a complete product cheaply",
+            "To get press coverage"
+          ],
+          "correctIndex": 1,
+          "explanation": "An MVP's goal is learning speed — it tests the single riskiest assumption before you invest more time and money."
+        },
+        {
+          "question": "A \"Wizard of Oz\" MVP means the product looks automated to customers but is manually powered behind the scenes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Wizard of Oz MVPs test customer demand without building real technology — like Zappos manually fulfilling shoe orders before building their platform."
+        },
+        {
+          "question": "What did Reid Hoffman say about launching products?",
+          "type": "mcq",
+          "options": [
+            "\"Wait until it's perfect before showing anyone\"",
+            "\"If you're not embarrassed by the first version, you launched too late\"",
+            "\"Technology is the most important part\"",
+            "\"Get investor approval first\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Hoffman emphasised speed over perfection. Launching \"embarrassingly early\" gets you real feedback faster than continued building in isolation."
+        }
+      ]
+    },
+    {
+      "id": "em-20-building-momentum",
+      "dayNumber": 20,
+      "moduleId": "em-module-3",
+      "title": "Building Unstoppable Momentum",
+      "subtitle": "How to create a flywheel effect where each small win accelerates the next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Compound Effect of Tiny Actions",
+          "body": "A plane uses 80% of its fuel during takeoff. Once airborne, it cruises with minimal effort. Your entrepreneurial journey works the same way. The first weeks are brutally hard — every action feels like pushing a boulder uphill. But momentum compounds. Each small win reduces the friction for the next.",
+          "stat": "80%",
+          "statLabel": "of a plane's fuel is used during takeoff — momentum gets easier"
+        },
+        {
+          "type": "content",
+          "headline": "The Momentum Formula",
+          "body": "Momentum = Consistency × Visibility × Feedback Loops.",
+          "bullets": [
+            "Consistency: show up daily, even if only for 30 minutes",
+            "Visibility: share your progress publicly so opportunities find you",
+            "Feedback loops: measure something weekly to see the trajectory"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Boring\" Secret of Fast Movers",
+          "body": "People who seem to \"overnight success\" actually did the same boring thing for months when no one was watching. MJ DeMarco calls this \"process\" vs \"event\" thinking. The event is the launch, the viral post, the first big sale. The process is the 200 conversations, 50 iterations, and 30 failed experiments that made it possible."
+        },
+        {
+          "type": "content",
+          "headline": "Protecting Your Momentum",
+          "body": "Momentum has enemies. Defend against each:",
+          "bullets": [
+            "Perfectionism — ship weekly instead of polishing endlessly",
+            "Isolation — join a community for accountability",
+            "Scope creep — freeze features after launch",
+            "Comparison — track only your own metrics, not others' Day 1000"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Momentum Dashboard",
+          "body": "Create a simple weekly tracker with just 3 numbers: 1) Hours spent on your business. 2) Conversations with potential customers. 3) Revenue or sign-ups. Start tracking this week. After 4 weeks you'll have a trend line — and trends are far more motivating (and useful) than any single day's results."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three elements of the Momentum Formula?",
+          "type": "mcq",
+          "options": [
+            "Money, time, and luck",
+            "Consistency, visibility, and feedback loops",
+            "Speed, scale, and strategy",
+            "Product, market, and timing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Momentum builds through daily consistency, public visibility (so opportunities find you), and measurable feedback loops to track trajectory."
+        },
+        {
+          "question": "\"Process thinking\" means focusing on daily actions rather than waiting for a big breakthrough event.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "DeMarco's process vs event thinking recognises that breakthroughs are the result of consistent daily actions, not random luck."
+        },
+        {
+          "question": "Which of these is NOT listed as an enemy of momentum?",
+          "type": "mcq",
+          "options": [
+            "Perfectionism",
+            "Customer feedback",
+            "Scope creep",
+            "Comparison to others"
+          ],
+          "correctIndex": 1,
+          "explanation": "Customer feedback is fuel for momentum — it helps you improve. Perfectionism, scope creep, isolation, and comparison are the real enemies."
+        }
+      ]
+    },
+    {
+      "id": "em-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "em-module-3",
+      "title": "Your Entrepreneurial Action Plan",
+      "subtitle": "Bring everything together into a clear 30-day action plan you can start tomorrow.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Knowledge to Action — The Final Bridge",
+          "body": "Over 21 days you've rewired how you think about wealth, opportunity, and risk. You've learned the builder's mindset, trained your opportunity radar, and discovered tools to force yourself into action. Now comes the only question that matters: what will you do with it?"
+        },
+        {
+          "type": "content",
+          "headline": "Your 30-Day Sprint Template",
+          "body": "A week-by-week plan to go from idea to validated (or invalidated) business:",
+          "bullets": [
+            "Week 1: Choose your best opportunity + have 5 customer conversations",
+            "Week 2: Design and build your MVP (simplest version)",
+            "Week 3: Get your first sale or sign-up",
+            "Week 4: Measure, learn, decide — continue, pivot, or try next idea"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Three Commitments",
+          "body": "Before you close this course, make three commitments:",
+          "bullets": [
+            "TIME — block 30 minutes daily for your sprint",
+            "ACCOUNTABILITY — tell one person your plan and ask them to check in weekly",
+            "LEARNING — journal what you learn each week, whether you succeed or not"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Success Looks Like",
+          "body": "Success after this course isn't a million-dollar exit. It's having a validated (or invalidated) idea, your first customer conversation, or your first dollar. It's proving to yourself that you can create value outside of a job. Even a \"failed\" experiment is a success — it gave you data, confidence, and skills that compound into your next attempt."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your 30-Day Action Plan",
+          "body": "Grab a piece of paper (or open a note). Write: \"My 30-Day Entrepreneurial Sprint\" with today's date. Fill in: 1) The opportunity I'm testing. 2) My riskiest assumption. 3) How I'll test it (Week 1–2 plan). 4) My commitment devices. 5) My accountability partner. Take a photo and send it to that partner right now. Your entrepreneurial journey has officially begun."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In the 30-Day Sprint Template, what should you accomplish in Week 1?",
+          "type": "mcq",
+          "options": [
+            "Build your full product",
+            "Choose your opportunity and have 5 customer conversations",
+            "Hire a team",
+            "Write a business plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "Week 1 is about selection and validation — pick your best opportunity and talk to real potential customers before building anything."
+        },
+        {
+          "question": "A \"failed\" 30-day experiment is still a success because it gives you data, confidence, and skills.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Every experiment — even one that proves an idea won't work — builds entrepreneurial skills and eliminates bad options, making your next attempt stronger."
+        },
+        {
+          "question": "What are the Three Commitments you should make before finishing this course?",
+          "type": "mcq",
+          "options": [
+            "Money, time, and energy",
+            "Time, accountability, and learning",
+            "Product, market, and team",
+            "Speed, scale, and profit"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three commitments are: daily TIME for your sprint, ACCOUNTABILITY from another person, and LEARNING through weekly reflection."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1616 @@
+{
+  "id": "execution-founder-productivity",
+  "title": "Execution & Founder Productivity",
+  "subtitle": "Master focus, execute with precision, and scale your time",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "efp-module-1",
+      "moduleNumber": 1,
+      "title": "Focus & Clarity",
+      "subtitle": "Master the art of ruthless focus — discover why doing less often achieves more, how to identify the single most important task, and how to protect your most productive hours with purpose.",
+      "days": "Lessons 1–7",
+      "skill": "Apply The ONE Thing framework, use the Focusing Question daily, and design a distraction-free environment for peak performance",
+      "lessonIds": [
+        "efp-1-the-one-thing",
+        "efp-2-focusing-question",
+        "efp-3-domino-effect",
+        "efp-4-goal-setting-to-the-now",
+        "efp-5-eliminating-distractions",
+        "efp-6-energy-and-willpower",
+        "efp-7-clarity-and-purpose"
+      ]
+    },
+    {
+      "id": "efp-module-2",
+      "moduleNumber": 2,
+      "title": "12-Week Execution",
+      "subtitle": "Replace vague annual plans with a tight 12-week execution system — set high-leverage goals, track the right measures, and build a weekly rhythm of accountability that keeps you on track every single week.",
+      "days": "Lessons 8–14",
+      "skill": "Build and run a 12-week plan with scorecards, lead measures, and a weekly accountability rhythm that drives consistent execution",
+      "lessonIds": [
+        "efp-8-twelve-week-year",
+        "efp-9-compelling-vision",
+        "efp-10-twelve-week-goals",
+        "efp-11-weekly-plan",
+        "efp-12-scorecard",
+        "efp-13-lead-and-lag",
+        "efp-14-accountability"
+      ]
+    },
+    {
+      "id": "efp-module-3",
+      "moduleNumber": 3,
+      "title": "Scale Your Time & Measure What Matters",
+      "subtitle": "Stop trading hours for tasks — learn to buy back your time through smart delegation, then apply OKRs to ensure your whole team (or just you) moves relentlessly toward what matters most.",
+      "days": "Lessons 15–21",
+      "skill": "Calculate your Buyback Rate, delegate using the DRIP Matrix, write and track OKRs, and run a founder operating cadence that scales",
+      "lessonIds": [
+        "efp-15-buyback-rate",
+        "efp-16-drip-matrix",
+        "efp-17-delegation-playbook",
+        "efp-18-okr-fundamentals",
+        "efp-19-writing-key-results",
+        "efp-20-okr-cadence",
+        "efp-21-founder-operating-system"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "efp-1-the-one-thing",
+      "dayNumber": 1,
+      "moduleId": "efp-module-1",
+      "title": "The ONE Thing",
+      "subtitle": "Why doing less is the secret to achieving more — and how one focused action creates a chain reaction of success.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most successful people don't do more — they do less. But they do that one thing with singular, unbreakable focus.",
+          "body": "Gary Keller spent years studying the highest achievers across business, sport, and creative fields. His counterintuitive finding: they didn't have better skills, more hours, or superior work ethic. They had one thing the rest lacked — the ability to identify the single most important action and pursue it with everything they had."
+        },
+        {
+          "type": "content",
+          "headline": "The Multi-Tasking Myth",
+          "body": "Multi-tasking feels productive but isn't. Studies show that switching between tasks costs up to 40% of productive capacity every time you do it. The brain doesn't run tasks in parallel — it rapidly alternates, bleeding time and quality with every switch. What looks like efficiency is actually fragmentation. The most productive people aren't better at juggling — they've stopped juggling entirely."
+        },
+        {
+          "type": "content",
+          "headline": "The ONE Thing Principle",
+          "body": "The core idea: *\"What's the ONE Thing you can do such that by doing it, everything else will be easier or unnecessary?\"* This isn't just a question about your to-do list — it's a philosophy for designing your entire day. When you consistently identify and act on your ONE Thing, you create a domino effect where each action topples a slightly larger domino ahead of it."
+        },
+        {
+          "type": "content",
+          "headline": "How Keller Applied It",
+          "body": "Gary Keller co-founded one of the world's largest real estate companies. When Keller Williams struggled in the early 2000s, he stepped back as CEO to focus on his ONE Thing — training and culture. That single decision transformed the company from near-bankruptcy into a $1 billion enterprise. The lesson: knowing your ONE Thing isn't passive. It demands courageous prioritisation and the willingness to let everything else wait."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your ONE Thing Tomorrow",
+          "body": "Before you check email or open any app tomorrow morning, ask: *\"What's the ONE Thing I can do today such that by doing it, everything else becomes easier or unnecessary?\"* Write the answer now. Block 2–4 hours in the morning to work on it exclusively. Treat that time like your most important meeting — because it is."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Gary Keller, what is the primary reason most people fail to achieve their biggest goals?",
+          "type": "mcq",
+          "options": [
+            "They lack the skills or intelligence needed",
+            "They spread their focus across too many things instead of prioritising the ONE most important action",
+            "They don't set enough goals",
+            "They work fewer hours than successful people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Keller's key insight is that scattered focus — not lack of talent or effort — is the primary reason people fall short. Concentrating on the ONE most impactful action creates the compound results that broad effort never achieves."
+        },
+        {
+          "question": "Research cited in The ONE Thing suggests that task-switching reduces productive capacity by approximately how much?",
+          "type": "mcq",
+          "options": [
+            "10%",
+            "20%",
+            "40%",
+            "60%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies on cognitive switching costs show that moving between tasks can reduce productive output by up to 40%, making multi-tasking one of the most damaging habits for knowledge workers."
+        },
+        {
+          "question": "What is the core ONE Thing question that Keller recommends asking every day?",
+          "type": "mcq",
+          "options": [
+            "\"What are the top 5 things I need to complete today?\"",
+            "\"What is the most urgent item on my to-do list?\"",
+            "\"What's the ONE Thing I can do such that by doing it, everything else will be easier or unnecessary?\"",
+            "\"What does my team need from me today?\""
+          ],
+          "correctIndex": 2,
+          "explanation": "This specific question is the heart of Keller's system. The phrase \"easier or unnecessary\" is the leverage test — it forces you to find the action with the highest multiplier effect, not just the next task on the list."
+        }
+      ]
+    },
+    {
+      "id": "efp-2-focusing-question",
+      "dayNumber": 2,
+      "moduleId": "efp-module-1",
+      "title": "The Focusing Question",
+      "subtitle": "One question powerful enough to cut through any complexity and reveal exactly what to do next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The quality of your answers is determined entirely by the quality of your questions. Ask small questions — get small results.",
+          "body": "Most people plan their day by asking \"What should I do?\" The Focusing Question is fundamentally different. It's deliberately big and specific — engineered to direct your mind toward the single highest-leverage action available to you. Change the question, change the answer, change the outcome."
+        },
+        {
+          "type": "content",
+          "headline": "The Big & Specific Formula",
+          "body": "The Focusing Question has two parts: **\"What's the ONE Thing I can do [specific context]** such that by doing it everything else will be easier or unnecessary?\" The first part is *big* — it forces strategic thinking. The second — \"easier or unnecessary\" — is the leverage test. If doing X doesn't make other things easier, X probably isn't your ONE Thing. Both parts must be present for the question to work."
+        },
+        {
+          "type": "content",
+          "headline": "The Question at Every Scale",
+          "body": "The Focusing Question works at any level of zoom:\n\n**Life:** \"What's my ONE Thing for building the business I want?\"\n**Year:** \"What's my ONE Thing for growing revenue this year?\"\n**Month:** \"What's my ONE Thing this month to hit my quarterly goal?\"\n**Today:** \"What's my ONE Thing right now?\"\n\nEach answer feeds into the next — today's action should connect directly to your biggest vision."
+        },
+        {
+          "type": "content",
+          "headline": "Is Your Question Big Enough?",
+          "body": "Most people's \"big\" questions are still too small. \"How can I get one more client this month?\" is a task. \"What's the ONE Thing that would make winning clients almost effortless?\" is the Focusing Question. The difference is that the second question forces you to find leverage — a structural solution — rather than just more effort. Bigger questions lead to bigger breakthroughs."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Apply the Focusing Question",
+          "body": "Choose one area of your work that isn't moving as fast as you'd like. Now ask: *\"What's the ONE Thing I can do in [this area] such that by doing it, everything else will be easier or unnecessary?\"* Sit with the question for 60 seconds. Don't rush. The best answers require a moment of discomfort before they surface. Write down whatever comes up — then ask yourself: is this truly the ONE Thing, or just the first thing?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes the Focusing Question different from a standard planning question like \"What should I do today?\"",
+          "type": "mcq",
+          "options": [
+            "It focuses on completing the most tasks in the least time",
+            "It is big AND specific — looking for the single action that makes everything else easier or unnecessary",
+            "It prioritises urgent tasks over important ones",
+            "It only applies to long-term goals, not daily work"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Focusing Question combines two elements: big enough to be strategic and specific enough to produce a concrete action. The \"easier or unnecessary\" test ensures you're finding leverage, not just another task."
+        },
+        {
+          "question": "At what levels of planning can the Focusing Question be applied?",
+          "type": "mcq",
+          "options": [
+            "Only for annual planning sessions",
+            "Only for daily to-do lists",
+            "Only for quarterly reviews",
+            "At any level — from life goals down to what to do right now"
+          ],
+          "correctIndex": 3,
+          "explanation": "Keller designed the Focusing Question to work as a nested system — from your biggest life vision all the way down to what to tackle in the next hour. Each level's answer should connect to and serve the level above it."
+        },
+        {
+          "question": "What is the \"leverage test\" built into the Focusing Question?",
+          "type": "mcq",
+          "options": [
+            "Whether the task can be delegated to someone else",
+            "Whether the task generates immediate revenue",
+            "Whether doing it will make everything else easier or unnecessary",
+            "Whether the task fits within a 90-minute time block"
+          ],
+          "correctIndex": 2,
+          "explanation": "The phrase \"such that by doing it everything else will be easier or unnecessary\" is the leverage test. If completing an action doesn't unlock or simplify other important things, it probably isn't your true ONE Thing."
+        }
+      ]
+    },
+    {
+      "id": "efp-3-domino-effect",
+      "dayNumber": 3,
+      "moduleId": "efp-module-1",
+      "title": "The Domino Effect",
+      "subtitle": "Success is sequential, not simultaneous — learn how one right action today sets off a chain reaction that builds unstoppable momentum.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A single domino can knock over another 50% larger than itself. By the 57th domino, you could topple something the size of the gap between Earth and the Moon.",
+          "body": "In 1983, physicist Lorne Whitehead demonstrated that dominoes grow geometrically — each one toppling the next, larger one. This isn't just a physics curiosity. It's the exact model of how extraordinary achievement works. Small, correctly sequenced actions compound into results that seem impossible when you're looking at the first domino."
+        },
+        {
+          "type": "content",
+          "headline": "Success Is Sequential",
+          "body": "Most people try to do everything at once — launch the product, build the team, refine marketing, and fix operations simultaneously. The result: mediocre progress across many fronts. High performers think differently. They ask: \"What's the first domino?\" They identify the action that, when completed, makes the next action easier — then focus there until it falls. This isn't slow. It's actually the fastest path to extraordinary outcomes."
+        },
+        {
+          "type": "content",
+          "headline": "Amazon's First Domino",
+          "body": "When Jeff Bezos started Amazon, he could have sold anything. He chose books — not because books were his end goal, but because they were the right first domino. Books are uniform in size, easy to ship, and exist in enormous variety. By mastering book logistics first, Amazon built the infrastructure, customer trust, and operational muscle to expand into everything else. The bookstore was a domino, not a destination."
+        },
+        {
+          "type": "content",
+          "headline": "Sequence Is Strategy",
+          "body": "Look at your most important goal. List the top five actions that would move you toward it. Now ask: \"Which of these, if done first, would make the others easier or even unnecessary?\" That's your first domino. Commit your best time and energy there until it falls — then the next will be clearer and easier. The order in which you do things is as important as the things you do."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Find Your First Domino",
+          "body": "Write down your most important goal right now. Beneath it, list three to five actions that would move you toward it. Ask yourself: *\"Which of these, if completed first, would make the others significantly easier or unnecessary?\"* Circle it. That's your first domino. Does your current work schedule give it priority — or is it buried under reactive tasks? Be honest."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the physics of falling dominoes illustrate about achievement?",
+          "type": "mcq",
+          "options": [
+            "That small actions have no meaningful long-term impact",
+            "That progress must happen simultaneously across all areas",
+            "That one right sequential action can compound into results that seem impossible at first",
+            "That success requires a large initial effort before results appear"
+          ],
+          "correctIndex": 2,
+          "explanation": "Whitehead's domino experiment shows momentum builds geometrically when actions are sequenced correctly. Keller uses this to illustrate that extraordinary achievement isn't about doing more — it's about identifying and acting on the right sequence."
+        },
+        {
+          "question": "Why is sequential focus often faster than simultaneous effort across multiple goals?",
+          "type": "mcq",
+          "options": [
+            "Because sequential work requires less mental energy overall",
+            "Because completing one key action in the right order makes subsequent actions easier, compounding results faster than parallel effort",
+            "Because simultaneous work is impossible in practice",
+            "Because sequential work requires less willpower"
+          ],
+          "correctIndex": 1,
+          "explanation": "Keller's point is that sequential focus — doing the right thing in the right order — actually produces faster results than spreading effort simultaneously. Each completed domino builds capability and momentum for the next."
+        },
+        {
+          "question": "In the Amazon example, why was \"books\" the right first domino for Bezos?",
+          "type": "mcq",
+          "options": [
+            "Because Bezos loved books personally",
+            "Because books were the most profitable category online",
+            "Because mastering book logistics built the infrastructure, trust, and operational capability for everything else",
+            "Because books faced the least competition at the time"
+          ],
+          "correctIndex": 2,
+          "explanation": "Books were a strategic first domino — uniform, shippable, and varied enough to stress-test logistics at scale. The real goal was the platform infrastructure. Books were simply the fastest, safest domino to topple first."
+        }
+      ]
+    },
+    {
+      "id": "efp-4-goal-setting-to-the-now",
+      "dayNumber": 4,
+      "moduleId": "efp-module-1",
+      "title": "Goal Setting to the Now",
+      "subtitle": "Bridge the gap between your biggest future goal and the single action you take this morning.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people have big goals and daily to-do lists — but no bridge between them. They work hard and wonder why their vision never gets closer.",
+          "body": "The problem isn't effort or ambition. It's that daily actions aren't connected to important outcomes. Keller's Goal Setting to the Now is that bridge: a five-level process that connects your biggest someday goal to what you do this morning. Without it, hard work becomes a treadmill."
+        },
+        {
+          "type": "content",
+          "headline": "The Five-Level Goal Cascade",
+          "body": "Start at the top and work backwards:\n\n**1. Someday Goal** — What does your ideal future look like in 5–10 years?\n**2. 5-Year Goal** — What must be true in five years to be on track?\n**3. 1-Year Goal** — What's the most important annual milestone?\n**4. Monthly Goal** — What must happen this month to hit the annual goal?\n**5. Weekly/Daily Goal** — What's my ONE Thing today to make this month's goal inevitable?\n\nEach level is derived from the level above it. Your daily ONE Thing is never arbitrary."
+        },
+        {
+          "type": "content",
+          "headline": "From Vision to Monday Morning",
+          "body": "Example: Sarah wants to build a £5M ARR SaaS business (someday). Her 5-year goal: reach £1M ARR. Her 1-year goal: sign 50 paying customers. Monthly: run 20 demos. This week: book 5 demo calls. Today's ONE Thing: write and send personalised outreach to 10 prospects.\n\nNotice how the morning task is the logical bottom step in a staircase that leads directly to the summit. That's Goal Setting to the Now in action."
+        },
+        {
+          "type": "content",
+          "headline": "Why Top-Down Is Non-Negotiable",
+          "body": "If you start from daily tasks and work up, you risk building a ladder leaning against the wrong wall. Starting from vision guarantees every rung leads to the summit you actually want. The cascade must flow top-down — from someday goal to today's ONE Thing — or the alignment breaks and daily work becomes disconnected from what matters most."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Goal Cascade",
+          "body": "Take 10 minutes and write all five levels for your most important goal right now. Rough numbers are fine. Start with your biggest vision, work backwards: 5 years, 1 year, this month, this week. Then ask: *\"Given my monthly goal, what's the ONE Thing I need to do today?\"* Do this exercise and your morning will never feel aimless again."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What problem does \"Goal Setting to the Now\" solve for ambitious people?",
+          "type": "mcq",
+          "options": [
+            "They set too many goals and feel overwhelmed",
+            "They lack vision and ambition",
+            "Their daily actions are not connected to their most important long-term outcomes",
+            "They don't know how to measure progress"
+          ],
+          "correctIndex": 2,
+          "explanation": "The core insight is that most people have goals and daily work — but no bridge between them. Goal Setting to the Now creates a five-level cascade so every morning action traces back directly to the biggest vision."
+        },
+        {
+          "question": "In the five-level goal cascade, what question should drive your daily goal?",
+          "type": "mcq",
+          "options": [
+            "\"What did I achieve yesterday that I can build on?\"",
+            "\"What does my team need from me today?\"",
+            "\"What is the most urgent task in my inbox?\"",
+            "\"What is my ONE Thing today to make this month's goal inevitable?\""
+          ],
+          "correctIndex": 3,
+          "explanation": "The daily goal is derived from the monthly goal, not from urgency or habit. By asking what makes this month's goal inevitable, you ensure each day's work is genuinely moving you forward."
+        },
+        {
+          "question": "Why must the five-level goal cascade be built top-down — starting from the someday goal?",
+          "type": "mcq",
+          "options": [
+            "Because annual goals are more reliable than daily ones",
+            "Because starting from the biggest vision ensures every lower-level goal is logically derived from what matters most",
+            "Because it is easier to start with big aspirational numbers",
+            "Because today's tasks are too unpredictable to plan around"
+          ],
+          "correctIndex": 1,
+          "explanation": "Working top-down ensures alignment at every level. Starting from vision guarantees every rung on the ladder leads to the summit you actually want — rather than the easier path of starting with familiar daily tasks."
+        }
+      ]
+    },
+    {
+      "id": "efp-5-eliminating-distractions",
+      "dayNumber": 5,
+      "moduleId": "efp-module-1",
+      "title": "Eliminating Distractions",
+      "subtitle": "Build an environment that makes deep work inevitable and distraction nearly impossible.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most productive people don't have more self-control — they have fewer temptations in their environment.",
+          "body": "Willpower depletes throughout the day, is unreliable under stress, and requires constant effort to maintain. Environment design is far more powerful: when you engineer your surroundings to make the right behaviour easy and the wrong behaviour hard, you don't need willpower at all. Change your environment, change your output."
+        },
+        {
+          "type": "content",
+          "headline": "The Time Block Method",
+          "body": "Keller's primary focus tool is **time blocking** — treating deep work sessions as non-negotiable appointments with yourself:\n\n**1. Block first.** Schedule your ONE Thing time before anything else fills your calendar.\n**2. Protect it.** Treat it like a meeting with your most important client — never cancel it.\n**3. Bunker down.** Phone off, email closed, door closed or headphones on.\n**4. Start small.** If four hours feels impossible, start with 90 minutes and build."
+        },
+        {
+          "type": "content",
+          "headline": "How Great Performers Protect Their Time",
+          "body": "Novelist Haruki Murakami wakes at 4am, writes for 5–6 hours, and is done by noon. Bill Gates holds \"Think Weeks\" — isolated retreats with no meetings, no calls. Cal Newport keeps a \"shutdown ritual\" at 5:30pm and refuses to check email afterward. The specifics differ, but the pattern is identical: they **design** their day around deep work rather than hoping they'll find time for it."
+        },
+        {
+          "type": "content",
+          "headline": "Who Owns Your Attention?",
+          "body": "Every notification is someone else's request for your attention. Every meeting in someone else's calendar is a claim on your most productive hours. A reactive schedule — built around other people's priorities — is the enemy of extraordinary results. Your attention is the most valuable asset you own. The question isn't whether you have enough time — it's who you're giving your attention to."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Focus Environment",
+          "body": "Do these three things today:\n\n1. **Block your ONE Thing time** in your calendar for tomorrow — first thing in the morning for at least 90 minutes.\n2. **Identify your top distraction** (phone notifications? email? noisy space?) and commit to one change to reduce it tomorrow.\n3. **Prepare your workspace tonight** — open the file or tool you'll need so there's zero friction at the start of your block."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does Gary Keller favour environment design over willpower as a focus strategy?",
+          "type": "mcq",
+          "options": [
+            "Because willpower is a myth and doesn't exist",
+            "Because willpower depletes throughout the day and is unreliable, while environment design makes the right behaviour automatic",
+            "Because environment design is faster to implement",
+            "Because willpower only works for physical tasks, not mental ones"
+          ],
+          "correctIndex": 1,
+          "explanation": "Willpower is a finite resource that depletes with use and stress. Environment design removes the need to resist temptation in the first place — making the right behaviour the path of least resistance."
+        },
+        {
+          "question": "What is the first rule of the Time Block Method?",
+          "type": "mcq",
+          "options": [
+            "Block time for meetings before scheduling deep work",
+            "Keep blocks short — no more than 60 minutes — to avoid mental fatigue",
+            "Block your ONE Thing time before anything else fills your calendar",
+            "Use the last two hours of the day for focused work"
+          ],
+          "correctIndex": 2,
+          "explanation": "Scheduling your ONE Thing time first is critical because calendars fill from the outside in — urgent requests and meetings expand to fill whatever space is available. Protect deep work by claiming it before anything else does."
+        },
+        {
+          "question": "What do high performers like Murakami, Gates, and Newport have in common in how they manage focus?",
+          "type": "mcq",
+          "options": [
+            "They all work more than 12 hours per day",
+            "They avoid using technology entirely",
+            "They design their day around deep work rather than hoping to find time for it",
+            "They delegate all communication to assistants"
+          ],
+          "correctIndex": 2,
+          "explanation": "Despite different routines and industries, all three share a deliberate design approach: deep work is scheduled and protected as the centrepiece of the day, not squeezed around other commitments."
+        }
+      ]
+    },
+    {
+      "id": "efp-6-energy-and-willpower",
+      "dayNumber": 6,
+      "moduleId": "efp-module-1",
+      "title": "Energy & Willpower Management",
+      "subtitle": "Your focus is only as good as your energy — manage your mental fuel so your best work happens at your best time.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every decision you make today draws from the same willpower reserve. By 3pm, you're running on fumes. Protect your best energy for your best work.",
+          "body": "Roy Baumeister's landmark research on \"ego depletion\" showed that willpower functions like a muscle: it fatigues with use and recovers with rest. The great decisions made at 9am become poor decisions by 3pm — not because the problem got harder, but because your decision-making fuel ran out."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Dimensions of Energy",
+          "body": "The ONE Thing isn't only about prioritising tasks — it's about managing four energy dimensions:\n\n**1. Physical** — Sleep (7–9 hrs), exercise, and nutrition are the non-negotiable foundation.\n**2. Emotional** — Positivity, relationships, and reducing chronic stress.\n**3. Mental** — Minimising decision fatigue. Obama famously wore the same suit style daily.\n**4. Spiritual (Purpose)** — Clarity about *why* you're doing what you're doing. Nothing fuels sustained effort like genuine meaning."
+        },
+        {
+          "type": "content",
+          "headline": "The Sleep-First Protocol",
+          "body": "Arianna Huffington nearly collapsed from exhaustion while building The Huffington Post. After breaking her cheekbone in a fatigue-induced fall, she became an evangelist for sleep as performance fuel. The research is unambiguous: 7–9 hours is not laziness — it's the minimum for peak cognitive performance. Sleep-deprived workers make more errors, react more slowly, and make measurably worse decisions. Your ONE Thing deserves your best brain."
+        },
+        {
+          "type": "content",
+          "headline": "Decision Fatigue Is Real",
+          "body": "A study of Israeli judges found they granted parole in 65% of cases heard at the start of the day — dropping to nearly 0% before a break, then resetting after food. The legal facts hadn't changed. The judges' willpower had. Every trivial decision you make — what to eat, what to wear, which notification to check — depletes the same resource you need for your most important work. Automate and eliminate the small decisions ruthlessly."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Personal Energy Audit",
+          "body": "Rate yourself 1–10 on each dimension:\n\n- **Physical:** Sleep, exercise, nutrition consistency\n- **Emotional:** Positivity and stress levels\n- **Mental:** How many trivial decisions could you eliminate?\n- **Purpose:** How clearly can you articulate why your work matters?\n\nPick your lowest score. What's one small change this week that would raise it? That's your energy ONE Thing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Roy Baumeister's research on ego depletion reveal about willpower?",
+          "type": "mcq",
+          "options": [
+            "Willpower is unlimited if you have a strong enough purpose",
+            "Willpower only applies to emotional decisions, not professional ones",
+            "Willpower is a finite resource that depletes with use and recovers with rest",
+            "Willpower increases throughout the day as you build momentum"
+          ],
+          "correctIndex": 2,
+          "explanation": "Baumeister's ego depletion research showed willpower draws from a shared pool — every decision, large or small, depletes it. This is why scheduling your most important work in the morning (before the pool empties) is a high-performance strategy."
+        },
+        {
+          "question": "What lesson did the Israeli judges study demonstrate about decision fatigue?",
+          "type": "mcq",
+          "options": [
+            "Judges become more lenient as they learn more about each case",
+            "Willpower depletion affects real-world decisions — parole rates plummeted before breaks and reset afterward",
+            "Mornings are statistically better for defendants",
+            "Decision quality improves over the course of a day as experience accumulates"
+          ],
+          "correctIndex": 1,
+          "explanation": "The judges' decisions were being driven not by the legal facts — which were constant — but by their willpower levels. This study is one of the most powerful demonstrations that decision fatigue has real, measurable consequences."
+        },
+        {
+          "question": "According to The ONE Thing's energy framework, which dimension forms the non-negotiable foundation for all the others?",
+          "type": "mcq",
+          "options": [
+            "Emotional",
+            "Mental",
+            "Physical",
+            "Spiritual"
+          ],
+          "correctIndex": 2,
+          "explanation": "Physical energy — sleep, exercise, and nutrition — is foundational because it directly affects cognitive performance, emotional regulation, and mental capacity. Without adequate physical energy, the other three dimensions cannot function at their best."
+        }
+      ]
+    },
+    {
+      "id": "efp-7-clarity-and-purpose",
+      "dayNumber": 7,
+      "moduleId": "efp-module-1",
+      "title": "Clarity & Purpose",
+      "subtitle": "The most underrated productivity tool: absolute clarity about why your work matters and exactly where you're going.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When you know exactly where you're going and why it matters, choosing what to do next becomes almost automatic.",
+          "body": "Keller's observation: the majority of people don't have a clear, written answer to \"What's the most important thing I can do right now?\" They're reacting to urgency, drifting between tasks. Research on high performers tells a different story: clarity about purpose and direction is one of the most reliable predictors of long-term success."
+        },
+        {
+          "type": "content",
+          "headline": "The Purpose Compass",
+          "body": "Purpose isn't a one-time declaration — it's a daily navigation tool. Ask yourself three questions regularly:\n\n**1. What am I building?** (Concrete long-term vision)\n**2. Why does it matter?** (Emotional and values-based meaning)\n**3. What does success look like in 12 weeks?** (Near-term clarity that bridges vision and execution)\n\nWhen all three are answered, decision-making becomes dramatically faster. Purpose does the filtering for you."
+        },
+        {
+          "type": "content",
+          "headline": "Viktor Frankl on Meaning and Performance",
+          "body": "Viktor Frankl, Holocaust survivor and psychiatrist, observed that prisoners who maintained a sense of purpose — even in the most extreme conditions — survived at higher rates and showed psychological resilience others couldn't maintain. His insight: *\"Those who have a why can bear almost any how.\"* You don't need extreme circumstances for this principle to apply. Clarity of purpose is the fuel that makes sustained effort possible."
+        },
+        {
+          "type": "content",
+          "headline": "What a Compelling Vision Feels Like",
+          "body": "Here's the test of a compelling purpose: when you imagine achieving it, do you feel a genuine pull — excitement mixed with a degree of fear? Or does it feel safe and comfortable? Safe visions don't generate enough energy to fuel disciplined execution over weeks and months. Your vision needs to be big enough to feel slightly unreachable from where you stand today — otherwise the urgency to act is missing."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your Purpose Statement",
+          "body": "Answer these three questions in writing right now (rough drafts are fine):\n\n1. **What am I building in the next 3–5 years?** (Specific — include numbers and outcomes)\n2. **Why does this matter deeply to me?** (Go past the surface answer. Keep asking \"why?\" until it feels real)\n3. **What would success look like in 12 weeks?** (One concrete, measurable outcome)\n\nKeep this somewhere you'll see it daily — desk, phone notes, journal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to The ONE Thing, what is clarity of purpose most useful for in day-to-day work?",
+          "type": "mcq",
+          "options": [
+            "It eliminates the need to plan at all",
+            "It speeds up decision-making by filtering choices through a defined purpose and direction",
+            "It reduces the need for goals because you trust your instincts",
+            "It helps you delegate decisions to others more easily"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you have clarity about where you're going and why, decisions become faster and more consistent — purpose acts as an automatic filter, eliminating most options before they even need to be consciously evaluated."
+        },
+        {
+          "question": "What are the three questions in the Purpose Compass framework?",
+          "type": "mcq",
+          "options": [
+            "What am I afraid of? What excites me? What do I need to stop?",
+            "What am I building? Why does it matter? What does success look like in 12 weeks?",
+            "What are my strengths? What are my weaknesses? What is my market?",
+            "Who is my customer? What do they need? How do I reach them?"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Purpose Compass combines a concrete long-term vision, emotional meaning, and near-term clarity — bridging the gap between abstract purpose and daily execution."
+        },
+        {
+          "question": "What lesson does Viktor Frankl's work teach about purpose and performance?",
+          "type": "mcq",
+          "options": [
+            "Performance improves only when external conditions are comfortable",
+            "Purpose is a luxury that only matters after basic needs are met",
+            "Those with a clear \"why\" can sustain effort and resilience through almost any difficulty",
+            "Purpose must be externally validated to be truly motivating"
+          ],
+          "correctIndex": 2,
+          "explanation": "Frankl's observation — \"those who have a why can bear almost any how\" — is supported by psychological research on motivation and resilience. Purpose isn't just inspiring; it's functionally protective against giving up under pressure."
+        }
+      ]
+    },
+    {
+      "id": "efp-8-twelve-week-year",
+      "dayNumber": 8,
+      "moduleId": "efp-module-2",
+      "title": "The 12 Week Year",
+      "subtitle": "Why thinking in 12-week cycles instead of 12-month years is the single biggest upgrade you can make to your execution system.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people only feel genuine urgency about their annual goals in October and November. By then, it's too late. The 12 Week Year creates four year-ends every 12 months.",
+          "body": "Brian Moran's research found that the average worker drifts through the middle of the year — comfortable, busy, but not executing at full capacity. The fix isn't more discipline. It's a fundamentally different relationship with time. When every 12 weeks is a complete \"year,\" urgency is always present."
+        },
+        {
+          "type": "content",
+          "headline": "Annualised Thinking vs 12-Week Thinking",
+          "body": "Annual planning creates a false sense of time abundance. \"I have all year\" becomes the enemy of \"I need to act today.\" The 12 Week Year reframes time:\n\n- **Annual plan → 12-week plan**\n- **1 month → 1 week** (in annual terms)\n- **1 week → 1–2 days** (in annual terms)\n\nThis compression doesn't create stress — it creates clarity. When every week counts as a month, procrastination loses its hiding place."
+        },
+        {
+          "type": "content",
+          "headline": "The Olympic Training Cycle",
+          "body": "Elite athletes don't train on annual plans — they operate in defined cycles of 8–16 weeks, each with specific performance targets, a peak event, and deliberate recovery. The Winter Olympics gave Moran his core insight: athletes who broke their 4-year preparation into tight, measurable blocks massively outperformed those with vague long-term plans. The 12 Week Year applies the same discipline to business: every 12-week cycle is your performance season."
+        },
+        {
+          "type": "content",
+          "headline": "The Power of the 13th Week",
+          "body": "Moran builds a 13th week into each cycle — a deliberate buffer week between cycles. Use it to: debrief the closing cycle (what worked, what didn't), celebrate completions, and plan the next cycle with intention. This isn't a reward for good performance — it's an essential part of the system. The 13th week prevents cycles from bleeding into each other and ensures each new cycle starts with clarity, not exhaustion."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Set Your 12-Week Start Date",
+          "body": "Decide right now: when does your next 12-week cycle begin? Write down:\n\n1. Your cycle start date\n2. Your cycle end date (12 weeks later)\n3. One word that describes your theme for this cycle (e.g., \"launch,\" \"scale,\" \"focus\")\n\nSimply declaring a start date creates psychological commitment. Specific goals come next — but this first step signals to your brain that the cycle has begun."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary psychological problem with annual planning that the 12 Week Year solves?",
+          "type": "mcq",
+          "options": [
+            "Annual plans are too complicated to follow",
+            "Annual plans create a false sense of time abundance that delays urgency until it's too late to act",
+            "Annual plans require too much data to set accurately",
+            "Annual plans focus too much on financial goals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moran's research showed that the \"I have all year\" mindset leads to mid-year drift. By compressing the year into 12-week cycles, urgency is always present — every week carries the weight of a month."
+        },
+        {
+          "question": "In 12 Week Year thinking, what does one week equate to in annual planning terms?",
+          "type": "mcq",
+          "options": [
+            "One week",
+            "Two weeks",
+            "One month",
+            "One quarter"
+          ],
+          "correctIndex": 2,
+          "explanation": "The time compression is deliberate: one week in a 12-week year is the equivalent of one month in an annual plan. This makes procrastination far more costly — \"I'll start next week\" becomes \"I'll start next month.\""
+        },
+        {
+          "question": "What is the purpose of the 13th week Moran builds into each cycle?",
+          "type": "mcq",
+          "options": [
+            "It is used to catch up on any tasks not completed during the 12 weeks",
+            "It is a rest week with no work allowed",
+            "It is a deliberate buffer to debrief, celebrate, and plan the next cycle with intention",
+            "It is used exclusively for quarterly financial reviews"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 13th week prevents cycles from bleeding into each other. By deliberately closing one cycle before opening the next — debriefing, celebrating, and planning with fresh intention — each cycle starts with clarity rather than momentum from the previous one."
+        }
+      ]
+    },
+    {
+      "id": "efp-9-compelling-vision",
+      "dayNumber": 9,
+      "moduleId": "efp-module-2",
+      "title": "Compelling Vision",
+      "subtitle": "Before you plan your 12 weeks, you need to know where you're ultimately heading — and why it matters enough to fight for.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "12-week plans without a compelling long-term vision collapse under pressure. When the work gets hard, people need a vivid picture of the future they're fighting for.",
+          "body": "Brian Moran is emphatic on this: the most disciplined execution system in the world will fail if the goal doesn't matter enough. Vision isn't a wish — it's a detailed, emotionally resonant description of your ideal future that pulls you forward even when the path is uncomfortable."
+        },
+        {
+          "type": "content",
+          "headline": "The Three-Horizon Vision",
+          "body": "Moran recommends writing your vision across three time horizons:\n\n**Long-term (3–5 years):** Full expression — revenue, team, lifestyle, impact.\n**Mid-term (1 year):** What must be true at year's end to be on track?\n**Short-term (12 weeks):** The most important milestone for this cycle.\n\nThe short-term drives your 12-week goals. But without the long-term, the short-term feels arbitrary — and arbitrary goals don't survive adversity."
+        },
+        {
+          "type": "content",
+          "headline": "Elon Musk's Reverse-Engineered Vision",
+          "body": "Musk has repeatedly described a vivid long-term vision: multi-planetary human civilisation. That isn't a plan — it's a compelling vision. Everything else — reusable rockets, Starship, Mars timelines — flows backwards from it. Each 12-week milestone only makes sense in the context of that 20-year picture. When teams understand the vision, individual decisions about what to build, cut, and sacrifice become far easier."
+        },
+        {
+          "type": "content",
+          "headline": "The Test of a Compelling Vision",
+          "body": "When you imagine achieving your vision, do you feel a genuine pull — excitement mixed with a degree of fear? Or does it feel safe and comfortable? Safe visions don't generate enough energy to fuel months of disciplined execution. Your vision needs to be big enough to feel slightly unreachable from where you stand today — otherwise the urgency to act is missing. Bold visions attract bold execution."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your Compelling Vision",
+          "body": "Set a 15-minute timer. Write a vivid, present-tense description of your ideal future as if it's already happened:\n\n*\"It's [3–5 years from now]. I'm looking back at what I've built. My business [describe]. My income is [specific]. My typical day looks like [describe]. I feel [describe]. The impact I've had is [describe].\"*\n\nDon't edit. Don't be modest. Write the version that genuinely excites you."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does Moran insist on a compelling long-term vision before building a 12-week plan?",
+          "type": "mcq",
+          "options": [
+            "Because long-term plans are more accurate than short-term ones",
+            "Because without emotional connection to a future worth fighting for, plans collapse under pressure",
+            "Because investors require a 5-year vision before funding",
+            "Because short-term goals are too easy to achieve without long-term context"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vision provides the emotional fuel for sustained execution. When the work gets difficult, people without a compelling vision retreat to comfort. A vivid, meaningful future pulls you through the discomfort that disciplined execution inevitably creates."
+        },
+        {
+          "question": "What are the three time horizons in Moran's vision framework?",
+          "type": "mcq",
+          "options": [
+            "Daily, weekly, and monthly",
+            "This year, next year, and five years",
+            "Long-term (3–5 years), mid-term (1 year), and short-term (12 weeks)",
+            "Vision, strategy, and tactics"
+          ],
+          "correctIndex": 2,
+          "explanation": "The three-horizon model ensures 12-week goals feel meaningful in context. Without the long and mid-term horizons, each cycle feels disconnected — and disconnected goals don't inspire the commitment required to execute them."
+        },
+        {
+          "question": "What is the test of whether a vision is compelling enough?",
+          "type": "mcq",
+          "options": [
+            "It must be achievable within a realistic timeframe",
+            "It must be validated by mentors or advisors first",
+            "It must generate genuine excitement mixed with a degree of fear — big enough to feel slightly unreachable",
+            "It must be quantified with specific revenue and headcount targets"
+          ],
+          "correctIndex": 2,
+          "explanation": "A vision that feels safe doesn't generate enough energy to sustain disciplined execution. The slight fear signals genuine ambition — and ambitious visions create the urgency that drives consistent action."
+        }
+      ]
+    },
+    {
+      "id": "efp-10-twelve-week-goals",
+      "dayNumber": 10,
+      "moduleId": "efp-module-2",
+      "title": "12-Week Goals",
+      "subtitle": "Set fewer, better goals — the specific method to choose what you'll execute on in the next 12 weeks.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "If everything is a priority, nothing is. Spreading focus across 8 goals guarantees mediocre progress on all of them.",
+          "body": "Most goal-setting systems encourage setting goals across every life area simultaneously. Moran's hard-won lesson: 1–3 goals per cycle. Chosen specifically because they will have the greatest impact on your vision in the next 12 weeks. More than three dilutes focus and produces the kind of half-finished work that kills momentum."
+        },
+        {
+          "type": "content",
+          "headline": "The 12-Week Goal Formula",
+          "body": "Good 12-week goals have four characteristics:\n\n**1. Specific and measurable** — \"Grow revenue\" is not a goal. \"Close 15 new paying customers\" is.\n**2. Tied to the vision** — Every goal connects to a horizon milestone.\n**3. Stretch but achievable** — Ambitious enough to require focused effort; realistic enough to be possible with full execution.\n**4. Few** — Maximum 3 goals. One is ideal if you're new to the system."
+        },
+        {
+          "type": "content",
+          "headline": "Bad Goals vs Good Goals",
+          "body": "**Bad:** \"Improve my health this quarter\" → **Good:** \"Complete 30 workouts and reduce body weight by 4 kg by Week 12\"\n\n**Bad:** \"Grow the business\" → **Good:** \"Close £50,000 in new ARR from enterprise clients by Week 12\"\n\n**Bad:** \"Build better habits\" → **Good:** \"Complete 84 consecutive days of my morning routine (tracked daily)\"\n\nThe difference isn't ambition — it's specificity. Vague goals can't be tracked, celebrated, or course-corrected."
+        },
+        {
+          "type": "content",
+          "headline": "Sequencing vs Neglect",
+          "body": "Choosing 1–3 goals means actively choosing NOT to focus on everything else. That's uncomfortable. A health goal may be deprioritised. A side project waits. Moran frames this as sequencing, not abandonment. Areas not chosen for this cycle will get their own focused cycle later. This framing removes the guilt of not working on everything simultaneously and makes deep focus psychologically sustainable."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your 12-Week Goals",
+          "body": "Look at your compelling vision (Lesson 9). Ask: *\"What are the 1–3 things that, if accomplished in the next 12 weeks, would most accelerate my progress toward that vision?\"*\n\nWrite them using this template: *\"By the end of Week 12, I will have [specific measurable outcome].\"*\n\nCheck each one:\n✅ Specific and measurable?\n✅ Connected to your vision?\n✅ Ambitious but achievable with full effort?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many goals does Moran recommend setting per 12-week cycle?",
+          "type": "mcq",
+          "options": [
+            "5–10 goals across all life areas",
+            "1–3 goals, ideally starting with just one",
+            "As many as needed to cover all priorities",
+            "One goal per week — 12 total"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moran's core discipline is radical focus: 1–3 goals per cycle. More than three dilutes focus and typically produces mediocre results across all areas. One well-chosen goal executed to completion beats five goals half-finished."
+        },
+        {
+          "question": "Which of these is an example of a well-formed 12-week goal?",
+          "type": "mcq",
+          "options": [
+            "\"Improve my sales skills this quarter\"",
+            "\"Grow the business and build better habits\"",
+            "\"Close £50,000 in new ARR from enterprise clients by Week 12\"",
+            "\"Try to get healthier and be more productive\""
+          ],
+          "correctIndex": 2,
+          "explanation": "A well-formed goal is specific, measurable, time-bound, and meaningful. \"Close £50,000 in new ARR from enterprise clients by Week 12\" passes all tests — the others are aspirations, not goals."
+        },
+        {
+          "question": "What does choosing 1–3 goals for a 12-week cycle require you to accept?",
+          "type": "mcq",
+          "options": [
+            "That other areas of your life will be permanently neglected",
+            "That you must abandon your long-term vision to focus on the short term",
+            "That you are sequencing rather than abandoning other priorities — giving them their own future cycle",
+            "That you need a larger team to handle areas you're not focusing on"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moran frames this as sequencing, not neglect. Areas not chosen for this cycle will get their own focused cycle later. This removes the guilt of not working on everything simultaneously and makes deep focus sustainable."
+        }
+      ]
+    },
+    {
+      "id": "efp-11-weekly-plan",
+      "dayNumber": 11,
+      "moduleId": "efp-module-2",
+      "title": "The Weekly Plan",
+      "subtitle": "The bridge between your 12-week goals and your daily actions — the most important planning ritual in the system.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A week without a plan is a week handed to whoever asked loudest. Intentional weeks compound. Reactive weeks evaporate.",
+          "body": "In the 12 Week Year, the week is the primary unit of execution — not the day, not the quarter. Daily lists get wiped out by urgency. Quarterly reviews come too infrequently to course-correct. But a weekly plan, reviewed every Monday and closed out every Friday, gives you both the granularity to execute and the frequency to adapt."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Planning Ritual",
+          "body": "Every week, complete this five-step ritual (Friday afternoon or Monday morning):\n\n**1. Review your 12-week goals** — remind yourself what this cycle is about.\n**2. Score last week** — what percentage of planned tactics did you complete?\n**3. Set this week's tactics** — the 3–5 specific actions that will move your goals forward.\n**4. Time-block your tactics** — schedule them as calendar appointments.\n**5. Identify one obstacle** — what might derail this week and how will you handle it?"
+        },
+        {
+          "type": "content",
+          "headline": "A Real Weekly Plan",
+          "body": "**Goal:** Close £50,000 in new ARR by Week 12.\n\n**Week 4 tactics:**\n1. Send personalised outreach to 15 enterprise prospects (Monday 9–11am)\n2. Run 3 product demos (Tuesday 2pm, Thursday 10am, Friday 11am)\n3. Follow up with 8 open proposals (Wednesday afternoon)\n4. Refine pricing one-pager based on demo feedback (Tuesday 4pm)\n\nNotice: each tactic is specific, owned by you, and scheduled. It's not a wish — it's a calendar entry."
+        },
+        {
+          "type": "content",
+          "headline": "The Critical Difference: List vs Calendar",
+          "body": "Research on implementation intentions shows that scheduling a specific time and place for an action dramatically increases follow-through. A list is an intention. A calendar entry is a commitment. \"Send outreach emails this week\" has a low completion rate. \"Send outreach emails — Monday 9–11am\" nearly always happens. The act of scheduling transforms aspirations into obligations — and obligations get done."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Plan This Week Right Now",
+          "body": "Don't wait until Monday. Right now:\n\n1. Write your 12-week goal(s)\n2. List 3–5 specific actions that would most advance those goals this week\n3. Assign each one a specific day and time\n\nBlock those actions in your calendar before closing this lesson. Most people have good intentions. The difference between intention and execution is the calendar block."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does Moran use the week as the fundamental execution unit rather than the day or quarter?",
+          "type": "mcq",
+          "options": [
+            "Because daily planning takes too much time",
+            "Because days are too granular to be meaningful in a 12-week system",
+            "Because the week offers enough granularity to execute while being frequent enough to course-correct before problems become patterns",
+            "Because weekly reviews are easier to schedule than daily ones"
+          ],
+          "correctIndex": 2,
+          "explanation": "Daily lists are too easily disrupted by urgency; quarterly reviews are too infrequent to catch drift. The weekly rhythm provides the ideal balance: specific enough to hold you accountable, frequent enough to adapt before small misses compound."
+        },
+        {
+          "question": "What is the critical difference between listing a tactic and scheduling it?",
+          "type": "mcq",
+          "options": [
+            "Scheduled tactics are visible to your team; listed tactics are private",
+            "Listing creates awareness; scheduling creates commitment by assigning a specific day and time",
+            "Scheduled tactics must be completed before daily work begins",
+            "There is no meaningful difference — both have equal completion rates"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research on implementation intentions consistently shows that scheduling a specific time and place for an action dramatically increases follow-through. A list is an intention; a calendar entry is a commitment."
+        },
+        {
+          "question": "What is the recommended timing for the weekly planning ritual?",
+          "type": "mcq",
+          "options": [
+            "Sunday night only",
+            "Wednesday mid-week to capture early-week learnings",
+            "Friday afternoon or Monday morning — to close the previous week and set up the next with intention",
+            "The first morning of each month"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moran recommends either Friday afternoon (to debrief the closing week and set up next week) or Monday morning (to start in control). The key is consistency — choose one and protect it as a non-negotiable ritual."
+        }
+      ]
+    },
+    {
+      "id": "efp-12-scorecard",
+      "dayNumber": 12,
+      "moduleId": "efp-module-2",
+      "title": "The Scorecard",
+      "subtitle": "You can't improve what you don't measure — the weekly scorecard is your execution reality check.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people fail at goals not because of poor planning but because they never measure whether they're doing the work. The scorecard makes execution visible.",
+          "body": "The most common failure mode isn't poor goals — it's poor execution tracking. People set great goals, feel good about their plans, and then drift into comfortable busyness. Weeks pass. The 12-week deadline approaches. Panic sets in. The scorecard prevents this by making the invisible visible — every single week."
+        },
+        {
+          "type": "content",
+          "headline": "How the Scorecard Works",
+          "body": "Each week, list your planned tactics. At the end of the week, mark each as complete or incomplete. Calculate your weekly execution score:\n\n**Score = (tactics completed ÷ tactics planned) × 100%**\n\nMoran's research benchmarks:\n- **85%+** = on track for goal achievement\n- **65–84%** = marginal — adjust and refocus\n- **Below 65%** = at risk — too many tactics, wrong priorities, or accountability gap"
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Honest Tracking",
+          "body": "A marketing agency founder using the 12 Week Year consistently scored 55–65% despite feeling productive. The scorecard revealed the real problem: she was completing reactive tasks (client emails, team messages) at 90%+ but barely touching her own business-development tactics — the ones tied to her 12-week goal. The scorecard didn't just show her the score. It showed her *where* her execution was breaking down. Honest measurement is the starting point of improvement."
+        },
+        {
+          "type": "content",
+          "headline": "Scorecard as Feedback, Not Judgement",
+          "body": "The score is information, not a verdict on your character. A 62% score one week doesn't mean you're lazy. It means something went wrong in your planning or environment — too many tactics, an unexpected emergency, or a gap in accountability. Treat the score with curiosity: \"Why did I hit 62%? What would I need to change to hit 85% next week?\" That question is worth more than any motivational speech."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your First Scorecard",
+          "body": "Create a simple two-column table — paper, spreadsheet, or notes app:\n\n| Tactic | Done? |\n|---|---|\n| [This week's tactic 1] | Y/N |\n| [This week's tactic 2] | Y/N |\n\nList this week's planned tactics from your weekly plan. At the end of each day, mark what you completed. On Friday, calculate your score. The goal this week isn't 100% — it's honest self-awareness. That's the foundation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the 12 Week Year scorecard primarily measure?",
+          "type": "mcq",
+          "options": [
+            "Whether you achieved your 12-week goal outcome",
+            "Whether you completed the specific tactics you planned each week",
+            "Your revenue growth compared to last cycle",
+            "How many hours you worked on your goals"
+          ],
+          "correctIndex": 1,
+          "explanation": "The scorecard measures execution — did you do what you said you'd do? This shifts accountability from vague outcomes (many variables) to specific actions (fully within your control), making it a reliable early warning system."
+        },
+        {
+          "question": "According to Moran's research, what weekly execution score puts you on track for goal achievement?",
+          "type": "mcq",
+          "options": [
+            "70%+",
+            "75%+",
+            "80%+",
+            "85%+"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moran's data shows 85%+ weekly execution scores reliably predict goal achievement at the end of the 12-week cycle. Scores below 65% strongly signal that tactics need to be reduced or accountability strengthened."
+        },
+        {
+          "question": "In the agency founder example, what did her scorecard reveal about her execution breakdown?",
+          "type": "mcq",
+          "options": [
+            "She was setting too many goals per cycle",
+            "Reactive tasks were crowding out the goal-driving tactics she had planned",
+            "She was working too many hours and burning out",
+            "Her goals were too ambitious for a 12-week timeframe"
+          ],
+          "correctIndex": 1,
+          "explanation": "The scorecard exposed a hidden pattern: reactive work completed at high rates while proactive goal-advancing work was barely attempted. Without the scorecard, this imbalance was invisible — she felt productive but wasn't making meaningful progress."
+        }
+      ]
+    },
+    {
+      "id": "efp-13-lead-and-lag",
+      "dayNumber": 13,
+      "moduleId": "efp-module-2",
+      "title": "Lead & Lag Measures",
+      "subtitle": "Stop tracking what already happened and start tracking what actually drives results.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Tracking revenue tells you what happened last month. Tracking demos run tells you what will happen next month. One is a rearview mirror. The other is a steering wheel.",
+          "body": "Most dashboards are full of lag metrics — revenue, profit, churn, traffic. These tell you what already happened. By the time you see a bad lag measure, it's too late to change it. The 4 Disciplines of Execution framework introduced a paradigm shift: obsess over lead measures — the specific behaviours that predict and drive the lag outcomes you want."
+        },
+        {
+          "type": "content",
+          "headline": "Lead vs Lag: The Core Distinction",
+          "body": "**Lag measures** = outcome metrics (trailing indicators)\n- Revenue, profit, NPS, churn, weight\n- Tell you *what happened* — useful for evaluation, useless in the moment\n\n**Lead measures** = activity/behaviour metrics (leading indicators)\n- Demos run, proposals sent, workouts completed, hours of deep work\n- Tell you *what you're doing* that drives the outcome\n- **Predictive AND influenceable** — you can change them today"
+        },
+        {
+          "type": "content",
+          "headline": "Weight Loss: The Classic Lead/Lag Example",
+          "body": "Goal (lag): Lose 8 kg in 12 weeks. If you only track weight, you get weekly feedback but can't act differently in the moment.\n\nLead measures: calorie intake and workouts per week. Now you have predictive, controllable measures. You don't need to wait until Friday's weigh-in — you know every day whether you're on track. Apply the same logic to revenue: don't just track new revenue — track demos run and proposals sent."
+        },
+        {
+          "type": "content",
+          "headline": "The Two Properties of a Good Lead Measure",
+          "body": "A lead measure must be:\n\n**1. Predictive** — Improving this metric reliably leads to improvement in the lag measure. If it doesn't, it's just a metric, not a lead measure.\n**2. Influenceable** — You can directly change this through your behaviour. Revenue isn't influenceable (directly). The number of discovery calls you make this week is.\n\nIf a metric has both properties, you've found a true lead measure. Track it obsessively."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Find Your Lead Measures",
+          "body": "For each of your 12-week goals, ask: *\"What are the 1–2 specific behaviours that most directly drive this outcome?\"*\n\nAre they measurable daily or weekly? If yes — those are your lead measures. Add them to your weekly scorecard alongside tactic completion. If you hit your leads consistently and your lag isn't moving, recalibrate. Most of the time: hit your leads, and the lag takes care of itself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key limitation of lag measures like revenue and profit?",
+          "type": "mcq",
+          "options": [
+            "They are difficult to calculate accurately",
+            "They tell you what already happened — by the time you see a bad result, it's too late to change it",
+            "They fluctuate too frequently to be reliable",
+            "They only apply to financial goals, not personal ones"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lag measures are trailing indicators — they report on the past. While important for evaluation, they provide no opportunity to course-correct in the moment. Lead measures, by contrast, are predictive and influenceable, giving you real-time control."
+        },
+        {
+          "question": "What are the two defining properties of a good lead measure?",
+          "type": "mcq",
+          "options": [
+            "It must be a financial metric that directly shows growth",
+            "It must be predictive of the lag outcome AND influenceable by daily or weekly actions",
+            "It must be measurable monthly to align with reporting cycles",
+            "It must be visible to your entire team or accountability group"
+          ],
+          "correctIndex": 1,
+          "explanation": "The two defining properties are predictiveness (improving it moves you toward the goal) and influenceability (you can directly change it through your behaviour). A metric with only one property is less useful as a lead measure."
+        },
+        {
+          "question": "In the weight loss example, why are \"workouts per week\" and \"calorie intake\" better measures than weight alone?",
+          "type": "mcq",
+          "options": [
+            "They are easier to track than body weight",
+            "They are both directly controllable and predictive — giving you daily signals rather than weekly feedback",
+            "They are validated by more scientific research",
+            "They require less equipment to measure accurately"
+          ],
+          "correctIndex": 1,
+          "explanation": "These are true lead measures: directly controllable (you decide whether to exercise and what to eat) and predictive (hitting these consistently reliably produces the lag outcome). You know every day whether you're on track — not just on weigh-in day."
+        }
+      ]
+    },
+    {
+      "id": "efp-14-accountability",
+      "dayNumber": 14,
+      "moduleId": "efp-module-2",
+      "title": "Accountability",
+      "subtitle": "The most underused accelerator in the 12 Week Year — structured accountability that makes commitments feel real.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Committing to someone else that you'll do something increases follow-through to 65%. Having a specific accountability appointment raises it to 95%. That's the power of social commitment.",
+          "body": "The ASTD study on commitment found that the single biggest predictor of follow-through wasn't motivation, intelligence, or discipline — it was whether someone expected a report. Accountability isn't a soft concept. It's backed by hard data and it's the final piece of the 12 Week Year system."
+        },
+        {
+          "type": "content",
+          "headline": "Accountability Is Ownership, Not Blame",
+          "body": "Moran redefines accountability: it's not something done *to* you by an angry boss. It's something you *choose* — a conscious act of saying \"I own this outcome.\" This reframe changes everything. When you choose accountability, it becomes empowering. You stop looking for external circumstances to blame and start asking: \"What can I do differently?\" Ownership is the foundation of execution."
+        },
+        {
+          "type": "content",
+          "headline": "The Peer Accountability Group (PAG)",
+          "body": "Moran's recommended structure: a small group of 2–4 people meeting weekly for 30–45 minutes:\n\n**1. Report scores** — each person shares their weekly execution score.\n**2. Share wins** — one genuine achievement from the past week.\n**3. Declare intentions** — what they commit to completing this week.\n**4. Ask for help** — one obstacle they'd like input on.\n\nShort, structured, and forward-focused. Not therapy. Not venting. A performance accountability meeting."
+        },
+        {
+          "type": "content",
+          "headline": "The ASTD Commitment Ladder",
+          "body": "The American Society of Training and Development's research:\n\n- **Hear an idea:** 10% follow-through\n- **Consciously decide you will do it:** 25%\n- **Plan when you will do it:** 40%\n- **Commit to someone else:** 65%\n- **Have a specific accountability appointment:** 95%\n\nThe jump from 65% to 95% is the power of a scheduled, social commitment. That's exactly what a weekly PAG delivers."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Find Your Accountability Partner",
+          "body": "You don't need a full group to start. You need one person who:\n\n✅ Is working on ambitious goals of their own\n✅ Will be honest with you — not just supportive\n✅ Takes commitments seriously\n✅ Can do a 20-minute weekly check-in\n\nText or message that person today. Propose a 20-minute weekly accountability call for 12 weeks. This single step, according to the ASTD data, will likely do more for your execution than any other tool in this course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How does Moran redefine accountability to make it empowering rather than threatening?",
+          "type": "mcq",
+          "options": [
+            "By focusing only on positive reinforcement and avoiding failure discussions",
+            "By treating accountability as ownership — a conscious choice to take responsibility for commitments",
+            "By making accountability anonymous so people feel safe sharing results",
+            "By removing individual accountability and focusing only on team outcomes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moran's reframe shifts accountability from an external punishment system to an internal ownership mindset. When you choose to be accountable — rather than having it imposed — it becomes a source of empowerment rather than fear."
+        },
+        {
+          "question": "According to the ASTD study, what follow-through rate results from having a specific accountability appointment?",
+          "type": "mcq",
+          "options": [
+            "65%",
+            "75%",
+            "85%",
+            "95%"
+          ],
+          "correctIndex": 3,
+          "explanation": "The ASTD data showed a dramatic jump from 65% (commit to someone) to 95% (scheduled follow-up appointment). The appointment makes the commitment concrete and social, dramatically increasing follow-through."
+        },
+        {
+          "question": "What are the four elements of a Peer Accountability Group (PAG) weekly meeting?",
+          "type": "mcq",
+          "options": [
+            "Goal review, strategy session, problem-solving, and celebration",
+            "Report scores, share wins, declare intentions, and ask for help",
+            "Weekly debrief, monthly review, quarterly planning, and annual assessment",
+            "Skill practice, feedback, goal adjustment, and social connection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moran's PAG structure is deliberately short and forward-focused: report execution scores, share a win, declare this week's commitments, and flag one obstacle. The format prevents drift into venting or unfocused discussion."
+        }
+      ]
+    },
+    {
+      "id": "efp-15-buyback-rate",
+      "dayNumber": 15,
+      "moduleId": "efp-module-3",
+      "title": "Your Buyback Rate",
+      "subtitle": "The single number that tells you exactly which tasks to keep and which to delegate — immediately.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every hour you spend on a £15/hr task is an hour you didn't spend on a £500/hr task. That's not hustle — it's a maths problem.",
+          "body": "Dan Martell's Buy Back Your Time framework starts with a brutal truth: most founders are doing work that someone else could do for a fraction of their effective hourly rate. They're answering emails, formatting documents, scheduling calls — burning their most productive hours on low-leverage tasks because \"it's faster if I just do it myself.\" It isn't."
+        },
+        {
+          "type": "content",
+          "headline": "How to Calculate Your Buyback Rate",
+          "body": "Your Buyback Rate = (your target annual income ÷ 2,000 hours) ÷ 4\n\nExample: If your target income is £200,000/year:\n- £200,000 ÷ 2,000 = £100/hour (your effective hourly rate)\n- £100 ÷ 4 = £25/hour (your Buyback Rate)\n\nAny task that could be done by someone earning £25/hour or less should be delegated. You should never do that task again. The \"÷ 4\" ensures you can hire someone profitably — paying them a quarter of your rate while freeing you to do the work only you can do."
+        },
+        {
+          "type": "content",
+          "headline": "The Buyback Principle",
+          "body": "Martell's core principle: *\"Don't hire to grow your business. Hire to buy back your time.\"* Most founders think of hiring as an expense that requires more revenue. Martell reverses it: hiring is what creates more revenue — because every hour you buy back at a low rate can be reinvested in high-value work. You're not spending money on a hire. You're buying yourself back from tasks that don't deserve your attention."
+        },
+        {
+          "type": "content",
+          "headline": "The Pain Line",
+          "body": "Martell describes a pattern he calls the \"Pain Line\": as your business grows, your to-do list grows with it. Eventually you hit a ceiling — not of capability, but of time. Most founders respond by working more hours. That's unsustainable. The real solution: identify everything below your Buyback Rate and systematically remove it from your plate. Growth comes not from working more but from working only on what moves the needle most."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Calculate Your Buyback Rate",
+          "body": "Do the maths right now:\n\n1. What is your target annual income? £________\n2. Divide by 2,000 = £____/hour (your effective rate)\n3. Divide by 4 = £____/hour (your Buyback Rate)\n\nNow list everything you did yesterday. Mark each task: is this above or below my Buyback Rate? If more than 50% is below — you have a delegation opportunity that could transform your output."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How is the Buyback Rate calculated?",
+          "type": "mcq",
+          "options": [
+            "Annual revenue divided by total hours worked",
+            "(Target annual income ÷ 2,000 hours) ÷ 4",
+            "Monthly salary divided by 160 working hours",
+            "Total business costs divided by employee headcount"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Buyback Rate divides your target income by 2,000 hours (a standard work year) to get your effective hourly rate, then divides by 4 so you can profitably hire someone at that rate while freeing yourself for higher-value work."
+        },
+        {
+          "question": "What is Martell's Buyback Principle?",
+          "type": "mcq",
+          "options": [
+            "Always hire the cheapest person available for any task",
+            "Don't hire to grow your business — hire to buy back your time",
+            "Only hire when revenue exceeds costs by 4x",
+            "Delegate only creative tasks; keep operational work yourself"
+          ],
+          "correctIndex": 1,
+          "explanation": "Martell reverses the typical hiring mindset: instead of hiring only when growth demands it, hire to free yourself — because the freed time, reinvested in high-value work, is what actually drives the growth."
+        },
+        {
+          "question": "What is the \"Pain Line\" in Martell's framework?",
+          "type": "mcq",
+          "options": [
+            "The revenue level at which a business becomes profitable",
+            "The ceiling founders hit when their time is consumed by low-value tasks and growth stalls",
+            "The emotional breaking point that causes burnout",
+            "The moment customers start complaining about service quality"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Pain Line is the capacity ceiling reached when a founder's growing to-do list fills all available time with low-value work. The solution isn't more hours — it's delegating everything below the Buyback Rate to create space for high-leverage work."
+        }
+      ]
+    },
+    {
+      "id": "efp-16-drip-matrix",
+      "dayNumber": 16,
+      "moduleId": "efp-module-3",
+      "title": "The DRIP Matrix",
+      "subtitle": "A simple four-quadrant tool to decide exactly which tasks to delegate, replace, invest in, or produce — and in what order.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Not all tasks below your Buyback Rate should be delegated in the same way or at the same time. The DRIP Matrix gives you a precise action for each one.",
+          "body": "Dan Martell created the DRIP Matrix as a decision framework: it maps every task in your week against two axes — how much value it produces and how much energy it gives or drains from you. The result: a clear, prioritised action plan for what to delegate first."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Quadrants",
+          "body": "**D — Delegate:** Low value + low energy. These drain you AND don't move the needle. Delegate immediately (admin, scheduling, data entry, basic email responses).\n\n**R — Replace:** High value + low energy. Important but exhausting for you. Find someone who thrives on this work.\n\n**I — Invest:** Low value + high energy. You enjoy these but they don't produce results. Reduce or timebox strictly.\n\n**P — Produce:** High value + high energy. These are your zone of genius. Protect and expand these at all costs."
+        },
+        {
+          "type": "content",
+          "headline": "The Delegation Order",
+          "body": "Martell is specific about the sequence:\n\n**1. Delegate \"D\" tasks first** — they're the lowest risk and create immediate time savings.\n**2. Replace \"R\" tasks next** — they're high-value so you need the right person, but once replaced they unlock significant capacity.\n**3. Reduce \"I\" tasks** — these are your guilty pleasures; timebox them so they don't expand into your productive hours.\n**4. Protect \"P\" tasks** — everything else should serve the goal of giving you more time in this quadrant."
+        },
+        {
+          "type": "content",
+          "headline": "Your Zone of Genius",
+          "body": "The top-right \"Produce\" quadrant is where your unique abilities meet genuine business value. Most founders spend less than 20% of their time here. The goal of the DRIP Matrix isn't just delegation — it's spending 80%+ of your week in your zone of genius. That requires systematically removing everything else. The output difference between a founder at 20% genius time and 80% genius time is not linear. It's exponential."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Week on the DRIP Matrix",
+          "body": "Draw a 2×2 grid. Label the axes: X = Value (low → high), Y = Energy (drains you → energises you). Now list every recurring task from your past week and place it in the correct quadrant.\n\nAsk yourself:\n- Which \"D\" tasks can I hand off this week?\n- Which \"R\" tasks need a specific hire or freelancer?\n- Which \"I\" tasks am I over-indulging?\n- How can I protect more time for my \"P\" tasks?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the two axes of the DRIP Matrix?",
+          "type": "mcq",
+          "options": [
+            "Time required and cost to delegate",
+            "Value produced and energy given/drained",
+            "Revenue impact and team capability",
+            "Urgency and importance"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DRIP Matrix plots tasks against value (low to high business impact) and energy (whether the task energises or drains you). This two-dimensional view creates four distinct action categories — a more nuanced decision than simple importance prioritisation."
+        },
+        {
+          "question": "Which quadrant should be delegated first according to Martell's recommended sequence?",
+          "type": "mcq",
+          "options": [
+            "\"R\" (Replace) — because they're highest value",
+            "\"I\" (Invest) — because they waste the most time",
+            "\"D\" (Delegate) — because they're lowest risk and create immediate time savings",
+            "\"P\" (Produce) — because they require the most energy"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"D\" tasks (low value, low energy) are delegated first because they carry the lowest risk — they're not high-stakes work, so even imperfect delegation produces a net positive immediately. This builds confidence and time to tackle the higher-value delegations next."
+        },
+        {
+          "question": "What is the ultimate goal of using the DRIP Matrix over time?",
+          "type": "mcq",
+          "options": [
+            "To eliminate all tasks and work fewer hours",
+            "To spend 80%+ of your week in the \"Produce\" quadrant — your zone of genius",
+            "To build the largest possible team as quickly as possible",
+            "To automate every task rather than delegate to humans"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DRIP Matrix is a system for progressively migrating your time into the top-right quadrant where unique ability meets genuine business value. Most founders start at ~20% here — the framework systematically moves that toward 80%+."
+        }
+      ]
+    },
+    {
+      "id": "efp-17-delegation-playbook",
+      "dayNumber": 17,
+      "moduleId": "efp-module-3",
+      "title": "The Delegation Playbook",
+      "subtitle": "How to hand off work so well that it comes back done better than if you'd done it yourself.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"It's faster if I just do it myself\" is the most expensive sentence a founder can say. It keeps you stuck at the Pain Line forever.",
+          "body": "Most delegation fails not because the person you delegated to is incompetent — but because the delegation itself was unclear. Vague instructions produce vague results. The solution isn't doing it yourself. It's getting better at handing things off with the right structure, context, and standards."
+        },
+        {
+          "type": "content",
+          "headline": "The Camcorder Method",
+          "body": "Martell's simplest delegation tool: record yourself doing the task once with a screen recording (Loom, or even your phone). Talk through your decisions as you go — the \"why\" behind each step. Then hand the recording to your delegate with a simple brief: \"Watch this, replicate the process, and ask me if anything is unclear.\" This takes 5 minutes of your time and saves hours every week going forward. Most tasks don't need a formal SOP — they need one clear example."
+        },
+        {
+          "type": "content",
+          "headline": "The 1-3-1 Check-In Framework",
+          "body": "When a delegate has a problem, don't solve it for them. Use the **1-3-1 rule**: ask them to come with:\n\n**1** — One clear problem statement\n**3** — Three possible solutions they've thought of\n**1** — One recommended solution they'd choose\n\nYour job is to approve, adjust, or redirect. This trains people to think before they escalate — and over time, they stop needing to check in at all. You're building decision-making capability, not dependency."
+        },
+        {
+          "type": "content",
+          "headline": "The 80% Rule",
+          "body": "If someone can do a task 80% as well as you, delegate it. Most founders hold on to tasks until they find someone who can do it 100% as well. That person doesn't exist — and waiting for them costs you months of high-value time. The 80% delegate will improve with feedback and repetition. Meanwhile, the 20% gap between their work and yours is easily worth the hours you reclaim for zone-of-genius activities."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Delegate One Task This Week",
+          "body": "Choose one task from your \"D\" quadrant (low value, drains energy). Right now:\n\n1. Record yourself doing it with a quick screen recording or voice note\n2. Write a 3-sentence brief: what the task is, when it's due, and what \"done well\" looks like\n3. Hand it off to someone — a VA, team member, freelancer, or even a family member for personal tasks\n\nDon't wait until the delegation is perfect. Start with one task this week. Iterate from there."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the Camcorder Method for delegation?",
+          "type": "mcq",
+          "options": [
+            "Recording meetings to review later for process improvements",
+            "Recording yourself doing a task once while explaining decisions, then handing the recording as a training tool",
+            "Filming team members to evaluate their performance",
+            "Creating professional training videos for an entire team"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Camcorder Method is Martell's fastest delegation approach: record yourself doing the task once (5 minutes), explain decisions as you go, and hand it off. No formal SOP needed — just one clear example with context."
+        },
+        {
+          "question": "What does the 1-3-1 check-in framework require a delegate to bring when they have a problem?",
+          "type": "mcq",
+          "options": [
+            "1 email summarising what went wrong",
+            "1 problem statement, 3 possible solutions, and 1 recommended solution",
+            "1 hour of research and 3 examples from competitors",
+            "1 deadline extension request with 3 revised timelines"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 1-3-1 framework trains delegates to think before escalating: define the problem clearly, generate three solutions, and recommend one. Over time, this builds autonomous decision-making capability rather than dependency on the founder."
+        },
+        {
+          "question": "What is the \"80% Rule\" for delegation?",
+          "type": "mcq",
+          "options": [
+            "Only delegate tasks you're 80% confident will be done correctly",
+            "If someone can do a task 80% as well as you, delegate it — the freed time is worth more than the 20% quality gap",
+            "Spend 80% of your delegation budget on your most important hire",
+            "Wait until a delegate is 80% trained before giving them full responsibility"
+          ],
+          "correctIndex": 1,
+          "explanation": "Waiting for a 100% replacement means waiting forever. An 80% delegate frees your hours for zone-of-genius work worth far more than the quality gap. The delegate will also improve with feedback and reps over time."
+        }
+      ]
+    },
+    {
+      "id": "efp-18-okr-fundamentals",
+      "dayNumber": 18,
+      "moduleId": "efp-module-3",
+      "title": "OKR Fundamentals",
+      "subtitle": "The goal-setting system that powered Google from 40 employees to 100,000+ — and how to apply it as a solo founder or small team.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Google adopted OKRs when it had 40 employees. Today it has over 100,000. The system scaled with them because it aligns everyone toward what matters — and exposes what doesn't.",
+          "body": "John Doerr introduced Objectives and Key Results (OKRs) to Google after learning the system from Andy Grove at Intel. The insight: traditional goals are either too vague (\"grow the business\") or too narrow (\"hit £50k revenue\"). OKRs solve both by pairing a qualitative direction (Objective) with 2–5 measurable proof points (Key Results)."
+        },
+        {
+          "type": "content",
+          "headline": "Objectives vs Key Results",
+          "body": "**Objective** = WHAT you want to achieve\n- Qualitative, inspiring, and directional\n- Answers: \"Where am I going?\"\n- Example: \"Build a world-class sales engine\"\n\n**Key Results** = HOW you'll know you achieved it\n- Quantitative, measurable, time-bound\n- Answer: \"How do I know I'm there?\"\n- Example: \"Close £200K in new ARR\" / \"Achieve 40% demo-to-close rate\" / \"Hire 2 senior AEs by Week 10\"\n\nThe Objective provides inspiration. The Key Results provide accountability. You need both."
+        },
+        {
+          "type": "content",
+          "headline": "OKRs vs Traditional Goals",
+          "body": "Traditional goals: \"Increase revenue by 20%\"\n\nThe problem: *How*? Through new customers? Upselling? Reducing churn? There's no clarity about the path.\n\nOKR equivalent:\n- **O:** Become the #1 choice for enterprise buyers in our category\n- **KR1:** Close 10 enterprise deals (>£50K each) by end of Q\n- **KR2:** Achieve NPS of 60+ from enterprise accounts\n- **KR3:** Reduce enterprise sales cycle from 60 to 35 days\n\nNow there's direction, measurability, AND strategic clarity about what success actually looks like."
+        },
+        {
+          "type": "content",
+          "headline": "Committed vs Aspirational OKRs",
+          "body": "Doerr distinguishes two types:\n\n**Committed OKRs** (roofshots): These MUST be achieved. You commit to 100% delivery. Resources are adjusted to guarantee success.\n\n**Aspirational OKRs** (moonshots): These are stretch goals. 60–70% achievement is considered excellent. They're designed to push teams beyond what seems possible — even partial completion creates outsized value.\n\nGoogle's culture famously embraces moonshot OKRs. But for solo founders, start with committed OKRs — build the muscle first, then stretch."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your First OKR",
+          "body": "Write one OKR for your current 12-week cycle:\n\n**Objective:** Write a short, inspiring statement of what you want to achieve. It should make you feel a pull toward action.\n\n**Key Results (2–3):** For each, ask: \"What measurable proof would show I've achieved this Objective?\" Make each KR specific enough that anyone could verify it as done or not done — no ambiguity.\n\nRemember: the Objective is qualitative (direction). The Key Results are quantitative (evidence)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fundamental difference between an Objective and a Key Result?",
+          "type": "mcq",
+          "options": [
+            "Objectives are long-term; Key Results are short-term",
+            "Objectives are qualitative and directional; Key Results are quantitative and measurable",
+            "Objectives are set by leadership; Key Results are set by teams",
+            "Objectives track lag measures; Key Results track lead measures"
+          ],
+          "correctIndex": 1,
+          "explanation": "Objectives answer \"Where am I going?\" with qualitative, inspiring direction. Key Results answer \"How do I know I'm there?\" with measurable, verifiable proof points. The combination provides both motivation and accountability."
+        },
+        {
+          "question": "What percentage achievement is considered successful for an aspirational (moonshot) OKR?",
+          "type": "mcq",
+          "options": [
+            "100%",
+            "80–90%",
+            "60–70%",
+            "50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Aspirational OKRs are deliberately set beyond what seems fully achievable. Doerr considers 60–70% completion successful because these stretch goals push beyond comfort — even partial completion creates outsized value compared to a conservative goal hit at 100%."
+        },
+        {
+          "question": "Why did Doerr recommend solo founders start with committed OKRs rather than aspirational ones?",
+          "type": "mcq",
+          "options": [
+            "Because aspirational OKRs require large teams to execute",
+            "Because committed OKRs build the muscle of consistent execution before stretching into moonshots",
+            "Because aspirational OKRs are only appropriate for publicly traded companies",
+            "Because committed OKRs are easier to communicate to investors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Committed OKRs build the fundamental discipline of setting, tracking, and completing what you promised. Once that execution muscle is strong, aspirational OKRs stretch you further — but without the baseline discipline, stretch goals just become perpetually missed targets."
+        }
+      ]
+    },
+    {
+      "id": "efp-19-writing-key-results",
+      "dayNumber": 19,
+      "moduleId": "efp-module-3",
+      "title": "Writing Powerful Key Results",
+      "subtitle": "The difference between OKRs that drive execution and OKRs that gather dust — it all comes down to how you write your Key Results.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A vague Key Result is just a wish with a deadline. A powerful one leaves zero ambiguity about whether you succeeded or failed.",
+          "body": "Most OKR implementations fail not at the Objective level — those are usually inspiring enough. They fail because Key Results are poorly written: too vague, not measurable, activity-based instead of outcome-based, or set at levels that don't stretch performance. Writing great Key Results is the most important skill in the entire OKR system."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Tests of a Great Key Result",
+          "body": "Every Key Result must pass three tests:\n\n**1. Binary verifiable** — At the end of the cycle, anyone could look at it and say yes (done) or no (not done). No interpretation needed.\n\n**2. Outcome, not activity** — \"Run 20 demos\" is an activity. \"Close 8 new customers from demos\" is an outcome. Activities are lead measures — useful for weekly plans but not for Key Results.\n\n**3. Stretching** — If you're 90% confident you'll hit it, it's too easy. Good Key Results have a 50–70% confidence level at the start."
+        },
+        {
+          "type": "content",
+          "headline": "Common Key Result Mistakes",
+          "body": "**Too vague:** \"Improve customer satisfaction\" → **Better:** \"Achieve NPS of 55+ from a sample of 100+ customers\"\n\n**Activity, not outcome:** \"Send 500 cold emails\" → **Better:** \"Generate 30 qualified sales meetings from outbound\"\n\n**Not stretching:** \"Maintain current revenue\" → **Better:** \"Grow MRR from £15K to £25K\"\n\n**Binary task, not metric:** \"Launch the new website\" → **Better:** \"Launch website achieving 3+ second load speed and 5% visitor-to-signup conversion rate\""
+        },
+        {
+          "type": "content",
+          "headline": "The Metric + Baseline + Target Formula",
+          "body": "The most reliable Key Result format:\n\n**[Verb] [metric] from [baseline] to [target]**\n\nExamples:\n- \"Increase demo-to-close rate from 22% to 38%\"\n- \"Reduce customer churn from 5.2% to 2.8%\"\n- \"Grow newsletter subscribers from 1,200 to 4,000\"\n\nThis format is unambiguous: it names the metric, shows where you are, and defines where you need to be. No room for interpretation or self-deception."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Rewrite Your Key Results",
+          "body": "Take the OKR you wrote in Lesson 18. Look at each Key Result and test it:\n\n✅ Binary verifiable? Could someone else say yes/no?\n✅ Outcome, not activity? Does it measure results, not effort?\n✅ Stretching? Are you only 50–70% confident you'll achieve it?\n\nIf any fail, rewrite using the formula: [Verb] [metric] from [baseline] to [target]. Make each one so specific that on the last day of the cycle, there's zero debate about whether you hit it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three tests of a well-written Key Result?",
+          "type": "mcq",
+          "options": [
+            "Relevant, time-bound, and assigned to one person",
+            "Binary verifiable, outcome-based (not activity), and stretching (50–70% confidence)",
+            "Measurable, achievable, and aligned to company strategy",
+            "Quantitative, short-term, and validated by leadership"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great Key Results must be binary verifiable (no interpretation needed), outcome-based (measuring results not effort), and stretching (challenging enough that achievement isn't guaranteed). All three are required — miss one and the KR loses its power."
+        },
+        {
+          "question": "Why is \"Run 20 product demos\" a poor Key Result?",
+          "type": "mcq",
+          "options": [
+            "Because 20 is too small a number to be meaningful",
+            "Because it measures an activity (effort) rather than an outcome (result)",
+            "Because demos are not a valid sales metric",
+            "Because it can't be measured accurately"
+          ],
+          "correctIndex": 1,
+          "explanation": "Running demos is an activity — you can run 20 terrible demos that close zero customers. A proper Key Result measures the outcome: \"Close 8 new customers from product demos.\" Activities belong in weekly plans as lead measures; Key Results must capture the result."
+        },
+        {
+          "question": "What is the recommended Key Result formula for maximum clarity?",
+          "type": "mcq",
+          "options": [
+            "\"Complete [task] by [date]\"",
+            "\"[Verb] [metric] from [baseline] to [target]\"",
+            "\"Achieve [grade] on [assessment] by end of quarter\"",
+            "\"Improve [area] significantly compared to last period\""
+          ],
+          "correctIndex": 1,
+          "explanation": "The verb + metric + baseline + target format eliminates all ambiguity: it names exactly what's being measured, shows where you currently are, and defines where you need to be. There's no room for interpretation or self-deception at the end of the cycle."
+        }
+      ]
+    },
+    {
+      "id": "efp-20-okr-cadence",
+      "dayNumber": 20,
+      "moduleId": "efp-module-3",
+      "title": "The OKR Cadence",
+      "subtitle": "OKRs only work if you review them regularly — build the rhythm that keeps objectives alive instead of forgotten.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The graveyard of failed OKRs is full of perfectly written goals that were set in January and forgotten by February. Cadence is what keeps them alive.",
+          "body": "John Doerr calls this the \"set and forget\" trap: teams invest time writing excellent OKRs, launch the quarter with enthusiasm, then never look at them again until the review meeting. The fix isn't better goals — it's a better rhythm of checking in, scoring, and adjusting throughout the cycle."
+        },
+        {
+          "type": "content",
+          "headline": "The Three-Level OKR Cadence",
+          "body": "**Weekly check-in (15 min):** Score each Key Result as red/yellow/green. Ask: \"Are we on track? If not, what's the blocker?\"\n\n**Mid-cycle review (45 min):** At the halfway mark (Week 6 of 12), formally assess progress. Are any KRs clearly going to miss? Adjust tactics — not goals — to respond.\n\n**End-of-cycle scoring (60 min):** Score each KR on a 0.0–1.0 scale. Debrief what worked, what didn't, and what you'll carry forward. Then set next cycle's OKRs."
+        },
+        {
+          "type": "content",
+          "headline": "The 0.0–1.0 Scoring System",
+          "body": "At cycle-end, score each Key Result:\n\n- **1.0** = fully achieved (or exceeded)\n- **0.7** = strong progress, nearly complete\n- **0.5** = meaningful progress but fell short\n- **0.3** = some progress, significant miss\n- **0.0** = no meaningful progress\n\nFor committed OKRs, anything below 1.0 needs a post-mortem. For aspirational OKRs, 0.6–0.7 is considered successful because the stretch target was deliberately set beyond comfortable reach."
+        },
+        {
+          "type": "content",
+          "headline": "Adjust Tactics, Not Goals",
+          "body": "A critical OKR principle: when progress is off-track, change your approach — not your targets. If your Key Result is \"close 8 enterprise deals\" and you're at 2 by Week 6, the answer isn't to lower the target to 4. It's to ask: \"What needs to change in our approach to close 6 deals in the remaining 6 weeks?\" Maybe the outreach channel is wrong. Maybe demos need restructuring. Maybe pricing is the blocker. Fix the path, not the destination."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Schedule Your OKR Cadence",
+          "body": "Right now, put three recurring calendar entries in place:\n\n1. **Weekly (15 min):** Every Monday — OKR traffic-light check-in (are my Key Results red/yellow/green?)\n2. **Mid-cycle (45 min):** Week 6 — formal progress review and tactic adjustment\n3. **End-of-cycle (60 min):** Week 12 — scoring, debrief, and next-cycle OKR setting\n\nWithout these three touchpoints in your calendar, OKRs become decorative. With them, they become operational."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"set and forget\" trap that Doerr warns against?",
+          "type": "mcq",
+          "options": [
+            "Setting OKRs too frequently and losing focus",
+            "Writing OKRs at the start of a cycle and never reviewing them until the end",
+            "Forgetting to include Key Results with each Objective",
+            "Setting goals that are too easy and forgetting to stretch"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most common OKR failure mode is investing time in well-crafted goals, launching with enthusiasm, then never checking in until the review meeting — by which point it's too late to course-correct. Regular cadence is the antidote."
+        },
+        {
+          "question": "When progress on a Key Result is off-track at mid-cycle, what should you adjust?",
+          "type": "mcq",
+          "options": [
+            "Lower the Key Result target to something achievable",
+            "Remove the Objective entirely and set a new one",
+            "Change your tactics and approach — not your targets",
+            "Wait until the end of cycle to assess properly"
+          ],
+          "correctIndex": 2,
+          "explanation": "A core OKR principle is adjusting tactics (how you pursue the goal) while maintaining targets (what you're pursuing). Lowering targets when progress is slow defeats the purpose of stretch goals. Fix the path, not the destination."
+        },
+        {
+          "question": "On the 0.0–1.0 scoring scale, what score range is considered successful for an aspirational OKR?",
+          "type": "mcq",
+          "options": [
+            "0.9–1.0",
+            "0.7–0.8",
+            "0.6–0.7",
+            "0.4–0.5"
+          ],
+          "correctIndex": 2,
+          "explanation": "Aspirational OKRs are deliberately set beyond comfortable reach. A 0.6–0.7 score means the team achieved significantly more than they would have with a safe target — the stretch pushed them to an outcome that conservative goal-setting would never have produced."
+        }
+      ]
+    },
+    {
+      "id": "efp-21-founder-operating-system",
+      "dayNumber": 21,
+      "moduleId": "efp-module-3",
+      "title": "Your Founder Operating System",
+      "subtitle": "Bring everything together into a single weekly operating rhythm that compounds focus, execution, and growth — indefinitely.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now have the building blocks of an elite execution system. Today, you wire them together into one integrated operating rhythm — your Founder OS.",
+          "body": "Focus without execution is daydreaming. Execution without focus is busyness. The Founder Operating System combines The ONE Thing, the 12 Week Year, Buy Back Your Time, and OKRs into a single weekly rhythm that ensures you always know what matters most, whether you're executing on it, and where your time is going."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Operating Rhythm",
+          "body": "**Monday (30 min) — Plan & Commit:**\n- Review your 12-week goals and OKRs\n- Ask: \"What's my ONE Thing this week?\"\n- Set 3–5 weekly tactics and time-block them\n- Traffic-light score your Key Results\n\n**Daily (5 min) — Focus & Execute:**\n- Ask: \"What's my ONE Thing today?\"\n- Protect your morning time block\n- Track lead measure progress\n\n**Friday (15 min) — Score & Reflect:**\n- Score your weekly scorecard (% tactics completed)\n- Note: what worked? What didn't? What changes next week?"
+        },
+        {
+          "type": "content",
+          "headline": "The Monthly & Quarterly Layers",
+          "body": "**Monthly (45 min):**\n- Review DRIP Matrix — are you still spending 80%+ in your \"Produce\" zone?\n- Check Buyback Rate — any new tasks to delegate?\n- Mid-cycle OKR review (if at week 6)\n\n**Every 12 weeks (2–3 hours):**\n- Score all OKRs (0.0–1.0)\n- Celebrate wins (non-negotiable)\n- Debrief: what worked, what failed, what you learned\n- Write next cycle's compelling vision + 12-week goals + OKRs\n- Take the 13th week as a strategic pause"
+        },
+        {
+          "type": "content",
+          "headline": "The Compound Effect of Consistency",
+          "body": "Doing this once feels productive. Doing this for 4 consecutive 12-week cycles transforms your business. The compound effect of consistent focus + disciplined execution + smart delegation + measurable objectives is staggering. Most people will abandon this system after 2–3 weeks. If you run it for 48 weeks (four full cycles), you will be operating at a level that 95% of founders never reach. Not because of talent — because of rhythm."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Set Up Your Founder OS",
+          "body": "Before you close this course, do three things:\n\n1. **Schedule your Monday Plan & Commit** (30 min, recurring weekly) in your calendar\n2. **Schedule your Friday Score & Reflect** (15 min, recurring weekly)\n3. **Write your ONE Thing for this week** based on your 12-week goal\n\nThis is your operating system. It's not about perfection — it's about rhythm. Start Monday. Score Friday. Repeat for 12 weeks. Watch what happens to your output, your clarity, and your results."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four frameworks combined in the Founder Operating System?",
+          "type": "mcq",
+          "options": [
+            "Scrum, Kanban, Lean, and Agile",
+            "The ONE Thing, the 12 Week Year, Buy Back Your Time, and OKRs",
+            "Getting Things Done, Pomodoro, Deep Work, and Atomic Habits",
+            "Lean Startup, Business Model Canvas, OKRs, and Scrum"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Founder OS integrates four complementary systems: The ONE Thing (focus), the 12 Week Year (execution rhythm), Buy Back Your Time (delegation), and OKRs (measurement). Together they form a complete operating system for sustained high performance."
+        },
+        {
+          "question": "What is the recommended Monday morning ritual in the Founder OS?",
+          "type": "mcq",
+          "options": [
+            "Check all emails and respond to urgent requests",
+            "Review 12-week goals, ask \"What's my ONE Thing?\", set weekly tactics, and score Key Results",
+            "Hold a team standup meeting and assign tasks for the week",
+            "Review last quarter's financial performance and adjust budgets"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Monday Plan & Commit ritual (30 min) ensures you start every week aligned to your biggest goals — not reactive to whatever is loudest in your inbox. It combines OKR scoring, ONE Thing identification, and tactic scheduling into a single focused session."
+        },
+        {
+          "question": "Why does the course emphasise running the system for four consecutive 12-week cycles?",
+          "type": "mcq",
+          "options": [
+            "Because results only become visible after 48 weeks",
+            "Because the compound effect of consistent rhythm over four cycles produces transformational results that sporadic effort never achieves",
+            "Because OKRs can only be properly scored after four quarters of data",
+            "Because it takes 48 weeks to fully delegate all low-value tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "The power of the system isn't in any single week — it's in the compound effect of consistency. Four consecutive cycles (48 weeks) of focused execution, smart delegation, and measurable goals creates transformational results because each cycle builds on the last."
+        }
+      ]
+    }
+  ]
+}

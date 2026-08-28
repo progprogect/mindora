@@ -1,0 +1,1971 @@
+{
+  "id": "better-sleep",
+  "title": "Better Sleep and a Healthier Body Clock",
+  "subtitle": "Improve your sleep quality, fix common sleep problems and wake up feeling genuinely rested — using science-backed strategies.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "bs-module-1",
+      "moduleNumber": 1,
+      "title": "Understanding Sleep",
+      "subtitle": "Discover why sleep is the single most important thing you can do for your health — and understand what actually happens when you sleep.",
+      "days": "Lessons 1–7",
+      "skill": "Explain sleep stages, circadian rhythms, and why sleep deprivation affects everything",
+      "lessonIds": [
+        "bs-1-sleep-non-negotiable",
+        "bs-2-sleep-stages-cycles",
+        "bs-3-circadian-rhythm",
+        "bs-4-quantity-quality-regularity",
+        "bs-5-sleep-deprivation-effects",
+        "bs-6-sleep-myths-debunked",
+        "bs-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "bs-module-2",
+      "moduleNumber": 2,
+      "title": "Fixing Common Sleep Problems",
+      "subtitle": "Identify what is disrupting your sleep and learn evidence-based strategies to address the most common sleep problems.",
+      "days": "Lessons 8–14",
+      "skill": "Diagnose and fix the most common sleep disruptors in your own life",
+      "lessonIds": [
+        "bs-8-light-master-switch",
+        "bs-9-temperature-environment",
+        "bs-10-caffeine-alcohol",
+        "bs-11-stress-racing-thoughts",
+        "bs-12-screens-evening-routines",
+        "bs-13-irregular-schedules",
+        "bs-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "bs-module-3",
+      "moduleNumber": 3,
+      "title": "Building Better Sleep Habits",
+      "subtitle": "Design a personalised sleep routine that works for your life — and know when a sleep problem needs professional help.",
+      "days": "Lessons 15–21",
+      "skill": "Build and maintain a consistent sleep routine that improves energy and health",
+      "lessonIds": [
+        "bs-15-wind-down-routine",
+        "bs-16-ideal-bedroom",
+        "bs-17-daytime-habits",
+        "bs-18-napping",
+        "bs-19-sleep-trackers",
+        "bs-20-when-to-seek-help",
+        "bs-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "bs-1-sleep-non-negotiable",
+      "dayNumber": 1,
+      "moduleId": "bs-module-1",
+      "title": "Why Sleep Is Non-Negotiable",
+      "subtitle": "Sleep isn't a luxury or a sign of laziness — it's the foundation everything else in your health is built on.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The One Thing That Changes Everything",
+          "body": "If someone told you there was a single daily habit that improves memory, strengthens your immune system, reduces your risk of heart disease, helps you manage weight, boosts your mood, and adds years to your life — you'd want to know what it is. It's sleep. And most people aren't getting enough of it.",
+          "stat": "7–9",
+          "statLabel": "hours of sleep most adults need each night for optimal health"
+        },
+        {
+          "type": "content",
+          "headline": "What Sleep Actually Does",
+          "body": "Sleep isn't your body shutting down — it's one of the most active periods of your day. While you sleep, your brain clears waste products, consolidates memories, repairs cells, regulates hormones, and resets your emotional state. Think of it like a nightly maintenance shift that keeps the entire system running.",
+          "bullets": [
+            "Brain waste clearance — the glymphatic system removes toxins during deep sleep",
+            "Memory consolidation — what you learned today gets stored permanently",
+            "Hormone regulation — growth hormone, cortisol, and appetite hormones reset",
+            "Immune repair — your body produces infection-fighting proteins while you rest"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Sleep Deprivation Epidemic",
+          "body": "Around a third of adults in developed countries regularly sleep less than the recommended 7 hours. This isn't just about feeling tired — chronic sleep deprivation is linked to heart disease, diabetes, obesity, depression, weakened immunity, and even shortened lifespan. Yet society often treats sleep as optional.",
+          "bullets": [
+            "35% of adults report getting less than 7 hours per night",
+            "After just one night of poor sleep, blood sugar regulation worsens",
+            "Sleeping 6 hours or less is associated with a 13% higher mortality risk",
+            "Sleep loss accumulates — you can't \"catch up\" on weekends alone"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why We Undervalue Sleep",
+          "body": "In hustle culture, sleeping less is often worn as a badge of honour. \"I'll sleep when I'm dead\" is treated as a motivational quote rather than a warning. The truth is that every major body system degrades without adequate sleep. No amount of nutrition, exercise, or supplements can compensate for consistently poor sleep.",
+          "stat": "0",
+          "statLabel": "bodily systems that function optimally without adequate sleep"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Sleep Baseline Check",
+          "body": "For the next 3 nights, note two things: (1) What time you actually fell asleep and woke up. (2) How you felt in the first hour after waking — energised, groggy, or exhausted. No judgement, no changes yet. Just observe. This gives you an honest starting point before we start improving things."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens in the brain during deep sleep?",
+          "type": "mcq",
+          "options": [
+            "The glymphatic system clears waste products and toxins",
+            "The brain completely shuts down to conserve energy",
+            "New brain cells are created to replace old ones",
+            "The brain practises responses to future threats"
+          ],
+          "correctIndex": 0,
+          "explanation": "During deep sleep, the glymphatic system — a waste-clearance network — becomes highly active, flushing out metabolic byproducts that accumulate during waking hours. This is one reason sleep deprivation affects cognitive function."
+        },
+        {
+          "question": "Sleeping 6 hours per night is sufficient for most adults if they feel \"fine\" during the day.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research consistently shows that adults need 7–9 hours. People who habitually sleep 6 hours often don't realise their performance is impaired because they've adapted to feeling suboptimal — they've forgotten what well-rested feels like."
+        },
+        {
+          "question": "Which of these is NOT a function of sleep?",
+          "type": "mcq",
+          "options": [
+            "Storing calories as long-term energy reserves",
+            "Consolidating memories from the day",
+            "Regulating appetite and metabolism hormones",
+            "Repairing cells and supporting immune function"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sleep regulates hormones, consolidates memory, and supports immune function. Calorie storage is a metabolic process that isn't a primary function of sleep itself."
+        }
+      ]
+    },
+    {
+      "id": "bs-2-sleep-stages-cycles",
+      "dayNumber": 2,
+      "moduleId": "bs-module-1",
+      "title": "Sleep Stages and Cycles",
+      "subtitle": "Understand what actually happens during a night of sleep — and why waking up at the wrong time makes you feel terrible.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Night of Sleep Is Not One Long Event",
+          "body": "You don't just \"fall asleep\" and wake up 8 hours later. Your brain cycles through distinct stages roughly every 90 minutes — each serving a different purpose. Understanding these cycles explains why you sometimes wake feeling refreshed after 7.5 hours but groggy after 8.",
+          "stat": "4–6",
+          "statLabel": "complete sleep cycles in a typical night"
+        },
+        {
+          "type": "content",
+          "headline": "The Four Stages of Sleep",
+          "body": "Sleep is divided into two main types — Non-REM (NREM) and REM — with NREM broken into three stages. Each plays a unique role in keeping you healthy and mentally sharp.",
+          "bullets": [
+            "Stage 1 (N1) — Light sleep. The transition zone. Lasts 1–5 minutes. Easy to wake from.",
+            "Stage 2 (N2) — Deeper sleep. Heart rate slows, temperature drops. Memory processing begins. About 50% of your night.",
+            "Stage 3 (N3) — Deep sleep. The most restorative stage. Growth hormone releases, immune repair happens, brain waste is cleared.",
+            "REM — Rapid Eye Movement. Dreaming sleep. Emotional processing, creativity, and memory integration."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How Cycles Change Through the Night",
+          "body": "Early in the night, you spend more time in deep sleep (N3). Later, REM periods get longer. This is why the first half of the night is critical for physical recovery, while the second half matters more for emotional processing and learning. Cut your sleep short and you lose disproportionately more REM.",
+          "stat": "90",
+          "statLabel": "minutes — the approximate length of one complete sleep cycle"
+        },
+        {
+          "type": "content",
+          "headline": "Why Waking Mid-Cycle Feels Awful",
+          "body": "That groggy, disoriented feeling when your alarm goes off? It's called sleep inertia, and it's worse when you wake during deep sleep (N3). Your brain struggles to transition from its deepest restorative state to full consciousness. Waking at the end of a cycle — during light sleep — feels dramatically better.",
+          "bullets": [
+            "Sleep inertia can impair performance for 30–60 minutes after waking",
+            "Consistent wake times help your body anticipate the end of a cycle",
+            "Some smart alarms try to wake you during lighter sleep phases",
+            "A regular schedule is the most reliable way to align cycles with your wake time"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Calculate Your Ideal Wake Time",
+          "body": "Count back in 90-minute blocks from when you need to wake up. For example: if you wake at 7:00 AM, ideal sleep times would be 11:30 PM (5 cycles = 7.5 hours) or 10:00 PM (6 cycles = 9 hours). Add 15 minutes for falling asleep. Try aligning your bedtime to one of these windows tonight."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which sleep stage is most important for physical recovery and immune repair?",
+          "type": "mcq",
+          "options": [
+            "Stage 3 (N3) — deep sleep",
+            "Stage 1 (N1) — light sleep",
+            "REM sleep",
+            "Stage 2 (N2) — moderate sleep"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stage 3 (deep sleep or slow-wave sleep) is when growth hormone is released, tissue repair occurs, and the immune system is most active. It's concentrated in the first half of the night."
+        },
+        {
+          "question": "REM sleep occurs mostly in the first half of the night.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "REM periods get progressively longer as the night goes on. Most REM sleep occurs in the second half of the night, which is why cutting sleep short disproportionately reduces REM time."
+        },
+        {
+          "question": "What causes the groggy feeling when your alarm wakes you suddenly?",
+          "type": "mcq",
+          "options": [
+            "Sleep inertia from waking during deep sleep",
+            "Dehydration that builds up overnight",
+            "Low blood sugar from not eating",
+            "Too much REM sleep before waking"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sleep inertia occurs when you're woken during deep sleep (N3). The brain struggles to transition quickly from its most restorative state to full alertness, causing grogginess that can last 30–60 minutes."
+        }
+      ]
+    },
+    {
+      "id": "bs-3-circadian-rhythm",
+      "dayNumber": 3,
+      "moduleId": "bs-module-1",
+      "title": "Your Body Clock: The Circadian Rhythm",
+      "subtitle": "Your body runs on a 24-hour internal clock that controls when you feel alert, sleepy, hungry, and energised. Here's how it works.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Have a Master Clock in Your Brain",
+          "body": "Deep inside your brain sits a tiny cluster of about 20,000 neurons called the suprachiasmatic nucleus (SCN). It acts as your body's master clock — coordinating sleep, hunger, body temperature, hormone release, and alertness on a roughly 24-hour cycle. Every cell in your body follows its rhythm.",
+          "stat": "24.2",
+          "statLabel": "hours — the natural length of the human circadian cycle without external cues"
+        },
+        {
+          "type": "content",
+          "headline": "How Your Body Clock Works",
+          "body": "Your circadian rhythm is essentially a daily schedule that your body follows automatically. It tells your brain when to feel awake, when to feel sleepy, when to release cortisol (the alertness hormone), and when to release melatonin (the sleep hormone). When this clock is well-aligned, you feel energised during the day and sleepy at night — naturally.",
+          "bullets": [
+            "Morning light triggers cortisol release — making you feel alert",
+            "Evening darkness triggers melatonin release — preparing you for sleep",
+            "Body temperature peaks in the afternoon and drops at night",
+            "Digestive efficiency, muscle strength, and reaction time all follow circadian patterns"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Light Is the Primary Reset Signal",
+          "body": "Your master clock needs to be reset every day to stay synchronised with the 24-hour world. The most powerful reset signal is light — specifically, bright light entering your eyes in the morning. This is why getting daylight early in the day is one of the most important sleep habits you can build. Without it, your clock drifts later each day.",
+          "stat": "100,000",
+          "statLabel": "lux — outdoor sunlight intensity vs ~500 lux in a typical office"
+        },
+        {
+          "type": "content",
+          "headline": "What Disrupts Your Body Clock",
+          "body": "Modern life is designed to confuse your circadian rhythm. Artificial light at night, irregular schedules, late meals, and screen use all send conflicting signals to your master clock. The result: you don't feel tired at bedtime, you struggle to wake in the morning, and your energy fluctuates unpredictably.",
+          "bullets": [
+            "Evening blue light suppresses melatonin — delaying sleep onset",
+            "Late eating shifts your metabolic clock, even if your sleep clock is fine",
+            "Shift work, jet lag, and social jet lag all misalign circadian rhythms",
+            "Irregular sleep schedules prevent your clock from establishing a stable rhythm"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Get Morning Light Within 30 Minutes of Waking",
+          "body": "Tomorrow morning, step outside for 5–10 minutes within 30 minutes of waking up. You don't need direct sunlight — overcast daylight is still 10–50× brighter than indoor lighting. If you can't get outside, sit by the brightest window. This single habit helps anchor your circadian rhythm and improves sleep the following night."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary signal that resets your circadian clock each day?",
+          "type": "mcq",
+          "options": [
+            "Bright light entering the eyes in the morning",
+            "Eating breakfast within an hour of waking",
+            "Physical exercise in the first half of the day",
+            "Setting an alarm at the same time daily"
+          ],
+          "correctIndex": 0,
+          "explanation": "Morning light is the strongest zeitgeber (time-giver) for the human circadian system. It signals the suprachiasmatic nucleus to suppress melatonin and initiate the cortisol awakening response, anchoring your internal clock to the 24-hour day."
+        },
+        {
+          "question": "The human circadian rhythm is exactly 24 hours long without external cues.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The intrinsic human circadian cycle is approximately 24.2 hours — slightly longer than a day. This is why external cues (especially morning light) are needed to reset the clock daily and prevent it from drifting later."
+        },
+        {
+          "question": "Which hormone does your brain release in response to darkness to prepare for sleep?",
+          "type": "mcq",
+          "options": [
+            "Melatonin",
+            "Cortisol",
+            "Adrenaline",
+            "Serotonin"
+          ],
+          "correctIndex": 0,
+          "explanation": "Melatonin is released by the pineal gland in response to darkness, signalling to your body that it's time to prepare for sleep. It doesn't force you to sleep — it opens the \"sleep gate\" by making you feel drowsy."
+        }
+      ]
+    },
+    {
+      "id": "bs-4-quantity-quality-regularity",
+      "dayNumber": 4,
+      "moduleId": "bs-module-1",
+      "title": "The Three Pillars: Quantity, Quality, and Regularity",
+      "subtitle": "Getting enough hours is only one third of the equation. Sleep quality and consistency matter just as much.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Eight Hours Doesn't Guarantee Good Sleep",
+          "body": "You can spend 8 hours in bed and still wake exhausted. That's because sleep has three dimensions that all need attention: how long you sleep (quantity), how deep and uninterrupted it is (quality), and how consistent your timing is (regularity). Neglect any one of these and you won't feel rested.",
+          "stat": "3",
+          "statLabel": "pillars of healthy sleep — quantity, quality, and regularity"
+        },
+        {
+          "type": "content",
+          "headline": "Pillar 1: Sleep Quantity",
+          "body": "Most adults need 7–9 hours of actual sleep per night — not just time in bed. \"Time in bed\" includes the minutes spent falling asleep, any night-time awakenings, and early morning wakefulness. If you need 8 hours of sleep, you likely need 8.5 hours in bed to account for this.",
+          "bullets": [
+            "7–9 hours for most adults (individual need varies)",
+            "Teenagers need 8–10 hours; older adults still need 7–8",
+            "Consistently sleeping under 7 hours increases health risks",
+            "\"Time in bed\" ≠ \"time asleep\" — subtract ~30 minutes for most people"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pillar 2: Sleep Quality",
+          "body": "Quality means how much of your sleep is actually restorative — getting adequate deep sleep and REM, without excessive fragmentation. Frequent awakenings, even brief ones you don't remember, reduce the benefit of your sleep time. Quality sleep means falling asleep within 20 minutes and staying asleep with minimal disruptions.",
+          "bullets": [
+            "Sleep efficiency — the percentage of time in bed spent actually asleep (85%+ is good)",
+            "Falling asleep within 15–20 minutes of lights out",
+            "Waking no more than once and falling back asleep within 20 minutes",
+            "Feeling refreshed within 30 minutes of waking — the best subjective measure"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pillar 3: Sleep Regularity",
+          "body": "Recent research suggests that sleep regularity may be even more predictive of health outcomes than quantity. Going to bed and waking at consistent times — even on weekends — helps your circadian rhythm stay aligned and improves sleep quality automatically. Irregular sleepers have higher rates of metabolic disease, depression, and cardiovascular problems.",
+          "stat": "±30",
+          "statLabel": "minutes — ideal variation in sleep/wake times between weekdays and weekends"
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Yourself on the Three Pillars",
+          "body": "Rate yourself 1–5 on each: (1) Quantity — do you consistently get 7–9 hours of actual sleep? (2) Quality — do you fall asleep easily, sleep through the night, and wake refreshed? (3) Regularity — are your bed and wake times within 30 minutes every day, including weekends? Your lowest score is where to focus first."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"sleep efficiency\" measure?",
+          "type": "mcq",
+          "options": [
+            "The percentage of time in bed that is spent actually asleep",
+            "How quickly you reach deep sleep after falling asleep",
+            "The total number of sleep cycles completed per night",
+            "How much energy your brain saves during sleep"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sleep efficiency is calculated as (total sleep time ÷ total time in bed) × 100. An efficiency of 85% or above is considered good. Low efficiency means you're spending too much time in bed awake."
+        },
+        {
+          "question": "Sleeping in on weekends is an effective way to compensate for weekday sleep loss.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While extra weekend sleep can partially reduce acute sleep debt, it disrupts circadian regularity — creating \"social jet lag.\" Research shows irregular sleepers have worse health outcomes than consistent sleepers, even when total hours are similar."
+        },
+        {
+          "question": "Which pillar of sleep has recent research suggested may be the strongest predictor of overall health?",
+          "type": "mcq",
+          "options": [
+            "Regularity — consistent sleep/wake times",
+            "Quantity — total hours of sleep",
+            "Quality — percentage of deep sleep",
+            "Duration — time spent in bed"
+          ],
+          "correctIndex": 0,
+          "explanation": "A 2023 study in the journal Sleep found that sleep regularity was a stronger predictor of mortality risk than sleep duration. Consistent timing helps maintain circadian alignment, which affects nearly every body system."
+        }
+      ]
+    },
+    {
+      "id": "bs-5-sleep-deprivation-effects",
+      "dayNumber": 5,
+      "moduleId": "bs-module-1",
+      "title": "What Happens When You Don't Sleep Enough",
+      "subtitle": "The effects of poor sleep go far beyond feeling tired. Here's what the research shows — and why it matters more than most people realise.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sleep Loss Isn't Just About Tiredness",
+          "body": "After just one night of sleeping 4–5 hours, your body becomes measurably more insulin resistant, your immune response weakens, your emotional reactivity increases, and your ability to form new memories drops significantly. After several nights, the effects compound. Yet most sleep-deprived people don't realise how impaired they are.",
+          "stat": "17",
+          "statLabel": "hours awake = cognitive impairment equivalent to a 0.05% blood alcohol level"
+        },
+        {
+          "type": "content",
+          "headline": "Effects on Your Brain",
+          "body": "Sleep deprivation hits the prefrontal cortex first — the part responsible for decision-making, focus, and impulse control. Meanwhile, the amygdala (emotional centre) becomes more reactive. The result: poor decisions, shorter temper, increased anxiety, impaired learning, and reduced creativity.",
+          "bullets": [
+            "Concentration drops by up to 50% after a night of poor sleep",
+            "Emotional reactivity increases by ~60% — the amygdala goes into overdrive",
+            "New memory formation requires sleep for consolidation — skip it and memories fade",
+            "Creativity and problem-solving suffer because REM sleep is lost"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Effects on Your Body",
+          "body": "Chronic short sleep affects nearly every physical system. Your cardiovascular system, immune function, metabolic health, and hormonal balance all deteriorate. These aren't theoretical risks — they show up in blood tests within days of restricted sleep.",
+          "bullets": [
+            "Heart disease risk increases by 48% for those sleeping under 6 hours regularly",
+            "Immune function drops — you're 4× more likely to catch a cold after poor sleep",
+            "Appetite hormones shift — ghrelin (hunger) rises, leptin (fullness) drops",
+            "Testosterone and growth hormone levels fall with chronic sleep restriction"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Dangerous \"I'm Fine\" Illusion",
+          "body": "Here's the most dangerous part: people who are chronically sleep-deprived don't accurately perceive their own impairment. Studies show that after 3–4 nights of 6 hours sleep, people rate themselves as \"fine\" while objective tests show serious cognitive decline. You adapt to feeling bad — it becomes your normal.",
+          "stat": "3",
+          "statLabel": "days of 6-hour sleep before people stop noticing their impairment"
+        },
+        {
+          "type": "try-it",
+          "headline": "Spot the Sleep Debt Signs",
+          "body": "Honestly check: Do you need an alarm to wake up? Do you feel drowsy in the afternoon? Do you fall asleep within 5 minutes of lying down? Do you rely on caffeine to function before midday? Could you fall asleep in a boring meeting? If you answered yes to 2 or more, you likely carry significant sleep debt."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "After approximately how many hours of being awake does cognitive impairment equal a blood alcohol level of 0.05%?",
+          "type": "mcq",
+          "options": [
+            "17 hours",
+            "24 hours",
+            "12 hours",
+            "36 hours"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that after 17 hours of continuous wakefulness, cognitive performance is equivalent to having a blood alcohol concentration of 0.05%. After 24 hours, it's equivalent to 0.10% — above the legal driving limit in most countries."
+        },
+        {
+          "question": "People who are chronically sleep-deprived can accurately assess how impaired they are.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Studies consistently show that chronically sleep-deprived individuals underestimate their cognitive impairment. After several days of short sleep, self-reported alertness levels off while objective performance continues to decline."
+        },
+        {
+          "question": "Which system does sleep deprivation affect first?",
+          "type": "mcq",
+          "options": [
+            "The prefrontal cortex — decision-making and impulse control",
+            "The digestive system — nutrient absorption slows",
+            "The muscular system — physical strength decreases",
+            "The respiratory system — breathing becomes less efficient"
+          ],
+          "correctIndex": 0,
+          "explanation": "The prefrontal cortex is particularly vulnerable to sleep loss. This impairs executive function (planning, focus, decision-making) while the amygdala becomes hyperactive, leading to increased emotional reactivity."
+        }
+      ]
+    },
+    {
+      "id": "bs-6-sleep-myths-debunked",
+      "dayNumber": 6,
+      "moduleId": "bs-module-1",
+      "title": "Sleep Myths Debunked",
+      "subtitle": "Common beliefs about sleep that are wrong — and what the science actually says instead.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most of What You Were Told About Sleep Is Wrong",
+          "body": "\"I can train myself to need less sleep.\" \"A nightcap helps you sleep better.\" \"I'll catch up on the weekend.\" These widely-held beliefs sound reasonable but contradict the evidence. Letting go of sleep myths is the first step to actually improving your rest.",
+          "stat": "5%",
+          "statLabel": "of people who genuinely need less than 7 hours — due to a rare gene mutation"
+        },
+        {
+          "type": "content",
+          "headline": "Myth 1: \"I Can Function on 5–6 Hours\"",
+          "body": "Only about 1 in 20 people carry a genuine short-sleep gene (DEC2 mutation) that allows them to function well on less than 7 hours. Everyone else who believes they're fine on 5–6 hours has simply forgotten what being well-rested feels like. Objective tests consistently show impairment they don't notice.",
+          "bullets": [
+            "The DEC2 gene mutation is extremely rare — less than 5% of the population",
+            "Self-reported \"fine\" does not match objective cognitive performance tests",
+            "Chronic sleep restriction creates a new (impaired) baseline that feels \"normal\"",
+            "If you need an alarm or caffeine to function, you're not getting enough sleep"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Myth 2: \"Alcohol Helps Me Sleep\"",
+          "body": "Alcohol is a sedative, not a sleep aid. It may help you lose consciousness faster, but it fragments sleep architecture, suppresses REM sleep, triggers more night-time awakenings (especially in the second half of the night), and leads to less restorative sleep overall. A nightcap is one of the worst things you can do for sleep quality.",
+          "bullets": [
+            "Alcohol suppresses REM sleep by 20–50% depending on dose",
+            "You wake more frequently in the second half of the night",
+            "It worsens sleep apnoea and snoring by relaxing throat muscles",
+            "Even moderate drinking (2 drinks) reduces sleep quality by ~24%"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Myth 3: \"I'll Make Up for It on the Weekend\"",
+          "body": "Weekend lie-ins can partially reduce acute sleep debt but create \"social jet lag\" — a mismatch between your biological clock and your social schedule. This irregularity disrupts circadian rhythms and is associated with poorer metabolic health, weight gain, and worse mood. Consistency matters more than totals.",
+          "stat": "2–3",
+          "statLabel": "hours of social jet lag many people experience between weekdays and weekends"
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your Personal Sleep Myths",
+          "body": "Write down 2–3 things you've always believed about sleep (e.g., \"I'm a night owl so I can't change,\" \"I function fine on 6 hours,\" \"Reading in bed helps me sleep\"). Over the next few lessons, we'll examine each one against the evidence. Challenge your assumptions — they may be costing you better sleep."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of people genuinely need less than 7 hours of sleep due to genetics?",
+          "type": "mcq",
+          "options": [
+            "Less than 5%",
+            "About 20%",
+            "About 30%",
+            "About 50%"
+          ],
+          "correctIndex": 0,
+          "explanation": "The DEC2 gene mutation that allows healthy function on less than 7 hours is very rare — found in fewer than 5% of people. The vast majority who claim to need less sleep are simply living with chronic impairment they don't recognise."
+        },
+        {
+          "question": "Alcohol helps you fall asleep faster and improves overall sleep quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While alcohol is a sedative that can speed up sleep onset, it significantly disrupts sleep architecture — particularly REM sleep — causes more night-time awakenings, and reduces overall sleep quality. Sedation is not the same as sleep."
+        },
+        {
+          "question": "What is \"social jet lag\"?",
+          "type": "mcq",
+          "options": [
+            "The mismatch between your sleep schedule on workdays versus weekends",
+            "Feeling tired after spending too much time on social media",
+            "The fatigue caused by attending too many social events",
+            "The adjustment period after travelling to a different time zone for a social trip"
+          ],
+          "correctIndex": 0,
+          "explanation": "Social jet lag refers to the difference between your biological clock timing and your socially-imposed schedule — typically seen as sleeping later on weekends than weekdays. Even a 2-hour shift disrupts circadian regulation."
+        }
+      ]
+    },
+    {
+      "id": "bs-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "bs-module-1",
+      "title": "Module 1 Checkpoint: What You've Learned",
+      "subtitle": "Review what you've discovered about sleep this week — and consolidate the key ideas before moving forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Know More About Sleep Than Most People",
+          "body": "In just 6 lessons, you've built a solid understanding of how sleep works, why it matters, and what most people get wrong. This knowledge gives you a foundation for everything that comes next — fixing the specific problems that are stopping you from sleeping well.",
+          "stat": "6",
+          "statLabel": "key sleep principles you now understand"
+        },
+        {
+          "type": "content",
+          "headline": "Module 1 — Key Takeaways",
+          "body": "Let's consolidate what you've learned this week. These are the foundational principles everything else builds on.",
+          "bullets": [
+            "Sleep is active maintenance — not passive shutdown. Your brain clears waste, consolidates memory, and resets hormones.",
+            "You cycle through 4 stages roughly every 90 minutes — deep sleep dominates early, REM dominates late.",
+            "Your circadian rhythm is a 24-hour body clock reset primarily by morning light.",
+            "Good sleep has 3 pillars: quantity (7–9 hrs), quality (uninterrupted, restorative), and regularity (consistent timing).",
+            "Sleep deprivation impairs judgement, immunity, metabolism, and emotional regulation — and you can't tell when you're impaired.",
+            "Most popular beliefs about sleep (alcohol helps, you can adapt, weekend catch-up works) are wrong."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming Next",
+          "body": "In Module 2, we move from understanding to action. You'll learn exactly what disrupts your sleep — light, temperature, caffeine, stress, screens, and scheduling — and get specific, evidence-based fixes for each one. By the end of the module, you'll have a personalised sleep-improvement plan.",
+          "bullets": [
+            "Lesson 8: How light controls your sleep-wake cycle",
+            "Lesson 9: Temperature — the hidden sleep switch",
+            "Lesson 10: Caffeine and alcohol timing",
+            "Lesson 11: Stress, anxiety, and racing thoughts at night",
+            "Lesson 12: Screens and evening routines",
+            "Lesson 13: Shift work and irregular schedules"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Progress So Far",
+          "body": "You've completed the foundational module — this puts you ahead of most people who never stop to understand how sleep actually works. Knowledge alone doesn't fix sleep, but it tells you exactly what to target. The next module gives you the tools.",
+          "stat": "33%",
+          "statLabel": "of this course complete — the hardest part (starting) is done"
+        },
+        {
+          "type": "try-it",
+          "headline": "Reflection: Your #1 Sleep Insight",
+          "body": "From everything you've learned this week, what was the single most surprising or useful thing? Write it down in one sentence. This becomes your personal \"sleep principle\" — the one thing you'll remember and act on, even if you forget everything else. Examples: \"My body clock needs morning light.\" \"Regularity matters more than hours.\" \"I can't tell when I'm sleep-deprived.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most powerful daily signal for resetting your circadian rhythm?",
+          "type": "mcq",
+          "options": [
+            "Morning light exposure",
+            "Eating breakfast at the same time",
+            "Going to bed at the same time",
+            "Evening exercise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Morning light is the strongest zeitgeber (time-giver) for the human circadian system. Bright light in the eyes within 30 minutes of waking suppresses melatonin, triggers cortisol, and resets the master clock for the day."
+        },
+        {
+          "question": "Sleep efficiency of 70% is considered good.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Good sleep efficiency is 85% or above — meaning at least 85% of your time in bed is spent actually sleeping. 70% would indicate significant time awake in bed, which may signal a sleep problem worth addressing."
+        },
+        {
+          "question": "Which part of the night contains the most deep sleep (N3)?",
+          "type": "mcq",
+          "options": [
+            "The first half of the night",
+            "The second half of the night",
+            "Deep sleep is evenly distributed throughout the night",
+            "The last 90 minutes before waking"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep sleep (N3) is concentrated in the first half of the night — especially the first two sleep cycles. REM sleep dominates later. This is why going to bed on time (not just sleeping long enough) matters for physical recovery."
+        }
+      ]
+    },
+    {
+      "id": "bs-8-light-master-switch",
+      "dayNumber": 8,
+      "moduleId": "bs-module-2",
+      "title": "Light: The Master Switch",
+      "subtitle": "Light is the most powerful signal for controlling your sleep-wake cycle. Use it deliberately — morning and evening.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Eyes Are Your Body Clock's Control Panel",
+          "body": "Your circadian rhythm doesn't just guess what time it is — it reads light signals through specialised cells in your eyes (called ipRGCs) that connect directly to your body clock. Get bright light at the right time and your sleep-wake cycle locks in. Get it at the wrong time and everything shifts.",
+          "stat": "10×",
+          "statLabel": "more powerful than indoor lighting — the impact of outdoor morning light on circadian anchoring"
+        },
+        {
+          "type": "content",
+          "headline": "Morning Light: Wake Up Your Clock",
+          "body": "Getting bright light into your eyes within 30–60 minutes of waking is one of the highest-impact things you can do for sleep. It triggers your cortisol awakening response (a healthy morning energy spike), suppresses residual melatonin, and sets a timer in your brain for when melatonin will rise again that evening — about 12–14 hours later.",
+          "bullets": [
+            "Outdoor daylight delivers 10,000–100,000 lux — even on overcast days",
+            "Indoor lighting delivers only 100–500 lux — not enough to fully anchor your clock",
+            "Just 5–10 minutes of outdoor light is sufficient for most people",
+            "Light through glass is filtered — go outside rather than sitting by a window"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Evening Light: The Sleep Thief",
+          "body": "The same mechanism that makes morning light helpful makes evening light harmful. Bright or blue-rich light after sunset tells your brain it's still daytime, suppressing melatonin and delaying your sleepiness by up to 2–3 hours. This is why modern indoor lighting and screens make it harder to fall asleep at a reasonable time.",
+          "bullets": [
+            "Blue-wavelength light (phones, laptops, LED lights) is the most melatonin-suppressive",
+            "Just 2 hours of bright light exposure at night can push sleep onset back by 1.5 hours",
+            "Overhead lighting is worse than lamps — lower, dimmer lighting in evenings is better",
+            "Even brief bright light exposure late in the evening resets the clock backwards"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Practical Light Management",
+          "body": "You don't need to live in darkness after 6pm — you just need to be deliberate. Small changes to how you use light morning and evening can dramatically improve both how quickly you fall asleep and how energised you feel after waking.",
+          "bullets": [
+            "Morning: go outside within 30–60 minutes of waking, even just for 5–10 minutes",
+            "Daytime: maximise natural light indoors — open blinds, work near windows",
+            "Evening (2 hrs before bed): dim overhead lights, switch to lamps or warm bulbs",
+            "Night: use blue-light filters on screens (or better, put them down 30–60 minutes before bed)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Two Light Changes Starting Tonight",
+          "body": "Make two changes: (1) Set a reminder to go outside within 30 minutes of waking tomorrow morning — even just to your garden or doorstep. (2) Tonight, dim your main lights 90 minutes before bed and switch to a lamp or candle-equivalent. Notice whether you feel sleepier at bedtime than usual. Small light changes often produce results within 1–2 days."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is outdoor morning light more effective than sitting by a window?",
+          "type": "mcq",
+          "options": [
+            "Glass filters out the wavelengths that trigger circadian signals",
+            "Cold outdoor air activates alertness mechanisms",
+            "Outdoor light contains more infrared radiation",
+            "Windows reflect too much of the light before it enters your eyes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Glass filters out significant amounts of UV and blue-spectrum light — the wavelengths most effective at resetting the circadian clock. Going outside delivers the full spectrum at the full intensity your body clock needs."
+        },
+        {
+          "question": "Blue-wavelength light from screens suppresses melatonin more than other types of light.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The ipRGC cells in the retina (which connect to the body clock) are most sensitive to short-wavelength blue light (~480nm). Screens, LED lights, and fluorescent lighting all emit blue-rich light that is particularly effective at suppressing melatonin."
+        },
+        {
+          "question": "Getting bright light in the morning sets a timer for when melatonin will rise. Approximately how many hours later does this occur?",
+          "type": "mcq",
+          "options": [
+            "12–14 hours later",
+            "4–6 hours later",
+            "18–20 hours later",
+            "6–8 hours later"
+          ],
+          "correctIndex": 0,
+          "explanation": "Morning light exposure sets the timing of melatonin onset approximately 12–14 hours later. If you get bright light at 7am, melatonin will typically begin rising around 9–10pm — which is why morning light habits improve evening sleepiness."
+        }
+      ]
+    },
+    {
+      "id": "bs-9-temperature-environment",
+      "dayNumber": 9,
+      "moduleId": "bs-module-2",
+      "title": "Temperature: The Hidden Sleep Switch",
+      "subtitle": "Your body needs to cool down to fall asleep. Understanding this can solve one of the most frustrating sleep problems.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sleep Requires a Drop in Body Temperature",
+          "body": "Falling asleep isn't just about feeling tired — your core body temperature must drop by 1–2°C (2–3°F) to initiate sleep. This is why you feel sleepier in a cool room, why hot nights are so hard to sleep through, and why a warm bath before bed (paradoxically) helps you fall asleep faster.",
+          "stat": "18°C",
+          "statLabel": "(65°F) — the research-backed ideal bedroom temperature for most adults"
+        },
+        {
+          "type": "content",
+          "headline": "How Temperature Controls Sleep",
+          "body": "Your body clock coordinates a core temperature rhythm that runs throughout the day. Temperature peaks in the late afternoon and begins dropping in the evening — the drop is the signal that prepares your brain for sleep. If you're too hot, this cooling can't happen properly and sleep onset is delayed.",
+          "bullets": [
+            "Core temperature starts dropping 1–2 hours before your natural bedtime",
+            "The hands and feet are the main radiators — they release heat to cool the core",
+            "A cool bedroom environment supports (and doesn't fight) this natural process",
+            "Night sweats and overheating are one of the most common causes of sleep fragmentation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Warm Bath Trick",
+          "body": "A warm bath or shower 1–2 hours before bed accelerates sleep onset — not because it heats you up, but because it draws blood to the skin, which then radiates heat rapidly when you step out. This produces a faster core temperature drop than would happen naturally, making you feel sleepy sooner.",
+          "bullets": [
+            "A 10–15 minute warm bath 1–2 hours before bed can reduce sleep onset by up to 10 minutes",
+            "This works via vasodilation — blood vessels expand, bringing warm blood to the surface",
+            "A warm foot soak produces a similar effect for people who prefer not to bath before bed",
+            "Very hot showers immediately before bed may have the opposite effect — too stimulating"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Optimising Your Sleep Environment",
+          "body": "Temperature is just one element of a good sleep environment. The ideal bedroom is cool, dark, quiet, and free from distractions. Your brain associates your bedroom environment with certain behaviours — so making it consistently sleep-conducive trains your brain to wind down automatically when you get into bed.",
+          "bullets": [
+            "Temperature: 16–19°C (61–66°F) is ideal for most adults",
+            "Darkness: blackout curtains or eye mask — even dim light disrupts sleep",
+            "Sound: consistent background noise (fan, white noise) beats intermittent noise",
+            "Bed association: use your bed for sleep only — not working, scrolling, or watching TV"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Cool Your Room Tonight",
+          "body": "Before bed tonight, do one thing to reduce your bedroom temperature: open a window, turn down the heating, use a fan, or remove an extra blanket. The goal is that the room feels slightly cool (not cold) when you get in. Also try a warm shower 60–90 minutes before bed and note whether you feel sleepier than usual when you get in."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does a warm bath before bed help you fall asleep faster?",
+          "type": "mcq",
+          "options": [
+            "It draws blood to the skin, which accelerates core body cooling afterwards",
+            "Warm water directly lowers brain activity and induces drowsiness",
+            "The relaxation of muscles signals to the brain that it is time to sleep",
+            "Hot water triggers the release of melatonin in the skin"
+          ],
+          "correctIndex": 0,
+          "explanation": "A warm bath works via vasodilation — blood vessels near the skin dilate, bringing warm blood to the surface. When you step out, this heat radiates away quickly, causing a rapid drop in core temperature that accelerates sleep onset."
+        },
+        {
+          "question": "A warm bedroom is better for sleep because it keeps muscles relaxed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sleep requires a drop in core body temperature of 1–2°C. A warm bedroom prevents this cooling, delays sleep onset, and increases night-time awakenings. The research-backed ideal bedroom temperature for most adults is 16–19°C (61–66°F)."
+        },
+        {
+          "question": "Which parts of the body are the primary heat radiators that help cool your core for sleep?",
+          "type": "mcq",
+          "options": [
+            "The hands and feet",
+            "The forehead and scalp",
+            "The back and shoulders",
+            "The chest and abdomen"
+          ],
+          "correctIndex": 0,
+          "explanation": "The hands and feet contain a dense network of arteriovenous anastomoses — blood vessel shortcuts that allow rapid heat transfer from the core to the environment. This is why warm hands and feet at bedtime are associated with faster sleep onset."
+        }
+      ]
+    },
+    {
+      "id": "bs-10-caffeine-alcohol",
+      "dayNumber": 10,
+      "moduleId": "bs-module-2",
+      "title": "Caffeine, Alcohol, and Sleep",
+      "subtitle": "Two substances that most people consume daily — and both affect sleep in ways that are widely misunderstood.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Morning Coffee May Still Be in Your System at Midnight",
+          "body": "Caffeine has a half-life of roughly 5–7 hours — meaning half of the caffeine in a 3pm coffee is still active in your bloodstream at 9pm. A quarter of it is still there at midnight. This is why afternoon caffeine can delay sleep onset by hours, even when you feel \"fine\" and don't notice it disrupting you.",
+          "stat": "5–7",
+          "statLabel": "hours — caffeine's half-life in the average adult body"
+        },
+        {
+          "type": "content",
+          "headline": "How Caffeine Works",
+          "body": "Caffeine doesn't give you energy — it blocks a chemical called adenosine, which is a natural sleep signal that builds up throughout the day. The longer you're awake, the more adenosine accumulates, making you feel progressively sleepier. Caffeine masks this signal without clearing the adenosine — so when it wears off, the sleepiness hits all at once (the \"caffeine crash\").",
+          "bullets": [
+            "Adenosine builds up from the moment you wake — it's your natural sleep pressure",
+            "Caffeine blocks adenosine receptors for hours without clearing the backlog",
+            "When caffeine clears, adenosine floods back — causing the crash",
+            "Caffeine also increases cortisol and adrenaline, raising alertness and heart rate"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Smart Caffeine Cut-Off",
+          "body": "Most sleep researchers recommend stopping caffeine consumption by early-to-mid afternoon — roughly 12–14 hours before your intended bedtime. For most people this means a cut-off around 1–2pm. Individual sensitivity varies: some people metabolise caffeine quickly, others slowly (a genetic difference). If you're sleeping poorly, try no caffeine after 12pm for 2 weeks.",
+          "bullets": [
+            "A 2pm coffee at 5-hour half-life: ~25% still active at midnight, ~12% at 3am",
+            "Caffeine tolerance reduces its wakefulness effect but not its sleep disruption",
+            "Coffee, tea, energy drinks, pre-workout, and some medications all contain caffeine",
+            "Dark chocolate, cola drinks, and some headache tablets also contain meaningful amounts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Alcohol: Sedative, Not Sleep Aid",
+          "body": "We covered this briefly in the myths lesson — but it's worth going deeper. Alcohol sedates the brain rather than inducing natural sleep. It disrupts sleep architecture, particularly suppressing REM sleep in the first half of the night. It also causes the body to produce more adrenaline in the second half, leading to lighter, more fragmented sleep and earlier waking.",
+          "bullets": [
+            "Even 2 drinks reduces sleep quality measurably (by ~24% in some studies)",
+            "REM suppression in the early cycles means less memory consolidation and emotional processing",
+            "Alcohol relaxes the throat — worsening snoring and sleep apnoea",
+            "Its diuretic effect increases night-time toilet trips, fragmenting sleep further"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Caffeine Audit",
+          "body": "Write down everything you consumed with caffeine yesterday and what time you had it. Total up the approximate caffeine content (coffee: ~95mg, espresso: ~65mg, tea: ~50mg, energy drink: 80–160mg). Calculate how much was still in your system at bedtime. If more than 100mg was still circulating, it may have affected your sleep — even if you didn't notice."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Caffeine improves alertness by directly boosting energy production in your cells.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Caffeine works by blocking adenosine receptors — preventing the sleep-pressure signal from being received. It doesn't create energy; it masks the signal telling you that you're tired. The energy debt remains and returns when caffeine wears off."
+        },
+        {
+          "question": "If caffeine has a half-life of 6 hours and you drink a coffee at 2pm, how much is roughly left at midnight?",
+          "type": "mcq",
+          "options": [
+            "About 25% (two half-lives later)",
+            "None — it fully clears in 6 hours",
+            "About 50% (one half-life later)",
+            "About 10% (three half-lives later)"
+          ],
+          "correctIndex": 0,
+          "explanation": "From 2pm to midnight is 10 hours — approximately 1.7 half-lives for a 6-hour half-life. Using the formula: after 6 hrs = 50%, after 12 hrs = 25%. At 10 hours, roughly 25–30% remains. For a 200mg coffee, that's 50–60mg still active — enough to affect sleep quality."
+        },
+        {
+          "question": "What is adenosine?",
+          "type": "mcq",
+          "options": [
+            "A chemical that builds up during waking hours and signals sleepiness",
+            "A hormone released by the adrenal glands to regulate stress",
+            "A neurotransmitter that controls dopamine and serotonin release",
+            "An enzyme that breaks down caffeine in the liver"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adenosine is a byproduct of brain activity that accumulates during waking hours. As levels rise, it binds to receptors and creates increasing feelings of sleepiness — this is called sleep pressure or sleep drive. Caffeine temporarily blocks these receptors."
+        }
+      ]
+    },
+    {
+      "id": "bs-11-stress-racing-thoughts",
+      "dayNumber": 11,
+      "moduleId": "bs-module-2",
+      "title": "Stress, Racing Thoughts, and Insomnia",
+      "subtitle": "Why your brain refuses to switch off at night — and practical techniques that actually work.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Bedtime Is When Your Brain Chooses to Think About Everything",
+          "body": "You lie down. The lights go off. And suddenly — every worry, unfinished task, and embarrassing memory from five years ago appears. This isn't random. The quiet of bedtime removes the distractions that kept those thoughts at bay during the day. Your brain hasn't changed; it's finally got your attention.",
+          "stat": "65%",
+          "statLabel": "of people report that stress or worry is a significant cause of their sleep problems"
+        },
+        {
+          "type": "content",
+          "headline": "Why Stress Disrupts Sleep",
+          "body": "The stress response is designed to keep you awake and alert in dangerous situations. Cortisol raises heart rate, tenses muscles, heightens alertness, and suppresses melatonin. This was useful when the threat was a predator. It's less useful when the threat is tomorrow's presentation — but your nervous system doesn't know the difference.",
+          "bullets": [
+            "Elevated cortisol at bedtime directly delays sleep onset",
+            "The amygdala (threat-detector) stays hyperactive when stressed, scanning for danger",
+            "Worrying creates a mental loop that generates more cortisol — a self-reinforcing cycle",
+            "Even low-level background stress keeps the nervous system in a low-grade alert state"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Worry Dump: Externalise Before You Lie Down",
+          "body": "One of the most evidence-supported techniques for reducing bedtime racing thoughts is writing. Spend 5–10 minutes before bed writing down everything on your mind — worries, to-do items, unresolved problems. This acts as a \"cognitive offload\" — your brain no longer has to keep rehearsing these thoughts to make sure you don't forget them.",
+          "bullets": [
+            "A \"worry journal\" reduces sleep onset time by an average of 15 minutes in studies",
+            "Writing tomorrow's to-do list is more effective than writing a general worry list",
+            "The act of writing signals \"I've dealt with this\" — reducing rehearsal loops",
+            "Do this at a desk, not in bed — keep the bed for sleeping"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Breathing to Activate the Calm Response",
+          "body": "Controlled breathing is one of the fastest ways to shift your nervous system from alert to calm. Extended exhales activate the parasympathetic nervous system (the \"rest and digest\" mode). The 4-7-8 technique (inhale 4s, hold 7s, exhale 8s) and box breathing (4s each phase) both work well. You don't need to believe in it — the physiology happens automatically.",
+          "bullets": [
+            "Slow breathing (5–6 breaths per minute) reliably reduces heart rate and cortisol",
+            "Exhales longer than inhales specifically activate the vagus nerve calming response",
+            "Just 4–6 minutes of slow breathing before bed measurably reduces stress markers",
+            "Physiological sigh (double inhale, long exhale) is one of the fastest acute calming techniques"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try the Bedtime Worry Dump Tonight",
+          "body": "Set a 10-minute timer before you get into bed. Write down: (1) Everything worrying you right now. (2) Tomorrow's top 3 tasks. (3) One thing you're grateful for. Then close the notebook and leave it outside the bedroom. The rule: if a thought comes up in bed that you've already written down, tell yourself \"it's on the list — I don't need to think about it tonight.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does cortisol disrupt sleep?",
+          "type": "mcq",
+          "options": [
+            "It raises alertness and suppresses melatonin — the opposite of what sleep requires",
+            "It directly blocks adenosine receptors in the same way as caffeine",
+            "It reduces blood flow to the brain, making deep sleep impossible",
+            "It accelerates the circadian rhythm, shortening the sleep window"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cortisol is the primary stress and alertness hormone. Elevated bedtime cortisol increases heart rate, heightens mental alertness, and suppresses melatonin — all of which delay sleep onset and reduce sleep quality."
+        },
+        {
+          "question": "Writing a to-do list before bed can help reduce the time it takes to fall asleep.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research (including a study published in the Journal of Experimental Psychology) found that writing a specific to-do list for the following day before bed — rather than a worry list — reduced sleep onset time by an average of 9 minutes. It offloads \"open loops\" from working memory."
+        },
+        {
+          "question": "Which type of breathing most effectively activates the parasympathetic (calm) nervous system?",
+          "type": "mcq",
+          "options": [
+            "Exhales longer than inhales",
+            "Rapid shallow breathing for 30 seconds",
+            "Holding the breath for as long as possible",
+            "Inhales longer than exhales"
+          ],
+          "correctIndex": 0,
+          "explanation": "Extended exhales activate the vagus nerve via the baroreceptors in the chest, triggering the parasympathetic response. The inhale phase activates the sympathetic (alert) system slightly, so the exhale-heavy ratio shifts the balance towards calm."
+        }
+      ]
+    },
+    {
+      "id": "bs-12-screens-evening-routines",
+      "dayNumber": 12,
+      "moduleId": "bs-module-2",
+      "title": "Screens, Stimulation, and Evening Routines",
+      "subtitle": "The real problem with screens before bed — and how to design an evening that sets you up to sleep well.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "It's Not Just the Light — It's the Stimulation",
+          "body": "Yes, screens emit blue light that suppresses melatonin. But the bigger problem is what you're doing on them. Checking emails triggers work-mode thinking. Social media creates emotional arousal. News activates threat responses. Your brain arrives at bedtime in a state of high alert — the opposite of what it needs for sleep.",
+          "stat": "90",
+          "statLabel": "minutes — average screen time in the hour before bed for most adults"
+        },
+        {
+          "type": "content",
+          "headline": "The Two Screen Problems",
+          "body": "Evening screens create two separate sleep problems that compound each other. The first is biological — blue light suppresses melatonin and signals \"daytime\" to your body clock. The second is psychological — the content keeps your brain engaged, activated, and emotionally stimulated. Fixing just the light problem (with night mode or blue-light glasses) only solves half the issue.",
+          "bullets": [
+            "Night mode and blue-light glasses reduce melatonin suppression by ~50%",
+            "They do nothing to reduce mental stimulation and emotional activation from content",
+            "Social media comparison, news anxiety, and work emails all elevate cortisol",
+            "The solution is managing both the light AND the content type in the evening"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Designing a Wind-Down Transition",
+          "body": "Your brain doesn't switch off instantly — it needs a transition period between \"daytime mode\" and \"sleep mode.\" Think of it like a dimmer switch rather than an on/off toggle. The goal of an evening routine is to progressively lower stimulation, light levels, and mental engagement over 60–90 minutes before bed.",
+          "bullets": [
+            "Dim lights and shift to warmer bulbs or lamps after 8pm (or 2 hrs before bed)",
+            "End work-related tasks at least 1 hour before bed",
+            "Replace stimulating screen content with lower-activation activities",
+            "Low-activation screen use (quiet documentary, gentle podcast) is better than news or social media"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Actually Works Before Bed",
+          "body": "The best pre-sleep activities share one trait: they lower mental and physiological arousal without demanding your attention or triggering emotion. Reading fiction is consistently one of the most effective — it engages just enough of your mind to stop anxious thoughts while remaining calm.",
+          "bullets": [
+            "Reading fiction (physical book): reduces stress levels by 68% in 6 minutes (University of Sussex)",
+            "Light stretching or yoga: lowers cortisol and relaxes muscles",
+            "Warm bath or shower (covered in Lesson 9): accelerates temperature drop",
+            "Calm music or podcasts at low volume: provides gentle mental engagement without activation"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your 60-Minute Wind-Down",
+          "body": "Write a simple 60-minute evening sequence that ends at your target bedtime. Example: 9:00pm — dim lights, stop work email. 9:15pm — warm shower. 9:30pm — read a book or light stretch. 9:50pm — brief worry journal. 10:00pm — lights out. Keep it realistic for your life. Even a 20-minute version beats none at all. The goal is a consistent transition, not a perfect routine."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is using \"night mode\" on your phone before bed an incomplete solution?",
+          "type": "mcq",
+          "options": [
+            "It reduces melatonin suppression but doesn't address mental stimulation from content",
+            "It makes the screen too dim to use comfortably, so people switch it off",
+            "Night mode actually increases blue light by shifting to red-heavy display",
+            "The melatonin suppression from phones is too small to matter regardless"
+          ],
+          "correctIndex": 0,
+          "explanation": "Night mode helps with the biological problem (blue light) but not the psychological one. Checking social media, email, and news in the hour before bed keeps the brain in an activated, alert state regardless of screen colour temperature."
+        },
+        {
+          "question": "Reading fiction before bed can reduce stress levels significantly in a short period of time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A University of Sussex study found that reading for just 6 minutes reduced stress levels by 68% — more than listening to music (61%), having a cup of tea (54%), or going for a walk (42%). The immersive nature of fiction captures the mind gently without arousal."
+        },
+        {
+          "question": "What is the best description of an effective pre-sleep evening routine?",
+          "type": "mcq",
+          "options": [
+            "A gradual reduction in stimulation, light, and mental engagement over 60–90 minutes",
+            "A strict protocol of specific activities performed in exact order",
+            "Avoiding all screen use from 6pm onwards regardless of content",
+            "A single relaxing activity immediately before getting into bed"
+          ],
+          "correctIndex": 0,
+          "explanation": "An effective wind-down is about progressive deactivation — progressively lowering arousal, light intensity, and mental engagement. Rigid protocols are hard to maintain; the key principle is a consistent transition direction, not a specific set of activities."
+        }
+      ]
+    },
+    {
+      "id": "bs-13-irregular-schedules",
+      "dayNumber": 13,
+      "moduleId": "bs-module-2",
+      "title": "Shift Work, Jet Lag, and Irregular Schedules",
+      "subtitle": "What to do when your schedule fights against your body clock — practical strategies for real life.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When Life Doesn't Match Your Body Clock",
+          "body": "Not everyone has the luxury of a fixed 10pm–6am schedule. Shift workers, frequent travellers, new parents, and people with unpredictable lives all face real challenges that standard sleep advice doesn't address. The goal isn't perfection — it's minimising the damage and recovering effectively.",
+          "stat": "20%",
+          "statLabel": "of workers in developed countries work non-standard or rotating shift schedules"
+        },
+        {
+          "type": "content",
+          "headline": "Social Jet Lag: The Everyday Version",
+          "body": "Even if you don't travel or work shifts, many people experience \"social jet lag\" — the mismatch between their biological clock and their social obligations. Staying up late on weekends and waking early on weekdays is the equivalent of flying from London to New York every Friday and flying back every Monday. Over time, this creates a chronic circadian disruption.",
+          "bullets": [
+            "Each hour of social jet lag is associated with a 33% higher odds of obesity",
+            "2-hour social jet lag is as disruptive as flying across two time zones weekly",
+            "The fix: keep wake times consistent 7 days a week (even on weekends)",
+            "Gradual shifts of 15 minutes are more sustainable than sudden schedule changes"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Jet Lag: Resetting After Travel",
+          "body": "Jet lag occurs because your body clock is still set to your departure time zone while the external world operates on a different schedule. Light exposure is the fastest way to re-anchor your clock to the new time zone. Strategic use of light — and avoiding it at the wrong times — can cut recovery time roughly in half.",
+          "bullets": [
+            "Eastward travel is harder — you're asking your clock to run ahead, which is unnatural",
+            "Get outdoor light at local morning time immediately upon arrival",
+            "Stay awake until local bedtime on arrival day, even if tired",
+            "Melatonin at the local bedtime can help shift the clock by 1–2 days earlier"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Shift Workers: Damage Limitation",
+          "body": "Shift work creates genuine health risks — higher rates of metabolic disease, cardiovascular problems, and mood disorders. While these can't be entirely eliminated, strategies exist to reduce the impact. The key principles are: keep a consistent schedule as much as possible, use light strategically, and protect sleep windows with the same commitment you'd give a work meeting.",
+          "bullets": [
+            "Fixed shift patterns (always nights) are less disruptive than rotating shifts",
+            "Wear blue-blocking glasses during night shifts to minimise daytime clock disruption",
+            "Use blackout curtains and eye masks to protect daytime sleep quality",
+            "Avoid social jet lag by maintaining similar sleep timing on days off"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Calculate Your Social Jet Lag Score",
+          "body": "Compare your average weekday bed/wake times with your weekend bed/wake times. The difference in sleep midpoint (halfway between sleep and wake time) is your social jet lag score. Example: weekday midpoint 2am (sleep 11pm, wake 7am), weekend midpoint 4am (sleep 1am, wake 9am) = 2 hours of social jet lag. Under 30 minutes is ideal. Over 2 hours is a significant circadian stressor."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"social jet lag\"?",
+          "type": "mcq",
+          "options": [
+            "The mismatch between your biological clock and your social schedule — typically sleeping later on weekends",
+            "Fatigue caused by excessive socialising and late-night events",
+            "The tiredness felt after international travel for social occasions",
+            "The disruption caused by checking social media late at night"
+          ],
+          "correctIndex": 0,
+          "explanation": "Social jet lag describes the chronic circadian disruption created by having different sleep schedules on workdays versus free days. Even 1–2 hours of mismatch creates metabolic, cognitive, and mood effects similar to regular transmeridian travel."
+        },
+        {
+          "question": "Travelling eastward causes worse jet lag than travelling westward.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Eastward travel forces your body clock to advance (run earlier), which is harder because the natural human circadian period is slightly longer than 24 hours — making it easier to delay (run later, as in westward travel). Most people recover from westward jet lag faster."
+        },
+        {
+          "question": "What is the most effective strategy for resetting your body clock to a new time zone after travel?",
+          "type": "mcq",
+          "options": [
+            "Getting bright outdoor light at local morning time as soon as possible",
+            "Sleeping at your departure time zone for the first night then gradually shifting",
+            "Taking sleeping pills on the plane to arrive fully rested",
+            "Fasting for 16 hours before arrival to reset the metabolic clock"
+          ],
+          "correctIndex": 0,
+          "explanation": "Light is the most powerful circadian zeitgeber. Getting outdoor light at local morning time on the day of arrival sends the strongest possible signal to the body clock to reset to the new time zone. Combined with staying awake until local bedtime, this is the most evidence-supported jet lag strategy."
+        }
+      ]
+    },
+    {
+      "id": "bs-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "bs-module-2",
+      "title": "Module 2 Checkpoint: Your Sleep Problem Toolkit",
+      "subtitle": "Review what you've learned about the most common sleep disruptors — and take stock of what to apply first.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Have a Toolkit for the Most Common Sleep Problems",
+          "body": "Most people who sleep badly aren't victims of bad genetics or a broken brain. They're experiencing the predictable effects of solvable problems — light at the wrong time, a warm room, afternoon caffeine, evening stress, and stimulating screens. You now know what causes each one and exactly what to do about it.",
+          "stat": "7",
+          "statLabel": "evidence-based sleep disruptors covered in Module 2 — each with a practical fix"
+        },
+        {
+          "type": "content",
+          "headline": "Module 2 — Key Takeaways",
+          "body": "Here's the complete toolkit from this module. The most effective approach is to fix 1–2 disruptors at a time — starting with whichever is most relevant to your situation.",
+          "bullets": [
+            "Light (morning): Get outdoor light within 30–60 minutes of waking — anchors your body clock",
+            "Light (evening): Dim lights 2 hours before bed, reduce screen use or switch to low-activation content",
+            "Temperature: Cool bedroom (16–19°C), warm bath 60–90 mins before bed",
+            "Caffeine: Cut off by 1–2pm, audit hidden sources (tea, cola, chocolate)",
+            "Alcohol: Avoid within 3 hours of bedtime — it sedates but doesn't restore",
+            "Stress: Bedtime worry journal, to-do list written down, slow breathing exercises",
+            "Screens: Manage both the light and the stimulation — wind-down routine over 60 minutes"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming in Module 3",
+          "body": "Module 2 gave you fixes. Module 3 will help you turn them into a lasting, personalised routine — and cover two important topics that are often overlooked: how your daytime habits affect night-time sleep, and when a sleep problem has gone beyond self-help and needs professional assessment.",
+          "bullets": [
+            "Lesson 15: Designing your wind-down routine",
+            "Lesson 16: Your ideal bedroom environment",
+            "Lesson 17: Daytime habits that improve night-time sleep",
+            "Lesson 18: Napping — when it helps and when it hurts",
+            "Lesson 19: Sleep trackers — useful data or anxiety machines?",
+            "Lesson 20: When to see a doctor about your sleep"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Priority Fix This Week",
+          "body": "The most impactful changes tend to come from fixing the basics first. If you haven't yet: get morning light daily, keep a consistent wake time 7 days a week, and move your last caffeine to before 2pm. These three alone can transform sleep for many people — before you change anything else.",
+          "stat": "3",
+          "statLabel": "highest-impact changes: morning light, consistent wake time, caffeine cut-off"
+        },
+        {
+          "type": "try-it",
+          "headline": "Rank Your Sleep Disruptors",
+          "body": "Looking back at Module 2, rate each disruptor from 1–3 based on how much it applies to you (3 = very relevant). Light morning: __ Light evening: __ Temperature: __ Caffeine: __ Alcohol: __ Stress/thoughts: __ Screens: __ Irregular schedule: __ Your highest scores are your priority targets for Module 3."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which three changes are considered the highest-impact starting points for most people with sleep problems?",
+          "type": "mcq",
+          "options": [
+            "Morning light, consistent wake time, and caffeine cut-off before 2pm",
+            "No screens after 8pm, a sleep supplement, and melatonin at bedtime",
+            "Exercising daily, eating dinner before 6pm, and avoiding naps",
+            "Blackout curtains, white noise, and a fixed 10pm bedtime"
+          ],
+          "correctIndex": 0,
+          "explanation": "Morning light anchors the circadian clock, a consistent wake time maintains regularity, and cutting caffeine early removes a direct biochemical sleep disruptor. These three address the most common, reversible causes of poor sleep with minimal lifestyle disruption."
+        },
+        {
+          "question": "Social jet lag of 2 or more hours has no meaningful health impact compared to shift work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that 2 hours of social jet lag is associated with a 33% higher risk of obesity, increased cardiovascular markers, and worse mood — similar in scale to moderate shift work disruption. Chronic circadian misalignment has health consequences regardless of the cause."
+        },
+        {
+          "question": "Which of the following best explains why \"night mode\" on a phone is an incomplete solution to evening screen use?",
+          "type": "mcq",
+          "options": [
+            "It reduces light-based melatonin suppression but doesn't reduce mental stimulation from content",
+            "Night mode increases red light exposure, which disrupts sleep differently",
+            "The melatonin suppression from phones is so minor that even night mode has no effect",
+            "Most people turn night mode off because the screen becomes too difficult to read"
+          ],
+          "correctIndex": 0,
+          "explanation": "Night mode addresses the biological effect (blue light reducing melatonin) but not the psychological activation caused by emotionally engaging content. Both problems need to be managed for meaningful improvement."
+        }
+      ]
+    },
+    {
+      "id": "bs-15-wind-down-routine",
+      "dayNumber": 15,
+      "moduleId": "bs-module-3",
+      "title": "Designing Your Wind-Down Routine",
+      "subtitle": "A personalised evening routine is the single most powerful habit you can build for consistent, restorative sleep.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sleep Starts Before You Get Into Bed",
+          "body": "The quality of your sleep is largely determined by what you do in the 60–90 minutes before you lie down. A consistent wind-down routine trains your brain to associate specific cues with sleep — so by the time your head hits the pillow, your nervous system is already shifting into rest mode.",
+          "stat": "60–90",
+          "statLabel": "minutes — the ideal length of a pre-sleep wind-down for most adults"
+        },
+        {
+          "type": "content",
+          "headline": "Why Routines Work",
+          "body": "Your brain is a pattern-recognition machine. When you perform the same sequence of actions every evening, those actions become conditioned cues — signals that tell your brain \"sleep is coming.\" Over time, just starting your routine begins to trigger drowsiness automatically. This is classical conditioning applied to sleep.",
+          "bullets": [
+            "Consistency matters more than the specific activities you choose",
+            "Even a 20-minute routine is significantly better than no routine at all",
+            "The routine works best when it includes a clear \"end of day\" signal (closing laptop, changing clothes)",
+            "Performing it at the same time each night strengthens the conditioning faster"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Three Phases of a Good Wind-Down",
+          "body": "Think of your wind-down in three phases, each progressively lowering stimulation. You don't need a rigid schedule — just a direction of travel towards calm.",
+          "bullets": [
+            "Phase 1 (60–90 mins before bed): End work, close email, dim lights, eat your last meal",
+            "Phase 2 (30–60 mins before bed): Low-stimulation activity — reading, light stretching, warm bath, calm conversation",
+            "Phase 3 (0–30 mins before bed): Quietest activities — breathing exercises, worry journal, gentle music, skincare, tooth brushing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Personalising Your Routine",
+          "body": "The best wind-down is one you'll actually do. Choose activities that feel genuinely relaxing to you — not ones you feel you \"should\" do. A 10-minute read and a warm shower beats an elaborate routine you abandon after three days. Start with just two or three consistent actions and build from there.",
+          "bullets": [
+            "Pick activities you genuinely enjoy — enjoyment is more sustainable than obligation",
+            "Anchor your routine to an existing habit (e.g., after brushing teeth, do 5 minutes of breathing)",
+            "A written sequence on a notepad helps you follow through on autopilot",
+            "Protect it — treat your wind-down time as non-negotiable as a work meeting"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your First Wind-Down Routine",
+          "body": "Design a 45-minute wind-down starting tonight. Write down 4–5 specific actions with times. Keep it simple and realistic. Example: 9:15 — close laptop, dim lights. 9:20 — warm shower. 9:35 — read 2 chapters. 9:55 — write 3 things I'm grateful for. 10:00 — lights out. Do this routine for 7 consecutive nights and note how falling asleep changes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does a consistent evening routine improve sleep over time?",
+          "type": "mcq",
+          "options": [
+            "The routine becomes a conditioned cue that triggers drowsiness automatically",
+            "It exhausts the body through physical activity, making sleep unavoidable",
+            "Routines reduce cortisol permanently by changing hormone baseline levels",
+            "The activities themselves directly slow the heart rate and lower body temperature"
+          ],
+          "correctIndex": 0,
+          "explanation": "Through classical conditioning, consistently performing the same sequence before bed trains the brain to associate those cues with sleep. Over days and weeks, just starting the routine begins to trigger the physiological shift towards sleep onset."
+        },
+        {
+          "question": "A wind-down routine only works if it is at least 90 minutes long.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While 60–90 minutes is ideal, even a 20-minute consistent routine is significantly better than none. The key factor is consistency — the same sequence at the same time — not the duration. A short routine done every night outperforms a long one done occasionally."
+        },
+        {
+          "question": "Which is the most important factor in choosing wind-down activities?",
+          "type": "mcq",
+          "options": [
+            "That you genuinely find them relaxing and will stick to them",
+            "That they involve no light exposure of any kind",
+            "That they are scientifically proven to reduce cortisol",
+            "That they last exactly the same duration every night"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sustainability is the critical factor. The physiological benefits of any wind-down activity are only realised if you actually do it consistently. An enjoyable routine you maintain beats an optimised one you abandon after a week."
+        }
+      ]
+    },
+    {
+      "id": "bs-16-ideal-bedroom",
+      "dayNumber": 16,
+      "moduleId": "bs-module-3",
+      "title": "Building Your Ideal Sleep Environment",
+      "subtitle": "Your bedroom environment sends powerful signals to your brain. Here's how to make it work for sleep, not against it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Bedroom Should Be a Sleep Sanctuary",
+          "body": "Your brain learns to associate places with activities. If you work in bed, scroll your phone in bed, and watch TV in bed, your brain stops associating the bedroom with sleep. This is stimulus control — one of the most effective evidence-based treatments for insomnia. The solution: make your bedroom a single-purpose space.",
+          "stat": "1",
+          "statLabel": "primary purpose your bedroom should serve — sleep (and intimacy)"
+        },
+        {
+          "type": "content",
+          "headline": "The Four Environmental Factors",
+          "body": "A good sleep environment can be described across four dimensions: temperature, light, sound, and association. Getting all four right creates a bedroom that automatically signals \"it's time to sleep\" every time you enter it.",
+          "bullets": [
+            "Temperature: 16–19°C (61–66°F) — cool but not cold. Use lighter bedding rather than heating.",
+            "Light: As dark as possible. Blackout curtains or a sleep mask eliminate even small light sources.",
+            "Sound: Silence is ideal but intermittent noise (traffic, snoring) is worse than consistent background noise.",
+            "Association: Bed = sleep only. No laptops, phones, TV, or work in bed."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Dealing With Noise",
+          "body": "Complete silence isn't always achievable — especially in cities or with a snoring partner. The problem isn't sound volume per se, but unpredictable sound changes that wake you. A consistent background sound (white noise, fan, rain sounds) masks variable environmental noise by reducing the contrast between quiet and sudden sounds.",
+          "bullets": [
+            "White noise machines reduce sleep-disrupting awakenings by 38% in one study",
+            "A simple desk fan costs very little and provides both noise masking and cooling",
+            "Pink noise (softer than white noise) is also effective and preferred by many people",
+            "Ear plugs are the simplest solution for persistent noise problems"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Technology in the Bedroom",
+          "body": "The smartphone is the single most disruptive technology in the modern bedroom. Its presence alone — even face-down, even on silent — creates a subtle mental pull. Notifications, screen glow, and the temptation to check it all fragment sleep and delay wind-down. The most effective rule: charge your phone outside the bedroom.",
+          "bullets": [
+            "Even the anticipation of a notification keeps part of the brain alert",
+            "Phones face-down still emit light that can disrupt sleep in a dark room",
+            "A cheap alarm clock removes the last excuse for a phone in the bedroom",
+            "TVs in the bedroom are associated with 30+ minutes less sleep per night on average"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Bedroom Audit: Five Changes in Five Minutes",
+          "body": "Tonight before bed, make five quick changes: (1) Check your room temperature and lower it if above 20°C. (2) Identify any light sources (standby LEDs, streetlight through curtains) and cover or block them. (3) Move your phone charger outside the bedroom. (4) Remove anything work-related from the bedside. (5) Notice how it feels to get into bed in a properly prepared environment."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"stimulus control\" in the context of sleep?",
+          "type": "mcq",
+          "options": [
+            "Training the brain to associate the bedroom only with sleep by limiting non-sleep activities there",
+            "Using specific scents or sounds to directly trigger the sleep response",
+            "Controlling the stimulation level of activities in the hour before bed",
+            "Managing stress hormones through controlled breathing exercises"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stimulus control therapy is a well-established insomnia treatment. It works by rebuilding the association between the bed/bedroom and sleep — restricting all non-sleep activities in bed so the bedroom becomes a conditioned cue for sleepiness rather than wakefulness."
+        },
+        {
+          "question": "Silence is always better than background noise for sleep quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While silence is ideal in an already quiet environment, consistent background noise (white noise, fan, rain sounds) is often better than intermittent noise. The problem is sudden sound changes, not volume per se — consistent background noise masks these changes and reduces sleep-disrupting awakenings."
+        },
+        {
+          "question": "What is the most effective way to prevent your phone from disrupting your sleep?",
+          "type": "mcq",
+          "options": [
+            "Charge it outside the bedroom entirely",
+            "Place it face-down on the bedside table",
+            "Set it to do-not-disturb mode",
+            "Turn the screen brightness to zero"
+          ],
+          "correctIndex": 0,
+          "explanation": "Charging the phone outside the bedroom removes all phone-related disruptions — light, notifications, temptation to check it, and the anticipatory alertness that comes from knowing it's nearby. All other strategies leave the phone in the room and require ongoing willpower."
+        }
+      ]
+    },
+    {
+      "id": "bs-17-daytime-habits",
+      "dayNumber": 17,
+      "moduleId": "bs-module-3",
+      "title": "Daytime Habits That Improve Night-Time Sleep",
+      "subtitle": "What you do during the day has a huge impact on how well you sleep that night. Here's what matters most.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sleep Is Built During the Day, Not Just at Night",
+          "body": "Many people try to fix poor sleep entirely with evening routines — but the foundations of good sleep are laid throughout the day. Exercise timing, light exposure, meal timing, stress management, and how much you move all directly affect your sleep drive, circadian rhythm, and ability to wind down at night.",
+          "stat": "2×",
+          "statLabel": "improvement in sleep quality seen in regular exercisers compared to sedentary individuals"
+        },
+        {
+          "type": "content",
+          "headline": "Exercise: The Most Powerful Natural Sleep Aid",
+          "body": "Regular physical activity is one of the most consistently effective interventions for sleep quality in research. Exercise increases sleep drive (adenosine buildup), reduces anxiety, improves mood, and deepens slow-wave sleep. Even a 20–30 minute walk each day measurably improves sleep quality within days.",
+          "bullets": [
+            "Any form of exercise helps — walking, swimming, resistance training, cycling",
+            "Morning or afternoon exercise is better than late evening for most people",
+            "Vigorous exercise within 2 hours of bedtime can delay sleep onset (though this varies individually)",
+            "Regular exercise reduces insomnia symptoms by 55% in clinical studies"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Food and Eating Timing",
+          "body": "Your digestive system follows its own circadian rhythm — it's most efficient earlier in the day and less so in the evening. Eating large meals close to bedtime raises body temperature, activates the digestive system, and disrupts sleep architecture. Alcohol and high-sugar foods close to bed have particularly negative effects.",
+          "bullets": [
+            "Aim to finish your last main meal 2–3 hours before bed",
+            "A small, light snack is fine if genuinely hungry (banana, small bowl of oats)",
+            "High-carbohydrate meals can slightly increase serotonin — sometimes aiding sleep if eaten earlier",
+            "Spicy and fatty foods are most disruptive — harder to digest and raise body temperature"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Managing Your Sleep Drive Through the Day",
+          "body": "Sleep drive (adenosine pressure) builds naturally throughout the day — the longer you're awake, the sleepier you become. Actions that deplete this drive during the day (excessive napping, very sedentary behaviour) mean you arrive at bedtime without enough sleep pressure to fall asleep easily.",
+          "bullets": [
+            "Avoid long naps after 3pm — they reduce sleep drive and delay night-time sleep",
+            "Physical activity builds sleep pressure more effectively than sedentary activity",
+            "Mental activity (learning, problem-solving) also increases sleep drive slightly",
+            "Consistent wake times maintain a reliable daily sleep drive rhythm"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Daytime Sleep-Building Checklist",
+          "body": "For the next 3 days, track these five daytime behaviours and score each out of 5: (1) Got morning light within 60 minutes of waking. (2) Did at least 20 minutes of physical activity. (3) Finished last main meal 2+ hours before bed. (4) Had no caffeine after 2pm. (5) Had at least 15 minutes of low-stress, calm time before bed. Track your total and notice the correlation with how well you sleep."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How does regular exercise improve sleep?",
+          "type": "mcq",
+          "options": [
+            "It increases sleep drive, reduces anxiety, and deepens slow-wave sleep",
+            "It raises cortisol levels which then drop sharply at bedtime causing sleep",
+            "It depletes blood glucose, which triggers the brain's sleep conserve mode",
+            "It primarily works by physically tiring the muscles, forcing rest"
+          ],
+          "correctIndex": 0,
+          "explanation": "Exercise improves sleep through multiple mechanisms: it increases adenosine (sleep drive) buildup, reduces anxiety and stress hormones, promotes deeper slow-wave sleep, and improves circadian rhythm strength. The benefits appear across all forms of exercise."
+        },
+        {
+          "question": "Eating a large meal immediately before bed is unlikely to affect sleep quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Large meals close to bedtime raise core body temperature (which needs to drop for sleep), activate the digestive system, and can cause acid reflux. They also send metabolic signals that conflict with the evening circadian wind-down. Finishing eating 2–3 hours before bed reduces these effects."
+        },
+        {
+          "question": "What is \"sleep drive\" (also called sleep pressure)?",
+          "type": "mcq",
+          "options": [
+            "The build-up of adenosine during waking hours that creates the urge to sleep",
+            "The motivation to maintain a consistent sleep schedule",
+            "The circadian signal that determines your natural bedtime",
+            "The body's physical tiredness after vigorous exercise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sleep drive is the accumulation of adenosine — a byproduct of brain activity — that builds from the moment you wake. Higher adenosine = more sleep pressure. Actions that manage this drive (avoiding long naps, staying physically active) help ensure you're sufficiently sleepy at bedtime."
+        }
+      ]
+    },
+    {
+      "id": "bs-18-napping",
+      "dayNumber": 18,
+      "moduleId": "bs-module-3",
+      "title": "Napping: When It Helps and When It Hurts",
+      "subtitle": "A well-timed nap can boost alertness and performance. A poorly timed one can wreck your night's sleep.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Napping Is Not One-Size-Fits-All",
+          "body": "In some cultures, an afternoon nap is a normal part of the day. In others, it's seen as laziness. The science says napping can be genuinely beneficial — but only when done correctly. Duration, timing, and your individual sleep situation all determine whether a nap helps you or hurts your sleep that night.",
+          "stat": "26",
+          "statLabel": "minutes — NASA's research-backed ideal nap duration for pilots: improves alertness by 54%"
+        },
+        {
+          "type": "content",
+          "headline": "The Benefits of Strategic Napping",
+          "body": "A well-timed short nap — often called a \"power nap\" — clears adenosine temporarily, restores alertness, improves mood and reaction time, and can even improve cardiovascular health when napping is a regular habit. Several major research studies show that a brief afternoon nap can compensate partially for a poor night's sleep.",
+          "bullets": [
+            "10–20 minute naps improve alertness for 2–3 hours without causing sleep inertia",
+            "A 90-minute nap allows a full sleep cycle including REM — better for creativity and learning",
+            "Post-lunch dip (1–3pm) is a natural circadian trough — the ideal nap window",
+            "Regular nappers (Mediterranean populations) show lower rates of cardiovascular disease"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Nap Length Problem",
+          "body": "Nap length is critical. Naps of 30–60 minutes put you into deeper slow-wave sleep, from which waking produces severe sleep inertia — that groggy, disoriented feeling that can last 20–30 minutes. Either keep naps under 20 minutes (before reaching deep sleep) or extend them to a full 90-minute cycle so you wake from light sleep.",
+          "bullets": [
+            "Under 20 minutes: light sleep only, minimal inertia, quick alertness boost",
+            "20–60 minutes: likely to enter deep sleep, wake feeling groggy",
+            "90 minutes: full cycle, wake from light sleep, feel refreshed and creative",
+            "The \"coffee nap\" — drink coffee then nap for 20 mins — times caffeine kick with waking"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When Napping Hurts",
+          "body": "For people who struggle to sleep at night, napping is often the wrong answer. Daytime napping reduces sleep drive (adenosine), making it harder to feel sufficiently sleepy at bedtime. If you have insomnia or regularly struggle to fall asleep at night, restricting naps is one of the most effective evidence-based interventions.",
+          "bullets": [
+            "Napping after 3pm is most likely to disrupt night-time sleep for most people",
+            "Naps longer than 30 minutes increase the risk of nighttime sleep disruption",
+            "If you fall asleep extremely easily during naps, you're likely carrying significant sleep debt",
+            "For insomnia: eliminate naps entirely as part of sleep restriction therapy"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Is Napping Right for You?",
+          "body": "Answer honestly: Do you usually sleep well at night and fall asleep within 20 minutes? → A strategic 10–20 minute nap before 3pm is safe and beneficial. Do you struggle to fall asleep or stay asleep at night? → Skip naps entirely for at least 2 weeks and see if night-time sleep improves. Try a \"coffee nap\" this week: drink a coffee, set a 20-minute timer, and nap immediately. Wake when the timer goes off."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the ideal nap duration to avoid sleep inertia (grogginess after waking)?",
+          "type": "mcq",
+          "options": [
+            "Under 20 minutes or a full 90 minutes",
+            "Exactly 30 minutes",
+            "45–60 minutes",
+            "Any duration under 60 minutes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Naps of 20–60 minutes often deposit you in deep slow-wave sleep, causing significant sleep inertia on waking. Under 20 minutes keeps you in lighter stages; 90 minutes allows a full cycle so you wake naturally from light sleep. Both avoid the groggy middle zone."
+        },
+        {
+          "question": "Napping is beneficial for everyone and does not affect night-time sleep.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Napping reduces adenosine (sleep drive), which can make it harder to fall asleep at your normal bedtime. For people with insomnia or chronic difficulty falling asleep, naps — particularly long or late ones — can perpetuate the problem. Sleep restriction therapy, which eliminates naps, is one of the most effective insomnia treatments."
+        },
+        {
+          "question": "What is a \"coffee nap\" and why does it work?",
+          "type": "mcq",
+          "options": [
+            "Drinking coffee then immediately napping for 20 minutes, so caffeine kicks in as you wake",
+            "Drinking coffee to stay awake instead of napping during the afternoon",
+            "A short nap taken in a coffee shop to benefit from ambient noise",
+            "Drinking decaf coffee before bed as a sleep-inducing ritual"
+          ],
+          "correctIndex": 0,
+          "explanation": "Caffeine takes about 20–30 minutes to absorb and reach the brain. By drinking coffee then immediately taking a 20-minute nap, you clear adenosine during the nap while caffeine arrives just as you wake — combining the benefits of both for maximum alertness recovery."
+        }
+      ]
+    },
+    {
+      "id": "bs-19-sleep-trackers",
+      "dayNumber": 19,
+      "moduleId": "bs-module-3",
+      "title": "Sleep Trackers: Useful Data or Anxiety Machines?",
+      "subtitle": "Wearables and apps can provide useful insights — but they can also make sleep worse. Here's how to use them wisely.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Worrying About Your Sleep Tracker Can Stop You Sleeping",
+          "body": "There's a real phenomenon called \"orthosomnia\" — anxiety caused by obsessing over sleep tracker data. People wake up, check their score, feel bad about it, and spend the day convinced they're impaired. The irony: worrying about sleep data can itself cause the sleep problems the tracker is meant to reveal.",
+          "stat": "78%",
+          "statLabel": "accuracy of consumer wearables for detecting sleep vs wake (polysomnography is the gold standard)"
+        },
+        {
+          "type": "content",
+          "headline": "What Trackers Are Good At",
+          "body": "Consumer wearables (Fitbit, Oura, Apple Watch, Whoop) are reasonably good at certain things — and poor at others. Understanding the difference helps you extract useful signal without overinterpreting noisy data.",
+          "bullets": [
+            "Good at: detecting sleep vs wake periods (roughly 78–80% accurate)",
+            "Good at: showing patterns and trends over weeks and months",
+            "Good at: tracking sleep timing and regularity",
+            "Poor at: accurately staging sleep (deep vs light vs REM) — often wrong by 30–40%"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Trackers Struggle With",
+          "body": "Sleep stage accuracy is the most significant limitation of consumer wearables. They use movement and heart rate to infer sleep stages — but can't directly measure brain activity (which is what polysomnography uses). Deep sleep and REM estimates are often unreliable and can vary wildly between devices measuring the same night.",
+          "bullets": [
+            "REM and deep sleep estimates can be off by 30–50% compared to lab measurements",
+            "Different devices often show different sleep stage results for the same night",
+            "A \"bad\" deep sleep score may simply reflect tracker error, not actual poor sleep",
+            "How you feel is still a better subjective indicator than any single night's tracker score"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Use Trackers Wisely",
+          "body": "Trackers are most useful as trend tools, not night-by-night diagnostic tools. A single night's data tells you very little. Patterns across 2–4 weeks reveal meaningful insights about your habits. The key rule: use the data to inform behaviour change, not to generate anxiety.",
+          "bullets": [
+            "Look at weekly and monthly averages, not individual nights",
+            "Use it to track regularity and timing — these are reliably measured",
+            "If your tracker is causing anxiety, take a break from it for a week",
+            "Compare how you feel against the data — use subjective wellbeing as the primary metric"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Sleep Quality Self-Rating",
+          "body": "Whether or not you use a tracker, rate your own sleep each morning on three dimensions, 1–5: (1) How refreshed do you feel right now? (2) How well do you think you slept? (3) What's your energy level? Track this for 14 days alongside any tracker data. Notice when they agree and when they diverge. Your subjective score is always valid data — don't let a gadget override it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"orthosomnia\"?",
+          "type": "mcq",
+          "options": [
+            "Anxiety or sleep disruption caused by obsessing over sleep tracker data",
+            "A clinical sleep disorder characterised by abnormal posture during sleep",
+            "The tendency to sleep in an orthopedically incorrect position",
+            "Insomnia triggered specifically by work-related stress"
+          ],
+          "correctIndex": 0,
+          "explanation": "Orthosomnia was identified in a 2017 paper describing patients who developed anxiety and disrupted sleep from obsessing over wearable sleep data. The condition illustrates that the measurement itself can become a problem if it generates more anxiety than insight."
+        },
+        {
+          "question": "Consumer sleep trackers can accurately measure sleep stages (deep, light, REM) with over 90% accuracy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consumer wearables are reasonably accurate at detecting sleep vs wake (around 78–80%) but significantly less accurate at sleep staging. REM and deep sleep estimates can vary by 30–50% from polysomnography (lab-grade brain wave measurement), the clinical gold standard."
+        },
+        {
+          "question": "What is the most valuable way to use a consumer sleep tracker?",
+          "type": "mcq",
+          "options": [
+            "To identify patterns and trends in sleep timing and duration over weeks",
+            "To precisely measure how much deep sleep you get each night",
+            "To diagnose whether you have a clinical sleep disorder",
+            "To determine the exact minute to wake up for maximum alertness"
+          ],
+          "correctIndex": 0,
+          "explanation": "Trackers are most reliable and useful as trend tools. Consistent sleep timing, week-on-week sleep duration patterns, and how lifestyle changes affect sleep over time are all meaningful signals. Single-night stage data is too unreliable to act on."
+        }
+      ]
+    },
+    {
+      "id": "bs-20-when-to-seek-help",
+      "dayNumber": 20,
+      "moduleId": "bs-module-3",
+      "title": "When to Seek Professional Help for Sleep",
+      "subtitle": "Some sleep problems go beyond lifestyle changes and need professional assessment. Here's how to tell the difference.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Not All Sleep Problems Are Lifestyle Problems",
+          "body": "The strategies in this course work well for most sleep difficulties caused by habits, environment, and lifestyle. But some sleep problems have an underlying medical or psychological cause that lifestyle changes alone won't fix — and trying to \"self-optimise\" your way through them can delay getting proper help.",
+          "stat": "30%",
+          "statLabel": "of adults experience significant insomnia symptoms at any given time"
+        },
+        {
+          "type": "content",
+          "headline": "Signs You Should See a Doctor",
+          "body": "These symptoms suggest your sleep problem may need professional assessment rather than — or alongside — lifestyle changes. If any of these apply to you, speak to a healthcare professional.",
+          "bullets": [
+            "Loud snoring, gasping, or breathing pauses during sleep (possible sleep apnoea)",
+            "Extreme daytime sleepiness despite adequate sleep time",
+            "Sleep problems persisting for more than 3 months despite lifestyle changes",
+            "Restless legs — an uncomfortable urge to move your legs, especially at night",
+            "Acting out dreams physically (kicking, shouting) — possible REM sleep behaviour disorder",
+            "Sleep problems significantly affecting your work, relationships, or mental health"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Sleep Apnoea: The Most Under-Diagnosed Sleep Disorder",
+          "body": "Sleep apnoea affects an estimated 1 billion people worldwide — but most cases are undiagnosed. It causes breathing to repeatedly stop and restart during sleep, preventing deep restorative rest and causing a cascade of health problems including high blood pressure, heart disease, diabetes, and depression.",
+          "bullets": [
+            "Common signs: loud snoring, waking with headaches, extreme daytime tiredness",
+            "Risk factors: obesity, male sex, older age, large neck circumference, family history",
+            "Diagnosis: sleep study (polysomnography or home sleep test)",
+            "Treatment: CPAP machine, positional therapy, or weight loss — all highly effective"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "CBT-I: The Gold-Standard Treatment for Insomnia",
+          "body": "If you've implemented the habits in this course and still struggle significantly, Cognitive Behavioural Therapy for Insomnia (CBT-I) is the most effective treatment available — recommended over sleeping pills by major medical guidelines. It combines sleep restriction, stimulus control, and cognitive techniques, and has lasting results without medication side effects.",
+          "bullets": [
+            "CBT-I is recommended as the first-line treatment for chronic insomnia by NHS, NICE, and AASM",
+            "More effective than sleeping pills and the benefits persist after treatment ends",
+            "Available through GPs, therapists, or via validated apps (Sleepio, Somryst)",
+            "Typically requires 6–8 sessions — either in-person or digitally"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Sleep Health Check",
+          "body": "Answer these questions honestly: (1) Do you snore loudly or have been told you stop breathing in sleep? (2) Have you had significant sleep problems for more than 3 months? (3) Do you feel dangerously sleepy during the day, even after a full night? (4) Have sleep problems significantly affected your daily life or mental health? If yes to any of these, book an appointment with your GP or healthcare provider this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first-line recommended treatment for chronic insomnia, according to major medical guidelines?",
+          "type": "mcq",
+          "options": [
+            "Cognitive Behavioural Therapy for Insomnia (CBT-I)",
+            "Prescription sleeping medication",
+            "Over-the-counter melatonin supplements",
+            "Progressive muscle relaxation and meditation apps"
+          ],
+          "correctIndex": 0,
+          "explanation": "CBT-I is recommended as the first-line treatment for chronic insomnia by the NHS, NICE (UK), and the American Academy of Sleep Medicine (AASM). It outperforms sleeping pills in long-term effectiveness and produces lasting results without dependency or side effects."
+        },
+        {
+          "question": "Loud snoring and waking with headaches are signs that may indicate sleep apnoea.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Loud snoring, gasping during sleep, waking with headaches, and extreme daytime sleepiness are classic signs of obstructive sleep apnoea. It's significantly under-diagnosed and treatable — if these symptoms apply, a sleep study referral from a GP is appropriate."
+        },
+        {
+          "question": "Which of these is NOT typically an indication that professional help is needed for sleep?",
+          "type": "mcq",
+          "options": [
+            "Needing a few nights to adjust after changing your sleep schedule",
+            "Sleep problems persisting for more than 3 months despite lifestyle changes",
+            "Extreme daytime sleepiness despite getting adequate hours of sleep",
+            "Physically acting out dreams — kicking or shouting during sleep"
+          ],
+          "correctIndex": 0,
+          "explanation": "A few nights of disrupted sleep after a schedule change is a normal, temporary adjustment. The other options — persistent insomnia, unexplained daytime sleepiness, and dream enactment — all suggest an underlying issue that warrants professional assessment."
+        }
+      ]
+    },
+    {
+      "id": "bs-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "bs-module-3",
+      "title": "Course Finale: Your Sleep for Life Plan",
+      "subtitle": "You've completed Better Sleep and a Healthier Body Clock. Here's everything you've learned — and your plan for carrying it forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Rebuilt Your Relationship With Sleep",
+          "body": "Twenty-one lessons ago, sleep was something that happened to you. Now it's something you actively create. You understand the science, you know your disruptors, and you have a personalised toolkit. That's not just knowledge — it's a foundation for better health across every area of your life.",
+          "stat": "21",
+          "statLabel": "days of sleep science, practical strategies, and habit-building — completed"
+        },
+        {
+          "type": "content",
+          "headline": "Your Complete Sleep Toolkit",
+          "body": "Everything you've learned, consolidated into your personal sleep framework.",
+          "bullets": [
+            "Understand: Sleep cycles, circadian rhythm, the 3 pillars (quantity, quality, regularity)",
+            "Light: Morning light within 60 mins of waking. Dim lights 2 hrs before bed.",
+            "Temperature: Bedroom at 16–19°C. Warm shower/bath 60–90 mins before bed.",
+            "Substances: Caffeine cut-off by 1–2pm. Avoid alcohol within 3 hours of bedtime.",
+            "Evening: 60-minute wind-down routine. Worry journal. Low-stimulation activities.",
+            "Environment: Dark, cool, quiet bedroom. Phone charged outside the room.",
+            "Daytime: Morning exercise. Finish eating 2–3 hrs before bed. No naps after 3pm.",
+            "Know your limits: Persistent problems, snoring, or extreme tiredness → see a doctor."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Three Habits That Matter Most",
+          "body": "If you take nothing else from this course, make these three habits non-negotiable. Research suggests they account for the majority of sleep improvement in people who make changes.",
+          "bullets": [
+            "1. Consistent wake time — same time every day, including weekends. This is the single most powerful sleep habit.",
+            "2. Morning light within 60 minutes of waking — anchors your body clock for the whole day.",
+            "3. A wind-down routine — even 20 minutes of consistent pre-sleep deactivation changes how quickly and deeply you sleep."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Sleep and the Rest of Your Health",
+          "body": "Better sleep doesn't just fix sleep. It improves everything connected to it — your energy, mood, focus, metabolism, immune function, physical performance, and emotional resilience. Everything else you do for your health — exercise, nutrition, stress management — works better when you sleep well. Sleep is the foundation.",
+          "stat": "100%",
+          "statLabel": "of body systems that function better with adequate, consistent sleep"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Sleep for Life Commitment",
+          "body": "Write down three things: (1) Your #1 sleep habit — the one change that made the biggest difference over this course. (2) Your consistent wake time — the time you commit to waking 7 days a week from now on. (3) One thing you'll do every evening as your wind-down anchor habit. These three commitments, kept consistently, will protect your sleep for years to come. Congratulations — you've completed the course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which single habit has the most research support as the foundation of good sleep?",
+          "type": "mcq",
+          "options": [
+            "A consistent wake time every day, including weekends",
+            "Taking melatonin at the same time each night",
+            "Exercising in the morning for at least 30 minutes",
+            "Achieving exactly 8 hours of sleep every night"
+          ],
+          "correctIndex": 0,
+          "explanation": "A consistent wake time is the most reliable anchor for the circadian rhythm and sleep drive. It is the cornerstone of sleep restriction therapy — the most effective behavioural insomnia treatment — and is recommended as the single first change for anyone improving their sleep."
+        },
+        {
+          "question": "Sleep quality affects only the body — mental health and cognitive function are not significantly impacted by sleep.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sleep profoundly affects both physical and mental health. Memory consolidation, emotional regulation, decision-making, anxiety, and depression are all directly linked to sleep quality and quantity. Poor sleep is both a symptom and a cause of most mental health conditions."
+        },
+        {
+          "question": "Which of the following best summarises the core message of this course?",
+          "type": "mcq",
+          "options": [
+            "Sleep is an active process you can improve with consistent, evidence-based habits",
+            "Most adults need at least 9 hours of sleep and should prioritise this above all else",
+            "The best way to improve sleep is to take natural supplements before bed",
+            "Sleep problems are mostly genetic and difficult to change through lifestyle alone"
+          ],
+          "correctIndex": 0,
+          "explanation": "The core message is that sleep is not passive and not fixed. Through understanding the science (circadian rhythm, sleep stages, sleep drive) and applying consistent, evidence-based habits (light, temperature, routine, timing), most people can dramatically improve their sleep quality."
+        }
+      ]
+    }
+  ]
+}

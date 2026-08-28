@@ -1,4 +1,4 @@
-/** Canonical LMS: `authorisation/server`. Railway mirror — do not add LMS features here. */
+/** Trial webhook: find user by email and link Stripe customer. LMS portal/cancel lives in `successwise-app`. */
 import { desc, eq } from 'drizzle-orm'
 import type Stripe from 'stripe'
 import { db } from '../db/index.js'

@@ -1,0 +1,1939 @@
+{
+  "ai-and-technology": {
+    "path": "/app/ai-and-technology",
+    "template": "path-catalog-A",
+    "h1": "AI & Technology",
+    "tagline": "Master AI tools, build income streams, and future-proof your career.",
+    "liveSlugs": [
+      "28-day-ai-challenge",
+      "chatgpt-for-business",
+      "claude-ai-mastery",
+      "master-gemini",
+      "claude-ai-excel",
+      "master-ai-powerpoint",
+      "master-ai-microsoft-365",
+      "prompt-engineering-mastery",
+      "ai-productivity-system",
+      "ai-automation-blueprint",
+      "ai-content-creator-accelerator",
+      "ai-side-hustle-accelerator",
+      "ai-digital-product-launch",
+      "ai-ads-accelerator",
+      "ai-filmmaking-studio"
+    ],
+    "browseBySection": [
+      {
+        "id": "ai-tools",
+        "title": "AI Tools Mastery",
+        "description": "Deep-dive courses on the world's most powerful AI tools",
+        "icon": "⚡",
+        "accent": "#2563EB",
+        "goals": [
+          "save-time",
+          "build-skills"
+        ],
+        "courses": [
+          {
+            "id": "master-chatgpt",
+            "title": "Master ChatGPT",
+            "subtitle": "The world's most popular AI assistant",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 8934,
+            "rating": 4.8,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-claude",
+            "title": "Master Claude AI",
+            "subtitle": "Most capable AI for reasoning & writing",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 1934,
+            "rating": 4.9,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "master-gemini",
+            "title": "Master Gemini",
+            "subtitle": "Google's AI built into everything you use",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 3201,
+            "rating": 4.7,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-copilot",
+            "title": "Master Microsoft Copilot",
+            "subtitle": "AI for the Microsoft ecosystem",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 2876,
+            "rating": 4.6,
+            "goals": [
+              "save-time",
+              "build-career"
+            ]
+          },
+          {
+            "id": "claude-ai-excel",
+            "title": "Master Claude AI for Excel",
+            "subtitle": "Use AI to understand, fix, and build spreadsheets",
+            "difficulty": "Beginner",
+            "duration": "15 days",
+            "learners": 812,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-perplexity",
+            "title": "Master Perplexity",
+            "subtitle": "The AI search engine that cites sources",
+            "difficulty": "Beginner",
+            "duration": "1 week",
+            "learners": 2104,
+            "rating": 4.7,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-midjourney",
+            "title": "Master Midjourney",
+            "subtitle": "World's most popular AI image generator",
+            "difficulty": "Intermediate",
+            "duration": "3 weeks",
+            "learners": 4521,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-cursor",
+            "title": "Master Cursor",
+            "subtitle": "The AI-first code editor",
+            "difficulty": "Intermediate",
+            "duration": "4 weeks",
+            "learners": 1876,
+            "rating": 4.9,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "master-flux",
+            "title": "Master Flux",
+            "subtitle": "The new benchmark for AI-generated images",
+            "difficulty": "Intermediate",
+            "duration": "2 weeks",
+            "learners": 1102,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "create-content",
+              "build-skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-business",
+        "title": "AI For Business",
+        "description": "Transform how you work, lead, and grow with AI",
+        "icon": "📈",
+        "accent": "#7C3AED",
+        "goals": [
+          "make-money",
+          "save-time",
+          "build-career",
+          "start-business"
+        ],
+        "courses": [
+          {
+            "id": "ai-marketing",
+            "title": "AI Marketing Mastery",
+            "subtitle": "Campaigns, content, and funnels on autopilot",
+            "difficulty": "Intermediate",
+            "duration": "4 weeks",
+            "learners": 3412,
+            "rating": 4.8,
+            "goals": [
+              "make-money",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-sales",
+            "title": "AI Sales Accelerator",
+            "subtitle": "Close more deals with intelligent outreach",
+            "difficulty": "Intermediate",
+            "duration": "3 weeks",
+            "learners": 2198,
+            "rating": 4.7,
+            "goals": [
+              "make-money",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-customer-service",
+            "title": "AI Customer Service",
+            "subtitle": "Build smart bots that delight customers",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 1654,
+            "rating": 4.6,
+            "goals": [
+              "make-money",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-productivity",
+            "title": "AI Productivity System",
+            "subtitle": "Get 2× the work done in half the time",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 5621,
+            "rating": 4.9,
+            "goals": [
+              "save-time",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-automation",
+            "title": "AI Automation Blueprint",
+            "subtitle": "Automate repetitive tasks and save hours daily",
+            "difficulty": "Intermediate",
+            "duration": "4 weeks",
+            "learners": 2876,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-strategy",
+            "title": "AI Business Strategy",
+            "subtitle": "Lead AI transformation in your organisation",
+            "difficulty": "Advanced",
+            "duration": "5 weeks",
+            "learners": 1201,
+            "rating": 4.9,
+            "goals": [
+              "build-career",
+              "start-business"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-creators",
+        "title": "AI For Content Creators",
+        "description": "Create more, faster — and build an audience that pays",
+        "icon": "🎨",
+        "accent": "#EA580C",
+        "goals": [
+          "create-content",
+          "make-money"
+        ],
+        "courses": [
+          {
+            "id": "ai-images-course",
+            "title": "AI Image Creation",
+            "subtitle": "Stunning visuals in seconds, not hours",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 4312,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-video-creation",
+            "title": "AI Video Creation",
+            "subtitle": "Cinematic content with no camera needed",
+            "difficulty": "Beginner",
+            "duration": "4 weeks",
+            "learners": 3198,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-influencer",
+            "title": "AI Influencer Blueprint",
+            "subtitle": "Build a faceless brand that earns passively",
+            "difficulty": "Intermediate",
+            "duration": "6 weeks",
+            "learners": 2654,
+            "rating": 4.7,
+            "goals": [
+              "make-money",
+              "create-content",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-shorts",
+            "title": "AI Short-Form Video",
+            "subtitle": "Go viral on TikTok, Reels, and YouTube Shorts",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 3876,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-youtube",
+            "title": "AI YouTube Channel",
+            "subtitle": "Build a monetised channel in 90 days",
+            "difficulty": "Intermediate",
+            "duration": "6 weeks",
+            "learners": 2341,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "make-money",
+              "create-content"
+            ]
+          },
+          {
+            "id": "ai-podcasts",
+            "title": "AI Podcast Production",
+            "subtitle": "Professional podcasts without the studio cost",
+            "difficulty": "Beginner",
+            "duration": "2 weeks",
+            "learners": 1432,
+            "rating": 4.7,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-writing",
+            "title": "AI Writing & Copywriting",
+            "subtitle": "Words that convert — written in minutes",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 5012,
+            "rating": 4.9,
+            "goals": [
+              "make-money",
+              "create-content",
+              "build-career"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-developers",
+        "title": "AI For Developers",
+        "description": "Build faster, ship more, and stay ahead of the curve",
+        "icon": "⌨️",
+        "accent": "#0891B2",
+        "goals": [
+          "build-skills",
+          "make-money",
+          "start-business",
+          "build-career"
+        ],
+        "courses": [
+          {
+            "id": "cursor-dev",
+            "title": "Cursor for Developers",
+            "subtitle": "The AI-first editor that 10× your output",
+            "difficulty": "Intermediate",
+            "duration": "4 weeks",
+            "learners": 1876,
+            "rating": 4.9,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "claude-code-dev",
+            "title": "Claude Code Mastery",
+            "subtitle": "Build real projects with the smartest AI",
+            "difficulty": "Intermediate",
+            "duration": "4 weeks",
+            "learners": 1543,
+            "rating": 4.9,
+            "isNew": true,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-agents-course",
+            "title": "Build AI Agents",
+            "subtitle": "Autonomous agents that work while you sleep",
+            "difficulty": "Advanced",
+            "duration": "6 weeks",
+            "learners": 1102,
+            "rating": 4.8,
+            "goals": [
+              "build-skills",
+              "make-money",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-automation-dev",
+            "title": "No-Code AI Automation",
+            "subtitle": "Powerful automations without writing code",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 3241,
+            "rating": 4.8,
+            "goals": [
+              "save-time",
+              "start-business"
+            ]
+          },
+          {
+            "id": "no-code-dev",
+            "title": "No-Code Development",
+            "subtitle": "Build real apps with AI — no code needed",
+            "difficulty": "Beginner",
+            "duration": "3 weeks",
+            "learners": 2876,
+            "rating": 4.7,
+            "goals": [
+              "build-skills",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-website-creation",
+            "title": "AI Website Creation",
+            "subtitle": "Launch a professional site in a weekend",
+            "difficulty": "Beginner",
+            "duration": "1 week",
+            "learners": 4231,
+            "rating": 4.8,
+            "goals": [
+              "start-business",
+              "make-money"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "success-mindset": {
+    "path": "/app/success-mindset",
+    "template": "path-catalog-A",
+    "h1": "Success Mindset",
+    "tagline": "Rewire your thinking. Build unstoppable confidence. Develop the psychology behind lasting success.",
+    "liveSlugs": [
+      "unlock-growth-mindset",
+      "confidence-accelerator",
+      "28-day-success-mindset",
+      "high-performance-accelerator",
+      "millionaire-mindset"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "calm-mind",
+        "title": "Calm Mind Accelerator",
+        "badge": "Wellbeing",
+        "badgeBg": "bg-sw-teal/20",
+        "badgeText": "text-sw-teal",
+        "headerGradient": "from-[#134e4a] to-[#0f766e]",
+        "description": "Reduce stress, improve resilience and learn practical techniques to stay calm under any pressure.",
+        "outcomes": [
+          "Stress-proof mindset",
+          "Emotional regulation",
+          "Inner peace on demand"
+        ],
+        "difficulty": "Beginner",
+        "time": "21 days · 10 min/day",
+        "learnerCount": "14,600",
+        "rating": "4.9"
+      },
+      {
+        "id": "athlete-mindset",
+        "title": "Athlete Mindset",
+        "badge": "Peak Performance",
+        "badgeBg": "bg-sw-coral/20",
+        "badgeText": "text-sw-coral",
+        "headerGradient": "from-[#9a3412] to-[#ea580c]",
+        "description": "Develop the mental strength, resilience and competitive mindset used by elite athletes to win consistently.",
+        "outcomes": [
+          "Bulletproof resilience",
+          "Competitive edge",
+          "Win under pressure"
+        ],
+        "difficulty": "Intermediate",
+        "time": "28 days · 15 min/day",
+        "learnerCount": "7,300",
+        "rating": "4.8"
+      },
+      {
+        "id": "identity-reset",
+        "title": "Identity Reset",
+        "badge": "Transformational",
+        "badgeBg": "bg-sw-purple/20",
+        "badgeText": "text-sw-purple",
+        "headerGradient": "from-[#4c1d95] to-[#7c3aed]",
+        "description": "Change the way you think, act and see yourself by building a stronger, more empowering personal identity.",
+        "outcomes": [
+          "New self-concept",
+          "Break old patterns",
+          "Become who you want to be"
+        ],
+        "difficulty": "All Levels",
+        "time": "30 days · 15 min/day",
+        "learnerCount": "8,900",
+        "rating": "4.9"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "think-better",
+        "label": "Think Better",
+        "tagline": "Sharpen your mind. Make smarter decisions.",
+        "colour": "sw-amber",
+        "bgLight": "bg-sw-amber/10",
+        "textColour": "text-sw-amber",
+        "borderColour": "border-sw-amber/30",
+        "filter": "focus",
+        "courses": [
+          {
+            "id": "critical-thinking",
+            "name": "Critical Thinking Masterclass",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Cut through noise, challenge assumptions and make sharper decisions in every area of life.",
+            "skills": [
+              "Logic",
+              "Analysis",
+              "Problem-solving"
+            ],
+            "transformation": "From reactive to intentional",
+            "learnerCount": "6,200",
+            "rating": "4.8",
+            "filters": [
+              "focus",
+              "perform"
+            ]
+          },
+          {
+            "id": "decision-making",
+            "name": "Decision Making Under Pressure",
+            "difficulty": "Intermediate",
+            "time": "2 weeks · 15 min/day",
+            "description": "Make confident, high-quality decisions even when stakes are high and time is limited.",
+            "skills": [
+              "Clarity",
+              "Confidence",
+              "Risk thinking"
+            ],
+            "transformation": "From hesitant to decisive",
+            "learnerCount": "4,800",
+            "rating": "4.7",
+            "filters": [
+              "focus",
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "mental-models",
+            "name": "Mental Models for Success",
+            "difficulty": "Intermediate",
+            "time": "4 weeks · 10 min/day",
+            "description": "Adopt the thinking frameworks used by the world's most successful people to solve any problem.",
+            "skills": [
+              "Systems thinking",
+              "Pattern recognition",
+              "Strategy"
+            ],
+            "transformation": "From stuck to strategic",
+            "learnerCount": "5,100",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "focus",
+              "perform",
+              "wealth"
+            ]
+          },
+          {
+            "id": "emotional-intelligence",
+            "name": "Emotional Intelligence",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Understand and manage your emotions to build better relationships and navigate life with more ease.",
+            "skills": [
+              "Self-awareness",
+              "Empathy",
+              "Regulation"
+            ],
+            "transformation": "From reactive to emotionally fluent",
+            "learnerCount": "7,400",
+            "rating": "4.9",
+            "filters": [
+              "confidence",
+              "calm",
+              "lead"
+            ]
+          },
+          {
+            "id": "creative-thinking",
+            "name": "Creative Thinking Unlocked",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 10 min/day",
+            "description": "Unlock your creative potential and learn how to generate breakthrough ideas on demand.",
+            "skills": [
+              "Ideation",
+              "Innovation",
+              "Lateral thinking"
+            ],
+            "transformation": "From conventional to creative",
+            "learnerCount": "3,900",
+            "rating": "4.7",
+            "filters": [
+              "focus",
+              "purpose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "feel-better",
+        "label": "Feel Better",
+        "tagline": "Reduce stress. Build resilience. Find peace.",
+        "colour": "sw-teal",
+        "bgLight": "bg-sw-teal/10",
+        "textColour": "text-sw-teal",
+        "borderColour": "border-sw-teal/30",
+        "filter": "calm",
+        "courses": [
+          {
+            "id": "stress-management",
+            "name": "Stress Management Toolkit",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 10 min/day",
+            "description": "Practical, science-backed techniques to reduce stress and feel calm even when life gets chaotic.",
+            "skills": [
+              "Calm",
+              "Breathing",
+              "Regulation"
+            ],
+            "transformation": "From overwhelmed to composed",
+            "learnerCount": "9,200",
+            "rating": "4.9",
+            "filters": [
+              "calm"
+            ]
+          },
+          {
+            "id": "happiness-blueprint",
+            "name": "The Happiness Blueprint",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Build a genuinely happier life by rewiring your relationship with success, expectation, and gratitude.",
+            "skills": [
+              "Joy",
+              "Perspective",
+              "Meaning"
+            ],
+            "transformation": "From chasing to appreciating",
+            "learnerCount": "11,500",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "purpose"
+            ]
+          },
+          {
+            "id": "mindfulness",
+            "name": "Mindfulness for Modern Life",
+            "difficulty": "Beginner",
+            "time": "21 days · 5 min/day",
+            "description": "Learn to be fully present, reduce mental noise and find genuine stillness in a distracted world.",
+            "skills": [
+              "Presence",
+              "Focus",
+              "Peace"
+            ],
+            "transformation": "From distracted to present",
+            "learnerCount": "12,300",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "focus"
+            ]
+          },
+          {
+            "id": "gratitude",
+            "name": "The Gratitude Habit",
+            "difficulty": "Beginner",
+            "time": "1 week · 5 min/day",
+            "description": "A simple, powerful daily practice that rewires your brain for positivity, optimism and abundance.",
+            "skills": [
+              "Gratitude",
+              "Optimism",
+              "Habit"
+            ],
+            "transformation": "From scarcity to abundance",
+            "learnerCount": "8,700",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "calm",
+              "wealth"
+            ]
+          },
+          {
+            "id": "resilience",
+            "name": "Resilience Training",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 15 min/day",
+            "description": "Bounce back faster from setbacks, adapt to change and build the mental toughness that success requires.",
+            "skills": [
+              "Resilience",
+              "Grit",
+              "Adaptability"
+            ],
+            "transformation": "From fragile to unbreakable",
+            "learnerCount": "7,600",
+            "rating": "4.8",
+            "filters": [
+              "calm",
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "anxiety-toolkit",
+            "name": "Overcoming Anxiety",
+            "difficulty": "Beginner",
+            "time": "3 weeks · 10 min/day",
+            "description": "Understand what drives anxiety and learn practical tools to manage it, reduce it and move forward.",
+            "skills": [
+              "Calm",
+              "Courage",
+              "Control"
+            ],
+            "transformation": "From anxious to grounded",
+            "learnerCount": "10,100",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "confidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "perform-better",
+        "label": "Perform Better",
+        "tagline": "Build habits. Sharpen focus. Achieve more.",
+        "colour": "sw-blue",
+        "bgLight": "bg-sw-blue/10",
+        "textColour": "text-sw-blue",
+        "borderColour": "border-sw-blue/30",
+        "filter": "perform",
+        "courses": [
+          {
+            "id": "deep-focus",
+            "name": "Deep Focus Protocol",
+            "difficulty": "All Levels",
+            "time": "2 weeks · 10 min/day",
+            "description": "Eliminate distractions and build the ability to concentrate deeply for 2–4 hours without interruption.",
+            "skills": [
+              "Focus",
+              "Concentration",
+              "Flow state"
+            ],
+            "transformation": "From scattered to laser-focused",
+            "learnerCount": "8,900",
+            "rating": "4.8",
+            "filters": [
+              "focus",
+              "perform"
+            ]
+          },
+          {
+            "id": "atomic-habits",
+            "name": "Atomic Habits Accelerator",
+            "difficulty": "Beginner",
+            "time": "4 weeks · 10 min/day",
+            "description": "Build the tiny daily habits that compound into extraordinary results over weeks, months and years.",
+            "skills": [
+              "Habit building",
+              "Consistency",
+              "Momentum"
+            ],
+            "transformation": "From inconsistent to unstoppable",
+            "learnerCount": "15,200",
+            "rating": "4.9",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "morning-routine",
+            "name": "The Perfect Morning Routine",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 15 min/day",
+            "description": "Design a morning routine that sets the tone for a focused, energised and productive day — every day.",
+            "skills": [
+              "Ritual",
+              "Energy",
+              "Intention"
+            ],
+            "transformation": "From chaotic mornings to intentional days",
+            "learnerCount": "13,800",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "productivity",
+            "name": "Peak Productivity System",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 15 min/day",
+            "description": "A complete system for doing more of what matters and less of what doesn't — without burning out.",
+            "skills": [
+              "Time mastery",
+              "Prioritisation",
+              "Energy management"
+            ],
+            "transformation": "From busy to genuinely productive",
+            "learnerCount": "11,700",
+            "rating": "4.8",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "discipline",
+            "name": "Discipline Over Motivation",
+            "difficulty": "Intermediate",
+            "time": "3 weeks · 15 min/day",
+            "description": "Stop relying on motivation and build the discipline that keeps you moving even when you don't feel like it.",
+            "skills": [
+              "Discipline",
+              "Willpower",
+              "Follow-through"
+            ],
+            "transformation": "From motivation-dependent to self-directed",
+            "learnerCount": "9,400",
+            "rating": "4.8",
+            "filters": [
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "execution",
+            "name": "Flawless Execution",
+            "difficulty": "Intermediate",
+            "time": "2 weeks · 15 min/day",
+            "description": "Bridge the gap between knowing and doing — turn your goals and ideas into consistent, measurable action.",
+            "skills": [
+              "Action bias",
+              "Follow-through",
+              "Accountability"
+            ],
+            "transformation": "From planning to doing",
+            "learnerCount": "6,100",
+            "rating": "4.7",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "build-wealth-mindset",
+        "label": "Build Wealth Mindset",
+        "tagline": "Change how you think about money and opportunity.",
+        "colour": "sw-success",
+        "bgLight": "bg-sw-success/10",
+        "textColour": "text-sw-success",
+        "borderColour": "border-sw-success/30",
+        "filter": "wealth",
+        "courses": [
+          {
+            "id": "money-psychology",
+            "name": "Money Psychology",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Understand your relationship with money, break limiting beliefs and build a healthier financial self-image.",
+            "skills": [
+              "Money mindset",
+              "Abundance",
+              "Wealth thinking"
+            ],
+            "transformation": "From money fear to money confidence",
+            "learnerCount": "7,800",
+            "rating": "4.8",
+            "filters": [
+              "wealth"
+            ]
+          },
+          {
+            "id": "abundance-mindset",
+            "name": "Abundance Mindset",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 10 min/day",
+            "description": "Shift from scarcity thinking to an abundance mindset that attracts opportunity and opens new doors.",
+            "skills": [
+              "Abundance",
+              "Opportunity",
+              "Gratitude"
+            ],
+            "transformation": "From scarcity to abundance",
+            "learnerCount": "9,200",
+            "rating": "4.9",
+            "filters": [
+              "wealth",
+              "calm"
+            ]
+          },
+          {
+            "id": "financial-confidence",
+            "name": "Financial Confidence",
+            "difficulty": "Beginner",
+            "time": "3 weeks · 15 min/day",
+            "description": "Build the confidence and clarity to make good financial decisions and take control of your financial future.",
+            "skills": [
+              "Clarity",
+              "Confidence",
+              "Decision-making"
+            ],
+            "transformation": "From financially anxious to financially empowered",
+            "learnerCount": "5,500",
+            "rating": "4.7",
+            "isNew": true,
+            "filters": [
+              "wealth",
+              "confidence"
+            ]
+          },
+          {
+            "id": "entrepreneur-mindset",
+            "name": "Entrepreneur Mindset",
+            "difficulty": "Intermediate",
+            "time": "4 weeks · 15 min/day",
+            "description": "Think like a founder. Learn how successful entrepreneurs approach risk, failure, creativity and growth.",
+            "skills": [
+              "Risk tolerance",
+              "Opportunity thinking",
+              "Resilience"
+            ],
+            "transformation": "From employee thinking to owner thinking",
+            "learnerCount": "8,100",
+            "rating": "4.8",
+            "filters": [
+              "wealth",
+              "perform"
+            ]
+          },
+          {
+            "id": "opportunity-thinking",
+            "name": "Opportunity Thinking",
+            "difficulty": "All Levels",
+            "time": "2 weeks · 10 min/day",
+            "description": "Train your brain to spot opportunities others miss and have the courage and clarity to act on them.",
+            "skills": [
+              "Pattern recognition",
+              "Boldness",
+              "Action"
+            ],
+            "transformation": "From overlooking to capitalising",
+            "learnerCount": "4,300",
+            "rating": "4.7",
+            "filters": [
+              "wealth",
+              "focus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lead-better",
+        "label": "Lead Better",
+        "tagline": "Communicate powerfully. Influence with integrity.",
+        "colour": "sw-coral",
+        "bgLight": "bg-sw-coral/10",
+        "textColour": "text-sw-coral",
+        "borderColour": "border-sw-coral/30",
+        "filter": "lead",
+        "courses": [
+          {
+            "id": "leadership",
+            "name": "Leadership from Within",
+            "difficulty": "Intermediate",
+            "time": "4 weeks · 15 min/day",
+            "description": "Develop the presence, empathy and strategic thinking that defines truly great leaders.",
+            "skills": [
+              "Leadership",
+              "Vision",
+              "Empathy"
+            ],
+            "transformation": "From manager to inspiring leader",
+            "learnerCount": "6,400",
+            "rating": "4.8",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "communication",
+            "name": "High-Impact Communication",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Speak with clarity, confidence and conviction in every situation — from 1:1s to rooms of 1,000.",
+            "skills": [
+              "Clarity",
+              "Confidence",
+              "Connection"
+            ],
+            "transformation": "From hesitant to compelling",
+            "learnerCount": "10,200",
+            "rating": "4.9",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "influence",
+            "name": "The Art of Influence",
+            "difficulty": "Intermediate",
+            "time": "3 weeks · 15 min/day",
+            "description": "Ethically persuade, motivate and inspire people to take action and align with your vision.",
+            "skills": [
+              "Influence",
+              "Persuasion",
+              "Connection"
+            ],
+            "transformation": "From overlooked to influential",
+            "learnerCount": "5,900",
+            "rating": "4.7",
+            "isNew": true,
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "negotiation",
+            "name": "Confident Negotiation",
+            "difficulty": "Intermediate",
+            "time": "2 weeks · 15 min/day",
+            "description": "Get what you want without burning bridges — a practical system for negotiating anything with confidence.",
+            "skills": [
+              "Negotiation",
+              "Confidence",
+              "Strategy"
+            ],
+            "transformation": "From settling to winning",
+            "learnerCount": "4,700",
+            "rating": "4.7",
+            "filters": [
+              "lead",
+              "confidence",
+              "wealth"
+            ]
+          },
+          {
+            "id": "public-speaking",
+            "name": "Fear-Free Public Speaking",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Eliminate the fear of public speaking and develop a powerful, authentic presence in front of any audience.",
+            "skills": [
+              "Confidence",
+              "Presence",
+              "Delivery"
+            ],
+            "transformation": "From terrified to captivating",
+            "learnerCount": "8,600",
+            "rating": "4.9",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "become-your-best",
+        "label": "Become Your Best",
+        "tagline": "Live with purpose. Grow without limits.",
+        "colour": "sw-purple",
+        "bgLight": "bg-sw-purple/10",
+        "textColour": "text-sw-purple",
+        "borderColour": "border-sw-purple/30",
+        "filter": "purpose",
+        "courses": [
+          {
+            "id": "find-your-purpose",
+            "name": "Find Your Purpose",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 15 min/day",
+            "description": "Discover what truly matters to you, align your life with your values and build a sense of deep meaning.",
+            "skills": [
+              "Clarity",
+              "Meaning",
+              "Values"
+            ],
+            "transformation": "From drifting to directed",
+            "learnerCount": "9,800",
+            "rating": "4.9",
+            "filters": [
+              "purpose"
+            ]
+          },
+          {
+            "id": "identity-blueprint",
+            "name": "Identity Blueprint",
+            "difficulty": "All Levels",
+            "time": "4 weeks · 15 min/day",
+            "description": "Decide who you want to be — and systematically become that person through daily identity-building practices.",
+            "skills": [
+              "Identity",
+              "Self-belief",
+              "Change"
+            ],
+            "transformation": "From who I am to who I choose to be",
+            "learnerCount": "7,300",
+            "rating": "4.8",
+            "filters": [
+              "purpose",
+              "confidence"
+            ]
+          },
+          {
+            "id": "vision",
+            "name": "Vision & Life Design",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 20 min/day",
+            "description": "Design a compelling vision for your life and build the beliefs and plans needed to make it real.",
+            "skills": [
+              "Vision",
+              "Planning",
+              "Belief"
+            ],
+            "transformation": "From vague to vivid future",
+            "learnerCount": "6,600",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "purpose",
+              "wealth"
+            ]
+          },
+          {
+            "id": "goal-setting",
+            "name": "Goal Achievement System",
+            "difficulty": "Beginner",
+            "time": "2 weeks · 10 min/day",
+            "description": "A proven system for setting goals that actually stick and building the momentum to achieve them.",
+            "skills": [
+              "Goal setting",
+              "Momentum",
+              "Tracking"
+            ],
+            "transformation": "From setting to achieving",
+            "learnerCount": "11,400",
+            "rating": "4.8",
+            "filters": [
+              "purpose",
+              "perform"
+            ]
+          },
+          {
+            "id": "personal-growth",
+            "name": "Lifelong Growth Mindset",
+            "difficulty": "All Levels",
+            "time": "3 weeks · 10 min/day",
+            "description": "Develop a deep love of learning and a belief that every challenge is an opportunity to grow.",
+            "skills": [
+              "Growth mindset",
+              "Curiosity",
+              "Resilience"
+            ],
+            "transformation": "From fixed to endlessly growing",
+            "learnerCount": "8,200",
+            "rating": "4.9",
+            "filters": [
+              "purpose",
+              "perform",
+              "confidence"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "career": {
+    "path": "/app/career",
+    "template": "path-catalog-A",
+    "h1": "Career",
+    "tagline": "Level up your professional life — from getting promoted to pivoting into something new.",
+    "liveSlugs": [
+      "28-day-career-accelerator",
+      "squiggly-career-navigator",
+      "deep-work-career-focus",
+      "salary-promotion-playbook"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "career-growth-accelerator",
+        "title": "Career Growth Accelerator",
+        "badge": "Most Popular",
+        "badgeBg": "bg-sw-blue/20",
+        "badgeText": "text-sw-blue",
+        "headerGradient": "from-[#0f1f4a] to-[#2563eb]",
+        "description": "Build the skills, confidence and habits that help you stand out, progress faster and unlock new career opportunities — starting in your very next working day.",
+        "outcomes": [
+          "Get recognised and rewarded for your work",
+          "Build executive presence others notice",
+          "Create a clear career acceleration plan"
+        ],
+        "difficulty": "All Levels",
+        "time": "4 weeks · 15 min/day",
+        "learnerCount": "21,400",
+        "rating": "4.9",
+        "isHero": true
+      },
+      {
+        "id": "future-proof-ai",
+        "title": "Future-Proof Your Career with AI",
+        "badge": "Trending",
+        "badgeBg": "bg-emerald-100",
+        "badgeText": "text-emerald-700",
+        "headerGradient": "from-[#064e3b] to-[#059669]",
+        "description": "Learn how to use AI tools to become more productive, valuable and prepared for the future of work — before your colleagues do.",
+        "outcomes": [
+          "Use AI to do 3× more in half the time",
+          "Become the go-to AI person in your team",
+          "Future-proof your role from automation"
+        ],
+        "difficulty": "All Levels",
+        "time": "3 weeks · 10 min/day",
+        "learnerCount": "14,800",
+        "rating": "4.9",
+        "isHero": false
+      },
+      {
+        "id": "promotion-accelerator",
+        "title": "Promotion Accelerator",
+        "badge": "Career Favourite",
+        "badgeBg": "bg-sw-purple/20",
+        "badgeText": "text-sw-purple",
+        "headerGradient": "from-[#4c1d95] to-[#7c3aed]",
+        "description": "Develop the communication, visibility and professional skills that help you earn your next promotion — and make it impossible to overlook you.",
+        "outcomes": [
+          "Know exactly what your manager needs to see",
+          "Own your performance reviews",
+          "Build relationships that open doors"
+        ],
+        "difficulty": "Intermediate",
+        "time": "4 weeks · 15 min/day",
+        "learnerCount": "12,600",
+        "rating": "4.8",
+        "isHero": false
+      },
+      {
+        "id": "salary-negotiation-masterclass",
+        "title": "Salary Negotiation Masterclass",
+        "badge": "High Impact",
+        "badgeBg": "bg-sw-amber/20",
+        "badgeText": "text-sw-amber",
+        "headerGradient": "from-[#713f12] to-[#d97706]",
+        "description": "Learn practical negotiation techniques to confidently communicate your value and improve your earning potential — in your current role or your next one.",
+        "outcomes": [
+          "Know your market value with confidence",
+          "Use the exact scripts that work",
+          "Negotiate without fear or awkwardness"
+        ],
+        "difficulty": "All Levels",
+        "time": "2 weeks · 10 min/day",
+        "learnerCount": "9,200",
+        "rating": "4.9",
+        "isHero": false
+      },
+      {
+        "id": "workplace-confidence-accelerator",
+        "title": "Workplace Confidence Accelerator",
+        "badge": "Life Changing",
+        "badgeBg": "bg-sw-teal/20",
+        "badgeText": "text-sw-teal",
+        "headerGradient": "from-[#0e4a4a] to-[#0d9488]",
+        "description": "Overcome imposter syndrome, communicate with authority and perform at your best — even in the most high-pressure professional environments.",
+        "outcomes": [
+          "Eliminate imposter syndrome for good",
+          "Speak up confidently in any room",
+          "Project quiet authority and presence"
+        ],
+        "difficulty": "All Levels",
+        "time": "3 weeks · 10 min/day",
+        "learnerCount": "16,900",
+        "rating": "4.9",
+        "isHero": false
+      },
+      {
+        "id": "leadership-accelerator",
+        "title": "Leadership Accelerator",
+        "badge": "Editor's Choice",
+        "badgeBg": "bg-sw-coral/20",
+        "badgeText": "text-sw-coral",
+        "headerGradient": "from-[#7f1d1d] to-[#dc2626]",
+        "description": "Build the leadership, communication and decision-making skills needed to lead teams, manage up and create greater impact at every level.",
+        "outcomes": [
+          "Lead teams with confidence and clarity",
+          "Make faster, better decisions under pressure",
+          "Build a reputation as a trusted leader"
+        ],
+        "difficulty": "Intermediate",
+        "time": "5 weeks · 15 min/day",
+        "learnerCount": "8,400",
+        "rating": "4.8",
+        "isHero": true
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "career-planning",
+        "name": "Career Planning & Direction",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs",
+        "description": "Clarify where you want to go and build a practical roadmap that takes you there — without leaving it to chance.",
+        "skills": [
+          "Goal setting",
+          "Career mapping",
+          "Vision building"
+        ],
+        "transformation": "You'll have a clear 12-month career plan and daily actions to move toward it.",
+        "learnerCount": "8,200",
+        "rating": "4.8",
+        "filters": [
+          "all",
+          "promoted"
+        ]
+      },
+      {
+        "id": "professional-communication-foundations",
+        "name": "Professional Communication Foundations",
+        "difficulty": "Beginner",
+        "time": "6 lessons · 2.5 hrs",
+        "description": "Master the fundamentals of clear, confident communication that builds credibility and trust in every professional interaction.",
+        "skills": [
+          "Active listening",
+          "Written communication",
+          "Tone & clarity"
+        ],
+        "transformation": "You'll communicate with clarity and confidence in meetings, emails and conversations.",
+        "learnerCount": "11,400",
+        "rating": "4.9",
+        "filters": [
+          "all",
+          "communicate"
+        ]
+      },
+      {
+        "id": "time-mastery",
+        "name": "Time Mastery for Professionals",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs",
+        "description": "Reclaim your time, eliminate energy drains and build the daily systems that let high performers consistently do their best work.",
+        "skills": [
+          "Prioritisation",
+          "Deep work",
+          "Energy management"
+        ],
+        "transformation": "You'll finish each week having moved the needle on what actually matters.",
+        "learnerCount": "9,700",
+        "rating": "4.8",
+        "filters": [
+          "all",
+          "promoted"
+        ]
+      },
+      {
+        "id": "workplace-productivity",
+        "name": "Workplace Productivity System",
+        "difficulty": "All Levels",
+        "time": "4 lessons · 1.5 hrs",
+        "description": "Build a reliable productivity system that keeps you organised, focused and consistently ahead — without working more hours.",
+        "skills": [
+          "Task management",
+          "Focus systems",
+          "Output quality"
+        ],
+        "transformation": "You'll get more done in less time and feel in control of your workload.",
+        "learnerCount": "7,300",
+        "rating": "4.7",
+        "filters": [
+          "all",
+          "promoted"
+        ]
+      },
+      {
+        "id": "personal-brand-builder",
+        "name": "Personal Brand Builder",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs",
+        "description": "Build a professional reputation that opens doors — online and in person — so the right people know your name for the right reasons.",
+        "skills": [
+          "LinkedIn presence",
+          "Reputation building",
+          "Visibility strategy"
+        ],
+        "transformation": "You'll be known as a go-to expert in your field.",
+        "learnerCount": "6,800",
+        "rating": "4.8",
+        "isNew": true,
+        "filters": [
+          "all",
+          "earn-more",
+          "promoted"
+        ]
+      },
+      {
+        "id": "professional-relationships",
+        "name": "Professional Relationships",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs",
+        "description": "Build authentic professional relationships that support your career long-term — not just when you need something.",
+        "skills": [
+          "Relationship building",
+          "Trust",
+          "Collaboration"
+        ],
+        "transformation": "You'll have a strong professional network that supports your career goals.",
+        "learnerCount": "5,600",
+        "rating": "4.7",
+        "filters": [
+          "all",
+          "promoted"
+        ]
+      }
+    ]
+  },
+  "business": {
+    "path": "/app/business",
+    "template": "path-catalog-B",
+    "h1": "Business",
+    "tagline": "Start, grow, and scale your business — from first idea to sustainable income",
+    "liveSlugs": [
+      "entrepreneurial-mindset",
+      "find-your-profitable-idea",
+      "customer-research-validation",
+      "design-your-business-model",
+      "build-test-your-mvp",
+      "create-irresistible-offer",
+      "pricing-monetisation-mastery",
+      "positioning-marketing-acquisition",
+      "sales-persuasion-negotiation",
+      "execution-founder-productivity",
+      "systems-delegation-operations",
+      "leadership-scaling-building-value"
+    ],
+    "comingSoonCards": [
+      {
+        "name": "Find Your Business Idea",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Validate Before You Build",
+        "difficulty": "Beginner",
+        "time": "4 lessons · 1.5 hrs"
+      },
+      {
+        "name": "Launch Your Side Hustle",
+        "difficulty": "Beginner",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "First 10 Customers",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Social Media for Business",
+        "difficulty": "Beginner",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Email Marketing Fundamentals",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Sales Without Sleaze",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Pricing Strategy Masterclass",
+        "difficulty": "Intermediate",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Hiring Your First Team",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Systems & Automation",
+        "difficulty": "Intermediate",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Financial Management for Founders",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Build a Personal Brand",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Content Marketing Engine",
+        "difficulty": "All Levels",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "Freelancing Freedom",
+        "difficulty": "Beginner",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Digital Product Creation",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Passive Income Streams",
+        "difficulty": "Intermediate",
+        "time": "5 lessons · 2 hrs"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "start",
+        "label": "🟢 Start",
+        "title": "Start",
+        "subtitle": "Validate your idea, write your plan and make your first sale.",
+        "colour": "text-emerald-700",
+        "bgLight": "bg-emerald-50",
+        "border": "border-emerald-200",
+        "dot": "bg-emerald-500"
+      },
+      {
+        "id": "grow",
+        "label": "🔵 Grow",
+        "title": "Grow",
+        "subtitle": "Attract more customers and build your brand.",
+        "colour": "text-sw-blue",
+        "bgLight": "bg-sw-blue-light",
+        "border": "border-sw-blue-border",
+        "dot": "bg-sw-blue"
+      },
+      {
+        "id": "sell",
+        "label": "🔴 Sell",
+        "title": "Sell",
+        "subtitle": "Build offers, close with confidence and grow revenue.",
+        "colour": "text-red-700",
+        "bgLight": "bg-red-50",
+        "border": "border-red-200",
+        "dot": "bg-red-500"
+      },
+      {
+        "id": "scale",
+        "label": "⚡ Scale",
+        "title": "Scale",
+        "subtitle": "Automate, hire and build systems that grow without you.",
+        "colour": "text-amber-700",
+        "bgLight": "bg-amber-50",
+        "border": "border-amber-200",
+        "dot": "bg-sw-amber"
+      },
+      {
+        "id": "operate",
+        "label": "🟡 Operate",
+        "title": "Operate",
+        "subtitle": "Run your business with focus, clarity and efficiency.",
+        "colour": "text-teal-700",
+        "bgLight": "bg-teal-50",
+        "border": "border-teal-200",
+        "dot": "bg-sw-teal"
+      },
+      {
+        "id": "monetise",
+        "label": "💜 Monetise",
+        "title": "Monetise",
+        "subtitle": "Create scalable income streams beyond client work.",
+        "colour": "text-purple-700",
+        "bgLight": "bg-purple-50",
+        "border": "border-purple-200",
+        "dot": "bg-sw-purple"
+      }
+    ]
+  },
+  "health": {
+    "path": "/app/health",
+    "template": "path-catalog-A",
+    "h1": "Health",
+    "tagline": "Optimise your sleep, nutrition, fitness, and mental wellbeing — one micro-lesson at a time.",
+    "liveSlugs": [
+      "better-sleep",
+      "living-longer",
+      "how-the-body-ages",
+      "everyday-movement",
+      "strength-fitness",
+      "eat-well-live-well",
+      "your-metabolic-health",
+      "managing-stress-resilience",
+      "brain-health-memory"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "habits-challenge",
+        "title": "28-Day Healthy Habits Challenge",
+        "badge": "Most Popular",
+        "badgeBg": "bg-teal-600/20",
+        "badgeText": "text-teal-100",
+        "description": "Build simple daily habits that improve your health, energy and wellbeing — one small step at a time over 28 days.",
+        "difficulty": "Beginner",
+        "time": "28 days · 10 min/day",
+        "outcomes": [
+          "A consistent daily health habit that sticks",
+          "More energy and better mood within 2 weeks",
+          "A personalised wellness routine you enjoy"
+        ],
+        "rating": "4.9",
+        "learnerCount": "17,800",
+        "headerGradient": "from-[#070e12] to-[#0d9488]"
+      },
+      {
+        "id": "sleep-optimisation",
+        "title": "Sleep Optimisation Accelerator",
+        "badge": "Editor's Choice",
+        "badgeBg": "bg-indigo-600/20",
+        "badgeText": "text-indigo-100",
+        "description": "Learn science-backed strategies to improve your sleep quality and wake up feeling genuinely refreshed.",
+        "difficulty": "All Levels",
+        "time": "3 weeks · 10 min/day",
+        "outcomes": [
+          "A restful evening routine that signals sleep",
+          "Waking up with natural energy — not dread",
+          "A bedroom environment optimised for deep rest"
+        ],
+        "rating": "4.9",
+        "learnerCount": "14,200",
+        "headerGradient": "from-[#0f0a2e] to-[#4338ca]"
+      },
+      {
+        "id": "energy-accelerator",
+        "title": "Energy Accelerator",
+        "badge": "Trending",
+        "badgeBg": "bg-amber-600/20",
+        "badgeText": "text-amber-100",
+        "description": "Discover practical ways to improve your daily energy without relying on caffeine, willpower or quick fixes.",
+        "difficulty": "All Levels",
+        "time": "3 weeks · 10 min/day",
+        "outcomes": [
+          "Sustained natural energy throughout the day",
+          "Reduced reliance on caffeine and stimulants",
+          "A personalised energy management strategy"
+        ],
+        "rating": "4.8",
+        "learnerCount": "12,600",
+        "headerGradient": "from-[#1a0a00] to-[#d97706]"
+      },
+      {
+        "id": "stress-resilience",
+        "title": "Stress & Resilience Masterclass",
+        "badge": "Wellbeing",
+        "badgeBg": "bg-rose-600/20",
+        "badgeText": "text-rose-100",
+        "description": "Reduce stress, build resilience and improve your emotional wellbeing with practical daily practices.",
+        "difficulty": "All Levels",
+        "time": "4 weeks · 10 min/day",
+        "outcomes": [
+          "A daily stress-reduction practice you can rely on",
+          "Greater emotional resilience in difficult moments",
+          "Tools to feel calmer and more in control"
+        ],
+        "rating": "4.9",
+        "learnerCount": "11,400",
+        "headerGradient": "from-[#1a0510] to-[#e11d48]"
+      },
+      {
+        "id": "mental-clarity",
+        "title": "Mental Clarity & Focus",
+        "badge": "Brain Health",
+        "badgeBg": "bg-teal-600/20",
+        "badgeText": "text-teal-100",
+        "description": "Improve your concentration, cognitive performance and mental clarity through evidence-based daily habits.",
+        "difficulty": "All Levels",
+        "time": "3 weeks · 10 min/day",
+        "outcomes": [
+          "Sharper focus and reduced mental fog",
+          "Daily habits that support brain health",
+          "A morning routine that sets up cognitive performance"
+        ],
+        "rating": "4.8",
+        "learnerCount": "9,800",
+        "headerGradient": "from-[#042f2e] to-[#0d9488]"
+      },
+      {
+        "id": "healthy-lifestyle",
+        "title": "Healthy Lifestyle Accelerator",
+        "badge": "Transformation",
+        "badgeBg": "bg-emerald-600/20",
+        "badgeText": "text-emerald-100",
+        "description": "Create sustainable routines that support long-term health and wellbeing — built around your real life.",
+        "difficulty": "All Levels",
+        "time": "6 weeks · 10 min/day",
+        "outcomes": [
+          "A personalised healthy routine that fits your life",
+          "Sustainable habits across sleep, nutrition and movement",
+          "A healthier relationship with your body and energy"
+        ],
+        "rating": "4.9",
+        "learnerCount": "13,200",
+        "headerGradient": "from-[#052e16] to-[#059669]"
+      },
+      {
+        "id": "nutrition-fundamentals",
+        "title": "Nutrition Fundamentals",
+        "badge": "Popular",
+        "badgeBg": "bg-green-600/20",
+        "badgeText": "text-green-100",
+        "description": "Learn the foundations of healthy eating and build better nutritional habits that last — without strict dieting.",
+        "difficulty": "Beginner",
+        "time": "3 weeks · 10 min/day",
+        "outcomes": [
+          "A healthier relationship with food and eating",
+          "Simple meal planning habits you can maintain",
+          "A clear understanding of nutrition fundamentals"
+        ],
+        "rating": "4.7",
+        "learnerCount": "10,400",
+        "headerGradient": "from-[#1a2e0a] to-[#65a30d]"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "sleep",
+        "label": "🌙 Sleep",
+        "title": "Sleep",
+        "subtitle": "Rest better, wake energised and recover fully.",
+        "colour": "text-indigo-700",
+        "bgLight": "bg-indigo-50",
+        "border": "border-indigo-200",
+        "dot": "bg-indigo-500"
+      },
+      {
+        "id": "nutrition",
+        "label": "🥦 Nutrition",
+        "title": "Nutrition",
+        "subtitle": "Build a healthier, simpler relationship with food.",
+        "colour": "text-sw-emerald",
+        "bgLight": "bg-emerald-50",
+        "border": "border-emerald-200",
+        "dot": "bg-sw-emerald"
+      },
+      {
+        "id": "fitness",
+        "label": "💪 Fitness",
+        "title": "Fitness",
+        "subtitle": "Build movement habits that fit real life.",
+        "colour": "text-sw-coral",
+        "bgLight": "bg-orange-50",
+        "border": "border-orange-200",
+        "dot": "bg-sw-coral"
+      },
+      {
+        "id": "mental-wellbeing",
+        "label": "🧘 Mental Wellbeing",
+        "title": "Mental Wellbeing",
+        "subtitle": "Reduce stress, build resilience and find calm.",
+        "colour": "text-purple-700",
+        "bgLight": "bg-purple-50",
+        "border": "border-purple-200",
+        "dot": "bg-sw-purple"
+      },
+      {
+        "id": "energy-focus",
+        "label": "⚡ Energy & Focus",
+        "title": "Energy & Focus",
+        "subtitle": "Improve your daily energy and mental clarity.",
+        "colour": "text-amber-700",
+        "bgLight": "bg-amber-50",
+        "border": "border-amber-200",
+        "dot": "bg-sw-amber"
+      },
+      {
+        "id": "healthy-living",
+        "label": "🌿 Healthy Living",
+        "title": "Healthy Living",
+        "subtitle": "Sustainable routines for long-term wellbeing.",
+        "colour": "text-teal-700",
+        "bgLight": "bg-teal-50",
+        "border": "border-teal-200",
+        "dot": "bg-sw-teal"
+      }
+    ]
+  },
+  "financial-wellbeing": {
+    "path": "/app/financial-wellbeing",
+    "template": "path-catalog-C",
+    "h1": "Financial Wellbeing",
+    "tagline": "Master your money mindset, build real habits, and create lasting financial confidence",
+    "heroEmoji": "💰",
+    "heroGradient": "from-amber-400 to-amber-600",
+    "courseCountLabel": "16 Courses",
+    "emptyCopy": {
+      "title": "No courses started yet",
+      "sub": "Courses in this category are coming soon!"
+    },
+    "liveSlugs": [],
+    "comingSoonStrip": [
+      {"name": "Your Money Story", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
+      {"name": "Budgeting for Real Life", "difficulty": "Beginner", "time": "6 lessons · 2.5 hrs"},
+      {"name": "Debt Freedom Strategy", "difficulty": "All Levels", "time": "6 lessons · 2.5 hrs"},
+      {"name": "Emergency Fund Builder", "difficulty": "Beginner", "time": "4 lessons · 1.5 hrs"},
+      {"name": "Investing for Beginners", "difficulty": "Beginner", "time": "7 lessons · 3 hrs"},
+      {"name": "Passive Income Foundations", "difficulty": "Intermediate", "time": "6 lessons · 2.5 hrs"},
+      {"name": "Financial Confidence Accelerator", "difficulty": "All Levels", "time": "7 lessons · 3 hrs"},
+      {"name": "The Money Habits System", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
+      {"name": "Earn More Masterclass", "difficulty": "Intermediate", "time": "6 lessons · 2.5 hrs"},
+      {"name": "Abundance Mindset: Money Edition", "difficulty": "All Levels", "time": "5 lessons · 2 hrs"},
+      {"name": "Retirement Planning Basics", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
+      {"name": "Smart Spending Habits", "difficulty": "Beginner", "time": "4 lessons · 1.5 hrs"},
+      {"name": "Side Income Strategies", "difficulty": "All Levels", "time": "6 lessons · 2.5 hrs"},
+      {"name": "Financial Goals Blueprint", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
+      {"name": "Negotiate Better Deals", "difficulty": "Intermediate", "time": "5 lessons · 2 hrs"},
+      {"name": "Money & Relationships", "difficulty": "All Levels", "time": "5 lessons · 2 hrs"}
+    ],
+    "comingSoon": [
+      {
+        "id": "confidence-accelerator",
+        "title": "Financial Confidence Accelerator",
+        "description": "The fastest path from money anxiety to genuine financial clarity. Build confidence, break patterns, take control.",
+        "lessons": 21,
+        "weeks": 4,
+        "emoji": "🚀",
+        "gradient": "from-amber-500 to-yellow-400",
+        "featured": true
+      },
+      {
+        "id": "money-habits",
+        "title": "The Money Habits System",
+        "description": "Replace bad financial habits with automatic ones that build wealth in the background — no willpower required.",
+        "lessons": 18,
+        "weeks": 3,
+        "emoji": "🔄",
+        "gradient": "from-green-500 to-emerald-400",
+        "featured": false
+      },
+      {
+        "id": "earn-more",
+        "title": "Earn More Masterclass",
+        "description": "Practical strategies to increase your income — salary negotiation, side income, and unlocking your earning potential.",
+        "lessons": 16,
+        "weeks": 3,
+        "emoji": "💼",
+        "gradient": "from-sw-blue to-cyan-400",
+        "featured": false
+      },
+      {
+        "id": "abundance-mindset",
+        "title": "Abundance Mindset: Money Edition",
+        "description": "Rewire your relationship with money at the root. From scarcity thinking to an abundance identity that attracts opportunity.",
+        "lessons": 14,
+        "weeks": 2,
+        "emoji": "✨",
+        "gradient": "from-purple-500 to-violet-400",
+        "featured": false
+      },
+      {
+        "id": "budgeting-real-life",
+        "title": "Budgeting for Real Life",
+        "description": "A no-shame, actually-workable budgeting system built for busy people with real expenses and real emotions.",
+        "lessons": 12,
+        "weeks": 2,
+        "emoji": "📊",
+        "gradient": "from-teal-500 to-cyan-400",
+        "featured": false
+      },
+      {
+        "id": "your-money-story",
+        "title": "Your Money Story",
+        "description": "Understand where your money beliefs came from — and rewrite the narrative so it works for you, not against you.",
+        "lessons": 10,
+        "weeks": 2,
+        "emoji": "📖",
+        "gradient": "from-rose-500 to-pink-400",
+        "featured": false
+      },
+      {
+        "id": "freedom-blueprint",
+        "title": "Financial Freedom Blueprint",
+        "description": "A clear, step-by-step roadmap from where you are now to genuine financial independence — broken into manageable milestones.",
+        "lessons": 24,
+        "weeks": 5,
+        "emoji": "🗺️",
+        "gradient": "from-orange-500 to-amber-400",
+        "featured": false
+      }
+    ],
+    "note": "App catalog (financial-wellbeing-BOes51jq.js) shows 16 locked name/difficulty/time cards (comingSoonStrip) + browse sections from financial-wellbeing-courses-IFxSrlor.js. The featured 7 in comingSoon are the marketing library featured list (same chunk export F), not the app Coming Soon strip. No live lesson chunks."
+  }
+}

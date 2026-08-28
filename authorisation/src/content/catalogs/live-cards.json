@@ -1,0 +1,716 @@
+{
+  "ai-and-technology": {
+    "sourceChunk": "ai-and-technology-C2SJHC_I.js",
+    "template": "path-catalog-A",
+    "hero": {
+      "emoji": "🤖",
+      "h1": "AI & Technology",
+      "tagline": "Master AI tools, build income streams, and future-proof your career.",
+      "courseCountLabel": "from courseCounts('ai-and-technology')"
+    },
+    "badge": "AI Explorer Badge",
+    "cards": [
+      {
+        "id": "28-day-ai-challenge",
+        "path": "/app/courses/28-day-ai-challenge",
+        "badge": "🔥 Most Popular",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#1D4ED8] to-[#2563EB]",
+        "emoji": "🤖",
+        "duration": "28 days · 5 min/day",
+        "title": "28-Day AI Challenge",
+        "subtitle": "Go from AI beginner to power user. One skill per day. Life-changing results.",
+        "lessons": 28,
+        "xp": 560
+      },
+      {
+        "id": "chatgpt-for-business",
+        "path": "/app/courses/chatgpt-for-business",
+        "badge": "💼 Business",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#0891B2] to-[#0E7490]",
+        "emoji": "💬",
+        "duration": "21 days · 5 min/day",
+        "title": "ChatGPT for Business",
+        "subtitle": "Master ChatGPT to save time, communicate better, and grow your business.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "claude-ai-mastery",
+        "path": "/app/courses/claude-ai-mastery",
+        "badge": "⭐ New",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#4F46E5] to-[#4338CA]",
+        "emoji": "🧠",
+        "duration": "21 days · 5 min/day",
+        "title": "Claude AI: Think Smarter, Work Faster",
+        "subtitle": "Go from complete beginner to confident Claude user in 21 lessons. Write better, research smarter, and get more done every day.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "master-gemini",
+        "path": "/app/courses/master-gemini",
+        "badge": "✨ Popular",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#4338CA] to-[#7C3AED]",
+        "emoji": "✨",
+        "duration": "21 days · 5 min/day",
+        "title": "Master Gemini: Google's AI Powerhouse",
+        "subtitle": "From your first prompt to advanced workflows — unlock the full power of Google's AI in 21 days.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "claude-ai-excel",
+        "path": "/app/courses/claude-ai-excel",
+        "badge": "📊 New",
+        "badgeColor": "bg-green-100 text-green-700",
+        "gradient": "from-[#059669] to-[#065F46]",
+        "emoji": "📊",
+        "duration": "15 lessons · 5 min/day",
+        "title": "Master Claude AI for Excel",
+        "subtitle": "Use AI to understand, fix, and build spreadsheets — no advanced Excel skills needed.",
+        "lessons": 15,
+        "xp": 375
+      },
+      {
+        "id": "master-ai-powerpoint",
+        "path": "/app/courses/master-ai-powerpoint",
+        "badge": "📽️ New",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#EA580C] to-[#C2410C]",
+        "emoji": "📽️",
+        "duration": "18 lessons · 5 min/day",
+        "title": "Master AI for PowerPoint",
+        "subtitle": "Use AI to plan, build and deliver presentations that actually land — no design skills needed.",
+        "lessons": 18,
+        "xp": 450
+      },
+      {
+        "id": "master-ai-microsoft-365",
+        "path": "/app/courses/master-ai-microsoft-365",
+        "badge": "🗂️ New",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1D4ED8] to-[#1E3A8A]",
+        "emoji": "🗂️",
+        "duration": "24 lessons · 5 min/lesson",
+        "title": "Master AI for Microsoft 365",
+        "subtitle": "Use AI across Word, Excel, PowerPoint, Outlook and Teams to do your real work faster and to a higher standard.",
+        "lessons": 24,
+        "xp": 600
+      },
+      {
+        "id": "prompt-engineering-mastery",
+        "path": "/app/courses/prompt-engineering-mastery",
+        "badge": "🎯 Essential",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#059669] to-[#047857]",
+        "emoji": "✍️",
+        "duration": "21 days · 5 min/day",
+        "title": "Prompt Engineering Mastery",
+        "subtitle": "Write prompts that get results every time.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "ai-productivity-system",
+        "path": "/app/courses/ai-productivity-system",
+        "badge": "⚡ Productivity",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#4F46E5] to-[#3730A3]",
+        "emoji": "⚡",
+        "duration": "21 days · 5 min/day",
+        "title": "AI Productivity System",
+        "subtitle": "Get 2× the work done in half the time. Build an AI-powered productivity system that saves 10+ hours per week.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-automation-blueprint",
+        "path": "/app/courses/ai-automation-blueprint",
+        "badge": "🤖 Automation",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#EA580C] to-[#9A3412]",
+        "emoji": "🤖",
+        "duration": "28 days · 5 min/day",
+        "title": "AI Automation Blueprint",
+        "subtitle": "Automate repetitive tasks and save hours daily. Build no-code AI workflows that run 24/7 — from simple triggers to intelligent multi-step systems.",
+        "lessons": 28,
+        "xp": 700
+      },
+      {
+        "id": "ai-content-creator-accelerator",
+        "path": "/app/courses/ai-content-creator-accelerator",
+        "badge": "🎬 Creator",
+        "badgeColor": "bg-pink-100 text-pink-700",
+        "gradient": "from-[#DB2777] to-[#BE185D]",
+        "emoji": "🎬",
+        "duration": "21 days · 5 min/day",
+        "title": "AI Content Creator Accelerator",
+        "subtitle": "Use AI to write, design, and publish content 10× faster. Build a monetised faceless AI brand in 90 days.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "ai-side-hustle-accelerator",
+        "path": "/app/courses/ai-side-hustle-accelerator",
+        "badge": "💸 Side Hustle",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "💸",
+        "duration": "21 days · 5 min/day",
+        "title": "AI Side Hustle Accelerator",
+        "subtitle": "7 proven AI-powered income streams. Launch your first in 48 hours.",
+        "lessons": 21,
+        "xp": 3150
+      },
+      {
+        "id": "ai-digital-product-launch",
+        "path": "/app/courses/ai-digital-product-launch",
+        "badge": "⚡ Weekend Sprint",
+        "badgeColor": "bg-amber-100 text-amber-700",
+        "gradient": "from-[#D97706] to-[#B45309]",
+        "emoji": "⚡",
+        "duration": "21 days · 5 min/day",
+        "title": "48-Hour AI Digital Product Launch",
+        "subtitle": "From idea to first sale in one weekend.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-ads-accelerator",
+        "path": "/app/courses/ai-ads-accelerator",
+        "badge": "📣 Ads",
+        "badgeColor": "bg-red-100 text-red-700",
+        "gradient": "from-[#DC2626] to-[#B91C1C]",
+        "emoji": "📣",
+        "duration": "21 days · 5 min/day",
+        "title": "AI Ads Accelerator",
+        "subtitle": "Use AI to write ad copy, generate creatives, and optimise campaigns. Cut cost per acquisition by 40%+.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-filmmaking-studio",
+        "path": "/app/courses/ai-filmmaking-studio",
+        "badge": "🎬 Premium",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0891B2] to-[#0E7490]",
+        "emoji": "🎬",
+        "duration": "21 days · 5 min/day",
+        "title": "AI Filmmaking Studio",
+        "subtitle": "Create cinematic short films, brand videos, and YouTube content using AI video tools. No camera required.",
+        "lessons": 21,
+        "xp": 525
+      }
+    ]
+  },
+  "success-mindset": {
+    "sourceChunk": "success-mindset-Bg1nH8IL.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "unlock-growth-mindset",
+        "path": "/app/courses/unlock-growth-mindset",
+        "badge": "🌱 New",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#92400e] to-[#d97706]",
+        "emoji": "🌱",
+        "duration": "18 days · 5 min/day",
+        "title": "Unlock Your Growth Mindset",
+        "subtitle": "Discover how your beliefs about talent and effort shape everything — and learn to rewire them for lasting success.",
+        "lessons": 18,
+        "xp": 360
+      },
+      {
+        "id": "confidence-accelerator",
+        "path": "/app/courses/confidence-accelerator",
+        "badge": "🔥 Life Changing",
+        "badgeColor": "bg-amber-100 text-amber-700",
+        "gradient": "from-[#92400e] to-[#b45309]",
+        "emoji": "🔥",
+        "duration": "21 days · 10 min/day",
+        "title": "Confidence Accelerator",
+        "subtitle": "Overcome self-doubt, build lasting confidence and unlock your full potential with daily micro-exercises designed by psychologists.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "28-day-success-mindset",
+        "path": "/app/courses/28-day-success-mindset",
+        "badge": "⚡ Flagship",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1e3a5f] to-[#2563eb]",
+        "emoji": "⚡",
+        "duration": "28 days · 5 min/day",
+        "title": "28-Day Success Mindset Challenge",
+        "subtitle": "Transform your thinking, develop powerful daily habits and build the mindset needed to create lasting success.",
+        "lessons": 28,
+        "xp": 560
+      },
+      {
+        "id": "high-performance-accelerator",
+        "path": "/app/courses/high-performance-accelerator",
+        "badge": "⚡ Intermediate",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#3b1f6e] to-[#6366f1]",
+        "emoji": "🧠",
+        "duration": "21 days · 5 min/day",
+        "title": "High Performance Accelerator",
+        "subtitle": "Develop the focus, discipline and habits used by elite performers to consistently achieve more.",
+        "lessons": 21,
+        "xp": 440
+      },
+      {
+        "id": "millionaire-mindset",
+        "path": "/app/courses/millionaire-mindset",
+        "badge": "💰 Wealth",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#166534] to-[#10b981]",
+        "emoji": "💰",
+        "duration": "28 days · 5 min/day",
+        "title": "Millionaire Mindset Masterclass",
+        "subtitle": "Learn how successful entrepreneurs think about money, opportunity, risk and long-term wealth creation.",
+        "lessons": 28,
+        "xp": 580
+      }
+    ]
+  },
+  "career": {
+    "sourceChunk": "career-CX6C-xd2.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "28-day-career-accelerator",
+        "path": "/app/courses/28-day-career-accelerator",
+        "badge": "🚀 Flagship",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "💼",
+        "duration": "21 days · 15 min/day",
+        "title": "21-Day Career Accelerator",
+        "subtitle": "Get crystal clear on your career direction, build rare valuable skills, and create unstoppable momentum — one focused day at a time.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "squiggly-career-navigator",
+        "path": "/app/courses/squiggly-career-navigator",
+        "badge": "🌀 Non-Linear",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#115E59]",
+        "emoji": "🌀",
+        "duration": "21 days · 15 min/day",
+        "title": "The Squiggly Career Navigator",
+        "subtitle": "Ditch the career ladder, embrace your non-linear path, and design a career full of meaning, range, and possibility.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "deep-work-career-focus",
+        "path": "/app/courses/deep-work-career-focus",
+        "badge": "🎯 Deep Focus",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#134E4A]",
+        "emoji": "🎯",
+        "duration": "21 days · 15 min/day",
+        "title": "Deep Work & Career Focus",
+        "subtitle": "Master the rare ability to focus without distraction, build career capital through deliberate practice, and produce work so good they can't ignore you.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "salary-promotion-playbook",
+        "path": "/app/courses/salary-promotion-playbook",
+        "badge": "💰 Negotiation",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0C4A6E]",
+        "emoji": "💰",
+        "duration": "21 days · 15 min/day",
+        "title": "Salary & Promotion Playbook",
+        "subtitle": "Master the art and science of getting paid what you're worth — using negotiation psychology, strategic visibility, and career compounding to accelerate your earning power.",
+        "lessons": 21,
+        "xp": 420
+      }
+    ]
+  },
+  "business": {
+    "sourceChunk": "business-DY_zOaeE.js",
+    "template": "path-catalog-B",
+    "hero": {
+      "emoji": "🚀",
+      "h1": "Business",
+      "tagline": "Start, grow, and scale your business — from first idea to sustainable income",
+      "courseCountLabel": "40 courses"
+    },
+    "badge": "Business Builder Badge",
+    "cards": [
+      {
+        "id": "entrepreneurial-mindset",
+        "path": "/app/courses/entrepreneurial-mindset",
+        "title": "The Entrepreneurial Mindset",
+        "emoji": "🧠",
+        "courseNumber": "Course 1",
+        "difficulty": "Beginner",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Challenge conventional thinking about wealth and business. Learn to see opportunity through the lens of value creation, not time-for-money.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "find-your-profitable-idea",
+        "path": "/app/courses/find-your-profitable-idea",
+        "title": "Find Your Profitable Idea",
+        "emoji": "💡",
+        "courseNumber": "Course 2",
+        "difficulty": "Beginner",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Stop guessing and start validating. Learn to test business ideas with real people before you invest time or money building the wrong thing.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "customer-research-validation",
+        "path": "/app/courses/customer-research-validation",
+        "title": "Customer Research & Validation",
+        "emoji": "🔍",
+        "courseNumber": "Course 3",
+        "difficulty": "Beginner",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Go deeper than surface-level validation. Understand WHO your customer really is, WHAT job they're hiring your product to do, and HOW to systematically de-risk your business model.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "design-your-business-model",
+        "path": "/app/courses/design-your-business-model",
+        "title": "Design Your Business Model",
+        "emoji": "🧩",
+        "courseNumber": "Course 4",
+        "difficulty": "Beginner",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Map, test, and validate the logic of how your business creates, delivers, and captures value — using proven canvas frameworks.",
+        "lessons": 21,
+        "xp": 450
+      },
+      {
+        "id": "build-test-your-mvp",
+        "path": "/app/courses/build-test-your-mvp",
+        "title": "Build & Test Your MVP",
+        "emoji": "🚀",
+        "courseNumber": "Course 5",
+        "difficulty": "Beginner–Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Go from idea to working product using lean methodology — build the smallest thing that tests your biggest assumption, then iterate based on real evidence.",
+        "lessons": 21,
+        "xp": 450
+      },
+      {
+        "id": "create-irresistible-offer",
+        "path": "/app/courses/create-irresistible-offer",
+        "title": "Create an Irresistible Offer",
+        "emoji": "💎",
+        "courseNumber": "Course 6",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Build offers so compelling that buyers feel foolish saying no. Master the $100M frameworks for value, positioning, and pricing.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "pricing-monetisation-mastery",
+        "path": "/app/courses/pricing-monetisation-mastery",
+        "title": "Pricing & Monetisation Mastery",
+        "emoji": "💰",
+        "courseNumber": "Course 7",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Master the psychology, strategies, and frameworks that turn pricing from guesswork into your most powerful profit lever.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "positioning-marketing-acquisition",
+        "path": "/app/courses/positioning-marketing-acquisition",
+        "title": "Positioning, Marketing & Acquisition",
+        "emoji": "📣",
+        "courseNumber": "Course 8",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Master the frameworks that make customers find you, understand you, and choose you — from strategic positioning to scalable growth systems.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "sales-persuasion-negotiation",
+        "path": "/app/courses/sales-persuasion-negotiation",
+        "title": "Sales, Persuasion & Negotiation",
+        "emoji": "🤝",
+        "courseNumber": "Course 9",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Master the psychology of influence, consultative selling techniques, and negotiation tactics that create win-win outcomes in every high-stakes conversation.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "execution-founder-productivity",
+        "path": "/app/courses/execution-founder-productivity",
+        "title": "Execution & Founder Productivity",
+        "emoji": "⚡",
+        "courseNumber": "Course 10",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Master focus, execute with precision, and scale your time",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "systems-delegation-operations",
+        "path": "/app/courses/systems-delegation-operations",
+        "title": "Systems, Delegation & Operations",
+        "emoji": "⚙️",
+        "courseNumber": "Course 11",
+        "difficulty": "Intermediate",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Build a business that runs without you",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "leadership-scaling-building-value",
+        "path": "/app/courses/leadership-scaling-building-value",
+        "title": "Leadership, Scaling & Building Value",
+        "emoji": "🏆",
+        "courseNumber": "Course 12",
+        "difficulty": "Advanced",
+        "lessonsModules": "21 lessons · 3 modules",
+        "subtitle": "Lead with courage, scale with systems, build something that lasts",
+        "lessons": 21,
+        "xp": 420
+      }
+    ]
+  },
+  "health": {
+    "sourceChunk": "health-Bx6SvLVG.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "better-sleep",
+        "path": "/app/courses/better-sleep",
+        "badge": "😴 Sleep",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "😴",
+        "duration": "21 days · 10 min/day",
+        "title": "Better Sleep and a Healthier Body Clock",
+        "subtitle": "Improve your sleep quality, fix common sleep problems and wake up feeling genuinely rested — using science-backed strategies.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "living-longer",
+        "path": "/app/courses/living-longer",
+        "badge": "🌿 Longevity",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0E7490] to-[#155E75]",
+        "emoji": "🌿",
+        "duration": "21 days · 10 min/day",
+        "title": "Living Longer and Living Better",
+        "subtitle": "Understand what truly drives long-term health — and build small daily habits that compound into decades of better living.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "how-the-body-ages",
+        "path": "/app/courses/how-the-body-ages",
+        "badge": "🧬 Ageing",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#4C2A85] to-[#2D1A5E]",
+        "emoji": "🧬",
+        "duration": "21 days · 10 min/day",
+        "title": "How the Body Ages",
+        "subtitle": "Understand what is really happening inside your body as you age — explained in plain language, with practical steps you can take.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "everyday-movement",
+        "path": "/app/courses/everyday-movement",
+        "badge": "🏃 Fitness",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#C2410C] to-[#7C2D12]",
+        "emoji": "🏃",
+        "duration": "21 days · 10 min/day",
+        "title": "Everyday Movement for Better Health",
+        "subtitle": "Discover why daily movement is the most powerful health habit you can build — and learn simple ways to move more, sit less, and feel better without a gym or a fitness plan.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "strength-fitness",
+        "path": "/app/courses/strength-fitness",
+        "badge": "💪 Fitness",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1E5A7A] to-[#1A2F4A]",
+        "emoji": "💪",
+        "duration": "21 days · 10 min/day",
+        "title": "Strength, Fitness & Physical Independence",
+        "subtitle": "Build the strength, cardio fitness and mobility you need to stay active, independent and energised for life.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "eat-well-live-well",
+        "path": "/app/courses/eat-well-live-well",
+        "badge": "🥗 Nutrition",
+        "badgeColor": "bg-green-100 text-green-700",
+        "gradient": "from-[#166534] to-[#14532D]",
+        "emoji": "🥗",
+        "duration": "21 days · 10 min/day",
+        "title": "Eat Well, Live Well",
+        "subtitle": "Your Complete Nutrition Foundation",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "your-metabolic-health",
+        "path": "/app/courses/your-metabolic-health",
+        "badge": "🔬 Metabolic Health",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#92400E] to-[#78350F]",
+        "emoji": "🔬",
+        "duration": "21 days · 10 min/day",
+        "title": "Your Metabolic Health",
+        "subtitle": "Understand how your body processes energy — from blood sugar and insulin to cholesterol and visceral fat — and learn what you can realistically do to protect your long-term health.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "managing-stress-resilience",
+        "path": "/app/courses/managing-stress-resilience",
+        "badge": "🧠 Mental Wellbeing",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#3730A3] to-[#312E81]",
+        "emoji": "🧠",
+        "duration": "21 days · 10 min/day",
+        "title": "Managing Stress & Building Resilience",
+        "subtitle": "Understand stress, prevent burnout, and build lasting psychological resilience.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "brain-health-memory",
+        "path": "/app/courses/brain-health-memory",
+        "badge": "🧠 Brain Health",
+        "badgeColor": "bg-cyan-100 text-cyan-800",
+        "gradient": "from-[#0E7490] to-[#1E3A5F]",
+        "emoji": "🧠",
+        "duration": "21 days · 10 min/day",
+        "title": "Brain Health and Memory",
+        "subtitle": "Understand how the brain ages, protect your cognitive health, and reduce the risk of decline.",
+        "lessons": 21,
+        "xp": 2100
+      }
+    ]
+  },
+  "financial-wellbeing": {
+    "sourceChunk": "financial-wellbeing-BOes51jq.js",
+    "template": "path-catalog-C",
+    "hero": {
+      "emoji": "💰",
+      "h1": "Financial Wellbeing",
+      "tagline": "Master your money mindset, build real habits, and create lasting financial confidence",
+      "courseCountLabel": "16 Courses"
+    },
+    "emptyCopy": {
+      "title": "No courses started yet",
+      "sub": "Courses in this category are coming soon!"
+    },
+    "liveSlugs": [],
+    "comingSoonStrip": [
+      {
+        "name": "Your Money Story",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Budgeting for Real Life",
+        "difficulty": "Beginner",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Debt Freedom Strategy",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Emergency Fund Builder",
+        "difficulty": "Beginner",
+        "time": "4 lessons · 1.5 hrs"
+      },
+      {
+        "name": "Investing for Beginners",
+        "difficulty": "Beginner",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "Passive Income Foundations",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Financial Confidence Accelerator",
+        "difficulty": "All Levels",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "The Money Habits System",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Earn More Masterclass",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Abundance Mindset: Money Edition",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Retirement Planning Basics",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Smart Spending Habits",
+        "difficulty": "Beginner",
+        "time": "4 lessons · 1.5 hrs"
+      },
+      {
+        "name": "Side Income Strategies",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Financial Goals Blueprint",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Negotiate Better Deals",
+        "difficulty": "Intermediate",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Money & Relationships",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs"
+      }
+    ]
+  }
+}

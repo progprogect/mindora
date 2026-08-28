@@ -1,0 +1,2060 @@
+{
+  "id": "ai-filmmaking-studio",
+  "title": "AI Filmmaking Studio",
+  "subtitle": "Create cinematic short films, brand videos, and YouTube content using AI video tools. No camera required.",
+  "totalDays": 21,
+  "totalXp": 525,
+  "modules": [
+    {
+      "id": "afs-mod-1",
+      "moduleNumber": 1,
+      "title": "AI Video Foundations",
+      "subtitle": "The tools, techniques, and cinematic language for AI filmmaking",
+      "days": "1–5",
+      "skill": "Foundation",
+      "lessonIds": [
+        "afs-1",
+        "afs-2",
+        "afs-3",
+        "afs-4",
+        "afs-5"
+      ]
+    },
+    {
+      "id": "afs-mod-2",
+      "moduleNumber": 2,
+      "title": "Cinematic Storytelling",
+      "subtitle": "Structure, script, storyboard, and assemble compelling AI films",
+      "days": "6–11",
+      "skill": "Storytelling",
+      "lessonIds": [
+        "afs-6",
+        "afs-7",
+        "afs-8",
+        "afs-9",
+        "afs-10",
+        "afs-11"
+      ]
+    },
+    {
+      "id": "afs-mod-3",
+      "moduleNumber": 3,
+      "title": "Commercial & Brand Video",
+      "subtitle": "Create videos that sell products, build brands, and grow audiences",
+      "days": "12–16",
+      "skill": "Commercial",
+      "lessonIds": [
+        "afs-12",
+        "afs-13",
+        "afs-14",
+        "afs-15",
+        "afs-16"
+      ]
+    },
+    {
+      "id": "afs-mod-4",
+      "moduleNumber": 4,
+      "title": "Portfolio & Monetisation",
+      "subtitle": "Build your showreel and launch as an AI video professional",
+      "days": "17–21",
+      "skill": "Business",
+      "lessonIds": [
+        "afs-17",
+        "afs-18",
+        "afs-19",
+        "afs-20",
+        "afs-21"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "afs-1",
+      "dayNumber": 1,
+      "moduleId": "afs-mod-1",
+      "title": "The AI Filmmaking Revolution",
+      "subtitle": "Why now is the golden era for AI video creators",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A New Kind of Filmmaker",
+          "body": "For the first time in history, one person with a laptop can produce video that rivals studio-level production. No camera, no crew, no six-figure budget."
+        },
+        {
+          "type": "content",
+          "headline": "The Democratisation of Video",
+          "body": "AI video tools have collapsed the barrier to entry. What once required a RED camera, colour grading suite, and months of post-production now takes minutes with the right prompt.",
+          "bullets": [
+            "Text-to-video generation in seconds",
+            "Consistent characters across scenes",
+            "Cinematic camera movements on demand",
+            "Professional-grade audio synthesis"
+          ],
+          "stat": "90%",
+          "statLabel": "Cost reduction vs traditional video production using AI tools"
+        },
+        {
+          "type": "content",
+          "headline": "Why This Matters Now",
+          "body": "Brands are desperate for video content — social platforms prioritise it, conversion rates soar with it, and attention spans demand it. But traditional production is slow and expensive. AI filmmakers fill this gap.",
+          "bullets": [
+            "82% of internet traffic is video",
+            "Short-form video has 2.5× higher engagement",
+            "Brands need 10× more video than they can produce traditionally"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Opportunity Window",
+          "body": "We're in the early-adopter phase. Most businesses haven't caught on yet. AI filmmakers who build portfolios now will be the go-to experts when demand explodes.",
+          "stat": "£2,500+",
+          "statLabel": "Average project fee for AI video creators with a strong portfolio"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Step",
+          "body": "Write down 3 types of video you'd love to create (short film, brand ad, YouTube content, music video, etc.). This becomes your creative north star for the course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary reason AI filmmaking is accessible to individuals now?",
+          "type": "mcq",
+          "options": [
+            "Cameras are cheaper",
+            "AI tools eliminate the need for expensive equipment and crews",
+            "Social media is easier to use",
+            "Film schools are free"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI video tools remove the need for cameras, crews, and expensive post-production — one person with a laptop can produce cinematic content."
+        },
+        {
+          "question": "AI video tools can reduce production costs by up to 90% compared to traditional methods.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI eliminates the need for physical equipment, large crews, studio rental, and lengthy post-production workflows, cutting costs dramatically."
+        },
+        {
+          "question": "What percentage of internet traffic is video content?",
+          "type": "mcq",
+          "options": [
+            "45%",
+            "62%",
+            "82%",
+            "95%"
+          ],
+          "correctIndex": 2,
+          "explanation": "82% of internet traffic is now video, making it the dominant content format and creating massive demand for video creators."
+        }
+      ]
+    },
+    {
+      "id": "afs-2",
+      "dayNumber": 2,
+      "moduleId": "afs-mod-1",
+      "title": "Your AI Video Toolkit",
+      "subtitle": "Overview of Sora, Runway, Kling, Pika, and when to use each",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Right Tool for the Right Shot",
+          "body": "There's no single \"best\" AI video tool. Each excels at different things — and the smart filmmaker knows which to reach for."
+        },
+        {
+          "type": "content",
+          "headline": "Sora (OpenAI)",
+          "body": "The heavyweight for photorealistic, long-form generation. Sora excels at complex scenes with multiple subjects, realistic physics, and extended motion.",
+          "bullets": [
+            "Best for: Photorealistic scenes, complex camera moves",
+            "Strength: Long clips (up to 60s), coherent motion",
+            "Weakness: Slower generation, higher cost per clip",
+            "Use when: You need the most realistic output possible"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Runway Gen-3 & Kling",
+          "body": "The workhorses for creative production. Runway offers the best image-to-video pipeline, while Kling delivers impressive motion and character consistency.",
+          "bullets": [
+            "Runway: Best image-to-video, motion brush control",
+            "Kling: Superior character consistency, longer clips",
+            "Both: Fast generation, good for iteration",
+            "Use when: Rapid prototyping and creative exploration"
+          ],
+          "stat": "10s",
+          "statLabel": "Average generation time for a 5-second Runway clip"
+        },
+        {
+          "type": "content",
+          "headline": "Pika, Luma & Specialists",
+          "body": "Niche tools that punch above their weight. Pika excels at stylised/animated content. Luma Dream Machine handles 3D-aware scenes. Hailuo offers free high-quality generation.",
+          "bullets": [
+            "Pika: Best for stylised, animated, or surreal content",
+            "Luma: 3D-aware generation, great spatial understanding",
+            "Hailuo: Free tier with surprisingly good quality",
+            "Tip: Use multiple tools on the same project for best results"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Stack",
+          "body": "Sign up for free tiers of at least 2 tools: Runway (runway.ml) and one other (Pika, Kling, or Hailuo). Explore the interface for 5 minutes each. Note what feels intuitive."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which AI video tool is best known for photorealistic, long-form generation?",
+          "type": "mcq",
+          "options": [
+            "Pika",
+            "Runway",
+            "Sora",
+            "Luma"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sora (by OpenAI) excels at photorealistic scenes with complex motion and can generate clips up to 60 seconds."
+        },
+        {
+          "question": "Runway Gen-3 is best known for its image-to-video pipeline.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Runway offers the best image-to-video workflow, allowing you to animate still images with precise motion control."
+        },
+        {
+          "question": "Which tool is recommended for stylised or animated content?",
+          "type": "mcq",
+          "options": [
+            "Sora",
+            "Runway",
+            "Pika",
+            "Kling"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pika excels at stylised, animated, or surreal content — making it ideal for creative and non-photorealistic work."
+        }
+      ]
+    },
+    {
+      "id": "afs-3",
+      "dayNumber": 3,
+      "moduleId": "afs-mod-1",
+      "title": "Prompting for Video",
+      "subtitle": "How to write prompts that produce cinematic results",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Script IS Your Camera",
+          "body": "In AI filmmaking, the prompt replaces the camera, the lighting rig, and the director's chair. A well-crafted prompt is the difference between amateur and cinematic."
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Great Video Prompt",
+          "body": "Cinematic AI prompts follow a consistent structure: Subject + Action + Setting + Camera + Lighting + Style + Mood. Each element gives the AI more to work with.",
+          "bullets": [
+            "Subject: Who or what is in frame",
+            "Action: What's happening (movement is key)",
+            "Setting: Where — time of day, environment",
+            "Camera: Shot type + movement (tracking, dolly, etc.)",
+            "Style: Film stock, colour grade, era"
+          ],
+          "stat": "5×",
+          "statLabel": "Quality improvement when using structured prompts vs simple descriptions"
+        },
+        {
+          "type": "content",
+          "headline": "Prompt Examples: Before & After",
+          "body": "Weak prompt: \"A woman walking in a city.\" Strong prompt: \"A young woman in a camel trench coat walks through rain-slicked Tokyo streets at night. Neon signs reflect on wet pavement. Slow tracking shot from behind, shallow depth of field. Shot on 35mm Kodak Portra, Wong Kar-wai colour palette.\"",
+          "bullets": [
+            "Specificity creates cinematic quality",
+            "Reference real film styles and directors",
+            "Include camera movement for dynamic results",
+            "Mention film stock for authentic grain and colour"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common Prompt Mistakes",
+          "body": "Most beginners over-describe or use contradictory instructions. The AI works best with clear, non-conflicting guidance.",
+          "bullets": [
+            "Too vague: No visual anchor for the AI",
+            "Too long: Contradictions confuse generation",
+            "Static: Forgetting to include motion/action",
+            "Fix: Use prompt templates until it becomes instinct"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write 3 Cinematic Prompts",
+          "body": "Using the structure (Subject + Action + Setting + Camera + Style), write 3 prompts for scenes you'd love to see. Don't generate yet — just craft the language. We'll use these in Lesson 5."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the key elements of a structured video prompt?",
+          "type": "mcq",
+          "options": [
+            "Just describe what you want to see",
+            "Subject + Action + Setting + Camera + Style",
+            "Use as many words as possible",
+            "Copy the plot of a movie"
+          ],
+          "correctIndex": 1,
+          "explanation": "A structured video prompt includes Subject, Action, Setting, Camera movement, and Style to give the AI clear cinematic direction."
+        },
+        {
+          "question": "Referencing real film styles or directors in prompts can improve output quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI models trained on cinema understand references to directors and film stocks, producing more cohesive and stylised outputs."
+        },
+        {
+          "question": "What is the most common mistake in AI video prompts?",
+          "type": "mcq",
+          "options": [
+            "Using too many adjectives",
+            "Being too vague or contradictory",
+            "Including camera movements",
+            "Referencing film stocks"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prompts that are too vague give the AI no direction, while contradictory instructions confuse generation and produce inconsistent results."
+        }
+      ]
+    },
+    {
+      "id": "afs-4",
+      "dayNumber": 4,
+      "moduleId": "afs-mod-1",
+      "title": "Shot Types & Camera Language",
+      "subtitle": "Cinematic grammar translated for AI video tools",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Speak Like a Director",
+          "body": "Every great film uses deliberate shot choices. A close-up creates intimacy. A wide shot establishes scale. When you know this language, your AI outputs become truly cinematic."
+        },
+        {
+          "type": "content",
+          "headline": "Essential Shot Types",
+          "body": "Master these 6 core shot types and your AI films will feel professional instantly. Each communicates something different to the viewer.",
+          "bullets": [
+            "Extreme Wide: Establishes world and scale",
+            "Wide/Full: Shows subject in environment",
+            "Medium: Conversational, natural framing",
+            "Close-Up: Emotion, detail, intimacy",
+            "Extreme Close-Up: Tension, micro-detail",
+            "Over-the-Shoulder: Connection between subjects"
+          ],
+          "stat": "6",
+          "statLabel": "Core shot types that cover 90% of cinematic storytelling"
+        },
+        {
+          "type": "content",
+          "headline": "Camera Movements That AI Understands",
+          "body": "AI video tools respond well to specific camera movement terminology. Using the right words transforms static clips into dynamic cinema.",
+          "bullets": [
+            "Dolly in/out: Camera physically moves toward/away",
+            "Tracking shot: Camera follows alongside subject",
+            "Crane/aerial: Rising or descending movement",
+            "Pan/tilt: Camera rotates on its axis",
+            "Steadicam: Smooth handheld following movement",
+            "Whip pan: Fast rotational movement for energy"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Combining Shots & Movement",
+          "body": "The magic happens when you combine shot type with movement. \"Slow dolly in to close-up\" creates building tension. \"Aerial tracking wide shot\" establishes epic scale. Think in combinations.",
+          "bullets": [
+            "Dolly + Close-up = building intensity",
+            "Tracking + Medium = following action",
+            "Crane + Wide = establishing grandeur",
+            "Tip: Add speed (slow, fast) for mood control"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Translate a Scene",
+          "body": "Think of a favourite movie scene. Break it into 3-4 shots using proper terminology (e.g., \"Slow tracking medium shot of character walking through rain\"). This is how you'll direct your AI."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which shot type is best for conveying emotion and intimacy?",
+          "type": "mcq",
+          "options": [
+            "Wide shot",
+            "Close-up",
+            "Extreme wide",
+            "Aerial shot"
+          ],
+          "correctIndex": 1,
+          "explanation": "Close-ups focus on facial expressions and fine detail, creating emotional connection and intimacy with the viewer."
+        },
+        {
+          "question": "A \"dolly in\" means the camera physically moves toward the subject.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A dolly movement means the camera itself moves through space (toward or away from the subject), unlike a zoom which just changes focal length."
+        },
+        {
+          "question": "What combination of shot type and movement creates a sense of epic scale?",
+          "type": "mcq",
+          "options": [
+            "Close-up + Pan",
+            "Wide shot + Crane/Aerial",
+            "Medium + Steadicam",
+            "Extreme close-up + Dolly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Combining a wide shot with crane or aerial movement reveals the full scope of an environment, creating a feeling of grandeur and epic scale."
+        }
+      ]
+    },
+    {
+      "id": "afs-5",
+      "dayNumber": 5,
+      "moduleId": "afs-mod-1",
+      "title": "Your First AI Scene",
+      "subtitle": "Create a 10-second cinematic clip from scratch",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Words to Moving Pictures",
+          "body": "Everything you've learned so far converges here. Today you generate your first real cinematic clip — and feel the rush of seeing your vision come to life."
+        },
+        {
+          "type": "content",
+          "headline": "The Generation Workflow",
+          "body": "Professional AI filmmakers don't just type one prompt and hope. They follow a systematic workflow that maximises quality while minimising wasted credits.",
+          "bullets": [
+            "Step 1: Write your structured prompt (Lesson 3 format)",
+            "Step 2: Generate 3-4 variations at low resolution",
+            "Step 3: Evaluate — pick the best motion and composition",
+            "Step 4: Regenerate the winner at full quality",
+            "Step 5: Download and review frame-by-frame"
+          ],
+          "stat": "3-4",
+          "statLabel": "Variations you should generate before committing to final quality"
+        },
+        {
+          "type": "content",
+          "headline": "Iteration is Everything",
+          "body": "Your first generation will rarely be perfect. The skill isn't in getting it right first time — it's in reading the output and refining your prompt intelligently.",
+          "bullets": [
+            "Too static? Add action verbs and camera movement",
+            "Wrong mood? Adjust lighting and colour references",
+            "Weird artifacts? Simplify the prompt, remove conflicts",
+            "Good but not great? Add a film stock or director reference"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quality Checkpoints",
+          "body": "Before you call a clip \"done,\" run it through these quality checks. This separates amateur AI clips from professional output.",
+          "bullets": [
+            "Motion: Is movement smooth and natural?",
+            "Consistency: Do elements maintain shape throughout?",
+            "Composition: Is framing visually balanced?",
+            "Mood: Does the lighting/colour match your intent?"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your Scene",
+          "body": "Take your best prompt from Lesson 3. Open Runway or your chosen tool. Generate 3 variations. Pick the best one. Then refine the prompt and generate again. Save your final clip — this is Day 1 of your portfolio."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended first step in the AI video generation workflow?",
+          "type": "mcq",
+          "options": [
+            "Generate at maximum quality immediately",
+            "Write a structured prompt using the format from Lesson 3",
+            "Copy a prompt from the internet",
+            "Start with the longest possible clip"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always start with a carefully structured prompt before generating. This maximises your chances of a good result and minimises wasted credits."
+        },
+        {
+          "question": "You should generate multiple variations before committing to final quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Generating 3-4 variations at lower resolution lets you find the best composition and motion before spending credits on full-quality output."
+        },
+        {
+          "question": "If your AI clip feels too static, what should you adjust?",
+          "type": "mcq",
+          "options": [
+            "Add more colour references",
+            "Simplify the prompt",
+            "Add action verbs and camera movement",
+            "Change the aspect ratio"
+          ],
+          "correctIndex": 2,
+          "explanation": "Static clips usually mean the prompt lacks motion. Adding action verbs and camera movement terminology gives the AI clear dynamic direction."
+        }
+      ]
+    },
+    {
+      "id": "afs-6",
+      "dayNumber": 6,
+      "moduleId": "afs-mod-2",
+      "title": "Story Structure for Short Films",
+      "subtitle": "3-act structure compressed to 60–180 seconds",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Even 60 Seconds Needs a Story",
+          "body": "A beautiful clip without narrative is wallpaper. A structured story — even at 60 seconds — creates emotion, retention, and shareability."
+        },
+        {
+          "type": "content",
+          "headline": "The Micro 3-Act Structure",
+          "body": "Every story — from a 2-hour film to a 60-second short — follows the same emotional arc. For AI short films, we compress it radically.",
+          "bullets": [
+            "Act 1 (0-15s): Hook + World Setup — establish character and world instantly",
+            "Act 2 (15-45s): Tension + Journey — introduce a challenge or transformation",
+            "Act 3 (45-60s): Resolution + Emotion — deliver the payoff or twist",
+            "Total: 3-5 scenes that flow into each other"
+          ],
+          "stat": "3-5",
+          "statLabel": "Scenes needed for a compelling 60-second AI short film"
+        },
+        {
+          "type": "content",
+          "headline": "Emotional Beats, Not Plot Points",
+          "body": "In short-form video, you don't have time for complex plot. Instead, focus on emotional beats — moments that make the viewer feel something.",
+          "bullets": [
+            "Wonder: Show something visually extraordinary",
+            "Tension: Create anticipation or uncertainty",
+            "Surprise: Subvert expectations",
+            "Resolution: Deliver satisfaction or catharsis",
+            "Tip: One strong emotion > three weak ones"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Short Film Archetypes That Work",
+          "body": "Certain story patterns perform exceptionally well in AI short films because they're visually driven and emotionally simple.",
+          "bullets": [
+            "The Journey: Character travels through changing worlds",
+            "The Transformation: Something evolves or morphs",
+            "The Reveal: Build to a surprising visual payoff",
+            "The Loop: Ending connects back to the beginning",
+            "The Contrast: Two opposing visuals juxtaposed"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your First Short",
+          "body": "Choose one archetype (Journey, Transformation, Reveal, Loop, or Contrast). Write 3-5 scene descriptions of 1-2 sentences each. This is your story skeleton — we'll build the full script next."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long should Act 1 (Hook + World Setup) be in a 60-second short film?",
+          "type": "mcq",
+          "options": [
+            "30 seconds",
+            "0-15 seconds",
+            "45 seconds",
+            "5 seconds"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a micro 3-act structure, Act 1 should be 0-15 seconds — just enough to hook the viewer and establish the world before tension begins."
+        },
+        {
+          "question": "Short-form AI films should focus on emotional beats rather than complex plot.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "With limited time, emotional moments are more impactful than intricate plot details. One strong feeling beats multiple weak story points."
+        },
+        {
+          "question": "Which short film archetype involves building to a surprising visual payoff?",
+          "type": "mcq",
+          "options": [
+            "The Journey",
+            "The Loop",
+            "The Reveal",
+            "The Transformation"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Reveal archetype builds anticipation throughout the film, then delivers a surprising visual payoff that recontextualises everything before it."
+        }
+      ]
+    },
+    {
+      "id": "afs-7",
+      "dayNumber": 7,
+      "moduleId": "afs-mod-2",
+      "title": "Scriptwriting with AI",
+      "subtitle": "Use Claude/ChatGPT to write screenplays and shot lists",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your AI Writing Partner",
+          "body": "The best AI filmmakers don't just use AI for video generation — they use it to write scripts, create shot lists, and plan entire productions in minutes."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Scriptwriting Workflow",
+          "body": "Use Claude or ChatGPT as your writing room. Start with your story skeleton and expand it into a proper micro-screenplay with visual direction.",
+          "bullets": [
+            "Step 1: Feed your story archetype and scene descriptions",
+            "Step 2: Ask for a shot-by-shot breakdown",
+            "Step 3: Request video generation prompts for each shot",
+            "Step 4: Add timing and pacing notes",
+            "Step 5: Review and refine for visual coherence"
+          ],
+          "stat": "10 min",
+          "statLabel": "Time to generate a complete short film script with AI assistance"
+        },
+        {
+          "type": "content",
+          "headline": "The Perfect Shot List Format",
+          "body": "A shot list bridges your script and your AI video tool. Each entry should translate directly into a generation prompt.",
+          "bullets": [
+            "Shot #: Sequential numbering",
+            "Duration: How long this clip runs (3-10s)",
+            "Visual: Detailed description of what's on screen",
+            "Camera: Shot type + movement",
+            "Mood/Style: Lighting, colour, film reference",
+            "Audio: What sound accompanies this shot"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prompt Engineering for Scripts",
+          "body": "The key to great AI scripts is giving the LLM the right context. Treat it like briefing a screenwriter.",
+          "bullets": [
+            "Specify genre, mood, and target audience",
+            "Give examples of films or videos you admire",
+            "Ask for \"visually-driven\" scenes — minimal dialogue",
+            "Request that each shot be \"self-contained\" for AI generation",
+            "Iterate: Ask for alternatives if the first draft feels generic"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your Shot List",
+          "body": "Take your story skeleton from Lesson 6. Paste it into Claude or ChatGPT with this instruction: \"Turn this into a 5-shot cinematic short film. For each shot, give me: duration, visual description, camera movement, mood, and a detailed video generation prompt.\" Save the output."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should each entry in a shot list include?",
+          "type": "mcq",
+          "options": [
+            "Just the visual description",
+            "Shot number, duration, visual, camera, mood, and audio",
+            "Only the video generation prompt",
+            "Character dialogue and stage directions"
+          ],
+          "correctIndex": 1,
+          "explanation": "A complete shot list entry includes shot number, duration, visual description, camera movement, mood/style, and audio — providing everything needed for generation."
+        },
+        {
+          "question": "AI-written scripts for short films should be visually driven with minimal dialogue.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Since AI video tools generate visuals (not speech), scripts should focus on what's seen rather than what's said. Visual storytelling is the priority."
+        },
+        {
+          "question": "What is the recommended approach if the first AI-generated script feels generic?",
+          "type": "mcq",
+          "options": [
+            "Accept it and move on",
+            "Start over with a different tool",
+            "Iterate — ask for alternatives and refine",
+            "Write the entire script manually"
+          ],
+          "correctIndex": 2,
+          "explanation": "Iteration is key. Ask the AI for alternatives, provide more specific references, or request different tones until the script feels unique and compelling."
+        }
+      ]
+    },
+    {
+      "id": "afs-8",
+      "dayNumber": 8,
+      "moduleId": "afs-mod-2",
+      "title": "Visual Storyboarding",
+      "subtitle": "Generate storyboard frames with AI image tools",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "See Before You Shoot",
+          "body": "Hollywood directors storyboard every shot before cameras roll. AI lets you create photorealistic storyboards in minutes — giving you a visual blueprint before spending a single video credit."
+        },
+        {
+          "type": "content",
+          "headline": "Why Storyboard First",
+          "body": "Generating video is expensive (credits) and time-consuming. A storyboard lets you lock in composition, style, and pacing before committing to video generation.",
+          "bullets": [
+            "Save 60-80% on video credits by pre-visualising",
+            "Catch continuity issues before they're baked in",
+            "Experiment with framing and colour freely",
+            "Share with clients for approval before production",
+            "Use as direct reference images for image-to-video"
+          ],
+          "stat": "70%",
+          "statLabel": "Credit savings when storyboarding before video generation"
+        },
+        {
+          "type": "content",
+          "headline": "AI Storyboarding Workflow",
+          "body": "Use Midjourney, DALL-E, or Flux to generate each frame of your shot list as a still image. Then these stills become your image-to-video inputs.",
+          "bullets": [
+            "Convert each shot list entry into an image prompt",
+            "Add \"--ar 16:9\" for cinematic aspect ratio",
+            "Keep style consistent: same colour palette, lighting",
+            "Generate 2-3 options per shot, pick the strongest",
+            "Arrange in sequence to check visual flow"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From Storyboard to Video",
+          "body": "The real power move: use your storyboard frames as direct inputs for image-to-video tools like Runway. This gives you far more control over the final output than text-to-video alone.",
+          "bullets": [
+            "Upload storyboard frame → Runway image-to-video",
+            "Add motion instructions: \"camera dollies forward slowly\"",
+            "Result: Your exact composition, now in motion",
+            "Consistency: Same subject appearance across all shots",
+            "Tip: Keep image simple — complex frames generate messier video"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Storyboard",
+          "body": "Take your shot list from Lesson 7. Generate one AI image per shot using Midjourney, DALL-E, or Flux (free tiers work). Arrange them in order. You now have a visual storyboard for your short film."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of storyboarding before video generation?",
+          "type": "mcq",
+          "options": [
+            "It makes videos longer",
+            "It saves credits by pre-visualising shots",
+            "It replaces the need for prompts",
+            "It automatically generates video"
+          ],
+          "correctIndex": 1,
+          "explanation": "Storyboarding lets you lock in composition and style with cheap image generation before spending expensive video credits on final clips."
+        },
+        {
+          "question": "Storyboard images can be used as direct inputs for image-to-video tools like Runway.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Image-to-video pipelines accept your storyboard frame and animate it, giving you precise control over the starting composition of each shot."
+        },
+        {
+          "question": "What aspect ratio should you use for cinematic storyboard frames?",
+          "type": "mcq",
+          "options": [
+            "1:1 (square)",
+            "4:3 (standard)",
+            "16:9 (widescreen)",
+            "9:16 (vertical)"
+          ],
+          "correctIndex": 2,
+          "explanation": "16:9 is the standard cinematic widescreen ratio used in film and YouTube — it ensures your storyboards match your final video format."
+        }
+      ]
+    },
+    {
+      "id": "afs-9",
+      "dayNumber": 9,
+      "moduleId": "afs-mod-2",
+      "title": "Continuity & Character Consistency",
+      "subtitle": "Keeping subjects consistent across scenes",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Biggest AI Video Challenge",
+          "body": "Your character looks different in every shot. Their hair changes, their clothes shift, their face morphs. This is the #1 problem in AI filmmaking — and there are proven solutions."
+        },
+        {
+          "type": "content",
+          "headline": "Why Consistency Is Hard",
+          "body": "AI video models generate each clip independently. They have no \"memory\" of previous shots. Without deliberate techniques, every generation creates a slightly different version of your subject.",
+          "bullets": [
+            "Each generation is statistically independent",
+            "Small prompt variations cause visual drift",
+            "Faces are especially prone to inconsistency",
+            "Clothing, lighting, and environment all shift",
+            "This is why multi-shot films look amateur without techniques"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Technique 1: Reference Image Anchoring",
+          "body": "The most reliable method: create one definitive reference image of your character and use it as the input for every shot.",
+          "bullets": [
+            "Generate a \"character sheet\" with multiple angles",
+            "Use image-to-video for every shot (never pure text-to-video)",
+            "Keep the same seed/style settings across generations",
+            "Kling and Runway both support character reference uploads",
+            "Tip: Simple, distinctive character designs stay more consistent"
+          ],
+          "stat": "85%",
+          "statLabel": "Consistency improvement when using reference images vs text-only"
+        },
+        {
+          "type": "content",
+          "headline": "Technique 2: Prompt Anchoring & Style Lock",
+          "body": "When reference images aren't possible, use identical descriptive phrases across all prompts to maintain visual consistency.",
+          "bullets": [
+            "Create a \"character block\" — exact same description in every prompt",
+            "Lock style references: same film stock, director, era in all shots",
+            "Use identical lighting descriptions throughout",
+            "Keep environment elements consistent (time of day, weather)",
+            "Copy-paste your character block — don't retype it each time"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Character Sheet",
+          "body": "Design a character for your short film. Generate 3-4 images of them in different poses/angles using the same prompt structure. Save the best as your \"reference sheet.\" This anchors all future shots."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do AI-generated characters look different across shots?",
+          "type": "mcq",
+          "options": [
+            "The AI intentionally varies them",
+            "Each generation is independent with no memory of previous shots",
+            "The tools are broken",
+            "Characters always stay consistent"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI models generate each clip independently — they have no memory or awareness of previous outputs, causing visual drift between shots."
+        },
+        {
+          "question": "Using a reference image for every shot improves character consistency by approximately 85%.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reference image anchoring is the most reliable consistency technique, providing the AI with a visual anchor rather than relying on text descriptions alone."
+        },
+        {
+          "question": "What is a \"character block\" in AI filmmaking?",
+          "type": "mcq",
+          "options": [
+            "A 3D model of the character",
+            "An exact copy-pasted description used in every prompt",
+            "A video clip of the character",
+            "A filter applied in post-production"
+          ],
+          "correctIndex": 1,
+          "explanation": "A character block is the same descriptive text pasted into every prompt — ensuring the AI receives identical character instructions for each shot."
+        }
+      ]
+    },
+    {
+      "id": "afs-10",
+      "dayNumber": 10,
+      "moduleId": "afs-mod-2",
+      "title": "Sound Design & AI Music",
+      "subtitle": "AI-generated soundtracks, SFX, and voiceover",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sound Makes the Film",
+          "body": "Remove the audio from any film and it feels flat, lifeless. Sound is 50% of the cinematic experience — and AI can now generate professional soundtracks, sound effects, and voiceover on demand."
+        },
+        {
+          "type": "content",
+          "headline": "The Audio Stack for AI Films",
+          "body": "A professional AI film has three audio layers that work together. Each can now be generated or sourced with AI tools.",
+          "bullets": [
+            "Layer 1: Music — Sets emotional tone and pacing",
+            "Layer 2: Sound Effects (SFX) — Adds realism and texture",
+            "Layer 3: Voiceover/Dialogue — Narrates or communicates",
+            "Mixing: Balance all three so nothing fights for attention",
+            "Rule: Music at 60%, SFX at 80%, VO at 100% volume as starting point"
+          ],
+          "stat": "50%",
+          "statLabel": "Of the cinematic experience comes from audio, not visuals"
+        },
+        {
+          "type": "content",
+          "headline": "AI Music Generation",
+          "body": "Tools like Suno, Udio, and Stable Audio generate broadcast-quality music from text descriptions. You can match the exact mood, tempo, and genre of your film.",
+          "bullets": [
+            "Suno: Best for full songs with vocals and lyrics",
+            "Udio: Superior audio quality, great instrumentals",
+            "Stable Audio: Precise duration control, stems output",
+            "Tip: Specify BPM, genre, mood, and instruments",
+            "Commercial rights: Check each tool's license for client work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI Voiceover & Sound Effects",
+          "body": "ElevenLabs leads AI voiceover with natural-sounding narration in any tone. For SFX, tools like ElevenLabs Sound Effects and Freesound cover everything.",
+          "bullets": [
+            "ElevenLabs: Ultra-realistic narration in 30+ languages",
+            "Voice cloning: Create a consistent narrator voice",
+            "AI SFX: Describe the sound you need in text",
+            "Ambient layers: Rain, traffic, wind — generate or source freely",
+            "Tip: Layer 2-3 subtle ambient sounds for cinematic depth"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Film",
+          "body": "Open Suno or Udio (free tiers available). Describe the mood of your short film and generate a 30-60 second instrumental track. Then find or generate 2-3 sound effects that match your scenes. Save these for assembly in Lesson 11."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three audio layers in a professional AI film?",
+          "type": "mcq",
+          "options": [
+            "Bass, treble, and mid",
+            "Music, sound effects, and voiceover",
+            "Dialogue, narration, and subtitles",
+            "Intro, main, and outro"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three layers are music (emotional tone), sound effects (realism and texture), and voiceover/dialogue (narration). Balanced together they create cinematic audio."
+        },
+        {
+          "question": "Suno and Udio can generate broadcast-quality music from text descriptions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Both Suno and Udio generate professional-quality music from text prompts describing genre, mood, tempo, and instrumentation."
+        },
+        {
+          "question": "Which tool leads in AI voiceover with ultra-realistic narration?",
+          "type": "mcq",
+          "options": [
+            "Suno",
+            "Midjourney",
+            "ElevenLabs",
+            "Runway"
+          ],
+          "correctIndex": 2,
+          "explanation": "ElevenLabs is the leading AI voiceover tool, offering natural-sounding narration in 30+ languages with voice cloning capabilities."
+        }
+      ]
+    },
+    {
+      "id": "afs-11",
+      "dayNumber": 11,
+      "moduleId": "afs-mod-2",
+      "title": "Editing Your AI Film",
+      "subtitle": "Assembling cuts, pacing, and transitions",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Edit Is Where Films Are Made",
+          "body": "You have clips, music, and sound effects. Now comes the craft that transforms raw footage into a story — editing. This is where amateur content becomes cinematic."
+        },
+        {
+          "type": "content",
+          "headline": "Your Editing Toolkit",
+          "body": "You don't need expensive software. Free and affordable tools handle AI film editing perfectly.",
+          "bullets": [
+            "CapCut (Free): Best for short-form, mobile-friendly editing",
+            "DaVinci Resolve (Free): Professional-grade, colour grading included",
+            "Adobe Premiere Pro: Industry standard, subscription-based",
+            "Descript: AI-powered editing with transcript-based cuts",
+            "For beginners: Start with CapCut — it's the fastest path to results"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pacing & Rhythm",
+          "body": "Great editing is about rhythm. Each cut should feel intentional — driven by the music beat, an emotional shift, or a narrative transition.",
+          "bullets": [
+            "Cut on the beat: Align scene changes to music hits",
+            "Hold shots longer for tension, cut faster for energy",
+            "3-second rule: Most shots work best at 3-5 seconds",
+            "Let key moments breathe — don't rush your best visuals",
+            "Match pacing to emotion: slow = reflective, fast = exciting"
+          ],
+          "stat": "3-5s",
+          "statLabel": "Optimal shot duration for most AI short film scenes"
+        },
+        {
+          "type": "content",
+          "headline": "Transitions That Work",
+          "body": "Forget star wipes and spinning transitions. Cinematic films use simple, intentional transitions that serve the story.",
+          "bullets": [
+            "Hard cut: Default for most scene changes (clean, professional)",
+            "Cross-dissolve: Time passing or emotional shift",
+            "Match cut: Visual similarity bridges two different scenes",
+            "Fade to black: Chapter ending, major time skip",
+            "Rule: If a transition draws attention to itself, it's wrong"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Assemble Your Film",
+          "body": "Import your generated clips into CapCut or DaVinci Resolve. Arrange them in story order. Add your AI music track underneath. Cut clips to the beat. Add 1-2 cross-dissolves where scenes shift emotionally. Export at 1080p."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which free editing tool is recommended for beginners making AI short films?",
+          "type": "mcq",
+          "options": [
+            "Final Cut Pro",
+            "DaVinci Resolve",
+            "CapCut",
+            "After Effects"
+          ],
+          "correctIndex": 2,
+          "explanation": "CapCut is free, intuitive, and the fastest path to results for beginners. It handles short-form content editing perfectly."
+        },
+        {
+          "question": "Most shots in an AI short film work best at 3-5 seconds duration.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 3-5 second sweet spot gives viewers enough time to absorb the visual without losing momentum in the edit."
+        },
+        {
+          "question": "What is the default transition type for professional cinematic editing?",
+          "type": "mcq",
+          "options": [
+            "Cross-dissolve",
+            "Star wipe",
+            "Hard cut",
+            "Fade to white"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hard cuts are the default in professional filmmaking — they're clean, invisible, and let the content speak without distraction."
+        }
+      ]
+    },
+    {
+      "id": "afs-12",
+      "dayNumber": 12,
+      "moduleId": "afs-mod-3",
+      "title": "Brand Video Fundamentals",
+      "subtitle": "What makes a brand video convert",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Brands Pay Premium for Video",
+          "body": "A single 60-second brand video can cost £5,000-£50,000 from a traditional agency. With AI, you can deliver the same impact at a fraction of the cost — and businesses are desperate for this."
+        },
+        {
+          "type": "content",
+          "headline": "What Brand Video Actually Is",
+          "body": "Brand video isn't just \"a video about a brand.\" It's strategic visual storytelling designed to achieve a specific business outcome.",
+          "bullets": [
+            "Awareness: Make people know you exist (top of funnel)",
+            "Consideration: Show why you're the right choice (mid funnel)",
+            "Conversion: Drive immediate action (bottom of funnel)",
+            "Retention: Keep customers engaged and loyal",
+            "Each type has different length, style, and call-to-action"
+          ],
+          "stat": "£5K-50K",
+          "statLabel": "Traditional agency cost for a single 60-second brand video"
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of High-Converting Brand Video",
+          "body": "Videos that drive results follow a proven formula. Every second earns the next second of attention.",
+          "bullets": [
+            "Hook (0-3s): Pattern interrupt — stop the scroll instantly",
+            "Problem (3-10s): Articulate their pain clearly",
+            "Solution (10-25s): Show the transformation your brand enables",
+            "Proof (25-40s): Evidence — results, testimonials, demo",
+            "CTA (40-60s): Clear, single action to take next"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI Brand Video Advantages",
+          "body": "AI video creation has specific advantages for brand content that traditional production can't match.",
+          "bullets": [
+            "Speed: Deliver in days, not weeks",
+            "Iteration: Test 10 versions for the cost of 1 traditional",
+            "Consistency: Same style across all content effortlessly",
+            "Scale: Produce for every platform simultaneously",
+            "Personalisation: Localise for different markets easily"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Deconstruct a Brand Video",
+          "body": "Find a brand video ad on YouTube or social media (Nike, Apple, or any brand you admire). Map its structure: Hook → Problem → Solution → Proof → CTA. Note the timing of each section. This pattern becomes your template."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should the first 3 seconds of a brand video accomplish?",
+          "type": "mcq",
+          "options": [
+            "Show the logo",
+            "Pattern interrupt — stop the scroll",
+            "Explain the product features",
+            "Display the price"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first 3 seconds must hook attention with a pattern interrupt. If you don't stop the scroll, nothing else matters."
+        },
+        {
+          "question": "AI brand videos can be produced in days rather than the weeks required by traditional agencies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI video tools dramatically compress production timelines — what takes traditional agencies weeks of filming and editing can be done in days with AI."
+        },
+        {
+          "question": "What is the correct structure for a high-converting brand video?",
+          "type": "mcq",
+          "options": [
+            "Logo → Features → Price → Contact",
+            "Hook → Problem → Solution → Proof → CTA",
+            "Intro → Middle → End",
+            "Testimonial → Demo → Pricing"
+          ],
+          "correctIndex": 1,
+          "explanation": "The proven structure is Hook (stop attention), Problem (pain), Solution (transformation), Proof (evidence), CTA (action) — each second earning the next."
+        }
+      ]
+    },
+    {
+      "id": "afs-13",
+      "dayNumber": 13,
+      "moduleId": "afs-mod-3",
+      "title": "Product Videos with AI",
+      "subtitle": "Showcase products without a studio",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Studio-Quality Product Shots, Zero Studio",
+          "body": "Product photography studios charge £500+ per day. AI can generate photorealistic product scenes, dynamic reveals, and lifestyle shots — all from a single product photo."
+        },
+        {
+          "type": "content",
+          "headline": "AI Product Video Types",
+          "body": "Different products need different video treatments. Know which type works for your client's product category.",
+          "bullets": [
+            "Hero Reveal: Dramatic entrance, cinematic lighting",
+            "Lifestyle Context: Product in use, real-world setting",
+            "360° Showcase: Rotating view showing all angles",
+            "Feature Highlight: Zoom into specific details",
+            "Before/After: Transformation the product enables"
+          ],
+          "stat": "73%",
+          "statLabel": "Of shoppers are more likely to buy after watching a product video"
+        },
+        {
+          "type": "content",
+          "headline": "The Product Video Workflow",
+          "body": "A systematic process for turning any product photo into a dynamic, selling video.",
+          "bullets": [
+            "Step 1: Get the best product photo (clean background, high-res)",
+            "Step 2: Use AI to place product in aspirational environments",
+            "Step 3: Generate image-to-video with slow, elegant motion",
+            "Step 4: Add subtle SFX (whoosh, ambient, surface texture)",
+            "Step 5: Overlay text with key feature or price point"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prompting for Product Videos",
+          "body": "Product videos need specific prompt language to achieve that premium, commercial feel.",
+          "bullets": [
+            "Use: \"product photography, studio lighting, premium feel\"",
+            "Movement: \"slow 360 rotation\" or \"gentle dolly in\"",
+            "Environment: \"marble surface,\" \"soft gradient background\"",
+            "Lighting: \"rim light, soft key light, no harsh shadows\"",
+            "Avoid: Fast camera moves, complex backgrounds, multiple products"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create a Product Video",
+          "body": "Pick any product (something on your desk, a favourite brand). Take or find a clean photo of it. Use AI to generate it in 2-3 different environments. Then use image-to-video to add gentle motion. You now have a product showcase reel."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of shoppers are more likely to buy after watching a product video?",
+          "type": "mcq",
+          "options": [
+            "45%",
+            "73%",
+            "88%",
+            "33%"
+          ],
+          "correctIndex": 1,
+          "explanation": "73% of shoppers say product video makes them more likely to purchase — making it one of the highest-ROI content types for e-commerce."
+        },
+        {
+          "question": "The best product videos typically use fast camera movements for energy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Product videos work best with slow, elegant motion — gentle dolly-ins, slow rotations. Fast movement looks chaotic and distracts from the product itself."
+        },
+        {
+          "question": "What is the first step in the AI product video workflow?",
+          "type": "mcq",
+          "options": [
+            "Add text overlays",
+            "Get a high-quality product photo with clean background",
+            "Generate sound effects",
+            "Choose a music track"
+          ],
+          "correctIndex": 1,
+          "explanation": "Everything starts with a great product photo — clean background, high resolution. This becomes the input for AI environment placement and video generation."
+        }
+      ]
+    },
+    {
+      "id": "afs-14",
+      "dayNumber": 14,
+      "moduleId": "afs-mod-3",
+      "title": "Testimonial & Social Proof Videos",
+      "subtitle": "AI-enhanced customer story videos",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Nothing Sells Like Social Proof",
+          "body": "People trust other people more than brands. Testimonial videos convert at 2× the rate of feature videos — and AI lets you produce them at scale without flying a film crew to every customer."
+        },
+        {
+          "type": "content",
+          "headline": "AI-Enhanced Testimonial Formats",
+          "body": "You don't need to replace real customer voices — you enhance them. AI handles the production quality that makes amateur testimonials look professional.",
+          "bullets": [
+            "Text-to-video: Animate customer quotes into visual stories",
+            "Audio enhancement: Clean up phone-recorded testimonials",
+            "B-roll generation: Create relevant visuals to cover jump cuts",
+            "Subtitle styling: Professional animated captions",
+            "Compilation: Edit 10 short clips into one powerful montage"
+          ],
+          "stat": "2×",
+          "statLabel": "Conversion rate improvement of testimonial videos vs feature videos"
+        },
+        {
+          "type": "content",
+          "headline": "The Customer Story Framework",
+          "body": "Every great testimonial follows a narrative arc. Coach your client's customers to share their story in this structure.",
+          "bullets": [
+            "Before: What was life/business like before? (the pain)",
+            "Decision: What made them choose this product/service?",
+            "Experience: What was the implementation like?",
+            "After: What's different now? (specific results)",
+            "Recommend: Would they recommend it? Why?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Production Techniques",
+          "body": "Practical techniques to produce professional testimonial videos using AI tools.",
+          "bullets": [
+            "Get audio via voice memo — no filming needed",
+            "Generate B-roll that illustrates their story (AI video)",
+            "Use AI voiceover if customer is camera-shy (with permission)",
+            "Add kinetic text for key stats and quotes",
+            "Background music: Subtle, uplifting, never overpowering"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a Testimonial Template",
+          "body": "Create a 30-second testimonial video template: Find or write a sample customer quote. Generate 3-4 AI B-roll clips that illustrate the transformation. Add subtle music, animated text of the quote, and a CTA at the end. This template works for any client."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much more effective are testimonial videos compared to feature videos for conversion?",
+          "type": "mcq",
+          "options": [
+            "50% more",
+            "2× (double)",
+            "3× (triple)",
+            "About the same"
+          ],
+          "correctIndex": 1,
+          "explanation": "Testimonial videos convert at twice the rate of feature-focused videos because people trust other customers more than brand claims."
+        },
+        {
+          "question": "AI testimonial videos should completely replace real customer voices with AI-generated ones.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI should enhance real customer testimonials (clean audio, add B-roll, style subtitles) — not replace authentic voices. Authenticity is what makes testimonials powerful."
+        },
+        {
+          "question": "What is the correct narrative arc for a customer testimonial?",
+          "type": "mcq",
+          "options": [
+            "Features → Price → Comparison",
+            "Before → Decision → Experience → After → Recommend",
+            "Problem → Solution → Demo",
+            "Introduction → Middle → Conclusion"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Before → Decision → Experience → After → Recommend framework captures the full customer journey and creates an emotionally compelling story."
+        }
+      ]
+    },
+    {
+      "id": "afs-15",
+      "dayNumber": 15,
+      "moduleId": "afs-mod-3",
+      "title": "YouTube Content Machine",
+      "subtitle": "Faceless YouTube channels powered by AI",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Faceless Channels Are Printing Money",
+          "body": "Thousands of YouTube channels earn £5K-£50K/month without ever showing a face. They use AI for scripts, visuals, voiceover, and editing. You now have every skill to build one."
+        },
+        {
+          "type": "content",
+          "headline": "Faceless YouTube Niches That Work",
+          "body": "Not all niches work for AI-generated faceless content. The best ones are visually rich, evergreen, and have high CPM (ad revenue per view).",
+          "bullets": [
+            "Luxury/Travel: AI cinematic footage of destinations",
+            "History/Documentaries: AI-generated historical visuals",
+            "Science/Space: Cosmic and microscopic AI visuals",
+            "Motivation/Self-Improvement: Visual metaphors + AI VO",
+            "Finance/Business: Clean graphics + AI narration"
+          ],
+          "stat": "£10-30",
+          "statLabel": "CPM range for high-value faceless YouTube niches"
+        },
+        {
+          "type": "content",
+          "headline": "The AI YouTube Production Pipeline",
+          "body": "A streamlined workflow that lets you publish 3-5 videos per week — entirely AI-powered.",
+          "bullets": [
+            "Step 1: Use ChatGPT/Claude to research trending topics",
+            "Step 2: Generate a 5-8 minute script with hook + retention loops",
+            "Step 3: Create AI voiceover with ElevenLabs",
+            "Step 4: Generate AI B-roll for every scene (Runway/Kling)",
+            "Step 5: Edit in CapCut, add captions, export",
+            "Step 6: Optimise title + thumbnail with AI assistance"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Retention & Algorithm Secrets",
+          "body": "YouTube rewards watch time above all else. Your AI content must be engineered to keep viewers watching.",
+          "bullets": [
+            "Pattern interrupt every 30 seconds (new visual, sound, energy shift)",
+            "Open loops: Tease what's coming to prevent clicks away",
+            "First 30 seconds = most critical (hook or lose them)",
+            "Vary shot types: Wide → Close → Motion → Text overlay",
+            "End with a strong CTA to watch another video (session time)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your Channel",
+          "body": "Choose a niche from the list above. Use AI to generate 10 video title ideas with high click potential. Pick your best 3. Write a script outline for video #1 using the retention principles. This is your channel blueprint."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important metric YouTube uses to recommend videos?",
+          "type": "mcq",
+          "options": [
+            "Number of likes",
+            "Watch time / retention",
+            "Number of comments",
+            "Upload frequency"
+          ],
+          "correctIndex": 1,
+          "explanation": "YouTube's algorithm prioritises watch time and retention above all other metrics. Videos that keep viewers watching get recommended more."
+        },
+        {
+          "question": "Faceless YouTube channels can earn £5K-£50K per month using AI-generated content.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Thousands of faceless channels in high-CPM niches earn significant revenue using AI for scripts, visuals, voiceover, and editing."
+        },
+        {
+          "question": "How often should you use \"pattern interrupts\" in YouTube content?",
+          "type": "mcq",
+          "options": [
+            "Every 5 minutes",
+            "Every 30 seconds",
+            "Only at the beginning",
+            "Once per video"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pattern interrupts every 30 seconds (new visual, sound change, energy shift) keep viewers engaged and prevent them from clicking away."
+        }
+      ]
+    },
+    {
+      "id": "afs-16",
+      "dayNumber": 16,
+      "moduleId": "afs-mod-3",
+      "title": "Short-Form Viral Content",
+      "subtitle": "TikTok, Reels, and Shorts with AI",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Viral Clip Can Change Everything",
+          "body": "A single 15-60 second AI video can reach millions organically. Short-form is the fastest path to audience, clients, and revenue — and AI gives you an unfair production advantage."
+        },
+        {
+          "type": "content",
+          "headline": "Platform-Specific Formats",
+          "body": "Each platform has subtle differences in what performs. Optimise your AI content for where it will live.",
+          "bullets": [
+            "TikTok: Raw energy, trend-riding, text overlays, fast cuts",
+            "Instagram Reels: Polished aesthetic, aspirational, smooth transitions",
+            "YouTube Shorts: Educational hooks, \"Did you know?\" format",
+            "All platforms: 9:16 vertical, captions mandatory, hook in 1 second",
+            "Tip: Repurpose one concept into 3 platform-native versions"
+          ],
+          "stat": "1 sec",
+          "statLabel": "Time you have to hook a viewer on short-form before they swipe"
+        },
+        {
+          "type": "content",
+          "headline": "AI Short-Form Video Formulas",
+          "body": "Proven content formulas that work exceptionally well with AI-generated visuals.",
+          "bullets": [
+            "Satisfying loops: Mesmerising visuals that auto-replay",
+            "Mini-documentaries: 60-second stories with cinematic AI footage",
+            "Before/After: Transformations powered by AI visuals",
+            "Explainers: Complex topics made visual with AI",
+            "\"POV\" content: First-person perspective AI scenes",
+            "Trend mashups: Current audio trends + AI-generated visuals"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Viral Checklist",
+          "body": "Before posting any AI short-form content, run it through this quality gate.",
+          "bullets": [
+            "Hook test: Would YOU stop scrolling for this in 1 second?",
+            "Loop test: Does the ending connect to the beginning?",
+            "Sound test: Does it work both with and without audio?",
+            "Share test: Would someone tag a friend in the comments?",
+            "Replay test: Is there a reason to watch it twice?"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create a Viral-Ready Short",
+          "body": "Pick one formula (satisfying loop, mini-doc, or before/after). Generate 3-5 AI clips in 9:16 vertical format. Edit them into a 15-30 second piece with trending audio or AI music. Add captions. Post it to your chosen platform."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What aspect ratio should all short-form content use?",
+          "type": "mcq",
+          "options": [
+            "16:9 (horizontal)",
+            "1:1 (square)",
+            "9:16 (vertical)",
+            "4:3 (standard)"
+          ],
+          "correctIndex": 2,
+          "explanation": "9:16 vertical is the standard for all short-form platforms (TikTok, Reels, Shorts) — it fills the full mobile screen."
+        },
+        {
+          "question": "Captions are optional on short-form video content.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Captions are mandatory — most viewers watch without sound initially, and captions significantly increase watch time and accessibility."
+        },
+        {
+          "question": "Which short-form formula involves mesmerising visuals that encourage auto-replay?",
+          "type": "mcq",
+          "options": [
+            "Mini-documentary",
+            "Satisfying loop",
+            "Explainer",
+            "Before/After"
+          ],
+          "correctIndex": 1,
+          "explanation": "Satisfying loops create mesmerising visuals where the ending connects seamlessly back to the beginning, encouraging viewers to watch multiple times."
+        }
+      ]
+    },
+    {
+      "id": "afs-17",
+      "dayNumber": 17,
+      "moduleId": "afs-mod-4",
+      "title": "Building Your Video Portfolio",
+      "subtitle": "Showreel structure and presentation",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Portfolio Is Your Proof",
+          "body": "No one cares about your tools or process. Clients buy results. A killer portfolio — even with 100% AI-generated work — lands you £2,500+ projects when it looks professional."
+        },
+        {
+          "type": "content",
+          "headline": "Portfolio Structure",
+          "body": "Organise your portfolio to make the buying decision easy. Clients should see your best work within 10 seconds and understand what you offer within 30.",
+          "bullets": [
+            "Showreel (30-60s): Your absolute best clips, fast-paced montage",
+            "Category sections: Brand, Product, Short Film, Social",
+            "Case studies: 2-3 projects with context (brief, process, result)",
+            "About: Short bio positioning you as an AI video specialist",
+            "CTA: Clear way to hire you or book a call"
+          ],
+          "stat": "10 sec",
+          "statLabel": "Time a potential client spends before deciding to explore further"
+        },
+        {
+          "type": "content",
+          "headline": "The Perfect Showreel",
+          "body": "Your showreel is your most important asset. It should be a high-energy highlight reel of your absolute best work.",
+          "bullets": [
+            "Length: 30-60 seconds maximum (shorter = more impact)",
+            "Open with your single strongest shot (the hook)",
+            "Cut to the beat — music drives the pacing",
+            "Variety: Show range (different styles, subjects, moods)",
+            "End with a title card: your name + contact",
+            "Update monthly: Replace weakest clip with newest best"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to Host",
+          "body": "Your portfolio needs to live where clients can find it and be impressed.",
+          "bullets": [
+            "Personal website: Squarespace, Framer, or custom build",
+            "Vimeo: Professional video hosting, better than YouTube for portfolios",
+            "Instagram grid: Curated feed of your best clips",
+            "Behance: Creative community, good for discovery",
+            "Tip: Link everything to one central portfolio page"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Showreel",
+          "body": "Gather your 5-8 best AI clips from this course. Edit them into a 30-second showreel cut to music. Focus on variety and impact. Upload to Vimeo or your website. This is now your calling card."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long should a video portfolio showreel be?",
+          "type": "mcq",
+          "options": [
+            "3-5 minutes",
+            "2 minutes",
+            "30-60 seconds",
+            "10 seconds"
+          ],
+          "correctIndex": 2,
+          "explanation": "30-60 seconds is the sweet spot — long enough to show range, short enough to hold attention. Shorter reels are more impactful than longer ones."
+        },
+        {
+          "question": "You should update your showreel monthly by replacing your weakest clip with your newest best work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Regular updates ensure your showreel always represents your current skill level. As you improve, old work should be cycled out."
+        },
+        {
+          "question": "What should you open your showreel with?",
+          "type": "mcq",
+          "options": [
+            "Your logo animation",
+            "Your single strongest shot",
+            "A text introduction",
+            "Client testimonials"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lead with your absolute best shot — it hooks viewers immediately and sets the quality expectation for everything that follows."
+        }
+      ]
+    },
+    {
+      "id": "afs-18",
+      "dayNumber": 18,
+      "moduleId": "afs-mod-4",
+      "title": "Freelance AI Video Services",
+      "subtitle": "Pricing and packaging video production",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Get Paid to Create",
+          "body": "Businesses need video yesterday. They don't care if it's AI or traditional — they care about speed, quality, and results. Position yourself correctly and you'll never struggle to find clients."
+        },
+        {
+          "type": "content",
+          "headline": "Service Packages That Sell",
+          "body": "Don't sell \"AI video.\" Sell outcomes. Package your services into clear tiers that match different budgets and needs.",
+          "bullets": [
+            "Starter (£500-£1,000): 3-5 short-form videos, basic editing",
+            "Growth (£1,500-£3,000): Brand video + 10 social clips + music",
+            "Premium (£3,000-£7,500): Full campaign: hero video, social suite, ads",
+            "Retainer (£1,500-£3,000/mo): Ongoing content: 10-20 videos/month",
+            "Tip: Always include a revision round in your pricing"
+          ],
+          "stat": "£2,500",
+          "statLabel": "Average project value for AI video freelancers with strong portfolios"
+        },
+        {
+          "type": "content",
+          "headline": "Finding Your First Clients",
+          "body": "You don't need a massive following. You need 3-5 paying clients to build momentum and case studies.",
+          "bullets": [
+            "Local businesses: Restaurants, gyms, salons — they need video but can't afford agencies",
+            "E-commerce brands: Product videos for every SKU",
+            "Coaches/consultants: Personal brand content",
+            "Real estate: Property showcase videos",
+            "Cold outreach: Show them what their content COULD look like with AI"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Irresistible Pitch",
+          "body": "Your pitch should make it impossible for a business owner to say no.",
+          "bullets": [
+            "Lead with a free sample: Create a 15-second clip of THEIR brand",
+            "Compare: Show the £5K+ agency quote vs your pricing",
+            "Speed: Promise delivery in 3-5 days, not 3-5 weeks",
+            "Show ROI: \"This video style increased conversions 40% for Brand X\"",
+            "Remove risk: Offer money-back if they're not satisfied"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Service Menu",
+          "body": "Write out your 3 service tiers with pricing, deliverables, and turnaround time. Then pick one local business and create a free 15-second sample video using their branding (colours, logo). Send it to them with your pitch."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended approach to pitching AI video services?",
+          "type": "mcq",
+          "options": [
+            "Send a long email about AI technology",
+            "Lead with a free sample of THEIR brand",
+            "Only advertise on social media",
+            "Wait for inbound enquiries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leading with a free sample tailored to their brand makes the value immediately tangible. It's nearly impossible to ignore seeing your own brand in a professional video."
+        },
+        {
+          "question": "You should sell \"AI video\" services rather than outcomes and results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients don't care about the tools — they care about speed, quality, and results. Sell the outcome (conversions, content, brand presence), not the technology."
+        },
+        {
+          "question": "What is the typical delivery turnaround for AI video services compared to traditional agencies?",
+          "type": "mcq",
+          "options": [
+            "Same timeframe (3-5 weeks)",
+            "3-5 days vs 3-5 weeks",
+            "Instant vs 1 week",
+            "1 month vs 3 months"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI video can be delivered in 3-5 days compared to 3-5 weeks for traditional agencies — this speed is a major competitive advantage."
+        }
+      ]
+    },
+    {
+      "id": "afs-19",
+      "dayNumber": 19,
+      "moduleId": "afs-mod-4",
+      "title": "Selling Stock AI Footage",
+      "subtitle": "Passive income from AI-generated clips",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Earn While You Sleep",
+          "body": "Every AI clip you create can be sold thousands of times on stock platforms. Build a library once, earn passive income forever. Some AI creators make £3,000+/month from stock footage alone."
+        },
+        {
+          "type": "content",
+          "headline": "Stock Footage Platforms",
+          "body": "Multiple platforms accept AI-generated footage. Each has different audiences, pricing, and requirements.",
+          "bullets": [
+            "Shutterstock: Largest marketplace, accepts AI content (labelled)",
+            "Adobe Stock: Integrated into Creative Cloud, high demand",
+            "Pond5: Premium pricing, creative/artistic clips sell well",
+            "Artgrid: Subscription model, cinematic focus",
+            "Tip: Upload to 2-3 platforms simultaneously for maximum reach"
+          ],
+          "stat": "£3K+",
+          "statLabel": "Monthly passive income achievable with a library of 500+ quality clips"
+        },
+        {
+          "type": "content",
+          "headline": "What Sells on Stock Platforms",
+          "body": "Not all footage sells equally. Understand market demand to create clips that generate consistent revenue.",
+          "bullets": [
+            "Business/corporate: Office scenes, teamwork, technology",
+            "Nature/aerial: Landscapes, weather, water, seasons",
+            "Abstract/motion: Particles, gradients, textures, loops",
+            "Lifestyle: Wellness, fitness, cooking, travel",
+            "Trending: AI/tech visuals, sustainability, remote work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Optimising for Sales",
+          "body": "Upload quality and metadata determine whether your clips get found and purchased.",
+          "bullets": [
+            "Resolution: Always upload 4K when possible",
+            "Duration: 10-30 seconds is the sweet spot",
+            "Keywords: Use 20-30 relevant, specific tags per clip",
+            "Titles: Descriptive, keyword-rich titles",
+            "Collections: Group related clips for bundle purchases",
+            "Volume: Aim for 50+ clips/month to build momentum"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Upload Your First 5 Clips",
+          "body": "Generate 5 high-quality stock clips in a popular category (abstract, nature, or business). Ensure 4K resolution, 10-20 seconds each. Write keyword-rich titles and 25+ tags. Upload to Shutterstock or Adobe Stock. Track your first sales."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which stock platform is the largest marketplace for video footage?",
+          "type": "mcq",
+          "options": [
+            "Pond5",
+            "Artgrid",
+            "Shutterstock",
+            "Vimeo"
+          ],
+          "correctIndex": 2,
+          "explanation": "Shutterstock is the world's largest stock marketplace with the highest volume of buyers. They accept AI-generated content when properly labelled."
+        },
+        {
+          "question": "Stock footage clips should ideally be 10-30 seconds long for best sales.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "10-30 seconds is the sweet spot for stock footage — long enough to be useful in edits, short enough to fit various project needs."
+        },
+        {
+          "question": "How many clips per month should you aim to upload to build momentum?",
+          "type": "mcq",
+          "options": [
+            "5-10",
+            "15-20",
+            "50+",
+            "100+"
+          ],
+          "correctIndex": 2,
+          "explanation": "Aim for 50+ clips per month to build a library quickly. Volume is key to passive income — more clips means more chances of being found and purchased."
+        }
+      ]
+    },
+    {
+      "id": "afs-20",
+      "dayNumber": 20,
+      "moduleId": "afs-mod-4",
+      "title": "AI Video for Clients",
+      "subtitle": "Managing projects, revisions, and delivery",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Professional Delivery = Repeat Clients",
+          "body": "Great video is only half the job. How you manage the project — communication, process, delivery — determines whether a one-off becomes a retainer client."
+        },
+        {
+          "type": "content",
+          "headline": "The Client Project Workflow",
+          "body": "A structured process makes you look professional, sets expectations, and prevents scope creep.",
+          "bullets": [
+            "1. Discovery call: Understand goals, audience, brand guidelines",
+            "2. Creative brief: Document everything in writing",
+            "3. Storyboard/concept: Visual mockup for approval before production",
+            "4. First draft: Deliver rough cut for feedback",
+            "5. Revisions: 1-2 rounds included in pricing",
+            "6. Final delivery: Multiple formats for all platforms"
+          ],
+          "stat": "80%",
+          "statLabel": "Of client issues come from unclear expectations set at the start"
+        },
+        {
+          "type": "content",
+          "headline": "Managing Revisions",
+          "body": "Revisions are where projects go off the rails. Set boundaries early and stick to them professionally.",
+          "bullets": [
+            "Include 2 revision rounds in your contract (industry standard)",
+            "Define what counts as a revision vs a new direction",
+            "Present 2-3 options at concept stage (avoids later pivots)",
+            "Use timestamp-based feedback: \"At 0:15, change the colour to...\"",
+            "Additional revisions beyond scope: Quote them immediately"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Delivery & File Formats",
+          "body": "Deliver professionally with all the formats your client needs. This small extra effort creates massive client satisfaction.",
+          "bullets": [
+            "Master file: Full quality MP4 (H.264, 4K or 1080p)",
+            "Social formats: 9:16 (Stories/Reels), 1:1 (Feed), 16:9 (YouTube)",
+            "Thumbnails: Still frames exported as PNG for each video",
+            "Captions: SRT file for accessibility",
+            "Delivery: Google Drive or Frame.io link (not email attachments)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Client Template",
+          "body": "Build a creative brief template (Google Doc) with sections: Client goals, Target audience, Brand guidelines, Video style, Key messages, Deliverables, Timeline, Revision policy. Use this for every future project."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many revision rounds should you include in standard client contracts?",
+          "type": "mcq",
+          "options": [
+            "Unlimited",
+            "1-2 rounds",
+            "5 rounds",
+            "None — charge for all revisions"
+          ],
+          "correctIndex": 1,
+          "explanation": "1-2 revision rounds is industry standard. It gives clients flexibility while protecting you from endless changes. Additional rounds are quoted separately."
+        },
+        {
+          "question": "80% of client issues come from unclear expectations set at the start.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Most project problems stem from misaligned expectations. A thorough discovery call and written creative brief prevent the majority of issues."
+        },
+        {
+          "question": "What is the recommended way to deliver final video files to clients?",
+          "type": "mcq",
+          "options": [
+            "Email attachments",
+            "Google Drive or Frame.io link",
+            "USB drive",
+            "WhatsApp"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cloud links (Google Drive or Frame.io) allow easy access, multiple format downloads, and don't hit email size limits. Professional and convenient."
+        }
+      ]
+    },
+    {
+      "id": "afs-21",
+      "dayNumber": 21,
+      "moduleId": "afs-mod-4",
+      "title": "Your AI Studio Launch Plan",
+      "subtitle": "30-day action plan to go live as an AI filmmaker",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Student to Studio",
+          "body": "You now have every skill to launch a real AI video business. This final lesson gives you the exact 30-day plan to go from course graduate to earning client."
+        },
+        {
+          "type": "content",
+          "headline": "Week 1: Foundation",
+          "body": "Set up your professional presence and create your launch assets.",
+          "bullets": [
+            "Day 1-2: Finalise your showreel (30-60 seconds)",
+            "Day 3-4: Build your portfolio page (website or Behance)",
+            "Day 5: Write your service packages and pricing",
+            "Day 6: Set up business essentials (email, invoicing, contract template)",
+            "Day 7: Post your showreel on LinkedIn + Instagram"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Week 2-3: Outreach & First Clients",
+          "body": "Actively pursue your first paying clients with a systematic approach.",
+          "bullets": [
+            "Create 5 free sample videos for dream clients (personalised)",
+            "Send 10 cold outreach messages per day with samples attached",
+            "Post daily AI video content on social media (build authority)",
+            "Join relevant communities (Facebook groups, Reddit, Discord)",
+            "Offer \"launch pricing\" — 50% off for your first 3 clients",
+            "Follow up on every conversation within 24 hours"
+          ],
+          "stat": "30",
+          "statLabel": "Days from today to your first paid AI video project"
+        },
+        {
+          "type": "content",
+          "headline": "Week 4: Scale & Systematise",
+          "body": "Turn early wins into a sustainable business system.",
+          "bullets": [
+            "Collect testimonials from first clients (video if possible)",
+            "Create templates for repeat project types",
+            "Start uploading stock footage (50 clips minimum)",
+            "Set up a referral system (offer 10% commission)",
+            "Raise prices by 20% after your first 3 projects",
+            "Goal: £3,000+ monthly revenue within 90 days"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Launch Today",
+          "body": "Open your calendar. Block time for Week 1 actions starting tomorrow. Create your first free sample video for a local business tonight. Send it with your pitch. Your AI filmmaking studio is officially open for business."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you create in Week 1 of your studio launch?",
+          "type": "mcq",
+          "options": [
+            "Start cold outreach immediately",
+            "Showreel, portfolio, service packages, and business essentials",
+            "Buy expensive equipment",
+            "Wait for clients to come to you"
+          ],
+          "correctIndex": 1,
+          "explanation": "Week 1 is about foundations: a professional showreel, portfolio page, clear pricing, and business setup. This gives you credibility before outreach begins."
+        },
+        {
+          "question": "Offering 50% off \"launch pricing\" for your first 3 clients is a recommended strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Launch pricing reduces risk for early clients, helps you build case studies and testimonials quickly, and gives you real-world experience to justify higher prices later."
+        },
+        {
+          "question": "What is the revenue goal within 90 days of launching your AI video studio?",
+          "type": "mcq",
+          "options": [
+            "£500/month",
+            "£1,000/month",
+            "£3,000+/month",
+            "£10,000/month"
+          ],
+          "correctIndex": 2,
+          "explanation": "£3,000+ monthly revenue within 90 days is an achievable target with consistent outreach, a strong portfolio, and multiple income streams (clients + stock footage)."
+        }
+      ]
+    }
+  ]
+}

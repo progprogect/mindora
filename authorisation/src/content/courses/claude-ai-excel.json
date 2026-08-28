@@ -1,0 +1,1464 @@
+{
+  "id": "claude-ai-excel",
+  "title": "Master Claude AI for Excel",
+  "subtitle": "Use AI to understand, fix, and build spreadsheets — no advanced Excel skills needed.",
+  "totalDays": 15,
+  "totalXp": 375,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Getting Started",
+      "subtitle": "Set up Claude in Excel and learn the basics",
+      "days": "Lessons 1–5",
+      "skill": "Have Claude installed in Excel and know how to ask it effective questions about any spreadsheet",
+      "lessonIds": [
+        "lesson-1-what-is-claude-excel",
+        "lesson-2-install-and-setup",
+        "lesson-3-first-conversation",
+        "lesson-4-art-of-asking",
+        "lesson-5-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Everyday Excel Tasks",
+      "subtitle": "Use Claude to solve real spreadsheet problems",
+      "days": "Lessons 6–10",
+      "skill": "Confidently use Claude to explain formulas, fix errors, clean data, and build new formulas from scratch",
+      "lessonIds": [
+        "lesson-6-understand-any-formula",
+        "lesson-7-fix-errors-instantly",
+        "lesson-8-clean-messy-data",
+        "lesson-9-build-formulas",
+        "lesson-10-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Power Workflows",
+      "subtitle": "Go from user to power user",
+      "days": "Lessons 11–15",
+      "skill": "Analyse data, build models, and use Claude safely and confidently in any professional spreadsheet workflow",
+      "lessonIds": [
+        "lesson-11-analyse-data",
+        "lesson-12-create-charts",
+        "lesson-13-build-templates",
+        "lesson-14-automate-tasks",
+        "lesson-15-best-practices"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-1-what-is-claude-excel",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "What Is Claude for Excel?",
+      "subtitle": "Discover how AI can transform your spreadsheet workflow",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if your spreadsheets could explain themselves?",
+          "body": "Imagine opening a complex Excel file — maybe one a colleague built — and instead of spending an hour tracing formulas, you simply ask: \"What does this spreadsheet do?\" and get a clear answer in seconds.",
+          "stat": "73%",
+          "statLabel": "of professionals say they waste time trying to understand spreadsheets they didn't build"
+        },
+        {
+          "type": "content",
+          "headline": "Claude for Excel: Your AI spreadsheet assistant",
+          "body": "Claude for Excel is an official add-in from Anthropic that puts an AI chat panel directly inside Excel. It can read your entire workbook — every sheet, every formula, every cell — and answer questions, explain logic, fix errors, and even make changes for you.",
+          "bullets": [
+            "Ask questions about any cell, formula, or sheet in plain English",
+            "Get explanations with direct references to specific cells",
+            "Fix errors like #REF!, #VALUE!, and circular references",
+            "Update values while preserving formula dependencies",
+            "Build new formulas and models through conversation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What it can (and can't) do",
+          "body": "Claude is powerful but has clear boundaries. Understanding these upfront will save you frustration and help you use it for the right tasks.",
+          "bullets": [
+            "✅ Explain formulas in plain English",
+            "✅ Trace how data flows across multiple sheets",
+            "✅ Find and fix formula errors",
+            "✅ Clean and standardise messy data",
+            "✅ Build new calculations from your description",
+            "❌ Cannot run or edit VBA macros",
+            "❌ Cannot connect to external data sources",
+            "❌ Not suitable for unattended automation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Who is this for?",
+          "body": "You don't need to be an Excel expert. Claude for Excel is designed for anyone who works with spreadsheets — from complete beginners who find formulas intimidating, to experienced users who want to work faster.",
+          "bullets": [
+            "Office workers who inherit complex spreadsheets from colleagues",
+            "Small business owners tracking finances in Excel",
+            "Students working with data for assignments",
+            "Managers who need to understand reports without building them",
+            "Anyone who Googles \"Excel formula for...\" more than they'd like to admit"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Think about your spreadsheet pain points",
+          "body": "Before we set up Claude, think about the spreadsheet tasks that slow you down most. Is it understanding formulas? Fixing errors? Cleaning messy data? Building reports? Keep these in mind — by the end of this course, you'll know exactly how to use Claude to solve each one."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Claude for Excel?",
+          "type": "mcq",
+          "options": [
+            "A replacement for Microsoft Excel",
+            "An AI chat add-in that works inside Excel",
+            "A plugin that automatically runs your macros",
+            "A cloud-based spreadsheet alternative"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude for Excel is an add-in that adds an AI chat panel directly inside Excel. It reads your workbook and helps you understand, fix, and build spreadsheets through conversation."
+        },
+        {
+          "question": "Claude for Excel can read and edit VBA macros in your workbook.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude works with data and formulas but cannot read or modify VBA macros. It focuses on cell values, formulas, and the structure of your workbook."
+        },
+        {
+          "question": "Which of these tasks is Claude for Excel best suited for?",
+          "type": "mcq",
+          "options": [
+            "Automatically sending emails from Excel",
+            "Explaining what a complex formula does in plain English",
+            "Connecting to live stock market data feeds",
+            "Recording keyboard shortcuts as macros"
+          ],
+          "correctIndex": 1,
+          "explanation": "One of Claude's strongest capabilities is explaining complex formulas in plain English, tracing how data flows across sheets, and helping you understand spreadsheets you didn't build."
+        }
+      ]
+    },
+    {
+      "id": "lesson-2-install-and-setup",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Install & Set Up",
+      "subtitle": "Get Claude running in your Excel in under 5 minutes",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Five minutes to AI-powered spreadsheets",
+          "body": "Setting up Claude in Excel is quick and painless. By the end of this lesson, you'll have the add-in installed, signed in, and ready to use. No technical skills required — if you can install an app on your phone, you can do this.",
+          "stat": "< 5 min",
+          "statLabel": "from start to your first AI-powered spreadsheet conversation"
+        },
+        {
+          "type": "content",
+          "headline": "What you need before you start",
+          "body": "Before installing, make sure you have the right setup. Claude for Excel works across multiple platforms, but you'll need a Claude account with a paid plan.",
+          "bullets": [
+            "A Claude Pro, Max, Team, or Enterprise account (claude.ai/pricing)",
+            "Excel on Windows (Microsoft 365, build 16.0.13127+)",
+            "OR Excel on Mac (version 16.46+)",
+            "OR Excel on the web (any modern browser)",
+            "OR Excel on iPad (version 2.51+)",
+            "An internet connection (Claude processes requests in the cloud)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Step-by-step installation",
+          "body": "Follow these steps to install the Claude add-in. The process is the same whether you're on Windows, Mac, or the web version of Excel.",
+          "bullets": [
+            "1. Open Microsoft Excel",
+            "2. Go to Insert → Add-ins (or Home → Add-ins on some versions)",
+            "3. Search for \"Claude\" in the add-in store",
+            "4. Click \"Add\" on the official Claude by Anthropic add-in",
+            "5. The Claude icon will appear in your Excel ribbon",
+            "6. Click the Claude icon to open the sidebar chat panel",
+            "7. Sign in with your Claude account credentials",
+            "8. You're ready! The chat panel is now connected to your workbook"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Troubleshooting common issues",
+          "body": "If the add-in doesn't appear or won't sign in, here are the most common fixes. Most issues resolve in under a minute.",
+          "bullets": [
+            "Can't find add-in? Try searching \"Claude by Anthropic\" in Microsoft AppSource directly",
+            "Not appearing after install? Close and reopen Excel, then check Home → My Add-ins",
+            "Sign-in loop? Clear your browser cookies for claude.ai and try again",
+            "Organisation blocked it? Ask your IT admin to enable Office Store add-ins",
+            "iPad not working? Ensure you're on version 2.51 or later"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Install Claude now and open the sidebar",
+          "body": "Open Excel on your computer right now and follow the steps above to install the Claude add-in. Once installed, click the Claude icon in the ribbon to open the sidebar. You should see a chat input box — that's where you'll type your questions. Don't worry about asking anything yet — we'll cover that in the next lesson!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which Claude plan do you need to use Claude for Excel?",
+          "type": "mcq",
+          "options": [
+            "Claude Free is sufficient",
+            "Any Claude plan including Free",
+            "Claude Pro, Max, Team, or Enterprise",
+            "Only Claude Enterprise"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude for Excel requires a paid Claude account — either Pro, Max, Team, or Enterprise. The free tier does not include the Excel add-in functionality."
+        },
+        {
+          "question": "Where do you find the Claude add-in after installation?",
+          "type": "mcq",
+          "options": [
+            "In the Windows Start Menu",
+            "In the Excel ribbon (as a clickable icon)",
+            "As a separate app on your desktop",
+            "In your email inbox"
+          ],
+          "correctIndex": 1,
+          "explanation": "After installation, Claude appears as an icon in your Excel ribbon. Clicking it opens the sidebar chat panel where you can ask questions about your workbook."
+        },
+        {
+          "question": "Claude for Excel processes your requests locally on your computer without needing the internet.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude processes requests in the cloud — you need an internet connection for it to work. Your questions and workbook context are sent to Anthropic's servers for processing."
+        }
+      ]
+    },
+    {
+      "id": "lesson-3-first-conversation",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "Your First Conversation",
+      "subtitle": "Learn how the sidebar works and ask your first question",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Talk to your spreadsheet like it's a colleague",
+          "body": "Most people open the Claude sidebar and freeze — \"What do I even ask?\" This lesson removes that hesitation. You'll learn exactly how the chat works, what Claude can see, and how to have your first productive conversation with any workbook.",
+          "stat": "10 seconds",
+          "statLabel": "is all it takes to get your first useful answer from Claude"
+        },
+        {
+          "type": "content",
+          "headline": "How the sidebar actually works",
+          "body": "When you open the Claude sidebar, it immediately reads your entire workbook — every sheet, every cell value, and every formula. You don't need to select anything or tell it where to look. It already knows your workbook inside out.",
+          "bullets": [
+            "Claude reads ALL sheets in your workbook automatically",
+            "It can see cell values, formulas, formatting, and sheet names",
+            "You type questions in the chat box at the bottom",
+            "Responses include clickable cell references you can jump to",
+            "Each conversation remembers what you've already discussed",
+            "Start a new conversation anytime by clicking \"New Chat\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your first three questions to try",
+          "body": "These starter questions work with any workbook. Open any spreadsheet you have — a budget, a report, a data file — and try one of these right now:",
+          "bullets": [
+            "\"What does this spreadsheet do?\" — Claude summarises the purpose and structure",
+            "\"Which sheets are most important and how do they connect?\" — maps the data flow",
+            "\"What are the key inputs that drive the outputs?\" — finds the assumptions",
+            "Bonus: \"Is there anything unusual or potentially wrong?\" — quick health check"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Understanding Claude's responses",
+          "body": "Claude's answers include special features designed for spreadsheets. Learning to read them makes you much more productive.",
+          "bullets": [
+            "Cell references (like B4 or Sheet2!G12) are clickable — they jump you to that cell",
+            "When Claude suggests a change, it shows before/after clearly",
+            "It will ask for confirmation before modifying anything",
+            "If Claude is unsure, it says so — it won't guess silently",
+            "Long explanations are broken into numbered steps for clarity"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Have your first real conversation",
+          "body": "Open any Excel file you have — even a simple one is fine. Open the Claude sidebar and type: \"Summarise what this spreadsheet contains and what it's used for.\" Read Claude's response. Then follow up with: \"Which cells contain formulas vs. typed values?\" You've just had your first AI-spreadsheet conversation!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Claude read when you first open the sidebar in a workbook?",
+          "type": "mcq",
+          "options": [
+            "Only the currently selected cell",
+            "Only the active sheet",
+            "The entire workbook — all sheets, cells, and formulas",
+            "Nothing until you tell it what to look at"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude automatically reads your entire workbook when the sidebar opens — all sheets, cell values, and formulas. You don't need to select or highlight anything."
+        },
+        {
+          "question": "Claude will make changes to your spreadsheet without asking for confirmation first.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude always shows you what it plans to change and asks for confirmation before modifying any cells. You stay in control of all edits."
+        },
+        {
+          "question": "Which is the best first question to ask Claude about an unfamiliar spreadsheet?",
+          "type": "mcq",
+          "options": [
+            "\"Delete all empty rows\"",
+            "\"What does this spreadsheet do?\"",
+            "\"Change the font to Arial\"",
+            "\"Run the macros\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with \"What does this spreadsheet do?\" gives you an overview of the workbook's purpose and structure before making any changes — always understand before you edit."
+        }
+      ]
+    },
+    {
+      "id": "lesson-4-art-of-asking",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "The Art of Asking",
+      "subtitle": "Write prompts that get exactly the answer you need",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The difference between a useless answer and a brilliant one? Your question.",
+          "body": "Claude is incredibly capable — but the quality of its answers depends entirely on how you ask. A vague question gets a vague answer. A specific, well-structured question gets a precise, actionable response. This lesson teaches you the formula for great spreadsheet prompts.",
+          "stat": "3× better",
+          "statLabel": "results when you follow the prompting patterns in this lesson"
+        },
+        {
+          "type": "content",
+          "headline": "The golden rule: be specific",
+          "body": "The single biggest improvement you can make is being specific. Tell Claude exactly what you're looking at, what you want to achieve, and what format you want the answer in.",
+          "bullets": [
+            "❌ Vague: \"Help me with this formula\"",
+            "✅ Specific: \"Explain what the formula in cell D12 does step by step\"",
+            "❌ Vague: \"Fix my spreadsheet\"",
+            "✅ Specific: \"Cell F8 shows #REF! — what's causing it and how do I fix it?\"",
+            "❌ Vague: \"Make a chart\"",
+            "✅ Specific: \"Create a SUM formula in B15 that totals B2:B14, skipping blank cells\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 3-part prompt formula",
+          "body": "For consistently great results, structure your prompts with three parts: Context (what you're working with), Task (what you want Claude to do), and Format (how you want the answer).",
+          "bullets": [
+            "CONTEXT: \"I have a monthly sales report with revenue in column C...\"",
+            "TASK: \"...calculate the month-over-month growth rate...\"",
+            "FORMAT: \"...and put the formula in column D next to each month\"",
+            "Full example: \"In my budget sheet, column B has monthly expenses. Write a formula for cell B15 that sums all expenses but only for months where column C shows 'Approved'\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Power phrases that unlock better answers",
+          "body": "Certain phrases trigger Claude to give you more useful, detailed responses. Keep these in your back pocket for when you need more than a basic answer.",
+          "bullets": [
+            "\"Explain step by step\" — breaks down complex logic into digestible parts",
+            "\"Show me the before and after\" — see exactly what will change",
+            "\"What cells will this affect?\" — understand downstream impact",
+            "\"Is there a simpler way?\" — gets alternative approaches",
+            "\"What could go wrong?\" — surfaces edge cases and risks",
+            "\"Walk me through this like I'm a beginner\" — gets plain-English explanation"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Rewrite a vague prompt into a great one",
+          "body": "Practice the 3-part formula. Take this vague prompt: \"Help me with my data.\" Now rewrite it using Context + Task + Format. For example: \"I have customer names in column A and purchase amounts in column B (rows 2-50). Calculate the average purchase amount and put the result in cell B52 with the label 'Average' in A52.\" Try writing your own specific prompt for a real task you need help with!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which prompt will get the best result from Claude in Excel?",
+          "type": "mcq",
+          "options": [
+            "\"Fix this\"",
+            "\"Help me with my spreadsheet\"",
+            "\"Cell D12 shows #VALUE! — explain why and suggest a fix\"",
+            "\"Do something with the data\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Specific prompts that reference exact cells and state what you want (explain + fix) give Claude the context it needs to provide a precise, useful answer."
+        },
+        {
+          "question": "What are the three parts of the prompt formula taught in this lesson?",
+          "type": "mcq",
+          "options": [
+            "Who, What, When",
+            "Context, Task, Format",
+            "Input, Process, Output",
+            "Question, Answer, Follow-up"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 3-part formula is Context (what you're working with), Task (what you want done), and Format (how you want the answer). This structure consistently produces better results."
+        },
+        {
+          "question": "Asking Claude \"Is there a simpler way?\" can help you find alternative approaches to a formula.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Asking \"Is there a simpler way?\" is a power phrase that prompts Claude to offer alternative, often cleaner approaches to achieve the same result."
+        }
+      ]
+    },
+    {
+      "id": "lesson-5-module-1-checkpoint",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Understand Any Spreadsheet Instantly",
+      "subtitle": "Ask Claude to decode any workbook — no matter how complex or unfamiliar",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Ever opened a spreadsheet and felt completely lost?",
+          "body": "You inherit a colleague's workbook. It's packed with data, formulas, and tabs you've never seen. Where do you even start? This used to mean hours of detective work. Now it takes one question to Claude."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Explain This Spreadsheet\" prompt",
+          "body": "Open any unfamiliar workbook and ask Claude: \"Describe what this spreadsheet does — what data it contains, how the sheets relate, and what the key formulas calculate.\" Claude reads the entire visible context and gives you a plain-English summary: what each tab is for, what the formulas compute, and how data flows between sections.",
+          "bullets": [
+            "\"What does this spreadsheet do?\" — gets a high-level overview",
+            "\"What are the main sections/tabs?\" — maps the structure",
+            "\"What are the key formulas?\" — identifies the important calculations",
+            "\"How does data flow from Sheet1 to Sheet2?\" — reveals connections"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Go deeper: ask about specific areas",
+          "body": "Once you have the overview, zoom into specific areas that matter to you. Ask about a confusing column, a complex formula, or a section you need to update. Claude adapts its explanation to your level — you never need to pretend you already understand.",
+          "bullets": [
+            "\"What does column F calculate?\" — explains one specific area",
+            "\"Why does row 1 have these headers?\" — reveals the data model",
+            "\"If I change cell B5, what else will be affected?\" — traces dependencies",
+            "\"Which cells should I never edit?\" — flags critical formulas"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Module 1 Recap: Your Claude + Excel Toolkit",
+          "body": "Over the last 5 lessons you've built a powerful foundation. You know what Claude for Excel is and what it can do. You've installed and set it up. You've had your first conversations, learned the 3-part prompt formula, and now you can decode any unfamiliar spreadsheet instantly. You're ready for Module 2, where we tackle real everyday tasks.",
+          "bullets": [
+            "✅ Lesson 1: What Claude for Excel is (and isn't)",
+            "✅ Lesson 2: Install & set up in under 5 minutes",
+            "✅ Lesson 3: Your first conversation with Claude",
+            "✅ Lesson 4: The art of asking — Context + Task + Format",
+            "✅ Lesson 5: Understand any spreadsheet instantly"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Decode a real spreadsheet right now",
+          "body": "Open a spreadsheet you use at work (or one you've inherited from someone else). Ask Claude: \"Describe what this spreadsheet does, what each section contains, and what the key formulas calculate.\" Then pick one area you've never fully understood and ask Claude to explain it. Notice how much faster you understand the workbook compared to figuring it out alone!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the best first question to ask Claude when you open an unfamiliar spreadsheet?",
+          "type": "mcq",
+          "options": [
+            "\"Fix this spreadsheet\"",
+            "\"Describe what this spreadsheet does and what the key formulas calculate\"",
+            "\"Delete all the formulas\"",
+            "\"Make this spreadsheet better\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking Claude to describe what the spreadsheet does gives you a plain-English overview of its structure, purpose, and key calculations — the perfect starting point for any unfamiliar workbook."
+        },
+        {
+          "question": "Asking \"If I change cell B5, what else will be affected?\" helps you understand formula dependencies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This question prompts Claude to trace the dependency chain — showing you which other cells reference B5 and would change if you edit it. This prevents accidental breakage."
+        },
+        {
+          "question": "Which skills did you learn in Module 1? (Pick the correct summary)",
+          "type": "mcq",
+          "options": [
+            "Install Claude, write macros, build dashboards, publish reports",
+            "Install Claude, have conversations, write effective prompts, decode spreadsheets",
+            "Install Claude, learn VBA, create pivot tables, format charts",
+            "Install Claude, memorise shortcuts, write formulas, build templates"
+          ],
+          "correctIndex": 1,
+          "explanation": "Module 1 covered: what Claude is, installing it, having your first conversation, the 3-part prompt formula (Context + Task + Format), and understanding any spreadsheet instantly."
+        }
+      ]
+    },
+    {
+      "id": "lesson-6-understand-any-formula",
+      "dayNumber": 6,
+      "moduleId": "module-2",
+      "title": "Understand Any Formula",
+      "subtitle": "Get plain-English explanations of even the most complex Excel formulas",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "That formula looks like it was written in another language",
+          "body": "You've seen them — those monster formulas that span the entire formula bar. Nested IFs inside VLOOKUPs wrapped in IFERROR with INDEX-MATCH combos. You need to understand it, but unpacking it manually could take 20 minutes. Or you could ask Claude.",
+          "stat": "45 sec",
+          "statLabel": "average time for Claude to explain a complex formula vs 15+ minutes manually"
+        },
+        {
+          "type": "content",
+          "headline": "The magic question: \"Explain this formula\"",
+          "body": "Click on any cell with a formula and ask Claude: \"Explain what this formula does in plain English.\" Claude breaks it down step by step — from the inside out — telling you what each function does, what data it references, and what the final result means. No jargon, no assumptions about your skill level.",
+          "bullets": [
+            "\"Explain the formula in [cell]\" — gets a full plain-English breakdown",
+            "\"What does each part of this formula do?\" — step-by-step walkthrough",
+            "\"Why is this using VLOOKUP instead of INDEX-MATCH?\" — explains design choices",
+            "\"What would happen if I removed the IFERROR wrapper?\" — shows consequences"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Understanding nested formulas layer by layer",
+          "body": "Complex formulas are like Russian nesting dolls — functions inside functions. Claude excels at peeling back the layers. Ask it to explain from the innermost function outward, and suddenly a terrifying formula becomes a logical sequence of simple steps.",
+          "bullets": [
+            "Claude identifies the innermost function first (the \"core\" logic)",
+            "Then explains each wrapper layer and why it's there",
+            "Shows you what data flows between each layer",
+            "Highlights which parts handle errors vs which do the real work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ask follow-up questions fearlessly",
+          "body": "Don't worry about asking \"dumb\" questions. Claude doesn't judge. If the explanation still isn't clear, ask again in a different way. You can ask \"Can you simplify that further?\" or \"Explain it like I'm completely new to Excel.\" Each follow-up makes the explanation clearer.",
+          "bullets": [
+            "\"Can you give me an analogy?\" — relates it to something familiar",
+            "\"What would a simpler version of this look like?\" — shows alternatives",
+            "\"If I needed to modify this to [X], what would I change?\" — practical next step",
+            "\"Are there any issues or limitations with this formula?\" — spots problems"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Decode a formula you've never understood",
+          "body": "Find the most complex formula in any spreadsheet you use. Click on the cell and ask Claude: \"Explain what this formula does in plain English, step by step, starting from the innermost function.\" Then ask one follow-up question — maybe \"What would break if the data in column B had blank cells?\" Notice how quickly you go from confused to confident."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the best way to ask Claude to explain a complex nested formula?",
+          "type": "mcq",
+          "options": [
+            "\"What is this?\"",
+            "\"Explain this formula in plain English, step by step\"",
+            "\"Is this formula correct?\"",
+            "\"Rewrite this formula\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking Claude to explain in plain English, step by step, gives you the clearest breakdown — it will peel back each layer of nesting and explain what each function contributes."
+        },
+        {
+          "question": "Claude explains nested formulas by starting from the outermost function and working inward.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude typically starts from the innermost function (the core logic) and works outward, explaining each wrapper layer. This makes it easier to follow the logical flow of data."
+        },
+        {
+          "question": "What's a good follow-up if Claude's explanation is still confusing?",
+          "type": "mcq",
+          "options": [
+            "Give up and ask a colleague",
+            "Ask \"Can you simplify that further?\" or \"Explain it like I'm new to Excel\"",
+            "Delete the formula and start over",
+            "Google the formula instead"
+          ],
+          "correctIndex": 1,
+          "explanation": "You can always ask Claude to simplify or re-explain at a different level. Each follow-up refines the explanation until it clicks. There's no limit to how many times you can ask."
+        }
+      ]
+    },
+    {
+      "id": "lesson-7-fix-errors-instantly",
+      "dayNumber": 7,
+      "moduleId": "module-2",
+      "title": "Fix Errors Instantly",
+      "subtitle": "Let Claude diagnose and repair #REF!, #VALUE!, #N/A, and other Excel errors",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Those little error triangles are about to stop ruining your day",
+          "body": "#REF! #VALUE! #N/A! #DIV/0! — Excel errors are cryptic, frustrating, and can cascade across your entire workbook. You know something is wrong, but you don't know why or how to fix it. Claude does.",
+          "stat": "6",
+          "statLabel": "common Excel error types that Claude can diagnose and fix in seconds"
+        },
+        {
+          "type": "content",
+          "headline": "How to ask Claude to fix an error",
+          "body": "Click on the cell showing an error and ask Claude: \"This cell shows [error type] — explain why and suggest a fix.\" Claude will identify the root cause (not just the symptom), explain what went wrong in plain English, and propose a corrected formula. It often catches issues you'd never spot yourself.",
+          "bullets": [
+            "#REF! — a referenced cell was deleted or moved",
+            "#VALUE! — wrong data type (text where a number is expected)",
+            "#N/A — lookup function can't find a match",
+            "#DIV/0! — dividing by zero or an empty cell",
+            "#NAME? — Excel doesn't recognise a function or named range",
+            "Circular reference — formula refers back to itself"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Claude traces the root cause, not just the symptom",
+          "body": "Here's what makes Claude better than Googling: it sees YOUR spreadsheet. It knows what data is in which cells, what your formula references, and where the chain broke. So it doesn't give generic advice — it gives you the exact fix for your exact situation.",
+          "bullets": [
+            "Claude checks the actual cell references in your formula",
+            "It identifies if the error is local or caused by another cell upstream",
+            "It tells you exactly which part of the formula is failing and why",
+            "It proposes a fix that preserves the rest of your logic"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prevent future errors with IFERROR",
+          "body": "Once Claude fixes your error, ask: \"How can I prevent this from happening again?\" Claude will often suggest wrapping formulas in IFERROR or adding data validation. These protective layers mean your spreadsheet handles edge cases gracefully instead of breaking.",
+          "bullets": [
+            "IFERROR(formula, fallback) — shows a friendly value instead of an error",
+            "Data validation — prevents wrong data from being entered in the first place",
+            "IF(ISBLANK()) checks — handles empty cells before they cause #DIV/0!",
+            "Ask Claude: \"Add error handling to this formula\" — it wraps it for you"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Fix a real error in under 60 seconds",
+          "body": "Find a cell with an error in one of your spreadsheets (or create one on purpose — try =1/0 for a #DIV/0! error). Ask Claude: \"This cell shows [error] — explain why and suggest a fix.\" Then ask: \"How can I prevent this type of error in the future?\" Time yourself — you'll be surprised how fast it is compared to your old approach."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a #REF! error typically mean?",
+          "type": "mcq",
+          "options": [
+            "The formula is dividing by zero",
+            "A referenced cell was deleted or moved",
+            "Excel doesn't recognise the function name",
+            "The cell contains text instead of a number"
+          ],
+          "correctIndex": 1,
+          "explanation": "#REF! means a cell reference in the formula is no longer valid — usually because the referenced cell, row, or column was deleted or the formula was moved incorrectly."
+        },
+        {
+          "question": "Claude can only identify errors in the cell you click on — it cannot trace upstream causes from other cells.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — Claude can trace the full dependency chain. If cell D5 shows an error because cell B3 (which it references) has a problem, Claude will identify B3 as the root cause and explain the cascade."
+        },
+        {
+          "question": "What does IFERROR(formula, fallback) do?",
+          "type": "mcq",
+          "options": [
+            "Deletes the formula if it has an error",
+            "Shows a friendly fallback value instead of displaying the error",
+            "Sends an email notification when an error occurs",
+            "Automatically corrects any formula error"
+          ],
+          "correctIndex": 1,
+          "explanation": "IFERROR evaluates the formula — if it returns normally, you see the result. If it produces ANY error, you see the fallback value instead (like 0, \"N/A\", or a blank). It's a safety net, not a fix."
+        }
+      ]
+    },
+    {
+      "id": "lesson-8-clean-messy-data",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "Clean Messy Data",
+      "subtitle": "Use Claude to fix inconsistent formatting, duplicates, and messy imports",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your data is a mess — and that's completely normal",
+          "body": "You paste data from an email. Names are in ALL CAPS. Dates are in three different formats. Phone numbers have random spaces. There are duplicates everywhere. Cleaning this up manually takes hours. Claude can do it in seconds.",
+          "stat": "60%",
+          "statLabel": "of spreadsheet time is spent cleaning and preparing data, not analysing it"
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude to spot the problems",
+          "body": "Before you clean, you need to know what's wrong. Ask Claude: \"Look at columns A through D and tell me what data quality issues you see.\" Claude scans for inconsistencies you might miss — mixed date formats, trailing spaces, typos in repeated values, numbers stored as text, and more.",
+          "bullets": [
+            "\"What data quality issues do you see in this range?\" — comprehensive audit",
+            "\"Are there any duplicates in column A?\" — finds exact and near-duplicates",
+            "\"Which cells have inconsistent formatting?\" — spots mixed formats",
+            "\"Is any data missing or incomplete?\" — identifies gaps"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Let Claude fix it with formulas or direct edits",
+          "body": "Once you know the issues, ask Claude to fix them. It can create helper columns with cleaning formulas, or in some cases make direct edits to the cells. You choose the approach — formulas are safer (non-destructive), while direct edits are faster for one-off cleanups.",
+          "bullets": [
+            "\"Standardise all dates in column C to DD/MM/YYYY format\" — consistent dates",
+            "\"Remove extra spaces and convert names in column A to proper case\" — TRIM + PROPER",
+            "\"Split full names in column A into first name (col B) and last name (col C)\" — text splitting",
+            "\"Highlight duplicate emails in column D\" — flags repeats for review"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common cleaning tasks Claude handles instantly",
+          "body": "These are the data cleaning jobs that used to eat your afternoon. Now they're a single prompt away. The key is being specific about what \"clean\" looks like — tell Claude your desired format and let it handle the transformation.",
+          "bullets": [
+            "Removing duplicates while keeping the most recent entry",
+            "Splitting combined data (e.g., \"City, State\" into separate columns)",
+            "Converting text-formatted numbers back into real numbers",
+            "Standardising categories (e.g., \"UK\", \"U.K.\", \"United Kingdom\" → one format)",
+            "Filling in missing values based on patterns in nearby data"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Clean a real dataset in 3 prompts",
+          "body": "Open a spreadsheet with messy data (we all have one). First, ask Claude: \"What data quality issues do you see in columns A to D?\" Review what it finds. Then pick the worst issue and ask Claude to fix it — for example: \"Standardise all phone numbers in column C to the format +44 XXXX XXXXXX.\" Finally, ask: \"Are there any duplicates I should remove?\" Three prompts, clean data."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's a good first step before cleaning data with Claude?",
+          "type": "mcq",
+          "options": [
+            "Delete all the data and start over",
+            "Ask Claude to identify data quality issues in your range",
+            "Manually check every cell one by one",
+            "Convert everything to text format first"
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking Claude to audit your data first gives you a complete picture of all issues — inconsistencies, duplicates, formatting problems — so you can prioritise what to fix."
+        },
+        {
+          "question": "Using helper columns with cleaning formulas is safer than direct edits because it's non-destructive.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True — helper columns preserve your original data while showing the cleaned version alongside it. If something goes wrong, your original data is untouched. Direct edits are faster but can't be easily undone."
+        },
+        {
+          "question": "Which of these is NOT something Claude can help clean in a spreadsheet?",
+          "type": "mcq",
+          "options": [
+            "Inconsistent date formats",
+            "Duplicate rows",
+            "Physical paper documents on your desk",
+            "Names in mixed case (UPPER, lower, Mixed)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude works with digital data in your spreadsheet — it can't access physical paper documents. But anything already in your cells (dates, duplicates, text formatting) is fair game."
+        }
+      ]
+    },
+    {
+      "id": "lesson-9-build-formulas",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "Build Formulas From Scratch",
+      "subtitle": "Describe what you want in plain English and let Claude write the formula for you",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You don't need to memorise formulas anymore",
+          "body": "SUMIFS, INDEX-MATCH, nested IFs, array formulas — you don't need to know the syntax. You just need to describe what you want in plain English, and Claude writes the perfect formula. It's like having an Excel expert sitting next to you, writing formulas on demand.",
+          "stat": "400+",
+          "statLabel": "Excel functions exist — Claude knows them all so you don't have to"
+        },
+        {
+          "type": "content",
+          "headline": "The formula request pattern",
+          "body": "To get Claude to build a formula, use this pattern: \"In cell [X], create a formula that [does Y] using data from [range Z].\" The more specific you are about location, purpose, and data source, the more accurate the formula will be on the first try.",
+          "bullets": [
+            "\"In cell E2, calculate the total of column D where column A equals 'Sales'\" — SUMIF",
+            "\"Create a formula that finds the name in column A where column B has the highest value\" — INDEX-MATCH",
+            "\"In F2, show 'High' if D2 > 1000, 'Medium' if > 500, otherwise 'Low'\" — nested IF",
+            "\"Calculate the number of unique values in column C\" — UNIQUE or COUNTIF approach"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude to explain what it built",
+          "body": "Never just paste a formula Claude gives you without understanding it. Always ask: \"Explain how this formula works.\" This serves two purposes — you learn Excel faster, and you can verify the formula does what you actually need. If something isn't right, you can course-correct immediately.",
+          "bullets": [
+            "\"Explain how this formula works step by step\" — verify logic",
+            "\"What happens if a cell in the range is blank?\" — test edge cases",
+            "\"Can this formula handle new rows being added?\" — future-proof check",
+            "\"Is there a simpler way to achieve the same result?\" — get alternatives"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Iterate until it's perfect",
+          "body": "Your first description might not produce the perfect formula — and that's fine. Treat it as a conversation. If the formula is close but not quite right, tell Claude what's off: \"That's close, but I need it to ignore blank cells\" or \"It should also exclude rows where column B says 'Cancelled'.\" Each refinement gets you closer.",
+          "bullets": [
+            "\"Almost — but ignore rows where column C is empty\" — add conditions",
+            "\"Can you make this round to 2 decimal places?\" — formatting adjustments",
+            "\"I also need this to work across Sheet1 and Sheet2\" — cross-sheet references",
+            "\"What if I need to copy this formula down for 500 rows?\" — make it relative"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a formula you've always wanted but never knew how",
+          "body": "Think of a calculation you've wanted in a spreadsheet but couldn't figure out the formula for. Describe it to Claude in plain English — for example: \"I want to calculate the average order value for each customer, but only counting orders from the last 30 days.\" Ask Claude to build the formula, then ask it to explain how it works. Finally, ask \"What happens if there are no orders in the last 30 days?\" to test edge cases."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the best way to ask Claude to build a formula?",
+          "type": "mcq",
+          "options": [
+            "\"Write me a formula\"",
+            "\"In cell E2, calculate the total of column D where column A equals 'Sales'\"",
+            "\"I need SUMIF\"",
+            "\"Help with math\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Specifying the target cell, what calculation you want, and which data to use gives Claude all the context needed to write the exact formula on the first try."
+        },
+        {
+          "question": "You should always paste Claude's formula without asking for an explanation, to save time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — always ask Claude to explain the formula. This helps you learn, verify correctness, and catch edge cases before the formula goes into production use."
+        },
+        {
+          "question": "If Claude's formula is close but not quite right, what should you do?",
+          "type": "mcq",
+          "options": [
+            "Give up and write it manually",
+            "Start a completely new conversation",
+            "Tell Claude what's off and ask it to refine — e.g., \"Also ignore blank cells\"",
+            "Accept it as-is and work around the issue"
+          ],
+          "correctIndex": 2,
+          "explanation": "Treat formula building as a conversation. Each refinement (\"also ignore blanks\", \"round to 2 decimals\", \"exclude cancelled orders\") gets the formula closer to exactly what you need."
+        }
+      ]
+    },
+    {
+      "id": "lesson-10-module-2-checkpoint",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Your Everyday Excel Toolkit",
+      "subtitle": "Combine everything from Module 2 into a confident daily workflow",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now have superpowers most Excel users will never know about",
+          "body": "Think about where you were 5 lessons ago. You could talk to Claude, sure — but now? You can decode any formula, fix any error, clean the messiest data, and build formulas from thin air. That's not a small thing. That's a completely different relationship with spreadsheets.",
+          "stat": "4",
+          "statLabel": "core Excel skills you've now automated with Claude"
+        },
+        {
+          "type": "content",
+          "headline": "Your Module 2 skill stack",
+          "body": "Here's what you can now confidently do — tasks that used to take minutes or hours now take seconds. Each of these skills compounds: the better you get at one, the faster you become at all of them.",
+          "bullets": [
+            "✅ Lesson 6: Understand any formula — even deeply nested monster formulas",
+            "✅ Lesson 7: Fix errors instantly — #REF!, #VALUE!, #N/A, #DIV/0! and more",
+            "✅ Lesson 8: Clean messy data — inconsistent formats, duplicates, imports",
+            "✅ Lesson 9: Build formulas from scratch — describe in English, get the formula",
+            "✅ Lesson 10: Combine it all into a daily workflow"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The daily Claude + Excel workflow",
+          "body": "Here's how power users integrate Claude into their everyday Excel work. It's not about using Claude for everything — it's about knowing exactly when to reach for it so you never get stuck or waste time.",
+          "bullets": [
+            "1. Open a spreadsheet → ask Claude for a quick overview if it's unfamiliar",
+            "2. See a formula you don't understand → ask Claude to explain it",
+            "3. Hit an error → ask Claude to diagnose and fix it",
+            "4. Need to clean imported data → ask Claude to audit and standardise",
+            "5. Need a calculation → describe it in plain English and let Claude build it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's coming in Module 3: Power Workflows",
+          "body": "You've mastered the everyday tasks. Module 3 takes you to the next level — analysing data for insights, creating charts and summaries, building reusable templates, automating repetitive tasks, and using Claude safely in professional settings. You'll go from \"competent user\" to \"the person everyone asks for help.\"",
+          "bullets": [
+            "Lesson 11: Analyse data and find insights",
+            "Lesson 12: Create charts and visual summaries",
+            "Lesson 13: Build reusable templates",
+            "Lesson 14: Automate repetitive tasks",
+            "Lesson 15: Professional best practices and safety"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Complete a real task using multiple Module 2 skills",
+          "body": "Open a work spreadsheet and complete one real task that combines at least two of your new skills. For example: find a formula you don't understand (Lesson 6), notice it has an error (Lesson 7), fix it, then build a new formula that extends its functionality (Lesson 9). Or import some messy data (Lesson 8) and then build summary formulas for it (Lesson 9). The magic is in combining these skills fluidly."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the recommended first step when opening an unfamiliar spreadsheet with formulas?",
+          "type": "mcq",
+          "options": [
+            "Delete all formulas and start fresh",
+            "Ask Claude for an overview, then ask about specific formulas you don't understand",
+            "Try to figure out every formula manually before asking Claude",
+            "Ignore the formulas and only look at the data"
+          ],
+          "correctIndex": 1,
+          "explanation": "Getting an overview first, then diving into specific formulas, is the most efficient workflow. It gives you context before detail — exactly how an expert would approach an unfamiliar workbook."
+        },
+        {
+          "question": "Module 2 covered four core skills: understanding formulas, fixing errors, cleaning data, and building formulas from scratch.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Correct — these four skills (explain, fix, clean, build) form the foundation of everyday Excel work with Claude. Together they cover the vast majority of daily spreadsheet tasks."
+        },
+        {
+          "question": "When should you reach for Claude during your Excel workflow?",
+          "type": "mcq",
+          "options": [
+            "Only for tasks you absolutely cannot do yourself",
+            "For every single cell you touch",
+            "Whenever you'd otherwise get stuck, waste time, or need to look something up",
+            "Only on Mondays and Fridays"
+          ],
+          "correctIndex": 2,
+          "explanation": "The sweet spot is using Claude whenever you'd otherwise get stuck, waste time googling, or need to look up syntax. It's not about replacing your brain — it's about eliminating friction."
+        }
+      ]
+    },
+    {
+      "id": "lesson-11-analyse-data",
+      "dayNumber": 11,
+      "moduleId": "module-3",
+      "title": "Analyse Data and Find Insights",
+      "subtitle": "Ask Claude to spot trends, patterns, and outliers hiding in your spreadsheets",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your spreadsheet is full of answers — you just haven't asked the right questions",
+          "body": "You have rows and rows of data. Sales figures, customer records, project timelines. But staring at numbers rarely reveals the story. Claude can read your entire dataset and surface insights you'd never spot on your own — in seconds, not hours.",
+          "stat": "10x",
+          "statLabel": "faster to get actionable insights from data with Claude vs manual analysis"
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude to summarise your data",
+          "body": "Start broad. Ask Claude: \"Summarise this data — what are the key takeaways?\" Claude will calculate totals, averages, distributions, and highlight anything unusual. It's like having a data analyst glance at your spreadsheet and say \"here's what matters.\"",
+          "bullets": [
+            "\"Summarise this data set — what are the key patterns?\" — high-level overview",
+            "\"What are the top 5 and bottom 5 performers?\" — rankings",
+            "\"What's the trend over time?\" — direction and pace of change",
+            "\"Are there any outliers or anomalies?\" — spots unusual data points"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ask focused analytical questions",
+          "body": "Once you have the overview, go deeper with specific questions. The more focused your question, the more actionable the insight. Think about what decisions you need to make, and ask Claude to surface the data that supports them.",
+          "bullets": [
+            "\"Which product category grew fastest in Q2?\" — comparative analysis",
+            "\"Is there a correlation between column C and column F?\" — relationship detection",
+            "\"What percentage of customers made more than one purchase?\" — segmentation",
+            "\"If this trend continues, what will next month look like?\" — simple forecasting"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Let Claude create summary formulas for you",
+          "body": "Don't just get insights verbally — ask Claude to build formulas that keep tracking these metrics. That way your spreadsheet becomes a living dashboard that updates as new data arrives.",
+          "bullets": [
+            "\"Create a summary section that shows total, average, min, max for each category\"",
+            "\"Add a formula that flags any row where the value is more than 2x the average\"",
+            "\"Build a running total in column G that accumulates values from column D\"",
+            "\"Add a % change column comparing each row to the previous month\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Find 3 insights you didn't know about your data",
+          "body": "Open a spreadsheet with real data — sales figures, expenses, project data, anything with at least 20 rows. Ask Claude: \"Summarise this data and tell me the 3 most interesting insights.\" Then ask one follow-up question about the most surprising insight. Finally, ask Claude to create a formula that tracks that metric going forward. You now have an always-updating insight."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's a good first prompt when you want to analyse a dataset with Claude?",
+          "type": "mcq",
+          "options": [
+            "\"Delete the boring rows\"",
+            "\"Summarise this data — what are the key patterns and takeaways?\"",
+            "\"Convert this to a database\"",
+            "\"Make this data look pretty\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with a broad summary request gives you an overview of the key patterns, totals, and anomalies — the perfect foundation for asking more focused follow-up questions."
+        },
+        {
+          "question": "Claude can only summarise data — it cannot create formulas that track metrics over time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — Claude can both analyse your data AND create formulas that keep tracking those insights as new data arrives. This turns a one-time analysis into a living dashboard."
+        },
+        {
+          "question": "What makes an analytical question to Claude more actionable?",
+          "type": "mcq",
+          "options": [
+            "Making it as vague as possible",
+            "Asking about a specific metric tied to a decision you need to make",
+            "Asking Claude to guess what you want to know",
+            "Only asking yes/no questions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focused questions tied to real decisions (\"Which product grew fastest?\", \"Should I restock item X?\") produce insights you can actually act on, rather than generic observations."
+        }
+      ]
+    },
+    {
+      "id": "lesson-12-create-charts",
+      "dayNumber": 12,
+      "moduleId": "module-3",
+      "title": "Create Charts and Visual Summaries",
+      "subtitle": "Ask Claude to help you turn raw numbers into clear, presentable visuals",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Numbers tell the story — charts make people listen",
+          "body": "You could explain that sales grew 23% in Q3. Or you could show a chart that makes it obvious at a glance. Claude can't create charts directly (that's Excel's job), but it can tell you exactly which chart type to use, prepare your data perfectly, and guide you through creating visuals that actually communicate.",
+          "stat": "65%",
+          "statLabel": "of people are visual learners — charts communicate faster than tables"
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude which chart type fits your data",
+          "body": "The biggest chart mistake people make is choosing the wrong type. Bar charts for trends (should be line), pie charts with 15 slices (should be bar). Ask Claude: \"What's the best way to visualise this data?\" and it'll recommend the right chart type with a clear explanation of why.",
+          "bullets": [
+            "Line charts — trends over time (sales by month, growth rates)",
+            "Bar/column charts — comparing categories (revenue by product, team performance)",
+            "Pie charts — parts of a whole, but ONLY with 5 or fewer categories",
+            "Scatter plots — relationships between two variables (price vs demand)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Let Claude prepare your data for charting",
+          "body": "Charts need data in a specific layout to look right. Claude can restructure your data into the perfect chart-ready format — pivoting rows to columns, creating summary tables, calculating the percentages or running totals that make charts meaningful.",
+          "bullets": [
+            "\"Reorganise this data so I can chart monthly totals by category\" — pivot table structure",
+            "\"Create a summary table showing quarterly revenue for each product line\" — chart-ready format",
+            "\"Calculate cumulative totals so I can make a running-total chart\" — growth visualisation",
+            "\"Add a column showing % of total for a pie chart\" — proportional data prep"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude to guide you through chart creation",
+          "body": "Once your data is prepared, ask Claude for step-by-step instructions to create the chart in Excel. It'll tell you exactly which cells to select, which chart type to insert, and how to format it for maximum clarity and professionalism.",
+          "bullets": [
+            "\"Walk me through creating a line chart from this data\" — step-by-step instructions",
+            "\"How do I add a trendline to my chart?\" — advanced formatting",
+            "\"The chart labels are overlapping — how do I fix this?\" — troubleshooting",
+            "\"How can I make this chart look professional for a presentation?\" — styling tips"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create a chart from scratch with Claude's guidance",
+          "body": "Pick a dataset with at least 5 data points. Ask Claude: \"What's the best chart type to visualise this data, and why?\" Then ask Claude to prepare the data if needed. Finally, ask Claude to walk you through creating the chart step by step in Excel. Bonus: ask \"How can I make this chart clearer and more professional?\" for styling tips."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When should you use a pie chart?",
+          "type": "mcq",
+          "options": [
+            "For any data with categories",
+            "When showing trends over time",
+            "When showing parts of a whole with 5 or fewer categories",
+            "For comparing two variables"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pie charts work best for showing proportions (parts of a whole) with a small number of slices — ideally 5 or fewer. More slices make the chart unreadable. For many categories, use a bar chart instead."
+        },
+        {
+          "question": "Claude can directly create and insert charts into your Excel workbook.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — Claude can't directly insert charts (that's Excel's native feature). But Claude CAN recommend the right chart type, prepare your data in chart-ready format, and give you step-by-step instructions to create it."
+        },
+        {
+          "question": "What should you ask Claude before creating a chart?",
+          "type": "mcq",
+          "options": [
+            "\"Just make a chart\"",
+            "\"What's the best chart type to visualise this data, and why?\"",
+            "\"Delete all my data\"",
+            "\"Convert this to PowerPoint\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking Claude to recommend the best chart type ensures you communicate your data effectively. The wrong chart type can obscure insights or confuse your audience."
+        }
+      ]
+    },
+    {
+      "id": "lesson-13-build-templates",
+      "dayNumber": 13,
+      "moduleId": "module-3",
+      "title": "Build Reusable Templates",
+      "subtitle": "Use Claude to create professional spreadsheet templates you can reuse forever",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop rebuilding the same spreadsheet every week",
+          "body": "Every Monday you create the same report. Every month you rebuild the same budget tracker. Every quarter you set up the same review template. What if you could describe what you need once, and Claude builds a polished, reusable template that works perfectly every time?",
+          "stat": "3 hrs",
+          "statLabel": "average time saved per week by using templates instead of rebuilding from scratch"
+        },
+        {
+          "type": "content",
+          "headline": "Ask Claude to design a template from scratch",
+          "body": "Describe your use case and Claude will suggest the structure — headers, columns, formulas, formatting logic, and data validation. It thinks about edge cases you might miss and builds in flexibility for different scenarios.",
+          "bullets": [
+            "\"Design a monthly budget template with categories, planned vs actual, and a variance column\"",
+            "\"Create a project tracker with tasks, owners, due dates, status, and % complete\"",
+            "\"Build a client invoice template with line items, tax calculation, and payment terms\"",
+            "\"Design a weekly team report with sections for achievements, blockers, and next steps\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Make templates smart with built-in formulas",
+          "body": "A great template isn't just headers and formatting — it has built-in intelligence. Ask Claude to add formulas that auto-calculate totals, flag overdue items, highlight variances, and summarise data. This means you just enter raw data and the template does the thinking.",
+          "bullets": [
+            "\"Add a formula that highlights any expense over budget in red\"",
+            "\"Include a summary row that auto-calculates totals and averages\"",
+            "\"Add conditional formatting: green for on-track, amber for at-risk, red for overdue\"",
+            "\"Build in a formula that calculates days until deadline for each task\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Add data validation to prevent mistakes",
+          "body": "Templates are reused by others (or by future-you who's forgotten the rules). Ask Claude to add data validation — dropdown lists, number ranges, date constraints — so the template guides users and prevents invalid entries.",
+          "bullets": [
+            "\"Add a dropdown list in the Status column with: Not Started, In Progress, Done\"",
+            "\"Restrict the Date column to only accept dates in the future\"",
+            "\"Limit the Budget column to numbers between 0 and 100,000\"",
+            "\"Add an input instruction that appears when someone clicks on each column header\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a template you'll actually use next week",
+          "body": "Think of a spreadsheet you rebuild regularly — a report, tracker, budget, or log. Ask Claude: \"Design a [type] template with [your key requirements]. Include smart formulas that auto-calculate [X] and data validation for [Y].\" Then ask Claude to walk you through setting it up. Save it as a template file (.xltx) so you can reuse it with one click."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes a spreadsheet template \"smart\"?",
+          "type": "mcq",
+          "options": [
+            "It has a nice colour scheme",
+            "It has built-in formulas that auto-calculate and highlight important data",
+            "It uses the newest version of Excel",
+            "It has more than 10 columns"
+          ],
+          "correctIndex": 1,
+          "explanation": "A smart template has formulas that do the thinking — auto-totals, conditional formatting, variance calculations — so you only need to enter raw data and the template handles the rest."
+        },
+        {
+          "question": "Data validation in templates helps prevent invalid entries and guides users on what to input.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True — data validation (dropdowns, number ranges, date constraints) ensures people enter the right type of data in the right format. This is especially important when templates are shared with others."
+        },
+        {
+          "question": "What's the best way to ask Claude to create a template?",
+          "type": "mcq",
+          "options": [
+            "\"Make me a spreadsheet\"",
+            "\"Design a monthly budget template with categories, planned vs actual, and a variance column that highlights overspending\"",
+            "\"I need Excel\"",
+            "\"Template please\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Describing the type of template, key columns/sections, and the smart features you want (like variance highlighting) gives Claude enough context to design something immediately usable."
+        }
+      ]
+    },
+    {
+      "id": "lesson-14-automate-tasks",
+      "dayNumber": 14,
+      "moduleId": "module-3",
+      "title": "Automate Repetitive Tasks",
+      "subtitle": "Let Claude help you eliminate busywork with batch operations and smart workflows",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "That task you do 50 times a week? Let's make it happen in one click.",
+          "body": "Copy this value, paste it there, update this formula, change that format, repeat for 200 rows. Sound familiar? These repetitive tasks eat hours of your week. Claude can help you batch them, create formulas that handle them automatically, or even write simple macros to do them in one click.",
+          "stat": "40%",
+          "statLabel": "of spreadsheet work is repetitive tasks that could be automated"
+        },
+        {
+          "type": "content",
+          "headline": "Batch operations: do it once, apply to all",
+          "body": "Instead of doing something row by row, ask Claude to create a formula or approach that handles all rows at once. This is the simplest form of automation — one formula, one action, hundreds of rows handled simultaneously.",
+          "bullets": [
+            "\"Apply this calculation to all 500 rows in one go\" — drag-down formulas",
+            "\"Convert all dates in column B from US to UK format\" — batch format change",
+            "\"Add a prefix to every value in column A\" — CONCATENATE or &",
+            "\"Split the full address in column C into street, city, and postcode columns\" — batch splitting"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Self-updating formulas: set it and forget it",
+          "body": "Ask Claude to build formulas that automatically update when new data is added. This means your summaries, dashboards, and reports stay current without you lifting a finger. The key is using dynamic ranges and table references.",
+          "bullets": [
+            "\"Make this SUM formula automatically include new rows when I add data\" — dynamic ranges",
+            "\"Create a formula that always shows this week's data, even as weeks change\" — date-relative",
+            "\"Build a lookup that works even when new items are added to the list\" — table references",
+            "\"Add a formula that counts how many tasks are overdue based on today's date\" — auto-updating"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Simple macros: ask Claude to write VBA for you",
+          "body": "For truly repetitive multi-step tasks, Claude can write simple VBA macros that do everything in one click. You don't need to understand VBA — describe what you want in English, and Claude writes the code. Just ask it to explain what the macro does before you run it.",
+          "bullets": [
+            "\"Write a macro that formats all new rows to match the header style\" — formatting automation",
+            "\"Create a button that copies today's data to a new archive sheet\" — one-click archiving",
+            "\"Write a macro that sends the value in cell A1 to a new row each time I click it\" — logging",
+            "\"Can you explain this macro step by step before I run it?\" — always verify first"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate your most annoying repetitive task",
+          "body": "Think of the most tedious repetitive task you do in Excel. Describe it to Claude: \"Every [frequency], I have to [task description] for [number] rows/items. Can you help me automate this?\" Let Claude suggest the best approach — whether that's a batch formula, a self-updating range, or a simple macro. Implement it and calculate how much time you'll save per week!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the simplest form of automation in Excel?",
+          "type": "mcq",
+          "options": [
+            "Writing complex VBA code",
+            "Creating a formula that handles all rows at once (batch operation)",
+            "Buying expensive add-ins",
+            "Recording a screen video of yourself doing the task"
+          ],
+          "correctIndex": 1,
+          "explanation": "Batch operations — creating one formula that applies to all rows simultaneously — are the simplest, safest form of automation. No code needed, just a smart formula."
+        },
+        {
+          "question": "You need to understand VBA programming before Claude can help you with macros.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — you can describe what you want in plain English and Claude writes the VBA code for you. Just make sure to ask Claude to explain what the macro does before you run it."
+        },
+        {
+          "question": "What should you always do before running a macro Claude writes for you?",
+          "type": "mcq",
+          "options": [
+            "Run it immediately without reading it",
+            "Ask Claude to explain what the macro does step by step",
+            "Share it with everyone in your company first",
+            "Delete all your data as a backup"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always ask Claude to explain the macro before running it. This ensures you understand what it will do, can verify it's correct, and won't accidentally modify data you didn't intend to change."
+        }
+      ]
+    },
+    {
+      "id": "lesson-15-best-practices",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Professional Best Practices & Safety",
+      "subtitle": "Use Claude confidently and responsibly in any work environment",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're a Claude + Excel power user now — here's how to stay safe and professional",
+          "body": "You've learned to explain, fix, clean, build, analyse, chart, template, and automate. That's a powerful toolkit. This final lesson ensures you use it responsibly — protecting sensitive data, verifying critical outputs, and knowing Claude's boundaries. This is what separates confident professionals from reckless users.",
+          "stat": "15",
+          "statLabel": "lessons completed — you're graduating as a Claude + Excel power user"
+        },
+        {
+          "type": "content",
+          "headline": "Data privacy: what Claude can and can't see",
+          "body": "When you use Claude in Excel, it can see the data in your current workbook. This means you need to be thoughtful about sensitive information. Claude processes your prompts through Anthropic's servers — understand your organisation's data policies before sharing confidential data.",
+          "bullets": [
+            "Check your company's AI usage policy before using Claude with sensitive data",
+            "Avoid sharing personal identifiable information (PII) like SSNs, passwords, or medical records",
+            "If in doubt, anonymise data first — replace real names with \"Person A, Person B\"",
+            "Claude doesn't store your conversations between sessions (data isn't used for training)",
+            "For highly confidential work, check if your organisation has an enterprise AI agreement"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Always verify critical outputs",
+          "body": "Claude is incredibly helpful but not infallible. For decisions that matter — financial reports, client deliverables, legal documents — always verify Claude's work. Use it as a powerful first draft, then apply your human judgment for the final check.",
+          "bullets": [
+            "Spot-check formula results against manual calculations for the first few rows",
+            "For financial data, verify totals add up before sharing externally",
+            "If Claude suggests a macro, read it through (or ask Claude to explain) before running",
+            "Cross-reference data insights with your domain knowledge — does this make sense?",
+            "When in doubt, ask Claude: \"What could go wrong with this approach?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Course complete: Your Claude + Excel Mastery Roadmap",
+          "body": "Congratulations — you've completed all 15 lessons! Here's your complete skill stack. You've gone from \"never used Claude in Excel\" to a genuine power user who can handle any spreadsheet challenge with confidence.",
+          "bullets": [
+            "Module 1: Setup, conversations, prompting, understanding spreadsheets",
+            "Module 2: Explain formulas, fix errors, clean data, build formulas",
+            "Module 3: Analyse data, create charts, build templates, automate tasks, stay safe",
+            "🎓 You now know more about AI + Excel than 99% of spreadsheet users",
+            "💡 Keep practising — the more you use Claude, the better your prompts become"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your graduation challenge",
+          "body": "Complete this final challenge to earn your certificate: Open a real work spreadsheet and complete a full workflow using at least 3 different skills from this course. For example: (1) Ask Claude to summarise the spreadsheet, (2) Fix an error or clean some data, (3) Build a new formula or create a summary section. Then reflect: how much time did this save you compared to doing it all manually? That's your new normal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you do before using Claude with sensitive company data?",
+          "type": "mcq",
+          "options": [
+            "Nothing — just use it freely with any data",
+            "Check your organisation's AI usage policy and avoid sharing PII",
+            "Only use Claude on weekends when no one is watching",
+            "Print all the data first"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always check your company's AI usage policy first. Avoid sharing personally identifiable information, and when in doubt, anonymise sensitive data before asking Claude about it."
+        },
+        {
+          "question": "Claude's outputs are always 100% correct and never need human verification.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — Claude is powerful but not infallible. For critical work (financial reports, client deliverables), always spot-check results, verify totals, and apply your own domain knowledge as a final check."
+        },
+        {
+          "question": "What's the best mindset for using Claude in professional Excel work?",
+          "type": "mcq",
+          "options": [
+            "Trust Claude blindly for everything",
+            "Never use Claude because AI can't be trusted",
+            "Use Claude as a powerful assistant, but verify critical outputs with human judgment",
+            "Only use Claude for fun, never for real work"
+          ],
+          "correctIndex": 2,
+          "explanation": "The professional approach is to use Claude as a powerful first draft and accelerator, while applying human verification for anything critical. This gives you speed AND accuracy."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "singlePriceCents": 295,
+  "bundlePriceCents": 795,
+  "bundleOtoPriceCents": 495,
+  "bundleSlug": "planner-bundle",
+  "librarySlug": "planner-bundle-library",
+  "listValueCents": 2950,
+  "totalPdfPages": 289,
+  "planners": [
+    {
+      "id": "lets-get-productive",
+      "name": "Let's Get Productive Planner",
+      "benefit": "Plan your day around the work that actually moves things forward.",
+      "priceCents": 295,
+      "order": 1,
+      "pdfPages": 29,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/eHuV-68fS6l_rBNZn9PKD/cover-lets-get-productive-m_WAf6nI.png"
+    },
+    {
+      "id": "deep-focus-at-work",
+      "name": "Deep Focus at Work Planner",
+      "benefit": "Protect blocks of real focus time in a working day full of interruptions.",
+      "priceCents": 295,
+      "order": 2,
+      "pdfPages": 30,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/CyY-HiWWuGu1zoFawjanq/cover-deep-focus-at-work-EYX4_NrU.png"
+    },
+    {
+      "id": "distraction-free",
+      "name": "Distraction Free Planner",
+      "benefit": "Spot what pulls you off task, and set up your day so it happens less.",
+      "priceCents": 295,
+      "order": 3,
+      "pdfPages": 27,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/MzFIHoFyjWC-qjC7moyc7/cover-distraction-free-e2tmkcCl.png"
+    },
+    {
+      "id": "overcoming-lazy-days",
+      "name": "Overcoming Lazy Days Planner",
+      "benefit": "Get started again on the days when you have no motivation at all.",
+      "priceCents": 295,
+      "order": 4,
+      "pdfPages": 31,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/gTLFVnOpxLRar4KS-OeGB/cover-overcoming-lazy-days-rOvqEU0m.png"
+    },
+    {
+      "id": "personal-growth",
+      "name": "Personal Growth Planner",
+      "benefit": "Choose what you want to improve, and track it week by week.",
+      "priceCents": 295,
+      "order": 5,
+      "pdfPages": 26,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/TguxKSL_lSj25gXUljE68/cover-personal-growth-A_jvXmhP.png"
+    },
+    {
+      "id": "self-reflection-journal",
+      "name": "Self Reflection Journal",
+      "benefit": "Think through how a day or week really went, with prompts to guide you.",
+      "priceCents": 295,
+      "order": 6,
+      "pdfPages": 35,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/VhGuWaukyO6SUa9ukY4r0/cover-self-reflection-journal-xzQQFtMX.png"
+    },
+    {
+      "id": "dream-bigger",
+      "name": "Dream Bigger Planner",
+      "benefit": "Turn a vague ambition into something specific you can start on.",
+      "priceCents": 295,
+      "order": 7,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/Utl5BPEK5dp_57A1ZkfEP/cover-dream-bigger-rMZCKIyX.png"
+    },
+    {
+      "id": "live-with-purpose",
+      "name": "Live With Purpose Planner",
+      "benefit": "Get clear on what matters to you, and plan around it instead of past it.",
+      "priceCents": 295,
+      "order": 8,
+      "pdfPages": 27,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/cIj3kMximL9TUn5ScPWJS/cover-live-with-purpose-FPuQ9hYq.png"
+    },
+    {
+      "id": "find-your-passion",
+      "name": "Find Your Passion Workbook",
+      "benefit": "Work out what genuinely interests you, through questions rather than guesswork.",
+      "priceCents": 295,
+      "order": 9,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/Oc0QCkNOynB5WsfXhrmTg/cover-find-your-passion-hKoWyrVR.png"
+    },
+    {
+      "id": "financial-discipline",
+      "name": "Financial Discipline Planner",
+      "benefit": "Build steadier money habits, and see where yours currently go.",
+      "priceCents": 295,
+      "order": 10,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/rHkYk7cnpnpJGJYfCcZdx/cover-financial-discipline-wpRH-6Vp.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": "productivity-and-focus",
+      "name": "Productivity & Focus",
+      "summary": "Plan the day around real work, and protect the time to do it.",
+      "plannerIds": [
+        "lets-get-productive",
+        "deep-focus-at-work",
+        "distraction-free",
+        "overcoming-lazy-days"
+      ],
+      "icon": "target",
+      "accent": "success"
+    },
+    {
+      "id": "purpose-and-direction",
+      "name": "Purpose & Direction",
+      "summary": "Work out what you actually want, and turn it into something specific.",
+      "plannerIds": [
+        "dream-bigger",
+        "live-with-purpose",
+        "find-your-passion"
+      ],
+      "icon": "rocket",
+      "accent": "purple"
+    },
+    {
+      "id": "growth-and-reflection",
+      "name": "Personal Growth",
+      "summary": "Choose what to improve, and look back honestly on how it went.",
+      "plannerIds": [
+        "personal-growth",
+        "self-reflection-journal"
+      ],
+      "icon": "compass",
+      "accent": "coral"
+    },
+    {
+      "id": "money-habits",
+      "name": "Money Habits",
+      "summary": "See where your money goes, and build steadier habits around it.",
+      "plannerIds": [
+        "financial-discipline"
+      ],
+      "icon": "wallet",
+      "accent": "teal"
+    }
+  ],
+  "pdfsInBundle": false,
+  "localCovers": "extracted/planners/covers/{id}.png (10 files, downloaded from coverUrl)",
+  "placeholderPdfs": "extracted/planners/placeholders/{id}.pdf (1-page, cover art — not the 289-page product PDFs)",
+  "pdfGap": "Planner PDF files are not in the client bundle (only coverUrl). Placeholder 1-page PDFs from covers until Wave 7."
+}

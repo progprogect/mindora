@@ -1,0 +1,1933 @@
+{
+  "id": "high-performance-accelerator",
+  "title": "High Performance Accelerator",
+  "subtitle": "Develop the focus, discipline and habits used by elite performers to consistently achieve more.",
+  "totalDays": 21,
+  "totalXp": 440,
+  "modules": [
+    {
+      "id": "hpa-module-1",
+      "moduleNumber": 1,
+      "title": "Master Your Focus",
+      "subtitle": "Train your attention like an elite performer and eliminate distractions at their source.",
+      "days": "Lessons 1–7",
+      "skill": "Train your attention and eliminate distractions at their source",
+      "lessonIds": [
+        "hpa-1-attention-economy",
+        "hpa-2-distraction-proof",
+        "hpa-3-deep-work-protocol",
+        "hpa-4-attention-training",
+        "hpa-5-cognitive-load",
+        "hpa-6-focus-rituals",
+        "hpa-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "hpa-module-2",
+      "moduleNumber": 2,
+      "title": "Build Iron Discipline",
+      "subtitle": "Create systems that make discipline automatic rather than relying on willpower alone.",
+      "days": "Lessons 8–14",
+      "skill": "Create systems that make discipline automatic",
+      "lessonIds": [
+        "hpa-8-willpower-myth",
+        "hpa-9-identity-discipline",
+        "hpa-10-non-negotiables",
+        "hpa-11-accountability-systems",
+        "hpa-12-temptation-bundling",
+        "hpa-13-discipline-recovery",
+        "hpa-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "hpa-module-3",
+      "moduleNumber": 3,
+      "title": "Sustain Peak Output",
+      "subtitle": "Optimise your energy, recovery, and performance cycles for long-term excellence.",
+      "days": "Lessons 15–21",
+      "skill": "Optimise your energy and performance cycles for long-term excellence",
+      "lessonIds": [
+        "hpa-15-performance-cycles",
+        "hpa-16-strategic-rest",
+        "hpa-17-peak-state-triggers",
+        "hpa-18-output-tracking",
+        "hpa-19-environment-mastery",
+        "hpa-20-long-game",
+        "hpa-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hpa-1-attention-economy",
+      "dayNumber": 1,
+      "moduleId": "hpa-module-1",
+      "title": "The Attention Economy",
+      "subtitle": "Treat your focus like your most valuable currency.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Attention is Being Auctioned",
+          "body": "In a world designed to capture your gaze, your focus is the primary currency being traded by digital platforms. Every notification is a withdrawal from your mental bank account.",
+          "stat": "23",
+          "statLabel": "minutes to refocus after a single distraction"
+        },
+        {
+          "type": "content",
+          "headline": "The Cost of Distraction",
+          "body": "When you switch tasks, you don't actually leave the previous one behind. You carry 'attention residue'—a lingering cognitive load that prevents you from entering a deep state of flow.",
+          "bullets": [
+            "Multitasking is a myth that lowers actual IQ by 10 points.",
+            "Attention residue creates a chronic state of partial focus.",
+            "Constant context switching leads to mental burnout."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deliberate Focus vs. Passive Consumption",
+          "body": "Passive consumption happens when you let algorithms dictate your input. Deliberate focus is the act of choosing exactly where your cognitive energy is directed, regardless of external noise.",
+          "stat": "40%",
+          "statLabel": "potential productivity gain from deep work",
+          "bullets": [
+            "Passive: Scrolling feeds, checking emails, reacting to pings.",
+            "Deliberate: Deep work blocks, intentional learning, solo creative time.",
+            "The shift converts time spent into high-leverage results."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Focus Dividend",
+          "body": "By protecting your attention, you accumulate a 'focus dividend.' This is the compounding interest of your cognitive output, where you achieve more in two hours of deep work than most do in an eight-hour day.",
+          "bullets": [
+            "Reduced mental fatigue through focused blocks.",
+            "Higher quality output due to sustained concentration.",
+            "Increased clarity in decision-making processes."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Environment",
+          "body": "For the next 60 minutes, put your phone in another room and close all browser tabs irrelevant to your current task. Notice the urge to switch tasks—and resist it. Track how much faster you finish your work."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is 'attention residue'?",
+          "type": "mcq",
+          "options": [
+            "The feeling of tiredness after a long day",
+            "The cognitive cost of switching between tasks",
+            "The ability to focus on two things at once",
+            "The memory of a task you forgot to complete"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attention residue occurs when your brain is still processing the previous task while you attempt to focus on a new one, reducing your effectiveness."
+        },
+        {
+          "question": "Which of these is a hallmark of 'deliberate focus'?",
+          "type": "mcq",
+          "options": [
+            "Checking notifications as they arrive",
+            "Responding to emails throughout the day",
+            "Engaging in deep work blocks",
+            "Multitasking to get more done"
+          ],
+          "correctIndex": 2,
+          "explanation": "Deliberate focus involves setting intentional periods for deep, uninterrupted work rather than reacting to external stimuli."
+        },
+        {
+          "question": "True or False: Multitasking effectively increases your overall cognitive output.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multitasking is a myth; it actually lowers your cognitive efficiency and creates attention residue."
+        }
+      ]
+    },
+    {
+      "id": "hpa-2-distraction-proof",
+      "dayNumber": 2,
+      "moduleId": "hpa-module-1",
+      "title": "Distraction-Proofing Your Environment",
+      "subtitle": "Design your space to reclaim your focus.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Is your desk working against you?",
+          "body": "Every notification and cluttered corner acts as a 'cognitive tax' on your brain, draining your willpower before you even start.",
+          "stat": "40%",
+          "statLabel": "Productivity loss from context switching"
+        },
+        {
+          "type": "content",
+          "headline": "Digital Hygiene",
+          "body": "Your digital environment is your primary workspace. If it's noisy, your mind will be too.",
+          "bullets": [
+            "Disable all non-essential push notifications.",
+            "Clear your desktop of unused files and shortcuts.",
+            "Use website blockers during your peak focus hours."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Physical Triggers",
+          "body": "Create physical cues that signal to your brain that it is time to enter a high-performance state.",
+          "bullets": [
+            "Keep only the tools for your current task on your desk.",
+            "Use a dedicated 'focus lamp' to signal work time.",
+            "Remove your phone from your line of sight entirely."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Friction Principle",
+          "body": "Make distractions hard to reach and essential tools easy to access to influence your behavior.",
+          "bullets": [
+            "Add friction to bad habits (e.g., log out of social media).",
+            "Remove friction from good habits (e.g., keep your notebook open).",
+            "Automate your environment setup for the next morning."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 60-Second Reset",
+          "body": "Right now, clear your desk of everything except the one item you need for your next task and put your phone in another room."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of the 'Friction Principle'?",
+          "type": "mcq",
+          "options": [
+            "To make work harder",
+            "To make distractions difficult and tools easy to access",
+            "To clean your desk faster",
+            "To buy new productivity software"
+          ],
+          "correctIndex": 1,
+          "explanation": "By increasing friction for distractions, you make them less likely to happen automatically."
+        },
+        {
+          "question": "Does having your phone in view, even if it is turned off, affect your focus?",
+          "type": "true-false",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that the mere presence of a smartphone reduces available cognitive capacity."
+        },
+        {
+          "question": "Which of these is a good 'physical cue' for focus?",
+          "type": "mcq",
+          "options": [
+            "Playing loud music",
+            "Turning on a specific desk lamp",
+            "Checking emails first",
+            "Keeping the TV on"
+          ],
+          "correctIndex": 1,
+          "explanation": "Using a consistent physical trigger helps your brain transition into 'deep work' mode."
+        }
+      ]
+    },
+    {
+      "id": "hpa-3-deep-work-protocol",
+      "dayNumber": 3,
+      "moduleId": "hpa-module-1",
+      "title": "The Deep Work Protocol",
+      "subtitle": "Master the art of distraction-free concentration.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The superpower of the 21st century",
+          "body": "Deep Work is the ability to focus without distraction on a cognitively demanding task. It is what separates the top 1% from the rest.",
+          "stat": "4",
+          "statLabel": "Max hours of deep work per day"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Philosophy",
+          "body": "Not everyone can live like a monk. Choose a depth philosophy that fits your current life stage.",
+          "bullets": [
+            "Bimodal: Split your time into long, dedicated chunks.",
+            "Rhythmic: Create a daily habit of deep work at the same time.",
+            "Journalistic: Fit deep work into your schedule whenever a gap appears."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rituals for Depth",
+          "body": "Don't rely on willpower. Rely on a protocol that makes deep work the default path.",
+          "bullets": [
+            "Define your location and duration before starting.",
+            "Set strict rules, such as zero internet access.",
+            "Ensure you have all necessary supplies ready."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Shutdown Ritual",
+          "body": "True depth requires true rest. You must disconnect completely to recharge your battery.",
+          "bullets": [
+            "Review your tasks for the next day.",
+            "Close all tabs and clear your workspace.",
+            "Say a shutdown phrase to signal the end of work."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Schedule a 90-Minute Block",
+          "body": "Pick a time tomorrow for a 90-minute 'Deep Work' session. Mark it in your calendar as an unmovable meeting with yourself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 'Rhythmic' philosophy of deep work?",
+          "type": "mcq",
+          "options": [
+            "Working only on weekends",
+            "Doing deep work at the same time every day",
+            "Working only when inspired",
+            "Working only in a library"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rhythmic scheduling relies on habit formation by creating a consistent daily routine."
+        },
+        {
+          "question": "Is it possible to sustain deep work for 8 hours a day?",
+          "type": "true-false",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most experts agree that 4 hours is the absolute maximum for high-intensity cognitive work."
+        },
+        {
+          "question": "What is the purpose of a shutdown ritual?",
+          "type": "mcq",
+          "options": [
+            "To finish more tasks",
+            "To mentally disconnect and recharge",
+            "To prepare for a meeting",
+            "To check emails one last time"
+          ],
+          "correctIndex": 1,
+          "explanation": "A shutdown ritual signals the end of the workday, allowing your brain to truly rest."
+        }
+      ]
+    },
+    {
+      "id": "hpa-4-attention-training",
+      "dayNumber": 4,
+      "moduleId": "hpa-module-1",
+      "title": "Training Your Attention Muscle",
+      "subtitle": "Strengthen your mind's ability to stay locked on.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Focus is a muscle, not a trait",
+          "body": "If you struggle to focus, it's not because you lack talent. It's because your attention muscle has atrophied from constant stimulation.",
+          "stat": "8",
+          "statLabel": "Seconds of average modern attention span"
+        },
+        {
+          "type": "content",
+          "headline": "The Nature of Attention",
+          "body": "Attention is a finite resource. Every time you switch tasks, you leave a 'residue' of attention behind.",
+          "bullets": [
+            "Acknowledge that distraction is a natural impulse.",
+            "Notice when your mind wanders without self-judgment.",
+            "Gently guide your focus back to the primary task."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deliberate Practice",
+          "body": "Build your attention span by pushing slightly beyond your current comfort zone.",
+          "bullets": [
+            "Start with 20-minute focus blocks.",
+            "Increase duration by 5 minutes each week.",
+            "Avoid 'attention-fragmenting' media like short-form video."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Monotasking",
+          "body": "Multitasking is a myth; it is actually just rapid task-switching that lowers your IQ.",
+          "bullets": [
+            "Commit to finishing one task before starting another.",
+            "Keep a 'distraction list' to jot down random thoughts.",
+            "Focus on progress, not just completion."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10-Minute Single-Focus Drill",
+          "body": "Set a timer for 10 minutes. Work on one single task. If your mind wanders, note it, and return to the work immediately."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is 'attention residue'?",
+          "type": "mcq",
+          "options": [
+            "A feeling of boredom",
+            "The mental energy left on a previous task when switching",
+            "The speed of your internet",
+            "The amount of work left to do"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you switch tasks, your attention doesn't immediately follow; some remains on the previous task."
+        },
+        {
+          "question": "Is multitasking an effective way to get more done?",
+          "type": "true-false",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multitasking actually lowers productivity and cognitive performance."
+        },
+        {
+          "question": "What should you do when you notice your mind wandering during a task?",
+          "type": "mcq",
+          "options": [
+            "Scold yourself for being distracted",
+            "Stop working for the day",
+            "Gently guide attention back to the task",
+            "Switch to a different task"
+          ],
+          "correctIndex": 2,
+          "explanation": "The key to training attention is the gentle return, not the avoidance of distraction."
+        }
+      ]
+    },
+    {
+      "id": "hpa-5-cognitive-load",
+      "dayNumber": 5,
+      "moduleId": "hpa-module-1",
+      "title": "Managing Cognitive Load",
+      "subtitle": "Clear mental clutter to maximize processing power.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Is your brain full?",
+          "body": "Your working memory is finite. When you juggle too many tasks, you experience cognitive overload, killing your focus.",
+          "stat": "4",
+          "statLabel": "Max items in working memory"
+        },
+        {
+          "type": "content",
+          "headline": "Externalize Everything",
+          "body": "Your brain is for processing ideas, not storing them. Use a 'Second Brain' system to offload mental weight.",
+          "bullets": [
+            "Capture all tasks immediately in a digital inbox.",
+            "Use external tools to track recurring reminders.",
+            "Clear your workspace of visual distractions."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Batching",
+          "body": "Switching tasks causes 'attention residue.' Minimize this by grouping similar tasks together.",
+          "bullets": [
+            "Batch emails and messages into specific time slots.",
+            "Group administrative tasks to reduce context switching.",
+            "Schedule 'Deep Work' blocks in silence."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Simplify Decisions",
+          "body": "Decision fatigue drains your willpower. Standardize your routine to save energy for high-value work.",
+          "bullets": [
+            "Automate recurring daily choices like meals or dress.",
+            "Use checklists for repetitive complex procedures.",
+            "Limit big decisions to your peak energy hours."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Brain Dump",
+          "body": "Spend 5 minutes writing down every open loop or task currently in your mind. Organize them into 'do' or 'defer' lists."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is 'attention residue'?",
+          "type": "mcq",
+          "options": [
+            "The mental energy saved by batching tasks",
+            "The focus remaining on a previous task after switching",
+            "The physical fatigue from working too long",
+            "A state of total relaxation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attention residue occurs when your brain continues to focus on a previous task even after you have started a new one."
+        },
+        {
+          "question": "True or False: Storing tasks in your head is more efficient than writing them down.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Storing tasks in your head consumes precious working memory, leading to cognitive load."
+        },
+        {
+          "question": "Why should you batch similar tasks?",
+          "type": "mcq",
+          "options": [
+            "To increase the total number of tasks",
+            "To reduce context switching costs",
+            "To make the day feel longer",
+            "To avoid using digital tools"
+          ],
+          "correctIndex": 1,
+          "explanation": "Batching reduces the mental cost of switching between different types of thinking processes."
+        }
+      ]
+    },
+    {
+      "id": "hpa-6-focus-rituals",
+      "dayNumber": 6,
+      "moduleId": "hpa-module-1",
+      "title": "Building Focus Rituals",
+      "subtitle": "Trigger deep work states on command.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Trigger Effect",
+          "body": "Elite performers don't wait for motivation. They use rituals to signal their brain that it's time to lock in.",
+          "stat": "90",
+          "statLabel": "Seconds to trigger focus"
+        },
+        {
+          "type": "content",
+          "headline": "Designing Your Ritual",
+          "body": "A ritual is a sequence of actions that primes your nervous system for high-intensity concentration.",
+          "bullets": [
+            "Choose a specific location for deep work.",
+            "Use environmental cues like lighting or sound.",
+            "Engage in a brief physical warm-up."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Sensory Bridge",
+          "body": "Use your senses to anchor your focus. Consistency is the key to making these signals effective over time.",
+          "bullets": [
+            "Select a specific 'focus' playlist (instrumental).",
+            "Use the same beverage to signify the start of work.",
+            "Clear your digital desktop before you begin."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Shutdown Ritual",
+          "body": "Focus rituals aren't just for starting. A shutdown ritual protects your downtime and prevents burnout.",
+          "bullets": [
+            "Review your progress for the day.",
+            "Plan the top three tasks for tomorrow.",
+            "Verbally state 'Shutdown complete' to finalize."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your 3-Step Trigger",
+          "body": "Create a 3-step sequence (e.g., put on headphones, clear desk, set timer) to perform every time you start deep work."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of a focus ritual?",
+          "type": "mcq",
+          "options": [
+            "To look busy for coworkers",
+            "To signal the brain it is time for deep work",
+            "To increase working memory capacity",
+            "To replace the need for sleep"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focus rituals act as a Pavlovian trigger to shift your brain into a state of high concentration."
+        },
+        {
+          "question": "True or False: Shutdown rituals are unnecessary for high performance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Shutdown rituals are essential to disconnect, prevent burnout, and prepare for the next day."
+        },
+        {
+          "question": "Which of these is a good sensory trigger for focus?",
+          "type": "mcq",
+          "options": [
+            "Scrolling social media",
+            "Listening to the same instrumental playlist",
+            "Working in a high-traffic area",
+            "Changing your workspace every hour"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consistency in sensory input helps your brain quickly associate those stimuli with deep work."
+        }
+      ]
+    },
+    {
+      "id": "hpa-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "hpa-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Integrate your focus system.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Mastery in Action",
+          "body": "You've learned the pillars of focus. Now, we integrate them into a custom system that works for your life.",
+          "stat": "100",
+          "statLabel": "% Ownership of your focus"
+        },
+        {
+          "type": "content",
+          "headline": "Reviewing Your Progress",
+          "body": "Look back at the strategies from this module. Mastery isn't about knowing them; it's about applying them daily.",
+          "bullets": [
+            "Did you identify your peak energy hours?",
+            "Are you successfully offloading mental clutter?",
+            "Have you established your focus rituals?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Focus Audit",
+          "body": "Reflect on where you still encounter friction. Identify one habit that is currently sabotaging your attention.",
+          "bullets": [
+            "Note down common sources of interruption.",
+            "Evaluate the effectiveness of your batching.",
+            "Adjust your environment to remove friction."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your System",
+          "body": "Combine your rituals, offloading tools, and batching schedules into a unified 'Focus Operating System'.",
+          "bullets": [
+            "Document your daily schedule.",
+            "Keep your tools minimal and accessible.",
+            "Iterate and improve your system weekly."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Commitment Contract",
+          "body": "Write down your 'Focus Manifesto': one sentence defining when and how you will work, and one action you will take to protect it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the final step in achieving focus mastery?",
+          "type": "mcq",
+          "options": [
+            "Reading more books",
+            "Integrating principles into a personal system",
+            "Working longer hours",
+            "Ignoring all emails"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mastery is achieved by integrating individual techniques into a cohesive system that fits your lifestyle."
+        },
+        {
+          "question": "True or False: A focus system should remain static and never change.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A high-performance system requires iteration and adjustment as your life and work demands evolve."
+        },
+        {
+          "question": "What does a 'Focus Audit' help you identify?",
+          "type": "mcq",
+          "options": [
+            "New software to buy",
+            "Sources of friction and distraction",
+            "How many hours you sleep",
+            "Your favorite office chair"
+          ],
+          "correctIndex": 1,
+          "explanation": "Auditing helps you pinpoint exactly where your focus is breaking down so you can fix it."
+        }
+      ]
+    },
+    {
+      "id": "hpa-8-willpower-myth",
+      "dayNumber": 8,
+      "moduleId": "hpa-module-2",
+      "title": "The Willpower Myth",
+      "subtitle": "Stop relying on motivation to get things done.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Willpower is a finite resource.",
+          "body": "If you rely on 'feeling like it' to perform, you've already lost. High performers don't have more willpower; they have better systems.",
+          "stat": "85",
+          "statLabel": "Percent of habits that become automatic"
+        },
+        {
+          "type": "content",
+          "headline": "Why Willpower Fails",
+          "body": "Willpower is like a battery; it drains throughout the day based on stress, hunger, and decision fatigue.",
+          "bullets": [
+            "Decision fatigue depletes your focus.",
+            "Emotional states are volatile and unreliable.",
+            "Relying on discipline is a fallback for a lack of environment design."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Systems",
+          "body": "Systems remove the need for a choice. When the process is automated, you don't have to 'decide' to do the work.",
+          "bullets": [
+            "Environment design dictates behavior.",
+            "Default settings minimize friction.",
+            "Systems run while your willpower is low."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Replacing 'Will' with 'Way'",
+          "body": "Focus on building a 'way' to do things rather than brute-forcing your way through the day.",
+          "bullets": [
+            "Pre-plan your tasks the night before.",
+            "Reduce friction for good habits.",
+            "Increase friction for bad habits."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Friction",
+          "body": "Identify one task you struggle to start, then remove one piece of friction preventing you from doing it immediately."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is willpower considered unreliable?",
+          "type": "mcq",
+          "options": [
+            "It is a renewable resource",
+            "It is depleted by decision fatigue",
+            "It is not impacted by stress",
+            "It is genetically fixed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Willpower is a finite resource that gets drained by daily decisions and stress."
+        },
+        {
+          "question": "True or false: High performers rely on motivation to start tasks.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "High performers rely on systems and habits, not motivation."
+        },
+        {
+          "question": "What is the best way to bypass the need for willpower?",
+          "type": "mcq",
+          "options": [
+            "Sleep more",
+            "Use a calendar",
+            "Environment design",
+            "Increased caffeine"
+          ],
+          "correctIndex": 2,
+          "explanation": "Environment design removes the friction that requires willpower to overcome."
+        }
+      ]
+    },
+    {
+      "id": "hpa-9-identity-discipline",
+      "dayNumber": 9,
+      "moduleId": "hpa-module-2",
+      "title": "Identity-Based Discipline",
+      "subtitle": "Change who you are to change what you do.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Behavior follows identity.",
+          "body": "You don't need to force discipline if you act in alignment with who you believe you are.",
+          "stat": "100",
+          "statLabel": "Percent of identity-aligned actions that feel effortless"
+        },
+        {
+          "type": "content",
+          "headline": "The Identity Shift",
+          "body": "Most people try to change their results first, but true change happens at the identity level.",
+          "bullets": [
+            "Don't say 'I'm trying to quit smoking', say 'I am not a smoker'.",
+            "Identity acts as a filter for your daily choices.",
+            "Every action is a vote for the type of person you want to become."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Beliefs Shape Reality",
+          "body": "When you internalize a new identity, you stop asking 'should I do this?' and start asking 'what would [identity] do?'",
+          "bullets": [
+            "Define your target persona.",
+            "Identify the core values of that persona.",
+            "Perform small 'identity-consistent' actions daily."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Feedback Loop",
+          "body": "As you perform small actions, you prove to yourself that your new identity is real.",
+          "bullets": [
+            "Action reinforces belief.",
+            "Consistency builds evidence.",
+            "Evidence solidifies identity."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Define Your 'I Am'",
+          "body": "Write down one identity statement (e.g., 'I am an athlete') and list one action you will perform today that proves it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective way to create effortless discipline?",
+          "type": "mcq",
+          "options": [
+            "Brute force",
+            "Identity change",
+            "External rewards",
+            "Public shaming"
+          ],
+          "correctIndex": 1,
+          "explanation": "Changing your identity makes specific behaviors feel natural rather than forced."
+        },
+        {
+          "question": "True or false: You should wait until you have results before adopting a new identity.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adopting the identity first leads to the actions that produce the results."
+        },
+        {
+          "question": "What does an identity-based action provide?",
+          "type": "mcq",
+          "options": [
+            "Evidence of your character",
+            "Instant fame",
+            "A financial reward",
+            "Temporary motivation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Every action serves as a vote for the type of person you are becoming."
+        }
+      ]
+    },
+    {
+      "id": "hpa-10-non-negotiables",
+      "dayNumber": 10,
+      "moduleId": "hpa-module-2",
+      "title": "Your Non-Negotiable List",
+      "subtitle": "The 3-5 daily actions that anchor your day.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "If everything is a priority, nothing is.",
+          "body": "Non-negotiables are the 'floor' of your performance—the absolute minimum you do regardless of how you feel.",
+          "stat": "3",
+          "statLabel": "Minimum number of non-negotiable daily actions"
+        },
+        {
+          "type": "content",
+          "headline": "Defining Your Floor",
+          "body": "Your non-negotiables aren't your 'best day' goals; they are your 'worst day' standards.",
+          "bullets": [
+            "Keep the list short (3-5 items).",
+            "Focus on high-leverage activities.",
+            "Make them binary: either you did it or you didn't."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'No-Excuse' Rule",
+          "body": "The point of a non-negotiable is that it survives even on your busiest or sickest days.",
+          "bullets": [
+            "Eliminate the 'should I?' question.",
+            "Protect these blocks of time at all costs.",
+            "Accept no exceptions."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Examples of Anchors",
+          "body": "Common non-negotiables range from physical health to professional deep work.",
+          "bullets": [
+            "30 minutes of deep work.",
+            "15 minutes of movement.",
+            "Zero sugar intake."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your List",
+          "body": "Write down your 3 non-negotiables. If a crisis happens today, these are the only 3 things that must get done."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the purpose of a non-negotiable?",
+          "type": "mcq",
+          "options": [
+            "To list every task",
+            "To create a safety floor for performance",
+            "To impress others",
+            "To increase stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Non-negotiables provide a minimum standard to maintain momentum on bad days."
+        },
+        {
+          "question": "True or false: You should try to have 10+ non-negotiables.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Too many non-negotiables make them impossible to sustain; keep it to 3-5."
+        },
+        {
+          "question": "When should you skip a non-negotiable?",
+          "type": "mcq",
+          "options": [
+            "When you are tired",
+            "When you have a busy schedule",
+            "When you feel sick",
+            "Never"
+          ],
+          "correctIndex": 3,
+          "explanation": "The definition of non-negotiable means it is done regardless of circumstances."
+        }
+      ]
+    },
+    {
+      "id": "hpa-11-accountability-systems",
+      "dayNumber": 11,
+      "moduleId": "hpa-module-2",
+      "title": "Accountability Systems",
+      "subtitle": "Make quitting harder than continuing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Internal motivation is a lie.",
+          "body": "External pressure is the ultimate accelerator. If you can quit in silence, you will eventually quit.",
+          "stat": "95",
+          "statLabel": "Percent higher success rate with accountability"
+        },
+        {
+          "type": "content",
+          "headline": "The 'Harder to Quit' Principle",
+          "body": "Design systems where the cost of quitting is higher than the cost of doing the work.",
+          "bullets": [
+            "Use social stakes to increase pressure.",
+            "Implement financial penalties for failure.",
+            "Report progress to someone you respect."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Types of Accountability",
+          "body": "Choose the accountability style that triggers your need for consistency.",
+          "bullets": [
+            "Social: Accountability partners or groups.",
+            "Financial: Commitment contracts (e.g., StickK).",
+            "Public: Posting your progress online."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Feedback Loop",
+          "body": "Accountability isn't about shame; it's about external validation and honest tracking.",
+          "bullets": [
+            "Daily check-in routines.",
+            "Publicly declare your goals.",
+            "Review progress with a mentor/coach."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Your Stake",
+          "body": "Find one accountability partner today and message them your #1 priority for tomorrow. Tell them to check in on you."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why use external accountability?",
+          "type": "mcq",
+          "options": [
+            "Because it's fun",
+            "To make quitting harder than continuing",
+            "To get attention",
+            "To lower your workload"
+          ],
+          "correctIndex": 1,
+          "explanation": "External accountability adds stakes that make it harder to give up on your goals."
+        },
+        {
+          "question": "True or false: Publicly declaring a goal is a form of accountability.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Public declaration creates social pressure to follow through."
+        },
+        {
+          "question": "What is the most important aspect of an accountability system?",
+          "type": "mcq",
+          "options": [
+            "The size of the reward",
+            "The cost of quitting",
+            "The number of people involved",
+            "The time of day"
+          ],
+          "correctIndex": 1,
+          "explanation": "The system must make the cost of quitting high enough to deter you from stopping."
+        }
+      ]
+    },
+    {
+      "id": "hpa-12-temptation-bundling",
+      "dayNumber": 12,
+      "moduleId": "hpa-module-2",
+      "title": "Temptation Bundling",
+      "subtitle": "Make discipline feel effortless through smart pairing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Relying on Willpower",
+          "body": "Discipline shouldn't always feel like a battle against your own desires. Use the science of 'Temptation Bundling' to trick your brain into enjoying the process.",
+          "stat": "85",
+          "statLabel": "Percent higher task completion rate"
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Pairing",
+          "body": "Temptation bundling involves linking an action you want to do with an action you need to do. By combining a 'want' with a 'need,' you reduce the friction of starting difficult tasks.",
+          "bullets": [
+            "Identify a high-friction task (e.g., filing reports).",
+            "Identify a low-friction indulgence (e.g., listening to a favorite podcast).",
+            "Only allow the indulgence during the execution of the hard task."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why It Works",
+          "body": "Your brain is wired to seek dopamine. When you tether a boring task to a rewarding experience, you create an immediate neurological incentive to engage with your discipline.",
+          "bullets": [
+            "Instant gratification replaces the pain of delay.",
+            "Reduces the cognitive load of 'getting started'.",
+            "Builds a positive association with hard work."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rules for Success",
+          "body": "To make this system sustainable, you must maintain firm boundaries. If you indulge in the reward without doing the work, the psychological link breaks.",
+          "bullets": [
+            "Be specific about the pairing.",
+            "Keep the reward exclusive to the task.",
+            "Ensure the reward is truly motivating."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Bundle",
+          "body": "Pick one task you’ve been putting off today. Pair it with an activity you love. Commit to doing the task only while engaging in that activity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of temptation bundling?",
+          "type": "mcq",
+          "options": [
+            "To eliminate all rewards",
+            "To increase willpower reliance",
+            "To make difficult tasks more enjoyable",
+            "To shorten task duration"
+          ],
+          "correctIndex": 2,
+          "explanation": "Temptation bundling pairs a needed task with an enjoyable one to lower the barrier to entry."
+        },
+        {
+          "question": "Should you allow yourself the 'reward' activity even if you don't do the 'needed' task?",
+          "type": "true-false",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctIndex": 1,
+          "explanation": "No; if you don't keep the reward exclusive to the task, the psychological link breaks."
+        },
+        {
+          "question": "Which of these is an example of temptation bundling?",
+          "type": "mcq",
+          "options": [
+            "Sleeping after a long day",
+            "Watching TV and doing nothing",
+            "Listening to a podcast only while at the gym",
+            "Eating candy during a meeting"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pairing a podcast (reward) with the gym (needed task) is a classic example of temptation bundling."
+        }
+      ]
+    },
+    {
+      "id": "hpa-13-discipline-recovery",
+      "dayNumber": 13,
+      "moduleId": "hpa-module-2",
+      "title": "Recovering From Discipline Failures",
+      "subtitle": "Bounce back faster after a slip-up.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 'What-the-Hell' Effect",
+          "body": "The biggest threat to discipline isn't the first mistake—it's the second. Learn how to stop the spiral before it starts.",
+          "stat": "100",
+          "statLabel": "Percent of high performers who fail"
+        },
+        {
+          "type": "content",
+          "headline": "Adopt the 'Never Miss Twice' Rule",
+          "body": "Missing once is an accident. Missing twice is the beginning of a new habit. Your recovery speed defines your long-term success.",
+          "bullets": [
+            "Acknowledge the slip without shame.",
+            "Analyze the trigger that caused the failure.",
+            "Reset immediately, regardless of the time of day."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Neutralize the Guilt",
+          "body": "Guilt is a high-energy emotion that drains the willpower needed to get back on track. Treat failure as data, not as a character flaw.",
+          "bullets": [
+            "Focus on the system, not your identity.",
+            "Ask: 'What environmental factor caused this?'",
+            "Lower the bar for the next task to regain momentum."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Reset Protocol",
+          "body": "When you fall off the wagon, don't wait for Monday. Execute a 'mini-reset' to reclaim your discipline identity within minutes.",
+          "bullets": [
+            "Complete one tiny, non-negotiable task.",
+            "Clean your workspace to clear mental clutter.",
+            "Re-state your 'Why' to reconnect with your vision."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Conduct a Post-Mortem",
+          "body": "Identify a recent time you broke a streak. Write down the exact trigger and one specific action you will take next time to avoid it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 'Never Miss Twice' rule?",
+          "type": "mcq",
+          "options": [
+            "Never fail in public",
+            "Never allow two consecutive failures",
+            "Never start a habit on a weekend",
+            "Never track your failures"
+          ],
+          "correctIndex": 1,
+          "explanation": "The rule is that one failure is an accident, but two is the start of a bad habit."
+        },
+        {
+          "question": "Is feeling guilty helpful for long-term discipline?",
+          "type": "true-false",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctIndex": 1,
+          "explanation": "Guilt drains the mental energy needed to get back on track; treat failure as data instead."
+        },
+        {
+          "question": "What is the most effective way to recover from a slip?",
+          "type": "mcq",
+          "options": [
+            "Wait for the next week",
+            "Ignore it and hope for the best",
+            "Do one tiny, non-negotiable task immediately",
+            "Double your workload the next day"
+          ],
+          "correctIndex": 2,
+          "explanation": "Completing a tiny task provides immediate momentum and interrupts the failure spiral."
+        }
+      ]
+    },
+    {
+      "id": "hpa-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "hpa-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Integrate your discipline systems.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Solidifying Your Foundation",
+          "body": "You've learned the mechanics of building iron discipline. Now it's time to weave these techniques into a single, cohesive framework.",
+          "stat": "2",
+          "statLabel": "Weeks of progress solidified"
+        },
+        {
+          "type": "content",
+          "headline": "The Discipline Audit",
+          "body": "Look back at the last 14 days. You have built a toolkit ranging from environmental design to temptation bundling and recovery protocols.",
+          "bullets": [
+            "Review your environment: Is it still optimized?",
+            "Assess your bundles: Are they actually motivating?",
+            "Reflect on your recovery: How quick was your bounce-back?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Framework",
+          "body": "A framework is a system that runs automatically. Your goal is to move from 'trying to be disciplined' to 'having a disciplined lifestyle.'",
+          "bullets": [
+            "Automate your daily rituals.",
+            "Use triggers to start workflows.",
+            "Keep your recovery protocols ready."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Preparing for Module 3",
+          "body": "With your discipline foundation laid, you are now prepared to tackle Module 3: Peak Productivity. Discipline is the engine, and productivity will be the output.",
+          "bullets": [
+            "Ensure your basics are non-negotiable.",
+            "Keep your tracking simple.",
+            "Stay focused on consistency over intensity."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Discipline Manifesto",
+          "body": "Summarize your discipline strategy in 3 sentences. State your triggers, your bundles, and your recovery protocol. Keep this visible."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary difference between a 'technique' and a 'framework'?",
+          "type": "mcq",
+          "options": [
+            "Frameworks are for beginners",
+            "Techniques are isolated; frameworks are integrated",
+            "Frameworks have no rules",
+            "Techniques are only for work"
+          ],
+          "correctIndex": 1,
+          "explanation": "Techniques are individual tools, while a framework integrates them into a cohesive lifestyle system."
+        },
+        {
+          "question": "Is discipline a fixed trait or a system that can be built?",
+          "type": "true-false",
+          "options": [
+            "Fixed trait",
+            "System that can be built"
+          ],
+          "correctIndex": 1,
+          "explanation": "Discipline is a skill developed through consistent systems and environmental design."
+        },
+        {
+          "question": "What is the role of the 'Discipline Manifesto'?",
+          "type": "mcq",
+          "options": [
+            "To impress others",
+            "To act as a daily reminder of your system",
+            "To replace your to-do list",
+            "To track your calories"
+          ],
+          "correctIndex": 1,
+          "explanation": "The manifesto keeps your strategy visible and reinforces your commitment to your systems."
+        }
+      ]
+    },
+    {
+      "id": "hpa-15-performance-cycles",
+      "dayNumber": 15,
+      "moduleId": "hpa-module-3",
+      "title": "Understanding Performance Cycles",
+      "subtitle": "Aligning your work with your biological rhythm.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Fighting Your Biology",
+          "body": "Your brain operates in natural 90-120 minute waves called Ultradian Rhythms. Trying to force peak focus outside of these cycles is why you feel burnt out by 3 PM.",
+          "stat": "90",
+          "statLabel": "Minute Focus Cycles"
+        },
+        {
+          "type": "content",
+          "headline": "The Ultradian Advantage",
+          "body": "The brain can only maintain peak focus for about 90 minutes before requiring a reset. Working against this cycle leads to diminishing returns and mental fatigue.",
+          "bullets": [
+            "Identify your 'Chronotype' (Morning vs. Night person).",
+            "Schedule deep work during your natural energy peaks.",
+            "Respect the cycle by taking a true disconnect break."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Managing Energy, Not Time",
+          "body": "High performers monitor energy levels rather than just the clock. By tracking when you feel most alert, you can batch complex tasks during high-energy windows.",
+          "bullets": [
+            "Tasks requiring high cognitive load demand peak energy.",
+            "Administrative tasks are best suited for 'trough' periods.",
+            "Consistent cycles stabilize long-term output."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Signs of Energy Decay",
+          "body": "Recognizing the biological signals that your cycle is ending is critical to preventing crashes. Don't push through; transition.",
+          "bullets": [
+            "Increased desire to check social media.",
+            "Difficulty maintaining focus on a single sentence.",
+            "Physical restlessness or eye strain."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Energy Audit",
+          "body": "For the next three days, record your energy level (1-10) every hour. Identify your two-hour 'Peak Window' each day."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an Ultradian Rhythm?",
+          "type": "mcq",
+          "options": [
+            "A 24-hour sleep cycle",
+            "A 90-120 minute cycle of focus and rest",
+            "A weekly productivity cycle",
+            "The body's heart rate variability"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ultradian rhythms are natural biological cycles that govern energy and focus in 90-120 minute intervals."
+        },
+        {
+          "question": "True or False: You should push through the end of an energy cycle to build mental endurance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Forcing work during an energy dip leads to burnout and reduced quality; it is better to take a break."
+        },
+        {
+          "question": "Which tasks are best saved for your 'trough' energy periods?",
+          "type": "mcq",
+          "options": [
+            "Complex creative writing",
+            "Strategic planning",
+            "Answering routine emails",
+            "Learning a new skill"
+          ],
+          "correctIndex": 2,
+          "explanation": "Administrative or routine tasks require less cognitive load and are perfect for lower-energy periods."
+        }
+      ]
+    },
+    {
+      "id": "hpa-16-strategic-rest",
+      "dayNumber": 16,
+      "moduleId": "hpa-module-3",
+      "title": "Strategic Rest",
+      "subtitle": "Rest is not laziness; it is a performance tool.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Rest is Fuel, Not a Reward",
+          "body": "Elite athletes don't view recovery as 'time off'—they view it as a critical component of training. Your brain is a muscle; it needs recovery to grow.",
+          "stat": "20",
+          "statLabel": "Percent Performance Boost"
+        },
+        {
+          "type": "content",
+          "headline": "Active vs. Passive Rest",
+          "body": "Not all rest is created equal. Understanding the difference between 'numbing' and 'recharging' is the key to sustaining high output.",
+          "bullets": [
+            "Passive rest (napping, meditation) restores mental capacity.",
+            "Active rest (light movement, hobbies) improves blood flow.",
+            "Avoid 'Digital Rest'—scrolling is not recovery."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of the Micro-Break",
+          "body": "Short, intentional breaks prevent decision fatigue. By stepping away, you allow your brain to enter 'Default Mode Network', where it solves complex problems.",
+          "bullets": [
+            "Step away from all screens during breaks.",
+            "Focus on rhythmic breathing to reset the nervous system.",
+            "Engage in non-work tasks to clear cognitive clutter."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Recovery Protocol",
+          "body": "Just as you schedule work, you must schedule recovery. A consistent rest protocol prevents the 'Friday Crash' that ruins your weekend.",
+          "bullets": [
+            "Schedule 5-minute movement breaks every 90 minutes.",
+            "Implement a 'Shutdown Ritual' at the end of the day.",
+            "Protect your sleep window as a non-negotiable."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The No-Screen Break",
+          "body": "Set a timer for 10 minutes. Step away from your desk, leave your phone behind, and go for a walk or sit in silence. No inputs allowed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main goal of 'Strategic Rest'?",
+          "type": "mcq",
+          "options": [
+            "To avoid work as much as possible",
+            "To prepare the mind and body for peak performance",
+            "To pass time until the day ends",
+            "To reduce the number of tasks performed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strategic rest is a tool used to restore cognitive and physical capacity for better future output."
+        },
+        {
+          "question": "True or False: Scrolling social media is an effective form of mental recovery.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Scrolling is 'digital noise' that increases cognitive load rather than reducing it."
+        },
+        {
+          "question": "What is the 'Default Mode Network'?",
+          "type": "mcq",
+          "options": [
+            "The part of the brain that works during high stress",
+            "The brain's state when resting that aids problem-solving",
+            "A software program for productivity",
+            "The habit of ignoring tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DMN activates during rest and is where the brain consolidates information and solves complex problems."
+        }
+      ]
+    },
+    {
+      "id": "hpa-17-peak-state-triggers",
+      "dayNumber": 17,
+      "moduleId": "hpa-module-3",
+      "title": "Peak State Triggers",
+      "subtitle": "Enter high-performance flow on command.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Hack Your Flow State",
+          "body": "You don't need to wait for inspiration to strike. By using specific sensory and environmental triggers, you can cue your brain that it is time to perform.",
+          "stat": "5",
+          "statLabel": "Minutes to Flow"
+        },
+        {
+          "type": "content",
+          "headline": "Environmental Anchors",
+          "body": "Your environment dictates your mindset. By associating specific cues with work, you create a Pavlovian response that triggers immediate focus.",
+          "bullets": [
+            "Use a specific 'Deep Work' playlist to block distractions.",
+            "Use lighting (e.g., a desk lamp) to signal work mode.",
+            "Keep your workspace clear of non-essential items."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Physical and Mental Cues",
+          "body": "Physiology leads psychology. If you change your physical state, your mental state will follow shortly after.",
+          "bullets": [
+            "Practice a specific breathing pattern (e.g., box breathing).",
+            "Use a 'starting ritual' like tidying your desk.",
+            "Adopt a 'power posture' for 60 seconds before tasks."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Reducing Friction",
+          "body": "The biggest enemy of flow is the 'start-up' cost. Reducing the friction to begin a task allows you to enter the state faster.",
+          "bullets": [
+            "Prepare your materials the night before.",
+            "Have your 'first task' clearly defined in writing.",
+            "Eliminate all browser tabs unrelated to the task."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Trigger",
+          "body": "Choose one song, one desk scent, and one breathing exercise. Combine them every time you start your main work block for one week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the purpose of a 'Peak State Trigger'?",
+          "type": "mcq",
+          "options": [
+            "To signal the brain to enter a state of focus",
+            "To distract the brain from boredom",
+            "To force yourself to work longer hours",
+            "To change your personality"
+          ],
+          "correctIndex": 0,
+          "explanation": "Triggers act as environmental and mental anchors that help you enter flow state quickly."
+        },
+        {
+          "question": "True or False: Using physical cues like posture can influence your mental performance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Physiology dictates psychology; changing your posture can shift your mental state."
+        },
+        {
+          "question": "Which of these is a good way to reduce start-up friction?",
+          "type": "mcq",
+          "options": [
+            "Checking your email first",
+            "Preparing materials the night before",
+            "Multitasking",
+            "Starting with the hardest task without planning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Preparing materials in advance removes decision fatigue and lowers the barrier to beginning deep work."
+        }
+      ]
+    },
+    {
+      "id": "hpa-18-output-tracking",
+      "dayNumber": 18,
+      "moduleId": "hpa-module-3",
+      "title": "Tracking Your Output",
+      "subtitle": "Measure what matters to sustain growth.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What Gets Measured, Gets Managed",
+          "body": "Most people track 'busy-ness' rather than actual progress. To sustain peak output, you must distinguish between lead and lag metrics.",
+          "stat": "80",
+          "statLabel": "Percent of Results"
+        },
+        {
+          "type": "content",
+          "headline": "Lead vs. Lag Metrics",
+          "body": "Lag metrics are the results (e.g., completed projects). Lead metrics are the actions that drive those results (e.g., focused hours logged).",
+          "bullets": [
+            "Focus on lead metrics to stay in control.",
+            "Lag metrics are useful for long-term course correction.",
+            "Don't confuse activity with productivity."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Defining Your Vital Few",
+          "body": "You cannot track everything. Identify the 20% of your activities that produce 80% of your results and focus your tracking there.",
+          "bullets": [
+            "Track deep work hours, not total hours.",
+            "Track 'Value Created' instead of 'Tasks Completed'.",
+            "Use a simple daily score to track consistency."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Review",
+          "body": "Tracking is useless without analysis. Use a weekly review to pivot your strategy based on your data.",
+          "bullets": [
+            "Did your lead metrics correlate with your lag results?",
+            "Where did you lose your focus this week?",
+            "Adjust your goals for the following week."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Tracking Log",
+          "body": "Create a simple log. Track two lead metrics (e.g., hours of deep work, number of high-impact tasks) for one week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the difference between lead and lag metrics?",
+          "type": "mcq",
+          "options": [
+            "Lead is output, lag is input",
+            "Lead is predictive actions, lag is final results",
+            "Lead is for work, lag is for rest",
+            "There is no difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lead metrics are the daily actions you can control, while lag metrics are the outcomes resulting from those actions."
+        },
+        {
+          "question": "True or False: Tracking total hours worked is a great way to measure high performance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Total hours is a vanity metric; tracking deep work hours or output value is far more meaningful."
+        },
+        {
+          "question": "Why is the Weekly Review important?",
+          "type": "mcq",
+          "options": [
+            "To punish yourself for failure",
+            "To adjust your strategy based on performance data",
+            "To file your taxes",
+            "To make your schedule more rigid"
+          ],
+          "correctIndex": 1,
+          "explanation": "The weekly review allows you to analyze your metrics and iterate your approach for better results."
+        }
+      ]
+    },
+    {
+      "id": "hpa-19-environment-mastery",
+      "dayNumber": 19,
+      "moduleId": "hpa-module-3",
+      "title": "Environment Mastery",
+      "subtitle": "Design your space to fuel your focus.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Is your room working against you?",
+          "body": "Willpower is a finite resource. Your environment should do the heavy lifting for your focus, not your self-discipline.",
+          "stat": "40%",
+          "statLabel": "of daily actions are habits triggered by environment"
+        },
+        {
+          "type": "content",
+          "headline": "Curating Your Physical Space",
+          "body": "Your desk and room are the launchpad for your deep work. Remove visual friction and optimize for the task at hand.",
+          "bullets": [
+            "Eliminate visual clutter that competes for your attention.",
+            "Designate 'zones' for different tasks (e.g., work, rest, flow).",
+            "Use lighting and soundscapes to trigger focus states."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Auditing Your Social Circle",
+          "body": "Performance is contagious. Your proximity to high-performers dictates your standards and your daily output.",
+          "bullets": [
+            "Limit exposure to 'energy vampires' who drain your focus.",
+            "Seek out peers who challenge your current output levels.",
+            "Establish boundaries for your deep work hours."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Routine Anchor",
+          "body": "Routines are the software that runs on the hardware of your environment. An anchored routine makes performance automatic.",
+          "bullets": [
+            "Use 'if-then' planning to handle environmental disruptions.",
+            "Create a 5-minute shutdown ritual to reset your space.",
+            "Align your hardest tasks with your peak energy windows."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 5-Minute Desk Reset",
+          "body": "Remove everything from your workspace that isn't related to your current task. Clear the space to clear your mind."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of environmental design?",
+          "type": "mcq",
+          "options": [
+            "To look professional",
+            "To reduce reliance on willpower",
+            "To impress others",
+            "To increase social media engagement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Environmental design aims to reduce friction so you don't have to rely on limited willpower."
+        },
+        {
+          "question": "True or false: Social circles have no impact on your performance output.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Performance is highly influenced by your peer group's standards and energy."
+        },
+        {
+          "question": "What is the best way to handle environmental distractions?",
+          "type": "mcq",
+          "options": [
+            "Use more willpower",
+            "Ignore them",
+            "Design them out of your space",
+            "Work only at night"
+          ],
+          "correctIndex": 2,
+          "explanation": "The most effective strategy is removing the distraction entirely, not just trying to ignore it."
+        }
+      ]
+    },
+    {
+      "id": "hpa-20-long-game",
+      "dayNumber": 20,
+      "moduleId": "hpa-module-3",
+      "title": "Playing the Long Game",
+      "subtitle": "Sustainable excellence over short-term sprints.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The decade-long advantage",
+          "body": "Most people overestimate what they can do in a day and underestimate what they can do in a decade. Stop sprinting until you drop.",
+          "stat": "10",
+          "statLabel": "years as the minimum horizon for true mastery"
+        },
+        {
+          "type": "content",
+          "headline": "The Autopsy of Burnout",
+          "body": "Burnout isn't caused by working too hard; it's caused by working without recovery and losing sight of the 'why'.",
+          "bullets": [
+            "Identify the gap between your input and your recovery.",
+            "Avoid the 'all-or-nothing' trap of performance.",
+            "Prioritize consistency over intensity during low-energy phases."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Strategic De-loading",
+          "body": "Just like professional athletes, high performers need periods of lower intensity to allow for growth and adaptation.",
+          "bullets": [
+            "Schedule 'de-load' weeks every 6-8 weeks.",
+            "Shift focus from output to input (learning and reflection).",
+            "Ensure your rest is restorative, not just passive distraction."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Compounding Excellence",
+          "body": "Small, sustainable improvements compounded over years lead to exponential results that high-intensity sprints cannot match.",
+          "bullets": [
+            "Focus on the 1% improvement rule.",
+            "Protect your health as your most valuable career asset.",
+            "Adopt a long-term mindset for skill acquisition."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10-Year Vision",
+          "body": "Write down where you want to be in 10 years. Now, identify one minor habit you can adopt today that, if kept up for 10 years, makes that vision inevitable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do most people experience burnout?",
+          "type": "mcq",
+          "options": [
+            "Working too many hours",
+            "Lack of recovery and alignment",
+            "Too much sleep",
+            "They are inherently lazy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Burnout is typically a result of sustained intensity without adequate recovery or purpose."
+        },
+        {
+          "question": "True or false: De-loading weeks are a sign of weakness.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "De-loading is a strategic practice used by top performers to ensure long-term sustainability."
+        },
+        {
+          "question": "What is the key to compounding excellence?",
+          "type": "mcq",
+          "options": [
+            "Occasional massive effort",
+            "Consistent small improvements",
+            "Avoiding all risk",
+            "Working only on your best days"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consistency over time is the engine of compound growth."
+        }
+      ]
+    },
+    {
+      "id": "hpa-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "hpa-module-3",
+      "title": "Course Finale: Your Performance Blueprint",
+      "subtitle": "Synthesize your system for lasting impact.",
+      "duration": "5 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your system is now live.",
+          "body": "You have the tools to optimize your mind, your workflow, and your environment. Now, let’s codify your personal performance system.",
+          "stat": "1",
+          "statLabel": "unified blueprint for your future"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Pillars Review",
+          "body": "Revisit the core pillars that support your high-performance life: Clarity, Execution, and Sustainability.",
+          "bullets": [
+            "Clarity: Are your goals aligned with your deepest values?",
+            "Execution: Is your workflow optimized for deep work?",
+            "Sustainability: Does your lifestyle support your long-term vision?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Dashboard",
+          "body": "A system is only as good as its feedback loop. Create a simple way to track your performance metrics weekly.",
+          "bullets": [
+            "Track deep work hours, not just total hours.",
+            "Monitor energy levels and recovery quality.",
+            "Reflect on one 'win' and one 'lesson' every Sunday."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Iteration Cycle",
+          "body": "High performance is not a static state; it is a dynamic process of constant calibration and improvement.",
+          "bullets": [
+            "Review your blueprint every quarter.",
+            "Identify and eliminate one bottleneck per month.",
+            "Stay curious and keep updating your 'software'."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Blueprint",
+          "body": "Write down your 'Performance Manifesto': One sentence on your goal, one on your daily deep-work ritual, and one on your recovery non-negotiable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important part of a performance system?",
+          "type": "mcq",
+          "options": [
+            "Having a fancy app",
+            "The feedback loop",
+            "Working 12 hours a day",
+            "Doing it alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "A feedback loop allows you to measure, adjust, and improve your system over time."
+        },
+        {
+          "question": "True or false: Your performance system should never change.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A system must be dynamic and iterated upon to remain effective as your goals evolve."
+        },
+        {
+          "question": "What should you focus on when tracking performance?",
+          "type": "mcq",
+          "options": [
+            "Total hours worked",
+            "Deep work and recovery metrics",
+            "How many emails you sent",
+            "Your popularity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focus on metrics that reflect the quality of your output and the sustainability of your input."
+        }
+      ]
+    }
+  ]
+}

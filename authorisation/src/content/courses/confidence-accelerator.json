@@ -1,0 +1,1994 @@
+{
+  "id": "confidence-accelerator",
+  "title": "Confidence Accelerator",
+  "subtitle": "Overcome self-doubt, build lasting confidence and unlock your full potential with daily micro-exercises designed by psychologists.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "ca-module-1",
+      "moduleNumber": 1,
+      "title": "The Confidence Foundation",
+      "subtitle": "Understand what real confidence is, where self-doubt comes from, and how to start building a solid base.",
+      "days": "Lessons 1–7",
+      "skill": "Identify your confidence patterns and rewrite your inner narrative",
+      "lessonIds": [
+        "ca-1-what-confidence-really-is",
+        "ca-2-inner-critic",
+        "ca-3-self-efficacy-science",
+        "ca-4-comparison-trap",
+        "ca-5-rewriting-your-story",
+        "ca-6-body-language-loop",
+        "ca-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "ca-module-2",
+      "moduleNumber": 2,
+      "title": "Building Confidence Daily",
+      "subtitle": "Practical strategies to grow confidence through action — speaking up, handling rejection, and beating imposter syndrome.",
+      "days": "Lessons 8–14",
+      "skill": "Take confident action in social, professional, and personal situations",
+      "lessonIds": [
+        "ca-8-small-wins-compound",
+        "ca-9-speaking-up",
+        "ca-10-handling-rejection",
+        "ca-11-imposter-syndrome",
+        "ca-12-setting-boundaries",
+        "ca-13-confidence-under-pressure",
+        "ca-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "ca-module-3",
+      "moduleNumber": 3,
+      "title": "Unshakeable Confidence",
+      "subtitle": "Move from external validation to deep self-trust — confident in relationships, leadership, and life.",
+      "days": "Lessons 15–21",
+      "skill": "Maintain unshakeable confidence regardless of external circumstances",
+      "lessonIds": [
+        "ca-15-internal-validation",
+        "ca-16-confidence-in-relationships",
+        "ca-17-public-speaking",
+        "ca-18-confident-decisions",
+        "ca-19-resilience-setbacks",
+        "ca-20-confidence-identity",
+        "ca-21-module-3-checkpoint"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ca-1-what-confidence-really-is",
+      "dayNumber": 1,
+      "moduleId": "ca-module-1",
+      "title": "What Confidence Really Is",
+      "subtitle": "The truth about confidence that changes everything — it's not what you think.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Great Confidence Myth",
+          "body": "You probably think confident people never feel anxious or doubt themselves before a big moment. The truth is, they experience the exact same fear you do, but they have simply trained themselves to act anyway. Real confidence isn't about eliminating fear; it is about changing your relationship with it.",
+          "stat": "85%",
+          "statLabel": "of adults struggle with low self-esteem or lack of confidence at some point in their lives."
+        },
+        {
+          "type": "content",
+          "headline": "Confidence is a Muscle, Not a Gene",
+          "body": "Society often treats confidence as a fixed personality trait you are either born with or lack entirely. In reality, neuroscience proves confidence is a highly adaptable skill built through repeated action, meaning you can train it just like a muscle at the gym.",
+          "bullets": [
+            "Waiting until you feel completely ready guarantees you will never start.",
+            "Action must come first; the feeling of confidence follows the behavior.",
+            "Your brain rewires itself to feel more secure only after you survive a risk.",
+            "Every time you act despite hesitation, you build neurological proof of your capability."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Science of Self-Efficacy",
+          "body": "Psychologist Albert Bandura revolutionized our understanding of confidence through his concept of self-efficacy, which is your belief in your ability to succeed. His research showed that this belief isn't built through hollow affirmations, but through tangible, lived experiences.",
+          "bullets": [
+            "Mastery experiences, or securing small wins, are the strongest drivers of true confidence.",
+            "Watching relatable peers succeed helps convince your brain you can do it too.",
+            "Verbal persuasion from trusted mentors provides a temporary but crucial motivational boost.",
+            "Managing your physical stress response prevents your brain from confusing excitement with panic."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Confidence vs. Arrogance",
+          "body": "A major reason you might hold back is the fear of appearing arrogant or self-obsessed to your peers. However, true confidence is actually rooted in humility and a willingness to learn, whereas arrogance merely masks deep insecurities.",
+          "bullets": [
+            "Confident people readily admit when they are wrong; arrogant people refuse to take the blame.",
+            "Confidence lifts others up, while arrogance relies on putting others down to feel superior.",
+            "A confident mindset focuses on growth, curiosity, and asking questions to improve.",
+            "An arrogant mindset focuses purely on protecting a fragile ego from outside criticism."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The \"Do It Scared\" Challenge",
+          "body": "Today, identify one small task you have been avoiding because you do not feel ready or confident enough to tackle it. Commit to taking just the first step of that task while fully acknowledging your fear. Tell yourself, \"I am anxious about this, and I am choosing to do it anyway.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to psychologist Albert Bandura, what is the most effective way to build self-efficacy?",
+          "type": "mcq",
+          "options": [
+            "Repeating positive affirmations in the mirror",
+            "Achieving small wins through mastery experiences",
+            "Ignoring your fears until they completely disappear",
+            "Reading books about highly successful people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bandura's research proved that mastery experiences—actually taking action and securing small wins—are the most powerful way to build genuine belief in your abilities."
+        },
+        {
+          "question": "True or False: Highly confident people no longer experience fear or self-doubt before taking risks.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Confident people experience the exact same fear and doubt as everyone else; their secret is that they choose to take action despite those feelings."
+        },
+        {
+          "question": "What is a key difference between true confidence and arrogance?",
+          "type": "mcq",
+          "options": [
+            "Confidence focuses on growth, while arrogance protects a fragile ego.",
+            "Confidence means you never fail, while arrogance means you fail often.",
+            "Confidence requires putting others down, while arrogance requires silence.",
+            "Confidence is a genetic trait, while arrogance is a learned behavior."
+          ],
+          "correctIndex": 0,
+          "explanation": "True confidence is rooted in humility, learning, and admitting mistakes, whereas arrogance is a defense mechanism used to protect an insecure ego from criticism."
+        }
+      ]
+    },
+    {
+      "id": "ca-2-inner-critic",
+      "dayNumber": 2,
+      "moduleId": "ca-module-1",
+      "title": "Your Inner Critic",
+      "subtitle": "The silent voice undermining your confidence — and how to shut it down.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Meet Your Worst Enemy: You",
+          "body": "Every day, a silent voice in your head judges your actions, doubts your abilities, and magnifies your flaws. This is your inner critic, a psychological mechanism that originally developed in childhood to keep you safe from social rejection. While it thinks it is protecting you, it is actually the biggest obstacle to your self-confidence.",
+          "stat": "80%",
+          "statLabel": "of daily thoughts are negative for the average person"
+        },
+        {
+          "type": "content",
+          "headline": "Reflection vs. Destruction",
+          "body": "Not all internal feedback is bad, but you must learn to distinguish between healthy self-reflection and toxic self-criticism. Helpful reflection focuses on behavior and growth, while the inner critic attacks your core identity and leaves you feeling paralyzed.",
+          "bullets": [
+            "Reflection asks \"How can I improve?\" while criticism states \"I am a failure.\"",
+            "Healthy feedback is specific to an event, whereas the critic uses absolutes like \"always\" or \"never.\"",
+            "Constructive thoughts motivate you to try again with a new strategy.",
+            "Destructive thoughts drain your energy and trigger a shame response."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Critic's Favorite Weapons",
+          "body": "Your inner critic relies on cognitive distortions—irrational thought patterns that warp your perception of reality. By recognizing these mental traps, you can strip the inner critic of its power over your emotions.",
+          "bullets": [
+            "Catastrophizing: Believing the absolute worst-case scenario is guaranteed to happen.",
+            "Black-and-White Thinking: Viewing situations as extreme success or total failure, with no middle ground.",
+            "Mind-Reading: Assuming you know exactly what others are thinking, usually that they are judging you.",
+            "Filtering: Ignoring all positive feedback and magnifying a single negative detail."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Evicting the Critic",
+          "body": "To defeat the inner critic, you must stop identifying with it by using a psychological technique called cognitive defusion. Externalizing the voice creates emotional distance, allowing you to evaluate its claims logically instead of accepting them as facts.",
+          "bullets": [
+            "Give your inner critic a silly name to instantly reduce its perceived authority.",
+            "Shift your language from \"I am\" to \"I am having the thought that I am.\"",
+            "Demand evidence by asking, \"What are the actual facts that support this negative thought?\"",
+            "Replace the criticism with a realistic, neutral alternative rather than forced toxic positivity."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The \"Name and Reframe\" Protocol",
+          "body": "Next time you feel a wave of self-doubt, pause and greet your inner critic by the silly name you gave it. Write down exactly what the critic is saying, identify the cognitive distortion it is using, and write a factual rebuttal next to it. Treating your thoughts as hypotheses rather than absolute truths instantly restores your confidence."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following best describes the cognitive distortion of \"mind-reading\"?",
+          "type": "mcq",
+          "options": [
+            "Believing the absolute worst-case scenario will happen",
+            "Assuming you know that others are judging you negatively",
+            "Viewing situations as extreme success or total failure",
+            "Ignoring positive feedback to focus on a negative detail"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mind-reading occurs when you assume you know what others are thinking, which usually manifests as believing they are judging you harshly without any actual evidence."
+        },
+        {
+          "question": "Helpful self-reflection attacks your core identity in order to motivate you to change.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Helpful self-reflection focuses on specific behaviors and how to improve them. It is the destructive inner critic that attacks your core identity."
+        },
+        {
+          "question": "What is the psychological purpose of cognitive defusion?",
+          "type": "mcq",
+          "options": [
+            "To ignore your thoughts completely",
+            "To create emotional distance from your thoughts",
+            "To punish yourself for thinking negatively",
+            "To force yourself to only think positive thoughts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cognitive defusion helps create emotional distance from your thoughts, allowing you to observe them objectively rather than accepting them as absolute facts."
+        }
+      ]
+    },
+    {
+      "id": "ca-3-self-efficacy-science",
+      "dayNumber": 3,
+      "moduleId": "ca-module-1",
+      "title": "The Science of Self-Efficacy",
+      "subtitle": "The four psychological pillars that systematically build unshakeable belief in yourself.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Blueprint of Belief",
+          "body": "Confidence isn't a genetic lottery; it is a measurable psychological state known as self-efficacy, famously defined by psychologist Albert Bandura. Self-efficacy is your belief in your capacity to execute the behaviors necessary to succeed. You can systematically engineer this belief using four proven psychological pillars.",
+          "stat": "28%",
+          "statLabel": "of variance in academic and work performance is directly tied to self-efficacy"
+        },
+        {
+          "type": "content",
+          "headline": "Action and Observation",
+          "body": "The most powerful way to build self-efficacy is through mastery experiences, which occur when you successfully overcome an obstacle. When direct experience isn't possible, vicarious experiences—watching someone similar to yourself succeed—can trick your brain into believing you can do it too.",
+          "bullets": [
+            "Break massive goals into micro-tasks to guarantee early, confidence-building mastery experiences.",
+            "Track your small wins daily; your brain needs tangible proof of competence to build trust.",
+            "Seek out role models who share your background or current skill level to maximize vicarious learning.",
+            "Analyze the exact strategies your role models used rather than just admiring their final results."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Environment and Biology",
+          "body": "The environment you curate and the way you interpret your body's signals drastically alter your self-belief. Verbal persuasion from trusted mentors provides a temporary boost to push you into action, while mastering your physiological state prevents anxiety from hijacking your confidence.",
+          "bullets": [
+            "Surround yourself with a \"belief board of directors\" who offer realistic, constructive encouragement.",
+            "Avoid toxic environments; negative verbal persuasion destroys self-efficacy faster than positive persuasion builds it.",
+            "Reframe a racing heart from \"I am terrified\" to \"My body is preparing me for peak performance.\"",
+            "Use deep breathing techniques to lower cortisol and signal safety to your nervous system before high-stakes events."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Engineering Your Efficacy",
+          "body": "You do not have to wait for confidence to strike; you can actively design your week to trigger all four sources of self-efficacy. By stacking these psychological triggers, you create an upward spiral of self-belief that makes taking risks feel natural.",
+          "bullets": [
+            "Schedule one low-stakes challenge every week to guarantee a new mastery experience.",
+            "Consume one biography or interview per week of someone who overcame your specific struggles.",
+            "Ask a trusted colleague or friend to remind you of a past success when you face a new challenge.",
+            "Audit your physical state daily, ensuring you have the sleep and nutrition needed to regulate anxiety."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Efficacy Matrix",
+          "body": "Choose one daunting goal you are currently facing and map out your Efficacy Matrix. Write down one micro-step you can master today, identify one person who has already achieved this goal to study, and list one past success to remind yourself of your capabilities. Finally, write down a physical regulation strategy, like box breathing, to use when you feel nervous."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Albert Bandura, what is the strongest and most effective source of self-efficacy?",
+          "type": "mcq",
+          "options": [
+            "Verbal persuasion",
+            "Mastery experiences",
+            "Vicarious experiences",
+            "Physiological states"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mastery experiences are the strongest source of self-efficacy because they provide direct, undeniable proof of your competence and ability to succeed."
+        },
+        {
+          "question": "Reinterpreting a racing heart as excitement rather than fear is an example of managing your physiological state to boost confidence.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. How you interpret physical sensations (like a racing heart) drastically impacts your self-efficacy. Reframing anxiety as readiness prevents your biology from undermining your confidence."
+        },
+        {
+          "question": "How can you best utilize vicarious experiences to build your own confidence?",
+          "type": "mcq",
+          "options": [
+            "Compare yourself to billionaires to set high standards",
+            "Watch people fail so you feel better about yourself",
+            "Observe and study role models who are similar to you",
+            "Wait passively for someone to encourage you"
+          ],
+          "correctIndex": 2,
+          "explanation": "Vicarious experiences are most effective when you observe people whom you perceive as similar to yourself. Seeing them succeed makes your brain believe \"If they can do it, I can too.\""
+        }
+      ]
+    },
+    {
+      "id": "ca-4-comparison-trap",
+      "dayNumber": 4,
+      "moduleId": "ca-module-1",
+      "title": "The Comparison Trap",
+      "subtitle": "How social comparison silently destroys your confidence — and how to escape.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Thief of Joy",
+          "body": "Constantly measuring your success against others is a guaranteed way to kill your confidence and distort your reality.",
+          "stat": "60%",
+          "statLabel": "of social media users report negative feelings from comparing themselves to others."
+        },
+        {
+          "type": "content",
+          "headline": "The Science of Comparison",
+          "body": "Leon Festinger's Social Comparison Theory explains that we naturally determine our own social and personal worth based on how we stack up against others.",
+          "bullets": [
+            "Upward comparison: Comparing yourself to those 'better' off, often causing feelings of inadequacy.",
+            "Downward comparison: Comparing yourself to those 'worse' off, which can falsely inflate ego but doesn't build true confidence.",
+            "Social media acts as a highlight reel, heavily distorting our baseline for accurate comparison.",
+            "This constant evaluation creates a psychological treadmill where you can never truly win."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Scarcity Trap",
+          "body": "When we compare, we often fall into a scarcity mindset. We subconsciously believe that someone else's success subtracts from our own potential.",
+          "bullets": [
+            "Comparison triggers the brain's threat response, increasing anxiety and self-doubt.",
+            "It blinds you to your unique strengths by forcing you to value someone else's metrics.",
+            "It creates a zero-sum illusion where another person's win feels like a personal loss.",
+            "Escaping scarcity requires shifting your focus from competition to collaboration and abundance."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From Comparison to Inspiration",
+          "body": "You can't stop the brain from comparing, but you can change how you process the data. Turn jealousy into a roadmap for your own growth.",
+          "bullets": [
+            "Acknowledge the trigger: Notice when comparison arises without judging yourself for it.",
+            "Analyze the feeling: Ask yourself exactly what the other person has that you want to achieve.",
+            "Shift the narrative: Instead of thinking 'I can't do that,' ask 'How did they do that?'",
+            "Celebrate their win: Actively feeling happy for others breaks the scarcity mindset and builds your own confidence."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Inspiration Audit",
+          "body": "Next time you feel envious while scrolling social media, stop. Identify exactly what triggered the jealousy, write it down, and list one actionable step you can take today to build that specific trait or skill in your own life."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Festinger's Social Comparison Theory suggests we determine our personal worth by...",
+          "type": "mcq",
+          "options": [
+            "Internal validation",
+            "Comparing ourselves to others",
+            "Financial success",
+            "Physical health"
+          ],
+          "correctIndex": 1,
+          "explanation": "Festinger proposed that humans have an innate drive to evaluate themselves, often in comparison to others, to determine their own social and personal worth."
+        },
+        {
+          "question": "What is a common negative effect of upward comparison on social media?",
+          "type": "mcq",
+          "options": [
+            "Increased empathy",
+            "A scarcity mindset",
+            "Better sleep",
+            "Enhanced focus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Upward comparison often triggers a scarcity mindset, making us feel inadequate and believing there is not enough success to go around."
+        },
+        {
+          "question": "Downward comparison is the healthiest way to build long-term, genuine confidence.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Downward comparison can temporarily inflate your ego, but it relies on external factors and others' misfortunes rather than building genuine, internal self-worth."
+        }
+      ]
+    },
+    {
+      "id": "ca-5-rewriting-your-story",
+      "dayNumber": 5,
+      "moduleId": "ca-module-1",
+      "title": "Rewriting Your Story",
+      "subtitle": "The limiting narratives you tell yourself — and how to write a new one.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Stories We Tell",
+          "body": "Your confidence isn't based on objective facts; it is based on the story you constantly tell yourself about who you are.",
+          "stat": "80%",
+          "statLabel": "of our internal daily thoughts are negative, heavily reinforcing limiting beliefs."
+        },
+        {
+          "type": "content",
+          "headline": "Narrative Identity Theory",
+          "body": "Psychologists use Narrative Identity Theory to explain how we form our sense of self by integrating our life experiences into an internalized, evolving story.",
+          "bullets": [
+            "We are the authors of our own lives, but we often let past failures write the script.",
+            "Limiting stories, like 'I'm not a natural leader,' become self-fulfilling prophecies.",
+            "These narratives act as a psychological filter, causing us to ignore evidence of our success.",
+            "Recognizing that your identity is a story—not a fixed reality—is the first step to changing it."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Fixed vs. Growth Narratives",
+          "body": "The genre of your internal story dictates your confidence level. You must shift from a fixed narrative to a growth narrative.",
+          "bullets": [
+            "Fixed narratives tell you that your traits and abilities are permanent and unchangeable.",
+            "Growth narratives focus on evolution, framing challenges as chapters of development.",
+            "A fixed story says 'I failed because I'm not smart enough.'",
+            "A growth story says 'I failed because I haven't mastered this skill yet.'"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Rewrite Your Narrative",
+          "body": "You have the editorial power to revise your internal monologue. Conscious rewriting builds resilient, authentic confidence.",
+          "bullets": [
+            "Identify the limiting belief: Catch yourself when you say 'I am just not the type of person who...'",
+            "Examine the evidence: Look for historical proof in your life that contradicts this negative story.",
+            "Draft a new script: Create a realistic, empowering alternative to your limiting belief.",
+            "Practice the new story: Repeat your growth narrative daily until it becomes your default cognitive pathway."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Editing Room",
+          "body": "Write down one limiting story you tell yourself (e.g., 'I am terrible at public speaking'). Next to it, write down three specific past instances where you successfully communicated an idea. Finally, write a new, empowering sentence based on that positive evidence."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Narrative Identity Theory, how do we form our sense of self?",
+          "type": "mcq",
+          "options": [
+            "By taking personality tests",
+            "By integrating life experiences into an internalized story",
+            "By adopting the opinions of our peers",
+            "By avoiding past traumas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Narrative Identity Theory posits that individuals form an identity by integrating their life experiences into an internalized, evolving story of the self."
+        },
+        {
+          "question": "A fixed narrative embraces challenges as necessary chapters for personal development.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. A growth narrative embraces challenges. A fixed narrative assumes traits are permanent and views challenges as threats to identity."
+        },
+        {
+          "question": "What is the most effective way to begin rewriting a limiting story?",
+          "type": "mcq",
+          "options": [
+            "Ignore your past completely",
+            "Identify the limiting belief and examine evidence against it",
+            "Compare your story to someone else's",
+            "Wait for external validation"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first steps to rewriting your narrative are identifying the limiting belief and actively looking for objective evidence in your life that proves it wrong."
+        }
+      ]
+    },
+    {
+      "id": "ca-6-body-language-loop",
+      "dayNumber": 6,
+      "moduleId": "ca-module-1",
+      "title": "The Body-Mind Confidence Loop",
+      "subtitle": "How your body language and physiology create (or destroy) confidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Physiology of Confidence",
+          "body": "You don't just act confident because you feel confident; you can actually feel confident because you act confident.",
+          "stat": "20%",
+          "statLabel": "decrease in cortisol (stress hormone) observed after holding high-power poses in early studies."
+        },
+        {
+          "type": "content",
+          "headline": "Embodied Cognition",
+          "body": "Embodied cognition is the psychological principle that our motor system influences our cognition. Your mind listens to your body to decide how to feel.",
+          "bullets": [
+            "Your brain constantly monitors your physical state to gauge your emotional environment.",
+            "Slouching or crossing your arms signals to your brain that you are defensive or defeated.",
+            "Expanding your posture signals safety, dominance, and readiness to your nervous system.",
+            "The Facial Feedback Hypothesis shows that simply forcing a smile can actually induce genuine feelings of happiness."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Power Posing and Hormones",
+          "body": "Amy Cuddy's famous research on 'power posing' popularized the idea that expansive posture affects our neurochemistry, though the science has nuances.",
+          "bullets": [
+            "Early studies showed power poses increased testosterone (confidence) and decreased cortisol (stress).",
+            "While hormonal changes are debated, the psychological boost in subjective feeling of power is widely replicated.",
+            "Taking up space physically primes your brain for assertiveness and risk tolerance.",
+            "Contraction (making yourself small) reliably increases feelings of anxiety and submissiveness."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Breathing for Confidence",
+          "body": "Your breath is the remote control for your autonomic nervous system. Controlling it is the fastest way to hack your confidence loop.",
+          "bullets": [
+            "Shallow, chest breathing triggers the sympathetic nervous system (fight or flight).",
+            "Deep, diaphragmatic breathing activates the parasympathetic nervous system (rest and digest).",
+            "Box breathing (inhale, hold, exhale, hold for equal counts) rapidly lowers heart rate and anxiety.",
+            "A calm nervous system creates a biological foundation for unshakeable self-assurance."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Two-Minute Reset",
+          "body": "Before your next high-pressure situation, find a private space. Stand tall with your feet apart and hands on your hips (a power pose). While holding this posture, perform 4 rounds of box breathing (inhale 4s, hold 4s, exhale 4s, hold 4s). Notice the shift in your mental state."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "The Facial Feedback Hypothesis suggests that making a physical facial expression can influence your actual emotional state.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Studies show that the physical act of smiling can trigger the brain to release neurotransmitters that actually make you feel happier."
+        },
+        {
+          "question": "What is 'Embodied Cognition'?",
+          "type": "mcq",
+          "options": [
+            "The belief that the mind is entirely separate from the body",
+            "The idea that our physical movements and states influence our thoughts and feelings",
+            "A breathing technique used for relaxation",
+            "A theory about how we compare ourselves to others"
+          ],
+          "correctIndex": 1,
+          "explanation": "Embodied cognition is the concept that the body and its movements significantly influence how we think and feel."
+        },
+        {
+          "question": "How does deep, diaphragmatic breathing help build confidence?",
+          "type": "mcq",
+          "options": [
+            "It activates the sympathetic nervous system",
+            "It increases cortisol levels",
+            "It activates the parasympathetic nervous system to calm the body",
+            "It restricts oxygen to the brain"
+          ],
+          "correctIndex": 2,
+          "explanation": "Deep breathing activates the parasympathetic nervous system, which lowers your heart rate and signals to your brain that you are safe, reducing anxiety and boosting calm confidence."
+        }
+      ]
+    },
+    {
+      "id": "ca-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "ca-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Review and consolidate the foundational principles of true confidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Foundation of Unshakable Confidence",
+          "body": "You've successfully completed Module 1! Let's lock in the core concepts that shift confidence from a feeling to a skill you can build.",
+          "stat": "40%",
+          "statLabel": "better retention when you actively review and synthesize new information."
+        },
+        {
+          "type": "content",
+          "headline": "Redefining True Confidence",
+          "body": "Remember, confidence isn't the absence of fear, but the trust in your ability to handle what comes.",
+          "bullets": [
+            "Confidence is a skill, not a genetic trait.",
+            "It relies on self-efficacy: believing you can execute tasks.",
+            "The inner critic is just a protective mechanism, not the truth.",
+            "Courage comes first; confidence follows action."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Overcoming the Mental Traps",
+          "body": "Your mindset dictates your reality. We explored how to break free from unhelpful mental loops.",
+          "bullets": [
+            "The comparison trap steals joy; focus on your own progress.",
+            "Your personal story can be rewritten at any time.",
+            "Labeling yourself as 'unconfident' is a choice, not a life sentence.",
+            "Reframing negative thoughts builds mental resilience."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Mind-Body Connection",
+          "body": "Your physical state directly influences your mental state. Use your body to trigger confidence.",
+          "bullets": [
+            "Posture changes your hormone levels and self-perception.",
+            "Deep, slow breathing signals safety to your nervous system.",
+            "A grounded physical stance creates a grounded mental state.",
+            "Motion creates emotion; move with purpose."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Confidence Blueprint",
+          "body": "Write down one core insight from Module 1 that resonated with you the most. Stick it on your mirror or set it as your phone background to keep your foundation strong."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the true definition of confidence according to Module 1?",
+          "type": "mcq",
+          "options": [
+            "Never feeling afraid",
+            "Trusting your ability to figure things out",
+            "Being louder than everyone else",
+            "Ignoring your inner critic completely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Confidence is self-efficacy—the belief that you can handle challenges, even when you feel fear."
+        },
+        {
+          "question": "How does the body-mind loop affect confidence?",
+          "type": "mcq",
+          "options": [
+            "It proves genetics dictate confidence",
+            "Physical posture can directly alter your mental state",
+            "It only works if you are already confident",
+            "Mental thoughts cannot change physical stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your posture and breathing directly influence your nervous system and self-perception."
+        },
+        {
+          "question": "You must wait until you feel confident before taking a difficult action.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Courage comes first. You take action despite fear, and confidence is the result of that action."
+        }
+      ]
+    },
+    {
+      "id": "ca-8-small-wins-compound",
+      "dayNumber": 8,
+      "moduleId": "ca-module-2",
+      "title": "Small Wins Compound",
+      "subtitle": "Discover how tiny, consistent actions build unstoppable confidence momentum.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Momentum",
+          "body": "Big leaps aren't the secret to confidence. The real magic lies in the compounding effect of tiny, daily victories.",
+          "stat": "1%",
+          "statLabel": "improvement each day makes you 37 times better by the end of the year."
+        },
+        {
+          "type": "content",
+          "headline": "Why Small Wins Work",
+          "body": "Your brain is wired to release dopamine when you achieve a goal, no matter how small.",
+          "bullets": [
+            "Dopamine boosts motivation and reinforces the winning behavior.",
+            "Small wins bypass the brain's fear and resistance mechanisms.",
+            "They create a track record of success you can rely on.",
+            "Consistency beats intensity when building self-trust."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Designing Micro-Goals",
+          "body": "To guarantee a win, you must make the goal so small it's impossible to fail.",
+          "bullets": [
+            "Break large, intimidating tasks into 5-minute actions.",
+            "Focus on the process, not the final outcome.",
+            "Lower the bar for success to build initial momentum.",
+            "Celebrate the completion of the micro-goal immediately."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tracking Your Evidence",
+          "body": "Confidence requires proof. You need to actively record your wins to convince your brain of your growth.",
+          "bullets": [
+            "Keep a daily 'Done' list, not just a 'To-Do' list.",
+            "Write down three small wins every evening.",
+            "Review your wins when the inner critic gets loud.",
+            "Acknowledge effort, even if the result wasn't perfect."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Secure a Micro-Win Today",
+          "body": "Pick one task you've been avoiding. Break it down until the first step takes less than 2 minutes. Do that 2-minute step right now and check it off."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do small wins effectively build confidence?",
+          "type": "mcq",
+          "options": [
+            "They trigger dopamine and build a track record of success",
+            "They trick others into thinking you are busy",
+            "They take up more time than large goals",
+            "They prevent you from ever failing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Small wins release dopamine, boosting motivation and providing your brain with tangible proof of your capabilities."
+        },
+        {
+          "question": "What is the best way to design a micro-goal?",
+          "type": "mcq",
+          "options": [
+            "Make it as challenging as possible",
+            "Make it so small it's impossible to fail",
+            "Ensure it takes at least an hour",
+            "Tie it to a massive life change"
+          ],
+          "correctIndex": 1,
+          "explanation": "Shrinking the task bypasses fear and guarantees completion, which builds momentum."
+        },
+        {
+          "question": "You should only celebrate a win if it yields a perfect final outcome.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You should celebrate the process and the effort, as acknowledging small steps reinforces the habit of taking action."
+        }
+      ]
+    },
+    {
+      "id": "ca-9-speaking-up",
+      "dayNumber": 9,
+      "moduleId": "ca-module-2",
+      "title": "Speaking Up",
+      "subtitle": "Learn actionable strategies to confidently voice your opinions and ideas.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Finding Your Voice",
+          "body": "Holding back your ideas deprives the world of your unique perspective. It's time to break the silence.",
+          "stat": "85%",
+          "statLabel": "of employees feel unable to raise a concern at work, missing out on massive growth opportunities."
+        },
+        {
+          "type": "content",
+          "headline": "The Cost of Silence",
+          "body": "When you don't speak up, you reinforce the belief that your thoughts don't matter.",
+          "bullets": [
+            "Silence breeds resentment and lowers self-esteem.",
+            "People can't value ideas they never hear.",
+            "You miss out on constructive feedback and collaboration.",
+            "Speaking up, even if wrong, builds resilience."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Overcoming the Spotlight Effect",
+          "body": "We often stay quiet because we think everyone is judging us. In reality, they are focused on themselves.",
+          "bullets": [
+            "The 'spotlight effect' makes us overestimate how much people notice us.",
+            "Most people are too busy worrying about their own performance.",
+            "Perfection isn't required to make a valuable contribution.",
+            "Shift your focus from 'How do I look?' to 'How can I help?'"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tactics for Entering the Conversation",
+          "body": "You don't need to dominate the room to be heard. Use these low-pressure entry points.",
+          "bullets": [
+            "Ask a clarifying question to join the flow of conversation.",
+            "Agree with someone and build on their point.",
+            "Speak up early in a meeting to break your own ice.",
+            "Prepare one core idea in advance so you feel anchored."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The First-5-Minutes Rule",
+          "body": "In your next meeting or group discussion, challenge yourself to speak within the first 5 minutes. Ask a question, agree with a point, or offer a brief insight to break your silence early."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 'spotlight effect'?",
+          "type": "mcq",
+          "options": [
+            "A technique for public speaking",
+            "Overestimating how much other people notice and judge us",
+            "The physical reaction to stage fright",
+            "Standing in the center of a room to gain confidence"
+          ],
+          "correctIndex": 1,
+          "explanation": "The spotlight effect is a cognitive bias where we falsely believe everyone is paying strict attention to our flaws."
+        },
+        {
+          "question": "Which of the following is a low-pressure tactic to start speaking up?",
+          "type": "mcq",
+          "options": [
+            "Interrupting the main speaker loudly",
+            "Waiting until the very end to summarize everything",
+            "Asking a clarifying question or building on someone else's point",
+            "Only speaking if you have a completely flawless idea"
+          ],
+          "correctIndex": 2,
+          "explanation": "Asking questions or building on a point allows you to contribute value without the pressure of a perfect original pitch."
+        },
+        {
+          "question": "Speaking up early in a meeting can make it easier to contribute later on.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Breaking the ice early reduces anxiety and sets a precedent that you are an active participant in the conversation."
+        }
+      ]
+    },
+    {
+      "id": "ca-10-handling-rejection",
+      "dayNumber": 10,
+      "moduleId": "ca-module-2",
+      "title": "Handling Rejection",
+      "subtitle": "Learn how to reframe rejection as essential fuel for your confidence growth.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of a 'No'",
+          "body": "Rejection feels personal, but science shows it's actually a stepping stone to success.",
+          "stat": "70%",
+          "statLabel": "of successful entrepreneurs faced major rejection before their breakthrough."
+        },
+        {
+          "type": "content",
+          "headline": "Why Rejection Hurts",
+          "body": "Our brains are wired to fear social exclusion, making rejection feel like physical pain.",
+          "bullets": [
+            "Evolutionary survival relied on group acceptance.",
+            "The brain's pain matrix activates during rejection.",
+            "It triggers a stress response, lowering temporary self-esteem.",
+            "Understanding this biology helps detach your worth from the event."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Reframing the 'No'",
+          "body": "Rejection isn't a reflection of your value; it's a misalignment of circumstances.",
+          "bullets": [
+            "Treat 'no' as data, not a character judgment.",
+            "Ask yourself what you can learn from the experience.",
+            "Recognize that every rejection brings you closer to a 'yes'.",
+            "Celebrate the courage it took to put yourself out there."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Rejection Resilience",
+          "body": "You can train your brain to bounce back faster by taking calculated social risks.",
+          "bullets": [
+            "Practice 'rejection therapy' by making small, low-stakes requests.",
+            "Keep a 'courage log' instead of a success log.",
+            "Depersonalize the outcome by focusing on your effort.",
+            "Use positive self-talk to soothe the initial sting."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Seek a 'No' Today",
+          "body": "Ask for something small that you expect to be denied, like a discount on your coffee. Notice how surviving the 'no' actually boosts your confidence!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does rejection often feel so painful?",
+          "type": "mcq",
+          "options": [
+            "It means we are genetically untalented.",
+            "Our brains process it similarly to physical pain.",
+            "It permanently lowers our IQ.",
+            "It proves we shouldn't have tried in the first place."
+          ],
+          "correctIndex": 1,
+          "explanation": "Evolutionary biology wired our brains to view social rejection as a threat to survival, activating the same pain centers as physical injury."
+        },
+        {
+          "question": "What is the most confident way to view a rejection?",
+          "type": "mcq",
+          "options": [
+            "As a final judgment on your worth.",
+            "As a sign to give up immediately.",
+            "As helpful data and a badge of courage.",
+            "As proof that others are against you."
+          ],
+          "correctIndex": 2,
+          "explanation": "Viewing rejection as data depersonalizes the experience, allowing you to learn from it and celebrate the courage it took to try."
+        },
+        {
+          "question": "Keeping a 'courage log' focuses on your efforts rather than just your successful outcomes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A courage log tracks the times you stepped out of your comfort zone, rewarding the behavior of trying regardless of the final outcome."
+        }
+      ]
+    },
+    {
+      "id": "ca-11-imposter-syndrome",
+      "dayNumber": 11,
+      "moduleId": "ca-module-2",
+      "title": "Imposter Syndrome",
+      "subtitle": "Understand and overcome the persistent feeling of being a fraud in your own life.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Fraud Illusion",
+          "body": "Even the most accomplished people often feel like they are secretly faking it.",
+          "stat": "70%",
+          "statLabel": "of people will experience imposter syndrome at least once in their lives."
+        },
+        {
+          "type": "content",
+          "headline": "Spotting Imposter Syndrome",
+          "body": "Imposter syndrome manifests as a chronic inability to internalize your success.",
+          "bullets": [
+            "Chalking your achievements up to 'luck' or 'timing'.",
+            "Fearing you will inevitably be 'found out'.",
+            "Downplaying your skills and expertise to others.",
+            "Overworking to compensate for perceived inadequacy."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Science of Self-Doubt",
+          "body": "High achievers are actually more prone to feeling like frauds.",
+          "bullets": [
+            "The Dunning-Kruger effect shows experts often underestimate their knowledge.",
+            "Perfectionism drives an impossible standard of success.",
+            "We compare our internal struggles to others' external highlights.",
+            "Brain biases make us remember failures more vividly than wins."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Silencing the Inner Critic",
+          "body": "You can override imposter feelings by relying on objective facts over subjective emotions.",
+          "bullets": [
+            "Keep a 'brag file' of positive feedback and accomplishments.",
+            "Talk about your feelings with trusted peers to normalize them.",
+            "Reframe 'I don't know' to 'I am capable of learning'.",
+            "Accept that feeling unsure is a normal part of growth."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Evidence File",
+          "body": "Write down three objective facts about your skills or past successes. Read this list whenever you feel like you don't belong."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is a classic sign of imposter syndrome?",
+          "type": "mcq",
+          "options": [
+            "Excessive arrogance and boasting.",
+            "Blaming others for your failures.",
+            "Attributing your success to pure luck.",
+            "Never feeling stressed about work."
+          ],
+          "correctIndex": 2,
+          "explanation": "People with imposter syndrome struggle to internalize their success, often believing they just got lucky rather than earning it through skill."
+        },
+        {
+          "question": "Why do high achievers often experience imposter syndrome?",
+          "type": "mcq",
+          "options": [
+            "They are actually frauds.",
+            "They underestimate their knowledge compared to beginners.",
+            "They don't care about the quality of their work.",
+            "They receive too much negative feedback."
+          ],
+          "correctIndex": 1,
+          "explanation": "Due to the Dunning-Kruger effect, experts often assume that what is easy for them is easy for everyone, leading them to underestimate their unique value."
+        },
+        {
+          "question": "Imposter syndrome is a rare condition that only affects people who are unqualified for their roles.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Up to 70% of people experience imposter syndrome, and it disproportionately affects high achievers and capable experts."
+        }
+      ]
+    },
+    {
+      "id": "ca-12-setting-boundaries",
+      "dayNumber": 12,
+      "moduleId": "ca-module-2",
+      "title": "Setting Boundaries",
+      "subtitle": "Discover how saying no effectively builds self-respect and lasting confidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of No",
+          "body": "Setting boundaries isn't selfish; it's the ultimate act of self-confidence and preservation.",
+          "stat": "65%",
+          "statLabel": "of adults struggle to say 'no' due to a fear of disappointing others."
+        },
+        {
+          "type": "content",
+          "headline": "What Are Boundaries?",
+          "body": "Boundaries are the invisible lines that define your limits and protect your energy.",
+          "bullets": [
+            "Physical boundaries protect your personal space and body.",
+            "Time boundaries prevent others from monopolizing your schedule.",
+            "Emotional boundaries guard your feelings and mental bandwidth.",
+            "Material boundaries dictate how your possessions are treated."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Boundaries Build Confidence",
+          "body": "Every time you enforce a boundary, you send a powerful message to your brain.",
+          "bullets": [
+            "It reinforces the belief that your needs are valid and important.",
+            "It reduces chronic resentment and burnout.",
+            "It trains others to treat you with greater respect.",
+            "It clears mental space for goals that actually matter to you."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Say No Effectively",
+          "body": "You can be polite and firm at the same time without over-explaining yourself.",
+          "bullets": [
+            "Use clear, direct language instead of vague excuses.",
+            "Try the 'positive no': validate the person, decline, and pivot.",
+            "Don't apologize for having limits or needing rest.",
+            "Start with small boundaries to build your 'no' muscle."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 24-Hour Rule",
+          "body": "The next time someone asks for a favor, say 'Let me check my schedule and get back to you.' Use the time to decide if you truly want to say yes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of setting personal boundaries?",
+          "type": "mcq",
+          "options": [
+            "Making people dislike you.",
+            "Protecting your energy and validating your needs.",
+            "Proving you are busier than everyone else.",
+            "Avoiding all social interactions completely."
+          ],
+          "correctIndex": 1,
+          "explanation": "Boundaries protect your physical and emotional energy, sending a psychological signal that your needs matter, which boosts confidence."
+        },
+        {
+          "question": "Which technique is recommended for saying no effectively?",
+          "type": "mcq",
+          "options": [
+            "Over-explaining your reasons in detail.",
+            "Making up an elaborate lie.",
+            "Using clear and direct language.",
+            "Apologizing profusely for your limits."
+          ],
+          "correctIndex": 2,
+          "explanation": "Clear, direct language prevents misunderstandings and shows confidence. Over-explaining or apologizing weakens your boundary."
+        },
+        {
+          "question": "Saying 'Let me check my schedule' is a good way to pause and evaluate a request before committing.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Creating a buffer gives you time to assess your capacity and prevents the knee-jerk reaction of saying 'yes' out of guilt."
+        }
+      ]
+    },
+    {
+      "id": "ca-13-confidence-under-pressure",
+      "dayNumber": 13,
+      "moduleId": "ca-module-2",
+      "title": "Confidence Under Pressure",
+      "subtitle": "Master your nerves and maintain unshakeable confidence during high-stakes moments.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Spotlight Effect",
+          "body": "When the stakes are high, our brains trigger a fight-or-flight response that can hijack our confidence. But pressure doesn't have to break you—it can actually fuel your peak performance.",
+          "stat": "85%",
+          "statLabel": "of professionals experience performance anxiety during high-stakes situations."
+        },
+        {
+          "type": "content",
+          "headline": "Reframe the Nerves",
+          "body": "Physiologically, anxiety and excitement are almost identical. You can trick your brain into performing better by changing how you label the physical sensations.",
+          "bullets": [
+            "Say 'I am excited' out loud instead of 'I am nervous.'",
+            "Acknowledge your racing heart as your body preparing to perform.",
+            "Focus on the opportunity rather than the threat of failure.",
+            "Breathe out longer than you breathe in to signal safety to your nervous system."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Anchor Your Body",
+          "body": "Your physical posture directly influences your psychological state. Use your body to signal confidence to your brain before and during a high-pressure event.",
+          "bullets": [
+            "Keep your feet firmly planted shoulder-width apart to feel grounded.",
+            "Roll your shoulders back and keep your chest open.",
+            "Use slow, deliberate hand gestures rather than fidgeting.",
+            "Maintain steady eye contact to establish authority and connection."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'Pause and Pivot' Technique",
+          "body": "When you blank out or face a confrontational question, don't rush to fill the silence. A strategic pause projects immense confidence.",
+          "bullets": [
+            "Take a slow 3-second breath before answering difficult questions.",
+            "Use bridging phrases like 'That's an interesting perspective, and...'",
+            "If you lose your train of thought, simply pause, smile, and look at your notes.",
+            "Remember that silence feels much longer to you than it does to your audience."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Pre-Game Ritual",
+          "body": "Before your next high-stakes moment, spend two minutes doing a 'box breathing' exercise (inhale 4s, hold 4s, exhale 4s, hold 4s) while visualizing a successful outcome. Say 'I am ready and excited' out loud right before you begin."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it effective to say 'I am excited' when feeling nervous?",
+          "type": "mcq",
+          "options": [
+            "It lowers your heart rate instantly",
+            "Anxiety and excitement have similar physiological responses",
+            "It distracts the audience",
+            "It stops the production of adrenaline"
+          ],
+          "correctIndex": 1,
+          "explanation": "Because anxiety and excitement are physiologically very similar, it is much easier to reframe your nerves as excitement rather than trying to force yourself to calm down completely."
+        },
+        {
+          "question": "What should you do if you lose your train of thought during a presentation?",
+          "type": "mcq",
+          "options": [
+            "Apologize profusely",
+            "Rush to say anything to fill the silence",
+            "Take a strategic pause and smile",
+            "Look away and speak faster"
+          ],
+          "correctIndex": 2,
+          "explanation": "Taking a strategic pause projects confidence and gives your brain a moment to catch up, whereas rushing or apologizing highlights the mistake."
+        },
+        {
+          "question": "Breathing out longer than you breathe in helps signal to your nervous system that you are safe.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Extended exhalations activate the parasympathetic nervous system, which acts as a brake on your body's stress response and helps you calm down."
+        }
+      ]
+    },
+    {
+      "id": "ca-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "ca-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Review and consolidate the core habits of building daily confidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Look How Far You've Come",
+          "body": "Over the last six lessons, you've learned to build momentum, speak up, handle rejection, face imposter syndrome, set boundaries, and thrive under pressure. Let's lock in those gains.",
+          "stat": "6x",
+          "statLabel": "higher retention of habits when you actively review and reflect on your progress."
+        },
+        {
+          "type": "content",
+          "headline": "Action Creates Confidence",
+          "body": "We learned that confidence isn't a prerequisite for action; it's a byproduct of it. Small, consistent steps build the foundation of self-belief.",
+          "bullets": [
+            "Track your 'small wins' daily to build undeniable proof of your capability.",
+            "Use the '5-Second Rule' to speak up before your brain talks you out of it.",
+            "Treat rejection as data, not as a reflection of your self-worth.",
+            "Remember that setting boundaries protects your energy and commands respect."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Mastering Your Inner World",
+          "body": "True confidence requires managing the stories you tell yourself, especially when self-doubt creeps in.",
+          "bullets": [
+            "Recognize imposter syndrome as a sign of growth, not fraudulence.",
+            "Separate your feelings from facts when evaluating your achievements.",
+            "Reframe high-pressure nerves as excitement to channel your adrenaline.",
+            "Keep an 'accomplishment journal' to combat sudden bouts of self-doubt."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Projecting Outer Confidence",
+          "body": "How you carry yourself physically impacts how others perceive you and how you feel internally.",
+          "bullets": [
+            "Use grounded, open body language to signal authority and calm.",
+            "Embrace strategic pauses instead of using filler words.",
+            "Maintain steady eye contact when setting a boundary or making a point.",
+            "Breathe deeply to regulate your nervous system during confrontations."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Confidence Blueprint",
+          "body": "Write down the top 3 techniques from this module that resonated most with you (e.g., reframing rejection, box breathing, or the small wins tracker). Commit to practicing these three specific tools over the next week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Module 2, what is the most effective way to view rejection?",
+          "type": "mcq",
+          "options": [
+            "As a sign to give up",
+            "As proof of your flaws",
+            "As objective data for improvement",
+            "As something to avoid at all costs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Viewing rejection as data strips away the emotional sting and allows you to learn, adapt, and improve for your next attempt."
+        },
+        {
+          "question": "How should you handle the feeling of Imposter Syndrome?",
+          "type": "mcq",
+          "options": [
+            "Ignore it until it goes away",
+            "Recognize it as a sign that you are stepping out of your comfort zone",
+            "Assume it means you aren't qualified",
+            "Quit the task causing the feeling"
+          ],
+          "correctIndex": 1,
+          "explanation": "Imposter syndrome usually appears when you are growing and taking on new challenges. Reframing it as a sign of growth takes away its power."
+        },
+        {
+          "question": "Confidence is a trait you must possess before you can take difficult actions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Confidence is actually a byproduct of taking action. You build confidence by doing the difficult things, not by waiting to feel confident first."
+        }
+      ]
+    },
+    {
+      "id": "ca-15-internal-validation",
+      "dayNumber": 15,
+      "moduleId": "ca-module-3",
+      "title": "Internal Validation",
+      "subtitle": "Shift from seeking external approval to building genuine self-worth.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Approval Trap",
+          "body": "Relying on others for validation puts your self-worth in their hands. Reclaim your power by learning to validate yourself.",
+          "stat": "70%",
+          "statLabel": "of adults admit their self-esteem fluctuates based on social media likes and external praise."
+        },
+        {
+          "type": "content",
+          "headline": "Why External Validation Fails",
+          "body": "Seeking approval is natural, but relying on it is dangerous. Here is why external validation is a flawed foundation for confidence.",
+          "bullets": [
+            "It is temporary and requires constant refilling.",
+            "It makes you vulnerable to manipulation and people-pleasing.",
+            "It suppresses your authentic voice and true desires.",
+            "It shifts the control of your emotions to other people."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pillars of Self-Approval",
+          "body": "Internal validation means trusting your own judgment. Build it by focusing on these core psychological pillars.",
+          "bullets": [
+            "Self-Acceptance: Embrace your flaws along with your strengths.",
+            "Values Alignment: Base your worth on living by your core values, not outcomes.",
+            "Self-Trust: Keep the small promises you make to yourself.",
+            "Self-Compassion: Treat yourself with the same kindness you would offer a friend."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rewiring Your Validation Loop",
+          "body": "You can train your brain to seek internal rewards instead of external praise. Practice these cognitive shifts.",
+          "bullets": [
+            "Notice when you are performing for approval and pause.",
+            "Ask yourself: 'Am I proud of this?' instead of 'Will they like this?'",
+            "Celebrate your own micro-wins daily without telling anyone.",
+            "Detach your identity from both criticism and compliments."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'I Approve' Audit",
+          "body": "Today, before you make a decision or share an accomplishment, ask yourself: 'Do I approve of this?' Write down three things you did today that align with your values, and mentally give yourself the praise you'd normally seek from others."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary danger of relying on external validation?",
+          "type": "mcq",
+          "options": [
+            "It takes too long to get",
+            "It requires constant refilling and leads to people-pleasing",
+            "It makes you too arrogant",
+            "It is too difficult to measure"
+          ],
+          "correctIndex": 1,
+          "explanation": "External validation is fleeting, meaning you must constantly seek more of it, which often leads to changing your behavior just to please others."
+        },
+        {
+          "question": "Which of the following is a pillar of self-approval?",
+          "type": "mcq",
+          "options": [
+            "Perfecting your social media image",
+            "Never making mistakes",
+            "Keeping small promises to yourself",
+            "Getting a promotion"
+          ],
+          "correctIndex": 2,
+          "explanation": "Keeping small promises to yourself builds self-trust, which is a foundational pillar of internal validation."
+        },
+        {
+          "question": "You should ask yourself 'Am I proud of this?' instead of 'Will they like this?'",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Asking 'Am I proud of this?' shifts the focus from external approval to internal validation."
+        }
+      ]
+    },
+    {
+      "id": "ca-16-confidence-in-relationships",
+      "dayNumber": 16,
+      "moduleId": "ca-module-3",
+      "title": "Confidence in Relationships",
+      "subtitle": "Show up authentically and confidently in your personal and professional connections.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Authentic Connection",
+          "body": "Confidence in relationships isn't about being dominant; it's about being comfortable enough to be real. Authentic confidence transforms how you connect.",
+          "stat": "85%",
+          "statLabel": "of people say authenticity is the most attractive trait in a friend or partner."
+        },
+        {
+          "type": "content",
+          "headline": "The Mask of Perfection",
+          "body": "Many people hide their true selves to avoid rejection. This 'masking' destroys relationship confidence.",
+          "bullets": [
+            "Perfectionism creates a barrier to genuine intimacy.",
+            "Hiding flaws signals to your brain that your true self is unacceptable.",
+            "Constant masking leads to social exhaustion and burnout.",
+            "Vulnerability, not perfection, builds the strongest bonds."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Setting Confident Boundaries",
+          "body": "You cannot be confident in a relationship if you don't protect your own energy. Boundaries are a sign of self-respect.",
+          "bullets": [
+            "Communicate your limits clearly and without over-apologizing.",
+            "Understand that a 'no' to others is often a 'yes' to yourself.",
+            "Enforce consequences when your boundaries are crossed.",
+            "Recognize that healthy relationships respect boundaries, while toxic ones test them."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Communicating with Certainty",
+          "body": "Confident communication balances assertiveness with empathy. Master these interpersonal skills.",
+          "bullets": [
+            "Maintain relaxed, steady eye contact during conversations.",
+            "Use 'I' statements to own your feelings (e.g., 'I feel' instead of 'You make me').",
+            "Listen actively without preparing your response while they speak.",
+            "Embrace comfortable silences instead of rushing to fill the void."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Boundary Practice",
+          "body": "Identify one small area in your life where you've been saying 'yes' when you mean 'no'. Today, politely but firmly decline a minor request or set a small boundary without offering a lengthy excuse."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the effect of hiding your true self (masking) in relationships?",
+          "type": "mcq",
+          "options": [
+            "It makes you more mysterious and attractive",
+            "It leads to social exhaustion and prevents genuine intimacy",
+            "It guarantees you will never be rejected",
+            "It builds long-term trust"
+          ],
+          "correctIndex": 1,
+          "explanation": "Masking requires constant energy to maintain a facade, which leads to burnout and prevents you from forming deep, authentic connections."
+        },
+        {
+          "question": "How should you communicate your boundaries?",
+          "type": "mcq",
+          "options": [
+            "Clearly and without over-apologizing",
+            "Aggressively to show dominance",
+            "Indirectly so you don't offend anyone",
+            "Only when you are angry"
+          ],
+          "correctIndex": 0,
+          "explanation": "Boundaries are a sign of self-respect and should be communicated firmly and clearly, without the need to over-apologize."
+        },
+        {
+          "question": "Vulnerability is a sign of weakness that hurts relationship confidence.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Vulnerability actually builds the strongest bonds and is a core component of authentic relationship confidence."
+        }
+      ]
+    },
+    {
+      "id": "ca-17-public-speaking",
+      "dayNumber": 17,
+      "moduleId": "ca-module-3",
+      "title": "Public Speaking",
+      "subtitle": "Master frameworks for confident and impactful communication in front of groups.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Conquering the Stage",
+          "body": "Public speaking is the ultimate test of confidence, but it is a skill, not an innate talent. With the right frameworks, you can turn anxiety into authority.",
+          "stat": "73%",
+          "statLabel": "of the population experiences glossophobia, or the fear of public speaking."
+        },
+        {
+          "type": "content",
+          "headline": "Reframing Nervousness",
+          "body": "The physical symptoms of fear and excitement are identical. It is your brain's interpretation that matters.",
+          "bullets": [
+            "Acknowledge your racing heart as your body preparing to perform.",
+            "Tell yourself 'I am excited' instead of 'I am nervous.'",
+            "Focus on the value you are providing the audience, not how you look.",
+            "Accept that the audience wants you to succeed, not fail."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The PREP Framework",
+          "body": "When speaking impromptu or answering questions, use the PREP framework to sound structured and confident.",
+          "bullets": [
+            "Point: State your main idea clearly right away.",
+            "Reason: Explain why you believe this point is true.",
+            "Example: Provide a specific story, data point, or case study.",
+            "Point: Reiterate your main idea to close strongly."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Body Language for Speakers",
+          "body": "Your non-verbal cues speak louder than your words. Command the room with these physical anchors.",
+          "bullets": [
+            "Plant your feet shoulder-width apart to project stability.",
+            "Use open hand gestures and avoid crossing your arms.",
+            "Make sustained eye contact with one person per thought.",
+            "Use strategic pauses to emphasize points and eliminate filler words."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Mirror Pitch",
+          "body": "Pick a topic you know well (even a hobby). Use the PREP framework (Point, Reason, Example, Point) to deliver a 1-minute speech to yourself in the mirror. Focus on planting your feet and using open gestures."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How can you reframe the physical symptoms of nervousness before speaking?",
+          "type": "mcq",
+          "options": [
+            "Try to suppress them completely",
+            "Tell yourself you are excited instead of nervous",
+            "Drink lots of caffeine to overpower them",
+            "Imagine the audience in their underwear"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fear and excitement have the same physical symptoms. By telling yourself you are excited, you shift your brain's interpretation into a positive state."
+        },
+        {
+          "question": "What does the 'E' in the PREP framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Emotion",
+            "Energy",
+            "Example",
+            "Execution"
+          ],
+          "correctIndex": 2,
+          "explanation": "The PREP framework stands for Point, Reason, Example, Point."
+        },
+        {
+          "question": "You should make sustained eye contact with one person per thought when speaking to a group.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Making sustained eye contact with one person per thought builds connection and projects confidence, rather than nervously scanning the room."
+        }
+      ]
+    },
+    {
+      "id": "ca-18-confident-decisions",
+      "dayNumber": 18,
+      "moduleId": "ca-module-3",
+      "title": "Confident Decision Making",
+      "subtitle": "Learn how to make firm decisions without the endless cycle of second-guessing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Cost of Overthinking",
+          "body": "Analysis paralysis drains your mental energy and chips away at your self-trust. Confident people don't always make the right choice, but they make choices right.",
+          "stat": "70%",
+          "statLabel": "of adults admit to overthinking minor daily decisions"
+        },
+        {
+          "type": "content",
+          "headline": "Why We Second-Guess",
+          "body": "Indecision is rarely about a lack of information; it's rooted in the fear of making a mistake. Understanding this fear is the first step to overcoming it.",
+          "bullets": [
+            "Perfectionism creates an illusion that a 'flawless' choice exists.",
+            "We overvalue the potential negative outcomes of a wrong choice.",
+            "Too many options lead to cognitive overload and decision fatigue.",
+            "Seeking excessive external validation weakens our internal compass."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 80/20 Decision Rule",
+          "body": "You don't need 100% of the information to make a confident choice. Aim for the sweet spot of informed action.",
+          "bullets": [
+            "Gather 80% of the available information before deciding.",
+            "Accept that the remaining 20% will only be learned through action.",
+            "Set a strict time limit for research to prevent analysis paralysis.",
+            "Commit fully to the decision once it is made, without looking back."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Trusting Your Intuition",
+          "body": "Your gut feeling is actually a highly sophisticated data-processing system based on your past experiences.",
+          "bullets": [
+            "Notice your body's immediate physical reaction to an option.",
+            "Distinguish between fear (anxiety) and intuition (a deep knowing).",
+            "Start trusting your gut on small, low-stakes choices to build the muscle.",
+            "Keep a 'decision journal' to track how often your intuition was right."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 60-Second Rule",
+          "body": "Today, when faced with a low-stakes decision (what to eat, what to wear, which email to answer first), give yourself exactly 60 seconds to choose. Notice how it feels to move forward quickly."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary root cause of most indecision?",
+          "type": "mcq",
+          "options": [
+            "A lack of available data",
+            "The fear of making a mistake",
+            "Not caring about the outcome",
+            "Having too few choices"
+          ],
+          "correctIndex": 1,
+          "explanation": "Indecision is rarely about missing information; it's driven by perfectionism and the fear of a negative outcome."
+        },
+        {
+          "question": "How does the 80/20 Decision Rule help build confidence?",
+          "type": "mcq",
+          "options": [
+            "It ensures you never make a mistake.",
+            "It forces you to ask 20 people for advice.",
+            "It encourages action with sufficient, but not perfect, information.",
+            "It requires 80 days to make a major choice."
+          ],
+          "correctIndex": 2,
+          "explanation": "The rule suggests acting once you have 80% of the information, accepting that the remaining 20% will be learned through the experience."
+        },
+        {
+          "question": "Intuition is a magical feeling that has no basis in logic or past experience.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Intuition is actually your brain rapidly processing past experiences and subconscious data to give you a quick assessment."
+        }
+      ]
+    },
+    {
+      "id": "ca-19-resilience-setbacks",
+      "dayNumber": 19,
+      "moduleId": "ca-module-3",
+      "title": "Resilience and Setbacks",
+      "subtitle": "Discover how to bounce back from failure and maintain your confidence through adversity.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Failing Forward",
+          "body": "Confidence isn't the absence of failure; it's the belief that you can handle failure when it happens. Resilience is your confidence safety net.",
+          "stat": "3x",
+          "statLabel": "more likely to succeed if you reframe a past failure as a learning event"
+        },
+        {
+          "type": "content",
+          "headline": "Reframing Failure",
+          "body": "How you define a setback determines how quickly your confidence recovers. Shift your perspective to see setbacks as data.",
+          "bullets": [
+            "Failure is an event that happened, not an identity you carry.",
+            "Every mistake provides essential data on what doesn't work.",
+            "Ask 'What is this teaching me?' instead of 'Why did this happen to me?'.",
+            "Celebrate the courage it took to try, regardless of the outcome."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Bounce-Back Routine",
+          "body": "Having a structured way to process disappointment prevents you from spiraling into self-doubt.",
+          "bullets": [
+            "Allow yourself a specific time window to feel disappointed (e.g., 24 hours).",
+            "Conduct a blameless post-mortem to analyze what went wrong.",
+            "Identify one variable you can control for the next attempt.",
+            "Take one small, immediate action to regain forward momentum."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Post-Traumatic Growth",
+          "body": "Adversity doesn't just return you to baseline; it can actually elevate your confidence to levels you couldn't reach otherwise.",
+          "bullets": [
+            "Surviving a tough situation proves your inner strength to yourself.",
+            "Setbacks clarify your core values and what truly matters to you.",
+            "Adversity increases your empathy and connection with others.",
+            "You develop a 'bring it on' mentality for future challenges."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Failure Resume",
+          "body": "Write down one significant past failure. Next to it, write down three specific skills, insights, or strengths you gained exclusively because that failure happened."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most constructive question to ask after a setback?",
+          "type": "mcq",
+          "options": [
+            "Why does this always happen to me?",
+            "Whose fault was this?",
+            "What is this teaching me?",
+            "Should I just give up now?"
+          ],
+          "correctIndex": 2,
+          "explanation": "Asking 'What is this teaching me?' reframes the failure as a valuable learning opportunity rather than a personal defeat."
+        },
+        {
+          "question": "What is the purpose of a 'blameless post-mortem'?",
+          "type": "mcq",
+          "options": [
+            "To figure out who to punish for the mistake.",
+            "To analyze what went wrong objectively without self-shaming.",
+            "To pretend the failure never happened.",
+            "To complain about the situation to others."
+          ],
+          "correctIndex": 1,
+          "explanation": "A blameless post-mortem allows you to extract useful data from the setback without attaching negative emotions or self-blame."
+        },
+        {
+          "question": "Post-traumatic growth means that adversity can actually make you stronger and more confident than you were before.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Research shows that navigating difficult situations can lead to profound personal growth and increased baseline resilience."
+        }
+      ]
+    },
+    {
+      "id": "ca-20-confidence-identity",
+      "dayNumber": 20,
+      "moduleId": "ca-module-3",
+      "title": "Your Confidence Identity",
+      "subtitle": "Integrate everything you've learned into a lasting, unshakeable confident identity.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Becoming the Confident You",
+          "body": "Behavior changes are temporary until they become part of your identity. True confidence isn't an act you put on; it's who you are.",
+          "stat": "100%",
+          "statLabel": "within your control to rewrite your personal narrative"
+        },
+        {
+          "type": "content",
+          "headline": "Identity-Based Habits",
+          "body": "The ultimate form of intrinsic motivation is when a habit becomes part of your identity. You act confidently because you *are* confident.",
+          "bullets": [
+            "Focus on who you wish to become, not just what you want to achieve.",
+            "Every action is a vote for the type of person you want to be.",
+            "Stop saying 'I'm trying to be confident' and start saying 'I am confident'.",
+            "Align your daily routines with the habits of your confident future self."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'I Am' Framework",
+          "body": "The words 'I am' are the most powerful in the human language. Whatever follows them shapes your reality.",
+          "bullets": [
+            "Audit your current 'I am' statements (e.g., catch yourself saying 'I am awkward').",
+            "Replace limiting labels with empowering, action-oriented identities.",
+            "Use evidence from your recent wins to support your new 'I am' statements.",
+            "Repeat your new identity statements during moments of high emotion."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Protecting Your New Identity",
+          "body": "As you step into your unshakeable confidence, you must protect your new mindset from old triggers and environments.",
+          "bullets": [
+            "Set firm boundaries with people who try to pull you back to your old self.",
+            "Curate your digital and physical environment to reflect your new standards.",
+            "Expect occasional 'relapses' into self-doubt, but don't let them define you.",
+            "Regularly visualize yourself navigating future challenges with ease."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Identity Statement",
+          "body": "Write a single, powerful sentence starting with 'I am a person who...' (e.g., 'I am a person who speaks up for what I believe in'). Put it on a sticky note on your bathroom mirror."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective way to make a behavior change permanent?",
+          "type": "mcq",
+          "options": [
+            "Rely entirely on willpower.",
+            "Wait for motivation to strike.",
+            "Make the behavior a core part of your identity.",
+            "Set a 30-day deadline and then stop."
+          ],
+          "correctIndex": 2,
+          "explanation": "When a behavior becomes part of your identity (who you are), you no longer have to force it; it becomes a natural expression of yourself."
+        },
+        {
+          "question": "Why is it important to audit your 'I am' statements?",
+          "type": "mcq",
+          "options": [
+            "Because grammar is important in self-talk.",
+            "Because whatever follows 'I am' shapes your subconscious reality and actions.",
+            "To make sure you sound arrogant to others.",
+            "To memorize them for a test."
+          ],
+          "correctIndex": 1,
+          "explanation": "The phrase 'I am' creates an identity label. Changing negative labels to empowering ones directly alters how you perceive yourself and behave."
+        },
+        {
+          "question": "Once you build a confident identity, you will never experience self-doubt ever again.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Occasional self-doubt is human. A confident identity just means you don't let those moments of doubt define you or stop you."
+        }
+      ]
+    },
+    {
+      "id": "ca-21-module-3-checkpoint",
+      "dayNumber": 21,
+      "moduleId": "ca-module-3",
+      "title": "Module 3 Checkpoint",
+      "subtitle": "Celebrate your journey and cement the key takeaways from the Confidence Accelerator course.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Did It!",
+          "body": "You've successfully completed the Confidence Accelerator! You've rewired your brain, upgraded your habits, and built an unshakeable foundation.",
+          "stat": "21",
+          "statLabel": "days of consistent focus to establish a powerful new mindset"
+        },
+        {
+          "type": "content",
+          "headline": "Review: The Inner Game",
+          "body": "In Module 1, we learned that confidence starts from within. It's an inside job that requires managing your mind.",
+          "bullets": [
+            "You silenced your inner critic and replaced it with a supportive inner coach.",
+            "You learned to reframe imposter syndrome as a sign of growth.",
+            "You uncovered your core values to anchor your self-worth.",
+            "You mastered the art of self-compassion during difficult moments."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Review: The Outer Game",
+          "body": "In Module 2, we translated your inner belief into external action, changing how the world perceives you.",
+          "bullets": [
+            "You adopted expansive body language to signal authority and calm.",
+            "You leveled up your vocal presence to speak with conviction.",
+            "You practiced setting firm, respectful boundaries.",
+            "You learned to accept compliments and own your achievements."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Review: Unshakeable Core",
+          "body": "In Module 3, we bulletproofed your confidence to withstand the challenges of the real world.",
+          "bullets": [
+            "You built a system for decisive, confident decision-making.",
+            "You learned to reframe failures as stepping stones to success.",
+            "You integrated all your new skills into a permanent 'Confident Identity'.",
+            "You realized that true confidence is a lifelong, rewarding practice."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Day 1 vs. Day 21 Reflection",
+          "body": "Take 5 minutes today to reflect on how you felt on Day 1 compared to today. Write down three specific situations where you acted more confidently over the last 3 weeks. Celebrate your growth!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Module 1 (The Inner Game), where does true confidence originate?",
+          "type": "mcq",
+          "options": [
+            "From external validation and praise.",
+            "From never making any mistakes.",
+            "From within, by managing your mindset and self-talk.",
+            "From having the best physical appearance."
+          ],
+          "correctIndex": 2,
+          "explanation": "Module 1 focused on the Inner Game, teaching that confidence is an inside job rooted in self-compassion, values, and healthy self-talk."
+        },
+        {
+          "question": "What was the primary focus of Module 2 (The Outer Game)?",
+          "type": "mcq",
+          "options": [
+            "Meditating on your past traumas.",
+            "Translating inner belief into external actions like body language and boundaries.",
+            "Learning how to manipulate other people.",
+            "Ignoring your physical presence entirely."
+          ],
+          "correctIndex": 1,
+          "explanation": "Module 2 was all about how you project confidence externally through body language, vocal presence, and setting boundaries."
+        },
+        {
+          "question": "Confidence is a permanent destination; once you finish this course, you never have to practice it again.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Confidence is a lifelong practice. This course gave you the tools and foundation, but you must continue to apply them daily."
+        }
+      ]
+    }
+  ]
+}

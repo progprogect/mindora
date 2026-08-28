@@ -1,0 +1,1908 @@
+{
+  "id": "design-your-business-model",
+  "title": "Design Your Business Model",
+  "subtitle": "Map, test, and validate the logic of how your business creates, delivers, and captures value — using proven canvas frameworks.",
+  "totalDays": 21,
+  "totalXp": 450,
+  "modules": [
+    {
+      "id": "dbm-module-1",
+      "moduleNumber": 1,
+      "title": "Business Model Foundations",
+      "subtitle": "Understand what a business model really is, map its nine building blocks, and see how the pieces connect to create and capture value.",
+      "days": "Lessons 1–7",
+      "skill": "Map the nine building blocks of any business model and identify how they connect",
+      "lessonIds": [
+        "dbm-1-what-is-a-business-model",
+        "dbm-2-nine-building-blocks",
+        "dbm-3-value-propositions",
+        "dbm-4-customer-segments-channels",
+        "dbm-5-revenue-cost-structure",
+        "dbm-6-key-resources-activities-partners",
+        "dbm-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "dbm-module-2",
+      "moduleNumber": 2,
+      "title": "Lean Canvas & Validation",
+      "subtitle": "Translate your model into a one-page Lean Canvas, prioritise your riskiest assumptions, and design quick experiments to validate them.",
+      "days": "Lessons 8–14",
+      "skill": "Create a Lean Canvas and design experiments that test riskiest assumptions first",
+      "lessonIds": [
+        "dbm-8-lean-canvas-intro",
+        "dbm-9-problem-solution-fit",
+        "dbm-10-unfair-advantage",
+        "dbm-11-metrics-that-matter",
+        "dbm-12-experiment-design",
+        "dbm-13-pivot-or-persevere",
+        "dbm-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "dbm-module-3",
+      "moduleNumber": 3,
+      "title": "Iteration & Product-Market Fit",
+      "subtitle": "Learn the build-measure-learn loop, recognise product-market fit signals, and scale your validated model with confidence.",
+      "days": "Lessons 15–21",
+      "skill": "Run build-measure-learn loops and recognise product-market fit signals",
+      "lessonIds": [
+        "dbm-15-build-measure-learn",
+        "dbm-16-minimum-viable-product",
+        "dbm-17-innovation-accounting",
+        "dbm-18-product-market-fit-signals",
+        "dbm-19-business-model-patterns",
+        "dbm-20-scaling-validated-model",
+        "dbm-21-module-3-checkpoint"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "dbm-1-what-is-a-business-model",
+      "dayNumber": 1,
+      "moduleId": "dbm-module-1",
+      "title": "What Is a Business Model?",
+      "subtitle": "It's not a business plan. It's the logic of how you create, deliver, and capture value — and it fits on one page.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 40-Page Document Nobody Reads",
+          "body": "Most entrepreneurs spend months writing a business plan. It's a 40-page document that rarely survives first contact with customers. A business model is different — it's the underlying logic of how your business works: who you serve, what you offer, and how money flows. Osterwalder defines it as \"the rationale of how an organisation creates, delivers, and captures value.\" You can sketch one in 20 minutes."
+        },
+        {
+          "type": "content",
+          "headline": "Why Models Beat Plans",
+          "body": "Plans assume you know the answers. Models assume you have hypotheses to test. A model is visual, shareable, and easy to update. When reality changes (and it will), you pivot the model — not rewrite 40 pages.",
+          "bullets": [
+            "A model can be sketched in 20 minutes, shared in 5",
+            "It forces clarity through constraints — one page only",
+            "It's designed to be tested and updated, not preserved",
+            "Ash Maurya: \"Your business model IS your product\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Three Layers of Value",
+          "body": "Every sustainable business model answers three questions:",
+          "bullets": [
+            "Value Creation — what problem do you solve and for whom?",
+            "Value Delivery — how does the solution reach the customer?",
+            "Value Capture — how do you get paid?"
+          ],
+          "stat": "3",
+          "statLabel": "layers that must all work — if any breaks, the model fails"
+        },
+        {
+          "type": "content",
+          "headline": "The Canvas Mindset",
+          "body": "Instead of writing in isolation for months, you sketch your model on a canvas — a visual chart with building blocks. You share it with your team in minutes. You take it to potential customers and come back with evidence. You update it weekly. This \"canvas mindset\" treats your business model as a living experiment, not a fixed document."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 1 Action",
+          "body": "Grab a blank sheet. Write your business idea in one sentence. Then answer: Who benefits? What do they get? How would you earn revenue? Don't worry about getting it right — this is your first draft, and it will evolve dramatically. The goal today is simply to externalise what's in your head so you can examine and test it."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Osterwalder, a business model describes:",
+          "options": [
+            "The rationale of how an organisation creates, delivers, and captures value",
+            "A detailed 5-year financial projection",
+            "The legal structure of a company",
+            "A marketing strategy document"
+          ],
+          "correctIndex": 0,
+          "explanation": "A business model is \"the rationale of how an organisation creates, delivers, and captures value\" — not a financial plan or legal structure."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the key advantage of a business model over a business plan?",
+          "options": [
+            "It's longer and more detailed",
+            "It assumes you know all the answers",
+            "It's visual, testable, and easy to update when reality changes",
+            "It satisfies bank requirements for loans"
+          ],
+          "correctIndex": 2,
+          "explanation": "Models are designed to be tested and updated quickly, unlike plans that assume certainty and take months to rewrite."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is NOT one of the three layers of value in a business model?",
+          "options": [
+            "Value Creation",
+            "Value Delivery",
+            "Value Regulation",
+            "Value Capture"
+          ],
+          "correctIndex": 2,
+          "explanation": "The three layers are Value Creation (solve a problem), Value Delivery (reach the customer), and Value Capture (get paid). \"Regulation\" isn't one of the layers."
+        }
+      ]
+    },
+    {
+      "id": "dbm-2-nine-building-blocks",
+      "dayNumber": 2,
+      "moduleId": "dbm-module-1",
+      "title": "The Nine Building Blocks",
+      "subtitle": "Meet the Business Model Canvas — nine interconnected blocks that describe any business, from a food truck to a Fortune 500.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Page That Replaces a Business Plan",
+          "body": "Created by Alexander Osterwalder, the Business Model Canvas is a strategic tool with nine blocks: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure. It forces you to think about your business holistically — not just the product, but the entire system.",
+          "stat": "9",
+          "statLabel": "interconnected blocks that describe any business model"
+        },
+        {
+          "type": "content",
+          "headline": "Right Side = Value & Customers",
+          "body": "The right side of the canvas focuses on value creation and delivery — the \"desirability\" side:",
+          "bullets": [
+            "Customer Segments — who you serve",
+            "Value Propositions — what you offer them",
+            "Channels — how you reach them",
+            "Customer Relationships — how you interact",
+            "Revenue Streams — how you earn from them"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Left Side = Infrastructure & Cost",
+          "body": "The left side focuses on how you deliver — the \"feasibility\" and \"viability\" side:",
+          "bullets": [
+            "Key Resources — what you need (assets, IP, people)",
+            "Key Activities — what you do (production, problem-solving)",
+            "Key Partnerships — who helps you",
+            "Cost Structure — what it all costs"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How the Blocks Connect",
+          "body": "The canvas isn't nine independent boxes — it's a system. Your Value Proposition must solve a real problem for your Customer Segment. Your Channels must reach those specific customers. Your Key Activities must deliver that specific value. Your Revenue Streams must exceed your Cost Structure. Change one block and the ripple hits others."
+        },
+        {
+          "type": "content",
+          "headline": "Canvas in Practice: Spotify",
+          "body": "Customer Segments: music listeners (free & premium). Value Proposition: instant access to millions of songs, personalised discovery. Channels: app stores, web, social sharing. Revenue: subscriptions + ads. Key Resources: licensing deals, recommendation algorithm. Key Partners: record labels, artists. One page reveals the whole business logic at a glance."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How many building blocks does the Business Model Canvas contain?",
+          "options": [
+            "5",
+            "7",
+            "9",
+            "12"
+          ],
+          "correctIndex": 2,
+          "explanation": "The BMC has exactly nine building blocks that together describe the logic of how a business creates, delivers, and captures value."
+        },
+        {
+          "type": "mcq",
+          "question": "The right side of the canvas primarily focuses on:",
+          "options": [
+            "Cost management and efficiency",
+            "Value creation and customer desirability",
+            "Legal compliance and regulation",
+            "Team structure and hiring"
+          ],
+          "correctIndex": 1,
+          "explanation": "The right side covers Customer Segments, Value Props, Channels, Relationships, and Revenue — all about desirability and reaching customers."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is the canvas described as a \"system\" rather than independent boxes?",
+          "options": [
+            "Because it must be filled in a specific order",
+            "Because changes in one block create ripple effects across others",
+            "Because each box requires a separate team",
+            "Because it was designed by a systems engineer"
+          ],
+          "correctIndex": 1,
+          "explanation": "The blocks are interconnected — changing your Customer Segment affects your Channels, Value Prop, Revenue, and more. It's a holistic system."
+        }
+      ]
+    },
+    {
+      "id": "dbm-3-value-propositions",
+      "dayNumber": 3,
+      "moduleId": "dbm-module-1",
+      "title": "Value Propositions That Convert",
+      "subtitle": "Your value proposition is the reason customers choose you. Learn to articulate it clearly using the Value Proposition Canvas.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Should They Choose You?",
+          "body": "A value proposition is the bundle of products and services that creates value for a specific customer segment. It answers: \"Why should I buy from you instead of your competitor (or instead of doing nothing)?\" Great value propositions solve a real pain, deliver a measurable gain, or fulfil a critical job the customer needs done."
+        },
+        {
+          "type": "content",
+          "headline": "The Value Proposition Canvas",
+          "body": "Osterwalder's Value Proposition Canvas zooms into the fit between what you offer and what customers need:",
+          "bullets": [
+            "Customer Profile: Jobs (what they accomplish), Pains (frustrations), Gains (desired outcomes)",
+            "Value Map: Products/Services, Pain Relievers, Gain Creators",
+            "Fit happens when your relievers and creators match real pains and gains"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pain Relievers vs Gain Creators",
+          "body": "Pain Relievers eliminate or reduce specific customer frustrations — saving time, reducing risk, removing anxiety. Gain Creators produce outcomes customers desire — better status, convenience, cost savings. The strongest value propositions do both, but usually lead with pain relief because people are more motivated to eliminate pain than pursue gain (loss aversion)."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Fit\" Spectrum",
+          "body": "Three levels of fit that every startup must achieve in order:",
+          "bullets": [
+            "Problem-Solution Fit — your proposition addresses real jobs, pains, and gains (on paper)",
+            "Product-Market Fit — evidence shows customers want it (they pay, use, recommend)",
+            "Business Model Fit — the proposition is embedded in a scalable, profitable model"
+          ],
+          "stat": "80%",
+          "statLabel": "of startups die between Problem-Solution Fit and Product-Market Fit"
+        },
+        {
+          "type": "try-it",
+          "headline": "Craft Your Statement",
+          "body": "Use this template: \"We help [customer segment] who want to [job/gain] by [how you relieve pain/create gain], unlike [alternative] who [limitation].\" Example: \"We help busy parents who want healthy family meals by delivering pre-portioned recipe kits in 30 minutes, unlike meal planning apps that still require grocery shopping.\" Specific beats clever."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The Value Proposition Canvas maps the fit between:",
+          "options": [
+            "Competitors and your product features",
+            "What you offer and what customers actually need",
+            "Revenue streams and cost structure",
+            "Marketing channels and customer acquisition"
+          ],
+          "correctIndex": 1,
+          "explanation": "The VPC zooms into the relationship between your value map (what you offer) and the customer profile (their jobs, pains, gains)."
+        },
+        {
+          "type": "mcq",
+          "question": "Why do strong value propositions usually lead with pain relief?",
+          "options": [
+            "Because pain relievers are cheaper to build",
+            "Because people are more motivated to eliminate pain than pursue gains",
+            "Because gains are impossible to measure",
+            "Because investors prefer pain-focused products"
+          ],
+          "correctIndex": 1,
+          "explanation": "Loss aversion means people are psychologically more motivated to avoid/eliminate pain than to pursue new gains — pain relief gets faster adoption."
+        },
+        {
+          "type": "mcq",
+          "question": "What does \"Product-Market Fit\" mean in the fit spectrum?",
+          "options": [
+            "Your product has no bugs and works perfectly",
+            "Evidence shows customers genuinely want your proposition — they pay, use, or recommend it",
+            "You have written a business plan that VCs approve",
+            "Your product is listed on a marketplace"
+          ],
+          "correctIndex": 1,
+          "explanation": "Product-Market Fit means real evidence (payments, usage, referrals) shows customers want what you're offering — not just that it sounds good on paper."
+        }
+      ]
+    },
+    {
+      "id": "dbm-4-customer-segments-channels",
+      "dayNumber": 4,
+      "moduleId": "dbm-module-1",
+      "title": "Customer Segments & Channels",
+      "subtitle": "Define exactly who you serve and how you'll reach them. The wrong channel for the right customer is as bad as no channel at all.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Right Customer, Wrong Channel Problem",
+          "body": "A customer segment is a group of people with similar needs, behaviours, or attributes. You can segment by: demographics (age, income), behaviour (usage patterns), needs (jobs to be done), or value (willingness to pay). The key question: do they have meaningfully different needs that require a distinct Value Proposition? If yes, they're separate segments."
+        },
+        {
+          "type": "content",
+          "headline": "Multi-Sided Markets",
+          "body": "Some business models serve two or more interdependent customer segments:",
+          "bullets": [
+            "YouTube serves viewers (free content) and advertisers (paid placement)",
+            "Uber serves riders and drivers",
+            "Each side has different jobs, pains, gains — and different value propositions",
+            "You need critical mass on both sides (the \"chicken and egg\" challenge)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Channel Phases",
+          "body": "Channels are how you communicate with and reach customers. Five phases:",
+          "bullets": [
+            "Awareness — how do they learn about you?",
+            "Evaluation — how do they assess your proposition?",
+            "Purchase — how do they buy?",
+            "Delivery — how do you deliver value?",
+            "After-sales — how do you provide support?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Channel-Segment Fit",
+          "body": "Your channel must match your segment's habits. Enterprise customers expect sales reps and demos. Gen Z expects social media and self-serve. Luxury buyers want high-touch experiences. Mapping the wrong channel to the right segment creates friction that kills conversion. Ask: \"Where does my customer already spend time?\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Channel Stack",
+          "body": "Most businesses need multiple channels working together: content marketing for awareness → free tool for evaluation → website for purchase → email for delivery → community for after-sales. Start with ONE channel that works, then layer others. Spreading across five channels before validating one is a common startup mistake."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What defines a separate customer segment?",
+          "options": [
+            "They live in different countries",
+            "They have meaningfully different needs requiring a distinct value proposition",
+            "They use different social media platforms",
+            "They have different hair colours"
+          ],
+          "correctIndex": 1,
+          "explanation": "A distinct segment exists when the group has different enough needs that you need a meaningfully different value proposition to serve them."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is the correct order of channel phases?",
+          "options": [
+            "Purchase → Awareness → Delivery → Evaluation → After-sales",
+            "Awareness → Evaluation → Purchase → Delivery → After-sales",
+            "Delivery → Purchase → Awareness → After-sales → Evaluation",
+            "Evaluation → Awareness → Purchase → After-sales → Delivery"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five channel phases follow the customer journey: Awareness → Evaluation → Purchase → Delivery → After-sales support."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the \"chicken and egg\" challenge in multi-sided markets?",
+          "options": [
+            "Deciding which product to build first",
+            "Needing critical mass on both sides for the model to work",
+            "Choosing between different pricing strategies",
+            "Finding the right co-founder"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multi-sided platforms like Uber need both riders and drivers — but neither side joins without the other already being there."
+        }
+      ]
+    },
+    {
+      "id": "dbm-5-revenue-cost-structure",
+      "dayNumber": 5,
+      "moduleId": "dbm-module-1",
+      "title": "Revenue & Cost Structure",
+      "subtitle": "How money flows in — and out. Design revenue streams that align with customer value and a cost structure that supports your margins.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Seven Ways to Make Money",
+          "body": "Seven common revenue models: (1) Asset sale — sell a physical/digital product. (2) Usage fee — pay per use (AWS, Uber). (3) Subscription — recurring access (Netflix, SaaS). (4) Licensing — pay for permission to use IP. (5) Brokerage — fee for connecting parties. (6) Advertising — pay for attention. (7) Freemium — free base, paid upgrades. Most businesses combine two or more.",
+          "stat": "7",
+          "statLabel": "revenue model types — most businesses combine 2 or more"
+        },
+        {
+          "type": "content",
+          "headline": "Pricing Mechanisms",
+          "body": "How you set prices matters as much as what you charge:",
+          "bullets": [
+            "Fixed pricing: list prices, volume-dependent, segment-dependent",
+            "Dynamic pricing: negotiation, yield management (airlines), auctions, real-time market",
+            "Value-based: charge for what matters to them, not what's expensive for you to build"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Cost Structure Drivers",
+          "body": "Two archetypes: Cost-Driven (minimise costs everywhere — low-cost airlines, fast fashion) vs Value-Driven (focus on premium value creation — luxury brands, bespoke services). Key cost categories: fixed costs (rent, salaries), variable costs (materials, commissions), and economies of scale/scope."
+        },
+        {
+          "type": "content",
+          "headline": "Unit Economics",
+          "body": "Before you scale, you need healthy unit economics:",
+          "bullets": [
+            "Customer Acquisition Cost (CAC) — what you spend to get one customer",
+            "Lifetime Value (LTV) — total revenue from that customer over time",
+            "LTV:CAC ratio should be at least 3:1 for sustainability",
+            "If you spend £100 acquiring a customer who generates £50, growing faster = losing money faster"
+          ],
+          "stat": "3:1",
+          "statLabel": "minimum healthy LTV:CAC ratio for sustainable growth"
+        },
+        {
+          "type": "try-it",
+          "headline": "Revenue-Cost Alignment Exercise",
+          "body": "Map your revenue streams to the value propositions they support. Then map your cost structure to the key activities and resources that deliver those propositions. Ask: \"Does every major cost directly enable a value proposition that generates revenue?\" If costs don't connect to value creation, they're waste."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the minimum healthy LTV:CAC ratio for a sustainable business?",
+          "options": [
+            "1:1",
+            "2:1",
+            "3:1",
+            "10:1"
+          ],
+          "correctIndex": 2,
+          "explanation": "A 3:1 ratio means you earn at least £3 for every £1 spent acquiring a customer — the widely accepted minimum for sustainable growth."
+        },
+        {
+          "type": "mcq",
+          "question": "Which pricing approach aligns best with customer value perception?",
+          "options": [
+            "Charge based on your development costs",
+            "Charge for what matters to customers, not what's expensive to build",
+            "Always use the lowest possible price",
+            "Copy competitor pricing exactly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Value-based pricing charges for what the customer perceives as valuable — which may be very different from what cost you the most to create."
+        },
+        {
+          "type": "mcq",
+          "question": "What characterises a \"cost-driven\" business model?",
+          "options": [
+            "It focuses on premium value creation regardless of cost",
+            "It minimises costs across all operations",
+            "It charges the highest prices in the market",
+            "It only uses fixed costs with no variable expenses"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cost-driven models (like Ryanair or Primark) focus on minimising costs wherever possible to compete on price."
+        }
+      ]
+    },
+    {
+      "id": "dbm-6-key-resources-activities-partners",
+      "dayNumber": 6,
+      "moduleId": "dbm-module-1",
+      "title": "Resources, Activities & Partners",
+      "subtitle": "The engine room of your model. Identify what you truly need to own, what you must do exceptionally well, and who can help.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Engine Room of Your Business",
+          "body": "Resources are the assets required to make your business model work. Four types: Physical (factories, stores, vehicles), Intellectual (patents, brand, proprietary data, algorithms), Human (expert teams, creative talent), Financial (cash, credit lines, investor capital). Not everything you own is a \"key\" resource — only those essential to your value proposition."
+        },
+        {
+          "type": "content",
+          "headline": "Key Activities",
+          "body": "These are the most important things you must DO to make the model work:",
+          "bullets": [
+            "Platform businesses: maintain and improve the platform",
+            "Product businesses: design, build, deliver",
+            "Service businesses: solve customer problems",
+            "Identify 3–5 activities that, if stopped, your value proposition collapses"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Key Partnerships",
+          "body": "Four partnership motivations:",
+          "bullets": [
+            "Optimisation & economy of scale — share costs",
+            "Risk reduction — spread uncertainty",
+            "Acquisition of resources/activities — get what you lack",
+            "Strategic alliances — align with complementary businesses"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Build vs Buy vs Partner",
+          "body": "For every resource and activity ask: Should I build it myself (full control, high cost, slow)? Buy it from a vendor (less control, medium cost, fast)? Partner with someone (shared value, shared risk)? Rule of thumb: build only what's core to your unfair advantage. Everything else — buy or partner."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Engine Room",
+          "body": "List your top 3 value propositions. For each, identify: What resources are essential to deliver it? What activities must you perform excellently? What partners do you need? If something doesn't connect to a value proposition, question whether it belongs. This reveals bloat (unnecessary resources) and gaps (missing capabilities)."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What makes a resource \"key\" rather than just useful?",
+          "options": [
+            "It's the most expensive item in your budget",
+            "It's essential to your value proposition and competitive advantage",
+            "It was the first thing you purchased",
+            "It has the longest contract term"
+          ],
+          "correctIndex": 1,
+          "explanation": "A resource is \"key\" only if it's essential to delivering your value proposition or maintaining your competitive advantage."
+        },
+        {
+          "type": "mcq",
+          "question": "The rule of thumb for \"build vs buy vs partner\" is:",
+          "options": [
+            "Build everything for maximum control",
+            "Build only what's core to your unfair advantage; buy or partner the rest",
+            "Always partner to reduce costs",
+            "Buy everything to move fastest"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focus your limited resources on building what makes you uniquely competitive. For everything else, buying or partnering is faster and cheaper."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is NOT a motivation for key partnerships?",
+          "options": [
+            "Optimisation and economy of scale",
+            "Reducing competition by acquiring them",
+            "Risk reduction",
+            "Acquisition of resources or activities you lack"
+          ],
+          "correctIndex": 1,
+          "explanation": "The four partnership motivations are: optimisation/scale, risk reduction, resource/activity acquisition, and strategic alliances — not acquiring competitors."
+        }
+      ]
+    },
+    {
+      "id": "dbm-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "dbm-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Bring it all together. Map your own business model using all nine blocks and identify the three weakest assumptions.",
+      "duration": "5 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Canvas So Far",
+          "body": "Over the last six days you've explored all nine building blocks. Now it's time to fill in your own canvas — even if it's rough. Start with your Customer Segments and Value Propositions (the heart of the model), then work outward to Channels, Relationships, Revenue Streams, Resources, Activities, Partners, and Costs."
+        },
+        {
+          "type": "content",
+          "headline": "The Coherence Check",
+          "body": "A good canvas isn't nine independent answers — it's a coherent story. Test: Can you trace a line from each Customer Segment through a Value Proposition, to Channels that reach them, Relationships that retain them, and Revenue that flows from them? On the left, do your Resources and Activities actually deliver that value? If a block is disconnected, something's wrong."
+        },
+        {
+          "type": "content",
+          "headline": "Spotting Your Weakest Assumptions",
+          "body": "Every block on your canvas is a hypothesis until proven. Rate each 1-5 (1 = pure guess, 5 = proven). Circle anything below 3 — these are your riskiest assumptions that could sink your model. We'll learn to test them in Module 2.",
+          "bullets": [
+            "Rate evidence strength for each block (1=guess, 5=proven)",
+            "Focus on blocks rated below 3",
+            "These are your highest-priority experiments"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common Canvas Mistakes",
+          "body": "Watch for these pitfalls:",
+          "bullets": [
+            "Too many customer segments (focus on one to start)",
+            "Feature-focused value prop (list benefits, not features)",
+            "\"The internet\" as a channel (be specific — SEO? YouTube? Cold email?)",
+            "No clear revenue model (\"we'll figure it out later\" = we won't)",
+            "Confusing strategic activities with operational tasks"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Week 1 Complete — What's Next",
+          "body": "You now have a full Business Model Canvas — your first hypothesis of how your business works. It's probably wrong in several places, and that's perfect. In Module 2, we'll introduce the Lean Canvas (a startup-optimised variant), and learn to systematically test and validate each block through rapid experimentation."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the \"coherence check\" for a Business Model Canvas?",
+          "options": [
+            "Checking that all boxes are filled in",
+            "Verifying you can trace a logical line connecting segments through value, channels, and revenue",
+            "Counting the total number of items across all blocks",
+            "Getting a mentor to approve your canvas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Coherence means the blocks connect logically — you can trace how value flows from creation to delivery to capture for each customer segment."
+        },
+        {
+          "type": "mcq",
+          "question": "How should you identify your riskiest assumptions?",
+          "options": [
+            "Ask friends which blocks they like least",
+            "Rate each block's evidence 1-5 and focus on anything below 3",
+            "Choose the blocks that took longest to fill in",
+            "Pick the blocks with the fewest words"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rating evidence strength (1=guess, 5=proven) systematically identifies which assumptions are most at risk of being wrong."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a common canvas mistake?",
+          "options": [
+            "Starting with just one customer segment",
+            "Listing benefits instead of features in the value proposition",
+            "Saying \"we'll figure out monetisation later\" with no revenue model",
+            "Testing assumptions before finalising the canvas"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"We'll figure out monetisation later\" is a common and dangerous mistake — revenue models should be hypothesised from day one, even if they evolve."
+        }
+      ]
+    },
+    {
+      "id": "dbm-8-lean-canvas-intro",
+      "dayNumber": 8,
+      "moduleId": "dbm-module-2",
+      "title": "The Lean Canvas",
+      "subtitle": "Ash Maurya adapted the BMC for startups. Meet the Lean Canvas — faster, riskier assumptions front-and-centre, action-oriented.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Canvas Built for Startups",
+          "body": "The Lean Canvas replaces four BMC blocks: Key Partners → Problem, Key Activities → Solution, Key Resources → Key Metrics, Customer Relationships → Unfair Advantage. Why? Startups don't yet have partners or resources — they have problems to solve and hypotheses to test. The Lean Canvas prioritises risk and learning speed over operational completeness."
+        },
+        {
+          "type": "content",
+          "headline": "The Nine Lean Canvas Blocks",
+          "body": "A different nine from the BMC:",
+          "bullets": [
+            "Problem — top 3 problems for your segment",
+            "Customer Segments — who has this problem?",
+            "Unique Value Proposition — single clear message",
+            "Solution — top 3 features that solve the problem",
+            "Channels — path to customers",
+            "Revenue Streams / Cost Structure — the money side",
+            "Key Metrics — numbers that actually matter",
+            "Unfair Advantage — what can't be easily copied"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Fill Order Matters",
+          "body": "Ash Maurya's recommended sequence prevents \"solution-first\" thinking:",
+          "bullets": [
+            "1. Problem & Customer Segments (understand the pain)",
+            "2. UVP (articulate the value)",
+            "3. Solution (only AFTER understanding the problem)",
+            "4. Channels and Revenue",
+            "5. Cost and Metrics",
+            "6. Unfair Advantage last (it often emerges over time)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "One Canvas Per Segment",
+          "body": "Critical rule: create one Lean Canvas per customer segment. Different segments have different problems, value propositions, and channels. Mixing them creates confusion and unfocused strategy. If you have two distinct customer types, you have two business models to test — even if they share the same product."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 20-Minute Canvas",
+          "body": "Set a timer. Pick your most promising customer segment. Fill all nine blocks in 20 minutes. Don't overthink — write your best guesses. This isn't a final document; it's a snapshot of your current hypotheses. The value is making assumptions explicit so you can test them. A messy canvas filled in 20 minutes beats a perfect one you never start."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What does the Lean Canvas replace \"Key Partners\" with?",
+          "options": [
+            "Problem",
+            "Solution",
+            "Key Metrics",
+            "Unfair Advantage"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Lean Canvas replaces Key Partners with Problem because early-stage startups need to validate problems first — partnerships come later."
+        },
+        {
+          "type": "mcq",
+          "question": "Why should you fill the Problem block before Solution?",
+          "options": [
+            "Alphabetical order is easier to remember",
+            "It prevents \"solution-first\" thinking and ensures you understand the pain",
+            "Solutions are always harder to write",
+            "Investors expect problems listed first"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with Problem ensures you deeply understand the customer pain before jumping to solutions — preventing the trap of building something nobody needs."
+        },
+        {
+          "type": "mcq",
+          "question": "Why create one Lean Canvas per customer segment?",
+          "options": [
+            "To use more paper",
+            "Different segments have different problems, value props, and channels",
+            "To impress investors with more canvases",
+            "Because the template only has room for one segment"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each segment has distinct pains and needs — mixing them creates unfocused strategy. Separate canvases keep each model clear and testable."
+        }
+      ]
+    },
+    {
+      "id": "dbm-9-problem-solution-fit",
+      "dayNumber": 9,
+      "moduleId": "dbm-module-2",
+      "title": "Problem-Solution Fit",
+      "subtitle": "Before building anything, verify that real people have the problem you think they have — and that your proposed solution addresses it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The First Milestone",
+          "body": "Problem-Solution Fit means you have evidence that: (1) A specific customer segment exists, (2) They have a problem worth solving, (3) Your proposed solution addresses that problem in a way they value. It's the first milestone in the Lean Startup journey — achieved BEFORE you build a product. Most founders skip this and jump straight to building."
+        },
+        {
+          "type": "content",
+          "headline": "The Problem Interview",
+          "body": "Ash Maurya's Problem Interview has three parts:",
+          "bullets": [
+            "\"Tell me about how you [context]...\"",
+            "\"What's the hardest part about [problem area]?\"",
+            "\"How do you deal with it today?\"",
+            "NEVER mention your solution — test whether the problem exists first",
+            "Five conversations can reveal powerful patterns"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Signals of a Real Problem",
+          "body": "Strong vs weak signals to watch for:",
+          "bullets": [
+            "STRONG: Already spending money/time to solve it",
+            "STRONG: Describe the pain with emotion",
+            "STRONG: Tried multiple workarounds",
+            "WEAK: \"Yeah, that's kind of annoying\"",
+            "WEAK: Can't describe current workarounds",
+            "Polite interest ≠ real demand"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Solution Interview",
+          "body": "Once you've validated the problem, demo your PROPOSED solution (a mockup, prototype, or verbal description). Ask: \"Does this solve your problem? What's missing? Would you pay for this?\" Watch for body language and genuine enthusiasm. The goal: confirm your solution concept fits their problem before investing in development."
+        },
+        {
+          "type": "try-it",
+          "headline": "Problem-Solution Fit Checklist",
+          "body": "Check these five boxes before proceeding:",
+          "bullets": [
+            "✓ I can describe the problem in the customer's own words",
+            "✓ At least 5 of 10 interviews confirmed the problem is real",
+            "✓ I understand current alternatives and why they fail",
+            "✓ My solution addresses the specific pain they described",
+            "✓ At least 3 of 5 showed genuine enthusiasm for the concept"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "During a Problem Interview, when should you mention your solution?",
+          "options": [
+            "At the beginning to set context",
+            "In the middle to test reactions",
+            "Never — the Problem Interview only validates the problem exists",
+            "Only if they ask about it"
+          ],
+          "correctIndex": 2,
+          "explanation": "Problem Interviews test whether the problem exists and matters — introducing your solution biases responses. Solutions come in the separate Solution Interview."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a STRONG signal of a real problem?",
+          "options": [
+            "\"Yeah, that's kind of annoying\"",
+            "\"Sounds interesting, maybe\"",
+            "They're already spending money/time trying to solve it",
+            "\"I never really thought about it\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Active spending of time/money on workarounds is strong evidence the problem is real and painful enough that people will pay for a better solution."
+        },
+        {
+          "type": "mcq",
+          "question": "Problem-Solution Fit should be achieved:",
+          "options": [
+            "After launching and getting 1000 users",
+            "Before building a product — through interviews and concept testing",
+            "Only after raising investment",
+            "Once revenue exceeds costs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Problem-Solution Fit is the FIRST milestone — validated through interviews before investing in building anything."
+        }
+      ]
+    },
+    {
+      "id": "dbm-10-unfair-advantage",
+      "dayNumber": 10,
+      "moduleId": "dbm-module-2",
+      "title": "Unfair Advantage",
+      "subtitle": "The hardest box on the Lean Canvas. What do you have that can't be easily copied or bought? Most founders leave it blank — here's how to fill it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What Can't Be Copied?",
+          "body": "An unfair advantage is something that cannot be easily copied or bought by competitors. Jason Cohen's list: insider information, personal authority/brand, dream team, existing community, proprietary technology (10x better, not just different), network effects, organic SEO/content moat, and existing customer base. \"Working harder\" is NOT an unfair advantage."
+        },
+        {
+          "type": "content",
+          "headline": "Why Most Startups Don't Have One (Yet)",
+          "body": "It's okay to leave this box blank initially. Most unfair advantages are BUILT over time, not inherited. Your first-mover advantage disappears when someone with more resources copies you. But: every customer you serve, every data point you collect, every community member you nurture is building your moat. Be intentional about which advantage you're building toward."
+        },
+        {
+          "type": "content",
+          "headline": "Network Effects — The Strongest Moat",
+          "body": "Each new user makes the product more valuable for all users:",
+          "bullets": [
+            "LinkedIn: more professionals → more useful for recruiting",
+            "Airbnb: more listings → more travellers → more listings",
+            "WhatsApp: everyone you know is there → massive switching costs",
+            "Once kicked in, competitors face a cold-start problem"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Data Moats",
+          "body": "Every interaction generates data. If you use that data to improve your product (better recommendations, faster results, more personalisation), you create a flywheel: more users → more data → better product → more users. Google Search, Spotify's Discover Weekly, Netflix recommendations — all data moats competitors can't replicate without the same user base."
+        },
+        {
+          "type": "try-it",
+          "headline": "Building Your Moat Intentionally",
+          "body": "Ask: \"In 18 months, what will I have that a well-funded competitor starting today won't?\" Possible answers: deep customer relationships, proprietary dataset, strong brand in niche, loyal community, regulatory approval, exclusive partnerships. Pick one and invest disproportionately. A moat you're actively building beats no moat at all."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Which of these is NOT a valid unfair advantage?",
+          "options": [
+            "Network effects",
+            "Working harder than competitors",
+            "Proprietary data moat",
+            "Existing loyal community"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Working harder\" can be matched by anyone — it's not defensible. True unfair advantages are structural and can't be easily copied or bought."
+        },
+        {
+          "type": "mcq",
+          "question": "What makes network effects the most powerful unfair advantage?",
+          "options": [
+            "They're the cheapest to build",
+            "Each new user makes the product more valuable for all users, creating massive switching costs",
+            "They require no technology",
+            "They work without any users"
+          ],
+          "correctIndex": 1,
+          "explanation": "Network effects create a self-reinforcing loop — more users = more value — making it incredibly hard for competitors to lure users away."
+        },
+        {
+          "type": "mcq",
+          "question": "It's okay to leave the Unfair Advantage box blank because:",
+          "options": [
+            "It's not an important part of the canvas",
+            "Investors don't care about moats",
+            "Most unfair advantages are built over time — but be intentional about which one",
+            "No business actually has an unfair advantage"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moats are built through sustained effort — but leaving it blank forever is dangerous. Be intentional about which advantage you're accumulating."
+        }
+      ]
+    },
+    {
+      "id": "dbm-11-metrics-that-matter",
+      "dayNumber": 11,
+      "moduleId": "dbm-module-2",
+      "title": "Metrics That Matter",
+      "subtitle": "Not all numbers are created equal. Learn to distinguish vanity metrics from actionable ones and pick the ONE metric that matters most right now.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Vanity Metric Trap",
+          "body": "Vanity metrics make you feel good but don't inform decisions: total sign-ups, page views, social followers. Actionable metrics change your behaviour: activation rate, retention at day 7, revenue per user, referral rate. The test: \"If this number changed, would we do something differently?\" If not, it's vanity."
+        },
+        {
+          "type": "content",
+          "headline": "The One Metric That Matters (OMTM)",
+          "body": "At any stage, one metric matters more than all others:",
+          "bullets": [
+            "Pre-launch: number of problem interviews completed",
+            "Early traction: activation rate (% who experience core value)",
+            "Growing: retention (do they come back?)",
+            "Scaling: referral rate or LTV:CAC",
+            "Optimising everything at once optimises nothing — pick ONE"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pirate Metrics: AARRR",
+          "body": "Dave McClure's startup metrics framework:",
+          "bullets": [
+            "Acquisition — how do users find you?",
+            "Activation — do they have a good first experience?",
+            "Retention — do they come back?",
+            "Revenue — do they pay?",
+            "Referral — do they tell others?"
+          ],
+          "stat": "5",
+          "statLabel": "funnel stages — your OMTM is the one with the biggest drop-off"
+        },
+        {
+          "type": "content",
+          "headline": "Leading vs Lagging Indicators",
+          "body": "Lagging indicators tell you what happened (revenue this month, churn rate). Leading indicators predict what will happen (trial-to-paid conversion today predicts next month's revenue). Focus on leading indicators because you can still influence them. If your leading indicators are healthy, lagging indicators will follow."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Your Key Metrics",
+          "body": "For your Lean Canvas \"Key Metrics\" box, list 3–5 metrics that tell you if your model is working. Be specific: not \"growth\" but \"weekly active users increasing 5% week-over-week.\" Not \"engagement\" but \"average 3 sessions per week per user.\" Measurable, time-bound, and tied to a threshold."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What makes a metric \"vanity\"?",
+          "options": [
+            "It's a small number",
+            "It makes you feel good but doesn't inform decisions",
+            "It's related to social media",
+            "It decreases over time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vanity metrics look good on a dashboard but don't change your behaviour or decisions. If the number changed, would you actually do something different?"
+        },
+        {
+          "type": "mcq",
+          "question": "What does AARRR stand for in Pirate Metrics?",
+          "options": [
+            "Awareness, Action, Retention, Revenue, Referral",
+            "Acquisition, Activation, Retention, Revenue, Referral",
+            "Acquisition, Activation, Reach, Revenue, Repeat",
+            "Advertising, Activation, Retention, Revenue, Reach"
+          ],
+          "correctIndex": 1,
+          "explanation": "AARRR = Acquisition, Activation, Retention, Revenue, Referral — Dave McClure's framework for tracking startup growth."
+        },
+        {
+          "type": "mcq",
+          "question": "Why focus on leading indicators over lagging ones?",
+          "options": [
+            "Leading indicators are always bigger numbers",
+            "You can still influence them — they predict future outcomes you can change",
+            "Lagging indicators are always negative",
+            "Leading indicators are easier to measure"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leading indicators show what's happening NOW and predict the future — giving you time to course-correct before lagging results lock in."
+        }
+      ]
+    },
+    {
+      "id": "dbm-12-experiment-design",
+      "dayNumber": 12,
+      "moduleId": "dbm-module-2",
+      "title": "Experiment Design",
+      "subtitle": "Turn assumptions into testable hypotheses and design cheap, fast experiments that produce actionable evidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Guess to Hypothesis",
+          "body": "Every experiment starts with a clear hypothesis: \"We believe [specific assumption]. We will test this by [experiment]. We'll know we're right if [measurable outcome] within [timeframe].\" Example: \"We believe busy parents will pay £8/week for meal kit delivery. We'll test with a landing page and pre-order button. Success = 50+ pre-orders in 2 weeks.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Experiment Stack",
+          "body": "From cheapest to most expensive — always start at the top:",
+          "bullets": [
+            "1. Desk research — Google, forums, existing data (free)",
+            "2. Interviews — talk to 5-10 potential customers (time only)",
+            "3. Landing page test — measure sign-up intent (£50-100)",
+            "4. Concierge MVP — deliver the value manually to a few",
+            "5. Wizard of Oz — automated front-end, manual back-end",
+            "6. Single-feature MVP — one thing, built properly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Success Criteria (Before You Start)",
+          "body": "Define what \"pass\" and \"fail\" look like BEFORE running the experiment. Otherwise you'll rationalise any result as positive. Be specific: \"5% conversion rate on landing page = proceed. Below 2% = pivot. Between 2-5% = iterate messaging.\" Write it down. Share it. Hold yourself accountable."
+        },
+        {
+          "type": "content",
+          "headline": "Time-Boxing Experiments",
+          "body": "Every experiment needs a deadline:",
+          "bullets": [
+            "Interviews: 1 week for 10 conversations",
+            "Landing page: 2 weeks of traffic",
+            "Concierge: 2-4 weeks with 5-10 customers",
+            "If you haven't hit criteria by the deadline, the experiment has given its answer"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Document Everything",
+          "body": "For each experiment record: (1) What we believed. (2) What we did. (3) What we observed. (4) What we learned. (5) What we'll do next. This experiment log prevents re-testing disproved hypotheses and shows your rigour. Learning velocity is your startup's most important meta-metric."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why must you define success criteria BEFORE running an experiment?",
+          "options": [
+            "To impress investors with preparation",
+            "To prevent rationalising any result as positive after the fact",
+            "Because experiments without criteria run faster",
+            "To reduce the cost of the experiment"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pre-set criteria prevent confirmation bias — without them, you'll unconsciously interpret ambiguous results as validating your idea."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the correct order from cheapest to most expensive experiment?",
+          "options": [
+            "MVP → Landing page → Interviews → Desk research",
+            "Desk research → Interviews → Landing page → Concierge → MVP",
+            "Interviews → Desk research → MVP → Landing page",
+            "Landing page → Interviews → Concierge → Desk research"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always start cheap: desk research costs nothing, interviews need only time, landing pages are minimal, before investing in concierge or MVP builds."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do if an experiment hasn't hit criteria by its deadline?",
+          "options": [
+            "Extend the deadline until you get the results you want",
+            "Accept the experiment has given its answer — the hypothesis likely failed",
+            "Ignore the deadline — deadlines don't apply to startups",
+            "Run the same experiment with different people"
+          ],
+          "correctIndex": 1,
+          "explanation": "The deadline IS the answer. If you haven't hit threshold by then, the evidence doesn't support your hypothesis."
+        }
+      ]
+    },
+    {
+      "id": "dbm-13-pivot-or-persevere",
+      "dayNumber": 13,
+      "moduleId": "dbm-module-2",
+      "title": "Pivot or Persevere",
+      "subtitle": "The hardest decision in entrepreneurship. Learn the structured framework for knowing when to change direction — and when to double down.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Instagram Started as a Check-In App",
+          "body": "Eric Ries defines a pivot as \"a structured course correction designed to test a new fundamental hypothesis.\" It's not failure — it's learning. Instagram pivoted from Burbn (a check-in app) to photo-sharing. Slack pivoted from a game to team communication. YouTube started as a video dating site. A pivot keeps one foot planted (what you've learned) while changing direction."
+        },
+        {
+          "type": "content",
+          "headline": "Types of Pivots",
+          "body": "Ten pivot types to consider:",
+          "bullets": [
+            "Zoom-in — one feature becomes the whole product (Instagram)",
+            "Zoom-out — product becomes one feature of a bigger product",
+            "Customer segment — same product, different customers",
+            "Customer need — same customer, different problem",
+            "Channel — different distribution path",
+            "Revenue model — different monetisation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pivot Decision Framework",
+          "body": "Ask these four questions:",
+          "bullets": [
+            "1. Are we making measurable progress toward our success criteria?",
+            "2. Is our engine of growth improving week over week?",
+            "3. Have we exhausted our current hypothesis space?",
+            "4. Do we have a better hypothesis to test?",
+            "If answers are No, No, Yes, Yes — it's time to pivot"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Pivot Meeting\"",
+          "body": "Schedule regular pivot-or-persevere meetings (monthly or after each experiment cycle). Present: Current metrics vs success criteria. What you've learned. What you'd change. This prevents both \"zombie startups\" (persevering without progress) and \"shiny object syndrome\" (pivoting too often). Make the decision deliberately, not emotionally."
+        },
+        {
+          "type": "try-it",
+          "headline": "Avoid These Perseverance Traps",
+          "body": "Three traps that prevent necessary pivots:",
+          "bullets": [
+            "Sunk cost fallacy — \"We've invested too much to change\"",
+            "Vanity metrics — \"But our downloads are growing!\"",
+            "Optimism bias — \"Just one more feature/month/hire\"",
+            "Counter: \"If starting fresh today, would we choose this path?\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What distinguishes a pivot from simply giving up?",
+          "options": [
+            "Pivots happen faster",
+            "A pivot keeps one foot planted in learning while changing direction to test a new hypothesis",
+            "Giving up involves changing the product name",
+            "There is no difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "A pivot builds on what you've learned — keeping validated insights while changing the unvalidated elements. It's structured learning, not abandonment."
+        },
+        {
+          "type": "mcq",
+          "question": "Instagram's move from Burbn to photo-sharing is an example of:",
+          "options": [
+            "Customer segment pivot",
+            "Zoom-in pivot — one feature became the whole product",
+            "Revenue model pivot",
+            "Technology pivot"
+          ],
+          "correctIndex": 1,
+          "explanation": "Instagram \"zoomed in\" on Burbn's most popular feature — photo sharing — and made it the entire product."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a \"perseverance trap\" that prevents necessary pivots?",
+          "options": [
+            "Regular pivot-or-persevere meetings",
+            "Tracking actionable metrics",
+            "Sunk cost fallacy — \"We've invested too much to change\"",
+            "Setting hard experiment deadlines"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sunk cost fallacy makes you persist with a failing strategy because of past investment — money already spent shouldn't influence future decisions."
+        }
+      ]
+    },
+    {
+      "id": "dbm-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "dbm-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Complete your Lean Canvas, design your first experiment, and set clear pivot-or-persevere criteria.",
+      "duration": "5 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Canvas to Experiment",
+          "body": "By now you should have a completed Lean Canvas with all nine blocks filled. Review it with fresh eyes: Is the Problem block based on real customer conversations (not assumptions)? Does the UVP clearly state why you're different? Is the Solution the simplest possible version that addresses the problem? Are your Metrics specific and measurable?"
+        },
+        {
+          "type": "content",
+          "headline": "Your Riskiest Assumption",
+          "body": "Look at your canvas. Which single assumption, if wrong, would kill the entire model? Common killers:",
+          "bullets": [
+            "\"Customers have this problem\" (they might not)",
+            "\"They'll pay this much\" (they might pay less or nothing)",
+            "\"We can reach them through this channel\" (it might not work)",
+            "Circle it — this is experiment #1"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Design Experiment #1",
+          "body": "Take your riskiest assumption and apply the framework: Hypothesis (\"We believe...\"), Test (choose from experiment stack — start cheap), Success criteria (specific numbers), Deadline (1-2 weeks). Write it down right now. If you leave this lesson without a concrete experiment plan, you'll likely never test your assumption."
+        },
+        {
+          "type": "content",
+          "headline": "Set Pivot Criteria Now",
+          "body": "Before you run the experiment, write down: \"If [success criteria] is NOT met by [deadline], we will [specific action].\" Options: pivot the customer segment, pivot the solution, pivot the channel, or abandon. Setting criteria while rational prevents emotional decision-making when results arrive."
+        },
+        {
+          "type": "try-it",
+          "headline": "Module 2 Complete — Your Toolkit",
+          "body": "You now have:",
+          "bullets": [
+            "✓ A completed Lean Canvas (snapshot of current hypotheses)",
+            "✓ Understanding of Problem-Solution Fit and how to achieve it",
+            "✓ Clarity on the unfair advantage you're building",
+            "✓ Key metrics that actually matter (not vanity)",
+            "✓ An experiment designed and ready to run",
+            "✓ Pivot criteria set in advance"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should your first experiment always test?",
+          "options": [
+            "The easiest assumption to prove",
+            "The assumption that would kill your entire model if wrong",
+            "The most impressive-sounding hypothesis",
+            "Whatever your co-founder wants to test"
+          ],
+          "correctIndex": 1,
+          "explanation": "Test the riskiest assumption first — if it's wrong, everything else doesn't matter. Most efficient use of limited time and resources."
+        },
+        {
+          "type": "mcq",
+          "question": "Why set pivot criteria BEFORE running an experiment?",
+          "options": [
+            "Because you might forget to write them later",
+            "To impress your team with preparation",
+            "To prevent emotional decision-making when results arrive",
+            "Because investors require documented criteria"
+          ],
+          "correctIndex": 2,
+          "explanation": "Setting criteria while rational prevents you from moving goalposts or rationalising poor results when emotions are high."
+        },
+        {
+          "type": "mcq",
+          "question": "Which indicates your Lean Canvas Problem block needs rework?",
+          "options": [
+            "It has more than three items listed",
+            "It was written based on assumptions without customer conversations",
+            "The handwriting is messy",
+            "It doesn't mention competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Problems based on assumptions (not evidence) are the #1 reason startups build things nobody wants. Interview first, then fill the canvas."
+        }
+      ]
+    },
+    {
+      "id": "dbm-15-build-measure-learn",
+      "dayNumber": 15,
+      "moduleId": "dbm-module-3",
+      "title": "The Build-Measure-Learn Loop",
+      "subtitle": "The engine of the Lean Startup. Learn to cycle through ideas faster than your competition — turning uncertainty into knowledge.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Engine of Innovation",
+          "body": "Eric Ries's Build-Measure-Learn loop is the core engine of the Lean Startup. You build the smallest possible thing to test a hypothesis, measure the results against your success criteria, and learn whether to pivot or persevere. Then repeat. The goal isn't to build a perfect product — it's to learn as fast as possible what customers actually want."
+        },
+        {
+          "type": "content",
+          "headline": "Plan in Reverse: Learn → Measure → Build",
+          "body": "While you execute Build → Measure → Learn, you should PLAN in reverse:",
+          "bullets": [
+            "1. What do we need to LEARN? (The assumption to validate)",
+            "2. How will we MEASURE it? (The metric and threshold)",
+            "3. What's the minimum we need to BUILD? (The smallest experiment)",
+            "This prevents over-building — you only build what's needed to learn"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Speed Is Everything",
+          "body": "Your competitive advantage as a startup isn't resources — it's learning speed. Every loop teaches you something. The faster you cycle, the more you learn. If you can run one BML loop per week while a competitor does one per month, you'll have 4x the validated learning in the same time. Minimise the time through each loop.",
+          "stat": "4x",
+          "statLabel": "learning advantage from weekly cycles vs monthly ones"
+        },
+        {
+          "type": "content",
+          "headline": "Common BML Mistakes",
+          "body": "Traps to avoid in the loop:",
+          "bullets": [
+            "Building too much before measuring (weeks of dev without customer contact)",
+            "Measuring the wrong thing (vanity metrics that don't inform decisions)",
+            "Not learning explicitly (collecting data but never sitting down to interpret it)",
+            "Skipping the \"decide\" step (measuring but never making pivot/persevere decisions)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Loop",
+          "body": "Take your experiment from Lesson 12. Frame it as a BML loop: What are you building? (The experiment — keep it minimal.) What are you measuring? (Your success metric + threshold.) What will you learn? (Whether your riskiest assumption holds.) Set a 1-week deadline for one complete loop. Go."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How should you PLAN a Build-Measure-Learn loop?",
+          "options": [
+            "Start with what's easiest to build",
+            "In reverse: decide what to Learn, then how to Measure, then what to Build",
+            "Start with the most impressive feature",
+            "Copy what competitors are building"
+          ],
+          "correctIndex": 1,
+          "explanation": "Planning in reverse (Learn → Measure → Build) ensures you only build the minimum needed to get the learning you seek."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the startup's primary competitive advantage according to Lean Startup?",
+          "options": [
+            "More funding than competitors",
+            "Better technology",
+            "Learning speed — cycling through BML loops faster",
+            "A larger team"
+          ],
+          "correctIndex": 2,
+          "explanation": "Startups can't compete on resources — they compete on speed of learning. Faster BML loops = more validated knowledge per unit of time."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a common Build-Measure-Learn mistake?",
+          "options": [
+            "Running loops too quickly",
+            "Building too much before measuring — weeks of dev without customer contact",
+            "Talking to customers too often",
+            "Setting success criteria in advance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Over-building before measuring wastes time and resources — you might spend weeks building something customers don't want."
+        }
+      ]
+    },
+    {
+      "id": "dbm-16-minimum-viable-product",
+      "dayNumber": 16,
+      "moduleId": "dbm-module-3",
+      "title": "Minimum Viable Product",
+      "subtitle": "The MVP is the smallest thing you can build to start the learning loop. But \"minimum\" doesn't mean ugly — it means focused.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Minimum ≠ Terrible",
+          "body": "An MVP is \"that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort\" (Ries). It's NOT a half-baked, buggy mess. It's the smallest thing that delivers real value to real users AND teaches you whether your model works. Quality matters — but scope doesn't."
+        },
+        {
+          "type": "content",
+          "headline": "MVP Types",
+          "body": "Different MVPs test different assumptions:",
+          "bullets": [
+            "Landing page MVP — tests demand (\"Will people sign up?\")",
+            "Concierge MVP — deliver value manually to 5-10 customers",
+            "Wizard of Oz — looks automated, but you're behind the curtain",
+            "Single-feature MVP — one thing done excellently",
+            "Crowdfunding MVP — tests willingness to pay before building"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Your MVP Must Have",
+          "body": "Every MVP needs these three elements: (1) A clear value proposition — users must understand what they get. (2) A core experience — they must actually experience the primary value. (3) A feedback mechanism — you must learn something from their behaviour. If your MVP doesn't teach you something, it's just a prototype."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Will They Use It?\" vs \"Can We Build It?\" Trap",
+          "body": "Most founders focus their MVP on proving they can build the solution (feasibility). But the biggest risk is usually that customers won't use it (desirability). Test desirability first. If nobody wants it, it doesn't matter if you can build it brilliantly. Feasibility MVPs come after you've proven demand.",
+          "stat": "90%",
+          "statLabel": "of startup failures are due to lack of demand, not lack of technology"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your MVP",
+          "body": "What's your riskiest assumption? Choose the MVP type that tests it with least effort. Define: what's included (1-3 features max), what's excluded (everything else), who are your first 10 users, and what metric proves success. If you can't describe your MVP in one sentence, it's too complex."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the purpose of an MVP?",
+          "options": [
+            "To launch a finished product as quickly as possible",
+            "To collect maximum validated learning with least effort",
+            "To build the cheapest possible version of your full vision",
+            "To satisfy investor requirements for a demo"
+          ],
+          "correctIndex": 1,
+          "explanation": "An MVP's purpose is learning — collecting the most validated knowledge about customers with the minimum investment of time and resources."
+        },
+        {
+          "type": "mcq",
+          "question": "What's the biggest risk most MVPs should test FIRST?",
+          "options": [
+            "Feasibility — can we build it?",
+            "Scalability — can it handle millions of users?",
+            "Desirability — will customers actually want and use it?",
+            "Profitability — will it make money on day one?"
+          ],
+          "correctIndex": 2,
+          "explanation": "90% of startups fail due to lack of demand. Test desirability (will they use it?) before feasibility (can we build it?)."
+        },
+        {
+          "type": "mcq",
+          "question": "What three elements must every MVP have?",
+          "options": [
+            "Logo, website, and social media",
+            "Clear value proposition, core experience, and feedback mechanism",
+            "Investor deck, roadmap, and team page",
+            "Three features, a database, and user authentication"
+          ],
+          "correctIndex": 1,
+          "explanation": "Users must understand the value (proposition), experience it (core), and their behaviour must teach you something (feedback)."
+        }
+      ]
+    },
+    {
+      "id": "dbm-17-innovation-accounting",
+      "dayNumber": 17,
+      "moduleId": "dbm-module-3",
+      "title": "Innovation Accounting",
+      "subtitle": "Traditional accounting can't measure progress for startups. Learn the alternative framework that tracks validated learning.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When Revenue = Zero, How Do You Measure Progress?",
+          "body": "Traditional metrics (revenue, profit) are meaningless for early startups — they're all zero or near-zero. Innovation accounting measures progress differently: Are you learning? Are your key metrics improving? Are you reducing risk? It's a framework for demonstrating that your experiments are generating real progress toward a sustainable business."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Steps of Innovation Accounting",
+          "body": "Eric Ries's framework:",
+          "bullets": [
+            "1. Establish the baseline — measure where you are now (current conversion, retention, etc.)",
+            "2. Tune the engine — run experiments to move those metrics toward your ideal",
+            "3. Pivot or persevere — if metrics aren't improving despite effort, pivot",
+            "Each step produces concrete evidence of progress or failure"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Cohort Analysis",
+          "body": "Instead of looking at cumulative totals (vanity), look at cohorts — groups of users who started in the same time period. Compare: Week 1 users vs Week 4 users. Are newer cohorts performing better? Higher activation? Better retention? If yes, your experiments are working. If not, you're optimising the wrong things."
+        },
+        {
+          "type": "content",
+          "headline": "The Engine of Growth",
+          "body": "Three engines that drive sustainable growth:",
+          "bullets": [
+            "Sticky — high retention, low churn (subscription products)",
+            "Viral — users bring other users (referral loops, social products)",
+            "Paid — profitable customer acquisition (LTV > CAC)",
+            "Pick ONE engine to optimise first — don't split focus across all three"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Innovation Dashboard",
+          "body": "Create a simple dashboard with: (1) Your OMTM and its current value. (2) The target value you need to hit. (3) Which engine of growth you're optimising. (4) This week's experiment and its result. (5) Trend line — is the metric improving week over week? Update weekly. This is your progress evidence."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why can't traditional accounting measure startup progress?",
+          "options": [
+            "Startups don't have bank accounts",
+            "Traditional metrics (revenue, profit) are all zero/near-zero for early startups",
+            "Accountants don't understand technology",
+            "Traditional accounting is too expensive"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early startups have no revenue to measure — innovation accounting tracks validated learning and metric improvements instead."
+        },
+        {
+          "type": "mcq",
+          "question": "What is cohort analysis?",
+          "options": [
+            "Comparing total user numbers month over month",
+            "Comparing groups of users from the same time period to see if newer cohorts perform better",
+            "Analysing your team's performance reviews",
+            "Measuring how many investors you've spoken to"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cohort analysis compares user groups from different time periods — if newer cohorts have better metrics, your optimisations are working."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is NOT one of the three engines of growth?",
+          "options": [
+            "Sticky (high retention)",
+            "Viral (users bring users)",
+            "Organic (SEO traffic)",
+            "Paid (LTV > CAC)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ries's three engines are Sticky, Viral, and Paid. SEO may feed the paid or viral engine, but isn't a standalone engine in this framework."
+        }
+      ]
+    },
+    {
+      "id": "dbm-18-product-market-fit-signals",
+      "dayNumber": 18,
+      "moduleId": "dbm-module-3",
+      "title": "Product-Market Fit Signals",
+      "subtitle": "How do you know when you've found it? Learn the quantitative and qualitative signals that tell you your model is working.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You'll Feel It (If You Know What to Look For)",
+          "body": "Marc Andreessen: \"You can always feel when product-market fit isn't happening... customers aren't getting value, word of mouth isn't spreading. And you can always feel when product-market fit IS happening... customers are buying as fast as you can supply.\" But feelings aren't reliable — here are the measurable signals."
+        },
+        {
+          "type": "content",
+          "headline": "The Sean Ellis Test",
+          "body": "Ask your users: \"How would you feel if you could no longer use [product]?\" If 40%+ say \"Very disappointed,\" you likely have PMF. Below 25% means you have significant work to do. Between 25-40% is promising but not there yet. This single question cuts through noise because it measures genuine dependency, not politeness.",
+          "stat": "40%",
+          "statLabel": "\"Very disappointed\" threshold — the PMF benchmark"
+        },
+        {
+          "type": "content",
+          "headline": "Quantitative PMF Signals",
+          "body": "Numbers that indicate product-market fit:",
+          "bullets": [
+            "Retention curve flattens (users stop leaving after initial drop)",
+            "Organic/word-of-mouth growth > 50% of new users",
+            "NPS > 50 (more promoters than detractors)",
+            "Users engage more over time, not less",
+            "LTV:CAC ratio exceeds 3:1"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Qualitative PMF Signals",
+          "body": "Behaviours and patterns that indicate fit:",
+          "bullets": [
+            "Users complain when the product is down (they depend on it)",
+            "They tell others without being asked (organic referrals)",
+            "They use it in ways you didn't expect (hacking it for their needs)",
+            "They ask for more features in adjacent areas (want to go deeper)",
+            "Sales cycles shorten dramatically (less convincing needed)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Measure Your Current PMF Score",
+          "body": "If you have users, run the Sean Ellis test this week. Send a simple survey: \"How would you feel if you could no longer use [product]?\" with options: Very disappointed / Somewhat disappointed / Not disappointed / N/A. You need at least 40 responses for statistical significance. If you don't have users yet, define which signal you'll track first."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What percentage saying \"Very disappointed\" indicates product-market fit?",
+          "options": [
+            "10%",
+            "25%",
+            "40%+",
+            "75%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sean Ellis established 40%+ \"Very disappointed\" responses as the benchmark for product-market fit."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a quantitative signal of product-market fit?",
+          "options": [
+            "Users say nice things in interviews",
+            "Retention curve flattens — users stop leaving after the initial drop",
+            "You have a beautiful website design",
+            "Investors are interested in your pitch"
+          ],
+          "correctIndex": 1,
+          "explanation": "A flattening retention curve means users who stay past the initial period continue to stay — they've found lasting value."
+        },
+        {
+          "type": "mcq",
+          "question": "Which qualitative signal suggests you might have PMF?",
+          "options": [
+            "Users politely fill out your surveys",
+            "Users complain when the product is down — they depend on it",
+            "Users visit your website once",
+            "Users follow you on social media"
+          ],
+          "correctIndex": 1,
+          "explanation": "When users complain about downtime, they depend on your product — it's become essential to their workflow. That's a strong PMF signal."
+        }
+      ]
+    },
+    {
+      "id": "dbm-19-business-model-patterns",
+      "dayNumber": 19,
+      "moduleId": "dbm-module-3",
+      "title": "Business Model Patterns",
+      "subtitle": "Don't reinvent the wheel. Study proven patterns used by the world's most successful companies and adapt them to your context.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Patterns, Not Inventions",
+          "body": "Most successful business models aren't invented from scratch — they're adaptations of proven patterns applied in new contexts. Osterwalder identified recurring patterns across industries. Understanding these patterns gives you a \"menu\" of tested approaches. Your innovation is in which pattern you choose and how you apply it to your specific market."
+        },
+        {
+          "type": "content",
+          "headline": "The Freemium Pattern",
+          "body": "Give the core product away free to a large user base. Convert a small percentage (2-5%) to premium. Examples: Spotify, LinkedIn, Dropbox. Key metrics: free-to-paid conversion rate, viral spread of free tier, feature differentiation between tiers. Works when: marginal cost per free user is near-zero, and value increases enough at premium to justify paying.",
+          "stat": "2-5%",
+          "statLabel": "typical free-to-paid conversion rate in freemium models"
+        },
+        {
+          "type": "content",
+          "headline": "The Platform Pattern",
+          "body": "Connect two or more groups who need each other:",
+          "bullets": [
+            "Marketplace: Airbnb (hosts ↔ guests), Uber (drivers ↔ riders)",
+            "Revenue: transaction fees, listing fees, or ads",
+            "Challenge: chicken-and-egg — who joins first?",
+            "Moat: network effects make switching costly",
+            "Strategy: subsidise one side to attract the other"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Razor-and-Blade Pattern",
+          "body": "Sell the \"razor\" cheaply (or free), make money on recurring \"blades.\" Examples: Printers (cheap) + ink (expensive). Game consoles (subsidised) + games (high margin). Nespresso machines (affordable) + pods (premium). Works when lock-in is strong and switching costs are high. Risk: competitors can offer compatible \"blades\" at lower prices."
+        },
+        {
+          "type": "try-it",
+          "headline": "Pattern-Match Your Model",
+          "body": "Look at your current business model canvas. Which pattern does it most closely resemble? Could a different pattern serve your customers better? Try sketching your model using two different patterns and compare. Sometimes switching from \"sell a product\" to \"platform connecting buyers and sellers\" or \"subscription\" transforms the entire economics."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What free-to-paid conversion rate is typical for freemium models?",
+          "options": [
+            "0.1-0.5%",
+            "2-5%",
+            "20-30%",
+            "50%+"
+          ],
+          "correctIndex": 1,
+          "explanation": "2-5% conversion from free to paid is typical — which means you need a massive free base to build a significant revenue stream."
+        },
+        {
+          "type": "mcq",
+          "question": "What creates the \"moat\" in platform business models?",
+          "options": [
+            "Patent protection",
+            "Network effects — more users makes switching costly",
+            "Government regulation",
+            "Lower prices than competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Platforms become harder to compete with as they grow — network effects mean more users = more value, creating massive switching costs."
+        },
+        {
+          "type": "mcq",
+          "question": "In the razor-and-blade pattern, where is the profit made?",
+          "options": [
+            "On the initial \"razor\" sale",
+            "On recurring \"blade\" purchases (consumables)",
+            "On advertising alongside the product",
+            "On reselling the razor after use"
+          ],
+          "correctIndex": 1,
+          "explanation": "The razor (printer, console, machine) is sold cheaply to create lock-in; profit comes from recurring blade (ink, games, pods) purchases."
+        }
+      ]
+    },
+    {
+      "id": "dbm-20-scaling-validated-model",
+      "dayNumber": 20,
+      "moduleId": "dbm-module-3",
+      "title": "Scaling Your Validated Model",
+      "subtitle": "Once you have product-market fit, it's time to pour fuel on the fire. But scale the right things in the right order.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't Scale Before You're Ready",
+          "body": "Premature scaling is the #1 cause of startup death (Startup Genome Report). Scaling before product-market fit is like pouring fuel on a fire that isn't lit — you waste resources and accelerate failure. But once you have real PMF signals, NOT scaling is equally dangerous. Competitors will fill the vacuum. Timing is everything.",
+          "stat": "#1",
+          "statLabel": "cause of startup death: premature scaling before product-market fit"
+        },
+        {
+          "type": "content",
+          "headline": "The Scaling Readiness Checklist",
+          "body": "Scale only when:",
+          "bullets": [
+            "✓ Sean Ellis score > 40% \"Very disappointed\"",
+            "✓ Retention curve has flattened",
+            "✓ Unit economics are healthy (LTV:CAC > 3:1)",
+            "✓ You have a repeatable acquisition channel",
+            "✓ Operational processes can handle 10x volume"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Scale First",
+          "body": "Scale in this order: (1) Your engine of growth — whatever's already working (paid, viral, or sticky). (2) Your team — hire for the bottleneck, not broadly. (3) Your infrastructure — only when current systems are breaking. (4) Your product surface — expand features AFTER your core is unshakeable. Most founders scale product first when they should scale distribution first."
+        },
+        {
+          "type": "content",
+          "headline": "Scaling Risks",
+          "body": "Common dangers during scaling:",
+          "bullets": [
+            "Losing touch with customers (layers between you and users)",
+            "Breaking what works (changing the core while scaling)",
+            "Hiring too fast (culture dilution, communication overhead)",
+            "Over-expanding scope (serving new segments before nailing the first)",
+            "Running out of cash (scaling is expensive — revenue must keep up)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Scale Plan",
+          "body": "Even if you're pre-PMF, sketch your scaling plan: What would you scale first if metrics hit your targets tomorrow? What's your engine of growth? What's the first hire you'd make? What's the first system that would break at 10x? Having this plan ready means you won't waste the PMF moment when it arrives."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the #1 cause of startup death according to the Startup Genome Report?",
+          "options": [
+            "Running out of funding",
+            "Premature scaling before product-market fit",
+            "Co-founder disagreements",
+            "Lack of technical talent"
+          ],
+          "correctIndex": 1,
+          "explanation": "Premature scaling — growing before validating — wastes resources and accelerates failure. It's the most common killer of startups."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you typically scale FIRST after achieving PMF?",
+          "options": [
+            "Product features — add as many as possible",
+            "Your engine of growth — whatever acquisition channel is already working",
+            "Your team — hire across all departments simultaneously",
+            "Your office space — move to a bigger location"
+          ],
+          "correctIndex": 1,
+          "explanation": "Scale what's already working (your proven growth engine) before expanding product scope or hiring broadly."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a scaling readiness signal?",
+          "options": [
+            "You have a great product idea",
+            "Retention curve has flattened and unit economics are healthy",
+            "You've raised a large investment round",
+            "Your website has a lot of traffic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flat retention (users stay) + healthy unit economics (LTV > 3x CAC) = the model works and scaling won't just amplify losses."
+        }
+      ]
+    },
+    {
+      "id": "dbm-21-module-3-checkpoint",
+      "dayNumber": 21,
+      "moduleId": "dbm-module-3",
+      "title": "Module 3 Checkpoint",
+      "subtitle": "Bring together everything you've learned. You now have a complete toolkit for designing, testing, and scaling a business model.",
+      "duration": "5 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Blank Canvas to Validated Model",
+          "body": "Three weeks ago, you had an idea. Now you have: a Business Model Canvas mapping your full system, a Lean Canvas focused on your riskiest hypotheses, an experiment framework for testing assumptions, metrics that matter, and criteria for knowing when to pivot or scale. That's not a business plan — it's a living learning system."
+        },
+        {
+          "type": "content",
+          "headline": "Your Complete Journey",
+          "body": "The three-module progression:",
+          "bullets": [
+            "Module 1: Map your model — understand all nine blocks and how they connect",
+            "Module 2: Test your model — Lean Canvas, experiments, pivot decisions",
+            "Module 3: Iterate to fit — BML loops, MVP, PMF signals, scaling",
+            "This is a cycle, not a line — you'll loop back through these stages many times"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Model Is Never \"Done\"",
+          "body": "Even after PMF, your business model will evolve. New competitors change your positioning. New technology enables new channels. Customer needs shift. Markets expand. The canvas mindset — sketch, test, iterate — applies forever. The companies that thrive are those that continuously redesign their models before they're forced to."
+        },
+        {
+          "type": "content",
+          "headline": "Your Next Steps",
+          "body": "Immediate actions to take:",
+          "bullets": [
+            "Complete (or update) your Lean Canvas with everything you've learned",
+            "Run your first experiment this week — don't let knowledge sit idle",
+            "Schedule a weekly pivot-or-persevere review (even if it's just you)",
+            "Pick your One Metric That Matters and track it daily",
+            "Share your canvas with one trusted person for feedback"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Course Complete — Congratulations! 🎉",
+          "body": "You've completed \"Design Your Business Model.\" You now have the frameworks used by the world's most successful entrepreneurs. But frameworks without action are just theory. Your challenge: run one complete Build-Measure-Learn loop within the next 7 days. That single loop will teach you more than any course ever could."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why is business model design described as \"a cycle, not a line\"?",
+          "options": [
+            "Because it takes exactly 21 days to complete",
+            "Because you'll loop back through mapping, testing, and iterating many times as markets change",
+            "Because it goes in a circle on the page",
+            "Because you need to take the course again"
+          ],
+          "correctIndex": 1,
+          "explanation": "Business models constantly evolve — you'll revisit each stage as customers, competitors, and markets change. It's an ongoing process."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do within 7 days of completing this course?",
+          "options": [
+            "Write a 40-page business plan",
+            "Run one complete Build-Measure-Learn loop",
+            "Quit your job to focus on your startup",
+            "Raise investment funding"
+          ],
+          "correctIndex": 1,
+          "explanation": "One real BML loop teaches more than theory alone. Taking action immediately turns knowledge into validated learning."
+        },
+        {
+          "type": "mcq",
+          "question": "Even after product-market fit, your business model should:",
+          "options": [
+            "Never be changed again",
+            "Be locked in and only optimised for efficiency",
+            "Continue to evolve as competitors, technology, and markets shift",
+            "Be abandoned for a completely new model"
+          ],
+          "correctIndex": 2,
+          "explanation": "Models must continuously evolve — companies that stop adapting get disrupted. The canvas mindset applies forever."
+        }
+      ]
+    }
+  ]
+}

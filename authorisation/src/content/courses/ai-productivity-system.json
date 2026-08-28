@@ -1,0 +1,1998 @@
+{
+  "id": "ai-productivity-system",
+  "title": "AI Productivity System",
+  "subtitle": "Get 2× the work done in half the time. Build an AI-powered productivity system that saves 10+ hours per week.",
+  "totalDays": 21,
+  "totalXp": 525,
+  "modules": [
+    {
+      "id": "aps-mod-1",
+      "moduleNumber": 1,
+      "title": "AI Productivity Foundations",
+      "subtitle": "The tools, mindset, and quick wins for AI-powered productivity",
+      "days": "1–5",
+      "skill": "Foundation",
+      "lessonIds": [
+        "aps-1",
+        "aps-2",
+        "aps-3",
+        "aps-4",
+        "aps-5"
+      ]
+    },
+    {
+      "id": "aps-mod-2",
+      "moduleNumber": 2,
+      "title": "Deep Work & Focus Systems",
+      "subtitle": "Plan, research, write, and execute with AI as your thinking partner",
+      "days": "6–11",
+      "skill": "Deep Work",
+      "lessonIds": [
+        "aps-6",
+        "aps-7",
+        "aps-8",
+        "aps-9",
+        "aps-10",
+        "aps-11"
+      ]
+    },
+    {
+      "id": "aps-mod-3",
+      "moduleNumber": 3,
+      "title": "Workflow Automation",
+      "subtitle": "Automate repetitive tasks and build your personal AI assistant",
+      "days": "12–16",
+      "skill": "Automation",
+      "lessonIds": [
+        "aps-12",
+        "aps-13",
+        "aps-14",
+        "aps-15",
+        "aps-16"
+      ]
+    },
+    {
+      "id": "aps-mod-4",
+      "moduleNumber": 4,
+      "title": "Mastery & Optimisation",
+      "subtitle": "Build a sustainable AI productivity operating system",
+      "days": "17–21",
+      "skill": "Mastery",
+      "lessonIds": [
+        "aps-17",
+        "aps-18",
+        "aps-19",
+        "aps-20",
+        "aps-21"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "aps-1",
+      "dayNumber": 1,
+      "moduleId": "aps-mod-1",
+      "title": "The AI Productivity Revolution",
+      "subtitle": "Why AI changes everything about personal output",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Working Too Hard",
+          "body": "The average knowledge worker spends 60% of their day on \"work about work\" — emails, meetings, admin, and context switching. AI eliminates most of it."
+        },
+        {
+          "type": "content",
+          "headline": "The Productivity Paradigm Shift",
+          "body": "Traditional productivity advice tells you to work harder, wake earlier, and optimise your schedule. AI flips the script: work less, delegate more, think bigger.",
+          "bullets": [
+            "AI handles the repetitive 80% — you focus on the creative 20%",
+            "Every task gets a first draft instantly",
+            "Research that took hours now takes minutes",
+            "Communication becomes effortless, not draining"
+          ],
+          "stat": "10+",
+          "statLabel": "Hours per week saved by professionals using AI productivity systems"
+        },
+        {
+          "type": "content",
+          "headline": "What AI Productivity Actually Looks Like",
+          "body": "This isn't about fancy tools or complex automations. It's about building simple daily habits with AI that compound over time.",
+          "bullets": [
+            "Morning: AI plans your day in 60 seconds",
+            "Email: AI drafts every reply — you just approve",
+            "Meetings: AI transcribes, summarises, and assigns actions",
+            "Writing: AI creates first drafts of everything",
+            "Research: AI reads, synthesises, and briefs you in bullet points"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Compound Effect",
+          "body": "Saving 2 hours per day = 10 hours per week = 520 hours per year. That's 65 full working days back. What would you do with 3 extra months every year?",
+          "stat": "520",
+          "statLabel": "Hours per year reclaimed with a daily 2-hour AI productivity system"
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Day",
+          "body": "Write down everything you did yesterday at work. Circle the tasks that were repetitive, administrative, or could have been drafted by AI. Count the hours. This is your \"AI reclaim zone\" — and it's probably bigger than you think."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of a knowledge worker's day is typically spent on \"work about work\"?",
+          "type": "mcq",
+          "options": [
+            "20%",
+            "40%",
+            "60%",
+            "80%"
+          ],
+          "correctIndex": 2,
+          "explanation": "60% of a knowledge worker's day goes to administrative work, emails, meetings, and context switching — all areas where AI can dramatically reduce time."
+        },
+        {
+          "question": "AI productivity systems can save 10+ hours per week for professionals.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Professionals using structured AI productivity systems report saving 10+ hours per week across email, writing, research, and admin tasks."
+        },
+        {
+          "question": "What is the \"AI reclaim zone\"?",
+          "type": "mcq",
+          "options": [
+            "Time spent learning AI tools",
+            "Repetitive tasks that AI can handle for you",
+            "The time it takes AI to generate responses",
+            "Your free time after work"
+          ],
+          "correctIndex": 1,
+          "explanation": "The AI reclaim zone is all the repetitive, administrative, and draftable tasks in your day that AI can handle — freeing you for higher-value work."
+        }
+      ]
+    },
+    {
+      "id": "aps-2",
+      "dayNumber": 2,
+      "moduleId": "aps-mod-1",
+      "title": "Your AI Command Centre",
+      "subtitle": "Setting up ChatGPT, Claude, and Gemini as your daily copilots",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Tool Won't Cut It",
+          "body": "The most productive AI users don't rely on a single tool. They use 2-3 AI assistants strategically — each for what it does best."
+        },
+        {
+          "type": "content",
+          "headline": "Your AI Toolkit",
+          "body": "Each major AI assistant has distinct strengths. Set up all three and use the right one for each task type.",
+          "bullets": [
+            "ChatGPT: Best for creative writing, brainstorming, and conversation",
+            "Claude: Best for analysis, long documents, and careful reasoning",
+            "Gemini: Best for Google integration, real-time info, and quick lookups",
+            "Tip: Keep all three pinned in your browser for instant access"
+          ],
+          "stat": "3",
+          "statLabel": "AI assistants you should have ready for different task types"
+        },
+        {
+          "type": "content",
+          "headline": "Setting Up for Speed",
+          "body": "Friction kills productivity. Remove every barrier between you and your AI tools.",
+          "bullets": [
+            "Pin AI tabs in your browser (always open, never close)",
+            "Install mobile apps for on-the-go use",
+            "Set keyboard shortcuts to open AI instantly",
+            "Create saved prompts/templates for recurring tasks",
+            "Use browser extensions for in-context AI help"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Custom Instructions (Your AI's Memory)",
+          "body": "Set up custom instructions so your AI knows who you are, what you do, and how you like things done. This eliminates repeated context-setting.",
+          "bullets": [
+            "Tell AI your role, industry, and communication style",
+            "Specify your preferred output format (bullets, short paragraphs, etc.)",
+            "Define your tone: professional, casual, or somewhere between",
+            "Add context about your team, company, or clients",
+            "Update monthly as your needs evolve"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Command Centre",
+          "body": "Open ChatGPT and Claude (free tiers work). Set custom instructions on both: your name, role, what you do, and how you like responses formatted. Pin both tabs. You now have an AI command centre ready for tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which AI tool is best suited for analysing long documents and careful reasoning?",
+          "type": "mcq",
+          "options": [
+            "ChatGPT",
+            "Claude",
+            "Gemini",
+            "Copilot"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude excels at analysis, long-document processing, and careful reasoning — making it ideal for detailed work that requires precision."
+        },
+        {
+          "question": "Setting up custom instructions eliminates the need to repeat context every conversation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Custom instructions give AI persistent memory of who you are and how you work, so every new conversation starts with the right context."
+        },
+        {
+          "question": "What is the best way to reduce friction when using AI productivity tools?",
+          "type": "mcq",
+          "options": [
+            "Only use one tool",
+            "Pin tabs, install apps, and set keyboard shortcuts",
+            "Wait until you need them to open",
+            "Use AI only on desktop"
+          ],
+          "correctIndex": 1,
+          "explanation": "Removing friction means instant access: pinned browser tabs, mobile apps, keyboard shortcuts, and saved templates for recurring tasks."
+        }
+      ]
+    },
+    {
+      "id": "aps-3",
+      "dayNumber": 3,
+      "moduleId": "aps-mod-1",
+      "title": "The 80/20 AI Rule",
+      "subtitle": "Identifying which tasks to hand off to AI for maximum leverage",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Not Everything Needs AI",
+          "body": "The biggest mistake new AI users make is trying to use AI for everything. The skill is knowing which 20% of tasks produce 80% of the time savings."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Task Matrix",
+          "body": "Categorise every task by two dimensions: how repetitive it is, and how much thinking it requires. AI handles different quadrants differently.",
+          "bullets": [
+            "High repetition + Low thinking = AUTOMATE (emails, scheduling, data entry)",
+            "High repetition + High thinking = AI-ASSIST (writing, analysis, planning)",
+            "Low repetition + Low thinking = DELEGATE or skip",
+            "Low repetition + High thinking = YOU (strategy, relationships, creativity)"
+          ],
+          "stat": "80%",
+          "statLabel": "Of your time savings will come from just 20% of AI applications"
+        },
+        {
+          "type": "content",
+          "headline": "The Highest-Leverage AI Tasks",
+          "body": "These specific tasks deliver the biggest time savings for almost everyone, regardless of role or industry.",
+          "bullets": [
+            "Email drafting and replies (saves 45-60 min/day)",
+            "Meeting summaries and action items (saves 30 min/meeting)",
+            "First drafts of any written content (saves 60-90 min/piece)",
+            "Research and summarisation (saves 1-2 hours/project)",
+            "Data analysis and reporting (saves 2-3 hours/report)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Keep Human",
+          "body": "Some things should never be fully delegated to AI. These are your irreplaceable human contributions.",
+          "bullets": [
+            "Final decisions on strategy and direction",
+            "Relationship building and emotional intelligence",
+            "Creative vision and original thinking",
+            "Ethical judgement and value-based choices",
+            "The last 10% of quality (AI gets you to 90% — you add the polish)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your 80/20",
+          "body": "Take your task audit from Lesson 1. Categorise each item into the AI Task Matrix (Automate / AI-Assist / Delegate / You). Star the top 3 tasks that would save you the most time if AI handled them. These are your Week 1 focus."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the AI Task Matrix, which tasks should be fully automated with AI?",
+          "type": "mcq",
+          "options": [
+            "High thinking, low repetition",
+            "High repetition, low thinking",
+            "Low repetition, low thinking",
+            "All tasks equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tasks that are highly repetitive but require low thinking (emails, scheduling, data entry) are ideal for full AI automation — maximum time savings with minimal risk."
+        },
+        {
+          "question": "AI can save 45-60 minutes per day on email drafting and replies alone.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Email is one of the highest-leverage AI tasks — having AI draft replies and compose messages saves most professionals 45-60 minutes daily."
+        },
+        {
+          "question": "What should you keep fully human rather than delegating to AI?",
+          "type": "mcq",
+          "options": [
+            "Email replies",
+            "Meeting summaries",
+            "Strategic decisions and relationship building",
+            "Research and data analysis"
+          ],
+          "correctIndex": 2,
+          "explanation": "Strategy, relationships, creative vision, and ethical judgement are irreplaceable human contributions that should never be fully delegated to AI."
+        }
+      ]
+    },
+    {
+      "id": "aps-4",
+      "dayNumber": 4,
+      "moduleId": "aps-mod-1",
+      "title": "AI for Email & Communication",
+      "subtitle": "Inbox zero with AI drafting, sorting, and replies",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Email Is Eating Your Life",
+          "body": "The average professional spends 2.5 hours per day on email. With AI, you can process your entire inbox in 30 minutes — better written, faster replied, nothing missed."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Email Workflow",
+          "body": "A systematic approach to processing email with AI that ensures nothing slips through while saving hours daily.",
+          "bullets": [
+            "Step 1: Scan inbox — AI categorises by urgency and type",
+            "Step 2: Quick replies — paste the email into AI, get a draft in seconds",
+            "Step 3: Complex replies — give AI context, review and refine",
+            "Step 4: Compose new — tell AI what you need to say, who it's for",
+            "Step 5: Follow-ups — AI reminds you what needs chasing"
+          ],
+          "stat": "2.5 hrs",
+          "statLabel": "Average daily time spent on email — reducible to 30 minutes with AI"
+        },
+        {
+          "type": "content",
+          "headline": "Prompt Templates for Email",
+          "body": "Keep these templates saved for instant use. Copy, paste, customise — done in under 30 seconds per email.",
+          "bullets": [
+            "Quick reply: \"Reply to this email professionally in 2-3 sentences: [paste email]\"",
+            "Detailed reply: \"Reply addressing all points. Tone: [friendly/formal]. Key message: [your point]\"",
+            "Cold outreach: \"Write a cold email to [person/role] about [topic]. Keep it under 100 words.\"",
+            "Follow-up: \"Write a friendly follow-up to [context]. Reference our last conversation about [topic].\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Advanced Email Tactics",
+          "body": "Go beyond basic drafting with these power moves that top AI users employ.",
+          "bullets": [
+            "Batch processing: Copy 5 emails at once, get all replies in one prompt",
+            "Tone matching: Ask AI to match the sender's communication style",
+            "Negotiation emails: Have AI suggest multiple approaches with trade-offs",
+            "Difficult conversations: AI helps frame sensitive messages carefully",
+            "Summary threads: Paste long email chains, get key points in 3 bullets"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Process 10 Emails with AI",
+          "body": "Open your inbox. Pick 10 emails that need replies. For each one, paste it into ChatGPT or Claude with \"Reply professionally in 2-3 sentences.\" Edit as needed and send. Time yourself — most people finish in under 15 minutes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much time does the average professional spend on email daily?",
+          "type": "mcq",
+          "options": [
+            "1 hour",
+            "2.5 hours",
+            "4 hours",
+            "30 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The average professional spends 2.5 hours per day on email — one of the largest time sinks that AI can dramatically reduce."
+        },
+        {
+          "question": "Batch processing means copying multiple emails at once for AI to draft all replies together.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Batch processing is a power technique where you paste multiple emails into one AI prompt and get all replies generated simultaneously — much faster than one-by-one."
+        },
+        {
+          "question": "What is the recommended first step in the AI email workflow?",
+          "type": "mcq",
+          "options": [
+            "Reply to everything immediately",
+            "Scan and categorise by urgency",
+            "Delete all emails",
+            "Forward everything to AI"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start by scanning and categorising your inbox by urgency and type. This ensures you handle critical items first and process efficiently."
+        }
+      ]
+    },
+    {
+      "id": "aps-5",
+      "dayNumber": 5,
+      "moduleId": "aps-mod-1",
+      "title": "AI Meeting Mastery",
+      "subtitle": "Transcription, summaries, action items, and follow-ups on autopilot",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Meetings Don't Have to Be Pointless",
+          "body": "The average professional sits in 15+ hours of meetings per week — and forgets 90% of what was discussed. AI transforms meetings from time sinks into action engines."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Meeting Stack",
+          "body": "A complete system for making every meeting productive using AI at each stage: before, during, and after.",
+          "bullets": [
+            "Before: AI generates agenda from context and objectives",
+            "During: AI transcribes everything in real-time (Otter, Fireflies, tl;dv)",
+            "After (immediately): AI summarises key points in 30 seconds",
+            "After (actions): AI extracts action items with owners and deadlines",
+            "Follow-up: AI drafts recap email to all attendees"
+          ],
+          "stat": "15+",
+          "statLabel": "Hours per week in meetings — AI makes every minute count"
+        },
+        {
+          "type": "content",
+          "headline": "AI Transcription Tools",
+          "body": "These tools join your calls automatically and handle everything — you just focus on the conversation.",
+          "bullets": [
+            "Otter.ai: Auto-joins Zoom/Teams/Meet, real-time transcription",
+            "Fireflies.ai: Transcription + AI summaries + CRM integration",
+            "tl;dv: Records, transcribes, and timestamps key moments",
+            "Granola: AI notepad that enhances your meeting notes",
+            "All integrate with calendars — zero manual setup per meeting"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Post-Meeting Workflow",
+          "body": "The real productivity gain happens in the 5 minutes after the meeting ends. AI does in seconds what used to take 20 minutes.",
+          "bullets": [
+            "Paste transcript into Claude: \"Summarise in 5 bullet points\"",
+            "\"Extract all action items with owner names and deadlines\"",
+            "\"Draft a follow-up email summarising decisions and next steps\"",
+            "\"What questions were left unresolved?\"",
+            "Tip: Create a saved prompt template for your recurring meeting types"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Meeting AI",
+          "body": "Sign up for Otter.ai or Fireflies (free tier). Connect it to your calendar. Let it auto-join your next meeting. After the meeting, paste the transcript into Claude and ask for: 1) Summary, 2) Action items, 3) Follow-up email draft. Send within 5 minutes of meeting end."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of meeting content does the average professional forget?",
+          "type": "mcq",
+          "options": [
+            "50%",
+            "70%",
+            "90%",
+            "30%"
+          ],
+          "correctIndex": 2,
+          "explanation": "People forget approximately 90% of meeting content within a few days. AI transcription and summarisation ensures nothing is lost."
+        },
+        {
+          "question": "AI transcription tools can automatically join video calls without manual setup.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Tools like Otter.ai and Fireflies integrate with your calendar and auto-join scheduled meetings — zero manual intervention required."
+        },
+        {
+          "question": "What should you do immediately after a meeting with the AI transcript?",
+          "type": "mcq",
+          "options": [
+            "File it away for later",
+            "Extract summary, action items, and draft follow-up email",
+            "Delete the transcript",
+            "Wait until end of day to review"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 5 minutes after a meeting are critical. Use AI to immediately extract summary, action items, and draft a follow-up email while context is fresh."
+        }
+      ]
+    },
+    {
+      "id": "aps-6",
+      "dayNumber": 6,
+      "moduleId": "aps-mod-2",
+      "title": "AI-Powered Planning",
+      "subtitle": "Daily, weekly, and monthly planning with AI assistance",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "60 Seconds to a Perfect Plan",
+          "body": "Most people start their day reactively — checking email, responding to others' priorities. AI gives you a daily plan in under 60 seconds that puts you in control."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Daily Planning Prompt",
+          "body": "Every morning, give AI your context and get a structured, prioritised plan. This single habit saves hours of scattered effort.",
+          "bullets": [
+            "Input: Your goals, calendar, deadlines, energy level today",
+            "Output: Prioritised task list with time blocks",
+            "AI considers: Urgency, importance, energy required, dependencies",
+            "Format: Top 3 priorities + time-blocked schedule + \"if I have time\" list",
+            "Time: Under 60 seconds from prompt to plan"
+          ],
+          "stat": "60s",
+          "statLabel": "Time to generate a fully prioritised daily plan with AI"
+        },
+        {
+          "type": "content",
+          "headline": "Weekly & Monthly Planning",
+          "body": "Zoom out regularly. AI helps you see patterns, adjust course, and stay aligned with your bigger goals.",
+          "bullets": [
+            "Weekly (Sunday/Monday): Review last week + plan next week's priorities",
+            "Prompt: \"Given my goals and last week's progress, what should I focus on?\"",
+            "Monthly: Review goal progress, adjust quarterly targets",
+            "Prompt: \"Am I on track? What should I double down on or drop?\"",
+            "AI spots patterns you miss: recurring blockers, time waste, misalignment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Planning Prompt Template",
+          "body": "Save this and use it every morning. Customise the context section for your situation.",
+          "bullets": [
+            "Context: \"I'm a [role] working on [projects]. My top goals this week are [X, Y, Z].\"",
+            "Today: \"My calendar today has [meetings]. Deadlines: [items]. Energy level: [high/medium/low].\"",
+            "Request: \"Create my prioritised plan for today with time blocks. Top 3 must-dos first.\"",
+            "Tip: Add constraints like \"No deep work after 3pm\" or \"Protect 2 hours for Project X\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Tomorrow with AI",
+          "body": "Open Claude or ChatGPT. Use the planning template: provide your role, this week's goals, tomorrow's calendar, and deadlines. Ask for a time-blocked plan with top 3 priorities. Save this prompt as your \"morning planning\" template."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long does it take to generate a daily plan with AI?",
+          "type": "mcq",
+          "options": [
+            "5 minutes",
+            "15 minutes",
+            "Under 60 seconds",
+            "30 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "With a saved prompt template and your daily context, AI generates a fully prioritised, time-blocked plan in under 60 seconds."
+        },
+        {
+          "question": "AI daily planning should include your energy level as an input.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Energy level helps AI schedule demanding tasks when you're at your best and lighter tasks during low-energy periods — optimising your natural rhythms."
+        },
+        {
+          "question": "What is the recommended format for an AI-generated daily plan?",
+          "type": "mcq",
+          "options": [
+            "A single long to-do list",
+            "Top 3 priorities + time blocks + \"if I have time\" list",
+            "Just calendar appointments",
+            "Random task order"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most effective format is: Top 3 must-do priorities, followed by a time-blocked schedule, plus an optional \"if I have time\" list for overflow tasks."
+        }
+      ]
+    },
+    {
+      "id": "aps-7",
+      "dayNumber": 7,
+      "moduleId": "aps-mod-2",
+      "title": "Decision Fatigue Elimination",
+      "subtitle": "Using AI to make faster, better decisions",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Make 35,000 Decisions a Day",
+          "body": "Each one drains your mental battery. By 3pm, most people are making poor decisions simply because they're exhausted. AI reduces the load dramatically."
+        },
+        {
+          "type": "content",
+          "headline": "How AI Reduces Decision Fatigue",
+          "body": "AI doesn't make decisions for you — it structures your thinking so decisions become obvious rather than agonising.",
+          "bullets": [
+            "Pros/cons analysis: AI generates comprehensive lists instantly",
+            "Option comparison: AI lays out trade-offs in a clear framework",
+            "Criteria weighting: AI helps you identify what matters most",
+            "Scenario modelling: \"If I choose X, what happens?\"",
+            "Default recommendations: AI suggests the option that fits your stated goals"
+          ],
+          "stat": "35,000",
+          "statLabel": "Decisions made per day — AI can pre-process the trivial majority"
+        },
+        {
+          "type": "content",
+          "headline": "Decision Frameworks with AI",
+          "body": "Use these proven frameworks by pasting your decision into AI with the framework name. AI does the heavy analysis.",
+          "bullets": [
+            "Eisenhower Matrix: \"Categorise these tasks by urgency/importance\"",
+            "10/10/10 Rule: \"How will I feel about this in 10 mins / 10 months / 10 years?\"",
+            "Regret Minimisation: \"Which option will I regret least at age 80?\"",
+            "First Principles: \"Break this decision down to its fundamental truths\"",
+            "Reversibility: \"Is this reversible? If yes, decide fast and iterate.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 2-Minute Decision Rule",
+          "body": "Combine speed with AI for maximum decision efficiency.",
+          "bullets": [
+            "If a decision is reversible → decide in 2 minutes with AI help",
+            "If irreversible → give AI full context, sleep on it, decide tomorrow",
+            "For recurring decisions → create a decision template once, reuse forever",
+            "Low-stakes decisions → let AI decide entirely (what to eat, schedule order)",
+            "High-stakes decisions → use AI for analysis, keep final call human"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Resolve a Pending Decision",
+          "body": "Think of a decision you've been putting off. Paste it into AI with this prompt: \"I need to decide [X]. My options are [A, B, C]. My priorities are [what matters most]. Give me a pros/cons for each and recommend the best option with reasoning.\" Decide within 5 minutes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many decisions does the average person make per day?",
+          "type": "mcq",
+          "options": [
+            "5,000",
+            "10,000",
+            "35,000",
+            "100,000"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests people make approximately 35,000 decisions daily — each one depleting mental energy. AI helps pre-process the majority to reduce fatigue."
+        },
+        {
+          "question": "For reversible decisions, you should take your time and analyse extensively.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reversible decisions should be made quickly (2-minute rule) with AI assistance. Speed matters because you can always iterate. Only irreversible decisions warrant extensive analysis."
+        },
+        {
+          "question": "What role should AI play in high-stakes decisions?",
+          "type": "mcq",
+          "options": [
+            "Make the decision entirely",
+            "Provide analysis and frameworks, but the human makes the final call",
+            "Ignore AI for important decisions",
+            "Only use AI after the decision is made"
+          ],
+          "correctIndex": 1,
+          "explanation": "For high-stakes decisions, AI should handle analysis, frameworks, and scenario modelling — but the final call stays human because it involves values and judgement."
+        }
+      ]
+    },
+    {
+      "id": "aps-8",
+      "dayNumber": 8,
+      "moduleId": "aps-mod-2",
+      "title": "Research & Learning 10× Faster",
+      "subtitle": "AI-powered reading, summarising, and knowledge synthesis",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Read a Book in 5 Minutes",
+          "body": "It used to take hours to research a topic. Now you can synthesise entire books, reports, and articles into actionable takeaways in minutes — with AI doing the heavy lifting."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Research Workflow",
+          "body": "A systematic approach to consuming information at 10× speed without losing depth or nuance.",
+          "bullets": [
+            "Step 1: Define what you need to know and why (the question)",
+            "Step 2: Feed AI the source material (paste text, upload PDFs)",
+            "Step 3: Ask for a structured summary with key takeaways",
+            "Step 4: Drill deeper — ask follow-up questions on specific points",
+            "Step 5: Extract action items relevant to your situation"
+          ],
+          "stat": "10×",
+          "statLabel": "Speed improvement in research and learning with AI assistance"
+        },
+        {
+          "type": "content",
+          "headline": "Powerful Research Prompts",
+          "body": "These prompts turn AI into your personal research assistant. Save them for repeated use.",
+          "bullets": [
+            "Summary: \"Summarise this in 5 key takeaways I can act on today\"",
+            "Extraction: \"What are the 3 most important insights for someone in [my role]?\"",
+            "Comparison: \"Compare these two approaches. Which is better for [my situation]?\"",
+            "Synthesis: \"Combine insights from [source A] and [source B] into one framework\"",
+            "Challenge: \"What are the weaknesses or counterarguments to this thesis?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Learning Any Skill with AI",
+          "body": "AI transforms how you acquire new skills — from passive consumption to active, personalised learning.",
+          "bullets": [
+            "Ask AI to create a learning roadmap for any skill",
+            "\"Explain [concept] like I'm a beginner, then give me an advanced version\"",
+            "\"Give me 5 practice exercises to build this skill\"",
+            "\"What are the common mistakes beginners make with [topic]?\"",
+            "Use AI to quiz you on what you just learned (instant testing effect)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Speed-Read Something",
+          "body": "Find an article or report you've been meaning to read (or paste a chapter from a book). Feed it to Claude and ask: \"Give me the 5 key takeaways and 3 action items relevant to someone who [your context].\" Note how long it took vs reading the full source."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first step in the AI research workflow?",
+          "type": "mcq",
+          "options": [
+            "Paste everything into AI immediately",
+            "Define what you need to know and why",
+            "Search Google first",
+            "Ask AI a vague question"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always start by defining your specific question and why you need the answer. This focuses AI output and ensures you get relevant, actionable insights."
+        },
+        {
+          "question": "AI can synthesise insights from multiple sources into a single framework.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "One of AI's most powerful research capabilities is combining insights from different sources into a unified, coherent framework that would take hours manually."
+        },
+        {
+          "question": "Which prompt approach helps you learn new skills most effectively with AI?",
+          "type": "mcq",
+          "options": [
+            "Just read AI summaries passively",
+            "Ask AI to create learning roadmaps, exercises, and quiz you",
+            "Only use AI for facts, not skills",
+            "Avoid asking beginner questions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Active learning with AI (roadmaps, practice exercises, quizzing) engages deeper processing and builds skills far faster than passive reading alone."
+        }
+      ]
+    },
+    {
+      "id": "aps-9",
+      "dayNumber": 9,
+      "moduleId": "aps-mod-2",
+      "title": "AI Writing Workflows",
+      "subtitle": "Reports, documents, and content in minutes, not hours",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Never Stare at a Blank Page Again",
+          "body": "The hardest part of writing isn't the writing — it's starting. AI eliminates the blank page forever. Every document begins with a solid first draft you refine, not create from scratch."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Writing System",
+          "body": "A reliable process that produces high-quality writing in a fraction of the time, for any document type.",
+          "bullets": [
+            "Step 1: Brief AI — who's the audience, what's the purpose, what tone?",
+            "Step 2: Get a structural outline first (approve before writing)",
+            "Step 3: Generate the full first draft",
+            "Step 4: Edit for your voice — add personal touches, cut the generic",
+            "Step 5: Polish — ask AI to tighten, improve clarity, check for errors"
+          ],
+          "stat": "75%",
+          "statLabel": "Time saved on writing tasks using AI first-draft + human editing"
+        },
+        {
+          "type": "content",
+          "headline": "Templates for Every Document Type",
+          "body": "Save these prompt starters for instant use across all your common writing tasks.",
+          "bullets": [
+            "Reports: \"Write a [type] report for [audience]. Key data: [X]. Tone: professional.\"",
+            "Proposals: \"Create a proposal for [client] covering [scope]. Budget: [X]. USP: [Y].\"",
+            "Updates: \"Write a project update email. Progress: [X]. Blockers: [Y]. Next steps: [Z].\"",
+            "Presentations: \"Create slide content for a [X]-minute presentation on [topic] for [audience].\"",
+            "SOPs: \"Write a step-by-step procedure for [task]. Audience: [new team members].\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 90/10 Rule of AI Writing",
+          "body": "AI gets you 90% of the way. Your job is the final 10% — and that's where the magic happens.",
+          "bullets": [
+            "AI draft: Structure, completeness, clarity (90% of the effort)",
+            "Your edit: Voice, nuance, insider knowledge, personality (10% of effort)",
+            "Never send an AI draft unedited — it's a starting point, not a finish line",
+            "The editing pass is faster than writing from scratch every time",
+            "Tip: Edit for 5 minutes maximum — if it needs more, re-prompt AI with better instructions"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Something in 5 Minutes",
+          "body": "Pick a document you need to write this week (email, report, proposal, update). Brief AI with audience, purpose, and key points. Get the first draft. Edit for 5 minutes. Done. Compare the time to your usual writing process."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first step in the AI writing system?",
+          "type": "mcq",
+          "options": [
+            "Ask AI to write immediately",
+            "Brief AI on audience, purpose, and tone",
+            "Write it yourself first",
+            "Skip the outline"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always brief AI first — who is the audience, what's the purpose, what tone should it use. A good brief produces a much better first draft."
+        },
+        {
+          "question": "You should always send AI-generated writing without editing.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Never send AI writing unedited. AI handles 90% (structure, completeness, clarity) but your 10% edit adds voice, nuance, and personality that makes it yours."
+        },
+        {
+          "question": "How much time does AI typically save on writing tasks?",
+          "type": "mcq",
+          "options": [
+            "25%",
+            "50%",
+            "75%",
+            "99%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using AI for first drafts with human editing saves approximately 75% of time on writing tasks — turning hours-long documents into minutes-long projects."
+        }
+      ]
+    },
+    {
+      "id": "aps-10",
+      "dayNumber": 10,
+      "moduleId": "aps-mod-2",
+      "title": "Automated Task Management",
+      "subtitle": "AI-integrated to-do systems and project tracking",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your To-Do List Is Broken",
+          "body": "Static to-do lists don't work because they can't prioritise, estimate, or adapt. AI-powered task management thinks with you — reordering, reminding, and breaking down work automatically."
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Task Management Tools",
+          "body": "Modern task tools now include AI features that transform static lists into intelligent systems.",
+          "bullets": [
+            "Todoist: AI-powered task scheduling and natural language input",
+            "Notion AI: Auto-organises projects, generates subtasks, summarises progress",
+            "Linear: AI-driven project management with automatic prioritisation",
+            "Motion: AI auto-schedules tasks around your calendar",
+            "Tip: Pick one tool and commit — tool-hopping kills productivity"
+          ],
+          "stat": "40%",
+          "statLabel": "Increase in task completion rates with AI-powered prioritisation"
+        },
+        {
+          "type": "content",
+          "headline": "The AI Task Breakdown",
+          "body": "One of AI's most powerful productivity features: breaking vague, overwhelming tasks into clear next actions.",
+          "bullets": [
+            "Vague task: \"Work on marketing strategy\"",
+            "AI breakdown: 6 specific, actionable sub-tasks with time estimates",
+            "Prompt: \"Break this into concrete next actions I can complete in 30 min or less\"",
+            "Add context: \"I have 2 hours available and medium energy\"",
+            "Result: A clear sequence you can execute without thinking about what's next"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Weekly Review with AI",
+          "body": "Every week, feed your task list to AI for an intelligent review that keeps you on track.",
+          "bullets": [
+            "Paste your task list + completed items into AI",
+            "Ask: \"What should I carry forward? What can be dropped? Am I aligned with my goals?\"",
+            "AI identifies: Patterns, recurring incomplete tasks, priority mismatches",
+            "Ask: \"What's the ONE task that would have the biggest impact this week?\"",
+            "Update your system based on AI recommendations"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Break Down a Big Task",
+          "body": "Think of a task you've been procrastinating on because it feels overwhelming. Paste it into AI with: \"Break this into specific sub-tasks I can complete in 30 minutes or less. Estimate time for each. Suggest an order.\" Watch the overwhelm disappear."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes AI-powered task management better than static to-do lists?",
+          "type": "mcq",
+          "options": [
+            "More features",
+            "It can prioritise, estimate, and adapt dynamically",
+            "It looks better",
+            "It has more integrations"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI task management actively prioritises based on goals, estimates time, adapts to changes, and breaks down vague tasks — static lists can't do any of this."
+        },
+        {
+          "question": "AI can break vague tasks into specific, actionable sub-tasks with time estimates.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "One of AI's most powerful features is turning vague, overwhelming tasks into clear sequences of 30-minute actionable steps with time estimates."
+        },
+        {
+          "question": "During a weekly review, what should you ask AI about your task list?",
+          "type": "mcq",
+          "options": [
+            "Only ask about completed tasks",
+            "Ask what to carry forward, drop, and whether you're aligned with goals",
+            "Ask AI to delete everything",
+            "Don't do weekly reviews"
+          ],
+          "correctIndex": 1,
+          "explanation": "A weekly review with AI should identify what to carry forward, what to drop, priority mismatches, and the single highest-impact task for the coming week."
+        }
+      ]
+    },
+    {
+      "id": "aps-11",
+      "dayNumber": 11,
+      "moduleId": "aps-mod-2",
+      "title": "Focus & Distraction Defence",
+      "subtitle": "Using AI to protect deep work time",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "It Takes 23 Minutes to Refocus",
+          "body": "Every interruption costs you 23 minutes of recovery time. In a typical day with 10+ interruptions, you lose nearly 4 hours to context switching alone. AI helps you build an impenetrable focus shield."
+        },
+        {
+          "type": "content",
+          "headline": "The Deep Work Defence System",
+          "body": "Use AI to create boundaries, batch distractions, and protect your most valuable working hours.",
+          "bullets": [
+            "Time-block deep work: Ask AI to schedule 2-3 hour focus blocks around meetings",
+            "Batch communications: AI processes all messages at set times (not continuously)",
+            "Auto-responses: AI drafts \"I'm in deep work, will reply at [time]\" messages",
+            "Pre-work brain dump: Give AI your scattered thoughts, get a clear starting point",
+            "End-of-block capture: AI summarises what you accomplished and next steps"
+          ],
+          "stat": "23 min",
+          "statLabel": "Recovery time after each interruption — protect your focus blocks"
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Focus Rituals",
+          "body": "Build automated routines that trigger deep focus without willpower.",
+          "bullets": [
+            "Start ritual: Ask AI \"What's my ONE priority for this focus block?\" — get clarity instantly",
+            "Stuck ritual: When blocked, ask AI \"I'm stuck on [X]. Give me 3 approaches to try\"",
+            "Wander ritual: If mind wanders, dump the thought into AI chat and return to work",
+            "End ritual: \"Summarise my progress and define my starting point for next session\"",
+            "These rituals replace procrastination with action"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Notification & Environment Management",
+          "body": "AI can't block notifications for you, but it can help you design an environment that does.",
+          "bullets": [
+            "Schedule DND periods: Use AI to plan optimal focus windows based on your calendar",
+            "Prepare before focus: Ask AI to pre-answer likely questions others might ask you",
+            "Delegate during focus: Brief AI on how to handle requests that come in",
+            "Queue distractions: Jot stray thoughts to process with AI later",
+            "Review: At day's end, ask AI \"How many focus hours did I protect today?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Focus Block",
+          "body": "Ask AI: \"Look at my typical day [describe it]. Where can I schedule two 90-minute deep work blocks? What should I do before each block to prepare, and what's my protocol if I get interrupted?\" Implement tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long does it take to refocus after an interruption?",
+          "type": "mcq",
+          "options": [
+            "5 minutes",
+            "10 minutes",
+            "23 minutes",
+            "45 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows it takes approximately 23 minutes to fully refocus after an interruption — making focus protection one of the highest-value productivity investments."
+        },
+        {
+          "question": "AI can help you batch communications to avoid continuous interruptions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI can process all your messages at set times, draft batch responses, and create auto-replies — letting you focus uninterrupted during deep work blocks."
+        },
+        {
+          "question": "What should you do when your mind wanders during a focus block?",
+          "type": "mcq",
+          "options": [
+            "Check social media",
+            "Dump the thought into AI chat and return to work",
+            "End the focus block early",
+            "Switch to email"
+          ],
+          "correctIndex": 1,
+          "explanation": "When stray thoughts arise, quickly dump them into your AI chat as a \"process later\" note. This clears mental load without breaking focus — AI holds it for you."
+        }
+      ]
+    },
+    {
+      "id": "aps-12",
+      "dayNumber": 12,
+      "moduleId": "aps-mod-3",
+      "title": "No-Code Automation Basics",
+      "subtitle": "Zapier, Make, and AI triggers explained",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Set It and Forget It",
+          "body": "What if your repetitive tasks ran themselves — automatically, perfectly, every time? No-code automation tools connect your apps and let AI handle the workflows you repeat daily."
+        },
+        {
+          "type": "content",
+          "headline": "What Automation Actually Means",
+          "body": "Automation connects two or more apps so that when something happens in one (trigger), something else happens automatically in another (action).",
+          "bullets": [
+            "Trigger: An event that starts the automation (new email, form submission, etc.)",
+            "Action: What happens automatically (send message, create task, update spreadsheet)",
+            "Example: New email with attachment → Save to Google Drive → Notify you in Slack",
+            "No code needed — it's visual drag-and-drop",
+            "Runs 24/7 without you touching anything"
+          ],
+          "stat": "5-10 hrs",
+          "statLabel": "Per week saved by professionals with well-designed automations"
+        },
+        {
+          "type": "content",
+          "headline": "Your Automation Toolkit",
+          "body": "Three major platforms handle 95% of automation needs. Start with one.",
+          "bullets": [
+            "Zapier: Most beginner-friendly, largest app library (7,000+ integrations)",
+            "Make (formerly Integromat): More powerful, visual builder, better for complex flows",
+            "n8n: Self-hosted option, unlimited automations, developer-friendly",
+            "All three now include AI steps — trigger ChatGPT/Claude within any workflow",
+            "Start with Zapier if you're new — free tier handles 5 simple automations"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your First 5 Automations",
+          "body": "These starter automations save time immediately and teach you the basics.",
+          "bullets": [
+            "1. New calendar event → AI generates meeting prep notes in Notion",
+            "2. Email with keyword → Auto-forward to project channel + add to to-do list",
+            "3. Form submission → AI writes thank-you email → Sends automatically",
+            "4. Daily 9am trigger → AI pulls your calendar + generates daily plan",
+            "5. New file in Drive → AI summarises content → Posts summary to Slack"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your First Automation",
+          "body": "Sign up for Zapier (free). Build one automation: \"Every morning at 9am → get today's calendar events from Google Calendar → send me a Slack/email message with my schedule.\" This takes 5 minutes and runs forever."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the two core components of any automation?",
+          "type": "mcq",
+          "options": [
+            "Input and output",
+            "Trigger and action",
+            "Start and finish",
+            "Code and design"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every automation has a trigger (the event that starts it) and an action (what happens automatically). They connect apps without writing code."
+        },
+        {
+          "question": "Zapier, Make, and n8n all now support AI steps within automation workflows.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "All major automation platforms now include AI integration steps, allowing you to trigger ChatGPT or Claude within any workflow for intelligent processing."
+        },
+        {
+          "question": "Which automation platform is recommended for beginners?",
+          "type": "mcq",
+          "options": [
+            "n8n",
+            "Make",
+            "Zapier",
+            "Custom code"
+          ],
+          "correctIndex": 2,
+          "explanation": "Zapier is the most beginner-friendly with the largest app library (7,000+ integrations), a generous free tier, and the simplest interface for getting started."
+        }
+      ]
+    },
+    {
+      "id": "aps-13",
+      "dayNumber": 13,
+      "moduleId": "aps-mod-3",
+      "title": "Email & Calendar Automation",
+      "subtitle": "Scheduling, follow-ups, and reminders on autopilot",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Calendar Manages Itself",
+          "body": "Imagine never manually scheduling a meeting, never forgetting a follow-up, and never missing a deadline reminder. Email and calendar automation makes this real — today."
+        },
+        {
+          "type": "content",
+          "headline": "Calendar Automations That Save Hours",
+          "body": "These automations eliminate the back-and-forth of scheduling and ensure you're always prepared.",
+          "bullets": [
+            "Auto-scheduling: Tools like Calendly/Cal.com let others book available slots",
+            "Meeting prep: Auto-generate briefing notes 30 min before each meeting",
+            "Buffer blocks: Auto-insert 15-min buffers between back-to-back meetings",
+            "Travel time: Auto-block travel time for in-person meetings",
+            "Weekly digest: AI summarises your upcoming week every Sunday evening"
+          ],
+          "stat": "3 hrs",
+          "statLabel": "Per week saved by automating scheduling and calendar management"
+        },
+        {
+          "type": "content",
+          "headline": "Email Follow-Up Automation",
+          "body": "Never let a lead, client, or important conversation go cold again. Automation handles the follow-up discipline for you.",
+          "bullets": [
+            "Auto follow-up: If no reply in 3 days, AI drafts and sends a gentle nudge",
+            "Lead response: New enquiry → AI generates personalised reply → sends in 5 min",
+            "Thank you emails: After meeting → AI writes personalised thank-you → auto-sends",
+            "Recurring check-ins: Monthly AI-drafted check-in to key contacts",
+            "Tip: Always review auto-generated emails before enabling fully automated sending"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Smart Reminder Systems",
+          "body": "Build an AI-powered reminder system that ensures nothing falls through the cracks.",
+          "bullets": [
+            "Deadline reminders: Auto-notify 3 days, 1 day, and morning-of for deadlines",
+            "Follow-up queue: AI maintains a list of conversations awaiting replies",
+            "Recurring tasks: Auto-create tasks for weekly/monthly recurring work",
+            "Context reminders: Before a meeting with [client], remind you of last conversation",
+            "End-of-day: AI sends you a \"loose ends\" summary of unfinished items"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate One Calendar Workflow",
+          "body": "Set up Cal.com or Calendly (free) and connect it to your calendar. Create a booking link for 30-minute meetings. Then in Zapier, create: \"New Calendly booking → AI generates meeting prep notes → saves to Notion/Google Doc.\" Share your booking link instead of \"when are you free?\" emails."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much time per week can calendar automation save?",
+          "type": "mcq",
+          "options": [
+            "30 minutes",
+            "1 hour",
+            "3 hours",
+            "8 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Automating scheduling, prep, buffers, and calendar management saves approximately 3 hours per week — eliminating back-and-forth and manual admin."
+        },
+        {
+          "question": "Fully automated follow-up emails should always be sent without review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always review AI-generated emails before enabling fully automated sending. Start with AI drafts you approve, then automate only after you trust the quality."
+        },
+        {
+          "question": "What should a smart reminder system notify you about before a client meeting?",
+          "type": "mcq",
+          "options": [
+            "Only the meeting time",
+            "Context from your last conversation with that client",
+            "Nothing — just show up",
+            "Their social media posts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context reminders surface your last conversation, outstanding items, and relevant notes — so you walk into every meeting fully prepared without manual research."
+        }
+      ]
+    },
+    {
+      "id": "aps-14",
+      "dayNumber": 14,
+      "moduleId": "aps-mod-3",
+      "title": "Document & Data Automation",
+      "subtitle": "Auto-generate reports, summaries, and spreadsheets",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Reports That Write Themselves",
+          "body": "You spend hours every week creating reports, updating spreadsheets, and formatting documents. With automation + AI, these generate themselves from your existing data."
+        },
+        {
+          "type": "content",
+          "headline": "Document Automation Patterns",
+          "body": "The most valuable document automations for professionals across any industry.",
+          "bullets": [
+            "Weekly reports: AI pulls data from tools → generates formatted report → emails to team",
+            "Client updates: AI summarises project progress → creates professional PDF → sends",
+            "Invoice generation: New project complete → auto-generate invoice from template",
+            "Meeting minutes: Transcript → AI formats into proper minutes → distributes",
+            "Proposals: Fill in key details → AI generates full proposal from template"
+          ],
+          "stat": "4 hrs",
+          "statLabel": "Per week saved by automating report and document generation"
+        },
+        {
+          "type": "content",
+          "headline": "Spreadsheet & Data Automation",
+          "body": "AI transforms how you work with data — no formulas or macros needed.",
+          "bullets": [
+            "Data entry: Form submissions auto-populate spreadsheets",
+            "Analysis: AI analyses spreadsheet data and writes insights",
+            "Cleaning: AI standardises messy data (names, dates, formats)",
+            "Dashboards: Auto-update metrics from connected data sources",
+            "Prompt: \"Analyse this spreadsheet and give me the 3 most important trends\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your First Document Automation",
+          "body": "Start simple — pick one document you create repeatedly and automate it.",
+          "bullets": [
+            "Identify: What document do you create weekly that follows a similar structure?",
+            "Template: Create a template with [placeholders] for variable content",
+            "Connect: Link data sources (spreadsheet, CRM, project tool) to fill placeholders",
+            "AI layer: Add an AI step to write narrative sections from raw data",
+            "Deliver: Auto-email or save to shared folder when complete"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate a Report",
+          "body": "Pick a report you create regularly. Paste an example into Claude and ask: \"Create a template for this report with [placeholders] for variable data. Then show me what data sources I'd need to automate it fully.\" This is your automation blueprint."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much time can document automation save per week?",
+          "type": "mcq",
+          "options": [
+            "1 hour",
+            "2 hours",
+            "4 hours",
+            "8 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Automating recurring reports, summaries, and document generation saves approximately 4 hours per week for most professionals."
+        },
+        {
+          "question": "AI can analyse spreadsheet data and write insights without you creating formulas.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI can read spreadsheet data, identify trends, and write narrative insights — no formulas, macros, or pivot tables needed. Just paste or upload the data."
+        },
+        {
+          "question": "What is the first step in building a document automation?",
+          "type": "mcq",
+          "options": [
+            "Buy expensive software",
+            "Identify a document you create repeatedly with a similar structure",
+            "Hire a developer",
+            "Rewrite all existing documents"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start by identifying a document you create repeatedly that follows a consistent structure — this is your best candidate for automation with templates and AI."
+        }
+      ]
+    },
+    {
+      "id": "aps-15",
+      "dayNumber": 15,
+      "moduleId": "aps-mod-3",
+      "title": "Personal Knowledge AI",
+      "subtitle": "Turn scattered notes, bookmarks, and ideas into a searchable second brain powered by AI.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Brain Leaks 90% of What It Learns",
+          "body": "Research shows we forget 90% of new information within 7 days. Your brilliant ideas, useful articles, and meeting insights vanish into the void. But what if every piece of knowledge you ever captured was instantly searchable and connectable?",
+          "stat": "90%",
+          "statLabel": "of learned info forgotten in 7 days"
+        },
+        {
+          "type": "content",
+          "headline": "The AI-Powered Second Brain",
+          "body": "A second brain isn't just a notes app — it's an AI-searchable knowledge system that connects ideas across domains. The key components:",
+          "bullets": [
+            "Capture: Save anything in seconds (voice, text, screenshots, links)",
+            "Organise: AI auto-tags and categorises without manual folders",
+            "Connect: AI surfaces related notes you forgot you had",
+            "Retrieve: Ask questions in plain language, get your own knowledge back"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Knowledge Stack",
+          "body": "Choose tools that work together seamlessly:",
+          "bullets": [
+            "Notion AI / Obsidian + AI plugins for your knowledge base",
+            "Readwise for highlights from books, articles, and podcasts",
+            "Voice memos → AI transcription for capture on the go",
+            "ChatGPT or Claude as your \"knowledge retrieval\" layer"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Knowledge Synthesis",
+          "body": "Every Sunday, feed your week's captures into AI and ask: \"What patterns do you see? What ideas connect? What should I act on?\" This 10-minute ritual turns scattered inputs into actionable insights and creative breakthroughs."
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Second Brain Today",
+          "body": "Gather your last 5 bookmarks, 3 recent notes, and 1 article you read this week. Paste them all into Claude and ask: \"Organise these into themes, highlight the key insights, and tell me what connections I'm missing.\" This is your second brain in action."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of new information do we typically forget within 7 days?",
+          "type": "mcq",
+          "options": [
+            "30%",
+            "50%",
+            "70%",
+            "90%"
+          ],
+          "correctIndex": 3,
+          "explanation": "Research on the \"forgetting curve\" shows we lose approximately 90% of newly learned information within a week unless we actively review or store it in an external system."
+        },
+        {
+          "question": "A second brain only works if you manually organise every piece of information into folders.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI-powered second brains can auto-tag, categorise, and surface connections without manual folder organisation. The key is capturing quickly — AI handles the organising."
+        },
+        {
+          "question": "What is the purpose of the \"Weekly Knowledge Synthesis\" ritual?",
+          "type": "mcq",
+          "options": [
+            "Delete old notes",
+            "Turn scattered captures into patterns, connections, and actions",
+            "Reorganise folder structures",
+            "Share notes with others"
+          ],
+          "correctIndex": 1,
+          "explanation": "The weekly synthesis uses AI to find patterns across your captures, surface unexpected connections, and identify actionable insights from the week's information."
+        }
+      ]
+    },
+    {
+      "id": "aps-16",
+      "dayNumber": 16,
+      "moduleId": "aps-mod-3",
+      "title": "AI Delegation Mastery",
+      "subtitle": "Learn to delegate work to AI like you'd delegate to a brilliant assistant — clear briefs, quality checks, iteration.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Still Doing Work AI Could Handle",
+          "body": "Most people use AI for quick questions. But the real power comes from delegation — handing off entire workflows the way you'd brief a junior team member. The difference between asking AI a question and delegating to AI is the difference between saving minutes and saving hours.",
+          "stat": "73%",
+          "statLabel": "of routine knowledge work is delegatable to AI"
+        },
+        {
+          "type": "content",
+          "headline": "The AI Delegation Framework: BRIEF",
+          "body": "Use the BRIEF method for every delegation:",
+          "bullets": [
+            "Background: Context AI needs (role, audience, constraints)",
+            "Result: Exactly what the output should look like",
+            "Instructions: Step-by-step process to follow",
+            "Examples: Show what \"good\" looks like (paste samples)",
+            "Feedback: Tell AI how to self-check its own work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Delegate vs. What to Keep",
+          "body": "Delegate to AI: First drafts, research, data analysis, formatting, scheduling, summaries, brainstorming options, repetitive communications. Keep for yourself: Final decisions, relationship moments, creative vision, strategic thinking, anything requiring physical presence.",
+          "bullets": [
+            "Rule of thumb: If it follows a pattern, delegate it",
+            "If it requires judgment about people or novel strategy, keep it",
+            "Start with low-stakes tasks to build trust in the output quality"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Iteration Loop",
+          "body": "Great delegators don't accept the first output. They iterate: \"This is 70% there. Here's what to adjust…\" Three rounds of iteration with AI takes 5 minutes and produces better results than spending 45 minutes doing it yourself from scratch."
+        },
+        {
+          "type": "try-it",
+          "headline": "Delegate Your Next Task",
+          "body": "Think of a task on your to-do list that will take 30+ minutes. Write a BRIEF for it: Background (2 sentences), Result (what you want delivered), Instructions (steps), Example (paste a similar past output if you have one), Feedback criteria. Send it to AI and compare the output to doing it yourself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"E\" in the BRIEF delegation framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Efficiency",
+            "Examples",
+            "Execution",
+            "Evaluation"
+          ],
+          "correctIndex": 1,
+          "explanation": "The E stands for Examples — showing AI what \"good\" looks like by pasting sample outputs. This dramatically improves the quality of AI-generated work."
+        },
+        {
+          "question": "You should always accept AI's first output without iteration to save time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great delegation involves iteration. Three rounds of feedback (\"This is 70% there, adjust X…\") takes only 5 minutes and produces significantly better results than accepting the first draft."
+        },
+        {
+          "question": "Which type of task is BEST suited for AI delegation?",
+          "type": "mcq",
+          "options": [
+            "Making a hiring decision about a candidate",
+            "Writing first drafts of recurring reports",
+            "Consoling a grieving friend",
+            "Deciding company strategy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tasks that follow patterns (like recurring reports) are ideal for AI delegation. People-centric moments and novel strategic decisions should remain human."
+        }
+      ]
+    },
+    {
+      "id": "aps-17",
+      "dayNumber": 17,
+      "moduleId": "aps-mod-4",
+      "title": "The Weekly AI Review",
+      "subtitle": "Build a 30-minute weekly ritual that keeps your AI productivity system running at peak performance.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Systems Without Reviews Decay",
+          "body": "You've built automations, workflows, and habits over the past two weeks. Without a regular review, they'll slowly break down. The weekly AI review is your maintenance ritual — 30 minutes that ensure your system keeps compounding gains week after week.",
+          "stat": "30",
+          "statLabel": "minutes per week to maintain your system"
+        },
+        {
+          "type": "content",
+          "headline": "The 30-Minute AI Review Template",
+          "body": "Every week (pick a consistent day), run through these five steps:",
+          "bullets": [
+            "1. Reflect (5 min): What worked well? What felt clunky? Where did I waste time?",
+            "2. Measure (5 min): Check time saved, tasks automated, productivity metrics",
+            "3. Fix (10 min): Update broken automations, refine prompts that underperformed",
+            "4. Plan (5 min): Identify next week's highest-leverage AI opportunity",
+            "5. Celebrate (5 min): Acknowledge wins and compound progress"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI-Assisted Reviews",
+          "body": "Use AI to run the review itself. Paste your calendar, to-do list, and notes from the week into AI and ask: \"Based on this week, where did I spend time on repetitive tasks I could automate? What patterns do you see? What should I focus on improving next week?\"",
+          "bullets": [
+            "AI spots patterns you miss (e.g., \"You had 4 similar emails Tuesday\")",
+            "AI can draft your upcoming week's plan based on review insights",
+            "Track a simple \"hours saved\" metric to stay motivated"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Compound Effect of Weekly Reviews",
+          "body": "Week 1 you save 2 hours. Week 2 you save 3. By week 8, you're saving 10+ hours because each review identifies new optimisation opportunities. The review ritual is what separates people who \"tried AI\" from people who transformed their productivity permanently."
+        },
+        {
+          "type": "try-it",
+          "headline": "Run Your First AI Review",
+          "body": "Set a 30-minute timer. Open your calendar from this past week and paste it into AI. Ask: \"Look at my week. Where did I spend time on repetitive or low-value tasks? Which of these could be automated or delegated to AI? Give me my top 3 optimisation opportunities for next week.\" Schedule this as a recurring weekly event."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long should the weekly AI review take?",
+          "type": "mcq",
+          "options": [
+            "10 minutes",
+            "30 minutes",
+            "1 hour",
+            "2 hours"
+          ],
+          "correctIndex": 1,
+          "explanation": "The weekly AI review is designed as a focused 30-minute ritual — long enough to be thorough but short enough to maintain consistently every week."
+        },
+        {
+          "question": "Systems and automations maintain themselves indefinitely without regular reviews.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without regular reviews, systems decay — automations break, workflows become outdated, and opportunities for new optimisations are missed. The weekly review prevents this decay."
+        },
+        {
+          "question": "What is the primary benefit of the compound effect from weekly reviews?",
+          "type": "mcq",
+          "options": [
+            "You save the same amount of time each week",
+            "Each review uncovers new optimisations so savings grow week over week",
+            "You eventually stop needing AI",
+            "Reviews get longer over time"
+          ],
+          "correctIndex": 1,
+          "explanation": "The compound effect means each weekly review identifies new optimisation opportunities, so your time savings grow from 2 hours in week 1 to 10+ hours by week 8."
+        }
+      ]
+    },
+    {
+      "id": "aps-18",
+      "dayNumber": 18,
+      "moduleId": "aps-mod-4",
+      "title": "AI Productivity Metrics",
+      "subtitle": "Measure what matters — track the numbers that prove your AI system is working.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What Gets Measured Gets Improved",
+          "body": "You've built an impressive AI productivity system. But how do you know it's actually working? Without clear metrics, you might be busy without being productive. The right numbers tell you exactly where to double down and what to fix.",
+          "stat": "10+",
+          "statLabel": "hours saved per week with a measured system"
+        },
+        {
+          "type": "content",
+          "headline": "The 4 Core Productivity Metrics",
+          "body": "Track these weekly to measure real progress:",
+          "bullets": [
+            "Hours Saved: Time freed by AI vs. doing it manually (aim for 10+ hrs/week)",
+            "Output Quality: Are AI-assisted deliverables rated higher by others?",
+            "Decision Speed: Time from question to action (should shrink weekly)",
+            "Energy Score: Rate your end-of-day energy 1-10 (should increase)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Productivity Dashboard",
+          "body": "Create a simple weekly tracker — a spreadsheet or Notion page with your 4 metrics. Every Friday, spend 5 minutes logging the numbers. After 4 weeks, the trends tell a powerful story: you'll see exactly which AI workflows deliver the most value.",
+          "bullets": [
+            "Week-over-week trends matter more than absolute numbers",
+            "Flag any metric that drops 2 weeks in a row — something broke",
+            "Share your dashboard at work to demonstrate AI ROI"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The ROI Calculation",
+          "body": "Your time has a value. If you earn £50/hour equivalent and save 10 hours/week, your AI system generates £500/week — £26,000/year — in reclaimed time. Now the question becomes: what will you DO with those 10 hours? That's the real ROI."
+        },
+        {
+          "type": "try-it",
+          "headline": "Calculate Your AI ROI",
+          "body": "Estimate your hourly value (salary ÷ working hours, or freelance rate). Now list every AI task from this week and estimate minutes saved per task. Total them up and multiply by your hourly rate. Paste the list into AI and ask: \"Calculate my total time saved and monetary ROI this week.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which is NOT one of the 4 core AI productivity metrics?",
+          "type": "mcq",
+          "options": [
+            "Hours Saved",
+            "Social media followers gained",
+            "Decision Speed",
+            "Energy Score"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 4 core metrics are Hours Saved, Output Quality, Decision Speed, and Energy Score. Social media followers aren't a productivity metric."
+        },
+        {
+          "question": "You should only check your productivity metrics once a month.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Weekly tracking is recommended — spending 5 minutes every Friday logging your metrics. This frequency lets you spot issues quickly and see week-over-week trends."
+        },
+        {
+          "question": "If you save 10 hours per week at £50/hour, what's the annual ROI?",
+          "type": "mcq",
+          "options": [
+            "£5,000",
+            "£13,000",
+            "£26,000",
+            "£52,000"
+          ],
+          "correctIndex": 2,
+          "explanation": "10 hours × £50 = £500/week. £500 × 52 weeks = £26,000/year in reclaimed time value."
+        }
+      ]
+    },
+    {
+      "id": "aps-19",
+      "dayNumber": 19,
+      "moduleId": "aps-mod-4",
+      "title": "Building AI Habits That Stick",
+      "subtitle": "Turn your AI workflows from conscious effort into automatic daily habits.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Knowing ≠ Doing",
+          "body": "You now know dozens of AI productivity techniques. But knowledge without habit is worthless. Research shows it takes 21-66 days for a new behaviour to become automatic. Today we lock in your AI habits so they run on autopilot.",
+          "stat": "66",
+          "statLabel": "days to form a lasting habit (max)"
+        },
+        {
+          "type": "content",
+          "headline": "The Habit Stack Method",
+          "body": "Attach AI habits to existing routines (habit stacking):",
+          "bullets": [
+            "After I open my laptop → I ask AI to prioritise my day (2 min)",
+            "After I finish a meeting → I paste notes into AI for action items (1 min)",
+            "Before I write an email → I draft it in AI first (30 sec)",
+            "After lunch → I do my AI inbox sweep (5 min)",
+            "Before I close my laptop → I ask AI to plan tomorrow (3 min)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 2-Minute Rule for AI",
+          "body": "If an AI workflow takes less than 2 minutes, do it immediately — no task list, no \"later.\" This eliminates the friction that kills new habits. Most AI tasks (email drafting, quick research, meeting summaries) take under 2 minutes once you've got the prompts ready.",
+          "bullets": [
+            "Pre-save your top 10 prompts for instant access",
+            "Use keyboard shortcuts to open AI tools instantly",
+            "Keep your AI tab permanently open — zero friction"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Handling Habit Failures",
+          "body": "You'll miss days. The rule: never miss twice. One missed day is fine — two missed days is the start of a new (bad) habit. When you slip, the recovery protocol is simple: do the tiniest version of the habit. Even a 30-second AI interaction counts."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Habit Stack",
+          "body": "Write out your 5 daily \"trigger moments\" (morning routine, post-meeting, lunch, afternoon slump, end of day). For each, attach one AI habit using the format: \"After [trigger], I will [AI action] for [time].\" Paste your list into AI and ask it to refine and suggest improvements."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"habit stacking\"?",
+          "type": "mcq",
+          "options": [
+            "Using multiple AI tools at once",
+            "Attaching new habits to existing routines",
+            "Doing all habits in the morning",
+            "Tracking habits in a spreadsheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Habit stacking means linking a new behaviour to an existing routine (trigger). \"After I [existing habit], I will [new AI habit]\" makes the new behaviour much more likely to stick."
+        },
+        {
+          "question": "According to the \"never miss twice\" rule, one missed day breaks your habit permanently.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "One missed day is normal and doesn't break the habit. The rule is \"never miss twice\" — two consecutive missed days is what starts a negative pattern. Just do the tiniest version to get back on track."
+        },
+        {
+          "question": "What does the 2-Minute Rule suggest about AI tasks?",
+          "type": "mcq",
+          "options": [
+            "Only use AI for tasks over 2 minutes",
+            "If an AI workflow takes under 2 minutes, do it immediately",
+            "Limit AI usage to 2 minutes per day",
+            "Wait 2 minutes before using AI"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 2-Minute Rule says if an AI task takes less than 2 minutes, do it right now — no delay, no adding it to a list. This eliminates friction and builds the habit of reaching for AI automatically."
+        }
+      ]
+    },
+    {
+      "id": "aps-20",
+      "dayNumber": 20,
+      "moduleId": "aps-mod-4",
+      "title": "Your AI Operating System",
+      "subtitle": "Combine everything into a personalised AI operating system tailored to your unique work style.",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Tools to System",
+          "body": "Individual AI tools are useful. But an integrated AI Operating System is transformative. Today you assemble all your workflows, habits, automations, and tools into one cohesive system — your personal AI OS that runs your professional life.",
+          "stat": "1",
+          "statLabel": "unified system to rule all your workflows"
+        },
+        {
+          "type": "content",
+          "headline": "The AI OS Architecture",
+          "body": "Your operating system has four layers:",
+          "bullets": [
+            "Layer 1 — Input: How information enters your system (email, meetings, reading, conversations)",
+            "Layer 2 — Processing: How AI transforms raw inputs into organised knowledge and actions",
+            "Layer 3 — Execution: How tasks get done (automations, delegations, focused work blocks)",
+            "Layer 4 — Review: How you optimise the system weekly (metrics, adjustments, improvements)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Documenting Your OS",
+          "body": "Create a single \"My AI OS\" document that maps your complete system:",
+          "bullets": [
+            "Daily rhythms: Morning startup, midday review, evening shutdown sequences",
+            "Tool stack: Which AI tool handles which category of work",
+            "Prompt library: Your top 20 saved prompts for instant use",
+            "Automation map: What runs automatically without your input",
+            "Review cadence: Weekly/monthly review schedules and templates"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Evolving Your OS",
+          "body": "Your AI OS isn't static. New tools emerge monthly. Your role changes. Your goals shift. Build in a quarterly \"OS upgrade\" session where you evaluate new AI tools, retire what's not working, and redesign workflows for your current priorities."
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your AI OS Document",
+          "body": "Open a new document and create 5 sections: Daily Rhythms, Tool Stack, Top Prompts, Automations, Review Schedule. For each section, list what you've built during this course. Then paste the whole document into AI and ask: \"Review my AI Operating System. What gaps do you see? What's missing? How would you improve the flow?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many layers does the AI Operating System architecture have?",
+          "type": "mcq",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correctIndex": 2,
+          "explanation": "The AI OS has 4 layers: Input (how information enters), Processing (how AI organises it), Execution (how tasks get done), and Review (how you optimise the system)."
+        },
+        {
+          "question": "Once your AI Operating System is built, you should never change it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your AI OS should evolve. Build in quarterly \"OS upgrade\" sessions to evaluate new tools, retire what doesn't work, and redesign workflows as your priorities change."
+        },
+        {
+          "question": "What should your \"My AI OS\" document include?",
+          "type": "mcq",
+          "options": [
+            "Only your prompt library",
+            "Only your automation list",
+            "Daily rhythms, tool stack, prompts, automations, and review schedule",
+            "A list of AI tools you might try someday"
+          ],
+          "correctIndex": 2,
+          "explanation": "A complete AI OS document maps your daily rhythms, tool stack, prompt library, automation map, and review cadence — the full picture of how your system works together."
+        }
+      ]
+    },
+    {
+      "id": "aps-21",
+      "dayNumber": 21,
+      "moduleId": "aps-mod-4",
+      "title": "The Productivity Transformation",
+      "subtitle": "Celebrate your transformation, lock in your gains, and plan the next level of AI mastery.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built Something Extraordinary",
+          "body": "21 days ago you were doing everything manually. Today you have an AI-powered productivity system that saves 10+ hours per week. That's 520+ hours per year — 13 full work weeks reclaimed. You didn't just learn about AI. You transformed how you work.",
+          "stat": "520+",
+          "statLabel": "hours per year reclaimed with your AI system"
+        },
+        {
+          "type": "content",
+          "headline": "Your Transformation Scorecard",
+          "body": "Look how far you've come:",
+          "bullets": [
+            "✅ AI Command Centre set up and running daily",
+            "✅ Email, meetings, and calendar automated",
+            "✅ Research and writing workflows 10× faster",
+            "✅ No-code automations handling repetitive tasks",
+            "✅ Personal knowledge system capturing everything",
+            "✅ Weekly review ritual keeping the system sharp",
+            "✅ Habits locked in for long-term success"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Do With Your Reclaimed Time",
+          "body": "The goal was never just \"being productive\" — it was creating space for what matters:",
+          "bullets": [
+            "Strategic thinking: Use freed hours for high-value creative work",
+            "Relationships: More time for people who matter",
+            "Health: Exercise, sleep, recovery without guilt",
+            "Learning: Invest reclaimed time in new skills (like more SuccessWise courses!)",
+            "Rest: Sustainable productivity means guilt-free downtime"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Next Level",
+          "body": "This course gave you the foundation. The next frontier: AI for strategic thinking (making better decisions), AI for creativity (generating novel ideas), and AI for leadership (multiplying your team's output). Your productivity system is the base — now build upward."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Transformation Story",
+          "body": "Open AI and paste this prompt: \"I just completed a 21-day AI productivity course. Here's what I built: [list your top 5 workflows]. Help me write a short reflection: What did I learn? What surprised me? What will I do differently going forward? And what should my next 30-day goal be?\" Save this as your transformation milestone."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many hours per year can a well-built AI productivity system save?",
+          "type": "mcq",
+          "options": [
+            "50 hours",
+            "200 hours",
+            "520+ hours",
+            "1000 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Saving 10+ hours per week × 52 weeks = 520+ hours per year — equivalent to 13 full work weeks reclaimed for higher-value activities."
+        },
+        {
+          "question": "The main goal of productivity is to fill every saved hour with more work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sustainable productivity means creating space for what matters — strategic thinking, relationships, health, learning, AND rest. Filling every hour with more work leads to burnout, not success."
+        },
+        {
+          "question": "What should you do after completing this course to maintain progress?",
+          "type": "mcq",
+          "options": [
+            "Stop using AI and go back to manual methods",
+            "Continue weekly reviews and evolve your AI OS quarterly",
+            "Delete all your automations and start over",
+            "Wait for someone to tell you what to do next"
+          ],
+          "correctIndex": 1,
+          "explanation": "The weekly review ritual and quarterly OS upgrades ensure your system keeps evolving and improving. Consistency and evolution are the keys to lasting transformation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1450 @@
+{
+  "id": "ai-digital-product-launch",
+  "title": "48-Hour AI Digital Product Launch",
+  "subtitle": "From idea to first sale in one weekend.",
+  "totalDays": 21,
+  "totalXp": 525,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Find Your Winning Idea",
+      "subtitle": "Identify the perfect digital product, validate demand, and map your 48-hour sprint plan.",
+      "days": "Lessons 1–5",
+      "skill": "Choose a profitable product idea, validate it, and plan your weekend build sprint",
+      "lessonIds": [
+        "dpl-1-the-ai-advantage",
+        "dpl-2-product-types",
+        "dpl-3-audience-discovery",
+        "dpl-4-idea-validation",
+        "dpl-5-sprint-plan"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Build It With AI",
+      "subtitle": "Use AI to draft, design, and package your product in record time.",
+      "days": "Lessons 6–12",
+      "skill": "Create professional-quality content, design assets, and package your product for delivery",
+      "lessonIds": [
+        "dpl-6-ai-writing",
+        "dpl-7-structure-for-value",
+        "dpl-8-ai-design",
+        "dpl-9-templates-and-resources",
+        "dpl-10-mini-course-creation",
+        "dpl-11-quality-check",
+        "dpl-12-packaging-delivery"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Launch & Sell",
+      "subtitle": "Set up your store, write copy that converts, and make your first sales.",
+      "days": "Lessons 13–18",
+      "skill": "Launch your storefront, write sales copy, price for profit, and land your first 10 customers",
+      "lessonIds": [
+        "dpl-13-storefront-setup",
+        "dpl-14-sales-page",
+        "dpl-15-pricing-psychology",
+        "dpl-16-urgency-social-proof",
+        "dpl-17-launch-day",
+        "dpl-18-first-ten-sales"
+      ]
+    },
+    {
+      "id": "module-4",
+      "moduleNumber": 4,
+      "title": "Scale to £1,000+",
+      "subtitle": "Turn one product into a product line and build passive income systems.",
+      "days": "Lessons 19–21",
+      "skill": "Expand your catalog, automate sales funnels, and create a 30-day growth plan",
+      "lessonIds": [
+        "dpl-19-product-line",
+        "dpl-20-passive-income-systems",
+        "dpl-21-growth-plan"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "dpl-1-the-ai-advantage",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "Why AI Accelerates Your Income",
+      "subtitle": "Unlocking the fastest path to launching profitable digital products.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Digital Gold Rush",
+          "body": "The digital product market is exploding. By 2025, it is estimated to be worth a staggering $331 billion. You don't need to be a tech wizard to claim your slice.",
+          "stat": "$331B",
+          "statLabel": "Market Valuation 2025"
+        },
+        {
+          "type": "content",
+          "headline": "Removing Every Barrier",
+          "body": "AI has dismantled the traditional hurdles that stopped creators from launching. You no longer need to be a professional designer, a master copywriter, or a software engineer to build high-value assets.",
+          "bullets": [
+            "AI handles the complex design work",
+            "Automated writing tools draft your content",
+            "No-code platforms manage the technical delivery",
+            "Speed to market is now measured in hours, not months"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Brainstorm Your Niche",
+          "body": "Identify your expertise. Write down three topics or skills you could teach others, no matter how simple they seem.",
+          "bullets": [
+            "What do friends always ask you for help with?",
+            "What professional skills have you mastered?",
+            "What hobby do you know inside out?"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of using AI for digital product creation?",
+          "type": "mcq",
+          "options": [
+            "It eliminates the need for any audience",
+            "It removes technical and creative barriers",
+            "It guarantees instant sales without marketing",
+            "It replaces the need for a bank account"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI acts as a force multiplier, handling design, copy, and structure so you can focus on the value you provide."
+        },
+        {
+          "question": "The digital product market is shrinking due to AI competition.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "N/A",
+            "N/A"
+          ],
+          "correctIndex": 1,
+          "explanation": "The market is actually growing rapidly, projected to reach $331 billion by 2025."
+        }
+      ]
+    },
+    {
+      "id": "dpl-2-product-types",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Choosing Your High-Selling Product Type",
+      "subtitle": "Discover the 7 formats that convert browsers into buyers.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Passive Income",
+          "body": "Once created, these products can sell while you sleep. The average creator earns £2,400 per month from their digital catalog — what could you do with that extra income?",
+          "stat": "£2,400",
+          "statLabel": "Avg Monthly Creator Earnings"
+        },
+        {
+          "type": "content",
+          "headline": "The 7 Proven Product Types",
+          "body": "Choose a format that matches your content style. These are the most reliable performers in the current digital economy.",
+          "bullets": [
+            "eBooks: Deep dives into specific topics",
+            "Templates: Pre-made layouts for professional tasks",
+            "Notion Packs: Organised systems for productivity",
+            "Mini-Courses: Short, actionable video or text series",
+            "Prompt Libraries: Curated AI instructions for specific results",
+            "Printables: Useful documents designed for physical use",
+            "Swipe Files: Collections of proven resources or examples"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Pick Your Path",
+          "body": "Review the list above. Select the top two product types that best fit the topics you brainstormed yesterday.",
+          "bullets": [
+            "Consider your available time",
+            "Consider what your audience values most",
+            "Pick one for immediate creation"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is considered a high-leverage product type for AI creators?",
+          "type": "mcq",
+          "options": [
+            "Physical manufacturing",
+            "Prompt Libraries",
+            "Full-time consultancy",
+            "Retail arbitrage"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prompt libraries are highly scalable digital assets that are easy to create and update using AI."
+        },
+        {
+          "question": "You should try to create all 7 product types simultaneously for the best results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "N/A",
+            "N/A"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focusing on one or two types allows you to master the process and launch faster without spreading yourself too thin."
+        }
+      ]
+    },
+    {
+      "id": "dpl-3-audience-discovery",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "Finding Your Hungry Audience Fast",
+      "subtitle": "Pinpoint exactly who needs your help in under 30 minutes.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Guessing, Start Targeting",
+          "body": "Building before researching is the fastest way to launch to crickets. Don't waste time on products nobody asked for.",
+          "stat": "72%",
+          "statLabel": "of digital product failures are due to poor audience research"
+        },
+        {
+          "type": "content",
+          "headline": "3 Free Audience Research Methods",
+          "body": "You don't need expensive tools to find where your future customers hang out. Use these platforms to listen to their real-world problems:",
+          "bullets": [
+            "Reddit: Search subreddits in your niche and look for 'How do I...' or 'I'm struggling with...' threads.",
+            "Quora: Identify the most upvoted questions to understand the burning issues in your market.",
+            "Amazon Reviews: Read 3-star reviews of existing books or courses to see what customers felt was missing."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10-Minute Reddit Audit",
+          "body": "Head over to Reddit now and find three distinct pain points within your chosen niche.",
+          "bullets": [
+            "Find one subreddit dedicated to your niche.",
+            "Search for keywords related to 'problem' or 'help'.",
+            "Note down three specific struggles people are complaining about today."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which source is best for finding what people feel is missing from current solutions?",
+          "type": "mcq",
+          "options": [
+            "Official company press releases",
+            "Amazon 3-star reviews",
+            "Your own imagination",
+            "Competitor advertising copy"
+          ],
+          "correctIndex": 1,
+          "explanation": "3-star reviews are goldmines because they highlight what a product did well, while clearly stating what it failed to address."
+        },
+        {
+          "question": "True or false: You should always build your product before researching the audience.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only if you have a large budget",
+            "Only if the product is simple"
+          ],
+          "correctIndex": 1,
+          "explanation": "Building first is the primary cause of product failure. Researching the audience ensures there is actual demand."
+        }
+      ]
+    },
+    {
+      "id": "dpl-4-idea-validation",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "The 'Would They Pay' Test",
+      "subtitle": "Validate your idea in 5 minutes before writing a single word.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Validate Before You Create",
+          "body": "Don't let your passion project become a ghost town. Smart creators prove demand before they ever open a blank document.",
+          "stat": "3x",
+          "statLabel": "more likely to profit if you validate first"
+        },
+        {
+          "type": "content",
+          "headline": "The 5-Minute Validation Framework",
+          "body": "Run your idea through these five filters to see if it stands a chance in the real market:",
+          "bullets": [
+            "Search Volume: Are people actively looking for a solution to this specific problem?",
+            "Competition: Are others already selling something similar? (If yes, that's a good sign of demand!)",
+            "Willingness to Pay: Is this a 'nice-to-have' or a 'must-have' pain point?",
+            "Urgency: Does the customer need this solution right now?",
+            "Specificity: Is your product targeted enough to solve one problem exceptionally well?"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run Your Validation Checklist",
+          "body": "Take your top idea and apply the 5-point framework. Be brutally honest with your answers.",
+          "bullets": [
+            "Score each of the 5 points out of 10.",
+            "If your total is below 35, pivot to a more urgent problem.",
+            "If your total is above 40, you have a high-potential product."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is the presence of competitors a good sign for your product idea?",
+          "type": "mcq",
+          "options": [
+            "It means the market is already saturated",
+            "It proves that people are already spending money to solve the problem",
+            "It means you can copy them exactly",
+            "It makes it easier to set a lower price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Competition validates that there is a paying market for the solution you are planning to offer."
+        },
+        {
+          "question": "True or false: A 'must-have' problem is easier to sell than a 'nice-to-have' hobby interest.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "It depends on the platform",
+            "They are equally difficult to sell"
+          ],
+          "correctIndex": 0,
+          "explanation": "People are far more likely to open their wallets for solutions to urgent, painful problems than for casual hobbies."
+        }
+      ]
+    },
+    {
+      "id": "dpl-5-sprint-plan",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Mapping Your 48-Hour Sprint",
+      "subtitle": "Define your roadmap for rapid execution.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Dreaming, Start Executing",
+          "body": "The difference between an idea and a product is a plan. Without a timeline, you drift; with one, you ship.",
+          "stat": "4x",
+          "statLabel": "Faster completion rate for planned sprints"
+        },
+        {
+          "type": "content",
+          "headline": "The Weekend Sprint Timeline",
+          "body": "Break your 48-hour window into four distinct, high-impact blocks to maintain momentum without burnout.",
+          "bullets": [
+            "Saturday AM: Core content creation",
+            "Saturday PM: Branding and visual design",
+            "Sunday AM: Storefront and payment setup",
+            "Sunday PM: Final testing and launch"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Craft Your Sprint Calendar",
+          "body": "Map your specific tasks into the four blocks to ensure you stay on track for your launch.",
+          "bullets": [
+            "List your Saturday AM focus",
+            "List your Saturday PM focus",
+            "List your Sunday AM focus",
+            "List your Sunday PM focus"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which block is dedicated to setting up your store and payments?",
+          "type": "mcq",
+          "options": [
+            "Saturday AM",
+            "Saturday PM",
+            "Sunday AM",
+            "Sunday PM"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sunday AM is reserved for technical setup to ensure your product is ready for customers."
+        },
+        {
+          "question": "Planning your sprint helps you finish significantly faster.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "N/A",
+            "N/A"
+          ],
+          "correctIndex": 0,
+          "explanation": "Studies show that planning your sprint leads to finishing your product 4x faster."
+        }
+      ]
+    },
+    {
+      "id": "dpl-6-ai-writing",
+      "dayNumber": 6,
+      "moduleId": "module-2",
+      "title": "Drafting Content With AI Speed",
+      "subtitle": "Master the art of rapid drafting.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Write at the Speed of Thought",
+          "body": "Stop staring at a blank page. Leverage AI to turn your expertise into a polished draft instantly.",
+          "stat": "5,000",
+          "statLabel": "Words AI can draft in 10 minutes"
+        },
+        {
+          "type": "content",
+          "headline": "The Perfect Prompt Formula",
+          "body": "Use this framework to ensure your AI output is high-quality, relevant, and ready to publish.",
+          "bullets": [
+            "Role: Define who the AI is (e.g., Expert Copywriter)",
+            "Context: Explain your product and audience",
+            "Format: Specify the desired output structure",
+            "Tone & Constraints: Set the voice and word limit"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your First Chapter",
+          "body": "Apply the prompt formula to generate the opening section of your digital product.",
+          "bullets": [
+            "Define your AI role",
+            "Input your context and tone",
+            "Execute the prompt in your AI tool",
+            "Review and refine the draft"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which element of the prompt formula sets the 'vibe' of your writing?",
+          "type": "mcq",
+          "options": [
+            "Role",
+            "Context",
+            "Format",
+            "Tone & Constraints"
+          ],
+          "correctIndex": 3,
+          "explanation": "Tone & Constraints dictate how the AI sounds and the specific boundaries of the output."
+        },
+        {
+          "question": "AI can help you draft your entire product content in under 2 hours.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "N/A",
+            "N/A"
+          ],
+          "correctIndex": 0,
+          "explanation": "By using efficient prompt engineering, you can drastically reduce your writing time."
+        }
+      ]
+    },
+    {
+      "id": "dpl-7-structure-for-value",
+      "dayNumber": 7,
+      "moduleId": "module-2",
+      "title": "Structuring Products for Higher Value",
+      "subtitle": "Organise content for maximum impact.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Structure Drives Results",
+          "body": "Your customers don't just want information; they want transformation. Proper structure is the bridge to that goal.",
+          "stat": "47%",
+          "statLabel": "Higher completion rates for structured products"
+        },
+        {
+          "type": "content",
+          "headline": "Three Proven Product Structures",
+          "body": "Choose the structure that best fits your niche to ensure your audience achieves a quick win.",
+          "bullets": [
+            "Problem-Solution: Identify pain, offer the remedy",
+            "Step-by-Step: A logical, sequential journey",
+            "Framework: A proprietary model or system"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Outline Your Product",
+          "body": "Use one of the three structures to map out your product into 5–7 clear sections.",
+          "bullets": [
+            "Select your structure",
+            "Draft your 5-7 section headers",
+            "Ensure each section solves one specific problem",
+            "Check for logical flow"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which structure is best for teaching a sequential process?",
+          "type": "mcq",
+          "options": [
+            "Problem-Solution",
+            "Step-by-Step",
+            "Framework",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Step-by-Step structure is ideal for guiding users through a process in a logical order."
+        },
+        {
+          "question": "Structured products lead to lower completion rates because they are too rigid.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "N/A",
+            "N/A"
+          ],
+          "correctIndex": 1,
+          "explanation": "Structured products actually increase completion rates by providing a clear, easy-to-follow path."
+        }
+      ]
+    },
+    {
+      "id": "dpl-8-ai-design",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "Mastering AI-Powered Product Design",
+      "subtitle": "Create professional covers and mockups fast.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "First Impressions Drive Conversions",
+          "body": "People judge your product by its cover before they ever read a single word of your copy.",
+          "stat": "3.2x",
+          "statLabel": "Higher sales for professional covers"
+        },
+        {
+          "type": "content",
+          "headline": "Designing With AI Tools",
+          "body": "Use AI to bridge the gap between idea and visual reality.",
+          "bullets": [
+            "Use Midjourney or DALL-E for unique, high-quality imagery.",
+            "Use Canva AI for rapid layout and typography.",
+            "Focus on high contrast, bold text, and a single, clear focal point.",
+            "Utilise mockup generators to showcase your digital file as a physical product."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Product Cover",
+          "body": "Put your new skills into practice immediately.",
+          "bullets": [
+            "Choose your preferred AI design tool.",
+            "Generate a primary visual concept.",
+            "Add your title and subtitle using bold, readable fonts.",
+            "Export your file as a high-quality PNG."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a key principle of an effective product cover?",
+          "type": "mcq",
+          "options": [
+            "Include as much information as possible",
+            "Use a single, clear focal point",
+            "Avoid using any text on the image",
+            "Use at least five different fonts"
+          ],
+          "correctIndex": 1,
+          "explanation": "A single focal point helps the viewer instantly understand what the product is without distraction."
+        },
+        {
+          "question": "True or False: Mockup generators help increase the perceived value of digital products.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for physical items",
+            "Only for expensive products"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mockups provide a tangible representation of your digital file, making it feel more substantial and valuable."
+        }
+      ]
+    },
+    {
+      "id": "dpl-9-templates-and-resources",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "Creating High-Value AI Templates",
+      "subtitle": "Build scalable resources that sell.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Scale Your Profits With Templates",
+          "body": "Templates require one-time effort but offer endless value to your customers.",
+          "stat": "89%",
+          "statLabel": "Profit margin for template packs"
+        },
+        {
+          "type": "content",
+          "headline": "Building Interactive Resources",
+          "body": "Move beyond static PDFs to create tools that help your audience work faster.",
+          "bullets": [
+            "Target platforms like Notion, Google Docs, spreadsheets, and Canva.",
+            "Design templates that are interactive and fillable to boost utility.",
+            "Use AI to generate 10 variations or fill-in-the-blank examples quickly.",
+            "Ensure your templates solve a specific, recurring problem."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your First Template",
+          "body": "Create a useful resource your audience will love.",
+          "bullets": [
+            "Select a problem your audience faces.",
+            "Draft the structure using ChatGPT.",
+            "Transfer the content into your chosen platform (e.g., Notion).",
+            "Test the template to ensure it is user-friendly."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are templates highly profitable?",
+          "type": "mcq",
+          "options": [
+            "They require daily updates",
+            "They have high perceived utility and low delivery costs",
+            "They are only for professional developers",
+            "They cannot be sold in packs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Templates are digital assets that you create once and sell repeatedly, offering high margins."
+        },
+        {
+          "question": "True or False: AI can help you generate multiple variations of a template quickly.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for written content",
+            "Only for spreadsheet formulas"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI is excellent at iterating on concepts, allowing you to create diverse template packs in minutes."
+        }
+      ]
+    },
+    {
+      "id": "dpl-10-mini-course-creation",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Building Your AI Mini-Course",
+      "subtitle": "Transform expertise into video education.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Increase Your Product's Value",
+          "body": "Video-based education commands a premium compared to static text-based products.",
+          "stat": "68%",
+          "statLabel": "Higher perceived value than eBooks"
+        },
+        {
+          "type": "content",
+          "headline": "Structuring Your Mini-Course",
+          "body": "Keep it concise, actionable, and focused on a single outcome.",
+          "bullets": [
+            "Structure the course into 5-7 short, digestible lessons.",
+            "Use ChatGPT to outline your curriculum and write scripts.",
+            "Use AI video tools like Synthesia or HeyGen for professional delivery.",
+            "Host on accessible platforms like Gumroad or Teachable."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Outline Your Mini-Course",
+          "body": "Start your journey toward becoming an educator.",
+          "bullets": [
+            "Define the end goal for your student.",
+            "Outline the 5-7 steps needed to reach that goal.",
+            "Use AI to write the script for Lesson 1.",
+            "Read your script aloud to check the pacing."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended structure for a mini-course?",
+          "type": "mcq",
+          "options": [
+            "20-30 long, detailed lectures",
+            "5-7 short, actionable lessons",
+            "A single 2-hour video",
+            "Only text-based PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Short, structured lessons keep students engaged and help them achieve quick wins."
+        },
+        {
+          "question": "True or False: You need high-end studio equipment to create an AI-powered video course.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only if using Synthesia",
+            "Only if using Teachable"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI video tools allow you to create professional-looking video content without needing a camera or studio."
+        }
+      ]
+    },
+    {
+      "id": "dpl-11-quality-check",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "Mastering Your Product Quality Check",
+      "subtitle": "Polish, format, and perfect your output.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Precision Advantage",
+          "body": "Quality isn't just about content; it's about the professional polish that builds instant trust with your buyers.",
+          "stat": "2.8x",
+          "statLabel": "Fewer refund requests with proper formatting"
+        },
+        {
+          "type": "content",
+          "headline": "The Professional Quality Checklist",
+          "body": "Before you hit publish, run your product through this rigorous audit to ensure it meets market standards.",
+          "bullets": [
+            "Eliminate typos and grammatical errors",
+            "Ensure consistent font and layout styles",
+            "Optimise for mobile readability",
+            "Verify value density: Is every paragraph useful?",
+            "Use AI tools like Grammarly or ChatGPT for final proofreading"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Final Polish",
+          "body": "Run your current draft through the checklist above. Identify and fix at least three issues regarding formatting or clarity.",
+          "bullets": [
+            "Read your content aloud to catch awkward phrasing",
+            "Check mobile preview on your phone",
+            "Apply a consistent heading structure"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is mobile readability critical for digital products?",
+          "type": "mcq",
+          "options": [
+            "It is a requirement for Google indexing",
+            "Most customers consume content on mobile devices",
+            "It reduces the file size of your PDF",
+            "It makes the product look longer"
+          ],
+          "correctIndex": 1,
+          "explanation": "With the majority of internet traffic being mobile, ensuring your product is readable on smaller screens is essential for customer satisfaction."
+        },
+        {
+          "question": "Using AI for editing is a waste of time. True or false?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for short-form content",
+            "Only for fiction writers"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI is highly effective at identifying grammatical errors, tone inconsistencies, and improving the flow of your writing."
+        }
+      ]
+    },
+    {
+      "id": "dpl-12-packaging-delivery",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "Professional Packaging and Instant Delivery",
+      "subtitle": "Ensure your product arrives perfectly every time.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Instant Gratification",
+          "body": "In the digital economy, the speed and ease of your delivery mechanism directly influence customer perception.",
+          "stat": "94%",
+          "statLabel": "Of customers prefer instant digital delivery"
+        },
+        {
+          "type": "content",
+          "headline": "Packaging for Impact",
+          "body": "How you bundle your files determines how professional your brand feels upon first interaction.",
+          "bullets": [
+            "PDF: Best for eBooks and guides",
+            ".zip files: Essential for template bundles or assets",
+            "Notion/Hosted links: Best for live, evolving content",
+            "Naming conventions: Keep them clean and descriptive",
+            "Add a README/Quickstart guide for immediate orientation"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Delivery Test",
+          "body": "Export your product in its final format and perform a 'mystery shopper' test by downloading it yourself.",
+          "bullets": [
+            "Verify the file name is professional",
+            "Open the file on a different device to test compatibility",
+            "Ensure the README file is the first thing the user sees"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of a README file?",
+          "type": "mcq",
+          "options": [
+            "To increase the overall file size",
+            "To provide instructions and orientation for the user",
+            "To act as a legal disclaimer only",
+            "To fill up empty space in the folder"
+          ],
+          "correctIndex": 1,
+          "explanation": "A README file helps customers understand how to use your product immediately, reducing support queries."
+        },
+        {
+          "question": "Is it better to send files via email manually?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for high-ticket clients",
+            "Only if the file is large"
+          ],
+          "correctIndex": 1,
+          "explanation": "Manual delivery is not scalable. Use automated platforms to ensure instant delivery, which is what customers expect."
+        }
+      ]
+    },
+    {
+      "id": "dpl-13-storefront-setup",
+      "dayNumber": 13,
+      "moduleId": "module-3",
+      "title": "Building Your High-Converting Storefront",
+      "subtitle": "Launch your shop in under 30 minutes.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Zero to Global Sales",
+          "body": "Choosing the right platform is the difference between struggling with tech and focusing on sales.",
+          "stat": "$850M+",
+          "statLabel": "Earned by creators on Gumroad"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Digital Home",
+          "body": "Pick a platform that handles the heavy lifting of payments, tax, and delivery so you don't have to.",
+          "bullets": [
+            "Gumroad: Simplest entry, great for beginners",
+            "LemonSqueezy: Excellent for tax management and global sales",
+            "Payhip: Great for simple digital downloads",
+            "Key elements: Clear thumbnail, compelling title, transparent pricing",
+            "Focus on the 'Buy' button visibility"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Listing",
+          "body": "Select your chosen platform, set up your account, and create your first product listing today.",
+          "bullets": [
+            "Upload your product thumbnail",
+            "Set your price based on market research",
+            "Write a punchy one-sentence description"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which platform is known for handling global tax compliance for creators?",
+          "type": "mcq",
+          "options": [
+            "LemonSqueezy",
+            "Basic WordPress",
+            "A simple PayPal link",
+            "Dropbox"
+          ],
+          "correctIndex": 0,
+          "explanation": "LemonSqueezy acts as a Merchant of Record, handling global taxes, which simplifies life for creators significantly."
+        },
+        {
+          "question": "Your product title should be as creative and mysterious as possible. True or false?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for high-end products",
+            "Only for cheap products"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clarity beats cleverness. Customers should know exactly what they are buying from the title alone."
+        }
+      ]
+    },
+    {
+      "id": "dpl-14-sales-page",
+      "dayNumber": 14,
+      "moduleId": "module-3",
+      "title": "Writing High-Converting AI Sales Copy",
+      "subtitle": "Use the AIDA framework to sell.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Persuasion at Scale",
+          "body": "Your sales page is your best salesperson, working 24/7. Make sure it speaks the language of your customer.",
+          "stat": "3-5x",
+          "statLabel": "Higher conversion rate for optimised pages"
+        },
+        {
+          "type": "content",
+          "headline": "The AIDA Framework",
+          "body": "Use this classic copywriting structure to guide your prospect from curiosity to purchase.",
+          "bullets": [
+            "Attention: A headline that stops the scroll",
+            "Interest: Highlight the problem your customer faces",
+            "Desire: Explain how your product provides the solution",
+            "Action: A clear, compelling call-to-action (CTA)",
+            "Use AI to draft, then humanise for empathy"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Sales Copy",
+          "body": "Use ChatGPT to draft your sales page using the AIDA framework. Review and refine it to match your unique brand voice.",
+          "bullets": [
+            "Input your product benefits into an AI prompt",
+            "Ask for an AIDA-structured outline",
+            "Add a guarantee to remove purchase risk"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does 'AIDA' stand for in copywriting?",
+          "type": "mcq",
+          "options": [
+            "Attention, Interest, Desire, Action",
+            "Advice, Insight, Data, Analysis",
+            "Audience, Interest, Delivery, Access",
+            "Attention, Importance, Demand, Action"
+          ],
+          "correctIndex": 0,
+          "explanation": "AIDA is the standard framework for moving a customer through the psychological journey of a purchase."
+        },
+        {
+          "question": "Including a guarantee can increase sales by reducing perceived risk. True or false?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for physical items",
+            "Only for services"
+          ],
+          "correctIndex": 0,
+          "explanation": "Guarantees reduce the fear of buyer's remorse, making the decision to purchase much easier for the customer."
+        }
+      ]
+    },
+    {
+      "id": "dpl-15-pricing-psychology",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Pricing Psychology for Maximum Profit",
+      "subtitle": "Master the art of the price tag to boost your conversion rates.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Magic of Price Points",
+          "body": "Your price is a signal of value. Getting the psychology right can be the difference between a sale and a bounce.",
+          "stat": "2.3x",
+          "statLabel": "Higher sales for £27 vs £25"
+        },
+        {
+          "type": "content",
+          "headline": "Strategic Pricing Frameworks",
+          "body": "Don't guess your price. Use these proven methods to maximise your revenue.",
+          "bullets": [
+            "Anchor Pricing: Use a higher-priced 'deluxe' version to make your main offer look like a bargain.",
+            "The Sweet Spot: For a first product, £7 to £47 is the golden zone for impulse buys.",
+            "Tiered Bundles: Offer a basic, standard, and premium tier to increase average order value.",
+            "Common Traps: Avoid underpricing your expertise and never launch without a clear value anchor."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Your Price",
+          "body": "Apply the framework to your own digital product.",
+          "bullets": [
+            "Determine your 'sweet spot' price point.",
+            "Create a comparison anchor (e.g., 'Normally £97, today £47').",
+            "Finalise your price tag for launch."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is £27 often more effective than £25 for digital products?",
+          "type": "mcq",
+          "options": [
+            "It is closer to a round number",
+            "It avoids the 'cheap' perception of standard charm pricing",
+            "It is easier to calculate tax on",
+            "It makes the product seem more exclusive"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pricing at £27 signals higher value compared to the 'bargain bin' feel of £25."
+        },
+        {
+          "question": "An anchor price is used to make the main offer look more expensive.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Not applicable",
+            "Only for physical goods"
+          ],
+          "correctIndex": 1,
+          "explanation": "An anchor price is used to make your main offer look like better value, not more expensive."
+        }
+      ]
+    },
+    {
+      "id": "dpl-16-urgency-social-proof",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "Urgency and Social Proof Tactics",
+      "subtitle": "Convert strangers into buyers through trust and scarcity.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Trust Factor",
+          "body": "Customers need to know they aren't the first ones in the room. Social proof removes the risk of being the 'guinea pig'.",
+          "stat": "34%",
+          "statLabel": "Increase in conversion with social proof"
+        },
+        {
+          "type": "content",
+          "headline": "Building Authority from Scratch",
+          "body": "You don't need a thousand sales to use social proof effectively.",
+          "bullets": [
+            "Launch Discounts: Offer a limited-time price to encourage immediate action.",
+            "Beta Tester Feedback: Use testimonials from early testers to build initial trust.",
+            "Personal Narrative: Share your 'why' and the specific results you've achieved.",
+            "Scarcity Triggers: Use limited-time bonuses or countdown timers to stop procrastination."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Trust Elements",
+          "body": "Prepare your landing page for high conversion.",
+          "bullets": [
+            "Write 3 social proof elements (e.g., beta reviews or your personal journey).",
+            "Define one clear urgency trigger (e.g., 48-hour launch bonus).",
+            "Insert these into your landing page copy."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of an urgency trigger?",
+          "type": "mcq",
+          "options": [
+            "To increase the product price",
+            "To stop potential customers from procrastinating",
+            "To confuse the customer",
+            "To make the product look rare"
+          ],
+          "correctIndex": 1,
+          "explanation": "Urgency triggers encourage immediate action by highlighting that the current opportunity is finite."
+        },
+        {
+          "question": "You can use beta tester reviews as social proof even if you have no public sales yet.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only if they paid full price",
+            "Only if they are famous"
+          ],
+          "correctIndex": 0,
+          "explanation": "Beta testers are excellent for social proof; their experience validates the quality of your product."
+        }
+      ]
+    },
+    {
+      "id": "dpl-17-launch-day",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Launch Day Execution Checklist",
+      "subtitle": "Go live without the panic.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Calm Before the Storm",
+          "body": "Launch day should be about celebration, not troubleshooting. Preparation is your best defence against anxiety.",
+          "stat": "80%",
+          "statLabel": "Of successful launches follow a checklist"
+        },
+        {
+          "type": "content",
+          "headline": "The Ultimate Launch Checklist",
+          "body": "Follow these steps to ensure a smooth transition to live status.",
+          "bullets": [
+            "Purchase Flow Test: Buy your own product using a different email to ensure delivery.",
+            "Multi-Channel Announcement: Post across 3 channels (e.g., email, social media, community).",
+            "Support Readiness: Have a basic FAQ document ready for common customer questions.",
+            "Public Celebration: Share the news with enthusiasm to build excitement."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Execute Your Launch",
+          "body": "Finalise your preparations for the big day.",
+          "bullets": [
+            "Run the 'Purchase Flow Test' on your checkout page.",
+            "Draft your 3 announcement posts.",
+            "Schedule your posts and be ready to celebrate!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important step to take before going live?",
+          "type": "mcq",
+          "options": [
+            "Design a new logo",
+            "Test the purchase flow yourself",
+            "Write a 50-page ebook",
+            "Hire a customer support team"
+          ],
+          "correctIndex": 1,
+          "explanation": "Testing your own purchase flow ensures that customers don't run into technical issues when they try to pay."
+        },
+        {
+          "question": "It is recommended to announce your launch on at least three different channels.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "One channel is sufficient",
+            "Only email is necessary"
+          ],
+          "correctIndex": 0,
+          "explanation": "Using multiple channels increases your reach and ensures your audience sees the announcement."
+        }
+      ]
+    },
+    {
+      "id": "dpl-18-first-ten-sales",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "Securing Your First Ten Sales",
+      "subtitle": "Proven outreach tactics for early traction.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Early Momentum",
+          "body": "Getting your first ten sales isn't about luck; it's about targeted, intentional outreach to your ideal audience.",
+          "stat": "73%",
+          "statLabel": "Of creators get sales within 7 days of active promotion"
+        },
+        {
+          "type": "content",
+          "headline": "Tactics for Your First Ten",
+          "body": "Stop waiting for traffic to find you. Take these proactive steps to jumpstart your sales.",
+          "bullets": [
+            "Directly message 10 people in your niche.",
+            "Post in 3 relevant online communities.",
+            "Offer a limited-time launch discount.",
+            "Leverage your existing professional network.",
+            "Cross-promote with fellow creators."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Outreach",
+          "body": "Don't overthink it. Reach out to prospects who genuinely need your solution.",
+          "bullets": [
+            "Identify 5 potential customers.",
+            "Draft a personalised, non-spammy DM.",
+            "Send the messages and track responses."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which outreach tactic is most effective for immediate feedback?",
+          "type": "mcq",
+          "options": [
+            "Sending cold emails to random lists",
+            "Directly messaging people in your niche",
+            "Waiting for organic SEO traffic",
+            "Posting on a personal Facebook wall"
+          ],
+          "correctIndex": 1,
+          "explanation": "Direct DMs allow for personal connection and immediate dialogue with your target audience."
+        },
+        {
+          "question": "Is it recommended to offer a launch discount for the first few sales?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for high-ticket items",
+            "Only for low-ticket items"
+          ],
+          "correctIndex": 0,
+          "explanation": "Offering a launch discount creates urgency and lowers the barrier to entry for your first customers."
+        }
+      ]
+    },
+    {
+      "id": "dpl-19-product-line",
+      "dayNumber": 19,
+      "moduleId": "module-4",
+      "title": "Scaling With a Product Line",
+      "subtitle": "Turning one product into many.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Multiply Your Revenue Potential",
+          "body": "Don't stop at one. Developing a product line allows you to serve your customers at different stages of their journey.",
+          "stat": "4.7x",
+          "statLabel": "More revenue for creators with 3+ products"
+        },
+        {
+          "type": "content",
+          "headline": "The Product Ladder Strategy",
+          "body": "Use these strategies to build a cohesive ecosystem of products that grow with your audience.",
+          "bullets": [
+            "Upsells: Offer premium versions at checkout.",
+            "Complementary products: Solve related pain points.",
+            "Bundling: Group items for higher value.",
+            "Seasonal variations: Keep content fresh.",
+            "Premium tiers: Offer high-touch support."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Brainstorm Your Evolution",
+          "body": "Look at your current product and consider what the customer needs next.",
+          "bullets": [
+            "List 3 problems your user faces after using your product.",
+            "Draft titles for 3 follow-up digital products.",
+            "Map these into a simple ladder."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of a 'Product Ladder'?",
+          "type": "mcq",
+          "options": [
+            "It confuses the customer",
+            "It increases total lifetime customer value",
+            "It requires less marketing effort",
+            "It removes the need for a launch"
+          ],
+          "correctIndex": 1,
+          "explanation": "A product ladder lets you serve the same customer repeatedly with increasingly valuable solutions."
+        },
+        {
+          "question": "Is an 'upsell' offered after the purchase is complete?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for physical goods",
+            "Only for expensive products"
+          ],
+          "correctIndex": 0,
+          "explanation": "Upsells are typically offered immediately after the initial purchase to increase order value."
+        }
+      ]
+    },
+    {
+      "id": "dpl-20-passive-income-systems",
+      "dayNumber": 20,
+      "moduleId": "module-4",
+      "title": "Building Passive Income Systems",
+      "subtitle": "Automating sales for 24/7 revenue.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Make Money While You Sleep",
+          "body": "True passive income comes from building assets that work for you long after you click 'publish'.",
+          "stat": "365",
+          "statLabel": "Days per year your evergreen funnel can sell"
+        },
+        {
+          "type": "content",
+          "headline": "Three Automated Traffic Systems",
+          "body": "Use AI to help build these engines that drive consistent traffic to your sales pages.",
+          "bullets": [
+            "SEO Blog Posts: Target specific buyer keywords.",
+            "Pinterest Pins: Create visual, evergreen discovery.",
+            "Email Sequences: Nurture leads with automated pitches."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your SEO Strategy",
+          "body": "Pick one keyword your ideal customer is searching for and craft your first evergreen article.",
+          "bullets": [
+            "Research a high-intent buyer keyword.",
+            "Use AI to generate a blog outline.",
+            "Write the intro and key takeaways."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is considered an 'evergreen' traffic source?",
+          "type": "mcq",
+          "options": [
+            "Live webinar sessions",
+            "SEO-optimised blog posts",
+            "Limited-time discount codes",
+            "One-off social media posts"
+          ],
+          "correctIndex": 1,
+          "explanation": "SEO posts remain discoverable via search engines for years, providing consistent traffic."
+        },
+        {
+          "question": "Can AI assist in building an email welcome sequence?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only for paid AI tools",
+            "Only for professional copywriters"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI is excellent at drafting email sequences that nurture leads and pitch products effectively."
+        }
+      ]
+    },
+    {
+      "id": "dpl-21-growth-plan",
+      "dayNumber": 21,
+      "moduleId": "module-4",
+      "title": "The 30-Day Post-Launch Plan",
+      "subtitle": "Structured growth for long-term success.",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Sustain Your Launch Momentum",
+          "body": "The launch is just the beginning. A structured plan helps you turn your initial success into a sustainable business.",
+          "stat": "5x",
+          "statLabel": "Faster revenue growth for structured planners"
+        },
+        {
+          "type": "content",
+          "headline": "The Four-Week Growth Framework",
+          "body": "Follow this roadmap to optimise and grow your digital product business systematically.",
+          "bullets": [
+            "Week 1: Gather feedback and social proof.",
+            "Week 2: Optimise pages based on data.",
+            "Week 3: Create complementary content assets.",
+            "Week 4: Plan your next product launch."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Success",
+          "body": "Create your personal 30-day plan to keep yourself accountable.",
+          "bullets": [
+            "Define a revenue goal for 30 days.",
+            "Assign one task to each week.",
+            "Set a date for your next review."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of Week 1 post-launch?",
+          "type": "mcq",
+          "options": [
+            "Building a second product",
+            "Gathering feedback and reviews",
+            "Ignoring the customers",
+            "Changing the product price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gathering feedback and social proof is vital for improving the product and building trust with future buyers."
+        },
+        {
+          "question": "Should you review your sales data before optimising your landing page?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False",
+            "Only if you have 1000 sales",
+            "Only if you have 0 sales"
+          ],
+          "correctIndex": 0,
+          "explanation": "Data-driven decisions are always more effective than guessing when optimising your sales page."
+        }
+      ]
+    }
+  ]
+}

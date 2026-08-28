@@ -24,7 +24,6 @@ const EnvSchema = z.object({
   META_PIXEL_ID: z.string().optional().default(''),
   META_ACCESS_TOKEN: z.string().optional().default(''),
   MARKETING_DIST: z.string().optional().default(''),
-  LMS_DIST: z.string().optional().default(''),
   PUBLIC_ORIGIN: z.string().optional().default(''),
   OPENAI_API_KEY: z.string().optional().default(''),
   ANTHROPIC_API_KEY: z.string().optional().default(''),

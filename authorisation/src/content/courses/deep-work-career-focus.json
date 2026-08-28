@@ -1,0 +1,2086 @@
+{
+  "id": "deep-work-career-focus",
+  "title": "Deep Work & Career Focus",
+  "subtitle": "Master the rare ability to focus without distraction, build career capital through deliberate practice, and produce work so good they can't ignore you.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "dw-module-1",
+      "moduleNumber": 1,
+      "title": "The Deep Work Foundation",
+      "subtitle": "Understand why focus is the new competitive advantage — and diagnose what's killing yours.",
+      "days": "Lessons 1–7",
+      "skill": "Recognise the value of deep work and identify your personal distraction patterns",
+      "lessonIds": [
+        "dw-1-deep-work-hypothesis",
+        "dw-2-shallow-work-audit",
+        "dw-3-attention-residue",
+        "dw-4-craftsman-mindset",
+        "dw-5-focus-environment",
+        "dw-6-digital-minimalism",
+        "dw-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "dw-module-2",
+      "moduleNumber": 2,
+      "title": "Build Your Focus System",
+      "subtitle": "Design rituals, routines, and habits that make deep work automatic — not effortful.",
+      "days": "Lessons 8–14",
+      "skill": "Create a personalised deep work system using habit stacking and ritual design",
+      "lessonIds": [
+        "dw-8-deep-work-rituals",
+        "dw-9-time-blocking",
+        "dw-10-habit-stacking",
+        "dw-11-4dx-execution",
+        "dw-12-productive-meditation",
+        "dw-13-energy-management",
+        "dw-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "dw-module-3",
+      "moduleNumber": 3,
+      "title": "Sustain & Compound",
+      "subtitle": "Turn deep work from a practice into an identity — and watch your career capital compound.",
+      "days": "Lessons 15–21",
+      "skill": "Maintain deep work consistently and convert focus into career-changing results",
+      "lessonIds": [
+        "dw-15-deliberate-practice",
+        "dw-16-career-capital-theory",
+        "dw-17-saying-no",
+        "dw-18-rest-and-recovery",
+        "dw-19-deep-work-scorecard",
+        "dw-20-identity-shift",
+        "dw-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "dw-1-deep-work-hypothesis",
+      "dayNumber": 1,
+      "moduleId": "dw-module-1",
+      "title": "The Deep Work Hypothesis",
+      "subtitle": "Why the ability to focus deeply is becoming the most valuable skill in the modern economy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Ability to Focus Is Becoming Rare — and Valuable",
+          "body": "Cal Newport's \"Deep Work Hypothesis\" states: the ability to perform deep work is becoming increasingly rare at exactly the same time it's becoming increasingly valuable. Those who cultivate this ability will thrive. Those who don't will fall behind — no matter how talented they are.",
+          "stat": "4 hours",
+          "statLabel": "maximum deep work most people can sustain daily — yet few even manage 1"
+        },
+        {
+          "type": "content",
+          "headline": "What Deep Work Actually Is",
+          "body": "Deep work is professional activity performed in a state of distraction-free concentration that pushes your cognitive capabilities to their limit. It creates new value, improves your skill, and is hard to replicate. It's the opposite of shallow work — logistical tasks that don't require intense focus.",
+          "bullets": [
+            "Deep: Writing a strategy document, coding a complex feature, mastering a new skill",
+            "Shallow: Email, Slack, status meetings, formatting spreadsheets",
+            "Deep work produces the outputs that actually advance your career",
+            "Shallow work feels productive but rarely creates lasting value"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Two Core Abilities for Thriving",
+          "body": "Newport argues that in the new economy, two abilities are becoming essential. Both depend on your capacity for deep work — making it the foundational meta-skill of career success.",
+          "bullets": [
+            "1. Quickly master hard things (requires sustained, undistracted learning)",
+            "2. Produce at an elite level in quality and speed (requires deep focus)",
+            "Both abilities are impossible without the capacity for extended concentration",
+            "Talent alone is not enough — talent × focus = exceptional output"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Deep Work Economy",
+          "body": "Three groups will thrive in the new economy: those who can work with intelligent machines, those who are the best at what they do, and those with access to capital. The first two groups depend entirely on the ability to do deep work consistently.",
+          "stat": "$10,000+",
+          "statLabel": "annual value difference between deep workers and their distracted peers"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Deep Work Reality Check",
+          "body": "Think about yesterday. How many hours did you spend in true deep work — no notifications, no multitasking, full cognitive engagement? Be honest. Most people discover it's under 1 hour. Write down your number. Then write what you spent the rest of your \"productive\" time on. This gap is your opportunity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Cal Newport's \"Deep Work Hypothesis\"?",
+          "type": "mcq",
+          "options": [
+            "Deep focus is becoming rare and valuable simultaneously",
+            "Working long hours guarantees career success",
+            "Everyone should work in complete isolation",
+            "Shallow work is equally important to deep work"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Deep Work Hypothesis states that the ability to perform deep work is becoming increasingly rare at exactly the same time it's becoming increasingly valuable in the economy."
+        },
+        {
+          "question": "Deep work is defined as professional activity performed in distraction-free concentration that pushes cognitive capabilities to their limit.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is Newport's precise definition. Deep work creates new value, improves skill, and is hard to replicate — distinguishing it from shallow logistical tasks."
+        },
+        {
+          "question": "Which two core abilities does Newport say are essential for thriving in the modern economy?",
+          "type": "mcq",
+          "options": [
+            "Quickly mastering hard things and producing at an elite level",
+            "Networking effectively and managing large teams",
+            "Working longer hours and answering emails faster",
+            "Multitasking efficiently and attending more meetings"
+          ],
+          "correctIndex": 0,
+          "explanation": "Newport identifies two essential abilities: quickly mastering hard things (learning) and producing at an elite level in quality and speed. Both require the capacity for deep, sustained concentration."
+        }
+      ]
+    },
+    {
+      "id": "dw-2-shallow-work-audit",
+      "dayNumber": 2,
+      "moduleId": "dw-module-1",
+      "title": "The Shallow Work Audit",
+      "subtitle": "Expose where your time actually goes — and reclaim hours you didn't know you were losing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Probably Spending 70% of Your Day on Shallow Work",
+          "body": "A study by RescueTime found that knowledge workers spend an average of just 2 hours and 48 minutes on productive work per 8-hour day. The rest? Email, messaging, context-switching, and low-value administrative tasks. You can't fix what you can't see — today you'll see exactly where your focus goes.",
+          "stat": "2h 48m",
+          "statLabel": "of productive work per 8-hour day for the average knowledge worker"
+        },
+        {
+          "type": "content",
+          "headline": "Deep vs. Shallow: The Litmus Test",
+          "body": "Newport offers a simple test to classify any task: \"How long would it take to train a smart recent graduate to do this?\" If the answer is months or years, it's deep work. If it's weeks or days, it's shallow. Most people are shocked at how little of their day passes this test.",
+          "bullets": [
+            "Deep: Requires expertise, cannot be easily outsourced, creates unique value",
+            "Shallow: Could be delegated, follows a template, doesn't stretch you",
+            "Neither is \"bad\" — but the ratio matters enormously for career growth",
+            "Elite performers maintain a 4:1 deep-to-shallow ratio minimum"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Hidden Cost of Context Switching",
+          "body": "Every time you switch from one task to another, research shows you lose 23 minutes of focus. That's not a metaphor — it's measured cognitive residue. Five interruptions per hour means you never actually reach deep focus. The shallow work isn't just wasting time — it's poisoning your deep work too.",
+          "stat": "23 min",
+          "statLabel": "average time to regain full focus after a single interruption"
+        },
+        {
+          "type": "content",
+          "headline": "The Shallow Work Creep",
+          "body": "Shallow work expands to fill available time unless you actively fight it. It's addictive because it provides constant micro-rewards (inbox zero, quick replies, completed checklists) while deep work feels uncomfortable and uncertain in the moment.",
+          "bullets": [
+            "Email feels productive but rarely produces career-defining outcomes",
+            "Meetings feel important but often substitute for actual decisions",
+            "Busyness signals effort to others but masks lack of real output",
+            "The most successful people are ruthless about protecting deep time"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Shallow Work Audit",
+          "body": "Review your last workday hour by hour. For each block, label it Deep (D) or Shallow (S) using Newport's litmus test. Calculate your ratio. Most people discover they're running 30:70 deep:shallow. Write your current ratio, then set a target for this week (aim for 50:50 as a starting goal). We'll build systems to get you there."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Newport's litmus test for deep vs. shallow work?",
+          "type": "mcq",
+          "options": [
+            "\"How long would it take to train a smart recent graduate to do this?\"",
+            "\"Does this task require a computer?\"",
+            "\"Is this task enjoyable?\"",
+            "\"Does my boss consider this important?\""
+          ],
+          "correctIndex": 0,
+          "explanation": "If a smart recent graduate could learn the task in weeks or days, it's shallow. If it would take months or years of training, it's deep work. This simple test reveals how much of your day actually requires your unique expertise."
+        },
+        {
+          "question": "It takes an average of 23 minutes to regain full focus after a single interruption.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research by Gloria Mark at UC Irvine found that it takes approximately 23 minutes to fully recover focus after an interruption — meaning frequent context switches prevent you from ever reaching deep concentration."
+        },
+        {
+          "question": "Why does shallow work tend to expand over time?",
+          "type": "mcq",
+          "options": [
+            "It provides constant micro-rewards that feel productive",
+            "It's always more important than deep work",
+            "Managers require more shallow work as you get promoted",
+            "Deep work becomes impossible after age 30"
+          ],
+          "correctIndex": 0,
+          "explanation": "Shallow work is addictive because it offers constant micro-rewards — inbox zero, quick replies, ticked checkboxes. These feel productive in the moment but rarely produce career-defining results."
+        }
+      ]
+    },
+    {
+      "id": "dw-3-attention-residue",
+      "dayNumber": 3,
+      "moduleId": "dw-module-1",
+      "title": "Attention Residue",
+      "subtitle": "The hidden reason your focus feels scattered — and how to clean it up.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Brain Is Still Working on the Last Task",
+          "body": "Professor Sophie Leroy's research revealed a phenomenon called \"attention residue\" — when you switch tasks, part of your brain keeps processing the previous one. You're never fully present on the new task. The more you switch, the thicker the residue, and the worse your performance on everything.",
+          "stat": "20%",
+          "statLabel": "drop in performance caused by attention residue from task switching"
+        },
+        {
+          "type": "content",
+          "headline": "How Attention Residue Works",
+          "body": "When you move from Task A to Task B, your brain doesn't make a clean break. Thoughts about Task A linger — especially if Task A was unfinished or had time pressure. This residue occupies working memory that Task B needs, degrading your performance on both.",
+          "bullets": [
+            "Worst when previous task is incomplete (open loops drain attention)",
+            "Intensified by time pressure (\"I need to get back to that email\")",
+            "Cumulative — each switch adds another layer of residue",
+            "You can't feel it happening, which makes it more dangerous"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Multitasking Is a Myth",
+          "body": "Your brain doesn't multitask — it rapidly switches between tasks, paying attention residue tax each time. People who think they're great multitaskers actually perform worse than self-identified single-taskers, even on the multitasking tests themselves.",
+          "stat": "40%",
+          "statLabel": "more errors made by people who frequently multitask"
+        },
+        {
+          "type": "content",
+          "headline": "Clearing the Residue",
+          "body": "You can't eliminate attention residue entirely, but you can minimise it with specific strategies that create clean cognitive transitions between tasks.",
+          "bullets": [
+            "Complete tasks fully before switching (or reach a clear stopping point)",
+            "Write a \"handoff note\" when you must switch: where you left off, next step",
+            "Use a 2-minute transition ritual between tasks (stretch, breathe, reset)",
+            "Batch similar tasks together to reduce the number of switches",
+            "Start your day with the hardest deep work — before residue accumulates"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Clean Start Experiment",
+          "body": "Tomorrow, try this: before starting your most important deep work task, close every tab, silence every notification, and write down any lingering open loops (\"I need to reply to Sarah by 3pm\"). This \"brain dump\" clears residue by externalising it. Then set a timer for 45 minutes of single-task focus. Notice how different it feels."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"attention residue\" according to Sophie Leroy's research?",
+          "type": "mcq",
+          "options": [
+            "Part of your brain keeps processing the previous task after you switch",
+            "A type of fatigue from working too many hours",
+            "The feeling of boredom during repetitive tasks",
+            "A medical condition that requires treatment"
+          ],
+          "correctIndex": 0,
+          "explanation": "Attention residue is the phenomenon where part of your cognitive processing remains stuck on the previous task after switching, occupying working memory needed for the current task and degrading performance."
+        },
+        {
+          "question": "People who consider themselves great multitaskers actually perform better on cognitive tests.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows the opposite — frequent multitaskers actually perform worse than single-taskers, even on multitasking tests. The brain doesn't truly multitask; it rapidly switches with residue penalties."
+        },
+        {
+          "question": "Which strategy helps clear attention residue before deep work?",
+          "type": "mcq",
+          "options": [
+            "Write down open loops to externalise them before starting",
+            "Keep checking email so nothing builds up",
+            "Work on 3-4 tasks simultaneously to stay flexible",
+            "Skip breaks to maintain momentum all day"
+          ],
+          "correctIndex": 0,
+          "explanation": "Externalising open loops (writing them down) clears cognitive residue by giving your brain permission to stop processing them. Combined with closing tabs and silencing notifications, this creates a clean cognitive slate."
+        }
+      ]
+    },
+    {
+      "id": "dw-4-craftsman-mindset",
+      "dayNumber": 4,
+      "moduleId": "dw-module-1",
+      "title": "The Craftsman Mindset",
+      "subtitle": "Stop asking what your work can do for you — start asking what you can bring to your work.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"Follow Your Passion\" Is Dangerous Advice",
+          "body": "Cal Newport's research in \"So Good They Can't Ignore You\" reveals a counterintuitive truth: the people who end up most passionate about their work didn't start by following passion. They started by getting so good at something valuable that passion followed. The craftsman mindset — obsessing over the quality of your output — beats the passion mindset every time.",
+          "stat": "65%",
+          "statLabel": "of people who \"followed their passion\" reported dissatisfaction within 3 years"
+        },
+        {
+          "type": "content",
+          "headline": "Passion Mindset vs. Craftsman Mindset",
+          "body": "The passion mindset asks: \"What can the world offer me?\" The craftsman mindset asks: \"What can I offer the world?\" This simple flip changes everything about how you approach your daily work and long-term career development.",
+          "bullets": [
+            "Passion mindset: Focused on what you're getting (fulfilment, perks, recognition)",
+            "Craftsman mindset: Focused on the value you're producing (quality, skill, output)",
+            "Passion mindset creates chronic dissatisfaction (\"Is this really my calling?\")",
+            "Craftsman mindset creates competence that eventually generates passion"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Career Capital Theory",
+          "body": "Great careers aren't found — they're earned through career capital: rare and valuable skills. The craftsman mindset is the engine for building career capital. The more capital you accumulate, the more control, autonomy, and meaning you can negotiate into your work.",
+          "stat": "10,000 hrs",
+          "statLabel": "approximate deliberate practice needed to build world-class career capital"
+        },
+        {
+          "type": "content",
+          "headline": "How Deep Work Serves the Craftsman",
+          "body": "Deep work is the craftsman's workshop. Without sustained focus, you can't push past comfortable skill levels into genuine mastery. Every hour of deep work deposits career capital that compounds over years.",
+          "bullets": [
+            "Shallow workers plateau early — they repeat what's comfortable",
+            "Deep workers compound — each session builds on the last",
+            "The craftsman measures success by output quality, not hours logged",
+            "Deep work + craftsman mindset = the fastest path to \"so good they can't ignore you\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Craftsman Commitment",
+          "body": "Identify the one skill that, if you became exceptional at it, would make you most valuable in your current or desired role. Write it down. Then ask: \"Am I deliberately practising this skill, or just doing it on autopilot?\" If the answer is autopilot, you've found your deep work focus for the next 30 days. Commit to one daily session of deliberate skill-building."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"craftsman mindset\" according to Cal Newport?",
+          "type": "mcq",
+          "options": [
+            "Focusing on the quality and value of what you produce",
+            "Only working in traditional manual trades",
+            "Following your passion above all else",
+            "Working as many hours as possible"
+          ],
+          "correctIndex": 0,
+          "explanation": "The craftsman mindset asks \"What can I offer the world?\" — it focuses on producing high-quality, valuable output rather than asking what work can give you (the passion mindset)."
+        },
+        {
+          "question": "People who \"follow their passion\" always end up more satisfied with their careers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Newport's research shows the opposite — passion usually follows mastery, not the other way around. The passion mindset often creates chronic dissatisfaction because no job perfectly matches a pre-existing passion."
+        },
+        {
+          "question": "What is \"career capital\"?",
+          "type": "mcq",
+          "options": [
+            "Rare and valuable skills that give you leverage in your career",
+            "The money you save from your salary",
+            "Your professional network of contacts",
+            "The number of years you've been in your industry"
+          ],
+          "correctIndex": 0,
+          "explanation": "Career capital refers to rare and valuable skills accumulated through deliberate practice. The more capital you build, the more control, autonomy, and meaning you can negotiate into your work life."
+        }
+      ]
+    },
+    {
+      "id": "dw-5-focus-environment",
+      "dayNumber": 5,
+      "moduleId": "dw-module-1",
+      "title": "The Focus Environment",
+      "subtitle": "Design your physical and digital space so deep work becomes the path of least resistance.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Environment Is More Powerful Than Your Willpower",
+          "body": "James Clear's research on habits reveals that environment design beats motivation every time. If your phone is on your desk, you'll check it — not because you lack discipline, but because the cue is present. The people who appear to have incredible focus often just have better-designed environments.",
+          "stat": "3-4x",
+          "statLabel": "more likely to maintain focus when the environment is designed for it"
+        },
+        {
+          "type": "content",
+          "headline": "The Two-Environment Strategy",
+          "body": "The most productive deep workers maintain a clear separation between spaces for focus and spaces for everything else. Even small environmental cues train your brain to switch modes automatically.",
+          "bullets": [
+            "Deep work space: Minimal, specific desk/area/room for focused work only",
+            "Shallow work space: Where you handle email, calls, admin tasks",
+            "Never do shallow work in your deep work space (it poisons the association)",
+            "Even a different chair or desk orientation can serve as a cue"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Friction Design for Digital Spaces",
+          "body": "Make deep work easy and distractions hard — not through willpower but through deliberate friction. Every extra step between you and a distraction dramatically reduces the chance you'll indulge.",
+          "bullets": [
+            "Log out of social media (the login step creates friction)",
+            "Move distracting apps off your phone home screen",
+            "Use website blockers during deep work sessions",
+            "Turn off all notifications except from actual humans who need you",
+            "Keep your deep work tools (writing app, code editor) always open and ready"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Grand Gesture",
+          "body": "Newport describes \"grand gestures\" — radical environmental changes that signal commitment to deep work. J.K. Rowling booked a hotel suite to finish Deathly Hallows. Bill Gates took \"Think Weeks\" alone in a cabin. You don't need their budget — even going to a library signals intent to your brain.",
+          "stat": "50%",
+          "statLabel": "increase in deep work output when working in a dedicated \"grand gesture\" space"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Deep Work Environment",
+          "body": "Choose one space (or area of a space) that will become your deep work zone. Remove or hide 3 distractions from it right now. Add one cue that signals \"focus time\" (a specific lamp, a certain playlist starting, closing the door). Tomorrow, try your first deep work session in this environment and notice the difference. Small changes, big impact."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is environment design more effective than willpower for maintaining focus?",
+          "type": "mcq",
+          "options": [
+            "Environmental cues automatically trigger behaviours without requiring conscious effort",
+            "Willpower doesn't exist at all",
+            "Environment only matters for creative work",
+            "You can never change your habits without changing cities"
+          ],
+          "correctIndex": 0,
+          "explanation": "Environmental cues trigger automatic behaviours — if a phone is visible, you'll reach for it regardless of discipline. Designing the environment removes the need for constant willpower expenditure."
+        },
+        {
+          "question": "You should do both deep and shallow work in the same space to maximise efficiency.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mixing deep and shallow work in the same space weakens the environmental association. Keeping spaces separate trains your brain to automatically enter focus mode in your deep work zone."
+        },
+        {
+          "question": "What is a \"grand gesture\" in the context of deep work?",
+          "type": "mcq",
+          "options": [
+            "A radical environmental change that signals commitment to focused work",
+            "Publicly announcing your goals on social media",
+            "Buying the most expensive equipment possible",
+            "Working 16-hour days without breaks"
+          ],
+          "correctIndex": 0,
+          "explanation": "Grand gestures are radical environmental changes — booking a hotel, going to a library, taking a cabin retreat — that signal serious commitment and create psychological pressure to produce deep work."
+        }
+      ]
+    },
+    {
+      "id": "dw-6-digital-minimalism",
+      "dayNumber": 6,
+      "moduleId": "dw-module-1",
+      "title": "Digital Minimalism",
+      "subtitle": "Reclaim your attention from apps designed to steal it — without becoming a Luddite.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Phone Checks You 96 Times a Day",
+          "body": "The average person picks up their phone 96 times daily — once every 10 minutes during waking hours. Each check triggers attention residue. Social media companies employ hundreds of engineers specifically to make their products more addictive. You're not weak — you're fighting a machine designed to exploit your neurology.",
+          "stat": "96",
+          "statLabel": "times per day the average person checks their phone"
+        },
+        {
+          "type": "content",
+          "headline": "The Attention Economy",
+          "body": "Your attention is the most valuable resource you have — and an entire industry is competing to harvest it. Understanding this isn't paranoia; it's the necessary first step to taking back control.",
+          "bullets": [
+            "Every \"free\" app is funded by selling your attention to advertisers",
+            "Variable rewards (like social feeds) exploit the same circuits as slot machines",
+            "Push notifications are interruption weapons — each one costs you 23 min of focus",
+            "The business model depends on you being unable to stop scrolling"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Digital Minimalism as a Philosophy",
+          "body": "Newport's digital minimalism isn't anti-technology — it's intentional technology use. You choose tools based on whether they deliver significant value to things you deeply care about, and you reject everything else regardless of small benefits.",
+          "stat": "30 days",
+          "statLabel": "digital declutter period Newport recommends to reset your baseline"
+        },
+        {
+          "type": "content",
+          "headline": "The Digital Declutter Process",
+          "body": "Instead of adding rules piecemeal, Newport recommends a complete reset followed by intentional re-introduction. This breaks habits and gives you a clear baseline to evaluate from.",
+          "bullets": [
+            "Step 1: Remove all optional technology for 30 days (social, news, entertainment apps)",
+            "Step 2: During the break, rediscover offline activities that satisfy you",
+            "Step 3: After 30 days, re-introduce only what passes a strict value test",
+            "Step 4: For each re-introduced tool, set specific rules for when and how you use it"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Mini Digital Declutter",
+          "body": "You don't need to do a full 30-day reset today. Start with a 24-hour experiment: delete or log out of your most-used social media app for one full day. Notice what happens — the urges, the boredom, what you do instead. Write down: (1) How often did I reach for it? (2) What did I do instead? (3) Did I miss anything that actually mattered? Most people discover the answer to #3 is \"nothing.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"digital minimalism\" according to Newport?",
+          "type": "mcq",
+          "options": [
+            "Intentionally choosing technology that delivers significant value to what you care about",
+            "Completely avoiding all technology and living offline",
+            "Using every available app but setting time limits",
+            "Only using technology for work purposes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Digital minimalism isn't anti-technology — it's a philosophy of intentional use. You adopt tools only when they deliver significant value to things you deeply care about, rejecting everything else regardless of minor benefits."
+        },
+        {
+          "question": "The average person checks their phone 96 times per day.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows the average person picks up their phone 96 times daily — approximately once every 10 minutes during waking hours. Each check triggers attention residue and fragments focus capacity."
+        },
+        {
+          "question": "What is the first step of Newport's Digital Declutter process?",
+          "type": "mcq",
+          "options": [
+            "Remove all optional technology for 30 days",
+            "Buy a basic phone without apps",
+            "Set a 1-hour daily screen time limit",
+            "Delete all social media accounts permanently"
+          ],
+          "correctIndex": 0,
+          "explanation": "The declutter starts with removing all optional technology for 30 days to break habits and reset your baseline. After the break, you intentionally re-introduce only tools that pass a strict value test."
+        }
+      ]
+    },
+    {
+      "id": "dw-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "dw-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate your deep work foundation — you now understand the problem better than 99% of people.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now See What Others Can't",
+          "body": "In 6 days you've understood why deep work matters, audited your shallow habits, learned about attention residue, adopted the craftsman mindset, designed your environment, and confronted digital addiction. You see the attention economy for what it is — and you have tools to fight back. Today we consolidate.",
+          "stat": "6 tools",
+          "statLabel": "in your deep work foundation that most professionals never discover"
+        },
+        {
+          "type": "content",
+          "headline": "Your Deep Work Diagnostic — Complete",
+          "body": "Module 1 was about diagnosis. You now have a clear picture of where your focus stands. Let's review what you've mapped:",
+          "bullets": [
+            "Your current deep:shallow work ratio (Lesson 2)",
+            "How attention residue is fragmenting your output (Lesson 3)",
+            "Your craftsman skill to develop (Lesson 4)",
+            "Your designed focus environment (Lesson 5)",
+            "Your digital minimalism starting point (Lesson 6)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Awareness Advantage",
+          "body": "Just knowing about deep work puts you ahead. But knowledge without systems fades quickly. Module 2 will turn your awareness into automated routines — rituals, time blocks, and habit stacks that make deep work effortless rather than exhausting.",
+          "stat": "80%",
+          "statLabel": "of people who learn about deep work fail to sustain it without systems"
+        },
+        {
+          "type": "content",
+          "headline": "Your Module 1 Commitments",
+          "body": "Before moving to systems, confirm these foundation commitments. Each one is small but creates the conditions for Module 2 to work.",
+          "bullets": [
+            "I know my #1 craftsman skill to develop through deep work",
+            "I have a designated deep work space (even if it's just a specific chair)",
+            "I've reduced at least 3 digital distractions from my environment",
+            "I understand that focus is a skill I'm building, not a trait I lack"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Deep Work Baseline Score",
+          "body": "Rate yourself 1-10 on each: (1) Hours of deep work per day, (2) Ability to resist distraction, (3) Quality of focused output, (4) Environment design, (5) Digital intentionality. Write your total (out of 50). This is your baseline. We'll revisit it at the end of the course. Module 2 starts tomorrow — where we build the systems that make these scores climb automatically."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was the primary purpose of Module 1?",
+          "type": "mcq",
+          "options": [
+            "Diagnosing your current focus patterns and understanding why deep work matters",
+            "Building a complete daily routine for deep work",
+            "Eliminating all technology from your life",
+            "Finding your passion and ideal career"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 1 was diagnostic — understanding the deep work hypothesis, auditing shallow work, recognising attention residue, adopting the craftsman mindset, and designing your environment. Module 2 builds the systems."
+        },
+        {
+          "question": "80% of people who learn about deep work fail to sustain it without building systems.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Knowledge alone fades quickly. Without rituals, time blocks, and habit stacks (Module 2), most people revert to their old distracted patterns within weeks of learning about deep work."
+        },
+        {
+          "question": "What should you have identified by the end of Module 1?",
+          "type": "mcq",
+          "options": [
+            "Your #1 craftsman skill and a designated deep work space",
+            "A complete 5-year career plan",
+            "Your ideal salary and job title",
+            "A list of 10 books to read about productivity"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 1's key outputs are: identifying your craftsman skill to develop, designating a deep work space, reducing digital distractions, and understanding that focus is a skill to build."
+        }
+      ]
+    },
+    {
+      "id": "dw-8-deep-work-rituals",
+      "dayNumber": 8,
+      "moduleId": "dw-module-2",
+      "title": "Deep Work Rituals",
+      "subtitle": "Create a startup sequence that launches you into focus — without relying on motivation.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The World's Best Thinkers All Have Rituals",
+          "body": "Darwin walked the same path every morning before writing. Hemingway sharpened 20 pencils. Maya Angelou rented a hotel room and arrived at 6:30am. These aren't quirks — they're cognitive launch sequences. A ritual removes the decision of \"should I do deep work?\" and replaces it with an automatic trigger. You don't need motivation when you have ritual.",
+          "stat": "90%",
+          "statLabel": "of prolific creators credit a consistent ritual for their output"
+        },
+        {
+          "type": "content",
+          "headline": "Why Rituals Work (The Science)",
+          "body": "Rituals work because they offload the decision to start from your conscious mind (which is easily talked out of things) to your automatic behaviour system. They create a \"cognitive ramp\" that eases you into focus without willpower expenditure.",
+          "bullets": [
+            "Decision fatigue: Every choice drains willpower — rituals eliminate the choice",
+            "Contextual cueing: Repeated sequences become automatic triggers for focus states",
+            "Reduced activation energy: Starting is the hardest part — rituals lower the barrier",
+            "Identity reinforcement: \"I'm the person who does deep work every morning at 7\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Four Disciplines of a Deep Work Ritual",
+          "body": "Newport identifies four things every effective deep work ritual must specify. Without all four, the ritual breaks down under pressure.",
+          "bullets": [
+            "Where: Your specific deep work location (the same one every time)",
+            "When: Exact start time and duration (non-negotiable)",
+            "How: Rules for the session (no phone, specific tools open, door closed)",
+            "Support: What keeps you going (coffee ready, water bottle, specific music)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Shutdown Ritual (Equally Important)",
+          "body": "A shutdown ritual is how you end deep work cleanly — so work doesn't bleed into your evening and attention residue doesn't follow you home. Newport uses a specific phrase: \"Shutdown complete.\" This signals to your brain that it's safe to stop processing.",
+          "stat": "5 min",
+          "statLabel": "is all a shutdown ritual needs — review tasks, plan tomorrow, say the phrase"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Deep Work Ritual",
+          "body": "Fill in these four blanks: WHERE: I will do deep work at [specific location]. WHEN: I will start at [time] for [duration] minutes. HOW: My rules are [e.g., phone in drawer, browser tabs closed, door shut]. SUPPORT: I'll have [coffee/water/music] ready. Write this on a card and put it where you'll see it first thing tomorrow morning."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do deep work rituals eliminate the need for motivation?",
+          "type": "mcq",
+          "options": [
+            "They offload the decision to start from conscious willpower to automatic behaviour",
+            "They make the work itself easier",
+            "They trick your brain into thinking work is play",
+            "They only work for naturally disciplined people"
+          ],
+          "correctIndex": 0,
+          "explanation": "Rituals work by moving the \"should I start?\" decision from conscious processing (easily overridden) to automatic behaviour systems. Repeated sequences become triggers that launch focus without willpower."
+        },
+        {
+          "question": "A shutdown ritual helps prevent attention residue from following you into personal time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The shutdown ritual creates a clean cognitive break between work and rest. By reviewing tasks, planning tomorrow, and saying a closure phrase, you signal to your brain that it's safe to stop processing work."
+        },
+        {
+          "question": "What are the four components every deep work ritual must specify?",
+          "type": "mcq",
+          "options": [
+            "Where, When, How, and Support",
+            "Goal, Duration, Break, Reward",
+            "Morning, Afternoon, Evening, Weekend",
+            "Email, Slack, Calendar, Documents"
+          ],
+          "correctIndex": 0,
+          "explanation": "Newport's four ritual components are: Where (location), When (exact time and duration), How (rules for the session), and Support (what sustains you). All four must be defined for the ritual to hold up under pressure."
+        }
+      ]
+    },
+    {
+      "id": "dw-9-time-blocking",
+      "dayNumber": 9,
+      "moduleId": "dw-module-2",
+      "title": "Time Blocking",
+      "subtitle": "Give every minute of your day a job — and watch your deep work hours multiply.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Without a Plan, Shallow Work Wins Every Time",
+          "body": "Newport's personal productivity system centres on one practice: time blocking. Every minute of the workday is assigned to a specific task in advance. It sounds rigid, but it's actually liberating — you never wonder \"what should I do next?\" and deep work gets protected time instead of whatever's left over (which is usually nothing).",
+          "stat": "40%",
+          "statLabel": "more deep work produced by time blockers vs. to-do list users"
+        },
+        {
+          "type": "content",
+          "headline": "How Time Blocking Works",
+          "body": "At the start of each day (or the evening before), divide your workday into blocks and assign each one a specific purpose. Deep work gets the prime slots. Shallow work gets batched into designated windows.",
+          "bullets": [
+            "Deep blocks: 60-90 minutes of uninterrupted focus on your most important work",
+            "Shallow blocks: Batched email, admin, meetings (contained, not scattered)",
+            "Buffer blocks: 15-30 min gaps for overflow and transitions",
+            "The key: deep work gets scheduled FIRST — everything else works around it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Time Block Planner",
+          "body": "Newport uses a simple paper planner with columns for time and tasks. Digital calendars work too — the format matters less than the practice. The critical habit is doing it daily without exception.",
+          "stat": "10 min",
+          "statLabel": "is all it takes to plan tomorrow's time blocks each evening"
+        },
+        {
+          "type": "content",
+          "headline": "Handling Disruptions Gracefully",
+          "body": "Time blocking isn't about rigidity — it's about intention. When disruptions happen (and they will), you simply re-block the remaining time. The goal isn't perfection; it's ensuring deep work is always intentionally scheduled rather than hoped for.",
+          "bullets": [
+            "Expect to re-block 2-3 times per day at first (this is normal)",
+            "Each re-block takes 2 minutes — cross out and redraw",
+            "Over time, you'll get better at predicting and protecting deep blocks",
+            "Even a disrupted time-blocked day produces more deep work than an unplanned one"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Tomorrow's Time Block Plan",
+          "body": "Take 10 minutes right now to plan tomorrow. Draw your day in 30-minute blocks from start to finish. Schedule at least one 90-minute deep work block in your highest-energy time. Batch all email/messaging into two 30-minute windows. Leave 15 minutes between blocks for transitions. Tomorrow, follow the plan and notice: how much more deep work happens when it's scheduled?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle of time blocking?",
+          "type": "mcq",
+          "options": [
+            "Every minute of the day is assigned a specific purpose in advance",
+            "You should only work in 25-minute increments",
+            "Deep work should never exceed 30 minutes at a time",
+            "You must follow the plan perfectly without any changes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Time blocking assigns every minute a purpose — ensuring deep work gets protected prime-time slots rather than whatever time remains after shallow work and interruptions consume the day."
+        },
+        {
+          "question": "Time blockers produce approximately 40% more deep work than to-do list users.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Time blocking outperforms to-do lists because it creates protected containers for deep work. Lists let shallow urgent tasks dominate; blocks ensure deep work gets scheduled first and everything else works around it."
+        },
+        {
+          "question": "What should you do when disruptions break your time block plan?",
+          "type": "mcq",
+          "options": [
+            "Re-block the remaining time with a new plan",
+            "Abandon the plan and switch to a to-do list for the day",
+            "Feel like a failure and give up time blocking",
+            "Never allow any disruptions under any circumstances"
+          ],
+          "correctIndex": 0,
+          "explanation": "Time blocking isn't about rigidity — when disruptions happen, you simply re-block the remaining time (takes 2 minutes). Even a disrupted time-blocked day produces more deep work than an unplanned day."
+        }
+      ]
+    },
+    {
+      "id": "dw-10-habit-stacking",
+      "dayNumber": 10,
+      "moduleId": "dw-module-2",
+      "title": "Habit Stacking",
+      "subtitle": "Attach deep work to existing routines so it becomes automatic — not another thing on your list.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Already Have Hundreds of Automatic Habits",
+          "body": "You don't decide to brush your teeth — you just do it after waking up. James Clear's \"habit stacking\" leverages this principle: attach a new behaviour to an existing automatic one, and it inherits the automaticity. The formula is simple: \"After I [CURRENT HABIT], I will [NEW HABIT].\" This is how deep work stops requiring willpower.",
+          "stat": "40-45%",
+          "statLabel": "of daily behaviours are habits — performed without conscious decision"
+        },
+        {
+          "type": "content",
+          "headline": "The Habit Stacking Formula",
+          "body": "Clear's formula works because existing habits already have strong neural pathways. By linking a new behaviour to an established one, you borrow its momentum instead of building from scratch.",
+          "bullets": [
+            "Formula: \"After I [CURRENT HABIT], I will [DEEP WORK BEHAVIOUR]\"",
+            "Example: \"After I pour my morning coffee, I will sit at my desk and open my deep work document\"",
+            "Example: \"After I close my laptop lid at 5pm, I will write tomorrow's time blocks\"",
+            "The key: the current habit must be specific, consistent, and daily"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Stacking Your Deep Work Activation Sequence",
+          "body": "One habit stack isn't enough for deep work — you need a chain that creates an entire activation sequence. Each step flows naturally into the next, building momentum toward focused output.",
+          "bullets": [
+            "Step 1: After I sit down at my desk, I close all browser tabs",
+            "Step 2: After I close tabs, I put my phone in the drawer",
+            "Step 3: After phone is away, I open my one deep work document",
+            "Step 4: After the document is open, I set my timer for 90 minutes",
+            "Step 5: After the timer starts, I write/create until it rings"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Four Laws Applied to Deep Work",
+          "body": "Clear's four laws of behaviour change work perfectly for making deep work stick as a daily habit:",
+          "stat": "4 laws",
+          "statLabel": "Make it Obvious, Attractive, Easy, Satisfying"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Deep Work Habit Stack",
+          "body": "Write a 3-5 step habit stack that leads you into deep work, using the formula \"After I [X], I will [Y].\" Start with something you already do every day without thinking. Chain each step until the final one is \"I begin my deep work session.\" Post this sequence where you'll see it during your morning routine. Follow it for 7 days without breaking the chain."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the habit stacking formula?",
+          "type": "mcq",
+          "options": [
+            "\"After I [CURRENT HABIT], I will [NEW HABIT]\"",
+            "\"Every Monday I will start a new routine\"",
+            "\"I will do deep work whenever I feel motivated\"",
+            "\"Before bed, I will plan all habits for the next month\""
+          ],
+          "correctIndex": 0,
+          "explanation": "Habit stacking links a new behaviour to an existing automatic one using the formula \"After I [CURRENT HABIT], I will [NEW HABIT].\" This borrows the momentum of established neural pathways."
+        },
+        {
+          "question": "40-45% of daily behaviours are performed automatically as habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that nearly half of our daily behaviours are habitual — performed without conscious decision. Habit stacking leverages this existing automaticity to install new behaviours."
+        },
+        {
+          "question": "What are James Clear's four laws of behaviour change?",
+          "type": "mcq",
+          "options": [
+            "Make it Obvious, Attractive, Easy, and Satisfying",
+            "Plan it, Start it, Continue it, Finish it",
+            "Think it, Write it, Do it, Review it",
+            "Morning, Midday, Afternoon, Evening"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clear's four laws — Make it Obvious (cue), Attractive (craving), Easy (response), and Satisfying (reward) — provide a complete framework for building any habit, including deep work."
+        }
+      ]
+    },
+    {
+      "id": "dw-11-4dx-execution",
+      "dayNumber": 11,
+      "moduleId": "dw-module-2",
+      "title": "The 4DX of Deep Work",
+      "subtitle": "Execute on your deep work goals with the same framework Fortune 500 companies use.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Knowing What to Do Is Useless Without a System to Execute",
+          "body": "Newport adapted the \"4 Disciplines of Execution\" (4DX) framework — used by Fortune 500 companies to achieve their most important goals — specifically for deep work. The insight: the gap between knowing deep work matters and actually doing it consistently is an execution problem, not a knowledge problem.",
+          "stat": "4DX",
+          "statLabel": "framework used by 1,500+ companies — now adapted for personal deep work"
+        },
+        {
+          "type": "content",
+          "headline": "Discipline 1: Focus on the Wildly Important",
+          "body": "Identify a small number of ambitious outcomes for your deep work hours. Most people fail because they try to do too many things. The power comes from saying \"this is the ONE thing my deep work will produce this quarter.\"",
+          "bullets": [
+            "Choose 1 wildly important goal (WIG) for your deep work",
+            "It should be specific and measurable: \"Write 50,000 words\" or \"Ship the product\"",
+            "Everything else is secondary — your deep hours serve this goal",
+            "Review weekly: \"Did my deep work move the WIG forward?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Discipline 2: Act on Lead Measures",
+          "body": "Lag measures (results) tell you if you've won. Lead measures (behaviours) tell you if you will win. For deep work, the lead measure is simple: hours of deep work dedicated to your WIG per day.",
+          "stat": "Hours",
+          "statLabel": "of deep work per day is your #1 lead measure — track it obsessively"
+        },
+        {
+          "type": "content",
+          "headline": "Disciplines 3 & 4: Scoreboard + Accountability",
+          "body": "Discipline 3: Keep a compelling scoreboard where you track deep work hours daily. Discipline 4: Create a regular rhythm of accountability where you review your scoreboard and recommit.",
+          "bullets": [
+            "Scoreboard: A visible tracker (paper tally, calendar marks, app) updated daily",
+            "The scoreboard must be visible during your work — not hidden in an app",
+            "Weekly review: Every Friday, review hours logged and output produced",
+            "Accountability: Share your commitment with one person who'll check in"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your 4DX System",
+          "body": "Define your system: (1) WIG: \"By [date], I will have [specific outcome] through deep work.\" (2) Lead measure: \"I will complete [X] hours of deep work per day.\" (3) Scoreboard: Create a visible daily tracker (a paper tally by your desk works perfectly). (4) Review: Set a weekly Friday calendar event called \"Deep Work Review — 15 min.\" Start tracking tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"lead measure\" in the 4DX framework?",
+          "type": "mcq",
+          "options": [
+            "A trackable behaviour that predicts future results (like hours of deep work)",
+            "The final outcome you're trying to achieve",
+            "The number of emails you reply to each day",
+            "Your manager's rating of your performance"
+          ],
+          "correctIndex": 0,
+          "explanation": "Lead measures are predictive behaviours you can control directly — for deep work, this means tracking hours of focused work per day. Unlike lag measures (results), lead measures tell you if you WILL succeed."
+        },
+        {
+          "question": "The 4DX framework recommends focusing on many goals simultaneously to maximise output.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Discipline 1 is \"Focus on the Wildly Important\" — choosing a SMALL number (ideally one) of ambitious goals. The power comes from concentration, not diffusion. Too many goals means no goal gets adequate deep work."
+        },
+        {
+          "question": "Why must the deep work scoreboard be visible during work?",
+          "type": "mcq",
+          "options": [
+            "Visible scoreboards create ongoing motivation and accountability",
+            "It's required by the 4DX trademark guidelines",
+            "Other people need to see it to verify your work",
+            "Digital trackers don't work for habit formation"
+          ],
+          "correctIndex": 0,
+          "explanation": "A visible scoreboard creates a constant feedback loop — you see your progress (or lack thereof) in real time, which drives engagement and maintains accountability without needing external pressure."
+        }
+      ]
+    },
+    {
+      "id": "dw-12-productive-meditation",
+      "dayNumber": 12,
+      "moduleId": "dw-module-2",
+      "title": "Productive Meditation",
+      "subtitle": "Train your focus muscle during walks, commutes, and downtime — not just at your desk.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can Train Deep Focus While Walking",
+          "body": "Newport's \"productive meditation\" is a practice where you use physical activity (walking, running, commuting) to focus on a single professional problem. Your body is occupied, freeing your mind for concentrated thought. It's like taking your deep work practice to the gym — building the focus muscle in otherwise wasted time.",
+          "stat": "2-3x",
+          "statLabel": "faster improvement in focus capacity when adding productive meditation to deep work"
+        },
+        {
+          "type": "content",
+          "headline": "How Productive Meditation Works",
+          "body": "The practice is simple but not easy. During a physical activity that doesn't require mental effort, direct your attention to a single, well-defined professional problem.",
+          "bullets": [
+            "Choose ONE problem: \"How should I structure this proposal?\" or \"What's the key insight?\"",
+            "Hold it in your mind as you walk/run/commute",
+            "When your mind wanders (it will), gently return to the problem",
+            "Notice progress: partial solutions will emerge naturally"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Two Key Pitfalls",
+          "body": "Newport warns about two traps that most people hit when attempting productive meditation. Knowing them in advance helps you catch yourself faster.",
+          "bullets": [
+            "Pitfall 1: Looping — your mind replays the same thought without advancing",
+            "Fix: Notice when you're looping and force yourself to the NEXT step of the problem",
+            "Pitfall 2: Mind wandering — drifting to unrelated topics feels more comfortable",
+            "Fix: Treat it like meditation — notice the drift without judgement and return"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why This Builds Deep Work Capacity",
+          "body": "Productive meditation isn't about solving problems (though you will). It's about training your attention to stay on one thing despite the brain's preference for novelty. Every session strengthens the neural circuits that make desk-based deep work easier.",
+          "stat": "15-20 min",
+          "statLabel": "per session is enough to noticeably improve concentration within 2 weeks"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Productive Meditation",
+          "body": "On your next walk (even 10 minutes), choose one professional problem you're currently facing. As you walk, keep your attention on it. When you notice your mind has drifted (within 30 seconds, usually), gently bring it back. Don't judge yourself — each \"return\" is a repetition that builds your focus muscle. Try for 3 sessions this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"productive meditation\"?",
+          "type": "mcq",
+          "options": [
+            "Focusing on a single professional problem during physical activity",
+            "Meditating at your desk instead of working",
+            "Using meditation apps while checking email",
+            "Thinking about multiple problems simultaneously while exercising"
+          ],
+          "correctIndex": 0,
+          "explanation": "Productive meditation uses physical activity time (walking, running, commuting) to focus attention on a single well-defined professional problem — training concentration while utilising otherwise unproductive time."
+        },
+        {
+          "question": "\"Looping\" — replaying the same thought without advancing — is one of the key pitfalls of productive meditation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Looping is when your mind replays the same familiar thought rather than pushing to the next step of the problem. The fix is noticing when you're stuck in a loop and forcing yourself to advance."
+        },
+        {
+          "question": "What is the primary benefit of productive meditation for deep work?",
+          "type": "mcq",
+          "options": [
+            "It trains attention to stay on one thing, strengthening focus circuits",
+            "It replaces the need for desk-based deep work entirely",
+            "It burns more calories than regular walking",
+            "It guarantees you'll solve every problem you think about"
+          ],
+          "correctIndex": 0,
+          "explanation": "The primary benefit is attention training — each session strengthens the neural circuits for sustained focus. This directly improves your capacity for desk-based deep work. Problem-solving is a bonus, not the goal."
+        }
+      ]
+    },
+    {
+      "id": "dw-13-energy-management",
+      "dayNumber": 13,
+      "moduleId": "dw-module-2",
+      "title": "Energy Management",
+      "subtitle": "Schedule deep work when your brain is sharpest — not when your calendar has a gap.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Have 2-4 Hours of Peak Cognitive Power Per Day",
+          "body": "Neuroscience research shows your prefrontal cortex — the brain region responsible for deep thinking — operates at peak capacity for only 2-4 hours daily. After that, willpower depletes, decision quality drops, and focus becomes effortful rather than natural. The question isn't \"how many hours can I work?\" but \"when are my peak hours — and am I wasting them on shallow tasks?\"",
+          "stat": "2-4 hrs",
+          "statLabel": "of peak cognitive capacity per day — most people waste theirs on email"
+        },
+        {
+          "type": "content",
+          "headline": "Chronotypes and Deep Work",
+          "body": "Your optimal deep work window depends on your chronotype — your biological clock pattern. Fighting it wastes energy; aligning with it gives you effortless focus during your peak and guilt-free shallow work during your trough.",
+          "bullets": [
+            "Lions (early birds): Peak 6am-10am — schedule deep work first thing",
+            "Bears (majority): Peak 9am-12pm — protect late morning for depth",
+            "Wolves (night owls): Peak 5pm-9pm — flip the schedule, shallow first",
+            "The key: never schedule meetings during your peak hours"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Ultradian Rhythm",
+          "body": "Your brain naturally cycles through 90-minute waves of high and low alertness throughout the day. Working WITH these rhythms (90 min on, 20 min rest) produces dramatically more than fighting through fatigue.",
+          "stat": "90 min",
+          "statLabel": "natural focus cycle — then your brain needs 15-20 min of genuine rest"
+        },
+        {
+          "type": "content",
+          "headline": "Energy Audit: What Drains, What Fuels",
+          "body": "Not all tasks drain equal energy. Understanding your personal energy map helps you sequence the day for maximum deep work output.",
+          "bullets": [
+            "High-drain: Decisions, difficult conversations, novel problem-solving",
+            "Low-drain: Routine tasks, familiar processes, friendly meetings",
+            "Sequence: Do high-drain deep work in peak hours, save low-drain for the trough",
+            "Never make important decisions in your low-energy window"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Energy Curve",
+          "body": "For the next 3 days, rate your mental sharpness every 2 hours on a 1-10 scale (set phone reminders). By day 3, you'll see your personal pattern — when you peak and when you crash. Then redesign your schedule: deep work during peak, shallow work during trough, rest during the transition. This one change can double your deep output without adding hours."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long does peak cognitive capacity typically last per day?",
+          "type": "mcq",
+          "options": [
+            "2-4 hours of full prefrontal cortex capacity",
+            "8 hours — the full workday",
+            "12 hours if you drink enough coffee",
+            "30 minutes maximum"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuroscience shows the prefrontal cortex operates at peak capacity for only 2-4 hours daily. After that, willpower depletes and focus becomes effortful. The key is using these hours for deep work, not email."
+        },
+        {
+          "question": "The ultradian rhythm suggests working in 90-minute focused cycles with 15-20 minute rests.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The brain naturally cycles through approximately 90-minute waves of alertness. Working with this rhythm (90 min on, 15-20 min rest) produces dramatically better output than trying to power through fatigue."
+        },
+        {
+          "question": "What is the best way to use your chronotype knowledge?",
+          "type": "mcq",
+          "options": [
+            "Schedule deep work during your peak hours and shallow work during your trough",
+            "Force yourself to be a morning person regardless of your natural pattern",
+            "Only work during your peak and take the rest of the day off",
+            "Ignore your natural rhythm and follow your company's schedule exactly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Aligning work type with your chronotype gives effortless focus during peak hours. Schedule deep work when your brain is sharpest and batch shallow tasks (email, admin) during your natural energy trough."
+        }
+      ]
+    },
+    {
+      "id": "dw-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "dw-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Your focus system is built — now audit it, refine it, and prepare for the long game.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Have a Complete Deep Work Operating System",
+          "body": "In one week you've built rituals, time blocks, habit stacks, a 4DX execution system, productive meditation practice, and energy-aligned scheduling. Most people spend years trying to \"be more focused\" without any of these. You have all six. Today we audit the system and prepare for Module 3: making it permanent.",
+          "stat": "6 systems",
+          "statLabel": "in your deep work operating system — more than most will ever build"
+        },
+        {
+          "type": "content",
+          "headline": "Your System Audit",
+          "body": "Rate each system 1-5 on how consistently you've used it this week. Be honest — the gaps show you where to focus your refinement energy.",
+          "bullets": [
+            "Deep work ritual (Lesson 8): Am I using it daily? Rating: __/5",
+            "Time blocking (Lesson 9): Am I planning tomorrow each evening? Rating: __/5",
+            "Habit stack (Lesson 10): Does my activation sequence fire automatically? __/5",
+            "4DX scoreboard (Lesson 11): Am I tracking hours daily? __/5",
+            "Productive meditation (Lesson 12): 2+ sessions this week? __/5",
+            "Energy alignment (Lesson 13): Deep work in peak hours? __/5"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 80/20 of Your System",
+          "body": "You don't need all six systems working perfectly. Identify the 1-2 that have made the biggest difference and double down. The others can be refined gradually. Perfectionism about the system is just another form of procrastination.",
+          "stat": "1-2",
+          "statLabel": "key systems that typically drive 80% of someone's deep work improvement"
+        },
+        {
+          "type": "content",
+          "headline": "Preparing for Module 3: Sustain & Compound",
+          "body": "Module 3 shifts from building to sustaining. You'll learn deliberate practice, the career capital theory in depth, saying no, rest and recovery, identity shifts, and long-term compounding. Come ready to play the long game.",
+          "bullets": [
+            "Have your WIG (wildly important goal) clear and written down",
+            "Know your peak energy hours from your 3-day audit",
+            "Have your scoreboard visible and updated",
+            "Be ready to think in terms of months and years, not just days"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 2 Refinement",
+          "body": "Write your \"Deep Work System Summary\" in one paragraph: \"My ritual starts at [time] in [place]. I time-block the night before. My habit stack is [sequence]. My WIG is [goal] and I track [X] hours daily on my scoreboard. I do productive meditation on [days] and protect my peak hours ([time window]) for deep work only.\" If any blank is unfilled, that's your homework before Module 3."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key insight about perfecting your deep work system?",
+          "type": "mcq",
+          "options": [
+            "Focus on the 1-2 systems making the biggest difference rather than perfecting all six",
+            "Every system must be working flawlessly before you can produce deep work",
+            "You should add more systems if the current ones aren't perfect",
+            "Systems don't matter — only natural talent determines deep work capacity"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 80/20 principle applies: 1-2 key systems typically drive most of your improvement. Perfectionism about the system is procrastination in disguise — double down on what works rather than perfecting everything."
+        },
+        {
+          "question": "Module 2 provided six deep work systems: rituals, time blocking, habit stacking, 4DX, productive meditation, and energy management.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 2 built a complete operating system: startup rituals (L8), time blocking (L9), habit stacking (L10), 4DX execution (L11), productive meditation (L12), and energy management (L13)."
+        },
+        {
+          "question": "What should you have ready before starting Module 3?",
+          "type": "mcq",
+          "options": [
+            "Your WIG, peak hours, visible scoreboard, and a long-term mindset",
+            "A completed book manuscript",
+            "Approval from your manager to reduce meetings",
+            "A perfect 10/10 on all system audits"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 3 focuses on sustaining and compounding over the long term. Having your WIG clear, knowing your peak hours, tracking on your scoreboard, and thinking in months/years prepares you for the long game."
+        }
+      ]
+    },
+    {
+      "id": "dw-15-deliberate-practice",
+      "dayNumber": 15,
+      "moduleId": "dw-module-3",
+      "title": "Deliberate Practice",
+      "subtitle": "Go beyond \"just doing the work\" — use focused, structured practice to accelerate mastery.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "10 Years of Experience — or 1 Year Repeated 10 Times?",
+          "body": "Most people confuse time-on-task with deliberate practice. But research by Anders Ericsson shows that simply doing your job doesn't make you better after the first few years. Genuine improvement requires deliberate practice: focused, structured sessions that push you just beyond your current ability. Deep work is the container — deliberate practice is what goes inside it.",
+          "stat": "10 years",
+          "statLabel": "of \"experience\" can produce zero improvement without deliberate practice"
+        },
+        {
+          "type": "content",
+          "headline": "What Makes Practice \"Deliberate\"",
+          "body": "Ericsson identified specific criteria that separate deliberate practice from mere repetition. Without all of these, you're practising — but you're not improving.",
+          "bullets": [
+            "Stretch: You're working at the edge of your ability (uncomfortable but not impossible)",
+            "Feedback: You can clearly see what worked and what didn't",
+            "Repetition: You practise the specific sub-skill, not just the whole task",
+            "Focus: Full concentration — no multitasking, no autopilot"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deliberate Practice for Knowledge Workers",
+          "body": "Ericsson studied musicians and athletes — but Newport translated it for careers. The principles are identical; only the application changes.",
+          "bullets": [
+            "Writer: Deliberately practise weak structures (openings, arguments, transitions)",
+            "Programmer: Solve problems above your level, study expert code, rebuild from scratch",
+            "Manager: Record meetings, review your decision patterns, seek specific feedback",
+            "Designer: Recreate work you admire, identify why it works, apply principles to new contexts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Discomfort Dividend",
+          "body": "Deliberate practice is inherently uncomfortable — that's how you know it's working. If practice feels easy, you're in your comfort zone and not growing. The discomfort IS the signal of neural adaptation.",
+          "stat": "4%",
+          "statLabel": "beyond current ability — the \"sweet spot\" of productive struggle"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design One Deliberate Practice Session",
+          "body": "Identify one sub-skill within your craftsman skill (from Lesson 4) that you're weakest at. Design a 30-minute deliberate practice session: (1) What specific sub-skill? (2) How will you stretch just beyond current ability? (3) How will you get feedback? (4) How many focused repetitions? Schedule this for your next deep work block. Remember: discomfort means growth."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What distinguishes deliberate practice from ordinary practice?",
+          "type": "mcq",
+          "options": [
+            "It requires stretch, feedback, repetition, and full concentration",
+            "It must last at least 4 hours per session",
+            "It only works for musicians and athletes",
+            "It should always feel easy and enjoyable"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ericsson's research identifies four criteria: stretch (working at your edge), feedback (clear results), repetition (focused on sub-skills), and concentration (no multitasking). Without all four, improvement stalls."
+        },
+        {
+          "question": "Simply spending more years doing your job automatically makes you better at it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that after initial learning, mere experience produces no further improvement. A doctor with 20 years of experience isn't necessarily better than one with 5 — unless they engage in deliberate practice."
+        },
+        {
+          "question": "If deliberate practice feels comfortable, what does that indicate?",
+          "type": "mcq",
+          "options": [
+            "You're in your comfort zone and not stretching enough to grow",
+            "You've mastered the skill completely",
+            "You're doing it perfectly and should continue exactly the same way",
+            "You should stop practising and move to a different skill"
+          ],
+          "correctIndex": 0,
+          "explanation": "Discomfort during deliberate practice signals productive stretch — your brain is adapting. If it feels comfortable, you're operating on autopilot within your current ability, which produces no growth."
+        }
+      ]
+    },
+    {
+      "id": "dw-16-career-capital-theory",
+      "dayNumber": 16,
+      "moduleId": "dw-module-3",
+      "title": "Career Capital Theory",
+      "subtitle": "Turn your deep work hours into rare, valuable skills that buy you the career you want.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Great Careers Aren't Given — They're Purchased with Career Capital",
+          "body": "Newport's career capital theory explains why some people love their work while others feel trapped. The difference isn't passion or luck — it's leverage. People with rare, valuable skills (career capital) can \"buy\" autonomy, creativity, impact, and flexibility. People without capital have no leverage to negotiate — they take what they're given.",
+          "stat": "5-7 years",
+          "statLabel": "of deliberate deep work typically needed to accumulate significant career capital"
+        },
+        {
+          "type": "content",
+          "headline": "The Career Capital Market",
+          "body": "Think of your career as a marketplace. The traits that make a job great (autonomy, impact, creativity) are rare and valuable. To get them, you need to offer something rare and valuable in return — your skills.",
+          "bullets": [
+            "Supply and demand: Great job traits are scarce → they cost career capital",
+            "Without capital, you can't afford the career you want",
+            "Capital comes from skills that are rare AND valuable (not just one)",
+            "Deep work is the most efficient way to build career capital quickly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Two Career Capital Traps",
+          "body": "Newport warns about two common traps that prevent people from accumulating enough capital to transform their careers:",
+          "bullets": [
+            "Trap 1: Premature autonomy — seeking freedom before you've earned leverage",
+            "Example: Quitting to freelance before you're exceptional enough for clients to seek you out",
+            "Trap 2: Passion trap — chasing what feels good instead of what builds value",
+            "Example: Switching fields repeatedly before becoming excellent at any one thing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deep Work as a Capital Accumulator",
+          "body": "Each hour of deep work deposits career capital. The compounding effect is extraordinary — 3 hours daily for 5 years builds world-class expertise that most people never achieve because they're too distracted.",
+          "stat": "5,000+ hrs",
+          "statLabel": "of deep work in 5 years (at 3hr/day) — enough for elite-level career capital"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Career Capital Inventory",
+          "body": "List the rare, valuable skills you currently possess. For each, rate how rare it is (1-10) and how valuable the market finds it (1-10). Multiply the scores — anything above 50 is genuine capital. Now identify the one skill where deep work could push your score from \"good\" to \"exceptional\" in the next 6 months. That's your investment target."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"career capital\" according to Newport?",
+          "type": "mcq",
+          "options": [
+            "Rare, valuable skills that give you leverage to negotiate great career traits",
+            "The money you've saved from your career earnings",
+            "The number of connections in your professional network",
+            "Years of experience listed on your CV"
+          ],
+          "correctIndex": 0,
+          "explanation": "Career capital is rare and valuable skills that function as currency in the career marketplace. The more capital you have, the more you can \"buy\" in terms of autonomy, creativity, impact, and flexibility."
+        },
+        {
+          "question": "\"Premature autonomy\" means seeking career freedom before building enough skill-based leverage.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Premature autonomy is pursuing freedom (freelancing, entrepreneurship) before becoming exceptional enough that people seek you out. Without sufficient career capital, autonomy leads to instability rather than freedom."
+        },
+        {
+          "question": "How does deep work relate to career capital accumulation?",
+          "type": "mcq",
+          "options": [
+            "Each hour of deep work deposits career capital through skill development",
+            "Deep work is unrelated to career capital",
+            "Career capital can only be built through networking",
+            "Deep work replaces the need for career capital entirely"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep work is the most efficient capital accumulator — focused practice builds rare, valuable skills faster than any other approach. 3 hours daily for 5 years produces elite-level expertise most never achieve."
+        }
+      ]
+    },
+    {
+      "id": "dw-17-saying-no",
+      "dayNumber": 17,
+      "moduleId": "dw-module-3",
+      "title": "The Art of Saying No",
+      "subtitle": "Protect your deep work hours by learning to decline — without guilt or career damage.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every \"Yes\" to Something Shallow Is a \"No\" to Something Deep",
+          "body": "Warren Buffett said: \"The difference between successful people and really successful people is that really successful people say no to almost everything.\" Your deep work hours are finite and non-negotiable. Every meeting, favour, or shallow task you accept steals directly from your capacity to produce exceptional work. Learning to say no isn't selfish — it's strategic.",
+          "stat": "25-50%",
+          "statLabel": "of knowledge workers' time is spent on tasks they should have declined"
+        },
+        {
+          "type": "content",
+          "headline": "Why Saying No Feels So Hard",
+          "body": "Humans are wired to cooperate — saying no triggers real social anxiety. Understanding why it's difficult helps you push through the discomfort rather than surrendering your deep work time.",
+          "bullets": [
+            "Social pressure: We fear being seen as unhelpful or difficult",
+            "Opportunity cost blindness: We see what we gain by saying yes but not what we lose",
+            "Present bias: The immediate discomfort of declining outweighs the distant reward of deep work",
+            "Identity conflict: \"I'm a team player\" clashes with \"I need to protect my focus\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Hell Yes or No\" Framework",
+          "body": "Derek Sivers' rule: if a request doesn't make you say \"Hell yes!\", the answer is no. For deep workers, add a filter: \"Will saying yes produce career capital, or just busyness?\" If it won't build something lasting, it's almost always a no.",
+          "stat": "90%",
+          "statLabel": "of requests can be declined with zero long-term career consequences"
+        },
+        {
+          "type": "content",
+          "headline": "Graceful No Scripts",
+          "body": "You don't need to be rude. These scripts protect your time while maintaining relationships:",
+          "bullets": [
+            "\"I'm deep in a project with a hard deadline — can we revisit next week?\"",
+            "\"I can't attend, but I'd love to see the notes/summary afterwards\"",
+            "\"I'm not the best person for this — have you tried [redirect]?\"",
+            "\"My calendar is committed this week. Here's what I CAN offer: [smaller thing]\"",
+            "\"I have a personal rule: no meetings before noon / on Tuesdays / etc.\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your \"No\" Audit and Commitment",
+          "body": "Look at your calendar for the next 5 days. Identify 2-3 commitments that don't pass the \"Hell yes or no\" test AND don't build career capital. Cancel or decline at least one using a script above. Then set one recurring \"no\" boundary: a time block that is permanently unavailable for meetings or requests. Protect it like you'd protect a meeting with your CEO."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does saying \"yes\" to shallow requests damage your deep work?",
+          "type": "mcq",
+          "options": [
+            "Every shallow \"yes\" directly steals from finite deep work capacity",
+            "Shallow work makes you physically tired",
+            "You can never say yes to anything if you want to do deep work",
+            "Shallow requests are always unimportant"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep work hours are finite (2-4 peak hours daily). Every shallow commitment steals directly from this limited capacity. The opportunity cost of saying yes is the deep work — and career capital — you won't produce."
+        },
+        {
+          "question": "90% of requests can be declined with zero long-term career consequences.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Most requests feel urgent in the moment but have minimal long-term impact. People rarely remember or resent a graceful decline — but they do notice (and reward) the exceptional work that protected time produces."
+        },
+        {
+          "question": "What is Derek Sivers' \"Hell Yes or No\" framework?",
+          "type": "mcq",
+          "options": [
+            "If a request doesn't make you say \"Hell yes!\", the default answer is no",
+            "You should always say yes enthusiastically to everything",
+            "Only accept requests that make you angry",
+            "Say no to everything including deep work"
+          ],
+          "correctIndex": 0,
+          "explanation": "The \"Hell Yes or No\" framework creates a high bar for acceptance — if something doesn't excite you or clearly build career capital, declining it protects your time for what truly matters."
+        }
+      ]
+    },
+    {
+      "id": "dw-18-rest-and-recovery",
+      "dayNumber": 18,
+      "moduleId": "dw-module-3",
+      "title": "Rest & Recovery",
+      "subtitle": "Why downtime isn't lazy — it's essential to sustaining deep work over months and years.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Best Deep Workers Are Also the Best Resters",
+          "body": "Newport's research revealed something counterintuitive: the most prolific deep workers don't work the longest hours. They work intensely for a bounded period and then stop completely. Ericsson found the same with elite performers — they practise for 4 hours maximum, then rest deliberately. Sustainability requires recovery.",
+          "stat": "4 hours",
+          "statLabel": "maximum deep work before diminishing returns — then rest becomes the priority"
+        },
+        {
+          "type": "content",
+          "headline": "The Neuroscience of Downtime",
+          "body": "Rest isn't just \"not working.\" Your brain does critical processing during downtime that actually enhances deep work capacity. Skipping recovery doesn't make you more productive — it makes you progressively worse.",
+          "bullets": [
+            "Memory consolidation: Sleep and rest cement what you learned during deep work",
+            "Insight generation: The \"default mode network\" makes connections during rest",
+            "Attention restoration: Nature, walks, and boredom refill your focus tank",
+            "Willpower recovery: Self-control is a depletable resource that rest replenishes"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Counts as Real Rest",
+          "body": "Not all \"rest\" actually restores. Scrolling social media, watching news, or checking work email all drain the same attentional resources that deep work uses. Real rest uses different cognitive channels.",
+          "stat": "0%",
+          "statLabel": "recovery value from scrolling social media — it drains the same circuits"
+        },
+        {
+          "type": "content",
+          "headline": "Rest Practices That Actually Restore",
+          "body": "These activities use different neural circuits from focused work, genuinely replenishing your capacity for the next deep work session:",
+          "bullets": [
+            "Nature walks (Attention Restoration Theory — proven to refill focus)",
+            "Physical exercise (switches from cognitive to physical processing)",
+            "Face-to-face socialising (activates different networks than solo focus)",
+            "Craft hobbies (woodworking, cooking, gardening — embodied, not abstract)",
+            "Deliberate boredom (staring out the window, showering without podcasts)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Recovery Protocol",
+          "body": "Create a rest plan: (1) After each deep work session: 15-min walk or stretch (non-negotiable). (2) After work each day: One restorative activity from the list above (30+ minutes). (3) Weekly: One half-day completely offline (no email, no screens). Write this protocol next to your deep work ritual. The two work together — intensity requires recovery."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do elite deep workers limit themselves to approximately 4 hours of intense focus?",
+          "type": "mcq",
+          "options": [
+            "Beyond 4 hours, returns diminish and recovery becomes essential for next-day performance",
+            "They are lazy and unmotivated to work longer",
+            "Their employers only allow 4 hours of work",
+            "Deep work is only possible for short periods due to brain size"
+          ],
+          "correctIndex": 0,
+          "explanation": "Both Newport and Ericsson found that peak performers cap intense focus at ~4 hours because beyond that, returns diminish sharply. Rest is what enables the next day's high-quality deep work."
+        },
+        {
+          "question": "Scrolling social media during breaks provides genuine cognitive recovery.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social media drains the same attentional resources that deep work uses — it provides zero genuine recovery. Real rest requires activities that use different neural circuits: nature, exercise, socialising, or deliberate boredom."
+        },
+        {
+          "question": "What does \"Attention Restoration Theory\" suggest is best for refilling focus?",
+          "type": "mcq",
+          "options": [
+            "Spending time in nature",
+            "Watching television",
+            "Power napping for 2 hours",
+            "Drinking more coffee"
+          ],
+          "correctIndex": 0,
+          "explanation": "Attention Restoration Theory (Kaplan, 1995) shows that exposure to natural environments replenishes directed attention capacity. Even a 15-minute nature walk significantly restores focus for subsequent deep work."
+        }
+      ]
+    },
+    {
+      "id": "dw-16-career-capital-theory",
+      "dayNumber": 16,
+      "moduleId": "dw-module-3",
+      "title": "Career Capital Theory",
+      "subtitle": "How rare and valuable skills — not passion — give you control and autonomy in your career.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Passion Trap",
+          "body": "\"Follow your passion\" is the most dangerous career advice in existence. Cal Newport studied people who love their work — and found that none of them started with passion. They started with skill. Here's the counter-intuitive truth about career fulfilment."
+        },
+        {
+          "type": "content",
+          "headline": "Career Capital = Rare & Valuable Skills",
+          "body": "Career capital is the collection of rare and valuable skills you've built through deliberate practice. The more career capital you accumulate, the more leverage you have to shape your career — choosing interesting projects, setting your own hours, or launching bold ideas. Without career capital, you have no leverage. With it, you have everything."
+        },
+        {
+          "type": "content",
+          "headline": "The Craftsman Mindset (Revisited)",
+          "body": "The craftsman mindset asks: \"What can I offer the world?\" rather than \"What can the world offer me?\" This distinction is everything. Passion followers wait for clarity that never comes. Craftsmen build skills that create clarity. Deep work is the mechanism — career capital is the result. Every focused hour deposits into your career capital account."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Traits of Great Work",
+          "body": "Newport identified that compelling careers share three traits: creativity, impact, and control. But these traits are rare and valuable themselves — so you need something rare and valuable to offer in exchange. That something is career capital. The equation is simple: deep work → skill mastery → career capital → traits of a dream career."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Career Capital",
+          "body": "List your top 3 most valuable professional skills right now. For each, rate it from 1-10 on how rare it is in your market. Then identify which ONE skill, if developed to elite level through deep work, would give you the most career leverage in the next 2 years. This is your deep work priority."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Career Capital Theory, what primarily gives you control and autonomy in your career?",
+          "type": "mcq",
+          "options": [
+            "Accumulating rare and valuable skills",
+            "Following your passion from the start",
+            "Having the right connections",
+            "Working at the most prestigious company"
+          ],
+          "correctIndex": 0,
+          "explanation": "Newport's research shows that career control and autonomy are acquired through career capital — rare and valuable skills — not through passion, networking, or prestige alone. Deep work is the mechanism for building this capital."
+        },
+        {
+          "question": "Following your passion is the most reliable path to career fulfilment.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Newport's research across hundreds of case studies found that passion is a byproduct of mastery, not a prerequisite. People who \"followed their passion\" without first building skills rarely ended up fulfilled. Those who built career capital through deep work consistently did."
+        },
+        {
+          "question": "What is the correct sequence for building a compelling career, according to this framework?",
+          "type": "mcq",
+          "options": [
+            "Deep work → Skill mastery → Career capital → Dream career traits",
+            "Find passion → Get motivated → Work hard → Success",
+            "Network → Get hired → Build skills → Get promoted",
+            "Set goals → Make plans → Take action → Achieve results"
+          ],
+          "correctIndex": 0,
+          "explanation": "The framework is sequential: deep work builds skill mastery, which accumulates career capital, which you exchange for the traits of great work (creativity, impact, control). Skipping steps — like demanding autonomy without capital — triggers resistance."
+        }
+      ]
+    },
+    {
+      "id": "dw-17-saying-no",
+      "dayNumber": 17,
+      "moduleId": "dw-module-3",
+      "title": "The Art of Saying No",
+      "subtitle": "Protect your deep work time by mastering the most important word in your vocabulary.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Death by a Thousand Yeses",
+          "body": "Every \"yes\" to a shallow request is an invisible \"no\" to your most important work. Warren Buffett said his success comes from \"saying no to almost everything.\" Yet most professionals fill their days with meetings, favours, and obligations that feel productive but produce nothing of lasting value. Today you learn to protect what matters."
+        },
+        {
+          "type": "content",
+          "headline": "The Opportunity Cost of Yes",
+          "body": "When you say yes to a 30-minute meeting, you're not just losing 30 minutes. You're losing the context-switch cost (~23 minutes to regain deep focus), the attention residue that lingers, and the momentum you had on important work. A single unnecessary meeting can destroy 90 minutes of deep work capacity. \"No\" is not selfish — it's strategic."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Hell Yes or No\" Framework",
+          "body": "Derek Sivers' rule: if it's not a \"Hell yes!\", it's a no. Before accepting any commitment, ask: \"Does this directly advance my #1 career capital goal?\" If the answer isn't an immediate, enthusiastic yes, decline. This filter eliminates 80% of requests that feel urgent but aren't important. Remember: urgency is not importance."
+        },
+        {
+          "type": "content",
+          "headline": "Saying No Gracefully",
+          "body": "Newport recommends \"professorial no\" — a clear decline with no detailed explanation or apology. Templates: \"Thank you, but my schedule doesn't allow it.\" / \"I'm focusing on a key project right now and can't take on additional commitments.\" / \"I'm not the right person for this, but [name] might be.\" Never explain why — explanations invite negotiation."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your \"Not-To-Do\" List",
+          "body": "Write a \"Not-To-Do\" list of 5 recurring commitments that drain your deep work time. For each, draft a one-sentence decline template you can use immediately. Then identify ONE commitment this week you will say no to. Schedule the conversation — don't postpone it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does a single unnecessary 30-minute meeting cost more than 30 minutes?",
+          "type": "mcq",
+          "options": [
+            "Context-switching cost and attention residue destroy additional focus time",
+            "Meetings always run over time",
+            "You need to prepare slides beforehand",
+            "The commute to the meeting room takes extra time"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows it takes an average of 23 minutes to regain deep focus after an interruption, plus the lingering attention residue reduces the quality of subsequent work. A 30-minute meeting can easily destroy 90 minutes of productive deep work capacity."
+        },
+        {
+          "question": "According to Newport's approach, you should always explain your reasons when declining a request.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Newport recommends the \"professorial no\" — a clear, brief decline without detailed explanations. Explanations invite counter-arguments and negotiation, making it harder to maintain your boundary. A simple \"my schedule doesn't allow it\" is sufficient."
+        },
+        {
+          "question": "What question should you ask before accepting any new commitment?",
+          "type": "mcq",
+          "options": [
+            "\"Does this directly advance my #1 career capital goal?\"",
+            "\"Will this make my boss happy?\"",
+            "\"Is this person more senior than me?\"",
+            "\"Can I finish this quickly between meetings?\""
+          ],
+          "correctIndex": 0,
+          "explanation": "The \"Hell Yes or No\" framework filters every commitment through one lens: does it advance your primary career capital goal? If it doesn't pass this test with an enthusiastic yes, it's consuming resources better spent on deep work."
+        }
+      ]
+    },
+    {
+      "id": "dw-18-rest-and-recovery",
+      "dayNumber": 18,
+      "moduleId": "dw-module-3",
+      "title": "Rest & Recovery",
+      "subtitle": "Why doing less — strategically — makes your deep work dramatically more powerful.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Paradox of Rest",
+          "body": "The most productive people in history worked fewer hours than you'd expect. Darwin worked 4 hours a day. Dickens wrote for 5. Poincaré solved mathematical breakthroughs after stopping work at noon. This isn't laziness — it's neuroscience. Your brain does its deepest processing during rest. Ignoring recovery doesn't make you productive — it makes you mediocre."
+        },
+        {
+          "type": "content",
+          "headline": "The Shutdown Complete Ritual",
+          "body": "Newport's \"Shutdown Complete\" ritual marks the definitive end of your work day. When you say these words, you've reviewed every open task, captured loose ends, and made a plan for tomorrow. After shutdown, no work-related thinking is allowed — including email checks. This ritual is crucial because it gives your unconscious mind permission to process and consolidate without interference."
+        },
+        {
+          "type": "content",
+          "headline": "Active Rest vs. Passive Rest",
+          "body": "Not all rest is equal. Active rest (walking, exercise, creative hobbies, socialising) uses different neural networks than deep work, allowing focused-attention circuits to recover. Passive rest (scrolling, Netflix) provides less recovery because it still taxes your attention system. The best deep workers fill their off-hours with rich, engaging activities that leave no room for work rumination."
+        },
+        {
+          "type": "content",
+          "headline": "Sleep as a Non-Negotiable",
+          "body": "Matthew Walker's research is clear: sleeping less than 7 hours reduces cognitive performance by 30-40%. One week of 6-hour sleep creates cognitive impairment equivalent to two full nights of no sleep. Yet the impaired person feels fine — they've lost the ability to judge their own deficit. Protecting 8 hours of sleep is the single highest-ROI investment for deep work performance."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Shutdown Ritual",
+          "body": "Create your personalised \"Shutdown Complete\" ritual: 1) Set an end-of-work time (aim for no later than 6pm). 2) Write down 3-5 steps to close your day (review tasks, capture loose ends, plan tomorrow). 3) Choose a verbal cue like \"Shutdown complete\" or \"Done for today.\" 4) Decide on one active rest activity to fill your evening. Try it tonight."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did many of history's most productive people work only 4-5 hours per day?",
+          "type": "mcq",
+          "options": [
+            "The brain does crucial processing during rest, making limited deep work more effective",
+            "They were independently wealthy and didn't need to work more",
+            "Working conditions in earlier centuries prevented longer hours",
+            "They had assistants who did the remaining work"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuroscience shows that the brain consolidates learning, solves problems, and restores attention capacity during rest. Strategic rest isn't wasted time — it's when breakthroughs incubate. Working beyond 4-5 hours of deep focus produces diminishing returns."
+        },
+        {
+          "question": "Scrolling social media provides the same recovery benefits as a walk in nature.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social media is \"passive rest\" that still taxes your attention system — the same system that needs recovery. Active rest (walking, exercise, creative hobbies) uses different neural networks, allowing focused-attention circuits to genuinely recover. The quality of rest matters as much as the quantity."
+        },
+        {
+          "question": "What is the purpose of Newport's \"Shutdown Complete\" ritual?",
+          "type": "mcq",
+          "options": [
+            "To give the unconscious mind permission to process without interference",
+            "To impress colleagues with your organisational skills",
+            "To create a record of everything you accomplished that day",
+            "To reduce the number of tasks on your to-do list"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Shutdown Complete ritual creates a clear boundary between work and rest. By reviewing open tasks and making tomorrow's plan, you give your unconscious mind a clear signal that nothing is being dropped — freeing it to process and consolidate without the anxiety of unfinished business."
+        }
+      ]
+    },
+    {
+      "id": "dw-19-deep-work-scorecard",
+      "dayNumber": 19,
+      "moduleId": "dw-module-3",
+      "title": "Deep Work Scorecard",
+      "subtitle": "What gets measured gets managed — build a personal tracking system that keeps you accountable.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Improve What You Don't Track",
+          "body": "Most people dramatically overestimate how much deep work they actually do. When Newport asked knowledge workers to track their focused hours, most discovered they were doing 60-90 minutes when they believed they were doing 4+ hours. A scorecard removes self-deception and reveals the truth — which is where real improvement begins."
+        },
+        {
+          "type": "content",
+          "headline": "The Lead Measure: Hours of Deep Work",
+          "body": "The 4DX framework distinguishes \"lead measures\" (behaviours you control) from \"lag measures\" (results you want). Your lag measure might be \"publish paper\" or \"ship product.\" Your lead measure is hours of deep work per day. Track the lead measure religiously — the lag measures follow automatically. A simple tally on a card or whiteboard is all you need."
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Scorecard",
+          "body": "Your Deep Work Scorecard should track: 1) Target deep work hours per day. 2) Actual deep work hours achieved. 3) Streak — consecutive days hitting target. 4) Weekly total. 5) What you produced during deep work sessions. The visual record creates a \"don't break the chain\" effect — each completed day makes the next one psychologically easier."
+        },
+        {
+          "type": "content",
+          "headline": "Weekly Review & Calibration",
+          "body": "Every Sunday, review your scorecard: What was your average daily deep work? Which days failed and why? What environmental or scheduling changes would prevent those failures? Then set next week's target — never more than 30 minutes above your current average. Small, sustainable increases compound dramatically over months."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Scorecard",
+          "body": "Draw a simple 7-column grid (Mon-Sun) with rows for: target hours, actual hours, and a brief note on what you produced. Set your initial target at your current honest average + 15 minutes. Place this scorecard somewhere you'll see it every morning. Start tracking tomorrow — and commit to a review every Sunday evening."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"lead measure\" in a Deep Work Scorecard?",
+          "type": "mcq",
+          "options": [
+            "Hours of deep work performed per day",
+            "Number of projects completed per month",
+            "Revenue generated from your work",
+            "Positive feedback received from others"
+          ],
+          "correctIndex": 0,
+          "explanation": "In the 4DX framework, lead measures are behaviours you directly control that drive results. Hours of deep work is the lead measure because it's within your control and directly produces the outcomes (lag measures) you want — publications, promotions, products shipped."
+        },
+        {
+          "question": "Most knowledge workers accurately estimate how much deep work they do each day.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research consistently shows people dramatically overestimate their focused work time. When asked to track actual deep work hours, most discover they're doing 60-90 minutes while believing they do 4+ hours. The scorecard eliminates this self-deception."
+        },
+        {
+          "question": "How should you set your initial daily deep work target?",
+          "type": "mcq",
+          "options": [
+            "Current honest average plus 15 minutes",
+            "Immediately aim for 4 hours to match elite performers",
+            "Whatever your manager expects from you",
+            "Double your current amount to challenge yourself"
+          ],
+          "correctIndex": 0,
+          "explanation": "Setting targets slightly above your current baseline (15-30 minutes more) ensures sustainable growth. Aggressive targets lead to failure and abandonment. Small increases compound — adding 15 minutes per week means gaining over 3 extra hours of weekly deep work within a few months."
+        }
+      ]
+    },
+    {
+      "id": "dw-20-identity-shift",
+      "dayNumber": 20,
+      "moduleId": "dw-module-3",
+      "title": "Identity Shift",
+      "subtitle": "Move from \"someone who tries to focus\" to \"someone who does deep work\" — make it who you are.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Behaviour to Identity",
+          "body": "James Clear's most powerful insight: lasting change happens when you shift your identity, not just your behaviour. \"I'm trying to do more deep work\" is fragile — one bad day breaks it. \"I am a deep worker\" is resilient — it survives setbacks because it's who you are, not just what you do. Today you make that shift permanent."
+        },
+        {
+          "type": "content",
+          "headline": "Identity-Based Habits",
+          "body": "Every action you take is a vote for the person you're becoming. Each deep work session — no matter how short — is a vote for \"I am someone who focuses deeply.\" Each time you resist a distraction, you cast another vote. You don't need a perfect streak. You need enough votes to win the majority. The goal isn't perfection — it's consistent evidence."
+        },
+        {
+          "type": "content",
+          "headline": "The Two-Minute Rule for Identity",
+          "body": "On your hardest days, when motivation is zero, apply the two-minute rule: just start two minutes of deep work. This matters because the act itself — no matter how brief — reinforces your identity. A deep worker who does 2 minutes on a terrible day is still a deep worker. Someone who skips entirely tells their brain \"I'm not that person.\" Never miss twice."
+        },
+        {
+          "type": "content",
+          "headline": "Environment as Identity Reinforcement",
+          "body": "Your environment should constantly remind you who you are. A dedicated workspace says \"this is where a deep worker works.\" A blocked-distraction phone says \"a deep worker owns this device.\" A visible scorecard says \"a deep worker tracks their progress here.\" Design your environment to make your identity obvious and your defaults correct."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Identity Statement",
+          "body": "Complete this sentence and write it somewhere visible: \"I am someone who ___.\" Examples: \"I am someone who produces exceptional work through daily deep focus.\" \"I am someone who protects their attention like it's their most valuable asset.\" Then list 3 environmental changes that reinforce this identity — and implement at least one today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to James Clear, what makes behaviour change truly lasting?",
+          "type": "mcq",
+          "options": [
+            "Shifting your identity so the behaviour feels natural",
+            "Setting bigger and more ambitious goals",
+            "Using willpower and discipline consistently",
+            "Finding an accountability partner"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clear's research shows that identity-based change is far more durable than outcome-based or behaviour-based change. When you see yourself as \"a deep worker\" (identity), deep work becomes natural rather than requiring constant willpower."
+        },
+        {
+          "question": "On a day with zero motivation, you should skip deep work entirely to avoid doing poor quality work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The two-minute rule says: even 2 minutes of deep work on your worst day reinforces your identity as a deep worker. Skipping entirely sends your brain the signal \"I'm not that person.\" The quality doesn't matter on these days — the identity vote does. Never miss twice."
+        },
+        {
+          "question": "What role does environment play in identity-based deep work?",
+          "type": "mcq",
+          "options": [
+            "It constantly reinforces who you are and makes correct behaviours the default",
+            "It has no real impact — identity is purely internal",
+            "It only matters during the first week of building a habit",
+            "It replaces the need for any personal discipline"
+          ],
+          "correctIndex": 0,
+          "explanation": "Environment design is a critical identity reinforcement tool. A dedicated workspace, distraction-blocked devices, and visible scorecards all signal \"a deep worker lives here\" — making the correct behaviour the path of least resistance rather than requiring constant willpower."
+        }
+      ]
+    },
+    {
+      "id": "dw-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "dw-module-3",
+      "title": "Course Finale",
+      "subtitle": "Celebrate your transformation, consolidate everything, and plan your deep work life going forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built Something Rare",
+          "body": "Twenty-one days ago, you started with a hypothesis: that deep work could transform your career. Now you have a complete system — rituals, time blocks, scorecards, an identity. You understand attention residue, career capital, and the craftsman mindset. You've joined the shrinking minority who can produce at an elite level. This isn't the end — it's the beginning of compounding."
+        },
+        {
+          "type": "content",
+          "headline": "Your Deep Work System (Complete)",
+          "body": "Your system now includes: 1) A deep work ritual that launches focus automatically. 2) Time blocks that protect your best hours. 3) A scorecard that keeps you honest. 4) Energy management that sustains performance. 5) A shutdown ritual that enables recovery. 6) An identity that makes all of this feel natural, not forced. This system will serve you for decades."
+        },
+        {
+          "type": "content",
+          "headline": "The Compounding Effect",
+          "body": "Career capital compounds like interest. One hour of deep work today doesn't just produce today's output — it builds skill that makes tomorrow's hour more productive. After a year of consistent deep work, you won't just be slightly better. You'll be operating at a level most people never reach. Newport calls this \"so good they can't ignore you\" — and it's where you're heading."
+        },
+        {
+          "type": "content",
+          "headline": "Common Pitfalls & How to Recover",
+          "body": "You will have setbacks. Expect them. When you miss a day: apply the two-minute rule next morning. When your system breaks down: restart with just the ritual. When motivation drops: re-read your scorecard and see how far you've come. When life gets chaotic: protect even 30 minutes. The system is resilient — but only if you return to it quickly after disruption."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 90-Day Deep Work Commitment",
+          "body": "Write a commitment for the next 90 days: 1) Your daily deep work target (hours). 2) Your #1 career capital goal (the skill you're building). 3) Your non-negotiable ritual. 4) How you'll track progress. 5) What you'll do when you miss a day. Sign it, date it, and place it next to your scorecard. In 90 days, you'll barely recognise your output."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does deep work produce compounding career returns over time?",
+          "type": "mcq",
+          "options": [
+            "Each hour builds skill that makes future hours more productive",
+            "Employers notice and give you automatic raises",
+            "You get faster at switching between tasks",
+            "Your colleagues start doing your shallow work for you"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep work compounds because skill builds on skill. An hour of focused practice today makes you slightly more capable, which means tomorrow's hour produces more. Over months and years, this creates exponential separation from peers who never develop sustained focus."
+        },
+        {
+          "question": "When your deep work system breaks down, you should redesign it completely from scratch.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "When your system breaks down, restart with just the smallest element — your ritual. A complete redesign adds friction and delays your return. The power of a system is its ability to restart quickly. Apply the two-minute rule, rebuild momentum, then gradually restore the full system."
+        },
+        {
+          "question": "What is the recommended approach when you miss a deep work day?",
+          "type": "mcq",
+          "options": [
+            "Apply the two-minute rule the next morning to restore your identity",
+            "Add extra hours the next day to compensate",
+            "Take the rest of the week off and start fresh Monday",
+            "Analyse what went wrong for at least an hour before resuming"
+          ],
+          "correctIndex": 0,
+          "explanation": "The two-minute rule gets you back on track immediately without the pressure of a full session. The goal after a miss isn't performance — it's identity maintenance. Even 2 minutes casts a vote for \"I am a deep worker.\" Never miss twice in a row."
+        }
+      ]
+    }
+  ]
+}

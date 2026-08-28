@@ -1,0 +1,1713 @@
+{
+  "id": "salary-promotion-playbook",
+  "title": "Salary & Promotion Playbook",
+  "subtitle": "Master the art and science of getting paid what you're worth — using negotiation psychology, strategic visibility, and career compounding to accelerate your earning power.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "sp-module-1",
+      "moduleNumber": 1,
+      "title": "Know Your Worth",
+      "subtitle": "Research your market value, decode how decisions are made, and build an unshakeable case before you ever open your mouth.",
+      "days": "Lessons 1–7",
+      "skill": "Accurately assess your market value and understand promotion decision-making",
+      "lessonIds": [
+        "sp-1-promotion-myth",
+        "sp-2-market-value-research",
+        "sp-3-decision-makers",
+        "sp-4-evidence-portfolio",
+        "sp-5-timing-and-context",
+        "sp-6-visibility-strategy",
+        "sp-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "sp-module-2",
+      "moduleNumber": 2,
+      "title": "The Negotiation Toolkit",
+      "subtitle": "Master tactical empathy, calibrated questions, and anchoring — so you never leave money on the table again.",
+      "days": "Lessons 8–14",
+      "skill": "Apply professional negotiation techniques to salary and promotion conversations",
+      "lessonIds": [
+        "sp-8-tactical-empathy",
+        "sp-9-mirroring-and-labelling",
+        "sp-10-calibrated-questions",
+        "sp-11-anchoring",
+        "sp-12-the-ask",
+        "sp-13-handling-no",
+        "sp-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "sp-module-3",
+      "moduleNumber": 3,
+      "title": "Accelerate & Compound",
+      "subtitle": "Land in a new role with momentum, build sponsors, and create a system that compounds your earning power for decades.",
+      "days": "Lessons 15–21",
+      "skill": "Sustain career momentum through strategic first 90 days, sponsors, and long-term compounding",
+      "lessonIds": [
+        "sp-15-first-90-days",
+        "sp-16-sponsor-vs-mentor",
+        "sp-17-executive-presence",
+        "sp-18-compound-career-capital",
+        "sp-19-lateral-moves",
+        "sp-20-long-game",
+        "sp-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sp-1-promotion-myth",
+      "dayNumber": 1,
+      "moduleId": "sp-module-1",
+      "title": "The Promotion Myth",
+      "subtitle": "Why doing great work is necessary but never sufficient — and what actually gets people promoted.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Hard Work Doesn't Get You Promoted",
+          "body": "The most dangerous career myth is: \"If I do excellent work, I'll be recognised and promoted.\" Research from London Business School shows that performance explains only 10% of career advancement. The other 90%? Visibility, strategic relationships, and knowing how decisions are actually made. Today we shatter the myth and show you what really works.",
+          "stat": "10%",
+          "statLabel": "of promotions are explained by performance alone"
+        },
+        {
+          "type": "content",
+          "headline": "The PIE Model: Performance, Image, Exposure",
+          "body": "Harvey Coleman's research at IBM found that career success is driven by three factors: Performance (10%), Image (30%), and Exposure (60%). Performance is your table stakes — it gets you in the game. Image is how others perceive your potential. Exposure is who knows about your work and advocates for you. Most people over-invest in performance and under-invest in the other two.",
+          "bullets": [
+            "Performance (10%): The quality of your actual work output",
+            "Image (30%): How people perceive your competence and potential",
+            "Exposure (60%): Who knows you, advocates for you, and speaks your name in rooms you're not in",
+            "Top performers who neglect Image and Exposure get passed over repeatedly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How Promotion Decisions Actually Happen",
+          "body": "Promotions aren't decided in your annual review — they're decided months earlier in informal conversations between decision-makers. By the time you're \"in the process,\" the outcome is usually predetermined. This means your strategy can't start when the cycle opens. It must be ongoing — building visibility, relationships, and a narrative about your trajectory."
+        },
+        {
+          "type": "content",
+          "headline": "The Salary Negotiation Window",
+          "body": "Chris Voss (former FBI lead hostage negotiator) says: \"You're not paid what you're worth — you're paid what you negotiate.\" The average professional who negotiates their salary earns $1M+ more over their career than someone who doesn't. Yet 57% of workers never negotiate. Not because the money isn't there — but because nobody taught them how.",
+          "stat": "$1M+",
+          "statLabel": "lifetime earnings difference between those who negotiate and those who don't"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Starting Position Audit",
+          "body": "Honestly rate yourself 1-10 on each PIE dimension: Performance (quality of your work), Image (how others perceive you), and Exposure (who knows and advocates for you). Where's the gap? Most high performers score 8+ on Performance but 4-5 on Image/Exposure. Identify your weakest dimension — that's where this course will create the most leverage."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Harvey Coleman's research, what percentage of career advancement is explained by Exposure?",
+          "type": "mcq",
+          "options": [
+            "60%",
+            "30%",
+            "10%",
+            "50%"
+          ],
+          "correctIndex": 0,
+          "explanation": "Coleman's PIE model found that Exposure — who knows you and advocates for you — accounts for 60% of career advancement. Performance alone is only 10%. This is why excellent workers who lack visibility often get passed over."
+        },
+        {
+          "question": "Promotion decisions are primarily made during your formal annual performance review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Promotion decisions are typically made months before formal reviews, in informal conversations between decision-makers. By the time the official process starts, outcomes are often predetermined. Strategic visibility must be ongoing, not reactive."
+        },
+        {
+          "question": "What does Chris Voss mean by \"You're paid what you negotiate\"?",
+          "type": "mcq",
+          "options": [
+            "Your salary reflects your negotiation skill, not just your work quality",
+            "You should negotiate aggressively at every opportunity",
+            "Only senior executives need to negotiate their pay",
+            "Companies always pay market rate automatically"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss's point is that compensation isn't automatically set by merit — it's determined through negotiation. Workers who negotiate earn significantly more over their careers than equally qualified workers who accept initial offers without discussion."
+        }
+      ]
+    },
+    {
+      "id": "sp-2-market-value-research",
+      "dayNumber": 2,
+      "moduleId": "sp-module-1",
+      "title": "Market Value Research",
+      "subtitle": "How to accurately determine what you're worth — using data, not feelings.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most People Guess Their Worth — And Guess Wrong",
+          "body": "Research shows that 70% of professionals either underestimate or overestimate their market value by 15% or more. Underestimating means leaving thousands on the table. Overestimating means getting rejected and feeling bitter. Today you'll learn to find your precise number — backed by data, not emotion."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Data Sources",
+          "body": "Your true market value sits at the intersection of three data sources. No single source is reliable alone — but together they triangulate your number with surprising accuracy.",
+          "bullets": [
+            "Market data: Glassdoor, Levels.fyi, Payscale, LinkedIn Salary Insights (adjust for location, company size, industry)",
+            "Network intelligence: Conversations with recruiters, peers at other companies, and industry contacts who share ranges",
+            "Offer evidence: Actual competing offers or recruiter-quoted ranges — the only data that's truly binding"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Adjusting for Your Specifics",
+          "body": "Raw market data needs adjustment. A \"Senior Product Manager\" in fintech London pays differently than one in a healthcare startup in Manchester. Adjust for: 1) Industry premium (finance/tech pay 20-40% above average). 2) Company stage (public companies pay more base; startups pay more equity). 3) Location/remote policy. 4) Your specific experience mix (unique skill combos command premiums)."
+        },
+        {
+          "type": "content",
+          "headline": "The Recruiter Hack",
+          "body": "The fastest way to get accurate market data? Talk to recruiters — even when you're not actively looking. They'll quote you ranges to entice you. Ask: \"What range are you seeing for roles like mine?\" and \"What's the top of range for someone with my specific background?\" You're not wasting their time — you're a potential future placement."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Market Value File",
+          "body": "Spend 15 minutes today gathering data: 1) Check 3 salary comparison sites for your role + location. 2) Note the 25th, 50th, and 75th percentile ranges. 3) List 2-3 recruiters you could contact this week. 4) Write your \"unique value stack\" — the combination of skills/experience that makes you hard to replace. Save this — you'll need it for your negotiation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most reliable way to triangulate your market value?",
+          "type": "mcq",
+          "options": [
+            "Combining market data, network intelligence, and actual offer evidence",
+            "Using a single salary comparison website",
+            "Asking your current manager what you're worth",
+            "Comparing yourself to colleagues at the same company"
+          ],
+          "correctIndex": 0,
+          "explanation": "No single data source is reliable alone. Market data sites have lag and selection bias, network intel is anecdotal, and offers only reflect one company. Combining all three gives the most accurate picture of your true market value."
+        },
+        {
+          "question": "You should only talk to recruiters when you're actively job searching.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Speaking with recruiters when you're NOT actively looking is one of the best ways to gather market intelligence. They'll share ranges freely to build the relationship, and you get binding data about what the market is paying — without any pressure to move."
+        },
+        {
+          "question": "Why do raw salary comparison numbers need adjustment?",
+          "type": "mcq",
+          "options": [
+            "The same title pays very differently across industries, locations, and company stages",
+            "Salary websites always show outdated information",
+            "Companies never pay the posted range",
+            "Your gender affects what you should ask for"
+          ],
+          "correctIndex": 0,
+          "explanation": "A \"Senior Engineer\" at a bank in London earns very differently from one at a seed-stage startup in Bristol. Industry premium, company stage, location, and your unique skill combination all create meaningful variation that raw data doesn't capture."
+        }
+      ]
+    },
+    {
+      "id": "sp-3-decision-makers",
+      "dayNumber": 3,
+      "moduleId": "sp-module-1",
+      "title": "Mapping Decision-Makers",
+      "subtitle": "Identify exactly who decides your promotion — and what they need to hear.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Pitching to the Wrong Person",
+          "body": "Most people think their direct manager decides their promotion. In reality, your manager is usually just one voice in a committee or calibration meeting. If you can't name every person who has input into your advancement — and what each of them values — you're flying blind. Today you learn to map the decision landscape."
+        },
+        {
+          "type": "content",
+          "headline": "The Decision Architecture",
+          "body": "Every organisation has a promotion decision architecture. It usually includes: your direct manager (proposes), a skip-level leader (approves), an HR/People partner (calibrates), and peer managers (provide input in calibration). The weight each carries varies by company — but ignoring any of them is risky. Your job is to map this for YOUR specific situation.",
+          "bullets": [
+            "Proposer: Usually your direct manager — builds and submits the case",
+            "Approver: Skip-level or department head — has final sign-off authority",
+            "Calibrators: HR/People team — ensure consistency and fairness across teams",
+            "Influencers: Peer managers and senior ICs who speak in calibration meetings"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Decision-Makers Actually Evaluate",
+          "body": "Voss teaches that every negotiation counterpart has \"knowns\" (stated criteria) and \"unknowns\" (unstated needs). For promotion decisions, the stated criteria are usually in a rubric. The unstated criteria? Risk tolerance (\"Will they succeed at the next level?\"), team impact (\"Will promoting them cause retention issues elsewhere?\"), and narrative (\"Can I easily explain this to MY boss?\")."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Room Where It Happens\" Strategy",
+          "body": "Michael Watkins (The First 90 Days) emphasises that you need advocates in the room when you're not there. Your manager alone may not be enough — especially if they're new or politically weak. Identify 2-3 senior people who have witnessed your impact and would speak positively. Then make it easy for them: give them specific stories and data they can repeat."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Decision Landscape",
+          "body": "Draw your personal promotion decision map: 1) Who proposes? (likely your manager) 2) Who approves? (skip-level) 3) Who calibrates? (HR/People) 4) Who influences? (peer managers, senior ICs) For each person, note: Do they know my work? What do they value? When did I last make my impact visible to them? Identify the biggest gap — that's your priority."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In most organisations, who typically has the final approval authority on promotions?",
+          "type": "mcq",
+          "options": [
+            "A skip-level leader or department head",
+            "Your direct manager alone",
+            "The HR department exclusively",
+            "A vote among your peers"
+          ],
+          "correctIndex": 0,
+          "explanation": "While your direct manager usually proposes the promotion, final approval typically sits with a skip-level leader or department head. They often make decisions in calibration meetings where multiple candidates are compared — which is why visibility beyond your immediate team matters so much."
+        },
+        {
+          "question": "Your direct manager alone decides whether you get promoted.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "In most organisations, your manager proposes but doesn't unilaterally decide. Promotions go through calibration meetings involving skip-levels, HR, and peer managers. Your manager is one voice — often an important one — but building advocates across the decision architecture dramatically increases your odds."
+        },
+        {
+          "question": "What are \"unstated criteria\" in promotion decisions?",
+          "type": "mcq",
+          "options": [
+            "Hidden factors like risk tolerance, team dynamics, and ease of justification",
+            "The official competency rubric published by HR",
+            "Your personal goals and career aspirations",
+            "The exact salary budget available for your team"
+          ],
+          "correctIndex": 0,
+          "explanation": "Beyond official rubrics, decision-makers evaluate unstated factors: \"Will they succeed at the next level?\" (risk), \"Will this cause retention issues?\" (team dynamics), and \"Can I easily explain this to my boss?\" (narrative). Addressing these hidden concerns is what separates successful promotion bids from failed ones."
+        }
+      ]
+    },
+    {
+      "id": "sp-4-evidence-portfolio",
+      "dayNumber": 4,
+      "moduleId": "sp-module-1",
+      "title": "The Evidence Portfolio",
+      "subtitle": "Build an irrefutable case for your promotion — with numbers, impact stories, and testimonials.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Memory Is Your Worst Enemy",
+          "body": "When promotion time comes, you'll remember maybe 20% of your accomplishments from the past year. Your manager? Even less. This is why people who keep an ongoing \"brag document\" get promoted faster — they have evidence on demand, while everyone else scrambles to remember what they did six months ago."
+        },
+        {
+          "type": "content",
+          "headline": "The Brag Document",
+          "body": "Julia Evans popularised the \"brag document\" — a running list of everything you accomplish. Update it weekly (takes 5 minutes). Include: projects shipped, problems solved, people helped, skills learned, positive feedback received. When review time comes, you have a year of ammunition. Without it, you're relying on what you can recall under pressure.",
+          "bullets": [
+            "Update every Friday — 5 minutes maximum",
+            "Include quantified impact wherever possible (revenue, time saved, users affected)",
+            "Note positive feedback from stakeholders, verbatim",
+            "Record \"invisible work\" — mentoring, process improvements, cross-team help"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quantifying Your Impact",
+          "body": "Decision-makers think in numbers. \"I improved the onboarding flow\" is weak. \"I redesigned the onboarding flow, reducing drop-off by 34% and increasing activation by 12%, generating an estimated £180K in annual recurring revenue\" is irrefutable. For every accomplishment, ask: What changed? By how much? What's the business value? If you can't quantify directly, use reasonable proxies."
+        },
+        {
+          "type": "content",
+          "headline": "Testimonials & Third-Party Validation",
+          "body": "Your own claims carry less weight than someone else's. Collect \"micro-testimonials\" — screenshots of Slack messages, email praise, or meeting shout-outs. When someone thanks you or praises your work, save it immediately. In calibration meetings, a manager who can say \"Three VP-level stakeholders specifically praised their work\" carries enormous weight."
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Brag Document Today",
+          "body": "Create a simple document (Google Doc, Notion page, or even a note on your phone). Title it \"My Impact Log.\" Right now, write down your top 5 accomplishments from the past 3 months. For each, add: 1) What you did. 2) The measurable result. 3) Who benefited. Set a recurring Friday calendar reminder: \"Update Impact Log — 5 min.\" Start this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is a \"brag document\" more effective than relying on memory during reviews?",
+          "type": "mcq",
+          "options": [
+            "People typically remember only 20% of their accomplishments without documentation",
+            "Managers require written evidence before considering promotions",
+            "It makes you look more organised than your peers",
+            "HR systems automatically pull from documented achievements"
+          ],
+          "correctIndex": 0,
+          "explanation": "Memory is unreliable — both yours and your manager's. When promotion time arrives, most people can only recall a fraction of what they accomplished. A running brag document ensures you have comprehensive evidence ready, while others scramble to remember."
+        },
+        {
+          "question": "\"I improved the onboarding flow\" is a strong enough statement for a promotion case.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unquantified claims are weak in calibration meetings. Decision-makers think in numbers. \"Reduced drop-off by 34%, generating £180K ARR\" is irrefutable. Always attach measurable impact — or reasonable proxies — to every accomplishment in your evidence portfolio."
+        },
+        {
+          "question": "What makes third-party validation particularly powerful in promotion cases?",
+          "type": "mcq",
+          "options": [
+            "Others' praise carries more weight than your own claims in calibration meetings",
+            "It proves you have friends in the organisation",
+            "HR requires at least 3 references before any promotion",
+            "It shows you're well-liked by the entire company"
+          ],
+          "correctIndex": 0,
+          "explanation": "Self-advocacy alone can feel like bragging. But when a manager can cite specific praise from VP-level stakeholders or cross-functional partners, it transforms subjective opinion into objective validation. Testimonials are evidence that your impact is recognised beyond your immediate team."
+        }
+      ]
+    },
+    {
+      "id": "sp-5-timing-and-context",
+      "dayNumber": 5,
+      "moduleId": "sp-module-1",
+      "title": "Timing & Context",
+      "subtitle": "When you ask matters as much as what you ask — master the art of strategic timing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Best Ask at the Wrong Time Is Still a No",
+          "body": "Chris Voss says timing is everything in negotiation. A perfect pitch delivered during a budget freeze, a reorg, or when your manager is under fire will fail — no matter how strong your case. The when of your ask can be the difference between a \"yes\" and a \"not right now\" that delays you 12 months."
+        },
+        {
+          "type": "content",
+          "headline": "Organisational Timing Signals",
+          "body": "Learn to read your company's rhythm. Every organisation has cycles that create windows of opportunity and periods where asking is futile.",
+          "bullets": [
+            "Budget planning season (usually Q4): When new headcount and salary budgets are set — ideal time to plant seeds",
+            "Post-funding or strong earnings: Company feeling flush = more likely to say yes",
+            "After a big win you led: Your leverage is highest when impact is fresh",
+            "Avoid: During layoffs, reorgs, leadership changes, or your manager's own difficult period"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Personal Timing: The Leverage Stack",
+          "body": "Your personal leverage is highest when multiple factors align: you've just shipped something significant, stakeholders are praising you, and you have external options (even if you don't plan to use them). Voss calls this \"creating the illusion of loss\" — the other side must feel what they'd lose by saying no. Stack your wins, then ask."
+        },
+        {
+          "type": "content",
+          "headline": "The Pre-Conversation Conversation",
+          "body": "Never make the big ask cold. Watkins (The First 90 Days) emphasises \"securing early wins\" and signalling intent early. Months before you want a promotion, tell your manager: \"I'd like to work toward [next level] — what would I need to demonstrate?\" This makes them a co-conspirator in your promotion, not someone you're surprising with a demand."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Timing Windows",
+          "body": "Answer these questions: 1) When is your company's next budget cycle? 2) When is your next performance review? 3) What's the biggest win you expect to deliver in the next 3 months? 4) Is there anything happening (reorg, leadership change) that might close windows? Based on this, when is your optimal window to have \"the conversation\"? Mark it in your calendar."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Voss mean by \"creating the illusion of loss\" in salary negotiation?",
+          "type": "mcq",
+          "options": [
+            "Making the decision-maker feel what they'd lose by saying no to you",
+            "Threatening to quit immediately if they don't give you a raise",
+            "Pretending you have competing offers when you don't",
+            "Making yourself seem indispensable by hoarding information"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss's \"illusion of loss\" is about creating genuine leverage — stacking visible wins and having options — so the other side recognises what they'd lose. It's not about threats or deception, but ensuring your value is so clear that saying no feels costly."
+        },
+        {
+          "question": "You should surprise your manager with a promotion request during your annual review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Never make the big ask cold. The \"pre-conversation conversation\" — months earlier — signals intent and makes your manager a co-conspirator. By review time, they should already be advocating for you, not hearing about your aspirations for the first time."
+        },
+        {
+          "question": "Which is the WORST time to ask for a promotion or raise?",
+          "type": "mcq",
+          "options": [
+            "During a company reorg or your manager's own difficult period",
+            "Right after you've delivered a major project successfully",
+            "During budget planning season when new allocations are being decided",
+            "After receiving strong praise from senior stakeholders"
+          ],
+          "correctIndex": 0,
+          "explanation": "During reorgs, layoffs, or when your manager is under pressure, even the strongest case will be met with \"not right now.\" Timing matters as much as content. The best moments are after big wins, during budget season, or when praise is fresh and stakeholders are engaged."
+        }
+      ]
+    },
+    {
+      "id": "sp-6-visibility-strategy",
+      "dayNumber": 6,
+      "moduleId": "sp-module-1",
+      "title": "The Visibility Strategy",
+      "subtitle": "Make your work impossible to ignore — without feeling like you're bragging.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Invisible Work Doesn't Get Rewarded",
+          "body": "There's a cruel truth in organisations: the person who does 80% of the work but nobody sees gets passed over, while the person who does 60% but makes it visible gets promoted. This isn't about being fake — it's about being strategic. If decision-makers don't know about your impact, it doesn't exist in their mental model of \"who's ready.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Visibility Matrix",
+          "body": "Strategic visibility operates on two axes: audience (who sees your work) and frequency (how often they see it). You need consistent visibility with the right people — not occasional visibility with everyone.",
+          "bullets": [
+            "High-value audiences: Skip-level leaders, cross-functional partners, executives who attend calibration",
+            "Low-value visibility: Being \"busy\" in ways only your immediate team notices",
+            "Frequency matters: One big presentation a year is less effective than weekly micro-signals",
+            "Best channels: Written updates, cross-team demos, lunch with skip-levels, strategic Slack posts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Non-Braggy Visibility Tactics",
+          "body": "Most people avoid self-promotion because it feels uncomfortable. The trick is framing visibility as helping others, not bragging. \"I wrote up our learnings from Project X in case it helps other teams\" — you're being generous, not boastful. \"Here's a quick demo of what we shipped this sprint\" — you're sharing knowledge, not showing off. Frame every visibility act as service."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Stakeholder Update",
+          "body": "Send a brief weekly email or Slack message to key stakeholders (including your skip-level): 3 bullet points of what you accomplished, 1 thing you're working on next, 1 ask or blocker. Takes 5 minutes. Over 6 months, that's 26 data points of your impact landing in decision-makers' inboxes. By promotion time, they already know your story."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Visibility System",
+          "body": "Plan your visibility strategy: 1) List 3-5 people who influence your promotion but rarely see your work. 2) Choose one weekly tactic (status update email, Slack post, brief demo). 3) Choose one monthly tactic (skip-level coffee chat, cross-team presentation, written case study). 4) Start this week — send your first stakeholder update before Friday."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the Visibility Matrix, what combination creates the most career impact?",
+          "type": "mcq",
+          "options": [
+            "Consistent frequency with high-value audiences (decision-makers)",
+            "One impressive annual presentation to the entire company",
+            "Being visible to as many people as possible regardless of their role",
+            "Working extra hours so your manager notices your dedication"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Visibility Matrix shows that consistent, frequent signals to the right people (decision-makers, skip-levels, cross-functional partners) creates far more impact than occasional broad visibility. Weekly micro-signals to key stakeholders outperform one big annual moment."
+        },
+        {
+          "question": "Self-promotion always feels like bragging and should be avoided.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strategic visibility doesn't have to feel like bragging. The key is framing it as service: sharing learnings, demoing for other teams, writing up case studies. When you position visibility as helping others, it's perceived as generosity — not self-promotion."
+        },
+        {
+          "question": "Why is a weekly stakeholder update more effective than a single comprehensive annual summary?",
+          "type": "mcq",
+          "options": [
+            "It creates 52 data points of impact over a year, building an ongoing narrative",
+            "Managers prefer short emails over long documents",
+            "Annual summaries are never read by anyone",
+            "It gives you more chances to ask for a raise"
+          ],
+          "correctIndex": 0,
+          "explanation": "A weekly update creates a consistent stream of evidence that lands in decision-makers' awareness. Over 6-12 months, they build an unconscious narrative of your trajectory and impact. One annual summary, no matter how detailed, can't replicate this cumulative effect."
+        }
+      ]
+    },
+    {
+      "id": "sp-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "sp-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate everything you've built — your market value, decision map, evidence, and visibility plan.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Foundation Is Complete",
+          "body": "In seven days you've done what most professionals never do in their entire career: you've researched your market value, mapped your decision-makers, started an evidence portfolio, identified your timing window, and designed a visibility system. You now know more about the game of advancement than 95% of your peers. Let's consolidate before we learn to negotiate."
+        },
+        {
+          "type": "content",
+          "headline": "Your Promotion Readiness Checklist",
+          "body": "Before you enter any negotiation, you need these five elements locked in. This is your foundation — without any one of them, your ask will be weaker than it needs to be.",
+          "bullets": [
+            "✅ Market value range: 25th, 50th, 75th percentile for your role (from 3+ data sources)",
+            "✅ Decision map: Every person who influences your promotion, and what each values",
+            "✅ Evidence portfolio: Quantified impact, testimonials, and an ongoing brag document",
+            "✅ Timing window: The optimal moment to make your ask, based on org cycles and personal leverage",
+            "✅ Visibility system: Weekly and monthly tactics keeping you top-of-mind with decision-makers"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Preparation",
+          "body": "Chris Voss says: \"The most dangerous negotiation is one you don't know you're in.\" Everything you've built in Module 1 means you'll never walk into a compensation conversation unprepared again. Most people wing it — they get nervous, accept the first offer, or ask without evidence. You now have data, allies, and a system. That's unbeatable leverage."
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming in Module 2",
+          "body": "With your foundation set, Module 2 gives you the tactical toolkit from the world's best negotiators. You'll learn tactical empathy (making the other side feel heard), mirroring and labelling (Voss's signature techniques), calibrated questions (steering conversations without confrontation), and anchoring (setting the frame). These skills work in salary talks, vendor negotiations, and everyday influence."
+        },
+        {
+          "type": "try-it",
+          "headline": "Complete Your Readiness Audit",
+          "body": "Score each element 1-5 (1 = not started, 5 = fully complete): Market value research ___. Decision map ___. Evidence portfolio ___. Timing window identified ___. Visibility system active ___. For any element below 3, block 15 minutes this week to strengthen it. You want all five at 4+ before you move to Module 2's negotiation tactics."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the five elements of a complete promotion readiness foundation?",
+          "type": "mcq",
+          "options": [
+            "Market value, decision map, evidence portfolio, timing window, visibility system",
+            "Performance reviews, manager approval, HR sign-off, peer feedback, self-assessment",
+            "Resume, cover letter, interview prep, references, LinkedIn profile",
+            "Goals set, goals achieved, feedback received, skills learned, relationships built"
+          ],
+          "correctIndex": 0,
+          "explanation": "The five foundational elements — market value research, decision map, evidence portfolio, timing window, and visibility system — give you comprehensive preparation that most professionals never achieve. Together they ensure you enter negotiation conversations with data, allies, and leverage."
+        },
+        {
+          "question": "It's fine to start negotiating your salary before completing your market research.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Negotiating without market data means you're guessing — and you might anchor too low (leaving money on the table) or too high (damaging credibility). Voss emphasises that preparation is the foundation of effective negotiation. Complete your research before you open your mouth."
+        },
+        {
+          "question": "Why does Voss say \"the most dangerous negotiation is one you don't know you're in\"?",
+          "type": "mcq",
+          "options": [
+            "Because without awareness, you can't prepare — and unprepared negotiators get poor outcomes",
+            "Because managers are trying to trick you into accepting less money",
+            "Because salary discussions should be avoided entirely",
+            "Because you should always be confrontational in career conversations"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss's point is that every career conversation — from casual chats with your manager to project assignments — is shaping perceptions about your value. If you're unaware of this, you miss opportunities to frame your narrative. Awareness + preparation = leverage."
+        }
+      ]
+    },
+    {
+      "id": "sp-8-tactical-empathy",
+      "dayNumber": 8,
+      "moduleId": "sp-module-2",
+      "title": "Tactical Empathy",
+      "subtitle": "The FBI's secret weapon — make the other side feel understood, and watch their defences dissolve.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The FBI Negotiator's #1 Tool Isn't What You Think",
+          "body": "Chris Voss spent 24 years as an FBI hostage negotiator. His most powerful tool wasn't intimidation or clever arguments — it was making people feel deeply understood. He calls it \"tactical empathy\": understanding someone's feelings and mindset, and then vocalising that understanding. In salary negotiation, this single skill changes everything."
+        },
+        {
+          "type": "content",
+          "headline": "What Tactical Empathy Actually Is",
+          "body": "Tactical empathy isn't agreement. It's not sympathy. It's the ability to recognise what the other person is feeling and articulate it back to them. When your manager says \"the budget is tight,\" tactical empathy means responding: \"It sounds like you're under real pressure to keep costs down.\" You haven't agreed to accept less. But they feel heard — and heard people become collaborative, not defensive.",
+          "bullets": [
+            "It's recognition, not agreement — you can empathise and still advocate for yourself",
+            "It disarms defensiveness — people who feel heard stop fighting",
+            "It reveals hidden information — the other side opens up when they trust you understand them",
+            "It builds rapport that makes \"yes\" feel natural, not forced"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why It Works in Salary Talks",
+          "body": "Your manager isn't your enemy — they're someone with their own pressures, constraints, and fears. Budget limits, HR policies, team equity concerns. When you demonstrate you understand THEIR reality, you shift from adversary to partner. Now you're both solving the same problem: \"How do we get you fairly compensated within the constraints we both face?\""
+        },
+        {
+          "type": "content",
+          "headline": "The Tactical Empathy Formula",
+          "body": "Voss's formula is simple: 1) Listen for the emotion or constraint behind their words. 2) Articulate it using \"It seems like...\" or \"It sounds like...\" or \"It looks like...\" 3) Pause. Let them confirm or correct. 4) They feel understood and become more open. Example: Boss says \"Now isn't a great time.\" You say: \"It sounds like there's a lot of pressure on the team right now.\" They elaborate. Now you have real information."
+        },
+        {
+          "type": "try-it",
+          "headline": "Practice Tactical Empathy Today",
+          "body": "In your next conversation (personal or professional), try this: Instead of responding to what someone says with your own point, first acknowledge what they're feeling. Use \"It sounds like...\" or \"It seems like you're...\" Notice how they respond — usually they relax, open up, and share more. Practice this 3 times today before we add advanced techniques tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is tactical empathy in negotiation?",
+          "type": "mcq",
+          "options": [
+            "Recognising someone's feelings and articulating that understanding back to them",
+            "Agreeing with everything the other person says to avoid conflict",
+            "Feeling sorry for the other person's difficult situation",
+            "Using emotional manipulation to get what you want"
+          ],
+          "correctIndex": 0,
+          "explanation": "Tactical empathy is specifically about recognising and vocalising what the other person feels — not agreeing with them or feeling sorry for them. It's a tool that disarms defensiveness and creates collaboration, making the other side more open to finding solutions."
+        },
+        {
+          "question": "Using tactical empathy means you agree with your manager's constraints and accept less money.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tactical empathy is recognition, not agreement. You can fully acknowledge \"It sounds like budget is tight\" while still advocating for your value. The empathy disarms defensiveness and opens space for creative solutions — it doesn't mean accepting a bad outcome."
+        },
+        {
+          "question": "Why does tactical empathy make salary negotiations more successful?",
+          "type": "mcq",
+          "options": [
+            "It shifts the dynamic from adversarial to collaborative problem-solving",
+            "It makes your manager feel guilty about not paying you more",
+            "It proves you're more emotionally intelligent than your peers",
+            "It confuses the other person into agreeing with you"
+          ],
+          "correctIndex": 0,
+          "explanation": "When your manager feels understood — their pressures acknowledged — they stop defending and start collaborating. The conversation shifts from \"me vs. you\" to \"us vs. the problem.\" This collaborative frame dramatically increases the chance of finding a mutually satisfactory outcome."
+        }
+      ]
+    },
+    {
+      "id": "sp-9-mirroring-and-labelling",
+      "dayNumber": 9,
+      "moduleId": "sp-module-2",
+      "title": "Mirroring & Labelling",
+      "subtitle": "Two deceptively simple techniques that make people tell you everything you need to know.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Simplest Technique That Changes Everything",
+          "body": "Mirroring is repeating the last 1-3 words someone said, with a slightly upward inflection. That's it. It sounds absurdly simple — but Voss calls it the most underrated negotiation tool in existence. It makes people elaborate, clarify, and reveal information they never intended to share. In salary talks, it uncovers budgets, constraints, and flexibility you'd never discover by asking directly."
+        },
+        {
+          "type": "content",
+          "headline": "How Mirroring Works",
+          "body": "When you mirror, you trigger an involuntary response — the other person feels compelled to explain, elaborate, or rephrase. It keeps them talking while you gather intelligence.",
+          "bullets": [
+            "Manager: \"We really can't go higher than the initial offer.\" You: \"Can't go higher?\" — They elaborate on WHY, revealing constraints you can work around.",
+            "HR: \"The budget for this band is set.\" You: \"The budget is set?\" — They clarify exceptions or alternative compensation.",
+            "Key: Use a calm, curious tone — never confrontational or sarcastic",
+            "Pair with silence — after mirroring, wait 4+ seconds. They WILL fill the gap."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Labelling: Naming the Emotion",
+          "body": "Labelling is putting a name to what the other person seems to be feeling or thinking. \"It seems like you're frustrated by the constraints.\" \"It looks like fairness is really important to you here.\" Labels validate emotions and create connection. When you label correctly, people feel so understood that they open up further. When you label wrong, they correct you — which is ALSO useful information."
+        },
+        {
+          "type": "content",
+          "headline": "The Mirror + Label Combo",
+          "body": "The real power comes from combining techniques. Manager: \"Look, I'd love to pay you more but my hands are tied.\" Mirror: \"Your hands are tied?\" (they elaborate about budget process). Label: \"It sounds like you genuinely want to help but the system is making it difficult.\" Now they're your ally working WITH you to find a path — because you've validated their intent."
+        },
+        {
+          "type": "try-it",
+          "headline": "Practice Mirror + Label",
+          "body": "In your next 3 conversations today, try: 1) Mirror once (repeat their last 2-3 words with curiosity). Notice how they elaborate. 2) Label once (\"It seems like...\" or \"It sounds like you feel...\"). Notice how they respond. Keep a mental tally: How much more information did you get compared to when you just respond with your own opinion? Most people are shocked at the difference."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"mirroring\" in Voss's negotiation framework?",
+          "type": "mcq",
+          "options": [
+            "Repeating the last 1-3 words someone said with a curious upward inflection",
+            "Copying the other person's body language to build rapport",
+            "Reflecting their argument back at them to show it's flawed",
+            "Saying exactly what they want to hear to gain trust"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss's mirroring is specifically repeating the last 1-3 words (or key words) with a curious tone. This triggers an involuntary urge to elaborate, clarify, or explain — revealing information the other side never intended to share. It's deceptively simple but remarkably effective."
+        },
+        {
+          "question": "When you label someone's emotion incorrectly, the technique has failed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "An \"incorrect\" label is still useful — the other person will correct you, which reveals their actual feelings or concerns. Either way you gain information. A correct label creates connection; an incorrect one prompts clarification. Both outcomes advance your understanding."
+        },
+        {
+          "question": "What should you do immediately after mirroring someone?",
+          "type": "mcq",
+          "options": [
+            "Stay silent for 4+ seconds and let them fill the gap",
+            "Immediately follow up with your counter-argument",
+            "Nod vigorously to show you agree with them",
+            "Ask a direct question about their budget"
+          ],
+          "correctIndex": 0,
+          "explanation": "Silence after a mirror is crucial. The 4+ second pause creates a vacuum that the other person feels compelled to fill — usually with elaboration, clarification, or new information. Rushing to speak after a mirror ruins the effect by removing the pressure to elaborate."
+        }
+      ]
+    },
+    {
+      "id": "sp-10-calibrated-questions",
+      "dayNumber": 10,
+      "moduleId": "sp-module-2",
+      "title": "Calibrated Questions",
+      "subtitle": "Steer any negotiation without confrontation — using questions that make the other side solve your problem.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Questions That Move Mountains",
+          "body": "Voss's calibrated questions are open-ended \"How\" and \"What\" questions that put the problem back in the other person's lap — without confrontation. Instead of demanding \"Give me more money,\" you ask \"How can we bridge the gap between my market value and the current offer?\" Now THEY'RE solving YOUR problem. It's elegant, non-aggressive, and devastatingly effective."
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Calibrated Question",
+          "body": "Calibrated questions share key traits: they're open-ended (can't be answered yes/no), they start with \"How\" or \"What\" (never \"Why\" — which triggers defensiveness), and they implicitly challenge without accusing. They force the other side to think deeply and often reveal constraints or flexibility you didn't know existed.",
+          "bullets": [
+            "\"How am I supposed to accept that?\" — challenges without confrontation",
+            "\"What would you need to see to make this work?\" — reveals their criteria",
+            "\"How can we solve this together?\" — creates partnership",
+            "\"What happens if we can't find a solution?\" — introduces consequences softly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Calibrated Questions for Salary Talks",
+          "body": "Here are battle-tested calibrated questions for compensation negotiations: \"What does the path to [X salary/level] look like?\" — gets them planning your advancement. \"How can I help make this easier for you?\" — acknowledges their constraints while keeping your ask alive. \"What would need to change for this to be possible by [date]?\" — sets timeline without ultimatums."
+        },
+        {
+          "type": "content",
+          "headline": "Why \"Why\" Is Dangerous",
+          "body": "Never start a calibrated question with \"Why.\" Voss is emphatic: \"Why\" makes people defensive because it demands justification. \"Why can't you pay me more?\" feels like an accusation. \"What's preventing us from reaching [number]?\" gets the same information without the emotional charge. The difference is subtle but the results are dramatically different."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Question Arsenal",
+          "body": "Write 5 calibrated questions for YOUR specific situation. Start each with \"How\" or \"What.\" Examples to adapt: \"How do you see my role evolving over the next 12 months?\" \"What would make you confident I'm ready for [next level]?\" \"How can we structure compensation to reflect my market value?\" Practice saying them out loud — tone matters. Calm, curious, collaborative."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes calibrated questions so effective in negotiation?",
+          "type": "mcq",
+          "options": [
+            "They put the problem in the other person's lap without confrontation",
+            "They confuse the other person into giving in",
+            "They demonstrate your intellectual superiority",
+            "They force a yes-or-no answer that traps them"
+          ],
+          "correctIndex": 0,
+          "explanation": "Calibrated questions work because they transform your demand into a shared problem. Instead of \"pay me more\" (confrontation), \"How can we bridge the gap?\" makes the other side think deeply about solutions. They're now solving YOUR problem collaboratively."
+        },
+        {
+          "question": "\"Why can't you offer me more?\" is an effective calibrated question.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Voss specifically warns against \"Why\" questions — they trigger defensiveness because they demand justification. \"What's preventing us from reaching [number]?\" gets the same information without the accusatory tone. Always use \"How\" or \"What\" instead of \"Why.\""
+        },
+        {
+          "question": "Which is the best calibrated question to understand what's needed for a promotion?",
+          "type": "mcq",
+          "options": [
+            "\"What would you need to see to make this work?\"",
+            "\"Don't you think I deserve this promotion?\"",
+            "\"Why haven't I been promoted already?\"",
+            "\"Can you just tell me yes or no?\""
+          ],
+          "correctIndex": 0,
+          "explanation": "\"What would you need to see?\" is perfectly calibrated — it's open-ended, non-confrontational, starts with \"What,\" and forces the other side to articulate specific criteria you can then deliver on. It turns a vague decision into a concrete roadmap."
+        }
+      ]
+    },
+    {
+      "id": "sp-11-anchoring",
+      "dayNumber": 11,
+      "moduleId": "sp-module-2",
+      "title": "Anchoring",
+      "subtitle": "The first number spoken shapes the entire negotiation — learn to set that anchor strategically.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Number That Controls Everything",
+          "body": "Psychologists Tversky and Kahneman proved that the first number in any negotiation \"anchors\" the entire conversation. Every subsequent offer is unconsciously compared to it. If you let the other side anchor low, you're fighting uphill. If YOU anchor high (with justification), the final number gravitates toward your range. Anchoring is the single most powerful salary tactic that most people get wrong."
+        },
+        {
+          "type": "content",
+          "headline": "How Anchoring Works in Your Brain",
+          "body": "Anchoring is a cognitive bias — even experts can't fully resist it. When a number is stated, your brain uses it as a reference point for all subsequent evaluations. In salary terms: if a recruiter says \"the range is £60-80K\" and you say \"I'm looking for £95K,\" the conversation centers around £80-95K. If you'd said £75K, it would center around £60-75K. Same you, same skills — different anchor, different outcome.",
+          "stat": "£15-20K",
+          "statLabel": "typical difference in final offer based on who anchors first and where"
+        },
+        {
+          "type": "content",
+          "headline": "When to Anchor (And When Not To)",
+          "body": "The rule is: anchor first WHEN you have good market data. Your research from Lesson 2 gives you this power. Anchor at the 75th-90th percentile of your market range — it's aggressive but justifiable. If you're uncertain about the range, let them go first (use calibrated questions: \"What does the budget look like for this role?\"). Never anchor blind.",
+          "bullets": [
+            "Anchor first when: You have solid market data and the range favours you",
+            "Let them anchor when: You're unsure of the range or suspect it's higher than you'd guess",
+            "Your anchor should be: 75th-90th percentile of your researched market range",
+            "Always justify: \"Based on my research and the value I bring, I'm targeting £X because...\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Ackerman Model",
+          "body": "Voss uses the Ackerman bargaining model for precise offers: 1) Set your target price (what you actually want). 2) Your first offer is 65% of target (extreme anchor for buying — in salary, start at 110-120% of target). 3) Make three decreasing concessions: 85%, 95%, 100% of target. 4) Each concession is smaller, signalling you're reaching your limit. 5) Final number is non-round (e.g., £87,350 — precision signals research)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Calculate Your Anchor",
+          "body": "Using your market research from Lesson 2: 1) Write your target salary (what you actually want — aim for 75th percentile). 2) Calculate your opening anchor (target + 15-20%). 3) Prepare your justification: \"Based on [data sources], roles with my experience and [unique value] typically command £X-Y. Given [specific impact], I'm targeting the upper end.\" Say it out loud. Does it feel backed by evidence? Good."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"anchoring\" in salary negotiation?",
+          "type": "mcq",
+          "options": [
+            "The first number stated becomes the reference point that shapes the entire negotiation",
+            "Refusing to move from your initial position no matter what",
+            "Tying your salary expectations to your previous job's pay",
+            "Setting a very low expectation so you're pleasantly surprised"
+          ],
+          "correctIndex": 0,
+          "explanation": "Anchoring is a cognitive bias proven by Tversky and Kahneman: the first number stated in any negotiation becomes the unconscious reference point for all subsequent discussion. This means whoever anchors first — and where they anchor — has disproportionate influence over the final outcome."
+        },
+        {
+          "question": "You should always let the employer state their number first.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The conventional advice to \"never go first\" is often wrong. If you have solid market data (which you built in Lesson 2), anchoring first at the 75th-90th percentile of market rate gives you a significant advantage. Only let them go first when you're genuinely unsure whether their range might be higher than yours."
+        },
+        {
+          "question": "Why does Voss recommend using non-round numbers in final offers (e.g., £87,350)?",
+          "type": "mcq",
+          "options": [
+            "Precise numbers signal thorough research and feel more calculated, increasing credibility",
+            "It confuses the other person into accepting faster",
+            "Round numbers are considered unlucky in negotiation",
+            "HR systems require exact figures to process salary changes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Non-round numbers signal that you've done your homework and arrived at this figure through careful research — not arbitrary guessing. \"£87,350\" feels calculated and data-driven, while \"£87,000\" feels like a round estimate. Precision increases credibility and resistance to counter-offers."
+        }
+      ]
+    },
+    {
+      "id": "sp-12-the-ask",
+      "dayNumber": 12,
+      "moduleId": "sp-module-2",
+      "title": "The Ask",
+      "subtitle": "Putting it all together — the exact script and structure for making your salary or promotion request.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Moment of Truth",
+          "body": "You've done the research. You've mapped decision-makers. You've built evidence. You understand tactical empathy, mirroring, and anchoring. Now it's time to actually ASK. Most people choke here — they hint, they hedge, they say \"I was wondering if maybe...\" Today you learn the exact structure for a clear, confident, non-aggressive ask that gets results."
+        },
+        {
+          "type": "content",
+          "headline": "The ACRE Framework for The Ask",
+          "body": "Structure your compensation conversation using ACRE: Acknowledge, Context, Request, Explore.",
+          "bullets": [
+            "A — Acknowledge: Open with tactical empathy. \"I know budgets are tight and you're balancing a lot...\"",
+            "C — Context: Present your evidence concisely. \"Over the past year, I've [2-3 quantified achievements]...\"",
+            "R — Request: State your specific ask clearly. \"Based on market data and my impact, I'm requesting [specific number/title].\"",
+            "E — Explore: Invite collaboration. \"How can we make this work?\" or \"What would you need to see?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Delivery: Tone & Body Language",
+          "body": "HOW you ask matters as much as WHAT you ask. Voss recommends the \"late-night FM DJ voice\" — calm, slow, warm, confident. Not aggressive. Not apologetic. Not rushed. Sit back slightly (signals confidence, not desperation). Maintain eye contact. Pause after your request — silence is your ally. Let them process without filling the gap with nervous qualifications."
+        },
+        {
+          "type": "content",
+          "headline": "What NOT to Do",
+          "body": "Common mistakes that kill negotiations: 1) Apologising (\"Sorry to bring this up...\"). 2) Hedging (\"I was kind of hoping maybe...\"). 3) Over-explaining (they stop listening after 30 seconds of justification). 4) Ultimatums (\"If I don't get this, I'll leave\"). 5) Comparing to colleagues (\"But Sarah got promoted...\"). 6) Making it personal (\"I need more money because of my mortgage\"). Keep it professional, evidence-based, and collaborative."
+        },
+        {
+          "type": "try-it",
+          "headline": "Script Your ACRE Conversation",
+          "body": "Write out your actual ACRE script: A — Your tactical empathy opener (1-2 sentences). C — Your top 3 evidence points (quantified). R — Your specific request (exact number or title). E — Your calibrated question (\"How can we...?\"). Read it aloud. Time it — aim for under 90 seconds before your calibrated question. Then practice in front of a mirror or record yourself. Confidence comes from preparation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the ACRE framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Acknowledge, Context, Request, Explore",
+            "Ask, Convince, Refuse, Exit",
+            "Affirm, Challenge, Resolve, Evaluate",
+            "Anchor, Calibrate, Respond, Execute"
+          ],
+          "correctIndex": 0,
+          "explanation": "ACRE gives you a clear structure: Acknowledge (tactical empathy), Context (evidence), Request (specific ask), Explore (calibrated question). This sequence builds rapport, establishes credibility, makes a clear ask, then opens space for collaborative problem-solving."
+        },
+        {
+          "question": "Starting your salary ask with \"Sorry to bring this up\" demonstrates polite professionalism.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apologising before your ask signals that you believe you're doing something wrong — which undermines your confidence and credibility. A compensation conversation is a normal professional discussion, not an imposition. Open with tactical empathy (acknowledging their reality), not apology."
+        },
+        {
+          "question": "What voice tone does Voss recommend for negotiation conversations?",
+          "type": "mcq",
+          "options": [
+            "Calm, slow, and warm — like a \"late-night FM DJ\"",
+            "Loud and assertive to show dominance",
+            "Fast and energetic to show enthusiasm",
+            "Quiet and uncertain to seem non-threatening"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss's \"late-night FM DJ voice\" is calm, measured, and warm. It signals confidence without aggression, puts the other side at ease, and gives your words more weight. Rushing or raising your voice triggers defensiveness; this tone creates space for collaboration."
+        }
+      ]
+    },
+    {
+      "id": "sp-13-handling-no",
+      "dayNumber": 13,
+      "moduleId": "sp-module-2",
+      "title": "Handling \"No\"",
+      "subtitle": "\"No\" isn't the end — it's where the real negotiation begins.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"No\" Is Not a Dead End",
+          "body": "Most people hear \"no\" and retreat. Voss sees it completely differently: \"No\" is where negotiation starts, not where it ends. \"No\" means \"I'm not comfortable yet,\" \"I need more information,\" or \"I need to feel in control.\" When your manager says \"I can't do that,\" they're telling you what they can't do — which means there's something they CAN do. Your job is to find it."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Meanings of \"No\"",
+          "body": "Voss identifies that \"no\" almost never means a permanent, absolute refusal. Understanding which \"no\" you're hearing changes everything.",
+          "bullets": [
+            "\"I'm not ready yet\" — They need more time or information. Response: provide evidence, revisit timing.",
+            "\"I don't understand\" — Your ask wasn't clear or justified. Response: reframe, use calibrated questions.",
+            "\"I need to feel in control\" — They feel pressured. Response: tactical empathy, give them space, ask how THEY'd solve it.",
+            "\"I can't (but maybe someone else can)\" — They lack authority. Response: \"Who else would need to be involved?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"No\"-Oriented Question",
+          "body": "Counter-intuitively, Voss recommends INVITING \"no\" — because it gives the other side a feeling of control. Instead of \"Do you agree this is fair?\" (pushes for yes), ask: \"Would it be unreasonable to consider a salary adjustment given this data?\" They have to say \"no\" to agree with you. \"No, that wouldn't be unreasonable\" = they've just endorsed your ask without feeling pressured."
+        },
+        {
+          "type": "content",
+          "headline": "The Pivot After \"No\"",
+          "body": "When you hear \"no\" to your primary ask, pivot — don't retreat. \"I understand the salary band is fixed. What other elements of compensation have flexibility?\" You might unlock: signing bonus, equity, annual bonus, title upgrade, extra holiday, learning budget, flexible working, accelerated review cycle. The total package often has more flex than the base salary alone."
+        },
+        {
+          "type": "try-it",
+          "headline": "Prepare Your Pivot Options",
+          "body": "List your compensation priorities beyond base salary, ranked: 1) Base salary. 2) Bonus. 3) Equity/shares. 4) Title. 5) Working arrangement. 6) Holiday. 7) Learning budget. 8) Review timeline. For each, note what would be \"great\" vs \"acceptable.\" If base salary is a \"no,\" what combination of 2-3 other elements would make you equally satisfied? Know this BEFORE the conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Voss, what does \"no\" usually mean in a negotiation?",
+          "type": "mcq",
+          "options": [
+            "\"I'm not comfortable yet\" or \"I need more information\" — not a permanent refusal",
+            "The conversation is permanently over and you should give up",
+            "The other person is being dishonest about their constraints",
+            "You asked for too much and should immediately lower your expectations"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voss teaches that \"no\" rarely means absolute refusal. It usually signals discomfort, need for more information, or desire for control. Understanding which \"no\" you're hearing allows you to address the real concern rather than retreating unnecessarily."
+        },
+        {
+          "question": "A \"no-oriented question\" makes the other person say \"no\" to agree with you.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Would it be unreasonable to consider an adjustment?\" requires \"no\" to endorse your position (\"No, it wouldn't be unreasonable\"). This gives the other side a feeling of control (they said \"no\") while actually advancing your position. It's counter-intuitive but highly effective."
+        },
+        {
+          "question": "What should you do when your primary salary ask gets rejected?",
+          "type": "mcq",
+          "options": [
+            "Pivot to other compensation elements: bonus, equity, title, benefits, review timeline",
+            "Accept the rejection and wait until next year",
+            "Threaten to resign immediately",
+            "Ask the same question again more forcefully"
+          ],
+          "correctIndex": 0,
+          "explanation": "Total compensation includes many elements beyond base salary. When base is \"no,\" pivoting to bonus, equity, title, working arrangements, or accelerated review timelines often unlocks value the decision-maker CAN approve. Never retreat — pivot to alternative paths to the same goal."
+        }
+      ]
+    },
+    {
+      "id": "sp-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "sp-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Your complete negotiation toolkit — reviewed, integrated, and ready to deploy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Have FBI-Level Negotiation Skills",
+          "body": "Over seven lessons, you've learned tactical empathy, mirroring, labelling, calibrated questions, anchoring, the ACRE framework, and how to handle \"no.\" These aren't just salary tools — they work in vendor negotiations, client conversations, and everyday influence. You have a complete negotiation operating system. Let's integrate it all."
+        },
+        {
+          "type": "content",
+          "headline": "Your Negotiation Playbook (Complete)",
+          "body": "Here's your toolkit summary — the complete sequence for any compensation conversation:",
+          "bullets": [
+            "1. Preparation: Market data + evidence + decision map (Module 1)",
+            "2. Open with tactical empathy: \"I know budget is tight...\" (acknowledges their reality)",
+            "3. Use mirroring + labelling to gather intelligence and build rapport",
+            "4. Present evidence concisely (ACRE: Context phase — 2-3 quantified wins)",
+            "5. Make your specific ask with an anchor at 75th-90th percentile",
+            "6. Deploy calibrated questions: \"How can we make this work?\"",
+            "7. Handle \"no\" with pivots and no-oriented questions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Mindset Shift",
+          "body": "The biggest shift from these two modules: negotiation isn't conflict — it's collaboration. You're not fighting your manager. You're helping them solve a problem: how to retain and fairly compensate a high-performer. When you approach it this way — with empathy, evidence, and calibrated questions — you make it EASY for them to say yes. You're not demanding. You're co-creating a solution."
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming in Module 3",
+          "body": "With foundation and tactics mastered, Module 3 focuses on long-term acceleration: How to nail your first 90 days in a new role. How to build sponsors (not just mentors). How to develop executive presence. How lateral moves compound career capital. And the long game — building a decade-long earning trajectory that compounds exponentially."
+        },
+        {
+          "type": "try-it",
+          "headline": "Rehearse Your Full Conversation",
+          "body": "Write out your complete negotiation script using all Module 2 techniques: 1) Tactical empathy opener. 2) Brief evidence presentation (3 quantified wins). 3) Your anchored ask (specific number). 4) Two calibrated questions for when they push back. 5) Your pivot options if the primary ask is \"no.\" Time yourself: the whole thing should flow in under 3 minutes. Practice with a trusted friend or record yourself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the correct sequence of techniques in a salary negotiation conversation?",
+          "type": "mcq",
+          "options": [
+            "Tactical empathy → Evidence → Anchored ask → Calibrated questions → Handle \"no\"",
+            "Make demand → Argue → Threaten → Accept whatever is offered",
+            "Ask for feedback → Wait for promotion → Accept the raise given",
+            "Mirror everything → Label emotions → Never actually make an ask"
+          ],
+          "correctIndex": 0,
+          "explanation": "The complete negotiation sequence builds from rapport (tactical empathy) through credibility (evidence) to your anchored ask, then uses calibrated questions to invite collaboration and pivots gracefully if the initial answer is \"no.\" Each step builds on the previous one."
+        },
+        {
+          "question": "Salary negotiation is fundamentally a confrontation between you and your employer.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The key mindset shift: negotiation is collaboration, not conflict. You're helping your manager solve a problem — how to retain and fairly compensate you. When framed this way, the conversation becomes about co-creating solutions rather than fighting over a fixed pie."
+        },
+        {
+          "question": "Which Module 2 technique gives the other person a feeling of control while advancing your position?",
+          "type": "mcq",
+          "options": [
+            "No-oriented questions (\"Would it be unreasonable to...?\")",
+            "Anchoring with a very high number to intimidate",
+            "Mirroring their body language exactly",
+            "Presenting a 20-page evidence document"
+          ],
+          "correctIndex": 0,
+          "explanation": "No-oriented questions let the other side say \"no\" (which feels empowering) while actually endorsing your position. \"Would it be unreasonable to consider an adjustment?\" requires \"No\" to agree with you. This satisfies their need for control while moving the conversation forward."
+        }
+      ]
+    },
+    {
+      "id": "sp-15-first-90-days",
+      "dayNumber": 15,
+      "moduleId": "sp-module-3",
+      "title": "The First 90 Days",
+      "subtitle": "How to hit the ground running in any new role — and set yourself up for your NEXT promotion from day one.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your First 90 Days Define the Next 3 Years",
+          "body": "Michael Watkins' research at Harvard found that what you do in your first 90 days in a new role creates a trajectory that's almost impossible to reverse. Leaders who reach the \"breakeven point\" (contributing more than consuming) fast are 2x more likely to be rated high performers 18 months later. Start strong, and momentum carries you. Start slow, and you're fighting uphill for years.",
+          "stat": "90 days",
+          "statLabel": "the window that determines your long-term trajectory in any new role"
+        },
+        {
+          "type": "content",
+          "headline": "The STARS Framework",
+          "body": "Watkins' STARS model helps you diagnose what situation you're entering — because the right strategy depends entirely on context.",
+          "bullets": [
+            "Start-up: Building something from scratch — need to assemble resources and create momentum quickly",
+            "Turnaround: Fixing something broken — need quick wins and decisive action",
+            "Accelerated growth: Managing rapid scaling — need to build systems and hire fast",
+            "Realignment: Shifting something that's drifting — need to convince people change is needed",
+            "Sustaining success: Maintaining a high performer — need to find the next level of growth"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Secure Early Wins",
+          "body": "Watkins' most critical principle: secure visible early wins that matter to your key stakeholders. Not just any wins — wins that align with what your new boss and skip-level care about. In the first 30 days, identify the highest-value, lowest-effort improvement you can make. Ship it. Make it visible. This builds credibility capital that you'll spend for months to come."
+        },
+        {
+          "type": "content",
+          "headline": "The Learning Plan",
+          "body": "The biggest mistake in new roles: acting before learning. Watkins recommends structuring your first 90 days as three phases. Days 1-30: Listen, learn, build relationships (no major changes). Days 31-60: Identify opportunities, test ideas, secure early wins. Days 61-90: Implement your agenda, build your team, establish your rhythm. Rushing to change things before understanding them creates resistance."
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your Next Transition",
+          "body": "Whether you're about to start a new role or just got promoted: 1) Identify your STARS situation (start-up, turnaround, growth, realignment, sustaining). 2) List 3 key stakeholders and what each cares about most. 3) Identify one \"early win\" you could deliver in the first 30 days that would matter to them. 4) Write your 30/60/90 day plan in 3 bullet points each. Share it with your manager for alignment."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Watkins, what does the first 90 days in a new role determine?",
+          "type": "mcq",
+          "options": [
+            "Your long-term trajectory — leaders who start strong are 2x more likely to succeed 18 months later",
+            "Whether you'll get a bonus at the end of year one",
+            "How your colleagues will treat you socially",
+            "Your final salary at that company"
+          ],
+          "correctIndex": 0,
+          "explanation": "Watkins' Harvard research found that the first 90 days create a trajectory that's nearly impossible to reverse. Those who reach the \"breakeven point\" quickly build momentum that carries them forward, while slow starters fight uphill for years regardless of their actual ability."
+        },
+        {
+          "question": "In a new role, you should implement major changes immediately to show decisiveness.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Watkins' research is clear: the biggest mistake in transitions is acting before learning. The first 30 days should be spent listening, building relationships, and understanding context. Rushing to make changes before understanding the system creates resistance and often leads to solving the wrong problems."
+        },
+        {
+          "question": "What makes an \"early win\" effective in the first 90 days?",
+          "type": "mcq",
+          "options": [
+            "It aligns with what key stakeholders care about and builds visible credibility",
+            "It demonstrates technical skills regardless of organisational priorities",
+            "It's the biggest possible project you can complete",
+            "It proves you're better than your predecessor"
+          ],
+          "correctIndex": 0,
+          "explanation": "Not all wins are equal. Effective early wins are specifically aligned with what your boss and skip-level care about, high-visibility, and achievable quickly. They build credibility capital you'll spend for months — generic accomplishments that nobody asked for don't have the same effect."
+        }
+      ]
+    },
+    {
+      "id": "sp-16-sponsor-vs-mentor",
+      "dayNumber": 16,
+      "moduleId": "sp-module-3",
+      "title": "Sponsor vs Mentor",
+      "subtitle": "The relationship difference that separates fast-tracked careers from stalled ones.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Mentor Talks To You. Your Sponsor Talks About You.",
+          "body": "Sylvia Ann Hewlett's decade of research at Harvard found a striking pattern: executives with sponsors were 23% more likely to be promoted than those with only mentors. The difference? Mentors give advice. Sponsors use their political capital to advocate for you in the rooms you're not in. If you have mentors but no sponsors, you have wisdom without ammunition.",
+          "stat": "23%",
+          "statLabel": "more likely to be promoted with an active sponsor vs mentor only"
+        },
+        {
+          "type": "content",
+          "headline": "What a Sponsor Actually Does",
+          "body": "A sponsor is a senior person who actively advocates for your advancement. They put their reputation on the line for you. In calibration meetings, they say your name. When a stretch opportunity opens, they recommend you. When budget is tight, they argue for your raise. This is fundamentally different from mentoring — which is purely advisory and carries no political risk for the mentor.",
+          "bullets": [
+            "Advocates for you in meetings you're not in",
+            "Recommends you for stretch assignments and visible projects",
+            "Uses their influence to open doors you couldn't open yourself",
+            "Invests their own reputation in your success — so you must deliver"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Earn a Sponsor (Not Ask for One)",
+          "body": "You can't cold-ask someone to be your sponsor — that's like asking someone to be your best friend. Sponsorship is earned through demonstrated performance and strategic relationship-building. The path: 1) Do excellent, visible work on something the senior person cares about. 2) Make sure they know about it. 3) Look for opportunities to help them achieve their goals. 4) Ask for their advice (people who give advice develop investment in your success). Sponsorship emerges naturally from this."
+        },
+        {
+          "type": "content",
+          "headline": "The Sponsor-Protégé Contract",
+          "body": "Sponsorship is a two-way street. Your sponsor gives you visibility and advocacy. You give them performance and loyalty — you don't embarrass them by underdelivering on the opportunities they create. This is why sponsors are selective. Before they advocate for you, they need confidence you'll succeed. Your evidence portfolio from Module 1 is exactly what builds that confidence."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Sponsor Candidates",
+          "body": "Identify 2-3 senior people (above your level) who: a) Are influential in decisions about your career, b) Have seen your work directly, c) You could plausibly build a stronger relationship with. For each, ask: What do they care about? How can I deliver value to THEM? What would I need to demonstrate for them to feel confident advocating for me? Create a concrete 60-day plan to deepen one of these relationships."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fundamental difference between a mentor and a sponsor?",
+          "type": "mcq",
+          "options": [
+            "Mentors give you advice; sponsors actively advocate for you using their political capital",
+            "Mentors are paid; sponsors are volunteers",
+            "Mentors are senior; sponsors are peers",
+            "Mentors are formal; sponsors are informal"
+          ],
+          "correctIndex": 0,
+          "explanation": "The crucial distinction is risk: mentors advise you at no personal cost. Sponsors put their reputation on the line by publicly advocating for your advancement. This is why sponsorship is rarer, more valuable, and more impactful — and why it must be earned, not requested."
+        },
+        {
+          "question": "You can directly ask a senior leader to become your sponsor.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cold-asking for sponsorship is almost always counterproductive. Sponsorship is earned through demonstrated performance on things the senior person cares about, followed by strategic relationship-building. The ask comes after you've proven your value and built genuine rapport — not before."
+        },
+        {
+          "question": "What is the protégé's responsibility in a sponsor-protégé relationship?",
+          "type": "mcq",
+          "options": [
+            "Delivering strong performance so the sponsor's reputation isn't damaged",
+            "Paying the sponsor for their time and connections",
+            "Only asking for help when absolutely necessary",
+            "Never disagreeing with the sponsor's advice"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sponsorship is a two-way contract. Your sponsor risks their reputation by advocating for you; your obligation is to perform at the level they've guaranteed. Underdelivering on sponsored opportunities doesn't just hurt you — it damages your sponsor's credibility, which is why they're selective."
+        }
+      ]
+    },
+    {
+      "id": "sp-17-executive-presence",
+      "dayNumber": 17,
+      "moduleId": "sp-module-3",
+      "title": "Executive Presence",
+      "subtitle": "The intangible quality that gets people promoted — and how to develop it deliberately.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Promotion Criterion Nobody Tells You About",
+          "body": "\"She just doesn't have executive presence.\" This is one of the most commonly cited reasons for blocking promotions — and one of the least explained. Decision-makers know it when they see it, but rarely define it. Today we make it concrete, learnable, and deliberately developable. Executive presence isn't a personality trait you're born with — it's a set of behaviours you can practise."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Pillars of Executive Presence",
+          "body": "Sylvia Ann Hewlett's research across 268 senior executives identified three pillars of executive presence, weighted by importance:",
+          "bullets": [
+            "Gravitas (67%): How you act — confidence, decisiveness, poise under pressure, the ability to project authority while remaining composed",
+            "Communication (28%): How you speak — clarity, conciseness, commanding a room, listening actively, reading the audience",
+            "Appearance (5%): How you look — dress, grooming, polished presentation that meets expectations without distracting"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Developing Gravitas",
+          "body": "Gravitas is built through specific, practisable behaviours. Speak last in meetings — after listening, your contribution carries more weight. Take up space physically — don't shrink into your chair. Signal calm under pressure — when things go wrong, lower your voice rather than raise it. Make decisions visibly — even when uncertain, show a clear reasoning process. Gravitas is projected, not felt."
+        },
+        {
+          "type": "content",
+          "headline": "Communication That Commands",
+          "body": "Executive communicators do three things that most people don't: 1) They lead with the conclusion, then provide evidence (not the other way around). 2) They speak in threes — \"three reasons,\" \"three priorities\" — which signals organised thinking. 3) They handle challenging questions by pausing before answering (which reads as thoughtfulness, not uncertainty). Practice the \"bottom line up front\" rule in every communication."
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Executive Presence",
+          "body": "Ask yourself: 1) In meetings, do I typically speak confidently or hedge with \"I think maybe...\"? 2) Do I lead with conclusions or build to them slowly? 3) When under pressure, does my voice rise or stay steady? 4) Do I physically take up appropriate space or make myself small? Choose ONE behaviour to change this week. Small, specific behavioural changes build presence faster than abstract goal-setting."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Hewlett's research, which pillar of executive presence carries the most weight?",
+          "type": "mcq",
+          "options": [
+            "Gravitas (67%) — how you act under pressure and project authority",
+            "Appearance (50%) — looking the part at all times",
+            "Communication (45%) — speaking clearly and persuasively",
+            "Network (30%) — who you know at senior levels"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hewlett's research across 268 senior executives found gravitas accounts for 67% of executive presence — how you carry yourself, handle pressure, and project confidence. Communication (28%) and appearance (5%) matter, but how you ACT under pressure is by far the dominant factor."
+        },
+        {
+          "question": "Executive presence is a fixed personality trait that you either have or you don't.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Executive presence is a learnable set of behaviours. Speaking last in meetings, leading with conclusions, staying calm under pressure, and taking up appropriate physical space are all specific, practisable actions. People who seem to \"naturally\" have presence have usually developed these habits over time."
+        },
+        {
+          "question": "What does \"bottom line up front\" mean in executive communication?",
+          "type": "mcq",
+          "options": [
+            "Lead with your conclusion, then provide the supporting evidence",
+            "Always discuss budget and financials at the start of every meeting",
+            "Only say positive things to avoid conflict",
+            "Keep all presentations under 5 minutes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Executive communicators reverse the typical narrative structure. Instead of \"here's the context... and the data... therefore the conclusion,\" they say \"here's my recommendation — here's why.\" Decision-makers are time-pressed; leading with the conclusion respects their attention and signals confident, clear thinking."
+        }
+      ]
+    },
+    {
+      "id": "sp-18-compound-career-capital",
+      "dayNumber": 18,
+      "moduleId": "sp-module-3",
+      "title": "Compound Career Capital",
+      "subtitle": "How your skills, reputation, and relationships compound over time to create exponential earning power.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Career Capital Compounds Like Interest",
+          "body": "Warren Buffett said compound interest is the eighth wonder of the world. The same principle applies to career capital. A 1% improvement in your skills, reputation, and relationships every week compounds to 52x improvement in a year — not 52%. The professionals who build deliberate systems for this compounding don't just earn more — they earn on a completely different curve to their peers."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Compounding Assets",
+          "body": "Career capital compounds through three interconnected assets that reinforce each other:",
+          "bullets": [
+            "Skills: Each mastered skill makes the next one easier to learn and more valuable to combine",
+            "Reputation: Each visible success builds credibility that makes the next success more believable and the next opportunity easier to secure",
+            "Relationships: Each strong relationship introduces you to new relationships — network effects compound exponentially"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Skill Stack Advantage",
+          "body": "Scott Adams (creator of Dilbert) coined the \"skill stack\" concept: instead of being the world's best at one thing, be very good (top 25%) at 2-3 complementary skills. The rarity of your combination creates unique value. A product manager who understands engineering AND has negotiation skills AND can present to executives commands a premium that pure specialists can't. Your unique skill combination is your moat."
+        },
+        {
+          "type": "content",
+          "headline": "The Reputation Flywheel",
+          "body": "Reputation compounds through a flywheel: deliver excellent work → get credited publicly → attract better opportunities → deliver excellent work on bigger stages → reputation grows further. The key accelerant is making your wins visible (Module 1, Lesson 6). Each visible success raises the floor for what opportunities come to you next. This flywheel, once spinning, becomes self-sustaining."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Compounding System",
+          "body": "Map your 2-year compounding plan: 1) Skills: What 2-3 skills would create a uniquely valuable combination for you? What's your 90-day learning plan? 2) Reputation: What one project or initiative would, if successful, significantly raise your professional floor? 3) Relationships: Name 3 people — one peer, one above you, one in a different function — to invest in this quarter. Compounding only works if you start NOW."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"skill stack\" advantage?",
+          "type": "mcq",
+          "options": [
+            "Being very good at 2-3 complementary skills creates rare combinations that command premiums",
+            "Having more skills listed on your CV than anyone else",
+            "Mastering one single skill to the absolute highest level possible",
+            "Learning new skills faster than your colleagues"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scott Adams' skill stack concept shows that rare combinations of complementary skills create more value than single-skill mastery. A top-25% engineer who is also top-25% at communication and negotiation occupies a unique position that most specialists can't match — and commands accordingly."
+        },
+        {
+          "question": "Career capital accumulation is mostly about random luck and being in the right place at the right time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While luck plays a role, deliberate system-building dramatically amplifies your exposure to opportunities. The reputation flywheel, skill stacking, and strategic relationship investment create conditions where \"luck\" strikes more frequently — and you're positioned to capitalise on it when it does."
+        },
+        {
+          "question": "What is the key accelerant in the reputation flywheel?",
+          "type": "mcq",
+          "options": [
+            "Making your wins visible so they build credibility for the next opportunity",
+            "Working harder than anyone else regardless of recognition",
+            "Changing jobs frequently to reset your reputation",
+            "Avoiding any project that might fail"
+          ],
+          "correctIndex": 0,
+          "explanation": "The reputation flywheel only spins if your wins are visible. Invisible excellence doesn't compound — it just sits there. Visible wins attract better opportunities, which create more visible wins, which raise your professional floor. Strategic visibility (Module 1, Lesson 6) is what turns the flywheel."
+        }
+      ]
+    },
+    {
+      "id": "sp-19-lateral-moves",
+      "dayNumber": 19,
+      "moduleId": "sp-module-3",
+      "title": "Strategic Lateral Moves",
+      "subtitle": "Sometimes moving sideways is the fastest path up — if you know which moves build the most career capital.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Lateral Move That's Actually a Leap",
+          "body": "80,000 Hours' research found that professionals who make 1-2 strategic lateral moves early in their career reach senior positions 3-5 years faster than those who climb a single ladder. Not any lateral move — strategic ones that fill skill gaps, expand your network, and build cross-functional credibility. The best careers are shaped like a jungle gym, not a ladder."
+        },
+        {
+          "type": "content",
+          "headline": "When a Lateral Move Creates Leverage",
+          "body": "A lateral move is strategic when it builds career capital you couldn't get in your current role:",
+          "bullets": [
+            "Skill gap fill: You need P&L experience to reach VP, but your current role is pure IC — a lateral to a GM role fills that gap",
+            "Network expansion: Moving to a different division gives you cross-functional relationships that are gold in calibration meetings",
+            "Fresh runway: You've maxed out visibility in your current team — a new team gives you a blank slate to prove yourself again",
+            "Industry arbitrage: Moving from a slow industry to a fast one (or vice versa) creates unique perspective and value"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Lateral Move Trap",
+          "body": "Not all lateral moves are strategic. A move is a TRAP when: it doesn't build new skills (just doing the same job in a different seat), it reduces your visibility with decision-makers, it's a demotion disguised as a \"development opportunity,\" or it resets your tenure without resetting your ceiling. Before any lateral move, ask: \"In 2 years, will this have opened doors that my current path never could?\""
+        },
+        {
+          "type": "content",
+          "headline": "How to Negotiate a Lateral Move",
+          "body": "Use the negotiation skills from Module 2: Frame the move as mutual benefit — you gain development, the company gains a versatile leader. Ask for: same or higher compensation (you're bringing proven performance to a new challenge), a clear success criteria (so you can demonstrate impact quickly), and explicit expectation of promotion timeline post-move. Never take a lateral without protecting your trajectory."
+        },
+        {
+          "type": "try-it",
+          "headline": "Evaluate Your Lateral Options",
+          "body": "Ask yourself: 1) What's the one skill or experience gap between me and the role I eventually want? 2) Is there a role available (internally or externally) that would fill this gap? 3) Would that move expand my network of decision-makers? 4) In 2 years, would I be better positioned than if I stay put? If you answer yes to 3+ questions, it may be time to consider a strategic lateral move. Research one possibility this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When is a lateral move strategic rather than a trap?",
+          "type": "mcq",
+          "options": [
+            "When it fills a specific skill or experience gap that your current role can't provide",
+            "Whenever you feel bored in your current position",
+            "Any time a recruiter calls with a new opportunity",
+            "When your friends recommend a different team"
+          ],
+          "correctIndex": 0,
+          "explanation": "Strategic lateral moves fill specific gaps — a skill you need for the next level, a network you can't build in your current seat, or runway you've exhausted. Without a clear gap being filled, a lateral move can reset your tenure without advancing your trajectory."
+        },
+        {
+          "question": "Lateral moves always slow your career progression.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "80,000 Hours' research shows that 1-2 strategic lateral moves early in a career actually accelerate senior-level attainment by 3-5 years. The key word is \"strategic\" — the move must build career capital you couldn't get otherwise. Not all moves qualify, but the right ones compound."
+        },
+        {
+          "question": "What should you negotiate when making a lateral move?",
+          "type": "mcq",
+          "options": [
+            "Same or higher comp, clear success criteria, and explicit promotion timeline",
+            "Just accept whatever is offered since it's a development opportunity",
+            "Only a higher title, even if compensation drops",
+            "A guarantee you can return to your old role if it doesn't work out"
+          ],
+          "correctIndex": 0,
+          "explanation": "A lateral move brings your proven track record to a new challenge — that has value. Protect your compensation (or negotiate up), establish measurable success criteria so you can demonstrate impact quickly, and set explicit expectations for promotion timeline post-move. Never trade trajectory for \"development\" without protection."
+        }
+      ]
+    },
+    {
+      "id": "sp-20-long-game",
+      "dayNumber": 20,
+      "moduleId": "sp-module-3",
+      "title": "The Long Game",
+      "subtitle": "Think in decades, not quarters — and watch your earning power separate from everyone else's.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 10-Year Overnight Success",
+          "body": "Every \"overnight success\" was built over a decade of compounding. Jeff Bezos built Amazon on the principle that optimising for the long term beats short-term maximisation. The same applies to your career: professionals who play the long game — investing in skills, relationships, and reputation even when there's no immediate payoff — eventually operate on a completely different plane to those who optimise quarter-by-quarter."
+        },
+        {
+          "type": "content",
+          "headline": "Short Game vs Long Game",
+          "body": "80,000 Hours' research reveals that career satisfaction and compensation diverge sharply after 10+ years based on early strategic choices:",
+          "bullets": [
+            "Short game: Chase the highest immediate salary → gets stuck at mid-level ceiling, limited by narrow skill set",
+            "Long game: Accept slightly lower early pay for learning, range, and positioning → breaks through to senior/executive level",
+            "Short game: Avoid risk → never builds the signal that distinguishes leaders",
+            "Long game: Take calculated risks early (when the cost of failure is low) → builds reputation and confidence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Regret Minimisation Framework",
+          "body": "Bezos decided to leave a cushy Wall Street job for Amazon using his \"regret minimisation framework\": he imagined himself at 80 and asked \"Will I regret NOT trying this?\" Apply this to career decisions: when choosing between the safe-but-stagnant path and the risky-but-growth path, the 80-year-old version of you will almost always regret playing it safe. Time is your greatest asset — don't waste it on comfort."
+        },
+        {
+          "type": "content",
+          "headline": "Building a Career Moat",
+          "body": "A career moat is what makes you irreplaceable. It's built from: 1) A unique skill combination nobody else has (your skill stack). 2) A reputation that precedes you (the flywheel from Lesson 18). 3) A network that opens doors others can't access. 4) Institutional knowledge or relationships that took years to build. The deeper your moat, the more leverage you have — and the less negotiation you ever need to do."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your 10-Year Letter",
+          "body": "Write a letter from your future self, 10 years from now, to present-day you. Describe: What role do you have? What do you earn? What did it take to get there? What risks were worth taking? What would you tell yourself to start doing NOW? Be specific and ambitious. Then reverse-engineer: what needs to happen in years 1-3 to make the year-10 vision possible? That's your long game strategy."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"playing the long game\" mean for career strategy?",
+          "type": "mcq",
+          "options": [
+            "Investing in skills, relationships, and positioning even without immediate payoff",
+            "Staying at the same company forever to build tenure",
+            "Always accepting the highest-paying job offer available",
+            "Waiting patiently for promotion without taking any action"
+          ],
+          "correctIndex": 0,
+          "explanation": "The long game means making decisions that compound over time — learning new skills, building relationships, taking calculated risks, developing a reputation — even when there's no immediate salary bump. After 10+ years, long-game players operate on an entirely different earning curve."
+        },
+        {
+          "question": "Always choosing the highest-paying option is the best long-term career strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that always chasing the highest immediate salary often leads to mid-level ceiling stagnation. Accepting slightly lower early pay for better learning, broader skills, and stronger positioning frequently leads to much higher long-term compensation by enabling breakthrough to senior/executive levels."
+        },
+        {
+          "question": "What is a \"career moat\"?",
+          "type": "mcq",
+          "options": [
+            "A unique combination of skills, reputation, network, and knowledge that makes you irreplaceable",
+            "A large gap between your salary and your colleagues' salaries",
+            "Having so much savings that you never need to work again",
+            "Being the longest-tenured person in your department"
+          ],
+          "correctIndex": 0,
+          "explanation": "A career moat — like a business moat — is what makes you defensible and irreplaceable. It's built from unique skill combinations, a strong reputation, an expansive network, and deep knowledge that took years to accumulate. The deeper the moat, the more natural leverage you command."
+        }
+      ]
+    },
+    {
+      "id": "sp-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "sp-module-3",
+      "title": "Course Finale",
+      "subtitle": "You now have a complete system for earning what you're worth — for the rest of your career.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built a Career Operating System",
+          "body": "Twenty-one days ago, most professionals were winging their careers — hoping great work would be noticed, accepting whatever was offered, and wondering why others got promoted faster. You now have what they don't: a complete system for knowing your worth, asking for it effectively, and compounding your career capital over decades. This isn't a one-time fix — it's a permanent upgrade to how you operate."
+        },
+        {
+          "type": "content",
+          "headline": "Your Complete System (Summary)",
+          "body": "Your Salary & Promotion Playbook system has three layers that work together:",
+          "bullets": [
+            "Module 1 (Foundation): Market research, decision map, evidence portfolio, timing, visibility — you never walk into a conversation unprepared again",
+            "Module 2 (Negotiation): Tactical empathy, mirroring, calibrated questions, anchoring, ACRE framework, handling \"no\" — you have FBI-level negotiation skills",
+            "Module 3 (Compounding): First 90 days, sponsors, executive presence, skill stacking, career moat — your earning power compounds exponentially over time"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Numbers That Changed",
+          "body": "If you apply this system once — just one successful negotiation — the typical outcome is a 10-20% compensation increase. Over a 30-year career, a single 15% bump in year one (invested at 7% return) is worth over £1M in lifetime earnings and retirement savings. But you won't use this just once. You'll use it at every job change, every review, every promotion. The compound effect is staggering.",
+          "stat": "£1M+",
+          "statLabel": "lifetime value of a single successful salary negotiation early in your career"
+        },
+        {
+          "type": "content",
+          "headline": "Your Ongoing Cadence",
+          "body": "Keep this system alive with a simple ongoing cadence: Weekly — update your brag document (5 min). Monthly — have a visibility touchpoint with one decision-maker. Quarterly — review your market value and sponsor relationships. Annually — have the conversation (or negotiate a move). The system only fails if you stop maintaining it. The investment is tiny — the returns are life-changing."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Negotiation Commitment",
+          "body": "Make a specific commitment: \"Within the next [30/60/90] days, I will have a compensation or promotion conversation using the ACRE framework.\" Write the date. Tell someone (accountability partner, friend, or even just write it in your calendar as a recurring reminder). Then: begin your preparation immediately — update your brag document, refresh your market data, and identify your first conversation partner. You have everything you need. Now act."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the estimated lifetime value of a single successful salary negotiation early in your career?",
+          "type": "mcq",
+          "options": [
+            "Over £1M in earnings and retirement savings when compounded over 30 years",
+            "About £5,000-£10,000 in the first year",
+            "Negligible — salary increases only matter at senior levels",
+            "Impossible to estimate without knowing your exact role"
+          ],
+          "correctIndex": 0,
+          "explanation": "A 15% salary increase early in your career, compounded over 30 years (through subsequent raises on a higher base plus investment returns), typically exceeds £1M in lifetime value. This is why negotiation skills are arguably the highest-ROI investment a professional can make."
+        },
+        {
+          "question": "Once you've completed this course, the system works automatically without maintenance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The system requires a simple ongoing cadence: weekly brag document updates (5 min), monthly visibility touchpoints, quarterly market/sponsor reviews, and annual compensation conversations. The investment is minimal but essential — an unmaintained system atrophies."
+        },
+        {
+          "question": "What ongoing cadence keeps the Salary & Promotion system active?",
+          "type": "mcq",
+          "options": [
+            "Weekly brag doc, monthly visibility, quarterly market review, annual conversation",
+            "Daily negotiations with your manager",
+            "Yearly performance review preparation only",
+            "Monthly job applications to maintain leverage"
+          ],
+          "correctIndex": 0,
+          "explanation": "The ongoing cadence is lightweight but consistent: weekly evidence capture (5 min), monthly stakeholder touchpoints, quarterly market and sponsor relationship reviews, and an annual compensation conversation. This keeps all three system layers — preparation, negotiation, compounding — active and effective."
+        }
+      ]
+    }
+  ]
+}

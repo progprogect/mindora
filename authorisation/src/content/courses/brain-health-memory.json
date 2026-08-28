@@ -1,0 +1,1592 @@
+{
+  "id": "brain-health-memory",
+  "title": "Brain Health and Memory",
+  "subtitle": "Understand how the brain ages, protect your cognitive health, and reduce the risk of decline.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "bh-mod-1",
+      "title": "How the Brain Works",
+      "subtitle": "Understand how memory forms and retrieves information, what normal forgetting looks like, and how the brain rewires itself throughout life — including what neuroplasticity really means for you.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding how memory works, neuroplasticity, and what normal ageing looks like for the brain",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "bh-mod-2",
+      "title": "What Threatens Brain Health",
+      "subtitle": "Explore the lifestyle and biological factors that put the brain at risk over time — including cardiovascular health, sleep, stress, hearing loss, and social isolation.",
+      "days": "Lessons 8–14",
+      "skill": "Recognising the key risk factors for cognitive decline and understanding why they matter",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "bh-mod-3",
+      "title": "Protecting and Strengthening Your Brain",
+      "subtitle": "Discover the evidence-based lifestyle strategies that most powerfully support long-term brain health — and how to build them into daily life.",
+      "days": "Lessons 15–21",
+      "skill": "Using proven lifestyle strategies to protect cognitive function and reduce dementia risk",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "bh-lesson-1",
+      "dayNumber": 1,
+      "title": "Your Brain — A Brief Introduction",
+      "subtitle": "What your brain is, how it is structured, and why it is so remarkable.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-1-1",
+          "front": "What is the brain, in simple terms?",
+          "back": "The brain is a three-pound organ containing roughly 86 billion neurons. It controls everything — movement, thought, emotion, memory, language, and the regulation of your body. It is the most complex known structure in the universe, and it is constantly changing in response to experience."
+        },
+        {
+          "id": "bh-1-2",
+          "front": "What are neurons and how do they communicate?",
+          "back": "Neurons are nerve cells that send and receive signals via electrical impulses and chemical messengers called neurotransmitters. They connect to each other at junctions called synapses. When two neurons repeatedly fire together, the connection strengthens — this is the basis of learning and memory."
+        },
+        {
+          "id": "bh-1-3",
+          "front": "What are the key regions of the brain for everyday function?",
+          "back": "The prefrontal cortex handles thinking, planning, and decision-making. The hippocampus is critical for forming new memories. The amygdala processes emotions. The cerebellum coordinates movement. These regions work together constantly — the brain is not a collection of isolated parts but an integrated network."
+        },
+        {
+          "id": "bh-1-4",
+          "front": "Does the brain change throughout life?",
+          "back": "Yes — far more than scientists once believed. The brain can form new connections, strengthen existing ones, and in some regions even generate new neurons in a process called neurogenesis. This ability to change is called neuroplasticity, and it continues well into old age."
+        },
+        {
+          "id": "bh-1-5",
+          "front": "Why does brain health matter for quality of life?",
+          "back": "Cognitive health — your ability to think, remember, reason, and engage with life — is central to independence and wellbeing. The choices you make today genuinely shape the health of your brain decades from now. This is one of the most encouraging findings in modern neuroscience."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-1-q1",
+          "question": "Approximately how many neurons does the human brain contain?",
+          "options": [
+            "1 billion",
+            "10 billion",
+            "86 billion",
+            "500 billion"
+          ],
+          "correctIndex": 2,
+          "explanation": "The brain contains roughly 86 billion neurons — each capable of forming thousands of connections with other neurons, creating an extraordinarily complex network."
+        },
+        {
+          "id": "bh-1-q2",
+          "question": "What is a synapse?",
+          "options": [
+            "A type of brain cell that supports neurons",
+            "The junction where neurons communicate with each other",
+            "A chemical messenger released by the hippocampus",
+            "The outer layer of the cerebral cortex"
+          ],
+          "correctIndex": 1,
+          "explanation": "Synapses are the junctions between neurons where signals are transmitted via neurotransmitters. Strengthening synaptic connections is the physical basis of learning and memory."
+        },
+        {
+          "id": "bh-1-q3",
+          "question": "Which brain region is most critical for forming new memories?",
+          "options": [
+            "The amygdala",
+            "The cerebellum",
+            "The prefrontal cortex",
+            "The hippocampus"
+          ],
+          "correctIndex": 3,
+          "explanation": "The hippocampus is the brain's primary memory consolidation centre. It plays a central role in converting short-term experiences into long-term memories."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-2",
+      "dayNumber": 2,
+      "title": "How Memory Works",
+      "subtitle": "The different types of memory and how the brain stores and retrieves information.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-2-1",
+          "front": "What are the main types of memory?",
+          "back": "Short-term (working) memory holds information briefly for immediate use — like a phone number while you dial it. Long-term memory stores information over days, years, or a lifetime. Long-term memory is further divided into explicit memory (facts and events) and implicit memory (skills and habits)."
+        },
+        {
+          "id": "bh-2-2",
+          "front": "How does a memory form?",
+          "back": "Memory formation involves three stages: encoding (taking in information), consolidation (stabilising it into long-term storage), and retrieval (accessing it later). Each stage can succeed or fail. Poor encoding — distracted attention — is one of the most common reasons people \"forget\" things they never properly learned."
+        },
+        {
+          "id": "bh-2-3",
+          "front": "What role does sleep play in memory?",
+          "back": "Sleep is when memory consolidation primarily happens. During slow-wave and REM sleep, the brain replays the day's experiences, strengthening important neural connections and clearing out unnecessary ones. Skimping on sleep is one of the most reliable ways to impair learning and memory."
+        },
+        {
+          "id": "bh-2-4",
+          "front": "What is procedural memory?",
+          "back": "Procedural memory stores learned skills — how to ride a bike, type, drive, or play an instrument. It is encoded differently from factual memory and is remarkably durable. People with severe memory impairments often retain procedural memories even when episodic memory (memories of events) is severely compromised."
+        },
+        {
+          "id": "bh-2-5",
+          "front": "What is the key practical insight about memory?",
+          "back": "Memory is not like a recording device — it is reconstructive. Each time you retrieve a memory, you partially rebuild it. This is why memories can shift over time and why vivid confidence in a memory does not guarantee accuracy. Understanding this helps manage frustration when memory feels unreliable."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-2-q1",
+          "question": "What are the three stages of memory formation?",
+          "options": [
+            "Attention, rehearsal, and storage",
+            "Encoding, consolidation, and retrieval",
+            "Perception, processing, and retention",
+            "Input, storage, and output"
+          ],
+          "correctIndex": 1,
+          "explanation": "Memory formation involves encoding (taking in information), consolidation (stabilising it), and retrieval (accessing it later). Failure at any stage can affect recall."
+        },
+        {
+          "id": "bh-2-q2",
+          "question": "Why does poor attention at the time of learning lead to apparent memory failure later?",
+          "options": [
+            "Distraction prevents retrieval pathways from forming",
+            "Poor attention impairs encoding — the information was never properly stored in the first place",
+            "Inattention disrupts hippocampal consolidation during sleep",
+            "Stress hormones released during distraction destroy newly formed memories"
+          ],
+          "correctIndex": 1,
+          "explanation": "Many apparent memory failures are actually encoding failures. If you were not paying full attention when something happened, the information was never properly stored — so there is nothing to retrieve."
+        },
+        {
+          "id": "bh-2-q3",
+          "question": "What type of memory stores skills like riding a bike?",
+          "options": [
+            "Episodic memory",
+            "Semantic memory",
+            "Working memory",
+            "Procedural memory"
+          ],
+          "correctIndex": 3,
+          "explanation": "Procedural memory stores learned skills and habits. It is encoded differently from factual or event-based memory and is remarkably resilient — often preserved even in people with significant memory impairment."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-3",
+      "dayNumber": 3,
+      "title": "Normal Forgetting vs Concerning Forgetting",
+      "subtitle": "How to tell the difference between ordinary forgetfulness and signs that warrant attention.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-3-1",
+          "front": "Is forgetting normal?",
+          "back": "Yes — forgetting is a normal and even necessary feature of a healthy brain. The brain cannot and should not retain everything. Forgetting irrelevant details frees cognitive resources for more important information. Some degree of forgetting at every age is completely expected."
+        },
+        {
+          "id": "bh-3-2",
+          "front": "What are examples of normal, age-related forgetting?",
+          "back": "Forgetting where you put your keys, struggling to recall a name but remembering it later, taking longer to learn new technology, or needing notes to remember appointments. These are common at all ages but become more frequent with age. They are generally signs of normal brain ageing, not disease."
+        },
+        {
+          "id": "bh-3-3",
+          "front": "What are signs of forgetting that warrant attention?",
+          "back": "Getting lost in familiar places, repeatedly asking the same questions within minutes, forgetting close family members' names, losing the ability to follow conversations or instructions, significant personality changes, or an inability to manage daily tasks that were previously routine. These suggest something beyond normal forgetting."
+        },
+        {
+          "id": "bh-3-4",
+          "front": "What is the difference between dementia and Alzheimer's disease?",
+          "back": "Dementia is an umbrella term for a group of symptoms — memory loss, confusion, language difficulties — that significantly impair daily life. Alzheimer's disease is the most common cause of dementia, accounting for 60–80% of cases. Other causes include vascular dementia, Lewy body dementia, and frontotemporal dementia."
+        },
+        {
+          "id": "bh-3-5",
+          "front": "What should you do if you are concerned about memory changes?",
+          "back": "See a GP. Many conditions that cause memory changes — including thyroid problems, vitamin deficiencies, depression, medication side effects, sleep apnoea, and urinary tract infections — are treatable. Early assessment is valuable regardless of the cause, and most people who are worried about their memory turn out not to have dementia."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-3-q1",
+          "question": "Which of the following is an example of NORMAL age-related forgetting?",
+          "options": [
+            "Getting lost in a neighbourhood you have lived in for 20 years",
+            "Forgetting a name but remembering it later in the day",
+            "Repeatedly asking the same question within a few minutes",
+            "Failing to recognise close family members"
+          ],
+          "correctIndex": 1,
+          "explanation": "Forgetting a name temporarily and retrieving it later is a very common experience at any age. It is an example of normal forgetting — not a warning sign of cognitive decline."
+        },
+        {
+          "id": "bh-3-q2",
+          "question": "What is the relationship between dementia and Alzheimer's disease?",
+          "options": [
+            "They are the same condition with different names",
+            "Alzheimer's is a type of dementia — the most common cause",
+            "Dementia is a mild, early stage of Alzheimer's disease",
+            "Alzheimer's only affects people under 65; dementia affects older adults"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dementia is an umbrella term covering many conditions that impair cognition. Alzheimer's disease is the most common cause, accounting for about 60–80% of dementia cases."
+        },
+        {
+          "id": "bh-3-q3",
+          "question": "Why is early assessment of memory concerns valuable?",
+          "options": [
+            "It allows earlier access to dementia medication that can reverse the condition",
+            "Many treatable conditions can cause memory changes, and early assessment clarifies the cause",
+            "Early diagnosis guarantees slower disease progression",
+            "Memory concerns that are assessed early almost always turn out to be serious"
+          ],
+          "correctIndex": 1,
+          "explanation": "Many conditions that cause memory changes — thyroid problems, vitamin deficiencies, depression, sleep apnoea — are treatable. Most people who are worried about their memory do not have dementia, but early assessment is still valuable."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-4",
+      "dayNumber": 4,
+      "title": "Neuroplasticity — Your Brain Can Change",
+      "subtitle": "What neuroplasticity is, why it matters, and how to harness it.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-4-1",
+          "front": "What is neuroplasticity?",
+          "back": "Neuroplasticity is the brain's ability to reorganise itself — forming new neural connections, strengthening existing ones, and sometimes even growing new neurons. It is the physical mechanism underlying learning, recovery from injury, and adaptation to new experiences."
+        },
+        {
+          "id": "bh-4-2",
+          "front": "Is neuroplasticity limited to childhood?",
+          "back": "No. While the brain is most plastic in childhood, neuroplasticity continues throughout life. Adults can learn new languages, skills, and ways of thinking — and the brain physically changes in response. The rate of change slows with age, but the capacity never disappears entirely."
+        },
+        {
+          "id": "bh-4-3",
+          "front": "What is the key principle of neuroplasticity?",
+          "back": "\"Neurons that fire together, wire together.\" Repeated activation of the same neural pathway strengthens it — making the associated thought, skill, or behaviour more automatic. Conversely, pathways that are rarely used weaken over time. Use shapes structure."
+        },
+        {
+          "id": "bh-4-4",
+          "front": "How does learning something new affect the brain?",
+          "back": "Learning creates physical changes in the brain — new synaptic connections, denser dendritic branching, and sometimes new neurons in the hippocampus. Norman Doidge's research documents remarkable recoveries from brain injury, showing that even severely damaged brains can rewire around the damage."
+        },
+        {
+          "id": "bh-4-5",
+          "front": "What is the practical implication for ageing brains?",
+          "back": "Continued learning, challenge, and novel experience actively supports brain health. The brain benefits from being pushed outside its comfort zone — new hobbies, new skills, new social environments. A brain that is consistently challenged is a brain that is continuously being rebuilt."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-4-q1",
+          "question": "What does neuroplasticity mean?",
+          "options": [
+            "The brain's ability to produce new red blood cells",
+            "The brain's capacity to reorganise itself by forming and strengthening neural connections",
+            "The flexibility of the skull to protect the brain from injury",
+            "The brain's ability to switch between left and right hemisphere dominance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Neuroplasticity is the brain's ability to physically reorganise itself — forming new connections, strengthening used ones, and adapting in response to experience and learning."
+        },
+        {
+          "id": "bh-4-q2",
+          "question": "What does \"neurons that fire together, wire together\" mean?",
+          "options": [
+            "Neurons that are active at the same time create a shared electrical charge",
+            "Repeated co-activation of neurons strengthens the connection between them",
+            "All neurons in a brain region activate simultaneously during memory formation",
+            "Neural pathways are formed at birth and cannot be changed"
+          ],
+          "correctIndex": 1,
+          "explanation": "This principle describes how repeated experience strengthens neural connections. The more often a pathway is activated, the stronger it becomes — making the associated behaviour or memory more automatic."
+        },
+        {
+          "id": "bh-4-q3",
+          "question": "Does neuroplasticity end after childhood?",
+          "options": [
+            "Yes — the brain becomes fixed in structure after around age 25",
+            "No — neuroplasticity continues throughout life, though at a slower rate",
+            "It depends on genetic factors — some people retain plasticity, others do not",
+            "Neuroplasticity only continues in people who regularly meditate or exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Neuroplasticity continues throughout life. While the rate of change is greatest in childhood, adults can still form new neural connections and change brain structure through learning, experience, and deliberate practice."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-5",
+      "dayNumber": 5,
+      "title": "How the Brain Ages",
+      "subtitle": "What changes are expected as the brain ages — and what is not inevitable.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-5-1",
+          "front": "What happens to the brain with normal ageing?",
+          "back": "With normal ageing, the brain gradually loses some volume — particularly in the prefrontal cortex and hippocampus. Processing speed slows slightly. Retrieval of names and facts may take longer. Working memory capacity may reduce slightly. These changes are gradual, modest, and do not prevent effective functioning."
+        },
+        {
+          "id": "bh-5-2",
+          "front": "What cognitive abilities are preserved or even improve with age?",
+          "back": "Vocabulary, general knowledge, wisdom, and the ability to understand complex emotional situations often remain strong or improve with age. Crystallised intelligence — the accumulated knowledge and skills of a lifetime — continues to grow into late adulthood. Age does not diminish everything."
+        },
+        {
+          "id": "bh-5-3",
+          "front": "What is cognitive reserve?",
+          "back": "Cognitive reserve is the brain's resilience — its capacity to tolerate damage or decline without showing symptoms. People with higher cognitive reserve (built through education, intellectual engagement, social connection, and stimulating work) can sustain more brain changes before function is impaired."
+        },
+        {
+          "id": "bh-5-4",
+          "front": "Why do some people show little cognitive decline while others struggle significantly?",
+          "back": "Genetics plays a role, but lifestyle is the dominant factor. Peter Attia's work in *Outlive* emphasises that cardiovascular fitness, sleep, metabolic health, social connection, and intellectual challenge are the most powerful determinants of cognitive trajectory — and all are modifiable."
+        },
+        {
+          "id": "bh-5-5",
+          "front": "What is the most important message about brain ageing?",
+          "back": "Significant cognitive decline is not an inevitable part of ageing. Many people remain cognitively sharp into their eighties and nineties. The lifestyle choices made in midlife — and even later — have a profound influence on cognitive trajectory. Starting at any age is worthwhile."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-5-q1",
+          "question": "Which cognitive ability tends to improve or remain stable with age?",
+          "options": [
+            "Processing speed",
+            "Working memory capacity",
+            "Crystallised intelligence — accumulated knowledge and wisdom",
+            "Short-term recall of new information"
+          ],
+          "correctIndex": 2,
+          "explanation": "Crystallised intelligence — the accumulated knowledge, wisdom, and skills built over a lifetime — typically continues to grow with age. Not all cognitive abilities decline."
+        },
+        {
+          "id": "bh-5-q2",
+          "question": "What is cognitive reserve?",
+          "options": [
+            "The total number of neurons in the brain at birth",
+            "A medical supplement that protects against memory loss",
+            "The brain's resilience — its ability to tolerate damage before function is impaired",
+            "The brain's glucose reserves used during intense cognitive activity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Cognitive reserve is the brain's resilience — built through education, mental stimulation, social engagement, and meaningful work. Higher reserve means more damage can accumulate before symptoms appear."
+        },
+        {
+          "id": "bh-5-q3",
+          "question": "What does research suggest is the dominant factor in cognitive decline — genetics or lifestyle?",
+          "options": [
+            "Genetics is the primary determinant — lifestyle has minimal influence",
+            "They contribute equally to cognitive trajectory",
+            "Lifestyle is the dominant factor — cardiovascular fitness, sleep, and social connection are all modifiable",
+            "Genetics determines the ceiling; lifestyle determines the floor"
+          ],
+          "correctIndex": 2,
+          "explanation": "While genetics plays a role, lifestyle factors — cardiovascular fitness, sleep, metabolic health, social connection, and intellectual challenge — are the most powerful determinants of cognitive trajectory, and all are modifiable."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-6",
+      "dayNumber": 6,
+      "title": "Learning and the Brain",
+      "subtitle": "How the brain acquires new knowledge and skills — and how to learn more effectively.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-6-1",
+          "front": "What happens in the brain when you learn something new?",
+          "back": "Learning creates physical changes — new synaptic connections form, existing ones strengthen, and with sufficient practice, neural pathways become more efficient (myelination increases, speeding signal transmission). The brain literally rewires in response to new experience."
+        },
+        {
+          "id": "bh-6-2",
+          "front": "What is spaced repetition?",
+          "back": "Spaced repetition is the practice of reviewing material at increasing intervals over time. It exploits the \"spacing effect\" — information encountered repeatedly with gaps between encounters is far better retained than information studied in a single session. It is one of the most evidence-backed learning strategies."
+        },
+        {
+          "id": "bh-6-3",
+          "front": "What is retrieval practice?",
+          "back": "Testing yourself on material — rather than just re-reading it — is called retrieval practice. The act of attempting to recall strengthens the memory trace more powerfully than passive review. This is why quizzes, flashcards, and self-testing are so effective for retention."
+        },
+        {
+          "id": "bh-6-4",
+          "front": "What is interleaving?",
+          "back": "Interleaving means mixing different topics or skills during practice rather than blocking them (studying one topic exhaustively before moving to the next). It feels harder and less efficient in the short term, but leads to significantly better long-term retention and transfer of learning."
+        },
+        {
+          "id": "bh-6-5",
+          "front": "Why is challenge important for learning?",
+          "back": "The brain learns most effectively when it is challenged at the right level — not so easy that it is bored, not so hard that it is overwhelmed. Making learning feel effortful (desirable difficulty) drives deeper encoding. Comfortable, easy practice produces shallow learning."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-6-q1",
+          "question": "What is spaced repetition?",
+          "options": [
+            "Studying in short bursts with physical activity in between",
+            "Reviewing material at increasing intervals over time to improve long-term retention",
+            "Alternating between two different subjects within a single study session",
+            "Taking regular breaks during intensive study to allow consolidation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Spaced repetition exploits the spacing effect — information reviewed multiple times with increasing gaps between sessions is far better retained than the same amount of study done in one block."
+        },
+        {
+          "id": "bh-6-q2",
+          "question": "Why is retrieval practice more effective than re-reading?",
+          "options": [
+            "Re-reading creates false confidence without actual retention",
+            "Testing yourself strengthens the memory trace more powerfully than passive review",
+            "Re-reading uses the wrong type of memory — visual rather than verbal",
+            "Retrieval practice activates the amygdala, adding emotional strength to memories"
+          ],
+          "correctIndex": 1,
+          "explanation": "The act of retrieving a memory strengthens it more effectively than passive re-exposure. Testing yourself — even before you feel ready — is one of the most effective learning strategies available."
+        },
+        {
+          "id": "bh-6-q3",
+          "question": "What is \"desirable difficulty\" in learning?",
+          "options": [
+            "Studying a topic you find personally uninteresting",
+            "Deliberately making learning feel effortful to drive deeper encoding",
+            "Setting extremely high performance standards during practice",
+            "Learning in uncomfortable physical conditions to improve focus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Desirable difficulty refers to making learning appropriately challenging. Tasks that feel effortful — retrieval practice, interleaving, spaced practice — produce deeper encoding and better long-term retention than easy, comfortable practice."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-7",
+      "dayNumber": 7,
+      "title": "Dementia — Understanding the Risk",
+      "subtitle": "What dementia is, how it develops, and what the research says about risk and prevention.",
+      "moduleId": "bh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-7-1",
+          "front": "What causes Alzheimer's disease?",
+          "back": "Alzheimer's is not fully understood, but it involves the accumulation of abnormal proteins — amyloid plaques and tau tangles — in the brain, which disrupt neural communication and eventually cause cell death. These changes begin 15–20 years before symptoms appear, which is why midlife risk factor management is so important."
+        },
+        {
+          "id": "bh-7-2",
+          "front": "How much of dementia risk is genetic?",
+          "back": "Genetics accounts for roughly 30–40% of dementia risk. The APOE-e4 gene variant increases risk but does not guarantee dementia. The majority of risk — around 40% of dementia cases worldwide — is estimated to be attributable to modifiable lifestyle factors, according to the Lancet Commission on Dementia Prevention."
+        },
+        {
+          "id": "bh-7-3",
+          "front": "What are the most important modifiable risk factors?",
+          "back": "The 2024 Lancet Commission identified 14 risk factors: physical inactivity, hearing loss, high blood pressure, smoking, obesity, depression, social isolation, excessive alcohol use, traumatic brain injury, air pollution, LDL cholesterol, diabetes, vision loss, and low education. Together these account for nearly half of all dementia cases."
+        },
+        {
+          "id": "bh-7-4",
+          "front": "When should you start thinking about dementia prevention?",
+          "back": "Decades before dementia symptoms appear. The brain changes underlying Alzheimer's begin in midlife or earlier. The habits built in your 40s and 50s — exercise, sleep, metabolic health, social connection, hearing protection — have a substantial influence on cognitive health in later decades."
+        },
+        {
+          "id": "bh-7-5",
+          "front": "Is dementia prevention possible?",
+          "back": "Full prevention is not guaranteed — but significant risk reduction is. The evidence is now strong enough that major health bodies recommend lifestyle intervention as a primary dementia prevention strategy. Protecting your brain is not about one magic action — it is about the cumulative effect of many good habits maintained over time."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-7-q1",
+          "question": "Approximately how many years before symptoms appear do the brain changes underlying Alzheimer's begin?",
+          "options": [
+            "1–2 years",
+            "5 years",
+            "15–20 years",
+            "30–40 years"
+          ],
+          "correctIndex": 2,
+          "explanation": "The brain changes associated with Alzheimer's — amyloid accumulation, tau tangles — begin 15–20 years before clinical symptoms appear. This is why midlife lifestyle choices matter so much for late-life cognitive health."
+        },
+        {
+          "id": "bh-7-q2",
+          "question": "According to the Lancet Commission, what proportion of dementia cases is linked to modifiable risk factors?",
+          "options": [
+            "Around 10%",
+            "Around 20%",
+            "Around 30%",
+            "Around 40%"
+          ],
+          "correctIndex": 3,
+          "explanation": "The 2024 Lancet Commission estimated that around 40% of dementia cases worldwide are attributable to modifiable risk factors — meaning significant prevention is possible through lifestyle change."
+        },
+        {
+          "id": "bh-7-q3",
+          "question": "What does carrying the APOE-e4 gene variant mean for dementia risk?",
+          "options": [
+            "It guarantees the development of Alzheimer's disease",
+            "It has no effect on individual dementia risk",
+            "It increases risk but does not guarantee dementia",
+            "It only increases risk when combined with other genetic variants"
+          ],
+          "correctIndex": 2,
+          "explanation": "APOE-e4 is the strongest known genetic risk factor for late-onset Alzheimer's, but it is not deterministic. Many people with APOE-e4 do not develop dementia, and lifestyle factors significantly influence outcomes even in those who carry the variant."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-8",
+      "dayNumber": 8,
+      "title": "Cardiovascular Health and the Brain",
+      "subtitle": "Why what is good for the heart is good for the brain — and what that means in practice.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-8-1",
+          "front": "Why does cardiovascular health matter for the brain?",
+          "back": "The brain consumes about 20% of the body's blood supply despite being only 2% of its weight. It depends on a continuous, clean supply of oxygen and glucose delivered by blood vessels. Anything that damages blood vessels — high blood pressure, high cholesterol, diabetes, smoking — directly threatens brain health."
+        },
+        {
+          "id": "bh-8-2",
+          "front": "What is vascular dementia?",
+          "back": "Vascular dementia is the second most common form of dementia after Alzheimer's. It is caused by reduced blood flow to the brain — often due to strokes (large or small) or chronic damage from high blood pressure. Unlike Alzheimer's, vascular dementia is closely tied to cardiovascular risk factors that are largely preventable."
+        },
+        {
+          "id": "bh-8-3",
+          "front": "What is the link between high blood pressure and cognitive decline?",
+          "back": "Chronic high blood pressure damages the small blood vessels supplying the brain. It is one of the most significant modifiable risk factors for both vascular dementia and Alzheimer's disease. Blood pressure management in midlife — particularly in the 40s and 50s — is one of the most impactful brain health interventions available."
+        },
+        {
+          "id": "bh-8-4",
+          "front": "How does cardiovascular fitness protect the brain?",
+          "back": "Aerobic fitness improves blood flow to the brain, promotes BDNF release (which supports neuron health), reduces inflammation, and lowers blood pressure. Peter Attia's research consistently identifies VO2 max — cardiovascular fitness — as one of the strongest predictors of cognitive health in later life."
+        },
+        {
+          "id": "bh-8-5",
+          "front": "What is the practical message?",
+          "back": "Protecting your brain and protecting your heart require the same actions: regular aerobic exercise, blood pressure management, healthy metabolic markers, not smoking, and maintaining a healthy weight. There is no \"brain health plan\" separate from a \"heart health plan\" — they are the same plan."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-8-q1",
+          "question": "Why is high blood pressure particularly damaging to the brain?",
+          "options": [
+            "It causes the brain to produce excess cortisol",
+            "It damages the small blood vessels supplying the brain, reducing oxygen and nutrient delivery",
+            "It disrupts the blood-brain barrier, allowing toxins to enter",
+            "It suppresses the production of BDNF in the hippocampus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chronic high blood pressure damages the brain's small blood vessels, reducing blood flow and oxygen delivery. It is one of the most significant modifiable risk factors for both vascular dementia and Alzheimer's disease."
+        },
+        {
+          "id": "bh-8-q2",
+          "question": "What is vascular dementia?",
+          "options": [
+            "A form of dementia caused by abnormal protein accumulation",
+            "The most common form of dementia, affecting primarily language",
+            "Dementia caused by reduced blood flow to the brain from vascular damage",
+            "A temporary form of cognitive impairment following a stroke"
+          ],
+          "correctIndex": 2,
+          "explanation": "Vascular dementia is caused by reduced blood flow to the brain — through strokes or chronic vascular damage. It is closely linked to cardiovascular risk factors and is largely preventable."
+        },
+        {
+          "id": "bh-8-q3",
+          "question": "What measure of physical fitness is most strongly linked to long-term cognitive health?",
+          "options": [
+            "Grip strength",
+            "Body weight",
+            "Flexibility",
+            "VO2 max — cardiovascular fitness"
+          ],
+          "correctIndex": 3,
+          "explanation": "VO2 max — a measure of cardiovascular fitness — is one of the strongest predictors of cognitive health in later life. Aerobic fitness improves brain blood flow, promotes BDNF release, and reduces inflammation."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-9",
+      "dayNumber": 9,
+      "title": "Sleep and the Brain",
+      "subtitle": "Why sleep is the brain's essential maintenance window — and what happens when it is cut short.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-9-1",
+          "front": "Why is sleep critical for brain health?",
+          "back": "During sleep, the brain performs essential maintenance. It consolidates memories, clears metabolic waste, repairs cellular damage, and restores neurotransmitter levels. Sleep is not passive downtime — it is the most active brain maintenance period of the 24-hour cycle."
+        },
+        {
+          "id": "bh-9-2",
+          "front": "What is the glymphatic system?",
+          "back": "The glymphatic system is the brain's waste-clearance mechanism — a network of channels that flushes toxic proteins (including amyloid, associated with Alzheimer's) from the brain during sleep. It is most active during deep slow-wave sleep. Poor sleep impairs this clearance, allowing toxic proteins to accumulate."
+        },
+        {
+          "id": "bh-9-3",
+          "front": "How does sleep deprivation affect cognitive function?",
+          "back": "After just one night of poor sleep, attention, working memory, reaction time, and decision-making all deteriorate measurably. Chronic sleep deprivation causes cumulative cognitive impairment. Matthew Walker's research shows that even people who feel adapted to short sleep are significantly cognitively impaired compared to adequate sleepers."
+        },
+        {
+          "id": "bh-9-4",
+          "front": "What is the link between sleep and Alzheimer's risk?",
+          "back": "Amyloid and tau — the proteins that accumulate in Alzheimer's — are cleared by the glymphatic system during sleep. Studies show that even a single night of sleep deprivation measurably increases amyloid levels in the brain. Chronic poor sleep is now recognised as a significant Alzheimer's risk factor."
+        },
+        {
+          "id": "bh-9-5",
+          "front": "How much sleep does the brain actually need?",
+          "back": "Most adults need 7–9 hours per night for optimal brain health. There is no adaptation to chronic short sleep — the brain simply accumulates a deficit. The idea that you can \"train yourself\" to need less sleep is not supported by the evidence. Consistently sleeping less than 6 hours is associated with meaningfully higher dementia risk."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-9-q1",
+          "question": "What is the glymphatic system?",
+          "options": [
+            "The brain's immune defence against bacterial infections",
+            "A network that clears toxic proteins from the brain, primarily active during sleep",
+            "The system that regulates cortisol levels during the sleep cycle",
+            "The pathway that converts short-term memories to long-term storage during REM sleep"
+          ],
+          "correctIndex": 1,
+          "explanation": "The glymphatic system is the brain's waste-clearance network. It flushes toxic proteins — including amyloid associated with Alzheimer's — from the brain during deep slow-wave sleep."
+        },
+        {
+          "id": "bh-9-q2",
+          "question": "What happens to amyloid levels in the brain after a single night of sleep deprivation?",
+          "options": [
+            "They decrease, as the brain works harder to compensate",
+            "They are unaffected by short-term sleep disruption",
+            "They increase measurably, due to reduced glymphatic clearance",
+            "They redistribute from the cortex to the hippocampus"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies show that even one night of sleep deprivation measurably increases amyloid levels in the brain. The glymphatic clearance system — which removes amyloid — requires adequate sleep to function properly."
+        },
+        {
+          "id": "bh-9-q3",
+          "question": "How many hours of sleep do most adults need for optimal brain health?",
+          "options": [
+            "5–6 hours — quality matters more than quantity",
+            "6–7 hours — the optimal range for most adults",
+            "7–9 hours — less than this leads to cumulative cognitive impairment",
+            "9–10 hours — the brain needs more sleep with age"
+          ],
+          "correctIndex": 2,
+          "explanation": "The research consensus is that most adults need 7–9 hours per night. Sleeping less than 6 hours consistently is associated with significantly higher cognitive decline risk and elevated Alzheimer's risk."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-10",
+      "dayNumber": 10,
+      "title": "Hearing Loss and Cognitive Decline",
+      "subtitle": "Why hearing health is one of the most overlooked but modifiable brain health factors.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-10-1",
+          "front": "What is the link between hearing loss and dementia?",
+          "back": "Untreated hearing loss is the single largest modifiable risk factor for dementia, according to the Lancet Commission on Dementia Prevention. People with moderate hearing loss have three times the dementia risk of those with normal hearing. The good news: treating hearing loss appears to meaningfully reduce this risk."
+        },
+        {
+          "id": "bh-10-2",
+          "front": "Why does hearing loss threaten the brain?",
+          "back": "Two main mechanisms. First, when hearing is impaired, the brain diverts cognitive resources to processing degraded sound — resources then unavailable for memory and thinking. Second, hearing loss often leads to social withdrawal and isolation, which is itself a significant dementia risk factor."
+        },
+        {
+          "id": "bh-10-3",
+          "front": "Does wearing a hearing aid reduce dementia risk?",
+          "back": "Evidence suggests yes. A major 2023 randomised controlled trial found that hearing aid use in people with hearing loss reduced cognitive decline by nearly 50% over three years. This is one of the most encouraging findings in dementia prevention research."
+        },
+        {
+          "id": "bh-10-4",
+          "front": "What causes hearing loss?",
+          "back": "The most common causes are age-related hearing loss (presbycusis), noise exposure, and certain medications. Noise-induced hearing loss — from loud music, workplace noise, or recreational activities — is largely preventable and affects increasingly younger people."
+        },
+        {
+          "id": "bh-10-5",
+          "front": "What should you do about hearing health?",
+          "back": "Get your hearing checked regularly — particularly from your 50s onwards. Protect your hearing from loud noise (use ear protection, limit headphone volume). If you have hearing loss, take it seriously and consider hearing aids. This is one of the clearest evidence-based brain health interventions available."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-10-q1",
+          "question": "According to the Lancet Commission, what is the single largest modifiable risk factor for dementia?",
+          "options": [
+            "Physical inactivity",
+            "High blood pressure",
+            "Untreated hearing loss",
+            "Social isolation"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Lancet Commission on Dementia Prevention identifies untreated hearing loss as the single largest modifiable risk factor for dementia in terms of population-level impact."
+        },
+        {
+          "id": "bh-10-q2",
+          "question": "What are the two main ways hearing loss threatens brain health?",
+          "options": [
+            "It disrupts sleep and raises blood pressure",
+            "It reduces cognitive reserve and increases amyloid production",
+            "It diverts cognitive resources from memory and thinking, and often leads to social isolation",
+            "It damages the hippocampus directly and reduces cerebral blood flow"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hearing loss burdens the brain by requiring extra cognitive resources to process degraded sound. It also tends to lead to social withdrawal — which is itself a significant dementia risk factor."
+        },
+        {
+          "id": "bh-10-q3",
+          "question": "What did the 2023 randomised controlled trial on hearing aids find?",
+          "options": [
+            "Hearing aids improved quality of life but did not affect cognitive decline",
+            "Hearing aid use in people with hearing loss reduced cognitive decline by nearly 50% over three years",
+            "Hearing aids were only effective in people under 70",
+            "No significant difference was found between hearing aid users and non-users"
+          ],
+          "correctIndex": 1,
+          "explanation": "A major 2023 RCT found that hearing aid use in people with hearing loss reduced cognitive decline by approximately 50% over three years — one of the most significant findings in dementia prevention research."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-11",
+      "dayNumber": 11,
+      "title": "Social Connection and the Brain",
+      "subtitle": "Why loneliness is a serious brain health risk — and how relationships protect cognition.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-11-1",
+          "front": "How does social isolation affect the brain?",
+          "back": "Chronic loneliness and social isolation are associated with accelerated cognitive decline, higher dementia risk, increased depression, and reduced brain volume in regions associated with memory and emotional regulation. Social connection is not just emotionally valuable — it is physiologically protective."
+        },
+        {
+          "id": "bh-11-2",
+          "front": "Why is social engagement cognitively stimulating?",
+          "back": "Social interaction requires the simultaneous activation of many brain systems — language, attention, emotion processing, theory of mind (understanding others' perspectives), memory, and executive function. This multi-system engagement makes socialising one of the most cognitively demanding and protective activities available."
+        },
+        {
+          "id": "bh-11-3",
+          "front": "What does the Harvard Study of Adult Development say about social connection and brain health?",
+          "back": "This 80-year study found that warm, close relationships in midlife were associated with better cognitive function at age 80. The quality of relationships — not the quantity — was the key predictor. People who felt lonely in their 50s showed cognitive decline more rapidly than socially connected peers."
+        },
+        {
+          "id": "bh-11-4",
+          "front": "What is the scale of loneliness in modern populations?",
+          "back": "US Surgeon General Vivek Murthy declared loneliness a public health epidemic in 2023. Surveys consistently find that 30–40% of adults in developed countries report feeling lonely. The physical health consequences — including elevated dementia and heart disease risk — are comparable to smoking 15 cigarettes per day."
+        },
+        {
+          "id": "bh-11-5",
+          "front": "How do you protect brain health through social connection?",
+          "back": "Prioritise face-to-face contact over passive digital connection. Invest in a small number of close, reciprocal relationships. Engage in activities that involve genuine interaction — group sports, book clubs, volunteering, community activities. Social connection requires the same deliberate investment as exercise."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-11-q1",
+          "question": "Why is social interaction cognitively protective?",
+          "options": [
+            "It releases oxytocin, which directly preserves hippocampal neurons",
+            "It reduces cortisol, lowering inflammation that damages brain tissue",
+            "It simultaneously activates many brain systems — language, attention, emotion, memory, and executive function",
+            "It provides distraction from stress that would otherwise accelerate cognitive decline"
+          ],
+          "correctIndex": 2,
+          "explanation": "Social interaction is cognitively demanding in the best possible way — it exercises language, attention, emotional processing, theory of mind, and memory simultaneously. This multi-system engagement is profoundly protective."
+        },
+        {
+          "id": "bh-11-q2",
+          "question": "What did the Harvard Study find about social connection and cognitive ageing?",
+          "options": [
+            "The number of social contacts in midlife predicts cognitive function at 80",
+            "Quality of close relationships in midlife predicts better cognitive function at 80",
+            "Social media use in midlife provides the same cognitive benefits as face-to-face contact",
+            "Social isolation only accelerates cognitive decline after age 70"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Harvard Study found that the quality — not quantity — of close relationships in midlife predicted cognitive function decades later. Warm, reciprocal relationships were the key protective factor."
+        },
+        {
+          "id": "bh-11-q3",
+          "question": "How does the health impact of chronic loneliness compare to other risk factors?",
+          "options": [
+            "It is comparable in impact to mild physical inactivity",
+            "It has a modest effect compared to major risk factors like smoking",
+            "It is comparable in physical health impact to smoking 15 cigarettes per day",
+            "It primarily affects mental health, with limited physical consequences"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests that chronic loneliness has health consequences comparable to smoking 15 cigarettes per day — affecting cardiovascular health, immune function, cognitive decline, and mortality risk."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-12",
+      "dayNumber": 12,
+      "title": "Stress and the Ageing Brain",
+      "subtitle": "How chronic stress accelerates brain ageing and increases dementia risk.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-12-1",
+          "front": "How does chronic stress affect the brain?",
+          "back": "Chronic stress keeps cortisol elevated. Over time, excess cortisol damages the hippocampus — the brain's memory centre — reducing its volume and impairing the ability to form new memories. Chronic stress also increases inflammation, disrupts sleep, and accelerates cellular ageing. It is one of the most damaging forces on the brain."
+        },
+        {
+          "id": "bh-12-2",
+          "front": "What is the hippocampus's role in stress and memory?",
+          "back": "The hippocampus helps regulate the stress response — it signals the HPA axis to stop producing cortisol when a threat has passed. When chronic stress damages the hippocampus, this feedback loop weakens — making the stress response harder to switch off. A stressed brain becomes increasingly stressed."
+        },
+        {
+          "id": "bh-12-3",
+          "front": "Is the cortisol damage to the hippocampus reversible?",
+          "back": "Partially — and this is encouraging. Studies show that stress reduction, exercise, adequate sleep, and mindfulness practice can restore hippocampal volume over time. Neuroplasticity means that some of the damage from chronic stress is not permanent if the right conditions are created."
+        },
+        {
+          "id": "bh-12-4",
+          "front": "What is the link between depression and dementia?",
+          "back": "Depression is a significant dementia risk factor. The relationship runs in both directions — depression can be both a risk factor for and an early symptom of dementia. The mechanisms overlap: chronic stress, inflammation, disrupted sleep, and social withdrawal are common to both conditions."
+        },
+        {
+          "id": "bh-12-5",
+          "front": "What does this mean practically?",
+          "back": "Managing stress is not just a quality-of-life issue — it is a brain protection strategy. The tools covered in the stress course (breathing, movement, mindfulness, social connection, cognitive reframing) are also dementia prevention tools. A calmer, more resilient brain is a better-protected brain."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-12-q1",
+          "question": "How does chronic cortisol exposure affect the hippocampus?",
+          "options": [
+            "It causes the hippocampus to enlarge, increasing memory capacity",
+            "It has no direct effect on hippocampal structure",
+            "It damages the hippocampus, reducing its volume and impairing memory formation",
+            "It prevents the hippocampus from receiving blood flow during stress"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chronic cortisol exposure damages the hippocampus — reducing its volume and impairing its ability to form new memories. The hippocampus is particularly vulnerable to the effects of sustained stress."
+        },
+        {
+          "id": "bh-12-q2",
+          "question": "Is the cortisol-related damage to the hippocampus reversible?",
+          "options": [
+            "No — hippocampal damage from stress is permanent",
+            "Only in people under 40 who begin stress management early",
+            "Partially — stress reduction, exercise, sleep, and mindfulness can restore hippocampal volume",
+            "Yes, but only with medical intervention"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that hippocampal volume can partially recover with stress reduction, regular exercise, adequate sleep, and mindfulness practice. Neuroplasticity means some stress-related brain changes are not permanent."
+        },
+        {
+          "id": "bh-12-q3",
+          "question": "What is the relationship between depression and dementia?",
+          "options": [
+            "Depression is unrelated to dementia risk",
+            "Depression is only a risk factor for vascular dementia, not Alzheimer's",
+            "Depression is both a risk factor for and a potential early symptom of dementia",
+            "Depression causes dementia only in people who do not receive treatment"
+          ],
+          "correctIndex": 2,
+          "explanation": "The relationship between depression and dementia is bidirectional. Depression is a significant risk factor for dementia, and it can also be an early symptom. They share common mechanisms including inflammation, sleep disruption, and social withdrawal."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-13",
+      "dayNumber": 13,
+      "title": "Metabolic Health and the Brain",
+      "subtitle": "How blood sugar, insulin, and metabolic health directly affect cognitive function.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-13-1",
+          "front": "Why does metabolic health matter for the brain?",
+          "back": "The brain is the most metabolically demanding organ in the body — it uses glucose almost exclusively for fuel. Disruptions in glucose regulation (insulin resistance, Type 2 diabetes, high blood sugar) directly impair the brain's energy supply, damage blood vessels, and increase inflammation."
+        },
+        {
+          "id": "bh-13-2",
+          "front": "What is the link between Type 2 diabetes and dementia?",
+          "back": "People with Type 2 diabetes have roughly twice the risk of developing Alzheimer's disease compared to those without it. Some researchers call Alzheimer's \"Type 3 diabetes\" because of the overlap in insulin signalling dysfunction. Managing blood sugar is a direct brain protection strategy."
+        },
+        {
+          "id": "bh-13-3",
+          "front": "How does insulin resistance affect the brain?",
+          "back": "Insulin plays a role in the brain — supporting neuron function, reducing inflammation, and promoting clearance of amyloid. When the brain becomes insulin resistant, these protective functions are impaired. Insulin resistance in the brain is linked to accelerated tau and amyloid accumulation."
+        },
+        {
+          "id": "bh-13-4",
+          "front": "What is the blood-brain barrier and how is it affected by metabolic health?",
+          "back": "The blood-brain barrier is a selective membrane that protects the brain from toxins and pathogens in the bloodstream. Chronic high blood sugar, inflammation, and metabolic dysfunction damage this barrier — allowing harmful substances to enter the brain and disrupting its delicate environment."
+        },
+        {
+          "id": "bh-13-5",
+          "front": "What does this mean for daily choices?",
+          "back": "Every choice that improves metabolic health — reducing processed food and sugar, regular exercise, maintaining a healthy weight, good sleep — also protects the brain. There is no separation between metabolic health and brain health. They are deeply intertwined."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-13-q1",
+          "question": "Why is the brain particularly vulnerable to disruptions in glucose regulation?",
+          "options": [
+            "The brain stores more glucose than other organs",
+            "The brain uses glucose almost exclusively as its fuel source",
+            "The brain lacks the ability to regulate its own blood sugar levels",
+            "Glucose is the only substance that can cross the blood-brain barrier"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unlike other organs that can use fat for fuel, the brain relies almost exclusively on glucose. Disruptions in glucose regulation directly impair the brain's energy supply."
+        },
+        {
+          "id": "bh-13-q2",
+          "question": "Why do some researchers refer to Alzheimer's disease as \"Type 3 diabetes\"?",
+          "options": [
+            "Alzheimer's and diabetes share the same genetic risk factors",
+            "Both conditions are caused by the same inflammatory proteins",
+            "Alzheimer's involves insulin signalling dysfunction in the brain similar to that seen in diabetes",
+            "People with Alzheimer's eventually develop Type 2 diabetes"
+          ],
+          "correctIndex": 2,
+          "explanation": "The \"Type 3 diabetes\" label refers to the observation that Alzheimer's disease involves significant insulin signalling dysfunction in the brain — disrupting the same pathways that are dysfunctional in diabetes."
+        },
+        {
+          "id": "bh-13-q3",
+          "question": "How does insulin resistance affect the brain?",
+          "options": [
+            "It reduces the brain's ability to produce new neurons",
+            "It impairs neuron function, reduces amyloid clearance, and promotes tau accumulation",
+            "It primarily affects the cerebellum, disrupting movement coordination",
+            "It causes the blood-brain barrier to produce excess protective proteins"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin resistance in the brain impairs neuron function, reduces the clearance of amyloid, and promotes tau accumulation — directly contributing to the processes associated with Alzheimer's disease."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-14",
+      "dayNumber": 14,
+      "title": "What Else Threatens Brain Health?",
+      "subtitle": "Alcohol, head injury, smoking, air pollution, and other underappreciated brain risks.",
+      "moduleId": "bh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-14-1",
+          "front": "How does alcohol affect the brain?",
+          "back": "Alcohol is a neurotoxin. Heavy alcohol use shrinks brain volume, disrupts memory consolidation during sleep, damages the hippocampus, and significantly increases dementia risk. Even moderate drinking is associated with measurable brain changes. The Lancet Commission lists excessive alcohol as a modifiable dementia risk factor."
+        },
+        {
+          "id": "bh-14-2",
+          "front": "What is the impact of head injury on dementia risk?",
+          "back": "Traumatic brain injury (TBI) — including concussion — increases dementia risk. The risk is higher with more severe injuries, repeated injuries (as seen in contact sports), and injuries sustained over a lifetime. Wearing helmets, preventing falls, and being cautious about contact sports are genuine brain protection strategies."
+        },
+        {
+          "id": "bh-14-3",
+          "front": "How does smoking affect the brain?",
+          "back": "Smoking damages blood vessels throughout the body — including in the brain — and increases the risk of both Alzheimer's and vascular dementia. It also promotes inflammation and oxidative stress. Stopping smoking at any age reduces risk. Former smokers have lower dementia risk than current smokers."
+        },
+        {
+          "id": "bh-14-4",
+          "front": "Does air pollution affect cognitive health?",
+          "back": "Yes. Fine particulate matter (PM2.5) can penetrate the blood-brain barrier and promote neuroinflammation. Research links long-term air pollution exposure to accelerated cognitive decline and increased dementia risk. The 2024 Lancet Commission added air pollution to its list of modifiable dementia risk factors."
+        },
+        {
+          "id": "bh-14-5",
+          "front": "What is the cumulative message about brain risk?",
+          "back": "No single factor destroys brain health — and no single factor saves it. Brain health is the cumulative result of many habits over many years. Each risk factor you reduce makes a difference. You do not need to eliminate everything — you need to move the overall balance in the right direction."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-14-q1",
+          "question": "How does heavy alcohol use affect the brain?",
+          "options": [
+            "It has minimal effects on brain structure if consumed before age 40",
+            "It only affects the cerebellum, disrupting coordination",
+            "It shrinks brain volume, damages the hippocampus, and significantly increases dementia risk",
+            "It primarily affects emotional regulation, not cognitive function"
+          ],
+          "correctIndex": 2,
+          "explanation": "Heavy alcohol use causes measurable brain shrinkage, hippocampal damage, and significantly elevates dementia risk. Alcohol is a neurotoxin with direct and cumulative effects on brain structure."
+        },
+        {
+          "id": "bh-14-q2",
+          "question": "Why does traumatic brain injury increase dementia risk?",
+          "options": [
+            "Head injuries permanently disable the glymphatic system",
+            "TBI disrupts the blood-brain barrier and can trigger processes linked to dementia pathology",
+            "Head injury causes the hippocampus to shrink immediately",
+            "Concussion directly destroys myelin in cognitive areas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Traumatic brain injury can disrupt the blood-brain barrier, trigger neuroinflammation, and initiate processes linked to abnormal protein accumulation — all of which increase long-term dementia risk."
+        },
+        {
+          "id": "bh-14-q3",
+          "question": "Does stopping smoking reduce dementia risk even if you have smoked for years?",
+          "options": [
+            "No — cumulative damage from decades of smoking cannot be reversed",
+            "Only if you quit before the age of 50",
+            "Yes — former smokers have lower dementia risk than current smokers",
+            "Quitting reduces lung cancer risk but not dementia risk"
+          ],
+          "correctIndex": 2,
+          "explanation": "Stopping smoking at any age reduces dementia risk. Former smokers consistently show lower dementia risk than current smokers — demonstrating that the brain benefits from cessation even after years of exposure."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-15",
+      "dayNumber": 15,
+      "title": "Exercise — The Most Powerful Brain Medicine",
+      "subtitle": "Why physical activity is the single most evidence-backed intervention for long-term brain health.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-15-1",
+          "front": "Why is exercise so powerful for the brain?",
+          "back": "Exercise increases blood flow to the brain, stimulates BDNF (brain-derived neurotrophic factor — sometimes called \"fertiliser for neurons\"), promotes neurogenesis in the hippocampus, reduces inflammation, improves sleep, reduces stress hormones, and lowers cardiovascular risk. No other single intervention matches this breadth of effect."
+        },
+        {
+          "id": "bh-15-2",
+          "front": "What type of exercise is best for the brain?",
+          "back": "Aerobic exercise has the strongest evidence for brain health — it is the primary driver of BDNF and hippocampal neurogenesis. Resistance training adds benefits through improved metabolic health, reduced inflammation, and cardiovascular support. Combining both types appears to be optimal."
+        },
+        {
+          "id": "bh-15-3",
+          "front": "How much exercise is needed for meaningful brain benefit?",
+          "back": "Studies show benefit from as little as 150 minutes of moderate aerobic exercise per week — roughly 30 minutes five days a week. Higher amounts produce larger benefits. The most important factor is consistency: regular exercise over years and decades, rather than intense bursts followed by inactivity."
+        },
+        {
+          "id": "bh-15-4",
+          "front": "Can exercise reduce dementia risk?",
+          "back": "Yes. Regular physical activity is associated with a 35–40% reduction in dementia risk — one of the largest modifiable risk reductions available. Exercise in midlife is particularly impactful, but benefit has been demonstrated at all ages. It is never too late to start."
+        },
+        {
+          "id": "bh-15-5",
+          "front": "What is the practical starting point?",
+          "back": "Start with walking. Brisk walking for 30 minutes five days per week is sufficient to produce meaningful brain benefits. Build from there — gradually increasing intensity and adding strength training. The goal is a sustainable routine that continues for life, not a short-term programme."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-15-q1",
+          "question": "What is BDNF and why does it matter for the brain?",
+          "options": [
+            "A stress hormone that protects neurons during intense exercise",
+            "A brain protein stimulated by exercise that supports neuron health and promotes neurogenesis",
+            "A measure of cardiovascular fitness linked to cognitive health",
+            "A neurotransmitter that regulates mood and motivation"
+          ],
+          "correctIndex": 1,
+          "explanation": "BDNF (brain-derived neurotrophic factor) is a protein that supports neuron health and promotes the growth of new neurons — particularly in the hippocampus. Exercise is one of the most powerful stimulators of BDNF."
+        },
+        {
+          "id": "bh-15-q2",
+          "question": "What reduction in dementia risk is associated with regular physical activity?",
+          "options": [
+            "Around 5–10%",
+            "Around 15–20%",
+            "Around 35–40%",
+            "Around 60–70%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Regular physical activity is associated with approximately a 35–40% reduction in dementia risk — one of the largest single-factor risk reductions available through lifestyle change."
+        },
+        {
+          "id": "bh-15-q3",
+          "question": "What is the minimum amount of aerobic exercise shown to produce meaningful brain benefit?",
+          "options": [
+            "At least 60 minutes per day, seven days per week",
+            "A minimum of 30 minutes per day, with no days off",
+            "Around 150 minutes per week — roughly 30 minutes five days a week",
+            "One long session per week of 90–120 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows meaningful brain benefits from around 150 minutes of moderate aerobic exercise per week. Consistency over time matters more than any single session's intensity or duration."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-16",
+      "dayNumber": 16,
+      "title": "Diet and Brain Health",
+      "subtitle": "How what you eat affects your brain — and what the evidence actually supports.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-16-1",
+          "front": "Does diet affect brain health?",
+          "back": "Yes — significantly. The brain is 60% fat and requires a continuous supply of nutrients, antioxidants, and anti-inflammatory compounds. A diet that supports cardiovascular health, reduces inflammation, and maintains metabolic stability is also a brain-protective diet."
+        },
+        {
+          "id": "bh-16-2",
+          "front": "What is the MIND diet?",
+          "back": "The MIND diet (Mediterranean-DASH Intervention for Neurodegenerative Delay) combines elements of the Mediterranean and DASH diets, specifically optimised for brain health. Studies found it was associated with a 53% lower rate of Alzheimer's in those who followed it closely. It emphasises green leafy vegetables, berries, nuts, olive oil, fish, whole grains, and legumes."
+        },
+        {
+          "id": "bh-16-3",
+          "front": "What foods are most protective for the brain?",
+          "back": "Oily fish (omega-3 fatty acids), dark leafy greens (folate, antioxidants), berries (flavonoids, which cross the blood-brain barrier), nuts (healthy fats, vitamin E), olive oil (polyphenols), and whole grains (stable blood sugar). These provide the building blocks and protection the brain needs."
+        },
+        {
+          "id": "bh-16-4",
+          "front": "What foods are most damaging to the brain?",
+          "back": "Ultra-processed foods, excess sugar, refined carbohydrates, trans fats, and excessive alcohol are all associated with worse cognitive outcomes. They drive inflammation, insulin resistance, oxidative stress, and vascular damage — all of which accelerate brain ageing."
+        },
+        {
+          "id": "bh-16-5",
+          "front": "What is the practical dietary message?",
+          "back": "You do not need a complex brain-specific diet. Eating mostly whole, unprocessed foods — with an emphasis on vegetables, oily fish, berries, nuts, and olive oil — while minimising ultra-processed foods and excess sugar provides robust brain protection. The same diet that protects the heart protects the brain."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-16-q1",
+          "question": "What is the MIND diet and what was it associated with in studies?",
+          "options": [
+            "A ketogenic diet specifically designed for people with early dementia",
+            "A Mediterranean-based diet associated with a 53% lower rate of Alzheimer's in close followers",
+            "A low-fat diet that reduces amyloid production",
+            "An intermittent fasting protocol shown to slow hippocampal decline"
+          ],
+          "correctIndex": 1,
+          "explanation": "The MIND diet combines the Mediterranean and DASH diets, specifically targeting brain health. Studies found it was associated with a 53% lower Alzheimer's rate in people who followed it closely."
+        },
+        {
+          "id": "bh-16-q2",
+          "question": "Which nutrient found in oily fish is particularly important for brain health?",
+          "options": [
+            "Vitamin C",
+            "Zinc",
+            "Omega-3 fatty acids",
+            "Folate"
+          ],
+          "correctIndex": 2,
+          "explanation": "Omega-3 fatty acids — particularly EPA and DHA — are critical for brain structure and function. They are found in highest concentration in oily fish and are associated with reduced dementia risk and better cognitive function."
+        },
+        {
+          "id": "bh-16-q3",
+          "question": "Why do ultra-processed foods and excess sugar harm the brain?",
+          "options": [
+            "They deplete the brain's supply of serotonin over time",
+            "They cause direct damage to the hippocampus through chemical additives",
+            "They drive inflammation, insulin resistance, and vascular damage — all of which accelerate brain ageing",
+            "They disrupt the glymphatic system during sleep"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ultra-processed foods and excess sugar promote inflammation, insulin resistance, oxidative stress, and vascular damage — all mechanisms that accelerate brain ageing and increase dementia risk."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-17",
+      "dayNumber": 17,
+      "title": "Mental Stimulation and Cognitive Reserve",
+      "subtitle": "How challenging the brain builds the resilience to resist decline.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-17-1",
+          "front": "Does mental stimulation protect against cognitive decline?",
+          "back": "Yes — through building cognitive reserve. People who engage in cognitively demanding activities throughout life tend to show dementia symptoms later and progress more slowly. The brain damage may be identical, but the reserve means function is better preserved for longer."
+        },
+        {
+          "id": "bh-17-2",
+          "front": "What kinds of mental activities are most beneficial?",
+          "back": "The most protective activities are those that are novel, complex, and engaging — not passive repetition of already-mastered skills. Learning a new language, a musical instrument, a complex craft, or a new professional skill requires the brain to form new connections. Sudoku and crosswords may help, but they offer less benefit once mastered."
+        },
+        {
+          "id": "bh-17-3",
+          "front": "Does education level affect dementia risk?",
+          "back": "Yes — lower education is a risk factor identified by the Lancet Commission. But education level is a proxy for cognitive reserve, not a determinant. Intellectual engagement throughout adult life — regardless of formal education — can build reserve. Learning in your 50s, 60s, and 70s still matters."
+        },
+        {
+          "id": "bh-17-4",
+          "front": "Do brain training apps work?",
+          "back": "Evidence is mixed. Brain training games improve performance on the specific tasks they train, but transfer to real-world cognitive function is limited. The activities with the strongest evidence for protecting real-world cognition are those that involve genuine learning — new skills, new knowledge, new social environments."
+        },
+        {
+          "id": "bh-17-5",
+          "front": "What is the practical strategy for cognitive reserve?",
+          "back": "Build a lifestyle of continued learning. Take on new challenges — professionally, creatively, intellectually, and socially. Read widely, engage with complex ideas, learn new skills, and stay curious. The brain responds to challenge regardless of age. Intellectual engagement is both protective and enjoyable."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-17-q1",
+          "question": "How does cognitive reserve protect against dementia?",
+          "options": [
+            "It prevents amyloid plaques from forming in the hippocampus",
+            "It allows the brain to tolerate more damage before cognitive symptoms appear",
+            "It repairs existing neurological damage through accelerated neurogenesis",
+            "It reduces cortisol levels, protecting neurons from stress-related damage"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cognitive reserve allows the brain to function effectively despite the presence of damage. People with higher reserve show dementia symptoms later and progress more slowly — the damage may be present, but the reserve masks its impact."
+        },
+        {
+          "id": "bh-17-q2",
+          "question": "What types of mental activity are most effective at building cognitive reserve?",
+          "options": [
+            "Regularly repeating tasks you have already mastered, to reinforce existing pathways",
+            "Passive activities like reading the news or watching documentaries",
+            "Novel, complex, and engaging activities that require forming new neural connections",
+            "Brain training apps designed to target specific cognitive domains"
+          ],
+          "correctIndex": 2,
+          "explanation": "The most protective activities are those that are novel and complex — requiring the brain to form new connections. Learning a new language, instrument, or skill creates more reserve than repeatedly practising already-mastered tasks."
+        },
+        {
+          "id": "bh-17-q3",
+          "question": "Do brain training apps provide the same cognitive protection as learning new skills?",
+          "options": [
+            "Yes — any cognitively demanding activity provides equivalent benefit",
+            "Yes, if used for at least 30 minutes per day",
+            "No — brain training tends to improve only the trained tasks with limited transfer to real-world cognition",
+            "No — brain training apps actually reduce cognitive reserve by replacing more valuable activities"
+          ],
+          "correctIndex": 2,
+          "explanation": "Brain training apps improve performance on their specific tasks, but evidence for transfer to broader real-world cognitive function is limited. Activities involving genuine learning — new skills, social engagement, creative pursuits — have stronger protective evidence."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-18",
+      "dayNumber": 18,
+      "title": "Prioritising Sleep for Brain Protection",
+      "subtitle": "Practical strategies to improve sleep quality specifically for brain health.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-18-1",
+          "front": "What is the most impactful sleep habit for brain health?",
+          "back": "Consistency — going to bed and waking at the same time each day, including weekends. A regular sleep schedule stabilises the circadian rhythm, maximises deep slow-wave sleep (when glymphatic clearance is most active), and improves overall sleep quality more reliably than any other single change."
+        },
+        {
+          "id": "bh-18-2",
+          "front": "Why should you avoid screens before bed?",
+          "back": "Blue light from screens suppresses melatonin production, delaying the sleep onset signal. Beyond light, screens also provide cognitive and emotional stimulation that keeps the brain in an alert state. Most sleep researchers recommend avoiding screens for at least 30–60 minutes before bed."
+        },
+        {
+          "id": "bh-18-3",
+          "front": "What is the relationship between alcohol and sleep quality?",
+          "back": "Alcohol may help you fall asleep faster, but it severely disrupts sleep architecture. It suppresses REM sleep and deep slow-wave sleep — the stages most important for memory consolidation and glymphatic clearance. Even moderate evening drinking measurably reduces sleep quality and next-day cognitive performance."
+        },
+        {
+          "id": "bh-18-4",
+          "front": "What temperature is optimal for sleep?",
+          "back": "The brain and body need to cool down to initiate and maintain deep sleep. Research suggests a bedroom temperature of around 16–19°C (60–67°F) is optimal for most adults. A warm bath or shower before bed can paradoxically help — the subsequent cooling of the body signals readiness for sleep."
+        },
+        {
+          "id": "bh-18-5",
+          "front": "What should you do if you struggle to sleep?",
+          "back": "Avoid lying in bed awake for long periods — this trains the brain to associate bed with wakefulness. Get up, do something calm in dim light, and return when sleepy. Cognitive Behavioural Therapy for Insomnia (CBT-I) has the strongest evidence of any insomnia treatment — stronger than medication — and is available in book, app, and therapist-delivered formats."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-18-q1",
+          "question": "What is the most impactful single sleep habit for brain health?",
+          "options": [
+            "Taking a magnesium supplement before bed",
+            "Sleeping for exactly 8 hours every night",
+            "Maintaining consistent sleep and wake times every day, including weekends",
+            "Using a white noise machine to improve sleep depth"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sleep schedule consistency is the most impactful single sleep habit. Regular timing stabilises the circadian rhythm, maximises deep slow-wave sleep, and improves overall sleep quality."
+        },
+        {
+          "id": "bh-18-q2",
+          "question": "How does alcohol affect sleep quality?",
+          "options": [
+            "It improves overall sleep quality by helping the body relax",
+            "It reduces time to fall asleep and improves deep sleep",
+            "It disrupts REM and deep slow-wave sleep — the stages most important for brain recovery",
+            "It only affects sleep quality in people who drink more than 3 units per night"
+          ],
+          "correctIndex": 2,
+          "explanation": "Alcohol suppresses REM and deep slow-wave sleep — the stages most important for memory consolidation and glymphatic clearance. Even moderate drinking measurably impairs sleep quality and next-day cognitive function."
+        },
+        {
+          "id": "bh-18-q3",
+          "question": "What is CBT-I and why is it significant?",
+          "options": [
+            "A medication for insomnia with fewer side effects than traditional sleep aids",
+            "A brain scan technique used to diagnose sleep disorders",
+            "Cognitive Behavioural Therapy for Insomnia — with stronger evidence than medication for treating insomnia",
+            "A form of mindfulness-based relaxation therapy for bedtime anxiety"
+          ],
+          "correctIndex": 2,
+          "explanation": "CBT-I (Cognitive Behavioural Therapy for Insomnia) has the strongest evidence base of any insomnia treatment — stronger than medication. It addresses the thoughts and behaviours that perpetuate insomnia and is available in multiple formats."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-19",
+      "dayNumber": 19,
+      "title": "Mindfulness and Brain Health",
+      "subtitle": "What the neuroscience says about meditation, stress reduction, and cognitive protection.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-19-1",
+          "front": "Does mindfulness practice physically change the brain?",
+          "back": "Yes. Neuroimaging studies show that consistent mindfulness practice is associated with increased grey matter density in the hippocampus, reduced amygdala volume and reactivity, and thicker cortex in regions associated with attention and self-awareness. These are structural changes — not just subjective experiences."
+        },
+        {
+          "id": "bh-19-2",
+          "front": "How does mindfulness protect the brain?",
+          "back": "Mindfulness reduces chronic stress and cortisol — protecting the hippocampus from cortisol-related damage. It improves sleep quality, reduces inflammation, strengthens attentional control, and enhances emotional regulation. Each of these mechanisms independently protects brain health."
+        },
+        {
+          "id": "bh-19-3",
+          "front": "What is the minimum effective dose of mindfulness?",
+          "back": "Research suggests benefits from as little as 10–20 minutes of daily mindfulness practice. The key is consistency — daily short practice produces more lasting structural changes than occasional longer sessions. Even 8 weeks of regular practice shows measurable brain changes in imaging studies."
+        },
+        {
+          "id": "bh-19-4",
+          "front": "What types of mindfulness practice are most beneficial?",
+          "back": "Focused attention meditation (attending to the breath, returning when distracted) directly trains attentional networks. Open monitoring (awareness of thoughts and sensations without attachment) builds metacognitive skills. Both have good evidence. Body scan and loving-kindness practices reduce stress and promote positive emotion."
+        },
+        {
+          "id": "bh-19-5",
+          "front": "Is mindfulness accessible without formal training?",
+          "back": "Yes. Apps like Headspace and Calm provide structured programmes. Many people find informal mindfulness — full attention during a walk, eating, or a conversation — equally valuable as formal sitting practice. The key is regular practice, not the format."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-19-q1",
+          "question": "What structural brain changes are associated with consistent mindfulness practice?",
+          "options": [
+            "Increased amygdala volume and reduced hippocampal density",
+            "Reduced cortical thickness in the prefrontal cortex",
+            "Increased grey matter density in the hippocampus and reduced amygdala reactivity",
+            "Increased white matter in the corpus callosum"
+          ],
+          "correctIndex": 2,
+          "explanation": "Neuroimaging studies show that consistent mindfulness practice increases grey matter density in the hippocampus and reduces amygdala volume and reactivity — structural changes linked to better memory and reduced stress."
+        },
+        {
+          "id": "bh-19-q2",
+          "question": "What is the minimum daily mindfulness practice shown to produce measurable benefits?",
+          "options": [
+            "At least 45 minutes per day",
+            "One long session of 60 minutes per week",
+            "10–20 minutes per day, practised consistently",
+            "Three hours per week in a class setting"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows benefits from as little as 10–20 minutes of daily practice. Consistency matters more than duration — short daily practice produces more lasting changes than occasional long sessions."
+        },
+        {
+          "id": "bh-19-q3",
+          "question": "How does mindfulness protect the hippocampus?",
+          "options": [
+            "It directly stimulates BDNF production in the hippocampus",
+            "By reducing chronic stress and cortisol, which would otherwise damage the hippocampus",
+            "By increasing blood flow to the hippocampus during meditation",
+            "It prevents amyloid from reaching the hippocampus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chronic cortisol is one of the most damaging forces on the hippocampus. By reducing chronic stress and cortisol levels, mindfulness practice protects hippocampal structure from one of its primary threats."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-20",
+      "dayNumber": 20,
+      "title": "When to See a Doctor — and What to Expect",
+      "subtitle": "Practical guidance on seeking assessment, what tests involve, and understanding results.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-20-1",
+          "front": "When should you seek a medical assessment for memory concerns?",
+          "back": "Seek assessment if you notice: changes in memory that are affecting daily life, repeated difficulty completing familiar tasks, getting lost in familiar places, personality or mood changes that others notice, difficulty following conversations, or if a family member expresses concern. A GP is the right starting point."
+        },
+        {
+          "id": "bh-20-2",
+          "front": "What does a memory assessment involve?",
+          "back": "Initial assessment typically includes cognitive tests (such as the Mini-Mental State Examination or MoCA), a review of medical history and medications, blood tests to rule out treatable causes (thyroid, vitamin B12, anaemia), and sometimes a brain scan. The process is not frightening — it is designed to find the cause and the best course of action."
+        },
+        {
+          "id": "bh-20-3",
+          "front": "What treatable conditions can cause memory problems?",
+          "back": "Many conditions that mimic dementia are treatable: hypothyroidism (underactive thyroid), vitamin B12 deficiency, urinary tract infections (particularly in older adults), depression, sleep apnoea, medication side effects, dehydration, and anaemia. This is why assessment matters — assuming it is dementia is often wrong."
+        },
+        {
+          "id": "bh-20-4",
+          "front": "What is mild cognitive impairment (MCI)?",
+          "back": "MCI describes a state between normal ageing and dementia — noticeable memory or cognitive changes that do not yet significantly impair daily function. Around 15–20% of people with MCI develop dementia within a year, but many remain stable or improve. MCI is a reason for monitoring and lifestyle intervention, not necessarily alarm."
+        },
+        {
+          "id": "bh-20-5",
+          "front": "What is the value of early diagnosis?",
+          "back": "Early diagnosis opens access to support services, allows planning for the future, enables participation in clinical trials, and — if the cause is treatable — allows prompt treatment. It also provides certainty in place of anxiety. Many people find that knowing is better than not knowing."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-20-q1",
+          "question": "Which of the following is a reason to seek medical assessment for memory concerns?",
+          "options": [
+            "Occasionally forgetting where you put your phone",
+            "Taking slightly longer to remember a name than you used to",
+            "Repeated difficulty completing familiar tasks that you have done for years",
+            "Feeling less mentally sharp than usual after a poor night's sleep"
+          ],
+          "correctIndex": 2,
+          "explanation": "Repeated difficulty completing familiar tasks — particularly if it is getting worse or affecting daily life — is a meaningful symptom that warrants assessment. Occasional forgetting of names or objects is normal at any age."
+        },
+        {
+          "id": "bh-20-q2",
+          "question": "What is mild cognitive impairment (MCI)?",
+          "options": [
+            "A medical term for normal age-related forgetting",
+            "An early stage of Alzheimer's disease that always progresses to dementia",
+            "Noticeable cognitive changes that do not yet significantly impair daily function",
+            "A temporary state caused by stress or poor sleep that resolves with rest"
+          ],
+          "correctIndex": 2,
+          "explanation": "MCI describes a state between normal ageing and dementia — noticeable cognitive changes that do not significantly impair daily life. Many people with MCI remain stable or improve; it is not an inevitable step to dementia."
+        },
+        {
+          "id": "bh-20-q3",
+          "question": "Which treatable condition can mimic dementia symptoms in older adults?",
+          "options": [
+            "High blood pressure",
+            "Urinary tract infection",
+            "High cholesterol",
+            "Vitamin D deficiency"
+          ],
+          "correctIndex": 1,
+          "explanation": "Urinary tract infections can cause sudden confusion, disorientation, and memory problems in older adults — mimicking dementia. This is one of many treatable causes of apparent cognitive decline, which is why medical assessment is so important."
+        }
+      ]
+    },
+    {
+      "id": "bh-lesson-21",
+      "dayNumber": 21,
+      "title": "Your Brain Health Plan",
+      "subtitle": "Bringing everything together into a practical, sustainable strategy for lifelong cognitive health.",
+      "moduleId": "bh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "bh-21-1",
+          "front": "What are the five pillars of brain health?",
+          "back": "The evidence consistently points to five core pillars: (1) Regular aerobic exercise, (2) Quality sleep, (3) A brain-protective diet, (4) Continued learning and mental stimulation, and (5) Strong social connections. No single pill, supplement, or biohack comes close to matching the cumulative power of these five."
+        },
+        {
+          "id": "bh-21-2",
+          "front": "What are the most impactful single changes for brain health?",
+          "back": "If you could only make one change: start exercising regularly. If two: add consistent quality sleep. If three: manage cardiovascular risk factors (blood pressure, blood sugar, cholesterol). These three together address the most powerful modifiable influences on long-term cognitive health."
+        },
+        {
+          "id": "bh-21-3",
+          "front": "At what age is it too late to improve brain health?",
+          "back": "It is never too late. Studies show cognitive benefit from exercise, diet, social engagement, and learning even in people in their 80s and 90s. The brain remains neuroplastic throughout life. Starting at 60 or 70 is far better than not starting at all."
+        },
+        {
+          "id": "bh-21-4",
+          "front": "What is the concept of \"brain health banking\"?",
+          "back": "Think of brain health as a long-term savings account. Every good habit — exercise today, a restful night, a nourishing meal, an engaging conversation, a new skill learned — makes a deposit. Every risk factor contributes a withdrawal. The balance at retirement age depends on what you have been depositing across decades."
+        },
+        {
+          "id": "bh-21-5",
+          "front": "What is the most important message from this course?",
+          "back": "Significant cognitive decline is not inevitable. The choices you make — across sleep, exercise, nutrition, social life, mental challenge, and stress management — have a profound influence on the brain you carry into old age. Your brain is not fixed. It is alive, adaptable, and genuinely responsive to how you live."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-21-q1",
+          "question": "What are the five evidence-based pillars of brain health?",
+          "options": [
+            "Supplements, brain training, meditation, cold showers, and intermittent fasting",
+            "Regular exercise, quality sleep, brain-protective diet, continued learning, and strong social connections",
+            "Cardiovascular fitness, low stress, no alcohol, regular testing, and good genes",
+            "Mindfulness, omega-3 supplements, reading, social media, and cognitive challenge"
+          ],
+          "correctIndex": 1,
+          "explanation": "The evidence consistently identifies five core pillars: regular aerobic exercise, quality sleep, a brain-protective diet, continued learning and mental stimulation, and strong social connections. These five together account for the majority of modifiable brain health benefit."
+        },
+        {
+          "id": "bh-21-q2",
+          "question": "Is it too late to improve brain health in your 60s or 70s?",
+          "options": [
+            "Yes — the most impactful period is 40–55, and changes after that have minimal effect",
+            "Only lifestyle changes made before age 60 have evidence of benefit",
+            "No — studies show cognitive benefit from lifestyle changes even in people in their 80s and 90s",
+            "Only if no cognitive symptoms have yet appeared"
+          ],
+          "correctIndex": 2,
+          "explanation": "It is never too late. Studies demonstrate cognitive benefit from exercise, improved sleep, diet, and social engagement even in people in their 80s and 90s. The brain remains neuroplastic throughout life."
+        },
+        {
+          "id": "bh-21-q3",
+          "question": "What is the central message of this course about cognitive decline?",
+          "options": [
+            "Significant cognitive decline is an inevitable part of ageing that cannot be meaningfully altered",
+            "Genetics is the primary determinant of cognitive health — lifestyle plays a minor role",
+            "Significant cognitive decline is not inevitable — lifestyle choices profoundly influence the brain you carry into old age",
+            "The best strategy is to accept cognitive change gracefully and focus on quality of life"
+          ],
+          "correctIndex": 2,
+          "explanation": "The course's central message is that significant cognitive decline is not inevitable. The lifestyle choices made across sleep, exercise, diet, social connection, and mental challenge profoundly shape long-term cognitive health — at any age."
+        }
+      ]
+    }
+  ]
+}

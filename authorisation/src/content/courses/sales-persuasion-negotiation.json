@@ -1,0 +1,1616 @@
+{
+  "id": "sales-persuasion-negotiation",
+  "title": "Sales, Persuasion & Negotiation",
+  "subtitle": "Master the psychology of influence, consultative selling techniques, and negotiation tactics that create win-win outcomes in every high-stakes conversation.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "spn-module-1",
+      "moduleNumber": 1,
+      "title": "The Psychology of Persuasion",
+      "subtitle": "Understand the invisible forces that drive human decisions — from Cialdini's principles to ethical framing — so you can influence with integrity and predict buyer behaviour.",
+      "days": "Lessons 1–7",
+      "skill": "Apply the 6 principles of influence, master framing and anchoring, and build an ethical persuasion toolkit",
+      "lessonIds": [
+        "spn-1-science-of-influence",
+        "spn-2-reciprocity-commitment",
+        "spn-3-social-proof-authority",
+        "spn-4-scarcity-urgency",
+        "spn-5-framing-anchoring",
+        "spn-6-storytelling-persuasion",
+        "spn-7-ethical-persuasion"
+      ]
+    },
+    {
+      "id": "spn-module-2",
+      "moduleNumber": 2,
+      "title": "Selling with Purpose",
+      "subtitle": "Move beyond pushy tactics — learn consultative, challenger, and value-based selling methods that help buyers solve real problems while naturally progressing toward a decision.",
+      "days": "Lessons 8–14",
+      "skill": "Use SPIN, Challenger, and consultative techniques to uncover needs, handle objections, and close with confidence",
+      "lessonIds": [
+        "spn-8-spin-selling",
+        "spn-9-challenger-selling",
+        "spn-10-consultative-discovery",
+        "spn-11-objection-handling",
+        "spn-12-value-based-selling",
+        "spn-13-trust-rapport",
+        "spn-14-closing-confidence"
+      ]
+    },
+    {
+      "id": "spn-module-3",
+      "moduleNumber": 3,
+      "title": "Negotiation Mastery",
+      "subtitle": "Master the art and science of negotiation — from tactical empathy and calibrated questions to handling deadlocks — so you can create win-win outcomes in any high-stakes situation.",
+      "days": "Lessons 15–21",
+      "skill": "Apply tactical empathy, calibrated questions, and structured frameworks to negotiate confidently in any context",
+      "lessonIds": [
+        "spn-15-negotiation-fundamentals",
+        "spn-16-tactical-empathy",
+        "spn-17-never-split-difference",
+        "spn-18-high-stakes",
+        "spn-19-salary-contract",
+        "spn-20-deadlocks-difficult",
+        "spn-21-negotiation-playbook"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "spn-1-science-of-influence",
+      "dayNumber": 1,
+      "moduleId": "spn-module-1",
+      "title": "The Science of Influence",
+      "subtitle": "Why do people say yes? Discover the six universal principles of persuasion that Robert Cialdini identified after decades of research.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "95% of purchase decisions are made subconsciously — and influence science reveals the hidden triggers behind every \"yes.\"",
+          "body": "Every sale, negotiation, and leadership moment requires influence. Yet most people rely on logic alone, ignoring the psychological shortcuts that actually drive decisions. Robert Cialdini spent 35 years studying compliance professionals — salespeople, fundraisers, advertisers — to decode the universal patterns. Today you'll learn the six principles that govern human decision-making."
+        },
+        {
+          "type": "content",
+          "headline": "Cialdini's 6 Principles of Influence",
+          "body": "After decades of research, Cialdini identified six universal shortcuts the brain uses to make decisions: 1) Reciprocity — we repay what we receive. 2) Commitment & Consistency — we align with prior actions. 3) Social Proof — we follow what others do. 4) Authority — we defer to experts. 5) Liking — we say yes to people we like. 6) Scarcity — we value what's disappearing. These work across cultures, industries, and contexts."
+        },
+        {
+          "type": "content",
+          "headline": "Why Mental Shortcuts Exist",
+          "body": "Humans face an estimated 35,000 decisions per day. To cope, the brain uses heuristics — mental shortcuts that trade accuracy for speed. Cialdini's principles are the triggers that activate these shortcuts. They bypass deliberate analysis and drive automatic compliance. This isn't a flaw — it's how evolution kept us alive. But it means that whoever understands these triggers has enormous persuasive power."
+        },
+        {
+          "type": "content",
+          "headline": "Ethical vs Manipulative Influence",
+          "body": "The same principles can be used ethically or manipulatively. The difference: Ethical influence aligns the other person's genuine interests with your request. Both parties benefit. Manipulation exploits someone against their own interest for your gain. The technique doesn't determine the ethics — your intent and transparency do. Throughout this module, we'll build an ethical influence framework that creates genuine value."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Spot the Principle",
+          "body": "Think of one recent situation where someone influenced your decision — an ad that worked, a colleague who persuaded you, or a purchase you made. Ask yourself: Which of the 6 principles were at play? Was it social proof (everyone else was buying)? Scarcity (limited time offer)? Authority (expert recommendation)? Awareness is the first step to mastering influence yourself. Write down what you find."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many universal principles of persuasion did Cialdini identify?",
+          "type": "mcq",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cialdini identified six principles: Reciprocity, Commitment & Consistency, Social Proof, Authority, Liking, and Scarcity."
+        },
+        {
+          "question": "Why do mental shortcuts (heuristics) exist?",
+          "type": "mcq",
+          "options": [
+            "To make us more rational and logical",
+            "To help the brain cope with thousands of daily decisions",
+            "To slow down our thinking process",
+            "To eliminate all cognitive bias"
+          ],
+          "correctIndex": 1,
+          "explanation": "The brain can't consciously process every decision, so it relies on heuristics to handle the volume efficiently — trading accuracy for speed."
+        },
+        {
+          "question": "What separates ethical influence from manipulation?",
+          "type": "mcq",
+          "options": [
+            "The specific technique used",
+            "Whether the audience is aware of the attempt",
+            "Whether it aligns with the other person's genuine interests",
+            "The industry you work in"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ethical influence creates outcomes that benefit both parties; manipulation exploits someone against their own interest."
+        }
+      ]
+    },
+    {
+      "id": "spn-2-reciprocity-commitment",
+      "dayNumber": 2,
+      "moduleId": "spn-module-1",
+      "title": "Reciprocity & Commitment",
+      "subtitle": "Learn why giving first creates obligation, and how small commitments snowball into consistent behaviour patterns.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A waiter who gives mints with the bill increases tips by 23% — that's the power of reciprocity in action.",
+          "body": "The most natural human instinct in social exchange is this: when someone gives us something, we feel compelled to give back. Cialdini found this principle so universal that societies without reciprocity norms simply didn't survive. Today you'll learn to harness reciprocity and commitment — two principles that together create powerful, ethical influence."
+        },
+        {
+          "type": "content",
+          "headline": "The Reciprocity Principle",
+          "body": "When someone gives us something — a favour, gift, or piece of value — we feel psychologically obligated to return it. This is hardwired through evolution: groups that cooperated through mutual exchange thrived. In sales, free trials, valuable content, personalised research before a pitch, and unexpected bonuses all create reciprocity. The key: give genuinely useful things first with no strings attached."
+        },
+        {
+          "type": "content",
+          "headline": "Reciprocity Rules",
+          "body": "Three rules make reciprocity more powerful: 1) Give first and give unexpectedly — uninitiated gifts create stronger obligation. 2) Make it personal and relevant — generic gifts don't trigger the same response. 3) Give something the recipient values, not just what's easy for you to provide. The restaurant mint study: mints + personalised comment (\"for you because you were great\") raised tips 23%. Personalisation is the multiplier."
+        },
+        {
+          "type": "content",
+          "headline": "Commitment & Consistency",
+          "body": "Once people take a small step — sign up, agree to a statement, attend a meeting — they feel driven to act consistently with that initial commitment. The brain craves alignment between actions and identity. This is why free trial users convert better: they've already committed to using the product. The \"foot-in-the-door\" technique works because small yeses create momentum toward bigger ones."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Give-First Strategy",
+          "body": "Before your next sales conversation or pitch, identify one piece of genuine value you can offer upfront — personalised research, a useful framework, a relevant introduction, or a custom insight. Make it specific to the recipient (not a generic PDF). Give it freely and notice how it shifts the dynamic. Then identify one small commitment you can ask for early (\"Would you be open to a 10-minute call?\") to activate consistency."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What triggers the reciprocity instinct most powerfully?",
+          "type": "mcq",
+          "options": [
+            "Asking for something politely",
+            "Giving something valuable, personal, and unexpected first",
+            "Showing authority credentials",
+            "Creating urgency with deadlines"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reciprocity is strongest when the gift is unexpected, personalised, and genuinely valuable — not transactional."
+        },
+        {
+          "question": "What is the \"foot-in-the-door\" technique based on?",
+          "type": "mcq",
+          "options": [
+            "Scarcity principle",
+            "Social proof",
+            "Commitment & Consistency",
+            "Authority principle"
+          ],
+          "correctIndex": 2,
+          "explanation": "Small initial commitments make people more likely to agree to larger requests — they want to stay consistent with their earlier action."
+        },
+        {
+          "question": "Why does reciprocity work so reliably across cultures?",
+          "type": "mcq",
+          "options": [
+            "It's a modern marketing invention",
+            "It only works on unintelligent people",
+            "It's hardwired — societies without reciprocity norms didn't survive",
+            "It requires a legal contract to function"
+          ],
+          "correctIndex": 2,
+          "explanation": "Reciprocity is an evolutionary survival mechanism — mutual exchange enabled cooperation and group survival across all human societies."
+        }
+      ]
+    },
+    {
+      "id": "spn-3-social-proof-authority",
+      "dayNumber": 3,
+      "moduleId": "spn-module-1",
+      "title": "Social Proof & Authority",
+      "subtitle": "Discover why we follow the crowd and defer to experts — and how to ethically leverage these triggers in your sales process.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Hotel towel reuse signs that said \"75% of guests reuse their towels\" increased compliance by 26% — social proof outperformed environmental messaging.",
+          "body": "When we're uncertain, we look at what others are doing. When we lack expertise, we defer to authority figures. These two principles — social proof and authority — are the brain's trusted shortcuts for navigating complexity. Today you'll learn how to build both into your sales process without manipulating anyone."
+        },
+        {
+          "type": "content",
+          "headline": "Social Proof Explained",
+          "body": "When uncertain, people look at what others are doing — especially people similar to them. Testimonials, case studies, user counts, and reviews all reduce perceived risk by showing \"people like me chose this and it worked.\" The key insight: social proof is most powerful when the proof comes from people the prospect identifies with. A CEO testimonial works for other CEOs. A startup founder's case study works for other founders."
+        },
+        {
+          "type": "content",
+          "headline": "Five Types of Social Proof",
+          "body": "1) Expert endorsements — industry authorities vouch for you. 2) Celebrity/influencer use — aspirational figures choose your product. 3) User testimonials — real customers share specific results. 4) Crowd numbers — \"50,000+ teams trust us.\" 5) Peer behaviour — \"companies like yours use this.\" Each type works differently. Match the social proof type to your buyer's identity and uncertainty."
+        },
+        {
+          "type": "content",
+          "headline": "The Authority Principle",
+          "body": "People defer to perceived experts automatically. Titles, credentials, published research, and confident presentation all trigger compliance. Milgram's famous experiments showed people would follow instructions from authority figures even against their own judgment. Building authority ethically: share genuine expertise through content, reference credible sources, let third parties introduce your credentials (more powerful than self-promotion), and show results alongside qualifications."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Proof Stack",
+          "body": "Audit your sales materials right now: Do you have at least 3 forms of social proof visible? List them. If not, identify the gaps: 1) Gather 2-3 specific testimonials with results (not just \"great service!\"). 2) Add a credibility indicator (client logos, user count, media mentions). 3) Establish one authority signal (published content, speaking, certifications). A stack of proof > any single piece."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When does social proof have the strongest effect?",
+          "type": "mcq",
+          "options": [
+            "When people are already certain about their choice",
+            "When people are uncertain and looking for guidance",
+            "When people know exactly what they want",
+            "Only in consumer markets, not B2B"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social proof is most powerful during uncertainty — we look at what others do when we don't know the right path ourselves."
+        },
+        {
+          "question": "What makes social proof most effective?",
+          "type": "mcq",
+          "options": [
+            "Celebrity endorsements always work best",
+            "The proof comes from people the prospect identifies with",
+            "Having the highest user count possible",
+            "Using generic 5-star reviews"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social proof works best when it comes from people similar to the prospect — they need to see themselves in the success story."
+        },
+        {
+          "question": "Why is third-party introduction of credentials more powerful than self-promotion?",
+          "type": "mcq",
+          "options": [
+            "It activates both social proof and authority simultaneously",
+            "It's cheaper to produce",
+            "It's legally required in most industries",
+            "Self-promotion always backfires completely"
+          ],
+          "correctIndex": 0,
+          "explanation": "When someone else vouches for your expertise, it combines authority with social proof — a dual signal that's far more trustworthy."
+        }
+      ]
+    },
+    {
+      "id": "spn-4-scarcity-urgency",
+      "dayNumber": 4,
+      "moduleId": "spn-module-1",
+      "title": "Scarcity & Urgency",
+      "subtitle": "Learn why limited availability triggers action — and how to use ethical scarcity without resorting to fake countdown timers.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When cookies were reduced from 10 to 2 in a jar, people rated them as significantly more desirable — even though the cookies were identical.",
+          "body": "Scarcity is one of the most powerful motivators in human psychology. We don't just want things more when they're scarce — we value them more. Loss aversion means the pain of losing access is roughly twice as powerful as the pleasure of gaining something new. Today you'll learn to create genuine urgency that drives action without destroying trust."
+        },
+        {
+          "type": "content",
+          "headline": "The Scarcity Principle",
+          "body": "Things become more desirable when they're scarce or disappearing. This is rooted in loss aversion — we feel the pain of losing access ~2x more strongly than the pleasure of gaining it. Scarcity amplifies perceived value through two mechanisms: 1) It signals quality (\"if it's rare, it must be good\"). 2) It triggers fear of missing out (\"if I don't act now, I lose the option forever\")."
+        },
+        {
+          "type": "content",
+          "headline": "Four Types of Scarcity",
+          "body": "Quantity-based: \"Only 5 spots left\" — limited supply creates urgency. Time-based: \"Offer ends Friday\" — deadlines force decisions. Access-based: \"Invite only\" / \"waitlist\" — exclusivity creates desire. Information-based: \"Exclusive insight for members\" — restricted knowledge feels more valuable. Each creates urgency through a different psychological mechanism. Choose the type that fits your genuine constraints."
+        },
+        {
+          "type": "content",
+          "headline": "Why Fake Scarcity Backfires",
+          "body": "Fake countdown timers, manufactured \"limited spots,\" and artificial urgency destroy trust the moment a customer sees through them. In the internet age, people can easily verify: Does the timer reset? Is the \"last spot\" always available? Once trust breaks, no amount of persuasion recovers it. The rule: ethical scarcity must be genuine and verifiable. If a customer asked \"is this real?\", you should be able to say yes honestly."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Find Your Genuine Scarcity",
+          "body": "Identify one real constraint in your business: Do you have limited capacity (you can only serve X clients)? A genuine deadline (price increases, cohort starts, seasonal relevance)? Exclusive access (early adopter benefits that disappear later)? Write it down. Now craft one sentence that communicates this scarcity clearly and honestly. Use it in your next proposal or sales page. Genuine constraint + clear communication = ethical urgency."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much more strongly do people feel losses compared to equivalent gains?",
+          "type": "mcq",
+          "options": [
+            "Equally — losses and gains feel the same",
+            "About 1.5x stronger",
+            "About 2x stronger",
+            "About 5x stronger"
+          ],
+          "correctIndex": 2,
+          "explanation": "Loss aversion research consistently shows we feel losses approximately twice as strongly as equivalent gains."
+        },
+        {
+          "question": "What happens when customers detect fake scarcity?",
+          "type": "mcq",
+          "options": [
+            "They buy faster out of conditioned habit",
+            "They typically don't notice or care",
+            "Trust is permanently damaged and unrecoverable",
+            "They appreciate the marketing creativity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Manufactured urgency destroys trust — once exposed, customers lose confidence in everything else you communicate."
+        },
+        {
+          "question": "Which is an example of genuine, ethical scarcity?",
+          "type": "mcq",
+          "options": [
+            "A countdown timer that secretly resets for each new visitor",
+            "A cohort-based program with real capacity limits",
+            "Saying \"limited time\" with no actual deadline behind it",
+            "Showing fake \"low stock\" numbers on unlimited digital products"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cohort-based programs with genuine capacity constraints create real, verifiable scarcity that respects buyer intelligence."
+        }
+      ]
+    },
+    {
+      "id": "spn-5-framing-anchoring",
+      "dayNumber": 5,
+      "moduleId": "spn-module-1",
+      "title": "Framing & Anchoring",
+      "subtitle": "The same information presented differently leads to completely different decisions. Master the art of context-setting.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Surgeons told patients \"90% survive this surgery\" saw higher opt-in than those who said \"10% die\" — identical information, completely different decisions.",
+          "body": "How you present information is as important as the information itself. Framing and anchoring are two cognitive biases that every skilled salesperson, negotiator, and leader uses — often unconsciously. Today you'll learn to use them deliberately and ethically to help buyers see the true value of your offer."
+        },
+        {
+          "type": "content",
+          "headline": "What Is Framing?",
+          "body": "Framing is how you present information. \"95% fat-free\" vs \"5% fat\" is the same fact, but the first feels healthier. \"Save £500/month\" vs \"Stop losing £500/month\" triggers different emotional responses. The frame you choose determines how people interpret reality and make decisions. Every piece of information has multiple valid frames — you choose which context to provide."
+        },
+        {
+          "type": "content",
+          "headline": "Gain Frames vs Loss Frames",
+          "body": "Gain frames (\"You'll save £500/month\") work best when the buyer is risk-averse and wants reassurance about a safe choice. Loss frames (\"You're losing £500/month right now\") drive action when the buyer needs a wake-up call — they create urgency by highlighting what inaction costs. Choose based on your buyer's emotional state: comfortable people need loss frames to move; anxious people need gain frames to feel safe."
+        },
+        {
+          "type": "content",
+          "headline": "The Anchoring Effect",
+          "body": "The first number someone hears becomes the reference point for all subsequent judgments — even if it's arbitrary. If you say \"companies typically invest £50K–£100K in this\" before revealing your £30K price, it feels like a bargain. Strategic anchoring tactics: present your premium option first, show the total cost of the problem before your price, reference industry benchmarks, and use ranges that make your number feel low. The anchor doesn't need to be your price — any relevant large number works."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Reframe Your Core Offer",
+          "body": "Take your most important sales message and write it three ways: 1) As a gain frame (\"You'll achieve X\"). 2) As a loss frame (\"You're currently losing X\"). 3) With a strategic anchor (\"Compared to the £X cost of not solving this, our solution at £Y is...\"). Which feels most powerful for your audience? Then test: use the loss frame with prospects who seem comfortable with the status quo, and the gain frame with those who seem anxious about change."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the anchoring effect?",
+          "type": "mcq",
+          "options": [
+            "People always remember the last number they hear best",
+            "The first number heard becomes the reference point for all subsequent judgments",
+            "People always pick the middle option in any range",
+            "Numbers don't significantly affect purchasing decisions"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first number presented sets a mental anchor that biases all subsequent evaluations — even when the anchor seems irrelevant."
+        },
+        {
+          "question": "When should you use a loss frame instead of a gain frame?",
+          "type": "mcq",
+          "options": [
+            "When the buyer needs reassurance about safety",
+            "When the buyer is already anxious about the decision",
+            "When you need to create a wake-up call for a comfortable buyer",
+            "Loss frames should always be avoided as negative"
+          ],
+          "correctIndex": 2,
+          "explanation": "Loss frames create urgency by highlighting what inaction costs — perfect for buyers who are comfortable with the status quo."
+        },
+        {
+          "question": "Why should you present the premium option first in pricing?",
+          "type": "mcq",
+          "options": [
+            "It makes your brand look more expensive",
+            "It creates an anchor that makes other options feel more affordable by comparison",
+            "Premium customers always buy first",
+            "It's a legal requirement in most industries"
+          ],
+          "correctIndex": 1,
+          "explanation": "The premium option acts as a price anchor — everything presented after it seems more affordable by comparison."
+        }
+      ]
+    },
+    {
+      "id": "spn-6-storytelling-persuasion",
+      "dayNumber": 6,
+      "moduleId": "spn-module-1",
+      "title": "Storytelling for Persuasion",
+      "subtitle": "Facts tell, stories sell. Learn the narrative structures that bypass rational resistance and connect directly to emotion and memory.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Stanford study found stories are up to 22x more memorable than facts alone — your brain literally can't resist a good narrative.",
+          "body": "Every great salesperson, leader, and negotiator is a storyteller. Stories bypass the analytical, objection-raising part of the brain and speak directly to emotion, identity, and memory. When someone hears a story, their brain activates mirror neurons — they literally feel what the protagonist feels. Today you'll master the narrative structures that make your message unforgettable."
+        },
+        {
+          "type": "content",
+          "headline": "Why Stories Beat Data",
+          "body": "Data engages the prefrontal cortex — the analytical, sceptical mind that generates objections. Stories activate the limbic system — emotion, empathy, and memory. When you tell a story, the listener's brain synchronises with yours (neural coupling). They don't just understand your point — they experience it. This is why a single customer story outperforms a slide full of statistics in driving purchase decisions."
+        },
+        {
+          "type": "content",
+          "headline": "The Transformation Narrative",
+          "body": "The most powerful sales story structure: Before (the specific pain, frustration, or stuck state) → Turning Point (the moment of discovery or decision) → After (the transformed state with concrete results). Keys to effectiveness: be specific (names, numbers, timelines), be sensory (what did it feel like?), and be relatable (the protagonist should mirror your prospect's situation). A good transformation story makes the prospect think: \"That could be me.\""
+        },
+        {
+          "type": "content",
+          "headline": "Story + Data = Irresistible",
+          "body": "The ultimate persuasion formula: lead with a story to create emotional engagement, then back it with data to satisfy the rational mind. Example: \"Sarah was stuck at £8K/month for two years. After implementing our framework, she hit £24K/month within 6 months\" (story) + \"83% of our clients see 40%+ revenue growth in the first quarter\" (proof). The story makes them feel; the data makes them justify the decision logically."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Craft Your Signature Story",
+          "body": "Build one customer transformation story using the Before → Turning Point → After structure. Requirements: 1) The \"Before\" must mirror your ideal prospect's current pain. 2) Include at least one specific number or timeline. 3) The \"After\" should paint a vivid picture of the transformed state. 4) Keep it under 60 seconds when spoken aloud. Rehearse it until it flows naturally — this becomes your go-to story in every sales conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do stories outperform pure data in driving purchase decisions?",
+          "type": "mcq",
+          "options": [
+            "Stories are shorter and easier to process",
+            "Stories activate mirror neurons, emotion, and memory simultaneously",
+            "Data is always inaccurate or misleading",
+            "Stories don't require any evidence to be believable"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stories create neurological empathy through mirror neurons — listeners experience the narrative emotionally, which drives action far more than analytical data alone."
+        },
+        {
+          "question": "What is the most effective sales story structure?",
+          "type": "mcq",
+          "options": [
+            "Problem → Solution → Price",
+            "Before → Turning Point → After (Transformation)",
+            "Features → Benefits → Close",
+            "Introduction → Body → Conclusion"
+          ],
+          "correctIndex": 1,
+          "explanation": "The transformation narrative (Before → Turning Point → After) mirrors the buyer's desired journey and makes them think \"that could be me.\""
+        },
+        {
+          "question": "What's the ideal approach for maximum persuasion?",
+          "type": "mcq",
+          "options": [
+            "Data only — emotions are unprofessional in business",
+            "Story only — data always bores people",
+            "Story first to engage emotionally, then data to satisfy rational justification",
+            "Alternate randomly between stories and numbers"
+          ],
+          "correctIndex": 2,
+          "explanation": "Leading with story creates emotional engagement and desire; following with data satisfies the rational mind's need for justification."
+        }
+      ]
+    },
+    {
+      "id": "spn-7-ethical-persuasion",
+      "dayNumber": 7,
+      "moduleId": "spn-module-1",
+      "title": "Your Ethical Persuasion Blueprint",
+      "subtitle": "Combine all six principles into a personal influence framework that is powerful, repeatable, and rooted in genuine value creation.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The world's best salespeople don't feel \"salesy\" — because they've built influence systems rooted in genuine value, not pressure tactics.",
+          "body": "You now understand all six principles of influence, plus framing, anchoring, and storytelling. The question isn't whether these tools work — they absolutely do. The question is: how do you combine them into a repeatable system that feels authentic, creates real value, and builds long-term trust? Today you'll build your personal Ethical Persuasion Blueprint."
+        },
+        {
+          "type": "content",
+          "headline": "The Ethics Test",
+          "body": "Before using any influence technique, apply this test: \"Would I be comfortable if the other person knew exactly what I'm doing and why?\" If yes — proceed with confidence. If no — you've crossed from influence into manipulation. A second test: \"Does this person genuinely benefit from saying yes?\" If you can't honestly answer yes, either reframe the offer or walk away. Your integrity is worth more than any single deal."
+        },
+        {
+          "type": "content",
+          "headline": "The Influence Sequence",
+          "body": "The most powerful ethical persuasion follows this order: 1) Open with a story (emotional engagement). 2) Establish authority (credibility and expertise). 3) Offer value first (reciprocity). 4) Show social proof (safety through similarity). 5) Frame the opportunity using both gain and loss (urgency). 6) Create genuine scarcity (real deadline or constraint). 7) Ask for a small commitment first (consistency). Stack 3–4 principles for maximum impact — you rarely need all seven."
+        },
+        {
+          "type": "content",
+          "headline": "Long-Term vs Short-Term Influence",
+          "body": "Manipulative tactics may work once but destroy the relationship. Ethical influence builds trust that compounds over time. Your reputation is your most valuable business asset — every single interaction either strengthens or erodes it. The best salespeople play infinite games: they prioritise long-term relationships over short-term wins. They'll recommend a competitor if their solution isn't right. Paradoxically, this makes them more successful, not less."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Blueprint",
+          "body": "Write your personal Ethical Persuasion Blueprint for your most important sales conversation: 1) What story will you open with? 2) How will you establish credibility? 3) What will you give first? 4) What social proof is most relevant? 5) What's your genuine scarcity element? 6) What small first commitment will you ask for? Map each principle to a specific, genuine element of your offer. Rehearse the flow until it feels natural and authentic — not scripted."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key ethics test for any influence technique?",
+          "type": "mcq",
+          "options": [
+            "Does it generate maximum revenue?",
+            "Would you be comfortable if the other person knew exactly what you're doing and why?",
+            "Has it been validated by top Fortune 500 companies?",
+            "Does it create immediate urgency to act?"
+          ],
+          "correctIndex": 1,
+          "explanation": "If you'd be comfortable with full transparency about your technique and intent, it's ethical influence — not manipulation."
+        },
+        {
+          "question": "How many influence principles should you stack for maximum impact?",
+          "type": "mcq",
+          "options": [
+            "Just 1 — keep it as simple as possible",
+            "2 maximum — more than that overwhelms",
+            "3–4 combined for powerful, multi-layered persuasion",
+            "Always use all 6+ in every conversation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Stacking 3–4 principles creates powerful, multi-layered persuasion without overwhelming the recipient or feeling forced."
+        },
+        {
+          "question": "Why do the best salespeople sometimes recommend competitors?",
+          "type": "mcq",
+          "options": [
+            "They're required to by industry regulations",
+            "They prioritise long-term trust over short-term wins — this paradoxically increases their success",
+            "They lack confidence in their own product",
+            "They receive referral commissions from competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Playing the infinite game — prioritising relationships over transactions — builds trust that compounds and generates more business long-term."
+        }
+      ]
+    },
+    {
+      "id": "spn-8-spin-selling",
+      "dayNumber": 8,
+      "moduleId": "spn-module-2",
+      "title": "The SPIN Selling Method",
+      "subtitle": "Learn the research-backed questioning framework that uncovered why the best salespeople consistently outperform average ones.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Neil Rackham analysed 35,000 sales calls over 12 years and discovered that the features-benefits pitch actually HURTS large sales — the best sellers ask, not tell.",
+          "body": "Everything you've been taught about selling — open strong, present your product's features, overcome objections, close hard — works for small, transactional sales. It fails for complex, high-value ones. Rackham's landmark research identified the one thing the best salespeople do differently: they ask a very specific sequence of questions that make the buyer sell themselves."
+        },
+        {
+          "type": "content",
+          "headline": "The SPIN Framework",
+          "body": "SPIN stands for four types of questions, asked in sequence: S — Situation questions: establish context (\"How do you currently handle X?\"). P — Problem questions: uncover pain (\"What challenges does that create?\"). I — Implication questions: amplify the cost of the problem (\"What happens to growth if this isn't solved?\"). N — Need-Payoff questions: get the buyer to articulate the value of solving it (\"How much would that be worth to you?\"). The magic is in I and N — they make the buyer feel the urgency themselves."
+        },
+        {
+          "type": "content",
+          "headline": "Why Implication Questions Are Crucial",
+          "body": "Average salespeople stop at Problem questions. They identify the pain and then immediately pitch. Elite salespeople spend time on Implication questions — they help the buyer fully feel the weight of the problem. \"If this process takes 3 extra hours per week, that's 150 hours per year — what does that cost in lost productivity?\" The buyer who has articulated the full cost of a problem is far more motivated to solve it than one who vaguely acknowledged a pain."
+        },
+        {
+          "type": "content",
+          "headline": "Need-Payoff Questions Close the Loop",
+          "body": "Need-Payoff questions flip the conversation: instead of you telling the buyer your solution's value, they tell you. \"If you could reclaim those 150 hours, what would that mean for your team?\" Now they're describing the benefits in their own words — which are infinitely more persuasive than yours. This is why SPIN closers rarely feel like they're \"selling\" — the buyer has convinced themselves."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your SPIN Script",
+          "body": "Choose one product or service you sell. Write 2 questions for each SPIN category: Situation (context-setting), Problem (pain uncovering), Implication (cost amplification), Need-Payoff (value articulation). Test them in your next conversation. Notice which questions generate the most engagement and energy from the buyer — those are your gold questions."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does SPIN stand for?",
+          "type": "mcq",
+          "options": [
+            "Sales, Pitch, Influence, Negotiate",
+            "Situation, Problem, Implication, Need-Payoff",
+            "Strategy, Process, Insight, Network",
+            "Speed, Precision, Interest, Nurture"
+          ],
+          "correctIndex": 1,
+          "explanation": "SPIN is a questioning sequence: Situation, Problem, Implication, and Need-Payoff — developed from Rackham's analysis of 35,000 sales calls."
+        },
+        {
+          "question": "Why are Implication questions the most powerful part of SPIN?",
+          "type": "mcq",
+          "options": [
+            "They let you pitch your solution immediately",
+            "They help the buyer fully feel the weight and cost of their problem",
+            "They're the easiest questions to ask",
+            "They create social proof"
+          ],
+          "correctIndex": 1,
+          "explanation": "Implication questions amplify the cost of inaction — buyers who feel the full weight of the problem are far more motivated to solve it."
+        },
+        {
+          "question": "What is the purpose of Need-Payoff questions?",
+          "type": "mcq",
+          "options": [
+            "To negotiate the final price",
+            "To get the buyer to articulate the value of solving the problem in their own words",
+            "To handle objections from difficult buyers",
+            "To qualify whether the prospect can afford your solution"
+          ],
+          "correctIndex": 1,
+          "explanation": "Need-Payoff questions flip the script — instead of you telling buyers the value, they tell you, which is far more persuasive."
+        }
+      ]
+    },
+    {
+      "id": "spn-9-challenger-selling",
+      "dayNumber": 9,
+      "moduleId": "spn-module-2",
+      "title": "Challenger Selling",
+      "subtitle": "Learn why the highest-performing sales reps teach, tailor, and take control — rather than simply building relationships.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "CEB research on 6,000 salespeople found relationship builders close the fewest deals in complex sales — Challengers close the most.",
+          "body": "The instinct to build rapport, avoid conflict, and accommodate customers feels right. But Dixon and Adamson's research revealed a counterintuitive truth: in complex B2B sales, the salespeople who respectfully push back, teach customers something new, and control the conversation consistently outperform everyone else. Today you'll learn the Challenger approach."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Challenger Moves",
+          "body": "Challengers do three things that others don't: 1) Teach for differentiation — they open conversations by teaching the customer something surprising about their own business. Not product pitches — genuine insights that reframe the problem. 2) Tailor for resonance — they customise their message to what the specific stakeholder cares about. 3) Take control — they aren't afraid to create constructive tension, push back on objections, and drive decisions forward."
+        },
+        {
+          "type": "content",
+          "headline": "Leading with Insight",
+          "body": "The Challenger opening doesn't start with \"tell me about your needs.\" It starts with: \"Most companies in your sector are leaving 20% of revenue on the table because of X — let me show you what we've found.\" This commercial teaching approach establishes authority immediately and makes the customer think \"I hadn't thought of it that way.\" Your insight must: (1) lead to your unique strengths, (2) challenge their current thinking, (3) be backed by real data."
+        },
+        {
+          "type": "content",
+          "headline": "Constructive Tension",
+          "body": "Challengers don't just validate the customer's existing views — they challenge them respectfully. When a customer says \"price is our biggest concern,\" a relationship builder caves. A Challenger says: \"I understand price matters — but our data shows the bigger risk is what happens if you choose the cheaper option and face X. Let's talk about the cost of that decision.\" This isn't aggressive — it's courageous and customer-centric."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Develop Your Teaching Insight",
+          "body": "Create one Challenger-style insight for your sales conversations. It must: 1) Start with something surprising your ideal customer doesn't know about their own business. 2) Be backed by data or a clear example. 3) Connect naturally to what you solve. 4) Challenge a commonly held belief in your industry. Draft the opening 3 sentences. This is your new conversation starter — test it in your next 5 conversations."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do the three Challenger moves consist of?",
+          "type": "mcq",
+          "options": [
+            "Pitch, Demo, Close",
+            "Teach, Tailor, Take Control",
+            "Qualify, Present, Negotiate",
+            "Research, Rapport, Request"
+          ],
+          "correctIndex": 1,
+          "explanation": "Challengers Teach for differentiation, Tailor for resonance, and Take Control of the conversation."
+        },
+        {
+          "question": "Why do relationship builders underperform in complex sales?",
+          "type": "mcq",
+          "options": [
+            "They're too friendly with prospects",
+            "They avoid constructive tension and fail to challenge the customer's thinking",
+            "They focus too much on product features",
+            "They spend too much time on discovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Relationship builders avoid conflict and accommodation — which means they never push customers to see new possibilities or urgency."
+        },
+        {
+          "question": "What makes a Challenger teaching insight effective?",
+          "type": "mcq",
+          "options": [
+            "It leads with your product's best features",
+            "It challenges the customer's existing thinking and connects to your unique strengths",
+            "It focuses on relationship-building and rapport",
+            "It avoids any controversial or challenging statements"
+          ],
+          "correctIndex": 1,
+          "explanation": "A strong teaching insight surprises the customer with something new about their own business and naturally leads to where you uniquely solve it."
+        }
+      ]
+    },
+    {
+      "id": "spn-10-consultative-discovery",
+      "dayNumber": 10,
+      "moduleId": "spn-module-2",
+      "title": "Consultative Discovery",
+      "subtitle": "Master the art of asking powerful questions that uncover hidden needs, build deep understanding, and make buyers feel genuinely heard.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most powerful thing you can do in a sales conversation is ask a question the prospect has never been asked before — it signals you understand them at a deeper level.",
+          "body": "Consultative selling starts from a radical premise: your job isn't to pitch — it's to diagnose. A doctor doesn't walk in and prescribe without a thorough examination. The best salespeople operate the same way: they ask probing questions, listen deeply, and only present solutions once they fully understand the patient's condition. Today you'll build a discovery framework that transforms your conversations."
+        },
+        {
+          "type": "content",
+          "headline": "The Discovery Mindset",
+          "body": "Consultative discovery requires a genuine shift: from \"how do I present my solution?\" to \"what does this person actually need?\" This isn't just a technique — it's a philosophy. You must be willing to walk away if your solution isn't right. Paradoxically, this willingness creates enormous trust. When buyers know you're not just trying to close, they open up and share their real challenges — the ones that actually matter."
+        },
+        {
+          "type": "content",
+          "headline": "Layers of Discovery",
+          "body": "Surface → Beneath → Root cause. Surface level: \"What's the main challenge you're facing?\" Beneath the surface: \"What's caused that? How long has it been happening?\" Root cause: \"What's really at stake if this doesn't get solved?\" Most salespeople stop at the surface. Elite consultative sellers keep asking \"what else?\" and \"tell me more about that\" until they reach the real issue — which is often different from what the prospect first described."
+        },
+        {
+          "type": "content",
+          "headline": "Active Listening Techniques",
+          "body": "Discovery without listening is just an interrogation. Active listening tools: 1) Mirroring — repeat the last 1–3 words as a question (\"You said it's causing tension...?\"). 2) Paraphrasing — \"So what I'm hearing is X — is that right?\" 3) Comfortable silence — after a meaningful answer, pause. The prospect will often fill the silence with their most important insight. 4) Label emotions — \"It sounds like that's been really frustrating.\" Feeling understood builds trust faster than any pitch."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Discovery Playbook",
+          "body": "Build a 5-question discovery sequence for your most common sales conversation. Include: 1) An opening context question. 2) A problem-uncovering question. 3) A \"what else?\" follow-up. 4) A root cause question (\"what's really driving that?\"). 5) A stakes question (\"what happens if this isn't solved?\"). In your next call, focus entirely on asking these and listening — resist the urge to present anything for the first 15 minutes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core philosophy of consultative discovery?",
+          "type": "mcq",
+          "options": [
+            "Present your solution as early as possible",
+            "Diagnose before you prescribe — understand before you present",
+            "Focus primarily on closing the deal quickly",
+            "Avoid asking too many questions to keep prospects comfortable"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consultative selling requires diagnosing before prescribing — just like a doctor examines before treating."
+        },
+        {
+          "question": "What are the three layers of discovery in order?",
+          "type": "mcq",
+          "options": [
+            "Price → Features → Benefits",
+            "Rapport → Pitch → Close",
+            "Surface challenge → Beneath the surface → Root cause",
+            "Qualify → Demo → Negotiate"
+          ],
+          "correctIndex": 2,
+          "explanation": "Effective discovery goes from surface challenge, to the causes beneath, to the root issue — which is often different from what the prospect first described."
+        },
+        {
+          "question": "Why does comfortable silence work as a discovery tool?",
+          "type": "mcq",
+          "options": [
+            "It intimidates buyers into agreeing",
+            "Prospects will often fill silence with their most important and honest insight",
+            "It signals that you're a confident negotiator",
+            "It gives you time to think of your next pitch"
+          ],
+          "correctIndex": 1,
+          "explanation": "After a meaningful answer, a pause creates space for the prospect to share deeper, often more important truths they'd hold back if you kept talking."
+        }
+      ]
+    },
+    {
+      "id": "spn-11-objection-handling",
+      "dayNumber": 11,
+      "moduleId": "spn-module-2",
+      "title": "Objection Handling",
+      "subtitle": "Learn how to treat objections as opportunities — reframing resistance into insight and turning concerns into reasons to move forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Objections aren't rejections — they're requests for more information. The buyer is telling you exactly what they need to say yes.",
+          "body": "Most salespeople dread objections. The best ones welcome them. An objection means the prospect is engaged enough to care — they're not walking away silently. Every objection contains a hidden signal: a fear, a constraint, or a gap in understanding. Master objection handling and you transform \"no\" into \"not yet\" and \"not yet\" into \"yes.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Four Categories of Objections",
+          "body": "1) Price — \"It's too expensive.\" Often means \"I don't see enough value yet.\" 2) Need — \"I don't think we need this.\" Often means \"Help me understand why this matters for us.\" 3) Urgency — \"Not right now.\" Often means \"I haven't felt the cost of waiting.\" 4) Trust — \"I'm not sure you can deliver.\" Often means \"Show me proof and reduce my risk.\" Understanding which category you're dealing with tells you exactly how to respond."
+        },
+        {
+          "type": "content",
+          "headline": "The ACAC Framework",
+          "body": "A proven 4-step process: Acknowledge — \"I completely understand that.\" (Never argue.) Clarify — \"Can I ask what's driving that concern specifically?\" (Uncover the real objection.) Address — Respond to the specific concern with evidence, reframing, or a story. Confirm — \"Does that address your concern, or is there something else you're weighing up?\" This last step is critical — it prevents hidden objections from derailing the close later."
+        },
+        {
+          "type": "content",
+          "headline": "Preventing Objections Before They Arise",
+          "body": "The best objection handling happens before the objection is raised. If you know price is usually a concern, address it proactively: \"I want to address cost upfront — our solution is a premium investment, and here's why the ROI justifies it for clients like you.\" Pre-empting objections shows confidence and prevents them from becoming anchored obstacles. It also builds trust by showing you're not hiding anything."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Objection Playbook",
+          "body": "List the 5 most common objections you hear. For each, identify: 1) Which category it belongs to (Price, Need, Urgency, Trust). 2) What the real concern beneath it likely is. 3) Your ACAC response: how you'll acknowledge it, what clarifying question you'll ask, how you'll address it, and how you'll confirm. Turn this into a one-page reference card you can review before important sales conversations."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a price objection (\"it's too expensive\") usually really mean?",
+          "type": "mcq",
+          "options": [
+            "The prospect genuinely can't afford it",
+            "The prospect doesn't see enough value yet",
+            "The prospect wants to negotiate for sport",
+            "The prospect prefers a competitor"
+          ],
+          "correctIndex": 1,
+          "explanation": "A price objection almost always means \"I don't see enough value yet\" — your job is to build the value, not cut the price."
+        },
+        {
+          "question": "What does the C in the ACAC framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Close",
+            "Create",
+            "Clarify",
+            "Convince"
+          ],
+          "correctIndex": 2,
+          "explanation": "ACAC: Acknowledge, Clarify (ask what's really behind the objection), Address, Confirm."
+        },
+        {
+          "question": "Why should you pre-empt known objections before they arise?",
+          "type": "mcq",
+          "options": [
+            "It fills time in the presentation",
+            "It shows confidence and prevents objections from becoming anchored obstacles",
+            "It's required in enterprise sales cycles",
+            "It makes you seem more sympathetic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pre-empting objections shows you're transparent, prevents them from crystallising as blockers, and builds trust by not hiding anything."
+        }
+      ]
+    },
+    {
+      "id": "spn-12-value-based-selling",
+      "dayNumber": 12,
+      "moduleId": "spn-module-2",
+      "title": "Value-Based Selling",
+      "subtitle": "Shift from selling features to selling outcomes — learn how to quantify the value of your solution so price becomes irrelevant.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When Salesforce first sold CRM software, competitors were charging £5/user. Salesforce charged £65/user — and grew faster. The difference was value framing, not product.",
+          "body": "Feature-selling creates price competition. Value-selling creates price irrelevance. When a buyer understands the specific, quantified outcome they'll achieve — in time saved, revenue gained, or risk avoided — they stop comparing your price to competitors and start comparing it to the cost of not solving the problem. Today you'll learn to make that shift."
+        },
+        {
+          "type": "content",
+          "headline": "Features vs Benefits vs Outcomes",
+          "body": "Three levels of selling: Feature — \"Our software has automated reporting.\" Benefit — \"That saves your team time on manual work.\" Outcome — \"That saves your team 8 hours/week (£1,200/month at your average salary), eliminates reporting errors that cost you £X in corrections, and frees your analysts to focus on strategy that's worth £Y.\" Always translate to the third level. Buyers pay for outcomes, not features."
+        },
+        {
+          "type": "content",
+          "headline": "Quantifying the Value",
+          "body": "The value equation has three components: 1) Cost of the problem (what is inaction currently costing?). 2) Value of the solution (what specific, measurable outcomes will they achieve?). 3) ROI timeframe (how quickly does the investment pay back?). Work with the buyer to co-create these numbers using their data. Numbers they calculate themselves are far more credible and motivating than numbers you present."
+        },
+        {
+          "type": "content",
+          "headline": "The Value Conversation",
+          "body": "Never present value — discover it together. Questions that build value: \"What would a 15% improvement in conversion mean for your annual revenue?\" \"If you could reduce this process from 3 hours to 30 minutes, how many of those hours could you redirect to growth?\" \"What's the cost of a 1% customer churn improvement for you?\" When buyers calculate the numbers themselves, they own them — and they become the most compelling reason to buy."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Value Calculator",
+          "body": "Create a simple value calculation for your offer: 1) Identify the 2–3 primary outcomes your solution delivers. 2) For each, write a question that helps the buyer quantify the value in their own terms. 3) Build a simple \"before vs after\" framework: what does the situation cost now vs what they achieve with your solution. Use this in your next discovery conversation — let the numbers emerge from their responses, not your slides."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between a benefit and an outcome?",
+          "type": "mcq",
+          "options": [
+            "Benefits are free; outcomes cost money",
+            "An outcome is a specific, quantified result in the buyer's business terms",
+            "Benefits are qualitative; outcomes only apply to products",
+            "There is no meaningful difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "An outcome translates benefits into specific, measurable business results — time saved, revenue gained, risk reduced — in the buyer's own terms."
+        },
+        {
+          "question": "Why should buyers calculate value numbers themselves rather than being told?",
+          "type": "mcq",
+          "options": [
+            "It saves you preparation time",
+            "Numbers buyers calculate themselves are more credible and motivating",
+            "It's required for compliance purposes",
+            "Your numbers are usually wrong"
+          ],
+          "correctIndex": 1,
+          "explanation": "When buyers calculate the value themselves using their own data, they own the numbers — making them far more compelling than anything you present."
+        },
+        {
+          "question": "What does value-based selling ultimately eliminate?",
+          "type": "mcq",
+          "options": [
+            "The need for discovery conversations",
+            "The comparison to the cost of not solving the problem",
+            "Price comparisons with competitors",
+            "The need for relationship building"
+          ],
+          "correctIndex": 2,
+          "explanation": "When buyers understand the quantified outcome, they stop comparing your price to competitors and start comparing it to the cost of inaction."
+        }
+      ]
+    },
+    {
+      "id": "spn-13-trust-rapport",
+      "dayNumber": 13,
+      "moduleId": "spn-module-2",
+      "title": "Building Trust & Rapport",
+      "subtitle": "Learn why trust is the foundation of every sale — and the specific behaviours that build it faster and make it last longer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Harvard study found that buyers make their trust assessment within the first 7 seconds — and it's based 93% on non-verbal signals, not what you say.",
+          "body": "All the techniques, frameworks, and scripts in the world can't overcome a trust deficit. Trust is the invisible currency of sales. Without it, every tactic feels manipulative. With it, even imperfect presentations close deals. Today you'll learn the specific behaviours that build trust faster — and the common mistakes that destroy it."
+        },
+        {
+          "type": "content",
+          "headline": "The Trust Equation",
+          "body": "David Maister's Trust Equation: Trust = (Credibility + Reliability + Intimacy) ÷ Self-Orientation. Credibility — you know your stuff. Reliability — you do what you say. Intimacy — you make people feel safe with you. Self-Orientation — the denominator that destroys trust when high. A salesperson who is credible, reliable, and intimate but focused primarily on their commission is NOT trustworthy. Reducing self-orientation is the biggest trust lever."
+        },
+        {
+          "type": "content",
+          "headline": "Genuine Rapport vs Surface Rapport",
+          "body": "Surface rapport is weather-talk and compliments — it's instantly detectable as performative and actually reduces trust. Genuine rapport is built by: 1) Demonstrating you've done your homework about their specific situation. 2) Asking questions that show you understand their world. 3) Sharing relevant vulnerabilities (\"We've had clients in your situation struggle with X too\"). 4) Being honest when your solution isn't the best fit — even when it costs you a deal."
+        },
+        {
+          "type": "content",
+          "headline": "Trust-Building Behaviours",
+          "body": "Specific behaviours that build trust faster: 1) Commit to small things and deliver on them immediately. 2) Be transparent about risks and limitations of your solution. 3) Share relevant case studies proactively — including failures and what you learned. 4) Introduce clients to useful contacts with no agenda. 5) Send recaps after every meeting. 6) Never oversell. These behaviours signal: \"My long-term relationship with you matters more than any single transaction.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Audit Your Trust Equation",
+          "body": "Rate yourself 1–10 on each of the four Trust Equation components: Credibility, Reliability, Intimacy, and Self-Orientation (10 = highly self-focused). Calculate: (C + R + I) ÷ S. Where is your biggest gap? If self-orientation is high, identify one way to shift the focus in your next three conversations: recommend a resource, refer a contact, or honestly tell a prospect when your solution isn't the best fit."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the Trust Equation, what is the biggest destroyer of trust?",
+          "type": "mcq",
+          "options": [
+            "Low credibility",
+            "Poor reliability",
+            "High self-orientation (focusing on your own interests)",
+            "Lack of intimacy"
+          ],
+          "correctIndex": 2,
+          "explanation": "Self-orientation is the denominator in the Trust Equation — even with high credibility and reliability, being perceived as primarily self-interested destroys trust."
+        },
+        {
+          "question": "What distinguishes genuine rapport from surface rapport?",
+          "type": "mcq",
+          "options": [
+            "Surface rapport takes longer to build",
+            "Genuine rapport involves compliments; surface rapport doesn't",
+            "Genuine rapport demonstrates real understanding of the prospect's situation",
+            "There is no practical difference in outcome"
+          ],
+          "correctIndex": 2,
+          "explanation": "Genuine rapport is built through preparation, insightful questions, and honest vulnerability — not small talk, which is instantly detectable as performative."
+        },
+        {
+          "question": "Why does being transparent about your solution's limitations build trust?",
+          "type": "mcq",
+          "options": [
+            "It gives the buyer reasons to negotiate a lower price",
+            "It signals your long-term relationship matters more than any single deal",
+            "It reduces the chance of customer complaints later",
+            "It's required in most regulated industries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transparency about limitations signals low self-orientation — that you prioritise the buyer's genuine interests over closing the deal."
+        }
+      ]
+    },
+    {
+      "id": "spn-14-closing-confidence",
+      "dayNumber": 14,
+      "moduleId": "spn-module-2",
+      "title": "Closing with Confidence",
+      "subtitle": "Learn why the best closers rarely \"close\" — and how to create natural progression toward a decision that both parties feel good about.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The \"Always Be Closing\" mantra from Glengarry Glen Ross describes the worst sales behaviour in modern research — and yet it's still taught everywhere.",
+          "body": "Traditional closing techniques — the assumptive close, the scarcity close, the \"sign here\" pressure play — destroy trust, generate buyer's remorse, and kill repeat business. Modern sales research shows that the best closers don't close at all in the traditional sense. They create a natural, logical progression where saying yes feels obvious. Today you'll build that progression."
+        },
+        {
+          "type": "content",
+          "headline": "The Natural Close",
+          "body": "If you've done discovery well, handled objections honestly, and built clear value, the close is simply the logical next step. The best question isn't \"are you ready to buy?\" — it's \"based on everything we've discussed, does this feel like the right solution for you?\" This invites the buyer to confirm their own conclusion. If they say yes, you've closed. If they surface a concern, you've identified the final objection to handle."
+        },
+        {
+          "type": "content",
+          "headline": "Micro-Commitments Lead to the Close",
+          "body": "Don't try to get one big yes — build a sequence of small yeses. Each micro-commitment moves the buyer forward: \"Does that make sense?\" \"Is this aligned with your goals?\" \"Would solving this be a priority for Q3?\" By the time you reach the final decision, they've already said yes a dozen times. Reversing that momentum feels inconsistent — it psychologically costs them more to say no than to continue saying yes."
+        },
+        {
+          "type": "content",
+          "headline": "Handling the Final Hesitation",
+          "body": "Even well-qualified buyers hesitate at the final moment. This is normal — it's the brain's loss aversion kicking in. When it happens: 1) Acknowledge it: \"It's completely natural to want to be sure.\" 2) Ask: \"What's the one thing that's still making you hesitate?\" 3) Address only that specific concern. 4) Reduce risk: \"Would it help if we started with X so you can see the results before full commitment?\" Lower the activation energy — make yes feel safe."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Close Sequence",
+          "body": "Identify the last 3 deals you lost or stalled at the close stage. For each: 1) What was the final objection or hesitation? 2) Was it a price, need, urgency, or trust issue? 3) What could you have done earlier in the conversation to pre-empt it? 4) How could you have reduced the risk of saying yes? The pattern you find in these three deals tells you exactly what to change in your process."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle of the natural close?",
+          "type": "mcq",
+          "options": [
+            "Using urgency and pressure to force a quick decision",
+            "The close is a logical next step after thorough discovery and value building",
+            "Always presenting three pricing options",
+            "Closing early and often before the buyer thinks too hard"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a well-run consultative process, the close is simply confirming the conclusion the buyer has already reached through the conversation."
+        },
+        {
+          "question": "Why do micro-commitments help with the final close?",
+          "type": "mcq",
+          "options": [
+            "They create a contractual obligation to proceed",
+            "Each small yes builds momentum — reversing it feels psychologically costly",
+            "They distract the buyer from the price",
+            "They reduce the need for discovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "A sequence of small yeses builds consistency — by the final decision, reversing that momentum feels more costly than continuing forward."
+        },
+        {
+          "question": "What should you do when a buyer hesitates at the final decision point?",
+          "type": "mcq",
+          "options": [
+            "Apply more pressure and urgency to overcome the hesitation",
+            "Acknowledge it, ask what's holding them back, address that specific concern, and reduce risk",
+            "Immediately offer a discount to make it easier",
+            "End the call and follow up in a week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Final hesitation is natural loss aversion — acknowledge it, uncover the specific concern, address it, and lower the activation energy with a risk-reducing option."
+        }
+      ]
+    },
+    {
+      "id": "spn-15-negotiation-fundamentals",
+      "dayNumber": 15,
+      "moduleId": "spn-module-3",
+      "title": "Negotiation Fundamentals",
+      "subtitle": "Learn the core concepts every skilled negotiator understands — BATNA, ZOPA, and the difference between positions and interests.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The FBI, Fortune 500 CEOs, and top diplomats all use the same negotiation framework — and it starts with understanding your power before you sit down.",
+          "body": "Negotiation isn't about winning or losing — it's about creating outcomes where both parties feel they gained something valuable. The best negotiators aren't aggressive or manipulative — they're exceptionally well-prepared. Today you'll learn the fundamental concepts that separate skilled negotiators from everyone else."
+        },
+        {
+          "type": "content",
+          "headline": "BATNA: Your Source of Power",
+          "body": "BATNA = Best Alternative To a Negotiated Agreement. It's what you'll do if this deal falls through. Your BATNA determines your true power — not your charisma or tactics. If you have a great alternative, you can walk away confidently. If you don't, you're at the mercy of the other party. Before any negotiation: know your BATNA, improve it if possible, and never reveal how weak it is."
+        },
+        {
+          "type": "content",
+          "headline": "ZOPA: The Zone of Agreement",
+          "body": "ZOPA = Zone of Possible Agreement. It's the overlap between what you'll accept and what they'll accept. If your minimum is £50K and their maximum is £70K, the ZOPA is £50K–£70K. If there's no overlap, no deal is possible without changing the terms. Your job: 1) Estimate their limits through research and discovery. 2) Anchor toward your ideal within the ZOPA. 3) Expand the ZOPA by adding variables (timeline, scope, extras)."
+        },
+        {
+          "type": "content",
+          "headline": "Positions vs Interests",
+          "body": "A position is what someone says they want (\"I want £80K salary\"). An interest is why they want it (financial security, recognition, flexibility). Positional bargaining creates win-lose outcomes. Interest-based negotiation creates win-win ones. When you understand why someone wants something, you can often satisfy their underlying interest in ways that cost you less. Always ask: \"What's really important to you about this?\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Prepare Your Next Negotiation",
+          "body": "Think of an upcoming negotiation (salary, client deal, partnership, even a personal one). Write down: 1) Your BATNA — what happens if you don't reach an agreement? Can you improve it? 2) Your estimate of their BATNA — what are their alternatives? 3) The likely ZOPA — where does overlap exist? 4) Your position vs your interests — what do you really need beyond what you're asking for? This 5-minute prep changes everything."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What determines your true power in a negotiation?",
+          "type": "mcq",
+          "options": [
+            "Your confidence and charisma at the table",
+            "Your BATNA — how strong your alternative is if the deal falls through",
+            "How much research you've done on the other party",
+            "Your opening offer and anchor"
+          ],
+          "correctIndex": 1,
+          "explanation": "BATNA (Best Alternative To a Negotiated Agreement) is the true source of negotiating power — it determines whether you can walk away confidently."
+        },
+        {
+          "question": "What is the ZOPA?",
+          "type": "mcq",
+          "options": [
+            "The maximum price a buyer is willing to pay",
+            "The overlap between what both parties will accept",
+            "The opening offer in any negotiation",
+            "The final agreed-upon price"
+          ],
+          "correctIndex": 1,
+          "explanation": "ZOPA (Zone of Possible Agreement) is the range where both parties' acceptable outcomes overlap — no ZOPA means no deal without changing terms."
+        },
+        {
+          "question": "What is the key difference between positions and interests?",
+          "type": "mcq",
+          "options": [
+            "Positions are private; interests are public",
+            "A position is what someone says they want; an interest is the underlying reason why",
+            "Positions are negotiable; interests are fixed",
+            "Interests only apply in employment negotiations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Positions are stated demands; interests are the underlying motivations — understanding interests enables creative, win-win solutions."
+        }
+      ]
+    },
+    {
+      "id": "spn-16-tactical-empathy",
+      "dayNumber": 16,
+      "moduleId": "spn-module-3",
+      "title": "Tactical Empathy",
+      "subtitle": "Master the art of labelling emotions, mirroring words, and using calibrated questions to make the other party feel deeply understood.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Chris Voss negotiated with kidnappers, bank robbers, and terrorists using one primary tool — tactical empathy. It works even better in business.",
+          "body": "Tactical empathy isn't about agreeing with someone or being \"nice.\" It's about demonstrating that you understand their perspective so deeply that their defensive walls come down. When people feel understood, they become collaborative instead of combative. The FBI discovered this isn't soft — it's the most effective negotiation weapon in existence."
+        },
+        {
+          "type": "content",
+          "headline": "Labelling: Name the Emotion",
+          "body": "Labelling is verbalising the other person's emotions without judgment: \"It seems like you're frustrated with the timeline.\" \"It sounds like this is creating pressure from your board.\" When you label correctly, something remarkable happens: the emotion's intensity decreases. The amygdala calms. The person feels seen and becomes more rational. Label negative emotions to diffuse them. Label positive ones to reinforce them."
+        },
+        {
+          "type": "content",
+          "headline": "Mirroring: The Simplest Power Tool",
+          "body": "Mirroring means repeating the last 1–3 words someone said, using an upward inflection. Them: \"We really need to have this delivered by March.\" You: \"By March?\" That's it. The effect: they elaborate, share more information, and feel heard. Voss calls mirroring \"the closest thing to a Jedi mind trick\" because it's invisible, effortless, and generates enormous informational advantage. The key: then be silent and listen."
+        },
+        {
+          "type": "content",
+          "headline": "The Accusation Audit",
+          "body": "Before a tough negotiation, list every negative thing the other party might think or feel about you: \"You probably think I'm being difficult.\" \"You might feel this isn't fair.\" Then say these out loud at the start. This is the Accusation Audit. It feels counterintuitive, but it defuses negativity before it becomes an obstacle. When you name the elephant, it shrinks. People who were expecting conflict become disarmed when you acknowledge their concerns first."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Practice the Three Tools",
+          "body": "In your next three conversations (business or personal): 1) Use one label: \"It seems like...\" or \"It sounds like...\" and observe how the other person responds. 2) Mirror one phrase: repeat their last 2–3 words as a question and count how much more information they share. 3) Before a difficult conversation, write an accusation audit — list 3 things the other person might be thinking about you and address them upfront. Notice how the dynamic shifts."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens neurologically when you correctly label someone's emotion?",
+          "type": "mcq",
+          "options": [
+            "It makes them more defensive and guarded",
+            "The amygdala calms and the emotion's intensity decreases",
+            "It has no measurable neurological effect",
+            "It triggers an aggressive response"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correctly labelling an emotion reduces amygdala activity — the person feels understood, calms down, and becomes more rational and collaborative."
+        },
+        {
+          "question": "How does mirroring work in negotiation?",
+          "type": "mcq",
+          "options": [
+            "Copy the other person's body language exactly",
+            "Repeat their last 1–3 words with an upward inflection, then be silent",
+            "Agree with everything they say to build rapport",
+            "Mirror their emotions with matching facial expressions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mirroring means repeating their last few words as a question — it encourages them to elaborate and share more information while feeling heard."
+        },
+        {
+          "question": "What is an Accusation Audit?",
+          "type": "mcq",
+          "options": [
+            "A list of the other party's past mistakes",
+            "Proactively naming every negative thing the other party might think about you",
+            "A legal document required before negotiations",
+            "Recording accusations made during a negotiation"
+          ],
+          "correctIndex": 1,
+          "explanation": "An Accusation Audit lists and acknowledges the negatives upfront — this defuses them before they become obstacles in the conversation."
+        }
+      ]
+    },
+    {
+      "id": "spn-17-never-split-difference",
+      "dayNumber": 17,
+      "moduleId": "spn-module-3",
+      "title": "Never Split the Difference",
+      "subtitle": "Learn Chris Voss's most powerful techniques — calibrated questions, the late-night FM DJ voice, and why \"no\" is better than \"yes.\"",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"Never split the difference\" means: don't compromise just because it feels fair. If someone wants your shoes and you want to keep them, wearing one each satisfies nobody.",
+          "body": "Chris Voss, the FBI's lead international kidnapping negotiator, distilled decades of life-or-death negotiations into a set of techniques that work just as powerfully in business and everyday life. His core philosophy: compromise (splitting the difference) usually gives both sides a bad outcome. Instead, use creative problem-solving to find solutions that truly satisfy underlying interests."
+        },
+        {
+          "type": "content",
+          "headline": "Calibrated Questions",
+          "body": "Calibrated questions start with \"How\" or \"What\" and give the other party the illusion of control while you steer the conversation. \"How am I supposed to do that?\" (pushes back on an unreasonable demand). \"What about this doesn't work for you?\" (uncovers real objections). \"How can we solve this together?\" (creates collaboration). Never use \"Why?\" — it sounds accusatory. These questions make the other party work on YOUR problem without realising it."
+        },
+        {
+          "type": "content",
+          "headline": "The Power of \"No\"",
+          "body": "Counter-intuitively, hearing \"no\" is better than hearing \"yes\" in negotiations. People who say \"yes\" are often lying to avoid conflict or buying time. \"No\" means the person feels safe — they have control. After a \"no,\" the real negotiation begins. Voss's trick: ask questions designed to get a \"no\" that moves things forward. \"Is it a ridiculous idea to...?\" \"Would it be terrible if...?\" \"No, it's not terrible\" = progress."
+        },
+        {
+          "type": "content",
+          "headline": "The Late-Night FM DJ Voice",
+          "body": "Your tone of voice determines up to 38% of your influence. Voss recommends three tones: 1) The Late-Night FM DJ voice — calm, slow, downward-inflecting. Used for labelling and difficult moments. It signals control and safety. 2) The positive/playful voice — your default. Light, encouraging, open. 3) The direct/assertive voice — used rarely and only when drawing a clear boundary. Most people need to slow down and lower their pitch to be taken seriously in negotiations."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Calibrated Questions in Action",
+          "body": "Think of a current negotiation or difficult conversation. Write 5 calibrated questions using only \"How\" and \"What\" (never \"Why\"): 1) One that uncovers their real concern. 2) One that pushes back gently on an unreasonable demand. 3) One that explores implementation challenges. 4) One that creates collaboration. 5) One designed to get a \"no\" that moves things forward. Practice your DJ voice while asking them — calm, slow, downward inflection."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are calibrated questions so effective in negotiation?",
+          "type": "mcq",
+          "options": [
+            "They're aggressive enough to intimidate the other party",
+            "They give the other party the illusion of control while you steer the outcome",
+            "They avoid any emotional engagement",
+            "They're legally binding once answered"
+          ],
+          "correctIndex": 1,
+          "explanation": "Calibrated \"How\" and \"What\" questions make the other party work on your problem while feeling in control — it's influence without pressure."
+        },
+        {
+          "question": "Why is hearing \"no\" often better than hearing \"yes\" in negotiations?",
+          "type": "mcq",
+          "options": [
+            "\"No\" means the negotiation is over and you can walk away",
+            "\"No\" means the person feels safe and in control — the real negotiation can begin",
+            "\"Yes\" is always honest and \"no\" is always a lie",
+            "\"No\" creates legal obligations that benefit you"
+          ],
+          "correctIndex": 1,
+          "explanation": "People who say \"yes\" are often lying to avoid conflict. \"No\" means they feel safe enough to be honest — opening space for real progress."
+        },
+        {
+          "question": "What is the Late-Night FM DJ voice used for?",
+          "type": "mcq",
+          "options": [
+            "Entertainment purposes only",
+            "Calm, slow, downward-inflecting tone for labelling and difficult moments — signals control and safety",
+            "Speaking very loudly to dominate the room",
+            "A fast-paced style to keep energy high"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DJ voice — calm, slow, with a downward inflection — signals control and safety during tense moments, reducing the other party's defensiveness."
+        }
+      ]
+    },
+    {
+      "id": "spn-18-high-stakes",
+      "dayNumber": 18,
+      "moduleId": "spn-module-3",
+      "title": "High-Stakes Negotiation",
+      "subtitle": "Learn advanced techniques for complex deals with multiple stakeholders, high emotions, and significant consequences.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "In high-stakes negotiations, the party with more information almost always wins — not the one with more power on paper.",
+          "body": "High-stakes negotiations — major contracts, partnerships, M&A deals, high-value client agreements — are fundamentally different from everyday negotiations. The emotions are higher, the stakes are bigger, multiple stakeholders have competing interests, and one mistake can cost millions. Today you'll learn the advanced techniques that keep you effective when pressure is extreme."
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Information Asymmetry",
+          "body": "In complex negotiations, whoever has more information has the advantage. Your pre-negotiation research should uncover: their BATNA (how desperate are they?), their internal dynamics (who makes the real decision?), their constraints (deadlines, budget cycles, political pressures), and their emotional drivers (what do the key people personally want from this deal?). The best negotiators spend more time researching than talking."
+        },
+        {
+          "type": "content",
+          "headline": "Managing Multiple Stakeholders",
+          "body": "Complex deals involve committees, not individuals. Each stakeholder has different interests: the CFO cares about ROI, the user cares about ease, the champion cares about looking good. Map all stakeholders: Who has veto power? Who influences the decision-maker? Who will implement? What does each person individually gain or lose? Negotiate with each stakeholder's interests in mind — not just the group's stated position."
+        },
+        {
+          "type": "content",
+          "headline": "Emotional Regulation Under Pressure",
+          "body": "High-stakes negotiations trigger your fight-or-flight response. Under stress, the prefrontal cortex (rational thinking) shuts down and the amygdala (emotional reactions) takes over. Counter this: 1) Name your own emotions internally (\"I'm feeling attacked\"). 2) Pause before responding — even 3 seconds helps. 3) Take a tactical break (\"Let me step out for a moment\"). 4) Have a pre-planned walkaway point so you don't make emotional concessions."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: High-Stakes Preparation",
+          "body": "For your next significant negotiation, complete this prep: 1) Map all stakeholders — list each person and their individual interest. 2) Research their BATNA and constraints. 3) Identify your emotional triggers — what could they say that would make you reactive? Plan your response in advance. 4) Define your absolute walkaway point in writing before you sit down. 5) Prepare 3 calibrated questions for each stakeholder. This level of preparation is your unfair advantage."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary advantage in high-stakes negotiations?",
+          "type": "mcq",
+          "options": [
+            "Having more authority or power on paper",
+            "Being the most aggressive negotiator in the room",
+            "Having more information than the other party",
+            "Making the first and highest offer"
+          ],
+          "correctIndex": 2,
+          "explanation": "Information asymmetry is the biggest advantage in complex negotiations — knowing their BATNA, constraints, and internal dynamics gives you leverage."
+        },
+        {
+          "question": "Why is stakeholder mapping critical in complex deals?",
+          "type": "mcq",
+          "options": [
+            "It's only needed for government contracts",
+            "Each stakeholder has different interests — you must address them individually",
+            "It helps you identify who to exclude from conversations",
+            "It's primarily a legal compliance requirement"
+          ],
+          "correctIndex": 1,
+          "explanation": "In committee decisions, each stakeholder has different motivations — mapping them lets you address each person's individual interests for a stronger outcome."
+        },
+        {
+          "question": "What happens to your brain under negotiation stress?",
+          "type": "mcq",
+          "options": [
+            "It becomes more creative and flexible",
+            "The prefrontal cortex shuts down and the amygdala takes over",
+            "Stress improves negotiation performance",
+            "Nothing — experienced negotiators are immune to stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Under stress, rational thinking (prefrontal cortex) decreases and emotional reactions (amygdala) increase — which is why preparation and pausing are essential."
+        }
+      ]
+    },
+    {
+      "id": "spn-19-salary-contract",
+      "dayNumber": 19,
+      "moduleId": "spn-module-3",
+      "title": "Salary & Contract Negotiation",
+      "subtitle": "Apply everything you've learned to the negotiation that affects your life most — your compensation and contract terms.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Failing to negotiate your starting salary can cost you over £500,000 in cumulative lifetime earnings — yet 57% of people accept the first offer.",
+          "body": "Salary and contract negotiations are where everything you've learned in this module becomes deeply personal. The stakes feel enormous because they directly affect your life. Most people avoid these conversations out of fear — fear of seeming greedy, losing the offer, or damaging the relationship. Today you'll build a framework that makes these negotiations feel natural, professional, and powerful."
+        },
+        {
+          "type": "content",
+          "headline": "Research: Your Foundation",
+          "body": "Before any salary or contract negotiation, know: 1) The market rate for your role, level, and location (use Glassdoor, Levels.fyi, industry reports). 2) The company's typical range (ask recruiters, research online). 3) Your unique value — what specific results have you delivered that justify premium compensation? 4) The full package beyond salary: equity, bonus, flexibility, learning budget, title. Numbers based on research feel professional; numbers without it feel arbitrary."
+        },
+        {
+          "type": "content",
+          "headline": "Timing and Framing",
+          "body": "When to negotiate: after they've decided they want you (post-offer), not before. Once they've invested time choosing you, their BATNA (starting the search over) is expensive. Frame it collaboratively, not adversarially: \"I'm really excited about this opportunity. I want to make sure the package reflects the value I'll bring so we can start on the strongest possible footing.\" This signals: I'm committed AND I expect fair compensation."
+        },
+        {
+          "type": "content",
+          "headline": "Beyond Base Salary",
+          "body": "When salary hits a ceiling, expand the conversation: signing bonus (one-time cost, easier to approve), equity/options (aligned incentives), performance bonus (they pay only when you deliver), flexible working (costs them nothing), professional development budget, title (free but carries future value), review timeline (\"I'll accept X if we agree to revisit in 6 months based on performance\"). The more variables, the more creative solutions. Never negotiate on a single axis."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Negotiation Brief",
+          "body": "Whether you're negotiating now or preparing for the future, create your personal brief: 1) Research market rate for your current/target role. 2) List 3 specific results you've delivered that justify premium pay. 3) Identify 5 negotiable variables beyond salary. 4) Write your opening frame: how you'll express enthusiasm + value + fairness. 5) Define your BATNA — what will you do if they can't meet your needs? 6) Set your minimum acceptable package in writing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When is the best time to negotiate salary?",
+          "type": "mcq",
+          "options": [
+            "During the first interview to set expectations early",
+            "After they've decided they want you — once a formal offer is extended",
+            "When you hand in your resignation",
+            "Salary should never be negotiated directly"
+          ],
+          "correctIndex": 1,
+          "explanation": "After the offer, they've invested heavily in choosing you — their BATNA (restarting the search) is expensive, giving you maximum leverage."
+        },
+        {
+          "question": "Why should you negotiate on multiple variables, not just salary?",
+          "type": "mcq",
+          "options": [
+            "It confuses the employer into giving you more",
+            "More variables enable creative solutions that satisfy both parties' interests",
+            "It's unprofessional to discuss only money",
+            "Other variables are always worth more than salary"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multiple variables expand the negotiation space — what's expensive for them on one axis might be easy on another, enabling win-win solutions."
+        },
+        {
+          "question": "How much can failing to negotiate your starting salary cost over a career?",
+          "type": "mcq",
+          "options": [
+            "About £10,000",
+            "About £50,000",
+            "Over £500,000 in cumulative lifetime earnings",
+            "It has no long-term impact"
+          ],
+          "correctIndex": 2,
+          "explanation": "Because raises and future salaries are typically based on your current compensation, a lower starting point compounds into a significant lifetime cost."
+        }
+      ]
+    },
+    {
+      "id": "spn-20-deadlocks-difficult",
+      "dayNumber": 20,
+      "moduleId": "spn-module-3",
+      "title": "Handling Deadlocks & Difficult People",
+      "subtitle": "Learn how to break impasses, manage aggressive negotiators, and find movement when everything feels stuck.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most common reason negotiations fail isn't disagreement on terms — it's that one or both parties feel disrespected, unheard, or backed into a corner.",
+          "body": "Not every negotiation flows smoothly. Deadlocks happen. Difficult personalities appear. Aggressive tactics get deployed against you. These moments test everything you've learned. The instinct is to fight back or give in — but both destroy value. Today you'll learn the tools to break impasses and handle the toughest negotiators while maintaining your composure and your principles."
+        },
+        {
+          "type": "content",
+          "headline": "Why Deadlocks Happen",
+          "body": "Deadlocks usually stem from one of four causes: 1) Ego — someone would rather lose the deal than lose face. 2) Positional thinking — both sides are stuck on positions instead of interests. 3) Missing information — a hidden constraint hasn't been surfaced. 4) Emotional escalation — anger or frustration has hijacked rational thinking. Diagnose the cause before choosing your strategy. The fix for an ego deadlock is completely different from a missing-information deadlock."
+        },
+        {
+          "type": "content",
+          "headline": "Breaking the Impasse",
+          "body": "Techniques for getting unstuck: 1) Change the variable — if price is stuck, shift to timeline, scope, or terms. 2) Take a break — emotions need time to cool. \"Let's pause and reconvene tomorrow.\" 3) Ask \"What would you do in my position?\" — this forces perspective-taking. 4) Introduce a neutral third party. 5) Go back to interests — \"Let's set aside positions. What outcome do we both need from this?\" 6) Use an \"if...then\" proposal — \"If I could do X, would you be willing to Y?\""
+        },
+        {
+          "type": "content",
+          "headline": "Handling Aggressive Negotiators",
+          "body": "When faced with aggression, threats, or manipulative tactics: 1) Don't mirror their energy — stay calm (DJ voice). 2) Name the tactic: \"It feels like there's an ultimatum here. Can we step back?\" Naming it neutralises it. 3) Separate the person from the problem — be soft on the person, hard on the issue. 4) Never make concessions under pressure — say \"I need time to think about that.\" 5) Know your walkaway and be genuinely willing to use it. Your power comes from the ability to leave."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Deadlock Toolkit",
+          "body": "Think of a past negotiation that stalled or turned difficult. Using today's framework: 1) Diagnose the root cause — was it ego, positional thinking, missing info, or emotional escalation? 2) Which of the 6 impasse-breaking techniques could have worked? 3) If the other party was aggressive, how could you have named the tactic? Write a script for how you would handle it differently today. Keep this as your \"difficult negotiation playbook\" for when things get tough."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most common root cause of negotiation deadlocks?",
+          "type": "mcq",
+          "options": [
+            "Genuine disagreement on fair price",
+            "One or both parties feeling disrespected, unheard, or backed into a corner",
+            "Having incompatible products or services",
+            "Legal complications that prevent agreement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most deadlocks stem from emotional or ego issues — feeling disrespected or unheard — rather than genuine irreconcilable differences on terms."
+        },
+        {
+          "question": "What is the best response to aggressive negotiation tactics?",
+          "type": "mcq",
+          "options": [
+            "Match their aggression to show strength",
+            "Immediately concede to end the conflict",
+            "Stay calm, name the tactic, and never make concessions under pressure",
+            "Walk away without explanation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Staying calm, naming the tactic (which neutralises it), and refusing to concede under pressure maintains your power and integrity."
+        },
+        {
+          "question": "Why does the \"if...then\" proposal work for breaking deadlocks?",
+          "type": "mcq",
+          "options": [
+            "It creates a legal binding agreement",
+            "It links concessions together — showing willingness to move if they reciprocate",
+            "It forces the other party to accept your terms",
+            "It's only effective in salary negotiations"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"If...then\" proposals make movement conditional — you're showing willingness to be flexible while requiring reciprocity, creating momentum toward agreement."
+        }
+      ]
+    },
+    {
+      "id": "spn-21-negotiation-playbook",
+      "dayNumber": 21,
+      "moduleId": "spn-module-3",
+      "title": "Your Negotiation Playbook",
+      "subtitle": "Bring everything together into a personal negotiation framework you can use for the rest of your life — from everyday asks to career-defining deals.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You negotiate every single day — with partners, colleagues, clients, and yourself. The skills you've built this week apply to every one of those moments.",
+          "body": "Congratulations — you've completed 21 days of intensive sales, persuasion, and negotiation training. You now have a toolkit that most people never develop: influence principles, consultative selling, and advanced negotiation techniques. Today you'll consolidate everything into a personal playbook that you can reference before any important conversation for the rest of your career."
+        },
+        {
+          "type": "content",
+          "headline": "Your Pre-Negotiation Checklist",
+          "body": "1) Research — know their BATNA, constraints, stakeholders, and interests. 2) Define your walk-away — write it down before you sit down. 3) Prepare your anchor — know what opening position serves you. 4) Write an accusation audit — list what they might be thinking. 5) Prepare 5 calibrated questions (How/What). 6) Identify 3+ variables to trade. 7) Choose your emotional regulation strategy. 8) Set your \"pause\" trigger — when you'll take a break. Do this for every significant conversation."
+        },
+        {
+          "type": "content",
+          "headline": "The Negotiation Flow",
+          "body": "The full sequence in action: 1) Open with accusation audit (defuse tension). 2) Use tactical empathy — label and mirror (build trust). 3) Ask calibrated questions (discover interests). 4) Let them talk — use silence (gather information). 5) Anchor strategically (set the frame). 6) Trade variables, never concede unilaterally (expand the pie). 7) Use \"if...then\" proposals (create momentum). 8) Close naturally — summarise agreement and confirm next steps. Mastery comes from repetition, not perfection."
+        },
+        {
+          "type": "content",
+          "headline": "The Continuous Improvement Loop",
+          "body": "After every negotiation, debrief yourself: 1) What worked well? 2) What surprised me? 3) Where did I lose composure or make an unplanned concession? 4) What information did I miss that I should've had? 5) What would I do differently? The best negotiators aren't born — they're built through thousands of iterations of this loop. Every conversation is practice. Every interaction is a lab. Mastery is a journey, not a destination."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your Personal Playbook",
+          "body": "Create a one-page \"Negotiation Cheat Sheet\" you can review before any important conversation: 1) Your 3 strongest calibrated questions (ones that work every time). 2) Your go-to labels (\"It seems like...\", \"It sounds like...\"). 3) Your walkaway phrase (how you exit gracefully). 4) Your emotional trigger warning (what makes you reactive). 5) Your post-negotiation debrief questions. Laminate it. Put it on your phone. Review it 5 minutes before every important conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you always do BEFORE sitting down to negotiate?",
+          "type": "mcq",
+          "options": [
+            "Rehearse your pitch until it's perfect",
+            "Define your walkaway point in writing so you don't make emotional concessions",
+            "Decide on a fixed price and never deviate",
+            "Memorise a script for every possible scenario"
+          ],
+          "correctIndex": 1,
+          "explanation": "Writing your walkaway point before the negotiation prevents emotional decision-making under pressure — it's your anchor to rational behaviour."
+        },
+        {
+          "question": "What is the key to long-term negotiation mastery?",
+          "type": "mcq",
+          "options": [
+            "Reading every negotiation book available",
+            "Natural talent and confidence",
+            "A continuous improvement loop — debriefing every negotiation for lessons",
+            "Winning every single negotiation you enter"
+          ],
+          "correctIndex": 2,
+          "explanation": "The best negotiators are built through repetition and reflection — debriefing every interaction to extract lessons creates compounding improvement."
+        },
+        {
+          "question": "In the Negotiation Flow, what should you open with?",
+          "type": "mcq",
+          "options": [
+            "Your best offer to show confidence",
+            "An accusation audit to defuse tension before it builds",
+            "A list of your credentials and experience",
+            "Small talk to build rapport"
+          ],
+          "correctIndex": 1,
+          "explanation": "Opening with an accusation audit defuses potential negativity upfront — naming the elephants in the room before they become obstacles."
+        }
+      ]
+    }
+  ]
+}

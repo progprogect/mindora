@@ -1,0 +1,1592 @@
+{
+  "id": "managing-stress-resilience",
+  "title": "Managing Stress & Building Resilience",
+  "subtitle": "Understand stress, prevent burnout, and build lasting psychological resilience.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "sr-mod-1",
+      "title": "Understanding Stress",
+      "subtitle": "Learn what stress actually is, how your body and brain respond to it, and why chronic stress is different from the short-term pressure that can help you perform.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding the stress response and the difference between acute and chronic stress",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sr-mod-2",
+      "title": "When Stress Becomes a Problem",
+      "subtitle": "Explore burnout, emotional exhaustion, the signs of chronic stress, and how prolonged pressure affects your body, sleep, thinking, and relationships.",
+      "days": "Lessons 8–14",
+      "skill": "Recognising when stress has become harmful and how it affects your health over time",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "sr-mod-3",
+      "title": "Building Resilience",
+      "subtitle": "Discover practical, evidence-based tools to manage stress, regulate emotions, recover effectively, and build lasting psychological resilience.",
+      "days": "Lessons 15–21",
+      "skill": "Using proven techniques to reduce stress, build resilience, and recover more effectively",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sr-lesson-1",
+      "dayNumber": 1,
+      "title": "What Is Stress — Really?",
+      "subtitle": "A clear explanation of what stress is, where it comes from, and why it exists.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-1-1",
+          "front": "What is stress?",
+          "back": "Stress is your body's response to anything it perceives as a demand or threat. It triggers a cascade of physical and mental changes designed to help you cope, react, or survive. Stress is not just a feeling — it is a biological process."
+        },
+        {
+          "id": "sr-1-2",
+          "front": "Why does stress exist?",
+          "back": "Stress evolved as a survival mechanism. When faced with danger — like a predator — your body needed to react fast. Stress sharpens your focus, floods your muscles with energy, and prepares you to fight or flee. It is useful in short bursts."
+        },
+        {
+          "id": "sr-1-3",
+          "front": "What triggers stress today?",
+          "back": "Modern stressors are rarely physical threats. They are deadlines, arguments, financial pressure, health worries, and information overload. But your brain responds to these in much the same way it responded to predators — with the same ancient alarm system."
+        },
+        {
+          "id": "sr-1-4",
+          "front": "Is all stress bad?",
+          "back": "No. Short-term stress can improve performance, sharpen concentration, and help you rise to challenges. The problem is not stress itself — it is stress that becomes prolonged, unrelenting, and never fully switches off."
+        },
+        {
+          "id": "sr-1-5",
+          "front": "What is the key distinction to understand?",
+          "back": "Acute stress (short-term, specific) can be helpful. Chronic stress (ongoing, without recovery) is harmful. The difference between the two is not just the size of the stressor — it is whether your body gets enough time to recover afterwards."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-1-q1",
+          "question": "What is the primary purpose of the stress response?",
+          "options": [
+            "To make you feel anxious so you work harder",
+            "To prepare the body to cope with perceived threats or demands",
+            "To release dopamine and reward effort",
+            "To slow digestion and conserve energy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stress is a biological survival response. It prepares the body to react to perceived threats — not to punish you or make you anxious for no reason."
+        },
+        {
+          "id": "sr-1-q2",
+          "question": "Which type of stress is most harmful to long-term health?",
+          "options": [
+            "Acute stress before an important presentation",
+            "Stress that motivates you to prepare for a challenge",
+            "Chronic stress that is ongoing and never fully resolves",
+            "Brief stress during physical exercise"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chronic, ongoing stress — without adequate recovery — is the type that causes lasting harm to the body and mind. Short-term stress is often manageable and can even be useful."
+        },
+        {
+          "id": "sr-1-q3",
+          "question": "Why do modern stressors like work deadlines trigger the same response as physical threats?",
+          "options": [
+            "The brain has evolved a new modern stress circuit",
+            "The ancient stress system cannot distinguish between physical and psychological threats",
+            "Modern people are less resilient than previous generations",
+            "Only people with anxiety disorders respond this way"
+          ],
+          "correctIndex": 1,
+          "explanation": "The brain's stress alarm system evolved long before emails and mortgages. It responds to perceived threats — and it treats a difficult meeting much like it would treat a predator."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-2",
+      "dayNumber": 2,
+      "title": "Your Body Under Stress",
+      "subtitle": "What actually happens inside your body when stress kicks in.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-2-1",
+          "front": "What is the fight-or-flight response?",
+          "back": "It is the body's emergency mode. When you perceive a threat, the brain triggers a rapid sequence of physical changes — heart rate rises, breathing quickens, muscles tighten, and senses sharpen. Your body is preparing to act."
+        },
+        {
+          "id": "sr-2-2",
+          "front": "What hormones drive the stress response?",
+          "back": "Two key hormones are adrenaline (epinephrine) and cortisol. Adrenaline kicks in immediately — your heart pounds and energy surges. Cortisol follows, sustaining the response and mobilising fuel from stored energy. Both are useful short-term."
+        },
+        {
+          "id": "sr-2-3",
+          "front": "What happens to digestion and immune function during stress?",
+          "back": "They are temporarily suppressed. The body redirects resources to the muscles and brain. That is fine for a short sprint — but if stress is chronic, digestion, immunity, and repair all suffer over time."
+        },
+        {
+          "id": "sr-2-4",
+          "front": "What is the HPA axis?",
+          "back": "It stands for the hypothalamic-pituitary-adrenal axis — a chain of signals between the brain and adrenal glands that controls cortisol release. Think of it as your body's stress-management headquarters."
+        },
+        {
+          "id": "sr-2-5",
+          "front": "What does recovery look like physically?",
+          "back": "When the threat passes, the parasympathetic nervous system takes over — sometimes called \"rest and digest.\" Heart rate slows, breathing deepens, digestion resumes, and the body starts repairing. This recovery phase is where health is restored."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-2-q1",
+          "question": "Which two hormones are primarily responsible for the acute stress response?",
+          "options": [
+            "Insulin and glucagon",
+            "Serotonin and dopamine",
+            "Adrenaline and cortisol",
+            "Oestrogen and testosterone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Adrenaline triggers the immediate alarm response, while cortisol sustains it and mobilises energy. Both serve important roles in the short-term stress response."
+        },
+        {
+          "id": "sr-2-q2",
+          "question": "Why does digestion slow down during stress?",
+          "options": [
+            "Cortisol directly damages the gut lining",
+            "The body redirects resources away from non-essential functions during an emergency",
+            "Stress causes the stomach to produce too much acid",
+            "The liver absorbs nutrients more efficiently under pressure"
+          ],
+          "correctIndex": 1,
+          "explanation": "During the fight-or-flight response, the body prioritises muscles and the brain. Digestion is paused because it is not needed for immediate survival."
+        },
+        {
+          "id": "sr-2-q3",
+          "question": "What is the parasympathetic nervous system responsible for?",
+          "options": [
+            "Triggering the stress response when danger is detected",
+            "Releasing adrenaline into the bloodstream",
+            "Restoring rest, digestion, and recovery after stress",
+            "Suppressing immune function during illness"
+          ],
+          "correctIndex": 2,
+          "explanation": "The parasympathetic nervous system is sometimes called \"rest and digest.\" It activates recovery — slowing the heart, resuming digestion, and allowing the body to repair itself."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-3",
+      "dayNumber": 3,
+      "title": "Acute Stress vs Chronic Stress",
+      "subtitle": "Why the length of stress matters more than its intensity.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-3-1",
+          "front": "What is acute stress?",
+          "back": "Acute stress is short-term and specific. A near-miss accident, a difficult conversation, a challenging presentation. It peaks quickly and resolves when the situation passes. The body is designed to handle it well."
+        },
+        {
+          "id": "sr-3-2",
+          "front": "What is chronic stress?",
+          "back": "Chronic stress is prolonged, ongoing, and often without clear resolution. Financial pressure, relationship conflict, caring responsibilities, or an overwhelming workload that never really ends. The body stays in a low-level alert state that it was not built to sustain."
+        },
+        {
+          "id": "sr-3-3",
+          "front": "What is the zebra analogy?",
+          "back": "Robert Sapolsky uses zebras to illustrate this. A zebra is chased by a lion — acute stress — and either escapes or does not. Either way, the stress ends. Humans uniquely ruminate, worry about the future, and replay the past. We create chronic stress mentally."
+        },
+        {
+          "id": "sr-3-4",
+          "front": "Why does chronic stress cause physical harm?",
+          "back": "The body is designed for occasional surges of stress followed by recovery. Chronic stress keeps cortisol elevated, disrupts sleep, suppresses immune function, raises blood pressure, and accelerates cellular ageing. The systems designed to protect you start causing damage."
+        },
+        {
+          "id": "sr-3-5",
+          "front": "What is the critical difference between the two?",
+          "back": "It is recovery time. Acute stress followed by full recovery is fine. Chronic stress with insufficient recovery is harmful. Managing stress is not about eliminating pressure — it is about ensuring the body gets enough time to switch off and restore."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-3-q1",
+          "question": "What makes chronic stress more harmful than acute stress?",
+          "options": [
+            "It triggers a stronger hormonal response each time",
+            "It prevents the body from ever fully recovering",
+            "It is always caused by more serious problems",
+            "It only affects people who are naturally anxious"
+          ],
+          "correctIndex": 1,
+          "explanation": "The danger of chronic stress is not the intensity of any single event — it is that the body never gets enough recovery time. This prolonged activation causes cumulative damage."
+        },
+        {
+          "id": "sr-3-q2",
+          "question": "According to Robert Sapolsky, what makes human stress unique compared to animals like zebras?",
+          "options": [
+            "Humans experience more physical threats in modern life",
+            "Humans have a stronger cortisol response",
+            "Humans mentally generate ongoing stress through worry and rumination",
+            "Human stress hormones take longer to clear the bloodstream"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sapolsky's key insight is that humans can trigger the stress response through thought alone — replaying past events or worrying about future ones. This mental stress-generation is largely unique to us."
+        },
+        {
+          "id": "sr-3-q3",
+          "question": "What is the most important factor in managing the impact of stress on health?",
+          "options": [
+            "Avoiding all stressful situations",
+            "Ensuring the body has enough recovery time after stress",
+            "Keeping cortisol levels consistently low",
+            "Exercising intensely to burn off stress hormones"
+          ],
+          "correctIndex": 1,
+          "explanation": "Managing stress is primarily about recovery. Stress itself is not always harmful — but sustained stress without adequate recovery leads to the cumulative damage associated with chronic stress."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-4",
+      "dayNumber": 4,
+      "title": "Stress and Your Brain",
+      "subtitle": "How stress changes the way you think, feel, and make decisions.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-4-1",
+          "front": "What part of the brain drives the stress alarm?",
+          "back": "The amygdala — a small, almond-shaped structure deep in the brain — acts as an early-warning system. It scans for threats and can trigger a stress response before the thinking brain has even processed what is happening."
+        },
+        {
+          "id": "sr-4-2",
+          "front": "What is the prefrontal cortex and how does stress affect it?",
+          "back": "The prefrontal cortex is your thinking, planning, and decision-making centre. Under stress, activity here is reduced — the brain prioritises fast reactions over careful reasoning. This is why stressed people make impulsive decisions or struggle to think clearly."
+        },
+        {
+          "id": "sr-4-3",
+          "front": "What is the \"stress tunnel\"?",
+          "back": "When under stress, attention narrows and the mind fixates on the perceived threat. This can be useful in a real emergency but unhelpful in everyday situations — making it hard to see the bigger picture, consider alternatives, or think creatively."
+        },
+        {
+          "id": "sr-4-4",
+          "front": "How does stress affect memory?",
+          "back": "Acute stress can sharpen memory for emotionally significant events — that's why you vividly remember where you were during important moments. But chronic stress impairs the hippocampus (the memory centre) and can reduce the ability to form and retrieve everyday memories."
+        },
+        {
+          "id": "sr-4-5",
+          "front": "What does this mean practically?",
+          "back": "When you notice yourself becoming reactive, forgetful, or unable to think straight — stress may be a factor. The brain under chronic stress is not functioning at its best. This is not weakness; it is biology. And it is reversible with the right tools."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-4-q1",
+          "question": "Which brain region acts as the primary alarm system for detecting threats?",
+          "options": [
+            "The prefrontal cortex",
+            "The hippocampus",
+            "The cerebellum",
+            "The amygdala"
+          ],
+          "correctIndex": 3,
+          "explanation": "The amygdala is the brain's threat-detection system. It can trigger the stress response very rapidly — often before conscious thought has even caught up."
+        },
+        {
+          "id": "sr-4-q2",
+          "question": "Why might someone make poor decisions when under significant stress?",
+          "options": [
+            "The hippocampus blocks access to stored memories",
+            "Stress reduces activity in the prefrontal cortex — the thinking and decision-making centre",
+            "Adrenaline slows down neural processing",
+            "The brain conserves glucose during stress, reducing cognitive output"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stress reduces blood flow and activity in the prefrontal cortex — the region responsible for rational thought and decision-making. The brain prioritises fast instinctive reactions over careful reasoning."
+        },
+        {
+          "id": "sr-4-q3",
+          "question": "How does chronic stress affect the hippocampus?",
+          "options": [
+            "It enlarges it, improving emotional processing",
+            "It has no direct effect on the hippocampus",
+            "It can impair it, reducing memory formation and retrieval",
+            "It temporarily shuts it down during acute stress"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chronic stress — particularly elevated cortisol — can damage the hippocampus over time, impairing the ability to form new memories and retrieve existing ones."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-5",
+      "dayNumber": 5,
+      "title": "Stress and Your Body — Long-Term Effects",
+      "subtitle": "What sustained stress does to physical health over months and years.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-5-1",
+          "front": "How does chronic stress affect the heart?",
+          "back": "Prolonged elevated cortisol and adrenaline raise blood pressure and heart rate. Over time, this increases wear on blood vessels and raises the risk of cardiovascular disease. Chronic stress is now recognised as a significant independent risk factor for heart health."
+        },
+        {
+          "id": "sr-5-2",
+          "front": "What does stress do to the immune system?",
+          "back": "Short-term stress briefly boosts immune function. But chronic stress suppresses it. People under ongoing stress tend to get sick more often, take longer to recover, and have higher levels of systemic inflammation — which is linked to numerous chronic diseases."
+        },
+        {
+          "id": "sr-5-3",
+          "front": "How does chronic stress affect weight?",
+          "back": "Cortisol promotes fat storage — particularly around the abdomen. It also increases cravings for high-calorie foods and disrupts hunger hormones. Stress eating is partly a biological drive, not just a lack of willpower."
+        },
+        {
+          "id": "sr-5-4",
+          "front": "Does stress affect ageing at a cellular level?",
+          "back": "Yes. Research by Elizabeth Blackburn and Elissa Epel showed that chronic stress is associated with shorter telomeres — the protective caps on chromosomes. Shorter telomeres are linked to accelerated cellular ageing and higher disease risk."
+        },
+        {
+          "id": "sr-5-5",
+          "front": "What is the most important thing to understand about stress and health?",
+          "back": "Stress is not inevitable in the way it harms health. The stress response itself is not dangerous — it is chronic, unrelieved stress without recovery that causes damage. Managing stress is one of the most significant things you can do for your long-term health."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-5-q1",
+          "question": "What effect does chronic stress have on immune function?",
+          "options": [
+            "It permanently activates immune defences",
+            "It has no measurable effect on immune function",
+            "It suppresses immune function, increasing vulnerability to illness",
+            "It causes the immune system to attack healthy tissue"
+          ],
+          "correctIndex": 2,
+          "explanation": "While brief stress can temporarily boost immunity, chronic stress suppresses it. People under prolonged stress are more vulnerable to infections and recover more slowly."
+        },
+        {
+          "id": "sr-5-q2",
+          "question": "Why does chronic stress contribute to abdominal fat gain?",
+          "options": [
+            "Stress burns fewer calories during the day",
+            "Cortisol promotes fat storage and increases cravings for high-calorie foods",
+            "Stress forces the liver to store more glycogen",
+            "Elevated adrenaline slows fat metabolism"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cortisol promotes fat storage — especially visceral fat around the abdomen. It also drives cravings for energy-dense foods, making stress a significant factor in weight management."
+        },
+        {
+          "id": "sr-5-q3",
+          "question": "What did Blackburn and Epel's research reveal about stress and cellular ageing?",
+          "options": [
+            "Stress increases the production of new telomeres",
+            "Stress has no effect on cellular ageing processes",
+            "Chronic stress is associated with shorter telomeres, linked to accelerated ageing",
+            "Stress hormones protect chromosomes from damage"
+          ],
+          "correctIndex": 2,
+          "explanation": "Blackburn and Epel's Nobel Prize-winning research showed that chronic stress is associated with shorter telomeres — the protective caps on chromosomes — which is a marker of accelerated cellular ageing."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-6",
+      "dayNumber": 6,
+      "title": "Recognising Your Personal Stress Signals",
+      "subtitle": "How to identify when stress is building before it becomes a crisis.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-6-1",
+          "front": "Why do people often miss their own stress signals?",
+          "back": "Chronic stress can become normalised. When pressure builds gradually, people adapt to the feeling of being stressed and stop recognising it as unusual. They often only notice it retrospectively — when they finally take a holiday, or when something breaks down."
+        },
+        {
+          "id": "sr-6-2",
+          "front": "What are common physical signals of stress?",
+          "back": "Headaches, tight jaw or shoulders, disturbed sleep, fatigue, digestive issues, frequent illness, a racing heart, or feeling physically tense much of the time. The body often signals stress before the mind acknowledges it."
+        },
+        {
+          "id": "sr-6-3",
+          "front": "What are emotional and behavioural signals?",
+          "back": "Irritability, low mood, feeling overwhelmed, difficulty concentrating, withdrawing from others, reduced enjoyment of things you normally like, increased use of alcohol or caffeine, and procrastination. These are all common stress indicators."
+        },
+        {
+          "id": "sr-6-4",
+          "front": "What is stress awareness and why does it matter?",
+          "back": "Stress awareness means being able to notice when you are stressed — physically, emotionally, and behaviorally — rather than running on autopilot. You cannot manage what you cannot see. Building awareness is the first step in any stress management strategy."
+        },
+        {
+          "id": "sr-6-5",
+          "front": "What is a simple daily check-in?",
+          "back": "Once a day, pause and honestly ask: how am I feeling physically? How is my mood? Am I more reactive or withdrawn than usual? Am I sleeping and eating well? This brief self-scan takes less than two minutes and dramatically improves early stress detection."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-6-q1",
+          "question": "Why do people often fail to recognise their own chronic stress?",
+          "options": [
+            "Stress hormones reduce self-awareness",
+            "Chronic stress becomes normalised over time, so it stops feeling unusual",
+            "Physical stress symptoms only appear during acute stress episodes",
+            "The prefrontal cortex filters stress signals before they reach consciousness"
+          ],
+          "correctIndex": 1,
+          "explanation": "When stress builds gradually, people adapt to it — the feeling becomes the new normal. This normalisation is one reason chronic stress often goes unaddressed until something breaks down."
+        },
+        {
+          "id": "sr-6-q2",
+          "question": "Which of the following is a behavioural stress signal?",
+          "options": [
+            "Elevated cortisol in blood tests",
+            "Shortened telomeres",
+            "Increased use of alcohol or caffeine",
+            "Raised blood pressure readings"
+          ],
+          "correctIndex": 2,
+          "explanation": "Behavioural signals of stress include changes in habits and actions — such as increased alcohol or caffeine use, social withdrawal, or procrastination. These are observable changes in how someone acts."
+        },
+        {
+          "id": "sr-6-q3",
+          "question": "What is the first step in managing stress effectively?",
+          "options": [
+            "Starting a meditation practice",
+            "Reducing caffeine intake",
+            "Building awareness of when you are stressed",
+            "Eliminating the source of stress immediately"
+          ],
+          "correctIndex": 2,
+          "explanation": "You cannot manage what you cannot see. Awareness — noticing physical, emotional, and behavioural stress signals — is the essential foundation of all stress management."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-7",
+      "dayNumber": 7,
+      "title": "The Upside of Stress",
+      "subtitle": "How changing your relationship with stress can change its effect on you.",
+      "moduleId": "sr-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-7-1",
+          "front": "Can stress actually be beneficial?",
+          "back": "Yes — in certain forms. Moderate, time-limited stress can sharpen performance, build resilience, stimulate growth, and create meaning. What matters is not just the presence of stress, but how you respond to and interpret it."
+        },
+        {
+          "id": "sr-7-2",
+          "front": "What is eustress?",
+          "back": "Eustress is positive stress — the energising pressure of a new challenge, an exciting deadline, or a meaningful goal. It motivates action and often leads to growth. It is the opposite of distress, which is overwhelming and depleting."
+        },
+        {
+          "id": "sr-7-3",
+          "front": "What did Kelly McGonigal's research reveal?",
+          "back": "McGonigal found that people who believed stress was harmful had worse health outcomes — but people with high stress who did not believe it was harmful had better health outcomes even than people with low stress. Your mindset about stress can shape its impact."
+        },
+        {
+          "id": "sr-7-4",
+          "front": "What is a stress-as-challenge mindset?",
+          "back": "It means seeing stress as a signal that something important is happening and that you have the resources to cope. Instead of \"this is going to harm me,\" it becomes \"my body is preparing me to handle this.\" This reframe changes the physiological response."
+        },
+        {
+          "id": "sr-7-5",
+          "front": "What is post-traumatic growth?",
+          "back": "After difficult or stressful events, some people experience genuine psychological growth — greater perspective, deeper relationships, increased resilience, and a clearer sense of values. Stress, when recovered from, can be a powerful driver of personal development."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-7-q1",
+          "question": "What is eustress?",
+          "options": [
+            "Stress caused by physical exercise",
+            "Beneficial, energising stress linked to meaningful challenges",
+            "A medical condition caused by too much cortisol",
+            "Stress that only affects the body, not the mind"
+          ],
+          "correctIndex": 1,
+          "explanation": "Eustress is positive stress — the motivating, energising kind that comes from challenges you care about and feel capable of meeting. It promotes growth and performance."
+        },
+        {
+          "id": "sr-7-q2",
+          "question": "What did Kelly McGonigal's research suggest about stress beliefs?",
+          "options": [
+            "People with high stress always have worse health outcomes",
+            "Believing stress is harmful increases its physical impact",
+            "Stress mindset has no measurable effect on health outcomes",
+            "Avoiding stress entirely is the best strategy for long-term health"
+          ],
+          "correctIndex": 1,
+          "explanation": "McGonigal's research showed that believing stress is harmful — not stress itself — predicted worse health outcomes. People who saw stress as a natural and manageable response fared significantly better."
+        },
+        {
+          "id": "sr-7-q3",
+          "question": "What is post-traumatic growth?",
+          "options": [
+            "A return to normal functioning after a stressful event",
+            "Positive psychological development that emerges after overcoming adversity",
+            "A medical treatment for PTSD symptoms",
+            "The period of recovery following acute stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Post-traumatic growth refers to meaningful personal development — greater resilience, clearer values, deeper relationships — that some people experience as a result of overcoming difficult challenges."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-8",
+      "dayNumber": 8,
+      "title": "Understanding Burnout",
+      "subtitle": "What burnout is, how it develops, and why it is more than just tiredness.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-8-1",
+          "front": "What is burnout?",
+          "back": "Burnout is a state of chronic exhaustion caused by prolonged, unmanaged stress — particularly in work or caregiving contexts. It involves three overlapping components: emotional exhaustion, depersonalisation (feeling detached or cynical), and a reduced sense of personal accomplishment."
+        },
+        {
+          "id": "sr-8-2",
+          "front": "How is burnout different from ordinary tiredness?",
+          "back": "Ordinary tiredness resolves with rest. Burnout does not. People in burnout often feel exhausted even after sleeping. Rest stops being restorative. The system has become so depleted that normal recovery mechanisms stop working effectively."
+        },
+        {
+          "id": "sr-8-3",
+          "front": "What causes burnout?",
+          "back": "Burnout typically develops when high demands are combined with low control, insufficient reward or recognition, poor social support, or a mismatch between personal values and the demands of the role. It is not simply a result of working long hours."
+        },
+        {
+          "id": "sr-8-4",
+          "front": "What are the early warning signs?",
+          "back": "Persistent fatigue, increasing cynicism, emotional flatness, reduced motivation, difficulty feeling engaged, more frequent errors, physical symptoms like headaches and illness, and a growing sense that nothing you do makes a difference."
+        },
+        {
+          "id": "sr-8-5",
+          "front": "What does Emily and Amelia Nagoski say about burnout?",
+          "back": "In their book *Burnout*, they argue that burnout happens when the stress cycle is never completed. The body needs to fully discharge stress through physical release, connection, or creative expression. Without completing the cycle, the body stays stuck in stress mode."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-8-q1",
+          "question": "What are the three core components of burnout?",
+          "options": [
+            "Anger, anxiety, and physical pain",
+            "Low motivation, insomnia, and weight gain",
+            "Emotional exhaustion, depersonalisation, and reduced personal accomplishment",
+            "Fatigue, depression, and social isolation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Burnout is defined by three overlapping dimensions: emotional exhaustion, depersonalisation (cynicism and detachment), and reduced sense of personal accomplishment."
+        },
+        {
+          "id": "sr-8-q2",
+          "question": "What distinguishes burnout from ordinary tiredness?",
+          "options": [
+            "Burnout only affects people in demanding professional roles",
+            "Burnout does not resolve with rest — the recovery system itself stops working",
+            "Burnout is caused by physical exhaustion rather than mental pressure",
+            "Burnout requires a diagnosis from a medical professional"
+          ],
+          "correctIndex": 1,
+          "explanation": "The key distinction is that ordinary tiredness resolves with rest and sleep. Burnout does not — rest stops being restorative as the entire system becomes depleted."
+        },
+        {
+          "id": "sr-8-q3",
+          "question": "According to Nagoski and Nagoski, what is the core problem driving burnout?",
+          "options": [
+            "Working more than 50 hours per week",
+            "A lack of purpose in the workplace",
+            "The stress cycle never being completed, leaving the body stuck in stress mode",
+            "Having too many competing responsibilities"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nagoski and Nagoski argue that burnout results from the stress response never being fully discharged. The body enters stress but never properly exits it — and over time, this depletes the entire system."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-9",
+      "dayNumber": 9,
+      "title": "Stress, Sleep, and the Recovery Loop",
+      "subtitle": "Why stress disrupts sleep, and why poor sleep makes stress worse.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-9-1",
+          "front": "How does stress disrupt sleep?",
+          "back": "Cortisol and adrenaline both interfere with sleep. They keep the nervous system in an alert state. Stress activates the amygdala at night — your brain stays vigilant for threats, making it harder to fall asleep, stay asleep, or reach deep, restorative sleep stages."
+        },
+        {
+          "id": "sr-9-2",
+          "front": "How does poor sleep make stress worse?",
+          "back": "Sleep deprivation amplifies the amygdala's threat response — making you more emotionally reactive, more prone to perceiving events as threatening, and less able to regulate emotions. A tired brain over-responds to stress. This creates a reinforcing loop."
+        },
+        {
+          "id": "sr-9-3",
+          "front": "What is the stress-sleep cycle?",
+          "back": "Stress disrupts sleep → poor sleep increases stress reactivity → higher stress makes sleep harder to come by. Without intervention, this loop can become self-sustaining. Breaking the cycle requires addressing both sleep and stress simultaneously."
+        },
+        {
+          "id": "sr-9-4",
+          "front": "What happens to cortisol during healthy sleep?",
+          "back": "Cortisol follows a natural rhythm. It should be lowest around midnight and rise gradually before waking — helping you feel alert in the morning. Chronic stress disrupts this pattern, often keeping cortisol elevated at night and blunted in the morning — the opposite of healthy."
+        },
+        {
+          "id": "sr-9-5",
+          "front": "What practical steps help break the cycle?",
+          "back": "A consistent wind-down routine, limiting screens and news before bed, physical activity earlier in the day, and addressing the source of stress where possible. Even one or two of these can begin to shift the cycle in a positive direction."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-9-q1",
+          "question": "How does stress directly interfere with sleep quality?",
+          "options": [
+            "It reduces the body's production of melatonin permanently",
+            "It keeps the nervous system in an alert state, making deep sleep harder to reach",
+            "It forces the body to stay in REM sleep too long",
+            "It causes the stomach to be overactive, disrupting rest"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stress hormones keep the nervous system on alert. The amygdala stays active, scanning for threats — making it hard to fall into deep, restorative sleep stages."
+        },
+        {
+          "id": "sr-9-q2",
+          "question": "How does sleep deprivation affect the stress response?",
+          "options": [
+            "It reduces cortisol production, blunting the stress response",
+            "It has minimal effect on emotional reactivity",
+            "It amplifies the amygdala's response, making events feel more threatening",
+            "It causes the parasympathetic nervous system to become dominant"
+          ],
+          "correctIndex": 2,
+          "explanation": "Poor sleep amplifies the threat response. A sleep-deprived brain over-reacts to stress and struggles to regulate emotional responses — making stressful situations feel even harder to manage."
+        },
+        {
+          "id": "sr-9-q3",
+          "question": "What is the expected pattern of cortisol during healthy sleep?",
+          "options": [
+            "High throughout the night, dropping sharply at dawn",
+            "Lowest around midnight, rising gradually towards morning",
+            "Steady throughout the night with a brief spike in deep sleep",
+            "Absent during sleep, activating only after waking"
+          ],
+          "correctIndex": 1,
+          "explanation": "In healthy sleep, cortisol follows a diurnal rhythm — lowest at night and gradually rising before waking to help you feel alert. Chronic stress disrupts this pattern."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-10",
+      "dayNumber": 10,
+      "title": "Stress and Relationships",
+      "subtitle": "How chronic stress strains connection — and why social support is a buffer.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-10-1",
+          "front": "How does stress affect relationships?",
+          "back": "Stress increases irritability, reduces patience, and narrows emotional bandwidth. Under stress, people become more reactive, less empathetic, and more likely to withdraw or lash out. Close relationships — which require emotional presence — often bear the brunt of this."
+        },
+        {
+          "id": "sr-10-2",
+          "front": "What is the tend-and-befriend response?",
+          "back": "Alongside fight-or-flight, humans — particularly women — have a stress response called tend-and-befriend. Under threat, there is a drive to protect loved ones and seek social support. Connection is not just emotionally comforting — it is also a biological stress-regulation strategy."
+        },
+        {
+          "id": "sr-10-3",
+          "front": "How does social support reduce the impact of stress?",
+          "back": "Strong social connections reduce cortisol levels, lower blood pressure, and improve emotional regulation. Talking through problems with someone trusted activates brain regions associated with safety and reward, actively damping the stress response."
+        },
+        {
+          "id": "sr-10-4",
+          "front": "What is the danger of withdrawing when stressed?",
+          "back": "Many people isolate when stressed — it feels easier than engaging. But isolation removes one of the most powerful biological stress-buffers available. It also allows stress to build unchecked, without the perspective or support that others can provide."
+        },
+        {
+          "id": "sr-10-5",
+          "front": "What is a practical approach to stress and relationships?",
+          "back": "Name what is happening: \"I'm under pressure at the moment — I might not be at my best.\" This brief acknowledgement builds empathy, invites support, and prevents others from personalising your stress as being about them."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-10-q1",
+          "question": "What is the \"tend-and-befriend\" response?",
+          "options": [
+            "A mindfulness technique for managing social anxiety",
+            "A stress response that drives people to protect and connect with others",
+            "A cognitive bias where people assume others are as stressed as they are",
+            "A breathing technique for reducing acute stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tend-and-befriend is a stress response — documented particularly in women — that involves seeking connection and protecting loved ones under pressure. It is a biological as well as emotional response."
+        },
+        {
+          "id": "sr-10-q2",
+          "question": "Why is social isolation particularly harmful under chronic stress?",
+          "options": [
+            "It increases cortisol production through loneliness",
+            "It removes one of the most powerful biological stress-reduction mechanisms",
+            "It causes the amygdala to become hypersensitive",
+            "Social isolation is only harmful for people who are naturally extroverted"
+          ],
+          "correctIndex": 1,
+          "explanation": "Connection with others is a biological stress buffer — it reduces cortisol and activates safety-related brain regions. Withdrawing when stressed removes this buffer and allows stress to compound."
+        },
+        {
+          "id": "sr-10-q3",
+          "question": "What is the simplest way to protect relationships when under significant stress?",
+          "options": [
+            "Avoid all social contact until the stress resolves",
+            "Increase exercise to reduce irritability",
+            "Acknowledge to others that you are under pressure, so they do not personalise your reactions",
+            "Limit conversations to practical topics to avoid conflict"
+          ],
+          "correctIndex": 2,
+          "explanation": "Simply naming that you are under pressure builds empathy and invites support. It prevents people close to you from interpreting your stress responses as personal — and makes connection more likely, not less."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-11",
+      "dayNumber": 11,
+      "title": "Stress, Food, and the Body",
+      "subtitle": "Why stress changes what you eat and what that does to your health.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-11-1",
+          "front": "Why does stress change eating behaviour?",
+          "back": "Cortisol drives cravings for high-calorie, high-fat, high-sugar foods — these were survival foods during genuine threats. The brain under stress prioritises quick, dense energy sources. This is biology, not lack of willpower."
+        },
+        {
+          "id": "sr-11-2",
+          "front": "What is emotional eating?",
+          "back": "Emotional eating is using food to manage feelings — particularly stress, anxiety, boredom, or loneliness — rather than to satisfy physical hunger. It often involves processed, comfort foods and is frequently followed by guilt. It is extremely common and largely driven by stress hormones."
+        },
+        {
+          "id": "sr-11-3",
+          "front": "What does chronic stress do to the gut?",
+          "back": "The gut and brain are closely connected via the vagus nerve. Chronic stress disrupts gut motility, reduces digestive efficiency, alters the gut microbiome, and can trigger or worsen conditions like irritable bowel syndrome. Stress is a genuine physical stressor on the digestive system."
+        },
+        {
+          "id": "sr-11-4",
+          "front": "How does stress affect blood sugar?",
+          "back": "Cortisol raises blood sugar levels — flooding the body with quick energy. In someone with existing metabolic vulnerability, chronic stress can significantly worsen blood sugar regulation. Even without diabetes, elevated cortisol can drive erratic energy and hunger."
+        },
+        {
+          "id": "sr-11-5",
+          "front": "What is the practical approach to stress eating?",
+          "back": "Rather than fighting cravings through willpower, address the underlying stress state. Movement, rest, connection, and breathing can shift the cortisol response and reduce cravings. Eating well under stress starts with managing stress — not just watching what you eat."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-11-q1",
+          "question": "Why does stress cause cravings for high-calorie, high-fat foods?",
+          "options": [
+            "Stress reduces taste sensitivity, making bland foods unappealing",
+            "Cortisol drives the brain to seek dense energy sources as a survival response",
+            "Stress lowers blood glucose, triggering a hunger reflex",
+            "Stress disrupts the stomach's ability to process low-calorie foods"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cortisol evolved to help the body prepare for physical threats. Part of that preparation involves craving calorie-dense foods — energy needed for fighting or fleeing. In modern life, these cravings are triggered without the corresponding physical exertion."
+        },
+        {
+          "id": "sr-11-q2",
+          "question": "What does chronic stress do to the gut?",
+          "options": [
+            "It increases beneficial bacteria in the microbiome",
+            "It has minimal effect on gut function",
+            "It disrupts motility, reduces digestive efficiency, and can alter the gut microbiome",
+            "It speeds up digestion to provide energy faster"
+          ],
+          "correctIndex": 2,
+          "explanation": "The brain-gut connection means chronic stress directly affects gut function. It can reduce digestive efficiency, disrupt the microbiome, and contribute to or worsen conditions like IBS."
+        },
+        {
+          "id": "sr-11-q3",
+          "question": "What is the most effective approach to managing stress-driven eating?",
+          "options": [
+            "Strict calorie counting to override cortisol-driven cravings",
+            "Addressing the underlying stress state through movement, rest, or connection",
+            "Eating only at scheduled mealtimes regardless of hunger signals",
+            "Replacing comfort foods with lower-calorie alternatives"
+          ],
+          "correctIndex": 1,
+          "explanation": "Willpower alone is poorly matched against cortisol-driven cravings. Addressing the stress state itself — through movement, rest, breathing, or connection — reduces the underlying driver of stress eating."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-12",
+      "dayNumber": 12,
+      "title": "Anxiety, Worry, and Rumination",
+      "subtitle": "Understanding the mental habits that keep stress alive long after the stressor has passed.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-12-1",
+          "front": "What is the difference between stress and anxiety?",
+          "back": "Stress is typically a response to an identifiable external demand. Anxiety is more internal — a feeling of apprehension or worry that can persist even when there is no immediate threat. The two often co-exist and reinforce each other."
+        },
+        {
+          "id": "sr-12-2",
+          "front": "What is rumination?",
+          "back": "Rumination is replaying past events, mistakes, or problems repeatedly — churning the same thoughts without reaching resolution. It keeps the stress response activated even when the original stressor is long gone. It is one of the most significant drivers of chronic stress."
+        },
+        {
+          "id": "sr-12-3",
+          "front": "What is worry?",
+          "back": "Worry is repetitive thinking about future threats — \"what if\" thinking. Unlike problem-solving (which is productive), worry loops without reaching actionable conclusions. It creates a sustained stress response about things that have not happened and may never happen."
+        },
+        {
+          "id": "sr-12-4",
+          "front": "What is cognitive fusion?",
+          "back": "Cognitive fusion — from Acceptance and Commitment Therapy — describes treating thoughts as literal truth. \"I'm going to fail\" becomes an anticipated fact rather than just a thought. Recognising thoughts as thoughts (not facts) is a key skill in reducing their stress impact."
+        },
+        {
+          "id": "sr-12-5",
+          "front": "What is a simple tool to interrupt rumination?",
+          "back": "Notice the thought, name it (\"I'm doing that ruminating thing again\"), and gently redirect attention. Physical activity, engagement with the present moment, or asking \"Is there an action I can take right now?\" can all break the loop. The goal is not to stop thinking — it is to step out of the loop."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-12-q1",
+          "question": "What is rumination?",
+          "options": [
+            "A healthy form of reflection that leads to personal insight",
+            "Repetitively replaying past events or problems without reaching resolution",
+            "A mindfulness technique for processing difficult emotions",
+            "The process of consciously analysing stressful experiences"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rumination is unproductive repetitive thinking — replaying the same mental material without resolution. It keeps the stress response activated long after the original stressor has passed."
+        },
+        {
+          "id": "sr-12-q2",
+          "question": "What is cognitive fusion?",
+          "options": [
+            "A memory technique for storing emotional experiences",
+            "Treating thoughts as literal facts rather than mental events",
+            "The process by which stress and anxiety combine into burnout",
+            "A type of meditation used in CBT"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cognitive fusion means treating your thoughts as reality — believing \"I will fail\" as a certain prediction rather than a passing thought. ACT therapy aims to create \"defusion\" — recognising thoughts as just thoughts."
+        },
+        {
+          "id": "sr-12-q3",
+          "question": "What is the key difference between worry and productive problem-solving?",
+          "options": [
+            "Worry involves larger problems than problem-solving",
+            "Problem-solving leads to actionable conclusions; worry loops without resolution",
+            "Worry only concerns personal matters, not work challenges",
+            "Problem-solving reduces cortisol while worry increases adrenaline"
+          ],
+          "correctIndex": 1,
+          "explanation": "Problem-solving moves toward actionable steps and resolution. Worry repeats \"what if\" questions in a loop without reaching conclusions — sustaining the stress response without producing useful outcomes."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-13",
+      "dayNumber": 13,
+      "title": "Stress at Work",
+      "subtitle": "Understanding the unique dynamics of work-related stress and what can be done about it.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-13-1",
+          "front": "What are the main drivers of work-related stress?",
+          "back": "Research consistently identifies six key factors: high demands, low control, insufficient support, poor relationships, lack of role clarity, and feeling undervalued or treated unfairly. Most workplace stress is not simply about working too hard — it is about these structural mismatches."
+        },
+        {
+          "id": "sr-13-2",
+          "front": "What is the demand-control model?",
+          "back": "A foundational model of work stress: high demands combined with low control create the most harmful stress. High demands with high control — autonomy over how you work — is much more manageable and can even be energising."
+        },
+        {
+          "id": "sr-13-3",
+          "front": "What is \"always-on\" culture?",
+          "back": "The expectation of being constantly reachable and responsive — via email, messaging apps, and work tools — outside working hours. This prevents psychological detachment from work, which is essential for recovery. Without detachment, stress accumulates without adequate release."
+        },
+        {
+          "id": "sr-13-4",
+          "front": "What is psychological detachment from work?",
+          "back": "It is the experience of mentally disconnecting from work during off-hours. Research consistently shows that people who psychologically detach in evenings and weekends recover better, sleep more soundly, and are more engaged and productive during work hours."
+        },
+        {
+          "id": "sr-13-5",
+          "front": "What small steps can reduce work stress?",
+          "back": "Setting clear start and end times for work, creating a transition ritual that signals the end of the workday, keeping phones out of the bedroom, and discussing workload with a manager before it becomes unsustainable. None of these require organisational change — they are within individual control."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-13-q1",
+          "question": "According to the demand-control model, what combination creates the most harmful workplace stress?",
+          "options": [
+            "High demands with high control",
+            "Low demands with low control",
+            "High demands with low control",
+            "Low demands with high control"
+          ],
+          "correctIndex": 2,
+          "explanation": "The demand-control model predicts that high demands with low control — being required to do a great deal without the autonomy to decide how — creates the most damaging type of work stress."
+        },
+        {
+          "id": "sr-13-q2",
+          "question": "What is psychological detachment from work?",
+          "options": [
+            "Permanently reducing care about work outcomes",
+            "Mentally disconnecting from work during off-hours to enable recovery",
+            "Avoiding emotionally challenging tasks during the working day",
+            "A therapeutic technique for work-related burnout"
+          ],
+          "correctIndex": 1,
+          "explanation": "Psychological detachment means mentally switching off from work during non-working hours. Research shows it significantly improves recovery, sleep quality, and next-day performance."
+        },
+        {
+          "id": "sr-13-q3",
+          "question": "Which of the following is an evidence-based approach to reducing work stress?",
+          "options": [
+            "Working harder to reduce the backlog faster",
+            "Avoiding all communication with colleagues outside core hours",
+            "Creating a transition ritual that signals the psychological end of the workday",
+            "Taking longer lunch breaks to offset evening work"
+          ],
+          "correctIndex": 2,
+          "explanation": "A transition ritual — a consistent activity that marks the shift from work to non-work — helps the brain disengage from work mode. Research shows even brief rituals significantly improve psychological detachment."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-14",
+      "dayNumber": 14,
+      "title": "Recognising Serious Stress — When to Seek Help",
+      "subtitle": "Understanding when stress has crossed into something that warrants professional support.",
+      "moduleId": "sr-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-14-1",
+          "front": "When does stress become a clinical concern?",
+          "back": "When stress symptoms are severe, persistent, or significantly interfere with daily life, work, or relationships — and do not improve with self-care strategies — it may be time to seek professional support. There is no precise threshold, but duration and impact are the key factors."
+        },
+        {
+          "id": "sr-14-2",
+          "front": "What is the difference between stress and anxiety disorders?",
+          "back": "Anxiety disorders are diagnosed mental health conditions — such as generalised anxiety disorder, panic disorder, and social anxiety — characterised by persistent, excessive worry or fear that is disproportionate to the situation. They are more severe and more persistent than everyday stress."
+        },
+        {
+          "id": "sr-14-3",
+          "front": "What is the difference between burnout and depression?",
+          "back": "Burnout is typically contextual — linked to specific demands (usually work). Depression involves pervasive low mood, loss of interest across all areas of life, and feelings of hopelessness. They can look similar and overlap. If in doubt, seek professional guidance — a GP is a good starting point."
+        },
+        {
+          "id": "sr-14-4",
+          "front": "What warning signs suggest professional support is needed?",
+          "back": "Persistent low mood lasting more than two weeks, inability to function normally, withdrawal from most activities, thoughts of self-harm, substance use to cope, feeling unable to stop crying, or feeling completely hopeless. These warrant a conversation with a doctor."
+        },
+        {
+          "id": "sr-14-5",
+          "front": "What effective treatments exist for stress-related conditions?",
+          "back": "Cognitive Behavioural Therapy (CBT) has strong evidence for stress, anxiety, and depression. Acceptance and Commitment Therapy (ACT) is effective for stress and burnout. Medication may be appropriate in some cases. Many people find a combination of therapy, lifestyle change, and — where relevant — medication most effective."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-14-q1",
+          "question": "What distinguishes burnout from clinical depression?",
+          "options": [
+            "Burnout only affects physical health, not mental health",
+            "Depression is caused by brain chemistry; burnout is always caused by overwork",
+            "Burnout is typically linked to specific demands; depression involves pervasive low mood across all areas of life",
+            "They are identical conditions with different names"
+          ],
+          "correctIndex": 2,
+          "explanation": "Burnout is contextual — linked to specific roles or demands — and often resolves when those demands change. Depression is more pervasive, affecting all areas of life and requiring different treatment approaches."
+        },
+        {
+          "id": "sr-14-q2",
+          "question": "Which of the following is a warning sign that professional support may be needed?",
+          "options": [
+            "Feeling tired after a demanding week at work",
+            "Occasional worry about an upcoming important event",
+            "Difficulty sleeping before a stressful presentation",
+            "Persistent low mood lasting more than two weeks with no clear improvement"
+          ],
+          "correctIndex": 3,
+          "explanation": "Persistent low mood lasting two or more weeks, particularly with functional impairment, is a recognised indicator that professional support — starting with a GP — may be warranted."
+        },
+        {
+          "id": "sr-14-q3",
+          "question": "What is Cognitive Behavioural Therapy (CBT) and what is it effective for?",
+          "options": [
+            "A medical treatment involving medication for anxiety and depression",
+            "A mindfulness-based relaxation technique for acute stress",
+            "A form of therapy that addresses unhelpful thought and behaviour patterns, effective for stress, anxiety, and depression",
+            "A group therapy technique designed specifically for burnout recovery"
+          ],
+          "correctIndex": 2,
+          "explanation": "CBT is a structured psychological therapy that helps people identify and change unhelpful thinking patterns and behaviours. It has strong evidence for stress, anxiety disorders, and depression."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-15",
+      "dayNumber": 15,
+      "title": "Breathing to Calm the Nervous System",
+      "subtitle": "How controlled breathing directly switches off the stress response.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-15-1",
+          "front": "Why does breathing affect stress?",
+          "back": "Breathing is the only part of the autonomic nervous system you can consciously control. By slowing and deepening your breath, you activate the parasympathetic nervous system — shifting from fight-or-flight to rest-and-digest. This is not metaphorical; it is physiological."
+        },
+        {
+          "id": "sr-15-2",
+          "front": "What is the physiological sigh?",
+          "back": "A double inhale through the nose, followed by a long exhale through the mouth. Andrew Huberman's research shows this is the fastest known way to reduce acute physiological stress. It rapidly deflates the alveoli in the lungs and resets carbon dioxide levels."
+        },
+        {
+          "id": "sr-15-3",
+          "front": "What is box breathing?",
+          "back": "Inhale for 4 counts, hold for 4, exhale for 4, hold for 4. Used by military and emergency services for stress regulation in high-pressure situations. It activates the vagus nerve and quickly dampens the stress response."
+        },
+        {
+          "id": "sr-15-4",
+          "front": "What is the 4-7-8 breathing technique?",
+          "back": "Inhale for 4 counts, hold for 7, exhale for 8. The extended exhale is key — a longer exhale than inhale activates the parasympathetic nervous system more strongly. This technique is particularly useful for sleep and pre-sleep wind-down."
+        },
+        {
+          "id": "sr-15-5",
+          "front": "What is the simplest breathing rule for stress?",
+          "back": "Make your exhale longer than your inhale. Even without following a specific technique, extending the out-breath calms the nervous system. A simple version: inhale for 4, exhale for 6. You can do this anywhere, at any time, without anyone noticing."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-15-q1",
+          "question": "Why can controlled breathing reduce the stress response?",
+          "options": [
+            "It reduces cortisol production in the adrenal glands",
+            "It is the only conscious way to activate the parasympathetic nervous system",
+            "It increases oxygen levels, reducing anxiety",
+            "It distracts the amygdala from threat-detection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Breathing is unique in being both automatic and consciously controllable. Slowing and deepening the breath is a direct pathway to activating the parasympathetic nervous system — the body's recovery and rest state."
+        },
+        {
+          "id": "sr-15-q2",
+          "question": "What is the physiological sigh?",
+          "options": [
+            "A long, slow exhale used in meditation",
+            "A double inhale followed by a long exhale — the fastest known way to reduce acute stress",
+            "A breathing technique used exclusively during sleep",
+            "A natural reflex that only occurs during anxiety"
+          ],
+          "correctIndex": 1,
+          "explanation": "The physiological sigh — a double inhale through the nose followed by a long exhale — is the fastest known way to reduce acute physiological stress. It resets carbon dioxide levels and activates the parasympathetic response."
+        },
+        {
+          "id": "sr-15-q3",
+          "question": "What is the simplest breathing rule for reducing stress?",
+          "options": [
+            "Breathe as quickly as possible to increase oxygen",
+            "Breathe through the mouth to maximise air volume",
+            "Make your exhale longer than your inhale",
+            "Breathe in and out at exactly equal intervals"
+          ],
+          "correctIndex": 2,
+          "explanation": "An exhale that is longer than the inhale activates the parasympathetic nervous system more strongly. Even a simple 4-count inhale and 6-count exhale is effective and can be done anywhere."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-16",
+      "dayNumber": 16,
+      "title": "Movement as Stress Medicine",
+      "subtitle": "How physical activity is one of the most effective stress-reduction tools available.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-16-1",
+          "front": "Why does exercise reduce stress?",
+          "back": "Exercise burns off stress hormones — particularly adrenaline and cortisol — that are designed for physical action. It also triggers the release of endorphins and BDNF (brain-derived neurotrophic factor), which improve mood, calm anxiety, and support brain health."
+        },
+        {
+          "id": "sr-16-2",
+          "front": "What is BDNF?",
+          "back": "Brain-derived neurotrophic factor is a protein that supports the growth and maintenance of neurons. Exercise is one of the most potent stimulators of BDNF. It helps the brain recover from stress, improve memory, and maintain cognitive function — sometimes described as \"fertiliser for the brain.\""
+        },
+        {
+          "id": "sr-16-3",
+          "front": "How much exercise is needed to reduce stress?",
+          "back": "Even brief movement helps. A 20–30 minute walk at a moderate pace can significantly reduce cortisol and improve mood. More vigorous exercise has stronger effects, but the key is consistent, regular activity rather than occasional intense sessions."
+        },
+        {
+          "id": "sr-16-4",
+          "front": "Does the type of exercise matter?",
+          "back": "All movement helps, but different types have slightly different benefits. Aerobic exercise (walking, running, cycling) is best for mood and cortisol reduction. Strength training reduces anxiety and builds confidence. Mind-body exercise like yoga combines physical and breathing benefits."
+        },
+        {
+          "id": "sr-16-5",
+          "front": "What is the \"completing the stress cycle\"?",
+          "back": "Nagoski and Nagoski argue that physical movement physically completes the stress cycle — the body goes through the stress response and then releases it. This is why a brisk walk or run after a stressful day often leaves you feeling genuinely calmer, not just distracted."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-16-q1",
+          "question": "Why does physical exercise reduce stress hormones?",
+          "options": [
+            "It suppresses the adrenal glands during activity",
+            "It burns off adrenaline and cortisol that are designed to fuel physical action",
+            "It reduces blood pressure by slowing the heart rate",
+            "It increases serotonin which directly neutralises cortisol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stress hormones were designed to prepare the body for physical action. Exercise provides that action — burning off adrenaline and cortisol and allowing the body to return to baseline."
+        },
+        {
+          "id": "sr-16-q2",
+          "question": "What is BDNF and why does it matter for stress?",
+          "options": [
+            "A stress hormone produced by the adrenal glands during exercise",
+            "A brain protein stimulated by exercise that supports neuron health and recovery from stress",
+            "A neurotransmitter that blocks cortisol at the brain level",
+            "A measure of cardiovascular fitness linked to stress tolerance"
+          ],
+          "correctIndex": 1,
+          "explanation": "BDNF (brain-derived neurotrophic factor) supports neuron growth and maintenance. Exercise is one of the strongest stimulators of BDNF, helping the brain recover from stress and maintain cognitive function."
+        },
+        {
+          "id": "sr-16-q3",
+          "question": "What is the minimum amount of exercise shown to significantly reduce stress?",
+          "options": [
+            "At least 60 minutes of vigorous exercise",
+            "A minimum of 10,000 steps per day",
+            "As little as 20–30 minutes of moderate-paced walking",
+            "Three or more hours of structured physical training per week"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that even a 20–30 minute moderate walk can meaningfully reduce cortisol and improve mood. The key is regular movement — not necessarily long or intense sessions."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-17",
+      "dayNumber": 17,
+      "title": "Mindfulness and Present-Moment Awareness",
+      "subtitle": "How staying present reduces rumination and builds stress resilience.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-17-1",
+          "front": "What is mindfulness?",
+          "back": "Mindfulness is paying deliberate, non-judgmental attention to the present moment — to thoughts, feelings, sensations, and surroundings, as they are right now. It is not about emptying the mind or achieving a special state. It is a trainable skill."
+        },
+        {
+          "id": "sr-17-2",
+          "front": "How does mindfulness reduce stress?",
+          "back": "Most stress is generated by thoughts about the past or future — rumination and worry. Mindfulness grounds attention in the present, where most threats are actually absent. Regular practice strengthens the prefrontal cortex's ability to regulate the amygdala's threat response."
+        },
+        {
+          "id": "sr-17-3",
+          "front": "What does research say about mindfulness?",
+          "back": "Large systematic reviews confirm that mindfulness-based stress reduction (MBSR) significantly reduces self-reported stress, anxiety, and depression. Brain imaging studies show measurable changes in amygdala size and reactivity after consistent practice."
+        },
+        {
+          "id": "sr-17-4",
+          "front": "Do you need to meditate formally?",
+          "back": "No. Mindfulness can be practised informally — paying full attention while eating, walking, washing up, or having a conversation. Formal meditation deepens the skill but is not essential to benefit. Even five minutes of intentional present-moment focus is useful."
+        },
+        {
+          "id": "sr-17-5",
+          "front": "What is the STOP technique?",
+          "back": "Stop what you are doing. Take a breath. Observe — notice what is happening in your body and mind right now. Proceed with awareness. This four-step micro-practice can interrupt stress escalation in any moment of the day."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-17-q1",
+          "question": "How does mindfulness reduce the impact of stress?",
+          "options": [
+            "By suppressing difficult thoughts and emotions",
+            "By grounding attention in the present, where most threats are actually absent",
+            "By increasing cortisol tolerance through repeated exposure",
+            "By distracting the amygdala from detecting threats"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most stress is driven by thoughts about past or future events. Mindfulness brings attention to the present moment — where most immediate threats do not exist — reducing stress activation."
+        },
+        {
+          "id": "sr-17-q2",
+          "question": "What does brain imaging research show about mindfulness practice?",
+          "options": [
+            "It eliminates amygdala activity entirely",
+            "It has no measurable neurological effects",
+            "It produces measurable changes in amygdala size and reactivity after consistent practice",
+            "It increases grey matter volume in the hippocampus only"
+          ],
+          "correctIndex": 2,
+          "explanation": "Neuroimaging studies show that consistent mindfulness practice can physically change the brain — reducing amygdala reactivity and volume, which correlates with reduced stress and emotional reactivity."
+        },
+        {
+          "id": "sr-17-q3",
+          "question": "What is the STOP mindfulness technique?",
+          "options": [
+            "A structured meditation programme used in clinical settings",
+            "Stop, Take a breath, Observe, Proceed — a micro-practice for interrupting stress escalation",
+            "A technique for stopping negative thoughts using cognitive defusion",
+            "A five-step breathing sequence for managing panic"
+          ],
+          "correctIndex": 1,
+          "explanation": "STOP is a simple micro-practice: Stop, Take a breath, Observe what is happening internally, Proceed with awareness. It can interrupt stress escalation in any moment without requiring formal meditation."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-18",
+      "dayNumber": 18,
+      "title": "Cognitive Reframing — Changing How You See Stress",
+      "subtitle": "Practical tools from CBT and ACT to change your relationship with stressful thoughts.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-18-1",
+          "front": "What is cognitive reframing?",
+          "back": "Cognitive reframing is the practice of deliberately considering a situation from a different perspective. Rather than accepting the first interpretation your stressed brain offers, you examine whether other interpretations are possible — and often more accurate."
+        },
+        {
+          "id": "sr-18-2",
+          "front": "What are cognitive distortions?",
+          "back": "These are habitual, unhelpful thinking patterns that amplify stress. Common examples: catastrophising (\"this will be a disaster\"), all-or-nothing thinking (\"I either succeed completely or I've failed\"), and mind-reading (\"they think I'm incompetent\"). Recognising these patterns is the first step."
+        },
+        {
+          "id": "sr-18-3",
+          "front": "What is the CBT thought-challenging process?",
+          "back": "1. Identify the automatic thought. 2. Examine the evidence for and against it. 3. Consider alternative interpretations. 4. Choose a more balanced view. This is not about forced positivity — it is about accuracy. Stressed minds are rarely accurate."
+        },
+        {
+          "id": "sr-18-4",
+          "front": "What is cognitive defusion from ACT?",
+          "back": "Rather than challenging the content of a thought, defusion creates distance from it. Instead of \"I am going to fail,\" you notice \"I am having the thought that I am going to fail.\" This subtle shift reduces the thought's power without requiring it to be true or false."
+        },
+        {
+          "id": "sr-18-5",
+          "front": "What is values-based reframing?",
+          "back": "Connecting a stressful situation to something you genuinely care about can transform its meaning. Stress in a demanding job might be reframed as a sign of caring deeply about the work. Stress in a relationship might reflect genuine investment. Meaning changes the physiological stress response."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-18-q1",
+          "question": "What is catastrophising?",
+          "options": [
+            "Planning carefully for worst-case scenarios",
+            "A cognitive distortion that automatically assumes the worst outcome",
+            "A healthy stress response to genuinely high-risk situations",
+            "The tendency to overestimate personal control over outcomes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Catastrophising is a cognitive distortion where the mind automatically leaps to the worst-case scenario. It amplifies the stress response significantly, even when the realistic outcome is far less severe."
+        },
+        {
+          "id": "sr-18-q2",
+          "question": "What is cognitive defusion from ACT?",
+          "options": [
+            "Challenging the factual accuracy of stressful thoughts",
+            "Replacing negative thoughts with positive ones",
+            "Creating psychological distance from thoughts by observing them as mental events",
+            "Fusing thoughts with emotions to process them more effectively"
+          ],
+          "correctIndex": 2,
+          "explanation": "Defusion creates space between you and your thoughts. Instead of being caught inside \"I will fail,\" you observe \"I am having the thought that I will fail.\" This reduces the thought's grip without requiring it to be challenged."
+        },
+        {
+          "id": "sr-18-q3",
+          "question": "What is the purpose of the CBT thought-challenging process?",
+          "options": [
+            "To replace negative thoughts with consistently positive ones",
+            "To eliminate stressful thoughts permanently",
+            "To find a more accurate and balanced interpretation of a situation",
+            "To suppress unhelpful thoughts before they affect behaviour"
+          ],
+          "correctIndex": 2,
+          "explanation": "CBT thought-challenging is about accuracy, not forced positivity. Stressed minds tend to misinterpret situations — thought-challenging examines evidence and finds a more balanced, realistic view."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-19",
+      "dayNumber": 19,
+      "title": "Rest, Recovery, and the Art of Switching Off",
+      "subtitle": "Why genuine rest is not laziness — and how to actually achieve it.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-19-1",
+          "front": "What is the difference between rest and sleep?",
+          "back": "Sleep is essential biological recovery. Rest is deliberate mental and physical disengagement while awake — a necessary complement to sleep. Both are required for full recovery from chronic stress. Rest without sleep is insufficient; sleep without waking rest is also not enough."
+        },
+        {
+          "id": "sr-19-2",
+          "front": "What are the most restorative forms of rest?",
+          "back": "Research identifies several types: mental rest (quiet time without cognitive demands), social rest (time with people who are effortless to be around), physical rest (gentle movement or stillness), sensory rest (reducing stimulation), and nature rest (time outdoors). Different people find different types most restorative."
+        },
+        {
+          "id": "sr-19-3",
+          "front": "Why is scrolling not restful?",
+          "back": "Passive screen use — social media, news feeds, video autoplay — keeps the brain in a constant low-level processing state. It does not require effort, but it does not allow the default mode network (which drives creative thinking and emotional processing) to operate freely. It is neither engagement nor rest."
+        },
+        {
+          "id": "sr-19-4",
+          "front": "What is deliberate idleness?",
+          "back": "Deliberately doing nothing — without a task, device, or planned activity. Daydreaming, sitting in the garden, letting the mind wander. Research shows this activates the default mode network, which processes emotions, consolidates memory, and generates creative insights. It is neurologically productive."
+        },
+        {
+          "id": "sr-19-5",
+          "front": "How do you build genuine rest into a busy life?",
+          "back": "Protect small pockets of low-stimulation time each day. Even 10–15 minutes of genuine disengagement — a quiet walk, sitting without a device, a slow morning routine — has measurable recovery benefits. Rest requires defending it against busyness."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-19-q1",
+          "question": "Why is passive scrolling on a phone not considered genuine rest?",
+          "options": [
+            "It increases cortisol levels through engaging content",
+            "It keeps the brain in continuous low-level processing, preventing the default mode network from activating",
+            "It interferes with melatonin production through blue light",
+            "It creates social comparison that generates stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Scrolling keeps the brain in a passive processing mode — not effort, but not rest either. The default mode network — which drives emotional processing and creative thinking — cannot activate freely during screen use."
+        },
+        {
+          "id": "sr-19-q2",
+          "question": "What is the default mode network and why does it matter for stress recovery?",
+          "options": [
+            "The brain's threat-detection circuit, responsible for the stress response",
+            "A brain network active during deliberate cognitive tasks",
+            "A brain network that activates during rest and mind-wandering, supporting emotional processing and creativity",
+            "The neural pathway linking the amygdala to the prefrontal cortex"
+          ],
+          "correctIndex": 2,
+          "explanation": "The default mode network activates during mind-wandering and deliberate idleness. It processes emotions, consolidates memories, and generates creative insights — all essential aspects of recovery from chronic stress."
+        },
+        {
+          "id": "sr-19-q3",
+          "question": "What is the minimum amount of deliberate disengagement shown to have recovery benefits?",
+          "options": [
+            "At least 2 hours per day of device-free time",
+            "A full weekend of complete rest each month",
+            "Even 10–15 minutes of low-stimulation time per day",
+            "One full day of rest per week with no screens or social contact"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that even brief periods of genuine low-stimulation rest — 10–15 minutes — have measurable recovery benefits. Consistency matters more than duration."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-20",
+      "dayNumber": 20,
+      "title": "Social Connection and Resilience",
+      "subtitle": "Why relationships are one of the most powerful buffers against chronic stress.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-20-1",
+          "front": "Why are relationships a resilience factor?",
+          "back": "Humans are profoundly social mammals. Strong social bonds directly reduce the physiological stress response — lowering cortisol and activating oxytocin, the \"bonding hormone.\" Research consistently identifies strong relationships as one of the most robust predictors of long-term health and wellbeing."
+        },
+        {
+          "id": "sr-20-2",
+          "front": "What did the Harvard Study of Adult Development find?",
+          "back": "This 80-year study — one of the longest running studies of human development — found that the quality of close relationships was the strongest predictor of health, happiness, and longevity in later life. Not wealth, success, or genetics."
+        },
+        {
+          "id": "sr-20-3",
+          "front": "What is social resilience?",
+          "back": "The capacity to draw on relationships during difficulty. Knowing that others are available, that you can ask for help, and that you belong to a community. This psychological safety directly reduces the intensity of the stress response — the brain's threat assessment is lower when we feel supported."
+        },
+        {
+          "id": "sr-20-4",
+          "front": "How does social support reduce stress physiologically?",
+          "back": "Interaction with trusted people activates the oxytocin system, which damps the cortisol response. Even brief positive social contact — a conversation, a message from a friend, a moment of genuine connection — can measurably reduce physiological stress markers."
+        },
+        {
+          "id": "sr-20-5",
+          "front": "How can you build social resilience practically?",
+          "back": "Invest in existing relationships before you need them. Reach out when things are going well — not only in crisis. Build low-effort habits of connection: a regular call, a shared activity, a brief check-in. Relationships strengthen through regular, low-key contact — not only through grand gestures in difficulty."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-20-q1",
+          "question": "What did the Harvard Study of Adult Development identify as the strongest predictor of long-term health and happiness?",
+          "options": [
+            "Financial security and freedom from debt",
+            "Physical fitness and consistent exercise habits",
+            "The quality of close relationships",
+            "Career success and sense of purpose"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Harvard Study — 80 years of data — found that the quality of close relationships, not wealth, success, or genetics, was the most powerful predictor of health, happiness, and longevity."
+        },
+        {
+          "id": "sr-20-q2",
+          "question": "How does social connection reduce the physiological stress response?",
+          "options": [
+            "It distracts the brain from threat-detection",
+            "It activates the oxytocin system, which damps the cortisol response",
+            "It reduces adrenaline production in the adrenal glands",
+            "It slows heart rate through deep listening"
+          ],
+          "correctIndex": 1,
+          "explanation": "Positive social contact triggers oxytocin release, which directly reduces cortisol. Even brief, genuine connection can measurably reduce physiological stress markers."
+        },
+        {
+          "id": "sr-20-q3",
+          "question": "What is the most effective way to build social resilience?",
+          "options": [
+            "Joining as many groups and communities as possible",
+            "Reaching out to friends only during personal crises",
+            "Investing in relationships during good times through regular, low-key contact",
+            "Expanding your professional network to create more connections"
+          ],
+          "correctIndex": 2,
+          "explanation": "Social resilience is built through consistent, low-key investment in close relationships — not just crisis management. Regular light-touch connection builds the bonds that sustain you under pressure."
+        }
+      ]
+    },
+    {
+      "id": "sr-lesson-21",
+      "dayNumber": 21,
+      "title": "Your Personal Stress and Resilience Plan",
+      "subtitle": "Bringing everything together into a practical, sustainable approach for your life.",
+      "moduleId": "sr-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sr-21-1",
+          "front": "What does a personal stress plan include?",
+          "back": "A stress plan is not a rigid schedule — it is a set of personalised responses to stress. It answers three questions: What are my main stress signals? What reliably helps me recover? What can I do proactively to build resilience before stress arrives?"
+        },
+        {
+          "id": "sr-21-2",
+          "front": "What is the concept of a stress budget?",
+          "back": "Think of your stress tolerance as a budget. Some demands consume more — big deadlines, difficult relationships, poor sleep, poor diet. Some restore capacity — movement, rest, connection, time in nature, creative activity. Resilience is about managing the balance, not eliminating demands."
+        },
+        {
+          "id": "sr-21-3",
+          "front": "What is a resilience anchor?",
+          "back": "A small, consistent daily practice that is non-negotiable. It does not need to be large — a 10-minute walk, a brief breathing practice, a regular bedtime, or a morning without screens. Resilience is built through small repeated actions, not grand lifestyle overhauls."
+        },
+        {
+          "id": "sr-21-4",
+          "front": "How do you build on this course?",
+          "back": "Resilience is cumulative. Each additional tool — better sleep, regular movement, breathing practice, social connection, cognitive reframing — adds to the overall system. Start with one thing. Make it consistent. Add another when it is established. Small, repeatable actions compound over time."
+        },
+        {
+          "id": "sr-21-5",
+          "front": "What is the core message of this course?",
+          "back": "Stress is not the enemy. It is information — a signal that something you care about is at risk or a demand is being made. Your job is not to eliminate stress but to respond to it wisely, recover from it fully, and build the capacity to handle more of what life sends your way."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sr-21-q1",
+          "question": "What is the \"stress budget\" concept?",
+          "options": [
+            "A financial tool for calculating the cost of stress-related health problems",
+            "The idea of viewing stress tolerance as a balance between demands and restorative practices",
+            "A time-management framework for reducing workload",
+            "A clinical measure of chronic stress levels"
+          ],
+          "correctIndex": 1,
+          "explanation": "The stress budget frames resilience as a balance — some demands consume capacity (stress, poor sleep, difficult relationships) and some restore it (movement, rest, connection). Resilience is about managing this balance over time."
+        },
+        {
+          "id": "sr-21-q2",
+          "question": "What is a resilience anchor?",
+          "options": [
+            "A close relationship that provides emotional stability",
+            "A small, consistent daily practice that builds resilience through repetition",
+            "A cognitive technique for reframing stressful situations",
+            "A professional support system for managing burnout"
+          ],
+          "correctIndex": 1,
+          "explanation": "A resilience anchor is a small, non-negotiable daily habit — a walk, a breathing practice, a consistent bedtime. Small consistent actions build more resilience than occasional large interventions."
+        },
+        {
+          "id": "sr-21-q3",
+          "question": "What is the core message of this course about stress?",
+          "options": [
+            "Stress is always harmful and should be eliminated wherever possible",
+            "Stress is manageable only through professional treatment",
+            "Stress is information — to be responded to wisely, recovered from fully, and used as a driver of growth",
+            "Stress is primarily caused by external circumstances outside personal control"
+          ],
+          "correctIndex": 2,
+          "explanation": "The course's central message is that stress is not the enemy. It is information. Resilience means responding wisely, recovering fully, and building the capacity to handle what life brings — not trying to live a stress-free life."
+        }
+      ]
+    }
+  ]
+}

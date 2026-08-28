@@ -2,8 +2,16 @@ import { useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import NotFoundPage from '@/marketing/pages/NotFoundPage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { DEFAULT_PLANS } from '@/funnels/twenty-eight-day/data/plans'
+
+const ORIGINAL_CHECKOUT_FUNNELS = new Set([
+  '28-day-ai-challenge',
+  'claude-ai-certification',
+  'master-claude-ai-excel',
+  'success-assessment',
+])
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const PAGE_TITLE = 'SuccessWise.ai — Turn Daily Learning Into Daily Progress'
@@ -25,6 +33,8 @@ export default function FunnelCheckoutPage() {
   const name = params.get('name') ?? ''
   const [emailError, setEmailError] = useState<string | null>(null)
   const [showPayment, setShowPayment] = useState(false)
+
+  if (!ORIGINAL_CHECKOUT_FUNNELS.has(funnel)) return <NotFoundPage />
 
   const startPayment = () => {
     if (!email.trim()) {

@@ -1,0 +1,1574 @@
+{
+  "id": "pricing-monetisation-mastery",
+  "title": "Pricing & Monetisation Mastery",
+  "subtitle": "Master the psychology, strategies, and frameworks that turn pricing from guesswork into your most powerful profit lever.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "pmm-module-1",
+      "moduleNumber": 1,
+      "title": "Pricing Foundations",
+      "subtitle": "Understand why pricing is the fastest profit lever and master the psychology, research methods, and core strategies that separate premium brands from commodities.",
+      "days": "Lessons 1–7",
+      "skill": "Apply value-based pricing principles and research your customers' willingness to pay",
+      "lessonIds": [
+        "pmm-1-most-powerful-lever",
+        "pmm-2-price-psychology",
+        "pmm-3-value-vs-cost",
+        "pmm-4-willingness-to-pay",
+        "pmm-5-pricing-research",
+        "pmm-6-three-strategies",
+        "pmm-7-pricing-mistakes"
+      ]
+    },
+    {
+      "id": "pmm-module-2",
+      "moduleNumber": 2,
+      "title": "Monetisation Models & Architecture",
+      "subtitle": "Design the right pricing structure for your business — subscriptions, tiers, bundles, and psychological framing that maximises revenue per customer.",
+      "days": "Lessons 8–14",
+      "skill": "Architect tiered pricing, subscriptions, and bundles that maximise lifetime value",
+      "lessonIds": [
+        "pmm-8-monetisation-models",
+        "pmm-9-subscription-pricing",
+        "pmm-10-tiered-pricing",
+        "pmm-11-freemium",
+        "pmm-12-dynamic-pricing",
+        "pmm-13-bundling",
+        "pmm-14-anchoring-decoys"
+      ]
+    },
+    {
+      "id": "pmm-module-3",
+      "moduleNumber": 3,
+      "title": "Implementation & Growth",
+      "subtitle": "Put pricing into practice — raise prices confidently, launch into new markets, communicate value, and build a 90-day optimisation system.",
+      "days": "Lessons 15–21",
+      "skill": "Raise prices, enter new markets, and build a continuous pricing optimisation loop",
+      "lessonIds": [
+        "pmm-15-raising-prices",
+        "pmm-16-discounting-strategy",
+        "pmm-17-new-product-pricing",
+        "pmm-18-international-pricing",
+        "pmm-19-communicating-price",
+        "pmm-20-pricing-metrics",
+        "pmm-21-ninety-day-plan"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pmm-1-most-powerful-lever",
+      "dayNumber": 1,
+      "moduleId": "pmm-module-1",
+      "title": "Why Pricing Is Your Most Powerful Lever",
+      "subtitle": "A 1% price improvement creates more profit than a 1% improvement in anything else. Learn why pricing deserves your obsession.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A 1% price increase generates an 11% profit increase on average — nothing else in your business comes close.",
+          "body": "Most entrepreneurs spend months obsessing over traffic, conversion rates, or cost-cutting. Meanwhile, pricing — the single most powerful profit lever — gets set once and never revisited. Hermann Simon studied 3,000+ companies and found that pricing improvements dwarfed every other strategy for bottom-line impact."
+        },
+        {
+          "type": "content",
+          "headline": "The Pricing Neglect Paradox",
+          "body": "Simon's research reveals a paradox: the lever with the biggest profit impact receives the least attention. Why? Because pricing feels scary. Raising prices might lose customers. Lowering prices feels safe. So most founders set their price based on competitors or gut feeling — then never touch it again. This is like driving with the handbrake on. Every day you don't optimise pricing, you're leaving pure profit on the table."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Profit Levers (Ranked)",
+          "body": "Simon ranked the four ways to increase profit: 1) Price (+1% = +11% profit). 2) Variable costs (-1% = +7.3% profit). 3) Volume (+1% = +3.3% profit). 4) Fixed costs (-1% = +2.3% profit). Price dominates because it flows directly to the bottom line with zero extra cost. Selling one more unit requires marketing, production, and fulfilment. A price increase requires only the courage to implement it."
+        },
+        {
+          "type": "content",
+          "headline": "Why \"Cheap\" Is Not a Strategy",
+          "body": "Competing on price is a race to zero. For every penny you cut, a competitor can cut two. The only winners in price wars are companies with massive scale advantages (Amazon, Walmart). For everyone else, pricing low signals low value, attracts price-sensitive buyers who churn, and starves your business of the margins needed to invest in quality. The real strategy: charge what you're worth — then prove you're worth even more."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Pricing Audit",
+          "body": "Answer honestly: 1) When was the last time you changed your core price? 2) What was that decision based on — research, or guesswork? 3) If you raised your price 10% tomorrow, would you lose 10% of customers? (Hint: probably not.) Write down one number you currently charge. We'll revisit it at the end of this course to see how much value you've been leaving behind."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Hermann Simon's research, what is the average profit impact of a 1% price increase?",
+          "type": "mcq",
+          "options": [
+            "11% profit increase",
+            "5% profit increase",
+            "3.3% profit increase",
+            "2.3% profit increase"
+          ],
+          "correctIndex": 0,
+          "explanation": "Simon's research across 3,000+ companies found that a 1% price improvement generates an average 11% profit increase — far exceeding the impact of volume, variable costs, or fixed costs."
+        },
+        {
+          "question": "Competing on price is a sustainable long-term strategy for most small businesses.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Price wars favour companies with massive scale advantages. For most businesses, competing on price erodes margins, attracts disloyal buyers, and starves the business of resources needed to deliver quality."
+        },
+        {
+          "question": "Why do most entrepreneurs neglect pricing optimisation?",
+          "type": "mcq",
+          "options": [
+            "Fear of losing customers makes pricing feel risky, so they set it once and avoid revisiting",
+            "Pricing has minimal impact on profitability compared to other levers",
+            "There are no reliable methods for testing pricing changes",
+            "Customers always leave if you change prices"
+          ],
+          "correctIndex": 0,
+          "explanation": "The pricing neglect paradox: the lever with the biggest impact gets the least attention because it feels emotionally risky. In reality, most businesses can raise prices without significant customer loss."
+        }
+      ]
+    },
+    {
+      "id": "pmm-2-price-psychology",
+      "dayNumber": 2,
+      "moduleId": "pmm-module-1",
+      "title": "The Psychology of Price Perception",
+      "subtitle": "Price isn't rational — it's emotional. Master the cognitive biases that shape how customers perceive and evaluate your price.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "An identical wine tastes 45% better when people are told it costs $90 instead of $10 — the brain literally changes its response.",
+          "body": "Price isn't just a number on a label. It's a signal, a story, and a shortcut the brain uses to judge quality, status, and value. Today you'll learn the psychology that makes customers perceive the same product as \"expensive\" or \"a steal\" — depending entirely on how you frame it."
+        },
+        {
+          "type": "content",
+          "headline": "The Price-Quality Heuristic",
+          "body": "When buyers lack full information (which is almost always), they use price as a proxy for quality. \"You get what you pay for\" isn't just a saying — it's a deeply wired mental shortcut. Neuroscience studies show that expensive products activate the brain's pleasure centres more strongly than cheap ones, even when they're identical. This means pricing too low can actually reduce demand by signalling inferiority."
+        },
+        {
+          "type": "content",
+          "headline": "Reference Price & The Comparison Frame",
+          "body": "Nobody evaluates a price in isolation. Every price is judged relative to a reference point — a \"normal\" price the buyer holds in their mind. That reference comes from: past purchases, competitor prices, or anchors you deliberately set. Hermann Simon calls this the \"reference price effect.\" Master it and you control how expensive or cheap your offer feels — without changing the actual number."
+        },
+        {
+          "type": "content",
+          "headline": "Loss Aversion & Price Sensitivity",
+          "body": "Kahneman & Tversky proved that losing £10 hurts roughly twice as much as gaining £10 feels good. For pricing this means: customers feel the pain of paying more intensely than the pleasure of saving. That's why price increases trigger outsized emotional reactions. The solution? Frame price as an investment (gain framing) rather than a cost (loss framing). \"Invest £97 to unlock £10,000 in skills\" hits differently than \"Pay £97.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Spot the Bias",
+          "body": "Think of the last purchase you made over £50. Ask yourself: 1) What was your reference price before buying? Where did it come from? 2) Did the seller use any anchor (e.g. a \"was £199, now £99\" or comparison to a more expensive option)? 3) Was the price framed as a cost or an investment? Now look at YOUR pricing — are you using these tools, or leaving perception to chance?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"price-quality heuristic\"?",
+          "type": "mcq",
+          "options": [
+            "Buyers use price as a mental shortcut to judge quality when they lack full information",
+            "Higher-quality products always cost more to produce",
+            "Customers prefer the cheapest option in every category",
+            "Businesses should always price based on production cost"
+          ],
+          "correctIndex": 0,
+          "explanation": "The price-quality heuristic is a cognitive shortcut where buyers assume higher price = higher quality. Neuroscience confirms this — expensive products literally activate pleasure centres more strongly, even when products are identical."
+        },
+        {
+          "question": "Loss aversion means customers feel the pain of paying approximately twice as strongly as the pleasure of saving the same amount.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Kahneman & Tversky's research demonstrated that losses are felt roughly 2× as intensely as equivalent gains. This is why price increases trigger strong emotional reactions and why gain framing (investment) is more effective than cost framing."
+        },
+        {
+          "question": "What is a \"reference price\" in pricing psychology?",
+          "type": "mcq",
+          "options": [
+            "The internal benchmark a buyer holds in their mind against which they judge your price",
+            "The lowest price available in the market",
+            "The manufacturer's suggested retail price",
+            "The price a customer paid for their very first purchase"
+          ],
+          "correctIndex": 0,
+          "explanation": "A reference price is the internal benchmark buyers use to evaluate whether your price feels expensive or cheap. It comes from past purchases, competitor pricing, or anchors you deliberately set."
+        }
+      ]
+    },
+    {
+      "id": "pmm-3-value-vs-cost",
+      "dayNumber": 3,
+      "moduleId": "pmm-module-1",
+      "title": "Value-Based Pricing vs Cost-Plus Pricing",
+      "subtitle": "The fundamental choice that determines whether your business earns margins or scrapes by. Learn why cost-plus is a trap.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A painkiller that costs £0.03 to make sells for £12. A generic that costs the same sells for £0.50. Same pill — 24× price difference.",
+          "body": "The difference isn't cost. It's perceived value. Today you'll learn the two fundamentally different approaches to pricing — and why choosing the wrong one can cap your growth forever."
+        },
+        {
+          "type": "content",
+          "headline": "Cost-Plus: The Comfort Zone Trap",
+          "body": "Cost-plus pricing works like this: calculate your costs, add a markup (usually 20–50%), and call it done. It feels safe and fair. But it has a fatal flaw: it ignores the customer entirely. If your product saves someone £50,000 a year but costs you £10 to deliver, cost-plus might price it at £15. You've just given away 99.97% of the value you created. Cost-plus guarantees you'll always leave money on the table."
+        },
+        {
+          "type": "content",
+          "headline": "Value-Based Pricing: Charge What It's Worth to Them",
+          "body": "Value-based pricing asks a different question: \"What is this worth to the customer?\" If your product saves £50,000 a year, charging £5,000 is a no-brainer for the buyer AND massively profitable for you. Hermann Simon argues that value-based pricing is the only approach that truly aligns price with customer benefit. The challenge? You need to understand your customer's world, their alternatives, and the economic value you create."
+        },
+        {
+          "type": "content",
+          "headline": "The Value Bridge Framework",
+          "body": "To switch from cost-plus to value-based: 1) Identify the customer's \"next best alternative\" — what happens if they don't buy from you? 2) Quantify the difference — what extra value does your solution deliver vs that alternative? 3) Price somewhere between your cost and the total value created. You capture a share of value, the customer keeps the rest. Both sides win. The key: never price below your value, and never above the customer's willingness to pay."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Value vs Cost Audit",
+          "body": "Pick one product or service you offer. Calculate: 1) Your actual cost to deliver it. 2) Your current price. 3) The economic value it creates for the buyer (time saved × their hourly rate, revenue generated, cost avoided). Now divide: Current Price ÷ Value Created = your \"value capture ratio.\" If it's under 10%, you're dramatically undercharging. Most businesses are."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fundamental flaw of cost-plus pricing?",
+          "type": "mcq",
+          "options": [
+            "It ignores the customer's perceived value and can leave massive profit on the table",
+            "It's too expensive for customers",
+            "It requires complex calculations that small businesses can't perform",
+            "It only works for physical products, not services"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cost-plus pricing ignores what the product is actually worth to the buyer. If you create £50,000 of value but price at cost + 50%, you capture almost none of the value you create."
+        },
+        {
+          "question": "Value-based pricing means charging the maximum the market will bear regardless of the value delivered.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Value-based pricing means charging in proportion to the value you create for the customer — both sides win. You capture a fair share of the value, and the customer keeps the rest. It's not about gouging, it's about alignment."
+        },
+        {
+          "question": "In the Value Bridge Framework, what is the first step to setting a value-based price?",
+          "type": "mcq",
+          "options": [
+            "Identify the customer's next best alternative",
+            "Calculate your production costs",
+            "Research competitor pricing",
+            "Survey customers about what they'd pay"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first step is understanding the customer's alternative — what happens if they don't buy from you. This establishes the baseline against which your additional value is measured."
+        }
+      ]
+    },
+    {
+      "id": "pmm-4-willingness-to-pay",
+      "dayNumber": 4,
+      "moduleId": "pmm-module-1",
+      "title": "Understanding Your Customer's Willingness to Pay",
+      "subtitle": "The invisible ceiling above your price — learn how to find it, raise it, and use it to set prices that customers accept gladly.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "There's an exact number in every customer's head — the most they'd pay before walking away. Find it, and you unlock maximum revenue.",
+          "body": "Willingness to pay (WTP) is the invisible ceiling above every price. Set your price below it and the customer buys happily. Set it above and they walk. The gap between your current price and their WTP is pure uncaptured profit. Today you'll learn how to discover — and expand — that ceiling."
+        },
+        {
+          "type": "content",
+          "headline": "What Willingness to Pay Really Is",
+          "body": "WTP isn't what customers SAY they'd pay (people lie on surveys — they understate to get a better deal). It's the maximum they WOULD pay before choosing not to buy. Ramanujam (Monetizing Innovation) calls it the \"reservation price.\" It varies by: segment, context, urgency, perceived alternatives, and emotional state. The same person has different WTPs for the same product depending on the situation. Your job is to understand these drivers and price accordingly."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Drivers of WTP",
+          "body": "1) Perceived uniqueness — the fewer alternatives, the higher WTP. If you're the only solution, WTP approaches the full economic value. 2) Urgency — someone with an urgent problem will pay 3–10× more than someone browsing casually. 3) Outcome magnitude — the bigger the result you promise (and prove), the higher WTP climbs. To raise WTP: differentiate ruthlessly, target urgent buyers, and prove bigger outcomes."
+        },
+        {
+          "type": "content",
+          "headline": "Segment-Based WTP: Not Everyone Is the Same",
+          "body": "A crucial insight from Simon: different customer segments have wildly different WTPs for the same product. A solo freelancer might pay £29/month for your software. An enterprise team might pay £500/month — for the same features. This isn't about \"charging more for the rich.\" It's about different segments receiving different value. The freelancer saves 2 hours/month. The enterprise team saves 200. Same product, different value, different WTP."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Segments' WTP",
+          "body": "List your 2–3 main customer segments. For each, answer: 1) What specific outcome do they get from your product? 2) How much is that outcome worth to them financially? 3) What's their next-best alternative and its cost? 4) How urgently do they need it? The segment with the highest answers across all four is your premium segment — and likely where you're most underpriced."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"willingness to pay\" (WTP)?",
+          "type": "mcq",
+          "options": [
+            "The maximum amount a customer would pay before choosing not to buy",
+            "The amount customers say they would pay on a survey",
+            "The average price charged by competitors",
+            "The break-even price for your product"
+          ],
+          "correctIndex": 0,
+          "explanation": "WTP is the true maximum a buyer would pay — their \"reservation price.\" It's not what they say on surveys (people understate to negotiate better deals), but the actual ceiling of their purchase decision."
+        },
+        {
+          "question": "All customers in a market have the same willingness to pay for the same product.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Different segments have wildly different WTPs because they derive different value from the same product. A freelancer and an enterprise team get different outcomes from identical features."
+        },
+        {
+          "question": "Which of the following does NOT directly increase a customer's willingness to pay?",
+          "type": "mcq",
+          "options": [
+            "Reducing your production costs",
+            "Increasing perceived uniqueness of your offer",
+            "Targeting buyers with urgent problems",
+            "Proving larger outcomes from using your product"
+          ],
+          "correctIndex": 0,
+          "explanation": "Your internal costs have no bearing on the customer's willingness to pay. WTP is driven by the customer's perception of value — uniqueness, urgency, and outcome magnitude — not by what it costs you."
+        }
+      ]
+    },
+    {
+      "id": "pmm-5-pricing-research",
+      "dayNumber": 5,
+      "moduleId": "pmm-module-1",
+      "title": "Pricing Research Methods That Actually Work",
+      "subtitle": "Stop guessing. Learn the proven techniques to discover what customers will really pay — from Van Westendorp to conjoint analysis.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "85% of companies set prices using intuition or competitor-matching. The other 15% use research — and they're 25% more profitable.",
+          "body": "You wouldn't launch a product without customer research. So why do most businesses launch prices without testing them? Today you'll learn four practical research methods — from a free 4-question survey to sophisticated analysis — that remove guesswork from your most important business decision."
+        },
+        {
+          "type": "content",
+          "headline": "Method 1: Van Westendorp's Price Sensitivity Meter",
+          "body": "Four simple questions that reveal your optimal price range: 1) \"At what price would this be so cheap you'd doubt quality?\" (Too Cheap). 2) \"At what price is this a bargain — great value for money?\" (Cheap/Good Value). 3) \"At what price does this start to feel expensive but you'd still consider it?\" (Expensive/High). 4) \"At what price is this too expensive — you'd never buy it?\" (Too Expensive). Plot responses on a graph. The intersection points reveal your acceptable price range and optimal point."
+        },
+        {
+          "type": "content",
+          "headline": "Method 2: The Gabor-Granger Technique",
+          "body": "Show customers a specific price, ask: \"Would you buy at this price?\" Track yes/no. Then show a higher or lower price and repeat. This builds a demand curve — you can see exactly how many buyers you lose at each price point. Simple to run (even via email), and it gives you the price that maximises revenue (price × volume). Pro tip: start at a higher price and move down — this avoids the anchoring bias of starting low."
+        },
+        {
+          "type": "content",
+          "headline": "Method 3: Contextual Price Testing",
+          "body": "Ramanujam's preferred approach: have pricing conversations early — during product development, not after. Ask potential buyers: \"If this product existed and delivered [specific outcome], what would you expect to pay? What would feel like a bargain? What would be too expensive?\" The key: tie price to specific outcomes, not features. People can't price features. They can price results. If the WTP you uncover is too low to build a profitable product — you know before you build it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Run a Quick Van Westendorp",
+          "body": "Choose one product/service you offer. Text or email 5–10 people in your target audience the four Van Westendorp questions (customised for your product). You don't need statistical significance for a directional signal. Even 5 responses will tell you: Is your current price in the \"acceptable\" zone? Is it below the \"bargain\" point (meaning you're undercharging)? Is it above the \"expensive\" threshold?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the Van Westendorp Price Sensitivity Meter reveal?",
+          "type": "mcq",
+          "options": [
+            "The acceptable price range and optimal price point based on four perception questions",
+            "The exact profit-maximising price for your product",
+            "How much customers would pay compared to competitors",
+            "Whether your product is overpriced based on cost analysis"
+          ],
+          "correctIndex": 0,
+          "explanation": "Van Westendorp uses four questions about price perceptions (too cheap, bargain, expensive, too expensive) to identify the acceptable range and optimal intersection point."
+        },
+        {
+          "question": "Ramanujam recommends having pricing conversations after the product is fully built.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ramanujam (Monetizing Innovation) explicitly recommends pricing conversations early — during development, not after launch. If WTP is too low to sustain a profitable product, you need to know before building it."
+        },
+        {
+          "question": "In the Gabor-Granger technique, why should you start at a higher price and move down?",
+          "type": "mcq",
+          "options": [
+            "To avoid anchoring bias — starting low makes subsequent higher prices feel more expensive",
+            "Because customers are more honest when shown high prices first",
+            "To save time by eliminating unserious buyers early",
+            "Because higher prices always generate more revenue"
+          ],
+          "correctIndex": 0,
+          "explanation": "Starting high avoids the anchoring effect. If the first price a buyer sees is low, it sets a reference point that makes all subsequent higher prices feel unreasonable — biasing results downward."
+        }
+      ]
+    },
+    {
+      "id": "pmm-6-three-strategies",
+      "dayNumber": 6,
+      "moduleId": "pmm-module-1",
+      "title": "The Three Pricing Strategies Every Business Needs",
+      "subtitle": "Penetration, skimming, or value — each has a time and place. Choose wrong and you leave years of profit behind.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Apple skims. Amazon penetrates. Rolex values. Three wildly different strategies — each perfectly matched to their business model.",
+          "body": "There is no single \"right\" price strategy. But there IS a right strategy for YOUR business at THIS stage. Today you'll learn the three core approaches, when each works best, and why using the wrong one can trap you for years."
+        },
+        {
+          "type": "content",
+          "headline": "Strategy 1: Penetration Pricing",
+          "body": "Enter the market at a low price to capture volume quickly, then raise over time. Works when: network effects matter (more users = more value), switching costs are high once someone adopts, or you can achieve economies of scale fast. Danger: you attract price-sensitive buyers who leave when you raise prices. Amazon used this brilliantly — lose money on books to capture the customer relationship, then sell everything else. But most small businesses don't have Amazon's runway."
+        },
+        {
+          "type": "content",
+          "headline": "Strategy 2: Price Skimming",
+          "body": "Launch high, then reduce price over time as you move through customer segments. Works when: you have a genuinely new or superior product, early adopters value being first, and production capacity is limited initially. Apple does this with every iPhone — premium buyers pay full price at launch, budget buyers get the older model a year later at a discount. Skimming captures maximum value from each segment in sequence."
+        },
+        {
+          "type": "content",
+          "headline": "Strategy 3: Value-Based (Premium) Pricing",
+          "body": "Set price based on perceived value, maintain it permanently, and never compete on cost. Works when: your brand has strong differentiation, quality signals matter to buyers, and you serve customers who value outcomes over savings. Rolex never discounts. Their price IS the product — it signals exclusivity. Simon argues this is the most profitable long-term strategy for most businesses because it builds margin and brand equity simultaneously."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Which Strategy Fits You?",
+          "body": "Score your business on three factors (1–5): 1) Network effects — does more users = more value? 2) Differentiation — how unique is your product vs alternatives? 3) Brand strength — do customers associate you with quality? High on #1 → consider penetration. High on #2 and #3 → consider premium/value. New & innovative with limited supply → consider skimming. Which strategy are you currently using? Is it the right one?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When is penetration pricing most appropriate?",
+          "type": "mcq",
+          "options": [
+            "When network effects, high switching costs, or economies of scale reward capturing volume quickly",
+            "When you have a luxury brand with strong differentiation",
+            "When production capacity is limited and demand exceeds supply",
+            "When customers are primarily value-driven and quality-focused"
+          ],
+          "correctIndex": 0,
+          "explanation": "Penetration pricing sacrifices short-term margin for rapid volume. It works best when capturing users creates compounding advantages — network effects, switching costs, or scale economies."
+        },
+        {
+          "question": "Price skimming involves starting with a low price and gradually increasing it over time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Skimming is the opposite — start high and reduce over time. You capture maximum value from early adopters willing to pay premium, then reduce price to reach more price-sensitive segments later."
+        },
+        {
+          "question": "Hermann Simon argues which pricing strategy is most profitable long-term for most businesses?",
+          "type": "mcq",
+          "options": [
+            "Value-based (premium) pricing",
+            "Penetration pricing",
+            "Price skimming",
+            "Cost-plus pricing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Simon argues value-based pricing builds both margin and brand equity simultaneously. It's the most sustainable strategy for businesses with genuine differentiation because it never trains customers to expect discounts."
+        }
+      ]
+    },
+    {
+      "id": "pmm-7-pricing-mistakes",
+      "dayNumber": 7,
+      "moduleId": "pmm-module-1",
+      "title": "Common Pricing Mistakes That Kill Profits",
+      "subtitle": "Seven errors almost every business makes — and the frameworks to avoid them. This lesson could be worth thousands to you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Hermann Simon identified the same seven pricing mistakes across thousands of companies — from startups to Fortune 500s.",
+          "body": "The good news: pricing mistakes are predictable and fixable. The bad news: most business owners don't realise they're making them until it's too late. Today you'll audit your pricing against the seven most common — and most costly — errors."
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 1–3: The Foundation Errors",
+          "body": "1) Pricing too low — the #1 mistake. Fear of losing customers leads to chronic undercharging. Fix: test a 10–20% increase on new customers first. 2) Using only cost-plus — ignoring what buyers actually value. Fix: ask about outcomes, not features. 3) One-size-fits-all pricing — charging everyone the same when different segments have different WTPs. Fix: create at least two tiers that reflect different value levels."
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 4–5: The Structural Errors",
+          "body": "4) Too many discounts — every discount trains customers to wait for the next one. Once you become a \"discount brand,\" premium positioning is almost impossible to reclaim. Fix: use discounts strategically and sparingly (max 2× per year). 5) Ignoring price elasticity — not knowing how demand changes with price. If demand barely drops when you raise price, you're dramatically undercharging. Fix: run small price tests on segments to measure real elasticity."
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 6–7: The Execution Errors",
+          "body": "6) Poor price communication — a great price with bad presentation feels expensive. If you list your price without context, comparison, or value framing, it looks like \"just a number.\" Fix: always present price alongside the value it unlocks. 7) Set-and-forget — pricing needs continuous optimisation, not a one-time decision. Markets shift, costs change, value evolves. Fix: schedule a quarterly pricing review (we'll build this system in Lesson 21)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Seven-Mistake Scorecard",
+          "body": "Rate yourself 1–5 on each mistake (1 = you're making it badly, 5 = you've solved it): 1) Priced too low? 2) Using cost-plus? 3) One-size-fits-all? 4) Over-discounting? 5) Ignoring elasticity? 6) Poor price communication? 7) Set-and-forget? Total your score. Under 20? You have significant pricing upside to capture. Above 28? You're ahead of 90% of businesses."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the #1 pricing mistake according to Hermann Simon?",
+          "type": "mcq",
+          "options": [
+            "Pricing too low due to fear of losing customers",
+            "Pricing too high and scaring away buyers",
+            "Copying competitor prices without research",
+            "Changing prices too frequently"
+          ],
+          "correctIndex": 0,
+          "explanation": "Simon's research consistently identifies chronic underpricing as the most common and costly mistake. Fear of customer loss leads businesses to leave enormous profit on the table."
+        },
+        {
+          "question": "Frequent discounting is harmless as long as you return to full price between promotions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every discount trains customers to wait for the next one and erodes premium positioning. Once customers expect discounts, returning to full price feels like a \"price increase\" — making it nearly impossible to reclaim premium brand perception."
+        },
+        {
+          "question": "What should you do if raising your price barely reduces demand?",
+          "type": "mcq",
+          "options": [
+            "Recognise you're significantly undercharging and continue raising until you find resistance",
+            "Keep prices the same since customers are happy",
+            "Lower prices to attract even more volume",
+            "Add more features to justify the current price"
+          ],
+          "correctIndex": 0,
+          "explanation": "Low price elasticity (demand barely drops with price increases) is the clearest signal you're underpriced. The optimal price is where you begin to see meaningful demand reduction — not where you are now."
+        }
+      ]
+    },
+    {
+      "id": "pmm-8-monetisation-models",
+      "dayNumber": 8,
+      "moduleId": "pmm-module-2",
+      "title": "Choosing Your Monetisation Model",
+      "subtitle": "One-time, subscription, usage-based, or hybrid? The model you choose shapes everything — cash flow, growth, and customer behaviour.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Adobe switched from one-time licence ($2,500) to subscription ($50/month) — and tripled their revenue within 4 years.",
+          "body": "The same product, the same customers — but a different monetisation model transformed the entire business. Today you'll learn the major models, their trade-offs, and how to pick the one that maximises YOUR lifetime revenue."
+        },
+        {
+          "type": "content",
+          "headline": "The Five Core Monetisation Models",
+          "body": "1) One-time purchase — customer pays once, owns it forever. Simple but unpredictable revenue. 2) Subscription/recurring — predictable monthly/annual income, but requires constant value delivery. 3) Usage-based — pay per use (API calls, transactions). Scales with customer success. 4) Freemium — free base tier, paid upgrades. Great for acquisition, risky for conversion. 5) Hybrid — combine models (e.g., base subscription + usage overage). Most SaaS companies are moving here."
+        },
+        {
+          "type": "content",
+          "headline": "The Model-Market Fit Framework",
+          "body": "Ramanujam argues your monetisation model must match how customers receive value: If value is ongoing → subscription (Netflix, gym). If value varies by usage → usage-based (AWS, Uber). If value is delivered once → one-time (course, book). If value compounds with adoption → freemium + paid (Slack, Dropbox). Mismatching model and value delivery causes friction. A course that charges monthly feels wrong. A tool used daily that charges per-use feels punishing."
+        },
+        {
+          "type": "content",
+          "headline": "Revenue Quality: Not All £1 Is Equal",
+          "body": "Investors and acquirers value recurring revenue at 5–15× annual revenue. One-time revenue? 1–3×. Why? Predictability. A business with £100K ARR (annual recurring revenue) is worth more than one with £100K in one-time sales because next year's income is already partially secured. Even if you never plan to sell, recurring revenue gives you: predictable cash flow, lower acquisition costs (retain > re-acquire), and compounding growth."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Model Audit",
+          "body": "Answer: 1) How does your customer receive value — once, ongoing, or variable? 2) Is your current model aligned with that? 3) Could you add a recurring element (maintenance, updates, community, consumables)? 4) What would switching to subscription look like — even partially? If 70%+ of your value is delivered ongoing but you charge one-time, you may be leaving recurring revenue on the table."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Adobe's switch from one-time licensing to subscription dramatically increase revenue?",
+          "type": "mcq",
+          "options": [
+            "Subscriptions create predictable recurring income and lower the barrier to entry for new customers",
+            "They raised the total price customers paid over time",
+            "Customers preferred paying more for the same product",
+            "The subscription model eliminated all competition"
+          ],
+          "correctIndex": 0,
+          "explanation": "Subscriptions lowered the upfront cost (making it accessible to more buyers) while creating predictable, compounding recurring revenue. More customers paying consistently = higher total revenue."
+        },
+        {
+          "question": "A usage-based model works best when value delivery is constant regardless of how much the customer uses the product.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Usage-based pricing works when value varies with consumption. If value is constant regardless of usage, a flat subscription is more appropriate — usage-based would penalise heavy users."
+        },
+        {
+          "question": "Why is recurring revenue valued higher than one-time revenue by investors?",
+          "type": "mcq",
+          "options": [
+            "Because it's predictable — future income is partially secured, reducing risk",
+            "Because recurring revenue is always larger in total amount",
+            "Because one-time purchases indicate a failing business",
+            "Because subscription customers never churn"
+          ],
+          "correctIndex": 0,
+          "explanation": "Recurring revenue is valued 5–15× because predictability reduces risk. Next year's income is partially locked in, making the business more stable and plannable."
+        }
+      ]
+    },
+    {
+      "id": "pmm-9-subscription-pricing",
+      "dayNumber": 9,
+      "moduleId": "pmm-module-2",
+      "title": "Subscription & Recurring Revenue Pricing",
+      "subtitle": "The subscription economy is booming — but most businesses price their subscriptions wrong. Learn the frameworks that maximise LTV.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average subscription business loses 5–7% of customers monthly. At that rate, you replace your entire customer base every 18 months.",
+          "body": "Subscription pricing isn't just \"divide the annual price by 12.\" It's a completely different psychology — one where retention IS the strategy and lifetime value matters more than any single transaction. Today you'll learn how to price subscriptions that stick."
+        },
+        {
+          "type": "content",
+          "headline": "The LTV Equation: Price × Retention",
+          "body": "Customer Lifetime Value (LTV) = Average Monthly Revenue × Average Months Retained. A £50/month subscription with 24-month retention = £1,200 LTV. A £30/month subscription with 40-month retention = £1,200 LTV. Same outcome — but the second business is healthier because lower churn compounds. The insight: sometimes a lower price with better retention produces MORE total revenue per customer. Price for stickiness, not just per-month maximum."
+        },
+        {
+          "type": "content",
+          "headline": "Annual vs Monthly: The Trade-Off",
+          "body": "Monthly: lower commitment, easier to start, but higher churn (customers can leave anytime). Annual: higher commitment, cash up front, 40–60% lower churn (sunk cost + commitment bias). Best practice: offer both with a genuine discount for annual (15–25% off). The discount isn't \"lost revenue\" — it's buying retention. A customer who commits annually is 3× more likely to still be a customer next year than one paying monthly."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Aha Moment\" Pricing Strategy",
+          "body": "The biggest subscription mistake: charging before customers experience value. If someone pays on day 1 but doesn't feel the benefit until day 14, those 13 days are \"buyer's remorse incubation.\" The fix: align your first charge with the first value moment. Free trials work because they let customers hit the \"aha moment\" before paying. When pricing, ask: \"How fast can I deliver the first win?\" Then structure billing around that timeline."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: LTV Optimisation",
+          "body": "If you have (or plan) a subscription: 1) Calculate your current LTV (monthly price × average months retained). 2) What's your current monthly churn rate? 3) If you reduced price by 10% but improved retention by 20%, would LTV increase? (Do the maths — it often does.) 4) What's your \"aha moment\" — when do customers first feel the value? Is your billing aligned with it?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the formula for Customer Lifetime Value in a subscription business?",
+          "type": "mcq",
+          "options": [
+            "Average Monthly Revenue × Average Months Retained",
+            "Total Revenue ÷ Number of Customers",
+            "Monthly Price × 12 months",
+            "Acquisition Cost × Profit Margin"
+          ],
+          "correctIndex": 0,
+          "explanation": "LTV = monthly revenue × months retained. This is why retention is as important as price — doubling retention doubles LTV just as effectively as doubling price."
+        },
+        {
+          "question": "Annual subscribers typically have 40–60% lower churn than monthly subscribers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Annual commitment creates both sunk-cost psychology and commitment bias. Customers who pay upfront are significantly more invested in using (and continuing) the product."
+        },
+        {
+          "question": "Why is it dangerous to charge customers before they experience their first \"aha moment\"?",
+          "type": "mcq",
+          "options": [
+            "The gap between payment and value creates buyer's remorse, increasing early churn",
+            "Customers will demand refunds immediately",
+            "It's illegal in most markets to charge before delivering value",
+            "Customers won't share the product with others"
+          ],
+          "correctIndex": 0,
+          "explanation": "When customers pay before feeling value, every day without a win builds doubt. This is the #1 cause of early churn in subscription businesses — the cure is aligning billing with the first value delivery."
+        }
+      ]
+    },
+    {
+      "id": "pmm-10-tiered-pricing",
+      "dayNumber": 10,
+      "moduleId": "pmm-module-2",
+      "title": "Tiered Pricing & Good-Better-Best Frameworks",
+      "subtitle": "The most powerful pricing architecture in business. Three tiers, correctly designed, capture value from every segment simultaneously.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Companies that switch from single-price to three tiers see an average 25% revenue increase — without changing the product.",
+          "body": "One price for everyone means you're either too expensive for budget buyers or too cheap for premium ones. Tiered pricing solves both problems simultaneously. Today you'll learn the \"Good-Better-Best\" framework that captures maximum revenue from every customer segment."
+        },
+        {
+          "type": "content",
+          "headline": "The Good-Better-Best Framework",
+          "body": "Three tiers, three jobs: GOOD (entry tier) — stripped-down version at a low price. Job: capture price-sensitive buyers who'd otherwise go to a competitor. BETTER (middle tier) — the \"real\" product with full features. Job: this is where 60–70% of customers should land. BEST (premium tier) — everything + extras for power users. Job: capture maximum value from high-WTP segments. The magic: the existence of three options changes how people choose."
+        },
+        {
+          "type": "content",
+          "headline": "The Decoy Effect & Compromise Effect",
+          "body": "Two psychological forces make tiered pricing powerful: 1) The Compromise Effect — when faced with three options, most people choose the middle. It feels \"safe\" — not too cheap, not too expensive. Your BETTER tier benefits from this bias automatically. 2) The Decoy Effect — by making the GOOD tier slightly unattractive relative to BETTER, you make the middle tier look like incredible value by comparison. Design your tiers so the jump from Good to Better feels like a no-brainer."
+        },
+        {
+          "type": "content",
+          "headline": "Pricing the Tiers: The 1-2.5-5 Rule",
+          "body": "A practical starting framework: if your GOOD tier is £X, BETTER should be ~2.5× and BEST should be ~5×. Example: £19 / £49 / £99. Why these ratios? The gap between Good and Better needs to feel like a meaningful upgrade but not a painful jump. The gap between Better and Best signals \"premium\" without alienating the middle. The BEST tier also makes BETTER look affordable — that's its hidden job, even if few people buy it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Three Tiers",
+          "body": "If you currently have a single price, try this exercise: 1) What could you strip OUT to create a \"Good\" entry tier? (Limit usage, features, support, or speed.) 2) What could you ADD to create a \"Best\" premium tier? (Priority access, extra features, 1-on-1 support, white-glove onboarding.) 3) Price them using the 1-2.5-5 ratio. Does the middle tier now feel like obvious value? That's the goal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In a Good-Better-Best pricing structure, where should the majority (60–70%) of customers land?",
+          "type": "mcq",
+          "options": [
+            "The BETTER (middle) tier",
+            "The GOOD (entry) tier",
+            "The BEST (premium) tier",
+            "Evenly distributed across all three"
+          ],
+          "correctIndex": 0,
+          "explanation": "The middle tier is the \"real\" product designed for the majority. The Compromise Effect naturally drives most buyers to the middle option, which should be your most profitable tier."
+        },
+        {
+          "question": "The primary job of the BEST (premium) tier is to generate the most revenue directly.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The premium tier has a dual job: capture value from high-WTP buyers AND make the middle tier look affordable by comparison. Even if few buy it, its existence increases middle-tier conversions."
+        },
+        {
+          "question": "What is the \"Compromise Effect\" in tiered pricing?",
+          "type": "mcq",
+          "options": [
+            "When faced with three options, most people instinctively choose the middle as the \"safe\" choice",
+            "Customers compromise on features to get a lower price",
+            "Businesses must compromise between profit and customer satisfaction",
+            "The middle tier is always priced as a compromise between costs and value"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Compromise Effect is a cognitive bias where people default to the middle option among three choices — it feels neither too indulgent nor too restrictive. Smart tier design exploits this."
+        }
+      ]
+    },
+    {
+      "id": "pmm-11-freemium",
+      "dayNumber": 11,
+      "moduleId": "pmm-module-2",
+      "title": "Freemium: When It Works and When It Doesn't",
+      "subtitle": "Free can be your best acquisition tool or your worst revenue killer. Learn the rules that separate Spotify from the graveyard.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Spotify: 60% free users, wildly successful. Evernote: 95% free users, nearly went bankrupt. Same model — opposite outcomes.",
+          "body": "Freemium is the most misunderstood pricing model in business. Done right, it's an unstoppable growth engine. Done wrong, it's an expensive way to serve millions of people who never pay you. Today you'll learn the conditions that make freemium work — and when to avoid it entirely."
+        },
+        {
+          "type": "content",
+          "headline": "The Freemium Conversion Equation",
+          "body": "Freemium only works when: (Free users × Conversion rate × Paid ARPU) > (Cost of serving free users × Total free users). Spotify converts ~27% to paid — outstanding. Most B2B freemium products convert 2–5%. If your conversion is below 3% and free users cost money to serve, you're running a charity. The critical question: can you serve free users at near-zero marginal cost while giving them enough value to eventually want more?"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Freemium Boundaries",
+          "body": "What you make free vs paid determines everything. Three approaches: 1) Feature-limited — free gets core features, paid unlocks advanced ones (Slack: search history limit). 2) Usage-limited — free gets a quota, paid removes limits (Dropbox: storage cap). 3) Time-limited — free trial expires (Netflix: 30 days). Rule of thumb: the free tier should deliver enough value to be genuinely useful AND create natural friction that makes upgrading feel irresistible."
+        },
+        {
+          "type": "content",
+          "headline": "When to AVOID Freemium",
+          "body": "Don't use freemium when: 1) Marginal cost per user is high (physical goods, heavy compute, human service). 2) Your market is small — you need revenue from every customer, not a huge free pool. 3) Free users can't naturally discover premium value through usage. 4) Your product delivers full value immediately (no \"grow into\" premium features). If these apply, use a free trial with a clear end date instead — it creates urgency that freemium lacks."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Freemium Decision Matrix",
+          "body": "Score your business (Yes/No): 1) Can you serve free users at near-zero cost? 2) Is your target market large (100K+ potential users)? 3) Does your product have features that users naturally grow into over time? 4) Can free users discover premium value through regular use? 3–4 \"Yes\" answers: freemium could work. 0–2 \"Yes\" answers: stick with paid-only or a time-limited trial."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What conversion rate do most B2B freemium products achieve?",
+          "type": "mcq",
+          "options": [
+            "2–5%",
+            "15–20%",
+            "25–30%",
+            "40–50%"
+          ],
+          "correctIndex": 0,
+          "explanation": "Most B2B freemium products convert only 2–5% of free users to paid. This means you need either massive volume or near-zero cost to serve free users for the model to work."
+        },
+        {
+          "question": "Freemium works best when the target market is small and every customer counts.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Freemium requires a large addressable market because only a small percentage will convert. In small markets, you need revenue from nearly every customer — a paid model or free trial is more appropriate."
+        },
+        {
+          "question": "What separates a successful freemium product from one that bleeds money?",
+          "type": "mcq",
+          "options": [
+            "Near-zero marginal cost per free user combined with natural friction that drives upgrades",
+            "Having the most generous free tier in the market",
+            "Aggressive marketing to free users about premium features",
+            "Limiting the free tier so severely that it's barely usable"
+          ],
+          "correctIndex": 0,
+          "explanation": "Successful freemium needs both low cost-to-serve (so free users don't drain resources) and natural upgrade triggers (so users genuinely want premium without being forced)."
+        }
+      ]
+    },
+    {
+      "id": "pmm-12-dynamic-pricing",
+      "dayNumber": 12,
+      "moduleId": "pmm-module-2",
+      "title": "Dynamic Pricing & Segmentation",
+      "subtitle": "Charge different prices to different customers at different times — ethically. The airlines mastered it. Now you can too.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The person sitting next to you on a flight may have paid 5× more for the same seat. That's dynamic pricing — and it generates billions.",
+          "body": "Every customer has a different willingness to pay. Charging everyone the same price means you're either too expensive for some or too cheap for others. Dynamic pricing and segmentation let you capture more value from each transaction — without alienating anyone. Today you'll learn how."
+        },
+        {
+          "type": "content",
+          "headline": "Price Segmentation: The Core Principle",
+          "body": "Simon's golden rule: \"Different customers, different prices — as long as the difference is justifiable.\" Segmentation works by offering different prices based on: 1) Customer type (student, business, enterprise). 2) Timing (early bird vs last-minute). 3) Volume (more units = lower per-unit price). 4) Channel (direct vs marketplace). 5) Geography (UK vs India pricing). The key: each segment must perceive their price as fair for their context."
+        },
+        {
+          "type": "content",
+          "headline": "Fences: Making Segmentation Work",
+          "body": "A \"fence\" prevents high-WTP customers from accessing low-WTP prices. Without fences, everyone takes the cheapest option. Examples: Student discounts require a valid ID (fence: proof of status). Annual pricing is cheaper per month (fence: upfront commitment). Economy flights have no legroom (fence: discomfort). Business pricing includes priority support (fence: added features). Good fences feel logical and fair to both sides — never punitive."
+        },
+        {
+          "type": "content",
+          "headline": "Time-Based Dynamic Pricing",
+          "body": "Prices that change based on timing: Early-bird pricing — reward commitment (lower price for booking ahead). Surge pricing — capture urgency (Uber charges more at peak demand). Seasonal pricing — reflect natural demand cycles. Launch pricing — introductory rate for early adopters. The principle: people who buy earlier or during low-demand periods are more price-sensitive. Those who buy last-minute or during peaks have higher WTP. Align price to context."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Identify Your Segments",
+          "body": "List 3 types of customers who buy from you. For each: 1) How much value do they get? 2) What's their likely WTP? 3) What \"fence\" could justify a different price? Example: A freelancer (low WTP, needs basics), an agency (medium WTP, needs collaboration), an enterprise (high WTP, needs security/support). Could you charge each differently — with justified reasons?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"fence\" in price segmentation?",
+          "type": "mcq",
+          "options": [
+            "A mechanism that prevents high-WTP customers from accessing prices meant for lower-WTP segments",
+            "A legal barrier that prevents competitors from copying your pricing",
+            "A minimum purchase requirement",
+            "The maximum price a customer segment will accept"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fences ensure that customers self-select into the right tier. Without them, everyone takes the cheapest option. Good fences feel fair (student ID, commitment period, feature differences)."
+        },
+        {
+          "question": "Dynamic pricing is only applicable to airlines and ride-sharing companies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dynamic pricing applies to any business where demand varies by time, segment, or context. Early-bird pricing, seasonal rates, volume discounts, and geographic pricing are all forms available to any business."
+        },
+        {
+          "question": "According to Hermann Simon, what makes price segmentation ethical and effective?",
+          "type": "mcq",
+          "options": [
+            "Each segment must perceive their price as fair and justified for their specific context",
+            "All customers must be informed about every price tier available",
+            "The lowest price must be available to anyone who asks",
+            "Price differences must be under 20% between segments"
+          ],
+          "correctIndex": 0,
+          "explanation": "Simon's principle: different prices are acceptable when the difference is justifiable. Student discounts, volume pricing, and feature-based tiers all feel fair because the reason for the difference is clear."
+        }
+      ]
+    },
+    {
+      "id": "pmm-13-bundling",
+      "dayNumber": 13,
+      "moduleId": "pmm-module-2",
+      "title": "Bundling & Unbundling for Maximum Revenue",
+      "subtitle": "Sometimes combining products increases value. Sometimes breaking them apart does. Master both strategies to maximise revenue per customer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Microsoft Office as a bundle: £12.99/month. Excel alone would cost £7.99. Word alone: £7.99. The bundle captures more total value than selling separately.",
+          "body": "Bundling is one of the most powerful (and misunderstood) pricing tools. It can increase perceived value, reduce comparison shopping, and capture more revenue per customer. But done wrong, it destroys margins. Today you'll learn when to bundle, when to unbundle, and how to design bundles that maximise willingness to pay."
+        },
+        {
+          "type": "content",
+          "headline": "Why Bundling Works: The WTP Averaging Effect",
+          "body": "Every customer values each product differently. Customer A might pay £10 for Product X but only £3 for Product Y. Customer B: £3 for X, £10 for Y. Sold separately at £10 each, you get ONE sale from each customer (£20 total). Bundled at £12, BOTH customers buy (£24 total). Bundling works because it averages out individual WTP differences — customers who overvalue one component subsidise their undervaluation of another."
+        },
+        {
+          "type": "content",
+          "headline": "Three Bundling Strategies",
+          "body": "1) Pure bundling — only sold as a bundle (cable TV packages). Risk: alienates customers who want only one item. 2) Mixed bundling — available individually AND as a bundle at a discount. Best of both worlds — captures bundle buyers AND individual purchasers. 3) Leader bundling — a cheap/free \"leader\" bundled with the profitable main product. Example: free printer + expensive ink. Mixed bundling almost always outperforms pure bundling."
+        },
+        {
+          "type": "content",
+          "headline": "When to Unbundle Instead",
+          "body": "Unbundling wins when: 1) Customers only want one component and resent paying for extras. 2) You can charge premium prices for high-value individual items (consulting by the hour vs day rate). 3) Your bundle hides the value of a star product (a £500 feature buried in a £99 bundle). Signs you should unbundle: customers complain about paying for things they don't use. A specific feature gets requests for standalone access. Your bundle price hasn't increased despite adding components."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Bundle Opportunity Audit",
+          "body": "List everything you sell (products, services, features, add-ons). Now ask: 1) Which items are frequently purchased together? (Natural bundle.) 2) Which items have low perceived value alone but high value alongside others? (Bundle candidate.) 3) Are any items so valuable they'd command a higher price if sold individually? (Unbundle candidate.) Design one new bundle OR identify one item to unbundle."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does bundling often generate more total revenue than selling items individually?",
+          "type": "mcq",
+          "options": [
+            "It averages out individual WTP differences — customers who overvalue one item subsidise their undervaluation of another",
+            "Bundles always cost less to produce than individual items",
+            "Customers are irrational and always prefer packages",
+            "Bundling reduces the need for marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "The \"WTP averaging effect\" means bundling captures value from customers who wouldn't buy all items individually. Different valuations across products get smoothed into a single attractive price point."
+        },
+        {
+          "question": "Pure bundling (only available as a bundle) usually outperforms mixed bundling (bundle + individual options).",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mixed bundling almost always outperforms pure bundling because it captures both: customers who want the full package AND those who only want individual items. Pure bundling alienates the latter group."
+        },
+        {
+          "question": "When should you consider unbundling a product?",
+          "type": "mcq",
+          "options": [
+            "When a star component is so valuable it would command a higher price sold individually",
+            "When you want to simplify your product line",
+            "When customers love everything in the bundle equally",
+            "When competitor bundles are cheaper than yours"
+          ],
+          "correctIndex": 0,
+          "explanation": "Unbundling wins when a high-value component is hidden inside a bundle at a lower effective price than it could command standalone. Separating it lets you capture its full value."
+        }
+      ]
+    },
+    {
+      "id": "pmm-14-anchoring-decoys",
+      "dayNumber": 14,
+      "moduleId": "pmm-module-2",
+      "title": "Anchoring, Decoys & Price Framing",
+      "subtitle": "The same price can feel expensive or cheap depending entirely on what's placed next to it. Master the art of context design.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Economist offered: Digital-only £59, Print-only £125, Print+Digital £125. Nobody chose print-only — but removing it reduced digital+print sales by 43%.",
+          "body": "The \"useless\" option wasn't useless at all. It was a decoy that made the premium bundle look like an incredible deal. Price framing is the art of controlling CONTEXT — and context controls decisions. Today you'll learn three framing techniques that make your price feel irresistibly fair."
+        },
+        {
+          "type": "content",
+          "headline": "Anchoring: The First Number Wins",
+          "body": "The brain uses the first number it encounters as a reference point for all subsequent judgments. Show someone \"Was £997, now £297\" and £297 feels like a steal — because £997 is the anchor. Without the anchor, £297 might feel expensive. Ethical anchoring: show the full value first (courses included worth £2,000+), then reveal the actual price. The gap between anchor and price IS the perceived deal. The bigger the gap, the more irresistible the purchase."
+        },
+        {
+          "type": "content",
+          "headline": "Decoy Pricing: The \"Useless\" Option That Sells",
+          "body": "A decoy is an option designed to be inferior — its job is to make another option look better by comparison. Rules for effective decoys: 1) Price the decoy close to (or equal to) the target option. 2) Make the decoy obviously worse than the target but similar enough to compare. 3) The decoy must look like a legitimate option — too obviously bad and it's ignored. Example: Small coffee £3, Medium £5.50, Large £6 — the medium is the decoy that makes the large feel like obvious value."
+        },
+        {
+          "type": "content",
+          "headline": "Reframing: Change the Denominator",
+          "body": "Same price, different frames: \"£365/year\" vs \"£1/day\" vs \"Less than your daily coffee.\" The daily framing makes the annual price feel trivial — because £1 is compared against everyday purchases, not against other annual subscriptions. More reframing techniques: Per-result framing: \"£50 per lead generated.\" Time framing: \"Pays for itself in 3 days.\" Comparison framing: \"Less than hiring a freelancer for one hour.\" Always frame price against something that makes it look small."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Frame Your Price Three Ways",
+          "body": "Take your current price and create three alternative frames: 1) An ANCHOR — what's the full value of everything included? (Make it 3–10× the price.) 2) A REFRAME — break it into daily cost, per-use cost, or compare it to something more expensive. 3) A DECOY — what \"option B\" could you add that makes your main offer look like the obvious choice? Which frame feels most compelling? Test it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In The Economist pricing experiment, why did the \"print-only\" option (which nobody chose) increase print+digital sales?",
+          "type": "mcq",
+          "options": [
+            "It served as a decoy that made print+digital look like incredible value at the same price",
+            "It confused customers into buying the most expensive option",
+            "It signalled that print was worth £125, making the bundle seem fair",
+            "Customers felt sorry for the print-only option being ignored"
+          ],
+          "correctIndex": 0,
+          "explanation": "The print-only option at £125 made print+digital at £125 look like an obvious deal — you get digital FREE. Without this comparison, more people defaulted to the cheaper digital-only option."
+        },
+        {
+          "question": "The \"anchoring effect\" only works when the anchor price is a real price the customer could actually pay.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anchoring works even with arbitrary numbers. Research shows that even random high numbers (like a social security number) influence subsequent price judgments. The first number encountered sets the reference point regardless of its source."
+        },
+        {
+          "question": "Why is \"£1 per day\" more effective than \"£365 per year\" for the same subscription?",
+          "type": "mcq",
+          "options": [
+            "The daily frame is compared against trivial everyday purchases (coffee), making it feel insignificant",
+            "Customers are bad at multiplication and don't realise it's the same price",
+            "Daily billing is more convenient than annual billing",
+            "It makes the product seem cheaper than it actually is"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reframing changes the comparison context. £1/day is judged against daily discretionary spending (coffee, snacks) where it feels trivial. £365/year is judged against other annual commitments where it feels significant."
+        }
+      ]
+    },
+    {
+      "id": "pmm-15-raising-prices",
+      "dayNumber": 15,
+      "moduleId": "pmm-module-3",
+      "title": "How to Raise Your Prices Without Losing Customers",
+      "subtitle": "The step-by-step playbook for implementing price increases that stick — without triggering mass cancellations.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Netflix raised prices 18% and lost only 0.1% of subscribers. Most businesses are terrified of raising prices — but the data says customers rarely leave.",
+          "body": "The fear of raising prices is almost always worse than the reality. Studies show that a 10% price increase typically results in less than 2% customer loss — meaning net revenue jumps significantly. Today you'll learn the exact playbook for raising prices confidently and strategically."
+        },
+        {
+          "type": "content",
+          "headline": "The Grandfather Strategy",
+          "body": "The lowest-risk approach: keep existing customers at their current price (grandfather them) while new customers pay the higher rate. Benefits: zero churn from the increase, existing customers feel valued, you test the new price on people with no reference point. Then after 6–12 months, migrate legacy customers with advance notice. By then, the higher price is \"normal\" and the transition feels smaller."
+        },
+        {
+          "type": "content",
+          "headline": "The Value-Add Price Increase",
+          "body": "Instead of \"we're charging more for the same thing,\" make it \"we're giving you more — here's the new price for the upgraded version.\" Add a meaningful improvement alongside the increase: new feature, better support, faster delivery, bonus content. The psychological shift: you're not raising the price — you're launching a better version. Customers who don't want the extras can stay on the old plan (at the old price) if you offer that option."
+        },
+        {
+          "type": "content",
+          "headline": "The Communication Framework",
+          "body": "How you announce matters more than the number: 1) Lead with value — remind them of everything they get and recent improvements. 2) Be transparent — state the new price clearly (no hiding). 3) Give notice — 30–60 days minimum. 4) Explain why — costs, investment in quality, market alignment. 5) Offer an out — annual lock-in at the old rate rewards loyalty. Never apologise for charging what you're worth. Confidence signals value; apology signals doubt."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Plan Your Next Price Increase",
+          "body": "If you could raise your price 15% next month: 1) Which strategy would you use — grandfather, value-add, or direct increase? 2) What value would you highlight in your announcement? 3) What advance notice would you give? 4) What loyalty option could you offer (annual lock-in, bonus for staying)? Draft the announcement email in 3 sentences. If it feels uncomfortable, that's normal — do it anyway."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What typically happens when a business raises prices by 10%?",
+          "type": "mcq",
+          "options": [
+            "Less than 2% of customers leave, resulting in significant net revenue increase",
+            "About 10% of customers leave, breaking even on revenue",
+            "Most customers leave immediately for cheaper competitors",
+            "Revenue stays flat because lost customers offset the price increase"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research consistently shows price increases cause far less churn than expected. A 10% increase with 2% customer loss means ~8% net revenue gain — pure profit."
+        },
+        {
+          "question": "When announcing a price increase, you should apologise to show empathy toward customers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apologising signals that you believe the increase isn't justified. Instead, lead with value and communicate confidently. Confidence signals worth; apology signals doubt about your own pricing."
+        },
+        {
+          "question": "What is the \"grandfather strategy\" for price increases?",
+          "type": "mcq",
+          "options": [
+            "Keep existing customers at their current price while only new customers pay the higher rate",
+            "Gradually increase prices by small amounts each month",
+            "Offer senior discounts to long-term customers",
+            "Announce the increase a year in advance"
+          ],
+          "correctIndex": 0,
+          "explanation": "Grandfathering protects existing customers from immediate change, causes zero churn, and lets you test the new price on buyers without a reference point. Legacy migration happens later when the new price is normalised."
+        }
+      ]
+    },
+    {
+      "id": "pmm-16-discounting-strategy",
+      "dayNumber": 16,
+      "moduleId": "pmm-module-3",
+      "title": "Discounting Strategy: When, How & How Much",
+      "subtitle": "Discounts can accelerate growth or destroy brand value. Learn the rules that separate strategic discounting from self-destruction.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "J.C. Penney was addicted to discounts. When a new CEO removed them and offered \"everyday low prices,\" sales dropped 25% in one year.",
+          "body": "Once customers expect discounts, removing them feels like a price increase — even if the \"new\" price is lower than what they actually paid. Discounting creates dependency. Today you'll learn when discounts make strategic sense, when they destroy value, and how to use them without creating addiction."
+        },
+        {
+          "type": "content",
+          "headline": "The Discount Damage Formula",
+          "body": "A 20% discount means you need to sell 33% more units just to make the same revenue. A 50% discount? You need DOUBLE the volume. Most businesses can't generate that extra demand. The hidden costs: 1) Anchor erosion — the discounted price becomes the new reference price. 2) Margin destruction — discounts come directly off profit. 3) Brand dilution — frequent discounts signal desperation. 4) Customer training — buyers learn to wait for sales."
+        },
+        {
+          "type": "content",
+          "headline": "Strategic Discounts That Work",
+          "body": "Not all discounts are bad. Rules for strategic use: 1) Time-bounded — clear start and end date (never \"ongoing sale\"). 2) Justified — a reason that isn't \"we need more sales\" (launch, loyalty reward, seasonal clearance). 3) Rare — max 2–3 times per year. 4) Segment-specific — students, first-time buyers, annual commitments. 5) Value-added alternative — instead of cutting price, add a bonus (\"Buy now, get X free\"). Adding costs you less than discounting but feels equally generous."
+        },
+        {
+          "type": "content",
+          "headline": "Alternatives to Discounting",
+          "body": "When you feel the urge to discount, try instead: 1) Add a bonus — a free extra costs you less than a price cut. 2) Extend payment terms — \"pay over 3 months\" feels easier without reducing your revenue. 3) Offer a guarantee — reduces risk instead of price. 4) Bundle in extras — more perceived value at the same price. 5) Create urgency differently — limited availability, cohort starts, exclusive access. Each achieves the sales boost without training discount addiction."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Discount Audit",
+          "body": "Review your last 6 months: 1) How many times did you discount? 2) Was each time bounded, justified, and segment-specific — or reactive? 3) Did sales return to normal after, or do customers now wait for discounts? 4) For your next \"promotion,\" design a value-add alternative instead of a price cut. What bonus or extra could you offer that costs less than a 20% discount?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "If you offer a 20% discount, how many more units do you need to sell to maintain the same total revenue?",
+          "type": "mcq",
+          "options": [
+            "33% more units",
+            "20% more units",
+            "50% more units",
+            "10% more units"
+          ],
+          "correctIndex": 0,
+          "explanation": "At 20% off, each sale generates only 80% of normal revenue. To hit the same total: 100% ÷ 80% = 1.25, meaning you need 25% more sales at minimum — and 33% more to maintain the same PROFIT (since costs stay fixed)."
+        },
+        {
+          "question": "The best alternative to discounting is to add a bonus or extra that costs you less than the discount would.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Value-adds (bonuses, extras, extended terms) provide the same psychological incentive to buy without training discount addiction or eroding your reference price. They typically cost less than the margin given up in a discount."
+        },
+        {
+          "question": "Why did J.C. Penney's switch to \"everyday low prices\" fail despite offering genuinely lower prices?",
+          "type": "mcq",
+          "options": [
+            "Customers were trained to perceive value through discounts — removing them felt like losing the \"deal\" even at lower actual prices",
+            "The everyday prices were actually higher than the discounted prices",
+            "Customers didn't trust the new pricing model",
+            "Competitors offered better everyday prices"
+          ],
+          "correctIndex": 0,
+          "explanation": "Discount addiction changes perception. Customers felt the thrill of \"saving 40%\" — a flat low price, even if genuinely cheaper, removed the psychological reward of getting a deal. The lesson: once you start discounting, stopping is almost impossible."
+        }
+      ]
+    },
+    {
+      "id": "pmm-17-new-product-pricing",
+      "dayNumber": 17,
+      "moduleId": "pmm-module-3",
+      "title": "Pricing for New Products & Market Entry",
+      "subtitle": "You only get one chance to set an initial price. Get it wrong and repositioning can take years. Here's how to get it right.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "72% of new products fail to meet revenue targets — and Ramanujam's research shows most failures trace back to pricing decisions made too late.",
+          "body": "Most companies build first, price later. They create something, then try to figure out what it's worth. This leads to products nobody will pay for, prices that don't cover costs, or missed premium positioning. Today you'll learn how to price a new product from the start — before you build it."
+        },
+        {
+          "type": "content",
+          "headline": "Monetizing Innovation: Price Before You Build",
+          "body": "Ramanujam's core thesis: have the pricing conversation BEFORE product development, not after. Why? Because willingness to pay determines what you should build. If customers won't pay enough to make Feature X profitable, don't build it. If they'll pay a premium for Feature Y, prioritise it. Pricing isn't a post-launch decision — it's a design input. The products that succeed are designed around a price point, not priced after design."
+        },
+        {
+          "type": "content",
+          "headline": "The Four New Product Pricing Traps",
+          "body": "Ramanujam identifies four failure patterns: 1) Feature shock — too many features, price too high, nobody buys. Fix: strip to core value. 2) Minivation — great product but priced too low. Customers love it but you can't sustain the business. Fix: research WTP before setting price. 3) Hidden gem — right product, wrong market. Fix: find the segment that values it most. 4) Undead — no one will pay enough at any price. Fix: kill it early and move on."
+        },
+        {
+          "type": "content",
+          "headline": "The Launch Price Ladder",
+          "body": "A practical framework for new product pricing: 1) Research WTP across 2–3 segments before building. 2) Design the product to deliver value at the target price point. 3) Launch at the higher end of the acceptable range (you can always come down — going up is harder). 4) Use early-bird pricing for initial customers (creates urgency + builds proof). 5) Raise to full price within 60–90 days. 6) Monitor elasticity and adjust quarterly. Starting high and adjusting down feels like a deal. Starting low and adjusting up feels like a penalty."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Pre-Price Your Next Offer",
+          "body": "Think of a product or service you're considering launching. Before you build anything: 1) Describe the core outcome in one sentence. 2) Ask 3–5 target customers: \"If this existed and delivered [outcome], what would you expect to pay?\" 3) Would that price cover your costs + profit margin? 4) If WTP is too low — what would you need to add or change for them to pay more? This 30-minute exercise can save months of building the wrong thing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Ramanujam, when should pricing conversations happen?",
+          "type": "mcq",
+          "options": [
+            "Before product development — pricing should inform what you build",
+            "After the product is built but before launch",
+            "During beta testing with early users",
+            "After launch based on initial sales data"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ramanujam's core insight: pricing is a design input, not a post-launch decision. WTP determines what to build, which features to prioritise, and whether the product is viable at all."
+        },
+        {
+          "question": "A \"minivation\" is a new product that customers love but is priced too low to sustain the business.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Minivations are products where the quality and customer love is there, but the price doesn't capture enough value to fund growth. The product succeeds with users but fails as a business."
+        },
+        {
+          "question": "Why is it better to launch a new product at the higher end of the acceptable price range?",
+          "type": "mcq",
+          "options": [
+            "You can always lower prices later (which feels like a deal), but raising them feels like a penalty",
+            "Higher prices always attract more customers",
+            "It eliminates the need for future price adjustments",
+            "Customers prefer paying more for new products"
+          ],
+          "correctIndex": 0,
+          "explanation": "Starting high preserves pricing power. Reducing price = promotional deal (positive). Raising price = perceived punishment (negative). It's psychologically much harder to raise prices than to strategically lower them."
+        }
+      ]
+    },
+    {
+      "id": "pmm-18-international-pricing",
+      "dayNumber": 18,
+      "moduleId": "pmm-module-3",
+      "title": "International & Multi-Market Pricing",
+      "subtitle": "The same product can command wildly different prices in different markets. Learn how to capture value globally without cannibalising yourself.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Big Mac costs $5.69 in the US, $2.29 in India, and $7.73 in Switzerland. Same product — prices set by local purchasing power and WTP.",
+          "body": "If you sell internationally (or plan to), one global price leaves massive value on the table. Customers in high-income markets can pay more. Customers in lower-income markets are locked out by prices set for London or New York. Today you'll learn how to price across borders strategically."
+        },
+        {
+          "type": "content",
+          "headline": "Purchasing Power Parity (PPP) Pricing",
+          "body": "PPP adjusts your price based on the relative purchasing power of each country. If your product is $100 in the US, PPP-adjusted prices might be: UK $95, Australia $85, Brazil $45, India $25. Tools like purchasing power indexes make this easy to calculate. The benefit: you capture revenue from markets that would never pay US/UK prices, while maintaining premium pricing where economies support it. Total revenue increases even though per-unit revenue varies."
+        },
+        {
+          "type": "content",
+          "headline": "The Fencing Challenge: Preventing Arbitrage",
+          "body": "The risk: customers in high-price markets use VPNs or tricks to access low-price markets. Solutions: 1) Payment method verification — local payment methods confirm location. 2) Currency-based pricing — charge in local currency (harder to compare). 3) Feature differentiation — slightly different packages by region. 4) Acceptance — some \"leakage\" is the cost of reaching global markets. If 5% game the system but you gain 40% more total customers, you still win massively."
+        },
+        {
+          "type": "content",
+          "headline": "Three Models for International Pricing",
+          "body": "1) Global uniform pricing — one price everywhere (simplest, but leaves value on table). 2) Market-based pricing — research WTP in each major market and set accordingly. 3) PPP-tiered pricing — create 3–4 pricing bands (premium, standard, emerging, developing) and slot countries in. Most digital businesses use model 3 because it balances simplicity with value capture. Start with 3 tiers: full price (US/UK/EU), 30% discount (middle-income), 60% discount (emerging markets)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Global Pricing Map",
+          "body": "If you sell (or could sell) internationally: 1) Where are your top 5 markets by customer count? 2) What's the average income level in each? 3) Are you charging the same everywhere? 4) If you reduced price 50% in emerging markets, would you gain enough volume to increase total revenue? For digital products with near-zero marginal cost, PPP pricing is almost always a net win."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main benefit of Purchasing Power Parity (PPP) pricing?",
+          "type": "mcq",
+          "options": [
+            "It captures revenue from markets that would never pay full price while maintaining premium pricing where economies support it",
+            "It simplifies pricing by using one global number",
+            "It eliminates the need for currency conversion",
+            "It ensures all customers pay the same real-world value"
+          ],
+          "correctIndex": 0,
+          "explanation": "PPP pricing unlocks markets priced out by one-size-fits-all rates. You earn less per unit in lower-income markets but gain customers who would otherwise pay nothing — increasing total global revenue."
+        },
+        {
+          "question": "Some customers gaming international pricing (using VPNs etc.) means you should abandon regional pricing entirely.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Small leakage is the cost of reaching global markets. If 5% game the system but you gain 40% more total customers, the trade-off is massively positive. Perfect enforcement isn't necessary for the model to work."
+        },
+        {
+          "question": "For most digital businesses, which international pricing model offers the best balance of simplicity and value capture?",
+          "type": "mcq",
+          "options": [
+            "PPP-tiered pricing with 3–4 country bands",
+            "Global uniform pricing",
+            "Individual pricing for each country",
+            "Only selling in high-income markets"
+          ],
+          "correctIndex": 0,
+          "explanation": "PPP-tiered (3–4 bands) balances simplicity with revenue optimisation. It's practical to manage while capturing significantly more value than uniform pricing."
+        }
+      ]
+    },
+    {
+      "id": "pmm-19-communicating-price",
+      "dayNumber": 19,
+      "moduleId": "pmm-module-3",
+      "title": "Communicating Price to Maximise Conversions",
+      "subtitle": "The same price converts 2× better with the right presentation. Learn how to display, frame, and present price so it feels irresistible.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Changing the pricing page layout (same prices, same features) increased conversions 34% in an A/B test. Presentation IS pricing.",
+          "body": "You've set the right price, built the right tiers, and designed the right model. But if you present it poorly, none of that matters. The pricing page is where decisions happen — and small changes in how you show the number create massive differences in conversion. Today you'll learn the presentation principles that maximise \"yes.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Value-Before-Price Rule",
+          "body": "Never show the price before establishing value. The brain needs a \"worth it\" reference before it can judge a number. Structure: 1) State the outcome clearly. 2) List what's included (features, bonuses, guarantees). 3) Anchor to a higher number (full value, competitor price, DIY cost). 4) THEN reveal the price. By the time they see the number, the value context is already established. The price feels like a relief — not a demand."
+        },
+        {
+          "type": "content",
+          "headline": "Visual Price Presentation Tricks",
+          "body": "Research-backed techniques: 1) Remove the currency symbol — \"97\" converts better than \"$97\" (the symbol triggers pain-of-paying). 2) Use smaller font for the price, larger font for value. 3) Left-digit effect — £9.99 vs £10 (the brain anchors on the left digit). 4) Charm pricing for consumer products, round pricing for premium/luxury. 5) Highlight the recommended plan — use colour, \"Most Popular\" badges, and scale to draw the eye. 6) Show annual price as monthly equivalent."
+        },
+        {
+          "type": "content",
+          "headline": "The Pricing Page Conversion Stack",
+          "body": "High-converting pricing pages follow this structure: 1) Headline with outcome (\"Everything you need to [result]\"). 2) Social proof above the fold (logos, testimonial, user count). 3) Clear tier comparison with recommended plan highlighted. 4) Feature list that emphasises differences between tiers. 5) FAQ answering price objections (\"Is there a guarantee?\", \"Can I cancel?\"). 6) Risk reversal (guarantee, free trial, easy cancellation). 7) Final CTA with urgency if appropriate."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Audit Your Pricing Presentation",
+          "body": "Look at how you currently show your price (website, proposal, or quote). Score yourself: 1) Is value established before price appears? (Y/N) 2) Is there an anchor (was £X, competitor charges £Y)? 3) Is the recommended option visually highlighted? 4) Is there a guarantee or risk reversal? 5) Do you address price objections? If you got fewer than 3 \"yes\" answers, your pricing page is leaving conversions on the table."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does removing the currency symbol (\"97\" instead of \"$97\") improve conversions?",
+          "type": "mcq",
+          "options": [
+            "The currency symbol triggers the brain's \"pain of paying\" response, making the price feel more costly",
+            "Customers don't realise it's a price without the symbol",
+            "It makes the number look smaller on the page",
+            "International customers are confused by currency symbols"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows currency symbols activate pain centres in the brain associated with spending money. Without the symbol, the number is processed more as abstract information and less as \"money leaving my account.\""
+        },
+        {
+          "question": "You should show the price first on your pricing page to be transparent, then explain the value below it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The value-before-price rule: establish worth before revealing cost. Without context, any price feels arbitrary. With value context already in mind, the price feels proportionate or even like a bargain."
+        },
+        {
+          "question": "What is the \"left-digit effect\" in pricing?",
+          "type": "mcq",
+          "options": [
+            "The brain anchors on the leftmost digit, so £9.99 feels significantly cheaper than £10.00",
+            "Customers read prices from left to right and remember only the first number",
+            "Placing the price on the left side of the page increases visibility",
+            "Left-handed customers respond differently to pricing than right-handed ones"
+          ],
+          "correctIndex": 0,
+          "explanation": "The left-digit effect means the brain disproportionately weights the first digit. £9.99 is processed as \"9-something\" while £10.00 is processed as \"10-something\" — a perceived gap far larger than the actual 1p difference."
+        }
+      ]
+    },
+    {
+      "id": "pmm-20-pricing-metrics",
+      "dayNumber": 20,
+      "moduleId": "pmm-module-3",
+      "title": "Measuring Pricing Performance (Metrics That Matter)",
+      "subtitle": "What gets measured gets improved. Track these pricing metrics to know if your strategy is working — or silently bleeding profit.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most businesses track revenue and units sold. Almost none track the metrics that reveal whether their pricing is optimised — or leaking profit every day.",
+          "body": "You've learned the strategies. You've set your prices. But how do you know they're working? Without the right metrics, you're flying blind. Today you'll learn the pricing-specific KPIs that reveal hidden opportunities and warn you before problems become crises."
+        },
+        {
+          "type": "content",
+          "headline": "The Core Pricing Metrics",
+          "body": "1) Average Revenue Per User (ARPU) — total revenue ÷ total customers. Are you capturing more value over time? 2) Price Realisation — actual price paid ÷ list price. If this is below 90%, your discounting is too aggressive. 3) Win Rate by Price — are you losing deals because of price, or something else? Track why you lose. 4) Revenue Per Feature — which features drive purchase decisions? This shows what customers actually value (and would pay more for)."
+        },
+        {
+          "type": "content",
+          "headline": "Expansion & Contraction Signals",
+          "body": "5) Net Revenue Retention (NRR) — do existing customers spend more over time? Above 110% = pricing supports growth. Below 100% = customers are downgrading or churning. 6) Upgrade Rate — % of customers moving to higher tiers. Low = your tiers aren't differentiated enough. 7) Price Sensitivity Score — measure how demand changes with price tests. Calculate elasticity: % change in demand ÷ % change in price. Under 1.0 = inelastic (you can raise prices). Over 1.0 = elastic (be careful)."
+        },
+        {
+          "type": "content",
+          "headline": "The Pricing Health Dashboard",
+          "body": "Build a simple monthly dashboard: ARPU trend — should increase over time. Price Realisation — should stay above 90%. Tier distribution — 60–70% should be in middle tier. NRR — target 110%+ for SaaS, 100%+ for others. Churn by plan — which tier churns most? (Often the cheapest.) Discount frequency — max 2–3× per year. Review monthly, act quarterly. If ARPU is flat and NRR is declining, your pricing has a structural problem."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your First Pricing Scorecard",
+          "body": "Calculate (even roughly) these numbers for your business: 1) ARPU — total monthly revenue ÷ total customers. 2) Price realisation — average price actually paid ÷ your list price. 3) Where do most customers sit in your pricing (if you have tiers)? 4) Has ARPU gone up or down in the last 6 months? If you can't calculate these easily, that itself is the problem — you need better tracking."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"Price Realisation\" measure?",
+          "type": "mcq",
+          "options": [
+            "The actual price paid compared to the list price — revealing how much discounting is eroding revenue",
+            "How quickly customers understand your pricing page",
+            "The total revenue generated by your pricing strategy",
+            "How many customers accept your price on the first offer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Price Realisation (actual paid ÷ list price) reveals how much discounting, negotiation, and promotional erosion is eating into your intended revenue. Below 90% signals over-discounting."
+        },
+        {
+          "question": "A price elasticity below 1.0 means demand is highly sensitive to price changes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Elasticity below 1.0 means demand is INELASTIC — it changes less than proportionally to price. This signals room to raise prices without significant demand loss. Above 1.0 = elastic (price-sensitive)."
+        },
+        {
+          "question": "What does Net Revenue Retention (NRR) above 110% indicate?",
+          "type": "mcq",
+          "options": [
+            "Existing customers are spending more over time — your pricing supports natural expansion",
+            "You're acquiring 10% more customers each month",
+            "Your prices have increased by 10%",
+            "Customer satisfaction is above 110% of the benchmark"
+          ],
+          "correctIndex": 0,
+          "explanation": "NRR above 110% means even without new customers, revenue from existing ones grows — through upgrades, expansion, and usage increases. This is the hallmark of well-designed pricing that grows with customer value."
+        }
+      ]
+    },
+    {
+      "id": "pmm-21-ninety-day-plan",
+      "dayNumber": 21,
+      "moduleId": "pmm-module-3",
+      "title": "Your 90-Day Pricing Optimisation Plan",
+      "subtitle": "Everything you've learned, condensed into a practical 90-day action plan. Implement this and pricing becomes your competitive moat.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now know more about pricing than 95% of business owners. The question isn't knowledge — it's implementation. This lesson gives you the system.",
+          "body": "Over 20 lessons, you've built a complete pricing toolkit: psychology, research, strategies, models, and metrics. But knowledge without action is worthless. Today you'll build your personal 90-day pricing optimisation plan — the system that turns everything you've learned into measurable profit."
+        },
+        {
+          "type": "content",
+          "headline": "Days 1–30: Foundation & Research",
+          "body": "Week 1: Audit current pricing against the 7 mistakes (Lesson 7). Score yourself honestly. Week 2: Run Van Westendorp or Gabor-Granger research on your target segment (Lesson 5). Get real WTP data. Week 3: Map your customer segments and their different WTPs (Lesson 4). Identify your premium segment. Week 4: Define your pricing strategy (penetration, skim, or value-based) and validate it fits your business model (Lesson 6). Deliverable: a one-page \"Pricing Position\" document — your strategy, target segments, and WTP ranges."
+        },
+        {
+          "type": "content",
+          "headline": "Days 31–60: Architecture & Design",
+          "body": "Week 5: Design your tier structure — Good/Better/Best with clear value differentiation (Lesson 10). Week 6: Build your price communication — anchor, frame, present using the conversion stack (Lessons 14 & 19). Week 7: Set up your pricing metrics dashboard — ARPU, realisation, NRR, tier distribution (Lesson 20). Week 8: Plan your first price increase or restructure — strategy, communication, timeline (Lesson 15). Deliverable: new pricing page/proposal ready to launch, metrics dashboard tracking."
+        },
+        {
+          "type": "content",
+          "headline": "Days 61–90: Launch & Optimise",
+          "body": "Week 9: Launch new pricing to new customers (grandfather existing if needed). Week 10: Monitor metrics daily — watch conversion, churn, ARPU. Week 11: Run your first A/B test — try two different price frames or tier structures on split traffic. Week 12: Review results. Adjust based on data. Schedule your next quarterly pricing review. Deliverable: live new pricing, first month of data, documented learnings. Then repeat this cycle quarterly — pricing is never \"done,\" it's a continuous optimisation loop."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Commit to Your First Action",
+          "body": "Choose ONE action to take this week: □ Run a Van Westendorp survey with 5 target customers. □ Audit your current price against the 7 mistakes. □ Draft a Good/Better/Best tier structure. □ Calculate your ARPU and price realisation. □ Design a price increase communication. Pick the one that feels most impactful for your business right now. Block 30 minutes in your calendar this week. Small action → big results. Congratulations — you've completed Pricing & Monetisation Mastery."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should be the primary deliverable from the first 30 days of pricing optimisation?",
+          "type": "mcq",
+          "options": [
+            "A one-page \"Pricing Position\" document with your strategy, target segments, and WTP ranges",
+            "A completely new pricing page live on your website",
+            "A full competitive analysis of every competitor's pricing",
+            "Three months of pricing metrics data"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first 30 days are about research and clarity — understanding your position, your customers' WTP, and your strategic direction. Implementation comes in days 31–90 once the foundation is solid."
+        },
+        {
+          "question": "Once you've optimised your pricing, the work is done and you can move on to other priorities.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pricing is never \"done\" — it's a continuous optimisation loop. Markets shift, competitors change, customer value evolves. Schedule quarterly reviews to keep pricing aligned with current conditions."
+        },
+        {
+          "question": "What is the recommended approach when launching new pricing?",
+          "type": "mcq",
+          "options": [
+            "Launch to new customers first (grandfathering existing ones), monitor metrics, then A/B test and iterate",
+            "Change prices for all customers simultaneously without warning",
+            "Wait until you have perfect data before making any changes",
+            "Only change prices once per year regardless of what data shows"
+          ],
+          "correctIndex": 0,
+          "explanation": "The safest launch approach: new customers get new pricing (zero churn risk), you monitor results, test variations, then gradually migrate existing customers with proper communication and notice."
+        }
+      ]
+    }
+  ]
+}

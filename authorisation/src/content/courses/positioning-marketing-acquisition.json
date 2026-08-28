@@ -1,0 +1,1574 @@
+{
+  "id": "positioning-marketing-acquisition",
+  "title": "Positioning, Marketing & Acquisition",
+  "subtitle": "Master the frameworks that make customers find you, understand you, and choose you — from strategic positioning to scalable growth systems.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "pma-module-1",
+      "moduleNumber": 1,
+      "title": "Positioning & Brand Strategy",
+      "subtitle": "Learn why positioning is the invisible force that shapes every buying decision — and how to craft a position so clear that your ideal customer says \"this is for me\" within seconds.",
+      "days": "Lessons 1–7",
+      "skill": "Define your market category, competitive alternatives, and unique value to craft a positioning statement that differentiates instantly",
+      "lessonIds": [
+        "pma-1-positioning-foundation",
+        "pma-2-positioning-canvas",
+        "pma-3-competitive-alternatives",
+        "pma-4-market-categories",
+        "pma-5-value-proposition",
+        "pma-6-segment-positioning",
+        "pma-7-testing-positioning"
+      ]
+    },
+    {
+      "id": "pma-module-2",
+      "moduleNumber": 2,
+      "title": "Marketing Channels & Traction",
+      "subtitle": "Master the Bullseye Framework to find your best acquisition channel, then build repeatable systems across content, paid, viral, and unconventional channels.",
+      "days": "Lessons 8–14",
+      "skill": "Use the Bullseye Framework to identify, test, and scale the highest-ROI channels for your business",
+      "lessonIds": [
+        "pma-8-bullseye-framework",
+        "pma-9-content-seo",
+        "pma-10-paid-acquisition",
+        "pma-11-viral-referral",
+        "pma-12-unconventional-channels",
+        "pma-13-email-lifecycle",
+        "pma-14-channel-stacking"
+      ]
+    },
+    {
+      "id": "pma-module-3",
+      "moduleNumber": 3,
+      "title": "Growth Systems & Scaling",
+      "subtitle": "Build a growth machine — assemble your team, define your North Star Metric, run high-tempo experiments, and compound wins into scalable acquisition.",
+      "days": "Lessons 15–21",
+      "skill": "Build a growth team, run experiment sprints, and compound learnings into a scalable acquisition engine",
+      "lessonIds": [
+        "pma-15-growth-team",
+        "pma-16-north-star-metric",
+        "pma-17-activation",
+        "pma-18-retention",
+        "pma-19-growth-experiments",
+        "pma-20-analysing-results",
+        "pma-21-scalable-machine"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pma-1-positioning-foundation",
+      "dayNumber": 1,
+      "moduleId": "pma-module-1",
+      "title": "Why Positioning Is the Foundation of Growth",
+      "subtitle": "Without clear positioning, even brilliant products get ignored. Learn why how customers perceive you matters more than what you build.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "76% of startups fail because of premature scaling — and the root cause is almost always a positioning problem, not a product one.",
+          "body": "You built something great. But customers don't get it. They confuse you with competitors. They call you \"interesting\" but never buy. The problem isn't your product — it's your positioning. Today you'll learn why April Dunford calls positioning \"the missing piece\" that most founders never consciously define."
+        },
+        {
+          "type": "content",
+          "headline": "What Positioning Actually Is",
+          "body": "Positioning is not your tagline, your logo, or your elevator pitch. It's the context you set for your product so customers can understand what it is, who it's for, and why they should care. April Dunford defines it as: \"Positioning defines how your product is the best in the world at providing something that a well-defined set of customers cares a lot about.\" Get this right and marketing becomes easy. Get it wrong and no amount of ad spend will save you."
+        },
+        {
+          "type": "content",
+          "headline": "The Cost of Weak Positioning",
+          "body": "When positioning is vague or wrong: 1) Sales cycles lengthen — reps spend meetings explaining what you do. 2) Marketing messages fall flat — you sound like everyone else. 3) Customers compare you on price — because they can't see your unique value. 4) Churn spikes — customers sign up expecting something you're not. Dunford found that most \"product-market fit\" problems are actually positioning problems in disguise. The product is fine; the frame around it is broken."
+        },
+        {
+          "type": "content",
+          "headline": "Positioning vs. Branding vs. Messaging",
+          "body": "These are related but distinct: Positioning = the strategic choice of where you play and how you're different. It's an internal decision. Branding = the emotional and visual expression of that position. It's how people feel about you. Messaging = the specific words you use to communicate your position to different audiences. Order matters: Position first. Brand second. Message third. Most companies skip straight to messaging, which is why they sound generic — there's no strategic foundation underneath."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Positioning Litmus Test",
+          "body": "Answer these three questions about your product (or one you're planning): 1) If a customer had never heard of you, what category would they put you in? 2) What would they compare you to? 3) Why would they choose you over those alternatives? If your answers are vague, overlap with competitors, or require long explanations — your positioning needs work. Write down your honest answers. We'll rebuild them from scratch over the next 6 days."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to April Dunford, what is positioning?",
+          "type": "mcq",
+          "options": [
+            "How your product is the best in the world at providing something a defined set of customers cares about",
+            "Your company's tagline and elevator pitch",
+            "The visual branding and logo that represents your business",
+            "A social media strategy for reaching new customers"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dunford defines positioning as \"how your product is the best in the world at providing something that a well-defined set of customers cares a lot about.\" It's a strategic context, not a tagline or visual identity."
+        },
+        {
+          "question": "Positioning problems are often misdiagnosed as product-market fit problems.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dunford found that many companies believe they lack product-market fit when the real issue is positioning. The product works — but customers can't understand its value because the frame around it is wrong."
+        },
+        {
+          "question": "What is the correct order for building a go-to-market strategy?",
+          "type": "mcq",
+          "options": [
+            "Positioning → Branding → Messaging",
+            "Messaging → Branding → Positioning",
+            "Branding → Messaging → Positioning",
+            "Messaging → Positioning → Branding"
+          ],
+          "correctIndex": 0,
+          "explanation": "Position first (strategic choice), brand second (emotional expression), message third (specific words). Skipping to messaging without a positioning foundation produces generic, undifferentiated communication."
+        }
+      ]
+    },
+    {
+      "id": "pma-2-positioning-canvas",
+      "dayNumber": 2,
+      "moduleId": "pma-module-1",
+      "title": "The Positioning Canvas: Who, What, Why, How",
+      "subtitle": "Master Dunford's 5-component positioning framework and build the strategic foundation everything else rests on.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Apple didn't launch the iPhone as a \"better phone.\" They positioned it as a \"revolutionary internet communications device\" — and the whole market shifted.",
+          "body": "Great positioning doesn't describe what your product does. It creates a frame that makes the value self-evident. Today you'll learn April Dunford's 5-component model — the same framework she's used with over 200 companies to transform their market performance."
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Components of Positioning",
+          "body": "Dunford's framework has five interlocking components: 1) Competitive Alternatives — what would customers use if you didn't exist? 2) Unique Attributes — what do you have that alternatives lack? 3) Value — what benefit do those attributes enable for customers? 4) Target Customer Segments — who cares most about that value? 5) Market Category — what context makes your value obvious? Each component feeds the next. Change one and the others may need to shift. That's why positioning is a system, not a statement."
+        },
+        {
+          "type": "content",
+          "headline": "Why Start With Competitive Alternatives",
+          "body": "Most positioning exercises start with \"who is our customer?\" But Dunford argues you should start with competitive alternatives. Why? Because your positioning only matters relative to what else exists. If you don't know what you're being compared to, you can't articulate why you're different. Competitive alternatives aren't always direct competitors — they might be spreadsheets, manual processes, or doing nothing. Start here and everything else gets clearer."
+        },
+        {
+          "type": "content",
+          "headline": "Making It Concrete: A B2B Example",
+          "body": "Imagine a project management tool. Weak positioning: \"A tool for managing projects.\" Strong positioning using the canvas: Competitive Alternative = \"Spreadsheets + email chains.\" Unique Attributes = \"Real-time collaboration, automatic status updates, visual timelines.\" Value = \"Teams ship 40% faster with zero status meetings.\" Target Segment = \"Engineering teams of 10-50 at growing startups.\" Category = \"Engineering workflow automation.\" Notice how the second version instantly tells the right customer: \"This is for me.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Draft Your Canvas",
+          "body": "Take 5 minutes and fill in each component for your product: 1) Competitive alternatives (what do customers use today?): _______ 2) Unique attributes (what do you have that they don't?): _______ 3) Value (what does that enable?): _______ 4) Best-fit customer (who cares most?): _______ 5) Market category (what frame makes this obvious?): _______ Don't agonise over perfection — we'll refine each component over the next lessons. Just get a rough first draft down."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first component you should define in Dunford's positioning framework?",
+          "type": "mcq",
+          "options": [
+            "Competitive Alternatives",
+            "Target Customer Segments",
+            "Market Category",
+            "Unique Attributes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dunford recommends starting with competitive alternatives because your positioning only matters relative to what else exists. Understanding what you're compared to is the foundation for articulating differentiation."
+        },
+        {
+          "question": "Competitive alternatives always means direct competitors in the same market category.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Competitive alternatives can include spreadsheets, manual processes, hiring a person, or even \"doing nothing.\" They're whatever a customer would use to solve the same problem if your product didn't exist."
+        },
+        {
+          "question": "How many interlocking components does Dunford's positioning framework include?",
+          "type": "mcq",
+          "options": [
+            "Five",
+            "Three",
+            "Seven",
+            "Four"
+          ],
+          "correctIndex": 0,
+          "explanation": "The framework has 5 components: Competitive Alternatives, Unique Attributes, Value, Target Customer Segments, and Market Category. They form an interconnected system where changing one may require adjusting the others."
+        }
+      ]
+    },
+    {
+      "id": "pma-3-competitive-alternatives",
+      "dayNumber": 3,
+      "moduleId": "pma-module-1",
+      "title": "Competitive Alternatives & Your Unique Value",
+      "subtitle": "Map your true competitive landscape — then extract the unique attributes that make you the obvious choice for your ideal customer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Slack's biggest competitor wasn't another chat app — it was email. Understanding that changed everything about how they positioned.",
+          "body": "Your real competition is rarely who you think. It's whatever your customer is already doing to solve the problem you address. Today you'll map your true competitive landscape and extract the unique attributes that only you can claim."
+        },
+        {
+          "type": "content",
+          "headline": "The Real Competitive Landscape",
+          "body": "Dunford identifies three types of competitive alternatives: 1) Direct competitors — products in the same category solving the same problem. 2) Adjacent solutions — products in a different category that partially solve the problem. 3) Status quo — the current behaviour (spreadsheets, manual work, ignoring the problem entirely). Most companies only track direct competitors. But the biggest threat is usually the status quo — customers deciding \"good enough\" and never buying anything. Your positioning needs to beat ALL three types, not just category rivals."
+        },
+        {
+          "type": "content",
+          "headline": "Extracting Unique Attributes",
+          "body": "Once you've listed your competitive alternatives, ask: \"What do we have that they don't?\" Be ruthless — only list attributes that are genuinely unique to you. Not \"great customer support\" (everyone claims that). Not \"easy to use\" (subjective and unprovable). Real unique attributes are: proprietary technology, specific methodology, unique data, unusual business model, domain expertise others can't replicate, or a combination of features that exists nowhere else. The more specific, the more defensible."
+        },
+        {
+          "type": "content",
+          "headline": "From Attributes to Value",
+          "body": "Unique attributes are features. Customers don't buy features — they buy outcomes. For every unique attribute, ask: \"So what? What does this enable for the customer?\" Example: Attribute: \"AI that analyses 10,000 data points per second.\" → So what? → \"You get pricing recommendations in 30 seconds instead of 3 weeks of manual analysis.\" → So what? → \"You capture market opportunities before competitors even notice them.\" Keep asking \"so what?\" until you hit an emotional or financial outcome. That's your value."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Landscape",
+          "body": "Create three columns: Direct Competitors | Adjacent Solutions | Status Quo. Fill each with 2-3 entries. Then list 3-5 things you have that NONE of them do. For each attribute, ask \"so what?\" three times until you reach a clear customer outcome. Example: \"We're the only X that does Y, which means customers get Z.\" If you struggle to find unique attributes — that's a signal your product needs differentiation work, not just better marketing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Dunford, what is typically the biggest competitive threat for most products?",
+          "type": "mcq",
+          "options": [
+            "The status quo — customers deciding their current approach is \"good enough\"",
+            "Direct competitors in the same market category",
+            "Large tech companies entering the market",
+            "Products with lower prices"
+          ],
+          "correctIndex": 0,
+          "explanation": "The biggest threat is usually the status quo — customers sticking with their current behaviour (spreadsheets, manual processes, or doing nothing). Most buying decisions end in \"no decision\" rather than choosing a competitor."
+        },
+        {
+          "question": "What should you do with each unique attribute to communicate value effectively?",
+          "type": "mcq",
+          "options": [
+            "Ask \"so what?\" repeatedly until you reach an emotional or financial outcome",
+            "List all technical specifications in marketing materials",
+            "Compare it directly to the same feature in competitor products",
+            "Create a separate landing page for each attribute"
+          ],
+          "correctIndex": 0,
+          "explanation": "Attributes are features; customers buy outcomes. By asking \"so what?\" repeatedly, you translate technical capabilities into the emotional or financial results customers actually care about."
+        },
+        {
+          "question": "\"Easy to use\" and \"great customer support\" are strong unique attributes for positioning.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "These are subjective, unprovable claims that nearly every company makes. Real unique attributes are specific, defensible, and genuinely exclusive to your product — proprietary technology, unique data, unusual methodologies, etc."
+        }
+      ]
+    },
+    {
+      "id": "pma-4-market-categories",
+      "dayNumber": 4,
+      "moduleId": "pma-module-1",
+      "title": "Market Categories & Context Setting",
+      "subtitle": "Choose the right market category and you instantly inherit customer assumptions that work in your favour. Choose wrong and you fight uphill forever.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When a database company repositioned as a \"data platform,\" their conversion rate tripled in 6 weeks — same product, different category.",
+          "body": "A market category is a mental shortcut. When customers hear \"CRM\" or \"project management tool,\" they immediately know what to expect, what to compare it to, and roughly what it should cost. Today you'll learn how to choose a category strategically — or create a new one."
+        },
+        {
+          "type": "content",
+          "headline": "How Categories Shape Perception",
+          "body": "When you declare a category, customers instantly assume: 1) What your product does (core functionality). 2) Who your competitors are (comparison set). 3) What it should cost (price anchor). 4) How to evaluate it (buying criteria). This is incredibly powerful — you inherit years of market education for free. But it can also trap you. If customers put you in \"email marketing\" but you're really an \"engagement platform,\" they'll evaluate you on email features and miss your real value. Category choice is one of the most consequential positioning decisions."
+        },
+        {
+          "type": "content",
+          "headline": "Three Category Strategies",
+          "body": "Dunford identifies three approaches: 1) Head-to-Head — compete in an existing category (works when you have clear, provable superiority on the criteria buyers already use). 2) Subcategory — carve out a niche within an existing category (e.g., \"CRM for real estate agents\"). Lower risk, faster traction with a specific segment. 3) Create a New Category — define an entirely new space (e.g., \"revenue intelligence\"). Highest upside but requires massive market education. Most startups should start with subcategory, then expand."
+        },
+        {
+          "type": "content",
+          "headline": "The Category Creation Trap",
+          "body": "Creating a new category sounds exciting but carries enormous risk. Customers have no frame of reference — so you spend 80% of your time explaining what the category is rather than why you're the best in it. Only create a new category if: 1) No existing category captures your value. 2) You have the budget to educate the market (typically $5M+ in marketing). 3) Analysts and press are already groping for a term. If any of these are false, find an existing category and position as the best subcategory within it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Test Your Category",
+          "body": "Write down the category your product currently sits in. Now answer: 1) When customers hear this category, do they assume features/capabilities that you actually deliver? 2) Does the comparison set (competitors in this category) flatter you or hurt you? 3) Does the expected price range in this category match your pricing? If any answer is \"no,\" brainstorm 3 alternative categories or subcategories. Which one triggers the most helpful assumptions for your product?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do customers immediately assume when you declare a market category?",
+          "type": "mcq",
+          "options": [
+            "Core functionality, competitors, expected price, and evaluation criteria",
+            "Only the price range of the product",
+            "The company's founding story and mission",
+            "The specific features available in the free tier"
+          ],
+          "correctIndex": 0,
+          "explanation": "Declaring a category triggers four instant assumptions: what the product does, who competitors are, what it should cost, and how to evaluate it. This is why category choice is one of the most consequential positioning decisions."
+        },
+        {
+          "question": "Creating a new market category is the safest strategy for most startups.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Category creation carries enormous risk — you spend most resources educating the market about what the category is rather than selling. Most startups should start with a subcategory strategy and expand later."
+        },
+        {
+          "question": "Which category strategy involves carving out a niche within an existing category?",
+          "type": "mcq",
+          "options": [
+            "Subcategory",
+            "Head-to-Head",
+            "Create a New Category",
+            "Blue Ocean"
+          ],
+          "correctIndex": 0,
+          "explanation": "Subcategory means positioning within an existing, understood category but targeting a specific segment (e.g., \"CRM for real estate agents\"). It offers lower risk and faster traction with a defined audience."
+        }
+      ]
+    },
+    {
+      "id": "pma-5-value-proposition",
+      "dayNumber": 5,
+      "moduleId": "pma-module-1",
+      "title": "Crafting Your One-Line Value Proposition",
+      "subtitle": "Distil your entire positioning into a single sentence so clear that anyone can repeat it — and instantly understand why you exist.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stripe's original positioning was just eight words: \"Payments infrastructure for the internet.\" Every developer immediately understood.",
+          "body": "If you can't explain your value in one sentence, customers won't explain it for you. Today you'll learn how to craft a value proposition so clear and compelling that it does your selling for you — in conversations, on landing pages, and in word-of-mouth referrals."
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Great Value Proposition",
+          "body": "A value proposition answers three questions in one sentence: 1) Who is this for? (target segment) 2) What do you deliver? (primary outcome/benefit) 3) Why you over alternatives? (unique mechanism or differentiator). Formula: \"We help [target customer] achieve [desired outcome] through [unique mechanism].\" Example: \"We help engineering teams ship code 40% faster through automated dependency management.\" Notice: no jargon, no fluff, no claims that can't be proved. Every word earns its place."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Tests of a Strong Value Proposition",
+          "body": "Test 1 — The Stranger Test: Could someone who's never heard of you understand what you do and why it matters within 5 seconds of reading it? Test 2 — The \"So What?\" Test: Does it state a benefit the customer actually cares about, or just describe a feature? Test 3 — The Switcheroo Test: Could a competitor paste their name in front of your statement and have it still be true? If yes, it's not differentiated enough. A value proposition that passes all three tests will outperform any amount of clever copywriting."
+        },
+        {
+          "type": "content",
+          "headline": "Common Value Proposition Mistakes",
+          "body": "Mistake 1: Leading with the technology instead of the outcome. \"AI-powered NLP engine\" vs. \"Understand customer sentiment in real-time.\" Mistake 2: Being too broad. \"We help businesses grow\" — everyone says this. Mistake 3: Internal language. Using terms that make sense inside your company but confuse outsiders. Mistake 4: Feature stacking. Listing 6 things you do instead of the ONE thing that matters most. The best value propositions feel almost too simple. That's how you know they're right."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your One-Liner",
+          "body": "Using the formula: \"We help [target customer] achieve [desired outcome] through [unique mechanism].\" Write 3 variations of your value proposition. Then run each through the three tests: 1) Would a stranger get it in 5 seconds? 2) Does it state a real benefit? 3) Could a competitor claim the same thing? Pick the one that passes all three. If none pass — that's great feedback. It means your positioning still needs sharpening (revisit lessons 2-4)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What three questions should a great value proposition answer?",
+          "type": "mcq",
+          "options": [
+            "Who is this for, what do you deliver, and why you over alternatives",
+            "What is your price, where can they buy, and how long does it take",
+            "What technology do you use, how many features do you have, and who are your investors",
+            "When was the company founded, where are you based, and how big is the team"
+          ],
+          "correctIndex": 0,
+          "explanation": "A strong value proposition answers: who is this for (target), what do you deliver (outcome), and why you over alternatives (unique mechanism) — all in one clear sentence."
+        },
+        {
+          "question": "What is the \"Switcheroo Test\" for a value proposition?",
+          "type": "mcq",
+          "options": [
+            "Whether a competitor could put their name on it and have it still be true",
+            "Whether it sounds better when you switch the first and last words",
+            "Whether customers prefer version A or version B in an A/B test",
+            "Whether it works equally well for B2B and B2C audiences"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Switcheroo Test checks differentiation: if a competitor could claim the same statement, your value proposition isn't specific enough to your unique strengths."
+        },
+        {
+          "question": "The best value propositions should feel complex and detailed to demonstrate expertise.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best value propositions feel almost too simple. Simplicity means clarity — if a stranger can understand it in 5 seconds, it works. Complexity signals unclear positioning."
+        }
+      ]
+    },
+    {
+      "id": "pma-6-segment-positioning",
+      "dayNumber": 6,
+      "moduleId": "pma-module-1",
+      "title": "Positioning for Different Customer Segments",
+      "subtitle": "Your product solves different problems for different people. Learn to position dynamically without diluting your core message.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "HubSpot sells the same platform to marketers, salespeople, and service teams — but each segment sees completely different positioning. Revenue: $2.2 billion.",
+          "body": "One size doesn't fit all in positioning. Different segments care about different things, compare you to different alternatives, and evaluate you on different criteria. Today you'll learn to adapt your positioning per segment without fragmenting your brand."
+        },
+        {
+          "type": "content",
+          "headline": "The Segment Positioning Matrix",
+          "body": "For each customer segment, define: 1) Their primary pain point (what keeps them up at night). 2) Their competitive alternative (what they currently use). 3) Your unique value for them (which attributes matter most). 4) The proof (specific results or case studies from their world). Example: An analytics product might position as \"real-time dashboards\" for executives (pain: slow decisions) but \"attribution modelling\" for marketers (pain: wasted ad spend). Same product, different frames — both true, both compelling."
+        },
+        {
+          "type": "content",
+          "headline": "The Danger of Over-Segmentation",
+          "body": "Positioning for too many segments creates three problems: 1) Resource drain — you need separate landing pages, ad creative, and sales scripts for each. 2) Brand confusion — if segments talk to each other, mixed messages erode trust. 3) Team misalignment — internal teams don't know which positioning to use. The sweet spot is 2-3 primary segments with one overarching positioning that unifies them. Dunford calls this your \"strategic narrative\" — the higher-order story that all segments connect with."
+        },
+        {
+          "type": "content",
+          "headline": "Building a Strategic Narrative",
+          "body": "A strategic narrative sits above segment-specific positioning. It's the big-picture story about where the world is going and why your product matters in that future. Structure: 1) The world has changed (indisputable shift). 2) This creates a new challenge/opportunity. 3) Old approaches don't work anymore. 4) There's a better way (your category/approach). 5) Here's what that looks like in practice (your product). This narrative gives every segment a shared \"why\" while allowing you to customise the \"how\" for each."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Top Two Segments",
+          "body": "Identify your two most important customer segments. For each, fill in: Segment A: Pain = ___, Alternative = ___, Your unique value = ___, Best proof = ___ Segment B: Pain = ___, Alternative = ___, Your unique value = ___, Best proof = ___ Now write ONE overarching narrative that both segments would nod along to. What shift in the world makes your product inevitable for both?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended maximum number of primary segments to position for?",
+          "type": "mcq",
+          "options": [
+            "2-3 segments with one unifying strategic narrative",
+            "5-7 segments for maximum market coverage",
+            "1 segment only — never divide your positioning",
+            "10+ micro-segments for personalised marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "The sweet spot is 2-3 primary segments unified by an overarching strategic narrative. More than that creates resource drain, brand confusion, and internal misalignment."
+        },
+        {
+          "question": "What is a \"strategic narrative\" in the context of positioning?",
+          "type": "mcq",
+          "options": [
+            "A big-picture story about where the world is going and why your product matters in that future",
+            "A detailed product roadmap shared with customers",
+            "Your company's founding story used in press releases",
+            "A fictional customer success story for marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "A strategic narrative sits above segment-specific positioning. It tells the story of an indisputable market shift, why old approaches fail, and why your approach is the inevitable solution — giving all segments a shared \"why.\""
+        },
+        {
+          "question": "Positioning the same product differently for different segments always dilutes the brand.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Segment-specific positioning is effective when done with 2-3 segments unified by a strategic narrative. Companies like HubSpot successfully position the same platform differently for multiple audiences without diluting their brand."
+        }
+      ]
+    },
+    {
+      "id": "pma-7-testing-positioning",
+      "dayNumber": 7,
+      "moduleId": "pma-module-1",
+      "title": "Testing & Validating Your Positioning",
+      "subtitle": "Positioning isn't done when it feels right — it's done when customers prove it works. Learn rapid testing methods to validate before committing.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Buffer tested 7 different positioning statements using landing page experiments before finding the one that doubled their signup rate.",
+          "body": "You've built your positioning canvas, crafted your value proposition, and defined your segments. But does it actually work? Today you'll learn how to test positioning quickly and cheaply — before betting your entire go-to-market on it."
+        },
+        {
+          "type": "content",
+          "headline": "The \"5-Second Test\" for Clarity",
+          "body": "Show your landing page (or one-liner) to someone who's never seen your product. After 5 seconds, take it away and ask: 1) What does this company do? 2) Who is it for? 3) Why would you choose it over alternatives? If they can answer all three accurately, your positioning is clear. If they can't — it doesn't matter how \"strategically correct\" your positioning is. What matters is whether real humans get it instantly. Run this test with 5 people from your target audience. Pattern-match the confusion."
+        },
+        {
+          "type": "content",
+          "headline": "Quantitative Tests: Landing Page Experiments",
+          "body": "The fastest quantitative positioning test: 1) Create 2-3 landing pages with different positioning (different headlines, different category framing). 2) Drive equal paid traffic to each (£200-500 total is enough). 3) Measure: click-through rate, time on page, and signup/conversion rate. The winner isn't the \"cleverest\" copy — it's the one that resonates most with real customers. This test takes 3-7 days and costs less than a consultant. There's no excuse for guessing."
+        },
+        {
+          "type": "content",
+          "headline": "Qualitative Tests: Sales Conversations",
+          "body": "Use sales calls or customer interviews as live positioning labs: 1) Open with your new one-liner and watch their reaction. Nodding = good. Confused face = iterate. 2) Ask: \"Based on what I said, what would you compare us to?\" Their answer reveals what category they placed you in. 3) Ask: \"What problem would you expect us to solve?\" This shows whether your value is landing. Track patterns across 10-15 conversations. If 80%+ immediately \"get it\" and place you where you want to be — you've nailed it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your 48-Hour Positioning Test",
+          "body": "Design one test you can run within 48 hours: Option A (free): Message 5 people in your target audience. Share your one-liner and ask the 5-second test questions. Option B (£100-300): Create two landing page variants with different positioning headlines. Run £50-100 in targeted ads to each. Measure signups or clicks. Option C (free if you have sales calls): Use your next 3 sales conversations as positioning labs. Try your new one-liner and track reactions. Pick ONE. Set a deadline. Do it before the next lesson."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"5-Second Test\" measure about positioning?",
+          "type": "mcq",
+          "options": [
+            "Whether someone can understand what you do, who it's for, and why it's different in 5 seconds",
+            "Whether your website loads within 5 seconds",
+            "Whether a customer makes a purchase decision in 5 seconds",
+            "Whether your logo is memorable after 5 seconds of exposure"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 5-Second Test measures positioning clarity: can someone who sees your page for just 5 seconds accurately tell you what you do, who it's for, and why they'd choose you. If not, the positioning needs work."
+        },
+        {
+          "question": "In landing page positioning experiments, the \"winner\" is determined by which metric?",
+          "type": "mcq",
+          "options": [
+            "Conversion rate — signups, clicks, or actions that show real resonance",
+            "The headline that sounds most creative or clever",
+            "How many social media shares the page gets",
+            "Which version the CEO personally prefers"
+          ],
+          "correctIndex": 0,
+          "explanation": "The winning positioning is the one that drives the highest conversion with real customers — not the cleverest copy or the one leadership prefers. Data beats opinions."
+        },
+        {
+          "question": "You need at least 100 customer interviews before making any positioning decisions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Patterns typically emerge after 10-15 conversations. If 80%+ immediately \"get it\" and place you where you want, your positioning is working. Rapid, lightweight tests beat exhaustive research for positioning validation."
+        }
+      ]
+    },
+    {
+      "id": "pma-8-bullseye-framework",
+      "dayNumber": 8,
+      "moduleId": "pma-module-2",
+      "title": "The Bullseye Framework: Finding Your Channel",
+      "subtitle": "Most companies fail not from lack of options, but from spreading too thin. Learn how to identify and dominate the one channel that matters most.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Facebook's first 1 million users came almost entirely from one channel: college .edu email signups. They ignored everything else.",
+          "body": "There are 19 traction channels available to every business. Most founders try 6 at once, get mediocre results on all of them, and call it \"marketing.\" Gabriel Weinberg's Bullseye Framework flips this: find the ONE channel that can drive the most growth right now, go deep on it, then expand. Today you'll learn the system."
+        },
+        {
+          "type": "content",
+          "headline": "The 19 Traction Channels",
+          "body": "Weinberg catalogued every way a startup has ever grown: 1) Viral marketing, 2) PR, 3) Unconventional PR (stunts), 4) Search engine marketing, 5) Social/display ads, 6) Offline ads, 7) SEO, 8) Content marketing, 9) Email marketing, 10) Engineering as marketing (tools/calculators), 11) Targeting blogs, 12) Business development, 13) Sales, 14) Affiliate programs, 15) Existing platforms, 16) Trade shows, 17) Offline events, 18) Speaking engagements, 19) Community building. The insight: every successful company has at least one of these working exceptionally well. Almost none have all of them working."
+        },
+        {
+          "type": "content",
+          "headline": "How the Bullseye Works",
+          "body": "The Bullseye is a three-ring process: Outer ring (brainstorm): For each of the 19 channels, ask \"could this work for us?\" and rate on potential. Middle ring (test): Pick the top 3-6 channels and run cheap, fast experiments (£100-500, 3-4 weeks each). Measure cost per acquisition, conversion rate, and volume potential. Inner ring (focus): Identify the one channel with the best numbers and commit to it. Stop dabbling. The outer and middle rings exist to find the inner ring — then you abandon them. Most businesses skip straight to the outer ring and never commit."
+        },
+        {
+          "type": "content",
+          "headline": "The Channel-Stage Fit Trap",
+          "body": "Different channels work at different company stages. SEO takes 6-12 months to compound — wrong for day 1. PR creates spikes, not sustained growth — wrong for scaling. Cold outreach works at small scale but doesn't compound — wrong for hyper-growth. Common mistake: copying a competitor's channel strategy without matching their stage or audience size. The question isn't \"what channels work?\" — it's \"what channel works for us, at our stage, with our audience, right now?\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Bullseye Exercise",
+          "body": "Take 15 minutes for your outer ring. Go through the 19 channels and for each ask: \"On a scale of 1-5, could this channel reach our best-fit customers?\" Filter to your top 6 (rating 4-5). Now for each of those 6, ask: \"What's the smallest experiment I could run to test this in the next 30 days?\" Write one test idea per channel. You've just built your testing backlog. Next lesson: we go deep on three of the highest-leverage channels."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many traction channels does Weinberg catalogue in the Bullseye Framework?",
+          "type": "mcq",
+          "options": [
+            "19",
+            "7",
+            "12",
+            "25"
+          ],
+          "correctIndex": 0,
+          "explanation": "Weinberg catalogued 19 distinct traction channels — from viral marketing and SEO to speaking engagements and community building. The insight is that every successful company typically has one or two working exceptionally well."
+        },
+        {
+          "question": "What is the goal of the \"middle ring\" in the Bullseye Framework?",
+          "type": "mcq",
+          "options": [
+            "Run cheap experiments on 3-6 channels to identify the best performer",
+            "Brainstorm all possible channels without filtering",
+            "Commit all marketing budget to the single best channel",
+            "Copy the channels your direct competitors are using"
+          ],
+          "correctIndex": 0,
+          "explanation": "The middle ring involves running fast, cheap tests (£100-500 each) across 3-6 candidate channels. You measure cost per acquisition and conversion to identify which one deserves full commitment."
+        },
+        {
+          "question": "The best channel strategy is to run all 19 channels simultaneously for maximum reach.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Spreading across multiple channels produces mediocre results on all of them. The Bullseye Framework advocates testing to find ONE primary channel and committing deeply — that's how sustainable growth happens."
+        }
+      ]
+    },
+    {
+      "id": "pma-9-content-seo",
+      "dayNumber": 9,
+      "moduleId": "pma-module-2",
+      "title": "Content Marketing & SEO as Growth Engines",
+      "subtitle": "The assets you create today keep generating customers for years. Learn to build a content engine that compounds instead of decaying.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "HubSpot went from 0 to $100M ARR primarily on content marketing and SEO. Their blog still drives 70% of new signups today.",
+          "body": "Paid ads stop the moment you stop paying. Content compounds. A well-ranked article written in 2020 still drives leads in 2026. Today you'll learn how to build a content and SEO strategy that works while you sleep — without needing a massive team or budget."
+        },
+        {
+          "type": "content",
+          "headline": "The Content Marketing Flywheel",
+          "body": "Content works as a flywheel: 1) Create valuable content that solves your customer's real problems. 2) Google ranks it; people discover you. 3) Trust builds — they subscribe, follow, bookmark. 4) They become buyers, then advocates who share your content. 5) More backlinks → higher rankings → more traffic. The flywheel starts slow but becomes self-sustaining. Year 1 you're pushing hard. Year 3 it pulls you. Ryan Holiday's rule: every piece of content should be genuinely useful, not just promotional. Useful content earns traffic. Promotional content earns nothing."
+        },
+        {
+          "type": "content",
+          "headline": "The Keyword Strategy Framework",
+          "body": "Effective SEO starts with understanding search intent. Three intent types: 1) Informational (\"how to price a SaaS product\") — target with blog posts, guides. 2) Commercial (\"best CRM software\") — target with comparison pages, listicles. 3) Transactional (\"buy CRM software\") — target with landing pages, product pages. Early-stage companies should focus on long-tail informational keywords (lower competition, targeted audience). Build authority on a narrow topic first. Then expand. Trying to rank for \"CRM\" from day one is like a new restaurant competing for \"best restaurant in London.\""
+        },
+        {
+          "type": "content",
+          "headline": "Content Formats That Drive Growth",
+          "body": "Not all content is equal. The formats with the highest ROI for growth: 1) Ultimate guides — comprehensive resources that become reference pages, attracting links. 2) Original data/research — people cite your data, giving you backlinks at scale. 3) Tool-based content — free calculators, templates, graders. Engineering as marketing. 4) Case studies — proof content that drives conversion from decision-stage buyers. 5) Comparison pages — capture high-intent searches from people ready to buy. Mix these strategically. Don't just write blog posts and hope."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your First 10 Content Pieces",
+          "body": "Open a spreadsheet. Create columns: Topic | Search Intent | Format | Target Keyword | Estimated Monthly Searches. Now brainstorm 10 content ideas your ideal customer would search for when facing the problems you solve. Use a free tool (Ubersuggest, Google Search Console, or \"Google autocomplete\") to estimate search volume. Filter to: low competition + medium volume + clear link to your product. These 10 become your 90-day content roadmap. Write the first one this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes content marketing a \"flywheel\" rather than a linear channel?",
+          "type": "mcq",
+          "options": [
+            "It compounds over time — content keeps driving traffic and trust long after it's created",
+            "It requires constant ad spend to keep working",
+            "It produces results instantly when launched",
+            "It works best when all content is promotional and product-focused"
+          ],
+          "correctIndex": 0,
+          "explanation": "Content marketing compounds — each piece keeps generating traffic, links, and trust over time. Unlike paid ads that stop when spend stops, well-ranked content becomes a self-reinforcing flywheel."
+        },
+        {
+          "question": "What type of keywords should early-stage companies focus on for SEO?",
+          "type": "mcq",
+          "options": [
+            "Long-tail informational keywords — lower competition, targeted audience",
+            "Broad, high-volume keywords like \"software\" or \"marketing\"",
+            "Branded keywords featuring competitor names",
+            "Transactional keywords only, since they convert best"
+          ],
+          "correctIndex": 0,
+          "explanation": "Early-stage companies should focus on long-tail informational keywords. Competition is lower, the audience is more targeted, and you build topical authority before expanding to broader, competitive terms."
+        },
+        {
+          "question": "Original data and research drives SEO growth because other sites cite and link to it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "When you publish original research or data, other writers and publications cite your work as a source — generating backlinks at scale. This is one of the highest-ROI content formats for building domain authority."
+        }
+      ]
+    },
+    {
+      "id": "pma-10-paid-acquisition",
+      "dayNumber": 10,
+      "moduleId": "pma-module-2",
+      "title": "Paid Acquisition: Facebook, Google & Beyond",
+      "subtitle": "Learn to buy growth profitably — the unit economics, targeting frameworks, and creative principles that separate winning campaigns from money pits.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average Facebook ad wastes 62% of its budget on the wrong audience. Fix the targeting, and the same £1,000 generates £6,200 in results.",
+          "body": "Paid acquisition is the most controllable growth channel — you can turn it on instantly, measure everything, and scale fast. But it's also the easiest way to burn money. Today you'll learn the unit economics framework and targeting principles that make paid channels profitable."
+        },
+        {
+          "type": "content",
+          "headline": "The Unit Economics Foundation",
+          "body": "Before spending a penny on ads, know your numbers: LTV (Lifetime Value) = average revenue per customer × average customer lifespan. CAC (Customer Acquisition Cost) = total marketing spend ÷ customers acquired. Healthy ratio: LTV:CAC of 3:1 or better. Payback Period: how many months until you recover the CAC (aim for <12 months). Example: If LTV = £300 and your payback target is 6 months, you can afford CAC of up to £150. Now work backwards from £150 CAC to set your acceptable cost-per-click and conversion rate targets. Without this, you're guessing."
+        },
+        {
+          "type": "content",
+          "headline": "Google vs. Facebook: Which First",
+          "body": "Google Search captures demand — people are already searching for what you offer. High intent, easier conversion, but expensive and limited by search volume. Best for: clear-category products, high-ticket items, B2B. Facebook/Meta creates demand — you interrupt people who aren't looking. Lower intent, requires more convincing, but massive scale and powerful targeting. Best for: impulse purchases, consumer products, broad awareness. Rule of thumb: If customers search for your category, start with Google. If customers don't know they need you yet, start with Meta."
+        },
+        {
+          "type": "content",
+          "headline": "The Creative is the Targeting",
+          "body": "Sean Ellis and Morgan Brown (Hacking Growth) found that ad creative quality drives 70-80% of paid acquisition performance — far more than targeting tweaks. Why? Because your creative self-selects the audience. A video showing a specific pain point for founders will be shared by founders, who will be seen by more founders. This means: don't over-invest in complex audience segmentation. Invest in creative that speaks directly to your best customer's specific pain. Test 3-5 angles per campaign: problem-first, transformation, social proof, objection-handling, curiosity."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The 5-Ad Swipe File",
+          "body": "Open Facebook Ad Library (free, no account needed) and search for 3-5 direct competitors. Study the ads they've been running for 30+ days (longevity = it's working). For each: 1) What pain point does the hook address? 2) What format — video, carousel, image? 3) What's the CTA? Now reverse-engineer one ad concept for your product. Don't copy — understand what's working and apply the underlying principle to your own positioning. This is the fastest way to bootstrap a winning creative hypothesis."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a healthy LTV:CAC ratio for a sustainable paid acquisition channel?",
+          "type": "mcq",
+          "options": [
+            "3:1 or better",
+            "1:1 (break even)",
+            "10:1 minimum",
+            "0.5:1 if growth is fast enough"
+          ],
+          "correctIndex": 0,
+          "explanation": "A 3:1 LTV:CAC ratio is the standard benchmark for sustainable paid acquisition — you earn £3 for every £1 spent acquiring a customer. Below 3:1 leaves too little margin for operations and re-investment."
+        },
+        {
+          "question": "According to Hacking Growth, what drives 70-80% of paid acquisition performance?",
+          "type": "mcq",
+          "options": [
+            "Ad creative quality",
+            "Precise audience targeting settings",
+            "Campaign budget size",
+            "Platform algorithm optimisation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ellis and Brown found creative quality drives 70-80% of results — far more than targeting parameters. Great creative self-selects the right audience by speaking directly to their specific pain point."
+        },
+        {
+          "question": "Google Search ads are best for products where customers don't yet know they have the problem.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Google Search captures existing demand — people already searching for solutions. For products solving problems customers aren't actively searching for, Meta/Facebook is better because it creates demand through interruption advertising."
+        }
+      ]
+    },
+    {
+      "id": "pma-11-viral-referral",
+      "dayNumber": 11,
+      "moduleId": "pma-module-2",
+      "title": "Viral Loops & Referral Mechanics",
+      "subtitle": "The best marketing is a product so good that customers sell it for you. Learn to engineer virality into your product and acquisition model.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Dropbox's referral programme generated 3,900% growth in 15 months — 35% of all new signups — at a fraction of the cost of paid acquisition.",
+          "body": "Viral growth isn't luck. It's engineering. Dropbox, Airbnb, Uber, PayPal — they all built referral mechanics deliberately. Today you'll learn the viral coefficient, the types of virality, and how to design a referral loop that compounds your growth."
+        },
+        {
+          "type": "content",
+          "headline": "The Viral Coefficient Explained",
+          "body": "Viral coefficient (K) = how many new users each existing user generates. Formula: K = invites sent per user × conversion rate of those invites. If K > 1: every user creates more than one new user → exponential growth. If K = 0.5: every two users generate one new user → still valuable but not viral. Even K = 0.3 meaningfully reduces your effective CAC. You don't need K > 1 for virality to matter. Adding referral mechanics that generate K = 0.3 can reduce your paid CAC by 30% — which at scale is transformational."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Types of Virality",
+          "body": "There are three types of viral loops: 1) Word-of-mouth virality — customers love it and tell others (organic, unpredictable). Can be amplified with referral rewards. 2) Product virality — the product itself forces sharing. Calendly (sharing scheduling links), Loom (sharing videos), Notion (sharing docs). Every use IS an advert. 3) Incentivised virality — explicit reward for referrals (Dropbox storage, Uber credits, cash). Most reliable but most expensive. Best viral products combine all three: the product creates natural sharing opportunities, and incentives amplify the behaviour."
+        },
+        {
+          "type": "content",
+          "headline": "Engineering Product Virality",
+          "body": "To build product virality, ask: \"Is there a natural moment in using our product where sharing adds value for both the sender AND the recipient?\" Calendly: sharing your availability. DocuSign: sending contracts. Figma: collaborating on designs. If yes, make that sharing experience frictionless and branded. If no — ask: \"What could we add that creates a reason to share?\" Examples: Loom added \"powered by Loom\" to all videos. Hotmail added \"PS: I love you. Get your free email at Hotmail.\" Both generated millions in free signups. What's your equivalent?"
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Referral Loop",
+          "body": "Answer these three questions: 1) Is there a natural sharing moment in your product today? If yes, what's the friction stopping users from sharing? 2) Could you add a feature that only works better when shared (collaboration, competitive benchmarks, shared outputs)? 3) What's the most valuable reward you could offer for a referral — and what's the minimum reward that would motivate action? Sketch a simple referral flow: Trigger → Action → Reward. Keep it one step. The simpler the loop, the higher the conversion."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a viral coefficient (K) of 0.5 mean?",
+          "type": "mcq",
+          "options": [
+            "Every two existing users generate one new user on average",
+            "The product grows 50% per month through virality",
+            "Half of all marketing budget comes from referrals",
+            "The product requires K > 1 to be considered viral"
+          ],
+          "correctIndex": 0,
+          "explanation": "K = 0.5 means every two existing users generate one new user. While not exponential, even K < 1 meaningfully reduces your effective CAC. K = 0.3 alone can reduce paid CAC by 30% at scale."
+        },
+        {
+          "question": "What is \"product virality\"?",
+          "type": "mcq",
+          "options": [
+            "When the product's natural use creates sharing — every use of the product is an implicit advertisement",
+            "When a product goes viral on social media after a PR stunt",
+            "When a product is mentioned by a celebrity or influencer",
+            "When the product has a free tier that automatically upgrades to paid"
+          ],
+          "correctIndex": 0,
+          "explanation": "Product virality happens when using the product naturally involves sharing — like Calendly (sharing scheduling links) or Loom (sharing videos). Every use exposes the product to new potential users."
+        },
+        {
+          "question": "Hotmail's \"Get your free email at Hotmail\" added to emails is an example of incentivised virality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hotmail's signature line is an example of product virality — every sent email became an advertisement. There was no incentive for the sender; the product itself spread through natural use."
+        }
+      ]
+    },
+    {
+      "id": "pma-12-unconventional-channels",
+      "dayNumber": 12,
+      "moduleId": "pma-module-2",
+      "title": "Community, Partnerships & Unconventional Channels",
+      "subtitle": "When everyone zigs with paid ads and SEO, zagging with unconventional channels can unlock growth at a fraction of the cost.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Airbnb grew in its early days by automatically cross-posting listings to Craigslist — an unconventional channel that cost them nothing and drove millions in bookings.",
+          "body": "The most efficient growth comes from channels your competitors overlook. Today you'll learn how to identify and exploit unconventional channels — from community building and partnership stacking to platform piggybacking and engineering-as-marketing."
+        },
+        {
+          "type": "content",
+          "headline": "Community as an Acquisition Channel",
+          "body": "Ryan Holiday (Growth Hacker Marketing) calls communities the \"lowest cost, highest trust\" acquisition channel. When you build a community around your product's topic (not your product), three things happen: 1) You attract people who have the exact problem you solve. 2) You earn trust before asking for anything. 3) Community members become advocates who sell for you. Examples: Notion's user community. HubSpot's marketing certification community. Indie Hackers (Stripe-owned). The key: serve the community first. The business comes second. A community that exists to sell will die. A community that exists to help will compound."
+        },
+        {
+          "type": "content",
+          "headline": "Platform Piggybacking",
+          "body": "Find platforms where your ideal customers already congregate and build a presence there BEFORE they leave for your product. The Airbnb/Craigslist story is the textbook case. Other examples: Shopify grew by targeting app developers on existing e-commerce forums. Slack grew by targeting developer communities on Hacker News and GitHub. Figma grew through design communities on Dribbble and Behance. Ask: \"Where does my ideal customer spend time online right now?\" Then go there with value — not ads. Be the most helpful presence in that community. Convert them over time."
+        },
+        {
+          "type": "content",
+          "headline": "Business Development & Partnership Stacking",
+          "body": "BD partnerships let you borrow audiences. Three types: 1) Complementary integrations — partner with a non-competing product that serves your audience (e.g., a project management tool integrating with Slack). Each integration is a distribution channel. 2) Co-marketing — joint webinars, guides, or campaigns with partners. You access their list; they access yours. 3) Reseller/agency partners — they sell on your behalf for a commission. Build a partner programme and a small but engaged partner network can outperform a large direct sales team."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Unconventional Channels",
+          "body": "Answer these five questions: 1) What online communities do your best customers belong to? (Subreddits, Slack groups, LinkedIn groups, Discord servers?) 2) What platforms do they use daily that you haven't explored? 3) What non-competing products do they already buy that could refer them to you? 4) Could you build something free (a tool, a template, a database) that attracts your ideal customer? 5) What's the smallest BD partnership experiment you could run in the next 30 days? Pick one. Build a 30-day plan to test it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes community an effective acquisition channel according to Ryan Holiday?",
+          "type": "mcq",
+          "options": [
+            "It is the lowest cost, highest trust channel — earning goodwill before selling",
+            "It generates the fastest time-to-revenue of any channel",
+            "Communities always convert better than paid ads",
+            "It requires no ongoing effort once established"
+          ],
+          "correctIndex": 0,
+          "explanation": "Holiday calls community \"lowest cost, highest trust\" — you attract people with the exact problem you solve, earn their trust by helping them first, and they naturally become advocates. A community that serves before it sells is the most sustainable."
+        },
+        {
+          "question": "Airbnb's early growth through Craigslist is an example of which growth strategy?",
+          "type": "mcq",
+          "options": [
+            "Platform piggybacking — using an existing platform's audience to drive growth",
+            "Paid acquisition on a high-intent search engine",
+            "Creating a new market category",
+            "Engineering as marketing through free tools"
+          ],
+          "correctIndex": 0,
+          "explanation": "Airbnb piggybacked on Craigslist's existing audience by cross-posting listings. This is a classic platform piggybacking strategy — going where your ideal customers already are and providing value there before converting them."
+        },
+        {
+          "question": "A community built primarily to sell a product is more likely to succeed than one built to genuinely help members.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A community that exists to sell will die — members quickly sense the motives and disengage. Communities built to genuinely help members earn trust, create advocacy, and compound over time."
+        }
+      ]
+    },
+    {
+      "id": "pma-13-email-lifecycle",
+      "dayNumber": 13,
+      "moduleId": "pma-module-2",
+      "title": "Email Marketing & Lifecycle Sequences",
+      "subtitle": "Email delivers £42 for every £1 spent — but only when done right. Build sequences that turn subscribers into buyers and buyers into advocates.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Email marketing delivers an average ROI of 4,200% — £42 for every £1 spent. No other channel comes close.",
+          "body": "Social platforms change their algorithms. Paid costs inflate. But your email list is yours forever — no intermediary, no algorithm, direct access to people who asked to hear from you. Today you'll learn the lifecycle sequences that systematically move subscribers through your customer journey."
+        },
+        {
+          "type": "content",
+          "headline": "The Five Lifecycle Stages",
+          "body": "Every subscriber travels through five stages: 1) Acquisition — they sign up (what's the lead magnet?). 2) Activation — they experience their first win (what does success look like in 7 days?). 3) Nurture — they develop trust over time (what do they need to believe before buying?). 4) Conversion — they become a customer (what's the offer and urgency?). 5) Retention — they stay and buy again (what keeps them engaged?). Each stage needs its own email sequence. Most companies only have a welcome email, then monthly newsletters. That's leaving 95% of the value on the table."
+        },
+        {
+          "type": "content",
+          "headline": "The Welcome Sequence (Most Important)",
+          "body": "Your welcome sequence is the highest-opened, highest-converting email sequence you'll ever send. Industry average open rates: welcome emails 91% vs. newsletters 21%. Structure: Email 1 (immediate): Deliver the lead magnet + set expectations for what's coming. Email 2 (Day 2): Share your story/why — build emotional connection. Email 3 (Day 4): Teach them something that creates a small \"aha\" moment. Email 4 (Day 7): Case study or social proof — show the transformation is possible. Email 5 (Day 10): Soft pitch — introduce your product as the natural next step. Get these 5 emails right and you'll outperform most companies' entire marketing."
+        },
+        {
+          "type": "content",
+          "headline": "Behavioural Triggers & Personalisation",
+          "body": "The most effective email marketing is behaviour-triggered, not calendar-triggered. Examples: Trigger: User signs up but doesn't activate core feature → send \"Did you know you can do X?\" email. Trigger: User hasn't logged in for 14 days → send a re-engagement sequence. Trigger: User hits usage limit → send upgrade email at peak desire moment. Trigger: User reads pricing page 3+ times → trigger a sales-assist email or demo offer. Behaviour-triggered emails get 3-5× higher open rates and conversion rates than scheduled broadcasts. Set them up once; they run forever."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Lifecycle Gaps",
+          "body": "Draw a simple funnel: Subscriber → Activated → Purchased → Retained. For each transition, ask: \"Do we have an email sequence that drives this step?\" If not — that's your gap. Pick the biggest gap and outline a 3-email sequence to address it: Email 1: Address the main reason people don't progress. Email 2: Share proof/story that shows progress is possible. Email 3: Specific next action with a clear benefit. Write the subject lines for all three now. You can write the bodies later. Subject lines are 80% of whether the email gets opened."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do welcome email sequences get such dramatically higher open rates than newsletters?",
+          "type": "mcq",
+          "options": [
+            "New subscribers are at peak interest and expectation — they just opted in and are watching for what was promised",
+            "Welcome emails are sent more frequently than newsletters",
+            "They contain more promotional offers and discounts",
+            "Email platforms prioritise welcome emails in the inbox algorithm"
+          ],
+          "correctIndex": 0,
+          "explanation": "Welcome emails achieve ~91% open rates because subscribers are at peak interest — they just signed up and are expecting delivery on whatever was promised. This window of attention is precious and most companies squander it."
+        },
+        {
+          "question": "What makes behaviour-triggered emails more effective than calendar-scheduled broadcasts?",
+          "type": "mcq",
+          "options": [
+            "They reach the subscriber at a moment of peak relevance based on their actual actions",
+            "They are cheaper to send than scheduled emails",
+            "They bypass spam filters more effectively",
+            "They require less copywriting effort to produce"
+          ],
+          "correctIndex": 0,
+          "explanation": "Behaviour-triggered emails respond to real user actions (hitting a limit, abandoning a feature, re-engagement) — reaching subscribers when the topic is maximally relevant. This drives 3-5× higher open and conversion rates."
+        },
+        {
+          "question": "Most companies maximise their email marketing potential with just a welcome email and monthly newsletters.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A welcome email + monthly newsletter addresses only a fraction of the customer lifecycle. Without activation, nurture, conversion, and retention sequences, companies leave ~95% of email's potential value unrealised."
+        }
+      ]
+    },
+    {
+      "id": "pma-14-channel-stacking",
+      "dayNumber": 14,
+      "moduleId": "pma-module-2",
+      "title": "Channel Stacking & Budget Allocation",
+      "subtitle": "Moving from one channel to many requires a system. Learn how to stack channels intelligently so each one amplifies the others.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "HubSpot's $2B+ revenue machine runs on a stack of 5 channels — each one feeding the next. Removing any single channel would cut growth by 40%.",
+          "body": "Once you've found your primary channel, the next step is stacking complementary channels that amplify each other. Today you'll learn the framework for building a multi-channel growth system where the whole is greater than the sum of its parts."
+        },
+        {
+          "type": "content",
+          "headline": "Channel Stacking vs. Channel Spreading",
+          "body": "Channel spreading = running 8 channels at 12.5% effort each. Result: mediocre performance everywhere, no learning depth, no compounding. Channel stacking = mastering one channel first (primary), then adding complementary channels that reinforce it. Example stack: SEO (primary → drives blog traffic) + Email capture (converts traffic to subscribers) + Newsletter (nurtures subscribers) + Webinars (converts warm leads) + Case studies (closes deals). Each layer serves the previous one. The stack works together or not at all."
+        },
+        {
+          "type": "content",
+          "headline": "The 70/20/10 Budget Rule",
+          "body": "Hacking Growth recommends a 70/20/10 split: 70% on your proven primary channel — what's working right now, maximise it. 20% on your second-best channel — proven enough to scale, needs more investment to realise potential. 10% on experiments — test 2-3 new channels with small budgets. Next quarter, promote the best experiment to 20% and the current 20% may grow to 70%. This discipline prevents both stagnation (never experimenting) and chaos (switching strategies every month). Revisit the allocation quarterly based on CAC and volume data."
+        },
+        {
+          "type": "content",
+          "headline": "Measuring Across the Stack",
+          "body": "Multi-channel attribution is hard. Most companies either do \"last click\" (credit the final touchpoint) or nothing (gut feel). The truth: customers touch 6-8 channels before buying. Solutions for growing companies: 1) First-touch attribution for awareness channels (how did they first find you?). 2) Last-touch attribution for conversion channels (what closed the deal?). 3) Ask new customers directly: \"How did you hear about us? What made you sign up?\" Self-reported attribution is surprisingly accurate and reveals channels that data misses (podcasts, word-of-mouth, communities)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Stack",
+          "body": "Map your current channel stack: Primary (70%) = _______ Secondary (20%) = _______ Experiments (10%) = _______ For each channel, identify what it feeds into the next: Primary drives [what?] → Secondary nurtures [what?] → Experiments test [what?]. If your primary channel doesn't clearly feed a secondary channel, that's a gap. Add one \"bridge\" between primary and secondary (example: SEO → email capture → nurture sequence). This single connection is often worth more than adding a new channel from scratch."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between \"channel spreading\" and \"channel stacking\"?",
+          "type": "mcq",
+          "options": [
+            "Stacking means mastering one channel first, then adding complementary channels that reinforce each other; spreading means running many channels at low effort",
+            "Spreading involves paid channels only; stacking uses only organic channels",
+            "Stacking means spending more total budget; spreading means spending less",
+            "There is no meaningful difference — both terms describe multi-channel marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Channel stacking means building a deliberate sequence where each channel feeds the next (SEO → email capture → nurture → conversion). Spreading means diluting effort across many unconnected channels with no compounding."
+        },
+        {
+          "question": "In the 70/20/10 budget framework, what does the 10% allocation fund?",
+          "type": "mcq",
+          "options": [
+            "Experiments — testing 2-3 new channels with small budgets",
+            "Agency fees and tool subscriptions",
+            "Defensive spend on channels that are declining",
+            "Brand awareness campaigns"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 10% funds small experiments on new channels. The best-performing experiments get promoted to 20% next quarter, and the current 20% may grow to 70%. This creates a systematic channel discovery pipeline."
+        },
+        {
+          "question": "\"Last click\" attribution accurately captures how customers discover and decide to buy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Customers touch 6-8 channels before buying. Last-click attribution credits only the final touchpoint, making top-of-funnel channels (content, community, referrals) appear worthless. A mix of first-touch, last-touch, and self-reported attribution gives a much more accurate picture."
+        }
+      ]
+    },
+    {
+      "id": "pma-15-growth-team",
+      "dayNumber": 15,
+      "moduleId": "pma-module-3",
+      "title": "The Growth Team: Roles, Rituals & Metrics",
+      "subtitle": "Growth isn't a department — it's a system. Learn how the best companies structure their growth teams and the weekly rituals that drive relentless momentum.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Facebook's first growth team of 5 engineers grew the platform from 500M to 1 billion users in 18 months — with no increase in marketing spend.",
+          "body": "Traditional marketing teams plan campaigns. Growth teams run experiments. The difference in output is not 10% better — it's 10×. Today you'll learn how Sean Ellis and Morgan Brown structure high-performing growth teams and the rituals that keep them moving fast."
+        },
+        {
+          "type": "content",
+          "headline": "The Growth Team Structure",
+          "body": "An effective growth team has five roles: 1) Growth Lead — sets strategy, prioritises backlog, owns the North Star Metric. 2) Product Manager — translates experiments into buildable features. 3) Engineers (1-2) — implement experiments fast. 4) Data Analyst — measures everything, finds signals in noise. 5) Designer/Copywriter — creates the creative and messaging for experiments. Early-stage: one person can wear multiple hats (founder as growth lead + analyst is common). The key is the rhythm, not the org chart. Even a solo founder can run growth sprints with discipline."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Growth Meeting",
+          "body": "Ellis and Brown prescribe a tight weekly growth meeting structure: 1) Review last week's experiment results (15 min). 2) Extract learnings — what did we confirm/disprove? (10 min). 3) Prioritise the next sprint from the experiment backlog (15 min). 4) Assign owners and deadlines for experiments launching this week (10 min). Total: 50 minutes. Non-negotiable rule: every meeting must result in at least one new experiment launching this week. No experiment = no meeting needed. The cadence is everything. Weekly beats monthly because compounding starts faster."
+        },
+        {
+          "type": "content",
+          "headline": "The ICE Prioritisation Framework",
+          "body": "With 20+ ideas in the backlog, how do you choose what to test? Use ICE scoring: Impact (1-10): If this works, how much will it move the North Star Metric? Confidence (1-10): How sure are we this will work based on evidence/prior data? Ease (1-10): How fast and cheaply can we run the experiment? ICE Score = (Impact + Confidence + Ease) / 3. Run the top-scored experiments first. Review the scores weekly — they change as you learn. ICE isn't perfect, but it's fast, transparent, and prevents HiPPO decision-making (Highest Paid Person's Opinion winning by default)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Growth Backlog",
+          "body": "Write down 10 growth experiment ideas — anything that might increase acquisition, activation, retention, revenue, or referrals. For each, score Impact (1-10), Confidence (1-10), Ease (1-10). Calculate ICE = average of the three. Sort by ICE score. Your top 3 are your first sprint. Set a date for your first \"growth meeting\" (even if it's solo). Commit to running at least one experiment per week. If you do nothing else from this lesson, do this."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between a traditional marketing team and a growth team?",
+          "type": "mcq",
+          "options": [
+            "Marketing teams plan campaigns; growth teams run systematic experiments with measurable outcomes",
+            "Growth teams have larger budgets than marketing teams",
+            "Marketing teams focus on awareness; growth teams focus only on paid acquisition",
+            "Growth teams use technology; marketing teams use creative"
+          ],
+          "correctIndex": 0,
+          "explanation": "The fundamental difference is methodology: marketing teams plan campaigns with uncertain ROI, while growth teams run structured experiments, measure results, learn fast, and compound wins — producing dramatically higher output."
+        },
+        {
+          "question": "What does the \"C\" in the ICE prioritisation framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Confidence",
+            "Cost",
+            "Conversion",
+            "Channel"
+          ],
+          "correctIndex": 0,
+          "explanation": "ICE = Impact, Confidence, Ease. Confidence measures how sure you are the experiment will work based on existing evidence or prior tests. High-confidence experiments are less risky to run first."
+        },
+        {
+          "question": "The weekly growth meeting requires a minimum of 3 hours to be effective.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ellis and Brown prescribe ~50-minute weekly growth meetings: 15 min reviewing results, 10 min extracting learnings, 15 min prioritising, 10 min assigning owners. Tight, focused, and action-oriented — not long."
+        }
+      ]
+    },
+    {
+      "id": "pma-16-north-star-metric",
+      "dayNumber": 16,
+      "moduleId": "pma-module-3",
+      "title": "The North Star Metric & Growth Model",
+      "subtitle": "One metric to rule them all. Learn how to choose the number that perfectly captures your growth and aligns your entire team around what matters most.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Airbnb's North Star Metric isn't revenue. It's \"nights booked.\" Every team in the company optimises for this one number.",
+          "body": "Most companies track dozens of metrics and end up optimising for none of them. The North Star Metric concept — popularised by Ellis and Brown — gives your entire organisation one number to rally around. Today you'll learn how to choose yours and build the growth model underneath it."
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Great North Star Metric",
+          "body": "A great North Star Metric has three properties: 1) It captures value delivered to customers — not just business outcomes. Revenue measures what customers pay, not what they get. \"Nights booked\" measures the actual value exchange. 2) It predicts long-term revenue — it leads revenue rather than lagging it. 3) It can be influenced by multiple teams — not owned by one department. Examples: Spotify = Monthly Active Users who listen >30 min/day. Slack = Daily Active Users sending messages. HubSpot = Weekly active contacts reached. Notice: all measure engagement and value delivery, not just sign-ups or revenue."
+        },
+        {
+          "type": "content",
+          "headline": "The North Star Metric Equation",
+          "body": "Once you choose your North Star, decompose it into its drivers. This is your growth model. Example for an e-commerce app: Revenue = Active users × Purchase rate × Average order value. Active users = New users + Retained users - Churned users. New users = Channel A traffic × conversion + Channel B traffic × conversion. Now every metric in your company has a clear link to the North Star. Teams know: \"If I improve email open rates by 5%, it flows through to X more active users, which drives £Y in revenue.\" This clarity is transformational."
+        },
+        {
+          "type": "content",
+          "headline": "The Anti-Metric: Vanity vs. Actionable",
+          "body": "Not all metrics are created equal. Vanity metrics feel good but don't drive decisions: total sign-ups, page views, social media followers, press mentions. Actionable metrics connect to real business outcomes and suggest specific actions: Daily Active Users, Week-2 retention rate, activation rate, revenue per user. The test: Can you look at this metric going up and know exactly what team or experiment caused it? If not, it's vanity. Your North Star should always be an actionable metric. Vanity metrics are for the press release."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Choose Your North Star",
+          "body": "Answer these three filtering questions: 1) What does it look like when a customer gets real value from our product? What are they doing? 2) Which metric would, if it doubled, almost certainly mean our revenue doubled too? 3) Which metric can be influenced by at least 3 different teams? The answer to all three is your North Star candidate. Write it down. Then decompose it: NSM = Driver A × Driver B × Driver C. These drivers become your team's weekly KPIs."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is \"revenue\" often not a great North Star Metric?",
+          "type": "mcq",
+          "options": [
+            "Revenue measures what customers pay, not the value they receive — it lags the actual value exchange",
+            "Revenue is too difficult to measure accurately",
+            "Revenue only captures B2C transactions, not B2B",
+            "Revenue is a vanity metric that doesn't correlate with growth"
+          ],
+          "correctIndex": 0,
+          "explanation": "A good North Star captures value delivered to customers (leading indicator) rather than money received (lagging indicator). Metrics like \"nights booked\" or \"messages sent\" correlate with value delivery and predict future revenue more accurately."
+        },
+        {
+          "question": "What is the difference between a vanity metric and an actionable metric?",
+          "type": "mcq",
+          "options": [
+            "Actionable metrics connect to real outcomes and suggest specific team actions; vanity metrics feel good but don't drive decisions",
+            "Vanity metrics track revenue; actionable metrics track engagement",
+            "Actionable metrics are easier to measure than vanity metrics",
+            "Vanity metrics are customer-reported; actionable metrics are system-measured"
+          ],
+          "correctIndex": 0,
+          "explanation": "The test for an actionable metric: can you look at it moving and know exactly what caused the change? Actionable metrics connect to outcomes and suggest clear experiments. Vanity metrics (total sign-ups, page views) feel impressive but don't guide decisions."
+        },
+        {
+          "question": "A North Star Metric should be influenced by only one team to maintain clear ownership.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A good North Star Metric should be influenceable by multiple teams — that's what creates alignment. If only one team can move it, it becomes their metric, not the company's. The goal is to give every team a stake in the same outcome."
+        }
+      ]
+    },
+    {
+      "id": "pma-17-activation",
+      "dayNumber": 17,
+      "moduleId": "pma-module-3",
+      "title": "Activation: Turning Signups into Users",
+      "subtitle": "Acquiring users is worthless if they never experience value. Activation is the most leveraged growth lever most companies ignore.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Twitter found that users who follow 30+ accounts in their first session are 10× more likely to be active 6 months later. That one insight reshaped their entire onboarding.",
+          "body": "You've acquired a user. They signed up. Then they disappear. This is the most common growth failure — and it's entirely preventable. Today you'll learn how to identify your Aha Moment and build an activation funnel that turns signups into genuine users."
+        },
+        {
+          "type": "content",
+          "headline": "The Aha Moment",
+          "body": "The Aha Moment is the specific action or experience where a new user first gets the core value of your product. For Facebook it was \"7 friends in 10 days.\" For Slack it was \"2,000 messages sent by a team.\" For Dropbox it was \"one file in one folder on two devices.\" Before the Aha Moment, users are on a trial. After it, they're hooked. Your activation job: get every new user to their Aha Moment as fast as possible. If you don't know what your Aha Moment is — analyse your most retained users vs. churned users and find the action that distinguishes them."
+        },
+        {
+          "type": "content",
+          "headline": "The Activation Funnel",
+          "body": "Map every step between signup and Aha Moment. This is your activation funnel. Measure the drop-off at each step. Example: 1,000 signups → 700 verify email (30% drop) → 400 complete profile (43% drop) → 200 create first project (50% drop) → 80 invite a colleague (60% drop) → 40 complete the Aha Moment (50% drop). Now ask: what's causing the biggest drop? Usually it's one step with a huge fall-off — eliminate that friction first. A 10% improvement at the biggest bottleneck beats 2% improvements at every step."
+        },
+        {
+          "type": "content",
+          "headline": "Activation Levers That Work",
+          "body": "The most effective activation improvements: 1) Reduce time-to-value — cut every step that doesn't lead directly to the Aha Moment. If you don't need a credit card to get value, remove it from signup. 2) Pre-populate with sample data — let users see a working product immediately (Notion's templates). 3) Personalise onboarding — ask 1-2 questions upfront and tailor the first experience. 4) Human touch — for high-value users, a personal welcome email from a founder converts at 5-10×. 5) Progress indicators — show users how close they are to the Aha Moment (3 of 5 steps complete)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Find Your Aha Moment",
+          "body": "Step 1: List 5 of your most engaged long-term users. Step 2: What's the ONE action they all took in their first week that occasional users didn't? (If you have analytics, run a cohort analysis comparing 90-day retained users vs churned users within 7 days.) Step 3: That action is your Aha Moment candidate. Step 4: Map every step between signup and that action. Step 5: Identify the biggest drop-off. Step 6: Design one experiment to reduce friction at that step. Even a 10% improvement in activation compounds dramatically over a year of user acquisition."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"Aha Moment\" in product activation?",
+          "type": "mcq",
+          "options": [
+            "The specific action where a new user first experiences the core value of the product",
+            "The moment a user decides to upgrade from free to paid",
+            "The point where a user first invites a friend to join",
+            "When a user completes the full onboarding tutorial"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Aha Moment is the exact action or experience where a user first \"gets it\" — the core value becomes real and tangible. For Facebook it was 7 friends in 10 days; for Dropbox, one file synced across two devices."
+        },
+        {
+          "question": "When optimising an activation funnel, where should you focus first?",
+          "type": "mcq",
+          "options": [
+            "The step with the biggest drop-off rate — fixing one bottleneck beats small improvements everywhere",
+            "The very first step in the funnel — impressions matter most",
+            "The final step just before the Aha Moment — it's closest to the goal",
+            "Equally across all steps for a balanced approach"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fix the biggest bottleneck first. A 10% improvement at a step where 60% of users drop off has far more impact than 2% improvements at every smaller step. Funnel optimisation is about finding and eliminating the biggest constraint."
+        },
+        {
+          "question": "Requiring a credit card at signup improves activation because it filters for serious users.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Removing unnecessary friction — like credit card requirements before delivering value — consistently improves activation rates. Filtering for \"serious\" users at signup reduces the pool of users who might become activated, retained customers."
+        }
+      ]
+    },
+    {
+      "id": "pma-18-retention",
+      "dayNumber": 18,
+      "moduleId": "pma-module-3",
+      "title": "Retention: The Silent Growth Multiplier",
+      "subtitle": "You can't grow a leaky bucket. Retention is the most underfocused growth lever — and fixing it multiplies the value of every other channel.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Improving retention by just 5% increases profits by 25-95%. Most companies spend 95% of growth budget on acquisition and 5% on retention — backwards.",
+          "body": "Retention is the foundation of all sustainable growth. If users churn, you're running on a treadmill — you acquire users just to replace the ones who left. Today you'll learn how to measure retention properly and the levers that keep users coming back."
+        },
+        {
+          "type": "content",
+          "headline": "The Retention Curve",
+          "body": "Every product has a retention curve — a graph showing what percentage of users from a given cohort are still active after N days/weeks/months. Three shapes: 1) Flatlines at zero — eventually everyone leaves (bad). 2) Decays to a flat line above zero — a core group stays forever (sustainable). 3) Upticks over time — users become more engaged the longer they stay (exceptional, e.g. Slack). Your goal: stop the curve from going to zero. Even a curve that decays to 10% retention at month 6 can be a healthy business — 10% of every cohort becoming long-term users compounds."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Retention Stages",
+          "body": "Ellis and Brown break retention into three time horizons: 1) Initial retention (Day 1-7): Did they return after first use? Driven by: activation quality and value promised vs. delivered. 2) Medium-term retention (Week 2-8): Did the product become a habit? Driven by: habit-forming mechanics, notifications, use case depth. 3) Long-term retention (Month 3+): Are they still here? Driven by: network effects, data lock-in, product becoming indispensable, community. Different levers drive each stage. Improving Day-7 retention doesn't necessarily improve Month-6 retention."
+        },
+        {
+          "type": "content",
+          "headline": "The Most Effective Retention Levers",
+          "body": "The highest-impact retention tactics: 1) Habit triggers — notifications, streaks, weekly digests. Used well, they remind users of value. Used poorly, they're spam. The test: does the trigger lead to value, or just engagement for its own sake? 2) Progress mechanics — streaks, levels, completion bars. Duolingo's streak feature alone dramatically increased daily active users. 3) Network effects — every new user makes the product more valuable for existing users (Slack, LinkedIn). 4) Win emails — proactively show users what they achieved (\"You saved 3 hours this week\"). Connect them to outcomes."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Plot Your Retention Curve",
+          "body": "If you have analytics: Pull a cohort of users who signed up 90 days ago. Plot the percentage still active at Day 1, 7, 14, 30, 60, 90. If the curve reaches zero by Day 30 — you have an activation/habit problem. If it flattens but above 0% — you have a base to build from. If you don't have analytics yet: Ask 5 churned users \"why did you stop using [product]?\" The answers are your retention roadmap. Identify the one moment where users disengage — that's your first experiment target."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does it mean when a retention curve \"flattens above zero\"?",
+          "type": "mcq",
+          "options": [
+            "A core group of users stays active indefinitely — a sustainable base to build growth from",
+            "The product has failed and all users will eventually churn",
+            "Retention is perfect and no users are leaving",
+            "The product needs to be relaunched to improve retention"
+          ],
+          "correctIndex": 0,
+          "explanation": "A retention curve that decays to a flat line above zero means a core group of users stays forever. Even 10% long-term retention compounding across cohorts creates a sustainable, growing user base."
+        },
+        {
+          "question": "Which retention lever involves automatically showing users what they achieved with your product?",
+          "type": "mcq",
+          "options": [
+            "Win emails — proactively connecting users to their outcomes",
+            "Network effects — making the product more valuable as users grow",
+            "Data lock-in — making it hard to leave by accumulating user data",
+            "Progress mechanics — streaks and completion bars"
+          ],
+          "correctIndex": 0,
+          "explanation": "Win emails proactively show users their outcomes (\"You saved 3 hours this week\") — reinforcing the value of the product and creating a reason to continue using it. This connects the product to real, tangible results."
+        },
+        {
+          "question": "Improving Day-7 retention automatically improves Month-6 retention.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Different retention stages are driven by different levers. Day-7 retention depends on activation quality; Month-6 retention depends on habits, network effects, and data lock-in. Improving one doesn't guarantee improvement in the other."
+        }
+      ]
+    },
+    {
+      "id": "pma-19-growth-experiments",
+      "dayNumber": 19,
+      "moduleId": "pma-module-3",
+      "title": "Running High-Tempo Growth Experiments",
+      "subtitle": "Speed of learning beats quality of individual bets. Learn the experiment framework that lets you run 10× more tests with better results.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Booking.com runs over 1,000 simultaneous A/B tests. Even with a 10% success rate, that's 100 improvements per sprint.",
+          "body": "Growth is a learning sport. The team that learns fastest wins. Today you'll learn how to design, run, and learn from experiments at high tempo — without sacrificing rigour or creating chaos."
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Good Experiment",
+          "body": "Every experiment needs six components: 1) Hypothesis — \"We believe [change] will cause [outcome] because [reason].\" 2) Success metric — the one number that determines pass/fail. 3) Control vs. variant — what's the baseline? What are we testing? 4) Minimum sample size — how many users needed for statistical significance? 5) Duration — how long will we run it? 6) Decision criteria — if success metric improves by X%, we ship. Pre-committing to decision criteria prevents \"we need more data\" paralysis and HiPPO-driven reversals after the results come in."
+        },
+        {
+          "type": "content",
+          "headline": "The High-Tempo Testing Framework",
+          "body": "Sean Ellis's high-tempo testing principle: run experiments in parallel, learn from all of them, compound the winners. The bottleneck isn't ideas — it's implementation speed. Tactics for speed: 1) Modular tests — design experiments that can be launched in < 2 days of engineering time. 2) No-code tests — use tools like Optimizely, VWO, or even manual split routing for initial validation before building. 3) Test copy and positioning first — words are the cheapest experiments. 4) Feature flags — ship experiments to 10% of users without deploying twice. Speed × volume = learning rate."
+        },
+        {
+          "type": "content",
+          "headline": "Learning From Failures (The Most Important Part)",
+          "body": "Most experiments fail. That's not a problem — it's the process. A failed experiment still teaches you something if you've specified your hypothesis correctly. Failed experiment insights compound into better hypotheses over time. The mistake teams make: treating a failed experiment as wasted effort rather than a data point. Protocol for failed experiments: 1) Document why you expected it to work. 2) Document the actual result. 3) Generate 2-3 hypotheses about why it didn't work. 4) These become the next experiments. A well-documented failure is worth more than an undocumented win."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your First Experiment",
+          "body": "Using your ICE-prioritised backlog from Lesson 15, take your top-scored idea and fill in: Hypothesis: \"We believe [specific change] will [improve X metric] because [reason based on evidence].\" Success metric: _______ Baseline (current value): _______ Target (what counts as a win): _______ Sample size needed: _______ Duration: _______ Decision date: _______ If you can't fill in all six, your experiment isn't ready to run. The discipline of pre-specifying everything is what separates learning from guessing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why should decision criteria for an experiment be pre-committed before results come in?",
+          "type": "mcq",
+          "options": [
+            "To prevent \"we need more data\" paralysis and biased post-hoc interpretation of results",
+            "Because results are only valid if criteria were set in advance for legal reasons",
+            "To make experiments run faster by skipping analysis",
+            "Because pre-commitment improves statistical accuracy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Pre-committing decision criteria prevents the common trap of re-interpreting results to fit what people hoped for (\"HiPPO reversals\") or endlessly extending experiments when results are inconvenient."
+        },
+        {
+          "question": "What is the fastest type of experiment to run for initial growth validation?",
+          "type": "mcq",
+          "options": [
+            "Copy and positioning tests — changing words costs nothing and can be done immediately",
+            "Full product feature builds tested on 100% of users",
+            "Paid acquisition experiments with large budgets",
+            "Complete UX redesigns validated with user research"
+          ],
+          "correctIndex": 0,
+          "explanation": "Words are the cheapest experiments. Testing different headlines, value propositions, or email subjects requires zero engineering time and can validate positioning before investing in product or paid channels."
+        },
+        {
+          "question": "A failed experiment provides no useful information for future growth strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A well-documented failed experiment is highly valuable — it confirms what doesn't work, generates hypotheses about why, and compounds into better future experiments. Treating failures as waste rather than data points is what kills growth team effectiveness."
+        }
+      ]
+    },
+    {
+      "id": "pma-20-analysing-results",
+      "dayNumber": 20,
+      "moduleId": "pma-module-3",
+      "title": "Analysing Results & Compounding Wins",
+      "subtitle": "The difference between good and great growth teams is not running more experiments — it's extracting more value from each one.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Amazon's \"Customers who bought this also bought...\" feature — one insight from a single data analysis — generates an estimated 35% of all Amazon revenue.",
+          "body": "Running experiments is only half the job. Extracting, applying, and compounding the learnings is where the real growth lives. Today you'll learn how to analyse results correctly, avoid common statistical traps, and build a learning flywheel that compounds over time."
+        },
+        {
+          "type": "content",
+          "headline": "Statistical Significance vs. Practical Significance",
+          "body": "A result can be statistically significant (not due to chance) but practically insignificant (too small to matter). Common mistakes: 1) Declaring victory too early — looking at results before reaching sample size. 2) Ignoring effect size — a 0.1% improvement that's \"statistically significant\" at n=1,000,000 is still a 0.1% improvement. 3) Celebrating p < 0.05 without asking \"is this large enough to act on?\" Rule of thumb: only act on results where the uplift exceeds your minimum meaningful threshold (typically 5-10% improvement on your success metric)."
+        },
+        {
+          "type": "content",
+          "headline": "The Learning Extraction Framework",
+          "body": "After every experiment (win or loss), document: 1) What we tested (specific change). 2) What we measured (metric, baseline, result). 3) What we learned (the underlying insight, not just the result). 4) What we'll do next (the experiments this insight generates). Example: Tested: Adding social proof to pricing page. Result: +12% conversion. Learned: Customers at the decision stage are primarily motivated by peer validation, not feature lists. Next: Test testimonials segmented by customer type. The insight is more valuable than the 12% win — it shapes the next 10 experiments."
+        },
+        {
+          "type": "content",
+          "headline": "Building a Growth Wiki",
+          "body": "Institutional knowledge is a growth moat. Every insight, every failure, every surprising result should live in a shared \"Growth Wiki\" that new team members can read. Structure: Hypothesis log (what we tested, what we believed, what happened). Insight library (underlying learnings, with evidence). Channel performance database (cost/acquisition, conversion rate, volume by channel over time). Most companies lose their growth knowledge when team members leave or memory fades. A Growth Wiki compounds — each insight makes the next experiment smarter. Build it from day one."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Create Your First Growth Wiki Entry",
+          "body": "Think of the last marketing or product change you made. Document it in this format: What we changed: _______ Why we thought it would work: _______ Result (metric change): _______ Underlying insight: _______ Next experiment it suggests: _______ Paste this into a shared doc, Notion page, or spreadsheet. This is your Growth Wiki — one entry. Add one entry after every experiment from now on. In 6 months, this document will be one of your most valuable assets."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the difference between statistical significance and practical significance in experiments?",
+          "type": "mcq",
+          "options": [
+            "Statistical significance means the result is not due to chance; practical significance means the improvement is large enough to act on",
+            "Statistical significance is for scientists; practical significance is for businesses",
+            "They mean the same thing in the context of growth experiments",
+            "Statistical significance requires more data than practical significance"
+          ],
+          "correctIndex": 0,
+          "explanation": "A result can be statistically significant (reliably not random) but practically meaningless (e.g., a 0.1% improvement). Growth decisions should require both: the result is not due to chance AND the effect is large enough to justify rollout."
+        },
+        {
+          "question": "What makes a \"Growth Wiki\" a competitive moat?",
+          "type": "mcq",
+          "options": [
+            "It compounds institutional knowledge so every new experiment is informed by all previous learnings",
+            "It is a secret database that competitors cannot access",
+            "It automatically runs experiments without human involvement",
+            "It stores customer data that other companies don't have"
+          ],
+          "correctIndex": 0,
+          "explanation": "A Growth Wiki compounds institutional knowledge — each documented insight makes future experiments smarter, reducing wasted tests and accelerating discovery. Teams without one lose their learnings when people leave or memory fades."
+        },
+        {
+          "question": "You should declare a test a winner as soon as results look positive, before reaching the pre-committed sample size.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Declaring victory early (before reaching minimum sample size) produces false positives. Early results are noisy and often reverse as more data comes in. Always run to the pre-committed sample size and decision date."
+        }
+      ]
+    },
+    {
+      "id": "pma-21-scalable-machine",
+      "dayNumber": 21,
+      "moduleId": "pma-module-3",
+      "title": "Building a Scalable Acquisition Machine",
+      "subtitle": "Tie it all together. Build the end-to-end acquisition system that runs, learns, and compounds without needing you in the room.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "At peak growth, Dropbox was acquiring a new user every second — on autopilot — through a system they built and documented over 3 years.",
+          "body": "You've learned positioning, channels, referral mechanics, lifecycle emails, growth teams, and experiments. Today you'll learn how to assemble everything into a single, documented, scalable acquisition machine that doesn't depend on any one person."
+        },
+        {
+          "type": "content",
+          "headline": "The Acquisition Machine Blueprint",
+          "body": "A scalable acquisition machine has four layers: 1) Positioning layer — clear category, value proposition, and segment messaging. Updated quarterly. 2) Discovery layer — primary channel(s) that reliably drive new eyeballs (SEO, paid, partnerships, viral). 3) Conversion layer — landing pages, onboarding, and activation flows that convert discovery into activated users. 4) Retention & expansion layer — email sequences, habit loops, and referral mechanics that compound LTV. Each layer feeds the next. A breakdown in any layer throttles the whole machine. Audit each layer quarterly."
+        },
+        {
+          "type": "content",
+          "headline": "The Playbook: Documenting for Scale",
+          "body": "A machine that lives in someone's head isn't a machine — it's a dependency. Document: 1) Channel playbooks — step-by-step how each channel is managed, measured, and optimised. 2) Experiment templates — standard hypothesis, metric, and decision criteria formats. 3) Onboarding scripts — what a new team member needs to know to contribute from Day 1. 4) The Growth Wiki (from Lesson 20). With this documentation, your acquisition machine can be operated, improved, and scaled by others. This is the difference between a business and a job."
+        },
+        {
+          "type": "content",
+          "headline": "The Quarterly Growth Review",
+          "body": "Scaling requires regular recalibration. Every quarter: 1) Review your North Star Metric — are you on track? 2) Audit your channel stack — is your primary channel still the best? Are new channels ready to promote? 3) Review CAC and LTV trends — is unit economics improving or degrading? 4) Update your ICE backlog — new insights mean new experiments. 5) Review competitor positioning — has anything changed that requires a positioning update? The companies that stay at the top don't run growth once and coast. They treat growth as a continuous, disciplined system."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your 30-Day Acquisition Sprint",
+          "body": "Design your acquisition sprint for the next 30 days: Week 1: Finalise your positioning statement using the canvas from Module 1. Write or update your landing page. Week 2: Run a Bullseye exercise. Identify your primary channel. Launch one small experiment. Week 3: Set up your welcome email sequence (5 emails). Identify your Aha Moment. Remove one friction point from activation. Week 4: Run your first weekly growth meeting. ICE-score your next 10 ideas. Launch one experiment. By Day 30, you won't have a perfect machine — but you'll have a running one. That's what matters."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four layers of a scalable acquisition machine?",
+          "type": "mcq",
+          "options": [
+            "Positioning, Discovery, Conversion, and Retention & Expansion",
+            "Awareness, Consideration, Purchase, and Loyalty",
+            "Brand, Content, Paid, and Referral",
+            "Product, Marketing, Sales, and Customer Success"
+          ],
+          "correctIndex": 0,
+          "explanation": "The four layers are: Positioning (clear category and value prop), Discovery (channels driving new eyeballs), Conversion (turning discovery into activated users), and Retention & Expansion (compounding LTV through email, habits, and referrals). Each feeds the next."
+        },
+        {
+          "question": "What makes an acquisition machine truly \"scalable\"?",
+          "type": "mcq",
+          "options": [
+            "It is documented in playbooks so it can be operated and improved by others without key-person dependency",
+            "It runs on fully automated paid advertising with no human input",
+            "It works across all 19 traction channels simultaneously",
+            "It generates more than £1M in annual revenue"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scalability comes from documentation — channel playbooks, experiment templates, and onboarding scripts that allow anyone to operate and improve the system. An acquisition approach that lives in one person's head is a dependency, not a machine."
+        },
+        {
+          "question": "Once you've built a working acquisition system, you can stop experimenting and focus on execution.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Growth requires continuous recalibration — quarterly reviews of channels, unit economics, competitor positioning, and new experiment backlogs. Markets change, channels saturate, and customer needs evolve. The top companies treat growth as a permanent, disciplined system."
+        }
+      ]
+    }
+  ]
+}

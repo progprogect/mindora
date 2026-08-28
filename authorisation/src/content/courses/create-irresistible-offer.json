@@ -1,0 +1,1574 @@
+{
+  "id": "create-irresistible-offer",
+  "title": "Create an Irresistible Offer",
+  "subtitle": "Build offers so compelling that buyers feel foolish saying no. Master the $100M frameworks for value, positioning, and pricing.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "cio-module-1",
+      "moduleNumber": 1,
+      "title": "The Offer Foundation",
+      "subtitle": "Understand why most offers fail and discover the $100M framework for creating offers so good people feel foolish saying no.",
+      "days": "Lessons 1–7",
+      "skill": "Apply the value equation to diagnose and design irresistible offers",
+      "lessonIds": [
+        "cio-1-why-offers-fail",
+        "cio-2-the-value-equation",
+        "cio-3-four-components",
+        "cio-4-dream-outcome",
+        "cio-5-diagnosing-pain",
+        "cio-6-pricing-psychology",
+        "cio-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "cio-module-2",
+      "moduleNumber": 2,
+      "title": "Building Your Offer Stack",
+      "subtitle": "Layer the components that multiply perceived value — bonuses, guarantees, scarcity, and positioning — into a complete offer.",
+      "days": "Lessons 8–14",
+      "skill": "Build a full offer stack with bonuses, risk reversal, and premium positioning",
+      "lessonIds": [
+        "cio-8-core-deliverable",
+        "cio-9-bonuses-that-multiply",
+        "cio-10-risk-reversal",
+        "cio-11-scarcity-and-urgency",
+        "cio-12-one-page-marketing",
+        "cio-13-price-anchoring",
+        "cio-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "cio-module-3",
+      "moduleNumber": 3,
+      "title": "Launch & Optimise",
+      "subtitle": "Bring your offer to the right market, present it compellingly, and build the feedback loops that make it stronger over time.",
+      "days": "Lessons 15–21",
+      "skill": "Launch, test, and optimise your offer for maximum market fit",
+      "lessonIds": [
+        "cio-15-market-segmentation",
+        "cio-16-offer-presentation",
+        "cio-17-testing-before-scaling",
+        "cio-18-feedback-loops",
+        "cio-19-positioning",
+        "cio-20-monetizing-innovation",
+        "cio-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "cio-1-why-offers-fail",
+      "dayNumber": 1,
+      "moduleId": "cio-module-1",
+      "title": "Why Most Offers Fail",
+      "subtitle": "The hidden reason customers say no — and what separates a forgettable product from an irresistible offer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "72% of new products fail — not because they're bad, but because the offer is invisible.",
+          "body": "Most entrepreneurs obsess over features while ignoring what actually makes someone pull out their wallet. Today you'll learn why good products die in silence — and what the top 1% do differently."
+        },
+        {
+          "type": "content",
+          "headline": "Product ≠ Offer",
+          "body": "A product is what you make. An offer is the complete package you present to a buyer: the product + the way you frame it + the bonuses + the guarantee + the price + the urgency. Alex Hormozi calls this the \"offer stack.\" Two identical products with different offers will have wildly different sales. The offer IS the business model."
+        },
+        {
+          "type": "content",
+          "headline": "The Commodity Trap",
+          "body": "When your offer looks like everyone else's, buyers default to comparing price. You become a commodity — interchangeable, forgettable, competing on who can be cheapest. The escape? Make your offer so different and valuable that comparison becomes impossible. Hormozi's rule: \"Make it so good people feel stupid saying no.\" That requires designing the offer, not just the product."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Silent Killers",
+          "body": "1) Unclear outcome — the buyer can't picture what they'll get. 2) Invisible value — the offer doesn't communicate why it's worth the price. 3) Unaddressed risk — the buyer fears wasting money and nobody removes that fear. Fix these three and your conversions can multiply overnight — even with the exact same product."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The \"Would I Buy This?\" Test",
+          "body": "Think of something you sell (or want to sell). Now imagine a stranger sees your offer for the first time. Can they answer these three questions in under 10 seconds? 1) What do I get? 2) Why is it worth more than the price? 3) What happens if it doesn't work for me? If any answer is unclear — your offer has a gap. Write down which one(s) feel weakest."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an \"offer\" in the context of this course?",
+          "type": "mcq",
+          "options": [
+            "The complete bundle of value, bonuses, guarantees, and price you present to a buyer",
+            "A discount or promotional price for a product",
+            "The advertising copy used to promote a product",
+            "A contract between buyer and seller"
+          ],
+          "correctIndex": 0,
+          "explanation": "An offer is the complete package — what you give, what bonuses you include, what risks you remove, and what price you charge. It's far more than just the product."
+        },
+        {
+          "question": "Most offers fail because the product itself is poor quality.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most offers fail not because the product is bad, but because the offer isn't structured to communicate value clearly. The same product packaged differently can sell 10× better."
+        },
+        {
+          "question": "What does Alex Hormozi mean by \"making an offer so good people feel stupid saying no\"?",
+          "type": "mcq",
+          "options": [
+            "The perceived value so far exceeds the price that the decision to buy feels obvious",
+            "Using high-pressure sales tactics to force a purchase decision",
+            "Offering the lowest price in the market",
+            "Using emotional manipulation to overcome objections"
+          ],
+          "correctIndex": 0,
+          "explanation": "When the stack of value — outcome, likelihood, speed, ease — massively exceeds the price, the logical response is to buy. The goal is to make \"no\" feel like the irrational choice."
+        }
+      ]
+    },
+    {
+      "id": "cio-2-the-value-equation",
+      "dayNumber": 2,
+      "moduleId": "cio-module-1",
+      "title": "The Value Equation",
+      "subtitle": "The four-variable formula that determines how much someone will pay — and how to engineer each lever.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "There's an equation that predicts exactly how valuable your offer feels — most founders have never seen it.",
+          "body": "Price is just one variable. The real levers that determine whether someone buys (and how much they'll pay) are hidden in a simple four-part formula. Today you'll learn the equation that drives every premium offer on Earth."
+        },
+        {
+          "type": "content",
+          "headline": "The Value Equation Revealed",
+          "body": "Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort & Sacrifice). The numerator is what you INCREASE: Dream Outcome — how big and desirable is the result? Perceived Likelihood — how confident is the buyer it will actually work? The denominator is what you DECREASE: Time Delay — how long until they see results? Effort & Sacrifice — how hard is it for them?"
+        },
+        {
+          "type": "content",
+          "headline": "Engineering Each Lever",
+          "body": "Dream Outcome — Paint a vivid picture. \"Lose weight\" vs \"Fit into your wedding dress in 8 weeks\" — same category, wildly different value. Perceived Likelihood — Add proof: testimonials, case studies, \"done for you\" elements. Time Delay — Offer quick wins, show a clear timeline. Effort & Sacrifice — Templates, automation, \"done with you\" support. Every step you remove is value added."
+        },
+        {
+          "type": "content",
+          "headline": "Why Lowering Price Is the Worst Strategy",
+          "body": "Notice that price isn't in the value equation — it's what the buyer GIVES in exchange for value. When you drop price instead of increasing value, you signal \"this isn't worth much.\" The best businesses charge MORE by maximising the numerator and minimising the denominator. A £10,000 programme that guarantees results in 30 days with zero effort is a better deal than a £100 ebook that might work in 12 months."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Score Your Offer",
+          "body": "Rate your current offer on each lever from 1-10: Dream Outcome (how big/vivid is the promised result?), Perceived Likelihood (how confident is the buyer?), Time Delay (how quickly do results come? 10 = instant), Effort Required (how easy? 10 = zero effort). Multiply the top two. Multiply the bottom two. Divide. Your \"value score\" reveals which lever needs the most work."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In Hormozi's value equation, which two variables should you maximise?",
+          "type": "mcq",
+          "options": [
+            "Dream Outcome and Perceived Likelihood of Achievement",
+            "Time Delay and Effort & Sacrifice",
+            "Price and Perceived Value",
+            "Scarcity and Urgency"
+          ],
+          "correctIndex": 0,
+          "explanation": "Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort). To increase value you maximise the numerator (outcome + likelihood) and minimise the denominator (time + effort)."
+        },
+        {
+          "question": "Reducing the time to achieve a result increases the perceived value of an offer.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Time Delay is in the denominator of the value equation. Reducing it (getting results faster) directly increases value — even if the outcome itself stays the same."
+        },
+        {
+          "question": "Which lever is often the most overlooked when building an offer?",
+          "type": "mcq",
+          "options": [
+            "Reducing the perceived effort and sacrifice required",
+            "Lowering the price",
+            "Adding more features to the product",
+            "Creating a flashier brand"
+          ],
+          "correctIndex": 0,
+          "explanation": "Effort & Sacrifice is the most overlooked value lever. Buyers don't just want a great outcome — they want it to feel achievable without overwhelming cost or complexity."
+        }
+      ]
+    },
+    {
+      "id": "cio-3-four-components",
+      "dayNumber": 3,
+      "moduleId": "cio-module-1",
+      "title": "The Four Components of an Irresistible Offer",
+      "subtitle": "Every winning offer has four essential layers. Learn what they are and how they work together.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Strip away every great offer in history and you'll find the same four building blocks inside.",
+          "body": "Whether it's Apple selling iPhones, a personal trainer selling transformation, or a SaaS company selling subscriptions — the structure is identical. Today you'll learn the four layers and how they multiply each other."
+        },
+        {
+          "type": "content",
+          "headline": "Component 1: The Core Deliverable",
+          "body": "This is the main thing the buyer gets — your product, service, or programme. But here's the shift: frame it around the OUTCOME, not the process. \"12-week coaching programme with weekly calls\" becomes \"Get your first 3 paying clients in 12 weeks — guaranteed.\" Same deliverable. Wildly different perceived value. The core must be clear, specific, and outcome-oriented."
+        },
+        {
+          "type": "content",
+          "headline": "Component 2: Bonuses (Value Multipliers)",
+          "body": "Bonuses aren't throwaway extras — they're strategic tools. They address adjacent fears (\"What if I get stuck?\" → troubleshooting guide), accelerate time to result (quick-start templates), reduce effort (done-for-you elements), and stack perceived value. The rule: each bonus should solve a specific objection or fear. Random bonuses dilute; strategic bonuses multiply."
+        },
+        {
+          "type": "content",
+          "headline": "Components 3 & 4: Guarantee + Urgency",
+          "body": "Guarantee (Risk Reversal): Remove the buyer's fear of making a bad decision. The stronger your guarantee, the more confident buyers feel. Options range from \"money back, no questions\" to \"double your money back if no results.\" Urgency & Scarcity: Give a reason to act NOW. Real deadlines, limited spots, or bonuses that expire. These must be truthful — fake urgency destroys trust permanently."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Map Your Offer Stack",
+          "body": "Draw four boxes and label them: 1) Core — What's the main thing + its outcome? (one sentence) 2) Bonuses — What 2-3 extras solve specific fears? 3) Guarantee — What risk are you removing? What promise are you making? 4) Urgency — Why should they buy today, not next month? Fill in what you have. Leave blanks where you're weak — those blanks are your biggest growth opportunities."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is NOT one of the four core components of an irresistible offer?",
+          "type": "mcq",
+          "options": [
+            "A celebrity endorsement",
+            "A compelling core deliverable",
+            "Risk reversal (guarantee)",
+            "Bonuses that increase perceived value"
+          ],
+          "correctIndex": 0,
+          "explanation": "The four components are: core deliverable, bonuses, risk reversal, and urgency/scarcity. Celebrity endorsements can help marketing but are not a core offer component."
+        },
+        {
+          "question": "A guarantee always reduces your profit because more customers will claim refunds.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strong guarantees typically increase conversion more than they increase refund rates. Confident sellers who offer guarantees signal quality and can often charge more, more than offsetting any refunds."
+        },
+        {
+          "question": "What is the primary purpose of bonuses in an offer stack?",
+          "type": "mcq",
+          "options": [
+            "To increase perceived value without increasing your cost proportionally",
+            "To distract the buyer from the core product",
+            "To compensate for a weak core deliverable",
+            "To reduce the price needed to make a sale"
+          ],
+          "correctIndex": 0,
+          "explanation": "Well-chosen bonuses address related fears or desires and stack perceived value at minimal marginal cost. They tip a \"maybe\" into a \"yes\" by making the total package feel overwhelming in value."
+        }
+      ]
+    },
+    {
+      "id": "cio-4-dream-outcome",
+      "dayNumber": 4,
+      "moduleId": "cio-module-1",
+      "title": "Defining Your Buyer's Dream Outcome",
+      "subtitle": "You can't build an irresistible offer without knowing exactly what your buyer secretly wants most.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Nobody buys a drill because they want a drill. They buy it because they want a hole. But they don't even want the hole…",
+          "body": "They want the shelf on the wall. Actually — they want the feeling of an organised, beautiful home. Your buyer's \"dream outcome\" goes far deeper than the surface need. Today you'll learn to find it."
+        },
+        {
+          "type": "content",
+          "headline": "The Outcome Ladder",
+          "body": "Every purchase has layers of desire. Level 1 — Feature: \"I get 12 coaching calls.\" Level 2 — Benefit: \"I learn to acquire clients.\" Level 3 — Outcome: \"I get 5 new clients every month.\" Level 4 — Dream Outcome: \"I have a thriving business, financial freedom, and I never worry about money again.\" Most offers sell at Levels 1-2. Irresistible offers speak to Levels 3-4."
+        },
+        {
+          "type": "content",
+          "headline": "How to Uncover the Real Dream",
+          "body": "The \"So That\" Technique: Take any benefit and ask \"so that…?\" until you hit emotion. \"I want to lose weight\" → so that → \"I feel confident\" → so that → \"I can date again\" → so that → \"I won't feel lonely anymore.\" The \"Magic Wand\" Question: \"If I could wave a magic wand and give you the perfect outcome in 30 days, what does your life look like?\" Listen for specific, visual language."
+        },
+        {
+          "type": "content",
+          "headline": "Dream Outcome ≠ Your Idea of Success",
+          "body": "A common trap: projecting YOUR values onto the buyer. You think they want \"business growth.\" They actually want \"to pick up their kids from school every day.\" The dream outcome must come from the buyer's mouth, not your assumptions. This is why customer research isn't optional — it's the foundation of every irresistible offer."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The \"So That\" Drill",
+          "body": "Pick your product/service. Write the most basic benefit: \"My customer gets ___.\" Now ask \"so that…?\" five times in a row. Write each answer. By level 4-5 you'll hit the emotional core — the real dream outcome. This is what your offer headline should promise. Not the feature. Not the first benefit. The deep, visceral transformation they picture when they close their eyes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"dream outcome\" in offer design?",
+          "type": "mcq",
+          "options": [
+            "The specific, vivid result the buyer most desires — the life after the transformation",
+            "The features of your product or service",
+            "Your revenue target for the offer",
+            "The marketing headline you use to promote the offer"
+          ],
+          "correctIndex": 0,
+          "explanation": "The dream outcome is the buyer's deepest desired end state — not what your product does, but what their life looks like after it works. Great offers speak directly to this vision."
+        },
+        {
+          "question": "Buyers primarily make decisions based on features and specifications.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buyers buy outcomes and identity, not features. They rationalise with features after the emotional decision is made. Offers that lead with dream outcomes convert far better than feature lists."
+        },
+        {
+          "question": "What is the best method for identifying your buyer's true dream outcome?",
+          "type": "mcq",
+          "options": [
+            "Direct customer interviews asking about desired end states, not product preferences",
+            "Analysing competitor marketing copy",
+            "Surveying customers about product features they want",
+            "Reviewing industry reports and market research"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Mom Test principle: talk to customers about their life and goals, not about your product. Ask \"what would this mean for you?\" repeatedly until you reach the real emotional driver."
+        }
+      ]
+    },
+    {
+      "id": "cio-5-diagnosing-pain",
+      "dayNumber": 5,
+      "moduleId": "cio-module-1",
+      "title": "Diagnosing the Pain",
+      "subtitle": "What people fear losing drives decisions more than what they hope to gain. Learn to find and address the real pain.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "People will pay 2× more to avoid pain than to gain pleasure. Your offer needs to speak to both.",
+          "body": "Kahneman and Tversky proved that losses hurt twice as much as equivalent gains feel good. Yet most offers only talk about what you'll GET — completely ignoring what the buyer is desperate to STOP. Today: how to diagnose and address the real pain."
+        },
+        {
+          "type": "content",
+          "headline": "The Pain Hierarchy",
+          "body": "Not all pain is created equal. Surface Pain — the symptoms they notice: \"I'm not getting enough leads.\" Root Pain — the underlying cause: \"I don't know how to market myself.\" Identity Pain — the deepest layer: \"I feel like a fraud who doesn't deserve success.\" The deeper the pain you address, the more your offer resonates. Surface-level offers compete on features. Identity-level offers create cult-like loyalty."
+        },
+        {
+          "type": "content",
+          "headline": "The Before/After Bridge",
+          "body": "Before: Paint their current reality in vivid detail. Name the frustrations, the failed attempts, the 3am anxiety. When a buyer reads your offer and thinks \"How do they know exactly what I'm going through?\" — you've nailed it. After: Show the transformed state with equal specificity. Not \"you'll feel better\" but \"You'll wake up on Monday excited instead of dreading.\" Your offer IS the bridge between these two states."
+        },
+        {
+          "type": "content",
+          "headline": "Pain Mining: Where to Find It",
+          "body": "Five gold mines for customer pain: 1) Customer interviews — \"What have you already tried? Why didn't it work?\" 2) Competitor reviews — 1-star reviews reveal unmet pain. 3) Forums and communities — Reddit, Facebook groups, Quora. 4) Support tickets — What do customers complain about most? 5) Your own experience — Were you once this customer? Capture pain in the buyer's exact words."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Pain Inventory",
+          "body": "For your target buyer, list: Three surface pains they openly talk about. Two root pains they discover after failed attempts. One identity pain they secretly feel but rarely admit. Now write a \"Before\" paragraph (3-4 sentences) using their exact words that would make them think: \"This person is reading my mind.\" This paragraph becomes the opening of your offer page — the hook that stops the scroll."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to loss aversion research, how much more do losses motivate people compared to equivalent gains?",
+          "type": "mcq",
+          "options": [
+            "Approximately twice as much",
+            "About the same",
+            "Three to four times as much",
+            "Losses and gains have no relative difference"
+          ],
+          "correctIndex": 0,
+          "explanation": "Kahneman and Tversky's research shows losses are felt roughly twice as intensely as equivalent gains. Offers that address what people stand to lose (status, time, money, opportunity) are inherently more motivating."
+        },
+        {
+          "question": "An offer should focus only on positive outcomes and avoid mentioning customer problems.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Naming the customer's problem demonstrates deep understanding and builds trust. Buyers feel \"finally, someone gets it.\" Acknowledging pain before offering the solution is a powerful persuasion pattern."
+        },
+        {
+          "question": "What is the \"before and after\" framework in offer design?",
+          "type": "mcq",
+          "options": [
+            "Contrasting the buyer's current painful state with the desired future state your offer creates",
+            "A A/B testing method for offer headlines",
+            "Comparing your offer to the previous version of your product",
+            "A framework for before and after photos in marketing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Before: where the buyer is now (pain, frustration, current situation). After: where they'll be with your offer (relief, achievement, transformation). The gap between before and after IS the value."
+        }
+      ]
+    },
+    {
+      "id": "cio-6-pricing-psychology",
+      "dayNumber": 6,
+      "moduleId": "cio-module-1",
+      "title": "Pricing Psychology Fundamentals",
+      "subtitle": "Price is not just a number — it's a signal of value. Learn the psychology that makes buyers say yes.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A wine study proved that identical wine tastes better when people are told it costs more. Price changes perception.",
+          "body": "Researchers at Stanford scanned people's brains while tasting wine. The $90 bottle and the $5 bottle were the same wine — but the pleasure centre lit up MORE for the expensive one. Price literally changes how valuable something feels. Today: how to use this ethically."
+        },
+        {
+          "type": "content",
+          "headline": "Price = Value Signal",
+          "body": "Three pricing truths most entrepreneurs get wrong: 1) Low price ≠ more buyers. Low prices attract price-sensitive buyers and signal low quality. 2) High price = commitment. A £5,000 coaching client does the work. A £50 course buyer often doesn't open it. 3) Price resistance is usually a value communication problem. When someone says \"it's too expensive,\" they're really saying \"I don't see enough value.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Anchoring Effect",
+          "body": "Anchoring: The first number someone sees sets their reference point for \"reasonable.\" How to use it: Show the total value of everything in your offer stack first (e.g., \"Total value: £12,000\"). Then reveal your price (e.g., \"Today: £2,000\"). The gap creates instant perceived bargain. Real example: \"Private coaching: £500/hr × 12 sessions = £6,000. Group programme + templates + community: £997.\""
+        },
+        {
+          "type": "content",
+          "headline": "Value-Based vs Cost-Based Pricing",
+          "body": "Cost-based (what most people do): \"It costs me £50, so I'll charge £100.\" You're leaving money on the table. Value-based (what smart founders do): \"This saves my client £50,000/year. I'll charge £5,000.\" The client gets 10× return — everybody wins. Hormozi's rule: \"Charge based on the value you provide, not the time it takes.\" A surgeon doesn't charge by the hour. They charge by the outcome."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Value Anchor Exercise",
+          "body": "Calculate the total \"replacement cost\" of your offer: 1) What would it cost the buyer to get the same result WITHOUT you? (Hiring consultants, trial-and-error, lost time, etc.) 2) List each component of your offer with its standalone value. 3) Add them all up — that's your anchor number. Now set your price at 1/5th to 1/10th of that anchor. You have a compelling price frame."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"price anchoring\" mean in offer design?",
+          "type": "mcq",
+          "options": [
+            "Showing a higher reference price first to make the actual price feel like a bargain",
+            "Fixing your price and never negotiating",
+            "Matching your price to the market average",
+            "Anchoring your pricing to your cost of delivery"
+          ],
+          "correctIndex": 0,
+          "explanation": "Anchoring presents a high \"comparison\" price before revealing your actual offer price. The anchor shifts the buyer's reference point, making your price feel like exceptional value by comparison."
+        },
+        {
+          "question": "Raising your price always reduces the number of buyers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "In premium markets, higher prices can actually increase demand by signalling quality and exclusivity. Many buyers associate low prices with low quality. The right price for your positioning may be higher than you think."
+        },
+        {
+          "question": "What does Hormozi mean by \"charge what it's worth, not what it costs\"?",
+          "type": "mcq",
+          "options": [
+            "Price based on the value delivered to the buyer, not your cost to produce it",
+            "Inflate prices beyond the product's actual value",
+            "Use cost-plus pricing to set a fair margin",
+            "Charge whatever the market will bear regardless of quality"
+          ],
+          "correctIndex": 0,
+          "explanation": "Value-based pricing anchors to buyer outcomes. If your offer saves someone £50,000 in revenue, charging £5,000 is a bargain — even if it costs you £200 to deliver. Cost is irrelevant to value."
+        }
+      ]
+    },
+    {
+      "id": "cio-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "cio-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate your understanding of the offer foundation before building your offer stack.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now know more about offer design than 95% of business owners. Let's lock it in.",
+          "body": "This week you've covered the value equation, the four components, dream outcomes, pain diagnosis, and pricing psychology. Today we consolidate everything into a single-page offer blueprint you can reference forever."
+        },
+        {
+          "type": "content",
+          "headline": "The Offer Foundation Recap",
+          "body": "Your offer is NOT your product — it's the complete package: core deliverable + bonuses + guarantee + urgency, presented at a price that feels like a bargain compared to the value. The Value Equation (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort) tells you exactly where to invest. Maximise the top, minimise the bottom."
+        },
+        {
+          "type": "content",
+          "headline": "The Customer Insight Layer",
+          "body": "Dream Outcome: What does their ideal life look like AFTER your offer delivers? Use the \"So That\" technique to go 4-5 levels deep. Pain Diagnosis: What are they desperate to escape? Surface pain, root pain, identity pain — the deeper you go, the more your offer resonates. Both must come from customer language, not your assumptions."
+        },
+        {
+          "type": "content",
+          "headline": "The Pricing Mindset Shift",
+          "body": "Price communicates value — it's not just a transaction number. Use anchoring (show full value before revealing price), value-based pricing (charge for outcomes, not hours), and premium positioning (compete on value, not cheapness). The right price often feels uncomfortable at first — that discomfort is a sign you're pricing closer to value."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your One-Page Offer Blueprint",
+          "body": "Complete this blueprint: 1) WHO — My ideal buyer is ___ who struggles with ___. 2) DREAM — After my offer, their life looks like ___. 3) PAIN — Right now they feel ___. 4) CORE — The main thing I deliver is ___. 5) VALUE EQUATION — My strongest lever is ___, my weakest is ___. 6) PRICE — Based on the value I deliver (£___), my price of £___ represents a ___× return. Save this — you'll build on it all course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the two variables you should MAXIMISE in Hormozi's value equation?",
+          "type": "mcq",
+          "options": [
+            "Dream Outcome and Perceived Likelihood of Achievement",
+            "Time Delay and Effort & Sacrifice",
+            "Price and Distribution",
+            "Scarcity and Urgency"
+          ],
+          "correctIndex": 0,
+          "explanation": "Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort). Maximise the top (outcome + likelihood), minimise the bottom (time + effort)."
+        },
+        {
+          "question": "An irresistible offer must speak to the buyer's dream outcome, not just the product's features.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Buyers buy outcomes and identity. Features are rationalisations after the emotional decision. The best offers paint a vivid picture of life after the transformation."
+        },
+        {
+          "question": "Which of the following best describes why loss aversion matters in offer design?",
+          "type": "mcq",
+          "options": [
+            "People are twice as motivated to avoid losses as to achieve equivalent gains",
+            "Buyers always focus on what they could lose financially",
+            "Negative marketing always outperforms positive marketing",
+            "Loss aversion is only relevant in high-ticket offers"
+          ],
+          "correctIndex": 0,
+          "explanation": "Loss aversion means acknowledging the pain of the buyer's current situation is often more persuasive than describing the positive outcome. Addressing both — pain now, dream after — is most powerful."
+        }
+      ]
+    },
+    {
+      "id": "cio-8-core-deliverable",
+      "dayNumber": 8,
+      "moduleId": "cio-module-2",
+      "title": "Defining Your Core Deliverable",
+      "subtitle": "The foundation everything else is built on. Get your core product or service crystal clear before layering value.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The #1 reason bonuses, guarantees, and urgency fail? The core deliverable underneath is unclear.",
+          "body": "You can't stack value on a shaky foundation. If your buyer can't describe in one sentence what they're getting, no amount of clever marketing will save you. Today: how to make your core so clear it practically sells itself."
+        },
+        {
+          "type": "content",
+          "headline": "The Outcome-First Reframe",
+          "body": "Most founders describe their deliverable as a process: \"8 coaching sessions, 4 modules, 12 videos.\" Buyers don't care about your process — they care about their result. Reframe everything as an outcome: \"You'll have a complete marketing system generating 10+ leads per week.\" Same deliverable. Completely different emotional response. The process is HOW. The outcome is WHY they buy."
+        },
+        {
+          "type": "content",
+          "headline": "The Niche Power Move",
+          "body": "A generic offer (\"I help businesses grow\") competes with millions. A niche offer (\"I help e-commerce brands hit £1M in 12 months using email automation\") has almost no competition. Niching down does three things: 1) Makes your expertise feel specific and proven. 2) Increases perceived likelihood of success — \"they've done this exact thing before.\" 3) Lets you charge premium prices because the buyer can't easily find alternatives."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Vehicle\" Framework",
+          "body": "Hormozi describes the core deliverable as the \"vehicle\" that takes the buyer from their current state to their dream outcome. The vehicle must feel: FAST — \"you'll see results in 30 days, not 12 months.\" EASY — \"we do most of the heavy lifting for you.\" CERTAIN — \"our method has worked for 500+ people just like you.\" The faster, easier, and more certain your vehicle feels, the more people will pay to ride it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The One-Sentence Core",
+          "body": "Complete this sentence for your offer: \"In [timeframe], you'll have [specific, measurable outcome] using our [vehicle/method], even if [biggest objection they have].\" Example: \"In 90 days, you'll have 3 new high-paying clients using our Outreach Engine system, even if you hate cold calling and have zero connections.\" If you can't complete this clearly, your core needs work before anything else."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core deliverable in an offer?",
+          "type": "mcq",
+          "options": [
+            "The primary transformation or result the buyer is paying for",
+            "The bonus items included in the package",
+            "The guarantee attached to the offer",
+            "The marketing copy used to sell the offer"
+          ],
+          "correctIndex": 0,
+          "explanation": "The core deliverable is the main thing — the result the buyer fundamentally wants. Everything else (bonuses, guarantees, urgency) supports and amplifies the core, but the core must be solid first."
+        },
+        {
+          "question": "You should define your core deliverable in terms of your process, not the buyer's outcome.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buyers don't care about your process — they care about their result. Define the core deliverable in outcome language (\"you'll have X\") rather than process language (\"we will do Y\")."
+        },
+        {
+          "question": "What is \"niching down\" and why does it strengthen the core deliverable?",
+          "type": "mcq",
+          "options": [
+            "Serving a specific audience so well that the offer feels custom-made for them",
+            "Reducing the features in your product to lower costs",
+            "Targeting only small businesses to avoid competition",
+            "Creating multiple versions of the same product for different markets"
+          ],
+          "correctIndex": 0,
+          "explanation": "A niche-specific offer (\"I help e-commerce founders double revenue in 90 days\") feels far more compelling than a generic one. Specificity signals expertise and increases perceived likelihood of success."
+        }
+      ]
+    },
+    {
+      "id": "cio-9-bonuses-that-multiply",
+      "dayNumber": 9,
+      "moduleId": "cio-module-2",
+      "title": "Bonuses That Multiply Value",
+      "subtitle": "Learn to choose bonuses that address buyer fears and objections — making the total offer feel 10× the price.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The right bonus can double conversions. The wrong bonus actually hurts your offer. Most people guess — today you'll use a system.",
+          "body": "Bonuses aren't random extras thrown in to pad the package. Each one is a precision tool designed to neutralise a specific objection. When chosen correctly, they make your offer feel overwhelmingly valuable. When chosen poorly, they signal desperation."
+        },
+        {
+          "type": "content",
+          "headline": "The Objection-Killer Framework",
+          "body": "List every reason a buyer might hesitate: \"What if I don't have time?\" \"What if it doesn't work for my industry?\" \"What if I get stuck?\" Each fear becomes a bonus opportunity. No time → Quick-start templates. Wrong industry → Industry-specific case studies. Getting stuck → Weekly Q&A access. This is why customer research matters — every objection you've heard is a bonus waiting to be created."
+        },
+        {
+          "type": "content",
+          "headline": "High-Value, Low-Cost Bonuses",
+          "body": "The best bonuses cost you almost nothing to deliver but have enormous perceived value. Templates, checklists, swipe files, recorded trainings, community access, software tools you've already built. A \"Done-For-You Client Acquisition Script\" might take you 2 hours to create but saves the buyer 40 hours of trial and error. That asymmetry is what makes bonuses so powerful for your margins."
+        },
+        {
+          "type": "content",
+          "headline": "The Stacking Sequence",
+          "body": "Present bonuses in a specific order for maximum impact: 1) Start with the bonus that addresses the BIGGEST fear. 2) Give each bonus its own name, description, and standalone value. 3) Show what it would cost to buy separately. 4) Stack the total value visually before revealing your price. The mental arithmetic of \"£2,000 + £500 + £800 + £300 = £3,600 worth… yours for £997\" creates irresistible perceived bargain."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Three Killer Bonuses",
+          "body": "Write down the top 3 objections your buyers have (beyond price). For each one, design a bonus that eliminates it: Objection 1: \"_____\" → Bonus: \"_____\" (Value: £___). Objection 2: \"_____\" → Bonus: \"_____\" (Value: £___). Objection 3: \"_____\" → Bonus: \"_____\" (Value: £___). Each bonus should be something you can create once and deliver infinitely at near-zero cost."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes a bonus genuinely valuable rather than filler?",
+          "type": "mcq",
+          "options": [
+            "It addresses a specific fear or objection that would stop the buyer from getting results",
+            "It has a high retail price that can be stated in the marketing",
+            "It takes a long time to produce",
+            "It is unrelated to the core product to seem like a surprise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Great bonuses are surgical — they target the specific obstacle between the buyer and their result. \"What would stop someone from succeeding with this?\" is the question to ask when designing bonuses."
+        },
+        {
+          "question": "Hormozi recommends presenting bonuses before revealing the price.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stack the value (core + bonuses + guarantee) to its maximum before revealing the price. By the time the price is revealed, the perceived value should already feel overwhelming."
+        },
+        {
+          "question": "What is the \"value stack\" technique?",
+          "type": "mcq",
+          "options": [
+            "Presenting each offer component with its own value before totalling the perceived package worth",
+            "Stacking multiple prices to confuse buyers",
+            "Offering three different product tiers",
+            "A technique for adding features over time"
+          ],
+          "correctIndex": 0,
+          "explanation": "Value stacking assigns a specific value to each component — core deliverable, each bonus, the guarantee — and totals them before revealing the price. \"You get £X + £Y + £Z worth of value for just £P.\""
+        }
+      ]
+    },
+    {
+      "id": "cio-10-risk-reversal",
+      "dayNumber": 10,
+      "moduleId": "cio-module-2",
+      "title": "Risk Reversal: The Guarantee",
+      "subtitle": "The most underused tool in offer design. Learn to build guarantees that remove the buyer's biggest fear.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Domino's Pizza went from near-bankruptcy to a billion-dollar brand with one guarantee: \"30 minutes or it's free.\"",
+          "body": "That single promise communicated speed, confidence, and risk removal in six words. It didn't change the pizza. It changed the offer. Today: how to build guarantees that turn \"maybe\" into \"absolutely.\""
+        },
+        {
+          "type": "content",
+          "headline": "Why Guarantees Work (The Psychology)",
+          "body": "Every purchase involves perceived risk: \"What if it doesn't work? What if I waste my money?\" A guarantee shifts that risk from the buyer to you. The psychological effect is profound — the buyer now has nothing to lose and everything to gain. Counter-intuitively, strong guarantees INCREASE your sales far more than they increase refund rates. People who feel safe buy faster."
+        },
+        {
+          "type": "content",
+          "headline": "The Guarantee Spectrum",
+          "body": "From weakest to strongest: 1) Satisfaction guarantee — \"If you're not happy, money back.\" (Weakest — subjective.) 2) Time-based — \"Try it for 30 days risk-free.\" (Better — gives time to experience value.) 3) Results-based — \"Get 5 clients in 90 days or we work for free until you do.\" (Strongest — guarantees the outcome.) 4) Better-than-money-back — \"Double your investment or we refund 2×.\" (Boldest — signals extreme confidence.)"
+        },
+        {
+          "type": "content",
+          "headline": "Conditional vs Unconditional",
+          "body": "Unconditional: \"No questions asked, money back.\" Simple. High trust. But attracts freebie-seekers. Conditional: \"Complete all 21 days, attend the calls, and implement the system. If you don't get results, we refund you.\" This is more powerful because it: filters out non-serious buyers, demonstrates you believe results require action, and positions you as the confident expert who knows their system works."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Craft Your Guarantee",
+          "body": "Answer these: 1) What is your buyer's #1 fear about purchasing? 2) What are you genuinely confident you can deliver? 3) What conditions must the buyer meet for success? Now write your guarantee in this format: \"If you [do the work/follow the system] and don't [get specific result] within [timeframe], we will [specific remedy].\" Make it bold enough to be memorable, honest enough to be sustainable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"risk reversal\" mean in offer design?",
+          "type": "mcq",
+          "options": [
+            "Transferring the risk of failure from the buyer to the seller",
+            "Reducing business risk through diversification",
+            "Guaranteeing the lowest price in the market",
+            "Offering a trial period before full commitment"
+          ],
+          "correctIndex": 0,
+          "explanation": "Risk reversal means the seller takes on the downside if the offer doesn't deliver. This removes the buyer's hesitation — they have nothing to lose. The more you believe in your offer, the bolder the guarantee you can make."
+        },
+        {
+          "question": "A money-back guarantee is the only effective form of risk reversal.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Guarantees can take many forms: results guarantees (\"get X or your money back\"), service guarantees (\"we'll redo it free\"), time guarantees, and anti-guarantees. The best match your specific buyer's primary fear."
+        },
+        {
+          "question": "What is a \"results-based\" guarantee and why is it more powerful than a simple refund?",
+          "type": "mcq",
+          "options": [
+            "It guarantees a specific outcome, not just satisfaction — raising perceived likelihood of success",
+            "It guarantees results for the company, not the customer",
+            "It replaces the product if it breaks",
+            "It is only valid for a short time period"
+          ],
+          "correctIndex": 0,
+          "explanation": "A results guarantee (\"you'll generate 10 leads in 30 days or we work for free until you do\") directly addresses Perceived Likelihood in the value equation — making the offer feel essentially risk-free."
+        }
+      ]
+    },
+    {
+      "id": "cio-11-scarcity-and-urgency",
+      "dayNumber": 11,
+      "moduleId": "cio-module-2",
+      "title": "Scarcity, Urgency & Deadlines",
+      "subtitle": "Without a reason to act now, buyers delay forever. Learn to create genuine urgency — without being manipulative.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"I'll think about it\" is where offers go to die. 60% of buyers who delay never return.",
+          "body": "The biggest competitor to your offer isn't another product — it's inaction. People are wired to delay decisions, even good ones. Without a compelling reason to act NOW, \"later\" always wins. Today: ethical urgency that serves the buyer."
+        },
+        {
+          "type": "content",
+          "headline": "Scarcity vs Urgency — Know the Difference",
+          "body": "Scarcity limits QUANTITY: \"Only 10 spots available.\" \"We only accept 5 new clients per month.\" This works because the fear of missing out (FOMO) is a powerful motivator. Urgency limits TIME: \"Offer closes Friday at midnight.\" \"Bonus expires in 48 hours.\" This works because deadlines force decisions. Use both together for maximum effect — but only when they're genuine."
+        },
+        {
+          "type": "content",
+          "headline": "Genuine vs Manufactured (The Ethics Line)",
+          "body": "Genuine scarcity: Real capacity limits (your time, seats, inventory). Cohort-based programmes with real start dates. Bonuses that genuinely cost you to deliver. Manufactured scarcity: Fake countdown timers that reset. \"Only 3 left!\" when there's unlimited stock. Evergreen webinars pretending to be live. The first builds trust over years. The second destroys it in seconds when discovered — and it ALWAYS gets discovered."
+        },
+        {
+          "type": "content",
+          "headline": "Creating Genuine Urgency",
+          "body": "Five honest approaches: 1) Cohort model — \"Next intake starts March 1, limited to 20.\" 2) Price increase — \"Founding member pricing ends this week.\" 3) Bonus deadline — \"Order by Friday and get the VIP bonus.\" 4) Capacity truth — \"I physically can't work with more than 8 clients at once.\" 5) Fast-action bonus — \"First 5 buyers get a 1-on-1 strategy call.\" Each is real, verifiable, and serves the buyer by rewarding decisiveness."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your Urgency Mechanism",
+          "body": "Design one scarcity and one urgency element for your offer that are 100% truthful. Scarcity: What genuinely limits your capacity? (Time, energy, quality, physical inventory?) Urgency: What deadline or bonus expiration can you create that serves both you and the buyer? Write each one in a sentence. If you can't make it genuine, don't use it. A truthful deadline converts better than a fake one — because you can enforce it consistently."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between scarcity and urgency?",
+          "type": "mcq",
+          "options": [
+            "Scarcity limits quantity; urgency limits time",
+            "Scarcity is real; urgency is manufactured",
+            "Urgency applies to products; scarcity applies to services",
+            "They are the same concept described differently"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scarcity = limited supply (\"only 10 spots\"). Urgency = limited time (\"offer ends Friday\"). Both address the buyer's tendency to delay. Used together, they're especially effective at prompting action."
+        },
+        {
+          "question": "Manufactured or fake scarcity is an effective and ethical marketing strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fake scarcity (\"only 3 left!\" when there are thousands) destroys trust when discovered. Genuine scarcity — real capacity limits, true deadlines, actual cohort sizes — is both ethical and far more powerful."
+        },
+        {
+          "question": "What is the most sustainable form of genuine scarcity for a service business?",
+          "type": "mcq",
+          "options": [
+            "Capacity limits based on real time available to serve clients well",
+            "Artificially capping sales to create FOMO",
+            "Seasonal pricing changes",
+            "Limited geographic availability"
+          ],
+          "correctIndex": 0,
+          "explanation": "Service businesses have real capacity constraints — hours, attention, quality. \"I only take 5 new clients per month to ensure results\" is genuine, sustainable, and builds premium positioning."
+        }
+      ]
+    },
+    {
+      "id": "cio-12-one-page-marketing",
+      "dayNumber": 12,
+      "moduleId": "cio-module-2",
+      "title": "The 1-Page Marketing Plan",
+      "subtitle": "A simple but powerful framework to connect your offer to the right market through the right message and channel.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "An irresistible offer with no marketing plan is like a Ferrari in a locked garage. Nobody knows it exists.",
+          "body": "Allan Dib's \"1-Page Marketing Plan\" gives you a dead-simple framework to get your offer in front of the right people, through the right channels, with the right message. Today: the essentials that connect offer to market."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Phases",
+          "body": "BEFORE: Prospects don't know you exist yet. Your job: make them aware and capture their contact info. Target market → Message → Media. DURING: They're considering you. Your job: nurture trust and present your offer. Lead capture → Nurture system → Sales conversion. AFTER: They've bought. Your job: deliver results, get referrals, increase lifetime value. World-class delivery → Referral engine → Back-end offers."
+        },
+        {
+          "type": "content",
+          "headline": "Message-Market-Media Match",
+          "body": "The golden rule: Your MESSAGE must speak directly to your MARKET's deepest desire, delivered through the MEDIA they actually consume. Wrong market = no one cares. Wrong message = no one responds. Wrong media = no one sees it. Get all three right and your offer spreads like wildfire. This is why customer research (Module 1) feeds directly into marketing — you already know their language, pain, and dream."
+        },
+        {
+          "type": "content",
+          "headline": "Your Lead Magnet = Mini Offer",
+          "body": "Before someone buys your main offer, they need to trust you. A lead magnet is a free \"mini offer\" that demonstrates your value in advance. The best lead magnets: solve one specific problem quickly, give a quick win that builds confidence, naturally lead to your paid offer as the next step. Think of it as the first domino — once they experience your value for free, paying for more feels natural."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your 1-Page Marketing Plan",
+          "body": "Fill in these six boxes: 1) TARGET MARKET — Who exactly? (Be specific.) 2) MESSAGE — What do you say to grab their attention? (Use their language from pain research.) 3) MEDIA — Where do they hang out? (1-2 channels max.) 4) LEAD MAGNET — What free value can you offer to start the relationship? 5) NURTURE — How do you build trust before asking for the sale? 6) CONVERSION — How do you present your offer? (Email, call, page?)"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three stages in Allan Dib's 1-Page Marketing Plan?",
+          "type": "mcq",
+          "options": [
+            "Before (prospects), During (leads/buyers), After (customers)",
+            "Awareness, Consideration, Decision",
+            "Product, Price, Place, Promotion",
+            "Attract, Convert, Retain"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dib's framework: Before = reaching prospects and turning them into leads; During = converting leads into buyers; After = delighting customers and generating referrals. Each stage needs its own strategy."
+        },
+        {
+          "question": "Your marketing message should appeal to the widest possible audience to maximise reach.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Broad messages resonate with no one. A niche-specific message (\"I help busy parents lose 10kg without giving up wine\") converts far better than a generic one (\"I help people lose weight\")."
+        },
+        {
+          "question": "What does it mean to \"own your market\" according to the 1-Page Marketing Plan?",
+          "type": "mcq",
+          "options": [
+            "Dominate a specific niche so completely that you become the obvious go-to choice",
+            "Hold the largest market share in your industry",
+            "Register trademarks for your business name",
+            "Eliminate all competitors through pricing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Owning your market means being so present and valuable in a defined niche that prospects automatically think of you first. This requires consistent value delivery, not just advertising spend."
+        }
+      ]
+    },
+    {
+      "id": "cio-13-price-anchoring",
+      "dayNumber": 13,
+      "moduleId": "cio-module-2",
+      "title": "Price Anchoring & Premium Positioning",
+      "subtitle": "How to present your price so it feels like a bargain — and why being the cheapest is almost always the wrong strategy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Williams-Sonoma couldn't sell a £179 bread maker — until they placed a £429 model next to it. Sales doubled overnight.",
+          "body": "They didn't improve the product. They didn't lower the price. They just changed what it was compared against. This is the anchoring effect — and today you'll learn to use it deliberately in your offer."
+        },
+        {
+          "type": "content",
+          "headline": "Anchoring in Practice",
+          "body": "Your buyer's brain doesn't evaluate price in a vacuum — it compares against the nearest reference point. You control that reference point. Three anchoring strategies: 1) Alternative cost — \"Hiring a consultant: £15,000. Our programme: £2,000.\" 2) Component value stack — \"Module 1 alone worth £3,000 + Module 2 worth £2,000 + Bonus worth £1,500 = £6,500 value for £997.\" 3) Cost of inaction — \"Every month you wait costs you £5,000 in lost revenue.\""
+        },
+        {
+          "type": "content",
+          "headline": "Premium Positioning: The Category of One",
+          "body": "When you compete on price, you're a commodity. When you compete on value, you're a category. Premium positioning means: You never discount (you add value instead). You qualify buyers (not everyone deserves to work with you). You lead with outcomes and proof, not features. You charge based on transformation delivered. The result? Better clients, better margins, better results, and ironically — easier sales."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Monetizing Innovation\" Principle",
+          "body": "Ramanujam and Tacke's research across thousands of product launches found a shocking truth: the #1 pricing mistake is charging too LITTLE. Companies consistently underestimate willingness to pay by 20-30%. Why? Fear. Fear of rejection, fear of losing customers, fear of seeming expensive. But premium buyers want premium prices — it signals quality, exclusivity, and seriousness. Underpricing attracts the wrong people."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Build Your Price Anchor",
+          "body": "Create your price presentation using this template: \"If you were to [achieve this result] on your own, you'd need to [expensive alternative 1: £___] + [expensive alternative 2: £___] + [expensive alternative 3: £___]. Total: £___. OR — you can get [your complete offer + bonuses], valued at £___, for just £___. That's [fraction] of what it would cost the hard way.\" Write yours now. The gap between anchor and price IS your offer's perceived value."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why should most businesses avoid competing on price?",
+          "type": "mcq",
+          "options": [
+            "Price competition commoditises your offer and only the biggest player wins long-term",
+            "Customers never trust low prices",
+            "Low prices are illegal in most markets",
+            "Competing on price only works for physical products"
+          ],
+          "correctIndex": 0,
+          "explanation": "Competing on price is a race to the bottom. There's always someone willing to go lower. Premium positioning — where you compete on value and outcomes — creates sustainable margins and attracts better clients."
+        },
+        {
+          "question": "Price anchoring only works in retail and consumer markets.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anchoring works in B2B, services, coaching, software, and any context where buyers evaluate value relatively. Showing the \"total value\" of an offer before the price is a universal persuasion principle."
+        },
+        {
+          "question": "What is \"Monetizing Innovation\" and what does it mean to price for value rather than cost?",
+          "type": "mcq",
+          "options": [
+            "Setting prices based on the economic value delivered to the customer, not cost of production",
+            "Charging more after adding new features",
+            "Creating premium versions of existing products",
+            "Using data to optimise pricing dynamically"
+          ],
+          "correctIndex": 0,
+          "explanation": "Monetizing Innovation (Ramanujam & Tacke) argues that price should be set before product development — based on customer willingness to pay for a defined outcome. Value-based pricing captures the true worth of transformation."
+        }
+      ]
+    },
+    {
+      "id": "cio-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "cio-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Review the complete offer stack — core, bonuses, guarantee, urgency, and positioning — before moving to launch.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now have every piece of the offer puzzle. Today we assemble them into your complete, ready-to-sell stack.",
+          "body": "Over the past week you've built: a clear core, strategic bonuses, a bold guarantee, genuine urgency, a marketing plan, and premium positioning. Today we put it all together into one coherent offer document."
+        },
+        {
+          "type": "content",
+          "headline": "The Complete Offer Stack (Assembly Order)",
+          "body": "1) CORE DELIVERABLE — One-sentence outcome promise. 2) BONUSES (3-5) — Each addressing a specific objection, with named value. 3) GUARANTEE — Bold risk reversal that matches your confidence. 4) URGENCY/SCARCITY — Genuine reason to act now. 5) PRICE ANCHOR — Show total value, then reveal price as a fraction. 6) POSITIONING — Why you're different from every alternative. This sequence is how you present the offer, top to bottom."
+        },
+        {
+          "type": "content",
+          "headline": "The Offer Page Flow",
+          "body": "When you write your sales page or present your offer verbally, follow this emotional arc: 1) Pain — \"You're stuck at ___.\" (Recognition) 2) Dream — \"Imagine if ___.\" (Desire) 3) Bridge — \"Here's how we get you there.\" (Hope) 4) Core + Bonuses — Stack the value. (Logic) 5) Guarantee — Remove all risk. (Safety) 6) Urgency — Act now because ___. (Decision) 7) Price — The no-brainer reveal. (Relief) This arc mirrors how the brain makes purchase decisions."
+        },
+        {
+          "type": "content",
+          "headline": "Common Mistakes to Avoid",
+          "body": "Five offer stack killers: 1) Vague core — \"We help you succeed\" (at what?). 2) Irrelevant bonuses — Random extras that don't address real objections. 3) Weak guarantee — \"Satisfaction guaranteed\" means nothing specific. 4) Fake urgency — Countdown timers that reset = instant trust destruction. 5) No positioning — If you don't define your category, the buyer puts you in \"generic\" and shops on price."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Assemble Your Complete Stack",
+          "body": "Write out your full offer stack on one page: HEADLINE: \"Get [outcome] in [timeframe] — guaranteed.\" CORE: [one sentence]. BONUS 1: [name] — solves [objection] (Value: £___). BONUS 2: [name] — solves [objection] (Value: £___). BONUS 3: [name] — solves [objection] (Value: £___). GUARANTEE: [your bold promise]. URGENCY: [genuine deadline/limit]. TOTAL VALUE: £___. YOUR PRICE: £___. Read it back. Would YOU buy this? If not — which piece feels weak?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In the value stack presentation order, when should you reveal the price?",
+          "type": "mcq",
+          "options": [
+            "After presenting all components — core, bonuses, and guarantee",
+            "Before the bonuses to set expectations",
+            "At the very start to qualify buyers",
+            "Simultaneously with the core deliverable"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stack the full perceived value before the price reveal. The buyer's mental total should far exceed your price — making the reveal feel like a surprise bargain rather than a negotiation."
+        },
+        {
+          "question": "Risk reversal always requires a full money-back guarantee.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Risk reversal can take many forms: results guarantees, service guarantees, or even bold statements of confidence. The goal is to transfer perceived risk from the buyer to you, not to follow a specific format."
+        },
+        {
+          "question": "What question should you ask to design the best bonuses for your offer?",
+          "type": "mcq",
+          "options": [
+            "\"What would stop my customer from getting the result, even with my core offer?\"",
+            "\"What is the most expensive item I could add to justify a higher price?\"",
+            "\"What bonuses do my competitors include?\"",
+            "\"How many bonuses does the market expect?\""
+          ],
+          "correctIndex": 0,
+          "explanation": "Bonuses remove obstacles between buyer and result. Identifying the specific fears, gaps, or bottlenecks that would prevent success — then addressing them with targeted bonuses — makes your offer feel complete and inevitable."
+        }
+      ]
+    },
+    {
+      "id": "cio-15-market-segmentation",
+      "dayNumber": 15,
+      "moduleId": "cio-module-3",
+      "title": "Market Segmentation: Who Deserves Your Offer",
+      "subtitle": "The best offer in the world fails in the wrong market. Learn to identify the buyers who will get the most value.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A mediocre offer in a starving market will always outsell a brilliant offer in a dead one.",
+          "body": "Hormozi's #1 rule: pick the right market FIRST. Most founders build something then go hunting for buyers. The best founders find the hungry crowd first — then build exactly what they're desperate to buy. Today: how to pick the market that makes your offer effortless to sell."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Market Criteria",
+          "body": "Hormozi evaluates every market on four factors: 1) MASSIVE PAIN — they urgently need a solution (not a \"nice to have\"). 2) PURCHASING POWER — they can afford your price without it being a stretch. 3) EASY TO TARGET — you can find and reach them through specific channels. 4) GROWING — the market is expanding, not shrinking. Score each out of 10. If any is below 6, reconsider the market."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Starving Crowd\" Test",
+          "body": "Imagine you're selling hot dogs at a fair. What's your biggest advantage? Better mustard? A fancier cart? No — a STARVING CROWD. If people are desperately hungry, even an average hot dog sells out instantly. Your offer works the same way. Find people who: have tried to solve this problem before (proven demand), are actively searching for solutions right now, and have spent money on attempts that didn't work. That frustration is your opportunity."
+        },
+        {
+          "type": "content",
+          "headline": "Niche Selection: Go Narrow to Go Big",
+          "body": "Counter-intuitive truth: the narrower your market, the easier to dominate — and the faster you grow. \"Business coaching\" = impossible to stand out. \"Revenue growth for DTC e-commerce brands doing £500K-£2M\" = instant authority. When you go narrow: your message resonates deeply (\"they're talking directly to ME\"), you can charge premium (specialists > generalists), word-of-mouth spreads faster (tight communities), and you become the obvious choice."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Score Your Market",
+          "body": "Rate your target market on Hormozi's four criteria (1-10 each): Pain level: ___/10 (How urgently do they need this solved?) Purchasing power: ___/10 (Can they comfortably afford your price?) Targetability: ___/10 (Can you find and reach them easily?) Growth: ___/10 (Is this market expanding?) Total: ___/40. If below 28, consider narrowing your niche or shifting your market. Above 35? You have a goldmine."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Hormozi mean by going \"to the hungry crowd\"?",
+          "type": "mcq",
+          "options": [
+            "Selling to a market with a strong, existing desire for your type of solution",
+            "Targeting markets during economic downturns when people are desperate",
+            "Focusing on low-income markets who need your product most",
+            "Reaching the largest audience possible for maximum exposure"
+          ],
+          "correctIndex": 0,
+          "explanation": "Market selection is more important than offer quality. A mediocre offer to a desperate, motivated market will outsell a brilliant offer to a disengaged one. Find people who already want what you sell."
+        },
+        {
+          "question": "You should target the market with the most people in it to maximise your potential customers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bigger markets mean more competition and more noise. A smaller, well-defined market where you can dominate and become the obvious choice is almost always more profitable and sustainable."
+        },
+        {
+          "question": "What are the four market criteria Hormozi recommends evaluating?",
+          "type": "mcq",
+          "options": [
+            "Massive pain, purchasing power, ease of targeting, growth potential",
+            "Market size, demographics, income level, geographic location",
+            "Age, gender, interests, buying behaviour",
+            "Online presence, social engagement, review scores, referral rate"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hormozi's four criteria: (1) Massive pain — they urgently need a solution; (2) Purchasing power — they can afford it; (3) Easy to target — you can reach them; (4) Growing — the market is expanding."
+        }
+      ]
+    },
+    {
+      "id": "cio-16-offer-presentation",
+      "dayNumber": 16,
+      "moduleId": "cio-module-3",
+      "title": "The Offer Presentation Formula",
+      "subtitle": "How you say it matters as much as what you say. Learn the sequence that moves prospects from curious to committed.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The same offer presented in two different orders can convert at 3% or 30%. Sequence is everything.",
+          "body": "Your offer might be incredible — but if you reveal the price too early, lead with features, or skip the pain, you'll lose buyers before they ever see the full picture. Today: the exact presentation sequence used by the world's best closers."
+        },
+        {
+          "type": "content",
+          "headline": "The 7-Step Offer Presentation Arc",
+          "body": "1) PAIN — Name their current suffering with vivid specificity. 2) COST OF INACTION — What happens if they do nothing? 3) DREAM — Paint the after-picture they crave. 4) BRIDGE — \"Here's how we get you there.\" 5) STACK — Core + each bonus with values. 6) GUARANTEE — Remove all risk. 7) PRICE + CTA — The no-brainer reveal with a clear next step. Every step primes the next. Skip one and the arc breaks."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Problem-Agitate-Solve\" Opening",
+          "body": "The first 30 seconds determine if they keep reading. PROBLEM: State it bluntly. \"You're posting content every day and getting zero leads.\" AGITATE: Twist the knife. \"You've tried courses, coaches, and tactics — nothing sticks. Every month that passes is another month of wasted effort and self-doubt.\" SOLVE: Introduce hope. \"There's a reason it hasn't worked — and it's not your fault. There's a specific system that fixes this.\" Now they're hooked and ready for your offer."
+        },
+        {
+          "type": "content",
+          "headline": "Social Proof Placement",
+          "body": "Proof is most powerful when placed strategically: After the pain section — a testimonial that says \"I was stuck too.\" After the core reveal — a case study showing the result. Before the price — a results summary (\"427 clients, average 3× return\"). After the price — a testimonial addressing the \"was it worth it?\" question. Don't dump all proof in one section. Weave it through the arc to maintain trust at every decision point."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Write Your Opening Hook",
+          "body": "Using Problem-Agitate-Solve, write the first three sentences of your offer presentation: PROBLEM (1 sentence): \"You're ___.\" AGITATE (1-2 sentences): \"You've tried ___. Every day/week/month that passes means ___.\" SOLVE (1 sentence): \"There's a proven system that ___.\" Read it aloud. Does it make YOUR stomach tighten? If you feel it, your buyer will feel it 10× more. That's how you know it works."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended opening move in an offer presentation?",
+          "type": "mcq",
+          "options": [
+            "Name the prospect's pain and problem with vivid, specific language",
+            "Introduce yourself and your credentials",
+            "State your price upfront to qualify serious buyers",
+            "List the features of your product"
+          ],
+          "correctIndex": 0,
+          "explanation": "Start with the problem. When prospects hear their pain described perfectly, they lean in — \"this person understands me.\" Credibility and solution come after you've established that you understand the buyer's world."
+        },
+        {
+          "question": "Using testimonials and case studies in an offer presentation is manipulative.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social proof is one of the most ethical tools in selling — it shows real results for real people. Buyers want evidence that your offer works. Case studies reduce perceived risk and increase likelihood of success."
+        },
+        {
+          "question": "What is the purpose of the \"transition\" in an offer presentation?",
+          "type": "mcq",
+          "options": [
+            "Moving from the problem space to the solution space without a jarring shift in tone",
+            "Switching from one product to another mid-presentation",
+            "Transitioning the customer from free to paid",
+            "The moment you ask for the sale"
+          ],
+          "correctIndex": 0,
+          "explanation": "A smooth transition bridges the gap: \"Now that you understand the problem, let me show you what we've built to solve it.\" Done well, the solution feels like the natural, inevitable answer to the pain you've just described."
+        }
+      ]
+    },
+    {
+      "id": "cio-17-testing-before-scaling",
+      "dayNumber": 17,
+      "moduleId": "cio-module-3",
+      "title": "Testing Before Scaling",
+      "subtitle": "Never scale an untested offer. Learn the minimum viable tests that validate your offer before you invest in growth.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "For every £1 spent testing an offer, founders save £100 they would have wasted scaling the wrong one.",
+          "body": "The graveyard of failed businesses is full of offers that \"sounded great\" but never got tested with real buyers spending real money. Today: the fastest, cheapest ways to validate your offer before you invest in scaling."
+        },
+        {
+          "type": "content",
+          "headline": "The Minimum Viable Offer Test",
+          "body": "Forget surveys, focus groups, and asking friends. The only reliable test of an offer is a real transaction. The process: 1) Write your offer on a single page (or speak it in a conversation). 2) Present it to 10 people who match your target market. 3) Ask for money. Track two things: conversion rate (how many said yes?) and objections (what did the \"no\" people say?). If 3+ out of 10 buy, you have signal. If 0 buy, the offer needs work — not the marketing."
+        },
+        {
+          "type": "content",
+          "headline": "The Mom Test for Offers",
+          "body": "Rob Fitzpatrick's \"Mom Test\" principle: never ask if your idea is good. Instead, observe buying behaviour. Bad validation: \"Would you buy this?\" (Everyone says yes to be polite.) \"Do you think this is a good idea?\" (Opinions ≠ purchases.) Good validation: \"Here's the offer — shall I send you the payment link?\" \"I have 3 spots left this month. Do you want one?\" Only real commitment (money, calendar time, a signed contract) counts as validation."
+        },
+        {
+          "type": "content",
+          "headline": "What to Test First",
+          "body": "Test in this priority order: 1) The headline promise — Does it stop the scroll? Does it generate curiosity? 2) The price point — Does anyone baulk? Do some say \"that's it?\"\" 3) The guarantee — Does it remove enough fear? 4) The urgency — Does the deadline prompt action? You can test each in isolation. Change one variable, re-present to a fresh batch of 5-10 people, and compare results. Systematic beats guessing."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Your 48-Hour Validation Sprint",
+          "body": "This weekend, test your offer with real people: 1) Write your one-page offer (headline, core, 2 bonuses, guarantee, price). 2) Identify 10 people in your target market (DMs, email, calls). 3) Present the offer personally — no fancy marketing needed. 4) Track: How many said yes? What objections came up? 5) Based on results: tweak and try again, or validate and scale. Don't skip this step. It's the difference between guessing and knowing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the minimum viable offer test?",
+          "type": "mcq",
+          "options": [
+            "Selling the offer manually to a small number of real buyers before building the full system",
+            "Running a focus group to gather opinions on the offer",
+            "Creating a landing page and measuring traffic",
+            "Launching a full marketing campaign with a limited budget"
+          ],
+          "correctIndex": 0,
+          "explanation": "The fastest validation is a real sale. Talk to 10 people in your target market, present the offer personally, and ask for money. Purchases (not compliments) are the only reliable signal of market fit."
+        },
+        {
+          "question": "Positive feedback from friends and family is a reliable signal that your offer will sell well.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Mom Test principle: people who know you will say nice things to protect your feelings. Only strangers spending real money give you reliable signal. \"That sounds great\" means nothing; a credit card number means everything."
+        },
+        {
+          "question": "What should you track in an offer test to know if it's working?",
+          "type": "mcq",
+          "options": [
+            "Conversion rate (offers made vs accepted) and quality of objections heard",
+            "Website traffic and social media engagement",
+            "Number of people who expressed interest",
+            "How many people said they would buy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Conversion rate tells you if the offer resonates. The objections you hear tell you what to fix. \"I would but...\" is gold — it shows you exactly what's stopping buyers and what your next iteration should address."
+        }
+      ]
+    },
+    {
+      "id": "cio-18-feedback-loops",
+      "dayNumber": 18,
+      "moduleId": "cio-module-3",
+      "title": "Feedback Loops & Iteration",
+      "subtitle": "Your first offer is never your best offer. Build the systems that make your offer stronger with every customer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Amazon's first offer was terrible — they just iterated faster than everyone else. Your offer is version 1.0, not the final draft.",
+          "body": "The most successful offers in history weren't born perfect. They were built through rapid feedback loops — testing, learning, adjusting, and testing again. Today: how to build the system that makes your offer better with every single customer."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Feedback Windows",
+          "body": "Collect feedback at three critical moments: 1) BEFORE purchase — \"What almost stopped you from buying?\" (reveals objections to address in your offer). 2) DURING delivery — \"What's confusing? What's harder than expected?\" (reveals effort/sacrifice issues). 3) AFTER results — \"Did you get the outcome? What would have made it faster?\" (reveals value equation gaps). Each window tells you something different. Miss one and you're flying blind."
+        },
+        {
+          "type": "content",
+          "headline": "The Iteration Cycle",
+          "body": "After every 5-10 customers, run this cycle: COLLECT — Gather feedback from all three windows. PATTERN — What complaints/objections appear more than once? HYPOTHESIS — \"If I add/change X, it will solve Y.\" TEST — Make one change. Run the next 5-10 customers. MEASURE — Did conversion, satisfaction, or results improve? This cycle never stops. Offer version 1.0 becomes 2.0, then 3.0. Each version converts better, delivers better, and commands a higher price."
+        },
+        {
+          "type": "content",
+          "headline": "Turning Complaints Into Value",
+          "body": "Every complaint is a gift — it tells you exactly what to fix. \"It took too long\" → Add a fast-track option or quick-win bonus. \"I got stuck on step 3\" → Create a troubleshooting guide bonus. \"I wasn't sure it would work for me\" → Add niche-specific case studies. \"The price felt risky\" → Strengthen your guarantee. Complaints aren't failures. They're your customers writing your next version's marketing copy for you."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Design Your Feedback System",
+          "body": "Create a simple system you can start immediately: 1) BEFORE — After each sale, send one question: \"What almost stopped you from buying today?\" 2) DURING — At the midpoint of delivery, ask: \"On a scale of 1-10, how easy has this been so far?\" 3) AFTER — When complete, ask: \"Did you get the result? What would have helped you get there faster?\" Keep a simple spreadsheet. After 10 responses, look for patterns. One pattern = one offer improvement."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"churn signal\" and why does it matter for offer design?",
+          "type": "mcq",
+          "options": [
+            "Evidence that customers are leaving, signalling an unmet expectation in the offer",
+            "The natural turnover rate in any business",
+            "A metric for tracking social media unfollows",
+            "An indicator of poor customer service"
+          ],
+          "correctIndex": 0,
+          "explanation": "When customers leave, they're telling you the offer didn't fully deliver on its promise. Churn signals often reveal that expectations set by your marketing weren't matched by delivery — a fixable offer problem."
+        },
+        {
+          "question": "The best time to ask for feedback is immediately after the purchase.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most valuable feedback comes after the customer has experienced your offer. Post-result feedback reveals whether you delivered on the promise. \"What result did you achieve?\" is more valuable than \"Did you enjoy the experience?\""
+        },
+        {
+          "question": "What is the \"offer evolution\" principle from Monetizing Innovation?",
+          "type": "mcq",
+          "options": [
+            "Continuously refining your offer based on customer outcomes and willingness to pay signals",
+            "Releasing a new version of your product every year",
+            "Increasing your price every time you improve the product",
+            "Pivoting your business model when the market changes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Offers are not static. As you learn more about your customers' outcomes and what they'd pay more for, you iterate. The most successful offers are the result of dozens of small improvements, not a single brilliant idea."
+        }
+      ]
+    },
+    {
+      "id": "cio-19-positioning",
+      "dayNumber": 19,
+      "moduleId": "cio-module-3",
+      "title": "Positioning Against Alternatives",
+      "subtitle": "Buyers always compare. Learn to frame your offer so competitors feel like the inferior choice — without mentioning them.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You don't get to choose whether buyers compare you. But you DO get to choose what they compare you against.",
+          "body": "Every buyer evaluates your offer against alternatives — other products, DIY, or doing nothing. If you don't control the comparison frame, they'll default to the worst one (usually price). Today: how to position your offer so that choosing anything else feels foolish."
+        },
+        {
+          "type": "content",
+          "headline": "The Competitive Frame",
+          "body": "April Dunford (Obviously Awesome) teaches that positioning isn't what you say about yourself — it's the context you set for evaluation. Three framing strategies: 1) ALTERNATIVE COST — \"A consultant charges £500/hr for this. Our system: £997 one-time.\" 2) CATEGORY CREATION — \"This isn't a course. It's a done-with-you implementation sprint.\" 3) OUTCOME COMPARISON — \"Gym membership: 12 months, maybe results. Our programme: 90 days, guaranteed.\" You choose the frame. The buyer evaluates within it."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Only\" Positioning Statement",
+          "body": "The most powerful positioning fills in this blank: \"We're the ONLY [category] that [unique differentiator] for [specific audience].\" Examples: \"The only revenue system built specifically for solo consultants doing £100K-£500K.\" \"The only weight loss programme that guarantees results without giving up your favourite foods.\" If you can't complete this sentence, you don't have positioning — you have a generic offer competing on price."
+        },
+        {
+          "type": "content",
+          "headline": "Positioning Through Exclusion",
+          "body": "Counter-intuitive: saying who you DON'T serve makes your offer more compelling to those you DO serve. \"This is NOT for people who want a get-rich-quick scheme.\" \"If you're not willing to put in 30 minutes a day, this isn't for you.\" \"We only work with businesses already doing £1M+ in revenue.\" Exclusion creates desire (scarcity), filters wrong-fit buyers (better results), and signals premium positioning (you can afford to be selective)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Craft Your Positioning Statement",
+          "body": "Complete these three exercises: 1) THE \"ONLY\" STATEMENT: \"We're the only ___ that ___ for ___.\" 2) THE COMPARISON FRAME: \"Compared to [expensive alternative], our offer delivers [same/better result] at [fraction of cost/time].\" 3) THE EXCLUSION: \"This is NOT for people who ___. It IS for people who ___.\" When all three are clear, you've escaped the commodity trap. Your offer now lives in a category of one."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"competitive framing\" in offer positioning?",
+          "type": "mcq",
+          "options": [
+            "Defining the category of comparison so your offer looks best within it",
+            "Directly attacking competitors in your marketing",
+            "Copying competitor features to stay competitive",
+            "Positioning against the highest-priced competitor"
+          ],
+          "correctIndex": 0,
+          "explanation": "You choose the frame of comparison. \"Compared to hiring a consultant at £500/hour, our £2,000 programme is a bargain.\" You don't have to mention competitors — you define what the buyer compares you against."
+        },
+        {
+          "question": "April Dunford's \"Obviously Awesome\" framework says positioning should be done after launch.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Positioning should be deliberate and done before launch. Dunford argues that without intentional positioning, customers will place you in a default category that may not showcase your strengths. Own your category from day one."
+        },
+        {
+          "question": "What is the most powerful positioning statement structure?",
+          "type": "mcq",
+          "options": [
+            "\"For [specific buyer], who [specific problem], [offer] provides [specific outcome] unlike [alternative]\"",
+            "\"The best product in the market at the lowest price\"",
+            "\"Trusted by thousands of customers worldwide\"",
+            "\"Award-winning service with 5-star reviews\""
+          ],
+          "correctIndex": 0,
+          "explanation": "This structure defines who you serve, the specific problem, your unique solution, and why you're different. It's specific enough to resonate deeply with the right buyers and filter out wrong-fit ones."
+        }
+      ]
+    },
+    {
+      "id": "cio-20-monetizing-innovation",
+      "dayNumber": 20,
+      "moduleId": "cio-module-3",
+      "title": "Monetizing Innovation Principles",
+      "subtitle": "The counterintuitive truth about pricing new products — and why most businesses leave the majority of their value uncaptured.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "72% of new products fail to meet revenue targets — not because nobody wants them, but because they're priced wrong from the start.",
+          "body": "Ramanujam and Tacke studied thousands of product launches at Simon-Kucher & Partners. Their findings shattered conventional wisdom about pricing. Today: the principles that separate businesses capturing full value from those leaving millions on the table."
+        },
+        {
+          "type": "content",
+          "headline": "Price Before Product",
+          "body": "The biggest insight from Monetizing Innovation: determine what people will pay BEFORE you build. Most founders build first, then panic about pricing. The fix: 1) Talk to target buyers about the OUTCOME they want. 2) Ask: \"If this delivered [specific result], what would that be worth to you?\" 3) Ask: \"At what price would this be too expensive? At what price would it be too cheap to be credible?\" 4) Design your offer to fit within the sweet spot. Price drives design — not the other way around."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Types of Monetization Failure",
+          "body": "1) FEATURE SHOCK — You built too much. Buyers are overwhelmed and won't pay for features they don't want. Fix: strip to the essential outcome. 2) MINIVATION — You built too little. It's \"nice\" but not transformative enough to command real price. Fix: go deeper. 3) HIDDEN GEM — You built something brilliant but positioned/priced it wrong. Fix: reposition around the highest-value outcome. 4) UNDEAD — Nobody wants this. No amount of pricing fixes a product without demand. Fix: go back to customer pain."
+        },
+        {
+          "type": "content",
+          "headline": "Willingness-to-Pay Conversations",
+          "body": "How to discover what people will actually pay (not what they SAY they'll pay): THE VAN WESTENDORP METHOD — Ask four questions: 1) \"At what price is this too expensive to consider?\" 2) \"At what price is this too cheap to trust?\" 3) \"At what price does this start to feel expensive but still worth it?\" 4) \"At what price is this a bargain?\" The overlap between 3 and 4 is your optimal price range. Test it with 10-15 target buyers for reliable data."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Run a WTP Conversation",
+          "body": "This week, have one real conversation with a target buyer using the Van Westendorp method. Describe your offer outcome clearly: \"Imagine you could [specific result] in [timeframe]. Nothing to do except [minimal effort].\" Then ask all four price questions. Write down their answers. You'll likely be surprised — most founders discover buyers would pay significantly MORE than they planned to charge. That gap is pure revenue you're currently leaving behind."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Monetizing Innovation, when should you determine pricing for a new product?",
+          "type": "mcq",
+          "options": [
+            "Before building the product — pricing informs product design",
+            "After launch, based on initial sales data",
+            "Once the product is finished and you know the cost",
+            "When competitors set their prices"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ramanujam & Tacke's core insight: pricing conversations with customers should happen before product development. Willingness to pay shapes what features to build — not the other way around."
+        },
+        {
+          "question": "Most companies fail to capture the full value of their innovations because they underprice.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research across thousands of product launches found that underpricing is far more common than overpricing. Fear of customer reaction leads companies to leave enormous value on the table — often 20–30% or more."
+        },
+        {
+          "question": "What is \"willingness to pay\" research and why is it crucial before launch?",
+          "type": "mcq",
+          "options": [
+            "Interviewing customers about the maximum they'd pay for a defined outcome, before building",
+            "Surveying customers after purchase to see if they feel the price was fair",
+            "Analysing market pricing data from public sources",
+            "Testing multiple price points with A/B split tests post-launch"
+          ],
+          "correctIndex": 0,
+          "explanation": "WTP research reveals the true price ceiling — and often surprises founders with higher numbers than expected. It also identifies price-sensitive segments and premium segments, enabling tiered pricing strategies."
+        }
+      ]
+    },
+    {
+      "id": "cio-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "cio-module-3",
+      "title": "Your Complete Irresistible Offer",
+      "subtitle": "Bring it all together. Walk away with a finished, tested offer ready to take to market.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "21 days ago you had a product. Today you have an irresistible offer — the kind people feel foolish saying no to.",
+          "body": "You've mastered the value equation, built a complete offer stack, learned to present it compellingly, and understand how to test, iterate, and position for premium pricing. Today: your final assembly and the one action that separates finishers from dreamers."
+        },
+        {
+          "type": "content",
+          "headline": "Your Offer — Complete Summary",
+          "body": "MODULE 1 — THE FOUNDATION: Value = (Dream Outcome × Perceived Likelihood) ÷ (Time × Effort). Four components: core, bonuses, guarantee, urgency. Price based on value delivered, not cost to produce. MODULE 2 — THE STACK: Niche core deliverable, objection-killing bonuses, bold risk reversal, genuine scarcity, premium positioning with anchoring. MODULE 3 — LAUNCH: Right market first, compelling presentation sequence, test before scaling, iterate with feedback loops, position as category of one."
+        },
+        {
+          "type": "content",
+          "headline": "The One-Page Final Offer",
+          "body": "Your irresistible offer on one page: WHO: [Specific target market with massive pain and purchasing power] PROMISE: \"Get [specific outcome] in [timeframe] — guaranteed.\" CORE: [Outcome-framed deliverable] BONUSES: [3-5 objection-killers with named values] GUARANTEE: [Bold risk reversal that matches your confidence] URGENCY: [Genuine reason to act now] PRICE: \"Total value: £___ → Your investment: £___\" POSITIONING: \"The only ___ that ___ for ___.\" If every line is filled with specifics, you have an irresistible offer."
+        },
+        {
+          "type": "content",
+          "headline": "The Continuous Improvement Mindset",
+          "body": "Your offer is never \"done\" — it's always in beta. The best founders treat their offer like software: ship v1.0, gather data, release v1.1, v1.2, v2.0. Each version converts better, delivers better results, and commands a higher price. The system: Test → Feedback → Iterate → Test again. Every 10 customers, ask: \"What would make this even more valuable?\" The answer becomes your next version. This compounding improvement is your unfair advantage."
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The 24-Hour Challenge",
+          "body": "You have everything you need. Here's your 24-hour challenge: 1) Write your complete one-page offer using the template above. 2) Present it to ONE real person in your target market. 3) Ask for the sale (or the sign-up, or the commitment). Don't wait until it's \"perfect.\" An imperfect offer presented to a real buyer teaches you more than a month of polishing in private. Ship it. Learn. Improve. Repeat. That's the entire game. Congratulations — you've completed Create an Irresistible Offer."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which element of the value equation is most often the quickest win for an existing offer?",
+          "type": "mcq",
+          "options": [
+            "Reducing Time Delay — showing buyers they can get results faster",
+            "Adding more features to the core product",
+            "Lowering the price to remove objections",
+            "Adding a celebrity testimonial"
+          ],
+          "correctIndex": 0,
+          "explanation": "Speed is universally valued. Showing buyers they can achieve their desired outcome faster — through better processes, templates, shortcuts, or done-for-you components — increases value immediately without changing the core product."
+        },
+        {
+          "question": "An irresistible offer needs to be rebuilt from scratch for each new market you enter.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your core offer components (value equation, bonuses, guarantee, positioning) can often be adapted rather than rebuilt. The key change between markets is usually the language — not the underlying structure — of how you present the same value."
+        },
+        {
+          "question": "What is the single most important test of whether your offer is truly irresistible?",
+          "type": "mcq",
+          "options": [
+            "Real buyers in your target market paying real money without heavy persuasion",
+            "Positive reviews from existing customers",
+            "High click-through rates on your advertising",
+            "A large social media following"
+          ],
+          "correctIndex": 0,
+          "explanation": "The only true test of an irresistible offer is the sale. Not interest, not likes, not \"I'd definitely buy that\" — actual money changing hands from your target buyer. Everything else is noise until that happens."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2547 @@
+{
+  "id": "28-day-success-mindset",
+  "title": "28-Day Success Mindset Challenge",
+  "subtitle": "Transform your thinking, develop powerful daily habits and build the mindset needed to create lasting success.",
+  "totalDays": 28,
+  "totalXp": 560,
+  "modules": [
+    {
+      "id": "smc-module-1",
+      "moduleNumber": 1,
+      "title": "Rewire Your Thinking",
+      "subtitle": "Identify and replace the mental patterns holding you back from the success you deserve.",
+      "days": "Lessons 1–7",
+      "skill": "Identify and replace the mental patterns holding you back",
+      "lessonIds": [
+        "smc-1-success-operating-system",
+        "smc-2-identity-based-success",
+        "smc-3-pain-pleasure-switch",
+        "smc-4-definite-purpose",
+        "smc-5-empowering-beliefs",
+        "smc-6-questions-you-ask",
+        "smc-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "smc-module-2",
+      "moduleNumber": 2,
+      "title": "Build Your Daily System",
+      "subtitle": "Design a repeatable daily system that compounds into massive results over time.",
+      "days": "Lessons 8–14",
+      "skill": "Design a repeatable daily system that compounds into massive results",
+      "lessonIds": [
+        "smc-8-the-one-percent-rule",
+        "smc-9-habit-stacking",
+        "smc-10-power-hour",
+        "smc-11-the-elimination-game",
+        "smc-12-focus-and-flow-state",
+        "smc-13-energy-management",
+        "smc-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "smc-module-3",
+      "moduleNumber": 3,
+      "title": "Perform Under Pressure",
+      "subtitle": "Maintain your success mindset when challenged, stressed, or tempted to quit.",
+      "days": "Lessons 15–21",
+      "skill": "Maintain your success mindset when challenged, stressed, or tempted to quit",
+      "lessonIds": [
+        "smc-15-state-management",
+        "smc-16-obstacle-is-the-way",
+        "smc-17-decision-speed",
+        "smc-18-raising-standards",
+        "smc-19-clarity-under-chaos",
+        "smc-20-persistence-formula",
+        "smc-21-module-3-checkpoint"
+      ]
+    },
+    {
+      "id": "smc-module-4",
+      "moduleNumber": 4,
+      "title": "Lock In Your Legacy",
+      "subtitle": "Lock in your success mindset permanently and help others rise with you.",
+      "days": "Lessons 22–28",
+      "skill": "Lock in your success mindset permanently and help others rise",
+      "lessonIds": [
+        "smc-22-vision-board",
+        "smc-23-your-inner-circle",
+        "smc-24-teaching-to-learn",
+        "smc-25-proactive-living",
+        "smc-26-success-environment",
+        "smc-27-compound-life",
+        "smc-28-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "smc-1-success-operating-system",
+      "dayNumber": 1,
+      "moduleId": "smc-module-1",
+      "title": "The Success Operating System",
+      "subtitle": "Stop running outdated mental software and start upgrading your internal code.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why You're Stuck in Beta Mode",
+          "body": "Most of the habits and beliefs you rely on were installed during childhood, often based on outdated survival strategies. To reach your potential, you must identify and rewrite the mental programs that are currently sabotaging your progress.",
+          "stat": "95%",
+          "statLabel": "of our daily decisions are driven by subconscious habits"
+        },
+        {
+          "type": "content",
+          "headline": "Your Mindset is Software",
+          "body": "Just like a computer, your brain runs on an operating system composed of values, beliefs, and habitual reactions. If your current results aren't what you desire, the issue isn't your effort — it's the underlying code.",
+          "bullets": [
+            "Identify limiting programs installed in your past",
+            "Replace reactive patterns with proactive principles",
+            "Treat your mindset as a system that requires updates"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Principles",
+          "body": "Success isn't about quick fixes; it's about aligning your internal software with universal principles. By shifting from a reactive state to a proactive mindset, you assume control over your environment rather than being a victim of it.",
+          "bullets": [
+            "Focus on what you can control (Circle of Influence)",
+            "Adopt a growth-oriented interpretation of failure",
+            "Align daily actions with long-term core values"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Cost of Outdated Code",
+          "body": "Running old programs forces you to expend massive energy on willpower to overcome your own internal friction. When you upgrade your mindset, success becomes the path of least resistance.",
+          "stat": "40%",
+          "statLabel": "of daily actions are routine behavior, not conscious choices"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Operating System' Audit",
+          "body": "Spend 5 minutes writing down one recurring 'bug' in your life — a situation where you consistently react in a way you don't like. Identify the belief behind it (e.g., 'I must be perfect to be worthy') and write down a new, empowering line of code to replace it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary reason most people fail to change their results?",
+          "type": "mcq",
+          "options": [
+            "They are running outdated mental software",
+            "They lack enough raw talent",
+            "They don't work hard enough",
+            "They haven't set enough goals"
+          ],
+          "correctIndex": 0,
+          "explanation": "Results are driven by mental programs; if the core software is outdated, no amount of effort will produce different long-term outcomes."
+        },
+        {
+          "question": "What is the most effective way to change your 'mental code'?",
+          "type": "mcq",
+          "options": [
+            "Aligning your actions with universal principles",
+            "Waiting for your environment to change",
+            "Forcing yourself to work harder",
+            "Ignoring past habits entirely"
+          ],
+          "correctIndex": 0,
+          "explanation": "True change comes from aligning your internal operating system with principles that govern long-term success."
+        },
+        {
+          "question": "True or False: Your subconscious habits account for the majority of your daily decisions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that up to 95% of our daily behavior is automatic, reinforcing the need to audit our 'mental software'."
+        }
+      ]
+    },
+    {
+      "id": "smc-2-identity-based-success",
+      "dayNumber": 2,
+      "moduleId": "smc-module-1",
+      "title": "Identity-Based Success",
+      "subtitle": "Stop chasing goals and start becoming the person who achieves them.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why your goals keep failing",
+          "body": "Most people focus on the outcome they want, but true change is internal. You don't rise to the level of your goals; you fall to the level of your systems and identity.",
+          "stat": "92%",
+          "statLabel": "People fail to achieve their New Year's resolutions"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Layers of Change",
+          "body": "Behavior change happens at three levels: outcomes, processes, and identity. The most effective way to change is to focus on who you want to become rather than what you want to achieve.",
+          "bullets": [
+            "Outcomes: What you get (e.g., losing weight)",
+            "Processes: What you do (e.g., hitting the gym)",
+            "Identity: What you believe (e.g., 'I am an athlete')"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Voting for Your Identity",
+          "body": "Every action you take is a 'vote' for the type of person you wish to become. Small, consistent habits eventually create a new belief system that makes success automatic.",
+          "bullets": [
+            "Choose a target identity",
+            "Prove it to yourself with small wins",
+            "Focus on the 'being' not the 'doing'"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Belief",
+          "body": "Once you internalize a new identity, you no longer need willpower to sustain your habits. Your actions become a natural reflection of your self-image.",
+          "stat": "40%",
+          "statLabel": "Of daily actions are habits driven by identity"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'I Am' Exercise",
+          "body": "Identify one goal you have. Write down an identity statement for the version of you who has already achieved it (e.g., 'I am a disciplined creator'). Say this aloud three times today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective level to focus on for lasting change?",
+          "type": "mcq",
+          "options": [
+            "Outcomes",
+            "Processes",
+            "Identity",
+            "Results"
+          ],
+          "correctIndex": 2,
+          "explanation": "Identity-based change starts from the inside out, making behavior change sustainable."
+        },
+        {
+          "question": "How do you build a new identity?",
+          "type": "mcq",
+          "options": [
+            "By visualizing success",
+            "By casting votes via small, consistent actions",
+            "By setting aggressive goals",
+            "By waiting for motivation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every action is a vote for the person you want to become."
+        },
+        {
+          "question": "True or False: You should prioritize outcomes over identity to see faster results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Identity-based change is more sustainable and effective than outcome-focused change."
+        }
+      ]
+    },
+    {
+      "id": "smc-3-pain-pleasure-switch",
+      "dayNumber": 3,
+      "moduleId": "smc-module-1",
+      "title": "The Pain-Pleasure Switch",
+      "subtitle": "Master the emotional levers that drive every human decision.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The hidden force behind your choices",
+          "body": "Why do you procrastinate on important tasks while indulging in easy distractions? Every decision you make is governed by two forces: the desire to avoid pain or the pursuit of pleasure.",
+          "stat": "2x",
+          "statLabel": "The power of pain-avoidance compared to pleasure-gain"
+        },
+        {
+          "type": "content",
+          "headline": "The Fundamental Driver",
+          "body": "Human behavior is predictable once you understand that we are wired for survival. We will do far more to avoid pain than we will to gain pleasure.",
+          "bullets": [
+            "Pain: The catalyst for immediate change",
+            "Pleasure: The catalyst for long-term retention",
+            "Mastery: Linking pain to bad habits and pleasure to good ones"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rewiring Your Brain",
+          "body": "To change a habit, you must make the 'old' behavior feel painful and the 'new' behavior feel rewarding. Use your imagination to amplify the consequences.",
+          "bullets": [
+            "Associate massive pain with staying the same",
+            "Associate massive pleasure with the new habit",
+            "Take immediate action to lock in the change"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Neuro-Association",
+          "body": "Your brain constantly seeks to minimize effort. By consciously linking pain to procrastination, you flip the switch to make productivity the path of least resistance.",
+          "stat": "85%",
+          "statLabel": "Of decisions are made subconsciously to avoid discomfort"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Pain-Pleasure Audit",
+          "body": "Pick one habit you want to break. Write down 3 painful consequences of continuing it for 5 years, and 3 pleasurable outcomes of stopping it today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which force is typically more powerful in driving daily behavior?",
+          "type": "mcq",
+          "options": [
+            "Gaining pleasure",
+            "Avoiding pain",
+            "Logical analysis",
+            "Social pressure"
+          ],
+          "correctIndex": 1,
+          "explanation": "Humans are biologically wired to prioritize the avoidance of pain for survival."
+        },
+        {
+          "question": "How do you 'flip the switch' on a bad habit?",
+          "type": "mcq",
+          "options": [
+            "Ignore it",
+            "Force willpower",
+            "Associate pain with the habit",
+            "Wait for motivation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Linking pain to the old behavior makes it psychologically unattractive."
+        },
+        {
+          "question": "True or False: Pleasure is the only tool needed to create long-term habit change.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While pleasure matters, pain is a more immediate and potent driver for breaking old cycles."
+        }
+      ]
+    },
+    {
+      "id": "smc-4-definite-purpose",
+      "dayNumber": 4,
+      "moduleId": "smc-module-1",
+      "title": "Definite Purpose",
+      "subtitle": "Convert your vague desires into a burning, obsessive vision.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The drift trap",
+          "body": "Most people drift through life without a clear destination, wondering why they never arrive at success. Vague desires produce vague results; you must define your target with absolute clarity.",
+          "stat": "3%",
+          "statLabel": "People who have written, clear goals"
+        },
+        {
+          "type": "content",
+          "headline": "The Starting Point",
+          "body": "All achievement begins with a 'definite chief aim.' You must know exactly what you want, when you want it, and what you are willing to give in exchange for it.",
+          "bullets": [
+            "Clarity eliminates mental clutter",
+            "Focus creates subconscious momentum",
+            "Obsession fuels persistence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Obsession",
+          "body": "When your desire becomes a burning obsession, your mind begins to recognize opportunities that were previously invisible. This is the mechanism behind goal manifestation.",
+          "bullets": [
+            "Define the 'What'",
+            "Set a specific deadline",
+            "Identify the price of attainment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Turning Desire into Reality",
+          "body": "A goal is just a wish until it is coupled with a plan and a burning desire. Clarity is the antidote to the apathy of drifting.",
+          "stat": "10x",
+          "statLabel": "Likelihood of success when goals are written down"
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Chief Aim",
+          "body": "Write down your single most important goal for this year. Include exactly what you want, a date for completion, and one sacrifice you will make to reach it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the result of having vague desires?",
+          "type": "mcq",
+          "options": [
+            "Vague results",
+            "Moderate success",
+            "Balanced happiness",
+            "Slow growth"
+          ],
+          "correctIndex": 0,
+          "explanation": "Without a definite aim, you lack the focus necessary to direct your efforts effectively."
+        },
+        {
+          "question": "What is the final component of a 'Definite Chief Aim'?",
+          "type": "mcq",
+          "options": [
+            "A lucky break",
+            "A plan and a price to pay",
+            "A group of friends",
+            "A positive mood"
+          ],
+          "correctIndex": 1,
+          "explanation": "Success requires a plan and a willingness to exchange effort for the desired result."
+        },
+        {
+          "question": "True or False: You should keep your goals flexible and vague to avoid burnout.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clear, definite goals provide the structure needed to avoid drifting and achieve results."
+        }
+      ]
+    },
+    {
+      "id": "smc-5-empowering-beliefs",
+      "dayNumber": 5,
+      "moduleId": "smc-module-1",
+      "title": "Empowering vs Limiting Beliefs",
+      "subtitle": "Break the invisible glass ceiling of your potential.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Are you living under a self-imposed ceiling?",
+          "body": "Beliefs aren't facts; they are the filters through which you perceive reality. Most of your limitations were installed unconsciously, but your future is a choice you make today.",
+          "stat": "85%",
+          "statLabel": "of adults report that negative self-belief hinders their career progression"
+        },
+        {
+          "type": "content",
+          "headline": "The Architecture of Belief",
+          "body": "Limiting beliefs act as invisible walls, while empowering beliefs act as an engine for growth. Adopting a growth mindset is the meta-belief that allows you to rewrite your internal script.",
+          "bullets": [
+            "Limiting beliefs are often absorbed from past conditioning.",
+            "Empowering beliefs are selected to serve your future goals.",
+            "A growth mindset views challenges as essential data for improvement."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Choice",
+          "body": "You don't need evidence to start believing in a new possibility; you need the courage to act as if it's already true. Once you pivot your belief, your focus shifts to finding ways to succeed.",
+          "bullets": [
+            "Identify the 'I can't' statements in your daily life.",
+            "Replace them with 'How can I?' inquiries.",
+            "Validate new beliefs through immediate, small-scale actions."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Growth Advantage",
+          "body": "Research shows that those who believe their abilities can be developed outperform those who believe their traits are fixed. This shift is the foundation of all long-term achievement.",
+          "stat": "3x",
+          "statLabel": "greater likelihood of success for those with a growth mindset"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Belief Swap",
+          "body": "Identify one limiting belief holding you back today. Write it down, cross it out, and rewrite it as an empowering belief. Spend 2 minutes visualizing how your behavior changes when you fully adopt this new perspective."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary function of a growth mindset?",
+          "type": "mcq",
+          "options": [
+            "To ignore failure",
+            "To treat intelligence as a muscle",
+            "To guarantee immediate success",
+            "To avoid difficult tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "A growth mindset views abilities as developable, treating challenges as opportunities to strengthen your 'mental muscles'."
+        },
+        {
+          "question": "How should you approach limiting beliefs?",
+          "type": "mcq",
+          "options": [
+            "Accept them as facts",
+            "Ignore them completely",
+            "Identify and consciously replace them",
+            "Share them with others"
+          ],
+          "correctIndex": 2,
+          "explanation": "Limiting beliefs are installed unconsciously, so you must consciously identify and replace them with empowering alternatives."
+        },
+        {
+          "question": "True or False: Empowering beliefs require absolute proof before you can adopt them.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Empowering beliefs are chosen as tools to change behavior; evidence often follows the belief, not the other way around."
+        }
+      ]
+    },
+    {
+      "id": "smc-6-questions-you-ask",
+      "dayNumber": 6,
+      "moduleId": "smc-module-1",
+      "title": "The Questions You Ask",
+      "subtitle": "Master the art of directing your focus.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What are you asking yourself right now?",
+          "body": "Your brain is a high-speed search engine. Whatever question you feed it, it will immediately provide an answer, whether that answer serves you or sabotages you.",
+          "stat": "60,000",
+          "statLabel": "average number of thoughts per day, most driven by habitual questions"
+        },
+        {
+          "type": "content",
+          "headline": "Questions Dictate Focus",
+          "body": "When you ask 'Why does this always happen to me?', your brain searches for reasons to feel like a victim. When you ask 'What can I learn from this?', your brain searches for solutions.",
+          "bullets": [
+            "Low-quality questions produce low-quality feelings.",
+            "High-quality questions force your brain to find resources.",
+            "Your current life is the sum of the answers you've accepted."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quality Control",
+          "body": "You must audit your mental dialogue. By changing the syntax of your internal questions, you permanently shift your emotional state and your capability to handle stress.",
+          "bullets": [
+            "Replace 'Why' (blame) with 'How' (action).",
+            "Use 'What's the best part of this?' to shift perspective.",
+            "Ask 'What is the immediate next step?' to kill procrastination."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Focus Multiplier",
+          "body": "Your focus determines your reality. By asking better questions, you bypass the emotional paralysis that stops most people from taking action.",
+          "stat": "40%",
+          "statLabel": "improvement in problem-solving speed when using 'How' vs 'Why' questions"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Better Question' Pivot",
+          "body": "Catch yourself in a moment of frustration today. Pause and ask: 'What is the opportunity here that I am currently missing?' Write down three potential answers."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is 'Why' often a poor question for problem-solving?",
+          "type": "mcq",
+          "options": [
+            "It is too short",
+            "It triggers the search for blame",
+            "It is grammatically incorrect",
+            "It ignores the goal"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Why' questions often force the brain to justify current limitations rather than seeking solutions for future growth."
+        },
+        {
+          "question": "What is the result of asking 'What is the best part of this?'",
+          "type": "mcq",
+          "options": [
+            "Positive re-framing",
+            "Increased anxiety",
+            "Ignoring the problem",
+            "Confusion"
+          ],
+          "correctIndex": 0,
+          "explanation": "This question shifts your focus from the negative aspects of a situation to potential benefits or growth opportunities."
+        },
+        {
+          "question": "True or False: Your brain is incapable of leaving a question unanswered.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The brain is designed to search for answers to whatever questions you pose, making your choice of questions critical."
+        }
+      ]
+    },
+    {
+      "id": "smc-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "smc-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Integrate your Success Operating System.",
+      "duration": "5 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've built the foundation. Now, let's connect the dots.",
+          "body": "You have spent the last week installing the core components of your Success Operating System. Today, we synchronize these elements into a unified framework for your daily life.",
+          "stat": "100%",
+          "statLabel": "of your future success depends on the consistency of these habits"
+        },
+        {
+          "type": "content",
+          "headline": "The Integrated Framework",
+          "body": "Your identity (who you are) dictates your purpose (why you act), while your beliefs and questions determine your focus (what you see). This is the engine of success.",
+          "bullets": [
+            "Identity drives purpose.",
+            "Purpose drives the Pain-Pleasure switch.",
+            "Beliefs and Questions act as the navigation system."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Feedback Loop",
+          "body": "When you encounter pain, you must use your Definite Purpose to re-frame it as pleasure. Use empowering questions to reinforce your identity as a person who succeeds through growth.",
+          "bullets": [
+            "Identity: 'I am someone who grows.'",
+            "Purpose: 'I do this to create freedom.'",
+            "Questions: 'How can I master this challenge?'"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Path Forward",
+          "body": "You now possess the tools to override automatic, negative programming. Success is no longer a matter of luck; it is a matter of systematic execution of these daily protocols.",
+          "stat": "21",
+          "statLabel": "days left to cement these systems into your permanent identity"
+        },
+        {
+          "type": "try-it",
+          "headline": "The System Audit",
+          "body": "Write down your Definite Purpose. Underneath it, list one empowering belief and one high-quality question you will commit to using every single morning this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which element acts as the 'navigation system' for your daily actions?",
+          "type": "mcq",
+          "options": [
+            "Pain-Pleasure Switch",
+            "Identity",
+            "Beliefs and Questions",
+            "Definite Purpose"
+          ],
+          "correctIndex": 2,
+          "explanation": "Beliefs and questions determine where you focus your attention, effectively navigating how you perceive and respond to the world."
+        },
+        {
+          "question": "What is the relationship between Identity and Purpose?",
+          "type": "mcq",
+          "options": [
+            "They are unrelated",
+            "Purpose informs Identity",
+            "Identity drives Purpose",
+            "Purpose replaces Identity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Your identity defines who you are, which naturally dictates the purpose and goals you choose to pursue."
+        },
+        {
+          "question": "True or False: The Pain-Pleasure switch is only useful for avoiding negative habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The switch is equally powerful for associating pleasure with positive, growth-oriented habits to ensure they stick."
+        }
+      ]
+    },
+    {
+      "id": "smc-8-the-one-percent-rule",
+      "dayNumber": 8,
+      "moduleId": "smc-module-2",
+      "title": "The 1% Rule",
+      "subtitle": "Compound your way to greatness",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why big goals often fail",
+          "body": "We often obsess over massive, overnight transformations. In reality, sustainable success is the product of tiny, daily adjustments that compound over time.",
+          "stat": "37x",
+          "statLabel": "improvement if you get 1% better every day for a year"
+        },
+        {
+          "type": "content",
+          "headline": "The Compounding Effect",
+          "body": "If you get 1% better at something every day for a year, you will end up thirty-seven times better by the time you are done. The math of consistency is the most powerful force in personal development.",
+          "bullets": [
+            "Growth is rarely linear",
+            "Small wins build momentum",
+            "Invisible progress is still progress"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Hidden Trap",
+          "body": "Most people overestimate what they can achieve in a single day, leading to frustration. Conversely, they drastically underestimate what they can achieve in a year of consistent, small efforts.",
+          "bullets": [
+            "Avoid the 'all or nothing' trap",
+            "Focus on the process, not the outcome",
+            "Patience is your greatest asset"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Reality of Growth",
+          "body": "Tiny improvements are often invisible in the short term, but they act like interest in a bank account. Over time, these small gains create a gap between you and your past self.",
+          "stat": "1%",
+          "statLabel": "daily improvement target — small enough to do, big enough to matter"
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your 1%",
+          "body": "Pick one area of your life. What is one tiny action you can take today that is 1% better than yesterday? Write it down and do it right now."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do most people struggle to maintain long-term growth?",
+          "type": "mcq",
+          "options": [
+            "They overestimate daily progress",
+            "They focus too much on systems",
+            "They lack natural talent",
+            "They work too hard"
+          ],
+          "correctIndex": 0,
+          "explanation": "Overestimating daily results leads to burnout when immediate progress isn't visible."
+        },
+        {
+          "question": "What is the mathematical result of 1% improvement daily for a year?",
+          "type": "mcq",
+          "options": [
+            "3.65x better",
+            "10x better",
+            "37x better",
+            "100x better"
+          ],
+          "correctIndex": 2,
+          "explanation": "1.01 raised to the power of 365 equals approximately 37.78."
+        },
+        {
+          "question": "True or False: Tiny improvements are usually invisible in the short term.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Compounding requires time; the initial results of small habits are often barely noticeable."
+        }
+      ]
+    },
+    {
+      "id": "smc-9-habit-stacking",
+      "dayNumber": 9,
+      "moduleId": "smc-module-2",
+      "title": "Habit Stacking",
+      "subtitle": "Use your existing routine to build new ones",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The secret to behaviour change",
+          "body": "The biggest barrier to forming a new habit is remembering to do it. Instead of relying on willpower, anchor your new habit to a behaviour you already perform automatically.",
+          "stat": "66",
+          "statLabel": "days on average to make a new behaviour automatic"
+        },
+        {
+          "type": "content",
+          "headline": "The Stacking Formula",
+          "body": "Use this structure to define your new behaviour: 'After I [current habit], I will [new habit].' By leveraging existing neural pathways, you significantly reduce the friction of starting.",
+          "bullets": [
+            "Identify a reliable anchor habit",
+            "Define the new behaviour precisely",
+            "Keep the new habit small at first"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why It Works",
+          "body": "Your brain already has strong associations for habits like brushing your teeth or making coffee. When you stack a new habit onto these, you are essentially piggybacking on existing autopilot mode.",
+          "bullets": [
+            "Removes decision fatigue",
+            "Creates a logical sequence",
+            "Makes the habit 'sticky'"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Anchor",
+          "body": "The best anchors are specific, reliable events that happen every single day. The more consistent the anchor, the faster the new habit will form.",
+          "stat": "2x",
+          "statLabel": "more likely to stick to a habit when tied to an existing one"
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Stack",
+          "body": "Choose a daily task (e.g., pouring coffee) and pair it with a new habit (e.g., writing one goal). State it aloud: 'After I pour my coffee, I will write one goal.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of habit stacking?",
+          "type": "mcq",
+          "options": [
+            "It increases willpower",
+            "It reduces friction",
+            "It removes the need for goals",
+            "It guarantees success"
+          ],
+          "correctIndex": 1,
+          "explanation": "It reduces friction by using existing neural pathways rather than relying on motivation."
+        },
+        {
+          "question": "Which is the correct Habit Stacking formula?",
+          "type": "mcq",
+          "options": [
+            "I will [new habit] after [anchor]",
+            "After I [anchor], I will [new habit]",
+            "I will [anchor] then [new habit]",
+            "When I feel ready, I will [new habit]"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 'After I [current habit], I will [new habit]' formula is the standard approach."
+        },
+        {
+          "question": "True or False: Your anchor habit should be something you do inconsistently.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anchors must be highly consistent for the neural link to form successfully."
+        }
+      ]
+    },
+    {
+      "id": "smc-10-power-hour",
+      "dayNumber": 10,
+      "moduleId": "smc-module-2",
+      "title": "The Power Hour",
+      "subtitle": "Win the morning — win the day",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Own Your Morning",
+          "body": "How you spend the first 60 minutes of your day sets the tone, focus, and energy for everything that follows. Without a routine, your day happens to you; with one, you happen to your day.",
+          "stat": "90%",
+          "statLabel": "of high performers have a structured morning routine"
+        },
+        {
+          "type": "content",
+          "headline": "The SAVERS Framework",
+          "body": "This method optimises your mental and physical state first thing in the morning. It stands for Silence, Affirmations, Visualisation, Exercise, Reading, and Scribing.",
+          "bullets": [
+            "Silence: Meditation or mindful breathing",
+            "Affirmations: Positive identity statements",
+            "Visualisation: See your goals achieved"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Second Half of SAVERS",
+          "body": "To round out your hour, focus on movement and growth. These activities prime your brain for high performance throughout the day.",
+          "bullets": [
+            "Exercise: Get your blood flowing",
+            "Reading: Learn something new every day",
+            "Scribing: Journal your thoughts and intentions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why It's a Game Changer",
+          "body": "By completing these six activities, you ensure your body and mind are fully aligned with your long-term goals before the chaos of the world sets in. You win the day before it starts.",
+          "stat": "6 min",
+          "statLabel": "minimum version — 1 min per SAVERS element, proven to work"
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Micro-Routine",
+          "body": "Tomorrow morning, commit to just 6 minutes of the Power Hour: 1 minute per SAVERS task. Set your alarm 6 minutes earlier tonight and lay out this plan."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the 'S' in SAVERS stand for?",
+          "type": "mcq",
+          "options": [
+            "Silence and Scribing",
+            "Sleep and Studying",
+            "Speed and Strength",
+            "Stretching and Strategy"
+          ],
+          "correctIndex": 0,
+          "explanation": "SAVERS stands for Silence, Affirmations, Visualisation, Exercise, Reading, and Scribing."
+        },
+        {
+          "question": "What is the primary goal of the Power Hour?",
+          "type": "mcq",
+          "options": [
+            "To finish all work early",
+            "To proactively set tone and energy for the day",
+            "To avoid social media",
+            "To get more sleep"
+          ],
+          "correctIndex": 1,
+          "explanation": "The morning routine is designed to define your mindset and energy before the day's distractions begin."
+        },
+        {
+          "question": "True or False: You must spend a full 60 minutes for the routine to be effective.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The framework can be scaled down to as little as 6 minutes; consistency of intent matters more than duration."
+        }
+      ]
+    },
+    {
+      "id": "smc-11-the-elimination-game",
+      "dayNumber": 11,
+      "moduleId": "smc-module-2",
+      "title": "The Elimination Game",
+      "subtitle": "Cut the noise to sharpen your focus.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Are you busy or productive?",
+          "body": "Most people drown in low-value tasks that don't move the needle on their goals.",
+          "stat": "80/20",
+          "statLabel": "Result Ratio"
+        },
+        {
+          "type": "content",
+          "headline": "Mastering the Not-To-Do List",
+          "body": "Your success is defined by what you choose to ignore, not just what you do.",
+          "bullets": [
+            "Identify tasks that yield the lowest return on your energy.",
+            "Create a 'Not-To-Do' list to stop decision fatigue.",
+            "Practice saying 'no' to opportunities that distract from your core mission."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 80/20 Principle",
+          "body": "Focusing on the vital few tasks creates exponential results.",
+          "bullets": [
+            "Audit your current daily schedule for time-wasters.",
+            "Delegate or delete tasks that don't require your unique expertise.",
+            "Prioritize high-impact activities before checking your inbox."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Decision Fatigue",
+          "body": "Every choice drains your mental battery. Eliminate trivial choices to save willpower.",
+          "bullets": [
+            "Automate repetitive daily decisions.",
+            "Set boundaries on communication times.",
+            "Minimize context switching throughout the day."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Elimination Challenge",
+          "body": "Write down everything you did yesterday. Circle the three tasks you can permanently delete or delegate starting today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of a 'Not-To-Do' list?",
+          "type": "mcq",
+          "options": [
+            "To list chores for others",
+            "To reduce decision fatigue and focus on high-impact tasks",
+            "To keep track of past mistakes",
+            "To make the calendar look busier"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Not-To-Do list helps you identify and eliminate low-value tasks so you can preserve your mental energy for high-impact work."
+        },
+        {
+          "question": "According to the 80/20 rule, how should you allocate your focus?",
+          "type": "mcq",
+          "options": [
+            "On 80% of tasks equally",
+            "On the 20% of tasks that produce 80% of results",
+            "On the easiest tasks first",
+            "On tasks delegated by others"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 80/20 rule suggests that a minority of your inputs (20%) are responsible for the majority (80%) of your outputs."
+        },
+        {
+          "question": "True or False: Eliminating low-value tasks will naturally increase your decision fatigue.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Eliminating low-value tasks reduces the number of decisions you have to make, thereby decreasing decision fatigue."
+        }
+      ]
+    },
+    {
+      "id": "smc-12-focus-and-flow-state",
+      "dayNumber": 12,
+      "moduleId": "smc-module-2",
+      "title": "Focus & Flow State",
+      "subtitle": "Unlock deep work and peak performance.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Enter the Zone",
+          "body": "Flow is the mental state where you perform at your absolute peak.",
+          "stat": "500%",
+          "statLabel": "Productivity Boost"
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Single-Tasking",
+          "body": "Multitasking is a myth that kills your cognitive capacity.",
+          "bullets": [
+            "Commit to one task per 90-minute block.",
+            "Remove all digital notifications before starting.",
+            "Create a dedicated workspace to trigger focus."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Flow Triggers",
+          "body": "Specific environmental cues can help you enter a flow state faster.",
+          "bullets": [
+            "Use deep-focus music or white noise.",
+            "Set a clear, challenging goal for the current session.",
+            "Match the difficulty of the task to your skill level."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Structuring Deep Work",
+          "body": "Your brain performs best when working in cycles rather than continuous slogs.",
+          "bullets": [
+            "Aim for 90-minute undistracted blocks.",
+            "Take a 15-minute break after every deep work session.",
+            "Plan your deep work for your most alert time of day."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 90-Minute Sprint",
+          "body": "Set a timer for 90 minutes. Focus exclusively on one high-value project, turning off your phone and closing all irrelevant browser tabs."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of single-tasking?",
+          "type": "mcq",
+          "options": [
+            "It allows you to do more at once",
+            "It minimizes cognitive load and increases focus",
+            "It prevents you from getting tired",
+            "It makes your calendar look empty"
+          ],
+          "correctIndex": 1,
+          "explanation": "Single-tasking prevents context switching, which allows your brain to stay focused and perform at a higher level."
+        },
+        {
+          "question": "How long is the recommended duration for a deep work block?",
+          "type": "mcq",
+          "options": [
+            "15 minutes",
+            "30 minutes",
+            "90 minutes",
+            "4 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests that 90-minute blocks align well with the brain's natural ability to focus before needing a recovery break."
+        },
+        {
+          "question": "True or False: Flow state is best achieved when the task difficulty is far above your skill level.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flow occurs when the task difficulty is balanced with your skill level; too high causes anxiety, too low causes boredom."
+        }
+      ]
+    },
+    {
+      "id": "smc-13-energy-management",
+      "dayNumber": 13,
+      "moduleId": "smc-module-2",
+      "title": "Energy Management",
+      "subtitle": "Stop managing time; start managing energy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Energy is your currency.",
+          "body": "Time is finite, but energy can be renewed and expanded.",
+          "stat": "90",
+          "statLabel": "Minute Cycles"
+        },
+        {
+          "type": "content",
+          "headline": "Ultradian Rhythms",
+          "body": "Your body operates on natural cycles of high and low energy.",
+          "bullets": [
+            "Track your energy levels throughout the day.",
+            "Schedule high-demand tasks during your peak windows.",
+            "Use low-energy periods for administrative chores."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Energy Audit",
+          "body": "Identify the activities that drain you and those that recharge you.",
+          "bullets": [
+            "Monitor how you feel after specific meetings or tasks.",
+            "Reduce exposure to 'energy vampires'.",
+            "Increase intentional recovery time."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Strategic Recovery",
+          "body": "Recovery isn't laziness; it's a prerequisite for high performance.",
+          "bullets": [
+            "Incorporate movement breaks into your day.",
+            "Practice mindfulness or deep breathing.",
+            "Ensure consistent, high-quality sleep."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Energy Audit",
+          "body": "For today, note your energy level on a scale of 1-10 every two hours. Identify when your peak performance window occurs."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are ultradian rhythms?",
+          "type": "mcq",
+          "options": [
+            "Daily sleep cycles",
+            "Cycles of high and low energy throughout the day",
+            "Weekly productivity goals",
+            "The time it takes to finish a task"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ultradian rhythms are the biological cycles that dictate your natural energy fluctuations throughout the day."
+        },
+        {
+          "question": "What is the best way to handle 'energy vampires'?",
+          "type": "mcq",
+          "options": [
+            "Engage with them more",
+            "Ignore them completely",
+            "Minimize exposure or limit interaction time",
+            "Schedule them for your peak hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Energy vampires drain your mental and emotional reserves; limiting your exposure to them preserves your capacity for high-value work."
+        },
+        {
+          "question": "True or False: Strategic recovery is a sign of laziness.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strategic recovery is essential for maintaining consistent high performance and preventing burnout."
+        }
+      ]
+    },
+    {
+      "id": "smc-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "smc-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Integrate your new high-performance systems.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Review your progress.",
+          "body": "You have built the foundation for a high-performance mindset. Now, let's lock it in.",
+          "stat": "100%",
+          "statLabel": "System Integration"
+        },
+        {
+          "type": "content",
+          "headline": "The Toolkit Recap",
+          "body": "Reflect on the systems you've learned over the past two weeks.",
+          "bullets": [
+            "1% Rule: Consistent, small improvements compound.",
+            "Habit Stacking: Anchoring new behaviors to old ones.",
+            "Power Hour: Focusing on your most critical task."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Systems Integration",
+          "body": "Combine elimination, focus, and energy management for maximum output.",
+          "bullets": [
+            "Eliminate low-value tasks to clear your schedule.",
+            "Use deep work blocks during your energy peaks.",
+            "Protect your flow state with strict boundaries."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Looking Ahead",
+          "body": "Consistency is the bridge between goals and reality.",
+          "bullets": [
+            "Refine your daily routine based on your energy audit.",
+            "Keep your focus narrow to achieve deeper results.",
+            "Celebrate your small wins to maintain momentum."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Integration Plan",
+          "body": "Write down one specific habit from Module 2 you will commit to for the next 30 days. Define exactly how you will track it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which concept emphasizes small, consistent improvements?",
+          "type": "mcq",
+          "options": [
+            "The 80/20 Rule",
+            "The 1% Rule",
+            "The Power Hour",
+            "The Flow State"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 1% Rule focuses on making small, incremental improvements every day, which leads to significant results over time."
+        },
+        {
+          "question": "What is the goal of 'Habit Stacking'?",
+          "type": "mcq",
+          "options": [
+            "To do more things at once",
+            "To replace bad habits with new routines",
+            "To anchor a new habit to an existing one",
+            "To eliminate all habits"
+          ],
+          "correctIndex": 2,
+          "explanation": "Habit stacking involves pairing a new habit with an existing, well-established one to make the new behavior easier to maintain."
+        },
+        {
+          "question": "True or False: A Power Hour is best used for answering emails and checking social media.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Power Hour is designed for your most critical, high-impact task, not for reactive activities like email or social media."
+        }
+      ]
+    },
+    {
+      "id": "smc-15-state-management",
+      "dayNumber": 15,
+      "moduleId": "smc-module-3",
+      "title": "State Management",
+      "subtitle": "Master your internal chemistry",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Are Not Your Emotions",
+          "body": "Your emotional state dictates your performance. Learn to shift from reactive to proactive in seconds.",
+          "stat": "80%",
+          "statLabel": "of performance is state-driven"
+        },
+        {
+          "type": "content",
+          "headline": "Physiology First",
+          "body": "Your body and mind are a feedback loop. When you change your physical stance, your brain follows suit.",
+          "bullets": [
+            "Use power posing to lower cortisol levels.",
+            "Controlled breathing signals safety to the brain.",
+            "Align your posture to influence your confidence."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Anchoring Your Focus",
+          "body": "An anchor is a physical trigger that reminds you of a peak state, acting as a shortcut to mental clarity.",
+          "bullets": [
+            "Identify a peak memory where you felt unstoppable.",
+            "Apply a specific physical gesture during that memory.",
+            "Repeat the gesture to rapidly recall the state."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Breath",
+          "body": "The autonomic nervous system can be hacked through breath. Slow, rhythmic inhaling and exhaling resets your focus.",
+          "stat": "3x",
+          "statLabel": "faster state recovery",
+          "bullets": [
+            "Inhale for 4 seconds, hold for 4, exhale for 4.",
+            "Focus entirely on the sensation of air.",
+            "Use this before high-pressure meetings."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Power Pose Challenge",
+          "body": "Stand in a 'victory' pose (arms up, chest open) for two minutes before your next difficult task. Notice the shift in your internal calm."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is the most direct way to hack your emotional state?",
+          "type": "mcq",
+          "options": [
+            "Changing your physiology",
+            "Ignoring the problem",
+            "Thinking harder",
+            "Complaining about the situation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Physiology and psychology are linked; changing your physical state is the fastest way to alter your mindset."
+        },
+        {
+          "question": "What is the primary purpose of a 'state anchor'?",
+          "type": "mcq",
+          "options": [
+            "To distract you from pain",
+            "To provide a shortcut to a peak state",
+            "To record your daily goals",
+            "To increase heart rate"
+          ],
+          "correctIndex": 1,
+          "explanation": "An anchor acts as a trigger to recall a specific, high-performance emotional state on demand."
+        },
+        {
+          "question": "True or false: Your posture has no impact on your confidence levels.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that open, expansive postures can significantly influence your hormonal and psychological state."
+        }
+      ]
+    },
+    {
+      "id": "smc-16-obstacle-is-the-way",
+      "dayNumber": 16,
+      "moduleId": "smc-module-3",
+      "title": "The Obstacle Is the Way",
+      "subtitle": "Turn friction into fuel",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Challenges Aren't Roadblocks",
+          "body": "The very thing standing in your way is actually the path to your growth. Reframe your reality.",
+          "stat": "100%",
+          "statLabel": "of growth comes from friction"
+        },
+        {
+          "type": "content",
+          "headline": "The Stoic Reframe",
+          "body": "Adversity is not an interruption; it is the training ground. When you meet an obstacle, ask, 'What is this teaching me?'",
+          "bullets": [
+            "Remove emotional labels like 'unfair' or 'bad'.",
+            "Identify the specific skill the obstacle requires.",
+            "View the challenge as a test of your resolve."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Anti-Fragility",
+          "body": "Don't just survive pressure; thrive because of it. Anti-fragility means you get better the more you are stressed.",
+          "stat": "2x",
+          "statLabel": "resilience growth rate",
+          "bullets": [
+            "Seek out small, manageable challenges.",
+            "Analyze failures to find systemic improvements.",
+            "Lean into the discomfort of the unknown."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding the Opportunity",
+          "body": "Every problem carries the seed of an equivalent benefit. Look for the hidden leverage in your current struggle.",
+          "bullets": [
+            "Ask: How can I use this to my advantage?",
+            "Look for what others are missing.",
+            "Focus on what is within your control."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Problem' Audit",
+          "body": "List one current 'obstacle.' Write down three ways this problem is actually providing you with a unique opportunity to grow or lead."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does it mean to be 'anti-fragile'?",
+          "type": "mcq",
+          "options": [
+            "To be unbreakable",
+            "To get better through stress",
+            "To avoid all risk",
+            "To ignore obstacles"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anti-fragility is the quality of systems or people that improve when exposed to volatility or stress."
+        },
+        {
+          "question": "When facing an obstacle, what is the best first step?",
+          "type": "mcq",
+          "options": [
+            "Complain to a colleague",
+            "Reframe the obstacle as an opportunity",
+            "Give up immediately",
+            "Wait for it to pass"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reframing allows you to stop seeing an obstacle as a threat and start seeing it as a path to growth."
+        },
+        {
+          "question": "True or false: Obstacles are interruptions to your success.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Obstacles are not interruptions; they are the path itself. They provide the necessary friction to grow."
+        }
+      ]
+    },
+    {
+      "id": "smc-17-decision-speed",
+      "dayNumber": 17,
+      "moduleId": "smc-module-3",
+      "title": "Decision Speed",
+      "subtitle": "Kill analysis paralysis",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Speed Is a Competitive Advantage",
+          "body": "Indecision costs more than a wrong decision. Learn to make high-quality choices under pressure.",
+          "stat": "70%",
+          "statLabel": "the golden threshold"
+        },
+        {
+          "type": "content",
+          "headline": "The 70% Rule",
+          "body": "Waiting for 100% of the information leads to paralysis. If you have 70% of the data, pull the trigger.",
+          "bullets": [
+            "Accept that perfect information is a myth.",
+            "Calculate the cost of waiting versus the cost of error.",
+            "Adjust course as you move forward."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Reversible vs. Irreversible",
+          "body": "Most decisions are 'two-way doors'—you can turn back. Distinguishing these saves massive amounts of energy.",
+          "stat": "90%",
+          "statLabel": "of decisions are reversible",
+          "bullets": [
+            "Irreversible decisions require deep analysis.",
+            "Reversible decisions should be made quickly.",
+            "Stop applying high-stakes energy to low-stakes tasks."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Decision Journal",
+          "body": "You cannot improve what you do not track. Journaling your decisions helps you spot biases and blind spots.",
+          "bullets": [
+            "Note the decision and the context.",
+            "Describe your reasoning at that moment.",
+            "Review results later to learn from outcomes."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 60-Second Rule",
+          "body": "For the next 24 hours, identify three small, reversible decisions. Give yourself exactly 60 seconds to make each one. No overthinking allowed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of the 70% rule?",
+          "type": "mcq",
+          "options": [
+            "It guarantees success",
+            "It eliminates the need for data",
+            "It prevents analysis paralysis",
+            "It makes decisions reversible"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 70% rule prevents you from waiting for perfect information, which is usually impossible to obtain."
+        },
+        {
+          "question": "Why should you categorize a decision as 'reversible'?",
+          "type": "mcq",
+          "options": [
+            "To make it more important",
+            "To justify taking more time",
+            "To allow for faster action without fear",
+            "To avoid documenting it"
+          ],
+          "correctIndex": 2,
+          "explanation": "Recognizing a decision is reversible lowers the stakes, allowing you to move faster and learn through iteration."
+        },
+        {
+          "question": "True or false: Indecision is a neutral choice.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Indecision is not neutral; it is a choice to let the situation control you, often resulting in lost time and opportunity."
+        }
+      ]
+    },
+    {
+      "id": "smc-18-raising-standards",
+      "dayNumber": 18,
+      "moduleId": "smc-module-3",
+      "title": "Raising Standards",
+      "subtitle": "Elevate your identity to exceed your goals.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Goals Fail",
+          "body": "Goals are targets you hit once, but standards are the floor you never drop below.",
+          "stat": "85%",
+          "statLabel": "of long-term success stems from identity-level shifts"
+        },
+        {
+          "type": "content",
+          "headline": "Standards vs. Goals",
+          "body": "A goal is a destination; a standard is a way of being. When you raise your internal standards, performance becomes automatic rather than forced.",
+          "bullets": [
+            "Define your minimum acceptable behavior daily.",
+            "Environment acts as the ceiling for your standards.",
+            "Focus on raising the floor, not just the ceiling."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Identity Shift",
+          "body": "When you view a behavior as 'who I am' rather than 'what I should do,' you remove the internal friction of decision-making.",
+          "bullets": [
+            "Audit your current default behaviors.",
+            "Identify one area where you are settling.",
+            "Commit to a non-negotiable personal protocol."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Environment Design",
+          "body": "Your standards are heavily influenced by the company you keep and the spaces you inhabit. Curate your surroundings to support your new baseline.",
+          "bullets": [
+            "Remove triggers that lower your standards.",
+            "Surround yourself with high-performers.",
+            "Review your environment weekly."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Your New Floor",
+          "body": "Write down one 'minimum acceptable action' for your health, work, and mindset that you refuse to skip, regardless of pressure."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary difference between a goal and a standard?",
+          "type": "mcq",
+          "options": [
+            "Goals are internal, standards are external",
+            "Goals are destinations, standards are baselines",
+            "Goals are permanent, standards are temporary",
+            "There is no difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Goals represent an end point, while standards represent the minimum level of performance you maintain at all times."
+        },
+        {
+          "question": "Why is 'raising the floor' more effective than 'raising the ceiling'?",
+          "type": "mcq",
+          "options": [
+            "It requires less effort",
+            "It builds consistent identity-level habits",
+            "It focuses on short-term results",
+            "It ignores the environment"
+          ],
+          "correctIndex": 1,
+          "explanation": "Raising the floor ensures that even on your worst days, your performance remains at a high level."
+        },
+        {
+          "question": "True or False: Your environment has no impact on your personal standards.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your environment is a critical factor in maintaining your standards; it acts as the baseline for your daily habits."
+        }
+      ]
+    },
+    {
+      "id": "smc-19-clarity-under-chaos",
+      "dayNumber": 19,
+      "moduleId": "smc-module-3",
+      "title": "Clarity Under Chaos",
+      "subtitle": "Think clearly when everything is uncertain.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Calm Advantage",
+          "body": "In a crisis, the person who remains calm and thinks clearly holds all the leverage.",
+          "stat": "40%",
+          "statLabel": "more effective decisions made when using logical frameworks"
+        },
+        {
+          "type": "content",
+          "headline": "First-Principles Thinking",
+          "body": "When faced with complexity, break problems down to their fundamental truths. Strip away assumptions to see the situation as it actually is.",
+          "bullets": [
+            "Identify the core problem.",
+            "Challenge your current assumptions.",
+            "Rebuild the solution from facts."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Signal vs. Noise",
+          "body": "Chaos is often just an excess of information. Your job is to filter for the 'signal'—the few variables that actually move the needle.",
+          "bullets": [
+            "Ask: Does this change the outcome?",
+            "Ignore non-critical feedback loops.",
+            "Focus on the immediate next step."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Writing to Think",
+          "body": "Writing externalizes your internal chaos. By putting thoughts on paper, you gain the distance needed to analyze them objectively.",
+          "bullets": [
+            "Use a brain dump to clear mental RAM.",
+            "Map out cause and effect.",
+            "Identify logical gaps in your plan."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Clarity Journal",
+          "body": "Next time you feel overwhelmed, spend 5 minutes writing down every variable of the problem, then circle the only one you can control right now."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the goal of first-principles thinking in a chaotic situation?",
+          "type": "mcq",
+          "options": [
+            "To find a faster shortcut",
+            "To break a problem into fundamental truths",
+            "To copy what others are doing",
+            "To ignore the problem until it fades"
+          ],
+          "correctIndex": 1,
+          "explanation": "First-principles thinking involves stripping away assumptions to see the raw facts of a situation."
+        },
+        {
+          "question": "Why is writing effective for maintaining clarity?",
+          "type": "mcq",
+          "options": [
+            "It makes you look busy",
+            "It externalizes thoughts and creates objective distance",
+            "It is the only way to store information",
+            "It prevents you from taking action"
+          ],
+          "correctIndex": 1,
+          "explanation": "Writing forces you to organize your thoughts, helping you identify gaps and logic errors."
+        },
+        {
+          "question": "True or False: Chaos is best managed by focusing on every single variable simultaneously.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chaos is best managed by filtering for the 'signal'—the few variables that truly matter."
+        }
+      ]
+    },
+    {
+      "id": "smc-20-persistence-formula",
+      "dayNumber": 20,
+      "moduleId": "smc-module-3",
+      "title": "The Persistence Formula",
+      "subtitle": "Systematize your perseverance for the long haul.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Grit is a Skill",
+          "body": "Persistence isn't a personality trait; it is a system of emotional refueling and micro-commitments.",
+          "stat": "10x",
+          "statLabel": "higher success rate for those with systematic persistence"
+        },
+        {
+          "type": "content",
+          "headline": "The Dip vs. The Dead End",
+          "body": "Knowing when to persist and when to quit is vital. The 'Dip' is the temporary struggle before a breakthrough; the 'Dead End' is a path with no potential.",
+          "bullets": [
+            "Assess if the struggle is growth-oriented.",
+            "Look for signs of diminishing returns.",
+            "Define your 'quit' criteria in advance."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Micro-Commitments",
+          "body": "When a goal feels too large, pressure mounts and leads to paralysis. Break your progress into tiny, non-negotiable micro-wins.",
+          "bullets": [
+            "Focus only on the next 24 hours.",
+            "Celebrate small, consistent actions.",
+            "Build momentum to overcome inertia."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Emotional Refueling",
+          "body": "Persistence requires energy. You cannot pour from an empty cup, so you must schedule recovery as strictly as your work.",
+          "bullets": [
+            "Identify activities that recharge you.",
+            "Avoid 'guilt-free' burnout cycles.",
+            "Rest is a strategic tool, not a reward."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Track Your Streak",
+          "body": "Start a streak tracker for one simple, high-leverage habit. Keep it visible to provide visual evidence of your persistence."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main difference between 'The Dip' and a 'Dead End'?",
+          "type": "mcq",
+          "options": [
+            "The Dip is temporary; the Dead End has no potential",
+            "The Dip is permanent; the Dead End is temporary",
+            "There is no difference",
+            "The Dip requires quitting immediately"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Dip is the struggle before a breakthrough, while a Dead End is a path that will never yield results."
+        },
+        {
+          "question": "Why are micro-commitments useful for persistence?",
+          "type": "mcq",
+          "options": [
+            "They make the task longer",
+            "They reduce paralysis by making the next step manageable",
+            "They are easier to ignore",
+            "They remove the need for goals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Breaking tasks into micro-commitments makes them less intimidating and helps build consistent momentum."
+        },
+        {
+          "question": "True or False: Persistence is a fixed trait you are born with.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Persistence is a skill that can be developed through systems, emotional refueling, and micro-commitments."
+        }
+      ]
+    },
+    {
+      "id": "smc-21-module-3-checkpoint",
+      "dayNumber": 21,
+      "moduleId": "smc-module-3",
+      "title": "Module 3 Checkpoint",
+      "subtitle": "Integrate your performance tools.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Mastering Pressure",
+          "body": "You now have the tools to remain calm, focused, and persistent under any condition.",
+          "stat": "100%",
+          "statLabel": "of your performance is governed by your internal systems"
+        },
+        {
+          "type": "content",
+          "headline": "Reviewing the Toolkit",
+          "body": "We have covered state management, decision speed, raising standards, and systematic persistence. Integration is the final step.",
+          "bullets": [
+            "Reframing obstacles into opportunities.",
+            "Using clarity to navigate chaos.",
+            "Maintaining high standards under pressure."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Integration Challenge",
+          "body": "To truly own these skills, you must apply them to a real-life situation. Pick one current stressor and apply the 'Clarity' and 'Standards' frameworks.",
+          "bullets": [
+            "Write down the stressor.",
+            "Identify the 'floor' for your behavior.",
+            "Filter out the noise to find your next step."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Looking Ahead",
+          "body": "You are now equipped to perform under pressure when others crumble. Consistency in applying these tools is your new competitive advantage.",
+          "bullets": [
+            "Keep auditing your default behaviors.",
+            "Refine your persistence system.",
+            "Stay committed to your personal standards."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Pressure Simulation",
+          "body": "Reflect on a past failure. Rewrite the scenario using the tools from this module: how would you have kept your cool and persisted differently?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is a key component of the Module 3 framework for pressure?",
+          "type": "mcq",
+          "options": [
+            "Avoiding all high-pressure tasks",
+            "Using state management and clarity",
+            "Relying on luck to navigate chaos",
+            "Lowering standards to reduce stress"
+          ],
+          "correctIndex": 1,
+          "explanation": "Module 3 focuses on state management, clarity, standards, and persistence to handle high-pressure situations."
+        },
+        {
+          "question": "What is the purpose of the integration challenge?",
+          "type": "mcq",
+          "options": [
+            "To test your memory of the lessons",
+            "To apply the tools to a real-life stressor",
+            "To force you to change your career",
+            "To provide feedback to the instructors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Integration challenges help you turn theoretical knowledge into practical skills by applying them to real stressors."
+        },
+        {
+          "question": "True or False: Once you finish this module, you no longer need to practice these skills.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Success mindset is a continuous practice; consistency is the key to maintaining your competitive advantage."
+        }
+      ]
+    },
+    {
+      "id": "smc-22-vision-board",
+      "dayNumber": 22,
+      "moduleId": "smc-module-4",
+      "title": "The Vision Board 2.0",
+      "subtitle": "Architecting your ideal future identity",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "See it to become it",
+          "body": "Your brain doesn't distinguish between a vivid visualization and reality. By upgrading your vision beyond static images, you prime your subconscious for success.",
+          "stat": "40%",
+          "statLabel": "Increased goal attainment with sensory visualization"
+        },
+        {
+          "type": "content",
+          "headline": "Beyond the Collage",
+          "body": "Traditional boards are just pictures. Vision 2.0 requires identity projection, where you anchor your goals to specific emotional states.",
+          "bullets": [
+            "Use sensory details: what do your wins smell, feel, and sound like?",
+            "Shift from 'wanting' to 'being' in your descriptions.",
+            "Create an emotional narrative that triggers your desired actions."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Written Vision",
+          "body": "While images provide the 'what', a written vision provides the 'who'. Combining both creates a dual-hemisphere engagement.",
+          "bullets": [
+            "Write your vision in the present tense as if it is happening now.",
+            "Focus on the identity traits you embody in your future success.",
+            "Update your vision quarterly to maintain alignment with your growth."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Emotional Connection",
+          "body": "Goals fail when they lack a 'why'. Your vision must elicit a visceral reaction to sustain you through periods of friction.",
+          "bullets": [
+            "Identify the specific feeling success brings to your daily life.",
+            "Connect your material outcomes to your core values.",
+            "Use visualization as a morning anchor to set your mental trajectory."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Future Script",
+          "body": "Write a 200-word 'future self' script describing a typical day in your life 3 years from now. Focus on how you feel and who you are being."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core difference between a traditional vision board and Vision 2.0?",
+          "type": "mcq",
+          "options": [
+            "The use of colors",
+            "The integration of identity and sensory detail",
+            "The size of the physical board",
+            "The inclusion of other people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vision 2.0 moves beyond static images to focus on identity projection and sensory detail."
+        },
+        {
+          "question": "Why should you write your vision in the present tense?",
+          "type": "mcq",
+          "options": [
+            "To save time",
+            "To trick the brain into believing the identity is already formed",
+            "To impress others",
+            "To make it easier to read"
+          ],
+          "correctIndex": 1,
+          "explanation": "Writing in the present tense helps shift your identity from 'seeking' to 'being'."
+        },
+        {
+          "question": "True or False: Visualization is most effective when it is purely visual and lacks emotional connection.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Emotional connection is essential to sustain motivation and anchor your goals."
+        }
+      ]
+    },
+    {
+      "id": "smc-23-your-inner-circle",
+      "dayNumber": 23,
+      "moduleId": "smc-module-4",
+      "title": "Your Inner Circle",
+      "subtitle": "Curating your environment for growth",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You are the average of the five",
+          "body": "The people you spend the most time with shape your mindset, your standards, and ultimately, your results. Is your circle elevating you?",
+          "stat": "95%",
+          "statLabel": "Of your success is determined by your peer group"
+        },
+        {
+          "type": "content",
+          "headline": "The Energy Audit",
+          "body": "Conducting an audit of your relationships helps you identify who adds value and who drains your capacity for growth.",
+          "bullets": [
+            "Categorize your inner circle into 'elevators' and 'drainers'.",
+            "Assess if your conversations lead to action or complaints.",
+            "Notice your energy levels after hanging out with key individuals."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Proximity is Power",
+          "body": "You cannot reach new heights while maintaining old, limiting associations. Proximity to excellence forces you to raise your own standards.",
+          "bullets": [
+            "Identify proximity targets: people who are where you want to be.",
+            "Seek out mastermind groups or communities with shared growth goals.",
+            "Understand that leaving behind old dynamics is often necessary for evolution."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Setting Healthy Boundaries",
+          "body": "Protecting your focus requires firm boundaries. You don't have to cut everyone off, but you must curate your access.",
+          "bullets": [
+            "Limit time spent with those who resist your personal development.",
+            "Communicate your growth goals clearly to those closest to you.",
+            "Prioritize connections that challenge your limiting beliefs."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Perform a Relationship Audit",
+          "body": "List your five closest contacts. Next to each name, write 'Elevator' or 'Drainer'. Identify one action to improve the quality of your time spent with them."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of an energy audit for relationships?",
+          "type": "mcq",
+          "options": [
+            "To save money",
+            "To identify who contributes to your growth versus who drains your energy",
+            "To find new romantic partners",
+            "To keep track of favors"
+          ],
+          "correctIndex": 1,
+          "explanation": "An energy audit helps you prioritize relationships that support your growth."
+        },
+        {
+          "question": "Why is proximity to high-performers important?",
+          "type": "mcq",
+          "options": [
+            "It makes you popular",
+            "It forces you to raise your own personal standards",
+            "It guarantees financial success",
+            "It eliminates the need for hard work"
+          ],
+          "correctIndex": 1,
+          "explanation": "Proximity to excellence naturally sets a higher standard for your own behavior and mindset."
+        },
+        {
+          "question": "True or False: You should immediately cut off anyone who is not currently successful.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The goal is to audit for 'elevators' and 'drainers', not to judge people based solely on their current success status."
+        }
+      ]
+    },
+    {
+      "id": "smc-24-teaching-to-learn",
+      "dayNumber": 24,
+      "moduleId": "smc-module-4",
+      "title": "Teaching to Learn",
+      "subtitle": "Mastering knowledge through contribution",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The ultimate test of knowledge",
+          "body": "You don't truly understand something until you can teach it to someone else. Teaching is the fastest way to turn information into wisdom.",
+          "stat": "90%",
+          "statLabel": "Retention rate when teaching others"
+        },
+        {
+          "type": "content",
+          "headline": "Exposing Knowledge Gaps",
+          "body": "When you try to explain a concept, you immediately identify where your understanding is fuzzy or incomplete.",
+          "bullets": [
+            "Attempt to explain a core lesson without using jargon.",
+            "Notice where you stumble or lose clarity.",
+            "Use your frustration as a roadmap for what you need to study next."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Simplicity",
+          "body": "Great teachers take complex ideas and make them actionable. This process forces you to internalize the core principles.",
+          "bullets": [
+            "Use analogies to explain difficult concepts.",
+            "Focus on the 'how-to' rather than just the theory.",
+            "Simplify your language to ensure your audience can apply the insight."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Authority",
+          "body": "When you share what you learn, you solidify your own expertise and build a reputation as a resource for others.",
+          "bullets": [
+            "Share lessons on social media or in group chats.",
+            "Invite feedback from your audience to refine your understanding.",
+            "View teaching as a service that reinforces your own mastery."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Teach-It' Challenge",
+          "body": "Pick a concept you learned in this course. Record a 60-second video or write a post explaining it as if you were teaching it to a beginner."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of teaching a concept to someone else?",
+          "type": "mcq",
+          "options": [
+            "It makes you famous",
+            "It identifies gaps in your own understanding",
+            "It is easier than reading",
+            "It forces others to agree with you"
+          ],
+          "correctIndex": 1,
+          "explanation": "Teaching exposes your knowledge gaps, showing you exactly where you need to study more."
+        },
+        {
+          "question": "What should you do if you stumble while explaining a concept?",
+          "type": "mcq",
+          "options": [
+            "Stop teaching immediately",
+            "Use it as a roadmap for further study",
+            "Blame the listener",
+            "Ignore it and move on"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stumbling is a signal that you haven't fully mastered that specific part of the concept."
+        },
+        {
+          "question": "True or False: You must be an expert before you can start teaching a topic.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Teaching is a tool for learning; you can teach what you are currently in the process of mastering."
+        }
+      ]
+    },
+    {
+      "id": "smc-25-proactive-living",
+      "dayNumber": 25,
+      "moduleId": "smc-module-4",
+      "title": "Proactive Living",
+      "subtitle": "Stop reacting and start leading your life.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Choice is Yours",
+          "body": "Between stimulus and response, there is a space. In that space lies your freedom to choose your destiny.",
+          "stat": "90%",
+          "statLabel": "of outcomes are dictated by your reaction"
+        },
+        {
+          "type": "content",
+          "headline": "The Circle of Influence",
+          "body": "Focusing on what you can control expands your power; focusing on what you cannot drains your energy.",
+          "bullets": [
+            "Identify your Circle of Concern vs. Influence",
+            "Use 'I can' language instead of 'I have to'",
+            "Anticipate obstacles before they become crises"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ownership Mindset",
+          "body": "Taking ownership means accepting responsibility for your life's direction, regardless of external circumstances.",
+          "bullets": [
+            "Shift from blame to solutions",
+            "Actively create opportunities daily",
+            "Respond with intent, not impulse"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Anticipating Success",
+          "body": "Proactive people don't wait for luck; they build systems that invite it into their lives.",
+          "bullets": [
+            "Plan your day before it begins",
+            "Identify potential friction points",
+            "Prepare resources for future challenges"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Ownership Audit",
+          "body": "Identify one frustration in your current life. Write down one specific action you can take today to change your influence over that situation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary difference between reactive and proactive mindsets?",
+          "type": "mcq",
+          "options": [
+            "Proactive people focus on what they can control",
+            "Reactive people plan for the future",
+            "Proactive people ignore problems",
+            "There is no actual difference"
+          ],
+          "correctIndex": 0,
+          "explanation": "Proactive people focus their energy on their Circle of Influence rather than wasting it on things outside their control."
+        },
+        {
+          "question": "Which language shift signals a move toward proactive living?",
+          "type": "mcq",
+          "options": [
+            "'They made me do it'",
+            "'I have to do this'",
+            "'I choose to do this'",
+            "'There is nothing I can do'"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using ownership language like 'I choose' acknowledges your personal agency in any situation."
+        },
+        {
+          "question": "True or False: Focusing on your Circle of Concern expands your ability to influence outcomes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focusing on the Circle of Concern actually shrinks your personal effectiveness; you must focus on the Circle of Influence."
+        }
+      ]
+    },
+    {
+      "id": "smc-26-success-environment",
+      "dayNumber": 26,
+      "moduleId": "smc-module-4",
+      "title": "Success Environment",
+      "subtitle": "Design your space to design your outcome.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Environment is Your Architect",
+          "body": "You are the average of your surroundings. If your environment is cluttered, your mind will follow.",
+          "stat": "40%",
+          "statLabel": "of daily actions are habits triggered by environment"
+        },
+        {
+          "type": "content",
+          "headline": "Friction Management",
+          "body": "Make the habits you want easy to start and the habits you want to avoid difficult to reach.",
+          "bullets": [
+            "Reduce friction for positive triggers",
+            "Increase friction for negative distractions",
+            "Use visual cues to initiate routines"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Digital Minimalism",
+          "body": "Your digital space requires as much curation as your physical home to maintain cognitive clarity.",
+          "bullets": [
+            "Clear your desktop of excessive icons",
+            "Turn off non-essential notifications",
+            "Create a dedicated workspace for focus"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Cues",
+          "body": "Visual prompts serve as silent reminders of your goals, keeping your subconscious aligned with your legacy.",
+          "bullets": [
+            "Place triggers where you spend time",
+            "Keep essential tools in sight",
+            "Remove clutter that causes decision fatigue"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10-Minute Reset",
+          "body": "Spend 10 minutes removing one piece of 'friction' from your workspace and adding one 'visual cue' that reminds you of your primary goal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "To build a new habit, what should you do with friction?",
+          "type": "mcq",
+          "options": [
+            "Increase it",
+            "Decrease it",
+            "Ignore it",
+            "Add more steps"
+          ],
+          "correctIndex": 1,
+          "explanation": "To make a habit easier to adopt, you must reduce the friction or effort required to start."
+        },
+        {
+          "question": "What is the best way to handle digital distractions?",
+          "type": "mcq",
+          "options": [
+            "Power off your device forever",
+            "Curate your environment to reduce notifications",
+            "Check your phone every hour",
+            "Increase your willpower"
+          ],
+          "correctIndex": 1,
+          "explanation": "Digital minimalism involves curating your digital space to prevent decision fatigue and constant interruptions."
+        },
+        {
+          "question": "True or False: Visual cues are ineffective for building long-term habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Visual cues are highly effective at triggering habits by removing the need for conscious decision-making."
+        }
+      ]
+    },
+    {
+      "id": "smc-27-compound-life",
+      "dayNumber": 27,
+      "moduleId": "smc-module-4",
+      "title": "The Compound Life",
+      "subtitle": "Small gains multiplied over time create massive impact.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Hidden Multiplier",
+          "body": "The most powerful force in the universe isn't just money; it's the compounding of small, consistent actions.",
+          "stat": "1%",
+          "statLabel": "daily improvement leads to 37x growth in a year"
+        },
+        {
+          "type": "content",
+          "headline": "Beyond Finance",
+          "body": "Compounding applies to every area of your existence, from the health of your body to the depth of your relationships.",
+          "bullets": [
+            "Skills build on previous knowledge",
+            "Relationships deepen through consistency",
+            "Health is a result of daily micro-habits"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 10-Year Mindset",
+          "body": "Legacy is not built in a day. It is the result of long-term patience and the ability to delay gratification.",
+          "bullets": [
+            "Prioritize long-term value over short-term gain",
+            "Build systems that outlast your current focus",
+            "Embrace the 'slow' path to excellence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Patience as Strategy",
+          "body": "Most people overestimate what they can do in a month and underestimate what they can do in a decade.",
+          "bullets": [
+            "Trust the process during plateaus",
+            "Focus on consistency over intensity",
+            "View every day as a building block"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Legacy Projection",
+          "body": "Write down one habit you can start today that, if performed consistently for 10 years, would significantly transform your life."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle of 'The Compound Life'?",
+          "type": "mcq",
+          "options": [
+            "Quick wins are the only thing that matter",
+            "Consistency over time leads to exponential results",
+            "Luck is the primary driver of success",
+            "You must work harder every single day"
+          ],
+          "correctIndex": 1,
+          "explanation": "Compounding is about the exponential impact of small, consistent actions over a long period."
+        },
+        {
+          "question": "Why is the 10-year mindset critical for legacy?",
+          "type": "mcq",
+          "options": [
+            "It justifies laziness",
+            "It helps you ignore current problems",
+            "It allows for long-term planning and delayed gratification",
+            "It makes goals impossible to reach"
+          ],
+          "correctIndex": 2,
+          "explanation": "A long-term mindset encourages patience and the discipline to prioritize future rewards over immediate gratification."
+        },
+        {
+          "question": "True or False: Compounding only applies to financial investments.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Compounding applies to everything: health, knowledge, relationships, and skill development."
+        }
+      ]
+    },
+    {
+      "id": "smc-28-course-finale",
+      "dayNumber": 28,
+      "moduleId": "smc-module-4",
+      "title": "Course Finale",
+      "subtitle": "Your journey begins now.",
+      "duration": "5 min",
+      "xpValue": 50,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Are Not Finished",
+          "body": "This is not the end of your growth; it is the foundation upon which your entire legacy will be built.",
+          "stat": "100%",
+          "statLabel": "of your future is created by your daily commitment"
+        },
+        {
+          "type": "content",
+          "headline": "Recap of the Journey",
+          "body": "You have traveled through mindset shifts, habit architecture, resilience, and legacy building.",
+          "bullets": [
+            "Mastered your inner narrative",
+            "Optimized your daily environment",
+            "Aligned your actions with your legacy"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Success Identity",
+          "body": "You are no longer the person who started this course. You are now someone who acts with purpose and intention.",
+          "bullets": [
+            "Commitment to continuous learning",
+            "Taking radical ownership of results",
+            "Building systems that serve your goals"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Comes Next",
+          "body": "The real test begins when the course ends. Stay consistent, stay curious, and keep building.",
+          "bullets": [
+            "Review your notes regularly",
+            "Audit your progress every 30 days",
+            "Share your success with others"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Final Pledge",
+          "body": "Write your Success Identity Pledge: 'I am a person who [Action] and I am committed to [Legacy Goal] starting today.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the true purpose of this course finale?",
+          "type": "mcq",
+          "options": [
+            "To end your learning journey",
+            "To celebrate your progress and commit to future growth",
+            "To give you a certificate to hang on the wall",
+            "To stop you from needing to work hard"
+          ],
+          "correctIndex": 1,
+          "explanation": "The finale is about celebrating the foundation you have built and committing to the long-term journey ahead."
+        },
+        {
+          "question": "How should you treat your notes and progress after the course?",
+          "type": "mcq",
+          "options": [
+            "Archive them and forget about them",
+            "Review them regularly to reinforce your identity",
+            "Delete them to save space",
+            "Only look at them if you fail"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regular review helps reinforce the identity shifts and systems you have created during the program."
+        },
+        {
+          "question": "True or False: The success identity you've built is fixed and cannot change further.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Growth is a lifelong process; your identity should continue to evolve as you achieve new levels of success."
+        }
+      ]
+    }
+  ]
+}

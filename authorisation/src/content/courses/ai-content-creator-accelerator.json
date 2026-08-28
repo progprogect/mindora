@@ -1,0 +1,1868 @@
+{
+  "id": "ai-content-creator-accelerator",
+  "title": "AI Content Creator Accelerator",
+  "subtitle": "Use AI to write, design, and publish content 10× faster. Build a monetised faceless AI brand in 90 days.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "The Faceless AI Foundation",
+      "subtitle": "Discover your profitable niche, set up your AI tool stack, and build your content engine.",
+      "days": "Lessons 1–7",
+      "skill": "Choose a profitable niche, create a recognisable faceless brand, and set up your complete AI content toolkit",
+      "lessonIds": [
+        "acc-1-ai-advantage",
+        "acc-2-profitable-niche",
+        "acc-3-faceless-persona",
+        "acc-4-ai-tool-stack",
+        "acc-5-prompting-basics",
+        "acc-6-content-strategy",
+        "acc-7-platform-selection"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "The 10x Content Machine",
+      "subtitle": "Generate viral text, stunning images, and engaging videos in minutes using AI.",
+      "days": "Lessons 8–14",
+      "skill": "Create scroll-stopping posts, faceless videos with AI voiceovers, and a full week of content in one sitting",
+      "lessonIds": [
+        "acc-8-viral-copywriting",
+        "acc-9-ai-image-generation",
+        "acc-10-ai-voiceovers",
+        "acc-11-video-editing",
+        "acc-12-thumbnails",
+        "acc-13-short-form-formats",
+        "acc-14-content-repurposing"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Monetise & Scale",
+      "subtitle": "Turn your audience into a predictable income stream and grow your brand on autopilot.",
+      "days": "Lessons 15–21",
+      "skill": "Monetise your content through affiliates, digital products, and sponsorships — then automate and scale",
+      "lessonIds": [
+        "acc-15-algorithm-mastery",
+        "acc-16-community-building",
+        "acc-17-email-list",
+        "acc-18-monetisation-models",
+        "acc-19-affiliate-marketing",
+        "acc-20-digital-products",
+        "acc-21-scaling-automation"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "acc-1-ai-advantage",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "The AI Content Advantage",
+      "subtitle": "Understand how AI tools can multiply your output by 10x and save you hours.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Welcome to the Future of Creation",
+          "body": "Creating content used to mean staring at a blank page for hours, struggling to find the right words. Today, AI is leveling the playing field, allowing absolutely anyone to produce high-quality content in minutes.",
+          "stat": "82%",
+          "statLabel": "of marketers say AI content generation saves them significant time"
+        },
+        {
+          "type": "content",
+          "headline": "What AI Can Do For You",
+          "body": "Think of AI as your incredibly fast, never-tired assistant. It doesn't replace your unique ideas; it simply amplifies them and does the heavy lifting for you.",
+          "bullets": [
+            "Brainstorming: Generate dozens of fresh video ideas in seconds",
+            "Scripting: Write engaging, well-structured scripts tailored to your audience",
+            "Editing: Automatically remove pauses, fix audio, and add eye-catching captions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quality Meets Quantity",
+          "body": "The secret to growing online is posting consistently. AI helps you maintain a high volume of posts without burning out or sacrificing the quality of your work.",
+          "bullets": [
+            "Create a full week's worth of content in just one afternoon",
+            "Repurpose one single video into five different text posts for other platforms",
+            "Keep your brand's voice consistent while drastically speeding up the process"
+          ],
+          "stat": "10x",
+          "statLabel": "increase in content output for creators using AI tools"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First AI Prompt",
+          "body": "Let's see the magic in action right now using a free tool like ChatGPT or Claude.",
+          "bullets": [
+            "🔗 Open a free AI chatbot on your phone or computer",
+            "⌨️ Type this prompt: \"Give me 3 beginner-friendly video ideas about [your favourite hobby]\"",
+            "🎉 Read the results and pick the one that sounds the most fun to you!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary role of AI in content creation?",
+          "type": "mcq",
+          "options": [
+            "To completely replace the human creator",
+            "To act as a fast assistant that amplifies your ideas",
+            "To make videos longer and more complicated",
+            "To steal content from other creators"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI is designed to be your assistant. It helps you brainstorm, write, and edit much faster so you can focus on the fun, creative direction of your brand."
+        },
+        {
+          "question": "Using AI means you have to sacrifice the quality of your content to post more often.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! AI actually helps you maintain high quality while increasing your output. You don't have to choose between quality and quantity anymore."
+        },
+        {
+          "question": "How can AI help prevent creator burnout?",
+          "type": "mcq",
+          "options": [
+            "By doing all the physical filming for you",
+            "By automatically paying your monthly bills",
+            "By allowing you to batch-create a week's worth of content quickly",
+            "By deleting negative comments on your videos"
+          ],
+          "correctIndex": 2,
+          "explanation": "By drastically speeding up brainstorming and scripting, AI allows you to batch-create content in one sitting, saving you hours and keeping your energy high."
+        }
+      ]
+    },
+    {
+      "id": "acc-2-profitable-niche",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Pick Your Profitable Niche",
+      "subtitle": "Identify a high-demand low-competition topic that attracts a loyal audience.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Focus",
+          "body": "Trying to appeal to everyone means you end up appealing to no one. Choosing a specific topic (known as a niche) is the absolute fastest way to build a loyal, engaged audience.",
+          "stat": "4x",
+          "statLabel": "higher engagement rates for creators who stick to a specific niche"
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Niche Profitable?",
+          "body": "A great niche isn't just something you like; it sits right at the intersection of what people are searching for and what you enjoy talking about.",
+          "bullets": [
+            "High Demand: People are actively asking questions or seeking entertainment about it",
+            "Targeted Audience: It attracts a specific group of people with a shared interest or problem",
+            "Monetisation Potential: There are products, tools, or services you can eventually recommend"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Riches in the Niches\" Strategy",
+          "body": "Don't just pick a massive category like \"fitness\" — that's too broad. Go one step deeper to stand out from the crowd and become the go-to expert.",
+          "bullets": [
+            "Instead of \"cooking\", try \"15-minute healthy meals for busy parents\"",
+            "Instead of \"finance\", try \"budgeting tips for college students\"",
+            "A narrower focus makes it incredibly easy for the algorithm to find your perfect viewers"
+          ],
+          "stat": "70%",
+          "statLabel": "of consumers prefer content tailored to their specific interests"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 3-Step Niche Finder",
+          "body": "Let's narrow down your focus today so you know exactly who you are creating for.",
+          "bullets": [
+            "📝 Write down 3 broad topics you enjoy (e.g., travel, tech, pets)",
+            "🎯 Add a specific audience or angle to each one (e.g., budget travel for couples)",
+            "✅ Pick the one that excites you the most — that is your starting niche!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it important to choose a specific niche?",
+          "type": "mcq",
+          "options": [
+            "To appeal to every single person on the internet",
+            "To build a loyal audience by focusing on a specific topic",
+            "So you can use highly complicated jargon",
+            "To confuse the social media algorithms"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focusing on a specific niche helps you attract a dedicated audience who knows exactly what to expect from your content, making them more likely to subscribe."
+        },
+        {
+          "question": "\"Fitness\" is an example of a perfectly narrowed-down, profitable niche.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. \"Fitness\" is way too broad and highly competitive. A better, narrower niche would be \"home workouts for busy mums\" or \"yoga for seniors\"."
+        },
+        {
+          "question": "What is the \"sweet spot\" for a great niche?",
+          "type": "mcq",
+          "options": [
+            "A topic no one has ever heard of",
+            "The intersection of high demand and something you enjoy",
+            "A topic you absolutely hate but makes money",
+            "Something that requires thousands of pounds in equipment"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best and most sustainable niche combines a topic people are actively searching for with something you actually enjoy creating content about."
+        }
+      ]
+    },
+    {
+      "id": "acc-3-faceless-persona",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "Craft Your Faceless Persona",
+      "subtitle": "Design an engaging recognisable brand identity without ever showing your face.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "No Camera? No Problem!",
+          "body": "You don't need to show your face to build a massive, profitable online brand. Faceless channels are thriving by focusing purely on value, great visuals, and a strong voice.",
+          "stat": "33%",
+          "statLabel": "of top-performing YouTube channels don't feature a human face"
+        },
+        {
+          "type": "content",
+          "headline": "What is a Faceless Persona?",
+          "body": "Since viewers won't see your face, your \"persona\" is the consistent style and vibe that makes your content instantly recognisable in a crowded feed.",
+          "bullets": [
+            "Visual Theme: Using consistent brand colours, fonts, and imagery in every video",
+            "Voice and Tone: Deciding if your brand is funny, educational, mysterious, or motivational",
+            "Audio Signature: Using a specific background music style or a recognisable AI voiceover"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tools of the Faceless Trade",
+          "body": "Creating highly engaging videos without a camera is easier than ever thanks to modern AI and editing software.",
+          "bullets": [
+            "Stock Footage: High-quality, royalty-free clips that perfectly match your script",
+            "AI Voiceovers: Realistic, human-sounding voices that read your text with emotion",
+            "Dynamic Captions: Bold, moving text on screen that keeps viewers hooked"
+          ],
+          "stat": "80%",
+          "statLabel": "of viewers are more likely to watch an entire video if it has engaging captions"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Brand Vibe",
+          "body": "Let's establish the basic look and feel of your new faceless channel right now.",
+          "bullets": [
+            "🎨 Pick 2 main colours that represent your niche (e.g., green and gold for finance)",
+            "🗣️ Choose a vibe for your voiceover (e.g., calm and educational, or fast and energetic)",
+            "📝 Write down your choices so you can use them consistently in your first video!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important element of a faceless persona?",
+          "type": "mcq",
+          "options": [
+            "Having a very expensive microphone",
+            "Showing your face at least once a month",
+            "A consistent style, voice, and vibe that viewers recognise",
+            "Using only black and white colours in your videos"
+          ],
+          "correctIndex": 2,
+          "explanation": "Without a face on screen, your consistent visual style, tone, and audio become your brand's recognisable identity. Consistency is key!"
+        },
+        {
+          "question": "You cannot build a strong connection with an audience if you don't show your face.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Audiences connect with the value you provide, your storytelling, and your brand's unique personality — none of which require a camera."
+        },
+        {
+          "question": "Which of these is a common tool used in faceless content creation?",
+          "type": "mcq",
+          "options": [
+            "Ring lights and expensive makeup",
+            "High-quality stock footage and AI voiceovers",
+            "A dedicated physical filming studio",
+            "Multiple camera angles and lenses"
+          ],
+          "correctIndex": 1,
+          "explanation": "Faceless creators rely heavily on digital tools like stock footage, AI voiceovers, and dynamic text to keep viewers engaged without ever needing a camera."
+        }
+      ]
+    },
+    {
+      "id": "acc-4-ai-tool-stack",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "Your Ultimate AI Tool Stack",
+      "subtitle": "Set up the essential free and paid AI tools you need to dominate your niche.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Work Smarter, Not Harder",
+          "body": "Building a faceless brand used to require a whole team of writers, editors, and voice actors. Today, a few clever AI tools are all you need to create professional content from your bedroom. Creators who use a dedicated AI tool stack can produce high-quality videos in a fraction of the time.",
+          "stat": "10x",
+          "statLabel": "more content produced by AI-assisted creators"
+        },
+        {
+          "type": "content",
+          "headline": "The Brains and the Voice",
+          "body": "Every great video starts with a solid script and a captivating voice. Here are the industry favourites you will be using:",
+          "bullets": [
+            "ChatGPT or Claude: Your head writers. Use them to brainstorm ideas, write engaging scripts, and organise your thoughts",
+            "ElevenLabs: The gold standard for AI voiceovers. It sounds incredibly human, allowing you to pick from dozens of realistic presets so you never have to use your own voice"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Visuals and Editing",
+          "body": "Once you have your audio, it is time to bring it to life with stunning visuals and slick editing.",
+          "bullets": [
+            "Midjourney or DALL-E: Perfect for generating unique, high-quality images and backgrounds that fit your brand's aesthetic",
+            "Canva: Your graphic design best friend. Great for adding text, creating logos, and designing eye-catching thumbnails",
+            "CapCut: The ultimate video editor. It is incredibly user-friendly and packed with trendy effects and auto-captions"
+          ],
+          "stat": "80%",
+          "statLabel": "of top short-form creators use mobile-friendly editors like CapCut"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Creator Toolkit",
+          "body": "Let's get your digital workspace organised so you are ready to create.",
+          "bullets": [
+            "📁 Create a new folder in your web browser's bookmarks bar called \"AI Tool Stack\"",
+            "👤 Sign up for free accounts on ChatGPT, Canva, and CapCut",
+            "🔖 Bookmark these three tools in your new folder so they are always just one click away"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which AI tool is considered the gold standard for creating realistic voiceovers?",
+          "type": "mcq",
+          "options": [
+            "ChatGPT",
+            "ElevenLabs",
+            "Canva",
+            "Midjourney"
+          ],
+          "correctIndex": 1,
+          "explanation": "ElevenLabs specialises in AI audio, allowing you to generate incredibly lifelike voiceovers that do not sound robotic."
+        },
+        {
+          "question": "You must buy expensive professional software to start a faceless brand.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Tools like CapCut, Canva, and ChatGPT offer fantastic free versions that are more than enough to get you started."
+        },
+        {
+          "question": "What is the primary use of CapCut in your AI tool stack?",
+          "type": "mcq",
+          "options": [
+            "Writing scripts",
+            "Generating images",
+            "Video editing",
+            "Creating logos"
+          ],
+          "correctIndex": 2,
+          "explanation": "CapCut is a powerful, user-friendly video editor perfect for combining your AI-generated audio and visuals into a final, polished video."
+        }
+      ]
+    },
+    {
+      "id": "acc-5-prompting-basics",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Mastering the Perfect Prompt",
+      "subtitle": "Learn the exact formula to get high-quality ready-to-publish outputs from AI.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Getting Robotic Results",
+          "body": "If you have ever felt like AI writing sounds a bit stiff or generic, you are not alone. The secret to unlocking brilliant, engaging content isn't the AI itself — it is how you speak to it.",
+          "stat": "70%",
+          "statLabel": "of users complain about generic AI outputs due to vague prompts"
+        },
+        {
+          "type": "content",
+          "headline": "The Magic Prompt Formula",
+          "body": "To get exactly what you want, you need to give the AI a clear set of instructions. Use the \"Role + Context + Task\" framework:",
+          "bullets": [
+            "Role: Tell the AI who it is. (e.g., \"Act as a world-class productivity coach\")",
+            "Context: Give it background information. (e.g., \"My audience consists of busy university students\")",
+            "Task: State exactly what you need. (e.g., \"Write a 60-second video script about time blocking\")"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Adding the Finishing Touches",
+          "body": "To make the output ready to publish, add \"Format\" and \"Constraints\" to your prompt. This saves you hours of editing later.",
+          "bullets": [
+            "Format: How should it look? (e.g., \"Output this as a bulleted list\" or \"Format with clear headings\")",
+            "Constraints: What should it avoid? (e.g., \"Do not use emojis\", \"Keep it under 200 words\", or \"Avoid the word delve\")"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your First Master Prompt",
+          "body": "Open ChatGPT or Claude and try putting the whole formula together.",
+          "bullets": [
+            "🎭 Type: \"Act as an expert in [your niche]\"",
+            "👥 Add: \"My audience is [target audience]\"",
+            "📝 Add: \"Write a 3-tip script about [topic]. Format it with clear headings. Do not use any hashtags or emojis.\"",
+            "🚀 Hit send and watch the magic happen!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In the prompt formula, what is the purpose of the \"Role\"?",
+          "type": "mcq",
+          "options": [
+            "To tell the AI how many words to write",
+            "To tell the AI who to act as",
+            "To format the output as a table",
+            "To give the AI a name"
+          ],
+          "correctIndex": 1,
+          "explanation": "Assigning a role (like \"Act as a fitness coach\") changes the AI's tone and expertise, giving you much more authoritative and tailored content."
+        },
+        {
+          "question": "A shorter prompt will always give you better and faster results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! While you shouldn't waffle, providing detailed context and specific constraints leads to much higher-quality, ready-to-use outputs."
+        },
+        {
+          "question": "Which of the following is an example of a \"Constraint\" in a prompt?",
+          "type": "mcq",
+          "options": [
+            "Act as a chef",
+            "Write a script",
+            "Do not use emojis",
+            "My audience is beginners"
+          ],
+          "correctIndex": 2,
+          "explanation": "Constraints tell the AI exactly what to avoid, which saves you time editing out annoying quirks or unwanted formatting later."
+        }
+      ]
+    },
+    {
+      "id": "acc-6-content-strategy",
+      "dayNumber": 6,
+      "moduleId": "module-1",
+      "title": "The 90-Day Content Roadmap",
+      "subtitle": "Plan a winning content calendar that guarantees consistency and growth.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Consistency is Your Superpower",
+          "body": "The biggest mistake new creators make is posting randomly and burning out after two weeks. A simple 90-day plan takes the stress out of creating and signals to the algorithm that you are a reliable creator.",
+          "stat": "3.5x",
+          "statLabel": "more likely to monetise when posting consistently for 90+ days"
+        },
+        {
+          "type": "content",
+          "headline": "Define Your Content Pillars",
+          "body": "Instead of scrambling for ideas every day, organise your content into \"pillars\". These are 3 to 4 core themes you will regularly talk about.",
+          "bullets": [
+            "Example for a wealth niche: Pillar 1 could be \"Saving Tips\", Pillar 2 \"Side Hustles\", and Pillar 3 \"Mindset\"",
+            "Rotating through these pillars keeps your content fresh and ensures your audience always knows what to expect"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Magic of Batching",
+          "body": "Never create a video from scratch on the day you need to post it. Batching is how the pros stay sane and save hours of time.",
+          "bullets": [
+            "Scripting day: Write 5 to 7 scripts in one sitting using your AI prompt formula",
+            "Audio and Visual day: Generate all your ElevenLabs voiceovers and Midjourney images at once",
+            "Editing day: Pull it all together in CapCut and schedule your posts for the week"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Weekly Schedule",
+          "body": "Let's set a realistic goal you can actually stick to.",
+          "bullets": [
+            "📋 Write down 3 content pillars for your specific niche",
+            "📅 Decide on your posting frequency (e.g., Monday, Wednesday, and Friday)",
+            "⏰ Block out two hours in your calendar this weekend specifically for \"batching\" your first week of content"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"content pillar\"?",
+          "type": "mcq",
+          "options": [
+            "A piece of software used for scheduling",
+            "A core theme or topic you regularly post about",
+            "A viral video that gets lots of views",
+            "The visual style of your videos"
+          ],
+          "correctIndex": 1,
+          "explanation": "Content pillars help organise your ideas so you never run out of things to say, ensuring your channel remains focused and relevant."
+        },
+        {
+          "question": "Batching means creating one video completely from start to finish before starting the next one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Batching means doing one specific task (like writing scripts) for multiple videos at once, which is much faster and keeps you in the creative flow."
+        },
+        {
+          "question": "Why is a 90-day content roadmap so important?",
+          "type": "mcq",
+          "options": [
+            "It guarantees consistency and prevents creator burnout",
+            "It forces the AI to write better scripts",
+            "It automatically edits your videos",
+            "It makes your videos rank higher on Google"
+          ],
+          "correctIndex": 0,
+          "explanation": "Having a plan means you aren't waking up every day wondering what to post. It keeps you organised and shows the algorithm you are a serious creator."
+        }
+      ]
+    },
+    {
+      "id": "acc-7-platform-selection",
+      "dayNumber": 7,
+      "moduleId": "module-1",
+      "title": "Choose Your Growth Platform",
+      "subtitle": "Select the best social media channel to launch and scale your faceless brand.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Trap of Trying to Be Everywhere",
+          "body": "When you're excited to launch your faceless brand, it's tempting to post on every platform. But spreading yourself too thin is the fastest route to burnout. To win, you need to master one platform first.",
+          "stat": "70%",
+          "statLabel": "of new creators burn out in month one by trying too many platforms"
+        },
+        {
+          "type": "content",
+          "headline": "The Big Four Platforms",
+          "body": "Each platform has its own unique vibe and audience. Here is a quick breakdown to help you decide where your faceless brand belongs:",
+          "bullets": [
+            "TikTok: Perfect for highly engaging, fast-paced short videos. Great for rapid growth",
+            "Instagram Reels: Ideal for aesthetic content, educational carousels, and building a loyal community",
+            "YouTube Shorts: Excellent for long-term discoverability and monetisation",
+            "Twitter/X: The best choice if you prefer writing text-based threads and engaging in conversations"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Rule of One\"",
+          "body": "The most successful creators start by dominating a single channel before expanding. This allows you to learn the algorithm, understand your audience, and build a consistent habit without feeling overwhelmed.",
+          "bullets": [
+            "Pick ONE platform that matches your favourite content style (video vs. text)",
+            "Commit to posting consistently on this platform for at least 30 days",
+            "Only repurpose content to other platforms once your main channel is growing smoothly"
+          ],
+          "stat": "1",
+          "statLabel": "focus platform to start — expand later once it's working"
+        },
+        {
+          "type": "try-it",
+          "headline": "Make Your Choice",
+          "body": "It's time to plant your flag. Choose the one platform where you will launch your faceless brand.",
+          "bullets": [
+            "📋 Review the Big Four and pick the one that excites you the most",
+            "📝 Write down your chosen platform on a sticky note or in your notes app",
+            "👤 Create a fresh account on that platform for your new brand (if you haven't already)"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it recommended to start with only one social media platform?",
+          "type": "mcq",
+          "options": [
+            "Because AI tools only work on one platform at a time",
+            "To prevent burnout and master one algorithm first",
+            "Because it's illegal to post the same content everywhere",
+            "Because you can only have one social media account per email"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with one platform helps you focus your energy, learn what works, and build a consistent habit without getting overwhelmed. You can always expand later!"
+        },
+        {
+          "question": "TikTok is generally best for long-form, text-based conversations.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! TikTok is best for fast-paced, short-form video content. If you prefer text-based conversations, Twitter/X is a much better choice."
+        },
+        {
+          "question": "Which platform is highly recommended for long-term discoverability and monetisation?",
+          "type": "mcq",
+          "options": [
+            "Snapchat",
+            "YouTube Shorts",
+            "Pinterest",
+            "WhatsApp"
+          ],
+          "correctIndex": 1,
+          "explanation": "YouTube Shorts benefits from YouTube's powerful search engine, meaning your videos can be discovered months or even years after you post them, leading to great long-term monetisation."
+        }
+      ]
+    },
+    {
+      "id": "acc-8-viral-copywriting",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "Write Viral Hooks & Copy",
+      "subtitle": "Use AI to write captivating text and headlines that stop the scroll instantly.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Battle for Attention",
+          "body": "In the modern social media landscape, you don't have minutes to win someone over. You barely have seconds. If your first sentence doesn't grab them, they will keep scrolling.",
+          "stat": "3 secs",
+          "statLabel": "to capture a viewer's attention before they scroll past"
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Viral Hook",
+          "body": "A \"hook\" is the very first thing your audience reads or hears. A strong hook creates a \"curiosity gap\" — a burning desire to know what happens next.",
+          "bullets": [
+            "Make a bold statement: \"Everything you know about productivity is wrong\"",
+            "Ask a targeted question: \"Are you making this critical mistake with your finances?\"",
+            "Tease a desirable result: \"How I gained 10k followers in 30 days without showing my face\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The PAS Copywriting Framework",
+          "body": "Once you have hooked them, you need to keep them reading. The PAS framework is a classic copywriting formula that works perfectly for social media captions and scripts.",
+          "bullets": [
+            "Problem: Call out the specific pain point your audience is facing",
+            "Agitate: Emphasise why this problem is frustrating or costing them time/money",
+            "Solve: Present your content or product as the ultimate solution"
+          ],
+          "stat": "10x",
+          "statLabel": "more engagement with structured copy vs. random captions"
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your First Hooks with AI",
+          "body": "Let's use AI to do the heavy lifting. Open ChatGPT or Claude and try this exact prompt:",
+          "bullets": [
+            "⌨️ Type: \"Act as an expert copywriter. Write 5 viral hooks for a short video about [your niche topic]. Use curiosity gaps and keep them under 15 words each.\"",
+            "👀 Review the results and pick your favourite one",
+            "✏️ Tweak the wording slightly so it sounds natural to your brand"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"curiosity gap\" in copywriting?",
+          "type": "mcq",
+          "options": [
+            "A literal space between paragraphs in your caption",
+            "A psychological desire to find out missing information",
+            "A type of AI tool used for writing",
+            "A mistake in your spelling that makes people comment"
+          ],
+          "correctIndex": 1,
+          "explanation": "A curiosity gap teases just enough information to make the reader deeply curious, compelling them to keep reading or watching to find the answer."
+        },
+        {
+          "question": "What does the PAS framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Post, Analyse, Share",
+            "Pain, Action, Success",
+            "Problem, Agitate, Solve",
+            "Prioritise, Automate, Scale"
+          ],
+          "correctIndex": 2,
+          "explanation": "PAS stands for Problem, Agitate, Solve. You introduce a Problem, Agitate it to show why it matters, and then provide the Solution."
+        },
+        {
+          "question": "You have about 30 seconds to capture a viewer's attention on social media.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! You typically only have about 3 seconds to grab someone's attention before they scroll past your content."
+        }
+      ]
+    },
+    {
+      "id": "acc-9-ai-image-generation",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "Generate Stunning AI Visuals",
+      "subtitle": "Create eye-catching images, thumbnails, and graphics with zero design skills.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Picture is Worth a Thousand Clicks",
+          "body": "You don't need a degree in graphic design or expensive software to create breathtaking visuals anymore. AI can generate professional-grade images in seconds, giving your faceless brand a premium look instantly.",
+          "stat": "90%",
+          "statLabel": "of information transmitted to the brain is visual"
+        },
+        {
+          "type": "content",
+          "headline": "Meet Your AI Art Team",
+          "body": "There are several incredible AI image generators available today. Here are the top three tools you should know about:",
+          "bullets": [
+            "Midjourney: Produces the most realistic and artistic images, but requires using Discord",
+            "DALL-E 3: Built into ChatGPT, making it incredibly easy to use with conversational prompts",
+            "Leonardo AI: A fantastic, user-friendly alternative with great free options and built-in editing tools"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Perfect Image Prompt Formula",
+          "body": "To get exactly what you want from an AI image generator, you need to be specific. Use this simple formula to structure your prompts:",
+          "bullets": [
+            "Subject: What is the main focus? (e.g., A glowing neon brain)",
+            "Environment: Where is it? (e.g., Floating in a dark cyberpunk city)",
+            "Style & Lighting: How should it look? (e.g., 3D render, cinematic lighting, vibrant colours)",
+            "Consistency: Use the same style keywords across all your prompts to keep your brand looking unified"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your First Brand Image",
+          "body": "Let's bring an idea to life using a free AI generator.",
+          "bullets": [
+            "🔗 Go to Bing Image Creator (which uses DALL-E 3 for free) or Leonardo AI",
+            "⌨️ Type a prompt using the formula: Subject + Environment + Style + Colours",
+            "💡 Example: \"A sleek modern laptop on a wooden desk, surrounded by glowing digital graphs, cinematic lighting, dark blue and gold colours\"",
+            "💾 Save your favourite result to use as a future background or thumbnail!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following is a key benefit of using a consistent prompt style?",
+          "type": "mcq",
+          "options": [
+            "It makes the AI generate images faster",
+            "It keeps your brand visuals unified and easily recognisable",
+            "It costs less money per image",
+            "It prevents the AI from making spelling errors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Using consistent style keywords (like \"cinematic lighting\" or specific colours) ensures all your images look like they belong to the same brand, making you easily recognisable."
+        },
+        {
+          "question": "You need expensive graphic design software to create high-quality AI images.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Tools like DALL-E 3 (via Bing), Leonardo AI, and Midjourney allow you to create stunning visuals just by typing text prompts, with no design software required."
+        },
+        {
+          "question": "What is a good formula for writing an AI image prompt?",
+          "type": "mcq",
+          "options": [
+            "Subject + Environment + Style & Lighting",
+            "Date + Time + Location",
+            "Font + Text + Background",
+            "Hashtags + Emojis + Links"
+          ],
+          "correctIndex": 0,
+          "explanation": "A strong prompt includes the Subject, the Environment, and the Style & Lighting. The more descriptive you are about these three elements, the better your image will be!"
+        }
+      ]
+    },
+    {
+      "id": "acc-10-ai-voiceovers",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Create AI Voiceovers That Convert",
+      "subtitle": "Master the art of natural-sounding AI narration for your faceless videos.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Secret to Faceless Success",
+          "body": "Your audience connects with your story, not just your face. AI voiceovers allow you to scale your content production while maintaining a professional, human-like touch that builds real trust.",
+          "stat": "80%",
+          "statLabel": "retention boost with clear, engaging audio narration"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing the Right Voice",
+          "body": "Not all AI voices are created equal. To build authority and trust, you need to select a voice that matches your niche and target audience.",
+          "bullets": [
+            "Match the voice age and gender to your target audience — a finance channel might suit a calm, mature male voice",
+            "Avoid hyper-robotic tones; always aim for conversational warmth and natural flow",
+            "Test different stability and clarity settings in ElevenLabs to find your perfect balance"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Perfecting the Delivery",
+          "body": "Even the best AI voice needs guidance to sound truly natural. You control the rhythm using punctuation and special formatting tricks.",
+          "bullets": [
+            "Add ellipses (...) for brief pauses to create suspense or let a point sink in",
+            "Use commas generously for natural breath breaks between phrases",
+            "Adjust the \"Style Exaggeration\" slider to match your script's emotional tone — higher for motivational, lower for educational"
+          ],
+          "stat": "3s",
+          "statLabel": "ideal pause length for emphasis on key points"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Voiceover Experiment",
+          "body": "Create your first professional narration today using the free tier of ElevenLabs.",
+          "bullets": [
+            "🚀 Open ElevenLabs.io and select a conversational voice from the Voice Library",
+            "✍️ Paste a 100-word script about your niche (use one you wrote in Lesson 8!)",
+            "🎙️ Add commas and ellipses to control the pacing, then generate and download your clip"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the best way to make an AI voice sound more human?",
+          "type": "mcq",
+          "options": [
+            "Increase the volume to maximum",
+            "Use punctuation like commas and ellipses to control pacing",
+            "Select the fastest speed setting available",
+            "Add a robotic voice filter for effect"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strategic use of punctuation creates natural pauses and breathing room, making the AI voice sound much more authentic and engaging."
+        },
+        {
+          "question": "You should always use the most exaggerated emotional tone available in ElevenLabs.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Over-exaggeration can sound unnatural and off-putting. It is better to use subtle settings that match the context of your specific script."
+        },
+        {
+          "question": "Why is voice selection important for your brand?",
+          "type": "mcq",
+          "options": [
+            "It determines the file format of your audio",
+            "It helps audience recognition and builds trust over time",
+            "It is required for SEO ranking",
+            "It changes the video resolution"
+          ],
+          "correctIndex": 1,
+          "explanation": "A consistent, appropriate voice builds a recognisable brand identity that your audience will come to trust and associate with quality content."
+        }
+      ]
+    },
+    {
+      "id": "acc-11-video-editing",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "Edit Like a Pro with CapCut",
+      "subtitle": "Transform raw clips into polished, engaging social media content for free.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Editing Made Simple",
+          "body": "You don't need a film degree or expensive software to create viral videos. CapCut is completely free and makes professional editing accessible for absolute beginners.",
+          "stat": "50%",
+          "statLabel": "retention increase with dynamic, well-paced edits"
+        },
+        {
+          "type": "content",
+          "headline": "The CapCut Workflow",
+          "body": "A clear, repeatable workflow is the key to fast, consistent editing. Focus on these core steps to keep your audience glued to the screen.",
+          "bullets": [
+            "Import your voiceover first — this anchors your entire video timeline and sets the pace",
+            "Use \"Auto Captions\" to generate subtitles instantly (85% of viewers watch without sound!)",
+            "Trim all dead air and silence to keep the pace snappy and fast-moving"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Adding Visual Polish",
+          "body": "Visual transitions and overlays keep the viewer engaged throughout the entire video journey, preventing the dreaded mid-video drop-off.",
+          "bullets": [
+            "Use subtle transitions like \"Dissolve\" or \"Fade\" to smoothly link clips together",
+            "Add B-roll footage or AI-generated images to cover jump cuts and add visual variety",
+            "Export in 1080p at 30fps for the best mobile experience — use 9:16 aspect ratio for Reels and TikTok"
+          ],
+          "stat": "9:16",
+          "statLabel": "optimal aspect ratio for Reels, TikTok, and Shorts"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Edit",
+          "body": "Put your skills to the test by editing your first complete short-form video.",
+          "bullets": [
+            "🎬 Import your AI voiceover from Lesson 10 and add matching B-roll or AI images",
+            "✨ Generate auto-captions and style them with a bold, readable font",
+            "✂️ Cut out all silence, add one transition, and export your 30-second video"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should be the first step in your CapCut editing workflow?",
+          "type": "mcq",
+          "options": [
+            "Adding background music",
+            "Importing the voiceover track",
+            "Applying colour filters",
+            "Writing the video description"
+          ],
+          "correctIndex": 1,
+          "explanation": "The voiceover provides the structure and timing for your entire video, making it the essential foundation to build everything else around."
+        },
+        {
+          "question": "CapCut allows you to generate captions automatically.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! CapCut has a powerful auto-caption feature that saves significant time and helps you reach the 85% of viewers who watch videos on mute."
+        },
+        {
+          "question": "Why should you trim \"dead air\" from your videos?",
+          "type": "mcq",
+          "options": [
+            "To make the file size smaller for upload",
+            "To keep the pace fast and maintain viewer attention",
+            "To change the aspect ratio automatically",
+            "To remove the CapCut watermark"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fast-paced content with no unnecessary pauses helps prevent viewers from getting bored and scrolling away to the next video."
+        }
+      ]
+    },
+    {
+      "id": "acc-12-thumbnails",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "Design Scroll-Stopping Thumbnails",
+      "subtitle": "Master the art of the click with high-converting visual hooks.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 3-Second Rule",
+          "body": "Your thumbnail is the very first thing people see. If it doesn't stop their scroll within 3 seconds, your high-quality video content will never be watched — no matter how good it is.",
+          "stat": "2x",
+          "statLabel": "higher click-through rate with custom-designed thumbnails"
+        },
+        {
+          "type": "content",
+          "headline": "Design Principles for Success",
+          "body": "Keep your thumbnail design clean and impactful. Remember: most people will see it at a tiny size on their phone screen.",
+          "bullets": [
+            "Use high-contrast colours that pop against the app's background (bright yellow, red, or white on dark)",
+            "Limit text to 4 words or fewer — any more and it becomes unreadable on mobile",
+            "Use expressive imagery, bold shapes, or AI-generated visuals to evoke instant curiosity"
+          ],
+          "stat": "70%",
+          "statLabel": "of all social media views come from mobile devices"
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Design with Canva",
+          "body": "Leverage AI tools inside Canva to speed up your creative process and produce professional results without any design experience.",
+          "bullets": [
+            "Use Magic Edit to remove distracting backgrounds and isolate your subject",
+            "Generate unique imagery with Canva's AI image generator to create eye-catching visual hooks",
+            "Create two versions of each thumbnail and use the \"A/B Test\" strategy — post one, and if engagement is low, swap it out"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Thumbnail",
+          "body": "Create a high-impact thumbnail for your latest video or an upcoming post.",
+          "bullets": [
+            "🎨 Open Canva and choose a 1280x720 YouTube thumbnail template (or 1080x1080 for Instagram)",
+            "💡 Add a bold, short hook (4 words max) that creates instant curiosity",
+            "🔍 Shrink the preview to 10% size — if you can still read it and understand the concept, you've nailed it!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the maximum number of words recommended for thumbnail text?",
+          "type": "mcq",
+          "options": [
+            "10 words",
+            "20 words",
+            "4 words",
+            "There is no limit"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fewer words are better because thumbnails are viewed at tiny sizes on mobile screens, where text must be instantly readable at a glance."
+        },
+        {
+          "question": "High-contrast colours help your thumbnail stand out in a social media feed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! High contrast ensures your thumbnail pops against the white or dark background of social media apps, making viewers more likely to notice and click."
+        },
+        {
+          "question": "What is the purpose of the \"3-second test\" for thumbnails?",
+          "type": "mcq",
+          "options": [
+            "To check the file size is under 3MB",
+            "To see if your thumbnail grabs attention and communicates your message instantly",
+            "To test the audio quality of your video",
+            "To count the number of pixels in the image"
+          ],
+          "correctIndex": 1,
+          "explanation": "If a viewer doesn't understand or feel interested in your content within 3 seconds of seeing the thumbnail, they will almost certainly keep scrolling past."
+        }
+      ]
+    },
+    {
+      "id": "acc-13-short-form-formats",
+      "dayNumber": 13,
+      "moduleId": "module-2",
+      "title": "Master Short-Form Video Formats",
+      "subtitle": "Choose the perfect structure to hook your audience every single time.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Guessing What to Post",
+          "body": "Many creators struggle because they lack a proven content structure. By mastering specific video formats, you remove the guesswork and build consistent authority in your niche.",
+          "stat": "85%",
+          "statLabel": "higher retention with structured video formats"
+        },
+        {
+          "type": "content",
+          "headline": "The Essential Formats for Faceless Creators",
+          "body": "You don't need a camera to go viral if you use the right structural frameworks. These formats are designed to keep viewers watching by delivering immediate value or intrigue.",
+          "bullets": [
+            "Listicles: Quick, numbered lists that provide actionable tips or tools — viewers stay watching until the final point",
+            "Tutorials: Step-by-step screen recordings that solve a specific problem, establishing you as a trusted expert",
+            "Storytelling: Using a narrative arc to share a case study or insight, creating deep emotional connection",
+            "\"Did You Know\": Fast-paced trivia or niche-specific facts that capitalise on curiosity and encourage rapid sharing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Selecting Your Winning Format",
+          "body": "Not every format works for every niche, so it is vital to align your style with your audience's preferences. Experimenting with these structures will help you identify what drives the most engagement for your brand.",
+          "bullets": [
+            "Educational niches perform best with tutorials and listicles since viewers are searching for specific solutions",
+            "Entertainment or lifestyle niches thrive on storytelling and controversial takes that spark debate in the comments",
+            "Tech and SaaS niches benefit from \"Did You Know\" facts that highlight capabilities without feeling like a sales pitch"
+          ],
+          "stat": "3x",
+          "statLabel": "more growth when you test multiple formats and double down on what works"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your First Video Skeleton",
+          "body": "Choose one of the formats above and draft a 30-second script for your niche.",
+          "bullets": [
+            "📝 Select a format (e.g., Listicles) and write a hook that addresses a specific pain point",
+            "🎯 List three main steps or facts that provide immediate value to the viewer",
+            "📣 End with a call to action that asks the audience to save the video for later reference"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which format is best for establishing immediate authority in a technical niche?",
+          "type": "mcq",
+          "options": [
+            "Storytelling",
+            "Tutorials",
+            "Controversial Takes",
+            "Trivia"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tutorials provide tangible value and proof of expertise, which builds trust quickly in technical niches."
+        },
+        {
+          "question": "You must show your face to be successful in short-form video.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Faceless content using stock footage, screen recordings, or AI-generated visuals is highly effective when the content structure is strong."
+        },
+        {
+          "question": "Why are listicles effective for viewer retention?",
+          "type": "mcq",
+          "options": [
+            "They are easy to film",
+            "They force the viewer to wait for the final point",
+            "They require no editing",
+            "They contain no information"
+          ],
+          "correctIndex": 1,
+          "explanation": "Listicles create a \"curiosity gap\" where viewers are incentivised to watch until the end to see the full list."
+        }
+      ]
+    },
+    {
+      "id": "acc-14-content-repurposing",
+      "dayNumber": 14,
+      "moduleId": "module-2",
+      "title": "Repurpose One Piece Into Ten",
+      "subtitle": "Maximise your impact by turning one idea into a content ecosystem.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Starting from Scratch Every Single Day",
+          "body": "Efficiency is the secret weapon of top creators. Instead of creating ten new ideas from nothing, learn to slice one core piece of content into ten unique assets across your channels.",
+          "stat": "10x",
+          "statLabel": "more output with the same amount of creative effort"
+        },
+        {
+          "type": "content",
+          "headline": "The Content Waterfall Method",
+          "body": "The waterfall method involves starting with a \"pillar\" piece of content — like a long-form video or detailed article — and letting it flow into smaller formats. This ensures your message reaches different audiences on different platforms.",
+          "bullets": [
+            "Long-form to short clips: Edit your main video into 3-5 vertical clips focusing on high-impact moments",
+            "Video to carousel: Transcribe your video script and break it down into a slide-by-slide educational carousel for LinkedIn or Instagram",
+            "Text to video: Use AI tools to turn a blog post or tweet thread into a voiceover script for a new video",
+            "Quote cards: Extract the most powerful sentence from your content and turn it into a branded graphic for stories"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Leveraging AI for Platform Adaptation",
+          "body": "Every platform has a unique \"language\" and audience expectation. Use AI to rewrite your core content so it feels native to the platform where it is being posted.",
+          "bullets": [
+            "Twitter/X: Condense your core concept into a punchy 5-part thread with a strong opening hook",
+            "LinkedIn: Expand your points into a professional narrative with clear formatting and a call to action",
+            "Newsletter: Use your video script as the foundation for a deep-dive email to your subscribers",
+            "Threads/Instagram: Turn your main caption into a conversational post designed to start a discussion"
+          ],
+          "stat": "70%",
+          "statLabel": "time saved using AI-powered repurposing workflows"
+        },
+        {
+          "type": "try-it",
+          "headline": "Repurpose a Draft Today",
+          "body": "Take one existing script or post you have already written and transform it into three new formats.",
+          "bullets": [
+            "🔄 Turn your main topic into a 5-slide educational carousel (use Canva templates)",
+            "✂️ Extract one key point and rewrite it as a punchy tweet or LinkedIn post",
+            "🎙️ Use ChatGPT to summarise your content into a short, engaging 30-second video script"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"pillar\" piece of content?",
+          "type": "mcq",
+          "options": [
+            "A short tweet",
+            "A long-form video or article that serves as source material",
+            "A single image post",
+            "A comment on someone else's post"
+          ],
+          "correctIndex": 1,
+          "explanation": "A pillar piece is a substantial, deep-dive content asset that serves as the source material for many smaller snippets and adaptations."
+        },
+        {
+          "question": "Repurposing content is considered lazy by most audiences.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Most of your audience will miss your original posts. Repurposing ensures your message actually reaches them while saving you hours of creative time."
+        },
+        {
+          "question": "How can AI best assist in the repurposing process?",
+          "type": "mcq",
+          "options": [
+            "By writing entirely new content from scratch",
+            "By rewriting existing content to match specific platform tones and formats",
+            "By deleting your old content automatically",
+            "By posting to platforms without any review"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI excels at adapting the tone and format of existing ideas to suit the nuances of different social media platforms, saving you significant time."
+        }
+      ]
+    },
+    {
+      "id": "acc-15-algorithm-mastery",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Crack the Algorithm",
+      "subtitle": "Understand the signals that make platforms promote your work to thousands.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Algorithm Is Not Your Enemy",
+          "body": "Many creators fear the algorithm, but it is actually just a recommendation engine designed to keep users happy. If you understand what it wants, you can make it work for you instead of against you.",
+          "stat": "90%",
+          "statLabel": "of your reach comes from algorithmic recommendations, not followers"
+        },
+        {
+          "type": "content",
+          "headline": "Decoding 2025 Engagement Signals",
+          "body": "Modern algorithms prioritise how users interact with your content after they have seen it. It is no longer just about \"likes\" — it is about the depth and quality of the user experience.",
+          "bullets": [
+            "Watch time: The most critical metric — if people watch until the end, the algorithm assumes your content is high quality",
+            "Saves: These indicate high value, telling the platform your content is worth returning to later",
+            "Shares: Signals that your content is so relevant or entertaining that viewers want to spread it to their own network",
+            "Comments: A sign of active engagement and community, which triggers the platform to show the video to even more people"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Training Your Algorithm",
+          "body": "You can \"prime\" your account to reach the right audience by being consistent with your niche and interacting strategically. The algorithm learns who your content is for based on your activity and your audience's behaviour.",
+          "bullets": [
+            "Post at peak times: Use your platform insights to identify when your target audience is most active online",
+            "Engage to be engaged: Reply to every comment in the first hour of posting to boost initial momentum",
+            "Niche down: The algorithm pushes content to people who have shown interest in your specific topic before",
+            "Avoid \"engagement bait\": Don't ask for likes directly — instead, ask questions that require a thoughtful response"
+          ],
+          "stat": "2x",
+          "statLabel": "increase in reach by focusing on saves and shares over likes"
+        },
+        {
+          "type": "try-it",
+          "headline": "Optimise for the Algorithm",
+          "body": "Apply these steps to your next post to dramatically improve its performance signals.",
+          "bullets": [
+            "⏰ Check your analytics to see when your audience is most active and schedule your next post for that time",
+            "💬 End your video with a specific question that is easy to answer in the comments",
+            "💡 Add a \"saveable\" element like a summary list or helpful tip that encourages users to bookmark your post"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which engagement signal is generally considered most valuable by algorithms in 2025?",
+          "type": "mcq",
+          "options": [
+            "Likes",
+            "Saves and Shares",
+            "Follows",
+            "Video views of 1 second"
+          ],
+          "correctIndex": 1,
+          "explanation": "Saves and shares indicate that users find the content valuable enough to revisit or distribute, which signals extremely high quality to the algorithm."
+        },
+        {
+          "question": "Asking for likes in every video is the best way to grow your account.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Algorithms often penalise obvious \"engagement baiting\" and prefer authentic interactions that provide genuine value to the viewer."
+        },
+        {
+          "question": "What is the primary goal of a social media algorithm?",
+          "type": "mcq",
+          "options": [
+            "To make creators work harder",
+            "To keep users on the platform for longer by showing relevant content",
+            "To only show advertisements",
+            "To limit creator reach"
+          ],
+          "correctIndex": 1,
+          "explanation": "The algorithm's core goal is to keep users engaged and on the platform by showing them content they are highly likely to enjoy and interact with."
+        }
+      ]
+    },
+    {
+      "id": "acc-16-community-building",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "Build a Loyal Community",
+      "subtitle": "Turn casual viewers into a dedicated fan base that keeps coming back.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Broadcasting and Start Connecting",
+          "body": "Content creators often focus on views, but the real magic happens when you build a community. A loyal following ensures that your brand survives algorithm changes and keeps people returning for more.",
+          "stat": "5x",
+          "statLabel": "higher engagement from loyal community members vs. casual viewers"
+        },
+        {
+          "type": "content",
+          "headline": "Engagement Is a Two-Way Street",
+          "body": "Building a community requires active participation rather than just posting and disappearing. You must treat every comment as an opportunity to deepen a relationship with your audience.",
+          "bullets": [
+            "Reply thoughtfully to the first ten comments on every post to encourage further discussion and show you care",
+            "Create inside jokes or unique sign-offs that make your followers feel like they are part of an exclusive club",
+            "Use polls and Q&A stickers on your stories to give your audience a sense of ownership over your content direction"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of the DM",
+          "body": "Direct messages are the most intimate space for a creator to interact with their audience. By being accessible in DMs, you build trust that converts casual viewers into lifelong fans.",
+          "bullets": [
+            "Send personalised voice notes to new followers to make them feel truly welcomed into your space",
+            "Ask specific questions in your DMs to learn about the pain points your audience is currently facing",
+            "Create a \"close friends\" list for your most active supporters to share behind-the-scenes content exclusively"
+          ],
+          "stat": "90%",
+          "statLabel": "open rate for personal DM outreach vs. 20% for email"
+        },
+        {
+          "type": "try-it",
+          "headline": "Community Connection Challenge",
+          "body": "Put these strategies into practice today to see an immediate shift in your engagement levels.",
+          "bullets": [
+            "📝 Reply to every pending comment in your inbox with a question to keep the conversation going",
+            "📊 Post a poll on your main platform asking for feedback on your next content topic",
+            "💌 Send five genuine messages to your most frequent commenters thanking them for their support"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of engaging with comments?",
+          "type": "mcq",
+          "options": [
+            "To boost algorithm vanity metrics",
+            "To deepen relationships and build trust",
+            "To argue with critics publicly",
+            "To ignore everyone and focus on content"
+          ],
+          "correctIndex": 1,
+          "explanation": "Engaging with comments builds genuine connection, which is the foundation of a loyal community that supports you long-term."
+        },
+        {
+          "question": "Using inside jokes helps build a sense of belonging within your community.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Inside jokes and unique catchphrases create a shared identity for your audience, making them feel like part of something special."
+        },
+        {
+          "question": "Which strategy is most effective for building direct connection with your audience?",
+          "type": "mcq",
+          "options": [
+            "Posting longer captions",
+            "Ignoring DMs to seem busy and exclusive",
+            "Sending personalised voice notes",
+            "Removing the comment section entirely"
+          ],
+          "correctIndex": 2,
+          "explanation": "Voice notes are personal and humanise you to your audience, fostering deeper trust even when you run a faceless brand."
+        }
+      ]
+    },
+    {
+      "id": "acc-17-email-list",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Grow Your Email List",
+      "subtitle": "Own your audience by building an email list that no algorithm can touch.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't Build Your House on Rented Land",
+          "body": "Social media platforms can limit your reach or ban your account at any moment. An email list is the only asset you truly own, providing a direct line to your fans that no algorithm can block.",
+          "stat": "100%",
+          "statLabel": "ownership of your audience data — unlike social media followers"
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of an Opt-In",
+          "body": "People do not sign up for newsletters just because they exist. You must provide significant value upfront. A \"lead magnet\" is the key to converting followers into subscribers.",
+          "bullets": [
+            "Create a high-value resource like a PDF guide, checklist, or template that solves a specific problem for your audience",
+            "Use a simple landing page service like Beehiiv or ConvertKit to host your sign-up form professionally",
+            "Ensure your lead magnet is delivered automatically and immediately after the user confirms their email address"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Optimising Your Link-in-Bio",
+          "body": "Your link-in-bio is prime real estate for capturing leads. If you are not directing traffic to an opt-in page, you are missing out on thousands of potential subscribers every month.",
+          "bullets": [
+            "Place your lead magnet link at the very top of your link-in-bio tool so it is the first thing visitors see",
+            "Use clear, benefits-driven language like \"Get the free AI toolkit\" instead of \"Sign up for my newsletter\"",
+            "Regularly mention your newsletter in your video content to remind viewers of the extra value they are missing"
+          ],
+          "stat": "4x",
+          "statLabel": "higher conversion rate with a clear, specific lead magnet offer"
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your List Today",
+          "body": "Take the first step toward audience ownership by setting up your capture system.",
+          "bullets": [
+            "✅ Sign up for a free account on Beehiiv or ConvertKit (both have generous free tiers)",
+            "🎁 Outline a simple one-page lead magnet related to your niche (e.g., \"5 AI Prompts for Better Content\")",
+            "🔗 Update your link-in-bio to include a direct sign-up link with benefits-driven copy"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is an email list more valuable than social media followers?",
+          "type": "mcq",
+          "options": [
+            "It looks more professional on your CV",
+            "You own the data and it is completely algorithm-proof",
+            "It is easier to set up than a social account",
+            "It is always free to send unlimited emails"
+          ],
+          "correctIndex": 1,
+          "explanation": "Email lists are independent of social media platforms, ensuring your communication with your audience remains consistent regardless of algorithm changes."
+        },
+        {
+          "question": "A lead magnet should be a complex, multi-week course to attract subscribers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! A lead magnet should be simple and provide quick, immediate value — like a checklist or short guide that solves one specific problem."
+        },
+        {
+          "question": "Where is the best place to promote your email list?",
+          "type": "mcq",
+          "options": [
+            "In your video descriptions only",
+            "In your link-in-bio and through regular mentions in your content",
+            "Only in private DMs",
+            "On a physical business card"
+          ],
+          "correctIndex": 1,
+          "explanation": "Visible placement in your bio combined with consistent mentions in your content are the most effective ways to drive email sign-ups."
+        }
+      ]
+    },
+    {
+      "id": "acc-18-monetisation-models",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "Unlock Your First Revenue Stream",
+      "subtitle": "Turn your content into a sustainable business with the right monetisation model.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Content Is the Funnel, Monetisation Is the Goal",
+          "body": "You do not need millions of followers to make a full-time income. By choosing the right monetisation model for your specific stage, you can start earning from day one.",
+          "stat": "£1,000+",
+          "statLabel": "typical first milestone for creators with under 5,000 followers"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Monetisation Path",
+          "body": "Different models require different levels of audience size and trust. Evaluate your current stage to decide which path is the most effective for you to pursue first.",
+          "bullets": [
+            "Affiliate Marketing: Recommend products you use and earn a commission on each sale — perfect for beginners with smaller audiences",
+            "Digital Products: Create and sell your own e-books, templates, or mini-courses to keep 100% of the profit",
+            "Sponsorships: Partner with brands that align with your niche once you have consistent views and high engagement rates"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Scaling Your Revenue",
+          "body": "Once you have your first stream established, you can add layers to your business. The key is to avoid burning out by focusing on one model at a time before expanding.",
+          "bullets": [
+            "Start with affiliate links to validate what your audience is actually willing to spend money on",
+            "Transition to digital products once you notice your audience asking for specific help or solutions you can package",
+            "Always ensure your monetisation efforts remain authentic to your brand identity — trust is your most valuable currency"
+          ],
+          "stat": "30%",
+          "statLabel": "average profit margin for digital products vs. 5-10% for affiliate"
+        },
+        {
+          "type": "try-it",
+          "headline": "Monetisation Audit",
+          "body": "Decide which revenue stream fits your current content strategy and audience size best.",
+          "bullets": [
+            "🔍 Research three affiliate programmes relevant to your niche (Amazon Associates, Impact, ShareASale)",
+            "💡 Brainstorm one digital product idea that solves a problem you have already addressed in your content",
+            "💰 Select ONE monetisation model to focus on exclusively for the next 30 days"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which monetisation model is generally best for beginners with smaller audiences?",
+          "type": "mcq",
+          "options": [
+            "High-ticket consulting",
+            "Affiliate marketing",
+            "Corporate sponsorship deals",
+            "Selling a £500 online course"
+          ],
+          "correctIndex": 1,
+          "explanation": "Affiliate marketing requires no product development and works even with small audiences, making it the easiest path for beginners to earn their first income."
+        },
+        {
+          "question": "You need at least 100,000 followers to start monetising your content.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! You can monetise with a small audience if you have high trust and engagement. Many creators earn their first £1,000 with fewer than 5,000 followers."
+        },
+        {
+          "question": "What is a key benefit of selling digital products over affiliate marketing?",
+          "type": "mcq",
+          "options": [
+            "You keep most of the profit",
+            "They require no work to create",
+            "They are always free for the buyer",
+            "They guarantee instant fame"
+          ],
+          "correctIndex": 0,
+          "explanation": "Digital products allow you to retain the majority of revenue (often 90%+) compared to affiliate commissions which are typically 5-30%."
+        }
+      ]
+    },
+    {
+      "id": "acc-19-affiliate-marketing",
+      "dayNumber": 19,
+      "moduleId": "module-3",
+      "title": "Master Affiliate Marketing",
+      "subtitle": "Turn your influence into a consistent revenue stream with zero product creation.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Secret to Passive Income",
+          "body": "Affiliate marketing allows you to earn a commission by recommending products you genuinely use and trust. When your audience clicks your link and makes a purchase, you get a slice of the pie without ever needing to manage stock or customer service.",
+          "stat": "81%",
+          "statLabel": "of brands use affiliate programmes — the opportunity is massive"
+        },
+        {
+          "type": "content",
+          "headline": "Finding and Joining Programmes",
+          "body": "Start by identifying products that align perfectly with your niche and provide real value to your followers. Most companies run programmes through networks like Impact, ShareASale, or Amazon Associates, which provide the tracking links you need.",
+          "bullets": [
+            "Search for \"[Product Name] affiliate programme\" on Google to find official sign-up pages",
+            "Check the footer of websites you already use — many offer referral partnerships you might not know about",
+            "Always prioritise quality over commission rates; your reputation is worth more than a quick sale"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ethical Promotion and Disclosure",
+          "body": "Trust is the currency of an AI content creator, so never compromise it for a payout. You must clearly disclose your affiliate relationships to comply with advertising standards and maintain transparency with your audience.",
+          "bullets": [
+            "Use clear hashtags like #ad or #affiliate in every post containing a tracked link",
+            "Write honest reviews that highlight both the pros and potential cons of a product",
+            "Frame your recommendations as solutions to specific problems your audience is actually facing"
+          ],
+          "stat": "100%",
+          "statLabel": "transparency rate required — always disclose affiliate partnerships"
+        },
+        {
+          "type": "try-it",
+          "headline": "Launch Your First Recommendation",
+          "body": "Put these principles into practice today by setting up your first affiliate bridge.",
+          "bullets": [
+            "✅ Join one reputable affiliate programme relevant to your current content niche",
+            "🔗 Create a \"Resources\" or \"Tools\" page on your website or link-in-bio tool",
+            "📝 Draft one social media post that solves a problem and naturally mentions your new affiliate product"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it important to disclose affiliate links?",
+          "type": "mcq",
+          "options": [
+            "To increase click-through rates",
+            "To comply with legal standards and build audience trust",
+            "Because the software requires it",
+            "To hide the link from search engines"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transparency is vital for building long-term trust with your audience and meeting legal requirements for influencer marketing."
+        },
+        {
+          "question": "You should promote products purely based on high commission rates.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Promoting products you don't genuinely believe in will damage your reputation and long-term earning potential."
+        },
+        {
+          "question": "What is the best way to integrate an affiliate link into your content?",
+          "type": "mcq",
+          "options": [
+            "Spamming it in every comment section",
+            "Hiding it in a long paragraph",
+            "Sharing it as a helpful solution to a specific problem",
+            "Only sending it via private message"
+          ],
+          "correctIndex": 2,
+          "explanation": "Contextual, helpful recommendations that solve real problems convert much better than unsolicited spam."
+        }
+      ]
+    },
+    {
+      "id": "acc-20-digital-products",
+      "dayNumber": 20,
+      "moduleId": "module-3",
+      "title": "Create & Sell Digital Products",
+      "subtitle": "Build high-margin assets with AI assistance and sell them on autopilot.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Unlocking Your Intellectual Capital",
+          "body": "Digital products are the ultimate leverage for creators because you build them once and sell them infinitely. By using AI to speed up your research and drafting, you can launch a profitable product in a fraction of the usual time.",
+          "stat": "90%",
+          "statLabel": "profit margin on digital goods — the highest of any business model"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your First Product",
+          "body": "Don't overcomplicate your first launch. Focus on solving a singular, painful problem for your audience. Whether it is a Notion template, a \"how-to\" PDF guide, or a mini-video course, ensure the value is clear and actionable.",
+          "bullets": [
+            "Identify the most common question your audience asks you — that's your product idea",
+            "Draft a comprehensive outline using AI to ensure no steps are missed and the structure flows logically",
+            "Create a simple landing page that highlights the transformation the product provides, not just the features"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pricing and Delivery Systems",
+          "body": "Pricing psychology relies on the perceived value of your expertise rather than the time spent creating the file. Platforms like Gumroad or Lemonsqueezy handle the tax, payment processing, and file delivery, leaving you to focus on marketing.",
+          "bullets": [
+            "Use tiered pricing to offer a basic version and a premium version with extra support or bonuses",
+            "Set up an automated email sequence to deliver the product immediately upon purchase",
+            "Use scarcity tactics like limited-time launch discounts to drive initial momentum and social proof"
+          ],
+          "stat": "24/7",
+          "statLabel": "automated sales capability — earn money while you sleep"
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Product Roadmap",
+          "body": "Take the first step toward becoming a creator-entrepreneur today.",
+          "bullets": [
+            "✅ Brainstorm three product ideas based on your most popular content pieces",
+            "📋 Select one idea and use AI to outline the chapters or modules in detail",
+            "🚀 Sign up for a creator-friendly platform like Gumroad to familiarise yourself with the dashboard"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of selling digital products?",
+          "type": "mcq",
+          "options": [
+            "High shipping costs",
+            "Infinite scalability with no inventory required",
+            "It requires constant physical stock management",
+            "It is always free to produce"
+          ],
+          "correctIndex": 1,
+          "explanation": "Digital products offer near-zero marginal costs, allowing you to scale your business infinitely without managing physical inventory."
+        },
+        {
+          "question": "It is better to start with a complex, expensive course for your first product.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Starting with a simple, high-value mini-product is safer, faster, and more effective for your first launch."
+        },
+        {
+          "question": "Which factor should primarily influence your pricing?",
+          "type": "mcq",
+          "options": [
+            "The number of pages in the document",
+            "The value of the transformation provided to the customer",
+            "The time it took you to write it",
+            "The exact price of your competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Customers pay for results and transformations, not just the number of pages or hours you spent creating the product."
+        }
+      ]
+    },
+    {
+      "id": "acc-21-scaling-automation",
+      "dayNumber": 21,
+      "moduleId": "module-3",
+      "title": "Scale with Systems & Automation",
+      "subtitle": "Build a content machine that runs without you and plan your next 90 days.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Transition from Creator to CEO",
+          "body": "To scale your content business, you must move away from manual tasks and embrace automation. By building systems that handle repetitive chores, you free up your creative energy for high-level strategy and growth.",
+          "stat": "10+",
+          "statLabel": "hours saved weekly with proper automation systems in place"
+        },
+        {
+          "type": "content",
+          "headline": "Essential Automation Tools",
+          "body": "Automation tools like Zapier or Make act as the glue between your apps, ensuring data flows seamlessly. Whether it is moving leads from a landing page to your email list or auto-posting content, these tools save you massive amounts of time.",
+          "bullets": [
+            "Connect your social media scheduling tool to your project management software so nothing falls through the cracks",
+            "Automate the delivery of lead magnets to new email subscribers the instant they sign up",
+            "Use AI-powered scheduling tools to recycle your best-performing \"evergreen\" content on repeat"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Establishing Your Review Ritual",
+          "body": "Scaling isn't just about doing more — it is about doing better through data-driven decisions. Establishing a weekly review ritual ensures you remain aligned with your long-term vision and catch issues before they escalate.",
+          "bullets": [
+            "Review your analytics every Friday to identify which topics and formats resonated most with your audience",
+            "Spend 30 minutes at the end of each month planning your content calendar for the next 90 days",
+            "Audit your current systems quarterly to see if any manual steps can be automated further"
+          ],
+          "stat": "90 days",
+          "statLabel": "planning horizon — always know where you're headed next"
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit and Automate",
+          "body": "Finalise your accelerator journey by setting up your first automated workflow and planning ahead.",
+          "bullets": [
+            "✅ List every manual task you perform daily that feels repetitive and time-consuming",
+            "⚡ Choose one task (e.g., posting to social media) and automate it using Zapier or Make",
+            "📅 Block out one hour in your calendar for your first monthly \"CEO Review\" session"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main purpose of using tools like Zapier or Make?",
+          "type": "mcq",
+          "options": [
+            "To replace your creative writing entirely",
+            "To connect different apps and automate repetitive workflows",
+            "To host your website",
+            "To generate AI images"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zapier and Make connect your favourite apps to automate repetitive tasks, acting as the foundation of your scalable business systems."
+        },
+        {
+          "question": "You should review your analytics daily for the best results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Daily analytics reviews often lead to \"vanity metric\" obsession. A weekly or monthly review is much better for strategic, data-driven planning."
+        },
+        {
+          "question": "What does an \"evergreen\" content strategy involve?",
+          "type": "mcq",
+          "options": [
+            "Only posting about current news and trends",
+            "Repurposing high-performing content that remains relevant over time",
+            "Posting only once a year",
+            "Deleting old content after a week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Evergreen content provides consistent value and traffic long after it is first published, which is essential for scaling your brand on autopilot."
+        }
+      ]
+    }
+  ]
+}

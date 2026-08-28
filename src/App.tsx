@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { lmsRoutes } from '../authorisation/src/lmsRoutes.tsx'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
 import HomePage from '@/marketing/pages/HomePage'
 import PricingPage from '@/marketing/pages/PricingPage'
@@ -9,7 +10,6 @@ import PrivacyPolicyPage from '@/marketing/pages/PrivacyPolicyPage'
 import TermsPage from '@/marketing/pages/TermsPage'
 import RefundPolicyPage from '@/marketing/pages/RefundPolicyPage'
 import SubscriptionTermsPage from '@/marketing/pages/SubscriptionTermsPage'
-import LoginPage from '@/marketing/pages/LoginPage'
 import EmailPreferencesPage from '@/marketing/pages/EmailPreferencesPage'
 import UnsubscribePage from '@/marketing/pages/UnsubscribePage'
 import NotFoundPage from '@/marketing/pages/NotFoundPage'
@@ -24,7 +24,7 @@ const PptQuizPage = lazy(() => import('@/funnels/master-ai-for-powerpoint/pages/
 const M365QuizPage = lazy(() => import('@/funnels/master-ai-microsoft-365/pages/M365QuizPage'))
 const ExcelQuizPage = lazy(() => import('@/funnels/master-claude-ai-excel/pages/ExcelQuizPage'))
 const FunnelCheckoutPage = lazy(() => import('@/checkout/FunnelCheckoutPage'))
-const CheckoutSetupPage = lazy(() => import('@/checkout/CheckoutSetupPage'))
+const OneTimeCheckoutPage = lazy(() => import('@/checkout/OneTimeCheckoutPage'))
 const EmptyCheckoutPage = lazy(() => import('@/checkout/EmptyCheckoutPage'))
 
 export default function App() {
@@ -38,7 +38,8 @@ export default function App() {
             <Route path="/quiz/master-ai-for-powerpoint" element={<PptQuizPage />} />
             <Route path="/quiz/master-ai-microsoft-365" element={<M365QuizPage />} />
             <Route path="/quiz/master-claude-ai-excel" element={<ExcelQuizPage />} />
-            <Route path="/checkout/setup" element={<CheckoutSetupPage />} />
+            {lmsRoutes}
+            <Route path="/checkout/one-time" element={<OneTimeCheckoutPage />} />
             <Route path="/checkout/:funnel" element={<FunnelCheckoutPage />} />
             <Route path="/checkout" element={<EmptyCheckoutPage />} />
             <Route element={<MarketingLayout />}>
@@ -72,11 +73,8 @@ export default function App() {
               />
               <Route path="/learn/financial-wellbeing" element={<FinancialWellbeingPage />} />
             </Route>
-            <Route path="/login" element={<LoginPage />} />
             <Route path="/email-preferences" element={<EmailPreferencesPage />} />
             <Route path="/unsubscribe" element={<UnsubscribePage />} />
-            <Route path="/app/*" element={<Navigate to="/login" replace />} />
-            <Route path="/courses/*" element={<Navigate to="/login" replace />} />
             <Route path="/learn" element={<NotFoundPage />} />
             <Route path="/learn/*" element={<NotFoundPage />} />
             <Route path="*" element={<NotFoundPage />} />

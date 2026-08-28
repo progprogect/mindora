@@ -1,0 +1,1315 @@
+{
+  "28-day-ai-challenge": {
+    "id": "28-day-ai-challenge",
+    "title": "28-Day AI Challenge",
+    "totalDays": 28,
+    "lessons": [
+      {
+        "id": "day-1-what-is-ai",
+        "dayNumber": 1,
+        "title": "What Is AI? (Really)",
+        "subtitle": "Cut through the hype and understand what AI actually is — in plain English",
+        "duration": "5 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-2-meet-your-toolkit",
+        "dayNumber": 2,
+        "title": "Meet Your AI Toolkit",
+        "subtitle": "A hands-on tour of the three tools you'll use every day — and when to reach for each one",
+        "duration": "6 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-3-your-first-prompt",
+        "dayNumber": 3,
+        "title": "Your First Great Prompt",
+        "subtitle": "The single skill that separates people who get amazing results from people who get mediocre ones",
+        "duration": "6 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-4-prompt-engineering",
+        "dayNumber": 4,
+        "title": "Prompt Engineering 101",
+        "subtitle": "Advanced techniques that unlock a completely different level of AI performance",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-5-chatgpt-deep-dive",
+        "dayNumber": 5,
+        "title": "ChatGPT Deep Dive",
+        "subtitle": "Unlock everything the world's most popular AI can actually do — most people only scratch the surface",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-6-claude-vs-chatgpt",
+        "dayNumber": 6,
+        "title": "Claude: The Thinking Person's AI",
+        "subtitle": "Why Claude beats ChatGPT for certain tasks — and how to get the most out of it",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Module 1 Checkpoint",
+        "subtitle": "Consolidate everything from this week — and prove to yourself how much you've already learned",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-8-ai-email",
+        "dayNumber": 8,
+        "title": "AI Email Assistant",
+        "subtitle": "Write, reply to, and manage emails in a fraction of the time — without sacrificing quality",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-9-ai-meetings",
+        "dayNumber": 9,
+        "title": "AI Meeting Notes",
+        "subtitle": "Never manually take meeting notes again — and get more from every meeting you attend",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-10-ai-research",
+        "dayNumber": 10,
+        "title": "AI Research Assistant",
+        "subtitle": "Find, summarise, and synthesise information in minutes instead of hours",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-11-ai-writing",
+        "dayNumber": 11,
+        "title": "AI Writing Partner",
+        "subtitle": "First drafts of anything — reports, proposals, blogs, briefs — in minutes, not hours",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-12-ai-task-planner",
+        "dayNumber": 12,
+        "title": "AI Task Planner",
+        "subtitle": "Build a smarter, more realistic daily plan — and actually stick to it",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-13-ai-decisions",
+        "dayNumber": 13,
+        "title": "AI Decision Maker",
+        "subtitle": "Use AI as a thinking partner to make better decisions faster — with less stress",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Module 2 Checkpoint",
+        "subtitle": "Build your personal AI productivity stack — a system you'll use every single day",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-15-ai-images",
+        "dayNumber": 15,
+        "title": "AI Image Creation",
+        "subtitle": "Create professional-quality visuals in seconds — no design skills, no designer required",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-16-ai-social",
+        "dayNumber": 16,
+        "title": "AI Social Media",
+        "subtitle": "Plan, write, and schedule a full week of social content in under 10 minutes",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-17-ai-video-scripts",
+        "dayNumber": 17,
+        "title": "AI Video Scripts",
+        "subtitle": "Write scroll-stopping scripts for TikTok, Reels, and YouTube Shorts — in minutes",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-18-ai-copywriting",
+        "dayNumber": 18,
+        "title": "AI Copywriting",
+        "subtitle": "Write landing pages, ads, and emails that persuade and convert — using proven frameworks",
+        "duration": "8 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-19-ai-presentations",
+        "dayNumber": 19,
+        "title": "AI Presentation Maker",
+        "subtitle": "Build compelling slide decks in under 30 minutes — structure, content, and visuals included",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-20-ai-audio",
+        "dayNumber": 20,
+        "title": "AI Audio & Voice",
+        "subtitle": "Create podcasts, voiceovers, and audio content without a studio — or even your own voice",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-21-module-3-checkpoint",
+        "dayNumber": 21,
+        "title": "Module 3 Checkpoint",
+        "subtitle": "Prove your content creation mastery — and unlock Module 4",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-22-ai-income-streams",
+        "dayNumber": 22,
+        "title": "AI Income Streams",
+        "subtitle": "Discover the 6 most realistic ways to earn money with AI skills right now",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-23-ai-freelancing",
+        "dayNumber": 23,
+        "title": "AI Freelancing",
+        "subtitle": "Land your first paid AI gig — even with no portfolio, no followers, and no experience",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-24-ai-digital-products",
+        "dayNumber": 24,
+        "title": "AI Digital Products",
+        "subtitle": "Build a product once and sell it in your sleep — using AI to do most of the heavy lifting",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-25-ai-automation",
+        "dayNumber": 25,
+        "title": "AI Automation",
+        "subtitle": "Build systems that work for you 24/7 — no coding required",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-26-ai-business-blueprint",
+        "dayNumber": 26,
+        "title": "AI Business Blueprint",
+        "subtitle": "Design a complete, viable AI-powered business in a single afternoon",
+        "duration": "8 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-27-side-hustle-launch",
+        "dayNumber": 27,
+        "title": "Side Hustle Launch Day",
+        "subtitle": "Stop planning. Start earning. Today you take your first real step into the market.",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-28-graduation",
+        "dayNumber": 28,
+        "title": "Day 28: Graduation",
+        "subtitle": "You did it. 28 days. Every single one. Here's what that actually means.",
+        "duration": "5 min",
+        "xpValue": 50
+      }
+    ]
+  },
+  "28-day-success-mindset": {
+    "id": "28-day-success-mindset",
+    "title": "28-Day Success Mindset Challenge",
+    "totalDays": 28,
+    "lessons": [
+      {
+        "id": "smc-1-success-operating-system",
+        "dayNumber": 1,
+        "title": "The Success Operating System",
+        "subtitle": "Stop running outdated mental software and start upgrading your internal code.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-2-identity-based-success",
+        "dayNumber": 2,
+        "title": "Identity-Based Success",
+        "subtitle": "Stop chasing goals and start becoming the person who achieves them.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-3-pain-pleasure-switch",
+        "dayNumber": 3,
+        "title": "The Pain-Pleasure Switch",
+        "subtitle": "Master the emotional levers that drive every human decision.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-4-definite-purpose",
+        "dayNumber": 4,
+        "title": "Definite Purpose",
+        "subtitle": "Convert your vague desires into a burning, obsessive vision.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-5-empowering-beliefs",
+        "dayNumber": 5,
+        "title": "Empowering vs Limiting Beliefs",
+        "subtitle": "Break the invisible glass ceiling of your potential.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-6-questions-you-ask",
+        "dayNumber": 6,
+        "title": "The Questions You Ask",
+        "subtitle": "Master the art of directing your focus.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Module 1 Checkpoint",
+        "subtitle": "Integrate your Success Operating System.",
+        "duration": "5 min",
+        "xpValue": 30
+      },
+      {
+        "id": "smc-8-the-one-percent-rule",
+        "dayNumber": 8,
+        "title": "The 1% Rule",
+        "subtitle": "Compound your way to greatness",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-9-habit-stacking",
+        "dayNumber": 9,
+        "title": "Habit Stacking",
+        "subtitle": "Use your existing routine to build new ones",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-10-power-hour",
+        "dayNumber": 10,
+        "title": "The Power Hour",
+        "subtitle": "Win the morning — win the day",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-11-the-elimination-game",
+        "dayNumber": 11,
+        "title": "The Elimination Game",
+        "subtitle": "Cut the noise to sharpen your focus.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-12-focus-and-flow-state",
+        "dayNumber": 12,
+        "title": "Focus & Flow State",
+        "subtitle": "Unlock deep work and peak performance.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-13-energy-management",
+        "dayNumber": 13,
+        "title": "Energy Management",
+        "subtitle": "Stop managing time; start managing energy.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Module 2 Checkpoint",
+        "subtitle": "Integrate your new high-performance systems.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "smc-15-state-management",
+        "dayNumber": 15,
+        "title": "State Management",
+        "subtitle": "Master your internal chemistry",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-16-obstacle-is-the-way",
+        "dayNumber": 16,
+        "title": "The Obstacle Is the Way",
+        "subtitle": "Turn friction into fuel",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-17-decision-speed",
+        "dayNumber": 17,
+        "title": "Decision Speed",
+        "subtitle": "Kill analysis paralysis",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-18-raising-standards",
+        "dayNumber": 18,
+        "title": "Raising Standards",
+        "subtitle": "Elevate your identity to exceed your goals.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-19-clarity-under-chaos",
+        "dayNumber": 19,
+        "title": "Clarity Under Chaos",
+        "subtitle": "Think clearly when everything is uncertain.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-20-persistence-formula",
+        "dayNumber": 20,
+        "title": "The Persistence Formula",
+        "subtitle": "Systematize your perseverance for the long haul.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-21-module-3-checkpoint",
+        "dayNumber": 21,
+        "title": "Module 3 Checkpoint",
+        "subtitle": "Integrate your performance tools.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "smc-22-vision-board",
+        "dayNumber": 22,
+        "title": "The Vision Board 2.0",
+        "subtitle": "Architecting your ideal future identity",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-23-your-inner-circle",
+        "dayNumber": 23,
+        "title": "Your Inner Circle",
+        "subtitle": "Curating your environment for growth",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-24-teaching-to-learn",
+        "dayNumber": 24,
+        "title": "Teaching to Learn",
+        "subtitle": "Mastering knowledge through contribution",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-25-proactive-living",
+        "dayNumber": 25,
+        "title": "Proactive Living",
+        "subtitle": "Stop reacting and start leading your life.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-26-success-environment",
+        "dayNumber": 26,
+        "title": "Success Environment",
+        "subtitle": "Design your space to design your outcome.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-27-compound-life",
+        "dayNumber": 27,
+        "title": "The Compound Life",
+        "subtitle": "Small gains multiplied over time create massive impact.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-28-course-finale",
+        "dayNumber": 28,
+        "title": "Course Finale",
+        "subtitle": "Your journey begins now.",
+        "duration": "5 min",
+        "xpValue": 50
+      }
+    ]
+  },
+  "28-day-career-accelerator": {
+    "id": "28-day-career-accelerator",
+    "title": "21-Day Career Accelerator",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "ca-1-career-audit",
+        "dayNumber": 1,
+        "title": "The Career Audit",
+        "subtitle": "Take an honest look at where you are — so you can plot a smarter path forward.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-2-values-compass",
+        "dayNumber": 2,
+        "title": "Your Values Compass",
+        "subtitle": "Discover the core values that should be driving every career decision you make.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-3-career-capital-inventory",
+        "dayNumber": 3,
+        "title": "Your Career Capital Inventory",
+        "subtitle": "Discover the rare, valuable assets you've already built — and the gaps worth filling.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-4-personal-fit",
+        "dayNumber": 4,
+        "title": "Personal Fit — Your Secret Weapon",
+        "subtitle": "Learn why the \"best\" career for you depends on who YOU are, not what's popular.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-5-three-prototypes",
+        "dayNumber": 5,
+        "title": "Three Career Prototypes",
+        "subtitle": "Design three possible futures — then test them without risking everything.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-6-decision-framework",
+        "dayNumber": 6,
+        "title": "The Decision Framework",
+        "subtitle": "Stop overthinking — learn the system that turns career confusion into confident action.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Module 1 Checkpoint",
+        "subtitle": "Consolidate everything — lock in your direction before we build your execution system.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-8-craftsman-mindset",
+        "dayNumber": 8,
+        "title": "The Craftsman Mindset",
+        "subtitle": "Stop asking \"what can my career do for me?\" and start asking \"what can I offer that's rare and valuable?\"",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-9-deliberate-practice",
+        "dayNumber": 9,
+        "title": "Deliberate Practice",
+        "subtitle": "The difference between 10 years of experience and 1 year repeated 10 times.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-10-deep-work-rituals",
+        "dayNumber": 10,
+        "title": "Deep Work Rituals",
+        "subtitle": "Create the conditions that let you produce your best professional work consistently.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-11-feedback-loops",
+        "dayNumber": 11,
+        "title": "Feedback Loops",
+        "subtitle": "Accelerate your growth by building systems that tell you exactly where to improve.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-12-skill-stacking",
+        "dayNumber": 12,
+        "title": "Skill Stacking",
+        "subtitle": "Become uniquely valuable by combining skills in ways nobody else can replicate.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-13-stretch-projects",
+        "dayNumber": 13,
+        "title": "Stretch Projects",
+        "subtitle": "Volunteer for the work that scares you slightly — that's where your fastest growth lives.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Module 2 Checkpoint",
+        "subtitle": "Lock in your skill-building system before we turn your growing capital into career acceleration.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-15-visibility-strategy",
+        "dayNumber": 15,
+        "title": "Visibility Strategy",
+        "subtitle": "Being great isn't enough — learn to make your work seen without feeling like a self-promoter.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-16-career-network",
+        "dayNumber": 16,
+        "title": "Career Network",
+        "subtitle": "Build the relationships that open doors — without feeling fake or transactional.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-17-90-day-sprint",
+        "dayNumber": 17,
+        "title": "The 90-Day Sprint",
+        "subtitle": "Turn big career goals into focused 90-day sprints that create visible, measurable progress.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-18-opportunity-radar",
+        "dayNumber": 18,
+        "title": "Opportunity Radar",
+        "subtitle": "Train yourself to spot the hidden opportunities that others walk right past.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-19-momentum-habits",
+        "dayNumber": 19,
+        "title": "Momentum Habits",
+        "subtitle": "Build the small daily habits that keep your career progressing even on busy weeks.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-20-resilience-system",
+        "dayNumber": 20,
+        "title": "Resilience System",
+        "subtitle": "Build the mental armour that keeps you progressing through setbacks, rejection, and doubt.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-21-course-finale",
+        "dayNumber": 21,
+        "title": "Course Finale",
+        "subtitle": "Bring it all together — your career acceleration system is complete.",
+        "duration": "5 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "entrepreneurial-mindset": {
+    "id": "entrepreneurial-mindset",
+    "title": "The Entrepreneurial Mindset",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "em-1-fastlane-vs-slowlane",
+        "dayNumber": 1,
+        "title": "The Fastlane vs the Slowlane",
+        "subtitle": "Why the conventional path to wealth is broken — and what the alternative actually looks like.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-2-value-creation",
+        "dayNumber": 2,
+        "title": "Value Creation — The Only Business That Matters",
+        "subtitle": "Every successful business solves a problem. Learn to think in terms of value delivered, not products sold.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-3-zero-to-one-thinking",
+        "dayNumber": 3,
+        "title": "Zero to One Thinking",
+        "subtitle": "Why copying what works creates a race to the bottom — and how to build something genuinely new.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-4-cents-framework",
+        "dayNumber": 4,
+        "title": "The CENTS Framework",
+        "subtitle": "Five criteria that separate real businesses from glorified hobbies — use this to evaluate any opportunity.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-5-personal-mba-lens",
+        "dayNumber": 5,
+        "title": "The Personal MBA Decision Lens",
+        "subtitle": "The essential mental models every entrepreneur needs — without spending two years and £100k on business school.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-6-consumer-to-producer",
+        "dayNumber": 6,
+        "title": "From Consumer to Producer",
+        "subtitle": "The single biggest identity shift that separates entrepreneurs from everyone else — and how to make it.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Your Builder's Blueprint",
+        "subtitle": "Bring together everything from Module 1 into a clear, personal action framework for your entrepreneurial path.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-8-market-gaps",
+        "dayNumber": 8,
+        "title": "How to Spot a Market Gap",
+        "subtitle": "Train your brain to notice opportunities hiding in everyday frustrations, complaints, and workarounds.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-9-ten-x-thinking",
+        "dayNumber": 9,
+        "title": "10x Thinking — Why Incremental Fails",
+        "subtitle": "Why being 10% better is a trap — and why aiming for 10x forces you to think in fundamentally different ways.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-10-monopoly-mindset",
+        "dayNumber": 10,
+        "title": "The Monopoly Mindset",
+        "subtitle": "How to carve out a market position where you're the only real option — not one of dozens.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-11-pain-point-radar",
+        "dayNumber": 11,
+        "title": "Pain-Point Radar — Where Money Hides",
+        "subtitle": "The most profitable businesses don't sell features — they eliminate pain. Learn to measure and rank pain intensity.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-12-value-equation",
+        "dayNumber": 12,
+        "title": "The Value Equation",
+        "subtitle": "A simple formula that determines how much people will pay — and how to maximise your perceived value.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-13-scoring-opportunities",
+        "dayNumber": 13,
+        "title": "Scoring Opportunities",
+        "subtitle": "A systematic framework to compare multiple opportunities and pick the one most likely to succeed.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Your Opportunity Shortlist",
+        "subtitle": "Consolidate Module 2 into a clear, ranked shortlist of opportunities you're ready to act on.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-15-analysis-paralysis",
+        "dayNumber": 15,
+        "title": "The Analysis Paralysis Trap",
+        "subtitle": "Why overthinking kills more businesses than bad ideas — and the simple cure.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-16-commitment-devices",
+        "dayNumber": 16,
+        "title": "Commitment Devices That Force Action",
+        "subtitle": "How to make inaction more painful than action — so you have no choice but to move.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-17-first-dollar",
+        "dayNumber": 17,
+        "title": "Your First $1 — The Simplest Experiment",
+        "subtitle": "The fastest way to validate a business idea is to make someone pay for it.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-18-risk-reframed",
+        "dayNumber": 18,
+        "title": "Risk Isn't What You Think",
+        "subtitle": "Reframe entrepreneurial risk from \"gambling everything\" to calculated, reversible experiments.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-19-mvp-mindset",
+        "dayNumber": 19,
+        "title": "The MVP Mindset",
+        "subtitle": "Ship the ugliest version that works — then let customers tell you what to build next.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-20-building-momentum",
+        "dayNumber": 20,
+        "title": "Building Unstoppable Momentum",
+        "subtitle": "How to create a flywheel effect where each small win accelerates the next.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-21-course-finale",
+        "dayNumber": 21,
+        "title": "Your Entrepreneurial Action Plan",
+        "subtitle": "Bring everything together into a clear 30-day action plan you can start tomorrow.",
+        "duration": "5 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "claude-ai-mastery": {
+    "id": "claude-ai-mastery",
+    "title": "Claude AI: Think Smarter, Work Faster",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "cam-1-what-is-claude",
+        "dayNumber": 1,
+        "title": "What is Claude?",
+        "subtitle": "Meet the AI that actually thinks before it speaks",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-2-your-first-conversation",
+        "dayNumber": 2,
+        "title": "Your First Conversation",
+        "subtitle": "If you can type, you can use Claude",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-3-how-to-talk-to-claude",
+        "dayNumber": 3,
+        "title": "How to Talk to Claude",
+        "subtitle": "The 3-part formula for getting great answers every time",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-4-claudes-long-context-superpower",
+        "dayNumber": 4,
+        "title": "Claude's Long Context Superpower",
+        "subtitle": "Read an entire report, contract, or book — and ask it anything",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-5-using-projects",
+        "dayNumber": 5,
+        "title": "Using Projects to Stay Organised",
+        "subtitle": "Give Claude a permanent memory for your most important work",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-6-artifacts",
+        "dayNumber": 6,
+        "title": "Artifacts: Your Live Workspace",
+        "subtitle": "Create documents, tables, and code that update in real time",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "✅ Module 1 Checkpoint",
+        "subtitle": "Review the big ideas from Lessons 1–6 and lock them in",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-8-writing-and-editing",
+        "dayNumber": 8,
+        "title": "Writing & Editing in Minutes",
+        "subtitle": "Draft, rewrite, and polish any piece of writing — fast",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-9-emails-that-sound-like-you",
+        "dayNumber": 9,
+        "title": "Emails That Sound Like You",
+        "subtitle": "Handle any email situation — in seconds, not minutes",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-10-research-without-rabbit-holes",
+        "dayNumber": 10,
+        "title": "Research Without the Rabbit Holes",
+        "subtitle": "Deep summaries, clear comparisons, and answers in minutes",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-11-summarising-long-documents",
+        "dayNumber": 11,
+        "title": "Summarising Long Documents",
+        "subtitle": "Turn any report, contract, or article into what actually matters",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-12-content-and-social-media",
+        "dayNumber": 12,
+        "title": "Content & Social Media",
+        "subtitle": "Consistent, on-brand content — in a fraction of the time",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-13-spreadsheet-formulas-and-data",
+        "dayNumber": 13,
+        "title": "Spreadsheet Formulas & Data Help",
+        "subtitle": "Get Excel and Google Sheets working for you — without being an expert",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "✅ Module 2 Checkpoint",
+        "subtitle": "Lock in your productivity wins before the power user module",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-15-analysing-reports-and-data",
+        "dayNumber": 15,
+        "title": "Analysing Reports & Business Data",
+        "subtitle": "Turn raw numbers and dense reports into clear decisions",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-16-strategy-and-planning",
+        "dayNumber": 16,
+        "title": "Strategy & Business Planning",
+        "subtitle": "Think through big decisions with a thinking partner that never gets tired",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-17-coding-without-being-a-developer",
+        "dayNumber": 17,
+        "title": "Coding Without Being a Developer",
+        "subtitle": "Scripts, automations, and formulas — in plain English",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-18-reusable-prompts-and-templates",
+        "dayNumber": 18,
+        "title": "Building Reusable Prompts & Templates",
+        "subtitle": "Stop starting from scratch — build a prompt library that works for you",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-19-multi-document-analysis",
+        "dayNumber": 19,
+        "title": "Multi-Document Analysis",
+        "subtitle": "Compare, cross-reference, and spot gaps across multiple sources at once",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-20-connecting-claude-to-your-workflow",
+        "dayNumber": 20,
+        "title": "Connecting Claude to Your Workflow",
+        "subtitle": "Build habits and systems that make Claude part of how you work",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-21-graduation",
+        "dayNumber": 21,
+        "title": "🎓 Graduation — Your Claude Playbook",
+        "subtitle": "You did it. Now build your personal action plan.",
+        "duration": "6 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "claude-ai-excel": {
+    "id": "claude-ai-excel",
+    "title": "Master Claude AI for Excel",
+    "totalDays": 15,
+    "lessons": [
+      {
+        "id": "lesson-1-what-is-claude-excel",
+        "dayNumber": 1,
+        "title": "What Is Claude for Excel?",
+        "subtitle": "Discover how AI can transform your spreadsheet workflow",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-2-install-and-setup",
+        "dayNumber": 2,
+        "title": "Install & Set Up",
+        "subtitle": "Get Claude running in your Excel in under 5 minutes",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-3-first-conversation",
+        "dayNumber": 3,
+        "title": "Your First Conversation",
+        "subtitle": "Learn how the sidebar works and ask your first question",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-4-art-of-asking",
+        "dayNumber": 4,
+        "title": "The Art of Asking",
+        "subtitle": "Write prompts that get exactly the answer you need",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-5-module-1-checkpoint",
+        "dayNumber": 5,
+        "title": "Understand Any Spreadsheet Instantly",
+        "subtitle": "Ask Claude to decode any workbook — no matter how complex or unfamiliar",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-6-understand-any-formula",
+        "dayNumber": 6,
+        "title": "Understand Any Formula",
+        "subtitle": "Get plain-English explanations of even the most complex Excel formulas",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-7-fix-errors-instantly",
+        "dayNumber": 7,
+        "title": "Fix Errors Instantly",
+        "subtitle": "Let Claude diagnose and repair #REF!, #VALUE!, #N/A, and other Excel errors",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-8-clean-messy-data",
+        "dayNumber": 8,
+        "title": "Clean Messy Data",
+        "subtitle": "Use Claude to fix inconsistent formatting, duplicates, and messy imports",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-9-build-formulas",
+        "dayNumber": 9,
+        "title": "Build Formulas From Scratch",
+        "subtitle": "Describe what you want in plain English and let Claude write the formula for you",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-10-module-2-checkpoint",
+        "dayNumber": 10,
+        "title": "Your Everyday Excel Toolkit",
+        "subtitle": "Combine everything from Module 2 into a confident daily workflow",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-11-analyse-data",
+        "dayNumber": 11,
+        "title": "Analyse Data and Find Insights",
+        "subtitle": "Ask Claude to spot trends, patterns, and outliers hiding in your spreadsheets",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-12-create-charts",
+        "dayNumber": 12,
+        "title": "Create Charts and Visual Summaries",
+        "subtitle": "Ask Claude to help you turn raw numbers into clear, presentable visuals",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-13-build-templates",
+        "dayNumber": 13,
+        "title": "Build Reusable Templates",
+        "subtitle": "Use Claude to create professional spreadsheet templates you can reuse forever",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-14-automate-tasks",
+        "dayNumber": 14,
+        "title": "Automate Repetitive Tasks",
+        "subtitle": "Let Claude help you eliminate busywork with batch operations and smart workflows",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-15-best-practices",
+        "dayNumber": 15,
+        "title": "Professional Best Practices & Safety",
+        "subtitle": "Use Claude confidently and responsibly in any work environment",
+        "duration": "5 min",
+        "xpValue": 25
+      }
+    ]
+  },
+  "master-ai-microsoft-365": {
+    "id": "master-ai-microsoft-365",
+    "title": "Master AI for Microsoft 365",
+    "totalDays": 24,
+    "lessons": [
+      {
+        "id": "lesson-1-your-microsoft-365-ai-toolkit",
+        "dayNumber": 1,
+        "title": "Meet Your Microsoft 365 AI Toolkit",
+        "subtitle": "Which AI tool to reach for, and when — including the honest limits of each.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-2-choose-your-setup",
+        "dayNumber": 2,
+        "title": "Choose Your Setup",
+        "subtitle": "Three honest paths — including one that costs nothing.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-3-the-prompt-that-works-at-work",
+        "dayNumber": 3,
+        "title": "The Prompt That Works at Work",
+        "subtitle": "Four things every real brief contains — and why vague asks waste your time.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-4-module-1-checkpoint",
+        "dayNumber": 4,
+        "title": "Module 1 Checkpoint: Your Setup and Your Brief",
+        "subtitle": "Lock in the path you are on and the brief you will reuse all course.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-5-create-professional-documents",
+        "dayNumber": 5,
+        "title": "Create Professional Documents",
+        "subtitle": "Settle the argument and the outline before a word of prose is written.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-6-rewrite-reshape-retarget",
+        "dayNumber": 6,
+        "title": "Rewrite, Reshape, Retarget",
+        "subtitle": "Change the audience, length or tone without changing what is true.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-7-read-a-long-document-fast",
+        "dayNumber": 7,
+        "title": "Read a Long Document Fast",
+        "subtitle": "What it says, what it asks of you, and what it carefully leaves out.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-8-module-2-checkpoint",
+        "dayNumber": 8,
+        "title": "Module 2 Checkpoint: A Document You Would Send",
+        "subtitle": "Produce one real document and verify it against its source.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-9-understand-any-spreadsheet",
+        "dayNumber": 9,
+        "title": "Understand Any Spreadsheet",
+        "subtitle": "Work out what a workbook actually contains before you trust a single figure in it.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-10-find-the-insight",
+        "dayNumber": 10,
+        "title": "Find the Insight, Not Just the Summary",
+        "subtitle": "The difference between describing what the numbers did and knowing what it means.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-11-insight-to-slides",
+        "dayNumber": 11,
+        "title": "Turn an Insight into Slides",
+        "subtitle": "One finding per slide, stated in the headline, made visible by an honest chart.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-12-module-3-checkpoint",
+        "dayNumber": 12,
+        "title": "Module 3 Checkpoint: One Insight, One Slide",
+        "subtitle": "Take a real spreadsheet all the way to a slide you would put in front of a manager.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-13-take-control-of-your-inbox",
+        "dayNumber": 13,
+        "title": "Take Control of Your Inbox",
+        "subtitle": "Triage by what the sender wants from you, and keep the priority decision for yourself.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-14-summarise-a-long-thread",
+        "dayNumber": 14,
+        "title": "Summarise a Long Thread",
+        "subtitle": "Decisions, open questions and what you personally owe — each checked back against the message that said it.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-15-write-better-emails-faster",
+        "dayNumber": 15,
+        "title": "Write Better Emails Faster",
+        "subtitle": "Brief by outcome, then read every draft for what it commits you to before you send it.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-16-module-4-checkpoint",
+        "dayNumber": 16,
+        "title": "Module 4 Checkpoint: Inbox to Actions",
+        "subtitle": "Triage a real backlog, verify a real thread summary, and send one real reply.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-17-prepare-for-any-meeting",
+        "dayNumber": 17,
+        "title": "Prepare for Any Meeting in Minutes",
+        "subtitle": "Turn scattered material into a brief with your own position in it — and verify every figure before you say it out loud.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-18-never-lose-a-meeting-action",
+        "dayNumber": 18,
+        "title": "Never Lose a Meeting Action Again",
+        "subtitle": "Capture decisions and owned actions from a live meeting — with consent, and with every name and number checked.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-19-catch-up-on-what-you-missed",
+        "dayNumber": 19,
+        "title": "Catch Up on What You Missed",
+        "subtitle": "Get back into a project or a channel quickly — without mistaking a recap for a decision record.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-20-module-5-checkpoint",
+        "dayNumber": 20,
+        "title": "Module 5 Checkpoint: Meeting to Owned Plan",
+        "subtitle": "Prepare one real meeting, capture it properly, and confirm every action with the person who owns it.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-21-build-a-complete-business-report",
+        "dayNumber": 21,
+        "title": "Build a Complete Business Report",
+        "subtitle": "Take one set of numbers all the way to a document, a deck and a covering email — with every figure still traceable at the end.",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-22-design-your-ai-powered-workday",
+        "dayNumber": 22,
+        "title": "Design Your AI-Powered Workday",
+        "subtitle": "Build a repeatable routine around three moments in the day — and keep the decisions that are yours to make.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-23-redesign-one-recurring-process",
+        "dayNumber": 23,
+        "title": "Redesign One Recurring Process",
+        "subtitle": "Rebuild a process you repeat every week — and make sure it still works on the day the tool is wrong or unavailable.",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-24-capstone-your-microsoft-365-workflow",
+        "dayNumber": 24,
+        "title": "Capstone: Your Microsoft 365 Workflow",
+        "subtitle": "Put the whole course into one real piece of work, from the numbers to the email — and keep every protection you have learned.",
+        "duration": "9 min",
+        "xpValue": 25
+      }
+    ]
+  }
+}

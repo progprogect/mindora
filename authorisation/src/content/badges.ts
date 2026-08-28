@@ -1,0 +1,51 @@
+export const BADGES = [
+  {
+    id: 'first-step',
+    emoji: '👣',
+    label: 'First Step',
+    description: 'Complete your first lesson',
+    unlock: 'Complete your first lesson',
+  },
+  {
+    id: 'perfect-score',
+    emoji: '⭐',
+    label: 'Perfect Score',
+    description: 'Score 100% on any quiz',
+    unlock: 'Score 100% on any quiz',
+  },
+  {
+    id: 'week-warrior',
+    emoji: '🛡️',
+    label: 'Week Warrior',
+    description: 'Complete 7 lessons in 7 days',
+    unlock: 'Complete 7 lessons in 7 days',
+  },
+  {
+    id: 'on-fire',
+    emoji: '🔥',
+    label: 'On Fire',
+    description: 'Maintain a 7-day streak',
+    unlock: 'Maintain a 7-day streak',
+  },
+  {
+    id: 'module-master',
+    emoji: '🏅',
+    label: 'Module Master',
+    description: 'Finish a full module',
+    unlock: 'Finish a full module',
+  },
+  {
+    id: 'course-graduate',
+    emoji: '🎓',
+    label: 'Course Graduate',
+    description: 'Finish any course',
+    unlock: 'Finish any course',
+  },
+  {
+    id: 'unstoppable',
+    emoji: '💥',
+    label: 'Unstoppable',
+    description: 'Maintain a 30-day streak',
+    unlock: 'Maintain a 30-day streak',
+  },
+] as const

@@ -1,0 +1,1772 @@
+{
+  "id": "living-longer",
+  "title": "Living Longer and Living Better",
+  "subtitle": "Understand what truly drives long-term health — and build small daily habits that compound into decades of better living.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "ll-module-1",
+      "moduleNumber": 1,
+      "title": "The Foundations of Longevity",
+      "subtitle": "Understand what longevity really means, why healthspan matters more than lifespan, and how daily choices shape your future health.",
+      "days": "Lessons 1–7",
+      "skill": "Explain the difference between lifespan and healthspan, and why prevention is the highest-return health investment",
+      "lessonIds": [
+        "ll-1-lifespan-vs-healthspan",
+        "ll-2-what-healthy-ageing-means",
+        "ll-3-genetics-vs-lifestyle",
+        "ll-4-prevention-over-cure",
+        "ll-5-compounding-daily-choices",
+        "ll-6-never-too-early-or-late",
+        "ll-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "ll-module-2",
+      "moduleNumber": 2,
+      "title": "The Key Drivers of Long-Term Health",
+      "subtitle": "Explore the major factors — from movement and nutrition to sleep and stress — that science links to living longer and living better.",
+      "days": "Lessons 8–14",
+      "skill": "Identify the modifiable lifestyle factors with the largest impact on healthspan and disease prevention",
+      "lessonIds": [
+        "ll-8-movement-and-longevity",
+        "ll-9-nutrition-for-long-life",
+        "ll-10-sleep-and-recovery",
+        "ll-11-stress-and-resilience",
+        "ll-12-social-connection",
+        "ll-13-cognitive-health",
+        "ll-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "ll-module-3",
+      "moduleNumber": 3,
+      "title": "Your Longevity Action Plan",
+      "subtitle": "Turn knowledge into action with a personalised plan you can sustain — starting with small steps that compound over decades.",
+      "days": "Lessons 15–21",
+      "skill": "Build a realistic, evidence-based personal health plan focused on the changes with the highest return",
+      "lessonIds": [
+        "ll-15-your-health-baseline",
+        "ll-16-small-changes-big-returns",
+        "ll-17-building-sustainable-routines",
+        "ll-18-tracking-without-obsessing",
+        "ll-19-when-to-seek-help",
+        "ll-20-common-traps-and-myths",
+        "ll-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ll-1-lifespan-vs-healthspan",
+      "dayNumber": 1,
+      "moduleId": "ll-module-1",
+      "title": "Lifespan vs Healthspan",
+      "subtitle": "Living longer means nothing if those extra years are spent in poor health. Learn the distinction that changes everything.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What If You Could Add 10 Healthy Years?",
+          "body": "Most people focus on how long they live. But the real question is: how many of those years will you spend feeling good, thinking clearly, and moving freely? That gap between total years alive and years spent in good health is one of the most important ideas in modern medicine.",
+          "stat": "12.5 years",
+          "statLabel": "Average years spent in poor health in the UK (ONS, 2022)"
+        },
+        {
+          "type": "content",
+          "headline": "Lifespan Is Just One Number",
+          "body": "Lifespan is simple — it's the total number of years you live. Life expectancy in the UK is around 81 years. But this number tells you nothing about the quality of those years. Two people can both live to 80, yet one spends the last 15 years managing chronic disease while the other stays active and independent until the final months."
+        },
+        {
+          "type": "content",
+          "headline": "Healthspan — The Years That Actually Count",
+          "body": "Healthspan is the number of years you spend free from serious disease, disability, and cognitive decline. It's the period of your life where you can do what you want — walk without pain, think clearly, live independently, enjoy time with people you love. The goal isn't just to live longer. It's to close the gap between lifespan and healthspan.",
+          "bullets": [
+            "Healthspan = years of functional, independent life",
+            "Lifespan – healthspan = years spent managing illness",
+            "Most people lose 10–15 healthy years before death",
+            "Small lifestyle changes can dramatically extend healthspan"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why This Distinction Matters Now",
+          "body": "Medicine has become very good at keeping people alive longer — but not always at keeping them well. Many chronic conditions (type 2 diabetes, heart disease, dementia) develop slowly over decades. By the time symptoms appear, the damage has been accumulating for years. The earlier you act, the more healthy years you protect.",
+          "stat": "80%",
+          "statLabel": "of chronic disease is linked to modifiable lifestyle factors (WHO)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your One-Minute Reflection",
+          "body": "Think of someone you know in their 70s or 80s. Are they living well — moving freely, thinking clearly, enjoying life? Or are they limited by health problems that built up over time? Which version do you want for yourself? That answer is the start of your healthspan strategy."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"healthspan\" refer to?",
+          "type": "mcq",
+          "options": [
+            "The total number of years you live",
+            "The years you spend free from serious disease and disability",
+            "The age at which you first visit a doctor",
+            "Your genetic life expectancy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Healthspan is specifically the period of life spent in good health — free from chronic disease, disability, and cognitive decline. It's different from lifespan, which is simply total years alive."
+        },
+        {
+          "question": "According to the WHO, approximately what percentage of chronic disease is linked to modifiable lifestyle factors?",
+          "type": "mcq",
+          "options": [
+            "40%",
+            "60%",
+            "80%",
+            "95%"
+          ],
+          "correctIndex": 2,
+          "explanation": "The WHO estimates that around 80% of chronic disease (heart disease, type 2 diabetes, many cancers) is linked to lifestyle factors that can be changed — such as diet, movement, sleep, and stress management."
+        },
+        {
+          "question": "True or false: The goal of longevity science is simply to make people live as long as possible.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Modern longevity science focuses on extending healthspan — the quality years — not just adding time. Living to 95 in poor health is not the goal; living to 85 with full independence and vitality is."
+        }
+      ]
+    },
+    {
+      "id": "ll-2-what-healthy-ageing-means",
+      "dayNumber": 2,
+      "moduleId": "ll-module-1",
+      "title": "What Healthy Ageing Actually Means",
+      "subtitle": "Ageing isn't a disease — it's a process. Understand what \"ageing well\" looks like and why it's more achievable than you think.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Ageing Doesn't Have to Mean Decline",
+          "body": "Society tells us ageing means getting weaker, slower, and sicker. But research on healthy older adults shows a very different picture. Many people in their 70s, 80s, and even 90s remain sharp, active, and independent. The difference isn't luck — it's the habits they built decades earlier.",
+          "stat": "30%",
+          "statLabel": "of how you age is determined by genetics — the rest is lifestyle"
+        },
+        {
+          "type": "content",
+          "headline": "What \"Healthy Ageing\" Actually Looks Like",
+          "body": "The WHO defines healthy ageing as \"the process of developing and maintaining the functional ability that enables wellbeing in older age.\" It's not about being disease-free — it's about maintaining the ability to do the things that matter to you. Walking to the shops. Playing with grandchildren. Cooking a meal. Remembering names.",
+          "bullets": [
+            "Physical independence — moving without assistance",
+            "Cognitive clarity — thinking, remembering, learning",
+            "Emotional wellbeing — purpose, connection, engagement",
+            "Social participation — relationships, community, contribution"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Blue Zones — Evidence in Action",
+          "body": "Blue Zones are regions where people consistently live to 100+ in good health: Okinawa (Japan), Sardinia (Italy), Nicoya (Costa Rica), Ikaria (Greece), and Loma Linda (California). Researchers found common threads — daily movement, plant-rich diets, strong social bonds, sense of purpose, and low chronic stress. No supplements. No biohacks. Just sustainable daily habits."
+        },
+        {
+          "type": "content",
+          "headline": "The Compression of Morbidity",
+          "body": "The ideal scenario isn't avoiding illness altogether — it's compressing illness into the shortest possible period at the end of life. Instead of spending 15 years declining, you spend 15 months. This concept, called \"compression of morbidity,\" is the real goal of longevity medicine. And lifestyle choices are the most powerful tool we have to achieve it.",
+          "stat": "15 → 1.5",
+          "statLabel": "Compression of morbidity: from years of decline to months"
+        },
+        {
+          "type": "try-it",
+          "headline": "Define Your Own Version",
+          "body": "What does \"ageing well\" mean to you personally? Not in abstract medical terms — in real life. What do you want to still be doing at 75? At 85? Write down one physical activity, one mental activity, and one social activity you want to maintain. That's your personal healthspan target."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the WHO, healthy ageing is primarily about:",
+          "type": "mcq",
+          "options": [
+            "Being completely disease-free",
+            "Maintaining functional ability for wellbeing",
+            "Living past 100 years",
+            "Taking the right supplements"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WHO defines healthy ageing as maintaining the functional ability that enables wellbeing — not the absence of all disease. It's about being able to do what matters to you."
+        },
+        {
+          "question": "What do Blue Zone populations have in common?",
+          "type": "mcq",
+          "options": [
+            "Expensive healthcare and supplements",
+            "Daily movement, plant-rich diets, social bonds, and purpose",
+            "Strict exercise routines and calorie counting",
+            "Genetic advantages not found elsewhere"
+          ],
+          "correctIndex": 1,
+          "explanation": "Blue Zone research consistently finds simple lifestyle patterns — daily movement, mostly plant-based eating, strong social connections, and a sense of purpose — not expensive interventions."
+        },
+        {
+          "question": "True or false: About 70% of how you age is determined by lifestyle, not genetics.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Research (including twin studies) suggests only about 25–30% of longevity is genetic. The remaining 70–75% is influenced by lifestyle and environment — meaning your daily choices matter enormously."
+        }
+      ]
+    },
+    {
+      "id": "ll-3-genetics-vs-lifestyle",
+      "dayNumber": 3,
+      "moduleId": "ll-module-1",
+      "title": "Genetics vs Lifestyle",
+      "subtitle": "Your genes load the gun — but your lifestyle pulls the trigger. Understand how much control you actually have.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your DNA Is Not Your Destiny",
+          "body": "It's tempting to believe your health future is written in your genes. \"My dad had a heart attack at 55, so I probably will too.\" But the science tells a much more empowering story. Your genes create predispositions — not certainties. And your daily choices can silence harmful genes or amplify protective ones.",
+          "stat": "25–30%",
+          "statLabel": "of longevity variation is explained by genetics (twin studies)"
+        },
+        {
+          "type": "content",
+          "headline": "What Genes Actually Do",
+          "body": "Genes provide instructions for building proteins. Some gene variants increase your risk of certain diseases — but \"increased risk\" is not the same as \"guaranteed outcome.\" Having a gene linked to type 2 diabetes doesn't mean you'll develop it. It means you need to pay more attention to the lifestyle factors that trigger it.",
+          "bullets": [
+            "Genes create risk — they don't guarantee outcomes",
+            "Most chronic diseases involve dozens of genes, not one",
+            "Environment and behaviour determine whether risk genes \"activate\"",
+            "Family history is informative, not deterministic"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Epigenetics — Your Lifestyle Talks to Your Genes",
+          "body": "Epigenetics is the study of how your behaviour and environment can change the way your genes work — without changing the DNA itself. Exercise, nutrition, sleep, and stress all send chemical signals that switch genes on or off. This means two identical twins can age very differently depending on their habits."
+        },
+        {
+          "type": "content",
+          "headline": "The 70/30 Split — What the Research Shows",
+          "body": "Large twin studies (including the Swedish Twin Registry) show that genetics explains only 25–30% of the variation in human lifespan. The rest — roughly 70% — comes from lifestyle, environment, and behaviour. This is one of the most empowering findings in health science: you have far more influence than your family tree suggests.",
+          "stat": "70%",
+          "statLabel": "of your health trajectory is within your influence"
+        },
+        {
+          "type": "try-it",
+          "headline": "Reframe Your Family History",
+          "body": "Think about any health conditions that run in your family. Instead of \"I'll probably get that too,\" try reframing: \"I have a higher baseline risk, which means I should be more intentional about [relevant lifestyle factor].\" This isn't denial — it's informed, proactive prevention."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does epigenetics study?",
+          "type": "mcq",
+          "options": [
+            "How to edit DNA to remove disease genes",
+            "How behaviour and environment change gene expression without altering DNA",
+            "How to predict lifespan from genetic testing",
+            "How diseases are inherited from parents"
+          ],
+          "correctIndex": 1,
+          "explanation": "Epigenetics studies how external factors (diet, exercise, stress, sleep) can change the way genes are expressed — turning them on or off — without altering the underlying DNA sequence."
+        },
+        {
+          "question": "According to twin studies, approximately what percentage of lifespan variation is explained by genetics?",
+          "type": "mcq",
+          "options": [
+            "10–15%",
+            "25–30%",
+            "50–60%",
+            "75–80%"
+          ],
+          "correctIndex": 1,
+          "explanation": "Large twin studies consistently show that genetics accounts for only 25–30% of lifespan variation. The majority is determined by lifestyle, environment, and behavioural choices."
+        },
+        {
+          "question": "True or false: Having a gene linked to a disease means you will definitely develop that disease.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Most disease-linked genes create a predisposition — an increased probability — not a guaranteed outcome. Lifestyle factors determine whether that genetic risk is activated or suppressed."
+        }
+      ]
+    },
+    {
+      "id": "ll-4-prevention-over-cure",
+      "dayNumber": 4,
+      "moduleId": "ll-module-1",
+      "title": "Prevention Over Cure",
+      "subtitle": "The most powerful health intervention isn't a drug or a surgery — it's preventing the problem from developing in the first place.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Quiet Epidemic Nobody Talks About",
+          "body": "Heart disease, type 2 diabetes, many cancers, and dementia don't appear overnight. They develop silently over 10–30 years before symptoms emerge. By the time you feel something is wrong, the disease has been building for decades. This is why waiting for problems to appear is the riskiest strategy of all.",
+          "stat": "10–30 years",
+          "statLabel": "Most chronic diseases develop silently before diagnosis"
+        },
+        {
+          "type": "content",
+          "headline": "Medicine 3.0 — From Reactive to Proactive",
+          "body": "Traditional medicine (sometimes called \"Medicine 2.0\") waits for disease to appear, then treats it. But a new paradigm — preventive medicine, or \"Medicine 3.0\" — focuses on identifying and addressing risk factors decades before disease develops. The goal shifts from treating the sick to keeping the healthy, healthy.",
+          "bullets": [
+            "Medicine 2.0: Wait → Diagnose → Treat",
+            "Medicine 3.0: Predict → Prevent → Maintain",
+            "Prevention is cheaper, more effective, and less painful",
+            "The earlier you intervene, the greater the payoff"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Compounding Cost of Delay",
+          "body": "Health behaviours compound — in both directions. Ten years of inactivity doesn't just leave you 10 years less fit. It increases inflammation, accelerates muscle loss, stiffens arteries, and changes metabolic function. But the reverse is also true: 10 years of consistent movement compounds into dramatically better cardiovascular, metabolic, and cognitive health."
+        },
+        {
+          "type": "content",
+          "headline": "Prevention Works — The Evidence",
+          "body": "A landmark study (Li et al., 2018, Circulation) followed 123,000 people for 34 years and found that adopting five simple habits — not smoking, healthy BMI, 30+ minutes of daily exercise, moderate alcohol, and a healthy diet — was associated with 14 extra years of life for women and 12 for men. Not extra years in hospital. Extra healthy years.",
+          "stat": "14 years",
+          "statLabel": "Extra life expectancy from five basic lifestyle habits (Li et al., 2018)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Current Prevention",
+          "body": "Rate yourself honestly (1–5) on: regular movement, balanced nutrition, adequate sleep, stress management, and social connection. Don't judge — just notice. Which area has the biggest gap between where you are and where you'd like to be? That's your highest-return starting point."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main difference between \"Medicine 2.0\" and \"Medicine 3.0\"?",
+          "type": "mcq",
+          "options": [
+            "Medicine 3.0 uses more expensive drugs",
+            "Medicine 3.0 focuses on prevention before disease appears",
+            "Medicine 2.0 doesn't use technology",
+            "Medicine 3.0 only treats young people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Medicine 3.0 shifts focus from reactive treatment (waiting for disease to appear) to proactive prevention — identifying and addressing risk factors decades before symptoms develop."
+        },
+        {
+          "question": "The study by Li et al. (2018) found that five basic lifestyle habits were associated with how many extra years of life for women?",
+          "type": "mcq",
+          "options": [
+            "5 years",
+            "8 years",
+            "14 years",
+            "20 years"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 34-year study of 123,000 people found that five simple habits (not smoking, healthy weight, daily exercise, moderate alcohol, healthy diet) were associated with 14 extra years for women and 12 for men."
+        },
+        {
+          "question": "True or false: Most chronic diseases develop suddenly without any warning period.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Most chronic diseases (heart disease, type 2 diabetes, dementia) develop silently over 10–30 years before symptoms become noticeable. This long \"silent phase\" is precisely why prevention is so powerful."
+        }
+      ]
+    },
+    {
+      "id": "ll-5-compounding-daily-choices",
+      "dayNumber": 5,
+      "moduleId": "ll-module-1",
+      "title": "How Small Daily Choices Compound",
+      "subtitle": "You don't need radical changes. Small, consistent actions compound into extraordinary results over decades.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 1% That Changes Everything",
+          "body": "If you improve by just 1% each day, you're 37 times better after one year. This isn't just a motivational idea — it's how biology actually works. Your body rebuilds itself constantly. Every cell, tissue, and organ is influenced by the signals you send it today. Small choices, repeated daily, are the most powerful health intervention available.",
+          "stat": "37x",
+          "statLabel": "1% daily improvement compounded over one year"
+        },
+        {
+          "type": "content",
+          "headline": "Why Consistency Beats Intensity",
+          "body": "A 10-minute walk every day is more powerful than a 2-hour gym session once a month. Your body responds to frequency, not intensity alone. Consistent daily signals — movement, good food, adequate sleep — keep your systems calibrated. Occasional heroic efforts followed by weeks of inactivity send mixed signals and produce minimal lasting benefit.",
+          "bullets": [
+            "Daily 10-min walk > monthly intense workout for longevity",
+            "Consistent sleep schedule > occasional long sleep-in",
+            "Eating vegetables daily > periodic \"detox\" diets",
+            "Regular social connection > annual holiday gatherings"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Biology of Compounding",
+          "body": "Your body is constantly remodelling itself. Bone replaces itself every 10 years. Your gut lining every 3–5 days. Red blood cells every 120 days. Every time your body rebuilds, it uses the materials and signals available right now. Better inputs today = better rebuilding tomorrow. Over years, this compounds into a dramatically different body."
+        },
+        {
+          "type": "content",
+          "headline": "The Invisible Tipping Point",
+          "body": "Health changes are often invisible for months before they become visible. You can't feel your arteries becoming more flexible. You can't see mitochondria multiplying. You can't measure improved insulin sensitivity in the mirror. But these invisible changes are happening from day one — and they compound silently until the results become unmistakable.",
+          "stat": "66 days",
+          "statLabel": "Average time for a new behaviour to become automatic (Lally et al., 2010)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Choose Your First 1% Improvement",
+          "body": "Pick one tiny health action you can do tomorrow without willpower: a 5-minute walk after lunch, one extra glass of water, 10 minutes less screen time before bed. Don't aim for life-changing. Aim for repeatable. The compounding will take care of the rest."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is consistency more important than intensity for long-term health?",
+          "type": "mcq",
+          "options": [
+            "Because intense exercise is dangerous",
+            "Because the body responds to frequent repeated signals, not occasional bursts",
+            "Because you burn more calories walking than running",
+            "Because doctors recommend it"
+          ],
+          "correctIndex": 1,
+          "explanation": "The body adapts to the signals it receives most frequently. Regular daily habits (movement, nutrition, sleep) keep biological systems calibrated and produce compounding benefits that occasional intense efforts cannot match."
+        },
+        {
+          "question": "According to research by Lally et al. (2010), how long does it typically take for a new behaviour to become automatic?",
+          "type": "mcq",
+          "options": [
+            "7 days",
+            "21 days",
+            "66 days",
+            "6 months"
+          ],
+          "correctIndex": 2,
+          "explanation": "The study found that on average it takes 66 days for a new behaviour to become automatic — though it ranged from 18 to 254 days depending on the complexity of the habit."
+        },
+        {
+          "question": "True or false: Health improvements from lifestyle changes are immediately visible and measurable.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Many health improvements (better insulin sensitivity, arterial flexibility, mitochondrial function) happen invisibly for weeks or months before becoming noticeable. The benefits compound silently before producing visible results."
+        }
+      ]
+    },
+    {
+      "id": "ll-6-never-too-early-or-late",
+      "dayNumber": 6,
+      "moduleId": "ll-module-1",
+      "title": "It's Never Too Early or Too Late",
+      "subtitle": "Whether you're 25 or 65, the best time to start investing in your health is always right now.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Best Time Was 20 Years Ago. The Second Best Time Is Now.",
+          "body": "One of the biggest myths about health is that there's an age window you've missed. \"I'm too young to worry about that.\" \"I'm too old to make a difference.\" Both are wrong. Research shows meaningful health improvements at every age — from teenagers building bone density to 90-year-olds gaining muscle mass."
+        },
+        {
+          "type": "content",
+          "headline": "Starting Young — The Invisible Advantage",
+          "body": "Your 20s and 30s are when you build your \"health capital\" — bone density peaks around 30, cardiovascular fitness is easiest to build, and metabolic health is most responsive to good habits. Starting early doesn't feel urgent because you feel fine. But you're making deposits into a health account you'll draw from for decades.",
+          "bullets": [
+            "Peak bone density is built by age 30 — then slowly declines",
+            "Cardiovascular fitness in your 30s predicts heart health at 60",
+            "Metabolic flexibility is easiest to maintain before 40",
+            "Habits formed young become effortless defaults later"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Starting Later — Still Enormously Powerful",
+          "body": "A 2022 study in JAMA Network Open found that people who started exercising regularly after age 40 had nearly the same mortality benefit as those who'd been active their whole lives. Another study found that adults who quit smoking at 50 regained 6 years of life expectancy. The body's capacity to heal and adapt never fully disappears.",
+          "stat": "6 years",
+          "statLabel": "Life expectancy regained by quitting smoking at age 50"
+        },
+        {
+          "type": "content",
+          "headline": "Neuroplasticity — Your Brain Keeps Adapting",
+          "body": "It's not just your body. Your brain continues forming new neural connections throughout life. Learning new skills, regular exercise, social interaction, and quality sleep all promote neuroplasticity at any age. A 70-year-old who starts learning a language or instrument is literally building new brain architecture."
+        },
+        {
+          "type": "try-it",
+          "headline": "Drop the \"Too Late\" Story",
+          "body": "If you've been telling yourself \"it's too late to make a difference,\" challenge that belief today. Write down one health change you've been putting off because you thought the window had closed. The research is clear: starting now still produces meaningful, measurable benefits. The only truly harmful choice is not starting at all."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did a 2022 JAMA study find about people who started exercising after age 40?",
+          "type": "mcq",
+          "options": [
+            "They gained no significant benefit compared to inactive people",
+            "They had nearly the same mortality benefit as lifelong exercisers",
+            "They needed to exercise twice as much to see results",
+            "They were more likely to get injured"
+          ],
+          "correctIndex": 1,
+          "explanation": "The study found that starting regular exercise after 40 provided nearly the same mortality benefit as being active throughout life — showing it's never too late to gain significant health benefits from movement."
+        },
+        {
+          "question": "At approximately what age does bone density peak?",
+          "type": "mcq",
+          "options": [
+            "Age 20",
+            "Age 30",
+            "Age 45",
+            "Age 60"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bone density typically peaks around age 30, after which it gradually declines. This is why building strong bones in your 20s and 30s provides a crucial \"health capital\" reserve for later life."
+        },
+        {
+          "question": "True or false: The brain loses all ability to form new neural connections after age 50.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Neuroplasticity — the brain's ability to form new connections — continues throughout life. Learning, exercise, social connection, and quality sleep all promote new neural pathways at any age."
+        }
+      ]
+    },
+    {
+      "id": "ll-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "ll-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Review the foundations of longevity — lifespan vs healthspan, genetics, prevention, and compounding — and consolidate what you've learned.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built the Foundation",
+          "body": "In one week, you've gained a clearer understanding of longevity than most people develop in a lifetime. You now know: it's about healthspan, not just lifespan. Your genes aren't your destiny. Prevention beats treatment. And small daily choices compound into extraordinary outcomes. Let's lock that in."
+        },
+        {
+          "type": "content",
+          "headline": "The Key Ideas — Your Quick Reference",
+          "body": "Here's what matters most from Module 1:",
+          "bullets": [
+            "Healthspan = years in good health. The goal is to close the gap with lifespan.",
+            "Only 25–30% of ageing is genetic — 70%+ is lifestyle and environment.",
+            "Chronic diseases develop silently for 10–30 years before symptoms appear.",
+            "Prevention is more powerful, cheaper, and less painful than treatment.",
+            "Consistency beats intensity — small daily actions compound dramatically.",
+            "It's never too late to start — meaningful benefits at every age."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What This Means for You",
+          "body": "You don't need to overhaul your life overnight. You don't need expensive tests, supplements, or biohacks. You need a small number of consistent daily habits across the key domains of health — movement, nutrition, sleep, stress, and connection. Module 2 will show you exactly which factors have the biggest impact."
+        },
+        {
+          "type": "content",
+          "headline": "The Mindset Shift",
+          "body": "Most people think about health reactively: \"I'll deal with it when something goes wrong.\" The longevity mindset flips this: \"I'll invest a little every day so problems are less likely to develop.\" This shift — from reactive patient to proactive investor — is the single most important change you can make.",
+          "stat": "Investor, not patient",
+          "statLabel": "The longevity mindset shift"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Week 1 Commitment",
+          "body": "Choose one small action from this week that resonated with you and commit to doing it daily for the next 7 days. It could be a 5-minute walk, an extra vegetable serving, or 10 minutes less screen time before bed. Write it down. Tell someone. Start tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which statement best summarises the \"longevity mindset\"?",
+          "type": "mcq",
+          "options": [
+            "Wait for problems, then treat them aggressively",
+            "Invest a little every day to prevent problems from developing",
+            "Focus on living as long as possible regardless of quality",
+            "Follow the latest health trends and biohacks"
+          ],
+          "correctIndex": 1,
+          "explanation": "The longevity mindset shifts from reactive (treating disease after it appears) to proactive (investing daily in prevention). It's about being a health investor, not a patient."
+        },
+        {
+          "question": "What are the five key lifestyle domains that influence healthspan?",
+          "type": "mcq",
+          "options": [
+            "Supplements, genetics, luck, wealth, and climate",
+            "Movement, nutrition, sleep, stress management, and social connection",
+            "Weight loss, cardio, protein, meditation, and cold exposure",
+            "Organic food, gym membership, 8 hours sleep, yoga, and therapy"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five key modifiable domains are movement, nutrition, sleep, stress management, and social connection. These interact and compound over time to determine healthspan."
+        },
+        {
+          "question": "True or false: You need to make radical lifestyle changes to meaningfully improve your healthspan.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research consistently shows that small, consistent daily actions compound into large health benefits over time. Radical changes are harder to sustain and often less effective than steady, moderate improvements."
+        }
+      ]
+    },
+    {
+      "id": "ll-8-movement-and-longevity",
+      "dayNumber": 8,
+      "moduleId": "ll-module-2",
+      "title": "Movement and Longevity",
+      "subtitle": "Exercise is the closest thing to a miracle drug for a longer, healthier life. Here's what the science actually says.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Cheapest Medicine in the World",
+          "body": "If a pill existed that reduced your risk of heart disease by 35%, cancer by 30%, dementia by 40%, depression by 26%, and type 2 diabetes by 50% — you'd take it every day. That pill is regular physical movement. And it's free.",
+          "stat": "35%",
+          "statLabel": "Reduction in cardiovascular disease risk from regular exercise"
+        },
+        {
+          "type": "content",
+          "headline": "What Movement Actually Does to Your Body",
+          "body": "Exercise isn't just about burning calories. Regular movement improves insulin sensitivity, lowers blood pressure, reduces inflammation, builds muscle and bone density, improves sleep quality, supports brain health, and trains your cardiovascular system to handle stress. Every single one of these effects extends healthspan.",
+          "bullets": [
+            "Cardiovascular fitness: lower resting heart rate, more efficient oxygen use",
+            "Metabolic health: improved insulin sensitivity, better blood sugar control",
+            "Brain health: promotes neurogenesis and reduces dementia risk",
+            "Musculoskeletal: stronger muscles and bones, better balance"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Sitting Problem",
+          "body": "Prolonged sitting is independently harmful — even if you exercise for 30 minutes each morning. Studies show that sitting for more than 8 hours a day increases mortality risk by 20%, regardless of overall activity level. Breaking up sedentary time every 30–60 minutes with short movement breaks significantly reduces this risk.",
+          "stat": "20%",
+          "statLabel": "Increased mortality risk from sitting 8+ hours daily"
+        },
+        {
+          "type": "content",
+          "headline": "VO2 Max — The Best Predictor of Lifespan",
+          "body": "VO2 max — your cardiovascular fitness level — is one of the strongest predictors of long-term health and mortality. A landmark study (Kokkinos et al., 2022) found that people in the top 25% of cardiorespiratory fitness had a 45–70% lower mortality risk than the bottom 25%. No single biomarker predicts longevity better."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Movement Audit",
+          "body": "Think about yesterday. How many hours did you sit? How many steps did you take? How many minutes of elevated heart rate did you get? Just observe — no judgment. What's one thing you could add this week: a lunchtime walk, cycling to an errand, a 10-minute workout? Start there."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Beyond calories, what does regular exercise do for the body?",
+          "type": "mcq",
+          "options": [
+            "It primarily helps with weight loss only",
+            "It improves insulin sensitivity, reduces inflammation, and supports brain health",
+            "It only helps cardiovascular fitness",
+            "It mainly reduces stress levels"
+          ],
+          "correctIndex": 1,
+          "explanation": "Exercise produces a wide range of benefits including improved insulin sensitivity, reduced inflammation, better blood pressure, stronger bones and muscles, improved sleep, and brain health — all of which extend healthspan."
+        },
+        {
+          "question": "What is VO2 max and why does it matter for longevity?",
+          "type": "mcq",
+          "options": [
+            "A measure of muscle strength — predicts injury risk",
+            "A measure of cardiovascular fitness — one of the strongest predictors of mortality risk",
+            "A blood test for oxygen levels — useful for altitude sickness",
+            "A measure of flexibility — linked to joint health"
+          ],
+          "correctIndex": 1,
+          "explanation": "VO2 max measures cardiorespiratory fitness — how efficiently your body uses oxygen during exercise. It's one of the strongest predictors of long-term mortality, with high-fitness individuals having 45–70% lower risk than low-fitness peers."
+        },
+        {
+          "question": "True or false: Prolonged sitting is harmless as long as you exercise for 30 minutes in the morning.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research shows prolonged sitting is independently harmful even for people who exercise daily. Breaking up sedentary time throughout the day reduces mortality risk regardless of morning workout habits."
+        }
+      ]
+    },
+    {
+      "id": "ll-9-nutrition-for-long-life",
+      "dayNumber": 9,
+      "moduleId": "ll-module-2",
+      "title": "Nutrition for a Long, Healthy Life",
+      "subtitle": "No single diet is perfect. But a handful of consistent principles are shared by every population that lives long and lives well.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Diet Wars Are Mostly a Distraction",
+          "body": "Keto, paleo, vegan, Mediterranean — the nutrition debate can feel overwhelming. But the populations that live longest aren't following any branded diet. They eat mostly whole foods, plenty of plants, adequate protein, and rarely touch ultra-processed products. The details matter far less than the principles."
+        },
+        {
+          "type": "content",
+          "headline": "The Core Principles That Actually Hold Up",
+          "body": "Despite disagreement on specifics, nutrition science consistently agrees on a few things: eating more vegetables, fruit, whole grains, legumes, and nuts is associated with better health outcomes. Eating more ultra-processed foods is associated with worse ones. Protein intake matters more as we age. Fibre is chronically underconsumed.",
+          "bullets": [
+            "Vegetables and fruit: aim for variety and colour — 5+ portions daily",
+            "Protein: crucial for muscle maintenance, especially over 50",
+            "Fibre: most people eat half the recommended 30g per day",
+            "Whole grains over refined: better blood sugar, more nutrients",
+            "Ultra-processed foods: strong links to chronic disease and early death"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ultra-Processed Foods — The Real Problem",
+          "body": "Ultra-processed foods (UPFs) are industrial formulations with multiple additives, flavourings, and preservatives — crisps, fizzy drinks, many breakfast cereals, packaged snacks. A 2024 meta-analysis in the BMJ of over 10 million people found UPF consumption was associated with 32 adverse health outcomes including heart disease, cancer, type 2 diabetes, anxiety, and early death.",
+          "stat": "32",
+          "statLabel": "Adverse health outcomes linked to ultra-processed food consumption (BMJ, 2024)"
+        },
+        {
+          "type": "content",
+          "headline": "Protein — The Underappreciated Longevity Nutrient",
+          "body": "After 50, the body becomes less efficient at using dietary protein. This means older adults need more protein per kilogram of body weight than younger adults to maintain muscle mass. Muscle loss (sarcopenia) accelerates after 60 and is a major driver of frailty, falls, and metabolic decline. Prioritising protein at every meal is one of the highest-return dietary changes for long-term health."
+        },
+        {
+          "type": "try-it",
+          "headline": "The 80% Rule",
+          "body": "You don't need to eat perfectly — you need to eat well most of the time. Aim for 80% of meals to be built around whole foods: vegetables, protein, wholegrains, fruit, legumes. The remaining 20% can include whatever you enjoy. This isn't a diet — it's a sustainable default that compounds over decades."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does research on Blue Zone populations consistently show about diet?",
+          "type": "mcq",
+          "options": [
+            "They follow strict calorie-counted diets",
+            "They eat mostly whole foods, plants, and rarely ultra-processed products",
+            "They eat high-protein, low-carb diets",
+            "They fast for extended periods regularly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Blue Zone populations share broad dietary patterns: mostly whole, minimally processed food, abundant plants, adequate protein — without following any specific branded diet protocol."
+        },
+        {
+          "question": "Why does protein become especially important after the age of 50?",
+          "type": "mcq",
+          "options": [
+            "Because the body needs more energy from protein",
+            "Because the body becomes less efficient at using dietary protein to maintain muscle",
+            "Because carbohydrates become harmful after 50",
+            "Because the kidneys process protein more efficiently with age"
+          ],
+          "correctIndex": 1,
+          "explanation": "After 50, anabolic resistance increases — meaning the body needs more dietary protein to stimulate the same amount of muscle protein synthesis. Without adequate protein, muscle loss (sarcopenia) accelerates significantly."
+        },
+        {
+          "question": "True or false: A BMJ 2024 meta-analysis found ultra-processed food consumption was linked to 32 adverse health outcomes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. The 2024 BMJ meta-analysis covering over 10 million people found 32 adverse health outcomes associated with higher ultra-processed food consumption, including heart disease, cancer, diabetes, anxiety, and premature death."
+        }
+      ]
+    },
+    {
+      "id": "ll-10-sleep-and-recovery",
+      "dayNumber": 10,
+      "moduleId": "ll-module-2",
+      "title": "Sleep, Recovery and Long-Term Health",
+      "subtitle": "Sleep isn't rest — it's active repair. Without it, every other health habit loses much of its power.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Out-Train a Sleep Deficit",
+          "body": "You can eat well, exercise regularly, and take every supplement on the market — but if you're chronically sleeping less than 7 hours, your body can't fully use any of it. Sleep is when your brain clears toxic waste, your muscles rebuild, your hormones reset, and your immune system consolidates. It's not downtime. It's the most productive thing you do.",
+          "stat": "7–9 hours",
+          "statLabel": "Recommended sleep for adults — the window where risk is lowest"
+        },
+        {
+          "type": "content",
+          "headline": "What Sleep Does That Nothing Else Can",
+          "body": "During sleep, the brain activates its glymphatic system — a waste-clearance network that flushes out amyloid beta (a protein linked to Alzheimer's). Deep sleep triggers growth hormone release for cell repair and muscle recovery. REM sleep consolidates memories and processes emotional experiences. No waking activity can replicate these functions.",
+          "bullets": [
+            "Glymphatic clearance: removes brain waste linked to dementia",
+            "Growth hormone: released in deep sleep for repair and recovery",
+            "Memory consolidation: REM sleep processes and stores learning",
+            "Immune reset: cytokine production peaks during sleep"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Chronic Short Sleep — The Cumulative Toll",
+          "body": "Sleeping less than 6 hours a night is associated with a 13% higher risk of all-cause mortality. Chronic sleep deprivation accelerates ageing markers, impairs glucose regulation, raises cortisol, suppresses immune function, and increases inflammatory markers. And critically — most chronically sleep-deprived people don't feel as bad as they actually are."
+        },
+        {
+          "type": "content",
+          "headline": "Sleep Regularity Matters as Much as Duration",
+          "body": "A 2023 study in Sleep (Windred et al.) found that sleep regularity — going to bed and waking at consistent times — was a stronger predictor of mortality than sleep duration alone. People with irregular sleep patterns had a 20–48% higher mortality risk compared to those with regular schedules. Your body clock thrives on consistency.",
+          "stat": "48%",
+          "statLabel": "Higher mortality risk from irregular sleep patterns (Windred et al., 2023)"
+        },
+        {
+          "type": "try-it",
+          "headline": "The One-Week Sleep Experiment",
+          "body": "For the next 7 days, aim to go to bed and wake up at the same time — even on weekends. Don't add any other changes. Just consistency. Notice how you feel by day 5. Most people are surprised by how much difference regularity alone makes, even before addressing sleep quality."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the glymphatic system and why does it matter for longevity?",
+          "type": "mcq",
+          "options": [
+            "A digestive system that processes nutrients during sleep",
+            "A brain waste-clearance network that flushes out proteins linked to dementia",
+            "A lymphatic system in the gut that supports immunity",
+            "A hormonal system that regulates sleep cycles"
+          ],
+          "correctIndex": 1,
+          "explanation": "The glymphatic system is the brain's waste-clearance network, most active during deep sleep. It flushes out amyloid beta and other toxic proteins linked to Alzheimer's disease — a function that cannot be replicated during waking hours."
+        },
+        {
+          "question": "According to the 2023 Windred et al. study, what was found about sleep regularity?",
+          "type": "mcq",
+          "options": [
+            "Sleep duration was more important than regularity",
+            "Irregular sleepers had up to 48% higher mortality risk than regular sleepers",
+            "Weekend catch-up sleep fully compensated for weekday sleep loss",
+            "Sleep quality only matters after age 60"
+          ],
+          "correctIndex": 1,
+          "explanation": "The study found sleep regularity was a stronger predictor of mortality than duration, with irregular sleep patterns associated with 20–48% higher mortality risk compared to consistent sleep schedules."
+        },
+        {
+          "question": "True or false: Chronically sleep-deprived people usually feel as impaired as they actually are.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research shows chronically sleep-deprived people consistently underestimate their impairment. They adapt subjectively to feeling tired while objective performance continues to decline — making them poor judges of their own sleep debt."
+        }
+      ]
+    },
+    {
+      "id": "ll-11-stress-and-resilience",
+      "dayNumber": 11,
+      "moduleId": "ll-module-2",
+      "title": "Stress, Cortisol and Resilience",
+      "subtitle": "Short-term stress is healthy. Chronic stress is one of the most damaging forces in modern life. Learn the difference — and what to do about it.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stress Isn't the Enemy — Chronic Stress Is",
+          "body": "The stress response evolved to save your life. When you sense danger, cortisol and adrenaline flood your system, sharpen your focus, and prepare your body for action. This is useful — even healthy — in short bursts. The problem is modern life keeps this system permanently switched on. And a chronically activated stress response slowly damages almost every organ in your body.",
+          "stat": "77%",
+          "statLabel": "of people report physical symptoms caused by stress (APA)"
+        },
+        {
+          "type": "content",
+          "headline": "What Chronic Stress Does to Your Health",
+          "body": "Chronic stress elevates cortisol persistently, which suppresses immune function, raises blood pressure, disrupts sleep, impairs memory, increases visceral fat storage, and accelerates cellular ageing (measured by telomere shortening). It's not just a feeling — it's a biological state with measurable physical consequences.",
+          "bullets": [
+            "Cardiovascular: higher blood pressure and heart rate over time",
+            "Immune: reduced ability to fight infection and repair damage",
+            "Metabolic: increased visceral fat, insulin resistance",
+            "Brain: impaired memory, reduced grey matter in the hippocampus",
+            "Cellular: faster telomere shortening (biological ageing acceleration)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Difference Between Helpful and Harmful Stress",
+          "body": "Hormesis describes the principle that small doses of stress make you stronger — exercise, cold exposure, fasting, intellectual challenges. These acute stressors trigger repair and adaptation. The key variables are: intensity (moderate is better than extreme), duration (short is better than prolonged), and recovery (rest must follow effort)."
+        },
+        {
+          "type": "content",
+          "headline": "Building Resilience — What the Evidence Supports",
+          "body": "Resilience is trainable. The evidence is strongest for: regular physical exercise (reduces baseline cortisol), consistent sleep (resets the stress response), social support (buffers physiological stress reactivity), mindfulness/meditation (reduces amygdala reactivity), and time in nature (lowers cortisol measurably). None of these require expensive courses or apps.",
+          "stat": "20 min",
+          "statLabel": "Time in nature needed to measurably reduce cortisol (Hunter et al., 2019)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Stressors",
+          "body": "Take 2 minutes to list your top 3 current stressors. For each one, ask: is this acute (time-limited, will resolve) or chronic (ongoing, recurring)? Acute stressors can be endured. Chronic stressors need to be managed or removed. Identify one small action you could take this week to reduce the impact of your biggest chronic stressor."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is hormesis in the context of health?",
+          "type": "mcq",
+          "options": [
+            "A hormone released during extreme stress that causes disease",
+            "The principle that small doses of stress trigger adaptation and make the body stronger",
+            "A type of chronic inflammation caused by prolonged stress",
+            "A breathing technique used to reduce cortisol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hormesis describes how small, manageable doses of stress (exercise, cold, fasting) trigger repair and adaptation — making the body more resilient. It's the opposite of chronic, unrelenting stress which causes damage."
+        },
+        {
+          "question": "Which of the following has the strongest evidence for lowering baseline cortisol and building resilience?",
+          "type": "mcq",
+          "options": [
+            "Expensive supplements and biohacking protocols",
+            "Regular exercise, consistent sleep, social support, and time in nature",
+            "Strict diet control and calorie restriction",
+            "Avoiding all stressful situations"
+          ],
+          "correctIndex": 1,
+          "explanation": "The strongest evidence supports accessible habits: exercise reduces baseline cortisol, sleep resets the stress response, social support buffers physiological reactivity, and just 20 minutes in nature measurably lowers cortisol."
+        },
+        {
+          "question": "True or false: Chronic stress causes measurable biological changes including telomere shortening.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Chronic stress accelerates cellular ageing through several mechanisms including telomere shortening (a marker of biological age), increased inflammation, impaired immune function, and changes in brain structure."
+        }
+      ]
+    },
+    {
+      "id": "ll-12-social-connection",
+      "dayNumber": 12,
+      "moduleId": "ll-module-2",
+      "title": "Social Connection and Longevity",
+      "subtitle": "Loneliness is as harmful as smoking 15 cigarettes a day. Human connection isn't a luxury — it's a biological need.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Loneliness Epidemic Nobody Talks About",
+          "body": "In 2023, the US Surgeon General declared loneliness a public health crisis. In the UK, 3.83 million adults over 65 describe themselves as lonely. And it's not just a feelings problem — loneliness is as harmful to health as smoking 15 cigarettes a day, associated with a 29% increased risk of heart disease and a 32% increased risk of stroke.",
+          "stat": "29%",
+          "statLabel": "Increased heart disease risk from social isolation (Holt-Lunstad, 2015)"
+        },
+        {
+          "type": "content",
+          "headline": "Why Human Connection Is Biological",
+          "body": "Social connection isn't just pleasant — it's a fundamental biological need. Humans evolved as deeply social animals: isolated individuals faced predation, resource scarcity, and reproductive failure. This is why the brain treats social exclusion as a physical threat — loneliness activates the same brain regions as physical pain. Your nervous system literally needs other people.",
+          "bullets": [
+            "Oxytocin (the \"bonding hormone\") reduces cortisol and blood pressure",
+            "Social support buffers the physiological response to stress",
+            "Sense of belonging is linked to better immune function",
+            "Having a confidant reduces mortality risk by up to 50%"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Quality Over Quantity",
+          "body": "You don't need hundreds of friends. Research consistently shows that 3–5 close, trusting relationships provide most of the health benefits of social connection. What matters most is: feeling understood, having someone to call in a crisis, and a sense of belonging to something larger than yourself."
+        },
+        {
+          "type": "content",
+          "headline": "Social Connection in the Blue Zones",
+          "body": "Every Blue Zone population has strong social structures built into daily life — not as an effortful addition, but as the default. Okinawans have \"moai\" — lifelong groups of friends who commit to each other's wellbeing. Sardinians have multi-generational family households. Ikarians have daily communal meals and no concept of retirement. The longevity benefit is built in by design."
+        },
+        {
+          "type": "try-it",
+          "headline": "One Meaningful Connection This Week",
+          "body": "Think of someone you care about but haven't connected with recently. Not a text — a call, a walk, a meal. Put one real connection in your calendar this week. Research shows that even brief, genuine social interactions lower cortisol, improve mood, and reinforce the feeling of belonging that underpins long-term health."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Holt-Lunstad's 2015 research find about loneliness and health?",
+          "type": "mcq",
+          "options": [
+            "Loneliness is mildly associated with poor mood but not physical health",
+            "Social isolation is as harmful as smoking 15 cigarettes a day",
+            "Only elderly people experience health effects from loneliness",
+            "Online social connections fully replace in-person ones for health benefits"
+          ],
+          "correctIndex": 1,
+          "explanation": "Holt-Lunstad's landmark meta-analysis found that social isolation and loneliness are as harmful as smoking 15 cigarettes a day, with strong associations with heart disease, stroke, dementia, and premature death."
+        },
+        {
+          "question": "For maximum longevity benefit, approximately how many close relationships do you need?",
+          "type": "mcq",
+          "options": [
+            "1 (a romantic partner)",
+            "10+ (a wide social network)",
+            "3–5 close, trusting relationships",
+            "50+ (a large community)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows that 3–5 deep, trusting relationships provide most of the health benefit of social connection. What matters is quality — feeling understood and having support in difficult moments — not quantity."
+        },
+        {
+          "question": "True or false: The brain processes social exclusion in the same regions as physical pain.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Neuroimaging studies show that social exclusion activates the anterior cingulate cortex and insula — the same brain regions activated by physical pain. This reflects the deep biological importance of social belonging."
+        }
+      ]
+    },
+    {
+      "id": "ll-13-cognitive-health",
+      "dayNumber": 13,
+      "moduleId": "ll-module-2",
+      "title": "Cognitive Health and Brain Longevity",
+      "subtitle": "Your brain can keep growing and adapting throughout your life. Here's how to protect and strengthen it as you age.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Dementia Is Not Inevitable",
+          "body": "Many people assume cognitive decline is just what happens when you age. But research on dementia risk tells a very different story. The Lancet Commission (2024) now estimates that up to 45% of dementia cases worldwide could be prevented or delayed through modifiable lifestyle and environmental factors. Your daily choices shape your brain's future.",
+          "stat": "45%",
+          "statLabel": "of dementia cases potentially preventable through lifestyle (Lancet, 2024)"
+        },
+        {
+          "type": "content",
+          "headline": "The 14 Modifiable Risk Factors for Dementia",
+          "body": "The 2024 Lancet Commission identified 14 modifiable risk factors that together account for nearly half of all dementia cases: low education, hearing loss, high LDL cholesterol, depression, traumatic brain injury, physical inactivity, diabetes, smoking, hypertension, obesity, alcohol, social isolation, untreated vision loss, and air pollution.",
+          "bullets": [
+            "Physical inactivity is one of the largest modifiable risk factors",
+            "Social isolation and depression both independently raise dementia risk",
+            "Managing cardiovascular risk factors (blood pressure, cholesterol) protects the brain",
+            "Hearing loss — often undertreated — is a significant dementia risk factor"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How Exercise Protects the Brain",
+          "body": "Aerobic exercise promotes the release of BDNF (brain-derived neurotrophic factor) — often called \"Miracle-Gro for the brain.\" BDNF stimulates the growth of new neurons, especially in the hippocampus (the brain's memory centre). A 2021 meta-analysis found that regular aerobic exercise increased hippocampal volume by 1.9% — partially reversing the 1–2% annual shrinkage associated with normal ageing.",
+          "stat": "+1.9%",
+          "statLabel": "Hippocampal volume increase from regular aerobic exercise"
+        },
+        {
+          "type": "content",
+          "headline": "Cognitive Reserve — Your Brain's Buffer",
+          "body": "Cognitive reserve is the brain's resilience to damage — its ability to keep functioning even as Alzheimer's pathology accumulates. It's built by education, mentally stimulating work, learning new skills, bilingualism, and social engagement. People with high cognitive reserve can show Alzheimer's lesions on a brain scan but remain functionally normal for years longer than those with low reserve."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Brain Reserve",
+          "body": "Identify one activity that challenges your brain in a new way: learning an instrument, studying a language, mastering a new skill, taking a course, solving puzzles. The key is novelty and challenge — not just familiar activities. Your brain grows when it's stretched, not when it's comfortable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the 2024 Lancet Commission, what percentage of dementia cases may be preventable through lifestyle changes?",
+          "type": "mcq",
+          "options": [
+            "10%",
+            "25%",
+            "45%",
+            "80%"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 2024 Lancet Commission estimated that up to 45% of dementia cases worldwide could be prevented or delayed by addressing 14 modifiable risk factors, including physical inactivity, social isolation, and cardiovascular risk factors."
+        },
+        {
+          "question": "What is BDNF and how does exercise affect it?",
+          "type": "mcq",
+          "options": [
+            "A stress hormone that exercise reduces",
+            "Brain-derived neurotrophic factor — exercise promotes its release, stimulating brain cell growth",
+            "A type of brain scan marker that predicts Alzheimer's risk",
+            "A neurotransmitter that exercise depletes over time"
+          ],
+          "correctIndex": 1,
+          "explanation": "BDNF (brain-derived neurotrophic factor) is a protein that promotes the growth and survival of neurons. Aerobic exercise significantly increases BDNF levels, stimulating neurogenesis especially in the hippocampus."
+        },
+        {
+          "question": "True or false: People with high cognitive reserve can show Alzheimer's lesions on a brain scan but remain functionally normal for longer.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Cognitive reserve — built through education, learning, and social engagement — gives the brain resilience to pathological changes. High-reserve individuals can sustain Alzheimer's pathology while maintaining functional cognition for years longer than low-reserve peers."
+        }
+      ]
+    },
+    {
+      "id": "ll-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "ll-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Review the five key drivers of long-term health and see how they interact to produce extraordinary compounding results.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Five Levers. One Extraordinary Outcome.",
+          "body": "You've now studied the five domains with the strongest evidence for extending healthspan: movement, nutrition, sleep, stress management, and social connection. What makes them powerful isn't any one of them alone — it's that they amplify each other. Exercise improves sleep. Sleep reduces stress. Stress management supports healthier eating. Connection motivates movement."
+        },
+        {
+          "type": "content",
+          "headline": "The Evidence in Review",
+          "body": "Here's what you now know about each domain:",
+          "bullets": [
+            "Movement: lowers mortality risk by 35%+; VO2 max is the strongest lifespan predictor",
+            "Nutrition: whole foods + adequate protein + less UPF = decades of better health",
+            "Sleep: 7–9 hours + consistent timing = brain repair, immune reset, metabolic health",
+            "Stress: acute stress builds resilience; chronic stress accelerates biological ageing",
+            "Connection: 3–5 deep relationships as protective as not smoking 15 cigarettes a day"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Multiplier Effect",
+          "body": "These five domains don't just add — they multiply. Someone who exercises regularly sleeps better. Someone who sleeps well manages stress more effectively. Someone with strong social connections tends to eat better and stay more active. This multiplier effect means improving one area almost always improves the others."
+        },
+        {
+          "type": "content",
+          "headline": "What You Don't Need to Do",
+          "body": "You don't need expensive supplements, biohacking devices, cryotherapy, hyperbaric chambers, or a personalised longevity protocol. The most powerful interventions are also the most boring: move daily, eat mostly whole foods, sleep consistently, manage stress actively, maintain real friendships. The science is remarkably consistent on this.",
+          "stat": "Simple, consistent, free",
+          "statLabel": "The most powerful health interventions available to everyone"
+        },
+        {
+          "type": "try-it",
+          "headline": "Choose Your Highest-Leverage Domain",
+          "body": "Looking back at the five domains — movement, nutrition, sleep, stress, connection — which one is your biggest gap right now? Not the most interesting one. The one where the distance between where you are and where you could be is largest. That's where Module 3 will help you build a realistic plan."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which statement best describes the relationship between the five health domains?",
+          "type": "mcq",
+          "options": [
+            "Each domain works independently; improving one doesn't affect others",
+            "They interact and amplify each other — improving one often improves the others",
+            "Sleep is the most important and the others are secondary",
+            "Nutrition overrides all other domains in importance"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five health domains (movement, nutrition, sleep, stress, connection) interact and amplify each other. Exercise improves sleep; sleep reduces stress; lower stress supports better eating — creating a virtuous cycle of compounding health benefits."
+        },
+        {
+          "question": "What does the research evidence consistently say about expensive health interventions vs. basic lifestyle habits?",
+          "type": "mcq",
+          "options": [
+            "Expensive biohacking protocols outperform lifestyle habits for most people",
+            "Basic habits (movement, sleep, nutrition, stress, connection) remain the most powerful interventions",
+            "Supplements can replace most lifestyle interventions for busy people",
+            "Advanced testing and personalised protocols are required for real results"
+          ],
+          "correctIndex": 1,
+          "explanation": "The evidence consistently shows that the most powerful longevity interventions are accessible and free: daily movement, quality sleep, whole-food nutrition, stress management, and social connection. Expensive biohacks rarely match these basics."
+        },
+        {
+          "question": "True or false: Improving sleep quality has no impact on stress levels or eating habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Better sleep significantly reduces cortisol (the primary stress hormone), improves decision-making around food choices, and reduces cravings for high-sugar, high-fat foods — demonstrating the interconnected nature of the five health domains."
+        }
+      ]
+    },
+    {
+      "id": "ll-15-your-health-baseline",
+      "dayNumber": 15,
+      "moduleId": "ll-module-3",
+      "title": "Know Your Health Baseline",
+      "subtitle": "You can't navigate without knowing where you are. A simple health baseline gives you a starting point — and a way to measure progress.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Improve What You Don't Measure",
+          "body": "Most people start a health change with vague intentions: \"I want to be healthier.\" But without a baseline — a clear picture of where you are right now — it's impossible to know what to prioritise, track progress, or recognise improvement. A health baseline isn't about judgment. It's about honest self-knowledge."
+        },
+        {
+          "type": "content",
+          "headline": "What a Useful Health Baseline Includes",
+          "body": "You don't need expensive tests or a private doctor. A practical baseline covers five areas: movement (steps per day, how often you feel out of breath), nutrition (how many portions of vegetables you eat, how much ultra-processed food), sleep (hours per night, how rested you feel), stress (average daily stress rating), and social connection (how often you have meaningful interactions).",
+          "bullets": [
+            "Movement: daily steps, how winded you get on stairs",
+            "Nutrition: vegetable portions, UPF frequency, water intake",
+            "Sleep: average hours, consistency, morning energy rating",
+            "Stress: average daily rating 1–10, frequency of overwhelm",
+            "Connection: meaningful interactions per week, sense of belonging"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Numbers Worth Knowing",
+          "body": "Beyond the five lifestyle domains, a few clinical numbers are worth knowing because they reveal what you can't see or feel: resting heart rate (a proxy for cardiovascular fitness), blood pressure, waist circumference (stronger predictor of metabolic risk than weight alone), and ideally, blood glucose and cholesterol if you haven't checked them recently. Your GP can run most of these for free."
+        },
+        {
+          "type": "content",
+          "headline": "Baseline Without Judgment",
+          "body": "The point of a baseline isn't to feel bad about where you are. It's to find your highest-leverage starting point. If your sleep is already good but your movement is very low, that tells you where to start. If you're active but chronically stressed with no time for connection, that's a different picture. The baseline shapes your plan — it doesn't judge your past.",
+          "stat": "Where you are → Where to start",
+          "statLabel": "Your baseline is a compass, not a verdict"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 5-Minute Baseline Audit",
+          "body": "Rate yourself 1–5 honestly on each domain right now: movement, nutrition, sleep, stress, connection. Where's your lowest score? Where's your biggest opportunity for improvement? Write it down. That's your starting point for Module 3."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is a health baseline important before starting a longevity plan?",
+          "type": "mcq",
+          "options": [
+            "It helps you compare yourself to others your age",
+            "It identifies your starting point and highest-leverage area for improvement",
+            "It lets you skip the lifestyle changes that don't apply to you",
+            "It provides medical diagnosis"
+          ],
+          "correctIndex": 1,
+          "explanation": "A health baseline reveals where you currently are across the five key domains, helping you identify your biggest gap and highest-leverage starting point — rather than making vague, unfocused changes across everything at once."
+        },
+        {
+          "question": "Which measurement is a stronger predictor of metabolic health risk than weight alone?",
+          "type": "mcq",
+          "options": [
+            "BMI",
+            "Waist circumference",
+            "Body fat percentage",
+            "Resting heart rate"
+          ],
+          "correctIndex": 1,
+          "explanation": "Waist circumference is a stronger predictor of metabolic disease risk (type 2 diabetes, cardiovascular disease) than BMI or total weight, because it reflects visceral fat — the type that accumulates around internal organs."
+        },
+        {
+          "question": "True or false: The purpose of a health baseline is to make you feel bad about your current habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. A health baseline is a neutral, honest starting point — a compass, not a verdict. It helps you identify where to focus your effort for the greatest return, without judging the past."
+        }
+      ]
+    },
+    {
+      "id": "ll-16-small-changes-big-returns",
+      "dayNumber": 16,
+      "moduleId": "ll-module-3",
+      "title": "Small Changes, Big Returns",
+      "subtitle": "The highest-return health changes are often the simplest. Here's how to identify and prioritise them.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Not All Effort Is Equal",
+          "body": "If you have limited time and energy, the worst thing you can do is try to change everything at once. The best thing you can do is identify the 2–3 changes with the highest return on effort — and start there. Small, targeted improvements in the right domain compound dramatically. Large unfocused efforts often burn out."
+        },
+        {
+          "type": "content",
+          "headline": "The Highest-Return Changes by Domain",
+          "body": "Research consistently points to a handful of actions that deliver the most health benefit per unit of effort:",
+          "bullets": [
+            "Movement: 7,000–10,000 steps daily — reduces all-cause mortality by 50–70%",
+            "Nutrition: add one serving of vegetables daily — immediate improvement in fibre and micronutrients",
+            "Sleep: consistent wake time — biggest single lever for improving sleep quality",
+            "Stress: 20 minutes of physical movement — reduces cortisol more reliably than most other interventions",
+            "Connection: one meaningful interaction weekly — significant wellbeing and longevity benefit"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Adding Before Subtracting",
+          "body": "Behaviour change research shows that adding a positive habit is far easier than removing a negative one. Instead of \"stop eating crisps,\" try \"eat an apple before lunch.\" Instead of \"stop scrolling before bed,\" try \"read for 10 minutes before picking up your phone.\" Addition creates a new pattern; subtraction creates a void that old habits rush to fill."
+        },
+        {
+          "type": "content",
+          "headline": "Minimum Effective Dose",
+          "body": "The minimum effective dose (MED) is the smallest action that produces a meaningful result. For exercise, the MED is approximately 150 minutes of moderate activity per week — beyond which returns diminish. For sleep, it's 7 hours of consistent, quality rest. Knowing the MED means you can stop over-planning and start doing the thing that actually moves the needle.",
+          "stat": "150 min/week",
+          "statLabel": "Minimum effective dose of moderate exercise for significant health benefit (WHO)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Highest-Return Next Action",
+          "body": "From your baseline audit in Lesson 15, pick your lowest-scoring domain. Now identify the single smallest action in that domain that you could do every day without willpower. Not the ideal action — the sustainable one. Start there. Do it for 7 days before adding anything else."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"minimum effective dose\" mean in the context of health behaviour?",
+          "type": "mcq",
+          "options": [
+            "The minimum medication dose required for treatment",
+            "The smallest consistent action that produces meaningful health benefit",
+            "The minimum calorie intake needed to maintain weight",
+            "The lowest intensity of exercise that still burns fat"
+          ],
+          "correctIndex": 1,
+          "explanation": "Minimum effective dose (MED) refers to the smallest action that produces significant benefit — e.g., 150 minutes of moderate weekly exercise. Beyond the MED, returns diminish. Knowing the MED helps you avoid over-planning and focus on what actually moves the needle."
+        },
+        {
+          "question": "Why does behaviour research suggest adding a new habit is easier than removing a bad one?",
+          "type": "mcq",
+          "options": [
+            "Because new habits take less willpower than breaking old ones",
+            "Because addition creates a new pattern, while subtraction leaves a void that old habits fill",
+            "Because the brain prefers novelty over familiarity",
+            "Because removal only works when combined with medication"
+          ],
+          "correctIndex": 1,
+          "explanation": "Removing a habit creates an empty behavioural slot that existing habits often fill immediately. Adding a positive habit instead builds a new pattern without the friction of pure deprivation — making it more likely to stick."
+        },
+        {
+          "question": "True or false: Trying to change everything at once is the most effective approach to long-term health improvement.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Broad simultaneous change typically leads to burnout and reversion. Identifying the 2–3 highest-leverage actions and focusing on them first produces more lasting results through compounding."
+        }
+      ]
+    },
+    {
+      "id": "ll-17-building-sustainable-routines",
+      "dayNumber": 17,
+      "moduleId": "ll-module-3",
+      "title": "Building Sustainable Routines",
+      "subtitle": "A routine you can maintain for five years beats a perfect plan you abandon in five weeks. Here's how to build one.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Motivation Is Unreliable. Systems Are Not.",
+          "body": "Motivation feels great at the start. But research consistently shows it declines within weeks, often days. The people who maintain healthy habits long-term don't rely on motivation — they build systems that make the healthy choice automatic, easy, or inevitable. This is the difference between willpower and environmental design.",
+          "stat": "40%",
+          "statLabel": "of daily behaviours are habitual — performed with minimal conscious thought (Wood & Neal)"
+        },
+        {
+          "type": "content",
+          "headline": "The Habit Loop — How Routines Form",
+          "body": "Every habit has three components: a cue (the trigger), a routine (the behaviour), and a reward (the payoff). To build a new health habit, attach it to an existing cue. \"After I pour my morning coffee, I do 5 minutes of movement.\" \"After dinner, I take a 10-minute walk.\" The existing cue anchors the new behaviour until it becomes automatic.",
+          "bullets": [
+            "Cue: an existing trigger that reliably happens (alarm, meal, commute)",
+            "Routine: the new health behaviour you want to add",
+            "Reward: an immediate positive feeling that reinforces the loop",
+            "Habit stacking: linking new habits to existing automatic ones"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Environment Design — Make the Right Choice Easy",
+          "body": "Your environment shapes your behaviour more than your willpower. If fruit is on the counter, you eat more fruit. If your running shoes are by the door, you're more likely to walk. If your phone is in another room at night, you sleep better. Designing your environment to default to healthy choices removes the need for daily decision-making."
+        },
+        {
+          "type": "content",
+          "headline": "The Two-Minute Rule and Reducing Friction",
+          "body": "If starting a new habit feels daunting, shrink it until it takes two minutes or less. \"Do a workout\" becomes \"put on workout clothes.\" \"Eat better\" becomes \"chop one vegetable.\" The act of starting is the hardest part. Once you're in motion, continuing is natural. Two-minute starts build the identity and momentum that grow into full routines."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design One Environment Change",
+          "body": "Think of one environment change that would make a healthy behaviour more automatic: move fruit to the counter, put your walking shoes by the front door, keep a water bottle on your desk, charge your phone outside the bedroom. Choose the one change most likely to reduce friction for your current priority. Make that change today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"habit stacking\" and why is it effective?",
+          "type": "mcq",
+          "options": [
+            "Doing multiple habits simultaneously to save time",
+            "Linking a new habit to an existing automatic behaviour to create a reliable cue",
+            "Stacking rewards to increase motivation for difficult habits",
+            "Building multiple habits in the same week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Habit stacking means anchoring a new behaviour to an existing automatic one — \"After I [existing habit], I will [new habit].\" The existing habit serves as a reliable cue, bypassing the need for deliberate decision-making each time."
+        },
+        {
+          "question": "According to research, what percentage of daily behaviours are habitual?",
+          "type": "mcq",
+          "options": [
+            "10%",
+            "25%",
+            "40%",
+            "70%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research by Wood and Neal found that approximately 40% of daily behaviours are habitual — performed automatically in response to contextual cues, without conscious deliberation. This is why environment design matters more than willpower."
+        },
+        {
+          "question": "True or false: Relying on motivation is an effective long-term strategy for maintaining health habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Motivation is temporary and unreliable — it peaks at the start of a behaviour change and declines quickly. Sustainable habits require systems and environment design that make healthy choices automatic, not daily acts of willpower."
+        }
+      ]
+    },
+    {
+      "id": "ll-18-tracking-without-obsessing",
+      "dayNumber": 18,
+      "moduleId": "ll-module-3",
+      "title": "Tracking Without Obsessing",
+      "subtitle": "Measurement drives improvement — but only when it's used as a compass, not a cage. Here's how to track health intelligently.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What Gets Measured Gets Managed — Up to a Point",
+          "body": "Tracking health behaviours increases adherence and awareness. People who log their steps take more steps. People who track sleep improve their habits. But there's a threshold where tracking becomes counterproductive — causing anxiety, obsession, or \"orthorexic\" health perfectionism. The goal is useful feedback, not constant monitoring.",
+          "stat": "26%",
+          "statLabel": "Increase in physical activity from self-monitoring (Burke et al., 2011)"
+        },
+        {
+          "type": "content",
+          "headline": "What to Track (and What Not To)",
+          "body": "The most useful health metrics for most people: steps or active minutes per day, sleep duration and consistency, vegetable portions, stress levels (simple 1–10 rating), and weekly social interactions. These are actionable — you can change them. What not to obsess over: daily weight fluctuations, precise calorie counts, hourly heart rate data, or sleep stage percentages from consumer devices.",
+          "bullets": [
+            "Track: daily steps, sleep hours, vegetable portions, weekly check-in",
+            "Avoid obsessing over: hourly metrics, daily weight swings, consumer sleep stages",
+            "Weekly trends matter more than daily numbers",
+            "Mood and energy ratings are often more useful than biometric data"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Check-In — Simple and Effective",
+          "body": "The most sustainable tracking method is a brief weekly check-in: 5 questions, 2 minutes. How was my movement this week? How did I sleep? How did I eat? How stressed was I? How connected did I feel? Rate each 1–5. Look at the trend over months, not days. This approach gives you signal without noise."
+        },
+        {
+          "type": "content",
+          "headline": "When Tracking Becomes Harmful",
+          "body": "Signs that tracking has crossed the line: feeling anxious when you can't check your device, letting a \"bad\" number ruin your day, skipping social events to protect metrics, or constantly adjusting behaviour based on real-time data. If tracking is adding stress, it's undermining the very health outcomes you're measuring. Periodically take a week off."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Weekly Check-In",
+          "body": "Set up a simple weekly review: 5 ratings, one for each health domain, every Sunday morning. Write them in the same place — notes app, journal, or spreadsheet. After 4 weeks, review the trend. Are any domains consistently low? That's your signal. Not the daily numbers — the weekly patterns."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Burke et al. (2011), what effect does self-monitoring have on physical activity?",
+          "type": "mcq",
+          "options": [
+            "It has no significant effect on behaviour",
+            "It increases physical activity by approximately 26%",
+            "It decreases motivation by making exercise feel like work",
+            "It only helps people who are already active"
+          ],
+          "correctIndex": 1,
+          "explanation": "Meta-analysis by Burke et al. found that self-monitoring of physical activity increased activity levels by approximately 26% — demonstrating that awareness of current behaviour is one of the simplest ways to improve it."
+        },
+        {
+          "question": "Which of the following is a sign that health tracking has become counterproductive?",
+          "type": "mcq",
+          "options": [
+            "Checking your step count once a day",
+            "Feeling anxious when you can't check your device or a bad number ruins your day",
+            "Doing a weekly review of sleep quality",
+            "Using a heart rate monitor during exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "When tracking creates anxiety, ruins your mood on \"bad\" days, or causes you to skip social events to protect metrics, it's adding stress rather than reducing it. At that point, it's counterproductive to the health goals it was meant to support."
+        },
+        {
+          "question": "True or false: Daily weight fluctuations are one of the most useful health metrics to track closely.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Daily weight fluctuations reflect water retention, food timing, and hormonal cycles — not meaningful changes in fat or muscle. Weekly trends over months are far more informative and far less anxiety-inducing than daily numbers."
+        }
+      ]
+    },
+    {
+      "id": "ll-19-when-to-seek-help",
+      "dayNumber": 19,
+      "moduleId": "ll-module-3",
+      "title": "When to Seek Professional Help",
+      "subtitle": "Self-improvement has real limits. Knowing when to involve a healthcare professional is one of the most important health skills you can have.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "This Course Has Limits — And That's Important",
+          "body": "Everything in this course is grounded in population-level research. But you are not a population — you're an individual with a specific history, biology, and circumstances. Lifestyle habits are powerful preventive tools, but they don't replace medical assessment, diagnosis, or treatment. Knowing when to see a professional is not a sign of failure. It's a sign of health literacy."
+        },
+        {
+          "type": "content",
+          "headline": "Symptoms That Always Need Medical Assessment",
+          "body": "Don't self-manage these — seek professional advice promptly:",
+          "bullets": [
+            "Chest pain or pressure, especially with exertion or at rest",
+            "Unexplained persistent fatigue, breathlessness or dizziness",
+            "Sudden changes in memory, speech, or coordination",
+            "Unexplained weight loss or gain",
+            "New lumps, skin changes, or persistent pain without clear cause",
+            "Mood changes severe enough to affect daily function",
+            "Sleep problems that persist despite lifestyle changes for 3+ months"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Preventive Check-Ups Worth Having",
+          "body": "Even without symptoms, routine checks are valuable because many conditions are silent. In the UK, the NHS Health Check (available every 5 years for ages 40–74) screens blood pressure, cholesterol, blood glucose, BMI, and cardiovascular risk. Beyond this: dental checks annually, vision and hearing checks every 2 years, and age/sex-appropriate cancer screenings as recommended by your GP."
+        },
+        {
+          "type": "content",
+          "headline": "Making the Most of a Medical Appointment",
+          "body": "Many people leave GP appointments without their questions answered. Prepare in advance: write down your top 3 concerns before you go, bring a list of current medications and supplements, ask \"what does this number mean for me?\" not just \"is it normal?\", and ask what lifestyle changes would be most relevant to your specific results. A prepared patient gets more from every appointment.",
+          "stat": "3 questions",
+          "statLabel": "Write these down before every GP appointment"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Next Preventive Action",
+          "body": "When did you last have a blood pressure check? A blood glucose test? A dental appointment? If it's been more than 2 years since any of these, that's your next action. Book one appointment this week — not because something is wrong, but because knowing your numbers is the foundation of proactive health. Prevention starts with awareness."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following symptoms always warrants prompt medical assessment?",
+          "type": "mcq",
+          "options": [
+            "Feeling tired after a bad night's sleep",
+            "Chest pain or pressure, especially with exertion",
+            "Mild muscle soreness after exercise",
+            "Occasional afternoon energy dip"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chest pain or pressure — particularly with exertion, at rest, or spreading to the arm or jaw — always requires immediate medical assessment. It can indicate serious cardiac conditions that need professional evaluation, not lifestyle adjustments."
+        },
+        {
+          "question": "The NHS Health Check (for ages 40–74) screens for which conditions?",
+          "type": "mcq",
+          "options": [
+            "Cancer, bone density, and vitamin deficiencies",
+            "Blood pressure, cholesterol, blood glucose, BMI, and cardiovascular risk",
+            "Thyroid function, iron levels, and hormonal balance",
+            "Vision, hearing, and dental health"
+          ],
+          "correctIndex": 1,
+          "explanation": "The NHS Health Check screens for the most common modifiable cardiovascular risk factors: blood pressure, cholesterol, blood glucose (diabetes risk), BMI, and overall cardiovascular risk score. It's free every 5 years for eligible adults."
+        },
+        {
+          "question": "True or false: Lifestyle habits from this course can fully replace medical diagnosis and treatment.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Lifestyle habits are powerful for prevention and supporting health — but they cannot diagnose or treat medical conditions. Knowing when to involve a healthcare professional is an essential part of health literacy, not a limitation of a healthy lifestyle."
+        }
+      ]
+    },
+    {
+      "id": "ll-20-common-traps-and-myths",
+      "dayNumber": 20,
+      "moduleId": "ll-module-3",
+      "title": "Common Traps and Myths",
+      "subtitle": "The wellness industry is full of noise. Learn to separate evidence-based health from expensive distractions.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Billion-Pound Industry Built on Confusion",
+          "body": "The global wellness industry is worth over £4 trillion. Much of it is built on exploiting the gap between what science knows and what the public believes. Understanding the most common health myths doesn't just save money — it protects you from wasted effort, false hope, and occasionally real harm.",
+          "stat": "£4 trillion",
+          "statLabel": "Global wellness industry value — not all of it is evidence-based"
+        },
+        {
+          "type": "content",
+          "headline": "The Myths That Cost People the Most",
+          "body": "The most persistent health myths — and the evidence against them:",
+          "bullets": [
+            "\"Detox diets cleanse your body\" — your liver and kidneys do this continuously. No juice cleanse helps.",
+            "\"Supplements replace a balanced diet\" — most people in good health don't need supplements.",
+            "\"No pain, no gain\" — soreness does not equal progress; chronic pain is a warning sign.",
+            "\"You need to exercise for 60 minutes daily\" — 150 minutes per week (21 min/day) is the evidence-based target.",
+            "\"Eating fat makes you fat\" — dietary fat is essential; ultra-processed foods are the larger driver of weight gain."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Spot Pseudoscience",
+          "body": "Red flags that a health claim isn't supported by good evidence: it promises rapid results, it sells a single \"miracle\" solution, it requires expensive proprietary products, it cites one unpublished study or testimonials rather than systematic reviews, and it attacks conventional medicine without offering rigorous alternatives. Good health science is boring, consistent, and freely available."
+        },
+        {
+          "type": "content",
+          "headline": "The \"All-or-Nothing\" Trap",
+          "body": "The most dangerous health trap isn't a supplement or a fad diet — it's all-or-nothing thinking. \"I missed my workout, so the week is ruined.\" \"I ate badly at dinner, so I might as well give up.\" This cognitive pattern turns a minor slip into a complete abandonment of healthy habits. Missing one day matters almost nothing. The pattern over months is everything."
+        },
+        {
+          "type": "try-it",
+          "headline": "Question One Health Belief",
+          "body": "Think of one health practice or product you currently use or believe in. Search for a systematic review or meta-analysis on the topic (not a single study, not a blog post). Does the broad body of evidence support it? You don't need to abandon everything — just hold your health beliefs lightly and update them when the evidence changes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the evidence-based minimum for weekly exercise to produce significant health benefits?",
+          "type": "mcq",
+          "options": [
+            "30 minutes per week",
+            "60 minutes daily (420 minutes per week)",
+            "150 minutes of moderate activity per week",
+            "45 minutes of intense exercise 5 times per week"
+          ],
+          "correctIndex": 2,
+          "explanation": "WHO guidelines, supported by extensive research, recommend 150 minutes of moderate-intensity activity per week (about 21 minutes daily) as the threshold for significant health benefit. More is better, but 150 minutes is the evidence-based minimum effective dose."
+        },
+        {
+          "question": "Which of the following is a red flag for a pseudoscientific health claim?",
+          "type": "mcq",
+          "options": [
+            "It's been studied in multiple randomised controlled trials",
+            "It promises rapid results and relies on testimonials rather than systematic reviews",
+            "It's recommended by multiple independent health organisations",
+            "It acknowledges that results vary between individuals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pseudoscientific claims typically promise rapid or dramatic results, rely on testimonials or single studies rather than systematic reviews, require proprietary products, and often attack conventional medicine. Legitimate health science is consistent, reproducible, and openly available."
+        },
+        {
+          "question": "True or false: \"All-or-nothing\" thinking is one of the most common barriers to maintaining long-term healthy habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. All-or-nothing thinking — where a single slip is treated as complete failure — is one of the most common and damaging cognitive traps in behaviour change. It turns a minor deviation into full abandonment. What matters is the long-term pattern, not any single day."
+        }
+      ]
+    },
+    {
+      "id": "ll-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "ll-module-3",
+      "title": "Your Life-Long Health Plan",
+      "subtitle": "You now have everything you need. This is where knowledge becomes commitment — and a plan becomes a practice.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Three Weeks Ago, You Knew Almost None of This",
+          "body": "You now understand the difference between lifespan and healthspan. You know your genes aren't your destiny. You understand prevention, compounding, and the five key drivers of long-term health. You can spot pseudoscience. You know when to seek help. Most importantly — you understand that extraordinary long-term health comes from ordinary daily actions, consistently repeated.",
+          "stat": "21 lessons",
+          "statLabel": "What you've built: a complete foundation for lifelong health"
+        },
+        {
+          "type": "content",
+          "headline": "The Non-Negotiables — Your Minimum Viable Health Plan",
+          "body": "If you could only do five things for your long-term health, research points clearly to these:",
+          "bullets": [
+            "1. Move daily — 7,000–10,000 steps, or 150 min/week of moderate exercise",
+            "2. Eat mostly whole foods — 5+ vegetable/fruit portions, adequate protein",
+            "3. Sleep consistently — 7–9 hours at the same time each night",
+            "4. Manage chronic stress — one daily practice (movement, breathing, nature)",
+            "5. Invest in relationships — at least one meaningful connection per week"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Long Game Mindset",
+          "body": "Health is not a sprint with a finish line. It's an ongoing practice — a series of daily choices that compound across decades. There's no point at which you're \"done\" and can stop. But there's also no single day that makes or breaks you. What matters is your average over months and years, not your performance on any given Tuesday."
+        },
+        {
+          "type": "content",
+          "headline": "What to Explore Next",
+          "body": "This course gave you the foundations. Every topic here — sleep, nutrition, movement, stress, cognitive health — has an entire course dedicated to it on SuccessWise. If one module resonated most, that's your next step. Go deeper into the area where you have the biggest gap or the greatest curiosity. Small improvements in your weakest area always compound fastest."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Three Commitments",
+          "body": "Based on everything you've learned, write three specific health commitments — not goals, but practices. \"I will walk for 20 minutes after dinner, five days a week.\" \"I will have a consistent sleep and wake time.\" \"I will call one friend every week.\" Specific. Measurable. Sustainable. These three things, done consistently, will compound into a dramatically healthier future."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following best describes a \"minimum viable health plan\" based on the evidence in this course?",
+          "type": "mcq",
+          "options": [
+            "Strict calorie counting, 60 minutes of daily exercise, and regular supplements",
+            "Daily movement, mostly whole-food nutrition, consistent sleep, stress management, and social connection",
+            "An expensive personalised protocol based on genetic testing",
+            "Intermittent fasting combined with a high-protein, low-carb diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five evidence-based pillars are: daily movement (150+ min/week), mostly whole-food nutrition with adequate protein, 7–9 hours of consistent sleep, active stress management, and meaningful social connection. These free, accessible habits are the foundation of long-term healthspan."
+        },
+        {
+          "question": "What does the \"long game mindset\" mean for health behaviour?",
+          "type": "mcq",
+          "options": [
+            "Starting very slowly to avoid injury",
+            "Focusing on the pattern across months and years, not any single day's performance",
+            "Planning health goals 10 years in advance",
+            "Delaying health improvements until you have perfect conditions"
+          ],
+          "correctIndex": 1,
+          "explanation": "The long game mindset means health is an ongoing practice where the cumulative pattern across months and years matters — not individual days. A missed workout or imperfect meal is irrelevant. Your average daily choices over decades determine your healthspan."
+        },
+        {
+          "question": "True or false: After completing this course, you've reached the end of your health learning journey.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. This course provides the foundation — a clear understanding of the principles and the five key domains. Each area (sleep, nutrition, movement, stress, cognitive health) has much more depth to explore. The best next step is diving deeper into your highest-gap or highest-curiosity area."
+        }
+      ]
+    }
+  ]
+}

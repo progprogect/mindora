@@ -1,0 +1,90 @@
+{
+  "courseHeroDefaults": {
+    "sourceChunk": "CourseHero-DklzfsGG.js",
+    "description": "Go from AI beginner to power user. One practical skill per day, compounding daily.",
+    "socialProof": "Used by 4,892 learners to save 10+ hours a week.",
+    "badge": {
+      "icon": "🔥",
+      "label": "MOST POPULAR COURSE"
+    },
+    "unitLabel": "days",
+    "level": "Beginner",
+    "includes": [
+      {
+        "icon": "🧠",
+        "text": "4 skill modules from foundations to income"
+      },
+      {
+        "icon": "🎯",
+        "text": "One actionable try-it task per day"
+      },
+      {
+        "icon": "📝",
+        "text": "140+ quiz questions with full explanations"
+      },
+      {
+        "icon": "🏅",
+        "text": "XP, streaks & achievement badges"
+      }
+    ],
+    "certificateChip": "28-Day AI Challenge Certificate"
+  },
+  "certificateDefaults": {
+    "sourceChunk": "useNewUserRedirect-AgGgEgKO.js",
+    "kicker": "Your Goal",
+    "headingText": "Complete all 28 days. Earn your certificate.",
+    "subText": "Every lesson brings you closer. Finish all four modules and unlock the 28-Day AI Challenge Certificate — proof you're in the top 1% of AI-literate professionals.",
+    "certificateKicker": "SuccessWise.ai — Certificate of Completion",
+    "awardedToPlaceholder": "[Your name here]",
+    "certificateDescription": "For completing all 28 lessons across 4 modules and demonstrating practical proficiency in AI tools, workflows, and income strategies.",
+    "downloadComingSoon": "Download Coming Soon",
+    "unlocked": "🎉 Certificate unlocked! Congratulations.",
+    "outcomeBullets": [
+      {
+        "icon": "⚡",
+        "text": "Save 10+ hours per week with AI workflows"
+      },
+      {
+        "icon": "💰",
+        "text": "Build a real AI income stream from Day 22"
+      },
+      {
+        "icon": "🎯",
+        "text": "Confidently use AI in any job or business"
+      }
+    ]
+  },
+  "learningPathH2": "Your Learning Path",
+  "learningPathSub": "{totalDays} lessons, one skill at a time. Tap any lesson to open it.",
+  "testimonialsDefault": [
+    {
+      "text": "I went from barely knowing what ChatGPT was to running an AI copywriting side hustle earning £1,200/month. Day 23 was the turning point.",
+      "name": "Sarah M.",
+      "role": "Freelance Copywriter",
+      "avatar": "SM",
+      "rating": 5
+    },
+    {
+      "text": "The daily format is genius. I did one lesson every morning with my coffee. By Day 14 my team thought I'd hired an AI consultant.",
+      "name": "James K.",
+      "role": "Marketing Manager",
+      "avatar": "JK",
+      "rating": 5
+    },
+    {
+      "text": "I'm not a tech person at all. But by Day 7 I was using three AI tools daily and saving 2 hours. The quizzes make sure it actually sticks.",
+      "name": "Priya N.",
+      "role": "Operations Lead",
+      "avatar": "PN",
+      "rating": 5
+    }
+  ],
+  "testimonialMeta": {
+    "learnerCount": "4,892 learners enrolled",
+    "reviewCount": "from 1,240+ learner reviews",
+    "averageRating": "4.9"
+  },
+  "note": "Per-course hubs override CourseHero defaults via props. See hubs.json.",
+  "heroChunkHas": false,
+  "redirectChunkBytes": 18698
+}

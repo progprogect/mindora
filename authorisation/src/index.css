@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+:root {
+  --sw-blue: 221 83% 53%;
+  --sw-blue-hover: 224 76% 48%;
+  --sw-blue-light: 214 100% 97%;
+  --sw-dark: 0 0% 4%;
+  --sw-grey: 220 9% 42%;
+  --sw-grey-light: 220 14% 96%;
+  --sw-grey-border: 220 13% 91%;
+  --sw-blue-border: 215 91% 88%;
+  --sw-success: 142 71% 45%;
+  --sw-success-light: 138 76% 97%;
+  --sw-warning: 38 92% 50%;
+  --sw-amber: 38 92% 50%;
+  --sw-amber-dark: 32 81% 29%;
+  --sw-red: 0 84% 60%;
+  --sw-teal: 174 72% 40%;
+  --sw-coral: 21 90% 56%;
+  --sw-purple: 271 71% 58%;
+  --sw-emerald: 158 64% 32%;
+  --sw-paypal-yellow: 45 100% 61%;
+  --sw-paypal-navy: 219 100% 26%;
+  --cert-navy: 222 47% 11%;
+  --cert-gold: 43 74% 52%;
+  --sw-border: 220 13% 91%;
+  --sw-white: 0 0% 100%;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-sw-blue: hsl(var(--sw-blue));
+  --color-sw-blue-hover: hsl(var(--sw-blue-hover));
+  --color-sw-blue-light: hsl(var(--sw-blue-light));
+  --color-sw-dark: hsl(var(--sw-dark));
+  --color-sw-grey: hsl(var(--sw-grey));
+  --color-sw-grey-light: hsl(var(--sw-grey-light));
+  --color-sw-grey-border: hsl(var(--sw-grey-border));
+  --color-sw-blue-border: hsl(var(--sw-blue-border));
+  --color-sw-success: hsl(var(--sw-success));
+  --color-sw-success-light: hsl(var(--sw-success-light));
+  --color-sw-warning: hsl(var(--sw-warning));
+  --color-sw-amber: hsl(var(--sw-amber));
+  --color-sw-amber-dark: hsl(var(--sw-amber-dark));
+  --color-sw-red: hsl(var(--sw-red));
+  --color-sw-teal: hsl(var(--sw-teal));
+  --color-sw-coral: hsl(var(--sw-coral));
+  --color-sw-purple: hsl(var(--sw-purple));
+  --color-sw-emerald: hsl(var(--sw-emerald));
+  --color-sw-paypal-yellow: hsl(var(--sw-paypal-yellow));
+  --color-sw-paypal-navy: hsl(var(--sw-paypal-navy));
+  --color-cert-navy: hsl(var(--cert-navy));
+  --color-cert-gold: hsl(var(--cert-gold));
+  --color-sw-border: hsl(var(--sw-border));
+  --color-sw-white: hsl(var(--sw-white));
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --radius-sw: var(--radius);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --animate-fade-up: fade-up 0.5s ease-out both;
+  --animate-fade-in: fade-in 0.2s ease-out both;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--sw-grey-border));
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    background-color: hsl(var(--sw-white));
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: rgb(10, 10, 10);
+    background-color: hsl(var(--sw-white));
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+}
+
+/* Production (unlayered): button,[role=button],summary{cursor:pointer} */
+button,
+[role='button'],
+summary {
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

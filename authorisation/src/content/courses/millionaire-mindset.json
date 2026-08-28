@@ -1,0 +1,2337 @@
+{
+  "id": "millionaire-mindset",
+  "title": "Millionaire Mindset Masterclass",
+  "subtitle": "Learn how successful entrepreneurs think about money, opportunity, risk and long-term wealth creation.",
+  "totalDays": 28,
+  "totalXp": 580,
+  "modules": [
+    {
+      "id": "mm-module-1",
+      "moduleNumber": 1,
+      "title": "Rewire Your Money Mind",
+      "subtitle": "Uncover and reprogram your subconscious beliefs about money.",
+      "days": "Lessons 1–10",
+      "skill": "Identify and replace limiting money beliefs",
+      "lessonIds": [
+        "mm-1-money-blueprint",
+        "mm-2-rich-vs-poor-thinking",
+        "mm-3-scarcity-trap",
+        "mm-4-money-stories",
+        "mm-5-compound-effect",
+        "mm-6-desire-purpose",
+        "mm-7-faith-autosuggestion",
+        "mm-8-wealth-identity",
+        "mm-9-enough",
+        "mm-10-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "mm-module-2",
+      "moduleNumber": 2,
+      "title": "Think Like the Wealthy",
+      "subtitle": "Adopt the mental models and decision frameworks used by millionaires.",
+      "days": "Lessons 11–20",
+      "skill": "Make decisions using wealth-building mental models",
+      "lessonIds": [
+        "mm-11-assets-vs-liabilities",
+        "mm-12-cash-flow-thinking",
+        "mm-13-specific-knowledge",
+        "mm-14-leverage",
+        "mm-15-stealth-wealth",
+        "mm-16-opportunity-radar",
+        "mm-17-calculated-risk",
+        "mm-18-mastermind-principle",
+        "mm-19-long-term-thinking",
+        "mm-20-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "mm-module-3",
+      "moduleNumber": 3,
+      "title": "Build Your Wealth System",
+      "subtitle": "Turn mindset into action with practical wealth-building systems.",
+      "days": "Lessons 21–28",
+      "skill": "Create systems that build wealth automatically",
+      "lessonIds": [
+        "mm-21-wealth-flywheel",
+        "mm-22-automation-systems",
+        "mm-23-income-ladder",
+        "mm-24-financial-literacy",
+        "mm-25-frugality-freedom",
+        "mm-26-new-rich",
+        "mm-27-wealth-action-plan",
+        "mm-28-module-3-checkpoint"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "mm-1-money-blueprint",
+      "dayNumber": 1,
+      "moduleId": "mm-module-1",
+      "title": "Your Money Blueprint",
+      "subtitle": "Reset your internal financial thermostat",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Financial Thermostat Is Pre-Set",
+          "body": "Ever wonder why some people make money effortlessly while others struggle despite working twice as hard? Your financial success isn't just about hard work—it's about your internal blueprint, a subconscious program set in childhood.",
+          "stat": "80%",
+          "statLabel": "of money habits are formed before age 14"
+        },
+        {
+          "type": "content",
+          "headline": "The Invisible Script",
+          "body": "T. Harv Eker reveals that your financial life is a direct reflection of your 'money blueprint'—a subconscious program formed in childhood. Just like a thermostat set to 70° will always bring the room back to 70°, your internal blueprint keeps your bank account at a specific level.",
+          "bullets": [
+            "Verbal programming: what you heard about money growing up.",
+            "Modeling: what you saw your parents do with money.",
+            "Specific incidents: traumatic or positive money events."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rewiring for Growth",
+          "body": "To change your results, you must change your programming. Awareness is the first step—you cannot change what you don't acknowledge. By identifying the limiting beliefs you inherited, you can start to 'unplug' the old thermostat.",
+          "bullets": [
+            "You are not your past financial identity.",
+            "Your parents' money habits don't have to be yours.",
+            "The decision to rewrite starts today."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Uncover Your Blueprint",
+          "body": "Write down the three most common phrases you heard about money as a child (e.g., \"money doesn't grow on trees\", \"we can't afford that\"). For each one, ask: Is this serving me, or holding me back? Circle the one with the strongest grip on you."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a 'money blueprint'?",
+          "type": "mcq",
+          "options": [
+            "A subconscious program formed in childhood",
+            "A literal budget spreadsheet",
+            "A bank loan application",
+            "A financial investment strategy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Your blueprint is the set of beliefs and habits formed early in life that dictate your financial behavior."
+        },
+        {
+          "question": "Why does a financial thermostat matter?",
+          "type": "mcq",
+          "options": [
+            "It controls your interest rates",
+            "It keeps your income at a pre-set level",
+            "It helps you track inflation",
+            "It prevents taxes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Like a thermostat, your blueprint keeps your income within a range you are mentally comfortable with."
+        },
+        {
+          "question": "What is the first step to changing your blueprint?",
+          "type": "mcq",
+          "options": [
+            "Awareness of your current programming",
+            "Getting a new job",
+            "Investing in stocks",
+            "Saving 50% of your income"
+          ],
+          "correctIndex": 0,
+          "explanation": "You must identify your inherited limiting beliefs before you can replace them."
+        }
+      ]
+    },
+    {
+      "id": "mm-2-rich-vs-poor-thinking",
+      "dayNumber": 2,
+      "moduleId": "mm-module-1",
+      "title": "Rich vs Poor Thinking",
+      "subtitle": "Master the 17 wealth files",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 17 Mental Files That Separate Rich From Poor",
+          "body": "Wealth is not just about the money in your pocket—it's about the way you process the world. T. Harv Eker identified 17 'Wealth Files' that distinguish the rich from the poor. The most fundamental? Ownership vs victimhood.",
+          "stat": "17",
+          "statLabel": "wealth files that determine your financial destiny"
+        },
+        {
+          "type": "content",
+          "headline": "Opportunities vs Obstacles",
+          "body": "When a new idea comes along, the poor mind looks for obstacles and reasons why it won't work. The rich mind looks for potential and upside. This isn't about being reckless—it's about being focused on growth.",
+          "bullets": [
+            "Rich people believe: \"I create my life.\"",
+            "Poor people believe: \"Life happens to me.\"",
+            "Your focus determines your financial reality."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Thinking Big",
+          "body": "Rich people think big—they solve problems for thousands, which generates income in the thousands. Poor people think small, often terrified of failure. Your income is directly tied to the value you provide to the marketplace.",
+          "bullets": [
+            "Stop playing small out of fear.",
+            "Focus on solving bigger problems for more people.",
+            "Scale your impact to scale your income."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Reframe One Obstacle",
+          "body": "Identify one current 'obstacle' in your life right now. Write it down. Then reframe it by listing two specific opportunities that could arise if you solved that problem. Notice how your energy shifts when you focus on opportunity instead of blockage."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How do rich people view obstacles?",
+          "type": "mcq",
+          "options": [
+            "As growth opportunities",
+            "As signs to quit",
+            "As proof life is unfair",
+            "As someone else's fault"
+          ],
+          "correctIndex": 0,
+          "explanation": "Rich people focus on the potential and solutions rather than the risks."
+        },
+        {
+          "question": "What is the primary difference in mindset regarding life?",
+          "type": "mcq",
+          "options": [
+            "Rich people create life; poor people experience it",
+            "Rich people blame others; poor people take credit",
+            "Rich people are lucky; poor people are not",
+            "Rich people are born wealthy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Taking responsibility for your life is the cornerstone of the millionaire mindset."
+        },
+        {
+          "question": "Why do rich people 'think big'?",
+          "type": "mcq",
+          "options": [
+            "To show off",
+            "To provide more value to more people",
+            "To ignore the details",
+            "Because they have nothing to lose"
+          ],
+          "correctIndex": 1,
+          "explanation": "Thinking big allows you to scale your impact, which directly correlates to your income."
+        }
+      ]
+    },
+    {
+      "id": "mm-3-scarcity-trap",
+      "dayNumber": 3,
+      "moduleId": "mm-module-1",
+      "title": "The Scarcity Trap",
+      "subtitle": "Switch your brain to abundance mode",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Invisible Trap Keeping You Broke",
+          "body": "Do you feel like there's never enough? That feeling isn't a fact—it's a trap. Scarcity thinking keeps you stuck in survival mode, making fear-based decisions that perpetuate the cycle of \"not enough.\"",
+          "stat": "72%",
+          "statLabel": "of people make financial decisions from fear, not opportunity"
+        },
+        {
+          "type": "content",
+          "headline": "The Abundance Shift",
+          "body": "Abundance is the understanding that value can be created, not just divided. When you adopt an abundance mindset, you stop competing and start collaborating. Instead of worrying about a 'fixed pie,' you focus on baking a bigger one.",
+          "bullets": [
+            "Scarcity: \"If they win, I lose.\"",
+            "Abundance: \"There's enough for everyone.\"",
+            "Abundance attracts resources; scarcity repels them."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From Fear to Opportunity",
+          "body": "To escape the trap, audit your decisions. Ask: \"Am I doing this because I'm afraid, or because this moves me toward my goal?\" Fear-based decisions are restrictive and short-sighted. Opportunity-based decisions are expansive and long-term.",
+          "bullets": [
+            "Practice gratitude for what you have today.",
+            "Gratitude creates internal space for more.",
+            "Abundance is a state of mind you cultivate daily."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Rewrite One Scarcity Thought",
+          "body": "Write down one scarcity thought you had today (e.g., \"I can't afford that\"). Now rewrite it as an abundance thought (e.g., \"How can I create the value to afford that?\"). Feel the difference in energy between the two statements."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What characterizes a scarcity mindset?",
+          "type": "mcq",
+          "options": [
+            "Believing resources are limited",
+            "Focusing on collaboration",
+            "Taking calculated risks",
+            "Gratitude for the present"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scarcity is the fear that there isn't enough to go around."
+        },
+        {
+          "question": "How does an abundance mindset affect your actions?",
+          "type": "mcq",
+          "options": [
+            "It makes you hoard money",
+            "It encourages collaboration and growth",
+            "It makes you reckless",
+            "It focuses on short-term survival"
+          ],
+          "correctIndex": 1,
+          "explanation": "Abundance fosters a belief that value is infinite, leading to better collaboration."
+        },
+        {
+          "question": "What is the best way to escape the scarcity trap?",
+          "type": "mcq",
+          "options": [
+            "Audit your decisions for fear vs. opportunity",
+            "Spend all your money",
+            "Ignore your bank account",
+            "Blame the economy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Awareness of whether your decisions are fear-driven is the key to breaking the cycle."
+        }
+      ]
+    },
+    {
+      "id": "mm-4-money-stories",
+      "dayNumber": 4,
+      "moduleId": "mm-module-1",
+      "title": "Money Stories",
+      "subtitle": "Rewrite your inherited financial narrative",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Parents Wrote Your Financial Script",
+          "body": "Your parents didn't just give you your genes—they gave you your financial story. Robert Kiyosaki's \"Rich Dad, Poor Dad\" reveals how the stories we inherit about money shape our entire financial reality.",
+          "stat": "90%",
+          "statLabel": "of money beliefs are inherited from family before age 12"
+        },
+        {
+          "type": "content",
+          "headline": "Uncovering Your Narrative",
+          "body": "Did your family view money as a source of stress or security? Did they believe working hard was the only way to earn? These stories aren't necessarily true—they're just perspectives handed down without questioning.",
+          "bullets": [
+            "Your \"Poor Dad\" story: money is the goal, avoid risk.",
+            "Your \"Rich Dad\" story: money is a tool for freedom.",
+            "Unquestioned stories = living someone else's limitations."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Writing Your New Chapter",
+          "body": "To rewrite your story, state your new belief clearly. Instead of \"we never have enough,\" try \"I am a creator of wealth who provides value to the world.\" Speak it, write it, and act as if it is true.",
+          "bullets": [
+            "Ask: \"What would the person I want to become do?\"",
+            "Consciously choosing your narrative stops old patterns.",
+            "You are the author—cross out lines that don't serve you."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Complete the Sentence",
+          "body": "Complete this sentence: \"My parents taught me that money is ______.\" Write it honestly. Now rewrite it as the belief you choose to carry forward. Put the new version somewhere you'll see it daily—phone wallpaper, mirror, desk."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a 'money story'?",
+          "type": "mcq",
+          "options": [
+            "Narratives about money inherited from your upbringing",
+            "A record of your bank transactions",
+            "A fictional book about billionaires",
+            "A list of your expenses"
+          ],
+          "correctIndex": 0,
+          "explanation": "Money stories are the beliefs and narratives inherited from our family and mentors."
+        },
+        {
+          "question": "Why must you rewrite your money story?",
+          "type": "mcq",
+          "options": [
+            "To please your parents",
+            "To align your subconscious with your desired future",
+            "To make your bank account look better",
+            "To avoid paying taxes"
+          ],
+          "correctIndex": 1,
+          "explanation": "If your internal narrative conflicts with your goals, your subconscious will sabotage your success."
+        },
+        {
+          "question": "What is the best way to change your financial narrative?",
+          "type": "mcq",
+          "options": [
+            "Ignore your past completely",
+            "Proclaim a new belief and act accordingly",
+            "Ask your parents for money",
+            "Stop spending money"
+          ],
+          "correctIndex": 1,
+          "explanation": "Action and intentional belief-setting are necessary to replace old, limiting stories."
+        }
+      ]
+    },
+    {
+      "id": "mm-5-compound-effect",
+      "dayNumber": 5,
+      "moduleId": "mm-module-1",
+      "title": "The Compound Effect",
+      "subtitle": "Small shifts, massive results",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Hidden Edge of Time",
+          "body": "Warren Buffett's wealth isn't just about investing; it's about the decades he spent staying in the game. When you understand compounding, you stop chasing get-rich-quick schemes and start building a legacy.",
+          "stat": "99%",
+          "statLabel": "Of Buffett's wealth earned after age 50"
+        },
+        {
+          "type": "content",
+          "headline": "The Physics of Wealth",
+          "body": "Compounding is the mathematical equivalent of a snowball rolling down a mountain. It starts slow and almost invisible, but as mass accumulates, the growth becomes exponential. In financial terms, this means your early efforts may feel insignificant, but they are the foundational layers that provide the surface area for massive future gains.",
+          "bullets": [
+            "Consistency beats intensity every time",
+            "Small daily habits dictate long-term net worth",
+            "Time is the most powerful asset in your portfolio"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Patience as a Competitive Advantage",
+          "body": "Most people overestimate what they can do in a year and underestimate what they can do in a decade. The market rewards those who can sit still while others panic. By focusing on boring, consistent actions rather than high-risk gambles, you allow the engine of compound interest to do the heavy lifting for you.",
+          "bullets": [
+            "Avoid the urge to interrupt the process",
+            "Focus on steady, incremental growth",
+            "Let time be your primary investment vehicle"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 1% Adjustment",
+          "body": "Identify one small financial habit (like automating $50 into an index fund) and commit to it for the next 30 days without fail."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is time the most important factor in the compound effect?",
+          "type": "mcq",
+          "options": [
+            "It allows for exponential growth",
+            "It guarantees high returns",
+            "It eliminates market risk",
+            "It requires no effort"
+          ],
+          "correctIndex": 0,
+          "explanation": "Compounding relies on time to turn small, consistent gains into massive wealth through exponential growth."
+        },
+        {
+          "question": "What is the biggest trap when trying to use the compound effect?",
+          "type": "mcq",
+          "options": [
+            "Investing too much",
+            "Interrupting the process too early",
+            "Being too patient",
+            "Saving too little"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most common mistake is stopping or changing strategies before the compounding effect truly accelerates."
+        },
+        {
+          "question": "How should you view your financial progress in the first few years?",
+          "type": "mcq",
+          "options": [
+            "As a failure if not wealthy",
+            "As the foundational layer for growth",
+            "As irrelevant to the end goal",
+            "As a time to take big risks"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early efforts are essential for building the base that allows for massive compounding later."
+        }
+      ]
+    },
+    {
+      "id": "mm-6-desire-purpose",
+      "dayNumber": 6,
+      "moduleId": "mm-module-1",
+      "title": "Desire & Definiteness of Purpose",
+      "subtitle": "The starting point of all wealth",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Fuel for Your Engine",
+          "body": "Wishing for money is a hobby; desiring wealth is a profession. Napoleon Hill found that every great fortune began with a burning desire and a concrete, definite plan of action.",
+          "stat": "100%",
+          "statLabel": "Success rate of definite, written plans vs vague wishes"
+        },
+        {
+          "type": "content",
+          "headline": "From Vague Wishes to Definite Plans",
+          "body": "Most people fail because they have 'vague wishes' like 'I want to be rich.' This lack of clarity gives your brain no target to hit. A 'Definiteness of Purpose' requires you to define exactly what you want, when you want it by, and what you are willing to give in return for that wealth.",
+          "bullets": [
+            "Define your exact financial target",
+            "Identify the service you offer in exchange",
+            "Set a specific date for your achievement"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Transmutation of Desire",
+          "body": "Desire is merely a form of energy. To manifest wealth, you must transmute this abstract state into physical reality through focused planning. This means moving from the 'dreaming' phase to the 'doing' phase where your daily tasks are directly aligned with your ultimate financial objective, leaving no room for distraction or doubt.",
+          "bullets": [
+            "Write down your goal clearly",
+            "Create a step-by-step roadmap",
+            "Eliminate all conflicting activities"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Wealth Statement",
+          "body": "Write down your specific financial goal, the exact date you will achieve it, and one service you will provide to earn it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary difference between a 'vague wish' and 'definiteness of purpose'?",
+          "type": "mcq",
+          "options": [
+            "A plan of action",
+            "The amount of money",
+            "The level of luck",
+            "The age of the person"
+          ],
+          "correctIndex": 0,
+          "explanation": "Definiteness of purpose requires a concrete plan, whereas a wish has no clear path to achievement."
+        },
+        {
+          "question": "Why must you decide what you are willing to give in return for wealth?",
+          "type": "mcq",
+          "options": [
+            "To prove your greed",
+            "To establish a fair exchange of value",
+            "Because money is scarce",
+            "To satisfy the government"
+          ],
+          "correctIndex": 1,
+          "explanation": "Wealth is almost always a byproduct of providing value; you must define how you add that value."
+        },
+        {
+          "question": "What is 'transmutation' in the context of desire?",
+          "type": "mcq",
+          "options": [
+            "Turning desire into physical reality",
+            "Changing your bank account",
+            "Ignoring your emotions",
+            "Doubling your salary"
+          ],
+          "correctIndex": 0,
+          "explanation": "Transmutation is the process of converting mental energy (desire) into tangible results through action."
+        }
+      ]
+    },
+    {
+      "id": "mm-7-faith-autosuggestion",
+      "dayNumber": 7,
+      "moduleId": "mm-module-1",
+      "title": "Faith & Autosuggestion",
+      "subtitle": "Programming your subconscious for wealth",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Architect of Belief",
+          "body": "Your subconscious mind doesn't know the difference between reality and a vividly imagined goal. By using autosuggestion, you program your mind to seek out opportunities that match your financial desires.",
+          "stat": "60,000",
+          "statLabel": "Daily thoughts, most of which are repetitive"
+        },
+        {
+          "type": "content",
+          "headline": "The Science of Autosuggestion",
+          "body": "Autosuggestion is not magic; it is the process of self-administered stimulus. By repeatedly feeding your mind positive, wealth-oriented affirmations, you influence your subconscious to act upon those thoughts. Your brain is a filtering mechanism; when you focus on wealth, your mind begins to notice money-making patterns it previously ignored.",
+          "bullets": [
+            "Repeat your goals daily to prime the brain",
+            "Visualize the achievement of your desires",
+            "Filter out negative self-talk"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Faith as a State of Mind",
+          "body": "In this context, faith is the total conviction that you will achieve your goal. It is the emotional engine that keeps you moving when the data looks discouraging. When you combine faith with persistent autosuggestion, you create a psychological 'wealth-seeking' loop that drives your daily decisions toward your ultimate objective.",
+          "bullets": [
+            "Maintain total conviction in your goal",
+            "Use repetition to solidify belief",
+            "Act as if your success is inevitable"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Morning Loop",
+          "body": "Record yourself stating your primary wealth goal in the present tense. Listen to it for 2 minutes every morning for one week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main purpose of autosuggestion?",
+          "type": "mcq",
+          "options": [
+            "To program the subconscious mind",
+            "To impress your friends",
+            "To relax your body",
+            "To save money"
+          ],
+          "correctIndex": 0,
+          "explanation": "Autosuggestion is a tool to influence your subconscious mind to align with your conscious goals."
+        },
+        {
+          "question": "How does your brain treat repeated, visualized goals?",
+          "type": "mcq",
+          "options": [
+            "As potential realities to look for",
+            "As annoying background noise",
+            "As impossible fantasies",
+            "As a reason to sleep more"
+          ],
+          "correctIndex": 0,
+          "explanation": "The brain acts as a filter; when you hold a goal firmly in mind, you begin to notice opportunities to achieve it."
+        },
+        {
+          "question": "In the context of wealth, what is 'faith'?",
+          "type": "mcq",
+          "options": [
+            "Total conviction of success",
+            "A religious ceremony",
+            "Ignoring the reality of debt",
+            "A lucky mindset"
+          ],
+          "correctIndex": 0,
+          "explanation": "Faith is the unwavering belief and conviction that acts as the emotional fuel for your actions."
+        }
+      ]
+    },
+    {
+      "id": "mm-8-wealth-identity",
+      "dayNumber": 8,
+      "moduleId": "mm-module-1",
+      "title": "The Wealth Identity",
+      "subtitle": "Becoming vs wanting",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Don't Get, You Become",
+          "body": "Most people try to change their results without changing their identity. If you want to build lasting wealth, you must first stop being the person who 'wants' money and start being the person who 'builds' value.",
+          "stat": "95%",
+          "statLabel": "Of lottery winners who go broke within 5 years"
+        },
+        {
+          "type": "content",
+          "headline": "Identity-Based Habits",
+          "body": "True behavioral change is identity change. If you view yourself as a 'saver' or an 'investor,' you don't need willpower to manage your money—it becomes a natural expression of who you are. When you shift your identity, your habits naturally follow suit, ensuring that your financial actions are consistent with your self-image.",
+          "bullets": [
+            "Define your identity as a wealth-builder",
+            "Perform actions that align with this identity",
+            "Avoid behaviors that contradict your new self"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 'Becoming' Mindset",
+          "body": "When you focus on 'becoming,' you stop looking for shortcuts. You understand that the process of building wealth is what creates the character necessary to keep it. This is why lottery winners often lose everything; they received the wealth without the identity shift required to sustain and grow it over time.",
+          "bullets": [
+            "Focus on character over quick wins",
+            "Ask: 'What would a wealthy person do?'",
+            "Align daily actions with your future self"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Identity Audit",
+          "body": "List three habits you currently have that a 'wealthy, disciplined person' would NOT have. Commit to replacing one today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do many lottery winners lose their wealth?",
+          "type": "mcq",
+          "options": [
+            "Lack of identity-based growth",
+            "Bad luck",
+            "Too much taxes",
+            "The money was fake"
+          ],
+          "correctIndex": 0,
+          "explanation": "Without the personal growth and identity shift, they lack the capacity to manage and sustain wealth."
+        },
+        {
+          "question": "What is the most effective way to change your financial habits?",
+          "type": "mcq",
+          "options": [
+            "Changing your core identity",
+            "Using more willpower",
+            "Setting vague goals",
+            "Buying a new planner"
+          ],
+          "correctIndex": 0,
+          "explanation": "Identity-based habits are sustainable because they align your actions with who you believe you are."
+        },
+        {
+          "question": "What is the 'becoming' mindset?",
+          "type": "mcq",
+          "options": [
+            "Focusing on character and long-term growth",
+            "Focusing on the fastest way to get rich",
+            "Ignoring your current financial state",
+            "Trying to copy others"
+          ],
+          "correctIndex": 0,
+          "explanation": "Becoming focuses on the process of character development, which leads to sustainable financial success."
+        }
+      ]
+    },
+    {
+      "id": "mm-9-enough",
+      "dayNumber": 9,
+      "moduleId": "mm-module-1",
+      "title": "Enough",
+      "subtitle": "The most powerful word in finance",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Danger of Moving Goalposts",
+          "body": "The smartest, richest, and most capable people often ruin their lives because they never learn the word 'enough.' Chasing 'more' is a game that can never be won.",
+          "stat": "0",
+          "statLabel": "Number of people who find peace by endlessly moving goalposts"
+        },
+        {
+          "type": "content",
+          "headline": "The Trap of Relative Comparison",
+          "body": "Modern society is designed to make you feel like you never have enough. By comparing your net worth to the top 1%, you lose perspective on what you actually need to live a fulfilling life. Defining 'enough' is the only way to protect yourself from the self-destructive cycle of greed and status-seeking.",
+          "bullets": [
+            "Define your personal financial ceiling",
+            "Stop comparing your chapter 1 to others' chapter 20",
+            "Recognize when 'more' is no longer adding value"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Protecting What You Have",
+          "body": "The greatest financial tragedy is losing what you need for what you don't need. When you define your 'enough,' you create a safety zone for your assets. You move from a scarcity mindset to an abundance mindset, where your focus shifts from accumulating more to enjoying the freedom and security you have already earned.",
+          "bullets": [
+            "Prioritize peace over constant acquisition",
+            "Know the point where risk outweighs reward",
+            "Value your time more than extra status"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Define Your Enough",
+          "body": "Write down the specific lifestyle (not just a dollar amount) that would make you feel completely secure and satisfied forever."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is 'enough' the most powerful word in finance?",
+          "type": "mcq",
+          "options": [
+            "It prevents self-destruction",
+            "It makes you poor",
+            "It stops you from investing",
+            "It is easy to achieve"
+          ],
+          "correctIndex": 0,
+          "explanation": "Knowing your 'enough' prevents you from taking unnecessary risks to chase status or excessive wealth."
+        },
+        {
+          "question": "What happens when you constantly move your 'enough' goalposts?",
+          "type": "mcq",
+          "options": [
+            "You are never satisfied",
+            "You become richer",
+            "You save more time",
+            "You reach financial freedom"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moving goalposts keeps you in a state of perpetual dissatisfaction regardless of how much you earn."
+        },
+        {
+          "question": "What is the 'greatest financial tragedy' mentioned?",
+          "type": "mcq",
+          "options": [
+            "Risking what you need for what you don't need",
+            "Not having enough money",
+            "Saving too much",
+            "Working too hard"
+          ],
+          "correctIndex": 0,
+          "explanation": "The tragedy is losing your security and peace by chasing things that provide no real value."
+        }
+      ]
+    },
+    {
+      "id": "mm-10-module-1-checkpoint",
+      "dayNumber": 10,
+      "moduleId": "mm-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Test your money mindset foundations",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Reviewing Your Foundations",
+          "body": "You have spent 10 days building the mental infrastructure for wealth. Success isn't just about math; it's about the mindset you bring to the numbers. Let's verify your progress.",
+          "stat": "100%",
+          "statLabel": "Mindset determines your financial trajectory"
+        },
+        {
+          "type": "content",
+          "headline": "The Pillars of Module 1",
+          "body": "We covered your Money Blueprint, Rich vs Poor Thinking, the Scarcity Trap, Money Stories, the Compound Effect, Desire & Purpose, Autosuggestion, Wealth Identity, and Enough. These aren't separate concepts—they form a single integrated framework for rewiring your money mind.",
+          "bullets": [
+            "Compound interest needs time and patience",
+            "Desire needs a definite, actionable plan",
+            "Identity dictates your financial habits"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Looking Ahead",
+          "body": "You are now equipped with the psychological tools necessary to build wealth without losing yourself. The next module focuses on tactical mental models: how the wealthy think about assets, leverage, risk, and opportunity. Take a moment to reflect on which concept challenged you most.",
+          "bullets": [
+            "Reflect on your 'enough' number",
+            "Ensure your goals are written down",
+            "Commit to your new wealth identity"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 10-Day Reflection",
+          "body": "Look at the goals you wrote on Day 6. Are they still aligned with your 'enough' number and your new wealth identity? Adjust if needed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is NOT a concept covered in Module 1?",
+          "type": "mcq",
+          "options": [
+            "The Compound Effect",
+            "Definiteness of Purpose",
+            "Speculative Day Trading",
+            "Wealth Identity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Speculative trading was not covered; our focus was on sustainable, mindset-driven wealth building."
+        },
+        {
+          "question": "Why is it important to integrate all Module 1 concepts rather than picking one?",
+          "type": "mcq",
+          "options": [
+            "They form an integrated framework",
+            "It's just for extra credit",
+            "One is not enough to get rich",
+            "It is required by the app"
+          ],
+          "correctIndex": 0,
+          "explanation": "These concepts support each other; for example, identity helps you stay patient for the compound effect."
+        },
+        {
+          "question": "What is the primary goal of the 'Enough' concept?",
+          "type": "mcq",
+          "options": [
+            "To prevent self-destruction and maintain peace",
+            "To limit your earnings",
+            "To stop you from retiring",
+            "To make you spend more"
+          ],
+          "correctIndex": 0,
+          "explanation": "Defining 'enough' allows you to pursue growth without losing the security and happiness you've already attained."
+        }
+      ]
+    },
+    {
+      "id": "mm-11-assets-vs-liabilities",
+      "dayNumber": 11,
+      "moduleId": "mm-module-2",
+      "title": "Assets vs Liabilities",
+      "subtitle": "The one rule that changes everything",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop buying 'fake' assets",
+          "body": "Most people think their house and car are assets. In reality, they are often liabilities draining your wealth. To get rich, you must flip this mindset immediately.",
+          "stat": "80%",
+          "statLabel": "of 'wealth' is often tied up in depreciating liabilities"
+        },
+        {
+          "type": "content",
+          "headline": "Defining true wealth",
+          "body": "An asset is anything that puts money in your pocket, while a liability takes money out. A house you live in costs you property taxes, maintenance, and mortgage interest—it is a liability. Conversely, a rental property that generates monthly profit is an asset. The wealthy focus exclusively on acquiring income-generating vehicles. By shifting your spending from consumer goods to cash-flowing assets, you move from earning a living to building a legacy.",
+          "bullets": [
+            "Assets put money in your pocket",
+            "Liabilities take money out",
+            "Focus on cash flow, not vanity"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Cash Flow Quadrant",
+          "body": "Understanding where your money comes from is essential. The wealthy prioritize moving from the 'Employee' or 'Self-Employed' quadrants into the 'Business Owner' or 'Investor' quadrants. In these categories, your money works for you rather than you working for your money. This shift is not just about income—it is about the leverage of systems and capital. Stop trading time for money and start trading capital for long-term equity.",
+          "bullets": [
+            "Move from time-based to system-based income",
+            "Focus on ownership over employment",
+            "Prioritize equity that compounds"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Audit",
+          "body": "List your three biggest monthly expenses. Are they assets or liabilities? Identify one item you can cut to invest in an income-generating asset instead."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the lesson, what is the primary definition of an asset?",
+          "type": "mcq",
+          "options": [
+            "Anything you own",
+            "Something that puts money in your pocket",
+            "A high-value luxury item",
+            "Your personal residence"
+          ],
+          "correctIndex": 1,
+          "explanation": "An asset is defined by its ability to generate cash flow, not just its market value."
+        },
+        {
+          "question": "Why is a primary home usually classified as a liability?",
+          "type": "mcq",
+          "options": [
+            "It doesn't appreciate",
+            "It requires constant expenses",
+            "It is illegal to call it an asset",
+            "It cannot be sold"
+          ],
+          "correctIndex": 1,
+          "explanation": "Because it requires ongoing payments for maintenance, taxes, and interest without generating income."
+        },
+        {
+          "question": "What is the goal of the Cash Flow Quadrant?",
+          "type": "mcq",
+          "options": [
+            "To work harder",
+            "To get a promotion",
+            "To move from working for money to owning systems",
+            "To save every penny"
+          ],
+          "correctIndex": 2,
+          "explanation": "The shift is toward Business and Investing, where systems and capital generate wealth."
+        }
+      ]
+    },
+    {
+      "id": "mm-12-cash-flow-thinking",
+      "dayNumber": 12,
+      "moduleId": "mm-module-2",
+      "title": "Cash Flow Thinking",
+      "subtitle": "Income streams over job security",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Salary dependency is a trap",
+          "body": "The wealthy don't aim for a higher salary; they aim for multiple streams of cash flow. Stop chasing job security and start chasing system security.",
+          "stat": "3+",
+          "statLabel": "average number of income streams for millionaires"
+        },
+        {
+          "type": "content",
+          "headline": "Net worth vs Cash flow",
+          "body": "Many people focus on their 'net worth' on paper, but cash flow is the lifeblood of financial freedom. If your net worth is tied up in illiquid assets, you cannot survive a crisis. The wealthy prioritize consistent, automated income streams that cover their lifestyle costs. This allows them to make decisions based on long-term strategy rather than short-term survival. When your cash flow exceeds your expenses, you are officially free.",
+          "bullets": [
+            "Prioritize liquidity and consistency",
+            "Cover expenses with passive income",
+            "Avoid single-source dependency"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building money-making systems",
+          "body": "System thinking involves creating processes that generate money whether you are at your desk or sleeping. This could be digital products, real estate, or automated businesses. The goal is to decouple your time from your earnings. By investing in systems rather than just working harder, you create a compounding effect. Each successful system acts as a new 'employee' working 24/7 to increase your financial independence and overall freedom.",
+          "bullets": [
+            "Decouple time from income",
+            "Automate revenue processes",
+            "Focus on scalability"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Brainstorming Streams",
+          "body": "Write down two potential side projects or investments that could generate even a small amount of passive income without your daily intervention."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main danger of relying on a single salary?",
+          "type": "mcq",
+          "options": [
+            "Lack of tax benefits",
+            "Dependency risk",
+            "Low social status",
+            "It is too easy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Single-source dependency means if that one stream stops, your entire financial foundation collapses."
+        },
+        {
+          "question": "Why is cash flow more important than net worth?",
+          "type": "mcq",
+          "options": [
+            "It is easier to calculate",
+            "It provides liquidity for daily living",
+            "It is always higher",
+            "It is tax-free"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cash flow is money in your pocket, whereas net worth can be tied up in things you cannot spend."
+        },
+        {
+          "question": "What characterizes a 'system' in wealth building?",
+          "type": "mcq",
+          "options": [
+            "It requires your constant presence",
+            "It generates money automatically",
+            "It is only for large companies",
+            "It replaces the need for savings"
+          ],
+          "correctIndex": 1,
+          "explanation": "Systems are processes that produce results independently of your direct labor."
+        }
+      ]
+    },
+    {
+      "id": "mm-13-specific-knowledge",
+      "dayNumber": 13,
+      "moduleId": "mm-module-2",
+      "title": "Specific Knowledge",
+      "subtitle": "Your unfair advantage",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't be a generic expert",
+          "body": "Schools teach generic skills you can be replaced for. Wealth is created through 'specific knowledge'—the intersection of your unique curiosity and rare skills.",
+          "stat": "100%",
+          "statLabel": "of your unique value comes from your specific knowledge"
+        },
+        {
+          "type": "content",
+          "headline": "The power of the unique",
+          "body": "Specific knowledge is found by pursuing your genuine curiosity rather than following a predefined career path. It is often highly technical or creative and cannot be easily taught in a classroom. Because it is unique to you, it cannot be trained away or outsourced to a cheaper employee. When you lean into your obsessions, you develop a skill set that society finds invaluable, allowing you to charge a premium for your output.",
+          "bullets": [
+            "Follow curiosity, not trends",
+            "Make yourself un-outsourcable",
+            "Combine diverse interests"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Society rewards the unique",
+          "body": "Society rewards those who solve problems that are difficult or obscure. If you are a 'generic' worker, you are competing with everyone else on price. When you cultivate specific knowledge, you remove yourself from the competition. You are no longer just an employee; you are a specialist providing a unique solution. This is the foundation of high-leverage work. Invest time in becoming the best version of your niche, not a mediocre version of a popular role.",
+          "bullets": [
+            "Stop competing on price",
+            "Focus on solving hard problems",
+            "Be authentic to your interests"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Intersection Test",
+          "body": "List two skills you have that, when combined, make you rare. How could you solve a specific problem using this unique combination?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the defining trait of 'specific knowledge'?",
+          "type": "mcq",
+          "options": [
+            "It is learned in university",
+            "It is easily outsourced",
+            "It cannot be taught in school",
+            "It is purely academic"
+          ],
+          "correctIndex": 2,
+          "explanation": "Specific knowledge comes from unique experiences and personal obsession, not standardized curricula."
+        },
+        {
+          "question": "Why does society reward specific knowledge?",
+          "type": "mcq",
+          "options": [
+            "It is rare and solves unique problems",
+            "It is cheap to hire",
+            "It follows the latest trends",
+            "It is highly theoretical"
+          ],
+          "correctIndex": 0,
+          "explanation": "Because it is difficult to replicate, it holds high value in the marketplace."
+        },
+        {
+          "question": "How do you find your specific knowledge?",
+          "type": "mcq",
+          "options": [
+            "Ask your parents",
+            "Follow the highest-paying jobs",
+            "Follow your genuine curiosity",
+            "Copy a successful person"
+          ],
+          "correctIndex": 2,
+          "explanation": "Specific knowledge is built at the intersection of your unique interests and personal experiences."
+        }
+      ]
+    },
+    {
+      "id": "mm-14-leverage",
+      "dayNumber": 14,
+      "moduleId": "mm-module-2",
+      "title": "Leverage",
+      "subtitle": "The four types of leverage",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Multiply your output",
+          "body": "Hard work is a poor strategy if you lack leverage. Learn how the wealthy use capital, labor, code, and media to multiply their time by 1000x.",
+          "stat": "0",
+          "statLabel": "permission needed for code and media leverage"
+        },
+        {
+          "type": "content",
+          "headline": "The four types of leverage",
+          "body": "Leverage is force multiplication. Historically, labor and capital were the only ways to grow wealth, but they require permission from others. Today, we have 'permissionless' leverage: code and media. Code (software) works for you while you sleep, and media (content) scales your influence infinitely. If you don't master these new forms of leverage, you will always be limited by the number of hours you can physically work in a single day.",
+          "bullets": [
+            "Labor and capital require permission",
+            "Code and media are permissionless",
+            "Use leverage to decouple time"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Applying your leverage",
+          "body": "Start small. If you aren't a coder, use no-code tools to build systems. If you aren't a media mogul, start by writing or recording content that shares your expertise. These tools allow your work to be replicated without extra effort. The goal is to build assets that can be distributed to millions at zero marginal cost. When you combine your specific knowledge with these leverage tools, you achieve exponential growth that traditional work cannot match.",
+          "bullets": [
+            "Use no-code tools to build",
+            "Create content to scale influence",
+            "Focus on zero marginal cost"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Leverage Mapping",
+          "body": "Identify one task you do daily. Can you use a tool or content piece to automate it so you never have to do it manually again?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is considered 'permissionless' leverage?",
+          "type": "mcq",
+          "options": [
+            "Hiring staff",
+            "Taking a bank loan",
+            "Writing code",
+            "Requesting a raise"
+          ],
+          "correctIndex": 2,
+          "explanation": "Code and media do not require permission from others to start or scale."
+        },
+        {
+          "question": "What is the primary benefit of leverage?",
+          "type": "mcq",
+          "options": [
+            "It increases your boss's output",
+            "It decouples your time from your results",
+            "It makes you work longer hours",
+            "It removes the need for knowledge"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leverage allows your output to grow independently of the time you put in."
+        },
+        {
+          "question": "What is the 'marginal cost' of digital media?",
+          "type": "mcq",
+          "options": [
+            "Extremely high",
+            "Variable",
+            "Zero",
+            "Fixed"
+          ],
+          "correctIndex": 2,
+          "explanation": "Digital assets can be replicated and distributed to millions at essentially zero cost."
+        }
+      ]
+    },
+    {
+      "id": "mm-15-stealth-wealth",
+      "dayNumber": 15,
+      "moduleId": "mm-module-2",
+      "title": "Stealth Wealth",
+      "subtitle": "Why real millionaires dont look rich",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Looking rich vs. Being rich",
+          "body": "The people who look the richest are often the furthest from financial freedom. 'Stealth wealth' is the secret strategy of the truly wealthy.",
+          "stat": "75%",
+          "statLabel": "of actual millionaires live in modest neighborhoods"
+        },
+        {
+          "type": "content",
+          "headline": "The 'Millionaire Next Door' effect",
+          "body": "Real wealth isn't about status symbols—it's about the gap between your income and your spending. Consumption is the enemy of wealth accumulation. The people who drive the newest cars and wear designer clothes are often spending their 'freedom money' to impress others. True millionaires prioritize buying income-producing assets over depreciating consumer goods. They understand that every dollar spent on a status symbol is a dollar that isn't working for them in the market.",
+          "bullets": [
+            "Consumption kills wealth",
+            "Avoid status-driven spending",
+            "Invest the difference"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The cost of 'looking' rich",
+          "body": "When you buy things to impress others, you are essentially paying for their temporary approval with your long-term independence. This is a bad trade. Stealth wealth means living below your means, not because you have to, but because you choose to. By keeping your overhead low, you have more capital to deploy into assets. The goal is to build a foundation that supports your future self, not an image that satisfies your neighbors' expectations.",
+          "bullets": [
+            "Approval is a bad investment",
+            "Low overhead equals high freedom",
+            "Prioritize your future over current optics"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Status Audit",
+          "body": "Identify one 'status' expense in your life. Calculate what that money could grow to in 10 years if invested in an index fund instead."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is 'looking rich' a wealth destroyer?",
+          "type": "mcq",
+          "options": [
+            "It attracts too many taxes",
+            "It consumes capital needed for assets",
+            "It is considered rude",
+            "It makes you lose focus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every dollar spent on status is a dollar that could have been invested to compound."
+        },
+        {
+          "question": "What is the core of 'stealth wealth'?",
+          "type": "mcq",
+          "options": [
+            "Living below your means",
+            "Hiding money from the government",
+            "Never buying anything",
+            "Working multiple jobs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stealth wealth is about keeping your expenses low so your assets can grow faster."
+        },
+        {
+          "question": "What is the primary goal of the wealthy?",
+          "type": "mcq",
+          "options": [
+            "Status",
+            "Financial independence",
+            "Public recognition",
+            "Spending money"
+          ],
+          "correctIndex": 1,
+          "explanation": "True wealthy people value freedom and independence over external indicators of wealth."
+        }
+      ]
+    },
+    {
+      "id": "mm-16-opportunity-radar",
+      "dayNumber": 16,
+      "moduleId": "mm-module-2",
+      "title": "Opportunity Radar",
+      "subtitle": "Training yourself to spot opportunities",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Luck is a skill",
+          "body": "Most people see problems; the wealthy see opportunities. Luck isn't random—it's what happens when a prepared mind meets a recurring pattern.",
+          "stat": "90%",
+          "statLabel": "of opportunities are hidden in plain sight"
+        },
+        {
+          "type": "content",
+          "headline": "Developing pattern recognition",
+          "body": "The wealthy train their brains to scan for inefficiencies, market gaps, and unsolved problems. When they see a frustration in their daily life, they don't complain—they ask, 'How could this be solved for profit?' This is a form of pattern recognition that improves with practice. By constantly exposing yourself to new ideas, diverse industries, and challenging problems, you widen your filter for what constitutes a viable opportunity.",
+          "bullets": [
+            "Don't complain, solve",
+            "Look for inefficiencies",
+            "Expose yourself to diverse ideas"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The prepared mind",
+          "body": "Opportunities are everywhere, but they are invisible to the unprepared. You must cultivate a 'prepared mind' by learning continuously and staying curious. When you understand how business models work, you start seeing leverage points in everything. Don't just watch the world; analyze it. Ask yourself: 'Who is paying for this? What is the bottleneck here?' Over time, your radar will become naturally tuned to spot value before anyone else does.",
+          "bullets": [
+            "Be a student of business models",
+            "Ask 'Who is paying?'",
+            "Stay curious about systems"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Problem Log",
+          "body": "For the next 24 hours, write down three things that frustrate you. For each one, brainstorm one potential business solution."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How do you improve your 'opportunity radar'?",
+          "type": "mcq",
+          "options": [
+            "By avoiding risks",
+            "By studying business patterns and problems",
+            "By waiting for the right moment",
+            "By following what everyone else does"
+          ],
+          "correctIndex": 1,
+          "explanation": "You train your brain to recognize patterns by studying how systems and markets work."
+        },
+        {
+          "question": "What is the first step when you encounter a problem?",
+          "type": "mcq",
+          "options": [
+            "Complain about it",
+            "Ignore it",
+            "Ask how it could be solved for profit",
+            "Find someone to blame"
+          ],
+          "correctIndex": 2,
+          "explanation": "The wealthy convert problems into business opportunities by looking for solutions."
+        },
+        {
+          "question": "What does a 'prepared mind' allow you to do?",
+          "type": "mcq",
+          "options": [
+            "Predict the future perfectly",
+            "Spot opportunities others miss",
+            "Avoid all work",
+            "Get rich overnight"
+          ],
+          "correctIndex": 1,
+          "explanation": "A prepared mind recognizes patterns and value where others see only noise or problems."
+        }
+      ]
+    },
+    {
+      "id": "mm-17-calculated-risk",
+      "dayNumber": 17,
+      "moduleId": "mm-module-2",
+      "title": "Calculated Risk",
+      "subtitle": "Mastering the art of asymmetric bets",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Risk is not a gamble",
+          "body": "Millionaires don't avoid risk; they manage it. It's about finding bets where the upside is capped only by your vision, but the downside is strictly limited.",
+          "stat": "80%",
+          "statLabel": "of self-made millionaires take calculated, not reckless, risks."
+        },
+        {
+          "type": "content",
+          "headline": "Asymmetric Bets",
+          "body": "Nassim Taleb argues for 'convex' opportunities where you lose a little if wrong, but gain exponentially if right.",
+          "bullets": [
+            "Identify low-cost entry points.",
+            "Limit downside exposure through stop-losses.",
+            "Seek high-upside potential outcomes."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Probabilistic Thinking",
+          "body": "Annie Duke teaches that life is like poker, not chess. You must make decisions based on odds rather than certainty.",
+          "bullets": [
+            "Detach your ego from the outcome.",
+            "Focus on the quality of the decision process.",
+            "Accept that luck plays a role in the short term."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The 'Pre-Mortem'",
+          "body": "Before your next big decision, imagine it failed completely. Write down exactly why it happened to identify hidden risks today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What defines an asymmetric bet?",
+          "type": "mcq",
+          "options": [
+            "High risk, low reward",
+            "Limited downside, high upside",
+            "Zero risk, guaranteed return",
+            "High volatility, fast losses"
+          ],
+          "correctIndex": 1,
+          "explanation": "Asymmetric bets prioritize limited downside while keeping the potential for massive upside open."
+        },
+        {
+          "question": "Why does Annie Duke suggest we treat life like poker?",
+          "type": "mcq",
+          "options": [
+            "Because it involves bluffing",
+            "Because it is based on incomplete information",
+            "Because it is a zero-sum game",
+            "Because it is purely luck-based"
+          ],
+          "correctIndex": 1,
+          "explanation": "Poker, like life, requires making the best possible decisions with incomplete information."
+        },
+        {
+          "question": "What is the benefit of a 'Pre-Mortem'?",
+          "type": "mcq",
+          "options": [
+            "To avoid taking risks",
+            "To identify risks before they happen",
+            "To celebrate past wins",
+            "To increase your net worth"
+          ],
+          "correctIndex": 1,
+          "explanation": "A pre-mortem helps you visualize failure to proactively mitigate risks."
+        }
+      ]
+    },
+    {
+      "id": "mm-18-mastermind-principle",
+      "dayNumber": 18,
+      "moduleId": "mm-module-2",
+      "title": "The Mastermind Principle",
+      "subtitle": "Curating your inner circle for success",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Who you spend time with is who you become",
+          "body": "Your network is your net worth. The collective intelligence of a group far exceeds the sum of its individual parts.",
+          "stat": "5",
+          "statLabel": "people you spend the most time with shape your mindset."
+        },
+        {
+          "type": "content",
+          "headline": "The Napoleon Hill Approach",
+          "body": "Hill defined the 'Mastermind' as a coordination of knowledge and effort between two or more people for a definite purpose.",
+          "bullets": [
+            "Create a shared vision.",
+            "Foster a safe space for criticism.",
+            "Leverage diverse skill sets."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Average of Five",
+          "body": "Jim Rohn famously noted that you are the average of the five people you spend the most time with. Choose wisely.",
+          "bullets": [
+            "Audit your current relationships.",
+            "Seek out mentors, not just peers.",
+            "Be a contributor, not just a taker."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Audit Your Circle",
+          "body": "List the five people you talk to most. Do they inspire you, challenge you, or hold you back? Plan to spend 30 minutes with a high-growth peer this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a Mastermind group?",
+          "type": "mcq",
+          "options": [
+            "A group of friends for fun",
+            "A collaborative effort for a specific goal",
+            "A social media follower group",
+            "A group of employees"
+          ],
+          "correctIndex": 1,
+          "explanation": "A mastermind is a purposeful collaboration for shared growth and goals."
+        },
+        {
+          "question": "What is the 'Average of Five' principle?",
+          "type": "mcq",
+          "options": [
+            "You need 5 degrees",
+            "You are shaped by your closest peers",
+            "You should have 5 jobs",
+            "You need 5 mentors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Jim Rohn taught that our habits and mindset reflect the five people we spend most time with."
+        },
+        {
+          "question": "What is the goal of auditing your circle?",
+          "type": "mcq",
+          "options": [
+            "To judge others",
+            "To ensure your environment supports your growth",
+            "To get more followers",
+            "To save money"
+          ],
+          "correctIndex": 1,
+          "explanation": "Auditing your circle ensures your environment is aligned with your personal growth."
+        }
+      ]
+    },
+    {
+      "id": "mm-19-long-term-thinking",
+      "dayNumber": 19,
+      "moduleId": "mm-module-2",
+      "title": "Long-Term Thinking",
+      "subtitle": "Playing the infinite game",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The secret to wealth is patience",
+          "body": "Most people overestimate what they can do in one year and underestimate what they can do in ten. Stop playing for the short-term win.",
+          "stat": "10+",
+          "statLabel": "years is the typical horizon for true wealth creation."
+        },
+        {
+          "type": "content",
+          "headline": "The Infinite Game",
+          "body": "Simon Sinek explains that in business, there is no 'winning.' There is only staying in the game as long as possible.",
+          "bullets": [
+            "Prioritize sustainability over speed.",
+            "Focus on continuous improvement.",
+            "Build systems, not just tasks."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Regret Minimization",
+          "body": "Jeff Bezos used this framework to quit his job and start Amazon. Imagine yourself at age 80 looking back.",
+          "bullets": [
+            "Project yourself into the future.",
+            "Identify what you would regret not doing.",
+            "Prioritize long-term legacy over comfort."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The 80-Year-Old Test",
+          "body": "What is one project or change you are avoiding today? Ask yourself: 'Will I regret not starting this when I'm 80?'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an 'Infinite Game'?",
+          "type": "mcq",
+          "options": [
+            "A game with no winner",
+            "A game that never ends",
+            "A game where the goal is to keep playing",
+            "A game that lasts 10 years"
+          ],
+          "correctIndex": 2,
+          "explanation": "In an infinite game, the goal is to play as long as possible, not to 'win' and exit."
+        },
+        {
+          "question": "What is the Regret Minimization Framework?",
+          "type": "mcq",
+          "options": [
+            "Avoiding all mistakes",
+            "Making decisions to minimize future regret",
+            "Ignoring long-term consequences",
+            "Living only for today"
+          ],
+          "correctIndex": 1,
+          "explanation": "It helps you make decisions by looking at your life from the perspective of your future self."
+        },
+        {
+          "question": "Why is delayed gratification key to wealth?",
+          "type": "mcq",
+          "options": [
+            "It makes you look disciplined",
+            "It allows compound interest to work",
+            "It is required by law",
+            "It is easier than spending"
+          ],
+          "correctIndex": 1,
+          "explanation": "Delayed gratification allows for the power of compounding to build significant long-term wealth."
+        }
+      ]
+    },
+    {
+      "id": "mm-20-module-2-checkpoint",
+      "dayNumber": 20,
+      "moduleId": "mm-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Review & Integration of Wealth Principles",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Mastering the Fundamentals",
+          "body": "You have covered the core pillars of wealth creation. Now, let's test your ability to synthesize these concepts into actionable judgment.",
+          "stat": "9",
+          "statLabel": "Key Concepts Mastered"
+        },
+        {
+          "type": "content",
+          "headline": "Financial IQ Review",
+          "body": "Your success depends on your ability to distinguish assets from liabilities and leverage your unique skills.",
+          "bullets": [
+            "Assets put money in your pocket.",
+            "Specific knowledge is un-outsourceable.",
+            "Leverage multiplies your output."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Strategic Decision Making",
+          "body": "Wealth is built through calculated risk and the ability to see opportunities where others see chaos.",
+          "bullets": [
+            "Stealth wealth protects your capital.",
+            "Masterminds accelerate your growth.",
+            "Long-term thinking beats short-term gains."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Checkpoint Challenge",
+          "body": "Prove your readiness to move into Module 3 by answering these three critical review questions."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is the most accurate definition of an asset based on our module?",
+          "type": "mcq",
+          "options": [
+            "Anything that has a high market value",
+            "Anything that puts money in your pocket consistently",
+            "Any item you own that you can sell later",
+            "A car used for business purposes"
+          ],
+          "correctIndex": 1,
+          "explanation": "An asset is defined by its ability to generate positive cash flow, not just its resale value."
+        },
+        {
+          "question": "What is the primary role of 'leverage' in wealth building?",
+          "type": "mcq",
+          "options": [
+            "To reduce your overall tax burden",
+            "To allow you to work fewer hours",
+            "To amplify the results of your specific knowledge",
+            "To protect you from market volatility"
+          ],
+          "correctIndex": 2,
+          "explanation": "Leverage (code, media, labor, capital) acts as a force multiplier for your unique skills."
+        },
+        {
+          "question": "Why is 'stealth wealth' recommended during the accumulation phase?",
+          "type": "mcq",
+          "options": [
+            "To avoid paying taxes",
+            "To keep your focus on building, not spending",
+            "To hide your assets from family members",
+            "To ensure you only invest in stocks"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stealth wealth prevents lifestyle inflation and keeps your capital focused on compounding."
+        }
+      ]
+    },
+    {
+      "id": "mm-21-wealth-flywheel",
+      "dayNumber": 21,
+      "moduleId": "mm-module-3",
+      "title": "The Wealth Flywheel",
+      "subtitle": "Building Self-Reinforcing Systems",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Power of Momentum",
+          "body": "Jim Collins' Flywheel effect teaches that great results come from the accumulation of small, consistent pushes.",
+          "stat": "100%",
+          "statLabel": "Compounding Efficiency"
+        },
+        {
+          "type": "content",
+          "headline": "Understanding Systems",
+          "body": "A wealth flywheel is a system where each part feeds the next, creating a self-sustaining loop of growth.",
+          "bullets": [
+            "Identify your input/output cycles.",
+            "Eliminate friction in your workflow.",
+            "Maximize reinvestment into the system."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Momentum Curve",
+          "body": "Success is rarely an overnight event; it is the result of applying pressure until the system spins on its own.",
+          "bullets": [
+            "Initial turns are the hardest.",
+            "Consistency builds the momentum.",
+            "Compounding creates the 'breakout' phase."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Flywheel",
+          "body": "Identify one 'input' (like saving) that fuels an 'output' (investing) which creates a 'reinvestment' (dividends/growth)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main purpose of a wealth flywheel?",
+          "type": "mcq",
+          "options": [
+            "To diversify your portfolio immediately",
+            "To create a self-reinforcing system of growth",
+            "To eliminate the need for work",
+            "To minimize tax liabilities"
+          ],
+          "correctIndex": 1,
+          "explanation": "The flywheel represents a system where momentum builds upon itself, making growth easier over time."
+        },
+        {
+          "question": "According to the flywheel concept, when is progress the hardest?",
+          "type": "mcq",
+          "options": [
+            "At the very beginning",
+            "During the middle phase",
+            "When you are close to retirement",
+            "When you have too much money"
+          ],
+          "correctIndex": 0,
+          "explanation": "Like a physical flywheel, the initial turns require the most effort before momentum takes over."
+        },
+        {
+          "question": "What is the key to maintaining a wealth flywheel?",
+          "type": "mcq",
+          "options": [
+            "Changing your strategy every month",
+            "Consistent reinvestment into the system",
+            "Taking high risks to speed it up",
+            "Ignoring the feedback loops"
+          ],
+          "correctIndex": 1,
+          "explanation": "Constant reinvestment of gains back into the system is what keeps the flywheel spinning."
+        }
+      ]
+    },
+    {
+      "id": "mm-22-multiple-income-streams",
+      "dayNumber": 22,
+      "moduleId": "mm-module-3",
+      "title": "Multiple Income Streams",
+      "subtitle": "Diversification for Wealth Stability",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 10X Diversification",
+          "body": "Grant Cardone and MJ DeMarco agree: relying on a single paycheck is the most dangerous financial position you can be in.",
+          "stat": "7",
+          "statLabel": "Average Streams for Millionaires"
+        },
+        {
+          "type": "content",
+          "headline": "Types of Income",
+          "body": "To build a 'Fastlane' wealth profile, you must diversify across different categories of revenue.",
+          "bullets": [
+            "Earned (Active work)",
+            "Portfolio (Assets/Dividends)",
+            "Passive (Digital products/Rentals)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Danger of Concentration",
+          "body": "Concentration makes you wealthy, but diversification keeps you wealthy and resilient against market shocks.",
+          "bullets": [
+            "Avoid the 'single point of failure'.",
+            "Stack income to speed up compounding.",
+            "Align streams with your specific knowledge."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Revenue",
+          "body": "List your current income sources. If you have only one, brainstorm one side-hustle or asset-based stream to add this month."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is relying on a single income stream dangerous?",
+          "type": "mcq",
+          "options": [
+            "It makes you pay more taxes",
+            "It creates a single point of failure",
+            "It is not allowed by the IRS",
+            "It limits your ability to work hard"
+          ],
+          "correctIndex": 1,
+          "explanation": "A single stream of income leaves you vulnerable to job loss or market changes, creating a single point of failure."
+        },
+        {
+          "question": "Which income type is most aligned with 'Fastlane' wealth building?",
+          "type": "mcq",
+          "options": [
+            "Hourly wages",
+            "Overtime pay",
+            "Scalable assets (business/digital products)",
+            "Savings account interest"
+          ],
+          "correctIndex": 2,
+          "explanation": "Scalable assets break the link between your time and your money, which is the hallmark of the 'Fastlane'."
+        },
+        {
+          "question": "What is the recommended approach to adding new income streams?",
+          "type": "mcq",
+          "options": [
+            "Add as many as possible at once",
+            "Align them with your specific knowledge",
+            "Pick the most popular trend online",
+            "Only choose streams that require no effort"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leveraging your existing specific knowledge allows you to build new streams faster and with higher quality."
+        }
+      ]
+    },
+    {
+      "id": "mm-23-automation-delegation",
+      "dayNumber": 23,
+      "moduleId": "mm-module-3",
+      "title": "Automation & Delegation",
+      "subtitle": "Removing yourself from the daily grind",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Freedom Trap",
+          "body": "Most entrepreneurs are self-employed, not business owners. To scale wealth, you must stop trading your time for money.",
+          "stat": "80%",
+          "statLabel": "Of tasks can be automated or delegated"
+        },
+        {
+          "type": "content",
+          "headline": "The Ferriss Framework",
+          "body": "Apply the DEAL protocol to reclaim your schedule.",
+          "bullets": [
+            "Definition: Define your target lifestyle.",
+            "Elimination: Remove non-essential tasks.",
+            "Automation: Use technology to handle repetitive processes."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Who, Not How",
+          "body": "Stop asking 'How do I do this?' and start asking 'Who can do this for me?'",
+          "bullets": [
+            "Identify your unique genius.",
+            "Outsource tasks that drain energy.",
+            "Leverage others' expertise to scale faster."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Audit",
+          "body": "List every task you performed today. Circle the ones that only you can do. Delegate or automate everything else by the end of the week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary goal of the 'Who Not How' philosophy?",
+          "type": "mcq",
+          "options": [
+            "To hire cheaper labor",
+            "To offload tasks to experts to scale",
+            "To learn every task yourself",
+            "To fire all employees"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 'Who Not How' approach focuses on leveraging the expertise of others to solve problems rather than wasting time learning how to do everything yourself."
+        },
+        {
+          "question": "According to the DEAL acronym, what is the first step?",
+          "type": "mcq",
+          "options": [
+            "Delegation",
+            "Definition",
+            "Development",
+            "Design"
+          ],
+          "correctIndex": 1,
+          "explanation": "DEAL stands for Definition, Elimination, Automation, and Liberation."
+        },
+        {
+          "question": "Why is delegation essential for building a wealth system?",
+          "type": "mcq",
+          "options": [
+            "It makes you look important",
+            "It removes the bottleneck of your personal time",
+            "It reduces your tax burden",
+            "It eliminates the need for technology"
+          ],
+          "correctIndex": 1,
+          "explanation": "Delegation allows the business to function independently of your direct involvement, which is a requirement for true wealth building."
+        }
+      ]
+    },
+    {
+      "id": "mm-24-wealth-protection",
+      "dayNumber": 24,
+      "moduleId": "mm-module-3",
+      "title": "Wealth Protection",
+      "subtitle": "Safeguarding your assets for the long term",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Defense Wins Games",
+          "body": "It's not about how much you make, but how much you keep. Wealth protection is the foundation of a lasting legacy.",
+          "stat": "100%",
+          "statLabel": "Risk exposure if you lack legal structures"
+        },
+        {
+          "type": "content",
+          "headline": "Entity Structures",
+          "body": "Protect your personal assets by separating them from your business liabilities.",
+          "bullets": [
+            "LLCs limit personal liability.",
+            "Trusts provide privacy and control.",
+            "Insurance acts as a final safety net."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Unshakeable Mindset",
+          "body": "Tony Robbins emphasizes protecting against market volatility and litigation.",
+          "bullets": [
+            "Diversify across asset classes.",
+            "Utilize tax-efficient vehicles.",
+            "Keep high-risk assets in separate shells."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Risk Assessment",
+          "body": "Review your current asset holdings. Are your personal assets protected from your business debts? Consult a professional about forming a protective entity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of an LLC?",
+          "type": "mcq",
+          "options": [
+            "To pay more taxes",
+            "To limit personal liability for business debts",
+            "To increase daily revenue",
+            "To avoid hiring employees"
+          ],
+          "correctIndex": 1,
+          "explanation": "An LLC (Limited Liability Company) is designed to separate personal assets from business liabilities."
+        },
+        {
+          "question": "What is a key component of asset protection mentioned by Robert Kiyosaki?",
+          "type": "mcq",
+          "options": [
+            "Holding all assets in your name",
+            "Using entity structures like corporations/trusts",
+            "Keeping all cash in a wallet",
+            "Avoiding banks entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Kiyosaki advocates for using legal entities to shield personal wealth from lawsuits and creditors."
+        },
+        {
+          "question": "Why is diversification important for wealth protection?",
+          "type": "mcq",
+          "options": [
+            "It guarantees higher returns",
+            "It hides your money from the government",
+            "It minimizes impact if one asset fails",
+            "It is required for all investments"
+          ],
+          "correctIndex": 2,
+          "explanation": "Diversification spreads risk, ensuring that a collapse in one sector doesn't wipe out your entire portfolio."
+        }
+      ]
+    },
+    {
+      "id": "mm-25-giving-back-legacy",
+      "dayNumber": 25,
+      "moduleId": "mm-module-3",
+      "title": "Giving Back & Legacy",
+      "subtitle": "Generosity as a wealth amplifier",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Wealth Paradox",
+          "body": "True wealth isn't just what you accumulate; it's the impact you leave behind. Generosity creates a cycle of abundance.",
+          "stat": "10x",
+          "statLabel": "The psychic return on charitable impact"
+        },
+        {
+          "type": "content",
+          "headline": "The Gospel of Wealth",
+          "body": "Andrew Carnegie believed the wealthy have a moral obligation to act as trustees for their money.",
+          "bullets": [
+            "Use wealth to benefit the community.",
+            "Invest in education and infrastructure.",
+            "Give during your lifetime to see the impact."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Impact Investing",
+          "body": "Align your portfolio with your values to generate profit and progress.",
+          "bullets": [
+            "Invest in sustainable companies.",
+            "Support social enterprises.",
+            "Measure success by social return."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Define Your Legacy",
+          "body": "Write down one cause you are passionate about. Determine how you can contribute not just money, but your time or skills to that mission today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core philosophy of 'The Gospel of Wealth'?",
+          "type": "mcq",
+          "options": [
+            "Hoard wealth for heirs",
+            "Spend everything before you die",
+            "Wealthy individuals should use their money for the public good",
+            "Only give money to family"
+          ],
+          "correctIndex": 2,
+          "explanation": "Carnegie argued that the rich have a responsibility to distribute their wealth to improve society."
+        },
+        {
+          "question": "What is impact investing?",
+          "type": "mcq",
+          "options": [
+            "Investing only for maximum profit",
+            "Investing in companies that generate social/environmental good",
+            "Donating all your money to charity",
+            "Buying lottery tickets"
+          ],
+          "correctIndex": 1,
+          "explanation": "Impact investing seeks to generate positive social or environmental impact alongside a financial return."
+        },
+        {
+          "question": "Why is generosity considered a 'wealth amplifier'?",
+          "type": "mcq",
+          "options": [
+            "It makes you richer instantly",
+            "It builds relationships and a meaningful legacy",
+            "It is a tax loophole",
+            "It eliminates your debt"
+          ],
+          "correctIndex": 1,
+          "explanation": "Generosity builds social capital, purpose, and a reputation that often leads to greater long-term success and fulfillment."
+        }
+      ]
+    },
+    {
+      "id": "mm-26-anti-fragile-plan",
+      "dayNumber": 26,
+      "moduleId": "mm-module-3",
+      "title": "The Anti-Fragile Wealth Plan",
+      "subtitle": "Building wealth that thrives in chaos",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if chaos was an asset?",
+          "body": "Most people build wealth that breaks under pressure. Anti-fragility means your portfolio actually gets stronger when markets are volatile.",
+          "stat": "80/20",
+          "statLabel": "Barbell Allocation"
+        },
+        {
+          "type": "content",
+          "headline": "The Barbell Strategy",
+          "body": "Adopt a dual-approach to risk management to protect your capital while capturing massive upside.",
+          "bullets": [
+            "90% in ultra-safe, liquid cash equivalents or index funds.",
+            "10% in high-risk, high-reward ventures (startups, crypto, R&D).",
+            "Avoid the 'middle' trap of moderate risk that offers zero protection."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Robustness",
+          "body": "Your wealth system must survive 'Black Swan' events by removing fragility at the source.",
+          "bullets": [
+            "Eliminate high-interest debt that creates monthly fragility.",
+            "Diversify income streams to avoid single-point failure.",
+            "Maintain a 6-month 'Freedom Fund' for absolute security."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Stress Test",
+          "body": "List your top three assets. Ask yourself: 'If the market dropped 50% tomorrow, would I be forced to sell, or would I have the cash to buy more?'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle of the Barbell Strategy?",
+          "type": "mcq",
+          "options": [
+            "Investing only in bonds",
+            "Combining extreme safety with high-risk bets",
+            "Diversifying across 100+ stocks",
+            "Avoiding all risk entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Barbell strategy focuses on extreme safety for the majority and speculative risk for a small portion, avoiding the 'average' risk that offers no protection."
+        },
+        {
+          "question": "Why is high-interest debt considered 'fragile'?",
+          "type": "mcq",
+          "options": [
+            "It increases your tax burden",
+            "It creates a monthly obligation regardless of market conditions",
+            "It is illegal in most countries",
+            "It limits your social status"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fixed monthly debt payments create fragility because they must be paid even during market downturns or personal income loss."
+        },
+        {
+          "question": "What is an 'Anti-fragile' asset?",
+          "type": "mcq",
+          "options": [
+            "An asset that never moves in price",
+            "An asset that profits from volatility",
+            "An asset that is insured by the government",
+            "An asset that is purely digital"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anti-fragile systems are designed to benefit from stressors and volatility rather than just resisting them."
+        }
+      ]
+    },
+    {
+      "id": "mm-27-millionaire-action-plan",
+      "dayNumber": 27,
+      "moduleId": "mm-module-3",
+      "title": "Your Millionaire Action Plan",
+      "subtitle": "Putting it all together into a 90-day sprint",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Planning for Momentum",
+          "body": "A goal without a 90-day execution plan is just a dream. It's time to synthesize your mindset, income, and wealth systems.",
+          "stat": "90",
+          "statLabel": "Days to Impact"
+        },
+        {
+          "type": "content",
+          "headline": "The 90-Day Sprint",
+          "body": "Focus on high-leverage activities that shift your financial trajectory.",
+          "bullets": [
+            "Month 1: Optimization (Cut debt, audit expenses, automate savings).",
+            "Month 2: Expansion (Launch side hustle or upskill for income boost).",
+            "Month 3: Deployment (Consistent investment into your chosen vehicles)."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tracking the Metrics",
+          "body": "You cannot manage what you do not measure. Keep your dashboard simple but effective.",
+          "bullets": [
+            "Track Net Worth, not just bank balances.",
+            "Review your 'Income-to-Investment' ratio weekly.",
+            "Identify and eliminate one 'leaky bucket' expense every month."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: Define Your Sprint",
+          "body": "Write down one specific financial milestone you will achieve in the next 90 days. Make it measurable and time-bound."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is a 90-day sprint effective?",
+          "type": "mcq",
+          "options": [
+            "It is the law",
+            "It creates a short enough timeframe for urgency but long enough for results",
+            "It is the only way to save money",
+            "It eliminates the need for long-term planning"
+          ],
+          "correctIndex": 1,
+          "explanation": "90-day sprints provide a manageable window that encourages immediate action while allowing for iterative adjustments."
+        },
+        {
+          "question": "What is the primary purpose of an 'Income-to-Investment' ratio?",
+          "type": "mcq",
+          "options": [
+            "To track how much you give to charity",
+            "To measure how much of your earned income is being converted into wealth-building assets",
+            "To calculate your tax liability",
+            "To guess your retirement age"
+          ],
+          "correctIndex": 1,
+          "explanation": "This ratio tells you how effectively you are moving money from active income to wealth-generating assets."
+        },
+        {
+          "question": "What is a 'leaky bucket' expense?",
+          "type": "mcq",
+          "options": [
+            "A necessary mortgage payment",
+            "Recurring subscriptions or costs that provide little value",
+            "An investment in stocks",
+            "A tax-deductible expense"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leaky buckets are hidden, recurring costs that drain your potential investment capital slowly over time."
+        }
+      ]
+    },
+    {
+      "id": "mm-28-course-finale",
+      "dayNumber": 28,
+      "moduleId": "mm-module-3",
+      "title": "Module 3 & Course Finale",
+      "subtitle": "Final checkpoint and next steps",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built the Foundation",
+          "body": "From mindset shifts to income generation and wealth systems, you now have the blueprint of a millionaire.",
+          "stat": "100%",
+          "statLabel": "Course Completion"
+        },
+        {
+          "type": "content",
+          "headline": "Course Recap",
+          "body": "Remember the pillars that support your new financial reality.",
+          "bullets": [
+            "Mindset: Abundance and long-term ownership over consumerism.",
+            "Income: Leveraging high-value skills to scale revenue.",
+            "Wealth: Anti-fragile systems that compound over time."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Comes Next?",
+          "body": "The end of this course is the start of your journey. Consistency is your greatest advantage.",
+          "bullets": [
+            "Review your notes every Sunday for the next 4 weeks.",
+            "Join a mastermind or accountability group.",
+            "Revisit your 90-day plan every quarter."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try It: The Commitment",
+          "body": "Write a short letter to your future self, dated one year from today. State your commitment to the habits you've learned."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is NOT a pillar of the Millionaire Mindset course?",
+          "type": "mcq",
+          "options": [
+            "Mindset shifting",
+            "High-income skill development",
+            "Wealth system building",
+            "Aggressive day trading"
+          ],
+          "correctIndex": 3,
+          "explanation": "Day trading is a high-risk activity often contrary to the anti-fragile, long-term wealth building taught in this course."
+        },
+        {
+          "question": "What is the most important factor in long-term wealth growth?",
+          "type": "mcq",
+          "options": [
+            "Luck",
+            "Consistency and time",
+            "Spending all your money",
+            "Avoiding all education"
+          ],
+          "correctIndex": 1,
+          "explanation": "Wealth is built through the compounding effect of consistent actions over a long period."
+        },
+        {
+          "question": "What should you do after completing this course?",
+          "type": "mcq",
+          "options": [
+            "Stop learning immediately",
+            "Apply your plan and review it regularly",
+            "Delete your financial records",
+            "Wait for the market to give you money"
+          ],
+          "correctIndex": 1,
+          "explanation": "Continuous implementation and regular review of your financial systems are key to long-term success."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1967 @@
+{
+  "id": "chatgpt-for-business",
+  "title": "ChatGPT for Business",
+  "subtitle": "Master ChatGPT to save time, communicate better, and grow your business.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "ChatGPT Foundations",
+      "subtitle": "Get your first real wins fast — no jargon, no overwhelm",
+      "days": "Lessons 1–7",
+      "skill": "Use ChatGPT to write professional emails and summaries in your own voice in under 5 minutes",
+      "lessonIds": [
+        "cgb-1-what-is-chatgpt",
+        "cgb-2-your-first-conversation",
+        "cgb-3-talking-to-chatgpt",
+        "cgb-4-emails-in-seconds",
+        "cgb-5-research-and-summaries",
+        "cgb-6-writing-in-your-voice",
+        "cgb-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "ChatGPT at Work",
+      "subtitle": "Real business use cases — one practical win per lesson",
+      "days": "Lessons 8–14",
+      "skill": "Draft customer replies, proposals, social posts, meeting notes, and marketing copy — all in ChatGPT",
+      "lessonIds": [
+        "cgb-8-customer-messages",
+        "cgb-9-sales-and-proposals",
+        "cgb-10-social-media-content",
+        "cgb-11-meetings-and-notes",
+        "cgb-12-problem-solving",
+        "cgb-13-marketing-copy",
+        "cgb-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "ChatGPT Power User",
+      "subtitle": "Unlock advanced features and build your personal AI system",
+      "days": "Lessons 15–21",
+      "skill": "Build a custom AI system with templates, file analysis, and automation that saves hours every week",
+      "lessonIds": [
+        "cgb-15-custom-instructions",
+        "cgb-16-uploading-files",
+        "cgb-17-prompt-templates",
+        "cgb-18-strategy-thinking",
+        "cgb-19-connecting-tools",
+        "cgb-20-quality-and-mistakes",
+        "cgb-21-graduation"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "cgb-1-what-is-chatgpt",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "What Is ChatGPT & Why It Changes Everything",
+      "subtitle": "Cut through the hype and discover why millions of businesses are already using it",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "ChatGPT reached 100 million users in just 60 days. Nothing in history has ever grown that fast.",
+          "body": "That speed isn't hype — it's because ChatGPT genuinely saves people time, every single day. In this lesson you'll discover exactly what ChatGPT is, what it can do for your business, and why learning it now puts you ahead of almost everyone.",
+          "stat": "100M",
+          "statLabel": "users in 60 days — the fastest product ever"
+        },
+        {
+          "type": "content",
+          "headline": "So what actually is ChatGPT?",
+          "body": "ChatGPT is a conversational AI made by a company called OpenAI. You type a message — called a prompt — and it replies instantly with text. It's been trained on a huge amount of human writing, so it understands context, tone, and nuance surprisingly well.",
+          "bullets": [
+            "It's like having an always-available assistant who never gets tired",
+            "It can write, summarise, brainstorm, explain, and plan",
+            "No technical knowledge needed — if you can type, you can use it",
+            "It works in almost every language and for almost every industry"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What can it actually do for your business?",
+          "body": "Here's the honest answer: ChatGPT can do almost any task that involves words. That's most of what running a business involves.",
+          "bullets": [
+            "✉️ Write and reply to emails in seconds",
+            "📋 Draft proposals, reports, and meeting notes",
+            "📱 Create social media posts, ads, and captions",
+            "🔍 Research topics and summarise long documents",
+            "💡 Brainstorm ideas and help you make better decisions"
+          ],
+          "stat": "2.5 hrs",
+          "statLabel": "saved per day by people who use AI at work (McKinsey, 2024)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your first task: open ChatGPT right now",
+          "body": "Go to chat.openai.com and create a free account if you don't have one. Then type exactly this: \"I run a small business. What are 5 things ChatGPT can help me with today?\" — and see what comes back. You'll be amazed.",
+          "bullets": [
+            "🔗 Go to chat.openai.com",
+            "👤 Sign up for a free account",
+            "⌨️ Type the prompt above",
+            "🎉 Read the reply — you just used AI!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "A search engine like Google",
+            "A conversational AI that responds to typed messages",
+            "A coding tool for software developers",
+            "A social media platform"
+          ],
+          "correctIndex": 1,
+          "explanation": "ChatGPT is a conversational AI — you type a message (prompt) and it replies with useful text. It's different from a search engine because it generates answers rather than listing links."
+        },
+        {
+          "question": "ChatGPT reached 100 million users faster than any product in history.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! ChatGPT hit 100 million users in just 60 days after launch — no product, app, or service has ever grown that quickly."
+        },
+        {
+          "question": "Which of these tasks can ChatGPT help with in a business?",
+          "type": "mcq",
+          "options": [
+            "Only writing blog posts",
+            "Only answering customer service questions",
+            "Writing, summarising, researching, and brainstorming",
+            "Only tasks related to technology companies"
+          ],
+          "correctIndex": 2,
+          "explanation": "ChatGPT is incredibly versatile — it can write emails, summarise documents, research topics, brainstorm ideas, draft proposals, and much more. It works for any industry."
+        }
+      ]
+    },
+    {
+      "id": "cgb-2-your-first-conversation",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Setting Up & Your First Real Conversation",
+      "subtitle": "Navigate ChatGPT with confidence and have a conversation that actually helps you",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people open ChatGPT, stare at the blank box, and close it. Today, you won't be one of them.",
+          "body": "The blank box feels intimidating at first. But once you know how the interface works and how to start a conversation, ChatGPT becomes natural very quickly. This lesson is your guided tour.",
+          "stat": "60%",
+          "statLabel": "of new users give up within the first session — don't be in that group"
+        },
+        {
+          "type": "content",
+          "headline": "A quick tour of the ChatGPT screen",
+          "body": "The interface is deliberately simple. Here's everything you need to know:",
+          "bullets": [
+            "📝 The big text box at the bottom — that's where you type your message",
+            "💬 Previous conversations appear on the left sidebar (like a history)",
+            "➕ \"New chat\" starts a fresh conversation with a blank memory",
+            "🔄 The model selector (GPT-3.5 is free; GPT-4 is the paid upgrade)",
+            "📋 Each conversation is called a \"chat\" — you can have as many as you like"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How a conversation with ChatGPT actually works",
+          "body": "ChatGPT remembers everything said within a single conversation — but starts fresh in a new chat. Think of it like texting someone who has perfect memory within a conversation but forgets everything when you start a new thread.",
+          "bullets": [
+            "You type → it replies → you type again → it builds on what was said",
+            "You can correct it: \"That's not quite right, I meant X...\"",
+            "You can ask follow-ups: \"Can you make that shorter?\" or \"Give me 3 more options\"",
+            "Context is everything — the more you share, the better its answers"
+          ],
+          "stat": "Back and forth",
+          "statLabel": "conversation is how you get the best results — not one-shot questions"
+        },
+        {
+          "type": "try-it",
+          "headline": "Have your first back-and-forth conversation",
+          "body": "Open a new chat and try this sequence. Start with a question, then follow up — notice how ChatGPT builds on what you said.",
+          "bullets": [
+            "1️⃣ Type: \"What are the top 3 challenges for small business owners right now?\"",
+            "2️⃣ Then reply: \"Tell me more about the first one\"",
+            "3️⃣ Then say: \"Give me 2 practical ways to solve that\"",
+            "✅ You just had a real multi-turn conversation with AI — that's how pros use it"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does ChatGPT remember during a conversation?",
+          "type": "mcq",
+          "options": [
+            "Nothing — you have to repeat yourself every message",
+            "Everything you've ever typed across all conversations",
+            "Everything said within the current conversation",
+            "Only the last 3 messages"
+          ],
+          "correctIndex": 2,
+          "explanation": "ChatGPT remembers the full context of the current conversation, which is why you can say \"tell me more about the first one\" and it knows exactly what you mean. But it starts fresh in a new chat."
+        },
+        {
+          "question": "The best way to use ChatGPT is to ask one perfect question and never follow up.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Back-and-forth conversation is how you get the best results. You can correct it, ask follow-ups, request changes, or go deeper on any point."
+        },
+        {
+          "question": "What is a \"new chat\" in ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "A premium feature only available on paid plans",
+            "A fresh conversation where ChatGPT has no memory of previous chats",
+            "A way to invite other people to the conversation",
+            "A different AI model"
+          ],
+          "correctIndex": 1,
+          "explanation": "A new chat starts a completely fresh conversation. ChatGPT has no memory of your previous chats — it's like starting a brand new conversation with a blank slate."
+        }
+      ]
+    },
+    {
+      "id": "cgb-3-talking-to-chatgpt",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "Talking to ChatGPT (It's Not a Search Engine)",
+      "subtitle": "The single most important mindset shift that makes everything click",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The reason most people get bad results from ChatGPT? They're using it like Google.",
+          "body": "Google is designed for short keyword searches: \"best coffee shops London\". ChatGPT is designed for rich, context-filled conversations. Once you understand this difference, your results will improve immediately — and dramatically.",
+          "stat": "10x better",
+          "statLabel": "results when you give ChatGPT context vs. short keyword-style prompts"
+        },
+        {
+          "type": "content",
+          "headline": "The key difference: context vs. keywords",
+          "body": "A Google search: \"email to angry customer\". A ChatGPT prompt: \"I run a small e-commerce business. A customer emailed saying their order arrived damaged. Write a reply that apologises, offers a replacement or refund, and keeps their trust.\" The second gets you something you can actually send.",
+          "bullets": [
+            "Who you are — your role, your business, your industry",
+            "What you need — be specific about the task and the output format",
+            "The situation — background context that shapes the answer",
+            "The tone — formal? friendly? brief? detailed?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 4-part formula for a great business prompt",
+          "body": "You don't need to memorise anything complex. Just think: Role → Task → Context → Format.",
+          "bullets": [
+            "🧑‍💼 ROLE: \"You are a marketing expert...\" or just \"I run a...\"",
+            "📋 TASK: \"Write / Summarise / Create / Analyse / Suggest...\"",
+            "📖 CONTEXT: The situation, the audience, any relevant details",
+            "📐 FORMAT: \"Give me 3 bullet points\" / \"Write as an email\" / \"Keep it under 100 words\""
+          ],
+          "stat": "Role → Task → Context → Format",
+          "statLabel": "The 4-part formula — use this for every business prompt"
+        },
+        {
+          "type": "try-it",
+          "headline": "Rewrite a keyword search as a proper prompt",
+          "body": "Think of something you'd normally Google for your business. Now rewrite it using the 4-part formula and see what ChatGPT gives you.",
+          "bullets": [
+            "❌ Old way: \"social media post for my business\"",
+            "✅ New way: \"I run a local bakery. Write a friendly Instagram post announcing our new weekend brunch menu. Include a call to action to book a table. Keep it under 80 words.\"",
+            "🔁 Try your own — use something real from your work",
+            "👀 Compare the results — the difference will be obvious"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main difference between using Google and using ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "Google is free and ChatGPT costs money",
+            "Google is for keywords; ChatGPT works best with rich context and conversation",
+            "ChatGPT only works for writing tasks",
+            "There is no real difference — both work the same way"
+          ],
+          "correctIndex": 1,
+          "explanation": "Google is built for short keyword searches that find existing pages. ChatGPT generates new content based on the context you give it — the richer your prompt, the better the output."
+        },
+        {
+          "question": "Which of these is a well-formed ChatGPT prompt for a business task?",
+          "type": "mcq",
+          "options": [
+            "\"sales email\"",
+            "\"write sales email good\"",
+            "\"I run a B2B software company. Write a short, friendly sales email to a prospect who downloaded our free guide. The goal is to book a 20-minute call. Keep it under 100 words.\"",
+            "\"ChatGPT please write me an email about sales for my company that sells software to businesses in a B2B context and make it quite good\""
+          ],
+          "correctIndex": 2,
+          "explanation": "The third option uses the 4-part formula: role (B2B software company), task (write a sales email), context (prospect who downloaded a guide), and format (under 100 words, friendly tone, goal is a call)."
+        },
+        {
+          "question": "Giving ChatGPT more context about your business always makes its answers worse.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Context is the single most powerful thing you can give ChatGPT. The more it knows about your role, situation, audience, and goal, the more relevant and useful its answers become."
+        }
+      ]
+    },
+    {
+      "id": "cgb-4-emails-in-seconds",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "Getting Emails Done in Seconds",
+      "subtitle": "Stop staring at a blank screen — let ChatGPT write the first draft every time",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average professional spends 28% of their working week on email. ChatGPT can cut that in half.",
+          "body": "Email is where most business time gets lost. Whether it's a difficult reply, a follow-up you keep putting off, or a newsletter you haven't started — ChatGPT can have a strong first draft ready in under 10 seconds.",
+          "stat": "28%",
+          "statLabel": "of the working week spent on email (McKinsey Global Institute)"
+        },
+        {
+          "type": "content",
+          "headline": "The 3-line email prompt formula",
+          "body": "You don't need to write a perfect prompt to get a great email. Just give ChatGPT three things and it does the rest.",
+          "bullets": [
+            "1️⃣ SITUATION: \"I need to reply to a customer who received a damaged order\"",
+            "2️⃣ GOAL: \"Apologise, offer a replacement or refund, keep their trust\"",
+            "3️⃣ TONE: \"Professional but warm — not overly formal\"",
+            "✅ That's it. Paste those three lines and you'll have a ready-to-send email in seconds"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The types of emails ChatGPT handles brilliantly",
+          "body": "Here are the most common business email tasks — all of them take under 60 seconds with ChatGPT:",
+          "bullets": [
+            "📧 Difficult replies (complaints, rejections, awkward situations)",
+            "🤝 Follow-ups after meetings, calls, or proposals",
+            "📣 Announcements, newsletters, and updates to your list",
+            "💌 Outreach emails to new contacts, partners, or press",
+            "🙏 Thank-you notes and check-ins that build relationships"
+          ],
+          "stat": "<60 sec",
+          "statLabel": "to get a ready-to-send draft for any of the above"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write a real email right now",
+          "body": "Think of an email you've been putting off — or one you need to send today. Use the 3-line formula and get your draft in seconds.",
+          "bullets": [
+            "✏️ Open ChatGPT and type your situation, goal, and tone",
+            "📋 Read the draft — it will be surprisingly good",
+            "🔧 Ask ChatGPT to adjust anything: \"Make it shorter\" / \"Sound more confident\"",
+            "📤 Copy, personalise slightly, and send — you just saved 15 minutes"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the 3 things the email prompt formula asks you to provide?",
+          "type": "mcq",
+          "options": [
+            "Subject line, body text, and sign-off",
+            "Situation, goal, and tone",
+            "Recipient name, company, and job title",
+            "Opening, middle, and closing paragraph"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 3-line formula is: Situation (what's happening), Goal (what you want the email to achieve), and Tone (how you want it to sound). This gives ChatGPT everything it needs to write a great email."
+        },
+        {
+          "question": "ChatGPT is only useful for writing new emails, not for replying to existing ones.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! ChatGPT is excellent at replies — including difficult ones like complaints or awkward situations. You can paste the original email in and ask ChatGPT to help you respond appropriately."
+        },
+        {
+          "question": "What should you do after ChatGPT gives you an email draft?",
+          "type": "mcq",
+          "options": [
+            "Send it immediately without reading it",
+            "Rewrite it completely from scratch",
+            "Read it, adjust anything needed, personalise slightly, then send",
+            "Delete it and write the email yourself"
+          ],
+          "correctIndex": 2,
+          "explanation": "ChatGPT gives you a strong first draft — but always read it, personalise anything specific (like a name or detail it didn't know), and adjust the tone if needed before sending."
+        }
+      ]
+    },
+    {
+      "id": "cgb-5-research-and-summaries",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Research & Summaries at Warp Speed",
+      "subtitle": "Turn hours of reading into minutes — and actually remember what matters",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What used to take a morning of research can now take 10 minutes. This is one of ChatGPT's most powerful business superpowers.",
+          "body": "Researching a new market, understanding a competitor, preparing for a meeting, or getting up to speed on an unfamiliar topic — ChatGPT can do all of this in a fraction of the time. And because it explains things conversationally, you actually understand what you've learned.",
+          "stat": "10 min",
+          "statLabel": "vs a half-day — the research time saving ChatGPT users report most"
+        },
+        {
+          "type": "content",
+          "headline": "How to use ChatGPT for research",
+          "body": "ChatGPT won't browse the live web by default — but its training knowledge covers an enormous range of topics. For most business research tasks, it's more than enough to get you started and point you in the right direction.",
+          "bullets": [
+            "🔍 Ask it to explain a topic: \"Explain [topic] as if I'm new to it\"",
+            "📊 Ask for structured overviews: \"Give me a summary of the main trends in [industry]\"",
+            "🆚 Ask for comparisons: \"Compare the pros and cons of [option A] vs [option B]\"",
+            "❓ Ask follow-up questions — go deeper on anything it mentions",
+            "⚠️ Always verify important facts with a current source before acting on them"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Summarising long documents and content",
+          "body": "Got a long report, article, or contract to read? Paste it into ChatGPT and ask for what you actually need.",
+          "bullets": [
+            "📄 \"Summarise this in 5 bullet points\"",
+            "🎯 \"What are the 3 most important things I need to know from this?\"",
+            "📋 \"Extract all the action items from this meeting transcript\"",
+            "💡 \"What questions should I be asking after reading this?\""
+          ],
+          "stat": "80%",
+          "statLabel": "of document reading time can be cut by asking ChatGPT for the key points first"
+        },
+        {
+          "type": "try-it",
+          "headline": "Do a research task or summary right now",
+          "body": "Pick one of these — whichever is most useful for your business today:",
+          "bullets": [
+            "📚 Option A: Ask ChatGPT to explain something you've been meaning to learn about",
+            "🆚 Option B: Ask it to compare two options you're currently deciding between",
+            "📄 Option C: Paste a long email, article, or document and ask for a 5-bullet summary",
+            "🎯 Bonus: After the first answer, ask a follow-up question to go deeper"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you always do before acting on important facts from ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "Nothing — ChatGPT is always accurate",
+            "Ask the same question three times to confirm",
+            "Verify with a current, authoritative source",
+            "Only use it for trivial tasks where accuracy doesn't matter"
+          ],
+          "correctIndex": 2,
+          "explanation": "ChatGPT's knowledge has a training cutoff and it can occasionally be wrong (this is called \"hallucination\"). For important business decisions, always verify key facts with a current, reliable source."
+        },
+        {
+          "question": "Which of these is a good way to use ChatGPT for summarising a long document?",
+          "type": "mcq",
+          "options": [
+            "\"Read this document\" (without pasting any text)",
+            "\"Summarise this in 5 bullet points\" (then paste the document text)",
+            "\"Is this document good?\"",
+            "You can't use ChatGPT for document summaries"
+          ],
+          "correctIndex": 1,
+          "explanation": "To summarise a document, paste its text into the chat and ask for what you need — bullet points, key takeaways, action items, etc. ChatGPT can't access external links by default, so you need to paste the actual text."
+        },
+        {
+          "question": "ChatGPT can browse the live internet in real-time by default.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! By default, ChatGPT uses its training knowledge (which has a cutoff date) rather than browsing the web live. Some versions have web browsing as an optional feature, but the core model doesn't do this automatically."
+        }
+      ]
+    },
+    {
+      "id": "cgb-6-writing-in-your-voice",
+      "dayNumber": 6,
+      "moduleId": "module-1",
+      "title": "Writing in Your Own Voice",
+      "subtitle": "Stop sounding like a robot — make ChatGPT write exactly like you",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most common complaint about AI writing: \"It doesn't sound like me.\" Here's how to fix that.",
+          "body": "ChatGPT's default writing is clean and competent — but it can feel generic and a little robotic. The good news? With a few simple instructions, you can train it to match your tone, your style, and your personality so well that people won't know the difference.",
+          "stat": "73%",
+          "statLabel": "of business owners say their biggest AI frustration is generic-sounding output"
+        },
+        {
+          "type": "content",
+          "headline": "Four ways to make ChatGPT write like you",
+          "body": "You don't need to be technical. You just need to give ChatGPT the right guidance.",
+          "bullets": [
+            "🗣️ DESCRIBE YOUR VOICE: \"Write in a friendly, direct, no-jargon tone — like a trusted advisor talking to a friend\"",
+            "📋 GIVE EXAMPLES: Paste a piece of your own writing and say \"Match this style\"",
+            "🚫 SAY WHAT TO AVOID: \"Don't use corporate buzzwords, exclamation marks, or overly formal language\"",
+            "🔁 ITERATE: Ask it to rewrite with adjustments — \"More casual\", \"Shorter sentences\", \"More confident\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A powerful prompt: the style brief",
+          "body": "Write a one-paragraph \"style brief\" about yourself and save it. Paste it at the start of any ChatGPT session when you need writing help.",
+          "bullets": [
+            "📝 Example: \"I run a small accountancy firm. My tone is friendly and approachable — I explain things simply without dumbing them down. I avoid jargon, I'm direct, and I use short paragraphs. I don't use exclamation marks.\"",
+            "💾 Save this to your notes app — it takes 5 minutes to write once",
+            "🔁 Paste it into any new chat when you want writing that sounds like you",
+            "✨ The more specific you are, the better the results"
+          ],
+          "stat": "Once written",
+          "statLabel": "your style brief works forever — reuse it in every writing session"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write your own style brief right now",
+          "body": "This is a 5-minute task that will make every future ChatGPT writing session dramatically better.",
+          "bullets": [
+            "✏️ Open a notes app or doc and write 3–5 sentences about your tone and style",
+            "💡 Include: your business type, your audience, your tone, and what to avoid",
+            "📋 Paste it into ChatGPT and ask it to write a short LinkedIn post or email using your style",
+            "🔧 Tweak the brief based on the result — you'll nail it in 1–2 iterations"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective way to make ChatGPT match your writing style?",
+          "type": "mcq",
+          "options": [
+            "Accept whatever it writes and manually rewrite it yourself",
+            "Ask it to write \"better\"",
+            "Describe your tone, give examples of your writing, and say what to avoid",
+            "Use a different AI tool"
+          ],
+          "correctIndex": 2,
+          "explanation": "The best approach combines three things: describing your voice (e.g. \"friendly and direct\"), giving examples (pasting your own writing), and saying what to avoid. Together, these help ChatGPT match your style closely."
+        },
+        {
+          "question": "A \"style brief\" is a short description of your tone and writing style that you can reuse across many ChatGPT sessions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! A style brief is one of the most valuable things you can create. Write it once, save it to your notes, and paste it into any new ChatGPT chat when you need writing help. It instantly makes everything sound more like you."
+        },
+        {
+          "question": "If ChatGPT's first draft doesn't quite sound right, what should you do?",
+          "type": "mcq",
+          "options": [
+            "Give up — ChatGPT can't match your style",
+            "Accept it as-is without any changes",
+            "Ask it to rewrite with specific adjustments like \"more casual\" or \"shorter sentences\"",
+            "Start a completely new chat from scratch"
+          ],
+          "correctIndex": 2,
+          "explanation": "Iteration is the key. Ask for specific adjustments like \"more casual\", \"shorter sentences\", \"sound more confident\", or \"remove the jargon\". ChatGPT gets closer with each iteration."
+        }
+      ]
+    },
+    {
+      "id": "cgb-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Review everything you've learned — and prove you've got the foundations nailed",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've just completed Module 1. That puts you ahead of 90% of business owners when it comes to using ChatGPT.",
+          "body": "Most people never go beyond typing a basic question into ChatGPT. You've already learned how it works, how to write proper prompts, how to use it for emails and research, and how to make it sound like you. This checkpoint locks in everything — and gets you ready for Module 2.",
+          "stat": "6 lessons",
+          "statLabel": "completed · foundations locked in · Module 2 unlocked"
+        },
+        {
+          "type": "content",
+          "headline": "What you've learned in Module 1",
+          "body": "Here's a quick summary of everything covered — your ChatGPT foundations:",
+          "bullets": [
+            "💬 What ChatGPT is and why it's transforming business (Lesson 1)",
+            "🖥️ How to navigate the interface and have a back-and-forth conversation (Lesson 2)",
+            "🎯 The 4-part prompt formula: Role → Task → Context → Format (Lesson 3)",
+            "✉️ The 3-line email formula: Situation → Goal → Tone (Lesson 4)",
+            "🔍 How to use ChatGPT for research and to summarise long documents (Lesson 5)",
+            "🗣️ How to write a style brief and make ChatGPT sound like you (Lesson 6)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's coming in Module 2: ChatGPT at Work",
+          "body": "Module 1 gave you the foundations. Module 2 gets practical — one specific business win per lesson.",
+          "bullets": [
+            "📞 Customer messages and support (Lesson 8)",
+            "💼 Sales emails and proposals (Lesson 9)",
+            "📱 Social media content at scale (Lesson 10)",
+            "📋 Meeting agendas and notes (Lesson 11)",
+            "🧠 Problem-solving and decisions (Lesson 12)",
+            "📣 Marketing copy that converts (Lesson 13)"
+          ],
+          "stat": "Module 2",
+          "statLabel": "starts next — real business wins, one lesson at a time"
+        },
+        {
+          "type": "try-it",
+          "headline": "Do a Module 1 recap in ChatGPT",
+          "body": "Before moving on, try this consolidation exercise in ChatGPT to make the learning stick.",
+          "bullets": [
+            "📋 Open ChatGPT and paste your style brief (from Lesson 6)",
+            "✉️ Use the 3-line email formula to write an email you actually need to send",
+            "🔍 Ask ChatGPT to research something relevant to your business right now",
+            "🎉 Notice how much faster and more confident you are than on Day 1!"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the 4 parts of the prompt formula from Lesson 3?",
+          "type": "mcq",
+          "options": [
+            "Topic, Length, Tone, Output",
+            "Question, Answer, Context, Format",
+            "Role, Task, Context, Format",
+            "Subject, Body, Signature, Tone"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 4-part formula is Role → Task → Context → Format. Role tells ChatGPT who you are or who it should be. Task is the specific job. Context is the situation. Format is how you want the output presented."
+        },
+        {
+          "question": "Which of these best describes what a \"style brief\" is?",
+          "type": "mcq",
+          "options": [
+            "A short document explaining your business model",
+            "A paragraph describing your tone and writing style that you reuse across sessions",
+            "A list of topics you want ChatGPT to avoid",
+            "A summary of your competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "A style brief is a short description of your voice, tone, and writing preferences. You write it once, save it, and paste it into any ChatGPT session where you want the output to sound like you."
+        },
+        {
+          "question": "After using ChatGPT to write an email, you should always read it and personalise it before sending.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! ChatGPT gives you a strong draft, but you should always read it, adjust anything that doesn't feel right, and add any specific personal details before hitting send. Never send AI-written content blind."
+        }
+      ]
+    },
+    {
+      "id": "cgb-8-customer-messages",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Customer Messages & Support",
+      "subtitle": "Reply faster, sound more professional, and never dread a difficult message again",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every business has messages they dread writing. Complaints. Refund requests. Awkward \"no\". ChatGPT handles all of them — in seconds.",
+          "body": "Customer communication is one of the most time-consuming parts of running a business. It's also one of the areas where tone matters most. ChatGPT can help you reply faster, strike the right tone every time, and never stare at a blank reply box again.",
+          "stat": "65%",
+          "statLabel": "of customers switch brands after just one poor communication experience"
+        },
+        {
+          "type": "content",
+          "headline": "The messages ChatGPT handles best",
+          "body": "These are the customer communication tasks where ChatGPT saves the most time and stress:",
+          "bullets": [
+            "😤 Complaints — acknowledge, apologise, resolve, retain trust",
+            "💸 Refund or return requests — firm but fair responses that protect your policy",
+            "🚫 Saying no — decline requests politely without burning the relationship",
+            "📦 Order or delivery updates — clear, calm status messages at scale",
+            "⭐ Responding to reviews — thank positive ones, address negative ones professionally",
+            "❓ FAQ replies — paste a common question, get a clear, friendly answer instantly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A template for any difficult customer reply",
+          "body": "Use this prompt structure whenever you have a tricky message to send:",
+          "bullets": [
+            "📋 \"I run a [type of business]. A customer has [describe the situation].\"",
+            "🎯 \"Write a reply that [your goal — apologises / declines / updates / reassures].\"",
+            "🗣️ \"Tone: [warm but professional / firm but fair / empathetic and calm].\"",
+            "📏 \"Keep it under [X] words and avoid [anything to avoid].\"",
+            "💡 You can also paste the customer's original message for context"
+          ],
+          "stat": "< 30 sec",
+          "statLabel": "to go from dreaded message to polished, ready-to-send reply"
+        },
+        {
+          "type": "try-it",
+          "headline": "Reply to a real customer message — or simulate one",
+          "body": "Use ChatGPT right now for a real customer communication task, or practice with a hypothetical one.",
+          "bullets": [
+            "💬 Think of a type of customer message that comes up regularly in your business",
+            "📋 Use the template above to write a prompt for ChatGPT",
+            "🔧 Ask it to adjust the tone or length if the first draft isn't quite right",
+            "📁 Save the best version as a template you can reuse for similar messages"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is one of the most useful things to include when asking ChatGPT to write a customer reply?",
+          "type": "mcq",
+          "options": [
+            "The customer's home address",
+            "The original message from the customer, plus your goal and desired tone",
+            "A list of every product you sell",
+            "Your company's full terms and conditions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Giving ChatGPT the original customer message gives it the context it needs. Combined with your goal (what you want the reply to achieve) and tone (how you want to sound), you'll get a reply you can almost send as-is."
+        },
+        {
+          "question": "ChatGPT can only write formal, corporate-sounding customer replies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! ChatGPT adapts its tone based on your instructions. Tell it to sound warm, casual, firm, empathetic, or anything else — it will match the style you specify."
+        },
+        {
+          "question": "After getting a customer reply draft from ChatGPT, what's a smart next step?",
+          "type": "mcq",
+          "options": [
+            "Send it immediately without reading",
+            "Rewrite it from scratch",
+            "Save the best version as a reusable template for similar situations",
+            "Delete it and handle the reply manually"
+          ],
+          "correctIndex": 2,
+          "explanation": "Once ChatGPT has produced a strong reply for a common situation, save it as a template. Next time the same type of message arrives, you just need to personalise the template slightly — saving even more time."
+        }
+      ]
+    },
+    {
+      "id": "cgb-9-sales-and-proposals",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Sales & Proposals",
+      "subtitle": "Write pitches, proposals, and follow-ups that win more business — without the blank-page paralysis",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A great proposal used to take a day to write. With ChatGPT, you can have a first draft ready in under 10 minutes.",
+          "body": "Sales writing is high-stakes and time-consuming — and most business owners hate doing it. ChatGPT doesn't. It can produce compelling pitches, detailed proposals, persuasive follow-ups, and strong objection responses at a fraction of the usual effort.",
+          "stat": "10 min",
+          "statLabel": "for a full proposal first draft — vs a full day writing it from scratch"
+        },
+        {
+          "type": "content",
+          "headline": "What ChatGPT can do for your sales process",
+          "body": "Sales writing covers a lot of ground. Here's where ChatGPT delivers the biggest wins:",
+          "bullets": [
+            "📧 Cold outreach emails — compelling, personalised, not spammy",
+            "📄 Proposals and quotes — structured, professional, persuasive",
+            "🔄 Follow-up sequences — the \"just checking in\" messages that win business",
+            "🛡️ Objection handling — scripted responses to common pushbacks",
+            "📞 Call prep — bullet-point talking points before an important meeting",
+            "🏆 Case study and testimonial write-ups — turn raw feedback into social proof"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The proposal prompt formula",
+          "body": "Getting ChatGPT to write a proposal is easier than you'd think. Give it these details and it does the heavy lifting:",
+          "bullets": [
+            "🏢 Your business: what you do and for whom",
+            "👤 The prospect: who they are, what they need, any pain points you know",
+            "📦 What you're proposing: the service or product, scope, and key benefits",
+            "💰 Any pricing or timelines to include",
+            "📐 Format: \"Structure it with an introduction, problem, solution, investment, and next steps\""
+          ],
+          "stat": "3× more",
+          "statLabel": "proposals sent when writing them takes minutes instead of hours"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write a real sales asset right now",
+          "body": "Choose the sales task most relevant to your business today and build it with ChatGPT.",
+          "bullets": [
+            "📧 Option A: Write a cold outreach email to a specific type of prospect",
+            "📄 Option B: Draft a proposal outline for a real or upcoming opportunity",
+            "🔄 Option C: Write a 3-message follow-up sequence after a sales call",
+            "🛡️ Option D: Ask ChatGPT to help you respond to your most common objection"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these details should you give ChatGPT when asking it to write a proposal?",
+          "type": "mcq",
+          "options": [
+            "Just the prospect's name",
+            "Your business, the prospect's needs, what you're proposing, and the format you want",
+            "Only the price",
+            "A list of your competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "The more context you give, the better the proposal. Include: what your business does, who the prospect is and what they need, what you're proposing, and how you want the document structured."
+        },
+        {
+          "question": "ChatGPT can help write objection-handling responses for your sales process.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! You can tell ChatGPT the most common objections you hear (e.g. \"it's too expensive\" or \"we're not ready yet\") and ask it to write confident, empathetic responses. This is great for training your team too."
+        },
+        {
+          "question": "What is a follow-up sequence in a sales context?",
+          "type": "mcq",
+          "options": [
+            "A series of invoices sent after a sale",
+            "A set of messages sent over time to re-engage a prospect after initial contact",
+            "A customer satisfaction survey",
+            "A list of products to upsell after purchase"
+          ],
+          "correctIndex": 1,
+          "explanation": "A follow-up sequence is a series of messages (usually 2–4 emails or messages) sent over days or weeks to keep a conversation going with a prospect who hasn't responded yet. Most sales are won in the follow-up, not the first message."
+        }
+      ]
+    },
+    {
+      "id": "cgb-10-social-media-content",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Social Media Content",
+      "subtitle": "Go from \"I never know what to post\" to a month of content ideas in 20 minutes",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The number one reason businesses don't post consistently on social media? They run out of ideas. ChatGPT solves this permanently.",
+          "body": "Consistent, engaging social media content is one of the most powerful free marketing tools available to any business. The problem has always been time and ideas. ChatGPT removes both barriers — you can plan a month of content in a single session.",
+          "stat": "3× growth",
+          "statLabel": "in audience engagement for businesses that post consistently vs sporadically"
+        },
+        {
+          "type": "content",
+          "headline": "What ChatGPT can create for social media",
+          "body": "From ideas to captions to full content calendars — here's what you can produce in a single session:",
+          "bullets": [
+            "💡 Content ideas: \"Give me 20 post ideas for a [type of business] audience\"",
+            "✍️ Captions: \"Write a LinkedIn post about [topic] in a conversational tone\"",
+            "📅 Content calendars: \"Plan 4 weeks of content for Instagram — 3 posts per week\"",
+            "🔁 Repurposing: \"Turn this blog post into 5 social media posts\"",
+            "#️⃣ Hashtags: \"Suggest 10 relevant hashtags for this post\"",
+            "📣 Platform adaptation: \"Rewrite this for Twitter/X in under 280 characters\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The content pillars approach",
+          "body": "The best social media strategies are built on 3–5 \"content pillars\" — themes that reflect your brand and resonate with your audience. Ask ChatGPT to help you define yours, then generate content within each pillar.",
+          "bullets": [
+            "🧱 Example pillars for a business coach: Mindset · Productivity · Client Results · Behind the Scenes · Tips & Tactics",
+            "📋 Prompt: \"I run a [business type]. Suggest 5 content pillars and 4 post ideas for each\"",
+            "🔁 Once you have pillars, you never run out of ideas — just rotate through them",
+            "✨ Ask ChatGPT to write posts for each pillar in your brand voice (paste your style brief!)"
+          ],
+          "stat": "5 pillars",
+          "statLabel": "× 4 ideas each = 20 posts planned in under 10 minutes"
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan a week of social content right now",
+          "body": "This is one of the quickest, highest-value things you can do with ChatGPT. Do it now and you'll never dread Monday morning content panic again.",
+          "bullets": [
+            "📋 Paste your style brief into ChatGPT",
+            "💡 Ask for 5 content pillars for your specific business and audience",
+            "📅 Then ask for 5 post ideas (one per pillar) for this week",
+            "✍️ Pick your favourite idea and ask ChatGPT to write the full caption"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are \"content pillars\" in a social media strategy?",
+          "type": "mcq",
+          "options": [
+            "The physical columns in your office backdrop for video content",
+            "The specific platforms you post on",
+            "Recurring themes or topics that consistently reflect your brand and audience",
+            "The number of posts you make per week"
+          ],
+          "correctIndex": 2,
+          "explanation": "Content pillars are 3–5 recurring themes that anchor your social media strategy. They keep your content consistent and purposeful, and make it easy to generate new ideas — you just rotate through your pillars."
+        },
+        {
+          "question": "ChatGPT can help adapt a single piece of content for different social media platforms.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! You can write one core piece of content and then ask ChatGPT to rewrite it for each platform — shorter for Twitter/X, more professional for LinkedIn, more visual-focused for Instagram, etc. This saves enormous time."
+        },
+        {
+          "question": "What should you include in your prompt when asking ChatGPT to write a social media post to make it sound like you?",
+          "type": "mcq",
+          "options": [
+            "Nothing — ChatGPT automatically knows your style",
+            "Your style brief and any specific details about the topic or audience",
+            "Only the number of words you want",
+            "A list of competitor posts to copy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always include your style brief (from Lesson 6) so the post sounds like you, not a generic AI. Add any specific details about the topic, audience, or goal of the post to make it even more relevant."
+        }
+      ]
+    },
+    {
+      "id": "cgb-11-meetings-and-notes",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Meetings & Action Points",
+      "subtitle": "Prepare better, run tighter meetings, and never lose a follow-up again",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average professional sits in 23 hours of meetings per week. Most of that time is wasted. ChatGPT helps you prepare faster and follow up better.",
+          "body": "Bad meetings cost businesses thousands in lost time every year. ChatGPT can't stop people from booking unnecessary meetings — but it can make every meeting you do have dramatically more productive, from prep to follow-up.",
+          "stat": "23 hrs",
+          "statLabel": "the average professional spends in meetings every week (Atlassian)"
+        },
+        {
+          "type": "content",
+          "headline": "Before the meeting: prepare in minutes",
+          "body": "Walk into every meeting ready — even if you only have 5 minutes to prepare.",
+          "bullets": [
+            "📋 Agenda: \"Create a 45-minute meeting agenda for a quarterly business review with [topics]\"",
+            "🧠 Briefing: \"Summarise the key things I need to know about [topic/company] before a meeting\"",
+            "❓ Questions: \"What are the 5 most important questions I should ask in a discovery call with a new client?\"",
+            "🗣️ Talking points: \"Give me 3 bullet points to make the case for [idea] in a team meeting\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "After the meeting: turn notes into action",
+          "body": "This is where ChatGPT saves the most time. Paste your rough notes or a transcript and let it do the heavy lifting.",
+          "bullets": [
+            "📝 \"Here are my rough notes from today's meeting. Write a clean summary with key decisions and action points.\"",
+            "✉️ \"Turn these meeting notes into a follow-up email to send to all attendees.\"",
+            "📋 \"Extract just the action items from these notes, with owner and deadline for each.\"",
+            "📄 \"Format these notes as a professional meeting minute document.\""
+          ],
+          "stat": "5 min",
+          "statLabel": "to turn rough meeting notes into a polished follow-up email"
+        },
+        {
+          "type": "try-it",
+          "headline": "Put ChatGPT to work on a real meeting",
+          "body": "Pick a meeting coming up — or one that just happened — and use ChatGPT to either prepare for it or process it.",
+          "bullets": [
+            "📅 UPCOMING: Ask ChatGPT to build an agenda or prepare your talking points",
+            "📝 JUST HAPPENED: Paste your notes and ask for a clean summary + action list",
+            "✉️ FOLLOW-UP: Ask ChatGPT to turn your summary into a follow-up email",
+            "💡 Bonus: Ask \"What questions should I have asked in this meeting that I didn't?\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is one of the most time-saving ways to use ChatGPT after a meeting?",
+          "type": "mcq",
+          "options": [
+            "Ask it to cancel the next meeting",
+            "Paste your rough notes and ask it to write a clean summary with action points",
+            "Ask it to rate how well the meeting went",
+            "Use it to book the next meeting slot"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pasting rough meeting notes and asking for a clean summary with action points is one of the highest-value uses of ChatGPT. It turns 30 minutes of post-meeting admin into 2 minutes."
+        },
+        {
+          "question": "ChatGPT can help you prepare questions to ask in a client discovery call.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Ask ChatGPT something like \"What are the 10 most important questions to ask a new client in a discovery call for a [type of business]?\" and you'll have a strong question list in seconds."
+        },
+        {
+          "question": "Which prompt would best help you prepare for a meeting you know little about?",
+          "type": "mcq",
+          "options": [
+            "\"Tell me about meetings\"",
+            "\"Summarise the key things I need to know about [topic/company] before a meeting with them\"",
+            "\"Write a meeting for me\"",
+            "\"Cancel my meeting\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Giving ChatGPT a specific briefing request — \"summarise what I need to know about X before meeting them\" — gets you a concise, relevant prep doc in under a minute."
+        }
+      ]
+    },
+    {
+      "id": "cgb-12-problem-solving",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Problem-Solving & Decisions",
+      "subtitle": "Use AI as a thinking partner — not just a writing tool",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people use ChatGPT to write things. The smartest business owners use it to think better.",
+          "body": "ChatGPT isn't just a writing assistant — it's a genuinely powerful thinking partner. When you're stuck on a problem, facing a big decision, or need to stress-test an idea, talking it through with ChatGPT often unlocks clarity you couldn't reach alone.",
+          "stat": "89%",
+          "statLabel": "of executives say better decision-making would significantly improve business outcomes"
+        },
+        {
+          "type": "content",
+          "headline": "How to use ChatGPT as a thinking partner",
+          "body": "The key is to treat ChatGPT like a trusted adviser — not a search engine. Explain the situation fully, share your thinking, and ask it to push back, challenge, or offer perspectives you haven't considered.",
+          "bullets": [
+            "🧠 \"I'm trying to decide between [option A] and [option B]. Here's my situation: [context]. Help me think through the pros and cons.\"",
+            "🔍 \"I'm facing this challenge: [describe it]. What are some ways I haven't thought of yet?\"",
+            "🛡️ \"Play devil's advocate — what could go wrong with this plan?\"",
+            "✅ \"What questions should I be asking myself before I make this decision?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "ChatGPT-powered frameworks for better decisions",
+          "body": "Ask ChatGPT to apply structured decision frameworks to your problem — it knows them all and can apply them to your specific situation.",
+          "bullets": [
+            "⚖️ PROS & CONS: \"List the pros and cons of [decision] for my specific situation\"",
+            "🔲 SWOT: \"Run a quick SWOT analysis on [idea or plan]\"",
+            "🎯 FIRST PRINCIPLES: \"Break [problem] down to first principles — what do we know for certain?\"",
+            "🔮 PRE-MORTEM: \"Imagine this plan failed. What are the most likely reasons why?\"",
+            "🚦 TRAFFIC LIGHT: \"Rate each option green/amber/red on [criteria] and explain your ratings\""
+          ],
+          "stat": "5 frameworks",
+          "statLabel": "available instantly — no consultant fees required"
+        },
+        {
+          "type": "try-it",
+          "headline": "Bring a real business problem to ChatGPT right now",
+          "body": "Think of something you're currently wrestling with in your business — a decision, a challenge, or an idea you're unsure about.",
+          "bullets": [
+            "💭 Describe the situation to ChatGPT as if explaining it to a trusted advisor",
+            "🛡️ Ask it to play devil's advocate on your current thinking",
+            "🔲 Ask for a quick SWOT or pros/cons on your leading option",
+            "💡 Ask: \"What am I not thinking about that I should be?\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"playing devil's advocate\" mean when you ask ChatGPT to do it?",
+          "type": "mcq",
+          "options": [
+            "ChatGPT refuses to answer your question",
+            "ChatGPT argues against your current plan to surface risks and weaknesses",
+            "ChatGPT gives you only positive feedback",
+            "ChatGPT searches the internet for negative reviews"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you ask ChatGPT to play devil's advocate, it deliberately argues against your plan or idea to surface potential risks, weaknesses, and blind spots. This is incredibly valuable for stress-testing decisions before you commit."
+        },
+        {
+          "question": "A pre-mortem is a technique where you imagine a plan has already failed and work backwards to find out why.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! A pre-mortem is one of the most powerful decision-making tools. By imagining failure in advance, you surface risks you'd otherwise miss. Ask ChatGPT: \"Imagine this plan failed — what are the most likely reasons why?\""
+        },
+        {
+          "question": "To get the best thinking-partner results from ChatGPT, you should:",
+          "type": "mcq",
+          "options": [
+            "Keep your message as short as possible",
+            "Only use it for simple problems",
+            "Explain the situation fully, share your current thinking, and invite it to challenge you",
+            "Ask only yes/no questions"
+          ],
+          "correctIndex": 2,
+          "explanation": "ChatGPT is most useful as a thinking partner when you give it full context. Share your situation, your current thinking, and what you're unsure about — then invite it to challenge, probe, or add perspectives you haven't considered."
+        }
+      ]
+    },
+    {
+      "id": "cgb-13-marketing-copy",
+      "dayNumber": 13,
+      "moduleId": "module-2",
+      "title": "ChatGPT for Your Marketing Copy",
+      "subtitle": "Write headlines, ads, and landing page text that actually makes people want to buy",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Great marketing copy used to cost thousands. Now you can produce it yourself — in minutes — with ChatGPT.",
+          "body": "Copywriting is one of the highest-leverage skills in business. The right headline can double your click-through rate. The right ad can triple your sales. ChatGPT gives every business owner access to professional-grade copy without the agency price tag.",
+          "stat": "2×",
+          "statLabel": "average improvement in click-through rate from well-crafted headlines vs weak ones"
+        },
+        {
+          "type": "content",
+          "headline": "The marketing copy ChatGPT handles brilliantly",
+          "body": "From a single tagline to a full landing page — ChatGPT can write it all when you give it the right brief.",
+          "bullets": [
+            "🏷️ Headlines and taglines — the hook that makes people stop scrolling",
+            "📣 Ad copy — Facebook, Google, Instagram, LinkedIn ads",
+            "🌐 Landing page sections — hero text, features, benefits, CTAs",
+            "📧 Email subject lines — the 7 words that decide if your email gets opened",
+            "🛒 Product descriptions — benefits-led copy that drives purchases",
+            "📖 About page and brand story — your \"why\" told compellingly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The copywriting brief: what ChatGPT needs to write great copy",
+          "body": "Marketing copy without a proper brief produces generic results. Give ChatGPT these five things and the output will be dramatically better:",
+          "bullets": [
+            "🎯 AUDIENCE: Who are you speaking to? What do they want? What's their pain?",
+            "💡 OFFER: What exactly are you selling or promoting?",
+            "✨ KEY BENEFIT: What's the single most compelling reason to choose you?",
+            "🗣️ TONE: Bold and punchy? Warm and reassuring? Premium and exclusive?",
+            "📐 FORMAT: A headline? A 3-paragraph landing page section? A 30-word ad?"
+          ],
+          "stat": "5 inputs",
+          "statLabel": "for professional-grade copy — vs paying £500+ to a copywriter"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write a real piece of marketing copy for your business",
+          "body": "Pick something you actually need — a headline, an ad, a landing page section — and build it now using the brief framework.",
+          "bullets": [
+            "📋 Write your 5-part brief: audience, offer, key benefit, tone, format",
+            "🚀 Paste it into ChatGPT and ask for 3–5 variations to choose from",
+            "🔧 Ask it to push one version harder: \"Make the headline more urgent\" / \"Lead with the benefit, not the feature\"",
+            "💾 Save your favourite — you now have real marketing copy you can use today"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important thing to include in a copywriting brief for ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "Your company registration number",
+            "Your audience, offer, key benefit, tone, and format",
+            "A list of your competitors' prices",
+            "The exact word count you want"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great copy starts with a great brief. The five essentials are: who you're talking to (audience), what you're offering (offer), why they should care (key benefit), how it should sound (tone), and what format you need (headline, ad, page section, etc.)."
+        },
+        {
+          "question": "When asking ChatGPT for marketing copy, it's best to ask for one version and use it as-is.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Always ask for multiple variations (3–5 is ideal). Different framings, different emotional angles, different lengths — having options lets you pick the strongest one, or mix and match elements from several."
+        },
+        {
+          "question": "What does \"benefits-led\" copy mean?",
+          "type": "mcq",
+          "options": [
+            "Copy that lists every feature of your product",
+            "Copy that focuses on what the customer gains, feels, or achieves — not just what the product does",
+            "Copy that includes a discount or special offer",
+            "Copy written by a benefits consultant"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benefits-led copy focuses on the customer outcome rather than the product feature. \"Saves you 2 hours a day\" is a benefit. \"Has an AI-powered scheduling engine\" is a feature. Benefits connect emotionally and convert better."
+        }
+      ]
+    },
+    {
+      "id": "cgb-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Lock in everything from ChatGPT at Work — and get ready to become a power user",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've just completed 14 lessons. You now know how to use ChatGPT for the most common and valuable business tasks. That's genuinely rare.",
+          "body": "Most professionals use ChatGPT for one or two things. You've now got real skills across customer communication, sales, social media, meetings, decision-making, and marketing. Module 3 takes you to the next level: power user features that multiply everything you've already learned.",
+          "stat": "14 lessons",
+          "statLabel": "complete · 280 XP earned · power user skills unlocked next"
+        },
+        {
+          "type": "content",
+          "headline": "What you've learned in Module 2",
+          "body": "Here's a recap of the real-world business skills you've built in this module:",
+          "bullets": [
+            "📞 Customer messages — template formula for any difficult reply (Lesson 8)",
+            "💼 Sales & proposals — full proposal formula + follow-up sequences (Lesson 9)",
+            "📱 Social media — content pillars system + 20 ideas in 10 minutes (Lesson 10)",
+            "📋 Meetings — prepare agendas, convert rough notes to action points (Lesson 11)",
+            "🧠 Problem-solving — use ChatGPT as a thinking partner with real frameworks (Lesson 12)",
+            "📣 Marketing copy — 5-part brief for professional-grade copy in minutes (Lesson 13)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's coming in Module 3: ChatGPT Power User",
+          "body": "Module 3 moves beyond individual tasks into building a permanent AI system for your business.",
+          "bullets": [
+            "⚙️ Custom instructions — make ChatGPT remember your business permanently (Lesson 15)",
+            "📁 File uploads — analyse reports, contracts, and data in seconds (Lesson 16)",
+            "📋 Prompt templates — build a library that saves hours every week (Lesson 17)",
+            "🎯 Strategy & big thinking — use ChatGPT for planning and vision (Lesson 18)",
+            "🔗 Connecting tools — Zapier, Make, and automation basics (Lesson 19)",
+            "🛡️ Quality & accuracy — avoid mistakes and keep your brand safe (Lesson 20)"
+          ],
+          "stat": "Module 3",
+          "statLabel": "starts next — from individual tasks to a full AI-powered business system"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your Module 2 toolkit before moving on",
+          "body": "Before you start Module 3, take 10 minutes to consolidate what you've learned into reusable assets.",
+          "bullets": [
+            "💾 Save your best customer reply template from Lesson 8",
+            "📄 Write a proposal outline template for your most common type of client",
+            "📅 Plan next week's social media content using your content pillars",
+            "📋 Prep an agenda for your next upcoming meeting using ChatGPT"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"content pillars\" approach to social media?",
+          "type": "mcq",
+          "options": [
+            "Posting only on one platform",
+            "Hiring a social media manager",
+            "Building 3–5 recurring themes that anchor your content strategy",
+            "Posting at fixed times each day"
+          ],
+          "correctIndex": 2,
+          "explanation": "Content pillars are 3–5 recurring themes that keep your social media consistent and purposeful. Once defined, you rotate through them to generate ideas — meaning you never run out of things to post."
+        },
+        {
+          "question": "Which ChatGPT technique is best for stress-testing a business decision before you commit to it?",
+          "type": "mcq",
+          "options": [
+            "Asking it to write a press release about the decision",
+            "Asking it to play devil's advocate and run a pre-mortem",
+            "Asking it to summarise the decision in one sentence",
+            "Asking it to write a pros list only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Devil's advocate + pre-mortem is the most powerful combination for stress-testing decisions. Devil's advocate challenges your current thinking. Pre-mortem imagines failure and works backwards to find the causes."
+        },
+        {
+          "question": "Benefits-led marketing copy focuses on product features rather than customer outcomes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Benefits-led copy focuses on what the customer gains, feels, or achieves — not on the product's technical features. \"Save 2 hours a day\" (benefit) converts better than \"AI-powered scheduling engine\" (feature)."
+        }
+      ]
+    },
+    {
+      "id": "cgb-15-custom-instructions",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Custom Instructions — Make ChatGPT Know Your Business",
+      "subtitle": "Stop re-explaining yourself every session — set it once and ChatGPT remembers permanently",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Imagine if ChatGPT already knew your business, your tone, your audience, and your preferences — every single time you opened it.",
+          "body": "That's exactly what Custom Instructions does. It's one of ChatGPT's most powerful and least-used features. Set it up once in 10 minutes and every response you get from that point on is personalised to your business — without you having to explain anything.",
+          "stat": "10 min",
+          "statLabel": "to set up · then ChatGPT knows your business in every future conversation"
+        },
+        {
+          "type": "content",
+          "headline": "What Custom Instructions actually does",
+          "body": "Custom Instructions is a hidden settings panel in ChatGPT where you tell it two key things — and it applies them automatically to every new chat.",
+          "bullets": [
+            "📋 FIELD 1 — \"What would you like ChatGPT to know about you?\": Your business, your role, your audience, your goals, your industry",
+            "🗣️ FIELD 2 — \"How would you like ChatGPT to respond?\": Your preferred tone, format, length, things to avoid, how direct you want it to be",
+            "⚙️ Where to find it: Click your profile picture → Settings → Personalisation → Custom Instructions",
+            "✅ Once saved, it applies automatically to every new conversation — no pasting needed"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to write in each field",
+          "body": "Here's a strong example for a small business owner — adapt it to your own situation:",
+          "bullets": [
+            "📝 FIELD 1 example: \"I run a digital marketing agency for small businesses in the UK. My clients are typically owner-managed businesses with 1–10 staff. I focus on SEO, social media, and paid ads. I'm the founder and do most of the work myself.\"",
+            "🗣️ FIELD 2 example: \"Be direct and practical. Avoid jargon and corporate-speak. Use short paragraphs and bullet points where useful. Don't over-explain obvious things. Tone: friendly, confident, and no-nonsense.\"",
+            "💡 The more specific you are, the more tailored every response will be",
+            "🔁 You can update these any time as your business evolves"
+          ],
+          "stat": "Every chat",
+          "statLabel": "automatically personalised — no copy-pasting your style brief ever again"
+        },
+        {
+          "type": "try-it",
+          "headline": "Set up your Custom Instructions right now",
+          "body": "This is a 10-minute task that permanently upgrades every future ChatGPT conversation.",
+          "bullets": [
+            "⚙️ Open ChatGPT → click your profile picture (bottom left) → Settings → Personalisation → Custom Instructions",
+            "✏️ Fill in Field 1: your business, role, clients, and goals",
+            "✏️ Fill in Field 2: your tone preferences, format preferences, what to avoid",
+            "💾 Save — then open a new chat and ask something work-related. Notice the difference immediately."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the first field in Custom Instructions (\"What would you like ChatGPT to know about you?\") typically contain?",
+          "type": "mcq",
+          "options": [
+            "Your personal hobbies and interests",
+            "Your business, role, target audience, and goals",
+            "Your full CV or biography",
+            "A list of topics you want ChatGPT to avoid"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first field is where you describe your professional context — your business type, your role, who your clients or audience are, and what you're trying to achieve. This gives ChatGPT the background it needs to give you relevant, specific responses."
+        },
+        {
+          "question": "Custom Instructions need to be pasted into every new ChatGPT conversation to work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! That's the whole point of Custom Instructions — you set them once in Settings and they apply automatically to every new conversation from that point on. No copy-pasting required."
+        },
+        {
+          "question": "Where do you find Custom Instructions in ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "In the main chat window as a command",
+            "Profile picture → Settings → Personalisation → Custom Instructions",
+            "In the Help menu",
+            "You have to pay extra for it"
+          ],
+          "correctIndex": 1,
+          "explanation": "Custom Instructions is found under your profile picture → Settings → Personalisation → Custom Instructions. It's available on both free and paid plans."
+        }
+      ]
+    },
+    {
+      "id": "cgb-16-uploading-files",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "Uploading Files & Analysing Data",
+      "subtitle": "Hand ChatGPT your reports, contracts, and spreadsheets — and get instant insight",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "ChatGPT can read your documents, analyse your spreadsheets, and pull out exactly what you need — in seconds.",
+          "body": "One of the most underused features of ChatGPT Plus is file uploads. You can hand it a 40-page report and ask for a 5-bullet summary. Upload a messy spreadsheet and ask it to find patterns. Attach a contract and ask it to flag anything unusual. This is genuinely transformative for business owners who deal with a lot of documents.",
+          "stat": "40 pages",
+          "statLabel": "summarised to 5 bullet points in under 30 seconds"
+        },
+        {
+          "type": "content",
+          "headline": "What you can upload and what to ask",
+          "body": "ChatGPT (on the paid plan) accepts PDFs, Word docs, spreadsheets, images, and more. Here's what to do with them:",
+          "bullets": [
+            "📄 PDF reports: \"Summarise the 3 most important findings from this report\"",
+            "📊 Spreadsheets: \"Analyse this data and tell me the top 3 trends you see\"",
+            "📝 Contracts: \"Read this contract and flag anything I should be aware of before signing\"",
+            "📧 Email threads: \"Summarise this email chain and list any open action items\"",
+            "🖼️ Images: \"Describe what's in this image\" or \"Read the text from this screenshot\"",
+            "📋 Meeting transcripts: \"Extract all action items and decisions from this transcript\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Smart ways to use file uploads in your business",
+          "body": "Beyond one-off analysis, file uploads unlock some powerful ongoing use cases:",
+          "bullets": [
+            "📈 Monthly reports: Upload your sales or financial report and ask \"what should I focus on this month?\"",
+            "🔍 Competitor research: Paste a competitor's page or PDF and ask \"what are they doing well that I'm not?\"",
+            "⚖️ Before signing anything: Upload contracts, proposals, or terms and ask for a plain-English summary",
+            "💡 Customer feedback: Upload review exports or survey responses and ask for common themes"
+          ],
+          "stat": "GPT-4o",
+          "statLabel": "required for file uploads — available on ChatGPT Plus (paid plan)"
+        },
+        {
+          "type": "try-it",
+          "headline": "Upload a real document and get instant insight",
+          "body": "Find a document in your business that you've been meaning to read properly — and let ChatGPT do the heavy lifting.",
+          "bullets": [
+            "📎 Open ChatGPT Plus and click the paperclip icon to upload a file",
+            "📄 Upload a report, contract, spreadsheet, or email thread",
+            "❓ Ask: \"What are the 3 most important things I need to know from this?\"",
+            "🔍 Follow up: \"Is there anything here I should be concerned about?\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which ChatGPT plan is required to upload and analyse files?",
+          "type": "mcq",
+          "options": [
+            "The free plan — file uploads are available to everyone",
+            "ChatGPT Plus (paid plan) with GPT-4o",
+            "Any plan, but only for image files",
+            "File uploads are not possible in ChatGPT"
+          ],
+          "correctIndex": 1,
+          "explanation": "File uploads (PDFs, spreadsheets, documents, images) require ChatGPT Plus using GPT-4o. If you're on the free plan, you can still paste text directly into the chat as an alternative for shorter documents."
+        },
+        {
+          "question": "You can upload a contract to ChatGPT and ask it to summarise the key terms in plain English.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Uploading contracts is one of the most valuable uses of file analysis. You can ask ChatGPT to summarise key terms, flag anything unusual, highlight payment or cancellation clauses, or explain specific sections in plain language. Always have a solicitor review important contracts too."
+        },
+        {
+          "question": "What is one smart way to use file uploads for customer insight?",
+          "type": "mcq",
+          "options": [
+            "Upload your company logo and ask ChatGPT to redesign it",
+            "Upload a customer review export or survey responses and ask for common themes",
+            "Upload your invoice template and ask ChatGPT to send it",
+            "Upload a photo of your office"
+          ],
+          "correctIndex": 1,
+          "explanation": "Uploading batches of customer reviews or survey responses and asking ChatGPT to identify common themes, recurring complaints, or patterns is a brilliant use of file analysis. It turns raw feedback into actionable insight in minutes."
+        }
+      ]
+    },
+    {
+      "id": "cgb-17-prompt-templates",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Building Repeatable Prompts & Templates",
+      "subtitle": "Stop writing the same prompts from scratch — build a library that saves hours every week",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most efficient ChatGPT users don't write new prompts from scratch every time. They have a library of proven templates they reuse and refine.",
+          "body": "Every time you write a great prompt and get a great result, that's an asset. If you don't save it, it's gone. Over time, a personal prompt library becomes one of the most valuable productivity tools in your business — a collection of prompts that you know work, for tasks you do repeatedly.",
+          "stat": "50%+",
+          "statLabel": "of time saved when reusing a proven prompt vs writing from scratch each time"
+        },
+        {
+          "type": "content",
+          "headline": "What a prompt template looks like",
+          "body": "A prompt template is just a prompt with placeholders for the parts that change each time. Here's an example:",
+          "bullets": [
+            "📧 EMAIL TEMPLATE: \"I run a [business type]. Write a [type of email] to [audience]. Goal: [goal]. Tone: [tone]. Length: under [X] words.\"",
+            "📱 SOCIAL TEMPLATE: \"Write a [platform] post about [topic] for [audience]. Tone: [tone]. Include a call to action to [CTA]. Under [X] words.\"",
+            "📄 PROPOSAL TEMPLATE: \"Write a proposal for [client type] who needs [service]. Key benefit: [benefit]. Include: intro, problem, solution, investment, next steps.\"",
+            "🔲 The brackets are your fill-in-the-blank slots — swap them out each time you use it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to build and organise your prompt library",
+          "body": "Your prompt library doesn't need to be complicated. A simple notes app or document works perfectly.",
+          "bullets": [
+            "📁 Organise by category: Emails · Social Media · Sales · Meetings · Research · Marketing",
+            "✅ Only save prompts that produced great results — quality over quantity",
+            "🔁 Refine them over time: when a prompt produces something even better, update the template",
+            "📋 Include the output too: save an example of what the template produces so you know what to expect",
+            "☁️ Keep it in a cloud app (Notion, Google Docs, Apple Notes) so it's always accessible"
+          ],
+          "stat": "One document",
+          "statLabel": "can contain your entire ChatGPT toolkit — accessible from any device"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your first 5 prompt templates right now",
+          "body": "Look back at the lessons you've completed and turn your best prompts into reusable templates.",
+          "bullets": [
+            "📋 Open a new doc or note titled \"My ChatGPT Prompt Library\"",
+            "✍️ Write templates for: 1 email type, 1 social post type, 1 customer reply type",
+            "🔲 Replace the specific details with [brackets] to make them reusable",
+            "💾 Save it — you've just created a business asset that compounds in value every week"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a prompt template?",
+          "type": "mcq",
+          "options": [
+            "A pre-written message ChatGPT sends automatically",
+            "A proven prompt with placeholder brackets for the parts that change each time",
+            "A paid ChatGPT feature for businesses",
+            "A template that ChatGPT fills in on its own"
+          ],
+          "correctIndex": 1,
+          "explanation": "A prompt template is a proven prompt structure with [placeholder brackets] for the details that vary each time. For example: \"Write a [type of email] to [audience] about [topic]. Tone: [tone].\" You fill in the brackets when you use it."
+        },
+        {
+          "question": "You should save every prompt you ever write to your prompt library.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Only save prompts that produced great results. Quality over quantity — a lean library of 20 brilliant templates is far more useful than a bloated collection of 200 mediocre ones."
+        },
+        {
+          "question": "What's the best way to organise a prompt library?",
+          "type": "mcq",
+          "options": [
+            "Alphabetically by the first word of each prompt",
+            "By date — newest prompts first",
+            "By category (e.g. Emails, Social Media, Sales, Meetings)",
+            "No organisation needed — just save everything in one list"
+          ],
+          "correctIndex": 2,
+          "explanation": "Organising by category makes your library practical to use. When you need to write a social post, you go straight to the Social Media section. Categories like Emails, Social Media, Sales, Research, and Marketing cover most business needs."
+        }
+      ]
+    },
+    {
+      "id": "cgb-18-strategy-thinking",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "ChatGPT for Strategy & Big-Picture Thinking",
+      "subtitle": "Use AI to plan further ahead, think more clearly, and make smarter long-term decisions",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most business owners are so busy working IN their business they never get time to work ON it. ChatGPT changes that.",
+          "body": "Strategic thinking — business planning, vision setting, competitive analysis, growth mapping — used to require expensive consultants or MBA-level frameworks. ChatGPT brings all of that to any business owner, any time, in plain conversational language.",
+          "stat": "1 hour",
+          "statLabel": "with ChatGPT can produce more strategic clarity than a full day of solo thinking"
+        },
+        {
+          "type": "content",
+          "headline": "What ChatGPT can help you strategise",
+          "body": "These are the big-picture tasks where ChatGPT acts as your on-demand strategy partner:",
+          "bullets": [
+            "🗺️ Business planning: \"Help me create a 90-day plan to [goal] for my [business type]\"",
+            "📊 Competitive analysis: \"What are the biggest threats and opportunities for a [type] business in [market] right now?\"",
+            "🎯 Goal setting: \"Help me set 3 focused quarterly goals for my business — here's where I am: [context]\"",
+            "💡 New revenue ideas: \"What are 5 realistic ways a [business type] could add a new revenue stream?\"",
+            "🔮 Scenario planning: \"What should I do if [scenario]? Walk me through the options.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The strategic brainstorm session",
+          "body": "One of the most powerful things you can do is set aside 30 minutes, open ChatGPT, and have a proper strategic conversation about your business. Here's how to structure it:",
+          "bullets": [
+            "1️⃣ Set the scene: \"I run a [business]. Here's where we are: [current situation]. Here's what I'm aiming for: [goal].\"",
+            "2️⃣ Ask for an honest assessment: \"What are my biggest obstacles and opportunities right now?\"",
+            "3️⃣ Explore options: \"What are 3 different strategic approaches I could take to reach that goal?\"",
+            "4️⃣ Push for a recommendation: \"If you had to recommend one approach, what would it be and why?\"",
+            "5️⃣ Build the plan: \"Turn that into a 90-day action plan with weekly milestones\""
+          ],
+          "stat": "30 min",
+          "statLabel": "structured strategy session = a clearer roadmap than most businesses ever create"
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a 10-minute strategy session on your business right now",
+          "body": "Pick one area of your business that needs clearer direction — growth, pricing, marketing, team, product — and use ChatGPT to think it through.",
+          "bullets": [
+            "🗺️ Set the scene: describe where your business is and what you're aiming for",
+            "🔍 Ask: \"What are my biggest obstacles and opportunities in this area?\"",
+            "💡 Ask: \"What are 3 approaches I could take? Which would you recommend?\"",
+            "📋 Ask: \"Turn your recommendation into a simple 30-day action plan\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended structure for a strategic brainstorm session with ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "Ask one question and wait for a complete strategy",
+            "Set the scene, ask for an assessment, explore options, get a recommendation, build the plan",
+            "Only ask about competitors",
+            "Ask for a SWOT analysis only"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 5-step structure works because it builds context progressively: set the scene → honest assessment → explore options → recommendation → action plan. Each step builds on the last, resulting in a far more relevant and detailed strategy than a single question would produce."
+        },
+        {
+          "question": "ChatGPT can help you create a 90-day business plan with weekly milestones.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Once you've given ChatGPT the context of your business, your current situation, and your goal, you can ask it to structure a 90-day plan with weekly milestones. It's remarkably good at this — and it only takes a few minutes."
+        },
+        {
+          "question": "Why is \"working ON your business\" (strategy) different from \"working IN your business\" (day-to-day tasks)?",
+          "type": "mcq",
+          "options": [
+            "They are the same thing",
+            "Working IN handles urgent tasks; working ON sets the long-term direction and priorities",
+            "Working ON your business means hiring staff",
+            "Working IN your business is more important"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Working IN\" means doing the daily tasks that keep the business running. \"Working ON\" means stepping back to set direction, review strategy, and make decisions that shape the future. Most owners are consumed by working IN — ChatGPT helps you carve out time and clarity for working ON."
+        }
+      ]
+    },
+    {
+      "id": "cgb-19-connecting-tools",
+      "dayNumber": 19,
+      "moduleId": "module-3",
+      "title": "Connecting ChatGPT to Your Other Tools",
+      "subtitle": "Take your first steps into automation — without needing to be technical",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if ChatGPT could automatically write your social posts, reply to enquiries, or update your CRM — without you lifting a finger?",
+          "body": "That's what automation tools like Zapier and Make allow you to do. They connect ChatGPT to the other apps you use — email, Slack, Google Sheets, CRMs, social media — so AI can run tasks in the background while you focus on higher-value work.",
+          "stat": "4 hrs/week",
+          "statLabel": "saved on average when businesses connect ChatGPT to their existing tools"
+        },
+        {
+          "type": "content",
+          "headline": "The two tools you need to know: Zapier & Make",
+          "body": "You don't need to write code to connect ChatGPT to other apps. Zapier and Make do it for you with visual, drag-and-drop builders.",
+          "bullets": [
+            "⚡ ZAPIER (zapier.com): Easiest to start with. Pre-built templates for common tasks. Free tier available.",
+            "🔧 MAKE (make.com): More powerful for complex workflows. Slightly more learning required.",
+            "🔗 Both connect to 5,000+ apps including Gmail, Slack, Sheets, HubSpot, Shopify, WordPress, and more",
+            "🤖 You create \"automations\" (called Zaps or Scenarios) that trigger ChatGPT to do a task automatically"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Real automation ideas for your business",
+          "body": "Here are practical automations you could build — each one saves time every single week:",
+          "bullets": [
+            "📧 New customer enquiry → ChatGPT drafts a personalised reply → sent to your inbox for approval",
+            "📱 New blog post published → ChatGPT writes 3 social media posts → saved to a Google Sheet",
+            "⭐ New review received → ChatGPT drafts a response → ready for you to post in one click",
+            "📊 Weekly sales data in a spreadsheet → ChatGPT analyses it → sends you a summary email",
+            "📝 Form submission received → ChatGPT personalises a follow-up → added to your CRM"
+          ],
+          "stat": "No code",
+          "statLabel": "required — Zapier and Make use visual drag-and-drop builders"
+        },
+        {
+          "type": "try-it",
+          "headline": "Explore what's possible for your business",
+          "body": "You don't need to build an automation today — but exploring what's possible is a great first step.",
+          "bullets": [
+            "🔗 Visit zapier.com and search for your most-used business app (e.g. Gmail, Slack, Shopify)",
+            "👀 Browse the pre-built templates that include ChatGPT — you'll find ones ready to use in minutes",
+            "💡 Ask ChatGPT: \"What are the best automations I could build for a [business type] using Zapier?\"",
+            "🎯 Pick ONE simple automation to try — start small, build confidence, then expand"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do tools like Zapier and Make allow you to do?",
+          "type": "mcq",
+          "options": [
+            "Replace ChatGPT with a different AI",
+            "Connect ChatGPT to other apps so it can run tasks automatically",
+            "Write code for custom software",
+            "Access ChatGPT for free without a subscription"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zapier and Make are automation platforms that connect apps together. They let you trigger ChatGPT to run tasks automatically — for example, when a new enquiry arrives, ChatGPT drafts a reply without you having to open ChatGPT manually."
+        },
+        {
+          "question": "You need to know how to write code to use Zapier or Make.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Both Zapier and Make use visual drag-and-drop interfaces. You connect apps and set up triggers and actions without writing a single line of code. They're designed for non-technical users."
+        },
+        {
+          "question": "What is a good first automation to try for a small business?",
+          "type": "mcq",
+          "options": [
+            "Build a fully automated customer service system from scratch",
+            "Start with a simple one — like auto-drafting a reply when a new enquiry form is submitted",
+            "Automate your entire business in one go",
+            "Wait until you have a technical team before trying automation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start small — one simple automation that solves a real problem you have today. Build confidence with that, then expand. \"New enquiry → ChatGPT draft reply → into your inbox\" is a perfect first automation for most businesses."
+        }
+      ]
+    },
+    {
+      "id": "cgb-20-quality-and-mistakes",
+      "dayNumber": 20,
+      "moduleId": "module-3",
+      "title": "Avoiding Mistakes & Keeping Quality High",
+      "subtitle": "The things ChatGPT gets wrong — and how to protect your business from them",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "ChatGPT is powerful — but it makes mistakes. Knowing what to watch for protects your reputation, your clients, and your business.",
+          "body": "AI tools are not infallible. ChatGPT can confidently state incorrect facts, produce generic content that hurts your brand, or miss critical nuances. This lesson is about being a smart, responsible AI user — not fearful, but informed.",
+          "stat": "30%",
+          "statLabel": "of ChatGPT outputs contain at least one inaccuracy that needs checking (Stanford AI Lab)"
+        },
+        {
+          "type": "content",
+          "headline": "The 4 most common ChatGPT mistakes to watch for",
+          "body": "These are the pitfalls that trip up business owners — and how to avoid each one:",
+          "bullets": [
+            "🎭 HALLUCINATIONS: ChatGPT invents facts, statistics, or sources that don't exist. Fix: Always verify important facts with an authoritative source before publishing or sharing.",
+            "📅 OUTDATED INFORMATION: Its training has a cutoff date. Fix: For current events, prices, regulations, or news, check a live source.",
+            "🤖 GENERIC TONE: Default output can sound like every other AI-written piece. Fix: Always use your style brief and ask for specific adjustments.",
+            "⚖️ LEGAL & COMPLIANCE RISKS: ChatGPT doesn't know your local laws. Fix: Never use AI output as legal, financial, or medical advice without professional review."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A simple quality checklist before you publish or send",
+          "body": "Run every important piece of ChatGPT output through this quick checklist:",
+          "bullets": [
+            "✅ Facts: Have I verified any specific statistics, dates, or claims?",
+            "✅ Voice: Does it sound like me — or like a generic AI?",
+            "✅ Accuracy: Is everything technically correct for my industry and location?",
+            "✅ Personalisation: Have I added specific details that only I would know?",
+            "✅ Brand safety: Would I be comfortable if a client or competitor read this?",
+            "✅ Compliance: Does anything here touch legal, financial, or health territory that needs expert review?"
+          ],
+          "stat": "2 minutes",
+          "statLabel": "is all this checklist takes — and it protects everything you've worked to build"
+        },
+        {
+          "type": "try-it",
+          "headline": "Apply the quality checklist to something you've made with ChatGPT",
+          "body": "Find a recent piece of content or communication you created with ChatGPT's help and run it through the checklist.",
+          "bullets": [
+            "📋 Open the checklist above and go through each point",
+            "✏️ Make any edits needed — add your personal details, verify any facts",
+            "🔧 If it sounds generic, paste your style brief into ChatGPT and ask for a rewrite",
+            "✅ Publish or send only when you'd be proud for anyone to read it"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a ChatGPT \"hallucination\"?",
+          "type": "mcq",
+          "options": [
+            "When ChatGPT refuses to answer a question",
+            "When ChatGPT confidently states facts, statistics, or sources that are incorrect or don't exist",
+            "When ChatGPT takes too long to respond",
+            "When ChatGPT produces very creative or imaginative content"
+          ],
+          "correctIndex": 1,
+          "explanation": "A hallucination is when ChatGPT produces incorrect information — often stated with total confidence. It might invent a statistic, cite a study that doesn't exist, or get a fact wrong. Always verify important claims before publishing."
+        },
+        {
+          "question": "ChatGPT's knowledge is always completely up to date with current events and regulations.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! ChatGPT has a training cutoff date and doesn't automatically know about recent events, current prices, new laws, or anything that happened after its training ended. For anything time-sensitive, always check a current source."
+        },
+        {
+          "question": "Which of these should you ALWAYS do before publishing ChatGPT-generated content?",
+          "type": "mcq",
+          "options": [
+            "Nothing — ChatGPT is always accurate and professional",
+            "Check facts, ensure it sounds like you, and add personal details only you would know",
+            "Run it through a second AI tool to double-check",
+            "Pay a professional editor to review every piece"
+          ],
+          "correctIndex": 1,
+          "explanation": "Before publishing anything ChatGPT wrote, always: verify key facts, check the tone sounds like your brand, and add the specific personal touches that make it genuinely yours. This protects your reputation and makes the content far more effective."
+        }
+      ]
+    },
+    {
+      "id": "cgb-21-graduation",
+      "dayNumber": 21,
+      "moduleId": "module-3",
+      "title": "Graduation — Your ChatGPT Business Playbook",
+      "subtitle": "You've done it. Here's everything you've built — and what to do with it next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You just completed 21 lessons. You now know how to use ChatGPT better than 95% of business owners.",
+          "body": "When you started this course, ChatGPT was a blank text box. Now you have a complete system: custom instructions set up, a prompt library built, real templates for emails, sales, social media, meetings, marketing, strategy, and automation. That's genuinely powerful — and it belongs entirely to you.",
+          "stat": "21 lessons",
+          "statLabel": "· 420 XP earned · ChatGPT for Business certificate unlocked 🎓"
+        },
+        {
+          "type": "content",
+          "headline": "Your ChatGPT Business Playbook — what you've built",
+          "body": "Here's everything you've created across this course:",
+          "bullets": [
+            "⚙️ CUSTOM INSTRUCTIONS: ChatGPT knows your business in every session",
+            "🗣️ STYLE BRIEF: Every piece of writing sounds like you",
+            "📋 PROMPT LIBRARY: Templates for emails, sales, social, meetings, copy, strategy",
+            "📄 FILE ANALYSIS WORKFLOW: Any document summarised in under 60 seconds",
+            "🔗 AUTOMATION ROADMAP: At least one Zapier/Make automation identified",
+            "🛡️ QUALITY CHECKLIST: A 6-point check before anything goes out"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to keep getting better from here",
+          "body": "The best ChatGPT users never stop learning. Here's how to compound your skills over time:",
+          "bullets": [
+            "🔁 USE IT DAILY: The more you use it, the more natural and effective it becomes",
+            "📚 ADD TO YOUR LIBRARY: Every great prompt you discover → save it as a template",
+            "🧪 EXPERIMENT: Try ChatGPT for tasks you've never used it for — you'll be surprised",
+            "🔗 EXPLORE AUTOMATIONS: One new Zapier connection every month builds a powerful system over time",
+            "📖 STAY CURRENT: AI moves fast — revisit what's new in ChatGPT every few months",
+            "🎓 KEEP LEARNING: Check out Prompt Engineering Mastery to take your skills even deeper"
+          ],
+          "stat": "Daily use",
+          "statLabel": "is the single biggest factor separating good and great ChatGPT users"
+        },
+        {
+          "type": "try-it",
+          "headline": "One final task: share what you've built",
+          "body": "The best way to cement what you've learned is to teach it to someone else. Share your biggest ChatGPT win from this course.",
+          "bullets": [
+            "📱 Post on LinkedIn: \"I just completed ChatGPT for Business — here's the one thing that's already saving me time every day...\"",
+            "🤝 Tell a fellow business owner the single most useful thing you learned",
+            "💼 Identify one team member or colleague who would benefit from this course",
+            "🎉 Congratulations — you've earned your ChatGPT for Business certificate. Go use it."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the single most important habit that separates good and great ChatGPT users?",
+          "type": "mcq",
+          "options": [
+            "Paying for the most expensive plan",
+            "Using the longest prompts",
+            "Using ChatGPT daily so it becomes natural and second-nature",
+            "Only using ChatGPT for writing tasks"
+          ],
+          "correctIndex": 2,
+          "explanation": "Daily use is the number one differentiator. The more you use ChatGPT, the more intuitive your prompting becomes, the more situations you discover it for, and the faster you get. Occasional users never reach the same level of fluency."
+        },
+        {
+          "question": "After completing this course, your learning about ChatGPT is complete and there's nothing more to discover.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! AI is one of the fastest-moving fields in history. New features, models, and use cases appear constantly. The best approach is to keep experimenting, keep adding to your prompt library, and revisit what's new every few months."
+        },
+        {
+          "question": "Which of these best describes what you've built by completing this course?",
+          "type": "mcq",
+          "options": [
+            "A basic understanding of what ChatGPT is",
+            "A complete business system: custom instructions, style brief, prompt library, quality checklist, and automation roadmap",
+            "The ability to write one type of email faster",
+            "Access to a more powerful version of ChatGPT"
+          ],
+          "correctIndex": 1,
+          "explanation": "You've built a complete ChatGPT business system — custom instructions that personalise every session, a style brief that makes content sound like you, a prompt library of reusable templates, a quality checklist, and the foundations of automation. That's a genuine competitive advantage."
+        }
+      ]
+    }
+  ]
+}

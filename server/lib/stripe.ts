@@ -1,4 +1,4 @@
-/** Canonical LMS Stripe client: `authorisation/server`. Funnel checkout still uses this file until glue. */
+/** Funnel checkout Stripe client. LMS add-on charges use `successwise-app`. */
 import Stripe from 'stripe'
 import { loadEnv } from '../env.js'
 

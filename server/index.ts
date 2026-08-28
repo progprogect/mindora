@@ -5,21 +5,15 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { logger } from 'hono/logger'
+import { createLmsRoutes } from 'successwise-app/lms-api'
 import { runMigrations } from './db/migrate.js'
 import { loadEnv } from './env.js'
-import { authRoutes } from './routes/auth.js'
 import { checkoutRoutes } from './routes/checkout.js'
 import { healthRoutes } from './routes/health.js'
 import { leadRoutes } from './routes/leads.js'
-import { meRoutes } from './routes/me.js'
 import { metaRoutes } from './routes/meta.js'
 import { productRoutes } from './routes/products.js'
-import { progressRoutes } from './routes/progress.js'
-import { purchaseRoutes } from './routes/purchases.js'
 import { stripeWebhookHandler } from './routes/stripeWebhook.js'
-import { subscriptionRoutes } from './routes/subscription.js'
-import { upsellRoutes } from './routes/upsell.js'
-import { wiseRoutes } from './routes/wise.js'
 import { createSpaGateway } from './spa/gateway.js'
 
 const env = loadEnv()
@@ -41,14 +35,7 @@ app.post('/stripe/webhook', stripeWebhookHandler)
 
 const api = new Hono()
 api.route('/', healthRoutes)
-// LMS routes below are a Railway mirror. Canonical: authorisation/server (`createLmsApi`).
-api.route('/', authRoutes)
-api.route('/', meRoutes)
-api.route('/', subscriptionRoutes)
-api.route('/', progressRoutes)
-api.route('/', purchaseRoutes)
-api.route('/', wiseRoutes)
-api.route('/', upsellRoutes)
+api.route('/', createLmsRoutes())
 api.route('/', leadRoutes)
 api.route('/', productRoutes)
 api.route('/', checkoutRoutes)
@@ -61,18 +48,10 @@ function marketingDistPath(): string {
   return existsSync(path.join(fallback, 'index.html')) ? fallback : ''
 }
 
-function lmsDistPath(): string | undefined {
-  if (env.LMS_DIST) return env.LMS_DIST
-  const fallback = path.resolve(process.cwd(), 'lms-dist')
-  return existsSync(path.join(fallback, 'index.html')) ? fallback : undefined
-}
-
 const marketing = marketingDistPath()
-const lms = lmsDistPath()
 if (marketing) {
-  app.all('*', createSpaGateway({ marketing, lms }))
-  console.log(`[spa] marketing=${marketing}${lms ? ` lms=${lms}` : ''}`)
-  if (!lms) console.warn('[spa] LMS dist not found; /login /account /app served by marketing SPA')
+  app.all('*', createSpaGateway({ marketing }))
+  console.log(`[spa] marketing=${marketing}`)
 } else if (env.NODE_ENV === 'production') {
   console.warn('[spa] marketing dist not found; static gateway disabled')
 }

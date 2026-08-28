@@ -1,0 +1,1819 @@
+{
+  "id": "ai-ads-accelerator",
+  "title": "AI Ads Accelerator",
+  "subtitle": "Use AI to write ad copy, generate creatives, and optimise campaigns. Cut cost per acquisition by 40%+.",
+  "totalDays": 21,
+  "totalXp": 525,
+  "modules": [
+    {
+      "id": "aaa-mod-1",
+      "moduleNumber": 1,
+      "title": "AI Ad Foundations",
+      "subtitle": "The tools, platforms, and mindset for AI-powered advertising",
+      "days": "1–5",
+      "skill": "Foundation",
+      "lessonIds": [
+        "aaa-1",
+        "aaa-2",
+        "aaa-3",
+        "aaa-4",
+        "aaa-5"
+      ]
+    },
+    {
+      "id": "aaa-mod-2",
+      "moduleNumber": 2,
+      "title": "AI Ad Copy & Creatives",
+      "subtitle": "Write headlines, generate visuals, and test at scale",
+      "days": "6–11",
+      "skill": "Creative",
+      "lessonIds": [
+        "aaa-6",
+        "aaa-7",
+        "aaa-8",
+        "aaa-9",
+        "aaa-10",
+        "aaa-11"
+      ]
+    },
+    {
+      "id": "aaa-mod-3",
+      "moduleNumber": 3,
+      "title": "Campaign Strategy & Optimisation",
+      "subtitle": "Target, budget, and optimise with AI intelligence",
+      "days": "12–17",
+      "skill": "Strategy",
+      "lessonIds": [
+        "aaa-12",
+        "aaa-13",
+        "aaa-14",
+        "aaa-15",
+        "aaa-16",
+        "aaa-17"
+      ]
+    },
+    {
+      "id": "aaa-mod-4",
+      "moduleNumber": 4,
+      "title": "Scaling & Advanced Tactics",
+      "subtitle": "Scale winners and build a sustainable ad system",
+      "days": "18–21",
+      "skill": "Scaling",
+      "lessonIds": [
+        "aaa-18",
+        "aaa-19",
+        "aaa-20",
+        "aaa-21"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "aaa-1",
+      "dayNumber": 1,
+      "moduleId": "aaa-mod-1",
+      "title": "Why AI Changes Everything About Ads",
+      "subtitle": "The advertising revolution happening right now",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The End of Guesswork",
+          "body": "Traditional advertising relied on gut feeling and manual A/B testing. AI has shifted the paradigm to predictive performance and real-time optimisation."
+        },
+        {
+          "type": "content",
+          "headline": "The Performance Shift",
+          "body": "AI doesn't just automate tasks; it processes millions of data points to find your ideal customer faster than any human media buyer.",
+          "bullets": [
+            "Automated audience segmentation",
+            "Real-time creative iteration",
+            "Predictive budget allocation"
+          ],
+          "stat": "40%",
+          "statLabel": "Average reduction in Cost-Per-Acquisition using AI-driven bidding"
+        },
+        {
+          "type": "content",
+          "headline": "Beyond Human Capability",
+          "body": "Platforms like Meta and Google now use 'Black Box' AI algorithms. Your job has transitioned from manual bidding to feeding these algorithms the right creative data."
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Current Process",
+          "body": "Look at your last 3 ad campaigns. Identify how much time was spent on manual reporting versus strategic creative development. That 'reporting' gap is where AI adds value."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary role of a modern AI-driven media buyer?",
+          "type": "mcq",
+          "options": [
+            "Manually adjusting bids every hour",
+            "Feeding high-quality creative data to algorithms",
+            "Creating every single ad variation by hand",
+            "Avoiding Meta and Google ad platforms"
+          ],
+          "correctIndex": 1,
+          "explanation": "Modern algorithms handle bidding; your value lies in providing the best creative assets for the AI to test."
+        },
+        {
+          "question": "True or False: AI advertising tools are primarily used to replace the need for creative strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI enhances creative strategy by providing rapid iterations and data feedback, it does not replace the need for a human-led strategy."
+        },
+        {
+          "question": "Which of these is a key benefit of AI in ad performance?",
+          "type": "mcq",
+          "options": [
+            "Reduced data accuracy",
+            "Lower budget requirements",
+            "Faster audience segmentation",
+            "Elimination of the need for images"
+          ],
+          "correctIndex": 2,
+          "explanation": "AI excels at processing data quickly to segment audiences more effectively than manual methods."
+        }
+      ]
+    },
+    {
+      "id": "aaa-2",
+      "dayNumber": 2,
+      "moduleId": "aaa-mod-1",
+      "title": "The AI Ad Stack — Tools You Need",
+      "subtitle": "Your toolkit for AI-powered advertising",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Building Your AI Arsenal",
+          "body": "You don't need every tool under the sun. You need a streamlined stack that bridges the gap between customer insight and visual execution."
+        },
+        {
+          "type": "content",
+          "headline": "The Core AI Toolkit",
+          "body": "Focus your workflow around three pillars: Ideation, Design, and Distribution.",
+          "bullets": [
+            "ChatGPT: For ad copy, customer persona research, and testing frameworks.",
+            "AdCreative.ai: For generating high-conversion ad creatives at scale.",
+            "Meta/Google Ads: The distribution engines with built-in AI bidding."
+          ],
+          "stat": "14x",
+          "statLabel": "Higher conversion rates for ads generated with data-backed creative tools"
+        },
+        {
+          "type": "content",
+          "headline": "Integration is Key",
+          "body": "The magic happens when ChatGPT's copy insights are fed directly into AdCreative.ai, then uploaded to Meta's Advantage+ campaigns."
+        },
+        {
+          "type": "try-it",
+          "headline": "Tool Setup Checklist",
+          "body": "Sign up for a free trial of a creative AI tool and draft three variations of a headline using ChatGPT based on a target persona you define."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary function of AdCreative.ai in the ad stack?",
+          "type": "mcq",
+          "options": [
+            "Automating email responses",
+            "Generating high-conversion ad visual assets",
+            "Managing company accounting",
+            "Writing long-form blog posts"
+          ],
+          "correctIndex": 1,
+          "explanation": "AdCreative.ai is designed specifically to generate ad visuals that are optimised for conversion."
+        },
+        {
+          "question": "True or False: ChatGPT should be used solely for writing ad copy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "ChatGPT is also highly effective for customer persona research and brainstorming testing frameworks."
+        },
+        {
+          "question": "What defines the 'distribution' pillar in your AI ad stack?",
+          "type": "mcq",
+          "options": [
+            "Copywriting tools",
+            "Graphic design software",
+            "Platforms like Meta and Google Ads",
+            "Customer feedback forms"
+          ],
+          "correctIndex": 2,
+          "explanation": "Distribution refers to the platforms where your ads are served and the algorithms that manage the delivery."
+        }
+      ]
+    },
+    {
+      "id": "aaa-3",
+      "dayNumber": 3,
+      "moduleId": "aaa-mod-1",
+      "title": "Understanding Ad Platforms & Algorithms",
+      "subtitle": "How Meta, Google & TikTok actually work",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop fighting the algorithm",
+          "body": "Most advertisers lose money because they treat AI platforms like static billboards. To win, you must understand the 'Value-Based Auction' model.",
+          "stat": "90%",
+          "statLabel": "of ad performance is now determined by algorithmic delivery rather than manual targeting."
+        },
+        {
+          "type": "content",
+          "headline": "The Auction Mechanics",
+          "body": "Meta and TikTok use a three-way calculation to determine your ad's success:",
+          "bullets": [
+            "Bid Amount: How much you are willing to pay for the action.",
+            "Estimated Action Rates: The AI's prediction of whether the user will convert.",
+            "Ad Quality: Engagement signals (comments, shares) and landing page experience."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Delivery",
+          "body": "Modern platforms use 'Broad Targeting'. By providing high-quality creative, you allow the AI to find your buyers, reducing CPMs by up to 20% compared to manual interest-stacking."
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Current Setup",
+          "body": "Check your Ad Manager settings. If you have multiple ad sets for the same audience, you are likely competing against yourself. Consolidate your campaigns to give the AI more data per ad set."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which factor is NOT part of the primary auction calculation?",
+          "type": "mcq",
+          "options": [
+            "Bid Amount",
+            "Estimated Action Rates",
+            "Ad Quality",
+            "Ad Spend History"
+          ],
+          "correctIndex": 3,
+          "explanation": "The auction relies on Bid, Estimated Action Rates, and Ad Quality. Your historical spend does not directly influence the auction of a new ad."
+        },
+        {
+          "question": "Broad targeting often performs better than narrow interest targeting in modern AI algorithms.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Modern AI learns faster with larger audiences, allowing it to move beyond manual assumptions."
+        },
+        {
+          "question": "What is the primary risk of running multiple ad sets to the same audience?",
+          "type": "mcq",
+          "options": [
+            "Increased pixel latency",
+            "Auction overlap and internal competition",
+            "Higher tax rates",
+            "Platform banning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Auction overlap forces you to bid against your own ads, unnecessarily inflating costs."
+        }
+      ]
+    },
+    {
+      "id": "aaa-4",
+      "dayNumber": 4,
+      "moduleId": "aaa-mod-1",
+      "title": "Defining Your Ideal Customer with AI",
+      "subtitle": "Build a customer avatar in minutes, not weeks",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop guessing your demographics",
+          "body": "Traditional market research took weeks. With AI, you can synthesise customer sentiment from thousands of data points in seconds.",
+          "stat": "40%",
+          "statLabel": "of ROI is lost due to poor audience-to-creative alignment."
+        },
+        {
+          "type": "content",
+          "headline": "The AI Research Workflow",
+          "body": "Use LLMs to act as a research assistant. Feed them your competitor's review sections to extract:",
+          "bullets": [
+            "Pain points: What keeps them awake at night?",
+            "Desired Gains: What is their 'dream' outcome?",
+            "Objections: Why haven't they bought yet?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Creating Your Avatar",
+          "body": "Don't just look at age and location. Build a 'Psychographic Avatar'. Focus on their values, fears, and the language they use to describe their problems."
+        },
+        {
+          "type": "try-it",
+          "headline": "The 'Prompt' Challenge",
+          "body": "Copy 50 reviews from a competitor's product into ChatGPT. Ask: 'Summarize the top 3 emotional triggers and 3 common objections found in these reviews.' Use this for your next hook."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main advantage of using AI for customer research?",
+          "type": "mcq",
+          "options": [
+            "It predicts the weather",
+            "It replaces the need for a product",
+            "It synthesises large datasets into actionable insights quickly",
+            "It guarantees 100% conversion rates"
+          ],
+          "correctIndex": 2,
+          "explanation": "AI excels at identifying patterns and sentiment across large amounts of unstructured data like reviews."
+        },
+        {
+          "question": "Psychographic data focuses primarily on age, location, and gender.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Psychographics focus on values, beliefs, fears, and lifestyle, not basic demographics."
+        },
+        {
+          "question": "Why should you analyse competitor reviews?",
+          "type": "mcq",
+          "options": [
+            "To copy their brand name",
+            "To identify unaddressed pain points and common objections",
+            "To report them to the platform",
+            "To increase your ad budget"
+          ],
+          "correctIndex": 1,
+          "explanation": "Review analysis is the fastest way to understand what users actually care about and where competitors fall short."
+        }
+      ]
+    },
+    {
+      "id": "aaa-5",
+      "dayNumber": 5,
+      "moduleId": "aaa-mod-1",
+      "title": "Setting Up Your AI Ad Workspace",
+      "subtitle": "Configure tools for maximum efficiency",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Flying Blind",
+          "body": "Without a properly configured workspace, your AI models are guessing instead of learning. Let's build the infrastructure that turns raw data into profitable ad spend."
+        },
+        {
+          "type": "content",
+          "headline": "The Data Foundation",
+          "body": "Your pixel is your most valuable asset. It feeds the AI the conversion signals it needs to find your ideal buyers.",
+          "bullets": [
+            "Install Meta Pixel via GTM for cleaner data",
+            "Set up Conversions API to bypass iOS tracking blocks",
+            "Standardise UTM templates to track performance across channels"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Organise for AI Speed",
+          "body": "AI performs best when it can iterate on structured inputs. Keep your creative assets organised to feed your LLMs effectively.",
+          "bullets": [
+            "Create a 'Creative Asset' folder structure by theme",
+            "Maintain a spreadsheet log of past winning ad IDs",
+            "Centralise your prompt library for consistent output"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Connecting Your Stack",
+          "body": "Automate the flow of data between your ad platforms and your CRM to ensure the AI learns from actual sales, not just clicks.",
+          "stat": "30%",
+          "statLabel": "Average increase in ROAS when using server-side conversion tracking."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Setup Checklist",
+          "body": "Today, finalise your tracking setup and create a shared folder for your AI-generated creative assets. Are your UTMs consistent?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is the Conversions API (CAPI) critical in 2024?",
+          "type": "mcq",
+          "options": [
+            "It makes ads cheaper to run",
+            "It bypasses browser-based tracking restrictions",
+            "It automatically writes ad copy",
+            "It increases the click-through rate"
+          ],
+          "correctIndex": 1,
+          "explanation": "CAPI sends data directly from your server to Meta, bypassing browser-side tracking blockers like ad blockers or iOS privacy features."
+        },
+        {
+          "question": "Should you keep your winning ad creative IDs in a central log?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Yes, maintaining a log of winning assets provides the AI with historical data to iterate on successful concepts."
+        },
+        {
+          "question": "What is the primary purpose of a UTM template?",
+          "type": "mcq",
+          "options": [
+            "To make the URL look shorter",
+            "To force users to click",
+            "To standardise data tracking across all platforms",
+            "To improve SEO rankings"
+          ],
+          "correctIndex": 2,
+          "explanation": "UTM templates ensure that every source, medium, and campaign is categorised identically, allowing for accurate data analysis."
+        }
+      ]
+    },
+    {
+      "id": "aaa-6",
+      "dayNumber": 6,
+      "moduleId": "aaa-mod-2",
+      "title": "Writing High-Converting Headlines with AI",
+      "subtitle": "The formula behind scroll-stopping hooks",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 80/20 of Ad Success",
+          "body": "80% of your ad's performance is determined by the headline. If they don't stop scrolling, your offer doesn't exist. Here is how to use AI to master the hook."
+        },
+        {
+          "type": "content",
+          "headline": "Proven Frameworks",
+          "body": "Don't reinvent the wheel. Use classic psychological frameworks to guide your AI-generated hooks.",
+          "bullets": [
+            "PAS: Problem, Agitation, Solution",
+            "AIDA: Attention, Interest, Desire, Action",
+            "The 'Benefit-First' approach for high-intent audiences"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prompting for Emotion",
+          "body": "AI needs emotional context to write persuasive copy. Instead of 'Write a headline', use specific persona-led prompts.",
+          "bullets": [
+            "Define the target audience pain point",
+            "Specify the desired emotional response (e.g., urgency, curiosity)",
+            "Ask for 10 variations based on one core benefit"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Data-Backed Impact",
+          "body": "Testing is non-negotiable. Data shows that small tweaks in headline phrasing can lead to massive swings in conversion rates.",
+          "stat": "2.5x",
+          "statLabel": "Potential conversion lift from testing 5+ distinct headline variations."
+        },
+        {
+          "type": "try-it",
+          "headline": "Generate Your Hooks",
+          "body": "Use a PAS framework prompt to generate 10 headlines for your current product. Pick the top 3 and test them against your current control."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the 'A' in the PAS framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Attention",
+            "Agitation",
+            "Action",
+            "Audience"
+          ],
+          "correctIndex": 1,
+          "explanation": "PAS stands for Problem, Agitation, Solution. The agitation step is crucial for deepening the emotional connection."
+        },
+        {
+          "question": "Is it better to generate one 'perfect' headline than ten variations?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Testing multiple variations is superior because you cannot predict which hook will resonate most with the audience's current mood."
+        },
+        {
+          "question": "Which of these is a key element of an effective AI prompt for headlines?",
+          "type": "mcq",
+          "options": [
+            "Asking for 100 variations at once",
+            "Providing the target audience pain point",
+            "Ignoring the brand voice",
+            "Only using short words"
+          ],
+          "correctIndex": 1,
+          "explanation": "Providing the target audience's pain point gives the AI the necessary context to craft relevant, high-converting messaging."
+        }
+      ]
+    },
+    {
+      "id": "aaa-7",
+      "dayNumber": 7,
+      "moduleId": "aaa-mod-2",
+      "title": "AI-Generated Ad Body Copy That Sells",
+      "subtitle": "From blank page to persuasive ad in 60 seconds",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop staring at the blinking cursor",
+          "body": "Writing high-converting ad copy used to take hours of brainstorming. With AI, you can generate a week's worth of high-performing, sales-driven copy in under a minute—if you know which frameworks to prompt.",
+          "stat": "60s",
+          "statLabel": "Average generation time"
+        },
+        {
+          "type": "content",
+          "headline": "Proven copywriting frameworks",
+          "body": "AI performs best when given a structural blueprint. Use these three industry-standard frameworks to guide your prompts:",
+          "bullets": [
+            "PAS (Problem-Agitate-Solve): Perfect for identifying a pain point and positioning your product as the hero.",
+            "BAB (Before-After-Bridge): Focuses on the transformation your customer experiences.",
+            "4Ps (Picture-Promise-Prove-Push): Ideal for storytelling and building trust through social proof."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tailoring for mobile consumption",
+          "body": "Most users view your ads on mobile. Long, dense paragraphs are conversion killers. Structure your AI outputs to be thumb-friendly by following these rules:",
+          "bullets": [
+            "Keep sentences under 15 words.",
+            "Use line breaks every 2-3 lines for readability.",
+            "Use emojis as bullet points to break up visual monotony.",
+            "Front-load the benefit so it appears before the 'See More' cut-off."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Balancing emotion and logic",
+          "body": "Your copy should balance emotional triggers with logical justification. AI often defaults to 'fluff'—use these prompt modifiers to keep it grounded:",
+          "bullets": [
+            "Emotional: 'Focus on the frustration of the current process.'",
+            "Logical: 'Explain the technical time-saving benefit.'",
+            "CTA: 'Create a low-friction, high-value call to action.'",
+            "Tone: 'Write in a professional yet conversational tone, avoiding marketing jargon.'"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your turn: The 60-second challenge",
+          "body": "Open your preferred AI tool and paste this prompt: 'Write 3 variations of an ad for [Product] using the PAS framework. Keep sentences short, use one emoji per line, and end with a clear CTA.'",
+          "stat": "3",
+          "statLabel": "Variations to create"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which framework is best suited for identifying a customer's pain point and positioning your product as the solution?",
+          "type": "mcq",
+          "options": [
+            "BAB (Before-After-Bridge)",
+            "PAS (Problem-Agitate-Solve)",
+            "4Ps (Picture-Promise-Prove-Push)",
+            "AIDA (Attention-Interest-Desire-Action)"
+          ],
+          "correctIndex": 1,
+          "explanation": "PAS stands for Problem-Agitate-Solve, which is specifically designed to highlight a pain point and present your product as the solution."
+        },
+        {
+          "question": "True or False: When writing for mobile, you should pack as much information as possible into a single paragraph.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mobile users prefer short, punchy sentences and frequent line breaks to make the text easy to scan."
+        },
+        {
+          "question": "What is the primary benefit of using 'prompt modifiers' when generating ad copy with AI?",
+          "type": "mcq",
+          "options": [
+            "It makes the AI generate text faster.",
+            "It forces the AI to use complex vocabulary.",
+            "It prevents the AI from using generic 'fluff' and keeps the copy focused.",
+            "It automatically publishes the ad to social media."
+          ],
+          "correctIndex": 2,
+          "explanation": "Prompt modifiers help steer the AI away from generic marketing filler, ensuring the copy remains balanced, relevant, and persuasive."
+        }
+      ]
+    },
+    {
+      "id": "aaa-8",
+      "dayNumber": 8,
+      "moduleId": "aaa-mod-2",
+      "title": "Creating Scroll-Stopping Visual Creatives",
+      "subtitle": "AI-generated ad images that demand attention",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Is your creative invisible?",
+          "body": "In a feed crowded with millions of posts, your ad has less than 0.5 seconds to capture attention. If your visuals aren't stopping the scroll, your copy doesn't matter."
+        },
+        {
+          "type": "content",
+          "headline": "Prompting for Performance",
+          "body": "Using tools like Midjourney or DALL-E, move beyond generic images. Focus on high-contrast, relatable human subjects or 'product-in-action' shots.",
+          "bullets": [
+            "Use 'photorealistic' and 'cinematic lighting' in your prompts.",
+            "Maintain a 4:5 aspect ratio for maximum mobile screen real estate.",
+            "Keep text overlays under 20% to avoid delivery penalties."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Colour Psychology Matters",
+          "body": "AI allows you to iterate on colour palettes instantly. Use psychological triggers to influence user behaviour.",
+          "stat": "24%",
+          "statLabel": "Higher CTR for ads using high-contrast, bold accent colours."
+        },
+        {
+          "type": "content",
+          "headline": "The 'AdCreative.ai' Shortcut",
+          "body": "When you need scale, purpose-built AI tools like AdCreative.ai are superior to general image generators. They are trained specifically on high-performing ad data.",
+          "bullets": [
+            "Automate platform-specific resizing.",
+            "Generate hundreds of variations in minutes.",
+            "Predictive scoring helps select the best variant before launching."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First AI Prompt",
+          "body": "Create a Midjourney prompt for a luxury watch: '/imagine prompt: Close-up of a luxury watch on a wrist, cinematic lighting, shallow depth of field, high-end lifestyle photography, 4:5 aspect ratio --ar 4:5'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended aspect ratio for mobile ads to maximise screen real estate?",
+          "type": "mcq",
+          "options": [
+            "1:1",
+            "16:9",
+            "4:5",
+            "9:16"
+          ],
+          "correctIndex": 2,
+          "explanation": "4:5 is the gold standard for mobile feeds, offering a balance between visibility and screen coverage."
+        },
+        {
+          "question": "True or False: Using high-contrast colours in ad creatives is proven to decrease click-through rates.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "High-contrast colours help visuals stand out against the background of social media platforms, generally increasing CTR."
+        },
+        {
+          "question": "Why use purpose-built ad tools like AdCreative.ai over generic AI generators?",
+          "type": "mcq",
+          "options": [
+            "They are free",
+            "They are trained on ad performance data",
+            "They only generate text",
+            "They require no human input"
+          ],
+          "correctIndex": 1,
+          "explanation": "Purpose-built tools leverage historical ad performance data to help predict which creative elements are more likely to convert."
+        }
+      ]
+    },
+    {
+      "id": "aaa-9",
+      "dayNumber": 9,
+      "moduleId": "aaa-mod-2",
+      "title": "AI Video Ads — From Script to Render",
+      "subtitle": "Create professional video ads without a camera",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Lights, Camera, AI Action",
+          "body": "Video is the king of engagement, but production costs usually kill ROI. Today, you'll learn how to produce high-converting video ads using only your laptop."
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Synthetic Media",
+          "body": "Tools like HeyGen and Synthesia allow you to create realistic avatars that speak your script. Perfect for explainers, testimonials, or brand announcements.",
+          "bullets": [
+            "Scale your video output without hiring film crews.",
+            "Localise your ads into multiple languages with one click.",
+            "Use Runway for B-roll generation to fill visual gaps."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Hook-Story-CTA Structure",
+          "body": "Even with AI, the narrative structure must be tight. If you don't hook them in the first 3 seconds, they are gone.",
+          "stat": "80%",
+          "statLabel": "Of viewers decide to keep watching based on the first 3 seconds."
+        },
+        {
+          "type": "content",
+          "headline": "Crafting the Perfect Script",
+          "body": "Use ChatGPT to write your script, then feed it into your video tool. Ensure your script follows a 'problem-agitation-solution' framework for maximum conversion.",
+          "bullets": [
+            "Keep intros punchy and visual.",
+            "Use clear, simple language for AI avatars.",
+            "Always include a strong, singular Call-To-Action."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your 15-Second Script",
+          "body": "Write a 15-second script using this structure: Hook (Pain point) -> Story (How you solve it) -> CTA (Visit link). Keep it under 60 words."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of using AI avatar tools like HeyGen for ads?",
+          "type": "mcq",
+          "options": [
+            "They are better actors than humans",
+            "They eliminate production time and costs",
+            "They cannot be used for ads",
+            "They require a green screen"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI avatars drastically reduce the time, cost, and logistical complexity of traditional video production."
+        },
+        {
+          "question": "True or False: According to the Hook-Story-CTA framework, the most important part of the video is the CTA.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "While the CTA is important, the Hook is the most critical part, as it determines whether the user watches long enough to see the CTA."
+        },
+        {
+          "question": "What is the ideal duration for a high-impact social media video ad?",
+          "type": "mcq",
+          "options": [
+            "5 minutes",
+            "15-30 seconds",
+            "1 hour",
+            "2 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Short-form video (15-30s) is most effective for social media platforms because it aligns with user attention spans."
+        }
+      ]
+    },
+    {
+      "id": "aaa-10",
+      "dayNumber": 10,
+      "moduleId": "aaa-mod-2",
+      "title": "A/B Testing Copy Variations at Scale",
+      "subtitle": "Let AI run hundreds of tests while you sleep",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop guessing. Start testing.",
+          "body": "The biggest mistake in advertising is betting on one 'perfect' ad. Real winners are found through systematic, data-driven testing."
+        },
+        {
+          "type": "content",
+          "headline": "Dynamic Creative Optimisation (DCO)",
+          "body": "Meta's Advantage+ Creative uses AI to serve different variations of your ad (images, headlines, descriptions) to the right user automatically.",
+          "bullets": [
+            "Upload multiple creative assets at once.",
+            "Let the algorithm find the best combination.",
+            "Save hours of manual A/B test setup."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Scientific Approach",
+          "body": "Don't test everything at once. Isolate one variable at a time (e.g., test two headlines with the same image) to understand what truly drives performance.",
+          "stat": "15%",
+          "statLabel": "Average lift in conversion rate when using structured multivariate testing."
+        },
+        {
+          "type": "content",
+          "headline": "Iterate, Don't Abandon",
+          "body": "When a creative wins, don't stop. Create variations on the winner. If a 'Fear of Missing Out' angle works, test three different ways to phrase that same angle.",
+          "bullets": [
+            "Keep winners, kill losers.",
+            "Reallocate budget to the top 20% of high-performing ads.",
+            "Refresh creative every 14 days to prevent ad fatigue."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Setup a 3-Way Headline Test",
+          "body": "Write three distinct headline variations for your current product: 1. Benefit-led, 2. Fear-led, 3. Social proof-led. Use these in your next Meta campaign."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary function of Dynamic Creative Optimisation (DCO)?",
+          "type": "mcq",
+          "options": [
+            "Manually setting bids",
+            "Automatically testing combinations of assets",
+            "Writing the ads for you",
+            "Deleting bad ads"
+          ],
+          "correctIndex": 1,
+          "explanation": "DCO uses machine learning to assemble and test different combinations of your ad assets to find the best-performing version."
+        },
+        {
+          "question": "True or False: You should test every single element of your ad (image, headline, body, CTA) at the same time.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Testing too many variables at once makes it impossible to know which change actually improved performance."
+        },
+        {
+          "question": "Why is it important to refresh your creative every 14 days?",
+          "type": "mcq",
+          "options": [
+            "To confuse the algorithm",
+            "To prevent ad fatigue",
+            "To increase the cost per click",
+            "It is not important"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ad fatigue occurs when an audience has seen an ad too many times, leading to decreased performance."
+        }
+      ]
+    },
+    {
+      "id": "aaa-11",
+      "dayNumber": 11,
+      "moduleId": "aaa-mod-2",
+      "title": "The AI Ad Swipe File Method",
+      "subtitle": "Build a library of winning ads to inspire AI",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop starting from a blank page",
+          "body": "The secret to high-performing AI ads isn't just the prompt; it's the data you feed it. By building a systematic 'Swipe File', you create a permanent repository of market-proven patterns that AI can mimic and iterate upon.",
+          "stat": "3x",
+          "statLabel": "Faster ad production with a structured swipe file"
+        },
+        {
+          "type": "content",
+          "headline": "Mining the Meta Ad Library",
+          "body": "The Meta Ad Library is your primary source of intelligence. Don't just save images; categorise them by the specific hook, offer structure, and creative format used by top-performing competitors in your niche.",
+          "bullets": [
+            "Search for competitor brand names",
+            "Filter by active ads to see current winners",
+            "Identify recurring visual motifs and copy patterns"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deconstructing with AI",
+          "body": "Upload screenshots of winning ads to an LLM (like GPT-4o or Claude 3.5). Ask the AI to break down the 'anatomy' of the ad—specifically the hook, the pain-point address, and the call-to-action.",
+          "bullets": [
+            "Extract the underlying 'psychological trigger'",
+            "Identify the core value proposition",
+            "Map the visual-to-copy relationship"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building your AI 'Brain'",
+          "body": "Organise your swipe file in a Notion database or structured folder. When you write new ads, feed the AI a 'style guide' based on these successful patterns to ensure your output remains on-brand and data-informed.",
+          "bullets": [
+            "Tag ads by 'Angle Type' (e.g., Fear-based, Social Proof)",
+            "Maintain a 'Disqualified' list of failed ad patterns",
+            "Update your library monthly to stay ahead"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your First Swipe Analysis",
+          "body": "Go to the Meta Ad Library, find 3 ads from a direct competitor, and ask an AI to identify the 'Hook Type' used in each. Save these as your initial 'Winning Patterns' document."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of feeding a swipe file to an AI?",
+          "type": "mcq",
+          "options": [
+            "To replace the human copywriter",
+            "To provide data-backed patterns for iteration",
+            "To automatically post ads to Meta",
+            "To lower the cost-per-click directly"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI works best when it has concrete examples of what has already worked, allowing it to iterate on proven patterns rather than guessing."
+        },
+        {
+          "question": "Should you only save successful ads in your swipe file?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Saving 'failed' ads or ads with low engagement helps the AI learn what to avoid, which is just as valuable as knowing what to emulate."
+        },
+        {
+          "question": "When deconstructing an ad for AI, what should you focus on?",
+          "type": "mcq",
+          "options": [
+            "The file size of the image",
+            "The font family used",
+            "The psychological trigger and core value proposition",
+            "The exact date of publication"
+          ],
+          "correctIndex": 2,
+          "explanation": "The underlying hook, value proposition, and psychological triggers are the 'DNA' of the ad that the AI needs to learn."
+        }
+      ]
+    },
+    {
+      "id": "aaa-12",
+      "dayNumber": 12,
+      "moduleId": "aaa-mod-3",
+      "title": "AI Audience Research & Targeting",
+      "subtitle": "Find your buyers before they find you",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop guessing your audience",
+          "body": "Modern Meta targeting is less about manual interest-stacking and more about leveraging AI's ability to identify latent intent. Your job is to feed the algorithm the right signals.",
+          "stat": "40%",
+          "statLabel": "Higher conversion rates with AI-driven audience expansion"
+        },
+        {
+          "type": "content",
+          "headline": "Leveraging First-Party Data",
+          "body": "The most powerful audience is the one you already own. Use your CRM data to create Custom Audiences. AI uses these 'seed' lists to build Lookalike Audiences that mirror your best customers' traits.",
+          "bullets": [
+            "Upload high-LTV customer email lists",
+            "Create 'Engaged User' custom audiences",
+            "Exclude past purchasers from acquisition campaigns"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Interest Expansion",
+          "body": "Meta's Advantage+ Audience uses AI to dynamically expand beyond your selected interests if it finds a better chance of conversion. Don't restrict the machine; give it guardrails instead.",
+          "bullets": [
+            "Use Broad targeting for high-budget campaigns",
+            "Use Interest Stacking for niche testing",
+            "Review 'Audience Breakdown' reports regularly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Lookalike Best Practices",
+          "body": "Not all Lookalikes are equal. Focus on creating Lookalikes from high-value actions (e.g., 'Purchased' or 'Added to Cart') rather than low-intent actions like 'Page Views'.",
+          "bullets": [
+            "1% LALs for high precision",
+            "5% LALs for larger scale",
+            "Refresh LALs every 30 days"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit Your Audiences",
+          "body": "Check your Meta Ad Manager. Identify your top 3 performing audiences and create a 1% Lookalike audience based on your 'Purchased' list. Compare the CPA of the LAL against your manual interest audiences."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective 'seed' for a Lookalike Audience?",
+          "type": "mcq",
+          "options": [
+            "Page Likes",
+            "Video Views",
+            "High-Value Purchase Data",
+            "Clicks on ads"
+          ],
+          "correctIndex": 2,
+          "explanation": "High-value purchase data is the most accurate indicator of a 'perfect' customer, leading to the most effective Lookalike models."
+        },
+        {
+          "question": "Should you always use narrow interest targeting to save money?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Narrow targeting often limits the AI's ability to find conversions, leading to higher CPMs and fewer sales."
+        },
+        {
+          "question": "What does 'Advantage+ Audience' primarily do?",
+          "type": "mcq",
+          "options": [
+            "It deletes your ads",
+            "It uses AI to expand targeting for better conversion",
+            "It restricts your audience to 100 people",
+            "It only targets your competitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "It leverages Meta's AI to dynamically find people who are most likely to convert, even outside your specific interest settings."
+        }
+      ]
+    },
+    {
+      "id": "aaa-13",
+      "dayNumber": 13,
+      "moduleId": "aaa-mod-3",
+      "title": "Building Campaign Structures That Scale",
+      "subtitle": "The architecture behind 6-figure ad accounts",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Chaos kills your ROAS",
+          "body": "Scattered, messy account structures confuse the Meta algorithm. Scaling to 6 figures requires a clean, consolidated architecture that allows AI to optimise budgets efficiently.",
+          "stat": "2x",
+          "statLabel": "Increase in performance by consolidating ad sets"
+        },
+        {
+          "type": "content",
+          "headline": "CBO vs. ABO",
+          "body": "Campaign Budget Optimisation (CBO) lets AI move spend to the best-performing ad set. Use CBO for scaling stable winners, and use Ad Set Budget Optimisation (ABO) only during the testing phase.",
+          "bullets": [
+            "CBO: Best for scaling and consistent performance",
+            "ABO: Essential for granular testing",
+            "Avoid mixing structures in one account"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Consolidation is King",
+          "body": "Avoid 'segmentation paralysis'. Having too many campaigns with small budgets prevents the algorithm from exiting the 'Learning Phase'. Consolidate ad sets to ensure each has enough data to optimise.",
+          "bullets": [
+            "Minimum 50 conversions per week per ad set",
+            "Combine similar audiences",
+            "Use dynamic creative to reduce ad count"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Naming Conventions",
+          "body": "A clean account is a scalable account. Adopt a naming convention that allows you to identify campaign purpose, audience, and creative type at a glance.",
+          "bullets": [
+            "Format: [Type]_[Objective]_[Audience]_[Creative]",
+            "Example: SCAL_CONV_LAL1%_UGC_V1",
+            "Keep it consistent across the team"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Clean Up Your Account",
+          "body": "Identify any ad sets with less than 20 conversions in the last 30 days. Merge these into broader ad sets to improve data density and help the algorithm learn faster."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary benefit of CBO (Campaign Budget Optimisation)?",
+          "type": "mcq",
+          "options": [
+            "It forces spend on your worst ads",
+            "It lets AI distribute budget to top-performers",
+            "It lowers the cost of the ad platform fee",
+            "It removes the need for creative"
+          ],
+          "correctIndex": 1,
+          "explanation": "CBO allows the AI to automatically shift budget to the ad sets that are delivering the best results at that moment."
+        },
+        {
+          "question": "Is it better to have many small ad sets or a few consolidated ones?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Too many small ad sets prevent the algorithm from gathering enough data, keeping the campaign stuck in the 'Learning Phase'."
+        },
+        {
+          "question": "When should you use ABO (Ad Set Budget Optimisation)?",
+          "type": "mcq",
+          "options": [
+            "When scaling a winner",
+            "When you have 100k budget",
+            "During initial testing phases",
+            "When you want to stop the AI from working"
+          ],
+          "correctIndex": 2,
+          "explanation": "ABO provides manual control, which is necessary during testing to ensure every creative/audience gets an equal chance to prove itself."
+        }
+      ]
+    },
+    {
+      "id": "aaa-14",
+      "dayNumber": 14,
+      "moduleId": "aaa-mod-3",
+      "title": "Budget Allocation with AI Predictions",
+      "subtitle": "Spend smarter, not more",
+      "duration": "4 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't burn budget on bad days",
+          "body": "AI isn't just for writing ads; it's for managing your wallet. By using predictive forecasting and automated rules, you can protect your margins and scale your winners automatically.",
+          "stat": "25%",
+          "statLabel": "Reduction in wasted spend using automated rules"
+        },
+        {
+          "type": "content",
+          "headline": "Predictive Forecasting",
+          "body": "Use historical data to forecast ROAS. AI-driven platforms can predict when your ad performance will hit 'diminishing returns', helping you decide exactly when to pull back or push harder.",
+          "bullets": [
+            "Track CPA trends over 7-day windows",
+            "Identify the 'fatigue point' of winning ads",
+            "Scale based on ROAS, not just spend"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Setting Scaling Triggers",
+          "body": "Automation rules prevent human error. Set rules that trigger actions based on performance thresholds to ensure you never overspend on a losing campaign while you sleep.",
+          "bullets": [
+            "Rule: Increase budget by 20% if CPA < [Target]",
+            "Rule: Turn off ad set if spend > [Limit] and ROAS < [Target]",
+            "Rule: Notify Slack if performance drops suddenly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Daily vs. Lifetime Budgets",
+          "body": "Daily budgets are best for ongoing 'always-on' campaigns, while lifetime budgets are superior for time-bound events. Use the latter to allow the algorithm to spend more on high-traffic days.",
+          "bullets": [
+            "Daily: Stable, predictable traffic",
+            "Lifetime: Flexibility for peak periods",
+            "Use lifetime for flash sales"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Your First Auto-Rule",
+          "body": "Go to Meta's 'Automated Rules' section. Create a rule to 'Turn off ad set' if the CPA exceeds your target by 30% over a 3-day window. Never lose money on a bad ad again."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary reason to use automated rules?",
+          "type": "mcq",
+          "options": [
+            "To replace the need for an account manager",
+            "To prevent human error and protect margins",
+            "To bypass Meta's ad review process",
+            "To increase CPMs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Automated rules ensure that your account reacts to performance changes 24/7 without requiring manual intervention."
+        },
+        {
+          "question": "Should you scale your budget based on total spend?",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Always scale based on performance metrics like ROAS or CPA, not just because you have budget available."
+        },
+        {
+          "question": "Why use a lifetime budget instead of a daily budget?",
+          "type": "mcq",
+          "options": [
+            "It is always cheaper",
+            "It forces the algorithm to spend exactly the same amount every hour",
+            "It allows the algorithm to spend more on high-converting days",
+            "It is required for all campaigns"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lifetime budgets give the AI the flexibility to spend more when it identifies higher-intent traffic, which is ideal for events."
+        }
+      ]
+    },
+    {
+      "id": "aaa-15",
+      "dayNumber": 15,
+      "moduleId": "aaa-mod-3",
+      "title": "Real-Time Optimisation with AI Tools",
+      "subtitle": "Monitor, react, and improve campaigns 24/7",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop babysitting your ad sets",
+          "body": "Manual monitoring leads to emotional decision-making. AI-driven optimisation ensures your budget is always allocated to the highest-performing assets without you lifting a finger."
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Anomaly Detection",
+          "body": "Modern AI tools scan your performance data for deviations from the norm. If your CPA spikes or CTR drops suddenly, these systems trigger instant alerts.",
+          "bullets": [
+            "Automated threshold monitoring",
+            "Detection of 'ad fatigue' patterns",
+            "Real-time spend pacing alerts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Know When to Intervene",
+          "body": "The golden rule of AI-driven ads is 'don't interrupt the machine'. Only step in if performance deviates by more than 20% from the historical benchmark for over 48 hours.",
+          "stat": "20%",
+          "statLabel": "Threshold for Intervention"
+        },
+        {
+          "type": "content",
+          "headline": "Setting Up Automated Rules",
+          "body": "Use platform-native automated rules to cap costs or pause underperforming ads. This creates a safety net that protects your ROAS while you sleep.",
+          "bullets": [
+            "Pause ads with high CPA",
+            "Increase budget on high CTR",
+            "Schedule resets for low-performing times"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set your first automated rule",
+          "body": "Log into your ad platform and create a rule to email you if your CPA rises 25% above your target average over a 3-day window."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended approach when using AI ad optimisation?",
+          "type": "mcq",
+          "options": [
+            "Intervene every hour",
+            "Let the AI learn; avoid frequent changes",
+            "Switch off all automated rules",
+            "Change creatives daily"
+          ],
+          "correctIndex": 1,
+          "explanation": "Frequent manual changes reset the AI's learning phase, hindering performance."
+        },
+        {
+          "question": "AI anomaly detection helps identify sudden drops in performance.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI tools proactively scan data to alert you to significant performance shifts."
+        },
+        {
+          "question": "What is the ideal threshold for manual intervention based on historical benchmarks?",
+          "type": "mcq",
+          "options": [
+            "1-2%",
+            "5-10%",
+            "20%+",
+            "50%+"
+          ],
+          "correctIndex": 2,
+          "explanation": "Minor fluctuations are normal; 20% is the standard indicator that a strategy adjustment is required."
+        }
+      ]
+    },
+    {
+      "id": "aaa-16",
+      "dayNumber": 16,
+      "moduleId": "aaa-mod-3",
+      "title": "Retargeting & Lookalike Audiences with AI",
+      "subtitle": "Turn window shoppers into paying customers",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Conversion happens in the second visit",
+          "body": "98% of users do not convert on their first visit. AI-powered retargeting ensures you stay top-of-mind exactly when they are ready to buy."
+        },
+        {
+          "type": "content",
+          "headline": "The Retargeting Funnel",
+          "body": "Segment your audience based on depth of interaction. AI can tailor the creative message based on whether they viewed a product or abandoned a cart.",
+          "bullets": [
+            "Top-level: Video viewers (50% watch time)",
+            "Mid-level: Product page visitors",
+            "Bottom-level: Abandoned cart users"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Lookalike Audiences (LAL)",
+          "body": "AI analyses your 'seed' audience (existing customers) to find users across the web who share similar behaviours, increasing reach without wasting budget on cold traffic.",
+          "stat": "1%",
+          "statLabel": "Recommended LAL Match Percentage"
+        },
+        {
+          "type": "content",
+          "headline": "Dynamic Product Ads (DPA)",
+          "body": "DPAs use AI to automatically show the specific products a user viewed on your site. It is the most effective way to close sales with high intent.",
+          "bullets": [
+            "Auto-syncs with your product catalogue",
+            "Customised ad copy per product",
+            "Dynamic pricing updates"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a custom audience",
+          "body": "Create an audience of 'Website Visitors in the last 30 days' and build a retargeting campaign offering a limited-time discount to this specific group."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a 'Lookalike Audience'?",
+          "type": "mcq",
+          "options": [
+            "Users who visited your competitor",
+            "Users with similar traits to your existing customers",
+            "Your current email list",
+            "Random users"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI identifies patterns in your customer data to find new, similar users."
+        },
+        {
+          "question": "Dynamic Product Ads (DPAs) require manual creative updates for every single item.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "DPAs pull data directly from your catalogue automatically."
+        },
+        {
+          "question": "Which audience segment is most likely to convert?",
+          "type": "mcq",
+          "options": [
+            "Cold traffic",
+            "Video viewers",
+            "Abandoned cart users",
+            "Broad interest targeting"
+          ],
+          "correctIndex": 2,
+          "explanation": "Abandoned cart users have already shown high purchase intent."
+        }
+      ]
+    },
+    {
+      "id": "aaa-17",
+      "dayNumber": 17,
+      "moduleId": "aaa-mod-3",
+      "title": "Reading Data Like a Pro — AI Analytics",
+      "subtitle": "Turn numbers into profitable decisions",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Data is meaningless without context",
+          "body": "Are you looking at noise or actual trends? AI analytics platforms help strip away the vanity metrics so you can focus on the KPIs that drive profit."
+        },
+        {
+          "type": "content",
+          "headline": "The KPI Hierarchy",
+          "body": "Focus on the metrics that impact your bottom line. While CTR is a health signal, ROAS and CPA are the benchmarks for business viability.",
+          "bullets": [
+            "CTR: Creative relevance",
+            "CPC: Traffic affordability",
+            "ROAS: Profitability measurement"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Attribution Models",
+          "body": "AI-powered attribution helps you understand which touchpoints lead to a sale. Don't just look at 'Last Click'; consider the full customer journey.",
+          "stat": "7",
+          "statLabel": "Average touchpoints before conversion"
+        },
+        {
+          "type": "content",
+          "headline": "Distinguishing Noise from Trends",
+          "body": "A single day of low sales is noise. Three days of declining ROAS is a trend. Use AI reporting tools to smooth out daily volatility for better long-term insights.",
+          "bullets": [
+            "Use 7-day moving averages",
+            "Compare year-over-year data",
+            "Filter out bot traffic anomalies"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create a weekly dashboard",
+          "body": "Set up a custom report in your ad platform that only shows spend, CPA, and ROAS. Review this every Monday to compare against previous weeks."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary difference between a 'trend' and 'noise'?",
+          "type": "mcq",
+          "options": [
+            "Trends are only positive",
+            "Noise is short-term; trends represent sustained patterns",
+            "Trends are always manual",
+            "Noise is the only thing that matters"
+          ],
+          "correctIndex": 1,
+          "explanation": "Distinguishing sustained patterns from daily fluctuations is key to success."
+        },
+        {
+          "question": "ROAS stands for Return on Ad Spend.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "ROAS is the essential metric for measuring profitability."
+        },
+        {
+          "question": "Which metric is the best indicator of creative relevance?",
+          "type": "mcq",
+          "options": [
+            "CPM",
+            "CTR",
+            "Total Spend",
+            "Account Age"
+          ],
+          "correctIndex": 1,
+          "explanation": "Click-Through Rate (CTR) tells you how engaging your audience finds your ad."
+        }
+      ]
+    },
+    {
+      "id": "aaa-18",
+      "dayNumber": 18,
+      "moduleId": "aaa-mod-4",
+      "title": "Scaling Winners — From £10 to £1,000/Day",
+      "subtitle": "The systematic approach to profitable scaling",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop killing your winners",
+          "body": "Most advertisers sabotage their own success by aggressive budget changes that trigger the learning phase. Scaling isn't about guessing; it's about controlled momentum."
+        },
+        {
+          "type": "content",
+          "headline": "Vertical vs. Horizontal Scaling",
+          "body": "Vertical scaling involves increasing the budget on existing high-performing ad sets. Horizontal scaling involves duplicating winning ads into new campaign structures to capture more market share.",
+          "bullets": [
+            "Vertical: Best for maintaining ROAS on proven assets.",
+            "Horizontal: Best for reaching new segments without resetting optimisation."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 20% Golden Rule",
+          "body": "Avoid the 'panic-scale' trap. Increasing budgets by more than 20% every 48 hours is the fastest way to force your ads back into the learning phase and destroy performance.",
+          "stat": "20%",
+          "statLabel": "Max budget increase"
+        },
+        {
+          "type": "content",
+          "headline": "Managing Creative Fatigue",
+          "body": "As you scale, your frequency will increase. When ROAS dips and your frequency climbs above 3.0, it's time to introduce new creative variations rather than just throwing more money at the same ad.",
+          "bullets": [
+            "Refresh creative every 14-21 days.",
+            "Use AI to generate 'remix' versions of top-performing hooks."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit your current campaigns",
+          "body": "Identify your top-performing ad set. Check its current frequency and budget. If it's profitable and under a 2.0 frequency, increase the budget by 15-20% today."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended maximum budget increase to avoid triggering the learning phase?",
+          "type": "mcq",
+          "options": [
+            "5%",
+            "20%",
+            "50%",
+            "100%"
+          ],
+          "correctIndex": 1,
+          "explanation": "Increasing budgets by more than 20% every 48 hours often resets the platform's machine learning algorithm."
+        },
+        {
+          "question": "Horizontal scaling involves increasing the budget on a single, existing ad set.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Horizontal scaling involves duplicating successful ads into new ad sets, not increasing the budget on the original one."
+        },
+        {
+          "question": "What is a primary indicator that you need to refresh your creative?",
+          "type": "mcq",
+          "options": [
+            "Frequency above 3.0",
+            "Increase in CPC",
+            "High CTR",
+            "Decrease in total spend"
+          ],
+          "correctIndex": 0,
+          "explanation": "A high frequency indicates your audience has seen the ad too many times, leading to creative fatigue."
+        }
+      ]
+    },
+    {
+      "id": "aaa-19",
+      "dayNumber": 19,
+      "moduleId": "aaa-mod-4",
+      "title": "Cross-Platform AI Ad Strategies",
+      "subtitle": "Dominate Meta, Google, TikTok & beyond",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Don't put all your eggs in one platform",
+          "body": "Relying on a single traffic source is a business risk. The best brands leverage the specific strengths of each platform to build a multi-channel ecosystem."
+        },
+        {
+          "type": "content",
+          "headline": "Platform-Specific Strengths",
+          "body": "Each platform requires a different psychological approach. Treating them as identical will result in poor performance.",
+          "bullets": [
+            "Meta: Best for interest/lookalike targeting and social proof.",
+            "Google: Captures high-intent search traffic.",
+            "TikTok: Best for discovery and raw, authentic UGC."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Repurposing with AI",
+          "body": "Stop creating 10 different assets from scratch. Use AI tools to take one long-form video and repurpose it into horizontal ads for YouTube, 9:16 reels for Meta/TikTok, and static banners for display.",
+          "stat": "70%",
+          "statLabel": "Time saved with AI repurposing"
+        },
+        {
+          "type": "content",
+          "headline": "Cross-Platform Attribution",
+          "body": "Attribution is fragmented. Use UTM parameters and a reliable third-party analytics tool to track the customer journey across touchpoints, rather than relying solely on platform-reported metrics.",
+          "bullets": [
+            "Use consistent naming conventions.",
+            "Monitor 'Assisted Conversions' in Google Analytics."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The 70/20/10 Budget Split",
+          "body": "Allocate 70% of your budget to your primary channel, 20% to a growth channel, and 10% to experimental platforms. Test this framework this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which platform is best suited for capturing high-intent search traffic?",
+          "type": "mcq",
+          "options": [
+            "Meta",
+            "TikTok",
+            "Google",
+            "Pinterest"
+          ],
+          "correctIndex": 2,
+          "explanation": "Google Ads are designed to capture users actively searching for specific keywords or solutions."
+        },
+        {
+          "question": "You should create unique assets for every platform from scratch.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You should repurpose core assets into platform-specific formats using AI to save time and maintain brand consistency."
+        },
+        {
+          "question": "What is the primary risk of relying on a single traffic source?",
+          "type": "mcq",
+          "options": [
+            "Higher CPCs",
+            "Platform dependency risk",
+            "Better attribution",
+            "Easier management"
+          ],
+          "correctIndex": 1,
+          "explanation": "Platform dependency puts your revenue at risk if your account is banned or the algorithm shifts."
+        }
+      ]
+    },
+    {
+      "id": "aaa-20",
+      "dayNumber": 20,
+      "moduleId": "aaa-mod-4",
+      "title": "AI for Landing Page Optimisation",
+      "subtitle": "Your ad is only as good as your landing page",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 'Click-to-Conversion' Gap",
+          "body": "A high CTR means your ad works, but a low conversion rate means your landing page is failing. If the promise in the ad doesn't match the reality of the page, the user leaves."
+        },
+        {
+          "type": "content",
+          "headline": "The Message-Match Principle",
+          "body": "The headline of your landing page must mirror the hook of your ad. If your ad talks about '50% off', the first thing the user sees on the page must be '50% off'.",
+          "bullets": [
+            "Maintain consistent colour palettes.",
+            "Ensure tone of voice aligns perfectly."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI Heatmap Analysis",
+          "body": "Use AI-powered heatmap tools like Microsoft Clarity or Hotjar to see exactly where users drop off. Look for 'rage clicks' and missed CTA opportunities.",
+          "stat": "25%",
+          "statLabel": "Avg. conversion lift via testing"
+        },
+        {
+          "type": "content",
+          "headline": "Above-the-Fold Optimisation",
+          "body": "Users decide in 3 seconds if they will stay. Use AI copywriters to refine your hero section: focus on the benefit, include a clear CTA, and use high-intent imagery.",
+          "bullets": [
+            "Keep forms short.",
+            "Use social proof near the primary CTA."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a 3-second test",
+          "body": "Show your landing page to a colleague for 3 seconds. Ask them: 'What is this for?' and 'What should I do next?'. If they can't answer, your hero section needs AI-driven refinement."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 'Message-Match' principle?",
+          "type": "mcq",
+          "options": [
+            "Matching ad and page imagery",
+            "Aligning ad hooks with landing page headlines",
+            "Matching ad spend to page traffic",
+            "Matching pixel tracking tags"
+          ],
+          "correctIndex": 1,
+          "explanation": "Message-match ensures the landing page delivers on the specific promise made in the ad."
+        },
+        {
+          "question": "Heatmap tools help you identify user drop-off points.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Heatmaps provide visual data on how users interact with your page, highlighting where they click and where they abandon."
+        },
+        {
+          "question": "How long do you typically have to capture a user's attention above the fold?",
+          "type": "mcq",
+          "options": [
+            "10 seconds",
+            "3 seconds",
+            "30 seconds",
+            "1 minute"
+          ],
+          "correctIndex": 1,
+          "explanation": "Users make a decision to stay or leave within roughly 3 seconds of page load."
+        }
+      ]
+    },
+    {
+      "id": "aaa-21",
+      "dayNumber": 21,
+      "moduleId": "aaa-mod-4",
+      "title": "Your 90-Day AI Ads Growth Plan",
+      "subtitle": "A roadmap to sustained, profitable advertising",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From 'Testing' to 'Systematised Scaling'",
+          "body": "Growth isn't a one-off event. It's the result of a disciplined 90-day cycle of testing, refining, and scaling. Let's map out your journey."
+        },
+        {
+          "type": "content",
+          "headline": "The 30-60-90 Day Roadmap",
+          "body": "Break your scaling journey into three distinct phases to ensure you don't burn out or blow your budget.",
+          "bullets": [
+            "0-30 Days: Identifying winning creatives and audiences.",
+            "31-60 Days: Optimising landing pages and increasing budget.",
+            "61-90 Days: Automating workflows and diversifying platforms."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Testing Calendar",
+          "body": "Never stop testing. Dedicate 20% of your weekly budget to 'Innovation' campaigns. If a test wins, move it to your 'Scaling' campaign.",
+          "stat": "20%",
+          "statLabel": "Innovation budget allocation"
+        },
+        {
+          "type": "content",
+          "headline": "AI-Driven SOPs",
+          "body": "Document every process using AI tools like Scribe or Loom. This allows you to scale your team easily by outsourcing repetitive tasks like creative resizing or basic reporting.",
+          "bullets": [
+            "Automate daily performance reports.",
+            "Use AI to draft creative briefs."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft your 90-day plan",
+          "body": "Open a document and write down one goal for each 30-day block. Focus on one channel for the first 30 days before expanding."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of your budget should be dedicated to innovation/testing?",
+          "type": "mcq",
+          "options": [
+            "5%",
+            "10%",
+            "20%",
+            "50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "A 20% allocation to innovation ensures you are always finding new winners without risking your primary ROI."
+        },
+        {
+          "question": "Documentation is only necessary when you have a large team.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Documentation is essential early on to build SOPs that allow for future scaling and delegation."
+        },
+        {
+          "question": "What is the focus of the first 30 days in the 90-day roadmap?",
+          "type": "mcq",
+          "options": [
+            "Scaling budgets",
+            "Diversifying platforms",
+            "Identifying winning creatives",
+            "Hiring staff"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first 30 days are about finding what works before you attempt to scale."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "id": "your-metabolic-health",
+  "title": "Your Metabolic Health",
+  "subtitle": "Understand how your body processes energy — from blood sugar and insulin to cholesterol and visceral fat — and learn what you can realistically do to protect your long-term health.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "mh-mod-1",
+      "title": "The Metabolic Basics",
+      "subtitle": "Understand what metabolic health actually means, how blood sugar and insulin work, and why energy balance is more nuanced than calories in vs calories out.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding the fundamentals of metabolic health and how your body processes energy",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "mh-mod-2",
+      "title": "The Bigger Picture",
+      "subtitle": "Go deeper into the connected systems that drive metabolic health — from liver function and inflammation to how sleep, exercise and stress shape your metabolism.",
+      "days": "Lessons 8–14",
+      "skill": "Connecting the dots between lifestyle factors and metabolic outcomes",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "mh-mod-3",
+      "title": "Taking Control",
+      "subtitle": "Build a practical, personalised strategy for improving your metabolic health — from what to eat and when, to movement snacks, fasting, and long-term habit change.",
+      "days": "Lessons 15–21",
+      "skill": "Creating a sustainable personal metabolic health strategy",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "mh-lesson-1",
+      "dayNumber": 1,
+      "title": "What Is Metabolic Health?",
+      "subtitle": "Why this matters more than you think — and what it actually means in plain English",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-1-c1",
+          "front": "Welcome to Your Metabolic Health",
+          "back": "Metabolic health describes how well your body converts food into energy and manages that energy throughout the day. When your metabolism is working well, your blood sugar stays stable, your organs function efficiently, and you have consistent energy. When it's not, you get energy crashes, brain fog, and long-term health risks — even if you look perfectly healthy on the outside."
+        },
+        {
+          "id": "mh-1-c2",
+          "front": "The Five Markers That Matter",
+          "back": "Doctors assess metabolic health using five key markers: blood sugar levels, blood pressure, triglycerides (a type of fat in your blood), HDL cholesterol (the protective kind), and waist circumference. If all five are in a healthy range without medication, you're considered metabolically healthy. Surprisingly, research suggests only about 1 in 8 adults meet all five criteria — regardless of their weight."
+        },
+        {
+          "id": "mh-1-c3",
+          "front": "Why Weight Alone Tells You Almost Nothing",
+          "back": "You can be slim and metabolically unhealthy, or larger and metabolically healthy. Weight is a poor predictor of what's happening inside your body. Two people at the same weight can have completely different blood sugar patterns, cholesterol profiles, and organ health. This course focuses on the things that actually matter — not the number on a scale."
+        },
+        {
+          "id": "mh-1-c4",
+          "front": "The Slow Drift Nobody Notices",
+          "back": "Metabolic problems don't appear overnight. They develop slowly over years — blood sugar creeps up, blood pressure edges higher, inflammation builds quietly. Most people feel fine until something breaks. The good news: small, consistent changes to how you eat, move, and sleep can reverse this drift at almost any stage. That's what this course is about."
+        },
+        {
+          "id": "mh-1-c5",
+          "front": "Key Takeaway",
+          "back": "Metabolic health is about how well your body processes energy — and it affects everything from your daily energy to your long-term disease risk. It's measured by five simple markers, not by your weight. The best part: it responds powerfully to lifestyle changes, which means you have real control over it regardless of your starting point."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-1-q1",
+          "question": "Approximately what proportion of adults are considered fully metabolically healthy?",
+          "options": [
+            "About 1 in 3",
+            "About 1 in 8",
+            "About 1 in 2",
+            "About 1 in 20"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research suggests only about 1 in 8 adults have all five metabolic markers in a healthy range without medication — making metabolic health surprisingly uncommon."
+        },
+        {
+          "id": "mh-1-q2",
+          "question": "Which of these is NOT one of the five key metabolic health markers?",
+          "options": [
+            "Blood sugar levels",
+            "Body weight",
+            "Blood pressure",
+            "Waist circumference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Body weight is not one of the five metabolic markers. The five are: blood sugar, blood pressure, triglycerides, HDL cholesterol, and waist circumference. You can be metabolically unhealthy at any weight."
+        },
+        {
+          "id": "mh-1-q3",
+          "question": "How do metabolic problems typically develop?",
+          "options": [
+            "They appear suddenly after a single event",
+            "They develop slowly over years without obvious symptoms",
+            "They only affect people over 60",
+            "They are entirely genetic and cannot be changed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Metabolic dysfunction builds gradually — blood sugar creeps up, inflammation increases — often without noticeable symptoms until a crisis. The good news is lifestyle changes can reverse this drift."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-2",
+      "dayNumber": 2,
+      "title": "Blood Sugar — Your Body's Fuel System",
+      "subtitle": "How glucose works, why it spikes, and what that rollercoaster is doing to your energy",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-2-c1",
+          "front": "What Is Blood Sugar?",
+          "back": "Blood sugar (glucose) is the primary fuel your cells use for energy. When you eat carbohydrates — bread, fruit, rice, sweets — your body breaks them down into glucose, which enters your bloodstream. Your body then needs to move that glucose out of the blood and into your cells where it can be used. Think of blood sugar like fuel in a delivery truck — it needs to get from the road (blood) into the buildings (cells) to be useful."
+        },
+        {
+          "id": "mh-2-c2",
+          "front": "The Spike-and-Crash Cycle",
+          "back": "When you eat something that releases glucose quickly (white bread, sugary drinks, sweets), your blood sugar spikes rapidly. Your body responds by flooding the system with insulin to bring it back down — often overshooting, causing a crash. That crash is the 3pm slump, the sudden hunger, the brain fog. Repeated spikes and crashes throughout the day leave you exhausted, moody, and craving more sugar."
+        },
+        {
+          "id": "mh-2-c3",
+          "front": "What Healthy Blood Sugar Looks Like",
+          "back": "In a healthy pattern, blood sugar rises gently after meals, stays within a moderate range, and returns to baseline smoothly. There's no dramatic spike, no crash, no rollercoaster. You feel steady energy, clear thinking, and stable mood. The difference between a rollercoaster day and a smooth one often comes down to what you eat, in what order, and how you combine foods."
+        },
+        {
+          "id": "mh-2-c4",
+          "front": "Why This Matters Long-Term",
+          "back": "Occasional blood sugar spikes are normal and harmless. But years of repeated large spikes cause real damage: they promote inflammation, stress your blood vessels, exhaust your insulin-producing cells, and increase your risk of type 2 diabetes, heart disease, and cognitive decline. Managing blood sugar isn't about perfection — it's about reducing the extremes."
+        },
+        {
+          "id": "mh-2-c5",
+          "front": "Key Takeaway",
+          "back": "Blood sugar is your body's fuel delivery system. When it's stable, you feel energised and clear-headed. When it spikes and crashes repeatedly, it drains your energy short-term and damages your health long-term. You don't need to eliminate carbs — you need to manage how quickly glucose enters your bloodstream. We'll cover exactly how in later lessons."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-2-q1",
+          "question": "What happens during a blood sugar \"crash\"?",
+          "options": [
+            "Your blood sugar stays perfectly stable",
+            "Insulin overshoots and blood sugar drops too low, causing fatigue and cravings",
+            "Your body stops producing glucose entirely",
+            "Your cells produce too much energy"
+          ],
+          "correctIndex": 1,
+          "explanation": "After a rapid spike, insulin often overshoots in bringing blood sugar down, causing it to drop below comfortable levels — leading to fatigue, brain fog, and sugar cravings."
+        },
+        {
+          "id": "mh-2-q2",
+          "question": "What does a healthy blood sugar pattern look like after eating?",
+          "options": [
+            "A sharp spike followed by a sharp crash",
+            "Blood sugar doesn't change at all",
+            "A gentle rise that returns smoothly to baseline",
+            "Blood sugar drops immediately after eating"
+          ],
+          "correctIndex": 2,
+          "explanation": "Healthy blood sugar rises gently after meals and returns smoothly to baseline — no dramatic spike, no crash. This gives you steady energy and clear thinking."
+        },
+        {
+          "id": "mh-2-q3",
+          "question": "Why are repeated blood sugar spikes harmful over years?",
+          "options": [
+            "They make food taste different",
+            "They promote inflammation, stress blood vessels, and exhaust insulin-producing cells",
+            "They cause immediate weight gain after every meal",
+            "They only affect people with diagnosed diabetes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Repeated large spikes cause chronic inflammation, damage blood vessels, and over time can exhaust the pancreas — increasing risk of type 2 diabetes, heart disease, and cognitive decline."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-3",
+      "dayNumber": 3,
+      "title": "Insulin — The Master Switch",
+      "subtitle": "What insulin does, why it's essential, and what happens when your cells stop listening",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-3-c1",
+          "front": "What Does Insulin Actually Do?",
+          "back": "Insulin is a hormone made by your pancreas. Its main job is to act like a key — unlocking your cells so glucose from your blood can enter and be used for energy. Without insulin, glucose builds up in the bloodstream while your cells starve. Think of insulin as a doorman at a building: it opens the doors so fuel can get inside. When insulin is working properly, blood sugar stays in a healthy range."
+        },
+        {
+          "id": "mh-3-c2",
+          "front": "Insulin Resistance — When Cells Stop Listening",
+          "back": "When your cells are constantly exposed to high levels of insulin (from repeated blood sugar spikes), they start to become less sensitive to its signal — like tuning out a loud alarm you hear every day. This is insulin resistance. Your pancreas responds by producing even more insulin, creating a vicious cycle: more insulin → cells resist more → even more insulin needed. This is the most common pathway to type 2 diabetes."
+        },
+        {
+          "id": "mh-3-c3",
+          "front": "The Hidden Years Before Diagnosis",
+          "back": "Insulin resistance can develop 10–15 years before blood sugar levels become abnormal enough for a diabetes diagnosis. During those hidden years, your pancreas works overtime to compensate — and your blood sugar may look perfectly normal on a standard test. This is why some experts believe fasting insulin levels (not just glucose) should be checked routinely."
+        },
+        {
+          "id": "mh-3-c4",
+          "front": "Insulin Does More Than Manage Sugar",
+          "back": "Insulin also tells your body to store fat (especially around the abdomen), influences hunger signals, affects inflammation, and plays a role in how your liver processes cholesterol. Chronically high insulin doesn't just affect blood sugar — it drives weight gain, increases cardiovascular risk, and accelerates ageing at a cellular level. Managing insulin is about far more than diabetes prevention."
+        },
+        {
+          "id": "mh-3-c5",
+          "front": "Key Takeaway",
+          "back": "Insulin is essential — it unlocks your cells to receive energy. But when your cells become resistant to it (from constant overexposure), your body produces more and more, creating a dangerous cycle that drives fat storage, inflammation, and disease risk. The good news: insulin resistance is highly responsive to diet, movement, and sleep changes. You can reverse it."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-3-q1",
+          "question": "What is the best analogy for insulin's role?",
+          "options": [
+            "A battery that stores energy",
+            "A key that unlocks cells so glucose can enter",
+            "A filter that removes toxins from blood",
+            "A pump that moves blood around the body"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin acts like a key, unlocking your cells so glucose from the bloodstream can enter and be used for energy. Without it, glucose accumulates in the blood while cells are starved of fuel."
+        },
+        {
+          "id": "mh-3-q2",
+          "question": "How long can insulin resistance develop before a diabetes diagnosis?",
+          "options": [
+            "A few weeks",
+            "1–2 years",
+            "10–15 years",
+            "It happens overnight"
+          ],
+          "correctIndex": 2,
+          "explanation": "Insulin resistance can build for 10–15 years while blood sugar appears normal on standard tests — the pancreas compensates by producing more insulin until it eventually can't keep up."
+        },
+        {
+          "id": "mh-3-q3",
+          "question": "Besides blood sugar, what else does chronically high insulin affect?",
+          "options": [
+            "Only blood sugar — nothing else",
+            "Fat storage, inflammation, hunger signals, and cardiovascular risk",
+            "Only muscle growth",
+            "Only sleep quality"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin influences fat storage (especially abdominal), hunger signals, inflammation, liver function, and cardiovascular risk. Chronically high insulin affects far more than just blood sugar."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-4",
+      "dayNumber": 4,
+      "title": "The Energy Balance Myth",
+      "subtitle": "Why \"eat less, move more\" is an oversimplification — and what actually drives fat storage",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-4-c1",
+          "front": "Calories In vs Calories Out — The Half-Truth",
+          "back": "You've probably heard that weight management is simple: eat fewer calories than you burn. While energy balance is real physics, it's a dramatic oversimplification of human biology. Your body isn't a simple calculator — it's a complex system that adjusts its energy expenditure, hunger hormones, and fat-storage signals based on what you eat, when you eat, how you sleep, and your stress levels."
+        },
+        {
+          "id": "mh-4-c2",
+          "front": "Why Two People Eating the Same Calories Get Different Results",
+          "back": "200 calories of almonds and 200 calories of sweets trigger completely different hormonal responses. The sweets spike blood sugar and insulin (promoting fat storage), while almonds release energy slowly with minimal insulin response. Your body also absorbs fewer calories from whole foods (fibre, intact cell walls) than processed ones. The type of calorie matters as much as the number."
+        },
+        {
+          "id": "mh-4-c3",
+          "front": "Your Metabolism Fights Back",
+          "back": "When you drastically cut calories, your body adapts: it slows your metabolism, increases hunger hormones (ghrelin), reduces the calories you burn at rest, and makes you unconsciously move less. This \"metabolic adaptation\" is why crash diets fail long-term for most people — your body treats severe restriction as a famine threat and fights to regain the lost weight."
+        },
+        {
+          "id": "mh-4-c4",
+          "front": "What Actually Drives Fat Storage",
+          "back": "Fat storage is primarily regulated by hormones — especially insulin. When insulin is chronically elevated (from constant snacking, refined carbs, poor sleep, and stress), your body stays in \"storage mode.\" When insulin levels are lower and stable, your body can access stored fat for energy. This is why some people lose fat by changing what they eat — without counting a single calorie."
+        },
+        {
+          "id": "mh-4-c5",
+          "front": "Key Takeaway",
+          "back": "Energy balance is real, but it's regulated by hormones — not willpower. Your body adjusts its metabolism based on what you eat, how you sleep, and your stress levels. Focusing on food quality, stable blood sugar, and sustainable habits is more effective (and less miserable) than obsessing over calorie numbers. The goal is to work with your biology, not against it."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-4-q1",
+          "question": "Why do 200 calories of almonds and 200 calories of sweets affect your body differently?",
+          "options": [
+            "They don't — a calorie is a calorie",
+            "Almonds have more sugar",
+            "They trigger completely different hormonal and insulin responses",
+            "Sweets have more fibre"
+          ],
+          "correctIndex": 2,
+          "explanation": "Different foods trigger different hormonal responses. Sweets spike blood sugar and insulin (promoting fat storage), while almonds release energy slowly with minimal insulin impact — same calories, very different metabolic effects."
+        },
+        {
+          "id": "mh-4-q2",
+          "question": "What is \"metabolic adaptation\"?",
+          "options": [
+            "Your body speeds up metabolism when you eat more",
+            "Your body slows metabolism and increases hunger in response to severe calorie restriction",
+            "A technique for building muscle faster",
+            "The process of digesting food"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you drastically cut calories, your body fights back — slowing metabolism, increasing hunger hormones, and reducing unconscious movement. This is why crash diets typically fail long-term."
+        },
+        {
+          "id": "mh-4-q3",
+          "question": "What hormone is primarily responsible for telling your body to store fat?",
+          "options": [
+            "Cortisol",
+            "Insulin",
+            "Adrenaline",
+            "Melatonin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin is the primary hormone that regulates fat storage. When insulin is chronically elevated, your body stays in storage mode. When insulin is stable and lower, your body can access stored fat for energy."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-5",
+      "dayNumber": 5,
+      "title": "Cholesterol — The Full Story",
+      "subtitle": "What cholesterol actually is, why your body makes it, and what your numbers really mean",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-5-c1",
+          "front": "What Is Cholesterol?",
+          "back": "Cholesterol is a waxy substance your body needs to build cell membranes, produce hormones (including vitamin D, testosterone, and oestrogen), and create bile acids for digestion. Your liver makes about 80% of your cholesterol — dietary cholesterol has much less impact than once believed. Cholesterol itself isn't \"bad\" — it's essential for life. The problem is when it ends up in the wrong places in the wrong amounts."
+        },
+        {
+          "id": "mh-5-c2",
+          "front": "LDL and HDL — Delivery Trucks and Cleanup Crew",
+          "back": "Cholesterol travels through your blood in protein packages called lipoproteins. LDL (low-density lipoprotein) carries cholesterol from the liver to your cells — think of it as a delivery truck. HDL (high-density lipoprotein) picks up excess cholesterol and brings it back to the liver — it's the cleanup crew. Problems arise when there are too many LDL particles, especially small dense ones that can lodge in artery walls and cause plaque buildup."
+        },
+        {
+          "id": "mh-5-c3",
+          "front": "Why Standard Tests Miss Part of the Picture",
+          "back": "A standard cholesterol test gives you total cholesterol, LDL, HDL, and triglycerides. But the number of LDL particles matters more than just the total amount of LDL cholesterol. Two people with the same LDL number can have very different risk profiles depending on whether they have many small dense particles (higher risk) or fewer large buoyant ones (lower risk). Ask your doctor about apoB or LDL particle count for a clearer picture."
+        },
+        {
+          "id": "mh-5-c4",
+          "front": "What Actually Raises Harmful Cholesterol",
+          "back": "The biggest dietary drivers of elevated LDL particles are refined carbohydrates, trans fats, and excess processed foods — not necessarily dietary cholesterol (eggs, for example, are fine for most people). Insulin resistance, inflammation, and visceral fat also raise harmful cholesterol patterns. Ironically, low-fat diets that replace fat with refined carbs can worsen your cholesterol profile rather than improve it."
+        },
+        {
+          "id": "mh-5-c5",
+          "front": "Key Takeaway",
+          "back": "Cholesterol is essential — your body makes most of it. The concern isn't cholesterol itself but having too many LDL particles (especially small dense ones) that can damage arteries. Focus on reducing refined carbs, trans fats, and processed foods rather than obsessing over dietary cholesterol. A good ratio of HDL to triglycerides is one of the best indicators of metabolic health."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-5-q1",
+          "question": "Where does most of your body's cholesterol come from?",
+          "options": [
+            "Food you eat",
+            "Your liver produces about 80%",
+            "Your muscles",
+            "Supplements"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your liver produces approximately 80% of your body's cholesterol. Dietary cholesterol (from food) has much less impact on blood cholesterol levels than was once believed."
+        },
+        {
+          "id": "mh-5-q2",
+          "question": "What's the key difference between LDL and HDL?",
+          "options": [
+            "LDL is always bad and HDL is always good",
+            "LDL delivers cholesterol to cells; HDL picks up excess and returns it to the liver",
+            "They are the same thing measured differently",
+            "LDL comes from food and HDL is made by the body"
+          ],
+          "correctIndex": 1,
+          "explanation": "LDL carries cholesterol from the liver to cells (delivery), while HDL picks up excess cholesterol and returns it to the liver (cleanup). Problems arise when too many LDL particles accumulate in artery walls."
+        },
+        {
+          "id": "mh-5-q3",
+          "question": "What dietary factor is most likely to raise harmful cholesterol patterns?",
+          "options": [
+            "Eating eggs",
+            "Refined carbohydrates, trans fats, and processed foods",
+            "Eating too much protein",
+            "Drinking water with meals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Refined carbs, trans fats, and processed foods are the biggest dietary drivers of elevated LDL particles. Dietary cholesterol (like eggs) has a much smaller effect than once believed."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-6",
+      "dayNumber": 6,
+      "title": "Blood Pressure — The Silent Force",
+      "subtitle": "What those two numbers mean, why high blood pressure is so dangerous, and what helps",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-6-c1",
+          "front": "What Blood Pressure Actually Measures",
+          "back": "Blood pressure measures the force of blood pushing against your artery walls. The two numbers (e.g., 120/80) represent: systolic (top number) — the pressure when your heart beats and pushes blood out; and diastolic (bottom number) — the pressure between beats when your heart rests. Healthy blood pressure is generally below 120/80. It fluctuates naturally throughout the day — it's the sustained average that matters."
+        },
+        {
+          "id": "mh-6-c2",
+          "front": "Why High Blood Pressure Is Called \"The Silent Killer\"",
+          "back": "High blood pressure (hypertension) usually causes no symptoms whatsoever. You can feel perfectly fine while it silently damages your arteries, heart, brain, kidneys, and eyes over years. By the time symptoms appear — headaches, vision problems, chest pain — significant damage has already occurred. This is why regular blood pressure checks matter, even when you feel healthy."
+        },
+        {
+          "id": "mh-6-c3",
+          "front": "What Drives Blood Pressure Up",
+          "back": "Several factors increase blood pressure: excess sodium (salt) intake, chronic stress, poor sleep, physical inactivity, excess alcohol, smoking, insulin resistance, and excess visceral fat. Genetics play a role too — some people are more \"salt-sensitive\" than others. The good news: most of these factors are modifiable. Even modest improvements in diet, exercise, and stress management can meaningfully lower blood pressure."
+        },
+        {
+          "id": "mh-6-c4",
+          "front": "The Connection to Metabolic Health",
+          "back": "High blood pressure rarely exists alone — it clusters with other metabolic problems. Insulin resistance stiffens arteries and causes the kidneys to retain more sodium. Visceral fat releases inflammatory signals that raise blood pressure. Poor sleep disrupts the hormones that regulate blood vessel relaxation. Improving your metabolic health broadly tends to improve blood pressure as a natural consequence."
+        },
+        {
+          "id": "mh-6-c5",
+          "front": "Key Takeaway",
+          "back": "Blood pressure measures force on your arteries. High blood pressure causes no symptoms but silently damages your cardiovascular system over years. It's strongly connected to other metabolic factors — insulin resistance, visceral fat, stress, sleep, and diet all play roles. Checking it regularly and addressing root causes (not just treating the number) is one of the most impactful things you can do for long-term health."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-6-q1",
+          "question": "What do the two numbers in a blood pressure reading represent?",
+          "options": [
+            "Heart rate and oxygen level",
+            "Systolic (pressure during heartbeat) and diastolic (pressure between beats)",
+            "Minimum and maximum blood volume",
+            "Morning and evening readings"
+          ],
+          "correctIndex": 1,
+          "explanation": "Systolic (top number) measures pressure when the heart beats; diastolic (bottom number) measures pressure between beats when the heart rests. Healthy is generally below 120/80."
+        },
+        {
+          "id": "mh-6-q2",
+          "question": "Why is high blood pressure called \"the silent killer\"?",
+          "options": [
+            "Because it only happens at night",
+            "Because it usually causes no symptoms while silently damaging organs",
+            "Because it only affects elderly people",
+            "Because it always leads to immediate heart attacks"
+          ],
+          "correctIndex": 1,
+          "explanation": "High blood pressure typically causes no noticeable symptoms. It can damage arteries, heart, brain, and kidneys for years before any symptoms appear — which is why regular checks are so important."
+        },
+        {
+          "id": "mh-6-q3",
+          "question": "How does insulin resistance affect blood pressure?",
+          "options": [
+            "It has no connection to blood pressure",
+            "It relaxes arteries and lowers blood pressure",
+            "It stiffens arteries and causes kidneys to retain more sodium",
+            "It only affects blood sugar, not blood pressure"
+          ],
+          "correctIndex": 2,
+          "explanation": "Insulin resistance stiffens artery walls and signals the kidneys to retain more sodium — both of which raise blood pressure. This is why metabolic health improvements often lower blood pressure as a side effect."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-7",
+      "dayNumber": 7,
+      "title": "Visceral Fat — The Hidden Risk",
+      "subtitle": "Not all fat is equal — why the fat around your organs is the one that matters most",
+      "moduleId": "mh-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-7-c1",
+          "front": "Two Types of Body Fat",
+          "back": "Your body stores fat in two main locations. Subcutaneous fat sits just under your skin — it's the fat you can pinch on your arms, legs, and hips. Visceral fat wraps around your internal organs (liver, pancreas, intestines) deep inside your abdomen. While subcutaneous fat is mostly harmless storage, visceral fat is metabolically active — it releases inflammatory chemicals and hormones that disrupt your body's systems."
+        },
+        {
+          "id": "mh-7-c2",
+          "front": "Why Visceral Fat Is Uniquely Dangerous",
+          "back": "Visceral fat isn't just passive storage — it behaves almost like an organ itself. It releases inflammatory molecules (cytokines), disrupts insulin signalling, increases blood pressure, raises triglycerides, and promotes fatty liver disease. It's strongly linked to type 2 diabetes, heart disease, stroke, and certain cancers. You can't see it from the outside, and people with seemingly flat stomachs can still carry dangerous amounts internally."
+        },
+        {
+          "id": "mh-7-c3",
+          "front": "How to Know If You're Carrying Too Much",
+          "back": "Waist circumference is a simple proxy for visceral fat: over 94cm (37\") for men or 80cm (31.5\") for women indicates increased risk. Waist-to-hip ratio is another useful measure. For a precise answer, a DEXA scan or MRI can quantify visceral fat directly. But the simple waist measurement — taken around your belly button — gives you a good working estimate."
+        },
+        {
+          "id": "mh-7-c4",
+          "front": "What Drives Visceral Fat Accumulation",
+          "back": "Visceral fat is driven by chronically elevated insulin, excess sugar and refined carbohydrates, chronic stress (cortisol tells the body to store fat centrally), poor sleep, excess alcohol, and physical inactivity. Genetics influence where your body prefers to store fat, but the lifestyle factors above are the biggest drivers. The upside: visceral fat tends to respond to lifestyle changes faster than subcutaneous fat."
+        },
+        {
+          "id": "mh-7-c5",
+          "front": "Key Takeaway",
+          "back": "Visceral fat — the fat wrapped around your organs — is metabolically active and releases inflammatory signals that drive disease. Unlike subcutaneous fat, it's a genuine health risk even in small amounts. It's driven by insulin, stress, poor sleep, and processed foods. The good news: it responds faster to lifestyle changes than other types of fat. Reducing it dramatically improves your metabolic health markers."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-7-q1",
+          "question": "What makes visceral fat more dangerous than subcutaneous fat?",
+          "options": [
+            "It weighs more",
+            "It's visible from outside",
+            "It releases inflammatory chemicals and disrupts hormonal signalling",
+            "It's only found in overweight people"
+          ],
+          "correctIndex": 2,
+          "explanation": "Visceral fat is metabolically active — it releases inflammatory cytokines, disrupts insulin signalling, raises blood pressure, and promotes fatty liver disease. Subcutaneous fat is mostly harmless storage."
+        },
+        {
+          "id": "mh-7-q2",
+          "question": "What is a simple way to estimate visceral fat levels?",
+          "options": [
+            "Step on a scale",
+            "Measure your waist circumference",
+            "Check your BMI",
+            "Count how many sit-ups you can do"
+          ],
+          "correctIndex": 1,
+          "explanation": "Waist circumference (measured around the belly button) is a simple, effective proxy for visceral fat. Over 94cm for men or 80cm for women indicates increased metabolic risk."
+        },
+        {
+          "id": "mh-7-q3",
+          "question": "How does visceral fat typically respond to lifestyle changes compared to subcutaneous fat?",
+          "options": [
+            "It never changes regardless of lifestyle",
+            "It responds slower than subcutaneous fat",
+            "It responds faster than subcutaneous fat",
+            "It can only be removed surgically"
+          ],
+          "correctIndex": 2,
+          "explanation": "Visceral fat tends to respond to lifestyle changes (diet, exercise, sleep, stress reduction) faster than subcutaneous fat — which is great news for improving metabolic health markers quickly."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-8",
+      "dayNumber": 8,
+      "title": "Triglycerides — The Forgotten Fat",
+      "subtitle": "The fat in your blood that most people ignore — and why it's a key metabolic signal",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-8-c1",
+          "front": "What Are Triglycerides?",
+          "back": "Triglycerides are the most common form of fat found in your blood. After you eat, your body converts any calories it doesn't need immediately into triglycerides, which are stored in fat cells. Between meals, hormones release triglycerides for energy. They're measured in standard blood tests but are often overlooked compared to cholesterol — yet they're one of the most reliable markers of metabolic health."
+        },
+        {
+          "id": "mh-8-c2",
+          "front": "What Raises Triglycerides?",
+          "back": "The biggest driver of elevated triglycerides isn't dietary fat — it's excess sugar and refined carbohydrates. When you consume more carbohydrates than your liver can store as glycogen, the liver converts the surplus into triglycerides. Alcohol is another major driver. Factors that raise triglycerides: sugary drinks, white bread, white rice, pasta, pastries, excess alcohol, physical inactivity, poor sleep, and uncontrolled diabetes."
+        },
+        {
+          "id": "mh-8-c3",
+          "front": "The Triglyceride-to-HDL Ratio",
+          "back": "One of the most useful metabolic health indicators is the triglyceride-to-HDL ratio. Divide your triglyceride number by your HDL number. A ratio below 2.0 is considered good (in mg/dL) or below 0.9 (in mmol/L). A high ratio often signals insulin resistance even when fasting glucose appears normal. This single number can give you a better picture of cardiovascular risk than LDL cholesterol alone."
+        },
+        {
+          "id": "mh-8-c4",
+          "front": "Why Very High Triglycerides Are a Medical Emergency",
+          "back": "While mildly elevated triglycerides raise cardiovascular risk over time, severely elevated levels (above 10 mmol/L or 880 mg/dL) can trigger acute pancreatitis — a dangerous inflammation of the pancreas that requires hospital treatment. Most people with metabolic issues have moderately elevated levels (1.7–5.6 mmol/L), which are serious but manageable with lifestyle changes."
+        },
+        {
+          "id": "mh-8-c5",
+          "front": "Key Takeaway",
+          "back": "Triglycerides are the fat in your blood — primarily driven up by sugar and refined carbs, not dietary fat. A high triglyceride-to-HDL ratio is one of the best early signals of insulin resistance. Reducing refined carbohydrates, cutting alcohol, and exercising regularly are the most effective ways to lower triglycerides. Check yours at your next blood test — most people have never discussed this number with their doctor."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-8-q1",
+          "question": "What is the biggest dietary driver of elevated triglycerides?",
+          "options": [
+            "Saturated fat from meat and dairy",
+            "Excess sugar and refined carbohydrates",
+            "Eating too much protein",
+            "Drinking too much water"
+          ],
+          "correctIndex": 1,
+          "explanation": "It's a common misconception that dietary fat raises triglycerides most. The real culprit is excess sugar and refined carbohydrates — the liver converts carbohydrate surplus into triglycerides."
+        },
+        {
+          "id": "mh-8-q2",
+          "question": "What does a high triglyceride-to-HDL ratio indicate?",
+          "options": [
+            "Excellent metabolic health",
+            "Likely insulin resistance, even with normal fasting glucose",
+            "High dietary fat intake",
+            "Strong immune function"
+          ],
+          "correctIndex": 1,
+          "explanation": "A high triglyceride-to-HDL ratio is one of the best early markers of insulin resistance — often detectable years before fasting glucose becomes abnormal."
+        },
+        {
+          "id": "mh-8-q3",
+          "question": "Which approach most effectively lowers elevated triglycerides?",
+          "options": [
+            "Reducing dietary fat and cholesterol",
+            "Reducing refined carbohydrates, cutting alcohol, and exercising regularly",
+            "Taking vitamin C supplements",
+            "Eating more protein at breakfast"
+          ],
+          "correctIndex": 1,
+          "explanation": "Because triglycerides are primarily driven by carbohydrate excess and alcohol, the most effective interventions are reducing refined carbs, cutting alcohol, and increasing physical activity."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-9",
+      "dayNumber": 9,
+      "title": "Fatty Liver — The Quiet Crisis",
+      "subtitle": "How fat builds up in your liver, why it matters, and what you can do to reverse it",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-9-c1",
+          "front": "What Is Non-Alcoholic Fatty Liver Disease?",
+          "back": "Non-alcoholic fatty liver disease (NAFLD) occurs when fat accumulates in the liver cells of people who drink little or no alcohol. It's now the most common liver disease in the world — affecting roughly 1 in 4 adults globally. Most people have no symptoms whatsoever. The liver performs over 500 functions including processing nutrients, filtering toxins, and regulating blood sugar. When it's congested with fat, all of these functions suffer."
+        },
+        {
+          "id": "mh-9-c2",
+          "front": "How Fat Gets Into Your Liver",
+          "back": "The main driver is fructose — a type of sugar found in table sugar (sucrose), high-fructose corn syrup, and fruit juice. Unlike glucose (which goes to muscles and the whole body), fructose is processed almost entirely by the liver. When you consume large amounts, the liver converts excess fructose to fat and stores it on site. Alcohol causes the same damage through a similar pathway — which is why NAFLD looks almost identical to alcoholic liver disease under a microscope."
+        },
+        {
+          "id": "mh-9-c3",
+          "front": "The Progression from Mild to Serious",
+          "back": "NAFLD progresses in stages: simple fat accumulation (usually reversible) → NASH (non-alcoholic steatohepatitis, where liver inflammation begins) → fibrosis (scar tissue forms) → cirrhosis (permanent scarring). Most people stay at the early stages. But NAFLD is now the fastest-growing cause of liver transplants in Western countries and increases risk of type 2 diabetes, cardiovascular disease, and liver cancer."
+        },
+        {
+          "id": "mh-9-c4",
+          "front": "The Good News — It's Highly Reversible",
+          "back": "Unlike most organ damage, early-stage fatty liver is remarkably reversible. Studies show that losing just 7–10% of body weight (if overweight) can significantly reduce liver fat. More specifically, reducing sugar and refined carbohydrates — especially fructose from sugary drinks and processed foods — is the most direct intervention. Even without weight loss, dietary improvements alone can reverse early NAFLD within weeks."
+        },
+        {
+          "id": "mh-9-c5",
+          "front": "Key Takeaway",
+          "back": "Fatty liver is driven primarily by excess fructose (sugar) not dietary fat, and affects 1 in 4 adults globally — most without symptoms. It's a central metabolic problem that connects to diabetes, heart disease, and metabolic syndrome. The excellent news: it's highly reversible with dietary changes, especially reducing sugary drinks, fruit juice, and ultra-processed foods. Your liver can heal surprisingly quickly."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-9-q1",
+          "question": "What is the primary dietary driver of non-alcoholic fatty liver disease?",
+          "options": [
+            "Saturated fat from meat",
+            "Excess fructose from sugar and sugary drinks",
+            "Too much protein",
+            "Too little fibre"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fructose — found in table sugar, high-fructose corn syrup, and fruit juice — is processed almost entirely by the liver. Excess amounts are converted to fat and stored there, driving NAFLD."
+        },
+        {
+          "id": "mh-9-q2",
+          "question": "How common is non-alcoholic fatty liver disease?",
+          "options": [
+            "Very rare — less than 1% of adults",
+            "Uncommon — about 5% of adults",
+            "Common — affects roughly 1 in 4 adults globally",
+            "Only affects people with obesity"
+          ],
+          "correctIndex": 2,
+          "explanation": "NAFLD affects approximately 1 in 4 adults worldwide, making it the most common liver disease globally. Most people have no symptoms and are unaware they have it."
+        },
+        {
+          "id": "mh-9-q3",
+          "question": "How much weight loss has been shown to significantly reduce liver fat?",
+          "options": [
+            "50% of body weight",
+            "30% of body weight",
+            "7–10% of body weight",
+            "Weight loss has no effect on liver fat"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies show that losing just 7–10% of body weight can significantly reduce liver fat and improve liver function. Dietary changes (especially reducing sugar) can reverse early NAFLD even without significant weight loss."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-10",
+      "dayNumber": 10,
+      "title": "Metabolic Syndrome — When Problems Cluster",
+      "subtitle": "Why metabolic problems rarely come alone — and what the combination means for your health",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-10-c1",
+          "front": "What Is Metabolic Syndrome?",
+          "back": "Metabolic syndrome is a medical term for having three or more of the following five conditions at the same time: a large waist circumference, high blood pressure, high fasting blood sugar, high triglycerides, and low HDL cholesterol. It's not a disease in itself — it's a cluster of risk factors that dramatically multiply your chance of developing heart disease, type 2 diabetes, stroke, and other serious conditions."
+        },
+        {
+          "id": "mh-10-c2",
+          "front": "How Common Is It?",
+          "back": "Metabolic syndrome affects roughly 1 in 3 adults in Western countries — and rates are rising. It becomes more common with age, affecting about 40% of people over 60. Many people have it without knowing, because individual markers may be only mildly elevated and each one alone seems manageable. It's the combination and the underlying shared cause — insulin resistance — that makes the cluster so dangerous."
+        },
+        {
+          "id": "mh-10-c3",
+          "front": "Why the Cluster Is More Dangerous Than the Sum of Its Parts",
+          "back": "Having metabolic syndrome isn't just \"five problems\" — it multiplies risk non-linearly. A person with metabolic syndrome is twice as likely to develop heart disease and five times more likely to develop type 2 diabetes compared to someone without it. The cluster also accelerates ageing, promotes chronic inflammation, and increases risk of certain cancers, kidney disease, and non-alcoholic fatty liver disease."
+        },
+        {
+          "id": "mh-10-c4",
+          "front": "The Common Root — Insulin Resistance",
+          "back": "All five components of metabolic syndrome share a common upstream driver: insulin resistance. When cells stop responding properly to insulin, blood sugar rises, the liver produces more triglycerides and VLDL, HDL falls, the kidneys retain sodium (raising blood pressure), and fat accumulates centrally. Treating each symptom separately misses the point. Addressing insulin resistance addresses all five."
+        },
+        {
+          "id": "mh-10-c5",
+          "front": "Key Takeaway",
+          "back": "Metabolic syndrome is the convergence of high blood sugar, blood pressure, triglycerides, low HDL, and large waist — all driven by a common root cause: insulin resistance. It affects 1 in 3 adults. The powerful insight is that improving insulin sensitivity improves all five markers simultaneously. You don't need five separate treatments — you need to address the shared cause through diet, movement, sleep, and stress management."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-10-q1",
+          "question": "How many of the five metabolic conditions must be present to be diagnosed with metabolic syndrome?",
+          "options": [
+            "All five",
+            "At least four",
+            "Three or more",
+            "Any one"
+          ],
+          "correctIndex": 2,
+          "explanation": "Metabolic syndrome is diagnosed when three or more of the five conditions are present: large waist, high blood pressure, high fasting blood sugar, high triglycerides, and low HDL cholesterol."
+        },
+        {
+          "id": "mh-10-q2",
+          "question": "How does metabolic syndrome affect type 2 diabetes risk?",
+          "options": [
+            "It has no effect on diabetes risk",
+            "It doubles diabetes risk",
+            "It makes diabetes risk five times higher",
+            "It reduces diabetes risk"
+          ],
+          "correctIndex": 2,
+          "explanation": "People with metabolic syndrome are five times more likely to develop type 2 diabetes compared to those without it — and twice as likely to develop cardiovascular disease."
+        },
+        {
+          "id": "mh-10-q3",
+          "question": "What is the common underlying driver of all five metabolic syndrome components?",
+          "options": [
+            "Excess dietary fat",
+            "Lack of exercise alone",
+            "Insulin resistance",
+            "Vitamin D deficiency"
+          ],
+          "correctIndex": 2,
+          "explanation": "All five components of metabolic syndrome share insulin resistance as a common upstream driver. This is why addressing insulin sensitivity can improve all five markers simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-11",
+      "dayNumber": 11,
+      "title": "Your Metabolic Age",
+      "subtitle": "What \"metabolic age\" really means, how to assess it, and why it's the number that matters",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-11-c1",
+          "front": "Biological Age vs Chronological Age",
+          "back": "Your chronological age is how many years you've lived. Your biological age is how old your body actually functions — measured by markers like blood sugar, inflammation, cardiovascular fitness, muscle mass, and cellular health. Two people born the same year can have biological ages 20 years apart. Your biological age can be younger than your chronological age with good lifestyle habits, or significantly older with poor ones."
+        },
+        {
+          "id": "mh-11-c2",
+          "front": "How Metabolism Changes With Age",
+          "back": "Metabolism does slow with age — but less than most people think, and for different reasons than assumed. The main driver isn't your age but your muscle mass. Muscle is metabolically expensive tissue — it burns calories at rest. As we lose muscle mass after our 30s (a process called sarcopenia), our resting metabolic rate drops. The people who maintain a healthy metabolism into old age are almost always those who maintain their muscle mass."
+        },
+        {
+          "id": "mh-11-c3",
+          "front": "Key Metabolic Age Indicators",
+          "back": "You can get a good picture of your metabolic age from a handful of tests: fasting blood glucose and insulin, HbA1c (3-month blood sugar average), triglyceride-to-HDL ratio, blood pressure, waist circumference, resting heart rate, and VO2 max (cardiovascular fitness). Taken together, these paint a much more accurate picture of your biological health than your birthday."
+        },
+        {
+          "id": "mh-11-c4",
+          "front": "The Most Powerful Anti-Ageing Intervention",
+          "back": "If you had to choose one thing proven to slow biological ageing and improve metabolic health across every marker, it would be cardiorespiratory fitness — your VO2 max. Research from Peter Attia and others shows that VO2 max is one of the strongest predictors of longevity of any measurable variable. The good news: it improves significantly with regular exercise, even starting in middle age."
+        },
+        {
+          "id": "mh-11-c5",
+          "front": "Key Takeaway",
+          "back": "Metabolic age reflects how well your body actually functions — and it can differ dramatically from your chronological age. The biggest drivers are muscle mass, cardiovascular fitness, blood sugar control, and inflammation. Unlike your birthday, these are changeable. The goal isn't to live longer — it's to live better, for longer. Improving your metabolic age is the most direct path to a longer healthspan."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-11-q1",
+          "question": "What is the main reason metabolism slows as we age?",
+          "options": [
+            "Ageing itself causes metabolism to slow dramatically",
+            "Loss of muscle mass reduces resting metabolic rate",
+            "The digestive system becomes less efficient",
+            "Sleep patterns change"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle is metabolically expensive tissue that burns calories at rest. As we lose muscle mass from our 30s onwards (sarcopenia), resting metabolic rate drops. Maintaining muscle mass is the key to a healthy metabolism."
+        },
+        {
+          "id": "mh-11-q2",
+          "question": "Which single measurement is one of the strongest predictors of longevity?",
+          "options": [
+            "Body weight",
+            "Cholesterol level",
+            "VO2 max (cardiorespiratory fitness)",
+            "Resting blood sugar"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows VO2 max — a measure of cardiovascular fitness — is one of the strongest predictors of longevity. The good news: it improves significantly with regular exercise, even starting in middle age."
+        },
+        {
+          "id": "mh-11-q3",
+          "question": "What does HbA1c measure?",
+          "options": [
+            "Your current blood sugar level right now",
+            "Your average blood sugar level over the past 3 months",
+            "Your insulin production capacity",
+            "Your cholesterol trend"
+          ],
+          "correctIndex": 1,
+          "explanation": "HbA1c (glycated haemoglobin) reflects your average blood sugar level over the past 2–3 months. It's a much better indicator of blood sugar trends than a single fasting glucose reading."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-12",
+      "dayNumber": 12,
+      "title": "How Food Affects Your Metabolism",
+      "subtitle": "The foods that support metabolic health, the ones that undermine it, and why food order matters",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-12-c1",
+          "front": "Ultra-Processed Foods — The Metabolic Wrecking Ball",
+          "back": "Ultra-processed foods (UPFs) — manufactured products containing additives, emulsifiers, artificial flavours, and ingredients you wouldn't find in a home kitchen — are the single biggest dietary threat to metabolic health. They are engineered to override satiety signals, cause rapid blood sugar spikes, disrupt the gut microbiome, promote chronic inflammation, and drive visceral fat accumulation. The average person in the UK gets 57% of their calories from UPFs."
+        },
+        {
+          "id": "mh-12-c2",
+          "front": "The Metabolic Superfoods",
+          "back": "The foods most consistently associated with good metabolic health: leafy green vegetables (spinach, kale, broccoli), legumes (lentils, chickpeas, beans), whole grains (oats, barley, quinoa), nuts and seeds, oily fish (salmon, sardines, mackerel), berries, olive oil, and fermented foods (yoghurt, kefir, kimchi). These foods share common traits: high fibre, polyphenols, slow glucose release, and anti-inflammatory effects."
+        },
+        {
+          "id": "mh-12-c3",
+          "front": "Eating Order — A Simple Hack That Works",
+          "back": "Research shows that the order in which you eat food components significantly affects your post-meal blood sugar spike. Eating vegetables and protein first, then fats, then carbohydrates last, can reduce your glucose spike by up to 73% compared to eating carbs first. The mechanism: fibre and protein slow gastric emptying, so carbohydrates absorbed later release glucose more gradually. This single habit requires no calorie counting or food elimination."
+        },
+        {
+          "id": "mh-12-c4",
+          "front": "Protein — The Metabolic Ally",
+          "back": "Protein has the highest thermic effect of any macronutrient — your body burns about 20–30% of protein's calories just in the act of digesting it (versus 5–10% for carbs and 0–3% for fat). Protein also strongly signals satiety, helps preserve muscle mass, and has minimal impact on blood sugar or insulin when consumed without excess carbohydrates. Adequate protein intake is one of the simplest ways to support metabolic health."
+        },
+        {
+          "id": "mh-12-c5",
+          "front": "Key Takeaway",
+          "back": "Ultra-processed foods are the most damaging dietary pattern for metabolic health. Whole foods — especially vegetables, legumes, oily fish, and fermented foods — are powerfully protective. Two practical hacks that cost nothing: eat vegetables and protein before carbohydrates (cuts glucose spikes by up to 73%), and prioritise protein at every meal (increases satiety and preserves muscle). Small choices, compounded daily, create enormous metabolic health differences over time."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-12-q1",
+          "question": "Approximately what percentage of the average UK person's calories comes from ultra-processed foods?",
+          "options": [
+            "About 15%",
+            "About 30%",
+            "About 57%",
+            "About 80%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests approximately 57% of the average UK adult's calorie intake comes from ultra-processed foods — products engineered to override natural satiety signals and drive overconsumption."
+        },
+        {
+          "id": "mh-12-q2",
+          "question": "By how much can eating vegetables and protein before carbohydrates reduce your blood sugar spike?",
+          "options": [
+            "About 10%",
+            "About 30%",
+            "About 50%",
+            "Up to 73%"
+          ],
+          "correctIndex": 3,
+          "explanation": "Research shows eating vegetables and protein first, then carbohydrates last, can reduce post-meal glucose spikes by up to 73% — a powerful, free metabolic health intervention that requires no food elimination."
+        },
+        {
+          "id": "mh-12-q3",
+          "question": "Why does protein have a higher \"thermic effect\" than carbohydrates or fat?",
+          "options": [
+            "It makes you feel warmer",
+            "Your body burns 20–30% of protein's calories just digesting it",
+            "It releases more glucose",
+            "It suppresses stomach acid"
+          ],
+          "correctIndex": 1,
+          "explanation": "The thermic effect of food refers to energy burned during digestion. Protein has the highest at 20–30%, versus 5–10% for carbohydrates and 0–3% for fat — giving protein a significant metabolic advantage."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-13",
+      "dayNumber": 13,
+      "title": "Exercise & Metabolism",
+      "subtitle": "How movement changes your metabolism at a cellular level — and why even a short walk after meals matters",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-13-c1",
+          "front": "Exercise Is Metabolic Medicine",
+          "back": "Exercise is the most powerful metabolic intervention available to most people — more impactful than any supplement or biohack. It improves insulin sensitivity, lowers blood sugar, reduces visceral fat, lowers blood pressure, improves cholesterol profiles, and increases muscle mass. Most of these benefits happen regardless of weight loss — meaning you can dramatically improve your metabolic health without losing a single kilogram, simply by moving more."
+        },
+        {
+          "id": "mh-13-c2",
+          "front": "How Muscle Acts as a Metabolic Sponge",
+          "back": "When your muscles contract during exercise, they absorb glucose from the blood through a pathway that completely bypasses insulin. This is why exercise immediately lowers blood sugar — it's insulin-independent. Your muscles act like a sponge, soaking up blood glucose during and after activity. The more muscle you have and the more you use it, the larger and more efficient that sponge becomes — making blood sugar control easier even at rest."
+        },
+        {
+          "id": "mh-13-c3",
+          "front": "The Post-Meal Walk — An Underrated Habit",
+          "back": "A 10–15 minute walk after a meal can reduce the post-meal blood sugar spike by 20–30%. Your leg muscles (the largest in the body) begin absorbing glucose immediately, blunting the spike before it peaks. This single habit — implemented consistently after breakfast, lunch, and dinner — can have a measurable impact on daily blood sugar patterns, HbA1c levels, and long-term metabolic health. It requires no gym membership and no special equipment."
+        },
+        {
+          "id": "mh-13-c4",
+          "front": "Strength Training vs Cardio — Both Matter, Differently",
+          "back": "Cardiovascular exercise (walking, running, cycling, swimming) improves insulin sensitivity and cardiovascular fitness, burns visceral fat, and reduces blood pressure. Strength training builds muscle mass — increasing your metabolic rate at rest and expanding the glucose \"sponge.\" For metabolic health, both are valuable and complementary. If you can only do one: strength training preserves metabolic function longer as you age, because it addresses sarcopenia directly."
+        },
+        {
+          "id": "mh-13-c5",
+          "front": "Key Takeaway",
+          "back": "Exercise is the most powerful metabolic medicine available. It improves insulin sensitivity through muscle contraction (insulin-independent), reduces visceral fat, lowers blood pressure, and improves cholesterol — often without weight loss. The post-meal walk is one of the highest-return habits for blood sugar control. Both strength training and cardio are valuable; together they address metabolic health from different angles. You don't need a perfect programme — you need consistent movement."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-13-q1",
+          "question": "How do muscles absorb glucose during exercise?",
+          "options": [
+            "They require insulin to absorb glucose, just like at rest",
+            "They absorb glucose via an insulin-independent pathway during muscle contraction",
+            "They release glucose into the blood during exercise",
+            "They don't use glucose — only fat"
+          ],
+          "correctIndex": 1,
+          "explanation": "During muscle contraction, muscles absorb glucose through a pathway that completely bypasses insulin — which is why exercise immediately lowers blood sugar regardless of insulin levels."
+        },
+        {
+          "id": "mh-13-q2",
+          "question": "By how much can a 10–15 minute post-meal walk reduce a blood sugar spike?",
+          "options": [
+            "About 5%",
+            "About 20–30%",
+            "About 70%",
+            "It has no effect on blood sugar"
+          ],
+          "correctIndex": 1,
+          "explanation": "A short 10–15 minute walk after a meal can reduce the post-meal glucose spike by 20–30% — one of the simplest, most effective metabolic health habits available to anyone."
+        },
+        {
+          "id": "mh-13-q3",
+          "question": "If you can only choose one form of exercise for long-term metabolic health as you age, which is generally recommended?",
+          "options": [
+            "Long-distance running",
+            "Yoga only",
+            "Strength training, because it addresses muscle loss (sarcopenia) directly",
+            "Stretching"
+          ],
+          "correctIndex": 2,
+          "explanation": "Strength training directly addresses sarcopenia (age-related muscle loss), which is the primary driver of metabolic slowdown. Building and maintaining muscle expands your glucose \"sponge\" and maintains resting metabolic rate."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-14",
+      "dayNumber": 14,
+      "title": "Sleep & Metabolism",
+      "subtitle": "The surprising ways poor sleep wrecks your blood sugar, hunger hormones, and fat storage",
+      "moduleId": "mh-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-14-c1",
+          "front": "One Bad Night Changes Your Metabolism",
+          "back": "After just one night of poor sleep (under 6 hours), insulin sensitivity drops by 20–25% in healthy people. Your cells behave as if they're pre-diabetic — even if your blood tests were perfect yesterday. This isn't a long-term effect; it normalises after a good night's sleep. But chronic poor sleep means your metabolism runs in a permanently compromised state, which is one reason shift workers have dramatically higher rates of metabolic syndrome and type 2 diabetes."
+        },
+        {
+          "id": "mh-14-c2",
+          "front": "Hunger Hormones — Why You Eat More After Bad Sleep",
+          "back": "Poor sleep disrupts two key hunger hormones: ghrelin (the hunger signal, which rises) and leptin (the fullness signal, which drops). After a poor night's sleep, you produce more ghrelin and less leptin — leaving you genuinely hungrier, less satisfied by food, and with stronger cravings for high-sugar, high-calorie foods. Studies show sleep-deprived people consume an average of 385 extra calories the next day — and consistently choose more processed, sugary foods."
+        },
+        {
+          "id": "mh-14-c3",
+          "front": "Cortisol and the Stress-Sleep-Fat Triangle",
+          "back": "Poor sleep raises cortisol (the stress hormone), which has multiple metabolic effects: it raises blood sugar (by triggering glucose release from the liver), promotes central fat storage, increases appetite, and worsens insulin resistance. This creates a vicious triangle: poor sleep → high cortisol → elevated blood sugar and fat storage → worse sleep quality the next night. Breaking this cycle is one of the most impactful things you can do for metabolic health."
+        },
+        {
+          "id": "mh-14-c4",
+          "front": "How Sleep Cleans and Repairs Your Metabolism",
+          "back": "During deep sleep, your body does critical metabolic maintenance: the glymphatic system flushes cellular waste from the brain, growth hormone is released to repair tissue and build muscle, insulin sensitivity is restored, and inflammatory markers drop. Good sleep isn't passive recovery — it's an active, essential biological process that resets your metabolism every night. Skimping on it is the equivalent of never doing maintenance on a high-performance engine."
+        },
+        {
+          "id": "mh-14-c5",
+          "front": "Key Takeaway",
+          "back": "Sleep is metabolic medicine. Just one poor night drops insulin sensitivity by 20–25%, raises hunger hormones (adding ~385 calories to your day), elevates cortisol, and promotes fat storage. Chronic poor sleep is as damaging to metabolic health as a poor diet. Prioritising 7–9 hours of quality sleep isn't laziness — it's one of the most powerful metabolic health interventions available, completely free and with no side effects."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-14-q1",
+          "question": "By how much does one night of poor sleep reduce insulin sensitivity?",
+          "options": [
+            "About 5%",
+            "About 10%",
+            "About 20–25%",
+            "It has no effect"
+          ],
+          "correctIndex": 2,
+          "explanation": "Just one night of poor sleep (under 6 hours) drops insulin sensitivity by 20–25% in healthy people — making cells behave as if pre-diabetic even after a single night."
+        },
+        {
+          "id": "mh-14-q2",
+          "question": "What happens to hunger hormones after a poor night's sleep?",
+          "options": [
+            "Both ghrelin and leptin rise",
+            "Ghrelin (hunger) rises and leptin (fullness) drops — making you genuinely hungrier",
+            "Both hormones stay the same",
+            "Leptin rises and ghrelin drops"
+          ],
+          "correctIndex": 1,
+          "explanation": "Poor sleep raises ghrelin (hunger signal) and lowers leptin (fullness signal), leaving you genuinely hungrier and less satisfied. Studies show sleep-deprived people consume an average of 385 extra calories the next day."
+        },
+        {
+          "id": "mh-14-q3",
+          "question": "What metabolic repair work does the body do during deep sleep?",
+          "options": [
+            "Nothing — sleep is purely rest",
+            "The body flushes brain waste, releases growth hormone, restores insulin sensitivity, and reduces inflammation",
+            "Only muscle repair — no metabolic work",
+            "The body burns most of its daily calories"
+          ],
+          "correctIndex": 1,
+          "explanation": "Deep sleep is an active biological process: the brain flushes cellular waste, growth hormone is released for tissue repair, insulin sensitivity is restored, and inflammatory markers drop — all essential metabolic maintenance."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-15",
+      "dayNumber": 15,
+      "title": "Why Scales Lie",
+      "subtitle": "Body composition vs body weight — and the measurements that actually predict your health",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-15-c1",
+          "front": "The Problem With the Scale",
+          "back": "Body weight tells you how much you weigh — but nothing about what that weight is made of. Muscle weighs more than fat per unit of volume. Two people at identical weights can have completely different body compositions — and dramatically different health risks. The scale also can't distinguish between fat loss and muscle loss, water fluctuations (up to 2kg daily), or bone density. It's a blunt instrument used as a precision tool."
+        },
+        {
+          "id": "mh-15-c2",
+          "front": "Muscle vs Fat — Why Composition Matters More",
+          "back": "A pound of muscle takes up about four times less space than a pound of fat — and burns roughly three times more calories at rest. Someone who gains muscle while losing fat can weigh the same (or more) while becoming significantly leaner, healthier, and more metabolically efficient. This is why people who start strength training sometimes see no movement on the scale for weeks — yet their body composition is improving rapidly."
+        },
+        {
+          "id": "mh-15-c3",
+          "front": "The Metrics That Actually Matter",
+          "back": "Better than the scale: waist circumference (over 94cm for men / 80cm for women is higher risk), waist-to-height ratio (below 0.5 is the general target), body fat percentage (measured by DEXA scan, bioimpedance, or skinfold callipers), and grip strength (a surprising proxy for muscle quality and longevity). Your blood markers — blood sugar, triglycerides, blood pressure, HDL — are ultimately more important than any body measurement."
+        },
+        {
+          "id": "mh-15-c4",
+          "front": "The \"Skinny Fat\" Problem",
+          "back": "\"Skinny fat\" (technically: normal-weight obesity) describes people who appear slim but have high body fat and low muscle mass. They may have a healthy BMI while carrying dangerous levels of visceral fat. This is surprisingly common — studies suggest up to 30% of people with a \"healthy\" BMI have metabolic risk profiles equivalent to obese individuals. BMI, like weight, gives an incomplete picture without body composition data."
+        },
+        {
+          "id": "mh-15-c5",
+          "front": "Key Takeaway",
+          "back": "The scale measures one number — total mass. It tells you almost nothing about metabolic health, body composition, or disease risk. Waist circumference, body fat percentage, grip strength, and blood markers are all far more informative. If you do track weight, use a weekly average rather than daily fluctuations, and treat it as one data point among many — not the verdict on your health or your efforts."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-15-q1",
+          "question": "What is \"normal-weight obesity\" (sometimes called \"skinny fat\")?",
+          "options": [
+            "Being overweight but appearing fit",
+            "Having a healthy BMI but high body fat and low muscle mass",
+            "A condition only seen in athletes",
+            "Being underweight with low muscle mass"
+          ],
+          "correctIndex": 1,
+          "explanation": "Normal-weight obesity describes people with a healthy BMI who carry high body fat and low muscle mass — often with dangerous visceral fat levels. Studies suggest up to 30% of healthy-BMI adults fall into this category."
+        },
+        {
+          "id": "mh-15-q2",
+          "question": "Why might someone starting strength training see no change on the scale for weeks?",
+          "options": [
+            "They are doing the exercises wrong",
+            "Muscle gain can offset fat loss on the scale even as body composition improves",
+            "Strength training doesn't burn calories",
+            "Water retention from exercise is permanent"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle is denser than fat. Gaining muscle while losing fat can leave weight unchanged or even increase it — while body composition (and metabolic health) improves significantly. The scale doesn't capture this."
+        },
+        {
+          "id": "mh-15-q3",
+          "question": "What is a healthy waist-to-height ratio target for most adults?",
+          "options": [
+            "Below 0.8",
+            "Below 0.5",
+            "Below 1.0",
+            "Above 0.6"
+          ],
+          "correctIndex": 1,
+          "explanation": "A waist-to-height ratio below 0.5 is the general target for reduced metabolic risk. It's a simple calculation: divide your waist circumference by your height (both in the same units)."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-16",
+      "dayNumber": 16,
+      "title": "The Glycaemic Load of Common Foods",
+      "subtitle": "Why GI alone misses the point — and how to use glycaemic load to make smarter food choices",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-16-c1",
+          "front": "Glycaemic Index — The Useful But Incomplete Tool",
+          "back": "The glycaemic index (GI) ranks foods by how quickly they raise blood sugar compared to pure glucose (score of 100). Low GI foods (below 55) release glucose slowly; high GI foods (above 70) release it fast. The problem: GI only measures the rate of glucose release, not the amount of carbohydrates in a typical serving. Watermelon has a high GI (72) but a typical portion raises blood sugar very little — because it's mostly water."
+        },
+        {
+          "id": "mh-16-c2",
+          "front": "Glycaemic Load — The More Useful Number",
+          "back": "Glycaemic load (GL) accounts for both the GI and the amount of carbohydrates in a realistic serving. GL = (GI × grams of carbs in serving) ÷ 100. Low GL is under 10, medium is 11–19, high is over 20. A bowl of white rice has a GL of about 26 (high). A slice of watermelon has a GL of about 4 (low) — despite its high GI. GL gives you a much more practical picture of how a real meal affects your blood sugar."
+        },
+        {
+          "id": "mh-16-c3",
+          "front": "Practical Food Comparisons",
+          "back": "High GL foods to moderate: white rice (GL ~26), white bread (GL ~20), cornflakes (GL ~24), baked potato (GL ~26), sugary drinks (GL ~16 per 250ml). Lower GL alternatives: basmati rice (GL ~18), sourdough bread (GL ~8), porridge oats (GL ~9), sweet potato (GL ~11), sparkling water with lemon (GL 0). Switching from high-GL to lower-GL versions of staple foods can dramatically smooth your daily blood sugar pattern."
+        },
+        {
+          "id": "mh-16-c4",
+          "front": "Factors That Change the GL of a Meal",
+          "back": "You can lower the effective glycaemic load of a meal by: adding fibre (slows glucose absorption), adding fat (delays gastric emptying), adding protein (blunts insulin response), cooking al dente rather than fully soft (firm pasta has a lower GL than overcooked), cooling cooked starchy foods (cooling converts some starch to resistant starch, which feeds gut bacteria instead of spiking blood sugar), and eating vegetables first."
+        },
+        {
+          "id": "mh-16-c5",
+          "front": "Key Takeaway",
+          "back": "Glycaemic load (GL) is more useful than glycaemic index (GI) because it accounts for how much carbohydrate you actually eat. Focus on low-to-medium GL carbohydrates — especially oats, legumes, sweet potato, sourdough — rather than eliminating carbs entirely. You can further lower a meal's GL by adding fibre, protein, fat, eating vegetables first, and not overcooking starchy foods. Small practical changes, applied consistently, create very different blood sugar patterns."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-16-q1",
+          "question": "Why does watermelon have a high glycaemic index but low glycaemic load?",
+          "options": [
+            "Watermelon contains no sugar",
+            "GI measures rate of glucose release; watermelon's large portion is mostly water, so actual carbs per serving are low",
+            "Watermelon is processed differently by the liver",
+            "GI and GL always give the same result"
+          ],
+          "correctIndex": 1,
+          "explanation": "GI measures how fast glucose is released, but glycaemic load also accounts for the amount of carbohydrates in a typical serving. Watermelon is mostly water, so a normal portion contains very few total carbs despite its high GI."
+        },
+        {
+          "id": "mh-16-q2",
+          "question": "Which of these cooking/preparation methods lowers the glycaemic load of starchy foods?",
+          "options": [
+            "Cooking pasta until very soft",
+            "Cooling cooked rice before eating it",
+            "Adding extra butter after cooking",
+            "Removing the skin from potatoes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cooling cooked starchy foods (rice, pasta, potato) converts some digestible starch into resistant starch — which feeds gut bacteria rather than spiking blood sugar. This meaningfully lowers the effective GL."
+        },
+        {
+          "id": "mh-16-q3",
+          "question": "Which staple food swap would most reduce your daily glycaemic load?",
+          "options": [
+            "White rice → basmati or cauliflower rice",
+            "Whole milk → skimmed milk",
+            "Grilled chicken → roast chicken",
+            "Butter → margarine"
+          ],
+          "correctIndex": 0,
+          "explanation": "White rice has a GL of ~26; basmati has ~18 and cauliflower rice is near zero. This is a high-impact swap because rice is a staple food eaten in large portions. Milk and fat swaps have minimal impact on glycaemic load."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-17",
+      "dayNumber": 17,
+      "title": "Building a Metabolically Healthy Plate",
+      "subtitle": "A practical, no-nonsense plate model that supports stable blood sugar without eliminating foods you love",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-17-c1",
+          "front": "The Metabolic Plate Model",
+          "back": "A simple, effective way to build meals: fill half your plate with non-starchy vegetables (greens, broccoli, peppers, courgette, salad), a quarter with quality protein (chicken, fish, eggs, legumes, tofu), and a quarter with slow-release carbohydrates (sweet potato, oats, brown rice, quinoa, lentils). Add a small amount of healthy fat (olive oil, avocado, nuts). This combination ensures slow glucose release, strong satiety, and the micronutrients your metabolism needs."
+        },
+        {
+          "id": "mh-17-c2",
+          "front": "Vegetables First — The Simple Game-Changer",
+          "back": "Eating vegetables at the start of a meal creates a fibre matrix in the gut that slows the absorption of glucose from everything eaten afterwards. Studies by Jessie Inchauspé (Glucose Goddess) and others show that eating vegetables before carbohydrates reduces post-meal glucose spikes by up to 73%. You don't need to change what you eat — just change the order. Start every meal with something green if you can."
+        },
+        {
+          "id": "mh-17-c3",
+          "front": "The Power of Fibre",
+          "back": "Dietary fibre is one of the most powerful tools for metabolic health. Soluble fibre (oats, beans, apples, psyllium) forms a gel in the gut that slows glucose absorption and feeds beneficial gut bacteria. Insoluble fibre (vegetables, wholegrains) adds bulk and supports gut transit. Both types lower cholesterol, support bowel health, and reduce blood sugar spikes. Most adults eat only 15–18g of fibre per day; the target is 30g. Each 7g increase is associated with a 9% reduction in cardiovascular risk."
+        },
+        {
+          "id": "mh-17-c4",
+          "front": "What to Drink With Meals",
+          "back": "Beverages have a surprisingly large impact on metabolic health. Sugary drinks (juice, fizzy drinks, energy drinks) cause rapid blood sugar spikes with no satiety benefit — they're effectively liquid sugar. Best options: water, sparkling water, herbal tea, black coffee (in moderation). A small glass of water with a splash of apple cider vinegar before a meal (1–2 tsp in water) has been shown in small studies to reduce post-meal glucose spikes by slowing gastric emptying — though the evidence is modest."
+        },
+        {
+          "id": "mh-17-c5",
+          "front": "Key Takeaway",
+          "back": "The metabolic plate model is simple: half vegetables, quarter protein, quarter slow-release carbs, with healthy fat. Eat vegetables first at every meal to reduce glucose spikes by up to 73%. Aim for 30g of fibre per day — most people get half that. Avoid liquid calories (juice, fizzy drinks). These aren't extreme rules — they're practical habits that compound powerfully over months and years of consistent application."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-17-q1",
+          "question": "In the metabolic plate model, what should fill roughly half the plate?",
+          "options": [
+            "Protein (meat, fish, eggs)",
+            "Non-starchy vegetables",
+            "Slow-release carbohydrates",
+            "Healthy fats"
+          ],
+          "correctIndex": 1,
+          "explanation": "Non-starchy vegetables should fill roughly half the plate. They provide fibre, micronutrients, and slow glucose absorption — with minimal blood sugar impact themselves."
+        },
+        {
+          "id": "mh-17-q2",
+          "question": "What is the recommended daily fibre intake for most adults?",
+          "options": [
+            "10g",
+            "20g",
+            "30g",
+            "50g"
+          ],
+          "correctIndex": 2,
+          "explanation": "The recommended daily fibre target for adults is 30g. Most people eat only 15–18g. Research shows each 7g increase in daily fibre is associated with a 9% reduction in cardiovascular risk."
+        },
+        {
+          "id": "mh-17-q3",
+          "question": "Why are fruit juices a poor choice for metabolic health, even 100% natural juice?",
+          "options": [
+            "They contain too many vitamins",
+            "They cause rapid blood sugar spikes with no satiety benefit — effectively liquid sugar",
+            "They are too high in protein",
+            "They slow digestion too much"
+          ],
+          "correctIndex": 1,
+          "explanation": "Even 100% natural fruit juice removes the fibre that slows glucose absorption in whole fruit. The result is a rapid blood sugar spike with no satiety benefit — essentially the same effect as a sugary drink."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-18",
+      "dayNumber": 18,
+      "title": "Movement Snacks",
+      "subtitle": "Why short bursts of movement throughout the day are as powerful as a single gym session",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-18-c1",
+          "front": "The Problem With Sitting",
+          "back": "Prolonged sitting is now considered an independent metabolic risk factor — separate from exercise. Even people who exercise for an hour a day are at elevated risk if they sit for the remaining 8–10 hours. When you sit for long periods, your leg muscles (the largest in the body) go completely inactive. They stop absorbing glucose from the blood, triglycerides accumulate in the bloodstream, and blood flow slows. The metabolic cost of sitting is real and cumulative."
+        },
+        {
+          "id": "mh-18-c2",
+          "front": "What Is a Movement Snack?",
+          "back": "A movement snack is any brief burst of physical activity — 2 to 10 minutes — performed throughout the day, typically between periods of sitting. Examples: 10 squats at your desk, a 3-minute walk around the office, climbing stairs, standing and pacing during a phone call, 20 jumping jacks before a meeting, or a short walk to get a glass of water. The key is breaking up sitting every 30–60 minutes rather than sitting uninterrupted for hours."
+        },
+        {
+          "id": "mh-18-c3",
+          "front": "The Science Behind the Snack",
+          "back": "Research published in Nature Medicine (2022) found that three 20-second vigorous movement snacks (like brisk stair climbing) performed three times throughout the day produced similar cardiovascular fitness improvements to a continuous 10-minute bout of exercise. A separate study found that replacing just 30 minutes of daily sitting with light walking was associated with a 24% lower mortality risk. Small, frequent movement is metabolically powerful."
+        },
+        {
+          "id": "mh-18-c4",
+          "front": "Practical Ways to Build Movement Into Your Day",
+          "back": "Effective movement snack strategies: set a timer every 45–60 minutes as a \"stand and move\" reminder, take the stairs instead of lifts whenever possible, walk or stand during phone calls, do bodyweight exercises (squats, calf raises, press-ups) while waiting for a kettle or microwave, park further away or get off public transport one stop early, use a standing desk for part of the day, and build a 10-minute post-lunch walk into your routine."
+        },
+        {
+          "id": "mh-18-c5",
+          "front": "Key Takeaway",
+          "back": "Prolonged sitting is harmful to metabolic health independent of your exercise habits. Breaking up sitting every 30–60 minutes with 2–10 minute movement snacks can meaningfully improve blood sugar control, cardiovascular health, and triglycerides. You don't need a gym or a long workout — the simplest habit is standing up and moving briefly, regularly, throughout the day. Small, consistent movement snacks are one of the highest-return, lowest-cost metabolic health habits."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-18-q1",
+          "question": "Why is prolonged sitting harmful even for people who exercise regularly?",
+          "options": [
+            "Exercise doesn't count if you sit afterwards",
+            "Prolonged sitting is an independent risk factor — leg muscles become inactive, glucose absorption stops, and triglycerides accumulate",
+            "Sitting causes back pain which prevents exercise",
+            "Only 30+ hours of sitting per week is harmful"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sitting is an independent metabolic risk factor separate from exercise. When you sit, your large leg muscles become inactive and stop absorbing glucose from the blood — even an hour of earlier exercise doesn't fully offset this effect."
+        },
+        {
+          "id": "mh-18-q2",
+          "question": "According to a Nature Medicine study, how often should movement snacks be taken?",
+          "options": [
+            "Once a day is enough",
+            "Once per week",
+            "Three times throughout the day, breaking up sitting every 30–60 minutes",
+            "Only after meals"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research found that three short vigorous movement snacks spread throughout the day produced similar cardiovascular fitness improvements to a continuous 10-minute bout of exercise — and breaking sitting every 30–60 minutes is the general recommendation."
+        },
+        {
+          "id": "mh-18-q3",
+          "question": "What was associated with a 24% lower mortality risk in research?",
+          "options": [
+            "Running a marathon",
+            "Replacing just 30 minutes of daily sitting with light walking",
+            "Doing 100 press-ups a day",
+            "Joining a gym"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research found that simply replacing 30 minutes of daily sitting with light walking was associated with a 24% reduction in mortality risk — demonstrating that low-intensity movement throughout the day has profound health benefits."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-19",
+      "dayNumber": 19,
+      "title": "Fasting & Time-Restricted Eating",
+      "subtitle": "What the evidence actually says — and how to know if it's right for you",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-19-c1",
+          "front": "What Is Time-Restricted Eating?",
+          "back": "Time-restricted eating (TRE) — sometimes called intermittent fasting — means limiting your eating to a defined window each day: typically 8–12 hours, with fasting for the remaining 12–16 hours. The most common approach is 16:8 (eating within an 8-hour window, such as 10am–6pm). The principle: giving your body an extended period without food allows insulin levels to fall fully, enabling fat burning and cellular repair processes (like autophagy) that can't occur in a perpetually fed state."
+        },
+        {
+          "id": "mh-19-c2",
+          "front": "What the Evidence Actually Shows",
+          "back": "The evidence for TRE is genuinely promising but more modest than popular coverage suggests. A 2022 New England Journal of Medicine study found that TRE produced modest weight loss but no significant advantage over simple calorie restriction when calories were matched. However, TRE does show consistent benefits for metabolic markers beyond weight: lower fasting insulin, reduced triglycerides, improved blood pressure, and better blood sugar control — even without calorie counting."
+        },
+        {
+          "id": "mh-19-c3",
+          "front": "Aligning Eating With Your Body Clock",
+          "back": "Circadian biology (your body clock) may be as important as the length of the fasting window. Research by Satchin Panda shows that eating earlier in the day — when insulin sensitivity is highest — produces better metabolic outcomes than the same eating window later. Late-night eating (after 8–9pm) is particularly problematic: insulin sensitivity is lowest in the evening, so the same meal eaten at 9pm causes a much larger blood sugar spike than at midday."
+        },
+        {
+          "id": "mh-19-c4",
+          "front": "Who Should Be Cautious",
+          "back": "Fasting is not suitable for everyone. It should be approached carefully (or avoided) by: people with a history of eating disorders or disordered eating, pregnant or breastfeeding women, people with type 1 diabetes or who take insulin or blood-sugar-lowering medications, children and teenagers, and people who are underweight. If you have any chronic health condition or take regular medication, speak to your GP or doctor before starting any fasting protocol."
+        },
+        {
+          "id": "mh-19-c5",
+          "front": "Key Takeaway",
+          "back": "Time-restricted eating can improve metabolic markers — especially fasting insulin, triglycerides, and blood pressure — even without counting calories. But it's not magic: when calories are matched, the advantages over regular healthy eating are modest. The most evidence-based approach is eating within a 10–12 hour window earlier in the day, avoiding late-night eating, and treating it as one tool among many rather than a silver bullet. Always check with a doctor if you have health conditions or take medication."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-19-q1",
+          "question": "What does time-restricted eating primarily aim to achieve metabolically?",
+          "options": [
+            "Eliminate all carbohydrates from the diet",
+            "Allow insulin levels to fall fully, enabling fat burning and cellular repair",
+            "Increase muscle mass rapidly",
+            "Replace the need for exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "By creating an extended fasting window, TRE allows insulin levels to fall fully — enabling fat-burning and cellular repair processes like autophagy that can't occur when the body is constantly processing food."
+        },
+        {
+          "id": "mh-19-q2",
+          "question": "Why is late-night eating particularly problematic for metabolic health?",
+          "options": [
+            "The body can't digest food while sleeping",
+            "Insulin sensitivity is lowest in the evening, so the same meal causes a larger blood sugar spike",
+            "The calories are absorbed differently at night",
+            "It disrupts appetite hormones permanently"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research on circadian biology shows insulin sensitivity is lowest in the evening. The same meal eaten at 9pm causes a significantly larger blood sugar and insulin response than the same meal at midday."
+        },
+        {
+          "id": "mh-19-q3",
+          "question": "Which group should be cautious about or avoid fasting protocols?",
+          "options": [
+            "People with high triglycerides",
+            "Healthy adults over 30",
+            "People with a history of eating disorders, pregnant women, or those on blood-sugar medications",
+            "People who enjoy breakfast"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fasting is not suitable for people with a history of eating disorders, pregnant or breastfeeding women, those with type 1 diabetes or on insulin/blood-sugar medications, children, or those who are underweight. Always consult a doctor first if you have any health conditions."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-20",
+      "dayNumber": 20,
+      "title": "Stress Hormones & Metabolic Health",
+      "subtitle": "How chronic stress silently undermines your blood sugar, fat storage, and metabolism",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-20-c1",
+          "front": "The Stress-Blood Sugar Connection",
+          "back": "When you're stressed, your body releases cortisol and adrenaline — hormones that prepare you for \"fight or flight.\" Part of that preparation is releasing glucose into the bloodstream to fuel your muscles for action. This is perfectly useful if you're running from danger. The problem: modern stress (work deadlines, financial worry, relationship conflict) triggers the same response without the physical activity to use the glucose, leaving blood sugar persistently elevated."
+        },
+        {
+          "id": "mh-20-c2",
+          "front": "Cortisol — The Fat-Storage Hormone",
+          "back": "Chronically elevated cortisol is one of the most powerful drivers of visceral fat accumulation. Cortisol signals the body to store energy centrally (around the abdomen) as a survival mechanism — the body assumes you're in a prolonged crisis and needs easily accessible fuel reserves. It also directly worsens insulin resistance, increases appetite (especially for calorie-dense foods), disrupts sleep, and suppresses immune function. Chronic stress is a genuine metabolic health crisis."
+        },
+        {
+          "id": "mh-20-c3",
+          "front": "Stress Eating Is Biological, Not Weakness",
+          "back": "The drive to eat more under stress isn't a willpower failure — it's biology. Cortisol increases appetite and cravings for high-calorie, high-sugar, high-fat foods (often called \"comfort food\"). These foods temporarily activate reward pathways that reduce stress perception. At the same time, elevated cortisol blunts the brain's satiety signals, making it harder to feel full. Understanding this removes self-blame and points toward the real solution: managing the stress, not fighting the hunger."
+        },
+        {
+          "id": "mh-20-c4",
+          "front": "Practical Stress-Metabolism Interventions",
+          "back": "Evidence-based tools that lower cortisol and improve metabolic response to stress: slow diaphragmatic breathing (5-minute box breathing or physiological sigh can measurably lower cortisol within minutes), regular physical exercise (one of the most effective stress-hormone regulators), adequate sleep (see Lesson 14), social connection (cortisol is lowered by positive social interaction), time in nature (even 20 minutes reduces cortisol measurably), and mindfulness or meditation practice."
+        },
+        {
+          "id": "mh-20-c5",
+          "front": "Key Takeaway",
+          "back": "Chronic stress is a metabolic health threat — not just a mood problem. Cortisol raises blood sugar, promotes visceral fat storage, worsens insulin resistance, disrupts sleep, and drives cravings. Stress eating is a biological response, not a character flaw. Managing chronic stress is as important for metabolic health as what you eat. Practical tools: regular exercise, quality sleep, slow breathing, social connection, and time in nature all lower cortisol and improve metabolic function."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-20-q1",
+          "question": "Why does modern stress raise blood sugar even when you're not physically active?",
+          "options": [
+            "Stress hormones prevent insulin from working at night only",
+            "Cortisol and adrenaline release glucose into the bloodstream to fuel muscles — but there's no physical activity to use it",
+            "Stress slows digestion, trapping glucose",
+            "Stress hormones only affect blood sugar in people with diabetes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The fight-or-flight response releases glucose to fuel physical action. Modern stressors trigger this response without the accompanying physical activity, leaving blood sugar elevated with nowhere to go."
+        },
+        {
+          "id": "mh-20-q2",
+          "question": "Why does chronic cortisol specifically promote fat storage around the abdomen?",
+          "options": [
+            "The abdomen is the largest available storage space",
+            "As a survival mechanism, cortisol signals the body to store energy centrally for easily accessible fuel reserves",
+            "Abdominal fat has more fat cells",
+            "Cortisol only affects abdominal muscles, not other areas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chronically elevated cortisol signals the body that it's in a prolonged survival crisis — so it stores fat centrally (around organs) where it's most easily accessed for energy. This is visceral fat accumulation driven by chronic stress."
+        },
+        {
+          "id": "mh-20-q3",
+          "question": "How quickly can slow breathing techniques measurably lower cortisol?",
+          "options": [
+            "After 6 weeks of practice only",
+            "Within minutes",
+            "Only after several hours",
+            "It has no effect on cortisol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Techniques like box breathing or a physiological sigh (double inhale through the nose, long exhale through the mouth) can measurably lower cortisol and activate the parasympathetic nervous system within minutes."
+        }
+      ]
+    },
+    {
+      "id": "mh-lesson-21",
+      "dayNumber": 21,
+      "title": "Your Personal Metabolic Strategy",
+      "subtitle": "Pulling everything together — building a sustainable, personalised plan that actually works for your life",
+      "moduleId": "mh-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "mh-21-c1",
+          "front": "There Is No Perfect Plan — Only Your Plan",
+          "back": "Metabolic health is not one-size-fits-all. Your blood sugar response to food is shaped by your gut microbiome, genetics, sleep, stress, activity levels, and even the time of day you eat. Research by Tim Spector and colleagues showed that two people eating identical meals can have glucose responses that differ by 300%. The goal of this final lesson isn't to give you a perfect protocol — it's to help you build one that works for your biology, your preferences, and your life."
+        },
+        {
+          "id": "mh-21-c2",
+          "front": "Your Metabolic Health Checklist",
+          "back": "The foundations that move the needle most, in order of impact: 1) Reduce ultra-processed foods and sugary drinks. 2) Build meals around the metabolic plate model (half veg, quarter protein, quarter slow carbs). 3) Move your body daily — including a 10-min post-meal walk where possible. 4) Prioritise 7–9 hours of quality sleep. 5) Manage chronic stress actively. 6) Build muscle through resistance training. 7) Break up sitting every 45–60 minutes. 8) Get your blood markers checked regularly."
+        },
+        {
+          "id": "mh-21-c3",
+          "front": "The Highest-Leverage Starting Points",
+          "back": "If you can only do three things: first, cut sugary drinks and ultra-processed foods (the single highest-impact dietary change). Second, take a 10-minute walk after your largest meal (immediate blood sugar benefit, free, requires nothing). Third, prioritise sleep — poor sleep undoes almost every other metabolic effort. These three changes alone, applied consistently, will shift your metabolic health markers significantly within weeks."
+        },
+        {
+          "id": "mh-21-c4",
+          "front": "What to Track and When",
+          "back": "Useful metrics to review regularly: waist circumference (monthly), energy and mood (daily, subjective), fasting blood glucose (annual blood test), HbA1c (annual), triglyceride-to-HDL ratio (annual), blood pressure (every 3–6 months at your pharmacy). For a more detailed picture: ask your GP about fasting insulin, apoB, and body composition. You don't need a continuous glucose monitor to improve your metabolic health — but if you're curious, one week of wearing one can be remarkably illuminating."
+        },
+        {
+          "id": "mh-21-c5",
+          "front": "Key Takeaway",
+          "back": "Metabolic health is not about perfection — it's about consistent, informed choices. You now understand blood sugar, insulin, cholesterol, visceral fat, and how food, movement, sleep, and stress all interact. The three highest-leverage changes: cut ultra-processed foods, take post-meal walks, and protect your sleep. Start with whichever feels most achievable, build one habit at a time, and know that your body is remarkably responsive to consistent positive change. The best investment you can make in your future is metabolic health today."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "mh-21-q1",
+          "question": "What does research by Tim Spector show about blood sugar responses to identical meals?",
+          "options": [
+            "Everyone has exactly the same response to the same food",
+            "Two people can have glucose responses that differ by 300% to the same meal",
+            "Blood sugar responses are entirely genetic and can't change",
+            "Blood sugar only varies with meal size, not individual biology"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that two people eating identical meals can have glucose responses differing by up to 300% — shaped by gut microbiome, genetics, sleep, stress, and activity levels. This is why personalised approaches matter."
+        },
+        {
+          "id": "mh-21-q2",
+          "question": "Of all the metabolic health foundations, which three are the highest-leverage starting points?",
+          "options": [
+            "Buying a gym membership, cutting all carbs, and taking supplements",
+            "Cutting sugary drinks and ultra-processed foods, taking post-meal walks, and prioritising sleep",
+            "Fasting 16 hours daily, eating raw foods only, and cold-water swimming",
+            "Counting every calorie, doing cardio daily, and taking omega-3 supplements"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three highest-leverage, lowest-barrier starting points are: cutting sugary drinks and UPFs (biggest dietary impact), post-meal walks (immediate free blood sugar benefit), and sleep (poor sleep undoes all other metabolic efforts)."
+        },
+        {
+          "id": "mh-21-q3",
+          "question": "How often should you review key metabolic blood markers like HbA1c and triglycerides?",
+          "options": [
+            "Every week",
+            "Every day",
+            "Annually, as part of a routine blood test",
+            "Only when you feel unwell"
+          ],
+          "correctIndex": 2,
+          "explanation": "HbA1c, triglyceride-to-HDL ratio, and fasting blood glucose are most practically reviewed annually as part of routine blood tests. More frequent monitoring isn't necessary for most people unless a concern is identified."
+        }
+      ]
+    }
+  ]
+}

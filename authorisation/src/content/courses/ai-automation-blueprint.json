@@ -1,0 +1,2526 @@
+{
+  "id": "ai-automation-blueprint",
+  "title": "AI Automation Blueprint",
+  "subtitle": "Automate repetitive tasks and save hours daily. Build no-code AI workflows that run 24/7 — from simple triggers to intelligent multi-step systems.",
+  "totalDays": 28,
+  "totalXp": 700,
+  "modules": [
+    {
+      "id": "aab-mod-1",
+      "moduleNumber": 1,
+      "title": "Automation Foundations",
+      "subtitle": "The mindset, tools, and first workflows to start automating your life",
+      "days": "1–7",
+      "skill": "Foundation",
+      "lessonIds": [
+        "aab-1",
+        "aab-2",
+        "aab-3",
+        "aab-4",
+        "aab-5",
+        "aab-6",
+        "aab-7"
+      ]
+    },
+    {
+      "id": "aab-mod-2",
+      "moduleNumber": 2,
+      "title": "Communication & Scheduling",
+      "subtitle": "Automate emails, meetings, follow-ups, and team communication",
+      "days": "8–14",
+      "skill": "Communication",
+      "lessonIds": [
+        "aab-8",
+        "aab-9",
+        "aab-10",
+        "aab-11",
+        "aab-12",
+        "aab-13",
+        "aab-14"
+      ]
+    },
+    {
+      "id": "aab-mod-3",
+      "moduleNumber": 3,
+      "title": "Data & Document Automations",
+      "subtitle": "Turn messy data into organised, self-running systems",
+      "days": "15–21",
+      "skill": "Data Systems",
+      "lessonIds": [
+        "aab-15",
+        "aab-16",
+        "aab-17",
+        "aab-18",
+        "aab-19",
+        "aab-20",
+        "aab-21"
+      ]
+    },
+    {
+      "id": "aab-mod-4",
+      "moduleNumber": 4,
+      "title": "Advanced Automation & Scale",
+      "subtitle": "Build complex multi-step systems and your automation operating system",
+      "days": "22–28",
+      "skill": "Mastery",
+      "lessonIds": [
+        "aab-22",
+        "aab-23",
+        "aab-24",
+        "aab-25",
+        "aab-26",
+        "aab-27",
+        "aab-28"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "aab-1",
+      "dayNumber": 1,
+      "moduleId": "aab-mod-1",
+      "title": "The Automation Mindset",
+      "subtitle": "Why most people waste 40% of their day on tasks machines should do.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're the Most Expensive Robot in Your Office",
+          "body": "Every time you copy data between apps, send a follow-up email, or update a spreadsheet manually, you're doing work a machine could do in milliseconds. The average knowledge worker spends 40% of their day on repetitive tasks that can be fully automated.",
+          "stat": "40%",
+          "statLabel": "of your day spent on automatable tasks"
+        },
+        {
+          "type": "content",
+          "headline": "What Automation Actually Means",
+          "body": "Automation isn't about replacing humans — it's about freeing humans for work that actually requires a brain. At its core, automation means: \"When X happens, do Y automatically.\" That's it.",
+          "bullets": [
+            "A new email arrives → auto-categorise and draft a reply",
+            "A form is submitted → create a task, notify the team, update the CRM",
+            "A meeting ends → generate notes, extract actions, send follow-ups",
+            "A deadline approaches → send reminders to all stakeholders"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 3 Levels of Automation",
+          "body": "Think of automation as a ladder you climb:",
+          "bullets": [
+            "Level 1 — Simple: One trigger → one action (e.g., new email → Slack notification)",
+            "Level 2 — Multi-step: One trigger → sequence of actions with logic (if/else)",
+            "Level 3 — AI-powered: AI decides what action to take based on context"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Compound Effect of Automation",
+          "body": "Automating one task saves 5 minutes. Boring. But automating 20 tasks saves 2+ hours every single day — that's 520 hours per year. And unlike human effort, automations run 24/7 without breaks, mistakes, or bad days. Each automation you build compounds forever."
+        },
+        {
+          "type": "try-it",
+          "headline": "Find Your First 5 Automation Targets",
+          "body": "Open your task list or calendar from yesterday. Circle every task that: (1) you've done before, (2) follows a pattern, (3) doesn't require creative thinking. List your top 5. These are your automation candidates. Paste them into AI and ask: \"Which of these 5 tasks could be automated, and what tool would you use?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of a knowledge worker's day is typically spent on automatable tasks?",
+          "type": "mcq",
+          "options": [
+            "10%",
+            "25%",
+            "40%",
+            "60%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows the average knowledge worker spends approximately 40% of their day on repetitive, automatable tasks — nearly half the workday."
+        },
+        {
+          "question": "Automation is primarily about replacing human workers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Automation is about freeing humans for work that requires creativity, judgment, and strategic thinking — not replacing people."
+        },
+        {
+          "question": "Which is the highest level of automation?",
+          "type": "mcq",
+          "options": [
+            "Simple trigger → action",
+            "Multi-step with if/else logic",
+            "AI decides actions based on context",
+            "Manual with templates"
+          ],
+          "correctIndex": 2,
+          "explanation": "Level 3 (AI-powered) is the most advanced — where AI analyses the situation and decides what action to take, rather than following fixed rules."
+        }
+      ]
+    },
+    {
+      "id": "aab-2",
+      "dayNumber": 2,
+      "moduleId": "aab-mod-1",
+      "title": "Mapping Your Repetitive Tasks",
+      "subtitle": "The audit framework to find your biggest time drains and automation opportunities.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Automate What You Can't See",
+          "body": "Most people massively underestimate how much repetitive work they do because it's invisible — woven into the fabric of their day. A task audit reveals the hidden 10+ hours per week you're wasting on work a machine should handle.",
+          "stat": "10+",
+          "statLabel": "hidden hours per week of repetitive work"
+        },
+        {
+          "type": "content",
+          "headline": "The RICE Audit Framework",
+          "body": "Score every repetitive task on four dimensions to find your highest-value automation targets:",
+          "bullets": [
+            "R — Repetition: How often do you do this? (daily = high priority)",
+            "I — Impact: How much time does each occurrence take? (15+ min = high)",
+            "C — Complexity: How many steps? (fewer steps = easier to automate first)",
+            "E — Error-prone: Do you make mistakes doing this? (errors = automate now)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Task Tracking Method",
+          "body": "For the next 2 days, keep a running log. Every time you do something repetitive, jot it down with the time it took. Categories to watch for:",
+          "bullets": [
+            "Copy-paste between apps (CRM → spreadsheet → email)",
+            "Status updates and check-ins (updating people on progress)",
+            "Data entry and formatting (reformatting reports, logs, records)",
+            "Scheduling and coordination (back-and-forth to book meetings)",
+            "File management (moving, renaming, organising files)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Should I Automate This?\" Decision Tree",
+          "body": "Ask three questions: (1) Does this happen more than twice a week? (2) Does it follow the same steps each time? (3) Would I notice if it was done slightly differently? If the answers are Yes, Yes, No — automate it immediately."
+        },
+        {
+          "type": "try-it",
+          "headline": "Run Your 5-Minute Task Audit",
+          "body": "Write down everything you did today that was repetitive. For each task, rate it 1-5 on Repetition, Impact, Complexity (inverse — 5 = simple), and Error-proneness. Multiply the scores. Your highest-scoring task is your #1 automation target. Paste your list into AI and ask for a prioritised automation plan."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"I\" in the RICE audit framework stand for?",
+          "type": "mcq",
+          "options": [
+            "Innovation",
+            "Impact",
+            "Integration",
+            "Iteration"
+          ],
+          "correctIndex": 1,
+          "explanation": "I stands for Impact — how much time each occurrence of the task takes. Tasks that take 15+ minutes per occurrence are high-impact automation candidates."
+        },
+        {
+          "question": "A task that happens once a month but takes 5 hours is a poor automation candidate.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 5-hour monthly task is actually a great automation candidate because of its high Impact score — even though frequency is low, the time saved per occurrence is enormous."
+        },
+        {
+          "question": "Which combination makes a task the BEST automation candidate?",
+          "type": "mcq",
+          "options": [
+            "Rare, creative, complex",
+            "Frequent, time-consuming, follows a pattern",
+            "One-time, strategic, requires judgment",
+            "Occasional, enjoyable, unpredictable"
+          ],
+          "correctIndex": 1,
+          "explanation": "Frequent tasks that consume significant time and follow consistent patterns are ideal automation candidates — high repetition, high impact, low complexity."
+        }
+      ]
+    },
+    {
+      "id": "aab-3",
+      "dayNumber": 3,
+      "moduleId": "aab-mod-1",
+      "title": "Triggers, Actions & Logic",
+      "subtitle": "The building blocks every automation uses — master these and you can build anything.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every Automation Follows the Same Recipe",
+          "body": "Whether you're building a simple email forwarder or a complex AI-powered customer service system, every automation is built from just three ingredients: a Trigger (what starts it), Actions (what it does), and Logic (what decides). Master these three and you can automate anything.",
+          "stat": "3",
+          "statLabel": "building blocks for any automation"
+        },
+        {
+          "type": "content",
+          "headline": "Triggers: What Starts the Automation",
+          "body": "A trigger is the event that kicks off your workflow. Common triggers include:",
+          "bullets": [
+            "Time-based: Every Monday at 9am, every hour, at the end of each day",
+            "Event-based: New email arrives, form submitted, file uploaded",
+            "Condition-based: Spreadsheet value changes, status updated, threshold hit",
+            "Manual: You click a button or send a specific command"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Actions: What the Automation Does",
+          "body": "Actions are the steps your automation performs after triggering:",
+          "bullets": [
+            "Send: Email, Slack message, SMS, push notification",
+            "Create: New row in spreadsheet, task in project tool, record in CRM",
+            "Update: Change a status, add a tag, modify a field",
+            "Transform: Reformat data, summarise text, extract information",
+            "Wait: Pause for a set time before continuing (delay steps)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Logic: The Brain of Your Automation",
+          "body": "Logic decides what path the automation takes. Think of it as \"if/else\" for machines: \"If the email is from a VIP client → reply immediately. Else → add to queue.\" Filters, conditions, and branching paths make automations smart enough to handle different scenarios without your input."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your First Automation Blueprint",
+          "body": "Take your #1 task from yesterday's audit. Break it into: (1) What triggers it? (2) What actions happen? (3) Are there any \"if/else\" decisions? Write it as: \"WHEN [trigger] → DO [action 1] → THEN [action 2] → IF [condition] → DO [action 3].\" This is your automation blueprint."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three building blocks of every automation?",
+          "type": "mcq",
+          "options": [
+            "Input, Process, Output",
+            "Trigger, Action, Logic",
+            "Start, Middle, End",
+            "Data, Code, Result"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every automation consists of a Trigger (what starts it), Actions (what it does), and Logic (what decides the path). These three building blocks combine to create any workflow."
+        },
+        {
+          "question": "A time-based trigger can only run once per day.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Time-based triggers can run at any frequency — every minute, every hour, every Monday at 9am, or even once per year. You set the schedule."
+        },
+        {
+          "question": "What does \"Logic\" do in an automation?",
+          "type": "mcq",
+          "options": [
+            "Starts the workflow",
+            "Performs the main task",
+            "Decides which path the automation takes based on conditions",
+            "Stores the final output"
+          ],
+          "correctIndex": 2,
+          "explanation": "Logic is the decision-making layer — it evaluates conditions (if/else) to determine which path the automation follows, making it smart enough to handle different scenarios."
+        }
+      ]
+    },
+    {
+      "id": "aab-4",
+      "dayNumber": 4,
+      "moduleId": "aab-mod-1",
+      "title": "Your First Automation",
+      "subtitle": "Build a working \"if this, then that\" workflow in 10 minutes flat.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Learning, Start Building",
+          "body": "The best way to learn automation is to build one. Today you'll create your first real automation — a simple but genuinely useful workflow that saves you time starting immediately. No code, no technical skills, just drag-and-drop logic.",
+          "stat": "10",
+          "statLabel": "minutes to build your first automation"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your First Automation Tool",
+          "body": "For your first build, pick one of these beginner-friendly platforms:",
+          "bullets": [
+            "Zapier — Most user-friendly, largest app library (5,000+ apps)",
+            "Make (formerly Integromat) — More powerful visual builder, better free tier",
+            "IFTTT — Simplest for personal automations (smart home, social media)",
+            "Apple Shortcuts / Google Routines — Built into your phone already"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "5 Beginner Automations That Actually Help",
+          "body": "Pick one to build right now:",
+          "bullets": [
+            "1. Email → Spreadsheet: Important emails auto-logged to a Google Sheet",
+            "2. Calendar → Slack: Get a morning summary of today's meetings",
+            "3. Form → Email: New form submission → automatic thank-you email",
+            "4. Save → Organise: New bookmark/save → auto-tagged in Notion",
+            "5. Weekly digest: Every Friday, get a summary of your week's completions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Build Process (4 Steps)",
+          "body": "Building your first automation follows these steps: (1) Pick your trigger app and event, (2) Connect your accounts (one-click OAuth), (3) Add action steps, (4) Test it with real data. Most platforms guide you through with a visual builder — no typing code, just clicking and configuring."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build It Now — 10-Minute Challenge",
+          "body": "Sign up for Zapier or Make (both have free tiers). Choose automation #1 from the list: \"When I receive an email from [specific person/label], log the subject and date to a Google Sheet.\" Connect your email, connect Google Sheets, set the trigger, add the action, test it. You'll have a working automation in under 10 minutes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which platform has the largest library of connected apps?",
+          "type": "mcq",
+          "options": [
+            "IFTTT",
+            "Make",
+            "Zapier",
+            "Apple Shortcuts"
+          ],
+          "correctIndex": 2,
+          "explanation": "Zapier connects to over 5,000 apps — the largest library of any automation platform. It's also the most user-friendly for beginners."
+        },
+        {
+          "question": "You need to write code to build your first automation on platforms like Zapier.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "No-code automation platforms like Zapier and Make use visual drag-and-drop builders. You connect apps with clicks, not code."
+        },
+        {
+          "question": "What is the correct order for building an automation?",
+          "type": "mcq",
+          "options": [
+            "Test → Trigger → Action → Connect",
+            "Trigger → Connect accounts → Add actions → Test",
+            "Code → Deploy → Monitor → Fix",
+            "Action → Logic → Trigger → Review"
+          ],
+          "correctIndex": 1,
+          "explanation": "The build process is: Pick your trigger → Connect your accounts → Add action steps → Test with real data. This is the standard flow on all no-code platforms."
+        }
+      ]
+    },
+    {
+      "id": "aab-5",
+      "dayNumber": 5,
+      "moduleId": "aab-mod-1",
+      "title": "Data Flow Basics",
+      "subtitle": "How information moves between apps and why it matters for reliable automations.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Data Is the Fuel of Automation",
+          "body": "An automation without good data is like a car without petrol — it looks right but goes nowhere. Understanding how data flows between apps is the single most important skill for building automations that actually work reliably, every time.",
+          "stat": "80%",
+          "statLabel": "of automation failures are data issues"
+        },
+        {
+          "type": "content",
+          "headline": "How Data Moves Between Apps",
+          "body": "When an automation runs, data travels through a pipeline:",
+          "bullets": [
+            "Source app produces data (e.g., a new email with subject, body, sender)",
+            "The automation platform captures it as structured fields",
+            "You map fields from source to destination (subject → spreadsheet column A)",
+            "Destination app receives and stores the formatted data"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Field Mapping — The Key Skill",
+          "body": "Field mapping is connecting \"this data from here\" to \"that field over there.\" Think of it as wiring: the email's \"sender name\" connects to the spreadsheet's \"Contact Name\" column. Good field mapping = reliable automations. Bad mapping = broken data and confusion.",
+          "bullets": [
+            "Always test with real data, not dummy data",
+            "Check data types match (text → text, number → number)",
+            "Handle missing fields gracefully (set defaults)",
+            "Use formatting steps to clean messy data before it moves"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common Data Pitfalls",
+          "body": "Most automation failures come from data issues: dates in wrong formats (US vs UK), missing required fields, text that's too long for the destination, or special characters breaking things. The fix: always add a \"formatter\" step that cleans and validates data before it reaches its destination."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map a Real Data Flow",
+          "body": "Take your automation from yesterday. Draw the data flow: What fields come from the trigger? What fields does the destination need? Create a simple mapping table: Source Field → Destination Field. Check: are there any fields that might be empty sometimes? Add default values for those. This is professional-grade automation design."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of automation failures are caused by data issues?",
+          "type": "mcq",
+          "options": [
+            "20%",
+            "50%",
+            "80%",
+            "95%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Approximately 80% of automation failures stem from data problems — wrong formats, missing fields, type mismatches, or special characters. Mastering data flow prevents most issues."
+        },
+        {
+          "question": "Field mapping connects data from a source app to the correct fields in a destination app.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Field mapping is the process of connecting specific data fields from the source (e.g., email sender) to the corresponding fields in the destination (e.g., spreadsheet column)."
+        },
+        {
+          "question": "What should you do when a source field might sometimes be empty?",
+          "type": "mcq",
+          "options": [
+            "Ignore it and hope for the best",
+            "Set a default value for that field",
+            "Delete the entire automation",
+            "Only run the automation on weekdays"
+          ],
+          "correctIndex": 1,
+          "explanation": "Setting default values for potentially empty fields ensures your automation runs smoothly even when data is incomplete — this is a professional best practice."
+        }
+      ]
+    },
+    {
+      "id": "aab-6",
+      "dayNumber": 6,
+      "moduleId": "aab-mod-1",
+      "title": "Error Handling & Reliability",
+      "subtitle": "Making automations that don't break at 2am — built-in safeguards and recovery.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Automation Will Break. Plan for It.",
+          "body": "Every automation eventually fails — an API goes down, a field is empty, a format changes. Amateurs panic when this happens. Professionals build error handling from day one so their systems recover automatically and alert them only when human attention is truly needed.",
+          "stat": "100%",
+          "statLabel": "of automations will eventually encounter an error"
+        },
+        {
+          "type": "content",
+          "headline": "The 4 Types of Automation Failures",
+          "body": "Know your enemies:",
+          "bullets": [
+            "Connection failures: An app's API is down or your auth token expired",
+            "Data failures: A required field is missing, empty, or wrong format",
+            "Logic failures: Your conditions don't cover an edge case",
+            "Rate limit failures: You hit the maximum allowed requests per minute"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Resilient Automations",
+          "body": "Add these safeguards to every automation you build:",
+          "bullets": [
+            "Retry logic: Automatically retry failed steps 2-3 times with a delay",
+            "Default values: Never let a missing field crash the whole workflow",
+            "Error notifications: Send yourself an alert when something fails",
+            "Dead letter queue: Store failed items so you can process them later",
+            "Graceful degradation: If step 3 fails, still complete steps 1-2"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Error Path\" Pattern",
+          "body": "In Make and Zapier, you can add an \"error path\" — a separate branch that runs only when the main path fails. Use it to: log the error, notify you via Slack/email, and save the failed data for manual review. This turns catastrophic failures into minor notifications."
+        },
+        {
+          "type": "try-it",
+          "headline": "Add Error Handling to Your Automation",
+          "body": "Open the automation you built in Lesson 4. Add three things: (1) An error notification — if any step fails, send yourself a Slack message or email. (2) A retry on the main action (most platforms have this built in). (3) A default value for any field that could be empty. Congratulations — your automation is now production-grade."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which is NOT a common type of automation failure?",
+          "type": "mcq",
+          "options": [
+            "Connection failure",
+            "Data failure",
+            "Gravity failure",
+            "Rate limit failure"
+          ],
+          "correctIndex": 2,
+          "explanation": "The four common types are connection failures, data failures, logic failures, and rate limit failures. \"Gravity failure\" isn't a thing in automation."
+        },
+        {
+          "question": "An automation should crash completely if one step fails.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Good automations use graceful degradation — if step 3 fails, steps 1 and 2 should still complete successfully. Error paths handle failures without crashing everything."
+        },
+        {
+          "question": "What is a \"dead letter queue\" in automation?",
+          "type": "mcq",
+          "options": [
+            "A list of cancelled automations",
+            "Storage for failed items so you can process them later",
+            "An email folder for spam",
+            "A log of deleted workflows"
+          ],
+          "correctIndex": 1,
+          "explanation": "A dead letter queue stores items that failed processing, allowing you to review and retry them later — nothing is permanently lost."
+        }
+      ]
+    },
+    {
+      "id": "aab-7",
+      "dayNumber": 7,
+      "moduleId": "aab-mod-1",
+      "title": "The Automation Stack",
+      "subtitle": "Choosing the right tools for the job — Zapier vs Make vs n8n vs AI agents.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Tool Doesn't Matter. The System Does.",
+          "body": "People waste weeks debating Zapier vs Make vs n8n. The truth: they all do the same thing differently. What matters is picking one, mastering it, and building a system. Today you'll understand the strengths of each so you can choose confidently and move on to building.",
+          "stat": "5",
+          "statLabel": "major automation platforms compared"
+        },
+        {
+          "type": "content",
+          "headline": "Platform Comparison: Quick Guide",
+          "body": "Here's the honest breakdown:",
+          "bullets": [
+            "Zapier: Easiest to use, most app connections (5,000+), best for beginners. Expensive at scale.",
+            "Make: More powerful visual builder, better pricing, steeper learning curve. Best value overall.",
+            "n8n: Open-source, self-hosted option. Free but requires technical setup. Maximum flexibility.",
+            "Power Automate: Best if you're in the Microsoft ecosystem (Teams, Outlook, SharePoint).",
+            "AI agents (Claude/ChatGPT): Best for tasks requiring judgment, not just rules."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Choose Your Primary Platform",
+          "body": "Answer these questions:",
+          "bullets": [
+            "What apps do you use daily? → Check which platform connects them",
+            "What's your budget? → Zapier is expensive; Make offers more for less",
+            "Are you technical? → n8n is free but needs server setup",
+            "Do you need AI decision-making? → Layer AI agents on top of any platform"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Hybrid Approach",
+          "body": "Most professionals use 2-3 tools together: a core platform (Make or Zapier) for app-to-app workflows, an AI chatbot (Claude/ChatGPT) for judgment-based tasks, and a scheduling tool (Cal.com, Calendly) for time-based automations. Don't over-commit to one tool — use each where it's strongest."
+        },
+        {
+          "type": "try-it",
+          "headline": "Choose Your Stack",
+          "body": "List your 10 most-used apps (email, calendar, CRM, project tool, etc.). Check which automation platforms connect to all of them. Pick your primary platform based on coverage + budget. Then list 3 tasks that require judgment (not just rules) — these are where you'll add AI agents later. Write up your personal \"automation stack\" decision."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which platform has the most app connections but is most expensive at scale?",
+          "type": "mcq",
+          "options": [
+            "Make",
+            "n8n",
+            "Zapier",
+            "Power Automate"
+          ],
+          "correctIndex": 2,
+          "explanation": "Zapier offers 5,000+ app connections (the most of any platform) but becomes expensive as you scale up — pricing is based on number of tasks/month."
+        },
+        {
+          "question": "You should commit to only one automation tool and never use others.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The hybrid approach is best — use each tool where it's strongest. A core platform for app workflows, AI for judgment tasks, and specialised tools for specific needs."
+        },
+        {
+          "question": "When should you use AI agents instead of rule-based automation?",
+          "type": "mcq",
+          "options": [
+            "For simple trigger-action workflows",
+            "When tasks require judgment and context-based decisions",
+            "Only for coding tasks",
+            "Never — rules are always better"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI agents excel when tasks require judgment, context understanding, or handling unpredictable inputs — situations where fixed if/else rules aren't sufficient."
+        }
+      ]
+    },
+    {
+      "id": "aab-8",
+      "dayNumber": 8,
+      "moduleId": "aab-mod-2",
+      "title": "Email Triage Automation",
+      "subtitle": "Auto-sort, label, and draft replies to incoming email — never drown in your inbox again.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Average Professional Gets 121 Emails Per Day",
+          "body": "That's 2.5 hours daily just reading and responding to email. But here's the secret: 80% of those emails can be auto-categorised, and 50% can have replies drafted automatically. An email triage system gives you back 1-2 hours every single day.",
+          "stat": "121",
+          "statLabel": "emails per day for the average professional"
+        },
+        {
+          "type": "content",
+          "headline": "The Email Triage System",
+          "body": "Build a 3-layer email automation:",
+          "bullets": [
+            "Layer 1 — Auto-label: Sort incoming emails by sender type (client, team, newsletter, cold outreach)",
+            "Layer 2 — Priority flag: AI scans content and flags urgent items that need immediate human response",
+            "Layer 3 — Draft replies: AI generates response drafts for routine emails (you review and send in 1 click)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building the Auto-Label System",
+          "body": "Set up rules that categorise every incoming email instantly:",
+          "bullets": [
+            "From known clients → \"Client\" label + star",
+            "From team members → \"Team\" label",
+            "Contains \"unsubscribe\" → \"Newsletter\" label + skip inbox",
+            "From unknown + selling language → \"Cold Outreach\" label + archive",
+            "Contains \"urgent\" or \"ASAP\" from known contacts → \"Priority\" label + notification"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Reply Drafting",
+          "body": "Connect your email to AI (via Make or Zapier) to auto-draft replies: When a routine email arrives (meeting request, status update, simple question), AI writes a draft reply based on your style and past responses. You spend 10 seconds reviewing instead of 5 minutes writing."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Email Triage",
+          "body": "Open your email settings (Gmail filters or Outlook rules). Create 5 auto-label rules based on the categories above. Then set up one AI draft automation: \"When email arrives from [client domain] with a question → draft a reply using AI and save it as a draft.\" Test it with a real email. Watch the magic happen."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many emails does the average professional receive per day?",
+          "type": "mcq",
+          "options": [
+            "50",
+            "80",
+            "121",
+            "200"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows the average professional receives 121 emails per day, consuming approximately 2.5 hours of their workday."
+        },
+        {
+          "question": "AI-drafted email replies should be sent automatically without human review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI drafts should be saved as drafts for quick human review — you approve and send with one click. This ensures quality while still saving significant time."
+        },
+        {
+          "question": "What is the purpose of the \"Priority flag\" layer in email triage?",
+          "type": "mcq",
+          "options": [
+            "Delete spam",
+            "Identify urgent emails needing immediate human response",
+            "Unsubscribe from newsletters",
+            "Forward all emails to a team member"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Priority flag layer uses AI to scan email content and flag truly urgent items that need immediate human attention — so you only get interrupted when it matters."
+        }
+      ]
+    },
+    {
+      "id": "aab-9",
+      "dayNumber": 9,
+      "moduleId": "aab-mod-2",
+      "title": "Smart Follow-Up Sequences",
+      "subtitle": "Never forget to follow up again — automated reminders and sequences that close deals.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "80% of Sales Require 5+ Follow-Ups. Most People Stop at 1.",
+          "body": "The fortune is in the follow-up, but humans are terrible at remembering to do it consistently. Automated follow-up sequences ensure no opportunity falls through the cracks — whether it's a sales lead, a job application, or a partnership outreach.",
+          "stat": "80%",
+          "statLabel": "of deals need 5+ follow-ups to close"
+        },
+        {
+          "type": "content",
+          "headline": "The Follow-Up Automation Framework",
+          "body": "Build a system that follows up intelligently:",
+          "bullets": [
+            "Trigger: You send an important email that needs a reply",
+            "Wait: System monitors for 3 days — did they reply?",
+            "If no reply → Send follow-up #1 (gentle nudge)",
+            "Wait 5 more days → Send follow-up #2 (add value/new angle)",
+            "Wait 7 days → Send follow-up #3 (final \"closing the loop\" message)",
+            "If they reply at any point → Stop the sequence immediately"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Follow-Up Sequences in Practice",
+          "body": "Tools for automated follow-ups:",
+          "bullets": [
+            "Gmail + Zapier/Make: Monitor sent emails, trigger follow-ups on no-reply",
+            "Mixmax / Mailshake: Built-in sequence builders with tracking",
+            "AI + CRM: Let AI write each follow-up differently (not copy-paste)",
+            "Key rule: Each follow-up must add value, not just say \"bumping this\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Add Value\" Follow-Up Formula",
+          "body": "Never send \"just following up.\" Each message should offer something new: a relevant article, a case study, a new idea, an easier ask, or a deadline. AI can generate unique follow-ups that reference the original context and add fresh value each time — making them feel personal, not automated."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Follow-Up Sequence",
+          "body": "Think of an email you sent this week that hasn't been replied to. Write a 3-message follow-up sequence: Message 1 (day 3, gentle reminder + one new insight), Message 2 (day 8, different angle + specific question), Message 3 (day 15, closing the loop + easy out). Paste into AI and ask: \"Make these follow-ups sound natural and add value at each step.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many follow-ups do most sales require before closing?",
+          "type": "mcq",
+          "options": [
+            "1-2",
+            "3-4",
+            "5+",
+            "10+"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows 80% of sales require 5 or more follow-ups — yet most people give up after just 1-2 attempts, leaving enormous value on the table."
+        },
+        {
+          "question": "A good follow-up automation should continue sending even after the person replies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Smart follow-up sequences must stop immediately when the person replies. Continuing to send automated messages after a reply feels robotic and damages the relationship."
+        },
+        {
+          "question": "What should each follow-up message include?",
+          "type": "mcq",
+          "options": [
+            "Just \"bumping this to the top of your inbox\"",
+            "New value — an insight, article, easier ask, or deadline",
+            "The exact same message repeated",
+            "A complaint about not receiving a reply"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each follow-up should add new value — a fresh insight, relevant resource, different angle, or easier ask. This makes messages feel helpful rather than pushy."
+        }
+      ]
+    },
+    {
+      "id": "aab-10",
+      "dayNumber": 10,
+      "moduleId": "aab-mod-2",
+      "title": "Meeting Lifecycle Automation",
+      "subtitle": "From scheduling to notes to action items — automate the entire meeting lifecycle.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Meetings Cost More Than You Think",
+          "body": "The average professional spends 31 hours per month in meetings. But the hidden cost is even bigger: preparing agendas, taking notes, writing up action items, and sending follow-ups adds another 10+ hours. Automate the lifecycle and keep only the human parts — the actual conversation.",
+          "stat": "31",
+          "statLabel": "hours per month spent in meetings"
+        },
+        {
+          "type": "content",
+          "headline": "The 5-Stage Meeting Lifecycle",
+          "body": "Every meeting has automatable stages:",
+          "bullets": [
+            "Pre-meeting: Auto-send agenda, prep docs, and attendee brief 1 hour before",
+            "During: AI records and transcribes in real time (Otter, Fireflies, Granola)",
+            "Post-meeting: AI generates summary, extracts action items, identifies decisions",
+            "Distribution: Auto-send notes + actions to all attendees within 5 minutes",
+            "Follow-up: Track action items, auto-remind owners before deadlines"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building the Pre-Meeting Automation",
+          "body": "Trigger: Calendar event starts in 1 hour. Actions:",
+          "bullets": [
+            "Pull attendee info from CRM (who are they, last interaction, open items)",
+            "Generate a brief: \"Meeting with [name], their role, context, your goals\"",
+            "Send agenda to all attendees (from a template or AI-generated)",
+            "Create a shared notes document with pre-filled headings"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Post-Meeting Magic",
+          "body": "After the meeting ends, AI processes the transcript automatically: extracts key decisions made, lists action items with owners and deadlines, summarises the discussion in 3-5 bullet points, and sends everything to attendees and your project management tool. You walk out of the meeting and it's already documented."
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate Your Next Meeting",
+          "body": "Pick your next scheduled meeting. Set up: (1) A pre-meeting automation that sends attendees an agenda 1 hour before. (2) Use an AI notetaker (Otter.ai free tier or Granola) during the meeting. (3) After the meeting, paste the transcript into AI and ask: \"Extract action items with owners, list key decisions, and write a 5-bullet summary.\" Send to attendees. The whole post-meeting process should take under 2 minutes."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many hours per month does the average professional spend in meetings?",
+          "type": "mcq",
+          "options": [
+            "10",
+            "20",
+            "31",
+            "50"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows professionals spend an average of 31 hours per month in meetings — and additional hours on meeting-related tasks like prep, notes, and follow-ups."
+        },
+        {
+          "question": "Post-meeting notes should be written manually to ensure accuracy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI transcription and summarisation tools can generate meeting notes, action items, and summaries within minutes — more consistently and often more accurately than manual note-taking."
+        },
+        {
+          "question": "What should a pre-meeting automation include?",
+          "type": "mcq",
+          "options": [
+            "Cancel the meeting automatically",
+            "Send agenda, attendee brief, and prep docs before the meeting",
+            "Record the meeting without consent",
+            "Send follow-up emails after"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pre-meeting automation sends the agenda, pulls attendee context, and prepares shared documents — ensuring everyone arrives prepared without manual effort."
+        }
+      ]
+    },
+    {
+      "id": "aab-11",
+      "dayNumber": 11,
+      "moduleId": "aab-mod-2",
+      "title": "Slack & Teams Workflows",
+      "subtitle": "Automate team communication and notifications — reduce noise, increase signal.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Average Worker Checks Slack 50+ Times Per Day",
+          "body": "Team messaging was supposed to make communication easier. Instead, it created a new source of constant interruption. The fix isn't leaving Slack — it's automating the noise away so you only see what truly needs your attention.",
+          "stat": "50+",
+          "statLabel": "times per day the average worker checks Slack"
+        },
+        {
+          "type": "content",
+          "headline": "High-Value Slack/Teams Automations",
+          "body": "Automations that reduce noise and increase productivity:",
+          "bullets": [
+            "Daily digest: One morning message summarising everything important from overnight",
+            "Smart routing: Messages mentioning specific topics → routed to the right channel/person",
+            "Status sync: Calendar events auto-update your Slack status (In meeting, Focus time, OOO)",
+            "Standup bot: Collects async updates from team, posts summary at 9am",
+            "Alert escalation: If no one responds to urgent message in 15 min → ping manager"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Daily Digest Bot",
+          "body": "Instead of catching up on 200+ messages each morning, get one summary:",
+          "bullets": [
+            "Trigger: Every day at 8:30am",
+            "Action 1: Collect all messages from key channels in the last 12 hours",
+            "Action 2: AI summarises into: decisions made, questions pending, items needing your input",
+            "Action 3: Send personal DM with your daily brief",
+            "Result: 30 seconds of reading replaces 20 minutes of scrolling"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Cross-Platform Notifications",
+          "body": "Connect your tools so important events post to Slack automatically: new customer signs up → #wins channel. Support ticket escalated → #support-urgent. Deal closed → #revenue. Deploy finished → #engineering. This means your team stays informed without anyone manually posting updates."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Status Sync Automation",
+          "body": "Set up a calendar-to-Slack automation: When a calendar event starts → update your Slack status to the event name + 🔴 (or \"In a meeting\" + 📅). When it ends → clear the status. Most platforms (Zapier, Make) have pre-built templates for this. Takes 5 minutes and immediately communicates your availability without you doing anything."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a Slack daily digest automation do?",
+          "type": "mcq",
+          "options": [
+            "Deletes old messages",
+            "Summarises overnight activity into one morning message",
+            "Blocks all notifications",
+            "Sends your messages to email"
+          ],
+          "correctIndex": 1,
+          "explanation": "A daily digest collects messages from key channels and uses AI to summarise them into decisions, pending questions, and items needing attention — delivered as one morning message."
+        },
+        {
+          "question": "Status sync automations require you to manually update your Slack status.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Status sync automations connect to your calendar and automatically update your Slack/Teams status based on current events — no manual action needed."
+        },
+        {
+          "question": "What is \"alert escalation\" in team messaging automation?",
+          "type": "mcq",
+          "options": [
+            "Muting all alerts",
+            "If no one responds to an urgent message within a set time, notifying a manager",
+            "Sending alerts to everyone",
+            "Deleting urgent messages after 15 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Alert escalation monitors urgent messages and, if no one responds within a defined timeframe (e.g., 15 minutes), automatically notifies a manager or escalation contact."
+        }
+      ]
+    },
+    {
+      "id": "aab-12",
+      "dayNumber": 12,
+      "moduleId": "aab-mod-2",
+      "title": "Client Communication Bots",
+      "subtitle": "Auto-respond, onboard, and update clients — without sacrificing the personal touch.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Clients Don't Care If a Robot Sends the Update. They Care That It's Timely.",
+          "body": "The #1 client complaint isn't about work quality — it's lack of communication. Automated client communication ensures every client feels informed, valued, and taken care of, even when you're focused on deep work. The best part: it feels personal because AI writes like you.",
+          "stat": "#1",
+          "statLabel": "client complaint: lack of communication"
+        },
+        {
+          "type": "content",
+          "headline": "The Client Communication Automation Stack",
+          "body": "Automate every touchpoint in the client journey:",
+          "bullets": [
+            "Welcome sequence: New client signs up → 3-email onboarding over 5 days",
+            "Progress updates: Project milestone hit → automatic \"Here's what we completed\" email",
+            "Check-ins: Every 2 weeks → \"How's everything going?\" personal-feeling message",
+            "Deliverable notifications: File uploaded → instant \"Your [deliverable] is ready\" email",
+            "Re-engagement: No activity for 30 days → \"We miss you, here's what's new\" outreach"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Making Automated Messages Feel Human",
+          "body": "The secret to great client automation: it should feel like YOU wrote it at that exact moment.",
+          "bullets": [
+            "Use their first name and reference specific project details",
+            "Vary sentence structure and length (don't sound like a template)",
+            "Include one personal touch per message (reference a past conversation)",
+            "Send at natural times (10:23am, not exactly 9:00am)",
+            "Let AI generate slight variations so no two messages are identical"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Onboarding Sequence Blueprint",
+          "body": "Day 1: Welcome + what to expect next. Day 2: Quick intro to how you work + link to shared space. Day 4: First value delivery or insight. Day 7: Check-in + question. This sequence sets expectations, builds trust, and makes the client feel cared for — all automated."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Onboarding Sequence",
+          "body": "Think of your last new client or customer. Write a 4-email onboarding sequence (Day 1, 2, 4, 7) with subject lines and key points for each. Paste into AI and ask: \"Rewrite these as warm, professional emails in my voice. Add personalisation placeholders like {first_name} and {project_name}. Make each one feel like I sat down and wrote it just for them.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the #1 complaint clients have about service providers?",
+          "type": "mcq",
+          "options": [
+            "Work is too expensive",
+            "Lack of communication and updates",
+            "Work quality is poor",
+            "Deadlines are too long"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most common client complaint is lack of communication — not hearing about progress, not knowing what's happening, and feeling forgotten. Automated updates solve this completely."
+        },
+        {
+          "question": "Automated client messages should be sent at exactly round times like 9:00am to seem professional.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sending at natural, slightly random times (10:23am, 2:47pm) makes automated messages feel like they were manually written and sent — round times feel robotic."
+        },
+        {
+          "question": "What should a client re-engagement automation trigger on?",
+          "type": "mcq",
+          "options": [
+            "Every single day",
+            "No client activity for a set period (e.g., 30 days)",
+            "When you feel like it",
+            "Only on holidays"
+          ],
+          "correctIndex": 1,
+          "explanation": "Re-engagement automations trigger when a client has been inactive for a defined period (e.g., 30 days) — reaching out to reconnect before the relationship goes cold."
+        }
+      ]
+    },
+    {
+      "id": "aab-13",
+      "dayNumber": 13,
+      "moduleId": "aab-mod-2",
+      "title": "Social Media Autopilot",
+      "subtitle": "Schedule, post, and repurpose content automatically — stay visible without the daily grind.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Consistency Beats Perfection on Social Media",
+          "body": "The #1 reason people fail at social media isn't bad content — it's inconsistency. Automating your posting schedule means you show up daily even when life gets busy. The best creators batch-create content and let automations handle the rest.",
+          "stat": "3×",
+          "statLabel": "more engagement for consistent posters vs sporadic"
+        },
+        {
+          "type": "content",
+          "headline": "The Social Media Automation Stack",
+          "body": "Layer these automations for hands-free content distribution:",
+          "bullets": [
+            "Content queue: Batch-create a week of posts → schedule across platforms",
+            "Cross-posting: Post to one platform → automatically adapt and post to others",
+            "Repurposing: Long-form content → auto-extract quotes, tips, and snippets",
+            "Engagement alerts: Someone comments/DMs → notification only for high-value interactions",
+            "Analytics digest: Weekly summary of what performed and what to create more of"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Content Repurposing Engine",
+          "body": "One piece of content becomes 10+ posts automatically:",
+          "bullets": [
+            "Blog post → AI extracts 5 key insights → 5 tweet/LinkedIn posts",
+            "Video → AI pulls best quotes → text posts + audiograms",
+            "Podcast episode → AI writes show notes + 3 clips + thread summary",
+            "Newsletter → AI creates social teasers for each section"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tools for Social Automation",
+          "body": "Buffer or Hypefury for scheduling and cross-posting. Repurpose.io for video-to-multi-platform distribution. Make/Zapier for custom flows (new blog post → trigger posts across 4 platforms). AI generates captions, hashtags, and variations automatically."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Repurposing Pipeline",
+          "body": "Take a piece of long-form content you've already created (blog, video, podcast, newsletter). Paste it into AI and ask: \"Turn this into 7 social media posts: 3 for LinkedIn (professional), 2 for Twitter/X (concise), 2 for Instagram (visual + caption). Include relevant hashtags.\" Schedule all 7 across the next week using Buffer (free tier) or your scheduling tool."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the #1 reason people fail at social media?",
+          "type": "mcq",
+          "options": [
+            "Bad content quality",
+            "Not enough followers",
+            "Inconsistency in posting",
+            "Wrong platform choice"
+          ],
+          "correctIndex": 2,
+          "explanation": "Inconsistency is the top reason for social media failure. Consistent posters get 3× more engagement than sporadic ones — automation ensures you never miss a day."
+        },
+        {
+          "question": "Cross-posting means manually copying the same text to every platform.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cross-posting automations adapt content for each platform automatically — adjusting length, format, and style to fit LinkedIn, Twitter, Instagram, etc. without manual copying."
+        },
+        {
+          "question": "How many social posts can one blog post typically be repurposed into?",
+          "type": "mcq",
+          "options": [
+            "1-2",
+            "3-5",
+            "10+",
+            "It can't be repurposed"
+          ],
+          "correctIndex": 2,
+          "explanation": "A single long-form piece can be repurposed into 10+ posts across platforms — key insights, quotes, tips, threads, visual cards, and more — all generated by AI from the original content."
+        }
+      ]
+    },
+    {
+      "id": "aab-14",
+      "dayNumber": 14,
+      "moduleId": "aab-mod-2",
+      "title": "Notification Intelligence",
+      "subtitle": "Only get interrupted when it truly matters — AI-powered notification filtering.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Get 63 Notifications Per Day. Only 5 Matter.",
+          "body": "Every buzz, ping, and badge is stealing your focus. Research shows it takes 23 minutes to fully regain focus after an interruption. With 63 notifications daily, you're losing hours to context switching. Notification intelligence ensures only the truly important ones break through.",
+          "stat": "23",
+          "statLabel": "minutes to regain focus after each interruption"
+        },
+        {
+          "type": "content",
+          "headline": "The Notification Triage System",
+          "body": "Build a 3-tier notification filter:",
+          "bullets": [
+            "Tier 1 — Immediate: Messages from VIP contacts, urgent keywords, critical system alerts → push notification",
+            "Tier 2 — Batched: Team updates, non-urgent emails, social mentions → delivered in 3 daily batches (9am, 1pm, 5pm)",
+            "Tier 3 — Silent: Newsletters, marketing, low-priority updates → logged but never interrupt you"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Filter Rules",
+          "body": "Configure your notification system with these rules:",
+          "bullets": [
+            "VIP list: 5-10 contacts whose messages always break through",
+            "Keyword triggers: \"urgent\", \"down\", \"emergency\", \"deadline today\"",
+            "Time-based: All non-VIP notifications silenced during focus blocks",
+            "Channel-based: Mute all channels except #important and DMs",
+            "AI layer: AI reads content and decides urgency (not just keywords)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Focus Mode Automation",
+          "body": "When you start a focus block (calendar event or manual trigger): Slack status → 🔴 Focus mode. All non-VIP notifications → held in queue. Phone → Do Not Disturb. When focus block ends → deliver everything as one digest. You get 2-3 hours of uninterrupted deep work while nothing falls through the cracks."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Notification Tiers",
+          "body": "Right now: (1) Create a VIP contact list (5-10 people). (2) Set up Do Not Disturb on your phone with VIP breakthrough. (3) In Slack, mute all channels except 3 essential ones. (4) Create a \"Focus Mode\" automation: when a specific calendar event starts → update Slack status + enable DND on phone. This immediately reduces interruptions by 70%+."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long does it take to regain full focus after a notification interruption?",
+          "type": "mcq",
+          "options": [
+            "5 minutes",
+            "10 minutes",
+            "23 minutes",
+            "45 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows it takes an average of 23 minutes to fully regain deep focus after an interruption — making each unnecessary notification extremely costly to productivity."
+        },
+        {
+          "question": "All notifications should be delivered immediately to ensure nothing is missed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most notifications can be safely batched and delivered 2-3 times daily. Only truly urgent messages (from VIP contacts or with critical keywords) should interrupt immediately."
+        },
+        {
+          "question": "What does Tier 2 (Batched) in the notification triage system mean?",
+          "type": "mcq",
+          "options": [
+            "Notifications are deleted",
+            "Notifications are delivered in scheduled batches throughout the day",
+            "Notifications are sent to someone else",
+            "Notifications trigger phone calls"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tier 2 notifications are collected and delivered in 2-3 daily batches (e.g., 9am, 1pm, 5pm) — so you stay informed without constant interruptions breaking your focus."
+        }
+      ]
+    },
+    {
+      "id": "aab-15",
+      "dayNumber": 15,
+      "moduleId": "aab-mod-3",
+      "title": "Spreadsheet Automations",
+      "subtitle": "Auto-update dashboards, reports, and trackers — never manually enter data again.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Spreadsheets Are the Most Automated Tool in the World",
+          "body": "Google Sheets and Excel are involved in 80% of business automations. They're the universal \"database\" that everyone understands. But most people still update them manually. Connected to the right automations, your spreadsheets update themselves, calculate in real time, and alert you to changes.",
+          "stat": "80%",
+          "statLabel": "of business automations involve spreadsheets"
+        },
+        {
+          "type": "content",
+          "headline": "Spreadsheet Automation Patterns",
+          "body": "The most valuable spreadsheet automations:",
+          "bullets": [
+            "Auto-populate: Form submissions, emails, or API data flows into rows automatically",
+            "Auto-calculate: Formulas + scripts run when new data arrives",
+            "Auto-alert: Cell value crosses threshold → instant notification",
+            "Auto-report: Weekly snapshot of key metrics generated and emailed",
+            "Auto-clean: Remove duplicates, format dates, fill missing values on schedule"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Self-Updating Dashboard",
+          "body": "Create a spreadsheet that updates itself daily:",
+          "bullets": [
+            "Revenue data pulls from payment processor (Stripe → Sheets)",
+            "Lead count pulls from CRM every morning",
+            "Support tickets pull from help desk at 6pm daily",
+            "Key metrics auto-calculate (MRR, churn rate, NPS)",
+            "Charts update automatically as data flows in"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Threshold Alerts",
+          "body": "Set up automated alerts when important numbers change: Revenue drops below target → Slack alert. Support queue exceeds 50 tickets → email to team lead. New sign-ups exceed 100 in one day → celebration message to #wins. These ensure you spot trends the moment they happen, not days later in a meeting."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a Self-Updating Tracker",
+          "body": "Create a Google Sheet with columns: Date, Source, Data Point, Value. Set up one automation: pick a data source you check daily (email count, website visits, sales, tasks completed). Use Zapier/Make to auto-add a new row each day with today's value. After one week, you'll have a hands-free trend tracker. Add a chart and you have an auto-updating dashboard."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of business automations involve spreadsheets?",
+          "type": "mcq",
+          "options": [
+            "30%",
+            "50%",
+            "80%",
+            "95%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Approximately 80% of business automations involve spreadsheets in some way — they're the universal tool that connects to nearly every automation platform."
+        },
+        {
+          "question": "Threshold alerts can only be set for financial data.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Threshold alerts can be set for any numeric data — support tickets, sign-ups, page views, inventory levels, response times, or any metric that matters to your business."
+        },
+        {
+          "question": "What does \"auto-populate\" mean in spreadsheet automation?",
+          "type": "mcq",
+          "options": [
+            "Manually typing data faster",
+            "Data from external sources flows into rows automatically",
+            "Deleting all data at midnight",
+            "Printing the spreadsheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Auto-populate means data from external sources (forms, emails, APIs, other tools) flows into spreadsheet rows automatically without manual data entry."
+        }
+      ]
+    },
+    {
+      "id": "aab-16",
+      "dayNumber": 16,
+      "moduleId": "aab-mod-3",
+      "title": "Form-to-Action Pipelines",
+      "subtitle": "Turn form submissions into full workflows — leads, tasks, notifications, and more.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Form Submission Is the Start, Not the End",
+          "body": "When someone fills out a form — a lead, an enquiry, a support request — most businesses just get an email notification. Then someone has to manually read it, decide what to do, create tasks, and follow up. Form-to-action pipelines do all of that instantly, automatically, the moment Submit is clicked.",
+          "stat": "5",
+          "statLabel": "minutes average response time with form automation (vs 5 hours without)"
+        },
+        {
+          "type": "content",
+          "headline": "The Form-to-Action Pipeline",
+          "body": "When a form is submitted, trigger a cascade of actions:",
+          "bullets": [
+            "Log: Add submission to master spreadsheet/CRM with timestamp",
+            "Route: Based on form type/content, assign to the right person",
+            "Notify: Alert the assigned person via their preferred channel",
+            "Respond: Send instant confirmation/thank-you to the submitter",
+            "Create: Generate tasks, calendar events, or project entries automatically"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Lead Capture Pipeline Example",
+          "body": "Contact form submitted → instant actions:",
+          "bullets": [
+            "Add to CRM with lead source, date, and all form fields",
+            "Score the lead (AI analyses company size, role, message intent)",
+            "If high-value → immediate Slack alert + calendar invite suggestion",
+            "If standard → add to nurture sequence (automated emails over 7 days)",
+            "If spam → auto-archive, no human sees it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI-Powered Form Routing",
+          "body": "Use AI to read form content and route intelligently: support questions → support team. Sales enquiries → sales team. Partnership requests → founder. Bug reports → engineering. AI can categorise with 95%+ accuracy based on the message content — no manual triage needed."
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate Your Contact Form",
+          "body": "Take any form you currently have (website contact form, enquiry form, intake form). Set up this pipeline: (1) Submission → new row in Google Sheet. (2) Instant thank-you email to submitter. (3) Slack notification with form details. (4) If keywords suggest urgency → tag as priority. This 4-step pipeline takes 15 minutes to set up and handles every submission automatically."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the average response time difference between automated and manual form handling?",
+          "type": "mcq",
+          "options": [
+            "5 min vs 30 min",
+            "5 min vs 5 hours",
+            "1 hour vs 1 day",
+            "10 min vs 2 hours"
+          ],
+          "correctIndex": 1,
+          "explanation": "Automated pipelines respond within minutes (often seconds), while manual handling averages 5 hours for first response — a massive difference in lead conversion."
+        },
+        {
+          "question": "AI can categorise form submissions and route them to the correct team automatically.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI can analyse form content and route to the correct team (support, sales, partnerships, engineering) with 95%+ accuracy based on message intent and keywords."
+        },
+        {
+          "question": "What is \"lead scoring\" in a form automation pipeline?",
+          "type": "mcq",
+          "options": [
+            "Counting how many forms were submitted",
+            "AI analysing submission to determine the lead's potential value",
+            "Grading form design quality",
+            "Ranking forms by completion time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lead scoring uses AI to analyse form data (company size, role, message intent) to determine how valuable the lead is — routing high-value leads for immediate attention."
+        }
+      ]
+    },
+    {
+      "id": "aab-17",
+      "dayNumber": 17,
+      "moduleId": "aab-mod-3",
+      "title": "Document Generation",
+      "subtitle": "Auto-create proposals, contracts, reports, and invoices from templates + data.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every Document You Create Manually Is a Document That Could Create Itself",
+          "body": "Proposals, contracts, reports, invoices, meeting notes — they all follow patterns. Combine a template with data and AI, and documents generate themselves. Companies using document automation create proposals in 2 minutes instead of 2 hours.",
+          "stat": "60×",
+          "statLabel": "faster document creation with automation"
+        },
+        {
+          "type": "content",
+          "headline": "The Document Automation Formula",
+          "body": "Every auto-generated document uses this pattern:",
+          "bullets": [
+            "Template: A pre-designed document with placeholder variables ({client_name}, {project_scope})",
+            "Data source: CRM record, form submission, spreadsheet row, or AI-generated content",
+            "Trigger: Deal moves to \"proposal\" stage, or you click a button",
+            "Output: Finished PDF/Doc sent to recipient or saved to folder",
+            "Delivery: Auto-email with the document attached + cover note"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Documents You Should Automate First",
+          "body": "Start with the documents you create most often:",
+          "bullets": [
+            "Proposals: Client name + scope + pricing pulled from CRM → branded PDF",
+            "Contracts: Standard terms + client details + custom clauses → ready to sign",
+            "Invoices: Time tracked + rates + client info → auto-generated monthly",
+            "Reports: Data from tools + AI narrative → weekly/monthly summaries",
+            "Onboarding docs: New client details → personalised welcome package"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tools for Document Generation",
+          "body": "PandaDoc and Proposify for proposals/contracts with e-signatures. Google Docs + Autocrat for template-based generation. Make/Zapier + Google Docs for triggered document creation. AI (Claude/ChatGPT) for writing the narrative sections — combine with templates for the layout and branding."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your First Document Template",
+          "body": "Pick a document you create regularly (proposal, report, or email). Create a template version with placeholders: {client_name}, {date}, {project_details}, {pricing}. Then set up: CRM deal reaches \"Proposal\" stage → automation fills template with deal data → generates PDF → emails to client with personalised cover note. Test with a dummy deal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much faster is document creation with automation vs manual?",
+          "type": "mcq",
+          "options": [
+            "2× faster",
+            "5× faster",
+            "20× faster",
+            "60× faster"
+          ],
+          "correctIndex": 3,
+          "explanation": "Document automation can be up to 60× faster — turning a 2-hour manual proposal process into a 2-minute automated one using templates, data, and AI."
+        },
+        {
+          "question": "Document templates use placeholder variables that get filled with real data.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Templates contain placeholder variables like {client_name} and {project_scope} that get replaced with real data from your CRM, forms, or spreadsheets when the document is generated."
+        },
+        {
+          "question": "Which document type is typically the BEST candidate for automation?",
+          "type": "mcq",
+          "options": [
+            "A one-time creative brief",
+            "Recurring proposals that follow the same structure",
+            "Personal diary entries",
+            "Handwritten thank-you notes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recurring documents that follow consistent structures (proposals, invoices, reports) are ideal automation candidates — they use the same template with different data each time."
+        }
+      ]
+    },
+    {
+      "id": "aab-18",
+      "dayNumber": 18,
+      "moduleId": "aab-mod-3",
+      "title": "CRM Automation",
+      "subtitle": "Keep your contacts and deals updated without lifting a finger — your CRM runs itself.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your CRM Is Only as Good as the Data Inside It",
+          "body": "Most CRMs die because no one keeps them updated. Contacts go stale, deals get forgotten, and notes aren't logged. But when your CRM updates itself — logging calls, tracking emails, scoring leads, and advancing deals automatically — it becomes the most powerful tool in your business.",
+          "stat": "71%",
+          "statLabel": "of CRM data goes stale within 12 months without automation"
+        },
+        {
+          "type": "content",
+          "headline": "CRM Automations That Run Themselves",
+          "body": "Set these up once and your CRM stays permanently accurate:",
+          "bullets": [
+            "Email logging: Every email sent/received auto-linked to the contact record",
+            "Call logging: Phone calls auto-logged with duration and AI-generated notes",
+            "Deal progression: When contract is signed → deal automatically moves to \"Won\"",
+            "Contact enrichment: New contact added → AI pulls company info, LinkedIn, website",
+            "Activity scoring: Every interaction increases lead score automatically"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deal Pipeline Automation",
+          "body": "Automate the sales pipeline so deals move forward without manual updates:",
+          "bullets": [
+            "Proposal sent → deal moves to \"Proposal\" stage",
+            "No response for 7 days → auto-follow-up triggered",
+            "Contract signed (e-signature) → deal moves to \"Won\" + triggers onboarding",
+            "Deal stale for 30 days → alert to owner + move to \"At Risk\"",
+            "Deal lost → trigger feedback survey + add to re-engagement sequence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI Contact Enrichment",
+          "body": "When a new contact enters your CRM, AI automatically: looks up their company and role, pulls their LinkedIn profile, identifies mutual connections, estimates company size and revenue, and writes a brief \"context note\" so you never go into a meeting unprepared. Tools like Clay, Clearbit, or Apollo do this automatically."
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate One CRM Workflow",
+          "body": "Pick your CRM (HubSpot, Pipedrive, Notion, or even a spreadsheet). Set up: (1) Auto-log emails — connect your email so every sent/received email attaches to the contact. (2) Auto-advance — when a specific email is sent (e.g., proposal), move the deal to the next stage. (3) Stale alert — if a deal hasn't been touched in 14 days, send yourself a reminder. Three automations, 15 minutes of setup."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What percentage of CRM data goes stale within 12 months without automation?",
+          "type": "mcq",
+          "options": [
+            "25%",
+            "50%",
+            "71%",
+            "90%"
+          ],
+          "correctIndex": 2,
+          "explanation": "71% of CRM data becomes outdated within 12 months when not maintained by automation — contacts change jobs, emails bounce, and deals are forgotten."
+        },
+        {
+          "question": "CRM automation only works with expensive enterprise CRM platforms.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "CRM automation works with any system — from enterprise tools like Salesforce to simple setups like a Google Sheet or Notion database connected to Zapier/Make."
+        },
+        {
+          "question": "What does \"AI contact enrichment\" do?",
+          "type": "mcq",
+          "options": [
+            "Deletes old contacts",
+            "Automatically adds company info, role, and context to new contacts",
+            "Sends marketing emails",
+            "Creates fake contact data"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI contact enrichment automatically looks up and adds company info, LinkedIn profiles, role details, and context notes to new contacts — so you're always prepared."
+        }
+      ]
+    },
+    {
+      "id": "aab-19",
+      "dayNumber": 19,
+      "moduleId": "aab-mod-3",
+      "title": "File Organisation Systems",
+      "subtitle": "Auto-sort, rename, and archive files — never waste time searching for documents again.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Average Worker Spends 1.8 Hours Per Day Searching for Information",
+          "body": "That's 9 hours per week — an entire workday — just looking for files, documents, and data. Automated file organisation means every file is named correctly, stored in the right place, and findable in seconds. Set it up once and never lose a file again.",
+          "stat": "1.8",
+          "statLabel": "hours per day lost searching for files"
+        },
+        {
+          "type": "content",
+          "headline": "File Automation Patterns",
+          "body": "Build these systems to keep your files permanently organised:",
+          "bullets": [
+            "Auto-rename: Files uploaded → renamed with date + project + type (e.g., 2024-03-15_ClientX_Invoice.pdf)",
+            "Auto-sort: Files landing in inbox folder → moved to correct project folder based on content/name",
+            "Auto-archive: Files older than 90 days with no edits → moved to archive",
+            "Auto-backup: Important files → copied to backup location daily",
+            "Auto-compress: Large files → automatically compressed or converted to smaller formats"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Smart Folder Structure",
+          "body": "AI-powered file organisation uses content recognition:",
+          "bullets": [
+            "Invoices → AI reads the document, extracts client name and date, files correctly",
+            "Contracts → AI identifies contract type and parties, creates structured folder",
+            "Images → AI recognises content (screenshot, photo, design) and sorts accordingly",
+            "Downloads → AI analyses file type and content, moves from Downloads to proper home"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Naming Convention Automation",
+          "body": "Set a naming convention and enforce it automatically. The best format: YYYY-MM-DD_Project_Type_Version (e.g., 2024-03-15_Acme_Proposal_v2). Automation renames files the moment they're saved or uploaded — no discipline required, the system enforces the standard."
+        },
+        {
+          "type": "try-it",
+          "headline": "Automate Your Downloads Folder",
+          "body": "Your Downloads folder is probably chaos. Set up this automation: (1) Files with \"invoice\" in the name → move to Invoices folder. (2) PDF files over 30 days old → move to Archive. (3) Image files (png, jpg) → move to Screenshots folder. (4) Anything remaining after 60 days → auto-delete. Use Hazel (Mac), Power Automate (Windows), or a Make/Zapier flow with Google Drive."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much time does the average worker spend searching for files per day?",
+          "type": "mcq",
+          "options": [
+            "30 minutes",
+            "1 hour",
+            "1.8 hours",
+            "3 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows the average worker spends 1.8 hours per day (9+ hours per week) searching for files, documents, and information — nearly an entire workday lost weekly."
+        },
+        {
+          "question": "AI can read document content and file it in the correct folder automatically.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI-powered file systems can read document content, identify type (invoice, contract, report), extract key details, and automatically sort files into the correct location."
+        },
+        {
+          "question": "What is the recommended file naming format for automated systems?",
+          "type": "mcq",
+          "options": [
+            "Random numbers",
+            "YYYY-MM-DD_Project_Type_Version",
+            "Just the file type",
+            "The creator's initials only"
+          ],
+          "correctIndex": 1,
+          "explanation": "YYYY-MM-DD_Project_Type_Version creates consistent, sortable, searchable file names that work perfectly with automation and make manual searching easy too."
+        }
+      ]
+    },
+    {
+      "id": "aab-20",
+      "dayNumber": 20,
+      "moduleId": "aab-mod-3",
+      "title": "Database Sync & Enrichment",
+      "subtitle": "Keep multiple systems in perfect sync — changes in one tool update everywhere automatically.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Average Business Uses 110 SaaS Tools",
+          "body": "That's 110 places where data lives, often contradicting each other. Customer updated their email in one tool but not the others? Deal closed in CRM but not reflected in billing? Database sync automation ensures one source of truth — change it once, it updates everywhere.",
+          "stat": "110",
+          "statLabel": "SaaS tools used by the average business"
+        },
+        {
+          "type": "content",
+          "headline": "The Sync Problem",
+          "body": "Without sync automation, data diverges rapidly:",
+          "bullets": [
+            "Customer changes email → updated in support tool but not CRM or billing",
+            "Deal closes → reflected in CRM but not project management or invoicing",
+            "Team member leaves → still has access in 30 of 110 tools",
+            "Price changes → updated on website but not in quotes tool or billing",
+            "Result: Bad decisions based on outdated data, frustrated customers, compliance risks"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Sync Automations",
+          "body": "The pattern for keeping systems in sync:",
+          "bullets": [
+            "Designate one \"source of truth\" for each data type (e.g., CRM = master for contacts)",
+            "Trigger: When the source record changes",
+            "Action: Push the change to all connected systems",
+            "Conflict resolution: Source of truth always wins",
+            "Audit log: Track every sync so you can troubleshoot"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Data Enrichment Automation",
+          "body": "Beyond syncing, automatically enrich your data: New contact added → pull company info from LinkedIn, revenue from databases, tech stack from BuiltWith. New company in CRM → auto-research competitors, recent news, key decision-makers. This turns thin records into rich profiles without any manual research."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your First Sync",
+          "body": "Identify two tools that store the same data (e.g., contacts in CRM + email marketing tool). Set up a bi-directional sync: (1) Contact updated in CRM → update email marketing tool. (2) Contact unsubscribes in email tool → update CRM with \"unsubscribed\" tag. Use Zapier, Make, or a dedicated sync tool (Census, Hightouch). Test with one contact to verify it works both ways."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many SaaS tools does the average business use?",
+          "type": "mcq",
+          "options": [
+            "20",
+            "50",
+            "110",
+            "300"
+          ],
+          "correctIndex": 2,
+          "explanation": "The average business uses approximately 110 SaaS tools — creating massive data fragmentation that only automation can effectively manage."
+        },
+        {
+          "question": "In a sync system, every tool should be equally authoritative for all data.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Best practice is to designate one \"source of truth\" for each data type. When conflicts occur, the designated source always wins — this prevents sync loops and data corruption."
+        },
+        {
+          "question": "What is \"data enrichment\" in automation?",
+          "type": "mcq",
+          "options": [
+            "Deleting duplicate records",
+            "Automatically adding additional context and information to existing records",
+            "Backing up data to the cloud",
+            "Converting data formats"
+          ],
+          "correctIndex": 1,
+          "explanation": "Data enrichment automatically adds context to records — pulling company info, social profiles, revenue data, and other details from external sources to turn thin records into rich profiles."
+        }
+      ]
+    },
+    {
+      "id": "aab-21",
+      "dayNumber": 21,
+      "moduleId": "aab-mod-3",
+      "title": "AI Data Processing",
+      "subtitle": "Use AI to extract, categorise, and summarise data automatically from any source.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "AI Can Read, Understand, and Act on Data — Not Just Move It",
+          "body": "Traditional automation moves data from A to B. AI automation understands the data: reads an email and extracts the key request, scans a document and pulls the important numbers, analyses customer feedback and categorises the sentiment. This is the leap from simple automation to intelligent automation.",
+          "stat": "95%",
+          "statLabel": "accuracy of AI data categorisation"
+        },
+        {
+          "type": "content",
+          "headline": "AI Data Processing Patterns",
+          "body": "Ways AI processes data that rules-based automation can't:",
+          "bullets": [
+            "Extraction: Pull specific data points from unstructured text (invoices, emails, PDFs)",
+            "Categorisation: Sort items into buckets based on content meaning (not just keywords)",
+            "Summarisation: Condense long documents into key points and action items",
+            "Sentiment analysis: Determine if feedback is positive, negative, or neutral",
+            "Translation & normalisation: Convert messy human input into structured data"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building AI Processing Pipelines",
+          "body": "Combine AI with your automation platform:",
+          "bullets": [
+            "Trigger: New email/document/form submission arrives",
+            "Step 1: Send content to AI (via API or Make/Zapier AI module)",
+            "Step 2: AI extracts/categorises/summarises as structured JSON",
+            "Step 3: Use the structured output to route, store, or trigger next actions",
+            "Example: Customer email → AI extracts: sentiment (angry), topic (billing), urgency (high) → routes to billing team with priority flag"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Real-World AI Data Processing Examples",
+          "body": "Expense receipts → AI extracts amount, vendor, date, category → auto-logged to spreadsheet. Customer reviews → AI analyses sentiment and themes → summary report weekly. Job applications → AI scores fit against criteria → ranked shortlist for hiring manager. All running automatically, 24/7."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build an AI Data Processor",
+          "body": "Pick a data source with unstructured content (customer emails, feedback forms, or document uploads). Set up: Trigger (new item arrives) → Send to AI with prompt: \"Extract the following from this text: sender intent, urgency level (1-5), key topic, and required action. Return as JSON.\" → Use the structured output to log in a spreadsheet with separate columns for each field. You've just built intelligent data processing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What can AI data processing do that traditional automation cannot?",
+          "type": "mcq",
+          "options": [
+            "Move files between folders",
+            "Understand meaning and context in unstructured text",
+            "Send scheduled emails",
+            "Create calendar events"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI can understand meaning, context, and intent in unstructured text — extracting insights, categorising by meaning (not just keywords), and making intelligent decisions about data."
+        },
+        {
+          "question": "AI data categorisation typically achieves around 95% accuracy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Modern AI achieves approximately 95% accuracy in data categorisation tasks — often matching or exceeding human accuracy for routine classification work."
+        },
+        {
+          "question": "What format should AI return processed data in for automation pipelines?",
+          "type": "mcq",
+          "options": [
+            "A paragraph of text",
+            "Structured JSON with defined fields",
+            "An image",
+            "A voice recording"
+          ],
+          "correctIndex": 1,
+          "explanation": "Structured JSON with defined fields (e.g., sentiment, topic, urgency) makes AI output easily usable by downstream automation steps — each field can route, filter, or trigger actions."
+        }
+      ]
+    },
+    {
+      "id": "aab-22",
+      "dayNumber": 22,
+      "moduleId": "aab-mod-4",
+      "title": "Multi-Step Workflow Design",
+      "subtitle": "Chain automations into powerful sequences that handle complex processes end-to-end.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Single-Step Automations Are Training Wheels",
+          "body": "You've mastered trigger → action. But real business processes have 10, 20, even 50 steps. Multi-step workflows chain actions together into complete systems: a new lead triggers a 15-step sequence that researches, scores, routes, notifies, schedules, and follows up — all from one trigger.",
+          "stat": "15+",
+          "statLabel": "steps in a professional-grade workflow"
+        },
+        {
+          "type": "content",
+          "headline": "Anatomy of a Multi-Step Workflow",
+          "body": "Complex workflows have distinct phases:",
+          "bullets": [
+            "Trigger phase: One or more events that kick off the workflow",
+            "Data gathering phase: Pull context from multiple sources (CRM, email, calendar)",
+            "Processing phase: Transform, enrich, or analyse the gathered data",
+            "Action phase: Execute the primary actions (send, create, update, notify)",
+            "Follow-up phase: Schedule delayed actions (reminders, check-ins, escalations)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Parallel vs Sequential Decision",
+          "body": "Not every step needs to wait for the previous one:",
+          "bullets": [
+            "Sequential: Step B needs Step A's output (e.g., enrich contact → use enriched data to score)",
+            "Parallel: Steps are independent (e.g., notify team AND update CRM simultaneously)",
+            "Delayed: Step happens after a wait (e.g., 3 days later, check if reply received)",
+            "Design tip: Run independent steps in parallel to make workflows faster"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Designing Before Building",
+          "body": "Map the workflow on paper first. Draw the trigger, then each step with arrows showing data flow. Mark which steps are sequential vs parallel. Identify where errors could occur and add fallbacks. A 10-minute design session prevents hours of debugging later."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design a Multi-Step Workflow",
+          "body": "Pick a business process with 5+ steps (e.g., new client onboarding, content publishing, lead qualification). Map it: (1) Draw the trigger. (2) List every step that happens. (3) Draw arrows showing which steps depend on others. (4) Mark parallel steps. (5) Identify error points. Paste your map description into AI and ask: \"Optimise this workflow. What can run in parallel? Where should I add error handling?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What distinguishes a multi-step workflow from a simple automation?",
+          "type": "mcq",
+          "options": [
+            "It uses a different platform",
+            "It chains multiple actions with phases, parallel paths, and delays",
+            "It costs more money",
+            "It only works with email"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multi-step workflows chain multiple actions through distinct phases (gathering, processing, acting, following up) with parallel paths and delays — handling complete processes from one trigger."
+        },
+        {
+          "question": "In a multi-step workflow, every step must wait for the previous step to complete.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Independent steps can run in parallel (simultaneously), making workflows faster. Only steps that depend on previous outputs need to run sequentially."
+        },
+        {
+          "question": "What should you do before building a complex multi-step workflow?",
+          "type": "mcq",
+          "options": [
+            "Start building immediately without planning",
+            "Map the workflow on paper first, identifying dependencies and error points",
+            "Wait until all data is perfect",
+            "Hire a developer"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mapping the workflow first (trigger, steps, dependencies, parallel paths, error points) prevents hours of debugging — a 10-minute design session saves significant time."
+        }
+      ]
+    },
+    {
+      "id": "aab-23",
+      "dayNumber": 23,
+      "moduleId": "aab-mod-4",
+      "title": "Conditional Logic & Branching",
+      "subtitle": "If/else flows that handle edge cases — making your automations truly intelligent.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Real Life Isn't Linear. Your Automations Shouldn't Be Either.",
+          "body": "Every business process has \"it depends\" moments: different responses for VIP vs standard clients, different flows for large vs small orders, different actions based on time of day. Conditional logic gives your automations the ability to make decisions — just like a human would.",
+          "stat": "∞",
+          "statLabel": "scenarios handled with proper branching"
+        },
+        {
+          "type": "content",
+          "headline": "Types of Conditional Logic",
+          "body": "Master these decision patterns:",
+          "bullets": [
+            "If/else: Two paths — if condition is true → Path A, otherwise → Path B",
+            "Switch/router: Multiple paths — route to different actions based on value (status = A, B, C, or D)",
+            "Filter: Only continue if condition is met, otherwise stop the workflow",
+            "Loop: Repeat a set of actions for each item in a list (process 50 emails one by one)",
+            "Nested conditions: If X and Y but not Z → specific path"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common Branching Patterns",
+          "body": "Patterns you'll use repeatedly:",
+          "bullets": [
+            "VIP routing: If customer spend > £10k → priority path with senior team",
+            "Time-based: If after 6pm → queue for tomorrow, else → process now",
+            "Content-based: If email mentions \"cancel\" → retention team, else → standard support",
+            "Threshold: If order value > £500 → require approval step, else → auto-process",
+            "Fallback: If primary action fails → try backup method → if that fails → alert human"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Avoiding Logic Traps",
+          "body": "Common mistakes with branching: (1) Not handling the \"else\" — what happens when nothing matches? Always have a default path. (2) Over-complicated conditions — if you need more than 3 nested ifs, redesign the flow. (3) Missing edge cases — test with unusual inputs (empty fields, very long text, special characters)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Add Branching to an Existing Workflow",
+          "body": "Take one of your existing automations and add intelligence: (1) Identify a decision point (where does \"it depends\" apply?). (2) Add an if/else branch. Example: your email triage — add a branch: If sender is in VIP list → immediate notification + draft reply. Else if sender is unknown → log to \"review later\" sheet. Else → standard processing. Test all three paths."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a \"switch/router\" in automation logic?",
+          "type": "mcq",
+          "options": [
+            "A physical device",
+            "Multiple paths that route based on different values",
+            "A way to turn automations on/off",
+            "A backup system"
+          ],
+          "correctIndex": 1,
+          "explanation": "A switch/router creates multiple paths in a workflow — routing to different actions based on the value of a field (like status, category, or score), not just true/false."
+        },
+        {
+          "question": "You don't need a default \"else\" path if your conditions cover most cases.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Always include a default/else path — unexpected inputs will eventually arrive, and without a fallback the workflow either errors or silently drops data."
+        },
+        {
+          "question": "What is a \"loop\" in automation?",
+          "type": "mcq",
+          "options": [
+            "An error that repeats forever",
+            "Repeating actions for each item in a list",
+            "Going back to the start",
+            "A circular workflow that never ends"
+          ],
+          "correctIndex": 1,
+          "explanation": "A loop (or iterator) processes each item in a list individually — for example, sending a personalised email to each of 50 contacts from a spreadsheet, one at a time."
+        }
+      ]
+    },
+    {
+      "id": "aab-24",
+      "dayNumber": 24,
+      "moduleId": "aab-mod-4",
+      "title": "AI Agents for Automation",
+      "subtitle": "Let AI decide what to do based on context — the frontier of intelligent automation.",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Rules-Based Automation Has a Ceiling. AI Agents Break Through It.",
+          "body": "Traditional automation follows fixed rules: \"If X → do Y.\" But what about situations that need judgment? AI agents can read context, weigh options, and decide the best action — like a smart assistant who handles unexpected situations without needing a rule for everything.",
+          "stat": "10×",
+          "statLabel": "more scenarios handled vs rules-based automation"
+        },
+        {
+          "type": "content",
+          "headline": "What Is an AI Agent?",
+          "body": "An AI agent is an automation where AI makes decisions at key points:",
+          "bullets": [
+            "Reads: The agent receives input (email, document, data, request)",
+            "Thinks: AI analyses the input, considers context, and decides what to do",
+            "Acts: The agent executes the chosen action (reply, route, escalate, create)",
+            "Learns: Over time, you refine the agent's instructions based on its decisions",
+            "Key difference: Rules handle known scenarios. Agents handle unknown ones too."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI Agent Use Cases",
+          "body": "Where agents outperform rules:",
+          "bullets": [
+            "Email triage: AI reads tone, urgency, and context — routes better than keyword filters",
+            "Customer support: AI understands the question, finds the answer, drafts the response",
+            "Content moderation: AI evaluates nuance, sarcasm, context — not just banned words",
+            "Lead qualification: AI researches the company and scores fit based on full context",
+            "Meeting scheduling: AI negotiates availability across multiple parties by email"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your First AI Agent",
+          "body": "Start simple: (1) Pick a decision your automation currently can't handle. (2) Write instructions for the AI as if briefing a human assistant. (3) Connect via Make/Zapier AI module or API. (4) Test with 20 real inputs and check decisions. (5) Refine instructions based on mistakes. A well-instructed agent handles 95%+ of cases correctly."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a Decision-Making Agent",
+          "body": "Create an AI agent for email categorisation: In Make or Zapier, add an AI step after your email trigger. Prompt: \"Analyse this email. Categorise as: urgent-response-needed, can-wait-24h, informational-only, or spam. Also identify the primary topic. Return JSON: {urgency, topic, suggested_action}.\" Test with 10 real emails and check how accurately the agent categorises them."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between rules-based automation and AI agents?",
+          "type": "mcq",
+          "options": [
+            "Agents are more expensive",
+            "Agents can handle unknown scenarios by understanding context",
+            "Agents only work with email",
+            "There is no real difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rules handle known, pre-defined scenarios. AI agents understand context and can handle novel situations that weren't explicitly programmed — making intelligent decisions based on the full picture."
+        },
+        {
+          "question": "AI agents make perfect decisions from day one without any refinement.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI agents need refinement — you test with real inputs, check decisions, and improve instructions over time. A well-tuned agent achieves 95%+ accuracy after iterative improvement."
+        },
+        {
+          "question": "Which task is BEST suited for an AI agent rather than rules-based automation?",
+          "type": "mcq",
+          "options": [
+            "Moving a file to a folder at 9am daily",
+            "Understanding email tone and deciding appropriate response urgency",
+            "Sending a weekly report on a schedule",
+            "Adding a row to a spreadsheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understanding tone, nuance, and context requires AI judgment — rules can't evaluate whether an email is frustrated, sarcastic, or genuinely urgent without understanding the language."
+        }
+      ]
+    },
+    {
+      "id": "aab-25",
+      "dayNumber": 25,
+      "moduleId": "aab-mod-4",
+      "title": "Webhooks & API Basics",
+      "subtitle": "Connect anything to anything — no code needed, just URLs and data.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Webhooks Are the Secret Glue of the Internet",
+          "body": "When one app needs to tell another \"hey, something happened!\" it uses a webhook — a URL that receives data when an event occurs. Understanding webhooks unlocks unlimited automation possibilities, letting you connect tools that don't have official integrations.",
+          "stat": "∞",
+          "statLabel": "possible connections with webhooks"
+        },
+        {
+          "type": "content",
+          "headline": "Webhooks Explained Simply",
+          "body": "A webhook is like a doorbell for your automation:",
+          "bullets": [
+            "You create a unique URL (your \"doorbell\") in Make/Zapier",
+            "You give that URL to another tool and say \"ring this when something happens\"",
+            "When the event occurs, the tool sends data to your URL",
+            "Your automation receives the data and runs its workflow",
+            "No polling needed — instant, real-time triggering"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "APIs: Asking Other Tools to Do Things",
+          "body": "While webhooks receive data, APIs let you send requests:",
+          "bullets": [
+            "GET: \"Give me information\" (fetch a contact record, get weather data)",
+            "POST: \"Create something new\" (add a contact, send a message)",
+            "PUT/PATCH: \"Update something\" (change a status, edit a record)",
+            "DELETE: \"Remove something\" (delete a record, cancel a subscription)",
+            "All done via HTTP requests — Make/Zapier handle this with visual builders"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When You Need Webhooks & APIs",
+          "body": "Use webhooks/APIs when: The app doesn't have a native Zapier/Make integration. You need real-time triggering (not 15-minute polling). You want to connect custom tools or internal systems. You need to send complex data payloads. Most automation platforms make this visual — you don't write code, you configure HTTP modules."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your First Webhook",
+          "body": "In Make or Zapier, create a \"Webhook\" trigger (it generates a unique URL). Copy that URL. Now use a tool like Reqbin or your browser to send test data to it: just visit the URL with ?name=Test&event=hello appended. Watch your automation platform receive the data instantly. You've just created a universal trigger that any tool can activate."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a webhook?",
+          "type": "mcq",
+          "options": [
+            "A type of website",
+            "A URL that receives data when an event occurs in another system",
+            "A programming language",
+            "A hook for hanging monitors"
+          ],
+          "correctIndex": 1,
+          "explanation": "A webhook is a URL that receives data when a specific event happens — it's how apps communicate in real-time, triggering automations the instant something occurs."
+        },
+        {
+          "question": "You need to write code to use webhooks in automation platforms like Make or Zapier.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Make and Zapier provide visual HTTP/webhook modules — you configure URLs, headers, and data with a form interface, no coding required."
+        },
+        {
+          "question": "What does a POST API request do?",
+          "type": "mcq",
+          "options": [
+            "Retrieves existing information",
+            "Creates something new",
+            "Deletes a record",
+            "Updates an existing record"
+          ],
+          "correctIndex": 1,
+          "explanation": "A POST request creates something new — adds a contact, sends a message, creates a record. GET retrieves, PUT/PATCH updates, and DELETE removes."
+        }
+      ]
+    },
+    {
+      "id": "aab-26",
+      "dayNumber": 26,
+      "moduleId": "aab-mod-4",
+      "title": "Monitoring & Optimisation",
+      "subtitle": "Track what's running, fix what's failing, and optimise for speed and reliability.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Manage What You Can't Monitor",
+          "body": "With 20+ automations running, how do you know they're all working? Without monitoring, broken workflows silently lose data for days before anyone notices. A monitoring system gives you a real-time dashboard of your automation health — catching issues in minutes, not weeks.",
+          "stat": "20+",
+          "statLabel": "automations to track as your system grows"
+        },
+        {
+          "type": "content",
+          "headline": "What to Monitor",
+          "body": "Track these metrics for every automation:",
+          "bullets": [
+            "Success rate: What percentage of runs complete without error?",
+            "Failure count: How many errors this week vs last week?",
+            "Run time: Is the automation getting slower? (signal of problems)",
+            "Volume: How many times did it trigger? (unexpected spikes = investigate)",
+            "Data quality: Are outputs correct? (spot-check regularly)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Monitoring Dashboard",
+          "body": "Create a central view of all automation health:",
+          "bullets": [
+            "Most platforms have built-in run history (Zapier Task History, Make Scenario Logs)",
+            "Set up a Google Sheet that logs: automation name, status, timestamp, error message",
+            "Daily health check: automated Slack message with overnight run summary",
+            "Weekly report: total runs, failures, time saved, cost (tasks/operations used)",
+            "Alert rules: any automation with 3+ failures in 24 hours → immediate notification"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Optimisation Techniques",
+          "body": "Make your automations faster and cheaper: combine multiple steps that use the same app into one (batch operations). Use filters early to stop unnecessary processing. Cache frequently-used data instead of fetching it every run. Schedule non-urgent automations for off-peak hours to spread the load."
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your Health Monitor",
+          "body": "Create a \"Automation Health\" spreadsheet with columns: Name, Last Success, Last Failure, Success Rate, Notes. Fill it with your current automations. Then set up one meta-automation: every time any of your workflows fails → log the error to this sheet + send yourself a daily summary at 9am. This is your automation control tower."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important metric for automation health?",
+          "type": "mcq",
+          "options": [
+            "Number of automations you have",
+            "Success rate per automation",
+            "How expensive the platform is",
+            "How long it took to build"
+          ],
+          "correctIndex": 1,
+          "explanation": "Success rate (percentage of runs completing without error) is the primary health indicator — a dropping success rate signals something needs fixing before data is lost."
+        },
+        {
+          "question": "Broken automations always notify you immediately when they fail.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without explicit monitoring and alerts, broken automations can fail silently for days or weeks — losing data without anyone noticing until a human spots the gap."
+        },
+        {
+          "question": "What is a good alert threshold for automation failures?",
+          "type": "mcq",
+          "options": [
+            "Alert after 100 failures",
+            "3+ failures in 24 hours",
+            "Only check monthly",
+            "Never set alerts — check manually"
+          ],
+          "correctIndex": 1,
+          "explanation": "3+ failures in 24 hours is a practical threshold — it catches real problems quickly without alerting on isolated one-off errors that resolve themselves."
+        }
+      ]
+    },
+    {
+      "id": "aab-27",
+      "dayNumber": 27,
+      "moduleId": "aab-mod-4",
+      "title": "The Automation Operating System",
+      "subtitle": "Your personal dashboard of everything automated — the single view that runs your life.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Scattered Automations to a Unified System",
+          "body": "Individual automations are useful. But a complete Automation Operating System is transformative. Today you assemble everything — workflows, agents, monitors, and documentation — into one cohesive system that you can manage, share, and scale from a single dashboard.",
+          "stat": "1",
+          "statLabel": "unified system controlling all your automations"
+        },
+        {
+          "type": "content",
+          "headline": "Your Automation OS Components",
+          "body": "A complete system has five layers:",
+          "bullets": [
+            "Registry: A list of every automation — name, purpose, trigger, platform, status",
+            "Documentation: Each automation has a \"spec\" — what it does, why, and how to fix it",
+            "Monitoring: Real-time health dashboard (built in Lesson 26)",
+            "Version history: Record of changes made — what was updated and when",
+            "Playbooks: Step-by-step instructions for common issues (restart, debug, rebuild)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Automation Registry",
+          "body": "Create a master document (Notion, spreadsheet, or doc) with one row per automation:",
+          "bullets": [
+            "Name: What you call it (e.g., \"Client Email Triage\")",
+            "Platform: Where it lives (Zapier, Make, n8n, custom)",
+            "Trigger: What starts it",
+            "Key actions: What it does in 1 sentence",
+            "Owner: Who's responsible if it breaks",
+            "Last reviewed: When you last checked it still works"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Monthly Automation Review",
+          "body": "Every month, spend 30 minutes reviewing your OS: Are all automations still needed? Any that haven't triggered in 30 days — do they still serve a purpose? Are there manual tasks that crept back in? What new automation opportunities exist? This review prevents bloat and keeps your system lean and effective."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Automation Registry",
+          "body": "Create a Notion page or spreadsheet titled \"My Automation OS.\" Add columns: Name, Platform, Trigger, What It Does, Status (active/paused/broken), Last Reviewed. Fill in every automation you've built during this course (should be 10+). Add a monthly reminder to review this registry. Paste the completed registry into AI and ask: \"What gaps do you see? What processes am I still doing manually that could be automated?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an \"Automation Registry\"?",
+          "type": "mcq",
+          "options": [
+            "A government database",
+            "A master list of all your automations with key details",
+            "A coding framework",
+            "An email list"
+          ],
+          "correctIndex": 1,
+          "explanation": "An Automation Registry is your master reference — listing every automation with its name, platform, trigger, purpose, owner, and status so you have complete visibility."
+        },
+        {
+          "question": "You should only review your automation system when something breaks.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A monthly proactive review prevents problems — checking if automations are still needed, identifying manual tasks that crept back, and spotting new opportunities."
+        },
+        {
+          "question": "What should you do with an automation that hasn't triggered in 30 days?",
+          "type": "mcq",
+          "options": [
+            "Leave it running forever",
+            "Evaluate whether it still serves a purpose and pause/remove if not",
+            "Immediately delete it",
+            "Double its trigger frequency"
+          ],
+          "correctIndex": 1,
+          "explanation": "Inactive automations should be evaluated — they may be handling a rare but important event, or they may be obsolete. Review and decide: keep, update, or remove."
+        }
+      ]
+    },
+    {
+      "id": "aab-28",
+      "dayNumber": 28,
+      "moduleId": "aab-mod-4",
+      "title": "Scale & Delegate",
+      "subtitle": "Teach others your systems, scale beyond yourself, and automate the automation.",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Ultimate Automation: Making Yourself Optional",
+          "body": "You've built an incredible automation system. But the final frontier isn't automating more tasks — it's making the entire system run without you. Teaching others, documenting everything, and creating self-healing workflows means your system generates value even when you're on holiday.",
+          "stat": "24/7",
+          "statLabel": "your system works even when you don't"
+        },
+        {
+          "type": "content",
+          "headline": "Scaling Your Automations",
+          "body": "Take your system from personal to team-wide:",
+          "bullets": [
+            "Template your workflows: Turn personal automations into reusable templates others can deploy",
+            "Create shared folders: Organise automations by department/function so teams find what they need",
+            "Build for others: Create automations for teammates that save THEM time too",
+            "Standardise: Use consistent naming, documentation, and structure across all workflows",
+            "Measure ROI: Track total time saved across the team — build the business case"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Delegation Framework",
+          "body": "Teaching others to use (and build) automations:",
+          "bullets": [
+            "Document: Every automation has a one-page spec (what, why, how, troubleshooting)",
+            "Record: Create 2-minute Loom videos showing how each automation works",
+            "Train: Run a 30-minute \"automation basics\" session for your team",
+            "Empower: Give team members access to build their own simple automations",
+            "Support: Create a #automations Slack channel for questions and sharing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Self-Healing Systems",
+          "body": "The pinnacle of automation: systems that fix themselves. Auto-retry on failure. If retry fails → try alternative method. If alternative fails → create a support ticket for human review. If no human responds in 4 hours → escalate to manager. The system handles 95% of issues without you ever knowing there was a problem."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Automation Handover Document",
+          "body": "Pick your 3 most important automations. For each, write a one-page spec: (1) What it does in one sentence. (2) Why it matters (what breaks if it stops). (3) How it works (trigger → steps → output). (4) How to fix it (common errors + solutions). (5) Who owns it. Share this with a colleague and ask: \"Could you maintain this if I was unavailable?\" Their answer reveals documentation gaps."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"ultimate automation\" according to this lesson?",
+          "type": "mcq",
+          "options": [
+            "Building 1000 automations",
+            "Making your system run without you",
+            "Using the most expensive tools",
+            "Automating your personal social media"
+          ],
+          "correctIndex": 1,
+          "explanation": "The ultimate automation is making yourself optional — systems that are documented, delegated, and self-healing so they generate value 24/7 regardless of your involvement."
+        },
+        {
+          "question": "Self-healing automations should immediately alert a human for every single error.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Self-healing systems first try to fix themselves (retry, alternative method) and only escalate to humans when automated recovery fails — handling 95% of issues automatically."
+        },
+        {
+          "question": "What should an automation handover document include?",
+          "type": "mcq",
+          "options": [
+            "Just the automation name",
+            "What it does, why it matters, how it works, how to fix it, who owns it",
+            "Only the error logs",
+            "The full source code of every connected app"
+          ],
+          "correctIndex": 1,
+          "explanation": "A complete handover document covers: purpose, importance, workflow description, troubleshooting guide, and ownership — everything someone needs to maintain it independently."
+        }
+      ]
+    }
+  ]
+}

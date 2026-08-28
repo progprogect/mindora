@@ -1,0 +1,2445 @@
+{
+  "id": "prompt-engineering-mastery",
+  "title": "Prompt Engineering Mastery",
+  "subtitle": "Write prompts that get results every time.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Prompt Foundations",
+      "subtitle": "Understand what a prompt really is and why the words you choose matter",
+      "days": "Lessons 1–7",
+      "skill": "Build any prompt from scratch using the 4-ingredient formula and avoid the most common beginner mistakes",
+      "lessonIds": [
+        "pem-1-why-words-matter",
+        "pem-2-how-ai-reads-prompts",
+        "pem-3-anatomy-of-a-prompt",
+        "pem-4-first-power-prompt",
+        "pem-5-tone-and-style",
+        "pem-6-common-mistakes",
+        "pem-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Techniques That Work",
+      "subtitle": "The named, battle-tested techniques that pros use every day",
+      "days": "Lessons 8–14",
+      "skill": "Apply 6 professional techniques — role prompting, chain of thought, few-shot, iteration, negative prompting, and context stacking",
+      "lessonIds": [
+        "pem-8-role-prompting",
+        "pem-9-chain-of-thought",
+        "pem-10-few-shot",
+        "pem-11-iteration-loop",
+        "pem-12-negative-prompting",
+        "pem-13-context-stacking",
+        "pem-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Real-World Mastery",
+      "subtitle": "Apply everything to real work — writing, research, creativity, and business",
+      "days": "Lessons 15–21",
+      "skill": "Write confident prompts for any real-world task and build a personal prompt library that keeps getting better",
+      "lessonIds": [
+        "pem-15-prompt-for-writing",
+        "pem-16-prompt-for-research",
+        "pem-17-prompt-for-creativity",
+        "pem-18-prompt-for-business",
+        "pem-19-prompt-library",
+        "pem-20-advanced-techniques",
+        "pem-21-graduation"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pem-1-why-words-matter",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "Why Your Words Are Everything",
+      "subtitle": "Most people use AI like a search engine — that's why they get mediocre results",
+      "duration": "5 min",
+      "xpValue": 15,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Two people ask AI the same thing. One gets gold. The other gets garbage. The only difference? How they asked.",
+          "body": "Most people type into AI the same way they'd Google something — a few vague words and hope for the best. That's the #1 mistake beginners make. Today you'll discover why your words are the most powerful tool in your AI toolkit.",
+          "stat": "139×",
+          "statLabel": "better results from specific vs vague prompts (Stanford AI Lab)"
+        },
+        {
+          "type": "content",
+          "headline": "AI is a mirror, not a mind reader",
+          "body": "When you ask AI something vague, it has to guess what you want — and it fills in the gaps with the most generic version possible. When you're specific, it delivers exactly what you need. The quality of your input directly determines the quality of your output.",
+          "bullets": [
+            "❌ Vague: \"Help me write an email\" → Generic, forgettable draft",
+            "✅ Specific: \"Write a warm 3-sentence follow-up email to a client who hasn't replied in 5 days\" → Ready to send",
+            "The only difference is clarity — and that's a skill you can learn right now"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prompting vs searching — a crucial difference",
+          "body": "Search engines find pages that already exist. AI generates a brand-new response shaped entirely by your exact words. That's why prompt engineering is its own skill — and why it's worth mastering.",
+          "bullets": [
+            "Google: \"email follow-up template\" → Shows you articles someone else wrote",
+            "AI: \"Write a follow-up email for my exact situation\" → Creates something just for you",
+            "With AI you're not searching for answers — you're directing a creation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 10-second rule",
+          "body": "Before sending any prompt, ask yourself: \"Could someone with no context understand exactly what I want?\" If the answer's no, add one sentence. That single habit will immediately improve 80% of your results.",
+          "bullets": [
+            "❌ \"Write me something good\" — what? for who? how long? what tone?",
+            "✅ \"Write a 3-sentence LinkedIn post about why sleep is underrated for entrepreneurs. Tone: casual and punchy.\"",
+            "More specific = more useful. Every single time."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your first experiment",
+          "body": "Open any AI tool — ChatGPT (chat.openai.com) or Claude (claude.ai), both free. Run these two prompts and compare the outputs:",
+          "bullets": [
+            "Prompt A: \"Help me write a bio\"",
+            "Prompt B: \"Write a 3-sentence professional bio for a [your job title] who helps [your audience]. Tone: confident but approachable.\"",
+            "Notice how much better Prompt B is — and how little extra effort it took"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the main reason vague prompts produce poor AI results?",
+          "type": "mcq",
+          "options": [
+            "AI picks responses randomly from its training data",
+            "AI has to guess what you mean and fills the gaps with generic content",
+            "Vague prompts trigger safety filters that limit responses",
+            "Short prompts use fewer tokens and produce shorter outputs"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you're vague, AI doesn't know your goal, audience, tone, or format — so it guesses. It fills in the blanks with the most \"average\" version of what you might want, which is usually generic and unhelpful. Specificity removes the guesswork and unlocks precision."
+        },
+        {
+          "question": "How is prompting AI different from searching Google?",
+          "type": "mcq",
+          "options": [
+            "They work identically — AI is just a smarter search engine",
+            "Google generates custom content; AI finds existing pages",
+            "AI generates a brand-new personalised response based on your exact words",
+            "AI searches the internet and summarises what it finds"
+          ],
+          "correctIndex": 2,
+          "explanation": "Search engines retrieve documents that already exist. AI creates a brand-new response from scratch, shaped entirely by your specific prompt. That's why the same tool gives wildly different results to different people — it's responding to your exact words, not retrieving a cached answer."
+        },
+        {
+          "question": "The \"10-second rule\" is: before sending a prompt, ask yourself whether someone with no context could understand exactly what you want.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Exactly right. The 10-second rule is a simple mental check: if a stranger read your prompt with zero background knowledge, would they know exactly what output you're looking for? If not, add one sentence of context. This one habit dramatically improves the quality of most AI outputs."
+        },
+        {
+          "question": "Which of these is the STRONGEST prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Write something for my website\"",
+            "\"Give me some content ideas\"",
+            "\"Write a 100-word homepage headline for a personal finance app helping millennials save their first £1,000. Friendly, motivating tone.\"",
+            "\"Make it sound professional\""
+          ],
+          "correctIndex": 2,
+          "explanation": "The strongest prompt specifies the task, format (100-word headline), audience (millennials), goal (save first £1,000), and tone (friendly and motivating). All four key ingredients are present. The other options leave too many critical decisions to guesswork — and AI fills those gaps with generic defaults."
+        }
+      ]
+    },
+    {
+      "id": "pem-2-how-ai-reads-prompts",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Inside the Machine: How AI Reads You",
+      "subtitle": "AI isn't understanding your words — it's predicting them. Here's what that means for you",
+      "duration": "5 min",
+      "xpValue": 15,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "AI isn't understanding you. It's completing you. Once you know the difference, everything changes.",
+          "body": "Most people think AI reads their prompt like a human — taking in meaning, intent, and context. The reality is more fascinating, and far more useful to understand. Today you'll get the mental model that separates good prompters from great ones.",
+          "stat": "2 trillion",
+          "statLabel": "words in GPT-4's training data"
+        },
+        {
+          "type": "content",
+          "headline": "Tokens — the building blocks of AI",
+          "body": "AI doesn't process words the way humans do. It works with \"tokens\" — small text chunks (roughly ¾ of a word on average). When you type a prompt, AI receives a stream of tokens and its job is to predict the next most likely sequence.",
+          "bullets": [
+            "\"Prompt engineering\" = roughly 4 tokens",
+            "Your whole prompt fits in a \"context window\" — everything AI can see at once",
+            "The more useful context in that window, the more precisely AI can predict what you need"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The prediction engine",
+          "body": "At every step, AI is asking: \"Given everything I've seen so far, what's the most likely next token?\" It learned from billions of human-written examples — which is why it sounds so human. It's completing patterns from human text at superhuman scale.",
+          "bullets": [
+            "Think autocomplete on your phone — AI is that concept, but vastly more powerful",
+            "It's not \"thinking\" — it's pattern-matching at incredible speed and scale",
+            "Clearly written prompts → clearly written outputs (because clear patterns have clear completions)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What this means for your prompts",
+          "body": "Once you understand AI is a prediction engine, the strategy is clear: structure your prompt so the most likely completion is exactly what you want. The clearer you are, the fewer valid completions exist — and the more useful the one AI picks.",
+          "bullets": [
+            "Vague prompt → thousands of equally likely completions → AI picks an average one",
+            "Specific prompt → one clearly right completion → AI nails it",
+            "You're not chatting with AI — you're steering its prediction"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Peek inside the machine",
+          "body": "Try this experiment in any AI tool — it reveals how prediction works better than any explanation could:",
+          "bullets": [
+            "Type: \"The best way to start a prompt is to...\" and let AI finish. It predicts advice based on patterns it learned.",
+            "Then try: \"As a frustrated user who hates AI, the best way to start a prompt is to...\" — notice how the role shifts the prediction",
+            "Same starting phrase, very different completions — because context changes what's \"most likely\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does an AI model fundamentally do when you send it a prompt?",
+          "type": "mcq",
+          "options": [
+            "It searches the internet for the best answer",
+            "It retrieves answers from a database of Q&A pairs",
+            "It calculates the mathematically correct response",
+            "It predicts the most likely next tokens based on patterns from its training data"
+          ],
+          "correctIndex": 3,
+          "explanation": "Modern AI models like GPT-4 and Claude are prediction engines. They take your prompt as a sequence of tokens and generate the statistically most likely continuation, based on billions of examples of human text. They don't \"look up\" answers — they generate new ones that fit the pattern you've set up."
+        },
+        {
+          "question": "What is the \"context window\" in AI?",
+          "type": "mcq",
+          "options": [
+            "The time limit before AI forgets your conversation",
+            "The maximum number of characters allowed in a response",
+            "A safety filter that screens prompts before processing",
+            "Everything AI can \"see\" in a single interaction — your prompt and the conversation so far"
+          ],
+          "correctIndex": 3,
+          "explanation": "The context window is essentially AI's working memory for a conversation. It includes your prompt, any previous messages, and any system instructions. The more useful, relevant context you fit in that window, the better AI can predict what you actually need — which is why context is one of the 4 core prompt ingredients."
+        },
+        {
+          "question": "True or False: AI genuinely understands the meaning of your words the way a human does.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. AI doesn't \"understand\" meaning — it predicts patterns. What looks like understanding is extremely sophisticated pattern-matching across billions of text examples. This matters for prompt engineering: you're not explaining something to a person — you're setting up a prediction sequence that leads to your desired output."
+        },
+        {
+          "question": "Why does adding a specific role (\"Act as a marketing expert...\") to a prompt change the output?",
+          "type": "mcq",
+          "options": [
+            "It unlocks a hidden mode in the AI",
+            "It shifts what patterns are \"most likely\" to follow — changing the prediction",
+            "It makes AI search specifically within marketing content",
+            "It reduces the number of tokens used, making responses faster"
+          ],
+          "correctIndex": 1,
+          "explanation": "Because AI is a prediction engine, framing changes what completion is most likely. \"As a marketing expert, the key to a great campaign is...\" activates patterns from marketing-expert writing in the training data. The role is a context signal that steers the statistical prediction — not a mode switch or a database filter."
+        }
+      ]
+    },
+    {
+      "id": "pem-3-anatomy-of-a-prompt",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "The 4 Ingredients of a Perfect Prompt",
+      "subtitle": "Task · Context · Format · Tone — every great prompt has all four",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every prompt that gets amazing results has 4 things in common. Every prompt that flops is missing at least one.",
+          "body": "Great prompts aren't magic — they're a recipe. Once you know the 4 ingredients, you can construct a powerful prompt for almost any task in under a minute. Today you'll learn the framework professionals use every day — and write your first power prompt.",
+          "stat": "4",
+          "statLabel": "ingredients in every great prompt"
+        },
+        {
+          "type": "content",
+          "headline": "Ingredient 1: Task — tell AI exactly what to do",
+          "body": "The Task is the action you want AI to perform. It should start with a clear verb and be as specific as possible. Vague tasks produce vague results. Precise tasks produce precise results.",
+          "bullets": [
+            "❌ Weak: \"Something about my business\"",
+            "✅ Strong: \"Write a 200-word About Us paragraph for my business\"",
+            "Power verbs: Write · Summarise · Compare · Generate · Rewrite · Explain · Create · List · Analyse · Translate"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ingredient 2: Context — give AI the background it needs",
+          "body": "AI has no idea who you are, what industry you're in, or who your audience is unless you tell it. Context fills in those blanks. Think of it as briefing a talented freelancer who just walked in the door.",
+          "bullets": [
+            "Who you are: \"I'm a fitness coach targeting busy parents\"",
+            "What it's for: \"for a landing page to drive sign-ups for my 8-week programme\"",
+            "Why it matters: \"my audience is time-poor and sceptical of quick fixes\"",
+            "More relevant context = more tailored output"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ingredients 3 & 4: Format + Tone — control HOW it responds",
+          "body": "Format tells AI the shape of the output. Tone tells it the voice. Together they determine whether you get a bullet list or an essay, a formal report or a casual caption.",
+          "bullets": [
+            "Format: bullet list · numbered steps · table · paragraph · email · social post · script · summary",
+            "Tone: professional · casual · friendly · motivating · authoritative · witty · empathetic · concise",
+            "Example: \"Format: 5 bullet points. Tone: confident and actionable.\" — crystal clear."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your first 4-ingredient prompt",
+          "body": "Use this structure and fill in your own details. Then send it to any AI tool and see the difference:",
+          "bullets": [
+            "1️⃣ Task: \"Write a [format, e.g. 3-sentence caption / 200-word email] about [topic]...\"",
+            "2️⃣ Context: \"I'm a [who you are] targeting [your audience] for [what it's for]...\"",
+            "3️⃣ Format: \"Format: [bullet list / short paragraphs / numbered list]\"",
+            "4️⃣ Tone: \"Tone: [how it should sound, e.g. warm, punchy, formal]\"",
+            "Example: \"Write a 3-sentence Instagram caption about meal prep. I'm a nutritionist targeting working mums. Format: 3 short sentences. Tone: practical and encouraging.\""
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the 4 prompt ingredients tells AI WHO you're writing for?",
+          "type": "mcq",
+          "options": [
+            "Task",
+            "Context",
+            "Format",
+            "Tone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context fills in the background AI needs to tailor its output — including your identity, your audience, and the purpose of the task. Without context, AI writes for a generic imaginary reader. With context, every word is aimed at your real goal."
+        },
+        {
+          "question": "You want AI to give you a numbered list of 5 steps. Which ingredient controls this?",
+          "type": "mcq",
+          "options": [
+            "Task",
+            "Context",
+            "Format",
+            "Tone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Format tells AI the structure and shape of its output. \"Format: numbered list of 5 steps\" is a format instruction. Task tells AI what to write about; Format tells it how to present it. Getting both right is the difference between useful output and output you have to reformat yourself."
+        },
+        {
+          "question": "\"Write a warm, encouraging post that makes people feel motivated\" — what ingredient is \"warm and encouraging\" an example of?",
+          "type": "mcq",
+          "options": [
+            "Task",
+            "Context",
+            "Format",
+            "Tone"
+          ],
+          "correctIndex": 3,
+          "explanation": "Tone describes the voice, emotion, and style of the writing. \"Warm and encouraging\" is a tone instruction. Without a tone, AI defaults to its neutral, somewhat corporate house style. Defining tone clearly ensures the output sounds like you — not like a generic AI."
+        },
+        {
+          "question": "True or False: For any important task, including all 4 ingredients (Task, Context, Format, Tone) will almost always produce better results than omitting one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. In practice you can sometimes skip an ingredient if it's genuinely irrelevant — but for any task that matters, all four dramatically improve quality. Think of it as a recipe: you can leave out one ingredient, but the dish is almost always better when you include all four. Once this becomes habit, you'll write great prompts almost automatically."
+        }
+      ]
+    },
+    {
+      "id": "pem-4-first-power-prompt",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "Build Your First Power Prompt",
+      "subtitle": "Put all 4 ingredients together — and write a prompt you'll actually use today",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've learned the theory. Now it's time to build something real — a prompt you can copy, use, and get a great result from right now.",
+          "body": "Knowing the 4 ingredients is one thing. Assembling them into a prompt that actually delivers is another. Today you'll build your first complete Power Prompt — step by step — and you'll see exactly how the pieces click together.",
+          "stat": "3 min",
+          "statLabel": "to write a Power Prompt once you know the formula"
+        },
+        {
+          "type": "content",
+          "headline": "The Power Prompt Template",
+          "body": "Here's the exact structure pros use. Fill in the blanks and you have a Power Prompt every time:",
+          "bullets": [
+            "1️⃣ Task: \"[Action verb] a [format] about [topic]...\"",
+            "2️⃣ Context: \"I am a [who you are] and this is for [audience/purpose]...\"",
+            "3️⃣ Format: \"Format: [bullet list / numbered steps / single paragraph / table]\"",
+            "4️⃣ Tone: \"Tone: [word that captures the voice you want]\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "See it in action — before and after",
+          "body": "Here's the same request as a weak prompt vs a Power Prompt. The difference in output quality is enormous:",
+          "bullets": [
+            "❌ Weak: \"Write me a job description for a sales role\"",
+            "✅ Power Prompt: \"Write a 200-word job description for a SaaS Account Executive role at a fast-growing startup. I am the Head of People. Target audience: ambitious mid-career sales professionals. Format: short paragraphs with a bullet list of key responsibilities. Tone: energetic and aspirational.\"",
+            "Same task. Night-and-day output."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The shortcut: start with the end in mind",
+          "body": "Before writing a single word of your prompt, answer these three questions in your head:",
+          "bullets": [
+            "🎯 What does the perfect output look like? (That defines Task + Format)",
+            "👤 Who is this for and what do they need? (That defines Context)",
+            "🗣️ How should it sound? (That defines Tone)",
+            "Once you can picture the perfect output, writing the prompt is just describing it to AI"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write your own Power Prompt right now",
+          "body": "Think of something you actually need to write or create this week. Use the template:",
+          "bullets": [
+            "Fill in: \"Write a [format] about [topic]...\"",
+            "Add: \"I am a [role] and this is for [audience/purpose]...\"",
+            "Specify: \"Format: [structure]. Tone: [voice].\"",
+            "Send it to ChatGPT or Claude — then notice how much better the output is than your usual approach",
+            "Keep this prompt. You've just built the foundation of your personal prompt library."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the correct order of the 4 Power Prompt ingredients?",
+          "type": "mcq",
+          "options": [
+            "Format → Tone → Task → Context",
+            "Context → Task → Tone → Format",
+            "Task → Context → Format → Tone",
+            "Tone → Context → Format → Task"
+          ],
+          "correctIndex": 2,
+          "explanation": "The natural order is Task (what to do) → Context (background it needs) → Format (how to shape the output) → Tone (the voice). Starting with Task anchors the prompt with the action. Context provides the \"why\" and \"who for\". Format and Tone then refine how the output looks and sounds. That said, the order matters less than including all four — AI reads the whole prompt before responding."
+        },
+        {
+          "question": "Before writing a Power Prompt, the most useful first step is to picture what the perfect output looks like.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Exactly right. If you can describe the ideal output in your head — its format, audience, tone, and purpose — writing the prompt is just translating that picture into text. People who struggle with prompts are usually unclear on what they actually want. Starting with the destination makes the directions obvious."
+        },
+        {
+          "question": "Which of these is the strongest Power Prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Write a bio for me\"",
+            "\"Write a professional bio, keep it short and punchy\"",
+            "\"Write a 3-sentence professional bio for a UX designer specialising in mobile apps. Audience: potential clients on LinkedIn. Tone: confident and approachable.\"",
+            "\"Write something for my LinkedIn page about my work in design\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Option C includes all 4 Power Prompt ingredients: Task (write a 3-sentence bio), Context (UX designer, mobile apps, potential clients on LinkedIn), Format (3 sentences), and Tone (confident and approachable). The others are missing at least 2 ingredients, so AI has to guess the audience, format, tone, and specific focus — producing generic output."
+        },
+        {
+          "question": "Why should you keep the Power Prompts you write?",
+          "type": "mcq",
+          "options": [
+            "So you can submit them as homework",
+            "So AI can learn your preferences over time",
+            "They form the start of a reusable personal prompt library you can tweak and reuse",
+            "They're required for the course certificate"
+          ],
+          "correctIndex": 2,
+          "explanation": "A personal prompt library is one of the most valuable things a skilled AI user builds. Instead of rewriting prompts from scratch every time, you refine and reuse proven ones. By Lesson 19 of this course you'll build out that library systematically — but every Power Prompt you save now is a head start."
+        }
+      ]
+    },
+    {
+      "id": "pem-5-tone-and-style",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Tone & Style: The Voice of Your Prompts",
+      "subtitle": "Same words, completely different result — tone is more powerful than most people realise",
+      "duration": "5 min",
+      "xpValue": 15,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Two prompts. Identical topic. Opposite tones. The outputs are so different, you'd swear they were from two different writers.",
+          "body": "Most beginners focus entirely on what they're asking for — and completely ignore how it should be said. Tone is often the single change that transforms a mediocre output into one you're genuinely proud of. Today you'll master it.",
+          "stat": "68%",
+          "statLabel": "of readers judge content quality primarily by its tone and voice (Nielsen Norman Group)"
+        },
+        {
+          "type": "content",
+          "headline": "What \"tone\" actually means in prompting",
+          "body": "Tone tells AI the emotional register and personality of the output. It answers the question: \"How should this sound?\" Without a tone instruction, AI defaults to its neutral house style — which sounds like a slightly corporate, slightly bland version of whatever you asked for.",
+          "bullets": [
+            "Without tone: \"Here are five strategies for improving your sleep habits.\" (Generic)",
+            "Tone: casual and encouraging: \"Sleep better? Here's the honest truth about what actually works...\" (Engaging)",
+            "Tone: data-driven and authoritative: \"Research across 12 sleep studies identifies five evidence-backed interventions...\" (Expert)",
+            "Same information. Completely different reader experience."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A tone vocabulary you can use right now",
+          "body": "Pick one or two tone words per prompt. Combining three or more can create contradictions that confuse the output.",
+          "bullets": [
+            "🟦 Professional & Formal: authoritative · expert · precise · data-driven · objective",
+            "🟩 Warm & Human: friendly · encouraging · empathetic · conversational · supportive",
+            "🟨 Energetic & Bold: punchy · direct · confident · motivating · inspiring",
+            "🟥 Creative & Distinctive: witty · playful · irreverent · storytelling · poetic"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tone vs Style — a useful distinction",
+          "body": "Tone describes the emotional register (how it feels). Style describes the structural choices (how it reads). You can combine both in one prompt for maximum control.",
+          "bullets": [
+            "Tone example: \"Tone: warm and encouraging\"",
+            "Style example: \"Style: short punchy sentences, no jargon, contractions welcome\"",
+            "Combined: \"Tone: casual and motivating. Style: 2-sentence paragraphs, active voice, avoid corporate buzzwords.\"",
+            "The more specific your tone + style, the closer the first draft gets to what you actually want"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The same topic, three tones",
+          "body": "Open any AI tool. Pick any topic you care about and run all three prompts:",
+          "bullets": [
+            "Prompt 1: \"Write 3 sentences about [your topic]. Tone: formal and authoritative.\"",
+            "Prompt 2: \"Write 3 sentences about [your topic]. Tone: casual and encouraging.\"",
+            "Prompt 3: \"Write 3 sentences about [your topic]. Tone: bold and punchy.\"",
+            "Read all three outputs side by side — the difference will instantly show you why tone matters",
+            "Save the tone that fits your brand or your goal. You'll use it in every prompt you write."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens when you don't specify a tone in your prompt?",
+          "type": "mcq",
+          "options": [
+            "AI chooses the most creative tone available",
+            "AI mirrors whatever tone you used when writing the prompt",
+            "AI defaults to its neutral, slightly corporate house style",
+            "AI asks you a follow-up question to clarify the tone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Without a tone instruction, AI falls back to its default voice — which tends to be neutral, somewhat formal, and faintly corporate. It's not bad, but it's generic. For any output that needs to sound like a specific person, brand, or emotional register, you must specify tone explicitly. Default mode is the lowest-risk, lowest-impact choice."
+        },
+        {
+          "question": "True or False: You can combine as many tone words as you want — the more you add, the more control you have.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Combining too many tone words often creates contradictions that confuse the output. \"Authoritative, casual, witty, formal, empathetic, and playful\" gives AI competing signals — the result is usually incoherent. One or two well-chosen tone words give AI a clear target. Three at most, and only if they reinforce each other."
+        },
+        {
+          "question": "What is the difference between Tone and Style in prompting?",
+          "type": "mcq",
+          "options": [
+            "Tone = the topic; Style = the format",
+            "Tone = emotional register (how it feels); Style = structural choices (how it reads)",
+            "Tone = length of the output; Style = vocabulary level",
+            "They mean the same thing — tone and style are interchangeable"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tone describes the emotional register and personality of the output — how it makes the reader feel. Style describes structural choices like sentence length, vocabulary, use of contractions, or avoidance of jargon. They're different controls you can use independently or together. \"Tone: warm. Style: short sentences, no bullet points\" would give you warm, human-feeling prose that reads in a punchy way."
+        },
+        {
+          "question": "Which tone instruction would work BEST for a formal business report?",
+          "type": "mcq",
+          "options": [
+            "\"Tone: playful and irreverent\"",
+            "\"Tone: data-driven, authoritative, and objective\"",
+            "\"Tone: conversational and casual — write like you're texting a friend\"",
+            "\"Tone: warm and encouraging, like a supportive life coach\""
+          ],
+          "correctIndex": 1,
+          "explanation": "A formal business report needs authority, precision, and objectivity — hallmarks of the data-driven, authoritative, objective tone cluster. Playful or irreverent tone would undermine credibility. Conversational or casual tone would make it feel unprofessional. Warm and encouraging works well for coaching content but not formal analysis. Match the tone to the context and audience."
+        }
+      ]
+    },
+    {
+      "id": "pem-6-common-mistakes",
+      "dayNumber": 6,
+      "moduleId": "module-1",
+      "title": "The 7 Mistakes That Ruin Good Prompts",
+      "subtitle": "Even experienced users make these — spot them, fix them, never make them again",
+      "duration": "7 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You can know the 4 ingredients perfectly and still get terrible results. These 7 mistakes are the reason why.",
+          "body": "Most prompt failures aren't about missing a technique — they're about a handful of predictable errors that are easy to fix once you know them. After today's lesson, you'll catch these mistakes in your own prompts before you send them.",
+          "stat": "7",
+          "statLabel": "mistakes account for 90% of disappointing AI outputs"
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 1 & 2: Too vague + Too much at once",
+          "body": "The two most common failure modes — and they're opposites of each other.",
+          "bullets": [
+            "❌ Mistake 1 — Too vague: \"Write something for my blog\" → No topic, format, audience, or purpose. AI guesses everything wrong.",
+            "✅ Fix: Specify at minimum: topic, format, audience, purpose. One sentence of context is enough.",
+            "❌ Mistake 2 — Too much at once: \"Write a blog post, social media captions, an email newsletter, and a video script about my product launch\" → AI can't do four things well simultaneously.",
+            "✅ Fix: One task per prompt. Four prompts, four great outputs."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 3 & 4: Assuming AI knows you + Contradicting yourself",
+          "body": "AI has zero memory between sessions — and it can't read your mind even within a session.",
+          "bullets": [
+            "❌ Mistake 3: \"You know what I'm working on — just continue from last time\" → AI has no memory across new conversations.",
+            "✅ Fix: Re-establish context at the start of every new session. Copy in your key background in 2-3 sentences.",
+            "❌ Mistake 4: \"Write a formal professional email but keep it super casual and chatty\" → Formal and casual are contradictions.",
+            "✅ Fix: Pick one. Or be specific: \"Professional in structure, warm in tone — no corporate jargon.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Mistakes 5, 6 & 7: Accepting the first draft + Passive voice + Wrong length",
+          "body": "These three are responsible for most \"AI outputs are all the same\" frustration.",
+          "bullets": [
+            "❌ Mistake 5: Taking the first output as final → AI's first attempt is a first draft, not a finished product.",
+            "✅ Fix: Use follow-up prompts: \"Shorten this by 30%\" / \"Make this more direct\" / \"Rewrite the opening to lead with the benefit.\"",
+            "❌ Mistake 6: Not specifying length → AI picks a default length that's often too long or too short.",
+            "✅ Fix: \"Write exactly 3 sentences\" / \"150 words max\" / \"3 bullet points, each under 12 words.\"",
+            "❌ Mistake 7: Passive, uncertain language → \"Maybe you could try to write...\" gives wishy-washy outputs.",
+            "✅ Fix: Be direct. \"Write. List. Compare. Summarise.\" Command tense gets sharper results."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Spot the mistakes",
+          "body": "Here are 3 real prompts. Before you read on, try to identify which mistake each one is making:",
+          "bullets": [
+            "Prompt A: \"Write me a comprehensive detailed in-depth guide to fitness, nutrition, sleep, mental health, morning routines, evening routines, and productivity all in one document.\" → Which mistake?",
+            "Prompt B: \"You know the project I told you about last week — just pick up where we left off.\" → Which mistake?",
+            "Prompt C: \"Please feel free to maybe try and write something about our company if you wouldn't mind.\" → Which mistake?",
+            "Answers: A = Mistake 2 (too much at once). B = Mistake 3 (AI has no memory). C = Mistake 7 (passive, uncertain language).",
+            "Notice how obvious each mistake looks from the outside. That awareness is what stops you making them from the inside."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "You ask AI to \"write a professional email but keep it super casual and informal.\" Which mistake is this?",
+          "type": "mcq",
+          "options": [
+            "Mistake 1 — Too vague",
+            "Mistake 2 — Too much at once",
+            "Mistake 4 — Contradicting yourself",
+            "Mistake 6 — Not specifying length"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Professional\" and \"super casual and informal\" are contradictory instructions. AI tries to satisfy both — and usually satisfies neither, producing something awkward and inconsistent. The fix is to pick one register, or be specific about what you actually mean: \"Professionally structured, but warm and human in tone — no corporate jargon.\""
+        },
+        {
+          "question": "You open a new AI chat and type: \"Continue the project from last time — you remember what we discussed.\" What will happen?",
+          "type": "mcq",
+          "options": [
+            "AI will recall the conversation from the previous session",
+            "AI will access your account history to find the context",
+            "AI has no memory across new sessions and will ask for clarification or make things up",
+            "AI will generate a new version of the previous output automatically"
+          ],
+          "correctIndex": 2,
+          "explanation": "Most AI tools (including ChatGPT and Claude in default mode) have no memory between separate conversations. Each new chat is a blank slate. When you reference something AI has no record of, it either confesses it doesn't know or — more dangerously — fabricates plausible-sounding context. Always re-establish key background at the start of every new session."
+        },
+        {
+          "question": "True or False: AI's first response to a prompt is usually the best you'll get — refining it makes things worse.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The first output is a starting point, not a final product. Follow-up prompts are where the real quality lives. \"Make this 30% shorter\", \"Rewrite the opening to hook the reader immediately\", \"Make this more direct and confident\" — each iteration improves the output. Professionals rarely use a first draft as-is. Iteration is the skill that separates good AI users from great ones."
+        },
+        {
+          "question": "Which of these prompt openers will get the sharpest, most direct result from AI?",
+          "type": "mcq",
+          "options": [
+            "\"Please could you perhaps try and maybe write something about...\"",
+            "\"If you wouldn't mind, it would be great if you could possibly...\"",
+            "\"Write a [format] about [topic].\"",
+            "\"I was kind of hoping you might be able to help me with...\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Direct command language — \"Write. List. Summarise. Compare.\" — produces sharper, more decisive outputs than passive or uncertain language. When you hedge with \"maybe\", \"perhaps\", \"if you wouldn't mind\", AI picks up on the tentativeness and often produces similarly vague, hedged output. This is one of the quickest, easiest upgrades you can make to every prompt you write."
+        }
+      ]
+    },
+    {
+      "id": "pem-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "module-1",
+      "title": "Module 1 Checkpoint: Foundations Locked In",
+      "subtitle": "Recap everything you've learned — then prove it with a real challenge",
+      "duration": "8 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've covered 6 lessons. You've built real prompts. Now let's lock it all in — and prove you're ready for the advanced techniques in Module 2.",
+          "body": "Module 1 gave you the complete foundation of prompt engineering: why words matter, how AI thinks, the 4-ingredient formula, tone mastery, and the 7 mistakes to avoid. This checkpoint lesson consolidates everything into one mental model you'll carry with you forever.",
+          "stat": "6",
+          "statLabel": "foundation skills mastered — you're ready for Module 2"
+        },
+        {
+          "type": "content",
+          "headline": "The Module 1 Mental Model",
+          "body": "Everything you've learned so far flows from one simple truth: AI is a prediction engine shaped entirely by your input. The quality of your prompt is the quality of your output. Here's the complete foundation in one view:",
+          "bullets": [
+            "1️⃣ Words matter — specificity beats vagueness every single time",
+            "2️⃣ AI predicts, not understands — structure your prompt to make the right prediction obvious",
+            "3️⃣ The 4 ingredients: Task · Context · Format · Tone — all four, every important prompt",
+            "4️⃣ Tone is a lever — one word change transforms the entire output",
+            "5️⃣ Avoid the 7 mistakes — vague, overloaded, contradictory, passive, no length, no memory, accept first draft",
+            "6️⃣ Iterate — the first draft is a starting point, not the destination"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What changes in Module 2",
+          "body": "Module 1 was about writing better individual prompts. Module 2 is about techniques — named, repeatable approaches that professionals use to unlock capabilities most people don't know exist.",
+          "bullets": [
+            "Role Prompting: assign AI a persona and watch the output transform",
+            "Chain of Thought: make AI show its reasoning and catch its own errors",
+            "Few-Shot Prompting: give AI examples and it mirrors your exact style",
+            "The Iteration Loop: a 3-step process that turns first drafts into finals",
+            "Negative Prompting: tell AI what NOT to do for cleaner results",
+            "Context Stacking: build layered prompts that give AI everything it needs in one go"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Foundation Prompt Formula",
+          "body": "Commit this to memory. It's the starting point for every advanced technique you'll learn in Module 2:",
+          "bullets": [
+            "📌 [Action verb] a [format] about [topic]",
+            "📌 I am a [who you are] and this is for [audience/purpose]",
+            "📌 Format: [structure]. Tone: [voice].",
+            "📌 Then: iterate with follow-up prompts until it's right",
+            "Every Module 2 technique slots INTO this structure — it doesn't replace it"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Module 1 Challenge",
+          "body": "Write a single prompt that uses ALL 4 ingredients and avoids ALL 7 mistakes. Here's a scenario to work with:",
+          "bullets": [
+            "You're a freelance graphic designer launching a new service helping small businesses with their brand identity",
+            "You need an Instagram caption announcing your new service launch",
+            "Requirements: 3 sentences, exciting but professional tone, call to action included",
+            "Write the prompt. Check it against the 4 ingredients. Check it against the 7 mistakes. Then send it to AI.",
+            "If your output is genuinely post-worthy, you've passed Module 1."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the single most important thing to understand about how AI processes your prompt?",
+          "type": "mcq",
+          "options": [
+            "AI searches the internet for the best available answer",
+            "AI selects from a database of pre-written responses",
+            "AI predicts the most likely next tokens based on patterns from its training data",
+            "AI uses logic and reasoning to calculate the correct answer"
+          ],
+          "correctIndex": 2,
+          "explanation": "This is the foundational insight of Module 1. AI is a prediction engine — it predicts the most statistically likely continuation of your prompt, based on billions of examples in its training data. Understanding this explains everything: why specificity works, why tone matters, why structure helps, and why the first draft is never perfect. You're not communicating with a mind — you're steering a prediction."
+        },
+        {
+          "question": "Which of the 4 prompt ingredients is most often missing from beginner prompts?",
+          "type": "mcq",
+          "options": [
+            "Task — beginners forget to say what they want AI to do",
+            "Context — beginners forget to tell AI who they are, the audience, and the purpose",
+            "Format — beginners always specify exactly how they want output structured",
+            "Tone — beginners naturally include tone in every prompt"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context is the most commonly missing ingredient. Beginners naturally write the task — \"write me an email\" — but forget to tell AI who it's for, who's writing it, and why it matters. Without context, AI writes for a generic imaginary person. Adding even two sentences of context — \"I'm a [role] writing to [audience] for [purpose]\" — dramatically improves relevance and usefulness."
+        },
+        {
+          "question": "True or False: Once you master the 4-ingredient formula, you no longer need to use follow-up prompts — the first draft will be right.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Even perfect prompts produce first drafts, not finished products. The 4-ingredient formula dramatically improves your starting point — but iteration is where final quality lives. \"Shorten by 30%\", \"Make the opening punchier\", \"Add a specific example in paragraph 2\" — these follow-up prompts are how pros turn good into great. Iteration is a skill, not a workaround."
+        },
+        {
+          "question": "You're about to send this prompt: \"Write something about our company values for the website.\" Which two ingredients are missing?",
+          "type": "mcq",
+          "options": [
+            "Task and Context",
+            "Context and Tone",
+            "Format and Tone",
+            "Task and Format"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Task is present (write about company values) and Context is partially there (for the website). But Format is missing — should this be a paragraph? A bullet list? A hero tagline? And Tone is missing — should this be formal, warm, inspiring? Without Format and Tone, AI will guess — and it usually guesses wrong for your specific brand. Adding \"Format: 3 short paragraphs. Tone: inspiring and human.\" transforms this into a Power Prompt."
+        }
+      ]
+    },
+    {
+      "id": "pem-8-role-prompting",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "Role Prompting: Give AI a Job Title",
+      "subtitle": "One sentence transforms AI from a generalist into a specialist. Here's how.",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if you could hire a world-class expert — a CMO, a Harvard professor, a top lawyer — for any task, any time, for free? Role prompting does exactly that.",
+          "body": "Role prompting is the technique that most surprises beginners when they first try it. By assigning AI a specific expert identity before your task, you activate different patterns from its training data — patterns from expert writing in that field. The results are dramatically more specialised and authoritative.",
+          "stat": "40%",
+          "statLabel": "improvement in output quality from role prompting (MIT AI Lab, 2023)"
+        },
+        {
+          "type": "content",
+          "headline": "How role prompting works",
+          "body": "When you tell AI \"Act as a [specific expert]\", you're steering its prediction toward the patterns of how that expert would write and think. The role functions as a powerful context signal that activates domain-specific knowledge and style.",
+          "bullets": [
+            "Without role: \"Explain the key risks of launching a startup\" → Generic advice from no particular perspective",
+            "With role: \"Act as a venture capitalist with 20 years of experience. Explain the key risks of launching a startup from your perspective.\" → Specific, nuanced, investment-savvy insight",
+            "Same question. Completely different level of expertise in the output."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The anatomy of a role prompt",
+          "body": "The most effective role prompts have three components. The more specific the role, the more focused the output:",
+          "bullets": [
+            "1️⃣ The title: \"Act as a [specific role]\" — not just \"expert\" but the exact type of expert",
+            "2️⃣ The experience/context: \"with [X years of experience / specialism in Y]\" — anchors the role",
+            "3️⃣ The perspective: \"from your perspective as...\" or \"using your expertise in...\" — activates the right lens",
+            "Example: \"Act as a UX designer with 10 years of experience designing mobile apps for Gen Z users. Review this onboarding flow and identify friction points from your perspective.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Roles that unlock the best results",
+          "body": "Some roles are dramatically more useful than others. Here are high-value roles worth memorising:",
+          "bullets": [
+            "💼 Business: \"Act as a McKinsey strategy consultant\" · \"Act as a CFO of a fast-scaling startup\"",
+            "✍️ Writing: \"Act as an editor at The Economist\" · \"Act as a direct response copywriter\"",
+            "🎓 Teaching: \"Act as a patient teacher explaining this to a 12-year-old\" · \"Act as a Socratic tutor\"",
+            "⚖️ Critical: \"Act as a devil's advocate\" · \"Act as a senior lawyer reviewing this contract\"",
+            "🔬 Research: \"Act as a data scientist\" · \"Act as a market research analyst\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Three roles, one question",
+          "body": "Pick any question about a topic you're working on right now. Then ask it three times, each with a different role:",
+          "bullets": [
+            "Prompt 1: \"Act as a [domain expert]. [Your question.]\"",
+            "Prompt 2: \"Act as a devil's advocate. [Same question — push back on any assumptions.]\"",
+            "Prompt 3: \"Act as a patient teacher explaining this to someone with zero background. [Same question.]\"",
+            "Notice how three roles produce three genuinely different, useful perspectives on the same topic",
+            "This technique is how pros use AI as a thinking partner, not just a writing tool"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does assigning AI a role change the quality of its output?",
+          "type": "mcq",
+          "options": [
+            "It unlocks premium content from the AI's database",
+            "It activates domain-specific writing patterns from AI's training data, steering predictions toward expert-level responses",
+            "It makes AI try harder because it feels a sense of responsibility",
+            "It limits AI to only answering questions in that specific domain"
+          ],
+          "correctIndex": 1,
+          "explanation": "Role prompting works because AI is a prediction engine. \"Act as a VC with 20 years of experience\" is a context signal that makes expert VC-style writing patterns more likely to appear in the prediction. AI has been trained on billions of documents — including expert content in almost every field. A role activates those specific patterns rather than the generic average."
+        },
+        {
+          "question": "Which is the STRONGER role prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Act as an expert.\"",
+            "\"Act as a professional.\"",
+            "\"Act as a direct response copywriter with 15 years of experience writing email campaigns for e-commerce brands.\"",
+            "\"Act as someone who knows a lot about marketing.\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Specificity is everything in role prompting. \"Expert\" and \"professional\" are so vague they barely steer the prediction at all. \"Direct response copywriter with 15 years of experience writing email campaigns for e-commerce brands\" gives AI a precise identity that activates very specific writing patterns — the persuasive, conversion-focused style of direct response copywriting. More specific role = more focused output."
+        },
+        {
+          "question": "True or False: You should only use role prompting for technical or specialised topics — it's too complicated for everyday writing tasks.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Role prompting is one of the most versatile techniques and works brilliantly for everyday tasks. \"Act as a patient editor\" for any writing, \"Act as a persuasive copywriter\" for social posts, \"Act as a teacher explaining this simply\" for learning anything — these are daily-use roles. You don't need a technical topic to benefit. Any time you want a specific perspective or style, a role prompt delivers it."
+        },
+        {
+          "question": "You want AI to find flaws in a business idea you're excited about. Which role would work best?",
+          "type": "mcq",
+          "options": [
+            "\"Act as an enthusiastic startup cheerleader\"",
+            "\"Act as a devil's advocate and challenge every assumption in this idea\"",
+            "\"Act as a creative brainstormer\"",
+            "\"Act as a motivational coach\""
+          ],
+          "correctIndex": 1,
+          "explanation": "When you want critical thinking and flaw-finding, the devil's advocate role is purpose-built for it. It directs AI to actively seek problems, challenge assumptions, and push back — which is exactly what you need to stress-test an idea. An enthusiastic cheerleader, brainstormer, or motivational coach would all bias AI toward positive, supportive output — the last thing you want when evaluating risks."
+        }
+      ]
+    },
+    {
+      "id": "pem-9-chain-of-thought",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "Chain of Thought: Make AI Show Its Work",
+      "subtitle": "The technique that catches AI's errors before they reach you",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "AI can give you the right answer for the wrong reasons — and you'd never know. Chain of Thought prompting fixes that by making AI show its reasoning, step by step.",
+          "body": "This is one of the most powerful and least-used techniques in prompt engineering. By adding five simple words to your prompt — \"think through this step by step\" — you can dramatically improve AI's accuracy, catch errors early, and get answers you can actually verify and trust.",
+          "stat": "92%",
+          "statLabel": "accuracy improvement on complex reasoning tasks with Chain of Thought (Google DeepMind)"
+        },
+        {
+          "type": "content",
+          "headline": "Why AI makes reasoning errors — and how CoT fixes them",
+          "body": "AI doesn't 'think' before answering — it predicts the most likely response immediately. For simple tasks that's fine. For complex problems — multi-step analysis, decisions, calculations — that predict-first approach can jump to plausible-sounding but wrong conclusions.",
+          "bullets": [
+            "Without CoT: AI produces a confident-sounding answer that skips critical reasoning steps",
+            "With CoT: AI works through each step, catching its own errors in the process",
+            "The key insight: making AI 'show its work' forces it to follow the reasoning chain humans use",
+            "Errors that would be invisible in a summary become obvious in a step-by-step breakdown"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to activate Chain of Thought",
+          "body": "There are three levels of CoT prompting — from simple to comprehensive. Start with Level 1 and work up when needed:",
+          "bullets": [
+            "Level 1 — Simple trigger: Add \"Think through this step by step before giving your answer.\"",
+            "Level 2 — Structured: \"Break your reasoning into numbered steps. Show each step before reaching a conclusion.\"",
+            "Level 3 — Full CoT: \"Think through this step by step. After each step, check your reasoning. Only give your final answer after completing all steps.\"",
+            "For most tasks, Level 1 is enough. Use Level 3 for high-stakes decisions or complex analysis."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When Chain of Thought is most valuable",
+          "body": "CoT isn't needed for simple requests — it adds unnecessary length for basic tasks. It's most powerful in these scenarios:",
+          "bullets": [
+            "🔢 Maths & calculations: AI makes arithmetic errors without CoT — step-by-step catches them",
+            "⚖️ Decisions & trade-offs: \"Should I do X or Y?\" — CoT surfaces the reasoning behind the recommendation",
+            "📊 Analysis & research: Complex data interpretation benefits from visible reasoning chains",
+            "🧩 Multi-step problems: Any task with dependencies where an early error cascades into bigger errors",
+            "✅ Fact-checking: Ask AI to reason through each claim — hallucinations become easier to spot"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "See the difference in real time",
+          "body": "Run these two prompts on any complex question you're curious about right now. Notice the difference in quality and trustworthiness:",
+          "bullets": [
+            "Prompt A: \"[Your complex question] — give me your answer.\"",
+            "Prompt B: \"[Same question] — think through this step by step before giving your answer. Show each reasoning step.\"",
+            "Compare the two outputs. Which one do you trust more? Which one could you verify?",
+            "Try it with: a business decision, a maths problem, a pros/cons analysis, or a strategic question",
+            "You'll find Prompt B answers are not just longer — they're genuinely more reliable"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why can AI give a confident but wrong answer without Chain of Thought prompting?",
+          "type": "mcq",
+          "options": [
+            "AI deliberately simplifies complex answers to be more user-friendly",
+            "AI predicts the most likely response immediately — skipping intermediate reasoning steps that humans use",
+            "AI lacks the data to answer complex questions correctly",
+            "Complex questions trigger safety filters that prevent full answers"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI is a prediction engine — it predicts the most likely response immediately, without 'thinking through' the problem the way a human expert would. For simple tasks, this works well. For complex, multi-step problems, this shortcut produces plausible-sounding but sometimes flawed answers. Chain of Thought forces AI to follow the reasoning chain — which catches errors that direct prediction misses."
+        },
+        {
+          "question": "What is the simplest Chain of Thought trigger you can add to any prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Be extra careful with this one.\"",
+            "\"Double-check your answer before replying.\"",
+            "\"Think through this step by step before giving your answer.\"",
+            "\"Make sure you're accurate.\""
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Think through this step by step\" is the cleanest, most research-validated CoT trigger. It directly instructs AI to decompose its reasoning rather than jumping to a prediction. \"Be careful\" and \"make sure you're accurate\" are vague instructions that don't change how AI generates its response — they just add noise. Step-by-step is the key phrase that restructures the output."
+        },
+        {
+          "question": "True or False: You should use Chain of Thought for every prompt — it always improves results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Chain of Thought adds length and structure to AI's output — which is valuable for complex reasoning but unnecessary for simple tasks. Asking AI to \"write a 3-word tagline — think through this step by step\" produces a rambling process description when you just needed three words. Use CoT selectively: complex analysis, decisions, maths, fact-checking, or any multi-step problem where an early error would cascade."
+        },
+        {
+          "question": "You ask AI: \"Is it better for my business to raise prices now or wait until Q4?\" — which level of CoT would you use?",
+          "type": "mcq",
+          "options": [
+            "No CoT — this is a simple question that doesn't need it",
+            "Level 1 — Add \"Think through this step by step\" for a solid reasoning chain",
+            "Level 3 — \"Think through step by step, check each step, only give conclusion after all steps\" — high-stakes decisions deserve full CoT",
+            "CoT doesn't work for business decisions — only for maths"
+          ],
+          "correctIndex": 2,
+          "explanation": "A business pricing decision is high-stakes, multi-factor, and potentially irreversible — exactly where full Level 3 CoT pays off. You want to see AI reason through: market conditions, competitor behaviour, customer psychology, cash flow implications, and timing trade-offs — checking each step. A snap answer from AI on a decision like this carries real risk. Full CoT surfaces the reasoning you need to verify before acting."
+        }
+      ]
+    },
+    {
+      "id": "pem-10-few-shot",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Few-Shot Prompting: Teach by Example",
+      "subtitle": "Show AI exactly what you want — and it mirrors your style perfectly",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Describing what you want is hard. Showing AI two or three examples of what you want? That's instant style-matching — every single time.",
+          "body": "Few-shot prompting is the technique that finally solves the \"it doesn't sound like me\" problem. Instead of trying to describe your style in words, you demonstrate it. AI picks up the pattern from your examples and replicates it precisely. It's the closest thing to cloning your voice.",
+          "stat": "3×",
+          "statLabel": "higher style consistency when using examples vs description alone (OpenAI research)"
+        },
+        {
+          "type": "content",
+          "headline": "Zero-shot vs Few-shot — what's the difference?",
+          "body": "Most people use AI in zero-shot mode without realising it — they just describe what they want. Few-shot adds examples before the task, which transforms the output:",
+          "bullets": [
+            "🎯 Zero-shot: \"Write a tweet about AI productivity\" → AI guesses what style you mean",
+            "🎯 Few-shot: \"Here are 3 tweets I love: [example 1] [example 2] [example 3]. Now write one about AI productivity in the same style.\" → AI mirrors exactly",
+            "The examples act as a style brief that's worth a thousand description words",
+            "One example is good. Two or three is almost always better."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to structure a few-shot prompt",
+          "body": "The pattern is simple: examples first, then task. Here's the exact template:",
+          "bullets": [
+            "1️⃣ Introduction: \"Here are [number] examples of [what they are]:\"",
+            "2️⃣ Examples: Label each clearly — \"Example 1:\", \"Example 2:\", \"Example 3:\"",
+            "3️⃣ Task: \"Now write [the same thing] about [new topic] in the same style.\"",
+            "Pro tip: Your examples should be as close to the quality you want as possible — AI extrapolates from them, so good examples produce great outputs"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where few-shot prompting excels",
+          "body": "Some tasks benefit far more from examples than descriptions. These are the top use cases:",
+          "bullets": [
+            "✍️ Brand voice: Use 2-3 pieces of your existing content — AI writes in your exact style",
+            "📱 Social posts: Examples of posts that performed well → AI replicates the formula",
+            "📧 Email templates: Share examples of your best emails → AI matches tone and structure",
+            "📝 Formatting: Show AI the exact layout you want → it follows it precisely",
+            "🎯 Classification: \"Label each of these as [category]. Here are examples of each...\" → near-perfect accuracy"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Clone your writing style in 3 minutes",
+          "body": "Find 2-3 pieces of your own writing that you're proud of — emails, posts, messages, anything. Then:",
+          "bullets": [
+            "Paste them into AI with: \"Here are 3 examples of how I write:\"",
+            "Label each: \"Example 1:\", \"Example 2:\", \"Example 3:\"",
+            "Then add your task: \"Now write [new piece] about [new topic] in my exact style.\"",
+            "Read the output — notice how it sounds more like you than any AI output you've gotten before",
+            "Save this as your Brand Voice Template. You'll use it constantly."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle behind few-shot prompting?",
+          "type": "mcq",
+          "options": [
+            "Sending AI multiple prompts in one message to save time",
+            "Using examples to show AI the exact style or pattern you want, so it can replicate it",
+            "Giving AI fewer instructions so it has more creative freedom",
+            "Limiting the number of tokens in each prompt for faster responses"
+          ],
+          "correctIndex": 1,
+          "explanation": "Few-shot prompting works by demonstration rather than description. Instead of trying to describe your desired style in words (which is hard), you show AI examples that embody that style. AI's pattern-recognition then extrapolates from your examples to new content. Showing beats telling — and the more precise your examples, the more precisely AI mirrors them."
+        },
+        {
+          "question": "You want AI to write social posts in your exact brand voice. Which approach will produce the best result?",
+          "type": "mcq",
+          "options": [
+            "Tell AI: \"Write in a friendly, conversational, punchy style with short sentences\"",
+            "Tell AI: \"Match my brand voice exactly\"",
+            "Share 3 of your best-performing posts as examples, then ask AI to write a new one in the same style",
+            "Ask AI to guess your brand voice from your company name"
+          ],
+          "correctIndex": 2,
+          "explanation": "Examples beat descriptions every time for style matching. Describing your voice — \"friendly, conversational, punchy\" — gives AI broad signals that produce generic interpretations. Showing AI 3 real examples of your best posts gives it the actual patterns of your specific voice: your sentence rhythm, vocabulary choices, hook structure, and natural cadence. AI extrapolates with precision what it can't reliably infer from adjectives."
+        },
+        {
+          "question": "True or False: One example is always enough for few-shot prompting — more examples don't improve results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. One example is better than zero, but two or three examples dramatically improve consistency and accuracy. One example might be ambiguous — AI can't always tell which features of a single example are the important patterns to replicate. Two or three examples show AI what's consistent across them, which is the style signal. For brand voice especially, three examples is the sweet spot."
+        },
+        {
+          "question": "What makes few-shot prompting especially powerful for brand voice?",
+          "type": "mcq",
+          "options": [
+            "It makes AI search the internet for similar brand content",
+            "It bypasses AI's safety filters for more creative freedom",
+            "Real examples capture nuances of style — rhythm, vocabulary, structure — that are nearly impossible to describe in words",
+            "It trains AI permanently on your brand so future prompts recognise your voice automatically"
+          ],
+          "correctIndex": 2,
+          "explanation": "Your writing voice is made up of dozens of subtle patterns — sentence length, punctuation choices, transition phrases, how you open paragraphs, what vocabulary you favour. These are almost impossible to describe fully in words, but they're immediately visible in your actual writing. Few-shot prompting lets AI read your real examples and extract those patterns directly, producing outputs that match your voice far more closely than any description could."
+        }
+      ]
+    },
+    {
+      "id": "pem-11-iteration-loop",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "The Iteration Loop: From First Draft to Final",
+      "subtitle": "The 3-step loop that pros use to turn any AI output into something excellent",
+      "duration": "7 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The biggest lie in AI: \"Just ask and it'll be perfect.\" The truth: great AI output is always the result of 2-4 targeted follow-up prompts. Here's the exact system.",
+          "body": "Every advanced AI user knows this: the first draft is raw material, not the finished product. The skill that separates mediocre from excellent AI output isn't writing the perfect first prompt — it's knowing exactly how to refine what you get. Today you'll learn the Iteration Loop.",
+          "stat": "4×",
+          "statLabel": "better quality after 3 targeted follow-up prompts vs accepting the first draft"
+        },
+        {
+          "type": "content",
+          "headline": "The 3-step Iteration Loop",
+          "body": "The loop is simple, repeatable, and works for any type of content. Once you internalise it, you'll never settle for a mediocre first draft again:",
+          "bullets": [
+            "1️⃣ ASSESS — Read the output critically. What's good? What's missing? What's off?",
+            "2️⃣ DIRECT — Give one specific follow-up instruction targeting the main issue",
+            "3️⃣ VERIFY — Check if the issue is resolved. Repeat for the next issue.",
+            "Rule: one change per follow-up. Multiple changes in one prompt lead to inconsistent results.",
+            "Most tasks are done in 2-3 loops. Complex work might take 4-5."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The follow-up prompt toolkit",
+          "body": "These are the most powerful follow-up prompts — save these for reuse:",
+          "bullets": [
+            "📏 Length: \"Shorten by 30%\" / \"Expand the second section to 100 words\" / \"Keep to 3 sentences max\"",
+            "🎯 Focus: \"Lead with the most important benefit, not the process\" / \"Cut everything after [X] — it's not needed\"",
+            "🔊 Tone: \"Make this 20% more direct\" / \"Soften the opening — it feels too aggressive\" / \"Add more warmth\"",
+            "💡 Specificity: \"Replace the generic examples with specific ones from the tech industry\" / \"Add a concrete statistic to support this\"",
+            "✂️ Edit mode: \"Remove all instances of corporate jargon\" / \"Replace every passive sentence with an active one\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The critical feedback formula",
+          "body": "Vague feedback produces vague revisions. Here's the formula for a follow-up prompt that always works:",
+          "bullets": [
+            "❌ Weak: \"Make this better\"",
+            "❌ Weak: \"I don't like it — redo it\"",
+            "✅ Strong: \"[Specific problem] + [Specific instruction]\"",
+            "Example: \"The opening is too passive — rewrite the first sentence to start with a strong action or surprising fact.\"",
+            "Example: \"This is 40 words too long — cut it to 120 words by removing the background context in paragraph 2.\"",
+            "Diagnose the problem first. Then prescribe the fix."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run the full Iteration Loop",
+          "body": "Take any output you've previously generated — or generate a new one now. Then run 3 full loops:",
+          "bullets": [
+            "Loop 1: Fix the biggest structural issue (length, format, missing information)",
+            "Loop 2: Fix the tone or voice (too formal, not punchy enough, add a hook)",
+            "Loop 3: Polish the specifics (replace generic with specific, cut filler words, strengthen the ending)",
+            "Compare your Loop 3 output to the original first draft",
+            "That difference is the Iteration Loop in action — and it works every single time"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core principle of the Iteration Loop?",
+          "type": "mcq",
+          "options": [
+            "Write the perfect prompt the first time so you never need to follow up",
+            "Accept AI's first output — further prompts make things worse",
+            "Use one specific follow-up prompt at a time to progressively improve the output toward your goal",
+            "Always ask AI to completely rewrite from scratch if you're not happy"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Iteration Loop is built on progressive refinement — not perfection on the first attempt. One specific follow-up prompt at a time keeps changes targeted and predictable. Asking for multiple changes at once, or requesting a full rewrite, often loses what was good in the previous version. Assess what's wrong, direct one specific fix, verify it worked, repeat."
+        },
+        {
+          "question": "Which follow-up prompt will produce the most useful revision?",
+          "type": "mcq",
+          "options": [
+            "\"Make this better\"",
+            "\"I don't like it, try again\"",
+            "\"The opening paragraph buries the main benefit — rewrite it to lead with what the reader gains in the first sentence\"",
+            "\"Can you please try to maybe improve this a bit if you can?\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Specific feedback produces specific improvements. \"The opening paragraph buries the main benefit — rewrite it to lead with what the reader gains in the first sentence\" diagnoses the exact problem and prescribes the exact fix. AI knows exactly what to change and what to keep. Vague prompts like \"make this better\" or \"try again\" give AI no signal about what specifically is wrong, so it guesses — often making different trade-offs rather than genuine improvements."
+        },
+        {
+          "question": "Why should you make only ONE change per follow-up prompt?",
+          "type": "mcq",
+          "options": [
+            "AI can only process one instruction per message",
+            "Multiple changes at once make AI charge more tokens",
+            "Multiple changes lead to unpredictable results — you can't tell which instruction caused which output change",
+            "It's a style preference — multiple changes work just as well"
+          ],
+          "correctIndex": 2,
+          "explanation": "When you ask for multiple changes simultaneously — \"shorten it, make it punchier, add more examples, and change the tone\" — you can't tell which change caused which result. If the output is now worse, you don't know which instruction to reverse. One change at a time gives you full control: you can confirm each improvement before moving to the next. It also prevents AI from over-editing and losing what was already good."
+        },
+        {
+          "question": "True or False: If the first draft is broadly good, it's faster to just use it rather than running the Iteration Loop.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — but it's a nuanced false. If \"broadly good\" means you genuinely can't improve it, then yes, ship it. But in practice, \"broadly good\" usually means \"acceptable but not excellent\" — and one or two targeted follow-up prompts take 30 seconds and dramatically improve the output. The loop isn't about perfectionism; it's about the quick wins that separate good from genuinely impressive. Most content benefits from at least one loop."
+        }
+      ]
+    },
+    {
+      "id": "pem-12-negative-prompting",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "Negative Prompting: Tell AI What NOT to Do",
+      "subtitle": "The fastest way to eliminate the things that always annoy you about AI output",
+      "duration": "5 min",
+      "xpValue": 15,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"Avoid corporate buzzwords.\" \"No filler phrases.\" \"Don't use bullet points.\" Five words of instruction can eliminate the most common AI annoying habits permanently.",
+          "body": "Most people only tell AI what TO do. The pros also tell it what NOT to do. Negative prompting is a precision tool for cutting out the predictable patterns that make AI output sound generic — the watered-down disclaimers, the clichéd transitions, the over-enthusiasm. Today you'll build your personal exclusion list.",
+          "stat": "60%",
+          "statLabel": "of AI \"generic output\" is caused by habits you can eliminate with a single negative instruction"
+        },
+        {
+          "type": "content",
+          "headline": "Why AI has annoying default habits",
+          "body": "AI's defaults come from its training data — billions of documents that include a lot of mediocre corporate writing. Without instruction, AI gravitates toward the most common patterns in that writing. Negative prompting breaks those patterns.",
+          "bullets": [
+            "Opening with \"Certainly! Here's...\" → Add: \"Don't start with an affirmation like 'Certainly' or 'Of course'\"",
+            "Constant hedging: \"It's important to note that...\" → Add: \"Avoid hedge phrases and qualifiers\"",
+            "Generic transitions: \"In conclusion...\", \"Furthermore...\" → Add: \"No transitional filler words\"",
+            "The \"As an AI...\" disclaimer → Add: \"Don't mention that you're an AI\"",
+            "Over-enthusiasm: \"Absolutely!\", \"Great question!\" → Add: \"No sycophantic responses\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to structure negative prompting",
+          "body": "Add a \"Do NOT\" section at the end of your prompt. It acts as a final filter on everything AI generates:",
+          "bullets": [
+            "Simple: Add a line at the end of your prompt: \"Do NOT: [list of exclusions]\"",
+            "Example: \"Do NOT: use bullet points, start with 'Certainly', include disclaimers, use passive voice, or exceed 200 words.\"",
+            "For recurring prompts: Build a standard exclusion block you paste into every prompt",
+            "For brand content: Add your specific brand no-nos — jargon your company avoids, phrases that feel off-brand"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Master Exclusion List",
+          "body": "Here's a starter exclusion list based on the most common complaints about AI output. Customise it for your needs:",
+          "bullets": [
+            "🚫 Structure: \"No bullet points\" / \"No numbered lists\" / \"No headers\" (when you want prose)",
+            "🚫 Language: \"No corporate jargon\" / \"No buzzwords like 'synergy', 'leverage', 'robust'\" / \"No passive voice\"",
+            "🚫 AI habits: \"Don't start with 'Certainly' or 'Of course'\" / \"No 'As an AI' disclaimers\" / \"No sycophantic openers\"",
+            "🚫 Length: \"No padding or filler sentences\" / \"Don't repeat the question back to me\" / \"No conclusion summaries\"",
+            "🚫 Tone: \"Avoid hedging language\" / \"No over-qualification\" / \"Don't soften every statement\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your personal exclusion list",
+          "body": "Think back to the AI outputs that have annoyed you most. What were the recurring issues? Now turn those into a reusable block:",
+          "bullets": [
+            "Write 3-5 things AI does that consistently annoy you or feel off-brand",
+            "Turn each into a clear negative instruction: \"Do NOT [specific habit]\"",
+            "Add this block to your next prompt and compare the output to what you'd usually get",
+            "Save this as your Personal Exclusion Block — paste it into any important prompt",
+            "Tip: Less is more. A focused list of 3-5 exclusions beats a sprawling list of 15."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does AI have default habits like starting with \"Certainly!\" or over-using bullet points?",
+          "type": "mcq",
+          "options": [
+            "AI is programmed with these habits for user-friendliness",
+            "These patterns appear frequently in AI's training data, making them statistically likely predictions",
+            "These habits are safety features that can't be turned off",
+            "AI developers intentionally designed these responses for a better user experience"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI predicts based on patterns in its training data. Phrases like \"Certainly!\" and heavy bullet-point formatting appear constantly in corporate writing, help docs, and AI-generated content that fed back into training. Without instructions to avoid them, they're among the statistically likely predictions. Negative prompting directly overrides those statistical defaults — telling AI that these patterns are off the table."
+        },
+        {
+          "question": "Where should you place the \"Do NOT\" section in a prompt?",
+          "type": "mcq",
+          "options": [
+            "At the very beginning, before the task",
+            "In the middle, after the context",
+            "At the end, as a final filter on everything above",
+            "It doesn't matter — AI reads the whole prompt before generating anyway"
+          ],
+          "correctIndex": 2,
+          "explanation": "Placing the Do NOT section at the end positions it as a final constraint that applies to everything above — it acts as a filter over the whole output. While AI does read the full prompt, recency matters in practice: instructions at the end of a prompt receive slightly more weight as they're closer to where the prediction starts. End placement also makes prompts more readable — positive instructions first, then the exclusion list."
+        },
+        {
+          "question": "True or False: A longer exclusion list (15+ items) is always better than a short one — more exclusions means cleaner output.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. A focused list of 3-5 high-impact exclusions outperforms a sprawling list of 15. Too many exclusions create competing constraints that can confuse the output or make AI overly cautious about what it can write at all. Focus on the 3-5 habits that most often ruin your outputs. Those targeted exclusions will produce dramatically cleaner results than an exhaustive list of every possible thing you don't want."
+        },
+        {
+          "question": "You want AI to write clean, flowing prose — but it always defaults to bullet points. What's the most direct fix?",
+          "type": "mcq",
+          "options": [
+            "Ask AI to \"write better\"",
+            "Use a different AI tool",
+            "Add \"Do NOT use bullet points or numbered lists\" at the end of your prompt",
+            "Specify a tone — tone controls formatting"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bullet points are one of AI's strongest formatting defaults — it often uses them even when prose would serve better. The most direct fix is a clear negative instruction: \"Do NOT use bullet points or numbered lists.\" Tone instructions don't reliably change formatting. Asking AI to \"write better\" doesn't communicate what you want. A single negative instruction targeting the specific habit is always the fastest, most reliable solution."
+        }
+      ]
+    },
+    {
+      "id": "pem-13-context-stacking",
+      "dayNumber": 13,
+      "moduleId": "module-2",
+      "title": "Context Stacking: Build the Perfect Brief",
+      "subtitle": "Layer context like a pro — so AI understands your world before it writes a word",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The best AI outputs don't come from better prompts — they come from AI that knows you, your audience, your goals, and your constraints before it starts.",
+          "body": "Context stacking is how professionals turn AI into a specialist who understands their exact situation. Instead of rebuilding context from scratch every session, you create a layered brief — stacked in the right order — that you paste once to set AI up perfectly for any task that follows.",
+          "stat": "5 layers",
+          "statLabel": "of context that transform AI from generalist to specialist"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 layers of context",
+          "body": "Each layer adds a different dimension that sharpens AI's output. Stack them in order — each layer builds on the one before:",
+          "bullets": [
+            "1️⃣ Identity: Who you are — your role, background, expertise level",
+            "2️⃣ Audience: Who you're writing for — demographics, knowledge level, pain points",
+            "3️⃣ Goal: What you're trying to achieve — the outcome, not just the task",
+            "4️⃣ Constraints: Limits and requirements — word count, format, platform, brand rules",
+            "5️⃣ Style: Voice and tone preferences — examples of writing you admire (linking to few-shot)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A stacked context brief in practice",
+          "body": "Here's how a context stack looks for a real task — notice how each layer adds specificity:",
+          "bullets": [
+            "1️⃣ Identity: \"I'm a B2B SaaS founder with a background in finance, not marketing.\"",
+            "2️⃣ Audience: \"My audience is CFOs at mid-sized companies — analytical, sceptical of hype, time-poor.\"",
+            "3️⃣ Goal: \"I want to generate demo requests, not just educate — every piece should end with a low-friction CTA.\"",
+            "4️⃣ Constraints: \"Max 150 words. LinkedIn format. No industry jargon. No bullet points.\"",
+            "5️⃣ Style: \"Write like this example: [paste example post]\"",
+            "Task follows: \"Now write a post about why CFOs overpay for their current FP&A tools.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your reusable Context Stack template",
+          "body": "The real power of context stacking is saving it. Build once, reuse forever:",
+          "bullets": [
+            "Create a document called \"My AI Context Stack\" with your 5 layers filled in",
+            "For each major project or client, create a project-specific stack",
+            "Start every important AI session by pasting your relevant context stack",
+            "Update the stack when your goals or audience change — not every session",
+            "Pro tip: Keep each layer to 1-2 sentences. Precision beats length."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your Context Stack right now",
+          "body": "Spend 5 minutes filling in these 5 layers for your most common AI use case:",
+          "bullets": [
+            "1️⃣ Identity: \"I am a [role] with [background/expertise]...\"",
+            "2️⃣ Audience: \"My audience is [who they are, what they care about, what they struggle with]...\"",
+            "3️⃣ Goal: \"My goal is [outcome — what I want people to feel/do/believe]...\"",
+            "4️⃣ Constraints: \"Requirements: [format, word count, platform, brand rules]...\"",
+            "5️⃣ Style: \"Write in this voice: [paste one example or describe key style traits]\"",
+            "Save this. Paste it at the start of your next AI session and notice the difference."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the purpose of context stacking?",
+          "type": "mcq",
+          "options": [
+            "To make prompts longer so AI has more to work with",
+            "To layer five specific types of context in order, so AI understands your full situation before generating output",
+            "To replace the 4-ingredient formula with a more advanced system",
+            "To reduce the number of follow-up prompts needed by overwhelming AI with information"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context stacking is about layering the right types of context — identity, audience, goal, constraints, style — in a structured order. Each layer sharpens AI's understanding of a different dimension of your situation. The result is output that's tailored to you, your audience, and your goals from the very first response. It doesn't replace the 4-ingredient formula — it supercharges the Context ingredient of it."
+        },
+        {
+          "question": "Which layer of context is most commonly missing from beginner AI sessions?",
+          "type": "mcq",
+          "options": [
+            "Identity — beginners forget to say who they are",
+            "Audience — beginners rarely tell AI who they're writing for or what that audience cares about",
+            "Constraints — beginners always specify word counts and formats",
+            "Style — beginners naturally include examples of writing they like"
+          ],
+          "correctIndex": 1,
+          "explanation": "Audience is the most commonly missing layer. Most people tell AI what they want to write about but forget to describe who they're writing for — their knowledge level, what they care about, what objections they have, and what outcome they need. Without audience context, AI writes for a generic imaginary reader. The moment you describe your real audience precisely, the specificity and relevance of AI's output transforms."
+        },
+        {
+          "question": "How often should you update your saved Context Stack?",
+          "type": "mcq",
+          "options": [
+            "Every session — context should always be fresh",
+            "Never — once created, the stack is permanent",
+            "When your goals, audience, or constraints genuinely change — not for routine tasks",
+            "Monthly, as a scheduled review"
+          ],
+          "correctIndex": 2,
+          "explanation": "Your Context Stack should be stable enough to reuse without rewriting every session — that's the whole point. Update it when something material changes: you're targeting a new audience, your goal has shifted, you've rebranded, or your constraints are different. For routine work, paste the same stack at the start of each session. The stack is a living document that evolves with your work, not a daily writing exercise."
+        },
+        {
+          "question": "True or False: Context stacking replaces the 4-ingredient formula (Task · Context · Format · Tone).",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Context stacking is an expansion of the Context ingredient in the 4-ingredient formula — it goes deeper into what 'context' means. You still need Task, Format, and Tone for each individual prompt. Think of it as: your Context Stack sets the standing brief (who you are, who you're writing for, your goals), and each individual prompt adds the Task + Format + Tone for that specific piece. The two systems work together, not instead of each other."
+        }
+      ]
+    },
+    {
+      "id": "pem-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "module-2",
+      "title": "Module 2 Checkpoint: Techniques Mastered",
+      "subtitle": "Six professional techniques locked in — now combine them into your power stack",
+      "duration": "8 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've just learned the six techniques that separate casual AI users from people who get genuinely impressive results. Now let's lock them in — and combine them.",
+          "body": "Module 2 covered the named, battle-tested techniques that professionals use every day. Each one is powerful alone. Combined, they produce a level of AI output quality most people don't believe is possible without expensive tools or technical knowledge.",
+          "stat": "6",
+          "statLabel": "professional techniques — you now use all of them"
+        },
+        {
+          "type": "content",
+          "headline": "Your Module 2 technique stack",
+          "body": "Here's the complete toolkit you've built — with the one-line summary of when to reach for each:",
+          "bullets": [
+            "🎭 Role Prompting: When you need specialised expertise or a specific perspective",
+            "🔗 Chain of Thought: When accuracy matters or the task involves multi-step reasoning",
+            "📋 Few-Shot: When you need AI to match a specific style, format, or pattern",
+            "🔄 Iteration Loop: When the first draft is good but not great — and you want excellent",
+            "🚫 Negative Prompting: When AI's default habits are undermining your output",
+            "🏗️ Context Stacking: When you need AI to fully understand your world before it writes"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to combine techniques — the Power Stack",
+          "body": "The techniques aren't separate tools — they work together. Here's a Power Stack that uses all six in one prompt session:",
+          "bullets": [
+            "1️⃣ Start with your Context Stack (Layer 1-5 brief) — sets the full brief",
+            "2️⃣ Add a Role: \"Act as a [specific expert] with experience in [domain]...\"",
+            "3️⃣ Add Few-Shot examples if matching your style: \"Here are 2 examples of what I want...\"",
+            "4️⃣ Write your 4-ingredient prompt with Chain of Thought: \"...think through this step by step.\"",
+            "5️⃣ Add your Do NOT list: \"Do NOT: [your exclusions]\"",
+            "6️⃣ Run the Iteration Loop until it's right: 2-3 targeted follow-ups",
+            "A full Power Stack takes 2 minutes to set up and produces output that would otherwise take an hour to edit."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's coming in Module 3",
+          "body": "Module 3 is where everything becomes real. Instead of techniques in isolation, you'll apply your full toolkit to the most valuable real-world tasks:",
+          "bullets": [
+            "✍️ Lesson 15: Prompting for writing — articles, emails, copy, content at scale",
+            "🔍 Lesson 16: Prompting for research — deep dives, synthesis, competitive analysis",
+            "🎨 Lesson 17: Prompting for creativity — ideas, concepts, brainstorming, naming",
+            "💼 Lesson 18: Prompting for business — strategy, decisions, analysis, planning",
+            "📚 Lesson 19: Build your Prompt Library — your permanent competitive advantage",
+            "🚀 Lesson 20: Advanced techniques — the cutting-edge moves that 1% of users know",
+            "🎓 Lesson 21: Graduation — your final challenge and certification"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "The Module 2 Power Stack Challenge",
+          "body": "Your challenge: use at least 4 of the 6 techniques in a single prompt session to complete a real task you've been putting off.",
+          "bullets": [
+            "Pick a task: a difficult email, a piece of content, a business analysis, a creative brief",
+            "Build your Power Stack: Context Stack + Role + Few-Shot (if needed) + 4-ingredient prompt",
+            "Add your Do NOT list. Include \"think through this step by step\" for any analysis.",
+            "Run 2-3 Iteration Loop passes on the first draft",
+            "Look at the final output. That's what 6 techniques combined produces.",
+            "You've just crossed the threshold from AI user to AI power user."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When is Role Prompting most valuable?",
+          "type": "mcq",
+          "options": [
+            "When you want AI to write in your personal style",
+            "When you need specialised expertise or a specific professional perspective in the output",
+            "When you want to make prompts shorter",
+            "When the task involves multi-step calculations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Role prompting activates domain-specific patterns from AI's training data by assigning it a specialist identity. It's most valuable when you need output that reflects a specific type of expertise — a lawyer reviewing a contract, a CFO analysing a budget, a copywriter writing an ad. It's less necessary for tasks where generic competence is sufficient and more necessary when the nuance of a specific professional perspective matters."
+        },
+        {
+          "question": "In the Power Stack, what is the correct order to build a prompt session?",
+          "type": "mcq",
+          "options": [
+            "Task first → Role → Context Stack → Few-Shot → Do NOT list",
+            "Do NOT list → Context Stack → Task → Role → Iteration",
+            "Context Stack → Role → Few-Shot examples → 4-ingredient prompt with CoT → Do NOT list → Iteration Loop",
+            "Few-Shot → Chain of Thought → Context Stack → Negative Prompting"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Power Stack builds from broadest to most specific: Context Stack sets the standing brief → Role activates the expert perspective → Few-Shot examples establish style → the 4-ingredient prompt with Chain of Thought handles the actual task → Do NOT list filters output → Iteration Loop refines. This order mirrors how a professional would brief a human expert: background first, then credentials, then examples, then the task, then quality control."
+        },
+        {
+          "question": "True or False: You should use all 6 techniques for every prompt — more techniques always means better output.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Using all 6 techniques for a simple task like \"list 5 synonyms for 'happy'\" is overkill — it adds complexity without improving the output. The Power Stack is for important, complex, or high-quality tasks. For quick queries, a simple well-structured prompt is faster and just as good. Match the sophistication of your approach to the importance of the task. Save the Power Stack for work that actually matters."
+        },
+        {
+          "question": "Which technique is specifically designed to prevent AI's predictable default habits from appearing in your output?",
+          "type": "mcq",
+          "options": [
+            "Role Prompting",
+            "Chain of Thought",
+            "Context Stacking",
+            "Negative Prompting"
+          ],
+          "correctIndex": 3,
+          "explanation": "Negative prompting is purpose-built to eliminate AI's default habits — the \"Certainly!\", the excessive bullet points, the hedge phrases, the corporate jargon. While other techniques shape what AI produces, negative prompting directly blocks specific outputs you want to avoid. It works like a content filter you control, removing the predictable patterns that make AI output feel generic before they reach your screen."
+        }
+      ]
+    },
+    {
+      "id": "pem-15-prompt-for-writing",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Prompting for Writing: Content at Scale",
+      "subtitle": "Emails, articles, social posts, copy — the exact prompts for every writing task",
+      "duration": "8 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Writing is the #1 use case for AI — and yet most people are using it at 10% of its potential. Today you get the exact prompts for every writing task you'll ever need.",
+          "body": "Module 3 is where your technique toolkit meets the real world. Lesson 15 is the most practically useful lesson in this course: a complete writing prompt playbook covering every major content type — with exact templates you can copy, customise, and use today.",
+          "stat": "87%",
+          "statLabel": "of professionals say AI writing assistance saves them 3+ hours per week"
+        },
+        {
+          "type": "content",
+          "headline": "Email prompts that actually work",
+          "body": "Email is where most people start with AI — and where most people get mediocre results. These templates produce emails you'll barely need to edit:",
+          "bullets": [
+            "📧 Follow-up: \"Write a warm 3-sentence follow-up email to [name/role] who hasn't replied in [X] days. Context: [what you discussed]. Tone: friendly but gently persistent. Do NOT sound passive-aggressive.\"",
+            "📧 Cold outreach: \"Act as a direct response copywriter. Write a 5-sentence cold email to [target] about [offer]. Lead with their pain point, not our product. CTA: [specific ask]. Tone: human and direct.\"",
+            "📧 Difficult message: \"Write a professional email declining [request/offer] from [person/company]. Preserve the relationship. Be clear and final. Tone: warm but firm. Under 100 words.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Social media prompts that drive engagement",
+          "body": "Social content lives and dies on the hook. These prompts prioritise it:",
+          "bullets": [
+            "📱 LinkedIn post: \"Write a LinkedIn post about [topic/insight]. Hook: start with a surprising fact or bold opinion — not a question. Format: 3 short paragraphs + 3 bullet points. Tone: authoritative but human. 150 words max.\"",
+            "📱 Twitter/X thread: \"Write a 5-tweet thread about [topic]. Tweet 1: hook that stops the scroll. Tweets 2-4: one insight each. Tweet 5: strong takeaway + CTA. Each tweet under 240 chars.\"",
+            "📱 Instagram caption: \"Write a 3-sentence Instagram caption for [image description]. Open with an emotional hook. End with a question to drive comments. Tone: [warm/inspiring/witty].\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Long-form content prompts — articles & blogs",
+          "body": "Long-form content benefits most from structure prompting. Get the structure right first, then fill each section:",
+          "bullets": [
+            "📝 Structure first: \"Create an outline for a 1,000-word article on [topic] for [audience]. Format: headline, subheads, 2-sentence summary of each section. No filler — every section must deliver new value.\"",
+            "📝 Section by section: \"Write the [intro/section 2/conclusion] of this article. [Paste outline]. For this section: [specific instruction]. Tone: [voice]. Under [X] words.\"",
+            "📝 SEO angle: \"Rewrite this article section to naturally include the phrase '[keyword]' 2-3 times without it feeling forced. Keep tone intact.\"",
+            "Pro tip: Never ask AI to write a full article in one shot — section-by-section produces far better quality"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write something you've been putting off",
+          "body": "Pick one piece of writing you've been avoiding this week — an email, a post, an article section. Then:",
+          "bullets": [
+            "Paste your Context Stack (from Lesson 13) to set the brief",
+            "Add the Role that fits: editor, copywriter, content strategist",
+            "Use the relevant template from today's lesson, customised for your task",
+            "Add your Do NOT list to cut AI's generic habits",
+            "Run 2 Iteration Loop passes: first for structure, then for tone",
+            "That's your real-world writing workflow. It works for everything."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is it better to write a long-form article section-by-section rather than asking AI to write the whole thing at once?",
+          "type": "mcq",
+          "options": [
+            "AI has a word limit that prevents full articles being generated",
+            "Section-by-section allows you to add specific instructions for each part, producing consistently higher quality throughout",
+            "Full articles cost more tokens",
+            "AI's attention span decreases for longer outputs, making later sections worse"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you ask AI to write a full article in one shot, it has to balance attention across the whole piece — and later sections often become thinner, more generic, or lose the thread of earlier ones. Section-by-section lets you write a structure prompt first, then give each section its own specific instructions, tone nudges, and quality check. The result is consistently high quality throughout, not just a strong opening."
+        },
+        {
+          "question": "For a cold outreach email, which of these opening approaches will produce the best result?",
+          "type": "mcq",
+          "options": [
+            "Open with who you are and your company background",
+            "Open with the recipient's pain point — what they struggle with — before mentioning your product",
+            "Open with a compliment about the recipient's company",
+            "Open with your offer and pricing immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most effective cold emails lead with the reader's world — their pain, their challenge, their goal — not the sender's product. This is why the cold email prompt template instructs AI to \"lead with their pain point, not our product.\" Opening with who you are or what you sell creates immediate friction. Opening with a problem the reader recognises creates immediate relevance. That's the difference between emails that get replies and emails that get deleted."
+        },
+        {
+          "question": "True or False: For social media posts, starting with a question is the most effective hook strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False — at least for LinkedIn and most professional platforms. The LinkedIn post template specifically instructs: \"Hook: start with a surprising fact or bold opinion — not a question.\" Questions have become so overused as hooks (\"Have you ever wondered...?\") that readers are now desensitised to them. Bold opinions and surprising facts stop the scroll because they create genuine tension or curiosity. On other platforms the rules differ — test what works for your specific audience."
+        },
+        {
+          "question": "What is the most important upgrade you can make to an email prompt to prevent generic, unusable output?",
+          "type": "mcq",
+          "options": [
+            "Making the prompt shorter so AI has less to misinterpret",
+            "Adding your Context Stack + specific recipient context + a Do NOT list targeting AI's email habits",
+            "Asking AI to write the email in first person",
+            "Using a role prompt: \"Act as an email marketing specialist\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Generic email output almost always traces back to missing context. AI doesn't know the relationship, the history, the recipient's role, or what outcome you're aiming for — so it writes for an imaginary generic situation. Adding your Context Stack (who you are, your audience, your goal) plus specific recipient context fills those gaps. The Do NOT list then eliminates AI's email defaults — the hollow openers, the passive sign-offs, the filler sentences. Together they eliminate generic output at the source."
+        }
+      ]
+    },
+    {
+      "id": "pem-16-prompt-for-research",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "Prompting for Research: Deep Dives & Synthesis",
+      "subtitle": "Turn AI into your personal research analyst — fast, thorough, and source-aware",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What used to take a researcher three days — competitive analysis, market deep dives, synthesising dozens of sources — AI can structure in 20 minutes. If you ask it right.",
+          "body": "Research is one of the highest-leverage AI use cases, but it's also one of the most dangerous if you don't know how to prompt correctly. AI can hallucinate facts confidently. Today you'll learn how to get extraordinary research output — and how to verify what matters.",
+          "stat": "20 min",
+          "statLabel": "to complete research that once took a full day — with the right prompts"
+        },
+        {
+          "type": "content",
+          "headline": "The research prompt formula",
+          "body": "Great research prompts combine role, scope, format, and a verification instruction. Here's the formula:",
+          "bullets": [
+            "🎭 Role: \"Act as a [research analyst / market researcher / industry expert] specialising in [domain]\"",
+            "🎯 Scope: \"Research [specific topic] with a focus on [angle — trends / competitors / risks / opportunities]\"",
+            "📋 Format: \"Present your findings as: [executive summary + key points + sources to verify]\"",
+            "✅ Verification: \"For any specific statistics or claims, flag them for verification — mark with [VERIFY]\"",
+            "The [VERIFY] tag is critical — it makes AI honest about what needs checking rather than presenting everything with equal confidence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Research prompt templates by type",
+          "body": "Different research tasks need different structures. Here are the four most valuable:",
+          "bullets": [
+            "🏢 Competitive analysis: \"Act as a strategy consultant. Analyse [competitor] vs [our company] across: pricing, positioning, target audience, key differentiators, and weaknesses. Format: comparison table + 3 strategic insights. Flag anything needing verification with [VERIFY].\"",
+            "📈 Market research: \"Summarise the current state of [market/industry]: size, growth rate, key players, major trends, and biggest unmet needs. Audience: [investor/executive/founder]. Format: 5 bullet points per section. [VERIFY] all stats.\"",
+            "🔍 Topic deep-dive: \"Give me a comprehensive overview of [topic] that would bring an intelligent non-expert up to speed. Cover: what it is, why it matters, key concepts, major debates, and practical implications. Format: structured sections with clear headers.\"",
+            "📊 Pros & cons analysis: \"Act as a devil's advocate and balanced analyst. Give me the strongest case FOR and the strongest case AGAINST [decision/option]. No hedging — commit to the best arguments on each side.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The hallucination problem — and how to manage it",
+          "body": "AI research has one critical weakness: it sometimes states incorrect facts confidently. Here's how to use AI for research without getting burned:",
+          "bullets": [
+            "⚠️ High hallucination risk: specific statistics, publication dates, quotes, study citations, recent events (post-2024)",
+            "✅ Low hallucination risk: frameworks, general concepts, synthesis of well-established ideas, strategic analysis",
+            "🔧 Fix 1: Always add \"[VERIFY] any specific statistics or claims\" to research prompts",
+            "🔧 Fix 2: Use AI to structure and synthesise — use primary sources (Google, databases) for specific facts",
+            "🔧 Fix 3: Ask AI directly: \"Which parts of this response are you least confident about?\" — it's surprisingly honest when asked"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a research deep-dive on something you need to know",
+          "body": "Pick a topic you've been meaning to research — a competitor, a market, a concept, a decision. Then:",
+          "bullets": [
+            "Use the research formula: Role + Scope + Format + [VERIFY] instruction",
+            "Run the competitive analysis or topic deep-dive template, customised for your topic",
+            "When the output arrives, identify anything marked [VERIFY] — check those points with a quick Google",
+            "Use the output as your research skeleton — it saves hours of initial synthesis work",
+            "Notice: AI gives you the structure and connections. You supply the factual verification."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does adding \"[VERIFY] any specific statistics or claims\" to a research prompt achieve?",
+          "type": "mcq",
+          "options": [
+            "It makes AI search the internet in real time for verified data",
+            "It instructs AI to flag claims that need checking rather than presenting everything with equal confidence",
+            "It prevents AI from including any unverified information in the response",
+            "It connects AI to academic databases for peer-reviewed sources"
+          ],
+          "correctIndex": 1,
+          "explanation": "The [VERIFY] instruction is a pragmatic hallucination management tool. It doesn't give AI access to the internet or databases — it instructs AI to flag claims it's less certain about, separating well-established knowledge from specific facts that could be wrong. This lets you use AI for high-speed synthesis and structure while targeting your manual verification effort at the specific claims that carry risk. It's honest AI-human collaboration."
+        },
+        {
+          "question": "Which type of AI research output has the LOWEST risk of hallucination?",
+          "type": "mcq",
+          "options": [
+            "Specific statistics with exact numbers",
+            "Quotes attributed to named individuals",
+            "Frameworks, general concepts, and synthesis of well-established ideas",
+            "Publication dates and study citations"
+          ],
+          "correctIndex": 2,
+          "explanation": "AI is most reliable when synthesising general, well-established knowledge — frameworks, broad concepts, strategic analysis, and widely understood ideas. These are densely represented in training data and don't require precise factual recall. Specific statistics, quotes, dates, and citations are high-risk because AI can generate plausible-sounding specifics that are subtly wrong. Use AI for synthesis and structure; verify specific facts independently."
+        },
+        {
+          "question": "True or False: You should ask AI to write your entire research report in one prompt, including all data, citations, and analysis.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The best research workflow uses AI for structure and synthesis — then you verify and supplement with primary sources. A single one-shot research prompt produces a confident-sounding document that may contain subtle errors throughout. The better approach: use AI to build the skeleton (structure, key questions, analysis framework), verify specific facts independently, and use follow-up prompts to deepen each section. AI accelerates research; it doesn't replace critical thinking."
+        },
+        {
+          "question": "How can you make AI more honest about which parts of a research response it's least confident about?",
+          "type": "mcq",
+          "options": [
+            "Ask it to only include information it is 100% certain about",
+            "Use a different AI tool that has more reliable data",
+            "Ask directly: \"Which parts of this response are you least confident about?\"",
+            "AI cannot assess its own confidence — you must always verify everything"
+          ],
+          "correctIndex": 2,
+          "explanation": "Modern AI models have a reasonable ability to flag their own uncertainty when directly asked — they won't volunteer it unprompted, but they will often give useful calibration when you ask. \"Which parts of this response are you least confident about?\" or \"What should I verify before relying on this?\" prompts AI to surface uncertainty it would otherwise present confidently. It's not perfect, but it's a useful final check before acting on AI research output."
+        }
+      ]
+    },
+    {
+      "id": "pem-17-prompt-for-creativity",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Prompting for Creativity: Ideas, Names & Concepts",
+      "subtitle": "Break creative blocks and generate 50 ideas in the time it used to take to think of one",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The blank page is the enemy of creativity. AI eliminates it — but only if you know how to push past the obvious. Today you'll learn to prompt for genuinely original ideas.",
+          "body": "Most people use AI for creative tasks and get back safe, predictable, forgettable outputs. That's a prompting problem, not an AI problem. The techniques in today's lesson — divergence, constraint forcing, and perspective shifting — are what separate creative professionals from everyone else.",
+          "stat": "50+",
+          "statLabel": "usable ideas in 10 minutes with divergent prompting — vs 3-5 from a typical brainstorm"
+        },
+        {
+          "type": "content",
+          "headline": "The divergence technique — quantity before quality",
+          "body": "The #1 mistake in creative prompting: asking for the best idea. You can't know what's best before you've seen the options. Always ask for volume first.",
+          "bullets": [
+            "❌ Weak: \"Give me a name for my app\" → AI gives you 1-3 safe, generic options",
+            "✅ Strong: \"Generate 30 name ideas for [app description]. Range from safe and descriptive to bold and unexpected. Include: portmanteaus, metaphors, verbs-as-names, and abstract concepts.\" → 30 options across the full creative spectrum",
+            "Rule: the more ideas, the higher the ceiling. The best ideas never come first.",
+            "After 30, ask: \"Which 5 have the most commercial potential and why?\" — use AI to filter too"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Constraint forcing — creativity through restriction",
+          "body": "Paradoxically, creative work improves with constraints. Constraints force AI (and you) out of the default zone:",
+          "bullets": [
+            "🔒 Word limits: \"Name ideas — one word only, max 8 letters\" → Forces punchy, memorable names",
+            "🎯 Audience constraint: \"Ideas that would resonate with a 22-year-old in Tokyo, not a 45-year-old in London\"",
+            "🚫 Exclusion constraint: \"No tech jargon, no 'AI' in the name, no compound words with 'smart'\"",
+            "🌍 Cultural constraint: \"Ideas that work across English, Spanish, and French without translation issues\"",
+            "⏱️ Time constraint: \"Campaign concepts that can be executed in under a week with no budget\"",
+            "Add constraints one at a time to progressively refine — not all at once at the start"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Perspective shifting — see the idea from new angles",
+          "body": "The best creative ideas often come from an unexpected viewpoint. These perspective prompts reliably unlock original thinking:",
+          "bullets": [
+            "🔄 Reversal: \"What would the opposite of [concept] look like — and is that actually better?\"",
+            "🏆 Role shift: \"How would Apple name this product?\" / \"How would a 5-year-old explain this concept?\"",
+            "📖 Analogy: \"Find 5 analogies for [concept] from completely unrelated fields — nature, sport, cooking, architecture\"",
+            "⚡ Extreme version: \"What's the most outrageous, unexpected version of this idea — one that would get us press coverage just by existing?\"",
+            "🎭 Enemy perspective: \"If a competitor wanted to make this idea fail, what would they say about it?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a 10-minute creative sprint",
+          "body": "Pick any creative challenge you're currently facing — naming something, finding a campaign hook, generating content ideas, coming up with a new product concept. Then:",
+          "bullets": [
+            "Round 1 — Diverge: Ask for 25 ideas with explicit range from \"safe and obvious\" to \"unexpected and bold\"",
+            "Round 2 — Constrain: Apply 2-3 constraints to the most promising batch. Generate 15 more.",
+            "Round 3 — Shift: Use a perspective prompt on your top 3 ideas. What does the Apple version look like? The reversal?",
+            "Round 4 — Filter: Ask AI: \"From everything we've generated, which 3 ideas have the highest potential and why?\"",
+            "In 10 minutes you'll have a shortlist most creative teams would be happy with after a day's work."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why should you ask for 25-30 ideas before filtering, rather than asking for \"the best 3\"?",
+          "type": "mcq",
+          "options": [
+            "AI performs better with larger output targets",
+            "The best ideas rarely come first — volume expands the creative ceiling and reveals options that weren't obvious",
+            "It uses more tokens, which produces higher quality",
+            "AI filters ideas better with a larger pool to choose from"
+          ],
+          "correctIndex": 1,
+          "explanation": "Creative quality follows a power law: the best ideas hide in the long tail. When you ask for \"the best 3\", AI produces the most statistically likely — which means the most common, expected, and forgettable. When you ask for 30 and specify a range from \"safe\" to \"unexpected\", AI is forced to explore the full creative spectrum. The surprising, original options that make creative work distinctive are almost never in the first three."
+        },
+        {
+          "question": "What does \"constraint forcing\" do in creative prompting?",
+          "type": "mcq",
+          "options": [
+            "It limits AI's creative output to protect brand guidelines",
+            "It restricts AI to verified, fact-based creative ideas only",
+            "It applies specific limitations that paradoxically push AI outside its default creative zone into more original territory",
+            "It forces AI to always choose the safest, most commercially viable option"
+          ],
+          "correctIndex": 2,
+          "explanation": "Constraints are creativity accelerators, not limiters. \"One word, max 8 letters\" forces AI out of the predictable compound-word names it defaults to. \"No AI or Smart in the name\" blocks the clichés. Cultural constraints push toward universally resonant ideas. Each constraint is a fence that forces AI to think in a different direction — and the ideas that emerge from those forced turns are often more original than anything that would have appeared without them."
+        },
+        {
+          "question": "You want AI to generate a brand name for a new product. Which prompt will produce the most useful creative output?",
+          "type": "mcq",
+          "options": [
+            "\"Give me a brand name for my new product\"",
+            "\"What would be a good name?\"",
+            "\"Generate 30 brand name ideas for [product description]. Range from descriptive to abstract. Include: portmanteaus, verbs-as-nouns, metaphors. No jargon or compound words with 'smart'.\"",
+            "\"Name my product something creative and memorable\""
+          ],
+          "correctIndex": 2,
+          "explanation": "The strongest creative prompt specifies volume (30), range (descriptive to abstract), structure types to explore (portmanteaus, verbs-as-nouns, metaphors), and exclusions (no jargon, no 'smart' compounds). This forces AI to explore the full creative spectrum rather than defaulting to the safest, most common options. The vague prompts — \"give me a name\", \"something creative\" — produce generic results because they give AI no constraint or direction."
+        },
+        {
+          "question": "True or False: The reversal technique (\"What would the opposite of this concept look like?\") is only useful for coming up with deliberately bad ideas.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The reversal technique is one of the most powerful perspective-shift prompts precisely because the opposite of a conventional idea is sometimes the better idea. Many breakthrough products were built on reversals: instead of going to the gym (the conventional fitness solution), a home fitness company reversed it. Instead of hiring experts (conventional consulting), platforms democratised access. Reversal prompting forces a re-examination of assumptions — and occasionally the opposite turns out to be genuinely superior."
+        }
+      ]
+    },
+    {
+      "id": "pem-18-prompt-for-business",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "Prompting for Business: Strategy & Decisions",
+      "subtitle": "Use AI as a thinking partner for your toughest business challenges",
+      "duration": "8 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most valuable AI use case isn't writing emails faster — it's having a McKinsey-level strategic thinking partner available at any hour, for any problem, at no cost.",
+          "body": "Business prompting is different from writing prompting. The goal isn't polished prose — it's clear thinking. The best business prompts use AI as a pressure-tester, a devil's advocate, a second brain. Today you'll get the exact prompts for your most important business decisions.",
+          "stat": "$3,000/hr",
+          "statLabel": "the cost of a McKinsey consultant — AI gives you the same frameworks for free"
+        },
+        {
+          "type": "content",
+          "headline": "Strategic analysis prompts",
+          "body": "These prompts structure complex business problems into clear, actionable frameworks:",
+          "bullets": [
+            "🔷 SWOT: \"Act as a strategy consultant. Run a rigorous SWOT analysis for [business/project]. For each quadrant, give 3-5 specific points — not generic observations. Format: table. Flag anything needing market data with [VERIFY].\"",
+            "🔷 Decision framework: \"I need to decide between [Option A] and [Option B]. Think through this step by step. Consider: financial impact, strategic fit, execution risk, reversibility, and timing. Recommend one with a clear rationale.\"",
+            "🔷 Risk analysis: \"Act as a senior risk officer. Identify the top 5 risks in [plan/idea]. For each: likelihood (high/med/low), impact (high/med/low), and a mitigation strategy. Be specific — not generic risk categories.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Stress-testing your ideas",
+          "body": "The most valuable business use of AI is stress-testing — finding the flaws before reality does:",
+          "bullets": [
+            "💥 Pre-mortem: \"Imagine it's 18 months from now and [project/decision] has completely failed. Think through step by step what went wrong. Be specific — not abstract failure categories.\"",
+            "🔍 Assumption audit: \"List every assumption embedded in this plan: [paste plan]. For each assumption, rate how confident you are it's correct, and what happens to the plan if it's wrong.\"",
+            "👹 Strongest objection: \"Act as the most sceptical investor who has seen this pitch fail before. What's the single most damaging objection to [idea]? Don't hedge — give your harshest honest critique.\"",
+            "🎯 Second opinion: \"I'm about to [decision]. What am I not thinking about? What would a contrarian say?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Business planning prompts that actually help",
+          "body": "These turn AI into a genuine planning partner — not just a document filler:",
+          "bullets": [
+            "📋 Goal decomposition: \"My goal is [big goal] by [date]. Break this down into: quarterly milestones, monthly targets, weekly actions, and the single most important thing I should do this week. Be specific and realistic.\"",
+            "💰 Pricing strategy: \"Act as a pricing consultant. I'm launching [product/service] at [price]. Analyse: is this the right price point for [audience]? What alternatives should I consider? Use the value-based pricing framework.\"",
+            "📣 Go-to-market: \"Act as a CMO. Build a lean go-to-market strategy for [product] targeting [audience]. Budget: [constraint]. Format: 4 phases with specific channels, messages, and success metrics for each.\"",
+            "🏆 Competitive positioning: \"In a market with [list competitors], where is the white space for [my business]? Think through: underserved audiences, unmet needs, and positioning angles competitors have ignored.\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Put AI on your hardest current business problem",
+          "body": "Think of the business decision or challenge you're most uncertain about right now. Then run it through two prompts back to back:",
+          "bullets": [
+            "First: The decision framework prompt — \"Think through this step by step. Consider: [key factors]. Recommend one option with a clear rationale.\"",
+            "Then: The pre-mortem — \"Imagine this decision has completely failed in 12 months. What specifically went wrong?\"",
+            "The combination of forward-looking analysis + backward-looking failure modes gives you 360° coverage",
+            "Act on the recommendation only after you've addressed the top 2 failure modes from the pre-mortem",
+            "This is how executives use AI as a thinking partner — not just a writing assistant"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes the pre-mortem prompt uniquely valuable for business decisions?",
+          "type": "mcq",
+          "options": [
+            "It predicts the future with high statistical accuracy",
+            "By imagining failure has already happened, it bypasses optimism bias and surfaces specific, actionable failure modes before they occur",
+            "It uses Chain of Thought, which improves accuracy for predictions",
+            "It gives you legal protection if the project does fail"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pre-mortem is powerful because it bypasses optimism bias — the natural human tendency to underweight failure scenarios when we're excited about a plan. By setting the premise as \"this has already failed\", AI (and your own thinking) is freed from the need to be positive or reassuring. The result is a specific, plausible list of failure modes you can address proactively. It's one of the most practical risk-management tools available, and AI makes it available in minutes."
+        },
+        {
+          "question": "Which business prompt would best help you identify a gap in a crowded market?",
+          "type": "mcq",
+          "options": [
+            "The SWOT analysis prompt",
+            "The goal decomposition prompt",
+            "The competitive positioning prompt — \"where is the white space for my business among these competitors?\"",
+            "The risk analysis prompt"
+          ],
+          "correctIndex": 2,
+          "explanation": "The competitive positioning prompt is specifically designed to find white space — underserved audiences, unmet needs, and positioning angles that existing competitors have ignored. It directs AI to look at the gaps rather than the occupied territory. SWOT is useful for analysing your own position. Risk analysis looks at downside. Goal decomposition plans execution. Competitive positioning is the right tool for identifying strategic opportunity in a crowded market."
+        },
+        {
+          "question": "True or False: AI's business strategy output can be trusted as a final answer without additional critical review.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. AI is a thinking partner and framework generator — not an oracle. Business strategy output from AI should be treated as a strong first draft: a structured analysis that surfaces options, risks, and frameworks you might not have considered. It needs your domain knowledge, current market context, and judgment to become a reliable final answer. The value of AI in business thinking is speed and structure — not replacing the decision-maker's expertise."
+        },
+        {
+          "question": "You're about to make a significant business decision and want to find flaws in your thinking. Which two prompts should you run back-to-back?",
+          "type": "mcq",
+          "options": [
+            "The SWOT analysis + the goal decomposition prompt",
+            "The go-to-market strategy + the pricing strategy prompt",
+            "The decision framework (step-by-step analysis) + the pre-mortem (imagine it's failed — what went wrong?)",
+            "The competitive positioning + the assumption audit"
+          ],
+          "correctIndex": 2,
+          "explanation": "The decision framework + pre-mortem combination gives you 360° coverage: forward-looking structured analysis of what should happen, followed by backward-looking failure mapping of what could go wrong. Together they produce both the recommended path and the specific vulnerabilities in that path. Acting on the recommendation only after addressing the pre-mortem's top failure modes is the discipline that separates good decisions from lucky ones."
+        }
+      ]
+    },
+    {
+      "id": "pem-19-prompt-library",
+      "dayNumber": 19,
+      "moduleId": "module-3",
+      "title": "Build Your Prompt Library",
+      "subtitle": "Your permanent competitive advantage — a personal collection that keeps getting better",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every prompt you've written in this course is an asset. Every prompt you write from now on can be one too. Your Prompt Library is the compound interest of AI skill.",
+          "body": "Most people treat each AI interaction as disposable — write, use, forget. Power users treat every great prompt like a recipe worth saving. Over time, a well-organised Prompt Library becomes your single biggest productivity advantage — a collection of proven, refined prompts that get results every time.",
+          "stat": "10×",
+          "statLabel": "faster execution on repeated tasks once you have a well-stocked Prompt Library"
+        },
+        {
+          "type": "content",
+          "headline": "What goes in a Prompt Library",
+          "body": "Not every prompt deserves saving — only the ones that passed the quality test. Here's how to decide:",
+          "bullets": [
+            "✅ Save it: Any prompt where the output was genuinely impressive and you'd use it again",
+            "✅ Save it: Templates you've customised for your specific context and voice",
+            "✅ Save it: Context Stacks for your major projects or clients",
+            "✅ Save it: Role combinations that reliably produce expert-level output in your field",
+            "❌ Skip it: One-off prompts for unique tasks you'll never repeat",
+            "❌ Skip it: First-draft prompts that needed heavy iteration — save the final refined version instead"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to organise your library",
+          "body": "A disorganised library is nearly as useless as no library. Use this simple structure:",
+          "bullets": [
+            "📁 Category folders: Writing · Research · Creativity · Business · Communication · Personal",
+            "📝 Each entry: Title | Use case | The prompt (with [PLACEHOLDERS] for variables) | Last updated",
+            "⭐ Star your top 10 — the ones you use most often. Keep them at the top.",
+            "🔄 Review quarterly: delete what's stale, refine what's close but not perfect",
+            "Tools: Notion, Apple Notes, Google Docs — pick the one you already live in. Complexity kills adoption."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building your Starter 10",
+          "body": "Start with 10 high-value prompts rather than trying to save everything. Here's the ideal starter set based on what you've learned in this course:",
+          "bullets": [
+            "1. My Context Stack (Lesson 13) — your universal background brief",
+            "2. My Do NOT list (Lesson 12) — your personal exclusion block",
+            "3. Power Email — cold outreach template customised for your industry",
+            "4. Power Post — social media template in your brand voice with few-shot examples",
+            "5. Research brief — your standard competitive/market analysis template",
+            "6. Decision framework — for any significant business choice",
+            "7. Pre-mortem — for stress-testing any plan",
+            "8. Creative sprint — your 30-ideas divergence template",
+            "9. Role stack — your 3 go-to expert roles for your most common tasks",
+            "10. Iteration toolkit — your 5 favourite follow-up prompt patterns"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your Starter 10 right now",
+          "body": "Open a new document — Notion, Google Docs, Apple Notes, wherever you'll actually use it. Then:",
+          "bullets": [
+            "Create 10 entries using the list above as your template",
+            "For each one, go back through this course and pull the best version of that prompt",
+            "Add [PLACEHOLDERS] for anything that changes per task (e.g. [audience], [topic], [word count])",
+            "Star your top 3 — the prompts you'll use this week",
+            "Commit: every time you write a prompt that produces a great output, spend 60 seconds saving it",
+            "In 3 months this library will be worth more than any AI tool subscription."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these should you save to your Prompt Library?",
+          "type": "mcq",
+          "options": [
+            "Every prompt you write, even one-off queries",
+            "Only prompts that are completely unique — never saving templates",
+            "Prompts where the output was genuinely impressive and you'd use them again, especially refined templates",
+            "Only prompts from this course — nothing you write yourself"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Prompt Library is a curation exercise, not an archive. Save prompts that passed a quality test — where the output was genuinely impressive, where you've customised a template for your specific context, or where a role combination reliably produces expert output. Skip one-offs and unrefined first drafts. Quality over quantity: 20 excellent saved prompts beats 200 mediocre ones you'll never reuse."
+        },
+        {
+          "question": "What is the single most important feature of a well-organised Prompt Library entry?",
+          "type": "mcq",
+          "options": [
+            "Including the AI's original output alongside the prompt",
+            "Using [PLACEHOLDERS] for variable elements so the template is immediately reusable",
+            "Dating every entry with the exact time it was created",
+            "Writing a long explanation of why the prompt works"
+          ],
+          "correctIndex": 1,
+          "explanation": "[PLACEHOLDERS] are what turn a one-time prompt into a reusable template. A prompt like \"Write a [format] about [topic] for [audience]. Tone: [voice].\" can be used for hundreds of different tasks with minimal friction. Without placeholders, a saved prompt is just a historical record — interesting but not actionable. With placeholders, it's a precision tool you can reach for immediately. This is the single habit that determines whether a Prompt Library becomes genuinely useful."
+        },
+        {
+          "question": "Why should you start with 10 high-quality prompts rather than trying to save everything?",
+          "type": "mcq",
+          "options": [
+            "AI tools have a limit of 10 saved prompts",
+            "Complexity kills adoption — a focused starter set you actually use beats a sprawling archive you never open",
+            "More than 10 prompts creates confusion about which to use",
+            "You can only build a 10-prompt library on the free plan"
+          ],
+          "correctIndex": 1,
+          "explanation": "The biggest enemy of a Prompt Library isn't having too few prompts — it's building something so large and unwieldy you stop using it. Starting with 10 high-quality, frequently-used prompts builds the habit of opening and using the library. Once the habit is established, you can expand. A library of 10 prompts you use daily is more valuable than 200 prompts you've never opened since saving them."
+        },
+        {
+          "question": "True or False: Your Prompt Library should be stored in a dedicated, specialised AI tool — not in a notes app you already use.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The best Prompt Library is the one you actually open. Use whatever tool you already live in — Notion, Apple Notes, Google Docs, even a simple text file. Switching to a new specialised tool adds friction that kills the habit. The system matters less than the consistency. If you open Notion 20 times a day anyway, your Prompt Library belongs in Notion. Simplicity and familiarity always win over sophistication."
+        }
+      ]
+    },
+    {
+      "id": "pem-20-advanced-techniques",
+      "dayNumber": 20,
+      "moduleId": "module-3",
+      "title": "Advanced Techniques: The 1% Moves",
+      "subtitle": "The cutting-edge prompting techniques that most users will never discover",
+      "duration": "8 min",
+      "xpValue": 30,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've mastered the fundamentals and the core techniques. Now here's what separates the top 1% of AI users — the moves that feel almost like cheating.",
+          "body": "These advanced techniques go beyond the standard toolkit. They're less well-known, require a bit more setup, and produce outputs that genuinely surprise people. By the end of this lesson you'll have moves that most AI users — including many professionals — have never heard of.",
+          "stat": "Top 1%",
+          "statLabel": "of AI users know and use all five of these advanced techniques"
+        },
+        {
+          "type": "content",
+          "headline": "Technique 1: Self-critique prompting",
+          "body": "Instead of accepting AI's first output, ask AI to critique it before you see it. This builds the Iteration Loop into a single prompt:",
+          "bullets": [
+            "How: After your main prompt, add: \"Before giving me the final version, critique your draft. What are its 3 weaknesses? Then rewrite it addressing those weaknesses.\"",
+            "What happens: AI produces a draft, identifies its own flaws, and gives you an improved version — all in one step",
+            "When to use: High-stakes writing, complex analysis, any task where quality matters more than speed",
+            "Result: You get output that's already been through one iteration loop before you see it — significantly better than any raw first draft"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Technique 2: Persona prompting",
+          "body": "More specific than role prompting — you assign AI a fictional but highly detailed persona with opinions, style, and history:",
+          "bullets": [
+            "Role prompt: \"Act as a marketing expert\" → Generic expert voice",
+            "Persona prompt: \"You are Alex, a CMO who built 3 startups to acquisition, writes brutally direct copy, hates buzzwords, and thinks most marketing is cowardly.\" → Distinct, opinionated, memorable voice",
+            "Best for: Brand voice creation, content with a strong point of view, advisory responses with real edge",
+            "Tip: Once you've built a great persona, save it in your Prompt Library for reuse across sessions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Techniques 3 & 4: Socratic prompting + Output seeding",
+          "body": "Two underused techniques that solve specific, common problems:",
+          "bullets": [
+            "🧠 Socratic prompting: Instead of asking for answers, ask AI to ask YOU questions. \"Ask me the 5 most important questions you'd need answered before advising me on [decision].\" Use AI to identify what you don't know.",
+            "🌱 Output seeding: Give AI the first sentence or paragraph of the output you want. \"Continue this email in the same tone: 'Thanks for your patience — here's the update you've been waiting for...'\" AI completes in your exact voice.",
+            "Socratic use case: Strategic decisions, creative briefs, any situation where you're not sure what questions to ask",
+            "Seeding use case: Ghostwriting, maintaining a consistent voice across long documents, continuing something you've already started"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Technique 5: Prompt chaining",
+          "body": "Use the output of one prompt as the input for the next — building complex outputs through a deliberate chain of steps:",
+          "bullets": [
+            "🔗 Step 1: \"Generate a research brief on [topic] — key questions, sub-topics, and angles to explore\"",
+            "🔗 Step 2: \"Using this brief as your guide: [paste Step 1 output], now write a detailed outline for a 1,500-word article\"",
+            "🔗 Step 3: \"Using this outline: [paste Step 2 output], write Section 2 in full. Tone: [voice]. 300 words.\"",
+            "Each step builds on verified output from the previous step — preventing errors from compounding",
+            "Best for: Long-form content, complex analysis, multi-stage creative projects, anything where quality at each step matters",
+            "Think of it as an assembly line — each station does one job well, and the final product is the sum of all stations"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Pick one advanced technique to try today",
+          "body": "Don't try all five at once. Pick one that solves a current frustration:",
+          "bullets": [
+            "Struggling with first drafts that need heavy editing? → Try Self-critique prompting",
+            "AI outputs sound generic and voice-less? → Try Persona prompting — build an Alex for your brand",
+            "Facing a decision and not sure what to consider? → Try Socratic prompting: \"Ask me the 5 questions I need to answer\"",
+            "Need AI to match your exact voice? → Try Output seeding: give it your first sentence",
+            "Building something complex that needs to be consistently high quality throughout? → Try Prompt chaining",
+            "Add whichever you try to your Prompt Library."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does self-critique prompting achieve that a standard prompt doesn't?",
+          "type": "mcq",
+          "options": [
+            "It makes AI apologise for mistakes before making them",
+            "It builds the Iteration Loop into a single prompt — AI critiques its own draft and rewrites to address the flaws before you see it",
+            "It prevents AI from making any errors in the output",
+            "It uses fewer tokens by combining critique and creation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Self-critique prompting embeds a quality loop before the output reaches you. AI produces a draft, identifies its own 3 weaknesses, then rewrites addressing those weaknesses — all in one step. The output you receive has already been through one iteration cycle. For high-stakes writing or complex analysis, this technique saves significant editing time and consistently produces better first deliverables than standard prompting."
+        },
+        {
+          "question": "What is the key difference between role prompting and persona prompting?",
+          "type": "mcq",
+          "options": [
+            "Role prompting is for creative tasks; persona prompting is for business tasks",
+            "Persona prompting assigns a detailed fictional character with specific opinions and style, producing a more distinctive and opinionated voice than a generic role",
+            "They are the same technique with different names",
+            "Role prompting uses \"Act as\"; persona prompting uses \"You are\" — that's the only difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Role prompting activates a general professional identity (\"Act as a marketing expert\") — useful but generic. Persona prompting goes further: you create a specific fictional character with history, opinions, stylistic quirks, and a distinct point of view. \"You are Alex, a CMO who built 3 companies to exit, writes brutally direct copy, and hates buzzwords\" produces a voice with real edge and personality. The extra specificity is what makes the output feel genuinely different rather than just competent."
+        },
+        {
+          "question": "When is Socratic prompting most useful?",
+          "type": "mcq",
+          "options": [
+            "When you want AI to generate questions for a quiz",
+            "When you want AI to teach you a topic using the Socratic method",
+            "When you're facing a complex decision and want AI to reveal what questions you should be asking — but haven't thought to ask",
+            "When you want to test how much AI knows about a topic"
+          ],
+          "correctIndex": 2,
+          "explanation": "Socratic prompting flips the dynamic: instead of asking AI for answers, you ask AI to ask you questions. \"Ask me the 5 most important questions you'd need answered before advising me on this decision\" reveals the dimensions of a problem you might not have considered. It's especially powerful for strategic decisions and creative briefs — situations where you're not sure what you don't know. The questions themselves are often more valuable than any direct answer."
+        },
+        {
+          "question": "True or False: Prompt chaining is only useful for long-form writing projects.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Prompt chaining is valuable for any multi-stage task where quality at each step matters and errors in one step shouldn't contaminate the next. It works for complex analysis (research brief → outline → sections), business planning (goal setting → strategy → action plan → risk review), creative projects (concept → brief → execution → refinement), and product development (problem definition → solution space → prototype concept → go-to-market). The principle — build on verified output from the previous step — applies anywhere quality and complexity intersect."
+        }
+      ]
+    },
+    {
+      "id": "pem-21-graduation",
+      "dayNumber": 21,
+      "moduleId": "module-3",
+      "title": "Graduation: You Are Now a Prompt Engineer",
+      "subtitle": "Everything you've learned. Everything you've built. What comes next.",
+      "duration": "10 min",
+      "xpValue": 50,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Three weeks ago you were asking AI the same way you'd Google something. Today you think in frameworks, techniques, and systems. That's the difference between a tool user and a craftsperson.",
+          "body": "You've completed 21 lessons, three modules, and six professional techniques. You've built a Context Stack, a Prompt Library, and a Power Stack that most AI users will never discover. This final lesson is both a celebration and a compass — where you've come from and where to go next.",
+          "stat": "21",
+          "statLabel": "lessons · 3 modules · 6 techniques · 1 complete Prompt Library"
+        },
+        {
+          "type": "content",
+          "headline": "What you can now do — the complete skill inventory",
+          "body": "This is everything you've built. Read it slowly. You earned every item on this list.",
+          "bullets": [
+            "✅ Write powerful prompts using the 4-ingredient formula (Task · Context · Format · Tone)",
+            "✅ Use 6 professional techniques: Role · Chain of Thought · Few-Shot · Iteration · Negative · Context Stack",
+            "✅ Apply 5 advanced moves: Self-critique · Persona · Socratic · Output Seeding · Prompt Chaining",
+            "✅ Prompt for any real-world task: writing, research, creativity, business strategy",
+            "✅ Avoid the 7 mistakes that ruin most AI outputs",
+            "✅ Maintain a Prompt Library that compounds over time",
+            "✅ Build a Power Stack combining all techniques for your most important work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How the world looks different now",
+          "body": "These are the mindset shifts that separate prompt engineers from everyone else. You now have all of them.",
+          "bullets": [
+            "🧠 You see prompts as systems, not questions — structured inputs that produce predictable outputs",
+            "🔄 You treat first drafts as raw material — iteration is the real skill, not one-shot perfection",
+            "🎭 You reach for role and persona prompts instinctively — expert perspective is always one sentence away",
+            "🏗️ You set context before every important task — AI knows your world before it starts",
+            "📚 You save what works — every great prompt is an asset, not a disposable thought",
+            "⚡ You move faster than everyone around you — because you know how to ask"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to do in the next 30 days",
+          "body": "The difference between people who complete a course and people who transform their work is what happens after the last lesson. Here's your 30-day plan:",
+          "bullets": [
+            "📅 Week 1: Use your Prompt Library every day. Add one new prompt each day.",
+            "📅 Week 2: Run your full Power Stack on one important task per day. Feel the difference.",
+            "📅 Week 3: Teach one technique to a colleague or friend. Teaching cements mastery.",
+            "📅 Week 4: Review your Prompt Library. What's been used? What hasn't? Refine the top 10.",
+            "🔁 Every month: One new advanced technique to experiment with. Self-critique this month. Prompt chaining next.",
+            "🎯 In 90 days: You won't remember what it felt like to not know this. That's when it becomes identity."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your graduation challenge",
+          "body": "The final challenge of this course is the one that proves you've truly graduated:",
+          "bullets": [
+            "Pick your single most important work task for this week",
+            "Build the full Power Stack: Context Stack → Role → Few-Shot (if needed) → 4-ingredient prompt with CoT → Do NOT list",
+            "Add a self-critique instruction: \"Before giving the final version, critique your draft and rewrite to address the 3 main weaknesses\"",
+            "Run 2-3 Iteration Loop passes",
+            "Look at the final output. Share it. Submit it. Ship it.",
+            "That output — produced in 15 minutes — is what prompt engineering mastery looks like in practice.",
+            "🎓 Congratulations. You are now a Prompt Engineer."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the single most important habit to build in the 30 days after completing this course?",
+          "type": "mcq",
+          "options": [
+            "Reading more about AI research papers and staying current with new models",
+            "Using your Prompt Library daily and adding one new prompt each day — building the habit through daily practice",
+            "Completing another AI course immediately to reinforce the learning",
+            "Focusing exclusively on one technique until it's perfect before using others"
+          ],
+          "correctIndex": 1,
+          "explanation": "Knowledge without practice is trivia. The 30-day habit that transforms course completion into genuine mastery is daily use — opening your Prompt Library for real tasks every day, adding what works, removing what doesn't. The prompts get better. The habit gets stronger. The speed increases. In 30 days of daily use, you'll have a personalised system that reflects your actual work — and skills that feel automatic rather than effortful."
+        },
+        {
+          "question": "What does it mean to think in \"prompts as systems\" rather than questions?",
+          "type": "mcq",
+          "options": [
+            "Writing prompts in code rather than natural language",
+            "Treating prompts as structured, reusable inputs that produce predictable outputs — not one-off queries you throw away",
+            "Using AI only for systematic, repetitive tasks — not creative work",
+            "Organising prompts alphabetically in a database system"
+          ],
+          "correctIndex": 1,
+          "explanation": "The systems mindset is the most important mindset shift in this course. A question is one-off: you ask, you get an answer, you move on. A system is reusable: a carefully structured prompt with placeholders, role, context, and quality controls that produces reliably excellent output whenever you deploy it. This is the difference between a tool user (ask → get → move on) and a craftsperson (design → refine → systematise → reuse). Your Prompt Library is the physical manifestation of this mindset."
+        },
+        {
+          "question": "True or False: After completing this course, the most skilled prompt engineers stop learning and rely entirely on what they've mastered.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. AI is a fast-moving field — new models, capabilities, and techniques emerge constantly. The best prompt engineers treat their skill as a practice, not a destination. The foundation you've built in this course is stable and transferable across any AI tool or model. But the specific techniques will evolve. The 30-day plan builds the habit of experimentation — one new technique per month, regular library reviews, teaching others — because mastery is maintained through continued practice, not achieved and then frozen."
+        },
+        {
+          "question": "What is the graduation challenge designed to prove?",
+          "type": "mcq",
+          "options": [
+            "That you can complete the course without errors",
+            "That you can use all techniques individually in isolation",
+            "That you can combine the full Power Stack — Context Stack, Role, CoT, Negative Prompting, Self-critique, and Iteration Loop — on a real task that matters to you",
+            "That you can explain each technique to someone else"
+          ],
+          "correctIndex": 2,
+          "explanation": "The graduation challenge tests integration, not isolation. Anyone can use a single technique. A prompt engineer combines them — Context Stack setting the full brief, Role activating specialist expertise, CoT ensuring reliable reasoning, Do NOT list cutting generic habits, Self-critique building in an iteration loop, and the Iteration Loop refining the output. The challenge uses a real task because prompt engineering skill only exists in application. If the output is something you're proud to ship, you've graduated."
+        }
+      ]
+    }
+  ]
+}

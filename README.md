@@ -1,6 +1,8 @@
 # SuccessWise
 
-Railway app: one Node process serves the marketing SPA, the LMS SPA, and `/api`. Postgres via `DATABASE_URL`. Convex is not used.
+Railway app: one Node process serves a **single SPA** (marketing + LMS routes) and `/api`. Postgres via `DATABASE_URL`. Convex is not used.
+
+This folder is a **full project**: funnel + LMS UI in one Vite `dist` + LMS API (`createLmsRoutes` from the nested `authorisation/` package). Railway / GitHub clones of this folder do not need a sibling `../authorisation`.
 
 ## Quick start
 
@@ -11,17 +13,26 @@ npm install
 npm run dev
 ```
 
-- Vite (marketing): `http://localhost:5173` (proxies `/api` and `/stripe` to `:3000`)
-- Funnel API: `http://localhost:3000` (runs migrations on start)
-- LMS (canonical): from `../authorisation`, `npm run dev` → web `:5175` + API `:3001` (do not proxy LMS to `:3000`)
+- Vite (one SPA): `http://localhost:5173` — marketing `/`, LMS `/login` `/app/*`, funnels; proxies `/api` and `/stripe` to `:3000`
+- API: `http://localhost:3000` — funnel **and** LMS (`/api/auth`, `/api/me`, session cookie `sw_session`)
+- Isolated LMS canon (optional): `npm run dev:lms` → Vite `:5175` (not required to view the github origin)
+- Production-like: `npm run build && npm start` — one `dist/index.html` for every HTML path
 
-Needs a running Postgres. Seed catalog prices after the first start:
+One `DATABASE_URL` for leads, trial, and LMS (OTP, progress, purchases).
+
+Seed catalog prices after the first start:
 
 ```bash
 npm run db:seed
 ```
 
-Local LMS login is `../authorisation` (`npm run dev`) with its own Postgres and `:3001`. This github API stays the funnel + Railway mirror until `createLmsApi` is mounted here.
+Canonical LMS **source** still lives in the monorepo `../authorisation/` (local `:5175` + `:3001`, its own `.env`). After changing that package, refresh the nested copy:
+
+```bash
+npm run sync:authorisation
+```
+
+Do **not** apply `authorisation/drizzle/0000_lms.sql` on this database. Railway migrations are `drizzle/0000_init.sql` + `drizzle/0001_lms.sql`.
 
 ## Environment variables
 
@@ -33,14 +44,13 @@ Copy `.env.example` → `.env` (or `.env.local`).
 | `VITE_META_PIXEL_ID` | build | Meta Pixel |
 | `VITE_META_CAPI_ENABLED` | build | Relay browser events to `/api/meta/event` |
 | `VITE_POSTHOG_KEY` / `VITE_POSTHOG_HOST` | build | PostHog |
-| `DATABASE_URL` | runtime | Postgres |
+| `DATABASE_URL` | runtime | Postgres (funnel + LMS) |
 | `SESSION_SECRET` | runtime | Cookie HMAC (≥ 16 chars) |
 | `STRIPE_SECRET_KEY` | runtime | PaymentIntents + webhook |
 | `STRIPE_WEBHOOK_SECRET` | runtime | `POST /stripe/webhook` |
 | `STRIPE_*_PRICE_ID` | runtime | Recurring prices after the $1 trial |
 | `AUTH_RESEND_KEY` | runtime | OTP email (required in production) |
 | `META_ACCESS_TOKEN` | runtime | Conversions API |
-| `LMS_DIST` | runtime | Optional override; `npm run build` writes `./lms-dist` |
 | `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
 | `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |
 
@@ -53,7 +63,7 @@ npm run build
 npm start
 ```
 
-`build` compiles the server and marketing SPA (this is what Railway runs). LMS copy is `npm run build:all` locally (`../authorisation` → `./lms-dist`); it is not part of `npm run build`, so a GitHub/Railway clone without that sibling folder still succeeds. `/login` and `/app` fall back to the marketing SPA until LMS is vendored. The process listens on `$PORT`. Healthcheck: `GET /api/health`.
+`build` compiles the nested LMS **API** (`authorisation/server-dist`), then this server and the one SPA (`vite build` → `dist/`). The process listens on `$PORT`. Healthcheck: `GET /api/health`.
 
 Required Railway variables (service → Variables):
 
@@ -61,9 +71,9 @@ Required Railway variables (service → Variables):
 - `SESSION_SECRET` — 16+ random characters
 - `RAILPACK_NO_SPA=1` if the builder tries to serve `dist/` as a static site
 
-Without Postgres the HTTP server still listens and serves the marketing SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
+Without Postgres the HTTP server still listens and serves the SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
 
-Stripe webhook URL: `https://<railway>/stripe/webhook`.
+Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial payments create a subscription; add-on payments with `metadata.offerSlug` write `purchases`.
 
 ## Routes
 
@@ -72,8 +82,11 @@ Stripe webhook URL: `https://<railway>/stripe/webhook`.
 | `/` | Marketing home |
 | `/quiz/28-day-ai-challenge` | 28-day quiz funnel |
 | `/quiz/claude-ai-certification` | Claude quiz funnel |
-| `/checkout/setup` | LMS account setup after trial (not the funnel stub) |
+| `/checkout/setup` | LMS account setup after trial (OTP / card) |
 | `/checkout?product=&funnel=` | Expired-offer $1 checkout |
-| `/login`, `/account/*`, `/app/*`, `/courses/*` | LMS SPA |
+| `/login`, `/account/*`, `/app/*` | LMS |
+| `/dashboard` | Alias → `/app/dashboard` |
+| `/courses/:slug` | Redirect → `/app/courses/:slug` |
 | `/api/health` | Health + database |
 | `/api/me`, `/api/progress`, `/api/wise/*` | LMS session, XP, Wise |
+| `/api/leads` | Funnel leads |

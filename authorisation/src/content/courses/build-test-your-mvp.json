@@ -1,0 +1,1892 @@
+{
+  "id": "build-test-your-mvp",
+  "title": "Build & Test Your MVP",
+  "subtitle": "Go from idea to working product using lean methodology — build the smallest thing that tests your biggest assumption, then iterate based on real evidence.",
+  "totalDays": 21,
+  "totalXp": 450,
+  "modules": [
+    {
+      "id": "mvp-module-1",
+      "moduleNumber": 1,
+      "title": "MVP Fundamentals",
+      "subtitle": "Understand what an MVP really is, learn the Build-Measure-Learn loop, explore different MVP types, and identify the riskiest assumptions to test first.",
+      "days": "Lessons 1–7",
+      "skill": "Choose the right MVP type for your idea and define clear success metrics",
+      "lessonIds": [
+        "mvp-1-what-is-an-mvp",
+        "mvp-2-build-measure-learn",
+        "mvp-3-types-of-mvps",
+        "mvp-4-choosing-right-mvp",
+        "mvp-5-riskiest-assumption",
+        "mvp-6-success-metrics",
+        "mvp-7-one-feature-rule"
+      ]
+    },
+    {
+      "id": "mvp-module-2",
+      "moduleNumber": 2,
+      "title": "Building & Launching",
+      "subtitle": "Use no-code tools, build landing pages, run concierge experiments, pre-sell your idea, and get your first real users through the door.",
+      "days": "Lessons 8–14",
+      "skill": "Build a functional MVP and acquire your first 10 paying users",
+      "lessonIds": [
+        "mvp-8-no-code-tools",
+        "mvp-9-landing-page-mvp",
+        "mvp-10-concierge-mvp",
+        "mvp-11-pre-selling",
+        "mvp-12-experiment-design",
+        "mvp-13-first-10-users",
+        "mvp-14-launch-day"
+      ]
+    },
+    {
+      "id": "mvp-module-3",
+      "moduleNumber": 3,
+      "title": "Testing, Learning & Iterating",
+      "subtitle": "Collect meaningful feedback, distinguish vanity from actionable metrics, decide when to pivot, and navigate from MVP to product-market fit.",
+      "days": "Lessons 15–21",
+      "skill": "Interpret user data to make pivot-or-persevere decisions confidently",
+      "lessonIds": [
+        "mvp-15-collecting-feedback",
+        "mvp-16-vanity-vs-actionable",
+        "mvp-17-pivot-or-persevere",
+        "mvp-18-rapid-ab-tests",
+        "mvp-19-when-to-add-features",
+        "mvp-20-mvp-to-pmf",
+        "mvp-21-post-mvp-roadmap"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "mvp-1-what-is-an-mvp",
+      "dayNumber": 1,
+      "moduleId": "mvp-module-1",
+      "title": "What Is an MVP (and What It Isn't)",
+      "subtitle": "Strip away the myths. An MVP isn't a bad product — it's the fastest way to learn whether your idea actually solves a real problem.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The $50,000 App Nobody Wanted",
+          "body": "A founder spent 8 months and $50,000 building a \"perfect\" app. Launch day came. Twelve downloads. Three uninstalls within a week. The problem? He never checked whether anyone actually needed it. An MVP would have answered that question in two weeks for $0. Eric Ries defines an MVP as \"the version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.\" It's not about building less — it's about learning faster."
+        },
+        {
+          "type": "content",
+          "headline": "What an MVP Actually Is",
+          "body": "An MVP is an experiment, not a product launch. Its purpose is to test your riskiest assumption with real people as quickly as possible. It's the smallest thing you can build (or fake) that generates real evidence about whether your idea works.",
+          "bullets": [
+            "It's a learning vehicle, not a feature-light product",
+            "The goal is validated learning, not revenue (yet)",
+            "It should answer ONE specific question about your idea",
+            "Eric Ries: \"If we do not know who the customer is, we do not know what quality is\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What an MVP Is NOT",
+          "body": "The biggest misconception: an MVP is a crappy version of your final product. Wrong. It's a completely different thing with a completely different purpose.",
+          "bullets": [
+            "NOT a beta version with fewer features",
+            "NOT an excuse to ship broken software",
+            "NOT your final product with things missing",
+            "NOT something you build once and forget"
+          ],
+          "stat": "74%",
+          "statLabel": "of startup failures cite \"no market need\" — an MVP catches this early"
+        },
+        {
+          "type": "content",
+          "headline": "The Learning Mindset",
+          "body": "Traditional product development asks: \"Can we build this?\" MVP thinking asks: \"Should we build this?\" The shift is from execution risk to market risk. Most products fail not because they can't be built, but because nobody wants them. Your MVP exists to de-risk the \"want\" before you invest in the \"build.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 1 Action",
+          "body": "Write down your business idea in one sentence. Now ask yourself: \"What is the ONE thing that must be true for this to work?\" Maybe it's that people have this problem. Maybe it's that they'd pay for a solution. Maybe it's that they'd switch from their current solution. Write that assumption down. Tomorrow, we'll start building the machine to test it."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Eric Ries, what is the primary purpose of an MVP?",
+          "options": [
+            "To collect the maximum validated learning with the least effort",
+            "To launch a basic version of the final product",
+            "To generate early revenue from customers",
+            "To impress investors with a working prototype"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ries defines an MVP as the version that \"allows a team to collect the maximum amount of validated learning about customers with the least effort\" — learning is the goal, not revenue or polish."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is NOT what an MVP should be?",
+          "options": [
+            "A feature-light version of your final product",
+            "An experiment to test your riskiest assumption",
+            "The smallest thing that generates real evidence",
+            "A learning vehicle designed to answer one question"
+          ],
+          "correctIndex": 0,
+          "explanation": "An MVP is not a stripped-down version of your final product. It's a purpose-built experiment designed to test whether your core assumption is valid."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the most common reason startups fail?",
+          "options": [
+            "No market need for their product",
+            "Running out of cash",
+            "Poor team dynamics",
+            "Technical failures"
+          ],
+          "correctIndex": 0,
+          "explanation": "74% of startup failures cite \"no market need\" as a factor. This is exactly what an MVP is designed to test before you invest heavily."
+        }
+      ]
+    },
+    {
+      "id": "mvp-2-build-measure-learn",
+      "dayNumber": 2,
+      "moduleId": "mvp-module-1",
+      "title": "The Build-Measure-Learn Loop",
+      "subtitle": "The engine of lean innovation. Build something small, measure what happens, learn from the data — then do it again, faster.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Toyota's Secret: 50 Improvements a Day",
+          "body": "Toyota doesn't make cars perfectly the first time. They make them better every single day — averaging 50 small improvements daily across their factories. Eric Ries borrowed this philosophy for startups: instead of one big launch, run continuous cycles of Build → Measure → Learn. Each cycle makes you smarter. Each cycle reduces risk. Dropbox used a single 3-minute video as their first \"build.\" The measurement? 70,000 email sign-ups overnight. The learning? People desperately wanted this product."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Phases",
+          "body": "The loop has three distinct phases, and most founders skip the last two. Building feels productive. Measuring and learning feel slow. But without them, you're just guessing with extra steps.",
+          "bullets": [
+            "BUILD — Create the smallest possible thing that tests your assumption",
+            "MEASURE — Collect data on how real people interact with it",
+            "LEARN — Decide what the data means: pivot, persevere, or iterate?",
+            "Then repeat — each loop should be faster than the last"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Plan Backwards, Execute Forwards",
+          "body": "Here's the counterintuitive part: you plan the loop in reverse. Start with what you need to LEARN, then figure out what to MEASURE to learn it, then decide what to BUILD to get that measurement. Most people start with \"what can I build?\" Lean founders start with \"what do I need to learn?\"",
+          "stat": "10×",
+          "statLabel": "faster iteration when you plan backwards — learning drives building"
+        },
+        {
+          "type": "content",
+          "headline": "Speed Is the Competitive Advantage",
+          "body": "The startup that learns fastest wins. Not the one with the most features, the biggest team, or the most funding. If you can run a Build-Measure-Learn loop in 1 week while your competitor takes 3 months, you'll have 12 data points to their 1 by the end of the quarter. That compounds. Ries calls this \"the speed of the loop\" — and it's the single most important metric for early-stage startups."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 2 Action",
+          "body": "Take the assumption you wrote yesterday. Now plan a loop: What's the smallest thing you could BUILD to test it? (A survey? A landing page? A conversation?) What would you MEASURE? (Sign-ups? Replies? Willingness to pay?) What would you LEARN from different outcomes? Write: \"If [metric] is above [threshold], I'll know [assumption] is likely true.\" You now have your first experiment design."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the correct order of the lean startup loop?",
+          "options": [
+            "Build → Measure → Learn",
+            "Learn → Build → Measure",
+            "Measure → Learn → Build",
+            "Plan → Build → Launch"
+          ],
+          "correctIndex": 0,
+          "explanation": "The loop executes as Build → Measure → Learn, though you should PLAN it in reverse (Learn → Measure → Build) to stay focused on what matters."
+        },
+        {
+          "type": "mcq",
+          "question": "According to Ries, what should you start with when planning a loop?",
+          "options": [
+            "What you need to learn",
+            "What you can build quickly",
+            "What metrics are easy to track",
+            "What competitors are doing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plan backwards: start with what you need to LEARN, then determine what to MEASURE, then decide what to BUILD. This keeps the loop focused and efficient."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is loop speed considered the most important early-stage metric?",
+          "options": [
+            "The startup that learns fastest wins — more loops means more validated knowledge",
+            "Faster shipping impresses investors and generates press coverage",
+            "Quick releases generate more revenue than slow ones",
+            "Users prefer products that update frequently"
+          ],
+          "correctIndex": 0,
+          "explanation": "Speed of learning is the competitive advantage. More loops = more data points = better decisions. A team running weekly loops learns 12× more per quarter than one running quarterly cycles."
+        }
+      ]
+    },
+    {
+      "id": "mvp-3-types-of-mvps",
+      "dayNumber": 3,
+      "moduleId": "mvp-module-1",
+      "title": "Types of MVPs: From Concierge to Wizard of Oz",
+      "subtitle": "Not every MVP needs code. Discover the spectrum from manual service to fake-it-till-you-make-it prototypes.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Zappos Started with a Camera and a Shoe Store",
+          "body": "Nick Swinmurn didn't build an e-commerce platform. He walked into local shoe stores, photographed their inventory, posted the pictures online, and when someone ordered, he bought the shoes at full price and shipped them himself. No warehouse. No inventory system. No logistics. Just a guy with a camera testing whether people would buy shoes online. That \"MVP\" validated a $1.2 billion idea. Your MVP can be just as scrappy."
+        },
+        {
+          "type": "content",
+          "headline": "The MVP Spectrum",
+          "body": "MVPs range from zero-tech to functional product. The key is choosing the type that tests your specific assumption with minimum effort. Here are the main types, from least to most technical:",
+          "bullets": [
+            "Smoke Test — A landing page or ad that gauges interest before anything exists",
+            "Concierge — You deliver the service manually to each customer, one by one",
+            "Wizard of Oz — It looks automated to the user, but you're doing everything behind the curtain",
+            "Piecemeal — Stitching together existing tools (Typeform + Zapier + Stripe) to simulate a product"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "More MVP Types",
+          "body": "Beyond the basics, there are creative formats for specific situations:",
+          "bullets": [
+            "Explainer Video — Dropbox's 3-minute demo got 70,000 sign-ups before the product existed",
+            "Crowdfunding — Pebble raised $10M on Kickstarter to validate demand for smartwatches",
+            "Single-Feature — Build one thing brilliantly (Twitter started as just 140-character posts)",
+            "Pre-order — Take money before you build — the strongest signal of real demand"
+          ],
+          "stat": "8",
+          "statLabel": "proven MVP types — at least one fits your idea, budget, and timeline"
+        },
+        {
+          "type": "content",
+          "headline": "The Zero-Code Rule",
+          "body": "Before writing any code, ask: \"Can I test this assumption without technology?\" Food on the Table's founder went to grocery stores, personally asked shoppers about their meal planning struggles, then hand-made meal plans for each family. Only after 10 paying customers did he build software. If your MVP requires months of development, you're not building an MVP — you're building a product based on untested assumptions."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 3 Action",
+          "body": "Look at your idea and your riskiest assumption from Day 1. Now match it to an MVP type. If your assumption is \"people want this\" → try a Smoke Test (landing page). If it's \"people will pay for this\" → try a Pre-order or Concierge. If it's \"this solution actually works\" → try a Wizard of Oz. Write down which type you'd use and why. The cheaper and faster it is, the better."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What type of MVP did Zappos use to validate online shoe sales?",
+          "options": [
+            "Concierge — manually buying and shipping shoes from local stores",
+            "Wizard of Oz — automated-looking site with manual fulfilment",
+            "Smoke Test — a landing page measuring interest",
+            "Crowdfunding — pre-selling shoes before stocking them"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nick Swinmurn used a Concierge MVP: he personally photographed shoes, posted them online, and fulfilled orders by buying from stores at retail price. No inventory, no warehouse, no tech."
+        },
+        {
+          "type": "mcq",
+          "question": "What distinguishes a Wizard of Oz MVP from a Concierge MVP?",
+          "options": [
+            "The user thinks it's automated, but a human is doing the work behind the scenes",
+            "It requires no technology at all",
+            "It only works for software products",
+            "The user knows a human is performing the service manually"
+          ],
+          "correctIndex": 0,
+          "explanation": "In a Wizard of Oz MVP, the user experiences what feels like an automated product, but behind the curtain a human is manually performing the operations. In a Concierge MVP, the user knows they're getting personal, manual service."
+        },
+        {
+          "type": "mcq",
+          "question": "Before writing code for your MVP, what question should you ask first?",
+          "options": [
+            "Can I test this assumption without technology?",
+            "What programming language should I use?",
+            "How many features should the first version have?",
+            "Which investors would fund this prototype?"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Zero-Code Rule: always ask if you can test your assumption without building technology. The fastest, cheapest MVPs often use no code at all — just direct human interaction."
+        }
+      ]
+    },
+    {
+      "id": "mvp-4-choosing-right-mvp",
+      "dayNumber": 4,
+      "moduleId": "mvp-module-1",
+      "title": "Choosing the Right MVP for Your Idea",
+      "subtitle": "Match your MVP type to your assumptions, resources, and timeline. The wrong MVP wastes time. The right one gives you clarity in days.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Buffer's Two-Page MVP",
+          "body": "Joel Gascoigne had an idea for a social media scheduling tool. He didn't build it. He created a two-page website: page one explained the concept, page two asked for your email if interested. 200 people signed up in a few days. Then he added a pricing page between the two. People still clicked through. That told him people would PAY — all without writing a single line of product code. He matched the perfect MVP type to his specific question: \"Would people pay for this?\" A landing page answered it in 48 hours."
+        },
+        {
+          "type": "content",
+          "headline": "The Decision Framework",
+          "body": "Choosing your MVP type comes down to three factors. Get these right and you'll have clarity in days, not months:",
+          "bullets": [
+            "What assumption are you testing? (Desirability, feasibility, or viability?)",
+            "What resources do you have? (Time, money, technical skills, access to users)",
+            "How much evidence do you need? (Just directional or statistically significant?)",
+            "Rule of thumb: if you can't ship it in under 2 weeks, it's too complex"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Match Assumption to MVP Type",
+          "body": "Different assumptions require different experiments. Here's the matching guide:",
+          "bullets": [
+            "\"Do people want this?\" → Smoke Test (landing page, fake door, ad test)",
+            "\"Will people pay?\" → Pre-order page, crowdfunding, or pricing page test",
+            "\"Can I deliver this?\" → Concierge (do it manually for 5 people)",
+            "\"Does this solution work?\" → Wizard of Oz or single-feature prototype"
+          ],
+          "stat": "2 weeks",
+          "statLabel": "maximum time to ship any MVP — if it takes longer, scope it down"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Fastest Path to Data\" Test",
+          "body": "When you're torn between MVP types, ask: \"Which one gives me real data from real people in the shortest time?\" A landing page takes 2 hours. A concierge takes a weekend. A coded prototype takes 2 weeks. Work backwards from your deadline. If you need an answer by Friday, your MVP must be live by Wednesday. Ash Maurya's rule: \"The biggest risk is building something nobody wants. Reduce that risk first, fastest.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 4 Action",
+          "body": "Fill in this decision template for your idea:\n\nMy riskiest assumption is: ___\nThis is a [desirability / viability / feasibility] question.\nI have [X hours/days] and [$X budget].\nThe best MVP type for this is: ___\nI can have it live by: ___\nI'll know it worked if: ___\n\nIf you can't fill this in clearly, go back to your assumption — it might not be specific enough yet."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What did Joel Gascoigne's Buffer MVP test with its pricing page?",
+          "options": [
+            "Whether people would pay for the product, not just express interest",
+            "Which pricing tier was most popular",
+            "How many features to include in v1",
+            "Whether the product could handle high traffic"
+          ],
+          "correctIndex": 0,
+          "explanation": "By inserting a pricing page between the explainer and sign-up, Gascoigne tested viability (willingness to pay) — not just desirability (interest). People clicking past the pricing page proved they'd open their wallets."
+        },
+        {
+          "type": "mcq",
+          "question": "If your riskiest assumption is \"people want this solution,\" which MVP type fits best?",
+          "options": [
+            "Smoke Test — a landing page or ad that measures interest",
+            "Concierge — delivering the service manually",
+            "Single-feature prototype — building the core functionality",
+            "Crowdfunding — asking for pre-orders"
+          ],
+          "correctIndex": 0,
+          "explanation": "A desirability question (\"do people want this?\") is best answered by a Smoke Test — a landing page, fake door, or ad that measures interest before you build anything. It's the fastest, cheapest validation."
+        },
+        {
+          "type": "mcq",
+          "question": "According to the \"Fastest Path to Data\" test, what should drive your MVP choice?",
+          "options": [
+            "Which option gives you real data from real people in the shortest time",
+            "Which option looks most professional to potential investors",
+            "Which option uses the most advanced technology available",
+            "Which option your team is most excited to build"
+          ],
+          "correctIndex": 0,
+          "explanation": "When torn between MVP types, choose the one that delivers real data fastest. Speed of learning trumps polish, technology, or team preference every time."
+        }
+      ]
+    },
+    {
+      "id": "mvp-5-riskiest-assumption",
+      "dayNumber": 5,
+      "moduleId": "mvp-module-1",
+      "title": "Defining Your Riskiest Assumption",
+      "subtitle": "Every startup is a bundle of assumptions. Find the one that, if wrong, kills everything — then test it before anything else.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Webvan Bet $1 Billion on the Wrong Assumption",
+          "body": "Webvan assumed that if they built massive automated warehouses across the US, people would order groceries online. They raised $800M, built infrastructure in 26 cities, and went bankrupt in 2001. Their fatal assumption wasn't \"can we build the logistics?\" — it was \"will enough people change their grocery shopping habit to justify the infrastructure cost?\" They tested the easy assumption (can we build it?) while ignoring the deadly one (will anyone use it at scale?). Every startup carries dozens of assumptions. One of them is a killer. Find it first."
+        },
+        {
+          "type": "content",
+          "headline": "The Assumption Stack",
+          "body": "Your business idea rests on a stack of assumptions. Ash Maurya groups them into three categories, each carrying different levels of risk:",
+          "bullets": [
+            "Desirability — Do people have this problem? Do they care enough to seek a solution?",
+            "Viability — Will they pay enough for your solution to sustain a business?",
+            "Feasibility — Can you actually build and deliver this solution?",
+            "Most founders obsess over feasibility while desirability kills them quietly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding Your \"Leap of Faith\"",
+          "body": "Eric Ries calls the riskiest assumption your \"leap of faith.\" It's the one thing that, if proven wrong, makes everything else irrelevant. To find it, ask: \"Which assumption, if false, would mean this entire idea cannot work — regardless of how well we execute everything else?\"",
+          "stat": "1",
+          "statLabel": "killer assumption hides in every startup — find it before it finds you"
+        },
+        {
+          "type": "content",
+          "headline": "The Risk Prioritisation Matrix",
+          "body": "List all your assumptions, then score each on two dimensions: (1) How critical is it? If wrong, does the whole thing collapse or just need adjustment? (2) How much evidence do you already have? Gut feeling, anecdotal, or validated data? The assumptions that are both highly critical AND have the least evidence — those go to the top of your testing queue. Everything else can wait."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 5 Action",
+          "body": "List 5–8 assumptions behind your business idea. They might include: \"People have this problem,\" \"They'd pay £X/month,\" \"They can't solve it with existing tools,\" \"I can acquire them through [channel],\" \"They'll use it [frequency].\" Now rank them: which one, if wrong, kills everything? Circle it. That's what your MVP must test first. Not the easiest assumption — the most dangerous one."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What was Webvan's fatal mistake?",
+          "options": [
+            "Testing feasibility (can we build it?) while ignoring desirability at scale",
+            "Not raising enough funding for expansion",
+            "Launching in too few cities at once",
+            "Using outdated warehouse technology"
+          ],
+          "correctIndex": 0,
+          "explanation": "Webvan proved they COULD build automated grocery delivery but never validated that enough people would CHANGE their shopping habits to justify the massive infrastructure cost. They tested the wrong assumption first."
+        },
+        {
+          "type": "mcq",
+          "question": "What does Eric Ries call the riskiest assumption in a startup?",
+          "options": [
+            "The \"leap of faith\" assumption",
+            "The \"minimum viable\" hypothesis",
+            "The \"growth engine\" assumption",
+            "The \"pivot trigger\" hypothesis"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ries calls it the \"leap of faith\" — the assumption that, if proven wrong, makes the entire venture irrelevant regardless of execution quality."
+        },
+        {
+          "type": "mcq",
+          "question": "In the risk prioritisation matrix, which assumptions should you test first?",
+          "options": [
+            "Highly critical assumptions with the least existing evidence",
+            "Easy-to-test assumptions you can validate quickly",
+            "Assumptions your competitors have already proven",
+            "Technical assumptions about your product's architecture"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prioritise assumptions that are both highly critical (whole thing collapses if wrong) AND have the least evidence supporting them. These represent maximum uncertainty × maximum impact."
+        }
+      ]
+    },
+    {
+      "id": "mvp-6-success-metrics",
+      "dayNumber": 6,
+      "moduleId": "mvp-module-1",
+      "title": "Setting Success Metrics Before You Build",
+      "subtitle": "If you don't define what success looks like before you build, you'll find a way to declare victory no matter what happens.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Confirmation Bias Trap",
+          "body": "A founder launches a landing page MVP. 47 people visit. 3 sign up. She tells herself: \"3 sign-ups! People want this!\" But wait — is a 6.4% conversion rate good or bad? Without a pre-defined success threshold, our brains find a way to interpret ANY result as positive. Psychologists call this confirmation bias. Scientists solve it by setting their success criteria before running the experiment. Your MVP deserves the same rigour. Define what \"passing\" looks like before you press launch."
+        },
+        {
+          "type": "content",
+          "headline": "The Pass/Fail Threshold",
+          "body": "Before building your MVP, write a single sentence: \"This experiment succeeds if [specific metric] reaches [specific number] within [specific timeframe].\" No wiggle room. No \"it depends.\"",
+          "bullets": [
+            "Be specific: \"20 sign-ups in 7 days\" not \"good traction\"",
+            "Be honest: set a threshold that would genuinely change your mind",
+            "Be time-bound: open-ended experiments never end",
+            "Write it down and share it — accountability prevents moving goalposts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Choosing the Right Metric",
+          "body": "Your metric must directly measure your riskiest assumption. If you're testing desirability, measure sign-ups or engagement. If testing viability, measure willingness to pay. Match the metric to the question:",
+          "bullets": [
+            "\"Do people want this?\" → Sign-up rate, waitlist joins, email captures",
+            "\"Will people pay?\" → Pre-orders, credit card submissions, deposit amounts",
+            "\"Does the solution work?\" → Task completion rate, satisfaction score, repeat usage",
+            "\"Can I reach them?\" → Cost per acquisition, click-through rate, response rate"
+          ],
+          "stat": "3",
+          "statLabel": "components of a good metric: specific number + timeframe + measurement method"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Minimum Success Criteria\" Method",
+          "body": "Ash Maurya recommends setting three tiers: (1) Minimum success — the bare minimum that justifies continuing (e.g., 5% conversion). (2) Expected success — what you'd predict based on research (e.g., 10%). (3) Outperformance — a signal to accelerate and invest more (e.g., 20%+). This framework prevents binary thinking and helps you calibrate your response to different outcomes."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 6 Action",
+          "body": "For the MVP you're planning, fill in:\n\nMy experiment succeeds if: ___ [metric] reaches ___ [number] within ___ [timeframe].\n\nMinimum success (keep going): ___\nExpected success (on track): ___\nOutperformance (double down): ___\n\nNow ask yourself: if you hit the minimum, would you genuinely feel confident proceeding? If not, your threshold is too low. Raise it until you'd bet your own money on the outcome."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why must success metrics be defined BEFORE launching an MVP?",
+          "options": [
+            "To prevent confirmation bias from making any result look positive",
+            "To impress investors with your analytical rigour",
+            "To calculate your return on investment accurately",
+            "To compare yourself against competitors' benchmarks"
+          ],
+          "correctIndex": 0,
+          "explanation": "Without pre-defined thresholds, confirmation bias causes founders to interpret ambiguous results as validation. Setting criteria before the experiment ensures honest evaluation of outcomes."
+        },
+        {
+          "type": "mcq",
+          "question": "Which metric best tests the assumption \"people will pay for this\"?",
+          "options": [
+            "Pre-orders or credit card submissions",
+            "Page views and time on site",
+            "Social media shares and likes",
+            "Email open rates"
+          ],
+          "correctIndex": 0,
+          "explanation": "Willingness to pay is best measured by actual payment behaviour — pre-orders, credit card submissions, or deposits. Intent signals (likes, views) don't prove someone will open their wallet."
+        },
+        {
+          "type": "mcq",
+          "question": "What are the three tiers in Ash Maurya's minimum success criteria method?",
+          "options": [
+            "Minimum success, expected success, and outperformance",
+            "Awareness, engagement, and conversion",
+            "Build, measure, and learn",
+            "Desirability, viability, and feasibility"
+          ],
+          "correctIndex": 0,
+          "explanation": "Maurya recommends three tiers: minimum (bare minimum to continue), expected (predicted outcome), and outperformance (signal to accelerate). This prevents binary pass/fail thinking."
+        }
+      ]
+    },
+    {
+      "id": "mvp-7-one-feature-rule",
+      "dayNumber": 7,
+      "moduleId": "mvp-module-1",
+      "title": "The One-Feature Rule: Ruthless Prioritisation",
+      "subtitle": "Great MVPs do one thing brilliantly. Kill your darlings, ship the core, and let users tell you what to add next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Instagram Started with 1 Feature: Filters",
+          "body": "The original Instagram (called \"Burbn\") had check-ins, plans, photo sharing, and filters. It was a cluttered mess with 1,000 beta users going nowhere. Kevin Systrom looked at the data and noticed one behaviour dominated everything else: people loved applying filters to photos. He killed every other feature. Instagram launched with one thing — beautiful photo filters with one-tap sharing — and hit 25,000 users on day one. Within 18 months, Facebook bought it for $1 billion. The magic wasn't adding features. It was removing them."
+        },
+        {
+          "type": "content",
+          "headline": "Why One Feature Wins",
+          "body": "A single-feature MVP creates clarity for everyone: you know exactly what to build, users know exactly what they're getting, and your data tells you exactly whether it works.",
+          "bullets": [
+            "Focus forces quality — one feature done brilliantly beats ten done adequately",
+            "Users can give clear feedback on one thing; they get confused by many",
+            "One feature ships in days; ten features ship in months",
+            "Marty Cagan: \"Fall in love with the problem, not your solution\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Only This\" Exercise",
+          "body": "Imagine your product can only do ONE thing. Not \"the first version has one feature\" — literally, it will ONLY ever do this one thing. What would you choose? That's your MVP core. Everything else is a hypothesis about what users might want later. Let them tell you, don't guess.",
+          "stat": "1",
+          "statLabel": "core action your product must nail — if this doesn't work, nothing else matters"
+        },
+        {
+          "type": "content",
+          "headline": "Killing Your Darlings",
+          "body": "Every founder has a feature they're emotionally attached to. The clever onboarding flow. The gamification system. The social sharing. The analytics dashboard. These feel essential because YOU thought of them. But users don't care about your cleverness — they care about their problem being solved. Apply the \"would anyone use this product WITHOUT this feature?\" test. If yes, cut it. Ship without it. Add it back only if users literally ask for it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 7 Action",
+          "body": "List every feature you've imagined for your product. Now cross out everything except ONE. Use these filters:\n\n1. Which feature directly solves the core problem?\n2. Which could you ship this week?\n3. Which would someone tell a friend about?\n\nThe intersection of these three is your MVP feature. Write it in a single sentence: \"My MVP lets people [do X] so they can [achieve Y].\" If you need more than one sentence, you haven't cut enough."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What key insight did Instagram's founders gain from their \"Burbn\" beta?",
+          "options": [
+            "One behaviour (photo filters) dominated all others — so they cut everything else",
+            "Users wanted more social features like check-ins and plans",
+            "The app needed a complete redesign from scratch",
+            "They needed to add more features to compete with Facebook"
+          ],
+          "correctIndex": 0,
+          "explanation": "Data showed one behaviour dominated: applying filters to photos. By cutting every other feature and focusing solely on this, they achieved explosive growth — proving that subtraction beats addition."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the \"Only This\" exercise?",
+          "options": [
+            "Imagining your product can only ever do ONE thing — then building that",
+            "Launching with one feature and adding more each week",
+            "Asking users to pick their favourite feature from a list",
+            "Building the cheapest possible version of every planned feature"
+          ],
+          "correctIndex": 0,
+          "explanation": "The \"Only This\" exercise forces you to imagine your product will ONLY ever do one thing. That constraint reveals your true core — the one action that must work perfectly for the product to exist."
+        },
+        {
+          "type": "mcq",
+          "question": "How should you decide whether to include a feature in your MVP?",
+          "options": [
+            "Ask \"would anyone use this product WITHOUT this feature?\" — if yes, cut it",
+            "Include it if you can build it within your timeline",
+            "Add it if competitors have something similar",
+            "Keep it if your team is excited about building it"
+          ],
+          "correctIndex": 0,
+          "explanation": "The litmus test: if people would still use your product without a feature, that feature isn't core. Cut it. Only include what's absolutely essential to solving the core problem."
+        }
+      ]
+    },
+    {
+      "id": "mvp-8-no-code-tools",
+      "dayNumber": 8,
+      "moduleId": "mvp-module-2",
+      "title": "No-Code & Low-Code MVP Tools",
+      "subtitle": "You don't need a developer to build your first version. Today's tools let you ship a real product in hours, not months.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A $1M Business Built on a Spreadsheet",
+          "body": "Pieter Levels built Nomad List — a community and data platform for digital nomads — using nothing but a spreadsheet shared publicly on the internet. No backend. No database. No developer. Just Google Sheets and a free website template. It now generates over $1M per year in revenue. The lesson? Your first version doesn't need custom code. It needs to exist, be usable, and teach you something. The tools available today let non-technical founders ship products that would have required a full engineering team five years ago."
+        },
+        {
+          "type": "content",
+          "headline": "The No-Code Stack",
+          "body": "Modern no-code tools cover every layer of a product. You can build surprisingly sophisticated MVPs by combining a few:",
+          "bullets": [
+            "Landing pages — Carrd, Typedream, Framer (live in hours, free–$19/mo)",
+            "Forms & data — Typeform, Tally, Airtable (capture and organise user input)",
+            "Automation — Zapier, Make, n8n (connect tools without writing code)",
+            "Payments — Stripe, Gumroad, Lemon Squeezy (take money from day one)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Low-Code for More Complex MVPs",
+          "body": "When no-code hits its limits, low-code tools give you more power without requiring a full dev team:",
+          "bullets": [
+            "Web apps — Bubble, Softr, Glide (build full apps with drag-and-drop logic)",
+            "Mobile apps — Adalo, FlutterFlow (native-feeling apps without Swift/Kotlin)",
+            "Databases — Airtable, Notion databases, Supabase (structured data with APIs)",
+            "AI integration — Voiceflow, Relevance AI (add AI capabilities without ML knowledge)"
+          ],
+          "stat": "80%",
+          "statLabel": "of MVP functionality can be replicated with off-the-shelf no-code tools"
+        },
+        {
+          "type": "content",
+          "headline": "When to Upgrade from No-Code",
+          "body": "No-code is perfect for MVPs but has natural limits. Plan to move to custom code when: (1) You've validated demand and are ready to scale. (2) Performance matters — no-code tools can be slow under load. (3) You need custom logic that tools can't handle. (4) You're spending more time fighting the tool than building the product. The goal: prove the idea works FIRST, then invest in building it properly."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 8 Action",
+          "body": "Map your MVP to a no-code stack. Write down:\n\n- What the user sees (frontend): ___ [tool]\n- Where data lives (backend): ___ [tool]\n- How money flows (payments): ___ [tool]\n- What connects them (automation): ___ [tool]\n\nChallenge: can you have something live by the end of this week using ONLY free tiers? If yes, you have no excuse not to ship. The best MVP is one that exists."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What did Pieter Levels use to build the first version of Nomad List?",
+          "options": [
+            "A publicly shared Google Spreadsheet and a free website template",
+            "A custom Ruby on Rails application",
+            "A Bubble no-code web app",
+            "A WordPress site with premium plugins"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nomad List started as a public spreadsheet — no backend, no database, no developer. It proved that the simplest possible tool can validate a million-dollar idea."
+        },
+        {
+          "type": "mcq",
+          "question": "When should you move from no-code to custom development?",
+          "options": [
+            "After you've validated demand and need to scale performance",
+            "Before launching your MVP to ensure quality",
+            "As soon as you have your first paying customer",
+            "When investors require a technical co-founder"
+          ],
+          "correctIndex": 0,
+          "explanation": "No-code is perfect for validation. Upgrade to custom code when demand is proven and you need scale, performance, or custom logic that tools can't handle."
+        },
+        {
+          "type": "mcq",
+          "question": "What percentage of MVP functionality can typically be built with no-code tools?",
+          "options": [
+            "Around 80%",
+            "Around 30%",
+            "Around 50%",
+            "100% — no-code can do everything"
+          ],
+          "correctIndex": 0,
+          "explanation": "Approximately 80% of typical MVP functionality can be replicated with off-the-shelf no-code tools. The remaining 20% usually involves complex custom logic or scale requirements."
+        }
+      ]
+    },
+    {
+      "id": "mvp-9-landing-page-mvp",
+      "dayNumber": 9,
+      "moduleId": "mvp-module-2",
+      "title": "Building Your Landing Page MVP",
+      "subtitle": "A single page with a clear offer and a sign-up button can validate demand before you write a single line of code.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Dropbox Validated with a 3-Minute Video",
+          "body": "Drew Houston couldn't easily demo Dropbox — it required installing software and waiting for files to sync. So he made a 3-minute screencast showing how it would work and posted it with an email sign-up form. Overnight, the waitlist jumped from 5,000 to 75,000 people. He hadn't built the consumer product yet. A landing page with a video and a form proved that hundreds of thousands of people desperately wanted seamless file syncing. Your landing page MVP works the same way: describe the value, show the vision, capture intent."
+        },
+        {
+          "type": "content",
+          "headline": "Anatomy of a Landing Page MVP",
+          "body": "A converting landing page MVP needs exactly five elements — nothing more, nothing less:",
+          "bullets": [
+            "Headline — One sentence that describes the benefit (not the feature)",
+            "Sub-headline — Who it's for and what problem it solves",
+            "Social proof or credibility — Why should they trust you? (even \"from the makers of X\" works)",
+            "Call to action — One clear action: sign up, join waitlist, pre-order",
+            "Optional: a 60-second explainer video or 3 screenshots showing the concept"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Measure",
+          "body": "Your landing page gives you two critical data points that reveal whether people actually want what you're building:",
+          "bullets": [
+            "Visitor-to-signup rate — Above 10% is strong signal; below 3% suggests weak value prop",
+            "Traffic source quality — Where do your best converters come from?",
+            "Scroll depth — Do people read the full page or bounce immediately?",
+            "CTA click rate — Are people even trying to sign up?"
+          ],
+          "stat": "10%",
+          "statLabel": "conversion rate = strong demand signal for a landing page MVP"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Fake Door\" Variation",
+          "body": "A powerful variant: create a landing page for a feature that doesn't exist yet. Put a button that says \"Start Free Trial\" or \"Get Early Access.\" When clicked, show a message: \"Thanks! We're building this now. Leave your email and we'll notify you when it's ready.\" This is called a \"fake door test.\" It measures actual INTENT (clicking a button) rather than passive interest (reading a page). Companies like Amazon and Google use this technique to test new features before building them."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 9 Action",
+          "body": "Build your landing page MVP today. Use Carrd ($0), Typedream, or even a Google Doc shared publicly. Include:\n\n1. Headline: \"We help [audience] achieve [outcome]\"\n2. One paragraph explaining the problem you solve\n3. An email capture form (use Tally or Typeform embed)\n4. Share the link with 10 people in your target audience\n\nSet your metric: \"If X people sign up out of Y visitors within 48 hours, demand is validated.\" Then start driving traffic — post it in relevant communities, send it to friends, or run a £10 ad."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How many sign-ups did Dropbox's landing page MVP generate overnight?",
+          "options": [
+            "From 5,000 to 75,000 — a 15× increase with just a video and email form",
+            "About 500 from a targeted email campaign",
+            "Over 1 million from a viral social media post",
+            "Around 10,000 from paid advertising"
+          ],
+          "correctIndex": 0,
+          "explanation": "Drew Houston's 3-minute video and email sign-up page took the waitlist from 5,000 to 75,000 overnight — proving massive demand before the consumer product was even built."
+        },
+        {
+          "type": "mcq",
+          "question": "What visitor-to-signup rate indicates strong demand on a landing page MVP?",
+          "options": [
+            "Above 10%",
+            "Above 1%",
+            "Above 50%",
+            "Above 25%"
+          ],
+          "correctIndex": 0,
+          "explanation": "A conversion rate above 10% is a strong demand signal for a landing page MVP. Below 3% suggests a weak value proposition that needs reworking."
+        },
+        {
+          "type": "mcq",
+          "question": "What is a \"fake door test\"?",
+          "options": [
+            "A button for a non-existent feature that measures how many people try to use it",
+            "A secret page hidden behind a password for exclusive beta users",
+            "A landing page with fake testimonials to gauge interest",
+            "A broken link that tracks how many people click it"
+          ],
+          "correctIndex": 0,
+          "explanation": "A fake door test presents a button or feature that doesn't exist yet. When people click, they see \"coming soon\" and can leave their email. It measures actual intent to use, not just passive interest."
+        }
+      ]
+    },
+    {
+      "id": "mvp-10-concierge-mvp",
+      "dayNumber": 10,
+      "moduleId": "mvp-module-2",
+      "title": "The Concierge MVP in Practice",
+      "subtitle": "Deliver your service manually to a handful of customers. No tech needed — just you solving their problem by hand.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Food on the Table: One Family at a Time",
+          "body": "Manuel Rosso wanted to build a meal-planning app that suggested recipes based on local grocery sales. Instead of building software, he walked into a grocery store, introduced himself to a shopper, and offered to plan her family's meals personally — for free. He checked the weekly specials, picked recipes, built her shopping list by hand, and delivered it via email. One customer. Fully manual. Within weeks he had 10 families paying him. Only then did he write a single line of code. His concierge MVP taught him exactly what the product needed to do — because he'd done it himself, by hand, dozens of times."
+        },
+        {
+          "type": "content",
+          "headline": "Why Concierge MVPs Are Powerful",
+          "body": "A concierge MVP means you personally deliver the service your product would eventually automate. It's the most intimate way to understand your customer:",
+          "bullets": [
+            "You learn the real workflow — what people actually need, not what they say they need",
+            "You discover edge cases before coding them into a broken system",
+            "You build relationships — these early customers become your best evangelists",
+            "You can start TODAY with zero technology investment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Concierge Playbook",
+          "body": "Follow these steps to run a concierge MVP effectively:",
+          "bullets": [
+            "Step 1: Find 3–5 people with the problem (friends, community, cold outreach)",
+            "Step 2: Offer to solve it for them personally — free or deeply discounted",
+            "Step 3: Do EVERYTHING manually — scheduling, delivery, follow-up, all of it",
+            "Step 4: Document every step, every friction point, every \"I wish it could...\""
+          ],
+          "stat": "5",
+          "statLabel": "manual customers is enough to learn what your automated product must do"
+        },
+        {
+          "type": "content",
+          "headline": "When to Stop Being the Concierge",
+          "body": "The concierge phase ends when you've learned enough to automate with confidence. Signs it's time: (1) You're doing the same steps repeatedly — that's ready for automation. (2) You're turning away customers because you can't serve them manually. (3) You know exactly which features matter and which don't. (4) Customers are willing to pay at a price that justifies building technology. The goal was never to scale manually — it was to learn what to build."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 10 Action",
+          "body": "Identify 3 people who have the problem your product solves. Reach out today with this message:\n\n\"Hey [name], I'm building [brief description]. Would you let me solve this problem for you personally this week — completely free? I'm looking to understand the experience deeply before I build the tech.\"\n\nThen do the work by hand. Track every step in a simple document. Note what surprised you, what they loved, what was harder than expected. This is your product spec — written by reality, not imagination."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What did Manuel Rosso learn from his Food on the Table concierge MVP?",
+          "options": [
+            "Exactly what the automated product needed to do — because he'd done it by hand",
+            "That people weren't willing to pay for meal planning",
+            "That he needed a co-founder with technical skills",
+            "That grocery stores wouldn't partner with his app"
+          ],
+          "correctIndex": 0,
+          "explanation": "By manually planning meals for families, Rosso learned the exact workflow, edge cases, and feature requirements his software needed. The concierge phase was his product specification."
+        },
+        {
+          "type": "mcq",
+          "question": "How many manual customers do you typically need for a concierge MVP?",
+          "options": [
+            "3–5 customers is enough to learn the core patterns",
+            "At least 100 to be statistically significant",
+            "Just 1 very detailed case study",
+            "50+ to cover all edge cases"
+          ],
+          "correctIndex": 0,
+          "explanation": "You only need 3–5 manual customers to learn the core workflow, discover edge cases, and understand what automation needs to handle. This is about depth, not breadth."
+        },
+        {
+          "type": "mcq",
+          "question": "What's the main signal that it's time to stop the concierge phase?",
+          "options": [
+            "You're doing the same steps repeatedly and turning away customers",
+            "You've been doing it for at least 6 months",
+            "Your first customer gives you a 5-star review",
+            "An investor tells you it's time to build"
+          ],
+          "correctIndex": 0,
+          "explanation": "When you find yourself repeating the same manual steps and can't serve more customers by hand, the workflow is ready for automation. You've learned enough to build confidently."
+        }
+      ]
+    },
+    {
+      "id": "mvp-11-pre-selling",
+      "dayNumber": 11,
+      "moduleId": "mvp-module-2",
+      "title": "Pre-Selling: Validate with Revenue",
+      "subtitle": "The ultimate validation isn't \"I'd buy that\" — it's \"here's my credit card.\" Learn to sell before you build.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Pebble: $10 Million Before a Single Watch Existed",
+          "body": "Eric Migicovsky had a prototype smartwatch and zero proof that anyone would buy it. He put it on Kickstarter with a video and a promise: back us now, get the watch when it's ready. Within 28 hours, he had $1 million in pre-orders. By the end of the campaign: $10.3 million from 68,000 backers. Not a single watch had shipped. People didn't just SAY they wanted it — they proved it with their credit cards. That's the gold standard of validation. Interest is cheap. Money is real."
+        },
+        {
+          "type": "content",
+          "headline": "Why Pre-Selling Beats Surveys",
+          "body": "There's a massive gap between \"I'd buy that\" and actually buying it. Pre-selling bridges that gap by asking for commitment, not opinions:",
+          "bullets": [
+            "Surveys measure stated preference — what people SAY they'd do",
+            "Pre-sales measure revealed preference — what people ACTUALLY do",
+            "A person who pays £50 upfront has 50× the conviction of someone who clicks \"interested\"",
+            "Even a small number of pre-sales (10–20) is stronger evidence than 1,000 survey responses"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Pre-Selling Methods",
+          "body": "You don't need Kickstarter. There are multiple ways to take money before your product exists:",
+          "bullets": [
+            "Crowdfunding — Kickstarter, Indiegogo (best for physical products and creative projects)",
+            "Pre-order page — Stripe + landing page: \"Pay now, get access when we launch\"",
+            "Founding member pricing — \"50% off for life if you commit now\"",
+            "Letter of intent — B2B: get companies to sign a non-binding purchase commitment"
+          ],
+          "stat": "10",
+          "statLabel": "pre-sales = stronger validation than 1,000 \"I'm interested\" responses"
+        },
+        {
+          "type": "content",
+          "headline": "The Ethics of Pre-Selling",
+          "body": "Pre-selling is ethical when you're transparent. Always: (1) Clearly state the product doesn't exist yet. (2) Give a realistic timeline for delivery. (3) Offer a full refund if you can't deliver. (4) Communicate regularly with backers about progress. The trust you build (or break) with early customers defines your brand forever. Never take money you're not genuinely committed to earning through delivery."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 11 Action",
+          "body": "Design your pre-sell experiment. Choose one approach:\n\nOption A (Low risk): Create a \"founding member\" page with 50% off your planned price. Set a goal: \"If 10 people pay within 2 weeks, I build it.\"\n\nOption B (Higher signal): Send 5 ideal customers a personal message: \"I'm building [X]. The first 10 customers get lifetime access for [price]. Want in?\"\n\nOption C (B2B): Email 3 companies: \"Would you sign a letter of intent for [product] at [price]? No payment until delivery.\"\n\nPick one. Set your minimum success threshold. Execute today."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How much did Pebble raise in pre-orders before shipping a single watch?",
+          "options": [
+            "$10.3 million from 68,000 backers on Kickstarter",
+            "$500,000 from angel investors",
+            "$1 million from a single corporate buyer",
+            "$100,000 from a small community campaign"
+          ],
+          "correctIndex": 0,
+          "explanation": "Pebble raised $10.3 million from 68,000 backers before manufacturing a single watch — proving that pre-sales can validate demand at massive scale with zero product."
+        },
+        {
+          "type": "mcq",
+          "question": "Why are pre-sales stronger validation than surveys?",
+          "options": [
+            "They measure revealed preference (what people DO) rather than stated preference (what they SAY)",
+            "They generate more data points for statistical analysis",
+            "They are cheaper to run than professional surveys",
+            "They reach a larger audience than survey tools allow"
+          ],
+          "correctIndex": 0,
+          "explanation": "Surveys measure what people say they'd do (stated preference). Pre-sales measure what they actually do with their money (revealed preference). The gap between these is enormous."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the minimum ethical requirement when pre-selling a product?",
+          "options": [
+            "Clearly state the product doesn't exist yet and offer refunds if you can't deliver",
+            "Guarantee delivery within 30 days",
+            "Only pre-sell to people you know personally",
+            "Have at least a working prototype to show"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ethical pre-selling requires transparency: the product doesn't exist yet, here's the timeline, and you get a full refund if we can't deliver. Trust with early customers is foundational."
+        }
+      ]
+    },
+    {
+      "id": "mvp-12-experiment-design",
+      "dayNumber": 12,
+      "moduleId": "mvp-module-2",
+      "title": "Designing Your First Experiment",
+      "subtitle": "Structure your MVP test like a scientist: hypothesis, method, success criteria, timeline. No ambiguity, no wasted effort.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why 90% of MVP Tests Fail to Teach Anything",
+          "body": "A founder launches a landing page. Gets 200 visitors. 8 sign up. She's not sure if that's good or bad. She didn't set a hypothesis. Didn't define success. Didn't control variables. Three weeks later she's no wiser than when she started — just busier. The problem isn't the MVP. It's the experiment design. Scientists discovered centuries ago that unstructured observation teaches nothing. You need a hypothesis, a method, success criteria, and a timeline. Without these, your MVP is just activity disguised as progress."
+        },
+        {
+          "type": "content",
+          "headline": "The Experiment Card",
+          "body": "Every MVP test should fit on a single index card. Ash Maurya calls this an \"experiment card.\" It has four fields:",
+          "bullets": [
+            "HYPOTHESIS: \"We believe [specific assumption] is true\"",
+            "TEST: \"To verify, we will [specific action/MVP]\"",
+            "METRIC: \"We will measure [specific number]\"",
+            "CRITERIA: \"This hypothesis is validated if [metric] reaches [threshold] within [timeframe]\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Good vs. Bad Hypotheses",
+          "body": "A good hypothesis is specific, falsifiable, and tied to your riskiest assumption. A bad one is vague and unfalsifiable:",
+          "bullets": [
+            "BAD: \"People will like our product\" — how do you measure \"like\"?",
+            "GOOD: \"25% of landing page visitors will leave their email within 7 days\"",
+            "BAD: \"We'll get traction\" — what is traction?",
+            "GOOD: \"5 of 20 contacted prospects will agree to a paid pilot within 2 weeks\""
+          ],
+          "stat": "4",
+          "statLabel": "fields on an experiment card — hypothesis, test, metric, criteria"
+        },
+        {
+          "type": "content",
+          "headline": "Controlling Variables",
+          "body": "If you change five things at once, you won't know which one caused the result. Keep your experiments clean: (1) Test one variable at a time. (2) Define your audience clearly — who exactly are you targeting? (3) Fix the timeframe — don't extend it when results look weak. (4) Document everything — screenshots, numbers, quotes. Your future self (and co-founders) will thank you when you can point to evidence instead of memory."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 12 Action",
+          "body": "Fill in your experiment card right now:\n\nHYPOTHESIS: \"We believe that [target audience] will [desired behaviour] because [reason].\"\n\nTEST: \"We will [build/create/send] [specific MVP] and share it with [specific audience of N people].\"\n\nMETRIC: \"We will track [specific measurable action].\"\n\nCRITERIA: \"Validated if [number/percentage] achieved within [days].\"\n\nTape this to your wall. When results come in, you'll know exactly what they mean."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the four fields on an experiment card?",
+          "options": [
+            "Hypothesis, Test, Metric, and Criteria",
+            "Problem, Solution, Market, and Revenue",
+            "Build, Measure, Learn, and Pivot",
+            "Audience, Channel, Message, and Offer"
+          ],
+          "correctIndex": 0,
+          "explanation": "An experiment card captures: Hypothesis (what you believe), Test (what you'll do), Metric (what you'll measure), and Criteria (what threshold means validated)."
+        },
+        {
+          "type": "mcq",
+          "question": "Which hypothesis is properly structured for an MVP test?",
+          "options": [
+            "\"25% of landing page visitors will leave their email within 7 days\"",
+            "\"People will like our product\"",
+            "\"We'll get good traction quickly\"",
+            "\"Our product is better than competitors\""
+          ],
+          "correctIndex": 0,
+          "explanation": "A good hypothesis is specific (25%), measurable (emails), time-bound (7 days), and falsifiable. \"People will like it\" is vague and impossible to disprove."
+        },
+        {
+          "type": "mcq",
+          "question": "Why should you test only one variable at a time?",
+          "options": [
+            "So you know which change caused the result",
+            "Because users get confused by multiple changes",
+            "To keep costs as low as possible",
+            "Because investors prefer simple experiments"
+          ],
+          "correctIndex": 0,
+          "explanation": "Testing one variable isolates causation. If you change five things and get a positive result, you don't know which change worked — and you can't replicate it."
+        }
+      ]
+    },
+    {
+      "id": "mvp-13-first-10-users",
+      "dayNumber": 13,
+      "moduleId": "mvp-module-2",
+      "title": "Getting Your First 10 Users",
+      "subtitle": "Forget growth hacks. Your first 10 users come from personal outreach, warm intros, and showing up where they already are.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stripe's First Users Came from a Laptop in a Coffee Shop",
+          "body": "Patrick Collison didn't wait for developers to find Stripe. He carried his laptop to meetups and coffee shops, sat next to people building apps, and said: \"Want to try accepting payments? I can set it up for you right now.\" He'd literally install Stripe on their laptop on the spot. The Collison brothers called this \"Collison Installation\" — instead of asking \"will you try it?\", they asked \"can I set it up for you right now?\" That tiny shift removed all friction. Your first 10 users won't come from ads or viral loops. They'll come from you personally putting your product in their hands."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Do Things That Don't Scale\" Playbook",
+          "body": "Paul Graham's famous advice: in the early days, do things that don't scale. Your first 10 users require brute force and personal attention:",
+          "bullets": [
+            "Direct outreach — personally message 50 people who fit your target profile",
+            "Warm intros — ask friends and connections to introduce you to potential users",
+            "Show up IRL — attend events, meetups, communities where your users gather",
+            "Collison Installation — don't ask \"will you try it?\" Instead: \"can I set it up for you now?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to Find Your First 10",
+          "body": "Your ideal early users are people who have the problem AND are actively trying to solve it. They're the easiest to convert because they're already looking:",
+          "bullets": [
+            "Online communities — Reddit, Discord servers, Facebook groups, Slack channels",
+            "Existing tool users — people complaining about current solutions on social media",
+            "Your personal network — friends-of-friends who match the profile",
+            "Competitor reviews — people leaving 1-3 star reviews often describe your exact use case"
+          ],
+          "stat": "50",
+          "statLabel": "personal outreach messages typically yields 5-10 early users (10-20% conversion)"
+        },
+        {
+          "type": "content",
+          "headline": "The Quality Over Quantity Rule",
+          "body": "At this stage, 10 deeply engaged users beats 1,000 casual sign-ups. You want people who: (1) Have the problem acutely — not mildly. (2) Are willing to give you feedback — not just use silently. (3) Represent your target market — not friends doing you a favour. (4) Will tell you when something sucks — not politely say \"it's great.\" These 10 people will shape your entire product roadmap. Choose them carefully."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 13 Action",
+          "body": "Make a list of 20 specific people (not personas — real humans with names) who might have the problem you're solving. Use these sources:\n\n- 5 from your personal network\n- 5 from online communities (Reddit, Discord, Facebook groups)\n- 5 from competitor review sites\n- 5 from LinkedIn or Twitter\n\nNow reach out to all 20 today. Use this script: \"Hey [name], I'm building [one sentence]. I think you might find it useful based on [specific reason]. Can I show you a 2-minute demo this week? No commitment — I just want honest feedback.\"\n\nGoal: 3 conversations booked by tomorrow."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is \"Collison Installation\"?",
+          "options": [
+            "Setting up the product for users on the spot instead of asking them to try it later",
+            "A technique for installing software without user permission",
+            "A viral referral system where each user installs for the next",
+            "A method of automating user onboarding without human touch"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Collison brothers would physically set up Stripe on developers' laptops right there and then. The shift from \"will you try it?\" to \"can I set it up now?\" removed all friction from adoption."
+        },
+        {
+          "type": "mcq",
+          "question": "How many personal outreach messages typically yield 5-10 early users?",
+          "options": [
+            "About 50 messages (10-20% conversion rate)",
+            "About 5 messages (nearly 100% conversion)",
+            "About 500 messages (1-2% conversion rate)",
+            "About 1,000 messages (less than 1% conversion)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Personal, targeted outreach converts at 10-20%. Sending 50 well-crafted messages to the right people typically yields 5-10 genuine early users willing to try your product."
+        },
+        {
+          "type": "mcq",
+          "question": "Why do 10 deeply engaged users beat 1,000 casual sign-ups at the MVP stage?",
+          "options": [
+            "Engaged users provide honest feedback that shapes the product roadmap",
+            "More users means more server costs that you can't afford yet",
+            "Casual users generate too much support ticket volume",
+            "Investors prefer quality metrics over quantity metrics"
+          ],
+          "correctIndex": 0,
+          "explanation": "At the MVP stage, you need deep learning, not vanity metrics. 10 users who actively use the product and give honest feedback will teach you more than 1,000 who signed up and never returned."
+        }
+      ]
+    },
+    {
+      "id": "mvp-14-launch-day",
+      "dayNumber": 14,
+      "moduleId": "mvp-module-2",
+      "title": "Launch Day: What Actually Matters",
+      "subtitle": "Launch is a milestone, not a destination. Here's what to focus on, what to ignore, and how to learn from day one.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Product Hunt's #1 Product of the Day Got 3 Paying Customers",
+          "body": "A founder spent weeks preparing for his Product Hunt launch. The day came. He hit #1 Product of the Day. 5,000 visitors. 400 sign-ups. Massive excitement. But when the dust settled? Three paying customers. Three. The launch felt like a victory, but the business metrics told a different story. Here's the uncomfortable truth: launch day is not the point. It's not a finish line — it's the starting gun. What matters isn't the spike of attention. It's what you learn in the 7 days after."
+        },
+        {
+          "type": "content",
+          "headline": "What to Focus on Launch Day",
+          "body": "Resist the urge to obsess over vanity numbers. Instead, track these signals that actually matter for your experiment:",
+          "bullets": [
+            "Activation rate — what percentage of sign-ups actually USE the product?",
+            "Time-to-value — how quickly do users hit their \"aha moment\"?",
+            "Retention signal — do people come back the next day? (even 2-3 is meaningful)",
+            "Qualitative feedback — what are people saying? Any surprised reactions?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Ignore on Launch Day",
+          "body": "These feel important but tell you nothing about long-term viability:",
+          "bullets": [
+            "Total page views — traffic spikes are temporary and meaningless without conversion",
+            "Social media buzz — likes and shares don't pay bills",
+            "Sign-ups without activation — an email address is not a customer",
+            "Competitor reactions — they don't matter until you have product-market fit"
+          ],
+          "stat": "7",
+          "statLabel": "days after launch matter more than launch day itself — that's where learning happens"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Day 2\" Strategy",
+          "body": "Your real launch isn't day 1 — it's day 2. Day 1 is noise. Day 2 shows you who comes back. Plan for it: (1) Email every sign-up within 24 hours — ask \"what were you hoping to achieve?\" (2) Watch session recordings of first-time users (Hotjar, FullStory). (3) Identify the #1 friction point — the place most users drop off. (4) Fix that ONE thing on day 3 and email users again: \"We heard you. We fixed it.\" This loop — listen, fix, communicate — is more valuable than any launch strategy."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 14 Action",
+          "body": "Create your launch day plan — but focus on LEARNING, not hype:\n\n1. Set up a simple feedback mechanism (email survey, in-app prompt, or DM outreach)\n2. Define your \"aha moment\" — the one action that means a user \"got it\"\n3. Plan your Day 2 email: \"Thanks for signing up. What were you hoping to achieve?\"\n4. Decide: what would you fix first based on day 1 feedback?\n\nRemember: launch is not graduation. It's your first real class. Show up ready to learn, not to celebrate."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What happened when a product hit #1 on Product Hunt with 5,000 visitors?",
+          "options": [
+            "Only 3 people became paying customers despite 400 sign-ups",
+            "It immediately achieved product-market fit and scaled rapidly",
+            "The founder was overwhelmed with too many customers to serve",
+            "Investors immediately funded a Series A round"
+          ],
+          "correctIndex": 0,
+          "explanation": "5,000 visitors and #1 Product of the Day resulted in just 3 paying customers. This illustrates that launch day buzz is vanity — conversion and retention are what matter."
+        },
+        {
+          "type": "mcq",
+          "question": "According to the \"Day 2\" strategy, what matters more than launch day?",
+          "options": [
+            "The 7 days after launch — watching who comes back and what they struggle with",
+            "The week before launch — building anticipation and a waitlist",
+            "The month after launch — total revenue generated",
+            "Getting featured on major tech blogs and podcasts"
+          ],
+          "correctIndex": 0,
+          "explanation": "Day 2+ reveals who actually returns, where they get stuck, and what needs fixing. The listen-fix-communicate loop in the week after launch is where real learning happens."
+        },
+        {
+          "type": "mcq",
+          "question": "Which metric should you focus on during launch day?",
+          "options": [
+            "Activation rate — what percentage of sign-ups actually use the product",
+            "Total page views and unique visitors",
+            "Social media mentions and shares",
+            "Number of new email sign-ups"
+          ],
+          "correctIndex": 0,
+          "explanation": "Activation rate tells you if people who signed up actually experienced your product's value. Sign-ups without activation are meaningless — the person never became a real user."
+        }
+      ]
+    },
+    {
+      "id": "mvp-15-collecting-feedback",
+      "dayNumber": 15,
+      "moduleId": "mvp-module-3",
+      "title": "Collecting Meaningful Feedback",
+      "subtitle": "Most feedback is noise. Learn to ask questions that reveal what people actually do, not just what they say they'd do.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Mom Test: Why Everyone Lies to You",
+          "body": "Rob Fitzpatrick asked his mum if she'd use an app he was building. \"Of course, darling! It sounds wonderful!\" She never downloaded it. Mums (and most humans) tell you what you want to hear. Fitzpatrick wrote The Mom Test with one rule: never ask \"would you use this?\" Instead, ask about their life. \"How do you currently handle [problem]?\" \"When was the last time [problem] happened?\" \"What did you do about it?\" People lie about the future. They tell the truth about the past. Your feedback collection must exploit this asymmetry."
+        },
+        {
+          "type": "content",
+          "headline": "Questions That Actually Work",
+          "body": "Stop asking opinions. Start asking about behaviour. These questions reveal truth:",
+          "bullets": [
+            "\"Walk me through the last time you dealt with [problem]\" — reveals actual workflow",
+            "\"What have you already tried to solve this?\" — reveals urgency and competition",
+            "\"What's the hardest part about [task]?\" — reveals pain intensity",
+            "\"If you could wave a magic wand, what would change?\" — reveals desired outcome (not solution)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Behaviour Over Opinion",
+          "body": "The hierarchy of feedback quality, from most to least reliable:",
+          "bullets": [
+            "What they DO (usage data, purchases) — strongest signal, impossible to fake",
+            "What they DID (past behaviour stories) — reliable if specific and recent",
+            "What they INTEND to do (\"I would definitely...\") — unreliable, often aspirational",
+            "What they THINK they want (feature requests) — least reliable, often wrong solution to real problem"
+          ],
+          "stat": "5×",
+          "statLabel": "more reliable: observing behaviour vs. asking for opinions"
+        },
+        {
+          "type": "content",
+          "headline": "The Five-User Interview Rule",
+          "body": "Jakob Nielsen found that 5 user interviews reveal 85% of usability problems. You don't need hundreds of responses. Five deep, 20-minute conversations with the right people will surface patterns. After 5: you'll hear the same problems repeated. After 10: diminishing returns. Spend your time going deeper with fewer people, not shallower with more."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 15 Action",
+          "body": "Schedule 3 feedback conversations this week with people who've USED your MVP (or experienced the problem). Use these questions:\n\n1. \"Walk me through the last time you [problem].\"\n2. \"What was the hardest part?\"\n3. \"What did you try before finding us?\"\n4. \"If this disappeared tomorrow, how would you feel?\"\n5. \"What almost stopped you from signing up/buying?\"\n\nRecord or take notes. Look for patterns across conversations — not individual feature requests, but recurring pain points and workarounds."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to The Mom Test, what should you NEVER ask potential users?",
+          "options": [
+            "\"Would you use this?\" — because people lie about future intentions",
+            "\"How do you currently solve this?\" — because it reveals competitors",
+            "\"When did this problem last occur?\" — because it's too specific",
+            "\"What's the hardest part?\" — because it leads to negative feedback"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Mom Test's core rule: never ask \"would you use this?\" People lie about future intentions to be polite. Instead, ask about past behaviour — what they actually DID, not what they think they WOULD do."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the most reliable form of user feedback?",
+          "options": [
+            "Observed behaviour — what users actually DO (usage data, purchases)",
+            "Stated intentions — what users SAY they would do",
+            "Feature requests — what users ASK you to build",
+            "Survey responses — what users SELECT from multiple choice"
+          ],
+          "correctIndex": 0,
+          "explanation": "Behaviour is the strongest signal because it's impossible to fake. What people actually do (click, buy, return) trumps what they say, intend, or request every time."
+        },
+        {
+          "type": "mcq",
+          "question": "How many user interviews typically reveal 85% of usability problems?",
+          "options": [
+            "5 deep interviews with the right people",
+            "50 interviews for statistical significance",
+            "100 survey responses minimum",
+            "1 detailed case study"
+          ],
+          "correctIndex": 0,
+          "explanation": "Jakob Nielsen's research shows 5 user interviews surface 85% of problems. After 5 conversations, you'll hear the same issues repeated. Go deeper with fewer people, not shallower with more."
+        }
+      ]
+    },
+    {
+      "id": "mvp-16-vanity-vs-actionable",
+      "dayNumber": 16,
+      "moduleId": "mvp-module-3",
+      "title": "Vanity Metrics vs. Actionable Metrics",
+      "subtitle": "Page views feel good but mean nothing. Learn to track the numbers that actually tell you if your business is working.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "100,000 Downloads and Zero Revenue",
+          "body": "A gaming startup celebrated 100,000 app downloads in their first month. Investors were impressed. The team was thrilled. Then someone asked: \"How many people opened the app twice?\" The answer: 3,200. And paying users? 47. They'd been measuring downloads — a vanity metric that made everyone feel good but revealed nothing about the business's health. Eric Ries calls these \"metrics that are designed to trick you into thinking your startup is doing well, when in fact you have no idea.\""
+        },
+        {
+          "type": "content",
+          "headline": "Vanity Metrics: The Usual Suspects",
+          "body": "These metrics feel important but tell you almost nothing about business viability:",
+          "bullets": [
+            "Total registered users — includes everyone who signed up and never returned",
+            "Page views / downloads — attention is not engagement, engagement is not revenue",
+            "Social followers — likes don't pay bills or prove product value",
+            "Total revenue (cumulative) — always goes up, even if monthly revenue is declining"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Actionable Metrics: What to Track Instead",
+          "body": "Actionable metrics tell you whether to change course or stay the path. They're specific, comparative, and tied to behaviour:",
+          "bullets": [
+            "Activation rate — % of sign-ups who complete a key action (your \"aha moment\")",
+            "Retention (Day 7, Day 30) — do people come back? This IS your product-market fit signal",
+            "Revenue per user (ARPU) — are you extracting enough value from each customer?",
+            "Cohort analysis — are newer users performing better than older ones? (shows if you're improving)"
+          ],
+          "stat": "D7",
+          "statLabel": "retention = the single most important early metric — it proves real value"
+        },
+        {
+          "type": "content",
+          "headline": "The \"So What?\" Test",
+          "body": "For every metric you track, ask: \"So what? What would I do differently based on this number?\" If the answer is nothing — it's vanity. Example: \"We had 10,000 visitors this month.\" So what? What should you change? Compare to: \"Our Day-7 retention dropped from 40% to 28% after we changed onboarding.\" THAT tells you exactly what to do: revert the change. Good metrics drive decisions. Bad metrics decorate dashboards."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 16 Action",
+          "body": "Audit your current metrics. List every number you're tracking (or plan to track). For each one, apply the \"So What?\" test:\n\n1. If this number goes up, what would I DO differently?\n2. If it goes down, what would I CHANGE?\n3. Can I tie this directly to a business decision?\n\nKeep only metrics where you have clear answers. Delete everything else from your dashboard. Your new rule: if it doesn't drive a decision, it doesn't deserve your attention."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why are \"total registered users\" a vanity metric?",
+          "options": [
+            "It includes everyone who signed up and never returned — telling you nothing about actual usage",
+            "It's too expensive to track accurately",
+            "Investors don't care about this number",
+            "It only works for consumer apps, not B2B"
+          ],
+          "correctIndex": 0,
+          "explanation": "Total users always goes up (nobody un-registers). It includes churned users, one-time visitors, and spam accounts. It tells you nothing about whether people actually get value from your product."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the \"So What?\" test for metrics?",
+          "options": [
+            "Asking \"what would I do differently based on this number?\" — if nothing, it's vanity",
+            "Checking if the metric impresses investors in a pitch deck",
+            "Comparing your metric against industry benchmarks",
+            "Testing whether the metric is statistically significant"
+          ],
+          "correctIndex": 0,
+          "explanation": "The \"So What?\" test: if a metric going up or down wouldn't change your actions, it's vanity. Good metrics drive specific decisions — bad metrics just decorate dashboards."
+        },
+        {
+          "type": "mcq",
+          "question": "Which metric is the strongest early signal of product-market fit?",
+          "options": [
+            "Day 7 retention — whether people come back after a week",
+            "Total app downloads in the first month",
+            "Number of social media mentions",
+            "Email list growth rate"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retention is the ultimate test: do people return? Day 7 retention specifically shows whether users found enough value to come back after the novelty wore off. This IS product-market fit."
+        }
+      ]
+    },
+    {
+      "id": "mvp-17-pivot-or-persevere",
+      "dayNumber": 17,
+      "moduleId": "mvp-module-3",
+      "title": "The Pivot-or-Persevere Decision",
+      "subtitle": "The hardest call in entrepreneurship. When does persistence become stubbornness? Use data, not ego, to decide.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Slack Was a Failed Video Game",
+          "body": "Stewart Butterfield spent 4 years building a multiplayer online game called Glitch. It failed — twice. But while building the game, his team created an internal communication tool to coordinate development. When Glitch shut down, Butterfield noticed something: the tool his team had built for themselves was the product people actually needed. He pivoted. Slack launched in 2013 and reached a $27 billion valuation. The game was the wrong answer. The communication tool was the right one. Butterfield's genius wasn't persistence with Glitch — it was recognising when to stop and what to carry forward."
+        },
+        {
+          "type": "content",
+          "headline": "What a Pivot Actually Is",
+          "body": "A pivot is NOT giving up. It's a structured course correction based on what you've learned. Eric Ries defines it as \"a change in strategy without a change in vision.\" You keep the learning, change the approach:",
+          "bullets": [
+            "Customer segment pivot — same product, different audience (YouTube: dating → general video)",
+            "Problem pivot — your audience has a bigger problem than the one you're solving",
+            "Solution pivot — right problem, wrong approach (Slack: game → communication tool)",
+            "Channel pivot — right product, wrong distribution method"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Pivot Signals",
+          "body": "Data patterns that suggest it's time to pivot — not gut feelings, not panic, but evidence:",
+          "bullets": [
+            "Flat retention curves — people try it but don't come back, despite iterations",
+            "Feature requests that contradict your vision — users want something fundamentally different",
+            "One feature dominates — people use 10% of your product and ignore the rest",
+            "You're solving a \"nice to have\" — users like it but won't pay or prioritise it"
+          ],
+          "stat": "3",
+          "statLabel": "failed experiments on the same assumption = strong pivot signal"
+        },
+        {
+          "type": "content",
+          "headline": "The Persevere Signals",
+          "body": "Don't pivot prematurely. These signals suggest you should keep going: (1) Retention is improving with each iteration — you're getting closer. (2) A small segment LOVES you — even if the mass market doesn't (yet). (3) Users are hacking workarounds — they want your product to do MORE, not less. (4) You haven't actually tested the assumption yet — many founders pivot from boredom, not data. The rule: pivot when data says your core assumption is wrong. Persevere when data says you're on the right track but haven't nailed execution yet."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 17 Action",
+          "body": "Conduct an honest pivot-or-persevere assessment right now:\n\n1. What was your original core assumption?\n2. What evidence do you have FOR it? (Be specific — data, not feelings)\n3. What evidence do you have AGAINST it?\n4. Has the last month's data improved or stagnated?\n5. If you pivot, what would you carry forward? (The learning, audience, technology?)\n\nIf you can't point to improving trends, schedule a \"pivot meeting\" this week. Bring data, not opinions. The goal isn't to feel good — it's to find truth."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How does Eric Ries define a pivot?",
+          "options": [
+            "A change in strategy without a change in vision",
+            "Completely starting over with a new idea",
+            "Giving up on a failed product",
+            "Raising more funding to try harder"
+          ],
+          "correctIndex": 0,
+          "explanation": "A pivot keeps the vision but changes the strategy. You carry forward everything you've learned — the audience insights, the technology, the relationships — and apply them in a new direction."
+        },
+        {
+          "type": "mcq",
+          "question": "What type of pivot did Slack represent?",
+          "options": [
+            "Solution pivot — right team/problem space, wrong product (game → communication tool)",
+            "Customer segment pivot — same product for different users",
+            "Channel pivot — same product through different distribution",
+            "Revenue model pivot — same product with different pricing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Slack was a solution pivot: Butterfield's team had deep expertise in team coordination (from building a game together). The game was the wrong solution; the internal chat tool was the right one."
+        },
+        {
+          "type": "mcq",
+          "question": "How many failed experiments on the same assumption suggest a pivot is needed?",
+          "options": [
+            "3 failed experiments testing the same core assumption",
+            "1 experiment that doesn't hit the exact target",
+            "10 experiments over at least 12 months",
+            "You should never pivot based on experiment count alone"
+          ],
+          "correctIndex": 0,
+          "explanation": "If you've tested the same assumption 3 different ways and it keeps failing, the assumption is likely wrong. One failure could be execution; three failures is a pattern pointing to a flawed assumption."
+        }
+      ]
+    },
+    {
+      "id": "mvp-18-rapid-ab-tests",
+      "dayNumber": 18,
+      "moduleId": "mvp-module-3",
+      "title": "Running Rapid A/B Tests",
+      "subtitle": "Stop guessing. Run simple experiments that tell you which version works better — in days, not months.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Obama's $60 Million Button",
+          "body": "During the 2008 presidential campaign, Obama's digital team tested different versions of their donation page. One change — swapping the button text from \"Sign Up\" to \"Learn More\" — increased sign-ups by 18.6%. Over the campaign, that single A/B test generated an estimated $60 million in additional donations. One word. $60 million. This isn't a story about politics — it's about the power of testing assumptions instead of debating them. At the early stage, your A/B tests won't be this dramatic, but the principle is the same: test, don't guess."
+        },
+        {
+          "type": "content",
+          "headline": "A/B Testing for Early-Stage Startups",
+          "body": "You don't need millions of visitors to run useful tests. Early-stage A/B testing is about testing BIG differences, not subtle optimisations:",
+          "bullets": [
+            "Test value propositions — does \"save time\" convert better than \"save money\"?",
+            "Test pricing — £19/mo vs £29/mo vs £49/mo (you'll be surprised)",
+            "Test positioning — are you a tool for freelancers or for agencies?",
+            "Test formats — does a video landing page beat a text-only page?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Minimum Viable A/B Test",
+          "body": "You don't need Optimizely or a data science team. Here's the simplest way to A/B test with tiny traffic:",
+          "bullets": [
+            "Create two landing pages with different headlines (use Carrd or similar)",
+            "Split your traffic manually — share Link A in one community, Link B in another",
+            "Track conversions with a simple form or Stripe payment link",
+            "Need just 20-30 conversions per version to spot large differences (>50% improvement)"
+          ],
+          "stat": "20",
+          "statLabel": "conversions per variant = enough to detect large differences at early stage"
+        },
+        {
+          "type": "content",
+          "headline": "Rules for Good Tests",
+          "body": "Most A/B tests fail because they're poorly designed. Follow these rules: (1) Test ONE variable at a time — if you change the headline AND the price, you won't know which mattered. (2) Define your winner criteria BEFORE starting. (3) Set a time limit — don't run tests forever hoping for significance. (4) Test big, bold differences — a 5% variation won't teach you anything with low traffic. Think: entirely different headlines, not just word swaps."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 18 Action",
+          "body": "Design one A/B test you can run this week. Pick your biggest uncertainty:\n\n- Unsure about positioning? Test two different headlines\n- Unsure about pricing? Create two checkout pages with different prices\n- Unsure about audience? Share the same page in two different communities\n\nWrite your test plan:\nVersion A: ___\nVersion B: ___\nSuccess metric: ___\nWinner criteria: \"B wins if it outperforms A by at least ___% within ___ days\"\n\nLaunch both versions today. Check results in 5 days."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What result did Obama's \"Learn More\" vs \"Sign Up\" button test produce?",
+          "options": [
+            "18.6% more sign-ups, generating an estimated $60 million more in donations",
+            "No significant difference between the two versions",
+            "A 50% drop in sign-ups because \"Learn More\" was too passive",
+            "A 5% improvement that wasn't statistically significant"
+          ],
+          "correctIndex": 0,
+          "explanation": "Changing one word — \"Sign Up\" to \"Learn More\" — increased conversions by 18.6%, generating an estimated $60 million in additional donations over the campaign. Small changes, massive impact."
+        },
+        {
+          "type": "mcq",
+          "question": "How many conversions per variant do you need to detect large differences?",
+          "options": [
+            "20-30 conversions per version for differences >50%",
+            "At least 10,000 per version for any meaningful result",
+            "Just 1-2 conversions is enough if the difference is obvious",
+            "You need a statistician to determine the right sample size"
+          ],
+          "correctIndex": 0,
+          "explanation": "For early-stage tests looking for large differences (>50% improvement), 20-30 conversions per variant is enough. You're testing bold hypotheses, not optimising for 2% gains."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the most important rule when running A/B tests?",
+          "options": [
+            "Test only one variable at a time so you know what caused the difference",
+            "Always test at least 5 variations simultaneously",
+            "Run tests for at least 6 months to ensure accuracy",
+            "Only test visual elements like colours and fonts"
+          ],
+          "correctIndex": 0,
+          "explanation": "Testing one variable isolates causation. If you change multiple things, a positive result doesn't tell you which change worked — making the test useless for learning."
+        }
+      ]
+    },
+    {
+      "id": "mvp-19-when-to-add-features",
+      "dayNumber": 19,
+      "moduleId": "mvp-module-3",
+      "title": "When to Add Features (and When Not To)",
+      "subtitle": "Feature creep kills startups. Learn the signals that say \"add this\" versus the ones that say \"stay focused.\"",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Basecamp Said \"No\" 10,000 Times",
+          "body": "Jason Fried's team at Basecamp has received over 10,000 feature requests since launching. They've said \"no\" to almost all of them. Not because the ideas were bad — but because every feature you add makes the product more complex, harder to maintain, and less focused. Fried calls it \"the cost of the feature after the feature.\" Building it takes a week. Maintaining it, supporting it, and explaining it to new users takes forever. The companies that win aren't the ones with the most features — they're the ones with the right features and the discipline to stop there."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Add It\" Signals",
+          "body": "Only add features when you see these patterns — not before:",
+          "bullets": [
+            "Multiple unrelated users request the same thing independently (not coordinated)",
+            "Users are building workarounds — they want it badly enough to hack a solution",
+            "The feature directly improves your core retention metric (not just adds novelty)",
+            "Not having it is the #1 reason people churn or don't convert"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Don't Add It\" Signals",
+          "body": "Resist adding features when you see these patterns — they feel urgent but lead nowhere:",
+          "bullets": [
+            "One loud customer demands it — they're not representative of your market",
+            "A competitor has it — you're not competing on features, you're competing on focus",
+            "It would be \"nice to have\" — if users aren't screaming for it, they won't use it",
+            "It makes the product more complex without making the core experience better"
+          ],
+          "stat": "80%",
+          "statLabel": "of features are rarely or never used — build only what earns daily usage"
+        },
+        {
+          "type": "content",
+          "headline": "The ICE Framework",
+          "body": "When you do decide to add something, prioritise using ICE: (1) Impact — how much will this move our core metric? (1-10) (2) Confidence — how sure are we that it will work? (1-10) (3) Ease — how quickly can we ship it? (1-10). Multiply the scores. Build the highest-scoring items first. This prevents building hard, uncertain features before easy, high-confidence wins."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 19 Action",
+          "body": "Create your \"feature backlog audit.\" List every feature you're considering. For each one, answer:\n\n1. How many independent users have requested this? (number)\n2. Would it directly improve retention or conversion? (yes/no)\n3. ICE score: Impact (1-10) × Confidence (1-10) × Ease (1-10) = ___\n\nNow ruthlessly cut everything that scores below 200. For surviving features, ask: \"If I DON'T build this, will people leave?\" If the answer is no — it can wait. Your only job right now is to nail the core experience."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What does Jason Fried mean by \"the cost of the feature after the feature\"?",
+          "options": [
+            "Every feature requires ongoing maintenance, support, and explanation forever after building it",
+            "Features cost more to build than initially estimated",
+            "Users expect discounts after new features are added",
+            "Competitors will copy any feature you release"
+          ],
+          "correctIndex": 0,
+          "explanation": "Building a feature takes a week. But maintaining it, supporting confused users, documenting it, and preventing it from breaking other features costs time indefinitely. That's the hidden ongoing cost."
+        },
+        {
+          "type": "mcq",
+          "question": "What percentage of features are rarely or never used?",
+          "options": [
+            "About 80% — most features don't earn daily usage",
+            "About 20% — most features see regular use",
+            "About 50% — it's an even split",
+            "Less than 10% — nearly all features get used"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research consistently shows ~80% of features are rarely or never used. This means 4 out of 5 features you build will be wasted effort. Only build what earns daily, active usage."
+        },
+        {
+          "type": "mcq",
+          "question": "What does the ICE framework stand for?",
+          "options": [
+            "Impact, Confidence, Ease — multiplied together to prioritise features",
+            "Innovation, Cost, Effort — added together to estimate resources",
+            "Interest, Conversion, Engagement — averaged to measure success",
+            "Idea, Customer, Execution — ranked to evaluate feasibility"
+          ],
+          "correctIndex": 0,
+          "explanation": "ICE = Impact (how much will it move the needle?) × Confidence (how sure are we?) × Ease (how quickly can we ship?). The highest-scoring items get built first."
+        }
+      ]
+    },
+    {
+      "id": "mvp-20-mvp-to-pmf",
+      "dayNumber": 20,
+      "moduleId": "mvp-module-3",
+      "title": "From MVP to Product-Market Fit",
+      "subtitle": "PMF isn't a moment — it's a feeling confirmed by data. Understand the signals, the metrics, and the mindset shift.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Superhuman's 40% Rule",
+          "body": "Rahul Vohra, founder of Superhuman (a $33/mo email app), needed a way to measure product-market fit. He used Sean Ellis's now-famous question: \"How would you feel if you could no longer use this product?\" If 40% or more say \"very disappointed,\" you have PMF. When Superhuman first measured this, they were at 33%. Not there yet. So Vohra segmented: which TYPES of users said \"very disappointed\"? He doubled down on serving those people brilliantly and ignored the rest. Within months, they crossed 40%. The lesson: PMF isn't about making everyone happy. It's about making the RIGHT people ecstatic."
+        },
+        {
+          "type": "content",
+          "headline": "The Signals of Product-Market Fit",
+          "body": "Marc Andreessen says: \"You can always feel when PMF is happening.\" But feelings need data to confirm them:",
+          "bullets": [
+            "Users complain when it's down — they've built it into their workflow",
+            "Word-of-mouth growth — new users arrive without you spending on marketing",
+            "Usage grows faster than you can support — you're scrambling to keep up",
+            "Retention curves flatten — people stop leaving after a certain point"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The PMF Metrics",
+          "body": "Quantitative signals that indicate you're approaching or have achieved PMF:",
+          "bullets": [
+            "Sean Ellis test: 40%+ say \"very disappointed\" if the product disappeared",
+            "Day 30 retention above 20% (consumer) or 40% (SaaS)",
+            "NPS above 50 — users actively recommend you",
+            "Organic/referral traffic exceeds paid acquisition"
+          ],
+          "stat": "40%",
+          "statLabel": "\"very disappointed\" threshold — the quantitative benchmark for product-market fit"
+        },
+        {
+          "type": "content",
+          "headline": "Pre-PMF vs. Post-PMF Mindset",
+          "body": "The biggest mistake founders make is optimising for growth before they have PMF. Before PMF: iterate on product, talk to users daily, measure retention, ignore vanity metrics. After PMF: invest in growth, build the team, raise money, scale operations. Premature scaling is the #1 cause of startup death (according to Startup Genome). Don't hire, don't spend on ads, don't expand to new markets until retention proves people need what you've built."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 20 Action",
+          "body": "Run the Sean Ellis test on your current users. Send this one-question survey to everyone who's used your product at least twice:\n\n\"How would you feel if you could no longer use [product name]?\"\n- Very disappointed\n- Somewhat disappointed\n- Not disappointed\n\nIf you're above 40% \"very disappointed\" — congratulations, focus on growth. If you're below: segment the results. Who ARE the \"very disappointed\" people? What do they have in common? Double down on serving them better. Ignore everyone else for now."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the \"40% rule\" for measuring product-market fit?",
+          "options": [
+            "If 40%+ of users say they'd be \"very disappointed\" without your product, you have PMF",
+            "If 40% of your revenue comes from repeat customers",
+            "If 40% of visitors convert to paying users",
+            "If you retain 40% of users after 12 months"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sean Ellis's test: ask users \"How would you feel if you could no longer use this product?\" If 40%+ say \"very disappointed,\" you've achieved product-market fit."
+        },
+        {
+          "type": "mcq",
+          "question": "What did Superhuman do when they measured below 40%?",
+          "options": [
+            "Segmented users to find WHO was \"very disappointed\" and doubled down on serving them",
+            "Added more features to make everyone happy",
+            "Lowered their price to attract more users",
+            "Pivoted to a completely different product idea"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vohra segmented: which user types said \"very disappointed\"? He focused exclusively on making those people ecstatic — ignoring users who were lukewarm. This raised the score above 40%."
+        },
+        {
+          "type": "mcq",
+          "question": "According to Startup Genome, what is the #1 cause of startup death?",
+          "options": [
+            "Premature scaling — investing in growth before achieving product-market fit",
+            "Running out of funding before launch",
+            "Co-founder conflicts and team breakdowns",
+            "Being outcompeted by larger companies"
+          ],
+          "correctIndex": 0,
+          "explanation": "Premature scaling — hiring, spending on ads, expanding markets before PMF — is the top killer. Growth without retention is a leaky bucket. Fix the product first, then scale."
+        }
+      ]
+    },
+    {
+      "id": "mvp-21-post-mvp-roadmap",
+      "dayNumber": 21,
+      "moduleId": "mvp-module-3",
+      "title": "Your 90-Day Post-MVP Roadmap",
+      "subtitle": "You've validated your idea. Now what? Plan the next 90 days: what to build, who to hire, and how to scale without breaking.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Airbnb's First 90 Days After Validation",
+          "body": "After validating demand with their air mattress MVP, Brian Chesky and Joe Gebbia didn't immediately build a polished platform. Their next 90 days were ruthlessly focused: (1) Days 1-30: Personally onboard every new host with professional photography. (2) Days 31-60: Build ONLY the features hosts asked for most (calendar, messaging). (3) Days 61-90: Expand from New York to one more city — not ten. They resisted the urge to \"go big\" and instead went deep. The result: they built a foundation that could scale to millions, because it worked perfectly for hundreds first."
+        },
+        {
+          "type": "content",
+          "headline": "The 30-60-90 Framework",
+          "body": "Structure your post-MVP roadmap in three phases. Each builds on validated learning from the previous:",
+          "bullets": [
+            "Days 1-30: DEEPEN — Make your best users ecstatic. Fix the #1 pain point. Nail onboarding.",
+            "Days 31-60: EXPAND — Add the one feature users scream for. Start systematising what you do manually.",
+            "Days 61-90: SCALE — Move from manual to automated. Begin repeatable acquisition. Set up metrics dashboards."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to Build vs. What to Hire",
+          "body": "In the first 90 days post-validation, your build priorities should focus on removing yourself as a bottleneck:",
+          "bullets": [
+            "Build: Automated onboarding (replaces you manually welcoming each user)",
+            "Build: Self-serve support (FAQ, in-app guidance — replaces you answering every question)",
+            "Hire: Only if you physically cannot do the work yourself anymore",
+            "Outsource: Anything that's not your core value (design, bookkeeping, customer support)"
+          ],
+          "stat": "90",
+          "statLabel": "days to go from validated MVP to scalable v1 — with focused execution"
+        },
+        {
+          "type": "content",
+          "headline": "The \"Scale Readiness\" Checklist",
+          "body": "Before investing in growth, make sure your foundation is solid. You're ready to scale when: (1) Retention is stable or improving — people stay. (2) Unit economics work — you make more from a customer than it costs to acquire them. (3) Onboarding runs without you — new users succeed without hand-holding. (4) You can describe your ideal customer in one sentence — you know exactly who to target. If any of these are shaky, fix them first. Scaling a broken product just breaks it faster."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Day 21 Action",
+          "body": "Write your personal 90-day post-MVP roadmap:\n\nDAYS 1-30 (Deepen):\n- The #1 thing I'll fix/improve: ___\n- How I'll make my best users ecstatic: ___\n\nDAYS 31-60 (Expand):\n- The ONE feature I'll add (based on data): ___\n- The ONE manual process I'll automate: ___\n\nDAYS 61-90 (Scale):\n- My repeatable acquisition channel: ___\n- My \"scale readiness\" milestone: ___\n\nCongratulations — you've completed the Build & Test Your MVP course. You now have a validated idea, a working product, and a plan for the next 90 days. Go build something people want."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What did Airbnb focus on in their first 30 days after validating the concept?",
+          "options": [
+            "Personally onboarding every host with professional photography",
+            "Expanding to 10 cities simultaneously",
+            "Building a mobile app",
+            "Raising a Series A from venture capitalists"
+          ],
+          "correctIndex": 0,
+          "explanation": "Chesky and Gebbia went DEEP, not wide. They personally onboarded each new host, provided professional photography, and made the experience perfect for a small group before expanding."
+        },
+        {
+          "type": "mcq",
+          "question": "In the 30-60-90 framework, what is the focus of Days 31-60?",
+          "options": [
+            "EXPAND — add the most-requested feature and start systematising manual processes",
+            "SCALE — invest heavily in paid marketing and automation",
+            "DEEPEN — continue making existing users ecstatic",
+            "PIVOT — evaluate whether to change direction entirely"
+          ],
+          "correctIndex": 0,
+          "explanation": "Days 31-60 is the EXPAND phase: add the one feature users are screaming for, and begin turning manual processes into repeatable systems. Not yet scaling — just expanding capability."
+        },
+        {
+          "type": "mcq",
+          "question": "What must be true before you invest in scaling growth?",
+          "options": [
+            "Retention is stable, unit economics work, and onboarding runs without you",
+            "You have at least $1M in funding secured",
+            "You've been featured in major press outlets",
+            "Your product has 10,000+ registered users"
+          ],
+          "correctIndex": 0,
+          "explanation": "Scale readiness requires: stable retention (people stay), positive unit economics (LTV > CAC), and self-serve onboarding (users succeed without you). Scaling without these just breaks things faster."
+        }
+      ]
+    }
+  ]
+}

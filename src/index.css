@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "../authorisation/src/**/*.{ts,tsx}";
 
 /* ------------------------------------------------------------------ */
 /* Design tokens (HSL) — SuccessWise brand                             */
@@ -20,6 +21,15 @@
   --sw-warning: 38 92% 50%;
   --sw-red: 0 84% 60%;
   --sw-white: 0 0% 100%;
+  --sw-teal: 174 72% 40%;
+  --sw-coral: 21 90% 56%;
+  --sw-purple: 271 71% 58%;
+  --sw-emerald: 158 64% 32%;
+  --sw-paypal-yellow: 45 100% 61%;
+  --sw-paypal-navy: 219 100% 26%;
+  --sw-amber-dark: 32 81% 29%;
+  --cert-navy: 222 47% 11%;
+  --cert-gold: 43 74% 52%;
 
   --sw-gradient-start: 221 83% 53%;
   --sw-gradient-end: 262 83% 58%;
@@ -47,6 +57,15 @@
   --color-sw-warning: hsl(var(--sw-warning));
   --color-sw-red: hsl(var(--sw-red));
   --color-sw-white: hsl(var(--sw-white));
+  --color-sw-teal: hsl(var(--sw-teal));
+  --color-sw-coral: hsl(var(--sw-coral));
+  --color-sw-purple: hsl(var(--sw-purple));
+  --color-sw-emerald: hsl(var(--sw-emerald));
+  --color-sw-paypal-yellow: hsl(var(--sw-paypal-yellow));
+  --color-sw-paypal-navy: hsl(var(--sw-paypal-navy));
+  --color-sw-amber-dark: hsl(var(--sw-amber-dark));
+  --color-cert-navy: hsl(var(--cert-navy));
+  --color-cert-gold: hsl(var(--cert-gold));
 
   --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
 
@@ -61,6 +80,7 @@
   --animate-spin-wheel: spin-wheel 4.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   --animate-slide-up: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
   --animate-count-ring: count-ring 1.4s ease-out forwards;
+  --animate-scale-in: scale-in 0.2s ease-out both;
 }
 
 @layer base {
@@ -87,6 +107,13 @@
   }
 }
 
+/* Production (unlayered): button,[role=button],summary{cursor:pointer} */
+button,
+[role='button'],
+summary {
+  cursor: pointer;
+}
+
 /* ------------------------------------------------------------------ */
 /* Animations                                                          */
 /* ------------------------------------------------------------------ */
@@ -98,6 +125,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

@@ -1,0 +1,1616 @@
+{
+  "id": "systems-delegation-operations",
+  "title": "Systems, Delegation & Operations",
+  "subtitle": "Build a business that runs without you",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "sdo-module-1",
+      "moduleNumber": 1,
+      "title": "Systemise Your Business",
+      "subtitle": "Stop being the bottleneck — learn to document, standardise, and automate your processes so your business runs on systems, not on you pulling all-nighters.",
+      "days": "Lessons 1–7",
+      "skill": "Build SOPs, identify the technician trap, run system audits, and lay automation foundations that free you from day-to-day operations",
+      "lessonIds": [
+        "sdo-1-working-on-not-in",
+        "sdo-2-technician-trap",
+        "sdo-3-documenting-processes",
+        "sdo-4-sop-creation",
+        "sdo-5-checklists-that-work",
+        "sdo-6-system-audit",
+        "sdo-7-automation-foundations"
+      ]
+    },
+    {
+      "id": "sdo-module-2",
+      "moduleNumber": 2,
+      "title": "Delegate & Build Your Team",
+      "subtitle": "Master the art of letting go — hire for roles not tasks, train with systems, build accountability, and create a self-managing team using the Clockwork method.",
+      "days": "Lessons 8–14",
+      "skill": "Apply delegation frameworks, build training systems, create accountability charts, and use the Clockwork method to build a team that runs without constant oversight",
+      "lessonIds": [
+        "sdo-8-delegation-framework",
+        "sdo-9-hiring-for-roles",
+        "sdo-10-training-systems",
+        "sdo-11-accountability-chart",
+        "sdo-12-clockwork-method",
+        "sdo-13-letting-go",
+        "sdo-14-self-managing-team"
+      ]
+    },
+    {
+      "id": "sdo-module-3",
+      "moduleNumber": 3,
+      "title": "Operate at Scale",
+      "subtitle": "Implement EOS/Traction, run meeting rhythms, track scorecards, resolve issues systematically, and build a business that runs — and sells — without you.",
+      "days": "Lessons 15–21",
+      "skill": "Implement EOS components, run L10 meetings, build scorecards, resolve issues with the IDS method, and create exit-readiness through operational independence",
+      "lessonIds": [
+        "sdo-15-eos-foundations",
+        "sdo-16-meeting-rhythms",
+        "sdo-17-scorecard-metrics",
+        "sdo-18-issue-resolution",
+        "sdo-19-business-without-you",
+        "sdo-20-exit-readiness",
+        "sdo-21-owners-freedom"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sdo-1-working-on-not-in",
+      "dayNumber": 1,
+      "moduleId": "sdo-module-1",
+      "title": "Working ON vs IN",
+      "subtitle": "The fundamental mindset shift every business owner must make — from operator to architect.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You started a business for freedom — but now you're the most trapped person in the building.",
+          "body": "Michael Gerber studied thousands of small business owners and found the same pattern: talented people who started businesses based on their technical skill, only to become slaves to the very machine they built. The baker who loved baking now hates Mondays. The designer who loved creating now drowns in invoices. The shift from working IN to ON your business isn't a luxury — it's survival."
+        },
+        {
+          "type": "content",
+          "headline": "The E-Myth Revelation",
+          "body": "The \"Entrepreneurial Myth\" is the assumption that being good at a technical skill means you'll be good at running a business that does that skill. But a great chef isn't automatically a great restaurant owner. Running a business requires three personalities: the Technician (does the work), the Manager (organises the work), and the Entrepreneur (envisions the future). Most owners are stuck in Technician mode — doing everything themselves, 80+ hours a week, unable to step away."
+        },
+        {
+          "type": "content",
+          "headline": "The Franchise Prototype",
+          "body": "Gerber's breakthrough insight: build your business as if you were going to franchise it — even if you never will. This means every process must work without YOU specifically running it. Ask: \"Could a competent person run this with a manual?\" If the answer is no, you don't have a business — you have a job you created for yourself. The franchise prototype forces you to systemise everything so any role can be filled by someone other than you."
+        },
+        {
+          "type": "content",
+          "headline": "The ON vs IN Framework",
+          "body": "Working IN = delivering the product, answering emails, putting out fires, doing the tasks. Working ON = designing better systems, improving processes, planning strategy, building a team. Track your time for one week: what percentage is ON vs IN? Most founders find they spend 90% IN. The goal isn't 0% IN — it's to deliberately schedule ON time every single week, treating it as non-negotiable. Start with just 2 hours per week of pure ON time."
+        },
+        {
+          "type": "action",
+          "headline": "Your ON Time Audit",
+          "body": "This week, track every hour you work. Mark each hour as either ON (systems, strategy, planning, building) or IN (delivering, firefighting, doing tasks). At the end of the week, calculate your ON/IN ratio. Then block 2 hours in your calendar for next week labelled \"CEO Time\" — this is your protected ON time where you work exclusively on systems and improvements. Treat it like a meeting with your most important client: non-cancellable."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Michael Gerber's E-Myth, what is the \"Entrepreneurial Myth\"?",
+          "options": [
+            "That entrepreneurs always succeed",
+            "That technical skill means you can run that business",
+            "That businesses need venture capital to grow",
+            "That passion is enough to build a company"
+          ],
+          "correctIndex": 1,
+          "explanation": "The E-Myth is the false assumption that being excellent at a technical skill (baking, coding, design) means you'll be excellent at running a business that does that skill. They are completely different competencies."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the \"Franchise Prototype\" approach?",
+          "options": [
+            "Buying a franchise instead of starting from scratch",
+            "Building your business as if you'd franchise it",
+            "Copying a competitor's business model",
+            "Opening multiple locations immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Franchise Prototype means building your business as if you were going to franchise it — documenting and systemising every process so anyone competent could run it, even if you never actually franchise."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the recommended starting point for \"ON time\"?",
+          "options": [
+            "30 minutes per day",
+            "2 hours per week, non-negotiable",
+            "One full day per month",
+            "Whatever time is left after tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start with 2 hours per week of protected \"CEO Time\" dedicated to working ON the business. Treat it as non-cancellable. This creates a consistent habit of strategic work without overwhelming your current workload."
+        }
+      ]
+    },
+    {
+      "id": "sdo-2-technician-trap",
+      "dayNumber": 2,
+      "moduleId": "sdo-module-1",
+      "title": "The Technician Trap",
+      "subtitle": "Why your technical excellence is actually keeping your business small — and how to escape.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The better you are at doing the work, the harder it is to stop doing it — and that's exactly what's killing your growth.",
+          "body": "There's a cruel irony in business: the skills that made you successful enough to start are the same skills trapping you at your current level. You're so good at the work that it feels wrong to hand it off. \"Nobody can do it like I can.\" That thought — innocent as it seems — is the most expensive belief a founder can hold. Every hour you spend doing $50/hour work is an hour you're NOT doing $5,000/hour work."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Roles Problem",
+          "body": "Every business needs three roles filled: Technician (does the skilled work), Manager (creates order and systems), and Entrepreneur (has the vision and drives growth). In most small businesses, one person tries to be all three. The Technician in you says \"just let me do it.\" The Manager says \"we need a process.\" The Entrepreneur says \"we need to 10x this.\" These voices fight constantly — and the Technician almost always wins because doing feels more productive than planning."
+        },
+        {
+          "type": "content",
+          "headline": "The Ceiling of One",
+          "body": "When you ARE the business, you hit the Ceiling of One: your revenue is capped by the hours in your day, your energy, and your personal capacity. Sam Carpenter (Work the System) describes this as \"working 80 hours a week and still barely surviving.\" The ceiling breaks only when you separate yourself from the production. Your job isn't to make the widget — it's to build a system that makes the widget consistently and at scale."
+        },
+        {
+          "type": "content",
+          "headline": "The Escape Plan",
+          "body": "Escaping the Technician Trap requires three shifts: (1) Accept that 80% done by someone else is better than 100% done by you if it frees you for higher-value work. (2) Document what you do — start with your most repeated task. (3) Hire or delegate that one task completely, resisting the urge to take it back when it's not perfect. Dan Martell calls this the \"Replacement Ladder\" — systematically replacing yourself from the lowest-value tasks upward."
+        },
+        {
+          "type": "action",
+          "headline": "Find Your Escape Task",
+          "body": "List everything you did yesterday. Assign each task a dollar value — what would you pay someone to do it? Circle the three lowest-value tasks that took the most time. Pick ONE of those and commit to documenting it this week (even just bullet points of the steps). This is your first \"escape task\" — the first domino in freeing yourself from the Technician Trap. You don't need to delegate it yet — just documenting it breaks the spell that \"only you can do it.\""
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the \"Ceiling of One\"?",
+          "options": [
+            "A pricing strategy that limits revenue",
+            "The growth cap when you ARE the business",
+            "A management philosophy about solo work",
+            "The first hire threshold for startups"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Ceiling of One is the natural growth limit that occurs when the founder IS the business — revenue and capacity are capped by one person's available hours, energy, and skill."
+        },
+        {
+          "type": "mcq",
+          "question": "According to the \"Replacement Ladder\" concept, where should you start replacing yourself?",
+          "options": [
+            "Your highest-value tasks first",
+            "Whatever you enjoy least",
+            "Your lowest-value tasks, working upward",
+            "Customer-facing tasks"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Replacement Ladder works from the bottom up — systematically replacing yourself starting with the lowest-value tasks, freeing up time for progressively higher-value work."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the first step to escaping the Technician Trap?",
+          "options": [
+            "Hire a full-time operations manager",
+            "Document your most repeated task",
+            "Fire all existing clients and start fresh",
+            "Work fewer hours immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first step is simply documenting what you do — starting with your most repeated task. Even bullet points of the steps breaks the illusion that \"only you can do it\" and makes future delegation possible."
+        }
+      ]
+    },
+    {
+      "id": "sdo-3-documenting-processes",
+      "dayNumber": 3,
+      "moduleId": "sdo-module-1",
+      "title": "Documenting Processes",
+      "subtitle": "Transform the invisible knowledge in your head into repeatable, teachable systems anyone can follow.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every undocumented process is a ticking time bomb — when the person who \"just knows\" leaves, so does the knowledge.",
+          "body": "Sam Carpenter spent 20 years running his business in chaos — 80-hour weeks, constant firefighting, zero predictability. His transformation began with one insight: his business wasn't broken, it was just undocumented. Every process lived in someone's head (usually his). Once he wrote them down, everything changed. Revenue doubled. His hours halved. The business became something he owned rather than something that owned him."
+        },
+        {
+          "type": "content",
+          "headline": "Why Documentation Changes Everything",
+          "body": "Documented processes create three superpowers: (1) Consistency — the output is the same regardless of who performs the task or what mood they're in. (2) Scalability — you can train new people in days instead of months. (3) Improvement — you can't optimise what you can't see. When a process only lives in your head, you can't analyse it, improve it, or hand it off. Writing it down is the first act of managing it rather than just doing it."
+        },
+        {
+          "type": "content",
+          "headline": "The \"Working Procedures\" Method",
+          "body": "Sam Carpenter calls documented processes \"Working Procedures.\" They don't need to be perfect or beautiful — they need to be functional and current. The format is simple: (1) Title — what process this covers. (2) Purpose — why this exists. (3) Steps — numbered, specific, action-oriented. (4) Quality check — how to verify it's done right. Start with \"good enough\" documentation. A rough document that exists beats a perfect one you never write."
+        },
+        {
+          "type": "content",
+          "headline": "What to Document First",
+          "body": "Don't try to document everything at once — that's how documentation projects die. Prioritise using this matrix: (1) High frequency + high impact = document immediately (daily tasks that affect revenue or customer experience). (2) High frequency + low impact = document next (admin tasks that eat time). (3) Low frequency + high impact = document when they next occur (quarterly processes). (4) Low frequency + low impact = skip or document last."
+        },
+        {
+          "type": "action",
+          "headline": "Document One Process Today",
+          "body": "Pick one task you do at least weekly. Open a simple document and write: the title, why it matters (1 sentence), and the steps as numbered bullet points. Write it as if you're explaining to a smart person who has never done this before. Don't over-explain, don't add context that isn't needed for execution. Aim for 8-15 steps. Once it's written, try following your own instructions exactly — you'll immediately spot gaps. Fix them and save it."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are Sam Carpenter's \"Working Procedures\"?",
+          "options": [
+            "Legal compliance documents for employees",
+            "Functional, documented processes for repeatable tasks",
+            "Annual strategic planning frameworks",
+            "Performance review templates"
+          ],
+          "correctIndex": 1,
+          "explanation": "Working Procedures are Sam Carpenter's term for documented processes — simple, functional documents that capture the steps for repeatable tasks so anyone can perform them consistently."
+        },
+        {
+          "type": "mcq",
+          "question": "Which processes should you document FIRST?",
+          "options": [
+            "The most complex processes",
+            "Low frequency + low impact tasks",
+            "High frequency + high impact tasks",
+            "Whatever the team votes on"
+          ],
+          "correctIndex": 2,
+          "explanation": "Prioritise documenting high frequency + high impact tasks first — these are daily tasks that directly affect revenue or customer experience, giving you the biggest return on documentation effort."
+        },
+        {
+          "type": "mcq",
+          "question": "What transformed Sam Carpenter's 80-hour chaotic weeks?",
+          "options": [
+            "Hiring an expensive consultant",
+            "Documenting all his processes",
+            "Firing half his team",
+            "Switching to a new industry"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sam Carpenter's transformation came from documenting all his processes. Once everything was written down, he could manage, delegate, and improve — revenue doubled and his hours halved."
+        }
+      ]
+    },
+    {
+      "id": "sdo-4-sop-creation",
+      "dayNumber": 4,
+      "moduleId": "sdo-module-1",
+      "title": "SOP Creation Mastery",
+      "subtitle": "Build Standard Operating Procedures that people actually follow — clear, concise, and impossible to mess up.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The difference between a process that collects dust and one that transforms your business? How it's written.",
+          "body": "Most SOPs fail not because the information is wrong, but because they're written for the author, not the reader. They're too long, too vague, or too complicated. A great SOP passes the \"stranger test\": could someone who has never done this task complete it successfully on their first try, using only your document? If yes, you have a real SOP. If no, you have notes that only make sense to you."
+        },
+        {
+          "type": "content",
+          "headline": "The Anatomy of a Great SOP",
+          "body": "Every effective SOP has five parts: (1) Title — clear, specific, searchable. \"How to Process a Refund\" not \"Refund Stuff.\" (2) Scope — when this applies and when it doesn't. (3) Steps — numbered, starting with a verb, one action per step. (4) Decision points — if/then branches for exceptions. (5) Done criteria — how you know the task is complete. Keep it under 2 pages. If it's longer, break it into sub-procedures linked together."
+        },
+        {
+          "type": "content",
+          "headline": "Writing Steps That Work",
+          "body": "Bad step: \"Handle the customer inquiry.\" Good step: \"1. Open the support inbox. 2. Read the customer's message completely. 3. Check if their issue matches a known solution in the FAQ doc. 4. If yes, copy the relevant answer and personalise the greeting. 5. If no, escalate to [name] with a summary of the issue.\" Notice: each step starts with a verb, contains one action, and leaves nothing to interpretation. Write for someone having a bad day — zero ambiguity."
+        },
+        {
+          "type": "content",
+          "headline": "The Living Document Principle",
+          "body": "SOPs are never \"done.\" They're living documents that evolve as your business does. Build in a review trigger: every time someone follows the SOP and hits confusion, they mark the spot. Monthly, review all marked spots and update. Assign an \"owner\" to each SOP — one person responsible for keeping it current. An outdated SOP is worse than no SOP because people lose trust in all documentation when they find one that's wrong."
+        },
+        {
+          "type": "action",
+          "headline": "Upgrade Your Documentation",
+          "body": "Take the process you documented yesterday (or pick another frequent task). Rewrite it using the SOP anatomy: add a clear title, define scope (when this applies), rewrite steps starting with verbs (one action each), add any decision points (if X, then Y), and define \"done criteria.\" Then test it: ask someone else to follow it without asking you any questions. Every question they ask reveals a gap to fix. This is your first production-ready SOP."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the \"stranger test\" for an SOP?",
+          "options": [
+            "Getting a stranger to review your formatting",
+            "Could someone who never did the task complete it using only the document?",
+            "Sharing the SOP with competitors to see if they understand it",
+            "Testing the SOP with a new software tool"
+          ],
+          "correctIndex": 1,
+          "explanation": "The stranger test asks: could someone who has never done this task complete it successfully on their first try, using only your document? If yes, you have a real SOP. If not, you have notes that only make sense to you."
+        },
+        {
+          "type": "mcq",
+          "question": "What makes a good SOP step?",
+          "options": [
+            "Detailed paragraphs explaining context",
+            "Starts with a verb, one action, zero ambiguity",
+            "Bullet points with multiple tasks each",
+            "Brief keywords that experts can interpret"
+          ],
+          "correctIndex": 1,
+          "explanation": "Good SOP steps start with a verb, contain one action per step, and leave nothing to interpretation — written for someone having a bad day who needs zero ambiguity."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is an outdated SOP worse than no SOP at all?",
+          "options": [
+            "It takes up storage space",
+            "People lose trust in ALL documentation",
+            "It confuses the software systems",
+            "It costs money to maintain"
+          ],
+          "correctIndex": 1,
+          "explanation": "When people find one wrong SOP, they lose trust in the entire documentation system. They stop following any documented process, thinking \"these are probably all outdated.\" That destroys the value of everything you've documented."
+        }
+      ]
+    },
+    {
+      "id": "sdo-5-checklists-that-work",
+      "dayNumber": 5,
+      "moduleId": "sdo-module-1",
+      "title": "Checklists That Work",
+      "subtitle": "Simple tools that prevent expensive mistakes — how to design checklists that save time and guarantee quality.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Surgeons, pilots, and astronauts all use checklists — not because they're incompetent, but because they're human.",
+          "body": "Atul Gawande's research showed that a simple surgical checklist reduced deaths by 47% and complications by 36% in hospitals worldwide. Not fancy technology. Not more training. A piece of paper with boxes to tick. The lesson for business: the biggest risks aren't from lack of knowledge — they're from skipping steps you already know. Checklists catch the \"obvious\" things that get missed under pressure."
+        },
+        {
+          "type": "content",
+          "headline": "DO-CONFIRM vs READ-DO",
+          "body": "There are two types of checklists: DO-CONFIRM — you do the work from memory, then pause at a checkpoint to confirm all steps were completed. Used for routine work by experienced people. READ-DO — you read each step, then do it, checking it off before moving to the next. Used for complex or infrequent tasks. Choose the wrong type and people rebel. Experienced staff hate READ-DO for simple tasks (feels patronising). But complex tasks need READ-DO because memory fails under cognitive load."
+        },
+        {
+          "type": "content",
+          "headline": "Designing Effective Checklists",
+          "body": "Keep it to 5-9 items per checkpoint (working memory limit). Use simple language with no jargon. Include only the \"killer items\" — steps that are both essential AND easy to miss. Don't include obvious steps everyone always does. Focus on the points where errors actually happen. Make it fit on one page. If it requires scrolling or page-turning, people won't use it. The best checklist is one that's used — not one that's comprehensive."
+        },
+        {
+          "type": "content",
+          "headline": "Where Checklists Create Maximum Value",
+          "body": "Four high-value checklist opportunities in any business: (1) Client onboarding — ensures nothing is missed and every client gets the same great experience. (2) Project delivery — quality checks before handoff. (3) Financial close — monthly reconciliation steps that prevent costly errors. (4) Emergency response — what to do when things go wrong (server down, complaint escalation, PR crisis). These four cover 80% of the costly mistakes most businesses make."
+        },
+        {
+          "type": "action",
+          "headline": "Build Your First Business Checklist",
+          "body": "Pick one of the four high-value areas: client onboarding, project delivery, monthly financial close, or emergency response. Create a DO-CONFIRM or READ-DO checklist (choose the type that fits). Include 5-9 items max — only the \"killer steps\" that are essential AND easy to skip. Format it clearly: checkbox + short instruction. Test it next time the situation occurs. Did it catch anything you would have missed? Iterate based on real use."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the difference between DO-CONFIRM and READ-DO checklists?",
+          "options": [
+            "DO-CONFIRM is for beginners, READ-DO is for experts",
+            "DO-CONFIRM: do then verify. READ-DO: read each step then do it.",
+            "DO-CONFIRM is digital, READ-DO is paper-based",
+            "They are different names for the same thing"
+          ],
+          "correctIndex": 1,
+          "explanation": "DO-CONFIRM means you do the work from memory, then pause to confirm all steps were completed. READ-DO means you read each step, do it, then check it off before moving on. The choice depends on task complexity and team experience."
+        },
+        {
+          "type": "mcq",
+          "question": "How many items should a checklist checkpoint contain?",
+          "options": [
+            "As many as needed to be thorough",
+            "5-9 items (working memory limit)",
+            "Exactly 10 items",
+            "3 items maximum"
+          ],
+          "correctIndex": 1,
+          "explanation": "Keep checklists to 5-9 items per checkpoint — this aligns with the limits of working memory. More than that and people start skipping items or ignoring the checklist entirely."
+        },
+        {
+          "type": "mcq",
+          "question": "What should a checklist include?",
+          "options": [
+            "Every possible step in the process",
+            "Only steps that are essential AND easy to miss",
+            "Steps that are complex and time-consuming",
+            "Steps that managers want to track"
+          ],
+          "correctIndex": 1,
+          "explanation": "Checklists should include only \"killer items\" — steps that are both essential AND easy to miss. Don't include obvious steps everyone always does. Focus on where errors actually happen."
+        }
+      ]
+    },
+    {
+      "id": "sdo-6-system-audit",
+      "dayNumber": 6,
+      "moduleId": "sdo-module-1",
+      "title": "The System Audit",
+      "subtitle": "Diagnose exactly where your business breaks down — find the bottlenecks, gaps, and failure points hiding in plain sight.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your business doesn't have a people problem — it has a systems problem wearing a people mask.",
+          "body": "When something goes wrong, the instinct is to blame the person. \"They dropped the ball.\" But W. Edwards Deming proved that 94% of problems are systemic, not personal. If the same mistakes keep happening with different people, the system is broken. A System Audit strips away the blame game and reveals the actual structural issues causing repeated failures. It's like an MRI for your business operations."
+        },
+        {
+          "type": "content",
+          "headline": "The Three-Layer Audit",
+          "body": "Audit your business in three layers: (1) Input layer — how does work enter your system? (Leads, requests, orders.) Are there clear intake processes or does work arrive chaotically? (2) Process layer — how is work transformed? Are there defined steps or does each person improvise? (3) Output layer — how is work delivered? Is quality consistent or variable? Map each layer and mark where things break. You'll find most problems concentrate in transitions between layers — handoffs where things fall through cracks."
+        },
+        {
+          "type": "content",
+          "headline": "Finding Bottlenecks",
+          "body": "A bottleneck is any point where work piles up waiting. Common signs: one person is always overwhelmed while others wait, deadlines are consistently missed at the same stage, or quality drops at a specific point. To find bottlenecks, ask: \"Where does work queue?\" and \"Who/what is always the constraint?\" Sam Carpenter's insight: the system will only ever move as fast as its slowest component. Fix the bottleneck, and everything upstream and downstream improves automatically."
+        },
+        {
+          "type": "content",
+          "headline": "The Gap Analysis",
+          "body": "List every process your business runs. For each, answer: (1) Is it documented? (2) Does more than one person know how to do it? (3) Is the quality consistent? (4) Could it survive if the current person doing it left tomorrow? Any \"no\" answer is a gap. Colour-code: Red = undocumented AND single point of failure. Orange = documented but untested/outdated. Green = documented, trained, and verified. Your goal: eliminate all reds within 90 days."
+        },
+        {
+          "type": "action",
+          "headline": "Run Your First System Audit",
+          "body": "Draw three columns: Input, Process, Output. List your core business activities in the Process column. For each, trace backward (where does this work come from?) and forward (what happens after?). Circle any point where: things regularly go wrong, work piles up, quality is inconsistent, or only one person can do it. These circles are your system failures. Pick the one that causes the most pain or costs the most money — that's your #1 priority fix for the next 30 days."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Deming, what percentage of problems are systemic vs personal?",
+          "options": [
+            "50% systemic, 50% personal",
+            "94% systemic, 6% personal",
+            "75% personal, 25% systemic",
+            "60% systemic, 40% personal"
+          ],
+          "correctIndex": 1,
+          "explanation": "W. Edwards Deming proved that 94% of problems are systemic, not personal. If the same mistakes keep happening with different people, the system is broken — not the individuals."
+        },
+        {
+          "type": "mcq",
+          "question": "Where do most problems concentrate in a system audit?",
+          "options": [
+            "In the output/delivery layer",
+            "In transitions between layers (handoffs)",
+            "In the initial input stage only",
+            "Evenly across all layers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most problems concentrate in transitions between layers — the handoffs where work moves from one person, team, or stage to another. These are the cracks where things fall through."
+        },
+        {
+          "type": "mcq",
+          "question": "In the Gap Analysis colour coding, what does \"Red\" indicate?",
+          "options": [
+            "A process that needs minor updates",
+            "An undocumented process AND single point of failure",
+            "A process that is well-documented",
+            "A process that is automated"
+          ],
+          "correctIndex": 1,
+          "explanation": "Red indicates the most critical gaps — processes that are both undocumented AND a single point of failure. If the one person who knows it leaves, the process vanishes. These must be fixed within 90 days."
+        }
+      ]
+    },
+    {
+      "id": "sdo-7-automation-foundations",
+      "dayNumber": 7,
+      "moduleId": "sdo-module-1",
+      "title": "Automation Foundations",
+      "subtitle": "Before you automate anything, learn to identify what SHOULD be automated — and what definitely shouldn't.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Automating a broken process doesn't fix it — it just breaks things faster and at scale.",
+          "body": "The automation gold rush has businesses rushing to \"automate everything.\" But here's what nobody tells you: automating a process that's flawed, undocumented, or misunderstood doesn't save time — it multiplies errors. Bill Gates said it best: \"The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.\""
+        },
+        {
+          "type": "content",
+          "headline": "The Automation Readiness Test",
+          "body": "A process is ready for automation ONLY when it passes all four criteria: (1) It's documented — you have clear, tested steps. (2) It's stable — the process hasn't changed significantly in the last 3 months. (3) It's repeatable — it runs the same way every time with predictable inputs/outputs. (4) It's validated — a human has run it successfully multiple times. If any criterion fails, fix the process FIRST, then automate. Automating before these criteria are met wastes money and creates technical debt."
+        },
+        {
+          "type": "content",
+          "headline": "The Automation Matrix",
+          "body": "Not everything should be automated. Use this decision matrix: HIGH volume + LOW complexity = Automate (data entry, invoice sending, appointment reminders). HIGH volume + HIGH complexity = Partially automate (use tech for the predictable parts, humans for judgment calls). LOW volume + LOW complexity = Don't bother (the setup cost exceeds the time saved). LOW volume + HIGH complexity = Never automate (strategic decisions, relationship-building, creative work). Focus your automation budget on the top-left quadrant first."
+        },
+        {
+          "type": "content",
+          "headline": "Start Simple: The 3-Level Automation Ladder",
+          "body": "Level 1: Templates and shortcuts — email templates, text expansion, saved replies. Takes minutes to set up, saves hours per week. Level 2: Triggers and notifications — automatic alerts when something happens (new lead, task completed, deadline approaching). Level 3: Full workflows — multi-step automations that handle entire processes end-to-end (lead comes in → gets scored → assigned to rep → follow-up sequence starts). Start at Level 1. Master it. Then climb."
+        },
+        {
+          "type": "action",
+          "headline": "Identify Your First Automation Win",
+          "body": "List five tasks you do that are: repetitive, predictable, and high-frequency. Run each through the Automation Readiness Test (documented? stable? repeatable? validated?). For those that pass, identify which level of automation applies (template/trigger/workflow). Pick ONE that's Level 1 or 2 — the simplest possible automation that saves real time. Implement it this week. Don't aim for complex workflows yet. One good template or trigger that saves 30 minutes per week compounds to 26 hours per year."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What must be true BEFORE you automate a process?",
+          "options": [
+            "It must be revenue-generating",
+            "It must pass all 4 criteria: documented, stable, repeatable, validated",
+            "It must involve at least 3 team members",
+            "It must take more than 1 hour per day"
+          ],
+          "correctIndex": 1,
+          "explanation": "A process is ready for automation only when it's documented, stable (hasn't changed in 3 months), repeatable (predictable inputs/outputs), and validated (humans have run it successfully multiple times)."
+        },
+        {
+          "type": "mcq",
+          "question": "Which quadrant should you automate FIRST?",
+          "options": [
+            "High volume + high complexity",
+            "Low volume + low complexity",
+            "High volume + low complexity",
+            "Low volume + high complexity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Start with high volume + low complexity tasks (data entry, invoice sending, reminders). These give the biggest time savings with the lowest implementation risk and cost."
+        },
+        {
+          "type": "mcq",
+          "question": "What is Level 1 on the Automation Ladder?",
+          "options": [
+            "Full end-to-end workflow automation",
+            "Templates and shortcuts (email templates, text expansion)",
+            "AI-powered decision making",
+            "Hiring a virtual assistant"
+          ],
+          "correctIndex": 1,
+          "explanation": "Level 1 is the simplest form of automation: templates and shortcuts like email templates, text expansion, and saved replies. They take minutes to set up and save hours per week."
+        }
+      ]
+    },
+    {
+      "id": "sdo-8-delegation-framework",
+      "dayNumber": 8,
+      "moduleId": "sdo-module-2",
+      "title": "The Delegation Framework",
+      "subtitle": "Stop doing everything yourself — learn a systematic approach to handing off work without losing quality.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Delegation isn't about finding people to do your work — it's about building a system where work gets done without you.",
+          "body": "Most founders try delegation and it \"fails.\" They hand off a task, get poor results, take it back, and conclude \"it's faster if I just do it myself.\" But Mike Michalowicz (Clockwork) argues the problem isn't the person — it's the absence of a system. You can't delegate outcomes you haven't defined, processes you haven't documented, or standards you've never communicated. Delegation without a framework is just hoping."
+        },
+        {
+          "type": "content",
+          "headline": "The 4 Levels of Delegation",
+          "body": "Not all delegation is equal. There are four levels: Level 1: Do exactly as I say (step-by-step instructions). Level 2: Research and recommend (they investigate, you decide). Level 3: Decide and inform (they act, then tell you what they did). Level 4: Own it completely (they handle everything, you see results only). Most founders jump straight to Level 4 and are shocked when it fails. Start at Level 1 or 2, then earn your way up as trust and competence develop."
+        },
+        {
+          "type": "content",
+          "headline": "The Delegation Brief",
+          "body": "Every delegated task needs five elements communicated clearly: (1) Outcome — what does \"done\" look like specifically? (2) Constraints — what boundaries must they stay within? (3) Resources — what tools, budget, or authority do they have? (4) Timeline — when is it due, and are there checkpoints? (5) Escalation — when should they come back to you vs figure it out? Write this in 5 minutes. It saves hours of rework. The brief is your delegation insurance policy."
+        },
+        {
+          "type": "content",
+          "headline": "The Trust Battery",
+          "body": "Shopify's Tobi Lütke uses the concept of a \"Trust Battery.\" Every new relationship starts at 50% charge. Each successful delegation charges it up. Each failure or dropped ball drains it. This reframes delegation as an investment: early delegations should be small and low-risk, building the trust battery. As it charges, you delegate larger, more critical work. Don't give your most important project to someone whose trust battery is at 50%."
+        },
+        {
+          "type": "action",
+          "headline": "Create Your First Delegation Brief",
+          "body": "Pick one task you want to delegate this week (start small — something that takes you 30-60 minutes). Write a Delegation Brief with all 5 elements: Outcome (what \"done\" looks like), Constraints (boundaries), Resources (what they can use), Timeline (when it's due + any check-ins), and Escalation (when to ask you). Determine the delegation level (1-4). Hand it off. Resist the urge to hover. Judge only the result against the brief — not the method they used."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the 4 levels of delegation?",
+          "options": [
+            "Easy, Medium, Hard, Expert",
+            "Do as I say → Research & recommend → Decide & inform → Own it",
+            "Intern, Junior, Senior, Manager",
+            "Plan, Execute, Review, Improve"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 4 levels progress from full control to full autonomy: Level 1 (do exactly as instructed), Level 2 (research and recommend), Level 3 (decide and inform), Level 4 (own it completely)."
+        },
+        {
+          "type": "mcq",
+          "question": "What 5 elements should every Delegation Brief include?",
+          "options": [
+            "Who, What, When, Where, Why",
+            "Outcome, Constraints, Resources, Timeline, Escalation",
+            "Task, Deadline, Budget, Team, Tools",
+            "Goal, Method, Review, Feedback, Payment"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every delegated task needs: Outcome (what done looks like), Constraints (boundaries), Resources (tools/budget/authority), Timeline (due date + checkpoints), and Escalation (when to come back to you)."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the \"Trust Battery\" concept?",
+          "options": [
+            "A tool for measuring team energy levels",
+            "A relationship metric that charges with successful delegations",
+            "A hiring assessment for reliability",
+            "A battery backup for business systems"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Trust Battery starts at 50% with every new relationship. Successful delegations charge it up; failures drain it. It guides how much responsibility to give — start small and build up."
+        }
+      ]
+    },
+    {
+      "id": "sdo-9-hiring-for-roles",
+      "dayNumber": 9,
+      "moduleId": "sdo-module-2",
+      "title": "Hiring for Roles, Not Tasks",
+      "subtitle": "Stop hiring to put out fires — learn to hire strategically for the business you're building, not just the one you have.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most founders hire when they're desperate — and desperation makes terrible hiring decisions.",
+          "body": "You wait until you're drowning, then grab the first person who can \"help.\" Three months later, you have someone doing random tasks that don't form a coherent role. Gino Wickman (Traction) calls this the \"Helper Trap\" — hiring people to help YOU instead of hiring people to OWN a function. The result: you still make every decision, you're still the bottleneck, and now you have payroll to worry about too."
+        },
+        {
+          "type": "content",
+          "headline": "The Accountability Chart",
+          "body": "Before hiring anyone, build an Accountability Chart (not an org chart). An org chart shows reporting lines. An accountability chart shows who OWNS what. List every function your business needs: sales, marketing, operations, finance, delivery, customer success. Under each function, list the 3-5 key accountabilities. Right now, YOUR name is probably in every box. The goal of hiring is to remove your name from boxes — starting with the functions you're worst at or that drain you most."
+        },
+        {
+          "type": "content",
+          "headline": "Right Person, Right Seat",
+          "body": "Wickman's framework uses two tests: Right Person = shares your core values and culture (character fit). Right Seat = has the capacity, desire, and understanding to excel in this specific role (competence fit). Both must be true. Right Person + Wrong Seat = they're great but struggling in the role (move them). Wrong Person + Right Seat = they perform well but poison culture (remove them). Wrong Person + Wrong Seat = urgent removal needed."
+        },
+        {
+          "type": "content",
+          "headline": "Hiring for the Next Stage",
+          "body": "Don't hire for where your business is today — hire for where it will be in 12 months. A common mistake: hiring junior people because you can \"only afford\" them, then spending all your time managing them (costing more than a senior hire). Dan Martell's rule: hire people who have already done what you need at another company. They don't need you to teach them — they need you to get out of their way. Pay more, manage less, grow faster."
+        },
+        {
+          "type": "action",
+          "headline": "Build Your Accountability Chart",
+          "body": "List every function in your business (sales, marketing, operations, finance, delivery, support — whatever applies). Under each, write the 3-5 key accountabilities. Put the name of who currently owns each (probably mostly \"You\"). Now circle the ONE function where: you're weakest, it drains you most, AND it has the biggest growth impact if done well. This is your next hire. Write 3 bullet points defining what \"Right Person, Right Seat\" looks like for that role."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the difference between an org chart and an accountability chart?",
+          "options": [
+            "They are the same thing with different names",
+            "Org chart shows reporting lines; accountability chart shows ownership",
+            "Org chart is for big companies; accountability chart is for startups",
+            "Org chart is public; accountability chart is private"
+          ],
+          "correctIndex": 1,
+          "explanation": "An org chart shows who reports to whom. An accountability chart shows who OWNS what function and its key accountabilities — a much more useful tool for building a team that operates without the founder."
+        },
+        {
+          "type": "mcq",
+          "question": "In the \"Right Person, Right Seat\" framework, what does Right Seat mean?",
+          "options": [
+            "They have a nice office location",
+            "They have capacity, desire, and understanding to excel in the role",
+            "They are the most senior person available",
+            "They sit next to the right people for collaboration"
+          ],
+          "correctIndex": 1,
+          "explanation": "Right Seat means the person has the capacity (ability), desire (wants to do it), and understanding (gets the role) to excel in this specific position. All three must be present."
+        },
+        {
+          "type": "mcq",
+          "question": "What is Dan Martell's hiring rule?",
+          "options": [
+            "Always hire the cheapest option",
+            "Hire people who have already done what you need elsewhere",
+            "Only hire people you personally know",
+            "Hire slow, fire fast"
+          ],
+          "correctIndex": 1,
+          "explanation": "Martell's rule: hire people who have already done what you need at another company. They don't need teaching — they need you to get out of their way. Pay more, manage less, grow faster."
+        }
+      ]
+    },
+    {
+      "id": "sdo-10-training-systems",
+      "dayNumber": 10,
+      "moduleId": "sdo-module-2",
+      "title": "Training Systems",
+      "subtitle": "Replace one-on-one training that drains your time with scalable systems that onboard anyone consistently.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "If training a new person requires you to personally walk them through everything, you don't have a business — you have a dependency.",
+          "body": "Every time a new hire joins and you spend weeks \"showing them the ropes,\" you're proving the business can't function without your personal involvement. The best operators build training INTO the system — so new people get up to speed through documented processes, recorded walkthroughs, and structured onboarding sequences. Not through you personally sacrificing productive weeks repeating the same explanations you gave the last hire."
+        },
+        {
+          "type": "content",
+          "headline": "The Training Funnel",
+          "body": "Structure training in three phases: Phase 1: Context (Days 1-3) — Why does this business exist? Who do we serve? What are our values? What does success look like? This gives meaning to everything that follows. Phase 2: Process (Days 4-10) — Walk through each SOP relevant to their role. They shadow, then do with oversight, then do independently. Phase 3: Mastery (Days 11-30) — Increasing independence with decreasing check-ins. By day 30, they should operate without daily guidance."
+        },
+        {
+          "type": "content",
+          "headline": "The Loom Library",
+          "body": "Record yourself doing every key task ONCE. Store these recordings in an organised library. When a new person starts, they watch the videos before asking questions. This is not lazy management — it's scalable management. One recording trains every future hire at that task. Update recordings only when the process changes. This single technique eliminates 60-80% of repetitive training time. Name videos clearly: \"How to [exact task] — [role name].\""
+        },
+        {
+          "type": "content",
+          "headline": "The 30-60-90 Day Framework",
+          "body": "Set clear expectations at each milestone: Day 30 — basic competence. They can perform core tasks with minimal supervision using SOPs. Day 60 — confident contribution. They handle standard situations independently and only escalate genuine exceptions. Day 90 — full ownership. They own their function, proactively improve processes, and train others on what they've mastered. If someone isn't hitting these milestones, the training system (or the hire) needs attention — don't wait 6 months hoping it improves."
+        },
+        {
+          "type": "action",
+          "headline": "Start Your Training Library",
+          "body": "Pick the role that's hardest to train (or has the most turnover). List the top 5 tasks that role must master. Record a short screen-recording or voice note for each — just you doing the task and explaining as you go (5-10 minutes max per recording). Save them in a folder labelled \"[Role Name] Training.\" Now write a one-page \"Day 1 Guide\" listing what to watch, in what order, and what to try after each video. You've just built the beginning of a scalable training system."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the three phases of the Training Funnel?",
+          "options": [
+            "Learn, Do, Teach",
+            "Context, Process, Mastery",
+            "Read, Watch, Practice",
+            "Introduction, Training, Testing"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Training Funnel has three phases: Context (Days 1-3, understanding the why), Process (Days 4-10, learning SOPs with oversight), and Mastery (Days 11-30, increasing independence with decreasing check-ins)."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary benefit of a \"Loom Library\"?",
+          "options": [
+            "It looks professional to clients",
+            "One recording trains every future hire at that task",
+            "It replaces written documentation entirely",
+            "It allows remote surveillance of employees"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Loom Library eliminates 60-80% of repetitive training time because you record yourself doing each task once, and every future hire learns from that same recording — infinitely scalable training."
+        },
+        {
+          "type": "mcq",
+          "question": "In the 30-60-90 Day Framework, what should be true at Day 90?",
+          "options": [
+            "They can follow SOPs with minimal supervision",
+            "They handle standard situations independently",
+            "They own their function and proactively improve processes",
+            "They are ready to be promoted"
+          ],
+          "correctIndex": 2,
+          "explanation": "At Day 90, the person should own their function fully, proactively improve processes, and even train others on what they've mastered — not just perform tasks but operate with full ownership."
+        }
+      ]
+    },
+    {
+      "id": "sdo-11-accountability-chart",
+      "dayNumber": 11,
+      "moduleId": "sdo-module-2",
+      "title": "The Accountability Chart",
+      "subtitle": "Create absolute clarity on who owns what — eliminate confusion, duplication, and the \"I thought they were doing it\" problem.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "When everyone is responsible, nobody is responsible — and that's where accountability dies.",
+          "body": "Gino Wickman found that the #1 people problem in growing businesses isn't bad hires — it's unclear accountability. Tasks fall through cracks not because people are lazy, but because nobody explicitly owns them. \"I assumed Sarah was handling that.\" \"I thought it was Mark's job.\" The Accountability Chart eliminates this ambiguity permanently by making ownership visible, specific, and non-negotiable."
+        },
+        {
+          "type": "content",
+          "headline": "Structure Over People",
+          "body": "The crucial principle: define the structure FIRST, then fill it with people. Most businesses do the opposite — they look at who they have and build roles around them. This creates a fragile structure that collapses when someone leaves. Instead, define the 3-5 major functions your business needs to thrive regardless of who fills them. Then, determine who currently owns each (even if one person owns multiple). This reveals gaps and overlaps you can't see otherwise."
+        },
+        {
+          "type": "content",
+          "headline": "The Five Key Roles",
+          "body": "Every business, regardless of size, has five core functions that need clear owners: (1) Visionary/Integrator — strategy and execution leadership. (2) Sales/Marketing — generating revenue. (3) Operations — delivering the product/service. (4) Finance — managing money and data. (5) People/Culture — hiring, training, retention. In a solo business, you own all five. As you grow, you transfer ownership one function at a time. The first hire should take your weakest function."
+        },
+        {
+          "type": "content",
+          "headline": "One Owner, Multiple Supporters",
+          "body": "Critical rule: every accountable item has ONE owner. Not two. Not \"shared.\" One. Others may support, contribute, or execute tasks within it — but one person is the single throat to choke (accountability) and the single hand to shake (credit). When two people \"share\" ownership, neither truly owns it. Arguments happen over who dropped the ball. The rule is simple: if you can't point to ONE name, it's not properly owned yet."
+        },
+        {
+          "type": "action",
+          "headline": "Map Your Current Accountability",
+          "body": "Draw a simple chart with your five core functions. Under each, list 3-5 specific accountabilities (not tasks — outcomes they're responsible for). Write one name next to each. Rules: every item gets exactly ONE name. If the same name appears more than 10 times, you've found your bottleneck. If an item has no name, you've found a gap. If an item has two names, choose one. Share this chart with your team (or review it yourself). Ask: \"Does everyone agree on who owns what?\" Fix disagreements immediately."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the #1 people problem in growing businesses according to Wickman?",
+          "options": [
+            "Hiring the wrong people",
+            "Unclear accountability",
+            "Low employee motivation",
+            "Poor compensation packages"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gino Wickman found that unclear accountability — not bad hires — is the #1 people problem. Tasks fall through cracks because nobody explicitly owns them, not because people are lazy or incompetent."
+        },
+        {
+          "type": "mcq",
+          "question": "How many owners should every accountable item have?",
+          "options": [
+            "Two, for redundancy",
+            "As many as are involved",
+            "Exactly one",
+            "It depends on the item's complexity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Every accountable item must have exactly ONE owner. When two people \"share\" ownership, neither truly owns it and accountability disappears. One throat to choke, one hand to shake."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you define FIRST when building an accountability chart?",
+          "options": [
+            "The people available to fill roles",
+            "The structure/functions needed, regardless of people",
+            "The budget for each position",
+            "The job titles and descriptions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Define the structure first, then fill it with people. Building roles around existing people creates fragile structures. Define what functions the business needs to thrive, then assign ownership."
+        }
+      ]
+    },
+    {
+      "id": "sdo-12-clockwork-method",
+      "dayNumber": 12,
+      "moduleId": "sdo-module-2",
+      "title": "The Clockwork Method",
+      "subtitle": "Design your business to run like clockwork — predictable, reliable, and independent of any single person.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The ultimate test of your business: can you disappear for four weeks and come back to find it thriving?",
+          "body": "Mike Michalowicz challenges every business owner with the \"4-Week Vacation Test.\" If your business can't survive — let alone grow — without you for four weeks, it's not a business. It's a job with your name on the door. The Clockwork method is a systematic approach to designing operations that run without constant owner intervention, like a clock that keeps perfect time even when nobody's watching."
+        },
+        {
+          "type": "content",
+          "headline": "The Queen Bee Role (QBR)",
+          "body": "Every business has one critical function that, if it stopped, everything else would collapse — the Queen Bee Role. In a restaurant, it's the food quality. In a consultancy, it's delivering client results. In e-commerce, it's fulfilling orders. The QBR must be protected above all else. Everyone in the business should understand: their job is to serve the QBR. Once you identify yours, ask: \"Is the QBR dependent on ME?\" If yes, that's your first Clockwork priority — transferring QBR execution to someone or something else."
+        },
+        {
+          "type": "content",
+          "headline": "The ACDC Time Analysis",
+          "body": "Track how you spend time across four categories: Attract (getting new customers), Convert (turning prospects into buyers), Deliver (fulfilling promises), Collect (getting paid and managing cash). Most owners spend 80%+ on Deliver — doing the work. The Clockwork target: spend no more than 25% of YOUR time on Deliver. The rest goes to Attract, Convert, and strategic work. This shift is what separates business owners from self-employed people."
+        },
+        {
+          "type": "content",
+          "headline": "Designing for Absence",
+          "body": "The four-step Clockwork process: (1) Identify your QBR and protect it. (2) Transfer tasks systematically using the Capture-Transfer-Verify method: capture what you do, transfer it with documentation, verify the person can do it independently. (3) Trash and reduce — eliminate tasks that don't serve the QBR (surprisingly many). (4) Test with progressively longer absences: 1 day, then 1 week, then 2 weeks, then 4 weeks. Each absence reveals what still depends on you."
+        },
+        {
+          "type": "action",
+          "headline": "Identify Your QBR",
+          "body": "Answer this: \"If one function in my business stopped completely for a week, which loss would be most catastrophic?\" That's your Queen Bee Role. Now ask: \"Am I personally executing the QBR?\" If yes, plan how to transfer it. If no, ask: \"Is the QBR protected? Does the team understand they serve it?\" Write down your QBR, who currently executes it, and one step you could take this month to make it less dependent on any single person (including you)."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the \"4-Week Vacation Test\"?",
+          "options": [
+            "A method for planning annual leave",
+            "Testing if your business can thrive without you for 4 weeks",
+            "A framework for employee vacation policies",
+            "A stress test for financial reserves"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 4-Week Vacation Test asks: can your business survive and thrive without you for four weeks? If not, it's not truly a business — it's a job with your name on the door."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the Queen Bee Role (QBR)?",
+          "options": [
+            "The CEO's primary responsibility",
+            "The one critical function that, if it stopped, everything collapses",
+            "The most profitable product or service",
+            "The highest-paid role in the company"
+          ],
+          "correctIndex": 1,
+          "explanation": "The QBR is the one critical function that, if it stopped, everything else would collapse. Everyone in the business should understand their job is to serve and protect the QBR."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the Clockwork target for time spent on \"Deliver\"?",
+          "options": [
+            "80% or more",
+            "50% of your time",
+            "No more than 25% of YOUR time",
+            "0% — never deliver personally"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Clockwork target is spending no more than 25% of your time on Deliver (doing the work). The rest goes to Attract, Convert, and strategic work — this separates owners from self-employed people."
+        }
+      ]
+    },
+    {
+      "id": "sdo-13-letting-go",
+      "dayNumber": 13,
+      "moduleId": "sdo-module-2",
+      "title": "The Art of Letting Go",
+      "subtitle": "Overcome the psychological barriers that keep you controlling everything — perfectionism, fear, and identity attachment.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The hardest part of building a great team isn't hiring — it's trusting them enough to step back.",
+          "body": "You intellectually know you should delegate. You've read the books. You've built the SOPs. But when the moment comes to actually hand something over, there's a voice: \"They won't do it as well as I would.\" And you're probably right — at first. But that's the wrong comparison. The right comparison is: can they do it well ENOUGH so that you can focus on things only you can do? 80% of your quality, done by someone else, is infinitely more valuable than 100% done by you at the cost of your growth."
+        },
+        {
+          "type": "content",
+          "headline": "The Three Fears of Delegation",
+          "body": "Fear 1: Quality — \"They'll mess it up.\" Solution: Define minimum acceptable quality clearly. Accept good enough. Fear 2: Speed — \"It'll take them longer.\" Solution: Yes, the first 3 times. By time 5, they'll match or exceed you because it's their ONE thing. Fear 3: Identity — \"If I'm not doing the work, what AM I?\" Solution: Your identity evolves from doer to builder. A chef who becomes a restaurateur isn't less of a chef — they're more. They've graduated."
+        },
+        {
+          "type": "content",
+          "headline": "The 70% Rule",
+          "body": "Dan Martell's rule: if someone can do the task at 70% of your quality, delegate it. Why? Because (1) they'll improve with repetition, (2) freeing you for CEO-level work generates more value than the 30% quality gap, and (3) perfection in low-leverage tasks is a luxury you can't afford. The 70% rule gives you permission to let go. It reframes delegation from \"finding someone as good as me\" to \"finding someone good enough to free me.\""
+        },
+        {
+          "type": "content",
+          "headline": "Progressive Release",
+          "body": "Don't go from \"I do everything\" to \"they do everything\" overnight. Use progressive release: Week 1 — they watch you do it (you narrate). Week 2 — they do it while you watch (you correct). Week 3 — they do it alone, you review output (you give feedback). Week 4 — they do it alone, you spot-check occasionally. Week 5+ — they own it, you see results in dashboards only. This graduated approach builds confidence on both sides and catches issues before they become disasters."
+        },
+        {
+          "type": "action",
+          "headline": "Release One Thing This Week",
+          "body": "Pick one task you've been holding onto because \"nobody does it like you.\" Apply the 70% rule: could someone else do this at 70% quality? If yes, commit to releasing it using progressive release. Start at the appropriate week (maybe they're already past the watching phase). Write down the minimum acceptable standard — what would \"good enough\" look like? Hand it off with that standard clearly communicated. Give feedback on the output, not the method. Journal how it feels — the discomfort is growth."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is Dan Martell's 70% Rule?",
+          "options": [
+            "Spend 70% of time on high-value work",
+            "If someone can do it at 70% of your quality, delegate it",
+            "Aim for 70% completion before launching",
+            "Retain only 70% of your team annually"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 70% Rule says: if someone can do the task at 70% of your quality, delegate it. They'll improve with practice, and freeing you for higher-value work generates more overall value than the quality gap costs."
+        },
+        {
+          "type": "mcq",
+          "question": "What are the three fears of delegation?",
+          "options": [
+            "Cost, Time, Risk",
+            "Quality, Speed, Identity",
+            "Failure, Judgement, Loss",
+            "Control, Perfection, Trust"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three fears are: Quality (they'll mess it up), Speed (it'll take them longer), and Identity (if I'm not doing the work, what am I?). Each has a specific solution that reframes the concern."
+        },
+        {
+          "type": "mcq",
+          "question": "How does \"Progressive Release\" work?",
+          "options": [
+            "Fire the person gradually over time",
+            "They watch → they do with oversight → they own it alone",
+            "Release products in small batches",
+            "Gradually reduce employee hours"
+          ],
+          "correctIndex": 1,
+          "explanation": "Progressive Release graduates through: they watch you (week 1), they do while you watch (week 2), they do alone with review (week 3), spot-checks only (week 4), full ownership (week 5+)."
+        }
+      ]
+    },
+    {
+      "id": "sdo-14-self-managing-team",
+      "dayNumber": 14,
+      "moduleId": "sdo-module-2",
+      "title": "Building a Self-Managing Team",
+      "subtitle": "The ultimate goal — a team that solves problems, improves processes, and grows the business without waiting for your input.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A self-managing team doesn't mean an unmanaged team — it means a team that manages itself THROUGH the systems you've built.",
+          "body": "The dream isn't \"no management\" — it's self-management through structure. When every team member knows their role, their metrics, their decision-making authority, and the process for resolving issues — they don't need you to tell them what to do. They already know. The leader's job shifts from directing daily work to designing the system that makes daily work self-evident."
+        },
+        {
+          "type": "content",
+          "headline": "The Self-Management Stack",
+          "body": "Five layers create a self-managing team: (1) Clear accountability — everyone knows what they own. (2) Defined metrics — everyone knows how success is measured. (3) Decision authority — everyone knows what they can decide without asking. (4) Escalation paths — everyone knows when and how to raise issues. (5) Improvement loops — everyone is expected to improve their own processes. If any layer is missing, the team reverts to needing you for direction. Build all five."
+        },
+        {
+          "type": "content",
+          "headline": "Decision-Making Boundaries",
+          "body": "The biggest time-killer for founders: being asked to approve everything. Fix this by defining clear decision boundaries: Under $X = decide without asking. Affecting Y customers or fewer = handle it independently. Within these parameters = use your judgment. Outside these boundaries = escalate to me. Write these boundaries explicitly. Post them visibly. When someone asks you something within their authority, don't answer — point them back to their boundaries. Train autonomy by refusing to make decisions they're empowered to make."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Pulse",
+          "body": "Self-managing teams still need rhythm. The Weekly Pulse is a short, structured meeting (30-60 min) that replaces endless ad-hoc check-ins: (1) Scorecard review — 5 min (are we hitting our numbers?). (2) Wins and recognition — 5 min. (3) Stuck points — 10 min (what's blocking progress?). (4) Action items — 5 min (who does what by when?). This meeting is the team's self-management mechanism — they hold EACH OTHER accountable, not you holding all of them."
+        },
+        {
+          "type": "action",
+          "headline": "Design Your Self-Management System",
+          "body": "For your team (or future team), define one element from each layer: (1) Write one clear accountability per person/role. (2) Choose one metric each person tracks weekly. (3) Define one decision boundary (e.g., \"Spend up to $200 without approval\"). (4) Create one escalation rule (e.g., \"If customer threatens legal, escalate immediately\"). (5) Set one improvement expectation (e.g., \"Improve one SOP per month\"). Share these with the team and get their input. A system they helped design is one they'll follow."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the 5 layers of the Self-Management Stack?",
+          "options": [
+            "Hiring, Training, Managing, Reviewing, Firing",
+            "Accountability, Metrics, Decision Authority, Escalation, Improvement Loops",
+            "Vision, Strategy, Tactics, Operations, Feedback",
+            "Goals, Roles, Processes, Meetings, Reviews"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Self-Management Stack has 5 layers: Clear accountability, Defined metrics, Decision authority, Escalation paths, and Improvement loops. All five must be present for true self-management."
+        },
+        {
+          "type": "mcq",
+          "question": "How should you respond when someone asks you to make a decision within THEIR authority?",
+          "options": [
+            "Make the decision quickly to unblock them",
+            "Refuse and point them back to their boundaries",
+            "Make the decision but document it for training",
+            "Ask them to submit a formal request"
+          ],
+          "correctIndex": 1,
+          "explanation": "When someone asks you to decide something within their authority, don't answer — point them back to their decision boundaries. This trains autonomy by refusing to make decisions they're empowered to make."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the Weekly Pulse meeting?",
+          "options": [
+            "For the founder to assign tasks for the week",
+            "A self-management mechanism where the team holds EACH OTHER accountable",
+            "To review individual employee performance",
+            "To plan the company's long-term strategy"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Weekly Pulse replaces ad-hoc check-ins with structured self-accountability. The team holds EACH OTHER accountable through scorecard review, wins, stuck points, and action items — not the founder managing everyone."
+        }
+      ]
+    },
+    {
+      "id": "sdo-15-eos-foundations",
+      "dayNumber": 15,
+      "moduleId": "sdo-module-3",
+      "title": "EOS Foundations",
+      "subtitle": "Implement the Entrepreneurial Operating System — a proven framework for running a business with clarity, traction, and health.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most businesses don't fail from a lack of great ideas — they fail from a lack of a system to execute those ideas consistently.",
+          "body": "Gino Wickman spent 20 years working with entrepreneurial companies and found a consistent pattern: the most successful ones all ran on an operating system — a set of simple, practical tools used consistently by the whole team. EOS (Entrepreneurial Operating System) isn't a theory. It's a field-tested framework used by over 200,000 companies to get what they want from their businesses."
+        },
+        {
+          "type": "content",
+          "headline": "The Six Key Components",
+          "body": "EOS strengthens six components every business needs: (1) Vision — where are we going and how do we get there? (2) People — do we have the right people in the right seats? (3) Data — are we managing by facts or feelings? (4) Issues — are we solving problems permanently? (5) Process — have we documented our core processes? (6) Traction — are we executing consistently? Most businesses are strong in 1-2 components and weak in the others. EOS creates balanced strength across all six."
+        },
+        {
+          "type": "content",
+          "headline": "The Vision/Traction Organiser (V/TO)",
+          "body": "The V/TO is a two-page document that captures your entire business direction: Core Values (who you are), Core Focus (what you do best and love), 10-Year Target (your big hairy goal), Marketing Strategy (your differentiators and guarantee), 3-Year Picture (what the business looks like), 1-Year Plan (this year's priorities), and Quarterly Rocks (the 3-7 most important things this quarter). Two pages. Complete clarity. Everyone aligned."
+        },
+        {
+          "type": "content",
+          "headline": "Why Simple Systems Win",
+          "body": "EOS works because it's simple enough for every person in the organisation to understand and use. Complex systems get abandoned. Simple ones get adopted. The tools are deliberately basic: a one-page accountability chart, a weekly scorecard with 5-15 numbers, a structured 90-minute weekly meeting, and a quarterly planning rhythm. No MBA required. No expensive software needed. A whiteboard and commitment are enough to start."
+        },
+        {
+          "type": "action",
+          "headline": "Start Your V/TO",
+          "body": "Grab a blank page and answer: (1) What are your 3-5 Core Values? (the non-negotiable principles you and your team live by). (2) What is your Core Focus? (the one thing you do better than anyone + what you're passionate about). (3) What is your 10-Year Target? (one specific measurable goal). Don't overthink — write your first instinct. These three elements form the foundation of your EOS implementation. You'll refine them, but getting them on paper is the starting line."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the Six Key Components of EOS?",
+          "options": [
+            "People, Product, Price, Place, Promotion, Process",
+            "Vision, People, Data, Issues, Process, Traction",
+            "Strategy, Operations, Finance, Marketing, Sales, Culture",
+            "Plan, Do, Check, Act, Review, Improve"
+          ],
+          "correctIndex": 1,
+          "explanation": "The six EOS components are: Vision (direction), People (right seats), Data (facts over feelings), Issues (solving permanently), Process (documentation), and Traction (consistent execution)."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the Vision/Traction Organiser (V/TO)?",
+          "options": [
+            "A project management software tool",
+            "A two-page document capturing entire business direction",
+            "An employee evaluation form",
+            "A financial planning spreadsheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "The V/TO is a two-page document that captures core values, core focus, 10-year target, marketing strategy, 3-year picture, 1-year plan, and quarterly rocks — complete business clarity in two pages."
+        },
+        {
+          "type": "mcq",
+          "question": "Why does EOS work according to Wickman?",
+          "options": [
+            "It uses advanced AI and technology",
+            "It's simple enough for everyone to understand and use",
+            "It requires expensive consultants to implement",
+            "It only works for large corporations"
+          ],
+          "correctIndex": 1,
+          "explanation": "EOS works because it's deliberately simple — every person can understand and use the tools. Complex systems get abandoned; simple ones get adopted. A whiteboard and commitment are enough to start."
+        }
+      ]
+    },
+    {
+      "id": "sdo-16-meeting-rhythms",
+      "dayNumber": 16,
+      "moduleId": "sdo-module-3",
+      "title": "Meeting Rhythms",
+      "subtitle": "Replace meeting chaos with a structured rhythm that keeps everyone aligned without wasting anyone's time.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The problem isn't too many meetings — it's too many bad meetings. The right meetings at the right rhythm eliminate the need for everything else.",
+          "body": "Companies swing between two extremes: meeting-heavy cultures where nothing gets done because everyone's \"in a meeting,\" and meeting-phobic cultures where nobody communicates and problems fester. EOS solves this with a meeting rhythm: specific meetings, specific agendas, specific cadences. When the rhythm is right, informal meetings, \"got a minute?\" interruptions, and email chains disappear because everything has a home."
+        },
+        {
+          "type": "content",
+          "headline": "The Level 10 Meeting (L10)",
+          "body": "The L10 is EOS's signature weekly meeting: same day, same time, 90 minutes, never cancelled. The agenda: Segue/Check-in (5 min), Scorecard review (5 min), Rock review (5 min), Customer/Employee headlines (5 min), To-do review (5 min), IDS (Identify-Discuss-Solve) issues (60 min), Conclude (5 min). The 60 minutes on IDS is the magic — it forces the team to solve real issues instead of just reporting status. Rate the meeting 1-10 at the end. Aim for 8+."
+        },
+        {
+          "type": "content",
+          "headline": "The Quarterly and Annual Rhythm",
+          "body": "Beyond weekly L10s: Quarterly (full day) — Review last quarter's rocks, set next quarter's rocks, identify the 3-7 most important priorities for the next 90 days. Solve the biggest issues facing the business. Annual (two days) — Review the V/TO, update the 1-year plan, align on direction, team health check, strategic planning. These three cadences (weekly + quarterly + annual) create a complete operating rhythm. No meeting falls outside these three — if it does, something's wrong."
+        },
+        {
+          "type": "content",
+          "headline": "Making Meetings Work",
+          "body": "Rules that make the rhythm actually work: (1) Start on time, end on time — no exceptions. (2) Same day, same time every week — predictability matters. (3) No devices except for note-taking. (4) Everyone comes prepared (scorecard updated, to-dos done or flagged). (5) Tangents go to the \"Issues List\" for IDS time — don't solve them in the moment. (6) Action items are captured with a specific owner and due date. (7) If the meeting consistently rates below 8, fix the meeting — don't abandon it."
+        },
+        {
+          "type": "action",
+          "headline": "Implement Your First L10",
+          "body": "If you have a team: schedule a recurring 90-minute meeting at the same time every week. Print or share the L10 agenda template. Run it exactly as structured for 4 weeks before modifying anything. If you're solo: do a \"solo L10\" — 30 minutes weekly reviewing your scorecard, rocks progress, and top 3 issues to solve. The discipline of a structured weekly review transforms execution whether you have a team of 50 or a team of one."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "How long is the IDS (Identify-Discuss-Solve) portion of an L10 meeting?",
+          "options": [
+            "15 minutes",
+            "30 minutes",
+            "60 minutes",
+            "90 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "The IDS portion gets 60 of the 90 total minutes — it's the heart of the L10 meeting where the team actually solves real issues instead of just reviewing status. This is where the magic happens."
+        },
+        {
+          "type": "mcq",
+          "question": "What three meeting cadences form the complete EOS rhythm?",
+          "options": [
+            "Daily, Weekly, Monthly",
+            "Weekly, Quarterly, Annual",
+            "Monthly, Quarterly, Bi-annual",
+            "Weekly, Monthly, Annual"
+          ],
+          "correctIndex": 1,
+          "explanation": "The complete EOS meeting rhythm consists of weekly L10s (90 min), quarterly planning days (full day), and annual planning sessions (two days). No meeting should fall outside these three."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do if a tangent comes up during an L10 meeting?",
+          "options": [
+            "Discuss it immediately while it's fresh",
+            "Table it for next week automatically",
+            "Add it to the Issues List for IDS time",
+            "Send it to the founder to decide"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tangents go to the Issues List and get addressed during the 60-minute IDS portion. Don't solve them in the moment — that derails the meeting structure and wastes other people's time."
+        }
+      ]
+    },
+    {
+      "id": "sdo-17-scorecard-metrics",
+      "dayNumber": 17,
+      "moduleId": "sdo-module-3",
+      "title": "Scorecard Metrics",
+      "subtitle": "Manage your business by numbers, not feelings — build a weekly scorecard that gives you the truth in 5 minutes flat.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "If you can't tell me in 60 seconds whether last week was a good week for your business, you're flying blind.",
+          "body": "Most business owners rely on gut feel: \"I think things are going well\" or \"it feels slow.\" But feelings lag reality by weeks or months. By the time you \"feel\" a problem, it's been festering. A scorecard gives you the truth weekly — in 5 minutes of review, you know exactly what's working, what's not, and where to focus your energy. It's the difference between driving by looking at the dashboard and driving by listening to the engine noise."
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Scorecard",
+          "body": "A great scorecard has 5-15 numbers reviewed weekly. Each number has: (1) An owner — one person responsible. (2) A goal — what \"good\" looks like this week. (3) Actual — what actually happened. (4) A trend — are we improving, declining, or flat? Choose numbers that are leading indicators (predict the future) not just lagging indicators (report the past). Revenue is lagging — it tells you what already happened. Proposals sent is leading — it predicts future revenue."
+        },
+        {
+          "type": "content",
+          "headline": "Leading vs Lagging Indicators",
+          "body": "Lagging indicators: revenue, profit, customer count, churn rate — they report what already happened and can't be directly influenced this week. Leading indicators: calls made, proposals sent, content published, demos booked, follow-ups completed — they predict future lagging results AND can be directly influenced this week. Your scorecard should be 70% leading, 30% lagging. This gives you the power to change course BEFORE problems show up in revenue."
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Review Discipline",
+          "body": "Every week, spend 5 minutes reviewing your scorecard. For each number: Is it on track (green), slightly off (yellow), or missed (red)? Green = celebrate and maintain. Yellow = investigate this week, course-correct before it goes red. Red = this is an issue — add it to your issues list for immediate IDS attention. The power isn't in the numbers themselves — it's in the consistency of review. A mediocre scorecard reviewed weekly beats a perfect one reviewed monthly."
+        },
+        {
+          "type": "action",
+          "headline": "Build Your First Scorecard",
+          "body": "Create a simple spreadsheet or table with these columns: Metric | Owner | Weekly Goal | Week 1 | Week 2 | Week 3... Choose 5-8 metrics: include at least 3 leading indicators (activities you directly control) and 2-3 lagging indicators (results you care about). For each, set a realistic weekly target. Start tracking this week. Review every Monday morning before you do anything else. After 4 weeks, you'll have enough data to spot trends and make better decisions."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the recommended ratio of leading to lagging indicators?",
+          "options": [
+            "50% leading, 50% lagging",
+            "70% leading, 30% lagging",
+            "30% leading, 70% lagging",
+            "100% leading indicators only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your scorecard should be 70% leading indicators (predictive, controllable) and 30% lagging indicators (results). This balance gives you power to change course before problems show up in revenue."
+        },
+        {
+          "type": "mcq",
+          "question": "How many numbers should a good scorecard contain?",
+          "options": [
+            "1-3 numbers",
+            "5-15 numbers",
+            "20-30 numbers",
+            "As many as possible"
+          ],
+          "correctIndex": 1,
+          "explanation": "A great scorecard has 5-15 numbers — enough to give you a complete picture, but few enough to review in 5 minutes. More than 15 and you lose focus; fewer than 5 and you miss important signals."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is a LEADING indicator?",
+          "options": [
+            "Monthly revenue",
+            "Customer churn rate",
+            "Proposals sent this week",
+            "Last quarter's profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "Proposals sent is a leading indicator — it's an activity you directly control this week that predicts future revenue. Revenue, churn, and profit are all lagging indicators that report what already happened."
+        }
+      ]
+    },
+    {
+      "id": "sdo-18-issue-resolution",
+      "dayNumber": 18,
+      "moduleId": "sdo-module-3",
+      "title": "Issue Resolution (IDS)",
+      "subtitle": "Stop solving the same problems over and over — master the IDS method to resolve issues permanently.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average business solves the same 10 problems on repeat — because they never actually resolve them, they just cope with the symptoms.",
+          "body": "Every week the same issues resurface: the delivery is late, the customer is unhappy, the process breaks. You patch it, move on, and next week it's back. EOS's IDS method (Identify, Discuss, Solve) breaks this cycle by forcing you to find and fix the root cause — not just the symptom. Once a problem is truly IDS'd, it should never come back. If it does, you didn't solve it — you only discussed it."
+        },
+        {
+          "type": "content",
+          "headline": "Identify: Name the Real Issue",
+          "body": "Most teams waste time solving the wrong problem. The first step is identifying the actual root issue — not the symptom. Ask: \"What's really going on here?\" repeatedly until you hit the core. Symptom: \"Customer complained about delivery.\" Root issue: \"We have no quality check before shipment.\" Symptom: \"Marketing isn't generating leads.\" Root issue: \"We haven't defined our target customer clearly.\" Don't move to Discuss until everyone agrees on the root issue."
+        },
+        {
+          "type": "content",
+          "headline": "Discuss: Talk It Out (Briefly)",
+          "body": "Once the real issue is identified, discuss openly — but briefly. EOS has strict rules: everyone gets a voice, but no one gets a monologue. Contributions should be under 2 minutes each. The goal is to surface perspectives and potential solutions, not to debate endlessly. Most issues need 5-10 minutes of discussion, not 30. If you're going past 15 minutes, you probably haven't identified the true root issue. Go back to Identify."
+        },
+        {
+          "type": "content",
+          "headline": "Solve: Decide and Assign",
+          "body": "Solve means making a decision and assigning an action: WHO does WHAT by WHEN. Not \"we should probably...\" but \"Sarah will implement the quality check by Friday.\" The solve must be a permanent fix, not a temporary patch. Ask: \"If we do this, will the issue come back?\" If yes, dig deeper. If no, you've solved it. Capture the to-do with a specific owner and a 7-day deadline (most IDS actions should be completable in one week)."
+        },
+        {
+          "type": "action",
+          "headline": "IDS Your Top Issue",
+          "body": "Write down the three issues that bother you most in your business right now. Pick the one that recurs most frequently. Apply IDS: (1) Identify — what's the ROOT cause, not the symptom? Ask \"why?\" 3-5 times. (2) Discuss — what are possible permanent solutions? Brainstorm 3 options. (3) Solve — pick the best solution, assign yourself a specific action with a deadline this week. Execute it. Next week, check: did the issue come back? If yes, you solved the symptom, not the root. Try again at a deeper level."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What does IDS stand for?",
+          "options": [
+            "Ideate, Design, Ship",
+            "Identify, Discuss, Solve",
+            "Investigate, Document, Systemise",
+            "Input, Decision, Solution"
+          ],
+          "correctIndex": 1,
+          "explanation": "IDS stands for Identify (name the real root issue), Discuss (talk it out briefly), and Solve (decide who does what by when). It's EOS's method for resolving issues permanently."
+        },
+        {
+          "type": "mcq",
+          "question": "What indicates you haven't truly \"Solved\" an issue?",
+          "options": [
+            "It took less than 5 minutes",
+            "The issue comes back",
+            "It required a team discussion",
+            "It needed a budget allocation"
+          ],
+          "correctIndex": 1,
+          "explanation": "If the issue comes back, you didn't solve it — you only addressed the symptom. A true solve is a permanent fix. If it recurs, go back and dig deeper to find the real root cause."
+        },
+        {
+          "type": "mcq",
+          "question": "If discussion goes past 15 minutes, what should you do?",
+          "options": [
+            "Keep discussing until consensus is reached",
+            "Vote on the best solution",
+            "Go back to Identify — the root issue likely isn't clear",
+            "Table it for next week"
+          ],
+          "correctIndex": 2,
+          "explanation": "If discussion exceeds 15 minutes, it usually means the real root issue hasn't been properly identified. Go back to the Identify step and dig deeper — long discussions signal unclear problems."
+        }
+      ]
+    },
+    {
+      "id": "sdo-19-business-without-you",
+      "dayNumber": 19,
+      "moduleId": "sdo-module-3",
+      "title": "A Business Without You",
+      "subtitle": "Design a business that generates value, grows, and thrives — whether you're there or not.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The most valuable business you can build is one that doesn't need you — and paradoxically, that's also the most enjoyable one to own.",
+          "body": "John Warrillow (Built to Sell) interviewed thousands of entrepreneurs and found a cruel irony: owners who made themselves indispensable built businesses worth nothing on the open market. Owners who made themselves unnecessary built businesses worth millions. Why? Because a buyer isn't buying YOU — they're buying a system that produces predictable results. If those results depend on you showing up every day, the business has no transferable value."
+        },
+        {
+          "type": "content",
+          "headline": "The Built to Sell Principles",
+          "body": "Three principles for building an owner-independent business: (1) Specialise — a business that does one thing exceptionally is more valuable than one that does many things adequately. (2) Productise — turn your service into a repeatable process with a clear scope, price, and delivery method. (3) Diversify revenue — no single client should represent more than 15% of revenue (buyer risk). These three shifts transform a \"job disguised as a business\" into an asset with real market value."
+        },
+        {
+          "type": "content",
+          "headline": "The Owner Dependency Audit",
+          "body": "Score yourself on five dimensions: (1) Sales — would revenue drop if you stopped selling? (2) Delivery — would quality drop if you stopped delivering? (3) Relationships — are key clients loyal to YOU or the company? (4) Decision-making — does everything stall when you're away? (5) Knowledge — is critical know-how only in your head? Score each 1-5 (1 = fully dependent, 5 = fully independent). Any score below 3 is a vulnerability. Below 2 is an emergency. Your goal: all fives within 2 years."
+        },
+        {
+          "type": "content",
+          "headline": "The Management Team",
+          "body": "A business runs without you when a capable management team runs it FOR you. This doesn't require a huge company — even a 5-person business can have a \"management layer\" of one trusted person who handles operations. The key hire: an Integrator (EOS term) — someone who turns your vision into reality, manages the team, and handles the day-to-day. Finding your Integrator is often the single highest-leverage hire a Visionary founder can make."
+        },
+        {
+          "type": "action",
+          "headline": "Run Your Owner Dependency Audit",
+          "body": "Score yourself honestly on the five dimensions: Sales dependency (1-5), Delivery dependency (1-5), Relationship dependency (1-5), Decision dependency (1-5), Knowledge dependency (1-5). Write your total score out of 25. Now pick the lowest-scoring dimension — that's your biggest vulnerability. Write one specific action to improve that score by 1 point in the next 90 days. What system, hire, or process would reduce your dependency in that area? Execute that one action."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Built to Sell, why are owner-dependent businesses worth less?",
+          "options": [
+            "They generate less revenue",
+            "Buyers are buying a system, not a person — no transferable value",
+            "They have higher expenses",
+            "They can't get bank loans"
+          ],
+          "correctIndex": 1,
+          "explanation": "A buyer isn't buying you — they're buying a system that produces predictable results. If those results depend on the owner showing up daily, the business has no transferable value on the open market."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the maximum any single client should represent of your revenue?",
+          "options": [
+            "5%",
+            "15%",
+            "30%",
+            "50%"
+          ],
+          "correctIndex": 1,
+          "explanation": "No single client should represent more than 15% of revenue. Higher concentration creates buyer risk — if that one client leaves, the business faces a major revenue drop, making it less valuable and more fragile."
+        },
+        {
+          "type": "mcq",
+          "question": "What is an \"Integrator\" in EOS terms?",
+          "options": [
+            "A software system that connects tools",
+            "Someone who turns vision into reality and manages day-to-day",
+            "An external consultant who implements EOS",
+            "The company accountant"
+          ],
+          "correctIndex": 1,
+          "explanation": "An Integrator turns the Visionary's ideas into reality, manages the team, and handles day-to-day operations. Finding an Integrator is often the highest-leverage hire a Visionary founder can make."
+        }
+      ]
+    },
+    {
+      "id": "sdo-20-exit-readiness",
+      "dayNumber": 20,
+      "moduleId": "sdo-module-3",
+      "title": "Exit Readiness",
+      "subtitle": "Whether you plan to sell or not, building an exit-ready business makes it more profitable, more enjoyable, and more resilient TODAY.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Build your business as if you're selling it next year — even if you never will. This single mindset shift transforms everything.",
+          "body": "Exit readiness isn't about selling. It's about building something that works so well it COULD be sold. The disciplines that make a business sellable — documented systems, predictable revenue, low owner-dependency, a strong team — are the exact same disciplines that make a business enjoyable to own, profitable to run, and resilient in a crisis. An exit-ready business is simply a well-run business."
+        },
+        {
+          "type": "content",
+          "headline": "The Eight Value Drivers",
+          "body": "Business valuation comes down to eight drivers: (1) Financial performance — growth rate and margins. (2) Recurring revenue — predictable vs one-off income. (3) Owner independence — can it run without you? (4) Diversified customer base — no client over 15%. (5) Growth potential — untapped market opportunity. (6) Differentiation — moat against competitors. (7) Team strength — capable people in key seats. (8) Systems and documentation — transferable knowledge. Improve all eight and your business becomes more valuable AND more enjoyable to run."
+        },
+        {
+          "type": "content",
+          "headline": "Recurring Revenue is King",
+          "body": "Buyers pay the highest multiples for recurring revenue businesses. Why? Predictability. A business with $100K in monthly recurring revenue is worth 3-8x more than one with $100K in project-based revenue — even though both generated the same total. If you can convert any part of your business to subscription, retainer, or membership models, do it. Even 30% recurring revenue dramatically increases valuation and, more importantly, gives you peace of mind every month."
+        },
+        {
+          "type": "content",
+          "headline": "The Clean-Up Checklist",
+          "body": "Exit readiness requires clean books and clean operations: (1) Financials — 3 years of accurate, professionally prepared financials. (2) Contracts — all key relationships in writing (employees, clients, vendors). (3) IP — trademarks, domains, copyrights properly registered and owned by the business. (4) Leases/agreements — transferable, not personally guaranteed. (5) Processes — documented and current. (6) Team — employment contracts, non-competes where appropriate. Start cleaning up now — it takes 12-24 months to be truly ready."
+        },
+        {
+          "type": "action",
+          "headline": "Score Your Exit Readiness",
+          "body": "Rate each of the eight value drivers from 1-5: Financial performance, Recurring revenue, Owner independence, Customer diversification, Growth potential, Differentiation, Team strength, Systems documentation. Total out of 40. Under 20 = significant work needed. 20-30 = good foundation, focus on weakest areas. 30+ = strong position. Pick your lowest-scoring driver and identify one action to improve it this quarter. Even if you never sell, every point you gain makes your business better to run."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why do buyers pay more for recurring revenue businesses?",
+          "options": [
+            "Recurring revenue is always larger",
+            "Predictability — recurring revenue makes future income certain",
+            "It requires less marketing",
+            "Tax advantages of subscription models"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buyers pay higher multiples for recurring revenue because of predictability — they can forecast future income with confidence. A recurring revenue business can be worth 3-8x more than a project-based one of the same size."
+        },
+        {
+          "type": "mcq",
+          "question": "How long does it typically take to achieve true exit readiness?",
+          "options": [
+            "1-3 months",
+            "6 months",
+            "12-24 months",
+            "5+ years"
+          ],
+          "correctIndex": 2,
+          "explanation": "True exit readiness typically takes 12-24 months of cleanup — getting financials in order, documenting processes, reducing owner dependency, and strengthening the team. Start early, even if sale timing is uncertain."
+        },
+        {
+          "type": "mcq",
+          "question": "What makes a business enjoyable to own AND valuable to sell?",
+          "options": [
+            "High revenue and lots of employees",
+            "The same disciplines: systems, low dependency, predictable revenue",
+            "Working long hours and personal sacrifice",
+            "Being in a trendy industry"
+          ],
+          "correctIndex": 1,
+          "explanation": "The disciplines that make a business sellable — documented systems, predictable revenue, low owner-dependency, a strong team — are exactly what make it enjoyable to own and profitable to run."
+        }
+      ]
+    },
+    {
+      "id": "sdo-21-owners-freedom",
+      "dayNumber": 21,
+      "moduleId": "sdo-module-3",
+      "title": "The Owner's Freedom Framework",
+      "subtitle": "Put it all together — your personal operating system for running a business that serves YOUR life, not the other way around.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You didn't start a business to work 80 hours a week for a demanding boss — yourself. It's time to reclaim what you built it for.",
+          "body": "Over the past 21 days, you've learned to systemise, delegate, and operate at scale. Now it's time to put it all together into YOUR personal operating system — the daily, weekly, and quarterly rhythms that keep your business growing while protecting your time, energy, and freedom. This isn't about being lazy. It's about being strategic. The most impactful founders aren't the busiest — they're the most intentional."
+        },
+        {
+          "type": "content",
+          "headline": "The Freedom Formula",
+          "body": "Business freedom comes from four pillars working together: (1) Systems — documented processes that deliver consistent results without you. (2) Team — capable people who own functions and make decisions. (3) Metrics — a scorecard that tells you the truth weekly in 5 minutes. (4) Rhythm — meetings and reviews that keep everything aligned. When all four are in place, your role shifts from \"doing the work\" to \"designing the machine that does the work.\" That's true ownership."
+        },
+        {
+          "type": "content",
+          "headline": "Your Weekly Operating Rhythm",
+          "body": "Design your ideal week: Monday — scorecard review + planning (what matters most this week?). Tuesday-Thursday — CEO time: working ON the business (systems improvement, strategic relationships, growth initiatives). One L10 meeting with team. Friday — review, tie up loose ends, reflect on what worked. Block these in your calendar as non-negotiable. Everything else (delivery, support, admin) should be handled by systems and people. If it isn't yet, that tells you exactly what to fix next."
+        },
+        {
+          "type": "content",
+          "headline": "The 90-Day Sprint Cycle",
+          "body": "Quarterly, run a 90-day sprint: (1) Review — what worked, what didn't, what did you learn? (2) Set 3-7 Rocks — the most important priorities for next quarter. (3) Audit systems — which need updating, creating, or improving? (4) Score yourself — owner dependency, team health, system completeness. (5) Plan one improvement — pick your weakest area and make it your focus. This cycle compounds: each quarter your business gets slightly more systematic, slightly more independent, slightly more valuable."
+        },
+        {
+          "type": "action",
+          "headline": "Design Your Owner's Operating System",
+          "body": "Create a one-page document titled \"My Owner's Operating System\" with four sections: (1) Weekly rhythm — what does your ideal week look like? Block the key activities. (2) Monthly check — what do you review monthly? (Financial health, team satisfaction, top issues.) (3) Quarterly sprint — when is your next quarterly planning day? What will you review? (4) 90-day focus — what ONE operational improvement will you make in the next 90 days? Post this somewhere visible. Review and update it every quarter. This is your freedom roadmap."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the four pillars of the Freedom Formula?",
+          "options": [
+            "Money, Time, Location, Relationships",
+            "Systems, Team, Metrics, Rhythm",
+            "Vision, Strategy, Execution, Review",
+            "Hire, Train, Delegate, Automate"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Freedom Formula has four pillars: Systems (documented processes), Team (capable people who own functions), Metrics (weekly scorecard), and Rhythm (meetings that keep everything aligned)."
+        },
+        {
+          "type": "mcq",
+          "question": "How often should you run the 90-Day Sprint Cycle?",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Twice a year",
+            "Annually"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 90-Day Sprint runs quarterly — reviewing what worked, setting new rocks, auditing systems, scoring owner dependency, and choosing one improvement focus. Each quarter compounds improvements."
+        },
+        {
+          "type": "mcq",
+          "question": "What should your role shift TO as systems and team mature?",
+          "options": [
+            "Doing more work to maintain quality",
+            "Designing the machine that does the work",
+            "Managing every team member closely",
+            "Finding new businesses to start"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your role shifts from \"doing the work\" to \"designing the machine that does the work.\" That's true ownership — building and improving the system rather than operating within it."
+        }
+      ]
+    }
+  ]
+}

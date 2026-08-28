@@ -1,0 +1,1592 @@
+{
+  "id": "everyday-movement",
+  "title": "Everyday Movement for Better Health",
+  "subtitle": "Discover why daily movement is the most powerful health habit you can build — and learn simple ways to move more, sit less, and feel better without a gym or a fitness plan.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "em-mod-1",
+      "title": "Why Movement Matters",
+      "subtitle": "Understand why daily movement is the single most powerful thing you can do for your health — and why modern life works against it.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding your movement baseline and the true cost of sitting",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "em-mod-2",
+      "title": "Building Movement Into Your Day",
+      "subtitle": "Learn practical strategies to move more without needing a gym, a plan, or motivation — just smarter daily habits.",
+      "days": "Lessons 8–14",
+      "skill": "Creating effortless movement habits that stick",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "em-mod-3",
+      "title": "Moving for Life",
+      "subtitle": "Progress from simple movement to building strength, mobility and energy that protects your health for decades to come.",
+      "days": "Lessons 15–21",
+      "skill": "Designing a sustainable movement practice that grows with you",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "em-1-movement-is-medicine",
+      "dayNumber": 1,
+      "title": "Movement Is Medicine",
+      "subtitle": "Why your body was built to move — and what happens when it doesn't",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-1-c1",
+          "front": "What does \"movement is medicine\" actually mean?",
+          "back": "It means regular physical activity is one of the most powerful tools we have for preventing disease, improving mood, protecting the brain, and extending healthy life. It's not a metaphor — the evidence base for exercise rivals that of many prescription drugs, without the side effects."
+        },
+        {
+          "id": "em-1-c2",
+          "front": "How were human bodies designed to move?",
+          "back": "Our ancestors walked 9–15 km a day, carried loads, squatted, climbed and bent — without ever \"working out.\" The body evolved to function under regular physical load. Modern life has stripped most of that movement out, but our biology hasn't changed."
+        },
+        {
+          "id": "em-1-c3",
+          "front": "What does physical inactivity actually cost your health?",
+          "back": "Physical inactivity is linked to higher risk of heart disease, type 2 diabetes, certain cancers, depression, anxiety, cognitive decline, and early death. The World Health Organization ranks it among the leading global risk factors for disease."
+        },
+        {
+          "id": "em-1-c4",
+          "front": "Do you need to exercise hard to get the health benefits?",
+          "back": "No. The largest health gains come from going from completely sedentary to even moderately active. Short daily walks, movement breaks, and gentle activity all count. You don't need a gym, a fitness programme, or a personal trainer to start benefiting."
+        },
+        {
+          "id": "em-1-c5",
+          "front": "What's the single most important thing to remember about movement and health?",
+          "back": "Something is always better than nothing — and consistency beats intensity. Daily movement, even light activity, compounds over years into dramatically better health outcomes. The goal isn't to be an athlete; it's to keep moving throughout your life."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-1-q1",
+          "question": "Why do researchers compare exercise to medicine?",
+          "options": [
+            "Because it requires a prescription",
+            "Because evidence shows it prevents and improves many diseases as effectively as drugs",
+            "Because it is expensive",
+            "Because it only works for young people"
+          ],
+          "correctIndex": 1,
+          "explanation": "The evidence for regular physical activity rivals many prescription medications for preventing and managing heart disease, type 2 diabetes, depression, and cognitive decline — without the side effects."
+        },
+        {
+          "id": "em-1-q2",
+          "question": "How much did our ancestors typically walk each day?",
+          "options": [
+            "1–2 km",
+            "3–5 km",
+            "9–15 km",
+            "20–30 km"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hunter-gatherer research suggests our ancestors covered roughly 9–15 km per day through walking, foraging, and carrying — very different from the 1,500–3,000 steps most sedentary office workers manage today."
+        },
+        {
+          "id": "em-1-q3",
+          "question": "Where do the largest health gains from movement come from?",
+          "options": [
+            "Going from moderate to high intensity training",
+            "Adding a second gym session per week",
+            "Going from completely sedentary to moderately active",
+            "Running a marathon"
+          ],
+          "correctIndex": 2,
+          "explanation": "The dose-response curve for exercise is steepest at the bottom. Going from zero to some movement delivers the greatest proportional health benefit — much larger than gains from going from fit to very fit."
+        }
+      ]
+    },
+    {
+      "id": "em-2-the-sitting-problem",
+      "dayNumber": 2,
+      "title": "The Sitting Problem",
+      "subtitle": "Why prolonged sitting is a health risk — and what you can do about it",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-2-c1",
+          "front": "How much do most people sit each day?",
+          "back": "Adults in developed countries sit for 9–11 hours per day on average — at desks, in cars, and on sofas. Many people spend more time sitting than sleeping, with the bulk of waking hours almost entirely sedentary."
+        },
+        {
+          "id": "em-2-c2",
+          "front": "What does prolonged sitting do to the body?",
+          "back": "Extended sitting slows metabolism, reduces calorie burning, impairs blood sugar regulation, reduces blood flow to the legs, compresses the spine, and is associated with increased risk of cardiovascular disease, type 2 diabetes, and certain cancers — even in people who exercise regularly."
+        },
+        {
+          "id": "em-2-c3",
+          "front": "Does going to the gym cancel out sitting all day?",
+          "back": "Largely no. Research shows that an hour of exercise does not fully reverse the metabolic effects of 8–10 hours of sitting. This is sometimes called the \"active couch potato\" problem. Breaking up sitting throughout the day matters as much as scheduled exercise."
+        },
+        {
+          "id": "em-2-c4",
+          "front": "What is the most effective strategy to reduce sitting harms?",
+          "back": "Breaking up sitting regularly is more effective than a single long period of exercise. Standing or walking for 2–5 minutes every 30–60 minutes significantly improves blood sugar, blood pressure, and blood flow. Small, frequent interruptions matter more than their length."
+        },
+        {
+          "id": "em-2-c5",
+          "front": "What's a simple rule to reduce the harm from sitting?",
+          "back": "The 30:2 rule — every 30 minutes of sitting, move for at least 2 minutes. Stand up, walk to get water, stretch, or take a short walk. These micro-breaks, spread across the day, meaningfully improve your metabolic and cardiovascular health."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-2-q1",
+          "question": "How many hours per day do most adults in developed countries spend sitting?",
+          "options": [
+            "3–5 hours",
+            "5–7 hours",
+            "9–11 hours",
+            "14–16 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research consistently finds adults in sedentary desk-based societies sit for 9–11 hours daily when office work, commuting, and leisure are combined — often more than they sleep."
+        },
+        {
+          "id": "em-2-q2",
+          "question": "What is the \"active couch potato\" problem?",
+          "options": [
+            "People who exercise but still eat unhealthily",
+            "People who exercise for an hour but sit for the rest of the day, not fully cancelling the harms of prolonged sitting",
+            "Children who watch too much TV",
+            "Athletes who retire and gain weight"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that one hour of gym exercise does not completely reverse the metabolic damage caused by 8–10 hours of sitting. Breaking up sitting throughout the day is independently important."
+        },
+        {
+          "id": "em-2-q3",
+          "question": "What is the 30:2 rule for reducing sitting harms?",
+          "options": [
+            "Exercise for 30 minutes, rest for 2 hours",
+            "Stand for 30 minutes before sitting for 2 hours",
+            "Move for at least 2 minutes for every 30 minutes of sitting",
+            "Drink 2 glasses of water every 30 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 30:2 rule means interrupting sitting every 30 minutes with at least 2 minutes of movement. These short breaks significantly improve blood sugar, blood pressure, and circulation throughout the day."
+        }
+      ]
+    },
+    {
+      "id": "em-3-walking-superpower",
+      "dayNumber": 3,
+      "title": "Walking: The Underrated Superpower",
+      "subtitle": "Why walking is one of the most evidence-backed health activities on the planet",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-3-c1",
+          "front": "Why is walking considered uniquely powerful for health?",
+          "back": "Walking is low-impact, sustainable, accessible, and requires no equipment or skill. It improves cardiovascular health, reduces blood sugar, lowers blood pressure, lifts mood, supports brain function, aids digestion, and is strongly linked to longer, healthier lives. It is also one of the activities people consistently maintain for decades."
+        },
+        {
+          "id": "em-3-c2",
+          "front": "Does the 10,000-steps goal have scientific backing?",
+          "back": "The 10,000-step target originated from a Japanese marketing campaign in the 1960s, not from research. Studies suggest 7,000–8,000 steps per day is associated with significant health benefits, with gains continuing beyond that. Even 4,000–5,000 steps per day substantially lowers mortality risk compared to 2,000 or fewer."
+        },
+        {
+          "id": "em-3-c3",
+          "front": "Does walking pace matter for health?",
+          "back": "Yes. Brisk walking — fast enough to raise your heart rate and breathing, but still able to hold a conversation — delivers greater cardiovascular and metabolic benefits than casual strolling. Even 10–15 minutes of brisk walking is associated with meaningful improvements in heart health and blood sugar."
+        },
+        {
+          "id": "em-3-c4",
+          "front": "What does walking do for the brain?",
+          "back": "Walking increases blood flow to the brain, promotes the release of BDNF (a protein that supports the growth of new brain cells), reduces stress hormones, lifts mood, and improves working memory and creative thinking. Even a 10-minute walk can noticeably improve focus and emotional regulation."
+        },
+        {
+          "id": "em-3-c5",
+          "front": "How can you make walking a reliable daily habit?",
+          "back": "Attach it to existing routines — morning coffee, lunch breaks, school runs, or commutes. Walk with someone, listen to a podcast, or use a specific route. Studies show \"temptation bundling\" (pairing walking with something enjoyable, like an audiobook) significantly improves adherence over time."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-3-q1",
+          "question": "Where did the 10,000-steps-per-day target originally come from?",
+          "options": [
+            "A large clinical trial in the 1980s",
+            "A Japanese marketing campaign in the 1960s",
+            "The World Health Organization",
+            "An Olympic training programme"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 10,000-step target was introduced by a Japanese pedometer company marketing campaign in 1964, not by scientific research. Studies suggest 7,000–8,000 steps delivers strong health benefits."
+        },
+        {
+          "id": "em-3-q2",
+          "question": "What is BDNF and why does walking increase it?",
+          "options": [
+            "A fat-burning hormone triggered by running",
+            "A protein that supports the growth and maintenance of brain cells, released during aerobic activity like walking",
+            "A blood sugar regulator produced during exercise",
+            "A joint-lubricating fluid increased by low-impact movement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Brain-Derived Neurotrophic Factor (BDNF) is sometimes called \"fertiliser for the brain.\" Walking and other aerobic activities stimulate its release, supporting memory, learning, and mood regulation."
+        },
+        {
+          "id": "em-3-q3",
+          "question": "What does \"temptation bundling\" mean in the context of walking habits?",
+          "options": [
+            "Rewarding yourself with food after a long walk",
+            "Pairing walking with something enjoyable, like a podcast, to make it more appealing",
+            "Walking only when you feel motivated",
+            "Setting competitive step targets"
+          ],
+          "correctIndex": 1,
+          "explanation": "Temptation bundling means combining an activity you find mildly effortful (walking) with something you genuinely enjoy (an audiobook, podcast, or phone call). Research shows this reliably improves long-term exercise adherence."
+        }
+      ]
+    },
+    {
+      "id": "em-4-neat-hidden-engine",
+      "dayNumber": 4,
+      "title": "NEAT: The Hidden Engine",
+      "subtitle": "Why the calories you burn outside the gym matter more than you think",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-4-c1",
+          "front": "What is NEAT?",
+          "back": "NEAT stands for Non-Exercise Activity Thermogenesis — the energy you burn through all movement that isn't formal exercise. This includes walking, fidgeting, cooking, cleaning, carrying shopping, climbing stairs, and even standing. NEAT can account for 15–50% of daily calorie burn depending on your lifestyle."
+        },
+        {
+          "id": "em-4-c2",
+          "front": "Why is NEAT more important than formal exercise for most people?",
+          "back": "Most people exercise for 30–60 minutes at most. The other 15+ waking hours are governed by NEAT. Research shows that highly active non-exercisers (people who stand, walk, and move all day) often have better metabolic health than gym-goers who are otherwise sedentary."
+        },
+        {
+          "id": "em-4-c3",
+          "front": "What happens to NEAT when people cut calories or try to lose weight?",
+          "back": "NEAT often drops unconsciously when people reduce food intake. The body conserves energy by slowing fidgeting, standing less, and reducing spontaneous movement. This \"NEAT suppression\" is one reason calorie restriction alone is often insufficient for sustained weight management."
+        },
+        {
+          "id": "em-4-c4",
+          "front": "What are some easy ways to dramatically boost NEAT?",
+          "back": "Standing at a desk instead of sitting can add 800–1,000 calories burned per week. Taking stairs instead of lifts, walking during phone calls, parking further away, pacing while thinking, and doing tasks standing up are all NEAT-boosting habits that add up significantly over time."
+        },
+        {
+          "id": "em-4-c5",
+          "front": "How does NEAT differ between active and sedentary people?",
+          "back": "Research by Dr James Levine found that lean, active individuals stand and move spontaneously for around 2.5 hours more per day than sedentary people — burning an extra 350+ calories daily without any formal exercise. This difference compounds dramatically over years."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-4-q1",
+          "question": "What does NEAT stand for?",
+          "options": [
+            "Nutritional Energy and Activity Training",
+            "Non-Exercise Activity Thermogenesis",
+            "Normal Exercise and Training",
+            "Net Energy After Training"
+          ],
+          "correctIndex": 1,
+          "explanation": "NEAT (Non-Exercise Activity Thermogenesis) is the energy burned through all daily movement that isn't structured exercise — including walking, standing, fidgeting, cooking, and carrying loads."
+        },
+        {
+          "id": "em-4-q2",
+          "question": "Why can NEAT suppression undermine weight management efforts?",
+          "options": [
+            "Because it makes exercise less effective",
+            "Because the body unconsciously moves less when calories are restricted, offsetting some of the deficit",
+            "Because NEAT only burns fat, not carbohydrates",
+            "Because it increases appetite"
+          ],
+          "correctIndex": 1,
+          "explanation": "When people reduce food intake, the body often compensates by reducing spontaneous movement — standing less, fidgeting less — cutting NEAT-related calorie burn. This makes calorie restriction alone less effective than combining it with sustained daily movement."
+        },
+        {
+          "id": "em-4-q3",
+          "question": "How many extra calories per day can naturally active people burn compared to sedentary people through NEAT alone?",
+          "options": [
+            "50–100 calories",
+            "100–150 calories",
+            "200–250 calories",
+            "350+ calories"
+          ],
+          "correctIndex": 3,
+          "explanation": "Dr James Levine's research found naturally active people spontaneously move for ~2.5 hours more per day than sedentary people, burning 350+ extra calories daily without formal exercise. This compounds to significant health differences over time."
+        }
+      ]
+    },
+    {
+      "id": "em-5-movement-breaks",
+      "dayNumber": 5,
+      "title": "Movement Breaks That Actually Work",
+      "subtitle": "How short, frequent movement breaks protect your body and boost your brain",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-5-c1",
+          "front": "What is a movement break?",
+          "back": "A movement break is a short period of physical activity taken during a prolonged period of sitting or sedentary behaviour. It can be as brief as 1–5 minutes. Movement breaks interrupt the physiological effects of sitting and have measurable benefits even when very short."
+        },
+        {
+          "id": "em-5-c2",
+          "front": "What happens to blood sugar when you take regular movement breaks?",
+          "back": "Research shows that breaking up sitting with 2–3 minutes of light walking every 30 minutes significantly reduces post-meal blood sugar spikes compared to sitting continuously. Even standing breaks reduce the blood sugar response. This matters because repeated blood sugar spikes contribute to insulin resistance over time."
+        },
+        {
+          "id": "em-5-c3",
+          "front": "How do movement breaks improve brain performance?",
+          "back": "Brief movement breaks increase cerebral blood flow, reduce mental fatigue, and restore focus. Studies show that students and office workers who take short activity breaks perform better on cognitive tasks, make fewer errors, and report better concentration than those who sit continuously."
+        },
+        {
+          "id": "em-5-c4",
+          "front": "What are effective movement break activities?",
+          "back": "Walking to get water, climbing a flight of stairs, five minutes of gentle stretching, standing and moving while on a phone call, a short walk around the building, or simple bodyweight movements like standing leg raises and shoulder rolls. The activity doesn't need to be intense to deliver benefits."
+        },
+        {
+          "id": "em-5-c5",
+          "front": "What's the best way to remember to take movement breaks?",
+          "back": "External prompts work best — a phone alarm, a desktop reminder, or a wearable alert. \"Habit stacking\" (taking a break every time you finish a task, reply to an email, or complete a meeting) is also effective. The goal is to make movement the default, not the exception."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-5-q1",
+          "question": "How long do movement breaks need to be to have measurable health benefits?",
+          "options": [
+            "At least 30 minutes",
+            "At least 10 minutes",
+            "As little as 1–5 minutes",
+            "Only if they include vigorous activity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research shows movement breaks of as little as 1–5 minutes are sufficient to improve blood sugar response, blood flow, and cognitive performance when taken regularly throughout the day."
+        },
+        {
+          "id": "em-5-q2",
+          "question": "What effect do regular movement breaks have on post-meal blood sugar?",
+          "options": [
+            "They have no effect on blood sugar",
+            "They significantly reduce post-meal blood sugar spikes compared to continuous sitting",
+            "They only reduce blood sugar if breaks last at least 20 minutes",
+            "They raise blood sugar during the break then lower it later"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multiple studies show that 2–3 minutes of light walking every 30 minutes significantly reduces the blood sugar spike after meals. This is particularly important because repeated blood sugar spikes can lead to insulin resistance over time."
+        },
+        {
+          "id": "em-5-q3",
+          "question": "What is \"habit stacking\" in the context of movement breaks?",
+          "options": [
+            "Doing multiple exercises in one break",
+            "Linking a movement break to an existing habit or trigger, like finishing an email or ending a meeting",
+            "Stacking breaks back-to-back for maximum effect",
+            "Tracking multiple health habits simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Habit stacking means attaching a new behaviour (taking a movement break) to an existing habit (finishing a task, ending a meeting). This removes the need to remember and makes movement the automatic response to a common trigger."
+        }
+      ]
+    },
+    {
+      "id": "em-6-stairs-carrying-strength",
+      "dayNumber": 6,
+      "title": "Stairs, Carrying and Everyday Strength",
+      "subtitle": "How the functional movements of daily life build real health and independence",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-6-c1",
+          "front": "Why do stairs offer exceptional health value?",
+          "back": "Stair climbing is a brief but vigorous activity — it raises heart rate, engages large muscle groups, and delivers cardiovascular benefits similar to interval training. A study of Harvard alumni found that climbing eight flights of stairs per day was associated with a 33% lower mortality rate. Stair-climbers also tend to have better leg strength and cardiovascular fitness as they age."
+        },
+        {
+          "id": "em-6-c2",
+          "front": "What does \"carrying\" do for physical health?",
+          "back": "Carrying loads — shopping bags, a rucksack, a child — is one of the most functional forms of human exercise. It strengthens the grip, arms, core, and back, improves posture and balance, and builds \"loaded movement\" capacity. Research links grip strength to longevity, cardiovascular health, and reduced fall risk in older adults."
+        },
+        {
+          "id": "em-6-c3",
+          "front": "What is functional fitness and why does it matter?",
+          "back": "Functional fitness is the strength and mobility needed to perform everyday tasks — getting up from the floor, carrying shopping, climbing stairs, reaching overhead. It predicts long-term independence. People who maintain functional fitness are far less likely to need care, fall, or lose independence as they age."
+        },
+        {
+          "id": "em-6-c4",
+          "front": "What does grip strength tell us about overall health?",
+          "back": "Grip strength is a reliable marker of overall muscle health and a predictor of cardiovascular disease risk, cognitive decline, and all-cause mortality. Studies show that grip strength declines with age but can be maintained through regular loading and movement. Activities like carrying bags, gardening, and using hand tools all contribute."
+        },
+        {
+          "id": "em-6-c5",
+          "front": "How can you incorporate more stairs and carrying into a normal day?",
+          "back": "Take stairs instead of lifts whenever possible. Carry a loaded rucksack for walks. Carry shopping rather than using a trolley for short distances. Choose to park further away and carry bags to the car. Walk while carrying items. These simple choices accumulate into meaningful daily physical work."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-6-q1",
+          "question": "According to Harvard alumni research, how much did climbing eight flights of stairs per day reduce mortality risk?",
+          "options": [
+            "10%",
+            "20%",
+            "33%",
+            "50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research from the Harvard Alumni Health Study found that climbing roughly eight flights of stairs per day was associated with a 33% lower mortality rate — making stairs one of the most time-efficient movement choices available."
+        },
+        {
+          "id": "em-6-q2",
+          "question": "Why is grip strength considered an important health indicator?",
+          "options": [
+            "It measures hand coordination",
+            "It reflects overall muscle health and is linked to cardiovascular disease risk, cognitive decline, and all-cause mortality",
+            "It is the best way to measure fitness in young people",
+            "It only matters for athletes and manual workers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multiple large studies have found grip strength to be a reliable predictor of overall muscle health, cardiovascular disease risk, cognitive decline risk, and all-cause mortality — making it a simple but powerful health marker."
+        },
+        {
+          "id": "em-6-q3",
+          "question": "What is functional fitness?",
+          "options": [
+            "Fitness achieved only through gym-based resistance training",
+            "The strength and mobility needed to perform everyday tasks like climbing stairs, carrying loads, and getting up from the floor",
+            "A type of yoga developed for office workers",
+            "Cardiorespiratory fitness measured by VO₂ max testing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Functional fitness refers to the physical capacity to perform the real-world demands of daily life — carrying, climbing, bending, reaching, and getting up. It is strongly associated with independence, fall prevention, and quality of life in later years."
+        }
+      ]
+    },
+    {
+      "id": "em-7-movement-baseline",
+      "dayNumber": 7,
+      "title": "Your Movement Baseline",
+      "subtitle": "How to honestly assess where you are — and what a realistic starting point looks like",
+      "moduleId": "em-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-7-c1",
+          "front": "What is a movement baseline?",
+          "back": "Your movement baseline is an honest assessment of how much you currently move each day — steps taken, hours spent sitting, any structured exercise, and general daily activity. It's not a judgement; it's a starting point. You can't improve what you don't measure."
+        },
+        {
+          "id": "em-7-c2",
+          "front": "Why do most people underestimate how sedentary they are?",
+          "back": "We remember the active moments (the gym session, the walk) and forget the long stretches of sitting. Research shows people consistently overestimate their physical activity by 30–50%. Using a step counter or phone pedometer for a week gives a far more accurate picture than memory."
+        },
+        {
+          "id": "em-7-c3",
+          "front": "What are the key things to track when assessing your movement baseline?",
+          "back": "The most useful metrics are: average daily steps, longest unbroken sitting period, number of movement breaks per day, any structured exercise sessions, and how you feel physically — energy, stiffness, breathlessness. You don't need sophisticated tech; a phone, a note, and honest observation are enough."
+        },
+        {
+          "id": "em-7-c4",
+          "front": "What is a healthy starting point for someone who is currently sedentary?",
+          "back": "The goal isn't to go from 2,000 to 10,000 steps overnight. A realistic first target is adding 1,000 steps per day to your current average, taking at least one movement break per hour, and avoiding sitting for more than 60 minutes without interruption. Small, consistent progress compounds quickly."
+        },
+        {
+          "id": "em-7-c5",
+          "front": "What mindset shift makes movement sustainable long-term?",
+          "back": "Shifting from \"exercise as punishment\" to \"movement as care\" makes a profound difference. Movement isn't something you do to atone for bad choices or hit a number — it's something you do because your body functions better when it moves. Identity-based habits (\"I'm someone who moves every day\") tend to outlast goal-based ones."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-7-q1",
+          "question": "By how much do research studies suggest people overestimate their physical activity?",
+          "options": [
+            "5–10%",
+            "15–20%",
+            "30–50%",
+            "60–70%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies consistently find that people overestimate how active they are by 30–50%. We remember the active moments and forget the long sitting stretches. Objective tracking via a pedometer or phone gives a much more accurate baseline."
+        },
+        {
+          "id": "em-7-q2",
+          "question": "What is a realistic first movement target for someone who is currently sedentary?",
+          "options": [
+            "Jump straight to 10,000 steps per day",
+            "Add 1,000 steps per day to your current average and take at least one movement break per hour",
+            "Run three times per week immediately",
+            "Do a 30-minute gym session every day"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with small, achievable targets — adding 1,000 steps per day and taking hourly movement breaks — is far more sustainable than dramatic overnight changes. Small consistent progress compounds reliably."
+        },
+        {
+          "id": "em-7-q3",
+          "question": "What does research suggest about identity-based movement habits?",
+          "options": [
+            "They are less effective than goal-based habits",
+            "They only work for naturally athletic people",
+            "Habits tied to identity (\"I'm someone who moves every day\") tend to be more durable than goal-based habits",
+            "They require a gym membership to develop"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research on behaviour change — particularly James Clear's work in Atomic Habits — shows that identity-based habits are more durable. When movement becomes part of who you are rather than what you're trying to achieve, it's far less fragile."
+        }
+      ]
+    },
+    {
+      "id": "em-15-strength-muscle",
+      "dayNumber": 15,
+      "title": "Strength: The Muscle You Can't Afford to Lose",
+      "subtitle": "Why preserving muscle is one of the most important things you can do for long-term health",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-15-c1",
+          "front": "What is sarcopenia?",
+          "back": "Sarcopenia is the gradual loss of muscle mass and strength that occurs with ageing. Without intervention, adults lose 3–8% of their muscle mass per decade after age 30, and the rate accelerates after 60. It's one of the leading causes of loss of independence, falls, and reduced quality of life in later years."
+        },
+        {
+          "id": "em-15-c2",
+          "front": "Why does muscle matter beyond strength and appearance?",
+          "back": "Muscle is metabolically active tissue that regulates blood sugar, stores energy, produces anti-inflammatory proteins, supports bone density, and maintains the functional capacity to perform daily tasks. People with more muscle mass have significantly lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
+        },
+        {
+          "id": "em-15-c3",
+          "front": "Do you need a gym to maintain or build muscle?",
+          "back": "No. Bodyweight exercises — squats, lunges, press-ups, step-ups, carrying loads — provide sufficient resistance stimulus to maintain and build meaningful muscle mass, particularly for people starting from a low base. Resistance and load are what matter, not equipment. Consistent progressive challenge is the key."
+        },
+        {
+          "id": "em-15-c4",
+          "front": "How does everyday movement contribute to muscle health?",
+          "back": "Walking uphill, climbing stairs, carrying loads, gardening, and any activity involving resistance or load stimulates muscles and slows age-related decline. While dedicated strength training delivers the greatest benefit, daily loaded movement provides a meaningful maintenance stimulus without requiring any formal training."
+        },
+        {
+          "id": "em-15-c5",
+          "front": "What is the minimum effective stimulus for muscle maintenance?",
+          "back": "Research suggests 2–3 resistance-based sessions per week, with each major muscle group challenged to near-fatigue, is sufficient for muscle maintenance and modest gains. This can be as simple as two 20-minute bodyweight sessions per week. Progressive challenge — gradually increasing difficulty over time — is essential for continued benefit."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-15-q1",
+          "question": "What is sarcopenia?",
+          "options": [
+            "A bone density condition affecting older adults",
+            "The gradual loss of muscle mass and strength that occurs with ageing",
+            "A type of joint inflammation caused by overuse",
+            "A cardiovascular condition linked to inactivity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sarcopenia is age-related muscle loss — typically 3–8% per decade from age 30, accelerating after 60. It's a leading cause of frailty, falls, loss of independence, and reduced quality of life in later years."
+        },
+        {
+          "id": "em-15-q2",
+          "question": "Why is muscle important beyond physical strength?",
+          "options": [
+            "It only matters for athletic performance",
+            "Muscle regulates blood sugar, supports bone density, produces anti-inflammatory proteins, and is associated with lower risk of diabetes, heart disease, and early death",
+            "Muscle only becomes important after age 70",
+            "More muscle means less fat, which is the main health benefit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle is metabolically active tissue with multiple health roles — blood sugar regulation, energy storage, bone support, and anti-inflammatory function. Higher muscle mass is associated with meaningfully lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
+        },
+        {
+          "id": "em-15-q3",
+          "question": "What is the minimum number of resistance-based sessions per week for muscle maintenance?",
+          "options": [
+            "Five to six sessions",
+            "Four sessions of at least one hour",
+            "Two to three sessions challenging major muscle groups to near-fatigue",
+            "Daily sessions are needed — anything less leads to rapid loss"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research supports 2–3 resistance-based sessions per week as sufficient for muscle maintenance and modest gains. Sessions don't need to be long — two 20-minute bodyweight workouts per week provide a meaningful stimulus."
+        }
+      ]
+    },
+    {
+      "id": "em-16-cardiovascular-fitness",
+      "dayNumber": 16,
+      "title": "Your Heart and Lungs: Cardiovascular Fitness Explained",
+      "subtitle": "Why cardiorespiratory fitness is one of the strongest predictors of how long — and how well — you live",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-16-c1",
+          "front": "What is cardiorespiratory fitness?",
+          "back": "Cardiorespiratory fitness describes how efficiently your heart, lungs, and circulatory system deliver oxygen to working muscles during sustained activity. It's most precisely measured by VO₂ max — the maximum rate at which your body can use oxygen. In everyday terms, it's how much effort activities like climbing stairs, brisk walking, and carrying loads require."
+        },
+        {
+          "id": "em-16-c2",
+          "front": "Why is cardiorespiratory fitness such a strong predictor of longevity?",
+          "back": "A major study of 122,000 people found that low cardiorespiratory fitness was a stronger predictor of early death than smoking, high blood pressure, or diabetes. People in the top fitness quartile had a 5-fold lower mortality risk than those in the bottom quartile. Improving fitness — even modestly — has dramatic effects on health and lifespan."
+        },
+        {
+          "id": "em-16-c3",
+          "front": "What activities improve cardiovascular fitness?",
+          "back": "Any activity that sustainably raises your heart rate and breathing — brisk walking, cycling, swimming, dancing, jogging, hiking, or playing sport — improves cardiovascular fitness when done regularly. Intensity matters: \"moderate\" means breathing harder but still able to hold a conversation; \"vigorous\" means speaking only in short phrases."
+        },
+        {
+          "id": "em-16-c4",
+          "front": "How quickly does cardiovascular fitness improve with regular activity?",
+          "back": "Measurable improvements in cardiovascular fitness typically appear within 3–6 weeks of consistent moderate-intensity activity. People starting from a low baseline see the fastest relative gains. Fitness can improve at any age — including in people in their 70s, 80s, and beyond — with appropriate progressive challenge."
+        },
+        {
+          "id": "em-16-c5",
+          "front": "What is the \"talk test\" and how do you use it?",
+          "back": "The talk test is a simple way to gauge exercise intensity. At moderate intensity, you can speak in full sentences but your breathing is noticeably elevated. At vigorous intensity, you can only say a few words at a time. For general health, most people benefit from a combination of both intensities throughout the week."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-16-q1",
+          "question": "What does VO₂ max measure?",
+          "options": [
+            "The maximum amount of fat burned during exercise",
+            "The maximum rate at which your body can use oxygen during intense physical effort",
+            "The volume of air your lungs can hold",
+            "The maximum heart rate achievable during exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "VO₂ max measures the maximum rate of oxygen consumption during maximal exercise. It's the gold-standard measure of cardiorespiratory fitness and one of the strongest known predictors of longevity and all-cause mortality."
+        },
+        {
+          "id": "em-16-q2",
+          "question": "In the 122,000-person study, how much lower was the mortality risk of the most fit group compared to the least fit?",
+          "options": [
+            "Twice as low",
+            "Three times as low",
+            "Five times as low",
+            "Ten times as low"
+          ],
+          "correctIndex": 2,
+          "explanation": "The study found people in the highest fitness quartile had approximately a 5-fold lower mortality risk than those in the lowest quartile — a stronger effect than smoking, high blood pressure, or diabetes. Low fitness was the single most powerful predictor of early death."
+        },
+        {
+          "id": "em-16-q3",
+          "question": "What does the \"talk test\" tell you during exercise?",
+          "options": [
+            "Whether you are burning fat or carbohydrates",
+            "Your approximate exercise intensity — moderate if you can speak in sentences, vigorous if you can only manage a few words",
+            "Whether your heart rate is safe",
+            "How many calories you are burning per minute"
+          ],
+          "correctIndex": 1,
+          "explanation": "The talk test is a simple, equipment-free intensity gauge. Moderate intensity = can speak in full sentences with elevated breathing. Vigorous intensity = can only say a few words at a time. Both intensities deliver health benefits and a combination throughout the week is ideal."
+        }
+      ]
+    },
+    {
+      "id": "em-17-balance-fall-prevention",
+      "dayNumber": 17,
+      "title": "Balance, Stability and Fall Prevention",
+      "subtitle": "Why balance training is one of the most important — and most neglected — health habits of midlife and beyond",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-17-c1",
+          "front": "Why do falls matter so much for long-term health?",
+          "back": "Falls are the leading cause of injury-related deaths in adults over 65 and a major cause of hospitalisation, loss of independence, and reduced quality of life. In the UK, around 30% of people over 65 fall at least once per year. A single serious fall — particularly a hip fracture — can dramatically alter the trajectory of a person's remaining life."
+        },
+        {
+          "id": "em-17-c2",
+          "front": "Does balance decline inevitably with age?",
+          "back": "Balance does naturally decline from around age 40 as sensory systems, muscle strength, and proprioception (your sense of body position) become less sharp. However, this decline is not inevitable at the rate most people experience it. Regular balance training and physical activity significantly slow and partially reverse balance deterioration — at any age."
+        },
+        {
+          "id": "em-17-c3",
+          "front": "What is proprioception and why does it matter?",
+          "back": "Proprioception is your body's ability to sense its own position, movement, and balance in space — using receptors in muscles, tendons, and joints. Good proprioception allows you to catch yourself before a fall. Walking on uneven surfaces, single-leg exercises, and balance training all sharpen proprioceptive ability."
+        },
+        {
+          "id": "em-17-c4",
+          "front": "What are the most effective balance training activities?",
+          "back": "Standing on one leg (even for 30–60 seconds daily), tai chi, yoga, walking on varied terrain, heel-to-toe walking, and single-leg exercises all improve balance. Tai chi has particularly strong evidence — multiple meta-analyses show it reduces fall risk by 20–45% in older adults. Any activity requiring coordination and body awareness contributes."
+        },
+        {
+          "id": "em-17-c5",
+          "front": "What is the single-leg standing test and what does it tell you?",
+          "back": "The single-leg standing test measures how long you can stand on one leg with eyes open, then closed. Healthy adults under 60 should manage 30+ seconds with eyes open; over 60, 20+ seconds. Being unable to stand on one leg for 10 seconds in midlife is associated with nearly double the risk of death from all causes within 10 years."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-17-q1",
+          "question": "What proportion of adults over 65 fall at least once per year?",
+          "options": [
+            "Around 5%",
+            "Around 15%",
+            "Around 30%",
+            "Around 50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Approximately 30% of adults over 65 fall at least once per year. Falls are the leading cause of injury-related death in this age group and a major cause of hospitalisation, loss of independence, and reduced quality of life."
+        },
+        {
+          "id": "em-17-q2",
+          "question": "What is proprioception?",
+          "options": [
+            "The body's ability to sense its own position, movement, and balance in space",
+            "The proportion of muscle to fat in the body",
+            "A reflex that prevents overexertion during exercise",
+            "The range of motion available in a joint"
+          ],
+          "correctIndex": 0,
+          "explanation": "Proprioception is the body's sense of its own position and movement, using receptors in muscles, tendons, and joints. Good proprioception allows you to correct balance automatically. It can be trained through varied terrain walking, balance exercises, and single-leg activities."
+        },
+        {
+          "id": "em-17-q3",
+          "question": "By how much does tai chi reduce fall risk in older adults according to meta-analyses?",
+          "options": [
+            "5–10%",
+            "10–15%",
+            "20–45%",
+            "60–70%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Multiple meta-analyses have found tai chi reduces fall risk by 20–45% in older adults — making it one of the most evidence-backed interventions for fall prevention. Its combination of balance, coordination, strength, and slow controlled movement makes it particularly effective."
+        }
+      ]
+    },
+    {
+      "id": "em-18-mobility-flexibility",
+      "dayNumber": 18,
+      "title": "Mobility, Flexibility and Moving Without Pain",
+      "subtitle": "Why maintaining your range of motion is essential for pain-free independent living",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-18-c1",
+          "front": "What is the difference between mobility and flexibility?",
+          "back": "Flexibility is the passive range of motion of a muscle — how far it can be stretched. Mobility is the active range of motion of a joint — how far you can move it under your own control, with strength throughout the movement. Mobility matters more for functional health: being able to squat, reach overhead, rotate, and bend without pain or restriction."
+        },
+        {
+          "id": "em-18-c2",
+          "front": "Why does mobility decline with age and inactivity?",
+          "back": "Joints become stiffer as the cartilage thins, synovial fluid reduces, and surrounding tissues lose elasticity. Sustained sitting shortens hip flexors and tightens the thoracic spine. Lack of varied movement means the body literally loses range of motion it never uses — following the principle of \"use it or lose it.\""
+        },
+        {
+          "id": "em-18-c3",
+          "front": "What does limited mobility mean for daily life?",
+          "back": "Reduced mobility makes everyday tasks harder: tying shoelaces, getting up from the floor, reaching high shelves, turning to check traffic while driving, and getting in and out of cars. It increases fall risk, contributes to chronic pain, limits exercise options, and is one of the earliest signs of functional decline."
+        },
+        {
+          "id": "em-18-c4",
+          "front": "What are the most important mobility areas to maintain?",
+          "back": "The key areas are: hip flexors and hip rotation (shortened by sitting), thoracic spine (rounded by desk work), ankles (critical for gait and balance), shoulders (restricted by poor posture), and hamstrings. Regular movement through full ranges — squatting, rotating, reaching — maintains these areas far more effectively than static stretching alone."
+        },
+        {
+          "id": "em-18-c5",
+          "front": "What is the most effective approach to improving and maintaining mobility?",
+          "back": "Active mobility work — moving joints through their full range with control, rather than passively holding stretches — delivers more functional benefit. Daily movement routines of 5–10 minutes combining gentle joint rotations, floor-based movement, and functional movements like squatting are more effective than occasional long stretching sessions."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-18-q1",
+          "question": "What is the key difference between mobility and flexibility?",
+          "options": [
+            "They mean exactly the same thing",
+            "Flexibility is passive range of motion; mobility is active, controlled range of motion of a joint",
+            "Mobility is for older adults; flexibility is for athletes",
+            "Flexibility refers to the spine; mobility refers to the limbs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flexibility is passive — how far a muscle stretches when moved by an external force. Mobility is active — how far you can move a joint under your own control. Mobility matters more for functional daily movement and injury prevention."
+        },
+        {
+          "id": "em-18-q2",
+          "question": "Which body areas are most commonly restricted by prolonged sitting?",
+          "options": [
+            "Wrists and fingers",
+            "Hip flexors, thoracic spine, and ankles",
+            "Neck and calves",
+            "Shoulders and hamstrings only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prolonged sitting most commonly shortens hip flexors, rounds and stiffens the thoracic spine, and reduces ankle mobility. These restrictions directly affect posture, gait, and the ability to perform everyday movements safely."
+        },
+        {
+          "id": "em-18-q3",
+          "question": "Which approach is more effective for functional mobility — active mobility work or passive static stretching?",
+          "options": [
+            "Passive static stretching — holding for 60+ seconds",
+            "Active mobility work — moving joints through full range with control",
+            "They are equally effective for all purposes",
+            "Stretching is more effective for older adults; active work for younger people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Active mobility work — moving through full ranges with muscular control — builds both range and strength in that range, making it more functionally useful. Passive stretching improves flexibility but may not translate into controlled, safe movement patterns."
+        }
+      ]
+    },
+    {
+      "id": "em-19-nature-outdoors",
+      "dayNumber": 19,
+      "title": "Nature, Outdoors and Why Where You Move Matters",
+      "subtitle": "The additional health benefits of moving outside — and why green spaces are good medicine",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-19-c1",
+          "front": "Does exercising outdoors offer benefits beyond indoor exercise?",
+          "back": "Yes. Research consistently shows outdoor exercise delivers additional benefits including reduced cortisol (stress hormone), lower blood pressure, improved mood, greater feelings of vitality, and higher enjoyment — even when intensity is identical to indoor exercise. People also tend to exercise for longer and feel less effort when outdoors."
+        },
+        {
+          "id": "em-19-c2",
+          "front": "What is \"green exercise\" and what does evidence say about it?",
+          "back": "Green exercise is physical activity in natural environments — parks, woods, countryside, and water. A meta-analysis of studies found that even five minutes of green exercise produced measurable improvements in mood and self-esteem. Longer sessions in nature reduce anxiety, restore attention, and lower physiological stress markers like cortisol and blood pressure."
+        },
+        {
+          "id": "em-19-c3",
+          "front": "What is \"attention restoration theory\"?",
+          "back": "Attention restoration theory proposes that natural environments restore the directed attention capacity that gets depleted by urban life, screen time, and demanding cognitive work. Natural scenes — trees, water, open sky — engage \"soft fascination\" that rests the prefrontal cortex, explaining why a walk in the park can clear your head in ways an indoor walk cannot."
+        },
+        {
+          "id": "em-19-c4",
+          "front": "What does sunlight exposure during outdoor movement contribute?",
+          "back": "Morning sunlight exposure helps regulate the circadian rhythm, improving sleep quality. Sunlight triggers vitamin D synthesis in the skin — important for bone health, immune function, and mood regulation. Bright outdoor light also suppresses melatonin during the day, improving alertness, and creates a stronger day-night contrast that promotes deeper sleep at night."
+        },
+        {
+          "id": "em-19-c5",
+          "front": "How can you increase outdoor movement even in an urban environment?",
+          "back": "Seek out parks, green corridors, canals, and tree-lined streets for regular walks. Replace indoor gym cardio with outdoor equivalents. Use parks for bodyweight exercise. Walk to cafés or shops through green routes. Even brief \"micro-nature\" exposures — sitting near a tree, a plant-lined street — provide measurable mood and stress benefits."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-19-q1",
+          "question": "How long does green exercise take to produce measurable improvements in mood and self-esteem?",
+          "options": [
+            "At least 30 minutes",
+            "At least 60 minutes",
+            "As little as five minutes",
+            "Only after several weeks of regular practice"
+          ],
+          "correctIndex": 2,
+          "explanation": "A meta-analysis of green exercise studies found that even five minutes in a natural environment produced measurable improvements in mood and self-esteem. The effect is immediate and does not require prolonged exposure."
+        },
+        {
+          "id": "em-19-q2",
+          "question": "What does attention restoration theory propose about natural environments?",
+          "options": [
+            "They improve eyesight through exposure to natural light",
+            "They restore the directed attention capacity depleted by urban life and cognitive demands, through \"soft fascination\"",
+            "They provide a physical workout for the brain similar to puzzles",
+            "They only benefit people with attention disorders"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attention restoration theory proposes that natural environments — trees, water, open landscapes — engage gentle, effortless attention (soft fascination) that allows the prefrontal cortex to rest and restore its capacity for focused directed attention."
+        },
+        {
+          "id": "em-19-q3",
+          "question": "How does morning sunlight exposure support health beyond vitamin D?",
+          "options": [
+            "It increases heart rate, providing a cardio benefit",
+            "It helps regulate the circadian rhythm, improving sleep quality and alerting the brain during the day",
+            "It burns more calories than exercise in the dark",
+            "It only provides benefits in summer months"
+          ],
+          "correctIndex": 1,
+          "explanation": "Morning sunlight signals to the brain that the day has begun, regulating the circadian rhythm, suppressing daytime melatonin, and creating a stronger day-night contrast that promotes deeper sleep at night. This circadian benefit is independent of vitamin D synthesis."
+        }
+      ]
+    },
+    {
+      "id": "em-20-moving-every-age",
+      "dayNumber": 20,
+      "title": "Moving Well at Every Age",
+      "subtitle": "How movement needs evolve through life — and why it's never too late to start",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-20-c1",
+          "front": "Does physical activity become less effective as we age?",
+          "back": "No. The body retains the ability to adapt to exercise at any age. Research shows that people in their 70s, 80s, and even 90s respond meaningfully to strength training, cardiovascular exercise, and balance work. The relative gains in fitness and function may be similar to those in younger people, though starting points and progressions differ."
+        },
+        {
+          "id": "em-20-c2",
+          "front": "How do movement priorities shift with age?",
+          "back": "In younger decades (20s–40s), building a fitness base and preventing early metabolic damage is the priority. In midlife (40s–60s), strength preservation, cardiovascular fitness, and mobility maintenance become increasingly important. In later years (65+), balance, functional fitness, fall prevention, and maintaining independence take centre stage — alongside everything else."
+        },
+        {
+          "id": "em-20-c3",
+          "front": "What does research say about the impact of starting exercise later in life?",
+          "back": "Starting regular exercise in midlife or later still delivers substantial health and longevity benefits. A study found that sedentary adults who became active in midlife had a mortality risk comparable to people who had been active throughout their lives. It is never too late to begin — and always earlier than you'll be tomorrow."
+        },
+        {
+          "id": "em-20-c4",
+          "front": "What is the concept of \"physical reserve\" and why does it matter?",
+          "back": "Physical reserve is the excess functional capacity built through exercise — the fitness and strength above and beyond what daily life currently requires. Like financial savings, physical reserve can be drawn on during illness, injury, or ageing. People with greater reserve age more gracefully and recover faster from setbacks."
+        },
+        {
+          "id": "em-20-c5",
+          "front": "What is the most important movement habit to protect as you age?",
+          "back": "Maintaining the ability to get up and down from the floor independently. The \"sit-to-rise test,\" which scores ability to sit and stand from the floor without support, is a strong predictor of mortality risk. People who can do this easily at 60, 70, and beyond demonstrate the functional strength, balance, and mobility that preserves independence."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-20-q1",
+          "question": "What did research find about sedentary adults who became active in midlife?",
+          "options": [
+            "They gained no significant health benefit from starting late",
+            "Their mortality risk became comparable to people who had been active throughout their lives",
+            "They had a 10% lower mortality risk than lifelong exercisers",
+            "The benefits only appeared after 10 years of consistent exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that sedentary adults who become regularly active in midlife achieve mortality risk levels comparable to those who have been active throughout their lives. It is never too late to start — the body retains the ability to benefit from exercise at any age."
+        },
+        {
+          "id": "em-20-q2",
+          "question": "What is \"physical reserve\" and why is it important?",
+          "options": [
+            "A savings account for gym memberships",
+            "Excess functional capacity built through exercise that can be drawn on during illness, injury, or the demands of ageing",
+            "The maximum amount of exercise a person can do before overtraining",
+            "A physical therapy technique for injury recovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Physical reserve is the fitness and functional capacity above and beyond what daily life currently requires. Like financial savings, it provides a buffer — people with greater reserve recover faster from illness, cope better with physical challenges, and maintain independence for longer."
+        },
+        {
+          "id": "em-20-q3",
+          "question": "What does the \"sit-to-rise test\" measure?",
+          "options": [
+            "Heart rate recovery after exercise",
+            "The ability to sit and stand from the floor independently — a predictor of functional fitness and mortality risk",
+            "Flexibility of the spine during seated movements",
+            "How quickly someone can stand from a chair"
+          ],
+          "correctIndex": 1,
+          "explanation": "The sit-to-rise test scores the ability to lower yourself to the floor and rise again without using hands, knees, or support. It tests a combination of strength, balance, flexibility, and coordination — and is a strong predictor of mortality risk in midlife and later adults."
+        }
+      ]
+    },
+    {
+      "id": "em-21-lifelong-mindset",
+      "dayNumber": 21,
+      "title": "The Lifelong Movement Mindset",
+      "subtitle": "How to make movement a permanent part of who you are — not just something you do for a while",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-21-c1",
+          "front": "Why do most exercise programmes fail in the long term?",
+          "back": "Most programmes are designed around motivation, discipline, and willpower — all of which are finite and unreliable. They treat movement as a temporary project rather than a permanent part of life. Long-term adherence requires building movement into identity, environment, and social context — not relying on daily self-control."
+        },
+        {
+          "id": "em-21-c2",
+          "front": "What does it mean to have a movement identity?",
+          "back": "A movement identity means seeing yourself as someone who moves — not someone who is trying to exercise more. \"I go for a walk after dinner\" becomes \"I'm a person who walks every evening.\" This shift from behaviour to identity is one of the most powerful predictors of long-term consistency, because behaviour inconsistent with identity creates discomfort."
+        },
+        {
+          "id": "em-21-c3",
+          "front": "What role does social connection play in lifelong movement?",
+          "back": "People who move with others — walking groups, recreational sport, exercise classes, friends — consistently demonstrate better long-term adherence than solo exercisers. Social connection transforms movement from a chore into a meaningful activity, adds accountability, and provides the relationship benefits of exercise above and beyond the physical ones."
+        },
+        {
+          "id": "em-21-c4",
+          "front": "How do you recover from a movement setback without abandoning the habit?",
+          "back": "Setbacks are inevitable — illness, travel, work pressure, injury. The key principle is \"never miss twice.\" Miss one day: normal. Miss two days: a pattern forming. Research shows that the speed of recovery after a lapse — not the lapse itself — is what separates long-term exercisers from those who quit. Self-compassion aids recovery; self-criticism prolongs absence."
+        },
+        {
+          "id": "em-21-c5",
+          "front": "What is the single most important thing to take away from this course?",
+          "back": "Movement is not a punishment, a project, or a problem to solve. It is the natural state of a healthy human body — something your biology craves and rewards. The goal isn't perfection; it's consistent, enjoyable, daily movement across a lifetime. Start where you are, use what you have, do what you can. That is enough."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-21-q1",
+          "question": "What is the key reason most long-term exercise programmes fail?",
+          "options": [
+            "People choose the wrong type of exercise",
+            "They rely on motivation and willpower rather than building movement into identity, environment, and social context",
+            "The programmes are not scientifically optimised enough",
+            "People don't have enough time to exercise properly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most programmes fail because they depend on motivation and discipline — finite resources. Long-term movement adherence requires embedding activity into identity, environment, and social life, so it happens automatically rather than requiring daily self-control."
+        },
+        {
+          "id": "em-21-q2",
+          "question": "What does the \"never miss twice\" principle mean?",
+          "options": [
+            "You must exercise at least twice per week to maintain fitness",
+            "Never skip more than two consecutive exercise sessions",
+            "Missing one day is normal; missing two is a forming pattern — recover quickly rather than treating a lapse as failure",
+            "Book two exercise sessions per week to ensure one always happens"
+          ],
+          "correctIndex": 2,
+          "explanation": "The \"never miss twice\" principle means that one missed day is human — but allowing it to become two starts forming a new pattern. Research shows that quick recovery after a lapse, supported by self-compassion rather than self-criticism, is what distinguishes lifelong movers from those who quit."
+        },
+        {
+          "id": "em-21-q3",
+          "question": "Why does social movement (exercising with others) produce better long-term adherence than solo exercise?",
+          "options": [
+            "Group exercise is always more intense and therefore more effective",
+            "Social movement adds accountability, enjoyment, and relationship benefits that make the activity intrinsically rewarding",
+            "It is cheaper to exercise with others",
+            "Social exercise automatically prevents injury"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social movement consistently outperforms solo exercise for long-term adherence because it adds accountability, transforms the activity from a chore into a social event, and provides relationship benefits alongside the physical ones. The combination of intrinsic reward and social obligation is particularly powerful."
+        }
+      ]
+    },
+    {
+      "id": "em-8-design-environment",
+      "dayNumber": 8,
+      "title": "Design Your Environment for Movement",
+      "subtitle": "Why your surroundings shape your activity levels more than willpower ever will",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-8-c1",
+          "front": "Why does the environment matter more than motivation for movement?",
+          "back": "Motivation fluctuates. Your environment is constant. Research by BJ Fogg and James Clear shows that people move more when movement is the easy, obvious option — and less when it requires extra effort. Changing your surroundings is one of the most effective behaviour change strategies available."
+        },
+        {
+          "id": "em-8-c2",
+          "front": "What is \"friction\" and how does it affect movement habits?",
+          "back": "Friction is the effort, inconvenience, or barriers that stand between you and a behaviour. High friction reduces the chance you'll do something; low friction increases it. Leaving your trainers by the front door, placing a water glass in a different room, or putting your mat out in advance all reduce friction for movement."
+        },
+        {
+          "id": "em-8-c3",
+          "front": "How can you redesign your home to encourage more movement?",
+          "back": "Place items you regularly need (water, TV remote, chargers) in locations that require you to walk to them. Use a standing or adjustable desk. Keep exercise equipment visible, not hidden. Put a mat or foam roller in your living room as a visual cue. Make the active option the default, not the deliberate choice."
+        },
+        {
+          "id": "em-8-c4",
+          "front": "How can you redesign your work environment for more movement?",
+          "back": "Use a standing desk or raise your monitor. Walk to a colleague rather than emailing. Take calls while walking. Place your printer, bin or kettle further from your desk. Schedule \"walk breaks\" into your calendar. Use the furthest bathroom or kitchen. Every deliberate friction point becomes a built-in movement opportunity."
+        },
+        {
+          "id": "em-8-c5",
+          "front": "What is the \"default path\" principle in movement design?",
+          "back": "The default path is the route most people take automatically — the lift, the closest parking space, the shortest walk. Deliberately disrupting your default path (always taking stairs, parking at the far end) builds movement into your day without requiring ongoing decision-making. Over time, the new path becomes the default."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-8-q1",
+          "question": "Why is redesigning your environment more effective than relying on motivation to move more?",
+          "options": [
+            "Motivation is physically limited to 30 minutes per day",
+            "Motivation fluctuates, while your environment is constant and shapes behaviour automatically",
+            "The environment only affects sedentary people",
+            "Motivation works better for exercise but environment works for diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Motivation is unreliable and depletes with use. Your environment operates 24/7 without effort. Research consistently shows that environmental design is one of the most powerful and durable behaviour change tools available."
+        },
+        {
+          "id": "em-8-q2",
+          "question": "What does \"friction\" mean in the context of movement habits?",
+          "options": [
+            "Muscle soreness after exercise",
+            "The effort, inconvenience, or barriers that stand between you and a movement behaviour",
+            "The resistance level on a treadmill",
+            "A type of injury from overtraining"
+          ],
+          "correctIndex": 1,
+          "explanation": "Friction in behaviour change refers to the obstacles that make a behaviour harder. Reducing friction — leaving trainers out, placing a mat visibly — makes movement the easy, automatic choice rather than a deliberate effort."
+        },
+        {
+          "id": "em-8-q3",
+          "question": "What is the \"default path\" principle?",
+          "options": [
+            "The recommended walking route from your home to work",
+            "Deliberately disrupting automatic low-movement choices (lifts, close parking) so the active option becomes your new automatic behaviour",
+            "A type of interval training programme",
+            "A navigation app setting that prioritises walking routes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The default path principle means consciously changing your automatic choices — always using stairs, parking further away — until the active option becomes the new normal. Over time, these disruptions become invisible habits."
+        }
+      ]
+    },
+    {
+      "id": "em-9-walking-meetings",
+      "dayNumber": 9,
+      "title": "Walking Meetings and Active Work",
+      "subtitle": "How to keep your body moving while getting things done",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-9-c1",
+          "front": "What is a walking meeting?",
+          "back": "A walking meeting is a one-on-one or small group conversation conducted while walking, rather than seated. They're particularly effective for catch-ups, brainstorming, feedback sessions, and phone calls. Steve Jobs and Mark Zuckerberg both favoured them — not just for health, but because walking genuinely improves creative thinking."
+        },
+        {
+          "id": "em-9-c2",
+          "front": "What does research say about walking and creative thinking?",
+          "back": "A Stanford University study found that walking increased creative output by an average of 81% compared to sitting. The effect persisted even after the walk ended. Walking appears to promote divergent thinking — the ability to generate multiple ideas from a single prompt — making it particularly valuable for problem-solving."
+        },
+        {
+          "id": "em-9-c3",
+          "front": "How can you make phone calls an active habit?",
+          "back": "Walking while on the phone is one of the easiest ways to add steps to your day. Many people take 10–20 calls per week. If each call averages 5 minutes of walking, that's 50–100 minutes of additional movement with no extra time commitment. Simply pacing at home counts — you don't need to go outside."
+        },
+        {
+          "id": "em-9-c4",
+          "front": "What is active work and how can it be built into a desk-based job?",
+          "back": "Active work means incorporating movement into your job tasks — standing while reading documents, walking to colleagues instead of emailing, doing short stretches between tasks, taking stairs to meetings, or using a standing desk for part of the day. These micro-movements significantly reduce accumulated sitting time."
+        },
+        {
+          "id": "em-9-c5",
+          "front": "How can you introduce walking meetings without it feeling awkward?",
+          "back": "Start with phone calls — they're naturally walking-compatible. Suggest a \"walk and talk\" for one-on-ones with people you know well. Frame it positively: \"I find I think more clearly when I'm moving.\" Many colleagues find walking meetings refreshing once they try them. Begin with informal conversations before introducing them to formal settings."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-9-q1",
+          "question": "By how much did walking increase creative output in the Stanford walking study?",
+          "options": [
+            "By 15%",
+            "By 35%",
+            "By 81%",
+            "By 150%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Stanford researchers found walking increased creative output (specifically divergent thinking) by an average of 81% compared to sitting. The boost also persisted briefly after returning to a seated position."
+        },
+        {
+          "id": "em-9-q2",
+          "question": "Which type of thinking does walking most reliably improve?",
+          "options": [
+            "Convergent thinking (narrowing down to one correct answer)",
+            "Divergent thinking (generating multiple ideas from a single prompt)",
+            "Analytical thinking (working through logical sequences)",
+            "Memory recall (retrieving specific facts)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows walking most reliably improves divergent thinking — the generative, exploratory type of cognition useful for brainstorming and creative problem-solving. It's less effective for tasks requiring precise analytical or convergent thinking."
+        },
+        {
+          "id": "em-9-q3",
+          "question": "What is the simplest way to immediately add walking time to a desk-based workday?",
+          "options": [
+            "Join a gym near the office",
+            "Walk or pace during phone calls",
+            "Cycle to work every day",
+            "Stand at your desk for eight hours"
+          ],
+          "correctIndex": 1,
+          "explanation": "Walking during phone calls is the easiest, lowest-effort way to add movement to a workday because the activity (the call) doesn't change — you just move your body while doing it. Multiple calls per day can add 50–100 minutes of extra movement per week."
+        }
+      ]
+    },
+    {
+      "id": "em-10-rethinking-commute",
+      "dayNumber": 10,
+      "title": "Rethinking the Commute",
+      "subtitle": "How to turn travel time into movement time — without adding extra hours to your day",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-10-c1",
+          "front": "Why is the commute a golden movement opportunity?",
+          "back": "The commute is time already committed — it happens regardless. Choosing to walk, cycle, or walk to/from public transport transforms dead time into physical activity. Research shows people who walk or cycle to work have significantly better cardiovascular health, lower BMI, and lower risk of type 2 diabetes than those who drive."
+        },
+        {
+          "id": "em-10-c2",
+          "front": "What does research show about active commuters' health?",
+          "back": "A large UK study of 263,000 people found that cycling to work was associated with a 45% lower risk of dying from cancer and a 46% lower risk of dying from cardiovascular disease compared to passive commuting. Walking commuters had a 27% lower risk of cardiovascular disease. These effects held even after adjusting for other health behaviours."
+        },
+        {
+          "id": "em-10-c3",
+          "front": "What if cycling or walking the full commute isn't possible?",
+          "back": "Partial active commuting still delivers benefits. Get off the bus or train one stop early. Walk to a further station. Park further from your destination. Walk the last 10 minutes. Even adding 15–20 minutes of walking each way adds up to 2.5–3.5 hours of additional activity per working week."
+        },
+        {
+          "id": "em-10-c4",
+          "front": "How can remote workers build commute-equivalent movement into their day?",
+          "back": "Remote workers are at particular risk of extremely low daily movement. Replacing a commute with a \"fake commute\" — a 15–20 minute walk before starting work and/or after finishing — provides a natural transition and meaningful daily movement. It also improves work-life boundary setting."
+        },
+        {
+          "id": "em-10-c5",
+          "front": "What's the most important mindset shift for active commuting?",
+          "back": "Framing active commuting as \"stolen time for health\" rather than \"inconvenient effort\" makes it easier to commit to. It costs no extra time when substituted for passive travel of the same duration. When it adds modest time — a 10-minute walk extension — the health return per minute invested is extraordinarily high."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-10-q1",
+          "question": "What did the large UK study of 263,000 people find about cycling commuters?",
+          "options": [
+            "5% lower risk of cardiovascular disease",
+            "20% lower risk of all causes of death",
+            "45% lower risk of dying from cancer and 46% lower risk of dying from cardiovascular disease",
+            "60% lower risk of type 2 diabetes"
+          ],
+          "correctIndex": 2,
+          "explanation": "A major UK study found cycling commuters had a 45% lower risk of cancer mortality and 46% lower risk of cardiovascular mortality. Walking commuters had a 27% lower risk of cardiovascular disease — even after adjusting for other health factors."
+        },
+        {
+          "id": "em-10-q2",
+          "question": "How much extra activity per working week can you gain by walking just 15–20 minutes each way of a commute?",
+          "options": [
+            "30–45 minutes",
+            "1–1.5 hours",
+            "2.5–3.5 hours",
+            "5–6 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Walking 15–20 minutes each way, five days a week, adds 150–200 minutes of additional weekly activity — 2.5–3.5 hours — without requiring any extra time commitment beyond slightly adjusting your travel route."
+        },
+        {
+          "id": "em-10-q3",
+          "question": "What is a \"fake commute\" for remote workers?",
+          "options": [
+            "A virtual reality walking simulation",
+            "A deliberate walk before and/or after work to replace the lost movement of a commute",
+            "A walk-to-work programme subsidised by employers",
+            "Walking around the house between video calls"
+          ],
+          "correctIndex": 1,
+          "explanation": "A fake commute means deliberately walking before starting work and/or after finishing — mirroring the movement that an office commute would have provided. It creates a healthy work-life boundary and meaningful daily activity for people who work from home."
+        }
+      ]
+    },
+    {
+      "id": "em-11-movement-at-home",
+      "dayNumber": 11,
+      "title": "Movement at Home",
+      "subtitle": "Why your home can be one of the best places to build daily movement habits",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-11-c1",
+          "front": "Why is home often an underused movement environment?",
+          "back": "Most people associate home with relaxation and associate movement with going somewhere — a gym, park, or sports facility. But the home contains constant opportunities: stairs, gardening, cooking, cleaning, carrying laundry. Research shows household physical activity contributes meaningfully to health outcomes when accumulated consistently."
+        },
+        {
+          "id": "em-11-c2",
+          "front": "What household activities provide genuine health benefits?",
+          "back": "Gardening, cleaning, DIY, cooking, carrying laundry, playing with children, and tidying are all forms of moderate physical activity. A person who gardens for 30 minutes, cleans for 20 minutes, and does household tasks for another 20 minutes has accumulated a meaningful amount of daily movement without any formal exercise."
+        },
+        {
+          "id": "em-11-c3",
+          "front": "How can TV watching and screen time become more active?",
+          "back": "Replace passive sitting with active habits during screen time: stretch or use a foam roller, do bodyweight exercises during adverts, walk on the spot during shows, use a balance board, or stand for parts of a programme. These low-intensity movements prevent prolonged sitting without requiring you to sacrifice leisure time."
+        },
+        {
+          "id": "em-11-c4",
+          "front": "What simple home movement habit takes under two minutes but builds meaningful benefit?",
+          "back": "The habit of never sitting down to do something you can do standing or moving. Make phone calls standing up. Watch short videos standing. Read emails standing. Stir food standing. Fold laundry standing. None of these individually are significant, but together they shift your movement baseline without disrupting your day."
+        },
+        {
+          "id": "em-11-c5",
+          "front": "How can you make home movement more deliberate without turning it into exercise?",
+          "back": "Add a daily home movement intention — \"I will walk upstairs to get my phone rather than ask someone else to bring it,\" \"I will do 5 minutes of stretching while the kettle boils,\" \"I will walk around the garden after dinner.\" Small, specific intentions are far more likely to be acted on than vague goals like \"move more at home.\""
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-11-q1",
+          "question": "Which of the following household activities counts as moderate physical activity?",
+          "options": [
+            "Only activities that raise heart rate significantly, like running upstairs",
+            "Gardening, cleaning, DIY, cooking, and carrying laundry all count as moderate activity when done consistently",
+            "Only outdoor activities count",
+            "Household activities don't count towards health-related physical activity targets"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that accumulated household physical activity — gardening, cleaning, cooking, DIY — contributes meaningfully to daily movement totals and health outcomes. Moderate activity doesn't have to feel like exercise to be beneficial."
+        },
+        {
+          "id": "em-11-q2",
+          "question": "What does research suggest about movement during TV or screen time?",
+          "options": [
+            "Any movement during TV time negates the health benefits of relaxation",
+            "Light movement like stretching or standing during screen time prevents the harms of prolonged sitting without requiring you to give up leisure time",
+            "You should avoid TV completely if you want to be more active",
+            "Screen time and movement are incompatible"
+          ],
+          "correctIndex": 1,
+          "explanation": "Low-intensity movement during screen time — stretching, foam rolling, standing, gentle exercises during adverts — prevents prolonged sitting while preserving leisure time. It's one of the easiest ways to add daily movement for heavy screen users."
+        },
+        {
+          "id": "em-11-q3",
+          "question": "Why do specific implementation intentions (\"I will stretch while the kettle boils\") work better than vague goals (\"I'll move more\")?",
+          "options": [
+            "Because they make the activity harder and therefore more rewarding",
+            "Because specific if-then intentions create a clear trigger and action, making the behaviour automatic rather than relying on remembering",
+            "Because vague goals are too easy to achieve",
+            "Because specific intentions require more planning which burns extra calories"
+          ],
+          "correctIndex": 1,
+          "explanation": "Implementation intentions (specific when-then plans) are consistently more effective than vague goals in behaviour change research. The specific trigger (kettle boiling) cues the specific behaviour (stretching), removing the need for ongoing decision-making."
+        }
+      ]
+    },
+    {
+      "id": "em-12-standing-desks",
+      "dayNumber": 12,
+      "title": "Standing Desks and Workstation Movement",
+      "subtitle": "The truth about standing desks — and what actually helps at a desk-based job",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-12-c1",
+          "front": "Do standing desks solve the sitting problem?",
+          "back": "Partially. Standing desks reduce the amount of time spent sitting, but standing still for hours brings its own issues — varicose veins, lower back pain, and fatigue. The real goal is variety: alternating between sitting, standing, and movement throughout the day. No single static posture is ideal for extended periods."
+        },
+        {
+          "id": "em-12-c2",
+          "front": "What is the ideal ratio of sitting to standing at a desk?",
+          "back": "Current evidence suggests a ratio of 1:1 to 3:1 (sitting to standing) is reasonable for most desk workers, with regular movement breaks included. A practical approach is 45–60 minutes sitting, 15–20 minutes standing, and 2–5 minutes of moving — cycling through this pattern throughout the day."
+        },
+        {
+          "id": "em-12-c3",
+          "front": "What are the most effective exercises at or near a desk?",
+          "back": "Calf raises while standing, shoulder rolls, neck stretches, seated leg raises, standing hip flexor stretches, and brief walks are all effective. Desk-based exercises don't need to be conspicuous. Even simply changing positions, shifting weight, and moving arms and legs while seated activates muscles and improves circulation."
+        },
+        {
+          "id": "em-12-c4",
+          "front": "What is the most important workstation movement principle?",
+          "back": "The best posture is your next posture. No position — sitting, standing, or anything else — is good for your body when held rigidly for hours. The key is variety and regular transitions. Position changes, even minor ones, prevent the postural loading and circulation restriction that causes long-term desk-related problems."
+        },
+        {
+          "id": "em-12-c5",
+          "front": "What low-cost, no-equipment options exist for desk workers who can't get a standing desk?",
+          "back": "Improvised standing setups using boxes or books, sitting on a balance disc or stability ball for part of the day, placing a timer for movement reminders, doing desk stretches, taking walking calls, and walking during lunch all significantly improve desk-based health without any equipment cost."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-12-q1",
+          "question": "What is the main limitation of standing desks?",
+          "options": [
+            "They cost too much for most workers",
+            "Standing still for long periods brings its own health problems — the goal is variety between sitting, standing, and movement",
+            "They only work for people under 1.8 metres tall",
+            "They reduce productivity significantly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Standing all day brings its own problems — varicose veins, fatigue, lower back pain. The real goal isn't to stand instead of sit; it's to vary posture regularly and include frequent movement throughout the day."
+        },
+        {
+          "id": "em-12-q2",
+          "question": "What does \"the best posture is your next posture\" mean?",
+          "options": [
+            "You should always aim to sit with perfect upright posture",
+            "No static position is ideal for extended periods — regular position changes are more important than finding the \"perfect\" posture",
+            "Standing is always better than sitting",
+            "You should use a posture coach to find your optimal desk position"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research suggests that regular position changes — even small shifts — are more beneficial than maintaining any single \"correct\" posture. Variety reduces the postural loading and circulation restriction that causes chronic desk-based problems."
+        },
+        {
+          "id": "em-12-q3",
+          "question": "What is a practical approach to sitting/standing cycling at a desk?",
+          "options": [
+            "Stand for 8 hours, then sit for 8 hours",
+            "Sit for 45–60 minutes, stand for 15–20 minutes, move for 2–5 minutes — and repeat",
+            "Alternate every 5 minutes throughout the day",
+            "Stand only during meetings and sit for all other tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "A ratio of roughly 45–60 minutes sitting, 15–20 minutes standing, and 2–5 minutes of active movement is a practical and evidence-informed approach to reducing desk-related health risks without disrupting productivity."
+        }
+      ]
+    },
+    {
+      "id": "em-13-active-travel-weekends",
+      "dayNumber": 13,
+      "title": "Active Travel and Weekend Movement",
+      "subtitle": "How to use journeys and days off to build your movement foundation",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-13-c1",
+          "front": "What is active travel?",
+          "back": "Active travel means using human-powered movement — walking, cycling, or a combination with public transport — rather than driving for everyday journeys. It integrates movement into time already spent on getting from A to B, with no additional time cost when substituted for equivalent passive travel."
+        },
+        {
+          "id": "em-13-c2",
+          "front": "Why do weekends represent a unique movement opportunity?",
+          "back": "Weekends typically allow for longer, more varied movement that is harder to fit into working days. Research shows people who are consistently active at weekends — through recreational walks, gardening, sports, or outdoor activities — achieve significantly better health outcomes than those who are only active during structured weekday exercise."
+        },
+        {
+          "id": "em-13-c3",
+          "front": "What is the \"weekend warrior\" phenomenon?",
+          "back": "A weekend warrior is someone who does most or all of their physical activity in one or two weekend sessions. Surprisingly, studies show this pattern still delivers substantial health benefits compared to being inactive all week. While spreading activity across the week is ideal, concentrated weekend activity is far better than no activity at all."
+        },
+        {
+          "id": "em-13-c4",
+          "front": "What types of weekend activities provide the best movement return?",
+          "back": "Activities that combine social connection, varied terrain, and sustained moderate effort deliver the most. Long walks, cycling, hiking, swimming, dancing, gardening, and sport all qualify. Activities done with others are more likely to become regular habits — social accountability is one of the strongest predictors of long-term exercise adherence."
+        },
+        {
+          "id": "em-13-c5",
+          "front": "How can you use errands and social activities as movement opportunities?",
+          "back": "Walk to local shops rather than driving. Cycle to a café to meet a friend. Choose a venue requiring a longer walk. Walk while waiting for children at activities. Walk the dog further. Explore a new neighbourhood on foot. These small choices on non-working days often add 3,000–5,000 extra steps without feeling like \"exercise.\""
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-13-q1",
+          "question": "What does research show about \"weekend warriors\" who exercise only on weekends?",
+          "options": [
+            "Weekend exercise provides no benefit — it must be spread across the week",
+            "Weekend-only activity still delivers substantial health benefits compared to being inactive all week",
+            "Weekend warriors have a higher injury risk that negates the benefits",
+            "Weekend-only exercise is only beneficial if sessions last over two hours"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multiple studies show that concentrating weekly physical activity into one or two weekend sessions (the \"weekend warrior\" pattern) still provides meaningful health benefits — substantially better than no activity — even if daily distribution is ideal."
+        },
+        {
+          "id": "em-13-q2",
+          "question": "Why are socially shared activities more effective for long-term movement adherence?",
+          "options": [
+            "Social activities always involve more intense exercise",
+            "Social accountability and enjoyment are among the strongest predictors of long-term exercise maintenance",
+            "Group activities have stricter safety rules that prevent injury",
+            "They provide financial incentives to keep attending"
+          ],
+          "correctIndex": 1,
+          "explanation": "Behaviour change research consistently shows that social accountability — the fact that others expect you to show up — is one of the most powerful predictors of sustained exercise adherence. Activities shared with others are also more enjoyable, further improving long-term consistency."
+        },
+        {
+          "id": "em-13-q3",
+          "question": "How many extra steps can thoughtful weekend errand choices realistically add?",
+          "options": [
+            "500–1,000 steps",
+            "1,000–2,000 steps",
+            "3,000–5,000 steps",
+            "8,000–10,000 steps"
+          ],
+          "correctIndex": 2,
+          "explanation": "Walking to local shops, choosing a further venue for social activities, exploring on foot, and avoiding unnecessary car journeys can realistically add 3,000–5,000 extra weekend steps without any formal exercise commitment."
+        }
+      ]
+    },
+    {
+      "id": "em-14-personal-movement-plan",
+      "dayNumber": 14,
+      "title": "Building Your Personal Movement Plan",
+      "subtitle": "How to design a realistic, sustainable daily movement routine that fits your actual life",
+      "moduleId": "em-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-14-c1",
+          "front": "Why do most movement plans fail?",
+          "back": "Most movement plans are too ambitious, too rigid, and designed for an idealised version of daily life rather than the messy reality. They assume consistent motivation, no disruptions, and free time that doesn't exist. Sustainable plans are built around existing routines, have built-in flexibility, and start much smaller than feels necessary."
+        },
+        {
+          "id": "em-14-c2",
+          "front": "What are the three layers of a well-designed personal movement plan?",
+          "back": "Layer 1: Foundation — movement embedded in daily routines (morning walk, movement breaks, active commute). Layer 2: Accumulation — taking active choices throughout the day (stairs, standing, phone walking). Layer 3: Structured sessions — occasional longer walks, gym, sport, or outdoor activities. Most people need all three to hit meaningful weekly movement."
+        },
+        {
+          "id": "em-14-c3",
+          "front": "What is the minimum effective dose of weekly movement for health?",
+          "back": "Current guidelines recommend at least 150 minutes of moderate-intensity activity (like brisk walking) per week, or 75 minutes of vigorous activity. This sounds like a lot, but 22 minutes of brisk walking per day is enough. Many people exceed this through daily NEAT and movement habits without ever attending a gym."
+        },
+        {
+          "id": "em-14-c4",
+          "front": "How do you make a movement plan resilient to disruptions?",
+          "back": "Plan for your average day, not your best day. Build in a \"minimum viable dose\" — the smallest amount of movement you'll do even on a bad day (e.g., one 10-minute walk). Avoid all-or-nothing thinking: a partial day is not a failed day. Research shows that \"never miss twice\" is a more effective strategy than perfection."
+        },
+        {
+          "id": "em-14-c5",
+          "front": "What is the single most important quality of a sustainable movement plan?",
+          "back": "Enjoyability. Research on exercise adherence consistently shows that people sustain activities they enjoy. If your current plan involves activities you dislike, it won't last. The \"best\" exercise programme is the one you'll actually do. Variety, social elements, outdoor settings, and intrinsic enjoyment all powerfully improve long-term consistency."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-14-q1",
+          "question": "What is the current minimum recommendation for weekly moderate-intensity physical activity?",
+          "options": [
+            "60 minutes per week",
+            "100 minutes per week",
+            "150 minutes per week",
+            "300 minutes per week"
+          ],
+          "correctIndex": 2,
+          "explanation": "Major health organisations recommend at least 150 minutes of moderate-intensity activity per week — equivalent to about 22 minutes of brisk walking per day. This can be accumulated through a combination of structured exercise, walking, and active daily habits."
+        },
+        {
+          "id": "em-14-q2",
+          "question": "What are the three layers of a well-designed personal movement plan?",
+          "options": [
+            "Warm-up, main session, cool-down",
+            "Cardio, strength, flexibility",
+            "Foundation (routines), accumulation (active choices), and structured sessions",
+            "Morning, afternoon, evening movement slots"
+          ],
+          "correctIndex": 2,
+          "explanation": "A robust personal movement plan has three layers: foundation movement embedded in daily routines, accumulated active choices throughout the day (stairs, standing, phone walking), and occasional structured longer sessions. Together these deliver consistent, sustainable weekly activity."
+        },
+        {
+          "id": "em-14-q3",
+          "question": "What does research say is the most important quality of a sustainable exercise or movement plan?",
+          "options": [
+            "High intensity for maximum calorie burn",
+            "Scientific optimisation of frequency and duration",
+            "Enjoyability — people consistently sustain activities they find genuinely enjoyable",
+            "Tracking and measuring every session"
+          ],
+          "correctIndex": 2,
+          "explanation": "Exercise adherence research consistently shows that enjoyment is the single most powerful predictor of long-term consistency. The \"best\" plan is the one you'll actually maintain — not the most scientifically optimised one you'll abandon after six weeks."
+        }
+      ]
+    }
+  ]
+}

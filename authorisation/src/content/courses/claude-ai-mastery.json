@@ -1,0 +1,2060 @@
+{
+  "id": "claude-ai-mastery",
+  "title": "Claude AI: Think Smarter, Work Faster",
+  "subtitle": "Go from complete beginner to confident Claude user in 21 lessons. Write better, research smarter, and get more done every day.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "cam-module-1",
+      "moduleNumber": 1,
+      "title": "Meet Your New Thinking Partner",
+      "subtitle": "What Claude is, how it thinks, and your first real conversations — no experience needed.",
+      "days": "Lessons 1–7",
+      "skill": "Have confident conversations with Claude and get great answers every time",
+      "lessonIds": [
+        "cam-1-what-is-claude",
+        "cam-2-your-first-conversation",
+        "cam-3-how-to-talk-to-claude",
+        "cam-4-claudes-long-context-superpower",
+        "cam-5-using-projects",
+        "cam-6-artifacts",
+        "cam-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "cam-module-2",
+      "moduleNumber": 2,
+      "title": "Everyday Productivity",
+      "subtitle": "The tasks you do every week — writing, email, research, spreadsheets — done faster and better.",
+      "days": "Lessons 8–14",
+      "skill": "Use Claude for your most common daily work tasks and save hours every week",
+      "lessonIds": [
+        "cam-8-writing-and-editing",
+        "cam-9-emails-that-sound-like-you",
+        "cam-10-research-without-rabbit-holes",
+        "cam-11-summarising-long-documents",
+        "cam-12-content-and-social-media",
+        "cam-13-spreadsheet-formulas-and-data",
+        "cam-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "cam-module-3",
+      "moduleNumber": 3,
+      "title": "Power User Skills",
+      "subtitle": "Deeper capabilities that make Claude genuinely indispensable — analysis, strategy, automation & more.",
+      "days": "Lessons 15–21",
+      "skill": "Tackle complex analysis, strategy work, and build a personal Claude workflow",
+      "lessonIds": [
+        "cam-15-analysing-reports-and-data",
+        "cam-16-strategy-and-planning",
+        "cam-17-coding-without-being-a-developer",
+        "cam-18-reusable-prompts-and-templates",
+        "cam-19-multi-document-analysis",
+        "cam-20-connecting-claude-to-your-workflow",
+        "cam-21-graduation"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "cam-1-what-is-claude",
+      "dayNumber": 1,
+      "moduleId": "cam-module-1",
+      "title": "What is Claude?",
+      "subtitle": "Meet the AI that actually thinks before it speaks",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "An AI that thinks before it speaks",
+          "body": "Most people have heard of ChatGPT. But Claude — made by a company called Anthropic — is quietly becoming the AI that professionals trust for anything that requires careful thinking, long documents, or nuanced writing. This is your introduction.",
+          "stat": "2x",
+          "statLabel": "longer context than most AI tools"
+        },
+        {
+          "type": "content",
+          "headline": "Who made Claude — and why it matters",
+          "body": "Anthropic was founded by former members of OpenAI with one clear goal: build AI that is safe, honest, and genuinely helpful. That philosophy shapes everything about how Claude works.",
+          "bullets": [
+            "Claude is trained to be honest — it will tell you when it doesn't know something",
+            "It's designed to be helpful without being sycophantic (it won't just tell you what you want to hear)",
+            "Safety and thoughtfulness are built in from the ground up — not bolted on after"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What makes Claude different",
+          "body": "There are several AI assistants out there. Here's where Claude genuinely stands out compared to the rest:",
+          "bullets": [
+            "📄 Long context — Claude can read and reason across huge documents (reports, contracts, books)",
+            "✍️ Nuanced writing — it adapts tone, style, and voice better than almost any other AI",
+            "🧠 Deep reasoning — great at breaking down complex problems and thinking through decisions",
+            "🔍 Honest analysis — it will point out flaws in your argument, not just validate you"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Claude is great at",
+          "body": "You can use Claude for an enormous range of tasks. Here are the big ones you'll master in this course:",
+          "bullets": [
+            "Writing and editing — from emails to long-form content",
+            "Research and summarisation — digesting large documents quickly",
+            "Analysis — making sense of reports, data, and decisions",
+            "Strategy — thinking through business problems and plans",
+            "Spreadsheets and formulas — without being a spreadsheet expert",
+            "And much more — coding, templates, workflows, and automation"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Go to claude.ai (free account takes 30 seconds). Once you're in, type this message:\n\n\"Hi Claude, I'm brand new to AI. What's one thing you can do that might genuinely surprise me — something most people don't expect?\"\n\nRead the response. You'll immediately get a sense of how Claude communicates."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which company made Claude?",
+          "type": "mcq",
+          "options": [
+            "Google",
+            "OpenAI",
+            "Anthropic",
+            "Microsoft"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude is made by Anthropic — a company founded with a focus on safe and honest AI development."
+        },
+        {
+          "question": "Claude is designed to always agree with you and validate your ideas.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Claude is specifically trained NOT to be sycophantic — it will point out problems or flaws rather than just telling you what you want to hear."
+        },
+        {
+          "question": "What is one of Claude's biggest differentiators compared to other AI tools?",
+          "type": "mcq",
+          "options": [
+            "It can generate images",
+            "It has a very long context window for reading large documents",
+            "It only works with voice input",
+            "It requires no internet connection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude's long context window is a major advantage — it can read and reason across very large documents like reports, contracts, or books in a single conversation."
+        }
+      ]
+    },
+    {
+      "id": "cam-2-your-first-conversation",
+      "dayNumber": 2,
+      "moduleId": "cam-module-1",
+      "title": "Your First Conversation",
+      "subtitle": "If you can type, you can use Claude",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "No experience needed — just type",
+          "body": "The biggest barrier to using Claude isn't the technology. It's the feeling that you have to get it \"right.\" You don't. Claude is a conversation — and conversations are something you already know how to have.",
+          "stat": "30 sec",
+          "statLabel": "to create a free Claude account"
+        },
+        {
+          "type": "content",
+          "headline": "A quick tour of the interface",
+          "body": "When you open claude.ai, you'll see a clean, simple screen. Here's what you need to know:",
+          "bullets": [
+            "💬 The chat box at the bottom — type your message here and press Enter (or click the arrow)",
+            "📋 Previous chats on the left sidebar — your conversation history is saved automatically",
+            "➕ New chat button — starts a fresh conversation (useful when switching topics)",
+            "⚙️ Your account menu — top right, where you manage settings and subscription"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How conversations work",
+          "body": "Claude remembers everything you've said within a single conversation. This means you can build on previous messages naturally.",
+          "bullets": [
+            "You don't have to repeat yourself — just say \"change that last paragraph\" or \"make it shorter\"",
+            "You can ask follow-up questions: \"Can you explain that in simpler terms?\"",
+            "Each new chat starts fresh — Claude won't remember things from previous chats (unless you use Projects)",
+            "You can paste in text, documents, and even images directly into the chat box"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to avoid in your first conversations",
+          "body": "A few habits that slow people down when they're starting out:",
+          "bullets": [
+            "❌ Being too vague — \"help me with my work\" gets a generic answer",
+            "❌ One-word prompts — Claude needs context to give useful responses",
+            "❌ Giving up after one try — if the first answer isn't right, tell Claude and it will adjust",
+            "✅ The fix: be specific about what you need and who you are"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Open claude.ai and start a new chat. Type this:\n\n\"I work in [your job or industry]. Can you explain what AI tools like you are good for — and what you're NOT good for? Keep it short and honest.\"\n\nThis gets Claude to give you a realistic, honest picture — which is much more useful than marketing fluff."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens to your conversation history in Claude?",
+          "type": "mcq",
+          "options": [
+            "It's deleted after each session",
+            "It's saved and accessible in your sidebar",
+            "It's sent to your email",
+            "It's stored for 24 hours only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your previous chats are saved automatically and appear in the left sidebar, so you can return to any previous conversation at any time."
+        },
+        {
+          "question": "Claude remembers things from previous (separate) chats automatically.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Each new chat starts fresh — Claude doesn't automatically remember previous conversations. You can use the Projects feature to give Claude persistent context, which you'll learn about in Lesson 5."
+        },
+        {
+          "question": "Which of these is the best approach when Claude's first answer isn't quite right?",
+          "type": "mcq",
+          "options": [
+            "Start a completely new chat and try again",
+            "Tell Claude what you want changed and let it adjust",
+            "Accept the answer as it is",
+            "Refresh the page"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude works well with feedback. Simply tell it what to change — \"make it shorter\", \"use a more professional tone\", \"focus more on X\" — and it will adjust within the same conversation."
+        }
+      ]
+    },
+    {
+      "id": "cam-3-how-to-talk-to-claude",
+      "dayNumber": 3,
+      "moduleId": "cam-module-1",
+      "title": "How to Talk to Claude",
+      "subtitle": "The 3-part formula for getting great answers every time",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The secret to getting great answers every time",
+          "body": "Most people get mediocre AI responses because they ask vague questions. The good news: there's a simple formula that transforms your prompts from vague to powerful — and once you learn it, you'll use it for everything.",
+          "stat": "3×",
+          "statLabel": "better results with a structured prompt"
+        },
+        {
+          "type": "content",
+          "headline": "The 3-part prompt formula",
+          "body": "Every great Claude prompt has three ingredients. Think of it as building a brief for a brilliant assistant:",
+          "bullets": [
+            "1️⃣ CONTEXT — Who you are and what situation you're in (e.g. \"I'm a sales manager at a software company...\")",
+            "2️⃣ TASK — Exactly what you want Claude to do (e.g. \"...write me a follow-up email for a prospect who went cold...\")",
+            "3️⃣ FORMAT — How you want the output (e.g. \"...Keep it under 150 words. Friendly but professional.\")"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "See it in action",
+          "body": "Here's the difference between a weak prompt and a strong one:",
+          "bullets": [
+            "❌ WEAK: \"Write me an email\"",
+            "✅ STRONG: \"I'm a property manager. Write a professional email to a tenant who is 2 weeks late on rent. Firm but polite. Under 150 words.\"",
+            "❌ WEAK: \"Summarise this document\"",
+            "✅ STRONG: \"I'm a CEO. Summarise this board report into 5 bullet points focused on risks and financial highlights. Skip anything operational.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Three magic phrases that sharpen any prompt",
+          "body": "These additions make Claude's responses dramatically more useful:",
+          "bullets": [
+            "\"Act as a [role]\" — e.g. \"Act as a marketing expert and review my campaign idea\"",
+            "\"For someone who [description]\" — e.g. \"Explain this for someone with no accounting background\"",
+            "\"Give me [number] options\" — e.g. \"Give me 5 different angles for this pitch\"",
+            "\"Be direct and skip the intro\" — stops Claude starting with unnecessary preamble"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Use the 3-part formula on a real task from your work. Fill in the blanks:\n\n\"I'm a [your job title] at [type of company]. [Task — what exactly do you need?]. [Format — how long, what style, any constraints?]\"\n\nCompare the result to how you'd normally ask. The difference will be noticeable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three parts of a strong Claude prompt?",
+          "type": "mcq",
+          "options": [
+            "Title, body, and signature",
+            "Context, task, and format",
+            "Question, answer, and follow-up",
+            "Subject, verb, and object"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three-part formula is: Context (who you are and your situation), Task (what you want Claude to do), and Format (how you want the output structured or styled)."
+        },
+        {
+          "question": "Adding \"Be direct and skip the intro\" to a prompt helps Claude give shorter, more useful answers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Claude sometimes starts with unnecessary introductory text. Telling it to \"be direct and skip the intro\" cuts straight to the useful content."
+        },
+        {
+          "question": "Which of these is a stronger, better-structured prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Write something for my business\"",
+            "\"I run a bakery. Write a 3-sentence Instagram caption for a new sourdough loaf. Friendly, local feel.\"",
+            "\"Make content\"",
+            "\"Do marketing\""
+          ],
+          "correctIndex": 1,
+          "explanation": "The second option includes all three parts: context (bakery owner), task (Instagram caption for sourdough), and format (3 sentences, friendly local feel). Specific prompts get specific, useful results."
+        }
+      ]
+    },
+    {
+      "id": "cam-4-claudes-long-context-superpower",
+      "dayNumber": 4,
+      "moduleId": "cam-module-1",
+      "title": "Claude's Long Context Superpower",
+      "subtitle": "Read an entire report, contract, or book — and ask it anything",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if you could read 500 pages in 5 minutes?",
+          "body": "Most AI tools can only handle a few pages of text at a time. Claude can hold hundreds of thousands of words in a single conversation — entire reports, contracts, transcripts, or books. This is one of its most powerful and under-used features.",
+          "stat": "200,000+",
+          "statLabel": "words Claude can read in one conversation"
+        },
+        {
+          "type": "content",
+          "headline": "What is context — and why does it matter?",
+          "body": "In AI, 'context' means everything Claude can see and remember in one conversation. A larger context window means Claude can work with much bigger documents without losing track of earlier content.",
+          "bullets": [
+            "📄 Most AI tools: a few pages (3,000–8,000 words)",
+            "🧠 Claude: up to 200,000+ words — roughly a full novel",
+            "This means Claude can analyse an entire annual report, summarise a 100-page contract, or work through a long email thread without losing the thread"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to use long context in practice",
+          "body": "Paste or upload your document, then ask Claude specific questions. You don't need to tell Claude what to focus on — but good questions get better answers:",
+          "bullets": [
+            "\"What are the 5 most important points in this document?\"",
+            "\"What are the risks mentioned in this report?\"",
+            "\"Summarise this for a non-technical audience in under 200 words\"",
+            "\"What is the renewal clause in this contract — and what are my obligations?\"",
+            "\"Compare section 3 and section 7 — do they contradict each other?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What you can paste or upload",
+          "body": "Claude works with a wide range of inputs — here's what you can send it:",
+          "bullets": [
+            "📋 Pasted text — copy and paste any document directly into the chat",
+            "📎 Uploaded files — PDFs, Word documents, text files, spreadsheets",
+            "🖼️ Images — Claude can read text in images and analyse charts",
+            "💻 Code — paste code and ask Claude to explain, improve, or debug it"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Find a document from your work — a report, a contract, a long email thread, or even a PDF you've been meaning to read. Paste or upload it into Claude and ask:\n\n\"Summarise this document in 5 bullet points. What are the most important things I should know?\"\n\nIf you don't have a document handy, paste in the text from a long article you've saved."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Approximately how many words can Claude hold in one conversation?",
+          "type": "mcq",
+          "options": [
+            "3,000 words",
+            "10,000 words",
+            "200,000+ words",
+            "500 words"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude has a very large context window — 200,000+ words — which means it can read and reason across very large documents, entire reports, or lengthy transcripts in a single conversation."
+        },
+        {
+          "question": "You need to tell Claude exactly what to focus on before pasting a document.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. You can paste a document and then ask Claude what matters most — it will identify key points for you. That said, specific questions like 'what are the risks?' or 'summarise for a non-technical audience' get more targeted answers."
+        },
+        {
+          "question": "Which of these is a good use case for Claude's long context feature?",
+          "type": "mcq",
+          "options": [
+            "Generating a logo",
+            "Summarising a 100-page contract and flagging key obligations",
+            "Playing music",
+            "Booking a flight"
+          ],
+          "correctIndex": 1,
+          "explanation": "Summarising long documents is one of Claude's standout use cases. You can paste in an entire contract and ask it to identify key clauses, obligations, risks, and renewal terms — saving hours of reading."
+        }
+      ]
+    },
+    {
+      "id": "cam-5-using-projects",
+      "dayNumber": 5,
+      "moduleId": "cam-module-1",
+      "title": "Using Projects to Stay Organised",
+      "subtitle": "Give Claude a permanent memory for your most important work",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop re-explaining yourself every single time",
+          "body": "Every time you start a new chat, Claude forgets everything. That means you're constantly writing: 'I run a small accounting firm... I have 3 staff... My tone is professional but friendly...' Claude Projects fixes this — permanently.",
+          "stat": "10×",
+          "statLabel": "faster to get into the work when Claude already knows your context"
+        },
+        {
+          "type": "content",
+          "headline": "What is a Project?",
+          "body": "A Project is a persistent workspace in Claude. It lets you give Claude background information that it remembers across every conversation inside that project.",
+          "bullets": [
+            "📁 Create separate projects for different areas: work, personal, a specific client, a product",
+            "📝 Add a Project Instructions section — Claude reads this at the start of every chat",
+            "📎 Upload reference files — your brand guidelines, FAQs, past examples, templates",
+            "💬 All chats within the project are grouped together and searchable"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to put in your Project Instructions",
+          "body": "Your Project Instructions are like an onboarding document for Claude. Here's what to include:",
+          "bullets": [
+            "Who you are: your role, company, and industry",
+            "Your goals: what you're trying to achieve in this project",
+            "Your audience: who you're writing or creating for",
+            "Your tone and style: formal, casual, direct, warm?",
+            "Things to always/never do: e.g. \"Always use UK English\" or \"Never use jargon\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Project ideas to get you started",
+          "body": "Here are some practical projects that immediately save you time:",
+          "bullets": [
+            "🏢 Work project — brief Claude on your role, company, and team",
+            "✍️ Content project — upload your brand voice guide and past examples",
+            "📊 Client project — add a client brief, their preferences, and key background",
+            "🎓 Learning project — use it to take notes and ask follow-up questions on a topic you're studying",
+            "📋 Personal project — your CV, goals, and career context for coaching conversations"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Open claude.ai and create a new Project. Name it after your main work context. In the Project Instructions, write 3–5 sentences covering:\n\n1. Who you are and what you do\n2. Your typical tasks and goals\n3. Your preferred tone (professional, casual, direct?)\n\nThen start a new chat within that project — and notice how Claude already speaks your language without you having to explain yourself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main benefit of using Claude Projects?",
+          "type": "mcq",
+          "options": [
+            "It makes Claude faster at generating images",
+            "It gives Claude persistent context so you don't have to re-explain yourself every time",
+            "It allows Claude to browse the internet",
+            "It stores your passwords securely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Projects give Claude a persistent memory for a specific context. You set up background information once in Project Instructions, and Claude uses it in every conversation within that project — saving you from repeating yourself every time."
+        },
+        {
+          "question": "Claude automatically remembers everything from previous conversations without using Projects.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Standard Claude chats are isolated — each new chat starts fresh. Projects solve this by letting you create a persistent context that Claude refers to across all chats in that project."
+        },
+        {
+          "question": "What should you include in your Project Instructions?",
+          "type": "mcq",
+          "options": [
+            "Your credit card number and billing address",
+            "Your role, goals, audience, tone, and any specific rules for Claude to follow",
+            "A list of every task you've ever done",
+            "Your favourite colour and music preferences"
+          ],
+          "correctIndex": 1,
+          "explanation": "Good Project Instructions include: who you are, what you're trying to achieve, who your audience is, your preferred tone and style, and any specific rules — like 'always use UK English' or 'never use bullet points'."
+        }
+      ]
+    },
+    {
+      "id": "cam-6-artifacts",
+      "dayNumber": 6,
+      "moduleId": "cam-module-1",
+      "title": "Artifacts: Your Live Workspace",
+      "subtitle": "Create documents, tables, and code that update in real time",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop copy-pasting. Start creating.",
+          "body": "Most people use Claude by copying its responses into another app. Artifacts changes that. When Claude creates a document, table, presentation slide, or piece of code, it appears as a live panel beside your chat — and you can keep refining it without ever leaving the conversation.",
+          "stat": "0",
+          "statLabel": "times you need to copy-paste when using Artifacts"
+        },
+        {
+          "type": "content",
+          "headline": "What are Artifacts?",
+          "body": "An Artifact is a separate pane that Claude opens alongside your conversation when it creates something substantive. Think of it as Claude's workbench — where the finished output lives while you polish it together.",
+          "bullets": [
+            "📄 Document artifacts — blog posts, reports, proposals, emails, scripts",
+            "📊 Table artifacts — structured data, comparison tables, trackers",
+            "💻 Code artifacts — Python scripts, HTML pages, spreadsheet formulas, automations",
+            "🎨 React component artifacts — interactive mini-apps (for developers)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to use Artifacts effectively",
+          "body": "Once an Artifact is open, you can keep talking to Claude to refine it — without losing your previous version. Here's how to get the most from them:",
+          "bullets": [
+            "\"Add a section on [topic]\" — Claude updates the artifact directly",
+            "\"Make the tone more formal\" — it rewrites in place, keeping the structure",
+            "\"Turn this into a table instead\" — Claude converts the artifact format",
+            "\"Can you shorten section 2 by 50%?\" — targeted edits without starting over"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When Artifacts appear automatically",
+          "body": "Claude decides when to create an Artifact based on what you ask for. Certain requests almost always trigger one:",
+          "bullets": [
+            "Asking for a document, report, or article",
+            "Requesting a table or structured comparison",
+            "Asking Claude to write or edit code",
+            "Generating a template or form",
+            "Creating a slide outline or structured plan"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Ask Claude to create something that will trigger an Artifact. Try one of these:\n\n\"Create a simple weekly work planner template in a table format — 5 days, with columns for priority tasks, meetings, and end-of-day notes.\"\n\nOnce the Artifact appears, ask Claude to modify it: \"Add a column for energy level (1–5).\" Watch how it updates the Artifact directly."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a Claude Artifact?",
+          "type": "mcq",
+          "options": [
+            "A type of error message",
+            "A live output pane where Claude displays documents, tables, or code alongside your conversation",
+            "A premium paid feature",
+            "A way to share conversations with others"
+          ],
+          "correctIndex": 1,
+          "explanation": "Artifacts are live output panels that appear beside your conversation when Claude creates something substantive — a document, table, code, or template. You can continue refining the output through conversation without losing previous versions."
+        },
+        {
+          "question": "You have to copy-paste Artifacts into another app to make changes to them.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. That's exactly what Artifacts are designed to avoid. You can refine the output directly through conversation — 'make section 2 shorter', 'add a column for X', 'change the tone' — and Claude updates the Artifact in place."
+        },
+        {
+          "question": "Which request is most likely to trigger Claude to create an Artifact?",
+          "type": "mcq",
+          "options": [
+            "\"What is 12 × 14?\"",
+            "\"Who won the World Cup in 2018?\"",
+            "\"Write me a full project proposal with sections for budget, timeline, and deliverables\"",
+            "\"What does the word ephemeral mean?\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Asking for something substantive and structured — like a full proposal, a report, or a formatted template — triggers Claude to create an Artifact. Simple factual questions or short answers don't need one."
+        }
+      ]
+    },
+    {
+      "id": "cam-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "cam-module-1",
+      "title": "✅ Module 1 Checkpoint",
+      "subtitle": "Review the big ideas from Lessons 1–6 and lock them in",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've built a real foundation",
+          "body": "In six lessons you've gone from 'what is Claude?' to using Projects, Artifacts, and the three-part prompt formula. Before moving to everyday productivity, let's recap the core ideas — and make sure they stick.",
+          "stat": "6",
+          "statLabel": "powerful Claude skills unlocked"
+        },
+        {
+          "type": "content",
+          "headline": "The 6 big ideas from Module 1",
+          "body": "Here's your cheat sheet for everything covered so far:",
+          "bullets": [
+            "1. Claude is made by Anthropic — honest, thoughtful, and designed for deep work",
+            "2. Conversations work best when you're specific — tell Claude who you are and what you want",
+            "3. The 3-part prompt formula: Context → Task → Format",
+            "4. Long context = Claude can read entire documents, not just snippets",
+            "5. Projects give Claude a permanent memory for your most important work areas",
+            "6. Artifacts are live output panels — no more copy-pasting drafts between apps"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The most important habit to build now",
+          "body": "If there's one thing to take from Module 1, it's this: the more context you give Claude, the better everything gets. Think of Claude as a brilliant new colleague on their first week. They're smart and capable — but they need you to brief them properly.",
+          "bullets": [
+            "\"I'm a [role] at a [company type]\" — always start with who you are",
+            "\"I need this because...\" — background improves answers dramatically",
+            "\"The audience is...\" — Claude adapts its style and vocabulary automatically",
+            "\"The format I need is...\" — be specific: bullet points, email, table, short paragraph"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's coming in Module 2",
+          "body": "In the next seven lessons, you'll apply everything you've learned to real, everyday work tasks. Here's what you're about to unlock:",
+          "bullets": [
+            "✍️ Writing and editing that sounds like you (not like a robot)",
+            "📧 Emails that hit the right tone every time",
+            "🔍 Research done in minutes, not hours",
+            "📄 Any long document summarised to what actually matters",
+            "📱 Social media and content creation at scale",
+            "📊 Spreadsheet formulas and data help — without being a tech expert"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 1 challenge",
+          "body": "Before moving on, complete this quick challenge:\n\n1. Open Claude and start a chat using the full 3-part prompt formula — include your role (context), a specific task, and the format you want.\n\n2. If you haven't set up a Project yet, do it now — add at least 3 sentences of background about yourself.\n\nOnce you've done both, you're ready for Module 2."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these best describes the 3-part prompt formula?",
+          "type": "mcq",
+          "options": [
+            "Title, body, and signature",
+            "Context, task, and format",
+            "Who, what, and when",
+            "Prompt, answer, and follow-up"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 3-part formula is: Context (who you are and your situation), Task (exactly what you want Claude to do), and Format (how you want the output — length, style, structure)."
+        },
+        {
+          "question": "Claude Projects help you avoid repeating background information in every new chat.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Projects store your background information in Project Instructions, which Claude reads automatically in every conversation within that project. You only have to explain yourself once."
+        },
+        {
+          "question": "What is the key advantage of Claude's long context window?",
+          "type": "mcq",
+          "options": [
+            "It makes Claude respond faster",
+            "It lets Claude read and reason across very large documents in one conversation",
+            "It gives Claude access to the internet",
+            "It allows Claude to remember things between different projects"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude's long context window means it can hold hundreds of thousands of words in a single conversation — so you can paste in a full report, contract, or transcript and ask questions about the entire thing at once."
+        },
+        {
+          "question": "When does Claude typically create an Artifact?",
+          "type": "mcq",
+          "options": [
+            "Only when you explicitly ask for one",
+            "For every single response",
+            "When you ask for something substantive like a document, table, or code",
+            "Only on paid plans"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude automatically creates Artifacts when you ask for something substantive and structured — a document, report, table, template, or code. Short answers to factual questions don't need one."
+        }
+      ]
+    },
+    {
+      "id": "cam-8-writing-and-editing",
+      "dayNumber": 8,
+      "moduleId": "cam-module-2",
+      "title": "Writing & Editing in Minutes",
+      "subtitle": "Draft, rewrite, and polish any piece of writing — fast",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Staring at a blank page is over",
+          "body": "Writer's block, bad first drafts, documents that take three hours to write — Claude handles all of it. Whether you need to write something from scratch or transform a rough draft into something polished, this is where Claude earns its keep.",
+          "stat": "90%",
+          "statLabel": "of people say writing takes longer than it should"
+        },
+        {
+          "type": "content",
+          "headline": "Four writing tasks Claude excels at",
+          "body": "Here are the writing jobs that Claude does better than most people would in three times the time:",
+          "bullets": [
+            "✍️ First drafts — give Claude the brief and get a full draft in seconds",
+            "🔄 Rewrites — paste your rough version and ask Claude to improve it",
+            "✂️ Editing — paste any document and ask Claude to cut, tighten, or restructure",
+            "🎯 Tone adjustment — \"make this more formal / more casual / more empathetic\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to make Claude match your voice",
+          "body": "The biggest fear people have is that AI writing will sound robotic. Here's how to keep it sounding like you:",
+          "bullets": [
+            "Give Claude examples: \"Here's something I wrote before — match this tone\"",
+            "Describe your voice: \"Conversational but professional. No buzzwords. Short sentences.\"",
+            "Ask for options: \"Give me 3 different versions — formal, casual, and punchy\"",
+            "Edit the output: Claude gives you the 80% — you polish the last 20%"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Powerful writing prompts to steal",
+          "body": "Copy any of these straight into Claude:",
+          "bullets": [
+            "\"Rewrite this to be 30% shorter without losing the key points: [paste your text]\"",
+            "\"I wrote this quickly — make it sound professional without changing the meaning: [text]\"",
+            "\"Act as an editor. Tell me the 3 weakest parts of this and how to fix them: [text]\"",
+            "\"Write a strong opening paragraph for a [blog post / proposal / report] about [topic]\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Pick something you need to write today (or have been putting off). Give Claude this prompt:\n\n\"I need to write a [type of document] about [topic]. The audience is [who will read it]. The tone should be [formal / casual / direct]. Here's what I need to cover: [your key points]. Please write a first draft.\"\n\nOnce you have the draft, try asking: \"Make it 20% shorter and cut any fluff.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective way to make Claude's writing sound like you?",
+          "type": "mcq",
+          "options": [
+            "Just ask Claude to \"write naturally\"",
+            "Give Claude examples of your previous writing and describe your tone",
+            "Always use the default settings",
+            "Ask Claude to use long sentences and complex vocabulary"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best way to make Claude match your voice is to show it examples of how you write and describe your style explicitly — e.g. 'conversational but professional, short sentences, no jargon'. Claude adapts its writing to match the examples and guidelines you give it."
+        },
+        {
+          "question": "Claude can only help you write new content — it can't edit or rewrite existing text.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Editing and rewriting is one of Claude's strongest skills. You can paste in your rough draft and ask it to tighten, restructure, change the tone, or cut it by a specific percentage."
+        },
+        {
+          "question": "Which prompt is most likely to get you a useful, well-structured piece of writing?",
+          "type": "mcq",
+          "options": [
+            "\"Write something about marketing\"",
+            "\"I'm a marketing manager. Write a 300-word LinkedIn post about our new product launch. Audience: B2B decision-makers. Tone: confident but not salesy.\"",
+            "\"Make a blog\"",
+            "\"Write words about business\""
+          ],
+          "correctIndex": 1,
+          "explanation": "The second option uses the full 3-part formula: context (marketing manager), task (LinkedIn post about a product launch), and format (300 words, specific audience and tone). Specific, contextual prompts produce specific, useful results."
+        }
+      ]
+    },
+    {
+      "id": "cam-9-emails-that-sound-like-you",
+      "dayNumber": 9,
+      "moduleId": "cam-module-2",
+      "title": "Emails That Sound Like You",
+      "subtitle": "Handle any email situation — in seconds, not minutes",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average professional spends 2.5 hours on email every day",
+          "body": "Most of that time isn't reading — it's composing. Figuring out how to phrase something, rewriting the same message three times, worrying whether the tone is right. Claude cuts this down dramatically.",
+          "stat": "2.5 hrs",
+          "statLabel": "average time spent on email per day (before Claude)"
+        },
+        {
+          "type": "content",
+          "headline": "The email scenarios Claude handles best",
+          "body": "Every professional deals with these emails. Claude handles all of them:",
+          "bullets": [
+            "📧 Cold outreach — first-touch messages that get replies",
+            "🔄 Follow-ups — polite, persistent, without being annoying",
+            "😬 Difficult conversations — declining requests, delivering bad news",
+            "💼 Proposals — making a strong case concisely",
+            "🙏 Thank-yous and apologies — the right words at the right moment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to brief Claude for perfect emails",
+          "body": "Good email prompts have four ingredients:",
+          "bullets": [
+            "1. Context: who you are and who you're emailing",
+            "2. Situation: what's happened and what you need to communicate",
+            "3. Goal: what do you want the reader to do or feel after reading?",
+            "4. Tone: formal / warm / direct / apologetic — be specific"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Handling difficult email situations",
+          "body": "The hardest emails are the ones where tone really matters. Claude is surprisingly good at these:",
+          "bullets": [
+            "\"Write a polite but firm email declining this request: [paste request]\"",
+            "\"Draft an apology for a missed deadline — I need to keep the client relationship intact\"",
+            "\"A client is unhappy. Here's their complaint. Write a response that validates them and offers a solution: [complaint]\"",
+            "\"Write a follow-up for an unanswered email — friendly, not pushy. Here's the original: [email]\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Think of an email you've been putting off — a difficult reply, a follow-up, or something you're not sure how to phrase. Give Claude this prompt:\n\n\"I need to send an email to [recipient — their role, not their name]. The situation is: [explain what happened]. I want to: [your goal]. The tone should be: [professional / warm / direct / apologetic]. Please draft this email. Keep it under [X] words.\"\n\nIf it's not quite right, say: \"Make it less formal\" or \"Add more warmth.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four ingredients of a good email brief for Claude?",
+          "type": "mcq",
+          "options": [
+            "Subject, body, CC, and BCC",
+            "Context, situation, goal, and tone",
+            "Opening, middle, close, and signature",
+            "Who, what, when, and where"
+          ],
+          "correctIndex": 1,
+          "explanation": "A great email brief for Claude includes: Context (who you are, who you're emailing), Situation (what's happened), Goal (what you want the reader to do or feel), and Tone (formal, warm, direct, apologetic, etc.)."
+        },
+        {
+          "question": "Claude can help write difficult emails like declining requests or handling complaints.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. These are some of the most valuable email tasks for Claude. Give it the context and situation, and it can draft a response that's firm but professional, empathetic but clear — without you agonising over every word."
+        },
+        {
+          "question": "After Claude drafts an email, what should you do if the tone isn't quite right?",
+          "type": "mcq",
+          "options": [
+            "Start a completely new chat and begin again",
+            "Accept it as it is — Claude always gets tone right",
+            "Tell Claude what to change: \"make it warmer\" or \"make it shorter and more direct\"",
+            "Edit the email yourself without telling Claude"
+          ],
+          "correctIndex": 2,
+          "explanation": "Simply tell Claude what to adjust in the same conversation. 'Make it less formal', 'add a warmer opening', 'cut the last paragraph' — Claude refines the draft based on your feedback without you starting over."
+        }
+      ]
+    },
+    {
+      "id": "cam-10-research-without-rabbit-holes",
+      "dayNumber": 10,
+      "moduleId": "cam-module-2",
+      "title": "Research Without the Rabbit Holes",
+      "subtitle": "Deep summaries, clear comparisons, and answers in minutes",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Research used to take hours. Now it takes minutes.",
+          "body": "You've got a decision to make, a topic to understand, or a competitive landscape to map. Normally you'd open 12 browser tabs and still feel like you didn't get to the bottom of it. Claude changes this completely.",
+          "stat": "75%",
+          "statLabel": "of research time eliminated with well-structured Claude prompts"
+        },
+        {
+          "type": "content",
+          "headline": "Four powerful research use cases",
+          "body": "Claude is a brilliant research partner for all of these:",
+          "bullets": [
+            "📋 Topic overviews — \"Give me a solid understanding of [topic] in 10 minutes\"",
+            "⚖️ Pros and cons — \"What are the arguments for and against [decision]?\"",
+            "🔍 Fact-checking — \"Is this claim accurate? What's the nuance here?\"",
+            "📊 Comparisons — \"Compare [Option A] vs [Option B] for someone in my situation\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to ask for research without getting fluff",
+          "body": "The key to getting useful research is being specific about what you need and what to skip:",
+          "bullets": [
+            "\"Skip the intro and background — I already know the basics. Focus on [specific aspect]\"",
+            "\"Give me the most important things to know, not a complete overview\"",
+            "\"I'm making a decision about [X]. What do I actually need to know to decide well?\"",
+            "\"What are the common mistakes people make when [doing X]? Give me the practical ones.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Important: Claude's knowledge has a cut-off date",
+          "body": "Claude has broad, deep knowledge — but it's trained on data up to a certain date. Here's how to use it wisely:",
+          "bullets": [
+            "✅ Great for: concepts, frameworks, historical context, strategies, explanations",
+            "✅ Great for: analysing documents and articles you paste in",
+            "⚠️ Be careful with: current events, live prices, very recent news",
+            "💡 The fix: paste in recent articles or reports and ask Claude to analyse them"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Pick a topic relevant to your work that you've been meaning to understand better. Ask Claude:\n\n\"I'm a [your role]. Give me a clear, practical overview of [topic]. Focus on what matters most for someone in my position. Skip general definitions — I want insights, not a Wikipedia intro. Summarise in 5 key points with a short explanation of each.\"\n\nOnce you have the overview, try a follow-up: \"What are the most common mistakes people make with this?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How can you get focused research from Claude instead of a vague overview?",
+          "type": "mcq",
+          "options": [
+            "Ask the question as briefly as possible",
+            "Tell Claude to skip what you already know, focus on a specific aspect, and give you insights not definitions",
+            "Always start with \"Please research this topic:\"",
+            "Ask Claude to search the internet for you"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focused research prompts include context (who you are), what you already know (so Claude can skip it), what specifically you want to understand, and the format you need. This stops Claude giving you generic background you don't need."
+        },
+        {
+          "question": "Claude has real-time access to the internet and current news.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Claude's knowledge has a training cut-off date. For current events, live prices, or very recent information, you should paste in relevant articles or reports and ask Claude to analyse them — that way you get the freshness of current sources with Claude's analytical depth."
+        },
+        {
+          "question": "What is the best approach when you need to research something very recent?",
+          "type": "mcq",
+          "options": [
+            "Ask Claude to \"check the news\"",
+            "Assume Claude knows everything up to today",
+            "Find recent articles or reports yourself, paste them into Claude, and ask it to analyse them",
+            "Never use Claude for research"
+          ],
+          "correctIndex": 2,
+          "explanation": "The smartest approach is to combine Claude's analytical power with current sources. Find the latest article or report, paste it into Claude, and ask specific questions. You get both timeliness and depth."
+        }
+      ]
+    },
+    {
+      "id": "cam-11-summarising-long-documents",
+      "dayNumber": 11,
+      "moduleId": "cam-module-2",
+      "title": "Summarising Long Documents",
+      "subtitle": "Turn any report, contract, or article into what actually matters",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 40-page report you haven't read yet",
+          "body": "We all have them — the documents that matter but are too long, too dense, or too time-consuming to read properly. Claude can read them for you in seconds and extract exactly what you need to know. This single use case saves professionals hours every week.",
+          "stat": "40 pages",
+          "statLabel": "summarised in under 30 seconds"
+        },
+        {
+          "type": "content",
+          "headline": "Five powerful summarisation prompts",
+          "body": "Forget 'summarise this document'. These prompts get much better results:",
+          "bullets": [
+            "\"Summarise this in 5 bullet points. Focus on the most important findings.\"",
+            "\"What are the risks mentioned in this document? List them with a brief explanation of each.\"",
+            "\"I'm presenting this to a board. What are the 3 things they most need to know?\"",
+            "\"What are my obligations under this contract? What should I watch out for?\"",
+            "\"Extract all the action items and deadlines from this document.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The summarisation formats that work best",
+          "body": "Telling Claude the format you need transforms a generic summary into a useful one:",
+          "bullets": [
+            "📋 Bullet points — fastest to scan, great for decisions",
+            "📧 Executive summary — paragraph format, great for forwarding to others",
+            "🔑 Key sections — ask Claude to organise by theme (risks, opportunities, timeline)",
+            "❓ Q&A format — \"Answer these 5 specific questions based on this document\"",
+            "📊 Comparison table — great when reviewing multiple similar documents"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Asking follow-up questions about a document",
+          "body": "Once you've pasted a document, Claude remembers it for the whole conversation. This means you can keep asking questions without pasting again:",
+          "bullets": [
+            "\"Which section covers the payment terms?\"",
+            "\"Does this document mention anything about termination rights?\"",
+            "\"What's the total budget figure mentioned — and where?\"",
+            "\"Is there anything in this report that contradicts what we discussed last week?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Find a long document you've been putting off reading — a report, an industry article, a legal document, or a lengthy email thread. Paste it into Claude and ask:\n\n\"I'm a [your role]. Summarise the most important points from this document for someone in my position. Tell me: 1) What I need to know, 2) What I need to do, 3) What I should be concerned about.\"\n\nThen follow up with a specific question about something in the document."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which summarisation prompt is likely to get the most useful result?",
+          "type": "mcq",
+          "options": [
+            "\"Summarise this\"",
+            "\"What does this say?\"",
+            "\"I'm presenting this to our board. What are the 3 most important things they need to know?\"",
+            "\"Make this shorter\""
+          ],
+          "correctIndex": 2,
+          "explanation": "A great summarisation prompt gives Claude context (who will read it, what decisions it affects) and asks for a specific format and focus. 'What are the 3 things the board needs to know?' is specific, contextual, and produces a genuinely useful output."
+        },
+        {
+          "question": "After pasting a document, you have to paste it again for every follow-up question.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Claude remembers everything you've shared in a single conversation. Once you paste a document, you can ask follow-up questions about it throughout the chat without pasting again."
+        },
+        {
+          "question": "What is the best format to ask for when you need a document summary to share with others?",
+          "type": "mcq",
+          "options": [
+            "A random-length paragraph",
+            "An executive summary paragraph — clear, structured, and easy to forward",
+            "Raw bullet points with no context",
+            "A 2,000-word detailed breakdown"
+          ],
+          "correctIndex": 1,
+          "explanation": "An executive summary format is ideal for sharing. Ask Claude for a 'professional executive summary in 3 paragraphs' and it'll produce something you can paste into an email or meeting doc without editing."
+        }
+      ]
+    },
+    {
+      "id": "cam-12-content-and-social-media",
+      "dayNumber": 12,
+      "moduleId": "cam-module-2",
+      "title": "Content & Social Media",
+      "subtitle": "Consistent, on-brand content — in a fraction of the time",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The content hamster wheel is exhausting",
+          "body": "Blog posts, LinkedIn updates, Instagram captions, newsletters, video scripts — the demand for content never stops. Claude doesn't replace your ideas or your voice. It turns your ideas into polished content faster than you ever thought possible.",
+          "stat": "10×",
+          "statLabel": "faster content creation with the right Claude prompts"
+        },
+        {
+          "type": "content",
+          "headline": "Content types Claude handles brilliantly",
+          "body": "Every one of these is something Claude can draft, refine, or repurpose for you:",
+          "bullets": [
+            "📱 Social posts — LinkedIn, Instagram, X/Twitter, Facebook",
+            "📝 Blog posts and articles — long or short form, any industry",
+            "📧 Email newsletters — regular updates, campaigns, announcements",
+            "🎬 Video scripts — YouTube, Reels, TikTok, webinars",
+            "🔁 Repurposing — turn one piece of content into five different formats"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The content brief formula",
+          "body": "Good content prompts tell Claude the platform, audience, topic, tone, and length. Miss any of these and you'll get generic output:",
+          "bullets": [
+            "Platform: LinkedIn / Instagram / newsletter / blog?",
+            "Audience: who will read this — what do they care about?",
+            "Topic or hook: what is the post about — what's the angle?",
+            "Tone: professional / conversational / educational / inspiring?",
+            "Length: short (under 100 words) / medium (100–300) / long (300+)?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The repurposing superpower",
+          "body": "The biggest content time-saver is repurposing. Write once — distribute everywhere. Here's how:",
+          "bullets": [
+            "\"Here's a blog post I wrote. Turn it into 5 LinkedIn posts — one for each key point.\"",
+            "\"Turn this 30-minute presentation into an email newsletter summary.\"",
+            "\"I had this meeting. Here are the notes. Write a LinkedIn post about the key insight.\"",
+            "\"Take this case study and turn it into: 1) a short tweet, 2) a LinkedIn paragraph, 3) an email intro\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Think of one piece of content you need this week — a LinkedIn post, a blog intro, a caption, or an email. Use this prompt:\n\n\"I'm a [your role/business]. Write a [platform] [content type] about [topic]. The audience is [who reads it]. Tone: [your style]. Length: [approximate word count]. Include [any specific points to cover].\"\n\nThen try the repurposing trick: ask Claude to turn the result into a different format for a different platform."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the five key elements of a strong content brief for Claude?",
+          "type": "mcq",
+          "options": [
+            "Date, author, word count, keywords, and SEO score",
+            "Platform, audience, topic, tone, and length",
+            "Headline, intro, body, conclusion, and CTA",
+            "Title, subtitle, hashtags, image, and link"
+          ],
+          "correctIndex": 1,
+          "explanation": "A strong content brief includes: Platform (where it'll be published), Audience (who will read it), Topic or hook (what it's about), Tone (how it should sound), and Length (how long it should be). Miss any of these and you get generic output."
+        },
+        {
+          "question": "Claude can take a long blog post and repurpose it into multiple social media posts.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Repurposing is one of the most valuable content use cases. You can share a blog post, a meeting transcript, or a presentation and ask Claude to turn it into multiple formats — LinkedIn posts, email newsletters, Twitter threads, video scripts — all in one conversation."
+        },
+        {
+          "question": "Why does specifying the audience improve Claude's content output?",
+          "type": "mcq",
+          "options": [
+            "It doesn't — audience information has no effect",
+            "Claude adjusts its vocabulary, examples, tone, and focus based on who it's writing for",
+            "It makes Claude write longer content",
+            "It prevents Claude from using jargon in all cases"
+          ],
+          "correctIndex": 1,
+          "explanation": "When you tell Claude the audience, it adjusts everything — vocabulary (technical vs. plain English), examples (relatable to that audience), tone (formal vs. casual), and focus (what matters most to that specific reader)."
+        }
+      ]
+    },
+    {
+      "id": "cam-13-spreadsheet-formulas-and-data",
+      "dayNumber": 13,
+      "moduleId": "cam-module-2",
+      "title": "Spreadsheet Formulas & Data Help",
+      "subtitle": "Get Excel and Google Sheets working for you — without being an expert",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Spreadsheets don't have to be intimidating",
+          "body": "Most people use spreadsheets for about 10% of what they're capable of — because formulas feel like a foreign language. Claude speaks that language fluently. Tell it what you want to achieve in plain English and it'll give you the exact formula, step-by-step.",
+          "stat": "0",
+          "statLabel": "spreadsheet expertise required to use Claude for data work"
+        },
+        {
+          "type": "content",
+          "headline": "What Claude can do with spreadsheets",
+          "body": "You don't need to know Excel syntax to get results. Just describe what you need:",
+          "bullets": [
+            "🔢 Formulas — \"Give me a formula to calculate % change between two columns\"",
+            "🔍 Lookups — \"How do I pull data from another sheet based on a matching name?\"",
+            "📊 Data cleanup — \"How do I remove duplicates and sort this list alphabetically?\"",
+            "📈 Summaries — \"How do I calculate totals per category from a list?\"",
+            "🎨 Conditional formatting — \"How do I highlight cells that are over budget?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to ask Claude for a formula",
+          "body": "The clearest formula requests include three things:",
+          "bullets": [
+            "1. What you want to calculate or achieve (in plain English)",
+            "2. Which app you're using: Excel or Google Sheets (formulas differ slightly)",
+            "3. Where your data is: e.g. \"Column A has dates, Column B has values\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Beyond formulas: data analysis in plain English",
+          "body": "Paste your data directly into Claude for instant analysis — no formula needed:",
+          "bullets": [
+            "Paste a CSV or table and ask: \"What are the top 5 performing items?\"",
+            "\"Which month had the highest revenue — and by how much?\"",
+            "\"Spot any anomalies or unusual patterns in this data\"",
+            "\"Turn this data into a clear summary I can include in a report\"",
+            "For large datasets: upload the file and ask Claude questions about it"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Pick a spreadsheet task you've been stuck on or curious about. Ask Claude:\n\n\"I'm using [Excel / Google Sheets]. I have a spreadsheet where [describe what data you have and where it is]. I want to [what you're trying to achieve]. What formula should I use? Please give me the exact formula and explain step-by-step how to use it.\"\n\nIf you don't have a specific task, try: \"Give me the 5 most useful Google Sheets formulas for tracking monthly business performance — with examples.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What three things should you include when asking Claude for a spreadsheet formula?",
+          "type": "mcq",
+          "options": [
+            "Your name, the file size, and the number of rows",
+            "What you want to calculate, which app (Excel/Sheets), and where your data is",
+            "The formula name, the column letters, and your subscription plan",
+            "The sheet name, cell colours, and font size"
+          ],
+          "correctIndex": 1,
+          "explanation": "For the best formula help: tell Claude what you want to achieve in plain English, specify Excel or Google Sheets (formulas differ slightly), and describe where your data is (e.g. 'Column A has dates, Column B has sales figures')."
+        },
+        {
+          "question": "You can paste raw data directly into Claude and ask it to analyse the data without needing to write any formulas.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Paste your data (or upload a file) and ask Claude questions like 'what are the top performers?', 'which month had the highest sales?', or 'spot any unusual patterns'. Claude does the analysis in plain English — no formulas required."
+        },
+        {
+          "question": "Why does it matter whether you specify Excel or Google Sheets when asking Claude for help?",
+          "type": "mcq",
+          "options": [
+            "It doesn't matter — all formulas are identical",
+            "Excel is harder than Google Sheets",
+            "Formulas and features differ between the two — specifying the app ensures you get the right syntax",
+            "Claude only works with Google Sheets"
+          ],
+          "correctIndex": 2,
+          "explanation": "Excel and Google Sheets share many formulas but also have differences — especially for newer functions like XLOOKUP, array formulas, and certain date functions. Specifying which app you're using ensures Claude gives you the correct syntax that will actually work."
+        }
+      ]
+    },
+    {
+      "id": "cam-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "cam-module-2",
+      "title": "✅ Module 2 Checkpoint",
+      "subtitle": "Lock in your productivity wins before the power user module",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're halfway there — and already saving time",
+          "body": "Two modules down. You've moved from 'what is Claude?' to using it for the tasks that fill most of your working day. Before we go deeper into advanced capabilities, let's consolidate what you know — and make sure these habits stick.",
+          "stat": "14",
+          "statLabel": "Claude skills in your toolkit"
+        },
+        {
+          "type": "content",
+          "headline": "The Module 2 productivity toolkit",
+          "body": "Here's a recap of everything you can now do faster with Claude:",
+          "bullets": [
+            "✍️ Write and edit any document — emails, reports, posts — in minutes",
+            "📧 Handle difficult email situations with the right tone every time",
+            "🔍 Research any topic and get insights, not generic summaries",
+            "📄 Summarise any long document into what actually matters",
+            "📱 Create and repurpose content across every platform",
+            "📊 Get spreadsheet formulas and data analysis in plain English"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The productivity pattern that ties it all together",
+          "body": "Every task in Module 2 follows the same pattern. Memorise this and you'll use Claude effortlessly for anything:",
+          "bullets": [
+            "1. BRIEF CLAUDE — context + task + format",
+            "2. REVIEW THE OUTPUT — is it close? What needs adjusting?",
+            "3. REFINE IN CONVERSATION — \"make it shorter\", \"more formal\", \"focus on X\"",
+            "4. USE IT — copy, paste, send, publish",
+            "The key insight: you give the judgement and the brief, Claude does the drafting"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Coming up in Module 3",
+          "body": "The final module takes you into Claude's most powerful territory. You'll learn to:",
+          "bullets": [
+            "📊 Analyse complex reports and business data",
+            "🗺️ Think through strategy and big business decisions",
+            "💻 Write code and automations — in plain English",
+            "📋 Build a personal prompt library and repeatable workflow",
+            "📑 Compare and cross-reference multiple documents at once",
+            "🎓 Graduate with a personalised Claude playbook for your role"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 2 challenge",
+          "body": "Before moving on, pick one task from your to-do list today — something you'd normally spend 20–30 minutes on. Apply the Module 2 productivity pattern:\n\n1. Brief Claude with context + task + format\n2. Review the output\n3. Refine in one or two follow-up messages\n4. Use the result\n\nTime yourself. This is the habit that compounds over months and years."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the 4-step productivity pattern for using Claude on any task?",
+          "type": "mcq",
+          "options": [
+            "Search, copy, paste, share",
+            "Brief Claude, review the output, refine in conversation, use it",
+            "Type, wait, accept, move on",
+            "Prompt, edit, screenshot, email"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 4-step pattern is: Brief Claude (context + task + format), Review the output, Refine through conversation ('make it shorter', 'more formal'), and Use it. This pattern works for writing, research, data, and content tasks."
+        },
+        {
+          "question": "When using Claude for productivity tasks, your job is to provide the judgement and the brief — Claude handles the drafting.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. This is the right mental model. You bring your expertise, context, and judgement. Claude brings speed and drafting ability. You're the director — Claude is the highly capable team member executing the brief."
+        },
+        {
+          "question": "What is the best way to improve a Claude output that's almost right but not quite?",
+          "type": "mcq",
+          "options": [
+            "Delete everything and start a new chat from scratch",
+            "Accept the imperfect output without changes",
+            "Tell Claude what specifically to change in the same conversation",
+            "Open a different AI tool"
+          ],
+          "correctIndex": 2,
+          "explanation": "Always refine within the same conversation. Claude maintains context, so you can say 'cut the last paragraph', 'make the tone warmer', or 'focus more on the risks' — and it updates its response without losing what was already good."
+        }
+      ]
+    },
+    {
+      "id": "cam-15-analysing-reports-and-data",
+      "dayNumber": 15,
+      "moduleId": "cam-module-3",
+      "title": "Analysing Reports & Business Data",
+      "subtitle": "Turn raw numbers and dense reports into clear decisions",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The insight was in there all along — you just needed help finding it",
+          "body": "Most business reports are full of useful information that never gets acted on because nobody has time to properly analyse them. Claude can read your P&L, your sales data, your customer feedback survey, or your competitor's annual report — and tell you what it means.",
+          "stat": "15 min",
+          "statLabel": "to analyse a 50-page report with the right Claude prompts"
+        },
+        {
+          "type": "content",
+          "headline": "The types of analysis Claude handles",
+          "body": "Here's what you can actually do with Claude as your analyst:",
+          "bullets": [
+            "📊 Financial reports — P&L, balance sheets, cash flow statements",
+            "📈 Sales and marketing data — trends, top performers, laggards",
+            "💬 Customer feedback — themes, sentiment, priorities from surveys or reviews",
+            "🏢 Competitive intelligence — company reports, press releases, product pages",
+            "📋 Operational data — staff performance, project tracking, resource utilisation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to get the best analysis from Claude",
+          "body": "Paste your data or document, then ask targeted questions. Here are the question types that unlock the most value:",
+          "bullets": [
+            "\"What are the top 3 insights from this data?\"",
+            "\"What are the biggest risks or warning signs you can see?\"",
+            "\"What would you recommend based on this data?\"",
+            "\"What questions should I be asking about this that I'm not asking?\"",
+            "\"Summarise this for my CEO — 5 bullet points, focus on performance vs. target\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Making analysis actionable",
+          "body": "Raw analysis is only half the job. The other half is turning it into decisions and recommendations:",
+          "bullets": [
+            "\"Based on this data, what are the top 3 things I should do next month?\"",
+            "\"What does this performance data suggest about where we should focus investment?\"",
+            "\"If you were the CEO reviewing this, what would concern you most?\"",
+            "\"Create a one-page summary of this report — headlines, key numbers, and 3 recommended actions\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Find a report or dataset from your work — a spreadsheet, a PDF, a survey export, even a Google Analytics screenshot. Paste or upload it into Claude and ask:\n\n\"I'm a [your role]. Analyse this data and tell me: 1) What are the most important findings? 2) What should I be concerned about? 3) What would you recommend doing based on what you see?\"\n\nIf you don't have data handy, try pasting in a few rows from a spreadsheet and asking Claude to spot patterns."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What type of question gets the most useful analysis from Claude?",
+          "type": "mcq",
+          "options": [
+            "\"Tell me about this data\"",
+            "\"What does this mean?\"",
+            "\"Based on this data, what are the top 3 risks and your recommended actions?\"",
+            "\"Is this good or bad?\""
+          ],
+          "correctIndex": 2,
+          "explanation": "Targeted analytical questions get targeted analytical answers. Asking Claude for specific insights (risks, top performers, recommended actions) produces actionable output. Vague questions like 'what does this mean?' produce vague answers."
+        },
+        {
+          "question": "Claude can only analyse data if it's in a specific spreadsheet format.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Claude can analyse data from many formats — pasted tables, PDFs, uploaded spreadsheets, screenshots with text, or even rough notes. You can also describe a situation in words and ask Claude to help you think through the numbers."
+        },
+        {
+          "question": "After analysing a report, what should you ask to make the analysis more actionable?",
+          "type": "mcq",
+          "options": [
+            "\"Can you make this analysis longer?\"",
+            "\"What are the top 3 things I should do next based on this data?\"",
+            "\"Can you explain this using more technical language?\"",
+            "\"Please repeat the analysis\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking 'what should I do next?' turns analysis into action. Claude can recommend priorities, flag areas for investment, or identify what needs immediate attention — helping you move from data to decision."
+        }
+      ]
+    },
+    {
+      "id": "cam-16-strategy-and-planning",
+      "dayNumber": 16,
+      "moduleId": "cam-module-3",
+      "title": "Strategy & Business Planning",
+      "subtitle": "Think through big decisions with a thinking partner that never gets tired",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your smartest thinking partner — available at 11pm",
+          "body": "Strategy work is usually expensive or lonely. You either pay a consultant, book a workshop, or sit alone staring at a whiteboard. Claude gives you a tireless, knowledgeable thinking partner who can challenge your ideas, spot blind spots, and help you structure big decisions — any time you need it.",
+          "stat": "24/7",
+          "statLabel": "access to a strategic thinking partner"
+        },
+        {
+          "type": "content",
+          "headline": "What Claude can do for strategy and planning",
+          "body": "These are some of the highest-value use cases for serious professionals:",
+          "bullets": [
+            "🗺️ Business plans — structure, market analysis, financial assumptions",
+            "🔍 SWOT analysis — strengths, weaknesses, opportunities, threats",
+            "⚖️ Decision frameworks — pros/cons, risk assessment, scenario planning",
+            "🎯 Goal setting — OKRs, 90-day plans, priority frameworks",
+            "📋 Project planning — milestones, risks, dependencies, resource needs"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to use Claude as a strategy partner",
+          "body": "The most powerful strategy conversations happen when you treat Claude as a thinking partner, not just a content generator:",
+          "bullets": [
+            "\"Play devil's advocate — what are the strongest arguments against this plan?\"",
+            "\"What am I not thinking about? What are the blind spots in this strategy?\"",
+            "\"If this plan fails, what are the most likely reasons?\"",
+            "\"What would a competitor do to undermine this approach?\"",
+            "\"Act as a sceptical investor reviewing this business plan — what questions would you ask?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Useful strategy frameworks Claude knows cold",
+          "body": "Ask Claude to apply any of these frameworks to your situation:",
+          "bullets": [
+            "📊 SWOT (Strengths, Weaknesses, Opportunities, Threats)",
+            "🔵 Blue Ocean Strategy — find uncontested market space",
+            "🎯 Jobs-to-be-Done — understand what customers are really hiring you for",
+            "⚡ Porter's Five Forces — analyse competitive dynamics",
+            "🏃 The Eisenhower Matrix — prioritise by urgency and importance"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Bring a real strategic challenge or decision to Claude. Use this prompt:\n\n\"I'm a [your role] at a [type of company]. I'm trying to decide [the decision or challenge]. Here's the context: [2–3 sentences of background]. Please help me think through this. First, help me identify the key factors I should consider. Then give me your honest assessment — including the risks and what you'd do if you were in my position.\"\n\nThen push back: \"What am I not thinking about?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes Claude particularly valuable for strategy work?",
+          "type": "mcq",
+          "options": [
+            "It always agrees with your existing plan",
+            "It can challenge your thinking, spot blind spots, and apply established frameworks to your specific situation",
+            "It creates strategy presentations automatically",
+            "It has access to confidential competitor data"
+          ],
+          "correctIndex": 1,
+          "explanation": "Claude's value in strategy comes from its ability to challenge your thinking (not just validate it), identify what you might be missing, apply well-known frameworks, and help you stress-test plans. It's a thinking partner, not a yes-machine."
+        },
+        {
+          "question": "Asking Claude \"What am I not thinking about?\" is a useful strategy prompt.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. This is one of the most powerful prompts for strategic thinking. Claude can often identify blind spots, unconsidered stakeholders, hidden risks, or alternative framings that you haven't thought of — which is exactly what good advisers do."
+        },
+        {
+          "question": "When using Claude for a business decision, what gives you the most useful output?",
+          "type": "mcq",
+          "options": [
+            "Asking a very general question like \"help me with my business\"",
+            "Describing the specific decision, its context, and asking Claude to include risks and what it would do in your position",
+            "Asking Claude to make the decision for you",
+            "Giving Claude no background and seeing what it comes up with"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context is everything for strategy. When you give Claude the specific decision, relevant background, and ask for honest input including risks and recommendations, you get a genuinely useful thinking partner response rather than generic strategy advice."
+        }
+      ]
+    },
+    {
+      "id": "cam-17-coding-without-being-a-developer",
+      "dayNumber": 17,
+      "moduleId": "cam-module-3",
+      "title": "Coding Without Being a Developer",
+      "subtitle": "Scripts, automations, and formulas — in plain English",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You don't need to learn to code. You need to learn to explain.",
+          "body": "For years, non-technical people have been blocked from doing powerful things with technology because they can't code. Claude changes this completely. Describe what you want to achieve in plain English and Claude writes the code. You just need to know what you want to do.",
+          "stat": "0",
+          "statLabel": "lines of code you need to write yourself"
+        },
+        {
+          "type": "content",
+          "headline": "What non-developers can build with Claude",
+          "body": "These are genuinely achievable for someone with no coding experience:",
+          "bullets": [
+            "📊 Spreadsheet scripts — Google Sheets / Excel automations (sort, filter, email alerts)",
+            "🔄 Simple automations — rename files in bulk, convert formats, process CSVs",
+            "📧 Email templates with merge fields — for tools like Mailchimp or HubSpot",
+            "🌐 Simple web pages — HTML/CSS that you can paste into a website builder",
+            "🤖 Zapier/Make scripts — custom logic for your automations"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to describe code tasks to Claude",
+          "body": "You don't need to know the technical names. Just describe the outcome you want:",
+          "bullets": [
+            "✅ \"I want to automatically move emails with the word INVOICE in the subject to a folder\"",
+            "✅ \"I have 200 files with inconsistent names — I want them all renamed to YYYY-MM-DD format\"",
+            "✅ \"I want a Google Sheet that sends me an email when a cell goes above 1000\"",
+            "✅ \"Build me a simple webpage with my name, a photo, and three contact buttons\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Getting code to actually work",
+          "body": "The first version of code Claude gives you might need tweaking. Here's how to handle that:",
+          "bullets": [
+            "Paste the error message directly into Claude: \"I got this error: [paste error]\"",
+            "\"This isn't doing what I expected — here's what happened: [describe it]\"",
+            "\"Can you explain what each line does in plain English so I understand it?\"",
+            "\"Can you add a safety check that confirms before making changes?\"",
+            "For big tasks: \"Break this down into small steps first before you write any code\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Think of something repetitive you do manually that could be automated. Describe it to Claude in plain English:\n\n\"I want to [describe the task you do manually]. I use [tool/app — e.g. Google Sheets, Gmail, Excel]. Can you write [a script / a formula / step-by-step instructions] to make this happen automatically? Explain each step so I know what I'm running before I use it.\"\n\nIf you're not sure what to automate, try: \"What are 5 things that someone who uses Excel and Gmail could automate with a simple script?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do you need to be able to do to use Claude for coding tasks?",
+          "type": "mcq",
+          "options": [
+            "Know multiple programming languages",
+            "Have a computer science degree",
+            "Clearly describe what you want to achieve in plain English",
+            "Know how to install development software"
+          ],
+          "correctIndex": 2,
+          "explanation": "You don't need any coding knowledge. Claude translates your plain English description into working code. The skill you need is the ability to clearly describe the outcome you want — which is something you already know how to do."
+        },
+        {
+          "question": "If Claude's code gives you an error message, the best approach is to give up.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Paste the error message directly into Claude and ask it to fix the problem. Claude is excellent at debugging — it can read error messages and explain exactly what went wrong and how to fix it."
+        },
+        {
+          "question": "Which of these is a good example of describing a coding task to Claude?",
+          "type": "mcq",
+          "options": [
+            "\"Write me some code\"",
+            "\"I want a script that does stuff in Excel\"",
+            "\"I want a Google Sheet formula that highlights any row where the value in Column C is more than 20% above the average of all values in Column C\"",
+            "\"Make the spreadsheet better\""
+          ],
+          "correctIndex": 2,
+          "explanation": "The best code requests are specific about the tool (Google Sheets), the trigger condition (value > 20% above average), the column (Column C), and the action (highlight the row). Specific descriptions produce working code; vague descriptions produce vague code."
+        }
+      ]
+    },
+    {
+      "id": "cam-18-reusable-prompts-and-templates",
+      "dayNumber": 18,
+      "moduleId": "cam-module-3",
+      "title": "Building Reusable Prompts & Templates",
+      "subtitle": "Stop starting from scratch — build a prompt library that works for you",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your best Claude prompts are your most valuable work assets",
+          "body": "Every time you write a great prompt that gets a perfect result, you've created something reusable. Most people throw these away and start from scratch next time. Building a personal prompt library is the difference between using Claude occasionally and using it as a genuine superpower.",
+          "stat": "5×",
+          "statLabel": "more productive with a well-built prompt library"
+        },
+        {
+          "type": "content",
+          "headline": "What is a prompt library?",
+          "body": "A prompt library is a simple collection of your best, most-used prompts — saved and ready to reuse. Think of it as a toolkit of pre-built instructions for your most common Claude tasks.",
+          "bullets": [
+            "📋 A document (Notion, Google Doc, notes app) with your best prompts",
+            "📁 Organised by category: writing, email, research, analysis, content",
+            "🔧 Prompts with [placeholders] that you fill in each time",
+            "💡 Annotated with notes: what it works best for, when to use it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to build a reusable prompt template",
+          "body": "Take any prompt that got a great result and turn it into a template with variables:",
+          "bullets": [
+            "Replace specific details with [PLACEHOLDERS IN CAPS]",
+            "Example: \"I'm a [ROLE] at a [COMPANY TYPE]. Write a [FORMAT] about [TOPIC]. Audience: [AUDIENCE]. Tone: [TONE]. Length: [LENGTH].\"",
+            "Save the template with a clear name: e.g. \"Content brief — social post\"",
+            "Test it 3 times on different tasks to confirm it's reliable"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 10 prompts worth having in every library",
+          "body": "Build these first — they cover 80% of daily tasks:",
+          "bullets": [
+            "1. Email brief (context, situation, goal, tone)",
+            "2. Document first draft (role, topic, audience, format)",
+            "3. Meeting summary → action items",
+            "4. Document summarise to bullet points",
+            "5. Research overview (role, topic, what to skip)",
+            "6. Content repurposing (source → platform × format)",
+            "7. Decision analysis (context, options, concerns)",
+            "8. Feedback and editing (paste text, specify what to improve)",
+            "9. Strategy challenge (context, decision, ask for pushback)",
+            "10. Data analysis (paste data, role, 3 questions to answer)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Ask Claude to help you build your prompt library:\n\n\"I'm a [your role]. Help me build a personal Claude prompt library. Based on my role, what are the 5 most useful prompts I should have? For each one, give me a template with [PLACEHOLDERS] that I can fill in each time I use it.\"\n\nSave the results somewhere you'll actually find them — Notion, Google Docs, or even a note on your phone."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key feature that makes a prompt template reusable?",
+          "type": "mcq",
+          "options": [
+            "Being very long and detailed",
+            "Using formal language",
+            "Replacing specific details with [PLACEHOLDERS] that you fill in each time",
+            "Using bullet points instead of paragraphs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Placeholders are what make prompts reusable. Replace specific names, topics, and contexts with [ROLE], [TOPIC], [AUDIENCE] etc. Then you have a template you can fill in for any task — instead of writing a new prompt from scratch every time."
+        },
+        {
+          "question": "Building a prompt library is only useful for people who use Claude every day.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Even if you use Claude a few times a week, a prompt library saves time by removing the 'how do I phrase this?' friction every time. The more tasks you have saved as templates, the faster you start and the better your results."
+        },
+        {
+          "question": "What is the first step to building a prompt template from a prompt that worked well?",
+          "type": "mcq",
+          "options": [
+            "Delete the original prompt and start fresh",
+            "Take the successful prompt and replace the specific details with [PLACEHOLDERS IN CAPS]",
+            "Send it to a colleague for review",
+            "Ask Claude to write a different version"
+          ],
+          "correctIndex": 1,
+          "explanation": "When a prompt gets a great result, immediately turn it into a template by replacing specific details with named placeholders — [ROLE], [TOPIC], [AUDIENCE], [TONE]. Save it with a clear name and you'll have a reusable asset forever."
+        }
+      ]
+    },
+    {
+      "id": "cam-19-multi-document-analysis",
+      "dayNumber": 19,
+      "moduleId": "cam-module-3",
+      "title": "Multi-Document Analysis",
+      "subtitle": "Compare, cross-reference, and spot gaps across multiple sources at once",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Claude can hold multiple documents in mind simultaneously",
+          "body": "One of Claude's rarest and most powerful capabilities is working across multiple documents at once. Compare two contracts. Cross-reference three reports. Reconcile conflicting survey responses. Find gaps between a brief and a proposal. Tasks that would take a lawyer or analyst hours take Claude minutes.",
+          "stat": "10+",
+          "statLabel": "documents Claude can hold and cross-reference in one conversation"
+        },
+        {
+          "type": "content",
+          "headline": "What multi-document analysis looks like in practice",
+          "body": "Here are real-world use cases that become easy with Claude:",
+          "bullets": [
+            "📄 Comparing two versions of a contract — \"What changed between version 1 and version 2?\"",
+            "📊 Reconciling two datasets — \"Where do these two reports disagree?\"",
+            "📋 Checking a proposal against a brief — \"Does this proposal address everything in the brief?\"",
+            "🔍 Research synthesis — \"Summarise the common themes across all three of these articles\"",
+            "⚖️ Options comparison — \"Compare these three vendor proposals on price, timeline, and features\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to structure multi-document prompts",
+          "body": "Clarity about which document is which is essential when you're working with multiple sources:",
+          "bullets": [
+            "Label each document: \"This is Document 1 — the original contract: [paste]\"",
+            "\"This is Document 2 — the amended contract: [paste]\"",
+            "Then ask: \"Compare Document 1 and Document 2. What are the key differences?\"",
+            "Or: \"Based on both documents, what are the three most important points of disagreement?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding what's missing — the gap analysis superpower",
+          "body": "Claude is exceptional at identifying what's absent, not just what's present. This is often the most valuable analysis of all:",
+          "bullets": [
+            "\"Does this proposal cover everything in the brief? What's missing?\"",
+            "\"Are there any requirements from Document 1 that aren't addressed in Document 2?\"",
+            "\"What questions aren't answered by any of these three reports?\"",
+            "\"Based on these survey responses, what concerns are customers hinting at but not directly stating?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Find two related documents to compare — two versions of something, a brief and a response to it, two competitor pages, or two articles on the same topic. Paste them both into Claude (labelled clearly) and ask:\n\n\"Document 1: [paste] --- Document 2: [paste] --- Based on both documents, please: 1) Summarise the key similarities. 2) Highlight the important differences. 3) Tell me what's in Document 1 that isn't addressed in Document 2.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most important thing to do when giving Claude multiple documents to compare?",
+          "type": "mcq",
+          "options": [
+            "Summarise each document yourself before pasting",
+            "Clearly label each document so Claude knows which is which",
+            "Paste them all together without labels",
+            "Only give Claude one document at a time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Labelling each document clearly (e.g. 'Document 1 — the original contract:' and 'Document 2 — the revised contract:') is essential for accurate multi-document analysis. Without labels, Claude may confuse which content came from where."
+        },
+        {
+          "question": "Claude can identify what is MISSING from a document by comparing it to another.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Gap analysis is one of Claude's most powerful and underused capabilities. Ask it 'what's in Document 1 that isn't addressed in Document 2?' and it will identify missing elements, unanswered requirements, or gaps in coverage."
+        },
+        {
+          "question": "Which of these is a good multi-document analysis prompt?",
+          "type": "mcq",
+          "options": [
+            "\"Read both of these\"",
+            "\"Tell me about these documents\"",
+            "\"Compare Document 1 (vendor proposal) and Document 2 (our requirements brief). Does the proposal address all our requirements? What's missing or unclear?\"",
+            "\"Which document is better?\""
+          ],
+          "correctIndex": 2,
+          "explanation": "A good multi-document prompt names the documents, specifies what's in each one, and asks a specific analytical question. 'Which is better?' is too vague — 'does the proposal address all requirements?' gives Claude a clear, answerable task."
+        }
+      ]
+    },
+    {
+      "id": "cam-20-connecting-claude-to-your-workflow",
+      "dayNumber": 20,
+      "moduleId": "cam-module-3",
+      "title": "Connecting Claude to Your Workflow",
+      "subtitle": "Build habits and systems that make Claude part of how you work",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The difference between occasional users and power users",
+          "body": "Most people use Claude in bursts — for a specific task, then forget about it. Power users have integrated Claude into their daily workflow. They reach for it instinctively. They have systems. They get compounding value. This lesson is about making that shift.",
+          "stat": "3 hrs",
+          "statLabel": "saved per day by professionals with an integrated Claude workflow"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 daily habits of Claude power users",
+          "body": "These simple habits turn Claude from an occasional tool into a daily accelerator:",
+          "bullets": [
+            "🌅 Morning briefing — paste your to-do list and ask Claude to help prioritise and plan",
+            "✉️ Email drafting — every email you write, draft in Claude first",
+            "📝 Meeting notes → actions — paste notes after every meeting, get action items instantly",
+            "🔍 Research first — before any decision, ask Claude what you should consider",
+            "🌙 End-of-day review — \"Here's what I accomplished. What should I focus on tomorrow?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Claude workflow for your role",
+          "body": "Your Claude workflow should be tailored to how you actually work. Here's how to design it:",
+          "bullets": [
+            "List your 5 most time-consuming recurring tasks",
+            "For each one, ask: \"Can Claude do a first pass on this?\"",
+            "Create a template prompt for each task and save it in your library",
+            "Pick one day this week to use Claude for ALL of those tasks",
+            "Review what worked and refine your templates"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Integrating Claude with the tools you already use",
+          "body": "Claude isn't an island — here's how to connect it to your existing toolkit:",
+          "bullets": [
+            "📋 Notion / Google Docs — paste content in and out, use Claude to edit and improve",
+            "📧 Email — draft in Claude, paste into Gmail, Outlook, or your email tool",
+            "🗓️ Calendar — paste meeting agendas and ask Claude to help prepare",
+            "🔄 Zapier / Make — use Claude actions inside automations (advanced feature)",
+            "💬 Slack / Teams — draft message responses in Claude, paste when ready"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it now",
+          "body": "Ask Claude to help you design your personal workflow:\n\n\"I'm a [your role]. My most common daily tasks include: [list 3–5 things]. I use these tools: [list apps]. Design a daily Claude workflow for me — when should I use Claude, for which tasks, and how? Give me a simple routine I can start tomorrow.\"\n\nThen: pick ONE habit from the response and commit to doing it for the next 5 working days."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What separates occasional Claude users from power users?",
+          "type": "mcq",
+          "options": [
+            "Power users have a more expensive subscription",
+            "Power users have integrated Claude into their daily workflow with consistent habits",
+            "Power users only use Claude for complex technical tasks",
+            "Power users write longer prompts"
+          ],
+          "correctIndex": 1,
+          "explanation": "The difference is integration and habit. Power users have Claude in their routine — for email, planning, research, meeting notes. They reach for it instinctively. Occasional users remember it exists when they have a 'big' task, missing most of the daily value."
+        },
+        {
+          "question": "The best way to build a Claude workflow is to use it for everything at once on day one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The best approach is to pick one or two high-frequency tasks and start there. Build the habit around those specific use cases, refine your templates, and expand from there. Trying to change everything at once leads to overwhelm and giving up."
+        },
+        {
+          "question": "Which of these is the most effective way to use Claude with your existing tools?",
+          "type": "mcq",
+          "options": [
+            "Use Claude instead of all other tools",
+            "Only use Claude when other tools fail",
+            "Draft in Claude, refine through conversation, then paste the result into your existing tool",
+            "Replace your email app with Claude"
+          ],
+          "correctIndex": 2,
+          "explanation": "Claude works best as a drafting and thinking layer on top of your existing tools — not as a replacement for them. Draft in Claude, refine it, then paste the result into Gmail, Notion, Slack, Google Docs, or wherever you actually work."
+        }
+      ]
+    },
+    {
+      "id": "cam-21-graduation",
+      "dayNumber": 21,
+      "moduleId": "cam-module-3",
+      "title": "🎓 Graduation — Your Claude Playbook",
+      "subtitle": "You did it. Now build your personal action plan.",
+      "duration": "6 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "21 lessons. One transformed way of working.",
+          "body": "You started this course not knowing what Claude was. Now you know how to use it for writing, research, analysis, strategy, coding, and building a personalised workflow. That's not a small thing — that's a fundamental skill for the next decade of work.",
+          "stat": "420",
+          "statLabel": "XP earned. Certificate unlocked."
+        },
+        {
+          "type": "content",
+          "headline": "Everything you can now do with Claude",
+          "body": "Here's the full picture of what you've built over 21 lessons:",
+          "bullets": [
+            "🧠 Understand how Claude thinks — and why that makes it different",
+            "✍️ Write, edit, and polish any document in minutes",
+            "📧 Handle any email situation with the right tone",
+            "🔍 Research deeply without getting lost in rabbit holes",
+            "📄 Summarise any document to what actually matters",
+            "📊 Analyse reports and data like an experienced analyst",
+            "🗺️ Think through strategy and big decisions with a thinking partner",
+            "💻 Write code and automations in plain English",
+            "📋 Build a personal prompt library and repeatable workflow"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your 30-day Claude challenge",
+          "body": "The most important thing now is consistency. Here's a simple 30-day plan to cement everything:",
+          "bullets": [
+            "Week 1: Use Claude for every email you write. Build that habit first.",
+            "Week 2: Add research and summarisation. Any document you need to read — give it to Claude first.",
+            "Week 3: Use Claude for one strategic or analytical task each day.",
+            "Week 4: Build or refine 5 prompt templates. Set up a Project if you haven't already.",
+            "End of month: Review. What saved you the most time? Double down on that."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The mindset that makes all the difference",
+          "body": "Here's what separates the people who transform how they work from the people who dabble:",
+          "bullets": [
+            "🔁 Treat Claude like a colleague, not a search engine — give context, expect dialogue",
+            "⚡ First pass, not final draft — Claude gives you the 80%, you add the 20%",
+            "📈 Every task is a chance to build a template — save what works",
+            "🧪 Keep experimenting — Claude's capabilities grow constantly",
+            "🎯 Focus on your highest-leverage tasks — that's where the real ROI lives"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your graduation task",
+          "body": "Complete your Claude playbook. Open a new chat and paste this:\n\n\"I'm a [your role] at a [type of organisation]. I've just finished a course on Claude AI. Help me create a personalised Claude playbook: 1) My top 5 use cases based on my role, 2) A prompt template for each one, 3) A simple daily routine for when to use Claude, 4) The single most impactful thing I can do this week to start saving time with Claude immediately.\"\n\nSave the result. This is your Claude Playbook."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended first habit to build in your 30-day Claude challenge?",
+          "type": "mcq",
+          "options": [
+            "Using Claude for complex coding projects",
+            "Using Claude for every email you write",
+            "Using Claude for strategy and business planning every day",
+            "Trying every feature of Claude in week one"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with email is the recommendation because it's a daily, high-frequency task that immediately demonstrates Claude's value. Build one strong habit first — email — then layer in research, analysis, and strategy week by week."
+        },
+        {
+          "question": "Claude gives you the finished product — your job is just to accept or reject it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The right mental model is: Claude gives you 80% of the way there. Your expertise, judgement, and context take it the final 20%. You're the director — you bring the brief, the knowledge, and the quality control. Claude brings the speed."
+        },
+        {
+          "question": "What is the most important thing to do with a prompt that worked really well?",
+          "type": "mcq",
+          "options": [
+            "Use it once and then write a new one next time",
+            "Share it on social media",
+            "Save it as a template with [PLACEHOLDERS] in your prompt library",
+            "Delete the conversation to keep things tidy"
+          ],
+          "correctIndex": 2,
+          "explanation": "When a prompt gets a great result, save it immediately as a template — replace the specific details with [PLACEHOLDERS] and add it to your prompt library. Over time, this library becomes one of your most valuable professional assets."
+        },
+        {
+          "question": "What mindset best describes how to treat Claude for maximum value?",
+          "type": "mcq",
+          "options": [
+            "A search engine — ask and get a single definitive answer",
+            "A replacement for thinking — let Claude make all decisions",
+            "A colleague you brief with context and have a back-and-forth dialogue with",
+            "A one-shot tool — if the first answer isn't perfect, move on"
+          ],
+          "correctIndex": 2,
+          "explanation": "Treating Claude like a well-briefed, intelligent colleague is the most productive mindset. Give it context. Have a dialogue. Refine through conversation. That back-and-forth is where the real value lives — not in single one-shot prompts."
+        }
+      ]
+    }
+  ]
+}

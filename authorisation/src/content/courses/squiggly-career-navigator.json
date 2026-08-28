@@ -1,0 +1,1916 @@
+{
+  "id": "squiggly-career-navigator",
+  "title": "The Squiggly Career Navigator",
+  "subtitle": "Ditch the career ladder, embrace your non-linear path, and design a career full of meaning, range, and possibility.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "sq-module-1",
+      "moduleNumber": 1,
+      "title": "Embrace the Squiggle",
+      "subtitle": "Ditch the career ladder myth and learn to thrive in a non-linear world of possibilities.",
+      "days": "Lessons 1–7",
+      "skill": "Reframe your career as an evolving portfolio of strengths, values, and experiments",
+      "lessonIds": [
+        "sq-1-ladder-is-dead",
+        "sq-2-strengths-exploration",
+        "sq-3-values-audit",
+        "sq-4-confidence-gremlins",
+        "sq-5-curiosity-fuel",
+        "sq-6-future-possibilities",
+        "sq-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "sq-module-2",
+      "moduleNumber": 2,
+      "title": "Build Your Range",
+      "subtitle": "Develop breadth, explore widely, and connect dots others can't see.",
+      "days": "Lessons 8–14",
+      "skill": "Cultivate diverse experiences that create unique career advantages",
+      "lessonIds": [
+        "sq-8-generalist-advantage",
+        "sq-9-sampling-period",
+        "sq-10-analogical-thinking",
+        "sq-11-learning-transfer",
+        "sq-12-deliberate-experimentation",
+        "sq-13-t-shaped-skills",
+        "sq-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "sq-module-3",
+      "moduleNumber": 3,
+      "title": "Design Your Next Chapter",
+      "subtitle": "Use design thinking to prototype your future and take action with confidence.",
+      "days": "Lessons 15–21",
+      "skill": "Prototype career experiments and build momentum toward your next move",
+      "lessonIds": [
+        "sq-15-design-thinking-career",
+        "sq-16-odyssey-plans",
+        "sq-17-prototype-conversations",
+        "sq-18-networking-for-introverts",
+        "sq-19-small-bets",
+        "sq-20-resilience-through-change",
+        "sq-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sq-1-ladder-is-dead",
+      "dayNumber": 1,
+      "moduleId": "sq-module-1",
+      "title": "The Ladder Is Dead",
+      "subtitle": "Why linear careers are a myth — and why that's actually great news for you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Career Ladder Was Invented in the 1950s",
+          "body": "Back when people joined one company at 21 and retired with a gold watch at 65. That world is gone. Today the average person changes roles every 2.8 years and switches industries 3-5 times. Yet most of us still judge ourselves against a straight-line myth that no longer exists.",
+          "stat": "72%",
+          "statLabel": "of professionals say their career has been non-linear"
+        },
+        {
+          "type": "content",
+          "headline": "Welcome to the Squiggly Career",
+          "body": "Authors Helen Tupper and Sarah Ellis coined the term \"squiggly career\" to describe the reality most of us live: sideways moves, pivots, portfolio roles, and unexpected detours that eventually create something richer than any ladder could.",
+          "bullets": [
+            "Squiggly careers prioritise learning over titles",
+            "They value breadth of experience alongside depth",
+            "Success is self-defined, not prescribed by hierarchy",
+            "Adaptability becomes your greatest competitive advantage"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Range Beats Specialisation Early On",
+          "body": "David Epstein's research in \"Range\" shows that people who sample widely before committing outperform early specialists in most complex fields. The sampling period builds flexible thinking and creative problem-solving that narrow expertise cannot.",
+          "stat": "2x",
+          "statLabel": "more likely to produce breakthrough ideas when drawing from diverse fields"
+        },
+        {
+          "type": "content",
+          "headline": "The New Career Currencies",
+          "body": "In a squiggly world, your value isn't measured by years in one role. It's measured by transferable currencies that compound across different contexts.",
+          "bullets": [
+            "Skills: What you can do (and learn quickly)",
+            "Network: Who knows what you're capable of",
+            "Reputation: What you're known for delivering",
+            "Adaptability: How fast you can add value in new situations"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Squiggle So Far",
+          "body": "Draw your career journey as an actual squiggly line on paper. Mark each major transition — job changes, pivots, side projects, even \"failures.\" For each squiggle, write one skill or insight you gained that you couldn't have got from staying put. Notice: your squiggles are features, not bugs."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the term \"squiggly career\" describe?",
+          "type": "mcq",
+          "options": [
+            "A non-linear career path with sideways moves and pivots",
+            "A career focused on climbing one corporate ladder",
+            "A career that follows a strict 5-year plan",
+            "Working in the same industry your entire life"
+          ],
+          "correctIndex": 0,
+          "explanation": "A squiggly career embraces the reality that most modern careers involve sideways moves, pivots, portfolio roles, and unexpected detours rather than a straight vertical climb."
+        },
+        {
+          "question": "According to David Epstein's research, early specialisation always leads to better long-term career outcomes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Epstein's research shows the opposite — people who sample widely before committing often outperform early specialists in complex fields, developing more flexible thinking and creative problem-solving."
+        },
+        {
+          "question": "Which of these is NOT one of the \"new career currencies\" in a squiggly world?",
+          "type": "mcq",
+          "options": [
+            "Job title seniority",
+            "Transferable skills",
+            "Professional network",
+            "Adaptability"
+          ],
+          "correctIndex": 0,
+          "explanation": "In a squiggly career, value is measured by skills, network, reputation, and adaptability — not by job title seniority or years in one role."
+        }
+      ]
+    },
+    {
+      "id": "sq-2-strengths-exploration",
+      "dayNumber": 2,
+      "moduleId": "sq-module-1",
+      "title": "Strengths Exploration",
+      "subtitle": "Discover what you're naturally brilliant at — and how to use more of it every day.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Spend 80% of Your Time on Tasks That Drain You",
+          "body": "Most people can name their weaknesses instantly but struggle to articulate their strengths with confidence. Yet research shows that people who use their strengths daily are 6x more engaged at work and 3x more likely to report excellent quality of life. Knowing your strengths isn't a nice-to-have — it's a career accelerator.",
+          "stat": "6x",
+          "statLabel": "more engaged when using strengths daily"
+        },
+        {
+          "type": "content",
+          "headline": "Super Strengths vs. Learned Behaviours",
+          "body": "Tupper and Ellis distinguish between \"super strengths\" (things that energise you AND that you're excellent at) and \"learned behaviours\" (things you're good at but that drain your energy). Many people get trapped in roles that rely on learned behaviours.",
+          "bullets": [
+            "Super strengths feel effortless — you lose track of time using them",
+            "Learned behaviours feel like hard work even when others praise you",
+            "Energy after the task is the key differentiator",
+            "You can be highly skilled at something that still isn't a strength"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Strengths Spotting Framework",
+          "body": "To identify your genuine super strengths, look for the intersection of three signals. When all three align, you've found a true strength worth building your career around.",
+          "bullets": [
+            "Energy: Does this activity give you energy or take it away?",
+            "Excellence: Do you consistently produce great results?",
+            "Frequency: Do you instinctively reach for this skill?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Strengths Are Contextual",
+          "body": "A strength in one environment might not shine in another. The same person who thrives leading creative brainstorms might wilt in a compliance-heavy role. Understanding the context where your strengths flourish is just as important as knowing the strengths themselves.",
+          "stat": "34%",
+          "statLabel": "of people say their strengths aren't used in their current role"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Strengths Energy Audit",
+          "body": "List 5 things you did at work this week. For each, rate Energy (1-10) and Excellence (1-10). Anything scoring 8+ on both is a super strength. Anything scoring 8+ on Excellence but below 5 on Energy is a learned behaviour you should try to delegate or reduce. This audit reveals where to point your career next."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the key difference between a \"super strength\" and a \"learned behaviour\"?",
+          "type": "mcq",
+          "options": [
+            "Super strengths energise you; learned behaviours drain you despite skill",
+            "Super strengths are inherited; learned behaviours are taught",
+            "Super strengths only apply at work; learned behaviours apply everywhere",
+            "There is no practical difference between them"
+          ],
+          "correctIndex": 0,
+          "explanation": "The critical distinction is energy. Super strengths both energise you AND produce excellent results. Learned behaviours produce good results but leave you drained — even when others praise your performance."
+        },
+        {
+          "question": "People who use their strengths daily are 6x more engaged at work.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research from Gallup consistently shows that people who use their strengths daily are approximately 6x more likely to be engaged at work and 3x more likely to report excellent quality of life."
+        },
+        {
+          "question": "Which three signals help identify a genuine super strength?",
+          "type": "mcq",
+          "options": [
+            "Energy, Excellence, and Frequency",
+            "Salary, Title, and Recognition",
+            "Speed, Accuracy, and Volume",
+            "Passion, Purpose, and Profit"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Strengths Spotting Framework looks for the intersection of Energy (does it energise you), Excellence (do you produce great results), and Frequency (do you instinctively reach for this skill)."
+        }
+      ]
+    },
+    {
+      "id": "sq-3-values-audit",
+      "dayNumber": 3,
+      "moduleId": "sq-module-1",
+      "title": "Values Audit",
+      "subtitle": "Get clear on what actually matters to you — not what you think should matter.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most Career Dissatisfaction Is a Values Mismatch",
+          "body": "You can have the perfect title, good pay, and a talented team — and still feel hollow. That's because career satisfaction isn't about ticking boxes others defined for you. It's about alignment between your daily work and your deepest values. When values are honoured, even tough work feels meaningful.",
+          "stat": "89%",
+          "statLabel": "of disengaged workers cite values misalignment as the root cause"
+        },
+        {
+          "type": "content",
+          "headline": "Values vs. Expectations",
+          "body": "Many people confuse inherited expectations (what parents, society, or peers value) with their own authentic values. Untangling these is the first step toward a career that genuinely fits you rather than a life that looks good from the outside.",
+          "bullets": [
+            "Inherited: \"I should want a stable corporate job\"",
+            "Authentic: \"I value creative freedom above predictability\"",
+            "The gap between these creates persistent unease",
+            "Neither is right or wrong — but only yours will sustain you"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Values Iceberg",
+          "body": "Tupper and Ellis describe values as an iceberg. The visible part (what you tell people you value) is only the tip. Below the surface are your actual decision-drivers — the things that make you say yes or no without fully understanding why.",
+          "bullets": [
+            "Surface values: What you list on LinkedIn or in interviews",
+            "Behavioural values: What your calendar and bank statement reveal",
+            "Core values: What you'd sacrifice comfort to protect"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Values Evolve — And That's Normal",
+          "body": "Your values at 25 won't be your values at 40. Major life events — parenthood, loss, health crises, travel — reshape what matters most. A squiggly career gives you permission to let your values evolve and to adjust your work accordingly, rather than grinding through misalignment.",
+          "stat": "5-7 years",
+          "statLabel": "typical cycle for a significant values shift"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Values Audit",
+          "body": "Write down 10 things you value in work (autonomy, creativity, security, impact, learning, etc.). Now cross out 5. From the remaining 5, cross out 2 more. Your final 3 are your non-negotiable career values right now. Ask: does my current role honour at least 2 of these? If not, that's your signal."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"Values Iceberg\" concept?",
+          "type": "mcq",
+          "options": [
+            "Values have visible, behavioural, and deep core layers",
+            "Values are fixed and unchangeable throughout life",
+            "Only surface-level values matter for career decisions",
+            "Values should always match your employer's mission statement"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Values Iceberg shows that what we publicly claim to value (surface) is often different from what our behaviour reveals (behavioural) and what we'd sacrifice comfort to protect (core). Career alignment requires understanding all three layers."
+        },
+        {
+          "question": "Values remain constant throughout your entire career and life.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Values naturally evolve over time, especially after major life events. A squiggly career approach embraces this evolution and allows you to adjust your work as your values shift."
+        },
+        {
+          "question": "What's the most common root cause of career dissatisfaction according to research?",
+          "type": "mcq",
+          "options": [
+            "Values misalignment with daily work",
+            "Insufficient salary",
+            "Bad commute",
+            "Lack of promotion opportunities"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that values misalignment — a gap between what matters most to you and what your daily work requires — is the most frequently cited root cause of career disengagement and dissatisfaction."
+        }
+      ]
+    },
+    {
+      "id": "sq-4-confidence-gremlins",
+      "dayNumber": 4,
+      "moduleId": "sq-module-1",
+      "title": "Confidence Gremlins",
+      "subtitle": "Name the inner voices that hold you back — and learn to act despite them.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Imposter Syndrome Affects 70% of High Performers",
+          "body": "That voice whispering \"you're not qualified enough\" or \"they'll find out you're winging it\" isn't a sign of weakness — it's almost universal. But left unchecked, these confidence gremlins become invisible fences that stop you applying, speaking up, or reaching for bigger roles.",
+          "stat": "70%",
+          "statLabel": "of people experience imposter syndrome at some point"
+        },
+        {
+          "type": "content",
+          "headline": "Meet Your Gremlins",
+          "body": "Tupper and Ellis identify common confidence gremlins that show up in career moments. The first step to neutralising them is recognising their patterns — they tend to be loudest right before growth moments.",
+          "bullets": [
+            "The Comparer: \"Everyone else is further ahead than me\"",
+            "The Perfectionist: \"If I can't do it perfectly, I shouldn't try\"",
+            "The Catastrophiser: \"If this goes wrong, everything falls apart\"",
+            "The Mind Reader: \"They probably think I'm not good enough\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Confidence Is Not a Feeling — It's a Practice",
+          "body": "Most people wait to feel confident before taking action. But research shows it works the other way around: action creates confidence. Small brave moves — applying before you're \"ready,\" sharing an idea in a meeting — build evidence that your gremlins are wrong.",
+          "stat": "85%",
+          "statLabel": "of feared outcomes never actually happen"
+        },
+        {
+          "type": "content",
+          "headline": "The Gremlin Taming Toolkit",
+          "body": "You don't need to eliminate self-doubt entirely. You just need to shrink its power so it no longer drives your decisions. These evidence-based techniques take under 2 minutes each.",
+          "bullets": [
+            "Name it: \"That's my Comparer talking\" (externalising reduces power)",
+            "Evidence check: \"What proof do I have that this is true?\"",
+            "Reframe: \"I'm not behind — I'm on a different path\"",
+            "Tiny brave act: Do one thing today that your gremlin says you shouldn't"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your Loudest Gremlin",
+          "body": "Think about a career move you've been avoiding. What does the voice say when you imagine doing it? Write the exact words. Now name that gremlin (The Comparer, The Perfectionist, etc.). Finally, write one piece of evidence that proves the gremlin wrong. Keep this note — you'll need it again."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to the lesson, confidence is best described as:",
+          "type": "mcq",
+          "options": [
+            "A practice built through action, not a feeling to wait for",
+            "A natural trait that some people have and others don't",
+            "Something you must develop fully before taking any career risks",
+            "Irrelevant to career success if you have strong skills"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows confidence works backwards from what most people assume — action creates confidence, not the other way around. Small brave moves build evidence that counters self-doubt."
+        },
+        {
+          "question": "Imposter syndrome is rare and only affects people who are genuinely unqualified.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Imposter syndrome affects approximately 70% of people at some point, and it's particularly common among high performers. It's not a sign of actual inadequacy."
+        },
+        {
+          "question": "What is the first step in the \"Gremlin Taming Toolkit\"?",
+          "type": "mcq",
+          "options": [
+            "Name and externalise the gremlin voice",
+            "Ignore all negative thoughts completely",
+            "Wait until the feeling passes naturally",
+            "Ask others for constant reassurance"
+          ],
+          "correctIndex": 0,
+          "explanation": "Naming the gremlin (\"That's my Comparer talking\") externalises the voice and immediately reduces its power over your behaviour. It creates distance between you and the thought."
+        }
+      ]
+    },
+    {
+      "id": "sq-5-curiosity-fuel",
+      "dayNumber": 5,
+      "moduleId": "sq-module-1",
+      "title": "Curiosity Fuel",
+      "subtitle": "Use curiosity as your career compass — let what fascinates you point the way forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Curiosity Predicts Career Success Better Than IQ",
+          "body": "A landmark study in the Journal of Personality found that people high in curiosity outperform those with higher IQ in complex work environments. Why? Because curious people learn faster, adapt quicker, and stumble into opportunities that strategic planners miss entirely. Curiosity isn't a luxury — it's a career strategy.",
+          "stat": "3x",
+          "statLabel": "more likely to be promoted when rated high in intellectual curiosity"
+        },
+        {
+          "type": "content",
+          "headline": "The Curiosity–Career Connection",
+          "body": "In a squiggly career, curiosity replaces the traditional career plan. Instead of mapping a 10-year path (which will be obsolete in 3), you follow threads of genuine interest and trust that they'll weave into something meaningful.",
+          "bullets": [
+            "Curiosity opens doors you didn't know existed",
+            "It creates \"happy accidents\" that rigid plans can't produce",
+            "Curious people build wider networks naturally",
+            "It protects against burnout by keeping work stimulating"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Diversive vs. Epistemic Curiosity",
+          "body": "Psychologists distinguish two types of curiosity. Both are valuable, but they serve different career functions. Understanding which type drives you helps you channel it effectively.",
+          "bullets": [
+            "Diversive: Broad interest in novelty — loves trying new things",
+            "Epistemic: Deep desire to understand — loves mastering complexity",
+            "Diversive fuels career exploration and sampling",
+            "Epistemic fuels deep expertise and innovation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Curiosity Killers to Watch For",
+          "body": "Curiosity is natural but fragile. Certain environments and habits suppress it systematically. If your curiosity has dimmed, it's not because you're less curious — it's because something is dampening the signal.",
+          "bullets": [
+            "Overwork: No slack time means no space to wonder",
+            "Fear of looking stupid: Stops you asking questions",
+            "Routine addiction: Comfort zones shrink curiosity",
+            "Comparison: Others' paths make yours seem \"wrong\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Curiosity Inventory",
+          "body": "Set a 3-minute timer. Write down everything you've been curious about in the last month — articles you saved, conversations that energised you, skills you googled, people whose work fascinated you. Circle the top 3. Ask: \"What would it look like to follow one of these threads for just one week?\" That's your next career experiment."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the two types of curiosity described in psychology?",
+          "type": "mcq",
+          "options": [
+            "Diversive (broad novelty-seeking) and Epistemic (deep understanding)",
+            "Professional (work-related) and Personal (hobby-related)",
+            "Active (seeking) and Passive (receiving)",
+            "Internal (self-focused) and External (world-focused)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Diversive curiosity drives broad exploration and trying new things, while epistemic curiosity drives deep understanding and mastery. Both fuel career growth in different ways."
+        },
+        {
+          "question": "Curiosity predicts career success better than IQ in complex work environments.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research published in the Journal of Personality found that intellectual curiosity outperforms IQ as a predictor of success in complex work environments, because curious people learn and adapt faster."
+        },
+        {
+          "question": "Which of these is a \"curiosity killer\" to watch for?",
+          "type": "mcq",
+          "options": [
+            "Overwork that eliminates slack time for exploration",
+            "Reading widely across different fields",
+            "Asking questions in meetings",
+            "Trying new hobbies outside work"
+          ],
+          "correctIndex": 0,
+          "explanation": "Overwork is one of the primary curiosity killers — when you have no slack time, there's no space to wonder, explore, or follow interesting threads. The other options actually nurture curiosity."
+        }
+      ]
+    },
+    {
+      "id": "sq-6-future-possibilities",
+      "dayNumber": 6,
+      "moduleId": "sq-module-1",
+      "title": "Future Possibilities",
+      "subtitle": "Expand your vision of what's possible — before narrowing down to what's next.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Can't Choose From Options You Haven't Imagined",
+          "body": "Most people limit their career thinking to roles they've already seen — the jobs their parents had, their colleagues have, or that appear on LinkedIn. But the most fulfilling careers often exist at intersections nobody has mapped yet. Today you'll learn to generate possibilities before filtering them.",
+          "stat": "65%",
+          "statLabel": "of children today will work in jobs that don't yet exist"
+        },
+        {
+          "type": "content",
+          "headline": "The Possibilities Funnel",
+          "body": "Design thinking teaches us to diverge before we converge. In career terms, this means deliberately expanding your options before making decisions. Most people skip straight to \"what's realistic?\" — which kills imagination before it can produce breakthrough ideas.",
+          "bullets": [
+            "Phase 1: Generate wildly (no filtering allowed)",
+            "Phase 2: Explore widely (conversations, not commitments)",
+            "Phase 3: Experiment cheaply (test before you leap)",
+            "Phase 4: Commit wisely (based on evidence, not fear)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"100 Possible Lives\" Exercise",
+          "body": "Burnett and Evans from Stanford's Designing Your Life programme ask students to imagine 100 possible lives they could live. The exercise breaks the assumption that there's only one \"right\" career path. Most people find that 5-10 of their imagined lives genuinely excite them.",
+          "stat": "5-10",
+          "statLabel": "genuinely exciting paths most people discover when they look"
+        },
+        {
+          "type": "content",
+          "headline": "Possibility Blockers",
+          "body": "Certain mental habits act as invisible ceilings on your career imagination. Recognising them lets you temporarily set them aside during possibility-generation — you can bring practicality back later.",
+          "bullets": [
+            "\"I'm too old/young for that\" — age bias limits exploration",
+            "\"I don't have the qualifications\" — skills can be learned",
+            "\"People like me don't do that\" — identity constraints are constructed",
+            "\"It's too late to change\" — the average career spans 45+ years"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Future Possibilities List",
+          "body": "Set a 5-minute timer and write at least 15 possible career futures for yourself — including wild ones. Rules: no filtering, no \"but I can't because...\", no worrying about how. Include at least 3 that feel slightly ridiculous. Then star the 3 that made you feel most alive just imagining them. We'll use these later."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"diverge before you converge\" mean in career planning?",
+          "type": "mcq",
+          "options": [
+            "Generate many possibilities before narrowing down to decisions",
+            "Leave your current job before finding a new one",
+            "Explore every option equally for the same amount of time",
+            "Always choose the most different option from your current role"
+          ],
+          "correctIndex": 0,
+          "explanation": "Diverge before converge is a design thinking principle: deliberately expand your options (diverge) before filtering and deciding (converge). Most people skip to filtering too early, limiting their choices."
+        },
+        {
+          "question": "The \"100 Possible Lives\" exercise comes from Stanford's Designing Your Life programme.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Bill Burnett and Dave Evans created this exercise as part of Stanford's Designing Your Life programme to help people break free from the assumption that there's only one \"right\" career path."
+        },
+        {
+          "question": "Which of these is a \"possibility blocker\" that limits career imagination?",
+          "type": "mcq",
+          "options": [
+            "\"I don't have the qualifications for that\"",
+            "Talking to people in different fields",
+            "Keeping a curiosity journal",
+            "Imagining multiple future scenarios"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"I don't have the qualifications\" is a common possibility blocker — it prematurely eliminates options before exploration. Skills can be learned, and many roles value diverse experience over specific credentials."
+        }
+      ]
+    },
+    {
+      "id": "sq-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "sq-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate everything you've learned — strengths, values, curiosity — into a career compass.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Have Tools Most People Never Discover",
+          "body": "In just 6 days you've built a strengths profile, clarified your values, tamed your confidence gremlins, mapped your curiosities, and expanded your sense of what's possible. That's more intentional career thinking than most people do in a decade. Today you pull it all together into one powerful document.",
+          "stat": "6 days",
+          "statLabel": "of focused work already puts you ahead of 90% of professionals"
+        },
+        {
+          "type": "content",
+          "headline": "Your Career Compass — One Page",
+          "body": "A career compass is a living document that captures your squiggly career DNA. Unlike a rigid plan, it flexes with you — but always points toward alignment. You'll update it as you grow.",
+          "bullets": [
+            "My 3 super strengths: [from Lesson 2]",
+            "My 3 non-negotiable values: [from Lesson 3]",
+            "My loudest gremlin + its antidote: [from Lesson 4]",
+            "My top 3 curiosity threads: [from Lesson 5]",
+            "My 3 most exciting future possibilities: [from Lesson 6]"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Written Clarity",
+          "body": "Research from Dominican University shows that people who write down their goals are 42% more likely to achieve them. A career compass isn't a goal list — it's better. It's a decision filter. When opportunities arise, you can ask: \"Does this align with my compass?\"",
+          "stat": "42%",
+          "statLabel": "more likely to achieve goals when written down"
+        },
+        {
+          "type": "content",
+          "headline": "How to Use Your Compass Going Forward",
+          "body": "Your career compass becomes most powerful in moments of decision — when you're offered a new role, considering a pivot, or feeling stuck. It cuts through noise and emotion.",
+          "bullets": [
+            "Before saying yes to anything: check it against your 3 values",
+            "When feeling drained: check you're using strengths, not just learned behaviours",
+            "When stuck: revisit your curiosity threads for new energy",
+            "When scared: name the gremlin and apply its antidote"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Career Compass",
+          "body": "Open a fresh note and title it \"My Career Compass — [Today's Date].\" Fill in each section from your previous exercises. Then write one sentence: \"The next career experiment I want to try is...\" This is your bridge into Module 2, where we'll build the range and breadth to make it happen."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary purpose of a career compass?",
+          "type": "mcq",
+          "options": [
+            "A decision filter that checks alignment with strengths, values, and curiosity",
+            "A rigid 5-year career plan with specific milestones",
+            "A CV document to share with recruiters",
+            "A list of jobs to apply for this month"
+          ],
+          "correctIndex": 0,
+          "explanation": "A career compass is a living decision filter — it helps you evaluate opportunities against your strengths, values, and curiosities rather than prescribing a fixed path."
+        },
+        {
+          "question": "People who write down their goals are 42% more likely to achieve them.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research from Dominican University found that the act of writing down goals significantly increases achievement rates — approximately 42% more likely compared to those who only think about them."
+        },
+        {
+          "question": "When should you consult your career compass?",
+          "type": "mcq",
+          "options": [
+            "When making career decisions, feeling drained, stuck, or scared",
+            "Only once a year during annual reviews",
+            "Only when actively job hunting",
+            "Never — it's just a one-time exercise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Your career compass is most powerful in real-time moments: deciding on opportunities (check values), feeling drained (check strengths usage), feeling stuck (revisit curiosities), or feeling scared (name the gremlin)."
+        }
+      ]
+    },
+    {
+      "id": "sq-8-generalist-advantage",
+      "dayNumber": 8,
+      "moduleId": "sq-module-2",
+      "title": "The Generalist Advantage",
+      "subtitle": "Why breadth of experience is the hidden superpower of the modern economy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The World's Top Performers Were Late Specialisers",
+          "body": "Roger Federer played badminton, basketball, and soccer before tennis. Nobel laureates are 22x more likely than average scientists to have artistic hobbies. CEOs with diverse career backgrounds outperform single-track leaders. David Epstein's \"Range\" reveals a counterintuitive truth: in complex fields, generalists win.",
+          "stat": "22x",
+          "statLabel": "more likely for Nobel laureates to have artistic side pursuits"
+        },
+        {
+          "type": "content",
+          "headline": "Kind vs. Wicked Learning Environments",
+          "body": "Epstein distinguishes two types of domains. Understanding which you're in determines whether specialisation or range is the better strategy.",
+          "bullets": [
+            "Kind environments: Clear rules, fast feedback, patterns repeat (chess, golf)",
+            "Wicked environments: Rules change, feedback is delayed, patterns are complex (business, careers, innovation)",
+            "Early specialisation works in kind environments",
+            "Range and flexibility win in wicked environments — which describes most modern work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Outsider Advantage",
+          "body": "Some of the biggest breakthroughs in history came from outsiders applying knowledge from unrelated fields. The key insight: the further a solution comes from the problem's native field, the more novel and valuable it tends to be.",
+          "stat": "66%",
+          "statLabel": "of winning solutions on innovation platforms came from outside the field"
+        },
+        {
+          "type": "content",
+          "headline": "Why Specialists Get Stuck",
+          "body": "Deep specialisation creates \"cognitive entrenchment\" — experts become so attached to their mental models that they can't see alternative approaches. Generalists avoid this trap because they carry multiple frameworks and can switch perspectives.",
+          "bullets": [
+            "Specialists solve familiar problems faster",
+            "But generalists solve novel problems more creatively",
+            "Modern careers increasingly demand novel problem-solving",
+            "The best position: enough depth to be credible, enough breadth to be creative"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Range Inventory",
+          "body": "List every \"unrelated\" experience you've had: hobbies, odd jobs, side projects, travel, subjects you studied, communities you've belonged to. For each one, write one transferable skill or perspective it gave you. You'll likely find 5-10 unexpected advantages hiding in your \"scattered\" background."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are \"wicked\" learning environments?",
+          "type": "mcq",
+          "options": [
+            "Complex domains where rules change and feedback is delayed",
+            "Hostile workplaces with bad management",
+            "Environments where only evil people succeed",
+            "Simple, rule-based domains with clear patterns"
+          ],
+          "correctIndex": 0,
+          "explanation": "Wicked learning environments are complex domains where rules change, feedback is delayed, and patterns are hard to discern. Most modern career environments are \"wicked\" — which is why range outperforms narrow specialisation."
+        },
+        {
+          "question": "Nobel laureates are 22x more likely than average scientists to have artistic hobbies.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This striking finding from research supports the Range thesis — the world's most innovative scientists tend to have diverse interests and pursuits outside their core field."
+        },
+        {
+          "question": "What is \"cognitive entrenchment\"?",
+          "type": "mcq",
+          "options": [
+            "Experts becoming so attached to mental models they can't see alternatives",
+            "The ability to think deeply about one topic",
+            "A learning technique for memorising facts faster",
+            "A positive side effect of deep specialisation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cognitive entrenchment is the downside of deep specialisation — experts become so embedded in their established mental models that they struggle to see alternative approaches or creative solutions."
+        }
+      ]
+    },
+    {
+      "id": "sq-9-sampling-period",
+      "dayNumber": 9,
+      "moduleId": "sq-module-2",
+      "title": "The Sampling Period",
+      "subtitle": "Give yourself permission to explore widely — it's not wasted time, it's investment.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Most Successful People Had a \"Sampling Period\"",
+          "body": "Before they committed, they explored. Van Gogh tried being a teacher, a bookshop clerk, and a preacher before painting. Steve Jobs audited calligraphy classes with no practical purpose. Research shows the sampling period isn't wasted time — it builds the raw material for future breakthroughs.",
+          "stat": "6-10 years",
+          "statLabel": "typical sampling period before top performers committed to their field"
+        },
+        {
+          "type": "content",
+          "headline": "Sampling vs. Floundering",
+          "body": "There's a crucial difference between intentional sampling and aimless drift. Sampling is purposeful exploration with reflection. Floundering is doing random things and hoping something sticks.",
+          "bullets": [
+            "Sampling: \"I'm trying this to learn what energises me\"",
+            "Floundering: \"I don't know what I'm doing or why\"",
+            "Sampling includes reflection after each experience",
+            "Floundering lacks the feedback loop that creates insight"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Match Quality Principle",
+          "body": "Economists call it \"match quality\" — how well your skills, interests, and values align with your work. Research shows that people who sample more before committing achieve higher match quality and greater long-term satisfaction than those who lock in early.",
+          "stat": "40%",
+          "statLabel": "higher lifetime satisfaction for those who sampled before committing"
+        },
+        {
+          "type": "content",
+          "headline": "Designing Your Sampling Experiments",
+          "body": "You don't need to quit your job to sample. Modern sampling can happen in parallel with your current role, using low-cost experiments that test interest and fit without burning bridges.",
+          "bullets": [
+            "Volunteer for cross-functional projects at work",
+            "Take a short online course in something unrelated",
+            "Shadow someone for half a day in a different role",
+            "Start a tiny side project (10 hours maximum) to test an idea",
+            "Join a community outside your industry for 30 days"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your 2-Week Sampling Sprint",
+          "body": "Choose one area from your curiosity inventory (Lesson 5) that you've never properly explored. Design a 2-week low-risk experiment to sample it: read one book, attend one event, have two conversations with people in that field, and complete one tiny project. Write down your experiment plan now — and commit to starting within 48 hours."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the key difference between \"sampling\" and \"floundering\"?",
+          "type": "mcq",
+          "options": [
+            "Sampling includes intentional reflection; floundering lacks a feedback loop",
+            "Sampling means changing jobs frequently; floundering means staying too long",
+            "Sampling is for young people; floundering is for older professionals",
+            "There is no meaningful difference between them"
+          ],
+          "correctIndex": 0,
+          "explanation": "The critical difference is intentionality and reflection. Sampling means purposeful exploration with a feedback loop (\"What did I learn about myself?\"), while floundering is aimless activity without that reflective component."
+        },
+        {
+          "question": "The \"match quality\" principle suggests you should commit to a career path as early as possible.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Match quality research shows the opposite — people who sample more before committing achieve better alignment between their work and their skills/interests/values, leading to higher long-term satisfaction."
+        },
+        {
+          "question": "Which is an example of a low-risk sampling experiment?",
+          "type": "mcq",
+          "options": [
+            "Volunteering for a cross-functional project at work",
+            "Quitting your job immediately to pursue a new field",
+            "Spending 3 years getting a degree in something different",
+            "Ignoring all interests outside your current specialisation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Low-risk sampling experiments let you explore without burning bridges — volunteering for cross-functional projects, taking short courses, shadowing, or starting tiny side projects all test interest and fit safely."
+        }
+      ]
+    },
+    {
+      "id": "sq-10-analogical-thinking",
+      "dayNumber": 10,
+      "moduleId": "sq-module-2",
+      "title": "Analogical Thinking",
+      "subtitle": "Connect ideas from different worlds to solve problems others can't crack.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Velcro Inventor Was Walking His Dog",
+          "body": "George de Mestral noticed burrs sticking to his dog's fur and thought: \"What if fabric could grip like that?\" That's analogical thinking — taking a principle from one domain and applying it to another. It's the engine behind most breakthrough innovations, and it's a skill you can deliberately develop.",
+          "stat": "90%",
+          "statLabel": "of breakthrough innovations involve cross-domain analogies"
+        },
+        {
+          "type": "content",
+          "headline": "What Is Analogical Thinking?",
+          "body": "Analogical thinking means seeing deep structural similarities between seemingly unrelated situations. It's not about surface-level resemblance — it's about recognising that the same underlying principle can solve problems in completely different contexts.",
+          "bullets": [
+            "Surface analogy: \"This meeting is like another meeting\" (low value)",
+            "Deep analogy: \"This team problem works like an ecosystem\" (high value)",
+            "The further apart the domains, the more novel the insight",
+            "Generalists excel here because they have more domains to draw from"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Career Applications of Analogical Thinking",
+          "body": "This isn't just for inventors. Analogical thinking makes you the person in the room who sees connections others miss — which makes you invaluable in any role that involves problem-solving, strategy, or innovation.",
+          "stat": "3x",
+          "statLabel": "more likely to generate creative solutions with cross-domain thinking"
+        },
+        {
+          "type": "content",
+          "headline": "How to Strengthen Your Analogy Muscle",
+          "body": "Like any skill, analogical thinking improves with practice. The key is exposing yourself to diverse inputs and deliberately looking for structural parallels.",
+          "bullets": [
+            "Read widely outside your field — one book per month from a new domain",
+            "When stuck on a problem, ask: \"Where else has this been solved?\"",
+            "Keep a \"connections journal\" — note unexpected parallels you spot",
+            "Talk to people in different industries about their challenges"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Cross-Domain Connection",
+          "body": "Think of a current work challenge. Now pick a completely unrelated domain (nature, sports, cooking, music, architecture). Spend 3 minutes exploring: \"How does [that domain] solve similar structural problems?\" Write down at least 2 analogies. Even if they feel silly, you're training the exact thinking pattern that produces breakthrough ideas."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes a \"deep\" analogy more valuable than a \"surface\" analogy?",
+          "type": "mcq",
+          "options": [
+            "It connects underlying structural principles across different domains",
+            "It compares two things from the same industry",
+            "It requires more words to explain",
+            "It only works for technical problems"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep analogies connect structural principles across unrelated domains (not surface similarities within the same field). The further apart the domains, the more novel and valuable the insight tends to be."
+        },
+        {
+          "question": "Generalists are better at analogical thinking because they have more domains to draw from.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Having experience across multiple domains gives generalists a larger library of structural patterns to draw from, making them naturally better at spotting cross-domain connections."
+        },
+        {
+          "question": "Which habit best strengthens analogical thinking?",
+          "type": "mcq",
+          "options": [
+            "Reading widely outside your field and noting unexpected parallels",
+            "Focusing exclusively on your area of expertise",
+            "Avoiding conversations with people in different industries",
+            "Only solving problems using established methods"
+          ],
+          "correctIndex": 0,
+          "explanation": "Analogical thinking improves with diverse inputs. Reading outside your field and deliberately noting parallels between domains trains your brain to spot structural similarities."
+        }
+      ]
+    },
+    {
+      "id": "sq-11-learning-transfer",
+      "dayNumber": 11,
+      "moduleId": "sq-module-2",
+      "title": "Learning Transfer",
+      "subtitle": "Turn every experience into portable skills you can carry across roles and industries.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your \"Unrelated\" Experience Is Your Secret Weapon",
+          "body": "The teacher who becomes a brilliant UX designer. The soldier who excels in crisis management consulting. The chef who transforms supply chain operations. These aren't lucky accidents — they're examples of learning transfer. The ability to extract principles from one context and apply them elsewhere is the most undervalued career skill.",
+          "stat": "78%",
+          "statLabel": "of career pivoters say \"unrelated\" experience was their biggest advantage"
+        },
+        {
+          "type": "content",
+          "headline": "Near vs. Far Transfer",
+          "body": "Psychologists distinguish between transferring skills to similar contexts (near) and transferring them to completely different ones (far). Far transfer is rarer and more valuable — it's what makes career pivots powerful rather than just possible.",
+          "bullets": [
+            "Near transfer: Using Excel skills at a new company (easy, common)",
+            "Far transfer: Using musical timing skills to improve presentation delivery (rare, powerful)",
+            "Far transfer requires extracting the abstract principle",
+            "The key question: \"What's the underlying pattern here?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Extraction Technique",
+          "body": "To transfer learning effectively, you need to extract the abstract principle from the specific context. This is a deliberate skill that turns any experience into career capital.",
+          "bullets": [
+            "Step 1: Describe what you did (specific, concrete)",
+            "Step 2: Identify the underlying principle (abstract it)",
+            "Step 3: Ask \"Where else does this principle apply?\"",
+            "Step 4: Translate it for the new context (re-specify)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building a Transfer Portfolio",
+          "body": "Instead of thinking in terms of \"job experience,\" start thinking in terms of \"transferable principles.\" This reframes your entire history as a portfolio of applicable wisdom rather than a list of specific roles.",
+          "stat": "12-15",
+          "statLabel": "transferable principles the average person carries without realising it"
+        },
+        {
+          "type": "try-it",
+          "headline": "Extract Three Principles",
+          "body": "Pick your last role or a significant project. Apply the extraction technique: (1) What did you do? (2) What's the underlying principle? (3) Where else could it apply? Do this for 3 different experiences. Example: \"I managed restaurant rush hours\" → Principle: \"Optimising throughput under time pressure\" → Applies to: project management, event logistics, emergency response."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"far transfer\" in learning?",
+          "type": "mcq",
+          "options": [
+            "Applying skills to a completely different domain by extracting abstract principles",
+            "Moving to a job that's geographically far away",
+            "Forgetting skills from a previous role",
+            "Transferring knowledge only within the same industry"
+          ],
+          "correctIndex": 0,
+          "explanation": "Far transfer means applying skills across very different contexts by extracting the underlying abstract principle. It's rarer and more valuable than near transfer (applying skills in similar contexts)."
+        },
+        {
+          "question": "The Extraction Technique requires identifying the abstract principle behind a specific experience.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Extraction Technique works by moving from specific context → abstract principle → new application. The key step is identifying the underlying pattern that can apply across domains."
+        },
+        {
+          "question": "What's the first step of the Extraction Technique?",
+          "type": "mcq",
+          "options": [
+            "Describe what you did in specific, concrete terms",
+            "Immediately apply it to a new field",
+            "Ask others what they think your skills are",
+            "Forget the details and focus on feelings"
+          ],
+          "correctIndex": 0,
+          "explanation": "Step 1 is describing what you did concretely. You need the specific details before you can abstract the underlying principle (Step 2), identify other applications (Step 3), and translate for new contexts (Step 4)."
+        }
+      ]
+    },
+    {
+      "id": "sq-12-deliberate-experimentation",
+      "dayNumber": 12,
+      "moduleId": "sq-module-2",
+      "title": "Deliberate Experimentation",
+      "subtitle": "Run cheap, fast career experiments that give you real data instead of guesswork.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Planning Your Career — Start Testing It",
+          "body": "You wouldn't launch a product without testing it. So why do people make career moves based on imagination alone? \"I think I'd like consulting\" is a hypothesis, not a fact. Deliberate experimentation means running small tests before making big commitments — giving you evidence rather than anxiety.",
+          "stat": "60%",
+          "statLabel": "of career changers wish they'd tested their new direction first"
+        },
+        {
+          "type": "content",
+          "headline": "The Experiment Mindset",
+          "body": "Borrowing from Lean Startup methodology: your career ideas are hypotheses that need testing. An experiment mindset removes the pressure of \"getting it right\" and replaces it with curiosity about what you'll learn.",
+          "bullets": [
+            "Hypothesis: \"I think I'd enjoy product management\"",
+            "Experiment: Volunteer to run one product sprint at work",
+            "Evidence: \"I loved the strategy part but hated the meetings\"",
+            "Decision: Based on real data, not fantasy"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 3 Types of Career Experiment",
+          "body": "Different experiments test different things. Choose the type that matches what you need to learn right now.",
+          "bullets": [
+            "Explore experiments: Test interest (\"Do I actually enjoy this?\")",
+            "Skill experiments: Test ability (\"Can I do this well enough?\")",
+            "Fit experiments: Test environment (\"Does this context suit me?\")"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Designing Experiments That Actually Work",
+          "body": "A good career experiment has clear parameters that prevent it from becoming an endless open question. Time-box it, define what you're measuring, and commit to a reflection point.",
+          "stat": "2-4 weeks",
+          "statLabel": "ideal length for a career experiment — enough data, low commitment"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Next Experiment",
+          "body": "Pick one career idea you've been curious about. Design a 2-week experiment using this template: Hypothesis: \"I think I'd enjoy/be good at [X].\" Test: [specific action you'll take]. Duration: 2 weeks. Success metric: \"I'll know it works if [feeling/outcome].\" Reflection date: [specific day]. Start within 48 hours."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"experiment mindset\" in career development?",
+          "type": "mcq",
+          "options": [
+            "Treating career ideas as hypotheses that need testing with real evidence",
+            "Changing jobs as frequently as possible",
+            "Only making career moves when you have absolute certainty",
+            "Asking others to make career decisions for you"
+          ],
+          "correctIndex": 0,
+          "explanation": "The experiment mindset treats career ideas as hypotheses — not facts — that need testing through small, time-boxed experiments. This provides real evidence for decisions instead of relying on imagination or anxiety."
+        },
+        {
+          "question": "60% of career changers wish they had tested their new direction before committing.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Many career changers report that they made big leaps based on imagination alone and wish they'd run smaller experiments first to validate their interest, skills, and fit."
+        },
+        {
+          "question": "What are the three types of career experiment?",
+          "type": "mcq",
+          "options": [
+            "Explore (test interest), Skill (test ability), Fit (test environment)",
+            "Fast (1 day), Medium (1 week), Slow (1 year)",
+            "Internal (at current job), External (new company), Hybrid (both)",
+            "Easy (low risk), Hard (high risk), Impossible (quit everything)"
+          ],
+          "correctIndex": 0,
+          "explanation": "The three types test different things: Explore experiments test whether you enjoy something, Skill experiments test whether you can do it well, and Fit experiments test whether the environment suits you."
+        }
+      ]
+    },
+    {
+      "id": "sq-13-t-shaped-skills",
+      "dayNumber": 13,
+      "moduleId": "sq-module-2",
+      "title": "T-Shaped Skills",
+      "subtitle": "Combine deep expertise with broad versatility — the most hireable profile in the modern economy.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Companies Don't Want Pure Specialists Anymore",
+          "body": "The most in-demand professionals aren't the deepest experts OR the broadest generalists — they're T-shaped. Deep enough in one area to be credible, broad enough across others to collaborate, innovate, and adapt. IDEO popularised this concept and it's now the gold standard for hiring at top companies.",
+          "stat": "82%",
+          "statLabel": "of hiring managers say they prefer T-shaped candidates over pure specialists"
+        },
+        {
+          "type": "content",
+          "headline": "Anatomy of the T-Shape",
+          "body": "The T-shape has two dimensions. Your vertical bar is your depth — the area where you have genuine expertise. Your horizontal bar is your breadth — the adjacent skills and knowledge that make your depth more powerful.",
+          "bullets": [
+            "Vertical (depth): Your core expertise — what you're known for",
+            "Horizontal (breadth): Adjacent skills that amplify your depth",
+            "Example: A data analyst (depth) who also understands storytelling, business strategy, and UX (breadth)",
+            "The breadth makes the depth more impactful and versatile"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From T to Pi to Comb",
+          "body": "As careers evolve, many people develop multiple verticals of depth. A \"Pi-shaped\" person has two deep areas. A \"comb-shaped\" person has three or more. Each squiggle in your career can add a new vertical — making you increasingly unique and valuable.",
+          "stat": "10x",
+          "statLabel": "more unique when you combine 3 depth areas vs. just 1"
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Depth and Breadth",
+          "body": "Your career compass from Module 1 tells you where to invest. Depth should align with your super strengths. Breadth should cover skills that make your depth more commercially valuable or creatively powerful.",
+          "bullets": [
+            "Depth question: \"What could I become world-class at in 3 years?\"",
+            "Breadth question: \"What adjacent skills would make my depth 2x more valuable?\"",
+            "Look for breadth skills that are rare in your depth community",
+            "The rarer the combination, the more irreplaceable you become"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your T-Shape",
+          "body": "Draw a T on paper. On the vertical bar, write your strongest area of depth (or the one you're building toward). On the horizontal bar, list 4-6 breadth skills you already have or want to develop. Circle the one breadth skill that would most amplify your depth if you invested in it this quarter. That's your next learning priority."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a \"T-shaped\" professional have?",
+          "type": "mcq",
+          "options": [
+            "Deep expertise in one area plus broad skills across many adjacent areas",
+            "Equal depth in all possible skills",
+            "Only surface-level knowledge across many fields",
+            "Deep expertise in one area with no awareness of anything else"
+          ],
+          "correctIndex": 0,
+          "explanation": "T-shaped professionals combine a vertical bar of deep expertise (credibility) with a horizontal bar of broad adjacent skills (versatility). This combination makes them both credible and adaptable."
+        },
+        {
+          "question": "A \"comb-shaped\" professional has three or more areas of deep expertise.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "As careers evolve through multiple squiggles, professionals can develop multiple verticals of depth — from T-shape (1 deep area) to Pi-shape (2) to comb-shape (3+), becoming increasingly unique."
+        },
+        {
+          "question": "How should you choose which breadth skill to develop next?",
+          "type": "mcq",
+          "options": [
+            "Pick the one that would most amplify the value of your depth",
+            "Always choose the easiest skill to learn",
+            "Copy whatever skills your colleagues are developing",
+            "Choose randomly to maximise diversity"
+          ],
+          "correctIndex": 0,
+          "explanation": "The best breadth skills are those that make your depth more commercially valuable or creatively powerful — especially skills that are rare within your depth community, making you more irreplaceable."
+        }
+      ]
+    },
+    {
+      "id": "sq-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "sq-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Consolidate your range — and prepare to design your next chapter with confidence.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Think Differently About Your Career",
+          "body": "Over the past week you've reframed \"scattered\" experience as range, learned to transfer skills across domains, run experiments instead of guessing, and designed your T-shape. You're no longer apologising for your non-linear path — you're leveraging it. Time to consolidate before we move to action.",
+          "stat": "7 lessons",
+          "statLabel": "of range-building tools now in your career toolkit"
+        },
+        {
+          "type": "content",
+          "headline": "Your Range Scorecard",
+          "body": "Let's audit what you've built in Module 2. Rate yourself 1-5 on each dimension — this shows where to keep investing.",
+          "bullets": [
+            "Cross-domain connections: Can I spot analogies between fields? (Lesson 10)",
+            "Transfer skills: Can I extract and reapply principles? (Lesson 11)",
+            "Experiment design: Can I test career ideas cheaply? (Lesson 12)",
+            "T-shape clarity: Do I know my depth and breadth plan? (Lesson 13)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Range + Compass Combination",
+          "body": "Module 1 gave you direction (compass). Module 2 gave you versatility (range). Together they form a powerful career engine: you know where you want to go AND you have diverse tools to get there — even when the path squiggles.",
+          "stat": "2x",
+          "statLabel": "more career options when you combine clear direction with diverse skills"
+        },
+        {
+          "type": "content",
+          "headline": "Preparing for Module 3: Design Your Next Chapter",
+          "body": "In the final module you'll put everything into action using design thinking. You'll prototype real career experiments, build a strategic network, and create a 90-day action plan. To get the most from it, come prepared.",
+          "bullets": [
+            "Have your career compass accessible (Module 1)",
+            "Have your T-shape map handy (Lesson 13)",
+            "Think about 2-3 career moves you're curious to explore",
+            "Be ready to take real-world action (conversations, not just reflection)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 2 Integration",
+          "body": "Write a paragraph titled \"My Range Story\" that reframes your career background as a strength. Example: \"My experience in [X], [Y], and [Z] gives me a unique ability to [specific advantage]. My T-shape combines depth in [A] with breadth in [B, C, D].\" This is your new career narrative — use it in interviews, on LinkedIn, and in conversations."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What two things do Module 1 (Compass) and Module 2 (Range) provide together?",
+          "type": "mcq",
+          "options": [
+            "Clear direction plus diverse tools to navigate non-linear paths",
+            "A rigid plan plus a backup plan",
+            "A job title plus a salary expectation",
+            "Technical skills plus a certification"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 1's compass gives direction (values, strengths, curiosity). Module 2's range gives versatility (analogical thinking, transfer, experimentation, T-shape). Together: you know where to go AND have flexible tools to get there."
+        },
+        {
+          "question": "A \"Range Story\" reframes diverse experience as a unique career advantage.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Your Range Story takes what might seem like a \"scattered\" background and reframes it as a deliberate combination of experiences that gives you unique perspective and capabilities."
+        },
+        {
+          "question": "What should you prepare before starting Module 3?",
+          "type": "mcq",
+          "options": [
+            "Your career compass, T-shape map, and 2-3 career moves to explore",
+            "A completed resignation letter",
+            "Applications to 10 different jobs",
+            "Nothing — Module 3 starts from scratch"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 3 builds on everything before it. Having your compass (direction), T-shape (skills plan), and some career ideas to explore (curiosities) lets you immediately prototype real next steps."
+        }
+      ]
+    },
+    {
+      "id": "sq-15-design-thinking-career",
+      "dayNumber": 15,
+      "moduleId": "sq-module-3",
+      "title": "Design Thinking for Careers",
+      "subtitle": "Apply Stanford's design thinking framework to build a career that actually fits your life.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Career Is a Design Problem — Not a Finding Problem",
+          "body": "Most people believe they need to \"find\" their purpose — as if it's hidden somewhere waiting to be discovered. Stanford's Bill Burnett and Dave Evans flipped this: your ideal career doesn't exist yet. It needs to be designed, built, and iterated — just like any great product. And designers have a reliable process for this.",
+          "stat": "40,000+",
+          "statLabel": "Stanford students have used Designing Your Life to shape their careers"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Design Thinking Mindsets",
+          "body": "Design thinking for careers isn't a step-by-step recipe — it's a set of mindsets that change how you approach career decisions. Adopt these and you'll never feel \"stuck\" again.",
+          "bullets": [
+            "Curiosity: Approach career questions with genuine wonder, not anxiety",
+            "Bias to action: Try things in the real world instead of just thinking",
+            "Reframing: Change the question when you're stuck (not just the answer)",
+            "Radical collaboration: You can't design a life alone — involve others",
+            "Awareness: Notice what's working and what isn't without judgement"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Reframing Dysfunctional Beliefs",
+          "body": "Burnett and Evans identified common \"dysfunctional beliefs\" that keep people stuck. Each one can be reframed into something actionable.",
+          "bullets": [
+            "Dysfunctional: \"I should already know my passion\" → Reframe: \"Passion develops through engagement\"",
+            "Dysfunctional: \"If I'm successful I'll be happy\" → Reframe: \"Engagement brings both success and happiness\"",
+            "Dysfunctional: \"I need the perfect plan\" → Reframe: \"I need a good-enough prototype to test\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Design Cycle for Career Moves",
+          "body": "Every career decision can follow this lightweight design cycle. It prevents both paralysis (thinking forever) and recklessness (leaping without data).",
+          "stat": "5 steps",
+          "statLabel": "Empathise → Define → Ideate → Prototype → Test"
+        },
+        {
+          "type": "try-it",
+          "headline": "Reframe One Stuck Point",
+          "body": "Think of something in your career that feels stuck or frustrating. Write it as a problem statement: \"I'm stuck because...\" Now reframe it as a design challenge: \"How might I [desired outcome] given [constraints]?\" Example: \"I'm stuck because I can't get promoted\" → \"How might I grow my impact and income given my current role?\" The reframe opens possibilities the original statement closed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Designing Your Life, your ideal career needs to be:",
+          "type": "mcq",
+          "options": [
+            "Designed and built through iteration, not \"found\"",
+            "Discovered by taking personality tests",
+            "Revealed through meditation and waiting",
+            "Copied from someone you admire"
+          ],
+          "correctIndex": 0,
+          "explanation": "Burnett and Evans argue your ideal career doesn't exist yet — it needs to be designed, prototyped, and iterated like any great product. It's a design problem, not a finding problem."
+        },
+        {
+          "question": "\"I should already know my passion\" is a dysfunctional belief because passion develops through engagement.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research supports that passion develops through deep engagement with an activity — not the other way around. Waiting to \"find\" your passion before acting is a dysfunctional belief that keeps people stuck."
+        },
+        {
+          "question": "What are the 5 steps of the design cycle for career moves?",
+          "type": "mcq",
+          "options": [
+            "Empathise, Define, Ideate, Prototype, Test",
+            "Plan, Apply, Interview, Accept, Start",
+            "Think, Write, Submit, Wait, Repeat",
+            "Research, Choose, Commit, Execute, Evaluate"
+          ],
+          "correctIndex": 0,
+          "explanation": "The design thinking cycle — Empathise, Define, Ideate, Prototype, Test — prevents both paralysis (overthinking) and recklessness (acting without data) by providing a structured yet flexible process."
+        }
+      ]
+    },
+    {
+      "id": "sq-16-odyssey-plans",
+      "dayNumber": 16,
+      "moduleId": "sq-module-3",
+      "title": "Odyssey Plans",
+      "subtitle": "Map three wildly different versions of your next 5 years — and discover which excites you most.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Don't Have One Future — You Have Many",
+          "body": "The biggest myth in career planning is that there's one \"right\" path. Odyssey Plans — from Stanford's Designing Your Life — ask you to sketch three radically different 5-year futures. The exercise breaks the tyranny of the \"one thing\" and reveals that multiple lives could make you happy.",
+          "stat": "3",
+          "statLabel": "parallel lives you'll map today — each one a genuine possibility"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Odyssey Plans",
+          "body": "Each plan should be genuinely different — not variations on a theme. The point is to stretch your imagination and test your assumptions about what would fulfil you.",
+          "bullets": [
+            "Plan A: Your current path extended — what happens if you keep going?",
+            "Plan B: What you'd do if Plan A disappeared overnight",
+            "Plan C: What you'd do if money and others' opinions didn't matter"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rating Your Plans",
+          "body": "Once you've sketched all three, rate each on four dimensions. This removes the guesswork and gives you data about which direction truly energises you — not just which seems most \"sensible.\"",
+          "bullets": [
+            "Resources: Do I have (or can I get) what's needed? (1-5)",
+            "Confidence: Do I believe I could make this work? (1-5)",
+            "Engagement: Does imagining this life light me up? (1-5)",
+            "Coherence: Does this align with my values and who I'm becoming? (1-5)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why This Works",
+          "body": "Odyssey Plans work because they bypass the paralysis of \"choosing wrong.\" When you see that multiple futures could work, the pressure drops. You shift from \"Which is THE one?\" to \"Which do I want to explore first?\" — a much lighter, more creative question.",
+          "stat": "87%",
+          "statLabel": "of participants feel significantly less stuck after completing Odyssey Plans"
+        },
+        {
+          "type": "try-it",
+          "headline": "Sketch Your Three Odyssey Plans",
+          "body": "Give yourself 15 minutes. For each plan (A, B, C), write: a 2-sentence description, a title that captures its essence, and a quick dashboard rating (Resources, Confidence, Engagement, Coherence — each 1-5). Don't overthink. Then circle the one with the highest Engagement score. That's where your energy wants to go."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the purpose of creating three Odyssey Plans instead of just one?",
+          "type": "mcq",
+          "options": [
+            "To break the myth of one \"right\" path and reduce decision paralysis",
+            "To create a backup plan in case you get fired",
+            "To impress others with how many options you have",
+            "To ensure you never have to commit to anything"
+          ],
+          "correctIndex": 0,
+          "explanation": "Odyssey Plans work by showing that multiple futures could genuinely fulfil you. This breaks the paralysis of trying to find the \"one right answer\" and shifts the question to \"which do I want to explore first?\""
+        },
+        {
+          "question": "Plan C in Odyssey Planning is \"what you'd do if money and opinions didn't matter.\"",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plan C removes all external constraints — money, others' expectations, practicality — to reveal what genuinely excites you at the deepest level. It often contains seeds of your truest desires."
+        },
+        {
+          "question": "Which rating dimension measures whether a plan \"lights you up\"?",
+          "type": "mcq",
+          "options": [
+            "Engagement",
+            "Resources",
+            "Confidence",
+            "Coherence"
+          ],
+          "correctIndex": 0,
+          "explanation": "Engagement measures how energised and excited you feel imagining this future. It's often the most revealing dimension — high engagement signals genuine desire, not just logical sense."
+        }
+      ]
+    },
+    {
+      "id": "sq-17-prototype-conversations",
+      "dayNumber": 17,
+      "moduleId": "sq-module-3",
+      "title": "Prototype Conversations",
+      "subtitle": "Test your career ideas through real conversations — not more Googling or overthinking.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Conversation Beats 100 Hours of Research",
+          "body": "You can read every article about a career path and still have no idea what it actually feels like. Prototype conversations — short, informal chats with people living the life you're curious about — give you insider insight that no blog post, job description, or salary website ever could.",
+          "stat": "15 min",
+          "statLabel": "is all a prototype conversation needs to deliver breakthrough insight"
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Prototype Conversation Different",
+          "body": "This isn't an informational interview (which feels transactional). It's not networking (which feels performative). A prototype conversation is genuinely curious exploration — you're testing a hypothesis about a possible future, not asking for a job.",
+          "bullets": [
+            "Purpose: Learn what a path actually looks and feels like",
+            "Tone: Curious, not transactional — \"I'm exploring, not applying\"",
+            "Length: 15-20 minutes maximum (respect their time)",
+            "Outcome: Insight about fit, not a job offer"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Golden Questions",
+          "body": "These questions consistently unlock the most useful insights in prototype conversations. They go beyond surface-level information into the lived experience of a career path.",
+          "bullets": [
+            "\"How did you actually get into this?\" (reveals real paths, not advertised ones)",
+            "\"What does a typical day/week honestly look like?\"",
+            "\"What surprised you most about this work?\"",
+            "\"What would you change if you could?\"",
+            "\"Who else should I talk to?\" (expands your network organically)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Overcoming the Fear of Reaching Out",
+          "body": "Most people never have prototype conversations because they fear being a burden. The data says otherwise: 85% of people are happy to talk about their work when asked with genuine curiosity. You're giving them a chance to reflect and help — most find it flattering.",
+          "stat": "85%",
+          "statLabel": "of professionals say yes when asked for a short, curious conversation"
+        },
+        {
+          "type": "try-it",
+          "headline": "Set Up Your First Prototype Conversation",
+          "body": "Pick one career path from your Odyssey Plans that you want to explore. Find one person on LinkedIn, through your network, or in a community who's living some version of it. Send a short message: \"Hi [name], I'm exploring [area] and would love to hear about your experience. Would you have 15 minutes for a quick chat this week?\" Send it now — before your confidence gremlin talks you out of it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How is a prototype conversation different from a networking event?",
+          "type": "mcq",
+          "options": [
+            "It's driven by genuine curiosity about a path, not asking for a job",
+            "It must last at least 2 hours to be useful",
+            "You should only talk to people at senior level",
+            "It requires formal preparation and a written agenda"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prototype conversations are driven by genuine curiosity about a life path — you're testing a hypothesis, not seeking employment. This makes them feel authentic rather than transactional."
+        },
+        {
+          "question": "85% of professionals say yes when asked for a short, curious conversation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that most people are happy to talk about their work when approached with genuine curiosity. The fear of \"being a burden\" is almost always worse than the reality."
+        },
+        {
+          "question": "Which question helps expand your network organically during prototype conversations?",
+          "type": "mcq",
+          "options": [
+            "\"Who else should I talk to?\"",
+            "\"Can you give me a job?\"",
+            "\"What's your salary?\"",
+            "\"Will you be my mentor?\""
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Who else should I talk to?\" is powerful because it organically grows your network through warm introductions, and the other person often suggests people you'd never have found on your own."
+        }
+      ]
+    },
+    {
+      "id": "sq-18-networking-for-introverts",
+      "dayNumber": 18,
+      "moduleId": "sq-module-3",
+      "title": "Networking for Introverts",
+      "subtitle": "Build powerful professional relationships without forcing yourself into situations that drain you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "70% of Jobs Come Through Relationships — Not Applications",
+          "body": "If you're introverted, this statistic might terrify you. But here's what most people get wrong: effective networking isn't about working rooms, collecting business cards, or being charismatic. It's about building genuine relationships — something introverts often do better than extroverts when they play to their strengths.",
+          "stat": "70%",
+          "statLabel": "of roles are filled through personal connections, not job boards"
+        },
+        {
+          "type": "content",
+          "headline": "Redefining Networking for Introverts",
+          "body": "Forget the stereotypical networking event. Introvert-friendly networking leverages your natural strengths: depth over breadth, listening over talking, and quality connections over quantity.",
+          "bullets": [
+            "One deep conversation > ten surface-level chats",
+            "Written outreach (email/DM) > cold approaching at events",
+            "Small group settings > large conferences",
+            "Giving value first > asking for favours"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Weak Ties\" Advantage",
+          "body": "Sociologist Mark Granovetter's famous research shows that career opportunities come most often from \"weak ties\" — people you know casually, not your closest friends. Introverts often underestimate how many weak ties they already have.",
+          "stat": "83%",
+          "statLabel": "of job opportunities came through weak ties in Granovetter's research"
+        },
+        {
+          "type": "content",
+          "headline": "The Give-First Networking System",
+          "body": "The most sustainable networking approach doesn't feel like \"networking\" at all. It's simply being genuinely helpful to people in your orbit — which naturally builds goodwill and keeps you visible without the performative energy drain.",
+          "bullets": [
+            "Share an article that's relevant to someone's challenge",
+            "Introduce two people who should know each other",
+            "Congratulate someone on a win (specific, not generic)",
+            "Comment thoughtfully on someone's post (2-3 sentences)",
+            "Offer your expertise when you spot someone struggling"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 5-Minute Networking Action",
+          "body": "Right now, without leaving your seat: (1) Think of one person you haven't spoken to in 3+ months who's in an interesting career space. (2) Send them a message that gives value — share something relevant, congratulate them, or ask about something they recently did. No ask. No agenda. Just genuine human connection. This is what real networking looks like for introverts."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Granovetter's research, career opportunities most often come from:",
+          "type": "mcq",
+          "options": [
+            "Weak ties — casual acquaintances rather than close friends",
+            "Strong ties — your inner circle of best friends",
+            "Complete strangers at networking events",
+            "Recruiters who find your CV online"
+          ],
+          "correctIndex": 0,
+          "explanation": "Granovetter's \"Strength of Weak Ties\" research showed that 83% of job opportunities came through people known casually — they bridge different social circles and bring novel information."
+        },
+        {
+          "question": "Introverts are naturally bad at networking and should force themselves to behave like extroverts.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Introverts can be excellent networkers when they play to their strengths: depth over breadth, listening, written outreach, small groups, and giving value — rather than forcing extroverted behaviours."
+        },
+        {
+          "question": "What is the \"Give-First\" networking approach?",
+          "type": "mcq",
+          "options": [
+            "Being genuinely helpful to people in your orbit without expecting anything back",
+            "Giving your business card to everyone you meet",
+            "Always buying coffee for other professionals",
+            "Sharing your CV with as many people as possible"
+          ],
+          "correctIndex": 0,
+          "explanation": "Give-First networking means building goodwill through genuine helpfulness — sharing relevant resources, making introductions, offering expertise — which naturally keeps you visible without performative effort."
+        }
+      ]
+    },
+    {
+      "id": "sq-19-small-bets",
+      "dayNumber": 19,
+      "moduleId": "sq-module-3",
+      "title": "Small Bets",
+      "subtitle": "Take low-risk action that creates disproportionate career opportunities.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Big Career Moves Start as Tiny Experiments",
+          "body": "Most people think career change requires dramatic leaps — quitting, retraining, starting over. But the most successful career transitions begin as \"small bets\": low-risk actions that test ideas, build evidence, and create optionality. One blog post, one side project, one conversation can open doors you never expected.",
+          "stat": "92%",
+          "statLabel": "of successful career changers started with a small bet, not a big leap"
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Good Small Bet",
+          "body": "Not all small actions are small bets. A good small bet has specific characteristics that maximise learning while minimising downside risk.",
+          "bullets": [
+            "Low cost: Requires minimal time, money, or reputation risk",
+            "High learning: Gives you real data about interest or fit",
+            "Reversible: You can stop without significant consequences",
+            "Asymmetric upside: Small investment but potentially big payoff"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Small Bets Portfolio",
+          "body": "Don't put all your career exploration into one basket. Run 2-3 small bets in parallel across different areas of curiosity. Most will teach you something; a few will open unexpected doors. This is how squiggly careers naturally evolve.",
+          "stat": "3-5",
+          "statLabel": "parallel small bets is optimal for career exploration without overwhelm"
+        },
+        {
+          "type": "content",
+          "headline": "Examples of Career Small Bets",
+          "body": "Small bets come in many forms. The key is matching the bet to what you need to learn about a potential direction.",
+          "bullets": [
+            "Write one article on a topic you want to be known for",
+            "Volunteer for a project in a new area at work",
+            "Attend one event in an industry you're curious about",
+            "Build something tiny (a tool, template, guide) in a new skill",
+            "Offer your expertise free to one person to test demand"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Three Small Bets",
+          "body": "From your Odyssey Plans and prototype conversations, design 3 small bets you can start within the next 7 days. For each: (1) What's the bet? (2) What will I learn? (3) How long will it take? (4) What's the worst case? Keep each under 5 hours total investment. Commit to starting at least one this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four characteristics of a good \"small bet\"?",
+          "type": "mcq",
+          "options": [
+            "Low cost, high learning, reversible, asymmetric upside",
+            "High cost, guaranteed success, permanent, predictable outcome",
+            "Fast, expensive, visible, impressive to others",
+            "Secret, long-term, complex, requiring permission"
+          ],
+          "correctIndex": 0,
+          "explanation": "A good small bet minimises downside (low cost, reversible) while maximising potential learning and upside (high learning, asymmetric payoff). This combination makes career exploration safe and effective."
+        },
+        {
+          "question": "92% of successful career changers started with a small bet rather than a big leap.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research on career transitions consistently shows that gradual, evidence-based moves outperform dramatic leaps. Small bets build confidence and evidence before bigger commitments."
+        },
+        {
+          "question": "How many parallel small bets are optimal for career exploration?",
+          "type": "mcq",
+          "options": [
+            "3-5 across different areas of curiosity",
+            "Exactly 1 — full focus on one direction only",
+            "10+ to maximise coverage",
+            "0 — just plan thoroughly instead"
+          ],
+          "correctIndex": 0,
+          "explanation": "Running 3-5 parallel small bets balances exploration breadth with manageable workload. Most will teach you something valuable; a few may open unexpected doors."
+        }
+      ]
+    },
+    {
+      "id": "sq-20-resilience-through-change",
+      "dayNumber": 20,
+      "moduleId": "sq-module-3",
+      "title": "Resilience Through Change",
+      "subtitle": "Build the emotional muscle to thrive through career transitions — not just survive them.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every Career Transition Has a Messy Middle",
+          "body": "William Bridges' transition model shows that between ending one chapter and beginning the next, there's a \"neutral zone\" — a period of confusion, doubt, and discomfort. Most people panic here and retreat to safety. But those who learn to sit with the discomfort emerge with the strongest next chapters.",
+          "stat": "3-6 months",
+          "statLabel": "typical duration of the \"neutral zone\" during a career transition"
+        },
+        {
+          "type": "content",
+          "headline": "The Transition Curve",
+          "body": "Career transitions follow a predictable emotional pattern. Knowing where you are on the curve helps normalise difficult feelings and prevents premature quitting during the hardest phase.",
+          "bullets": [
+            "Ending: Letting go of the old identity (\"I'm no longer a [title]\")",
+            "Neutral zone: Confusion, exploration, discomfort (the messy middle)",
+            "New beginning: Energy returns, new identity emerges, momentum builds",
+            "The neutral zone feels like failure but is actually the creative engine"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Resilience Is a Skill, Not a Trait",
+          "body": "Research from the University of Pennsylvania shows resilience can be developed like a muscle. It's not about being tough or suppressing emotions — it's about having specific practices that help you process difficulty and keep moving.",
+          "stat": "4x",
+          "statLabel": "faster recovery from setbacks for people with trained resilience skills"
+        },
+        {
+          "type": "content",
+          "headline": "Your Resilience Toolkit",
+          "body": "Build these into your regular practice — especially during transitions — and you'll navigate career changes with far less suffering.",
+          "bullets": [
+            "Anchor routines: Keep 2-3 habits stable while everything else changes",
+            "Transition buddy: One person who checks in on you weekly",
+            "Progress tracking: Write 3 micro-wins every evening (builds self-efficacy)",
+            "Identity flexibility: \"I'm someone who...\" rather than \"I'm a [job title]\"",
+            "Time horizon: Zoom out — \"How will I view this in 5 years?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Transition Safety Net",
+          "body": "Write down: (1) Your 3 anchor routines you'll keep no matter what changes. (2) One person who could be your transition buddy. (3) A flexible identity statement: \"I'm someone who [verb/value]\" rather than \"I'm a [title].\" Example: \"I'm someone who solves complex problems creatively.\" This net catches you whenever career ground shifts."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"neutral zone\" in Bridges' transition model?",
+          "type": "mcq",
+          "options": [
+            "The messy middle between ending one chapter and beginning the next",
+            "A period of complete certainty about your next step",
+            "The first day at a new job",
+            "A planned gap year between jobs"
+          ],
+          "correctIndex": 0,
+          "explanation": "The neutral zone is the uncomfortable period between endings and new beginnings — characterised by confusion, doubt, and exploration. It feels like failure but is actually where creative reinvention happens."
+        },
+        {
+          "question": "Resilience is an innate personality trait that cannot be developed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows resilience is a skill that can be trained and developed through specific practices — anchor routines, progress tracking, identity flexibility — not a fixed personality trait."
+        },
+        {
+          "question": "Which practice helps build resilience during career transitions?",
+          "type": "mcq",
+          "options": [
+            "Keeping 2-3 anchor routines stable while everything else changes",
+            "Changing everything about your life simultaneously",
+            "Avoiding all feelings of discomfort",
+            "Refusing to talk to anyone until you have a plan"
+          ],
+          "correctIndex": 0,
+          "explanation": "Anchor routines provide stability and identity continuity during transitions. When external circumstances are changing rapidly, stable habits create a foundation of self-efficacy and control."
+        }
+      ]
+    },
+    {
+      "id": "sq-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "sq-module-3",
+      "title": "Course Finale",
+      "subtitle": "Bring it all together — your compass, your range, and your designed next chapter.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built Something Most People Never Will",
+          "body": "In 21 days you've done what most professionals never do in their entire career: you've developed self-knowledge, built breadth, and designed a concrete next chapter. You're no longer drifting on someone else's ladder. You're navigating your own squiggly path — with a compass, range, and experiments to guide you.",
+          "stat": "21 days",
+          "statLabel": "of focused work that most professionals never invest in themselves"
+        },
+        {
+          "type": "content",
+          "headline": "Your Squiggly Career Toolkit — Complete",
+          "body": "You now have a full toolkit for navigating any career transition, decision, or stuck point. Here's what you carry forward:",
+          "bullets": [
+            "Career Compass: Your strengths, values, curiosity, and possibilities (M1)",
+            "Range & Transfer: Cross-domain thinking and T-shape strategy (M2)",
+            "Design Skills: Odyssey Plans, prototype conversations, small bets (M3)",
+            "Resilience: Transition tools for the inevitable messy middles"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 90-Day Momentum Plan",
+          "body": "Knowledge without action fades. To maintain momentum, commit to a 90-day plan that keeps your squiggly career active and evolving.",
+          "bullets": [
+            "Month 1: Run your 3 small bets and have 3 prototype conversations",
+            "Month 2: Evaluate results, deepen the most promising direction",
+            "Month 3: Make one concrete career move based on evidence gathered",
+            "Ongoing: Review your compass monthly, update as you learn"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Embracing the Squiggle Forever",
+          "body": "The squiggly career isn't a phase to get through — it's the permanent reality of modern work. But now you have tools to thrive in it. Every detour adds range. Every experiment adds data. Every transition builds resilience. Your squiggle isn't a bug — it's the most interesting story you'll ever tell.",
+          "stat": "∞",
+          "statLabel": "possible futures still ahead of you — and you now know how to explore them"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your One Commitment",
+          "body": "Complete this sentence and write it somewhere you'll see daily: \"In the next 90 days, I will [specific action from your small bets] because my compass tells me [value/strength it honours], and I'll know it's working when [specific evidence].\" This is your bridge from learning to living. Your squiggly career starts now. Go make it a great story."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should Month 1 of your 90-Day Momentum Plan include?",
+          "type": "mcq",
+          "options": [
+            "Running 3 small bets and having 3 prototype conversations",
+            "Quitting your job and starting a new career",
+            "Reading 10 more career books before taking action",
+            "Waiting for the perfect opportunity to appear"
+          ],
+          "correctIndex": 0,
+          "explanation": "Month 1 is about action and evidence-gathering: run your small bets to test directions and have prototype conversations to learn from others' experience. This builds real data for Month 2 decisions."
+        },
+        {
+          "question": "The squiggly career is a temporary phase that ends once you find your \"true calling.\"",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The squiggly career is the permanent reality of modern work — not a phase. The tools you've learned (compass, range, design thinking, resilience) are lifelong practices for navigating continuous evolution."
+        },
+        {
+          "question": "What four elements make up your complete Squiggly Career Toolkit?",
+          "type": "mcq",
+          "options": [
+            "Career Compass, Range & Transfer, Design Skills, Resilience",
+            "CV, Cover Letter, LinkedIn, Salary Negotiation",
+            "Technical Skills, Certifications, References, Experience",
+            "Morning Routine, Evening Routine, Weekend Routine, Holiday Routine"
+          ],
+          "correctIndex": 0,
+          "explanation": "Your complete toolkit combines self-knowledge (compass), breadth (range & transfer), action methodology (design skills), and emotional capacity (resilience) — covering both the strategic and human sides of career navigation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1891 @@
+{
+  "id": "28-day-career-accelerator",
+  "title": "21-Day Career Accelerator",
+  "subtitle": "Get crystal clear on your career direction, build rare valuable skills, and create unstoppable momentum — one focused day at a time.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "ca-module-1",
+      "moduleNumber": 1,
+      "title": "Find Your Direction",
+      "subtitle": "Get crystal clear on what matters, what you're great at, and where to invest your career energy.",
+      "days": "Lessons 1–7",
+      "skill": "Clarify your career direction using values, strengths and fit",
+      "lessonIds": [
+        "ca-1-career-audit",
+        "ca-2-values-compass",
+        "ca-3-career-capital-inventory",
+        "ca-4-personal-fit",
+        "ca-5-three-prototypes",
+        "ca-6-decision-framework",
+        "ca-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "ca-module-2",
+      "moduleNumber": 2,
+      "title": "Build Career Capital",
+      "subtitle": "Develop rare, valuable skills that make you indispensable and open unexpected doors.",
+      "days": "Lessons 8–14",
+      "skill": "Build deliberate practice routines that compound into career capital",
+      "lessonIds": [
+        "ca-8-craftsman-mindset",
+        "ca-9-deliberate-practice",
+        "ca-10-deep-work-rituals",
+        "ca-11-feedback-loops",
+        "ca-12-skill-stacking",
+        "ca-13-stretch-projects",
+        "ca-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "ca-module-3",
+      "moduleNumber": 3,
+      "title": "Accelerate & Sustain",
+      "subtitle": "Turn your growing skills into visible results, new opportunities, and lasting momentum.",
+      "days": "Lessons 15–21",
+      "skill": "Create visibility, build networks, and sustain career momentum",
+      "lessonIds": [
+        "ca-15-visibility-strategy",
+        "ca-16-career-network",
+        "ca-17-90-day-sprint",
+        "ca-18-opportunity-radar",
+        "ca-19-momentum-habits",
+        "ca-20-resilience-system",
+        "ca-21-course-finale"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ca-1-career-audit",
+      "dayNumber": 1,
+      "moduleId": "ca-module-1",
+      "title": "The Career Audit",
+      "subtitle": "Take an honest look at where you are — so you can plot a smarter path forward.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most People Sleepwalk Through Their Career",
+          "body": "Research shows that only 15% of professionals have ever spent more than an hour seriously thinking about their career direction. The rest drift from role to role, reacting to whatever opportunity appears next. Today you stop drifting.",
+          "stat": "80,000",
+          "statLabel": "hours the average person spends at work in their lifetime"
+        },
+        {
+          "type": "content",
+          "headline": "The Four Dimensions of Career Fit",
+          "body": "A fulfilling career isn't just about salary. The 80,000 Hours research identifies four key factors that determine how satisfied you'll actually feel in your work — and money ranks surprisingly low on the list.",
+          "bullets": [
+            "Engagement: Work that absorbs you and uses your strengths",
+            "Impact: Feeling that your contribution genuinely matters",
+            "Supportive conditions: Autonomy, good colleagues, fair pay",
+            "Fit with your life: Alignment with values and personal needs"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where Are You Right Now?",
+          "body": "Before you can change direction, you need an honest starting point. Think of this as a GPS — you can't get directions without knowing your current location. Rate yourself honestly across engagement, impact, conditions, and fit.",
+          "bullets": [
+            "Score each dimension 1–10 (no overthinking — gut feeling)",
+            "Identify your biggest gap — that's your leverage point",
+            "Note what you'd need to move each score up by 2 points"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Drift vs. Design Principle",
+          "body": "Design thinking for careers means treating your professional life like a series of intentional experiments rather than a fixed path. The people who end up most fulfilled aren't the ones who \"found their passion\" — they're the ones who designed their way toward it.",
+          "stat": "73%",
+          "statLabel": "of successful professionals say their current role was unplanned"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your 5-Minute Career Audit",
+          "body": "Grab a notes app. Score your current role across the four dimensions (Engagement, Impact, Conditions, Fit) from 1–10. Then write one sentence answering: \"If nothing changes in 2 years, how will I feel?\" This is your baseline — we'll build from here."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to 80,000 Hours research, which factor is MOST important for career satisfaction?",
+          "type": "mcq",
+          "options": [
+            "Engaging work that uses your strengths",
+            "High salary and financial security",
+            "Prestigious job title and status",
+            "Short commute and flexible hours"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research consistently shows that engaging work — work that absorbs you and utilises your strengths — is the strongest predictor of career satisfaction, above salary or status."
+        },
+        {
+          "question": "The \"Design vs. Drift\" principle suggests your career should be treated as a series of intentional experiments.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Design thinking for careers means actively prototyping and testing directions rather than waiting for the \"right\" opportunity to appear."
+        },
+        {
+          "question": "What is the first step in a career audit?",
+          "type": "mcq",
+          "options": [
+            "Honestly assessing where you are right now",
+            "Researching new job listings",
+            "Updating your CV immediately",
+            "Asking your boss for a promotion"
+          ],
+          "correctIndex": 0,
+          "explanation": "Like GPS navigation, you need to know your starting point before you can plot a route. An honest assessment of your current situation is always step one."
+        }
+      ]
+    },
+    {
+      "id": "ca-2-values-compass",
+      "dayNumber": 2,
+      "moduleId": "ca-module-1",
+      "title": "Your Values Compass",
+      "subtitle": "Discover the core values that should be driving every career decision you make.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why \"Good\" Jobs Feel Wrong",
+          "body": "Ever had a role that looked perfect on paper but left you feeling empty? That disconnect happens when your work conflicts with your core values. Values aren't preferences — they're the non-negotiables that determine whether you thrive or merely survive.",
+          "stat": "61%",
+          "statLabel": "of workers say their job doesn't align with their personal values"
+        },
+        {
+          "type": "content",
+          "headline": "Values vs. Goals",
+          "body": "Goals are destinations you reach and then move past. Values are the compass direction you travel — they never \"arrive\" but they guide every decision. When your career is values-aligned, even difficult days feel meaningful.",
+          "bullets": [
+            "Goal: \"Get promoted to director\" — achievable, then what?",
+            "Value: \"Creative autonomy\" — guides you toward the right roles indefinitely",
+            "Values explain WHY a goal matters, not just WHAT you want"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Values Hierarchy",
+          "body": "You probably hold many values, but career decisions require knowing which ones take priority. When two values conflict — say \"financial security\" versus \"creative freedom\" — your hierarchy tells you which way to lean.",
+          "bullets": [
+            "List your top 10 values related to work and life",
+            "Force-rank them by asking \"if I could only have one...\"",
+            "Your top 3–5 are your Career Compass values"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Misalignment Tax",
+          "body": "Working against your values creates a hidden \"tax\" on your energy, motivation, and health. Research shows that values misalignment is one of the strongest predictors of burnout — even more than workload.",
+          "stat": "3.5×",
+          "statLabel": "more likely to burn out when work conflicts with personal values"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Values Sorting Exercise",
+          "body": "Write down these 10 values: Creativity, Security, Impact, Freedom, Learning, Recognition, Connection, Wealth, Challenge, Balance. Now eliminate 5. Then rank the remaining 5. Your top 3 are your Career Compass — write them somewhere you'll see daily."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between values and goals?",
+          "type": "mcq",
+          "options": [
+            "Values are ongoing directions; goals are destinations you reach",
+            "Goals are more important than values",
+            "Values change frequently; goals stay fixed",
+            "There is no real difference between them"
+          ],
+          "correctIndex": 0,
+          "explanation": "Values act like a compass direction — they guide you continuously. Goals are specific destinations you reach and then need new ones. Values explain WHY goals matter."
+        },
+        {
+          "question": "Values misalignment at work is a stronger predictor of burnout than workload alone.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that working against your core values creates an invisible energy drain that leads to burnout faster than simply being busy."
+        },
+        {
+          "question": "Why should you create a values hierarchy rather than just a list?",
+          "type": "mcq",
+          "options": [
+            "Because career decisions require knowing which values take priority when they conflict",
+            "Because you should only have one value",
+            "Because hierarchies look better on a CV",
+            "Because lower-ranked values don't matter at all"
+          ],
+          "correctIndex": 0,
+          "explanation": "Real career decisions often involve trade-offs between competing values. A hierarchy tells you which way to lean when two things you care about conflict."
+        }
+      ]
+    },
+    {
+      "id": "ca-3-career-capital-inventory",
+      "dayNumber": 3,
+      "moduleId": "ca-module-1",
+      "title": "Your Career Capital Inventory",
+      "subtitle": "Discover the rare, valuable assets you've already built — and the gaps worth filling.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Richer Than You Think",
+          "body": "Career capital is the collection of rare, valuable skills, knowledge, connections, and credentials you've accumulated. Most people dramatically underestimate what they've already built — and that blind spot stops them from leveraging it.",
+          "stat": "4 types",
+          "statLabel": "of career capital: skills, knowledge, connections, credentials"
+        },
+        {
+          "type": "content",
+          "headline": "The Career Capital Framework",
+          "body": "Cal Newport argues that the best careers aren't built by \"following your passion\" — they're built by accumulating rare, valuable capital and then trading it for the things that make work great: autonomy, impact, and creativity.",
+          "bullets": [
+            "Skills: What can you do that others can't easily replicate?",
+            "Knowledge: What do you understand deeply from experience?",
+            "Connections: Who trusts you and values your input?",
+            "Credentials: What proof do you have that signals your ability?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Inventory Method",
+          "body": "Take stock of your capital across all four categories. Don't just count formal qualifications — include skills learned informally, knowledge from side projects, relationships built over years, and any evidence of your capabilities.",
+          "bullets": [
+            "List 5 skills you've developed (technical + interpersonal)",
+            "Note 3 areas where your experience gives you unique insight",
+            "Identify 10 people who would vouch for your work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding Your Capital Gaps",
+          "body": "Once you see what you have, you can spot what's missing. The most valuable next step is usually NOT getting another qualification — it's filling a specific skill gap that would multiply the value of what you already own.",
+          "stat": "80%",
+          "statLabel": "of career opportunities come from leveraging existing capital in new ways"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Capital Audit",
+          "body": "Create four columns: Skills, Knowledge, Connections, Credentials. Set a 5-minute timer and list everything you can in each column — be generous with yourself. Then circle the 3 items that are most rare or valuable. Finally, write one gap that, if filled, would multiply the value of your existing capital."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Cal Newport argue is the foundation of a great career?",
+          "type": "mcq",
+          "options": [
+            "Accumulating rare, valuable career capital",
+            "Following your passion from the start",
+            "Getting lucky with the right opportunity",
+            "Having a prestigious degree"
+          ],
+          "correctIndex": 0,
+          "explanation": "Newport's research shows that fulfilling careers are built by developing rare skills first, then trading that capital for autonomy, impact, and creative control."
+        },
+        {
+          "question": "Career capital only includes formal qualifications and degrees.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Career capital includes skills, knowledge, connections AND credentials. Informal skills, self-taught expertise, and relationship trust all count as valuable career capital."
+        },
+        {
+          "question": "What is usually the most valuable next step after completing a career capital inventory?",
+          "type": "mcq",
+          "options": [
+            "Filling a specific skill gap that multiplies your existing capital",
+            "Getting another formal qualification",
+            "Changing jobs immediately",
+            "Adding more connections on LinkedIn"
+          ],
+          "correctIndex": 0,
+          "explanation": "The highest-leverage move is typically filling a targeted gap that makes your existing capital significantly more valuable — not adding more of the same."
+        }
+      ]
+    },
+    {
+      "id": "ca-4-personal-fit",
+      "dayNumber": 4,
+      "moduleId": "ca-module-1",
+      "title": "Personal Fit — Your Secret Weapon",
+      "subtitle": "Learn why the \"best\" career for you depends on who YOU are, not what's popular.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Trap of \"Best Careers\" Lists",
+          "body": "Every year, articles rank the \"best jobs\" by salary, growth, or prestige. But research from 80,000 Hours shows that personal fit — how well a role matches YOUR specific strengths and working style — matters far more than any generic ranking.",
+          "stat": "10–50×",
+          "statLabel": "performance difference between people in roles that fit vs. don't fit them"
+        },
+        {
+          "type": "content",
+          "headline": "What Personal Fit Actually Means",
+          "body": "Personal fit is the degree to which a specific role suits your particular combination of skills, personality, and circumstances. The same job can be energising for one person and soul-crushing for another — and that's not about willpower.",
+          "bullets": [
+            "Skill match: Does the role use what you're naturally good at?",
+            "Personality match: Does the work environment suit your temperament?",
+            "Circumstance match: Does it fit your life situation and constraints?",
+            "Growth match: Does it stretch you in directions you want to grow?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Prediction Problem",
+          "body": "Humans are notoriously bad at predicting what will make them happy in a new role. The solution isn't more thinking — it's more testing. Short experiments give you 10× better data than months of deliberation.",
+          "bullets": [
+            "Talk to 3 people who actually do the work daily",
+            "Try a small version of the work before committing",
+            "Notice your energy levels DURING the work, not just the outcome"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Fit Beats Passion",
+          "body": "The \"follow your passion\" advice assumes you know what you'll love before trying it. In reality, passion often develops AFTER you become good at something that fits you well. Fit creates competence, competence creates enjoyment, enjoyment looks like passion.",
+          "stat": "65%",
+          "statLabel": "of people in \"passion-matched\" careers still report dissatisfaction"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Personal Fit Filter",
+          "body": "Think of 2–3 roles you're considering or curious about. For each one, score it 1–5 on: Skill Match, Personality Match, Circumstance Match, and Growth Match. Any role scoring below 3 on two or more dimensions is probably a poor fit — no matter how good it looks on paper."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to research, what matters MORE than generic \"best careers\" rankings?",
+          "type": "mcq",
+          "options": [
+            "Personal fit between you and the specific role",
+            "The salary offered by the role",
+            "How prestigious the industry is",
+            "Whether the role is trending on job boards"
+          ],
+          "correctIndex": 0,
+          "explanation": "80,000 Hours research shows that personal fit — how well a role matches YOUR strengths and working style — creates 10–50× performance differences and is far more important than generic rankings."
+        },
+        {
+          "question": "Passion usually develops AFTER you become skilled at something that fits you well.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that passion is often the result of competence and mastery, not the starting point. Fit leads to skill development, which leads to genuine enjoyment."
+        },
+        {
+          "question": "What is the most reliable way to assess personal fit for a new career direction?",
+          "type": "mcq",
+          "options": [
+            "Short experiments and testing the work directly",
+            "Spending months researching online",
+            "Taking personality tests",
+            "Asking friends what they think suits you"
+          ],
+          "correctIndex": 0,
+          "explanation": "Humans are poor at predicting career happiness through deliberation alone. Short experiments and direct exposure give dramatically better data than thinking or researching."
+        }
+      ]
+    },
+    {
+      "id": "ca-5-three-prototypes",
+      "dayNumber": 5,
+      "moduleId": "ca-module-1",
+      "title": "Three Career Prototypes",
+      "subtitle": "Design three possible futures — then test them without risking everything.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop Choosing Between \"This or That\"",
+          "body": "Most career decisions feel binary: stay or go, this path or that one. Design thinking breaks this trap by generating multiple options simultaneously. When you have three viable paths, you make decisions from abundance — not anxiety.",
+          "stat": "3 plans",
+          "statLabel": "is the minimum needed to escape binary thinking"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Lives Exercise",
+          "body": "From Designing Your Life: imagine three genuinely different versions of your career over the next 5 years. Not variations of the same theme — truly distinct paths that each excite a different part of you.",
+          "bullets": [
+            "Plan A: Your current path, optimised and accelerated",
+            "Plan B: What you'd do if Plan A disappeared overnight",
+            "Plan C: The path you'd choose if money and judgment didn't exist"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Prototype (Not Plan)",
+          "body": "A prototype isn't a full commitment — it's a small, low-risk experiment that gives you real data. You don't need to quit your job to test a new direction. You need a conversation, a side project, or a weekend experiment.",
+          "bullets": [
+            "Prototype conversations: Talk to people living your Plan B or C",
+            "Prototype experiences: Shadow someone, volunteer, freelance a small project",
+            "Prototype skills: Take a short course, build something, teach others"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Multiple Options Reduce Anxiety",
+          "body": "Psychologists call it the \"single-option aversion\" — when we only see one path, we feel trapped. Having three prototypes turns career uncertainty from a threat into an adventure. You're not lost; you're exploring.",
+          "stat": "44%",
+          "statLabel": "less decision anxiety when people consider 3+ options vs. just 1"
+        },
+        {
+          "type": "try-it",
+          "headline": "Sketch Your Three Career Lives",
+          "body": "Spend 5 minutes sketching three 5-year career scenarios. Plan A: Your current trajectory, done brilliantly. Plan B: What you'd do if your current industry vanished. Plan C: What you'd try if money were no issue and nobody could judge. For each, write a 1-line title and 2 things that excite you about it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does the \"Three Lives\" exercise use three plans instead of two?",
+          "type": "mcq",
+          "options": [
+            "Three options escape binary \"this or that\" thinking and reduce anxiety",
+            "You need exactly three jobs to be successful",
+            "The third plan is always the one you should pick",
+            "Two plans are too few to fill a planning sheet"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that having three or more options reduces single-option aversion and helps you make decisions from abundance rather than anxiety."
+        },
+        {
+          "question": "A career prototype requires quitting your current job to test a new direction.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prototypes are small, low-risk experiments — conversations, side projects, or weekend experiences — that give you real data without full commitment."
+        },
+        {
+          "question": "What is the purpose of \"Plan C\" in the Three Lives exercise?",
+          "type": "mcq",
+          "options": [
+            "To explore what you'd do without money or judgment constraints",
+            "To have a backup if Plans A and B fail",
+            "To impress other people with your ambition",
+            "To plan your retirement"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plan C removes constraints of money and others' opinions, revealing desires and interests you may be suppressing — which often contain clues to deep fulfillment."
+        }
+      ]
+    },
+    {
+      "id": "ca-6-decision-framework",
+      "dayNumber": 6,
+      "moduleId": "ca-module-1",
+      "title": "The Decision Framework",
+      "subtitle": "Stop overthinking — learn the system that turns career confusion into confident action.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Career Decisions Feel Impossible",
+          "body": "Career choices trigger analysis paralysis because they feel irreversible, high-stakes, and identity-defining. But research shows that most career decisions are far more reversible than they feel — and that action generates clarity faster than thinking alone.",
+          "stat": "86%",
+          "statLabel": "of people who made a career change said they worried too long"
+        },
+        {
+          "type": "content",
+          "headline": "The WRAP Framework for Career Decisions",
+          "body": "The best decision-makers don't rely on gut feeling alone. They use structured approaches that counteract common biases. The WRAP method helps you avoid the traps that keep most people stuck.",
+          "bullets": [
+            "W — Widen your options (avoid \"whether or not\" decisions)",
+            "R — Reality-test assumptions (talk to people who've done it)",
+            "A — Attain distance (how would you advise a friend in your position?)",
+            "P — Prepare to be wrong (what's the reversibility of this choice?)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Reversibility Test",
+          "body": "Jeff Bezos divides decisions into \"one-way doors\" (truly irreversible) and \"two-way doors\" (easily reversed). Most career moves are two-way doors disguised as one-way doors. When a decision is reversible, speed beats deliberation.",
+          "bullets": [
+            "One-way door: Moving countries, having children, major financial commitment",
+            "Two-way door: Trying a new role, learning a skill, accepting a project",
+            "Ask: \"What would it cost to reverse this in 6 months?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 10-10-10 Rule",
+          "body": "When stuck, ask: How will I feel about this decision in 10 minutes? 10 months? 10 years? This simple exercise cuts through short-term anxiety and reveals whether your hesitation is protecting you or trapping you.",
+          "stat": "10-10-10",
+          "statLabel": "minutes, months, years — the time-distance lens for clarity"
+        },
+        {
+          "type": "try-it",
+          "headline": "Apply the Decision Framework",
+          "body": "Think of one career decision you've been putting off. Run it through: (1) Is this actually a one-way or two-way door? (2) How would you advise a friend facing the same choice? (3) How will you feel about inaction in 10 months? Write down one small action you'll take this week to move forward."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to research, most career decisions are:",
+          "type": "mcq",
+          "options": [
+            "More reversible than they feel in the moment",
+            "Completely irreversible one-way doors",
+            "Best made by flipping a coin",
+            "Only smart if you have perfect information"
+          ],
+          "correctIndex": 0,
+          "explanation": "Most career moves are \"two-way doors\" — far more reversible than our anxiety suggests. This is why action often beats prolonged deliberation."
+        },
+        {
+          "question": "The \"W\" in the WRAP decision framework stands for \"Widen your options.\"",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first step in WRAP is to Widen your options — avoiding narrow \"whether or not\" framing that limits your choices to a single binary."
+        },
+        {
+          "question": "What does the 10-10-10 rule help you overcome?",
+          "type": "mcq",
+          "options": [
+            "Short-term anxiety that obscures long-term perspective",
+            "Financial concerns about salary",
+            "The need to consult other people",
+            "Difficulty writing a good CV"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 10-10-10 rule (10 minutes, 10 months, 10 years) creates time-distance from the decision, cutting through immediate anxiety to reveal what truly matters."
+        }
+      ]
+    },
+    {
+      "id": "ca-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "ca-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate everything — lock in your direction before we build your execution system.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Now Have What 85% of People Don't",
+          "body": "In just 6 lessons, you've completed a career audit, identified your values, mapped your capital, assessed fit, generated three prototypes, and learned a decision framework. That's more career clarity than most people achieve in years.",
+          "stat": "6 tools",
+          "statLabel": "now in your career direction toolkit"
+        },
+        {
+          "type": "content",
+          "headline": "Your Module 1 Toolkit",
+          "body": "Let's consolidate the frameworks you've learned into a single reference system. Each of these tools works together — values guide direction, capital shows what's possible, fit reveals what suits YOU, and prototypes test without risk.",
+          "bullets": [
+            "Career Audit: Your honest 4-dimension score (Engagement/Impact/Conditions/Fit)",
+            "Values Compass: Your top 3 non-negotiable career values",
+            "Career Capital Inventory: Your rare skills, knowledge, connections, credentials",
+            "Personal Fit Filter: The 4-factor scoring system for evaluating any role"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Direction Statement",
+          "body": "Great careers are built on clarity. Pull together your work from this week into a single Direction Statement that captures where you're heading and why. This becomes your compass for every decision in the weeks ahead.",
+          "bullets": [
+            "Template: \"I'm building toward [vision] because [top value]...\"",
+            "\"...leveraging my [key capital] and testing [prototype]...\"",
+            "\"...while developing [gap to fill] over the next 90 days.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming Next",
+          "body": "Direction without execution is just daydreaming. In Module 2, you'll learn the \"craftsman mindset\" — how to develop rare, valuable skills through deliberate practice, deep work, and strategic stretch projects. You'll turn clarity into daily action.",
+          "stat": "Module 2",
+          "statLabel": "Build Career Capital — starting tomorrow"
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Direction Statement",
+          "body": "Using the template, write your Career Direction Statement in 2–3 sentences. Include: (1) the general direction you're heading, (2) why it matters (values), (3) what capital you're leveraging, and (4) what you'll prototype or develop next. Save this somewhere visible — it's your north star for the rest of this course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four dimensions of the Career Audit?",
+          "type": "mcq",
+          "options": [
+            "Engagement, Impact, Conditions, and Fit",
+            "Salary, Title, Prestige, and Location",
+            "Skills, Knowledge, Connections, and Credentials",
+            "Plan A, Plan B, Plan C, and Plan D"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Career Audit scores your current role across Engagement (absorbing work), Impact (meaningful contribution), Conditions (autonomy/pay/colleagues), and Fit (alignment with your life)."
+        },
+        {
+          "question": "A Direction Statement should include your values, capital, and what you'll prototype next.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A strong Direction Statement combines your vision, the value driving it, the capital you're leveraging, and the concrete next step you'll test."
+        },
+        {
+          "question": "What comes after establishing your career direction in this course?",
+          "type": "mcq",
+          "options": [
+            "Building career capital through deliberate practice and deep work",
+            "Immediately quitting your current job",
+            "Spending more time researching options",
+            "Waiting until you feel 100% certain"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 2 focuses on the \"craftsman mindset\" — turning direction into daily skill-building through deliberate practice, feedback loops, and stretch projects."
+        }
+      ]
+    },
+    {
+      "id": "ca-8-craftsman-mindset",
+      "dayNumber": 8,
+      "moduleId": "ca-module-2",
+      "title": "The Craftsman Mindset",
+      "subtitle": "Stop asking \"what can my career do for me?\" and start asking \"what can I offer that's rare and valuable?\"",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Passion Trap vs. The Craftsman",
+          "body": "The \"passion mindset\" asks: \"What does the world owe me?\" The craftsman mindset asks: \"What can I offer the world that's so good they can't ignore me?\" Research shows the craftsman approach leads to more fulfillment, not less — because mastery creates passion.",
+          "stat": "2×",
+          "statLabel": "more likely to love your work when you focus on skill-building over passion-seeking"
+        },
+        {
+          "type": "content",
+          "headline": "Career Capital Theory",
+          "body": "The things that make a great career — autonomy, creativity, impact, good pay — are rare and valuable. To get rare and valuable things, you need something rare and valuable to offer in return. That \"something\" is career capital.",
+          "bullets": [
+            "Great jobs require rare skills — not just enthusiasm",
+            "Career capital = the leverage you trade for work you love",
+            "The more capital you accumulate, the more control you earn",
+            "Passion follows mastery, not the other way around"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Adopting the Craftsman Mindset",
+          "body": "Craftsmen don't wonder whether they're in the \"right\" craft — they focus relentlessly on getting better. Applied to your career, this means caring less about finding the perfect role and caring more about becoming undeniably good at what you do.",
+          "bullets": [
+            "Output-focused: Judge yourself by the quality of what you produce",
+            "Process-obsessed: Fall in love with the practice, not just results",
+            "Patient: Accept that mastery takes years, not weeks"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When NOT to Apply the Craftsman Mindset",
+          "body": "The craftsman mindset works when you have a reasonable foundation. It doesn't mean tolerating a toxic environment or a role that violates your core values. If your current situation is actively harmful, pivot first — then craft.",
+          "stat": "3 red flags",
+          "statLabel": "toxic culture, values violation, zero growth potential — pivot signals"
+        },
+        {
+          "type": "try-it",
+          "headline": "The Craftsman Shift",
+          "body": "For the next 24 hours, replace every \"passion mindset\" thought with a craftsman question. Instead of \"Am I in the right role?\", ask \"What skill could I develop TODAY that would make me 10% better at what I do?\" Write down one specific skill you'll deliberately practice this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core difference between the passion mindset and the craftsman mindset?",
+          "type": "mcq",
+          "options": [
+            "The craftsman asks \"what rare value can I offer?\" vs. \"what does the world owe me?\"",
+            "The passion mindset is better for long-term success",
+            "The craftsman mindset ignores personal fulfillment entirely",
+            "There is no meaningful difference between them"
+          ],
+          "correctIndex": 0,
+          "explanation": "The craftsman mindset focuses on building rare, valuable skills to offer — which paradoxically leads to more fulfillment than the passion mindset's focus on finding the perfect fit."
+        },
+        {
+          "question": "According to career capital theory, passion typically follows mastery rather than preceding it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that people develop passion for their work after becoming highly skilled — not before. Mastery creates enjoyment and meaning."
+        },
+        {
+          "question": "When should you NOT apply the craftsman mindset?",
+          "type": "mcq",
+          "options": [
+            "When your current role is toxic or violates your core values",
+            "When you feel slightly bored on a Tuesday",
+            "When your colleagues are more experienced than you",
+            "When you haven't been promoted in 6 months"
+          ],
+          "correctIndex": 0,
+          "explanation": "The craftsman mindset assumes a reasonable foundation. If your environment is actively harmful or violates your values, address that first before doubling down on skill-building."
+        }
+      ]
+    },
+    {
+      "id": "ca-9-deliberate-practice",
+      "dayNumber": 9,
+      "moduleId": "ca-module-2",
+      "title": "Deliberate Practice",
+      "subtitle": "The difference between 10 years of experience and 1 year repeated 10 times.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Experience Alone Doesn't Make You Better",
+          "body": "A doctor with 20 years of experience isn't necessarily better than one with 5 — unless those years included deliberate practice. Most professionals plateau early because they stop pushing beyond their comfort zone. Deliberate practice is what separates experts from experienced amateurs.",
+          "stat": "10,000",
+          "statLabel": "hours of deliberate (not just any) practice for world-class performance"
+        },
+        {
+          "type": "content",
+          "headline": "The 4 Elements of Deliberate Practice",
+          "body": "Deliberate practice isn't just \"working hard\" — it's a specific kind of effort designed to push you past your current limits. Without all four elements, you're just going through the motions.",
+          "bullets": [
+            "Stretch: Work at the edge of your current ability — uncomfortable but achievable",
+            "Feedback: Get immediate, honest signals about what's working",
+            "Repetition: Practice the difficult parts specifically, not just the whole",
+            "Reflection: Analyse what went wrong, adjust, then try again"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Deliberate Practice at Work",
+          "body": "Most jobs don't naturally create deliberate practice conditions — you have to engineer them. This means deliberately seeking tasks at the edge of your ability, asking for specific feedback, and spending time on the hard parts instead of coasting on what you already know.",
+          "bullets": [
+            "Volunteer for projects slightly above your level",
+            "After every presentation, ask \"what specifically could I improve?\"",
+            "Identify your weakest sub-skill and drill it for 30 min/week"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Discomfort Principle",
+          "body": "If your practice feels comfortable, you're not growing. Deliberate practice should feel mentally demanding — that strain is the feeling of your neural pathways rewiring. Embrace the discomfort; it's the price of getting better.",
+          "stat": "4%",
+          "statLabel": "beyond your comfort zone — the sweet spot for maximum growth"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your First Deliberate Practice Session",
+          "body": "Pick one professional skill you want to improve. Identify the hardest sub-component (e.g., for presentations, it might be \"handling unexpected questions\"). Design a 20-minute practice session this week: What will you do? How will you get feedback? How will you stretch beyond comfort? Write it down and schedule it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What distinguishes deliberate practice from regular experience?",
+          "type": "mcq",
+          "options": [
+            "Deliberate practice involves stretch, feedback, repetition and reflection",
+            "Deliberate practice means working longer hours",
+            "Regular experience is always better because it's more natural",
+            "Deliberate practice only applies to sports and music"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deliberate practice specifically combines working at the edge of ability (stretch), getting immediate feedback, repeating difficult components, and reflecting on performance."
+        },
+        {
+          "question": "If practice feels comfortable, you are likely not in the deliberate practice zone.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deliberate practice should feel mentally demanding. Comfort means you're operating within your existing ability rather than pushing beyond it."
+        },
+        {
+          "question": "How can you create deliberate practice conditions at work?",
+          "type": "mcq",
+          "options": [
+            "Volunteer for stretch assignments and actively seek specific feedback",
+            "Only do tasks you're already great at",
+            "Work longer hours on easy tasks",
+            "Avoid projects where you might fail"
+          ],
+          "correctIndex": 0,
+          "explanation": "Since most jobs don't naturally create practice conditions, you must engineer them by seeking stretch tasks, requesting specific feedback, and drilling your weakest sub-skills."
+        }
+      ]
+    },
+    {
+      "id": "ca-10-deep-work-rituals",
+      "dayNumber": 10,
+      "moduleId": "ca-module-2",
+      "title": "Deep Work Rituals",
+      "subtitle": "Create the conditions that let you produce your best professional work consistently.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Brain on Shallow Work",
+          "body": "The average professional spends just 2.5 hours per day on truly focused, cognitively demanding work. The rest is meetings, email, Slack, and tasks that feel productive but don't move the needle. Deep work is where career capital is actually built.",
+          "stat": "2.5 hrs",
+          "statLabel": "average daily deep work — top performers achieve 4+ hours"
+        },
+        {
+          "type": "content",
+          "headline": "What Deep Work Actually Looks Like",
+          "body": "Deep work means professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. It's where you produce things that are hard to replicate and create genuine value.",
+          "bullets": [
+            "Writing a strategic proposal that changes your team's direction",
+            "Learning a complex new skill through focused study",
+            "Solving a problem nobody else has cracked",
+            "Creating original work that showcases your unique thinking"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Deep Work Ritual",
+          "body": "Willpower is finite. The best deep workers don't rely on discipline — they build rituals and environments that make deep work the default. Your ritual removes the daily decision of \"should I focus now?\"",
+          "bullets": [
+            "Where: Same location, same setup, every deep work session",
+            "When: Fixed time block (morning is best for most brains)",
+            "How long: Start with 60 min, build to 90-min blocks",
+            "Rules: Phone off, notifications silenced, browser tabs closed"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Deep Work Multiplier",
+          "body": "Deep work doesn't just produce more output — it produces disproportionately better output. Two hours of deep work can produce more career-advancing results than a full day of fragmented attention. It's not about working more; it's about working with full cognitive power.",
+          "stat": "4×",
+          "statLabel": "more valuable output per hour in deep work vs. fragmented attention"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Deep Work Ritual",
+          "body": "Answer these four questions: (1) WHERE will you do deep work? (pick a specific spot) (2) WHEN? (pick a recurring time slot this week) (3) HOW LONG? (start with 60 minutes) (4) WHAT RULES? (list 3 rules: e.g., phone in another room, no email until done). Try your ritual tomorrow morning."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much time does the average professional spend on genuinely deep work per day?",
+          "type": "mcq",
+          "options": [
+            "About 2.5 hours",
+            "About 6 hours",
+            "Less than 30 minutes",
+            "The entire workday"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows the average professional achieves only about 2.5 hours of truly focused, cognitively demanding work per day — top performers push this to 4+ hours."
+        },
+        {
+          "question": "The best deep workers rely primarily on willpower to maintain focus.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Top performers build rituals and environments that make deep work the default — they don't rely on willpower, which is finite and unreliable."
+        },
+        {
+          "question": "What is the recommended starting duration for a deep work session?",
+          "type": "mcq",
+          "options": [
+            "60 minutes, building up to 90-minute blocks",
+            "4 hours minimum to see any benefit",
+            "15 minutes is plenty",
+            "As long as possible without any breaks"
+          ],
+          "correctIndex": 0,
+          "explanation": "Starting with 60 minutes is realistic and sustainable. As the ritual becomes habitual, you can extend to 90-minute blocks, which align with natural cognitive cycles."
+        }
+      ]
+    },
+    {
+      "id": "ca-11-feedback-loops",
+      "dayNumber": 11,
+      "moduleId": "ca-module-2",
+      "title": "Feedback Loops",
+      "subtitle": "Accelerate your growth by building systems that tell you exactly where to improve.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Flying Blind Without Feedback",
+          "body": "Imagine trying to improve your golf swing in the dark — that's what developing your career without feedback looks like. Most professionals get annual reviews at best, leaving 364 days of guessing. The fastest learners create their own feedback loops.",
+          "stat": "270 days",
+          "statLabel": "average gap between formal performance reviews"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Types of Feedback",
+          "body": "Not all feedback is created equal. Understanding the three types helps you seek the right kind at the right time — and avoid the type that feels good but doesn't help you grow.",
+          "bullets": [
+            "Outcome feedback: Did it work? (Results, metrics, customer response)",
+            "Process feedback: How did you do it? (Technique, approach, method)",
+            "Self-generated feedback: What did YOU notice? (Reflection, journaling)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Own Loops",
+          "body": "Don't wait for others to give you feedback — engineer it. The best professionals create tight feedback loops where they can see the impact of their actions within hours or days, not months.",
+          "bullets": [
+            "After every project: Ask one person \"What would have made this better?\"",
+            "Weekly self-review: What worked? What didn't? What will I change?",
+            "Find a \"feedback buddy\" — someone who'll be honest with you",
+            "Track your own metrics: output quality, skills practised, stretches attempted"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Making Feedback Usable",
+          "body": "Raw feedback is overwhelming. The key is to filter it into one actionable insight per cycle. Ask: \"What is the ONE thing I could change next time that would have the biggest impact?\" Then change only that, and measure again.",
+          "stat": "1 thing",
+          "statLabel": "per feedback cycle — the maximum for effective behaviour change"
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Feedback Loop",
+          "body": "Choose one professional skill you're actively developing. Set up three feedback sources: (1) One person you'll ask for specific feedback this week (2) One metric you'll track yourself (3) One weekly reflection question (e.g., \"What stretched me this week?\"). Write these down and commit to checking them every Friday."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the three types of professional feedback?",
+          "type": "mcq",
+          "options": [
+            "Outcome feedback, process feedback, and self-generated feedback",
+            "Positive, negative, and neutral feedback",
+            "Written, verbal, and non-verbal feedback",
+            "Annual reviews, 360 surveys, and peer ratings"
+          ],
+          "correctIndex": 0,
+          "explanation": "Effective growth requires outcome feedback (did it work?), process feedback (how did you do it?), and self-generated feedback (personal reflection on what you noticed)."
+        },
+        {
+          "question": "You should try to implement multiple feedback insights simultaneously for faster growth.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows one actionable insight per feedback cycle is the maximum for effective behaviour change. Multiple changes at once leads to confusion, not acceleration."
+        },
+        {
+          "question": "Why should you create your own feedback loops rather than waiting for formal reviews?",
+          "type": "mcq",
+          "options": [
+            "Formal reviews happen too infrequently — you need tighter cycles to grow fast",
+            "Formal reviews are always inaccurate",
+            "Self-feedback is always more honest",
+            "Managers don't care about your development"
+          ],
+          "correctIndex": 0,
+          "explanation": "With an average gap of 270 days between formal reviews, self-created feedback loops give you the tight, frequent cycles needed for rapid skill development."
+        }
+      ]
+    },
+    {
+      "id": "ca-12-skill-stacking",
+      "dayNumber": 12,
+      "moduleId": "ca-module-2",
+      "title": "Skill Stacking",
+      "subtitle": "Become uniquely valuable by combining skills in ways nobody else can replicate.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You Don't Need to Be the Best at One Thing",
+          "body": "Being world-class at a single skill is extraordinarily rare. But being in the top 20% at two or three complementary skills? That's achievable — and it makes you uniquely valuable because almost nobody else has your specific combination.",
+          "stat": "Top 20%",
+          "statLabel": "in 3 complementary skills = more valuable than top 1% in one skill"
+        },
+        {
+          "type": "content",
+          "headline": "How Skill Stacking Works",
+          "body": "Skill stacking means deliberately combining skills that amplify each other. A developer who can also write clearly is more valuable than a slightly better developer who can't communicate. The intersection of skills creates your unique value proposition.",
+          "bullets": [
+            "Core skill: Your primary professional expertise (what you're paid for)",
+            "Amplifier skill: Something that makes your core skill more impactful",
+            "Differentiator: The unusual addition that makes your stack unique"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding Your Optimal Stack",
+          "body": "The best skill stacks combine things that rarely go together in the same person. Look for combinations where each skill multiplies the value of the others — not skills that overlap heavily or compete for the same niche.",
+          "bullets": [
+            "Technical + Communication = can translate complex ideas for anyone",
+            "Creative + Analytical = can generate ideas AND measure what works",
+            "Domain expertise + Emerging technology = can apply new tools where others can't"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Range Advantage",
+          "body": "David Epstein's research shows that people with diverse skill sets often outperform narrow specialists — especially in uncertain, rapidly changing fields. Your unusual combination of skills lets you see connections others miss.",
+          "stat": "88%",
+          "statLabel": "of breakthrough innovations come from combining ideas across domains"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Skill Stack",
+          "body": "Write down your top professional skill (your Core). Now list 3 skills that would MULTIPLY its value (Amplifiers). Finally, think of one unusual skill or interest that nobody in your field typically has (your Differentiator). Your unique stack = Core + best Amplifier + Differentiator. What one skill will you start developing this month?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes skill stacking more achievable than being world-class at one thing?",
+          "type": "mcq",
+          "options": [
+            "Being top 20% in multiple complementary skills is far more achievable than top 1% in one",
+            "Skill stacking requires no effort",
+            "Everyone already has a perfect skill stack",
+            "World-class specialists are less valuable"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reaching the top 20% in a skill is realistic for most people with deliberate practice. Combining 2–3 skills at that level creates unique value that's extremely hard to replicate."
+        },
+        {
+          "question": "The best skill stacks combine skills that heavily overlap in the same niche.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most valuable stacks combine skills that rarely go together — the more unusual the intersection, the more unique and irreplaceable your value proposition becomes."
+        },
+        {
+          "question": "According to Epstein's research, what advantage do people with diverse skills have?",
+          "type": "mcq",
+          "options": [
+            "They see connections across domains that specialists miss",
+            "They earn more money immediately",
+            "They never need to develop deep expertise",
+            "They can avoid difficult work"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that diverse skill sets enable cross-domain pattern recognition — people with range can combine ideas from different fields to create breakthrough innovations."
+        }
+      ]
+    },
+    {
+      "id": "ca-13-stretch-projects",
+      "dayNumber": 13,
+      "moduleId": "ca-module-2",
+      "title": "Stretch Projects",
+      "subtitle": "Volunteer for the work that scares you slightly — that's where your fastest growth lives.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Projects Nobody Wants Are Your Goldmine",
+          "body": "The work that makes you slightly nervous — the cross-functional initiative, the client presentation, the new system implementation — is precisely where career capital compounds fastest. Most colleagues avoid discomfort; you're going to seek it strategically.",
+          "stat": "70%",
+          "statLabel": "of career development happens through challenging assignments, not training"
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Good Stretch Project",
+          "body": "Not all challenging work builds career capital equally. The best stretch projects sit in a sweet spot: hard enough to develop new skills, visible enough to build your reputation, and aligned with where you want your career to go.",
+          "bullets": [
+            "Skill gap: Requires something you don't yet fully have",
+            "Visibility: Others will see and appreciate the output",
+            "Alignment: Moves you toward your Career Direction Statement",
+            "Manageable risk: Failure won't be catastrophic (growth zone, not panic zone)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to Get Stretch Assignments",
+          "body": "Great stretch projects rarely fall in your lap — you need to actively create or claim them. The key is making it easy for decision-makers to say yes by framing your interest as solving their problem, not serving your development.",
+          "bullets": [
+            "Spot gaps: What needs doing that nobody has claimed?",
+            "Volunteer with specifics: \"I'd like to take on X because I can solve Y\"",
+            "Propose: Write a one-page pitch for the project you want to lead",
+            "Start small: Offer to handle one part of a bigger initiative first"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Stretch Project Flywheel",
+          "body": "Each successful stretch project builds your reputation, which earns you more interesting opportunities, which builds more capital, which opens bigger doors. This is the career accelerator flywheel — and it starts with your next \"yes\" to something hard.",
+          "stat": "3.2×",
+          "statLabel": "faster career progression for people who regularly take stretch assignments"
+        },
+        {
+          "type": "try-it",
+          "headline": "Find Your Next Stretch Project",
+          "body": "Look at your current work environment. Identify one opportunity that: (1) slightly exceeds your current skill level, (2) would be visible to people who matter, and (3) aligns with your direction. Write down specifically what you'd need to learn to succeed at it, and who you'd need to ask. Reach out within 48 hours."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to research, where does 70% of career development actually happen?",
+          "type": "mcq",
+          "options": [
+            "Through challenging on-the-job assignments",
+            "In formal training courses",
+            "From reading business books",
+            "During annual performance reviews"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 70-20-10 model shows that 70% of professional growth comes from challenging work experiences, 20% from relationships, and only 10% from formal training."
+        },
+        {
+          "question": "A good stretch project should be so hard that failure is likely.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Effective stretch projects sit in the \"growth zone\" — hard enough to develop new skills but with manageable risk. The panic zone (likely failure) causes burnout, not growth."
+        },
+        {
+          "question": "What is the best way to frame a request for a stretch assignment?",
+          "type": "mcq",
+          "options": [
+            "Show how it solves a problem for the team, not just benefits your development",
+            "Tell your manager you deserve more challenging work",
+            "Wait until someone offers you something interesting",
+            "Only accept stretch projects if they come with a pay rise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Decision-makers say yes when they see how your involvement solves their problem. Frame your interest in terms of value to the team, and the development opportunity follows naturally."
+        }
+      ]
+    },
+    {
+      "id": "ca-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "ca-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Lock in your skill-building system before we turn your growing capital into career acceleration.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You're Now Building What Others Can't Copy",
+          "body": "Over the last 7 lessons, you've assembled a complete skill-building system: the craftsman mindset, deliberate practice, deep work rituals, feedback loops, skill stacking, and stretch projects. This system compounds — every week you run it, your career capital grows.",
+          "stat": "6 systems",
+          "statLabel": "now working together to build your career capital"
+        },
+        {
+          "type": "content",
+          "headline": "Your Module 2 Toolkit",
+          "body": "Let's consolidate the systems you've built into a weekly routine. Each element feeds the others — deep work creates space for deliberate practice, feedback tells you where to focus, and stretch projects put it all into action.",
+          "bullets": [
+            "Craftsman Mindset: Focus on offering rare value, not finding the perfect role",
+            "Deliberate Practice: Stretch + Feedback + Repetition + Reflection",
+            "Deep Work Rituals: Your fixed where/when/how-long/rules routine",
+            "Feedback Loops: Your 3 sources checked weekly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Weekly Capital-Building Routine",
+          "body": "Systems work when they're habitual. Design a weekly rhythm that ensures you're consistently building capital rather than just going through the motions of your job.",
+          "bullets": [
+            "Monday: Set one deliberate practice goal for the week",
+            "Daily: Deep work ritual (60–90 min in your fixed slot)",
+            "Friday: Weekly feedback check (self-review + one external input)",
+            "Monthly: Identify and pursue one new stretch opportunity"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What's Coming Next",
+          "body": "You've found direction (Module 1) and built a capital-building engine (Module 2). In Module 3, you'll learn to translate that growing capital into visible results: career visibility, strategic networking, and sustainable momentum that keeps you progressing.",
+          "stat": "Module 3",
+          "statLabel": "Accelerate & Sustain — visibility, networks, and momentum"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Weekly Routine",
+          "body": "Block out your calendar right now: (1) When is your daily deep work slot? (2) What day/time is your weekly self-review? (3) Who will you ask for feedback this week? (4) What stretch project will you pursue this month? Schedule all four and set reminders. This routine is now your career accelerator."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended weekly self-review frequency for feedback loops?",
+          "type": "mcq",
+          "options": [
+            "Every Friday — consistent weekly check-in",
+            "Once a month is plenty",
+            "Only when something goes wrong",
+            "After every single task you complete"
+          ],
+          "correctIndex": 0,
+          "explanation": "A weekly Friday self-review creates a tight feedback loop — frequent enough to course-correct quickly but not so frequent that it becomes overwhelming."
+        },
+        {
+          "question": "The craftsman mindset means you should stay in any job regardless of how it makes you feel.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The craftsman mindset means focusing on building rare value in a reasonable environment. It doesn't mean tolerating toxic conditions or roles that violate your core values."
+        },
+        {
+          "question": "What is the main focus of Module 3?",
+          "type": "mcq",
+          "options": [
+            "Turning your growing career capital into visible results and sustainable momentum",
+            "Finding a completely new career direction",
+            "Repeating the same Module 2 exercises again",
+            "Taking a break from skill-building"
+          ],
+          "correctIndex": 0,
+          "explanation": "Module 3 focuses on \"Accelerate & Sustain\" — creating visibility for your skills, building strategic networks, and maintaining the momentum that drives career progression."
+        }
+      ]
+    },
+    {
+      "id": "ca-15-visibility-strategy",
+      "dayNumber": 15,
+      "moduleId": "ca-module-3",
+      "title": "Visibility Strategy",
+      "subtitle": "Being great isn't enough — learn to make your work seen without feeling like a self-promoter.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Meritocracy Myth",
+          "body": "Hard work alone doesn't get you promoted. Research shows that visibility and perception account for a huge portion of career advancement — often more than raw competence. This isn't about bragging; it's about ensuring decision-makers know the value you create.",
+          "stat": "60%",
+          "statLabel": "of promotion decisions are influenced by visibility, not just performance"
+        },
+        {
+          "type": "content",
+          "headline": "The Visibility Spectrum",
+          "body": "Visibility isn't binary — you don't have to choose between being invisible and being the loud self-promoter. There's a spectrum of strategies, and the most effective ones focus on sharing value rather than claiming credit.",
+          "bullets": [
+            "Share learnings: \"Here's what I discovered that might help the team\"",
+            "Document wins: Keep a simple record of outcomes and impact",
+            "Narrate your work: Brief updates that show thinking, not just output",
+            "Teach others: Position yourself as the go-to person for your expertise"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Visibility Habit",
+          "body": "One small, consistent action per week creates compound visibility over time. You don't need grand gestures — you need a reliable rhythm that keeps your contributions top-of-mind for the people who influence your career.",
+          "bullets": [
+            "Send a 3-line Friday update to your manager: done / doing / need",
+            "Share one useful insight in a team channel per week",
+            "Volunteer to present one section of a team meeting monthly",
+            "Write a brief \"lessons learned\" after completing any project"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Brag Document\"",
+          "body": "Keep a running private document of every achievement, positive feedback, and measurable result. When review time comes (or you're asked to justify a raise), you won't need to remember — you'll have evidence. Update it weekly in 2 minutes.",
+          "stat": "2 min",
+          "statLabel": "weekly to maintain — saves hours of stress at review time"
+        },
+        {
+          "type": "try-it",
+          "headline": "Start Your Visibility Routine",
+          "body": "Do two things now: (1) Create a \"Brag Document\" — a simple note with the heading \"My Wins\" and add 3 recent achievements. (2) Choose one weekly visibility habit from today's lesson (Friday update, team share, or presenting). Schedule it recurring. Consistency beats intensity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is visibility important for career advancement beyond just doing good work?",
+          "type": "mcq",
+          "options": [
+            "Decision-makers can't reward value they don't know about",
+            "Visibility is more important than actual competence",
+            "Only self-promoters get ahead",
+            "Hard work always speaks for itself over time"
+          ],
+          "correctIndex": 0,
+          "explanation": "Research shows that up to 60% of promotion decisions are influenced by visibility. If leaders don't know the value you create, they can't reward it — no matter how good your work is."
+        },
+        {
+          "question": "A \"Brag Document\" should only be updated during annual review season.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The brag document should be updated weekly (just 2 minutes). This ensures you capture achievements while they're fresh and have ready evidence when needed."
+        },
+        {
+          "question": "Which visibility strategy focuses on sharing value rather than claiming credit?",
+          "type": "mcq",
+          "options": [
+            "Teaching others and sharing useful learnings with the team",
+            "Taking credit for team successes in public",
+            "Telling everyone how busy you are",
+            "Staying late so managers see you working"
+          ],
+          "correctIndex": 0,
+          "explanation": "The most effective visibility strategies are value-sharing ones — teaching, sharing insights, and documenting learnings. These build your reputation without feeling like self-promotion."
+        }
+      ]
+    },
+    {
+      "id": "ca-16-career-network",
+      "dayNumber": 16,
+      "moduleId": "ca-module-3",
+      "title": "Career Network",
+      "subtitle": "Build the relationships that open doors — without feeling fake or transactional.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Network Is Your Net Worth",
+          "body": "Up to 80% of jobs are filled through networking, not applications. But effective networking isn't about collecting business cards — it's about building genuine relationships with people who can expand your world. Most people network wrong because they only start when they need something.",
+          "stat": "80%",
+          "statLabel": "of roles are filled through network connections, not job boards"
+        },
+        {
+          "type": "content",
+          "headline": "The Give-First Principle",
+          "body": "The most powerful networkers aren't the most extroverted — they're the most generous. Give-first networking means offering value before you need anything. This builds genuine goodwill that compounds over years.",
+          "bullets": [
+            "Make introductions between people who should know each other",
+            "Share relevant articles or opportunities when you think of someone",
+            "Offer your expertise freely when someone has a problem you can solve",
+            "Celebrate others' wins publicly — a simple congratulations goes far"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Weak Ties Are Surprisingly Powerful",
+          "body": "Sociologist Mark Granovetter discovered that career-changing information usually comes from \"weak ties\" — acquaintances, not close friends. Your close friends know the same people and opportunities you do. Weak ties bridge you to entirely new worlds.",
+          "bullets": [
+            "Maintain 5–10 close professional relationships (strong ties)",
+            "Cultivate 30–50 loose connections across different fields (weak ties)",
+            "Reactivate dormant ties: one \"thinking of you\" message per week"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 5-5-5 Networking System",
+          "body": "Consistency beats intensity. Instead of sporadic networking events, build a simple weekly system that maintains and grows your network in just minutes per day.",
+          "stat": "15 min",
+          "statLabel": "per week is enough to maintain a career-changing network"
+        },
+        {
+          "type": "try-it",
+          "headline": "The 5-5-5 Challenge",
+          "body": "This week, send: (1) 5 messages to existing connections — a quick \"how are you?\" or congratulations (2) 5 value-shares — an article, introduction, or idea useful to someone you know (3) Identify 5 people you'd like to know and follow their work. Do all 15 in one 15-minute block."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Granovetter's research, which connections are most likely to provide career-changing opportunities?",
+          "type": "mcq",
+          "options": [
+            "Weak ties — acquaintances who bridge you to new worlds",
+            "Your closest 3–5 friends",
+            "Your direct manager only",
+            "People you've never met before"
+          ],
+          "correctIndex": 0,
+          "explanation": "Granovetter's \"strength of weak ties\" research shows that acquaintances are more likely to provide new information and opportunities because they connect you to different networks than your own."
+        },
+        {
+          "question": "The \"give-first\" principle means only networking when you have something to give.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Give-first means leading with generosity as your default approach — always looking for ways to help others. It doesn't mean waiting until you have something perfect to offer."
+        },
+        {
+          "question": "How much time per week does the 5-5-5 system require to maintain a strong network?",
+          "type": "mcq",
+          "options": [
+            "About 15 minutes",
+            "At least 5 hours",
+            "1 hour per connection",
+            "It requires daily networking events"
+          ],
+          "correctIndex": 0,
+          "explanation": "The 5-5-5 system (5 check-ins, 5 value-shares, 5 people to follow) takes about 15 minutes in a single block — consistency matters more than duration."
+        }
+      ]
+    },
+    {
+      "id": "ca-17-90-day-sprint",
+      "dayNumber": 17,
+      "moduleId": "ca-module-3",
+      "title": "The 90-Day Sprint",
+      "subtitle": "Turn big career goals into focused 90-day sprints that create visible, measurable progress.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Annual Goals Fail",
+          "body": "A year is too long to maintain urgency and too vague to create accountability. 90 days is the sweet spot: short enough to stay focused, long enough to achieve something meaningful. The world's best operators think in quarters, not years.",
+          "stat": "90 days",
+          "statLabel": "the optimal planning horizon for sustained career acceleration"
+        },
+        {
+          "type": "content",
+          "headline": "The 90-Day Sprint Structure",
+          "body": "A career sprint isn't \"work harder for 3 months\" — it's a focused campaign to achieve one specific career outcome. You choose one goal that would meaningfully advance your career, then reverse-engineer the daily actions.",
+          "bullets": [
+            "One clear outcome: What specific result will you have in 90 days?",
+            "Weekly milestones: Break it into 12 checkpoints",
+            "Daily actions: What 30-minute activity moves you forward each day?",
+            "Leading indicators: What metric tells you you're on track?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Choosing Your Sprint Goal",
+          "body": "The best sprint goals sit at the intersection of your Career Direction Statement, your career capital gaps, and what would make you visibly more valuable. They should be specific, measurable, and slightly scary.",
+          "bullets": [
+            "\"Launch a side project that demonstrates my skill stack\" (capital + visibility)",
+            "\"Get promoted to senior level\" (concrete, time-bound)",
+            "\"Build expertise in [specific skill] to top 20%\" (capital building)",
+            "\"Expand my network into [new industry]\" (future optionality)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Weekly Check-in Ritual",
+          "body": "Every Sunday, spend 10 minutes reviewing your sprint progress. This single habit prevents drift and ensures you course-correct before small deviations become major delays. Momentum is built in weekly increments.",
+          "stat": "10 min",
+          "statLabel": "every Sunday — the habit that prevents 90-day drift"
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your First 90-Day Sprint",
+          "body": "Answer these four questions: (1) What one career outcome would most accelerate my progress in 90 days? (2) What are the 3 biggest milestones along the way? (3) What 30-minute daily action drives this forward? (4) How will I know by Week 4 if I'm on track? Write this on one page — your Sprint Manifesto."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are 90-day sprints more effective than annual goals?",
+          "type": "mcq",
+          "options": [
+            "Short enough to maintain urgency, long enough for meaningful progress",
+            "Annual goals are always too ambitious",
+            "90 days is easier because you don't need to work as hard",
+            "Companies always plan in 90-day cycles"
+          ],
+          "correctIndex": 0,
+          "explanation": "90 days hits the sweet spot: you can maintain focus and urgency for 12 weeks, and the timeframe is long enough to achieve a genuinely meaningful career outcome."
+        },
+        {
+          "question": "A 90-day sprint should focus on multiple goals simultaneously for maximum impact.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The power of a sprint comes from singular focus. One clear outcome with daily actions produces far better results than splitting attention across multiple goals."
+        },
+        {
+          "question": "What is the purpose of the weekly check-in ritual?",
+          "type": "mcq",
+          "options": [
+            "To course-correct before small deviations become major delays",
+            "To feel guilty about missed targets",
+            "To change your sprint goal every week",
+            "To report progress to your manager"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Sunday check-in prevents drift. It's a quick course-correction opportunity — not a judgment — that keeps your 90-day focus intact through weekly adjustments."
+        }
+      ]
+    },
+    {
+      "id": "ca-18-opportunity-radar",
+      "dayNumber": 18,
+      "moduleId": "ca-module-3",
+      "title": "Opportunity Radar",
+      "subtitle": "Train yourself to spot the hidden opportunities that others walk right past.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Luck Isn't Random — It's Engineered",
+          "body": "Psychologist Richard Wiseman studied \"lucky\" people for years and found they aren't actually luckier — they're better at noticing and acting on opportunities. You can train your brain to spot what others miss through specific habits and mindset shifts.",
+          "stat": "4×",
+          "statLabel": "more opportunities noticed by people with an active \"opportunity radar\""
+        },
+        {
+          "type": "content",
+          "headline": "The Three Sources of Career Opportunities",
+          "body": "Career-changing moments rarely arrive through job boards. Understanding where real opportunities come from helps you position yourself at the right intersections.",
+          "bullets": [
+            "Created opportunities: Problems you spot and volunteer to solve",
+            "Network opportunities: Introductions, referrals, \"I know someone who...\"",
+            "Trend opportunities: Emerging needs that few people are positioned to fill"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Training Your Radar",
+          "body": "An active opportunity radar requires two things: broad awareness of what's happening around you, and a clear filter for what matters to YOUR direction. Without the filter, you'll be overwhelmed; without awareness, you'll miss what's in front of you.",
+          "bullets": [
+            "Weekly industry scan: 20 min reading about trends in your field",
+            "Problem spotting: Ask \"what frustrates people?\" in every meeting",
+            "Say yes to unexpected invitations (within reason)",
+            "Keep your Direction Statement visible — it's your opportunity filter"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Speed Advantage",
+          "body": "When you spot an opportunity, speed matters more than perfection. Most people overthink and wait too long. The person who moves first with 70% readiness often wins over the person who moves last with 100% readiness.",
+          "stat": "72 hrs",
+          "statLabel": "the window in which most opportunities are claimed — act fast"
+        },
+        {
+          "type": "try-it",
+          "headline": "Activate Your Radar This Week",
+          "body": "Set three triggers: (1) In your next meeting, note one unresolved problem nobody has claimed (2) Spend 20 minutes this week scanning industry news for emerging trends relevant to your skill stack (3) Ask one person in your network \"What's the biggest challenge in your work right now?\" — then consider how your skills might help."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Wiseman's research on luck, \"lucky\" people are primarily:",
+          "type": "mcq",
+          "options": [
+            "Better at noticing and acting on opportunities that exist around them",
+            "Born with a genetic predisposition to good fortune",
+            "Simply in the right place at the right time by coincidence",
+            "More risk-taking than other people"
+          ],
+          "correctIndex": 0,
+          "explanation": "Wiseman's research found that \"lucky\" people aren't randomly fortunate — they have habits and mindsets that make them notice more opportunities and act on them faster."
+        },
+        {
+          "question": "When you spot an opportunity, you should wait until you're 100% ready before acting.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most opportunities are claimed within 72 hours. Moving at 70% readiness usually beats waiting for 100% — speed and willingness to learn matter more than perfection."
+        },
+        {
+          "question": "What are the three sources of career opportunities?",
+          "type": "mcq",
+          "options": [
+            "Created (problems you solve), network (introductions), and trend (emerging needs)",
+            "Job boards, recruiters, and company websites",
+            "Luck, timing, and connections",
+            "Education, experience, and age"
+          ],
+          "correctIndex": 0,
+          "explanation": "Real career opportunities come from problems you spot and solve, connections who refer you, and emerging trends where your skills are newly valuable — rarely from passive job boards."
+        }
+      ]
+    },
+    {
+      "id": "ca-19-momentum-habits",
+      "dayNumber": 19,
+      "moduleId": "ca-module-3",
+      "title": "Momentum Habits",
+      "subtitle": "Build the small daily habits that keep your career progressing even on busy weeks.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most Career Progress Happens Quietly",
+          "body": "The dramatic leap — the big promotion, the career-defining project — is actually the visible tip of months of quiet, consistent habits. People who seem to \"suddenly\" accelerate have been compounding tiny daily actions that others never see.",
+          "stat": "1%",
+          "statLabel": "daily improvement = 37× better over one year (compound effect)"
+        },
+        {
+          "type": "content",
+          "headline": "The Minimum Effective Dose",
+          "body": "Career momentum doesn't require heroic effort every day. It requires a \"minimum effective dose\" — the smallest consistent action that keeps you moving forward. On your worst days, doing the minimum is infinitely better than doing nothing.",
+          "bullets": [
+            "Skill building: 15 min deliberate practice (even on bad days)",
+            "Visibility: One update or share per week",
+            "Networking: One message or introduction per week",
+            "Reflection: 5 min weekly review (what worked? what next?)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Habit Stacking for Career Growth",
+          "body": "The most reliable way to build new habits is to attach them to existing ones. Don't create a separate \"career development time\" — weave micro-habits into what you already do.",
+          "bullets": [
+            "After morning coffee → 15 min deep work on your skill gap",
+            "After every meeting → 30-second note: \"one thing I could improve\"",
+            "After Friday lunch → 5 min brag document update",
+            "After Sunday dinner → 10 min weekly sprint check-in"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Protecting Momentum Through Dips",
+          "body": "Every career trajectory has dips — busy periods, setbacks, low motivation. The key isn't avoiding dips; it's having a \"floor\" that never breaks. Your minimum habits are that floor. Never break the chain completely; shrink it instead.",
+          "stat": "2 days",
+          "statLabel": "maximum gap before a habit loses its momentum — never miss twice"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Momentum Stack",
+          "body": "Choose 3 tiny career habits and attach each to an existing routine: (1) After [existing habit] → I will [career micro-action] for [time]. Start with habits so small they feel almost too easy — that's the point. Track them for 7 days. The goal is a chain you never want to break."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"minimum effective dose\" concept in career momentum?",
+          "type": "mcq",
+          "options": [
+            "The smallest consistent action that keeps you moving forward, even on bad days",
+            "Doing the absolute minimum at your job to avoid being fired",
+            "Working the longest possible hours every day",
+            "Only focusing on career growth during performance review season"
+          ],
+          "correctIndex": 0,
+          "explanation": "The minimum effective dose is your \"floor\" — the smallest action that maintains momentum. On bad days, doing this minimum is infinitely better than breaking your streak entirely."
+        },
+        {
+          "question": "Habit stacking means creating a dedicated separate block of time for all career habits.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Habit stacking means attaching new habits to existing routines (e.g., \"after morning coffee → 15 min practice\"). This leverages existing triggers rather than requiring willpower to start from scratch."
+        },
+        {
+          "question": "What is the \"never miss twice\" rule for protecting momentum?",
+          "type": "mcq",
+          "options": [
+            "If you miss one day, never miss the next — keep the gap to 2 days maximum",
+            "Never miss any habit for any reason",
+            "You can miss as many days as you want and pick up later",
+            "Missing once means you need to start over completely"
+          ],
+          "correctIndex": 0,
+          "explanation": "Everyone misses occasionally. The key is never missing twice in a row — one missed day is a rest; two consecutive misses starts breaking the habit loop."
+        }
+      ]
+    },
+    {
+      "id": "ca-20-resilience-system",
+      "dayNumber": 20,
+      "moduleId": "ca-module-3",
+      "title": "Resilience System",
+      "subtitle": "Build the mental armour that keeps you progressing through setbacks, rejection, and doubt.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every Career Has Setbacks — What Matters Is Your Recovery Speed",
+          "body": "The difference between people who accelerate and people who stall isn't the absence of setbacks — it's recovery speed. Resilient professionals don't avoid rejection, failure, or uncertainty; they process it faster and extract the lesson quicker.",
+          "stat": "5×",
+          "statLabel": "faster recovery from career setbacks for people with a resilience system"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Layers of Career Resilience",
+          "body": "Resilience isn't a personality trait you're born with — it's a system you build. Three layers work together to keep you moving forward when things get hard.",
+          "bullets": [
+            "Cognitive resilience: How you interpret setbacks (story you tell yourself)",
+            "Emotional resilience: How you process difficult feelings (not suppress them)",
+            "Behavioural resilience: What you DO in the first 24 hours after a setback"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Reframing Setbacks",
+          "body": "The story you tell yourself about a setback determines its impact. \"I failed\" is very different from \"that approach didn't work — now I have data.\" Reframing isn't toxic positivity; it's choosing the interpretation that keeps you in motion.",
+          "bullets": [
+            "From \"I'm not good enough\" → \"I need more practice in this specific area\"",
+            "From \"I was rejected\" → \"That wasn't the right fit — what is?\"",
+            "From \"I wasted time\" → \"I now know one path that doesn't work for me\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The 24-Hour Recovery Protocol",
+          "body": "When a career setback hits, your first 24 hours determine whether you spiral or recover. Having a pre-planned protocol means you don't need to think clearly in the moment — you just follow the steps.",
+          "stat": "24 hrs",
+          "statLabel": "is all you need to shift from reaction to strategic response"
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your Recovery Protocol",
+          "body": "Write a personal 24-hour protocol for career setbacks: Hour 0–4: Name the emotion, talk to one trusted person. Hour 4–12: Physical movement + good sleep (no decisions yet). Hour 12–24: Write down \"What specifically went wrong?\" and \"What's the ONE lesson I'll take forward?\" Then identify your next small action."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What distinguishes resilient professionals from those who stall after setbacks?",
+          "type": "mcq",
+          "options": [
+            "Recovery speed — they process setbacks faster and extract lessons quicker",
+            "They never experience setbacks in the first place",
+            "They ignore negative emotions completely",
+            "They always have backup plans that prevent failure"
+          ],
+          "correctIndex": 0,
+          "explanation": "Resilience isn't about avoiding setbacks — it's about recovery speed. Resilient people feel the same disappointment but process it faster and return to productive action sooner."
+        },
+        {
+          "question": "Reframing setbacks means pretending they didn't happen or weren't painful.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reframing isn't toxic positivity or denial. It's acknowledging what happened while choosing an interpretation that keeps you in motion — e.g., \"that approach didn't work\" vs. \"I'm a failure.\""
+        },
+        {
+          "question": "What should you avoid during the first 4 hours after a major career setback?",
+          "type": "mcq",
+          "options": [
+            "Making major decisions — focus on naming the emotion and talking to someone",
+            "Talking to anyone about it",
+            "Feeling any negative emotions",
+            "Thinking about what happened at all"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first hours after a setback are emotionally charged. The protocol recommends naming your feelings and connecting with a trusted person — but delaying major decisions until you've had time to process."
+        }
+      ]
+    },
+    {
+      "id": "ca-21-course-finale",
+      "dayNumber": 21,
+      "moduleId": "ca-module-3",
+      "title": "Course Finale",
+      "subtitle": "Bring it all together — your career acceleration system is complete.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You've Built Something Most People Never Will",
+          "body": "Over 21 days, you've assembled a complete career acceleration system: direction, capital-building, visibility, networking, sprint planning, and resilience. This isn't a one-time course — it's an operating system you'll run for the rest of your career.",
+          "stat": "21 days",
+          "statLabel": "3 modules, 15+ frameworks, 1 complete career acceleration system"
+        },
+        {
+          "type": "content",
+          "headline": "Your Complete System",
+          "body": "Let's see the full picture. Each module built on the last, creating an integrated system where direction guides capital-building, capital creates opportunities, and momentum sustains the whole machine.",
+          "bullets": [
+            "Module 1 — Direction: Values, capital inventory, fit, prototypes, decisions",
+            "Module 2 — Capital: Craftsman mindset, deliberate practice, deep work, skill stacking",
+            "Module 3 — Acceleration: Visibility, networks, sprints, opportunities, momentum, resilience"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Ongoing Rhythm",
+          "body": "Systems only work if you keep running them. Here's your sustainable career rhythm going forward — not overwhelming, just consistent.",
+          "bullets": [
+            "Daily: Deep work ritual (60–90 min) + one momentum micro-habit",
+            "Weekly: Friday brag doc update + one network action + self-review",
+            "Monthly: One stretch project + sprint milestone check",
+            "Quarterly: New 90-day sprint goal + career capital reassessment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Compound Effect",
+          "body": "If you follow this system consistently, here's what happens: In 90 days, you'll have noticeably more skills, visibility, and confidence. In 6 months, people will remark on your growth. In 12 months, you'll be operating at a level that feels unrecognisable from today.",
+          "stat": "12 months",
+          "statLabel": "of consistent system execution = a transformed career trajectory"
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Career Acceleration Commitment",
+          "body": "Write your commitment statement: \"For the next 90 days, I will: (1) Run my deep work ritual [X times/week] (2) Complete my weekly visibility + network actions (3) Pursue [specific sprint goal] (4) Review and adjust every Sunday.\" Then share it with one person who'll hold you accountable."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended quarterly action in the career acceleration system?",
+          "type": "mcq",
+          "options": [
+            "Set a new 90-day sprint goal and reassess your career capital",
+            "Take a complete break from career development",
+            "Change your career direction entirely",
+            "Only review what went wrong"
+          ],
+          "correctIndex": 0,
+          "explanation": "Each quarter, you set a new sprint goal (building on the last) and reassess your career capital to see what's grown and where to invest next. This keeps the system evolving with you."
+        },
+        {
+          "question": "The career acceleration system requires daily effort of several hours to be effective.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The daily requirement is just 60–90 minutes of deep work plus one micro-habit. The system is designed to be sustainable — consistency over intensity is the core principle."
+        },
+        {
+          "question": "According to the compound effect principle, when should you expect noticeable results?",
+          "type": "mcq",
+          "options": [
+            "Around 90 days of consistent system execution",
+            "Within the first week",
+            "Only after several years",
+            "Results are random and unpredictable"
+          ],
+          "correctIndex": 0,
+          "explanation": "With consistent execution, noticeable improvements in skills, visibility, and confidence appear within 90 days. By 12 months, the compound effect creates a genuinely transformed trajectory."
+        }
+      ]
+    }
+  ]
+}

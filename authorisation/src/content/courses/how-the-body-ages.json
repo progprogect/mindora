@@ -1,0 +1,2018 @@
+{
+  "id": "how-the-body-ages",
+  "title": "How the Body Ages",
+  "subtitle": "Understand what is really happening inside your body as you age — explained in plain language, with practical steps you can take.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "hba-module-1",
+      "moduleNumber": 1,
+      "title": "The Basics of Ageing",
+      "subtitle": "Understand what ageing really is, why it happens, and how your body fights back every single day with built-in repair systems.",
+      "days": "Lessons 1–7",
+      "skill": "Explain how ageing works at a basic level and distinguish between what you can and cannot control",
+      "lessonIds": [
+        "hba-1-what-is-ageing",
+        "hba-2-why-we-age",
+        "hba-3-repair-systems",
+        "hba-4-when-repairs-fall-behind",
+        "hba-5-genetics-vs-lifestyle",
+        "hba-6-hallmarks-of-ageing",
+        "hba-7-biological-vs-chronological-age"
+      ]
+    },
+    {
+      "id": "hba-module-2",
+      "moduleNumber": 2,
+      "title": "The Key Processes",
+      "subtitle": "Explore the main biological mechanisms that drive ageing — from inflammation and mitochondria to zombie cells and muscle loss.",
+      "days": "Lessons 8–14",
+      "skill": "Identify the key biological processes of ageing and understand how lifestyle choices influence each one",
+      "lessonIds": [
+        "hba-8-inflammation",
+        "hba-9-mitochondria",
+        "hba-10-telomeres",
+        "hba-11-autophagy",
+        "hba-12-cellular-senescence",
+        "hba-13-muscle-loss",
+        "hba-14-immune-system-changes"
+      ]
+    },
+    {
+      "id": "hba-module-3",
+      "moduleNumber": 3,
+      "title": "Protecting Your Future Self",
+      "subtitle": "Learn how ageing affects your brain, heart, bones and gut — plus what accelerates it and what slows it down.",
+      "days": "Lessons 15–21",
+      "skill": "Build a practical understanding of how to protect your key systems and slow the pace of biological ageing",
+      "lessonIds": [
+        "hba-15-how-the-brain-ages",
+        "hba-16-heart-and-blood-vessels",
+        "hba-17-bones-joints-mobility",
+        "hba-18-hormonal-shifts",
+        "hba-19-gut-and-ageing",
+        "hba-20-what-accelerates-ageing",
+        "hba-21-anti-ageing-action-plan"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hba-1-what-is-ageing",
+      "dayNumber": 1,
+      "moduleId": "hba-module-1",
+      "title": "What Is Ageing, Really?",
+      "subtitle": "Ageing is not just getting older. It is a biological process — and understanding it is the first step to influencing it.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Everyone Ages. Not Everyone Ages the Same Way.",
+          "body": "Two people can be born in the same year and yet look, feel and function very differently at 60 or 70. One is energetic, sharp and independent. The other is managing several health conditions and struggling with everyday tasks. Ageing is not simply the passage of time. It is a biological process that can be influenced — more than most people realise.",
+          "stat": "20+ years",
+          "statLabel": "Typical difference in biological age between people born the same year (Levine et al., 2018)"
+        },
+        {
+          "type": "content",
+          "headline": "Ageing Is Gradual Biological Change",
+          "body": "At its core, ageing is the gradual accumulation of damage and change in cells, tissues and organs. Over decades, the body becomes less efficient at repairing itself, clearing out faulty cells, and maintaining the systems it needs to function well. The result is a slow increase in the risk of disease, reduced physical capacity, and eventually, the loss of independence.",
+          "bullets": [
+            "Ageing happens at the cellular level — in every tissue in the body",
+            "It is a gradual process that begins in early adulthood",
+            "It affects different people at very different rates",
+            "Much of it is influenced by lifestyle, not just genetics"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Two Clocks — Chronological and Biological",
+          "body": "Your chronological age is simply how many years you have been alive. Your biological age is a measure of how old your body actually functions — and the two are not always the same. Research using tools like epigenetic clocks (which measure chemical changes to DNA) shows that biological age can be years younger or older than chronological age, depending on your health choices, environment and genetics.",
+          "callout": "Key insight: Biological age is not fixed. Studies show it can be reversed by months or years through consistent lifestyle changes — without any drugs or extreme interventions."
+        },
+        {
+          "type": "content",
+          "headline": "Why Understanding Ageing Matters",
+          "body": "For most of human history, people treated ageing as inevitable and uncontrollable. Modern science has changed that. We now understand the specific biological mechanisms that drive ageing — and many of them respond to how you eat, move, sleep, manage stress and connect with others. You cannot stop ageing. But you can significantly influence how quickly it progresses and how well you feel along the way.",
+          "bullets": [
+            "Ageing is not one single process — it has many interconnected causes",
+            "Each mechanism offers potential points of intervention",
+            "Small consistent choices have a compounding effect over decades",
+            "Starting earlier helps, but it is never too late to make a meaningful difference"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Ageing is a biological process driven by gradual cellular change — not simply the passing of years. Your biological age can differ significantly from your chronological age, and lifestyle choices influence both how fast you age and how well you feel. Understanding the mechanisms of ageing gives you real leverage to protect your future health.",
+          "bullets": [
+            "Ageing is gradual damage accumulation in cells and tissues",
+            "Biological age and chronological age are different — and biological age is modifiable",
+            "Multiple lifestyle factors influence the pace of biological ageing",
+            "This course will explain each key mechanism in plain language"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the difference between chronological age and biological age?",
+          "type": "multiple-choice",
+          "options": [
+            "Chronological age measures health; biological age measures years lived",
+            "Chronological age is years lived; biological age reflects how well the body is actually functioning",
+            "They mean the same thing but are measured differently",
+            "Biological age only applies to people over 50"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chronological age is simply how many years you have been alive. Biological age reflects how well your body is actually functioning at a cellular level. The two can differ by many years depending on genetics, lifestyle and environment."
+        },
+        {
+          "question": "True or false: Biological age is fixed and cannot be changed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research shows that biological age is modifiable. Consistent lifestyle changes — including better sleep, regular exercise, improved nutrition and stress management — have been shown to reduce biological age markers by months or even years."
+        },
+        {
+          "question": "Which of the following best describes what ageing is at a biological level?",
+          "type": "multiple-choice",
+          "options": [
+            "The body producing fewer hormones after 40",
+            "A gradual accumulation of damage in cells and tissues that reduces the body's ability to repair and function",
+            "A genetic programme that switches on at a set age",
+            "A process that only begins in the final decade of life"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ageing is best understood as the gradual accumulation of damage and dysfunction in cells and tissues. Over time, this reduces the body's ability to maintain, repair and regulate itself — increasing the risk of disease and loss of function."
+        }
+      ]
+    },
+    {
+      "id": "hba-2-why-we-age",
+      "dayNumber": 2,
+      "moduleId": "hba-module-1",
+      "title": "Why We Age — The Big Picture",
+      "subtitle": "Scientists have been asking this question for centuries. Here is what they have found — in plain English.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Does the Body Not Just Keep Repairing Itself?",
+          "body": "Your body is remarkably good at fixing damage. It heals cuts, fights infections, and replaces billions of cells every day. So why does ageing happen at all? Why does the repair system eventually fall behind? The answer lies in a combination of evolutionary biology, accumulated cellular damage, and the limits of biological maintenance — and understanding it helps explain what we can realistically do about it.",
+          "stat": "330 billion",
+          "statLabel": "Cells replaced by the human body every day (Sender & Milo, 2021)"
+        },
+        {
+          "type": "content",
+          "headline": "Evolution Did Not Design Us to Live Forever",
+          "body": "From an evolutionary standpoint, the body is built to survive long enough to reproduce and raise offspring — not to last indefinitely. Natural selection had little pressure to maintain perfect health beyond reproductive age. This means the body's repair systems are effective but not perfect, and they were never optimised for extreme longevity. The same genes that help us survive early in life can cause problems later on — a concept called antagonistic pleiotropy.",
+          "callout": "Key insight: Ageing is not a design flaw. It is the result of a biological system optimised for reproduction and early survival — not for living to 100 in perfect health."
+        },
+        {
+          "type": "content",
+          "headline": "Two Main Theories — Damage Accumulation and Programmed Ageing",
+          "body": "Most scientists explain ageing through two broad frameworks. The damage accumulation theory says ageing happens because cells and DNA gradually collect errors and damage that the body cannot fully repair. The programmed ageing theory suggests some aspects of ageing are regulated by biological programmes — like the shortening of telomeres or hormonal changes at certain life stages. In reality, both are probably happening simultaneously.",
+          "bullets": [
+            "Damage accumulation: errors build up in DNA, proteins and cellular components",
+            "Programmed changes: biological shifts happen at set life stages (puberty, menopause, etc.)",
+            "Both processes interact with each other",
+            "Neither is fully in our control — but lifestyle influences both"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Maintenance Trade-Off",
+          "body": "The body constantly makes trade-offs. Energy used for growth, reproduction or fighting infection is energy not used for deep cellular repair. When you are young and healthy, the body prioritises growth and resilience. As you age, the cumulative cost of these trade-offs starts to show. Think of it like a car that is well maintained but gradually accumulates small faults. With enough care, you can keep it running well for far longer than average.",
+          "bullets": [
+            "Energy is always being allocated between competing biological needs",
+            "Repair systems slow down as damage accumulates over decades",
+            "Lifestyle choices directly influence how much maintenance the body can do",
+            "Better nutrition, sleep and movement all support cellular repair capacity"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Ageing happens because evolution optimised us for reproduction, not longevity — and because the body's repair systems, while impressive, are not perfect. Damage gradually accumulates in cells and DNA, while some biological changes are programmed across the lifespan. The good news: lifestyle powerfully influences both the rate of damage accumulation and the capacity for repair.",
+          "bullets": [
+            "Ageing is the result of gradual damage that outpaces repair",
+            "Evolution built us to survive and reproduce — not to last indefinitely",
+            "Two main frameworks: damage accumulation and programmed biological changes",
+            "Lifestyle choices meaningfully influence how quickly both processes occur"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did evolution not programme us to live in perfect health indefinitely?",
+          "type": "multiple-choice",
+          "options": [
+            "Because long life was considered dangerous in ancient times",
+            "Because natural selection has little pressure to maintain health beyond reproductive age",
+            "Because the human brain cannot cope with extreme longevity",
+            "Because nutrients were too scarce for long-term cellular maintenance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Natural selection optimises for survival and reproduction. Once an individual has reproduced and raised offspring, there is little evolutionary pressure to maintain perfect health. This is why the body's repair systems are effective but not optimised for extreme longevity."
+        },
+        {
+          "question": "What does \"antagonistic pleiotropy\" mean in the context of ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Genes that help survival early in life can cause problems later on",
+            "The body repairs damage more effectively as it ages",
+            "Different species age at the same rate",
+            "Stress always accelerates biological ageing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Antagonistic pleiotropy describes how the same genes that benefit us early in life (for example by boosting growth or reproduction) can have harmful effects later on, contributing to age-related disease and decline."
+        },
+        {
+          "question": "True or false: Scientists believe ageing is caused by either damage accumulation OR programmed biological changes — but not both.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Most scientists believe both processes are happening simultaneously. Damage accumulates in cells and DNA over decades, while some biological changes (like telomere shortening and hormonal shifts) appear to be partially programmed. The two processes interact with each other."
+        }
+      ]
+    },
+    {
+      "id": "hba-3-repair-systems",
+      "dayNumber": 3,
+      "moduleId": "hba-module-1",
+      "title": "Your Body's Built-In Repair Systems",
+      "subtitle": "The body has extraordinary tools for maintaining itself. Understanding them shows you exactly where lifestyle matters most.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Body Is Repairing Itself Right Now",
+          "body": "As you read this, your body is doing something remarkable. It is patching damaged DNA, clearing out faulty proteins, recycling worn cellular components, and replacing old cells with new ones. These repair systems run silently in the background, every hour of every day. They are the reason most people reach 40, 50, or 60 in reasonable health — and understanding them reveals exactly why certain habits are so powerful.",
+          "stat": "2 metres",
+          "statLabel": "Length of DNA in every human cell — checked and repaired constantly by dedicated molecular systems"
+        },
+        {
+          "type": "content",
+          "headline": "DNA Repair — Fixing the Blueprint",
+          "body": "Every cell contains your complete DNA — a two-metre-long instruction manual tightly coiled inside a nucleus. DNA is damaged tens of thousands of times per day by normal metabolic processes, sunlight, chemicals and copying errors. Your body has over 150 specialised proteins dedicated to detecting and fixing these breaks before they cause problems. When repair fails or cannot keep up, mutations can accumulate — which is a key driver of ageing and cancer risk.",
+          "bullets": [
+            "DNA is damaged tens of thousands of times per day in each cell",
+            "The body has multiple overlapping repair pathways for different types of damage",
+            "Exercise, sleep and antioxidants from food all support DNA repair capacity",
+            "Smoking, alcohol and chronic stress accelerate DNA damage beyond repair capacity"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Autophagy — The Cellular Recycling System",
+          "body": "Autophagy means \"self-eating\" in Greek — and it is exactly what it sounds like. Cells have a system that identifies damaged proteins, broken organelles and cellular debris, wraps them up, and either recycles them for parts or destroys them. This keeps cells clean and functional. When autophagy works well, cells stay healthy longer. When it slows down (as it does with age), damaged material accumulates — linked to Alzheimer's, Parkinson's and other age-related conditions.",
+          "callout": "Key insight: Autophagy can be stimulated by exercise, caloric restriction, and quality sleep — three of the most well-supported health behaviours in longevity science."
+        },
+        {
+          "type": "content",
+          "headline": "Cellular Turnover — Out With the Old",
+          "body": "Most cells in the body are regularly replaced. Skin cells last about 2–3 weeks. Red blood cells last around 120 days. Gut lining cells are replaced every 4–5 days. Even bone is constantly being broken down and rebuilt. This continual renewal keeps tissues functional. But the stem cells that drive this renewal also age — and as they do, they produce fewer new cells, or lower-quality replacements. This slowing of cellular renewal is a major contributor to age-related decline.",
+          "bullets": [
+            "Different cell types are replaced at different rates",
+            "Stem cells manage cellular renewal — and they age too",
+            "Physical activity helps maintain stem cell function in muscle and other tissues",
+            "Sleep is critical for cellular maintenance and repair"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "The body has powerful built-in repair systems — DNA repair, autophagy, and cellular turnover — that run continuously to maintain health. These systems are highly effective when supported by the right conditions: regular movement, quality sleep, good nutrition and low chronic stress. As we age, these repair systems slow down, but lifestyle choices significantly influence how quickly that happens.",
+          "bullets": [
+            "DNA is repaired tens of thousands of times per day by dedicated molecular systems",
+            "Autophagy clears cellular debris — stimulated by exercise, sleep and periodic fasting",
+            "Most tissues regularly replace old cells with new ones via stem cell activity",
+            "Sleep, movement and nutrition are the three biggest supporters of all repair systems"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Approximately how many times is DNA damaged per cell per day?",
+          "type": "multiple-choice",
+          "options": [
+            "Around 100 times",
+            "Around 1,000 times",
+            "Tens of thousands of times",
+            "Only a few times a year"
+          ],
+          "correctIndex": 2,
+          "explanation": "DNA is damaged tens of thousands of times per day in each cell due to normal metabolic processes, sunlight, chemicals and copying errors. The body has over 150 specialised proteins dedicated to detecting and repairing this damage before it causes problems."
+        },
+        {
+          "question": "What does autophagy do?",
+          "type": "multiple-choice",
+          "options": [
+            "It produces new DNA to replace damaged strands",
+            "It identifies and recycles or destroys damaged proteins and cellular components",
+            "It regulates the immune system's response to infection",
+            "It controls the rate at which cells divide"
+          ],
+          "correctIndex": 1,
+          "explanation": "Autophagy (from the Greek for \"self-eating\") is the cellular recycling system. It identifies damaged proteins, broken organelles and cellular debris, then either recycles them for parts or destroys them. It is stimulated by exercise, sleep and caloric restriction."
+        },
+        {
+          "question": "True or false: The best-known stimulators of autophagy include exercise, quality sleep and periodic caloric restriction.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Exercise, quality sleep and caloric restriction (or time-restricted eating) are among the best-evidenced ways to stimulate autophagy. This is one of the mechanisms through which these habits support long-term health — beyond their other well-known benefits."
+        }
+      ]
+    },
+    {
+      "id": "hba-4-when-repairs-fall-behind",
+      "dayNumber": 4,
+      "moduleId": "hba-module-1",
+      "title": "When Repairs Start Falling Behind",
+      "subtitle": "Ageing is not a sudden switch. It is what happens when damage gradually outpaces the body's ability to keep up.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Balance Shifts Gradually",
+          "body": "In your 20s and 30s, your body's repair systems are working at close to full capacity. Damage happens, but repairs generally keep up. By your 40s and 50s, the balance begins to shift. Damage is still accumulating — but repair is becoming slightly less efficient. By your 60s and 70s, the gap has grown larger. This is not a sudden failure — it is a gradual tipping of the scales that unfolds over decades.",
+          "stat": "1% per year",
+          "statLabel": "Average decline in muscle mass after age 30 without regular strength training (Cruz-Jentoft et al., 2019)"
+        },
+        {
+          "type": "content",
+          "headline": "The Accumulation Model — Small Deficits That Add Up",
+          "body": "Think of your body's repair capacity like a savings account. When you are young, you are saving more than you spend. In middle age, income and spending become closer to balanced. Later in life, you begin drawing down the balance. The key insight is that every choice that supports repair (sleep, movement, nutrition) adds to the account, and every choice that accelerates damage (smoking, chronic stress, poor diet) withdraws from it. The balance builds over decades.",
+          "callout": "Key insight: Ageing is not determined by any single moment or decision. It is the compound result of thousands of small daily choices made across your entire adult life."
+        },
+        {
+          "type": "content",
+          "headline": "What Starts to Change — And When",
+          "body": "Most people are surprised to learn that measurable biological ageing begins in the 20s and 30s — long before outward signs appear. Bone density peaks at around 30. Muscle mass begins to decline slowly from the mid-30s. Cardiovascular efficiency starts to reduce gradually. The brain begins subtle changes too. These changes are so slow that most people do not notice them until decades later — but starting good habits early compounds their benefit enormously.",
+          "bullets": [
+            "Bone density peaks around age 30 and declines slowly thereafter",
+            "Muscle mass starts declining from the mid-30s without strength training",
+            "Cardiovascular efficiency begins slow decline from the 30s",
+            "Cognitive changes are measurable from the 40s — though rarely noticeable until later"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Accelerators — What Speeds Up the Decline",
+          "body": "Not all ageing is equal. Certain factors dramatically accelerate the pace at which repairs fall behind. Chronic stress keeps the body in a constant state of low-level alert, consuming energy that would otherwise go to maintenance. Poor sleep reduces the body's ability to repair DNA and clear cellular waste. Sedentary behaviour allows muscle and cardiovascular fitness to decline faster. Ultra-processed foods generate more metabolic waste than whole foods.",
+          "bullets": [
+            "Chronic stress: diverts energy from repair into constant alert mode",
+            "Poor sleep: reduces DNA repair, autophagy and hormonal recovery",
+            "Sedentary behaviour: accelerates muscle and cardiovascular decline",
+            "Ultra-processed diet: generates excess metabolic waste and inflammation",
+            "Smoking: one of the most potent accelerators of biological ageing"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Ageing is a gradual shift — damage accumulating slightly faster than the body can repair it, compounding over decades. Measurable biological changes begin as early as the 30s, though they often do not become apparent until much later. Lifestyle choices that support repair (sleep, movement, nutrition) act like deposits in a health account — while accelerators like smoking, chronic stress and poor sleep make withdrawals.",
+          "bullets": [
+            "Repair capacity gradually declines from the 30s onward",
+            "Bone density, muscle mass and cardiovascular fitness begin slow decline in middle age",
+            "Chronic stress, poor sleep and sedentary behaviour are the biggest accelerators",
+            "Every health-supporting choice adds to the body's long-term repair capacity"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When do measurable biological changes associated with ageing typically begin?",
+          "type": "multiple-choice",
+          "options": [
+            "Only after age 60",
+            "In the 20s and 30s — long before outward signs appear",
+            "At different points for each person — between 50 and 70",
+            "In the final decade of life"
+          ],
+          "correctIndex": 1,
+          "explanation": "Measurable biological ageing begins in the 20s and 30s, including gradual declines in bone density, muscle mass and cardiovascular efficiency. Outward signs often do not appear until decades later — which is why building good habits early has such a significant compounding effect."
+        },
+        {
+          "question": "Which of the following is NOT listed as a major accelerator of biological ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Chronic stress",
+            "Regular moderate exercise",
+            "Poor sleep",
+            "Smoking"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regular moderate exercise is a protective factor against biological ageing — not an accelerator. It supports DNA repair, stimulates autophagy, maintains muscle mass and cardiovascular fitness, and improves sleep quality. Chronic stress, poor sleep and smoking are all major accelerators."
+        },
+        {
+          "question": "True or false: Bone density peaks around age 30 and begins to decline slowly after that.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Bone density peaks at approximately age 30. After that, it begins a slow gradual decline. This is why activities that build and maintain bone density — including strength training, weight-bearing exercise and adequate calcium and vitamin D intake — are most effective when started early and maintained consistently."
+        }
+      ]
+    },
+    {
+      "id": "hba-5-genetics-vs-lifestyle",
+      "dayNumber": 5,
+      "moduleId": "hba-module-1",
+      "title": "Genetics vs Lifestyle — What You Can Control",
+      "subtitle": "You cannot change your genes — but they may have less influence over your health than you think.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"It Runs in My Family\" — How Much Does That Actually Matter?",
+          "body": "Many people assume their health destiny is largely written in their DNA. If a parent had heart disease, they expect to get it. If a grandparent had dementia, they fear the same. But decades of research now show a more nuanced picture. For most common chronic diseases, lifestyle accounts for a larger share of risk than genetics — often far larger. Understanding what you can and cannot control is one of the most important shifts in health thinking.",
+          "stat": "25%",
+          "statLabel": "Estimated contribution of genetics to longevity in most studies — lifestyle and environment account for the rest (Hjelmborg et al., 2006)"
+        },
+        {
+          "type": "content",
+          "headline": "Genes Set the Playing Field — Lifestyle Plays the Game",
+          "body": "Think of your genes as the playing field for a football match. They determine whether the pitch is flat or hilly, wet or dry. But the outcome of the match still depends on the players, the tactics and how hard everyone works. Your genes influence things like your baseline inflammation levels, how efficiently you metabolise certain foods, and your predisposition to certain conditions. But your daily choices determine how much of that predisposition actually translates into disease.",
+          "callout": "Key insight: Most large studies find that lifestyle factors — exercise, diet, sleep and not smoking — reduce the risk of major chronic diseases by 50–80%, even in people with high genetic risk."
+        },
+        {
+          "type": "content",
+          "headline": "Epigenetics — How Lifestyle Talks to Your Genes",
+          "body": "Epigenetics is the study of how your behaviour and environment influence which genes are switched on or off. Your DNA sequence does not change — but layers of chemical markers control whether certain genes are active or silent. Regular exercise switches on genes linked to cellular repair and switches off genes linked to inflammation. Poor sleep can do the reverse. This means lifestyle choices are not just complementary to your genetics — they are actively reshaping how your genes express themselves every day.",
+          "bullets": [
+            "Epigenetic changes are reversible — habits shift gene expression within weeks to months",
+            "Exercise activates genes associated with longevity and cellular repair",
+            "Chronic stress and poor diet activate pro-inflammatory gene pathways",
+            "Healthy lifestyle patterns can counteract many high-risk genetic variants"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Genes Actually Determine",
+          "body": "Genetics does matter. Certain conditions like Huntington's disease are almost entirely determined by a single gene mutation. Some people have variants that significantly raise their risk of early heart disease or Alzheimer's (like APOE4). Genetics also influences height, baseline metabolic rate, and susceptibility to addiction. But for the vast majority of common conditions — including type 2 diabetes, cardiovascular disease, many cancers, and most cognitive decline — the genetic contribution is one factor among many, not a sentence.",
+          "bullets": [
+            "Single-gene disorders (like Huntington's) are largely determined by genetics",
+            "APOE4 raises Alzheimer's risk but does not make it inevitable",
+            "Most common chronic diseases are multifactorial — genetics is just one input",
+            "Genetic testing can inform risk — but should not be treated as a fixed destiny"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Genetics accounts for roughly 25% of longevity in most studies — lifestyle, environment and behaviour account for the rest. Epigenetics shows that your daily habits actively shape how your genes express themselves. For the majority of common chronic diseases, lifestyle choices have a far larger influence on your actual risk than your DNA alone.",
+          "bullets": [
+            "Genetics contributes roughly 25% to longevity — the rest is lifestyle and environment",
+            "Epigenetics means your habits actively switch genes on and off",
+            "Exercise, sleep and nutrition can reduce chronic disease risk by 50–80% even with high genetic risk",
+            "Genes set the playing field — your choices determine the outcome"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Approximately what proportion of longevity do most large studies attribute to genetics?",
+          "type": "multiple-choice",
+          "options": [
+            "Around 75%",
+            "Around 50%",
+            "Around 25%",
+            "Around 5%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Most twin studies and large population studies estimate that genetics accounts for roughly 25% of longevity. The remaining 75% is influenced by lifestyle, environment, behaviour and chance. This means the choices you make every day have a far greater impact on how long and how well you live than your DNA alone."
+        },
+        {
+          "question": "What does epigenetics study?",
+          "type": "multiple-choice",
+          "options": [
+            "How to sequence and read the human genome",
+            "How behaviour and environment influence which genes are switched on or off",
+            "The relationship between different species' DNA",
+            "How mutations are passed between generations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Epigenetics studies how behaviour and environment influence gene expression — specifically which genes are switched on or off — without changing the underlying DNA sequence. Regular exercise, good sleep and healthy nutrition can all shift gene expression patterns toward better health outcomes."
+        },
+        {
+          "question": "True or false: Having a high genetic risk for a chronic disease like type 2 diabetes makes it almost certain you will develop it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. For most common chronic diseases, genetic risk is one factor among many. Large studies show that people with high genetic risk for conditions like type 2 diabetes can reduce their actual risk by 50% or more through consistent lifestyle changes. Genetics influences probability — it does not determine destiny."
+        }
+      ]
+    },
+    {
+      "id": "hba-6-hallmarks-of-ageing",
+      "dayNumber": 6,
+      "moduleId": "hba-module-1",
+      "title": "The Hallmarks of Ageing (Simplified)",
+      "subtitle": "Scientists have identified the specific biological processes that drive ageing. Here is what they are — without the jargon.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Landmark Moment in Ageing Science",
+          "body": "In 2013, a group of scientists published a landmark paper identifying the key biological processes that drive ageing across different species. They called them the Hallmarks of Ageing. Updated in 2023, this framework is now the closest thing science has to a unified theory of why bodies wear out. Understanding these hallmarks in plain English gives you a map of exactly where ageing happens — and where lifestyle choices can make a real difference.",
+          "stat": "12 hallmarks",
+          "statLabel": "Key biological drivers of ageing identified by Lopez-Otin et al. in the updated 2023 framework"
+        },
+        {
+          "type": "content",
+          "headline": "The First Four — Damage at the Source",
+          "body": "The first group of hallmarks involves damage to the fundamental biological machinery of the cell. These are: genomic instability (accumulating damage to DNA), telomere shortening (the protective caps on chromosomes getting shorter), epigenetic alterations (chemical changes that disrupt normal gene expression), and loss of proteostasis (the build-up of damaged proteins the cell cannot clear). All four can be influenced by lifestyle — particularly sleep, exercise and nutrition.",
+          "bullets": [
+            "Genomic instability: DNA damage accumulates faster than repair",
+            "Telomere shortening: chromosome caps shrink with each cell division",
+            "Epigenetic alterations: lifestyle disrupts or protects normal gene expression patterns",
+            "Loss of proteostasis: damaged proteins accumulate when clearance systems slow down"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Middle Group — Systems Under Stress",
+          "body": "The second group involves the body's regulatory and energy systems becoming less effective. These include: deregulated nutrient sensing (the body's ability to read energy signals declines), mitochondrial dysfunction (the cellular power plants become less efficient), cellular senescence (damaged cells that refuse to die and spread inflammation), and disabled macroautophagy (the cellular recycling system slows down). Each of these is directly influenced by diet, activity and stress management.",
+          "callout": "Key insight: Caloric restriction, exercise, and quality sleep have been shown to positively influence every one of the middle-group hallmarks — making them three of the most powerful tools available."
+        },
+        {
+          "type": "content",
+          "headline": "The Final Group — The Body Losing Coordination",
+          "body": "The third group involves the body's systems losing their ability to coordinate and communicate effectively. These include: chronic inflammation (a persistent low-level immune response that damages tissues over time), gut microbiome changes (the community of bacteria in the gut shifts in ways that worsen overall health), and stem cell exhaustion (the body's ability to produce fresh replacement cells declines). Together, these create a cascade of decline that accelerates the other hallmarks.",
+          "bullets": [
+            "Chronic inflammation: low-grade persistent inflammation damages tissues across the body",
+            "Gut microbiome changes: diversity declines, with knock-on effects for immune function",
+            "Stem cell exhaustion: fewer and lower-quality replacement cells produced over time",
+            "These processes reinforce each other — making early prevention especially effective"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "The 12 Hallmarks of Ageing give scientists — and now you — a clear map of how and where ageing happens biologically. They include DNA damage, telomere shortening, mitochondrial decline, cellular senescence, chronic inflammation and more. The important message is that lifestyle choices — particularly exercise, sleep and nutrition — positively influence most of these hallmarks, which is why they have such a profound effect on biological ageing.",
+          "bullets": [
+            "Scientists have identified 12 key biological drivers of ageing",
+            "These include DNA damage, telomere shortening, cellular senescence and chronic inflammation",
+            "Most hallmarks are influenced by exercise, sleep, and nutrition",
+            "The hallmarks reinforce each other — so improving one tends to benefit others too"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the Hallmarks of Ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "A set of physical symptoms that appear in people over 65",
+            "The key biological processes that scientists have identified as driving ageing across species",
+            "A list of genetic mutations that determine how quickly someone ages",
+            "A medical scoring system used to assess how healthy a person is"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Hallmarks of Ageing (first published in 2013 and updated in 2023) are the key biological processes scientists have identified as driving ageing. They include processes like DNA damage accumulation, telomere shortening, mitochondrial dysfunction and chronic inflammation."
+        },
+        {
+          "question": "Which lifestyle factors have been shown to positively influence the most hallmarks of ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Vitamin supplements and hormone therapy",
+            "Avoiding sunlight and minimising physical activity",
+            "Regular exercise, quality sleep and good nutrition",
+            "Cold exposure and caloric restriction alone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Regular exercise, quality sleep and good nutrition have the strongest and broadest evidence base for positively influencing the hallmarks of ageing. They directly affect DNA repair, mitochondrial function, cellular senescence, autophagy, inflammation and more."
+        },
+        {
+          "question": "True or false: \"Cellular senescence\" refers to cells that are damaged but refuse to die and instead spread inflammation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Senescent cells are sometimes called \"zombie cells\" — they are damaged or aged cells that stop dividing but do not die. Instead, they release inflammatory signals that can damage neighbouring cells and contribute to a range of age-related diseases. Removing or reducing senescent cells is an active area of longevity research."
+        }
+      ]
+    },
+    {
+      "id": "hba-7-biological-vs-chronological-age",
+      "dayNumber": 7,
+      "moduleId": "hba-module-1",
+      "title": "Your Biological Age vs Your Birthday",
+      "subtitle": "Your birthday is a number. Your biological age is a reflection of how well your body is actually functioning — and you have more influence over it than you think.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Two People Born the Same Year Can Age So Differently",
+          "body": "You probably know people your own age who seem years older or younger than you — not just in appearance, but in energy, mobility and sharpness. This is biological ageing at work. Research now shows that the gap between two people's biological age can be 20 years or more, even when their chronological age is identical. And crucially, lifestyle is one of the biggest factors driving that gap.",
+          "stat": "20+ years",
+          "statLabel": "Potential difference in biological age between people born the same year (Levine et al., 2018)"
+        },
+        {
+          "type": "content",
+          "headline": "How Biological Age Is Measured",
+          "body": "Scientists now have several ways to estimate biological age. The most researched is the epigenetic clock — a test that measures chemical tags (called methylation marks) on your DNA, which change predictably with age and are influenced by lifestyle. Other measures include telomere length, inflammatory markers in the blood, cardiovascular fitness tests, and grip strength. Together these paint a picture of how old your body is actually functioning — versus how many years it has been alive.",
+          "bullets": [
+            "Epigenetic clocks measure DNA methylation patterns — the most validated biological age marker",
+            "Telomere length reflects cellular ageing and repair capacity",
+            "Blood markers (like CRP and IL-6) indicate inflammatory age",
+            "Physical tests (grip strength, VO2 max) are highly predictive of long-term health outcomes"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Can You Change Your Biological Age?",
+          "body": "The research answer is yes — within limits. A landmark study by Dr Morgan Levine's group found that diet, exercise, sleep, smoking status and alcohol intake collectively explained a large proportion of the variation in epigenetic age. Another study from the Ornish Foundation showed that a comprehensive lifestyle programme (exercise, nutrition, stress management and social support) reduced epigenetic age by an average of over three years in just eight weeks. No drug has yet come close to matching that result.",
+          "callout": "Key insight: You cannot reverse chronological age. But you can measurably reduce biological age markers — and research shows this translates into real-world differences in health, function and disease risk."
+        },
+        {
+          "type": "content",
+          "headline": "What Biological Age Is Not",
+          "body": "Biological age testing is a useful lens — but it has important limitations. Commercial biological age tests vary widely in quality and should not be used to make major medical decisions. Improving a biomarker does not automatically improve health. Obsessing over biological age scores can create unnecessary anxiety. The most important message is that the habits that lower biological age are the same ones with decades of evidence behind them: exercise, sleep, nutrition and stress management.",
+          "bullets": [
+            "Commercial biological age tests vary widely in quality and validation",
+            "A single biomarker is not a complete picture of health",
+            "Do not make major health decisions based on at-home tests alone",
+            "The same habits that lower biological age are the ones with the strongest long-term evidence"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Biological age — measured through epigenetic clocks, telomere length, blood markers and physical function — can differ from chronological age by over 20 years. Research shows it is measurably influenced by lifestyle choices. Comprehensive lifestyle changes have been shown to reduce epigenetic age markers in a matter of weeks. Your birthday is fixed. Your biological age is a work in progress.",
+          "bullets": [
+            "Biological and chronological age can differ by 20+ years",
+            "Epigenetic clocks, telomere length and physical function all measure biological age",
+            "Lifestyle changes can measurably reduce biological age markers",
+            "Exercise, sleep, nutrition and stress management are the most powerful tools"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does an epigenetic clock measure?",
+          "type": "multiple-choice",
+          "options": [
+            "The length of telomeres on each chromosome",
+            "How many times a cell has divided over a lifetime",
+            "Chemical methylation patterns on DNA that change predictably with age and lifestyle",
+            "The number of senescent cells in a tissue sample"
+          ],
+          "correctIndex": 2,
+          "explanation": "Epigenetic clocks measure DNA methylation patterns — chemical tags that attach to DNA and change in predictable ways as we age. They are influenced by lifestyle factors including exercise, diet, sleep and smoking. They are currently the most validated measure of biological age."
+        },
+        {
+          "question": "What did the Ornish Foundation study find about comprehensive lifestyle changes and epigenetic age?",
+          "type": "multiple-choice",
+          "options": [
+            "Lifestyle changes had no measurable effect on epigenetic age markers",
+            "A programme of exercise, nutrition, stress management and social support reduced epigenetic age by an average of over three years in eight weeks",
+            "Epigenetic age could only be changed by medication",
+            "Genetic factors completely overrode the benefits of lifestyle changes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Ornish Foundation study found that a comprehensive lifestyle programme — combining exercise, improved nutrition, stress management and social connection — reduced epigenetic age by an average of more than three years in just eight weeks. No pharmaceutical intervention has matched this result."
+        },
+        {
+          "question": "True or false: Improving a biological age biomarker automatically means your overall health has improved.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Biomarkers are useful indicators but not perfect proxies for health. A single improved marker does not automatically mean overall health has improved. This is why the focus should be on the consistent lifestyle habits that drive improvements across multiple markers — rather than optimising individual test scores."
+        }
+      ]
+    },
+    {
+      "id": "hba-8-inflammation",
+      "dayNumber": 8,
+      "moduleId": "hba-module-2",
+      "title": "Inflammation — The Silent Driver",
+      "subtitle": "Short-term inflammation saves your life. Long-term inflammation slowly damages it. Learn the difference — and what to do about it.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Fire That Never Quite Goes Out",
+          "body": "When you cut your finger, the area turns red, warm and swollen. That is acute inflammation — your immune system rushing to repair damage and fight infection. It is essential and life-saving. But millions of people are living with a different kind of inflammation: a low-level, chronic version that smoulders for years without obvious symptoms. Scientists now link this \"inflammaging\" to heart disease, type 2 diabetes, Alzheimer's, cancer and accelerated biological ageing.",
+          "stat": "5 of the top 10",
+          "statLabel": "Leading causes of death globally are linked to chronic inflammation (WHO, 2024)"
+        },
+        {
+          "type": "content",
+          "headline": "Acute vs Chronic Inflammation",
+          "body": "Acute inflammation is your body's rapid emergency response. It starts fast, does its job, and resolves within days. Chronic inflammation is different — it is a persistent, low-grade immune activation that does not switch off. The immune system stays on alert even when there is no active threat, gradually damaging tissues and organs over years. The frustrating thing is it rarely causes obvious symptoms until significant damage has already occurred.",
+          "bullets": [
+            "Acute inflammation: fast, purposeful, resolves within days — healthy and necessary",
+            "Chronic inflammation: low-grade, persistent, silent — linked to most age-related disease",
+            "Chronic inflammation is often triggered by lifestyle factors, not infection",
+            "Blood tests (like CRP and IL-6) can detect it before symptoms appear"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Causes Chronic Inflammation?",
+          "body": "Chronic inflammation can be triggered by several overlapping factors. Visceral fat (the fat stored around internal organs) is biologically active and releases inflammatory signals. Ultra-processed food, excess sugar and trans fats all promote inflammatory pathways. Chronic stress keeps the immune system in a state of constant low alert. Poor sleep disrupts anti-inflammatory processes. And paradoxically, too little exercise allows inflammatory markers to rise, while regular moderate exercise reduces them.",
+          "callout": "Key insight: Chronic inflammation is largely a lifestyle-driven condition. The same habits that support longevity — exercise, good nutrition, quality sleep and stress management — are also the most powerful anti-inflammatory tools available."
+        },
+        {
+          "type": "content",
+          "headline": "Inflammaging — Ageing and Inflammation Feed Each Other",
+          "body": "Scientists use the term \"inflammaging\" to describe how chronic inflammation and ageing interact. As the body ages, the immune system becomes less precise — more prone to firing when it should not, and less effective when it needs to. Senescent cells (covered in the next module) release inflammatory signals. The gut microbiome changes in ways that promote inflammation. Fat distribution shifts toward visceral fat. These changes make chronic inflammation both a cause and a consequence of biological ageing.",
+          "bullets": [
+            "Senescent cells release inflammatory signals that spread to neighbouring tissues",
+            "Gut microbiome shifts with age, increasing pro-inflammatory bacteria",
+            "Visceral fat increases with age and is a major inflammation driver",
+            "Exercise remains one of the most effective anti-inflammaging interventions at any age"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Chronic low-grade inflammation — \"inflammaging\" — is one of the central drivers of biological ageing and age-related disease. Unlike acute inflammation, it is silent and persistent. It is largely driven by lifestyle: visceral fat, ultra-processed food, chronic stress, poor sleep and inactivity. The most powerful anti-inflammatory prescription is the same one that supports health in every other way: move regularly, sleep well, eat whole foods and manage stress.",
+          "bullets": [
+            "Chronic inflammation is linked to heart disease, diabetes, Alzheimer's and cancer",
+            "It is largely driven by lifestyle — not just age",
+            "Regular exercise is one of the most effective anti-inflammatory tools",
+            "Blood markers like CRP can detect it before symptoms appear"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"inflammaging\"?",
+          "type": "multiple-choice",
+          "options": [
+            "A type of acute infection that mainly affects older adults",
+            "The interaction between chronic low-grade inflammation and the ageing process — each making the other worse",
+            "A blood test used to measure inflammation levels in older patients",
+            "The process by which the immune system becomes overactive in teenagers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Inflammaging describes the bidirectional relationship between chronic low-grade inflammation and ageing. As the body ages, inflammation tends to increase. And that increased inflammation in turn accelerates biological ageing — making it both a cause and a consequence of the ageing process."
+        },
+        {
+          "question": "Which of the following is NOT listed as a driver of chronic inflammation?",
+          "type": "multiple-choice",
+          "options": [
+            "Visceral fat",
+            "Regular moderate exercise",
+            "Chronic stress",
+            "Ultra-processed food"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regular moderate exercise actually reduces chronic inflammation — it is one of the most effective anti-inflammatory interventions available. Visceral fat, chronic stress and ultra-processed food are all major drivers of chronic low-grade inflammation."
+        },
+        {
+          "question": "True or false: Chronic inflammation usually causes obvious symptoms that people notice quickly.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Chronic low-grade inflammation is often silent — it rarely causes obvious symptoms until significant damage has already occurred over years. This is why blood markers like C-reactive protein (CRP) are useful for detecting it before symptoms appear."
+        }
+      ]
+    },
+    {
+      "id": "hba-9-mitochondria",
+      "dayNumber": 9,
+      "moduleId": "hba-module-2",
+      "title": "Mitochondria — Your Cellular Power Plants",
+      "subtitle": "Mitochondria power every cell in your body. When they decline, everything suffers — from energy and muscles to brain function and longevity.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why You Feel Tired — At a Cellular Level",
+          "body": "Mitochondria are tiny structures found in almost every cell in the body. Their primary job is to convert food and oxygen into ATP — the energy currency that powers virtually every biological process, from muscle contractions and brain activity to cellular repair and immune function. When mitochondria become less efficient, less numerous, or more damaged, energy production falls. The result is not just fatigue — it is a cascade of decline that accelerates ageing across every system in the body.",
+          "stat": "1,000–2,000",
+          "statLabel": "Mitochondria in a typical muscle cell — declining in number and quality with age"
+        },
+        {
+          "type": "content",
+          "headline": "How Mitochondria Age",
+          "body": "Mitochondria have their own DNA — a small, circular genome separate from the nuclear DNA in the cell's centre. This mitochondrial DNA is more vulnerable to damage than nuclear DNA because it sits closer to where energy reactions happen and has fewer repair tools available. Over decades, mitochondrial DNA accumulates mutations. Damaged mitochondria become less efficient at producing energy and more likely to generate harmful byproducts called reactive oxygen species (ROS), which cause further cellular damage.",
+          "bullets": [
+            "Mitochondrial DNA is more vulnerable to damage than nuclear DNA",
+            "Damage accumulates over decades, reducing energy production efficiency",
+            "Damaged mitochondria generate more reactive oxygen species (harmful byproducts)",
+            "The body normally clears damaged mitochondria through a process called mitophagy"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Mitochondrial Decline — What It Feels Like",
+          "body": "You cannot feel your mitochondria declining — but you can feel the effects. Research links poor mitochondrial function to reduced physical endurance, slower cognitive processing, increased inflammation, greater metabolic dysfunction and faster biological ageing. Tissues with the highest energy demands — the brain, heart, liver and skeletal muscles — are most affected. This is one reason why maintaining muscle mass and cardiovascular fitness are so tightly linked to long-term health.",
+          "callout": "Key insight: Skeletal muscle is the most mitochondria-rich tissue in the body. Maintaining muscle through regular exercise is one of the most effective ways to preserve mitochondrial function across the lifespan."
+        },
+        {
+          "type": "content",
+          "headline": "How to Support Your Mitochondria",
+          "body": "The most powerful mitochondrial stimulus known to science is aerobic exercise. It triggers the creation of new mitochondria (mitochondrial biogenesis) and improves their efficiency and maintenance. Strength training helps too, particularly for preserving mitochondria in muscle. Good sleep allows mitochondrial repair and clearance of damaged mitochondria. Some research suggests that caloric restriction and time-restricted eating also support mitochondrial health — though the evidence is more preliminary.",
+          "bullets": [
+            "Aerobic exercise: the most potent stimulus for creating new, healthy mitochondria",
+            "Strength training: preserves mitochondrial density in ageing muscle",
+            "Quality sleep: supports mitochondrial maintenance and removal of damaged units",
+            "Excessive alcohol and chronic stress: among the most harmful factors for mitochondrial health"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Mitochondria are the energy factories of every cell — and their gradual decline with age contributes to fatigue, reduced physical and cognitive performance, increased inflammation and faster biological ageing. The most effective way to protect them is also the most accessible: regular aerobic exercise stimulates the creation of new mitochondria and improves their function at any age. Sleep and stress management support their maintenance.",
+          "bullets": [
+            "Mitochondria produce ATP — the energy currency that powers every biological process",
+            "Mitochondrial DNA accumulates damage over time, reducing efficiency",
+            "Aerobic exercise is the most powerful stimulus for creating new, healthy mitochondria",
+            "Brain, heart and muscle are most vulnerable to mitochondrial decline"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the primary function of mitochondria?",
+          "type": "multiple-choice",
+          "options": [
+            "To store genetic information in DNA",
+            "To convert food and oxygen into ATP — the body's main energy currency",
+            "To produce hormones that regulate cell growth",
+            "To transport proteins between different parts of the cell"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mitochondria convert food and oxygen into ATP (adenosine triphosphate) — the energy currency that powers virtually every biological process in the body, from muscle contractions and brain activity to cellular repair and immune function."
+        },
+        {
+          "question": "What is \"mitochondrial biogenesis\"?",
+          "type": "multiple-choice",
+          "options": [
+            "The process of damaged mitochondria being broken down and cleared",
+            "The creation of new mitochondria — stimulated most powerfully by aerobic exercise",
+            "The transfer of mitochondria between neighbouring cells",
+            "The repair of mitochondrial DNA by specialised proteins"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mitochondrial biogenesis is the creation of new mitochondria within a cell. It is most powerfully stimulated by aerobic exercise, which signals the cell to produce more energy-producing capacity. This is one of the key mechanisms through which exercise protects against biological ageing."
+        },
+        {
+          "question": "True or false: Mitochondrial DNA is more vulnerable to damage than nuclear DNA.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Mitochondrial DNA sits closer to where energy reactions happen, is exposed to more reactive oxygen species (harmful byproducts of energy production), and has fewer repair tools available compared to nuclear DNA. This makes it more susceptible to accumulating mutations over time."
+        }
+      ]
+    },
+    {
+      "id": "hba-10-telomeres",
+      "dayNumber": 10,
+      "moduleId": "hba-module-2",
+      "title": "Telomeres — The Protective Caps",
+      "subtitle": "Every time a cell divides, the protective caps on your chromosomes get slightly shorter. Here is what that means — and what influences the rate.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Think of Them Like Shoelace Tips",
+          "body": "At the end of every chromosome is a protective cap called a telomere. Think of it like the plastic tip at the end of a shoelace — it stops the chromosome from fraying and sticking to other chromosomes. Each time a cell divides to make a new copy of itself, the telomeres get slightly shorter. When they become too short, the cell can no longer divide safely. It either dies or becomes senescent — a \"zombie cell\" that sits in the tissue releasing inflammatory signals.",
+          "stat": "50–70",
+          "statLabel": "Maximum number of times most human cells can divide before telomeres become critically short (the Hayflick limit)"
+        },
+        {
+          "type": "content",
+          "headline": "Telomere Length and Biological Age",
+          "body": "Telomere length is one of the most studied markers of biological ageing. People with shorter telomeres for their age tend to have higher rates of cardiovascular disease, diabetes, dementia and earlier death. However, the relationship is not straightforward — telomere length varies considerably between people, between different tissues in the same person, and can change over time. It is a useful signal, but not a precise individual prediction.",
+          "bullets": [
+            "Shorter telomeres are associated with higher disease risk and earlier mortality",
+            "Telomere length varies between tissues and individuals",
+            "Stress, smoking and sedentary behaviour are linked to faster telomere shortening",
+            "Exercise, good sleep and social connection are linked to slower telomere shortening"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Telomerase — The Repair Enzyme",
+          "body": "The body has an enzyme called telomerase that can partially rebuild telomeres. In most adult cells, telomerase activity is very low — which is why telomeres shorten over time. But certain cells, including stem cells and immune cells, have higher telomerase activity to allow continued division. Research shows that lifestyle factors influence telomerase activity: exercise increases it, chronic stress reduces it. This is part of how lifestyle literally shapes the pace of cellular ageing.",
+          "callout": "Key insight: Elizabeth Blackburn and Elissa Epel, who won the Nobel Prize for discovering telomerase, found in their book The Telomere Effect that everyday habits — particularly stress management and exercise — measurably influence telomere length and telomerase activity."
+        },
+        {
+          "type": "content",
+          "headline": "What Accelerates Telomere Shortening?",
+          "body": "Telomere shortening is accelerated by several modifiable factors. Chronic psychological stress is one of the most studied — research on caregivers of chronically ill relatives shows significantly shorter telomeres compared to matched controls. Smoking, obesity, chronic inflammation and sedentary behaviour all independently predict faster shortening. Childhood adversity leaves a biological mark in telomere length that can persist into adulthood. However, none of these create an irreversible trajectory.",
+          "bullets": [
+            "Chronic psychological stress: one of the most potent accelerators of telomere shortening",
+            "Smoking: associated with significantly shorter telomeres at every age studied",
+            "Sedentary behaviour: independently linked to faster telomere attrition",
+            "Obesity and chronic inflammation: both predict shorter telomere length"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Telomeres are protective caps on chromosomes that shorten with each cell division. When they become critically short, cells stop dividing or become senescent. Shorter telomeres are linked to higher disease risk and earlier mortality. Lifestyle factors — particularly chronic stress, smoking and inactivity — accelerate shortening, while exercise, good sleep and effective stress management are associated with slower attrition and higher telomerase activity.",
+          "bullets": [
+            "Telomeres shorten with each cell division — a biological marker of cellular ageing",
+            "Short telomeres are linked to cardiovascular disease, diabetes and earlier death",
+            "Chronic stress, smoking and sedentary behaviour accelerate shortening",
+            "Exercise and stress management are linked to slower telomere attrition"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens when telomeres become critically short?",
+          "type": "multiple-choice",
+          "options": [
+            "The cell begins producing more telomerase to rebuild them",
+            "The cell either stops dividing safely and dies, or becomes a senescent \"zombie cell\"",
+            "The chromosome replicates itself to create a backup copy",
+            "The immune system destroys the cell immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "When telomeres become critically short, the cell can no longer divide safely. It either undergoes programmed cell death (apoptosis) or becomes senescent — a \"zombie cell\" that remains in the tissue and releases inflammatory signals that can damage surrounding cells."
+        },
+        {
+          "question": "Which factor is most strongly associated with faster telomere shortening?",
+          "type": "multiple-choice",
+          "options": [
+            "Regular moderate exercise",
+            "Adequate sleep (7–9 hours per night)",
+            "Chronic psychological stress",
+            "A diet high in plant foods"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chronic psychological stress is one of the most potent accelerators of telomere shortening. Research on caregivers of chronically ill relatives shows significantly shorter telomeres compared to matched controls. Smoking, obesity, chronic inflammation and sedentary behaviour are also linked to faster shortening."
+        },
+        {
+          "question": "True or false: Elizabeth Blackburn and Elissa Epel won the Nobel Prize for discovering telomerase.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Elizabeth Blackburn (along with Carol Greider and Jack Szostak) won the 2009 Nobel Prize in Physiology or Medicine for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase. She and psychologist Elissa Epel later wrote The Telomere Effect, which translated the research into practical lifestyle guidance."
+        }
+      ]
+    },
+    {
+      "id": "hba-11-autophagy",
+      "dayNumber": 11,
+      "moduleId": "hba-module-2",
+      "title": "Autophagy — Your Body's Recycling System",
+      "subtitle": "Deep inside your cells, a remarkable recycling system quietly clears out the junk. Here is how it works — and how to keep it running well.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A Nobel Prize-Winning Discovery About Cellular Housekeeping",
+          "body": "In 2016, Japanese cell biologist Yoshinori Ohsumi won the Nobel Prize in Physiology or Medicine for his work on autophagy. The word comes from the Greek for \"self-eating\" — and that is precisely what the process involves. Cells identify their own damaged components, wrap them in a membrane, and either recycle the useful parts or destroy them entirely. It is one of the most important maintenance systems in the body, and it slows down significantly with age — contributing to a range of serious conditions.",
+          "stat": "2016",
+          "statLabel": "Year Yoshinori Ohsumi won the Nobel Prize for discovering the mechanisms of autophagy"
+        },
+        {
+          "type": "content",
+          "headline": "What Autophagy Actually Does",
+          "body": "Think of autophagy as the body's internal skip lorry. Every cell accumulates waste over time: misfolded proteins that do not work properly, damaged organelles that are no longer functional, and debris from normal metabolic processes. Autophagy identifies this material, packages it up, and either strips it down for reusable components or destroys it completely. Without this system, damaged material accumulates inside cells — contributing to conditions like Alzheimer's, Parkinson's, liver disease and type 2 diabetes.",
+          "bullets": [
+            "Clears misfolded proteins that can form harmful aggregates in brain cells",
+            "Removes damaged organelles including dysfunctional mitochondria (mitophagy)",
+            "Recycles the components for new cellular building material",
+            "When it slows, protein aggregates and cellular debris build up — linked to neurodegeneration"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How Autophagy Slows Down With Age",
+          "body": "Autophagy declines as part of the normal ageing process. The cellular machinery that drives it becomes less efficient, and accumulating damage in the autophagy system itself reduces its effectiveness. This creates a compounding problem: lower autophagy means more cellular debris accumulates, which further impairs cell function, which further reduces autophagy capacity. It is one of the mechanisms through which biological ageing tends to accelerate once it gets going.",
+          "callout": "Key insight: In the brains of Alzheimer's patients, autophagy function is significantly impaired. The protein aggregates characteristic of the disease — amyloid plaques and tau tangles — are partly the result of the cellular cleaning system failing to clear them."
+        },
+        {
+          "type": "content",
+          "headline": "How to Support Autophagy",
+          "body": "The good news is that autophagy is highly responsive to lifestyle. Exercise is one of the most powerful stimulators — even a single bout of moderate-intensity exercise increases autophagy markers in muscle tissue. Sleep is critical: deep sleep phases are when autophagy in the brain (clearing the debris produced by daytime thinking) is most active. Caloric restriction and intermittent fasting also stimulate autophagy, though the evidence for specific fasting protocols in humans is less settled than it is in animal studies.",
+          "bullets": [
+            "Exercise: potent autophagy stimulator — even a single session increases markers",
+            "Sleep: deep sleep is when brain autophagy is most active — the glymphatic system clears debris",
+            "Caloric restriction: consistently stimulates autophagy in animal models",
+            "Intermittent fasting: may stimulate autophagy in humans, though optimal protocols are still debated"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Autophagy is the cell's internal recycling and waste-clearance system. It breaks down damaged proteins and organelles, recycling their components for reuse. Declining autophagy with age contributes to conditions including Alzheimer's, Parkinson's and type 2 diabetes. Regular exercise, quality sleep and (to a lesser degree) caloric restriction are the most evidence-backed ways to keep autophagy running efficiently.",
+          "bullets": [
+            "Autophagy identifies and clears damaged cellular components — preventing toxic build-up",
+            "It declines with age, contributing to neurodegeneration and metabolic disease",
+            "Exercise is the most potent and practical autophagy stimulator",
+            "Deep sleep is when brain autophagy is most active — another reason sleep matters"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does autophagy do?",
+          "type": "multiple-choice",
+          "options": [
+            "It replaces damaged DNA using a backup copy stored in the nucleus",
+            "It identifies damaged proteins and organelles, breaking them down and recycling or destroying them",
+            "It prevents cells from dividing when telomeres become too short",
+            "It triggers immune cells to attack infected tissue"
+          ],
+          "correctIndex": 1,
+          "explanation": "Autophagy identifies damaged proteins, malfunctioning organelles and cellular debris, packages them up, and either recycles their useful components or destroys them. It is the cell's primary internal housekeeping and waste-clearance system."
+        },
+        {
+          "question": "Why is declining autophagy linked to Alzheimer's disease?",
+          "type": "multiple-choice",
+          "options": [
+            "Because autophagy produces the proteins that form amyloid plaques",
+            "Because impaired autophagy allows harmful protein aggregates to build up in brain cells rather than being cleared",
+            "Because autophagy controls which neurons fire during memory formation",
+            "Because autophagy regulates blood flow to the brain"
+          ],
+          "correctIndex": 1,
+          "explanation": "When autophagy is impaired, the damaged proteins and cellular debris it normally clears begin to accumulate. In brain cells, this includes the amyloid and tau proteins that form the characteristic plaques and tangles of Alzheimer's disease. Autophagy impairment is consistently observed in Alzheimer's brain tissue."
+        },
+        {
+          "question": "True or false: Deep sleep is when brain autophagy is most active.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. During deep sleep, the brain's glymphatic system — which works in concert with autophagy — becomes highly active, clearing the metabolic waste products that accumulate during waking hours. This is one of the core reasons why consistently good sleep is so strongly linked to reduced risk of neurodegenerative disease."
+        }
+      ]
+    },
+    {
+      "id": "hba-12-cellular-senescence",
+      "dayNumber": 12,
+      "moduleId": "hba-module-2",
+      "title": "Cellular Senescence — Zombie Cells",
+      "subtitle": "Some cells become damaged and stop dividing — but refuse to die. Instead they release signals that spread inflammation throughout the body.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Cells That Will Not Die",
+          "body": "In science fiction, zombies are creatures that are technically dead but keep causing damage to everything around them. In biology, the equivalent is the senescent cell. When a cell is too damaged to safely divide, it enters a state called senescence — it stops reproducing but does not die. Instead, it sits in the tissue indefinitely, releasing a cocktail of inflammatory signals that can damage neighbouring cells, disrupt tissue function and accelerate biological ageing across the body.",
+          "stat": "1 in 7",
+          "statLabel": "Proportion of cells in some aged tissues that are senescent, compared to very few in young tissue (Childs et al., 2017)"
+        },
+        {
+          "type": "content",
+          "headline": "Why Senescence Happens — and Why It Was Designed That Way",
+          "body": "Cellular senescence is not a mistake — it evolved as a safety mechanism. When DNA is too damaged to repair safely, a cell that continues dividing could become cancerous. Senescence is the body's way of putting on the brakes: the cell stops reproducing, preventing potentially cancerous replication. In the short term, this is protective. The problem is what happens when too many cells accumulate in this state over decades without being cleared away by the immune system.",
+          "bullets": [
+            "Senescence is an anti-cancer mechanism — it stops dangerously damaged cells from dividing",
+            "It is also part of normal wound healing and tissue repair in the short term",
+            "The immune system normally clears senescent cells, but this becomes less efficient with age",
+            "The accumulation of senescent cells over decades drives chronic inflammation and tissue dysfunction"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The SASP — Why Senescent Cells Are Dangerous",
+          "body": "Senescent cells release a range of inflammatory molecules collectively called the Senescence-Associated Secretory Phenotype (SASP). Think of SASP as a distress signal that never switches off. It recruits immune cells, promotes inflammation, degrades the surrounding tissue matrix, and can even convert nearby healthy cells into senescent cells — spreading the dysfunction. Research links the SASP to arthritis, cardiovascular disease, cognitive decline, diabetes and cancer progression.",
+          "callout": "Key insight: Transplanting senescent cells from old mice into young mice accelerates ageing in the recipient — demonstrating that senescent cells actively cause, not just accompany, age-related decline."
+        },
+        {
+          "type": "content",
+          "headline": "What Influences Senescent Cell Accumulation?",
+          "body": "Senescent cells accumulate faster when the body is under greater biological stress. Chronic inflammation, DNA damage from smoking, radiation and UV exposure, metabolic dysfunction and chronic psychological stress all accelerate senescent cell accumulation. The immune system normally clears senescent cells through a process called immune surveillance, but this becomes less efficient with age. Exercise supports immune surveillance and has been shown to reduce senescent cell markers in muscle tissue.",
+          "bullets": [
+            "Smoking, UV radiation and chronic inflammation accelerate senescent cell formation",
+            "The immune system's ability to clear senescent cells declines with age",
+            "Exercise supports immune surveillance — reducing senescent markers in muscle",
+            "Research into \"senolytics\" (drugs that selectively destroy senescent cells) is ongoing but not yet proven for humans"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Senescent cells are damaged cells that stop dividing but refuse to die — earning the \"zombie cell\" label. They release inflammatory signals (the SASP) that damage surrounding tissue, spread dysfunction and accelerate ageing. They evolved as an anti-cancer mechanism, but accumulate over decades as immune clearance becomes less efficient. Exercise, avoiding smoking and UV damage, and managing chronic stress all help limit their accumulation.",
+          "bullets": [
+            "Senescent cells stop dividing but stay in tissue releasing inflammatory signals",
+            "This is an anti-cancer mechanism that becomes harmful when cells accumulate with age",
+            "The SASP drives chronic inflammation linked to heart disease, dementia and diabetes",
+            "Exercise and avoiding smoking are the most evidence-backed ways to limit accumulation"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is cellular senescence sometimes described as a double-edged sword?",
+          "type": "multiple-choice",
+          "options": [
+            "Because senescent cells can both divide and stay dormant depending on conditions",
+            "Because it protects against cancer short-term but drives inflammation and ageing when cells accumulate long-term",
+            "Because it speeds up some repair processes while slowing down others",
+            "Because it affects some tissues positively but damages others simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Senescence evolved as an anti-cancer mechanism — it stops dangerously damaged cells from dividing. This is protective in the short term. But when senescent cells accumulate over decades without being cleared, they release inflammatory SASP signals that drive chronic inflammation and age-related disease."
+        },
+        {
+          "question": "What is the SASP?",
+          "type": "multiple-choice",
+          "options": [
+            "A gene pathway that triggers programmed cell death",
+            "The inflammatory molecules released by senescent cells that damage surrounding tissue",
+            "A blood marker used to measure senescent cell load",
+            "The immune signal that recruits stem cells to replace old tissue"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Senescence-Associated Secretory Phenotype (SASP) is the cocktail of inflammatory molecules released by senescent cells. It recruits immune cells, promotes inflammation, degrades surrounding tissue matrix, and can convert nearby healthy cells into senescent cells — spreading dysfunction through the tissue."
+        },
+        {
+          "question": "True or false: Transplanting senescent cells from old mice into young mice has been shown to accelerate ageing in the recipient.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. This landmark experiment demonstrated that senescent cells do not merely accompany ageing — they actively cause it. Young mice that received senescent cell transplants showed accelerated physical decline and reduced lifespan, establishing a causal role for senescent cell accumulation in the ageing process."
+        }
+      ]
+    },
+    {
+      "id": "hba-13-muscle-loss",
+      "dayNumber": 13,
+      "moduleId": "hba-module-2",
+      "title": "Muscle Loss — Use It or Lose It",
+      "subtitle": "Muscle is not just about strength and appearance. It is one of the most important organs for long-term health — and it starts declining from your 30s.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Most Under-Rated Organ in the Body",
+          "body": "Most people think of muscle as something that athletes care about — not a health priority for everyone. But muscle is now recognised as a metabolic organ that plays a central role in longevity. It regulates blood sugar, stores glycogen, produces anti-inflammatory signals, supports bone density and protects joints. Maintaining muscle mass into old age is one of the strongest predictors of independence, physical function and survival. And yet most people begin losing it in their 30s without realising.",
+          "stat": "3–8%",
+          "statLabel": "Muscle mass lost per decade after age 30 without resistance training (Paddon-Jones & Rasmussen, 2009)"
+        },
+        {
+          "type": "content",
+          "headline": "Sarcopenia — The Medical Term for Age-Related Muscle Loss",
+          "body": "Sarcopenia is the progressive loss of muscle mass and strength that occurs with ageing. It is not just about looking less muscular — the functional consequences are serious. Sarcopenia is linked to falls and fractures, loss of independence, poor blood sugar control, increased inflammation, longer hospital stays after illness and higher mortality. By age 70, people who have not consistently trained can have lost 30–40% of their peak muscle mass. The decline begins far earlier than most people expect.",
+          "bullets": [
+            "Sarcopenia affects an estimated 10–16% of adults over 60 (Cruz-Jentoft et al., 2019)",
+            "Linked to falls, fractures, diabetes, cardiovascular disease and earlier death",
+            "Loss begins gradually in the 30s — becomes more pronounced after 50",
+            "Even people who are not noticeably thin can have significantly reduced muscle mass"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Muscle Declines With Age",
+          "body": "Several biological processes contribute to age-related muscle loss. Anabolic hormones — testosterone, oestrogen and growth hormone — decline with age, reducing the muscle-building signal. Protein synthesis slows, meaning the body builds less new muscle protein in response to food and exercise. Motor neurons that signal muscles to contract gradually die off. Chronic inflammation (including SASP from senescent cells) actively breaks down muscle tissue. And mitochondrial decline in muscle cells reduces energy production and recovery capacity.",
+          "callout": "Key insight: The body's response to protein and exercise becomes less efficient with age — meaning older adults need more protein per meal and more training stimulus to achieve the same muscle-building response as younger people."
+        },
+        {
+          "type": "content",
+          "headline": "How to Preserve Muscle — What the Evidence Says",
+          "body": "The single most effective intervention for preserving muscle with age is resistance training — lifting weights, bodyweight exercises, resistance bands or any activity that challenges muscles against a load. Research consistently shows it is effective at maintaining and even building muscle at any age, including in people in their 80s and 90s. Adequate protein intake is the essential dietary complement — particularly ensuring enough at each meal to stimulate muscle protein synthesis. Movement generally (walking, climbing stairs) maintains function and slows the decline.",
+          "bullets": [
+            "Resistance training: most effective intervention — works at any age including 80s and 90s",
+            "Protein: 1.6–2.2g per kg of body weight per day is the evidence-based target for active adults",
+            "Protein distribution: spreading intake across meals (30+ grams per meal) is more effective than one large serving",
+            "General activity: staying mobile day-to-day significantly slows functional decline"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Muscle is a metabolic organ central to long-term health — regulating blood sugar, supporting bones, reducing inflammation and predicting independence and longevity. Sarcopenia (age-related muscle loss) begins in the 30s and accelerates after 50, driven by hormonal changes, declining protein synthesis, inflammation and reduced mitochondrial function. Resistance training and adequate protein are the most effective tools to slow it — and they work at any age.",
+          "bullets": [
+            "Muscle loss begins gradually in the 30s — potentially 30–40% by age 70 without training",
+            "Sarcopenia is linked to falls, diabetes, cardiovascular disease and earlier death",
+            "Resistance training is the most effective intervention — proven effective into the 90s",
+            "Protein intake of 1.6–2.2g per kg body weight supports muscle preservation"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is sarcopenia?",
+          "type": "multiple-choice",
+          "options": [
+            "The medical term for bone thinning in older adults",
+            "Progressive age-related loss of muscle mass and strength",
+            "A condition caused by inadequate protein intake in childhood",
+            "Inflammation of the joints due to declining cartilage"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sarcopenia is the progressive, age-related loss of muscle mass, strength and function. It begins gradually in the 30s and accelerates after 50, and is linked to falls, fractures, poor metabolic health, loss of independence and higher mortality."
+        },
+        {
+          "question": "What is the most effective intervention for preserving muscle mass with age?",
+          "type": "multiple-choice",
+          "options": [
+            "High-dose protein supplementation alone",
+            "Long daily walks at moderate pace",
+            "Resistance training combined with adequate protein intake",
+            "Hormone replacement therapy"
+          ],
+          "correctIndex": 2,
+          "explanation": "Resistance training combined with adequate protein intake is consistently the most evidence-backed approach for preserving and building muscle at any age — including in people in their 80s and 90s. Neither intervention alone is as effective as the two combined."
+        },
+        {
+          "question": "True or false: Older adults need less protein per meal than younger adults to achieve the same muscle-building response.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The muscle protein synthesis response to both food and exercise becomes less efficient with age — a phenomenon called anabolic resistance. Older adults typically need more protein per meal (30+ grams) than younger adults to achieve the same muscle-building stimulus, making adequate protein intake particularly important after 50."
+        }
+      ]
+    },
+    {
+      "id": "hba-14-immune-system-changes",
+      "dayNumber": 14,
+      "moduleId": "hba-module-2",
+      "title": "How the Immune System Changes",
+      "subtitle": "The immune system becomes less precise and more inflammatory with age. Understanding this shift helps explain many age-related conditions.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Immune System Ages Too",
+          "body": "The immune system is often imagined as a static defence network — a wall that either holds or does not. In reality, it is a dynamic, living system that changes profoundly across the lifespan. In childhood, it learns to tell friend from foe. In adulthood, it maintains vigilance. But with age, it undergoes a characteristic set of changes: it becomes less effective at fighting new infections, less good at recognising and destroying cancer cells, and more prone to the chronic background inflammation that drives age-related disease.",
+          "stat": "2–3x",
+          "statLabel": "Higher mortality risk from influenza in adults over 65 compared to 18–64 year olds — partly due to immunosenescence (CDC, 2024)"
+        },
+        {
+          "type": "content",
+          "headline": "Immunosenescence — The Ageing of Immunity",
+          "body": "Scientists use the term \"immunosenescence\" to describe the changes the immune system undergoes with age. The thymus — a small gland behind the breastbone that produces T cells (the immune system's specialist fighters) — shrinks dramatically with age, producing far fewer new T cells by middle age. The remaining T cells are mostly experienced veterans that can fight familiar foes but respond less effectively to new threats like novel viruses or emerging cancers.",
+          "bullets": [
+            "The thymus shrinks with age, producing fewer new T cells",
+            "The remaining T cells are predominantly memory cells — effective against known threats",
+            "Response to new pathogens, vaccines and novel cancer cells becomes weaker",
+            "This explains why older adults are more vulnerable to new infectious diseases and why vaccine efficacy can decline with age"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Paradox — Less Effective But More Inflammatory",
+          "body": "Here is the counterintuitive part: as the immune system becomes less effective at targeted defence, it simultaneously becomes more inflammatory. This is the inflammaging paradox. The immune system loses precision — it fires off more general inflammatory signals, even without a specific threat to fight. This background inflammation damages tissues, contributes to arterial stiffening, disrupts blood sugar regulation and accelerates cognitive decline. A system that is simultaneously underperforming and overreacting.",
+          "callout": "Key insight: Inflammaging is partly driven by the immune system becoming less \"smart\" with age — firing generalised inflammatory signals that damage the very tissues it is meant to protect."
+        },
+        {
+          "type": "content",
+          "headline": "How to Support Immune Health With Age",
+          "body": "Regular moderate exercise is one of the most well-studied immune-supportive interventions. It mobilises immune cells, reduces chronic inflammation, and — intriguingly — appears to preserve thymic function in older adults who remain active. Adequate sleep is essential: sleep deprivation consistently impairs immune function within days. Good nutrition — particularly adequate protein, zinc, selenium, and vitamins C, D and E — supports immune cell production and function. Managing chronic stress reduces cortisol's suppressive effect on immunity.",
+          "bullets": [
+            "Regular moderate exercise: mobilises immune cells and reduces chronic inflammation",
+            "Sleep: even one night of poor sleep measurably impairs immune function",
+            "Nutrition: protein, zinc, selenium and vitamins C, D and E all support immune cell function",
+            "Stress management: reduces cortisol, which at chronically elevated levels suppresses immune response"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "The immune system undergoes significant changes with age — becoming less effective at targeted defence while simultaneously more prone to chronic low-grade inflammation. The shrinking thymus produces fewer new T cells; the remaining immune memory becomes less able to handle novel threats. Exercise, sleep, adequate nutrition and stress management are the most evidence-backed ways to support immune function and slow immunosenescence.",
+          "bullets": [
+            "Immunosenescence: the immune system becomes less precise and more inflammatory with age",
+            "The thymus shrinks, reducing new T cell production — leaving mostly memory cells",
+            "This creates the inflammaging paradox: less effective defence but more background inflammation",
+            "Exercise, sleep and stress management are the key lifestyle supports for ageing immunity"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is immunosenescence?",
+          "type": "multiple-choice",
+          "options": [
+            "The complete shutdown of the immune system in old age",
+            "The age-related changes in the immune system that make it less effective at targeted defence",
+            "A condition where the immune system attacks the body's own tissues",
+            "The process by which senescent cells evade immune detection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Immunosenescence refers to the characteristic changes the immune system undergoes with age. The thymus shrinks, producing fewer new T cells. The immune system becomes less effective at responding to new threats (viruses, novel cancers, vaccines) while simultaneously becoming more prone to chronic background inflammation."
+        },
+        {
+          "question": "What is the \"inflammaging paradox\"?",
+          "type": "multiple-choice",
+          "options": [
+            "The fact that inflammation is sometimes beneficial and sometimes harmful",
+            "The observation that as the immune system becomes less effective at targeted defence, it simultaneously becomes more chronically inflammatory",
+            "The finding that anti-inflammatory drugs can increase infection risk",
+            "The paradox that exercise causes short-term inflammation but reduces long-term inflammation"
+          ],
+          "correctIndex": 1,
+          "explanation": "The inflammaging paradox is the observation that the ageing immune system appears to be simultaneously underperforming (less effective at specific defence against new threats) and overreacting (generating more chronic background inflammation). This background inflammation damages tissues rather than protecting them."
+        },
+        {
+          "question": "True or false: Regular moderate exercise has been shown to help preserve thymic function in older adults.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Research has found that older adults who maintain regular physical activity tend to show better thymic function and greater T cell diversity compared to sedentary peers of the same age. Exercise appears to slow some aspects of immunosenescence — adding another mechanism to its well-established longevity benefits."
+        }
+      ]
+    },
+    {
+      "id": "hba-15-how-the-brain-ages",
+      "dayNumber": 15,
+      "moduleId": "hba-module-3",
+      "title": "How the Brain Ages",
+      "subtitle": "The brain changes across the lifespan in ways that are normal, predictable — and more modifiable than most people realise.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Brain Is Changing Right Now",
+          "body": "The brain you have at 60 is not the same brain you had at 20 — or at 40. It changes continuously throughout life: growing and connecting in childhood, refining and specialising in early adulthood, then gradually shifting from speed to wisdom in middle age and beyond. Most of this change is normal and does not mean decline. But some changes do create real vulnerability. Understanding both sides of brain ageing helps you make the decisions that protect what matters most.",
+          "stat": "2%",
+          "statLabel": "Approximate annual decline in hippocampal volume in sedentary older adults — reversed by regular aerobic exercise (Erickson et al., 2011)"
+        },
+        {
+          "type": "content",
+          "headline": "Normal Brain Ageing — What Changes and What Does Not",
+          "body": "With age, processing speed — how quickly the brain handles information — gradually slows. Working memory (holding several things in mind at once) becomes slightly less sharp. Retrieving names and words takes a little longer. But not everything declines. Vocabulary, general knowledge and the ability to draw on accumulated experience often improve into the 60s and 70s. Emotional regulation tends to improve with age. Wisdom — the integration of experience with perspective — is a real cognitive gain.",
+          "bullets": [
+            "Processing speed slows gradually from the 40s onward",
+            "Working memory and name retrieval become slightly less efficient",
+            "Vocabulary and general knowledge typically remain strong well into old age",
+            "Emotional regulation and wisdom often improve with age"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Brain's Waste-Clearance System — The Glymphatic Network",
+          "body": "One of the most important discoveries in brain ageing research is the glymphatic system — a network of channels around blood vessels in the brain that flushes out metabolic waste during sleep. While you are awake, the brain produces waste products including amyloid and tau proteins. During deep sleep, the glymphatic system activates fully and clears them away. Chronic poor sleep — even moderate sleep restriction — allows these waste products to accumulate, which is strongly linked to Alzheimer's risk.",
+          "callout": "Key insight: Matthew Walker's research (Why We Sleep) highlights that even a single night of poor sleep measurably increases amyloid accumulation in the brain. This is one of the most compelling biological explanations for why consistently poor sleep is such a strong risk factor for dementia."
+        },
+        {
+          "type": "content",
+          "headline": "Neuroplasticity — The Brain's Capacity to Change",
+          "body": "One of the most important findings in modern neuroscience is that the adult brain retains the ability to change — to form new connections, grow new neurons (in certain areas), and adapt to new challenges. This is neuroplasticity. The hippocampus — the region most critical for memory formation — is one of the few areas of the adult brain where new neurons can grow. This process (neurogenesis) is dramatically stimulated by aerobic exercise and reduced by chronic stress and sleep deprivation.",
+          "bullets": [
+            "The adult brain can still form new connections and grow neurons in certain areas",
+            "Aerobic exercise is the most potent known stimulator of hippocampal neurogenesis",
+            "Learning new skills and social engagement support neural connectivity",
+            "Chronic stress, sleep deprivation and inactivity all suppress neuroplasticity"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Brain ageing involves real changes — slower processing speed, slightly reduced working memory — but also preserved and improved capacities like vocabulary, emotional regulation and wisdom. The glymphatic system clears brain waste during sleep, making chronic poor sleep a significant dementia risk factor. Neuroplasticity — the brain's ability to adapt and grow — remains active throughout life and is powerfully supported by aerobic exercise, learning and social engagement.",
+          "bullets": [
+            "Processing speed and working memory slow gradually — vocabulary and wisdom can improve",
+            "The glymphatic system clears brain waste during deep sleep — chronic poor sleep allows build-up",
+            "Neuroplasticity persists throughout adulthood — the brain retains the capacity to adapt",
+            "Aerobic exercise is the most potent driver of hippocampal neurogenesis at any age"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the glymphatic system?",
+          "type": "multiple-choice",
+          "options": [
+            "The network of blood vessels that supplies oxygen to the brain",
+            "A channel system around brain blood vessels that clears metabolic waste — most active during deep sleep",
+            "The pathway through which new neurons form in the hippocampus",
+            "The immune surveillance system that detects damaged neurons"
+          ],
+          "correctIndex": 1,
+          "explanation": "The glymphatic system is a network of channels around blood vessels in the brain that flushes out metabolic waste, including amyloid and tau proteins. It is most active during deep sleep. Chronic poor sleep impairs its function, allowing waste to accumulate — strongly linked to Alzheimer's risk."
+        },
+        {
+          "question": "Which of the following is NOT a typical feature of normal brain ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Slightly slower processing speed",
+            "Gradual improvement in emotional regulation",
+            "Complete loss of the ability to form new memories",
+            "Slightly longer word and name retrieval times"
+          ],
+          "correctIndex": 2,
+          "explanation": "Complete loss of the ability to form new memories is not a feature of normal ageing — it is a symptom of serious neurological conditions like Alzheimer's disease. Normal ageing involves gradual slowing of processing speed and mild changes in working memory, while many capacities (vocabulary, emotional regulation, wisdom) remain strong or improve."
+        },
+        {
+          "question": "True or false: Aerobic exercise is the most potent known stimulator of hippocampal neurogenesis.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Multiple studies, including the landmark Erickson et al. (2011) trial, have shown that regular aerobic exercise increases hippocampal volume and stimulates neurogenesis in the hippocampus — the brain region most critical for memory formation. This is one of the strongest arguments for cardiovascular exercise as a brain health intervention."
+        }
+      ]
+    },
+    {
+      "id": "hba-16-heart-and-blood-vessels",
+      "dayNumber": 16,
+      "moduleId": "hba-module-3",
+      "title": "Your Heart and Blood Vessels Over Time",
+      "subtitle": "Cardiovascular ageing is the single biggest driver of age-related disease and death. Understanding it gives you the clearest roadmap for prevention.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Number One Cause of Death — And How Much Is Preventable",
+          "body": "Cardiovascular disease — conditions of the heart and blood vessels — remains the leading cause of death globally, accounting for around one in three deaths. But here is the crucial fact: the majority of cardiovascular disease is preventable. Research suggests that up to 80% of premature cardiovascular events could be avoided through lifestyle changes alone. That is an extraordinary return on relatively simple, sustainable daily habits.",
+          "stat": "80%",
+          "statLabel": "Proportion of premature cardiovascular events estimated to be preventable through lifestyle changes (Yusuf et al., INTERHEART study)"
+        },
+        {
+          "type": "content",
+          "headline": "How Blood Vessels Age",
+          "body": "The most important cardiovascular ageing change is arterial stiffening. Young arteries are elastic and flexible — they expand and contract with each heartbeat, cushioning pressure. With age, the arterial wall gradually stiffens due to structural protein changes, calcium deposits and reduced elastin. This raises systolic blood pressure, forces the heart to work harder, and reduces the cushioning effect that protects smaller vessels in the brain and kidneys. Arterial stiffness is now considered one of the best predictors of cardiovascular risk.",
+          "bullets": [
+            "Arteries stiffen with age due to collagen cross-linking, calcium deposits and elastin loss",
+            "Stiff arteries raise systolic blood pressure even without traditional risk factors",
+            "The heart has to work harder to pump against stiffer vessels",
+            "Arterial stiffness is independently predictive of heart attack, stroke and cognitive decline"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Atherosclerosis — The Slow Build-Up",
+          "body": "Atherosclerosis is the gradual build-up of fatty plaques inside artery walls. It begins silently in early adulthood — studies of young soldiers killed in action found early plaques in men in their 20s. Over decades, plaques grow and harden. If a plaque ruptures, it triggers a clot that can block blood flow — causing a heart attack or stroke. Atherosclerosis is driven by chronic inflammation, high LDL cholesterol, high blood pressure, smoking, excess visceral fat and high blood sugar.",
+          "callout": "Key insight: Atherosclerosis is not just a problem of old age. It is a decades-long process that begins in young adulthood. This means cardiovascular protection is most effective when started early — and still meaningful when started later."
+        },
+        {
+          "type": "content",
+          "headline": "Protecting Your Cardiovascular System",
+          "body": "The cardiovascular system is highly responsive to lifestyle. Regular aerobic exercise improves arterial elasticity, lowers resting blood pressure, raises HDL cholesterol, reduces inflammation and directly reduces the risk of major cardiovascular events. Not smoking is the single most impactful individual decision. Managing blood pressure is critical — hypertension is the leading modifiable risk factor for stroke. Maintaining a healthy weight, particularly limiting visceral fat, reduces the inflammatory and metabolic burden on blood vessels.",
+          "bullets": [
+            "Aerobic exercise: directly improves arterial elasticity and cardiovascular risk markers",
+            "Not smoking: the single most impactful individual cardiovascular decision",
+            "Blood pressure control: hypertension is the leading modifiable stroke risk factor",
+            "Visceral fat reduction: reduces chronic inflammation and metabolic burden on vessels"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Cardiovascular ageing — arterial stiffening, atherosclerosis, rising blood pressure — is the leading driver of age-related death globally. Up to 80% of premature cardiovascular events are estimated to be preventable through lifestyle. Atherosclerosis begins in young adulthood. Aerobic exercise, not smoking, blood pressure management and visceral fat reduction are the most evidence-backed tools for protecting the heart and blood vessels at any age.",
+          "bullets": [
+            "Arterial stiffening and atherosclerosis are the two key cardiovascular ageing processes",
+            "Up to 80% of premature cardiovascular events are preventable through lifestyle",
+            "Atherosclerosis starts silently in young adulthood — early prevention matters most",
+            "Not smoking is the single biggest individual cardiovascular decision"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is arterial stiffening and why does it matter?",
+          "type": "multiple-choice",
+          "options": [
+            "Arteries becoming narrower with age, reducing blood flow to tissues",
+            "Arteries losing their elasticity with age, raising blood pressure and forcing the heart to work harder",
+            "A build-up of fat deposits inside artery walls that can rupture and cause clots",
+            "The gradual weakening of the heart muscle over time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arterial stiffening is the loss of elasticity in artery walls due to structural protein changes, calcium deposits and reduced elastin. It raises systolic blood pressure, forces the heart to work harder, and is independently predictive of cardiovascular disease, stroke and cognitive decline."
+        },
+        {
+          "question": "When does atherosclerosis (fatty plaque build-up in arteries) typically begin?",
+          "type": "multiple-choice",
+          "options": [
+            "Only after age 50",
+            "In the final decade of life",
+            "Silently in early adulthood — studies have found early plaques in people in their 20s",
+            "At the same time as arterial stiffening — in the early 40s"
+          ],
+          "correctIndex": 2,
+          "explanation": "Atherosclerosis is a decades-long process that begins silently in early adulthood. Studies of young soldiers killed in action found early fatty plaques in men in their 20s. This is why cardiovascular protection starting in young adulthood has such a significant long-term impact — and why it is never too early to start."
+        },
+        {
+          "question": "True or false: Up to 80% of premature cardiovascular events are estimated to be preventable through lifestyle changes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. The landmark INTERHEART study by Yusuf et al. found that nine modifiable risk factors — including smoking, diet, exercise, blood pressure and stress — accounted for over 90% of the risk of a first heart attack. Estimates consistently suggest 70–80% of premature cardiovascular events could be prevented through lifestyle changes alone."
+        }
+      ]
+    },
+    {
+      "id": "hba-17-bones-joints-mobility",
+      "dayNumber": 17,
+      "moduleId": "hba-module-3",
+      "title": "Bones, Joints and Mobility",
+      "subtitle": "The skeleton and joints change with age in ways that can be significantly slowed — if you know what actually helps.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Hidden Cost of Losing Independence",
+          "body": "A fractured hip in an older adult has a one-year mortality rate of 20–30%. Falls are the leading cause of injury-related death in people over 65. Behind many of these falls are years of silent bone loss, declining muscle strength and reduced balance that most people never address until something goes wrong. The good news is that the skeleton and joints are far more responsive to lifestyle than most people realise — and it is never too late to make a meaningful difference.",
+          "stat": "20–30%",
+          "statLabel": "One-year mortality rate following hip fracture in older adults (National Hip Fracture Database, 2022)"
+        },
+        {
+          "type": "content",
+          "headline": "How Bones Change With Age",
+          "body": "Bone is living tissue — constantly being broken down by cells called osteoclasts and rebuilt by cells called osteoblasts. In youth, building outpaces breakdown. After peak bone density (around age 30), the balance gradually shifts. Bone loss accelerates sharply in women in the years around menopause due to oestrogen decline. By later life, reduced bone density (osteopenia or osteoporosis) makes fractures far more likely from even minor falls. But bone responds to mechanical load — physical activity literally signals bones to stay strong.",
+          "bullets": [
+            "Peak bone density occurs around age 30 — after that, slow net loss begins",
+            "Bone loss accelerates sharply around menopause in women",
+            "Osteoporosis affects around 1 in 3 women and 1 in 5 men over 50 (IOF, 2023)",
+            "Weight-bearing and resistance exercise signal bones to maintain and build density"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Joints — Cartilage Loss and Osteoarthritis",
+          "body": "Cartilage is the smooth, cushioning tissue at the ends of bones in joints. It has poor blood supply and limited ability to repair itself. With age and accumulated mechanical stress, cartilage gradually thins. When enough is lost, bone begins to rub on bone — causing the pain, stiffness and reduced range of motion of osteoarthritis. Osteoarthritis affects an estimated 8.75 million people in the UK. Importantly, staying active — within pain tolerance — is better for joints than rest, as movement distributes nutrients to cartilage and maintains surrounding muscle support.",
+          "callout": "Key insight: The idea that exercise \"wears out\" joints is not well supported by evidence. Regular moderate exercise reduces osteoarthritis pain, improves function and slows progression in most people. The key is appropriate load — not avoidance."
+        },
+        {
+          "type": "content",
+          "headline": "Mobility and Balance — The Real Independence Protectors",
+          "body": "Beyond bone and joint health, physical independence depends on three interacting systems: muscle strength (to move and support the body), balance (coordinated by the inner ear, vision and muscle feedback), and flexibility and mobility (to move through a functional range of motion). All three decline with age but all three respond strongly to training. Balance exercises, strength training and mobility work collectively represent the most evidence-backed way to reduce fall risk and maintain independence well into old age.",
+          "bullets": [
+            "Balance declines with age — single-leg stands and balance drills are highly effective interventions",
+            "Strength training reduces fall risk by maintaining the muscle needed to catch and correct",
+            "Flexibility and mobility work supports functional movement range",
+            "Vitamin D and calcium are the key dietary supports for bone health — most relevant when deficient"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Bone density peaks around 30 and declines thereafter, accelerating sharply around menopause. Joints lose cartilage over time, leading to osteoarthritis in many older adults. Hip fractures carry a 20–30% one-year mortality risk. But the skeleton and joints are highly responsive to exercise: resistance training builds bone density, regular activity slows cartilage loss, and balance training dramatically reduces fall risk. These changes are accessible at any age.",
+          "bullets": [
+            "Bone density peaks at 30 — resistance and weight-bearing exercise slow subsequent loss",
+            "Osteoarthritis is common but exercise (not rest) is the best management strategy",
+            "Hip fractures carry high mortality — fall prevention is a genuine health priority",
+            "Strength, balance and mobility training together protect independence most effectively"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is exercise recommended for osteoarthritis rather than rest?",
+          "type": "multiple-choice",
+          "options": [
+            "Because rest causes joints to lock up permanently",
+            "Because exercise distributes nutrients to cartilage, strengthens surrounding muscle and reduces pain — while rest allows muscle to weaken and stiffness to increase",
+            "Because movement reverses cartilage loss in damaged joints",
+            "Because rest triggers inflammation in joints already affected by arthritis"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regular moderate exercise is recommended for osteoarthritis because movement distributes nutrients to cartilage, maintains the surrounding muscle support for joints, and has been shown to reduce pain and improve function in most people. Rest weakens muscle and worsens stiffness. The key is appropriate load, not avoidance."
+        },
+        {
+          "question": "When does bone density typically peak?",
+          "type": "multiple-choice",
+          "options": [
+            "In the mid-40s",
+            "In late adolescence — around age 16–18",
+            "Around age 30",
+            "At birth — and declines continuously from there"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bone density typically peaks around age 30. After that, the balance between bone breakdown (osteoclasts) and bone building (osteoblasts) gradually shifts toward net loss. The rate of loss accelerates significantly around menopause in women due to declining oestrogen. This is why building strong bones early and maintaining them with exercise matters so much."
+        },
+        {
+          "question": "True or false: Regular moderate exercise has been shown to \"wear out\" joints and accelerate osteoarthritis.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The evidence does not support the idea that regular moderate exercise wears out joints. On the contrary, appropriate exercise supports cartilage nutrition, maintains joint-supporting muscle, and in people with osteoarthritis, has been shown to reduce pain and improve function. High-impact repetitive loading without adequate recovery is different — but general activity is protective."
+        }
+      ]
+    },
+    {
+      "id": "hba-18-hormonal-shifts",
+      "dayNumber": 18,
+      "moduleId": "hba-module-3",
+      "title": "Hormonal Shifts and What They Mean",
+      "subtitle": "Hormones change significantly with age — affecting energy, mood, body composition, bone density and more. Here is what is happening and what helps.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Body's Chemical Messengers Are Changing",
+          "body": "Hormones are the body's chemical messaging system — signalling molecules produced by glands that travel through the bloodstream to regulate everything from energy and mood to bone density, muscle mass and sleep. With age, production of several key hormones declines. These changes are normal, but their effects — reduced energy, changes in body composition, sleep disruption, reduced libido — are among the most noticed and most complained about features of middle and older age.",
+          "stat": "1% per year",
+          "statLabel": "Average annual decline in testosterone in men after age 30 (Wu et al., 2008)"
+        },
+        {
+          "type": "content",
+          "headline": "Oestrogen and Menopause",
+          "body": "Oestrogen plays far broader roles than reproductive function. It protects cardiovascular health, supports bone density, influences mood and cognitive function, and affects sleep quality. During the menopause transition, oestrogen levels fall significantly and irregularly over several years, before settling at a lower post-menopausal baseline. This creates the characteristic symptoms — hot flushes, sleep disruption, mood changes, joint discomfort — but also increases cardiovascular and osteoporosis risk for the long term. Hormone replacement therapy (HRT) is increasingly recognised as beneficial for many women, reducing both symptoms and long-term disease risk.",
+          "bullets": [
+            "Oestrogen protects bones, cardiovascular health, mood, cognition and sleep",
+            "Menopause transition typically occurs between ages 45 and 55",
+            "Symptoms include hot flushes, sleep disruption, mood changes and joint discomfort",
+            "Modern HRT evidence shows cardiovascular and bone benefits when started close to menopause"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Testosterone — In Both Men and Women",
+          "body": "Testosterone declines gradually in men from around age 30 — roughly 1% per year. Effects include reduced muscle mass and strength, lower bone density, reduced energy and motivation, and changes in sexual function. Women also produce testosterone (at lower levels) and its decline with age contributes to similar effects. In men, the term \"andropause\" is sometimes used for the gradual testosterone decline, though it is far more gradual and variable than menopause. Lifestyle factors including exercise, sleep, weight management and stress significantly influence testosterone levels.",
+          "callout": "Key insight: Resistance training and adequate sleep are two of the most evidence-backed lifestyle supports for maintaining healthy testosterone levels across the lifespan — without requiring hormone replacement."
+        },
+        {
+          "type": "content",
+          "headline": "Growth Hormone, Insulin and Cortisol",
+          "body": "Growth hormone — secreted most during deep sleep — declines significantly with age, contributing to reduced muscle repair, slower recovery and changes in body composition. This is another mechanism through which poor sleep accelerates biological ageing. Insulin sensitivity also declines with age, partly due to declining muscle mass and increasing visceral fat — raising the risk of type 2 diabetes. Cortisol (the stress hormone) tends to rise with age, contributing to sleep disruption, visceral fat accumulation and immune changes.",
+          "bullets": [
+            "Growth hormone peaks during deep sleep and declines with age — another reason sleep matters",
+            "Declining insulin sensitivity increases type 2 diabetes risk in midlife and beyond",
+            "Cortisol tends to rise with age and chronic stress — disrupting sleep and promoting visceral fat",
+            "Exercise improves insulin sensitivity and partially counteracts the effects of rising cortisol"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "Hormonal shifts are a central feature of biological ageing — affecting energy, mood, body composition, bones and cardiovascular health. Oestrogen decline during menopause carries significant long-term health implications. Testosterone declines gradually in both men and women. Growth hormone and insulin sensitivity also change with age. Lifestyle — particularly exercise, quality sleep and stress management — meaningfully supports hormonal health. For menopause specifically, modern HRT evidence supports its use for many women.",
+          "bullets": [
+            "Oestrogen decline at menopause affects bones, cardiovascular health, sleep and cognition",
+            "Testosterone declines ~1% per year in men from age 30 — affecting muscle, energy and mood",
+            "Growth hormone decline with age is another mechanism through which poor sleep accelerates ageing",
+            "Exercise, sleep and stress management are the key lifestyle levers for hormonal health"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Beyond reproductive function, which of the following does oestrogen help regulate?",
+          "type": "multiple-choice",
+          "options": [
+            "Blood oxygen levels and breathing rate",
+            "Cardiovascular health, bone density, sleep quality and cognitive function",
+            "Kidney filtration and fluid balance only",
+            "Digestive enzyme production and gut motility"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oestrogen plays broad protective roles beyond reproduction — supporting cardiovascular health, bone density, sleep quality, mood and cognitive function. This is why the decline in oestrogen during the menopause transition has such widespread effects and why its long-term health implications extend well beyond reproductive health."
+        },
+        {
+          "question": "What lifestyle factor is most evidence-backed for maintaining healthy testosterone levels?",
+          "type": "multiple-choice",
+          "options": [
+            "High-dose vitamin supplementation",
+            "Resistance training and adequate sleep",
+            "High-fat dietary protocols",
+            "Intermittent fasting alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Resistance training and adequate sleep have the strongest evidence base for supporting healthy testosterone levels. Resistance exercise acutely raises testosterone and maintains muscle signalling. Sleep is critical because growth hormone and testosterone are predominantly secreted during deep sleep. Together they are more effective than any supplement approach."
+        },
+        {
+          "question": "True or false: Cortisol levels tend to rise with age, contributing to sleep disruption and visceral fat accumulation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Cortisol — the primary stress hormone — tends to increase with age, particularly in people with chronic stress, poor sleep or high visceral fat. Elevated cortisol disrupts sleep architecture, promotes visceral fat deposition, impairs immune function and contributes to insulin resistance. Managing chronic stress is therefore an important component of hormonal health in midlife and beyond."
+        }
+      ]
+    },
+    {
+      "id": "hba-19-gut-and-ageing",
+      "dayNumber": 19,
+      "moduleId": "hba-module-3",
+      "title": "The Gut and Ageing",
+      "subtitle": "The trillions of microbes in your gut change with age in ways that affect immunity, inflammation and health throughout the body.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Ecosystem Inside You",
+          "body": "Your gut contains approximately 38 trillion microorganisms — bacteria, viruses, fungi and other microbes — that collectively make up the gut microbiome. This is not a passive bystander. It is an active participant in digestion, immune function, inflammation, mental health and metabolic regulation. The microbiome changes substantially across the lifespan — and research increasingly links age-related microbiome shifts to inflammation, frailty and several major diseases.",
+          "stat": "38 trillion",
+          "statLabel": "Approximate number of microorganisms in the human gut microbiome (Sender et al., 2016)"
+        },
+        {
+          "type": "content",
+          "headline": "How the Gut Microbiome Changes With Age",
+          "body": "In younger adults with a healthy diet and lifestyle, the gut microbiome tends to be diverse — containing a wide range of different species, many of which produce beneficial compounds. With age, diversity tends to decline. Certain beneficial species that produce short-chain fatty acids (which reduce inflammation and support gut lining integrity) become less abundant. Potentially inflammatory species become relatively more common. This shift — called dysbiosis — is linked to increased chronic inflammation, reduced immune function and poorer metabolic health.",
+          "bullets": [
+            "Microbial diversity declines with age in most people",
+            "Beneficial short-chain fatty acid producers (like Bifidobacterium) reduce",
+            "Pro-inflammatory species become relatively more dominant",
+            "This dysbiosis contributes to inflammaging and immune decline"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Gut-Brain Axis and the Gut-Immune Axis",
+          "body": "The gut and brain communicate via a network of nerves, hormones and immune signals called the gut-brain axis. Around 90% of the body's serotonin is produced in the gut. Changes in the gut microbiome can affect mood, cognitive function, stress responses and even sleep quality. Separately, the gut hosts 70–80% of the immune system's cells — making gut health central to immune function. As the microbiome shifts with age, both brain-related and immune-related health can be affected.",
+          "callout": "Key insight: Centenarian gut microbiomes consistently show higher diversity and a different composition from typical older adults — suggesting that a healthy, diverse microbiome may be both a marker and a mechanism of healthy ageing."
+        },
+        {
+          "type": "content",
+          "headline": "How to Support a Healthy Gut Microbiome With Age",
+          "body": "The most evidence-backed approach is dietary diversity — specifically eating a wide variety of plants. Tim Spector's research and the American Gut Project both found that people eating 30 or more different plant foods per week had significantly more diverse microbiomes than those eating fewer. Fermented foods (yogurt, kefir, kimchi, sauerkraut) add live bacteria and support diversity. High fibre intake feeds beneficial microbes. Regular exercise also shifts the microbiome composition toward healthier profiles. Unnecessary antibiotics, high ultra-processed food intake and chronic stress all negatively affect diversity.",
+          "bullets": [
+            "Aim for 30+ different plant foods per week — the most evidence-backed diversity intervention",
+            "Fermented foods (yogurt, kefir, kimchi) add live bacteria and support microbiome diversity",
+            "Dietary fibre feeds beneficial microbes — soluble and insoluble both matter",
+            "Exercise independently improves microbiome composition even without dietary changes"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "The gut microbiome — 38 trillion microorganisms — plays central roles in immunity, inflammation, metabolic health and even brain function. With age, microbial diversity typically declines and pro-inflammatory species become relatively more common. This contributes to inflammaging and immune decline. Eating 30+ plant foods per week, including fermented foods, maintaining fibre intake and exercising regularly are the most evidence-backed approaches to supporting a healthy gut microbiome across the lifespan.",
+          "bullets": [
+            "Gut microbiome diversity declines with age — linked to inflammation and immune decline",
+            "The gut houses 70–80% of immune cells and produces most of the body's serotonin",
+            "Eating 30+ different plant foods per week is the most evidence-backed diversity intervention",
+            "Fermented foods, dietary fibre and exercise all support gut microbiome health"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is \"dysbiosis\" in the context of gut health and ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Complete loss of all gut bacteria due to prolonged antibiotic use",
+            "The age-related shift in the gut microbiome toward lower diversity and relatively more pro-inflammatory species",
+            "A condition where gut bacteria escape into the bloodstream",
+            "Rapid overgrowth of a single bacterial species crowding out all others"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dysbiosis in the context of ageing refers to the gradual shift in the gut microbiome toward lower diversity and a relatively higher proportion of pro-inflammatory species. It is linked to inflammaging, reduced immune function and poorer metabolic health — and is partly driven by dietary changes, reduced activity and other ageing processes."
+        },
+        {
+          "question": "According to Tim Spector's research and the American Gut Project, how many different plant foods per week is associated with significantly greater microbiome diversity?",
+          "type": "multiple-choice",
+          "options": [
+            "5 or more",
+            "15 or more",
+            "30 or more",
+            "50 or more"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research from Tim Spector's group and the American Gut Project found that people eating 30 or more different plant foods per week had significantly more diverse gut microbiomes than those eating fewer. This does not require exotic foods — it includes vegetables, fruits, legumes, nuts, seeds, herbs, spices and wholegrains, each counted separately."
+        },
+        {
+          "question": "True or false: Around 70–80% of the immune system's cells are housed in the gut.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. The gut-associated lymphoid tissue (GALT) contains 70–80% of the body's immune cells. This is why gut health is so central to immune function — and why disruption of the gut microbiome has broad implications for inflammation, immune response and susceptibility to disease."
+        }
+      ]
+    },
+    {
+      "id": "hba-20-what-accelerates-ageing",
+      "dayNumber": 20,
+      "moduleId": "hba-module-3",
+      "title": "What Accelerates Ageing (And What Slows It)",
+      "subtitle": "The evidence is clearer than ever: certain habits dramatically speed up biological ageing, while others slow it. Here is the honest summary.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Gap Between Fast Agers and Slow Agers",
+          "body": "Research using epigenetic clocks, telomere measurements and physical function tests consistently finds that people age at very different biological rates. By midlife, the gap between the fastest and slowest biological agers can exceed 20 years. The factors that explain this gap are not mysterious. They are well-documented, largely modifiable, and available to almost everyone regardless of income or genetics. The challenge is not knowledge — it is consistency.",
+          "stat": "12+ years",
+          "statLabel": "Estimated difference in healthy life expectancy between people with the most and least healthy lifestyle profiles (GBD 2019)"
+        },
+        {
+          "type": "content",
+          "headline": "The Biggest Accelerators",
+          "body": "The lifestyle factors most consistently linked to faster biological ageing in large-scale studies include: smoking (which accelerates biological age by an estimated 2–10 years in long-term smokers), physical inactivity (sedentary people show consistently older biological age markers than active peers), chronic psychological stress (particularly caregiving stress and work burnout), chronic sleep deprivation (even moderate restriction accelerates most ageing biomarkers), obesity — particularly visceral fat — and ultra-processed food intake (linked to telomere shortening and inflammatory ageing).",
+          "bullets": [
+            "Smoking: accelerates biological age by 2–10 years in long-term smokers",
+            "Physical inactivity: one of the strongest independent predictors of accelerated ageing",
+            "Chronic stress: caregiving and burnout linked to significantly shorter telomeres",
+            "Chronic sleep deprivation: accelerates most biological ageing markers",
+            "Visceral obesity and ultra-processed diet: both independently linked to faster ageing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Biggest Protectors",
+          "body": "The lifestyle factors most consistently linked to slower biological ageing include: regular physical activity — particularly a combination of aerobic exercise and strength training — which is the single most comprehensively evidence-backed protector; adequate sleep (7–9 hours); a diet rich in minimally processed plant foods; effective stress management; strong social connections; and not smoking. These factors work through multiple overlapping mechanisms — reducing inflammation, supporting cellular repair, maintaining muscle and metabolic health.",
+          "callout": "Key insight: No single supplement, biohack or intervention comes close to the combined impact of consistent exercise, adequate sleep and a predominantly plant-based, minimally processed diet. This is not a limitation — it is an empowering finding."
+        },
+        {
+          "type": "content",
+          "headline": "The Compounding Effect — Why Starting Matters",
+          "body": "The effect of health behaviours is not linear — it compounds. Someone who has exercised regularly, slept well and eaten a good diet for 20 years does not just have 20 years of benefit. They have 20 years of compounding protection: lower baseline inflammation, better mitochondrial function, denser bones, more muscle, less visceral fat, and fewer years of senescent cell accumulation. Conversely, 20 years of smoking, poor sleep and inactivity also compound — making recovery slower and the gap harder to close, though never impossible.",
+          "bullets": [
+            "Protective lifestyle effects compound over decades — not just add up linearly",
+            "Starting earlier creates larger compounding returns — but starting later is never pointless",
+            "Even people in their 60s and 70s show significant biological age improvements after sustained lifestyle changes",
+            "The goal is not perfection — it is consistency across the areas that matter most"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "What to Take Away",
+          "body": "The factors that accelerate and slow biological ageing are well understood. Smoking, physical inactivity, chronic stress, chronic sleep deprivation and visceral obesity are the biggest accelerators. Regular exercise, adequate sleep, a minimally processed diet, effective stress management and strong social connections are the most powerful protectors. These are not new ideas — but the biological mechanisms explaining exactly why they matter are now clearer than ever.",
+          "bullets": [
+            "Smoking, inactivity, poor sleep, chronic stress and visceral fat are the top accelerators",
+            "Exercise, sleep, diet, stress management and social connection are the top protectors",
+            "Protective effects compound over decades — consistency matters more than perfection",
+            "No supplement or biohack outperforms this combination in the current evidence base"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "By how many years does long-term smoking accelerate biological age according to epigenetic research?",
+          "type": "multiple-choice",
+          "options": [
+            "Less than 1 year on average",
+            "2–10 years in long-term smokers",
+            "Exactly 5 years for every 10 years of smoking",
+            "Only in people with a genetic predisposition to accelerated ageing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Epigenetic clock studies estimate that long-term smoking accelerates biological age by approximately 2–10 years, depending on duration and intensity. Smoking affects virtually every biological ageing mechanism — DNA damage, telomere shortening, mitochondrial function, inflammation and cardiovascular ageing."
+        },
+        {
+          "question": "Which combination of lifestyle factors has the strongest evidence for slowing biological ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "High-dose antioxidant supplements and intermittent fasting",
+            "Regular exercise (aerobic and strength), adequate sleep, minimally processed diet and effective stress management",
+            "Cold exposure, sauna and targeted nutrient supplementation",
+            "Caloric restriction combined with weekly prolonged fasting"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regular exercise (combining aerobic and resistance training), adequate sleep, a minimally processed plant-rich diet and effective stress management consistently show the largest and most replicated effects on biological ageing markers. No supplement, biohacking protocol or individual intervention comes close to this combination in the current evidence base."
+        },
+        {
+          "question": "True or false: It is too late to meaningfully reverse biological ageing markers if you are already in your 60s or 70s.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Studies consistently show that people in their 60s, 70s and beyond can achieve significant improvements in biological age markers through sustained lifestyle changes. Muscle can be built, cardiovascular fitness improved, inflammation reduced and epigenetic age markers measurably changed at any age. Starting earlier creates larger compounding returns — but it is never too late to make a meaningful difference."
+        }
+      ]
+    },
+    {
+      "id": "hba-21-anti-ageing-action-plan",
+      "dayNumber": 21,
+      "moduleId": "hba-module-3",
+      "title": "Your Anti-Ageing Action Plan",
+      "subtitle": "You now understand what drives biological ageing. This final lesson turns that knowledge into a clear, practical plan you can start today.",
+      "duration": "5 min",
+      "xpValue": 100,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Knowledge Is Only the Beginning",
+          "body": "Over the past 21 lessons you have built a genuine understanding of how biological ageing works — the hallmarks, the cellular mechanisms, the systems most at risk and the evidence behind what protects them. But understanding is only half the equation. The other half is consistent action. This final lesson distils everything you have learned into a practical framework you can actually use — starting with where you are right now.",
+          "stat": "3 years",
+          "statLabel": "Average biological age reduction achieved in 8 weeks with a comprehensive lifestyle programme (Fahy et al., 2019)"
+        },
+        {
+          "type": "content",
+          "headline": "The Five Foundations — Non-Negotiable Priorities",
+          "body": "Research consistently identifies five lifestyle domains with the largest and most replicated impact on biological ageing. These are not nice-to-haves — they are the core. Every other intervention (supplements, biohacks, tracking devices) operates at the margin compared to these five. They are: regular physical activity (both aerobic and strength), consistently adequate sleep (7–9 hours), a predominantly minimally processed, plant-rich diet, effective chronic stress management, and not smoking. If you do nothing else, prioritising these five covers the vast majority of modifiable ageing risk.",
+          "bullets": [
+            "Move: aerobic exercise + resistance training — the most comprehensive longevity intervention",
+            "Sleep: 7–9 hours consistently — the single most undervalued health behaviour",
+            "Eat: minimally processed, plant-diverse, protein-adequate — not a specific diet",
+            "Recover: manage chronic stress actively — not just \"try to relax\"",
+            "Do not smoke: the single highest-return individual decision available to smokers"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Starting Where You Are — The Honest Assessment",
+          "body": "The most effective starting point is not the ideal plan — it is an honest look at where you are right now. Which of the five foundations are already in place? Which has the largest gap? Trying to change everything at once is one of the most common reasons people make no lasting change. Research on behaviour change consistently shows that targeting the area with the greatest deficit first produces the largest health return — and that success in one area builds the confidence and habit infrastructure to tackle others.",
+          "callout": "Key insight: Closing the biggest gap in your five foundations will almost always produce a larger biological ageing benefit than adding a supplement, tracking device or advanced protocol on top of an already-incomplete foundation."
+        },
+        {
+          "type": "content",
+          "headline": "The Long Game — Progress Over Perfection",
+          "body": "Biological ageing is a decades-long process. The antidote to it is also a decades-long practice. This means the standard you are aiming for is not perfection in any given week — it is a consistent pattern across years. Missing a week of exercise does not matter. Having a stressful period with poor sleep does not matter. What matters is the average across months and years. Building systems that make it easy to return to your defaults after disruption is more valuable than any individual health intervention.",
+          "bullets": [
+            "Aim for consistency across years — not perfection in any week",
+            "Build systems and environments that make defaults easy — not willpower-dependent",
+            "Each course in the Health series goes deeper into one of these five foundations",
+            "Regular reflection on which foundation needs most attention is itself a powerful practice"
+          ]
+        },
+        {
+          "type": "summary",
+          "headline": "Course Complete — What You Now Know",
+          "body": "You have completed How the Body Ages. You now understand the hallmarks of ageing, the key biological mechanisms (inflammation, mitochondrial decline, telomere shortening, autophagy, senescence, muscle loss, immune changes), how ageing affects the brain, heart, bones and gut, and the evidence behind what accelerates and slows the process. Most importantly, you have a practical framework — the five foundations — to act on this knowledge. The next step is going deeper into whichever area matters most to you.",
+          "bullets": [
+            "The five foundations: move, sleep, eat well, manage stress, and do not smoke",
+            "Target the biggest gap first — it produces the largest return on health investment",
+            "Consistency over years beats perfection in any week",
+            "Every deeper course in the Health series builds on exactly what you have learned here"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the five lifestyle foundations with the most evidence for slowing biological ageing?",
+          "type": "multiple-choice",
+          "options": [
+            "Supplements, cold exposure, intermittent fasting, sauna and continuous glucose monitoring",
+            "Regular physical activity, adequate sleep, minimally processed diet, stress management and not smoking",
+            "Caloric restriction, high-dose antioxidants, hormone optimisation, meditation and cryotherapy",
+            "Strength training only, ketogenic diet, daily fasting, cold plunges and tracking biological age"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five foundations most consistently supported by large-scale evidence are: regular physical activity (aerobic and resistance), consistently adequate sleep (7–9 hours), a minimally processed plant-rich diet, effective chronic stress management, and not smoking. Together they address most modifiable biological ageing risk."
+        },
+        {
+          "question": "What does the evidence suggest about the best starting point for a personal health improvement plan?",
+          "type": "multiple-choice",
+          "options": [
+            "Start with the newest and least-known interventions for the biggest gains",
+            "Change all five foundations simultaneously for maximum compounding effect",
+            "Identify the biggest gap in the five foundations and target that first for the largest return",
+            "Begin with supplements to create a biological foundation before changing behaviour"
+          ],
+          "correctIndex": 2,
+          "explanation": "Behaviour change research consistently shows that targeting the biggest deficit first produces the largest health return and builds the habit infrastructure to tackle other areas. Trying to change everything at once is one of the most common causes of failed attempts. Success in one area creates momentum and confidence for the next."
+        },
+        {
+          "question": "True or false: The goal of this course's action framework is perfect adherence to all five foundations every week.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The framework emphasises consistency across years — not perfection in any given week. Missing workouts, having disrupted sleep during a stressful period, or eating poorly at times does not matter. What drives biological ageing outcomes is the average daily pattern across months and years. Building systems that make it easy to return to defaults after disruption is more valuable than any individual intervention."
+        }
+      ]
+    }
+  ]
+}

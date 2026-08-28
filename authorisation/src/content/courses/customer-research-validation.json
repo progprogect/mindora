@@ -1,0 +1,1750 @@
+{
+  "id": "customer-research-validation",
+  "title": "Customer Research & Validation",
+  "subtitle": "Go deeper than surface-level validation. Understand WHO your customer really is, WHAT job they're hiring your product to do, and HOW to systematically de-risk your business model.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "crv-module-1",
+      "moduleNumber": 1,
+      "title": "Know Your Customer",
+      "subtitle": "Go beyond demographics and assumptions. Build a detailed, evidence-based understanding of who you're serving and what they actually need.",
+      "days": "Lessons 1–7",
+      "skill": "Build detailed customer profiles based on behaviour, pain, and Jobs to Be Done",
+      "lessonIds": [
+        "crv-1-everyone-is-nobody",
+        "crv-2-jobs-to-be-done",
+        "crv-3-forces-of-progress",
+        "crv-4-customer-profiles",
+        "crv-5-early-adopters",
+        "crv-6-demand-landscape",
+        "crv-7-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "crv-module-2",
+      "moduleNumber": 2,
+      "title": "Systematic Discovery",
+      "subtitle": "Run structured research sprints that produce actionable insights — not just interesting data. Learn to watch, listen, and measure.",
+      "days": "Lessons 8–14",
+      "skill": "Run structured research sprints that produce actionable insights",
+      "lessonIds": [
+        "crv-8-research-sprints",
+        "crv-9-observation-vs-interrogation",
+        "crv-10-switch-interview",
+        "crv-11-customer-journey",
+        "crv-12-opportunity-score",
+        "crv-13-segmentation",
+        "crv-14-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "crv-module-3",
+      "moduleNumber": 3,
+      "title": "De-Risking Your Model",
+      "subtitle": "Systematically identify and test your riskiest assumptions. Turn your business model from a collection of guesses into a validated plan.",
+      "days": "Lessons 15–21",
+      "skill": "Systematically identify and test your riskiest assumptions using structured experiments",
+      "lessonIds": [
+        "crv-15-business-model-canvas",
+        "crv-16-assumption-mapping",
+        "crv-17-desirability-feasibility-viability",
+        "crv-18-designing-experiments",
+        "crv-19-evidence-confidence-matrix",
+        "crv-20-research-to-roadmap",
+        "crv-21-module-3-checkpoint"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "crv-1-everyone-is-nobody",
+      "dayNumber": 1,
+      "moduleId": "crv-module-1",
+      "title": "Why \"Everyone\" Is Nobody",
+      "subtitle": "The most dangerous answer to \"Who is your customer?\" is \"Everyone.\" Learn why specificity is the foundation of everything.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Company That Tried to Sell to Everyone",
+          "body": "In 2013, a startup called Everpix built what critics called \"the best photo app ever made.\" It was objectively brilliant — but they marketed it to \"anyone with photos.\" No specific audience. No clear messaging. No focused distribution channel. They shut down with just 55,000 users despite $2.3M in funding. The product was perfect; the customer was undefined.",
+          "stat": "55,000",
+          "statLabel": "users from $2.3M invested — because \"anyone with photos\" isn't a real customer"
+        },
+        {
+          "type": "content",
+          "headline": "The Specificity Paradox",
+          "body": "It feels counterintuitive: narrowing your audience should mean fewer customers, right? Wrong. Specificity creates clarity — in your messaging, your product decisions, your pricing, and your distribution. Facebook started with Harvard students only. Uber started with San Francisco tech workers. Shopify started with snowboard shops. Each became a massive company by being ruthlessly specific first."
+        },
+        {
+          "type": "content",
+          "headline": "What Happens When You Target \"Everyone\"",
+          "body": "When your customer is everyone:",
+          "bullets": [
+            "Your messaging is generic and forgettable (speaks to nobody deeply)",
+            "Your product tries to serve conflicting needs (becomes mediocre for all)",
+            "Your pricing has no anchor (you don't know what they'd pay)",
+            "Your distribution is scattered (you don't know where they hang out)",
+            "Your feedback is contradictory (different people want different things)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Who Would Be Desperate?\" Test",
+          "body": "Instead of asking \"Who could use this?\", ask: \"Who would be DESPERATE for this? Who has this problem so badly they're already cobbling together terrible workarounds?\" That person — specific, identifiable, findable — is your starting customer. Not your only customer forever. Your STARTING customer. Expand later from a position of strength.",
+          "stat": "1",
+          "statLabel": "specific customer segment is all you need to start — expand from strength"
+        },
+        {
+          "type": "try-it",
+          "headline": "Define Your \"Desperate\" Customer",
+          "body": "Complete this: \"My starting customer is a [specific type of person] who [specific situation] and currently [specific workaround they use]. They'd be desperate for my solution because [specific pain].\" Be ruthlessly specific. Not \"small business owners\" — \"Solo consultants who just hit £5k/month and are drowning in admin.\" The more specific, the more useful."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Everpix fail despite being called \"the best photo app ever made\"?",
+          "type": "mcq",
+          "options": [
+            "The technology wasn't good enough",
+            "They marketed to \"anyone with photos\" — no specific target customer",
+            "There were too many competitors",
+            "They ran out of funding too quickly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Everpix's product was excellent but they targeted \"everyone.\" Without a specific audience, their messaging, distribution, and growth strategy had no focus — leading to shutdown despite critical acclaim."
+        },
+        {
+          "question": "Narrowing your target audience always means fewer total customers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Specificity Paradox: narrowing creates clarity in messaging, product, and distribution — which actually accelerates growth. Facebook, Uber, and Shopify all started narrow and expanded from strength."
+        },
+        {
+          "question": "The best question to identify your starting customer is:",
+          "type": "mcq",
+          "options": [
+            "\"Who could potentially use this?\"",
+            "\"Who would be DESPERATE for this — already using terrible workarounds?\"",
+            "\"Who has the most money to spend?\"",
+            "\"Who is the largest market segment?\""
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Who would be desperate?\" identifies people with the strongest pain and highest motivation to adopt. They're your early adopters — the foundation for everything that follows."
+        }
+      ]
+    },
+    {
+      "id": "crv-2-jobs-to-be-done",
+      "dayNumber": 2,
+      "moduleId": "crv-module-1",
+      "title": "Jobs to Be Done",
+      "subtitle": "People don't buy products — they hire solutions to make progress in their lives. Understanding the \"job\" changes everything.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Milkshake That Changed Business Theory",
+          "body": "Clayton Christensen was hired by McDonald's to sell more milkshakes. Traditional research said: make them thicker, cheaper, add flavours. Nothing worked. Then he asked a different question: \"What JOB are people hiring the milkshake to do?\" Answer: bored commuters wanted something to make a long drive interesting. The competition wasn't other milkshakes — it was bananas, bagels, and boredom.",
+          "stat": "40%",
+          "statLabel": "of milkshakes were bought before 8am — by commuters \"hiring\" them for the drive"
+        },
+        {
+          "type": "content",
+          "headline": "The Jobs to Be Done Framework",
+          "body": "Every purchase is a \"hiring decision.\" People hire products to make progress in a specific circumstance. The job has three dimensions:",
+          "bullets": [
+            "Functional: What practical outcome do they need? (Get nutrition during commute)",
+            "Emotional: How do they want to feel? (Less bored, more in control)",
+            "Social: How do they want to be perceived? (Responsible adult, not eating junk)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why This Changes Everything",
+          "body": "When you understand the job, you see your real competition clearly. A milkshake doesn't compete with other milkshakes — it competes with bananas, podcasts, and coffee. Netflix doesn't compete with other streaming services — it competes with sleep, social media, and video games. Your product competes with whatever people currently use to do the same job."
+        },
+        {
+          "type": "content",
+          "headline": "How to Uncover the Job",
+          "body": "Ask these questions: 1) \"What were you trying to accomplish when you bought [product]?\" 2) \"What was happening in your life that made you look for a solution?\" 3) \"What did you use BEFORE this? What was wrong with it?\" 4) \"If this didn't exist, what would you do instead?\" The answers reveal the real job — often surprisingly different from what you'd guess."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Customer's Job Statement",
+          "body": "Complete this template: \"When [situation/trigger], I want to [progress/outcome], so I can [higher purpose].\" Example: \"When I'm on a long boring commute, I want something engaging that I can consume with one hand, so I can arrive at work feeling alert and not starving.\" Write 2-3 job statements for your product. Which one resonates most?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In the milkshake study, what was the real \"job\" customers were hiring milkshakes for?",
+          "type": "mcq",
+          "options": [
+            "A healthy breakfast alternative",
+            "Something to make a long, boring commute more interesting",
+            "A treat for their children",
+            "A cheap meal replacement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Commuters were \"hiring\" milkshakes to make their drive interesting — thick enough to last the whole commute, engaging to consume, filling enough to skip breakfast. The job was fighting boredom, not nutrition."
+        },
+        {
+          "question": "What are the three dimensions of a \"Job to Be Done\"?",
+          "type": "mcq",
+          "options": [
+            "Price, quality, convenience",
+            "Functional, emotional, social",
+            "Awareness, consideration, purchase",
+            "Problem, solution, outcome"
+          ],
+          "correctIndex": 1,
+          "explanation": "Every job has functional (practical outcome), emotional (how they want to feel), and social (how they want to be perceived) dimensions. All three influence the hiring decision."
+        },
+        {
+          "question": "Netflix's real competition is other streaming services like Disney+ and Hulu.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Through a Jobs lens, Netflix competes with anything people hire for the same job (relaxation, entertainment, time-filling) — including sleep, social media, video games, and even going out."
+        }
+      ]
+    },
+    {
+      "id": "crv-3-forces-of-progress",
+      "dayNumber": 3,
+      "moduleId": "crv-module-1",
+      "title": "The Forces of Progress",
+      "subtitle": "Four forces determine whether someone switches to your solution. Understanding them predicts adoption better than any survey.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why People Stay With Terrible Solutions",
+          "body": "Ever wonder why people still use spreadsheets for project management? Or why they stick with a bank they hate? It's not because they don't know better options exist. It's because switching has invisible costs. The Forces of Progress framework reveals the four forces that create — or kill — every purchase decision."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Forces",
+          "body": "Two forces push people toward your solution. Two forces push them away:",
+          "bullets": [
+            "PUSH: Frustration with current situation — \"This is painful/broken/slow\"",
+            "PULL: Attraction to your new solution — \"That looks better/easier/faster\"",
+            "ANXIETY: Fear about the new solution — \"What if it doesn't work? What if I lose data?\"",
+            "HABIT: Comfort with the current situation — \"I know how this works. It's good enough.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Switch Equation",
+          "body": "Someone switches when: (Push + Pull) > (Anxiety + Habit). Most founders focus only on Pull (\"look how great our product is!\") while ignoring the other three forces. But Anxiety and Habit are often far stronger than you think. A product can be objectively better and still lose — because switching feels risky and the status quo feels safe.",
+          "stat": "4",
+          "statLabel": "forces you must understand to predict whether customers will actually switch"
+        },
+        {
+          "type": "content",
+          "headline": "Reducing Anxiety and Habit",
+          "body": "Instead of only increasing Pull (features, benefits), work on reducing the opposing forces: Reduce Anxiety: free trials, money-back guarantees, case studies, \"import your existing data\" features. Reduce Habit: show the hidden cost of staying (\"you're losing £500/month\"), make switching painless (migration tools, onboarding), create urgency (limited-time offer)."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Four Forces",
+          "body": "For your specific customer, write: PUSH — What frustration makes them seek change? (Be specific: what moment triggers \"enough is enough\"?) PULL — What about your solution attracts them? ANXIETY — What fears might stop them switching? (Data loss? Learning curve? Social judgment?) HABIT — What keeps them comfortable with the status quo? Which force is strongest against you?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Someone switches to a new solution when:",
+          "type": "mcq",
+          "options": [
+            "The new product has more features",
+            "Push + Pull > Anxiety + Habit",
+            "The price is lower",
+            "They see an advertisement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Switching happens when the combined force of frustration (push) and attraction (pull) exceeds the combined resistance of fear (anxiety) and comfort with the status quo (habit)."
+        },
+        {
+          "question": "Most founders over-focus on which force while ignoring the others?",
+          "type": "mcq",
+          "options": [
+            "Push (frustration with current solution)",
+            "Pull (attraction to the new solution)",
+            "Anxiety (fear about switching)",
+            "Habit (comfort with status quo)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Founders naturally focus on Pull — \"look how great our product is!\" — while underestimating how strong Anxiety and Habit are. Reducing resistance is often more effective than adding attraction."
+        },
+        {
+          "question": "Free trials and money-back guarantees primarily reduce which force?",
+          "type": "true-false",
+          "options": [
+            "Push (frustration)",
+            "Anxiety (fear of switching)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Free trials and guarantees reduce Anxiety — the fear of making a wrong decision. They lower the perceived risk of trying something new, making it easier for Push + Pull to win."
+        }
+      ]
+    },
+    {
+      "id": "crv-4-customer-profiles",
+      "dayNumber": 4,
+      "moduleId": "crv-module-1",
+      "title": "Customer Profiles That Actually Work",
+      "subtitle": "Forget fictional personas with stock photos. Build profiles based on real behaviour, real pain, and real decision-making patterns.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Problem With \"Meet Sarah, 34, Marketing Manager\"",
+          "body": "Traditional personas are fiction: \"Sarah, 34, marketing manager, likes yoga, drinks oat milk.\" This tells you nothing about why Sarah would buy your product. Two marketing managers with identical demographics might have completely different needs. Behaviour-based profiles replace fiction with fact — and they're built from the research you're learning to do."
+        },
+        {
+          "type": "content",
+          "headline": "Behaviour-Based Profiles",
+          "body": "Instead of demographics, profile your customer by:",
+          "bullets": [
+            "Situation: What circumstance are they in? (Just got promoted, team growing fast)",
+            "Motivation: What progress are they trying to make? (Look competent in new role)",
+            "Constraints: What limits their options? (Small budget, no technical team)",
+            "Current behaviour: What do they do today? (Spreadsheets + Slack + chaos)",
+            "Trigger: What event makes them start looking? (Missed a deadline publicly)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"When ___\" Format",
+          "body": "The most powerful profile format starts with circumstance, not identity: \"When a newly-promoted team lead realises their spreadsheet-based workflow can't handle their growing team, they start looking for project management tools — but they need something their non-technical team will actually adopt, within their limited budget.\" This tells you exactly what to build, how to message it, and where to find them."
+        },
+        {
+          "type": "content",
+          "headline": "Where Profile Data Comes From",
+          "body": "You don't invent profiles — you discover them from: 1) Your Mom Test interviews (Course 2). 2) Support tickets and forum posts from competitors' users. 3) Review sites (what do 2-3 star reviews say?). 4) Reddit/community posts describing the problem. 5) Your own experiments and landing page data. Look for patterns: when 3+ people describe the same situation + motivation + constraint, you've found a profile."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your First Behaviour Profile",
+          "body": "Using data from your interviews or research, fill in: SITUATION: When a [type of person] is [specific circumstance]... MOTIVATION: ...they want to [specific progress]... CONSTRAINTS: ...but they're limited by [specific barriers]... TRIGGER: ...and the moment they start looking is when [specific event]... CURRENT SOLUTION: ...they currently use [existing workaround]."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's wrong with traditional personas like \"Sarah, 34, marketing manager, likes yoga\"?",
+          "type": "mcq",
+          "options": [
+            "They're too specific",
+            "They're based on demographics, not behaviour — they don't explain why someone would buy",
+            "They take too long to create",
+            "They're not detailed enough"
+          ],
+          "correctIndex": 1,
+          "explanation": "Demographic personas are fiction that tells you nothing about purchase motivation. Two people with identical demographics might have completely different needs. Behaviour-based profiles explain the WHY."
+        },
+        {
+          "question": "The five elements of a behaviour-based profile are situation, motivation, constraints, current behaviour, and:",
+          "type": "mcq",
+          "options": [
+            "Age group",
+            "Income level",
+            "Trigger event",
+            "Brand preferences"
+          ],
+          "correctIndex": 2,
+          "explanation": "The trigger event — the specific moment that makes someone start looking for a solution — is crucial. It tells you WHEN to reach them and what messaging will resonate."
+        },
+        {
+          "question": "You should invent customer profiles based on your best guess about the market.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Profiles must be discovered from real data — interviews, support tickets, reviews, community posts. When 3+ people describe the same pattern, you've found a genuine profile."
+        }
+      ]
+    },
+    {
+      "id": "crv-5-early-adopters",
+      "dayNumber": 5,
+      "moduleId": "crv-module-1",
+      "title": "Finding Your Early Adopters",
+      "subtitle": "Not all customers are equal. Early adopters are the people who need your solution so badly they'll tolerate an imperfect product.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Tesla's Brilliant Early Adopter Strategy",
+          "body": "Tesla didn't launch a £25,000 family car. They launched a £100,000 sports car for wealthy tech enthusiasts. Why? These people had money (could absorb risk), loved new technology (would tolerate bugs), and had influence (would tell everyone about it). Tesla's early adopters funded the development of the cars that came next. Your early adopters fund your growth too.",
+          "stat": "$109K",
+          "statLabel": "price of the original Tesla Roadster — designed for early adopters, not everyone"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 Characteristics of Early Adopters",
+          "body": "Your ideal first customers share these traits:",
+          "bullets": [
+            "1. They HAVE the problem acutely (not mildly or theoretically)",
+            "2. They KNOW they have the problem (they're already looking for solutions)",
+            "3. They've TRIED to solve it (they're using workarounds, proving they care)",
+            "4. They have BUDGET or authority to spend (they can actually buy)",
+            "5. They're REACHABLE (you can find and contact them through a specific channel)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Early Adopters vs. Mainstream Customers",
+          "body": "Early adopters will: tolerate bugs, give feedback, pay premium prices, tell others, and co-create the product with you. Mainstream customers won't — they need polished, proven, low-risk solutions. You CANNOT skip early adopters and go straight to mainstream. They're your bridge: they validate, they fund, they evangelise. Without them, you're building in the dark."
+        },
+        {
+          "type": "content",
+          "headline": "Where to Find Early Adopters",
+          "body": "Look for people already exhibiting \"seeking behaviour\": 1) Forums where people complain about existing solutions. 2) Review sites (1-2 star reviews of competitors). 3) People who've built their own workarounds (spreadsheets, automations). 4) Attendees of relevant conferences/meetups. 5) People who follow thought leaders in your space. 6) Users of adjacent products that partially solve the problem."
+        },
+        {
+          "type": "try-it",
+          "headline": "Score Your Early Adopter Candidates",
+          "body": "Think of 3-5 specific people (or types of people) you've encountered in your research. Score each 1-5 on the five criteria: Has the problem acutely? Knows they have it? Tried to solve it? Has budget? Reachable? Total each score. The highest scorer is your ideal early adopter. Can you find 10 more people like them?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Tesla launch a £100,000 sports car instead of a cheap family car?",
+          "type": "mcq",
+          "options": [
+            "They wanted to be a luxury brand",
+            "Wealthy tech enthusiasts would tolerate bugs, fund development, and evangelise the brand",
+            "Sports cars are easier to build",
+            "They couldn't afford to build a cheap car"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tesla's early adopters had money (absorbed risk), loved tech (tolerated imperfections), and had influence (spread the word). They funded the development of mainstream cars that came later."
+        },
+        {
+          "question": "Which is NOT one of the five characteristics of early adopters?",
+          "type": "mcq",
+          "options": [
+            "They have the problem acutely",
+            "They've tried to solve it already",
+            "They have the largest social media following",
+            "They're reachable through a specific channel"
+          ],
+          "correctIndex": 2,
+          "explanation": "Social media following isn't a criterion. The five are: has the problem acutely, knows they have it, tried to solve it, has budget, and is reachable. Influence helps but isn't required."
+        },
+        {
+          "question": "You can skip early adopters and go straight to mainstream customers if your product is good enough.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You cannot skip early adopters. Mainstream customers need proven, polished, low-risk solutions. Early adopters validate your product, fund development, and create the social proof mainstream buyers need."
+        }
+      ]
+    },
+    {
+      "id": "crv-6-demand-landscape",
+      "dayNumber": 6,
+      "moduleId": "crv-module-1",
+      "title": "The Demand Landscape",
+      "subtitle": "Map every alternative your customer currently uses — including \"do nothing.\" Understanding the landscape reveals your positioning.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your Biggest Competitor Is Probably Not Who You Think",
+          "body": "When Slack launched, most people assumed their competition was other chat tools — HipChat, IRC, Campfire. But Stewart Butterfield knew better. Slack's real competition was email. And \"just walking over to someone's desk.\" And \"I'll figure it out myself.\" Understanding the full demand landscape — every way people currently get the job done — reveals your real positioning."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Categories of Alternatives",
+          "body": "Your customer currently \"hires\" one of these:",
+          "bullets": [
+            "Direct competitors: Products that do basically the same thing (Slack vs Teams)",
+            "Indirect competitors: Different approach, same job (email vs chat for team communication)",
+            "DIY solutions: Customer-built workarounds (spreadsheets, manual processes, duct tape)",
+            "Non-consumption: They just live with the problem (do nothing, accept the pain)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Non-Consumption Is Your Best Opportunity",
+          "body": "When people tolerate pain rather than use existing solutions, it usually means: the current solutions are too expensive, too complex, or too hard to access. This is a massive opportunity — if you can make a simpler, cheaper, more accessible version. Robinhood didn't beat existing brokerages by being better at trading. They won by serving people who'd never traded before (non-consumers).",
+          "stat": "0",
+          "statLabel": "commission — Robinhood's weapon against non-consumption in investing"
+        },
+        {
+          "type": "content",
+          "headline": "Mapping Your Landscape",
+          "body": "For each alternative, document: 1) What it is (name/type). 2) What job it does well. 3) Where it fails (its weakness). 4) Who uses it (and why). 5) What would it take to switch from it to you. The weaknesses of existing alternatives are your product's feature list. The strengths tell you what table-stakes features you can't skip."
+        },
+        {
+          "type": "try-it",
+          "headline": "Draw Your Demand Landscape",
+          "body": "List every way your target customer currently gets the job done: 1) Direct competitors (name them). 2) Indirect alternatives (different approach, same outcome). 3) DIY solutions (what have you seen in interviews?). 4) Non-consumption (who just lives with the pain?). For each: what's their biggest weakness? That's where you position yourself."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Slack's real competition when it launched?",
+          "type": "mcq",
+          "options": [
+            "Only other chat tools like HipChat",
+            "Email, walking to someone's desk, and figuring things out alone",
+            "Phone calls and meetings",
+            "Social media platforms"
+          ],
+          "correctIndex": 1,
+          "explanation": "Slack's real competition was every way teams currently communicated — primarily email and in-person conversations. Understanding this full landscape shaped their positioning and messaging."
+        },
+        {
+          "question": "Non-consumption (people doing nothing) is usually the worst opportunity for a new product.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Non-consumption is often the BEST opportunity. It signals that existing solutions are too expensive, complex, or inaccessible. A simpler, cheaper version can unlock a huge new market (like Robinhood did for investing)."
+        },
+        {
+          "question": "The weaknesses of existing alternatives should inform:",
+          "type": "mcq",
+          "options": [
+            "Your pricing only",
+            "Your product's feature list and positioning",
+            "Your company name",
+            "Your investor pitch"
+          ],
+          "correctIndex": 1,
+          "explanation": "Competitors' weaknesses reveal exactly what to build (your differentiation) and how to position it (your messaging). Their strengths show table-stakes features you can't skip."
+        }
+      ]
+    },
+    {
+      "id": "crv-7-module-1-checkpoint",
+      "dayNumber": 7,
+      "moduleId": "crv-module-1",
+      "title": "Your Customer Hypothesis Document",
+      "subtitle": "Consolidate everything from Module 1 into a single, shareable customer hypothesis that guides all your decisions.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Scattered Notes to Clear Direction",
+          "body": "You now have four powerful lenses on your customer: who they are (specificity), what job they're hiring for (JTBD), what forces affect their decision (Four Forces), and what alternatives they currently use (Demand Landscape). Separately, these are interesting. Combined into a single hypothesis document, they're a decision-making engine."
+        },
+        {
+          "type": "content",
+          "headline": "The Customer Hypothesis Document",
+          "body": "Your one-page document should contain:",
+          "bullets": [
+            "1. Starting customer: [Specific type in specific circumstance]",
+            "2. Job to be done: \"When ___, I want to ___, so I can ___\"",
+            "3. Forces: Push (frustration), Pull (attraction), Anxiety (fear), Habit (comfort)",
+            "4. Behaviour profile: Situation, motivation, constraints, trigger, current solution",
+            "5. Early adopter characteristics: Why they'll adopt first",
+            "6. Demand landscape: Direct, indirect, DIY, non-consumption alternatives"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why \"Hypothesis\" — Not \"Fact\"",
+          "body": "We call it a hypothesis deliberately. It's your best current understanding, but it WILL be wrong in places. That's the point — you need something concrete to test against. A hypothesis gives you: 1) A clear starting point for Module 2's research sprints. 2) Specific claims you can validate or invalidate. 3) A shared reference for your team or advisors. 4) Something to update as you learn more."
+        },
+        {
+          "type": "content",
+          "headline": "Using Your Hypothesis Going Forward",
+          "body": "This document drives every future decision: Product features → Does this serve the job? Messaging → Does this address the push/pull? Pricing → What would this specific customer pay? Distribution → Where do these early adopters hang out? Experiments → Which assumptions in this document are most risky? In Module 2, you'll learn to systematically test each element."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Customer Hypothesis Document",
+          "body": "Spend 10 minutes writing your one-page hypothesis. Include all six elements: 1) Starting customer. 2) Job statement. 3) Four forces. 4) Behaviour profile. 5) Early adopter traits. 6) Demand landscape summary. Don't aim for perfection — aim for clarity. You'll refine this throughout the rest of the course. Share it with someone and ask: \"Does this feel specific enough to act on?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is the customer document called a \"hypothesis\" rather than a \"fact\"?",
+          "type": "mcq",
+          "options": [
+            "Because you haven't done enough research yet",
+            "Because it's your best understanding but will be wrong in places — it needs testing",
+            "Because it sounds more professional",
+            "Because customers always change their minds"
+          ],
+          "correctIndex": 1,
+          "explanation": "It's a hypothesis because some parts will be wrong. That's fine — having concrete claims to test is better than vague assumptions. Module 2 teaches systematic testing of each element."
+        },
+        {
+          "question": "How many elements should the Customer Hypothesis Document contain?",
+          "type": "mcq",
+          "options": [
+            "3 (customer, product, price)",
+            "6 (customer, job, forces, profile, early adopters, landscape)",
+            "9 (the Business Model Canvas)",
+            "2 (problem and solution)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Six elements: starting customer, job statement, four forces, behaviour profile, early adopter characteristics, and demand landscape. Together they form a complete hypothesis to test."
+        },
+        {
+          "question": "The Customer Hypothesis Document should be perfected before moving forward.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Don't aim for perfection — aim for clarity. The document will be refined throughout the course as you gather more evidence. A clear-but-imperfect hypothesis is more useful than a vague-but-\"safe\" one."
+        }
+      ]
+    },
+    {
+      "id": "crv-8-research-sprints",
+      "dayNumber": 8,
+      "moduleId": "crv-module-2",
+      "title": "Research Sprints: The 5-Day Framework",
+      "subtitle": "Stop doing research forever. Compress discovery into focused 5-day sprints that produce clear, actionable answers.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Most Research Never Ends",
+          "body": "Here's a pattern that kills startups: \"We're still doing customer research.\" Weeks become months. The research becomes a shield against the scary act of building. Google Ventures solved this with Design Sprints — time-boxed research that forces decisions. You're going to adapt their approach: a 5-day research sprint that starts Monday and delivers answers by Friday.",
+          "stat": "5",
+          "statLabel": "days — all the time you need for a complete research sprint with clear outcomes"
+        },
+        {
+          "type": "content",
+          "headline": "The 5-Day Research Sprint",
+          "body": "Here's your week:",
+          "bullets": [
+            "Monday: Define — What specific question are we answering? What would \"good enough\" evidence look like?",
+            "Tuesday: Recruit — Find and schedule 5-7 target customers for interviews/tests",
+            "Wednesday: Prepare — Design your interview script, observation plan, or test",
+            "Thursday: Execute — Run all interviews/observations/tests in one intensive day",
+            "Friday: Synthesise — Pattern-match, document findings, make decision"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Power of Constraint",
+          "body": "Why five days? Because constraints force quality. Without a deadline, you'll keep \"refining\" your questions, recruiting \"just a few more\" people, and delaying the uncomfortable moment of deciding. The time-box forces you to be good enough, not perfect. And in early-stage research, good enough on Friday beats perfect in three months."
+        },
+        {
+          "type": "content",
+          "headline": "Setting Your Sprint Question",
+          "body": "The most important moment is Monday: choosing your question. Bad sprint questions: \"What do customers think about our idea?\" (too vague). Good sprint questions: \"Would freelance designers pay £30/month for automated invoicing?\" (specific, measurable, actionable). The question must be answerable within the sprint AND lead to a clear decision."
+        },
+        {
+          "type": "try-it",
+          "headline": "Plan Your First Research Sprint",
+          "body": "Write: 1) SPRINT QUESTION: What specific thing do I need to learn? 2) SUCCESS CRITERIA: What evidence would make me confident? (e.g., \"4/6 interviewees describe this pain unprompted\"). 3) RECRUIT: Where will I find 5-7 target customers this week? 4) METHOD: Interviews? Observation? Landing page test? 5) DECISION: What will I do with a YES result? What about NO?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the biggest problem with open-ended customer research?",
+          "type": "mcq",
+          "options": [
+            "It costs too much money",
+            "It never ends — becoming a shield against making decisions",
+            "Customers don't want to participate",
+            "It requires a large team"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without time constraints, research becomes procrastination. It feels productive but delays the scary act of deciding and building. Time-boxed sprints force decisions."
+        },
+        {
+          "question": "A good research sprint question is:",
+          "type": "mcq",
+          "options": [
+            "\"What do customers think about our idea?\"",
+            "\"Would freelance designers pay £30/month for automated invoicing?\"",
+            "\"Is our market big enough?\"",
+            "\"What features should we build?\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Good sprint questions are specific (who, what, how much), measurable (yes/no/number), and actionable (the answer tells you what to do next)."
+        },
+        {
+          "question": "How many target customers should you recruit for a research sprint?",
+          "type": "mcq",
+          "options": [
+            "1-2",
+            "5-7",
+            "20-30",
+            "100+"
+          ],
+          "correctIndex": 1,
+          "explanation": "5-7 participants is the sweet spot for qualitative research — enough to spot patterns, few enough to schedule in one sprint. Jakob Nielsen's research shows 5 users reveal ~85% of usability issues."
+        }
+      ]
+    },
+    {
+      "id": "crv-9-observation-vs-interrogation",
+      "dayNumber": 9,
+      "moduleId": "crv-module-2",
+      "title": "Observation vs. Interrogation",
+      "subtitle": "What people DO tells you more than what they SAY. Learn to watch behaviour instead of just asking questions.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The IKEA Revelation",
+          "body": "IKEA doesn't just ask customers what furniture they want. They send researchers into people's homes to WATCH how they live. They discovered that most people's \"junk drawers\" are near the front door — leading to their hallway storage range. They noticed people stacking books on the floor beside full bookshelves — leading to modular shelving. Observation reveals truths people can't articulate."
+        },
+        {
+          "type": "content",
+          "headline": "The Say-Do Gap",
+          "body": "People are unreliable narrators of their own behaviour. They say they eat healthy (but buy crisps). They say they'll pay for premium (but choose free). They say they care about privacy (but share everything on social media). This isn't lying — it's a genuine gap between self-perception and reality. Observation bridges that gap.",
+          "bullets": [
+            "What people SAY they do → aspirational (who they want to be)",
+            "What people THINK they do → rationalised (filtered through bias)",
+            "What people ACTUALLY do → truth (observable, measurable behaviour)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Three Observation Methods",
+          "body": "1) Contextual inquiry: Watch someone do their task in their natural environment. Don't interrupt — just note what they do, the workarounds, the friction points. 2) Screen recording: Tools like Hotjar or FullStory record how people use websites/apps. Where do they hesitate? What do they ignore? 3) Behavioural data: Analytics, purchase history, usage patterns. What people do at scale."
+        },
+        {
+          "type": "content",
+          "headline": "What to Watch For",
+          "body": "During observation, look for: 1) Workarounds — when people adapt a tool in unexpected ways. 2) Frustration signals — sighs, restarts, abandonment, switching tabs. 3) Skipped steps — when people ignore features or skip processes. 4) Help-seeking — when they ask someone else or Google for help. 5) Emotional reactions — excitement, relief, confusion, annoyance. Each is a product opportunity."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design a Mini-Observation",
+          "body": "Choose one: A) Ask someone to do a task related to your product area while you watch (don't help!). Note every hesitation, workaround, or frustration. B) If you have a landing page/prototype, use a free screen recording tool and watch 3 people navigate it. Where do they get stuck? C) Spend 30 minutes in a forum/community watching how people describe their problem. What language do they use?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"Say-Do Gap\"?",
+          "type": "mcq",
+          "options": [
+            "The time between talking about a product and buying it",
+            "The difference between what people say they do and what they actually do",
+            "A marketing technique for creating urgency",
+            "The gap between product launch and first sale"
+          ],
+          "correctIndex": 1,
+          "explanation": "People's stated behaviour (aspirational) doesn't match their real behaviour (observable). This gap means interviews alone can mislead you — observation reveals the truth."
+        },
+        {
+          "question": "IKEA's home visits are an example of which observation method?",
+          "type": "mcq",
+          "options": [
+            "Screen recording",
+            "Behavioural data analysis",
+            "Contextual inquiry",
+            "A/B testing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Contextual inquiry means watching people in their natural environment doing real tasks. IKEA researchers observe how people actually live — not how they say they live."
+        },
+        {
+          "question": "During observation, workarounds and frustration signals are both product opportunities.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Workarounds show unmet needs (people adapting tools in unexpected ways). Frustration signals show pain points. Both are opportunities to create something better."
+        }
+      ]
+    },
+    {
+      "id": "crv-10-switch-interview",
+      "dayNumber": 10,
+      "moduleId": "crv-module-2",
+      "title": "The Switch Interview",
+      "subtitle": "The most powerful interview technique in customer research. Understand why people recently changed solutions — and what triggered it.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Interview That Reveals Everything",
+          "body": "Bob Moesta (co-creator of Jobs to Be Done) discovered something powerful: if you interview people who recently SWITCHED solutions — changed banks, changed software, changed habits — you can reconstruct every force that drove that decision. The Switch Interview is like forensic detective work on a purchase decision. It reveals motivations people can't even articulate in normal conversation."
+        },
+        {
+          "type": "content",
+          "headline": "The Timeline Technique",
+          "body": "The Switch Interview reconstructs the decision timeline backwards:",
+          "bullets": [
+            "First thought: \"When did you first think about switching?\" (Often months before the actual switch)",
+            "Passive looking: \"What made you start paying attention to alternatives?\"",
+            "Active looking: \"What triggered you to actually start comparing options?\"",
+            "Deciding: \"What made you choose THIS solution over others?\"",
+            "Consuming: \"What was your first experience like? Did it meet expectations?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why Recent Switchers Are Gold",
+          "body": "People who switched in the last 90 days can vividly recall the emotional journey. They remember the exact moment of frustration. The trigger event. The anxiety about changing. The habit that almost stopped them. This emotional data is IMPOSSIBLE to get from surveys or hypothetical questions. And it maps directly to your Four Forces from Module 1.",
+          "stat": "90",
+          "statLabel": "days — interview people who switched within this window for vivid, accurate recall"
+        },
+        {
+          "type": "content",
+          "headline": "Questions That Unlock the Story",
+          "body": "Key questions: \"Take me back to the moment you first thought about changing...\" \"What was happening in your life/work at that time?\" \"What had you tried before? Why didn't those work?\" \"When you were comparing options, what worried you?\" \"Was there a moment you almost didn't switch? What nearly stopped you?\" \"What would have happened if you'd done nothing?\" These questions feel like a conversation, not an interrogation."
+        },
+        {
+          "type": "try-it",
+          "headline": "Find and Interview a Recent Switcher",
+          "body": "Find someone who recently switched a solution related to your space (changed a tool, started a new habit, switched providers). Run through the timeline: 1) \"When did you first think about changing?\" 2) \"What was the tipping point?\" 3) \"What nearly stopped you?\" 4) \"What did you expect vs. what actually happened?\" Record what they say. You'll hear the Four Forces in their story."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why are people who switched within the last 90 days ideal interview subjects?",
+          "type": "mcq",
+          "options": [
+            "They're more likely to switch again",
+            "They can vividly recall the emotional journey and specific triggers",
+            "They're easier to find",
+            "They're more honest than other people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recent switchers have vivid emotional recall — the frustration, the trigger, the anxiety, the relief. After 90 days, memory fades and people rationalise their decisions after the fact."
+        },
+        {
+          "question": "The Switch Interview reconstructs the decision timeline in which direction?",
+          "type": "mcq",
+          "options": [
+            "Forward from birth to present",
+            "Starting from the purchase and working backwards to the first thought",
+            "Random order depending on the conversation",
+            "Only focusing on the moment of purchase"
+          ],
+          "correctIndex": 1,
+          "explanation": "The technique works backwards from the switch moment to the first thought — revealing the full timeline of events, emotions, and forces that drove the decision."
+        },
+        {
+          "question": "Switch Interviews can be effectively replaced with online surveys.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Surveys can't capture the emotional nuance and unexpected details that emerge in conversation. The timeline technique requires follow-up questions and probing that only live interviews allow."
+        }
+      ]
+    },
+    {
+      "id": "crv-11-customer-journey",
+      "dayNumber": 11,
+      "moduleId": "crv-module-2",
+      "title": "Mapping the Customer Journey",
+      "subtitle": "From first awareness of a problem to becoming a loyal advocate — every step is an opportunity or a risk.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Invisible Steps Before \"Buy Now\"",
+          "body": "When someone clicks \"Buy Now\" on your product, you see one moment. But behind that click is a journey that started days, weeks, or months earlier: a moment of frustration, a search query, a recommendation from a friend, three comparison tabs, a hesitation, a review read, and finally — the click. Understanding every step of this journey reveals where customers get lost, stuck, or stolen by competitors."
+        },
+        {
+          "type": "content",
+          "headline": "The Five Stages",
+          "body": "Every customer journey has these stages:",
+          "bullets": [
+            "1. Trigger: Something happens that creates awareness of a problem (\"My spreadsheet crashed and I lost 2 hours of work\")",
+            "2. Search: They look for solutions (Google, ask friends, browse reviews)",
+            "3. Evaluate: They compare options (features, price, trust signals)",
+            "4. Purchase: They commit (buy, sign up, download)",
+            "5. Experience: They use it and form opinions (first use → ongoing → renewal/churn)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Mapping Emotions at Each Stage",
+          "body": "At each stage, document: 1) What they're DOING (actions, touchpoints). 2) What they're THINKING (\"Is this worth the hassle?\"). 3) What they're FEELING (frustrated, hopeful, anxious, overwhelmed). 4) Pain points — where do they get stuck or drop off? 5) Opportunities — where could you make this easier/better? The emotional map matters more than the logical one."
+        },
+        {
+          "type": "content",
+          "headline": "Journey Mapping From Research Data",
+          "body": "You build journey maps from your Switch Interviews and observations. When multiple people describe the same sequence — same trigger, same search pattern, same evaluation criteria — that's your customer journey. Don't invent it from imagination. Your interviews from Lesson 10 already contain journey data — go back and extract it."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map One Customer's Journey",
+          "body": "Using data from a Switch Interview or your own experience as a customer in a related space, draw the journey: TRIGGER → What happened? SEARCH → Where did they look? How? EVALUATE → What criteria mattered? What nearly stopped them? PURCHASE → What tipped them over? EXPERIENCE → What was the first day like? For each stage, note the emotion (emoji helps: 😤→🤔→😰→😊→😍 or 😤→🤔→😰→😞)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the five stages of a customer journey?",
+          "type": "mcq",
+          "options": [
+            "Awareness, Interest, Decision, Action, Loyalty",
+            "Trigger, Search, Evaluate, Purchase, Experience",
+            "Problem, Solution, Pricing, Features, Support",
+            "Attract, Convert, Close, Delight, Retain"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five stages are: Trigger (problem becomes conscious), Search (looking for solutions), Evaluate (comparing options), Purchase (committing), and Experience (using and judging)."
+        },
+        {
+          "question": "Customer journey maps should be invented based on logical assumptions about your market.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Journey maps must be built from real research data — Switch Interviews, observations, and analytics. Invented maps just reflect your biases, not reality."
+        },
+        {
+          "question": "At each journey stage, you should document actions, thoughts, feelings, pain points, and:",
+          "type": "mcq",
+          "options": [
+            "Revenue potential",
+            "Competitor names",
+            "Opportunities to improve the experience",
+            "Technical requirements"
+          ],
+          "correctIndex": 2,
+          "explanation": "Opportunities at each stage show where you can create competitive advantage — making the journey easier, faster, or more pleasant than alternatives."
+        }
+      ]
+    },
+    {
+      "id": "crv-12-opportunity-score",
+      "dayNumber": 12,
+      "moduleId": "crv-module-2",
+      "title": "Quantifying Pain: The Opportunity Score",
+      "subtitle": "Move beyond \"this seems important\" to a numbered score that tells you exactly which problems are worth solving.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Framework That Reveals Hidden Goldmines",
+          "body": "Anthony Ulwick's Opportunity Score (from Outcome-Driven Innovation) is elegantly simple: ask customers to rate how IMPORTANT an outcome is AND how SATISFIED they are with current solutions. High importance + low satisfaction = massive opportunity. This one formula has guided companies like Microsoft, Bosch, and Arm & Hammer to billion-dollar product decisions.",
+          "stat": "10+",
+          "statLabel": "Opportunity Score = underserved need worth building for (importance + gap)"
+        },
+        {
+          "type": "content",
+          "headline": "The Formula",
+          "body": "Opportunity Score = Importance + (Importance - Satisfaction). For each customer outcome/need, ask two questions: 1) \"How important is it to [desired outcome]?\" (1-10 scale). 2) \"How satisfied are you with your current ability to [desired outcome]?\" (1-10 scale). Scores above 10 = underserved (build here). Scores 6-10 = appropriately served. Scores below 6 = overserved (don't invest here)."
+        },
+        {
+          "type": "content",
+          "headline": "Identifying Outcomes to Score",
+          "body": "The outcomes come from your research — specifically from Job to Be Done analysis. Break the job into measurable outcomes: For \"manage my team's projects effectively\": • Minimise time spent creating status reports • Minimise tasks that fall through the cracks • Minimise miscommunication between team members • Minimise time searching for information. Each outcome gets scored separately.",
+          "bullets": [
+            "Source outcomes from Switch Interviews (\"What frustrated you about the old solution?\")",
+            "Source from observation (what workarounds do they create?)",
+            "Source from support/review complaints about existing products",
+            "Aim for 15-30 outcome statements to score"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Using Opportunity Scores Strategically",
+          "body": "Once scored, you have a prioritised list of what to build: Top-scoring outcomes (12+) = your core features (these alone justify the product). Mid-scoring (8-12) = nice-to-have features for later versions. Low-scoring (<6) = overserved needs — competitors already handle these well, don't waste time competing here. This removes opinion from product decisions."
+        },
+        {
+          "type": "try-it",
+          "headline": "Score 5 Customer Outcomes",
+          "body": "List 5 outcomes related to your customer's job. For each, estimate (or better — ask customers): Importance (1-10) and Satisfaction (1-10). Calculate: Importance + (Importance - Satisfaction). Which outcome scores highest? That's where your product should focus first. If you can survey even 5-10 target customers, the patterns become remarkably clear."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does an Opportunity Score above 10 indicate?",
+          "type": "mcq",
+          "options": [
+            "The market is too competitive",
+            "An underserved need worth building for — high importance, low current satisfaction",
+            "Customers are willing to pay premium prices",
+            "The technology is too complex to build"
+          ],
+          "correctIndex": 1,
+          "explanation": "Score >10 means the outcome is important to customers AND they're unsatisfied with current solutions. This gap between importance and satisfaction is your opportunity."
+        },
+        {
+          "question": "The Opportunity Score formula is:",
+          "type": "mcq",
+          "options": [
+            "Importance × Satisfaction",
+            "Importance + (Importance - Satisfaction)",
+            "Satisfaction - Importance",
+            "(Importance + Satisfaction) ÷ 2"
+          ],
+          "correctIndex": 1,
+          "explanation": "The formula weights importance: Importance + (Importance - Satisfaction). This means high importance with low satisfaction creates the highest scores — revealing underserved needs."
+        },
+        {
+          "question": "An outcome with a low Opportunity Score (below 6) means you should invest heavily in solving it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Low scores indicate overserved needs — customers are already satisfied with existing solutions. Don't waste resources competing here. Focus on high-scoring underserved outcomes instead."
+        }
+      ]
+    },
+    {
+      "id": "crv-13-segmentation",
+      "dayNumber": 13,
+      "moduleId": "crv-module-2",
+      "title": "Segmentation That Drives Decisions",
+      "subtitle": "Cluster customers by what they DO, not who they ARE. Behaviour-based segments reveal actionable opportunities demographics never will.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why \"Millennials\" Is a Useless Segment",
+          "body": "There are 72 million millennials in the US alone. They include CEOs and baristas, parents and singles, tech workers and farmers. \"Millennials\" tells you nothing about behaviour, need, or willingness to pay. Effective segmentation groups people by what they DO and NEED — not by arbitrary demographic buckets. The companies that get this right build products people actually want."
+        },
+        {
+          "type": "content",
+          "headline": "Behavioural Segmentation Dimensions",
+          "body": "Group customers by:",
+          "bullets": [
+            "Job to be Done: What outcome are they hiring a solution for?",
+            "Current behaviour: What do they use today? (DIY, competitor, nothing)",
+            "Trigger frequency: How often do they encounter the problem? (Daily vs. yearly)",
+            "Pain severity: How badly does it hurt? (Mild inconvenience vs. business-critical)",
+            "Switching readiness: Are they actively looking or passively dissatisfied?",
+            "Willingness to pay: Free-only, price-sensitive, or value-driven?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Segmentation Decision Matrix",
+          "body": "A useful segment must pass four tests: 1) Identifiable: Can you find these people? (If you can't reach them, the segment is academic.) 2) Sizeable: Are there enough of them? (Doesn't need to be millions — but enough to sustain a business.) 3) Actionable: Does knowing this change what you build or how you sell? 4) Distinct: Do they need something meaningfully different from other segments?"
+        },
+        {
+          "type": "content",
+          "headline": "From Segments to Strategy",
+          "body": "Once you have clear segments, you can: 1) Choose your beachhead: Which segment is most underserved AND most reachable? Start there. 2) Customise messaging: Same product, different angles for different segments. 3) Prioritise features: Which segment's needs should you build for first? 4) Set pricing: Different segments have different willingness to pay. 5) Plan expansion: After winning segment A, which segment B is most adjacent?"
+        },
+        {
+          "type": "try-it",
+          "headline": "Segment Your Research Data",
+          "body": "Look at all the people you've interviewed or observed. Can you group them into 2-4 segments based on BEHAVIOUR (not demographics)? For each segment, note: 1) What job are they trying to do? 2) How severe is their pain? 3) What do they currently use? 4) How much would they pay? 5) Where can you find more of them? Which segment should you target first?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is \"Millennials\" a poor customer segment?",
+          "type": "mcq",
+          "options": [
+            "There aren't enough millennials",
+            "It's based on demographics, not behaviour — it tells you nothing about needs or willingness to pay",
+            "Millennials don't buy products",
+            "It's too specific a group"
+          ],
+          "correctIndex": 1,
+          "explanation": "72 million people with vastly different behaviours, needs, and budgets. Demographic segments don't predict purchasing behaviour. Behavioural segments (what people DO and NEED) are actionable."
+        },
+        {
+          "question": "A useful segment must be identifiable, sizeable, distinct, and:",
+          "type": "mcq",
+          "options": [
+            "Profitable",
+            "Young",
+            "Actionable (knowing it changes what you build or sell)",
+            "Growing rapidly"
+          ],
+          "correctIndex": 2,
+          "explanation": "Actionable means the segment insight changes your decisions — what to build, how to message, where to distribute. A segment that doesn't change your actions is just an interesting fact."
+        },
+        {
+          "question": "You should try to serve all segments equally from day one.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Choose one beachhead segment — the most underserved AND reachable — and win there first. Trying to serve everyone equally leads to a mediocre product for all. Expand segment by segment."
+        }
+      ]
+    },
+    {
+      "id": "crv-14-module-2-checkpoint",
+      "dayNumber": 14,
+      "moduleId": "crv-module-2",
+      "title": "Your Research Synthesis",
+      "subtitle": "Consolidate a week of systematic discovery into a one-page research synthesis that drives your next decisions.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Data to Decisions",
+          "body": "You've spent a week learning to observe, interview, score, and segment. But research without synthesis is just a pile of notes. Today you transform your scattered findings into a structured synthesis — a single document that makes the right next step obvious. This is where research becomes strategy."
+        },
+        {
+          "type": "content",
+          "headline": "The Research Synthesis Template",
+          "body": "Your one-page synthesis should contain:",
+          "bullets": [
+            "1. Sprint question: What were you trying to learn?",
+            "2. Method: How did you investigate? (Interviews, observation, scoring)",
+            "3. Key findings: Top 3-5 insights (with evidence count — e.g., \"5/7 participants said...\")",
+            "4. Surprises: What did you learn that contradicted your assumptions?",
+            "5. Updated customer profile: How has your understanding of the customer evolved?",
+            "6. Top opportunities: Highest Opportunity Scores (the underserved needs)",
+            "7. Decision: Based on this evidence, what will you DO next?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Strength of Evidence\" Check",
+          "body": "Before trusting your findings, ask: 1) Sample size: Did I talk to enough people? (5+ for patterns to emerge). 2) Consistency: Did multiple people independently say the same thing? 3) Behaviour vs. opinion: Am I basing this on what people DO or what they SAY? 4) Representativeness: Are these people genuinely my target segment? If any answer is \"no,\" note it as a limitation — don't hide it."
+        },
+        {
+          "type": "content",
+          "headline": "Updating Your Customer Hypothesis",
+          "body": "Go back to your Module 1 Customer Hypothesis Document. What needs updating? Maybe your Job to Be Done was slightly wrong. Maybe a different segment emerged as the real early adopter. Maybe the forces are different than you assumed. Update it now — this is how hypotheses evolve. The document should always reflect your CURRENT best understanding."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Research Synthesis",
+          "body": "Using data from this module (even if it's limited), complete the synthesis: 1) What question did you investigate? 2) What method did you use? 3) What are your top 3 findings? (With evidence). 4) What surprised you? 5) How has your customer profile changed? 6) What's your #1 opportunity? 7) What will you DO in the next 7 days based on this? Make the decision concrete and time-bound."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes a research finding trustworthy?",
+          "type": "mcq",
+          "options": [
+            "It confirms what you already believed",
+            "Multiple people independently said the same thing, based on behaviour not just opinion",
+            "A single expert validated it",
+            "It's based on a large online survey"
+          ],
+          "correctIndex": 1,
+          "explanation": "Trustworthy findings are consistent (multiple sources), behaviour-based (what people DO), and representative (from your actual target segment). Confirmation of existing beliefs is actually a red flag for bias."
+        },
+        {
+          "question": "The research synthesis should include \"surprises\" — things that contradicted your assumptions.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Surprises are often the most valuable findings — they show where your mental model was wrong. Documenting them prevents you from unconsciously filtering out inconvenient truths."
+        },
+        {
+          "question": "After completing research, your Customer Hypothesis Document should:",
+          "type": "mcq",
+          "options": [
+            "Be thrown away and started fresh",
+            "Remain unchanged (the original hypothesis was correct)",
+            "Be updated to reflect your current best understanding based on evidence",
+            "Be shared publicly for feedback"
+          ],
+          "correctIndex": 2,
+          "explanation": "The hypothesis document is a living document — update it with every research sprint. It should always reflect your CURRENT best understanding, incorporating new evidence as you learn."
+        }
+      ]
+    },
+    {
+      "id": "crv-15-business-model-canvas",
+      "dayNumber": 15,
+      "moduleId": "crv-module-3",
+      "title": "The Business Model Canvas: A Living Document",
+      "subtitle": "Map your entire business on a single page — then use it to find the assumptions that could kill you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One Page That Replaces a 50-Page Business Plan",
+          "body": "Alexander Osterwalder created the Business Model Canvas after watching founders waste months on business plans nobody reads. His insight: a business model isn't a document — it's a system of interconnected hypotheses. The Canvas maps all nine components on a single page, making relationships visible. Over 5 million companies now use it to design, test, and evolve their business models.",
+          "stat": "5M+",
+          "statLabel": "companies worldwide use the Business Model Canvas to design their models"
+        },
+        {
+          "type": "content",
+          "headline": "The Nine Building Blocks",
+          "body": "Every business model has these components:",
+          "bullets": [
+            "1. Customer Segments: Who do you serve? (Your Module 1 work)",
+            "2. Value Propositions: What job do you do for them? (JTBD)",
+            "3. Channels: How do you reach and deliver to them?",
+            "4. Customer Relationships: How do you acquire, retain, grow?",
+            "5. Revenue Streams: How do they pay? How much?",
+            "6. Key Resources: What do you need to deliver? (People, tech, IP)",
+            "7. Key Activities: What must you DO to deliver?",
+            "8. Key Partnerships: Who helps you? (Suppliers, platforms)",
+            "9. Cost Structure: What does it cost to operate?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why It's \"Living\"",
+          "body": "A Canvas isn't a plan you create once. It's a tool you update weekly as you learn. First version: 90% guesses. After Module 1: customer segments and value prop are grounded in research. After Module 2: channels and relationships have evidence. By course end: most blocks have at least some validation. The Canvas evolves from hypothesis to fact, one experiment at a time."
+        },
+        {
+          "type": "content",
+          "headline": "Reading the Canvas as a System",
+          "body": "The real power is seeing connections: If you change Customer Segments, your Channels probably change too. If you change Revenue Streams (pricing model), your Value Proposition shifts. If you add a Key Partnership, your Cost Structure changes. Nothing is independent. When you test one block, check how the result affects connected blocks."
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your First Canvas",
+          "body": "Fill in all 9 blocks with your current best guess. Use sticky notes or a digital template (Canvanizer, Miro, or even a 3×3 grid on paper). For blocks you've researched (segments, value prop), write with confidence. For blocks you haven't tested (channels, pricing, costs), write in a different colour — these are your untested hypotheses. Tomorrow you'll learn to prioritise which to test first."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many building blocks does the Business Model Canvas have?",
+          "type": "mcq",
+          "options": [
+            "5",
+            "7",
+            "9",
+            "12"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nine blocks: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure."
+        },
+        {
+          "question": "The Business Model Canvas should be created once and then followed without changes.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Canvas is a living document updated weekly as you learn. It evolves from mostly-hypotheses to mostly-validated-facts through systematic experimentation."
+        },
+        {
+          "question": "If you change your Customer Segments, what else likely changes?",
+          "type": "mcq",
+          "options": [
+            "Nothing — blocks are independent",
+            "Only the Revenue Streams",
+            "Channels, Relationships, and potentially Value Proposition",
+            "Only the Cost Structure"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Canvas is a system — blocks are interconnected. Different customers need different channels, different relationship types, and sometimes a different value proposition emphasis."
+        }
+      ]
+    },
+    {
+      "id": "crv-16-assumption-mapping",
+      "dayNumber": 16,
+      "moduleId": "crv-module-3",
+      "title": "Assumption Mapping",
+      "subtitle": "Every block of your Canvas contains hidden assumptions. Learn to surface them, rank them by risk, and decide which to test first.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Assumptions That Kill Startups",
+          "body": "When Webvan raised $800M to deliver groceries online in 1999, they assumed: people would pay for delivery, orders would be large enough to be profitable, they could build warehouses cheaper than supermarkets, and demand would grow fast enough to fill capacity. Every assumption was wrong. They didn't fail from bad execution — they failed from untested assumptions. Your Canvas is full of similar hidden bets.",
+          "stat": "$800M",
+          "statLabel": "raised and lost by Webvan — killed by untested assumptions about customer behaviour"
+        },
+        {
+          "type": "content",
+          "headline": "How to Extract Assumptions",
+          "body": "For each Canvas block, ask: \"What must be TRUE for this to work?\"",
+          "bullets": [
+            "Customer Segments: \"These people exist in sufficient numbers AND I can find them\"",
+            "Value Proposition: \"This problem is painful enough AND my solution is better than alternatives\"",
+            "Channels: \"I can reach these customers through [channel] at an affordable cost\"",
+            "Revenue: \"Customers will pay [price] for this AND enough will buy to sustain the business\"",
+            "Costs: \"I can deliver this for less than customers will pay\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Risk Matrix: Importance × Uncertainty",
+          "body": "Plot each assumption on two axes: 1) Importance: If this assumption is WRONG, how badly does it hurt? (1=minor pivot, 5=business dies). 2) Uncertainty: How little evidence do we have? (1=well-validated, 5=pure guess). Assumptions in the top-right corner (high importance + high uncertainty) are your \"leap of faith\" assumptions. Test these FIRST — they're the ones that can kill you.",
+          "stat": "2",
+          "statLabel": "axes — Importance × Uncertainty — to prioritise which assumptions to test first"
+        },
+        {
+          "type": "content",
+          "headline": "Common \"Leap of Faith\" Assumptions",
+          "body": "These assumptions kill the most startups: 1) \"People will pay for this\" (willingness to pay). 2) \"I can acquire customers for less than they're worth\" (unit economics). 3) \"People will switch from their current solution\" (switching costs). 4) \"This problem is frequent enough to sustain a business\" (frequency). 5) \"I can build this with available resources\" (feasibility). Which of these have you actually tested?"
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Assumptions",
+          "body": "From your Canvas, list 10-15 assumptions (at least 1-2 per block). For each, score: Importance (1-5) and Uncertainty (1-5). Multiply them. Sort by score descending. Your top 3-5 are your riskiest assumptions — the ones that could kill the business if wrong. In Lesson 18, you'll design experiments to test these specifically."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What killed Webvan ($800M loss)?",
+          "type": "mcq",
+          "options": [
+            "Bad technology",
+            "Strong competitors",
+            "Untested assumptions about customer behaviour and unit economics",
+            "Running out of marketing budget"
+          ],
+          "correctIndex": 2,
+          "explanation": "Webvan's core assumptions (people would pay for delivery, orders would be profitable, demand would grow fast) were all wrong. They scaled before validating, turning wrong assumptions into catastrophic losses."
+        },
+        {
+          "question": "\"Leap of faith\" assumptions are those with:",
+          "type": "mcq",
+          "options": [
+            "Low importance and low uncertainty",
+            "High importance and high uncertainty",
+            "High importance and low uncertainty",
+            "Low importance and high uncertainty"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leap of faith assumptions are critically important to your business AND highly uncertain (little evidence). They're called \"leap of faith\" because you're betting everything on something unproven."
+        },
+        {
+          "question": "You should test your lowest-risk assumptions first to build confidence.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Test your HIGHEST-risk assumptions first. If they're wrong, everything else is irrelevant. Testing low-risk assumptions first wastes time and creates false confidence."
+        }
+      ]
+    },
+    {
+      "id": "crv-17-desirability-feasibility-viability",
+      "dayNumber": 17,
+      "moduleId": "crv-module-3",
+      "title": "Desirability, Feasibility, Viability",
+      "subtitle": "Three lenses for evaluating risk. Your idea must pass all three — but one matters most at the start.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Google Glass: Feasible and Viable, But Not Desirable",
+          "body": "Google Glass was technically brilliant (feasibility: ✓) and had a clear business model (viability: ✓). But people didn't want to wear a computer on their face in public. They felt awkward. Others felt surveilled. Desirability failed — and no amount of technical excellence could save it. The three lenses predict failure modes that single-dimension thinking misses.",
+          "stat": "$1.5B",
+          "statLabel": "Google invested in Glass before discovering mainstream desirability was the fatal flaw"
+        },
+        {
+          "type": "content",
+          "headline": "The Three Lenses",
+          "body": "Every business assumption falls into one of three categories:",
+          "bullets": [
+            "DESIRABILITY: Do customers actually want this? (Problem real? Solution appealing? Better than alternatives?)",
+            "FEASIBILITY: Can we actually build/deliver this? (Technology works? Team capable? Timeline realistic?)",
+            "VIABILITY: Can we make money doing this? (Revenue > Costs? Scalable unit economics? Sustainable?)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Testing Sequence",
+          "body": "Test in this order: Desirability first → then Viability → then Feasibility. Why? If nobody wants it, nothing else matters. If they want it but you can't make money, building it is charity. Feasibility is actually the least risky — most things CAN be built with enough time and resources. But most startups test feasibility first (\"Can I build this cool thing?\") and desirability last. That's backwards."
+        },
+        {
+          "type": "content",
+          "headline": "Mapping Your Assumptions to Lenses",
+          "body": "Take your risk-ranked assumptions from yesterday and label each D (Desirability), F (Feasibility), or V (Viability). If most of your high-risk assumptions are D-type: you haven't validated demand enough (go back to experiments). If V-type: you need to model unit economics and test pricing. If F-type: you need prototypes and technical spikes. The label tells you WHAT KIND of experiment to run."
+        },
+        {
+          "type": "try-it",
+          "headline": "Categorise Your Top Assumptions",
+          "body": "Take your top 5 riskiest assumptions from yesterday. Label each: D (Desirability), F (Feasibility), or V (Viability). Then answer: 1) How many are D vs F vs V? 2) Which lens has the most untested assumptions? 3) What does this tell you about where to focus next? If you're heavy on D-risk, you need more customer evidence. Heavy on V-risk? Model the numbers. Heavy on F-risk? Build a prototype."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Google Glass's fatal flaw?",
+          "type": "mcq",
+          "options": [
+            "Feasibility — the technology didn't work",
+            "Viability — they couldn't make money",
+            "Desirability — people didn't want to wear it in public",
+            "Competition — too many alternatives existed"
+          ],
+          "correctIndex": 2,
+          "explanation": "Glass was technically feasible and had a clear business model, but people felt awkward wearing it and others felt surveilled. Desirability failed — the most common and fatal flaw."
+        },
+        {
+          "question": "The correct testing sequence is:",
+          "type": "mcq",
+          "options": [
+            "Feasibility → Viability → Desirability",
+            "Desirability → Viability → Feasibility",
+            "Viability → Desirability → Feasibility",
+            "All three simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Desirability first (do they want it?), then Viability (can you make money?), then Feasibility (can you build it?). If nobody wants it, nothing else matters."
+        },
+        {
+          "question": "Most startups make the mistake of testing feasibility (\"Can I build this?\") first.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Founders love building, so they naturally gravitate to feasibility testing first. But building something nobody wants is the #1 cause of startup failure. Test desirability before investing in building."
+        }
+      ]
+    },
+    {
+      "id": "crv-18-designing-experiments",
+      "dayNumber": 18,
+      "moduleId": "crv-module-3",
+      "title": "Designing Experiments for Each Risk",
+      "subtitle": "Different assumptions need different tests. Match the right experiment to the right risk for faster, cheaper learning.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Experiment Library",
+          "body": "Strategyzer's \"Testing Business Ideas\" catalogues 44 different experiments for validating assumptions. You don't need all 44 — but you do need to know that different risks require different tests. A desirability risk needs a different experiment than a viability risk. Choosing the wrong experiment wastes time and gives misleading results."
+        },
+        {
+          "type": "content",
+          "headline": "Experiments by Risk Type",
+          "body": "Match experiment to assumption type:",
+          "bullets": [
+            "DESIRABILITY tests: Landing pages, fake doors, concierge MVP, wizard of oz, smoke tests, customer interviews, pre-orders",
+            "VIABILITY tests: Pricing page experiments, unit economics modelling, willingness-to-pay surveys, break-even analysis, channel cost experiments",
+            "FEASIBILITY tests: Technical spikes/prototypes, time-boxed builds, API/integration tests, \"build the hardest part first\" sprints"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Experiment Design Card",
+          "body": "For each experiment, define these BEFORE running it: 1) HYPOTHESIS: \"We believe [assumption].\" 2) TEST: \"To verify, we will [specific action].\" 3) METRIC: \"We will measure [specific thing].\" 4) CRITERIA: \"We are right if [threshold].\" 5) TIME-BOX: \"We will know by [date].\" 6) COST: \"This will cost [£/time].\" Without pre-defined criteria, you'll rationalise any result as success.",
+          "stat": "6",
+          "statLabel": "elements every experiment card must define BEFORE you start testing"
+        },
+        {
+          "type": "content",
+          "headline": "Cheap → Expensive: The Evidence Ladder",
+          "body": "Start with the cheapest experiment that could disprove your assumption: Level 1 (Free): Desk research, competitor analysis, forum mining. Level 2 (Hours): Customer interviews, social media polls. Level 3 (Days): Landing pages, fake doors, email campaigns. Level 4 (Weeks): Concierge MVP, manual service delivery. Level 5 (Months): Full MVP, beta product. Never jump to Level 5 without passing Levels 1-3 first."
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Next Experiment",
+          "body": "Take your #1 riskiest assumption. Fill in the Experiment Design Card: 1) HYPOTHESIS: \"We believe ___.\" 2) TEST: \"To verify, we will ___.\" 3) METRIC: \"We will measure ___.\" 4) CRITERIA: \"We are right if ___.\" 5) TIME-BOX: \"By [date].\" 6) COST: \"[£/hours].\" Choose the cheapest experiment level that could disprove the assumption. Don't over-invest in early evidence-gathering."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A landing page test is best suited for which type of risk?",
+          "type": "mcq",
+          "options": [
+            "Feasibility (can we build it?)",
+            "Desirability (do customers want it?)",
+            "Viability (can we make money?)",
+            "All three equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Landing pages test desirability — do people click, sign up, or show interest? They don't prove you can build the product (feasibility) or that unit economics work (viability)."
+        },
+        {
+          "question": "Why must success criteria be defined BEFORE running an experiment?",
+          "type": "mcq",
+          "options": [
+            "To impress investors",
+            "Without pre-defined criteria, you'll rationalise any result as success",
+            "It's required by law",
+            "To make the experiment more expensive"
+          ],
+          "correctIndex": 1,
+          "explanation": "Confirmation bias makes you interpret ambiguous results positively. Pre-committed criteria (\"we need 5% conversion or we pivot\") eliminate post-hoc rationalisation."
+        },
+        {
+          "question": "You should start with the most expensive, comprehensive experiment possible.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start with the cheapest experiment that could disprove your assumption. Work up the evidence ladder only after cheaper tests pass. Many assumptions can be killed with £0 desk research."
+        }
+      ]
+    },
+    {
+      "id": "crv-19-evidence-confidence-matrix",
+      "dayNumber": 19,
+      "moduleId": "crv-module-3",
+      "title": "The Evidence-Confidence Matrix",
+      "subtitle": "Track what you KNOW vs. what you ASSUME across your entire business model — and watch confidence grow experiment by experiment.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Making Progress Visible",
+          "body": "One of the hardest things about early-stage work is feeling like you're making progress. You're not building features people can see. You're not growing revenue. You're learning — but learning feels invisible. The Evidence-Confidence Matrix makes learning visible: a living tracker that shows exactly how much of your business model is validated vs. assumed."
+        },
+        {
+          "type": "content",
+          "headline": "Building the Matrix",
+          "body": "Create a simple tracker with columns:",
+          "bullets": [
+            "Assumption: What you believe (e.g., \"Freelancers will pay £30/month\")",
+            "Type: D (Desirability) / V (Viability) / F (Feasibility)",
+            "Evidence: What experiments have you run? What did you learn?",
+            "Confidence Level: 🔴 No evidence / 🟡 Some evidence / 🟢 Strong evidence",
+            "Next step: What experiment would move this from 🟡 to 🟢?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Confidence Levels Defined",
+          "body": "🔴 RED (0-3/10): Pure assumption. No testing done. Based on intuition or secondary research only. 🟡 YELLOW (4-6/10): Some evidence. Initial interviews or experiments suggest this might be true, but sample size is small or evidence is indirect. 🟢 GREEN (7-10/10): Strong evidence. Multiple independent data points confirm this. Would bet real money on it.",
+          "stat": "3",
+          "statLabel": "confidence levels — red (assumed), yellow (some evidence), green (validated)"
+        },
+        {
+          "type": "content",
+          "headline": "Using the Matrix for Decisions",
+          "body": "The matrix tells you: 1) Are you ready to build? (Most assumptions should be 🟡+ with critical ones at 🟢). 2) Where to focus next? (Red assumptions with high importance = next experiment). 3) What to tell investors/partners? (\"7 of 12 assumptions validated, testing remaining 5 this month\"). 4) When to pivot? (If critical assumptions stay 🔴 after multiple tests). It transforms gut feelings into data-driven decisions."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Evidence-Confidence Matrix",
+          "body": "List your 10-15 key assumptions. For each, fill in: Type (D/V/F), Current evidence (what you've tested), Confidence (🔴/🟡/🟢), and Next step. How many are green? How many are still red? This snapshot tells you exactly how much validation remains. Your goal before building a real product: zero red on critical assumptions, most at yellow or green."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a 🟡 YELLOW confidence level mean?",
+          "type": "mcq",
+          "options": [
+            "The assumption is definitely true",
+            "Some evidence suggests it might be true, but more testing is needed",
+            "The assumption is definitely false",
+            "You haven't thought about it yet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Yellow means initial evidence is encouraging but inconclusive — small sample size, indirect evidence, or results that need replication. More testing needed before committing."
+        },
+        {
+          "question": "Before building a real product, your critical assumptions should be:",
+          "type": "mcq",
+          "options": [
+            "All at 🔴 (no evidence needed before building)",
+            "At least 🟡 or 🟢 (some to strong evidence on all critical assumptions)",
+            "All at 🟢 (100% certainty required)",
+            "Ignored (just build and see what happens)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Critical assumptions need at least yellow (some evidence) before investing in building. Zero red on make-or-break assumptions. You don't need 100% certainty, but you need evidence."
+        },
+        {
+          "question": "The Evidence-Confidence Matrix helps make learning progress visible.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Early-stage work is mostly learning, which feels invisible. The matrix makes progress tangible — watching assumptions move from red to yellow to green shows real advancement."
+        }
+      ]
+    },
+    {
+      "id": "crv-20-research-to-roadmap",
+      "dayNumber": 20,
+      "moduleId": "crv-module-3",
+      "title": "From Research to Roadmap",
+      "subtitle": "Translate validated insights into a concrete plan. What to build first, what to test next, and what to defer.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Research-Execution Gap",
+          "body": "Many founders do excellent research... and then build something different anyway. The research sits in a document while product decisions are made on gut feeling. The fix: a systematic process for turning validated insights into a prioritised roadmap. Your research should literally determine what you build, in what order, and for whom."
+        },
+        {
+          "type": "content",
+          "headline": "The Insight-to-Action Bridge",
+          "body": "For each validated insight, answer:",
+          "bullets": [
+            "1. What does this insight REQUIRE us to build? (Must-have feature/capability)",
+            "2. What does this insight SUGGEST we build? (Nice-to-have, improves experience)",
+            "3. What does this insight tell us NOT to build? (Waste of time — not valued)",
+            "4. What does this change about our messaging? (How we talk about the product)",
+            "5. What does this change about our target? (Who we serve first)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The MVP Definition Framework",
+          "body": "Your MVP is NOT \"the smallest thing you can build.\" It's \"the smallest thing that tests your riskiest remaining assumption.\" Based on your Evidence-Confidence Matrix: 1) List all features that your GREEN assumptions support. 2) Identify which features directly test your remaining YELLOW assumptions. 3) THAT's your MVP — validated foundation + hypothesis-testing features. 4) Everything else goes in \"Later\" — no matter how cool it seems."
+        },
+        {
+          "type": "content",
+          "headline": "Building Your Roadmap",
+          "body": "Structure as three horizons: NOW (next 2 weeks): Build MVP that tests remaining yellow assumptions. Launch to early adopters from your research. NEXT (weeks 3-8): Iterate based on real usage data. Move yellows to green. Start testing with adjacent segment. LATER (months 3-6): Scale what works. Add features for broader market. All dates are experiments, not commitments."
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your Research-Based Roadmap",
+          "body": "Using your matrix and insights: 1) List 3-5 features your validated assumptions REQUIRE. 2) List 1-2 features that would TEST your remaining yellows. 3) Combine into your MVP definition. 4) List what you're deliberately NOT building (and why — what insight says it's not valued). 5) Define your NOW/NEXT/LATER horizons. Share this with a potential customer — does it match what they'd want first?"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "An MVP should be defined as:",
+          "type": "mcq",
+          "options": [
+            "The smallest possible product you can ship",
+            "The smallest thing that tests your riskiest remaining assumptions",
+            "A complete product with all planned features",
+            "Whatever you can build in one weekend"
+          ],
+          "correctIndex": 1,
+          "explanation": "The MVP isn't about being small — it's about being strategic. It should have a validated foundation (green assumptions) PLUS features that test your remaining yellow assumptions."
+        },
+        {
+          "question": "Research insights should determine what you DON'T build, as well as what you do.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "One of research's greatest values is ruling things OUT. Features customers don't value, segments that won't pay, channels that don't work — knowing what NOT to do saves enormous time and money."
+        },
+        {
+          "question": "In the three-horizon roadmap, what belongs in \"NOW\" (next 2 weeks)?",
+          "type": "mcq",
+          "options": [
+            "All planned features for the complete product",
+            "The MVP that tests remaining yellow assumptions, launched to early adopters",
+            "Market research and planning only",
+            "Fundraising and team hiring"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"NOW\" means building your MVP (validated foundation + hypothesis-testing features) and launching to the early adopters you identified in your research. Action within 2 weeks."
+        }
+      ]
+    },
+    {
+      "id": "crv-21-module-3-checkpoint",
+      "dayNumber": 21,
+      "moduleId": "crv-module-3",
+      "title": "Your Validated Business Model",
+      "subtitle": "The final lesson. Consolidate 21 days of research into a validated business model ready for execution.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From Stranger to Expert",
+          "body": "21 days ago, your understanding of your customer was based largely on assumptions. Now you have: a specific target customer backed by evidence, a Job to Be Done grounded in real interviews, validated demand signals, a prioritised list of what to build, and a roadmap for your first 8 weeks. You've done more customer research than 95% of founders who start building.",
+          "stat": "21",
+          "statLabel": "days of systematic research — you now know your customer better than most funded startups"
+        },
+        {
+          "type": "content",
+          "headline": "Course Recap: Your Complete Research Toolkit",
+          "body": "Over 21 days you've mastered:",
+          "bullets": [
+            "Module 1: Customer identity (specificity, JTBD, Four Forces, profiles, early adopters, landscape)",
+            "Module 2: Systematic discovery (sprints, observation, Switch Interviews, journey mapping, scoring, segmentation)",
+            "Module 3: Model de-risking (Canvas, assumption mapping, D/F/V lenses, experiments, evidence matrix, roadmap)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your Graduation Checklist",
+          "body": "Before moving to Course 4 (Design Your Business Model), confirm: ✓ You can describe your customer in specific behavioural terms. ✓ You've spoken to 5+ target customers and documented patterns. ✓ Your Business Model Canvas has more yellow/green than red. ✓ You have a clear MVP definition based on validated insights. ✓ You know your riskiest remaining assumption and how to test it."
+        },
+        {
+          "type": "content",
+          "headline": "What Comes Next",
+          "body": "Course 4: \"Design Your Business Model\" takes your validated Canvas and develops each block in depth — proper channel strategy, pricing models, partnership structures, and financial projections. You'll move from \"I know my customer wants this\" to \"I have a complete, testable business design.\" But first — celebrate. You've built an evidence-based foundation that most entrepreneurs skip entirely."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Validated Business Model Summary",
+          "body": "Complete this final brief: CUSTOMER: [Specific person in specific circumstance]. JOB: [What they're hiring you to do]. EVIDENCE: [Top 3 validated findings]. OPPORTUNITY: [Highest-scoring unmet need]. MVP: [What you'll build first and why]. RISKIEST ASSUMPTION: [What you still need to prove]. NEXT 14 DAYS: [Specific actions]. Congratulations — you've completed Course 3! 🎉"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Before moving to Course 4, your Business Model Canvas should have:",
+          "type": "mcq",
+          "options": [
+            "All blocks at 🟢 (fully validated)",
+            "More yellow/green than red (most assumptions have some evidence)",
+            "All blocks at 🔴 (no testing needed yet)",
+            "Only the Revenue block validated"
+          ],
+          "correctIndex": 1,
+          "explanation": "You don't need 100% validation — but most assumptions should have at least some evidence (yellow+). Critical assumptions should be green. Any remaining reds should have experiments planned."
+        },
+        {
+          "question": "You should have spoken to at least how many target customers during this course?",
+          "type": "mcq",
+          "options": [
+            "1-2",
+            "5+",
+            "50+",
+            "100+"
+          ],
+          "correctIndex": 1,
+          "explanation": "5+ conversations reveals patterns. More is better, but 5 from your target segment, done well, gives you enough data to make informed decisions about your model."
+        },
+        {
+          "question": "Completing this course means you no longer need to do customer research.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Customer research never stops — it just changes form. Pre-product: interviews and experiments. Post-launch: usage data, feedback, and retention metrics. You'll always be learning about your customer."
+        }
+      ]
+    }
+  ]
+}

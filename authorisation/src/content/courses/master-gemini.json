@@ -1,0 +1,1996 @@
+{
+  "id": "master-gemini",
+  "title": "Master Gemini: Google's AI Powerhouse",
+  "subtitle": "From your first prompt to advanced workflows — unlock the full power of Google's AI in 21 days.",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "gem-mod-1",
+      "moduleNumber": 1,
+      "title": "Getting Started with Gemini",
+      "subtitle": "What Gemini is, how to access it, and your first real conversations — no experience needed",
+      "days": "1–7",
+      "skill": "Confidently navigate Gemini and get useful answers on your first try",
+      "lessonIds": [
+        "gem-1",
+        "gem-2",
+        "gem-3",
+        "gem-4",
+        "gem-5",
+        "gem-6",
+        "gem-7"
+      ]
+    },
+    {
+      "id": "gem-mod-2",
+      "moduleNumber": 2,
+      "title": "Everyday Productivity",
+      "subtitle": "Use Gemini to save hours on writing, research, email, and creative work",
+      "days": "8–14",
+      "skill": "Use Gemini to save hours on writing, research, email, and creative work",
+      "lessonIds": [
+        "gem-8",
+        "gem-9",
+        "gem-10",
+        "gem-11",
+        "gem-12",
+        "gem-13",
+        "gem-14"
+      ]
+    },
+    {
+      "id": "gem-mod-3",
+      "moduleNumber": 3,
+      "title": "Power User & Advanced Skills",
+      "subtitle": "Gems, Workspace integration, extensions, and custom workflows that make Gemini indispensable",
+      "days": "15–21",
+      "skill": "Leverage Gemini's deepest features to build a personal AI operating system",
+      "lessonIds": [
+        "gem-15",
+        "gem-16",
+        "gem-17",
+        "gem-18",
+        "gem-19",
+        "gem-20",
+        "gem-21"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gem-1",
+      "dayNumber": 1,
+      "moduleId": "gem-mod-1",
+      "title": "What is Gemini?",
+      "subtitle": "Meet Google's most capable AI — and why it matters for you",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Google's AI is already everywhere",
+          "body": "Gemini powers Google Search, Gmail, Docs, Maps, and your phone. Over 2 billion people interact with Gemini-powered features daily — most without realising it. Today you'll meet it properly.",
+          "stat": "2B+",
+          "statLabel": "daily users touched by Gemini AI"
+        },
+        {
+          "type": "content",
+          "headline": "What Gemini actually is",
+          "body": "Gemini is Google's family of AI models — it can understand and generate text, images, code, audio, and video. Think of it as a brilliant assistant that can read, write, see, and reason.",
+          "bullets": [
+            "Built by Google DeepMind — the team behind AlphaGo",
+            "Multimodal from day one — text, images, audio, video",
+            "Integrated into Google products you already use",
+            "Available free (with a powerful paid tier too)"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Gemini vs. ChatGPT vs. Claude",
+          "body": "Each AI has strengths. Gemini's superpower is its deep integration with Google's ecosystem — Search, Gmail, Docs, YouTube, Maps, and more. It also excels at multimodal tasks (images + text together).",
+          "bullets": [
+            "Gemini: Best Google integration, multimodal, real-time info",
+            "ChatGPT: Largest ecosystem of plugins and tools",
+            "Claude: Strongest at long-form reasoning and writing",
+            "Smart users learn to use the right tool for the right job"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to find Gemini",
+          "body": "You can access Gemini in multiple places — no installation needed for most of them.",
+          "bullets": [
+            "gemini.google.com — the main web app (free)",
+            "Google app on your phone — tap the Gemini tab",
+            "Inside Gmail, Docs, Sheets — the \"Help me write\" button",
+            "Android phones — replace Google Assistant with Gemini"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your first look",
+          "body": "Open gemini.google.com in a new tab (or the Google app on your phone). Sign in with your Google account. Don't type anything yet — just look around. Notice the suggestion chips, the text box, and the image upload button. Tomorrow you'll have your first real conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes Gemini different from other AI assistants like ChatGPT?",
+          "type": "mcq",
+          "options": [
+            "It can only do text",
+            "Deep integration with Google products and multimodal capabilities",
+            "It requires a paid subscription",
+            "It only works on Android"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemini's key differentiator is its deep integration with Google's ecosystem (Search, Gmail, Docs, etc.) and its native multimodal capabilities — understanding text, images, audio, and video together."
+        },
+        {
+          "question": "Gemini can understand images, not just text.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Correct! Gemini is multimodal from the ground up — it can process and reason about text, images, audio, and video."
+        },
+        {
+          "question": "Which is NOT a way to access Gemini?",
+          "type": "mcq",
+          "options": [
+            "gemini.google.com",
+            "The Google app on your phone",
+            "Inside Microsoft Word",
+            "Inside Google Docs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Gemini is integrated into Google products (Docs, Gmail, Sheets) and the Google app — but not Microsoft Word, which uses Microsoft's own Copilot AI."
+        }
+      ]
+    },
+    {
+      "id": "gem-2",
+      "dayNumber": 2,
+      "moduleId": "gem-mod-1",
+      "title": "Your First Conversation",
+      "subtitle": "If you can type, you can use Gemini",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "It's just like texting a really smart friend",
+          "body": "There's no coding, no special syntax, no learning curve. You type what you want in plain English, and Gemini responds. The hardest part? Realising how easy it actually is.",
+          "stat": "30 sec",
+          "statLabel": "to get your first useful answer"
+        },
+        {
+          "type": "content",
+          "headline": "How to start a conversation",
+          "body": "Go to gemini.google.com and type anything in the text box. That's it. No setup, no configuration, no account creation beyond your Google login.",
+          "bullets": [
+            "Type naturally — like you're asking a colleague",
+            "Be specific about what you want (\"Write a thank-you email to my client\")",
+            "You can ask follow-up questions in the same chat",
+            "Hit the + button to start a fresh conversation anytime"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "5 starter prompts that always work",
+          "body": "Not sure what to say? Try these — they're designed to show you what Gemini can do in under 60 seconds.",
+          "bullets": [
+            "\"Explain [topic] like I'm 10 years old\"",
+            "\"Write a professional email declining a meeting politely\"",
+            "\"Give me 5 dinner ideas using chicken and rice\"",
+            "\"Summarise the pros and cons of working from home\"",
+            "\"Help me plan a weekend trip to [city]\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Understanding Gemini's responses",
+          "body": "Gemini responds in formatted text — with headings, bullet points, and sometimes even tables. You can copy, edit, or ask it to try again.",
+          "bullets": [
+            "Click \"Show drafts\" to see alternative versions",
+            "Use the thumbs up/down to give feedback",
+            "Click the copy button to grab the text instantly",
+            "Say \"Make it shorter\" or \"Make it more formal\" to adjust"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Have your first conversation",
+          "body": "Open Gemini and try this prompt: \"I'm learning to use AI for the first time. Give me 3 ways you can help me today based on things most people do every day.\" Read the response, then ask one follow-up question. Congratulations — you're now an AI user!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do you need to start using Gemini?",
+          "type": "mcq",
+          "options": [
+            "A paid subscription and special software",
+            "A Google account and a web browser",
+            "Coding knowledge",
+            "An Android phone"
+          ],
+          "correctIndex": 1,
+          "explanation": "All you need is a Google account and a web browser (or the Google app). Gemini is free to use at gemini.google.com."
+        },
+        {
+          "question": "You can ask Gemini follow-up questions in the same conversation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Yes! Gemini remembers context within a conversation, so you can ask follow-ups, clarify, or build on previous answers."
+        },
+        {
+          "question": "What does \"Show drafts\" do in Gemini?",
+          "type": "mcq",
+          "options": [
+            "Shows your previous conversations",
+            "Shows alternative versions of the response",
+            "Shows a history of your edits",
+            "Shows other users' prompts"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Show drafts\" reveals alternative versions of Gemini's response — you can pick the one that best fits your needs."
+        }
+      ]
+    },
+    {
+      "id": "gem-3",
+      "dayNumber": 3,
+      "moduleId": "gem-mod-1",
+      "title": "How Gemini Thinks",
+      "subtitle": "Understanding the AI behind the magic",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The more you understand how it works, the better your results",
+          "body": "You don't need a computer science degree — but knowing the basics of how Gemini processes your words will make you dramatically better at getting useful answers. Think of it like understanding how a search engine works made you better at Googling.",
+          "stat": "3x",
+          "statLabel": "better results with basic AI understanding"
+        },
+        {
+          "type": "content",
+          "headline": "Gemini predicts the best next word",
+          "body": "At its core, Gemini works by predicting what words should come next based on patterns learned from massive amounts of text. But it's not just memorising — it understands relationships, context, and meaning.",
+          "bullets": [
+            "Trained on trillions of words from books, websites, and documents",
+            "Learns patterns and relationships, not just facts",
+            "Each response is generated fresh (not copy-pasted from the internet)",
+            "Can make mistakes — it's predicting, not looking things up"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Context is everything",
+          "body": "Gemini reads your entire conversation when generating each response. This \"context window\" is like its short-term memory — and Gemini's is one of the largest available.",
+          "bullets": [
+            "Gemini can hold very long conversations (up to 1 million tokens)",
+            "More context = better, more relevant answers",
+            "Starting a new chat resets the context completely",
+            "Long conversations stay coherent better than with other AIs"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Gemini CAN'T do",
+          "body": "Understanding limitations is just as important as knowing capabilities. Gemini is powerful but not perfect.",
+          "bullets": [
+            "Can't browse the web in real-time (but has very recent training data)",
+            "May \"hallucinate\" — confidently state things that aren't true",
+            "Doesn't remember you between separate conversations",
+            "Can't take actions in the real world (send emails, make purchases)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Test the limits",
+          "body": "Try asking Gemini: \"What happened in the news today?\" — notice how it handles real-time information. Then try: \"What's 847 × 293?\" and check if it's right (answer: 248,171). This shows you where AI is strong and where to double-check."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How does Gemini generate its responses?",
+          "type": "mcq",
+          "options": [
+            "By searching the internet in real-time",
+            "By predicting the best words based on learned patterns",
+            "By copying from a database of pre-written answers",
+            "By asking other AI models for help"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemini generates responses by predicting what words should come next, based on patterns and relationships it learned during training on massive amounts of text."
+        },
+        {
+          "question": "Gemini always provides 100% accurate information.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Gemini can \"hallucinate\" — generating confident-sounding responses that contain errors. Always verify critical facts."
+        },
+        {
+          "question": "What is a \"context window\" in AI?",
+          "type": "mcq",
+          "options": [
+            "The browser window where you use Gemini",
+            "The amount of conversation the AI can remember at once",
+            "A setting you configure in preferences",
+            "The time limit for each session"
+          ],
+          "correctIndex": 1,
+          "explanation": "The context window is how much text (your conversation history) the AI can \"see\" when generating each response. Gemini's context window is one of the largest — up to 1 million tokens."
+        }
+      ]
+    },
+    {
+      "id": "gem-4",
+      "dayNumber": 4,
+      "moduleId": "gem-mod-1",
+      "title": "Writing Better Prompts",
+      "subtitle": "The formula for clear prompts that get great answers every time",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The difference between a good answer and a great answer? Your prompt.",
+          "body": "Most people type vague questions and get vague answers. Today you'll learn the simple formula that turns Gemini from \"kinda useful\" into \"I can't believe how good this is.\" It takes 10 extra seconds of effort.",
+          "stat": "10 sec",
+          "statLabel": "extra effort for dramatically better results"
+        },
+        {
+          "type": "content",
+          "headline": "The 3-part prompt formula",
+          "body": "Every great prompt has three ingredients: Role + Task + Format. Tell Gemini WHO to be, WHAT to do, and HOW to present it.",
+          "bullets": [
+            "Role: \"Act as a senior marketing manager…\"",
+            "Task: \"…write a LinkedIn post announcing our new product…\"",
+            "Format: \"…in 150 words, with a hook opening and 3 bullet points\"",
+            "Example: \"Act as a nutritionist. Create a 7-day meal plan for someone trying to eat healthier on a budget. Format as a table with breakfast, lunch, and dinner.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Be specific, not vague",
+          "body": "The more detail you provide, the better Gemini can help. Compare these two prompts:",
+          "bullets": [
+            "Vague: \"Write me an email\" → generic, unhelpful",
+            "Specific: \"Write a friendly email to my team announcing Friday is a half-day, thank them for a great quarter, and remind them about the team lunch on Monday\" → perfect result",
+            "Include: who it's for, what tone, how long, what to include",
+            "Think: \"If I gave this instruction to a new employee, would they know exactly what to do?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Power modifiers that improve any prompt",
+          "body": "Add these phrases to the end of almost any prompt for instant upgrades:",
+          "bullets": [
+            "\"Keep it under [X] words\" — controls length",
+            "\"Use simple language a 12-year-old would understand\" — controls complexity",
+            "\"Give me 3 options to choose from\" — gets variety",
+            "\"Format as bullet points / a table / numbered steps\" — controls structure"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Upgrade a basic prompt",
+          "body": "Take this basic prompt: \"Give me workout ideas.\" Now rewrite it using the 3-part formula. For example: \"Act as a personal trainer. Create a 20-minute home workout for a beginner with no equipment. Format as numbered steps with rest times between each exercise.\" Compare both results in Gemini."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the 3 parts of a great prompt?",
+          "type": "mcq",
+          "options": [
+            "Question, Answer, Follow-up",
+            "Role, Task, Format",
+            "Subject, Verb, Object",
+            "Input, Process, Output"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 3-part prompt formula is Role (who Gemini should act as) + Task (what to do) + Format (how to present it). This combination dramatically improves output quality."
+        },
+        {
+          "question": "Vague prompts produce better results because Gemini has more creative freedom.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Specific prompts with clear context always produce better results. Vague prompts lead to generic, often unhelpful responses."
+        },
+        {
+          "question": "Which power modifier controls the length of Gemini's response?",
+          "type": "mcq",
+          "options": [
+            "\"Give me 3 options\"",
+            "\"Use simple language\"",
+            "\"Keep it under X words\"",
+            "\"Format as a table\""
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Keep it under X words\" directly controls response length. It's one of the most useful modifiers because AI tends to be verbose by default."
+        }
+      ]
+    },
+    {
+      "id": "gem-5",
+      "dayNumber": 5,
+      "moduleId": "gem-mod-1",
+      "title": "Conversations vs. Single Prompts",
+      "subtitle": "When to keep chatting and when to start fresh",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One of the most common mistakes? Using one long conversation for everything.",
+          "body": "Knowing when to continue a conversation and when to start a new one is a subtle skill that separates casual users from power users. Get this right and Gemini becomes dramatically more useful.",
+          "stat": "70%",
+          "statLabel": "of users never start a new chat (and get worse results)"
+        },
+        {
+          "type": "content",
+          "headline": "When to keep the conversation going",
+          "body": "Multi-turn conversations are powerful when you're building on a topic or iterating on a piece of work.",
+          "bullets": [
+            "Refining a draft: \"Make it more formal\" → \"Add a PS about the deadline\"",
+            "Exploring a topic deeply: ask follow-ups, get clarification",
+            "Working on a project: Gemini remembers earlier decisions",
+            "Giving feedback: \"That's good but change X\" works perfectly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When to start fresh",
+          "body": "New conversations give Gemini a clean slate — which is often exactly what you want.",
+          "bullets": [
+            "Switching topics entirely (don't mix recipe ideas with work emails)",
+            "When answers start getting confused or repetitive",
+            "For quick one-off questions (\"What's the capital of Peru?\")",
+            "When you want a completely different perspective on something"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Managing your conversation history",
+          "body": "Gemini saves your conversations in a sidebar. Here's how to stay organised:",
+          "bullets": [
+            "Pin important conversations you'll return to",
+            "Delete one-off chats to keep things clean",
+            "Rename conversations (click the title) so you can find them later",
+            "Think of each conversation as a \"project folder\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Practice both approaches",
+          "body": "Start a multi-turn conversation: ask Gemini to write a short bio for you, then refine it over 3-4 messages (\"Make it more casual\", \"Add that I love hiking\", \"Shorten to 2 sentences\"). Then start a NEW conversation and ask a completely unrelated question. Notice how clean and focused the fresh start feels."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When should you start a new conversation instead of continuing?",
+          "type": "mcq",
+          "options": [
+            "When you want to refine a draft",
+            "When switching to a completely different topic",
+            "When you need follow-up information on the same topic",
+            "When giving feedback on a response"
+          ],
+          "correctIndex": 1,
+          "explanation": "Start a new conversation when switching to a completely different topic. Mixing unrelated subjects in one chat confuses the AI and degrades response quality."
+        },
+        {
+          "question": "Gemini remembers your previous conversations when you start a new chat.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Each new conversation starts with a completely clean context. Gemini doesn't carry information between separate chats."
+        },
+        {
+          "question": "What's a good strategy for organising Gemini conversations?",
+          "type": "mcq",
+          "options": [
+            "Never delete anything",
+            "Use one conversation for everything",
+            "Pin important ones and rename them clearly",
+            "Start a new chat after every single message"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pinning important conversations and renaming them clearly helps you find past work quickly. Think of each conversation as a project folder."
+        }
+      ]
+    },
+    {
+      "id": "gem-6",
+      "dayNumber": 6,
+      "moduleId": "gem-mod-1",
+      "title": "Gemini Free vs. Advanced",
+      "subtitle": "What you get for free and when the upgrade is worth it",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The free version is surprisingly powerful — but the paid tier is a game-changer",
+          "body": "Google offers Gemini in two tiers: a generous free version and Gemini Advanced (part of Google One AI Premium). Knowing what's in each tier helps you decide if and when to upgrade.",
+          "stat": "£20/mo",
+          "statLabel": "for Gemini Advanced (includes 2TB Google One storage)"
+        },
+        {
+          "type": "content",
+          "headline": "What you get for free",
+          "body": "The free tier of Gemini is more capable than many paid AI tools. Here's what's included:",
+          "bullets": [
+            "Full conversational AI with Gemini 1.5 Flash model",
+            "Image understanding — upload photos and get analysis",
+            "Integration with Google Search for current information",
+            "Conversation history and organisation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What Gemini Advanced adds",
+          "body": "The paid tier unlocks the most powerful model and exclusive features:",
+          "bullets": [
+            "Gemini 2.5 Pro — significantly smarter for complex reasoning",
+            "Gems — custom AI assistants you build for specific tasks",
+            "1 million token context window (vs shorter free tier)",
+            "Priority access during peak times + early feature access"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Who should upgrade?",
+          "body": "The free tier is perfect for most people getting started. Consider upgrading when:",
+          "bullets": [
+            "You use Gemini daily for work tasks",
+            "You need longer, more complex conversations",
+            "You want custom Gems for repeated tasks",
+            "You already pay for Google One storage (bundled value)"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Evaluate your needs",
+          "body": "Use Gemini free for the rest of this course. At the end, you'll know exactly which features matter to you. For now, ask Gemini: \"What are the differences between Gemini free and Gemini Advanced?\" and compare its answer to what you just learned."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What model does Gemini Advanced give you access to?",
+          "type": "mcq",
+          "options": [
+            "Gemini 1.0 Nano",
+            "Gemini 2.5 Pro",
+            "GPT-4",
+            "Claude 3.5"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemini Advanced gives access to Gemini 2.5 Pro — Google's most capable model for complex reasoning, coding, and creative tasks."
+        },
+        {
+          "question": "The free version of Gemini can understand images you upload.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Even the free tier supports image understanding — you can upload photos and ask Gemini to analyse, describe, or answer questions about them."
+        },
+        {
+          "question": "What are \"Gems\" in Gemini Advanced?",
+          "type": "mcq",
+          "options": [
+            "Virtual currency for using Gemini",
+            "Custom AI assistants you build for specific tasks",
+            "Gemini's built-in templates",
+            "Rewards for using Gemini frequently"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gems are custom AI assistants you create in Gemini Advanced. You configure them for specific tasks (like a writing coach or code reviewer) and reuse them anytime."
+        }
+      ]
+    },
+    {
+      "id": "gem-7",
+      "dayNumber": 7,
+      "moduleId": "gem-mod-1",
+      "title": "Your Gemini Routine",
+      "subtitle": "Building a daily habit with the 5 tasks Gemini handles best",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The people who get the most from AI aren't the smartest — they're the most consistent",
+          "body": "After 6 days, you know what Gemini can do. Today's lesson is about making it a habit. The goal: reach for Gemini before Google for at least 5 tasks every day. Within a week, it'll feel as natural as opening your email.",
+          "stat": "5 tasks",
+          "statLabel": "per day to build an unbreakable AI habit"
+        },
+        {
+          "type": "content",
+          "headline": "The 5 daily Gemini tasks",
+          "body": "These are the five things Gemini does faster and better than any other tool — make them your daily defaults:",
+          "bullets": [
+            "1. Morning briefing — \"What should I know about [topic/industry] today?\"",
+            "2. Email drafting — \"Write a reply to this email that…\"",
+            "3. Quick research — \"Explain [concept] and give me the key takeaways\"",
+            "4. Decision support — \"Help me decide between A and B, given…\"",
+            "5. End-of-day reflection — \"Summarise what I worked on today into 3 bullet points\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The \"Gemini First\" rule",
+          "body": "Before opening Google, before asking a colleague, before spending 20 minutes figuring it out yourself — ask Gemini first. Even if it can't solve everything, it gives you a head start.",
+          "bullets": [
+            "Writing anything? Draft it in Gemini first, then polish",
+            "Stuck on a decision? Ask Gemini for a pros/cons breakdown",
+            "Learning something new? Ask Gemini to explain it simply",
+            "Planning anything? Get Gemini to create the first outline"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Tracking your progress",
+          "body": "Keep a simple tally this week. How many times did you use Gemini instead of doing it the old way?",
+          "bullets": [
+            "Aim for 5 uses per day minimum",
+            "Note which tasks it saved the most time on",
+            "Notice when the old habits pull you back",
+            "Celebrate the time you saved — add it up at the end of the week"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set up your routine",
+          "body": "Right now, open Gemini and type: \"Help me create a daily routine for using AI. I work in [your field] and my main tasks are [list 3-4 things you do daily]. Suggest 5 moments in my day where Gemini could save me time.\" Save that response — it's your personal AI routine."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"Gemini First\" rule?",
+          "type": "mcq",
+          "options": [
+            "Always use Gemini instead of Google Search",
+            "Ask Gemini before doing things the old way — get a head start",
+            "Never use other AI tools",
+            "Always start your day with Gemini"
+          ],
+          "correctIndex": 1,
+          "explanation": "The \"Gemini First\" rule means reaching for Gemini before spending time doing things manually. Even if it can't solve everything, it gives you a faster starting point."
+        },
+        {
+          "question": "You need to use Gemini for complex tasks to benefit from it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! The biggest time savings often come from simple, repeated tasks — drafting emails, quick research, and decision support. Consistency matters more than complexity."
+        },
+        {
+          "question": "How many daily Gemini tasks are recommended to build the habit?",
+          "type": "mcq",
+          "options": [
+            "1-2 tasks",
+            "5 tasks",
+            "10+ tasks",
+            "20 tasks"
+          ],
+          "correctIndex": 1,
+          "explanation": "5 tasks per day is the sweet spot for building a consistent AI habit without feeling overwhelmed. It's enough to see real time savings."
+        }
+      ]
+    },
+    {
+      "id": "gem-8",
+      "dayNumber": 8,
+      "moduleId": "gem-mod-2",
+      "title": "Email & Messages",
+      "subtitle": "Draft, reply, and polish emails in seconds",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The average professional spends 28% of their workday on email",
+          "body": "That's over 2 hours every single day writing, reading, and replying to messages. Gemini can cut that in half — not by ignoring emails, but by drafting them in seconds instead of minutes.",
+          "stat": "2.6 hrs",
+          "statLabel": "spent on email daily by the average professional"
+        },
+        {
+          "type": "content",
+          "headline": "Drafting emails from scratch",
+          "body": "Give Gemini the context and let it write the first draft. You just edit and send.",
+          "bullets": [
+            "\"Write a professional email to [person] about [topic]. Tone: [friendly/formal/urgent]\"",
+            "\"Draft a follow-up email — I haven't heard back in 5 days, stay polite but firm\"",
+            "\"Write a cold outreach email introducing my service to potential clients\"",
+            "Always specify: recipient, purpose, tone, and any key details to include"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Replying to existing emails",
+          "body": "Paste the email you received and tell Gemini how to respond:",
+          "bullets": [
+            "\"Here's an email I received: [paste]. Write a polite reply accepting the meeting\"",
+            "\"Reply declining this invitation — I'm busy but suggest next week instead\"",
+            "\"This customer is upset. Write an empathetic reply that offers a solution\"",
+            "Pro tip: paste the email and just say \"Reply saying yes, I'm available Tuesday\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Polishing and improving messages",
+          "body": "Already written something but it doesn't sound right? Gemini is a brilliant editor.",
+          "bullets": [
+            "\"Make this more professional: [paste your draft]\"",
+            "\"Shorten this email to 3 sentences without losing the key points\"",
+            "\"Check this for grammar and tone — I'm emailing my CEO\"",
+            "\"Translate this email to [language] keeping the professional tone\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft a real email",
+          "body": "Think of an email you need to send today (or this week). Open Gemini and type: \"Write a [tone] email to [who] about [what]. Include: [key points]. Keep it under 150 words.\" Compare the result to how long it would have taken you to write from scratch."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you always include when asking Gemini to draft an email?",
+          "type": "mcq",
+          "options": [
+            "Your email password",
+            "The recipient, purpose, tone, and key details",
+            "Your full name and address",
+            "The exact subject line"
+          ],
+          "correctIndex": 1,
+          "explanation": "For the best email drafts, always provide: who it's for, what it's about, what tone to use, and any specific details or points to include."
+        },
+        {
+          "question": "Gemini can help you reply to emails you've received by pasting them in.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Paste the email you received, tell Gemini how you want to respond, and it will draft an appropriate reply in seconds."
+        },
+        {
+          "question": "What's the best way to shorten a long email with Gemini?",
+          "type": "mcq",
+          "options": [
+            "Delete random sentences yourself",
+            "Ask \"Shorten this to X sentences without losing key points\"",
+            "Start a new email from scratch",
+            "Use the \"summarise\" button"
+          ],
+          "correctIndex": 1,
+          "explanation": "Asking Gemini to \"shorten this to X sentences without losing the key points\" gives you a concise version that preserves the essential information."
+        }
+      ]
+    },
+    {
+      "id": "gem-9",
+      "dayNumber": 9,
+      "moduleId": "gem-mod-2",
+      "title": "Research & Summarisation",
+      "subtitle": "Get answers, compare sources, and summarise anything fast",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Stop spending 30 minutes reading when Gemini can give you the answer in 30 seconds",
+          "body": "Whether it's understanding a complex topic, comparing options, or digesting a long document — Gemini turns hours of research into minutes. It won't replace deep reading, but it eliminates the 80% of research that's just finding the key facts.",
+          "stat": "80%",
+          "statLabel": "of research time is finding facts (not understanding them)"
+        },
+        {
+          "type": "content",
+          "headline": "Quick research prompts",
+          "body": "These prompt patterns turn Gemini into your personal research assistant:",
+          "bullets": [
+            "\"Explain [topic] in simple terms with the 5 most important facts\"",
+            "\"Compare [A] vs [B] — give me a table with pros, cons, and price\"",
+            "\"What are the current best practices for [topic] in 2024?\"",
+            "\"Give me a 2-minute summary of [concept] that I can explain to my team\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Summarising long content",
+          "body": "Got a long article, report, or document? Gemini can distil it down instantly.",
+          "bullets": [
+            "Paste text and say \"Summarise this in 5 bullet points\"",
+            "\"What are the key takeaways from this article?\"",
+            "\"Pull out the action items from this meeting transcript\"",
+            "\"Explain this legal/technical document in plain English\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Research with Google grounding",
+          "body": "Gemini can access Google Search to provide current, cited information:",
+          "bullets": [
+            "Ask about recent events — Gemini will cite sources",
+            "Look for the \"Google it\" chip beneath responses for deeper research",
+            "Double-check claims by asking \"Can you verify this with sources?\"",
+            "For critical decisions, always cross-reference with primary sources"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Research something you've been curious about",
+          "body": "Pick a topic you've been meaning to research (a product to buy, a concept to learn, a decision to make). Ask Gemini: \"I'm researching [topic]. Give me: 1) A simple explanation, 2) The 3 most important things to know, 3) Common mistakes people make.\" Notice how much faster this is than Googling."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the most effective way to summarise a long document with Gemini?",
+          "type": "mcq",
+          "options": [
+            "Ask \"Is this document good?\"",
+            "Paste the text and ask for specific output like \"5 bullet points\"",
+            "Upload it without any instructions",
+            "Ask Gemini to read your email inbox"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pasting the text and requesting specific output format (like \"5 bullet points\" or \"key takeaways\") gives you a focused, useful summary every time."
+        },
+        {
+          "question": "Gemini can access Google Search to provide current information.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Gemini has Google Search grounding, meaning it can access current information and cite sources for recent events and facts."
+        },
+        {
+          "question": "When should you cross-reference Gemini's research with other sources?",
+          "type": "mcq",
+          "options": [
+            "Never — Gemini is always accurate",
+            "Only for fun topics",
+            "For critical decisions and important facts",
+            "Only if Gemini says it's unsure"
+          ],
+          "correctIndex": 2,
+          "explanation": "Always cross-reference with primary sources for critical decisions. While Gemini is helpful for research, it can make mistakes, especially with specific facts and figures."
+        }
+      ]
+    },
+    {
+      "id": "gem-10",
+      "dayNumber": 10,
+      "moduleId": "gem-mod-2",
+      "title": "Writing & Content Creation",
+      "subtitle": "Blog posts, social media, scripts — in your voice",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Writer's block is officially a thing of the past",
+          "body": "Whether it's a LinkedIn post, a blog article, a product description, or a video script — Gemini can create a solid first draft in under 60 seconds. Your job shifts from \"writing from scratch\" to \"editing and adding your personal touch.\"",
+          "stat": "60 sec",
+          "statLabel": "from blank page to solid first draft"
+        },
+        {
+          "type": "content",
+          "headline": "Blog posts and articles",
+          "body": "Gemini excels at long-form content when you give it the right direction:",
+          "bullets": [
+            "\"Write a 600-word blog post about [topic] for [audience]. Tone: conversational and helpful\"",
+            "\"Create an outline for an article on [topic] with 5 main sections\"",
+            "\"Write an introduction that hooks the reader with a surprising statistic\"",
+            "Pro tip: generate the outline first, approve it, then ask Gemini to write each section"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Social media content",
+          "body": "Short-form content is where Gemini saves the most time per word:",
+          "bullets": [
+            "\"Write 5 LinkedIn posts about [topic] — professional but not boring\"",
+            "\"Create an Instagram caption for [describe your photo]. Include 5 relevant hashtags\"",
+            "\"Write a Twitter/X thread (7 tweets) explaining [concept] in simple terms\"",
+            "\"Repurpose this blog post into 3 social media posts for different platforms\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Finding your voice",
+          "body": "The biggest fear with AI writing: sounding generic. Here's how to keep your voice:",
+          "bullets": [
+            "Paste examples of YOUR writing and say \"Match this tone and style\"",
+            "Specify personality traits: \"Write like someone who's friendly, slightly sarcastic, and uses short sentences\"",
+            "Always edit the final output — add personal anecdotes, remove clichés",
+            "Use Gemini for structure and ideas, add your humanity on top"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create content you actually need",
+          "body": "Pick something you need to write this week — a social post, blog intro, or email newsletter. Give Gemini: the topic, your audience, the tone, and length. Then ask for 3 different versions. Pick your favourite and edit it to sound like you."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the best approach for writing a long blog post with Gemini?",
+          "type": "mcq",
+          "options": [
+            "Ask for the entire article in one prompt",
+            "Generate an outline first, then write each section separately",
+            "Let Gemini choose the topic",
+            "Only use it for the conclusion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Breaking long content into steps (outline → approve → write sections) gives you more control and better results than trying to generate everything at once."
+        },
+        {
+          "question": "Gemini can match your personal writing style if you provide examples.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Pasting examples of your own writing and asking Gemini to \"match this tone and style\" helps it produce content that sounds like you, not a generic AI."
+        },
+        {
+          "question": "How can you make AI-generated content feel less generic?",
+          "type": "mcq",
+          "options": [
+            "Use it exactly as generated",
+            "Add personal anecdotes and edit out clichés",
+            "Make it longer",
+            "Add more bullet points"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best AI-assisted content uses Gemini for structure and ideas, then adds personal stories, specific examples, and removes generic phrases. The human touch is what makes it authentic."
+        }
+      ]
+    },
+    {
+      "id": "gem-11",
+      "dayNumber": 11,
+      "moduleId": "gem-mod-2",
+      "title": "Brainstorming & Ideation",
+      "subtitle": "Generate ideas, explore angles, break creative blocks",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your best ideas don't come from staring at a blank page — they come from having options",
+          "body": "Gemini can generate 20 ideas in 10 seconds. That changes the game: instead of struggling to think of ONE idea, you're choosing the BEST idea from a list. Creativity becomes curation.",
+          "stat": "20 ideas",
+          "statLabel": "in 10 seconds — then pick the best one"
+        },
+        {
+          "type": "content",
+          "headline": "Quantity-first brainstorming",
+          "body": "The secret to great ideas? Start with volume. Bad ideas lead to good ones.",
+          "bullets": [
+            "\"Give me 15 ideas for [project/topic]. Be creative — weird ideas welcome\"",
+            "\"I need a name for my [business/product/event]. Give me 20 options across different styles\"",
+            "\"What are 10 different angles I could take for a presentation about [topic]?\"",
+            "Pro tip: ask for \"unconventional\" or \"surprising\" ideas to push beyond obvious answers"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building on ideas",
+          "body": "Once you spot a promising direction, ask Gemini to dig deeper:",
+          "bullets": [
+            "\"I like idea #3 and #7. Combine them and give me 5 variations\"",
+            "\"Take this concept and show me how it would work for [specific context]\"",
+            "\"What would this look like if we made it 10x bolder?\"",
+            "\"Play devil's advocate — what's wrong with this idea?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Creative frameworks Gemini knows",
+          "body": "Ask Gemini to use specific creativity techniques for structured brainstorming:",
+          "bullets": [
+            "\"Use SCAMPER method on my product: [describe product]\"",
+            "\"Apply the 'What if?' technique to [challenge]\"",
+            "\"Use reverse brainstorming — how could I make [problem] worse?\"",
+            "\"Give me ideas using the random connection technique with [random word]\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Brainstorm something real",
+          "body": "Think of something you're stuck on — a project name, a content idea, a gift for someone, a business idea. Ask Gemini: \"Give me 15 ideas for [your thing]. Include some safe options and some wild, unexpected ones.\" Pick your top 3 and ask Gemini to develop each one further."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the best brainstorming strategy with AI?",
+          "type": "mcq",
+          "options": [
+            "Ask for exactly one perfect idea",
+            "Generate many options first, then refine your favourites",
+            "Only accept the first suggestion",
+            "Avoid creative ideas and stick to safe ones"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best approach is quantity first — generate many options, then pick the most promising ones and ask Gemini to develop them further. Volume leads to quality."
+        },
+        {
+          "question": "SCAMPER is a creativity technique Gemini can apply to your ideas.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! SCAMPER (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse) is a structured creativity technique that Gemini knows and can apply to any product or idea."
+        },
+        {
+          "question": "What should you do after finding a promising idea in Gemini's list?",
+          "type": "mcq",
+          "options": [
+            "Stop and use it immediately",
+            "Delete the conversation",
+            "Ask Gemini to develop it further with variations and details",
+            "Start a completely new brainstorming session"
+          ],
+          "correctIndex": 2,
+          "explanation": "When you spot a promising idea, ask Gemini to dig deeper — develop variations, show how it works in your context, or combine it with other ideas. The conversation builds momentum."
+        }
+      ]
+    },
+    {
+      "id": "gem-12",
+      "dayNumber": 12,
+      "moduleId": "gem-mod-2",
+      "title": "Learning & Explaining",
+      "subtitle": "Use Gemini as a personal tutor for any topic",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Imagine having a patient tutor available 24/7 who can explain anything at your level",
+          "body": "Gemini never gets frustrated, never judges, and can explain the same concept 10 different ways until it clicks. Whether you're learning a new skill, preparing for a presentation, or helping your kids with homework — it's the ultimate learning companion.",
+          "stat": "24/7",
+          "statLabel": "patient tutor available anytime you need it"
+        },
+        {
+          "type": "content",
+          "headline": "Learning new concepts",
+          "body": "The key is telling Gemini your current level and how you want it explained:",
+          "bullets": [
+            "\"Explain [topic] like I'm a complete beginner with zero background\"",
+            "\"I understand the basics of [X]. Now explain [advanced concept] building on that\"",
+            "\"Teach me [skill] step by step. Start with the absolute basics\"",
+            "\"I'm confused about [specific thing]. Explain it using an everyday analogy\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The Feynman technique with Gemini",
+          "body": "The best way to learn is to explain. Use Gemini to test your understanding:",
+          "bullets": [
+            "\"I'm going to explain [topic] to you. Tell me what I got wrong or missed\"",
+            "\"Quiz me on [subject] — start easy and get harder\"",
+            "\"I think [concept] works like [your explanation]. Is that right?\"",
+            "\"Give me 5 questions to test if I really understand [topic]\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Explaining to others",
+          "body": "Need to present something complex? Gemini helps you simplify:",
+          "bullets": [
+            "\"Help me explain [technical topic] to my non-technical boss\"",
+            "\"Create a 3-minute explanation of [topic] for a general audience\"",
+            "\"Give me 3 analogies I can use to explain [concept]\"",
+            "\"Write a simple FAQ about [topic] with 5 questions and short answers\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Learn something new right now",
+          "body": "Pick something you've always wanted to understand better — investing, coding, nutrition, history, anything. Ask Gemini: \"Teach me [topic] from scratch. I have 5 minutes. Start with the single most important concept and build from there.\" Then ask one follow-up question."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the Feynman technique when used with Gemini?",
+          "type": "mcq",
+          "options": [
+            "Asking Gemini to write a physics paper",
+            "Explaining a concept to Gemini and asking it to check your understanding",
+            "Memorising Gemini's responses word for word",
+            "Reading long articles generated by Gemini"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Feynman technique means learning by explaining. With Gemini, you explain a concept in your own words and ask it to point out gaps or mistakes in your understanding."
+        },
+        {
+          "question": "You should tell Gemini your current knowledge level when asking it to explain something.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Telling Gemini your level (beginner, intermediate, expert) helps it calibrate the explanation to be useful rather than too simple or too complex."
+        },
+        {
+          "question": "Which prompt is best for understanding a complex topic?",
+          "type": "mcq",
+          "options": [
+            "\"Tell me about quantum physics\"",
+            "\"Explain quantum physics like I'm a beginner, using everyday analogies\"",
+            "\"Quantum physics\"",
+            "\"Write an essay on quantum physics\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Specifying your level (beginner) and preferred format (everyday analogies) gives Gemini the context to explain it in a way that actually helps you understand."
+        }
+      ]
+    },
+    {
+      "id": "gem-13",
+      "dayNumber": 13,
+      "moduleId": "gem-mod-2",
+      "title": "Planning & Decision-Making",
+      "subtitle": "Pros and cons, project plans, and structured thinking",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every decision you overthink is time you'll never get back",
+          "body": "Gemini won't make decisions for you — but it will structure your thinking so the right choice becomes obvious. From travel planning to career moves, it's like having a strategic advisor who can see all the angles instantly.",
+          "stat": "2-3 min",
+          "statLabel": "to get a complete pros/cons analysis"
+        },
+        {
+          "type": "content",
+          "headline": "Decision frameworks",
+          "body": "Turn fuzzy decisions into clear ones with these prompts:",
+          "bullets": [
+            "\"I'm deciding between [A] and [B]. Give me pros, cons, and a recommendation based on [my priorities]\"",
+            "\"What are the risks and rewards of [decision]? What am I not thinking about?\"",
+            "\"Help me think through [decision] using the 10-10-10 framework (how will I feel in 10 minutes, 10 months, 10 years?)\"",
+            "\"I'm leaning toward [X]. Play devil's advocate and tell me why I shouldn't\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Project and event planning",
+          "body": "Gemini excels at breaking big plans into actionable steps:",
+          "bullets": [
+            "\"Create a week-by-week plan for [project] with clear milestones\"",
+            "\"Plan a [event type] for [number] people. Budget: [amount]. Include checklist and timeline\"",
+            "\"I need to [achieve goal] in [timeframe]. Break it into daily/weekly actions\"",
+            "\"What am I forgetting? Here's my plan for [X] — what are the gaps?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Everyday planning wins",
+          "body": "Don't just use Gemini for big decisions — the small ones add up:",
+          "bullets": [
+            "\"Plan my meals for the week — healthy, quick, budget-friendly\"",
+            "\"Create a packing list for a 5-day business trip to London\"",
+            "\"I have 3 hours free Saturday. Suggest the best use of that time given [my goals]\"",
+            "\"Help me prioritise these 8 tasks for today — I can realistically do 4\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Make a decision you've been putting off",
+          "body": "Think of a decision you've been mulling over (big or small). Ask Gemini: \"I'm trying to decide [your decision]. My priorities are [list 2-3 things that matter most]. Give me a structured analysis with pros, cons, risks, and your recommendation.\" Notice how seeing it laid out makes the choice clearer."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What's the most effective way to use Gemini for decisions?",
+          "type": "mcq",
+          "options": [
+            "Ask \"What should I do?\" without context",
+            "Provide your options, priorities, and ask for structured analysis",
+            "Let Gemini make the final decision",
+            "Only use it for unimportant choices"
+          ],
+          "correctIndex": 1,
+          "explanation": "The best results come from providing your options, stating your priorities, and asking for structured analysis (pros, cons, risks). Gemini organises your thinking — you make the final call."
+        },
+        {
+          "question": "Gemini can help identify gaps and blind spots in your plans.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Asking \"What am I forgetting?\" or \"What are the gaps in this plan?\" is one of the most valuable ways to use Gemini — it can spot things you haven't considered."
+        },
+        {
+          "question": "What is the 10-10-10 framework?",
+          "type": "mcq",
+          "options": [
+            "A rating system for AI responses",
+            "Thinking about how you'll feel in 10 minutes, 10 months, and 10 years",
+            "Asking Gemini 10 questions 10 times",
+            "A framework for writing 10 prompts"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 10-10-10 framework helps with decisions by considering how you'll feel about the choice in 10 minutes, 10 months, and 10 years — giving you short, medium, and long-term perspective."
+        }
+      ]
+    },
+    {
+      "id": "gem-14",
+      "dayNumber": 14,
+      "moduleId": "gem-mod-2",
+      "title": "Images & Multimodal Input",
+      "subtitle": "Upload photos, analyse visuals, and unlock Gemini's superpower",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most people don't know Gemini can SEE — and that changes everything",
+          "body": "Gemini isn't just a text chatbot. Upload a photo, screenshot, whiteboard, receipt, chart, or handwritten note — and it understands what it's looking at. This multimodal ability is one of its biggest advantages over other AI tools.",
+          "stat": "1 click",
+          "statLabel": "to upload any image and get instant analysis"
+        },
+        {
+          "type": "content",
+          "headline": "What you can upload",
+          "body": "Almost any image works. Here are the most useful types:",
+          "bullets": [
+            "Screenshots — ask Gemini to explain, fix, or extract info",
+            "Photos of documents — receipts, menus, signs in other languages",
+            "Whiteboard or handwritten notes — \"Convert this to typed text\"",
+            "Charts and graphs — \"Explain what this data shows\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Powerful image prompts",
+          "body": "Combine your image with specific instructions for incredible results:",
+          "bullets": [
+            "\"What's in this image?\" — basic description and analysis",
+            "\"Extract all the text from this photo\" — instant OCR",
+            "\"This is a screenshot of an error message. Explain what's wrong and how to fix it\"",
+            "\"Translate the text in this photo from [language] to English\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Creative and practical uses",
+          "body": "Once you start thinking visually, the possibilities explode:",
+          "bullets": [
+            "Photo of your fridge → \"What can I cook with these ingredients?\"",
+            "Screenshot of a spreadsheet → \"Explain this data and spot trends\"",
+            "Photo of a plant → \"What plant is this? How do I care for it?\"",
+            "Image of a room → \"Suggest how to rearrange this space\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Upload your first image",
+          "body": "Take a photo of something nearby — your desk, a page from a book, a receipt, or a screenshot on your phone. Upload it to Gemini and ask: \"Describe what you see and suggest 3 useful things you could help me with based on this image.\" You'll be surprised at how much it understands."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is multimodal input in Gemini?",
+          "type": "mcq",
+          "options": [
+            "Using Gemini on multiple devices",
+            "Uploading images alongside text for AI to process both",
+            "Having multiple conversations at once",
+            "Using voice instead of text"
+          ],
+          "correctIndex": 1,
+          "explanation": "Multimodal means Gemini can process multiple types of input together — text AND images. You upload a photo and ask questions about it, combining visual and text understanding."
+        },
+        {
+          "question": "Gemini can extract text from a photo of a handwritten note.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Gemini can read and transcribe handwritten notes, printed documents, signs, and any text visible in an image — like instant OCR."
+        },
+        {
+          "question": "Which is NOT something you can do with image uploads in Gemini?",
+          "type": "mcq",
+          "options": [
+            "Get cooking suggestions from a fridge photo",
+            "Translate text visible in an image",
+            "Send the image to your contacts",
+            "Explain what's happening in a chart"
+          ],
+          "correctIndex": 2,
+          "explanation": "Gemini can analyse, describe, translate, and extract information from images — but it cannot take actions like sending images to your contacts."
+        }
+      ]
+    },
+    {
+      "id": "gem-15",
+      "dayNumber": 15,
+      "moduleId": "gem-mod-3",
+      "title": "Gems — Custom AI Assistants",
+      "subtitle": "Create reusable AI experts for your specific tasks",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "What if you could clone your best prompts into permanent, one-click assistants?",
+          "body": "Gems are custom AI assistants you build inside Gemini. Instead of rewriting your best prompts every time, you create a Gem once — and it's always ready. Think of them as AI shortcuts for your most common tasks.",
+          "stat": "1 click",
+          "statLabel": "to activate your custom-built AI expert"
+        },
+        {
+          "type": "content",
+          "headline": "What Gems are",
+          "body": "A Gem is a pre-configured Gemini persona with specific instructions, tone, and expertise:",
+          "bullets": [
+            "Each Gem has a custom system prompt that shapes how it responds",
+            "You give it a name, description, and detailed instructions",
+            "Once created, it appears in your Gem library — always one click away",
+            "Gems remember their role across the entire conversation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Gem ideas that save hours",
+          "body": "Here are Gems that power users swear by:",
+          "bullets": [
+            "Email Editor — \"You polish my emails to be concise, professional, and warm\"",
+            "Meeting Summariser — \"I paste meeting notes, you extract action items and decisions\"",
+            "Content Creator — \"You write in my brand voice with my style guidelines\"",
+            "Code Explainer — \"You explain code like I'm a non-developer who needs to understand the logic\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to create a Gem",
+          "body": "Building a Gem takes about 2 minutes:",
+          "bullets": [
+            "1. Click \"Gem manager\" in the left sidebar (or navigate to gems.google.com)",
+            "2. Click \"New Gem\" and give it a name",
+            "3. Write instructions — be specific about role, tone, format, and rules",
+            "4. Test it with a sample prompt and refine"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design your first Gem",
+          "body": "Think of a task you do repeatedly. Ask Gemini: \"Help me write instructions for a custom Gem that [describe what you want]. Include: the role it should play, the tone it should use, rules it must follow, and the format it should output.\" Save those instructions — you can use them to create your Gem."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a Gem in Gemini?",
+          "type": "mcq",
+          "options": [
+            "A type of image generation",
+            "A custom AI assistant with pre-configured instructions",
+            "A premium feature that costs extra",
+            "A conversation bookmark"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Gem is a custom AI assistant you create with specific instructions, role, and tone. Once built, it's always available in your library for one-click access."
+        },
+        {
+          "question": "Gems remember their configured role throughout the entire conversation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Unlike regular prompts that can drift, Gems maintain their configured persona and instructions across the entire conversation."
+        },
+        {
+          "question": "How long does it typically take to create a Gem?",
+          "type": "mcq",
+          "options": [
+            "About 2 minutes",
+            "Several hours",
+            "You need to apply and wait for approval",
+            "It requires coding knowledge"
+          ],
+          "correctIndex": 0,
+          "explanation": "Creating a Gem takes about 2 minutes — name it, write clear instructions, and test with a sample prompt. No coding or approval needed."
+        }
+      ]
+    },
+    {
+      "id": "gem-16",
+      "dayNumber": 16,
+      "moduleId": "gem-mod-3",
+      "title": "Gemini in Google Workspace",
+      "subtitle": "AI inside Gmail, Docs, Sheets, Slides, and Meet",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The real magic happens when AI meets the tools you already use every day",
+          "body": "Gemini isn't just at gemini.google.com — it's embedded directly inside Gmail, Google Docs, Sheets, Slides, and Meet. No copy-pasting between tabs. No switching apps. AI right where you work.",
+          "stat": "0 tabs",
+          "statLabel": "to switch — Gemini works inside your existing tools"
+        },
+        {
+          "type": "content",
+          "headline": "Gemini in Gmail",
+          "body": "Look for the \"Help me write\" button when composing emails:",
+          "bullets": [
+            "\"Help me write\" generates a full draft from a brief description",
+            "Highlight text and choose \"Refine\" to polish or shorten",
+            "\"Summarise this email\" in long threads — instant catch-up",
+            "Smart Reply suggestions get better with Gemini behind them"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Gemini in Google Docs",
+          "body": "The side panel and inline tools transform how you write:",
+          "bullets": [
+            "Type \"@\" and select Gemini to insert AI-generated content inline",
+            "Highlight text → \"Help me write\" to rewrite, expand, or summarise",
+            "Side panel: ask questions about your document (\"What are the key points?\")",
+            "Generate entire first drafts: \"Write a project proposal for…\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Gemini in Slides and Meet",
+          "body": "Presentations and meetings get a major upgrade too:",
+          "bullets": [
+            "Slides: \"Create a slide about…\" generates layout, text, and imagery",
+            "Slides: \"Generate an image of…\" for custom visuals without stock photos",
+            "Meet: Real-time transcription and \"Summarise what I missed\"",
+            "Meet: \"Take notes for me\" creates action items automatically"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try it in a Google Doc",
+          "body": "Open a new Google Doc. Type a sentence or two about something you're working on. Then highlight the text and look for the \"Help me write\" option (or try typing \"@Gemini\" if available in your workspace). Ask it to expand your notes into a full paragraph. See how seamlessly it works without leaving your document."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where can you find Gemini inside Gmail?",
+          "type": "mcq",
+          "options": [
+            "Only in the search bar",
+            "The \"Help me write\" button when composing emails",
+            "In the spam folder settings",
+            "It's not available in Gmail"
+          ],
+          "correctIndex": 1,
+          "explanation": "In Gmail, Gemini appears as the \"Help me write\" button when you're composing or replying to emails. It can draft, refine, and shorten messages right inside your email."
+        },
+        {
+          "question": "Gemini in Google Meet can summarise what you missed if you join late.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Gemini in Google Meet can provide meeting summaries, transcriptions, and even highlight action items — perfect for catching up if you joined late."
+        },
+        {
+          "question": "How do you access Gemini inside Google Docs?",
+          "type": "mcq",
+          "options": [
+            "Download a separate plugin",
+            "Use the side panel or highlight text and select \"Help me write\"",
+            "It only works in the mobile app",
+            "You need to enable developer mode"
+          ],
+          "correctIndex": 1,
+          "explanation": "In Google Docs, Gemini is available through the side panel (for asking questions) and inline through \"Help me write\" (highlight text or use the @ menu to generate content)."
+        }
+      ]
+    },
+    {
+      "id": "gem-17",
+      "dayNumber": 17,
+      "moduleId": "gem-mod-3",
+      "title": "Google Sheets + Gemini",
+      "subtitle": "Formulas, data analysis, and insights from spreadsheets",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Spreadsheets just went from intimidating to effortless",
+          "body": "If you've ever stared at a spreadsheet wondering which formula to use, those days are over. Gemini can write formulas, explain data, create charts, and spot trends — all from plain English instructions.",
+          "stat": "100+",
+          "statLabel": "complex formulas you'll never need to memorise again"
+        },
+        {
+          "type": "content",
+          "headline": "Gemini for formulas",
+          "body": "Stop Googling \"how to VLOOKUP\" — just describe what you want:",
+          "bullets": [
+            "\"Write a formula that adds all values in column B where column A says 'Sales'\"",
+            "\"I need a formula to calculate the percentage change between B2 and B3\"",
+            "\"Create a VLOOKUP that finds a product name in Sheet2 based on the ID in A1\"",
+            "Paste your formula and ask \"Explain what this formula does\" to understand existing work"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Data analysis in plain English",
+          "body": "Use the Gemini side panel in Sheets to ask questions about your data:",
+          "bullets": [
+            "\"What are the trends in this data?\"",
+            "\"Which product category has the highest growth?\"",
+            "\"Create a chart showing monthly revenue over time\"",
+            "\"Highlight all rows where the value in column C is below average\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Automating repetitive spreadsheet tasks",
+          "body": "Gemini handles the boring parts of spreadsheet work:",
+          "bullets": [
+            "\"Clean this data — remove duplicates and fix inconsistent capitalisation\"",
+            "\"Generate sample data for testing — 50 rows of fake customer names, emails, and order amounts\"",
+            "\"Convert this data into a pivot table summary\"",
+            "\"Create conditional formatting: green if positive, red if negative\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Get Gemini to help with a real spreadsheet",
+          "body": "Open any Google Sheet (or create a new one with some sample numbers). Open the Gemini side panel and ask: \"Look at my data and tell me something interesting.\" Or paste a formula you don't understand into Gemini and ask it to explain. Either way — you'll see how it transforms spreadsheet work."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How can Gemini help with spreadsheet formulas?",
+          "type": "mcq",
+          "options": [
+            "It can only explain formulas, not write them",
+            "You describe what you need in plain English and it writes the formula",
+            "It only works with basic SUM formulas",
+            "You need to know the formula name first"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemini can write complex formulas from plain English descriptions — just describe what you want to calculate and it generates the correct formula for you."
+        },
+        {
+          "question": "Gemini can create charts from your spreadsheet data.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Gemini in Google Sheets can create charts, identify trends, and visualise your data — all from natural language requests."
+        },
+        {
+          "question": "What's the best way to understand someone else's complex formula?",
+          "type": "mcq",
+          "options": [
+            "Delete it and start over",
+            "Google every function individually",
+            "Paste it into Gemini and ask \"Explain what this formula does\"",
+            "Ignore it and work around it"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pasting a complex formula into Gemini and asking for an explanation gives you a plain-English breakdown of what each part does — much faster than decoding it yourself."
+        }
+      ]
+    },
+    {
+      "id": "gem-18",
+      "dayNumber": 18,
+      "moduleId": "gem-mod-3",
+      "title": "Extensions & Connected Tools",
+      "subtitle": "Google Flights, Hotels, Maps, YouTube — live data at your fingertips",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Gemini doesn't just know things — it can look things up for you in real time",
+          "body": "Extensions connect Gemini to live Google services. Need a flight price? Hotel availability? YouTube video recommendation? Directions? Gemini pulls real data from these services directly into your conversation.",
+          "stat": "6+",
+          "statLabel": "Google services Gemini can access live"
+        },
+        {
+          "type": "content",
+          "headline": "What extensions are",
+          "body": "Extensions are built-in connections between Gemini and other Google services:",
+          "bullets": [
+            "Google Flights — search real flight prices and routes",
+            "Google Hotels — find accommodation with availability and pricing",
+            "Google Maps — get directions, find places, estimate travel times",
+            "YouTube — find and summarise videos on any topic"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to use extensions",
+          "body": "You don't need to \"activate\" anything — just ask naturally and Gemini uses the right extension:",
+          "bullets": [
+            "\"Find flights from London to Barcelona next weekend under £200\"",
+            "\"Show me hotels near Times Square for 2 nights in August\"",
+            "\"How long does it take to drive from Manchester to Edinburgh?\"",
+            "\"Find me a YouTube video that explains how mortgages work\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Google Workspace extensions",
+          "body": "Gemini can also connect to your personal Google data (when enabled):",
+          "bullets": [
+            "Gmail — \"Find the email from Sarah about the project deadline\"",
+            "Google Drive — \"Summarise the document called Q3 Report in my Drive\"",
+            "Google Calendar — \"What's on my schedule tomorrow?\"",
+            "You control which extensions are active in Settings → Extensions"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Try a live search",
+          "body": "Ask Gemini something that requires live data: \"Find me return flights from [your city] to [a destination] for [upcoming dates]. Show me the cheapest options.\" Watch how it pulls real pricing from Google Flights. Then try: \"Now find a hotel near the city centre for those dates.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are Gemini extensions?",
+          "type": "mcq",
+          "options": [
+            "Third-party apps you install from a store",
+            "Built-in connections to live Google services like Flights and Maps",
+            "Browser extensions you download",
+            "Premium features that require coding"
+          ],
+          "correctIndex": 1,
+          "explanation": "Extensions are built-in connections between Gemini and Google services (Flights, Hotels, Maps, YouTube, Gmail, Drive, Calendar). They provide live, real data directly in your conversation."
+        },
+        {
+          "question": "You need to manually activate extensions before Gemini can use them.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False! Most extensions work automatically — just ask naturally and Gemini detects which service to query. You can manage which ones are enabled in Settings, but they work by default."
+        },
+        {
+          "question": "Which of these can Gemini's extensions do?",
+          "type": "mcq",
+          "options": [
+            "Book and pay for a flight automatically",
+            "Search real flight prices and hotel availability",
+            "Access your bank account",
+            "Make phone calls on your behalf"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemini extensions can search and display real data (flight prices, hotel availability, directions) but cannot take actions like booking or making payments on your behalf."
+        }
+      ]
+    },
+    {
+      "id": "gem-19",
+      "dayNumber": 19,
+      "moduleId": "gem-mod-3",
+      "title": "Advanced Prompting Techniques",
+      "subtitle": "Chain-of-thought, role prompts, few-shot examples, and output formatting",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The gap between a good AI user and a great one? These 4 techniques.",
+          "body": "You already know the basics. Now it's time for the techniques that professionals use to get consistently excellent results. These aren't tricks — they're fundamental patterns that work because of how AI processes information.",
+          "stat": "4 techniques",
+          "statLabel": "that transform your results from good to exceptional"
+        },
+        {
+          "type": "content",
+          "headline": "Chain-of-thought prompting",
+          "body": "Ask Gemini to think step by step before answering — this dramatically improves accuracy for complex questions.",
+          "bullets": [
+            "\"Think through this step by step before giving your final answer\"",
+            "\"Walk me through your reasoning, then give a conclusion\"",
+            "\"Break this problem into parts and solve each one\"",
+            "Works best for: maths, logic, strategy, analysis, and complex decisions"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Few-shot examples",
+          "body": "Show Gemini exactly what you want by providing examples of the input/output pattern:",
+          "bullets": [
+            "\"Here are 3 examples of the format I want: [example 1], [example 2], [example 3]. Now do the same for: [your input]\"",
+            "Works brilliantly for consistent formatting across multiple items",
+            "Great for: product descriptions, review responses, social posts, data extraction",
+            "The more examples you give, the more consistent the output"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Structured output formatting",
+          "body": "Control exactly how Gemini presents information:",
+          "bullets": [
+            "\"Respond in JSON format with keys: title, summary, action_items\"",
+            "\"Format as a table with columns: Feature, Free Tier, Paid Tier\"",
+            "\"Give me exactly 5 bullet points, each under 15 words\"",
+            "\"Structure your response as: Problem → Cause → Solution → Prevention\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Apply advanced techniques",
+          "body": "Try chain-of-thought: \"I'm considering starting a side business selling [product]. Think through step by step: Is there demand? What would it cost to start? What are the risks? What's my realistic timeline to profit? Give me your final recommendation.\" Notice how much richer the analysis is compared to just asking \"Should I start this business?\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does chain-of-thought prompting do?",
+          "type": "mcq",
+          "options": [
+            "Makes Gemini respond faster",
+            "Asks Gemini to reason step by step before answering",
+            "Creates a chain of multiple conversations",
+            "Links Gemini to external tools"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chain-of-thought prompting asks Gemini to think through a problem step by step before giving its final answer. This dramatically improves accuracy for complex reasoning tasks."
+        },
+        {
+          "question": "Few-shot examples help Gemini produce more consistent output formatting.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Providing examples of your desired input/output pattern helps Gemini replicate that exact format consistently — perfect for batch tasks like product descriptions or data extraction."
+        },
+        {
+          "question": "Which technique is best for getting Gemini to output data in a specific structure?",
+          "type": "mcq",
+          "options": [
+            "Asking politely",
+            "Using chain-of-thought",
+            "Specifying the exact format (JSON, table, specific structure)",
+            "Starting a new conversation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Structured output formatting — explicitly telling Gemini the format you want (JSON, table, numbered list, specific template) — gives you precise control over how information is presented."
+        }
+      ]
+    },
+    {
+      "id": "gem-20",
+      "dayNumber": 20,
+      "moduleId": "gem-mod-3",
+      "title": "Building AI Workflows",
+      "subtitle": "Multi-step processes — research, draft, edit, publish",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Individual prompts are useful. Workflows are transformational.",
+          "body": "A workflow is a sequence of prompts that build on each other to complete a complex task end-to-end. Instead of \"write me an email,\" think \"research this person → find a connection point → draft a personalised outreach → create 3 variations → pick the best one.\"",
+          "stat": "5-10x",
+          "statLabel": "more value from multi-step workflows vs single prompts"
+        },
+        {
+          "type": "content",
+          "headline": "The workflow mindset",
+          "body": "Think of complex tasks as pipelines where each step feeds the next:",
+          "bullets": [
+            "Step 1: Research/gather information (\"Tell me about…\")",
+            "Step 2: Analyse/structure (\"Based on that, what's the best approach for…\")",
+            "Step 3: Create/draft (\"Now write…\")",
+            "Step 4: Refine/polish (\"Make it more… / Change the…\")"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Example workflows",
+          "body": "Here are complete workflows you can use immediately:",
+          "bullets": [
+            "Content workflow: Research topic → outline article → write draft → edit for tone → create social snippets",
+            "Decision workflow: Define options → research each → compare (table) → recommend → action plan",
+            "Meeting workflow: Review agenda → prepare talking points → draft follow-up email → create action items",
+            "Learning workflow: Explain concept → quiz me → identify gaps → teach those gaps → test again"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Workflow tips for power users",
+          "body": "These tips make workflows faster and more reliable:",
+          "bullets": [
+            "Keep it in one conversation — Gemini uses earlier context",
+            "Label your steps: \"Step 1:\" \"Step 2:\" so the AI tracks the sequence",
+            "Save your best workflows as templates (or build them into Gems)",
+            "If a step goes wrong, just say \"Let's redo Step 3 with different…\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run your first workflow",
+          "body": "Try this 4-step content workflow in one conversation: 1) \"Research the top 5 benefits of [topic you know about]\" 2) \"Create an outline for a LinkedIn post using the most surprising benefit\" 3) \"Write the post in a conversational, professional tone — 200 words max\" 4) \"Give me 3 alternative hooks for the opening line.\" You just created better content than most people do in an hour."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an AI workflow?",
+          "type": "mcq",
+          "options": [
+            "A single prompt that does everything at once",
+            "A sequence of prompts that build on each other to complete a complex task",
+            "An automated scheduled task",
+            "A workflow management tool"
+          ],
+          "correctIndex": 1,
+          "explanation": "An AI workflow is a sequence of prompts in one conversation where each step builds on the previous output — research → analyse → create → refine. This produces much better results than trying to do everything in one prompt."
+        },
+        {
+          "question": "You should keep all workflow steps in the same conversation.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Keeping workflow steps in one conversation lets Gemini use context from earlier steps. Each response builds on what came before, creating a coherent end-to-end output."
+        },
+        {
+          "question": "What should you do if one step in your workflow goes wrong?",
+          "type": "mcq",
+          "options": [
+            "Start the entire conversation over",
+            "Accept the bad output and move on",
+            "Ask Gemini to redo that specific step with adjusted instructions",
+            "Switch to a different AI tool"
+          ],
+          "correctIndex": 2,
+          "explanation": "Simply ask Gemini to redo the specific step that went wrong — \"Let's redo Step 3 with a more formal tone.\" No need to restart the entire workflow."
+        }
+      ]
+    },
+    {
+      "id": "gem-21",
+      "dayNumber": 21,
+      "moduleId": "gem-mod-3",
+      "title": "Your Gemini Operating System",
+      "subtitle": "Combine everything into a personal productivity system",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Congratulations — you're no longer a beginner. You're a Gemini power user.",
+          "body": "Over the past 20 days, you've learned prompting, multimodal input, Workspace integration, Gems, extensions, workflows, and advanced techniques. Today, you'll combine everything into a personal system that saves you hours every week — permanently.",
+          "stat": "5+ hrs",
+          "statLabel": "saved per week with a complete Gemini system"
+        },
+        {
+          "type": "content",
+          "headline": "Your Gemini operating system",
+          "body": "A personal AI operating system has 4 layers. You now have all the skills to build each one:",
+          "bullets": [
+            "1. Daily defaults — the 5 tasks you always do with Gemini (email, research, writing, planning, learning)",
+            "2. Custom Gems — pre-built assistants for your recurring tasks",
+            "3. Workflows — multi-step templates for complex projects",
+            "4. Workspace integration — AI inside the tools you already use"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building your Gem library",
+          "body": "Power users have 5-10 Gems covering their most common needs:",
+          "bullets": [
+            "Work Gems: Email Writer, Meeting Prep, Report Summariser",
+            "Creative Gems: Content Creator (in your voice), Brainstorm Partner",
+            "Personal Gems: Meal Planner, Trip Planner, Learning Coach",
+            "Start with 3 Gems this week — add more as you discover patterns"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Staying ahead of the curve",
+          "body": "Gemini evolves fast. Here's how to keep your skills current:",
+          "bullets": [
+            "Follow Google's AI blog for new feature announcements",
+            "Try new features the day they launch — early adopters gain the most",
+            "Revisit your Gems monthly — update instructions as you learn what works",
+            "Share what works with your team — multiplied time savings"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design your system",
+          "body": "Ask Gemini: \"Help me design my personal AI operating system. I work in [your field] and my biggest time sinks are [list 3-4 things]. Based on everything Gemini can do — daily prompts, Gems, workflows, and Workspace features — create a personalised system that saves me maximum time each week. Format as a one-page cheat sheet I can print.\" Save this — it's your ongoing reference."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the 4 layers of a Gemini operating system?",
+          "type": "mcq",
+          "options": [
+            "Hardware, software, cloud, mobile",
+            "Daily defaults, custom Gems, workflows, Workspace integration",
+            "Free tier, paid tier, enterprise, developer",
+            "Text, images, audio, video"
+          ],
+          "correctIndex": 1,
+          "explanation": "A complete Gemini operating system has 4 layers: Daily defaults (routine tasks), Custom Gems (pre-built assistants), Workflows (multi-step templates), and Workspace integration (AI inside your existing tools)."
+        },
+        {
+          "question": "Power users typically have 5-10 custom Gems for their most common tasks.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True! Having 5-10 Gems covering your most frequent tasks means one-click access to perfectly configured AI assistants for emails, content, planning, and more."
+        },
+        {
+          "question": "How often should you update your Gems?",
+          "type": "mcq",
+          "options": [
+            "Never — set and forget",
+            "Every day",
+            "Monthly — refine instructions based on what works",
+            "Only when they break"
+          ],
+          "correctIndex": 2,
+          "explanation": "Revisiting your Gems monthly lets you refine their instructions based on what's working and what isn't. As you learn more about prompting, your Gems get better too."
+        }
+      ]
+    }
+  ]
+}

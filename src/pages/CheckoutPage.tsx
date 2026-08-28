@@ -67,7 +67,7 @@ function priceSuffix(months: number, periodLabel: string): string {
 export default function CheckoutPage() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
-  const productId = searchParams.get('product') ?? ''
+  const productId = searchParams.get('product') ?? searchParams.get('plan') ?? ''
   const funnel = searchParams.get('funnel') ?? FUNNEL_28
   const claude = funnel === FUNNEL_CLAUDE
 

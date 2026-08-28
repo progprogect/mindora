@@ -1,7 +1,7 @@
-/** LMS add-on (`metadata.offerSlug`) canonical: `authorisation/server`. This file remains the Railway trial+addon webhook. */
 import { eq } from 'drizzle-orm'
 import type { Context } from 'hono'
 import type Stripe from 'stripe'
+import { recordPurchase } from 'successwise-app/purchases'
 import { db } from '../db/index.js'
 import { processedStripePayments, products, profiles } from '../db/schema.js'
 import { loadEnv } from '../env.js'
@@ -56,6 +56,12 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
   }
 
   if (metadata.offerSlug) {
+    const userId = metadata.userId
+    if (userId) {
+      await recordPurchase(userId, metadata.offerSlug)
+    } else {
+      console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
+    }
     await db.insert(processedStripePayments).values({
       paymentIntentId,
       customerId,

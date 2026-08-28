@@ -1,0 +1,1592 @@
+{
+  "id": "strength-fitness",
+  "title": "Strength, Fitness & Physical Independence",
+  "subtitle": "Build the strength, cardio fitness and mobility you need to stay active, independent and energised for life.",
+  "totalDays": 21,
+  "totalXp": 2100,
+  "modules": [
+    {
+      "id": "sf-mod-1",
+      "title": "Why Strength and Fitness Matter",
+      "subtitle": "Understand why building strength and cardiovascular fitness is the most powerful investment in your future independence, energy and longevity.",
+      "days": "Lessons 1–7",
+      "skill": "Understanding the four pillars of physical fitness and why each protects your health",
+      "lessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "sf-mod-2",
+      "title": "Building Your Foundation",
+      "subtitle": "Learn how to start strength training and cardio safely — with practical progressions that work for any fitness level.",
+      "days": "Lessons 8–14",
+      "skill": "Creating a safe, progressive training routine you can maintain long-term",
+      "lessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "sf-mod-3",
+      "title": "Sustaining Fitness for Life",
+      "subtitle": "Master recovery, avoid common mistakes, and design a sustainable fitness practice that keeps you strong and capable for decades.",
+      "days": "Lessons 15–21",
+      "skill": "Designing a lifelong fitness strategy that adapts as you age",
+      "lessons": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sf-1-case-for-strength",
+      "dayNumber": 1,
+      "title": "The Case for Strength",
+      "subtitle": "Why building and maintaining strength is the single best investment in your future health",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-1-c1",
+          "front": "Why is strength training considered the most important form of exercise for long-term health?",
+          "back": "Strength training protects against nearly every major age-related health decline: muscle loss, bone fractures, metabolic disease, cognitive decline and loss of independence. Dr Peter Attia calls it \"the most important exercise for longevity\" because it directly preserves your ability to function independently as you age."
+        },
+        {
+          "id": "sf-1-c2",
+          "front": "What happens to your body if you never train for strength?",
+          "back": "After age 30, untrained adults lose roughly 3–8% of their muscle mass per decade, accelerating after 60. Bones weaken, metabolism slows, balance deteriorates, and everyday tasks — carrying shopping, climbing stairs, getting up from the floor — become increasingly difficult. This decline is not inevitable; it's largely preventable with regular strength training."
+        },
+        {
+          "id": "sf-1-c3",
+          "front": "What does \"physical independence\" actually mean?",
+          "back": "Physical independence means being able to do everything you want to do without help — carry your own bags, play with grandchildren, get off the floor after a fall, travel without assistance, and live in your own home. Strength is the foundation of all these capabilities. The stronger you are at 50, 60 or 70, the more independence you retain at 80 and beyond."
+        },
+        {
+          "id": "sf-1-c4",
+          "front": "Is strength training only for young, fit people?",
+          "back": "Absolutely not. Research consistently shows that people in their 70s, 80s and even 90s can build significant muscle and strength with appropriate training. In fact, older adults often have the most to gain because they are closest to the threshold where muscle loss affects daily function. It is never too late to start."
+        },
+        {
+          "id": "sf-1-c5",
+          "front": "What's the key takeaway about strength and your future self?",
+          "back": "Think of strength as a savings account for your future. The more you build now, the more you can afford to \"spend\" as natural age-related decline occurs. If you start with a high reserve of muscle and strength, even decades of gradual loss won't push you below the threshold of independence. The time to invest is now — whatever your age."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-1-q1",
+          "question": "Approximately how much muscle mass do untrained adults lose per decade after age 30?",
+          "options": [
+            "1–2%",
+            "3–8%",
+            "15–20%",
+            "None until age 60"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows untrained adults lose roughly 3–8% of muscle mass per decade after 30, accelerating after 60 — making strength training essential for preserving function."
+        },
+        {
+          "id": "sf-1-q2",
+          "question": "Why is strength called the foundation of physical independence?",
+          "options": [
+            "It makes you look more athletic",
+            "It enables everyday tasks like carrying, climbing and getting up from the floor",
+            "It burns the most calories",
+            "It only matters for competitive athletes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strength underpins your ability to perform all the physical tasks of daily life — from carrying bags to getting off the floor — which defines true independence."
+        },
+        {
+          "id": "sf-1-q3",
+          "question": "Can people in their 70s and 80s still build significant muscle?",
+          "options": [
+            "No — muscle growth stops after 50",
+            "Only with expensive supplements",
+            "Yes — research shows older adults can build meaningful strength with appropriate training",
+            "Only if they trained when young"
+          ],
+          "correctIndex": 2,
+          "explanation": "Studies consistently show that even people in their 70s–90s can build significant muscle and strength with proper progressive training. It is never too late."
+        }
+      ]
+    },
+    {
+      "id": "sf-2-cardio-fitness",
+      "dayNumber": 2,
+      "title": "Cardiorespiratory Fitness: Your Longevity Superpower",
+      "subtitle": "Why your heart and lung fitness is the strongest predictor of how long and how well you'll live",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-2-c1",
+          "front": "What is cardiorespiratory fitness and why does it matter so much?",
+          "back": "Cardiorespiratory fitness (CRF) measures how efficiently your heart, lungs and blood vessels deliver oxygen to your muscles during exertion. It is measured as VO2 max — the maximum amount of oxygen your body can use. Higher CRF is associated with lower risk of heart disease, cancer, dementia and early death. Multiple studies rank it as the single strongest predictor of longevity."
+        },
+        {
+          "id": "sf-2-c2",
+          "front": "What is VO2 max in simple terms?",
+          "back": "VO2 max is a number that represents your body's maximum capacity to use oxygen during exercise. Think of it as your engine size. A higher VO2 max means your body can generate more energy, recover faster, and handle physical demands with less strain. It declines with age, but the rate of decline is significantly influenced by how active you remain."
+        },
+        {
+          "id": "sf-2-c3",
+          "front": "How much does cardiorespiratory fitness affect your risk of dying early?",
+          "back": "A landmark study of over 120,000 people found that low CRF carried a greater risk of death than smoking, diabetes or heart disease. Moving from the bottom 25% of fitness to just average cut all-cause mortality risk by roughly 50%. Moving to above average reduced it further. Few single interventions have this magnitude of effect."
+        },
+        {
+          "id": "sf-2-c4",
+          "front": "Do you have to run marathons to improve VO2 max?",
+          "back": "No. VO2 max improves with any activity that raises your heart rate significantly for sustained periods — brisk walking uphill, cycling, swimming, dancing, or even vigorous housework. The key is regular effort at moderate-to-vigorous intensity. As little as 20–30 minutes three times a week can produce meaningful improvements."
+        },
+        {
+          "id": "sf-2-c5",
+          "front": "What's the practical goal for cardiorespiratory fitness?",
+          "back": "Aim to maintain CRF well above the minimum threshold for daily independence. Peter Attia suggests training so your VO2 max at 80 is still high enough to hike, climb stairs, carry luggage and play with grandchildren. Since VO2 max declines ~10% per decade, starting with a higher baseline gives you decades of buffer. The investment you make now directly determines your physical capability later."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-2-q1",
+          "question": "What does VO2 max measure?",
+          "options": [
+            "How fast you can sprint 100 metres",
+            "Your maximum capacity to use oxygen during exercise",
+            "Your resting heart rate",
+            "How flexible your muscles are"
+          ],
+          "correctIndex": 1,
+          "explanation": "VO2 max measures the maximum amount of oxygen your body can utilise during exercise — essentially your aerobic engine capacity."
+        },
+        {
+          "id": "sf-2-q2",
+          "question": "According to research, how does low cardiorespiratory fitness compare to other risk factors?",
+          "options": [
+            "It's less dangerous than any other risk factor",
+            "It carries greater risk of death than smoking, diabetes or heart disease",
+            "It only matters for professional athletes",
+            "It only affects people over 70"
+          ],
+          "correctIndex": 1,
+          "explanation": "A study of 120,000+ people found low CRF carried a greater mortality risk than smoking, diabetes or heart disease — making it one of the most important health markers."
+        },
+        {
+          "id": "sf-2-q3",
+          "question": "How much exercise is needed to start improving VO2 max?",
+          "options": [
+            "At least 2 hours daily",
+            "Only marathon-level training works",
+            "As little as 20–30 minutes of moderate-to-vigorous activity, 3 times per week",
+            "It cannot be improved after age 40"
+          ],
+          "correctIndex": 2,
+          "explanation": "VO2 max responds to as little as 20–30 minutes of moderate-to-vigorous exercise three times a week — you don't need extreme training."
+        }
+      ]
+    },
+    {
+      "id": "sf-3-muscle-use-or-lose",
+      "dayNumber": 3,
+      "title": "Muscle: Use It or Lose It",
+      "subtitle": "How sarcopenia silently steals your strength — and what you can do about it",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-3-c1",
+          "front": "What is sarcopenia?",
+          "back": "Sarcopenia is the age-related loss of muscle mass, strength and function. It's not a disease you catch — it's what happens when muscles aren't regularly challenged. Think of it as the body's \"use it or lose it\" principle in action. Without resistance, muscles gradually shrink, weaken and lose their ability to generate force."
+        },
+        {
+          "id": "sf-3-c2",
+          "front": "Why is muscle loss such a serious health problem?",
+          "back": "Muscle isn't just for lifting heavy things. It's your body's largest metabolic organ — it regulates blood sugar, stores amino acids for immune function, protects joints, supports posture, and provides the strength needed for daily independence. Losing muscle accelerates metabolic disease, increases fall risk, slows recovery from illness, and predicts earlier death."
+        },
+        {
+          "id": "sf-3-c3",
+          "front": "How fast does muscle loss actually happen?",
+          "back": "Without strength training, most people lose 3–8% of muscle per decade from age 30. After 60, the rate accelerates to 1–2% per year. After just two weeks of bed rest or inactivity, young adults can lose measurable muscle mass. The good news: this decline is largely preventable and partially reversible with regular resistance training at any age."
+        },
+        {
+          "id": "sf-3-c4",
+          "front": "What does muscle loss look like in daily life?",
+          "back": "It starts subtly: struggling with heavy shopping bags, needing the handrail on stairs, difficulty getting up from a low sofa, feeling exhausted after a short walk. By the time these become noticeable, significant muscle has already been lost. The goal is to build and maintain enough reserve that you never cross the threshold where daily tasks become difficult."
+        },
+        {
+          "id": "sf-3-c5",
+          "front": "What's the single most effective way to prevent sarcopenia?",
+          "back": "Progressive resistance training — gradually increasing the challenge on your muscles over time. This could be bodyweight exercises, resistance bands, dumbbells or machines. The key principle is progressive overload: muscles must be challenged beyond their current capacity to maintain and grow. Even two sessions per week produces significant protection against age-related muscle loss."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-3-q1",
+          "question": "What is sarcopenia?",
+          "options": [
+            "A type of bone disease",
+            "Age-related loss of muscle mass, strength and function",
+            "A heart condition caused by exercise",
+            "An injury from lifting too heavy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sarcopenia is the progressive loss of muscle mass, strength and function that occurs with ageing — especially when muscles aren't regularly challenged."
+        },
+        {
+          "id": "sf-3-q2",
+          "question": "Why is muscle described as the body's largest metabolic organ?",
+          "options": [
+            "It only burns fat",
+            "It regulates blood sugar, stores amino acids, protects joints and supports independence",
+            "It produces hormones for sleep",
+            "It only matters for appearance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle plays critical metabolic roles — regulating blood sugar, storing amino acids for immune function, protecting joints and providing the strength needed for daily independence."
+        },
+        {
+          "id": "sf-3-q3",
+          "question": "What is the most effective way to prevent sarcopenia?",
+          "options": [
+            "Taking protein supplements alone",
+            "Stretching daily",
+            "Progressive resistance training at least twice per week",
+            "Cardio exercise only"
+          ],
+          "correctIndex": 2,
+          "explanation": "Progressive resistance training — gradually increasing the challenge on muscles — is the most effective intervention for preventing age-related muscle loss."
+        }
+      ]
+    },
+    {
+      "id": "sf-4-bone-health",
+      "dayNumber": 4,
+      "title": "Bone Health: Building Your Skeleton's Strength",
+      "subtitle": "How loading your bones through exercise keeps them dense, strong and fracture-resistant",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-4-c1",
+          "front": "Why does bone health matter for longevity?",
+          "back": "Bone fractures — particularly hip fractures — are among the most dangerous events for older adults. Up to 30% of people who break a hip over age 65 die within a year, often from complications like pneumonia or blood clots. Many who survive never regain full independence. Strong bones are quite literally a matter of life and death as we age."
+        },
+        {
+          "id": "sf-4-c2",
+          "front": "How do bones get stronger?",
+          "back": "Bones adapt to the forces placed on them — a principle called Wolff's Law. When you load a bone through impact (walking, jumping, stairs) or muscle pull (strength training), it responds by adding mineral density and reinforcing its structure. Without regular loading, bones slowly lose density and become fragile. Like muscle, bones follow the \"use it or lose it\" rule."
+        },
+        {
+          "id": "sf-4-c3",
+          "front": "What is osteoporosis and who is at risk?",
+          "back": "Osteoporosis means bones have become so thin and porous that they fracture easily — sometimes from a simple fall or even a cough. It affects roughly 1 in 3 women and 1 in 5 men over 50. Peak bone density is reached around age 30; after that, the rate of bone loss determines your future risk. Building strong bones early and maintaining them through exercise is the best protection."
+        },
+        {
+          "id": "sf-4-c4",
+          "front": "Which exercises are best for bone health?",
+          "back": "Weight-bearing impact exercise (walking, jogging, dancing, stair climbing) and resistance training (lifting weights, bodyweight exercises) are most effective. Swimming and cycling, while excellent for cardio, don't load bones significantly. The ideal combination is resistance training plus some impact activity — this stimulates both bone density and the muscle strength that prevents falls."
+        },
+        {
+          "id": "sf-4-c5",
+          "front": "What can you start doing today to protect your bones?",
+          "back": "Three key actions: (1) Include weight-bearing exercise most days — even brisk walking counts. (2) Do resistance training 2–3 times per week — this loads bones through muscle pull. (3) Ensure adequate calcium (dairy, leafy greens, fortified foods) and vitamin D (sunlight, supplements if needed). These simple habits significantly reduce your fracture risk over the coming decades."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-4-q1",
+          "question": "What principle explains how bones get stronger with exercise?",
+          "options": [
+            "Newton's Third Law",
+            "Wolff's Law — bones adapt to the forces placed on them",
+            "The thermic effect of food",
+            "Muscle memory"
+          ],
+          "correctIndex": 1,
+          "explanation": "Wolff's Law states that bones remodel and strengthen in response to the mechanical loads placed on them — which is why weight-bearing exercise builds bone density."
+        },
+        {
+          "id": "sf-4-q2",
+          "question": "Why are hip fractures so dangerous for older adults?",
+          "options": [
+            "They are only painful for a few days",
+            "Up to 30% of people over 65 who break a hip die within a year",
+            "They always heal without treatment",
+            "They only happen to people over 90"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hip fractures carry up to 30% mortality within one year for people over 65, often from complications — making bone strength critical for longevity."
+        },
+        {
+          "id": "sf-4-q3",
+          "question": "Which exercise type is LEAST effective for building bone density?",
+          "options": [
+            "Weight-bearing walking",
+            "Resistance training with weights",
+            "Swimming",
+            "Stair climbing"
+          ],
+          "correctIndex": 2,
+          "explanation": "While excellent for cardio, swimming doesn't load bones significantly because the water supports your body weight — impact and resistance exercises are better for bone health."
+        }
+      ]
+    },
+    {
+      "id": "sf-5-balance-stability",
+      "dayNumber": 5,
+      "title": "Balance and Stability: Your Fall-Prevention System",
+      "subtitle": "Why training balance now prevents the falls that steal independence later",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-5-c1",
+          "front": "Why is balance training so important for long-term health?",
+          "back": "Falls are the leading cause of injury-related death in adults over 65 and the number one reason people lose their independence. One in three adults over 65 falls each year. Poor balance isn't just an inconvenience — it's a serious health risk. The good news: balance is a trainable skill at any age, and even simple daily practice dramatically reduces fall risk."
+        },
+        {
+          "id": "sf-5-c2",
+          "front": "What systems control your balance?",
+          "back": "Balance relies on three systems working together: (1) Vision — seeing where you are in space. (2) Vestibular system — the inner ear organs that detect head position and movement. (3) Proprioception — sensors in your muscles, joints and feet that tell your brain where your body is. All three decline with age unless actively maintained through regular practice."
+        },
+        {
+          "id": "sf-5-c3",
+          "front": "How does strength relate to balance?",
+          "back": "Strength and balance are deeply connected. Strong legs, core and ankles give your body the power to correct itself when you stumble. A person with good balance but weak muscles may detect a loss of balance but lack the strength to recover. This is why the best fall-prevention programmes combine balance practice with lower-body strength training."
+        },
+        {
+          "id": "sf-5-c4",
+          "front": "What does balance decline look like in daily life?",
+          "back": "It starts with subtle changes: feeling less steady on uneven ground, avoiding looking around while walking, holding handrails more often, feeling anxious on escalators, or taking wider steps. These early signs are the body's warning system. Addressing them early — before a fall happens — is far more effective than trying to recover after one."
+        },
+        {
+          "id": "sf-5-c5",
+          "front": "What are simple ways to train balance every day?",
+          "back": "Start with these daily habits: (1) Stand on one leg while brushing teeth (30 seconds each side). (2) Walk heel-to-toe in a straight line for 20 steps. (3) Stand up from a chair without using hands. (4) Walk on varied surfaces (grass, gravel). (5) Turn your head while walking. These take no equipment, no gym, and only a few minutes — but they maintain the neural pathways that keep you upright."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-5-q1",
+          "question": "What proportion of adults over 65 fall each year?",
+          "options": [
+            "One in ten",
+            "One in three",
+            "One in fifty",
+            "Only those with existing conditions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows one in three adults over 65 falls each year — making balance training one of the most important preventative health investments."
+        },
+        {
+          "id": "sf-5-q2",
+          "question": "Which three systems work together to maintain balance?",
+          "options": [
+            "Heart, lungs and liver",
+            "Vision, vestibular (inner ear) and proprioception (body position sensors)",
+            "Muscles, tendons and ligaments only",
+            "Brain, spinal cord and nerves only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Balance relies on vision, the vestibular system (inner ear) and proprioception (position sensors in muscles and joints) working together."
+        },
+        {
+          "id": "sf-5-q3",
+          "question": "Why does the best fall-prevention programme include strength training?",
+          "options": [
+            "To burn more calories",
+            "Because strong muscles give the body power to correct itself when balance is lost",
+            "Balance and strength are unrelated",
+            "Only for cosmetic reasons"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strong legs, core and ankles provide the power to recover from stumbles — without strength, good balance detection alone isn't enough to prevent falls."
+        }
+      ]
+    },
+    {
+      "id": "sf-6-mobility-joints",
+      "dayNumber": 6,
+      "title": "Mobility and Joint Health",
+      "subtitle": "Why maintaining your range of motion is essential for a pain-free, active life",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-6-c1",
+          "front": "What is mobility and why is it different from flexibility?",
+          "back": "Flexibility is how far a joint can passively move (like someone stretching your leg for you). Mobility is how far you can actively move a joint under your own control and strength. Mobility is what you actually use in real life — bending down to tie shoes, reaching overhead, squatting to pick something up. It combines flexibility with strength and motor control."
+        },
+        {
+          "id": "sf-6-c2",
+          "front": "What happens when you lose mobility?",
+          "back": "Loss of mobility creates a downward spiral: stiff joints lead to compensatory movement patterns, which create pain, which leads to less movement, which causes more stiffness. Over time, simple tasks become difficult — looking over your shoulder while driving, getting dressed, reaching into high cupboards, or getting comfortable in bed. These losses are gradual and often unnoticed until significant."
+        },
+        {
+          "id": "sf-6-c3",
+          "front": "Why do joints stiffen with age?",
+          "back": "Joints stiffen primarily from disuse, not just ageing. The tissues surrounding joints — cartilage, tendons, ligaments, fascia — need regular movement through their full range to stay supple and healthy. Sitting in the same positions for hours, day after day, teaches the body to \"set\" in those shapes. Cartilage also needs movement to receive nutrients, since it has no direct blood supply."
+        },
+        {
+          "id": "sf-6-c4",
+          "front": "How does mobility relate to strength training?",
+          "back": "Strength through a full range of motion is the gold standard. A strong muscle that can only work in a limited range is less useful than a moderately strong muscle that works everywhere you need it. This is why exercises like deep squats, overhead presses and full-range rows are so valuable — they build strength AND mobility simultaneously."
+        },
+        {
+          "id": "sf-6-c5",
+          "front": "What are the most important joints to maintain mobility in?",
+          "back": "Focus on: (1) Hips — needed for walking, stairs, getting up/down. (2) Thoracic spine (upper back) — needed for posture, reaching, breathing. (3) Shoulders — needed for overhead reach, dressing, carrying. (4) Ankles — needed for balance, walking on uneven ground, squatting. Spending just 5–10 minutes daily moving these joints through their full range can prevent decades of stiffness."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-6-q1",
+          "question": "What is the key difference between flexibility and mobility?",
+          "options": [
+            "They are the same thing",
+            "Flexibility is passive range; mobility is active, controlled range under your own strength",
+            "Flexibility is for athletes; mobility is for older adults",
+            "Mobility is only about stretching"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flexibility is passive range (someone else stretching you), while mobility is active — how far you can move a joint under your own control and strength in real life."
+        },
+        {
+          "id": "sf-6-q2",
+          "question": "Why do joints stiffen over time?",
+          "options": [
+            "Primarily from ageing alone — nothing can prevent it",
+            "Primarily from disuse — tissues need regular movement to stay supple",
+            "Only from injury",
+            "Only from cold weather"
+          ],
+          "correctIndex": 1,
+          "explanation": "Joints stiffen primarily from disuse, not ageing alone. Regular movement through full range keeps cartilage, tendons and ligaments supple and healthy."
+        },
+        {
+          "id": "sf-6-q3",
+          "question": "Which four joints are most important to maintain mobility in for daily life?",
+          "options": [
+            "Fingers, toes, elbows, wrists",
+            "Hips, thoracic spine, shoulders, ankles",
+            "Knees only",
+            "Neck and jaw"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hips, thoracic spine (upper back), shoulders and ankles are the four joints most critical for daily function — walking, reaching, carrying and balance."
+        }
+      ]
+    },
+    {
+      "id": "sf-7-four-pillars",
+      "dayNumber": 7,
+      "title": "The Four Pillars of Physical Fitness",
+      "subtitle": "How strength, cardio, balance and mobility work together to keep you capable for life",
+      "moduleId": "sf-mod-1",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-7-c1",
+          "front": "What are the four pillars of physical fitness for longevity?",
+          "back": "The four pillars are: (1) Strength — the ability to produce force (lifting, carrying, pushing). (2) Cardiorespiratory fitness — the efficiency of your heart and lungs. (3) Balance and stability — your ability to stay upright and react to unexpected movements. (4) Mobility — your active range of motion across all joints. All four are needed; neglecting any one creates a vulnerability."
+        },
+        {
+          "id": "sf-7-c2",
+          "front": "Why do you need all four pillars, not just one or two?",
+          "back": "Each pillar protects you in a different way. Strong muscles without mobility leads to stiffness and injury. Good cardio without strength means you can walk far but can't carry your luggage. Balance without strength means you detect instability but can't recover. The four pillars together create a body that is strong, resilient, capable and independent — the definition of functional fitness."
+        },
+        {
+          "id": "sf-7-c3",
+          "front": "How do the four pillars map to real-life activities?",
+          "back": "Carrying heavy shopping = strength. Walking uphill without breathlessness = cardio. Catching yourself on a slippery surface = balance + strength. Reaching into a high cupboard = mobility + strength. Playing on the floor with grandchildren = all four. Every physical task you want to do in 20, 30, 40 years requires some combination of these pillars."
+        },
+        {
+          "id": "sf-7-c4",
+          "front": "How much time does maintaining all four pillars actually take?",
+          "back": "Less than you think. A realistic schedule: 2–3 strength sessions (30–45 min each), 2–3 cardio sessions (20–30 min each, one higher intensity), and 5–10 minutes of daily mobility and balance work. That's roughly 3–4 hours per week total. Given the massive impact on lifespan, healthspan and quality of life, this is arguably the highest-return investment of time available."
+        },
+        {
+          "id": "sf-7-c5",
+          "front": "What's the most important mindset shift about fitness and ageing?",
+          "back": "Stop training for how you look today and start training for what you want to be able to do in 20–30 years. Ask: \"What physical capabilities do I want at 70, 80 or 90?\" Then work backwards. If you want to hike at 80, your VO2 max at 80 needs to be high enough — which means building it much higher now to account for natural decline. This long-term perspective changes everything about how you train."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-7-q1",
+          "question": "What are the four pillars of physical fitness for longevity?",
+          "options": [
+            "Speed, power, agility, reaction time",
+            "Strength, cardiorespiratory fitness, balance and mobility",
+            "Flexibility, endurance, coordination, speed",
+            "Muscle size, body fat, heart rate, blood pressure"
+          ],
+          "correctIndex": 1,
+          "explanation": "The four pillars are strength, cardiorespiratory fitness, balance/stability and mobility — together they create a capable, independent body for life."
+        },
+        {
+          "id": "sf-7-q2",
+          "question": "How much weekly time is needed to maintain all four fitness pillars?",
+          "options": [
+            "10+ hours per week",
+            "Roughly 3–4 hours per week total",
+            "At least 1 hour every day",
+            "30 minutes per month"
+          ],
+          "correctIndex": 1,
+          "explanation": "With 2–3 strength sessions, 2–3 cardio sessions and daily mobility/balance work, roughly 3–4 hours per week covers all four pillars effectively."
+        },
+        {
+          "id": "sf-7-q3",
+          "question": "What mindset shift does the lesson recommend about fitness?",
+          "options": [
+            "Focus only on how you look today",
+            "Train for what you want to be able to do in 20–30 years",
+            "Only train when you feel motivated",
+            "Avoid all intense exercise after 40"
+          ],
+          "correctIndex": 1,
+          "explanation": "The key mindset shift is training for your future capabilities — working backwards from what you want to do at 70, 80 or 90 and building the reserves now."
+        }
+      ]
+    },
+    {
+      "id": "sf-8-start-strength",
+      "dayNumber": 8,
+      "title": "How to Start Strength Training",
+      "subtitle": "A simple, safe framework for beginning resistance training — whatever your starting point",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-8-c1",
+          "front": "What does \"strength training\" actually mean?",
+          "back": "Strength training means making your muscles work against resistance — gravity, your own bodyweight, bands, dumbbells, or machines. When muscles are challenged beyond their current capacity, they adapt and grow stronger. Any form of resistance counts: press-ups, squats, carrying heavy shopping bags, or lifting weights in a gym. The key is progressive challenge, not a specific setting."
+        },
+        {
+          "id": "sf-8-c2",
+          "front": "What are the most important movement patterns to train?",
+          "back": "Rather than thinking in exercises, think in patterns: (1) Push — press-ups, shoulder press. (2) Pull — rows, pull-ups. (3) Hinge — deadlifts, Romanian deadlifts. (4) Squat — squats, lunges. (5) Carry — farmer's walks, loaded carries. (6) Core — planks, anti-rotation exercises. Training all six patterns ensures you build balanced strength that transfers to real life."
+        },
+        {
+          "id": "sf-8-c3",
+          "front": "How many times a week should a beginner train?",
+          "back": "For beginners, 2–3 full-body sessions per week is optimal. This frequency is enough to stimulate strength gains while allowing adequate recovery. Full-body training is more efficient than split routines for beginners because it trains each movement pattern more frequently, producing faster results. Consistency over weeks and months matters far more than session intensity."
+        },
+        {
+          "id": "sf-8-c4",
+          "front": "What does a beginner session actually look like?",
+          "back": "A simple beginner session: (1) 5-minute warm-up — light movement, joint circles. (2) 2–3 sets of a squat pattern (e.g. goblet squat). (3) 2–3 sets of a push pattern (e.g. press-up). (4) 2–3 sets of a hinge pattern (e.g. hip hinge). (5) 2–3 sets of a pull pattern (e.g. resistance band row). (6) 5-minute cool-down. This takes 30–40 minutes and covers every major movement your body needs."
+        },
+        {
+          "id": "sf-8-c5",
+          "front": "What's the biggest mistake beginners make with strength training?",
+          "back": "Starting too hard and burning out — or never starting because they feel they're \"not fit enough yet.\" Both are equally harmful. The correct approach: start well within your current capability, master form before adding load, and add a small amount of challenge each week. The goal in the first month is to build the habit and movement patterns, not to push your limits."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-8-q1",
+          "question": "What are the six fundamental movement patterns for balanced strength training?",
+          "options": [
+            "Bench press, bicep curl, sit-up, leg press, tricep extension, calf raise",
+            "Push, pull, hinge, squat, carry and core",
+            "Running, cycling, swimming, rowing, jumping, climbing",
+            "Warm-up, stretch, lift, rest, cool-down, shower"
+          ],
+          "correctIndex": 1,
+          "explanation": "The six fundamental movement patterns — push, pull, hinge, squat, carry and core — cover all the ways humans need to move and transfer directly to daily life."
+        },
+        {
+          "id": "sf-8-q2",
+          "question": "How many times per week should beginners train for optimal results?",
+          "options": [
+            "Every day",
+            "2–3 full-body sessions per week",
+            "Once per week",
+            "5–6 sessions using muscle-group splits"
+          ],
+          "correctIndex": 1,
+          "explanation": "2–3 full-body sessions per week is optimal for beginners — enough stimulus for strength gains while allowing adequate recovery between sessions."
+        },
+        {
+          "id": "sf-8-q3",
+          "question": "What should the focus be during the first month of strength training?",
+          "options": [
+            "Lifting as heavy as possible to build muscle fast",
+            "Training to failure every session",
+            "Building the habit and mastering movement patterns before adding load",
+            "Only cardio until you're fit enough to lift"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first month is about building the habit and movement quality — not pushing limits. Form first, progressive load second, results third."
+        }
+      ]
+    },
+    {
+      "id": "sf-9-progressive-overload",
+      "dayNumber": 9,
+      "title": "Progressive Overload: The Engine of Improvement",
+      "subtitle": "The one principle that drives all strength and fitness gains — and how to apply it safely",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-9-c1",
+          "front": "What is progressive overload?",
+          "back": "Progressive overload means gradually and systematically increasing the demand placed on your body over time. Your muscles, heart and lungs adapt to a given level of stress — to keep improving, you need to keep providing a slightly greater challenge. Without progressive overload, training produces initial gains that then plateau completely. It is the single most important principle in all exercise science."
+        },
+        {
+          "id": "sf-9-c2",
+          "front": "What are the different ways to apply progressive overload?",
+          "back": "You can increase: (1) Load — more weight on the bar or band. (2) Reps — more repetitions with the same weight. (3) Sets — more total work. (4) Density — same work in less time. (5) Range of motion — deeper squat, fuller stretch. (6) Difficulty — harder variation (e.g. from knee press-up to full press-up). You don't always need to go heavier — any of these progressions counts."
+        },
+        {
+          "id": "sf-9-c3",
+          "front": "How small should progressive overload steps be?",
+          "back": "Very small. The minimum effective dose is the goal. Adding 1–2 kg per session (for experienced lifters) or one extra rep per week (for beginners) is enough to drive consistent progress without overloading recovery. This slow, patient approach compounds dramatically over months and years. Attempting too large a jump too quickly leads to failed lifts, injury, or loss of form."
+        },
+        {
+          "id": "sf-9-c4",
+          "front": "How does progressive overload apply to cardio fitness?",
+          "back": "The same principle applies to cardio: gradually increase duration, intensity, or frequency. For example, walk for 20 minutes this week, 25 minutes next week. Or keep the same duration but add one steeper hill. Or add one interval where you walk faster for 30 seconds. Small, consistent increases in demand are what force your heart and lungs to adapt and improve."
+        },
+        {
+          "id": "sf-9-c5",
+          "front": "What happens when you stop applying progressive overload?",
+          "back": "Your body maintains its current fitness level rather than improving — a state called maintenance. This isn't necessarily bad: once you reach a target level of fitness, a reduced maintenance dose keeps you there. Problems arise only if you stop exercising entirely, which triggers detraining (loss of adaptations). The goal is sustainable progression, not endless intensity."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-9-q1",
+          "question": "What is progressive overload?",
+          "options": [
+            "Training until you're exhausted every session",
+            "Gradually and systematically increasing the demand placed on your body over time",
+            "Doing the same workout perfectly every time",
+            "Adding as much weight as possible each session"
+          ],
+          "correctIndex": 1,
+          "explanation": "Progressive overload is the gradual, systematic increase in training demand — the fundamental driver of all fitness improvements."
+        },
+        {
+          "id": "sf-9-q2",
+          "question": "Which of the following is NOT a valid way to apply progressive overload?",
+          "options": [
+            "Adding one extra rep per set",
+            "Increasing the depth of a squat",
+            "Always doing exactly the same workout with no changes",
+            "Reducing rest time between sets"
+          ],
+          "correctIndex": 2,
+          "explanation": "Doing exactly the same workout repeatedly without any increase in demand produces no progressive overload — the body simply maintains rather than adapts."
+        },
+        {
+          "id": "sf-9-q3",
+          "question": "How large should progression steps be for safe, consistent improvement?",
+          "options": [
+            "As large as possible each session",
+            "Very small — even one extra rep or 1–2 kg per session is enough",
+            "At least 10% more each week",
+            "Only increase every 6 months"
+          ],
+          "correctIndex": 1,
+          "explanation": "Very small increases — one extra rep, or 1–2 kg — are enough to drive consistent progress. Small steps compound dramatically and prevent injury."
+        }
+      ]
+    },
+    {
+      "id": "sf-10-cardio-training",
+      "dayNumber": 10,
+      "title": "Cardio Training: Building Your Aerobic Engine",
+      "subtitle": "How to build cardiovascular fitness effectively — without spending hours on a treadmill",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-10-c1",
+          "front": "What are the two main types of cardio training and what does each do?",
+          "back": "Zone 2 cardio — low-to-moderate intensity where you can hold a conversation (brisk walking, easy cycling) — builds your aerobic base: the system your body uses for all sustained activity. High-intensity intervals (brief hard efforts with recovery) improve your peak aerobic capacity (VO2 max). Both are important: Zone 2 forms the foundation; high intensity builds the ceiling. Most people need much more Zone 2 than they do."
+        },
+        {
+          "id": "sf-10-c2",
+          "front": "What is Zone 2 exercise and why does it matter so much?",
+          "back": "Zone 2 is the intensity where you're working hard enough to breathe more deeply but can still speak in full sentences. At this intensity, your body primarily uses fat for fuel, builds mitochondrial density (the energy factories in your cells), improves insulin sensitivity, and develops cardiovascular endurance. Research by exercise physiologist Iñigo San Millán suggests 80% of endurance training should be Zone 2."
+        },
+        {
+          "id": "sf-10-c3",
+          "front": "How do high-intensity intervals work and are they necessary?",
+          "back": "High-intensity intervals (HIIT) involve short bursts of near-maximum effort followed by recovery periods. They are highly time-efficient for improving VO2 max — 20–30 minutes with intervals can match the VO2 max benefit of much longer Zone 2 sessions. However, they are more taxing on recovery and shouldn't dominate your training. One or two interval sessions per week alongside regular Zone 2 work is an effective combination."
+        },
+        {
+          "id": "sf-10-c4",
+          "front": "What counts as Zone 2 cardio in everyday life?",
+          "back": "More than you might think: brisk walking (especially uphill), easy cycling, recreational swimming, dancing, light jogging, hiking, and even active household tasks at moderate intensity. The test: can you hold a conversation? If yes, you're in Zone 2. If you can only speak in short phrases, you've crossed into higher intensity. Zone 2 is sustainable, repeatable, and easy on recovery."
+        },
+        {
+          "id": "sf-10-c5",
+          "front": "How much cardio should you aim for each week?",
+          "back": "The WHO recommends 150–300 minutes of moderate activity (Zone 2) per week, or 75–150 minutes of vigorous activity, or an equivalent combination. For longevity, many experts suggest aiming for the higher end of these ranges. A practical approach: 3–4 Zone 2 sessions of 30–45 minutes per week, plus one optional interval session. Walking daily adds a substantial base without counting as a \"workout.\""
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-10-q1",
+          "question": "How can you tell if you're exercising in Zone 2?",
+          "options": [
+            "You're completely breathless and can't speak",
+            "You can hold a full conversation while exercising",
+            "Your heart rate is below 50 bpm",
+            "You feel no effort at all"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zone 2 is the intensity where you can hold a conversation in full sentences — working hard enough to breathe more deeply but not gasping."
+        },
+        {
+          "id": "sf-10-q2",
+          "question": "What percentage of endurance training does research suggest should be Zone 2?",
+          "options": [
+            "10%",
+            "50%",
+            "Around 80%",
+            "Zone 2 is not recommended"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research by exercise physiologist Iñigo San Millán suggests approximately 80% of endurance training should be Zone 2 — building the aerobic base that supports all other fitness."
+        },
+        {
+          "id": "sf-10-q3",
+          "question": "What does the WHO recommend for weekly moderate-intensity cardio?",
+          "options": [
+            "30 minutes total per week",
+            "150–300 minutes per week",
+            "10 hours per week",
+            "No specific recommendation exists"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WHO recommends 150–300 minutes of moderate activity (Zone 2) per week as the target for significant health benefits."
+        }
+      ]
+    },
+    {
+      "id": "sf-11-bodyweight",
+      "dayNumber": 11,
+      "title": "Bodyweight Training: Your Gym Everywhere",
+      "subtitle": "How to build real strength using only your own bodyweight — no equipment required",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-11-c1",
+          "front": "Can bodyweight training build real strength, or is it just for beginners?",
+          "back": "Bodyweight training can build substantial strength at all levels. The key is selecting exercises that are appropriately challenging and applying progressive overload by advancing to harder variations. A ring dip, pistol squat, or one-arm press-up requires more strength than many gym exercises. For building a foundation of functional strength, bodyweight training is highly effective — and has the added advantage of requiring no equipment."
+        },
+        {
+          "id": "sf-11-c2",
+          "front": "What are the foundational bodyweight exercises everyone should be able to do?",
+          "back": "Five essential patterns: (1) Press-up — push strength and core. (2) Squat — lower body push. (3) Hip hinge (Romanian deadlift with a bag) — posterior chain. (4) Row (using a table or low bar) — pull strength. (5) Plank or hollow hold — core stability. These five exercises cover all major movement patterns and can be scaled from very easy (wall press-up, chair squat) to very hard."
+        },
+        {
+          "id": "sf-11-c3",
+          "front": "How do you progress with bodyweight training without adding weight?",
+          "back": "By changing leverage, range of motion or stability: Press-up progressions — wall → incline → full → slow → pause at bottom → decline → ring. Squat progressions — chair-assisted → full squat → pause squat → single-leg squat. Each variation changes the mechanical difficulty without needing any equipment. A person who can do perfect press-ups and pistol squats has serious functional strength."
+        },
+        {
+          "id": "sf-11-c4",
+          "front": "What's the advantage of bodyweight training for everyday life?",
+          "back": "Functional transfer. Bodyweight exercises train your body to control and move its own weight — the most directly useful form of strength for real life. Getting up from the floor, stabilising on uneven ground, carrying your own weight up stairs — these all require the exact strength patterns trained by bodyweight exercise. You're also building balance and proprioception simultaneously."
+        },
+        {
+          "id": "sf-11-c5",
+          "front": "What's a realistic starter bodyweight routine you can do today?",
+          "back": "A 20-minute home routine: (1) 3 × 10 incline press-ups (hands on a bench or counter). (2) 3 × 10 chair-assisted squats. (3) 3 × 10 hip hinges (hold a bag for resistance). (4) 3 × 10 bodyweight rows (lie under a table, pull chest to it). (5) 3 × 20 seconds plank. Rest 60 seconds between sets. This covers push, squat, hinge, pull and core — all from home, with no equipment."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-11-q1",
+          "question": "Can bodyweight training build real strength or is it only for beginners?",
+          "options": [
+            "Only useful for the first month, then you need weights",
+            "It can build substantial strength at all levels through harder exercise variations",
+            "Bodyweight training only improves flexibility",
+            "You need machines to build any meaningful strength"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bodyweight training can build substantial strength at all levels — advanced variations like pistol squats and ring dips require significant strength and can challenge experienced trainees."
+        },
+        {
+          "id": "sf-11-q2",
+          "question": "What are the five essential bodyweight movement patterns?",
+          "options": [
+            "Running, jumping, throwing, catching and crawling",
+            "Press-up, squat, hip hinge, row and plank/core",
+            "Sit-ups, crunches, leg raises, back extensions and twists",
+            "Only squats matter for health"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five essential patterns are press-up (push), squat (lower push), hip hinge (posterior chain), row (pull) and plank/hollow hold (core) — covering all major movement patterns."
+        },
+        {
+          "id": "sf-11-q3",
+          "question": "How do you progress in bodyweight training without adding weight?",
+          "options": [
+            "You can't — bodyweight training has a fixed ceiling",
+            "Do more repetitions indefinitely",
+            "By changing leverage, range of motion or stability to advance to harder variations",
+            "Only by buying resistance bands"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bodyweight progression comes from changing leverage, range of motion or stability — such as moving from wall press-ups to full press-ups to decline press-ups."
+        }
+      ]
+    },
+    {
+      "id": "sf-12-protein-muscle",
+      "dayNumber": 12,
+      "title": "Protein and Muscle: Fuelling Your Strength",
+      "subtitle": "How much protein you actually need — and why it matters more as you get older",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-12-c1",
+          "front": "Why is protein so important for strength training?",
+          "back": "Protein provides the building blocks (amino acids) your muscles use to repair and grow after training. Strength training creates microscopic damage in muscle fibres — protein is what allows those fibres to rebuild stronger. Without adequate protein, training stimulus is wasted. Think of it as sending the workers but forgetting to deliver the bricks."
+        },
+        {
+          "id": "sf-12-c2",
+          "front": "How much protein do you actually need?",
+          "back": "The official recommendations (0.8 g per kg of bodyweight) are the minimum to prevent deficiency — not the optimal amount for building and maintaining muscle. For people strength training or trying to preserve muscle, research supports 1.6–2.2 g per kg of bodyweight per day. For a 70 kg person, that's 112–154 g of protein per day — roughly 35–50 g per meal across three meals."
+        },
+        {
+          "id": "sf-12-c3",
+          "front": "Why does protein matter more as you get older?",
+          "back": "Older muscles become less sensitive to the anabolic (muscle-building) signal from protein — a phenomenon called anabolic resistance. To stimulate the same muscle-building response, older adults need more protein per meal. Research suggests older adults benefit from targeting the higher end of protein recommendations (around 2 g per kg) and including a source of leucine-rich protein (meat, fish, eggs, dairy) at each meal."
+        },
+        {
+          "id": "sf-12-c4",
+          "front": "What are the best food sources of protein?",
+          "back": "Highest quality (complete proteins with all essential amino acids): meat, poultry, fish, eggs, dairy (Greek yoghurt, cottage cheese, milk). Excellent plant sources: soy products, lentils, chickpeas, black beans, edamame, quinoa. Plant proteins are often less bioavailable and need to be combined to ensure all essential amino acids are present. Variety across the day is the practical solution."
+        },
+        {
+          "id": "sf-12-c5",
+          "front": "Does it matter when you eat protein around training?",
+          "back": "Yes — though total daily protein is most important. Research shows consuming 20–40 g of protein within 1–2 hours after training maximises the muscle-building window. Starting the day with protein (rather than mostly carbohydrates) also helps regulate appetite and muscle protein synthesis throughout the day. Aim for roughly equal protein distribution across meals rather than eating most of it at dinner."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-12-q1",
+          "question": "What protein intake does research support for people building or maintaining muscle?",
+          "options": [
+            "0.3–0.5 g per kg of bodyweight",
+            "0.8 g per kg (official minimum) is sufficient for all goals",
+            "1.6–2.2 g per kg of bodyweight per day",
+            "More than 4 g per kg is needed"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research supports 1.6–2.2 g of protein per kg of bodyweight per day for people strength training or trying to preserve muscle — significantly higher than the minimum deficiency-prevention recommendation."
+        },
+        {
+          "id": "sf-12-q2",
+          "question": "Why do older adults need more protein per meal than younger adults?",
+          "options": [
+            "They exercise more",
+            "Older muscles develop anabolic resistance — becoming less sensitive to protein's muscle-building signal",
+            "Protein is harder to digest when young",
+            "There is no difference between age groups"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anabolic resistance means older muscles need a higher dose of protein (especially leucine-rich protein) to stimulate the same muscle-building response as younger muscles."
+        },
+        {
+          "id": "sf-12-q3",
+          "question": "When should you consume protein to maximise muscle building after training?",
+          "options": [
+            "Only the night before training",
+            "Within 1–2 hours after training",
+            "At least 6 hours after training",
+            "Timing doesn't matter at all"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consuming 20–40 g of protein within 1–2 hours after training takes advantage of the post-exercise muscle-building window — though total daily protein remains most important."
+        }
+      ]
+    },
+    {
+      "id": "sf-13-limited-time",
+      "dayNumber": 13,
+      "title": "Training with Limited Time or Equipment",
+      "subtitle": "Evidence-based strategies for getting effective results when time and resources are limited",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-13-c1",
+          "front": "Can you build meaningful fitness with very limited time?",
+          "back": "Yes — emphatically. Research shows significant health benefits from as little as 10–15 minutes of vigorous exercise per session. Two 20-minute strength sessions and two 20-minute cardio sessions per week — just 80 minutes total — produce meaningful improvements in strength, cardiovascular fitness and metabolic health. The dose-response curve is steepest at the low end: going from zero to some activity has the biggest impact."
+        },
+        {
+          "id": "sf-13-c2",
+          "front": "What is \"exercise snacking\" and does it work?",
+          "back": "\"Exercise snacking\" means breaking exercise into multiple short bouts throughout the day — for example, three 10-minute walks instead of one 30-minute walk. Research shows that accumulated movement is largely equivalent to continuous movement for health outcomes. A set of press-ups before a meeting, a brisk walk at lunch, and stairs instead of lifts can collectively deliver real physiological benefit."
+        },
+        {
+          "id": "sf-13-c3",
+          "front": "What's the most time-efficient strength training format?",
+          "back": "Compound exercises in a circuit. Compound exercises (squats, press-ups, rows, hinges) work multiple muscle groups simultaneously — more stimulus per minute than isolation exercises. Doing them in circuit fashion (moving between exercises with minimal rest) combines strength and cardio benefits. A 15-minute circuit of 4 compound exercises covers all major muscle groups with metabolic benefit."
+        },
+        {
+          "id": "sf-13-c4",
+          "front": "What minimal equipment gives the biggest fitness return?",
+          "back": "Three items cover virtually everything: (1) A set of resistance bands — provide scalable resistance for all movement patterns, cost under £20, and fit in a bag. (2) A set of adjustable dumbbells — provide progressive load for strength training. (3) A pull-up bar — enables pulling exercises that are hard to replicate without a bar. With these three items and bodyweight, you have a complete gym."
+        },
+        {
+          "id": "sf-13-c5",
+          "front": "How do you maintain fitness when travel, illness or life disrupts your routine?",
+          "back": "Lower the bar dramatically — maintenance requires far less than building. During disrupted periods: one strength session per week maintains most muscle. 10-minute walks maintain most cardio base. Hotel bodyweight workouts, resistance band travel kit, and simply staying active in daily life can preserve months of progress. The goal during disruption is retention, not progress. Any is better than none."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-13-q1",
+          "question": "How much weekly exercise is needed to produce meaningful health improvements?",
+          "options": [
+            "At least 2 hours per session, 5 days per week",
+            "As little as four 20-minute sessions (80 minutes total) per week",
+            "Under 10 minutes per week",
+            "Only daily exercise produces benefits"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows meaningful improvements from as little as four 20-minute sessions per week (80 minutes total). The dose-response curve is steepest at the low end."
+        },
+        {
+          "id": "sf-13-q2",
+          "question": "What does \"exercise snacking\" mean?",
+          "options": [
+            "Eating protein bars during exercise",
+            "Breaking exercise into multiple short bouts throughout the day",
+            "Only doing light exercise",
+            "Rewarding yourself with food after exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Exercise snacking means accumulating movement in short bouts throughout the day — research shows this is largely equivalent to continuous sessions for health outcomes."
+        },
+        {
+          "id": "sf-13-q3",
+          "question": "What is the most time-efficient strength training format?",
+          "options": [
+            "Single-muscle isolation exercises",
+            "One exercise per session",
+            "Compound exercises in a circuit",
+            "Only stretching"
+          ],
+          "correctIndex": 2,
+          "explanation": "Compound exercises (working multiple muscle groups) in a circuit format maximise stimulus per minute — covering all major muscles with metabolic benefit in 15–20 minutes."
+        }
+      ]
+    },
+    {
+      "id": "sf-14-weekly-plan",
+      "dayNumber": 14,
+      "title": "Designing Your Weekly Training Plan",
+      "subtitle": "How to put strength, cardio and mobility together into a practical, sustainable weekly routine",
+      "moduleId": "sf-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-14-c1",
+          "front": "What are the principles for designing an effective training week?",
+          "back": "Three principles: (1) Minimum effective dose — do what produces results without overdoing it. (2) Balance — include strength, cardio and mobility, not just what you enjoy. (3) Sustainability — a plan you can repeat for years beats an intense plan you abandon after a month. A good week of training should leave you feeling energised by Sunday, not depleted."
+        },
+        {
+          "id": "sf-14-c2",
+          "front": "How do strength and cardio sessions interact — should you do them on the same day?",
+          "back": "Ideally, space them out — strength on one day, cardio on another. If you must do both in one session, prioritise the goal you care more about first (usually strength), since the first activity gets more focused energy. Don't do hard cardio immediately before heavy strength training — it blunts the strength stimulus. Walking and Zone 2 cardio are mild enough to do alongside strength days without significant interference."
+        },
+        {
+          "id": "sf-14-c3",
+          "front": "What does a good \"minimum effective\" training week look like?",
+          "back": "A practical minimum: Monday — 30 min strength. Wednesday — 30 min Zone 2 cardio. Friday — 30 min strength. Saturday — 20 min Zone 2 cardio (or a walk). Daily — 5 min mobility/balance. This is ~2 hours of structured exercise, plus daily movement. It covers all four pillars, allows adequate recovery, and fits into almost any schedule. Beginners will make rapid progress from this alone."
+        },
+        {
+          "id": "sf-14-c4",
+          "front": "How much rest do you actually need between strength sessions?",
+          "back": "Beginners need 48–72 hours between strength sessions to allow muscles to repair and adapt. This is why Monday-Wednesday-Friday or Tuesday-Thursday-Saturday works well. As you become more experienced and add training volume, you can begin to specialise — but as a beginner, two full-body sessions per week is enough to make consistent progress while recovering properly."
+        },
+        {
+          "id": "sf-14-c5",
+          "front": "How do you decide whether your training plan is working?",
+          "back": "Track three markers: (1) Performance — are you doing more reps, using more weight, walking faster, or completing more? (2) Recovery — do you feel recovered before each session, or perpetually sore and tired? (3) Enjoyment — do you look forward to training more than you dread it? If any marker is consistently poor, adjust the plan. The best training plan is the one you actually do."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-14-q1",
+          "question": "What are the three principles for designing an effective training week?",
+          "options": [
+            "Train daily, always go to failure, prioritise aesthetics",
+            "Minimum effective dose, balance across pillars, and sustainability",
+            "Only cardio, never strength, maximum intensity",
+            "Train only when motivated"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three principles are minimum effective dose (do what works without overdoing it), balance (include all pillars) and sustainability (a plan you can repeat for years)."
+        },
+        {
+          "id": "sf-14-q2",
+          "question": "How much rest is needed between strength training sessions for beginners?",
+          "options": [
+            "12 hours",
+            "7 days",
+            "48–72 hours",
+            "No rest is needed — train daily"
+          ],
+          "correctIndex": 2,
+          "explanation": "Beginners need 48–72 hours between strength sessions for muscles to repair and adapt — which is why every-other-day schedules (Mon-Wed-Fri) work well."
+        },
+        {
+          "id": "sf-14-q3",
+          "question": "What three markers tell you whether your training plan is working?",
+          "options": [
+            "Weight on scale, appearance in mirror, gym membership cost",
+            "Performance (doing more), recovery (feeling rested) and enjoyment (looking forward to training)",
+            "Only bodyweight and body fat percentage",
+            "Heart rate only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Performance progress, adequate recovery and consistent enjoyment are the three key markers that a training plan is working. Any consistently poor marker signals a need for adjustment."
+        }
+      ]
+    },
+    {
+      "id": "sf-15-recovery",
+      "dayNumber": 15,
+      "title": "Recovery: The Hidden Half of Fitness",
+      "subtitle": "Why what you do between sessions matters as much as what you do during them",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-15-c1",
+          "front": "Why is recovery so important for fitness progress?",
+          "back": "Training doesn't make you stronger — recovery does. Exercise creates stress and micro-damage; adaptation happens during rest when the body rebuilds tissues stronger than before. Without adequate recovery, you accumulate fatigue without adaptation, eventually leading to overtraining, injury or burnout. Think of training as the stimulus and recovery as the response. Both halves are equally important."
+        },
+        {
+          "id": "sf-15-c2",
+          "front": "What are the pillars of effective recovery?",
+          "back": "Four pillars: (1) Sleep — the single most powerful recovery tool; growth hormone release peaks during deep sleep. (2) Nutrition — adequate protein and calories for repair. (3) Rest days — time without intense training for tissue remodelling. (4) Stress management — chronic psychological stress impairs physical recovery by keeping cortisol elevated. Neglect any one of these and your body cannot adapt optimally."
+        },
+        {
+          "id": "sf-15-c3",
+          "front": "How much sleep do you need for optimal recovery from training?",
+          "back": "Most adults need 7–9 hours of quality sleep for full recovery. Athletes and people doing intense training may benefit from the upper end of this range. Sleep deprivation — even one poor night — reduces muscle protein synthesis, impairs reaction time, increases injury risk and reduces workout performance. Prioritising sleep is the single highest-return recovery investment you can make."
+        },
+        {
+          "id": "sf-15-c4",
+          "front": "What is \"active recovery\" and does it actually work?",
+          "back": "Active recovery means light movement on rest days — walking, easy cycling, swimming or gentle yoga. It increases blood flow to recovering muscles without adding significant training stress. Research confirms it can reduce perceived soreness and maintain flexibility without interfering with adaptation. The key word is light: it should feel effortless, not challenging."
+        },
+        {
+          "id": "sf-15-c5",
+          "front": "What are the warning signs of inadequate recovery?",
+          "back": "Watch for: persistent fatigue that sleep doesn't fix, declining performance despite consistent training, elevated resting heart rate, frequent illness, persistent joint pain, poor mood or motivation, disturbed sleep, and loss of appetite. Any of these sustained over more than a week signals you need more recovery — either more rest days, lighter training weeks, or attention to sleep and nutrition."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-15-q1",
+          "question": "When does the body actually get stronger — during training or recovery?",
+          "options": [
+            "During the training session itself",
+            "During recovery — training provides the stimulus, adaptation happens during rest",
+            "Only during sleep immediately after exercise",
+            "Strength builds regardless of recovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Training creates stress and micro-damage; the body rebuilds stronger during recovery. Without adequate rest, fatigue accumulates without adaptation."
+        },
+        {
+          "id": "sf-15-q2",
+          "question": "What is the single most powerful recovery tool available?",
+          "options": [
+            "Ice baths",
+            "Massage guns",
+            "Sleep (7–9 hours of quality sleep)",
+            "Compression garments"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sleep is the single most powerful recovery tool — growth hormone peaks during deep sleep, and even one poor night impairs muscle repair and performance."
+        },
+        {
+          "id": "sf-15-q3",
+          "question": "What does \"active recovery\" involve?",
+          "options": [
+            "Intense training on rest days to maintain fitness",
+            "Light, effortless movement like walking or gentle yoga to increase blood flow",
+            "Complete bed rest with no movement",
+            "Taking supplements instead of resting"
+          ],
+          "correctIndex": 1,
+          "explanation": "Active recovery means light, effortless movement on rest days — it increases blood flow to muscles and reduces soreness without adding training stress."
+        }
+      ]
+    },
+    {
+      "id": "sf-16-injury-prevention",
+      "dayNumber": 16,
+      "title": "Injury Prevention and Safe Training",
+      "subtitle": "How to train consistently for years without getting hurt — the principles that protect you",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-16-c1",
+          "front": "What causes most training injuries?",
+          "back": "The vast majority of training injuries come from three things: (1) Too much too soon — increasing load, volume or frequency faster than the body can adapt. (2) Poor technique under fatigue — form breaks down when tired. (3) Ignoring warning signs — training through persistent pain rather than adjusting. Very few injuries come from a single bad rep. Most develop gradually from accumulated overload without adequate recovery."
+        },
+        {
+          "id": "sf-16-c2",
+          "front": "What is the \"10% rule\" for progressing safely?",
+          "back": "A general guideline: don't increase total training volume (weight × reps × sets, or running distance, or cycling time) by more than 10% per week. This gives connective tissue — tendons, ligaments, cartilage — time to adapt. Muscles strengthen faster than connective tissue, creating a window where you feel strong enough to do more but your joints aren't ready. Patience here prevents months of setback."
+        },
+        {
+          "id": "sf-16-c3",
+          "front": "How do you tell the difference between normal training discomfort and a warning sign?",
+          "back": "Healthy training discomfort: muscular burning during effort, generalised soreness 24–48 hours after training (DOMS), feeling tired but recovered by next session. Warning signs: sharp or stabbing pain during movement, pain in a specific joint or tendon that worsens with training, pain that doesn't improve with rest, swelling, or numbness/tingling. Warning signs mean stop and assess, not push through."
+        },
+        {
+          "id": "sf-16-c4",
+          "front": "Why is warming up important for injury prevention?",
+          "back": "A warm-up prepares tissues for load: it increases muscle temperature (making them more pliable), increases blood flow (delivering oxygen and nutrients), activates the nervous system (improving coordination), and lubricates joints (through synovial fluid). A warm-up doesn't need to be long — 5 minutes of progressive movement that mirrors your training is usually sufficient. Cold muscles and joints are less resilient to sudden forces."
+        },
+        {
+          "id": "sf-16-c5",
+          "front": "What should you do if you get injured?",
+          "back": "Modern approach: (1) Reduce load on the affected area but stay active where possible — complete rest often delays healing. (2) Manage pain with ice, gentle movement and anti-inflammatories if needed. (3) Gradually reload the tissue as pain allows — progressive loading stimulates tissue repair. (4) If pain persists beyond 2 weeks or limits daily function, seek professional assessment. Most training injuries resolve with intelligent load management."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-16-q1",
+          "question": "What causes most training injuries?",
+          "options": [
+            "A single heavy lift",
+            "Too much too soon, poor technique under fatigue, and ignoring warning signs",
+            "Warming up too much",
+            "Training only twice per week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most injuries develop gradually from three causes: increasing too fast, breaking form when tired, and training through pain rather than adjusting."
+        },
+        {
+          "id": "sf-16-q2",
+          "question": "What does the \"10% rule\" recommend?",
+          "options": [
+            "Always train at 10% of your maximum",
+            "Don't increase total training volume by more than 10% per week",
+            "Rest for 10% of each session",
+            "Only train 10% of the time"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 10% rule limits weekly volume increases to give connective tissue time to adapt — muscles strengthen faster than tendons and ligaments."
+        },
+        {
+          "id": "sf-16-q3",
+          "question": "What is the modern approach to a training injury?",
+          "options": [
+            "Complete bed rest until all pain is gone",
+            "Push through any pain — it builds mental toughness",
+            "Reduce load on the area but stay active, gradually reloading as pain allows",
+            "Immediately stop all exercise for 6 months"
+          ],
+          "correctIndex": 2,
+          "explanation": "Modern injury management: reduce load but stay active where possible, gradually reload the tissue as pain allows. Complete rest often delays healing."
+        }
+      ]
+    },
+    {
+      "id": "sf-17-training-ageing",
+      "dayNumber": 17,
+      "title": "Adapting Training as You Age",
+      "subtitle": "How to modify your approach at every decade while maintaining strength and fitness",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-17-c1",
+          "front": "Does training need to change as you get older?",
+          "back": "The principles remain identical — progressive overload, all four pillars, adequate recovery. What changes is the implementation: recovery takes longer, connective tissue needs more warm-up time, injury risk increases if you ignore pain, and relative priorities shift. But the need for strength training actually increases with age. The goal is to train smarter, not less."
+        },
+        {
+          "id": "sf-17-c2",
+          "front": "What are the key training adaptations for people in their 40s and 50s?",
+          "back": "Key adjustments: (1) Longer warm-ups — 10 minutes instead of 5. (2) Slightly more recovery between heavy sessions — 3 days instead of 2. (3) More emphasis on joint mobility and soft tissue work. (4) Higher protein intake to combat anabolic resistance. (5) Continued heavy loading — but with more attention to technique and managing joint stress. The goal is maintaining the intensity while extending the recovery."
+        },
+        {
+          "id": "sf-17-c3",
+          "front": "What changes matter most for people in their 60s and beyond?",
+          "back": "Three priorities become critical: (1) Balance and fall prevention — practise daily. (2) Maintaining power (speed of muscle contraction) — not just strength. Power declines faster than strength and is what saves you from a fall. (3) Preserving range of motion — stiffness accelerates loss of independence. Strength training remains essential but should emphasise controlled eccentric movements and multi-joint exercises."
+        },
+        {
+          "id": "sf-17-c4",
+          "front": "Is it dangerous to lift heavy weights when you're older?",
+          "back": "Not inherently — it depends on context. An older adult who has been training progressively can safely handle significant loads. The risk comes from doing too much too fast without preparation, or from using poor technique. Research shows supervised resistance training in older adults (including the very old) produces large benefits with very low injury rates. The greater danger is not training at all."
+        },
+        {
+          "id": "sf-17-c5",
+          "front": "How do you maintain motivation for training across decades?",
+          "back": "Three strategies: (1) Connect exercise to your future self — visualise what you want to be able to do at 70, 80, 90 and train towards it. (2) Find forms of movement you genuinely enjoy — not just what's optimal. Compliance beats optimality. (3) Focus on performance goals, not appearance — \"I want to squat my bodyweight\" is more motivating long-term than \"I want to look good.\" Purpose beats vanity for decades-long adherence."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-17-q1",
+          "question": "What physical quality declines faster than strength and is critical for preventing falls?",
+          "options": [
+            "Flexibility",
+            "Power (speed of muscle contraction)",
+            "Endurance",
+            "Body fat percentage"
+          ],
+          "correctIndex": 1,
+          "explanation": "Power — the speed at which muscles can produce force — declines faster than strength with age. It's what enables you to react quickly and catch yourself during a stumble."
+        },
+        {
+          "id": "sf-17-q2",
+          "question": "Is heavy lifting dangerous for older adults?",
+          "options": [
+            "Yes — all older adults should avoid weights",
+            "Not inherently — progressive training with good technique is safe and beneficial",
+            "Only safe with expensive equipment",
+            "Only dangerous after age 80"
+          ],
+          "correctIndex": 1,
+          "explanation": "Supervised progressive resistance training in older adults produces large benefits with very low injury rates. The greater danger is not training at all."
+        },
+        {
+          "id": "sf-17-q3",
+          "question": "What key training adjustment is recommended for people in their 40s–50s?",
+          "options": [
+            "Stop all heavy lifting",
+            "Only do yoga",
+            "Longer warm-ups, slightly more recovery time, and higher protein intake",
+            "Train every day to prevent decline"
+          ],
+          "correctIndex": 2,
+          "explanation": "In your 40s–50s, key adjustments include longer warm-ups (10 min), more recovery between heavy sessions, emphasis on mobility, and higher protein intake."
+        }
+      ]
+    },
+    {
+      "id": "sf-18-common-mistakes",
+      "dayNumber": 18,
+      "title": "Common Training Mistakes and How to Avoid Them",
+      "subtitle": "The errors that derail most people's fitness — and the simple fixes that prevent them",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-18-c1",
+          "front": "What is the most common reason people stop training?",
+          "back": "Starting too aggressively and burning out. Most people begin a new fitness routine with too much volume, intensity and frequency — fuelled by enthusiasm — then crash within 2–4 weeks from fatigue, soreness or injury. The antidote: start at 50% of what you think you can do. Build slowly. Make the first month almost too easy. Consistency over months is what produces results, not heroic early sessions."
+        },
+        {
+          "id": "sf-18-c2",
+          "front": "Why is \"all or nothing\" thinking so damaging for fitness?",
+          "back": "All-or-nothing thinking turns every imperfect session into a failure: \"I only had 15 minutes, so I didn't bother.\" \"I missed Monday, so I skipped the whole week.\" \"I can't do my full routine, so I did nothing.\" This mindset ignores the enormous value of partial efforts. A 10-minute session is not as good as 45 minutes — but it's infinitely better than zero. The best long-term exercisers embrace imperfect consistency."
+        },
+        {
+          "id": "sf-18-c3",
+          "front": "Why do people neglect training they don't enjoy?",
+          "back": "Many people only do what they're good at: runners run, yogis stretch, gym-goers lift. This creates imbalances — the runner with no upper body strength, the lifter with poor cardio, the flexible person with no stability. A well-rounded programme covers all four pillars, even briefly. The fix: make your least favourite pillar the smallest dose in your plan — just enough to cover the gap, not enough to dread it."
+        },
+        {
+          "id": "sf-18-c4",
+          "front": "What is \"ego lifting\" and why is it risky?",
+          "back": "Ego lifting means choosing a weight based on what looks impressive rather than what your body can handle with good technique. It leads to compensatory movement patterns — your body recruits the wrong muscles to move weight it can't control properly. This creates injury risk, reinforces bad habits, and often produces worse results than lighter weights done well. Good form with moderate weight always beats poor form with heavy weight."
+        },
+        {
+          "id": "sf-18-c5",
+          "front": "What is the \"programme hopping\" trap?",
+          "back": "Programme hopping means constantly switching routines before giving any programme time to work. Strength and fitness adaptations take 4–8 weeks to become visible. Switching every 2 weeks means you never see results from anything. The fix: choose a simple programme based on sound principles, commit to it for at least 8–12 weeks, track progress, and only change if it clearly isn't working after a genuine trial."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-18-q1",
+          "question": "What is the most common reason people abandon their fitness routine?",
+          "options": [
+            "Lack of time",
+            "Starting too aggressively and burning out within 2–4 weeks",
+            "Not having the right equipment",
+            "Weather conditions"
+          ],
+          "correctIndex": 1,
+          "explanation": "The most common reason is starting too hard — excessive volume and intensity lead to fatigue, soreness or injury within weeks. Starting conservatively and building slowly prevents this."
+        },
+        {
+          "id": "sf-18-q2",
+          "question": "Why is \"all or nothing\" thinking harmful for fitness?",
+          "options": [
+            "It makes you train too often",
+            "It turns every imperfect session into a failure, when partial efforts still have enormous value",
+            "It only applies to diet",
+            "It makes training too easy"
+          ],
+          "correctIndex": 1,
+          "explanation": "All-or-nothing thinking discards partial efforts that still provide huge benefit — a 10-minute session is infinitely better than zero. Imperfect consistency beats perfect inconsistency."
+        },
+        {
+          "id": "sf-18-q3",
+          "question": "How long should you commit to a training programme before deciding if it works?",
+          "options": [
+            "2–3 days",
+            "One week",
+            "At least 8–12 weeks",
+            "Switching weekly produces the best results"
+          ],
+          "correctIndex": 2,
+          "explanation": "Strength and fitness adaptations take 4–8 weeks to become visible. A programme needs at least 8–12 weeks of consistent effort before you can fairly evaluate its effectiveness."
+        }
+      ]
+    },
+    {
+      "id": "sf-19-motivation-habit",
+      "dayNumber": 19,
+      "title": "Motivation, Habit and Identity",
+      "subtitle": "How to keep training consistently when motivation fades — by building a fitness identity",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-19-c1",
+          "front": "Why does motivation always fade — and what replaces it?",
+          "back": "Motivation is an emotion: it peaks with novelty and excitement, then naturally fades as the routine becomes familiar. This is biological and inevitable. What keeps people training for years isn't motivation — it's habit (automatic behaviour triggered by context) and identity (seeing yourself as \"someone who trains\"). The goal is to make training feel as automatic as brushing your teeth — not dependent on feeling inspired."
+        },
+        {
+          "id": "sf-19-c2",
+          "front": "How do you build exercise into an automatic habit?",
+          "back": "Four components from habit science: (1) Cue — attach training to an existing daily anchor (e.g. \"after coffee, I train\"). (2) Routine — keep the initial routine short and easy. (3) Remove friction — have clothes laid out, equipment ready, remove decisions. (4) Never miss twice — one missed day is fine; two in a row starts breaking the chain. The lower the barrier to starting, the more automatic it becomes."
+        },
+        {
+          "id": "sf-19-c3",
+          "front": "What does \"identity-based training\" mean?",
+          "back": "Instead of \"I'm trying to get fit\" (a goal), shift to \"I'm someone who trains\" (an identity). When training becomes part of who you are — like being a reader or a parent — skipping feels wrong rather than tempting. Each completed session is a vote for your new identity. The key shift: you're not exercising to become a certain person; you're exercising because that's who you are."
+        },
+        {
+          "id": "sf-19-c4",
+          "front": "How do you stay consistent when life gets hard?",
+          "back": "Use the \"minimum viable workout\" strategy: on difficult days, lower the bar to something ridiculously easy — a 5-minute walk, three sets of squats, one stretch routine. The goal on hard days isn't performance; it's maintaining the identity and habit chain. Five minutes on your worst day protects months of consistency. Rigid plans break; flexible systems endure."
+        },
+        {
+          "id": "sf-19-c5",
+          "front": "What role does tracking play in long-term consistency?",
+          "back": "Simple tracking creates visibility and accountability: seeing a streak of sessions, noticing strength improving week by week, recognising patterns (you always skip Wednesdays). It doesn't need to be complex — a calendar with crosses, a note of reps/weight, or a simple app. The data proves to your future self that you're making progress, especially on days when progress feels invisible."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-19-q1",
+          "question": "What keeps people training for years when motivation fades?",
+          "options": [
+            "Expensive gym memberships",
+            "Habit (automatic behaviour) and identity (seeing yourself as someone who trains)",
+            "New workout programmes every week",
+            "Training partners only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Long-term consistency comes from habit (making training automatic) and identity (seeing yourself as \"someone who trains\") — not from sustained motivation."
+        },
+        {
+          "id": "sf-19-q2",
+          "question": "What is a \"minimum viable workout\"?",
+          "options": [
+            "The hardest session you can do",
+            "A ridiculously easy session (e.g. 5 minutes) used on difficult days to maintain the habit chain",
+            "A workout that takes at least 90 minutes",
+            "Only stretching"
+          ],
+          "correctIndex": 1,
+          "explanation": "A minimum viable workout is a very low-bar session — even 5 minutes — that maintains your identity and habit chain on days when a full session isn't possible."
+        },
+        {
+          "id": "sf-19-q3",
+          "question": "What does \"never miss twice\" mean in habit science?",
+          "options": [
+            "Always train twice per day",
+            "One missed day is fine, but two in a row starts breaking the habit chain",
+            "Miss at least two sessions per week",
+            "Double your next session after missing one"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Never miss twice\" means one missed day doesn't matter, but consecutive misses start eroding the habit chain. Getting back on track the next day protects long-term consistency."
+        }
+      ]
+    },
+    {
+      "id": "sf-20-functional-fitness",
+      "dayNumber": 20,
+      "title": "Functional Fitness for Real Life",
+      "subtitle": "Training movements that matter — preparing your body for everything real life demands",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-20-c1",
+          "front": "What is \"functional fitness\" and why does it matter?",
+          "back": "Functional fitness means training movements that directly transfer to real-life tasks — picking things up from the floor, carrying heavy bags, pushing doors, reaching overhead, climbing stairs, playing with children. The goal isn't to be strong in a machine's fixed path; it's to be capable in unpredictable, multi-directional real-world situations. Functional fitness is the bridge between gym strength and life capability."
+        },
+        {
+          "id": "sf-20-c2",
+          "front": "What are the most important functional movements for independence?",
+          "back": "Seven key movements that predict independence: (1) Getting up from the floor without support. (2) Carrying heavy loads (farmer's walk pattern). (3) Pushing and pulling doors, drawers, luggage. (4) Stepping up and down (stairs, curbs). (5) Reaching overhead (top shelves, cupboards). (6) Bending and lifting from the ground (deadlift pattern). (7) Squatting to sit and stand without arm support. Train all seven regularly."
+        },
+        {
+          "id": "sf-20-c3",
+          "front": "How does functional training differ from gym machine training?",
+          "back": "Machines isolate individual muscles in fixed paths. Functional training uses free weights, bodyweight and unstable environments to challenge multiple muscles, joints and stabilisers simultaneously — just like real life. A seated leg press is less functional than a goblet squat because the squat also requires balance, core stability, ankle mobility and coordination. Real life doesn't have a backrest."
+        },
+        {
+          "id": "sf-20-c4",
+          "front": "What is the \"sit-rise test\" and why is it a powerful predictor of longevity?",
+          "back": "The sit-rise test measures your ability to lower yourself to the floor and stand back up without using your hands, knees or arms for support. Each support used deducts a point from a maximum of 10. A Brazilian study of 2,000+ adults found those scoring below 8 had significantly higher mortality over a 6-year follow-up. The test combines strength, mobility, balance and coordination — the pillars of physical independence."
+        },
+        {
+          "id": "sf-20-c5",
+          "front": "How do you train for functional fitness without a gym?",
+          "back": "Everyday functional training: (1) Carry heavy shopping bags rather than using a trolley. (2) Practise getting up and down from the floor daily. (3) Take stairs instead of lifts. (4) Carry a weighted backpack on walks. (5) Practise single-leg balance when waiting for the kettle. (6) Squat fully to pick things up instead of bending. These turn daily life into training — no gym, no equipment, no extra time required."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-20-q1",
+          "question": "What does \"functional fitness\" mean?",
+          "options": [
+            "Looking muscular in a gym",
+            "Training movements that directly transfer to real-life tasks and daily independence",
+            "Only yoga and stretching",
+            "Training on expensive machines"
+          ],
+          "correctIndex": 1,
+          "explanation": "Functional fitness means training movements that transfer to real-life demands — carrying, lifting, climbing, reaching and maintaining independence in unpredictable situations."
+        },
+        {
+          "id": "sf-20-q2",
+          "question": "What does the sit-rise test measure?",
+          "options": [
+            "Only hamstring flexibility",
+            "How fast you can run",
+            "Your ability to lower to the floor and stand up without using hands/knees for support",
+            "Maximum leg press weight"
+          ],
+          "correctIndex": 2,
+          "explanation": "The sit-rise test combines strength, mobility, balance and coordination — getting up and down from the floor without support. It predicts mortality risk in older adults."
+        },
+        {
+          "id": "sf-20-q3",
+          "question": "Why is a goblet squat more \"functional\" than a seated leg press machine?",
+          "options": [
+            "It uses heavier weight",
+            "It requires balance, core stability, ankle mobility and coordination — just like real life",
+            "Machines are always better for building strength",
+            "There is no difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "The goblet squat challenges multiple systems simultaneously — balance, core, mobility and strength — mimicking real-life demands. Real life doesn't have a backrest."
+        }
+      ]
+    },
+    {
+      "id": "sf-21-lifelong-strategy",
+      "dayNumber": 21,
+      "title": "Your Lifelong Fitness Strategy",
+      "subtitle": "Bringing everything together into a sustainable plan that serves you for the rest of your life",
+      "moduleId": "sf-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "sf-21-c1",
+          "front": "What does a lifelong fitness strategy look like?",
+          "back": "A lifelong strategy isn't a rigid plan — it's a set of principles that adapt as your life changes. Core principles: (1) Train all four pillars consistently (strength, cardio, balance, mobility). (2) Apply progressive overload gradually. (3) Prioritise recovery as seriously as training. (4) Adjust intensity and volume as your body signals. (5) Choose activities you enjoy enough to sustain for decades. Plans change; principles endure."
+        },
+        {
+          "id": "sf-21-c2",
+          "front": "How do you decide what to prioritise at different life stages?",
+          "back": "In your 20s–30s: build the largest possible reserve of strength and cardio capacity. In your 40s–50s: maintain intensity while adding more mobility, balance and recovery time. In your 60s+: shift emphasis toward power (speed of movement), balance, functional independence and fall prevention — while continuing to train strength. At every stage: never fully stop any pillar; just adjust the emphasis."
+        },
+        {
+          "id": "sf-21-c3",
+          "front": "What is the \"Centenarian Olympics\" concept?",
+          "back": "Peter Attia's \"Centenarian Olympics\" asks: what physical tasks do you want to be able to do at 100? Carry a child. Hike a trail. Get off the floor. Climb stairs with luggage. Reach overhead. Then work backwards: to do these at 100, what capacity do you need at 80? At 60? This gives your training purpose beyond appearance — you're training for the life you want to live in 30–50 years."
+        },
+        {
+          "id": "sf-21-c4",
+          "front": "How do you prevent fitness from becoming all-consuming?",
+          "back": "Fitness should serve your life, not dominate it. For most people, 3–5 hours of structured exercise per week — supplemented by an active daily lifestyle — delivers 80–90% of the longevity and health benefits. Beyond this, returns diminish rapidly. The goal is sustainable adequacy: enough to maintain all four pillars, protect independence, and feel energised — while still having time for relationships, work and enjoyment."
+        },
+        {
+          "id": "sf-21-c5",
+          "front": "What is the single most important lesson from this entire course?",
+          "back": "Physical fitness is not a luxury, a hobby, or something only athletes need. It is the foundation of your future independence, energy, cognitive function and quality of life. The choices you make today — whether to train or not, how you move, how you recover — compound over decades into dramatically different outcomes. Start now, progress patiently, stay consistent, and your future self will thank you."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sf-21-q1",
+          "question": "What is the \"Centenarian Olympics\" concept?",
+          "options": [
+            "A real competition for people over 100",
+            "Identifying what physical tasks you want to do at 100 and training backwards from there",
+            "Only competing against people your own age",
+            "A genetic test for longevity potential"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Centenarian Olympics concept asks what you want to physically do at 100 — then works backwards to determine the capacity needed at 80, 60 and now, giving training a clear purpose."
+        },
+        {
+          "id": "sf-21-q2",
+          "question": "How much structured exercise per week delivers 80–90% of health benefits for most people?",
+          "options": [
+            "30 minutes total",
+            "3–5 hours per week",
+            "10+ hours per week",
+            "15 minutes per day only"
+          ],
+          "correctIndex": 1,
+          "explanation": "3–5 hours of structured exercise per week, supplemented by an active daily lifestyle, delivers 80–90% of longevity and health benefits. Beyond this, returns diminish."
+        },
+        {
+          "id": "sf-21-q3",
+          "question": "What makes a fitness strategy \"lifelong\" rather than short-term?",
+          "options": [
+            "Following the exact same programme forever",
+            "Having principles that adapt as your life changes, not a rigid plan",
+            "Never taking rest days",
+            "Only doing one type of exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "A lifelong strategy is built on adaptable principles (all four pillars, progressive overload, adequate recovery, enjoyment) — not a rigid plan that breaks when life changes."
+        }
+      ]
+    }
+  ]
+}

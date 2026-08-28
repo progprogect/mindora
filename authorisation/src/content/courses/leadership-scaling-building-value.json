@@ -1,0 +1,1616 @@
+{
+  "id": "leadership-scaling-building-value",
+  "title": "Leadership, Scaling & Building Value",
+  "subtitle": "Lead with courage, scale with systems, build something that lasts",
+  "totalDays": 21,
+  "totalXp": 420,
+  "modules": [
+    {
+      "id": "lsv-module-1",
+      "moduleNumber": 1,
+      "title": "Lead With Clarity & Courage",
+      "subtitle": "Build the leadership foundation that scales — learn to make hard calls, give radical candor, create psychological safety, and develop the identity of a leader who others follow through difficulty.",
+      "days": "Lessons 1–7",
+      "skill": "Apply High Output Management principles, practise Radical Candor, make hard decisions under uncertainty, and build the leadership identity needed to scale a company",
+      "lessonIds": [
+        "lsv-1-hard-thing-about-leadership",
+        "lsv-2-high-output-management",
+        "lsv-3-managers-schedule",
+        "lsv-4-radical-candor",
+        "lsv-5-building-trust-at-scale",
+        "lsv-6-hard-decisions",
+        "lsv-7-leadership-identity"
+      ]
+    },
+    {
+      "id": "lsv-module-2",
+      "moduleNumber": 2,
+      "title": "Scale the Organisation",
+      "subtitle": "Master the four Scaling Up disciplines — People, Strategy, Execution, Cash — alongside the Good to Great flywheel, Level 5 Leadership, and the BHAG framework for building a company that outlasts its founder.",
+      "days": "Lessons 8–14",
+      "skill": "Use Rockefeller Habits, create people systems at scale, craft a strategy execution framework, embed culture as competitive advantage, and build the Good to Great flywheel",
+      "lessonIds": [
+        "lsv-8-scaling-up-fundamentals",
+        "lsv-9-people-systems-at-scale",
+        "lsv-10-strategy-execution",
+        "lsv-11-culture-as-advantage",
+        "lsv-12-level-5-leadership",
+        "lsv-13-flywheel-effect",
+        "lsv-14-bhag"
+      ]
+    },
+    {
+      "id": "lsv-module-3",
+      "moduleNumber": 3,
+      "title": "Build Lasting Value",
+      "subtitle": "Create a company worth buying, keeping, and being proud of — apply OKRs, build enduring culture, maintain talent density, plan your exit and legacy, and cement your impact as a leader who built something that lasts.",
+      "days": "Lessons 15–21",
+      "skill": "Implement OKRs that cascade, build enduring culture, manage talent density, craft an exit strategy, and define your legacy as a values-driven leader",
+      "lessonIds": [
+        "lsv-15-what-makes-great",
+        "lsv-16-core-ideology",
+        "lsv-17-okrs-measuring-what-matters",
+        "lsv-18-enduring-culture",
+        "lsv-19-talent-density",
+        "lsv-20-exit-and-legacy",
+        "lsv-21-leaders-lasting-impact"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lsv-1-hard-thing-about-leadership",
+      "dayNumber": 1,
+      "moduleId": "lsv-module-1",
+      "title": "The Hard Thing About Leadership",
+      "subtitle": "Why great leaders are forged in difficulty, not comfort",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "No Easy Answers",
+          "body": "Ben Horowitz opens The Hard Thing About Hard Things with a brutal truth: there is no formula for leading a company through its darkest moments. Business books celebrate successes — they rarely teach you what to do when everything is on fire. Real leadership is about making the best decision with incomplete information, under enormous pressure, when the stakes couldn't be higher."
+        },
+        {
+          "type": "content",
+          "headline": "The Struggle Is the Job",
+          "body": "Horowitz calls it \"The Struggle\" — the sleepless nights, the self-doubt, the loneliness of the CEO chair. Most founders experience it but hide it. Normalising the struggle doesn't make it easier, but it does remove the added burden of thinking you're the only one who feels this way. The best leaders don't escape the struggle — they learn to lead through it."
+        },
+        {
+          "type": "content",
+          "headline": "Wartime vs Peacetime CEO",
+          "body": "Horowitz distinguishes two modes: Peacetime (the company has a strong position; focus on expanding the market and nurturing culture) and Wartime (existential threat; decisive, aggressive action needed). Most leadership advice applies to peacetime. But knowing which mode you're in — and switching styles accordingly — is one of the most important meta-skills a leader can develop."
+        },
+        {
+          "type": "content",
+          "headline": "Loudcloud's Near-Death Experience",
+          "body": "In 2001, Horowitz's company Loudcloud faced collapse. The dot-com crash had wiped out 80% of its customer base. Rather than accept defeat, he made the gut-wrenching call to take the company public — not because it was a good time, but because it was the only path to survival. The IPO raised enough capital to pivot. Within two years, the company was profitable. The lesson: in hard moments, the only way is through."
+        },
+        {
+          "type": "try-it",
+          "headline": "Map Your Leadership Crucible",
+          "body": "Think of the hardest professional moment you've ever faced. What decision did you have to make? What was the cost of inaction? What did you learn about yourself? That moment is your leadership crucible — the forge where your real capabilities were revealed. Write it down. The patterns in your hard moments reveal your leadership edge and your blind spots."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What does Ben Horowitz call the intense psychological pressure of running a company through difficulty?",
+          "options": [
+            "The CEO tax",
+            "The Struggle",
+            "The Gap",
+            "The Burden"
+          ],
+          "correctIndex": 1,
+          "explanation": "Horowitz calls it \"The Struggle\" — the relentless pressure, self-doubt, and loneliness that comes with leading a company through existential challenges. Normalising it is the first step to managing it."
+        },
+        {
+          "type": "mcq",
+          "question": "A \"Wartime CEO\" should primarily:",
+          "options": [
+            "Focus on team morale and gradual process improvement",
+            "Expand the market and nurture collaborative culture",
+            "Act decisively and aggressively to address existential threats",
+            "Delegate all major decisions to preserve leadership bandwidth"
+          ],
+          "correctIndex": 2,
+          "explanation": "Wartime CEOs must act decisively in the face of existential threats — the usual peacetime playbook of collaboration and gradual improvement is too slow. Knowing which mode you're in is a critical leadership meta-skill."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the core lesson from Loudcloud's survival story?",
+          "options": [
+            "Wait for better market conditions before making bold moves",
+            "Avoid IPOs during downturns at all costs",
+            "The best leaders find a path through rather than around hard moments",
+            "Always have a backup plan before committing to action"
+          ],
+          "correctIndex": 2,
+          "explanation": "Horowitz's IPO in a collapsed market felt reckless — but inaction meant certain death. The core lesson: when facing an existential crisis, you don't wait for conditions to improve. You find the one path through and take it."
+        }
+      ]
+    },
+    {
+      "id": "lsv-2-high-output-management",
+      "dayNumber": 2,
+      "moduleId": "lsv-module-1",
+      "title": "High Output Management",
+      "subtitle": "Andy Grove's framework for amplifying your impact as a leader",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Manager's Output",
+          "body": "Andy Grove's High Output Management begins with a radical reframe: a manager's output is not what THEY produce — it's the output of their team and the teams they influence. A senior leader who writes code for 40 hours a week but manages a team of 10 is producing far less than one who helps those 10 people perform 20% better. Leverage is the fundamental metric of management."
+        },
+        {
+          "type": "content",
+          "headline": "The Managerial Leverage Model",
+          "body": "Grove defines leverage as the output generated per unit of managerial time. High-leverage activities include: 1) One-on-ones (surface problems early), 2) Performance reviews (shape behaviours long-term), 3) Decisions at the right level (don't decide what your team should decide), 4) Information sharing (brief talks that unblock teams). Low-leverage: doing work you could have delegated, approving decisions that didn't need approval."
+        },
+        {
+          "type": "content",
+          "headline": "The Task-Relevant Maturity Model",
+          "body": "Grove argues your leadership style must adapt to your team member's Task-Relevant Maturity (TRM) — their experience with THIS specific task. Low TRM = structured, directive management. High TRM = delegate and get out of the way. The mistake most managers make: treating everyone the same. A 10-year veteran needs a different approach for a completely new role than for their core expertise."
+        },
+        {
+          "type": "content",
+          "headline": "Intel's Near-Collapse and the Memory Decision",
+          "body": "In 1985, Grove and CEO Gordon Moore faced the strategic inflection point of their lives: Japanese competitors were destroying Intel's memory chip business. Grove famously asked: \"If we were replaced by a new management team, what would they do?\" The answer was immediate — exit memory chips entirely and double down on microprocessors. That single decision saved Intel and made it the dominant force in computing for decades."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Leverage Audit",
+          "body": "List your last 10 hours of work. Mark each activity: High-leverage (shapes team output significantly) or Low-leverage (you doing something your team could or should do). Most leaders find 40-60% of their time is low-leverage. Identify your top 3 high-leverage activities for this week and protect time for them. This single habit shift can double your effective output within a month."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Andy Grove, a manager's true output is:",
+          "options": [
+            "The quality of decisions they personally make",
+            "The output of their team and teams they influence",
+            "The number of tasks completed in a workday",
+            "Their individual contributions to projects"
+          ],
+          "correctIndex": 1,
+          "explanation": "Grove's core insight is that managers are measured by their TEAM's output, not personal production. The implication is transformative: your job is to multiply others, not to be the best individual contributor in the room."
+        },
+        {
+          "type": "mcq",
+          "question": "Task-Relevant Maturity (TRM) refers to:",
+          "options": [
+            "A person's total years of work experience",
+            "Their seniority level within the company",
+            "Their experience and competence with THIS specific task",
+            "How motivated they are to do the work"
+          ],
+          "correctIndex": 2,
+          "explanation": "TRM is task-specific, not person-specific. A 15-year veteran with high maturity in one area may have low TRM in a new domain. Matching your management style to TRM — not to the person's overall experience — is the key to effective leadership."
+        },
+        {
+          "type": "mcq",
+          "question": "Grove's \"strategic inflection point\" at Intel led to what decision?",
+          "options": [
+            "Doubling investment in memory chips to out-compete Japan",
+            "Merging with a Japanese competitor",
+            "Exiting memory chips to focus entirely on microprocessors",
+            "Cutting R&D and becoming a manufacturing-only company"
+          ],
+          "correctIndex": 2,
+          "explanation": "Grove and Moore used the \"new management team\" thought experiment to cut through their emotional attachment to memory chips. The decision to exit and pivot to microprocessors saved Intel and redefined the computing industry."
+        }
+      ]
+    },
+    {
+      "id": "lsv-3-managers-schedule",
+      "dayNumber": 3,
+      "moduleId": "lsv-module-1",
+      "title": "The Manager's Schedule",
+      "subtitle": "Protecting deep work while running a high-performing team",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Two Types of Schedule",
+          "body": "Paul Graham's insight (and Grove's practice) identifies two fundamentally different schedules: the Maker's Schedule (half-day blocks for deep creation — writing, coding, designing) and the Manager's Schedule (hour-by-hour availability for meetings, decisions, and support). When a manager imposes their schedule on a maker, it destroys the maker's productive day. Great leaders protect both — and know which one they need to be at any given moment."
+        },
+        {
+          "type": "content",
+          "headline": "The One-on-One System",
+          "body": "Grove's most powerful management tool is the regular one-on-one. Rules: 1) Weekly, 30-60 min, never skip, 2) The direct report sets the agenda — it's THEIR meeting, 3) Your job is to listen, ask questions, remove blockers, 4) Cover: top priorities this week, biggest obstacles, morale, any personal concerns. The one-on-one is where you catch problems at 1/10th the cost of fixing them later."
+        },
+        {
+          "type": "content",
+          "headline": "The Meeting Tax",
+          "body": "Every meeting costs more than its scheduled time. A 30-minute meeting mid-morning destroys a 2-3 hour creative block before and after it. Grove's rule: every meeting must have a clear owner, agenda, and decision or output. \"Let's discuss\" meetings without an agenda are a tax on your organisation. Batch your operational meetings and protect morning/afternoon blocks for deep work — both for yourself and your team."
+        },
+        {
+          "type": "content",
+          "headline": "How Jeff Weiner Runs LinkedIn's Calendar",
+          "body": "Jeff Weiner blocked \"buffer time\" — deliberately unscheduled periods every day — into his calendar when running LinkedIn. In a company growing from 400 to 12,000 employees, his buffer time was where he processed information, thought strategically, and responded to the unexpected. His advice to leaders: \"The most common complaint I hear from CEOs is that they don't have time to think. That's not a scheduling problem — it's a priorities problem.\""
+        },
+        {
+          "type": "try-it",
+          "headline": "Design Your Ideal Week",
+          "body": "Open your calendar and design your ideal week from scratch: 1) Block 2-3 deep work windows (2+ hours, no meetings), 2) Batch all operational meetings into specific days/time blocks, 3) Schedule weekly one-on-ones with every direct report, 4) Build in 30 min of daily buffer time. This isn't aspirational — it's your default template. Others will fill your time if you don't claim it first."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why does a single meeting mid-morning often destroy a maker's entire day?",
+          "options": [
+            "Meetings are boring and demotivate creative people",
+            "Anticipating and recovering from a meeting destroys long unbroken creative blocks",
+            "Makers prefer to work in the afternoon",
+            "Meetings always run over their scheduled time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Deep creative work requires long unbroken blocks. Even a 30-minute meeting fragments the day — the anticipation before and mental recovery after can kill 2-3 hours of productive capacity. Batching meetings protects creative output."
+        },
+        {
+          "type": "mcq",
+          "question": "In Grove's one-on-one system, who should set the agenda?",
+          "options": [
+            "The manager, to ensure strategic topics are covered",
+            "HR, to align with performance frameworks",
+            "Both should prepare equal halves",
+            "The direct report — it's their meeting"
+          ],
+          "correctIndex": 3,
+          "explanation": "The one-on-one belongs to the direct report. When managers control the agenda, it becomes a status update or review — not a safe space to surface real problems. Letting direct reports own the agenda reveals what's actually happening in the business."
+        },
+        {
+          "type": "mcq",
+          "question": "Jeff Weiner's \"buffer time\" strategy addresses what leadership problem?",
+          "options": [
+            "Lack of exercise during the workday",
+            "Leaders not having time to think and process strategically",
+            "Overloaded email inboxes",
+            "Too many direct reports to manage effectively"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buffer time solves the trap of being 100% scheduled — where leaders react to everything but have no time to think about anything. Protecting unscheduled thinking time is a strategic discipline, not a luxury."
+        }
+      ]
+    },
+    {
+      "id": "lsv-4-radical-candor",
+      "dayNumber": 4,
+      "moduleId": "lsv-module-1",
+      "title": "Radical Candor in Practice",
+      "subtitle": "How to care personally and challenge directly — at the same time",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The 2×2 That Changes Everything",
+          "body": "Kim Scott's Radical Candor framework plots feedback on two axes: Care Personally (do you give a damn about the person?) and Challenge Directly (do you say hard things to their face?). The quadrants: Radical Candor (high on both — the goal), Ruinous Empathy (care but won't challenge — most managers), Obnoxious Aggression (challenge without caring — the bully), Manipulative Insincerity (neither — the coward). Most people default to Ruinous Empathy and call it kindness."
+        },
+        {
+          "type": "content",
+          "headline": "Ruinous Empathy Is Not Kind",
+          "body": "Scott argues that most manager failures come from Ruinous Empathy — being so afraid of hurting someone's feelings that you withhold honest feedback. You keep the poor performer too long. You let the mediocre work ship. You don't tell the high-performer they're making a career-limiting mistake. Short-term kindness becomes long-term cruelty. Real care means caring enough to tell the truth."
+        },
+        {
+          "type": "content",
+          "headline": "The SBI Feedback Model",
+          "body": "For radical candor to land well, use the SBI structure: Situation (when exactly did this happen?), Behaviour (what specifically did I observe — not interpret?), Impact (what was the effect on the team/project/client?). Example: \"In yesterday's client meeting [S], you interrupted Sarah three times mid-sentence [B], which I noticed made her disengage for the rest of the session [I].\" Specific, observable, impact-focused — not personal, vague, or judgement-laden."
+        },
+        {
+          "type": "content",
+          "headline": "Sheryl Sandberg's Lesson to Kim Scott",
+          "body": "After Kim Scott delivered a brilliant presentation at Google, Sheryl Sandberg took her aside and said: \"You know that thing you do with your um's? It's distracting — and you're smart enough that it's worth fixing.\" Scott initially brushed it off. Sandberg persisted: \"I can tell you don't believe me. If you keep doing it, people will stop listening to what you say and focus on how you say it.\" That conversation — caring enough to be persistent — is the model for Radical Candor."
+        },
+        {
+          "type": "try-it",
+          "headline": "The 24-Hour Feedback Commitment",
+          "body": "Choose one piece of feedback you've been withholding from someone on your team. Apply the SBI model to prepare it. Then deliver it within 24 hours — in private, with genuine care, and with specific examples. The hardest part isn't the words — it's overcoming your own discomfort. Start with something small to build the muscle. Each honest conversation you have makes the next one easier."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Kim Scott calls the most common manager failure mode:",
+          "options": [
+            "Obnoxious Aggression",
+            "Radical Candor",
+            "Ruinous Empathy",
+            "Manipulative Insincerity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ruinous Empathy — caring about someone but refusing to tell them hard truths — is Scott's term for the most common and damaging default. It feels kind in the moment but causes long-term harm to the person's growth and the team's performance."
+        },
+        {
+          "type": "mcq",
+          "question": "In the SBI feedback model, \"B\" stands for:",
+          "options": [
+            "Background",
+            "Behaviour",
+            "Belief",
+            "Benefit"
+          ],
+          "correctIndex": 1,
+          "explanation": "SBI = Situation, Behaviour, Impact. The Behaviour element requires you to describe what you specifically observed — not your interpretation or judgement of it. \"You interrupted her three times\" is observable. \"You were rude\" is a judgement."
+        },
+        {
+          "type": "mcq",
+          "question": "What made Sandberg's feedback to Kim Scott an example of Radical Candor?",
+          "options": [
+            "It was delivered publicly to set an example",
+            "She was persistent when Scott tried to dismiss it",
+            "She gave detailed performance scores",
+            "She framed it as official HR feedback"
+          ],
+          "correctIndex": 1,
+          "explanation": "Radical Candor requires persistence. When Scott dismissed the feedback, Sandberg didn't drop it — she explained why it mattered for Scott's career. That combination of genuine care (persisting through discomfort) and direct challenge is what makes it radical."
+        }
+      ]
+    },
+    {
+      "id": "lsv-5-building-trust-at-scale",
+      "dayNumber": 5,
+      "moduleId": "lsv-module-1",
+      "title": "Building Trust at Scale",
+      "subtitle": "How psychological safety and vulnerability fuel high-performing teams",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Trust Is the Foundation of Scale",
+          "body": "Google's Project Aristotle studied 180 teams to find what made some exceptional and others mediocre. The answer surprised everyone: it wasn't who was on the team — it was how the team worked together. The #1 predictor of team effectiveness was psychological safety: the belief that you won't be punished for speaking up, sharing bad news, or admitting you don't know something. Without psychological safety, information hides and problems compound."
+        },
+        {
+          "type": "content",
+          "headline": "The Trust Equation",
+          "body": "David Maister's Trust Equation: Trust = (Credibility + Reliability + Intimacy) / Self-Orientation. Credibility: do you know what you're talking about? Reliability: do you do what you say? Intimacy: do you create emotional safety in conversations? Self-orientation: are you focused on your own agenda or theirs? Leaders tank trust fastest via high self-orientation — talking about themselves, making conversations about their perspective, optimising for their own credit."
+        },
+        {
+          "type": "content",
+          "headline": "Vulnerability as Leadership Strength",
+          "body": "Patrick Lencioni's Five Dysfunctions of a Team places absence of trust at the base of the dysfunction pyramid. His fix: vulnerability-based trust, where team members freely say \"I was wrong,\" \"I need help,\" \"I don't know.\" The leader must model this first. When leaders admit mistakes publicly, it gives everyone permission to be human. Teams that hide failure repeat it; teams that share failure learn from it."
+        },
+        {
+          "type": "content",
+          "headline": "Pixar's Braintrust",
+          "body": "Pixar's Braintrust meetings are legendary. Any director can bring unfinished work to a room of peers who give completely uncensored feedback — no hierarchy, no politics. Ed Catmull's rule: the Braintrust has no authority over the director. It can only give candid feedback; the director decides what to do with it. This structure preserves both psychological safety (feedback without power games) and creative autonomy. Every Pixar film was terrible at some point in production — the Braintrust is how they become great."
+        },
+        {
+          "type": "try-it",
+          "headline": "Create Your Team's Trust Ritual",
+          "body": "Start your next team meeting with two questions: 1) \"What's one thing that went wrong this week that we can learn from?\" and 2) \"What's one thing someone on this team did that you want to recognise?\" These two questions signal safety (failure is discussable) and belonging (contributions are seen). Done consistently every week, this single ritual will measurably raise psychological safety within 60 days."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Google's Project Aristotle found the #1 predictor of team effectiveness was:",
+          "options": [
+            "The average IQ of team members",
+            "The team's technical skills",
+            "Psychological safety",
+            "The clarity of the team's goals"
+          ],
+          "correctIndex": 2,
+          "explanation": "Project Aristotle found that psychological safety — feeling safe to take risks and be vulnerable — was far more predictive of team success than who was on the team or what skills they had. It's the foundation everything else is built on."
+        },
+        {
+          "type": "mcq",
+          "question": "In Maister's Trust Equation, which factor most rapidly destroys trust?",
+          "options": [
+            "Low credibility",
+            "Low reliability",
+            "Low intimacy",
+            "High self-orientation"
+          ],
+          "correctIndex": 3,
+          "explanation": "High self-orientation — being seen as focused on your own agenda, credit, or interests — has the biggest negative impact on trust because it sits in the denominator. Even high credibility and reliability can't compensate for being perceived as self-serving."
+        },
+        {
+          "type": "mcq",
+          "question": "The key feature of Pixar's Braintrust that makes it psychologically safe is:",
+          "options": [
+            "Feedback is only given by senior executives",
+            "The Braintrust has no authority over the director",
+            "Meetings are held anonymously",
+            "Only positive feedback is allowed in the first session"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Braintrust separates candid feedback from power. Because the group has no authority to override the director, people can be brutally honest without it feeling like an attack. The director keeps creative control; the team gives raw, uncensored input. Safety and honesty coexist."
+        }
+      ]
+    },
+    {
+      "id": "lsv-6-hard-decisions",
+      "dayNumber": 6,
+      "moduleId": "lsv-module-1",
+      "title": "Making Hard Decisions",
+      "subtitle": "Frameworks for deciding well when certainty is a luxury",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Decision is the Work",
+          "body": "Most leaders spend more time executing average decisions than they spend making good ones. Horowitz argues that for a CEO, the quality of decision-making is the primary job — not the execution of those decisions, which the team handles. A framework isn't about removing discomfort from hard decisions. It's about being sure you've considered what needs to be considered before you commit to a path you can't easily reverse."
+        },
+        {
+          "type": "content",
+          "headline": "Jeff Bezos's Type 1 vs Type 2 Decisions",
+          "body": "Bezos distinguishes: Type 1 decisions (one-way doors — irreversible or very hard to reverse; require careful deliberation) and Type 2 decisions (two-way doors — reversible; should be made fast by the smallest possible group). The mistake leaders make: treating Type 2 decisions with Type 1 caution, which slows everything down. Identify the door type first. If it's reversible, decide fast and learn. If it's truly irreversible, slow down."
+        },
+        {
+          "type": "content",
+          "headline": "The Regret Minimisation Framework",
+          "body": "Bezos also uses the regret minimisation framework: \"When I'm 80 years old and looking back at my life, will I regret not having done this?\" It forces long-term thinking and strips away short-term fear. Used for bold moves — starting Amazon, making a major pivot, stepping down from a role. When the decision involves significant personal risk or a fundamental direction change, ask: which choice will you regret more at the end of your life?"
+        },
+        {
+          "type": "content",
+          "headline": "Intel's Memory Chips Exit Revisited",
+          "body": "Grove's \"new management team\" thought experiment is one of the most powerful decision frameworks in business history. When trapped by sunk cost and emotional attachment, he asked: what would a new, unattached team do? The answer was clear — exit memory chips. The framework works because it separates your identity from the decision. Your past investments don't obligate you to a future that's clearly wrong."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Pending Hard Decision",
+          "body": "Identify one decision you've been avoiding. Apply the three tests: 1) Is it Type 1 or Type 2? (If Type 2, make it today.) 2) What would a new, unattached leader decide? (Removes sunk cost bias.) 3) At 80, which choice will you regret more? Document your answers. You may still not know the right answer — but you'll know you've thought well about it. That's all leadership can offer."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "A \"Type 2 decision\" according to Bezos is best described as:",
+          "options": [
+            "An irreversible decision requiring board approval",
+            "A reversible decision that should be made fast by a small group",
+            "Any decision affecting more than 10 people",
+            "A financial decision exceeding a set threshold"
+          ],
+          "correctIndex": 1,
+          "explanation": "Type 2 decisions are two-way doors — reversible. Bezos argues these should be made quickly by the smallest team possible. Treating them with Type 1 caution creates bureaucracy and slows innovation without improving outcomes."
+        },
+        {
+          "type": "mcq",
+          "question": "The regret minimisation framework is most useful for:",
+          "options": [
+            "Routine operational decisions",
+            "Daily prioritisation of tasks",
+            "Bold personal or strategic direction changes with significant risk",
+            "Choosing between two equally attractive candidates"
+          ],
+          "correctIndex": 2,
+          "explanation": "The regret minimisation framework is a long-term lens for major decisions involving personal risk or fundamental direction changes — starting a company, making a major pivot, leaving a role. For routine decisions, faster frameworks apply."
+        },
+        {
+          "type": "mcq",
+          "question": "Grove's \"new management team\" thought experiment primarily helps leaders overcome:",
+          "options": [
+            "Analysis paralysis from too much data",
+            "Emotional attachment and sunk cost bias",
+            "Lack of strategic clarity",
+            "Poor stakeholder alignment"
+          ],
+          "correctIndex": 1,
+          "explanation": "The thought experiment works by detaching your identity from past investments. A new team has no sunk cost — they decide based on current reality, not past commitments. This is exactly the objectivity established leaders need to make hard pivots."
+        }
+      ]
+    },
+    {
+      "id": "lsv-7-leadership-identity",
+      "dayNumber": 7,
+      "moduleId": "lsv-module-1",
+      "title": "Leadership Identity",
+      "subtitle": "Who you are as a leader shapes what your company becomes",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Culture Is the Shadow of the Leader",
+          "body": "Peter Drucker observed: \"Culture eats strategy for breakfast.\" But culture doesn't appear from nowhere — it's the accumulated shadow of leadership behaviour. What leaders reward, tolerate, and model defines culture more than any values poster. If you say you value candour but punish people who challenge you, your actual culture is one of fear. Your leadership identity — what you consistently do under pressure — is the culture."
+        },
+        {
+          "type": "content",
+          "headline": "Jim Collins' Level 5 Leadership Preview",
+          "body": "Collins' research in Good to Great identified Level 5 leaders as the key differentiator in companies that made the leap from good to great. Level 5 leaders combine: fierce professional will (relentless drive to do whatever it takes for the company's success) with personal humility (crediting others for success, taking personal responsibility for failure). It's not meekness — it's channelling ambition through the organisation rather than through personal ego."
+        },
+        {
+          "type": "content",
+          "headline": "The Leader You Are vs The Leader You Need to Be",
+          "body": "Marshall Goldsmith's famous line: \"What got you here won't get you there.\" The skills and instincts that make you a brilliant early-stage founder — making every decision, moving fast, trusting your gut — actively harm you as a scaling leader. Scaling requires letting go, building systems, trusting others. The hardest leadership transition is the identity shift from \"expert doing\" to \"leader developing others.\""
+        },
+        {
+          "type": "content",
+          "headline": "Darwin Smith's 20-Year Transformation of Kimberly-Clark",
+          "body": "When Darwin Smith became CEO of Kimberly-Clark in 1971, the company was mediocre. Wall Street doubted him — he was an internal lawyer with no CEO experience. Over 20 years, he sold Kimberly-Clark's flagship paper mills (their comfort zone) to go head-to-head with Procter & Gamble in consumer paper goods. By the time he retired, Kimberly-Clark had beaten P&G in 6 of 8 product categories. Collins cites him as the archetypal Level 5 leader — driven, humble, and completely focused on the company's success over his own legacy."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Leadership Operating System",
+          "body": "In 200 words, describe your leadership identity: 1) What do you stand for (your 2-3 non-negotiable values in leadership)? 2) How do you show up under pressure? 3) What do you need to let go of as you scale? This is your Leadership OS — the version you choose to run deliberately. Share it with your team. When your stated values match your visible behaviour, trust compounds. When they don't, cynicism compounds."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Culture is primarily shaped by:",
+          "options": [
+            "Written company values and culture decks",
+            "HR policies and onboarding programmes",
+            "What leaders consistently reward, tolerate, and model",
+            "The company's founding story and brand identity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Culture is the accumulated shadow of leadership behaviour — what leaders do under pressure, what they reward, what they tolerate. Every values document is overridden by observable leadership behaviour. The culture you have is the one your leaders actually model."
+        },
+        {
+          "type": "mcq",
+          "question": "Collins' Level 5 Leadership uniquely combines:",
+          "options": [
+            "High IQ and high emotional intelligence",
+            "Fierce professional will with personal humility",
+            "Visionary thinking with operational precision",
+            "Strong external network with internal execution focus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Level 5 leaders channel their ambition through the organisation, not their ego. The fierce will drives the company's results; the humility credits others for success and absorbs personal responsibility for failure. This combination is rare and powerful."
+        },
+        {
+          "type": "mcq",
+          "question": "Goldsmith's \"what got you here won't get you there\" is most relevant to which leadership transition?",
+          "options": [
+            "From individual contributor to first manager",
+            "From early-stage founder to scaling leader",
+            "From middle manager to executive",
+            "From employee to entrepreneur"
+          ],
+          "correctIndex": 1,
+          "explanation": "The founder-to-scaler transition is the hardest identity shift in business. The instincts that make a great founder — controlling everything, trusting your gut, moving fast alone — become active liabilities when you need to build teams, systems, and culture. Scaling requires a fundamentally different leadership identity."
+        }
+      ]
+    },
+    {
+      "id": "lsv-8-scaling-up-fundamentals",
+      "dayNumber": 8,
+      "moduleId": "lsv-module-2",
+      "title": "Scaling Up Fundamentals",
+      "subtitle": "The Rockefeller Habits 2.0 — four disciplines for scaling any company",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Most Companies Stop Growing",
+          "body": "Verne Harnish studied thousands of scaling companies and found one pattern above all others: growth stalls not because of market conditions, but because the leadership team's capabilities stopped developing first. The same habits that got you to 10 people actively work against you at 100. Scaling Up is the playbook for upgrading your leadership system before the company outgrows it."
+        },
+        {
+          "type": "content",
+          "headline": "The Four Disciplines of Scaling Up",
+          "body": "Harnish organises the entire scaling challenge into four disciplines: 1) People — the right leaders in the right seats with the right behaviours, 2) Strategy — a differentiated, executable strategy that the whole team understands, 3) Execution — consistent daily/weekly/quarterly rhythms that drive priorities, 4) Cash — understanding the cash conversion cycle and funding growth without running out. All four must scale together or the whole system breaks."
+        },
+        {
+          "type": "content",
+          "headline": "The Rockefeller Habits Core Checklist",
+          "body": "Harnish distilled John D. Rockefeller's management system into 10 habits. The three most critical: 1) The leadership team is healthy and aligned (no dysfunctions hiding in the boardroom), 2) Everyone is aligned on the most important priority for the next 90 days (one \"Quarterly Priority\" per team, one \"Critical Number\" per person), 3) Communication rhythm is established across all levels (daily stand-ups → weekly team → monthly management → quarterly planning → annual strategy)."
+        },
+        {
+          "type": "content",
+          "headline": "The One-Page Strategic Plan (OPSP)",
+          "body": "The OPSP is Harnish's master tool — a single page that captures your core values, purpose, 10-25 year BHAG, 3-year targets, annual priorities, and quarterly priorities. The power isn't in the document — it's in the alignment process of creating it. When every leader on your team can recite the company's critical number for the quarter without hesitating, you have execution alignment. The OPSP makes that possible at scale."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Scaling Bottleneck Audit",
+          "body": "Rate your company 1-5 on each of the Four Disciplines: People (right leaders in right seats?), Strategy (clear differentiated strategy everyone can articulate?), Execution (consistent meeting rhythms and aligned priorities?), Cash (positive cash conversion cycle and strong cash reserves?). Your lowest score is your current growth bottleneck. Focus all improvement energy there before the others — a chain breaks at its weakest link."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "According to Harnish, growth stalls primarily because:",
+          "options": [
+            "Market conditions deteriorate or competition intensifies",
+            "The company runs out of funding",
+            "The leadership team's capabilities stop developing before the company does",
+            "Customers' needs change faster than the company can adapt"
+          ],
+          "correctIndex": 2,
+          "explanation": "Harnish's central finding: scaling problems are almost always leadership team problems in disguise. The systems and habits that work at 10 people create dysfunction at 100. Growing the leadership capability ahead of the headcount is the leverage point."
+        },
+        {
+          "type": "mcq",
+          "question": "The Four Disciplines of Scaling Up are:",
+          "options": [
+            "Vision, Mission, Values, Culture",
+            "People, Strategy, Execution, Cash",
+            "Product, Marketing, Sales, Operations",
+            "Planning, Hiring, Systems, Metrics"
+          ],
+          "correctIndex": 1,
+          "explanation": "Harnish's four disciplines — People, Strategy, Execution, Cash — must all scale together. Weakness in any one constrains the others. Most entrepreneurs focus on strategy and execution while neglecting the people and cash disciplines."
+        },
+        {
+          "type": "mcq",
+          "question": "The purpose of the One-Page Strategic Plan (OPSP) is primarily to:",
+          "options": [
+            "Replace a full business plan for investor presentations",
+            "Summarise the company's financial projections",
+            "Create alignment across the leadership team on priorities and direction",
+            "Document company history and founding story"
+          ],
+          "correctIndex": 2,
+          "explanation": "The OPSP's value is alignment, not documentation. The process of agreeing on what goes on the page forces conversations that surface misalignment at the leadership level before it cascades as confusion through the whole organisation."
+        }
+      ]
+    },
+    {
+      "id": "lsv-9-people-systems-at-scale",
+      "dayNumber": 9,
+      "moduleId": "lsv-module-2",
+      "title": "People Systems at Scale",
+      "subtitle": "Building the talent engine that keeps performing as you grow",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Talent Bottleneck",
+          "body": "Harnish quotes a principle from his Scaling Up research: \"The #1 challenge of scaling companies is finding, attracting, and keeping great people.\" Strategy, execution, and cash all depend on having the right humans in the right seats. But most growing companies have no people system — just a series of reactive hires followed by chaotic onboarding. At scale, that's not a talent problem — it's a system problem."
+        },
+        {
+          "type": "content",
+          "headline": "The A-Player Standard",
+          "body": "Brad Smart's Topgrading methodology defines A-players as people who, given the role and context, are in the top 10% of available talent. The expensive mistake: most companies staff with B and C players because they don't have a rigorous hiring process. A-players hire A-players; B-players hire C-players (to feel secure). A single A-player produces 2-5x the output of a B-player in most roles. Upgrading your talent density is always a better ROI than adding headcount."
+        },
+        {
+          "type": "content",
+          "headline": "The Function Accountability Chart (FACe)",
+          "body": "Harnish's FACe tool lists every key function in the company, the person accountable for it (only one person per function), and their key metrics. It quickly exposes: 1) which functions have no clear owner, 2) which leaders are overloaded across too many functions, 3) which roles are gaps that need hiring. Most early-stage companies have one person owning 5-6 functions — a scaling risk hiding in plain sight."
+        },
+        {
+          "type": "content",
+          "headline": "The Core Values Hiring Filter",
+          "body": "Collins and Porras found that great companies use core values as a genuine hiring filter — not a branding exercise. The test: if a great candidate doesn't share your core values, would you not hire them? If the answer is no, your values aren't real. Values-aligned teams move faster, need less management overhead, and have far lower voluntary attrition. The cost of a values-misfit hire — even a highly skilled one — is enormous."
+        },
+        {
+          "type": "try-it",
+          "headline": "Build Your FACe",
+          "body": "Create a simple table with two columns: Key Function and Accountable Person. List every critical function in your business (Sales, Marketing, Product, Operations, Finance, HR, Customer Success). Fill in who owns each. Highlight any function with no clear owner or any person owning more than 3 functions. These are your scaling risks. Your FACe should be updated quarterly as you grow."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "In Topgrading, an \"A-player\" is defined as:",
+          "options": [
+            "Someone with 10+ years of experience",
+            "The best employee currently on your team",
+            "Someone in the top 10% of available talent for that role and context",
+            "A person who scores highest on personality assessments"
+          ],
+          "correctIndex": 2,
+          "explanation": "A-player is context-specific — top 10% of available talent for THIS role at THIS compensation level. A marketing A-player at a startup might be a B-player at Google. The question is: given what you can offer, are you attracting the best available talent?"
+        },
+        {
+          "type": "mcq",
+          "question": "The Function Accountability Chart (FACe) primarily reveals:",
+          "options": [
+            "Each employee's compensation and performance scores",
+            "Which functions have no clear owner and where leaders are overloaded",
+            "The org chart hierarchy and reporting lines",
+            "Team satisfaction levels across departments"
+          ],
+          "correctIndex": 1,
+          "explanation": "The FACe exposes ownership gaps and load imbalances — functions with no accountable owner and leaders stretched across too many functions. These are structural scaling risks that headcount can't fix without clarity on accountability."
+        },
+        {
+          "type": "mcq",
+          "question": "Core values are working as a genuine hiring filter when:",
+          "options": [
+            "They are prominently displayed in the office and on the website",
+            "You would not hire a skilled candidate who doesn't share them",
+            "All employees can recite them from memory",
+            "They were created collaboratively with the whole team"
+          ],
+          "correctIndex": 1,
+          "explanation": "The test of real values is their cost. If you'd hire a brilliant person who doesn't share them, they're aspirational branding — not values. When you're willing to pass on talent for a values mismatch, you have a real culture filter."
+        }
+      ]
+    },
+    {
+      "id": "lsv-10-strategy-execution",
+      "dayNumber": 10,
+      "moduleId": "lsv-module-2",
+      "title": "Strategy Execution Framework",
+      "subtitle": "Translating bold strategy into daily actions that compound",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Strategy-Execution Gap",
+          "body": "The Harvard Business Review reports that 90% of strategies fail — not because they're wrong, but because they're never executed. The most common failure mode: a compelling strategy that lives in a PowerPoint deck, is reviewed once a year, and is never translated into the daily and weekly decisions that actually build a company. Closing the strategy-execution gap is the #1 job of the leadership team."
+        },
+        {
+          "type": "content",
+          "headline": "The Critical Number",
+          "body": "Harnish's most powerful execution tool: identify ONE Critical Number per quarter — the single metric that, if you move it, everything else improves. It's not the most important metric (that might be revenue or profit). It's the leading indicator that predicts the outcome metric. For a SaaS company it might be \"qualified demos per week.\" For a recruitment firm, \"first interviews scheduled.\" Every person in the company should know the Critical Number and how their daily work affects it."
+        },
+        {
+          "type": "content",
+          "headline": "The Meeting Rhythm",
+          "body": "Harnish's communication rhythm closes the gap between strategy and daily action: Daily huddle (5-15 min standing, all teams — share priorities, blockers, data) → Weekly team meeting (60-90 min — KPI review, issue resolution) → Monthly management meeting (half day — cross-functional learning, metrics deep-dive) → Quarterly planning (1-2 days — review last quarter, set next quarter priorities) → Annual strategy (2-3 days — long-term direction). Each rhythm reinforces the others."
+        },
+        {
+          "type": "content",
+          "headline": "Priorities — The Rule of Five",
+          "body": "Harnish's companies commit to no more than 5 quarterly priorities — ideally 3. More than 5 and nothing gets treated as truly critical. Each priority has: a clear owner (one person, not a team), a measurable success metric, and a completion date. The leadership team reviews all priorities at every weekly meeting. Anything drifting off track gets resource reallocation immediately — not at the end of the quarter."
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your Critical Number",
+          "body": "For your business right now, answer: What is the ONE leading indicator that, if you dramatically improved it this quarter, would most predictably improve your revenue or profit? Write it down with a specific target: \"From X to Y by [date].\" Share it with your team tomorrow. Ask them: \"How does your daily work affect this number?\" The answers will tell you everything about your current strategy-execution alignment."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The \"Critical Number\" in Harnish's framework is:",
+          "options": [
+            "The company's revenue target for the quarter",
+            "The most important metric in the business",
+            "A leading indicator that, if moved, predictably improves outcome metrics",
+            "The headcount goal for the next hiring round"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Critical Number is a LEADING indicator — it predicts the outcome before the outcome is visible. Revenue is a lagging outcome; the number of qualified demos or first customer conversations is a leading indicator. Move the leading indicator and the lagging outcome follows."
+        },
+        {
+          "type": "mcq",
+          "question": "Harnish's meeting rhythm includes all of the following EXCEPT:",
+          "options": [
+            "Daily huddle",
+            "Weekly team meeting",
+            "Monthly board meeting",
+            "Quarterly planning offsite"
+          ],
+          "correctIndex": 2,
+          "explanation": "Harnish's rhythm is: Daily → Weekly → Monthly management (not board) → Quarterly planning → Annual strategy. The board meeting is a governance structure, not part of the internal strategy-execution communication rhythm."
+        },
+        {
+          "type": "mcq",
+          "question": "Harnish recommends a maximum of how many quarterly priorities?",
+          "options": [
+            "10",
+            "7",
+            "5",
+            "3"
+          ],
+          "correctIndex": 2,
+          "explanation": "Five is the maximum, with three being ideal. More than five and the word \"priority\" loses its meaning — everything becomes equally important, which means nothing is truly critical. The discipline of choosing forces the real conversations about what matters most."
+        }
+      ]
+    },
+    {
+      "id": "lsv-11-culture-as-advantage",
+      "dayNumber": 11,
+      "moduleId": "lsv-module-2",
+      "title": "Culture as Competitive Advantage",
+      "subtitle": "How your values and behaviours create a moat no competitor can copy",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Culture Is Your Hardest Asset to Copy",
+          "body": "Any competitor can copy your product, undercut your price, or poach your team. They cannot easily copy your culture — because culture is built over years through thousands of daily micro-decisions that compound invisibly. Netflix's culture deck has been downloaded 20 million times. Companies tried to copy it and failed. Culture is what you do consistently, not what you say you believe. That's why it's both your most durable advantage and your most dangerous vulnerability."
+        },
+        {
+          "type": "content",
+          "headline": "Netflix's Culture of Freedom and Responsibility",
+          "body": "Reed Hastings' culture model: give employees exceptional freedom (no vacation policy, flexible work, trust by default) in exchange for exceptional responsibility (performance density — only keep people who are demonstrably excellent). The lever that makes it work: the Keeper Test — \"If this person quit tomorrow, would I fight hard to keep them?\" If no, they shouldn't be here. This sounds harsh; in practice it creates a team that trusts that everyone around them is excellent."
+        },
+        {
+          "type": "content",
+          "headline": "Values in Action — Not on Walls",
+          "body": "Collins and Porras found that truly great companies distinguish between core ideology (values and purpose — never compromised) and operating practices (everything else — changed aggressively as needed). The test: could you imagine the company operating with the opposite of this value? If yes, it's not a core value — it's a preference. Real core values are like operating system constraints: they limit some options but the whole system depends on them."
+        },
+        {
+          "type": "content",
+          "headline": "Hiring and Firing for Culture",
+          "body": "Culture is compounded in two key moments: who you hire and who you let go. Hiring someone who is skill-excellent but values-misaligned always ends the same way: high short-term output, high medium-term damage to team cohesion. The most expensive cultural mistake: keeping a high performer who violates your values because they produce results. Everyone on the team watches what you tolerate. What you permit becomes what you promote."
+        },
+        {
+          "type": "try-it",
+          "headline": "The Values in Action Audit",
+          "body": "List your company's stated core values. For each one, ask: 1) Can you name a specific recent decision where this value cost you something (money, a hire, a client)? 2) Can you name someone on the team who exemplifies it? If you can't answer both questions for a value, it's aspirational — not operational. Choose one value and make one specific decision this week that demonstrates it in action. That's how culture is built."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Netflix's \"Keeper Test\" asks managers:",
+          "options": [
+            "Would I rehire this person if they applied today?",
+            "If this person quit tomorrow, would I fight hard to keep them?",
+            "Is this person performing in the top 20% of the team?",
+            "Would I promote this person within the next 12 months?"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Keeper Test is forward-looking: if they left tomorrow, would you work hard to retain them? A \"no\" isn't a judgment — it's information. Hastings argues this question, honestly answered, reveals who truly belongs on the team versus who is comfortable but not exceptional."
+        },
+        {
+          "type": "mcq",
+          "question": "Collins and Porras distinguish between core ideology and:",
+          "options": [
+            "Mission statements",
+            "Operating practices",
+            "Financial targets",
+            "Brand guidelines"
+          ],
+          "correctIndex": 1,
+          "explanation": "Core ideology (values + purpose) is never compromised; operating practices (how you work, structures, policies) are changed aggressively as conditions change. Great companies preserve the core while simultaneously stimulating progress — changing everything that's not core."
+        },
+        {
+          "type": "mcq",
+          "question": "The most expensive cultural mistake according to this lesson is:",
+          "options": [
+            "Hiring someone without doing reference checks",
+            "Not documenting core values until the company has 50+ people",
+            "Keeping a high performer who consistently violates your values",
+            "Failing to communicate culture during onboarding"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tolerating values violations from high performers sends a message louder than any culture deck: results override values. Everyone on the team watches this decision. What you permit becomes what you promote — the entire culture shifts toward \"performance at any cost.\""
+        }
+      ]
+    },
+    {
+      "id": "lsv-12-level-5-leadership",
+      "dayNumber": 12,
+      "moduleId": "lsv-module-2",
+      "title": "Level 5 Leadership",
+      "subtitle": "Jim Collins' framework for leaders who build great, enduring companies",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Unexpected Finding",
+          "body": "When Jim Collins and his team began the Good to Great research, they expected to find charismatic, visionary, celebrity CEOs at the helm of companies that made the leap from good to great. They found the opposite. The great company leaders were modest, quiet, self-effacing — and ferociously, tenaciously determined. Collins called them Level 5 leaders, and they shared one defining trait: they wanted the company to win far more than they wanted personal credit for winning."
+        },
+        {
+          "type": "content",
+          "headline": "The Five Levels of Leadership",
+          "body": "Collins' leadership hierarchy: Level 1 (Highly Capable Individual — excellent skills, productive contributor), Level 2 (Contributing Team Member — works effectively in teams), Level 3 (Competent Manager — organises people and resources toward objectives), Level 4 (Effective Leader — catalyses commitment to a vision, stimulates high performance standards), Level 5 (Executive — builds enduring greatness through paradoxical combination of personal humility and professional will). Most leadership development stops at Level 4."
+        },
+        {
+          "type": "content",
+          "headline": "The Window and the Mirror",
+          "body": "Collins observed a consistent behaviour pattern in Level 5 leaders: when things go well, they look out the window to credit others — luck, timing, the team. When things go wrong, they look in the mirror — taking personal responsibility. Compare this to Level 4 leaders (often celebrated in the press): success is credited to their genius; failure is blamed on the market, the board, or the team. The window/mirror habit isn't modest — it builds extraordinary trust and loyalty."
+        },
+        {
+          "type": "content",
+          "headline": "Professional Will",
+          "body": "The \"fierce professional will\" half of Level 5 is not gentleness — it's absolute relentlessness in service of the company's results. Darwin Smith closed factories. Lou Gerstner reinvented IBM. These were not popular decisions. Level 5 leaders do not optimise for being liked, for press coverage, or for a comfortable tenure. They optimise for the company's enduring greatness — and they have the psychological security to endure short-term unpopularity in service of long-term right."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Window and Mirror Practice",
+          "body": "In your next team meeting or one-on-one, practice the window and mirror habit deliberately: 1) Identify one recent success — specifically name the team members or factors that made it possible (look out the window). 2) Identify one recent failure or shortfall — take direct personal responsibility for your part in it (look in the mirror). Repeat this consistently for 90 days. You'll notice your team's trust and candour visibly increase."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Collins' research found that great company leaders were primarily characterised by:",
+          "options": [
+            "Charisma and public visibility",
+            "Technical expertise in their industry",
+            "Modesty combined with fierce determination for the company to succeed",
+            "Visionary grand strategy and bold risk-taking"
+          ],
+          "correctIndex": 2,
+          "explanation": "The finding surprised Collins' team — great company CEOs were the opposite of celebrity leaders. They were modest, self-effacing, and almost fiercely determined that the company would win. The ambition was channelled through the mission, not the personal brand."
+        },
+        {
+          "type": "mcq",
+          "question": "The \"window and mirror\" habit means:",
+          "options": [
+            "Analysing both internal and external factors before decisions",
+            "Looking at competitors and customers simultaneously",
+            "Crediting others for success; taking personal responsibility for failure",
+            "Being transparent about both strengths and weaknesses publicly"
+          ],
+          "correctIndex": 2,
+          "explanation": "Level 5 leaders look OUT the window to credit others when things go well, and IN the mirror to take personal responsibility when things go wrong. This is the opposite of most high-ego leaders, and it's the behaviour that builds the deepest, most durable team trust."
+        },
+        {
+          "type": "mcq",
+          "question": "Level 5 \"professional will\" primarily means:",
+          "options": [
+            "Exceptional personal productivity and time management",
+            "Relentless determination to build the company's enduring greatness over personal comfort",
+            "The ability to inspire others through compelling vision",
+            "Technical mastery and credibility in the company's domain"
+          ],
+          "correctIndex": 1,
+          "explanation": "Professional will is not about productivity or vision — it's about the willingness to make difficult, unpopular decisions in service of the company's long-term results. Level 5 leaders are psychologically secure enough to absorb short-term criticism for long-term right."
+        }
+      ]
+    },
+    {
+      "id": "lsv-13-flywheel-effect",
+      "dayNumber": 13,
+      "moduleId": "lsv-module-2",
+      "title": "The Flywheel Effect",
+      "subtitle": "How great companies build unstoppable momentum — and how to find yours",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "No Single Defining Moment",
+          "body": "Collins found that good-to-great transformations never had a defining launch moment — no miracle strategy, no killer product, no single big bet. What they had was a flywheel: a series of actions that each built on the last, slowly accumulating momentum until the wheel was spinning so fast that what looked like overnight success from the outside was actually years of invisible compounding."
+        },
+        {
+          "type": "content",
+          "headline": "How a Flywheel Works",
+          "body": "A business flywheel is a self-reinforcing loop where each element in the loop drives the next. Amazon's flywheel: lower prices → more customers → more sellers → more selection → better customer experience → lower costs through scale → lower prices. Each turn of the wheel makes the next turn easier. The trick is identifying YOUR flywheel — the specific loop that is self-reinforcing in your business model."
+        },
+        {
+          "type": "content",
+          "headline": "The Doom Loop vs The Flywheel",
+          "body": "Collins contrasts the flywheel with the \"doom loop\" — the pattern companies follow when they keep changing strategy before any flywheel momentum builds. They announce a bold new initiative. It doesn't produce quick results. They lose confidence, change direction, announce a new initiative. Each pivot resets the flywheel to zero. The companies that failed to make the leap didn't lack good strategies — they lacked the discipline to push the same flywheel long enough for it to build unstoppable momentum."
+        },
+        {
+          "type": "content",
+          "headline": "Your Flywheel's Core Principle",
+          "body": "Finding your flywheel requires answering three questions simultaneously (Collins' Hedgehog Concept): 1) What can you be the best in the world at? 2) What drives your economic engine (what single metric, if increased, most improves your economics)? 3) What are you deeply passionate about? The flywheel lives at the intersection of these three circles. Most companies run their flywheels on only one or two — which is why they stall."
+        },
+        {
+          "type": "try-it",
+          "headline": "Sketch Your Flywheel",
+          "body": "Draw a circle with 4-6 elements that are self-reinforcing in your business. Start with your best customer experience and work backwards: what creates it? What does it lead to? Work around the loop until each element feeds the next. Then ask: which element in this loop is currently the slowest? That's where your investment and focus should go. A flywheel with one weak link spins at the speed of the weakest element."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Collins' research found that good-to-great transformations were primarily driven by:",
+          "options": [
+            "A single breakthrough moment or bold strategic pivot",
+            "A charismatic CEO who inspired the company with a new vision",
+            "Consistent, compounding actions that built flywheel momentum over time",
+            "A significant external event that created a market opportunity"
+          ],
+          "correctIndex": 2,
+          "explanation": "There was no single defining moment in any of the good-to-great transformations Collins studied. What looked like overnight success from the outside was years of invisible flywheel momentum — consistent, disciplined actions that each made the next push easier."
+        },
+        {
+          "type": "mcq",
+          "question": "The \"doom loop\" describes companies that:",
+          "options": [
+            "Grow too fast and lose their culture",
+            "Focus on cost-cutting at the expense of growth",
+            "Keep changing strategy before any flywheel momentum builds",
+            "Become too reliant on a single product or market"
+          ],
+          "correctIndex": 2,
+          "explanation": "The doom loop is the anti-flywheel: each strategic pivot resets momentum to zero. Companies caught in it have good strategies — they just never push any one long enough to build the compounding that makes the next push easier."
+        },
+        {
+          "type": "mcq",
+          "question": "The Hedgehog Concept requires finding the intersection of three circles. Which of these is NOT one of them?",
+          "options": [
+            "What you can be the best in the world at",
+            "What drives your economic engine",
+            "What the market currently demands",
+            "What you are deeply passionate about"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Hedgehog Concept's three circles are: Best in the world at, Drives economic engine, Deeply passionate about. Market demand is not one of them — because chasing market demand without passion or a genuine best-in-world advantage is a recipe for mediocrity."
+        }
+      ]
+    },
+    {
+      "id": "lsv-14-bhag",
+      "dayNumber": 14,
+      "moduleId": "lsv-module-2",
+      "title": "BHAGs — Big Hairy Audacious Goals",
+      "subtitle": "How visionary companies use long-term moon-shot goals to stay energised and aligned",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Goal That Changes Everything",
+          "body": "Collins and Porras found that visionary companies — the ones that dominate their categories for 50-100 years — all shared a remarkable habit: they committed to Big Hairy Audacious Goals. Not annual targets or 3-year plans — 10-30 year commitments to a goal so ambitious it seemed nearly impossible at the time. Boeing's 1952 BHAG: build a commercial jet that would transform air travel. NASA's 1961 BHAG: land a man on the moon. BHAGs don't just set direction — they change who you become in pursuit of them."
+        },
+        {
+          "type": "content",
+          "headline": "What Makes a Good BHAG",
+          "body": "A BHAG must be: 1) Clear and compelling — understood by everyone without explanation, 2) Aligned with the Hedgehog Concept — not random ambition, but extension of your core flywheel, 3) A 50-70% probability of success — not a certainty (that's a plan) and not a fantasy (that's delusion), 4) Inherently motivating beyond money — \"become the company that revolutionises X\" rather than \"achieve $X revenue.\" The best BHAGs create a shared cause that transcends compensation."
+        },
+        {
+          "type": "content",
+          "headline": "Types of BHAG",
+          "body": "Collins and Porras identify four BHAG categories: 1) Targeting (become #1 in X by year Y — clear, competitive), 2) Common Enemy (beat a named competitor — Pepsi's \"Beat Coke\"), 3) Role Model (\"become the Nike of our industry\"), 4) Internal Transformation (\"transform from a good regional company to the best national company in our space\"). The right type depends on your context — the test is whether it galvanises energy and creates vivid clarity about the destination."
+        },
+        {
+          "type": "content",
+          "headline": "BHAG vs Annual Goals",
+          "body": "A BHAG operates on a completely different psychological level than annual targets. Annual targets activate the rational planning brain. A true BHAG activates identity — it changes how the team sees themselves and what they believe is possible. Stanford psychologist Carol Dweck's research confirms: stretch goals that push far beyond current capability change beliefs about what's achievable. The BHAG is the ultimate growth mindset tool at the company level."
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft Your BHAG",
+          "body": "Write a first draft of your company's BHAG: a 10-20 year goal that is audacious but rooted in your Hedgehog Concept. Use this template: \"By [year], we will [ambitious measurable outcome] — making us [identity statement].\" Test it: 1) Can you explain it in one sentence without context? 2) Does it sit at the intersection of your three Hedgehog circles? 3) Does it make you simultaneously excited and slightly terrified? If yes to all three, you have a BHAG."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "A BHAG should have approximately what probability of success?",
+          "options": [
+            "95-100% (near certainty)",
+            "70-85% (likely)",
+            "50-70% (achievable but uncertain)",
+            "10-30% (a true long shot)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Collins and Porras found 50-70% probability is the sweet spot: real enough to be motivating (not a fantasy), uncertain enough to demand stretch and innovation (not just a plan). Too certain and it doesn't change behaviour; too improbable and it's not galvanising."
+        },
+        {
+          "type": "mcq",
+          "question": "Pepsi's famous goal to \"Beat Coke\" is an example of which BHAG type?",
+          "options": [
+            "Targeting",
+            "Common Enemy",
+            "Role Model",
+            "Internal Transformation"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Common Enemy BHAG focuses energy on defeating a named competitor. It's highly galvanising because it makes strategy personal and binary. The risk: if the named enemy disappears or is defeated, the BHAG loses its motivating power."
+        },
+        {
+          "type": "mcq",
+          "question": "How does a BHAG differ psychologically from an annual target?",
+          "options": [
+            "BHAGs are set by boards; annual targets are set by management",
+            "BHAGs are financial; annual targets are operational",
+            "BHAGs activate identity and belief about what's possible; annual targets activate planning",
+            "BHAGs require external validation; annual targets are internal"
+          ],
+          "correctIndex": 2,
+          "explanation": "A BHAG operates at the level of identity — it changes how the team sees themselves and what they believe the organisation can become. Annual targets activate the planning brain. BHAGs activate the ambition and possibility-sensing systems that drive breakthrough behaviour."
+        }
+      ]
+    },
+    {
+      "id": "lsv-15-what-makes-great",
+      "dayNumber": 15,
+      "moduleId": "lsv-module-3",
+      "title": "What Makes a Great Company",
+      "subtitle": "Collins' research on the rare qualities that separate good from great",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Good-to-Great Question",
+          "body": "Jim Collins spent five years with a 21-person research team studying 1,435 companies to answer one question: what separates companies that make the leap from good to great from those that don't? The research identified 11 companies that made the leap and sustained it for at least 15 years. What they found was counterintuitive — it wasn't strategy, technology, or market position. It was a small set of deeply disciplined practices applied with extraordinary consistency."
+        },
+        {
+          "type": "content",
+          "headline": "First Who, Then What",
+          "body": "The most counterintuitive finding: great companies got the right people on the bus BEFORE deciding where the bus was going. Most leaders think: decide strategy, then recruit the people to execute it. Great companies did the reverse: get exceptional people first (people who are self-motivated, values-aligned, and intellectually honest), then figure out the strategy together. The right people don't need to be managed or motivated — they manage and motivate themselves."
+        },
+        {
+          "type": "content",
+          "headline": "Confront the Brutal Facts",
+          "body": "Collins calls it the Stockdale Paradox (after Admiral Jim Stockdale, a Vietnam POW): maintain absolute faith that you will prevail in the end AND simultaneously confront the most brutal facts of your current reality. Companies that failed to make the leap had one or both failures: they either couldn't maintain faith (gave up too early) or couldn't confront reality (deluded themselves about how bad things were). Great companies do both simultaneously."
+        },
+        {
+          "type": "content",
+          "headline": "The Culture of Discipline",
+          "body": "Collins found that great companies didn't need bureaucratic controls because they had a culture of discipline — people who were disciplined in thought and action, operating within a clear framework. The key: disciplined people don't need hierarchy, and disciplined action doesn't need bureaucracy. When you have disciplined, values-aligned people making disciplined decisions within clear constraints, you get freedom AND order simultaneously."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Brutal Facts Conversation",
+          "body": "Schedule a 60-minute \"confront the brutal facts\" session with your leadership team. The rules: 1) No solutions discussed — only honest assessment of current reality, 2) Anyone can raise anything without consequence, 3) Each person names the ONE brutal fact they've been reluctant to say out loud. This single conversation, done honestly, often unlocks months of strategic clarity. What are you collectively pretending isn't true?"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Collins' \"First Who, Then What\" principle means:",
+          "options": [
+            "Define the company's vision before making any hires",
+            "Get exceptional, values-aligned people before deciding on strategy",
+            "Prioritise customer needs before internal team development",
+            "Choose your market before building the product"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great companies got the right people first — not by knowing the destination, but trusting that exceptional people will figure out the best direction together. The right people are self-motivated, intellectually honest, and don't need managing toward the mission."
+        },
+        {
+          "type": "mcq",
+          "question": "The Stockdale Paradox requires leaders to simultaneously:",
+          "options": [
+            "Be optimistic about long-term and pessimistic about short-term",
+            "Maintain absolute faith you will prevail AND confront brutal current realities",
+            "Trust the team's judgement AND verify their outputs",
+            "Be bold in strategy AND cautious in execution"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stockdale survived 8 years of brutal captivity by holding both truths: unwavering faith in eventual freedom AND clear-eyed confrontation of present horror. Companies apply this same paradox: never lose faith in ultimate success, never deny current brutal realities."
+        },
+        {
+          "type": "mcq",
+          "question": "A \"culture of discipline\" allows companies to:",
+          "options": [
+            "Run with more managers and fewer individual contributors",
+            "Reduce spending on training and development",
+            "Have freedom and order simultaneously without bureaucracy",
+            "Make faster decisions at every level of the organisation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Disciplined people with disciplined thought and action don't need bureaucratic controls. Collins' insight: bureaucracy exists to manage the incompetence of the wrong people. When you have the right people, you replace bureaucracy with culture of discipline — and gain both freedom and order."
+        }
+      ]
+    },
+    {
+      "id": "lsv-16-core-ideology",
+      "dayNumber": 16,
+      "moduleId": "lsv-module-3",
+      "title": "Core Ideology — Built to Last",
+      "subtitle": "The timeless foundation that lets visionary companies outlast every disruption",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Why Some Companies Last 100 Years",
+          "body": "Collins and Porras studied 18 truly exceptional companies — organisations that had dominated their industries for 50-100 years. 3M, HP, Johnson & Johnson, Walt Disney. What they found wasn't a superior business model or product strategy — it was an extraordinary clarity of core ideology. The companies that last are not built around a single product or leader. They're built around a set of values and a sense of purpose so clear and compelling that the company survives disruptions, bad leaders, and competitive waves that destroy their peers."
+        },
+        {
+          "type": "content",
+          "headline": "Core Values — The Immovable Foundation",
+          "body": "Core values are the small set of timeless principles that guide the company's behaviour regardless of commercial, competitive, or environmental pressure. Johnson & Johnson's credo — customers first, employees second, shareholders last — was written in 1943 and guided their decision to recall 31 million bottles of Tylenol in 1982 (before any legal requirement to do so). That decision cost $100M but built the brand's trust for decades. Core values are most visible in what you do when following them is expensive."
+        },
+        {
+          "type": "content",
+          "headline": "Core Purpose — The Reason Beyond Profit",
+          "body": "Core purpose is the organisation's fundamental reason for existing beyond making money. Disney's: \"To make people happy.\" 3M's: \"To solve unsolved problems innovatively.\" The test of a core purpose: it should be something you could pursue for 100 years and never fully achieve. Revenue and profit are outcomes, not purposes. The purpose answers \"why does it matter that this company exists?\" — and the answer can't be \"to generate returns for shareholders.\""
+        },
+        {
+          "type": "content",
+          "headline": "Preserve the Core, Stimulate Progress",
+          "body": "The dual mandate of visionary companies: preserve the core ideology absolutely, while simultaneously stimulating progress by changing almost everything else. Disney has never compromised \"making people happy\" — but the methods change radically every decade (animation → theme parks → streaming). The trap: companies either protect so much that they can't change, or change so much that they lose their identity. The art is knowing which is which."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your Core Purpose",
+          "body": "Use the \"5 Whys\" technique: Start with \"We make [product/service].\" Ask why that matters. Ask why THAT matters. Continue 5 levels deep. The answer at level 5 is usually closer to your core purpose. Test it: could you chase this purpose for 100 years without fully achieving it? If yes, it's a purpose. If it sounds achievable in 10 years, it's a goal. Write one sentence. Share it with your founding team and see if it resonates with why they originally joined."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Core values in a visionary company are most clearly demonstrated by:",
+          "options": [
+            "How they are communicated during onboarding",
+            "Their prominence in marketing and brand communications",
+            "What the company does when following them is expensive",
+            "How consistently they are referenced in board meetings"
+          ],
+          "correctIndex": 2,
+          "explanation": "J&J's Tylenol recall — costing $100M with no legal obligation — is the archetypal example. Core values are invisible when they're free to follow; they become real when following them costs something. That's when the company's true character is revealed."
+        },
+        {
+          "type": "mcq",
+          "question": "A company's core purpose should be:",
+          "options": [
+            "Achievable within 10 years if the team executes well",
+            "Directly tied to revenue and financial performance",
+            "Something the company could pursue for 100 years without fully achieving",
+            "Updated every 5 years to reflect market evolution"
+          ],
+          "correctIndex": 2,
+          "explanation": "Core purpose is a direction, not a destination. \"Making people happy\" cannot be fully achieved — it can be pursued indefinitely. A purpose you can complete is a goal. The test: would you still pursue it if it didn't produce financial returns? If yes, it's a purpose."
+        },
+        {
+          "type": "mcq",
+          "question": "The dual mandate of visionary companies is:",
+          "options": [
+            "Maximise short-term profit while building long-term brand",
+            "Preserve the core ideology while stimulating progress by changing everything else",
+            "Build great products while maintaining operational efficiency",
+            "Serve customers while generating returns for shareholders"
+          ],
+          "correctIndex": 1,
+          "explanation": "Collins and Porras' central finding: great companies are simultaneously conservative (never compromise core values) and progressive (change everything that's not core as needed). The mistake is protecting operational practices as if they were core values, or abandoning real values in pursuit of growth."
+        }
+      ]
+    },
+    {
+      "id": "lsv-17-okrs-measuring-what-matters",
+      "dayNumber": 17,
+      "moduleId": "lsv-module-3",
+      "title": "OKRs — Measuring What Matters",
+      "subtitle": "The goal-setting system that helped Google scale from 40 to 60,000 people",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Intel Idea That Changed Silicon Valley",
+          "body": "In 1974, Andy Grove created OKRs (Objectives and Key Results) at Intel. John Doerr brought the idea to Google in 1999 — when the company had 40 employees. Larry Page and Sergey Brin adopted it. By the time Google went public in 2004, OKRs were embedded in the company's DNA. Today, Google uses the same system it used at 40 people — now with 60,000+ employees. Doerr's verdict: \"OKRs have helped lead us to ten-fold growth, many times over.\""
+        },
+        {
+          "type": "content",
+          "headline": "The OKR Structure",
+          "body": "An OKR has two parts: Objective (what you want to achieve — qualitative, inspirational, memorable) and Key Results (how you'll know you achieved it — quantitative, specific, time-bound, 3-5 per objective). Example Objective: \"Build a culture of radical transparency across the leadership team.\" Key Results: 1) 100% of leadership meetings use pre-shared written agendas by Q3, 2) Net Promoter Score among managers increases from 42 to 65, 3) Zero major decisions made without documented rationale. The Key Results make the Objective measurable."
+        },
+        {
+          "type": "content",
+          "headline": "Stretch Goals and Moonshots",
+          "body": "Doerr distinguishes committed OKRs (must achieve — business depends on it) from aspirational OKRs (should aim for — a stretch that might only be 60-70% achieved). Google's rule: aspirational OKRs should be set at a level where getting 70% is considered a success. If you're hitting 100% consistently, your goals aren't ambitious enough. The discomfort of moonshot OKRs is the point — they force creative thinking rather than incremental improvement."
+        },
+        {
+          "type": "content",
+          "headline": "The CFR Companion",
+          "body": "Doerr pairs OKRs with CFRs (Conversations, Feedback, Recognition) — the human operating system that makes OKRs work. Conversations: frequent manager-to-direct-report dialogue on goals and progress (not annual reviews). Feedback: bidirectional, real-time input on performance (not the annual surprise). Recognition: expressions of gratitude that are specific, timely, and peer-driven. OKRs without CFRs become a measurement system. CFRs without OKRs become a culture without direction. Together, they're transformative."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your First OKR",
+          "body": "Choose one area of your business that most needs clarity and improvement. Write: Objective (1 sentence — inspiring, clear, no metrics), Key Results (3-5 bullet points — specific, measurable, time-bound, with current baseline and target). Share it with your team and ask: \"Does this tell you clearly what success looks like in 90 days?\" If they need to ask questions, the Key Results aren't specific enough. Revise until there's zero ambiguity."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "In OKRs, Key Results must be:",
+          "options": [
+            "Qualitative and inspirational",
+            "Owned collectively by the team",
+            "Quantitative, specific, and time-bound",
+            "Set by HR in collaboration with managers"
+          ],
+          "correctIndex": 2,
+          "explanation": "Key Results are the quantitative proof that the Objective was achieved. Qualitative language in Key Results creates measurement ambiguity. Every Key Result should have a specific number, a baseline, and a deadline — so there's zero debate at the end of the period about whether it was achieved."
+        },
+        {
+          "type": "mcq",
+          "question": "According to Doerr, consistently hitting 100% of aspirational OKRs means:",
+          "options": [
+            "The team is exceptionally well-managed",
+            "The OKR system is working as designed",
+            "The goals are not ambitious enough",
+            "The company is ready to set more complex objectives"
+          ],
+          "correctIndex": 2,
+          "explanation": "Aspirational OKRs should be set at a level where 70% attainment is success. Hitting 100% consistently means you set the bar too low. The stretch discomfort is intentional — it forces creative thinking and behaviour change rather than incremental improvement of the status quo."
+        },
+        {
+          "type": "mcq",
+          "question": "CFRs (Conversations, Feedback, Recognition) complement OKRs by providing:",
+          "options": [
+            "A financial reporting framework for investors",
+            "The human operating system that makes goal-setting work in practice",
+            "A replacement for the annual performance review process",
+            "Metrics for measuring leadership effectiveness"
+          ],
+          "correctIndex": 1,
+          "explanation": "OKRs set direction; CFRs provide the human connection that makes people actually care about achieving them. Without CFRs, OKRs become a bureaucratic measurement system. Without OKRs, CFRs are warm culture without strategic direction. Together they create aligned, motivated execution."
+        }
+      ]
+    },
+    {
+      "id": "lsv-18-enduring-culture",
+      "dayNumber": 18,
+      "moduleId": "lsv-module-3",
+      "title": "Building an Enduring Culture",
+      "subtitle": "Creating a culture that scales, self-reinforces, and survives leadership changes",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Culture Doesn't Survive Automatically",
+          "body": "Netflix's culture survived Reed Hastings' departure because it was embedded in hiring, performance management, and daily decision-making — not in a single charismatic leader. Most company cultures don't survive because they're leader-dependent rather than system-dependent. When the founder leaves, the culture leaves with them. Building an enduring culture means encoding it in systems, stories, rituals, and hiring criteria — not just in the CEO's personality."
+        },
+        {
+          "type": "content",
+          "headline": "The Culture Encoding Mechanisms",
+          "body": "Edgar Schein's research identifies five mechanisms leaders use to embed culture: 1) What they pay attention to, measure, and control, 2) How they react to critical incidents (crises test values), 3) How resources are allocated (where money and time go signals priority), 4) Who gets hired, promoted, and fired, 5) What leaders model in their daily behaviour. The most powerful: critical incident response. How you behave in a crisis tells everyone what you actually believe."
+        },
+        {
+          "type": "content",
+          "headline": "Stories and Rituals",
+          "body": "Great cultures are sustained by shared stories and rituals that carry meaning beyond their surface function. Amazon's empty chair in meetings (representing the customer). Zappos' \"culture book\" (unfiltered employee descriptions of company culture — no editing). Bridgewater's radical transparency recordings. These aren't gimmicks — they're cultural encoding devices that make abstract values concrete and memorable. Stories are how culture survives beyond the people who built it."
+        },
+        {
+          "type": "content",
+          "headline": "Culture and Performance",
+          "body": "Kotter and Heskett's research across 200 companies found that organisations with strong, adaptive cultures outperformed peers by: revenue growth 4x higher, workforce growth 8x higher, and stock price growth 12x higher over 11 years. Adaptive is the key word — rigid cultures that can't change their operating practices (while preserving core values) underperform just as badly as cultures with no values at all. Strong and adaptive: that's the goal."
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify Your Culture Stories",
+          "body": "Ask yourself: what are the 3 stories we tell new hires about what we stand for? These might be stories about how you handled a difficult client, why you passed on revenue, or what you did when you made a mistake. If you don't have 3 clear culture stories, you don't have a fully encoded culture yet. Choose one story this week and share it in your next all-hands or team meeting. Stories are more powerful than values statements — they show, not tell."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The most powerful of Schein's five culture-encoding mechanisms is:",
+          "options": [
+            "What leaders pay attention to and measure",
+            "Who gets hired and promoted",
+            "How leaders respond to critical incidents and crises",
+            "How resources are allocated"
+          ],
+          "correctIndex": 2,
+          "explanation": "Critical incidents are the ultimate test of real values. How a leader behaves in a crisis — when following values is costly — signals what the company truly stands for. All the culture decks in the world are overridden by one high-visibility decision that contradicts them."
+        },
+        {
+          "type": "mcq",
+          "question": "Kotter and Heskett found that adaptive cultures outperformed peers primarily because:",
+          "options": [
+            "They attracted and retained higher-quality talent",
+            "They had more innovation processes and R&D investment",
+            "They could change operating practices while preserving core values",
+            "They had stronger employee satisfaction scores"
+          ],
+          "correctIndex": 2,
+          "explanation": "Strong cultures without adaptability become rigid and eventually irrelevant. The winning combination is preserving the core values absolutely while changing everything else aggressively as conditions demand. This is Collins and Porras' \"preserve the core, stimulate progress\" in practice."
+        },
+        {
+          "type": "mcq",
+          "question": "Why are company stories more powerful than values statements?",
+          "options": [
+            "Stories are easier to remember than abstract principles",
+            "Stories show values in action rather than just declaring them",
+            "Stories can be customised for different audiences",
+            "Stories can be updated more easily than formal documents"
+          ],
+          "correctIndex": 1,
+          "explanation": "Values statements tell people what to believe. Stories show it happening in reality — with real costs, real decisions, and real outcomes. When a new hire hears a story about when you passed on $500K in revenue because the client didn't share your values, they understand your values in a way no bullet point can convey."
+        }
+      ]
+    },
+    {
+      "id": "lsv-19-talent-density",
+      "dayNumber": 19,
+      "moduleId": "lsv-module-3",
+      "title": "Talent Density & Performance Management",
+      "subtitle": "Building a team where excellence is the norm, not the exception",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Brilliant Jerk Problem",
+          "body": "Netflix fired a high-performing engineer who was causing team dysfunction. His output was exceptional. His behaviour was toxic. Hastings' decision: performance alone is not enough. The \"brilliant jerk\" who produces results while destroying team trust is net negative for the company — even if their individual output metrics look great. One toxic high-performer lowers the entire team's psychological safety, which depresses the output of 10 other people. Net result: deeply negative."
+        },
+        {
+          "type": "content",
+          "headline": "Talent Density Over Headcount",
+          "body": "Hastings' core insight in No Rules Rules: a team of 10 exceptional people outperforms a team of 20 average people — in almost every measurable dimension. The implication: aggressively manage out mediocre performers and pay elite performers well above market to keep them. Netflix's \"adequate performance gets a generous severance\" policy is jarring. The result: a team where everyone knows the person next to them is excellent. That knowledge changes behaviour and ambition at every level."
+        },
+        {
+          "type": "content",
+          "headline": "The Performance Review Reimagined",
+          "body": "Traditional performance reviews are annual, manager-driven, backward-looking, and tied to compensation calibration — all the wrong incentives. Laszlo Bock's research at Google found that decoupling performance feedback from compensation calibration dramatically improved feedback quality and honesty. The best performance systems are: frequent (quarterly or ongoing), bidirectional (upward, peer, and downward), development-focused (not judgement-focused), and separated from compensation decisions."
+        },
+        {
+          "type": "content",
+          "headline": "The 360 That Actually Works",
+          "body": "Most 360 reviews produce data that nobody acts on. The ones that work have three features: 1) Psychological safety (anonymous or in a high-trust environment), 2) Actionable specificity (not \"communicate better\" but \"in team meetings, you interrupt others when they're making data-driven arguments — here's a specific example\"), 3) Committed follow-through (the recipient commits publicly to 1-2 specific behaviour changes with a 90-day review date). 360 without commitment is just expensive data collection."
+        },
+        {
+          "type": "try-it",
+          "headline": "The Keeper Test — Applied to Your Whole Team",
+          "body": "Go through every person on your team and apply the Keeper Test: \"If they told me tomorrow they were leaving, would I work hard to keep them?\" For anyone where the honest answer is \"no\" or \"probably not,\" ask: what would need to be true for them to be a \"yes\"? Are those changes achievable? If not, the kindest thing for them and the team is an honest conversation about fit. Mediocrity is contagious — and so is excellence."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The \"brilliant jerk\" is net negative for a company because:",
+          "options": [
+            "Their skills become outdated quickly",
+            "Their compensation expectations grow faster than their output",
+            "Their toxic behaviour lowers team psychological safety, reducing others' output",
+            "They often leave for competitors, taking knowledge with them"
+          ],
+          "correctIndex": 2,
+          "explanation": "A toxic high-performer's individual output is more than offset by the damage they do to team psychological safety. When 10 people feel unsafe to share ideas or challenge bad decisions, the whole team's collective intelligence is suppressed. One person's gain becomes the whole team's loss."
+        },
+        {
+          "type": "mcq",
+          "question": "Netflix's \"adequate performance gets a generous severance\" policy produces:",
+          "options": [
+            "High employee anxiety and burnout",
+            "A team where everyone knows the people around them are excellent",
+            "Constant turnover that disrupts cultural cohesion",
+            "Pressure to over-perform at the expense of work-life balance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Counterintuitively, Netflix employees report feeling more secure — not less — because they know their colleagues are excellent. In a mediocre team, you never know who's carrying whom. In a high-density team, you know everyone beside you is genuinely excellent. That clarity creates trust."
+        },
+        {
+          "type": "mcq",
+          "question": "Google's research found that 360 feedback improved when:",
+          "options": [
+            "It was tied directly to compensation decisions",
+            "Only managers provided input to keep the process efficient",
+            "Performance feedback was decoupled from compensation calibration",
+            "Feedback was delivered annually to allow time for reflection"
+          ],
+          "correctIndex": 2,
+          "explanation": "When feedback is tied to pay decisions, everyone — givers and receivers — optimises for the financial outcome rather than honest development. Decoupling the two processes removes that distortion and dramatically improves the quality and actionability of what's shared."
+        }
+      ]
+    },
+    {
+      "id": "lsv-20-exit-and-legacy",
+      "dayNumber": 20,
+      "moduleId": "lsv-module-3",
+      "title": "Exit Strategy & Legacy",
+      "subtitle": "Building a company worth acquiring — and a legacy worth leaving",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every Founder Exits Somehow",
+          "body": "Every founder eventually exits — through acquisition, IPO, management buyout, or simply handing the reins to a successor. The difference between a founder who builds something worth acquiring and one who doesn't isn't talent — it's intentionality. John Warrillow's Built to Sell and Collins' Good to Great both agree: the best time to plan your exit is 5-10 years before you want it. The company you're building today is either an asset that can exist without you — or a job that ends when you leave."
+        },
+        {
+          "type": "content",
+          "headline": "What Buyers Actually Buy",
+          "body": "Warrillow identified what acquirers pay premiums for: 1) Recurring revenue (predictable, low-churn cash flows), 2) Documented systems and processes (the business doesn't depend on undocumented tribal knowledge), 3) Management team (senior leaders who will stay post-acquisition), 4) Customer diversification (no single customer > 15-20% of revenue), 5) Strong brand in a defensible niche. Each of these is also what makes a great company to run — exit-readiness and operational excellence are the same thing."
+        },
+        {
+          "type": "content",
+          "headline": "The Succession Trap",
+          "body": "Collins found that level 5 leaders planned for succession deliberately and with extraordinary care. The trap most leaders fall into: selecting a successor who makes them feel secure (similar, dependent, non-threatening) rather than one who will make the company great. Great succession planning starts 5 years before it's needed, develops multiple internal candidates, involves the board, and specifically selects for the leadership qualities the NEXT phase of the company requires — not the phase you led through."
+        },
+        {
+          "type": "content",
+          "headline": "Legacy vs Impact",
+          "body": "There's a meaningful distinction between legacy (what people remember about you) and impact (what you actually changed in the world). The leaders in Collins' research who built the most enduring companies were almost uniformly uninterested in their own legacy — they were obsessed with the company's impact. Paradoxically, that obsession with impact rather than legacy is exactly what creates lasting legacy. Darwin Smith is barely known outside business history — but Kimberly-Clark is still a dominant company 50 years after his tenure."
+        },
+        {
+          "type": "try-it",
+          "headline": "Write Your 5-Year Exit Readiness Plan",
+          "body": "Score your business today against Warrillow's five premium drivers (1-10 each): Recurring revenue, Documented systems, Management team, Customer diversification, Niche brand. Total out of 50. Then pick your lowest score and write 3 specific actions to improve it in the next 90 days. Exit-readiness isn't about selling — it's about building a business that has genuine, transferable value. And that's worth building regardless of whether you ever sell."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The best time to plan your business exit is:",
+          "options": [
+            "When you receive your first acquisition offer",
+            "At the point of maximum business value",
+            "5-10 years before you want to exit",
+            "When you have at least 3 years of consecutive growth"
+          ],
+          "correctIndex": 2,
+          "explanation": "Exit planning is strategy, not transaction management. The systems, teams, recurring revenue, and customer diversification that make a company worth acquiring all take years to build. Planning 5-10 years ahead means you're building exit-readiness into the business itself — which also makes it a better company to run."
+        },
+        {
+          "type": "mcq",
+          "question": "According to Warrillow, which factor most increases acquisition premium?",
+          "options": [
+            "High year-over-year revenue growth",
+            "Strong personal brand of the founder",
+            "Recurring revenue with low churn",
+            "A large and growing team"
+          ],
+          "correctIndex": 2,
+          "explanation": "Recurring revenue is the most valued acquisition attribute because it provides predictable, low-risk cash flows that a buyer can bank on. High growth is exciting but risky; recurring revenue is bankable. A business with $2M recurring revenue is often worth more than one with $5M one-off revenue."
+        },
+        {
+          "type": "mcq",
+          "question": "Collins' research found that Level 5 leaders approached succession planning by:",
+          "options": [
+            "Selecting successors who shared their personal vision for the company",
+            "Choosing successors who would maintain the status quo",
+            "Deliberately developing multiple internal candidates 5+ years in advance",
+            "Primarily looking externally for fresh leadership perspectives"
+          ],
+          "correctIndex": 2,
+          "explanation": "Level 5 leaders were obsessed with the company's future beyond their own tenure. They started succession planning years early, developed multiple candidates internally, and selected for the leadership qualities the NEXT phase required — not the phase they personally excelled in."
+        }
+      ]
+    },
+    {
+      "id": "lsv-21-leaders-lasting-impact",
+      "dayNumber": 21,
+      "moduleId": "lsv-module-3",
+      "title": "The Leader's Lasting Impact",
+      "subtitle": "Integrating everything you've learned into a leadership practice that compounds",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The Compounding Leader",
+          "body": "Warren Buffett's most famous insight about investing is equally true about leadership: \"The most powerful force in the universe is compound interest.\" Every one-on-one you run with radical candor compounds team trust. Every critical decision you make with the new management team test compounds your strategic clarity. Every time you look in the mirror instead of out the window, you compound your team's loyalty. Great leaders don't have breakthrough moments — they have compound habits. And over time, compound habits create extraordinary outcomes."
+        },
+        {
+          "type": "content",
+          "headline": "Integrating the Full Framework",
+          "body": "This course has covered three dimensions of world-class leadership: 1) Lead with clarity and courage (Horowitz, Grove, Scott, Lencioni) — the daily human work of leadership, 2) Scale the organisation (Harnish, Collins) — the systems and culture that outlast any individual, 3) Build lasting value (Collins & Porras, Doerr, Hastings, Warrillow) — the enduring foundation that survives disruption. No dimension works without the others. Clarity without systems creates a heroic bottleneck. Systems without clarity create bureaucracy. Value without culture erodes."
+        },
+        {
+          "type": "content",
+          "headline": "The Leadership Operating Rhythm",
+          "body": "High-impact leaders operate from a clear personal rhythm: Daily (one-on-ones, deep work, daily huddle), Weekly (team meeting, strategic review, one high-leverage decision), Monthly (culture reinforcement, talent assessment, stakeholder alignment), Quarterly (OKR review, planning offsite, succession conversation), Annually (BHAG review, culture reset, personal leadership audit). The rhythm isn't a calendar — it's a commitment to showing up with intention at every level of the organisation."
+        },
+        {
+          "type": "content",
+          "headline": "The Leader You Are Becoming",
+          "body": "The gap between a Level 4 leader and a Level 5 leader isn't intelligence, strategy, or work ethic. It's a small set of deeply ingrained habits practiced with extraordinary consistency over a long time: professional will (obsessive focus on the company's success), personal humility (window and mirror), radical candor (caring enough to say the hard thing), and a long-term orientation (building something that will outlast you). None of these are rare skills. They are all choices, made repeatedly."
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Leadership Commitment",
+          "body": "Write three things: 1) The one leadership habit from this course you will practice daily for the next 90 days (be specific — \"run weekly one-on-ones using the Radical Candor SBI model\"), 2) The one structural change you will make to your business in the next quarter to move from good to great, 3) The legacy statement — one sentence describing the leader you are committed to becoming. Share these with someone who will hold you to them. The best leaders don't just know what to do — they have the discipline and the accountability to keep doing it."
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "The \"compounding leader\" concept suggests that leadership impact primarily comes from:",
+          "options": [
+            "A series of bold strategic decisions at key inflection points",
+            "Hiring exceptional talent who multiply the leader's vision",
+            "Small consistent habits practiced over a long time",
+            "Developing a unique personal leadership style"
+          ],
+          "correctIndex": 2,
+          "explanation": "Like compound interest, small consistent leadership habits produce extraordinary outcomes over time. A daily one-on-one practice, a weekly candour habit, a consistent mirror-not-window response to outcomes — these don't look impressive week to week. Over years, they define legendary teams and companies."
+        },
+        {
+          "type": "mcq",
+          "question": "Systems without clarity in leadership tend to produce:",
+          "options": [
+            "Scalable growth",
+            "Bureaucracy",
+            "Creative dysfunction",
+            "Over-reliance on the founder"
+          ],
+          "correctIndex": 1,
+          "explanation": "Systems provide structure; clarity provides direction. Systems alone — without a clear why, clear values, and clear priorities — become bureaucratic machinery that processes inputs without producing meaningful outputs. Great leadership requires both the human clarity work AND the structural systems work."
+        },
+        {
+          "type": "mcq",
+          "question": "The difference between a Level 4 and Level 5 leader is primarily:",
+          "options": [
+            "Intelligence and strategic capability",
+            "Technical expertise in the company's domain",
+            "A small set of deeply ingrained habits practiced with extraordinary consistency",
+            "Access to better mentors and professional networks"
+          ],
+          "correctIndex": 2,
+          "explanation": "Collins found that Level 5 leaders weren't smarter or more technically gifted. What separated them was a set of deeply practiced habits — professional will, personal humility, candour, and long-term orientation — applied with remarkable consistency over time. These are choices, not traits. They can be developed."
+        }
+      ]
+    }
+  ]
+}

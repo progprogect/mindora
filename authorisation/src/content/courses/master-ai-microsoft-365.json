@@ -1,0 +1,2400 @@
+{
+  "id": "master-ai-microsoft-365",
+  "title": "Master AI for Microsoft 365",
+  "subtitle": "Use AI across Word, Excel, PowerPoint, Outlook and Teams to do your real work faster and to a higher standard.",
+  "totalDays": 24,
+  "totalXp": 600,
+  "modules": [
+    {
+      "moduleNumber": 1,
+      "id": "module-1",
+      "title": "AI and Microsoft 365 Foundations",
+      "subtitle": "Pick your tools and learn to brief AI properly",
+      "days": "Lessons 1–4",
+      "skill": "You have a working AI setup and you know how to brief it so the first answer is usable rather than vague.",
+      "lessonIds": [
+        "lesson-1-your-microsoft-365-ai-toolkit",
+        "lesson-2-choose-your-setup",
+        "lesson-3-the-prompt-that-works-at-work",
+        "lesson-4-module-1-checkpoint"
+      ]
+    },
+    {
+      "moduleNumber": 2,
+      "id": "module-2",
+      "title": "Word and Documents",
+      "subtitle": "Create, reshape and understand professional documents",
+      "days": "Lessons 5–8",
+      "skill": "You can produce an executive-ready document from rough material, and reshape a draft for a different audience.",
+      "lessonIds": [
+        "lesson-5-create-professional-documents",
+        "lesson-6-rewrite-reshape-retarget",
+        "lesson-7-read-a-long-document-fast",
+        "lesson-8-module-2-checkpoint"
+      ]
+    },
+    {
+      "moduleNumber": 3,
+      "id": "module-3",
+      "title": "Excel and PowerPoint",
+      "subtitle": "Turn numbers into an insight, and an insight into slides",
+      "days": "Lessons 9–12",
+      "skill": "You can find the real insight in a spreadsheet and present it clearly in slides.",
+      "lessonIds": [
+        "lesson-9-understand-any-spreadsheet",
+        "lesson-10-find-the-insight",
+        "lesson-11-insight-to-slides",
+        "lesson-12-module-3-checkpoint"
+      ]
+    },
+    {
+      "moduleNumber": 4,
+      "id": "module-4",
+      "title": "Outlook and Communication",
+      "subtitle": "Cut your email workload without dropping anything",
+      "days": "Lessons 13–16",
+      "skill": "You can turn a full inbox into decisions and actions rather than an unanswered pile.",
+      "lessonIds": [
+        "lesson-13-take-control-of-your-inbox",
+        "lesson-14-summarise-a-long-thread",
+        "lesson-15-write-better-emails-faster",
+        "lesson-16-module-4-checkpoint"
+      ]
+    },
+    {
+      "moduleNumber": 5,
+      "id": "module-5",
+      "title": "Teams, Meetings and Projects",
+      "subtitle": "Prepare, capture and follow through on every meeting",
+      "days": "Lessons 17–20",
+      "skill": "You can turn a meeting into an owned, dated plan instead of a conversation nobody acts on.",
+      "lessonIds": [
+        "lesson-17-prepare-for-any-meeting",
+        "lesson-18-never-lose-a-meeting-action",
+        "lesson-19-catch-up-on-what-you-missed",
+        "lesson-20-module-5-checkpoint"
+      ]
+    },
+    {
+      "moduleNumber": 6,
+      "id": "module-6",
+      "title": "AI-Powered Microsoft 365 Workflows",
+      "subtitle": "Connect the apps into one workflow you actually repeat",
+      "days": "Lessons 21–24",
+      "skill": "You can redesign a recurring work process end to end so AI helps at every step without you babysitting it.",
+      "lessonIds": [
+        "lesson-21-build-a-complete-business-report",
+        "lesson-22-design-your-ai-powered-workday",
+        "lesson-23-redesign-one-recurring-process",
+        "lesson-24-capstone-your-microsoft-365-workflow"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-1-your-microsoft-365-ai-toolkit",
+      "title": "Meet Your Microsoft 365 AI Toolkit",
+      "subtitle": "Which AI tool to reach for, and when — including the honest limits of each.",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Four tools, one job: to make your real work better",
+          "body": "Microsoft 365 gives you several ways to use AI, and they are not interchangeable. Some sit inside your apps and can read your files; others live in a browser and only know what you paste in. This lesson names each one honestly so you can choose the right tool for the task in front of you rather than reaching for whichever you heard about first.",
+          "stat": "4 tools",
+          "statLabel": "to choose between before you start"
+        },
+        {
+          "type": "content",
+          "headline": "Microsoft 365 Copilot — the one inside your apps",
+          "body": "Copilot is the AI built into Word, Excel, PowerPoint, Outlook and Teams. Because it runs inside the app, it can see the files and conversations your organisation lets it see, which makes it strong for tasks tied to material you already have. It needs a paid licence, and in many organisations IT decides whether it is available at all.",
+          "bullets": [
+            "Lives inside Word, Excel, PowerPoint, Outlook and Teams.",
+            "Can read files and context your organisation has let it see.",
+            "Requires a paid Microsoft 365 Copilot licence.",
+            "Whether it is even switched on is often controlled by IT, not by you."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Copilot Chat, Claude and ChatGPT — the browser tools",
+          "body": "Copilot Chat is the free web version; it is handy but it cannot see your files unless you paste or upload them. Claude and ChatGPT are separate tools that tend to be stronger at writing, structuring and reasoning, but again they only know what you give them. For anything private, treat these browser tools as blank slates that depend entirely on what you type.",
+          "bullets": [
+            "Copilot Chat: free web chat, cannot see your files unless you upload them.",
+            "Claude and ChatGPT: strong writing and reasoning, you paste material in.",
+            "None of them know your organisation unless you tell them."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When to use each — and the honest limits",
+          "body": "Use Copilot inside an app when the task is about a file already open in that app. Use a browser tool when you want the best writing quality or you are working across material from several places. In every case, be honest with yourself about the limits: AI cannot know your organisation's politics or history, it can invent or fabricate figures and quotes, and what Copilot can actually see depends entirely on what your administrator has switched on and indexed.",
+          "bullets": [
+            "In-app Copilot: best when the work is tied to a file already open.",
+            "Browser tools: best for writing quality and cross-source work.",
+            "AI cannot know your office politics or unwritten history.",
+            "Figures and quotes from AI must be verified before you rely on them.",
+            "What Copilot can see depends on what your organisation has enabled and indexed."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Brief a tool and notice what it can and cannot see",
+          "body": "Pick one real task from your week — a document to draft, a spreadsheet to make sense of, an email to answer. Brief the tool you have available in one complete sentence: the audience, the outcome, and what it should ask you before it writes. Notice whether the tool can see your file or whether you had to paste material in, because that difference shapes every later lesson.",
+          "bullets": [
+            "\"I need to write a one-page summary of this document for my manager. Read what I have pasted, then ask me two questions about what decision she needs to make before you write anything.\"",
+            "A good tool replies with questions, not a finished draft — that is the behaviour every later lesson relies on.",
+            "If the tool could not see your file, note that; it tells you which path from lesson 2 fits you."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Which tool can read a file that is already open in Word, assuming your organisation allows it?",
+          "options": [
+            "Microsoft 365 Copilot",
+            "A browser tab with ChatGPT",
+            "Any free chat tool",
+            "None of them"
+          ],
+          "correctIndex": 0,
+          "explanation": "Copilot runs inside the Office apps and can see files your organisation has let it see. Browser tools only know what you paste in."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the honest limit of every AI tool covered here?",
+          "options": [
+            "It always knows your organisation's politics and history.",
+            "It can invent or fabricate figures and quotes, so you must verify them.",
+            "It cannot write anything longer than a paragraph.",
+            "It works identically whether or not IT has enabled it."
+          ],
+          "correctIndex": 1,
+          "explanation": "AI can fabricate figures and quotes. Anything you rely on has to be checked against a real source before you use it."
+        },
+        {
+          "type": "true-false",
+          "question": "What Copilot can see depends on what your administrator has switched on and indexed.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Copilot's reach is governed by your organisation's settings. If your admin has not enabled or indexed something, Copilot cannot see it."
+        }
+      ]
+    },
+    {
+      "id": "lesson-2-choose-your-setup",
+      "title": "Choose Your Setup",
+      "subtitle": "Three honest paths — including one that costs nothing.",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "xpValue": 25,
+      "duration": "5 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You can finish this course for free",
+          "body": "You do not need a paid Copilot licence to complete every lesson here. Three honest paths exist, and one of them costs nothing. The right choice is the one that matches what your organisation gives you and how you like to work, not the most expensive option.",
+          "stat": "3 paths",
+          "statLabel": "and one of them is free"
+        },
+        {
+          "type": "content",
+          "headline": "Path A — Copilot inside the Microsoft 365 apps",
+          "body": "If your organisation provides a Copilot licence, use it. It is the smoothest path because the AI sits inside Word, Excel, PowerPoint, Outlook and Teams and can read what you are working on. Remember that in many organisations IT controls whether Copilot is available at all, so this path is only open to you if your administrator has switched it on.",
+          "bullets": [
+            "Best when you have a paid licence and IT has enabled it.",
+            "AI can see your open files, so less copying and pasting.",
+            "Availability is often an IT decision, not yours."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Path B — a chat AI beside your Office apps",
+          "body": "Open Claude or ChatGPT in a browser window beside your document and copy material across. This path usually gives the best writing quality and reasoning, at the cost of pasting content in. It works whether or not you have a Copilot licence, and it is the path many people settle on even when Copilot is available.",
+          "bullets": [
+            "Best writing and reasoning quality.",
+            "You copy and paste material in, so mind what is confidential.",
+            "Works with or without a Copilot licence."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Path C — free tiers only",
+          "body": "Free tiers of Claude, ChatGPT and Copilot Chat complete every lesson in this course. The limit is how many messages you can send, not what you can ask. The trick is to write one longer, complete brief instead of ten short follow-ups: give the audience, the outcome and the constraints up front so a single reply does the job of a conversation. This is the path that costs nothing and still gets you through.",
+          "bullets": [
+            "A free setup is enough to finish every lesson in this course.",
+            "Message limits cap how many messages you send, not what you can ask.",
+            "Write one complete brief rather than ten follow-ups."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write the one-brief that does the job of ten follow-ups",
+          "body": "Take a small real task and write a single brief that a free-tier tool could answer in one go. State the audience, the outcome you need, the constraints, and ask it to question you before it writes. A complete brief is what lets a free path match a paid one, because you are spending the message limit wisely rather than burning it on clarification.",
+          "bullets": [
+            "\"I manage a small team and need a one-page agenda for a 30-minute weekly check-in. The team is remote and tends to go quiet. Before you write the agenda, ask me one question about what outcome I want from the meeting.\"",
+            "A complete brief replaces a chain of follow-ups — that is how a free path keeps up.",
+            "If your first reply came back usable, you wrote the brief well; if not, add the missing detail and try once more."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Which statement about the free path is correct?",
+          "options": [
+            "A free setup cannot complete every lesson in this course.",
+            "A free setup is enough to finish every lesson in this course.",
+            "Free tiers limit what you can ask, not how many messages you send.",
+            "Free tiers only work with a Copilot licence."
+          ],
+          "correctIndex": 1,
+          "explanation": "A free setup completes every lesson. The limit is message count, so a complete brief beats a chain of follow-ups."
+        },
+        {
+          "type": "mcq",
+          "question": "In many organisations, who controls whether in-app Copilot is available?",
+          "options": [
+            "You, always",
+            "IT or your administrator",
+            "The chat AI itself",
+            "Nobody — it is always on"
+          ],
+          "correctIndex": 1,
+          "explanation": "Whether Copilot is switched on is often an IT decision. That is why the free path exists as a fallback."
+        },
+        {
+          "type": "true-false",
+          "question": "Message limits on free tiers cap how many messages you send, not what you can ask.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Free tiers limit message count. A single complete brief does the work of several follow-ups and keeps you within the limit."
+        }
+      ]
+    },
+    {
+      "id": "lesson-3-the-prompt-that-works-at-work",
+      "title": "The Prompt That Works at Work",
+      "subtitle": "Four things every real brief contains — and why vague asks waste your time.",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A vague ask gets a vague answer, every time",
+          "body": "\"Write me an email about the project\" produces something generic you then rewrite from scratch, which is slower than writing it yourself. The difference between a wasted reply and a usable one is almost never the tool — it is how much of the real situation you handed over. There are four things a workplace brief needs, and once you know them you will spot instantly why a weak reply came back weak.",
+          "stat": "4 parts",
+          "statLabel": "that turn a vague ask into a usable answer"
+        },
+        {
+          "type": "content",
+          "headline": "The four parts of a brief that works",
+          "body": "Audience, outcome, constraints, material. Audience is who reads it and what they already know. Outcome is what you need to happen after they read it. Constraints are the length, tone, format and anything that must or must not appear. Material is the actual content — the notes, figures or thread the answer must be built from. Miss any one of these and the tool fills the gap with a guess.",
+          "bullets": [
+            "Audience: who reads this, and what do they already know?",
+            "Outcome: what should happen after they read it?",
+            "Constraints: length, tone, format, and anything that must not appear.",
+            "Material: the real notes, figures or messages to work from."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Make it ask before it writes",
+          "body": "The single highest-value instruction you can add is telling the tool to question you before it produces anything. A tool that asks \"who is the decision maker here?\" is about to write something useful; a tool that immediately produces four polished paragraphs has quietly invented the context it was missing. Asking for questions first turns a guess into a conversation, and it costs you one exchange.",
+          "bullets": [
+            "End your brief with: ask me one or two questions before you write.",
+            "Questions back mean the tool found a real gap — answer it and the draft improves.",
+            "An instant polished draft often means the context was invented rather than known."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Vague versus complete, side by side",
+          "body": "Compare \"summarise this report\" with \"summarise this report in under 200 words for our operations manager, who has not read it and needs to decide whether to approve the extra spend; keep the two figures on page 4 and flag anything the report does not actually confirm\". The second is longer to type once and saves you every rewrite afterwards. It also makes a fabricated detail obvious, because you told it what the source contains.",
+          "bullets": [
+            "Vague: \"summarise this report\" — you will rewrite whatever comes back.",
+            "Complete: audience, word count, the decision at stake, the figures to keep.",
+            "Naming what the source contains makes an invented detail easy to spot.",
+            "One longer brief beats five rounds of correction."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write one complete brief for a real task",
+          "body": "Pick a task you genuinely have to do this week — a document, an email, a summary. Write a single brief that names all four parts: the audience and what they know, the outcome you need, the constraints on length and tone, and the material to work from. Finish by telling the tool to ask you a question before it writes anything. Then compare what comes back with what you would have got from a one-line request.",
+          "bullets": [
+            "\"I need a short update for our operations manager, who has not followed this project and needs to decide whether to approve more budget. Keep it under 200 words, plain and factual, no bullet points. Here are my rough notes. Before you write, ask me one question about what decision she actually needs to make.\"",
+            "If the reply came back usable first time, the brief did that — not the tool.",
+            "If it came back generic, find which of the four parts you left out and add it."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Which four parts does a workplace brief need?",
+          "options": [
+            "Audience, outcome, constraints, material",
+            "Length, tone, spelling, format",
+            "Tool, licence, browser, file",
+            "Subject, greeting, body, sign-off"
+          ],
+          "correctIndex": 0,
+          "explanation": "Audience, outcome, constraints and material. Leave any one out and the tool fills the gap with a guess you then have to correct."
+        },
+        {
+          "type": "mcq",
+          "question": "What does it usually mean when a tool returns a polished draft instantly, with no questions?",
+          "options": [
+            "The brief was perfect and nothing was missing.",
+            "It may have invented the context it was missing.",
+            "The tool is faster than the others.",
+            "It has read every file in your organisation."
+          ],
+          "correctIndex": 1,
+          "explanation": "An instant polished draft often means missing context was invented rather than known. Asking it to question you first surfaces the real gaps."
+        },
+        {
+          "type": "true-false",
+          "question": "Writing one longer, complete brief is usually faster overall than sending a short vague request.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A complete brief costs one longer message and removes the rounds of rewriting a vague request creates."
+        }
+      ]
+    },
+    {
+      "id": "lesson-4-module-1-checkpoint",
+      "title": "Module 1 Checkpoint: Your Setup and Your Brief",
+      "subtitle": "Lock in the path you are on and the brief you will reuse all course.",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Two decisions to carry into the rest of the course",
+          "body": "You have met the tools, chosen between three setups, and learned the four parts of a brief that works. This checkpoint turns that into two things written down: which setup you are actually using, and a reusable brief in your own words for a task you really do. Every later module builds on both, so it is worth ten minutes now rather than guessing later.",
+          "stat": "2 decisions",
+          "statLabel": "to record before module 2"
+        },
+        {
+          "type": "content",
+          "headline": "Decision one: name your path honestly",
+          "body": "Write down which setup you are on: Copilot inside the apps, a chat AI beside them, or free tiers only. Be honest rather than aspirational — if your organisation has not switched Copilot on, you are on path B or C, and every lesson still works. The reason to record it is that later lessons ask you to paste material in or point at an open file, and knowing which applies to you saves confusion.",
+          "bullets": [
+            "Path A: Copilot inside the Microsoft 365 apps, licence enabled by IT.",
+            "Path B: a chat AI in a browser beside your documents.",
+            "Path C: free tiers only — still completes every lesson.",
+            "Record what you actually have, not what you wish you had."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Decision two: your reusable brief",
+          "body": "Take the four-part brief from the previous lesson and write a version you can keep. Audience, outcome, constraints, material, and the instruction to ask you a question before writing. Save it somewhere you can reach in seconds — a note, a document, a pinned message. The point is that you stop composing a brief from nothing each time and start editing one that already works.",
+          "bullets": [
+            "Keep all four parts plus the ask-me-first instruction.",
+            "Save it where you can paste it in seconds.",
+            "Edit it per task rather than rewriting from scratch."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The habits worth carrying forward",
+          "body": "Three things from this module matter more than the rest. AI can invent figures and quotes, so anything you rely on gets verified against a real source before it reaches anyone else. What Copilot can see depends on what your organisation enabled and indexed, so a missing file is usually a permissions matter rather than a broken tool. And a tool that asks you questions is doing better work than one that does not.",
+          "bullets": [
+            "Verify any figure or quote against a real source before you use it.",
+            "Copilot only sees what your organisation has enabled and indexed.",
+            "Questions back are a good sign; instant certainty is not."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write your setup note and your reusable brief",
+          "body": "Open a document and write two short sections. First, one line naming your path and what it means in practice — whether you can point at an open file or must paste material in. Second, your reusable four-part brief, written for a task you genuinely repeat at work, ending with the instruction to ask you a question before writing. Then run that brief once on a real task and note whether the first reply was usable. Keep this document; module 2 asks you to reuse the brief on a real Word document, and you will edit it rather than starting again.",
+          "bullets": [
+            "\"Here is the brief I plan to reuse for my weekly team update. Read it and tell me which of the four parts — audience, outcome, constraints, material — is weakest or missing, and ask me one question that would let me fix it.\"",
+            "Asking a tool to critique your brief is faster than discovering the gap in a bad draft.",
+            "Save the document. You will edit this brief in module 2, not rewrite it."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Your organisation has not enabled Copilot. What does that mean for this course?",
+          "options": [
+            "You cannot complete the lessons.",
+            "You are on path B or C, and every lesson still works.",
+            "You must buy a licence to continue.",
+            "Only the Word lessons will work."
+          ],
+          "correctIndex": 1,
+          "explanation": "Paths B and C exist exactly for this, and a free setup completes every lesson. You paste material in rather than pointing at an open file."
+        },
+        {
+          "type": "mcq",
+          "question": "Why record which setup path you are on?",
+          "options": [
+            "It changes how much XP you earn.",
+            "Later lessons assume either an open file or pasted material.",
+            "It unlocks extra modules.",
+            "It tells the tool your job title."
+          ],
+          "correctIndex": 1,
+          "explanation": "Later lessons either point at an open file or ask you to paste material in. Knowing your path removes the confusion before it starts."
+        },
+        {
+          "type": "true-false",
+          "question": "A figure produced by AI should be verified against a real source before you pass it on.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "AI can invent figures and quotes. Anything you rely on in front of a colleague or client must be checked against a real source first."
+        }
+      ]
+    },
+    {
+      "id": "lesson-5-create-professional-documents",
+      "title": "Create Professional Documents",
+      "subtitle": "Settle the argument and the outline before a word of prose is written.",
+      "dayNumber": 5,
+      "moduleId": "module-2",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most bad documents are badly structured, not badly written",
+          "body": "When a document gets sent back, it is rarely because the sentences were poor. It is because the reader could not find the point, or the point did not follow from the evidence. AI will happily write fluent prose around a muddled argument, which produces something that reads well and persuades nobody. So the order of work matters: argument, then outline, then prose.",
+          "stat": "3 stages",
+          "statLabel": "argument, outline, then prose"
+        },
+        {
+          "type": "content",
+          "headline": "Stage one: settle the argument in one sentence",
+          "body": "Before any drafting, write the single sentence the document exists to land — what you want the reader to conclude or approve. If you cannot write it, the document is not ready to be drafted and no amount of polish will fix that. Ask the tool to challenge that sentence: whether it actually follows from your material, and what a sceptical reader would push back on first.",
+          "bullets": [
+            "One sentence: what should the reader conclude or approve?",
+            "Ask the tool to challenge whether your material really supports it.",
+            "If the sentence will not form, the document is not ready to draft."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Stage two: agree the outline before the prose",
+          "body": "Give the tool your rough material — notes, bullets, a messy email chain — and ask for an outline only, with the purpose of each section stated. Reviewing an outline takes a minute and moving a section costs nothing; discovering the same problem in four pages of finished prose costs a rewrite. Correct the outline until the shape is right, and only then ask for the writing.",
+          "bullets": [
+            "Ask for headings and the job of each section, not prose.",
+            "Fix the shape while it is cheap to move things.",
+            "Only when the outline is right, ask it to draft."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Stage three: draft, then verify against your material",
+          "body": "Once the outline is agreed, have it draft section by section from your material. Then read the draft against your source with one question in mind: is every figure, name, date and commitment actually in what you supplied? A confident sentence containing an invented number is far more damaging than an awkward one, because nobody reading it can tell the difference.",
+          "bullets": [
+            "Draft from your material, section by section.",
+            "Check every figure, name, date and commitment against the source.",
+            "Delete or query anything you cannot trace back to your material.",
+            "Fluent prose is not evidence that the content is correct."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build an executive-ready page from rough material",
+          "body": "Take some genuinely messy material you already have — meeting notes, a long email thread, a list of bullets. Write the one-sentence argument first. Then ask for an outline only, correct it, and only then ask for the prose. Finish by checking every fact in the draft against your original material, and note anything the draft asserted that your source does not actually support.",
+          "bullets": [
+            "\"Here are my rough notes. Do not write any prose yet. First tell me the single sentence you think this document is arguing, then give me a section outline with the purpose of each section in one line. Ask me one question if the argument is unclear.\"",
+            "Correct the outline before asking for prose — moving a section is free, rewriting pages is not.",
+            "When the draft arrives, check each figure and commitment against your notes before you send it anywhere."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should you settle before asking for any prose?",
+          "options": [
+            "The font and page layout",
+            "The one-sentence argument, then the outline",
+            "The document length in pages",
+            "Which tool you will use"
+          ],
+          "correctIndex": 1,
+          "explanation": "Argument first, then outline, then prose. Fixing the shape is cheap at outline stage and expensive once pages are written."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is fluent AI prose a risk in a work document?",
+          "options": [
+            "It is always too long for a manager.",
+            "It reads convincingly even when a figure has been invented.",
+            "It cannot use headings.",
+            "It only works with a paid licence."
+          ],
+          "correctIndex": 1,
+          "explanation": "Fluency is not accuracy. A confident sentence with an invented figure is harder to catch than an awkward one, so facts must be traced back to your material."
+        },
+        {
+          "type": "true-false",
+          "question": "If you cannot write the document's argument in one sentence, it is not ready to be drafted.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The one-sentence argument is the test of whether the thinking is done. Drafting around a muddled argument produces prose that persuades nobody."
+        }
+      ]
+    },
+    {
+      "id": "lesson-6-rewrite-reshape-retarget",
+      "title": "Rewrite, Reshape, Retarget",
+      "subtitle": "Change the audience, length or tone without changing what is true.",
+      "dayNumber": 6,
+      "moduleId": "module-2",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One document, several audiences",
+          "body": "The same content often has to reach a specialist, a manager and a client, and each needs a different version. Reshaping an existing draft is one of the things AI does genuinely well — and it is also where the most dangerous silent error in this whole course happens, because shortening a document is exactly when a careful, uncertain statement quietly becomes a confident one.",
+          "stat": "3 dials",
+          "statLabel": "audience, length and tone"
+        },
+        {
+          "type": "content",
+          "headline": "The three dials, named separately",
+          "body": "Audience changes how much background you assume and which details matter. Length changes what survives the cut. Tone changes register — formal, plain, warm — without changing meaning. Turn them one at a time and say which you are turning. Asking vaguely to \"improve\" a draft invites all three to move at once, and you lose track of what actually changed.",
+          "bullets": [
+            "Audience: how much background to assume, and which details matter to them.",
+            "Length: what survives, and what gets dropped entirely.",
+            "Tone: register only — the facts must not move.",
+            "Name the dial you are turning instead of asking it to \"improve\" the draft."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The hedge is not padding",
+          "body": "This is the part to remember. \"Early data suggests we may see an improvement\" is a careful sentence: it says the evidence is thin. Ask for something shorter and punchier and it comes back as \"we will see an improvement\", which is a different and stronger claim. The rewrite dropped the hedge as though it were filler. So state the rule in your brief every time: a hedged finding must stay hedged, and a rewritten sentence must not gain confidence the evidence does not support.",
+          "bullets": [
+            "Words like may, suggests, early, preliminary and approximately carry meaning.",
+            "Shortening is when they are most likely to disappear.",
+            "Tell the tool explicitly to preserve uncertainty when it rewrites.",
+            "Read the rewrite for claims that got stronger, not just for length."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Check the rewrite against the original, not against itself",
+          "body": "A rewritten draft reads well on its own terms, which is exactly why it needs comparing with the version it came from. Put them side by side and look for three things: a claim that got stronger, a condition that got dropped, and a fact that appeared out of nowhere. A rewrite should never contain a figure the original did not have — if it does, it was invented rather than carried across.",
+          "bullets": [
+            "Compare side by side with the original, not in isolation.",
+            "Look for claims that hardened, conditions that vanished, facts that appeared.",
+            "A new figure in a rewrite was invented, not carried across."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Reshape a real draft for a different reader",
+          "body": "Take something you have already written for one audience and reshape it for another — a technical note for a manager, or a long update cut to a short one. Name the single dial you are turning. Then compare the two versions line by line and specifically hunt for hedges that vanished and claims that got stronger. Note anything the new version asserts more confidently than the original did.",
+          "bullets": [
+            "\"Rewrite this update for a senior manager who has not followed the detail, in under 150 words. Keep the tone plain and factual. Preserve every hedge and condition exactly as strongly as the original states it — do not make any finding sound more certain than it is — and do not add any figure that is not already in my text. Then list anything you dropped.\"",
+            "Asking it to list what it dropped is how you catch a condition quietly disappearing.",
+            "Read the two versions side by side and mark any sentence that now sounds more certain."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the main risk when you ask AI to shorten a careful document?",
+          "options": [
+            "The formatting will break.",
+            "A hedged statement can become a confident claim.",
+            "It will always be too short.",
+            "It will refuse without a paid licence."
+          ],
+          "correctIndex": 1,
+          "explanation": "Shortening is exactly where hedges get dropped as if they were padding, leaving a stronger claim than the evidence supports."
+        },
+        {
+          "type": "mcq",
+          "question": "A rewrite contains a figure that is not in your original. What does that tell you?",
+          "options": [
+            "It found the figure in your other files.",
+            "It was invented, not carried across.",
+            "The original was incomplete.",
+            "The tone setting was too formal."
+          ],
+          "correctIndex": 1,
+          "explanation": "A rewrite works only from what you gave it. A figure that was not in the original was invented and must be removed or verified."
+        },
+        {
+          "type": "true-false",
+          "question": "Words like \"may\", \"suggests\" and \"preliminary\" should survive a rewrite unchanged.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Those words state how strong the evidence is. Removing them changes the claim, even though the rewrite reads more cleanly."
+        }
+      ]
+    },
+    {
+      "id": "lesson-7-read-a-long-document-fast",
+      "title": "Read a Long Document Fast",
+      "subtitle": "What it says, what it asks of you, and what it carefully leaves out.",
+      "dayNumber": 7,
+      "moduleId": "module-2",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The document you did not write",
+          "body": "A contract, a report, a policy, a forty-page proposal — you need to know what it means for you, quickly. AI is genuinely good at this, and it is also where a claim most easily loses its evidence: you repeat something from the summary, it turns out the document never said it, and there was no signal anywhere that the summary had gone beyond its source.",
+          "stat": "3 questions",
+          "statLabel": "to ask of any long document"
+        },
+        {
+          "type": "content",
+          "headline": "Ask three questions, not for \"a summary\"",
+          "body": "A generic summary gives you a shorter version of everything, which is rarely what you need. Ask instead: what does this actually say, what does it ask of me or my team, and what does it leave unresolved? The second question is the one that produces action, and the third is the one that protects you, because the gaps in a document are usually where the risk sits.",
+          "bullets": [
+            "What does it actually say — the argument, not every detail?",
+            "What does it ask of me or my team, and by when?",
+            "What does it leave unresolved or unstated?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Ask for the source of every claim",
+          "body": "Tell the tool to point at where each claim comes from — a section, a page, a clause. This changes the task from producing something plausible to locating something real, and it makes an unsupported line obvious because there is nothing to point at. Then do the part that matters: check every claim back against the source document before you repeat any of it to anyone.",
+          "bullets": [
+            "Ask it to cite the section, page or clause for each point.",
+            "A claim with nothing to point at is the one to distrust.",
+            "Read the cited passage yourself for anything you will act on or repeat.",
+            "Cited does not mean correct — the citation still has to be right."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Silence is information",
+          "body": "What a document does not address is often more important than what it does. A proposal that never mentions who owns support after launch, or a report with no downside case, is telling you something. So ask explicitly, and note what the document does not say — an omission read as agreement is how a summary misleads you without stating anything false at all.",
+          "bullets": [
+            "Ask directly what the document is silent on.",
+            "Missing owners, dates, costs and downside cases are the usual gaps.",
+            "An omission read as agreement misleads without stating anything false."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Work through a real long document",
+          "body": "Take a genuinely long document you need to understand — a report, a proposal, a policy. Ask the three questions rather than requesting a summary, and require a section or page reference for every claim. Then open the document and read two or three of the cited passages yourself to confirm they say what the summary claims. Finish by listing what the document never addresses.",
+          "bullets": [
+            "\"Here is a long document I did not write. Tell me three things: what it actually argues, what it asks of me or my team and by when, and what it leaves unresolved. Give a section or page reference for every point. Then list the questions this document does not answer — missing owners, dates, costs or risks.\"",
+            "Spot-check two or three cited passages yourself; a reference is only useful if it is real.",
+            "The list of unanswered questions is usually the most valuable output — those are your next actions."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Which three questions beat asking for \"a summary\"?",
+          "options": [
+            "How long, how old, who wrote it",
+            "What it says, what it asks of me, what it leaves unresolved",
+            "Which app, which licence, which format",
+            "Title, author, page count"
+          ],
+          "correctIndex": 1,
+          "explanation": "Those three produce understanding, action and risk. A generic summary just gives you a shorter version of everything."
+        },
+        {
+          "type": "mcq",
+          "question": "Why ask for a section or page reference for each claim?",
+          "options": [
+            "It makes the summary longer.",
+            "It makes an unsupported claim obvious and lets you check the source.",
+            "It is required by the tool.",
+            "It improves the writing style."
+          ],
+          "correctIndex": 1,
+          "explanation": "A claim with nothing to point at is the one to distrust, and a reference lets you read the passage yourself before repeating it."
+        },
+        {
+          "type": "true-false",
+          "question": "What a document fails to mention can matter as much as what it states.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Missing owners, dates, costs and downside cases are where the risk usually sits. An omission read as agreement misleads without stating anything false."
+        }
+      ]
+    },
+    {
+      "id": "lesson-8-module-2-checkpoint",
+      "title": "Module 2 Checkpoint: A Document You Would Send",
+      "subtitle": "Produce one real document and verify it against its source.",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From rough material to something you would actually send",
+          "body": "Module 2 covered building a document from messy material, reshaping one for a different reader, and getting through a long document you did not write. This checkpoint asks for one finished piece of your own work rather than notes about the technique — a document you would genuinely send, checked against the material it came from.",
+          "stat": "3 skills",
+          "statLabel": "drafting, reshaping and reading critically"
+        },
+        {
+          "type": "content",
+          "headline": "The order that does the work",
+          "body": "Argument, outline, prose — in that order, every time. The one-sentence argument tests whether your thinking is finished. The outline is where structural problems are cheap to fix. Prose comes last, because fluent writing wrapped around a muddled argument reads well and persuades nobody. Most documents that come back for rework were drafted before the argument was settled.",
+          "bullets": [
+            "Write the one-sentence argument before anything else.",
+            "Correct the outline while moving sections is still free.",
+            "Ask for prose only once the shape is agreed."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The two checks that protect you",
+          "body": "First, every figure, name, date and commitment must trace back to your source material — anything that cannot be traced was invented and comes out. Second, when you shorten or retarget, compare the new version against the original and hunt for claims that got stronger. Those two checks catch nearly everything that would otherwise embarrass you in front of a manager or a client.",
+          "bullets": [
+            "Trace every figure, name, date and commitment to your material.",
+            "Compare a rewrite against the original, not on its own terms.",
+            "Watch for hedges that vanished and conditions that were dropped.",
+            "Anything untraceable comes out of the document."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where these habits go next",
+          "body": "The same discipline carries into the rest of the course. Module 3 works with spreadsheets and slides, where an unverified figure is even easier to present convincingly. Module 4 handles email, where a dropped condition changes what you have committed to in writing. If you want to go deeper on Excel or PowerPoint specifically, we have separate courses for each — this course is about connecting the apps into one workflow.",
+          "bullets": [
+            "Spreadsheets and slides make an unverified figure look authoritative.",
+            "In email, a dropped condition changes what you have committed to.",
+            "Separate Excel and PowerPoint courses exist if you want more depth."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Produce and verify one real document",
+          "body": "Choose a document you genuinely need: build one from rough material, or reshape one you have already written for a different reader. Follow the order — one-sentence argument, then outline you correct, then prose. When the draft is done, run both checks properly. Go through it line by line and confirm every figure, name, date and commitment appears in your source material, removing anything that does not. If it is a rewrite, put it beside the original and mark any sentence that now sounds more certain than it did. Finally, write one line on what your source material does not cover, because that gap is usually your next piece of work.",
+          "bullets": [
+            "\"Here is my finished draft and the source notes it was built from. Go through the draft line by line and list every figure, name, date and commitment that does not appear in my source material. Then list any sentence that states something more confidently than my notes support. Do not rewrite anything — just show me the list.\"",
+            "Asking for a list rather than a rewrite keeps you in control of what changes.",
+            "Keep the finished document; it is the proof this module worked, not your notes about it."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the correct order of work for a document?",
+          "options": [
+            "Prose, then outline, then argument",
+            "Argument, then outline, then prose",
+            "Outline, then prose, then argument",
+            "Whichever order the tool suggests"
+          ],
+          "correctIndex": 1,
+          "explanation": "Argument, outline, then prose. Structural problems are cheap to fix at outline stage and expensive once pages exist."
+        },
+        {
+          "type": "mcq",
+          "question": "A commitment in your draft does not appear anywhere in your source notes. What should happen?",
+          "options": [
+            "Leave it — it reads well.",
+            "It comes out, or is verified against a real source first.",
+            "Reword it to sound less certain.",
+            "Move it to the end of the document."
+          ],
+          "correctIndex": 1,
+          "explanation": "Anything that cannot be traced to your material was invented. It comes out, or you verify it against a real source before it stays."
+        },
+        {
+          "type": "true-false",
+          "question": "When comparing a shortened version with the original, you should look for claims that became stronger.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Shortening is where hedges and conditions get dropped, leaving a claim the evidence does not support. Comparing side by side is how you catch it."
+        }
+      ]
+    },
+    {
+      "id": "lesson-9-understand-any-spreadsheet",
+      "title": "Understand Any Spreadsheet",
+      "subtitle": "Work out what a workbook actually contains before you trust a single figure in it.",
+      "dayNumber": 9,
+      "moduleId": "module-3",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The workbook somebody else built",
+          "body": "You are sent a spreadsheet and asked what it means. There are six sheets, columns with names that meant something to whoever made them, and numbers that may be typed in or may be calculated from somewhere else entirely. Answering before you understand the structure is how people quote a forecast as though it were an actual result. So the first job is not analysis — it is working out what you are looking at.",
+          "stat": "3 questions",
+          "statLabel": "before you trust a single figure"
+        },
+        {
+          "type": "content",
+          "headline": "Ask what it contains, not what it means",
+          "body": "Start with structure. What does each sheet represent, what does one row stand for, and what is each column actually measuring? Then the question that changes how you read everything else: where do the typed-in inputs end and the calculated cells begin? A number that looks like a result is often an assumption somebody entered by hand, and the two carry completely different weight in a decision.",
+          "bullets": [
+            "What does one row represent — a customer, a day, an order, a region?",
+            "Which columns are entered by hand and which are calculated?",
+            "Which cells feed the totals you are being asked about?",
+            "What period does the sheet cover, and is any of it incomplete?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "It can only work from what you actually gave it",
+          "body": "AI can only work from data you actually provided. Describe a range in words rather than pasting it, or point at a file the tool cannot open, and you will still get a fluent, confident description — of nothing. There is no error and no warning, because from the tool's side nothing went wrong. So before you believe a single sentence, confirm that the numbers it is discussing are the numbers you supplied.",
+          "bullets": [
+            "Paste the actual rows, or work in a tool that can genuinely read the file.",
+            "A described range produces a description of something that was never seen.",
+            "Ask it to restate the columns and the row count back to you as a check.",
+            "If its restatement does not match your sheet, nothing after that is usable."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What you may not paste, and what to read twice",
+          "body": "Spreadsheets carry salary, customer and commercial data. Before anything goes into an external tool, check what your organisation allows — many permit an internal tool and forbid a public one for exactly this data. Where the analysis does not need identity, strip or anonymise those columns first: a trend rarely needs names attached. Then, for anything you will actually quote, read the figure back out of the spreadsheet itself rather than from the reply.",
+          "bullets": [
+            "Check what your organisation allows before pasting work data anywhere.",
+            "Strip or anonymise names, salaries and customer identifiers first.",
+            "A trend almost never needs identifying columns to be visible.",
+            "Read every figure you will quote back out of the sheet, not out of the reply."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Interrogate a real workbook before analysing it",
+          "body": "Take a spreadsheet you have been sent and do not understand well. Remove or anonymise anything identifying, then ask it to explain the structure rather than the meaning — sheets, what a row represents, which columns are entered and which are calculated. Check its restatement against the real sheet before you go any further, and write down the two things you now know that you did not before you started.",
+          "bullets": [
+            "\"Here is a spreadsheet I did not build. Do not analyse it yet. First tell me what one row represents, what each column appears to measure, and which columns look entered by hand versus calculated from other cells. Restate the column names and the number of rows back to me so I can check you are reading what I actually sent. Then list anything about the structure you are unsure of.\"",
+            "Asking it to restate the columns is how you catch it describing data it never received.",
+            "Anonymise before you paste — the structure question never needs real names."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should you establish first in an unfamiliar workbook?",
+          "options": [
+            "Which chart type suits the data",
+            "What a row represents and which columns are entered versus calculated",
+            "How many sheets it has",
+            "Who last saved the file"
+          ],
+          "correctIndex": 1,
+          "explanation": "A typed-in assumption and a calculated result look identical in a cell but carry completely different weight in a decision, so the structure has to be settled first."
+        },
+        {
+          "type": "mcq",
+          "question": "You describe your data in words instead of pasting it. What happens?",
+          "options": [
+            "The tool refuses until you attach the file.",
+            "You get a confident description of data it never saw, with no warning.",
+            "It reads the file from your computer anyway.",
+            "It returns an error message."
+          ],
+          "correctIndex": 1,
+          "explanation": "AI can only work from data you actually provided. Nothing fails visibly — you simply get fluent analysis of something that was never there."
+        },
+        {
+          "type": "true-false",
+          "question": "You should check what your organisation allows before pasting work data into an external AI tool.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Spreadsheets routinely hold salary, customer and commercial data. Many organisations permit an internal tool and forbid a public one, and identifying columns should be stripped where the analysis does not need them."
+        }
+      ]
+    },
+    {
+      "id": "lesson-10-find-the-insight",
+      "title": "Find the Insight, Not Just the Summary",
+      "subtitle": "The difference between describing what the numbers did and knowing what it means.",
+      "dayNumber": 10,
+      "moduleId": "module-3",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"Sales rose then fell\" is not a finding",
+          "body": "Ask for an analysis and you will usually get a description: this went up, that went down, the total was this. Everyone in the room can already see that from the chart. An insight says what changed, for whom, and what it implies you should do — and it is the only part worth taking to a meeting. Getting there means asking a different question, and then doing the work the answer cannot do for you.",
+          "stat": "3 steps",
+          "statLabel": "explain, test, then verify"
+        },
+        {
+          "type": "content",
+          "headline": "Ask for explanations and their conditions",
+          "body": "Rather than \"what does this data show\", ask for the candidate explanations for the movement and, crucially, what would have to be true for each one to hold. That second half turns a plausible story into something testable: if the explanation requires a particular segment to have shrunk, you can go and look. Then ask the tool to challenge its own favourite explanation and tell you what evidence would rule it out.",
+          "bullets": [
+            "Ask for several candidate explanations, not one confident answer.",
+            "For each, ask what would have to be true for it to hold.",
+            "Then check those conditions against the data yourself.",
+            "Ask it to argue against its own best explanation and say what would disprove it."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Correlation is not cause",
+          "body": "Two lines moving together is a question, not a finding. Spend late in a quarter and revenue rises late in a quarter — the pattern is real and the causal claim behind it may be nonsense, because the quarter end drives both. AI will state these relationships fluently because the pattern genuinely exists in the numbers. Presenting one as a cause is how a team spends money on the wrong thing and only finds out two quarters later.",
+          "bullets": [
+            "A pattern in two columns is a question to investigate, not a conclusion.",
+            "Ask what else could produce the same pattern, including timing and seasonality.",
+            "Say \"moves with\" in your slide unless you can actually justify \"causes\".",
+            "A confident causal sentence is the easiest thing in an analysis to get wrong."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Verify the numbers, then state the limits",
+          "body": "Two habits make an analysis safe to present. First, recalculate every figure in the spreadsheet before it leaves your desk — a total that only ever appeared in a chat reply has been checked by nobody. Second, mark what the data does not show: a missing period, an excluded region, a group too small to lean on. Naming a limit strengthens your position, because the alternative is a colleague finding it in front of everyone.",
+          "bullets": [
+            "Recalculate every figure in the spreadsheet, in the sheet itself.",
+            "Mark what the data does not show — gaps, exclusions, tiny samples.",
+            "A figure that exists only in a reply has been verified by nobody.",
+            "Stating a limit yourself is stronger than having it found for you."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Turn a description into a defensible insight",
+          "body": "Take a real set of numbers and push past the description. Ask for candidate explanations with the conditions each one needs, then go into the sheet and test the most likely one. Recalculate every figure you intend to quote, and write one line on what the data does not cover. Finish with a single sentence stating the finding and what you would do about it — that sentence is the output, not the analysis around it.",
+          "bullets": [
+            "\"Here is my data. Do not just summarise what it shows. Give me three possible explanations for the main movement, and for each one tell me what would have to be true in the data for it to hold. Then tell me which relationships here are only patterns that move together rather than something you can call a cause, and list what this data does not cover.\"",
+            "Test the conditions in the spreadsheet yourself — that is the step that turns a story into a finding.",
+            "Write the one-sentence finding and the action last; everything before it is working."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What turns a description of data into an insight?",
+          "options": [
+            "A larger chart",
+            "What changed, for whom, and what it implies you should do",
+            "A longer summary of every column",
+            "More decimal places on the totals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Everyone can already see that a line went up. The finding is what changed, for whom, and what it implies — that is the only part worth taking to a meeting."
+        },
+        {
+          "type": "mcq",
+          "question": "Two columns move together in your data. What have you found?",
+          "options": [
+            "A cause you can present.",
+            "A question to investigate — something else may drive both.",
+            "Proof the first column drives the second.",
+            "A reason to remove one column."
+          ],
+          "correctIndex": 1,
+          "explanation": "Correlation is not cause. A quarter end can drive both spend and revenue, so the pattern is real while the causal claim behind it is wrong."
+        },
+        {
+          "type": "true-false",
+          "question": "A figure that appeared only in an AI reply still needs recalculating in the spreadsheet before you present it.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "A total that exists only in a chat reply has been checked by nobody. Recalculating it in the sheet is what makes it safe to put in front of a manager or a client."
+        }
+      ]
+    },
+    {
+      "id": "lesson-11-insight-to-slides",
+      "title": "Turn an Insight into Slides",
+      "subtitle": "One finding per slide, stated in the headline, made visible by an honest chart.",
+      "dayNumber": 11,
+      "moduleId": "module-3",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The headline is the finding",
+          "body": "Most slides are titled with a topic — \"Regional performance\" — which tells the room nothing and makes them read the chart to guess what you meant. A slide whose headline states the finding does the opposite: the chart is then simply the evidence for a claim already made. One finding per slide, said in the title, shown by the picture. That structure is why some decks land in ten minutes and others take an hour.",
+          "stat": "1 finding",
+          "statLabel": "per slide, stated in the title"
+        },
+        {
+          "type": "content",
+          "headline": "Write the title, then choose the chart",
+          "body": "Decide the sentence first, then pick the picture that makes it visible — a comparison, a trend over time, a share of a whole. If you cannot say what the chart is meant to prove, no chart type will rescue the slide. Ask the tool to draft slide titles as full sentences from your findings, then to say which of them are actually supported by the numbers you supplied and which are still assertions.",
+          "bullets": [
+            "Title as a full sentence stating the finding, not a topic label.",
+            "Choose the chart that makes that specific sentence visible.",
+            "One finding per slide — two competing claims halve the impact of both.",
+            "Ask which of your titles the data actually supports, and which do not."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Never truncate an axis to make a change look bigger",
+          "body": "Starting a value axis part way up turns a modest movement into a cliff. It is the most common way a chart misleads without a single false number on it, and once someone notices, every other figure in your deck comes under suspicion. Unless you truncate deliberately and label the break clearly, the axis starts at zero. If the real change is small, say it is small — a small change you can defend beats a dramatic one you cannot.",
+          "bullets": [
+            "The value axis starts at zero unless you label a break clearly.",
+            "A truncated axis misleads with no false number anywhere on the slide.",
+            "One noticed distortion puts every other figure in the deck in doubt.",
+            "A small change stated plainly is stronger than a dramatic one you cannot defend."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Label the source, and never fake a photograph",
+          "body": "Every chart carries its source and the period it covers, in small text on the slide. It answers the first question anyone senior asks, and a deck sent onward without you is otherwise unreadable. The same honesty applies to images: never present an AI-generated image as a photograph of something real — a product, a site, a person, a result. Generated illustration is fine and useful; passing it off as documentary evidence is not.",
+          "bullets": [
+            "Every chart carries its source and the period it covers.",
+            "Assume the deck will be forwarded without you there to explain it.",
+            "Never present an AI-generated image as a photograph of a real thing.",
+            "Illustration is fine; documentary evidence it is not."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build one slide that states its own finding",
+          "body": "Take an insight you verified in the previous lesson and build a single slide for it. Write the title as a full sentence stating the finding, choose the chart that makes that sentence visible, and label the source and period. Then check the axis honestly: does it start at zero, and if not, is the break clearly marked? Finish by asking someone to tell you what the slide claims without you saying a word.",
+          "bullets": [
+            "\"Here is my verified finding and the numbers behind it. Write three possible slide titles as full sentences that state the finding rather than naming the topic, and for each one say which chart type would make that exact sentence visible. Then tell me which of these titles my numbers do not actually support.\"",
+            "Check the axis before you present: start at zero, or label the break clearly.",
+            "Put the source and the period on the slide — the deck will travel without you."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should a slide title do?",
+          "options": [
+            "Name the topic of the chart",
+            "State the finding as a full sentence",
+            "Give the source of the data",
+            "List the columns shown"
+          ],
+          "correctIndex": 1,
+          "explanation": "A topic label makes the room read the chart to guess your point. A title stating the finding turns the chart into evidence for a claim you have already made."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is a truncated value axis a problem?",
+          "options": [
+            "It makes the chart harder to render.",
+            "It exaggerates a change without a single false number on the slide.",
+            "It is not supported in PowerPoint.",
+            "It always makes the change look smaller."
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting the axis part way up turns a modest movement into a cliff. Nothing on the slide is factually wrong, and once someone notices, every other figure comes under suspicion."
+        },
+        {
+          "type": "true-false",
+          "question": "An AI-generated image may be presented as a photograph if it looks realistic.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Generated illustration is useful, but passing it off as documentary evidence of a real product, site or result misrepresents what you are showing the room."
+        }
+      ]
+    },
+    {
+      "id": "lesson-12-module-3-checkpoint",
+      "title": "Module 3 Checkpoint: One Insight, One Slide",
+      "subtitle": "Take a real spreadsheet all the way to a slide you would put in front of a manager.",
+      "dayNumber": 12,
+      "moduleId": "module-3",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "From an unfamiliar workbook to a slide that lands",
+          "body": "Module 3 covered three things: working out what a spreadsheet actually contains, finding a finding rather than a description, and putting it on a slide honestly. This checkpoint asks you to do all three on one real piece of work, and to finish holding a slide — not notes about how slides should be built.",
+          "stat": "3 skills",
+          "statLabel": "read, analyse, then present"
+        },
+        {
+          "type": "content",
+          "headline": "The order, and where it usually goes wrong",
+          "body": "Structure first, then the finding, then the slide. Most mistakes happen because someone analyses before they know which columns are entered by hand and which are calculated, and ends up presenting an assumption as a result. The other common failure is stopping at the description — a slide that says a number went up gives the room nothing to decide.",
+          "bullets": [
+            "Settle the structure before you analyse anything.",
+            "An entered assumption and a calculated result look identical in a cell.",
+            "Push past the description to what changed, for whom, and what to do."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The three checks that protect you",
+          "body": "Recalculate every figure in the spreadsheet itself. Say \"moves with\" rather than \"causes\" unless you can genuinely justify the stronger claim. And name what the data does not cover, because a limit you state yourself is far cheaper than one a colleague finds in the room. These are also the three things most likely to be quietly lost when you are in a hurry.",
+          "bullets": [
+            "Every quoted figure recalculated in the sheet, not taken from a reply.",
+            "No causal claim you cannot defend if someone asks how you know.",
+            "Gaps, exclusions and small samples named on the slide or in the notes."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to go deeper, and what this course is for",
+          "body": "This course is about connecting the apps into one workflow, so Excel and PowerPoint get one module each rather than a whole curriculum. If you want real depth in either, we have separate courses: Master Claude AI for Excel goes much further into formulas, cleaning and analysis, and Master AI for PowerPoint goes much further into design, structure and delivery. The habits here carry into both.",
+          "bullets": [
+            "Master Claude AI for Excel — formulas, cleaning messy data and deeper analysis.",
+            "Master AI for PowerPoint — deck structure, visual storytelling and delivery.",
+            "This course connects the apps; those two go deep on one each."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Take one spreadsheet all the way to one slide",
+          "body": "Choose a real spreadsheet that matters to your work. First establish the structure: what a row represents, and which columns are entered rather than calculated. Then find one insight — not a description — and test the explanation behind it against the data. Recalculate every figure you intend to quote, in the sheet itself. Finally build a single slide whose title states the finding as a full sentence, with a chart that makes it visible, the source and period labelled, and the axis honest. Write one line on what the data does not cover, and keep the slide: it is the proof this module worked.",
+          "bullets": [
+            "\"Here is a spreadsheet and the finding I believe it supports. Check my reasoning: tell me which of my claims the data actually supports, which are only patterns moving together rather than a cause, and what this data does not cover. Then suggest one slide title that states my finding as a full sentence. Do not invent any figure that is not in what I sent you.\"",
+            "Recalculate every quoted figure in the sheet before it goes anywhere near the slide.",
+            "Keep the finished slide, not your notes about how to build one."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should you establish before analysing a workbook you did not build?",
+          "options": [
+            "Which chart you will end up using",
+            "What a row represents and which columns are entered versus calculated",
+            "How large the file is",
+            "Who else has opened it"
+          ],
+          "correctIndex": 1,
+          "explanation": "Analysing first is how an assumption somebody typed in gets presented as a calculated result, because in a cell the two look identical."
+        },
+        {
+          "type": "mcq",
+          "question": "Your finding rests on two columns that move together. How should the slide word it?",
+          "options": [
+            "State it as a cause — the pattern is clear.",
+            "Say they move together, unless you can justify the stronger claim.",
+            "Leave the relationship off the slide entirely.",
+            "Present both charts and let the room decide."
+          ],
+          "correctIndex": 1,
+          "explanation": "Correlation is not cause. Wording it honestly protects you, and something else driving both is the usual explanation for a pattern like that."
+        },
+        {
+          "type": "true-false",
+          "question": "Naming what your data does not cover weakens your position in the room.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A limit you state yourself is far cheaper than one a colleague finds in front of everyone, and it makes the rest of your analysis more credible rather than less."
+        }
+      ]
+    },
+    {
+      "id": "lesson-13-take-control-of-your-inbox",
+      "title": "Take Control of Your Inbox",
+      "subtitle": "Triage by what the sender wants from you, and keep the priority decision for yourself.",
+      "dayNumber": 13,
+      "moduleId": "module-4",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "An inbox is a queue of other people's requests",
+          "body": "Most people work an inbox by reading it top to bottom, which treats every message as equally worth their attention. It is not a reading task, it is a deciding task: each message either needs a decision from you, an action, a brief acknowledgement, or nothing at all. Once you sort by what is being asked rather than by who sent it, a backlog that looked like two hours of reading becomes a short list of decisions.",
+          "stat": "4 outcomes",
+          "statLabel": "decide, do, delegate or archive"
+        },
+        {
+          "type": "content",
+          "headline": "Sort by what the sender wants from you",
+          "body": "Subject lines describe topics; they rarely say what is required of you. A message titled \"Q3 planning\" might need a decision by Friday or might be a courtesy copy. Ask the tool to group a set of messages by what is being asked of you — a decision, an action, an acknowledgement, or nothing — and to name the specific ask in each one. Inside Outlook, Copilot can do this across the messages it can see. On a free chat tool, paste the subjects and opening lines in and get the same grouping.",
+          "bullets": [
+            "Group by the ask, not by sender, subject or thread length.",
+            "Four outcomes only: decide, do, delegate, archive.",
+            "Make the tool name the specific ask in each message.",
+            "A courtesy copy needs no reply — archive it and move on."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your inbox holds other people's private information",
+          "body": "An inbox is the densest concentration of other people's personal data you handle: a colleague's health, someone's salary, customer records, legal matters, a complaint about a third person. Pasting a thread into a tool your organisation has not sanctioned is a disclosure you cannot take back, and you would be making it on the strength of a lesson. So before anything leaves your mailbox: check what your organisation allows, and remove names and personal details before pasting into any tool that sits outside your organisation's own systems.",
+          "bullets": [
+            "Check what your organisation allows before pasting a work thread anywhere.",
+            "Remove names and personal details before pasting into an outside tool.",
+            "Copilot inside your tenant is a different question from a public chat tool.",
+            "A disclosure cannot be withdrawn once you have pressed send."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI cannot judge what matters most",
+          "body": "Grouping and summarising are mechanical, and a tool is good at both. Priority is not. AI cannot judge what matters most because importance depends on context it cannot see: which client is about to leave, who is covering for whom, which quiet request comes from someone whose patience has run out. A short, mild message can be the most urgent thing in your inbox. Let the tool do the sorting and keep the ranking decision yourself.",
+          "bullets": [
+            "AI cannot judge what matters most — importance depends on context it cannot see.",
+            "A message it ranks low can be the one that matters most today.",
+            "Use it to group and summarise; you decide the order of play.",
+            "Read the whole message before acting on any summary of it."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Turn a real backlog into a triage list",
+          "body": "Open your inbox and take the most recent fifteen to twenty messages. First check what your organisation allows, and strip out names and personal details if you are working outside your own systems. Then group them by what is being asked of you rather than by sender, and produce a written triage list with each message under one of four headings: decide, do, delegate, archive. Finish by ordering the \"decide\" pile yourself — that ranking is your judgement, not the tool's — and act on the top item before you close the lesson.",
+          "bullets": [
+            "\"Here are the subject lines and opening lines from my inbox. Group them by what is being asked of me — a decision, an action, something to delegate, or nothing at all — and for each one state the specific ask in a single short sentence. Do not rank them by importance and do not invent any detail that is not in what I sent you.\"",
+            "Strip names and personal details first if the tool sits outside your organisation.",
+            "Order the decide pile yourself — that judgement is not the tool's to make."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What should you group a backlog of messages by?",
+          "options": [
+            "Sender seniority",
+            "What is being asked of you",
+            "Thread length",
+            "The order they arrived in"
+          ],
+          "correctIndex": 1,
+          "explanation": "A subject line names a topic and rarely says what is required of you. Grouping by the ask turns a long reading task into a short list of decisions and actions."
+        },
+        {
+          "type": "mcq",
+          "question": "Before pasting a work thread into a public chat tool, what must you do?",
+          "options": [
+            "Nothing, email is already public",
+            "Check what your organisation allows and remove names and personal details",
+            "Forward it to yourself first",
+            "Ask the tool to keep it confidential"
+          ],
+          "correctIndex": 1,
+          "explanation": "An inbox holds other people's personal data, and a disclosure cannot be withdrawn once it is made. Checking what is permitted and stripping identifying detail are the two steps that protect you."
+        },
+        {
+          "type": "true-false",
+          "question": "If AI ranks a message as low priority, you can safely leave it until later.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Priority depends on context the tool cannot see — who is covering for whom, which client is close to leaving, whose patience has run out. A mild message can be the most urgent thing you have."
+        }
+      ]
+    },
+    {
+      "id": "lesson-14-summarise-a-long-thread",
+      "title": "Summarise a Long Thread",
+      "subtitle": "Decisions, open questions and what you personally owe — each checked back against the message that said it.",
+      "dayNumber": 14,
+      "moduleId": "module-4",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Forty messages, three things you need",
+          "body": "A thread you have been copied into for a week contains almost nothing you need and three things you cannot afford to miss: what was decided, what is still open, and what you specifically owe. Reading the whole thing to find them is the slow way. Asking for a summary is the fast way, and it is also where a commitment quietly changes shape — so the summary is a starting point to verify, not an answer to act on.",
+          "stat": "3 questions",
+          "statLabel": "decided, still open, owed by you"
+        },
+        {
+          "type": "content",
+          "headline": "Ask for the three things separately",
+          "body": "A single blended paragraph is what makes people re-read the thread anyway, because they cannot tell a firm decision from a suggestion someone made in passing. Ask for three separate lists: decisions reached, questions still open, and actions you personally own with their dates. Requesting your own actions by name matters — a summary written for the whole thread buries your obligation among five other people's.",
+          "bullets": [
+            "Three separate lists: decisions, open questions, your own actions.",
+            "Ask for your actions by name, not the thread's actions in general.",
+            "Every action needs an owner and a date, or it is not an action.",
+            "One blended paragraph makes you re-read the thread anyway."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A summary is where a caveat disappears",
+          "body": "Someone wrote \"we could probably do Thursday if design signs off\" and the summary says \"delivering Thursday\". A condition, an owner and a doubt have all gone, and nothing in the summary looks wrong — which is precisely why nobody catches it. Then you repeat it in a status update and the team is committed to a date nobody promised. So check every decision and date against the message that said it, and hold the rule that a conditional stays conditional: if the original said \"if\" or \"probably\", so does your summary.",
+          "bullets": [
+            "Check every decision and date against the message that said it.",
+            "A conditional stays conditional — \"if design signs off\" is part of the decision.",
+            "A summary that reads cleanly is not the same as one that is accurate.",
+            "Never repeat a date onward until you have seen the message it came from."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "List what the thread never answered",
+          "body": "The risk in a long thread usually sits in what nobody replied to. A question asked on Tuesday and never answered will appear in a summary as though it were settled, or will not appear at all — and an unanswered question read as agreement is how a project proceeds on a consent nobody gave. Ask explicitly for the open items, and keep unanswered things visible under their own heading rather than letting them drop out of the record.",
+          "bullets": [
+            "Ask explicitly for questions raised and never answered.",
+            "Keep unanswered items under their own heading, never merged into decisions.",
+            "Silence is not agreement, however long the thread ran.",
+            "If a date was never confirmed by anyone, record it as unconfirmed."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Summarise a real thread, then verify it",
+          "body": "Find the longest live thread in your inbox and summarise it into three lists: decisions reached, questions still open, and the actions you personally own with dates. Then do the part that matters — open the thread and check every decision and every date against the specific message that said it. Where the original was conditional, put the condition back. Add a short heading for anything asked and never answered, and send that list of open items back to the thread so the gaps become somebody's problem rather than a surprise later.",
+          "bullets": [
+            "\"Here is a long email thread. Give me three separate lists: decisions that were actually reached, questions that were raised and never answered, and the actions I personally own with their dates. Quote the exact sentence each decision came from, keep any conditions such as if or probably intact, and do not invent a date that nobody stated.\"",
+            "Open the thread and verify each decision against the message that said it.",
+            "Send the open questions back to the thread so the gaps are visible to everyone."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why ask for decisions, open questions and your own actions as separate lists?",
+          "options": [
+            "It uses fewer messages",
+            "A blended paragraph hides which items are firm and which you own",
+            "It is the only supported format",
+            "It makes the summary shorter"
+          ],
+          "correctIndex": 1,
+          "explanation": "One paragraph makes you re-read the thread anyway, because you cannot tell a firm decision from a passing suggestion, or your own obligation from somebody else's."
+        },
+        {
+          "type": "mcq",
+          "question": "The thread said \"probably Thursday if design signs off\". What belongs in your summary?",
+          "options": [
+            "Delivering Thursday",
+            "Thursday, subject to design signing off",
+            "Date to be confirmed, no detail needed",
+            "Leave the date out entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "A conditional stays conditional. Dropping the condition commits the team to a date nobody promised, and the summary still reads perfectly well, so nobody notices."
+        },
+        {
+          "type": "true-false",
+          "question": "A question nobody answered in a long thread can be treated as agreed.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Silence is not agreement. An unanswered question read as consent is how a project proceeds on a decision that was never actually made, and the gap only surfaces later."
+        }
+      ]
+    },
+    {
+      "id": "lesson-15-write-better-emails-faster",
+      "title": "Write Better Emails Faster",
+      "subtitle": "Brief by outcome, then read every draft for what it commits you to before you send it.",
+      "dayNumber": 15,
+      "moduleId": "module-4",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A good brief beats a good writer",
+          "body": "Asking for \"a nice email about the delay\" produces something polite and useless. Stating what you need — the outcome, the recipient, the constraint and the tone — produces a draft you can send after one read. The writing was never the slow part; deciding what you actually want was. Brief the outcome and the draft arrives close enough to finished that your job is checking it rather than rewriting it.",
+          "stat": "4 inputs",
+          "statLabel": "outcome, recipient, constraint, tone"
+        },
+        {
+          "type": "content",
+          "headline": "Brief the outcome, not the email",
+          "body": "Say what you want to be true after the message is read: \"I need the figures by Wednesday, I can offer help with the formatting, and this person is already stretched.\" Add the recipient's position, the one constraint that cannot move, and the tone you want. That gives the tool something to aim at. \"Write a nice email\" gives it nothing, so it fills the gap with padding and you rewrite the lot.",
+          "bullets": [
+            "State the outcome you want after the message is read.",
+            "Name the recipient's position and what they already know.",
+            "Name the one constraint that cannot move.",
+            "Ask for the tone you want, not just a polite one."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "You send it, so you own it",
+          "body": "A draft is agreeable by default. Ask for something conciliatory and it will accept a deadline on your behalf, concede scope you were negotiating, quote a price you had not settled, or apologise for something that was not your fault. None of that looks like an error — it reads as a well-mannered email. So read every draft specifically for what it commits you to: dates, prices, scope, blame. And never send an AI draft unread, however short it is.",
+          "bullets": [
+            "Read every draft for commitments: dates, prices, scope, blame.",
+            "Never send an AI draft unread, however short or routine it looks.",
+            "A draft will concede on your behalf and it will sound reasonable doing it.",
+            "Sending is a decision only you can make, and your name is on it."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Do not write as someone else, and do not invent a reason",
+          "body": "Never write a message under someone else's name as though they wrote it — draft for a colleague if they have asked, but the sender must be the person who chose the words. Nor should you invent a reason, an apology or a fact to smooth a difficult message; a fabricated explanation is one question away from collapsing. There is also a quieter cost: polished AI phrasing reads colder and more corporate to someone who knows you, so keep your own voice for bad news, conflict, condolences and anything personal.",
+          "bullets": [
+            "Never write under someone else's name as though they wrote it.",
+            "Do not invent a reason, an apology or a fact to make a message easier.",
+            "Polished phrasing reads as colder to someone who knows how you write.",
+            "Bad news, conflict and condolences stay in your own words."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Draft one real email from an outcome brief",
+          "body": "Pick a message you have been putting off. Write the brief before the email: the outcome you want, who the recipient is and what they already know, the one constraint that cannot move, and the tone. Get a draft, then read it line by line for anything it commits you to — a date, a price, a piece of scope, an apology — and strike anything you did not decide to offer. Rewrite one sentence in your own voice so it still sounds like you, then send it. Never send an AI draft unread.",
+          "bullets": [
+            "\"I need to write an email with this outcome: [what you want to be true afterwards]. The recipient is [position and what they already know]. The one constraint that cannot move is [constraint]. Draft it in a [tone] tone, do not commit me to any date, price or scope I have not stated, and do not invent a reason for anything.\"",
+            "Read the draft line by line for commitments before you send it.",
+            "Rewrite at least one sentence in your own voice so it still sounds like you."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What makes a draft usable on the first attempt?",
+          "options": [
+            "Asking for a longer message",
+            "Briefing the outcome, recipient, constraint and tone",
+            "Asking for a friendlier tone",
+            "Providing the previous email only"
+          ],
+          "correctIndex": 1,
+          "explanation": "The writing was never the slow part. Once the tool knows what you want to be true after the message is read, the draft arrives close to finished and you check it rather than rewrite it."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the specific risk in a polite, well-written draft?",
+          "options": [
+            "It will be too long",
+            "It may commit you to a date, price, scope or apology you did not intend",
+            "It will use the wrong greeting",
+            "It cannot be edited afterwards"
+          ],
+          "correctIndex": 1,
+          "explanation": "A draft is agreeable by default and will concede on your behalf while sounding entirely reasonable. That is why every draft is read for commitments before it goes anywhere."
+        },
+        {
+          "type": "true-false",
+          "question": "It is fine to write a message under a colleague's name as though they wrote it.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "You may draft for someone who has asked you to, but the sender must be the person who chose the words. Writing as someone else misrepresents who is speaking."
+        }
+      ]
+    },
+    {
+      "id": "lesson-16-module-4-checkpoint",
+      "title": "Module 4 Checkpoint: Inbox to Actions",
+      "subtitle": "Triage a real backlog, verify a real thread summary, and send one real reply.",
+      "dayNumber": 16,
+      "moduleId": "module-4",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Finish this lesson with an emptier inbox",
+          "body": "Module 4 covered three things: triaging by what is being asked of you, reducing a long thread to decisions and open questions, and drafting a reply you are willing to put your name to. This checkpoint asks you to do all three on work that is genuinely yours, and to end holding finished output — a triage list, a verified summary and a sent reply — rather than notes about how email should be handled.",
+          "stat": "3 outputs",
+          "statLabel": "a triage list, a summary, a sent reply"
+        },
+        {
+          "type": "content",
+          "headline": "The order, and where it usually goes wrong",
+          "body": "Triage first, then summarise, then write. The common mistake is starting with the message that feels most uncomfortable, which is rarely the one with the nearest deadline. The other is summarising a thread and replying straight from the summary, so a condition that was in the original never reaches the answer. Sort the pile before you touch any single item, and read the source before you commit to anything in it.",
+          "bullets": [
+            "Triage the whole pile before you answer any single message.",
+            "The most uncomfortable message is rarely the most urgent one.",
+            "Never reply straight from a summary without reading the source."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The three protections that carry the module",
+          "body": "Each of these prevents a failure that leaves no trace at the time. A summary quietly hardens a conditional into a promise, so check every decision and date against the message that said it. A polite draft concedes a date or a price on your behalf, so never send an AI draft unread. And a pasted thread discloses somebody else's private information, so remove names and personal details before pasting into anything outside your organisation. None of the three produces an error message; all three produce a problem you meet later.",
+          "bullets": [
+            "Check every decision and date against the message that said it.",
+            "Never send an AI draft unread — dates, prices and scope hide in polite copy.",
+            "Remove names and personal details before pasting into an outside tool."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What stays your decision",
+          "body": "Two judgements never move to the tool. Priority is the first: AI cannot see which client is close to leaving or whose patience has run out, so the order of play stays with you. Voice is the second: a message about bad news, a disagreement or something personal should sound like the person sending it. Use the tool for the mechanical work — grouping, summarising, drafting — and keep the two decisions that depend on knowing your own situation.",
+          "bullets": [
+            "You rank the priority; the tool only groups and summarises.",
+            "Sensitive messages stay in your own voice.",
+            "Mechanical work to the tool, judgement to you."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "One backlog, one thread, one sent reply",
+          "body": "Work on real messages, not an example. First, triage the most recent twenty messages in your inbox into decide, do, delegate and archive, and order the decide pile yourself. Second, take the longest thread in that pile and reduce it to decisions reached, questions still open and the actions you personally own — then open the thread and check every decision and date against the message that said it, restoring any condition that was dropped. Third, draft the reply to the top item from an outcome brief, read it line by line for anything it commits you to, and send it. Keep the triage list and the verified summary: those two documents are the proof this module worked.",
+          "bullets": [
+            "\"Here is a long thread from my inbox. Give me the decisions actually reached, the questions raised and never answered, and the actions I personally own with dates, quoting the sentence each one came from and keeping any conditions intact. Then draft a reply that achieves this outcome: [outcome]. Do not commit me to a date or price I have not stated and do not invent any detail.\"",
+            "Verify every decision and date against the message that said it before replying.",
+            "Read the draft for commitments, then send it — and keep your triage list."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the right order for working through a backlog?",
+          "options": [
+            "Answer the most uncomfortable message first",
+            "Triage the whole pile, then summarise, then write",
+            "Reply in the order messages arrived",
+            "Summarise everything before sorting anything"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sorting the pile first is what turns a reading task into a short list of decisions. The most uncomfortable message is rarely the one with the nearest deadline."
+        },
+        {
+          "type": "mcq",
+          "question": "Why must you read the source thread rather than replying from a summary?",
+          "options": [
+            "Summaries are always too short",
+            "A condition or owner may have been dropped without anything looking wrong",
+            "The summary cannot be quoted",
+            "It is faster to read the whole thread"
+          ],
+          "correctIndex": 1,
+          "explanation": "A summary is where a caveat disappears. \"Probably Thursday if design signs off\" becomes \"Thursday\", the sentence still reads well, and you commit the team to a date nobody promised."
+        },
+        {
+          "type": "true-false",
+          "question": "Once you have briefed the outcome properly, a short reply can be sent without reading it.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A good brief improves the draft but does not remove your responsibility for it. Drafts concede dates, prices and scope while sounding reasonable, and your name is the one on the message."
+        }
+      ]
+    },
+    {
+      "id": "lesson-17-prepare-for-any-meeting",
+      "title": "Prepare for Any Meeting in Minutes",
+      "subtitle": "Turn scattered material into a brief with your own position in it — and verify every figure before you say it out loud.",
+      "dayNumber": 17,
+      "moduleId": "module-5",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most meetings are lost before they start",
+          "body": "People arrive having skimmed the invitation and hoping the discussion will orient them. Ten minutes of preparation changes the meeting entirely: you know what the meeting has to decide, what is already settled, what you want out of it, and the one question you need answered. AI is good at assembling that brief from material you already hold. It is not good at knowing the room, which is why the brief is a starting point and not a script.",
+          "stat": "4 parts",
+          "statLabel": "decision, background, your position, your question"
+        },
+        {
+          "type": "content",
+          "headline": "Brief the meeting, not the topic",
+          "body": "Ask for four things and nothing else: the decision this meeting has to reach, the background someone needs to follow the discussion, your own position with the reasoning behind it, and the single question you must get answered before you leave. Feed it the invitation, the last thread and any document attached. Inside Teams or Outlook, Copilot can pull from the material your organisation lets it see; on a browser tool you paste the relevant parts in yourself.",
+          "bullets": [
+            "Name the decision the meeting must reach, not the subject line.",
+            "Ask for your own position and the reasoning, not a neutral overview.",
+            "One question you must have answered before you leave the room.",
+            "Keep the brief to a single page you can actually glance at."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI cannot know what the room already agreed",
+          "body": "A brief reads as authoritative even when it is missing the thing that decides the meeting. AI cannot know what the room already agreed in a conversation nobody wrote down, who has staked their reputation on the current approach, which option was rejected last quarter and why, or who is standing in for whom. Ask it to mark what it is unsure about, and add the unwritten history yourself — that context is the difference between a useful brief and a confident one.",
+          "bullets": [
+            "AI cannot know what the room already agreed if nobody wrote it down.",
+            "Ask it to flag what it is unsure about rather than smoothing over gaps.",
+            "Add the history and the personalities yourself before you rely on the brief.",
+            "A confident brief is not the same as a complete one."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Verify every figure before you say it in the room",
+          "body": "A brief is where a number gets its authority from nowhere. A figure lifted from a summary, or invented outright, sounds exactly like one you calculated — and once you say it aloud in a meeting it becomes yours, quoted onward by people who were not going to check it. So verify every figure before you say it in the room: open the source, confirm the number, and note where it came from. If you cannot trace it, say the figure is unconfirmed rather than dropping the caveat to sound decisive.",
+          "bullets": [
+            "Verify every figure before you say it in the room, and note its source.",
+            "A number you cannot trace is stated as unconfirmed, not stated firmly.",
+            "AI can invent a plausible figure and it will read exactly like a real one.",
+            "Once you say it aloud it is your number, whoever produced it."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a one-page brief for your next real meeting",
+          "body": "Take the next meeting in your calendar that you have not prepared for. Gather the invitation, the most recent thread and any attached document, and produce a one-page brief with four sections: the decision to be reached, the background, your position with reasoning, and the one question you need answered. Then do the two things the tool cannot: write in the unwritten history yourself — what was already agreed, who is invested in what — and open the source for every figure in the brief to confirm it before you use it. Take that page into the meeting.",
+          "bullets": [
+            "\"Here is a meeting invitation, the latest email thread and the attached document. Give me a one-page brief with four sections: the decision this meeting has to reach, the background needed to follow it, my position with the reasoning, and the single question I must get answered. Mark anything you are unsure about, quote the source sentence for every figure, and do not invent a number or a decision that is not in what I gave you.\"",
+            "Add the unwritten history yourself — the tool cannot see it.",
+            "Open the source and confirm every figure before you take the page in."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What are the four parts of a useful meeting brief?",
+          "options": [
+            "Agenda, attendees, timings, location",
+            "The decision to reach, the background, your position, your one question",
+            "A summary of every document attached",
+            "Talking points for each attendee"
+          ],
+          "correctIndex": 1,
+          "explanation": "A brief exists so you know what the meeting must decide and what you want from it. A topic summary tells you what the meeting is about, which you already knew from the invitation."
+        },
+        {
+          "type": "mcq",
+          "question": "What can a tool never supply in a meeting brief?",
+          "options": [
+            "A one-page structure",
+            "The unwritten history and who is invested in what",
+            "A list of open questions",
+            "A summary of an attached document"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI cannot know what the room already agreed in a conversation nobody recorded, or which option was rejected last quarter and why. That context is what decides most meetings, so you add it yourself."
+        },
+        {
+          "type": "true-false",
+          "question": "A figure in your brief can be quoted in the meeting without opening the source.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A number lifted from a summary, or invented, sounds exactly like one you calculated. Once you say it aloud it is yours and it gets repeated, so verify every figure before you say it in the room."
+        }
+      ]
+    },
+    {
+      "id": "lesson-18-never-lose-a-meeting-action",
+      "title": "Never Lose a Meeting Action Again",
+      "subtitle": "Capture decisions and owned actions from a live meeting — with consent, and with every name and number checked.",
+      "dayNumber": 18,
+      "moduleId": "module-5",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The meeting was fine, the follow-through was not",
+          "body": "Most meetings end with everyone agreeing and nobody owning anything. A week later two people believe the other was doing it and the work has not started. Notes are not the problem; ownership is. A meeting record is only useful if every action has a person and a date attached, and that is a discipline the tool can support but cannot supply for you.",
+          "stat": "2 fields",
+          "statLabel": "an owner and a date, on every action"
+        },
+        {
+          "type": "content",
+          "headline": "Ask for consent before you record anything",
+          "body": "A recording or transcript captures colleagues and clients saying things they assumed were unrecorded, and in many places recording without telling people is unlawful as well as unwelcome. So ask for consent before recording, say what the recording is for and where it will be stored, and check what your organisation allows before you switch anything on. If someone objects, take written notes instead — a meeting nobody trusts is worse than a meeting nobody transcribed.",
+          "bullets": [
+            "Ask for consent before recording, every time, out loud at the start.",
+            "Say what it is for and where it will be stored.",
+            "Check what your organisation allows before you switch recording on.",
+            "If anyone objects, take notes instead and say so."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "An action without an owner and a date is not an action",
+          "body": "Ask specifically for decisions reached and actions with a named owner and a date, and reject anything vague: \"the team will look into it\" is a sentence, not a commitment. Where the meeting genuinely did not assign an owner, record it as unassigned rather than guessing — an invented owner is worse than a visible gap, because the person named never agreed and never finds out. An action without an owner and a date is not an action.",
+          "bullets": [
+            "An action without an owner and a date is not an action.",
+            "\"The team will look into it\" is recorded as unassigned, not as an action.",
+            "Never let the tool guess who owns something nobody claimed.",
+            "Separate decisions from actions, and keep both lists short."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A transcript can mishear a name, a number or a decision",
+          "body": "Automatic notes are approximations. An AI transcript can mishear a name, a number or a decision — a client becomes a colleague, fifteen becomes fifty, and \"we are not doing that yet\" loses the \"not\". Nothing flags it, because the sentence still reads naturally, and the error then travels in the follow-up email as though the meeting had said it. So read the record against your own memory before you send it, correct names and figures by hand, and circulate it so the room can challenge anything you got wrong.",
+          "bullets": [
+            "An AI transcript can mishear a name, a number or a decision.",
+            "Check names and figures by hand before the record goes anywhere.",
+            "A dropped negative reverses a decision and still reads naturally.",
+            "Circulate the record so the room can correct it while they remember."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Capture your next real meeting properly",
+          "body": "Do this on the next meeting you attend. Before it starts, check what your organisation allows and ask for consent before recording; if anyone objects, take notes instead. Afterwards, turn the notes or transcript into two short lists: decisions reached, and actions with a named owner and a date, marking anything unassigned as unassigned rather than guessing. Then read it against your own memory, correct every name and number by hand, and send it to everyone who was there with an invitation to correct it. Keep the corrected version — that document is the output of this lesson.",
+          "bullets": [
+            "\"Here are my notes from a meeting. Give me two lists: the decisions actually reached, and the actions with a named owner and a date for each. If the meeting did not name an owner or a date, write unassigned rather than guessing, and do not invent a decision or a figure that is not in my notes. Quote the words each decision came from.\"",
+            "Ask for consent before recording, and check what your organisation allows.",
+            "Correct names and figures by hand, then circulate it for challenge."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Before recording or transcribing a meeting, what must you do?",
+          "options": [
+            "Nothing, meeting tools handle it",
+            "Ask for consent and check what your organisation allows",
+            "Tell people afterwards",
+            "Store it in a private folder"
+          ],
+          "correctIndex": 1,
+          "explanation": "A recording captures colleagues and clients saying things they assumed were unrecorded, and in many places recording without telling people is unlawful. Consent first, and notes instead if anyone objects."
+        },
+        {
+          "type": "mcq",
+          "question": "The meeting agreed something but named nobody. How is it recorded?",
+          "options": [
+            "As unassigned, with the decision noted",
+            "Assigned to whoever spoke most about it",
+            "Assigned to the meeting organiser",
+            "Left out of the record"
+          ],
+          "correctIndex": 0,
+          "explanation": "An invented owner is worse than a visible gap: the person named never agreed and may never find out. Recording it as unassigned keeps the gap in front of the room where it can be closed."
+        },
+        {
+          "type": "true-false",
+          "question": "An automatic transcript can be circulated without checking names and figures.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A transcript can mishear a name or a number, or drop a negative so a decision reverses, and the sentence still reads naturally. The error then travels in the follow-up as though the meeting said it."
+        }
+      ]
+    },
+    {
+      "id": "lesson-19-catch-up-on-what-you-missed",
+      "title": "Catch Up on What You Missed",
+      "subtitle": "Get back into a project or a channel quickly — without mistaking a recap for a decision record.",
+      "dayNumber": 19,
+      "moduleId": "module-5",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Two days away, four hundred messages",
+          "body": "Coming back from leave or joining a project already in motion is the same task: find the small number of things that changed, and the smaller number that need you. Scrolling is the slow way and it still misses things, because the important message is rarely the longest one. A recap gets you oriented in minutes — as long as you treat it as orientation rather than as the record of what was agreed.",
+          "stat": "3 questions",
+          "statLabel": "what changed, what needs me, what is still open"
+        },
+        {
+          "type": "content",
+          "headline": "Ask what changed, what needs you, what is open",
+          "body": "Three questions get you back in: what has changed since you were last across this, what needs something from you, and what is still open with nobody driving it. Ask for each as a short list with the date and the person attached. In Teams, Copilot can recap a channel or a chat it has access to; on a browser tool you paste in the thread or the notes. Resist asking for \"a summary of the project\" — that produces a paragraph you cannot act on.",
+          "bullets": [
+            "Three lists: what changed, what needs you, what is still open.",
+            "Every item carries a date and a person, or it is not actionable.",
+            "Ask for the last thing decided, not a general project overview.",
+            "A recap you cannot act on is a paragraph, not a catch-up."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A recap tells you what was said, not what was agreed",
+          "body": "This is the trap that makes catching up dangerous rather than merely incomplete. A recap tells you what was said, not what was agreed: a suggestion someone made in passing appears alongside a firm decision, in the same flat voice, with nothing marking which was which. You then act on the suggestion as though the project had chosen it. So never treat a recap as a decision record — before you act, find the message or the meeting note where the decision was actually made, and read it.",
+          "bullets": [
+            "A recap tells you what was said, not what was agreed.",
+            "Never treat a recap as a decision record — find the source before acting.",
+            "A passing suggestion and a firm decision read identically in a recap.",
+            "Ask it to quote the message each decision came from so you can check it."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Confirm anything assigned to you with the person who assigned it",
+          "body": "The worst version of this is an action you inherit from a recap. Something was allocated to you while you were away — or the tool decided it was yours because your name appeared nearby — and you either start work nobody wanted or discover the real deadline was last week. So check any action assigned to you with the person who assigned it, in one short message. It takes a minute, it puts the date beyond doubt, and it tells the other person you have picked it up.",
+          "bullets": [
+            "Check any action assigned to you with the person who assigned it.",
+            "Confirm the date as well as the task; a recap often guesses at both.",
+            "A name appearing near an action does not mean that person owns it.",
+            "One short message removes a week of working on the wrong thing."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Catch up on a real channel or project",
+          "body": "Pick a channel, chat or project you are genuinely behind on. Produce three lists from it: what has changed since you last looked, what needs something from you with a date, and what is still open with nobody driving it. Then do the verification, which is the point of the lesson: for every decision in the recap, open the message it came from and read it in full, and for every action assigned to you, send one short message to the person who assigned it confirming the task and the date. Act on the top item before you close the lesson.",
+          "bullets": [
+            "\"Here is a project channel I have been away from. Give me three lists: what has changed and when, what needs something from me with dates, and what is still open with nobody driving it. Quote the message each decision came from, mark anything that was only a suggestion as a suggestion, and do not invent an owner or a date that nobody stated.\"",
+            "Open the source message for every decision before you act on it.",
+            "Confirm anything assigned to you with the person who assigned it."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What three lists get you back into a project fastest?",
+          "options": [
+            "Every message, sorted by sender",
+            "What changed, what needs you, what is still open",
+            "A single overview paragraph",
+            "The longest threads first"
+          ],
+          "correctIndex": 1,
+          "explanation": "Those three questions produce something you can act on, each item with a date and a person. A general project overview reads well and tells you nothing to do next."
+        },
+        {
+          "type": "mcq",
+          "question": "Why is a recap not a decision record?",
+          "options": [
+            "It is always too short",
+            "A passing suggestion and a firm decision appear in the same flat voice",
+            "It cannot include dates",
+            "It only covers the last day"
+          ],
+          "correctIndex": 1,
+          "explanation": "Nothing in a recap marks which items were actually decided, so you can act on a suggestion as though the project had chosen it. Find the source message and read it before you commit."
+        },
+        {
+          "type": "true-false",
+          "question": "An action a recap assigns to you can be started without checking with anyone.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A recap can attach your name to something nobody allocated to you, or guess at the deadline. One short message to the person who assigned it confirms the task and the date."
+        }
+      ]
+    },
+    {
+      "id": "lesson-20-module-5-checkpoint",
+      "title": "Module 5 Checkpoint: Meeting to Owned Plan",
+      "subtitle": "Prepare one real meeting, capture it properly, and confirm every action with the person who owns it.",
+      "dayNumber": 20,
+      "moduleId": "module-5",
+      "xpValue": 25,
+      "duration": "6 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "End this lesson with a plan somebody owns",
+          "body": "Module 5 covered three things: preparing so you arrive knowing what the meeting must decide, capturing decisions and owned actions rather than notes, and getting back into work you missed without acting on the wrong thing. This checkpoint asks you to run all three on a real meeting in your own week, and to finish holding a brief, a record and a set of confirmed actions rather than a page of advice about meetings.",
+          "stat": "3 outputs",
+          "statLabel": "a brief, a record, confirmed actions"
+        },
+        {
+          "type": "content",
+          "headline": "The order, and where it usually goes wrong",
+          "body": "Prepare, capture, then confirm. The common failure is skipping straight to capture: without a brief you do not know what the meeting was supposed to decide, so you record a conversation instead of an outcome. The second is sending the record and treating that as follow-through — circulating a list is not the same as anyone accepting an item on it. The confirmation step is what turns a document into work somebody is actually doing.",
+          "bullets": [
+            "Prepare first, or you capture a conversation instead of an outcome.",
+            "Circulating a list is not the same as anyone accepting an item on it.",
+            "Confirmation is what turns a record into work in progress."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The three protections that carry the module",
+          "body": "Each of these prevents a failure that leaves no trace at the time. A recording captures people who assumed they were unrecorded, so ask for consent before recording. A tidy list of vague commitments looks like a plan and delivers nothing, so remember an action without an owner and a date is not an action. And a catch-up presents a passing suggestion in the same voice as a firm decision, so never treat a recap as a decision record. None of the three produces an error at the time; all three produce a problem you meet later.",
+          "bullets": [
+            "Ask for consent before recording, and check what your organisation allows.",
+            "An action without an owner and a date is not an action.",
+            "Never treat a recap as a decision record — read the source first."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What stays your decision",
+          "body": "Two things never move to the tool. The unwritten history is the first: AI cannot know what the room already agreed off the record, or who has staked something on the current approach, so you supply that before you rely on any brief. Accuracy of names and numbers is the second: a transcript can mishear a figure or drop a negative, and the sentence still reads naturally, so you check those by hand before a record leaves your hands.",
+          "bullets": [
+            "You supply the unwritten history; the tool cannot see it.",
+            "You check names and figures by hand before the record circulates.",
+            "Mechanical capture to the tool, judgement and accuracy to you."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "One meeting, prepared, captured and confirmed",
+          "body": "Use a real meeting in the next few days, not an example. First, build the one-page brief: the decision to be reached, the background, your position, and your one question — then add the unwritten history yourself and verify every figure against its source before you go in. Second, in the meeting, ask for consent before recording, and afterwards produce two lists: decisions reached, and actions with a named owner and a date, marking anything nobody claimed as unassigned. Correct every name and number by hand. Third, send the record to the room and message each owner to confirm their action and its date. Keep the brief and the confirmed record: those two documents are the proof this module worked.",
+          "bullets": [
+            "\"Here are my notes from a meeting I prepared for. Give me two lists: the decisions actually reached, and the actions with a named owner and a date. Write unassigned where the meeting named nobody, quote the words each decision came from, and do not invent an owner, a date or a figure that is not in my notes.\"",
+            "Ask for consent before recording, and check what your organisation allows.",
+            "Message each owner to confirm the action and the date before you call it done."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the right order for getting value out of a meeting?",
+          "options": [
+            "Capture, then prepare for the next one",
+            "Prepare, capture, then confirm each action with its owner",
+            "Record everything and read it later",
+            "Send a recap and wait for replies"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without a brief you capture a conversation rather than an outcome, and without confirmation a circulated list is not work anybody has accepted."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of these is the honest way to record something nobody claimed?",
+          "options": [
+            "Assign it to the organiser",
+            "Mark it unassigned so the gap stays visible",
+            "Leave it out of the record",
+            "Assign it to whoever raised it"
+          ],
+          "correctIndex": 1,
+          "explanation": "An invented owner is worse than a visible gap, because the person named never agreed and may never find out. Unassigned keeps the gap in front of the room where it can be closed."
+        },
+        {
+          "type": "true-false",
+          "question": "A recap of a channel is a reliable record of what the project decided.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A recap tells you what was said, not what was agreed: a passing suggestion appears in the same flat voice as a firm decision. Read the source message before you act on either."
+        }
+      ]
+    },
+    {
+      "id": "lesson-21-build-a-complete-business-report",
+      "title": "Build a Complete Business Report",
+      "subtitle": "Take one set of numbers all the way to a document, a deck and a covering email — with every figure still traceable at the end.",
+      "dayNumber": 21,
+      "moduleId": "module-6",
+      "xpValue": 25,
+      "duration": "8 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One set of numbers, four handoffs",
+          "body": "A monthly or quarterly report is not one task, it is a chain: the numbers become an insight, the insight becomes a document, the document becomes a short deck, and the deck goes out with a covering email. Every step so far in this course was one link. This lesson joins them, and the joining is where the risk moves — because a figure that changed shape at the first handoff arrives at the last one looking like a fact nobody needs to check.",
+          "stat": "4 handoffs",
+          "statLabel": "numbers, document, slides, email"
+        },
+        {
+          "type": "content",
+          "headline": "Work in the order that keeps the argument intact",
+          "body": "Numbers first, then the insight, then the document, then the slides, then the email. Reversing that produces slides you cannot defend, because the argument was assembled to fill a layout rather than because the data supported it. Settle what the report actually claims before any of it gets formatted, and carry that one claim forward through every step so the deck and the email say the same thing as the document.",
+          "bullets": [
+            "Numbers, insight, document, slides, email — in that order.",
+            "Settle the claim before anything gets formatted.",
+            "The email, the deck and the document must make the same claim.",
+            "If a step cannot support the claim, the claim was wrong, not the step."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Every figure in the report traces back to the source file",
+          "body": "By the time a number reaches a slide it has been through several hands, and nothing along the way records where it started. So hold to one rule: every figure in the report traces back to the source file, and you can point at the cell or the row it came from. Keep a short list of figure and source as you go. If you cannot trace a number by the end, it does not go in — a figure whose origin nobody can name is exactly the one a colleague asks about in the meeting.",
+          "bullets": [
+            "Every figure in the report traces back to the source file.",
+            "Keep a running list of figure and source as you build.",
+            "A number you cannot trace does not go in the report.",
+            "Recalculate in the spreadsheet rather than trusting a figure in a reply."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "An error copied forward is repeated as fact",
+          "body": "This is what makes a chain different from a single task. A rounding slip, a mislabelled column or a hedge quietly dropped at the first step is re-stated at the second, illustrated at the third and asserted in the covering email at the fourth — and it gains confidence at every stage, because each step is only reading the step before it. An error copied forward is repeated as fact. So check each handoff against the SOURCE, not against the previous output, and read the final email against the original numbers before you send it.",
+          "bullets": [
+            "An error copied forward is repeated as fact.",
+            "Check every handoff against the source, never against the last output.",
+            "Read the covering email against the original numbers before sending.",
+            "A mistake gains confidence at each step, so catch it at the first."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Produce one real report end to end",
+          "body": "Use a report you genuinely owe someone this month, not an example. Start in the spreadsheet: settle the single claim the report makes and recalculate every figure that supports it. Then produce the document, then a short deck for the same claim, then the covering email. As you go, keep a two-column list of every figure and the exact source it came from, and at each handoff check the new version against that source rather than against the previous draft. Before you send, read the email and the deck back against the original numbers. Keep the figure-and-source list — it is what makes the report defensible when somebody asks.",
+          "bullets": [
+            "\"Here are the figures from my spreadsheet and the single claim my report makes. Draft the report in four parts: the claim, the evidence for it, what the data does not show, and the recommendation. Quote the exact figure and label for every number you use, do not introduce a figure that is not in what I gave you, and list anything you could not support.\"",
+            "Keep a list of every figure and the source it came from.",
+            "Check each handoff against the source, not against the previous draft."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the right order for building a report across the apps?",
+          "options": [
+            "Slides first, then find numbers to fit them",
+            "Numbers, insight, document, slides, then the covering email",
+            "Document and email together, numbers afterwards",
+            "Whichever app you have open"
+          ],
+          "correctIndex": 1,
+          "explanation": "Starting with slides produces an argument assembled to fill a layout rather than one the data supports, and you cannot defend it when somebody asks where a figure came from."
+        },
+        {
+          "type": "mcq",
+          "question": "A figure appears in your deck but you cannot find its source. What happens?",
+          "options": [
+            "It stays in, with a note that it is approximate",
+            "It comes out until you can point at the cell it came from",
+            "It stays in if the tool produced it consistently",
+            "It moves to an appendix"
+          ],
+          "correctIndex": 1,
+          "explanation": "A number whose origin nobody can name is exactly the one a colleague asks about. Every figure in the report has to trace back to the source file or it does not go in."
+        },
+        {
+          "type": "true-false",
+          "question": "Checking each step against the previous version is enough to catch errors in a chain.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each step only reads the step before it, so an early slip is re-stated and gains confidence at every stage. An error copied forward is repeated as fact, which is why each handoff is checked against the source."
+        }
+      ]
+    },
+    {
+      "id": "lesson-22-design-your-ai-powered-workday",
+      "title": "Design Your AI-Powered Workday",
+      "subtitle": "Build a repeatable routine around three moments in the day — and keep the decisions that are yours to make.",
+      "dayNumber": 22,
+      "moduleId": "module-6",
+      "xpValue": 25,
+      "duration": "7 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A routine beats remembering",
+          "body": "Most people who learn these skills use them brilliantly for a fortnight and then drift back, because every use was a decision to make in the moment. A routine removes the decision: three fixed moments in the day where you already know what you are going to ask for. What the routine must not do is quietly take over the judgement — which is the part of your job nobody else is accountable for.",
+          "stat": "3 moments",
+          "statLabel": "a start, a working block, a handover"
+        },
+        {
+          "type": "content",
+          "headline": "Three moments, not thirty decisions",
+          "body": "Start with a short triage: what changed, what needs you, what is still open. Use a working block for the drafting and the analysis, where you brief properly and check the output rather than accepting it. End with a handover to tomorrow: what moved, what is waiting on somebody else, and the first thing you will pick up. Three moments is enough. A routine with a step for every tool is a routine you abandon in a busy week.",
+          "bullets": [
+            "A start: what changed, what needs you, what is still open.",
+            "A working block: brief properly, then check what comes back.",
+            "A handover: what moved, what is waiting, what is first tomorrow.",
+            "Three moments you keep beat ten you abandon."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "AI cannot decide what your week is for",
+          "body": "A tool can group your messages, summarise a thread and draft a reply. It cannot see that one client is close to leaving, that a quiet colleague is overloaded, or that the piece of work nobody is chasing is the one your year is judged on. AI cannot decide what your week is for. So the priorities stay yours: read what it surfaces as a list of candidates, not as a ranking, and pick the order yourself before the working block starts.",
+          "bullets": [
+            "AI cannot decide what your week is for.",
+            "Treat what it surfaces as candidates, not as a ranking.",
+            "You set the order at the start of the day, not the tool.",
+            "The important thing is often the one nobody is chasing."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Never automate a decision you are accountable for",
+          "body": "The tempting next step is to let the routine act on its own: auto-send the summary, auto-reply to the routine request, auto-file the awkward message. Do not. Never automate a decision you are accountable for, and make sure nothing leaves you unread — your name is on it, and the recipient will hold you to it whether you read it or not. Automate the assembling; keep the sending, the committing and the declining.",
+          "bullets": [
+            "Never automate a decision you are accountable for.",
+            "Nothing leaves you unread, however routine it looks.",
+            "Automate the assembling, keep the sending and the committing.",
+            "A step that acts without you is a step you cannot correct."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write your own three-moment routine and run it",
+          "body": "Write your routine down as three short blocks: your start-of-day triage, your working block, and your handover, with the exact thing you will ask for in each. Name the decisions that stay yours in writing — what order the day runs in, what gets sent, what you agree to — and mark clearly that nothing in the routine sends anything without you reading it. Then run it for the rest of this week and change the parts that did not survive a busy day, rather than abandoning the whole thing. Keep the written routine: it is the output of this lesson.",
+          "bullets": [
+            "\"Help me design a repeatable daily routine with exactly three moments: a start-of-day triage, one working block, and an end-of-day handover. For each, give me the question I should ask and the output I should expect. Keep every decision about priorities, sending and commitments with me, and do not propose a step that acts or sends on my behalf.\"",
+            "Write down which decisions stay yours before you run it.",
+            "Nothing in the routine sends anything you have not read."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Why does a routine work better than deciding in the moment?",
+          "options": [
+            "It removes the decision, so the skill survives a busy week",
+            "It makes the tool faster",
+            "It means you can stop checking the output",
+            "It replaces the need to prioritise"
+          ],
+          "correctIndex": 0,
+          "explanation": "Every use that requires a decision in the moment gets dropped under pressure. Three fixed moments where you already know what to ask for is what makes the habit last."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do with the list of priorities a tool surfaces?",
+          "options": [
+            "Work through it in the order given",
+            "Read it as candidates and set the order yourself",
+            "Ignore it and use your inbox order",
+            "Send it to your manager to rank"
+          ],
+          "correctIndex": 1,
+          "explanation": "A tool cannot see which client is close to leaving or which unchased piece of work your year is judged on. AI cannot decide what your week is for, so the order stays your call."
+        },
+        {
+          "type": "true-false",
+          "question": "Routine replies can be sent automatically once the routine is working well.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your name is on it and the recipient will hold you to it. Never automate a decision you are accountable for — automate the assembling and keep the sending."
+        }
+      ]
+    },
+    {
+      "id": "lesson-23-redesign-one-recurring-process",
+      "title": "Redesign One Recurring Process",
+      "subtitle": "Rebuild a process you repeat every week — and make sure it still works on the day the tool is wrong or unavailable.",
+      "dayNumber": 23,
+      "moduleId": "module-6",
+      "xpValue": 25,
+      "duration": "8 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The weekly thing you never question",
+          "body": "Everyone has one: the weekly update, the monthly pack, the handover, the client summary. It takes hours, the shape of it was decided by somebody who left, and you have never redesigned it because it is always due. This lesson rebuilds one of them properly — and takes seriously the part most people skip, which is what happens on the week the process is wrong and nobody notices because it always used to be right.",
+          "stat": "1 process",
+          "statLabel": "mapped, rebuilt, made resilient"
+        },
+        {
+          "type": "content",
+          "headline": "Map it before you improve it",
+          "body": "Write the process out as it really happens, step by step, with what each step needs and who it goes to. Then mark each step as mechanical (gathering, reformatting, summarising, drafting), judgement (deciding, committing, prioritising, declining), or unnecessary. Most weekly processes lose more time to the unnecessary steps than to the slow ones. Rebuild it with AI helping only on the mechanical steps, and be honest that the judgement steps still take the time they always took.",
+          "bullets": [
+            "Write the process as it really happens, not as it is supposed to.",
+            "Mark each step mechanical, judgement, or unnecessary.",
+            "Delete the unnecessary steps before automating anything.",
+            "Judgement steps still take the time they always took."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Check what your organisation allows before you change a process other people depend on",
+          "body": "This process is not only yours. Other people rely on its output, its format and its timing, and it may carry client data, personal data or commercial figures through a tool your organisation has not sanctioned. So check what your organisation allows before you change a process other people depend on, tell the people downstream what changed, and keep the output in the format they need rather than the one that suits your new workflow. A redesign nobody was told about looks like a mistake the first time the format shifts.",
+          "bullets": [
+            "Check what your organisation allows before you change a process other people depend on.",
+            "Tell the people downstream what changed, before they notice it.",
+            "Keep the output format they rely on, not the one that suits you.",
+            "Remove personal and client detail from anything you paste in."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The process must still work when the tool is unavailable or wrong",
+          "body": "A rebuilt process gets trusted quickly, and that is the danger. If the tool is down on the morning the pack is due, or it produces something plausible and wrong, the process must not fail — the process must still work when the tool is unavailable or wrong. So keep the manual path written down, keep a check step that a person performs on the output every time, and make sure one human reads the whole thing before it goes anywhere. Resilience here is not caution, it is the difference between a faster process and a fragile one.",
+          "bullets": [
+            "The process must still work when the tool is unavailable or wrong.",
+            "Keep the manual path written down and usable.",
+            "Keep a check step a person performs on every output.",
+            "One person reads the whole thing before it leaves."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Rebuild one real recurring process this week",
+          "body": "Pick the recurring task that costs you the most time and write out its real steps. Mark each one mechanical, judgement or unnecessary, and delete the unnecessary ones first. Rebuild the mechanical steps with AI helping, keeping every judgement step with you. Then do the two things that make it last: check what your organisation allows and tell the people downstream what is changing, and write down the manual fallback plus the check a person performs on every output. Run the rebuilt process once this week and note what broke. Keep the written process and its fallback — that document is the output of this lesson.",
+          "bullets": [
+            "\"Here are the real steps of a process I repeat every week, with who each step goes to. Sort the steps into mechanical, judgement and unnecessary, and say which could be removed entirely. For the mechanical ones, suggest how AI could help and what I would need to check afterwards. Leave every decision, commitment and priority with me, and tell me where this process would break if the tool were unavailable.\"",
+            "Check what your organisation allows, and tell the people downstream.",
+            "Write down the manual fallback and the human check step."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "What is the first thing to do with a recurring process?",
+          "options": [
+            "Automate the slowest step",
+            "Map it as it really happens and mark the unnecessary steps",
+            "Ask for a summary of it",
+            "Change the format so it is quicker to produce"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most weekly processes lose more time to steps nobody needs than to slow ones. Deleting those first means you are not making an unnecessary step faster."
+        },
+        {
+          "type": "mcq",
+          "question": "What has to be in place before you rely on the rebuilt process?",
+          "options": [
+            "A manual fallback and a check a person performs every time",
+            "A faster tool",
+            "A copy of last month’s output to compare against",
+            "Nothing, once it has worked twice"
+          ],
+          "correctIndex": 0,
+          "explanation": "The process must still work when the tool is unavailable or wrong. A written manual path and a human check on every output are what stop a faster process becoming a fragile one."
+        },
+        {
+          "type": "true-false",
+          "question": "You can change a process other people depend on without telling them.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Other people rely on its format and timing, and it may carry client or personal data. Check what your organisation allows, then tell the people downstream before they notice the change themselves."
+        }
+      ]
+    },
+    {
+      "id": "lesson-24-capstone-your-microsoft-365-workflow",
+      "title": "Capstone: Your Microsoft 365 Workflow",
+      "subtitle": "Put the whole course into one real piece of work, from the numbers to the email — and keep every protection you have learned.",
+      "dayNumber": 24,
+      "moduleId": "module-6",
+      "xpValue": 25,
+      "duration": "9 min",
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One real piece of work, start to finish",
+          "body": "Everything in this course has been building to this: a real deliverable you owe somebody, carried from raw material to the message that sends it, with AI helping at every step and your judgement intact at every step. Finish this and you are not holding notes about AI at work — you are holding the report, the deck, the record and the routine, and you know exactly which parts of the job never leave you.",
+          "stat": "6 modules",
+          "statLabel": "foundations, documents, data, email, meetings, workflow"
+        },
+        {
+          "type": "content",
+          "headline": "What the whole course adds up to",
+          "body": "Brief properly so the first answer is usable. Produce and reshape documents for the audience in front of you. Find the real insight in a spreadsheet and present it without overstating it. Turn a full inbox into decisions instead of a pile. Prepare, capture and confirm a meeting. Then join those into a workflow you repeat. The skills are ordinary on their own; the value is in the chain, because that is where most people still do everything by hand.",
+          "bullets": [
+            "Brief properly, then check what comes back.",
+            "Reshape for the audience, never past what the evidence supports.",
+            "Turn data into one defensible claim, and an inbox into decisions.",
+            "Join the steps into something you repeat without thinking."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The three protections that carry this module",
+          "body": "Each of these prevents a failure that leaves no trace at the time. A chain re-states an early slip with more confidence at every step, so every figure in the report traces back to the source file. A routine drifts towards acting on its own, so never automate a decision you are accountable for. And a rebuilt process gets trusted fast, so the process must still work when the tool is unavailable or wrong. None of the three produces an error on the day; all three produce a problem you meet later, in front of somebody who matters.",
+          "bullets": [
+            "Every figure in the report traces back to the source file.",
+            "Never automate a decision you are accountable for.",
+            "The process must still work when the tool is unavailable or wrong."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What never moves to the tool",
+          "body": "Across all six modules the same line held. You supply the context the tool cannot see: the unwritten history in the room, what a client is really worried about, what your week is actually for. You keep accuracy: figures verified against their source, names and numbers checked by hand, hedges left where the evidence is thin. And you keep the commitments: what gets sent, what gets agreed, what gets declined. Mechanical work to the tool; judgement, accuracy and accountability to you.",
+          "bullets": [
+            "You supply the context the tool cannot see.",
+            "You keep accuracy: verified figures, checked names, hedges intact.",
+            "You keep the commitments — sending, agreeing and declining.",
+            "Nothing you send goes unread, however routine it looks."
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Deliver one real piece of work using the whole chain",
+          "body": "Choose something you genuinely owe someone in the next week — a report, a proposal, a review, a client update. Run the full chain on it. Brief properly and settle the single claim it makes. Work the numbers and recalculate every figure, keeping a figure-and-source list so every figure traces back to the source file. Produce the document, then the short deck, then the covering email, checking each handoff against the source rather than the previous draft. If there is a meeting attached, prepare a one-page brief and afterwards capture decisions and owned actions with dates. Read everything before it leaves you, and write down the two or three steps you will now repeat every time. Send it. Then keep the deliverable, the figure-and-source list and your written routine: those three things are the proof this course worked.",
+          "bullets": [
+            "\"I am producing a real piece of work and I want to run it end to end. Here is the material and the single claim it makes. Give me: the questions I still need answered, a structure for the document, an outline for a short deck making the same claim, and a covering email. Quote the source for every figure, do not introduce a number or a commitment that is not in what I gave you, list what my material does not support, and leave every decision and anything that gets sent with me.\"",
+            "Keep a figure-and-source list so every figure traces to its source.",
+            "Read everything before it leaves you, then write down what you will repeat."
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "type": "mcq",
+          "question": "Where does most of the value in this course sit?",
+          "options": [
+            "In each individual skill",
+            "In joining the steps into a workflow you repeat",
+            "In having a paid licence",
+            "In producing work faster than colleagues"
+          ],
+          "correctIndex": 1,
+          "explanation": "The individual skills are ordinary once learned. The chain is where most people still do everything by hand, so joining the steps is what changes the work."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of these stays with you in every workflow you build?",
+          "options": [
+            "Reformatting and reshaping drafts",
+            "Gathering and summarising material",
+            "Deciding, committing, and anything that gets sent",
+            "Producing the first outline"
+          ],
+          "correctIndex": 2,
+          "explanation": "Mechanical work moves to the tool. Judgement, accuracy and accountability do not: your name is on what goes out, and nothing you send should go unread."
+        },
+        {
+          "type": "true-false",
+          "question": "Once a rebuilt workflow has run smoothly a few times, the human check can be dropped.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Trust is exactly when a plausible wrong output gets through. The process must still work when the tool is unavailable or wrong, which means keeping the manual path and the human check."
+        }
+      ]
+    }
+  ]
+}

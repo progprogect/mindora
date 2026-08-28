@@ -1,0 +1,1759 @@
+{
+  "id": "unlock-growth-mindset",
+  "title": "Unlock Your Growth Mindset",
+  "subtitle": "Discover how your beliefs about talent and effort shape everything — and learn to rewire them for lasting success.",
+  "totalDays": 18,
+  "totalXp": 360,
+  "modules": [
+    {
+      "id": "ugm-module-1",
+      "moduleNumber": 1,
+      "title": "The Two Mindsets",
+      "subtitle": "Understand the hidden belief system that silently controls how you learn, fail, and grow.",
+      "days": "Lessons 1–6",
+      "skill": "Identify fixed vs growth thinking in yourself and others — instantly",
+      "lessonIds": [
+        "ugm-1-hidden-belief-system",
+        "ugm-2-fixed-mindset-talent-trap",
+        "ugm-3-growth-mindset-effort",
+        "ugm-4-how-mindsets-form",
+        "ugm-5-praise-and-labels",
+        "ugm-6-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "ugm-module-2",
+      "moduleNumber": 2,
+      "title": "Mindset in Action",
+      "subtitle": "See how mindset plays out in challenges, setbacks, criticism, and the success of others.",
+      "days": "Lessons 7–12",
+      "skill": "Respond to failure, feedback, and difficulty with a growth-oriented approach",
+      "lessonIds": [
+        "ugm-7-challenge-response",
+        "ugm-8-failure-as-data",
+        "ugm-9-criticism-as-fuel",
+        "ugm-10-others-success",
+        "ugm-11-effort-strategies",
+        "ugm-12-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "ugm-module-3",
+      "moduleNumber": 3,
+      "title": "Rewire & Sustain",
+      "subtitle": "Build lasting habits that keep you in growth mode — even when life gets hard.",
+      "days": "Lessons 13–18",
+      "skill": "Maintain a growth mindset under pressure and help others develop one too",
+      "lessonIds": [
+        "ugm-13-inner-voice",
+        "ugm-14-deliberate-practice",
+        "ugm-15-growth-culture",
+        "ugm-16-relationships",
+        "ugm-17-parenting-teaching",
+        "ugm-18-lifelong-growth"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ugm-1-hidden-belief-system",
+      "dayNumber": 1,
+      "moduleId": "ugm-module-1",
+      "title": "Your Hidden Belief System",
+      "subtitle": "The invisible beliefs shaping every decision you make about learning and talent.",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You already have a theory about talent.",
+          "body": "Right now — without thinking about it — you hold a deep belief about whether intelligence and ability are fixed traits you're born with, or flexible qualities you can develop. This belief quietly shapes every risk you take, every challenge you avoid, and every goal you set. Most people have never examined it.",
+          "stat": "40%",
+          "statLabel": "of people hold a predominantly fixed view of intelligence"
+        },
+        {
+          "type": "content",
+          "headline": "Two worlds, one question",
+          "body": "Decades of research reveal a simple but powerful finding: people tend to fall into one of two camps based on a single core belief — \"Can my fundamental qualities change, or are they carved in stone?\"",
+          "bullets": [
+            "Fixed mindset: \"I have a set amount of intelligence/talent — I can't really change it\"",
+            "Growth mindset: \"My abilities are like muscles — they develop with effort and strategy\"",
+            "Most people are a mix, but lean strongly one way in key areas of life",
+            "Your dominant belief predicts how you'll handle challenges, setbacks, and new opportunities"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why this matters more than you think",
+          "body": "Your mindset doesn't just influence your mood — it literally changes your behaviour. Research shows it affects whether you seek challenges or avoid them, persist through difficulty or give up early, and interpret effort as productive or pointless.",
+          "bullets": [
+            "Students with a growth mindset outperform equally talented peers over time",
+            "Athletes who believe ability is developable train harder and recover faster from losses",
+            "Leaders with a growth mindset build more innovative, resilient teams",
+            "The effect compounds: small mindset differences create massive outcome gaps over years"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The good news: mindsets are changeable",
+          "body": "Here's what makes this so powerful — your mindset isn't fixed. The very belief that keeps people stuck (\"I can't change\") is itself changeable. Research shows that simply learning about these two mindsets begins to shift how people think about challenges and effort.",
+          "bullets": [
+            "Awareness is the first step — you can't change what you can't see",
+            "Brief interventions (even 30-minute sessions) produce measurable effects",
+            "The shift isn't about forced positivity — it's about understanding how learning actually works",
+            "This course will give you the tools to make the shift permanent"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Spot your default belief",
+          "body": "Think of something you believe you're \"just not good at\" — maths, drawing, public speaking, cooking. Now ask yourself: \"Do I believe I *can't* get better at this, or that I simply *haven't* gotten better at it yet?\" Notice which answer comes more naturally. That's your default mindset for this area. No judgment — just awareness."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core difference between a fixed mindset and a growth mindset?",
+          "type": "mcq",
+          "options": [
+            "Fixed mindset people are pessimistic; growth mindset people are optimistic",
+            "Fixed mindset believes abilities are unchangeable; growth mindset believes they can be developed",
+            "Fixed mindset is about intelligence; growth mindset is about physical ability",
+            "Fixed mindset is always negative; growth mindset is always positive"
+          ],
+          "correctIndex": 1,
+          "explanation": "The core distinction is about beliefs regarding whether fundamental qualities (intelligence, talent, ability) are fixed traits or developable qualities. It's not about optimism vs pessimism — it's specifically about whether you believe your abilities can meaningfully change through effort and strategy."
+        },
+        {
+          "question": "Research shows that mindset affects behaviour — which of these is a proven effect?",
+          "type": "mcq",
+          "options": [
+            "People with a growth mindset never experience self-doubt",
+            "People with a fixed mindset avoid challenges that might expose their limitations",
+            "Growth mindset guarantees success in any field",
+            "Fixed mindset only affects academic performance, not work or relationships"
+          ],
+          "correctIndex": 1,
+          "explanation": "A key finding is that people with a fixed mindset tend to avoid challenges where they might fail — because failure would \"prove\" they lack ability. Growth mindset people seek challenges because they see them as learning opportunities. Neither mindset guarantees success, and both types experience self-doubt."
+        },
+        {
+          "question": "True or false: Your mindset is permanent — once fixed, always fixed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research consistently shows that mindsets are changeable. Even brief educational interventions can shift how people view their abilities. The irony is beautiful — the belief that \"things can't change\" is itself something that can change."
+        }
+      ]
+    },
+    {
+      "id": "ugm-2-fixed-mindset-talent-trap",
+      "dayNumber": 2,
+      "moduleId": "ugm-module-1",
+      "title": "Fixed Mindset: The Talent Trap",
+      "subtitle": "How the belief in natural talent creates a cage most people never escape.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"If I were really smart, I wouldn't need to try so hard.\"",
+          "body": "This thought — or some version of it — runs through the minds of people with a fixed mindset every single day. It's the talent trap: the belief that needing effort is evidence of inadequacy. If you have to work hard at something, you must not be talented at it. And if you're not talented... why bother?",
+          "stat": "92%",
+          "statLabel": "of fixed-mindset students chose the easier task when given a choice"
+        },
+        {
+          "type": "content",
+          "headline": "The logic of the fixed mindset",
+          "body": "When you believe intelligence or talent is a fixed quantity, a ruthless internal logic takes over. Every situation becomes a test — not of your preparation or strategy, but of your underlying worth.",
+          "bullets": [
+            "Success must look effortless — struggle means you don't have \"it\"",
+            "Challenges are threats, not opportunities — they might expose your limits",
+            "Feedback feels like a verdict on who you are, not what you did",
+            "Other people's success diminishes you — there's only so much talent to go around"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The hidden costs",
+          "body": "Fixed mindset doesn't just make you feel bad — it systematically prevents you from developing your abilities. It creates a self-fulfilling prophecy: you avoid the very experiences that would help you grow.",
+          "bullets": [
+            "You stick to what you're already good at — your comfort zone never expands",
+            "You quit at the first sign of difficulty — \"This isn't for me\"",
+            "You hide mistakes instead of learning from them",
+            "You develop a fragile sense of confidence that cracks under pressure",
+            "Over time, equally talented peers who embrace struggle pull far ahead"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to recognise it in yourself",
+          "body": "Fixed mindset is sneaky. It doesn't announce itself — it whispers in moments of difficulty. Learning to hear these whispers is the first step to freedom.",
+          "bullets": [
+            "\"I'm just not a maths/creative/technical person\" — labelling yourself as permanently unable",
+            "\"They're naturally gifted\" — attributing others' success to innate talent",
+            "\"What if I fail?\" thinking before you even start something new",
+            "Feeling threatened (not inspired) when someone else succeeds at something you value",
+            "Interpreting any criticism as a personal attack rather than useful information"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Catch the talent trap in action",
+          "body": "Over the next 24 hours, notice when you (or someone around you) attributes success or failure to innate talent. \"She's just naturally good at that.\" \"I don't have the brain for it.\" \"He's a born leader.\" Each time you spot it, mentally add: \"...yet.\" \"I don't have the brain for it *yet*.\" Notice how that single word shifts the feeling."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In a fixed mindset, what does needing to work hard at something signal?",
+          "type": "mcq",
+          "options": [
+            "That you're on the right track — effort leads to mastery",
+            "That you lack natural talent — you're not cut out for this",
+            "That the task is appropriately challenging for your level",
+            "That you need a better strategy or approach"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a fixed mindset, effort is seen as evidence of inadequacy. If you were truly talented, things would come easily. This belief is the \"talent trap\" — it makes people avoid anything that requires sustained effort, which ironically prevents them from ever developing real expertise."
+        },
+        {
+          "question": "Why do people with a fixed mindset tend to avoid challenges?",
+          "type": "mcq",
+          "options": [
+            "They're lazy and prefer easy tasks",
+            "They genuinely have less ability than growth-mindset people",
+            "Challenges might reveal their limitations and \"prove\" they lack talent",
+            "They don't care about improvement or success"
+          ],
+          "correctIndex": 2,
+          "explanation": "Challenge avoidance in a fixed mindset isn't laziness — it's self-protection. When your self-worth is tied to appearing talented, any difficult task that you might fail at becomes a threat to your identity. It's easier to stay in your comfort zone where success is guaranteed."
+        },
+        {
+          "question": "True or false: People with a fixed mindset often feel threatened by others' success.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. When you believe talent is a fixed, limited quantity, someone else's success can feel like it diminishes your own worth. In a growth mindset, others' success becomes inspiring because it shows what's possible with effort and strategy."
+        }
+      ]
+    },
+    {
+      "id": "ugm-3-growth-mindset-effort",
+      "dayNumber": 3,
+      "moduleId": "ugm-module-1",
+      "title": "Growth Mindset: Effort Is the Point",
+      "subtitle": "Why the growth mindset isn't about positivity — it's about understanding how mastery actually works.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Michael Jordan was cut from his high school basketball team.",
+          "body": "Most people hear this and think: \"So natural talent wins in the end anyway.\" But that misses the point entirely. Jordan didn't succeed *despite* the setback — he succeeded *because of how he responded to it*. He practised obsessively, using the rejection as fuel. His mindset about what effort means made all the difference.",
+          "stat": "10,000+",
+          "statLabel": "hours of deliberate practice — the common thread in world-class performers"
+        },
+        {
+          "type": "content",
+          "headline": "What growth mindset actually means",
+          "body": "Growth mindset isn't blind optimism or pretending you can do anything. It's a specific, research-backed belief: your basic qualities are things you can cultivate through effort, strategy, and help from others.",
+          "bullets": [
+            "It doesn't deny that people differ in starting ability — some learn faster initially",
+            "The key insight: where you start doesn't determine where you end up",
+            "Effort isn't a sign of weakness — it's the mechanism through which ability develops",
+            "Struggle isn't failure — it's the feeling of your brain forming new connections"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The neuroscience backs it up",
+          "body": "This isn't feel-good philosophy — it's how the brain actually works. Neuroscience shows that the brain is far more malleable than we once thought, even well into adulthood.",
+          "bullets": [
+            "Neuroplasticity: the brain physically rewires itself through learning and practice",
+            "New neural pathways form every time you push past your comfort zone",
+            "Myelin (insulation around neural pathways) thickens with repeated practice — literally making you faster",
+            "Brain scans show measurable growth in regions activated by sustained practice",
+            "This works at any age — \"too old to learn\" is a myth"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Effort + Strategy = Growth",
+          "body": "Here's a crucial nuance: growth mindset isn't just \"try harder.\" Blind effort without strategy is exhausting and ineffective. The real formula is effort applied with the right strategies, adjusted based on feedback.",
+          "bullets": [
+            "Effort alone isn't enough — you need effective strategies",
+            "Seeking feedback is a growth behaviour — it shows you where to adjust",
+            "Asking for help isn't weakness — it's strategic resource-use",
+            "When something isn't working, change your approach — not your self-belief",
+            "The growth mindset question isn't \"Can I do this?\" — it's \"What do I need to learn to do this?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Reframe one struggle as growth",
+          "body": "Think of something you're currently struggling with — a skill at work, a habit you're trying to build, a relationship challenge. Instead of \"I'm bad at this,\" try: \"I'm in the early stages of getting better at this. What strategy could I try next?\" Write down one specific new approach you could test this week."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does growth mindset say about the role of effort?",
+          "type": "mcq",
+          "options": [
+            "Effort guarantees success in anything you attempt",
+            "Effort is the mechanism through which ability develops",
+            "Effort is less important than natural starting ability",
+            "If you need to put in effort, you're probably in the wrong field"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a growth mindset, effort isn't a consolation prize — it's the actual mechanism of growth. Your brain physically changes through sustained effort and practice. However, effort alone isn't enough — it needs to be paired with effective strategies and feedback."
+        },
+        {
+          "question": "Which statement best captures the growth mindset approach to struggle?",
+          "type": "mcq",
+          "options": [
+            "\"If I just stay positive, things will work out\"",
+            "\"Struggle means my brain is forming new connections — what strategy should I try next?\"",
+            "\"If I'm struggling, I should find something I'm naturally better at\"",
+            "\"Hard work always beats talent, no exceptions\""
+          ],
+          "correctIndex": 1,
+          "explanation": "Growth mindset reframes struggle from \"evidence of inadequacy\" to \"evidence of learning in progress.\" But it's not just blind positivity — it also asks the strategic question: what approach should I try next? This combination of persistence + strategy adjustment is what drives real growth."
+        },
+        {
+          "question": "True or false: Growth mindset means believing everyone has exactly equal potential.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Growth mindset acknowledges that people differ in initial abilities and learning speed. The key insight isn't that everyone is the same — it's that everyone can get significantly better than where they started. Your starting point doesn't define your ceiling."
+        }
+      ]
+    },
+    {
+      "id": "ugm-4-how-mindsets-form",
+      "dayNumber": 4,
+      "moduleId": "ugm-module-1",
+      "title": "How Mindsets Form",
+      "subtitle": "Trace the origins of your beliefs about ability — and discover why they feel so \"true.\"",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Nobody is born with a fixed mindset.",
+          "body": "Watch any toddler learning to walk. They fall hundreds of times and never once think: \"I'm just not a walking person.\" They get up, adjust, try again. Somewhere between childhood and adulthood, many of us lose this instinct. What happened? The answer lies in the messages we absorbed — often without anyone meaning harm.",
+          "stat": "6",
+          "statLabel": "years old — the age when children start categorising themselves as \"smart\" or \"not smart\""
+        },
+        {
+          "type": "content",
+          "headline": "The messages that shaped you",
+          "body": "Mindsets form through repeated experiences and the interpretations we make of them. Several key sources contribute to the beliefs we carry into adulthood.",
+          "bullets": [
+            "Early praise patterns — being told \"you're so smart\" vs \"you worked really hard on that\"",
+            "Role models — watching adults react to their own failures and challenges",
+            "School systems — grading and ranking that imply intelligence is measurable and fixed",
+            "Cultural narratives — \"genius\" stories that erase the years of effort behind achievements",
+            "Peer comparison — being sorted into \"talented\" and \"less talented\" groups early on"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why fixed beliefs feel so real",
+          "body": "Once a mindset forms, it creates a confirmation bias loop. You unconsciously seek out evidence that proves your belief and dismiss evidence that contradicts it.",
+          "bullets": [
+            "If you believe you're \"bad at maths,\" you notice every mistake and discount every success",
+            "You avoid situations that might disprove your belief — so you never get contradicting evidence",
+            "Others' success in that area feels like further proof: \"See? They have the talent I lack\"",
+            "Years of this create what feels like an unshakeable truth — but it's just a well-reinforced habit of thought"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The environment factor",
+          "body": "Mindsets aren't just personal — they're environmental. The cultures, workplaces, and relationships you're in right now are either reinforcing a fixed mindset or nurturing a growth one.",
+          "bullets": [
+            "Workplaces that rank employees harshly encourage hiding mistakes — fixed mindset culture",
+            "Teams that celebrate learning from failure encourage risk-taking — growth culture",
+            "Relationships where partners say \"that's just how I am\" reinforce fixed beliefs",
+            "You can choose environments that support the mindset you want to develop"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Map your mindset origins",
+          "body": "Pick one area where you hold a strong fixed belief (\"I'm not creative\" / \"I'm bad with people\" / \"I can't do numbers\"). Now trace it back: When did you first start believing this? Was there a specific moment — a grade, a comment, a comparison — that planted this seed? Understanding the origin loosens its grip."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "At approximately what age do children begin categorising themselves as \"smart\" or \"not smart\"?",
+          "type": "mcq",
+          "options": [
+            "Around 2–3 years old",
+            "Around 6 years old",
+            "Around 10–11 years old",
+            "Only in adolescence (13+)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that around age 6, children start internalising beliefs about whether intelligence is a fixed trait. Before this age, most children approach learning with a natural growth orientation — they don't yet judge themselves as \"smart\" or \"not smart.\""
+        },
+        {
+          "question": "Why do fixed mindset beliefs feel so true and hard to change?",
+          "type": "mcq",
+          "options": [
+            "Because they're usually based on accurate self-assessment",
+            "Because confirmation bias makes you seek evidence that supports the belief while ignoring contradictions",
+            "Because genetics determine your mindset permanently",
+            "Because other people constantly remind you of your limitations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fixed beliefs persist because of confirmation bias — you unconsciously notice evidence that confirms your belief and filter out evidence that contradicts it. You also avoid challenges that might disprove the belief, creating a self-reinforcing loop that makes the belief feel like undeniable truth."
+        },
+        {
+          "question": "True or false: Your current environment has no effect on your mindset — it's entirely shaped in childhood.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. While early experiences strongly influence mindset formation, your current environment continues to shape your beliefs. Workplaces, relationships, and cultures either reinforce fixed thinking or nurture growth thinking. This means you can intentionally choose environments that support the mindset you want."
+        }
+      ]
+    },
+    {
+      "id": "ugm-5-praise-and-labels",
+      "dayNumber": 5,
+      "moduleId": "ugm-module-1",
+      "title": "Praise and Labels",
+      "subtitle": "The surprising science of how well-meaning praise can accidentally create a fixed mindset.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"You're so smart!\" — the most damaging compliment.",
+          "body": "It seems like the nicest thing you can say to a child (or anyone). But decades of research reveal a disturbing pattern: praising someone for being \"smart\" or \"talented\" actually makes them *more* fragile, *more* risk-averse, and *less* likely to reach their potential. How can something so well-intentioned go so wrong?",
+          "stat": "40%",
+          "statLabel": "drop in performance when \"smart-praised\" children faced a harder task"
+        },
+        {
+          "type": "content",
+          "headline": "The landmark praise experiments",
+          "body": "In a famous series of studies, researchers gave children a set of puzzles. Afterward, half were praised for intelligence (\"You're so smart!\") and half for effort (\"You worked really hard!\"). What happened next shocked everyone.",
+          "bullets": [
+            "When offered a harder challenge, 90% of effort-praised children chose it — only 33% of smart-praised did",
+            "Smart-praised children lied about their scores more often — they felt pressure to maintain the \"smart\" image",
+            "On subsequent difficult tasks, smart-praised children's performance dropped 25% — effort-praised improved 30%",
+            "Smart-praised children reported less enjoyment of the puzzles — success became stressful, not fun"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why person-praise backfires",
+          "body": "When you praise the person (\"You're talented / gifted / a natural\"), you accidentally teach them that success comes from a fixed quality. This creates a fragile identity that must be protected at all costs.",
+          "bullets": [
+            "\"Smart\" becomes an identity to defend, not a skill to develop",
+            "Any failure threatens the label — so you avoid situations where you might fail",
+            "Effort feels dangerous — if you need to try hard, maybe you're not actually smart",
+            "The child learns: \"My worth depends on looking smart, not on learning\"",
+            "Adults carry these patterns for decades — the \"gifted kid burnout\" phenomenon"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The growth alternative: process praise",
+          "body": "Process praise focuses on what someone *did* rather than what they *are*. It reinforces the behaviours that actually lead to growth — effort, strategy, persistence, and learning.",
+          "bullets": [
+            "Instead of \"You're so smart\" → \"You found a really creative strategy there\"",
+            "Instead of \"You're a natural\" → \"Your practice is really paying off\"",
+            "Instead of \"You're talented\" → \"I can see how much effort you put into this — it shows\"",
+            "Instead of \"You got an A — you're brilliant\" → \"You got an A — what study method worked best?\"",
+            "This applies to self-talk too — praise your own process, not your identity"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit your praise language",
+          "body": "For the next 48 hours, notice every time you praise someone (including yourself). Is it person-praise (\"you're so smart/talented/creative\") or process-praise (\"you worked hard/found a clever approach/didn't give up\")? Try converting at least three person-praises into process-praises. Notice how it changes the conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In the landmark praise experiments, what happened when children praised for being \"smart\" faced harder tasks?",
+          "type": "mcq",
+          "options": [
+            "They performed better — the confidence boost helped",
+            "They performed the same — the praise had no effect",
+            "Their performance dropped significantly and they enjoyed the tasks less",
+            "They asked for help more often — showing good self-awareness"
+          ],
+          "correctIndex": 2,
+          "explanation": "Children praised for intelligence showed a 25% drop in performance on harder tasks and reported less enjoyment. The \"smart\" label created pressure to maintain the image, making difficulty feel threatening rather than engaging. Meanwhile, effort-praised children improved by 30%."
+        },
+        {
+          "question": "What is \"process praise\" and why does it work better than person praise?",
+          "type": "mcq",
+          "options": [
+            "Praising the process (effort, strategy, persistence) reinforces the behaviours that lead to growth",
+            "Praising someone's character traits to build overall self-esteem",
+            "Only praising when someone achieves a perfect result",
+            "Praising in private rather than in public to avoid embarrassment"
+          ],
+          "correctIndex": 0,
+          "explanation": "Process praise focuses on what someone *did* — their effort, strategy, persistence, or approach — rather than what they *are*. This works better because it reinforces the controllable behaviours that actually lead to growth, rather than creating a fragile identity to protect."
+        },
+        {
+          "question": "True or false: The effects of \"smart\" praise in childhood typically fade by adulthood.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Many adults carry the effects of person-praise well into adulthood — the \"gifted kid burnout\" phenomenon describes people who were labelled \"smart\" as children and now struggle with perfectionism, risk-aversion, and fear of failure as adults. These patterns persist until consciously addressed."
+        }
+      ]
+    },
+    {
+      "id": "ugm-6-module-1-checkpoint",
+      "dayNumber": 6,
+      "moduleId": "ugm-module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Consolidate everything you've learned about the two mindsets — test your understanding and lock in the knowledge.",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now know something most people never learn.",
+          "body": "Over the past five lessons, you've uncovered the hidden operating system running beneath your decisions, reactions, and potential. You understand the two mindsets, how they form, and why praise matters. That's genuinely powerful knowledge. Let's make sure it sticks by reviewing the core principles and testing your understanding one final time.",
+          "stat": "5",
+          "statLabel": "key principles from this module that can transform how you approach any challenge"
+        },
+        {
+          "type": "content",
+          "headline": "Core principle #1: The belief beneath everything",
+          "body": "Your implicit belief about whether abilities are fixed or developable is the single biggest predictor of how you'll respond to challenges, setbacks, and effort. It's not just a thought — it's a lens that colours every experience.",
+          "bullets": [
+            "Fixed mindset: ability is innate and unchangeable → leads to avoidance and fragility",
+            "Growth mindset: ability is developable through effort and strategy → leads to resilience and continuous improvement",
+            "Most people are a mixture — fixed in some areas, growth in others",
+            "Awareness of your default is the foundation for change"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Core principle #2: Effort is information, not inadequacy",
+          "body": "In a growth mindset, effort isn't a sign that you lack talent — it's the mechanism through which talent develops. Struggle means your brain is actively building new pathways. The discomfort of challenge is the feeling of growth in progress.",
+          "bullets": [
+            "Neuroscience confirms: brains physically change through sustained effort and practice",
+            "But effort alone isn't enough — it needs strategy and feedback to be effective",
+            "The question to ask isn't \"Am I talented enough?\" — it's \"What strategy should I try next?\"",
+            "Reframing effort from threat to signal is one of the most powerful mindset shifts"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Core principle #3: Mindsets are made, not born",
+          "body": "Your current mindset was shaped by experiences, praise patterns, role models, and environments. It feels permanent because of confirmation bias — but it's actually a learned pattern of thought that can be unlearned and replaced.",
+          "bullets": [
+            "Person-praise (\"you're so smart\") accidentally creates fixed mindset",
+            "Process-praise (\"your strategy worked well\") nurtures growth mindset",
+            "Your current environment is still shaping your mindset right now",
+            "You can choose — starting today — to surround yourself with growth-oriented inputs"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 1 commitment",
+          "body": "Choose one specific area of your life where you've been operating in a fixed mindset. Write it down. Then write: \"In this area, I'm choosing to believe that I can improve through effort and the right strategy. My first step will be ___.\" Make it concrete. Make it small. Make it this week. You're about to put this knowledge into action in Module 2."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of the following best summarises the relationship between mindset and behaviour?",
+          "type": "mcq",
+          "options": [
+            "Mindset has minimal impact on behaviour — actions are mostly driven by circumstances",
+            "Your belief about whether abilities can change predicts whether you seek challenges or avoid them",
+            "Only people with high intelligence can benefit from a growth mindset",
+            "Mindset affects mood but has no measurable impact on performance or achievement"
+          ],
+          "correctIndex": 1,
+          "explanation": "The research consistently shows that your implicit belief about ability (fixed vs growable) directly predicts behaviour: whether you approach or avoid challenges, persist or quit when things get hard, and view effort as productive or pointless. This behavioural pattern then compounds into dramatically different outcomes over time."
+        },
+        {
+          "question": "A friend says \"I just got lucky on that test — I'm not actually smart enough for this class.\" Which mindset pattern does this reflect?",
+          "type": "mcq",
+          "options": [
+            "Growth mindset — they're being appropriately humble",
+            "Fixed mindset — they're dismissing their success because it threatens their self-image as \"not smart enough\"",
+            "Neither — this is just low self-esteem, not a mindset issue",
+            "Growth mindset — they're acknowledging external factors beyond their control"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is a classic fixed mindset pattern: attributing success to luck rather than owning it, because the person has a fixed belief that they're \"not smart enough.\" In a growth mindset, they might say \"My study strategy worked well — I'll keep using it.\""
+        },
+        {
+          "question": "True or false: The most effective praise focuses on the person's character traits (\"You're so talented/smart/gifted\").",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Research clearly shows that person-praise (praising traits like intelligence or talent) creates fragile, risk-averse behaviour. Process praise — focusing on effort, strategy, and persistence — is far more effective because it reinforces the controllable behaviours that actually drive growth."
+        }
+      ]
+    },
+    {
+      "id": "ugm-7-challenge-response",
+      "dayNumber": 7,
+      "moduleId": "ugm-module-2",
+      "title": "Challenge Response",
+      "subtitle": "How you react in the first 3 seconds of difficulty reveals your mindset — and determines your outcome.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The moment everything is decided.",
+          "body": "You open an email with unexpected negative feedback. You hit a wall on a project that was going smoothly. You realise the thing you're learning is much harder than you expected. In that instant — before you've consciously thought about it — your mindset fires. The fixed mindset says \"retreat.\" The growth mindset says \"lean in.\" That split-second response sets the trajectory for everything that follows.",
+          "stat": "3",
+          "statLabel": "seconds — the window in which your automatic mindset response activates"
+        },
+        {
+          "type": "content",
+          "headline": "Two reactions to the same challenge",
+          "body": "Imagine two people given the same difficult assignment. Same ability level, same resources, same deadline. Watch how mindset creates completely different experiences from identical starting points.",
+          "bullets": [
+            "Fixed response: \"This is too hard. Maybe I'm not cut out for this.\" → anxiety, avoidance, surface-level effort",
+            "Growth response: \"This is hard. Good — I'll learn something new.\" → curiosity, persistence, strategic effort",
+            "Fixed response to confusion: \"I don't get it = I can't get it\" → stops trying",
+            "Growth response to confusion: \"I don't get it yet — what am I missing?\" → adjusts approach",
+            "Same challenge. Same person potential. Wildly different outcomes — all from the initial response."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The challenge spectrum",
+          "body": "Not all challenges are equal. Understanding where you sit on the challenge spectrum helps you design optimal growth — pushing past comfort without burning out.",
+          "bullets": [
+            "Comfort zone: things you can do easily — no growth happens here",
+            "Stretch zone: challenging but achievable with effort — this is where growth lives",
+            "Panic zone: so far beyond your ability that you shut down — no learning here either",
+            "Growth mindset means deliberately seeking the stretch zone — and staying in it longer",
+            "Fixed mindset keeps you in the comfort zone and makes the stretch zone feel like the panic zone"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Training your challenge response",
+          "body": "The good news: your initial reaction to challenge is a habit, and habits can be retrained. You can literally rewire how you respond to difficulty through deliberate practice.",
+          "bullets": [
+            "Step 1: Notice the moment — \"I just hit something hard. What's my gut reaction?\"",
+            "Step 2: Name the fixed voice — \"That's my fixed mindset talking. It wants me to retreat.\"",
+            "Step 3: Choose the growth response — \"What would I do if I believed I could figure this out?\"",
+            "Step 4: Take one small action — don't solve the whole problem, just take the next step",
+            "Repetition builds the new habit — each time you override the fixed response, the growth response gets stronger"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Seek one deliberate challenge today",
+          "body": "Intentionally put yourself in a stretch-zone situation today. It can be small: start a conversation in a language you're learning, try a harder workout variation, ask a question in a meeting you'd normally stay quiet in, attempt the harder version of a task. Notice your automatic reaction. Then consciously choose the growth response: \"I'm here to learn, not to look good.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the \"stretch zone\" and why is it important for growth?",
+          "type": "mcq",
+          "options": [
+            "The stretch zone is where tasks are so easy they become boring — it signals time for a change",
+            "The stretch zone is where challenges are beyond your ability with effort — where growth happens",
+            "The stretch zone is where tasks are challenging but achievable with effort — where real growth occurs",
+            "The stretch zone is another name for the panic zone — maximum difficulty equals maximum growth"
+          ],
+          "correctIndex": 2,
+          "explanation": "The stretch zone is the sweet spot between comfort (too easy, no growth) and panic (too hard, shutdown). It's where challenges require genuine effort but remain achievable — this is where the brain builds new connections and skills develop. Growth mindset helps you stay in this zone longer."
+        },
+        {
+          "question": "What is the recommended first step when you notice a fixed-mindset reaction to a challenge?",
+          "type": "mcq",
+          "options": [
+            "Immediately force yourself to feel positive about the challenge",
+            "Walk away and come back when you feel more confident",
+            "Notice the moment and name the fixed voice — \"That's my fixed mindset talking\"",
+            "Find an easier version of the task to build confidence first"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first step is awareness and naming — recognising \"that's my fixed mindset talking\" creates psychological distance between you and the automatic reaction. You're not trying to suppress it or force positivity — just observing it, which creates space to choose a different response."
+        },
+        {
+          "question": "True or false: In a fixed mindset, the stretch zone feels like the panic zone.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. When you believe ability is fixed, any challenge that requires effort feels threatening — it might \"prove\" you lack talent. This makes moderate challenges (stretch zone) feel overwhelming (panic zone), which is why fixed-mindset people stay in their comfort zones where success is guaranteed."
+        }
+      ]
+    },
+    {
+      "id": "ugm-8-failure-as-data",
+      "dayNumber": 8,
+      "moduleId": "ugm-module-2",
+      "title": "Failure as Data",
+      "subtitle": "The radical reframe that turns every setback into your most valuable learning tool.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Thomas Edison's 10,000 \"failures\" weren't failures at all.",
+          "body": "When asked about his many unsuccessful attempts to create a working light bulb, Edison reportedly said: \"I have not failed. I've just found 10,000 ways that won't work.\" This isn't motivational fluff — it's a precise description of how growth-minded people actually experience setbacks. They don't feel failure the way fixed-mindset people do. It's not pleasant, but it's informative. Data, not a verdict.",
+          "stat": "73%",
+          "statLabel": "of successful entrepreneurs failed at least once before their breakthrough"
+        },
+        {
+          "type": "content",
+          "headline": "Two stories about the same event",
+          "body": "When you fail at something, your mindset determines which story you tell yourself. This story — not the failure itself — determines what happens next.",
+          "bullets": [
+            "Fixed story: \"I failed → I'm a failure → This proves my limitations → I should quit/hide/avoid\"",
+            "Growth story: \"I failed → That approach didn't work → Now I know something I didn't before → What will I try differently?\"",
+            "Fixed mindset makes failure about identity — \"I AM a failure\"",
+            "Growth mindset makes failure about behaviour — \"I DID something that didn't work\"",
+            "The difference between \"I am\" and \"I did\" is the difference between being stuck and growing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The failure → data extraction process",
+          "body": "Growth-minded people don't just \"bounce back\" from failure — they actively mine it for information. They have a process (conscious or intuitive) for converting setbacks into insights.",
+          "bullets": [
+            "Step 1: Feel it — don't suppress the disappointment, but don't dwell in it",
+            "Step 2: Separate identity from outcome — \"This failed\" not \"I'm a failure\"",
+            "Step 3: Ask the data questions — What specifically went wrong? When did it go off track?",
+            "Step 4: Extract the lesson — What will I do differently next time?",
+            "Step 5: Apply immediately — Use the insight on your very next attempt"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why avoiding failure is the biggest failure",
+          "body": "The ultimate irony of the fixed mindset: by trying to avoid failure, you guarantee the worst kind of failure — the failure to grow, learn, and reach your potential.",
+          "bullets": [
+            "People who never fail aren't brave or talented — they're just playing it safe",
+            "Every skill you have now required failing many times during the learning process",
+            "The people at the top of any field have the most failures — because they've attempted the most",
+            "Failure avoidance = growth avoidance = a life that gets smaller over time",
+            "\"What would I attempt if I knew I couldn't fail?\" is the wrong question. Try: \"What's worth attempting even if I might fail?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Extract data from a recent \"failure\"",
+          "body": "Think of a recent setback — something that didn't go as planned (a presentation, a project, a conversation, a habit you dropped). Now run it through the data extraction process: (1) What specifically went wrong? (2) What was the turning point? (3) What will you do differently next time? Write down one concrete \"data point\" you extracted. You now have something valuable you didn't have before the failure."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between how fixed and growth mindsets interpret failure?",
+          "type": "mcq",
+          "options": [
+            "Fixed mindset ignores failure; growth mindset dwells on it",
+            "Fixed mindset sees failure as identity (\"I am a failure\"); growth mindset sees it as information (\"that approach didn't work\")",
+            "Fixed mindset feels pain from failure; growth mindset feels nothing",
+            "Both mindsets interpret failure the same way — the difference is in their emotional response"
+          ],
+          "correctIndex": 1,
+          "explanation": "The critical distinction is between \"I am\" and \"I did.\" Fixed mindset makes failure about identity — permanent and defining. Growth mindset makes failure about behaviour — temporary and informative. Both mindsets feel the disappointment, but growth mindset doesn't let it define who you are."
+        },
+        {
+          "question": "What is the first step in the \"failure to data\" extraction process?",
+          "type": "mcq",
+          "options": [
+            "Immediately analyse what went wrong before the emotion fades",
+            "Tell yourself it doesn't matter and move on quickly",
+            "Feel the disappointment — don't suppress it, but don't dwell in it",
+            "Blame external circumstances to protect your self-image"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first step is allowing yourself to feel the disappointment without suppressing it or drowning in it. Growth mindset doesn't mean being a robot — it means processing the emotion and then transitioning to the learning phase. Skipping the emotional acknowledgment often leads to avoidance or denial."
+        },
+        {
+          "question": "True or false: People at the top of their field typically have more failures than average performers.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. High performers have more failures because they attempt more difficult things more often. Each failure teaches them something that contributes to eventual success. The person who \"never fails\" is usually someone who never pushed beyond their comfort zone — which means they never reached their potential."
+        }
+      ]
+    },
+    {
+      "id": "ugm-9-criticism-as-fuel",
+      "dayNumber": 9,
+      "moduleId": "ugm-module-2",
+      "title": "Criticism as Fuel",
+      "subtitle": "Transform your relationship with feedback from defensive pain to competitive advantage.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The feedback that changed Pixar.",
+          "body": "Every Pixar film goes through a process called \"Braintrust\" — where the team's work is openly critiqued by peers. Early cuts of their films are often terrible. Toy Story nearly got cancelled. But Pixar built a culture where feedback isn't a threat — it's the primary mechanism of quality. The result? The most consistently excellent creative studio in history. The secret isn't better talent. It's a better relationship with criticism.",
+          "stat": "28",
+          "statLabel": "Academy Awards won by Pixar — built on a culture of embracing harsh feedback"
+        },
+        {
+          "type": "content",
+          "headline": "Why criticism hurts (and why that's okay)",
+          "body": "Let's be honest: receiving criticism doesn't feel good, regardless of your mindset. The difference isn't whether it stings — it's what you do with the sting.",
+          "bullets": [
+            "Fixed response to criticism: \"They're attacking me\" → defensive, dismissive, or devastated",
+            "Growth response to criticism: \"They're showing me something I can't see myself\" → curious, grateful",
+            "The pain is real in both cases — growth mindset doesn't eliminate it",
+            "But growth mindset gives you a shorter recovery time and a productive next step",
+            "Fixed mindset holds grudges; growth mindset holds lessons"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The criticism filter",
+          "body": "Not all criticism is created equal. Growth mindset doesn't mean accepting every piece of feedback uncritically. It means having a filter that extracts value without being destroyed by delivery.",
+          "bullets": [
+            "Ask: \"Is there a kernel of truth here — even if the delivery was poor?\"",
+            "Separate the message from the messenger — good advice can come in harsh packages",
+            "Look for patterns — one person's criticism might be opinion; three people's is data",
+            "Distinguish between feedback on your work and attacks on your character",
+            "You can reject the delivery while accepting the insight — these are separate choices"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Actively seeking feedback",
+          "body": "The ultimate growth move isn't just handling criticism well — it's proactively seeking it out. The people who improve fastest are the ones who ask: \"What am I missing? Where can I do better?\"",
+          "bullets": [
+            "Ask specific questions: \"What's one thing I could improve?\" works better than \"How was I?\"",
+            "Seek feedback from people who are better than you in the area — not just people who'll be nice",
+            "Create safety for honest feedback: thank people for hard truths, never punish honesty",
+            "The discomfort of hearing criticism is always less than the cost of not hearing it",
+            "Schedule regular feedback conversations — don't wait for annual reviews or blowups"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Ask for one piece of honest feedback",
+          "body": "This week, ask someone you trust and respect: \"What's one thing I could do better at [specific area]?\" Then — this is the hard part — listen without defending. Don't explain, justify, or argue. Just say \"Thank you — that's really helpful.\" Notice the urge to defend yourself (that's the fixed mindset). Let it pass. You now have a free growth opportunity that most people never get because they're too afraid to ask."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the key difference between fixed and growth mindset responses to criticism?",
+          "type": "mcq",
+          "options": [
+            "Fixed mindset feels hurt; growth mindset feels nothing",
+            "Fixed mindset sees criticism as an attack; growth mindset sees it as information about blind spots",
+            "Fixed mindset rejects all feedback; growth mindset accepts all feedback uncritically",
+            "Fixed mindset responds verbally; growth mindset stays silent"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both mindsets feel the sting of criticism — growth mindset doesn't make you immune to pain. The difference is interpretation: fixed mindset interprets feedback as an attack on who you are, while growth mindset interprets it as valuable information about something you can improve. This leads to very different next steps."
+        },
+        {
+          "question": "What does the \"criticism filter\" help you do?",
+          "type": "mcq",
+          "options": [
+            "Block out all negative feedback to protect your self-esteem",
+            "Extract useful insights from feedback while separating message from delivery",
+            "Only accept criticism from people you like and respect",
+            "Respond to every criticism with a detailed counter-argument"
+          ],
+          "correctIndex": 1,
+          "explanation": "The criticism filter helps you separate the valuable kernel of truth from poor delivery or mixed intentions. Growth mindset doesn't mean accepting everything uncritically — it means being able to find and use the useful part of feedback even when it comes packaged badly."
+        },
+        {
+          "question": "True or false: Proactively seeking feedback is a hallmark of growth mindset behaviour.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. One of the strongest indicators of a growth mindset is voluntarily asking for honest feedback — especially from people who are better than you in a given area. This shows you value learning over looking good, which is the essence of growth orientation."
+        }
+      ]
+    },
+    {
+      "id": "ugm-10-others-success",
+      "dayNumber": 10,
+      "moduleId": "ugm-module-2",
+      "title": "Other People's Success",
+      "subtitle": "Why their win feels like your loss — and how to flip that reaction into rocket fuel.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Your friend just got promoted. How do you really feel?",
+          "body": "Be honest. When someone in your field — someone at your level — achieves something you haven't yet, what's your gut reaction? Genuine happiness? Or a flash of something darker — jealousy, inadequacy, the sense that their success somehow diminishes you? If it's the latter, you're not a bad person. You're just operating in fixed-mindset mode for that moment. And it's costing you more than you realise.",
+          "stat": "77%",
+          "statLabel": "of people admit to feeling threatened by a peer's success in a domain they value"
+        },
+        {
+          "type": "content",
+          "headline": "Why their win feels like your loss",
+          "body": "In a fixed mindset, talent is a zero-sum game. There's a limited amount of \"smart\" or \"talented\" to go around — and when someone else demonstrates theirs, it feels like evidence that you have less.",
+          "bullets": [
+            "Fixed logic: \"If they're talented, and I haven't achieved that, then I must NOT be talented\"",
+            "It triggers comparison: you measure your inside against their outside",
+            "Success in your domain feels more threatening than success in unrelated areas",
+            "You might unconsciously downplay their achievement: \"They just got lucky\" / \"They had connections\"",
+            "This reaction isolates you from potential mentors, collaborators, and friends"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The growth mindset flip",
+          "body": "In a growth mindset, someone else's success is proof of concept — evidence that the thing you want is achievable. Their path becomes a map, not a mirror.",
+          "bullets": [
+            "Growth logic: \"If they achieved this, it's possible — what can I learn from their path?\"",
+            "Instead of \"Why not me?\" ask \"What did they do that I could try?\"",
+            "Their success expands your sense of what's possible — it raises the ceiling for everyone",
+            "You can feel genuine admiration AND use it as motivation — these aren't contradictions",
+            "The people who learn fastest often surround themselves with people who are ahead of them"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From comparison to inspiration: a practical shift",
+          "body": "You can't eliminate comparison — it's a deeply human instinct. But you can redirect its energy from destructive to constructive in four steps.",
+          "bullets": [
+            "Notice: \"I'm feeling threatened by their success right now\" — name it without judgment",
+            "Acknowledge: \"This is my fixed mindset talking — it believes talent is finite\"",
+            "Reframe: \"What specifically did they do well? What can I extract for my own journey?\"",
+            "Act: Take one concrete step inspired by their example — within 24 hours",
+            "Over time, this turns every peer's success into a free masterclass for you"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Turn envy into a study session",
+          "body": "Think of someone whose success recently triggered comparison or envy. Instead of dismissing or resenting them, study them: What specific habits, decisions, or strategies contributed to their success? Pick one thing they did that you could adapt for your own path. Write it down as a concrete action: \"Inspired by [person]'s approach, I will ___.\" You've just converted envy into a growth plan."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In a fixed mindset, why does someone else's success in your domain feel threatening?",
+          "type": "mcq",
+          "options": [
+            "Because it means there will be fewer opportunities available for you",
+            "Because fixed mindset treats talent as a finite resource — their success implies you have less",
+            "Because successful people tend to be arrogant and difficult to work with",
+            "Because it reminds you of past failures you haven't processed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fixed mindset operates on a scarcity model — if talent is a fixed quantity you either have or don't, then someone else demonstrating high ability feels like evidence that you lack it. Growth mindset sees ability as expandable, so others' success becomes proof of what's possible rather than evidence of your limitations."
+        },
+        {
+          "question": "How does a growth mindset reframe someone else's achievement?",
+          "type": "mcq",
+          "options": [
+            "By dismissing it as unimportant or lucky",
+            "By seeing it as proof of concept — evidence that the goal is achievable and a source of learning",
+            "By pretending not to care about the same goals",
+            "By immediately copying everything they did"
+          ],
+          "correctIndex": 1,
+          "explanation": "Growth mindset reframes others' success from \"evidence of my inadequacy\" to \"proof that this is possible — and a potential source of strategies I can learn from.\" It doesn't mean blindly copying, but it does mean approaching their path with curiosity rather than resentment."
+        },
+        {
+          "question": "True or false: It's possible to feel genuinely happy for someone's success AND use it as motivation for your own growth.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. In a growth mindset, admiration and motivation aren't contradictions — they're complementary. You can celebrate someone's achievement while simultaneously being inspired to work toward your own. This is only a contradiction in a fixed mindset where their success = your failure."
+        }
+      ]
+    },
+    {
+      "id": "ugm-11-effort-strategies",
+      "dayNumber": 11,
+      "moduleId": "ugm-module-2",
+      "title": "Effort Strategies",
+      "subtitle": "Growth mindset isn't \"try harder\" — it's \"try smarter.\" Learn the difference that separates grinders from growers.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"Just try harder\" is terrible advice.",
+          "body": "Here's a mistake many people make when they first learn about growth mindset: they think it means brute-force effort. Grind more hours. Push through walls by sheer willpower. But that's not what the research shows. Effective growth requires *strategic* effort — the right kind of practice, the right feedback loops, and the willingness to change approach when something isn't working. Effort without strategy is like running fast in the wrong direction.",
+          "stat": "10×",
+          "statLabel": "more improvement from deliberate practice vs. the same hours of unstructured practice"
+        },
+        {
+          "type": "content",
+          "headline": "The effort quality spectrum",
+          "body": "Not all effort is created equal. Two people can spend the same number of hours and get vastly different results based on how they structure their practice and learning.",
+          "bullets": [
+            "Naive practice: repeating what you already know → feels productive but produces minimal growth",
+            "Deliberate practice: focused work at the edge of your ability with immediate feedback → high growth",
+            "Passive consumption: reading/watching about a skill → creates familiarity but not capability",
+            "Active application: actually doing the thing with feedback → builds real skill",
+            "The growth mindset question isn't \"Am I trying hard enough?\" — it's \"Am I trying smart enough?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The strategy toolkit",
+          "body": "Growth-minded people don't just persist blindly — they have a toolkit of strategies they cycle through when something isn't working. Here are the most powerful.",
+          "bullets": [
+            "Decomposition: break the hard thing into smaller sub-skills and master each one",
+            "Feedback acceleration: shorten the loop between attempt and feedback (daily, not yearly)",
+            "Model study: find someone who does it well and reverse-engineer their approach",
+            "Constraint removal: identify the ONE bottleneck holding you back and focus there",
+            "Interleaving: mix different types of practice rather than drilling one thing endlessly",
+            "Reflection loops: after each attempt, ask \"What worked? What didn't? What will I change?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When to persist vs. when to pivot",
+          "body": "Growth mindset doesn't mean never quitting. It means quitting intelligently — knowing the difference between productive struggle and a dead-end strategy.",
+          "bullets": [
+            "Persist when: you're in the stretch zone, making incremental progress, and have strategies left to try",
+            "Pivot when: you've tried multiple approaches, gotten feedback, and the current path has hit a wall",
+            "Quitting a strategy isn't quitting the goal — it's applying a better strategy",
+            "\"I need a different approach\" is growth thinking; \"I should give up entirely\" is fixed thinking",
+            "The sunk cost fallacy (\"I've invested too much to change course\") is a fixed-mindset trap"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Upgrade one area of \"dumb effort\" to \"smart effort\"",
+          "body": "Think of something you've been working on where progress has stalled despite putting in time. Ask yourself: \"Am I doing naive practice (repeating what I can already do) or deliberate practice (working at my edge with feedback)?\" Choose ONE strategy from the toolkit — decomposition, faster feedback, model study, constraint removal, or interleaving — and apply it this week. Track whether it breaks the plateau."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the difference between \"naive practice\" and \"deliberate practice\"?",
+          "type": "mcq",
+          "options": [
+            "Naive practice is shorter; deliberate practice takes more hours",
+            "Naive practice repeats what you can already do; deliberate practice works at the edge of your ability with feedback",
+            "Naive practice is for beginners; deliberate practice is for experts only",
+            "There is no meaningful difference — all practice leads to equal improvement"
+          ],
+          "correctIndex": 1,
+          "explanation": "Naive practice feels comfortable because you're repeating things within your ability. Deliberate practice is uncomfortable because you're working at the boundary of your current skill level, getting immediate feedback, and adjusting. Research shows deliberate practice produces up to 10× more improvement per hour."
+        },
+        {
+          "question": "According to growth mindset principles, when is it appropriate to change strategies (pivot)?",
+          "type": "mcq",
+          "options": [
+            "Never — true growth mindset means persisting with the same approach no matter what",
+            "Immediately when something feels difficult — difficulty means you're on the wrong path",
+            "After trying multiple approaches and getting feedback that the current strategy has hit a wall",
+            "Only when an authority figure tells you to change course"
+          ],
+          "correctIndex": 2,
+          "explanation": "Growth mindset includes strategic flexibility. Persisting blindly with a failing approach isn't growth — it's stubbornness. The growth-minded move is to try multiple strategies, use feedback to assess progress, and pivot when evidence shows a different approach would work better. Quitting a strategy isn't quitting the goal."
+        },
+        {
+          "question": "True or false: Growth mindset primarily means \"try harder\" regardless of strategy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. This is one of the most common misconceptions about growth mindset. It's not about raw effort — it's about strategic effort. Trying harder with the wrong approach is like running faster in the wrong direction. True growth mindset combines persistence with strategy adjustment and feedback integration."
+        }
+      ]
+    },
+    {
+      "id": "ugm-12-module-2-checkpoint",
+      "dayNumber": 12,
+      "moduleId": "ugm-module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Review how mindset plays out in real situations — challenges, failures, feedback, and the success of others.",
+      "duration": "4 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now have a complete action toolkit.",
+          "body": "Module 1 gave you understanding — the \"what\" and \"why\" of mindset. Module 2 has given you application — the \"how\" of responding to real-world situations with a growth orientation. You know how to face challenges, extract data from failure, use criticism as fuel, reframe others' success, and apply effort strategically. Let's consolidate these skills before building lasting habits in Module 3.",
+          "stat": "6",
+          "statLabel": "real-world scenarios you now have a growth-mindset playbook for"
+        },
+        {
+          "type": "content",
+          "headline": "Your challenge response system",
+          "body": "When you encounter difficulty, you now have a clear process: notice your automatic reaction, name the fixed voice, choose the growth response, and take one small step forward. The stretch zone is where growth lives — not the comfort zone.",
+          "bullets": [
+            "The 3-second window: your automatic response sets the trajectory — train it to be growth-oriented",
+            "Comfort zone → Stretch zone → Panic zone — aim for the stretch zone deliberately",
+            "Fixed mindset makes stretch feel like panic — awareness dissolves this illusion",
+            "Every time you override the fixed response, the growth pathway strengthens"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your failure and feedback frameworks",
+          "body": "Failure is data, not identity. Criticism is fuel, not attack. These aren't just nice ideas — they're practical frameworks you can apply to any setback or piece of feedback you receive.",
+          "bullets": [
+            "Failure framework: Feel → Separate identity from outcome → Ask data questions → Extract lesson → Apply",
+            "Criticism filter: Is there a kernel of truth? → Separate message from delivery → Look for patterns → Accept or reject the insight",
+            "Others' success: Notice envy → Acknowledge fixed thinking → Reframe as proof of concept → Extract one actionable strategy",
+            "Strategic effort: Is this naive or deliberate practice? → Which toolkit strategy will I try? → Persist or pivot based on evidence"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The compound effect of consistent growth responses",
+          "body": "Each individual growth response might feel small — one challenge faced, one lesson extracted, one piece of feedback integrated. But these compound dramatically over time.",
+          "bullets": [
+            "Daily growth responses vs daily fixed responses = massive divergence within months",
+            "You're not just changing individual outcomes — you're rebuilding your operating system",
+            "Each growth response makes the next one easier — you're building a new neural habit",
+            "People around you start to notice: \"You handle setbacks differently than most people\"",
+            "This becomes self-reinforcing: growth responses → better outcomes → stronger growth belief"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Your Module 2 integration challenge",
+          "body": "This week, keep a brief \"growth log\" — note each time you catch yourself in one of the four scenarios (challenge, failure, criticism, comparison) and which response you chose. At the end of the week, count: how many times did you choose the growth response vs. the fixed response? No judgment — just data. You're building awareness that will serve you throughout Module 3 and beyond."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which framework correctly describes the growth-mindset approach to failure?",
+          "type": "mcq",
+          "options": [
+            "Ignore it → Move on quickly → Never think about it again",
+            "Feel the disappointment → Separate identity from outcome → Extract the lesson → Apply it",
+            "Blame external factors → Protect self-image → Try the exact same approach again",
+            "Analyse endlessly → Never attempt again until you have a perfect strategy"
+          ],
+          "correctIndex": 1,
+          "explanation": "The growth-mindset failure framework has clear steps: first acknowledge the emotion (don't suppress it), then separate \"what happened\" from \"who I am,\" then mine the experience for useful data, and finally apply that data to your next attempt. This converts failure from a verdict into a learning tool."
+        },
+        {
+          "question": "What does it mean to use \"strategic effort\" rather than \"brute-force effort\"?",
+          "type": "mcq",
+          "options": [
+            "Work fewer hours but on more important tasks",
+            "Combine persistence with deliberate practice, feedback loops, and willingness to change approach",
+            "Only work on things that come naturally and easily",
+            "Copy exactly what successful people did without adapting to your situation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Strategic effort means pairing persistence with intelligence: using deliberate practice (working at your edge), creating short feedback loops, studying effective models, and being willing to pivot your approach when evidence shows it isn't working. This produces far more growth per hour than grinding without reflection."
+        },
+        {
+          "question": "True or false: The compound effect of daily growth responses creates massive differences in outcomes within months.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "True. Like compound interest, each small growth response builds on the previous ones. Facing one more challenge, extracting one more lesson, integrating one more piece of feedback — these compound into dramatically different trajectories over weeks and months compared to the fixed-mindset alternative of avoidance and stagnation."
+        }
+      ]
+    },
+    {
+      "id": "ugm-13-inner-voice",
+      "dayNumber": 13,
+      "moduleId": "ugm-module-3",
+      "title": "The Inner Voice",
+      "subtitle": "Meet the two narrators in your head — and learn to turn up the volume on the one that serves you.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "There are two voices. You've been listening to the wrong one.",
+          "body": "Right now, as you read this, there's a running commentary in your head. When you face something new, one voice says: \"What if you fail? What will people think? Stick with what you know.\" Another voice says: \"This could be interesting. You won't know unless you try. What's the worst that can happen?\" Both voices are yours. But they come from different belief systems — and the one you listen to most often wins.",
+          "stat": "60,000",
+          "statLabel": "thoughts per day — the majority are repetitive and follow habitual patterns"
+        },
+        {
+          "type": "content",
+          "headline": "Naming your fixed-mindset voice",
+          "body": "The first step to changing your inner dialogue is recognising it. The fixed-mindset voice has predictable patterns — once you know them, you can catch it in real-time.",
+          "bullets": [
+            "\"You're going to embarrass yourself\" — the fear-of-exposure voice",
+            "\"You're not smart/talented/creative enough for this\" — the limitation voice",
+            "\"If you have to try this hard, you obviously don't have what it takes\" — the effort-shaming voice",
+            "\"Look at what they achieved — you'll never be at that level\" — the comparison voice",
+            "\"Just stick with what you're good at — it's safer\" — the comfort-zone voice"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The talk-back technique",
+          "body": "You can't silence the fixed voice — it's been with you for decades. But you can learn to hear it, acknowledge it, and then consciously choose a different response. This is the talk-back technique.",
+          "bullets": [
+            "Step 1: Hear it — \"There's my fixed voice again, telling me I'll fail\"",
+            "Step 2: Acknowledge it — \"I understand you're trying to protect me from embarrassment\"",
+            "Step 3: Talk back — \"But playing it safe hasn't gotten me where I want to be\"",
+            "Step 4: Reframe — \"I'm choosing to see this as a learning opportunity, not a test of my worth\"",
+            "Step 5: Act on the growth voice — take the action the fixed voice is trying to prevent"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building your growth narrator",
+          "body": "Over time, you're not just silencing a voice — you're building a stronger alternative. The growth narrator gets louder with use, just like any muscle.",
+          "bullets": [
+            "Growth narration in the morning: \"What will I learn today?\" instead of \"What might go wrong?\"",
+            "Growth narration during difficulty: \"This is where I grow\" instead of \"I can't do this\"",
+            "Growth narration after setbacks: \"What did that teach me?\" instead of \"I'm such an idiot\"",
+            "Growth narration about others: \"What can I learn from them?\" instead of \"Why not me?\"",
+            "Each time you narrate growth, the neural pathway for that narration strengthens"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Catch and rewrite three fixed narrations",
+          "body": "Today, set an intention to notice your inner commentary during three different moments: (1) when you face something challenging, (2) when you make a mistake, and (3) when you see someone succeed. Write down what the fixed voice said — then write the growth alternative next to it. You're not trying to be perfectly positive. You're building the habit of having a choice in which voice to follow."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the purpose of the \"talk-back technique\"?",
+          "type": "mcq",
+          "options": [
+            "To permanently silence the fixed-mindset voice through willpower",
+            "To hear the fixed voice, acknowledge it, and consciously choose a growth-oriented response instead",
+            "To argue with yourself until you feel positive about every situation",
+            "To ignore negative thoughts completely and only think positively"
+          ],
+          "correctIndex": 1,
+          "explanation": "The talk-back technique isn't about silencing or suppressing the fixed voice — that doesn't work. It's about creating awareness (hearing it), reducing its power (acknowledging it without obeying it), and then deliberately choosing a growth-oriented response. Over time, this builds a stronger growth narrator."
+        },
+        {
+          "question": "Which of these is an example of the fixed-mindset \"effort-shaming\" voice?",
+          "type": "mcq",
+          "options": [
+            "\"What if people judge you for trying?\"",
+            "\"If you have to try this hard, you obviously don't have what it takes\"",
+            "\"You'll never be as good as them\"",
+            "\"Just stick with what you know — it's safer\""
+          ],
+          "correctIndex": 1,
+          "explanation": "The effort-shaming voice specifically targets the act of trying hard — it says that needing effort is proof of inadequacy. This is distinct from the fear-of-exposure voice (worried about judgment), the comparison voice (others are better), or the comfort-zone voice (stay safe). Each has a different trigger and message."
+        },
+        {
+          "question": "True or false: The goal is to completely eliminate the fixed-mindset voice from your thinking.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. You can't eliminate the fixed-mindset voice — it's been wired in over decades of experience. The realistic goal is to hear it, recognise it for what it is, and choose not to follow it. Over time the growth voice gets louder and the fixed voice gets quieter, but both will always be present to some degree."
+        }
+      ]
+    },
+    {
+      "id": "ugm-14-deliberate-practice",
+      "dayNumber": 14,
+      "moduleId": "ugm-module-3",
+      "title": "Deliberate Practice",
+      "subtitle": "The science of how experts actually get better — and how to apply it to anything you want to master.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "10,000 hours is wrong. Here's what really matters.",
+          "body": "You've probably heard the \"10,000 hour rule\" — that mastery requires 10,000 hours of practice. But the original research showed something much more specific and useful: it's not *any* 10,000 hours that create expertise. It's 10,000 hours of *deliberate practice* — a very specific type of focused effort. Many people practise for decades and never improve because they're doing the wrong kind of practice.",
+          "stat": "85%",
+          "statLabel": "of practice time is \"naive practice\" that produces minimal improvement"
+        },
+        {
+          "type": "content",
+          "headline": "The four pillars of deliberate practice",
+          "body": "Deliberate practice isn't just \"trying hard\" — it has a specific structure that distinguishes it from the ineffective practice most people default to.",
+          "bullets": [
+            "Pillar 1: Specific goals — not \"get better at guitar\" but \"nail the transition between these two chords cleanly 10 times in a row\"",
+            "Pillar 2: Full concentration — no multitasking, no autopilot. Full attention on the skill being developed",
+            "Pillar 3: Immediate feedback — you need to know within seconds whether your attempt worked or didn't",
+            "Pillar 4: Discomfort zone — you're always working at the edge of your current ability, not within it"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Why most \"practice\" doesn't work",
+          "body": "Understanding why normal practice fails helps you avoid the trap. Most people's practice sessions look productive but violate every principle of deliberate practice.",
+          "bullets": [
+            "Playing songs you already know (guitar) vs. working on the transitions that trip you up",
+            "Running the same easy route (fitness) vs. interval training at your speed limit",
+            "Re-reading notes (studying) vs. testing yourself on the material you struggle with",
+            "Writing emails on autopilot (communication) vs. deliberately crafting one message with a new technique",
+            "The common thread: real practice targets weakness, not strength. It feels hard, not comfortable."
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Designing your deliberate practice sessions",
+          "body": "You can apply deliberate practice to virtually any skill — creative, physical, intellectual, or social. Here's a template for designing effective practice sessions.",
+          "bullets": [
+            "Identify the sub-skill: what specific component am I weakest at?",
+            "Set a micro-goal: what will \"success\" look like in this 20-minute session?",
+            "Create feedback: how will I know immediately if each attempt worked?",
+            "Embrace repetition: repeat at the edge of failure — not mindlessly, but attentively",
+            "Reflect and adjust: after 20 minutes, what did I learn? What will I target tomorrow?",
+            "Keep sessions short (20–45 min) — deliberate practice is exhausting; quality > quantity"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Design one deliberate practice session",
+          "body": "Choose a skill you're actively trying to improve. Now design a 20-minute deliberate practice session using the template: (1) What specific sub-skill will I target? (2) What's my micro-goal for the session? (3) How will I get immediate feedback? (4) Am I working at my edge (not too easy, not impossible)? Do the session today. Notice how different it feels from your normal \"practice.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four pillars of deliberate practice?",
+          "type": "mcq",
+          "options": [
+            "Long hours, natural talent, good teachers, early start",
+            "Specific goals, full concentration, immediate feedback, working at your edge",
+            "Passion, persistence, patience, positivity",
+            "Reading, watching, discussing, testing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Deliberate practice requires: (1) specific, measurable goals for each session, (2) full concentration without distraction, (3) immediate feedback so you know what worked, and (4) consistently working at the boundary of your current ability. Missing any one of these dramatically reduces the effectiveness of practice."
+        },
+        {
+          "question": "Why does re-reading notes (a common study method) fail as deliberate practice?",
+          "type": "mcq",
+          "options": [
+            "Because reading is passive — it creates familiarity without testing real recall or application",
+            "Because notes are always incomplete and inaccurate",
+            "Because studying should only happen in groups, not individually",
+            "Because re-reading takes too much time compared to other methods"
+          ],
+          "correctIndex": 0,
+          "explanation": "Re-reading creates an illusion of knowledge — the material feels familiar, so you think you know it. But familiarity isn't the same as the ability to recall or apply. Deliberate practice for studying means testing yourself on the material (active recall), which targets your actual gaps and provides immediate feedback."
+        },
+        {
+          "question": "True or false: Deliberate practice sessions should be long (2+ hours) to maximise improvement.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Deliberate practice is mentally exhausting because it requires full concentration at the edge of your ability. Research shows that even elite performers rarely sustain true deliberate practice for more than 60–90 minutes at a time. Short, focused sessions (20–45 minutes) of genuine deliberate practice often beat hours of unfocused practice."
+        }
+      ]
+    },
+    {
+      "id": "ugm-15-growth-culture",
+      "dayNumber": 15,
+      "moduleId": "ugm-module-3",
+      "title": "Growth Culture",
+      "subtitle": "Your environment shapes your mindset more than your willpower. Learn to build — and choose — growth-oriented spaces.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You become the average of the five people you spend the most time with.",
+          "body": "This isn't just a motivational quote — there's hard science behind it. Research shows that mindset is contagious. If you spend your days in an environment where failure is punished, risk is discouraged, and talent is treated as fixed, your growth mindset will erode no matter how strong your personal commitment. The reverse is equally true: growth-oriented environments make growth feel natural and inevitable.",
+          "stat": "47%",
+          "statLabel": "higher innovation output in teams led by growth-mindset managers"
+        },
+        {
+          "type": "content",
+          "headline": "Fixed-mindset cultures: the warning signs",
+          "body": "Whether it's a workplace, a friend group, or a family, fixed-mindset cultures have recognisable patterns. Learning to spot them helps you make conscious choices about where you invest your time.",
+          "bullets": [
+            "Blame culture: when things go wrong, the focus is on WHO messed up, not what to learn",
+            "Talent worship: people are labelled as \"stars\" or \"not stars\" — no room for development",
+            "Information hoarding: people protect their expertise instead of sharing it",
+            "Risk avoidance: innovation is discouraged because failure isn't tolerated",
+            "Perfectionism pressure: only polished, finished work is valued — messy learning processes are hidden"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Growth-mindset cultures: what to build (or seek out)",
+          "body": "Growth cultures don't happen by accident — they're built through specific practices and values. Whether you're leading a team, raising a family, or choosing friends, these are the markers of growth-oriented environments.",
+          "bullets": [
+            "Psychological safety: people can admit mistakes, ask \"dumb\" questions, and be vulnerable",
+            "Learning focus: \"What did we learn?\" is asked as often as \"What did we achieve?\"",
+            "Process celebration: effort, strategy, and improvement are recognised — not just results",
+            "Feedback normality: honest feedback flows freely because it's treated as a gift, not an attack",
+            "Challenge seeking: difficult projects are pursued because they stretch the team — not avoided because they might fail"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Creating growth culture in your own sphere",
+          "body": "You don't need to be a CEO to create growth culture. You can start building it in any space you influence — your team, your household, your friendships.",
+          "bullets": [
+            "Model it: share your own struggles, failures, and learning processes openly",
+            "Praise process: when you compliment others, focus on their effort and strategy",
+            "Normalise feedback: ask others for feedback on yourself — it gives them permission to be honest",
+            "Celebrate attempts: recognise people for trying new things regardless of outcome",
+            "Ask growth questions: \"What did you learn?\" \"What will you try next?\" \"What was challenging?\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Audit your environment for mindset signals",
+          "body": "Look at your three most common environments (work, home, social). For each one, score them: does failure get punished or explored? Is feedback normal or rare? Are people labelled (\"the smart one\") or developed? Pick one environment where you have influence and introduce one growth-culture practice this week — share a personal failure, ask a growth question, or celebrate someone's effort rather than their result."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a key warning sign of a fixed-mindset culture?",
+          "type": "mcq",
+          "options": [
+            "People openly share their mistakes and what they learned",
+            "When things go wrong, the focus is on who to blame rather than what to learn",
+            "Teams regularly take on challenging projects that stretch their abilities",
+            "Feedback is given frequently and received without defensiveness"
+          ],
+          "correctIndex": 1,
+          "explanation": "Blame culture is one of the strongest indicators of a fixed-mindset environment. When the response to problems is finding who messed up (rather than what can be learned), people learn to hide mistakes, avoid risk, and protect their image — all classic fixed-mindset behaviours. Growth cultures focus on learning from errors, not punishing them."
+        },
+        {
+          "question": "What is \"psychological safety\" and why does it matter for growth culture?",
+          "type": "mcq",
+          "options": [
+            "A policy that prevents anyone from being fired — it protects job security",
+            "An environment where people can admit mistakes and be vulnerable without being punished",
+            "A rule that says all feedback must be positive to avoid hurting feelings",
+            "Physical safety measures in the workplace"
+          ],
+          "correctIndex": 1,
+          "explanation": "Psychological safety means people feel safe to take risks, admit mistakes, ask questions, and be vulnerable without fear of punishment or humiliation. It's the foundation of growth culture because without it, people default to self-protection behaviours (hiding mistakes, avoiding challenges, not asking for help) that prevent learning."
+        },
+        {
+          "question": "True or false: You need to be in a leadership position to create growth culture in your environment.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Anyone can start building growth culture in their sphere of influence — by modelling vulnerability, praising process, normalising feedback, and asking growth-oriented questions. You don't need authority to share your own failures, celebrate others' efforts, or ask \"What did you learn?\" Leadership helps, but influence doesn't require a title."
+        }
+      ]
+    },
+    {
+      "id": "ugm-16-relationships",
+      "dayNumber": 16,
+      "moduleId": "ugm-module-3",
+      "title": "Relationships",
+      "subtitle": "How mindset transforms your closest connections — and why growth-minded relationships outperform all others.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "\"If you really loved me, you'd just know.\"",
+          "body": "This sentence — or some version of it — has ended more relationships than infidelity. It's the fixed mindset applied to love: the belief that good relationships should be effortless, that compatible partners \"just work\" without trying, and that needing to communicate or compromise means something is wrong. It's the talent trap — but for your heart.",
+          "stat": "67%",
+          "statLabel": "of relationship conflicts stem from fixed-mindset beliefs about how love \"should\" work"
+        },
+        {
+          "type": "content",
+          "headline": "Fixed mindset in relationships",
+          "body": "When you bring a fixed mindset to relationships, you believe compatibility is a fixed trait — you either \"have it\" or you don't. This creates a fragile, avoidant dynamic that erodes connection over time.",
+          "bullets": [
+            "\"If we have to work at it, we're not right for each other\" — effort signals failure",
+            "\"They should know what I need without me having to say it\" — mind-reading expectation",
+            "\"This flaw in them will never change — I should leave or just accept it\" — no room for growth",
+            "\"Disagreements mean we're incompatible\" — conflict signals a dead end",
+            "\"If they really loved me, they'd never hurt me\" — impossible standard that guarantees disappointment"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Growth mindset in relationships",
+          "body": "Growth-minded relationships are built on the belief that connection is developed — not found. That two people can build something extraordinary through honest communication, mutual effort, and willingness to grow together.",
+          "bullets": [
+            "\"Every relationship requires effort — that effort IS the relationship\" — work is normal",
+            "\"I'll communicate what I need clearly — they can't read my mind\" — radical honesty",
+            "\"We can both change and grow — today's problem doesn't define us forever\" — room for development",
+            "\"Disagreements are opportunities to understand each other more deeply\" — conflict as connection",
+            "\"We're teammates working on this relationship together\" — collaborative not adversarial"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Applying growth mindset to existing relationships",
+          "body": "You don't need a new relationship to apply these principles. You can transform the dynamics of your current connections starting today.",
+          "bullets": [
+            "Replace blame with curiosity: \"Why did you do that?\" → \"Help me understand what happened from your perspective\"",
+            "Replace judgment with coaching: \"You always do this\" → \"What could we try differently next time?\"",
+            "Replace withdrawal with engagement: silent treatment → \"I need some time, but I want to talk about this later\"",
+            "Replace mind-reading with communication: \"You should know\" → \"Here's what I need from you\"",
+            "Replace score-keeping with partnership: \"You owe me\" → \"We're in this together\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Identify one fixed-mindset relationship pattern",
+          "body": "Think of your closest relationship (partner, best friend, family member). What's one fixed-mindset belief you've been holding about it? \"They'll never change.\" \"If I have to ask, it doesn't count.\" \"We're just too different.\" Now rewrite it as a growth statement: \"We can learn to ___.\" Have one honest conversation this week where you communicate a need directly instead of expecting them to know."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fixed-mindset belief about effort in relationships?",
+          "type": "mcq",
+          "options": [
+            "All good relationships require constant effort and communication",
+            "If a relationship requires work, it means you're not truly compatible",
+            "Effort in relationships is a sign of deep commitment and love",
+            "Some relationships need more effort than others — that's normal"
+          ],
+          "correctIndex": 1,
+          "explanation": "The fixed mindset in relationships mirrors the talent trap: just as it says \"if you were truly smart, you wouldn't need to try hard,\" it says \"if you were truly compatible, the relationship wouldn't require work.\" This belief causes people to abandon good relationships at the first sign of difficulty."
+        },
+        {
+          "question": "How does growth mindset reframe disagreements in relationships?",
+          "type": "mcq",
+          "options": [
+            "Disagreements should be avoided to maintain harmony",
+            "Disagreements prove incompatibility and signal it's time to leave",
+            "Disagreements are opportunities to understand each other more deeply",
+            "Disagreements are one person's fault and they need to apologise"
+          ],
+          "correctIndex": 2,
+          "explanation": "In a growth mindset, disagreements aren't evidence of failure — they're opportunities for deeper understanding. When two people disagree and work through it with curiosity rather than defensiveness, they learn more about each other's needs and build stronger connection. This doesn't mean tolerating harmful behaviour — it means engaging rather than withdrawing."
+        },
+        {
+          "question": "True or false: \"If they really loved me, they'd know what I need without me saying it\" is a growth-mindset belief.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. The mind-reading expectation is a classic fixed-mindset belief in relationships. Growth mindset recognises that clear communication is essential — no one can perfectly intuit another person's needs all the time. Expressing your needs directly isn't a sign of a bad relationship; it's a sign of a healthy one."
+        }
+      ]
+    },
+    {
+      "id": "ugm-17-parenting-teaching",
+      "dayNumber": 17,
+      "moduleId": "ugm-module-3",
+      "title": "Parenting and Teaching",
+      "subtitle": "How to nurture growth mindset in others — whether you're raising children, leading a team, or mentoring a colleague.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Every interaction is planting a seed.",
+          "body": "Whether you're a parent, teacher, manager, mentor, or friend — every time you respond to someone's effort, failure, or success, you're either planting fixed-mindset seeds or growth-mindset seeds. A single comment can shift how a child approaches challenges for years. A single response to a team member's mistake can define whether they ever take a risk again. The responsibility is enormous — but so is the opportunity.",
+          "stat": "80%",
+          "statLabel": "of mindset-shaping messages are delivered unconsciously — through reactions, not lectures"
+        },
+        {
+          "type": "content",
+          "headline": "The five growth-mindset principles for developing others",
+          "body": "Whether you're raising a child or developing an employee, the same principles apply. These are the research-backed approaches that nurture growth mindset in anyone you influence.",
+          "bullets": [
+            "Principle 1: Praise the process — effort, strategy, persistence — never the person's fixed traits",
+            "Principle 2: Normalise struggle — \"This is supposed to be hard. That's how you know you're learning\"",
+            "Principle 3: Model failure — share your own mistakes and what you learned from them",
+            "Principle 4: Ask growth questions — \"What did you learn?\" \"What will you try next?\" \"What was hardest?\"",
+            "Principle 5: Set high standards WITH support — believe in their potential AND provide the scaffolding"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common mistakes that accidentally create fixed mindset",
+          "body": "Well-meaning adults often unknowingly reinforce fixed thinking. Recognising these patterns is the first step to changing them.",
+          "bullets": [
+            "Labelling: \"You're the smart one\" / \"She's the creative one\" / \"He's not a maths person\"",
+            "Lowering standards: \"Don't worry, not everyone can do maths\" — communicates fixed limits",
+            "Over-helping: doing things for them instead of letting them struggle productively",
+            "Outcome focus: only celebrating wins, never the learning process behind failures",
+            "Comparison: \"Why can't you be more like your sister?\" — pits identity against identity",
+            "Console with ability: \"It's OK, you're still smart\" after failure — reinforces talent-based worth"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Growth-mindset responses for everyday moments",
+          "body": "The most powerful mindset-shaping happens in everyday interactions — not in formal lessons. Here's a cheat sheet for responding with growth orientation in common situations.",
+          "bullets": [
+            "When they succeed easily: \"That was too easy — let's find something that stretches you more\"",
+            "When they struggle: \"Good — struggle means your brain is making new connections right now\"",
+            "When they fail: \"What did you learn? What will you try differently next time?\"",
+            "When they say \"I can't\": \"You can't do it yet. What's one step closer you could take?\"",
+            "When they compare themselves: \"Everyone's on their own timeline. Focus on YOUR progress from last month\""
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Swap three responses this week",
+          "body": "Think of someone you regularly influence (child, student, team member, partner). This week, consciously swap three of your typical responses for growth-minded alternatives: (1) Replace one person-praise with process-praise. (2) Replace one \"consolation for failure\" with a growth question. (3) Replace one instance of over-helping with encouragement to try again. Notice how they respond differently."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which response best nurtures growth mindset when a child fails a test?",
+          "type": "mcq",
+          "options": [
+            "\"It's OK, you're still smart — some people just aren't good at this subject\"",
+            "\"You didn't study hard enough — try harder next time\"",
+            "\"What study method did you use? Let's figure out what approach might work better\"",
+            "\"Don't worry about it — grades don't matter anyway\""
+          ],
+          "correctIndex": 2,
+          "explanation": "The growth-mindset response focuses on strategy and process — not fixed identity (\"you're still smart\"), blind effort (\"try harder\"), or dismissal (\"it doesn't matter\"). Asking about their approach treats the failure as data and empowers them to develop better strategies rather than feeling helpless or labelled."
+        },
+        {
+          "question": "Why is \"You're the smart one\" problematic even though it sounds positive?",
+          "type": "mcq",
+          "options": [
+            "Because it makes other people feel bad about themselves",
+            "Because it creates a fixed identity that must be defended — making the child avoid challenges that might disprove the label",
+            "Because children should never receive compliments about their abilities",
+            "Because it's not specific enough to be useful"
+          ],
+          "correctIndex": 1,
+          "explanation": "Labels like \"the smart one\" create a fixed identity. The child then avoids challenges that might prove them \"not smart,\" hides failures that might revoke the label, and views effort as threatening (smart people shouldn't need to try). This is exactly how well-meaning praise creates the fixed-mindset trap."
+        },
+        {
+          "question": "True or false: When someone succeeds easily, the growth-mindset response is to praise them for being talented.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. When someone succeeds easily, the growth response is actually: \"That was too easy — let's find you something more challenging.\" Easy success means they're in their comfort zone, not their stretch zone. Praising talent for easy success teaches them that effortless performance = good, which makes them avoid harder challenges."
+        }
+      ]
+    },
+    {
+      "id": "ugm-18-lifelong-growth",
+      "dayNumber": 18,
+      "moduleId": "ugm-module-3",
+      "title": "Lifelong Growth",
+      "subtitle": "Your mindset journey doesn't end here — it's a practice for life. Build the systems that keep you growing forever.",
+      "duration": "5 min",
+      "xpValue": 20,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The people who are still growing at 80 share one thing.",
+          "body": "They never stopped being beginners at something. While others settled into comfortable routines decades ago, lifelong growers consistently put themselves in unfamiliar territory — learning new languages at 65, starting businesses at 70, picking up instruments at 75. The research is clear: cognitive decline accelerates most in people who stop challenging themselves. Your brain is a use-it-or-lose-it organ. Growth mindset isn't just about success — it's about staying alive in the deepest sense.",
+          "stat": "30%",
+          "statLabel": "less cognitive decline in older adults who regularly engage in challenging new learning"
+        },
+        {
+          "type": "content",
+          "headline": "The growth mindset as a lifelong practice",
+          "body": "Growth mindset isn't a destination you arrive at — it's a daily practice. Like physical fitness, it requires consistent engagement to maintain. Here's what lifelong growth practice looks like.",
+          "bullets": [
+            "Always have a \"beginner project\" — something where you're openly bad and visibly learning",
+            "Seek discomfort regularly — the day you stop being uncomfortable is the day you stop growing",
+            "Maintain a learning community — surround yourself with people who are also actively developing",
+            "Review and update your self-beliefs — identities that served you at 25 may limit you at 45",
+            "Teach what you learn — it deepens your understanding and spreads growth culture"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Building your growth operating system",
+          "body": "To sustain growth mindset for life, you need systems — not just motivation. Systems run automatically even when willpower is low. Here are the growth systems that keep you on track.",
+          "bullets": [
+            "Weekly reflection: \"What challenged me this week? What did I learn? Where did I default to fixed?\"",
+            "Monthly stretch goal: one thing you'll attempt that's outside your comfort zone",
+            "Quarterly skill audit: \"What am I getting better at? Where have I plateaued? What do I want to learn next?\"",
+            "Annual identity review: \"What labels am I carrying that no longer serve me?\"",
+            "Daily growth trigger: one question each morning — \"What will I learn today?\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Your growth manifesto",
+          "body": "You've completed 18 lessons. You understand the science, the psychology, and the practical application of growth mindset. Here's your manifesto — the beliefs you're choosing to carry forward.",
+          "bullets": [
+            "I believe my abilities are developable — my starting point doesn't define my ceiling",
+            "I choose effort over comfort — struggle is the feeling of growth in progress",
+            "I use failure as data — every setback teaches me something I couldn't learn any other way",
+            "I seek feedback actively — criticism is a gift that shows me my blind spots",
+            "I celebrate others' success — their achievement proves what's possible for me too",
+            "I am a lifelong beginner — there is always more to learn, and that excites me"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create your growth contract",
+          "body": "Write a personal \"growth contract\" with yourself. Include: (1) One area you commit to developing over the next 3 months. (2) Your weekly reflection practice (when and where). (3) One \"beginner project\" you'll start this month. (4) How you'll respond next time the fixed voice says \"you can't.\" Sign it. Date it. Put it somewhere you'll see it. This isn't the end of your growth journey — it's the beginning of a self-sustaining one."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to research, what happens to cognitive decline in people who regularly engage in challenging new learning?",
+          "type": "mcq",
+          "options": [
+            "It accelerates because challenging activities cause stress",
+            "It is reduced by approximately 30% compared to those who stop challenging themselves",
+            "There is no relationship between learning and cognitive decline",
+            "It only helps if the learning started before age 50"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that older adults who continue engaging in challenging new learning experiences (not just repeating familiar activities) show approximately 30% less cognitive decline. The brain is a \"use it or lose it\" organ — growth mindset isn't just about achievement, it's about maintaining mental vitality throughout life."
+        },
+        {
+          "question": "Why is it important to \"always have a beginner project\"?",
+          "type": "mcq",
+          "options": [
+            "Because being a beginner is more fun than being an expert",
+            "Because it keeps you in the discomfort of learning, maintains humility, and exercises your growth mindset muscles",
+            "Because experts are never respected as much as beginners",
+            "Because you should never get too good at any one thing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Having a \"beginner project\" where you're openly bad at something keeps your growth mindset active and exercised. It maintains your comfort with discomfort, keeps you humble and empathetic toward other learners, and prevents the trap of only doing things you're already good at (which is the comfort zone of fixed mindset)."
+        },
+        {
+          "question": "True or false: Growth mindset is a destination — once you fully understand it, the work is done.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "False. Growth mindset is a lifelong practice, not a destination. Like physical fitness, it requires ongoing engagement to maintain. Without consistent challenge, reflection, and deliberate growth activities, anyone can drift back toward fixed-mindset defaults. That's why building systems (weekly reflections, monthly stretch goals) is essential."
+        }
+      ]
+    }
+  ]
+}

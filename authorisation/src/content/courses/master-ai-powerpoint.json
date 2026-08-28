@@ -1,0 +1,1772 @@
+{
+  "id": "master-ai-powerpoint",
+  "title": "Master AI for PowerPoint",
+  "subtitle": "Use AI to plan, build and deliver presentations that actually land — no design skills needed.",
+  "totalDays": 18,
+  "totalXp": 450,
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "AI Presentation Foundations",
+      "subtitle": "Set up your tools and learn to brief AI properly",
+      "days": "Lessons 1–6",
+      "skill": "Have a working AI setup for presentations and know how to brief it so the first draft is actually usable",
+      "lessonIds": [
+        "lesson-1-your-ai-powerpoint-toolkit",
+        "lesson-2-choose-your-setup",
+        "lesson-3-prompting-for-presentations",
+        "lesson-4-research-before-you-present",
+        "lesson-5-make-ai-think-first",
+        "lesson-6-module-1-checkpoint"
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Create & Transform",
+      "subtitle": "Turn ideas, documents and data into finished decks",
+      "days": "Lessons 7–12",
+      "skill": "Build a presentation from an idea, a document or a spreadsheet — and rescue a bad deck instead of starting again",
+      "lessonIds": [
+        "lesson-7-idea-to-presentation",
+        "lesson-8-documents-to-presentations",
+        "lesson-9-fix-a-bad-presentation",
+        "lesson-10-better-slides-visual-stories",
+        "lesson-11-excel-data-into-slides",
+        "lesson-12-module-2-checkpoint"
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Power Workflows",
+      "subtitle": "Brand, pitch, critique and deliver with confidence",
+      "days": "Lessons 13–18",
+      "skill": "Produce on-brand business and pitch decks, have AI critique your work honestly, and walk into the room prepared",
+      "lessonIds": [
+        "lesson-13-keep-every-deck-on-brand",
+        "lesson-14-build-a-business-presentation",
+        "lesson-15-sales-and-pitch-decks",
+        "lesson-16-let-ai-critique-your-deck",
+        "lesson-17-prepare-practise-present",
+        "lesson-18-final-project"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-1-your-ai-powerpoint-toolkit",
+      "dayNumber": 1,
+      "moduleId": "module-1",
+      "title": "Meet Your AI PowerPoint Toolkit",
+      "subtitle": "What AI can genuinely do for your presentations — and what it can't",
+      "duration": "5 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The deck that used to take a weekend",
+          "body": "Most people build presentations the same way: open a blank slide, stare at it, then spend hours dragging text boxes around and hunting for an icon that fits. The slides get built, but the thinking never gets sharper. AI changes which part of that work you actually do.",
+          "stat": "2–3 hrs",
+          "statLabel": "the time a typical 12-slide business deck takes to build from scratch, before any rehearsal"
+        },
+        {
+          "type": "content",
+          "headline": "AI is a thinking partner, not a slide machine",
+          "body": "The biggest mistake people make is treating AI like a design button — press it, receive a deck. That produces bland, generic slides nobody remembers. Used properly, AI does the work you are worst at and slowest at, and leaves the judgement to you.",
+          "bullets": [
+            "Structure a messy set of ideas into a clear narrative",
+            "Turn a long document or report into a slide outline",
+            "Write and tighten headlines so each slide makes one point",
+            "Suggest visuals, comparisons and analogies you would not have thought of",
+            "Critique your draft honestly before your audience does"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What AI still cannot do for you",
+          "body": "Being clear about the limits upfront saves you from the two failures that damage credibility: a deck full of facts nobody checked, and a deck that sounds like it was written by a machine.",
+          "bullets": [
+            "✅ Draft structure, headlines and speaker notes fast",
+            "✅ Reformat and rewrite existing content",
+            "✅ Explain data and suggest what to highlight",
+            "❌ Cannot know your audience, politics or history",
+            "❌ Cannot be trusted on statistics, quotes or sources without checking",
+            "❌ Cannot make a weak argument true",
+            "❌ Cannot deliver it — the room still belongs to you"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The three-step method this course teaches",
+          "body": "Every lesson from here builds on one order of operations. Skipping straight to step three is why most people's AI slides feel hollow — the tool is only as good as the brief you give it.",
+          "bullets": [
+            "1. THINK — decide the one thing the audience must leave believing",
+            "2. RESEARCH — gather the real facts, then verify anything AI hands you",
+            "3. STRUCTURE — build the narrative, then let AI draft the slides",
+            "Design comes last, not first. A beautiful slide with no point is still a wasted slide"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Pick the presentation you'll rebuild",
+          "body": "Think of one presentation you have to give — or one you dread giving again. A team update, a client pitch, a project review, a report you always summarise badly. Keep that deck in mind for the whole course. In the Module 1 checkpoint you'll rebuild it with AI, and by the final project it will be finished and rehearsed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the most effective way to think about AI in presentation work?",
+          "type": "mcq",
+          "options": [
+            "A design button that produces a finished deck on request",
+            "A thinking partner that drafts structure and copy while you keep the judgement",
+            "A replacement for knowing your audience",
+            "A tool only useful for making slides look prettier"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI is strongest at structure, drafting and critique — the slow parts. You keep the judgement: who the audience is, what matters, and whether the facts are true."
+        },
+        {
+          "question": "AI-generated statistics and quotes can be used in a business deck without checking them.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "AI can invent plausible-sounding figures and sources. A fabricated statistic in a board deck is the single fastest way to lose credibility, so every fact must be verified."
+        },
+        {
+          "question": "In the three-step method, what comes first?",
+          "type": "mcq",
+          "options": [
+            "Choosing a template and colour scheme",
+            "Asking AI to generate slides",
+            "Deciding the one thing your audience must leave believing",
+            "Collecting as many statistics as possible"
+          ],
+          "correctIndex": 2,
+          "explanation": "Think first. Until you know the single idea the audience must take away, neither you nor AI can judge what belongs on a slide and what should be cut."
+        }
+      ]
+    },
+    {
+      "id": "lesson-2-choose-your-setup",
+      "dayNumber": 2,
+      "moduleId": "module-1",
+      "title": "Choose Your Setup",
+      "subtitle": "Three honest paths — including one that costs nothing",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You do not need a paid Copilot licence to do this course",
+          "body": "Most courses on AI presentations quietly assume you have Microsoft 365 Copilot. Many people don't — it needs a specific paid licence, and in a lot of organisations IT controls it. So before we build anything, pick the setup you can actually use today. Every later lesson works on all three paths.",
+          "stat": "3 paths",
+          "statLabel": "and the free one still lets you complete every lesson in this course"
+        },
+        {
+          "type": "content",
+          "headline": "Path A — Copilot inside PowerPoint",
+          "body": "The most integrated option. Copilot sits inside PowerPoint itself, so it can read your open deck and make changes directly. It needs a paid Microsoft 365 Copilot licence on top of a business or personal Microsoft 365 subscription.",
+          "bullets": [
+            "Best for: people whose employer already provides Copilot",
+            "Strength: it can see and edit your actual slides in place",
+            "Strength: can build a first draft deck from a document in your OneDrive",
+            "Limitation: needs a paid licence you may not control",
+            "Limitation: results vary — you still rewrite most headlines yourself"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Path B — a chat AI alongside PowerPoint",
+          "body": "This is the path most learners will use, and honestly it produces better writing than an in-app assistant. You keep a chat AI open in a browser window beside PowerPoint, brief it properly, and paste the results in. Claude and ChatGPT both work well.",
+          "bullets": [
+            "Best for: anyone without a Copilot licence — including free-tier users",
+            "Strength: far better at structure, narrative and headline writing",
+            "Strength: you can paste in a document or report and get an outline back",
+            "Strength: works with any version of PowerPoint, Google Slides or Keynote",
+            "Trade-off: you copy and paste rather than the AI editing slides for you"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Path C — free tier only, and it is enough",
+          "body": "If you are not paying for anything, you can still complete every lesson. Free tiers of Claude and ChatGPT limit how many messages you send, not what you can ask. The trick is to make each message count instead of chatting your way to an answer.",
+          "bullets": [
+            "Write one longer, complete brief instead of ten small follow-ups",
+            "Ask for the outline and the slide headlines in a single request",
+            "Do your own formatting in PowerPoint — that part was never the AI's job",
+            "Save prompts that worked in a notes file so you can reuse them",
+            "Upgrade later only if message limits genuinely start blocking you"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Set up your workspace now",
+          "body": "Choose your path and get it in front of you before the next lesson. If you're on Path A, open PowerPoint and confirm the Copilot icon appears. On Path B or C, open Claude or ChatGPT in a browser window next to PowerPoint so you can work side by side. Then send this test message: \"I need to build a presentation. Before you write anything, ask me three questions about my audience.\" A good setup answers with questions, not slides — that is exactly the behaviour we'll rely on for the rest of the course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which setup is required to complete this course?",
+          "type": "mcq",
+          "options": [
+            "A paid Microsoft 365 Copilot licence",
+            "Any of the three paths, including a free chat AI beside PowerPoint",
+            "The desktop version of PowerPoint only",
+            "A paid Claude or ChatGPT subscription"
+          ],
+          "correctIndex": 1,
+          "explanation": "All three paths work for every lesson. Copilot is the most integrated, but a free chat AI alongside PowerPoint is enough to complete the entire course."
+        },
+        {
+          "question": "What is the main practical advantage of using a chat AI beside PowerPoint rather than inside it?",
+          "type": "mcq",
+          "options": [
+            "It edits your slides automatically",
+            "It is generally stronger at structure, narrative and headline writing",
+            "It removes the need to check facts",
+            "It only works with the newest version of PowerPoint"
+          ],
+          "correctIndex": 1,
+          "explanation": "A chat AI cannot edit your slides directly, but it is typically better at the thinking work — structure, narrative and sharp headlines — which is where most decks fail."
+        },
+        {
+          "question": "On a free tier, the best strategy is to send many short follow-up messages.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Free tiers limit message volume, not quality. One longer, complete brief that asks for the outline and headlines together gets you far more from each message."
+        }
+      ]
+    },
+    {
+      "id": "lesson-3-prompting-for-presentations",
+      "dayNumber": 3,
+      "moduleId": "module-1",
+      "title": "The Art of Prompting for Presentations",
+      "subtitle": "Why \"make me a presentation about X\" always disappoints",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Same tool, wildly different results",
+          "body": "\"Make me a presentation about our Q3 results\" gets you ten generic slides with headings like \"Overview\" and \"Key Findings\". A proper brief gets you a narrative with a point of view. The tool did not change between those two attempts — the brief did.",
+          "stat": "5 parts",
+          "statLabel": "a complete presentation brief: audience, outcome, evidence, constraints, format"
+        },
+        {
+          "type": "content",
+          "headline": "The five parts of a presentation brief",
+          "body": "A weak prompt names a topic. A strong prompt describes a situation. Include all five of these and the first draft becomes something you edit rather than something you throw away.",
+          "bullets": [
+            "AUDIENCE — who is in the room, what they already know, what they care about",
+            "OUTCOME — the one decision or belief you want when you finish",
+            "EVIDENCE — the real facts, numbers and examples you actually have",
+            "CONSTRAINTS — slide count, time limit, tone, what must not be said",
+            "FORMAT — outline first, one point per slide, headline plus speaker note"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Before and after",
+          "body": "Look at how much of the thinking moves into the brief. Everything you leave out, the AI invents — and what it invents is always the safest, blandest option.",
+          "bullets": [
+            "❌ Weak: \"Create a presentation about our new onboarding process.\"",
+            "✅ Strong: \"Audience: 8 regional managers who think onboarding is already fine.\"",
+            "✅ \"Outcome: they agree to pilot the new two-week process in one region.\"",
+            "✅ \"Evidence: new starters take 47 days to full productivity; pilot cut it to 26.\"",
+            "✅ \"Constraints: 8 slides, 10 minutes, no blame on existing managers.\"",
+            "✅ \"Format: give me an outline with one headline per slide before any detail.\""
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Three habits that improve every prompt",
+          "body": "Beyond the five parts, these three habits separate people who get useful drafts from people who give up and go back to a blank slide.",
+          "bullets": [
+            "Ask for the outline first. Never let AI write slide content before you approve the structure",
+            "Say what you do NOT want. \"No jargon, no bullet lists longer than four lines, no invented statistics\"",
+            "Ask it to challenge you: \"What is the weakest part of this argument?\"",
+            "Give it a role only when it helps: \"You are briefing a sceptical finance director\"",
+            "Iterate on one slide at a time once the structure is agreed"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Write your first real brief",
+          "body": "Take the presentation you chose in lesson 1 and write a five-part brief for it. Copy this template into your AI and fill it in: \"AUDIENCE: [who, what they already believe]. OUTCOME: [the one thing they should agree to]. EVIDENCE: [your real numbers and examples]. CONSTRAINTS: [slide count, time, tone, anything off-limits]. FORMAT: give me an outline with one headline per slide, nothing else yet. Do not invent any statistics — if you need a figure I have not given you, mark it as [NEEDS DATA].\" Save the brief. You will reuse and refine it for the rest of the course."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is missing from the prompt \"Make me a presentation about our Q3 results\"?",
+          "type": "mcq",
+          "options": [
+            "Nothing — it is a clear topic",
+            "Audience, outcome, evidence, constraints and format",
+            "Only the slide count",
+            "Only the colour scheme"
+          ],
+          "correctIndex": 1,
+          "explanation": "It names a topic but describes no situation. Without audience, outcome, evidence, constraints and format, AI fills every gap with the blandest safe option."
+        },
+        {
+          "question": "Why should you ask for the outline before any slide content?",
+          "type": "mcq",
+          "options": [
+            "Outlines use fewer messages on a free tier",
+            "So you approve the narrative structure before effort goes into the wrong slides",
+            "Because AI cannot write slide content in one pass",
+            "It makes the deck look more professional"
+          ],
+          "correctIndex": 1,
+          "explanation": "Structure is where a deck succeeds or fails. Approving the outline first means you are editing a narrative you agree with, rather than polishing slides built on the wrong story."
+        },
+        {
+          "question": "Telling AI what you do not want is a waste of space in a prompt.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Exclusions are some of the most valuable instructions you can give — no jargon, no invented statistics, no long bullet lists. They remove the failure modes before they happen."
+        }
+      ]
+    },
+    {
+      "id": "lesson-4-research-before-you-present",
+      "dayNumber": 4,
+      "moduleId": "module-1",
+      "title": "Research Before You Present",
+      "subtitle": "How to use AI for research without putting a fabricated figure on a slide",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One wrong number and the room stops listening",
+          "body": "AI will produce a confident, well-worded statistic that does not exist. It is not lying — it is predicting text that looks like a statistic. On a slide with your name on it, that becomes your mistake, and the audience will doubt every other number you show them.",
+          "stat": "1 slide",
+          "statLabel": "is all it takes: one figure someone in the room can disprove and your whole argument is treated as guesswork"
+        },
+        {
+          "type": "content",
+          "headline": "Separate the two jobs research actually involves",
+          "body": "People get burned because they ask one question and expect two different things from the answer. Split them deliberately and AI becomes genuinely useful.",
+          "bullets": [
+            "THINKING work — what angles am I missing, what would a sceptic ask, what comparison makes this land",
+            "FACT work — the specific numbers, dates, names and sources that go on a slide",
+            "AI is excellent at the first and unreliable at the second",
+            "Use it freely for the thinking; treat every fact it offers as a lead to verify, not a source",
+            "Your own internal data is almost always better evidence than anything AI can find"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Make AI mark its own uncertainty",
+          "body": "You can dramatically reduce fabricated facts by telling AI how to behave when it does not know something. Left to itself it fills gaps; instructed properly it flags them.",
+          "bullets": [
+            "Add: \"If you do not have a reliable figure, write [NEEDS DATA] instead of estimating\"",
+            "Add: \"Label anything you are unsure about as UNVERIFIED\"",
+            "Ask: \"Which claims in this draft would a well-informed critic want a source for?\"",
+            "Ask it to separate what it knows from what it is inferring",
+            "Never accept a number without a named source you can actually open"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The verification pass, in order",
+          "body": "Run this before a single figure reaches a slide. It takes minutes and it is the difference between a deck that survives questions and one that unravels in the first two.",
+          "bullets": [
+            "1. Highlight every number, date, name and quotation in the draft",
+            "2. Replace anything you cannot trace to a real source with your own data or delete it",
+            "3. Prefer your organisation's own figures — you can defend them and nobody can dispute them",
+            "4. Note the source in the speaker notes so you can answer \"where is that from?\" instantly",
+            "5. If a claim matters and you cannot verify it, say it as an opinion, not a fact"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a fact audit on your own brief",
+          "body": "Take the brief you wrote in the previous lesson and paste it back into your AI with this instruction: \"Review the evidence in this brief. List every claim that would need a source if I put it on a slide. For each one, tell me whether it came from me or from you. Do not add any new statistics.\" Then go through the list and mark each item as verified, replaceable with your own data, or cut. Anything still unverified when you finish does not go on a slide."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why can AI produce statistics that do not exist?",
+          "type": "mcq",
+          "options": [
+            "It deliberately misleads users",
+            "It predicts text that looks correct, rather than retrieving a verified source",
+            "It only has access to old data",
+            "It confuses numbers with words"
+          ],
+          "correctIndex": 1,
+          "explanation": "A model generates plausible-sounding text. A fabricated figure reads exactly like a real one, which is why every fact needs tracing to a source you can open yourself."
+        },
+        {
+          "question": "What is the best kind of evidence to build a business presentation on?",
+          "type": "mcq",
+          "options": [
+            "Whatever statistic sounds most impressive",
+            "Your own organisation's data, which you can defend under questioning",
+            "Any figure AI provides, as long as it sounds specific",
+            "Numbers with no source, so nobody can check them"
+          ],
+          "correctIndex": 1,
+          "explanation": "Internal data is both stronger and safer: it is genuinely relevant to your audience and you can answer \"where is that from?\" without hesitating."
+        },
+        {
+          "question": "Instructing AI to write [NEEDS DATA] instead of estimating reduces fabricated facts.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Given no instruction, AI fills gaps with something plausible. Told explicitly to flag a gap instead, it will usually mark it — which turns an invisible risk into a visible task."
+        }
+      ]
+    },
+    {
+      "id": "lesson-5-make-ai-think-first",
+      "dayNumber": 5,
+      "moduleId": "module-1",
+      "title": "Make AI Think First",
+      "subtitle": "Force the structure out into the open before a single slide gets written",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Bland slides are a thinking problem, not a writing problem",
+          "body": "When AI output feels hollow, the instinct is to ask for better wording. It rarely helps. The hollowness comes from the fact that nobody — human or machine — decided what the presentation was arguing before the slides appeared. Fix the order and the words fix themselves.",
+          "stat": "3 steps",
+          "statLabel": "argument, then outline, then slides — skipping the first two is what produces generic decks"
+        },
+        {
+          "type": "content",
+          "headline": "Ask for the argument before the outline",
+          "body": "An outline is a list of topics. An argument is a claim with reasons. Most weak decks are outlines pretending to be arguments, which is why the audience follows every slide and remembers none of it.",
+          "bullets": [
+            "Ask: \"In one sentence, what is this presentation arguing?\"",
+            "Ask: \"What are the three reasons that support it, in the order that convinces fastest?\"",
+            "Ask: \"What must the audience accept before reason two makes sense?\"",
+            "Only once you agree with that sentence should you ask for an outline",
+            "If you cannot state the argument in one sentence, the deck is not ready to be built"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Use AI as the sceptic in the room",
+          "body": "The single most valuable prompt in this course is the one that asks AI to attack your case. It costs nothing, it happens in private, and it surfaces the questions that would otherwise be asked in front of your audience.",
+          "bullets": [
+            "\"What is the weakest part of this argument?\"",
+            "\"What would a sceptical finance director ask, in the order they would ask it?\"",
+            "\"Which slide would you cut, and what would be lost?\"",
+            "\"Where am I asking the audience to take something on trust?\"",
+            "Then rehearse your answers — that preparation is what makes you look composed"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "One idea per slide, stated as a claim",
+          "body": "Once the argument is agreed, the structure almost writes itself. The test for every slide is simple: can you say what it claims in one short sentence? If not, it is two slides or none.",
+          "bullets": [
+            "Replace topic headings (\"Overview\", \"Key Findings\") with claims (\"Onboarding is costing us 21 days per hire\")",
+            "A slide that needs two sentences to explain its point is really two slides",
+            "Speaker notes carry the detail; the slide carries the claim",
+            "If a slide supports nothing in your one-sentence argument, cut it",
+            "Ask AI to rewrite every heading as a claim, then keep only the ones you can defend"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Get your one-sentence argument agreed",
+          "body": "Paste your brief into your AI and send this: \"Before writing any slides, tell me in one sentence what this presentation is arguing, then the three reasons that support it in the most convincing order. Then tell me the weakest part of that argument and what a sceptical senior manager would ask first.\" Read the one-sentence argument out loud. If it is not what you actually believe, correct it and ask again — then, and only then, ask for the slide outline."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the difference between an outline and an argument?",
+          "type": "mcq",
+          "options": [
+            "There is none — they are two words for the same thing",
+            "An outline lists topics; an argument makes a claim supported by reasons",
+            "An argument is longer than an outline",
+            "An outline is for slides, an argument is for speaker notes"
+          ],
+          "correctIndex": 1,
+          "explanation": "A topic list can be followed without persuading anyone. An argument commits to a claim and orders the reasons that support it, which is what makes a deck memorable."
+        },
+        {
+          "question": "What is the most useful way to use AI on a draft you are happy with?",
+          "type": "mcq",
+          "options": [
+            "Ask it to make the wording more impressive",
+            "Ask it to attack the argument and name the questions a sceptic would ask",
+            "Ask it to add more slides for completeness",
+            "Ask it to add statistics to strengthen the case"
+          ],
+          "correctIndex": 1,
+          "explanation": "Criticism in private is far cheaper than criticism in the room. Asking for the weakest point gives you the questions in advance, along with time to prepare answers."
+        },
+        {
+          "question": "A slide that needs two sentences to explain its point is usually fine as one slide.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "One claim per slide is the test. Two sentences almost always means two ideas competing for attention, so the audience holds on to neither."
+        }
+      ]
+    },
+    {
+      "id": "lesson-6-module-1-checkpoint",
+      "dayNumber": 6,
+      "moduleId": "module-1",
+      "title": "Module 1 Checkpoint",
+      "subtitle": "Put the foundations together and produce a real, verified outline",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Time to build something you would actually present",
+          "body": "You now have a setup that works, a five-part brief, a habit of verifying facts and a way of forcing the argument into the open. This lesson puts all four together on the presentation you chose at the start, so you finish this module with a real outline rather than notes about outlines.",
+          "stat": "4 skills",
+          "statLabel": "setup, briefing, verifying and structuring — combined once here, then reused for every deck in the rest of the course"
+        },
+        {
+          "type": "content",
+          "headline": "What you have learned so far",
+          "body": "Before you build, check each of these is genuinely in place. A gap here is what makes later lessons feel harder than they should.",
+          "bullets": [
+            "AI is a thinking partner — it drafts and critiques, you keep the judgement",
+            "Your setup works, whether that is Copilot, a chat AI beside PowerPoint, or a free tier",
+            "A brief needs audience, outcome, evidence, constraints and format",
+            "Every fact AI gives you is a lead to verify, never a source",
+            "Argument first, outline second, slides third"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The four questions that catch a weak deck early",
+          "body": "Run these against whatever you produce here. They are the same questions your audience will effectively be asking, just earlier and in private.",
+          "bullets": [
+            "Can I state what this presentation argues in one sentence?",
+            "Does every slide make exactly one claim I can defend?",
+            "Can I name a real source for every number, date and quotation?",
+            "Have I answered the first question a sceptic would ask?",
+            "If any answer is no, fix that before touching design"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common mistakes at this stage",
+          "body": "Almost everyone makes at least one of these on their first real attempt. Recognising them now saves rebuilding the deck later.",
+          "bullets": [
+            "Jumping to slide design before the argument is agreed",
+            "Accepting AI's first outline because it looks organised",
+            "Leaving an unverified figure in because it strengthens the case",
+            "Writing headings that name topics instead of making claims",
+            "Cramming two ideas onto one slide to keep the slide count down"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Produce your verified outline now",
+          "body": "Work through this in one sitting. 1) Paste your five-part brief into your AI. 2) Ask for the one-sentence argument and the three supporting reasons, and correct it until it matches what you believe. 3) Ask for an outline with one claim per slide and nothing else. 4) Ask it to list every claim needing a source, and replace or cut anything you cannot verify. 5) Ask what a sceptic would question first, and write your answer in the speaker notes. Save the result — the next module turns this outline into a finished deck."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should be finished before you start thinking about slide design?",
+          "type": "mcq",
+          "options": [
+            "Choosing a colour scheme and template",
+            "The argument, the outline and the verification of every fact",
+            "Nothing — design and content should happen together",
+            "Rehearsing your delivery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Design decisions made before the argument is settled get thrown away. Structure and verified evidence first means the design work only ever happens once."
+        },
+        {
+          "question": "AI produces an outline that looks well organised. What should you do first?",
+          "type": "mcq",
+          "options": [
+            "Accept it — a tidy structure means a strong argument",
+            "Check whether it actually argues your one-sentence claim, and whether each heading is defensible",
+            "Ask for twice as many slides so nothing is missing",
+            "Move straight to formatting the slides"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tidy formatting is not the same as a sound argument. A well-ordered list of topics is exactly what a generic deck looks like before anyone notices it says nothing."
+        },
+        {
+          "question": "It is acceptable to keep one unverified figure if it makes your case stronger.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The stronger a figure sounds, the more likely someone will check it. One claim shown to be invented casts doubt on every other number in the deck."
+        }
+      ]
+    },
+    {
+      "id": "lesson-7-idea-to-presentation",
+      "dayNumber": 7,
+      "moduleId": "module-2",
+      "title": "From Idea to Presentation",
+      "subtitle": "Take a rough idea and build a complete first draft deck with AI",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The blank slide is the wrong place to start",
+          "body": "Most people open PowerPoint first and try to think inside it. That is why the first three slides take an hour and the last nine get rushed. In this lesson you build the whole draft in text first, then hand a finished structure to PowerPoint — which turns building a deck into assembling one.",
+          "stat": "10 min",
+          "statLabel": "a realistic time to get from a rough idea to a complete draft outline once the sequence below is familiar"
+        },
+        {
+          "type": "content",
+          "headline": "The four-stage build",
+          "body": "Each stage produces something you approve before moving on. Approving as you go is what stops you discovering on slide eleven that the argument never worked.",
+          "bullets": [
+            "1. ARGUMENT — one sentence the audience must leave believing",
+            "2. SPINE — three to five reasons that sentence is true",
+            "3. OUTLINE — one slide per claim, with the claim as the heading",
+            "4. CONTENT — body text, speaker notes and visual suggestions per slide",
+            "Never let AI skip a stage, even when it offers to produce the whole deck at once"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to ask for an outline you can actually use",
+          "body": "A vague request produces a tidy list of topics. A specific one produces claims you can defend. The difference is almost entirely in what you tell it to avoid.",
+          "bullets": [
+            "Give the five-part brief first: audience, outcome, evidence, constraints, format",
+            "Ask for headings that make a claim, never headings that name a topic",
+            "Set a slide count and hold it — a shorter deck forces a sharper argument",
+            "Ask for one idea per slide, and reject any slide carrying two",
+            "Ask it to flag anything it is unsure of instead of smoothing over the gap"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Getting the draft into PowerPoint",
+          "body": "How you move from text to slides depends on the setup you chose earlier, and every route below works without a paid licence.",
+          "bullets": [
+            "Copilot in PowerPoint: paste the approved outline and ask it to build the slides",
+            "Chat AI beside PowerPoint: ask for the outline as an indented list, then use Outline View to import it",
+            "Free tier only: paste each slide heading and body in turn — slower, same result",
+            "Whatever the route, keep the approved outline saved separately as your source of truth",
+            "Expect to fix layout afterwards; that is formatting work, not thinking work"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a draft deck from one idea",
+          "body": "Pick a presentation you genuinely need to give. 1) Write your five-part brief. 2) Ask AI for the one-sentence argument and three to five supporting reasons, and edit until they are yours. 3) Ask for an outline of no more than ten slides, one claim per heading. 4) Ask for body text and speaker notes for each slide. 5) Move it into PowerPoint using whichever route matches your setup. Keep the text version — you will reuse it in the checkpoint lesson."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why should you build the argument and outline in text before opening PowerPoint?",
+          "type": "mcq",
+          "options": [
+            "Because PowerPoint cannot handle long documents",
+            "Because thinking inside a slide layout pushes you into formatting before the argument is settled",
+            "Because AI cannot read PowerPoint files",
+            "Because text files are smaller"
+          ],
+          "correctIndex": 1,
+          "explanation": "Once you are inside a slide you start making design decisions, and design decisions made before the argument is agreed are the ones you throw away later."
+        },
+        {
+          "question": "AI offers to generate your entire 12-slide deck from a one-line request. What is the risk?",
+          "type": "mcq",
+          "options": [
+            "It will take too long to run",
+            "You skip the approval stages, so a weak argument gets built out in full before you notice",
+            "The file will be too large to email",
+            "There is no risk — this is the fastest route"
+          ],
+          "correctIndex": 1,
+          "explanation": "Skipping the stages does not remove the work, it just moves it later. Fixing a structural problem after twelve slides exist costs far more than approving a spine first."
+        },
+        {
+          "question": "A slide heading should name the topic being covered rather than make a claim.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A heading that makes a claim tells the audience what to think and forces you to check you can defend it. A topic label leaves the point unstated and the slide doing no work."
+        }
+      ]
+    },
+    {
+      "id": "lesson-8-documents-to-presentations",
+      "dayNumber": 8,
+      "moduleId": "module-2",
+      "title": "Turn Documents into Presentations",
+      "subtitle": "Condense a report, proposal or set of notes into slides that keep the point",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A twenty-page report is not twenty slides",
+          "body": "The most common request in any office is \"can you turn this into a deck for Thursday\". Handed to AI carelessly, it produces a slide per section: dense, faithful and unpresentable. Summarising a document is not the same job as arguing from it, and knowing the difference is what makes this lesson worth the six minutes.",
+          "stat": "1 point",
+          "statLabel": "the number of ideas a slide can carry before an audience starts reading instead of listening"
+        },
+        {
+          "type": "content",
+          "headline": "Decide the purpose before you condense",
+          "body": "The same document becomes three completely different decks depending on what you need from the room. Tell AI which one you want, or it will default to a neutral summary that persuades nobody.",
+          "bullets": [
+            "To DECIDE — lead with the recommendation, then the evidence, then the risks",
+            "To INFORM — lead with what changed and what it means for this audience",
+            "To PERSUADE — lead with the problem the audience already feels, then your case",
+            "State which of these you need in the brief, every time",
+            "A summary with no purpose is the deck people scroll through and forget"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to brief AI on a document",
+          "body": "Paste or attach the document, then constrain the output. The constraints are what stop it flattening your report into bullet soup.",
+          "bullets": [
+            "State the audience and what you need them to do afterwards",
+            "Give a hard slide limit — ten slides from thirty pages forces real choices",
+            "Ask what it left out and why, then check you agree with the cuts",
+            "Ask which claims in the document are unsupported by the document itself",
+            "Ask for the strongest counter-argument the document does not address"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What to check before you present it",
+          "body": "Condensing is where meaning quietly changes. These four checks catch nearly every problem, and each one takes under a minute.",
+          "bullets": [
+            "Every number on a slide matches the number in the document exactly",
+            "No hedged finding has become a confident statement",
+            "Nothing has been added that the document never said",
+            "Anything cut for length is still true when the rest is read alone",
+            "If the document quotes a source, cite that source and not the document"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Condense a real document",
+          "body": "Take a document you already have — a report, proposal, meeting notes, anything over three pages. 1) Decide whether the deck is to decide, inform or persuade. 2) Brief AI with the audience, the purpose and a limit of eight slides. 3) Ask what it left out and why. 4) Check every figure against the original and look for hedged findings that have hardened. 5) Ask for the strongest objection the document never answers, and add a slide answering it."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should you decide before asking AI to turn a document into slides?",
+          "type": "mcq",
+          "options": [
+            "The colour scheme and font",
+            "Whether the deck exists to help the audience decide, inform them, or persuade them",
+            "How many images you want",
+            "Which template your company prefers"
+          ],
+          "correctIndex": 1,
+          "explanation": "The purpose changes the order and the emphasis completely. Without it AI produces a neutral summary, which is the deck that persuades nobody and is forgotten fastest."
+        },
+        {
+          "question": "Why ask AI what it left out of the summary?",
+          "type": "mcq",
+          "options": [
+            "To make the deck longer",
+            "Because the cuts are where meaning changes, and you need to agree with them",
+            "To check it read the whole document",
+            "Because it will refuse to answer otherwise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Anything omitted was a judgement call made without you. Seeing the cuts is the only way to catch a caveat, a risk or a condition whose absence changes what the deck says."
+        },
+        {
+          "question": "If a summarised slide states a finding more confidently than the original document did, that is fine as long as the finding is broadly right.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Removing a hedge changes the claim. Presenting a tentative finding as settled is the version someone will quote back to you when it turns out to be conditional."
+        }
+      ]
+    },
+    {
+      "id": "lesson-9-fix-a-bad-presentation",
+      "dayNumber": 9,
+      "moduleId": "module-2",
+      "title": "Fix a Bad Presentation",
+      "subtitle": "Rescue an existing deck with AI instead of rebuilding it from scratch",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most bad decks are not badly designed",
+          "body": "They are badly ordered, or they never decided what they were arguing. That is why reformatting a weak deck makes it a prettier weak deck. This lesson diagnoses first, and the diagnosis usually takes longer than the fix.",
+          "stat": "3 causes",
+          "statLabel": "no clear argument, wrong order, or too much on each slide — nearly every bad deck is one of these"
+        },
+        {
+          "type": "content",
+          "headline": "Diagnose before you touch anything",
+          "body": "Ask AI to read the deck as an unimpressed member of the audience would. The point is to hear the problem stated plainly before you start moving slides around.",
+          "bullets": [
+            "Ask what this deck is arguing, in one sentence, based only on the slides",
+            "If the answer is vague, the problem is the argument, not the design",
+            "Ask which slides could be deleted without losing the case",
+            "Ask which slide the audience will stop paying attention on, and why",
+            "Ask what order it would present these points in, and why that order is better"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Fix in this order",
+          "body": "Working in this sequence means you never format a slide that later gets deleted. Design is the last step for the same reason you paint a wall after moving it.",
+          "bullets": [
+            "1. Settle the argument — write it in one sentence and cut whatever does not serve it",
+            "2. Reorder so each slide earns the next one",
+            "3. Split any slide carrying two ideas; delete any slide carrying none",
+            "4. Rewrite headings as claims",
+            "5. Only then fix layout, spacing and visuals"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "When a rescue is the wrong call",
+          "body": "Sometimes rebuilding is genuinely faster, and recognising that early saves an evening. Be honest about which situation you are in.",
+          "bullets": [
+            "Rescue when the content is sound but the order or emphasis is wrong",
+            "Rebuild when you cannot state what it argues even after reading it twice",
+            "Rebuild when the audience or the purpose has changed since it was written",
+            "Rescue when it is someone else's deck and the content is theirs to defend",
+            "Either way, keep the original file — you may need to show what changed"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Rescue a deck you already have",
+          "body": "Find an old presentation of yours that did not land. 1) Give AI the slide text only and ask what it argues in one sentence. 2) Compare that to what you intended — the gap is the real problem. 3) Ask which slides could be cut without weakening the case, and cut them. 4) Ask for a better order and a reason for it. 5) Rewrite every heading as a claim. Do not open the design tools until all four are done, then note how much of the original design work was wasted."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "AI reads your deck and cannot say clearly what it argues. What does that tell you?",
+          "type": "mcq",
+          "options": [
+            "The design needs improving",
+            "The argument was never settled, so no amount of reformatting will fix it",
+            "The deck is too short",
+            "AI cannot read slide text properly"
+          ],
+          "correctIndex": 1,
+          "explanation": "If the point cannot be extracted from the slides, the audience will not extract it either. That is a thinking problem, and formatting cannot solve a thinking problem."
+        },
+        {
+          "question": "What is the correct order for fixing a weak presentation?",
+          "type": "mcq",
+          "options": [
+            "Layout, then visuals, then argument",
+            "Argument, then order, then one idea per slide, then headings, then design",
+            "Headings first, since they are quickest",
+            "Delete half the slides and see what is left"
+          ],
+          "correctIndex": 1,
+          "explanation": "Design last means you never format a slide that later gets deleted. Every other order guarantees some of the work is thrown away."
+        },
+        {
+          "question": "If you cannot state what a deck argues even after reading it twice, rebuilding is usually faster than rescuing it.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "When there is no argument to preserve, a rescue becomes a rebuild carried out slowly and with inherited constraints. Starting from the brief is quicker and produces a better deck."
+        }
+      ]
+    },
+    {
+      "id": "lesson-10-better-slides-visual-stories",
+      "dayNumber": 10,
+      "moduleId": "module-2",
+      "title": "Better Slides and Visual Stories",
+      "subtitle": "Use AI to choose visuals that carry meaning instead of decorating the slide",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "A stock photo of a handshake says nothing",
+          "body": "Decoration is what people add when they are not sure what the slide is for. A visual earns its place only if removing it would cost the audience some understanding. AI is genuinely good at proposing that kind of visual, provided you ask about meaning rather than about images.",
+          "stat": "1 job",
+          "statLabel": "every visual should do exactly one job: make a relationship easier to see than words would"
+        },
+        {
+          "type": "content",
+          "headline": "Match the visual to the idea",
+          "body": "Ask AI what the slide is trying to show, then which shape communicates that. The idea chooses the visual, never the other way round.",
+          "bullets": [
+            "Change over time — a line, not a table",
+            "Comparison between a few things — a bar, ordered largest to smallest",
+            "Part of a whole — a single proportion, not a pie with nine slices",
+            "A process or sequence — numbered steps left to right",
+            "A single striking number — the number itself, large, with its source beneath"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to ask AI for visuals that work",
+          "body": "The useful request is about the point, not the picture. Ask for the reasoning and you can judge whether the suggestion is right.",
+          "bullets": [
+            "Say what the slide must make the audience realise, then ask which visual shows it",
+            "Ask for the simplest version that still makes the point",
+            "Ask what a viewer might misread in the visual, and fix that",
+            "Ask it to name what should be emphasised and what should recede",
+            "Reject anything whose only purpose is filling space"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Honesty rules for visuals",
+          "body": "A misleading chart damages trust faster than a plain one ever could, and it is usually accidental rather than dishonest. Check these before the deck leaves your hands.",
+          "bullets": [
+            "Never truncate an axis to make a small difference look dramatic",
+            "Label the units and the time period on every chart",
+            "Show the source beneath any figure you did not generate yourself",
+            "If AI generated an image, do not present it as a photograph of something real",
+            "If the data is uncertain, say so on the slide rather than in the notes"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Redesign your three weakest slides",
+          "body": "Take the draft deck you built earlier and pick the three slides that feel emptiest. 1) For each, write in one sentence what the audience must realise. 2) Ask AI which visual shape shows that, and why. 3) Ask for the simplest version that still works. 4) Ask what a viewer could misread, and fix it. 5) Check axes, units and sources are honest and labelled. Delete any visual you could remove without the slide losing meaning."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When does a visual earn its place on a slide?",
+          "type": "mcq",
+          "options": [
+            "When it fills empty space attractively",
+            "When removing it would cost the audience some understanding",
+            "When it matches the brand colours",
+            "When every other slide already has one"
+          ],
+          "correctIndex": 1,
+          "explanation": "That test separates a visual that carries meaning from decoration. Decoration adds load without adding understanding, which is why it makes slides feel busy and say less."
+        },
+        {
+          "question": "You need to show how a figure changed across four quarters. What should you ask for?",
+          "type": "mcq",
+          "options": [
+            "A table of the four values",
+            "A line showing the trend, with labelled units and time period",
+            "A pie chart of the four quarters",
+            "A photograph representing growth"
+          ],
+          "correctIndex": 1,
+          "explanation": "Change over time is a trend, and a line shows a trend at a glance. A table makes the audience do the comparison themselves, and a pie cannot show change at all."
+        },
+        {
+          "question": "Truncating a chart axis is acceptable when the real difference is too small to see clearly.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "It makes a small difference look large, which is a misleading picture of the data. If the difference is genuinely small, the honest options are to say so or to show why it still matters."
+        }
+      ]
+    },
+    {
+      "id": "lesson-11-excel-data-into-slides",
+      "dayNumber": 11,
+      "moduleId": "module-2",
+      "title": "Turn Excel Data into Slides",
+      "subtitle": "Get from a spreadsheet to a slide that says what the numbers mean",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Nobody has ever been persuaded by a pasted spreadsheet",
+          "body": "A screenshot of forty rows tells the audience you did some analysis without telling them what you found. The job on a data slide is to state the finding and let the numbers support it. AI is a fast way to get from rows to a candidate finding — as long as you check it.",
+          "stat": "1 sentence",
+          "statLabel": "if you cannot state the finding in one sentence, the slide is not ready regardless of how good the chart looks"
+        },
+        {
+          "type": "content",
+          "headline": "Prepare the data before you ask anything",
+          "body": "Most wrong answers from AI about a spreadsheet come from a messy sheet, not from the model. Five minutes of tidying prevents a confidently wrong conclusion.",
+          "bullets": [
+            "One header row, one row per record, no merged cells",
+            "Remove blank rows and stray totals sitting inside the data",
+            "Make sure units and currencies are consistent down each column",
+            "Say what the columns mean — a column called \"Q3\" could be anything",
+            "Never paste in data you are not permitted to share outside your organisation"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "From rows to a finding",
+          "body": "Ask for the finding before asking for a chart. A chart chosen before you know the point is decoration with axes.",
+          "bullets": [
+            "Ask what the three most important patterns in this data are",
+            "Ask what the data does NOT show, so you do not overclaim",
+            "Ask which single finding matters most to your specific audience",
+            "Write that finding as the slide heading, in plain language",
+            "Then, and only then, ask which visual makes that finding visible"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Check the arithmetic yourself",
+          "body": "AI reads patterns well and calculates less reliably, so treat every number it states as a claim to verify. This is the same rule as verifying a fact, applied to your own data.",
+          "bullets": [
+            "Recalculate every total, percentage and change figure in the spreadsheet itself",
+            "Check the direction of any percentage change — up and down get swapped surprisingly often",
+            "Confirm the time period quoted matches the rows actually used",
+            "Watch for a conclusion drawn from a handful of rows presented as a trend",
+            "If a figure cannot be reproduced from the sheet, cut it from the slide"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build one data slide properly",
+          "body": "Take a spreadsheet you use at work, or export any table you have. 1) Tidy it to one header row and one record per row, and remove data you should not share. 2) Ask AI for the three most important patterns and what the data does not show. 3) Choose the single finding that matters to your audience and write it as the slide heading. 4) Recalculate every figure it quoted, in the spreadsheet. 5) Ask which visual makes that finding visible, and build the slide with units, period and source labelled."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What should the heading of a data slide say?",
+          "type": "mcq",
+          "options": [
+            "The name of the data set",
+            "The finding, in plain language, that the numbers support",
+            "The time period covered",
+            "The chart type used"
+          ],
+          "correctIndex": 1,
+          "explanation": "A heading that states the finding tells the audience what to take away. A label like \"Q3 Sales Data\" leaves them to work out the point, and most of them will not."
+        },
+        {
+          "question": "AI reports that revenue rose 14% this quarter. What do you do before it goes on a slide?",
+          "type": "mcq",
+          "options": [
+            "Nothing — it read the data directly",
+            "Recalculate it in the spreadsheet and confirm the period and direction",
+            "Ask AI to double-check its own answer",
+            "Round it to 15% so it looks less precise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Calculation is the weakest thing to delegate, and a wrong figure about your own business is the most damaging kind. Reproducing it from the sheet takes a minute and settles it."
+        },
+        {
+          "question": "Asking what the data does not show is a useful step before writing the slide.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "It marks the boundary of what you can honestly claim, which is exactly where an audience will push. Knowing the limit in advance is what lets you answer calmly instead of retreating."
+        }
+      ]
+    },
+    {
+      "id": "lesson-12-module-2-checkpoint",
+      "dayNumber": 12,
+      "moduleId": "module-2",
+      "title": "Module 2 Checkpoint",
+      "subtitle": "Turn your outline into a finished draft deck with verified data and honest visuals",
+      "duration": "8 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "You now have everything needed for a real deck",
+          "body": "You can build from an idea, condense a document, rescue a weak deck, choose visuals that carry meaning and turn a spreadsheet into a finding. This lesson puts all five to work on one presentation, so you finish the module holding a draft you would be willing to show someone.",
+          "stat": "5 skills",
+          "statLabel": "building, condensing, rescuing, visualising and analysing — combined here into one deck you keep"
+        },
+        {
+          "type": "content",
+          "headline": "What you have learned in this module",
+          "body": "Check each of these is genuinely in place before you build. A gap here is what makes the final module feel harder than it should.",
+          "bullets": [
+            "Argument, spine, outline, content — approved in that order, never skipped",
+            "A document becomes a deck only once you decide whether it informs, persuades or helps a decision",
+            "A weak deck is diagnosed before it is redesigned",
+            "A visual earns its place only if removing it costs understanding",
+            "Every number is reproduced from the source before it reaches a slide"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The five questions to run against your draft",
+          "body": "These are the questions your audience is effectively asking. Answering them privately first is cheaper than being asked in the room.",
+          "bullets": [
+            "Can I state what this deck argues in one sentence, from the slides alone?",
+            "Does every slide make exactly one claim, in its heading?",
+            "Can I name a traceable source for every figure, date and quotation?",
+            "Would removing any visual cost the audience understanding?",
+            "Have I answered the first objection a sceptic would raise?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Common mistakes at this stage",
+          "body": "Almost everyone makes one of these on a first full draft. Catching them now is far cheaper than catching them after the deck has been shared.",
+          "bullets": [
+            "Building slides before the outline was approved",
+            "Keeping a slide because it took effort, not because it earns its place",
+            "Letting a hedged finding from a document harden into a confident claim",
+            "Trusting a percentage AI calculated without reproducing it",
+            "Adding a visual to a slide that had nothing to show"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Produce your finished draft deck now",
+          "body": "Work through this in one sitting, using the outline you saved earlier. 1) Build the full deck from your approved outline, one claim per slide heading. 2) Add one data slide, with every figure reproduced from the source spreadsheet. 3) Review each visual and delete any that could be removed without losing meaning. 4) Ask AI what this deck argues, using the slide text alone, and fix any gap between that and your intended argument. 5) Ask what a sceptic would question first, and put your answer in the speaker notes. Save it — the final module brands, critiques and rehearses this deck."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the fastest way to check whether your finished draft actually makes its point?",
+          "type": "mcq",
+          "options": [
+            "Count the slides and check the design is consistent",
+            "Ask AI what the deck argues using the slide text alone, and compare that to your intended argument",
+            "Read it aloud to time the delivery",
+            "Add a summary slide at the end"
+          ],
+          "correctIndex": 1,
+          "explanation": "It reproduces what an audience does — extract the point from the slides. Any gap between what comes back and what you meant is the gap your audience will also fall into."
+        },
+        {
+          "question": "A slide took an hour to build but does not support your argument. What should happen to it?",
+          "type": "mcq",
+          "options": [
+            "Keep it — the work is already done",
+            "Cut it, because effort spent is not a reason for an audience to sit through it",
+            "Move it to the appendix and mention it anyway",
+            "Reduce its font size so it takes less attention"
+          ],
+          "correctIndex": 1,
+          "explanation": "Time already spent cannot be recovered by spending the audience's attention too. A slide that does not serve the argument makes the whole deck weaker, however good it looks."
+        },
+        {
+          "question": "A figure that AI calculated from your spreadsheet can go straight onto a slide if the spreadsheet was tidy.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A tidy sheet reduces misreadings but does not verify the arithmetic. Reproducing the figure in the spreadsheet is the only check that catches a wrong total or a reversed percentage."
+        }
+      ]
+    },
+    {
+      "id": "lesson-13-keep-every-deck-on-brand",
+      "dayNumber": 13,
+      "moduleId": "module-3",
+      "title": "Keep Every Deck On Brand",
+      "subtitle": "Make AI-built slides look like they came from your organisation, not from a tool",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Off-brand slides quietly cost you authority",
+          "body": "An audience notices inconsistency before it notices your argument. Three fonts, four blues and a stretched logo tell people the deck was assembled in a hurry, and they start discounting the content. The fix is not design talent — it is giving AI a set of rules to work inside, once, and reusing it.",
+          "stat": "1 template",
+          "statLabel": "a single approved template does more for how your work is received than any amount of slide-by-slide styling"
+        },
+        {
+          "type": "content",
+          "headline": "What AI can and cannot do with your brand",
+          "body": "Be clear about the split before you start, or you will spend an afternoon asking a tool to do something it was never able to do.",
+          "bullets": [
+            "It can apply an existing template, theme or colour set consistently across every slide",
+            "It can rewrite headings and body copy in your organisation's tone once you show it examples",
+            "It cannot invent your brand assets — it has no access to your real logo files or licensed fonts",
+            "It cannot tell you what your brand rules are, so vague instructions produce generic slides",
+            "An AI-generated logo or a look-alike font is a legal and credibility risk, not a shortcut"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Build a reusable brand brief once",
+          "body": "Write this down in a note you keep. Pasting it at the start of a request is what makes the output usable rather than merely tidy.",
+          "bullets": [
+            "Exact colours as hex values, with which one is primary and where accents are allowed",
+            "The two fonts you actually own, plus the sizes for headings and body text",
+            "Where the logo goes, at what size, and the rule that it is never stretched or recoloured",
+            "Tone: three real sentences from your own material that show how your organisation writes",
+            "What is banned — clip art, stock smiles, gradients, anything your brand guide rules out"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Permission and ownership rules worth respecting",
+          "body": "This is where an otherwise good deck creates a real problem for you. None of these takes long to check, and all of them are expensive to get wrong.",
+          "bullets": [
+            "Only use a logo you are permitted to use — a client's logo on a slide implies endorsement",
+            "Fonts are licensed; a look-alike substitute is safer than a font you have not paid for",
+            "AI-generated imagery must never be presented as a photograph of your team or premises",
+            "If an image came from a stock library, keep the licence reference with the deck",
+            "Verify any brand claim about another company before you put it on a slide"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Create your brand brief and apply it",
+          "body": "Do this once and you will reuse it for every deck from now on. 1) Write your brand brief using the five points above — real hex values, real fonts you own, real tone samples from your own material. 2) Open the deck you saved at the end of the last module and apply your organisation's template to it. 3) Paste your brand brief into your AI tool and ask it to rewrite every slide heading in that tone, without changing any figure. 4) Check each heading against the original for meaning, not just style. 5) Save the brand brief separately from the deck — it is the asset you keep."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Your AI tool offers to generate a logo for your company. What is the sensible response?",
+          "type": "mcq",
+          "options": [
+            "Use it — a generated logo is faster than commissioning one",
+            "Decline, and use your real logo file, because a generated mark is not your brand and may not be yours to use",
+            "Use it only on internal slides",
+            "Use it and add a note saying it is a placeholder"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your brand identity is an asset with ownership attached. A generated stand-in confuses an audience about who they are dealing with and can create a licensing problem you did not intend."
+        },
+        {
+          "question": "Why does a written brand brief produce better results than styling slides one at a time?",
+          "type": "mcq",
+          "options": [
+            "It makes the AI more creative",
+            "It gives the tool explicit rules to apply consistently, so you review once instead of correcting every slide",
+            "It reduces the file size of the deck",
+            "It removes the need to check the output"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consistency is a rules problem, not a taste problem. Once the rules are written down the tool applies them uniformly, and your attention goes to the argument instead of to fonts."
+        },
+        {
+          "question": "An AI-generated image of a busy office can be used as a photograph of your own workplace.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Presenting generated imagery as a real photograph misrepresents your organisation, and it is the kind of detail an audience remembers if they spot it. Use it as illustration, and say so if asked."
+        }
+      ]
+    },
+    {
+      "id": "lesson-14-build-a-business-presentation",
+      "dayNumber": 14,
+      "moduleId": "module-3",
+      "title": "Build a Business Presentation",
+      "subtitle": "Produce the update, review or proposal your organisation actually asks for",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Most business decks fail on structure, not effort",
+          "body": "A monthly update that opens with methodology, or a proposal that reaches the ask on slide nineteen, wastes the goodwill it started with. Senior audiences want the conclusion first and the working available afterwards. AI is good at that reordering once you tell it who is in the room and what you want them to do.",
+          "stat": "Answer first",
+          "statLabel": "lead with the conclusion and the decision you need, then support it — never the other way round"
+        },
+        {
+          "type": "content",
+          "headline": "Name the decision before you build anything",
+          "body": "Write these four lines at the top of your brief. A deck built without them ends up informative and useless.",
+          "bullets": [
+            "Who is in the room, and what they already know",
+            "The single decision or action you want when you finish",
+            "What they will worry about most, stated plainly",
+            "What you will do if the answer is no"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "A structure that works for updates and proposals",
+          "body": "Ask AI to produce your outline in this order. It maps onto how decisions are actually made, so it survives being cut short.",
+          "bullets": [
+            "The conclusion, in one sentence, on the first content slide",
+            "The two or three reasons it holds, one claim per slide heading",
+            "The evidence behind each reason, with a traceable source named",
+            "The risks and what you are doing about them — including the one you cannot fix",
+            "The ask: what you need, from whom, by when"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where business decks lose credibility",
+          "body": "These are the moments an audience stops trusting the rest of the deck. Each one is avoidable in a couple of minutes.",
+          "bullets": [
+            "A figure nobody can trace back to a system, report or spreadsheet",
+            "A forecast presented as a fact rather than as an assumption with a range",
+            "A rounded number that flatters the result and does not match the source",
+            "Omitting the risk everyone in the room already knows about",
+            "Letting AI invent a benchmark or a market figure you have not verified"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build a real business presentation now",
+          "body": "Use something genuinely on your plate. 1) Write the four lines: audience, the decision you want, their biggest worry, and your fallback. 2) Ask AI for an outline in the five-part structure above, and approve the outline before any slides exist. 3) Build the deck, one claim per slide heading, conclusion first. 4) Name a traceable source beside every figure, and reproduce any calculation yourself. 5) Mark clearly which numbers are actuals and which are forecasts. 6) Ask AI to read the slide text back and state what decision it is being asked to make — if that does not match your line one, fix the deck, not the prompt."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where should the conclusion of a business update appear?",
+          "type": "mcq",
+          "options": [
+            "At the end, after the supporting analysis",
+            "On the first content slide, so the room knows the point even if the meeting is cut short",
+            "In the appendix, to keep the deck short",
+            "Nowhere — the audience should draw its own conclusion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Meetings get shortened and attention is highest at the start. Leading with the conclusion means the most important sentence is the one guaranteed to be heard."
+        },
+        {
+          "question": "AI suggests an industry benchmark that supports your case. What do you do before it goes on a slide?",
+          "type": "mcq",
+          "options": [
+            "Use it, since it is consistent with what you already believe",
+            "Find and cite the original published source, and drop the figure if you cannot",
+            "Soften it to a rough range so it is harder to challenge",
+            "Attribute it to industry consensus"
+          ],
+          "correctIndex": 1,
+          "explanation": "A benchmark you cannot trace is an invented figure with a confident tone. If no real source exists, making the claim vaguer hides the problem rather than solving it."
+        },
+        {
+          "question": "A forecast can be shown in the same style as an actual result, as long as the method was sound.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "An audience treats anything formatted like a result as a result. Label forecasts as projections and show the assumptions, or you will be held to a number you only estimated."
+        }
+      ]
+    },
+    {
+      "id": "lesson-15-sales-and-pitch-decks",
+      "dayNumber": 15,
+      "moduleId": "module-3",
+      "title": "Sales and Pitch Decks",
+      "subtitle": "Make a persuasive case without overstating what you can deliver",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The strongest pitch is the one that survives scrutiny",
+          "body": "Persuasion and honesty are not opposites — an overstated claim only has to be caught once to lose the deal and the relationship. A pitch that states exactly what you do, what it costs and where it does not fit is far harder to argue with than one built on superlatives.",
+          "stat": "Their problem",
+          "statLabel": "a pitch that opens with the buyer's problem in their own words outperforms one that opens with your company history"
+        },
+        {
+          "type": "content",
+          "headline": "Structure a pitch around the buyer, not you",
+          "body": "Give AI this order and it will stop producing the company-history opener it defaults to.",
+          "bullets": [
+            "The problem, in the buyer's own language, taken from something they actually said or wrote",
+            "What it costs them today, using their figures where you have them",
+            "What you do about it, in one sentence a non-specialist could repeat",
+            "Proof: a named case, a real result, or an honest statement that you are new to this",
+            "The price, the next step, and what they need to decide"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Claims that must never reach a pitch slide",
+          "body": "AI will happily produce all of these because they sound like normal marketing copy. Every one is a liability in front of a buyer or a regulator.",
+          "bullets": [
+            "A testimonial, quotation or case study you did not actually receive",
+            "A guaranteed outcome, saving or return that you cannot contractually deliver",
+            "A comparison against a named competitor that you cannot evidence",
+            "A statistic with no traceable source, however plausible it sounds",
+            "A client logo used without permission to imply endorsement"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Say where you do not fit",
+          "body": "This feels counterintuitive and it is the single most effective trust move in a pitch. Buyers are already looking for the catch, so naming it first puts you on their side of the table.",
+          "bullets": [
+            "One sentence on who this is not right for, and why",
+            "The main limitation of your approach, stated before they find it",
+            "What is genuinely included, and what costs extra",
+            "How long it really takes, not the best case you achieved once",
+            "The objection you expect, answered on the slide rather than in the notes"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build and stress-test a pitch deck",
+          "body": "Use a real opportunity, or a past one you lost. 1) Find something the buyer actually wrote or said about their problem, and use their words on slide one. 2) Ask AI for a pitch outline in the five-part order above, then approve it before building. 3) Go through every claim and mark it as evidenced, unevidenced or unverifiable — delete or rewrite anything in the last two groups. 4) Add one slide saying who this is not right for. 5) Ask AI to act as a sceptical buyer and list the five hardest questions, then answer each one on a slide or in the notes. 6) Check no testimonial, logo or figure appears that you cannot source."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "AI drafts a testimonial that reads exactly like something a happy client would say. Can you use it?",
+          "type": "mcq",
+          "options": [
+            "Yes, if it reflects the kind of feedback you usually get",
+            "No — a testimonial nobody gave is fabricated evidence, whatever it resembles",
+            "Yes, if you attribute it to an anonymous client",
+            "Yes, provided you mark it as illustrative in small print"
+          ],
+          "correctIndex": 1,
+          "explanation": "It is invented evidence attributed to a real relationship, and it is checkable. Ask a real client for a real sentence instead, or state your results without a quotation."
+        },
+        {
+          "question": "Why does naming who your product is not right for strengthen a pitch?",
+          "type": "mcq",
+          "options": [
+            "It makes the deck longer and more thorough",
+            "It shows you understand the limits of your own offer, which makes your other claims more believable",
+            "It lowers expectations so any result looks good",
+            "It removes the need to discuss price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Buyers discount claims from anyone who claims to fit everyone. Volunteering the limit signals that you are describing reality rather than selling, so the rest of the deck carries more weight."
+        },
+        {
+          "question": "A guaranteed return figure is acceptable on a pitch slide if AI based it on typical results.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "A guarantee is a commitment, not a description. Promising an outcome you cannot contractually deliver creates a dispute later and, in regulated markets, a compliance problem now."
+        }
+      ]
+    },
+    {
+      "id": "lesson-16-let-ai-critique-your-deck",
+      "dayNumber": 16,
+      "moduleId": "module-3",
+      "title": "Let AI Critique Your Deck",
+      "subtitle": "Get a hard, useful review before a real audience gives you one",
+      "duration": "6 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "Ask for praise and you will get praise",
+          "body": "AI tools default to encouragement, so \"what do you think of my deck?\" returns a compliment and a tidy summary. The value is in asking a narrow, hostile question instead — where the argument breaks, what a sceptic attacks first, which slide could be deleted without anyone noticing.",
+          "stat": "Ask harder",
+          "statLabel": "a specific critical question produces usable feedback; an open request for an opinion produces reassurance"
+        },
+        {
+          "type": "content",
+          "headline": "Critique prompts that actually return something useful",
+          "body": "Run these one at a time against your slide text. Asking all of them at once produces a shallow answer to each.",
+          "bullets": [
+            "State what this deck argues, using the slide text alone — no charitable interpretation",
+            "Name the weakest claim and say exactly why it is weak",
+            "Which slide could be deleted without the argument losing anything?",
+            "What would a sceptical audience attack first, and how should I answer it?",
+            "Where am I asserting something as fact without evidence on the slide?"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "How to read the feedback you get back",
+          "body": "A critique is a set of leads to check, not a verdict. Treat it the way you would treat a colleague's opinion — seriously, and with your own judgement intact.",
+          "bullets": [
+            "If it cannot state your argument, your audience will not be able to either",
+            "A criticism you disagree with still tells you the slide is ambiguous",
+            "It cannot know your audience, your politics or your history — you decide what matters",
+            "Confidently wrong feedback happens; verify any factual correction it offers",
+            "Fix the deck, not the prompt — rewording your request to get a nicer answer teaches you nothing"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "What an AI review cannot replace",
+          "body": "Be honest about the limits, or you will walk in believing the deck has been checked when it has not.",
+          "bullets": [
+            "It cannot verify whether your figures are true — only whether they are supported on the slide",
+            "It cannot judge how your specific audience will react to a sensitive point",
+            "It cannot approve a claim that needs legal, financial or clinical sign-off",
+            "It cannot tell you what your organisation has already promised elsewhere",
+            "One human colleague reading it aloud will still catch things a tool misses"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Run a full critique pass on your deck",
+          "body": "Use the deck you have been building through this module. 1) Paste the slide text only — no explanation from you, since your audience will not get one either. 2) Ask the five critique questions one at a time, and write each answer down. 3) Ask what a sceptic attacks first, and put your answer on a slide rather than hoping it will not come up. 4) Delete or merge any slide the review says adds nothing, and note which ones you kept and why. 5) Verify every factual correction it offered against a real source. 6) Then send it to one human being and ask them what the deck is arguing."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is wrong with asking \"what do you think of my presentation?\"",
+          "type": "mcq",
+          "options": [
+            "It is too long a prompt",
+            "It invites a compliment and a summary, rather than a specific weakness you can fix",
+            "It uses too much of your daily usage allowance",
+            "It only works on paid tools"
+          ],
+          "correctIndex": 1,
+          "explanation": "These tools lean towards being agreeable, so an open question returns reassurance. A narrow, hostile question is what surfaces the flaw you can actually do something about."
+        },
+        {
+          "question": "The review states your argument as something different from what you intended. What does that tell you?",
+          "type": "mcq",
+          "options": [
+            "The tool misunderstood, so ignore it",
+            "Your slides communicate something other than you meant, and a real audience will read them the same way",
+            "You should add a summary slide explaining the argument",
+            "You should rephrase the prompt until it agrees with you"
+          ],
+          "correctIndex": 1,
+          "explanation": "It only had your slides, which is exactly what your audience has. A gap between what came back and what you meant is a gap in the deck, not in the reviewer."
+        },
+        {
+          "question": "An AI critique confirms your figures are correct, so no further checking is needed.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "It can only judge whether a number is supported by what is on the slide, not whether it is true. Verification still means going back to the source that produced the figure."
+        }
+      ]
+    },
+    {
+      "id": "lesson-17-prepare-practise-present",
+      "dayNumber": 17,
+      "moduleId": "module-3",
+      "title": "Prepare, Practise, Present",
+      "subtitle": "Use AI to rehearse, anticipate questions and walk in ready",
+      "duration": "7 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "The deck is not the presentation",
+          "body": "Most of the risk in a presentation sits outside the slides: the question you had not thought about, the section that runs twice as long as planned, the point you cannot say out loud without reading it. Rehearsal is where those get found, and AI makes preparing for them quick rather than pleasant.",
+          "stat": "Out loud",
+          "statLabel": "saying it out loud once catches more problems than reading the deck through five more times"
+        },
+        {
+          "type": "content",
+          "headline": "Speaker notes that help you under pressure",
+          "body": "Ask AI to draft notes to these rules, then edit them into your own words. Notes written as prose get read aloud, which is the failure you are trying to avoid.",
+          "bullets": [
+            "Three or four short prompts per slide, not sentences to be read out",
+            "The single point that slide must land, at the top",
+            "The figure you are most likely to be asked to justify, with its source",
+            "A one-line bridge into the next slide so the deck does not stall",
+            "Anything you must say for accuracy or compliance, marked clearly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Prepare for the questions you are not looking forward to",
+          "body": "The questions that damage a presentation are usually predictable. Write them out and your answer becomes a considered one rather than an improvised one.",
+          "bullets": [
+            "Ask AI for the ten hardest questions this deck invites, then answer them in writing",
+            "Include the question you hope nobody asks — that is the one to rehearse most",
+            "For anything you cannot answer, prepare \"I don't have that figure, I'll follow up by Friday\"",
+            "Check every answer against a real source before you rely on it in the room",
+            "Decide in advance which questions you will take at the end rather than mid-flow"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Rehearse the delivery, not just the content",
+          "body": "A last practical pass. These are the things people wish they had checked, usually about ninety seconds into presenting.",
+          "bullets": [
+            "Time it out loud and cut to fit the slot, assuming you get less time than promised",
+            "Read each slide heading aloud — anything you stumble over is badly worded",
+            "Check it is legible from the back: font size, contrast, and no dense tables",
+            "Have a plan for the deck failing to display, including your three key numbers on paper",
+            "Know the first sentence and the last sentence by heart; improvise the middle"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Rehearse your deck properly",
+          "body": "Set aside twenty uninterrupted minutes. 1) Ask AI to draft speaker notes for every slide to the rules above, then rewrite them in your own words. 2) Ask for the ten hardest questions the deck invites, and write a real answer to each — verifying any figure you use against its source. 3) Identify the question you least want, and rehearse that answer out loud twice. 4) Present the whole deck out loud, timed, and note where you ran long or stumbled. 5) Cut or reword whatever caused the stumble. 6) Write your three key numbers on paper as a fallback, and learn your opening and closing sentences."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes speaker notes useful in the room?",
+          "type": "mcq",
+          "options": [
+            "Full sentences you can read out if you lose your place",
+            "Short prompts plus the one point the slide must land, so you speak rather than read",
+            "A copy of the slide text, so the two always match",
+            "A transcript of your rehearsal"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prose gets read aloud, and an audience disengages the moment that starts. Prompts keep you talking to the room while making sure the essential point is not forgotten."
+        },
+        {
+          "question": "You are asked for a figure you do not have. What is the best prepared response?",
+          "type": "mcq",
+          "options": [
+            "Give your best estimate so the answer sounds confident",
+            "Say you do not have it to hand and commit to following up with a date",
+            "Redirect to a different figure you do have",
+            "Say the data is confidential"
+          ],
+          "correctIndex": 1,
+          "explanation": "An estimate offered as an answer becomes a number you are held to. Saying you will confirm it costs you nothing and protects the credibility of everything else you said."
+        },
+        {
+          "question": "Rehearsing out loud is worth the time even when you know the material well.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Speaking exposes problems reading never does — awkward headings, sections that overrun, transitions that do not exist. It is also the only honest way to find out how long the deck really takes."
+        }
+      ]
+    },
+    {
+      "id": "lesson-18-final-project",
+      "dayNumber": 18,
+      "moduleId": "module-3",
+      "title": "Final Project",
+      "subtitle": "Take one real presentation from brief to rehearsed, using everything in the course",
+      "duration": "9 min",
+      "xpValue": 25,
+      "cards": [
+        {
+          "type": "hook",
+          "headline": "One deck, start to finish, on your own terms",
+          "body": "You have learned the pieces separately: briefing, research, structure, transformation, data, branding, critique and rehearsal. This project puts them together on something that genuinely matters to you, so you finish holding a presentation you would be willing to deliver rather than a folder of exercises.",
+          "stat": "End to end",
+          "statLabel": "brief, outline, build, verify, brand, critique and rehearse — one presentation, all the way through"
+        },
+        {
+          "type": "content",
+          "headline": "What you have learned across the course",
+          "body": "Read this list before you start. If any line is not genuinely in place, go back to that lesson first — the project is where a gap shows up.",
+          "bullets": [
+            "Brief AI properly: audience, purpose, the decision you want, and the constraints",
+            "Research before presenting, and name a traceable source for every fact",
+            "Settle the argument and approve an outline before any slide exists",
+            "Turn documents and spreadsheets into slides without changing what they said",
+            "Choose visuals that carry meaning, and never mislead with an axis or an image",
+            "Apply your brand rules, then have the deck critiqued honestly and rehearsed out loud"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "The standard your finished deck should meet",
+          "body": "These are the checks worth running before you show it to anyone. They are the same questions an audience is asking silently.",
+          "bullets": [
+            "The argument is stateable in one sentence from the slides alone",
+            "Every slide heading makes exactly one claim",
+            "Every figure, date and quotation has a source you could produce on request",
+            "Forecasts and estimates are labelled as such, never styled like results",
+            "Nothing on a slide is invented, borrowed without permission or overstated",
+            "You have rehearsed the hardest question out loud and answered it honestly"
+          ]
+        },
+        {
+          "type": "content",
+          "headline": "Where to keep going after this",
+          "body": "The habits are what compound, not the tool. These are the four worth keeping once the course is behind you.",
+          "bullets": [
+            "Reuse your brand brief and your best prompts instead of starting from scratch",
+            "Keep verifying — the moment you stop checking figures is the moment one gets through",
+            "Ask for the hostile critique every time, even when the deck feels finished",
+            "Rehearse out loud once, however short the presentation",
+            "Notice which parts AI genuinely saved you time on, and which you are better off doing yourself"
+          ]
+        },
+        {
+          "type": "try-it",
+          "headline": "Build your final presentation now",
+          "body": "Choose a real presentation you have to give, or one you have been avoiding. Work through it in order and do not skip a step. 1) Write the brief: audience, what they know, the decision you want, their biggest worry, and your constraints. 2) Research the facts you need and record a traceable source for each one. 3) Settle the argument in one sentence, then get an outline and approve it before building anything. 4) Build the deck, one claim per slide heading, conclusion first. 5) Add one data slide with every figure reproduced from the source spreadsheet, and label anything that is a forecast. 6) Apply your brand brief. 7) Run the full critique pass on the slide text alone and fix what it finds, verifying any factual correction. 8) Draft speaker notes, prepare the ten hardest questions, and present it out loud, timed. 9) Save the deck, the brief and your prompts together — that set is what makes the next presentation faster."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the single best test of whether your finished deck makes its point?",
+          "type": "mcq",
+          "options": [
+            "It looks consistent and on brand throughout",
+            "The argument can be stated in one sentence from the slides alone, and that sentence is the one you intended",
+            "It fits inside the time slot",
+            "Every slide has a visual"
+          ],
+          "correctIndex": 1,
+          "explanation": "Design, timing and visuals all matter, but none of them rescues a deck whose point cannot be extracted from the slides. That extraction is exactly what your audience is doing."
+        },
+        {
+          "question": "Which habit matters most for keeping AI-built presentations trustworthy over time?",
+          "type": "mcq",
+          "options": [
+            "Using the newest available model",
+            "Verifying every figure, date and quotation against a traceable source, every time",
+            "Keeping decks under fifteen slides",
+            "Writing longer prompts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fluent output is the risk, not the reward — a fabricated figure reads exactly like a real one. Checking is the only step that reliably keeps an invented number off your slides."
+        },
+        {
+          "question": "Once you can build a deck quickly with AI, the outline step can be skipped.",
+          "type": "true-false",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Speed of production is precisely why the outline matters more, not less — it is far cheaper to fix a wrong argument in five lines than across thirty finished slides."
+        }
+      ]
+    }
+  ]
+}
