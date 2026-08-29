@@ -61,8 +61,10 @@ export default function CourseHubPage() {
   const unit = (hub.unitLabel as string) || 'days'
   const unitTitle = unit === 'days' ? 'Days' : 'Lessons'
   const badge = hub.badge as { icon?: string; label?: string } | null
-  const includes = (hub.includes as Array<{ icon: string; text: string }>) || []
   const outcomes = (hub.outcomeBullets as Array<{ icon: string; text: string }>) || []
+  const includes = (hub.includes as Array<{ icon: string; text: string }>)?.length
+    ? (hub.includes as Array<{ icon: string; text: string }>)
+    : outcomes
   const testimonials = hub.testimonials || []
   const continueHref = `/app/courses/${slug}/${next.id}`
   const started = completedCount > 0
@@ -224,8 +226,12 @@ export default function CourseHubPage() {
               <span className="text-base">🎓</span>
               <span className="text-sw-dark text-xs font-bold tracking-wide uppercase">{hubChrome.certificateDefaults.kicker}</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark mb-3">{String(hub.headingText)}</h2>
-            <p className="text-sw-grey text-sm sm:text-base max-w-xl mx-auto leading-relaxed">{String(hub.subText)}</p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark mb-3">
+              {String(hub.headingText || `Complete all ${course.totalDays} ${unit}. Earn your certificate.`)}
+            </h2>
+            <p className="text-sw-grey text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+              {String(hub.subText || '')}
+            </p>
           </div>
           <div className="max-w-lg mx-auto relative">
             <div className="relative rounded-2xl overflow-hidden border-2 transition-all duration-500 border-sw-grey-border shadow-md">

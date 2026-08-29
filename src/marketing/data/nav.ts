@@ -4,6 +4,9 @@ export const ROUTES = {
   login: '/login',
   support: '/support',
   billing: '/billing',
+  about: '/about',
+  contact: '/contact',
+  cookie: '/cookie-policy',
   privacy: '/privacy-policy',
   terms: '/terms-and-conditions',
   refund: '/refund-policy',
@@ -53,10 +56,10 @@ export const FOOTER_LEARN = [
 ] as const
 
 export const FOOTER_COMPANY = [
-  { label: 'About', href: '#' },
+  { label: 'About', href: ROUTES.about },
   { label: 'Blog', href: '#' },
   { label: 'Help & Support', href: ROUTES.support },
-  { label: 'Contact', href: '#' },
+  { label: 'Contact', href: ROUTES.contact },
 ] as const
 
 export const FOOTER_LEGAL = [
@@ -64,5 +67,5 @@ export const FOOTER_LEGAL = [
   { label: 'Terms & Conditions', href: ROUTES.terms },
   { label: 'Refund Policy', href: ROUTES.refund },
   { label: 'Billing & Plans', href: ROUTES.billing },
-  { label: 'Cookie Policy', href: '#' },
+  { label: 'Cookie Policy', href: ROUTES.cookie },
 ] as const

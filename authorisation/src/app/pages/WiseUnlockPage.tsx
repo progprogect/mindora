@@ -32,7 +32,7 @@ export default function WiseUnlockPage() {
         <Link to="/app/wise" className="w-8 h-8 flex items-center justify-center" aria-label="Back">
           ←
         </Link>
-        <h1 className="font-bold">Unlock Wise</h1>
+        <h1 className="text-base font-bold text-sw-dark">Unlock Wise</h1>
       </header>
       <main className="max-w-lg mx-auto px-4 py-8 text-center">
         {unlocked ? (
@@ -45,13 +45,10 @@ export default function WiseUnlockPage() {
           </>
         ) : (
           <>
-            <p className="text-[11px] font-bold tracking-[0.14em] text-orange-600">ONE-TIME OFFER</p>
             <h2 className="text-2xl font-extrabold mt-2">Wise AI Coach</h2>
-            <p className="text-sm text-sw-grey mt-1">One-time unlock · Lifetime access</p>
+            <p className="text-sm text-sw-grey mt-1">One-time unlock • Lifetime access</p>
             <p className="text-4xl font-extrabold mt-6">$19.95</p>
             <p className="text-xs text-sw-grey">one-time payment</p>
-            <p className="text-sm text-sw-grey mt-4">You&apos;ve used your free message today</p>
-            <p className="text-sm text-sw-grey">Unlock unlimited AI coaching — one-time purchase</p>
             <button
               type="button"
               disabled={busy || hasCard === false}

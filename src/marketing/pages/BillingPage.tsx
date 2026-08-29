@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { COMPANY } from '@/marketing/data/company'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
@@ -8,7 +9,7 @@ const ANNUAL = ['Everything in Monthly', 'Best value — lowest per month', 'Can
 const ONE_TIME = [
   'Pay once, access forever',
   'No recurring charges',
-  '30-day money-back guarantee included',
+  '14-day money-back guarantee included',
   'Certificate of completion included',
 ] as const
 
@@ -21,7 +22,7 @@ function CheckItem({ children }: { children: string }) {
 }
 
 export default function BillingPage() {
-  usePageTitle('Billing & Plans — SuccessWise.ai')
+  usePageTitle('Billing & Plans — Mindora Academy')
 
   return (
     <>
@@ -32,8 +33,8 @@ export default function BillingPage() {
           </p>
           <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">Billing & Plans</h1>
           <p className="mx-auto max-w-xl text-base text-white/70">
-            Everything you need to know about your SuccessWise.ai subscription — plans, billing
-            cycles, payments, and how to manage your account.
+            Everything you need to know about your {COMPANY.serviceName} subscription — plans,
+            billing cycles, payments, and how to manage your account.
           </p>
         </div>
       </section>
@@ -205,9 +206,9 @@ export default function BillingPage() {
               <h3 className="mb-2 font-semibold text-sw-dark">Do you offer refunds?</h3>
               <div className="space-y-2 leading-relaxed text-sw-grey">
                 <p>
-                  Yes. We offer an industry-leading <strong>30-day money-back guarantee</strong> on
+                  Yes. We offer an industry-leading <strong>14-day money-back guarantee</strong> on
                   your first full subscription charge (after the trial) and on all one-time
-                  purchases. If you&apos;re not satisfied within 30 days, contact us for a full
+                  purchases. If you&apos;re not satisfied within 14 days, contact us for a full
                   refund — no questions asked. We&apos;ll also refund the $1.00 trial fee if you ask
                   for it. Please read our{' '}
                   <Link to={ROUTES.refund} className="font-medium text-sw-blue hover:underline">
@@ -239,8 +240,8 @@ export default function BillingPage() {
                 <p>
                   We&apos;re working on team and business pricing. If you need licences for your
                   team or organisation, get in touch at{' '}
-                  <a href="mailto:contact@clicktech.com" className="text-sw-blue hover:underline">
-                    contact@clicktech.com
+                  <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
+                    {COMPANY.email}
                   </a>{' '}
                   and we&apos;ll be happy to discuss options.
                 </p>
@@ -277,6 +278,10 @@ export default function BillingPage() {
             ·{' '}
             <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
               Privacy Policy
+            </Link>{' '}
+            ·{' '}
+            <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+              Contact
             </Link>
           </p>
         </div>

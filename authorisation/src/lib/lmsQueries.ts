@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import {
   fetchHasSavedCard,
   fetchProgress,
+  fetchPromptVaultKey,
   fetchPurchases,
   fetchSubscription,
   fetchUpsellStatus,
@@ -93,6 +94,8 @@ export function useSubscription() {
   return sub
 }
 
+export type PurchaseRecord = { sku: string; createdAt: number; amountCents: number | null }
+
 export function usePurchases() {
   const [skus, setSkus] = useState<Set<string> | undefined>(undefined)
   useEffect(() => {
@@ -110,4 +113,42 @@ export function usePurchases() {
     }
   }, [])
   return skus
+}
+
+export function usePurchaseRecords() {
+  const [rows, setRows] = useState<PurchaseRecord[] | undefined>(undefined)
+  useEffect(() => {
+    let cancelled = false
+    fetchPurchases()
+      .then((data) => {
+        if (!cancelled) setRows(data.purchases)
+      })
+      .catch((error) => {
+        console.warn('[api] purchases failed', error)
+        if (!cancelled) setRows([])
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+  return rows
+}
+
+export function usePromptVaultKey() {
+  const [key, setKey] = useState<'prompt-vault' | null | undefined>(undefined)
+  useEffect(() => {
+    let cancelled = false
+    fetchPromptVaultKey()
+      .then((data) => {
+        if (!cancelled) setKey(data.key)
+      })
+      .catch((error) => {
+        console.warn('[api] prompt vault key failed', error)
+        if (!cancelled) setKey(null)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+  return key
 }

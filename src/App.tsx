@@ -6,6 +6,9 @@ import HomePage from '@/marketing/pages/HomePage'
 import PricingPage from '@/marketing/pages/PricingPage'
 import BillingPage from '@/marketing/pages/BillingPage'
 import SupportPage from '@/marketing/pages/SupportPage'
+import AboutPage from '@/marketing/pages/AboutPage'
+import ContactPage from '@/marketing/pages/ContactPage'
+import CookiePolicyPage from '@/marketing/pages/CookiePolicyPage'
 import PrivacyPolicyPage from '@/marketing/pages/PrivacyPolicyPage'
 import TermsPage from '@/marketing/pages/TermsPage'
 import RefundPolicyPage from '@/marketing/pages/RefundPolicyPage'
@@ -47,6 +50,9 @@ export default function App() {
               <Route path="/pricing" element={<PricingPage />} />
               <Route path="/billing" element={<BillingPage />} />
               <Route path="/support" element={<SupportPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/cookie-policy" element={<CookiePolicyPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="/terms-and-conditions" element={<TermsPage />} />
               <Route path="/refund-policy" element={<RefundPolicyPage />} />

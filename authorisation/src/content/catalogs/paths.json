@@ -452,7 +452,8 @@
           }
         ]
       }
-    ]
+    ],
+    "heroCourseCount": 15
   },
   "success-mindset": {
     "path": "/app/success-mindset",
@@ -1212,7 +1213,8 @@
           }
         ]
       }
-    ]
+    ],
+    "heroCourseCount": 34
   },
   "career": {
     "path": "/app/career",
@@ -1343,122 +1345,781 @@
     ],
     "browseBySection": [
       {
-        "id": "career-planning",
-        "name": "Career Planning & Direction",
-        "difficulty": "Beginner",
-        "time": "5 lessons · 2 hrs",
-        "description": "Clarify where you want to go and build a practical roadmap that takes you there — without leaving it to chance.",
-        "skills": [
-          "Goal setting",
-          "Career mapping",
-          "Vision building"
-        ],
-        "transformation": "You'll have a clear 12-month career plan and daily actions to move toward it.",
-        "learnerCount": "8,200",
-        "rating": "4.8",
-        "filters": [
-          "all",
-          "promoted"
+        "id": "foundations",
+        "label": "Career Foundations",
+        "tagline": "The bedrock skills every professional needs to build on",
+        "colour": "sw-blue",
+        "bgLight": "bg-sw-blue/10",
+        "textColour": "text-sw-blue",
+        "borderColour": "border-sw-blue/30",
+        "filter": "promoted",
+        "courses": [
+          {
+            "id": "career-planning",
+            "name": "Career Planning & Direction",
+            "difficulty": "Beginner",
+            "time": "5 lessons · 2 hrs",
+            "description": "Clarify where you want to go and build a practical roadmap that takes you there — without leaving it to chance.",
+            "skills": [
+              "Goal setting",
+              "Career mapping",
+              "Vision building"
+            ],
+            "transformation": "You'll have a clear 12-month career plan and daily actions to move toward it.",
+            "learnerCount": "8,200",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "professional-communication-foundations",
+            "name": "Professional Communication Foundations",
+            "difficulty": "Beginner",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Master the fundamentals of clear, confident communication that builds credibility and trust in every professional interaction.",
+            "skills": [
+              "Active listening",
+              "Written communication",
+              "Tone & clarity"
+            ],
+            "transformation": "You'll communicate with clarity and confidence in meetings, emails and conversations.",
+            "learnerCount": "11,400",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "time-mastery",
+            "name": "Time Mastery for Professionals",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Reclaim your time, eliminate energy drains and build the daily systems that let high performers consistently do their best work.",
+            "skills": [
+              "Prioritisation",
+              "Deep work",
+              "Energy management"
+            ],
+            "transformation": "You'll finish each week having moved the needle on what actually matters.",
+            "learnerCount": "9,700",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "workplace-productivity",
+            "name": "Workplace Productivity System",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Build a reliable productivity system that keeps you organised, focused and consistently ahead — without working more hours.",
+            "skills": [
+              "Task management",
+              "Focus systems",
+              "Output quality"
+            ],
+            "transformation": "You'll get more done in less time and feel in control of your workload.",
+            "learnerCount": "7,300",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "personal-brand-builder",
+            "name": "Personal Brand Builder",
+            "difficulty": "All Levels",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Build a professional reputation that opens doors — online and in person — so the right people know your name for the right reasons.",
+            "skills": [
+              "LinkedIn presence",
+              "Reputation building",
+              "Visibility strategy"
+            ],
+            "transformation": "You'll be known as a go-to expert in your field.",
+            "learnerCount": "6,800",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "all",
+              "earn-more",
+              "promoted"
+            ]
+          },
+          {
+            "id": "professional-relationships",
+            "name": "Professional Relationships",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Build authentic professional relationships that support your career long-term — not just when you need something.",
+            "skills": [
+              "Relationship building",
+              "Trust",
+              "Collaboration"
+            ],
+            "transformation": "You'll have a strong professional network that supports your career goals.",
+            "learnerCount": "5,600",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          }
         ]
       },
       {
-        "id": "professional-communication-foundations",
-        "name": "Professional Communication Foundations",
-        "difficulty": "Beginner",
-        "time": "6 lessons · 2.5 hrs",
-        "description": "Master the fundamentals of clear, confident communication that builds credibility and trust in every professional interaction.",
-        "skills": [
-          "Active listening",
-          "Written communication",
-          "Tone & clarity"
-        ],
-        "transformation": "You'll communicate with clarity and confidence in meetings, emails and conversations.",
-        "learnerCount": "11,400",
-        "rating": "4.9",
-        "filters": [
-          "all",
-          "communicate"
+        "id": "growth",
+        "label": "Career Growth",
+        "tagline": "Strategies that accelerate promotion, pay rises and recognition",
+        "colour": "sw-purple",
+        "bgLight": "bg-sw-purple/10",
+        "textColour": "text-sw-purple",
+        "borderColour": "border-sw-purple/30",
+        "filter": "promoted",
+        "courses": [
+          {
+            "id": "promotion-strategies",
+            "name": "Promotion Strategies That Work",
+            "difficulty": "Intermediate",
+            "time": "6 lessons · 3 hrs",
+            "description": "Learn exactly what managers and senior leaders look for — and how to consistently demonstrate it before your next review.",
+            "skills": [
+              "Promotion readiness",
+              "Stakeholder management",
+              "Visibility"
+            ],
+            "transformation": "You'll know precisely what to do to make yourself the obvious promotion choice.",
+            "learnerCount": "10,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "executive-presence",
+            "name": "Executive Presence",
+            "difficulty": "Intermediate",
+            "time": "5 lessons · 2.5 hrs",
+            "description": "Develop the gravitas, communication style and leadership aura that senior roles demand — regardless of your current level.",
+            "skills": [
+              "Gravitas",
+              "Strategic thinking",
+              "Commanding presence"
+            ],
+            "transformation": "You'll walk into any room and be taken seriously immediately.",
+            "learnerCount": "7,800",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted",
+              "lead"
+            ]
+          },
+          {
+            "id": "strategic-networking",
+            "name": "Strategic Networking",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Build a powerful professional network authentically — with people who genuinely open doors and create real opportunities.",
+            "skills": [
+              "Networking strategy",
+              "Relationship nurturing",
+              "Follow-through"
+            ],
+            "transformation": "You'll have a network that actively creates career opportunities for you.",
+            "learnerCount": "6,400",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "performance-review-mastery",
+            "name": "Performance Review Mastery",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Walk into every performance review prepared, confident and ready to drive the conversation — and the outcome — you deserve.",
+            "skills": [
+              "Self-advocacy",
+              "Review preparation",
+              "Outcome negotiation"
+            ],
+            "transformation": "You'll control the narrative of your performance reviews.",
+            "learnerCount": "8,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "office-politics",
+            "name": "Office Politics Navigation",
+            "difficulty": "Intermediate",
+            "time": "5 lessons · 2 hrs",
+            "description": "Navigate workplace dynamics with calm intelligence — protecting yourself, building allies and creating the right conditions to thrive.",
+            "skills": [
+              "Political awareness",
+              "Influence",
+              "Alliance building"
+            ],
+            "transformation": "You'll turn workplace politics from a threat into a tool.",
+            "learnerCount": "5,200",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "career-visibility",
+            "name": "Career Visibility",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Stop being the best-kept secret in your organisation. Learn how to get noticed, get credit and get considered for bigger opportunities.",
+            "skills": [
+              "Strategic visibility",
+              "Self-promotion",
+              "Contribution signalling"
+            ],
+            "transformation": "The right people will know your name and your value.",
+            "isNew": true,
+            "learnerCount": "4,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          }
         ]
       },
       {
-        "id": "time-mastery",
-        "name": "Time Mastery for Professionals",
-        "difficulty": "All Levels",
-        "time": "5 lessons · 2 hrs",
-        "description": "Reclaim your time, eliminate energy drains and build the daily systems that let high performers consistently do their best work.",
-        "skills": [
-          "Prioritisation",
-          "Deep work",
-          "Energy management"
-        ],
-        "transformation": "You'll finish each week having moved the needle on what actually matters.",
-        "learnerCount": "9,700",
-        "rating": "4.8",
-        "filters": [
-          "all",
-          "promoted"
+        "id": "leadership",
+        "label": "Leadership",
+        "tagline": "Lead teams, influence outcomes and create lasting impact",
+        "colour": "sw-coral",
+        "bgLight": "bg-sw-coral/10",
+        "textColour": "text-sw-coral",
+        "borderColour": "border-sw-coral/30",
+        "filter": "lead",
+        "courses": [
+          {
+            "id": "leading-first-team",
+            "name": "Leading Your First Team",
+            "difficulty": "Beginner",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Navigate the transition from individual contributor to team leader — building trust, credibility and confidence from day one.",
+            "skills": [
+              "People management",
+              "Team dynamics",
+              "New leader confidence"
+            ],
+            "transformation": "You'll lead with calm authority and earn your team's respect from the start.",
+            "learnerCount": "9,600",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "art-of-delegation",
+            "name": "The Art of Delegation",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Stop doing everything yourself. Learn to delegate with clarity, confidence and follow-through — freeing you for higher-value work.",
+            "skills": [
+              "Delegation",
+              "Trust-building",
+              "Output management"
+            ],
+            "transformation": "You'll multiply your impact through the people around you.",
+            "learnerCount": "5,800",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "conflict-resolution",
+            "name": "Conflict Resolution at Work",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Handle workplace conflict calmly, constructively and confidently — turning friction into forward momentum.",
+            "skills": [
+              "Conflict management",
+              "Mediation",
+              "Difficult conversations"
+            ],
+            "transformation": "You'll turn conflict situations into trust-building moments.",
+            "learnerCount": "7,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead",
+              "communicate"
+            ]
+          },
+          {
+            "id": "coaching-your-team",
+            "name": "Coaching Your Team",
+            "difficulty": "Intermediate",
+            "time": "5 lessons · 2.5 hrs",
+            "description": "Develop coaching skills that unlock your team's potential, improve performance and build a culture people want to be part of.",
+            "skills": [
+              "Coaching frameworks",
+              "Motivating teams",
+              "Performance conversations"
+            ],
+            "transformation": "You'll be the kind of leader people fight to work for.",
+            "learnerCount": "4,900",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "decision-making",
+            "name": "Decision Making Under Pressure",
+            "difficulty": "Intermediate",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Make faster, sharper decisions — even in high-stakes, ambiguous situations — without second-guessing yourself afterwards.",
+            "skills": [
+              "Decision frameworks",
+              "Risk assessment",
+              "Mental clarity"
+            ],
+            "transformation": "You'll be known as someone who makes the right call, fast.",
+            "learnerCount": "4,400",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "leading-with-influence",
+            "name": "Leading with Influence",
+            "difficulty": "Advanced",
+            "time": "6 lessons · 3 hrs",
+            "description": "Lead without relying on authority. Learn how the most respected leaders build genuine influence that makes things happen.",
+            "skills": [
+              "Influence",
+              "Persuasion",
+              "Leadership without authority"
+            ],
+            "transformation": "You'll get buy-in from anyone — regardless of hierarchy.",
+            "learnerCount": "3,700",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "all",
+              "lead",
+              "promoted"
+            ]
+          }
         ]
       },
       {
-        "id": "workplace-productivity",
-        "name": "Workplace Productivity System",
-        "difficulty": "All Levels",
-        "time": "4 lessons · 1.5 hrs",
-        "description": "Build a reliable productivity system that keeps you organised, focused and consistently ahead — without working more hours.",
-        "skills": [
-          "Task management",
-          "Focus systems",
-          "Output quality"
-        ],
-        "transformation": "You'll get more done in less time and feel in control of your workload.",
-        "learnerCount": "7,300",
-        "rating": "4.7",
-        "filters": [
-          "all",
-          "promoted"
+        "id": "communication",
+        "label": "Communication",
+        "tagline": "Speak, write and present in ways that move people to action",
+        "colour": "sw-teal",
+        "bgLight": "bg-sw-teal/10",
+        "textColour": "text-sw-teal",
+        "borderColour": "border-sw-teal/30",
+        "filter": "communicate",
+        "courses": [
+          {
+            "id": "public-speaking",
+            "name": "Public Speaking Confidence",
+            "difficulty": "All Levels",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Transform your relationship with public speaking — from anxiety-inducing to one of your greatest professional superpowers.",
+            "skills": [
+              "Speaking confidence",
+              "Voice & delivery",
+              "Handling nerves"
+            ],
+            "transformation": "You'll love being asked to present — and people will love watching you.",
+            "learnerCount": "13,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "confidence"
+            ]
+          },
+          {
+            "id": "presentation-mastery",
+            "name": "Presentation Mastery",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Build presentations that persuade, inspire and leave lasting impressions — using structure, storytelling and design principles.",
+            "skills": [
+              "Presentation design",
+              "Storytelling structure",
+              "Audience engagement"
+            ],
+            "transformation": "Your presentations will be the ones people remember and act on.",
+            "learnerCount": "8,600",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "negotiation-playbook",
+            "name": "The Negotiation Playbook",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Master the negotiation techniques used by top professionals to get better outcomes — in salary discussions, contracts and everyday workplace decisions.",
+            "skills": [
+              "Negotiation tactics",
+              "Value articulation",
+              "Win-win framing"
+            ],
+            "transformation": "You'll negotiate confidently and consistently get what you deserve.",
+            "learnerCount": "7,400",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "business-storytelling",
+            "name": "Business Storytelling",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Tell stories that make your ideas stick, persuade stakeholders and position you as a compelling communicator at any level.",
+            "skills": [
+              "Narrative structure",
+              "Persuasion",
+              "Emotional engagement"
+            ],
+            "transformation": "Your ideas will get funded, backed and remembered.",
+            "learnerCount": "5,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "business-writing",
+            "name": "Business Writing & Email",
+            "difficulty": "Beginner",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Write with precision, purpose and clarity — so every email, report and message reflects the professional you truly are.",
+            "skills": [
+              "Clear writing",
+              "Email strategy",
+              "Professional tone"
+            ],
+            "transformation": "Your written communication will build your reputation, not damage it.",
+            "learnerCount": "6,300",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "difficult-conversations",
+            "name": "Difficult Conversations",
+            "difficulty": "Intermediate",
+            "time": "5 lessons · 2 hrs",
+            "description": "Handle the conversations most people avoid — performance issues, pay discussions, disagreements — with calm, skill and integrity.",
+            "skills": [
+              "Emotional regulation",
+              "Directness",
+              "Active listening"
+            ],
+            "transformation": "You'll handle any difficult conversation without it derailing relationships.",
+            "learnerCount": "8,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "lead"
+            ]
+          }
         ]
       },
       {
-        "id": "personal-brand-builder",
-        "name": "Personal Brand Builder",
-        "difficulty": "All Levels",
-        "time": "6 lessons · 2.5 hrs",
-        "description": "Build a professional reputation that opens doors — online and in person — so the right people know your name for the right reasons.",
-        "skills": [
-          "LinkedIn presence",
-          "Reputation building",
-          "Visibility strategy"
-        ],
-        "transformation": "You'll be known as a go-to expert in your field.",
-        "learnerCount": "6,800",
-        "rating": "4.8",
-        "isNew": true,
-        "filters": [
-          "all",
-          "earn-more",
-          "promoted"
+        "id": "future-skills",
+        "label": "Future Skills",
+        "tagline": "Stay ahead of the curve and become indispensable",
+        "colour": "sw-emerald",
+        "bgLight": "bg-sw-emerald/10",
+        "textColour": "text-sw-emerald",
+        "borderColour": "border-sw-emerald/30",
+        "filter": "future-proof",
+        "courses": [
+          {
+            "id": "ai-productivity-toolkit",
+            "name": "AI Productivity Toolkit",
+            "difficulty": "Beginner",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Use the latest AI tools to work faster, produce better output and free up mental bandwidth for higher-value thinking.",
+            "skills": [
+              "AI tools",
+              "Prompt writing",
+              "Workflow integration"
+            ],
+            "transformation": "You'll do in 2 hours what used to take a full day.",
+            "learnerCount": "18,400",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "ai-for-office",
+            "name": "AI for Office Work",
+            "difficulty": "Beginner",
+            "time": "5 lessons · 2 hrs",
+            "description": "Practical AI skills for non-technical professionals — automate repetitive tasks, write better and think faster using everyday AI tools.",
+            "skills": [
+              "ChatGPT",
+              "Automation basics",
+              "AI writing"
+            ],
+            "transformation": "You'll be the person in your team who knows how to use AI effectively.",
+            "learnerCount": "14,200",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "digital-skills-accelerator",
+            "name": "Digital Skills Accelerator",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Build the essential digital skills every modern professional needs — from data literacy to digital tools — to stay competitive.",
+            "skills": [
+              "Data literacy",
+              "Digital tools",
+              "Tech confidence"
+            ],
+            "transformation": "You'll be fluent in the digital skills your workplace demands.",
+            "learnerCount": "7,600",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "workflow-automation",
+            "name": "Workflow Automation",
+            "difficulty": "Intermediate",
+            "time": "5 lessons · 2 hrs",
+            "description": "Automate the tasks that drain your time — using no-code tools — so you can focus on the work that actually creates value.",
+            "skills": [
+              "No-code automation",
+              "Process design",
+              "Tool integration"
+            ],
+            "transformation": "You'll eliminate hours of repetitive work every single week.",
+            "learnerCount": "5,400",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "critical-thinking",
+            "name": "Critical Thinking for Professionals",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Think clearer, challenge assumptions and cut through complexity to find the insights that drive better decisions at work.",
+            "skills": [
+              "Analytical thinking",
+              "Logical reasoning",
+              "Problem framing"
+            ],
+            "transformation": "You'll be known as the person who sees what others miss.",
+            "learnerCount": "6,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "future-proof",
+              "lead"
+            ]
+          },
+          {
+            "id": "problem-solving-frameworks",
+            "name": "Problem-Solving Frameworks",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Apply the structured thinking frameworks used by consultants, engineers and executives to solve complex professional challenges.",
+            "skills": [
+              "Frameworks",
+              "Root cause analysis",
+              "Creative solutions"
+            ],
+            "transformation": "Complex problems will become opportunities to demonstrate your thinking.",
+            "learnerCount": "4,700",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "future-proof",
+              "lead"
+            ]
+          }
         ]
       },
       {
-        "id": "professional-relationships",
-        "name": "Professional Relationships",
-        "difficulty": "All Levels",
-        "time": "5 lessons · 2 hrs",
-        "description": "Build authentic professional relationships that support your career long-term — not just when you need something.",
-        "skills": [
-          "Relationship building",
-          "Trust",
-          "Collaboration"
-        ],
-        "transformation": "You'll have a strong professional network that supports your career goals.",
-        "learnerCount": "5,600",
-        "rating": "4.7",
-        "filters": [
-          "all",
-          "promoted"
+        "id": "career-confidence",
+        "label": "Career Confidence",
+        "tagline": "Build the inner game that makes everything else possible",
+        "colour": "sw-amber",
+        "bgLight": "bg-sw-amber/10",
+        "textColour": "text-sw-amber",
+        "borderColour": "border-sw-amber/30",
+        "filter": "confidence",
+        "courses": [
+          {
+            "id": "building-confidence",
+            "name": "Building Unshakeable Confidence",
+            "difficulty": "All Levels",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Build the kind of confidence that doesn't depend on external validation — so you perform at your best even under pressure.",
+            "skills": [
+              "Self-belief",
+              "Confidence habits",
+              "Inner strength"
+            ],
+            "transformation": "You'll back yourself in every professional situation.",
+            "learnerCount": "14,800",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "imposter-syndrome",
+            "name": "Beating Imposter Syndrome",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Stop feeling like you're about to be found out. Understand why imposter syndrome happens and permanently dismantle its power over you.",
+            "skills": [
+              "Self-awareness",
+              "Cognitive reframing",
+              "Identity work"
+            ],
+            "transformation": "You'll feel like you belong in every room you walk into.",
+            "learnerCount": "19,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "professional-resilience",
+            "name": "Professional Resilience",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Build the mental toughness to bounce back from setbacks, handle criticism and keep moving forward when things get hard.",
+            "skills": [
+              "Resilience building",
+              "Emotional regulation",
+              "Recovery mindset"
+            ],
+            "transformation": "Setbacks will make you stronger, not derail you.",
+            "learnerCount": "8,300",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "emotional-intelligence",
+            "name": "Emotional Intelligence at Work",
+            "difficulty": "All Levels",
+            "time": "6 lessons · 2.5 hrs",
+            "description": "Develop the EQ that separates good professionals from exceptional ones — and transforms how people experience working with you.",
+            "skills": [
+              "Self-awareness",
+              "Empathy",
+              "Relationship management"
+            ],
+            "transformation": "People will actively want to work with and for you.",
+            "learnerCount": "10,700",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence",
+              "lead"
+            ]
+          },
+          {
+            "id": "stress-management",
+            "name": "Stress Management for Professionals",
+            "difficulty": "All Levels",
+            "time": "5 lessons · 2 hrs",
+            "description": "Manage pressure, protect your energy and perform at your best — even during the most demanding professional periods.",
+            "skills": [
+              "Stress regulation",
+              "Energy management",
+              "Pressure tools"
+            ],
+            "transformation": "You'll perform at your peak when everyone else is struggling.",
+            "learnerCount": "9,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "bouncing-back",
+            "name": "Bouncing Back Stronger",
+            "difficulty": "All Levels",
+            "time": "4 lessons · 1.5 hrs",
+            "description": "Turn career setbacks, redundancy, rejection or failure into fuel for the next chapter — with a concrete plan and renewed clarity.",
+            "skills": [
+              "Post-setback recovery",
+              "Perspective",
+              "Momentum rebuilding"
+            ],
+            "transformation": "Your biggest setback will become your greatest turning point.",
+            "isNew": true,
+            "learnerCount": "3,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          }
         ]
       }
-    ]
+    ],
+    "heroCourseCount": 36
   },
   "business": {
     "path": "/app/business",
@@ -1622,7 +2283,8 @@
         "border": "border-purple-200",
         "dot": "bg-sw-purple"
       }
-    ]
+    ],
+    "heroCourseCount": 40
   },
   "health": {
     "path": "/app/health",
@@ -1777,7 +2439,8 @@
         "colour": "text-indigo-700",
         "bgLight": "bg-indigo-50",
         "border": "border-indigo-200",
-        "dot": "bg-indigo-500"
+        "dot": "bg-indigo-500",
+        "courses": []
       },
       {
         "id": "nutrition",
@@ -1787,7 +2450,8 @@
         "colour": "text-sw-emerald",
         "bgLight": "bg-emerald-50",
         "border": "border-emerald-200",
-        "dot": "bg-sw-emerald"
+        "dot": "bg-sw-emerald",
+        "courses": []
       },
       {
         "id": "fitness",
@@ -1797,7 +2461,8 @@
         "colour": "text-sw-coral",
         "bgLight": "bg-orange-50",
         "border": "border-orange-200",
-        "dot": "bg-sw-coral"
+        "dot": "bg-sw-coral",
+        "courses": []
       },
       {
         "id": "mental-wellbeing",
@@ -1807,7 +2472,8 @@
         "colour": "text-purple-700",
         "bgLight": "bg-purple-50",
         "border": "border-purple-200",
-        "dot": "bg-sw-purple"
+        "dot": "bg-sw-purple",
+        "courses": []
       },
       {
         "id": "energy-focus",
@@ -1817,7 +2483,8 @@
         "colour": "text-amber-700",
         "bgLight": "bg-amber-50",
         "border": "border-amber-200",
-        "dot": "bg-sw-amber"
+        "dot": "bg-sw-amber",
+        "courses": []
       },
       {
         "id": "healthy-living",
@@ -1827,9 +2494,11 @@
         "colour": "text-teal-700",
         "bgLight": "bg-teal-50",
         "border": "border-teal-200",
-        "dot": "bg-sw-teal"
+        "dot": "bg-sw-teal",
+        "courses": []
       }
-    ]
+    ],
+    "heroCourseCount": 36
   },
   "financial-wellbeing": {
     "path": "/app/financial-wellbeing",
@@ -1845,22 +2514,86 @@
     },
     "liveSlugs": [],
     "comingSoonStrip": [
-      {"name": "Your Money Story", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
-      {"name": "Budgeting for Real Life", "difficulty": "Beginner", "time": "6 lessons · 2.5 hrs"},
-      {"name": "Debt Freedom Strategy", "difficulty": "All Levels", "time": "6 lessons · 2.5 hrs"},
-      {"name": "Emergency Fund Builder", "difficulty": "Beginner", "time": "4 lessons · 1.5 hrs"},
-      {"name": "Investing for Beginners", "difficulty": "Beginner", "time": "7 lessons · 3 hrs"},
-      {"name": "Passive Income Foundations", "difficulty": "Intermediate", "time": "6 lessons · 2.5 hrs"},
-      {"name": "Financial Confidence Accelerator", "difficulty": "All Levels", "time": "7 lessons · 3 hrs"},
-      {"name": "The Money Habits System", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
-      {"name": "Earn More Masterclass", "difficulty": "Intermediate", "time": "6 lessons · 2.5 hrs"},
-      {"name": "Abundance Mindset: Money Edition", "difficulty": "All Levels", "time": "5 lessons · 2 hrs"},
-      {"name": "Retirement Planning Basics", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
-      {"name": "Smart Spending Habits", "difficulty": "Beginner", "time": "4 lessons · 1.5 hrs"},
-      {"name": "Side Income Strategies", "difficulty": "All Levels", "time": "6 lessons · 2.5 hrs"},
-      {"name": "Financial Goals Blueprint", "difficulty": "Beginner", "time": "5 lessons · 2 hrs"},
-      {"name": "Negotiate Better Deals", "difficulty": "Intermediate", "time": "5 lessons · 2 hrs"},
-      {"name": "Money & Relationships", "difficulty": "All Levels", "time": "5 lessons · 2 hrs"}
+      {
+        "name": "Your Money Story",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Budgeting for Real Life",
+        "difficulty": "Beginner",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Debt Freedom Strategy",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Emergency Fund Builder",
+        "difficulty": "Beginner",
+        "time": "4 lessons · 1.5 hrs"
+      },
+      {
+        "name": "Investing for Beginners",
+        "difficulty": "Beginner",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "Passive Income Foundations",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Financial Confidence Accelerator",
+        "difficulty": "All Levels",
+        "time": "7 lessons · 3 hrs"
+      },
+      {
+        "name": "The Money Habits System",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Earn More Masterclass",
+        "difficulty": "Intermediate",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Abundance Mindset: Money Edition",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Retirement Planning Basics",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Smart Spending Habits",
+        "difficulty": "Beginner",
+        "time": "4 lessons · 1.5 hrs"
+      },
+      {
+        "name": "Side Income Strategies",
+        "difficulty": "All Levels",
+        "time": "6 lessons · 2.5 hrs"
+      },
+      {
+        "name": "Financial Goals Blueprint",
+        "difficulty": "Beginner",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Negotiate Better Deals",
+        "difficulty": "Intermediate",
+        "time": "5 lessons · 2 hrs"
+      },
+      {
+        "name": "Money & Relationships",
+        "difficulty": "All Levels",
+        "time": "5 lessons · 2 hrs"
+      }
     ],
     "comingSoon": [
       {
@@ -1934,6 +2667,29 @@
         "featured": false
       }
     ],
-    "note": "App catalog (financial-wellbeing-BOes51jq.js) shows 16 locked name/difficulty/time cards (comingSoonStrip) + browse sections from financial-wellbeing-courses-IFxSrlor.js. The featured 7 in comingSoon are the marketing library featured list (same chunk export F), not the app Coming Soon strip. No live lesson chunks."
+    "note": "App catalog (financial-wellbeing-BOes51jq.js) shows 16 locked name/difficulty/time cards (comingSoonStrip) + browse sections from financial-wellbeing-courses-IFxSrlor.js. The featured 7 in comingSoon are the marketing library featured list (same chunk export F), not the app Coming Soon strip. No live lesson chunks.",
+    "heroCourseCount": 16,
+    "browseBySection": [
+      {
+        "id": "know-your-money-mind",
+        "label": "Know Your Money Mind",
+        "tagline": "Understand your beliefs, emotions, and patterns around money"
+      },
+      {
+        "id": "build-better-money-habits",
+        "label": "Build Better Money Habits",
+        "tagline": "Small daily actions that compound into financial transformation"
+      },
+      {
+        "id": "earn-more-keep-more",
+        "label": "Earn More, Keep More",
+        "tagline": "Practical strategies to grow your income and keep more of what you earn"
+      },
+      {
+        "id": "financial-foundations",
+        "label": "Financial Foundations",
+        "tagline": "The knowledge and confidence to make smart decisions about your money"
+      }
+    ]
   }
 }

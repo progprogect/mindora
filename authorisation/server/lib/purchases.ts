@@ -2,7 +2,7 @@ import { eq } from 'drizzle-orm'
 import { db } from '../db/index.js'
 import { purchases } from '../db/schema.js'
 
-const PLANNER_IDS = [
+export const PLANNER_IDS = [
   'lets-get-productive',
   'deep-focus-at-work',
   'distraction-free',
@@ -13,7 +13,17 @@ const PLANNER_IDS = [
   'live-with-purpose',
   'find-your-passion',
   'financial-discipline',
-]
+] as const
+
+export type PlannerId = (typeof PLANNER_IDS)[number]
+
+export function isPlannerId(id: string): id is PlannerId {
+  return (PLANNER_IDS as readonly string[]).includes(id)
+}
+
+function ownsPlannerBundle(owned: Set<string>) {
+  return owned.has('planner-bundle') || owned.has('planner-bundle-library')
+}
 
 export function offerAmountCents(offerSlug: string): number | null {
   if (offerSlug === 'planner-bundle') return 495
@@ -39,7 +49,7 @@ export async function hasSku(userId: string, sku: string) {
   const rows = await db.select().from(purchases).where(eq(purchases.userId, userId))
   const owned = new Set(rows.map((row) => row.sku))
   if (owned.has(sku)) return true
-  if (sku.startsWith('planner-') && owned.has('planner-bundle')) return true
+  if (sku.startsWith('planner-') && ownsPlannerBundle(owned)) return true
   return false
 }
 

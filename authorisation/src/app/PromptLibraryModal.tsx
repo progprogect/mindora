@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { chargeUpsell } from '@/lib/api'
 
 const VALUE_ROWS = [
@@ -9,24 +8,29 @@ const VALUE_ROWS = [
   { icon: '✍️', label: 'Content Creation Templates', sub: 'Email, social, blog — done for you', price: '$19' },
 ]
 
+type ChargePhase = 'idle' | 'processing' | 'success' | 'error'
+
 export default function PromptLibraryModal({ onClose }: { onClose: () => void }) {
-  const navigate = useNavigate()
-  const [busy, setBusy] = useState(false)
+  const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState<string | null>(null)
+  const locked = phase === 'processing' || phase === 'success'
 
   const buy = async () => {
-    setBusy(true)
+    if (locked) return
+    setPhase('processing')
     setError(null)
     try {
       const result = await chargeUpsell({ offerSlug: 'ultimate-prompt-library' })
       if (result.success || result.alreadyPurchased) {
-        onClose()
-        navigate('/app/prompt-library')
+        setPhase('success')
+        setTimeout(() => window.location.reload(), 1500)
         return
       }
-      setError(result.error || 'Payment failed')
-    } finally {
-      setBusy(false)
+      setPhase('error')
+      setError(result.error || 'Payment failed. Please try again.')
+    } catch {
+      setPhase('error')
+      setError('Something went wrong. Please try again.')
     }
   }
 
@@ -34,7 +38,7 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center px-4"
       style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(4px)' }}
-      onClick={onClose}
+      onClick={locked ? undefined : onClose}
     >
       <div
         className="relative max-h-[90vh] w-full max-w-sm overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl animate-scale-in"
@@ -43,8 +47,9 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
         <button
           type="button"
           onClick={onClose}
+          disabled={locked}
           aria-label="Close"
-          className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full bg-sw-grey-light text-sw-grey transition-colors hover:bg-gray-200"
+          className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full bg-sw-grey-light text-sw-grey transition-colors hover:bg-gray-200 disabled:opacity-40"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -89,15 +94,49 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
           <p className="mb-1 text-xs text-sw-grey">Get everything above for just</p>
           <span className="text-3xl font-extrabold text-sw-dark">$19.95</span>
           <p className="mt-1 mb-4 text-[11px] text-sw-grey">One-time payment · Lifetime access · No subscription</p>
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void buy()}
-            className="w-full rounded-full bg-sw-blue py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {busy ? 'Charging…' : 'Unlock Now — $19.95'}
-          </button>
-          {error ? <p className="mt-3 text-sm text-sw-coral">{error}</p> : null}
+          {phase === 'success' ? (
+            <div data-testid="prompt-library-modal-unlocked" className="py-4 text-center">
+              <div
+                className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full"
+                style={{ backgroundColor: 'hsl(142 71% 95%)' }}
+              >
+                <svg
+                  className="h-6 w-6"
+                  style={{ color: 'hsl(var(--sw-success))' }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p className="font-bold text-sw-dark">Unlocked!</p>
+              <p className="mt-1 text-xs text-sw-grey">Loading your library...</p>
+            </div>
+          ) : (
+            <button
+              type="button"
+              data-testid="prompt-library-modal-buy"
+              disabled={phase === 'processing'}
+              onClick={() => void buy()}
+              className="w-full rounded-full bg-sw-blue py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {phase === 'processing' ? (
+                <span className="flex items-center justify-center gap-2">
+                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                  Processing...
+                </span>
+              ) : (
+                'Unlock Now — $19.95'
+              )}
+            </button>
+          )}
+          {phase === 'error' && error ? (
+            <div className="mt-2">
+              <p className="text-xs text-red-600">{error}</p>
+            </div>
+          ) : null}
           <p className="mt-3 text-[10px] text-sw-grey">🔒 Secure one-click payment using your saved card</p>
         </div>
       </div>

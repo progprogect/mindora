@@ -276,7 +276,14 @@
         "lessons": 28,
         "xp": 580
       }
-    ]
+    ],
+    "badge": "Mindset Master Badge",
+    "hero": {
+      "emoji": "🧠",
+      "h1": "Success Mindset",
+      "tagline": "Rewire your thinking. Build unstoppable confidence. Develop the psychology behind lasting success.",
+      "courseCountLabel": "34 courses"
+    }
   },
   "career": {
     "sourceChunk": "career-CX6C-xd2.js",
@@ -334,7 +341,14 @@
         "lessons": 21,
         "xp": 420
       }
-    ]
+    ],
+    "badge": "Career Catalyst Badge",
+    "hero": {
+      "emoji": "💼",
+      "h1": "Career",
+      "tagline": "Level up your professional life — from getting promoted to pivoting into something new.",
+      "courseCountLabel": "36 courses"
+    }
   },
   "business": {
     "sourceChunk": "business-DY_zOaeE.js",
@@ -614,7 +628,14 @@
         "lessons": 21,
         "xp": 2100
       }
-    ]
+    ],
+    "badge": "Health Champion Badge",
+    "hero": {
+      "emoji": "🌿",
+      "h1": "Health",
+      "tagline": "Optimise your sleep, nutrition, fitness, and mental wellbeing — one micro-lesson at a time.",
+      "courseCountLabel": "36 courses"
+    }
   },
   "financial-wellbeing": {
     "sourceChunk": "financial-wellbeing-BOes51jq.js",

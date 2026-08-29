@@ -24,6 +24,15 @@ type LiveCard = {
 
 const RING = 2 * Math.PI * 22
 
+const BROWSE_TITLE: Record<string, string> = {
+  'text-sw-amber': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-amber',
+  'text-sw-teal': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-teal',
+  'text-sw-blue': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-blue',
+  'text-sw-purple': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-purple',
+  'text-sw-coral': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-coral',
+  'text-sw-success': 'text-xs font-bold uppercase tracking-wide mb-1 text-sw-success',
+}
+
 const HERO_BG: Record<string, string> = {
   'ai-and-technology': 'linear-gradient(135deg, rgb(17, 71, 187) 0%, rgb(36, 99, 235) 50%, rgb(82, 105, 224) 100%)',
   'success-mindset': 'linear-gradient(135deg, rgb(109, 40, 217) 0%, rgb(124, 58, 237) 50%, rgb(167, 139, 250) 100%)',
@@ -77,6 +86,15 @@ export default function PathCatalogPage({ pathKey }: Props) {
   const template = path.template
   const title = path.h1
   const emoji = meta?.emoji ?? live?.hero?.emoji ?? '📚'
+  const comingSoonCount =
+    template === 'path-catalog-C'
+      ? (live?.comingSoonStrip?.length ?? path.comingSoonStrip?.length ?? 0)
+      : (path.comingSoonCards?.length ?? 0)
+  const courseCount =
+    typeof path.heroCourseCount === 'number'
+      ? path.heroCourseCount
+      : cards.length + comingSoonCount
+  const courseCountLabel = template === 'path-catalog-C' ? 'Courses' : 'courses'
   const dashOffset = RING * (1 - pathPct / 100)
 
   return (
@@ -129,7 +147,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
           <p className="text-white/70 text-sm leading-relaxed mb-4 max-w-[75%]">{path.tagline}</p>
           <div className="flex items-center gap-2 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-white text-xs font-semibold">
-              {cards.length || path.liveSlugs.length} courses
+              {courseCount} {courseCountLabel}
             </span>
             <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-white text-xs font-semibold">
               {lessonsHere} lessons done
@@ -195,15 +213,15 @@ export default function PathCatalogPage({ pathKey }: Props) {
             </div>
             <ComingSoonStrip
               items={(path.comingSoonCards ?? []).map((item) => ({
-                name: item.name || item.title,
-                difficulty: item.difficulty,
-                time: item.time,
+                name: String(item.name || item.title || ''),
+                difficulty: String(item.difficulty || ''),
+                time: String(item.time || ''),
               }))}
               extraLabel="+8 more courses coming"
             />
           </>
         ) : template === 'path-catalog-C' ? (
-          <ComingSoonStrip items={live?.comingSoonStrip ?? []} />
+            <ComingSoonStrip items={live?.comingSoonStrip ?? []} extraLabel="+8 more courses coming" />
         ) : (
           <>
             <div>
@@ -218,18 +236,31 @@ export default function PathCatalogPage({ pathKey }: Props) {
               <div>
                 <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Coming soon</p>
                 <div className="space-y-3">
-                  {path.comingSoonCards!.map((item) => (
-                    <div
-                      key={item.title || item.id}
-                      className="bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border/50 opacity-70"
-                    >
-                      <p className="text-sm font-bold text-sw-dark">🔒 {item.title}</p>
-                      <p className="text-xs text-sw-grey mt-1">{item.description}</p>
-                      <p className="text-[11px] text-sw-grey mt-2">
-                        {item.difficulty} · {item.time}
-                      </p>
-                    </div>
-                  ))}
+                  {path.comingSoonCards!.map((item) => {
+                    const cardTitle = String(item.title || item.name || '')
+                    const badge = String(item.badge || '')
+                    const rating = String(item.rating || '')
+                    const learners = String(item.learnerCount || item.learners || '')
+                    return (
+                      <div
+                        key={String(item.id || cardTitle)}
+                        className="bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border/50 opacity-70"
+                      >
+                        {badge ? (
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide mb-1.5 bg-sw-grey-light text-sw-grey">
+                            {badge}
+                          </span>
+                        ) : null}
+                        <p className="text-sm font-bold text-sw-dark">🔒 {cardTitle}</p>
+                        <p className="text-xs text-sw-grey mt-1">{String(item.description || '')}</p>
+                        <p className="text-[11px] text-sw-grey mt-2">
+                          {String(item.difficulty || '')} · {String(item.time || '')}
+                          {rating ? ` · ⭐ ${rating}` : ''}
+                          {learners ? ` · ${learners} learners` : ''}
+                        </p>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             ) : null}
@@ -245,11 +276,20 @@ export default function PathCatalogPage({ pathKey }: Props) {
                   key={String(section.id)}
                   className="bg-white rounded-xl p-4 shadow-sm border border-sw-grey-border/50"
                 >
-                  <span className="text-lg mb-1.5 block">{String(section.icon || '')}</span>
-                  <p className="text-xs font-bold text-sw-dark leading-tight mb-0.5">{String(section.title || '')}</p>
-                  <p className="text-[11px] text-sw-grey leading-snug mb-2">
-                    {String(section.description || section.subtitle || '')}
-                  </p>
+                  {section.icon ? <span className="text-lg mb-1.5 block">{String(section.icon)}</span> : null}
+                      <p
+                        className={
+                          pathKey === 'success-mindset'
+                            ? (BROWSE_TITLE[String(section.textColour || '')] ??
+                              'text-xs font-bold text-sw-dark leading-tight mb-0.5')
+                            : 'text-xs font-bold text-sw-dark leading-tight mb-0.5'
+                        }
+                      >
+                        {String(section.label || section.title || '')}
+                      </p>
+                      <p className="text-[11px] text-sw-grey leading-snug mb-2">
+                        {String(section.tagline || section.subtitle || section.description || '')}
+                      </p>
                   {Array.isArray(section.courses) ? (
                     <span className="text-[10px] font-semibold text-sw-grey bg-sw-grey-light px-2 py-0.5 rounded-full">
                       {section.courses.length} courses

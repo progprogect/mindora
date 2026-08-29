@@ -99,14 +99,26 @@ export function moduleLessonIds(course: Course, module: CourseModule) {
     .filter((id): id is string => Boolean(id))
 }
 
+const TWENTY_EIGHT_DAY = '28-day-ai-challenge'
+
+const CERT_CHROME = {
+  kicker: hubChrome.certificateDefaults.kicker,
+  certificateKicker: hubChrome.certificateDefaults.certificateKicker,
+  awardedToPlaceholder: hubChrome.certificateDefaults.awardedToPlaceholder,
+  downloadComingSoon: hubChrome.certificateDefaults.downloadComingSoon,
+  unlocked: hubChrome.certificateDefaults.unlocked,
+}
+
 export function getHub(slug: string) {
   const extra = (hubs as Record<string, Record<string, unknown>>)[slug] ?? {}
+  const is28 = slug === TWENTY_EIGHT_DAY
   return {
-    ...hubChrome.courseHeroDefaults,
-    ...hubChrome.certificateDefaults,
-    testimonials: hubChrome.testimonialsDefault,
+    ...(is28 ? hubChrome.courseHeroDefaults : {}),
+    ...(is28 ? hubChrome.certificateDefaults : CERT_CHROME),
+    testimonials: is28 ? hubChrome.testimonialsDefault : [],
     learningPathH2: hubChrome.learningPathH2,
     learningPathSub: hubChrome.learningPathSub,
+    unitLabel: is28 ? 'days' : 'lessons',
     ...extra,
   } as Record<string, unknown> & {
     testimonials: typeof hubChrome.testimonialsDefault
@@ -133,8 +145,9 @@ export type PathCatalog = {
   template: string
   h1: string
   tagline: string
+  heroCourseCount?: number
   liveSlugs: string[]
-  comingSoonCards?: Array<Record<string, string>>
+  comingSoonCards?: Array<Record<string, unknown>>
   comingSoonStrip?: Array<{ name: string; difficulty: string; time: string }>
   browseBySection?: Array<Record<string, unknown>>
 }

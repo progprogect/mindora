@@ -158,6 +158,10 @@ export async function chargeUpsell(args: { offerSlug: string; attribution?: unkn
   })
 }
 
+export async function fetchPromptVaultKey() {
+  return apiJson<{ key: 'prompt-vault' | null }>('/api/upsell/prompt-vault-key')
+}
+
 export type ProgressPayload = {
   lessons: Array<{
     courseId: string
@@ -233,7 +237,9 @@ export async function updatePreferences(args: { pacePreference?: string; focusCa
 }
 
 export async function fetchPurchases() {
-  return apiJson<{ purchases: Array<{ sku: string; createdAt: number }> }>('/api/purchases')
+  return apiJson<{ purchases: Array<{ sku: string; createdAt: number; amountCents: number | null }> }>(
+    '/api/purchases',
+  )
 }
 
 export async function fetchWiseUsage() {

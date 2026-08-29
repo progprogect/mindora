@@ -54,6 +54,11 @@ upsellRoutes.get('/upsell/has-card', requireAuth, async (c) => {
   return c.json(Boolean(profile?.planTier && profile.planTier !== 'free'))
 })
 
+upsellRoutes.get('/upsell/prompt-vault-key', requireAuth, async (c) => {
+  const owned = await hasSku(c.get('userId'), 'ultimate-prompt-library')
+  return c.json({ key: owned ? 'prompt-vault' : null })
+})
+
 upsellRoutes.get('/upsell/:slug', requireAuth, async (c) => {
   const slug = c.req.param('slug')
   return c.json({ status: await latestStatus(c.get('userId'), slug) })

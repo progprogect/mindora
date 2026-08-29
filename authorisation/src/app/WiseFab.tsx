@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 export default function WiseFab() {
   const { pathname } = useLocation()
-  if (pathname === '/app/wise' || /^\/app\/courses\/[^/]+\/[^/]+$/.test(pathname)) return null
+  if (pathname === '/app/wise' || pathname.startsWith('/app/wise/unlock')) return null
 
   return (
     <Link

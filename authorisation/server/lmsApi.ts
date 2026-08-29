@@ -12,7 +12,8 @@ import { subscriptionRoutes } from './routes/subscription.js'
 import { upsellRoutes } from './routes/upsell.js'
 import { wiseRoutes } from './routes/wise.js'
 
-/** LMS `/api` routes only — no cors, logger, `/health`, or `/stripe/webhook`. */
+/** LMS `/api` routes only — no cors, logger, `/health`, or `/stripe/webhook`.
+ *  Includes `GET /upsell/prompt-vault-key` and `GET /planners/download` (purchase-gated). */
 export function createLmsRoutes(): Hono {
   const api = new Hono()
   api.route('/', authRoutes)

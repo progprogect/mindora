@@ -14,7 +14,7 @@ import {
 } from '@/content/lms'
 import { PROGRESS_COURSES } from '@/content/progress-catalog'
 import { useCurrentUser } from '@/auth/session'
-import { useProgress } from '@/lib/lmsQueries'
+import { useProgress, usePurchases } from '@/lib/lmsQueries'
 
 const DASHBOARD_PATHS = ['ai-and-technology', 'success-mindset', 'career', 'business', 'health'] as const
 
@@ -60,6 +60,7 @@ export default function DashboardPage() {
   const [libraryOpen, setLibraryOpen] = useState(false)
   const user = useCurrentUser()
   const progress = useProgress()
+  const purchases = usePurchases()
   if (user === undefined || progress === undefined) {
     return (
       <div className="min-h-screen flex items-center justify-center pb-20">
@@ -293,34 +294,50 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={() => setLibraryOpen(true)}
-        className="w-full text-left relative overflow-hidden rounded-2xl p-4 shadow-sm active:scale-[0.98] transition-transform border border-amber-200/60"
-        style={{ background: 'linear-gradient(135deg, rgb(254, 247, 235) 0%, rgb(255, 247, 224) 50%, rgb(254, 247, 235) 100%)' }}
-      >
-        <div className="flex items-center gap-3">
-          <div
-            className="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
-            style={{ background: 'linear-gradient(135deg, rgb(245, 159, 10) 0%, rgb(249, 116, 21) 100%)' }}
-          >
-            ⚡
-          </div>
+      {purchases === undefined ? null : purchases.has('ultimate-prompt-library') ? (
+        <Link
+          data-testid="dashboard-prompt-library-link"
+          to="/app/prompt-library"
+          className="flex items-center gap-3 bg-gradient-to-r from-sw-blue to-blue-700 rounded-2xl p-4 text-white active:scale-[0.98] transition-transform shadow-sm"
+        >
+          <span className="text-2xl">⚡</span>
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-1.5">
-              <h3 className="font-extrabold text-sm text-sw-dark">AI Prompt Library</h3>
-              <span
-                className="text-[9px] font-bold text-white px-1.5 py-0.5 rounded-full"
-                style={{ backgroundColor: 'hsl(var(--sw-coral))' }}
-              >
-                NEW
-              </span>
-            </div>
-            <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">27,200+ expert prompts · Copy &amp; paste ready</p>
+            <h3 className="font-bold text-sm">Prompt Library</h3>
+            <p className="text-blue-100 text-[11px] mt-0.5">27,000+ AI prompts — copy &amp; use instantly</p>
           </div>
-          <Chevron className="w-5 h-5 flex-shrink-0" strokeWidth={2} style={{ color: 'rgb(195, 136, 34)' }} />
-        </div>
-      </button>
+          <Chevron className="w-5 h-5 text-blue-200 flex-shrink-0" />
+        </Link>
+      ) : (
+        <button
+          type="button"
+          data-testid="dashboard-prompt-library-upsell"
+          onClick={() => setLibraryOpen(true)}
+          className="w-full text-left relative overflow-hidden rounded-2xl p-4 shadow-sm active:scale-[0.98] transition-transform border border-amber-200/60"
+          style={{ background: 'linear-gradient(135deg, rgb(254, 247, 235) 0%, rgb(255, 247, 224) 50%, rgb(254, 247, 235) 100%)' }}
+        >
+          <div className="flex items-center gap-3">
+            <div
+              className="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
+              style={{ background: 'linear-gradient(135deg, rgb(245, 159, 10) 0%, rgb(249, 116, 21) 100%)' }}
+            >
+              ⚡
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-1.5">
+                <h3 className="font-extrabold text-sm text-sw-dark">AI Prompt Library</h3>
+                <span
+                  className="text-[9px] font-bold text-white px-1.5 py-0.5 rounded-full"
+                  style={{ backgroundColor: 'hsl(var(--sw-coral))' }}
+                >
+                  NEW
+                </span>
+              </div>
+              <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">27,200+ expert prompts · Copy &amp; paste ready</p>
+            </div>
+            <Chevron className="w-5 h-5 flex-shrink-0" strokeWidth={2} style={{ color: 'rgb(195, 136, 34)' }} />
+          </div>
+        </button>
+      )}
 
       <Link
         data-testid="dashboard-planner-link"
@@ -329,8 +346,8 @@ export default function DashboardPage() {
       >
         <span className="text-2xl">🗓️</span>
         <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-sm">Printable Planners</h3>
-          <p className="text-white/80 text-[11px] mt-0.5">Printable planners and journals to plan, focus and reflect</p>
+          <h3 className="font-bold text-sm">Your Planners</h3>
+          <p className="text-white/80 text-[11px] mt-0.5">Printable planners and journals — ready to download</p>
         </div>
         <Chevron className="w-5 h-5 text-white/70 flex-shrink-0" strokeWidth={2} />
       </Link>
