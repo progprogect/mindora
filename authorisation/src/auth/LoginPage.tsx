@@ -73,6 +73,21 @@ function LoginForm() {
     }
   }
 
+  const resendCode = async () => {
+    if (!emailValid || busy) return
+    setError(null)
+    setCode('')
+    autoVerify.current = ''
+    setBusy(true)
+    try {
+      await sendOtp(email)
+    } catch (err) {
+      setError(apiErrorMessage(err, 'Failed to send code. Please check your email and try again.'))
+    } finally {
+      setBusy(false)
+    }
+  }
+
   useEffect(() => {
     if (step !== 'code' || code.length !== 6 || busy) return
     if (autoVerify.current === code) return
@@ -130,11 +145,7 @@ function LoginForm() {
             {error ? <p className="mt-3 text-sm text-red-500 text-center">{error}</p> : null}
             <button
               type="button"
-              onClick={() => {
-                setStep('email')
-                setCode('')
-                setError(null)
-              }}
+              onClick={() => void resendCode()}
               disabled={busy}
               className="mt-6 text-sm text-sw-grey text-center w-full"
             >
@@ -157,7 +168,7 @@ function LoginForm() {
               disabled={busy || code.length < 6}
               className="w-full bg-sw-blue hover:bg-sw-blue-hover text-white font-bold py-4 rounded-full text-base transition-all active:scale-[0.98] shadow-lg disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              {busy ? 'Signing you in…' : 'Sign In'}
+              {busy && code.length === 6 ? 'Signing you in…' : 'Sign In'}
             </button>
           </div>
           <div
