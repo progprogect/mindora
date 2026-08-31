@@ -19,8 +19,17 @@ const EnvSchema = z.object({
   STRIPE_MONTHLY_PRICE_ID: z.string().optional().default(''),
   STRIPE_SIX_MONTH_PRICE_ID: z.string().optional().default(''),
   STRIPE_TWELVE_MONTH_PRICE_ID: z.string().optional().default(''),
-  AUTH_RESEND_KEY: z.string().optional().default(''),
-  AUTH_EMAIL: z.string().optional().default('SuccessWise.ai <onboarding@resend.dev>'),
+  SMTP_HOST: z.string().optional().default('mail.privateemail.com'),
+  SMTP_PORT: z.coerce.number().int().positive().default(465),
+  SMTP_SECURE: z.preprocess((value) => {
+    if (value === undefined || value === '') return true
+    if (value === true || value === 'true' || value === '1') return true
+    if (value === false || value === 'false' || value === '0') return false
+    return value
+  }, z.boolean()),
+  SMTP_USER: z.string().optional().default('support@mindoraacademy.com'),
+  SMTP_PASS: z.string().optional().default(''),
+  AUTH_EMAIL: z.string().optional().default('SuccessWise.ai <support@mindoraacademy.com>'),
   META_PIXEL_ID: z.string().optional().default(''),
   META_ACCESS_TOKEN: z.string().optional().default(''),
   MARKETING_DIST: z.string().optional().default(''),

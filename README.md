@@ -49,7 +49,9 @@ Copy `.env.example` → `.env` (or `.env.local`).
 | `STRIPE_SECRET_KEY` | runtime | PaymentIntents + webhook |
 | `STRIPE_WEBHOOK_SECRET` | runtime | `POST /stripe/webhook` |
 | `STRIPE_*_PRICE_ID` | runtime | Recurring prices after the $1 trial |
-| `AUTH_RESEND_KEY` | runtime | OTP email (required in production) |
+| `SMTP_HOST` / `SMTP_PORT` / `SMTP_SECURE` | runtime | Private Email SMTP (defaults: `mail.privateemail.com`, 465, true) |
+| `SMTP_USER` / `SMTP_PASS` | runtime | Mailbox `support@mindoraacademy.com` (pass required in production) |
+| `AUTH_EMAIL` | runtime | OTP From header (default `SuccessWise.ai <support@mindoraacademy.com>`) |
 | `META_ACCESS_TOKEN` | runtime | Conversions API |
 | `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
 | `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |
@@ -69,6 +71,7 @@ Required Railway variables (service → Variables):
 
 - `DATABASE_URL` = `${{Postgres.DATABASE_URL}}` (private URL of a Postgres plugin in the **same** project)
 - `SESSION_SECRET` — 16+ random characters
+- `SMTP_PASS` — Private Email mailbox password for OTP (`support@mindoraacademy.com`)
 - `RAILPACK_NO_SPA=1` if the builder tries to serve `dist/` as a static site
 
 Without Postgres the HTTP server still listens and serves the SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
