@@ -56,7 +56,7 @@ async function upsertLocal(userId: string, stripeSub: Stripe.Subscription): Prom
   }
 }
 
-async function findStripeCustomerId(userId: string, email: string): Promise<string | null> {
+export async function findStripeCustomerId(userId: string, email: string): Promise<string | null> {
   const [profile] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   if (profile?.stripeCustomerId) return profile.stripeCustomerId
   if (!stripeConfigured()) return null
@@ -89,6 +89,18 @@ async function latestStripeSubscription(customerId: string): Promise<Stripe.Subs
   })
   const ranked = [...listed.data].sort((a, b) => (b.created ?? 0) - (a.created ?? 0))
   return ranked[0] ?? null
+}
+
+/** OTP / completeProfile: find Stripe customer by email and upsert local subscription. Never throws. */
+export async function attachStripeCustomer(userId: string, email: string): Promise<void> {
+  const normalised = email.trim().toLowerCase()
+  if (!userId || !normalised) return
+  try {
+    await findStripeCustomerId(userId, normalised)
+    await getMine(userId, normalised)
+  } catch (error) {
+    console.error('[subscription] attachStripeCustomer failed', error)
+  }
 }
 
 export async function getMine(userId: string, email: string): Promise<SubscriptionDto | null> {
@@ -127,7 +139,7 @@ export async function getMine(userId: string, email: string): Promise<Subscripti
 export async function createPortalSession(userId: string, email: string, returnUrl: string) {
   if (!stripeConfigured()) throw new Error('Stripe is not configured')
   const customerId = await findStripeCustomerId(userId, email)
-  if (!customerId) throw new Error('No subscription')
+  if (!customerId) throw new Error('No billing customer is linked to this account yet.')
   const stripe = getStripe()
   const session = await stripe.billingPortal.sessions.create({
     customer: customerId,

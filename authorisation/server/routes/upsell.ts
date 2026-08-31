@@ -2,10 +2,12 @@ import { and, desc, eq } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
-import { profiles, upsellEvents } from '../db/schema.js'
+import { upsellEvents } from '../db/schema.js'
 import { hasSku, offerAmountCents, recordPurchase } from '../lib/purchases.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 import { getStripe } from '../lib/stripe.js'
+import { attachStripeCustomer, findStripeCustomerId } from '../lib/subscription.js'
+import { loadCurrentUser } from '../lib/currentUser.js'
 import { loadEnv } from '../env.js'
 
 const eventSchema = z.object({
@@ -35,23 +37,53 @@ async function latestStatus(userId: string, offerSlug: string) {
   return 'none'
 }
 
-async function defaultPaymentMethod(customerId: string): Promise<string | null> {
+async function cardPaymentMethodId(customerId: string): Promise<string | null> {
   const stripe = getStripe()
   const customer = await stripe.customers.retrieve(customerId)
   if (customer.deleted) return null
-  const fromSettings = customer.invoice_settings?.default_payment_method
-  if (typeof fromSettings === 'string') return fromSettings
-  if (fromSettings && typeof fromSettings === 'object' && 'id' in fromSettings) return fromSettings.id
-  if (typeof customer.default_source === 'string') return customer.default_source
-  const methods = await stripe.paymentMethods.list({ customer: customerId, type: 'card', limit: 1 })
-  return methods.data[0]?.id ?? null
+
+  const defaultRef = customer.invoice_settings?.default_payment_method
+  const defaultId =
+    typeof defaultRef === 'string'
+      ? defaultRef
+      : defaultRef && typeof defaultRef === 'object' && 'id' in defaultRef
+        ? defaultRef.id
+        : ''
+  const defaultType =
+    defaultRef && typeof defaultRef === 'object' && 'type' in defaultRef
+      ? (defaultRef as { type?: string }).type
+      : undefined
+
+  if (defaultType === 'card' && defaultId) return defaultId
+  if (defaultId && defaultType !== 'paypal') {
+    const retrieved = await stripe.paymentMethods.retrieve(defaultId)
+    if (retrieved.type === 'card') return retrieved.id
+  }
+
+  const cards = await stripe.paymentMethods.list({ customer: customerId, type: 'card', limit: 1 })
+  return cards.data[0]?.id ?? null
+}
+
+async function resolveCustomerId(userId: string, email: string): Promise<string | null> {
+  await attachStripeCustomer(userId, email)
+  return findStripeCustomerId(userId, email)
 }
 
 export const upsellRoutes = new Hono<SessionEnv>()
 
 upsellRoutes.get('/upsell/has-card', requireAuth, async (c) => {
-  const [profile] = await db.select().from(profiles).where(eq(profiles.userId, c.get('userId'))).limit(1)
-  return c.json(Boolean(profile?.planTier && profile.planTier !== 'free'))
+  if (!loadEnv().STRIPE_SECRET_KEY) return c.json(false)
+  const userId = c.get('userId')
+  const user = await loadCurrentUser(userId)
+  if (!user?.email) return c.json(false)
+  try {
+    const customerId = await resolveCustomerId(userId, user.email)
+    if (!customerId) return c.json(false)
+    return c.json(Boolean(await cardPaymentMethodId(customerId)))
+  } catch (error) {
+    console.error('[upsell] has-card failed', error)
+    return c.json(false)
+  }
 })
 
 upsellRoutes.get('/upsell/prompt-vault-key', requireAuth, async (c) => {
@@ -101,13 +133,13 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
         'This offer cannot be charged yet. Continue without it for now — you can add it later, and nothing is lost.',
     })
   }
-  const [profile] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
-  const customerId = profile?.stripeCustomerId
+  const user = await loadCurrentUser(userId)
+  const customerId = user?.email ? await resolveCustomerId(userId, user.email) : null
   if (!customerId) {
     return c.json({ success: false, reason: 'noCard', error: 'No saved card on this account.' })
   }
   try {
-    const paymentMethod = await defaultPaymentMethod(customerId)
+    const paymentMethod = await cardPaymentMethodId(customerId)
     if (!paymentMethod) {
       return c.json({ success: false, reason: 'noCard', error: 'No saved card on this account.' })
     }
@@ -117,6 +149,7 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
       currency: 'usd',
       customer: customerId,
       payment_method: paymentMethod,
+      payment_method_types: ['card'],
       off_session: true,
       confirm: true,
       metadata: { offerSlug, userId },

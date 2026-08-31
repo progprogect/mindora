@@ -3,7 +3,9 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { checkoutOffers } from '../db/schema.js'
-import { getStripe } from '../lib/stripe.js'
+import { getStripe, isStripeConfigured } from '../lib/stripe.js'
+
+const STRIPE_UNAVAILABLE = 'Payment is unavailable: Stripe is not configured.'
 
 const DEFAULT_PERCENT_OFF = 50
 const OFFER_TTL_MS = 24 * 60 * 60 * 1000
@@ -89,6 +91,7 @@ checkoutRoutes.post('/checkout/offer/percent', async (c) => {
 checkoutRoutes.post('/checkout/trial-intent', async (c) => {
   const parsed = trialSchema.safeParse(await c.req.json())
   if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
   const { email, productId, funnel } = parsed.data
   try {
     const customer = await findOrCreateCustomer(email, funnel, productId)
@@ -114,6 +117,7 @@ checkoutRoutes.post('/checkout/trial-intent', async (c) => {
 checkoutRoutes.post('/checkout/paypal-intent', async (c) => {
   const parsed = paypalSchema.safeParse(await c.req.json())
   if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
   const { customerEmail, productId, funnel, returnUrl, confirmAndRedirect } = parsed.data
   try {
     const customer = await findOrCreateCustomer(customerEmail, funnel, productId)

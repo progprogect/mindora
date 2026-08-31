@@ -359,11 +359,11 @@ export function WiseOffer() {
         return
       }
       setState('failed')
-      setError(result.error || 'Payment failed. Please enter your card details below.')
+      setError(result.error || 'Payment failed. Continue without Wise for now — you can add it later.')
       track('upsell_purchase_failed', { offer: OFFER, error: result.error, fallback_shown: false })
     } catch (err) {
       setState('failed')
-      setError('Something went wrong. Please enter your card details below.')
+      setError('Something went wrong. Continue without Wise for now — you can add it later.')
       track('upsell_purchase_error', { offer: OFFER, error: String(err), fallback_shown: false })
     }
   }

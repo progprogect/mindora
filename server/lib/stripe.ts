@@ -4,6 +4,10 @@ import { loadEnv } from '../env.js'
 
 let client: Stripe | null = null
 
+export function isStripeConfigured(): boolean {
+  return Boolean(loadEnv().STRIPE_SECRET_KEY)
+}
+
 export function getStripe(): Stripe {
   if (client) return client
   const env = loadEnv()

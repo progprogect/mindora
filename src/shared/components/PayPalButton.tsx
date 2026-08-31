@@ -153,7 +153,7 @@ function PayPalButtonInner({
       onBeforeRedirect?.()
 
       if (!isStripeConfigured) {
-        onError?.('PayPal is not connected yet. Please pay with card, or configure Stripe.')
+        onError?.('PayPal is not available. Payment is not configured.')
         return
       }
 

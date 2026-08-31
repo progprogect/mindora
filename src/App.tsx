@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { PlannerOffer } from '../authorisation/src/account/UpgradePlannersPage'
 import { lmsRoutes } from '../authorisation/src/lmsRoutes.tsx'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
 import HomePage from '@/marketing/pages/HomePage'
@@ -42,6 +43,12 @@ export default function App() {
             <Route path="/quiz/master-ai-microsoft-365" element={<M365QuizPage />} />
             <Route path="/quiz/master-claude-ai-excel" element={<ExcelQuizPage />} />
             {lmsRoutes}
+            {import.meta.env.DEV ? (
+              <>
+                <Route path="/__preview/upgrade-planners" element={<PlannerOffer hasSavedCard />} />
+                <Route path="/__preview/upgrade-planners-nocard" element={<PlannerOffer hasSavedCard={false} />} />
+              </>
+            ) : null}
             <Route path="/checkout/one-time" element={<OneTimeCheckoutPage />} />
             <Route path="/checkout/:funnel" element={<FunnelCheckoutPage />} />
             <Route path="/checkout" element={<EmptyCheckoutPage />} />

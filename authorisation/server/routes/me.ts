@@ -5,6 +5,7 @@ import { db } from '../db/index.js'
 import { profiles, users } from '../db/schema.js'
 import { loadCurrentUser } from '../lib/currentUser.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
+import { attachStripeCustomer } from '../lib/subscription.js'
 
 const PLAN_TIERS = ['week1', 'week4', 'week12', 'free']
 
@@ -66,12 +67,14 @@ meRoutes.patch('/me', requireAuth, async (c) => {
   }
   if (existing) {
     await db.update(profiles).set(patch).where(eq(profiles.id, existing.id))
+    await attachStripeCustomer(userId, patch.email ?? '')
     return c.json({ id: existing.id })
   }
   const [inserted] = await db
     .insert(profiles)
     .values({ userId, onboardingComplete: false, ...patch })
     .returning({ id: profiles.id })
+  await attachStripeCustomer(userId, patch.email ?? '')
   return c.json({ id: inserted?.id })
 })
 

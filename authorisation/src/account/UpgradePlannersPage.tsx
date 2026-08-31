@@ -25,17 +25,18 @@ const COMPARE_COUNT = 2
 const NEXT = '/account/upgrade-wise'
 
 const NOT_CHARGED = 'You have not been charged.'
-const TRY_ANOTHER = 'You can try another card below, or continue without the planners.'
+const CONTINUE = 'Continue without the planners — you can add them later from your dashboard.'
 const ERROR_COPY: Record<string, string> = {
-  cardDeclined: `Your bank declined that payment, so ${NOT_CHARGED.toLowerCase()} ${TRY_ANOTHER}`,
-  insufficientFunds: `Your bank declined that payment for insufficient funds, so ${NOT_CHARGED.toLowerCase()} ${TRY_ANOTHER}`,
-  authenticationRequired: `Your bank wants to verify this payment, which the saved card cannot do on its own. ${NOT_CHARGED} Enter your card below to complete the check, or continue without the planners.`,
-  noSavedCard: `We do not have a payment method on file for you. ${NOT_CHARGED} Enter a card below, or continue without the planners.`,
-  lookupFailed: `We could not read your saved payment method just now — that is our end, not yours. ${NOT_CHARGED} ${TRY_ANOTHER}`,
+  cardDeclined: `Your bank declined that payment, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
+  insufficientFunds: `Your bank declined that payment for insufficient funds, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
+  authenticationRequired: `Your bank wants to verify this payment, which the saved card cannot do on its own. ${NOT_CHARGED} ${CONTINUE}`,
+  noCard: `We do not have a saved card on this account. ${NOT_CHARGED} ${CONTINUE}`,
+  noSavedCard: `We do not have a saved card on this account. ${NOT_CHARGED} ${CONTINUE}`,
+  lookupFailed: `We could not read your saved payment method just now — that is our end, not yours. ${NOT_CHARGED} ${CONTINUE}`,
   notAuthenticated: `Your session has expired, so ${NOT_CHARGED.toLowerCase()} Sign in again to add the planners, or continue without them.`,
   configError: `Something is wrong at our end and the payment could not be taken. ${NOT_CHARGED} Please continue without the planners for now — you can add them later, and nothing is lost.`,
   invalidRequest: `We could not set up that payment — that is our end, not yours. ${NOT_CHARGED} Please continue without the planners for now; you can add them later.`,
-  unknown: `That payment did not go through, so ${NOT_CHARGED.toLowerCase()} ${TRY_ANOTHER}`,
+  unknown: `That payment did not go through, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
 }
 
 function errorCopy(reason: string | undefined) {
@@ -287,6 +288,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
 
   const buy = async () => {
     if (busy || state === 'success') return
+    if (!hasSavedCard) {
+      setError(errorCopy('noCard'))
+      return
+    }
     if (isReviewPurchaseBlocked()) {
       setError(REVIEW_PURCHASE_BLOCKED)
       return
@@ -428,16 +433,20 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               >
                 Save {money(PLANNER_LIST_CENTS - PLANNER_OTO_CENTS)}
               </p>
-              <button
-                type="button"
-                onClick={() => void buy()}
-                disabled={busy}
-                data-testid="planner-hero-cta"
-                className="mt-4 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-7 py-3 text-center text-base font-bold leading-tight text-white shadow-lg shadow-sw-blue/25 transition-all hover:bg-sw-blue-hover active:scale-95 disabled:opacity-60"
-              >
-                Yes! Unlock all {i} planners for {oto} →
-              </button>
-              <ChargeNote />
+              {showCtas ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => void buy()}
+                    disabled={busy}
+                    data-testid="planner-hero-cta"
+                    className="mt-4 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-7 py-3 text-center text-base font-bold leading-tight text-white shadow-lg shadow-sw-blue/25 transition-all hover:bg-sw-blue-hover active:scale-95 disabled:opacity-60"
+                  >
+                    Yes! Unlock all {i} planners for {oto} →
+                  </button>
+                  <ChargeNote />
+                </>
+              ) : null}
               <button
                 type="button"
                 onClick={skip}
@@ -526,16 +535,20 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 All {i} individually inside SuccessWise:{' '}
                 <span className="font-bold text-sw-blue">{list}</span>
               </p>
-              <button
-                type="button"
-                onClick={() => void buy()}
-                disabled={busy}
-                data-testid="planner-mid-cta"
-                className="mt-5 flex min-h-[44px] w-full items-center justify-center rounded-full bg-sw-blue px-6 py-3 text-center text-base font-extrabold text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60"
-              >
-                Add all {i} for {oto}
-              </button>
-              <ChargeNote />
+              {showCtas ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => void buy()}
+                    disabled={busy}
+                    data-testid="planner-mid-cta"
+                    className="mt-5 flex min-h-[44px] w-full items-center justify-center rounded-full bg-sw-blue px-6 py-3 text-center text-base font-extrabold text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60"
+                  >
+                    Add all {i} for {oto}
+                  </button>
+                  <ChargeNote />
+                </>
+              ) : null}
             </section>
             <section data-testid="planner-categories" className="mt-10 border-t border-sw-grey-border pt-8">
               <p className="text-center text-xs font-extrabold uppercase tracking-[0.14em] text-sw-blue">
@@ -775,16 +788,20 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     </li>
                   ))}
                 </ul>
-                <button
-                  type="button"
-                  onClick={() => void buy()}
-                  disabled={busy}
-                  data-testid="planner-stack-cta"
-                  className="mt-6 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-5 text-center text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60 sm:text-base"
-                >
-                  Yes! Unlock all {i} planners for {oto} →
-                </button>
-                <ChargeNote />
+                {showCtas ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => void buy()}
+                      disabled={busy}
+                      data-testid="planner-stack-cta"
+                      className="mt-6 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-5 text-center text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60 sm:text-base"
+                    >
+                      Yes! Unlock all {i} planners for {oto} →
+                    </button>
+                    <ChargeNote />
+                  </>
+                ) : null}
               </div>
             </div>
             <div data-testid="planner-faq" className="mt-8">

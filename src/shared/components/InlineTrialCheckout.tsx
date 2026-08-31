@@ -38,16 +38,7 @@ const CARD_ELEMENT_STYLE = {
   },
 }
 
-const NATIVE_INPUT_CLASS =
-  'relative z-20 w-full bg-transparent text-base text-[#1a1a2e] outline-none placeholder:text-[#9ca3af]'
-
 const CARD_NUMBER_HINT = 'XXXX XXXX XXXX XXXX'
-const CARD_NUMBER_MAX_DIGITS = 16
-
-function formatCardNumberGroups(value: string): string {
-  const digits = value.replace(/\D/g, '').slice(0, CARD_NUMBER_MAX_DIGITS)
-  return digits.replace(/(\d{4})(?=\d)/g, '$1 ')
-}
 
 const DECLINE_MESSAGES: Record<string, string> = {
   card_declined: 'Your card was declined. Try another card or contact your bank.',
@@ -238,91 +229,6 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
         </div>
       </div>
     </>
-  )
-}
-
-function CardNumberInput({
-  value,
-  onChange,
-}: {
-  value: string
-  onChange: (value: string) => void
-}) {
-  const formatted = formatCardNumberGroups(value)
-  const remainingHint = CARD_NUMBER_HINT.slice(formatted.length)
-
-  return (
-    <div className="relative flex min-h-6 items-center">
-      <span
-        className="pointer-events-none absolute inset-0 flex items-center text-base leading-6 whitespace-pre text-[#9ca3af]"
-        aria-hidden
-      >
-        <span className="invisible">{formatted}</span>
-        {remainingHint}
-      </span>
-      <input
-        type="text"
-        inputMode="numeric"
-        autoComplete="cc-number"
-        name="cardnumber"
-        aria-label="Card number"
-        placeholder=""
-        value={formatted}
-        maxLength={19}
-        onChange={(e) => onChange(formatCardNumberGroups(e.target.value))}
-        className={`${NATIVE_INPUT_CLASS} leading-6 caret-[#1a1a2e]`}
-      />
-    </div>
-  )
-}
-
-function NativeCardFields({
-  number,
-  expiry,
-  cvc,
-  onNumber,
-  onExpiry,
-  onCvc,
-}: {
-  number: string
-  expiry: string
-  cvc: string
-  onNumber: (value: string) => void
-  onExpiry: (value: string) => void
-  onCvc: (value: string) => void
-}) {
-  return (
-    <div className="space-y-3">
-      <CardFieldShell label="Card number" className="pr-[150px] pl-3" trailing={<CardBrandIcons />}>
-        <CardNumberInput value={number} onChange={onNumber} />
-      </CardFieldShell>
-      <div className="grid grid-cols-2 gap-3">
-        <CardFieldShell label="Expiry date">
-          <input
-            type="text"
-            inputMode="numeric"
-            autoComplete="cc-exp"
-            name="cc-exp"
-            placeholder="MM / YY"
-            value={expiry}
-            onChange={(e) => onExpiry(e.target.value)}
-            className={NATIVE_INPUT_CLASS}
-          />
-        </CardFieldShell>
-        <CardFieldShell label="Security code" className="pr-10 pl-3" trailing={<CvcIcon />}>
-          <input
-            type="text"
-            inputMode="numeric"
-            autoComplete="cc-csc"
-            name="cvc"
-            placeholder="CVC"
-            value={cvc}
-            onChange={(e) => onCvc(e.target.value)}
-            className={NATIVE_INPUT_CLASS}
-          />
-        </CardFieldShell>
-      </div>
-    </div>
   )
 }
 
@@ -582,57 +488,20 @@ function CheckoutForm({
   )
 }
 
-function NativeCheckoutForm({
-  submitLabel = 'CONFIRM PAYMENT — $1.00',
-  extraError,
-}: Pick<InlineTrialCheckoutProps, 'submitLabel'> & { extraError?: string | null }) {
-  const [submitting, setSubmitting] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [number, setNumber] = useState('')
-  const [expiry, setExpiry] = useState('')
-  const [cvc, setCvc] = useState('')
-
-  const digits = number.replace(/\D/g, '')
-  const canSubmit = digits.length >= 12 && expiry.replace(/\D/g, '').length >= 4 && cvc.replace(/\D/g, '').length >= 3
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!canSubmit) {
-      setError('Please enter your card number, expiry date and security code.')
-      return
-    }
-    setSubmitting(true)
-    setError('Payment could not be completed. Please try again or use a different payment method.')
-    setSubmitting(false)
-  }
-
+function PaymentUnavailableNotice({ paypalError }: { paypalError?: string | null }) {
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <CardOrPayDivider />
-
-        <NativeCardFields
-          number={number}
-          expiry={expiry}
-          cvc={cvc}
-          onNumber={setNumber}
-          onExpiry={setExpiry}
-          onCvc={setCvc}
-        />
-
-        {error || extraError ? (
-          <div className="mt-4 animate-fade-in rounded-xl border border-red-200 bg-red-50 p-4">
-            <p className="text-sm leading-snug font-semibold text-red-800">{error || extraError}</p>
-          </div>
-        ) : null}
-
-        <ConfirmButton submitting={submitting} ready canSubmit={canSubmit} label={submitLabel} />
-
-        <p className="mt-3 text-center text-[11px] leading-relaxed text-sw-grey">
-          By providing your card information, you allow ClickTech Solutions LTD to charge your card for future
-          payments in accordance with their terms.
+      {paypalError ? (
+        <div className="mb-3 rounded-xl border border-red-200 bg-red-50 p-4">
+          <p className="text-sm leading-snug font-semibold text-red-800">{paypalError}</p>
+        </div>
+      ) : null}
+      <div className="rounded-xl border border-sw-grey-border bg-sw-grey-light px-4 py-3 text-center">
+        <p className="text-sm font-semibold text-sw-dark">Payment unavailable</p>
+        <p className="mt-1 text-xs leading-relaxed text-sw-grey">
+          Card checkout is not configured on this environment.
         </p>
-      </form>
+      </div>
     </div>
   )
 }
@@ -730,7 +599,7 @@ export default function InlineTrialCheckout({
     return wrap(
       <>
         {paypal}
-        <NativeCheckoutForm submitLabel={submitLabel} extraError={paypalError} />
+        <PaymentUnavailableNotice paypalError={paypalError} />
       </>,
     )
   }

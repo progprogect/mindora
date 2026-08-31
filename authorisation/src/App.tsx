@@ -14,6 +14,7 @@ export default function App() {
         {import.meta.env.DEV ? (
           <>
             <Route path="/__preview/upgrade-planners" element={<PlannerOffer hasSavedCard />} />
+            <Route path="/__preview/upgrade-planners-nocard" element={<PlannerOffer hasSavedCard={false} />} />
             <Route path="/__preview/upgrade-wise" element={<WiseOffer />} />
           </>
         ) : null}
