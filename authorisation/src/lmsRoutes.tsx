@@ -24,6 +24,7 @@ import WiseUnlockPage from '@/app/pages/WiseUnlockPage'
 import AccountStubPage from '@/account/AccountStubPage'
 import LoginPage from '@/auth/LoginPage'
 import RequireAuth from '@/auth/RequireAuth'
+import RequireLmsAccess from '@/auth/RequireLmsAccess'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 const PUBLIC_COURSE_SLUG = '28-day-ai-challenge'
@@ -56,7 +57,9 @@ export const lmsRoutes = (
       path="/app"
       element={
         <RequireAuth>
-          <AppLayout />
+          <RequireLmsAccess>
+            <AppLayout />
+          </RequireLmsAccess>
         </RequireAuth>
       }
     >
