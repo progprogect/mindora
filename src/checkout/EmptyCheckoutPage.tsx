@@ -9,7 +9,7 @@ const CheckoutPage = lazy(() => import('@/pages/CheckoutPage'))
  * `?product=` is the expired-offer return from the mounted 28-day / Claude funnels.
  */
 export default function EmptyCheckoutPage() {
-  usePageTitle('SuccessWise.ai — Turn Daily Learning Into Daily Progress')
+  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
   const [params] = useSearchParams()
   if (params.get('product')) {
     return (

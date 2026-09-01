@@ -6,7 +6,7 @@ interface ClaudeCertificateScreenProps {
 }
 
 const CERTIFICATE_BULLETS = [
-  'Official Claude AI mastery certification by SuccessWise.ai',
+  'Official Claude AI mastery certification by MindoraAcademy.com',
   'Recognised credential for your CV and LinkedIn',
   'Validates real, practical AI skills — not just theory',
   'Complete in 7 days — 15 minutes per day',

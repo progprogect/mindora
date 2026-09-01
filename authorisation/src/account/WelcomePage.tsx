@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import { useCurrentUser } from '@/auth/session'
 import { track } from '@/lib/track'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 function Spinner() {
   return (
@@ -84,9 +85,7 @@ function WelcomeLetter() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
         <div className="max-w-2xl mx-auto px-4 h-12 flex items-center justify-center">
-          <span className="font-bold text-base text-sw-dark tracking-tight">
-            SuccessWise<span className="text-sw-blue">.ai</span>
-          </span>
+          <BrandWordmark />
         </div>
       </header>
       <div className="bg-white py-4 px-4 border-b border-sw-grey-border">
@@ -142,7 +141,7 @@ function WelcomeLetter() {
               />
               <div>
                 <p className="text-sm font-bold text-sw-dark">Rob Wass</p>
-                <p className="text-xs text-sw-grey">Founder, SuccessWise.ai</p>
+                <p className="text-xs text-sw-grey">Founder, MindoraAcademy.com</p>
               </div>
             </div>
           </div>

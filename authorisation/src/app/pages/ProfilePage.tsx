@@ -167,7 +167,7 @@ export default function ProfilePage() {
           <h2 className="text-sm font-bold text-sw-dark mb-3">My Subscription</h2>
           <div className="flex items-center justify-between mb-3">
             <div>
-              <p className="text-sm font-semibold text-sw-dark">SuccessWise Pro</p>
+              <p className="text-sm font-semibold text-sw-dark">MindoraAcademy Pro</p>
               <p className={`text-xs font-bold mt-0.5 ${statusClass}`}>
                 {statusLabel(status)}
                 {renew ? <span className="text-sw-grey font-medium"> · renews {renew}</span> : null}

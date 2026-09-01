@@ -532,7 +532,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 That{"\u2019"}s {i - COMPARE_COUNT} extra planners — and you still pay less.
               </p>
               <p className="mt-3 text-center text-sm text-sw-grey">
-                All {i} individually inside SuccessWise:{' '}
+                All {i} individually inside MindoraAcademy:{' '}
                 <span className="font-bold text-sw-blue">{list}</span>
               </p>
               {showCtas ? (
@@ -770,7 +770,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   {[
                     `All ${i} planners included`,
                     `${pages} printable pages`,
-                    'Instant access in SuccessWise',
+                    'Instant access in MindoraAcademy',
                     'One-time payment — no subscription',
                     'Yours to keep',
                   ].map((item) => (

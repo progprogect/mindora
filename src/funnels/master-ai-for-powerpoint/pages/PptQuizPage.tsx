@@ -6,7 +6,7 @@ export default function PptQuizPage() {
     <MasterFunnelPage
       kind="ppt"
       funnelId="master-ai-for-powerpoint"
-      pageTitle="Master AI for PowerPoint — SuccessWise.ai | Build Decks in Minutes"
+      pageTitle="Master AI for PowerPoint — MindoraAcademy.com | Build Decks in Minutes"
       screens={PPT_SCREENS}
     />
   )

@@ -2,7 +2,7 @@
 @source "../authorisation/src/**/*.{ts,tsx}";
 
 /* ------------------------------------------------------------------ */
-/* Design tokens (HSL) — SuccessWise brand                             */
+/* Design tokens (HSL) — MindoraAcademy brand                             */
 /* ------------------------------------------------------------------ */
 :root {
   --sw-blue: 221 83% 53%;

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import BrandWordmark from '@/shared/components/BrandWordmark'
 
 interface SalesDotsLayoutProps {
   step: number
@@ -38,8 +39,8 @@ export default function SalesDotsLayout({
           ) : (
             <div className="w-9" />
           )}
-          <span className="flex-1 text-center text-base font-bold tracking-tight text-sw-dark">
-            SuccessWise<span className="text-sw-blue">.ai</span>
+          <span className="flex-1 text-center">
+            <BrandWordmark size="sm" />
           </span>
           <div className="flex gap-1.5">
             {Array.from({ length: totalSteps }).map((_, i) => (

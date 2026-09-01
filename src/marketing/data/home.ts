@@ -159,7 +159,7 @@ export const STORIES = [
     before: 'Consumed endless YouTube videos about career growth. Never acted on any of it.',
     after: 'Applied one lesson per day. Had the salary conversation. Got the promotion.',
     quote:
-      'SuccessWise is the only platform that actually makes me do something after every lesson. I’ve applied more in 2 weeks than in 2 years of watching YouTube videos.',
+      'MindoraAcademy is the only platform that actually makes me do something after every lesson. I’ve applied more in 2 weeks than in 2 years of watching YouTube videos.',
     initials: 'SK',
     avatar: '#8B5CF6',
     name: 'Sarah K.',

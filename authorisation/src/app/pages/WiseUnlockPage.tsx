@@ -59,7 +59,7 @@ export default function WiseUnlockPage() {
             </button>
             {error ? <p className="text-sm text-sw-coral mt-3">{error}</p> : null}
             <p className="text-xs text-sw-grey mt-4">
-              Requires an active SuccessWise subscription. Your payment is processed securely by Stripe.
+              Requires an active MindoraAcademy subscription. Your payment is processed securely by Stripe.
             </p>
           </>
         )}

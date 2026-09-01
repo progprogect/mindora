@@ -16,7 +16,7 @@ import SaProfileScreen from '@/funnels/success-assessment/components/SaProfileSc
 import { SaRoadmapScreen, SaSocialScreen, SaTransformationScreen } from '@/funnels/success-assessment/components/SaSalesScreens'
 
 const FUNNEL = 'success-assessment'
-const TITLE = 'Success Assessment — SuccessWise.ai | Your Personalised Roadmap'
+const TITLE = 'Success Assessment — MindoraAcademy.com | Your Personalised Roadmap'
 const SA_HANDLES = [
   'sarah.m***',
   'james.k***',
@@ -117,7 +117,7 @@ export default function SaQuizPage() {
           },
           {
             quote:
-              'I used to jump between self-help books with zero structure. SuccessWise gave me a real system — I got promoted in 4 months.',
+              'I used to jump between self-help books with zero structure. MindoraAcademy gave me a real system — I got promoted in 4 months.',
             name: 'Marcus H.',
             role: 'Entrepreneur',
           },

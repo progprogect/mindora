@@ -5,6 +5,7 @@ import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, completeProfile, sendOtp, verifyOtp } from '@/lib/api'
 import { readQuizResults } from '@/lib/quizResults'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 const PLAN_IDS = ['week1', 'week4', 'week12', 'free'] as const
 const PLAN_LABELS: Record<string, string> = {
@@ -18,9 +19,7 @@ function WordmarkHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
       <div className="max-w-lg mx-auto px-4 h-14 flex items-center justify-center">
-        <span className="font-bold text-base text-sw-dark tracking-tight">
-          SuccessWise<span className="text-sw-blue">.ai</span>
-        </span>
+        <BrandWordmark />
       </div>
     </header>
   )
@@ -390,7 +389,7 @@ function CreateForm({
           </h1>
           <p className="text-sm text-sw-grey text-center mb-10 leading-relaxed">
             We&apos;ll send a quick code to verify your email
-            <br className="hidden sm:block" /> and create your SuccessWise account.
+            <br className="hidden sm:block" /> and create your MindoraAcademy account.
           </p>
           <label className="block text-sm font-semibold text-sw-dark mb-2">Your email address</label>
           <input

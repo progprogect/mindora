@@ -4,14 +4,13 @@ import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, sendOtp, verifyOtp } from '@/lib/api'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 function WordmarkHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
       <div className="max-w-lg mx-auto px-4 h-14 flex items-center justify-center">
-        <span className="font-bold text-base text-sw-dark tracking-tight">
-          SuccessWise<span className="text-sw-blue">.ai</span>
-        </span>
+        <BrandWordmark />
       </div>
     </header>
   )
@@ -153,7 +152,7 @@ function LoginForm() {
             </button>
             <p className="mt-4 text-xs text-sw-grey/80 text-center leading-relaxed bg-sw-blue-light/40 rounded-xl px-4 py-3">
               💡 Check your <span className="font-semibold text-sw-dark">spam or junk folder</span>{' '}
-              for an email from SuccessWise.ai — some email providers filter sign-in codes.
+              for an email from MindoraAcademy.com — some email providers filter sign-in codes.
             </p>
           </div>
         </main>

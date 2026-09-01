@@ -4,15 +4,15 @@ import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function SubscriptionTermsPage() {
-  usePageTitle('Subscription Terms — SuccessWise.ai')
+  usePageTitle('Subscription Terms — MindoraAcademy.com')
 
   return (
     <>
       <LegalHero title="Subscription Terms" updated="6 July 2026" />
       <LegalCard>
         <p className="leading-relaxed text-sw-grey">
-          These Subscription Terms (&quot;Subscription Terms&quot;) govern your subscription to SuccessWise.ai
-          (&quot;Platform&quot;, &quot;Service&quot;), operated by ClickTech Solutions LTD (&quot;we&quot;,
+          These Subscription Terms (&quot;Subscription Terms&quot;) govern your subscription to MindoraAcademy.com
+          (&quot;Platform&quot;, &quot;Service&quot;), operated by Scalion Ltd (&quot;we&quot;,
           &quot;us&quot;, &quot;our&quot;). By subscribing, you agree to these terms in addition to our{' '}
           <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
             Terms and Conditions
@@ -143,18 +143,18 @@ export default function SubscriptionTermsPage() {
           <p>For subscription enquiries, cancellations, or refund requests:</p>
           <p>
             Email:{' '}
-            <a href="mailto:support@successwise.ai" className="text-sw-blue hover:underline">
-              support@successwise.ai
+            <a href="mailto:support@mindoraacademy.com" className="text-sw-blue hover:underline">
+              support@mindoraacademy.com
             </a>
           </p>
           <p>
             Support page:{' '}
             <Link to={ROUTES.support} className="text-sw-blue hover:underline">
-              successwise.ai/support
+              mindoraacademy.com/support
             </Link>
           </p>
           <p>
-            ClickTech Solutions LTD. T/A. SuccessWise. These Subscription Terms are governed by the laws of
+            Scalion Ltd T/A. MindoraAcademy.com. These Subscription Terms are governed by the laws of
             England and Wales.
           </p>
         </LegalSection>

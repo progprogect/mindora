@@ -302,7 +302,7 @@ function Testimonials() {
         </div>
         <div className="reveal mt-10 text-center">
           <p className="text-xs text-white/30">
-            Testimonials represent individual experiences. Results vary. SuccessWise provides financial
+            Testimonials represent individual experiences. Results vary. MindoraAcademy provides financial
             education only, not personalised financial advice.
           </p>
         </div>
@@ -475,7 +475,7 @@ function FinalCta() {
 }
 
 export default function FinancialWellbeingPage() {
-  usePageTitle('Financial Wellbeing Courses — SuccessWise.ai | Build Real Financial Confidence')
+  usePageTitle('Financial Wellbeing Courses — MindoraAcademy.com | Build Real Financial Confidence')
   const [showSticky, setShowSticky] = useState(false)
 
   useEffect(() => {

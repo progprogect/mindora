@@ -43,7 +43,7 @@ export const quizScreens: QuizScreenDef[] = [
     type: 'social-proof',
     id: 'social-proof-1',
     title: "You're in good company",
-    subtitle: 'Over 500,000 professionals have used SuccessWise to stay ahead of AI',
+    subtitle: 'Over 500,000 professionals have used MindoraAcademy to stay ahead of AI',
     heroImage: '/assets/claude-icon-sparkles.webp',
     avatars: ['S', 'A', 'M', 'J', 'R'],
     avatarsCaption: 'Joined this week',
@@ -124,7 +124,7 @@ export const quizScreens: QuizScreenDef[] = [
     afterStep: 5,
     emoji: '✨',
     defaultHeadline: "You're already ahead of most people",
-    stat: '📊 87% of SuccessWise learners felt confident using AI within their first week',
+    stat: '📊 87% of MindoraAcademy learners felt confident using AI within their first week',
     body: "Most people know AI is important but haven't taken a single step. The fact you're here means you're already in the top 20%.",
     ctaLabel: 'KEEP GOING →',
     echoVariants: {

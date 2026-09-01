@@ -134,7 +134,7 @@ export default function AiCoachSection() {
                 <div className="h-2 w-2 animate-pulse rounded-full bg-green-400" />
                 <span className="text-xs font-semibold tracking-wide text-white/70 uppercase">Meet Your AI Coach</span>
               </div>
-              <img src="/assets/mascot.png" alt="SuccessWise mascot" className="emoji-float h-auto w-12 drop-shadow-lg" />
+              <img src="/assets/mascot.png" alt="MindoraAcademy mascot" className="emoji-float h-auto w-12 drop-shadow-lg" />
             </div>
             <h2 className="mb-4 text-3xl leading-tight font-extrabold text-white sm:text-4xl">
               Knowledge without action is

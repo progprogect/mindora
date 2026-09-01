@@ -130,7 +130,7 @@ export default function FeaturesSection() {
                 <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
                   <span className="text-xs font-bold text-white">✓</span>
                 </div>
-                <span className="text-xs font-semibold tracking-wide text-white/80 uppercase">SuccessWise</span>
+                <span className="text-xs font-semibold tracking-wide text-white/80">MindoraAcademy</span>
               </div>
               <div className="space-y-2">
                 {COMPARE_US.map((line) => (

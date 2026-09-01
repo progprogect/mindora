@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import BrandWordmark from '@/shared/components/BrandWordmark'
 
 interface ClaudeNameCaptureScreenProps {
   onSubmit: (name: string) => void
@@ -25,9 +26,7 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
     <div className="flex min-h-dvh w-full flex-col overflow-x-hidden bg-sw-white">
       <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
         <div className="mx-auto flex h-14 max-w-lg items-center justify-center px-4">
-          <span className="text-base font-bold tracking-tight text-sw-dark">
-            SuccessWise<span className="text-sw-blue">.ai</span>
-          </span>
+          <BrandWordmark size="sm" />
         </div>
       </header>
 

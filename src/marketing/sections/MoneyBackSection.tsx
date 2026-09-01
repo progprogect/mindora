@@ -50,7 +50,7 @@ export default function MoneyBackSection() {
               30-Day Money-Back Guarantee
             </h2>
             <p className="mb-4 max-w-lg leading-relaxed text-sw-grey">
-              Try SuccessWise.ai completely risk-free. If you don&apos;t feel the difference in your first 30 days — for
+              Try MindoraAcademy.com completely risk-free. If you don&apos;t feel the difference in your first 30 days — for
               any reason at all — we&apos;ll give you a full refund. No forms, no friction, no questions asked.
             </p>
             <p className="text-sm text-sw-grey">

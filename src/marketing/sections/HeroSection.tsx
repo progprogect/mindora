@@ -102,7 +102,7 @@ export default function HeroSection() {
 
       <img
         src="/assets/mascot.png"
-        alt="SuccessWise mascot"
+        alt="MindoraAcademy mascot"
         className="animate-float pointer-events-none absolute right-4 bottom-16 z-20 hidden w-16 drop-shadow-lg sm:block lg:right-12 lg:w-24"
       />
     </section>

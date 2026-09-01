@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 const STEPS = ['Member', 'Welcome', 'Upgrades', 'Access'] as const
 
@@ -55,9 +56,7 @@ export default function OtoChrome({
     <>
       <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
         <div className="max-w-2xl mx-auto px-4 h-12 flex items-center justify-center">
-          <span className="font-bold text-base text-sw-dark tracking-tight">
-            SuccessWise<span className="text-sw-blue">.ai</span>
-          </span>
+          <BrandWordmark />
         </div>
       </header>
       <div className="bg-sw-dark text-white text-center py-2.5 px-4">

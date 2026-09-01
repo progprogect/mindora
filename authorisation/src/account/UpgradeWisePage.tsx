@@ -7,6 +7,7 @@ import { chargeUpsell, recordUpsellEvent } from '@/lib/api'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 const OFFER = 'wise-ai-coach'
 const PRICE = 19.95
@@ -573,9 +574,7 @@ export function WiseOffer() {
         </div>
       ) : null}
       <footer className="text-center py-6 border-t border-sw-grey-border">
-        <span className="font-bold text-sm text-sw-dark tracking-tight">
-          SuccessWise<span className="text-sw-blue">.ai</span>
-        </span>
+        <BrandWordmark size="sm" className="font-bold" />
       </footer>
     </div>
   )

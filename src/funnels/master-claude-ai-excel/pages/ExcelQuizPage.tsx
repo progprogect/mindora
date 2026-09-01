@@ -6,7 +6,7 @@ export default function ExcelQuizPage() {
     <MasterFunnelPage
       kind="excel"
       funnelId="master-claude-ai-excel"
-      pageTitle="Master Claude AI for Excel — SuccessWise.ai | Save 5+ Hours/Week"
+      pageTitle="Master Claude AI for Excel — MindoraAcademy.com | Save 5+ Hours/Week"
       screens={EXCEL_SCREENS}
     />
   )

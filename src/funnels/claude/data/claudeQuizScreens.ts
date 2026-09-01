@@ -3,7 +3,7 @@ import type { ClaudeQuestionScreenDef, ClaudeQuizScreenDef } from '@/funnels/cla
 /**
  * 1:1 port of the production Claude AI Certification quiz flow (array `h`
  * in `claude-ai-certification-*.js`), captured live from
- * https://www.successwise.ai/quiz/claude-ai-certification via Chrome
+ * https://www.mindoraacademy.com/quiz/claude-ai-certification via Chrome
  * DevTools MCP — see docs/claude_ai_certification/implementation-plan.md,
  * Этап 2. 24 screens total: identity, social-proof, 16 questions,
  * 3 interstitials, 1 certificate, loading, email.
@@ -206,7 +206,7 @@ export const claudeQuizScreens: ClaudeQuizScreenDef[] = [
     id: 'certificate-showcase',
     totalSteps: 16,
     headline: 'Earn your Claude AI Certificate of Mastery',
-    copy: "Don't just learn AI — prove it. Complete the SuccessWise.ai learning plan, pass the certification, and add an official credential to your resume and LinkedIn.",
+    copy: "Don't just learn AI — prove it. Complete the MindoraAcademy.com learning plan, pass the certification, and add an official credential to your resume and LinkedIn.",
     ctaLabel: 'CONTINUE →',
   },
   {

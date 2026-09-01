@@ -134,7 +134,7 @@ export default function SaProfileScreen({ name, profile }: SaProfileScreenProps)
         <p className="mb-2 text-sw-amber">⭐⭐⭐⭐⭐</p>
         <p className="mb-2 text-sm font-semibold text-sw-dark">94% of members see measurable progress within 30 days</p>
         <p className="text-sm leading-relaxed text-sw-grey">
-          &ldquo;I&apos;d tried three times before and always quit. SuccessWise gave me a system that worked with my
+          &ldquo;I&apos;d tried three times before and always quit. MindoraAcademy gave me a system that worked with my
           life, not against it. Eight weeks in, I got a promotion and launched my first side income stream.&rdquo;
         </p>
         <p className="mt-2 text-xs font-semibold text-sw-grey">— Alex R., Operations Manager</p>

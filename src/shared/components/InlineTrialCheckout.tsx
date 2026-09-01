@@ -178,7 +178,7 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
           <CheckDot />
           <span className="text-sm leading-snug text-sw-dark">
             Start today for <strong>just $1</strong>. After a 7-day trial, we&apos;ll charge $19.99/month until you
-            cancel. Cancel at any time via your SuccessWise dashboard or by contacting support.
+            cancel. Cancel at any time via your MindoraAcademy dashboard or by contacting support.
           </span>
         </div>
       </div>
@@ -480,7 +480,7 @@ function CheckoutForm({
         <ConfirmButton submitting={submitting} ready={cardReady} canSubmit={canSubmit} label={submitLabel} />
 
         <p className="mt-3 text-center text-[11px] leading-relaxed text-sw-grey">
-          By providing your card information, you allow ClickTech Solutions LTD to charge your card for future
+          By providing your card information, you allow Scalion Ltd to charge your card for future
           payments in accordance with their terms.
         </p>
       </form>

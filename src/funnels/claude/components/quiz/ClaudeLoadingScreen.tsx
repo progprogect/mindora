@@ -32,7 +32,7 @@ const TESTIMONIALS = [
   {
     name: 'James K.',
     role: 'Software Engineer',
-    text: 'I thought I already knew AI pretty well, but SuccessWise showed me workflows I never even considered. Game-changer.',
+    text: 'I thought I already knew AI pretty well, but MindoraAcademy showed me workflows I never even considered. Game-changer.',
   },
   {
     name: 'Priya T.',
@@ -47,7 +47,7 @@ const TESTIMONIALS = [
   {
     name: 'Emma L.',
     role: 'HR Director',
-    text: "I was terrified of being left behind by AI. SuccessWise completely transformed how I see it. Now I'm excited about it.",
+    text: "I was terrified of being left behind by AI. MindoraAcademy completely transformed how I see it. Now I'm excited about it.",
   },
 ]
 

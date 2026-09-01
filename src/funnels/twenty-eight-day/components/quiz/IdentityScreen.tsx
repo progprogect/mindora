@@ -69,7 +69,7 @@ export default function IdentityScreen({ screen, onSelect }: IdentityScreenProps
 
       <div className="px-4">
         <QuizTermsFooter />
-        <p className="mt-2 text-center text-[11px] text-sw-grey">ClickTech Solutions LTD. T/A. SuccessWise.</p>
+        <p className="mt-2 text-center text-[11px] text-sw-grey">Scalion Ltd T/A. MindoraAcademy.com</p>
       </div>
     </div>
   )

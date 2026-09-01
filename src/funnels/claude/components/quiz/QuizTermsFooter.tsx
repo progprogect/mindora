@@ -18,7 +18,7 @@ export default function QuizTermsFooter() {
           Subscription Terms
         </Link>
       </p>
-      <p className="mt-2 text-[11px] text-sw-grey">ClickTech Solutions LTD. T/A. SuccessWise.</p>
+      <p className="mt-2 text-[11px] text-sw-grey">Scalion Ltd T/A. MindoraAcademy.com</p>
     </div>
   )
 }

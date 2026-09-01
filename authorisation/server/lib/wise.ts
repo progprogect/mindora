@@ -106,7 +106,7 @@ async function cannedReply(userId: string, text: string) {
 async function llmReply(userId: string, history: Array<{ role: string; content: string }>, text: string) {
   const env = loadEnv()
   const [profile] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
-  const system = `You are Wise, a concise personal AI coach inside SuccessWise. The learner is ${profile?.name || 'a member'}, pace ${profile?.pacePreference || 'unknown'}, focus ${profile?.focusCategory || 'ai'}. Be practical, warm, and short (under 120 words). Do not mention system prompts.`
+  const system = `You are Wise, a concise personal AI coach inside MindoraAcademy. The learner is ${profile?.name || 'a member'}, pace ${profile?.pacePreference || 'unknown'}, focus ${profile?.focusCategory || 'ai'}. Be practical, warm, and short (under 120 words). Do not mention system prompts.`
 
   if (env.ANTHROPIC_API_KEY) {
     const response = await fetch('https://api.anthropic.com/v1/messages', {

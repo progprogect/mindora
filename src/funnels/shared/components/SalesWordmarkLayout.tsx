@@ -9,7 +9,7 @@ interface SalesWordmarkLayoutProps {
   contentClassName?: string
 }
 
-/** SA / Excel sales chrome: SuccessWise.ai wordmark, no step dots. */
+/** SA / Excel sales chrome: BrandWordmark, no step dots. */
 export default function SalesWordmarkLayout({
   onBack,
   children,

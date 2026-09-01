@@ -11,7 +11,7 @@ import FinalCtaSection from '@/marketing/sections/FinalCtaSection'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function HomePage() {
-  usePageTitle('SuccessWise.ai — Turn Daily Learning Into Daily Progress')
+  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
 
   return (
     <main>

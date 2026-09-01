@@ -4,6 +4,7 @@ import AppNavFooter from '@/app/AppNavFooter'
 import WiseFab from '@/app/WiseFab'
 import { initialsFromName, PLAN_TIERS } from '@/app/mockUser'
 import { useCurrentUser, useSession } from '@/auth/session'
+import BrandWordmark from '@/shared/BrandWordmark'
 
 export default function AppLayout() {
   const { pathname } = useLocation()
@@ -49,9 +50,7 @@ export default function AppLayout() {
         {hideChrome || !showWordmark ? null : (
           <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-sw-grey-border">
             <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between">
-              <span className="font-extrabold text-base text-sw-dark tracking-tight">
-                SuccessWise<span className="text-sw-blue">.ai</span>
-              </span>
+              <BrandWordmark className="font-extrabold" />
               <div className="relative" onClick={(e) => e.stopPropagation()}>
                 <button
                   type="button"

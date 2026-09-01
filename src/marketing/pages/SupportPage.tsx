@@ -13,7 +13,7 @@ import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function SupportPage() {
-  usePageTitle('Support Center — SuccessWise.ai | Help, Billing, Refunds & FAQs')
+  usePageTitle('Support Center — MindoraAcademy.com | Help, Billing, Refunds & FAQs')
   const [params] = useSearchParams()
   const autoOpen = params.get('chat') === 'open'
   const [query, setQuery] = useState('')
@@ -259,7 +259,7 @@ export default function SupportPage() {
 
         <div className="pb-6 text-center">
           <Link to={ROUTES.home} className="text-sm text-sw-grey transition-colors hover:text-sw-blue">
-            ← Back to SuccessWise.ai
+            ← Back to MindoraAcademy.com
           </Link>
         </div>
       </div>

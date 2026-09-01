@@ -58,7 +58,7 @@ export const LEARN_CATEGORIES: Record<string, LearnCategory> = {
   'success-mindset': {
     slug: 'success-mindset',
     pageTitle:
-      'Success Mindset Courses — SuccessWise.ai | Build Confidence, Resilience & High Performance',
+      'Success Mindset Courses — MindoraAcademy.com | Build Confidence, Resilience & High Performance',
     kicker: 'Success Mindset',
     emoji: '🧠',
     h1Line: 'Change Your Mind.',
@@ -170,7 +170,7 @@ export const LEARN_CATEGORIES: Record<string, LearnCategory> = {
   },
   career: {
     slug: 'career',
-    pageTitle: 'Career Courses — SuccessWise.ai | Get Promoted, Earn More & Future-Proof Your Career',
+    pageTitle: 'Career Courses — MindoraAcademy.com | Get Promoted, Earn More & Future-Proof Your Career',
     kicker: 'Career',
     emoji: '💼',
     h1Line: 'Own Your Career.',
@@ -282,7 +282,7 @@ export const LEARN_CATEGORIES: Record<string, LearnCategory> = {
   },
   business: {
     slug: 'business',
-    pageTitle: 'Business Courses — SuccessWise.ai | Start, Grow & Scale Your Business',
+    pageTitle: 'Business Courses — MindoraAcademy.com | Start, Grow & Scale Your Business',
     kicker: 'Business',
     emoji: '🏢',
     h1Line: 'Build the Business',
@@ -397,7 +397,7 @@ export const LEARN_CATEGORIES: Record<string, LearnCategory> = {
   'ai-and-technology': {
     slug: 'ai-and-technology',
     pageTitle:
-      'AI & Technology Courses — SuccessWise.ai | Master AI Tools, Build Income, Create Content',
+      'AI & Technology Courses — MindoraAcademy.com | Master AI Tools, Build Income, Create Content',
     kicker: 'AI & Technology',
     emoji: '🤖',
     h1Line: 'Master AI.',
@@ -509,7 +509,7 @@ export const LEARN_CATEGORIES: Record<string, LearnCategory> = {
   },
   health: {
     slug: 'health',
-    pageTitle: 'Health Courses — SuccessWise.ai | Feel Better Every Single Day',
+    pageTitle: 'Health Courses — MindoraAcademy.com | Feel Better Every Single Day',
     kicker: 'Health',
     emoji: '❤️',
     h1Line: 'Your Health Is',

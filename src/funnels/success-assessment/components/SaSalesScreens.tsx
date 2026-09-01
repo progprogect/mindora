@@ -23,7 +23,7 @@ export function SaRoadmapScreen({ profile }: { profile: SaProfile }) {
         <p>⚡ Start seeing results in your first week</p>
         <p>🔓 Learn at your own pace, on your terms</p>
       </div>
-      <h2 className="mb-3 text-lg font-extrabold text-sw-dark">With SuccessWise, you will:</h2>
+      <h2 className="mb-3 text-lg font-extrabold text-sw-dark">With MindoraAcademy, you will:</h2>
       <ul className="flex flex-col gap-3 text-sm leading-relaxed text-sw-grey">
         <li>Follow a personalised daily roadmap built around your exact goals, strengths, and gaps</li>
         <li>Track your progress across 6 success dimensions so you always know where you stand and what to do next</li>
@@ -60,7 +60,7 @@ export function SaTransformationScreen({
         <div className="rounded-2xl bg-sw-grey-light p-4">
           <p className="mb-1 text-2xl">😟</p>
           <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">Without</p>
-          <p className="mb-2 text-sm font-extrabold text-sw-dark">SuccessWise.ai</p>
+          <p className="mb-2 text-sm font-extrabold text-sw-dark">MindoraAcademy.com</p>
           <p className="mb-1 text-[10px] font-bold tracking-wide text-sw-grey uppercase">Struggles:</p>
           <ul className="flex flex-col gap-1 text-xs text-sw-grey">
             {struggle.without.map((l) => (
@@ -71,7 +71,7 @@ export function SaTransformationScreen({
         <div className="rounded-2xl bg-sw-blue-light p-4">
           <p className="mb-1 text-2xl">😊</p>
           <p className="text-xs font-bold tracking-wide text-sw-blue uppercase">With</p>
-          <p className="mb-2 text-sm font-extrabold text-sw-dark">SuccessWise.ai</p>
+          <p className="mb-2 text-sm font-extrabold text-sw-dark">MindoraAcademy.com</p>
           <p className="mb-1 text-[10px] font-bold tracking-wide text-sw-blue uppercase">Solutions:</p>
           <ul className="flex flex-col gap-1 text-xs text-sw-dark">
             {struggle.with.map((l) => (
@@ -82,7 +82,7 @@ export function SaTransformationScreen({
       </div>
       <p className="mb-4 text-center text-sm font-semibold text-sw-dark">Promoted &amp; earning more ✓</p>
       <p className="mb-5 text-center text-sm text-sw-grey">
-        Your ambition got you here — SuccessWise gives it structure and direction.
+        Your ambition got you here — MindoraAcademy gives it structure and direction.
       </p>
       <div className="mb-4 rounded-2xl border border-sw-grey-border p-4">
         <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">🚀 Your success profile</p>
@@ -108,7 +108,7 @@ export function SaSocialScreen() {
       name: 'Marcus L.',
       role: 'Entrepreneur',
       quote:
-        'My business had stalled for 18 months. SuccessWise helped me identify exactly where the gaps were. Revenue is up 40% and I actually feel in control now.',
+        'My business had stalled for 18 months. MindoraAcademy helped me identify exactly where the gaps were. Revenue is up 40% and I actually feel in control now.',
     },
     {
       initials: 'SK',

@@ -25,7 +25,7 @@ export async function sendOtpEmail(email: string, token: string): Promise<void> 
     from: env.AUTH_EMAIL,
     replyTo: env.SMTP_USER,
     to: email,
-    subject: `Your SuccessWise.ai sign-in code is ${token}`,
+    subject: `Your MindoraAcademy.com sign-in code is ${token}`,
     text: `Your 6-digit sign-in code is ${token}. It expires in 15 minutes.\n\nIf you did not request this, you can ignore this email.`,
   })
 }

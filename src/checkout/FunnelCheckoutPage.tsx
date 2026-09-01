@@ -14,7 +14,7 @@ const ORIGINAL_CHECKOUT_FUNNELS = new Set([
 ])
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const PAGE_TITLE = 'SuccessWise.ai — Turn Daily Learning Into Daily Progress'
+const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progress'
 const MONTHLY_ID = DEFAULT_PLANS.find((p) => p.intervalMonths === 1)?.id ?? 'monthly'
 
 const LINE_ITEMS = [

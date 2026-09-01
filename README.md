@@ -1,4 +1,4 @@
-# SuccessWise
+# MindoraAcademy
 
 Railway app: one Node process serves a **single SPA** (marketing + LMS routes) and `/api`. Postgres via `DATABASE_URL`. Convex is not used.
 
@@ -51,7 +51,7 @@ Copy `.env.example` → `.env` (or `.env.local`).
 | `STRIPE_*_PRICE_ID` | runtime | Recurring prices after the $1 trial |
 | `SMTP_HOST` / `SMTP_PORT` / `SMTP_SECURE` | runtime | Private Email SMTP (defaults: `mail.privateemail.com`, 465, true) |
 | `SMTP_USER` / `SMTP_PASS` | runtime | Mailbox `support@mindoraacademy.com` (pass required in production) |
-| `AUTH_EMAIL` | runtime | OTP From header (default `SuccessWise.ai <support@mindoraacademy.com>`) |
+| `AUTH_EMAIL` | runtime | OTP From header (default `MindoraAcademy.com <support@mindoraacademy.com>`) |
 | `META_ACCESS_TOKEN` | runtime | Conversions API |
 | `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
 | `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |

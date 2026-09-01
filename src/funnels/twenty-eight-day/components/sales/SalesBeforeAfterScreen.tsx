@@ -66,7 +66,7 @@ export default function SalesBeforeAfterScreen({ profile, answers }: SalesBefore
           <div className="mb-4 text-center">
             <div className="mb-2 text-4xl">😟</div>
             <p className="text-xs font-bold uppercase tracking-wide text-red-400">Without</p>
-            <p className="text-sm font-extrabold leading-tight text-sw-dark">SuccessWise.ai</p>
+            <p className="text-sm font-extrabold leading-tight text-sw-dark">MindoraAcademy.com</p>
           </div>
           <div className="border-t border-red-200 pt-3">
             <p className="mb-1 text-xs font-bold uppercase tracking-wide text-red-400">Struggles:</p>
@@ -85,7 +85,7 @@ export default function SalesBeforeAfterScreen({ profile, answers }: SalesBefore
           <div className="mb-4 text-center">
             <div className="mb-2 text-4xl">😊</div>
             <p className="text-xs font-bold uppercase tracking-wide text-green-500">With</p>
-            <p className="text-sm font-extrabold leading-tight text-sw-dark">SuccessWise.ai</p>
+            <p className="text-sm font-extrabold leading-tight text-sw-dark">MindoraAcademy.com</p>
           </div>
           <div className="border-t border-green-200 pt-3">
             <p className="mb-1 text-xs font-bold uppercase tracking-wide text-green-500">Solutions:</p>

@@ -55,7 +55,7 @@ export default function ProblemSection() {
         <div className="mt-14 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3">
           <div className="h-2 w-2 animate-pulse rounded-full bg-sw-blue" />
           <p className="text-sm font-medium text-white/70">
-            SuccessWise gives you the system to finally act on what you learn.
+            MindoraAcademy gives you the system to finally act on what you learn.
           </p>
         </div>
       </div>

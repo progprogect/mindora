@@ -50,7 +50,7 @@ export default function MarketingHeader() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between sm:h-[72px]">
-          <Link to={ROUTES.home} className="shrink-0" aria-label="SuccessWise.ai home">
+          <Link to={ROUTES.home} className="shrink-0" aria-label="MindoraAcademy.com home">
             <Logo variant="dark" />
           </Link>
 

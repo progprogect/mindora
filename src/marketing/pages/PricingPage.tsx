@@ -5,7 +5,7 @@ import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function PricingPage() {
-  usePageTitle('Pricing — SuccessWise.ai | Simple Plans, Full Platform Access')
+  usePageTitle('Pricing — MindoraAcademy.com | Simple Plans, Full Platform Access')
   const [selected, setSelected] = useState<(typeof PRICING_PLANS)[number]['id']>('quarter')
   const navigate = useNavigate()
   const plan = PRICING_PLANS.find((p) => p.id === selected) ?? PRICING_PLANS[1]

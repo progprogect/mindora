@@ -183,17 +183,17 @@ export function buildSaProfile(answers: FunnelAnswers): SaProfile {
 
   const archetype =
     identity === 'business-founder'
-      ? { name: 'The Visionary Founder', emoji: '🏢', quote: "You're building something bigger than a job. SuccessWise gives it a system." }
+      ? { name: 'The Visionary Founder', emoji: '🏢', quote: "You're building something bigger than a job. MindoraAcademy gives it a system." }
       : identity === 'starting-out'
         ? { name: 'The Rising Starter', emoji: '🌱', quote: "You're early — and that's an advantage. We'll help you skip the wasted years." }
         : identity === 'ready-to-change'
-          ? { name: 'The Bold Transformer', emoji: '🔄', quote: "You're ready for a rewrite. SuccessWise turns that itch into a 90-day plan." }
+          ? { name: 'The Bold Transformer', emoji: '🔄', quote: "You're ready for a rewrite. MindoraAcademy turns that itch into a 90-day plan." }
           : focus === 'health-vitality'
             ? { name: 'The Wellness Warrior', emoji: '💪', quote: 'Energy first. Everything else compounds from there.' }
             : {
                 name: 'The Ambitious Achiever',
                 emoji: '🚀',
-                quote: "You're not just aiming for a job — you're building a legacy. SuccessWise will help you get there faster.",
+                quote: "You're not just aiming for a job — you're building a legacy. MindoraAcademy will help you get there faster.",
               }
 
   return {

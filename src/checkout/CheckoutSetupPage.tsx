@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const PAGE_TITLE = 'SuccessWise.ai — Turn Daily Learning Into Daily Progress'
+const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progress'
 
 export default function CheckoutSetupPage() {
   usePageTitle(PAGE_TITLE)

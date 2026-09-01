@@ -23,7 +23,7 @@ const EnvSchema = z.object({
   }, z.boolean()),
   SMTP_USER: z.string().optional().default('support@mindoraacademy.com'),
   SMTP_PASS: z.string().optional().default(''),
-  AUTH_EMAIL: z.string().optional().default('SuccessWise.ai <support@mindoraacademy.com>'),
+  AUTH_EMAIL: z.string().optional().default('MindoraAcademy.com <support@mindoraacademy.com>'),
   LMS_DIST: z.string().optional().default(''),
   PUBLIC_ORIGIN: z.string().optional().default(''),
   OPENAI_API_KEY: z.string().optional().default(''),

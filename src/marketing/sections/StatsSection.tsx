@@ -6,7 +6,7 @@ export default function StatsSection() {
       <div className="pointer-events-none absolute -bottom-1 left-4 z-10 hidden lg:block">
         <img
           src="/assets/mascot.png"
-          alt="SuccessWise mascot"
+          alt="MindoraAcademy mascot"
           className="emoji-bounce w-14 opacity-90"
         />
       </div>

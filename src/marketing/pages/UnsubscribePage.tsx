@@ -1,8 +1,9 @@
 import { useSearchParams } from 'react-router-dom'
+import { COMPANY } from '@/marketing/data/company'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function UnsubscribePage() {
-  usePageTitle('SuccessWise.ai — Turn Daily Learning Into Daily Progress')
+  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
   const [params] = useSearchParams()
   const email = params.get('email') || ''
   const token = params.get('token') || ''
@@ -51,9 +52,9 @@ export default function UnsubscribePage() {
           ) : null}
         </div>
         <p style={{ fontSize: 12, color: '#999', marginTop: 32 }}>
-          ClickTech Solutions LTD T/A SuccessWise.ai
+          {COMPANY.tradingAs}
           <br />
-          Leytonstone House, 3 Hanbury Drive, London, E11 1GA, United Kingdom
+          {COMPANY.address}
         </p>
       </div>
     </div>

@@ -7,7 +7,7 @@ const items = catalog as RawCatalogItem[]
 const identity: FunnelScreen = {
   type: 'identity-sa',
   id: 'q1-focus',
-  kicker: 'SuccessWise Success Assessment',
+  kicker: 'MindoraAcademy Success Assessment',
   headline: 'Discover your\npersonal roadmap',
   question: "What's your #1 focus right now?",
   hint: '(Choose one)',
@@ -51,7 +51,7 @@ export const SA_SCREENS: FunnelScreen[] = [
         return {
           ...mapped,
           heroImage: '/assets/claude-icon-sparkles.webp',
-          statBox: '500,000+ people have used SuccessWise to transform their life',
+          statBox: '500,000+ people have used MindoraAcademy to transform their life',
           rating: '4.9 / 5 from 12,400+ learners',
         }
       }
@@ -73,7 +73,7 @@ export const SA_SCREENS: FunnelScreen[] = [
     testimonial: {
       name: 'James W.',
       role: 'Freelancer',
-      text: "I'd tried three times before and always quit. SuccessWise gave me a system that worked with my life, not against it.",
+      text: "I'd tried three times before and always quit. MindoraAcademy gave me a system that worked with my life, not against it.",
     },
   },
   {

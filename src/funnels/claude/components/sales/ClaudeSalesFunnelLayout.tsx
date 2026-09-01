@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { ChevronLeft } from 'lucide-react'
+import BrandWordmark from '@/shared/components/BrandWordmark'
 
 interface ClaudeSalesFunnelLayoutProps {
   step: number
@@ -11,7 +12,7 @@ interface ClaudeSalesFunnelLayoutProps {
 /**
  * Port of the sales-funnel shell inlined in production's `Ce()` orchestrator
  * (`claude-ai-certification-*.js`, sales branch) — sticky header with back
- * chevron, plain text "SuccessWise.ai" wordmark (production doesn't use the
+ * chevron, BrandWordmark (production doesn't use the
  * image Logo here, unlike the quiz phase), and a 6-dot step indicator.
  */
 export default function ClaudeSalesFunnelLayout({
@@ -36,8 +37,8 @@ export default function ClaudeSalesFunnelLayout({
           ) : (
             <div className="w-9" />
           )}
-          <span className="flex-1 text-center text-base font-bold tracking-tight text-sw-dark">
-            SuccessWise<span className="text-sw-blue">.ai</span>
+          <span className="flex-1 text-center">
+            <BrandWordmark size="sm" />
           </span>
           <div className="flex gap-1.5">
             {Array.from({ length: totalSteps }).map((_, i) => (

@@ -1,4 +1,4 @@
-# SuccessWise LMS (`authorisation/`)
+# MindoraAcademy LMS (`authorisation/`)
 
 Canonical `/login`, `/account`, `/app` SPA **and** LMS API. Two processes in this package: Vite on `:5175` and Hono on `:3001`. Postgres is a **separate** database from the github funnel (`DATABASE_URL` must not be the github DB until Wave 8 glue).
 

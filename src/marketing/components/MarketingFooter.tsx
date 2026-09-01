@@ -50,7 +50,7 @@ export default function MarketingFooter() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-            <Link to={ROUTES.home} aria-label="SuccessWise.ai home">
+            <Link to={ROUTES.home} aria-label="MindoraAcademy.com home">
               <Logo variant="light" />
             </Link>
             <p className="mt-4 mb-4 max-w-xs text-sm leading-relaxed">
@@ -77,7 +77,7 @@ export default function MarketingFooter() {
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-white/30">© 2026 SuccessWise.ai — All rights reserved.</p>
+          <p className="text-xs text-white/30">© 2026 MindoraAcademy.com — All rights reserved.</p>
           <p className="text-center text-xs text-white/30 sm:text-right">
             Built for people who want a better life. Starting today.
           </p>

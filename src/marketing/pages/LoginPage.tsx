@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import BrandWordmark from '@/shared/components/BrandWordmark'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -9,9 +10,7 @@ function LoginHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-white">
       <div className="mx-auto flex h-14 max-w-lg items-center justify-center px-4">
-        <span className="text-base font-bold tracking-tight text-sw-dark">
-          SuccessWise<span className="text-sw-blue">.ai</span>
-        </span>
+        <BrandWordmark />
       </div>
     </header>
   )
@@ -53,7 +52,7 @@ function StickyCta({
 }
 
 export default function LoginPage() {
-  usePageTitle('SuccessWise.ai — Turn Daily Learning Into Daily Progress')
+  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
   const [step, setStep] = useState<'email' | 'code'>('email')
   const [email, setEmail] = useState('')
   const [code, setCode] = useState('')
@@ -148,7 +147,7 @@ export default function LoginPage() {
             </button>
             <p className="mt-4 rounded-xl bg-sw-blue-light/40 px-4 py-3 text-center text-xs leading-relaxed text-sw-grey/80">
               💡 Check your <span className="font-semibold text-sw-dark">spam or junk folder</span> for an
-              email from SuccessWise.ai — some email providers filter sign-in codes.
+              email from MindoraAcademy.com — some email providers filter sign-in codes.
             </p>
           </div>
         </main>

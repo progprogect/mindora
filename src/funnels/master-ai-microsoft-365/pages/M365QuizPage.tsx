@@ -6,7 +6,7 @@ export default function M365QuizPage() {
     <MasterFunnelPage
       kind="m365"
       funnelId="master-ai-microsoft-365"
-      pageTitle="Master AI for Microsoft 365 — SuccessWise.ai | Word, Excel, PowerPoint, Outlook & Teams"
+      pageTitle="Master AI for Microsoft 365 — MindoraAcademy.com | Word, Excel, PowerPoint, Outlook & Teams"
       screens={M365_SCREENS}
     />
   )

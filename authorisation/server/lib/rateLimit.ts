@@ -6,7 +6,7 @@ const WINDOW_MS = 60 * 60 * 1000
 const MAX_FAILURES = 5
 
 export const RATE_LIMIT_MESSAGE =
-  'Login Attempt Rate Limit Exceeded - For Security Your Account is Temporarily Locked. Please Wait 1 Hour and Try Again. If this error continues please contact our support team support@successwise.ai'
+  'Login Attempt Rate Limit Exceeded - For Security Your Account is Temporarily Locked. Please Wait 1 Hour and Try Again. If this error continues please contact our support team support@mindoraacademy.com'
 
 export async function isRateLimited(email: string): Promise<boolean> {
   const [row] = await db.select().from(loginRateLimits).where(eq(loginRateLimits.email, email)).limit(1)
