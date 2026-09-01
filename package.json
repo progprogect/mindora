@@ -28,7 +28,7 @@
     "drizzle-orm": "^0.44.6",
     "hono": "^4.10.3",
     "lucide-react": "^1.33.0",
-    "nodemailer": "^9.1.0",
+    "resend": "^6.24.0",
     "pg": "^8.16.3",
     "posthog-js": "^1.418.6",
     "react": "^19.2.8",

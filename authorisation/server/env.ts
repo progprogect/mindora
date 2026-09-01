@@ -13,16 +13,7 @@ const EnvSchema = z.object({
   SESSION_SECRET: z.string().optional().default(''),
   STRIPE_SECRET_KEY: z.string().optional().default(''),
   STRIPE_WEBHOOK_SECRET: z.string().optional().default(''),
-  SMTP_HOST: z.string().optional().default('mail.privateemail.com'),
-  SMTP_PORT: z.coerce.number().int().positive().default(465),
-  SMTP_SECURE: z.preprocess((value) => {
-    if (value === undefined || value === '') return true
-    if (value === true || value === 'true' || value === '1') return true
-    if (value === false || value === 'false' || value === '0') return false
-    return value
-  }, z.boolean()),
-  SMTP_USER: z.string().optional().default('support@mindoraacademy.com'),
-  SMTP_PASS: z.string().optional().default(''),
+  AUTH_RESEND_KEY: z.string().optional().default(''),
   AUTH_EMAIL: z.string().optional().default('MindoraAcademy.com <support@mindoraacademy.com>'),
   LMS_DIST: z.string().optional().default(''),
   PUBLIC_ORIGIN: z.string().optional().default(''),

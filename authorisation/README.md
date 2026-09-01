@@ -16,7 +16,7 @@ npm run dev
 
 Keep the github process **stopped** for LMS login. Vite must not proxy to `:3000`.
 
-Without `SMTP_PASS`, OTP is printed in the API log:
+Without `AUTH_RESEND_KEY`, OTP is printed in the API log:
 
 ```
 [otp] you@example.com → 123456
