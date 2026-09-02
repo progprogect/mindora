@@ -1,20 +1,36 @@
 import '../loadDotenv.js'
-import { eq } from 'drizzle-orm'
 import { db, pool } from '../db/index.js'
 import { products } from '../db/schema.js'
 import { loadEnv } from '../env.js'
 
 async function seed() {
   const env = loadEnv()
-  const existing = await db.select().from(products)
   const defaults = [
     {
       id: 'monthly',
       name: 'Monthly Plan',
       stripePriceId: env.STRIPE_MONTHLY_PRICE_ID || 'price_REPLACE_MONTHLY',
-      price: 2900,
+      price: 1999,
       intervalMonths: 1,
       badge: null as string | null,
+      active: true,
+    },
+    {
+      id: 'quarterly',
+      name: 'Quarterly Plan',
+      stripePriceId: env.STRIPE_QUARTERLY_PRICE_ID || 'price_REPLACE_QUARTERLY',
+      price: 3897,
+      intervalMonths: 3,
+      badge: 'MOST POPULAR',
+      active: true,
+    },
+    {
+      id: 'annual',
+      name: 'Annual Plan',
+      stripePriceId: env.STRIPE_ANNUAL_PRICE_ID || 'price_REPLACE_ANNUAL',
+      price: 8999,
+      intervalMonths: 12,
+      badge: 'BEST VALUE',
       active: true,
     },
     {
@@ -37,17 +53,25 @@ async function seed() {
     },
   ]
 
-  let inserted = 0
   for (const product of defaults) {
-    const already = existing.some((row) => row.intervalMonths === product.intervalMonths)
-    if (already) continue
-    const [clash] = await db.select().from(products).where(eq(products.id, product.id)).limit(1)
-    if (clash) continue
-    await db.insert(products).values(product)
-    inserted += 1
+    await db
+      .insert(products)
+      .values(product)
+      .onConflictDoUpdate({
+        target: products.id,
+        set: {
+          name: product.name,
+          stripePriceId: product.stripePriceId,
+          price: product.price,
+          intervalMonths: product.intervalMonths,
+          badge: product.badge,
+          active: product.active,
+        },
+      })
   }
 
-  console.log(`[seed] skipped=${inserted === 0} count=${existing.length + inserted} inserted=${inserted}`)
+  const rows = await db.select({ id: products.id }).from(products)
+  console.log(`[seed] upserted=${defaults.length} count=${rows.length} ids=${rows.map((row) => row.id).join(',')}`)
 }
 
 seed()

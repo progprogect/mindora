@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Check, ShieldCheck } from 'lucide-react'
 import type { ClaudeProfile, ClaudeQuizAnswers } from '@/funnels/claude/types/claudeQuiz'
-import { DEFAULT_PLANS, formatUsd, planMeta, type PlanView } from '@/funnels/claude/data/plans'
+import { expiredPickerPlans, formatUsd, planMeta, type PlanView } from '@/funnels/claude/data/plans'
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { useCheckoutOfferAction, useProductsList, useTrackCheckoutInitiated } from '@/shared/lib/backend'
@@ -124,8 +124,7 @@ function StarRow({ count }: { count: number }) {
 }
 
 function resolveDisplayPlans(products: Array<PlanView> | undefined): PlanView[] {
-  const source = products && products.length >= 3 ? products : DEFAULT_PLANS
-  return [...source].sort((a, b) => a.price - b.price)
+  return expiredPickerPlans(products)
 }
 
 function ExpiredPlanPicker({

@@ -17,6 +17,7 @@ import { useProductsList, type ProductDoc } from '@/shared/lib/backend'
 import { trackEvent } from '@/shared/lib/tracking'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
+import { PRICING_FALLBACK_PLANS } from '@/marketing/data/pricing'
 
 const FUNNEL_28 = '28-day-ai-challenge'
 const FUNNEL_CLAUDE = 'claude-ai-certification'
@@ -49,10 +50,22 @@ function resolvePlan(
   products: ProductDoc[] | undefined,
   defaults: PlanView[],
   cacheKey: string,
+  preferPricingCatalog: boolean,
 ): PlanView | null {
   const fromConvex = products?.find((p) => p._id === productId)
   if (fromConvex) return toPlanView(fromConvex)
-  return defaults.find((p) => p.id === productId) ?? loadCachedPlan(productId, cacheKey)
+  const fromPricing = PRICING_FALLBACK_PLANS.find((p) => p.id === productId)
+  const pricingPlan: PlanView | undefined = fromPricing
+    ? {
+        id: fromPricing.id,
+        name: fromPricing.name,
+        price: fromPricing.price,
+        intervalMonths: fromPricing.intervalMonths,
+        badge: fromPricing.badge,
+      }
+    : undefined
+  if (preferPricingCatalog && pricingPlan) return pricingPlan
+  return defaults.find((p) => p.id === productId) ?? pricingPlan ?? loadCachedPlan(productId, cacheKey)
 }
 
 function priceSuffix(months: number, periodLabel: string): string {
@@ -61,15 +74,18 @@ function priceSuffix(months: number, periodLabel: string): string {
 }
 
 /**
- * `/checkout?product=` — full-page $1 trial for the plan chosen after the
- * 10-minute offer expires. GET STARTED on the picker lands here.
+ * `/checkout?product=` — $1 trial for a catalog plan (from `/pricing` or
+ * the expired-offer picker). Without `?funnel=`, copy and setup match the original.
  */
 export default function CheckoutPage() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
   const productId = searchParams.get('product') ?? searchParams.get('plan') ?? ''
-  const funnel = searchParams.get('funnel') ?? FUNNEL_28
-  const claude = funnel === FUNNEL_CLAUDE
+  const funnelParam = searchParams.get('funnel')
+  const funnel = funnelParam || 'pricing'
+  const claude = funnelParam === FUNNEL_CLAUDE
+  const is28DayFunnel = funnelParam === FUNNEL_28
+  const professionalCerts = !is28DayFunnel
 
   const products = useProductsList()
   const results = claude ? loadClaudeQuizResults() : loadQuizResults()
@@ -78,14 +94,16 @@ export default function CheckoutPage() {
   const planMeta = claude ? planMetaClaude : planMeta28
   const cacheKey = claude ? 'sw_claude_selected_plan' : 'sw_28day_selected_plan'
   const checkoutKey = claude ? CHECKOUT_CLAUDE_KEY : CHECKOUT_28DAY_KEY
-  const setupPath = `/checkout/setup?trial=1&funnel=${funnel}`
+  const setupPath = funnelParam ? `/checkout/setup?trial=1&funnel=${funnelParam}` : '/checkout/setup'
 
   const [email, setEmail] = useState(results?.email ?? '')
   const [paid, setPaid] = useState(false)
   const [emailError, setEmailError] = useState<string | null>(null)
   const [showPayment, setShowPayment] = useState(Boolean(results?.email))
 
-  const plan = productId ? resolvePlan(productId, products, defaults, cacheKey) : null
+  const plan = productId
+    ? resolvePlan(productId, products, defaults, cacheKey, !funnelParam)
+    : null
   const meta = plan ? planMeta(plan) : null
   const monthly = plan && meta ? plan.price / meta.months : 0
 
@@ -175,10 +193,10 @@ export default function CheckoutPage() {
           <span className="flex-shrink-0 text-3xl">🏆</span>
           <div>
             <p className="text-[0.9rem] font-bold text-sw-dark">
-              {claude ? 'Professional Certificates Included' : 'Certificate of Completion Included'}
+              {professionalCerts ? 'Professional Certificates Included' : 'Certificate of Completion Included'}
             </p>
             <p className="text-xs leading-relaxed text-sw-grey">
-              {claude
+              {professionalCerts
                 ? 'Earn 30+ certifications, share them on LinkedIn and add them to your resume.'
                 : 'Earn your 28-Day AI Challenge certificate, share it on LinkedIn and add it to your resume.'}
             </p>
@@ -198,7 +216,7 @@ export default function CheckoutPage() {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-sw-dark">
-                  {claude ? 'Professional Certificates' : 'Certificate of Completion'}
+                  {professionalCerts ? 'Professional Certificates' : 'Certificate of Completion'}
                 </span>
                 <span className="text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
                   FREE
@@ -231,6 +249,7 @@ export default function CheckoutPage() {
                 name={name}
                 productId={plan.id}
                 funnel={funnel}
+                returnPath={setupPath}
                 highlights={claude ? CLAUDE_CHECKOUT_HIGHLIGHTS : undefined}
                 onSuccess={() => {
                   window.localStorage.setItem(checkoutKey, 'true')

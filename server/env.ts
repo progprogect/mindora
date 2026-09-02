@@ -17,6 +17,8 @@ const EnvSchema = z.object({
   STRIPE_SECRET_KEY: z.string().optional().default(''),
   STRIPE_WEBHOOK_SECRET: z.string().optional().default(''),
   STRIPE_MONTHLY_PRICE_ID: z.string().optional().default(''),
+  STRIPE_QUARTERLY_PRICE_ID: z.string().optional().default(''),
+  STRIPE_ANNUAL_PRICE_ID: z.string().optional().default(''),
   STRIPE_SIX_MONTH_PRICE_ID: z.string().optional().default(''),
   STRIPE_TWELVE_MONTH_PRICE_ID: z.string().optional().default(''),
   AUTH_RESEND_KEY: z.string().optional().default(''),

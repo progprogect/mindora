@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { PRICING_FEATURES, PRICING_PLANS, PRICING_TRUST } from '@/marketing/data/pricing'
+import {
+  PRICING_FEATURES,
+  PRICING_TRUST,
+  formatPerMonth,
+  pricingLabel,
+  pricingSavePercent,
+  pricingSummary,
+  resolvePricingCatalog,
+} from '@/marketing/data/pricing'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useProductsList } from '@/shared/lib/backend'
 
 export default function PricingPage() {
   usePageTitle('Pricing — MindoraAcademy.com | Simple Plans, Full Platform Access')
-  const [selected, setSelected] = useState<(typeof PRICING_PLANS)[number]['id']>('quarter')
+  const products = useProductsList()
+  const plans = useMemo(() => resolvePricingCatalog(products), [products])
+  const defaultId = plans.find((item) => item.badge === 'MOST POPULAR')?.id ?? plans[0]?.id ?? 'quarterly'
+  const [selected, setSelected] = useState<string>(defaultId)
   const navigate = useNavigate()
-  const plan = PRICING_PLANS.find((p) => p.id === selected) ?? PRICING_PLANS[1]
+  const selectedId = plans.some((item) => item.id === selected) ? selected : defaultId
+  const plan = plans.find((item) => item.id === selectedId) ?? plans[0]
 
   return (
     <>
@@ -49,8 +62,10 @@ export default function PricingPage() {
         </p>
 
         <div className="flex flex-col gap-3">
-          {PRICING_PLANS.map((item) => {
-            const active = item.id === selected
+          {plans.map((item) => {
+            const active = item.id === selectedId
+            const perMonth = formatPerMonth(item.price, item.intervalMonths)
+            const save = pricingSavePercent(item.price, item.intervalMonths)
             return (
               <button
                 key={item.id}
@@ -102,7 +117,9 @@ export default function PricingPage() {
                       ) : null}
                     </span>
                     <div className="flex flex-col gap-1">
-                      <span className="text-lg font-extrabold text-sw-dark">{item.label}</span>
+                      <span className="text-lg font-extrabold text-sw-dark">
+                        {pricingLabel(item.intervalMonths)}
+                      </span>
                       <span
                         className="inline-block w-fit rounded-md px-2 py-0.5 text-[11px] font-bold"
                         style={{
@@ -110,19 +127,19 @@ export default function PricingPage() {
                           color: 'hsl(var(--sw-success))',
                         }}
                       >
-                        Save {item.save}%
+                        Save {save}%
                       </span>
                     </div>
                   </div>
                   <div className="flex flex-col items-end gap-1">
-                    <span className="text-xs text-sw-grey line-through">${item.was}/mo</span>
+                    <span className="text-xs text-sw-grey line-through">$29.99/mo</span>
                     <div
                       className="rounded-xl px-3 py-1.5"
                       style={{ backgroundColor: 'hsl(var(--sw-grey-light))' }}
                     >
                       <div className="flex items-baseline gap-0.5">
                         <span className="text-sm font-medium text-sw-grey">$</span>
-                        <span className="text-2xl font-extrabold text-sw-dark">{item.now}</span>
+                        <span className="text-2xl font-extrabold text-sw-dark">{perMonth}</span>
                         <span className="text-sm font-medium text-sw-grey"> /mo</span>
                       </div>
                     </div>
@@ -133,11 +150,16 @@ export default function PricingPage() {
           })}
         </div>
 
-        <p className="mt-5 text-center text-sm leading-relaxed text-sw-grey">{plan.summary}</p>
+        <p className="mt-5 text-center text-sm leading-relaxed text-sw-grey">
+          {plan ? pricingSummary(plan) : null}
+        </p>
 
         <button
           type="button"
-          onClick={() => navigate(ROUTES.quiz28)}
+          onClick={() => {
+            if (!plan) return
+            navigate(`${ROUTES.checkout}?product=${encodeURIComponent(plan.id)}`)
+          }}
           className="mt-5 w-full rounded-full bg-sw-blue px-6 py-4 text-center text-lg font-extrabold tracking-wide text-white uppercase shadow-lg transition-all duration-200 hover:bg-sw-blue-hover disabled:opacity-50"
         >
           Start my $1 trial

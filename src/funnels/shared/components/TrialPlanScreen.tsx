@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
-import { DEFAULT_PLANS, type PlanView } from '@/funnels/twenty-eight-day/data/plans'
+import { expiredPickerPlans, type PlanView } from '@/funnels/twenty-eight-day/data/plans'
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
@@ -55,8 +55,7 @@ function countdownStartSeconds(): number {
 }
 
 function resolveDisplayPlans(products: Array<PlanView> | undefined): PlanView[] {
-  const source = products && products.length >= 3 ? products : DEFAULT_PLANS
-  return [...source].sort((a, b) => a.price - b.price)
+  return expiredPickerPlans(products)
 }
 
 function CheckDot() {

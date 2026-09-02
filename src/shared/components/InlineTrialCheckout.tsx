@@ -24,6 +24,8 @@ interface InlineTrialCheckoutProps {
   /** When false, render PayPal + card fields only (used on `/checkout?product=`). */
   framed?: boolean
   highlights?: string[]
+  /** Post-payment path. Defaults to `/checkout/setup?trial=1&funnel=`. */
+  returnPath?: string
 }
 
 const CARD_ELEMENT_STYLE = {
@@ -311,16 +313,22 @@ function ConfirmButton({
   )
 }
 
+function defaultSetupPath(funnel: string): string {
+  return `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
+}
+
 function PayPalBlock({
   email,
   funnel,
   productId,
+  returnPath,
   onSuccess,
   onError,
 }: {
   email: string
   funnel: string
   productId: string
+  returnPath: string
   onSuccess: () => void
   onError: (message: string) => void
 }) {
@@ -330,7 +338,7 @@ function PayPalBlock({
         email={email}
         funnel={funnel}
         productId={productId}
-        returnPath={`/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`}
+        returnPath={returnPath}
         onBeforeRedirect={() => {
           try {
             window.localStorage.setItem('sw_checkout_email', email)
@@ -356,6 +364,11 @@ function CardOrPayDivider() {
   )
 }
 
+function toAbsoluteUrl(path: string): string {
+  if (path.startsWith('http://') || path.startsWith('https://')) return path
+  return `${window.location.origin}${path.startsWith('/') ? path : `/${path}`}`
+}
+
 function CheckoutForm({
   email,
   name,
@@ -363,6 +376,7 @@ function CheckoutForm({
   onSuccess,
   submitLabel = 'CONFIRM PAYMENT — $1.00',
   clientSecret,
+  returnPath,
 }: InlineTrialCheckoutProps & { clientSecret: string }) {
   const stripe = useStripe()
   const elements = useElements()
@@ -372,7 +386,7 @@ function CheckoutForm({
   const [cardReady, setCardReady] = useState(false)
   const [complete, setComplete] = useState({ number: false, expiry: false, cvc: false })
 
-  const setupUrl = `${window.location.origin}/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
+  const setupUrl = toAbsoluteUrl(returnPath ?? defaultSetupPath(funnel))
 
   useEffect(() => {
     if (cardReady) return
@@ -536,11 +550,13 @@ export default function InlineTrialCheckout({
   submitLabel,
   framed = true,
   highlights = DEFAULT_CHECKOUT_HIGHLIGHTS,
+  returnPath,
 }: InlineTrialCheckoutProps) {
   const [clientSecret, setClientSecret] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [paypalError, setPaypalError] = useState<string | null>(null)
   const createTrialPaymentIntent = useCreateTrialPaymentIntent()
+  const setupPath = returnPath ?? defaultSetupPath(funnel)
 
   useEffect(() => {
     if (!isStripeConfigured) return
@@ -573,6 +589,7 @@ export default function InlineTrialCheckout({
       email={email}
       funnel={funnel}
       productId={productId}
+      returnPath={setupPath}
       onSuccess={onSuccess}
       onError={setPaypalError}
     />
@@ -642,6 +659,7 @@ export default function InlineTrialCheckout({
           name={name}
           productId={productId}
           funnel={funnel}
+          returnPath={setupPath}
           onSuccess={onSuccess}
           submitLabel={submitLabel ?? 'CONFIRM PAYMENT — $1.00'}
           clientSecret={clientSecret}

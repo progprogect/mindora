@@ -23,12 +23,15 @@ export const PLAN_DISPLAY_META: Record<
   { label: string; periodLabel: string; months: number; badge?: string }
 > = {
   'Monthly Plan': { label: '1 month', periodLabel: 'per month', months: 1 },
+  'Quarterly Plan': { label: '3 months', periodLabel: 'every 3 months', months: 3, badge: 'MOST POPULAR' },
+  'Annual Plan': { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
   '6-Month Plan': { label: '6 months', periodLabel: 'every 6 months', months: 6, badge: 'MOST POPULAR' },
   '12-Month Plan': { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
 }
 
 const META_BY_MONTHS: Record<number, { label: string; periodLabel: string; months: number; badge?: string }> = {
   1: { label: '1 month', periodLabel: 'per month', months: 1 },
+  3: { label: '3 months', periodLabel: 'every 3 months', months: 3, badge: 'MOST POPULAR' },
   6: { label: '6 months', periodLabel: 'every 6 months', months: 6, badge: 'MOST POPULAR' },
   12: { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
 }
@@ -45,6 +48,13 @@ export function formatUsd(cents: number): string {
 
 export function applyDiscount(price: number, percentOff: number): number {
   return Math.round(price * (1 - percentOff / 100))
+}
+
+export function expiredPickerPlans(products: PlanView[] | undefined): PlanView[] {
+  const allowed = new Set(DEFAULT_PLANS.map((plan) => plan.id))
+  const fromApi = products?.filter((plan) => allowed.has(plan.id))
+  const source = fromApi && fromApi.length >= 3 ? fromApi : DEFAULT_PLANS
+  return [...source].sort((a, b) => a.price - b.price)
 }
 
 export function planMeta(plan: PlanView) {
