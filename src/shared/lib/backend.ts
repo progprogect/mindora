@@ -153,23 +153,6 @@ export function useCreateTrialSetupIntent() {
   return useCreateTrialPaymentIntent()
 }
 
-export function useCreatePayPalPaymentIntent() {
-  return useCallback(
-    (args: {
-      customerEmail: string
-      productId: string
-      funnel: string
-      returnUrl?: string
-      confirmAndRedirect?: boolean
-    }) =>
-      apiJson<{ clientSecret: string; redirectUrl: string | null }>('/api/checkout/paypal-intent', {
-        method: 'POST',
-        body: JSON.stringify(args),
-      }),
-    [],
-  )
-}
-
 export function useSendMetaEventAction() {
   return useCallback(
     async (args: {

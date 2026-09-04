@@ -19,8 +19,6 @@
   --sw-coral: 21 90% 56%;
   --sw-purple: 271 71% 58%;
   --sw-emerald: 158 64% 32%;
-  --sw-paypal-yellow: 45 100% 61%;
-  --sw-paypal-navy: 219 100% 26%;
   --cert-navy: 222 47% 11%;
   --cert-gold: 43 74% 52%;
   --sw-border: 220 13% 91%;
@@ -47,8 +45,6 @@
   --color-sw-coral: hsl(var(--sw-coral));
   --color-sw-purple: hsl(var(--sw-purple));
   --color-sw-emerald: hsl(var(--sw-emerald));
-  --color-sw-paypal-yellow: hsl(var(--sw-paypal-yellow));
-  --color-sw-paypal-navy: hsl(var(--sw-paypal-navy));
   --color-cert-navy: hsl(var(--cert-navy));
   --color-cert-gold: hsl(var(--cert-gold));
   --color-sw-border: hsl(var(--sw-border));

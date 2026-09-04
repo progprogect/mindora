@@ -60,7 +60,7 @@ export default function ClaudeQuizPage() {
   useEffect(() => persistClaudeQuizState(quizState), [quizState])
   useEffect(() => persistClaudeSalesStep(salesStep), [salesStep])
 
-  // PayPal-style redirect return handler — matches the 28-day quiz + production Claude funnel.
+  // Stripe redirect return handler — matches the 28-day quiz + production Claude funnel.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     if (params.get('redirect_status') === 'succeeded') {

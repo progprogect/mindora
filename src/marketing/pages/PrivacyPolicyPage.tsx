@@ -29,10 +29,6 @@ export default function PrivacyPolicyPage() {
             data="Online resource usage data; Tracker"
           />
           <Processor
-            title="Interaction with external social networks and platforms — PayPal service buttons and social mini-applications"
-            data="Online resource usage data; Tracker"
-          />
-          <Processor
             title="Interaction with support and feedback platforms — Jivochat Widget"
             data="Online resource usage data; Tracker"
           />

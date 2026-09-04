@@ -20,13 +20,6 @@ const trialSchema = z.object({
   productId: z.string().min(1),
   funnel: z.string().min(1),
 })
-const paypalSchema = z.object({
-  customerEmail: z.string().min(1),
-  productId: z.string().min(1),
-  funnel: z.string().min(1),
-  returnUrl: z.string().optional(),
-  confirmAndRedirect: z.boolean().optional(),
-})
 
 async function findOrCreateCustomer(email: string, funnel: string, productId: string) {
   const stripe = getStripe()
@@ -108,45 +101,6 @@ checkoutRoutes.post('/checkout/trial-intent', async (c) => {
       return c.json({ error: 'Stripe did not return a client secret' }, 502)
     }
     return c.json({ clientSecret: paymentIntent.client_secret })
-  } catch (error) {
-    const message = error instanceof Error ? error.message : 'Stripe request failed'
-    return c.json({ error: message }, 502)
-  }
-})
-
-checkoutRoutes.post('/checkout/paypal-intent', async (c) => {
-  const parsed = paypalSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
-  if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
-  const { customerEmail, productId, funnel, returnUrl, confirmAndRedirect } = parsed.data
-  try {
-    const customer = await findOrCreateCustomer(customerEmail, funnel, productId)
-    const stripe = getStripe()
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: 100,
-      currency: 'usd',
-      customer: customer.id,
-      payment_method_types: ['paypal'],
-      setup_future_usage: 'off_session',
-      metadata: { funnel, productId, email: customerEmail },
-      ...(confirmAndRedirect && returnUrl
-        ? {
-            confirm: true,
-            return_url: returnUrl,
-            payment_method_data: { type: 'paypal' },
-          }
-        : {}),
-    })
-    const redirectUrl =
-      paymentIntent.next_action &&
-      'redirect_to_url' in paymentIntent.next_action &&
-      paymentIntent.next_action.redirect_to_url?.url
-        ? paymentIntent.next_action.redirect_to_url.url
-        : null
-    if (!paymentIntent.client_secret) {
-      return c.json({ error: 'Stripe did not return a client secret' }, 502)
-    }
-    return c.json({ clientSecret: paymentIntent.client_secret, redirectUrl })
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Stripe request failed'
     return c.json({ error: message }, 502)

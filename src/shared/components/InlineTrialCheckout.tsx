@@ -10,7 +10,6 @@ import {
 } from '@stripe/react-stripe-js'
 import { getStripe, isStripeConfigured } from '@/shared/lib/stripeClient'
 import { useCreateTrialPaymentIntent } from '@/shared/lib/backend'
-import PayPalButton from '@/shared/components/PayPalButton'
 import { DEFAULT_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 
 interface InlineTrialCheckoutProps {
@@ -21,7 +20,7 @@ interface InlineTrialCheckoutProps {
   percentOff?: number
   onSuccess: () => void
   submitLabel?: string
-  /** When false, render PayPal + card fields only (used on `/checkout?product=`). */
+  /** When false, render card fields only (used on `/checkout?product=`). */
   framed?: boolean
   highlights?: string[]
   /** Post-payment path. Defaults to `/checkout/setup?trial=1&funnel=`. */
@@ -317,44 +316,6 @@ function defaultSetupPath(funnel: string): string {
   return `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
 }
 
-function PayPalBlock({
-  email,
-  funnel,
-  productId,
-  returnPath,
-  onSuccess,
-  onError,
-}: {
-  email: string
-  funnel: string
-  productId: string
-  returnPath: string
-  onSuccess: () => void
-  onError: (message: string) => void
-}) {
-  return (
-    <div className="mb-3">
-      <PayPalButton
-        email={email}
-        funnel={funnel}
-        productId={productId}
-        returnPath={returnPath}
-        onBeforeRedirect={() => {
-          try {
-            window.localStorage.setItem('sw_checkout_email', email)
-            window.localStorage.setItem('sw_login_email', email)
-            window.localStorage.setItem('sw_checkout_funnel', funnel)
-          } catch {
-            /* ignore */
-          }
-        }}
-        onSuccess={onSuccess}
-        onError={onError}
-      />
-    </div>
-  )
-}
-
 function CardOrPayDivider() {
   return (
     <div className="mb-4 flex items-center gap-3">
@@ -478,7 +439,7 @@ function CheckoutForm({
       </div>
 
       <form onSubmit={handleCardSubmit}>
-        <CardOrPayDivider />
+        {expressReady ? <CardOrPayDivider /> : null}
 
         <StripeCardFields
           ready={cardReady}
@@ -503,20 +464,13 @@ function CheckoutForm({
   )
 }
 
-function PaymentUnavailableNotice({ paypalError }: { paypalError?: string | null }) {
+function PaymentUnavailableNotice() {
   return (
-    <div>
-      {paypalError ? (
-        <div className="mb-3 rounded-xl border border-red-200 bg-red-50 p-4">
-          <p className="text-sm leading-snug font-semibold text-red-800">{paypalError}</p>
-        </div>
-      ) : null}
-      <div className="rounded-xl border border-sw-grey-border bg-sw-grey-light px-4 py-3 text-center">
-        <p className="text-sm font-semibold text-sw-dark">Payment unavailable</p>
-        <p className="mt-1 text-xs leading-relaxed text-sw-grey">
-          Card checkout is not configured on this environment.
-        </p>
-      </div>
+    <div className="rounded-xl border border-sw-grey-border bg-sw-grey-light px-4 py-3 text-center">
+      <p className="text-sm font-semibold text-sw-dark">Payment unavailable</p>
+      <p className="mt-1 text-xs leading-relaxed text-sw-grey">
+        Card checkout is not configured on this environment.
+      </p>
     </div>
   )
 }
@@ -555,7 +509,6 @@ export default function InlineTrialCheckout({
 }: InlineTrialCheckoutProps) {
   const [clientSecret, setClientSecret] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [paypalError, setPaypalError] = useState<string | null>(null)
   const createTrialPaymentIntent = useCreateTrialPaymentIntent()
   const setupPath = returnPath ?? defaultSetupPath(funnel)
 
@@ -585,17 +538,6 @@ export default function InlineTrialCheckout({
       children
     )
 
-  const paypal = (
-    <PayPalBlock
-      email={email}
-      funnel={funnel}
-      productId={productId}
-      returnPath={setupPath}
-      onSuccess={onSuccess}
-      onError={setPaypalError}
-    />
-  )
-
   if (error) {
     return (
       <div className={framed ? 'mx-auto max-w-lg px-4' : ''}>
@@ -614,12 +556,7 @@ export default function InlineTrialCheckout({
   }
 
   if (!isStripeConfigured) {
-    return wrap(
-      <>
-        {paypal}
-        <PaymentUnavailableNotice paypalError={paypalError} />
-      </>,
-    )
+    return wrap(<PaymentUnavailableNotice />)
   }
 
   if (!clientSecret) {
@@ -634,38 +571,30 @@ export default function InlineTrialCheckout({
   }
 
   return wrap(
-    <>
-      {paypal}
-      {paypalError ? (
-        <div className="mb-3 rounded-xl border border-red-200 bg-red-50 p-4">
-          <p className="text-sm leading-snug font-semibold text-red-800">{paypalError}</p>
-        </div>
-      ) : null}
-      <Elements
-        stripe={getStripe()}
-        options={{
-          clientSecret,
-          appearance: {
-            theme: 'stripe',
-            variables: {
-              colorPrimary: 'hsl(221, 83%, 53%)',
-              borderRadius: '12px',
-              fontFamily: '"Plus Jakarta Sans", system-ui, sans-serif',
-            },
+    <Elements
+      stripe={getStripe()}
+      options={{
+        clientSecret,
+        appearance: {
+          theme: 'stripe',
+          variables: {
+            colorPrimary: 'hsl(221, 83%, 53%)',
+            borderRadius: '12px',
+            fontFamily: '"Plus Jakarta Sans", system-ui, sans-serif',
           },
-        }}
-      >
-        <CheckoutForm
-          email={email}
-          name={name}
-          productId={productId}
-          funnel={funnel}
-          returnPath={setupPath}
-          onSuccess={onSuccess}
-          submitLabel={submitLabel ?? 'CONFIRM PAYMENT — $1.00'}
-          clientSecret={clientSecret}
-        />
-      </Elements>
-    </>,
+        },
+      }}
+    >
+      <CheckoutForm
+        email={email}
+        name={name}
+        productId={productId}
+        funnel={funnel}
+        returnPath={setupPath}
+        onSuccess={onSuccess}
+        submitLabel={submitLabel ?? 'CONFIRM PAYMENT — $1.00'}
+        clientSecret={clientSecret}
+      />
+    </Elements>,
   )
 }

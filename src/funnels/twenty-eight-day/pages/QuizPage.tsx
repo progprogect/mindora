@@ -57,7 +57,7 @@ export default function QuizPage() {
   useEffect(() => persistQuizState(quizState), [quizState])
   useEffect(() => persistSalesStep(salesStep), [salesStep])
 
-  // PayPal-style redirect return handler.
+  // Stripe redirect return handler.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     if (params.get('redirect_status') === 'succeeded') {

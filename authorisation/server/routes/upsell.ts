@@ -81,10 +81,6 @@ async function cardPaymentMethodId(customerId: string): Promise<string | null> {
       : undefined
 
   if (defaultType === 'card' && defaultId) return defaultId
-  if (defaultId && defaultType !== 'paypal') {
-    const retrieved = await stripe.paymentMethods.retrieve(defaultId)
-    if (retrieved.type === 'card') return retrieved.id
-  }
 
   const cards = await stripe.paymentMethods.list({ customer: customerId, type: 'card', limit: 1 })
   return cards.data[0]?.id ?? null
