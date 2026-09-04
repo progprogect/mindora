@@ -22,6 +22,11 @@ export function looksLikeFile(pathname: string): boolean {
   return last.includes('.')
 }
 
+/** Apple Pay / ACME files live here; the association file has no `.` in the name. */
+export function isWellKnownPath(pathname: string): boolean {
+  return pathname === '/.well-known' || pathname.startsWith('/.well-known/')
+}
+
 export function isApiOrWebhookPath(pathname: string): boolean {
   const path = normalizePathname(pathname)
   return path === '/api' || path.startsWith('/api/') || path === '/stripe' || path.startsWith('/stripe/')

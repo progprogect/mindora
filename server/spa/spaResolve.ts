@@ -1,6 +1,6 @@
 import { existsSync, statSync } from 'node:fs'
 import { relative, resolve, sep } from 'node:path'
-import { isSafePath, looksLikeFile, normalizePathname } from './spaPaths.js'
+import { isSafePath, isWellKnownPath, looksLikeFile, normalizePathname } from './spaPaths.js'
 
 export type SpaRoots = {
   marketing: string
@@ -39,6 +39,10 @@ export function resolveSpaTarget(pathname: string, roots: SpaRoots): SpaTarget {
   if (!isSafePath(path)) return { kind: 'not_found' }
 
   const marketingFile = existingFile(roots.marketing, path)
+
+  if (isWellKnownPath(path)) {
+    return marketingFile ? html(marketingFile) : { kind: 'not_found' }
+  }
 
   if (looksLikeFile(path)) {
     return marketingFile ? asset(marketingFile) : { kind: 'not_found' }
