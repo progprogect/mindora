@@ -32,7 +32,13 @@ const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 function LoginForm() {
   const { refresh } = useSession()
   const [step, setStep] = useState<'email' | 'code'>('email')
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState(() => {
+    try {
+      return localStorage.getItem('sw_login_email') || localStorage.getItem('sw_checkout_email') || ''
+    } catch {
+      return ''
+    }
+  })
   const [code, setCode] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -50,6 +56,12 @@ function LoginForm() {
     setBusy(true)
     try {
       await sendOtp(email)
+      try {
+        window.localStorage.setItem('sw_checkout_email', email.trim())
+        window.localStorage.setItem('sw_login_email', email.trim())
+      } catch {
+        /* ignore */
+      }
       setStep('code')
     } catch (err) {
       setError(apiErrorMessage(err, 'Failed to send code. Please check your email and try again.'))

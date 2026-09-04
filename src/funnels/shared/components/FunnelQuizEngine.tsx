@@ -12,6 +12,7 @@ import EmailScreen from '@/funnels/shared/components/EmailScreen'
 import NameCaptureScreen from '@/funnels/shared/components/NameCaptureScreen'
 import { trackEvent, identifyUser } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useUpdateLeadName } from '@/shared/lib/backend'
+import { rememberCheckoutEmail } from '@/shared/lib/checkoutSession'
 
 interface FunnelQuizEngineProps {
   funnelId: string
@@ -93,6 +94,7 @@ export default function FunnelQuizEngine({
   const handleEmailSubmit = useCallback(
     (email: string, consent: boolean) => {
       setQuizState((prev) => ({ ...prev, email, consent, step: prev.step + 1 }))
+      rememberCheckoutEmail(email)
       void captureLead({ email, funnel: funnelId, consent })
       void saveSurveyData({
         email,

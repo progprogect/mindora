@@ -3,11 +3,12 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { upsellEvents } from '../db/schema.js'
-import { hasSku, offerAmountCents, recordPurchase } from '../lib/purchases.js'
+import { hasSku, offerAmountCents, offerCheckoutName, recordPurchase } from '../lib/purchases.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 import { getStripe } from '../lib/stripe.js'
-import { attachStripeCustomer, findStripeCustomerId } from '../lib/subscription.js'
+import { attachStripeCustomer, findStripeCustomerId, linkStripeCustomer } from '../lib/subscription.js'
 import { loadCurrentUser } from '../lib/currentUser.js'
+import { publicOrigin } from '../lib/http.js'
 import { loadEnv } from '../env.js'
 
 const eventSchema = z.object({
@@ -20,7 +21,32 @@ const eventSchema = z.object({
 const chargeSchema = z.object({
   offerSlug: z.string().min(1),
   attribution: z.unknown().optional(),
+  returnPath: z.string().max(512).optional(),
 })
+
+function sanitizeReturnPath(raw: string | undefined): string {
+  const fallback = '/app/dashboard'
+  if (!raw) return fallback
+  const trimmed = raw.trim()
+  if (
+    !trimmed.startsWith('/') ||
+    trimmed.startsWith('//') ||
+    trimmed.includes('\\') ||
+    trimmed.includes('://')
+  ) {
+    return fallback
+  }
+  try {
+    const url = new URL(trimmed, 'https://lms.invalid')
+    if (url.username || url.password || url.host !== 'lms.invalid') return fallback
+    url.searchParams.delete('session_id')
+    url.searchParams.delete('upsell')
+    const search = url.searchParams.toString()
+    return url.pathname + (search ? `?${search}` : '')
+  } catch {
+    return fallback
+  }
+}
 
 async function latestStatus(userId: string, offerSlug: string) {
   if (await hasSku(userId, offerSlug)) return 'purchased'
@@ -69,6 +95,18 @@ async function resolveCustomerId(userId: string, email: string): Promise<string 
   return findStripeCustomerId(userId, email)
 }
 
+async function ensureCustomerId(userId: string, email: string): Promise<string | null> {
+  const existing = await resolveCustomerId(userId, email)
+  if (existing) return existing
+  const stripe = getStripe()
+  const customer = await stripe.customers.create({
+    email,
+    metadata: { userId },
+  })
+  await linkStripeCustomer(userId, customer.id)
+  return customer.id
+}
+
 export const upsellRoutes = new Hono<SessionEnv>()
 
 upsellRoutes.get('/upsell/has-card', requireAuth, async (c) => {
@@ -89,6 +127,46 @@ upsellRoutes.get('/upsell/has-card', requireAuth, async (c) => {
 upsellRoutes.get('/upsell/prompt-vault-key', requireAuth, async (c) => {
   const owned = await hasSku(c.get('userId'), 'ultimate-prompt-library')
   return c.json({ key: owned ? 'prompt-vault' : null })
+})
+
+upsellRoutes.get('/upsell/complete', requireAuth, async (c) => {
+  const sessionId = c.req.query('session_id')
+  if (!sessionId) return c.json({ success: false, error: 'Missing session' }, 400)
+  if (!loadEnv().STRIPE_SECRET_KEY) {
+    return c.json({
+      success: false,
+      reason: 'configError',
+      error:
+        'This offer cannot be charged yet. Continue without it for now — you can add it later, and nothing is lost.',
+    })
+  }
+  const userId = c.get('userId')
+  try {
+    const session = await getStripe().checkout.sessions.retrieve(sessionId)
+    if (session.mode !== 'payment' || session.payment_status !== 'paid') {
+      return c.json({ success: false, reason: 'unpaid' })
+    }
+    const offerSlug = session.metadata?.offerSlug
+    const metaUserId = session.metadata?.userId
+    if (!offerSlug || metaUserId !== userId) {
+      return c.json({ success: false, reason: 'mismatch' }, 403)
+    }
+    if (offerAmountCents(offerSlug) == null) {
+      return c.json({ success: false, reason: 'unknownOffer', error: 'Unknown offer.' })
+    }
+    await recordPurchase(userId, offerSlug)
+    await db.insert(upsellEvents).values({
+      userId,
+      offerSlug,
+      action: 'purchased',
+      source: 'checkout',
+    })
+    return c.json({ success: true, offerSlug })
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Checkout complete failed'
+    console.error('[upsell] complete failed', error)
+    return c.json({ success: false, reason: 'stripeError', error: message })
+  }
 })
 
 upsellRoutes.get('/upsell/:slug', requireAuth, async (c) => {
@@ -134,34 +212,72 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
     })
   }
   const user = await loadCurrentUser(userId)
-  const customerId = user?.email ? await resolveCustomerId(userId, user.email) : null
-  if (!customerId) {
-    return c.json({ success: false, reason: 'noCard', error: 'No saved card on this account.' })
+  if (!user?.email) {
+    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.' })
   }
   try {
-    const paymentMethod = await cardPaymentMethodId(customerId)
-    if (!paymentMethod) {
-      return c.json({ success: false, reason: 'noCard', error: 'No saved card on this account.' })
+    const customerId = await ensureCustomerId(userId, user.email)
+    if (!customerId) {
+      return c.json({ success: false, reason: 'configError', error: 'Could not create a billing customer.' })
     }
+    const paymentMethod = await cardPaymentMethodId(customerId)
     const stripe = getStripe()
-    await stripe.paymentIntents.create({
-      amount,
-      currency: 'usd',
+    if (paymentMethod) {
+      await stripe.paymentIntents.create({
+        amount,
+        currency: 'usd',
+        customer: customerId,
+        payment_method: paymentMethod,
+        payment_method_types: ['card'],
+        off_session: true,
+        confirm: true,
+        metadata: { offerSlug, userId },
+      })
+      await recordPurchase(userId, offerSlug)
+      await db.insert(upsellEvents).values({
+        userId,
+        offerSlug,
+        action: 'purchased',
+        source: 'saved-card',
+      })
+      return c.json({ success: true, alreadyPurchased: false })
+    }
+
+    const returnPath = sanitizeReturnPath(parsed.data.returnPath)
+    const origin = publicOrigin(c)
+    const returnUrl = new URL(returnPath, `${origin}/`)
+    returnUrl.searchParams.delete('session_id')
+    returnUrl.searchParams.delete('upsell')
+    const cancelUrl = `${returnUrl.origin}${returnUrl.pathname}${returnUrl.search}`
+    returnUrl.searchParams.set('upsell', 'success')
+    const successQuery = returnUrl.searchParams.toString()
+    const successUrl = `${returnUrl.origin}${returnUrl.pathname}?${successQuery}&session_id={CHECKOUT_SESSION_ID}`
+
+    const session = await stripe.checkout.sessions.create({
+      mode: 'payment',
       customer: customerId,
-      payment_method: paymentMethod,
-      payment_method_types: ['card'],
-      off_session: true,
-      confirm: true,
+      line_items: [
+        {
+          quantity: 1,
+          price_data: {
+            currency: 'usd',
+            unit_amount: amount,
+            product_data: { name: offerCheckoutName(offerSlug) },
+          },
+        },
+      ],
       metadata: { offerSlug, userId },
+      payment_intent_data: {
+        metadata: { offerSlug, userId },
+        setup_future_usage: 'off_session',
+      },
+      success_url: successUrl,
+      cancel_url: cancelUrl,
     })
-    await recordPurchase(userId, offerSlug)
-    await db.insert(upsellEvents).values({
-      userId,
-      offerSlug,
-      action: 'purchased',
-      source: 'saved-card',
-    })
-    return c.json({ success: true, alreadyPurchased: false })
+    if (!session.url) {
+      return c.json({ success: false, reason: 'stripeError', error: 'Checkout session has no URL.' })
+    }
+    return c.json({ success: false, checkoutUrl: session.url })
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Charge failed'
     console.error('[upsell] charge failed', error)

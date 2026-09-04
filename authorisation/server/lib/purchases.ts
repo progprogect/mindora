@@ -25,6 +25,19 @@ function ownsPlannerBundle(owned: Set<string>) {
   return owned.has('planner-bundle') || owned.has('planner-bundle-library')
 }
 
+const PLANNER_CHECKOUT_NAMES: Record<PlannerId, string> = {
+  'lets-get-productive': "Let's Get Productive Planner",
+  'deep-focus-at-work': 'Deep Focus at Work Planner',
+  'distraction-free': 'Distraction Free Planner',
+  'overcoming-lazy-days': 'Overcoming Lazy Days Planner',
+  'personal-growth': 'Personal Growth Planner',
+  'self-reflection-journal': 'Self Reflection Journal',
+  'dream-bigger': 'Dream Bigger Planner',
+  'live-with-purpose': 'Live With Purpose Planner',
+  'find-your-passion': 'Find Your Passion Workbook',
+  'financial-discipline': 'Financial Discipline Planner',
+}
+
 export function offerAmountCents(offerSlug: string): number | null {
   if (offerSlug === 'planner-bundle') return 495
   if (offerSlug === 'planner-bundle-library') return 795
@@ -32,6 +45,18 @@ export function offerAmountCents(offerSlug: string): number | null {
   if (offerSlug === 'wise-ai-coach') return 1995
   if (offerSlug.startsWith('planner-')) return 295
   return null
+}
+
+export function offerCheckoutName(offerSlug: string): string {
+  if (offerSlug === 'ultimate-prompt-library') return 'Prompt Library'
+  if (offerSlug === 'planner-bundle' || offerSlug === 'planner-bundle-library') return 'All 10 planners'
+  if (offerSlug === 'wise-ai-coach') return 'Wise AI Coach'
+  if (offerSlug.startsWith('planner-')) {
+    const id = offerSlug.slice('planner-'.length)
+    if (isPlannerId(id)) return PLANNER_CHECKOUT_NAMES[id]
+    return 'Planner PDF'
+  }
+  return 'Add-on'
 }
 
 export function skusForOffer(offerSlug: string): string[] {

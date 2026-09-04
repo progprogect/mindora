@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { chargeUpsell, fetchWiseThread, fetchWiseUsage, sendWiseMessage } from '@/lib/api'
+import { buyOffer, fetchWiseThread, fetchWiseUsage, sendWiseMessage } from '@/lib/api'
 import { useHasSavedCard } from '@/lib/lmsQueries'
 
 const CHIPS = [
@@ -85,14 +85,11 @@ export default function WisePage() {
   }
 
   const unlock = async () => {
-    if (hasCard === false) {
-      window.location.href = '/app/wise/unlock'
-      return
-    }
     setUnlockBusy(true)
     setUnlockError(null)
     try {
-      const result = await chargeUpsell({ offerSlug: 'wise-ai-coach' })
+      const result = await buyOffer({ offerSlug: 'wise-ai-coach' })
+      if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         setLocked(false)
         const next = await fetchWiseUsage()

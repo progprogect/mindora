@@ -15,7 +15,7 @@ import {
   money,
   plannersInCategory,
 } from '@/content/planners'
-import { chargeUpsell, recordUpsellEvent, recordUpsellFailure } from '@/lib/api'
+import { buyOffer, recordUpsellEvent, recordUpsellFailure } from '@/lib/api'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
@@ -146,16 +146,18 @@ function CategoryIcon({ icon }: { icon: string }) {
   return null
 }
 
-function ChargeNote() {
+function ChargeNote({ hasSavedCard }: { hasSavedCard: boolean }) {
   return (
     <div className="mt-3 rounded-xl border border-sw-grey-border bg-white p-3">
       <p className="text-xs leading-relaxed text-sw-grey">
         By clicking above,{' '}
         <span className="font-bold text-sw-dark">
           you agree to a one-time charge of {money(PLANNER_OTO_CENTS)}
-        </span>{' '}
-        using your saved payment method. Access is granted instantly. This offer reverts to{' '}
-        {money(PLANNER_LIST_CENTS)} after you leave this page.
+        </span>
+        {hasSavedCard
+          ? ' using your saved payment method. Access is granted instantly.'
+          : ' via Stripe. Access is granted after payment.'}{' '}
+        This offer reverts to {money(PLANNER_LIST_CENTS)} after you leave this page.
       </p>
     </div>
   )
@@ -249,7 +251,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   const [skipping, setSkipping] = useState(false)
   const viewed = useRef(false)
   const busy = state === 'processing' || skipping
-  const showCtas = hasSavedCard
+  const showCtas = true
 
   useEffect(() => {
     if (viewed.current) return
@@ -288,10 +290,6 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
 
   const buy = async () => {
     if (busy || state === 'success') return
-    if (!hasSavedCard) {
-      setError(errorCopy('noCard'))
-      return
-    }
     if (isReviewPurchaseBlocked()) {
       setError(REVIEW_PURCHASE_BLOCKED)
       return
@@ -302,10 +300,11 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
     track('upsell_attempted', { offer: OFFER })
     try {
       const attribution = attributionPayload()
-      const result = await chargeUpsell({
+      const result = await buyOffer({
         offerSlug: OFFER,
         attribution: Object.keys(attribution).length > 0 ? attribution : undefined,
       })
+      if (result.checkoutUrl) return
       if (result.success) {
         setState('success')
         track('upsell_purchased', { offer: OFFER, alreadyPurchased: result.alreadyPurchased })
@@ -444,7 +443,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   >
                     Yes! Unlock all {i} planners for {oto} →
                   </button>
-                  <ChargeNote />
+                  <ChargeNote hasSavedCard={hasSavedCard} />
                 </>
               ) : null}
               <button
@@ -546,7 +545,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   >
                     Add all {i} for {oto}
                   </button>
-                  <ChargeNote />
+                  <ChargeNote hasSavedCard={hasSavedCard} />
                 </>
               ) : null}
             </section>
@@ -799,7 +798,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     >
                       Yes! Unlock all {i} planners for {oto} →
                     </button>
-                    <ChargeNote />
+                    <ChargeNote hasSavedCard={hasSavedCard} />
                   </>
                 ) : null}
               </div>
@@ -894,7 +893,9 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               </li>
             </ul>
             <p className="mt-5 text-center text-xs leading-relaxed text-sw-grey">
-              Your saved payment method is charged once, {oto} in total.
+              {hasSavedCard
+                ? `Your saved payment method is charged once, ${oto} in total.`
+                : `Secure payment via Stripe. One-time charge of ${oto}.`}
             </p>
           </div>
         </div>

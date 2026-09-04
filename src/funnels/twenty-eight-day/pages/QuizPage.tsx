@@ -12,6 +12,7 @@ import {
 import { buildProfile, getDominantEcho, getInterstitial1Variant } from '@/funnels/twenty-eight-day/lib/scoring'
 import { trackEvent, identifyUser } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useUpdateLeadName } from '@/shared/lib/backend'
+import { rememberCheckoutEmail } from '@/shared/lib/checkoutSession'
 
 import QuizScreenLayout from '@/funnels/twenty-eight-day/components/quiz/QuizScreenLayout'
 import IdentityScreen from '@/funnels/twenty-eight-day/components/quiz/IdentityScreen'
@@ -128,6 +129,14 @@ export default function QuizPage() {
   const handleEmailSubmit = useCallback(
     (email: string, consent: boolean) => {
       setQuizState((prev) => ({ ...prev, email, consent, step: prev.step + 1 }))
+      rememberCheckoutEmail(email)
+      persistQuizResults({
+        role: quizState.role,
+        email,
+        name: quizState.name,
+        profile,
+        savedAt: Date.now(),
+      })
 
       void captureLead({ email, funnel: FUNNEL, consent })
       void saveSurveyData({

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { chargeUpsell } from '@/lib/api'
-import { usePromptVaultKey } from '@/lib/lmsQueries'
+import { buyOffer, upsellPaymentNote } from '@/lib/api'
+import { useHasSavedCard, usePromptVaultKey } from '@/lib/lmsQueries'
 
 const INCLUDED = [
   'Social Media, Marketing & Sales prompts',
@@ -53,13 +53,15 @@ export default function PromptLibraryPage() {
 function Paywall() {
   const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState('')
+  const hasCard = useHasSavedCard()
 
   const buy = async () => {
     if (phase === 'processing' || phase === 'success') return
     setPhase('processing')
     setError('')
     try {
-      const result = await chargeUpsell({ offerSlug: 'ultimate-prompt-library' })
+      const result = await buyOffer({ offerSlug: 'ultimate-prompt-library' })
+      if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         setPhase('success')
         setTimeout(() => window.location.reload(), 1500)
@@ -170,7 +172,7 @@ function Paywall() {
               <p className="text-xs text-red-600">{error}</p>
             </div>
           ) : null}
-          <p className="text-[10px] text-sw-grey mt-3 leading-relaxed">Charges your saved card. Instant access after purchase.</p>
+          <p className="text-[10px] text-sw-grey mt-3 leading-relaxed">{upsellPaymentNote(hasCard)}</p>
         </div>
 
         <div className="text-center">

@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import { fetchCurrentUser, signOut as apiSignOut, type CurrentUser } from '@/lib/api'
+import { useConsumeUpsellCheckoutReturn } from '@/lib/upsellCheckout'
 
 type SessionValue = {
   isLoading: boolean
@@ -51,6 +52,8 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     }),
     [isLoading, user, refresh, signOut],
   )
+
+  useConsumeUpsellCheckoutReturn(!isLoading && Boolean(user))
 
   return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>
 }

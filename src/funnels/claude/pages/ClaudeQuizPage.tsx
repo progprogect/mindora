@@ -14,7 +14,7 @@ import {
 import { buildClaudeProfile, CLAUDE_PROFILE_SCORE_BY_LEVEL } from '@/funnels/claude/lib/claudeProfile'
 import { trackEvent, identifyUser } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useSetCheckoutOfferPercentAction, useUpdateLeadName } from '@/shared/lib/backend'
-import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
+import { getCheckoutSessionKey, rememberCheckoutEmail } from '@/shared/lib/checkoutSession'
 
 import ClaudeQuizLayout from '@/funnels/claude/components/quiz/ClaudeQuizLayout'
 import ClaudeIdentityScreen from '@/funnels/claude/components/quiz/ClaudeIdentityScreen'
@@ -124,6 +124,7 @@ export default function ClaudeQuizPage() {
   const handleEmailSubmit = useCallback(
     async (email: string, consent: boolean) => {
       setQuizState((prev) => ({ ...prev, submittedEmail: email, step: prev.step + 1 }))
+      rememberCheckoutEmail(email)
 
       void captureLead({ email, funnel: FUNNEL, consent })
       void saveSurveyData({

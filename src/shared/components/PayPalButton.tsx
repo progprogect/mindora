@@ -157,16 +157,13 @@ function PayPalButtonInner({
         return
       }
 
-      const canConfirmOnClient =
-        Boolean(stripe) && typeof stripe?.confirmPayPalPayment === 'function'
-
       const result = await Promise.race([
         createPayPalPaymentIntent({
           customerEmail: email,
           funnel,
           productId,
           returnUrl: resolvedReturnUrl,
-          confirmAndRedirect: !canConfirmOnClient,
+          confirmAndRedirect: true,
         }),
         new Promise<never>((_, reject) => {
           window.setTimeout(() => reject(new Error('PayPal request timed out. Please try again.')), 20_000)
@@ -175,18 +172,18 @@ function PayPalButtonInner({
 
       const { clientSecret, redirectUrl } = result
 
-      if (canConfirmOnClient && stripe) {
+      if (redirectUrl) {
+        window.location.assign(redirectUrl)
+        return
+      }
+
+      if (stripe && typeof stripe.confirmPayPalPayment === 'function') {
         const { error } = await stripe.confirmPayPalPayment(clientSecret, {
           return_url: resolvedReturnUrl,
         })
         if (error) {
           onError?.(error.message ?? 'PayPal payment failed. Please try again.')
         }
-        return
-      }
-
-      if (redirectUrl) {
-        window.location.assign(redirectUrl)
         return
       }
 
@@ -198,11 +195,8 @@ function PayPalButtonInner({
     }
   }
 
-  const waitingForStripeJs = isStripeConfigured && !stripe
-
   return (
     <PayPalBuyNowButton
-      disabled={waitingForStripeJs}
       submitting={submitting}
       onClick={() => void handleClick()}
     />

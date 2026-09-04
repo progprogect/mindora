@@ -18,6 +18,7 @@ import { trackEvent } from '@/shared/lib/tracking'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 import { PRICING_FALLBACK_PLANS } from '@/marketing/data/pricing'
+import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
 
 const FUNNEL_28 = '28-day-ai-challenge'
 const FUNNEL_CLAUDE = 'claude-ai-certification'
@@ -96,10 +97,12 @@ export default function CheckoutPage() {
   const checkoutKey = claude ? CHECKOUT_CLAUDE_KEY : CHECKOUT_28DAY_KEY
   const setupPath = funnelParam ? `/checkout/setup?trial=1&funnel=${funnelParam}` : '/checkout/setup'
 
-  const [email, setEmail] = useState(results?.email ?? '')
+  const [email, setEmail] = useState(
+    () => results?.email?.trim() || resolveKnownEmail(searchParams) || '',
+  )
   const [paid, setPaid] = useState(false)
   const [emailError, setEmailError] = useState<string | null>(null)
-  const [showPayment, setShowPayment] = useState(Boolean(results?.email))
+  const [showPayment, setShowPayment] = useState(false)
 
   const plan = productId
     ? resolvePlan(productId, products, defaults, cacheKey, !funnelParam)
@@ -124,6 +127,7 @@ export default function CheckoutPage() {
       return
     }
     setEmailError(null)
+    rememberCheckoutEmail(email)
     setShowPayment(true)
   }
 

@@ -342,6 +342,7 @@ function PayPalBlock({
         onBeforeRedirect={() => {
           try {
             window.localStorage.setItem('sw_checkout_email', email)
+            window.localStorage.setItem('sw_login_email', email)
             window.localStorage.setItem('sw_checkout_funnel', funnel)
           } catch {
             /* ignore */

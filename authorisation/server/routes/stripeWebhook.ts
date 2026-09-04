@@ -8,18 +8,34 @@ import { recordPurchase } from '../lib/purchases.js'
 import { getStripe } from '../lib/stripe.js'
 import { linkStripeCustomer } from '../lib/subscription.js'
 
-async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Promise<void> {
-  const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
-  if (!metadata.offerSlug) {
-    console.log('[stripe webhook] ignoring trial/funnel payment_intent (canonical funnel: github/server)')
-    return
-  }
+async function fulfillOfferFromMetadata(metadata: Record<string, string> | undefined): Promise<void> {
+  if (!metadata?.offerSlug) return
   const userId = metadata.userId
   if (!userId) {
     console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
     return
   }
   await recordPurchase(userId, metadata.offerSlug)
+}
+
+async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Promise<void> {
+  const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
+  if (!metadata.offerSlug) {
+    console.log('[stripe webhook] ignoring trial/funnel payment_intent (canonical funnel: github/server)')
+    return
+  }
+  await fulfillOfferFromMetadata(metadata)
+}
+
+async function handleCheckoutSessionCompleted(object: Record<string, unknown>): Promise<void> {
+  if (object.mode !== 'payment') return
+  if (object.payment_status && object.payment_status !== 'paid') return
+  const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
+  if (!metadata.offerSlug) {
+    console.log('[stripe webhook] ignoring checkout.session without offerSlug')
+    return
+  }
+  await fulfillOfferFromMetadata(metadata)
 }
 
 async function syncSubscriptionObject(object: Record<string, unknown>) {
@@ -54,6 +70,9 @@ export async function stripeWebhookHandler(c: Context) {
   switch (event.type) {
     case 'payment_intent.succeeded':
       await handlePaymentIntentSucceeded(event.data.object)
+      break
+    case 'checkout.session.completed':
+      await handleCheckoutSessionCompleted(event.data.object)
       break
     case 'setup_intent.succeeded': {
       const metadata = (event.data.object.metadata as Record<string, string> | undefined) ?? {}

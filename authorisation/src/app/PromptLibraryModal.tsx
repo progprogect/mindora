@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { chargeUpsell } from '@/lib/api'
+import { buyOffer } from '@/lib/api'
+import { useHasSavedCard } from '@/lib/lmsQueries'
 
 const VALUE_ROWS = [
   { icon: '🔍', label: 'Online Searchable Prompt Library', sub: '28,000+ prompts', price: '$97' },
@@ -13,6 +14,7 @@ type ChargePhase = 'idle' | 'processing' | 'success' | 'error'
 export default function PromptLibraryModal({ onClose }: { onClose: () => void }) {
   const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState<string | null>(null)
+  const hasCard = useHasSavedCard()
   const locked = phase === 'processing' || phase === 'success'
 
   const buy = async () => {
@@ -20,7 +22,8 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
     setPhase('processing')
     setError(null)
     try {
-      const result = await chargeUpsell({ offerSlug: 'ultimate-prompt-library' })
+      const result = await buyOffer({ offerSlug: 'ultimate-prompt-library' })
+      if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         setPhase('success')
         setTimeout(() => window.location.reload(), 1500)
@@ -137,7 +140,9 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
               <p className="text-xs text-red-600">{error}</p>
             </div>
           ) : null}
-          <p className="mt-3 text-[10px] text-sw-grey">🔒 Secure one-click payment using your saved card</p>
+          <p className="mt-3 text-[10px] text-sw-grey">
+            {hasCard === true ? '🔒 Secure one-click payment using your saved card' : '🔒 Secure payment via Stripe'}
+          </p>
         </div>
       </div>
     </div>

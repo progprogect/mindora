@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { chargeUpsell } from '@/lib/api'
-import { useHasSavedCard, usePurchases } from '@/lib/lmsQueries'
+import { buyOffer } from '@/lib/api'
+import { usePurchases } from '@/lib/lmsQueries'
 
 export default function WiseUnlockPage() {
   const purchases = usePurchases()
-  const hasCard = useHasSavedCard()
   const navigate = useNavigate()
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -15,7 +14,8 @@ export default function WiseUnlockPage() {
     setBusy(true)
     setError(null)
     try {
-      const result = await chargeUpsell({ offerSlug: 'wise-ai-coach' })
+      const result = await buyOffer({ offerSlug: 'wise-ai-coach' })
+      if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         navigate('/app/wise')
         return
@@ -51,11 +51,11 @@ export default function WiseUnlockPage() {
             <p className="text-xs text-sw-grey">one-time payment</p>
             <button
               type="button"
-              disabled={busy || hasCard === false}
+              disabled={busy}
               onClick={() => void buy()}
               className="mt-6 w-full rounded-full bg-sw-blue text-white font-bold py-3.5 disabled:opacity-50"
             >
-              {busy ? 'Charging…' : 'UNLOCK WISE — $19.95 →'}
+              {busy ? 'Processing…' : 'UNLOCK WISE — $19.95 →'}
             </button>
             {error ? <p className="text-sm text-sw-coral mt-3">{error}</p> : null}
             <p className="text-xs text-sw-grey mt-4">

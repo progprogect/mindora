@@ -168,7 +168,12 @@ function SetupForm() {
   useEffect(() => {
     try {
       const quiz = JSON.parse(localStorage.getItem('sw_quiz_results') ?? '{}') as { email?: string }
-      if (quiz.email) setEmail(quiz.email)
+      const stored =
+        quiz.email ||
+        localStorage.getItem('sw_checkout_email') ||
+        localStorage.getItem('sw_login_email') ||
+        ''
+      if (stored) setEmail(stored)
     } catch {
       /* ignore */
     }

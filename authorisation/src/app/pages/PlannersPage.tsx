@@ -8,13 +8,14 @@ import {
   PLANNERS,
   money,
 } from '@/content/planners'
-import { chargeUpsell } from '@/lib/api'
-import { usePurchases } from '@/lib/lmsQueries'
+import { buyOffer } from '@/lib/api'
+import { useHasSavedCard, usePurchases } from '@/lib/lmsQueries'
 
 const LIBRARY_SLUG = 'planner-bundle-library'
 
 export default function PlannersPage() {
   const purchases = usePurchases()
+  const hasCard = useHasSavedCard()
   const [filter, setFilter] = useState('all')
   const [busy, setBusy] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -40,7 +41,8 @@ export default function PlannersPage() {
     setError(null)
     setErrorOffer(null)
     try {
-      const result = await chargeUpsell({ offerSlug: slug })
+      const result = await buyOffer({ offerSlug: slug })
+      if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         window.location.reload()
         return
@@ -114,8 +116,11 @@ export default function PlannersPage() {
               {busy === LIBRARY_SLUG ? 'Adding your planners…' : `Add all ${PLANNER_COUNT} for $7.95`}
             </button>
             <p className="mt-3 text-center text-xs leading-relaxed text-sw-grey">
-              <span className="font-bold text-sw-dark">A one-time charge of $7.95</span> using your saved payment method — not a
-              subscription. Every planner is a printable PDF you keep.
+              <span className="font-bold text-sw-dark">A one-time charge of $7.95</span>
+              {hasCard === true
+                ? ' using your saved payment method — not a subscription.'
+                : ' via Stripe — not a subscription.'}{' '}
+              Every planner is a printable PDF you keep.
             </p>
             {error && errorOffer === LIBRARY_SLUG ? (
               <p data-testid="planner-bundle-error" className="mt-3 text-center text-xs text-sw-coral">

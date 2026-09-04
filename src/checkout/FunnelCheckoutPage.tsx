@@ -5,6 +5,7 @@ import usePageTitle from '@/marketing/hooks/usePageTitle'
 import NotFoundPage from '@/marketing/pages/NotFoundPage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { DEFAULT_PLANS } from '@/funnels/twenty-eight-day/data/plans'
+import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
 
 const ORIGINAL_CHECKOUT_FUNNELS = new Set([
   '28-day-ai-challenge',
@@ -29,7 +30,7 @@ export default function FunnelCheckoutPage() {
   const { funnel = '28-day-ai-challenge' } = useParams()
   const [params] = useSearchParams()
   const navigate = useNavigate()
-  const [email, setEmail] = useState(params.get('email') ?? '')
+  const [email, setEmail] = useState(() => params.get('email')?.trim() || resolveKnownEmail(params) || '')
   const name = params.get('name') ?? ''
   const [emailError, setEmailError] = useState<string | null>(null)
   const [showPayment, setShowPayment] = useState(false)
@@ -46,6 +47,7 @@ export default function FunnelCheckoutPage() {
       return
     }
     setEmailError(null)
+    rememberCheckoutEmail(email)
     setShowPayment(true)
   }
 

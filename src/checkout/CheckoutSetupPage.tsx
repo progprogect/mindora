@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progress'
@@ -9,7 +10,7 @@ export default function CheckoutSetupPage() {
   usePageTitle(PAGE_TITLE)
   const [params] = useSearchParams()
   const [step, setStep] = useState<'email' | 'code'>('email')
-  const [email, setEmail] = useState(params.get('email') ?? '')
+  const [email, setEmail] = useState(() => params.get('email')?.trim() || resolveKnownEmail(params) || '')
   const [code, setCode] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -28,6 +29,7 @@ export default function CheckoutSetupPage() {
       setError('Please enter a valid email address.')
       return
     }
+    rememberCheckoutEmail(email)
     setStep('code')
   }
 

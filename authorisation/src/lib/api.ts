@@ -17,6 +17,7 @@ export type ChargeResult = {
   alreadyPurchased?: boolean
   reason?: string
   error?: string
+  checkoutUrl?: string
 }
 
 export class ApiError extends Error {
@@ -151,11 +152,43 @@ export async function recordUpsellFailure(args: { offerSlug: string; reason: str
   })
 }
 
-export async function chargeUpsell(args: { offerSlug: string; attribution?: unknown }) {
+export async function chargeUpsell(args: { offerSlug: string; attribution?: unknown; returnPath?: string }) {
   return apiJson<ChargeResult>('/api/upsell/charge', {
     method: 'POST',
-    body: JSON.stringify(args),
+    body: JSON.stringify({
+      offerSlug: args.offerSlug,
+      attribution: args.attribution,
+      returnPath: args.returnPath ?? checkoutReturnPath(),
+    }),
   })
+}
+
+export function checkoutReturnPath() {
+  const url = new URL(window.location.href)
+  url.searchParams.delete('session_id')
+  url.searchParams.delete('upsell')
+  return `${url.pathname}${url.search}`
+}
+
+export async function completeUpsellCheckout(sessionId: string) {
+  return apiJson<{ success: boolean; offerSlug?: string; reason?: string; error?: string }>(
+    `/api/upsell/complete?session_id=${encodeURIComponent(sessionId)}`,
+  )
+}
+
+/** Charge saved card, or redirect to Stripe Checkout when `checkoutUrl` is returned. */
+export async function buyOffer(args: { offerSlug: string; attribution?: unknown }): Promise<ChargeResult> {
+  const result = await chargeUpsell(args)
+  if (result.checkoutUrl) {
+    window.onbeforeunload = null
+    window.location.assign(result.checkoutUrl)
+  }
+  return result
+}
+
+export function upsellPaymentNote(hasSavedCard: boolean | undefined) {
+  if (hasSavedCard === true) return 'Charges your saved card. Instant access after purchase.'
+  return 'Secure payment via Stripe'
 }
 
 export async function fetchPromptVaultKey() {

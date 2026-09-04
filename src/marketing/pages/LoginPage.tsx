@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import BrandWordmark from '@/shared/components/BrandWordmark'
+import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -54,7 +55,7 @@ function StickyCta({
 export default function LoginPage() {
   usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
   const [step, setStep] = useState<'email' | 'code'>('email')
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState(() => resolveKnownEmail() || '')
   const [code, setCode] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -73,6 +74,7 @@ export default function LoginPage() {
       setError('Failed to send code. Please check your email and try again.')
       return
     }
+    rememberCheckoutEmail(email)
     setStep('code')
   }
 

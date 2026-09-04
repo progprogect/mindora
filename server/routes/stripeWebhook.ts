@@ -128,6 +128,22 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
   }
 }
 
+async function handleCheckoutSessionCompleted(object: Record<string, unknown>): Promise<void> {
+  if (object.mode !== 'payment') return
+  if (object.payment_status && object.payment_status !== 'paid') return
+  const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
+  if (!metadata.offerSlug) {
+    console.log('[stripe webhook] ignoring checkout.session without offerSlug')
+    return
+  }
+  const userId = metadata.userId
+  if (userId) {
+    await recordPurchase(userId, metadata.offerSlug)
+  } else {
+    console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
+  }
+}
+
 async function syncSubscriptionObject(object: Record<string, unknown>) {
   const customerId = stripeRefId(object.customer)
   if (!customerId) return
@@ -161,6 +177,9 @@ export async function stripeWebhookHandler(c: Context) {
     switch (event.type) {
       case 'payment_intent.succeeded':
         await handlePaymentIntentSucceeded(event.data.object)
+        break
+      case 'checkout.session.completed':
+        await handleCheckoutSessionCompleted(event.data.object)
         break
       case 'setup_intent.succeeded': {
         const metadata = (event.data.object.metadata as Record<string, string> | undefined) ?? {}

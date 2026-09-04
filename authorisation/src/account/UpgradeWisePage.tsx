@@ -3,7 +3,7 @@ import OtoChrome from '@/account/OtoChrome'
 import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser } from '@/auth/session'
-import { chargeUpsell, recordUpsellEvent } from '@/lib/api'
+import { buyOffer, recordUpsellEvent } from '@/lib/api'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
@@ -155,11 +155,13 @@ function ComparePoint({ text, isNegative }: { text: string; isNegative?: boolean
 function OfferCard({
   purchaseState,
   errorMessage,
+  hasSavedCard,
   onPurchase,
   onSkip,
 }: {
   purchaseState: 'idle' | 'processing' | 'success' | 'failed'
   errorMessage: string
+  hasSavedCard: boolean
   onPurchase: () => void
   onSkip: () => void
 }) {
@@ -214,7 +216,9 @@ function OfferCard({
             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
           />
         </svg>
-        <span className="text-sm text-sw-grey font-medium">Secure one-click upgrade</span>
+        <span className="text-sm text-sw-grey font-medium">
+          {hasSavedCard ? 'Secure one-click upgrade' : 'Secure payment via Stripe'}
+        </span>
       </div>
       {purchaseState === 'failed' && errorMessage ? (
         <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 mb-3">
@@ -239,9 +243,11 @@ function OfferCard({
       ) : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
-          By clicking above, <span className="font-bold text-sw-dark">you agree to a one-time charge of ${PRICE}</span>{' '}
-          using your saved payment method. Access is granted instantly. This offer reverts to ${WAS} after you leave
-          this page.
+          By clicking above, <span className="font-bold text-sw-dark">you agree to a one-time charge of ${PRICE}</span>
+          {hasSavedCard
+            ? ' using your saved payment method. Access is granted instantly.'
+            : ' via Stripe. Access is granted after payment.'}{' '}
+          This offer reverts to ${WAS} after you leave this page.
         </p>
       </div>
       <div className="text-center">
@@ -280,7 +286,7 @@ function SuccessScreen() {
   )
 }
 
-export function WiseOffer() {
+export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
   const [state, setState] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle')
   const [error, setError] = useState('')
   const [sticky, setSticky] = useState(false)
@@ -346,10 +352,11 @@ export function WiseOffer() {
     track('upsell_attempted', { offer: OFFER, price: PRICE })
     try {
       const attribution = attributionPayload()
-      const result = await chargeUpsell({
+      const result = await buyOffer({
         offerSlug: OFFER,
         attribution: Object.keys(attribution).length > 0 ? attribution : undefined,
       })
+      if (result.checkoutUrl) return
       if (result.success) {
         setState('success')
         track('upsell_purchased', {
@@ -447,7 +454,13 @@ export function WiseOffer() {
           </div>
         </section>
         <div ref={offerRef}>
-          <OfferCard purchaseState={state} errorMessage={error} onPurchase={() => void buy()} onSkip={skip} />
+          <OfferCard
+            purchaseState={state}
+            errorMessage={error}
+            hasSavedCard={hasSavedCard}
+            onPurchase={() => void buy()}
+            onSkip={skip}
+          />
         </div>
         <section className="mt-10 mb-8">
           <h2 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center leading-tight mb-5">
@@ -542,7 +555,13 @@ export function WiseOffer() {
           </div>
         </section>
         <div>
-          <OfferCard purchaseState={state} errorMessage={error} onPurchase={() => void buy()} onSkip={skip} />
+          <OfferCard
+            purchaseState={state}
+            errorMessage={error}
+            hasSavedCard={hasSavedCard}
+            onPurchase={() => void buy()}
+            onSkip={skip}
+          />
         </div>
       </main>
       {sticky ? (
@@ -590,10 +609,9 @@ function WiseGate() {
     return <AuthSpinner />
   }
   if (user?.onboardingComplete && !review) return <BounceDashboard />
-  if (review) return <WiseOffer />
+  if (review) return <WiseOffer hasSavedCard={Boolean(hasCard)} />
   if (status.status === 'purchased' || status.status === 'skipped') return <BounceOnboard />
-  if (hasCard) return <WiseOffer />
-  return <BounceOnboard />
+  return <WiseOffer hasSavedCard={Boolean(hasCard)} />
 }
 
 export default function UpgradeWisePage() {
