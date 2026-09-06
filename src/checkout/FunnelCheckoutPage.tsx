@@ -112,7 +112,7 @@ export default function FunnelCheckoutPage() {
                 <span className="text-xl font-extrabold text-sw-dark">$1</span>
               </div>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Then $19.99 per month after your 7-day trial. Cancel any time from your profile page.
+                Then $29.99 per month after your 7-day trial. Cancel any time from your profile page.
               </p>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
                 Risk-free 30-day money-back guarantee included.

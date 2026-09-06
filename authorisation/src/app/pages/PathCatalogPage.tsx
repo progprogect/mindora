@@ -85,7 +85,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
 
   const template = path.template
   const title = path.h1
-  const emoji = meta?.emoji ?? live?.hero?.emoji ?? '📚'
+  const emoji = live?.hero?.emoji ?? meta?.emoji ?? '📚'
   const comingSoonCount =
     template === 'path-catalog-C'
       ? (live?.comingSoonStrip?.length ?? path.comingSoonStrip?.length ?? 0)
@@ -143,7 +143,11 @@ export default function PathCatalogPage({ pathKey }: Props) {
             <span className="absolute inset-0 flex items-center justify-center text-white text-xs font-bold">{pathPct}%</span>
           </div>
           <span className="text-4xl mb-3 block">{emoji}</span>
-          <h1 className="text-white font-extrabold text-2xl leading-tight mb-2">{title}</h1>
+          {template === 'path-catalog-B' || template === 'path-catalog-C' ? (
+            <h2 className="text-white font-extrabold text-2xl leading-tight mb-2">{title}</h2>
+          ) : (
+            <h1 className="text-white font-extrabold text-2xl leading-tight mb-2">{title}</h1>
+          )}
           <p className="text-white/70 text-sm leading-relaxed mb-4 max-w-[75%]">{path.tagline}</p>
           <div className="flex items-center gap-2 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-white text-xs font-semibold">
@@ -172,7 +176,9 @@ export default function PathCatalogPage({ pathKey }: Props) {
             to={`/app/courses/${continueCard.id}`}
             className="block rounded-2xl bg-white p-4 shadow-sm border-2 border-sw-blue/20 active:scale-[0.98] transition-all"
           >
-            <p className="text-[10px] font-bold text-sw-blue uppercase tracking-[0.12em] mb-2">▶ Continue Learning</p>
+            <p className="text-[10px] font-bold text-sw-blue uppercase tracking-[0.12em] mb-2">
+              {continueDone > 0 ? '▶ Continue Learning' : '🚀 Start Here'}
+            </p>
             <div className="flex items-center gap-3">
               <div
                 className={`w-11 h-11 rounded-xl bg-gradient-to-br ${continueCard.gradient ?? 'from-[#1D4ED8] to-[#2563EB]'} flex items-center justify-center flex-shrink-0`}
@@ -182,21 +188,30 @@ export default function PathCatalogPage({ pathKey }: Props) {
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-bold text-sw-dark leading-tight truncate">{continueCard.title}</h3>
                 <p className="text-xs text-sw-grey mt-0.5">
-                  Day {Math.min(continueDone + 1, continueTotal || continueDone + 1)} of {continueTotal || '—'}
+                  {continueDone > 0
+                    ? `Day ${Math.min(continueDone + 1, continueTotal || continueDone + 1)} of ${continueTotal || '—'}`
+                    : [
+                        continueCard.lessons ? `${continueCard.lessons} lessons` : null,
+                        continueCard.duration,
+                      ]
+                        .filter(Boolean)
+                        .join(' · ')}
                 </p>
-                <div
-                  className="mt-2 h-1.5 rounded-full bg-sw-grey-light overflow-hidden"
-                  role="progressbar"
-                  aria-valuenow={continuePct}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-label={`${continueCard.title} progress`}
-                >
+                {continueDone > 0 ? (
                   <div
-                    className="h-full bg-sw-blue rounded-full transition-all duration-500"
-                    style={{ width: `${continuePct}%` }}
-                  />
-                </div>
+                    className="mt-2 h-1.5 rounded-full bg-sw-grey-light overflow-hidden"
+                    role="progressbar"
+                    aria-valuenow={continuePct}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`${continueCard.title} progress`}
+                  >
+                    <div
+                      className="h-full bg-sw-blue rounded-full transition-all duration-500"
+                      style={{ width: `${continuePct}%` }}
+                    />
+                  </div>
+                ) : null}
               </div>
               <Chevron className="w-5 h-5 text-sw-blue flex-shrink-0" />
             </div>
@@ -221,7 +236,11 @@ export default function PathCatalogPage({ pathKey }: Props) {
             />
           </>
         ) : template === 'path-catalog-C' ? (
-            <ComingSoonStrip items={live?.comingSoonStrip ?? []} extraLabel="+8 more courses coming" />
+            <ComingSoonStrip
+              items={live?.comingSoonStrip ?? path.comingSoonStrip ?? []}
+              extraLabel="+8 more courses coming"
+              heading="h3"
+            />
         ) : (
           <>
             <div>
@@ -269,7 +288,11 @@ export default function PathCatalogPage({ pathKey }: Props) {
 
         {Array.isArray(path.browseBySection) ? (
           <div>
-            <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Browse by Section</p>
+            {template === 'path-catalog-C' ? (
+              <h3 className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Browse by Section</h3>
+            ) : (
+              <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Browse by Section</p>
+            )}
             <div className="grid grid-cols-2 gap-3">
               {path.browseBySection.map((section) => (
                 <div
@@ -287,9 +310,15 @@ export default function PathCatalogPage({ pathKey }: Props) {
                       >
                         {String(section.label || section.title || '')}
                       </p>
-                      <p className="text-[11px] text-sw-grey leading-snug mb-2">
-                        {String(section.tagline || section.subtitle || section.description || '')}
-                      </p>
+                      {template === 'path-catalog-B' ? (
+                        section.title ? (
+                          <p className="text-[11px] text-sw-grey leading-snug mb-2">{String(section.title)}</p>
+                        ) : null
+                      ) : section.tagline || section.subtitle || section.description ? (
+                        <p className="text-[11px] text-sw-grey leading-snug mb-2">
+                          {String(section.tagline || section.subtitle || section.description || '')}
+                        </p>
+                      ) : null}
                   {Array.isArray(section.courses) ? (
                     <span className="text-[10px] font-semibold text-sw-grey bg-sw-grey-light px-2 py-0.5 rounded-full">
                       {section.courses.length} courses
@@ -356,7 +385,9 @@ function CourseRow({
           <p className="text-[11px] font-bold text-sw-grey">{card.courseNumber}</p>
         ) : null}
         <h3 className="text-sm font-bold text-sw-dark leading-tight mb-0.5">{card.title}</h3>
-        <p className="text-xs text-sw-grey line-clamp-1 mb-2">{card.subtitle}</p>
+        {!numbered && card.subtitle ? (
+          <p className="text-xs text-sw-grey line-clamp-1 mb-2">{card.subtitle}</p>
+        ) : null}
         <div className="flex items-center gap-3 text-[11px] text-sw-grey">
           {numbered ? (
             <>
@@ -422,17 +453,20 @@ function CourseRow({
 function ComingSoonStrip({
   items,
   extraLabel,
+  heading = 'p',
 }: {
   items: Array<{ name?: string; title?: string; difficulty: string; time: string }>
   extraLabel?: string
+  heading?: 'p' | 'h3'
 }) {
   if (!items.length) return null
   const shown = extraLabel ? items.slice(0, 8) : items
+  const Heading = heading
   return (
     <div>
-      <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">
+      <Heading className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">
         Coming Soon <span className="text-sw-grey font-semibold normal-case tracking-normal">{items.length} courses</span>
-      </p>
+      </Heading>
       <div className="space-y-2">
         {shown.map((item) => (
           <div

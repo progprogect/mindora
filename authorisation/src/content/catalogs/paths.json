@@ -1322,25 +1322,6 @@
         "learnerCount": "16,900",
         "rating": "4.9",
         "isHero": false
-      },
-      {
-        "id": "leadership-accelerator",
-        "title": "Leadership Accelerator",
-        "badge": "Editor's Choice",
-        "badgeBg": "bg-sw-coral/20",
-        "badgeText": "text-sw-coral",
-        "headerGradient": "from-[#7f1d1d] to-[#dc2626]",
-        "description": "Build the leadership, communication and decision-making skills needed to lead teams, manage up and create greater impact at every level.",
-        "outcomes": [
-          "Lead teams with confidence and clarity",
-          "Make faster, better decisions under pressure",
-          "Build a reputation as a trusted leader"
-        ],
-        "difficulty": "Intermediate",
-        "time": "5 weeks · 15 min/day",
-        "learnerCount": "8,400",
-        "rating": "4.8",
-        "isHero": true
       }
     ],
     "browseBySection": [
@@ -2392,42 +2373,6 @@
         "rating": "4.8",
         "learnerCount": "9,800",
         "headerGradient": "from-[#042f2e] to-[#0d9488]"
-      },
-      {
-        "id": "healthy-lifestyle",
-        "title": "Healthy Lifestyle Accelerator",
-        "badge": "Transformation",
-        "badgeBg": "bg-emerald-600/20",
-        "badgeText": "text-emerald-100",
-        "description": "Create sustainable routines that support long-term health and wellbeing — built around your real life.",
-        "difficulty": "All Levels",
-        "time": "6 weeks · 10 min/day",
-        "outcomes": [
-          "A personalised healthy routine that fits your life",
-          "Sustainable habits across sleep, nutrition and movement",
-          "A healthier relationship with your body and energy"
-        ],
-        "rating": "4.9",
-        "learnerCount": "13,200",
-        "headerGradient": "from-[#052e16] to-[#059669]"
-      },
-      {
-        "id": "nutrition-fundamentals",
-        "title": "Nutrition Fundamentals",
-        "badge": "Popular",
-        "badgeBg": "bg-green-600/20",
-        "badgeText": "text-green-100",
-        "description": "Learn the foundations of healthy eating and build better nutritional habits that last — without strict dieting.",
-        "difficulty": "Beginner",
-        "time": "3 weeks · 10 min/day",
-        "outcomes": [
-          "A healthier relationship with food and eating",
-          "Simple meal planning habits you can maintain",
-          "A clear understanding of nutrition fundamentals"
-        ],
-        "rating": "4.7",
-        "learnerCount": "10,400",
-        "headerGradient": "from-[#1a2e0a] to-[#65a30d]"
       }
     ],
     "browseBySection": [

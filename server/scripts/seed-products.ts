@@ -10,7 +10,7 @@ async function seed() {
       id: 'monthly',
       name: 'Monthly Plan',
       stripePriceId: env.STRIPE_MONTHLY_PRICE_ID || 'price_REPLACE_MONTHLY',
-      price: 1999,
+      price: 2999,
       intervalMonths: 1,
       badge: null as string | null,
       active: true,

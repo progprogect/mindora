@@ -49,7 +49,7 @@ export const PATH_META: Record<
   'ai-and-technology': { emoji: '🤖', short: 'AI & Technology', focus: 'ai' },
   'success-mindset': { emoji: '🧠', short: 'Success Mindset', focus: 'mindset' },
   career: { emoji: '💼', short: 'Career Growth', focus: 'career' },
-  business: { emoji: '📈', short: 'Business', focus: 'business' },
+  business: { emoji: '🚀', short: 'Business', focus: 'business' },
   health: { emoji: '💪', short: 'Health & Energy', focus: 'health' },
   'financial-wellbeing': { emoji: '💰', short: 'Financial Wellbeing', focus: 'financial' },
 }

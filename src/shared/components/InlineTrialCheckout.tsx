@@ -178,7 +178,7 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
         <div className="flex items-start gap-3">
           <CheckDot />
           <span className="text-sm leading-snug text-sw-dark">
-            Start today for <strong>just $1</strong>. After a 7-day trial, we&apos;ll charge $19.99/month until you
+            Start today for <strong>just $1</strong>. After a 7-day trial, we&apos;ll charge $29.99/month until you
             cancel. Cancel at any time via your MindoraAcademy dashboard or by contacting support.
           </span>
         </div>

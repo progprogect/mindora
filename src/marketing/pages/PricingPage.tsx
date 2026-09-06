@@ -120,19 +120,23 @@ export default function PricingPage() {
                       <span className="text-lg font-extrabold text-sw-dark">
                         {pricingLabel(item.intervalMonths)}
                       </span>
-                      <span
-                        className="inline-block w-fit rounded-md px-2 py-0.5 text-[11px] font-bold"
-                        style={{
-                          backgroundColor: 'hsl(var(--sw-success) / 0.15)',
-                          color: 'hsl(var(--sw-success))',
-                        }}
-                      >
-                        Save {save}%
-                      </span>
+                      {save > 0 ? (
+                        <span
+                          className="inline-block w-fit rounded-md px-2 py-0.5 text-[11px] font-bold"
+                          style={{
+                            backgroundColor: 'hsl(var(--sw-success) / 0.15)',
+                            color: 'hsl(var(--sw-success))',
+                          }}
+                        >
+                          Save {save}%
+                        </span>
+                      ) : null}
                     </div>
                   </div>
                   <div className="flex flex-col items-end gap-1">
-                    <span className="text-xs text-sw-grey line-through">$29.99/mo</span>
+                    {save > 0 ? (
+                      <span className="text-xs text-sw-grey line-through">$29.99/mo</span>
+                    ) : null}
                     <div
                       className="rounded-xl px-3 py-1.5"
                       style={{ backgroundColor: 'hsl(var(--sw-grey-light))' }}

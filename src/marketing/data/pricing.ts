@@ -12,7 +12,7 @@ export type PricingCatalogPlan = {
 
 /** Local fallback when `/api/products` is empty or missing catalog rows. */
 export const PRICING_FALLBACK_PLANS: PricingCatalogPlan[] = [
-  { id: 'monthly', name: 'Monthly Plan', price: 1999, intervalMonths: 1 },
+  { id: 'monthly', name: 'Monthly Plan', price: 2999, intervalMonths: 1 },
   {
     id: 'quarterly',
     name: 'Quarterly Plan',

@@ -332,8 +332,30 @@
     "subText": "Every lesson gives you a new skill you can use the same day. Finish all three modules and unlock the ChatGPT for Business Certificate — proof you can use AI to save time and grow your business.",
     "certificateDescription": "For completing all 21 lessons across 3 modules and demonstrating practical mastery of ChatGPT for business use — from foundations through to advanced workflows and automation.",
     "unitLabel": "lessons",
-    "level": null,
-    "badge": null,
+    "level": "Beginner",
+    "badge": {
+      "icon": "💬",
+      "label": "BUSINESS ESSENTIAL"
+    },
+    "description": "Master ChatGPT to save time, communicate better, and grow your business. 21 lessons — from complete beginner to power user.",
+    "includes": [
+      {
+        "icon": "🧠",
+        "text": "3 modules from foundations to power user"
+      },
+      {
+        "icon": "🎯",
+        "text": "A practical try-it task in every lesson"
+      },
+      {
+        "icon": "📝",
+        "text": "60+ quiz questions with full explanations"
+      },
+      {
+        "icon": "📋",
+        "text": "Reusable business prompt templates"
+      }
+    ],
     "ctaH2": "Ready to put ChatGPT to work?",
     "outcomeBullets": [
       {
@@ -1194,8 +1216,30 @@
     "subText": "Go from understanding why movement matters to building a personal movement practice that fits your life. Finish all three modules and unlock your Everyday Movement Mastery Certificate.",
     "certificateDescription": "For completing all 21 lessons across 3 modules and demonstrating mastery of movement science, habit-building, and sustainable fitness principles — drawing on frameworks from Built to Move (Starrett), Exercised (Lieberman), The Comfort Crisis (Easter), and The First 20 Minutes (Reynolds).",
     "unitLabel": "lessons",
-    "level": null,
-    "badge": null,
+    "level": "All Levels",
+    "badge": {
+      "icon": "🏃",
+      "label": "FITNESS"
+    },
+    "certificateChip": "Everyday Movement Mastery Certificate",
+    "includes": [
+      {
+        "icon": "🧬",
+        "text": "Why your body was built to move — and what modern life took away"
+      },
+      {
+        "icon": "🪑",
+        "text": "The real health cost of sitting too long and how to break it"
+      },
+      {
+        "icon": "🚶",
+        "text": "Simple daily habits to move more without a gym or a plan"
+      },
+      {
+        "icon": "💪",
+        "text": "How to build strength, mobility and lasting energy"
+      }
+    ],
     "ctaH2": "Ready to start moving?",
     "outcomeBullets": [
       {
