@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import {
   CardCvcElement,
   CardExpiryElement,
@@ -9,7 +10,8 @@ import {
   useStripe,
 } from '@stripe/react-stripe-js'
 import { getStripe, isStripeConfigured } from '@/shared/lib/stripeClient'
-import { useCreateTrialPaymentIntent } from '@/shared/lib/backend'
+import { ALREADY_SUBSCRIBED_ERROR, useCreateTrialPaymentIntent } from '@/shared/lib/backend'
+import { hasLocalCheckoutCompleted } from '@/shared/lib/checkoutSession'
 import { DEFAULT_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 
 interface InlineTrialCheckoutProps {
@@ -475,6 +477,28 @@ function PaymentUnavailableNotice() {
   )
 }
 
+function AlreadyMemberNotice({ setupPath }: { setupPath: string }) {
+  return (
+    <div className="rounded-2xl border border-sw-grey-border bg-white p-5 text-center">
+      <p className="text-base font-extrabold text-sw-dark">You already have a membership</p>
+      <p className="mt-2 text-sm leading-relaxed text-sw-grey">
+        This email is already on a Mindora Academy plan. Log in to continue — no extra payment needed.
+      </p>
+      <div className="mt-4 flex flex-col gap-2">
+        <Link
+          to="/login"
+          className="inline-flex w-full items-center justify-center rounded-full bg-sw-blue py-3 text-sm font-extrabold tracking-wide text-white uppercase transition-all hover:bg-sw-blue-hover active:scale-[0.98]"
+        >
+          Log in
+        </Link>
+        <Link to={setupPath} className="text-sm font-semibold text-sw-blue hover:underline">
+          Continue to your account
+        </Link>
+      </div>
+    </div>
+  )
+}
+
 function CheckoutFrame({
   percentOff,
   highlights,
@@ -509,11 +533,13 @@ export default function InlineTrialCheckout({
 }: InlineTrialCheckoutProps) {
   const [clientSecret, setClientSecret] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [alreadyMember, setAlreadyMember] = useState(() => hasLocalCheckoutCompleted())
   const createTrialPaymentIntent = useCreateTrialPaymentIntent()
   const setupPath = returnPath ?? defaultSetupPath(funnel)
 
   useEffect(() => {
     if (!isStripeConfigured) return
+    if (hasLocalCheckoutCompleted()) return
     let cancelled = false
 
     createTrialPaymentIntent({ email, productId, funnel })
@@ -521,13 +547,28 @@ export default function InlineTrialCheckout({
         if (!cancelled) setClientSecret(res.clientSecret)
       })
       .catch((err: unknown) => {
-        if (!cancelled) setError(err instanceof Error ? err.message : 'Could not start checkout.')
+        if (cancelled) return
+        const message = err instanceof Error ? err.message : 'Could not start checkout.'
+        if (message === ALREADY_SUBSCRIBED_ERROR) {
+          setAlreadyMember(true)
+          return
+        }
+        setError(message)
       })
 
     return () => {
       cancelled = true
     }
   }, [createTrialPaymentIntent, email, productId, funnel])
+
+  const handleSuccess = () => {
+    try {
+      window.localStorage.setItem('sw_checkout_completed', 'true')
+    } catch {
+      /* ignore */
+    }
+    onSuccess()
+  }
 
   const wrap = (children: ReactNode) =>
     framed ? (
@@ -537,6 +578,14 @@ export default function InlineTrialCheckout({
     ) : (
       children
     )
+
+  if (alreadyMember) {
+    return (
+      <div className={framed ? 'mx-auto max-w-lg px-4 pb-6' : ''}>
+        <AlreadyMemberNotice setupPath={setupPath} />
+      </div>
+    )
+  }
 
   if (error) {
     return (
@@ -591,7 +640,7 @@ export default function InlineTrialCheckout({
         productId={productId}
         funnel={funnel}
         returnPath={setupPath}
-        onSuccess={onSuccess}
+        onSuccess={handleSuccess}
         submitLabel={submitLabel ?? 'CONFIRM PAYMENT — $1.00'}
         clientSecret={clientSecret}
       />

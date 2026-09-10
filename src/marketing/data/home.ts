@@ -1,3 +1,5 @@
+import { MONEY_BACK_LABEL } from '@/marketing/data/moneyBack'
+
 export const LIFE_AREAS_ROW_A = [
   { emoji: '🧠', label: 'Mindset', bg: '#F5F3FF', border: '#8B5CF630', color: '#8B5CF6' },
   { emoji: '💼', label: 'Career', bg: '#EFF6FF', border: '#2563EB30', color: '#2563EB' },
@@ -201,5 +203,5 @@ export const FINAL_TRUST = [
   { emoji: '⭐', label: 'Trusted by 100K+' },
   { emoji: '⚡', label: 'Instant Roadmap' },
   { emoji: '🤖', label: 'AI Coach Included' },
-  { emoji: '🛡️', label: '30-Day Money-Back' },
+  { emoji: '🛡️', label: MONEY_BACK_LABEL },
 ] as const

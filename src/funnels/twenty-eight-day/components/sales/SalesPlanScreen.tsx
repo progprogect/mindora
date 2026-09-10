@@ -6,6 +6,7 @@ import { trackEvent } from '@/shared/lib/tracking'
 import { getAnswerLabel } from '@/funnels/twenty-eight-day/lib/scoring'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
+import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
 
 interface SalesPlanScreenProps {
   profile: QuizProfile
@@ -690,7 +691,7 @@ export default function SalesPlanScreen({
             </svg>
           </div>
           <div>
-            <p className="text-sm font-extrabold text-sw-dark">30-Day Money-Back Guarantee</p>
+            <p className="text-sm font-extrabold text-sw-dark">{MONEY_BACK_TITLE}</p>
             <p className="mt-0.5 text-xs leading-snug text-sw-grey">Not right for you? Full refund, no questions asked.</p>
           </div>
         </div>

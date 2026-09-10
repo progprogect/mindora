@@ -3,6 +3,7 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { checkoutOffers } from '../db/schema.js'
+import { ALREADY_SUBSCRIBED_ERROR, findBlockingSubscription } from '../lib/subscription.js'
 import { getStripe, isStripeConfigured } from '../lib/stripe.js'
 
 const STRIPE_UNAVAILABLE = 'Payment is unavailable: Stripe is not configured.'
@@ -88,6 +89,10 @@ checkoutRoutes.post('/checkout/trial-intent', async (c) => {
   const { email, productId, funnel } = parsed.data
   try {
     const customer = await findOrCreateCustomer(email, funnel, productId)
+    const blocking = await findBlockingSubscription(customer.id)
+    if (blocking) {
+      return c.json({ error: ALREADY_SUBSCRIBED_ERROR }, 409)
+    }
     const stripe = getStripe()
     const paymentIntent = await stripe.paymentIntents.create({
       amount: 100,

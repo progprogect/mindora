@@ -167,9 +167,9 @@ function SetupForm() {
 
   useEffect(() => {
     try {
-      const quiz = JSON.parse(localStorage.getItem('sw_quiz_results') ?? '{}') as { email?: string }
+      const quiz = readQuizResults()
       const stored =
-        quiz.email ||
+        quiz?.email ||
         localStorage.getItem('sw_checkout_email') ||
         localStorage.getItem('sw_login_email') ||
         ''

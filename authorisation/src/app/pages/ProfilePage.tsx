@@ -44,6 +44,7 @@ export default function ProfilePage() {
   const [busy, setBusy] = useState(false)
   const [cancelMsg, setCancelMsg] = useState<string | null>(null)
   const [billingError, setBillingError] = useState<string | null>(null)
+  const [signingOut, setSigningOut] = useState(false)
 
   if (user === undefined || progress === undefined || sub === undefined) {
     return (
@@ -298,13 +299,20 @@ export default function ProfilePage() {
 
         <button
           type="button"
+          disabled={signingOut}
           onClick={async () => {
-            await signOut()
-            navigate('/login', { replace: true })
+            if (signingOut) return
+            setSigningOut(true)
+            try {
+              await signOut()
+              navigate('/login', { replace: true })
+            } catch {
+              setSigningOut(false)
+            }
           }}
-          className="w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border text-center"
+          className="w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border text-center transition-transform hover:bg-sw-grey-light active:scale-[0.98] disabled:opacity-70"
         >
-          <span className="text-sm font-bold text-red-500">Sign Out</span>
+          <span className="text-sm font-bold text-red-500">{signingOut ? 'Signing out…' : 'Sign Out'}</span>
         </button>
 
         <a

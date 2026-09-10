@@ -1,3 +1,5 @@
+import { MONEY_BACK_CHIP, MONEY_BACK_DAYS } from '@/marketing/data/moneyBack'
+
 export type FaqArticle = {
   id: string
   question: string
@@ -88,7 +90,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       {
         id: 'why-charged',
         question: "Why was I charged?",
-        answer: "If you see a charge from MindoraAcademy, it's likely because your 7-day free trial ended and your subscription began. Check your email for a receipt with the exact amount and date. If you believe the charge is incorrect, you're covered by our 30-day money-back guarantee — just email us and we'll sort it out immediately.",
+        answer: `If you see a charge from MindoraAcademy, it's likely because your 7-day free trial ended and your subscription began. Check your email for a receipt with the exact amount and date. If you believe the charge is incorrect, you're covered by our ${MONEY_BACK_CHIP} — just email us and we'll sort it out immediately.`,
         categoryId: 'subscription-billing',
         categoryTitle: "Subscription & Billing",
       },
@@ -97,13 +99,13 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
   {
     id: 'refunds-guarantee',
     title: "Refunds & Guarantee",
-    description: "Our industry-leading 30-day money-back guarantee explained.",
+    description: `Our ${MONEY_BACK_CHIP} explained.`,
     icon: "\ud83d\udee1\ufe0f",
     articles: [
       {
         id: 'refund-policy',
         question: "What is your refund policy?",
-        answer: "We offer a 30-day money-back guarantee on all plans — no questions asked. This exceeds the 14-day statutory cooling-off period required by UK/EU law. If you're not satisfied within 30 days of your first charge, we'll refund you in full. No lengthy forms, no interrogation, no hard feelings. We believe our platform should earn your money, not trap it.",
+        answer: `We offer a ${MONEY_BACK_CHIP} on all plans — no questions asked. This matches the ${MONEY_BACK_DAYS}-day statutory cooling-off period required by UK/EU law. If you're not satisfied within ${MONEY_BACK_DAYS} days of your first charge, we'll refund you in full. No lengthy forms, no interrogation, no hard feelings. We believe our platform should earn your money, not trap it.`,
         categoryId: 'refunds-guarantee',
         categoryTitle: "Refunds & Guarantee",
       },
@@ -116,8 +118,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         id: 'guarantee-coverage',
-        question: "What does the 30-day money-back guarantee cover?",
-        answer: "The guarantee covers your first subscription on any plan. The 30-day window starts from your first charge (day 8, after the free trial). It applies once per customer. It does not apply to repeat subscriptions (if you cancel, claim a refund, then resubscribe). After 30 days, we don't offer refunds as standard — but we're always reasonable and will consider exceptional circumstances.",
+        question: `What does the ${MONEY_BACK_CHIP} cover?`,
+        answer: `The guarantee covers your first subscription on any plan. The ${MONEY_BACK_DAYS}-day window starts from your first charge (day 8, after the free trial). It applies once per customer. It does not apply to repeat subscriptions (if you cancel, claim a refund, then resubscribe). After ${MONEY_BACK_DAYS} days, we don't offer refunds as standard — but we're always reasonable and will consider exceptional circumstances.`,
         categoryId: 'refunds-guarantee',
         categoryTitle: "Refunds & Guarantee",
       },
@@ -307,7 +309,7 @@ export const CONTACT_CATEGORIES: ContactCategory[] = [
     label: "Refund Request",
     icon: "\ud83d\udee1\ufe0f",
     subCategories: [
-      { id: 'within-guarantee', label: "Within 30-day guarantee" },
+      { id: 'within-guarantee', label: `Within ${MONEY_BACK_DAYS}-day guarantee` },
       { id: 'trial-charge', label: "Trial charge" },
       { id: 'refund-other', label: "Other refund reason" },
     ],

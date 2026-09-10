@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
 import { ROUTES } from '@/marketing/data/nav'
+import { MONEY_BACK_CHIP, MONEY_BACK_DAYS } from '@/marketing/data/moneyBack'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function SubscriptionTermsPage() {
@@ -93,12 +94,12 @@ export default function SubscriptionTermsPage() {
 
         <LegalSection title="6. Refund Policy">
           <p>
-            We offer a 30-day money-back guarantee from the date of your first payment. If you are unsatisfied
-            with the Platform, contact our support team within 30 days of your first charge and we will issue
+            We offer a {MONEY_BACK_CHIP} from the date of your first payment. If you are unsatisfied
+            with the Platform, contact our support team within {MONEY_BACK_DAYS} days of your first charge and we will issue
             a full refund.
           </p>
           <p>
-            Refund requests made after 30 days will be reviewed on a case-by-case basis. Refunds are not
+            Refund requests made after {MONEY_BACK_DAYS} days will be reviewed on a case-by-case basis. Refunds are not
             available for renewal charges after the first billing cycle.
           </p>
           <p>

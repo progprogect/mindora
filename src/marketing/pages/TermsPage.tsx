@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { CompanyDetails, LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
 import { COMPANY } from '@/marketing/data/company'
 import { ROUTES } from '@/marketing/data/nav'
+import { MONEY_BACK_DAYS } from '@/marketing/data/moneyBack'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function TermsPage() {
@@ -435,11 +436,11 @@ export default function TermsPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              you contact us within 30 days after your initial purchase and before the end of the
+              you contact us within {MONEY_BACK_DAYS} days after your initial purchase and before the end of the
               subscription period
             </li>
             <li>
-              you followed our program for at least 14 consecutive days during the first 30 days
+              you followed our program for at least 14 consecutive days during the first {MONEY_BACK_DAYS} days
               after purchase (for monthly and longer subscription periods, as well as subscription
               trial periods)
             </li>

@@ -10,6 +10,7 @@ import {
   searchFaq,
 } from '@/marketing/data/faq'
 import { ROUTES } from '@/marketing/data/nav'
+import { MONEY_BACK_CHIP } from '@/marketing/data/moneyBack'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
 export default function SupportPage() {
@@ -215,7 +216,7 @@ export default function SupportPage() {
                 <p className="text-sm font-semibold text-sw-dark transition-colors group-hover:text-sw-blue">
                   Request a refund
                 </p>
-                <p className="text-[11px] text-sw-grey">30-day money-back guarantee</p>
+                  <p className="text-[11px] text-sw-grey">{MONEY_BACK_CHIP}</p>
               </div>
             </a>
             <button
@@ -252,7 +253,7 @@ export default function SupportPage() {
         </section>
 
         <div className="mb-10 flex flex-wrap justify-center gap-4 text-xs text-sw-grey">
-          <span className="flex items-center gap-1.5">✅ 30-day money-back guarantee</span>
+          <span className="flex items-center gap-1.5">✅ {MONEY_BACK_CHIP}</span>
           <span className="flex items-center gap-1.5">💬 Maya answers in minutes, 24/7</span>
           <span className="flex items-center gap-1.5">🔒 No hidden fees</span>
         </div>

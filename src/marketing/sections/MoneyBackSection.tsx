@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
+import { MONEY_BACK_DAYS, MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
 
 const POINTS = ['Full refund', 'No questions asked', 'Any reason, any time'] as const
 
@@ -47,10 +48,11 @@ export default function MoneyBackSection() {
               Zero Risk
             </div>
             <h2 className="mb-3 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-              30-Day Money-Back Guarantee
+              {MONEY_BACK_TITLE}
             </h2>
             <p className="mb-4 max-w-lg leading-relaxed text-sw-grey">
-              Try MindoraAcademy.com completely risk-free. If you don&apos;t feel the difference in your first 30 days — for
+              Try MindoraAcademy.com completely risk-free. If you don&apos;t feel the difference in your first{' '}
+              {MONEY_BACK_DAYS} days — for
               any reason at all — we&apos;ll give you a full refund. No forms, no friction, no questions asked.
             </p>
             <p className="text-sm text-sw-grey">

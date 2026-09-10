@@ -93,3 +93,15 @@ export function resetCheckoutSessionKey(): string {
   }
   return next
 }
+
+const CHECKOUT_COMPLETED_KEYS = ['sw_checkout_completed', 'sw_checkout_claude_completed'] as const
+
+/** Same-browser flag set after a successful $1 trial — hide Pay and send the user to setup. */
+export function hasLocalCheckoutCompleted(): boolean {
+  if (typeof window === 'undefined') return false
+  try {
+    return CHECKOUT_COMPLETED_KEYS.some((key) => window.localStorage.getItem(key) === 'true')
+  } catch {
+    return false
+  }
+}

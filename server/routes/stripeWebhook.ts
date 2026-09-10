@@ -6,7 +6,12 @@ import { db } from '../db/index.js'
 import { processedStripePayments, products, profiles } from '../db/schema.js'
 import { loadEnv } from '../env.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
-import { findUserIdByEmail, linkStripeCustomer } from '../lib/subscription.js'
+import {
+  collapseDuplicateBlockingSubscriptions,
+  findBlockingSubscription,
+  findUserIdByEmail,
+  linkStripeCustomer,
+} from '../lib/subscription.js'
 
 /** Stripe webhook payloads may send an id string or an expanded object. */
 function stripeRefId(value: unknown): string {
@@ -75,6 +80,11 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
 
   if (!paymentIntentId) return
 
+  if (await isPaymentAlreadyProcessed(paymentIntentId)) {
+    console.log('[stripe webhook] already processed', paymentIntentId)
+    return
+  }
+
   if (metadata.offerSlug) {
     const userId = metadata.userId
     if (userId) {
@@ -106,7 +116,27 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
     return
   }
 
-  const created = await getStripe().subscriptions.create(
+  const stripe = getStripe()
+  const existing = await findBlockingSubscription(customerId)
+  if (existing) {
+    const existingPi = existing.metadata?.paymentIntentId
+    if (existingPi === paymentIntentId) {
+      await markProcessedPayment(paymentIntentId, customerId, metadata.email, existing.id)
+      await linkCustomerIfKnown(metadata.email, customerId, existing)
+      return
+    }
+    await refundDuplicateTrialPayment(paymentIntentId)
+    await markProcessedPayment(paymentIntentId, customerId, metadata.email, existing.id)
+    await linkCustomerIfKnown(metadata.email, customerId, existing)
+    console.log('[stripe webhook] skipped duplicate trial sub', {
+      paymentIntentId,
+      customerId,
+      existingSubscriptionId: existing.id,
+    })
+    return
+  }
+
+  const created = await stripe.subscriptions.create(
     {
       customer: customerId,
       default_payment_method: paymentMethod,
@@ -120,12 +150,52 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
     { idempotencyKey: `trial_sub_${paymentIntentId}` },
   )
 
-  await markProcessedPayment(paymentIntentId, customerId, metadata.email, created.id)
-
-  if (metadata.email) {
-    const userId = await findUserIdByEmail(metadata.email)
-    if (userId) await linkStripeCustomer(userId, customerId, created)
+  const keeper = await collapseDuplicateBlockingSubscriptions(customerId, created)
+  if (keeper.id !== created.id) {
+    await refundDuplicateTrialPayment(paymentIntentId)
+    await markProcessedPayment(paymentIntentId, customerId, metadata.email, keeper.id)
+    await linkCustomerIfKnown(metadata.email, customerId, keeper)
+    console.log('[stripe webhook] collapsed duplicate trial sub', {
+      paymentIntentId,
+      customerId,
+      kept: keeper.id,
+      canceled: created.id,
+    })
+    return
   }
+
+  await markProcessedPayment(paymentIntentId, customerId, metadata.email, created.id)
+  await linkCustomerIfKnown(metadata.email, customerId, created)
+}
+
+async function isPaymentAlreadyProcessed(paymentIntentId: string): Promise<boolean> {
+  const [row] = await db
+    .select({ paymentIntentId: processedStripePayments.paymentIntentId })
+    .from(processedStripePayments)
+    .where(eq(processedStripePayments.paymentIntentId, paymentIntentId))
+    .limit(1)
+  return Boolean(row)
+}
+
+async function refundDuplicateTrialPayment(paymentIntentId: string): Promise<void> {
+  try {
+    await getStripe().refunds.create(
+      { payment_intent: paymentIntentId },
+      { idempotencyKey: `trial_dup_refund_${paymentIntentId}` },
+    )
+  } catch (error) {
+    console.error('[stripe webhook] duplicate-sub refund failed', paymentIntentId, error)
+  }
+}
+
+async function linkCustomerIfKnown(
+  email: string | undefined,
+  customerId: string,
+  subscription: Stripe.Subscription,
+): Promise<void> {
+  if (!email) return
+  const userId = await findUserIdByEmail(email)
+  if (userId) await linkStripeCustomer(userId, customerId, subscription)
 }
 
 async function handleCheckoutSessionCompleted(object: Record<string, unknown>): Promise<void> {

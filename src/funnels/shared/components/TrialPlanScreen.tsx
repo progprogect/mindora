@@ -4,6 +4,7 @@ import { expiredPickerPlans, type PlanView } from '@/funnels/twenty-eight-day/da
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
+import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
 
 export interface PathItem {
   emoji: string
@@ -374,7 +375,7 @@ export default function TrialPlanScreen({
             🛡️
           </div>
           <div>
-            <p className="text-sm font-extrabold text-sw-dark">30-Day Money-Back Guarantee</p>
+            <p className="text-sm font-extrabold text-sw-dark">{MONEY_BACK_TITLE}</p>
             <p className="mt-0.5 text-xs leading-snug text-sw-grey">Not right for you? Full refund, no questions asked.</p>
           </div>
         </div>

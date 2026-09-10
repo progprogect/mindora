@@ -6,6 +6,7 @@ import NotFoundPage from '@/marketing/pages/NotFoundPage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { DEFAULT_PLANS } from '@/funnels/twenty-eight-day/data/plans'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
+import { MONEY_BACK_CHIP } from '@/marketing/data/moneyBack'
 
 const ORIGINAL_CHECKOUT_FUNNELS = new Set([
   '28-day-ai-challenge',
@@ -115,7 +116,7 @@ export default function FunnelCheckoutPage() {
                 Then $29.99 per month after your 7-day trial. Cancel any time from your profile page.
               </p>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Risk-free 30-day money-back guarantee included.
+                Risk-free {MONEY_BACK_CHIP} included.
               </p>
             </div>
           </div>
@@ -178,7 +179,7 @@ export default function FunnelCheckoutPage() {
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pb-6 text-xs text-sw-grey">
           <span>🔒 256-bit encrypted</span>
           <span>✓ Cancel any time</span>
-          <span>✓ 30-day money-back guarantee</span>
+          <span>✓ {MONEY_BACK_CHIP}</span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-sw-grey">
           <Link to={ROUTES.terms} className="hover:text-sw-dark">

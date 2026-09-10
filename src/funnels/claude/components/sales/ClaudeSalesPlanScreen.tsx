@@ -8,6 +8,7 @@ import { useCheckoutOfferAction, useProductsList, useTrackCheckoutInitiated } fr
 import AssetImage from '@/shared/components/AssetImage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
+import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
 
 interface ClaudeSalesPlanScreenProps {
   name: string
@@ -557,7 +558,7 @@ export default function ClaudeSalesPlanScreen({
         <div className="flex items-center gap-4 rounded-2xl border-2 border-sw-success bg-sw-success-light px-5 py-4">
           <ShieldCheck className="size-10 shrink-0 text-sw-success" strokeWidth={1.5} />
           <div>
-            <p className="text-sm font-extrabold text-sw-dark">30-Day Money-Back Guarantee</p>
+            <p className="text-sm font-extrabold text-sw-dark">{MONEY_BACK_TITLE}</p>
             <p className="mt-0.5 text-xs leading-snug text-sw-grey">Not right for you? Full refund, no questions asked.</p>
           </div>
         </div>

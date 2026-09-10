@@ -137,6 +137,8 @@ export function useSetCheckoutOfferPercentAction() {
   }, [])
 }
 
+export const ALREADY_SUBSCRIBED_ERROR = 'already_subscribed'
+
 export function useCreateTrialPaymentIntent() {
   return useCallback(
     (args: { email: string; productId: string; funnel: string }) =>

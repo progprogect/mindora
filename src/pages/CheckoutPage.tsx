@@ -19,6 +19,7 @@ import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 import { PRICING_FALLBACK_PLANS } from '@/marketing/data/pricing'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
+import { MONEY_BACK_CHIP, MONEY_BACK_CHIP_CAP } from '@/marketing/data/moneyBack'
 
 const FUNNEL_28 = '28-day-ai-challenge'
 const FUNNEL_CLAUDE = 'claude-ai-certification'
@@ -302,12 +303,12 @@ export default function CheckoutPage() {
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pb-6 text-xs text-sw-grey">
           <span>🔒 256-bit encrypted</span>
           <span>✓ Cancel any time</span>
-          <span>✓ 30-Day money-back guarantee</span>
+          <span>✓ {MONEY_BACK_CHIP_CAP}</span>
         </div>
         <p className="px-2 text-center text-[11px] leading-relaxed text-sw-grey">
           By proceeding, you agree to pay $1.00 today for a 7-day trial. After your trial, you&apos;ll be charged{' '}
           {formatUsd(plan.price)} {meta.periodLabel} until you cancel. You can cancel at any time from your account
-          settings. 30-day money-back guarantee.
+          settings. {MONEY_BACK_CHIP}.
         </p>
       </div>
     </div>

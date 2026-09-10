@@ -14,6 +14,11 @@ export type SubscriptionDto = {
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
 
+/** Statuses that must not get a second $1 trial subscription. `incomplete` is retryable. */
+const BLOCKING_SUB_STATUSES = new Set(['active', 'trialing', 'past_due'])
+
+export const ALREADY_SUBSCRIBED_ERROR = 'already_subscribed'
+
 function stripeConfigured() {
   return Boolean(loadEnv().STRIPE_SECRET_KEY)
 }
@@ -90,6 +95,53 @@ async function latestStripeSubscription(customerId: string): Promise<Stripe.Subs
   })
   const ranked = [...listed.data].sort((a, b) => (b.created ?? 0) - (a.created ?? 0))
   return ranked[0] ?? null
+}
+
+function isBlockingStatus(status: string): boolean {
+  return BLOCKING_SUB_STATUSES.has(status)
+}
+
+async function listCustomerSubscriptions(customerId: string): Promise<Stripe.Subscription[]> {
+  const stripe = getStripe()
+  const listed = await stripe.subscriptions.list({
+    customer: customerId,
+    status: 'all',
+    limit: 20,
+  })
+  return listed.data
+}
+
+/** Oldest active / trialing / past_due sub, if any. Canceled and incomplete do not block a new trial. */
+export async function findBlockingSubscription(customerId: string): Promise<Stripe.Subscription | null> {
+  if (!stripeConfigured()) return null
+  const blocking = (await listCustomerSubscriptions(customerId))
+    .filter((sub) => isBlockingStatus(sub.status))
+    .sort((a, b) => (a.created ?? 0) - (b.created ?? 0) || a.id.localeCompare(b.id))
+  return blocking[0] ?? null
+}
+
+/**
+ * If two trial webhooks raced and created two blocking subs, keep the oldest and cancel the rest.
+ * Returns the subscription that should remain on the customer.
+ */
+export async function collapseDuplicateBlockingSubscriptions(
+  customerId: string,
+  newlyCreated: Stripe.Subscription,
+): Promise<Stripe.Subscription> {
+  const stripe = getStripe()
+  const blocking = (await listCustomerSubscriptions(customerId))
+    .filter((sub) => isBlockingStatus(sub.status))
+    .sort((a, b) => (a.created ?? 0) - (b.created ?? 0) || a.id.localeCompare(b.id))
+  if (blocking.length <= 1) return newlyCreated
+  const keeper = blocking[0]
+  for (const extra of blocking.slice(1)) {
+    try {
+      await stripe.subscriptions.cancel(extra.id)
+    } catch (error) {
+      console.error('[subscription] failed to cancel duplicate sub', extra.id, error)
+    }
+  }
+  return keeper
 }
 
 export async function getMine(userId: string, email: string): Promise<SubscriptionDto | null> {

@@ -1,3 +1,5 @@
+import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
+
 const ANCHOR_MONTHLY_CENTS = 2999
 
 export const PRICING_CATALOG_NAMES = ['Monthly Plan', 'Quarterly Plan', 'Annual Plan'] as const
@@ -100,7 +102,7 @@ export const PRICING_FEATURES = [
 ] as const
 
 export const PRICING_TRUST = [
-  '30-Day Money-Back Guarantee',
+  MONEY_BACK_TITLE,
   'Cancel any time',
   'Secure payment via Stripe',
 ] as const
