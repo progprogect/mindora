@@ -10,6 +10,27 @@ export type ProgressLesson = {
   completedAt: number | null
 }
 
+export type LastOpened = {
+  courseId: string
+  lessonSlug: string
+}
+
+function lastOpenedFrom(
+  lessons: Array<{
+    courseSlug: string
+    lessonSlug: string
+    openedAt: Date | null
+    completedAt: Date | null
+  }>,
+): LastOpened | null {
+  const dated = lessons
+    .map((row) => ({ row, at: row.openedAt ?? row.completedAt }))
+    .filter((item): item is { row: (typeof lessons)[number]; at: Date } => Boolean(item.at))
+  if (!dated.length) return null
+  dated.sort((a, b) => b.at.getTime() - a.at.getTime())
+  return { courseId: dated[0].row.courseSlug, lessonSlug: dated[0].row.lessonSlug }
+}
+
 function isoDay(input?: string) {
   if (input && /^\d{4}-\d{2}-\d{2}$/.test(input)) return input
   return new Date().toISOString().slice(0, 10)
@@ -22,12 +43,24 @@ function prevIsoDay(day: string) {
   return next.toISOString().slice(0, 10)
 }
 
+const DAILY_BONUS_XP = 5
+
 function xpFromQuiz(xpValue: number, correct: number, total: number) {
   if (total <= 0) return xpValue
   if (correct === total) return xpValue
   const accuracy = correct / total
   if (accuracy >= 0.75) return Math.round(xpValue * 0.8)
   return Math.round(xpValue * 0.5)
+}
+
+function streakAfterLesson(last: string | null, today: string, current: number) {
+  if (last === today) return current
+  if (last && last === prevIsoDay(today)) return current + 1
+  return 1
+}
+
+function xpEarnedForLesson(quizXp: number, dailyBonusApplied: boolean, streak: number) {
+  return quizXp + (dailyBonusApplied && streak > 1 ? DAILY_BONUS_XP : 0)
 }
 
 async function awardBadge(userId: string, badgeId: string, earned: string[]) {
@@ -69,7 +102,38 @@ export async function getAllProgress(userId: string) {
       earnedAt: row.earnedAt.getTime(),
     })),
     user: stats,
+    lastOpened: lastOpenedFrom(lessons),
   }
+}
+
+export async function openLesson(args: { userId: string; courseSlug: string; lessonSlug: string }) {
+  const openedAt = new Date()
+  const [existing] = await db
+    .select()
+    .from(lessonProgress)
+    .where(
+      and(
+        eq(lessonProgress.userId, args.userId),
+        eq(lessonProgress.courseSlug, args.courseSlug),
+        eq(lessonProgress.lessonSlug, args.lessonSlug),
+      ),
+    )
+    .limit(1)
+
+  if (existing) {
+    await db.update(lessonProgress).set({ openedAt }).where(eq(lessonProgress.id, existing.id))
+  } else {
+    await db.insert(lessonProgress).values({
+      userId: args.userId,
+      courseSlug: args.courseSlug,
+      lessonSlug: args.lessonSlug,
+      status: 'in_progress',
+      xp: 0,
+      openedAt,
+    })
+  }
+
+  return { lastOpened: { courseId: args.courseSlug, lessonSlug: args.lessonSlug } }
 }
 
 export async function completeLesson(args: {
@@ -109,15 +173,21 @@ export async function completeLesson(args: {
 
   const correct = args.correct ?? args.total ?? 0
   const total = args.total ?? 0
-  const xpEarned = xpFromQuiz(Math.max(0, args.xpValue), correct, total)
+  const quizXp = xpFromQuiz(Math.max(0, args.xpValue), correct, total)
   const completedAt = new Date()
   const today = isoDay(args.localDate)
   const newBadges: string[] = []
 
+  const [stats] = await db.select().from(dailyStats).where(eq(dailyStats.userId, args.userId)).limit(1)
+  const last = stats?.lastLessonDate ?? null
+  const dailyBonusApplied = last !== today
+  const streak = streakAfterLesson(last, today, stats?.streak ?? 0)
+  const xpEarned = xpEarnedForLesson(quizXp, dailyBonusApplied, streak)
+
   if (existing) {
     await db
       .update(lessonProgress)
-      .set({ status: 'completed', xp: xpEarned, completedAt })
+      .set({ status: 'completed', xp: xpEarned, completedAt, openedAt: completedAt })
       .where(eq(lessonProgress.id, existing.id))
   } else {
     await db.insert(lessonProgress).values({
@@ -127,20 +197,10 @@ export async function completeLesson(args: {
       status: 'completed',
       xp: xpEarned,
       completedAt,
+      openedAt: completedAt,
     })
   }
 
-  const [stats] = await db.select().from(dailyStats).where(eq(dailyStats.userId, args.userId)).limit(1)
-  const last = stats?.lastLessonDate ?? null
-  const dailyBonusApplied = last !== today
-  let streak = stats?.streak ?? 0
-  if (last === today) {
-    // same-day extra lesson keeps streak
-  } else if (last && last === prevIsoDay(today)) {
-    streak += 1
-  } else {
-    streak = 1
-  }
   const xpTotal = (stats?.xpTotal ?? 0) + xpEarned
   if (stats) {
     await db

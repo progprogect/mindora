@@ -198,6 +198,7 @@ export const lessonProgress = pgTable(
     status: text('status').notNull(),
     xp: integer('xp').notNull().default(0),
     completedAt: timestamp('completed_at', { withTimezone: true }),
+    openedAt: timestamp('opened_at', { withTimezone: true }),
   },
   (table) => [
     uniqueIndex('lesson_progress_user_course_lesson_idx').on(

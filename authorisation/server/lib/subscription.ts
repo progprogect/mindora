@@ -9,6 +9,17 @@ export type SubscriptionDto = {
   status: string
   currentPeriodEnd: number | null
   cancelAtPeriodEnd: boolean
+  cancellable: boolean
+}
+
+export class BillingError extends Error {
+  status: 400 | 409 | 503
+
+  constructor(message: string, status: 400 | 409 | 503) {
+    super(message)
+    this.name = 'BillingError'
+    this.status = status
+  }
 }
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
@@ -41,7 +52,7 @@ async function upsertLocal(userId: string, stripeSub: Stripe.Subscription): Prom
     cancelAtPeriodEnd,
   }
 
-  const [existing] = await db.select().from(subscriptions).where(eq(subscriptions.userId, userId)).limit(1)
+  const existing = await loadLocalSubscription(userId)
 
   if (existing) {
     await db.update(subscriptions).set(patch).where(eq(subscriptions.id, existing.id))
@@ -53,6 +64,26 @@ async function upsertLocal(userId: string, stripeSub: Stripe.Subscription): Prom
     status: stripeSub.status,
     currentPeriodEnd,
     cancelAtPeriodEnd,
+    cancellable: true,
+  }
+}
+
+async function loadLocalSubscription(userId: string) {
+  const [local] = await db
+    .select()
+    .from(subscriptions)
+    .where(eq(subscriptions.userId, userId))
+    .orderBy(desc(subscriptions.createdAt))
+    .limit(1)
+  return local ?? null
+}
+
+function dtoFromLocal(local: typeof subscriptions.$inferSelect): SubscriptionDto {
+  return {
+    status: local.status,
+    currentPeriodEnd: local.renewsAt ? Math.floor(local.renewsAt.getTime() / 1000) : null,
+    cancelAtPeriodEnd: local.cancelAtPeriodEnd,
+    cancellable: stripeConfigured() && Boolean(local.stripeSubscriptionId),
   }
 }
 
@@ -104,12 +135,7 @@ export async function attachStripeCustomer(userId: string, email: string): Promi
 }
 
 export async function getMine(userId: string, email: string): Promise<SubscriptionDto | null> {
-  const [local] = await db
-    .select()
-    .from(subscriptions)
-    .where(eq(subscriptions.userId, userId))
-    .orderBy(desc(subscriptions.createdAt))
-    .limit(1)
+  const local = await loadLocalSubscription(userId)
 
   if (stripeConfigured()) {
     try {
@@ -129,41 +155,70 @@ export async function getMine(userId: string, email: string): Promise<Subscripti
   }
 
   if (!local) return null
-  return {
-    status: local.status,
-    currentPeriodEnd: local.renewsAt ? Math.floor(local.renewsAt.getTime() / 1000) : null,
-    cancelAtPeriodEnd: local.cancelAtPeriodEnd,
-  }
+  return dtoFromLocal(local)
 }
 
 export async function createPortalSession(userId: string, email: string, returnUrl: string) {
-  if (!stripeConfigured()) throw new Error('Stripe is not configured')
+  if (!stripeConfigured()) {
+    throw new BillingError('Billing is not configured on this environment.', 503)
+  }
   const customerId = await findStripeCustomerId(userId, email)
-  if (!customerId) throw new Error('No billing customer is linked to this account yet.')
-  const stripe = getStripe()
-  const session = await stripe.billingPortal.sessions.create({
-    customer: customerId,
-    return_url: returnUrl,
-  })
-  return { url: session.url }
+  if (!customerId) {
+    throw new BillingError('No billing customer is linked to this account yet.', 409)
+  }
+  try {
+    const stripe = getStripe()
+    const session = await stripe.billingPortal.sessions.create({
+      customer: customerId,
+      return_url: returnUrl,
+    })
+    return { url: session.url }
+  } catch (error) {
+    throw toBillingError(error, 'Could not open the billing portal.')
+  }
 }
 
 export async function cancelOwnSubscription(userId: string, email: string) {
-  if (!stripeConfigured()) throw new Error('Stripe is not configured')
+  if (!stripeConfigured()) {
+    throw new BillingError('Billing is not configured on this environment.', 503)
+  }
   const mine = await getMine(userId, email)
-  const [local] = await db.select().from(subscriptions).where(eq(subscriptions.userId, userId)).limit(1)
-  if (!local?.stripeSubscriptionId) throw new Error('No subscription')
+  const local = await loadLocalSubscription(userId)
+  if (!local?.stripeSubscriptionId) {
+    throw new BillingError(
+      "No Stripe subscription is linked to this account. Cancel isn't available until billing is connected.",
+      409,
+    )
+  }
 
   const stripe = getStripe()
   const status = mine?.status ?? local.status
   const immediate = PAST_DUE.has(status) || status === 'canceled'
 
-  const updated = immediate
-    ? await stripe.subscriptions.cancel(local.stripeSubscriptionId)
-    : await stripe.subscriptions.update(local.stripeSubscriptionId, { cancel_at_period_end: true })
+  try {
+    const updated = immediate
+      ? await stripe.subscriptions.cancel(local.stripeSubscriptionId)
+      : await stripe.subscriptions.update(local.stripeSubscriptionId, { cancel_at_period_end: true })
+    await upsertLocal(userId, updated)
+    return { immediate: Boolean(immediate || updated.status === 'canceled') }
+  } catch (error) {
+    throw toBillingError(error, 'Stripe could not cancel this subscription.')
+  }
+}
 
-  await upsertLocal(userId, updated)
-  return { immediate: Boolean(immediate || updated.status === 'canceled') }
+function toBillingError(error: unknown, fallback: string): BillingError {
+  if (error instanceof BillingError) return error
+  const message = error instanceof Error && error.message ? error.message : fallback
+  if (/not configured/i.test(message)) {
+    return new BillingError('Billing is not configured on this environment.', 503)
+  }
+  if (/^No subscription$/i.test(message)) {
+    return new BillingError(
+      "No Stripe subscription is linked to this account. Cancel isn't available until billing is connected.",
+      409,
+    )
+  }
+  return new BillingError(message, 400)
 }
 
 export async function linkStripeCustomer(userId: string, customerId: string, stripeSub?: Stripe.Subscription) {

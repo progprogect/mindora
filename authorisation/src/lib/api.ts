@@ -205,10 +205,19 @@ export type ProgressPayload = {
   }>
   badges: Array<{ badgeId: string; earnedAt: number }>
   user: { xp: number; streakCount: number; lastActivityDate: string | null }
+  lastOpened: { courseId: string; lessonSlug: string } | null
 }
 
 export async function fetchProgress() {
-  return apiJson<ProgressPayload>('/api/progress')
+  const data = await apiJson<ProgressPayload>('/api/progress')
+  return { ...data, lastOpened: data.lastOpened ?? null, lessons: data.lessons ?? [] }
+}
+
+export async function openLesson(args: { courseSlug: string; lessonSlug: string }) {
+  return apiJson<{ lastOpened: { courseId: string; lessonSlug: string } }>('/api/progress/open', {
+    method: 'POST',
+    body: JSON.stringify(args),
+  })
 }
 
 export async function completeLesson(args: {
@@ -235,6 +244,7 @@ export type SubscriptionDto = {
   status: string
   currentPeriodEnd: number | null
   cancelAtPeriodEnd: boolean
+  cancellable: boolean
 } | null
 
 export async function fetchSubscription() {

@@ -56,517 +56,6 @@
   ],
   "lessons": [
     {
-      "id": "ew-8-blood-sugar",
-      "dayNumber": 8,
-      "title": "Blood Sugar Balance: The Energy Rollercoaster",
-      "subtitle": "Why blood sugar is the master switch for your daily energy — and how to keep it stable all day",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-8-c1",
-          "front": "What is blood sugar and why does it matter for daily energy?",
-          "back": "Blood sugar (blood glucose) is the main fuel your brain and cells run on. When it's stable, you feel alert, focused and energised. When it spikes and crashes — after refined carbs or sugary food — you experience the classic energy rollercoaster: a short burst of energy followed by fatigue, irritability, brain fog and cravings. Chronically unstable blood sugar is a root cause of type 2 diabetes and metabolic disease."
-        },
-        {
-          "id": "ew-8-c2",
-          "front": "What causes blood sugar spikes and crashes?",
-          "back": "Foods that digest quickly — refined carbohydrates, sugar, white bread, processed snacks, sugary drinks — flood the bloodstream with glucose rapidly. The body responds by releasing a large dose of insulin to clear the glucose. If insulin overshoots, blood sugar drops sharply, triggering fatigue, hunger and cravings for more sugar. This cycle repeats throughout the day in people eating a typical Western diet."
-        },
-        {
-          "id": "ew-8-c3",
-          "front": "Which foods keep blood sugar stable?",
-          "back": "Foods high in fibre, protein and healthy fat slow glucose absorption and produce gradual, sustained energy. These include: vegetables, legumes (lentils, chickpeas, beans), whole grains (oats, quinoa, brown rice), eggs, nuts, seeds and quality protein. They have a low glycaemic impact — they raise blood sugar slowly without triggering a large insulin spike."
-        },
-        {
-          "id": "ew-8-c4",
-          "front": "What is the \"food order\" trick for better blood sugar?",
-          "back": "Research by Dr Jessie Inchauspé (Glucose Goddess) shows that the order in which you eat your food significantly affects blood sugar response. Eating vegetables and protein before carbohydrates at any meal reduces post-meal glucose spikes by up to 73%. Start with salad or vegetables, then protein/fat, and eat carbohydrates last. This requires no change to what you eat — just the sequence."
-        },
-        {
-          "id": "ew-8-c5",
-          "front": "What is insulin resistance and how does food cause it?",
-          "back": "Insulin resistance occurs when cells become less responsive to insulin — requiring the pancreas to produce more and more to do the same job. Over years, this leads to chronically elevated blood sugar, weight gain (particularly around the abdomen), fatigue, brain fog and eventually type 2 diabetes. It's primarily caused by chronically eating too many refined carbohydrates and ultra-processed food, combined with inactivity."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-8-q1",
-          "question": "What causes the classic energy \"crash\" about an hour after eating sugary food?",
-          "options": [
-            "The food runs out of vitamins",
-            "Insulin overshoots, dropping blood sugar too low after a spike",
-            "You need to drink more water",
-            "Your metabolism speeds up temporarily"
-          ],
-          "correctIndex": 1,
-          "explanation": "Sugary or refined food causes a rapid blood glucose spike, triggering a large insulin release. If insulin production overshoots, blood sugar drops below normal levels, causing fatigue, brain fog, irritability and hunger — the classic energy crash."
-        },
-        {
-          "id": "ew-8-q2",
-          "question": "According to research on food order, eating vegetables and protein before carbohydrates can reduce post-meal glucose spikes by how much?",
-          "options": [
-            "10–15%",
-            "20–30%",
-            "Up to 73%",
-            "Up to 90%"
-          ],
-          "correctIndex": 2,
-          "explanation": "Research published by Dr Jessie Inchauspé shows that eating vegetables first, then protein/fat, then carbohydrates at the same meal can reduce the post-meal glucose spike by up to 73% — with no change to what you eat, just the order."
-        },
-        {
-          "id": "ew-8-q3",
-          "question": "Which of these foods is best for stable blood sugar?",
-          "options": [
-            "White bread with jam",
-            "Sugary breakfast cereal with skimmed milk",
-            "Lentils with vegetables and olive oil",
-            "A commercial energy drink"
-          ],
-          "correctIndex": 2,
-          "explanation": "Lentils are high in fibre and protein, slowing glucose absorption and producing a gradual, sustained energy release. The vegetables add further fibre and micronutrients, while olive oil slows digestion. This combination creates a low glycaemic response."
-        }
-      ]
-    },
-    {
-      "id": "ew-9-protein-muscle",
-      "dayNumber": 9,
-      "title": "Protein and Muscle: Eating to Stay Strong",
-      "subtitle": "Why protein is the most important macronutrient for body composition, strength and long-term independence",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-9-c1",
-          "front": "Why is protein so important beyond just building muscle?",
-          "back": "Protein is the structural material of your body — it builds and repairs muscle, bone, skin, hair, enzymes, hormones and antibodies. Every cell depends on proteins. Adequate protein intake reduces appetite (it's the most satiating macronutrient), preserves lean muscle during weight loss, supports immune function and slows age-related muscle loss (sarcopenia). Peter Attia calls protein \"the most underconsumed macronutrient.\""
-        },
-        {
-          "id": "ew-9-c2",
-          "front": "What is muscle protein synthesis and why does it matter?",
-          "back": "Muscle protein synthesis (MPS) is the process by which your body builds new muscle tissue. It's triggered by two things: resistance exercise and dietary protein. Your body constantly breaks down old muscle protein (muscle protein breakdown) and rebuilds it. When synthesis exceeds breakdown — through adequate protein and exercise — you maintain or build muscle. When breakdown exceeds synthesis — through low protein or inactivity — you gradually lose it."
-        },
-        {
-          "id": "ew-9-c3",
-          "front": "What are the best protein sources?",
-          "back": "Complete proteins (containing all essential amino acids) include: eggs, dairy (Greek yoghurt, cottage cheese), meat, poultry, fish and seafood. Plant-based complete proteins include: soy (edamame, tofu, tempeh), quinoa and hemp seeds. Incomplete plant proteins (legumes, nuts, grains) can be combined over the day to provide all essential amino acids. Variety across sources ensures a full amino acid spectrum."
-        },
-        {
-          "id": "ew-9-c4",
-          "front": "Does spreading protein intake throughout the day matter?",
-          "back": "Yes. Research suggests the body can only use roughly 30–40g of protein per meal for muscle protein synthesis — excess is used for energy or excreted. Spreading protein across 3–4 meals (rather than eating it all at dinner) maximises muscle-building signals throughout the day. Aim for 20–40g protein per meal rather than a single large dose."
-        },
-        {
-          "id": "ew-9-c5",
-          "front": "Can you eat too much protein?",
-          "back": "For healthy adults, eating up to 2–2.5g/kg body weight is well tolerated and safe according to current research. The concern about kidney damage from high protein is largely relevant to people with pre-existing kidney disease, not healthy individuals. The more common problem is eating too little protein — especially over 50, when muscle loss accelerates and protein needs increase."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-9-q1",
-          "question": "What are the two main triggers for muscle protein synthesis?",
-          "options": [
-            "Sleeping and eating carbohydrates",
-            "Resistance exercise and dietary protein",
-            "Cardio exercise and dietary fat",
-            "Hydration and vitamin D"
-          ],
-          "correctIndex": 1,
-          "explanation": "Muscle protein synthesis — the rebuilding of muscle tissue — is primarily stimulated by resistance exercise (strength training) and adequate dietary protein. Both signals together produce much greater muscle-building response than either alone."
-        },
-        {
-          "id": "ew-9-q2",
-          "question": "Approximately how much protein per meal can the body use for muscle synthesis?",
-          "options": [
-            "5–10g",
-            "15–20g",
-            "30–40g",
-            "60–80g"
-          ],
-          "correctIndex": 2,
-          "explanation": "Research suggests the body can utilise roughly 30–40g of protein per meal for muscle protein synthesis. Eating more than this at once doesn't produce proportionally greater muscle-building — which is why distributing protein across 3–4 meals is more effective than eating most of it in one sitting."
-        },
-        {
-          "id": "ew-9-q3",
-          "question": "Which of these is a plant-based complete protein source?",
-          "options": [
-            "Brown rice",
-            "Chickpeas",
-            "Tofu (soy)",
-            "Almonds"
-          ],
-          "correctIndex": 2,
-          "explanation": "Soy products like tofu, tempeh and edamame are among the few plant foods that contain all essential amino acids in adequate amounts — making them complete proteins. Brown rice, chickpeas and almonds are incomplete proteins that benefit from being combined with other plant protein sources."
-        }
-      ]
-    },
-    {
-      "id": "ew-10-healthy-fats",
-      "dayNumber": 10,
-      "title": "Healthy Fats: What to Eat and What to Avoid",
-      "subtitle": "Rehabilitating dietary fat — understanding omega-3s, olive oil and why the right fats are essential for brain and heart health",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-10-c1",
-          "front": "Why did dietary fat get such a bad reputation?",
-          "back": "In the 1960s–1980s, flawed research (partly funded by the sugar industry) led to the conclusion that dietary fat — especially saturated fat — caused heart disease. The resulting \"low-fat\" movement caused fat to be replaced with refined carbohydrates and sugar in processed foods, which almost certainly made the obesity and diabetes epidemics worse. The science has now shifted significantly: fat type matters far more than fat quantity."
-        },
-        {
-          "id": "ew-10-c2",
-          "front": "What are omega-3 fatty acids and why are they so important?",
-          "back": "Omega-3s (particularly EPA and DHA) are essential fatty acids — your body can't make them, so you must eat them. They build cell membranes throughout the body (especially the brain, which is 60% fat), reduce inflammation, protect cardiovascular health, support mood and reduce depression risk. The richest sources are oily fish: salmon, mackerel, sardines, anchovies and herring. Plant-based sources (flaxseed, walnuts, chia) provide ALA, which converts to DHA less efficiently."
-        },
-        {
-          "id": "ew-10-c3",
-          "front": "Why is extra virgin olive oil considered the gold standard cooking fat?",
-          "back": "Extra virgin olive oil (EVOO) is rich in oleic acid (a monounsaturated fat) and over 30 phenolic compounds with powerful anti-inflammatory properties. The PREDIMED study — the largest dietary intervention trial of its kind — found that a Mediterranean diet supplemented with extra EVOO reduced cardiovascular events by 30% and reduced risk of type 2 diabetes, breast cancer and cognitive decline. Use it generously on salads and for low-to-medium heat cooking."
-        },
-        {
-          "id": "ew-10-c4",
-          "front": "What fats should you limit or avoid?",
-          "back": "Trans fats (partially hydrogenated oils, found in some processed foods and margarines) are the most harmful — they raise LDL cholesterol, lower HDL cholesterol and directly increase heart disease risk. Most developed countries have now banned or restricted them. Excess refined seed oils (corn oil, sunflower oil, soybean oil) — high in omega-6 and used in most processed food — may promote inflammation when they heavily outweigh omega-3 intake."
-        },
-        {
-          "id": "ew-10-c5",
-          "front": "What is the most practical fat-related nutrition change most people can make?",
-          "back": "Replace the fats you cook with. Swap refined vegetable oils (sunflower, vegetable blends) for extra virgin olive oil. Eat oily fish 2–3 times per week for omega-3s. Snack on nuts (especially walnuts) and avocado rather than processed snacks. These three changes shift your fat profile significantly toward anti-inflammatory, heart-protective patterns without requiring major dietary overhaul."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-10-q1",
-          "question": "What did the PREDIMED study find about extra virgin olive oil and cardiovascular health?",
-          "options": [
-            "It had no significant effect",
-            "It increased cardiovascular risk",
-            "A Mediterranean diet with extra EVOO reduced cardiovascular events by 30%",
-            "Only Spanish people benefited"
-          ],
-          "correctIndex": 2,
-          "explanation": "The PREDIMED trial found that a Mediterranean diet supplemented with extra virgin olive oil (or nuts) reduced major cardiovascular events by 30% compared to a low-fat diet control. It also reduced risk of type 2 diabetes, breast cancer and cognitive decline."
-        },
-        {
-          "id": "ew-10-q2",
-          "question": "Why are omega-3 fatty acids classified as \"essential\"?",
-          "options": [
-            "They taste essential",
-            "The body cannot produce them — they must come from food",
-            "They are only found in expensive foods",
-            "They are essential only for athletes"
-          ],
-          "correctIndex": 1,
-          "explanation": "Essential fatty acids are those the human body cannot synthesise on its own. Omega-3s (EPA and DHA) must come from diet. They are critical for brain structure, reducing inflammation, cardiovascular health and mood regulation."
-        },
-        {
-          "id": "ew-10-q3",
-          "question": "Which type of fat is considered most harmful to cardiovascular health?",
-          "options": [
-            "Saturated fat from dairy",
-            "Monounsaturated fat from olive oil",
-            "Trans fat (partially hydrogenated oils)",
-            "Omega-3 fat from fish"
-          ],
-          "correctIndex": 2,
-          "explanation": "Trans fats (partially hydrogenated oils) are the most harmful dietary fat — they raise LDL (bad) cholesterol, lower HDL (good) cholesterol and directly increase heart disease risk. Most developed countries have now banned or heavily restricted them in food production."
-        }
-      ]
-    },
-    {
-      "id": "ew-11-longevity-diet",
-      "dayNumber": 11,
-      "title": "The Longevity Diet: What the Research Says",
-      "subtitle": "What the world's longest-lived populations actually eat — and the evidence-based dietary patterns linked to a longer, healthier life",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-11-c1",
-          "front": "What is the Mediterranean diet and why is it so well-researched?",
-          "back": "The Mediterranean diet is the most studied dietary pattern in nutrition science, with decades of research linking it to reduced risk of heart disease, cancer, Alzheimer's, depression and all-cause mortality. It emphasises: abundant vegetables, fruits, legumes and whole grains; olive oil as the primary fat; regular fish; moderate dairy and poultry; limited red meat; and moderate wine with meals. It's a pattern of eating, not a strict regime."
-        },
-        {
-          "id": "ew-11-c2",
-          "front": "What do the \"Blue Zones\" teach us about diet and longevity?",
-          "back": "Blue Zones (Sardinia, Okinawa, Ikaria, Nicoya, Loma Linda) are regions with the world's highest concentrations of centenarians. Despite cultural differences, their diets share common patterns: predominantly plant-based, beans as a staple, minimal meat, unprocessed whole food, moderate calorie intake and meals eaten with others. None follow a specific named diet — they simply eat real, varied food in moderate amounts."
-        },
-        {
-          "id": "ew-11-c3",
-          "front": "What does Peter Attia's \"Outlive\" say about nutrition and longevity?",
-          "back": "Attia argues that the biggest dietary levers for longevity are: adequate protein (1.6g/kg+) to preserve muscle and avoid sarcopenia; limiting ultra-processed food; moderate calorie intake without chronic overconsumption; and time-restricted eating to support metabolic health. He is sceptical of extreme dietary dogma and emphasises personalised metabolic testing over one-size-fits-all prescriptions."
-        },
-        {
-          "id": "ew-11-c4",
-          "front": "What does Michael Greger's \"How Not to Die\" conclude about plant-based eating?",
-          "back": "Greger's analysis of the largest epidemiological studies concludes that a whole-food plant-based diet most consistently protects against the 15 leading causes of death, particularly heart disease, cancer and type 2 diabetes. He identifies his \"Daily Dozen\" — including dark leafy greens, berries, cruciferous vegetables, legumes, nuts and flaxseed — as the most evidence-backed longevity foods."
-        },
-        {
-          "id": "ew-11-c5",
-          "front": "What is the practical longevity nutrition summary?",
-          "back": "Despite expert disagreements on details, there is overwhelming consensus on the fundamentals: eat mostly whole plant foods; eat oily fish regularly; use olive oil; eat legumes frequently; minimise ultra-processed food and refined sugar; avoid smoking and excessive alcohol; maintain a healthy body weight. You don't need to pick a camp (carnivore, vegan, keto) — just follow the consensus fundamentals consistently."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-11-q1",
-          "question": "What do the \"Blue Zones\" — regions with the world's longest-lived populations — have in common nutritionally?",
-          "options": [
-            "They all follow strict ketogenic diets",
-            "They predominantly eat plant-based whole foods with beans as a staple",
-            "They eat very high amounts of animal protein",
-            "They fast for 3 days every week"
-          ],
-          "correctIndex": 1,
-          "explanation": "Despite being geographically and culturally diverse, all Blue Zone populations eat predominantly plant-based diets with beans as a staple, minimal meat, unprocessed whole food and moderate portion sizes. None follow a specific named dietary philosophy."
-        },
-        {
-          "id": "ew-11-q2",
-          "question": "According to the Mediterranean diet research, what is the primary cooking and dressing fat?",
-          "options": [
-            "Butter",
-            "Sunflower oil",
-            "Extra virgin olive oil",
-            "Coconut oil"
-          ],
-          "correctIndex": 2,
-          "explanation": "Extra virgin olive oil is the primary fat in the Mediterranean dietary pattern — used generously for cooking, dressing and dipping. It is a key source of monounsaturated fats and phenolic anti-inflammatory compounds linked to the diet's cardiovascular and cognitive benefits."
-        },
-        {
-          "id": "ew-11-q3",
-          "question": "What does Peter Attia identify as the most important dietary lever for longevity?",
-          "options": [
-            "Eliminating all carbohydrates",
-            "Adequate protein intake to preserve muscle and avoid sarcopenia",
-            "Eating only organic food",
-            "Drinking green tea three times per day"
-          ],
-          "correctIndex": 1,
-          "explanation": "Attia emphasises that preserving muscle mass through adequate protein intake (1.6g/kg+) is one of the most important nutritional strategies for longevity. Sarcopenia (muscle loss with age) is strongly linked to reduced healthspan and earlier death."
-        }
-      ]
-    },
-    {
-      "id": "ew-12-brain-food",
-      "dayNumber": 12,
-      "title": "Eating for Your Brain",
-      "subtitle": "How food shapes your mood, focus, memory and long-term cognitive health — and what to eat to protect your brain",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-12-c1",
-          "front": "How does food directly affect brain function?",
-          "back": "Your brain uses roughly 20% of your total energy despite being only 2% of your body weight. It needs a constant supply of glucose, oxygen and micronutrients. Critically, neurotransmitters (serotonin, dopamine, GABA) are synthesised from dietary amino acids and vitamins. What you eat also determines inflammation levels in the brain — and chronic neuroinflammation is now implicated in depression, anxiety, Alzheimer's and Parkinson's disease."
-        },
-        {
-          "id": "ew-12-c2",
-          "front": "What is the gut-brain axis and how does diet affect mood?",
-          "back": "The gut-brain axis is the biochemical signalling pathway between your gut and your brain. Your gut produces 90%+ of your serotonin and communicates via the vagus nerve, immune signals and hormones. Fermented foods (kefir, yoghurt, sauerkraut, kimchi) increase beneficial gut bacteria that produce mood-regulating compounds. A 2022 Stanford study found fermented food significantly reduced inflammatory markers and improved microbiome diversity."
-        },
-        {
-          "id": "ew-12-c3",
-          "front": "What are the best foods for brain health and cognitive protection?",
-          "back": "The MIND diet (a hybrid of Mediterranean and DASH diets, designed specifically for brain health) emphasises: leafy greens (6+ servings per week), berries (especially blueberries, 2+ per week), nuts, olive oil, whole grains, fish, legumes and poultry. These foods collectively reduce risk of Alzheimer's by up to 53% in observational studies — primarily through anti-inflammatory and antioxidant effects."
-        },
-        {
-          "id": "ew-12-c4",
-          "front": "How does blood sugar stability affect focus and cognition?",
-          "back": "Your brain is exquisitely sensitive to blood sugar fluctuations. When glucose is stable (through eating protein, fibre and healthy fats), focus and memory are sharp. When blood sugar spikes then crashes — from sugary food or skipping meals — the result is brain fog, difficulty concentrating, irritability and poor working memory. Stable blood sugar is one of the most controllable factors in daily cognitive performance."
-        },
-        {
-          "id": "ew-12-c5",
-          "front": "Which nutrients are most critical for long-term brain health?",
-          "back": "Key brain nutrients include: Omega-3 DHA (builds brain cell membranes — found in oily fish), B vitamins especially B12 and folate (essential for neurotransmitter synthesis and myelin sheath maintenance), vitamin D (neuroprotective — deficiency linked to depression and cognitive decline), magnesium (regulates NMDA receptors involved in learning and memory) and antioxidants (vitamin E, polyphenols — protect against oxidative brain damage)."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-12-q1",
-          "question": "What percentage of the body's total energy does the brain consume?",
-          "options": [
-            "5%",
-            "10%",
-            "20%",
-            "30%"
-          ],
-          "correctIndex": 2,
-          "explanation": "Despite being only 2% of body weight, the brain consumes approximately 20% of total energy expenditure. It requires a constant, steady supply of glucose, oxygen and nutrients — making stable blood sugar and nutrient-dense eating especially important for cognitive function."
-        },
-        {
-          "id": "ew-12-q2",
-          "question": "Which dietary pattern was specifically designed to protect brain health and reduce Alzheimer's risk?",
-          "options": [
-            "The Paleo diet",
-            "The MIND diet (Mediterranean-DASH for neurodegenerative delay)",
-            "The ketogenic diet",
-            "The Ornish diet"
-          ],
-          "correctIndex": 1,
-          "explanation": "The MIND diet was developed specifically to reduce dementia and Alzheimer's risk, combining elements of the Mediterranean and DASH diets. It emphasises leafy greens, berries, nuts, fish, olive oil and whole grains. Observational studies suggest it reduces Alzheimer's risk by up to 53%."
-        },
-        {
-          "id": "ew-12-q3",
-          "question": "Which omega-3 fatty acid is most important for brain cell structure?",
-          "options": [
-            "ALA (from flaxseed)",
-            "EPA (from fish oil)",
-            "DHA (from oily fish)",
-            "Linoleic acid"
-          ],
-          "correctIndex": 2,
-          "explanation": "DHA (docosahexaenoic acid) is the predominant omega-3 fatty acid in brain tissue and is essential for building and maintaining brain cell membranes. The brain is approximately 60% fat by dry weight, with DHA being one of its most abundant components. The richest food sources are oily fish."
-        }
-      ]
-    },
-    {
-      "id": "ew-13-meal-timing",
-      "dayNumber": 13,
-      "title": "Meal Timing: Does When You Eat Matter?",
-      "subtitle": "The science of circadian nutrition, time-restricted eating and whether breakfast is actually the most important meal of the day",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-13-c1",
-          "front": "Does the timing of meals affect metabolism and health?",
-          "back": "Yes — significantly. Your body has circadian clocks in virtually every organ that regulate metabolic processes on a 24-hour cycle. Insulin sensitivity, digestion speed and fat burning all vary by time of day. The body handles glucose more efficiently in the morning than in the evening. Eating in alignment with your circadian rhythm — more food earlier in the day, less at night — improves metabolic health markers."
-        },
-        {
-          "id": "ew-13-c2",
-          "front": "What is time-restricted eating (TRE) and what does the evidence say?",
-          "back": "Time-restricted eating means consuming all food within a set window (commonly 8–12 hours) and fasting for the remainder. Research shows TRE improves insulin sensitivity, reduces blood pressure, supports weight management and may improve cellular repair (autophagy). A practical approach: stop eating 2–3 hours before bed and delay breakfast 1–2 hours after waking. You don't need extreme fasting windows to get most of the benefit."
-        },
-        {
-          "id": "ew-13-c3",
-          "front": "Is breakfast the most important meal of the day?",
-          "back": "This claim has little scientific support — it was popularised partly by cereal manufacturers. Whether you eat breakfast matters far less than what you eat across the whole day. Some people genuinely perform better with a substantial morning meal; others function well without. What does matter: if you eat breakfast, make it high in protein and fibre (eggs, Greek yoghurt, oats) not ultra-processed cereal or pastries."
-        },
-        {
-          "id": "ew-13-c4",
-          "front": "Why is eating late at night problematic?",
-          "back": "Eating large meals close to bedtime disrupts multiple systems simultaneously: blood sugar rises and insulin is released when metabolic efficiency is lowest; digestion activity interferes with sleep quality; and it shortens your overnight fasting window, reducing time for cellular repair. Research consistently links late-night eating with worse metabolic health, poorer sleep and increased weight over time."
-        },
-        {
-          "id": "ew-13-c5",
-          "front": "How many meals per day is optimal?",
-          "back": "There is no universally optimal meal frequency. Three meals per day (with no snacking) tends to improve insulin sensitivity by allowing insulin levels to fall between meals. Constant grazing — eating every 1–2 hours — keeps insulin elevated all day, which may impair fat burning and metabolic health. The most important factors are total food quality and quantity across the day, not precise meal timing."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-13-q1",
-          "question": "When is insulin sensitivity highest — making the body best at processing glucose?",
-          "options": [
-            "Late at night",
-            "In the morning and early afternoon",
-            "During sleep",
-            "After midnight"
-          ],
-          "correctIndex": 1,
-          "explanation": "Circadian biology dictates that insulin sensitivity is highest in the morning and declines as the day progresses. This means the same meal causes a smaller blood sugar spike in the morning than in the evening — supporting the principle of eating more earlier and less later in the day."
-        },
-        {
-          "id": "ew-13-q2",
-          "question": "What eating window does most time-restricted eating research use?",
-          "options": [
-            "2–4 hours",
-            "5–6 hours",
-            "8–12 hours",
-            "16–18 hours"
-          ],
-          "correctIndex": 2,
-          "explanation": "Most research on time-restricted eating uses an 8–12 hour eating window, which typically means stopping food intake 2–3 hours before bed and waiting 1–2 hours after waking before eating. This modest restriction produces metabolic benefits without the difficulty of more extreme fasting protocols."
-        },
-        {
-          "id": "ew-13-q3",
-          "question": "What did research find about the claim that breakfast is \"the most important meal of the day\"?",
-          "options": [
-            "It is definitively true for everyone",
-            "The claim has little scientific support and was partly popularised by cereal manufacturers",
-            "It is true only for children",
-            "It is true only for athletes"
-          ],
-          "correctIndex": 1,
-          "explanation": "The idea that breakfast is universally the most important meal has little strong scientific backing. Observational correlations between breakfast-eating and better health may reflect general healthy-lifestyle habits rather than breakfast itself. The claim was actively marketed by cereal companies in the mid-20th century."
-        }
-      ]
-    },
-    {
-      "id": "ew-14-alcohol-sleep",
-      "dayNumber": 14,
-      "title": "Alcohol, Sleep and Recovery",
-      "subtitle": "What alcohol actually does to your body, how it disrupts sleep and recovery — and how to make informed choices",
-      "moduleId": "ew-mod-2",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "ew-14-c1",
-          "front": "What does alcohol actually do to the body?",
-          "back": "Alcohol (ethanol) is a toxin that the liver works hard to metabolise and eliminate. It is a depressant that initially relaxes inhibitions by boosting GABA activity, then disrupts multiple systems: liver function (fatty liver, cirrhosis over time), gut microbiome (kills beneficial bacteria), immune function, hormone balance and sleep architecture. Any health benefit from moderate drinking is now disputed by large-scale research."
-        },
-        {
-          "id": "ew-14-c2",
-          "front": "How does alcohol affect sleep quality?",
-          "back": "Alcohol makes you fall asleep faster — but dramatically worsens sleep quality. It suppresses REM sleep (critical for memory consolidation and emotional processing), increases sleep fragmentation in the second half of the night, and causes rebound wakefulness as it wears off. Matthew Walker (Why We Sleep) describes alcohol as \"one of the most powerful suppressors of REM sleep known.\" Even one or two drinks reduce sleep quality measurably."
-        },
-        {
-          "id": "ew-14-c3",
-          "front": "Is there a \"safe\" level of alcohol consumption?",
-          "back": "The position has shifted. Earlier research suggested a J-curve — light drinkers had better outcomes than non-drinkers. Larger, better-controlled studies (including a 2018 Lancet analysis of 700,000 people) found no safe level for cancer risk, particularly breast, colon and liver cancer. The WHO now states: \"No level of alcohol consumption is safe for our health.\" For most adults, modest consumption is low-risk, but zero is lowest-risk."
-        },
-        {
-          "id": "ew-14-c4",
-          "front": "What impact does alcohol have on body composition and nutrition?",
-          "back": "Alcohol provides 7 calories per gram — almost as calorie-dense as fat — but with zero nutritional value (no protein, vitamins or minerals). The liver prioritises metabolising alcohol over fat burning, effectively pausing fat oxidation for hours after drinking. It also stimulates appetite, reduces willpower over food choices, disrupts gut bacteria and impairs protein synthesis — making it directly counterproductive to most body composition goals."
-        },
-        {
-          "id": "ew-14-c5",
-          "front": "What is a practical, informed approach to alcohol?",
-          "back": "The goal isn't necessarily abstinence — it's informed decision-making. If you drink, minimise frequency and quantity, avoid drinking within 3 hours of bedtime (worst time for sleep), don't drink on an empty stomach, stay hydrated and have regular alcohol-free days. Tracking your actual intake honestly often reveals it's higher than assumed. Many people find reducing alcohol markedly improves sleep, energy, mood and body composition."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "ew-14-q1",
-          "question": "What type of sleep does alcohol most severely suppress?",
-          "options": [
-            "Deep slow-wave sleep (N3)",
-            "Light sleep (N1)",
-            "REM sleep (critical for memory and emotional processing)",
-            "Sleep onset"
-          ],
-          "correctIndex": 2,
-          "explanation": "Alcohol is a potent suppressor of REM sleep — the stage critical for memory consolidation, emotional regulation and creativity. Even moderate amounts significantly reduce REM sleep, particularly in the second half of the night, leaving you feeling unrestored despite adequate hours in bed."
-        },
-        {
-          "id": "ew-14-q2",
-          "question": "How many calories does alcohol provide per gram — and what nutritional value does it contain?",
-          "options": [
-            "4 calories per gram, with some vitamins",
-            "7 calories per gram, with zero nutritional value",
-            "9 calories per gram, with trace minerals",
-            "2 calories per gram, with antioxidants"
-          ],
-          "correctIndex": 1,
-          "explanation": "Alcohol provides 7 calories per gram — nearly as much as fat (9 cal/g) — but contains no protein, vitamins, minerals or other useful nutrients. These \"empty calories\" contribute to weight gain while delivering nothing to support health or performance."
-        },
-        {
-          "id": "ew-14-q3",
-          "question": "What did the 2018 Lancet analysis (700,000 people) conclude about safe levels of alcohol?",
-          "options": [
-            "One drink per day is safe for most adults",
-            "Red wine is protective for heart health",
-            "No level of alcohol consumption is completely safe for cancer risk",
-            "Alcohol is safe if consumed with food"
-          ],
-          "correctIndex": 2,
-          "explanation": "The 2018 Global Burden of Disease study in The Lancet found that while light drinking had minimal cardiovascular risk, there was no safe level for cancer — particularly breast, colon and liver cancer. The study concluded that the safest level of alcohol consumption for overall health is zero."
-        }
-      ]
-    },
-    {
       "id": "ew-1-foundations",
       "dayNumber": 1,
       "title": "The Foundations of Nutrition",
@@ -1074,6 +563,517 @@
           ],
           "correctIndex": 1,
           "explanation": "When the gut barrier is compromised (intestinal permeability), bacterial fragments and toxins enter the bloodstream. The immune system responds with chronic, low-grade inflammation throughout the body — now linked to autoimmune conditions, metabolic disease and depression."
+        }
+      ]
+    },
+    {
+      "id": "ew-8-blood-sugar",
+      "dayNumber": 8,
+      "title": "Blood Sugar Balance: The Energy Rollercoaster",
+      "subtitle": "Why blood sugar is the master switch for your daily energy — and how to keep it stable all day",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-8-c1",
+          "front": "What is blood sugar and why does it matter for daily energy?",
+          "back": "Blood sugar (blood glucose) is the main fuel your brain and cells run on. When it's stable, you feel alert, focused and energised. When it spikes and crashes — after refined carbs or sugary food — you experience the classic energy rollercoaster: a short burst of energy followed by fatigue, irritability, brain fog and cravings. Chronically unstable blood sugar is a root cause of type 2 diabetes and metabolic disease."
+        },
+        {
+          "id": "ew-8-c2",
+          "front": "What causes blood sugar spikes and crashes?",
+          "back": "Foods that digest quickly — refined carbohydrates, sugar, white bread, processed snacks, sugary drinks — flood the bloodstream with glucose rapidly. The body responds by releasing a large dose of insulin to clear the glucose. If insulin overshoots, blood sugar drops sharply, triggering fatigue, hunger and cravings for more sugar. This cycle repeats throughout the day in people eating a typical Western diet."
+        },
+        {
+          "id": "ew-8-c3",
+          "front": "Which foods keep blood sugar stable?",
+          "back": "Foods high in fibre, protein and healthy fat slow glucose absorption and produce gradual, sustained energy. These include: vegetables, legumes (lentils, chickpeas, beans), whole grains (oats, quinoa, brown rice), eggs, nuts, seeds and quality protein. They have a low glycaemic impact — they raise blood sugar slowly without triggering a large insulin spike."
+        },
+        {
+          "id": "ew-8-c4",
+          "front": "What is the \"food order\" trick for better blood sugar?",
+          "back": "Research by Dr Jessie Inchauspé (Glucose Goddess) shows that the order in which you eat your food significantly affects blood sugar response. Eating vegetables and protein before carbohydrates at any meal reduces post-meal glucose spikes by up to 73%. Start with salad or vegetables, then protein/fat, and eat carbohydrates last. This requires no change to what you eat — just the sequence."
+        },
+        {
+          "id": "ew-8-c5",
+          "front": "What is insulin resistance and how does food cause it?",
+          "back": "Insulin resistance occurs when cells become less responsive to insulin — requiring the pancreas to produce more and more to do the same job. Over years, this leads to chronically elevated blood sugar, weight gain (particularly around the abdomen), fatigue, brain fog and eventually type 2 diabetes. It's primarily caused by chronically eating too many refined carbohydrates and ultra-processed food, combined with inactivity."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-8-q1",
+          "question": "What causes the classic energy \"crash\" about an hour after eating sugary food?",
+          "options": [
+            "The food runs out of vitamins",
+            "Insulin overshoots, dropping blood sugar too low after a spike",
+            "You need to drink more water",
+            "Your metabolism speeds up temporarily"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sugary or refined food causes a rapid blood glucose spike, triggering a large insulin release. If insulin production overshoots, blood sugar drops below normal levels, causing fatigue, brain fog, irritability and hunger — the classic energy crash."
+        },
+        {
+          "id": "ew-8-q2",
+          "question": "According to research on food order, eating vegetables and protein before carbohydrates can reduce post-meal glucose spikes by how much?",
+          "options": [
+            "10–15%",
+            "20–30%",
+            "Up to 73%",
+            "Up to 90%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research published by Dr Jessie Inchauspé shows that eating vegetables first, then protein/fat, then carbohydrates at the same meal can reduce the post-meal glucose spike by up to 73% — with no change to what you eat, just the order."
+        },
+        {
+          "id": "ew-8-q3",
+          "question": "Which of these foods is best for stable blood sugar?",
+          "options": [
+            "White bread with jam",
+            "Sugary breakfast cereal with skimmed milk",
+            "Lentils with vegetables and olive oil",
+            "A commercial energy drink"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lentils are high in fibre and protein, slowing glucose absorption and producing a gradual, sustained energy release. The vegetables add further fibre and micronutrients, while olive oil slows digestion. This combination creates a low glycaemic response."
+        }
+      ]
+    },
+    {
+      "id": "ew-9-protein-muscle",
+      "dayNumber": 9,
+      "title": "Protein and Muscle: Eating to Stay Strong",
+      "subtitle": "Why protein is the most important macronutrient for body composition, strength and long-term independence",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-9-c1",
+          "front": "Why is protein so important beyond just building muscle?",
+          "back": "Protein is the structural material of your body — it builds and repairs muscle, bone, skin, hair, enzymes, hormones and antibodies. Every cell depends on proteins. Adequate protein intake reduces appetite (it's the most satiating macronutrient), preserves lean muscle during weight loss, supports immune function and slows age-related muscle loss (sarcopenia). Peter Attia calls protein \"the most underconsumed macronutrient.\""
+        },
+        {
+          "id": "ew-9-c2",
+          "front": "What is muscle protein synthesis and why does it matter?",
+          "back": "Muscle protein synthesis (MPS) is the process by which your body builds new muscle tissue. It's triggered by two things: resistance exercise and dietary protein. Your body constantly breaks down old muscle protein (muscle protein breakdown) and rebuilds it. When synthesis exceeds breakdown — through adequate protein and exercise — you maintain or build muscle. When breakdown exceeds synthesis — through low protein or inactivity — you gradually lose it."
+        },
+        {
+          "id": "ew-9-c3",
+          "front": "What are the best protein sources?",
+          "back": "Complete proteins (containing all essential amino acids) include: eggs, dairy (Greek yoghurt, cottage cheese), meat, poultry, fish and seafood. Plant-based complete proteins include: soy (edamame, tofu, tempeh), quinoa and hemp seeds. Incomplete plant proteins (legumes, nuts, grains) can be combined over the day to provide all essential amino acids. Variety across sources ensures a full amino acid spectrum."
+        },
+        {
+          "id": "ew-9-c4",
+          "front": "Does spreading protein intake throughout the day matter?",
+          "back": "Yes. Research suggests the body can only use roughly 30–40g of protein per meal for muscle protein synthesis — excess is used for energy or excreted. Spreading protein across 3–4 meals (rather than eating it all at dinner) maximises muscle-building signals throughout the day. Aim for 20–40g protein per meal rather than a single large dose."
+        },
+        {
+          "id": "ew-9-c5",
+          "front": "Can you eat too much protein?",
+          "back": "For healthy adults, eating up to 2–2.5g/kg body weight is well tolerated and safe according to current research. The concern about kidney damage from high protein is largely relevant to people with pre-existing kidney disease, not healthy individuals. The more common problem is eating too little protein — especially over 50, when muscle loss accelerates and protein needs increase."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-9-q1",
+          "question": "What are the two main triggers for muscle protein synthesis?",
+          "options": [
+            "Sleeping and eating carbohydrates",
+            "Resistance exercise and dietary protein",
+            "Cardio exercise and dietary fat",
+            "Hydration and vitamin D"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle protein synthesis — the rebuilding of muscle tissue — is primarily stimulated by resistance exercise (strength training) and adequate dietary protein. Both signals together produce much greater muscle-building response than either alone."
+        },
+        {
+          "id": "ew-9-q2",
+          "question": "Approximately how much protein per meal can the body use for muscle synthesis?",
+          "options": [
+            "5–10g",
+            "15–20g",
+            "30–40g",
+            "60–80g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research suggests the body can utilise roughly 30–40g of protein per meal for muscle protein synthesis. Eating more than this at once doesn't produce proportionally greater muscle-building — which is why distributing protein across 3–4 meals is more effective than eating most of it in one sitting."
+        },
+        {
+          "id": "ew-9-q3",
+          "question": "Which of these is a plant-based complete protein source?",
+          "options": [
+            "Brown rice",
+            "Chickpeas",
+            "Tofu (soy)",
+            "Almonds"
+          ],
+          "correctIndex": 2,
+          "explanation": "Soy products like tofu, tempeh and edamame are among the few plant foods that contain all essential amino acids in adequate amounts — making them complete proteins. Brown rice, chickpeas and almonds are incomplete proteins that benefit from being combined with other plant protein sources."
+        }
+      ]
+    },
+    {
+      "id": "ew-10-healthy-fats",
+      "dayNumber": 10,
+      "title": "Healthy Fats: What to Eat and What to Avoid",
+      "subtitle": "Rehabilitating dietary fat — understanding omega-3s, olive oil and why the right fats are essential for brain and heart health",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-10-c1",
+          "front": "Why did dietary fat get such a bad reputation?",
+          "back": "In the 1960s–1980s, flawed research (partly funded by the sugar industry) led to the conclusion that dietary fat — especially saturated fat — caused heart disease. The resulting \"low-fat\" movement caused fat to be replaced with refined carbohydrates and sugar in processed foods, which almost certainly made the obesity and diabetes epidemics worse. The science has now shifted significantly: fat type matters far more than fat quantity."
+        },
+        {
+          "id": "ew-10-c2",
+          "front": "What are omega-3 fatty acids and why are they so important?",
+          "back": "Omega-3s (particularly EPA and DHA) are essential fatty acids — your body can't make them, so you must eat them. They build cell membranes throughout the body (especially the brain, which is 60% fat), reduce inflammation, protect cardiovascular health, support mood and reduce depression risk. The richest sources are oily fish: salmon, mackerel, sardines, anchovies and herring. Plant-based sources (flaxseed, walnuts, chia) provide ALA, which converts to DHA less efficiently."
+        },
+        {
+          "id": "ew-10-c3",
+          "front": "Why is extra virgin olive oil considered the gold standard cooking fat?",
+          "back": "Extra virgin olive oil (EVOO) is rich in oleic acid (a monounsaturated fat) and over 30 phenolic compounds with powerful anti-inflammatory properties. The PREDIMED study — the largest dietary intervention trial of its kind — found that a Mediterranean diet supplemented with extra EVOO reduced cardiovascular events by 30% and reduced risk of type 2 diabetes, breast cancer and cognitive decline. Use it generously on salads and for low-to-medium heat cooking."
+        },
+        {
+          "id": "ew-10-c4",
+          "front": "What fats should you limit or avoid?",
+          "back": "Trans fats (partially hydrogenated oils, found in some processed foods and margarines) are the most harmful — they raise LDL cholesterol, lower HDL cholesterol and directly increase heart disease risk. Most developed countries have now banned or restricted them. Excess refined seed oils (corn oil, sunflower oil, soybean oil) — high in omega-6 and used in most processed food — may promote inflammation when they heavily outweigh omega-3 intake."
+        },
+        {
+          "id": "ew-10-c5",
+          "front": "What is the most practical fat-related nutrition change most people can make?",
+          "back": "Replace the fats you cook with. Swap refined vegetable oils (sunflower, vegetable blends) for extra virgin olive oil. Eat oily fish 2–3 times per week for omega-3s. Snack on nuts (especially walnuts) and avocado rather than processed snacks. These three changes shift your fat profile significantly toward anti-inflammatory, heart-protective patterns without requiring major dietary overhaul."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-10-q1",
+          "question": "What did the PREDIMED study find about extra virgin olive oil and cardiovascular health?",
+          "options": [
+            "It had no significant effect",
+            "It increased cardiovascular risk",
+            "A Mediterranean diet with extra EVOO reduced cardiovascular events by 30%",
+            "Only Spanish people benefited"
+          ],
+          "correctIndex": 2,
+          "explanation": "The PREDIMED trial found that a Mediterranean diet supplemented with extra virgin olive oil (or nuts) reduced major cardiovascular events by 30% compared to a low-fat diet control. It also reduced risk of type 2 diabetes, breast cancer and cognitive decline."
+        },
+        {
+          "id": "ew-10-q2",
+          "question": "Why are omega-3 fatty acids classified as \"essential\"?",
+          "options": [
+            "They taste essential",
+            "The body cannot produce them — they must come from food",
+            "They are only found in expensive foods",
+            "They are essential only for athletes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Essential fatty acids are those the human body cannot synthesise on its own. Omega-3s (EPA and DHA) must come from diet. They are critical for brain structure, reducing inflammation, cardiovascular health and mood regulation."
+        },
+        {
+          "id": "ew-10-q3",
+          "question": "Which type of fat is considered most harmful to cardiovascular health?",
+          "options": [
+            "Saturated fat from dairy",
+            "Monounsaturated fat from olive oil",
+            "Trans fat (partially hydrogenated oils)",
+            "Omega-3 fat from fish"
+          ],
+          "correctIndex": 2,
+          "explanation": "Trans fats (partially hydrogenated oils) are the most harmful dietary fat — they raise LDL (bad) cholesterol, lower HDL (good) cholesterol and directly increase heart disease risk. Most developed countries have now banned or heavily restricted them in food production."
+        }
+      ]
+    },
+    {
+      "id": "ew-11-longevity-diet",
+      "dayNumber": 11,
+      "title": "The Longevity Diet: What the Research Says",
+      "subtitle": "What the world's longest-lived populations actually eat — and the evidence-based dietary patterns linked to a longer, healthier life",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-11-c1",
+          "front": "What is the Mediterranean diet and why is it so well-researched?",
+          "back": "The Mediterranean diet is the most studied dietary pattern in nutrition science, with decades of research linking it to reduced risk of heart disease, cancer, Alzheimer's, depression and all-cause mortality. It emphasises: abundant vegetables, fruits, legumes and whole grains; olive oil as the primary fat; regular fish; moderate dairy and poultry; limited red meat; and moderate wine with meals. It's a pattern of eating, not a strict regime."
+        },
+        {
+          "id": "ew-11-c2",
+          "front": "What do the \"Blue Zones\" teach us about diet and longevity?",
+          "back": "Blue Zones (Sardinia, Okinawa, Ikaria, Nicoya, Loma Linda) are regions with the world's highest concentrations of centenarians. Despite cultural differences, their diets share common patterns: predominantly plant-based, beans as a staple, minimal meat, unprocessed whole food, moderate calorie intake and meals eaten with others. None follow a specific named diet — they simply eat real, varied food in moderate amounts."
+        },
+        {
+          "id": "ew-11-c3",
+          "front": "What does Peter Attia's \"Outlive\" say about nutrition and longevity?",
+          "back": "Attia argues that the biggest dietary levers for longevity are: adequate protein (1.6g/kg+) to preserve muscle and avoid sarcopenia; limiting ultra-processed food; moderate calorie intake without chronic overconsumption; and time-restricted eating to support metabolic health. He is sceptical of extreme dietary dogma and emphasises personalised metabolic testing over one-size-fits-all prescriptions."
+        },
+        {
+          "id": "ew-11-c4",
+          "front": "What does Michael Greger's \"How Not to Die\" conclude about plant-based eating?",
+          "back": "Greger's analysis of the largest epidemiological studies concludes that a whole-food plant-based diet most consistently protects against the 15 leading causes of death, particularly heart disease, cancer and type 2 diabetes. He identifies his \"Daily Dozen\" — including dark leafy greens, berries, cruciferous vegetables, legumes, nuts and flaxseed — as the most evidence-backed longevity foods."
+        },
+        {
+          "id": "ew-11-c5",
+          "front": "What is the practical longevity nutrition summary?",
+          "back": "Despite expert disagreements on details, there is overwhelming consensus on the fundamentals: eat mostly whole plant foods; eat oily fish regularly; use olive oil; eat legumes frequently; minimise ultra-processed food and refined sugar; avoid smoking and excessive alcohol; maintain a healthy body weight. You don't need to pick a camp (carnivore, vegan, keto) — just follow the consensus fundamentals consistently."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-11-q1",
+          "question": "What do the \"Blue Zones\" — regions with the world's longest-lived populations — have in common nutritionally?",
+          "options": [
+            "They all follow strict ketogenic diets",
+            "They predominantly eat plant-based whole foods with beans as a staple",
+            "They eat very high amounts of animal protein",
+            "They fast for 3 days every week"
+          ],
+          "correctIndex": 1,
+          "explanation": "Despite being geographically and culturally diverse, all Blue Zone populations eat predominantly plant-based diets with beans as a staple, minimal meat, unprocessed whole food and moderate portion sizes. None follow a specific named dietary philosophy."
+        },
+        {
+          "id": "ew-11-q2",
+          "question": "According to the Mediterranean diet research, what is the primary cooking and dressing fat?",
+          "options": [
+            "Butter",
+            "Sunflower oil",
+            "Extra virgin olive oil",
+            "Coconut oil"
+          ],
+          "correctIndex": 2,
+          "explanation": "Extra virgin olive oil is the primary fat in the Mediterranean dietary pattern — used generously for cooking, dressing and dipping. It is a key source of monounsaturated fats and phenolic anti-inflammatory compounds linked to the diet's cardiovascular and cognitive benefits."
+        },
+        {
+          "id": "ew-11-q3",
+          "question": "What does Peter Attia identify as the most important dietary lever for longevity?",
+          "options": [
+            "Eliminating all carbohydrates",
+            "Adequate protein intake to preserve muscle and avoid sarcopenia",
+            "Eating only organic food",
+            "Drinking green tea three times per day"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attia emphasises that preserving muscle mass through adequate protein intake (1.6g/kg+) is one of the most important nutritional strategies for longevity. Sarcopenia (muscle loss with age) is strongly linked to reduced healthspan and earlier death."
+        }
+      ]
+    },
+    {
+      "id": "ew-12-brain-food",
+      "dayNumber": 12,
+      "title": "Eating for Your Brain",
+      "subtitle": "How food shapes your mood, focus, memory and long-term cognitive health — and what to eat to protect your brain",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-12-c1",
+          "front": "How does food directly affect brain function?",
+          "back": "Your brain uses roughly 20% of your total energy despite being only 2% of your body weight. It needs a constant supply of glucose, oxygen and micronutrients. Critically, neurotransmitters (serotonin, dopamine, GABA) are synthesised from dietary amino acids and vitamins. What you eat also determines inflammation levels in the brain — and chronic neuroinflammation is now implicated in depression, anxiety, Alzheimer's and Parkinson's disease."
+        },
+        {
+          "id": "ew-12-c2",
+          "front": "What is the gut-brain axis and how does diet affect mood?",
+          "back": "The gut-brain axis is the biochemical signalling pathway between your gut and your brain. Your gut produces 90%+ of your serotonin and communicates via the vagus nerve, immune signals and hormones. Fermented foods (kefir, yoghurt, sauerkraut, kimchi) increase beneficial gut bacteria that produce mood-regulating compounds. A 2022 Stanford study found fermented food significantly reduced inflammatory markers and improved microbiome diversity."
+        },
+        {
+          "id": "ew-12-c3",
+          "front": "What are the best foods for brain health and cognitive protection?",
+          "back": "The MIND diet (a hybrid of Mediterranean and DASH diets, designed specifically for brain health) emphasises: leafy greens (6+ servings per week), berries (especially blueberries, 2+ per week), nuts, olive oil, whole grains, fish, legumes and poultry. These foods collectively reduce risk of Alzheimer's by up to 53% in observational studies — primarily through anti-inflammatory and antioxidant effects."
+        },
+        {
+          "id": "ew-12-c4",
+          "front": "How does blood sugar stability affect focus and cognition?",
+          "back": "Your brain is exquisitely sensitive to blood sugar fluctuations. When glucose is stable (through eating protein, fibre and healthy fats), focus and memory are sharp. When blood sugar spikes then crashes — from sugary food or skipping meals — the result is brain fog, difficulty concentrating, irritability and poor working memory. Stable blood sugar is one of the most controllable factors in daily cognitive performance."
+        },
+        {
+          "id": "ew-12-c5",
+          "front": "Which nutrients are most critical for long-term brain health?",
+          "back": "Key brain nutrients include: Omega-3 DHA (builds brain cell membranes — found in oily fish), B vitamins especially B12 and folate (essential for neurotransmitter synthesis and myelin sheath maintenance), vitamin D (neuroprotective — deficiency linked to depression and cognitive decline), magnesium (regulates NMDA receptors involved in learning and memory) and antioxidants (vitamin E, polyphenols — protect against oxidative brain damage)."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-12-q1",
+          "question": "What percentage of the body's total energy does the brain consume?",
+          "options": [
+            "5%",
+            "10%",
+            "20%",
+            "30%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Despite being only 2% of body weight, the brain consumes approximately 20% of total energy expenditure. It requires a constant, steady supply of glucose, oxygen and nutrients — making stable blood sugar and nutrient-dense eating especially important for cognitive function."
+        },
+        {
+          "id": "ew-12-q2",
+          "question": "Which dietary pattern was specifically designed to protect brain health and reduce Alzheimer's risk?",
+          "options": [
+            "The Paleo diet",
+            "The MIND diet (Mediterranean-DASH for neurodegenerative delay)",
+            "The ketogenic diet",
+            "The Ornish diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "The MIND diet was developed specifically to reduce dementia and Alzheimer's risk, combining elements of the Mediterranean and DASH diets. It emphasises leafy greens, berries, nuts, fish, olive oil and whole grains. Observational studies suggest it reduces Alzheimer's risk by up to 53%."
+        },
+        {
+          "id": "ew-12-q3",
+          "question": "Which omega-3 fatty acid is most important for brain cell structure?",
+          "options": [
+            "ALA (from flaxseed)",
+            "EPA (from fish oil)",
+            "DHA (from oily fish)",
+            "Linoleic acid"
+          ],
+          "correctIndex": 2,
+          "explanation": "DHA (docosahexaenoic acid) is the predominant omega-3 fatty acid in brain tissue and is essential for building and maintaining brain cell membranes. The brain is approximately 60% fat by dry weight, with DHA being one of its most abundant components. The richest food sources are oily fish."
+        }
+      ]
+    },
+    {
+      "id": "ew-13-meal-timing",
+      "dayNumber": 13,
+      "title": "Meal Timing: Does When You Eat Matter?",
+      "subtitle": "The science of circadian nutrition, time-restricted eating and whether breakfast is actually the most important meal of the day",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-13-c1",
+          "front": "Does the timing of meals affect metabolism and health?",
+          "back": "Yes — significantly. Your body has circadian clocks in virtually every organ that regulate metabolic processes on a 24-hour cycle. Insulin sensitivity, digestion speed and fat burning all vary by time of day. The body handles glucose more efficiently in the morning than in the evening. Eating in alignment with your circadian rhythm — more food earlier in the day, less at night — improves metabolic health markers."
+        },
+        {
+          "id": "ew-13-c2",
+          "front": "What is time-restricted eating (TRE) and what does the evidence say?",
+          "back": "Time-restricted eating means consuming all food within a set window (commonly 8–12 hours) and fasting for the remainder. Research shows TRE improves insulin sensitivity, reduces blood pressure, supports weight management and may improve cellular repair (autophagy). A practical approach: stop eating 2–3 hours before bed and delay breakfast 1–2 hours after waking. You don't need extreme fasting windows to get most of the benefit."
+        },
+        {
+          "id": "ew-13-c3",
+          "front": "Is breakfast the most important meal of the day?",
+          "back": "This claim has little scientific support — it was popularised partly by cereal manufacturers. Whether you eat breakfast matters far less than what you eat across the whole day. Some people genuinely perform better with a substantial morning meal; others function well without. What does matter: if you eat breakfast, make it high in protein and fibre (eggs, Greek yoghurt, oats) not ultra-processed cereal or pastries."
+        },
+        {
+          "id": "ew-13-c4",
+          "front": "Why is eating late at night problematic?",
+          "back": "Eating large meals close to bedtime disrupts multiple systems simultaneously: blood sugar rises and insulin is released when metabolic efficiency is lowest; digestion activity interferes with sleep quality; and it shortens your overnight fasting window, reducing time for cellular repair. Research consistently links late-night eating with worse metabolic health, poorer sleep and increased weight over time."
+        },
+        {
+          "id": "ew-13-c5",
+          "front": "How many meals per day is optimal?",
+          "back": "There is no universally optimal meal frequency. Three meals per day (with no snacking) tends to improve insulin sensitivity by allowing insulin levels to fall between meals. Constant grazing — eating every 1–2 hours — keeps insulin elevated all day, which may impair fat burning and metabolic health. The most important factors are total food quality and quantity across the day, not precise meal timing."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-13-q1",
+          "question": "When is insulin sensitivity highest — making the body best at processing glucose?",
+          "options": [
+            "Late at night",
+            "In the morning and early afternoon",
+            "During sleep",
+            "After midnight"
+          ],
+          "correctIndex": 1,
+          "explanation": "Circadian biology dictates that insulin sensitivity is highest in the morning and declines as the day progresses. This means the same meal causes a smaller blood sugar spike in the morning than in the evening — supporting the principle of eating more earlier and less later in the day."
+        },
+        {
+          "id": "ew-13-q2",
+          "question": "What eating window does most time-restricted eating research use?",
+          "options": [
+            "2–4 hours",
+            "5–6 hours",
+            "8–12 hours",
+            "16–18 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Most research on time-restricted eating uses an 8–12 hour eating window, which typically means stopping food intake 2–3 hours before bed and waiting 1–2 hours after waking before eating. This modest restriction produces metabolic benefits without the difficulty of more extreme fasting protocols."
+        },
+        {
+          "id": "ew-13-q3",
+          "question": "What did research find about the claim that breakfast is \"the most important meal of the day\"?",
+          "options": [
+            "It is definitively true for everyone",
+            "The claim has little scientific support and was partly popularised by cereal manufacturers",
+            "It is true only for children",
+            "It is true only for athletes"
+          ],
+          "correctIndex": 1,
+          "explanation": "The idea that breakfast is universally the most important meal has little strong scientific backing. Observational correlations between breakfast-eating and better health may reflect general healthy-lifestyle habits rather than breakfast itself. The claim was actively marketed by cereal companies in the mid-20th century."
+        }
+      ]
+    },
+    {
+      "id": "ew-14-alcohol-sleep",
+      "dayNumber": 14,
+      "title": "Alcohol, Sleep and Recovery",
+      "subtitle": "What alcohol actually does to your body, how it disrupts sleep and recovery — and how to make informed choices",
+      "moduleId": "ew-mod-2",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "ew-14-c1",
+          "front": "What does alcohol actually do to the body?",
+          "back": "Alcohol (ethanol) is a toxin that the liver works hard to metabolise and eliminate. It is a depressant that initially relaxes inhibitions by boosting GABA activity, then disrupts multiple systems: liver function (fatty liver, cirrhosis over time), gut microbiome (kills beneficial bacteria), immune function, hormone balance and sleep architecture. Any health benefit from moderate drinking is now disputed by large-scale research."
+        },
+        {
+          "id": "ew-14-c2",
+          "front": "How does alcohol affect sleep quality?",
+          "back": "Alcohol makes you fall asleep faster — but dramatically worsens sleep quality. It suppresses REM sleep (critical for memory consolidation and emotional processing), increases sleep fragmentation in the second half of the night, and causes rebound wakefulness as it wears off. Matthew Walker (Why We Sleep) describes alcohol as \"one of the most powerful suppressors of REM sleep known.\" Even one or two drinks reduce sleep quality measurably."
+        },
+        {
+          "id": "ew-14-c3",
+          "front": "Is there a \"safe\" level of alcohol consumption?",
+          "back": "The position has shifted. Earlier research suggested a J-curve — light drinkers had better outcomes than non-drinkers. Larger, better-controlled studies (including a 2018 Lancet analysis of 700,000 people) found no safe level for cancer risk, particularly breast, colon and liver cancer. The WHO now states: \"No level of alcohol consumption is safe for our health.\" For most adults, modest consumption is low-risk, but zero is lowest-risk."
+        },
+        {
+          "id": "ew-14-c4",
+          "front": "What impact does alcohol have on body composition and nutrition?",
+          "back": "Alcohol provides 7 calories per gram — almost as calorie-dense as fat — but with zero nutritional value (no protein, vitamins or minerals). The liver prioritises metabolising alcohol over fat burning, effectively pausing fat oxidation for hours after drinking. It also stimulates appetite, reduces willpower over food choices, disrupts gut bacteria and impairs protein synthesis — making it directly counterproductive to most body composition goals."
+        },
+        {
+          "id": "ew-14-c5",
+          "front": "What is a practical, informed approach to alcohol?",
+          "back": "The goal isn't necessarily abstinence — it's informed decision-making. If you drink, minimise frequency and quantity, avoid drinking within 3 hours of bedtime (worst time for sleep), don't drink on an empty stomach, stay hydrated and have regular alcohol-free days. Tracking your actual intake honestly often reveals it's higher than assumed. Many people find reducing alcohol markedly improves sleep, energy, mood and body composition."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ew-14-q1",
+          "question": "What type of sleep does alcohol most severely suppress?",
+          "options": [
+            "Deep slow-wave sleep (N3)",
+            "Light sleep (N1)",
+            "REM sleep (critical for memory and emotional processing)",
+            "Sleep onset"
+          ],
+          "correctIndex": 2,
+          "explanation": "Alcohol is a potent suppressor of REM sleep — the stage critical for memory consolidation, emotional regulation and creativity. Even moderate amounts significantly reduce REM sleep, particularly in the second half of the night, leaving you feeling unrestored despite adequate hours in bed."
+        },
+        {
+          "id": "ew-14-q2",
+          "question": "How many calories does alcohol provide per gram — and what nutritional value does it contain?",
+          "options": [
+            "4 calories per gram, with some vitamins",
+            "7 calories per gram, with zero nutritional value",
+            "9 calories per gram, with trace minerals",
+            "2 calories per gram, with antioxidants"
+          ],
+          "correctIndex": 1,
+          "explanation": "Alcohol provides 7 calories per gram — nearly as much as fat (9 cal/g) — but contains no protein, vitamins, minerals or other useful nutrients. These \"empty calories\" contribute to weight gain while delivering nothing to support health or performance."
+        },
+        {
+          "id": "ew-14-q3",
+          "question": "What did the 2018 Lancet analysis (700,000 people) conclude about safe levels of alcohol?",
+          "options": [
+            "One drink per day is safe for most adults",
+            "Red wine is protective for heart health",
+            "No level of alcohol consumption is completely safe for cancer risk",
+            "Alcohol is safe if consumed with food"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 2018 Global Burden of Disease study in The Lancet found that while light drinking had minimal cardiovascular risk, there was no safe level for cancer — particularly breast, colon and liver cancer. The study concluded that the safest level of alcohol consumption for overall health is zero."
         }
       ]
     },

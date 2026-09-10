@@ -1,9 +1,22 @@
 import { Hono } from 'hono'
 import { z } from 'zod'
-import { cancelOwnSubscription, createPortalSession, getMine } from '../lib/subscription.js'
+import {
+  BillingError,
+  cancelOwnSubscription,
+  createPortalSession,
+  getMine,
+} from '../lib/subscription.js'
 import { loadCurrentUser } from '../lib/currentUser.js'
 import { publicOrigin } from '../lib/http.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
+
+function billingFailure(error: unknown, fallback: string) {
+  if (error instanceof BillingError) {
+    return { error: error.message, status: error.status } as const
+  }
+  const message = error instanceof Error && error.message ? error.message : fallback
+  return { error: message, status: 400 as const }
+}
 
 const portalSchema = z.object({
   returnUrl: z.string().optional(),
@@ -26,8 +39,8 @@ subscriptionRoutes.post('/me/subscription/portal', requireAuth, async (c) => {
   try {
     return c.json(await createPortalSession(c.get('userId'), user.email, returnUrl))
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Portal unavailable'
-    return c.json({ error: message }, 400)
+    const failure = billingFailure(error, 'Portal unavailable')
+    return c.json({ error: failure.error }, failure.status)
   }
 })
 
@@ -37,7 +50,7 @@ subscriptionRoutes.post('/me/subscription/cancel', requireAuth, async (c) => {
   try {
     return c.json(await cancelOwnSubscription(c.get('userId'), user.email))
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Cancel failed'
-    return c.json({ error: message }, 400)
+    const failure = billingFailure(error, 'Cancel failed')
+    return c.json({ error: failure.error }, failure.status)
   }
 })

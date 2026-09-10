@@ -70,14 +70,113 @@ export function hasCourseFile(slug: string) {
   return Boolean(loaderPath(slug))
 }
 
+export function orderedLessons(lessons: CourseLesson[]) {
+  return [...lessons].sort((a, b) => a.dayNumber - b.dayNumber || a.id.localeCompare(b.id))
+}
+
+export function normalizeCourse(course: Course): Course {
+  const seen = new Set<string>()
+  const lessons: CourseLesson[] = []
+  for (const lesson of course.lessons) {
+    if (seen.has(lesson.id)) continue
+    seen.add(lesson.id)
+    lessons.push(lesson)
+  }
+  return { ...course, lessons: orderedLessons(lessons) }
+}
+
+export function nextIncompleteLesson(lessons: CourseLesson[], done: Set<string>) {
+  const ordered = orderedLessons(lessons)
+  return ordered.find((lesson) => !done.has(lesson.id)) ?? ordered[0]
+}
+
+export function lessonAfter(lessons: CourseLesson[], currentId: string) {
+  const ordered = orderedLessons(lessons)
+  const index = ordered.findIndex((lesson) => lesson.id === currentId)
+  return index >= 0 ? ordered[index + 1] : undefined
+}
+
+export function completedSlugs(
+  rows: Array<{ courseId: string; lessonSlug: string; status: string }>,
+  courseSlug: string,
+) {
+  return new Set(
+    rows.filter((row) => row.courseId === courseSlug && row.status === 'completed').map((row) => row.lessonSlug),
+  )
+}
+
+/** Resume the last opened lesson, or the next one after it if that lesson is already done. */
+export function continueLessonInCourse(course: Course, done: Set<string>, preferSlug?: string) {
+  const ordered = orderedLessons(course.lessons)
+  if (!ordered.length) return undefined
+  if (preferSlug) {
+    const index = ordered.findIndex((item) => item.id === preferSlug)
+    if (index >= 0) {
+      if (!done.has(preferSlug)) return ordered[index]
+      const after = ordered.slice(index + 1).find((item) => !done.has(item.id))
+      if (after) return after
+    }
+  }
+  return nextIncompleteLesson(ordered, done)
+}
+
+export function pickHomeContinue(args: {
+  lastOpened?: { courseId: string; lessonSlug: string } | null
+  lastCourse: Course | null | undefined
+  fallbackSlug: string
+  fallbackCourse: Course | null | undefined
+  progress: Array<{ courseId: string; lessonSlug: string; status: string }>
+}): { course: Course; lesson: CourseLesson; courseSlug: string } | null {
+  const lastSlug = args.lastOpened?.courseId
+  const last = args.lastCourse
+  if (lastSlug && last && last.lessons.length) {
+    const done = completedSlugs(args.progress, lastSlug)
+    const allDone = last.lessons.every((item) => done.has(item.id))
+    if (!allDone) {
+      const lesson = continueLessonInCourse(last, done, args.lastOpened?.lessonSlug)
+      if (lesson) return { course: last, lesson, courseSlug: lastSlug }
+    }
+  }
+
+  const fallback = args.fallbackCourse
+  if (fallback && fallback.lessons.length) {
+    const lesson = continueLessonInCourse(fallback, completedSlugs(args.progress, args.fallbackSlug))
+    if (lesson) return { course: fallback, lesson, courseSlug: args.fallbackSlug }
+  }
+  return null
+}
+
+export function pickPathContinueCard<T extends { id: string; lessons?: number }>(args: {
+  cards: T[]
+  lastOpened?: { courseId: string } | null
+  completed: Array<{ courseId: string }>
+  isLive: (id: string) => boolean
+}): T | undefined {
+  const doneCount = (id: string) => args.completed.filter((row) => row.courseId === id).length
+  const incomplete = (card: T) => {
+    if (!args.isLive(card.id)) return false
+    const total = card.lessons ?? 0
+    return total === 0 || doneCount(card.id) < total
+  }
+  const lastId = args.lastOpened?.courseId
+  const lastCard = lastId ? args.cards.find((card) => card.id === lastId) : undefined
+  if (lastCard && incomplete(lastCard)) return lastCard
+  return args.cards.find((card) => incomplete(card) && doneCount(card.id) > 0) ?? args.cards.find((card) => args.isLive(card.id))
+}
+
+export function getCachedCourse(slug: string): Course | undefined {
+  return cache.get(slug)
+}
+
 export async function loadCourse(slug: string): Promise<Course | undefined> {
-  const hit = cache.get(slug)
+  const hit = getCachedCourse(slug)
   if (hit) return hit
   const path = loaderPath(slug)
   if (!path) return undefined
   const mod = (await courseLoaders[path]!()) as { default: Course }
-  cache.set(slug, mod.default)
-  return mod.default
+  const course = normalizeCourse(mod.default)
+  cache.set(slug, course)
+  return course
 }
 
 export function lessonXp(lesson: CourseLesson) {

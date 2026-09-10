@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { z } from 'zod'
-import { completeLesson, getAllProgress, getCourseProgress } from '../lib/progress.js'
+import { completeLesson, getAllProgress, getCourseProgress, openLesson } from '../lib/progress.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 
 const completeSchema = z.object({
@@ -14,10 +14,21 @@ const completeSchema = z.object({
   totalLessons: z.number().int().min(0).optional(),
 })
 
+const openSchema = z.object({
+  courseSlug: z.string().min(1),
+  lessonSlug: z.string().min(1),
+})
+
 export const progressRoutes = new Hono<SessionEnv>()
 
 progressRoutes.get('/progress', requireAuth, async (c) => {
   return c.json(await getAllProgress(c.get('userId')))
+})
+
+progressRoutes.post('/progress/open', requireAuth, async (c) => {
+  const parsed = openSchema.safeParse(await c.req.json())
+  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  return c.json(await openLesson({ userId: c.get('userId'), ...parsed.data }))
 })
 
 progressRoutes.get('/progress/:courseSlug', requireAuth, async (c) => {

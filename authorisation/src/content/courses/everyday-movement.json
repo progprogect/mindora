@@ -567,517 +567,6 @@
       ]
     },
     {
-      "id": "em-15-strength-muscle",
-      "dayNumber": 15,
-      "title": "Strength: The Muscle You Can't Afford to Lose",
-      "subtitle": "Why preserving muscle is one of the most important things you can do for long-term health",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-15-c1",
-          "front": "What is sarcopenia?",
-          "back": "Sarcopenia is the gradual loss of muscle mass and strength that occurs with ageing. Without intervention, adults lose 3–8% of their muscle mass per decade after age 30, and the rate accelerates after 60. It's one of the leading causes of loss of independence, falls, and reduced quality of life in later years."
-        },
-        {
-          "id": "em-15-c2",
-          "front": "Why does muscle matter beyond strength and appearance?",
-          "back": "Muscle is metabolically active tissue that regulates blood sugar, stores energy, produces anti-inflammatory proteins, supports bone density, and maintains the functional capacity to perform daily tasks. People with more muscle mass have significantly lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
-        },
-        {
-          "id": "em-15-c3",
-          "front": "Do you need a gym to maintain or build muscle?",
-          "back": "No. Bodyweight exercises — squats, lunges, press-ups, step-ups, carrying loads — provide sufficient resistance stimulus to maintain and build meaningful muscle mass, particularly for people starting from a low base. Resistance and load are what matter, not equipment. Consistent progressive challenge is the key."
-        },
-        {
-          "id": "em-15-c4",
-          "front": "How does everyday movement contribute to muscle health?",
-          "back": "Walking uphill, climbing stairs, carrying loads, gardening, and any activity involving resistance or load stimulates muscles and slows age-related decline. While dedicated strength training delivers the greatest benefit, daily loaded movement provides a meaningful maintenance stimulus without requiring any formal training."
-        },
-        {
-          "id": "em-15-c5",
-          "front": "What is the minimum effective stimulus for muscle maintenance?",
-          "back": "Research suggests 2–3 resistance-based sessions per week, with each major muscle group challenged to near-fatigue, is sufficient for muscle maintenance and modest gains. This can be as simple as two 20-minute bodyweight sessions per week. Progressive challenge — gradually increasing difficulty over time — is essential for continued benefit."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-15-q1",
-          "question": "What is sarcopenia?",
-          "options": [
-            "A bone density condition affecting older adults",
-            "The gradual loss of muscle mass and strength that occurs with ageing",
-            "A type of joint inflammation caused by overuse",
-            "A cardiovascular condition linked to inactivity"
-          ],
-          "correctIndex": 1,
-          "explanation": "Sarcopenia is age-related muscle loss — typically 3–8% per decade from age 30, accelerating after 60. It's a leading cause of frailty, falls, loss of independence, and reduced quality of life in later years."
-        },
-        {
-          "id": "em-15-q2",
-          "question": "Why is muscle important beyond physical strength?",
-          "options": [
-            "It only matters for athletic performance",
-            "Muscle regulates blood sugar, supports bone density, produces anti-inflammatory proteins, and is associated with lower risk of diabetes, heart disease, and early death",
-            "Muscle only becomes important after age 70",
-            "More muscle means less fat, which is the main health benefit"
-          ],
-          "correctIndex": 1,
-          "explanation": "Muscle is metabolically active tissue with multiple health roles — blood sugar regulation, energy storage, bone support, and anti-inflammatory function. Higher muscle mass is associated with meaningfully lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
-        },
-        {
-          "id": "em-15-q3",
-          "question": "What is the minimum number of resistance-based sessions per week for muscle maintenance?",
-          "options": [
-            "Five to six sessions",
-            "Four sessions of at least one hour",
-            "Two to three sessions challenging major muscle groups to near-fatigue",
-            "Daily sessions are needed — anything less leads to rapid loss"
-          ],
-          "correctIndex": 2,
-          "explanation": "Research supports 2–3 resistance-based sessions per week as sufficient for muscle maintenance and modest gains. Sessions don't need to be long — two 20-minute bodyweight workouts per week provide a meaningful stimulus."
-        }
-      ]
-    },
-    {
-      "id": "em-16-cardiovascular-fitness",
-      "dayNumber": 16,
-      "title": "Your Heart and Lungs: Cardiovascular Fitness Explained",
-      "subtitle": "Why cardiorespiratory fitness is one of the strongest predictors of how long — and how well — you live",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-16-c1",
-          "front": "What is cardiorespiratory fitness?",
-          "back": "Cardiorespiratory fitness describes how efficiently your heart, lungs, and circulatory system deliver oxygen to working muscles during sustained activity. It's most precisely measured by VO₂ max — the maximum rate at which your body can use oxygen. In everyday terms, it's how much effort activities like climbing stairs, brisk walking, and carrying loads require."
-        },
-        {
-          "id": "em-16-c2",
-          "front": "Why is cardiorespiratory fitness such a strong predictor of longevity?",
-          "back": "A major study of 122,000 people found that low cardiorespiratory fitness was a stronger predictor of early death than smoking, high blood pressure, or diabetes. People in the top fitness quartile had a 5-fold lower mortality risk than those in the bottom quartile. Improving fitness — even modestly — has dramatic effects on health and lifespan."
-        },
-        {
-          "id": "em-16-c3",
-          "front": "What activities improve cardiovascular fitness?",
-          "back": "Any activity that sustainably raises your heart rate and breathing — brisk walking, cycling, swimming, dancing, jogging, hiking, or playing sport — improves cardiovascular fitness when done regularly. Intensity matters: \"moderate\" means breathing harder but still able to hold a conversation; \"vigorous\" means speaking only in short phrases."
-        },
-        {
-          "id": "em-16-c4",
-          "front": "How quickly does cardiovascular fitness improve with regular activity?",
-          "back": "Measurable improvements in cardiovascular fitness typically appear within 3–6 weeks of consistent moderate-intensity activity. People starting from a low baseline see the fastest relative gains. Fitness can improve at any age — including in people in their 70s, 80s, and beyond — with appropriate progressive challenge."
-        },
-        {
-          "id": "em-16-c5",
-          "front": "What is the \"talk test\" and how do you use it?",
-          "back": "The talk test is a simple way to gauge exercise intensity. At moderate intensity, you can speak in full sentences but your breathing is noticeably elevated. At vigorous intensity, you can only say a few words at a time. For general health, most people benefit from a combination of both intensities throughout the week."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-16-q1",
-          "question": "What does VO₂ max measure?",
-          "options": [
-            "The maximum amount of fat burned during exercise",
-            "The maximum rate at which your body can use oxygen during intense physical effort",
-            "The volume of air your lungs can hold",
-            "The maximum heart rate achievable during exercise"
-          ],
-          "correctIndex": 1,
-          "explanation": "VO₂ max measures the maximum rate of oxygen consumption during maximal exercise. It's the gold-standard measure of cardiorespiratory fitness and one of the strongest known predictors of longevity and all-cause mortality."
-        },
-        {
-          "id": "em-16-q2",
-          "question": "In the 122,000-person study, how much lower was the mortality risk of the most fit group compared to the least fit?",
-          "options": [
-            "Twice as low",
-            "Three times as low",
-            "Five times as low",
-            "Ten times as low"
-          ],
-          "correctIndex": 2,
-          "explanation": "The study found people in the highest fitness quartile had approximately a 5-fold lower mortality risk than those in the lowest quartile — a stronger effect than smoking, high blood pressure, or diabetes. Low fitness was the single most powerful predictor of early death."
-        },
-        {
-          "id": "em-16-q3",
-          "question": "What does the \"talk test\" tell you during exercise?",
-          "options": [
-            "Whether you are burning fat or carbohydrates",
-            "Your approximate exercise intensity — moderate if you can speak in sentences, vigorous if you can only manage a few words",
-            "Whether your heart rate is safe",
-            "How many calories you are burning per minute"
-          ],
-          "correctIndex": 1,
-          "explanation": "The talk test is a simple, equipment-free intensity gauge. Moderate intensity = can speak in full sentences with elevated breathing. Vigorous intensity = can only say a few words at a time. Both intensities deliver health benefits and a combination throughout the week is ideal."
-        }
-      ]
-    },
-    {
-      "id": "em-17-balance-fall-prevention",
-      "dayNumber": 17,
-      "title": "Balance, Stability and Fall Prevention",
-      "subtitle": "Why balance training is one of the most important — and most neglected — health habits of midlife and beyond",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-17-c1",
-          "front": "Why do falls matter so much for long-term health?",
-          "back": "Falls are the leading cause of injury-related deaths in adults over 65 and a major cause of hospitalisation, loss of independence, and reduced quality of life. In the UK, around 30% of people over 65 fall at least once per year. A single serious fall — particularly a hip fracture — can dramatically alter the trajectory of a person's remaining life."
-        },
-        {
-          "id": "em-17-c2",
-          "front": "Does balance decline inevitably with age?",
-          "back": "Balance does naturally decline from around age 40 as sensory systems, muscle strength, and proprioception (your sense of body position) become less sharp. However, this decline is not inevitable at the rate most people experience it. Regular balance training and physical activity significantly slow and partially reverse balance deterioration — at any age."
-        },
-        {
-          "id": "em-17-c3",
-          "front": "What is proprioception and why does it matter?",
-          "back": "Proprioception is your body's ability to sense its own position, movement, and balance in space — using receptors in muscles, tendons, and joints. Good proprioception allows you to catch yourself before a fall. Walking on uneven surfaces, single-leg exercises, and balance training all sharpen proprioceptive ability."
-        },
-        {
-          "id": "em-17-c4",
-          "front": "What are the most effective balance training activities?",
-          "back": "Standing on one leg (even for 30–60 seconds daily), tai chi, yoga, walking on varied terrain, heel-to-toe walking, and single-leg exercises all improve balance. Tai chi has particularly strong evidence — multiple meta-analyses show it reduces fall risk by 20–45% in older adults. Any activity requiring coordination and body awareness contributes."
-        },
-        {
-          "id": "em-17-c5",
-          "front": "What is the single-leg standing test and what does it tell you?",
-          "back": "The single-leg standing test measures how long you can stand on one leg with eyes open, then closed. Healthy adults under 60 should manage 30+ seconds with eyes open; over 60, 20+ seconds. Being unable to stand on one leg for 10 seconds in midlife is associated with nearly double the risk of death from all causes within 10 years."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-17-q1",
-          "question": "What proportion of adults over 65 fall at least once per year?",
-          "options": [
-            "Around 5%",
-            "Around 15%",
-            "Around 30%",
-            "Around 50%"
-          ],
-          "correctIndex": 2,
-          "explanation": "Approximately 30% of adults over 65 fall at least once per year. Falls are the leading cause of injury-related death in this age group and a major cause of hospitalisation, loss of independence, and reduced quality of life."
-        },
-        {
-          "id": "em-17-q2",
-          "question": "What is proprioception?",
-          "options": [
-            "The body's ability to sense its own position, movement, and balance in space",
-            "The proportion of muscle to fat in the body",
-            "A reflex that prevents overexertion during exercise",
-            "The range of motion available in a joint"
-          ],
-          "correctIndex": 0,
-          "explanation": "Proprioception is the body's sense of its own position and movement, using receptors in muscles, tendons, and joints. Good proprioception allows you to correct balance automatically. It can be trained through varied terrain walking, balance exercises, and single-leg activities."
-        },
-        {
-          "id": "em-17-q3",
-          "question": "By how much does tai chi reduce fall risk in older adults according to meta-analyses?",
-          "options": [
-            "5–10%",
-            "10–15%",
-            "20–45%",
-            "60–70%"
-          ],
-          "correctIndex": 2,
-          "explanation": "Multiple meta-analyses have found tai chi reduces fall risk by 20–45% in older adults — making it one of the most evidence-backed interventions for fall prevention. Its combination of balance, coordination, strength, and slow controlled movement makes it particularly effective."
-        }
-      ]
-    },
-    {
-      "id": "em-18-mobility-flexibility",
-      "dayNumber": 18,
-      "title": "Mobility, Flexibility and Moving Without Pain",
-      "subtitle": "Why maintaining your range of motion is essential for pain-free independent living",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-18-c1",
-          "front": "What is the difference between mobility and flexibility?",
-          "back": "Flexibility is the passive range of motion of a muscle — how far it can be stretched. Mobility is the active range of motion of a joint — how far you can move it under your own control, with strength throughout the movement. Mobility matters more for functional health: being able to squat, reach overhead, rotate, and bend without pain or restriction."
-        },
-        {
-          "id": "em-18-c2",
-          "front": "Why does mobility decline with age and inactivity?",
-          "back": "Joints become stiffer as the cartilage thins, synovial fluid reduces, and surrounding tissues lose elasticity. Sustained sitting shortens hip flexors and tightens the thoracic spine. Lack of varied movement means the body literally loses range of motion it never uses — following the principle of \"use it or lose it.\""
-        },
-        {
-          "id": "em-18-c3",
-          "front": "What does limited mobility mean for daily life?",
-          "back": "Reduced mobility makes everyday tasks harder: tying shoelaces, getting up from the floor, reaching high shelves, turning to check traffic while driving, and getting in and out of cars. It increases fall risk, contributes to chronic pain, limits exercise options, and is one of the earliest signs of functional decline."
-        },
-        {
-          "id": "em-18-c4",
-          "front": "What are the most important mobility areas to maintain?",
-          "back": "The key areas are: hip flexors and hip rotation (shortened by sitting), thoracic spine (rounded by desk work), ankles (critical for gait and balance), shoulders (restricted by poor posture), and hamstrings. Regular movement through full ranges — squatting, rotating, reaching — maintains these areas far more effectively than static stretching alone."
-        },
-        {
-          "id": "em-18-c5",
-          "front": "What is the most effective approach to improving and maintaining mobility?",
-          "back": "Active mobility work — moving joints through their full range with control, rather than passively holding stretches — delivers more functional benefit. Daily movement routines of 5–10 minutes combining gentle joint rotations, floor-based movement, and functional movements like squatting are more effective than occasional long stretching sessions."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-18-q1",
-          "question": "What is the key difference between mobility and flexibility?",
-          "options": [
-            "They mean exactly the same thing",
-            "Flexibility is passive range of motion; mobility is active, controlled range of motion of a joint",
-            "Mobility is for older adults; flexibility is for athletes",
-            "Flexibility refers to the spine; mobility refers to the limbs"
-          ],
-          "correctIndex": 1,
-          "explanation": "Flexibility is passive — how far a muscle stretches when moved by an external force. Mobility is active — how far you can move a joint under your own control. Mobility matters more for functional daily movement and injury prevention."
-        },
-        {
-          "id": "em-18-q2",
-          "question": "Which body areas are most commonly restricted by prolonged sitting?",
-          "options": [
-            "Wrists and fingers",
-            "Hip flexors, thoracic spine, and ankles",
-            "Neck and calves",
-            "Shoulders and hamstrings only"
-          ],
-          "correctIndex": 1,
-          "explanation": "Prolonged sitting most commonly shortens hip flexors, rounds and stiffens the thoracic spine, and reduces ankle mobility. These restrictions directly affect posture, gait, and the ability to perform everyday movements safely."
-        },
-        {
-          "id": "em-18-q3",
-          "question": "Which approach is more effective for functional mobility — active mobility work or passive static stretching?",
-          "options": [
-            "Passive static stretching — holding for 60+ seconds",
-            "Active mobility work — moving joints through full range with control",
-            "They are equally effective for all purposes",
-            "Stretching is more effective for older adults; active work for younger people"
-          ],
-          "correctIndex": 1,
-          "explanation": "Active mobility work — moving through full ranges with muscular control — builds both range and strength in that range, making it more functionally useful. Passive stretching improves flexibility but may not translate into controlled, safe movement patterns."
-        }
-      ]
-    },
-    {
-      "id": "em-19-nature-outdoors",
-      "dayNumber": 19,
-      "title": "Nature, Outdoors and Why Where You Move Matters",
-      "subtitle": "The additional health benefits of moving outside — and why green spaces are good medicine",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-19-c1",
-          "front": "Does exercising outdoors offer benefits beyond indoor exercise?",
-          "back": "Yes. Research consistently shows outdoor exercise delivers additional benefits including reduced cortisol (stress hormone), lower blood pressure, improved mood, greater feelings of vitality, and higher enjoyment — even when intensity is identical to indoor exercise. People also tend to exercise for longer and feel less effort when outdoors."
-        },
-        {
-          "id": "em-19-c2",
-          "front": "What is \"green exercise\" and what does evidence say about it?",
-          "back": "Green exercise is physical activity in natural environments — parks, woods, countryside, and water. A meta-analysis of studies found that even five minutes of green exercise produced measurable improvements in mood and self-esteem. Longer sessions in nature reduce anxiety, restore attention, and lower physiological stress markers like cortisol and blood pressure."
-        },
-        {
-          "id": "em-19-c3",
-          "front": "What is \"attention restoration theory\"?",
-          "back": "Attention restoration theory proposes that natural environments restore the directed attention capacity that gets depleted by urban life, screen time, and demanding cognitive work. Natural scenes — trees, water, open sky — engage \"soft fascination\" that rests the prefrontal cortex, explaining why a walk in the park can clear your head in ways an indoor walk cannot."
-        },
-        {
-          "id": "em-19-c4",
-          "front": "What does sunlight exposure during outdoor movement contribute?",
-          "back": "Morning sunlight exposure helps regulate the circadian rhythm, improving sleep quality. Sunlight triggers vitamin D synthesis in the skin — important for bone health, immune function, and mood regulation. Bright outdoor light also suppresses melatonin during the day, improving alertness, and creates a stronger day-night contrast that promotes deeper sleep at night."
-        },
-        {
-          "id": "em-19-c5",
-          "front": "How can you increase outdoor movement even in an urban environment?",
-          "back": "Seek out parks, green corridors, canals, and tree-lined streets for regular walks. Replace indoor gym cardio with outdoor equivalents. Use parks for bodyweight exercise. Walk to cafés or shops through green routes. Even brief \"micro-nature\" exposures — sitting near a tree, a plant-lined street — provide measurable mood and stress benefits."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-19-q1",
-          "question": "How long does green exercise take to produce measurable improvements in mood and self-esteem?",
-          "options": [
-            "At least 30 minutes",
-            "At least 60 minutes",
-            "As little as five minutes",
-            "Only after several weeks of regular practice"
-          ],
-          "correctIndex": 2,
-          "explanation": "A meta-analysis of green exercise studies found that even five minutes in a natural environment produced measurable improvements in mood and self-esteem. The effect is immediate and does not require prolonged exposure."
-        },
-        {
-          "id": "em-19-q2",
-          "question": "What does attention restoration theory propose about natural environments?",
-          "options": [
-            "They improve eyesight through exposure to natural light",
-            "They restore the directed attention capacity depleted by urban life and cognitive demands, through \"soft fascination\"",
-            "They provide a physical workout for the brain similar to puzzles",
-            "They only benefit people with attention disorders"
-          ],
-          "correctIndex": 1,
-          "explanation": "Attention restoration theory proposes that natural environments — trees, water, open landscapes — engage gentle, effortless attention (soft fascination) that allows the prefrontal cortex to rest and restore its capacity for focused directed attention."
-        },
-        {
-          "id": "em-19-q3",
-          "question": "How does morning sunlight exposure support health beyond vitamin D?",
-          "options": [
-            "It increases heart rate, providing a cardio benefit",
-            "It helps regulate the circadian rhythm, improving sleep quality and alerting the brain during the day",
-            "It burns more calories than exercise in the dark",
-            "It only provides benefits in summer months"
-          ],
-          "correctIndex": 1,
-          "explanation": "Morning sunlight signals to the brain that the day has begun, regulating the circadian rhythm, suppressing daytime melatonin, and creating a stronger day-night contrast that promotes deeper sleep at night. This circadian benefit is independent of vitamin D synthesis."
-        }
-      ]
-    },
-    {
-      "id": "em-20-moving-every-age",
-      "dayNumber": 20,
-      "title": "Moving Well at Every Age",
-      "subtitle": "How movement needs evolve through life — and why it's never too late to start",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-20-c1",
-          "front": "Does physical activity become less effective as we age?",
-          "back": "No. The body retains the ability to adapt to exercise at any age. Research shows that people in their 70s, 80s, and even 90s respond meaningfully to strength training, cardiovascular exercise, and balance work. The relative gains in fitness and function may be similar to those in younger people, though starting points and progressions differ."
-        },
-        {
-          "id": "em-20-c2",
-          "front": "How do movement priorities shift with age?",
-          "back": "In younger decades (20s–40s), building a fitness base and preventing early metabolic damage is the priority. In midlife (40s–60s), strength preservation, cardiovascular fitness, and mobility maintenance become increasingly important. In later years (65+), balance, functional fitness, fall prevention, and maintaining independence take centre stage — alongside everything else."
-        },
-        {
-          "id": "em-20-c3",
-          "front": "What does research say about the impact of starting exercise later in life?",
-          "back": "Starting regular exercise in midlife or later still delivers substantial health and longevity benefits. A study found that sedentary adults who became active in midlife had a mortality risk comparable to people who had been active throughout their lives. It is never too late to begin — and always earlier than you'll be tomorrow."
-        },
-        {
-          "id": "em-20-c4",
-          "front": "What is the concept of \"physical reserve\" and why does it matter?",
-          "back": "Physical reserve is the excess functional capacity built through exercise — the fitness and strength above and beyond what daily life currently requires. Like financial savings, physical reserve can be drawn on during illness, injury, or ageing. People with greater reserve age more gracefully and recover faster from setbacks."
-        },
-        {
-          "id": "em-20-c5",
-          "front": "What is the most important movement habit to protect as you age?",
-          "back": "Maintaining the ability to get up and down from the floor independently. The \"sit-to-rise test,\" which scores ability to sit and stand from the floor without support, is a strong predictor of mortality risk. People who can do this easily at 60, 70, and beyond demonstrate the functional strength, balance, and mobility that preserves independence."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-20-q1",
-          "question": "What did research find about sedentary adults who became active in midlife?",
-          "options": [
-            "They gained no significant health benefit from starting late",
-            "Their mortality risk became comparable to people who had been active throughout their lives",
-            "They had a 10% lower mortality risk than lifelong exercisers",
-            "The benefits only appeared after 10 years of consistent exercise"
-          ],
-          "correctIndex": 1,
-          "explanation": "Research shows that sedentary adults who become regularly active in midlife achieve mortality risk levels comparable to those who have been active throughout their lives. It is never too late to start — the body retains the ability to benefit from exercise at any age."
-        },
-        {
-          "id": "em-20-q2",
-          "question": "What is \"physical reserve\" and why is it important?",
-          "options": [
-            "A savings account for gym memberships",
-            "Excess functional capacity built through exercise that can be drawn on during illness, injury, or the demands of ageing",
-            "The maximum amount of exercise a person can do before overtraining",
-            "A physical therapy technique for injury recovery"
-          ],
-          "correctIndex": 1,
-          "explanation": "Physical reserve is the fitness and functional capacity above and beyond what daily life currently requires. Like financial savings, it provides a buffer — people with greater reserve recover faster from illness, cope better with physical challenges, and maintain independence for longer."
-        },
-        {
-          "id": "em-20-q3",
-          "question": "What does the \"sit-to-rise test\" measure?",
-          "options": [
-            "Heart rate recovery after exercise",
-            "The ability to sit and stand from the floor independently — a predictor of functional fitness and mortality risk",
-            "Flexibility of the spine during seated movements",
-            "How quickly someone can stand from a chair"
-          ],
-          "correctIndex": 1,
-          "explanation": "The sit-to-rise test scores the ability to lower yourself to the floor and rise again without using hands, knees, or support. It tests a combination of strength, balance, flexibility, and coordination — and is a strong predictor of mortality risk in midlife and later adults."
-        }
-      ]
-    },
-    {
-      "id": "em-21-lifelong-mindset",
-      "dayNumber": 21,
-      "title": "The Lifelong Movement Mindset",
-      "subtitle": "How to make movement a permanent part of who you are — not just something you do for a while",
-      "moduleId": "em-mod-3",
-      "xp": 100,
-      "cards": [
-        {
-          "id": "em-21-c1",
-          "front": "Why do most exercise programmes fail in the long term?",
-          "back": "Most programmes are designed around motivation, discipline, and willpower — all of which are finite and unreliable. They treat movement as a temporary project rather than a permanent part of life. Long-term adherence requires building movement into identity, environment, and social context — not relying on daily self-control."
-        },
-        {
-          "id": "em-21-c2",
-          "front": "What does it mean to have a movement identity?",
-          "back": "A movement identity means seeing yourself as someone who moves — not someone who is trying to exercise more. \"I go for a walk after dinner\" becomes \"I'm a person who walks every evening.\" This shift from behaviour to identity is one of the most powerful predictors of long-term consistency, because behaviour inconsistent with identity creates discomfort."
-        },
-        {
-          "id": "em-21-c3",
-          "front": "What role does social connection play in lifelong movement?",
-          "back": "People who move with others — walking groups, recreational sport, exercise classes, friends — consistently demonstrate better long-term adherence than solo exercisers. Social connection transforms movement from a chore into a meaningful activity, adds accountability, and provides the relationship benefits of exercise above and beyond the physical ones."
-        },
-        {
-          "id": "em-21-c4",
-          "front": "How do you recover from a movement setback without abandoning the habit?",
-          "back": "Setbacks are inevitable — illness, travel, work pressure, injury. The key principle is \"never miss twice.\" Miss one day: normal. Miss two days: a pattern forming. Research shows that the speed of recovery after a lapse — not the lapse itself — is what separates long-term exercisers from those who quit. Self-compassion aids recovery; self-criticism prolongs absence."
-        },
-        {
-          "id": "em-21-c5",
-          "front": "What is the single most important thing to take away from this course?",
-          "back": "Movement is not a punishment, a project, or a problem to solve. It is the natural state of a healthy human body — something your biology craves and rewards. The goal isn't perfection; it's consistent, enjoyable, daily movement across a lifetime. Start where you are, use what you have, do what you can. That is enough."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "em-21-q1",
-          "question": "What is the key reason most long-term exercise programmes fail?",
-          "options": [
-            "People choose the wrong type of exercise",
-            "They rely on motivation and willpower rather than building movement into identity, environment, and social context",
-            "The programmes are not scientifically optimised enough",
-            "People don't have enough time to exercise properly"
-          ],
-          "correctIndex": 1,
-          "explanation": "Most programmes fail because they depend on motivation and discipline — finite resources. Long-term movement adherence requires embedding activity into identity, environment, and social life, so it happens automatically rather than requiring daily self-control."
-        },
-        {
-          "id": "em-21-q2",
-          "question": "What does the \"never miss twice\" principle mean?",
-          "options": [
-            "You must exercise at least twice per week to maintain fitness",
-            "Never skip more than two consecutive exercise sessions",
-            "Missing one day is normal; missing two is a forming pattern — recover quickly rather than treating a lapse as failure",
-            "Book two exercise sessions per week to ensure one always happens"
-          ],
-          "correctIndex": 2,
-          "explanation": "The \"never miss twice\" principle means that one missed day is human — but allowing it to become two starts forming a new pattern. Research shows that quick recovery after a lapse, supported by self-compassion rather than self-criticism, is what distinguishes lifelong movers from those who quit."
-        },
-        {
-          "id": "em-21-q3",
-          "question": "Why does social movement (exercising with others) produce better long-term adherence than solo exercise?",
-          "options": [
-            "Group exercise is always more intense and therefore more effective",
-            "Social movement adds accountability, enjoyment, and relationship benefits that make the activity intrinsically rewarding",
-            "It is cheaper to exercise with others",
-            "Social exercise automatically prevents injury"
-          ],
-          "correctIndex": 1,
-          "explanation": "Social movement consistently outperforms solo exercise for long-term adherence because it adds accountability, transforms the activity from a chore into a social event, and provides relationship benefits alongside the physical ones. The combination of intrinsic reward and social obligation is particularly powerful."
-        }
-      ]
-    },
-    {
       "id": "em-8-design-environment",
       "dayNumber": 8,
       "title": "Design Your Environment for Movement",
@@ -1585,6 +1074,517 @@
           ],
           "correctIndex": 2,
           "explanation": "Exercise adherence research consistently shows that enjoyment is the single most powerful predictor of long-term consistency. The \"best\" plan is the one you'll actually maintain — not the most scientifically optimised one you'll abandon after six weeks."
+        }
+      ]
+    },
+    {
+      "id": "em-15-strength-muscle",
+      "dayNumber": 15,
+      "title": "Strength: The Muscle You Can't Afford to Lose",
+      "subtitle": "Why preserving muscle is one of the most important things you can do for long-term health",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-15-c1",
+          "front": "What is sarcopenia?",
+          "back": "Sarcopenia is the gradual loss of muscle mass and strength that occurs with ageing. Without intervention, adults lose 3–8% of their muscle mass per decade after age 30, and the rate accelerates after 60. It's one of the leading causes of loss of independence, falls, and reduced quality of life in later years."
+        },
+        {
+          "id": "em-15-c2",
+          "front": "Why does muscle matter beyond strength and appearance?",
+          "back": "Muscle is metabolically active tissue that regulates blood sugar, stores energy, produces anti-inflammatory proteins, supports bone density, and maintains the functional capacity to perform daily tasks. People with more muscle mass have significantly lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
+        },
+        {
+          "id": "em-15-c3",
+          "front": "Do you need a gym to maintain or build muscle?",
+          "back": "No. Bodyweight exercises — squats, lunges, press-ups, step-ups, carrying loads — provide sufficient resistance stimulus to maintain and build meaningful muscle mass, particularly for people starting from a low base. Resistance and load are what matter, not equipment. Consistent progressive challenge is the key."
+        },
+        {
+          "id": "em-15-c4",
+          "front": "How does everyday movement contribute to muscle health?",
+          "back": "Walking uphill, climbing stairs, carrying loads, gardening, and any activity involving resistance or load stimulates muscles and slows age-related decline. While dedicated strength training delivers the greatest benefit, daily loaded movement provides a meaningful maintenance stimulus without requiring any formal training."
+        },
+        {
+          "id": "em-15-c5",
+          "front": "What is the minimum effective stimulus for muscle maintenance?",
+          "back": "Research suggests 2–3 resistance-based sessions per week, with each major muscle group challenged to near-fatigue, is sufficient for muscle maintenance and modest gains. This can be as simple as two 20-minute bodyweight sessions per week. Progressive challenge — gradually increasing difficulty over time — is essential for continued benefit."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-15-q1",
+          "question": "What is sarcopenia?",
+          "options": [
+            "A bone density condition affecting older adults",
+            "The gradual loss of muscle mass and strength that occurs with ageing",
+            "A type of joint inflammation caused by overuse",
+            "A cardiovascular condition linked to inactivity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sarcopenia is age-related muscle loss — typically 3–8% per decade from age 30, accelerating after 60. It's a leading cause of frailty, falls, loss of independence, and reduced quality of life in later years."
+        },
+        {
+          "id": "em-15-q2",
+          "question": "Why is muscle important beyond physical strength?",
+          "options": [
+            "It only matters for athletic performance",
+            "Muscle regulates blood sugar, supports bone density, produces anti-inflammatory proteins, and is associated with lower risk of diabetes, heart disease, and early death",
+            "Muscle only becomes important after age 70",
+            "More muscle means less fat, which is the main health benefit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Muscle is metabolically active tissue with multiple health roles — blood sugar regulation, energy storage, bone support, and anti-inflammatory function. Higher muscle mass is associated with meaningfully lower risk of type 2 diabetes, cardiovascular disease, and all-cause mortality."
+        },
+        {
+          "id": "em-15-q3",
+          "question": "What is the minimum number of resistance-based sessions per week for muscle maintenance?",
+          "options": [
+            "Five to six sessions",
+            "Four sessions of at least one hour",
+            "Two to three sessions challenging major muscle groups to near-fatigue",
+            "Daily sessions are needed — anything less leads to rapid loss"
+          ],
+          "correctIndex": 2,
+          "explanation": "Research supports 2–3 resistance-based sessions per week as sufficient for muscle maintenance and modest gains. Sessions don't need to be long — two 20-minute bodyweight workouts per week provide a meaningful stimulus."
+        }
+      ]
+    },
+    {
+      "id": "em-16-cardiovascular-fitness",
+      "dayNumber": 16,
+      "title": "Your Heart and Lungs: Cardiovascular Fitness Explained",
+      "subtitle": "Why cardiorespiratory fitness is one of the strongest predictors of how long — and how well — you live",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-16-c1",
+          "front": "What is cardiorespiratory fitness?",
+          "back": "Cardiorespiratory fitness describes how efficiently your heart, lungs, and circulatory system deliver oxygen to working muscles during sustained activity. It's most precisely measured by VO₂ max — the maximum rate at which your body can use oxygen. In everyday terms, it's how much effort activities like climbing stairs, brisk walking, and carrying loads require."
+        },
+        {
+          "id": "em-16-c2",
+          "front": "Why is cardiorespiratory fitness such a strong predictor of longevity?",
+          "back": "A major study of 122,000 people found that low cardiorespiratory fitness was a stronger predictor of early death than smoking, high blood pressure, or diabetes. People in the top fitness quartile had a 5-fold lower mortality risk than those in the bottom quartile. Improving fitness — even modestly — has dramatic effects on health and lifespan."
+        },
+        {
+          "id": "em-16-c3",
+          "front": "What activities improve cardiovascular fitness?",
+          "back": "Any activity that sustainably raises your heart rate and breathing — brisk walking, cycling, swimming, dancing, jogging, hiking, or playing sport — improves cardiovascular fitness when done regularly. Intensity matters: \"moderate\" means breathing harder but still able to hold a conversation; \"vigorous\" means speaking only in short phrases."
+        },
+        {
+          "id": "em-16-c4",
+          "front": "How quickly does cardiovascular fitness improve with regular activity?",
+          "back": "Measurable improvements in cardiovascular fitness typically appear within 3–6 weeks of consistent moderate-intensity activity. People starting from a low baseline see the fastest relative gains. Fitness can improve at any age — including in people in their 70s, 80s, and beyond — with appropriate progressive challenge."
+        },
+        {
+          "id": "em-16-c5",
+          "front": "What is the \"talk test\" and how do you use it?",
+          "back": "The talk test is a simple way to gauge exercise intensity. At moderate intensity, you can speak in full sentences but your breathing is noticeably elevated. At vigorous intensity, you can only say a few words at a time. For general health, most people benefit from a combination of both intensities throughout the week."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-16-q1",
+          "question": "What does VO₂ max measure?",
+          "options": [
+            "The maximum amount of fat burned during exercise",
+            "The maximum rate at which your body can use oxygen during intense physical effort",
+            "The volume of air your lungs can hold",
+            "The maximum heart rate achievable during exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "VO₂ max measures the maximum rate of oxygen consumption during maximal exercise. It's the gold-standard measure of cardiorespiratory fitness and one of the strongest known predictors of longevity and all-cause mortality."
+        },
+        {
+          "id": "em-16-q2",
+          "question": "In the 122,000-person study, how much lower was the mortality risk of the most fit group compared to the least fit?",
+          "options": [
+            "Twice as low",
+            "Three times as low",
+            "Five times as low",
+            "Ten times as low"
+          ],
+          "correctIndex": 2,
+          "explanation": "The study found people in the highest fitness quartile had approximately a 5-fold lower mortality risk than those in the lowest quartile — a stronger effect than smoking, high blood pressure, or diabetes. Low fitness was the single most powerful predictor of early death."
+        },
+        {
+          "id": "em-16-q3",
+          "question": "What does the \"talk test\" tell you during exercise?",
+          "options": [
+            "Whether you are burning fat or carbohydrates",
+            "Your approximate exercise intensity — moderate if you can speak in sentences, vigorous if you can only manage a few words",
+            "Whether your heart rate is safe",
+            "How many calories you are burning per minute"
+          ],
+          "correctIndex": 1,
+          "explanation": "The talk test is a simple, equipment-free intensity gauge. Moderate intensity = can speak in full sentences with elevated breathing. Vigorous intensity = can only say a few words at a time. Both intensities deliver health benefits and a combination throughout the week is ideal."
+        }
+      ]
+    },
+    {
+      "id": "em-17-balance-fall-prevention",
+      "dayNumber": 17,
+      "title": "Balance, Stability and Fall Prevention",
+      "subtitle": "Why balance training is one of the most important — and most neglected — health habits of midlife and beyond",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-17-c1",
+          "front": "Why do falls matter so much for long-term health?",
+          "back": "Falls are the leading cause of injury-related deaths in adults over 65 and a major cause of hospitalisation, loss of independence, and reduced quality of life. In the UK, around 30% of people over 65 fall at least once per year. A single serious fall — particularly a hip fracture — can dramatically alter the trajectory of a person's remaining life."
+        },
+        {
+          "id": "em-17-c2",
+          "front": "Does balance decline inevitably with age?",
+          "back": "Balance does naturally decline from around age 40 as sensory systems, muscle strength, and proprioception (your sense of body position) become less sharp. However, this decline is not inevitable at the rate most people experience it. Regular balance training and physical activity significantly slow and partially reverse balance deterioration — at any age."
+        },
+        {
+          "id": "em-17-c3",
+          "front": "What is proprioception and why does it matter?",
+          "back": "Proprioception is your body's ability to sense its own position, movement, and balance in space — using receptors in muscles, tendons, and joints. Good proprioception allows you to catch yourself before a fall. Walking on uneven surfaces, single-leg exercises, and balance training all sharpen proprioceptive ability."
+        },
+        {
+          "id": "em-17-c4",
+          "front": "What are the most effective balance training activities?",
+          "back": "Standing on one leg (even for 30–60 seconds daily), tai chi, yoga, walking on varied terrain, heel-to-toe walking, and single-leg exercises all improve balance. Tai chi has particularly strong evidence — multiple meta-analyses show it reduces fall risk by 20–45% in older adults. Any activity requiring coordination and body awareness contributes."
+        },
+        {
+          "id": "em-17-c5",
+          "front": "What is the single-leg standing test and what does it tell you?",
+          "back": "The single-leg standing test measures how long you can stand on one leg with eyes open, then closed. Healthy adults under 60 should manage 30+ seconds with eyes open; over 60, 20+ seconds. Being unable to stand on one leg for 10 seconds in midlife is associated with nearly double the risk of death from all causes within 10 years."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-17-q1",
+          "question": "What proportion of adults over 65 fall at least once per year?",
+          "options": [
+            "Around 5%",
+            "Around 15%",
+            "Around 30%",
+            "Around 50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Approximately 30% of adults over 65 fall at least once per year. Falls are the leading cause of injury-related death in this age group and a major cause of hospitalisation, loss of independence, and reduced quality of life."
+        },
+        {
+          "id": "em-17-q2",
+          "question": "What is proprioception?",
+          "options": [
+            "The body's ability to sense its own position, movement, and balance in space",
+            "The proportion of muscle to fat in the body",
+            "A reflex that prevents overexertion during exercise",
+            "The range of motion available in a joint"
+          ],
+          "correctIndex": 0,
+          "explanation": "Proprioception is the body's sense of its own position and movement, using receptors in muscles, tendons, and joints. Good proprioception allows you to correct balance automatically. It can be trained through varied terrain walking, balance exercises, and single-leg activities."
+        },
+        {
+          "id": "em-17-q3",
+          "question": "By how much does tai chi reduce fall risk in older adults according to meta-analyses?",
+          "options": [
+            "5–10%",
+            "10–15%",
+            "20–45%",
+            "60–70%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Multiple meta-analyses have found tai chi reduces fall risk by 20–45% in older adults — making it one of the most evidence-backed interventions for fall prevention. Its combination of balance, coordination, strength, and slow controlled movement makes it particularly effective."
+        }
+      ]
+    },
+    {
+      "id": "em-18-mobility-flexibility",
+      "dayNumber": 18,
+      "title": "Mobility, Flexibility and Moving Without Pain",
+      "subtitle": "Why maintaining your range of motion is essential for pain-free independent living",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-18-c1",
+          "front": "What is the difference between mobility and flexibility?",
+          "back": "Flexibility is the passive range of motion of a muscle — how far it can be stretched. Mobility is the active range of motion of a joint — how far you can move it under your own control, with strength throughout the movement. Mobility matters more for functional health: being able to squat, reach overhead, rotate, and bend without pain or restriction."
+        },
+        {
+          "id": "em-18-c2",
+          "front": "Why does mobility decline with age and inactivity?",
+          "back": "Joints become stiffer as the cartilage thins, synovial fluid reduces, and surrounding tissues lose elasticity. Sustained sitting shortens hip flexors and tightens the thoracic spine. Lack of varied movement means the body literally loses range of motion it never uses — following the principle of \"use it or lose it.\""
+        },
+        {
+          "id": "em-18-c3",
+          "front": "What does limited mobility mean for daily life?",
+          "back": "Reduced mobility makes everyday tasks harder: tying shoelaces, getting up from the floor, reaching high shelves, turning to check traffic while driving, and getting in and out of cars. It increases fall risk, contributes to chronic pain, limits exercise options, and is one of the earliest signs of functional decline."
+        },
+        {
+          "id": "em-18-c4",
+          "front": "What are the most important mobility areas to maintain?",
+          "back": "The key areas are: hip flexors and hip rotation (shortened by sitting), thoracic spine (rounded by desk work), ankles (critical for gait and balance), shoulders (restricted by poor posture), and hamstrings. Regular movement through full ranges — squatting, rotating, reaching — maintains these areas far more effectively than static stretching alone."
+        },
+        {
+          "id": "em-18-c5",
+          "front": "What is the most effective approach to improving and maintaining mobility?",
+          "back": "Active mobility work — moving joints through their full range with control, rather than passively holding stretches — delivers more functional benefit. Daily movement routines of 5–10 minutes combining gentle joint rotations, floor-based movement, and functional movements like squatting are more effective than occasional long stretching sessions."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-18-q1",
+          "question": "What is the key difference between mobility and flexibility?",
+          "options": [
+            "They mean exactly the same thing",
+            "Flexibility is passive range of motion; mobility is active, controlled range of motion of a joint",
+            "Mobility is for older adults; flexibility is for athletes",
+            "Flexibility refers to the spine; mobility refers to the limbs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flexibility is passive — how far a muscle stretches when moved by an external force. Mobility is active — how far you can move a joint under your own control. Mobility matters more for functional daily movement and injury prevention."
+        },
+        {
+          "id": "em-18-q2",
+          "question": "Which body areas are most commonly restricted by prolonged sitting?",
+          "options": [
+            "Wrists and fingers",
+            "Hip flexors, thoracic spine, and ankles",
+            "Neck and calves",
+            "Shoulders and hamstrings only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prolonged sitting most commonly shortens hip flexors, rounds and stiffens the thoracic spine, and reduces ankle mobility. These restrictions directly affect posture, gait, and the ability to perform everyday movements safely."
+        },
+        {
+          "id": "em-18-q3",
+          "question": "Which approach is more effective for functional mobility — active mobility work or passive static stretching?",
+          "options": [
+            "Passive static stretching — holding for 60+ seconds",
+            "Active mobility work — moving joints through full range with control",
+            "They are equally effective for all purposes",
+            "Stretching is more effective for older adults; active work for younger people"
+          ],
+          "correctIndex": 1,
+          "explanation": "Active mobility work — moving through full ranges with muscular control — builds both range and strength in that range, making it more functionally useful. Passive stretching improves flexibility but may not translate into controlled, safe movement patterns."
+        }
+      ]
+    },
+    {
+      "id": "em-19-nature-outdoors",
+      "dayNumber": 19,
+      "title": "Nature, Outdoors and Why Where You Move Matters",
+      "subtitle": "The additional health benefits of moving outside — and why green spaces are good medicine",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-19-c1",
+          "front": "Does exercising outdoors offer benefits beyond indoor exercise?",
+          "back": "Yes. Research consistently shows outdoor exercise delivers additional benefits including reduced cortisol (stress hormone), lower blood pressure, improved mood, greater feelings of vitality, and higher enjoyment — even when intensity is identical to indoor exercise. People also tend to exercise for longer and feel less effort when outdoors."
+        },
+        {
+          "id": "em-19-c2",
+          "front": "What is \"green exercise\" and what does evidence say about it?",
+          "back": "Green exercise is physical activity in natural environments — parks, woods, countryside, and water. A meta-analysis of studies found that even five minutes of green exercise produced measurable improvements in mood and self-esteem. Longer sessions in nature reduce anxiety, restore attention, and lower physiological stress markers like cortisol and blood pressure."
+        },
+        {
+          "id": "em-19-c3",
+          "front": "What is \"attention restoration theory\"?",
+          "back": "Attention restoration theory proposes that natural environments restore the directed attention capacity that gets depleted by urban life, screen time, and demanding cognitive work. Natural scenes — trees, water, open sky — engage \"soft fascination\" that rests the prefrontal cortex, explaining why a walk in the park can clear your head in ways an indoor walk cannot."
+        },
+        {
+          "id": "em-19-c4",
+          "front": "What does sunlight exposure during outdoor movement contribute?",
+          "back": "Morning sunlight exposure helps regulate the circadian rhythm, improving sleep quality. Sunlight triggers vitamin D synthesis in the skin — important for bone health, immune function, and mood regulation. Bright outdoor light also suppresses melatonin during the day, improving alertness, and creates a stronger day-night contrast that promotes deeper sleep at night."
+        },
+        {
+          "id": "em-19-c5",
+          "front": "How can you increase outdoor movement even in an urban environment?",
+          "back": "Seek out parks, green corridors, canals, and tree-lined streets for regular walks. Replace indoor gym cardio with outdoor equivalents. Use parks for bodyweight exercise. Walk to cafés or shops through green routes. Even brief \"micro-nature\" exposures — sitting near a tree, a plant-lined street — provide measurable mood and stress benefits."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-19-q1",
+          "question": "How long does green exercise take to produce measurable improvements in mood and self-esteem?",
+          "options": [
+            "At least 30 minutes",
+            "At least 60 minutes",
+            "As little as five minutes",
+            "Only after several weeks of regular practice"
+          ],
+          "correctIndex": 2,
+          "explanation": "A meta-analysis of green exercise studies found that even five minutes in a natural environment produced measurable improvements in mood and self-esteem. The effect is immediate and does not require prolonged exposure."
+        },
+        {
+          "id": "em-19-q2",
+          "question": "What does attention restoration theory propose about natural environments?",
+          "options": [
+            "They improve eyesight through exposure to natural light",
+            "They restore the directed attention capacity depleted by urban life and cognitive demands, through \"soft fascination\"",
+            "They provide a physical workout for the brain similar to puzzles",
+            "They only benefit people with attention disorders"
+          ],
+          "correctIndex": 1,
+          "explanation": "Attention restoration theory proposes that natural environments — trees, water, open landscapes — engage gentle, effortless attention (soft fascination) that allows the prefrontal cortex to rest and restore its capacity for focused directed attention."
+        },
+        {
+          "id": "em-19-q3",
+          "question": "How does morning sunlight exposure support health beyond vitamin D?",
+          "options": [
+            "It increases heart rate, providing a cardio benefit",
+            "It helps regulate the circadian rhythm, improving sleep quality and alerting the brain during the day",
+            "It burns more calories than exercise in the dark",
+            "It only provides benefits in summer months"
+          ],
+          "correctIndex": 1,
+          "explanation": "Morning sunlight signals to the brain that the day has begun, regulating the circadian rhythm, suppressing daytime melatonin, and creating a stronger day-night contrast that promotes deeper sleep at night. This circadian benefit is independent of vitamin D synthesis."
+        }
+      ]
+    },
+    {
+      "id": "em-20-moving-every-age",
+      "dayNumber": 20,
+      "title": "Moving Well at Every Age",
+      "subtitle": "How movement needs evolve through life — and why it's never too late to start",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-20-c1",
+          "front": "Does physical activity become less effective as we age?",
+          "back": "No. The body retains the ability to adapt to exercise at any age. Research shows that people in their 70s, 80s, and even 90s respond meaningfully to strength training, cardiovascular exercise, and balance work. The relative gains in fitness and function may be similar to those in younger people, though starting points and progressions differ."
+        },
+        {
+          "id": "em-20-c2",
+          "front": "How do movement priorities shift with age?",
+          "back": "In younger decades (20s–40s), building a fitness base and preventing early metabolic damage is the priority. In midlife (40s–60s), strength preservation, cardiovascular fitness, and mobility maintenance become increasingly important. In later years (65+), balance, functional fitness, fall prevention, and maintaining independence take centre stage — alongside everything else."
+        },
+        {
+          "id": "em-20-c3",
+          "front": "What does research say about the impact of starting exercise later in life?",
+          "back": "Starting regular exercise in midlife or later still delivers substantial health and longevity benefits. A study found that sedentary adults who became active in midlife had a mortality risk comparable to people who had been active throughout their lives. It is never too late to begin — and always earlier than you'll be tomorrow."
+        },
+        {
+          "id": "em-20-c4",
+          "front": "What is the concept of \"physical reserve\" and why does it matter?",
+          "back": "Physical reserve is the excess functional capacity built through exercise — the fitness and strength above and beyond what daily life currently requires. Like financial savings, physical reserve can be drawn on during illness, injury, or ageing. People with greater reserve age more gracefully and recover faster from setbacks."
+        },
+        {
+          "id": "em-20-c5",
+          "front": "What is the most important movement habit to protect as you age?",
+          "back": "Maintaining the ability to get up and down from the floor independently. The \"sit-to-rise test,\" which scores ability to sit and stand from the floor without support, is a strong predictor of mortality risk. People who can do this easily at 60, 70, and beyond demonstrate the functional strength, balance, and mobility that preserves independence."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-20-q1",
+          "question": "What did research find about sedentary adults who became active in midlife?",
+          "options": [
+            "They gained no significant health benefit from starting late",
+            "Their mortality risk became comparable to people who had been active throughout their lives",
+            "They had a 10% lower mortality risk than lifelong exercisers",
+            "The benefits only appeared after 10 years of consistent exercise"
+          ],
+          "correctIndex": 1,
+          "explanation": "Research shows that sedentary adults who become regularly active in midlife achieve mortality risk levels comparable to those who have been active throughout their lives. It is never too late to start — the body retains the ability to benefit from exercise at any age."
+        },
+        {
+          "id": "em-20-q2",
+          "question": "What is \"physical reserve\" and why is it important?",
+          "options": [
+            "A savings account for gym memberships",
+            "Excess functional capacity built through exercise that can be drawn on during illness, injury, or the demands of ageing",
+            "The maximum amount of exercise a person can do before overtraining",
+            "A physical therapy technique for injury recovery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Physical reserve is the fitness and functional capacity above and beyond what daily life currently requires. Like financial savings, it provides a buffer — people with greater reserve recover faster from illness, cope better with physical challenges, and maintain independence for longer."
+        },
+        {
+          "id": "em-20-q3",
+          "question": "What does the \"sit-to-rise test\" measure?",
+          "options": [
+            "Heart rate recovery after exercise",
+            "The ability to sit and stand from the floor independently — a predictor of functional fitness and mortality risk",
+            "Flexibility of the spine during seated movements",
+            "How quickly someone can stand from a chair"
+          ],
+          "correctIndex": 1,
+          "explanation": "The sit-to-rise test scores the ability to lower yourself to the floor and rise again without using hands, knees, or support. It tests a combination of strength, balance, flexibility, and coordination — and is a strong predictor of mortality risk in midlife and later adults."
+        }
+      ]
+    },
+    {
+      "id": "em-21-lifelong-mindset",
+      "dayNumber": 21,
+      "title": "The Lifelong Movement Mindset",
+      "subtitle": "How to make movement a permanent part of who you are — not just something you do for a while",
+      "moduleId": "em-mod-3",
+      "xp": 100,
+      "cards": [
+        {
+          "id": "em-21-c1",
+          "front": "Why do most exercise programmes fail in the long term?",
+          "back": "Most programmes are designed around motivation, discipline, and willpower — all of which are finite and unreliable. They treat movement as a temporary project rather than a permanent part of life. Long-term adherence requires building movement into identity, environment, and social context — not relying on daily self-control."
+        },
+        {
+          "id": "em-21-c2",
+          "front": "What does it mean to have a movement identity?",
+          "back": "A movement identity means seeing yourself as someone who moves — not someone who is trying to exercise more. \"I go for a walk after dinner\" becomes \"I'm a person who walks every evening.\" This shift from behaviour to identity is one of the most powerful predictors of long-term consistency, because behaviour inconsistent with identity creates discomfort."
+        },
+        {
+          "id": "em-21-c3",
+          "front": "What role does social connection play in lifelong movement?",
+          "back": "People who move with others — walking groups, recreational sport, exercise classes, friends — consistently demonstrate better long-term adherence than solo exercisers. Social connection transforms movement from a chore into a meaningful activity, adds accountability, and provides the relationship benefits of exercise above and beyond the physical ones."
+        },
+        {
+          "id": "em-21-c4",
+          "front": "How do you recover from a movement setback without abandoning the habit?",
+          "back": "Setbacks are inevitable — illness, travel, work pressure, injury. The key principle is \"never miss twice.\" Miss one day: normal. Miss two days: a pattern forming. Research shows that the speed of recovery after a lapse — not the lapse itself — is what separates long-term exercisers from those who quit. Self-compassion aids recovery; self-criticism prolongs absence."
+        },
+        {
+          "id": "em-21-c5",
+          "front": "What is the single most important thing to take away from this course?",
+          "back": "Movement is not a punishment, a project, or a problem to solve. It is the natural state of a healthy human body — something your biology craves and rewards. The goal isn't perfection; it's consistent, enjoyable, daily movement across a lifetime. Start where you are, use what you have, do what you can. That is enough."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "em-21-q1",
+          "question": "What is the key reason most long-term exercise programmes fail?",
+          "options": [
+            "People choose the wrong type of exercise",
+            "They rely on motivation and willpower rather than building movement into identity, environment, and social context",
+            "The programmes are not scientifically optimised enough",
+            "People don't have enough time to exercise properly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Most programmes fail because they depend on motivation and discipline — finite resources. Long-term movement adherence requires embedding activity into identity, environment, and social life, so it happens automatically rather than requiring daily self-control."
+        },
+        {
+          "id": "em-21-q2",
+          "question": "What does the \"never miss twice\" principle mean?",
+          "options": [
+            "You must exercise at least twice per week to maintain fitness",
+            "Never skip more than two consecutive exercise sessions",
+            "Missing one day is normal; missing two is a forming pattern — recover quickly rather than treating a lapse as failure",
+            "Book two exercise sessions per week to ensure one always happens"
+          ],
+          "correctIndex": 2,
+          "explanation": "The \"never miss twice\" principle means that one missed day is human — but allowing it to become two starts forming a new pattern. Research shows that quick recovery after a lapse, supported by self-compassion rather than self-criticism, is what distinguishes lifelong movers from those who quit."
+        },
+        {
+          "id": "em-21-q3",
+          "question": "Why does social movement (exercising with others) produce better long-term adherence than solo exercise?",
+          "options": [
+            "Group exercise is always more intense and therefore more effective",
+            "Social movement adds accountability, enjoyment, and relationship benefits that make the activity intrinsically rewarding",
+            "It is cheaper to exercise with others",
+            "Social exercise automatically prevents injury"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social movement consistently outperforms solo exercise for long-term adherence because it adds accountability, transforms the activity from a chore into a social event, and provides relationship benefits alongside the physical ones. The combination of intrinsic reward and social obligation is particularly powerful."
         }
       ]
     }

@@ -1,9 +1,18 @@
-import { useEffect, useMemo, useRef, useState, type TouchEvent } from 'react'
+import { Component, useEffect, useMemo, useRef, useState, type ErrorInfo, type ReactNode, type TouchEvent } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { getHub, isFlashcard, lessonXp, moduleLessonIds, type LessonCard } from '@/content/catalog'
+import {
+  getHub,
+  isFlashcard,
+  lessonAfter,
+  lessonXp,
+  moduleLessonIds,
+  type Course,
+  type CourseLesson,
+  type LessonCard,
+} from '@/content/catalog'
 import { useCourse } from '@/content/useCourse'
 import { todayIso } from '@/content/lms'
-import { completeLesson } from '@/lib/api'
+import { completeLesson, openLesson } from '@/lib/api'
 import { useSession } from '@/auth/session'
 
 type Stage = 'cards' | 'quizIntro' | 'quiz' | 'result'
@@ -30,14 +39,42 @@ const RESULT_BADGES: Record<string, { label: string; icon: string; desc: string 
 }
 
 export default function LessonPage() {
-  const { lessonId = '' } = useParams()
-  return <LessonPlayer key={lessonId} />
-}
-
-function LessonPlayer() {
   const { slug = '', lessonId = '' } = useParams()
   const course = useCourse(slug)
-  const lesson = course?.lessons.find((item) => item.id === lessonId)
+
+  return (
+    <LessonErrorBoundary key={lessonId} slug={slug}>
+      <LessonGate slug={slug} lessonId={lessonId} course={course} />
+    </LessonErrorBoundary>
+  )
+}
+
+function LessonGate({
+  slug,
+  lessonId,
+  course,
+}: {
+  slug: string
+  lessonId: string
+  course: Course | null | undefined
+}) {
+  if (course === undefined) return <LessonSpinner />
+  if (!course) return <LessonStatus slug={slug} title="Lesson failed to load" />
+  const lesson = course.lessons.find((item) => item.id === lessonId)
+  if (!lesson) return <LessonStatus slug={slug} title="Lesson not found" />
+  return <LessonPlayer key={lessonId} slug={slug} course={course} lesson={lesson} />
+}
+
+function LessonPlayer({
+  slug,
+  course,
+  lesson,
+}: {
+  slug: string
+  course: Course
+  lesson: CourseLesson
+}) {
+  const lessonId = lesson.id
   const { refresh } = useSession()
   const [stage, setStage] = useState<Stage>('cards')
   const [cardIndex, setCardIndex] = useState(0)
@@ -48,18 +85,24 @@ function LessonPlayer() {
   const [revealed, setRevealed] = useState(false)
   const [correctCount, setCorrectCount] = useState(0)
   const [busy, setBusy] = useState(false)
+  const [saveError, setSaveError] = useState(false)
   const [completion, setCompletion] = useState<CompletionData | null>(null)
+  const correctCountRef = useRef(0)
   const touchStart = useRef<{ x: number; y: number } | null>(null)
   const navRef = useRef({ next: () => {}, prev: () => {} })
 
   const module = useMemo(
-    () => course?.modules.find((item) => moduleLessonIds(course, item).includes(lessonId)),
+    () => course.modules.find((item) => moduleLessonIds(course, item).includes(lessonId)),
     [course, lessonId],
   )
 
   useEffect(() => {
     window.scrollTo({ top: 0 })
   }, [cardIndex, qIndex, stage])
+
+  useEffect(() => {
+    void openLesson({ courseSlug: slug, lessonSlug: lesson.id }).catch(() => {})
+  }, [lesson.id, slug])
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -77,38 +120,16 @@ function LessonPlayer() {
     return () => window.removeEventListener('keydown', onKey)
   }, [stage])
 
-  if (course === undefined) {
-    return (
-      <main className="min-h-screen flex items-center justify-center">
-        <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
-      </main>
-    )
-  }
-
-  if (!course || !lesson) {
-    return (
-      <main className="min-h-screen flex items-center justify-center px-4 text-center">
-        <div>
-          <p className="font-extrabold">Lesson not found</p>
-          <Link to={`/app/courses/${slug}`} className="mt-3 inline-block font-bold text-sw-blue">
-            Back to course
-          </Link>
-        </div>
-      </main>
-    )
-  }
-
   const hub = getHub(slug)
   const unit = ((hub.unitLabel as string) || 'days') === 'days' ? 'Day' : 'Lesson'
   const cards = lesson.cards
   const quiz = lesson.quiz
   const card = cards[cardIndex]
   const cardCount = Math.max(cards.length, 1)
-  const lastCard = cardIndex === cards.length - 1
+  const lastCard = cards.length === 0 || cardIndex >= cards.length - 1
   const lastQuestion = qIndex === quiz.length - 1
   const xpValue = lessonXp(lesson)
-  const lessonIndex = course.lessons.findIndex((item) => item.id === lesson.id)
-  const nextLesson = lessonIndex >= 0 ? course.lessons[lessonIndex + 1] : undefined
+  const nextLesson = lessonAfter(course.lessons, lesson.id)
   const chromeCard = stage === 'quizIntro' || stage === 'result' ? Math.max(0, cards.length - 1) : cardIndex
   const pct =
     stage === 'quiz'
@@ -135,7 +156,8 @@ function LessonPlayer() {
   const goNextCard = () => {
     if (animating) return
     if (lastCard) {
-      setStage(quiz.length ? 'quizIntro' : 'result')
+      if (quiz.length) setStage('quizIntro')
+      else void finish(0, 0)
       return
     }
     setFlipped(false)
@@ -151,15 +173,21 @@ function LessonPlayer() {
   const startQuiz = () => {
     setQIndex(0)
     setRevealed(false)
+    correctCountRef.current = 0
     setCorrectCount(0)
     setCompletion(null)
+    setSaveError(false)
     setStage('quiz')
   }
 
   const pickOption = (correct: boolean) => {
     if (revealed) return
     setRevealed(true)
-    if (correct) setCorrectCount((value) => value + 1)
+    if (correct) {
+      const next = correctCountRef.current + 1
+      correctCountRef.current = next
+      setCorrectCount(next)
+    }
   }
 
   const submitQuestion = () => {
@@ -169,11 +197,12 @@ function LessonPlayer() {
       setRevealed(false)
       return
     }
-    void finish(correctCount, quiz.length)
+    void finish(correctCountRef.current, quiz.length)
   }
 
   const finish = async (correct: number, total: number) => {
     setBusy(true)
+    setSaveError(false)
     setStage('result')
     try {
       const payload = await completeLesson({
@@ -195,6 +224,7 @@ function LessonPlayer() {
       await refresh({ silent: true })
     } catch {
       setCompletion(null)
+      setSaveError(true)
     } finally {
       setBusy(false)
     }
@@ -309,6 +339,15 @@ function LessonPlayer() {
             </div>
           ) : null}
         </main>
+      ) : stage === 'cards' ? (
+        <LessonMissingBody
+          message="This lesson has no cards."
+          actionLabel={quiz.length ? 'Start Quiz' : 'Continue'}
+          onAction={() => {
+            if (quiz.length) setStage('quizIntro')
+            else void finish(0, 0)
+          }}
+        />
       ) : null}
 
       {stage === 'quizIntro' ? (
@@ -332,6 +371,12 @@ function LessonPlayer() {
           key={qIndex}
           question={quiz[qIndex]}
           onAnswer={pickOption}
+        />
+      ) : stage === 'quiz' ? (
+        <LessonMissingBody
+          message="This question failed to load."
+          actionLabel="See results"
+          onAction={() => void finish(correctCountRef.current, quiz.length)}
         />
       ) : null}
 
@@ -358,21 +403,14 @@ function LessonPlayer() {
       {stage === 'quizIntro' ? null : stage === 'result' ? (
         <div className="fixed bottom-0 left-0 right-0 z-50" style={FOOTER_FADE}>
           <div className="max-w-2xl mx-auto px-4 pt-3 pb-3 flex flex-col gap-2">
-            {nextLesson ? (
-              <Link
-                to={`/app/courses/${slug}/${nextLesson.id}`}
-                className="flex items-center justify-center gap-2 bg-sw-blue text-white font-extrabold text-base py-4 rounded-full shadow-lg hover:bg-sw-blue-hover active:scale-[0.98] transition-all duration-200"
-              >
-                <span>Next Lesson →</span>
-              </Link>
-            ) : (
-              <Link
-                to={`/app/courses/${slug}`}
-                className="flex items-center justify-center gap-2 bg-sw-blue text-white font-extrabold text-base py-4 rounded-full shadow-lg hover:bg-sw-blue-hover active:scale-[0.98] transition-all duration-200"
-              >
-                <span>🏆 Back to Course</span>
-              </Link>
-            )}
+            <ResultLeaveCta
+              slug={slug}
+              nextLessonId={nextLesson?.id}
+              busy={busy}
+              completion={completion}
+              saveError={saveError}
+              onRetry={() => void finish(correctCountRef.current, quiz.length)}
+            />
             {correctCount < quiz.length && !busy ? (
               <button type="button" onClick={startQuiz} className="w-full text-sm font-semibold text-sw-grey hover:text-sw-blue transition-colors py-2">
                 Retry quiz
@@ -443,6 +481,116 @@ function LessonPlayer() {
       )}
     </div>
   )
+}
+
+function LessonSpinner() {
+  return (
+    <main className="min-h-screen bg-white flex items-center justify-center">
+      <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" aria-label="Loading lesson" />
+    </main>
+  )
+}
+
+function LessonStatus({ slug, title }: { slug: string; title: string }) {
+  return (
+    <main className="min-h-screen bg-white flex items-center justify-center px-4 text-center">
+      <div>
+        <p className="font-extrabold">{title}</p>
+        <Link to={`/app/courses/${slug}`} className="mt-3 inline-block font-bold text-sw-blue">
+          Back to course
+        </Link>
+      </div>
+    </main>
+  )
+}
+
+function LessonMissingBody({
+  message,
+  actionLabel,
+  onAction,
+}: {
+  message: string
+  actionLabel: string
+  onAction: () => void
+}) {
+  return (
+    <main className="flex-1 max-w-2xl mx-auto w-full px-4 sm:px-6 pt-20 pb-32 text-center">
+      <p className="font-extrabold text-sw-dark">{message}</p>
+      <button
+        type="button"
+        onClick={onAction}
+        className="mt-4 inline-flex items-center justify-center bg-sw-blue text-white font-extrabold text-base px-6 py-3 rounded-full shadow-lg hover:bg-sw-blue-hover active:scale-[0.98] transition-all duration-200"
+      >
+        {actionLabel}
+      </button>
+    </main>
+  )
+}
+
+const LEAVE_CTA =
+  'flex items-center justify-center gap-2 bg-sw-blue text-white font-extrabold text-base py-4 rounded-full shadow-lg hover:bg-sw-blue-hover active:scale-[0.98] transition-all duration-200'
+
+function ResultLeaveCta({
+  slug,
+  nextLessonId,
+  busy,
+  completion,
+  saveError,
+  onRetry,
+}: {
+  slug: string
+  nextLessonId?: string
+  busy: boolean
+  completion: CompletionData | null
+  saveError: boolean
+  onRetry: () => void
+}) {
+  const label = nextLessonId ? 'Next Lesson →' : '🏆 Back to Course'
+  const href = nextLessonId ? `/app/courses/${slug}/${nextLessonId}` : `/app/courses/${slug}`
+
+  if (busy) {
+    return (
+      <button type="button" disabled className={`${LEAVE_CTA} opacity-70 cursor-wait hover:bg-sw-blue active:scale-100`}>
+        Saving progress…
+      </button>
+    )
+  }
+
+  if (!completion) {
+    return (
+      <>
+        {saveError ? (
+          <p className="text-sm text-center text-sw-coral font-semibold">Couldn&apos;t save this lesson. Try again.</p>
+        ) : null}
+        <button type="button" onClick={onRetry} className={LEAVE_CTA}>
+          Retry save
+        </button>
+      </>
+    )
+  }
+
+  return (
+    <Link to={href} className={LEAVE_CTA}>
+      <span>{label}</span>
+    </Link>
+  )
+}
+
+class LessonErrorBoundary extends Component<{ slug: string; children: ReactNode }, { failed: boolean }> {
+  state = { failed: false }
+
+  static getDerivedStateFromError() {
+    return { failed: true }
+  }
+
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    console.error('[lesson]', error, info.componentStack)
+  }
+
+  render() {
+    if (this.state.failed) return <LessonStatus slug={this.props.slug} title="Lesson failed to load" />
+    return this.props.children
+  }
 }
 
 function QuizIntro({

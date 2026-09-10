@@ -1,7 +1,16 @@
 import { type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import hubChrome from '@/content/catalogs/hub-chrome.json'
-import { getHub, lessonXp, liveSlugSet, moduleLessonIds, type Course, type CourseLesson, type CourseModule } from '@/content/catalog'
+import {
+  continueLessonInCourse,
+  getHub,
+  lessonXp,
+  liveSlugSet,
+  moduleLessonIds,
+  type Course,
+  type CourseLesson,
+  type CourseModule,
+} from '@/content/catalog'
 import { useCourse } from '@/content/useCourse'
 import { CATEGORY_LABEL } from '@/content/lms'
 import { PROGRESS_COURSES } from '@/content/progress-catalog'
@@ -54,7 +63,8 @@ export default function CourseHubPage() {
   const xpEarned = progress.lessons
     .filter((row) => row.courseId === slug && row.status === 'completed')
     .reduce((sum, row) => sum + row.xpEarned, 0)
-  const next = course.lessons.find((lesson) => !done.has(lesson.id)) ?? course.lessons[0]
+  const preferSlug = progress.lastOpened?.courseId === slug ? progress.lastOpened.lessonSlug : undefined
+  const next = continueLessonInCourse(course, done, preferSlug) ?? course.lessons[0]
   const completedCount = done.size
   const remaining = Math.max(0, course.totalDays - completedCount)
   const pct = Math.round((completedCount / course.totalDays) * 100)
@@ -67,7 +77,7 @@ export default function CourseHubPage() {
     : outcomes
   const testimonials = hub.testimonials || []
   const continueHref = `/app/courses/${slug}/${next.id}`
-  const started = completedCount > 0
+  const started = completedCount > 0 || Boolean(preferSlug)
   const ctaLong = started
     ? `Continue — ${unitTitle.slice(0, -1)} ${next.dayNumber}: ${next.title} →`
     : `Start — ${unitTitle.slice(0, -1)} ${next.dayNumber}: ${next.title} →`

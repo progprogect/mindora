@@ -2,7 +2,7 @@ import { type CSSProperties, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PromptLibraryModal from '@/app/PromptLibraryModal'
 import { PLAN_TIERS } from '@/app/mockUser'
-import missionCourses from '@/content/mission-courses.json'
+import { getHub, pickHomeContinue } from '@/content/catalog'
 import {
   FOCUS_MISSION,
   FOCUS_PATHS,
@@ -13,6 +13,7 @@ import {
   todayIso,
 } from '@/content/lms'
 import { PROGRESS_COURSES } from '@/content/progress-catalog'
+import { useCourse } from '@/content/useCourse'
 import { useCurrentUser } from '@/auth/session'
 import { useProgress, usePurchases } from '@/lib/lmsQueries'
 
@@ -61,7 +62,13 @@ export default function DashboardPage() {
   const user = useCurrentUser()
   const progress = useProgress()
   const purchases = usePurchases()
-  if (user === undefined || progress === undefined) {
+  const focus = user?.focusCategory && user.focusCategory in FOCUS_PATHS ? user.focusCategory : 'ai'
+  const fallbackSlug = FOCUS_MISSION[focus] || '28-day-ai-challenge'
+  const lastSlug = progress?.lastOpened?.courseId
+  const lastCourse = useCourse(lastSlug)
+  const fallbackCourse = useCourse(fallbackSlug)
+  const waitingLast = Boolean(lastSlug) && lastCourse === undefined
+  if (user === undefined || progress === undefined || waitingLast || fallbackCourse === undefined) {
     return (
       <div className="min-h-screen flex items-center justify-center pb-20">
         <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
@@ -70,23 +77,23 @@ export default function DashboardPage() {
   }
 
   const name = firstName(user?.name)
-  const focus = user?.focusCategory && user.focusCategory in FOCUS_PATHS ? user.focusCategory : 'ai'
-  const missionSlug = FOCUS_MISSION[focus] || '28-day-ai-challenge'
-  const pack = (
-    missionCourses as Record<
-      string,
-      { title: string; totalDays: number; lessons: Array<{ id: string; dayNumber: number; title: string; duration?: string }> }
-    >
-  )[missionSlug]
+  const target = pickHomeContinue({
+    lastOpened: progress.lastOpened,
+    lastCourse,
+    fallbackSlug,
+    fallbackCourse,
+    progress: progress.lessons,
+  })
+  const missionSlug = target?.courseSlug ?? fallbackSlug
+  const nextLesson = target?.lesson
   const catalog = PROGRESS_COURSES[missionSlug]
   const completed = new Set(
-    progress.lessons.filter((row) => row.status === 'completed').map((row) => `${row.courseId}:${row.lessonSlug}`),
+    progress.lessons.filter((row) => row.courseId === missionSlug && row.status === 'completed').map((row) => row.lessonSlug),
   )
-  const lessons = pack?.lessons ?? []
-  const missionDone = lessons.filter((lesson) => completed.has(`${missionSlug}:${lesson.id}`)).length
-  const nextLesson = lessons.find((lesson) => !completed.has(`${missionSlug}:${lesson.id}`)) ?? lessons[0]
-  const totalDays = pack?.totalDays ?? catalog?.totalLessons ?? 28
-  const courseTitle = pack?.title ?? catalog?.name ?? '28-Day AI Challenge'
+  const missionDone = completed.size
+  const totalDays = target?.course.totalDays ?? catalog?.totalLessons ?? 28
+  const courseTitle = target?.course.title ?? catalog?.name ?? '28-Day AI Challenge'
+  const unit = ((getHub(missionSlug).unitLabel as string) || 'days') === 'days' ? 'Day' : 'Lesson'
   const xp = progress.user.xp
   const streak = progress.user.streakCount
   const today = todayIso()
@@ -108,10 +115,10 @@ export default function DashboardPage() {
   const continueHref = nextLesson ? `/app/courses/${missionSlug}/${nextLesson.id}` : `/app/courses/${missionSlug}`
   const pathHref = FOCUS_PATHS[focus] || '/app/ai-and-technology'
   const missionPct = totalDays > 0 ? Math.round((missionDone / totalDays) * 100) : 0
-  const ctaLabel =
-    missionDone === 0
-      ? '▶ Start — Day 1'
-      : `▶ Continue — Day ${nextLesson?.dayNumber ?? missionDone + 1}`
+  const startedHere = missionDone > 0 || progress.lastOpened?.courseId === missionSlug
+  const ctaLabel = startedHere
+    ? `▶ Continue — ${unit} ${nextLesson?.dayNumber ?? missionDone + 1}`
+    : `▶ Start — ${unit} ${nextLesson?.dayNumber ?? 1}`
   const featuredKey =
     DASHBOARD_PATHS.find((key) => PATH_META[key].focus === focus) ?? 'ai-and-technology'
   const gridKeys = DASHBOARD_PATHS.filter((key) => key !== featuredKey)
@@ -140,7 +147,7 @@ export default function DashboardPage() {
             </span>
           </div>
           <h2 className="text-white font-extrabold text-xl leading-tight mb-0.5">
-            {nextLesson ? `Day ${nextLesson.dayNumber} · ${nextLesson.title}` : courseTitle}
+            {nextLesson ? `${unit} ${nextLesson.dayNumber} · ${nextLesson.title}` : courseTitle}
           </h2>
           <p className="text-white/60 text-sm mb-1 leading-snug">{courseTitle}</p>
           <p className="text-white/45 text-xs mb-4">

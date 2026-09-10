@@ -4,6 +4,7 @@ import { initialsFromName } from '@/app/mockUser'
 import { PROFILE_FOCUS, PROFILE_PACES } from '@/content/lms'
 import { useCurrentUser, useSession } from '@/auth/session'
 import {
+  apiErrorMessage,
   cancelSubscription,
   openBillingPortal,
   updateName,
@@ -36,12 +37,13 @@ export default function ProfilePage() {
   const { refresh, signOut } = useSession()
   const navigate = useNavigate()
   const progress = useProgress()
-  const sub = useSubscription()
+  const { sub, reload: reloadSub } = useSubscription()
   const [editing, setEditing] = useState(false)
   const [nameDraft, setNameDraft] = useState('')
   const [cancelOpen, setCancelOpen] = useState(false)
   const [busy, setBusy] = useState(false)
   const [cancelMsg, setCancelMsg] = useState<string | null>(null)
+  const [billingError, setBillingError] = useState<string | null>(null)
 
   if (user === undefined || progress === undefined || sub === undefined) {
     return (
@@ -56,6 +58,7 @@ export default function ProfilePage() {
   const status = sub?.status || 'trialing'
   const pastDue = PAST_DUE.has(status)
   const renew = formatRenew(sub?.currentPeriodEnd ?? null)
+  const cancellable = Boolean(sub?.cancellable)
   const xp = progress.user.xp
   const streak = progress.user.streakCount
 
@@ -84,25 +87,29 @@ export default function ProfilePage() {
 
   const manage = async () => {
     setBusy(true)
+    setBillingError(null)
     try {
       const { url } = await openBillingPortal()
       window.location.href = url
-    } catch {
+    } catch (error) {
+      setBillingError(apiErrorMessage(error, 'Could not open billing portal.'))
+    } finally {
       setBusy(false)
     }
   }
 
   const confirmCancel = async () => {
     setBusy(true)
+    setBillingError(null)
     try {
       await cancelSubscription()
       setCancelOpen(false)
       setCancelMsg(
         "You'll retain full access until the end of your current billing period. A confirmation email is on its way.",
       )
-      await refresh({ silent: true })
-    } catch {
-      setBusy(false)
+      await Promise.all([refresh({ silent: true }), reloadSub()])
+    } catch (error) {
+      setBillingError(apiErrorMessage(error, 'Could not cancel this subscription.'))
     } finally {
       setBusy(false)
     }
@@ -180,26 +187,39 @@ export default function ProfilePage() {
               Cancellation scheduled. You&apos;ll keep access until {renew ?? 'the end of the period'}.
             </p>
           ) : null}
+          {!cancellable ? (
+            <p className="mb-3 text-sm text-sw-grey" data-testid="billing-unlinked">
+              Billing isn&apos;t linked on this account, so Manage and Cancel aren&apos;t available.
+            </p>
+          ) : null}
           {cancelMsg ? (
             <div className="mb-3 rounded-xl bg-sw-success-light p-3">
               <p className="text-sm font-bold text-sw-dark">Subscription cancelled</p>
               <p className="text-xs text-sw-grey mt-1">{cancelMsg}</p>
             </div>
           ) : null}
+          {billingError && !cancelOpen ? (
+            <p className="mb-3 text-sm text-red-500" data-testid="billing-error">
+              {billingError}
+            </p>
+          ) : null}
           <button
             type="button"
             onClick={() => void manage()}
-            disabled={busy}
+            disabled={busy || !cancellable}
             className="w-full bg-sw-blue text-white text-sm font-bold rounded-xl py-3 hover:bg-sw-blue-hover transition-colors disabled:opacity-50"
           >
             Manage Subscription
           </button>
           <p className="text-[11px] text-sw-grey text-center mt-2">Update payment method or view invoices</p>
-          {!sub?.cancelAtPeriodEnd && status !== 'canceled' ? (
+          {cancellable && !sub?.cancelAtPeriodEnd && status !== 'canceled' ? (
             <button
               type="button"
               data-testid="cancel-start"
-              onClick={() => setCancelOpen(true)}
+              onClick={() => {
+                setBillingError(null)
+                setCancelOpen(true)
+              }}
               className="w-full mt-3 border-2 border-sw-grey-border text-sm font-semibold text-sw-grey rounded-xl py-2.5 hover:border-red-300 hover:text-red-500 transition-colors"
             >
               Cancel Subscription
@@ -304,9 +324,17 @@ export default function ProfilePage() {
                 ? "Your subscription will be cancelled straight away and you won't be charged again. Any outstanding payment attempt will be stopped, so you can ignore any payment reminders."
                 : `You'll keep full access until ${renew ?? 'the end of your current billing period'}. You won't be charged again.`}
             </p>
+            {billingError ? (
+              <p className="mt-3 text-sm text-red-500" data-testid="cancel-error">
+                {billingError}
+              </p>
+            ) : null}
             <button
               type="button"
-              onClick={() => setCancelOpen(false)}
+              onClick={() => {
+                setCancelOpen(false)
+                setBillingError(null)
+              }}
               className="mt-4 w-full rounded-full bg-sw-blue text-white font-bold py-3"
             >
               Keep my plan

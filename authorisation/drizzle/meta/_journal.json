@@ -8,6 +8,13 @@
       "when": 1756320000000,
       "tag": "0000_lms",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1757506260000,
+      "tag": "0001_last_opened",
+      "breakpoints": true
     }
   ]
 }

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { buyOffer, fetchWiseThread, fetchWiseUsage, sendWiseMessage } from '@/lib/api'
+import { buyOffer, fetchWiseThread, fetchWiseThreads, fetchWiseUsage, sendWiseMessage } from '@/lib/api'
 import { useHasSavedCard } from '@/lib/lmsQueries'
 
 const CHIPS = [
@@ -9,6 +9,16 @@ const CHIPS = [
   'Review my progress this week',
   'I need motivation',
 ]
+
+const LESSON_CHIPS = [
+  'Help me understand this lesson',
+  'How do I apply this?',
+  'Quiz me on the key ideas',
+]
+
+const FOLLOWUP_CHIPS = ['Tell me more', 'How do I apply this?', 'Set a goal for this']
+
+const LESSON_QUERY_KEYS = ['lesson', 'task', 'concept', 'detail', 'prompt'] as const
 
 const WISE_AVATAR = '/assets/wise.png'
 const GOALS_KEY = 'sw_wise_goals'
@@ -29,8 +39,38 @@ function saveGoals(goals: Goal[]) {
   localStorage.setItem(GOALS_KEY, JSON.stringify(goals))
 }
 
+function localIsoDay() {
+  const now = new Date()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+  return `${now.getFullYear()}-${month}-${day}`
+}
+
+function composeLessonPrompt(params: URLSearchParams) {
+  const lesson = params.get('lesson')?.trim() || ''
+  const concept = params.get('concept')?.trim() || ''
+  const detail = params.get('detail')?.trim() || ''
+  const task = params.get('task')?.trim() || ''
+  const prompt = params.get('prompt')?.trim() || ''
+  if (concept) {
+    const working = lesson ? `I'm working on "${lesson}" and I want to understand "${concept}".` : `I want to understand "${concept}".`
+    const said = detail ? ` The lesson says: ${detail}` : ''
+    return `${working}${said} — can you explain it in simpler terms and give me an example?`
+  }
+  if (task) {
+    if (prompt) return `${task}\n\nHere's the prompt I'm using:\n${prompt}`
+    return task
+  }
+  if (lesson) return `I'm working on "${lesson}". Help me understand the key ideas and how to apply them.`
+  return ''
+}
+
+function hasLessonQuery(params: URLSearchParams) {
+  return LESSON_QUERY_KEYS.some((key) => Boolean(params.get(key)?.trim()))
+}
+
 export default function WisePage() {
-  const [params] = useSearchParams()
+  const [params, setSearchParams] = useSearchParams()
   const conversationId = params.get('conversationId') || undefined
   const hasCard = useHasSavedCard()
   const [usage, setUsage] = useState<{ used: number; limit: number; unlocked: boolean } | undefined>()
@@ -39,49 +79,150 @@ export default function WisePage() {
   const [text, setText] = useState('')
   const [busy, setBusy] = useState(false)
   const [locked, setLocked] = useState(false)
+  const [hydrated, setHydrated] = useState(false)
   const [goalsOpen, setGoalsOpen] = useState(false)
   const [goals, setGoals] = useState<Goal[]>(() => loadGoals())
   const [unlockBusy, setUnlockBusy] = useState(false)
   const [unlockError, setUnlockError] = useState<string | null>(null)
+  const skipRestoreRef = useRef(false)
+  const autoSendLock = useRef(false)
+  const threadIdRef = useRef(threadId)
+  const messagesRef = useRef(messages)
+  const busyRef = useRef(busy)
+  const bottomRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    threadIdRef.current = threadId
+  }, [threadId])
+  useEffect(() => {
+    messagesRef.current = messages
+  }, [messages])
+  useEffect(() => {
+    busyRef.current = busy
+  }, [busy])
+
+  const persistThread = useCallback(
+    (id: string, dropLesson = true) => {
+      const next = new URLSearchParams(params)
+      next.set('conversationId', id)
+      if (dropLesson) {
+        for (const key of LESSON_QUERY_KEYS) next.delete(key)
+      }
+      if (next.toString() === params.toString()) return
+      setSearchParams(next, { replace: true })
+    },
+    [params, setSearchParams],
+  )
 
   useEffect(() => {
     void fetchWiseUsage().then(setUsage).catch(() => setUsage({ used: 0, limit: 1, unlocked: false }))
   }, [])
 
   useEffect(() => {
-    if (!conversationId) return
-    setThreadId(conversationId)
-    void fetchWiseThread(conversationId)
-      .then((full) => setMessages(full.messages))
-      .catch(() => {})
-  }, [conversationId])
+    let cancelled = false
+    async function hydrate() {
+      if (conversationId) {
+        setThreadId(conversationId)
+        try {
+          const full = await fetchWiseThread(conversationId)
+          if (!cancelled) {
+            setMessages(full.messages.map((row) => ({ role: row.role, content: row.content })))
+          }
+        } catch {
+          if (!cancelled) setMessages([])
+        }
+        if (!cancelled) setHydrated(true)
+        return
+      }
+      if (skipRestoreRef.current) {
+        if (!cancelled) setHydrated(true)
+        return
+      }
+      try {
+        const { threads } = await fetchWiseThreads()
+        const latest = threads[0]
+        if (latest && !cancelled) {
+          setThreadId(latest.id)
+          setSearchParams(
+            (current) => {
+              const next = new URLSearchParams(current)
+              next.set('conversationId', latest.id)
+              return next
+            },
+            { replace: true },
+          )
+          return
+        }
+      } catch {
+        /* empty chat if history is unavailable */
+      }
+      if (!cancelled) setHydrated(true)
+    }
+    void hydrate()
+    return () => {
+      cancelled = true
+    }
+  }, [conversationId, setSearchParams])
+
+  const send = useCallback(
+    async (value: string) => {
+      const trimmed = value.trim()
+      if (!trimmed || busyRef.current) return
+      setBusy(true)
+      setText('')
+      setMessages((current) => [...current, { role: 'user', content: trimmed }])
+      try {
+        const result = await sendWiseMessage({
+          text: trimmed,
+          threadId: threadIdRef.current,
+          localDate: localIsoDay(),
+        })
+        if ('locked' in result && result.locked) {
+          setLocked(true)
+          if (result.quota) setUsage(result.quota)
+          return
+        }
+        if (result.threadId) {
+          setThreadId(result.threadId)
+          threadIdRef.current = result.threadId
+          persistThread(result.threadId)
+        }
+        if (result.reply) setMessages((current) => [...current, { role: 'assistant', content: result.reply as string }])
+        if (result.quota) setUsage(result.quota)
+      } finally {
+        setBusy(false)
+      }
+    },
+    [persistThread],
+  )
+
+  useEffect(() => {
+    if (!hydrated || autoSendLock.current) return
+    const composed = composeLessonPrompt(params)
+    if (!composed) return
+    if (usage === undefined) return
+    autoSendLock.current = true
+    if (messagesRef.current.some((row) => row.role === 'user' && row.content === composed)) {
+      if (threadIdRef.current) persistThread(threadIdRef.current)
+      return
+    }
+    if (usage.used >= usage.limit) return
+    void send(composed)
+  }, [hydrated, usage, params, persistThread, send])
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ block: 'end' })
+  }, [messages, busy])
 
   const resetConversation = () => {
+    skipRestoreRef.current = true
+    autoSendLock.current = true
     setThreadId(undefined)
     setMessages([])
     setText('')
     setLocked(false)
-  }
-
-  const send = async (value: string) => {
-    const trimmed = value.trim()
-    if (!trimmed || busy) return
-    setBusy(true)
-    setText('')
-    setMessages((current) => [...current, { role: 'user', content: trimmed }])
-    try {
-      const result = await sendWiseMessage({ text: trimmed, threadId })
-      if ('locked' in result && result.locked) {
-        setLocked(true)
-        if (result.quota) setUsage(result.quota)
-        return
-      }
-      if (result.threadId) setThreadId(result.threadId)
-      if (result.reply) setMessages((current) => [...current, { role: 'assistant', content: result.reply as string }])
-      if (result.quota) setUsage(result.quota)
-    } finally {
-      setBusy(false)
-    }
+    setHydrated(true)
+    setSearchParams({}, { replace: true })
   }
 
   const unlock = async () => {
@@ -103,6 +244,7 @@ export default function WisePage() {
   }
 
   const empty = messages.length === 0
+  const emptyChips = hasLessonQuery(params) ? LESSON_CHIPS : CHIPS
   const addGoal = (title: string) => {
     const next = [...goals, { id: crypto.randomUUID(), title }]
     setGoals(next)
@@ -196,7 +338,11 @@ export default function WisePage() {
       ) : null}
 
       <div className="flex-1 overflow-y-auto">
-        {empty ? (
+        {!hydrated ? (
+          <div className="flex justify-center py-16">
+            <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
+          </div>
+        ) : empty ? (
           <div className="flex flex-col items-center justify-center text-center py-12 px-4">
             <img src={WISE_AVATAR} alt="Wise" className="w-16 h-16 rounded-full object-cover mb-4 shadow-md" />
             <h2 className="text-lg font-bold text-sw-dark mb-2">Hey! I&apos;m Wise</h2>
@@ -204,12 +350,13 @@ export default function WisePage() {
               Your personal AI coach. I know your goals, your progress, and what you&apos;re learning — ask me anything.
             </p>
             <div className="flex flex-wrap gap-2 mt-5 justify-center max-w-[320px]">
-              {CHIPS.map((chip) => (
+              {emptyChips.map((chip) => (
                 <button
                   key={chip}
                   type="button"
+                  disabled={busy}
                   onClick={() => void send(chip)}
-                  className="text-xs bg-sw-grey-light/60 text-sw-grey border border-sw-grey-border/50 rounded-full px-3 py-1.5 hover:bg-sw-blue/5 hover:border-sw-blue/30 hover:text-sw-blue transition-colors active:scale-95"
+                  className="text-xs bg-sw-grey-light/60 text-sw-grey border border-sw-grey-border/50 rounded-full px-3 py-1.5 hover:bg-sw-blue/5 hover:border-sw-blue/30 hover:text-sw-blue transition-colors active:scale-95 disabled:opacity-50"
                 >
                   {chip}
                 </button>
@@ -228,12 +375,32 @@ export default function WisePage() {
               ) : (
                 <div key={`${message.role}-${index}`} className="flex items-start gap-2.5 animate-fade-in">
                   <img src={WISE_AVATAR} alt="Wise" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
-                  <div className="max-w-[80%] bg-sw-grey-light/60 text-sw-dark rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm leading-relaxed">
+                  <div className="max-w-[80%] bg-sw-grey-light/60 text-sw-dark rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words">
                     {message.content}
                   </div>
                 </div>
               ),
             )}
+            {busy ? (
+              <div className="flex items-start gap-2.5">
+                <img src={WISE_AVATAR} alt="Wise" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
+                <div className="bg-sw-grey-light/60 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-sw-grey">Wise is typing…</div>
+              </div>
+            ) : locked ? null : (
+              <div className="flex flex-wrap gap-2 pt-1">
+                {FOLLOWUP_CHIPS.map((chip) => (
+                  <button
+                    key={chip}
+                    type="button"
+                    onClick={() => void send(chip)}
+                    className="text-xs bg-sw-grey-light/60 text-sw-grey border border-sw-grey-border/50 rounded-full px-3 py-1.5 hover:bg-sw-blue/5 hover:border-sw-blue/30 hover:text-sw-blue transition-colors active:scale-95"
+                  >
+                    {chip}
+                  </button>
+                ))}
+              </div>
+            )}
+            <div ref={bottomRef} />
           </div>
         )}
       </div>
@@ -259,6 +426,7 @@ export default function WisePage() {
               rows={1}
               aria-label="Message to Wise"
               placeholder="Ask Wise anything..."
+              disabled={busy || !hydrated}
               onChange={(event) => setText(event.target.value)}
               onKeyDown={(event) => {
                 if (event.key === 'Enter' && !event.shiftKey) {
@@ -270,7 +438,7 @@ export default function WisePage() {
             />
             <button
               type="submit"
-              disabled={busy || !text.trim()}
+              disabled={busy || !hydrated || !text.trim()}
               className="w-10 h-10 rounded-xl bg-sw-blue flex items-center justify-center text-white disabled:opacity-40 transition-opacity flex-shrink-0"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

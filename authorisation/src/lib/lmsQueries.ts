@@ -64,6 +64,7 @@ export function useProgress() {
         lessons: [],
         badges: [],
         user: { xp: 0, streakCount: 0, lastActivityDate: null },
+        lastOpened: null,
       })
     }
   }, [])
@@ -77,6 +78,16 @@ export function useProgress() {
 
 export function useSubscription() {
   const [sub, setSub] = useState<SubscriptionDto | undefined>(undefined)
+
+  const reload = useCallback(async () => {
+    try {
+      setSub(await fetchSubscription())
+    } catch (error) {
+      console.warn('[api] subscription failed', error)
+      setSub(null)
+    }
+  }, [])
+
   useEffect(() => {
     let cancelled = false
     fetchSubscription()
@@ -91,7 +102,8 @@ export function useSubscription() {
       cancelled = true
     }
   }, [])
-  return sub
+
+  return { sub, reload }
 }
 
 export type PurchaseRecord = { sku: string; createdAt: number; amountCents: number | null }

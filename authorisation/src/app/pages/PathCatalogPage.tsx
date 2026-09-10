@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { getLiveCards, getPath, liveSlugSet } from '@/content/catalog'
+import { getLiveCards, getPath, liveSlugSet, pickPathContinueCard } from '@/content/catalog'
 import { PATH_META } from '@/content/lms'
 import { useProgress } from '@/lib/lmsQueries'
 
@@ -64,16 +64,17 @@ export default function PathCatalogPage({ pathKey }: Props) {
   const totalLessons = cards.reduce((sum, card) => sum + (card.lessons ?? 0), 0)
   const pathPct = totalLessons > 0 ? Math.round((lessonsHere / totalLessons) * 100) : 0
 
-  const continueCard =
-    cards.find((card) => {
-      const done = completed.filter((row) => row.courseId === card.id).length
-      const total = card.lessons ?? 0
-      return liveSlugSet.has(card.id) && done > 0 && (total === 0 || done < total)
-    }) ?? cards.find((card) => liveSlugSet.has(card.id))
+  const continueCard = pickPathContinueCard({
+    cards,
+    lastOpened: progress?.lastOpened,
+    completed,
+    isLive: (id) => liveSlugSet.has(id),
+  })
 
   const continueDone = continueCard ? completed.filter((row) => row.courseId === continueCard.id).length : 0
   const continueTotal = continueCard?.lessons ?? 0
   const continuePct = continueTotal > 0 ? Math.round((continueDone / continueTotal) * 100) : 0
+  const continueStarted = continueDone > 0 || progress?.lastOpened?.courseId === continueCard?.id
 
   if (!path) {
     return (
@@ -177,7 +178,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
             className="block rounded-2xl bg-white p-4 shadow-sm border-2 border-sw-blue/20 active:scale-[0.98] transition-all"
           >
             <p className="text-[10px] font-bold text-sw-blue uppercase tracking-[0.12em] mb-2">
-              {continueDone > 0 ? '▶ Continue Learning' : '🚀 Start Here'}
+              {continueStarted ? '▶ Continue Learning' : '🚀 Start Here'}
             </p>
             <div className="flex items-center gap-3">
               <div
@@ -188,7 +189,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-bold text-sw-dark leading-tight truncate">{continueCard.title}</h3>
                 <p className="text-xs text-sw-grey mt-0.5">
-                  {continueDone > 0
+                  {continueStarted
                     ? `Day ${Math.min(continueDone + 1, continueTotal || continueDone + 1)} of ${continueTotal || '—'}`
                     : [
                         continueCard.lessons ? `${continueCard.lessons} lessons` : null,
@@ -197,7 +198,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
                         .filter(Boolean)
                         .join(' · ')}
                 </p>
-                {continueDone > 0 ? (
+                {continueStarted ? (
                   <div
                     className="mt-2 h-1.5 rounded-full bg-sw-grey-light overflow-hidden"
                     role="progressbar"
