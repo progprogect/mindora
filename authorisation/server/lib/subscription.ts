@@ -10,6 +10,7 @@ export type SubscriptionDto = {
   currentPeriodEnd: number | null
   cancelAtPeriodEnd: boolean
   cancellable: boolean
+  isYearly: boolean
 }
 
 export class BillingError extends Error {
@@ -23,6 +24,8 @@ export class BillingError extends Error {
 }
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
+const LIVE_SUB = new Set(['trialing', 'active'])
+const ANNUAL_OTO_CENTS = 5999
 
 function stripeConfigured() {
   return Boolean(loadEnv().STRIPE_SECRET_KEY)
@@ -65,6 +68,7 @@ async function upsertLocal(userId: string, stripeSub: Stripe.Subscription): Prom
     currentPeriodEnd,
     cancelAtPeriodEnd,
     cancellable: true,
+    isYearly: stripeSubscriptionIsYearly(stripeSub),
   }
 }
 
@@ -84,6 +88,7 @@ function dtoFromLocal(local: typeof subscriptions.$inferSelect): SubscriptionDto
     currentPeriodEnd: local.renewsAt ? Math.floor(local.renewsAt.getTime() / 1000) : null,
     cancelAtPeriodEnd: local.cancelAtPeriodEnd,
     cancellable: stripeConfigured() && Boolean(local.stripeSubscriptionId),
+    isYearly: false,
   }
 }
 
@@ -235,4 +240,116 @@ export async function findUserIdByEmail(email: string): Promise<string | null> {
   if (authUser) return authUser.id
   const [profile] = await db.select().from(profiles).where(eq(profiles.email, normalised)).limit(1)
   return profile?.userId ?? null
+}
+
+export function stripeSubscriptionIsYearly(sub: Stripe.Subscription): boolean {
+  return sub.items.data.some((item) => {
+    const price = item.price
+    const rec = price?.recurring
+    if (rec?.interval === 'year') return true
+    if (rec?.interval === 'month' && (rec.interval_count ?? 1) >= 12) return true
+    const product = price?.product
+    const productBits =
+      typeof product === 'string'
+        ? product
+        : product && !product.deleted
+          ? `${product.id} ${product.name ?? ''} ${product.metadata?.plan ?? ''} ${product.metadata?.interval ?? ''}`
+          : ''
+    const hay = [price?.id, price?.nickname, price?.lookup_key, productBits].join(' ').toLowerCase()
+    return /\bannual\b|\byearly\b|12month|12-month|12_month/.test(hay)
+  })
+}
+
+export type SwitchAnnualResult =
+  | { success: true; alreadyPurchased: boolean }
+  | { success: false; reason: string; error: string }
+
+const ANNUAL_CONFIG_ERROR =
+  'This annual upgrade is not available yet. Keep your monthly plan for now — you can switch later, and nothing is lost.'
+
+async function liveStripeSubscription(userId: string, email: string): Promise<Stripe.Subscription | null> {
+  if (!stripeConfigured()) return null
+  const stripe = getStripe()
+  const local = await loadLocalSubscription(userId)
+  if (local?.stripeSubscriptionId) {
+    try {
+      const remote = await stripe.subscriptions.retrieve(local.stripeSubscriptionId)
+      if (LIVE_SUB.has(remote.status)) return remote
+    } catch (error) {
+      console.error('[subscription] retrieve for annual switch failed', error)
+    }
+  }
+  const customerId = await findStripeCustomerId(userId, email)
+  if (!customerId) return null
+  const listed = await stripe.subscriptions.list({ customer: customerId, status: 'all', limit: 10 })
+  const live = [...listed.data]
+    .filter((sub) => LIVE_SUB.has(sub.status))
+    .sort((a, b) => (b.created ?? 0) - (a.created ?? 0))
+  return live[0] ?? null
+}
+
+function otoPriceLooksRight(price: Stripe.Price): boolean {
+  if (price.unit_amount !== ANNUAL_OTO_CENTS) return false
+  const rec = price.recurring
+  if (!rec) return false
+  if (rec.interval === 'year') return true
+  return rec.interval === 'month' && (rec.interval_count ?? 1) >= 12
+}
+
+/** Trial stays. Does not write vault/planner SKUs. Caller records upsell_events. */
+export async function switchToAnnualPrice(userId: string, email: string): Promise<SwitchAnnualResult> {
+  const priceId = loadEnv().STRIPE_ANNUAL_OTO_PRICE_ID.trim()
+  if (!stripeConfigured() || !priceId) {
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+  }
+
+  const stripe = getStripe()
+  let otoPrice: Stripe.Price
+  try {
+    otoPrice = await stripe.prices.retrieve(priceId)
+  } catch (error) {
+    console.error('[subscription] annual OTO price lookup failed', error)
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+  }
+  if (!otoPriceLooksRight(otoPrice)) {
+    console.error('[subscription] STRIPE_ANNUAL_OTO_PRICE_ID is not $59.99/year', {
+      unit_amount: otoPrice.unit_amount,
+      interval: otoPrice.recurring?.interval,
+      interval_count: otoPrice.recurring?.interval_count,
+    })
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+  }
+
+  const remote = await liveStripeSubscription(userId, email)
+  if (!remote) {
+    return {
+      success: false,
+      reason: 'configError',
+      error: 'No active subscription is linked to this account yet. Keep your monthly plan for now.',
+    }
+  }
+  if (stripeSubscriptionIsYearly(remote) || remote.items.data.some((item) => item.price?.id === priceId)) {
+    await upsertLocal(userId, remote)
+    return { success: true, alreadyPurchased: true }
+  }
+
+  const item = remote.items.data[0]
+  if (!item?.id) {
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+  }
+
+  try {
+    const updated = await stripe.subscriptions.update(remote.id, {
+      items: [{ id: item.id, price: priceId }],
+      proration_behavior: 'none',
+      metadata: {
+        ...remote.metadata,
+        offerSlug: 'annual-upgrade',
+      },
+    })
+    await upsertLocal(userId, updated)
+    return { success: true, alreadyPurchased: false }
+  } catch (error) {
+    throw toBillingError(error, 'Stripe could not switch this subscription to annual.')
+  }
 }

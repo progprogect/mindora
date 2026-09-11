@@ -41,6 +41,7 @@ const PLANNER_CHECKOUT_NAMES: Record<PlannerId, string> = {
 export function offerAmountCents(offerSlug: string): number | null {
   if (offerSlug === 'planner-bundle') return 495
   if (offerSlug === 'planner-bundle-library') return 795
+  if (offerSlug === 'ultimate-prompt-library-oto') return 997
   if (offerSlug === 'ultimate-prompt-library') return 1995
   if (offerSlug === 'wise-ai-coach') return 1995
   if (offerSlug.startsWith('planner-')) return 295
@@ -48,7 +49,9 @@ export function offerAmountCents(offerSlug: string): number | null {
 }
 
 export function offerCheckoutName(offerSlug: string): string {
-  if (offerSlug === 'ultimate-prompt-library') return 'Prompt Library'
+  if (offerSlug === 'ultimate-prompt-library' || offerSlug === 'ultimate-prompt-library-oto') {
+    return 'Prompt Library'
+  }
   if (offerSlug === 'planner-bundle' || offerSlug === 'planner-bundle-library') return 'All 10 planners'
   if (offerSlug === 'wise-ai-coach') return 'Wise AI Coach'
   if (offerSlug.startsWith('planner-')) {
@@ -63,7 +66,16 @@ export function skusForOffer(offerSlug: string): string[] {
   if (offerSlug === 'planner-bundle' || offerSlug === 'planner-bundle-library') {
     return ['planner-bundle', ...PLANNER_IDS.map((id) => `planner-${id}`)]
   }
+  if (offerSlug === 'ultimate-prompt-library-oto') return ['ultimate-prompt-library']
   return [offerSlug]
+}
+
+export async function ownsOffer(userId: string, offerSlug: string) {
+  const skus = skusForOffer(offerSlug)
+  for (const sku of skus) {
+    if (!(await hasSku(userId, sku))) return false
+  }
+  return skus.length > 0
 }
 
 export async function listPurchases(userId: string) {

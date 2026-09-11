@@ -57,6 +57,112 @@ function Chevron({
   )
 }
 
+function JourneyStep({
+  label,
+  state,
+}: {
+  label: string
+  state: 'done' | 'next' | 'todo'
+}) {
+  return (
+    <li className="flex items-center gap-3 py-2.5 border-b border-sw-grey-border last:border-b-0">
+      {state === 'done' ? (
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-green-500 text-white text-sm font-bold">
+          ✓
+        </span>
+      ) : state === 'next' ? (
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sw-blue text-white text-[10px] font-bold">
+          Next
+        </span>
+      ) : (
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-sw-grey-border text-sw-grey text-sm">
+          ○
+        </span>
+      )}
+      <span className={`text-sm font-semibold ${state === 'done' ? 'text-sw-dark' : state === 'next' ? 'text-sw-dark' : 'text-sw-grey'}`}>
+        {label}
+      </span>
+    </li>
+  )
+}
+
+function FirstRunHome({
+  name,
+  paceMinutes,
+  courseTitle,
+  unit,
+  nextLesson,
+  continueHref,
+  badgeEarned,
+  totalDays,
+}: {
+  name: string
+  paceMinutes: string
+  courseTitle: string
+  unit: string
+  nextLesson: { dayNumber?: number; title: string } | undefined | null
+  continueHref: string
+  badgeEarned: boolean
+  totalDays: number
+}) {
+  const day = nextLesson?.dayNumber ?? 1
+  return (
+    <>
+      <div data-testid="dashboard-first-run" className="pt-1 pb-0.5">
+        <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">You&apos;re all set, {name}!</h1>
+        <p className="text-sm text-sw-grey mt-2 leading-relaxed">
+          Your personalised plan is ready. Start your first lesson below — it takes just {paceMinutes} minutes.
+        </p>
+      </div>
+
+      <div
+        className="rounded-2xl overflow-hidden shadow-md"
+        style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)) 0%, hsl(224 70% 38%) 100%)' }}
+      >
+        <div className="p-5">
+          <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.14em] mb-3">Your First Lesson</p>
+          <h2 className="text-white font-extrabold text-xl leading-tight mb-0.5">
+            {nextLesson ? `${unit} ${day} · ${nextLesson.title}` : courseTitle}
+          </h2>
+          <p className="text-white/60 text-sm mb-4 leading-snug">{courseTitle}</p>
+          <Link
+            to={continueHref}
+            data-testid="dashboard-start-lesson-1"
+            className="flex items-center justify-center gap-2 w-full bg-white font-extrabold text-sm px-5 py-3.5 rounded-xl shadow-sm active:scale-[0.98] transition-transform"
+            style={{ color: 'hsl(var(--sw-blue))' }}
+          >
+            Start Lesson {day}
+            <Chevron className="w-4 h-4 ml-auto" strokeWidth={2.5} />
+          </Link>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl px-4 py-4 shadow-sm">
+        <p className="text-[10px] font-bold text-sw-grey uppercase tracking-[0.12em] mb-1">Your journey</p>
+        <ul>
+          <JourneyStep label="Create your account" state="done" />
+          <JourneyStep label="Personalise your plan" state="done" />
+          <JourneyStep label="Complete your first lesson" state="next" />
+          <JourneyStep label="Earn your first badge" state={badgeEarned ? 'done' : 'todo'} />
+        </ul>
+      </div>
+
+      <Link
+        to={continueHref}
+        data-testid="dashboard-first-run-course"
+        className="flex items-center gap-3 bg-white rounded-2xl px-4 py-4 shadow-sm border border-sw-grey-border active:scale-[0.98] transition-transform"
+      >
+        <span className="text-2xl flex-shrink-0">📚</span>
+        <div className="flex-1 min-w-0">
+          <p className="text-sm font-bold text-sw-dark leading-tight">{courseTitle}</p>
+          <p className="text-xs text-sw-grey mt-0.5">{totalDays} {unit === 'Day' ? 'days' : 'lessons'}</p>
+        </div>
+        <Chevron className="w-5 h-5 text-sw-grey flex-shrink-0" />
+      </Link>
+    </>
+  )
+}
+
 export default function DashboardPage() {
   const [libraryOpen, setLibraryOpen] = useState(false)
   const user = useCurrentUser()
@@ -123,9 +229,25 @@ export default function DashboardPage() {
     DASHBOARD_PATHS.find((key) => PATH_META[key].focus === focus) ?? 'ai-and-technology'
   const gridKeys = DASHBOARD_PATHS.filter((key) => key !== featuredKey)
   const featured = PATH_META[featuredKey]
+  const firstRun = progress.lessons.every((row) => row.status !== 'completed')
+  const badgeEarned = progress.badges.some((badge) => badge.badgeId === 'first-step')
+  const paceMinutes = pace.match(/\d+/)?.[0] ?? '15'
 
   return (
     <main className="max-w-2xl mx-auto px-4 pt-5 pb-36 space-y-4">
+      {firstRun ? (
+        <FirstRunHome
+          name={name}
+          paceMinutes={paceMinutes}
+          courseTitle={courseTitle}
+          unit={unit}
+          nextLesson={nextLesson}
+          continueHref={continueHref}
+          badgeEarned={badgeEarned}
+          totalDays={totalDays}
+        />
+      ) : (
+        <>
       <div className="pt-1 pb-0.5">
         <p className="text-xs font-semibold text-sw-grey uppercase tracking-widest mb-0.5">{greetingLabel()}</p>
         <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">Hey, {name}!</h1>
@@ -226,6 +348,8 @@ export default function DashboardPage() {
           })}
         </div>
       </div>
+        </>
+      )}
 
       <div className="grid grid-cols-3 gap-3">
         <div className="bg-white rounded-xl p-3.5 shadow-sm text-center">

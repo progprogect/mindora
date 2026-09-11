@@ -2,8 +2,9 @@ import { Navigate, Route, useParams } from 'react-router-dom'
 import AccountCreatePage from '@/account/AccountCreatePage'
 import CheckoutSetupPage from '@/account/CheckoutSetupPage'
 import OnboardPage from '@/account/OnboardPage'
-import UpgradeGatePage from '@/account/UpgradeGatePage'
+import UpgradeAnnualPage from '@/account/UpgradeAnnualPage'
 import UpgradePlannersPage from '@/account/UpgradePlannersPage'
+import UpgradePromptPage from '@/account/UpgradePromptPage'
 import UpgradeWisePage from '@/account/UpgradeWisePage'
 import WelcomePage from '@/account/WelcomePage'
 import AppLayout from '@/app/AppLayout'
@@ -21,7 +22,6 @@ import PurchasesPage from '@/app/pages/PurchasesPage'
 import WiseHistoryPage from '@/app/pages/WiseHistoryPage'
 import WisePage from '@/app/pages/WisePage'
 import WiseUnlockPage from '@/app/pages/WiseUnlockPage'
-import AccountStubPage from '@/account/AccountStubPage'
 import LoginPage from '@/auth/LoginPage'
 import RequireAuth from '@/auth/RequireAuth'
 import RequireLmsAccess from '@/auth/RequireLmsAccess'
@@ -48,10 +48,10 @@ export const lmsRoutes = (
     <Route path="/account/create" element={<AccountCreatePage />} />
     <Route path="/account/onboard" element={<OnboardPage />} />
     <Route path="/account/welcome" element={<WelcomePage />} />
-    <Route path="/account/upgrade" element={<UpgradeGatePage />} />
+    <Route path="/account/upgrade" element={<UpgradePromptPage />} />
     <Route path="/account/upgrade-planners" element={<UpgradePlannersPage />} />
+    <Route path="/account/upgrade-annual" element={<UpgradeAnnualPage />} />
     <Route path="/account/upgrade-wise" element={<UpgradeWisePage />} />
-    <Route path="/account/upgrade-annual" element={<AccountStubPage title="Upgrade annual" />} />
 
     <Route
       path="/app"

@@ -186,6 +186,14 @@ export async function buyOffer(args: { offerSlug: string; attribution?: unknown 
   return result
 }
 
+/** Setup OTO: switch trial/monthly Stripe Price to $59.99/year. Does not use charge. */
+export async function switchToAnnual(): Promise<ChargeResult> {
+  return apiJson<ChargeResult>('/api/upsell/switch-annual', {
+    method: 'POST',
+    body: '{}',
+  })
+}
+
 export function upsellPaymentNote(hasSavedCard: boolean | undefined) {
   if (hasSavedCard === true) return 'Charges your saved card. Instant access after purchase.'
   return 'Secure payment via Stripe'
@@ -245,6 +253,7 @@ export type SubscriptionDto = {
   currentPeriodEnd: number | null
   cancelAtPeriodEnd: boolean
   cancellable: boolean
+  isYearly?: boolean
 } | null
 
 export async function fetchSubscription() {

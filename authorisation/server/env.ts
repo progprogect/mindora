@@ -13,6 +13,8 @@ const EnvSchema = z.object({
   SESSION_SECRET: z.string().optional().default(''),
   STRIPE_SECRET_KEY: z.string().optional().default(''),
   STRIPE_WEBHOOK_SECRET: z.string().optional().default(''),
+  /** Setup OTO annual Price ($59.99/year). Do not reuse STRIPE_ANNUAL_PRICE_ID ($89.99). */
+  STRIPE_ANNUAL_OTO_PRICE_ID: z.string().optional().default(''),
   AUTH_RESEND_KEY: z.string().optional().default(''),
   AUTH_EMAIL: z.string().optional().default('MindoraAcademy.com <support@mindoraacademy.com>'),
   LMS_DIST: z.string().optional().default(''),

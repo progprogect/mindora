@@ -3,10 +3,10 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { upsellEvents } from '../db/schema.js'
-import { hasSku, offerAmountCents, offerCheckoutName, recordPurchase } from '../lib/purchases.js'
+import { hasSku, offerAmountCents, offerCheckoutName, ownsOffer, recordPurchase } from '../lib/purchases.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 import { getStripe } from '../lib/stripe.js'
-import { attachStripeCustomer, findStripeCustomerId, linkStripeCustomer } from '../lib/subscription.js'
+import { attachStripeCustomer, BillingError, findStripeCustomerId, linkStripeCustomer, switchToAnnualPrice } from '../lib/subscription.js'
 import { loadCurrentUser } from '../lib/currentUser.js'
 import { publicOrigin } from '../lib/http.js'
 import { loadEnv } from '../env.js'
@@ -49,7 +49,7 @@ function sanitizeReturnPath(raw: string | undefined): string {
 }
 
 async function latestStatus(userId: string, offerSlug: string) {
-  if (await hasSku(userId, offerSlug)) return 'purchased'
+  if (await ownsOffer(userId, offerSlug)) return 'purchased'
   const events = await db
     .select()
     .from(upsellEvents)
@@ -191,7 +191,7 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
   if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
   const userId = c.get('userId')
   const offerSlug = parsed.data.offerSlug
-  if (await hasSku(userId, offerSlug)) {
+  if (await ownsOffer(userId, offerSlug)) {
     return c.json({ success: true, alreadyPurchased: true })
   }
   const amount = offerAmountCents(offerSlug)
@@ -277,6 +277,61 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Charge failed'
     console.error('[upsell] charge failed', error)
+    return c.json({ success: false, reason: 'stripeError', error: message })
+  }
+})
+
+const ANNUAL_OFFER = 'annual-upgrade'
+
+upsellRoutes.post('/upsell/switch-annual', requireAuth, async (c) => {
+  const userId = c.get('userId')
+  if ((await latestStatus(userId, ANNUAL_OFFER)) === 'purchased') {
+    return c.json({ success: true, alreadyPurchased: true })
+  }
+  const env = loadEnv()
+  if (!env.STRIPE_SECRET_KEY || !env.STRIPE_ANNUAL_OTO_PRICE_ID.trim()) {
+    return c.json({
+      success: false,
+      alreadyPurchased: false,
+      reason: 'configError',
+      error:
+        'This annual upgrade is not available yet. Keep your monthly plan for now — you can switch later, and nothing is lost.',
+    })
+  }
+  const user = await loadCurrentUser(userId)
+  if (!user?.email) {
+    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.' })
+  }
+  try {
+    const customerId = await ensureCustomerId(userId, user.email)
+    if (!customerId) {
+      return c.json({ success: false, reason: 'configError', error: 'Could not create a billing customer.' })
+    }
+    const paymentMethod = await cardPaymentMethodId(customerId)
+    if (!paymentMethod) {
+      return c.json({
+        success: false,
+        reason: 'noCard',
+        error: 'We do not have a saved card on this account. Keep your monthly plan for now.',
+      })
+    }
+    const result = await switchToAnnualPrice(userId, user.email)
+    if (!result.success) return c.json(result)
+    await db.insert(upsellEvents).values({
+      userId,
+      offerSlug: ANNUAL_OFFER,
+      action: 'purchased',
+      source: 'saved-card',
+    })
+    return c.json({ success: true, alreadyPurchased: result.alreadyPurchased })
+  } catch (error) {
+    const message =
+      error instanceof BillingError
+        ? error.message
+        : error instanceof Error
+          ? error.message
+          : 'Annual switch failed'
+    console.error('[upsell] switch-annual failed', error)
     return c.json({ success: false, reason: 'stripeError', error: message })
   }
 })
