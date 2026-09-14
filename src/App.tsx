@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { PlannerOffer } from '../authorisation/src/account/UpgradePlannersPage'
+import { PromptOffer } from '../authorisation/src/account/UpgradePromptPage'
 import { MindoraOffer } from '../authorisation/src/account/UpgradeMindoraPage'
 import { lmsRoutes } from '../authorisation/src/lmsRoutes.tsx'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
@@ -46,6 +47,7 @@ export default function App() {
             {lmsRoutes}
             {import.meta.env.DEV ? (
               <>
+                <Route path="/__preview/upgrade-prompt" element={<PromptOffer hasSavedCard />} />
                 <Route path="/__preview/upgrade-planners" element={<PlannerOffer hasSavedCard />} />
                 <Route path="/__preview/upgrade-planners-nocard" element={<PlannerOffer hasSavedCard={false} />} />
                 <Route path="/__preview/upgrade-mindora" element={<MindoraOffer />} />
