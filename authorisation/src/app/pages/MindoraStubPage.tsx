@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
+import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
-export default function WiseStubPage({ title }: { title: string }) {
+export default function MindoraStubPage({ title }: { title: string }) {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex items-center gap-2 px-4 h-14 border-b border-sw-grey-border sticky top-0 z-10 bg-white">
@@ -24,7 +25,7 @@ export default function WiseStubPage({ title }: { title: string }) {
           </svg>
         </Link>
         <div className="flex items-center gap-2.5">
-          <img src="/assets/wise.png" alt="Wise" className="w-9 h-9 rounded-full object-cover" />
+          <img src={COACH_AVATAR} alt={COACH_NAME} className="w-9 h-9 rounded-full object-contain p-1" />
           <div>
             <h1 className="text-base font-bold text-sw-dark leading-tight">{title}</h1>
             <p className="text-xs text-sw-grey">Your AI Coach</p>

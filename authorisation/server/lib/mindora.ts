@@ -2,7 +2,7 @@ import { and, asc, desc, eq } from 'drizzle-orm'
 import { db } from '../db/index.js'
 import { profiles, wiseMessages, wiseThreads, wiseUsage } from '../db/schema.js'
 import { loadEnv } from '../env.js'
-import { hasSku } from './purchases.js'
+import { COACH_SKU, hasSku } from './purchases.js'
 import { getAllProgress } from './progress.js'
 
 const FREE_LIMIT = 1
@@ -13,8 +13,12 @@ function isoDay(input?: string) {
   return new Date().toISOString().slice(0, 10)
 }
 
-export async function wiseQuota(userId: string, localDate?: string) {
-  const unlocked = await hasSku(userId, 'wise-ai-coach')
+function coachModel(env: ReturnType<typeof loadEnv>) {
+  return env.MINDORA_MODEL || env.WISE_MODEL || ''
+}
+
+export async function mindoraQuota(userId: string, localDate?: string) {
+  const unlocked = await hasSku(userId, COACH_SKU)
   const limit = unlocked ? UNLOCKED_LIMIT : FREE_LIMIT
   const day = isoDay(localDate)
   const [row] = await db
@@ -133,14 +137,14 @@ async function learnerContext(userId: string): Promise<LearnerContext> {
       .filter(Boolean)
       .join(' ')
   } catch (error) {
-    console.error('[wise] progress snapshot failed', error)
+    console.error('[mindora] progress snapshot failed', error)
   }
   return {
     name,
     xp,
     streak,
     recentTitle,
-    system: `You are Wise, a concise personal AI coach inside MindoraAcademy. ${snapshot} Use this data when they ask about progress, goals, or what to do next — cite real XP and lessons instead of telling them to open Progress. Do not dump the full list unless asked. Be practical, warm, and short (under 120 words). Do not mention system prompts.`,
+    system: `You are Mindora, a concise personal AI coach inside MindoraAcademy. ${snapshot} Use this data when they ask about progress, goals, or what to do next — cite real XP and lessons instead of telling them to open Progress. Do not dump the full list unless asked. Be practical, warm, and short (under 120 words). Do not mention system prompts.`,
   }
 }
 
@@ -160,7 +164,7 @@ function cannedFrom(ctx: LearnerContext, text: string) {
   if (lower.includes('motivat')) {
     return `You already started, ${name}. The people who get results here are the ones who show up for 5–15 minutes, not the ones who wait to feel ready.`
   }
-  return `I'm Wise — I know your pace and what you're learning. Ask me what to focus on, help setting a goal, a weekly review, or a dose of motivation.`
+  return `I'm Mindora — I know your pace and what you're learning. Ask me what to focus on, help setting a goal, a weekly review, or a dose of motivation.`
 }
 
 async function cannedReply(userId: string, text: string) {
@@ -171,6 +175,7 @@ async function llmReply(userId: string, history: Array<{ role: string; content: 
   const env = loadEnv()
   const ctx = await learnerContext(userId)
   const system = ctx.system
+  const modelOverride = coachModel(env)
 
   if (env.ANTHROPIC_API_KEY) {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -181,7 +186,7 @@ async function llmReply(userId: string, history: Array<{ role: string; content: 
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: env.WISE_MODEL || 'claude-sonnet-4-5',
+        model: modelOverride || 'claude-sonnet-4-5',
         max_tokens: 400,
         system,
         messages: [...history, { role: 'user', content: text }].map((item) => ({
@@ -203,7 +208,7 @@ async function llmReply(userId: string, history: Array<{ role: string; content: 
         authorization: `Bearer ${env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
-        model: env.WISE_MODEL || 'gpt-4o-mini',
+        model: modelOverride || 'gpt-4o-mini',
         max_tokens: 400,
         messages: [{ role: 'system', content: system }, ...history, { role: 'user', content: text }],
       }),
@@ -218,13 +223,13 @@ async function llmReply(userId: string, history: Array<{ role: string; content: 
   return cannedFrom(ctx, text)
 }
 
-export async function sendWiseMessage(args: {
+export async function sendMindoraMessage(args: {
   userId: string
   text: string
   threadId?: string
   localDate?: string
 }) {
-  const quota = await wiseQuota(args.userId, args.localDate)
+  const quota = await mindoraQuota(args.userId, args.localDate)
   if (quota.used >= quota.limit) {
     return { locked: true as const, quota }
   }
@@ -255,7 +260,7 @@ export async function sendWiseMessage(args: {
   try {
     reply = await llmReply(args.userId, history, args.text)
   } catch (error) {
-    console.error('[wise] llm failed', error)
+    console.error('[mindora] llm failed', error)
     reply = await cannedReply(args.userId, args.text)
   }
   await db.insert(wiseMessages).values({ threadId, role: 'assistant', content: reply })

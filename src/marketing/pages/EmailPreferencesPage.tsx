@@ -41,7 +41,7 @@ export default function EmailPreferencesPage() {
                   Tips, insights & product updates
                 </p>
                 <p style={{ margin: 0, fontSize: 13, color: '#666' }}>
-                  Learning tips from your AI coach Wise, progress celebrations, and platform updates.
+                  Learning tips from your AI coach Mindora, progress celebrations, and platform updates.
                 </p>
               </div>
             </label>

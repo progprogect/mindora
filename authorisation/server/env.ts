@@ -21,6 +21,7 @@ const EnvSchema = z.object({
   PUBLIC_ORIGIN: z.string().optional().default(''),
   OPENAI_API_KEY: z.string().optional().default(''),
   ANTHROPIC_API_KEY: z.string().optional().default(''),
+  MINDORA_MODEL: z.string().optional().default(''),
   WISE_MODEL: z.string().optional().default(''),
 })
 

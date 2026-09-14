@@ -13,6 +13,7 @@ import {
 import { useCourse } from '@/content/useCourse'
 import { todayIso } from '@/content/lms'
 import { completeLesson, openLesson } from '@/lib/api'
+import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 import { useSession } from '@/auth/session'
 
 type Stage = 'cards' | 'quizIntro' | 'quiz' | 'result'
@@ -910,7 +911,7 @@ function PromptCopy({ text }: { text: string }) {
 
 function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonCard }) {
   const detail = [card.body, ...(card.bullets ?? [])].filter(Boolean).join(' • ')
-  const href = `/app/wise?lesson=${encodeURIComponent(lessonTitle)}&concept=${encodeURIComponent(card.headline || '')}&detail=${encodeURIComponent(detail)}`
+  const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&concept=${encodeURIComponent(card.headline || '')}&detail=${encodeURIComponent(detail)}`
   return (
     <Link
       to={href}
@@ -922,7 +923,7 @@ function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonC
     >
       <WiseMark />
       <div className="flex-1 min-w-0">
-        <p className="text-xs font-bold text-sw-dark">Explore this deeper with Wise</p>
+        <p className="text-xs font-bold text-sw-dark">Explore this deeper with Mindora</p>
         <p className="text-[10px] text-sw-grey">Ask your AI coach to explain or expand on this</p>
       </div>
       <Chevron />
@@ -931,17 +932,17 @@ function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonC
 }
 
 function WiseTask({ lessonTitle, body, prompt }: { lessonTitle: string; body?: string; prompt?: string }) {
-  const href = `/app/wise?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(body || '')}&prompt=${encodeURIComponent(prompt || '')}`
+  const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(body || '')}&prompt=${encodeURIComponent(prompt || '')}`
   return (
     <Link
       to={href}
       className="flex items-center gap-2.5 bg-gradient-to-r from-[hsl(var(--sw-blue)/0.06)] to-[hsl(var(--sw-purple)/0.06)] border border-[hsl(var(--sw-blue)/0.2)] rounded-xl px-4 py-3 active:scale-[0.98] transition-transform"
     >
-      <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[hsl(var(--sw-blue))] to-[hsl(var(--sw-purple))] flex items-center justify-center flex-shrink-0">
-        <span className="text-white text-[9px] font-bold">W</span>
+      <div className="w-7 h-7 rounded-full bg-white border border-[hsl(var(--sw-blue)/0.2)] overflow-hidden flex items-center justify-center flex-shrink-0">
+        <img src={COACH_AVATAR} alt="" className="w-full h-full object-contain p-0.5" />
       </div>
       <div className="flex-1 min-w-0">
-        <p className="text-xs font-bold text-sw-dark">Need help? Ask Wise</p>
+        <p className="text-xs font-bold text-sw-dark">Need help? Ask Mindora</p>
         <p className="text-[10px] text-sw-grey">Get personalised coaching on this task</p>
       </div>
       <Chevron />
@@ -951,11 +952,8 @@ function WiseTask({ lessonTitle, body, prompt }: { lessonTitle: string; body?: s
 
 function WiseMark() {
   return (
-    <div
-      className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
-      style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)), hsl(var(--sw-purple)))' }}
-    >
-      <span className="text-white text-[9px] font-bold">W</span>
+    <div className="w-7 h-7 rounded-full bg-white border border-[hsl(var(--sw-blue)/0.2)] overflow-hidden flex items-center justify-center flex-shrink-0">
+      <img src={COACH_AVATAR} alt="" className="w-full h-full object-contain p-0.5" />
     </div>
   )
 }
@@ -1134,14 +1132,14 @@ function ResultView({
         </div>
         {completion ? (
           <Link
-            to={`/app/wise?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(wiseTask)}`}
+            to={`/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(wiseTask)}`}
             className="w-full max-w-sm flex items-center gap-3 bg-gradient-to-r from-[hsl(var(--sw-blue)/0.05)] to-[hsl(var(--sw-purple)/0.05)] border border-[hsl(var(--sw-blue)/0.2)] rounded-2xl px-4 py-3.5 active:scale-[0.98] transition-transform"
           >
-            <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0">
-              <img src="/assets/wise.png" alt="Wise" className="w-full h-full object-cover" />
+            <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 bg-white">
+              <img src={COACH_AVATAR} alt={COACH_NAME} className="w-full h-full object-contain p-1" />
             </div>
             <div className="text-left flex-1 min-w-0">
-              <p className="text-xs font-bold text-sw-dark">Reflect with Wise</p>
+              <p className="text-xs font-bold text-sw-dark">Reflect with Mindora</p>
               <p className="text-[10px] text-sw-grey leading-snug">Deepen your learning — let&apos;s discuss how to apply this</p>
             </div>
             <Chevron />

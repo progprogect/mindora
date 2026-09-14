@@ -8,8 +8,9 @@ import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
+import { COACH_AVATAR, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
 
-const OFFER = 'wise-ai-coach'
+const OFFER = COACH_OFFER_SLUG
 const PRICE = 19.95
 const WAS = 29.95
 const NEXT = '/account/onboard'
@@ -88,12 +89,12 @@ function Obstacle({ text }: { text: string }) {
   )
 }
 
-function FlowStep({ icon, title, subtitle }: { icon: 'lesson' | 'wise' | 'rocket'; title: string; subtitle: string }) {
+function FlowStep({ icon, title, subtitle }: { icon: 'lesson' | 'coach' | 'rocket'; title: string; subtitle: string }) {
   return (
     <div className="flex flex-col items-center text-center py-3">
       <div className="w-14 h-14 rounded-full bg-sw-blue/20 border-2 border-sw-blue/50 flex items-center justify-center mb-2">
-        {icon === 'wise' ? (
-          <img src="/assets/oto/wise-icon.png" alt="Wise" className="w-8 h-8 rounded-full object-cover" />
+        {icon === 'coach' ? (
+          <img src={COACH_AVATAR} alt={COACH_NAME} className="w-8 h-8 rounded-full object-contain p-0.5" />
         ) : (
           <span className="text-2xl">{icon === 'lesson' ? '📚' : '🚀'}</span>
         )}
@@ -184,7 +185,7 @@ function OfferCard({
           ONE-TIME UNLOCK
         </span>
       </div>
-      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">Unlock Wise today</h3>
+      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">Unlock Mindora today</h3>
       <div className="flex items-center justify-center gap-3 mb-5">
         <span className="text-lg text-red-400 line-through font-bold decoration-2">${WAS}</span>
         <span className="text-sm font-bold text-sw-blue">Today Only</span>
@@ -205,7 +206,7 @@ function OfferCard({
             Processing...
           </span>
         ) : (
-          <span className="flex items-center justify-center gap-2">🔓 Unlock Wise Now →</span>
+          <span className="flex items-center justify-center gap-2">🔓 Unlock Mindora Now →</span>
         )}
       </button>
       <div className="flex items-center justify-center gap-1.5 mb-3">
@@ -273,9 +274,9 @@ function SuccessScreen() {
           </svg>
         </div>
         <h2 className="text-2xl font-extrabold text-sw-dark mb-2">Payment Successful!</h2>
-        <p className="text-sw-dark font-semibold text-base mb-1">🎉 Wise AI Coach Unlocked</p>
+        <p className="text-sw-dark font-semibold text-base mb-1">🎉 Mindora AI Coach Unlocked</p>
         <p className="text-sw-grey text-sm mb-2">
-          Your personal AI coach is now ready. You&apos;ll find Wise in your dashboard.
+          Your personal AI coach is now ready. You&apos;ll find Mindora in your dashboard.
         </p>
         <div className="mt-6">
           <div className="w-6 h-6 border-2 border-sw-blue border-t-transparent rounded-full animate-spin mx-auto" />
@@ -286,7 +287,7 @@ function SuccessScreen() {
   )
 }
 
-export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
+export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
   const [state, setState] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle')
   const [error, setError] = useState('')
   const [sticky, setSticky] = useState(false)
@@ -367,11 +368,11 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
         return
       }
       setState('failed')
-      setError(result.error || 'Payment failed. Continue without Wise for now — you can add it later.')
+      setError(result.error || 'Payment failed. Continue without Mindora for now — you can add it later.')
       track('upsell_purchase_failed', { offer: OFFER, error: result.error, fallback_shown: false })
     } catch (err) {
       setState('failed')
-      setError('Something went wrong. Continue without Wise for now — you can add it later.')
+      setError('Something went wrong. Continue without Mindora for now — you can add it later.')
       track('upsell_purchase_error', { offer: OFFER, error: String(err), fallback_shown: false })
     }
   }
@@ -398,7 +399,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
               className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7)' }}
             >
-              Wise.
+              Mindora.
             </span>
           </h1>
           <p className="text-[1.75rem] sm:text-4xl font-extrabold text-sw-dark leading-[1.15] mb-1">
@@ -437,12 +438,20 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
                 'radial-gradient(circle, rgba(99,102,241,0.10) 0%, rgba(139,92,246,0.05) 40%, transparent 70%)',
             }}
           />
-          <div className="relative z-10 flex justify-center -mb-8">
-            <img
-              src="/assets/oto/wise-mascot.png"
-              alt="Wise — Your Personal AI Coach saying: Let's turn today's lesson into real progress."
-              className="w-full max-w-[320px] sm:max-w-[380px] h-auto object-contain"
-            />
+          <div className="relative z-10 flex justify-center -mb-8 px-2">
+            <div className="flex w-full max-w-[320px] sm:max-w-[380px] items-center gap-1.5 sm:gap-2.5">
+              <img
+                src={COACH_AVATAR}
+                alt="Mindora"
+                className="w-[52%] h-auto object-contain drop-shadow-sm"
+              />
+              <div className="relative flex-1 min-w-0">
+                <div className="absolute left-0 top-[42%] -translate-x-[7px] -translate-y-1/2 h-3.5 w-3.5 rotate-45 rounded-[2px] border-b border-l border-sw-grey-border bg-white shadow-sm" aria-hidden="true" />
+                <p className="relative rounded-[1.35rem] border border-sw-grey-border bg-white px-3 py-2.5 text-[13px] sm:px-3.5 sm:py-3 sm:text-sm font-semibold leading-snug text-slate-800 shadow-md">
+                  &ldquo;Let&apos;s turn today&apos;s lesson into real progress.&rdquo;
+                </p>
+              </div>
+            </div>
           </div>
           <div className="relative rounded-2xl border border-sw-grey-border border-t-2 border-t-gray-300 bg-gray-50/80 pt-12 pb-4 px-4">
             <div className="grid grid-cols-4 gap-2 text-center">
@@ -473,13 +482,13 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
           </div>
           <div className="mt-6 text-center">
             <p className="text-base font-bold text-sw-dark">
-              Wise removes <span className="text-sw-blue">every one</span> of those obstacles.
+              Mindora removes <span className="text-sw-blue">every one</span> of those obstacles.
             </p>
           </div>
         </section>
         <section className="mb-8">
           <h2 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center leading-tight mb-5">
-            How Wise Works
+            How Mindora Works
           </h2>
           <div
             className="rounded-2xl p-6"
@@ -488,7 +497,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
             <div className="flex flex-col items-center gap-1">
               <FlowStep icon="lesson" title="Complete a Lesson" subtitle="Learn at your own pace" />
               <FlowArrow />
-              <FlowStep icon="wise" title="Wise Creates Your Action Plan" subtitle="Personalised to your goals" />
+              <FlowStep icon="coach" title="Mindora Creates Your Action Plan" subtitle="Personalised to your goals" />
               <FlowArrow />
               <FlowStep icon="rocket" title="Apply It Today" subtitle="Real progress, every day" />
             </div>
@@ -499,10 +508,10 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
           <div className="rounded-2xl border border-sw-grey-border bg-gray-50 p-4 sm:p-5">
             <div className="flex gap-3 mb-4">
               <div className="w-8 h-8 rounded-full bg-sw-blue flex items-center justify-center flex-shrink-0 overflow-hidden">
-                <img src="/assets/wise.png" alt="Wise" className="w-full h-full object-cover" />
+                <img src={COACH_AVATAR} alt={COACH_NAME} className="w-full h-full object-contain p-1" />
               </div>
               <div className="flex-1 bg-white rounded-xl rounded-tl-sm p-4 border border-sw-grey-border shadow-sm">
-                <p className="text-sm font-bold text-sw-dark mb-2">Wise</p>
+                <p className="text-sm font-bold text-sw-dark mb-2">{COACH_NAME}</p>
                 <p className="text-sm text-sw-dark leading-relaxed mb-3">
                   Great job completing today&apos;s Claude lesson 👏
                 </p>
@@ -523,7 +532,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Why Members Unlock Wise</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Why Members Unlock Mindora</h2>
           <div className="rounded-2xl border border-sw-grey-border p-5 bg-white space-y-3">
             <MemberPoint text="Personalised to your goals" />
             <MemberPoint text="Remembers your progress" />
@@ -532,7 +541,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Generic AI vs Wise</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Generic AI vs Mindora</h2>
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-xl border border-sw-grey-border bg-gray-50 p-4">
               <p className="text-sm font-bold text-sw-grey text-center mb-3">Generic AI</p>
@@ -544,7 +553,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
               </div>
             </div>
             <div className="rounded-xl border-2 border-sw-blue/30 bg-sw-blue-light/20 p-4">
-              <p className="text-sm font-bold text-sw-blue text-center mb-3">Wise</p>
+              <p className="text-sm font-bold text-sw-blue text-center mb-3">{COACH_NAME}</p>
               <div className="space-y-2.5">
                 <ComparePoint text="Personal coaching" />
                 <ComparePoint text="Understands your learning" />
@@ -586,7 +595,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
               disabled={state === 'processing'}
               className="px-7 py-3 bg-sw-blue hover:bg-sw-blue-hover text-white text-base font-bold rounded-full transition-all active:scale-95 disabled:opacity-60 whitespace-nowrap"
             >
-              {state === 'processing' ? 'Processing...' : '🔓 Unlock Wise →'}
+              {state === 'processing' ? 'Processing...' : '🔓 Unlock Mindora →'}
             </button>
           </div>
           <div style={{ paddingBottom: 'env(safe-area-inset-bottom)', backgroundColor: 'white' }} />
@@ -599,7 +608,7 @@ export function WiseOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
   )
 }
 
-function WiseGate() {
+function MindoraGate() {
   const status = useUpsellStatus(OFFER)
   const hasCard = useHasSavedCard()
   const user = useCurrentUser()
@@ -609,12 +618,12 @@ function WiseGate() {
     return <AuthSpinner />
   }
   if (user?.onboardingComplete && !review) return <BounceDashboard />
-  if (review) return <WiseOffer hasSavedCard={Boolean(hasCard)} />
+  if (review) return <MindoraOffer hasSavedCard={Boolean(hasCard)} />
   if (status.status === 'purchased' || status.status === 'skipped') return <BounceOnboard />
-  return <WiseOffer hasSavedCard={Boolean(hasCard)} />
+  return <MindoraOffer hasSavedCard={Boolean(hasCard)} />
 }
 
-export default function UpgradeWisePage() {
+export default function UpgradeMindoraPage() {
   return (
     <>
       <AuthLoading>
@@ -624,7 +633,7 @@ export default function UpgradeWisePage() {
         <UnauthRedirect />
       </Unauthenticated>
       <Authenticated>
-        <WiseGate />
+        <MindoraGate />
       </Authenticated>
     </>
   )

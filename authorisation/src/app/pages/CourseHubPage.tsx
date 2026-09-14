@@ -16,6 +16,7 @@ import { CATEGORY_LABEL } from '@/content/lms'
 import { PROGRESS_COURSES } from '@/content/progress-catalog'
 import registry from '@/content/course-registry.json'
 import { useProgress } from '@/lib/lmsQueries'
+import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
 const MODULE_THEMES = [
   { emoji: '🧠', from: '29, 78, 216', to: '37, 99, 235' },
@@ -87,10 +88,10 @@ export default function CourseHubPage() {
   const certificateChip = String(hub.certificateChip || `${course.title} Certificate`)
   const streak = progress.user.streakCount
   const meta = hubChrome.testimonialMeta
-  const wiseTask = started
-    ? "You've made a strong start. Wise can help you stay consistent and go deeper."
-    : 'Wise can help you stay consistent and go deeper.'
-  const wiseHref = `/app/wise?lesson=${encodeURIComponent(course.title)}&task=${encodeURIComponent(wiseTask)}`
+  const mindoraTask = started
+    ? "You've made a strong start. Mindora can help you stay consistent and go deeper."
+    : 'Mindora can help you stay consistent and go deeper.'
+  const mindoraHref = `/app/mindora?lesson=${encodeURIComponent(course.title)}&task=${encodeURIComponent(mindoraTask)}`
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -212,18 +213,15 @@ export default function CourseHubPage() {
             <DarkStat emoji="📅" n={remaining} label={`${unitTitle} remaining`} />
           </div>
           <Link
-            to={wiseHref}
+            to={mindoraHref}
             className="flex items-center gap-3 rounded-xl px-4 py-3 border border-white/10 bg-white/5 hover:bg-white/8 active:scale-[0.98] transition-all"
           >
-            <div
-              className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-white text-[10px] font-extrabold"
-              style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)), hsl(var(--sw-purple)))' }}
-            >
-              W
+            <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+              <img src={COACH_AVATAR} alt={COACH_NAME} className="w-full h-full object-contain p-0.5" />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-white/90 text-xs font-semibold leading-snug">{wiseTask}</p>
-              <p className="text-white/40 text-[10px] mt-0.5">Tap to chat with Wise →</p>
+              <p className="text-white/90 text-xs font-semibold leading-snug">{mindoraTask}</p>
+              <p className="text-white/40 text-[10px] mt-0.5">Tap to chat with Mindora →</p>
             </div>
           </Link>
         </div>

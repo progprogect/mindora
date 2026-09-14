@@ -23,7 +23,7 @@ import { COMPANY } from '@/shared/company'
 
 const OFFER = PLANNER_BUNDLE_SLUG
 const COMPARE_COUNT = 2
-const NEXT = '/account/upgrade-wise'
+const NEXT = '/account/upgrade-mindora'
 
 const NOT_CHARGED = 'You have not been charged.'
 const CONTINUE = 'Continue without the planners — you can add them later from your dashboard.'

@@ -294,11 +294,11 @@ export async function fetchPurchases() {
   )
 }
 
-export async function fetchWiseUsage() {
-  return apiJson<{ used: number; limit: number; unlocked: boolean }>('/api/wise/usage')
+export async function fetchMindoraUsage() {
+  return apiJson<{ used: number; limit: number; unlocked: boolean }>('/api/mindora/usage')
 }
 
-export async function fetchWiseThreads() {
+export async function fetchMindoraThreads() {
   return apiJson<{
     threads: Array<{
       id: string
@@ -309,19 +309,19 @@ export async function fetchWiseThreads() {
       messageCount: number
       createdAt: number
     }>
-  }>('/api/wise/threads')
+  }>('/api/mindora/threads')
 }
 
-export async function fetchWiseThread(id: string) {
+export async function fetchMindoraThread(id: string) {
   return apiJson<{
     id: string
     title: string
     messages: Array<{ id: string; role: string; content: string; createdAt: number }>
-  }>(`/api/wise/threads/${id}`)
+  }>(`/api/mindora/threads/${id}`)
 }
 
-export async function sendWiseMessage(args: { text: string; threadId?: string; localDate?: string }) {
-  const response = await fetch('/api/wise/messages', {
+export async function sendMindoraMessage(args: { text: string; threadId?: string; localDate?: string }) {
+  const response = await fetch('/api/mindora/messages', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
@@ -335,6 +335,6 @@ export async function sendWiseMessage(args: { text: string; threadId?: string; l
     error?: string
   }
   if (response.status === 402) return { locked: true as const, quota: data.quota }
-  if (!response.ok) throw new ApiError(data.error || 'Wise failed', response.status)
+  if (!response.ok) throw new ApiError(data.error || 'Mindora failed', response.status)
   return data
 }

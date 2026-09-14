@@ -53,7 +53,8 @@ Copy `.env.example` → `.env` (or `.env.local`).
 | `AUTH_EMAIL` | runtime | OTP / receipt From header (default `MindoraAcademy.com <support@mindoraacademy.com>`) |
 | `META_ACCESS_TOKEN` | runtime | Conversions API |
 | `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
-| `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |
+| `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Mindora LLM (canned replies if unset) |
+| `MINDORA_MODEL` | runtime | Coach model (falls back to `WISE_MODEL`) |
 
 `VITE_*` are inlined at **build**. Secrets stay runtime-only.
 
@@ -90,5 +91,5 @@ Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial `$1` payments crea
 | `/dashboard` | Alias → `/app/dashboard` |
 | `/courses/:slug` | Redirect → `/app/courses/:slug` |
 | `/api/health` | Health + database |
-| `/api/me`, `/api/progress`, `/api/wise/*` | LMS session, XP, Wise |
+| `/api/me`, `/api/progress`, `/api/mindora/*` | LMS session, XP, Mindora |
 | `/api/leads` | Funnel leads |

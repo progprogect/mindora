@@ -23,7 +23,7 @@ const LINE_ITEMS = [
   { label: '7-Day Trial', value: '$1', emphasis: 'dark' as const },
   { label: 'Full 28-day AI Challenge', value: 'Included', emphasis: 'success' as const },
   { label: 'All courses + 45 certificates', value: 'Included', emphasis: 'success' as const },
-  { label: 'Wise, your AI coach', value: 'Included', emphasis: 'success' as const },
+  { label: 'Mindora, your AI coach', value: 'Included', emphasis: 'success' as const },
 ]
 
 export default function FunnelCheckoutPage() {

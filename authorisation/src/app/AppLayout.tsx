@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import AppNavFooter from '@/app/AppNavFooter'
-import WiseFab from '@/app/WiseFab'
+import MindoraFab from '@/app/MindoraFab'
 import { initialsFromName, PLAN_TIERS } from '@/app/mockUser'
 import { useCurrentUser, useSession } from '@/auth/session'
 import BrandWordmark from '@/shared/BrandWordmark'
@@ -18,6 +18,7 @@ export default function AppLayout() {
   const { signOut } = useSession()
   const user = useCurrentUser()
   const hideChrome =
+    pathname.startsWith('/app/mindora') ||
     pathname.startsWith('/app/wise') ||
     pathname === '/app/planners' ||
     pathname.startsWith('/app/certificate/') ||
@@ -82,7 +83,7 @@ export default function AppLayout() {
         <Outlet />
       </div>
       {hideChrome ? null : <AppNavFooter />}
-      <WiseFab />
+      <MindoraFab />
     </>
   )
 }

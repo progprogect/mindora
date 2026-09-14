@@ -27,7 +27,7 @@ const COURSE_COUNTS: Record<(typeof DASHBOARD_PATHS)[number], string> = {
   health: '9 courses',
 }
 
-const ASK_WISE_TIP =
+const ASK_MINDORA_TIP =
   "The best AI users aren't the ones who know all the tools — they're the ones who ask better questions."
 
 function firstName(name?: string) {
@@ -370,7 +370,7 @@ export default function DashboardPage() {
       </div>
 
       <Link
-        to="/app/wise"
+        to="/app/mindora"
         className="block bg-gradient-to-br from-[hsl(var(--sw-blue))] to-[hsl(221,83%,42%)] rounded-2xl px-4 py-4 shadow-md active:scale-[0.98] transition-transform"
       >
         <div className="flex items-center gap-3">
@@ -378,14 +378,14 @@ export default function DashboardPage() {
             🧠
           </span>
           <div className="flex-1 min-w-0">
-            <p className="text-white font-extrabold text-sm leading-tight">Ask Wise</p>
+            <p className="text-white font-extrabold text-sm leading-tight">Ask Mindora</p>
             <p className="text-white/70 text-xs mt-0.5 leading-snug">
               Your AI coach — get personalised guidance, accountability &amp; motivation
             </p>
           </div>
           <Chevron className="w-5 h-5 text-white/60 flex-shrink-0" strokeWidth={2.5} />
         </div>
-        <p className="text-white/50 text-[11px] font-medium mt-2.5 pl-[52px]">AI tip of the day: {ASK_WISE_TIP}</p>
+        <p className="text-white/50 text-[11px] font-medium mt-2.5 pl-[52px]">AI tip of the day: {ASK_MINDORA_TIP}</p>
       </Link>
 
       <div>

@@ -13,7 +13,7 @@ import { MONEY_BACK_CHIP } from '@/shared/moneyBack'
 const OFFER = 'annual-upgrade'
 const PRICE = 59.99
 const WAS = 89.99
-const NEXT = '/account/upgrade-wise'
+const NEXT = '/account/upgrade-mindora'
 
 function UnauthRedirect() {
   useEffect(() => {

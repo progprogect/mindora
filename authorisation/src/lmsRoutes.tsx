@@ -1,11 +1,11 @@
-import { Navigate, Route, useParams } from 'react-router-dom'
+import { Navigate, Route, useLocation, useParams } from 'react-router-dom'
 import AccountCreatePage from '@/account/AccountCreatePage'
 import CheckoutSetupPage from '@/account/CheckoutSetupPage'
 import OnboardPage from '@/account/OnboardPage'
 import UpgradeAnnualPage from '@/account/UpgradeAnnualPage'
+import UpgradeMindoraPage from '@/account/UpgradeMindoraPage'
 import UpgradePlannersPage from '@/account/UpgradePlannersPage'
 import UpgradePromptPage from '@/account/UpgradePromptPage'
-import UpgradeWisePage from '@/account/UpgradeWisePage'
 import WelcomePage from '@/account/WelcomePage'
 import AppLayout from '@/app/AppLayout'
 import CertificatePage from '@/app/pages/CertificatePage'
@@ -19,9 +19,9 @@ import ProfilePage from '@/app/pages/ProfilePage'
 import ProgressPage from '@/app/pages/ProgressPage'
 import PromptLibraryPage from '@/app/pages/PromptLibraryPage'
 import PurchasesPage from '@/app/pages/PurchasesPage'
-import WiseHistoryPage from '@/app/pages/WiseHistoryPage'
-import WisePage from '@/app/pages/WisePage'
-import WiseUnlockPage from '@/app/pages/WiseUnlockPage'
+import MindoraHistoryPage from '@/app/pages/MindoraHistoryPage'
+import MindoraPage from '@/app/pages/MindoraPage'
+import MindoraUnlockPage from '@/app/pages/MindoraUnlockPage'
 import LoginPage from '@/auth/LoginPage'
 import RequireAuth from '@/auth/RequireAuth'
 import RequireLmsAccess from '@/auth/RequireLmsAccess'
@@ -40,6 +40,11 @@ function RedirectPublicCourse() {
   )
 }
 
+function RedirectPreserve({ to }: { to: string }) {
+  const { search } = useLocation()
+  return <Navigate to={`${to}${search}`} replace />
+}
+
 export const lmsRoutes = (
   <>
     <Route path="/login" element={<LoginPage />} />
@@ -51,7 +56,8 @@ export const lmsRoutes = (
     <Route path="/account/upgrade" element={<UpgradePromptPage />} />
     <Route path="/account/upgrade-planners" element={<UpgradePlannersPage />} />
     <Route path="/account/upgrade-annual" element={<UpgradeAnnualPage />} />
-    <Route path="/account/upgrade-wise" element={<UpgradeWisePage />} />
+    <Route path="/account/upgrade-mindora" element={<UpgradeMindoraPage />} />
+    <Route path="/account/upgrade-wise" element={<RedirectPreserve to="/account/upgrade-mindora" />} />
 
     <Route
       path="/app"
@@ -73,9 +79,12 @@ export const lmsRoutes = (
       <Route path="business" element={<PathCatalogPage pathKey="business" />} />
       <Route path="health" element={<PathCatalogPage pathKey="health" />} />
       <Route path="financial-wellbeing" element={<PathCatalogPage pathKey="financial-wellbeing" />} />
-      <Route path="wise" element={<WisePage />} />
-      <Route path="wise/history" element={<WiseHistoryPage />} />
-      <Route path="wise/unlock" element={<WiseUnlockPage />} />
+      <Route path="mindora" element={<MindoraPage />} />
+      <Route path="mindora/history" element={<MindoraHistoryPage />} />
+      <Route path="mindora/unlock" element={<MindoraUnlockPage />} />
+      <Route path="wise" element={<RedirectPreserve to="/app/mindora" />} />
+      <Route path="wise/history" element={<RedirectPreserve to="/app/mindora/history" />} />
+      <Route path="wise/unlock" element={<RedirectPreserve to="/app/mindora/unlock" />} />
       <Route path="planners" element={<PlannersPage />} />
       <Route path="purchases" element={<PurchasesPage />} />
       <Route path="prompt-library" element={<PromptLibraryPage />} />

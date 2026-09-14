@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { PlannerOffer } from '../authorisation/src/account/UpgradePlannersPage'
+import { MindoraOffer } from '../authorisation/src/account/UpgradeMindoraPage'
 import { lmsRoutes } from '../authorisation/src/lmsRoutes.tsx'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
 import HomePage from '@/marketing/pages/HomePage'
@@ -47,6 +48,8 @@ export default function App() {
               <>
                 <Route path="/__preview/upgrade-planners" element={<PlannerOffer hasSavedCard />} />
                 <Route path="/__preview/upgrade-planners-nocard" element={<PlannerOffer hasSavedCard={false} />} />
+                <Route path="/__preview/upgrade-mindora" element={<MindoraOffer />} />
+                <Route path="/__preview/upgrade-wise" element={<Navigate to="/__preview/upgrade-mindora" replace />} />
               </>
             ) : null}
             <Route path="/checkout/one-time" element={<OneTimeCheckoutPage />} />

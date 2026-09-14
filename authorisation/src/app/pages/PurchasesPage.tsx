@@ -6,7 +6,8 @@ const LABELS: Record<string, string> = {
   'planner-bundle': 'All 10 planners',
   'planner-bundle-library': 'All 10 planners',
   'ultimate-prompt-library': 'The Ultimate Prompt Library',
-  'wise-ai-coach': 'Wise AI Coach',
+  'mindora-ai-coach': 'Mindora AI Coach',
+  'wise-ai-coach': 'Mindora AI Coach',
 }
 
 const BUNDLE_SKUS = new Set(['planner-bundle', 'planner-bundle-library'])

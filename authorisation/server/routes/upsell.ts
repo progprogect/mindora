@@ -1,9 +1,9 @@
-import { and, desc, eq } from 'drizzle-orm'
+import { and, desc, eq, inArray } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { upsellEvents } from '../db/schema.js'
-import { hasSku, offerAmountCents, offerCheckoutName, ownsOffer, recordPurchase } from '../lib/purchases.js'
+import { hasSku, offerAmountCents, offerCheckoutName, offerSlugsForLookup, ownsOffer, recordPurchase } from '../lib/purchases.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 import { getStripe } from '../lib/stripe.js'
 import { attachStripeCustomer, BillingError, findStripeCustomerId, linkStripeCustomer, switchToAnnualPrice } from '../lib/subscription.js'
@@ -50,10 +50,11 @@ function sanitizeReturnPath(raw: string | undefined): string {
 
 async function latestStatus(userId: string, offerSlug: string) {
   if (await ownsOffer(userId, offerSlug)) return 'purchased'
+  const slugs = offerSlugsForLookup(offerSlug)
   const events = await db
     .select()
     .from(upsellEvents)
-    .where(and(eq(upsellEvents.userId, userId), eq(upsellEvents.offerSlug, offerSlug)))
+    .where(and(eq(upsellEvents.userId, userId), inArray(upsellEvents.offerSlug, slugs)))
     .orderBy(desc(upsellEvents.createdAt))
   const purchased = events.find((event) => event.action === 'purchased')
   if (purchased) return 'purchased'

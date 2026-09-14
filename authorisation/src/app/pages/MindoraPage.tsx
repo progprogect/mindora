@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { buyOffer, fetchWiseThread, fetchWiseThreads, fetchWiseUsage, sendWiseMessage } from '@/lib/api'
+import { buyOffer, fetchMindoraThread, fetchMindoraThreads, fetchMindoraUsage, sendMindoraMessage } from '@/lib/api'
 import { useHasSavedCard } from '@/lib/lmsQueries'
+import { COACH_AVATAR, COACH_GOALS_KEY, COACH_GOALS_LEGACY_KEY, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
 
 const CHIPS = [
   'What should I focus on today?',
@@ -20,14 +21,11 @@ const FOLLOWUP_CHIPS = ['Tell me more', 'How do I apply this?', 'Set a goal for 
 
 const LESSON_QUERY_KEYS = ['lesson', 'task', 'concept', 'detail', 'prompt'] as const
 
-const WISE_AVATAR = '/assets/wise.png'
-const GOALS_KEY = 'sw_wise_goals'
-
 type Goal = { id: string; title: string }
 
 function loadGoals(): Goal[] {
   try {
-    const raw = localStorage.getItem(GOALS_KEY)
+    const raw = localStorage.getItem(COACH_GOALS_KEY) ?? localStorage.getItem(COACH_GOALS_LEGACY_KEY)
     const parsed = raw ? (JSON.parse(raw) as Goal[]) : []
     return Array.isArray(parsed) ? parsed : []
   } catch {
@@ -36,7 +34,7 @@ function loadGoals(): Goal[] {
 }
 
 function saveGoals(goals: Goal[]) {
-  localStorage.setItem(GOALS_KEY, JSON.stringify(goals))
+  localStorage.setItem(COACH_GOALS_KEY, JSON.stringify(goals))
 }
 
 function localIsoDay() {
@@ -69,7 +67,7 @@ function hasLessonQuery(params: URLSearchParams) {
   return LESSON_QUERY_KEYS.some((key) => Boolean(params.get(key)?.trim()))
 }
 
-export default function WisePage() {
+export default function MindoraPage() {
   const [params, setSearchParams] = useSearchParams()
   const conversationId = params.get('conversationId') || undefined
   const hasCard = useHasSavedCard()
@@ -115,7 +113,7 @@ export default function WisePage() {
   )
 
   useEffect(() => {
-    void fetchWiseUsage().then(setUsage).catch(() => setUsage({ used: 0, limit: 1, unlocked: false }))
+    void fetchMindoraUsage().then(setUsage).catch(() => setUsage({ used: 0, limit: 1, unlocked: false }))
   }, [])
 
   useEffect(() => {
@@ -124,7 +122,7 @@ export default function WisePage() {
       if (conversationId) {
         setThreadId(conversationId)
         try {
-          const full = await fetchWiseThread(conversationId)
+          const full = await fetchMindoraThread(conversationId)
           if (!cancelled) {
             setMessages(full.messages.map((row) => ({ role: row.role, content: row.content })))
           }
@@ -139,7 +137,7 @@ export default function WisePage() {
         return
       }
       try {
-        const { threads } = await fetchWiseThreads()
+        const { threads } = await fetchMindoraThreads()
         const latest = threads[0]
         if (latest && !cancelled) {
           setThreadId(latest.id)
@@ -172,7 +170,7 @@ export default function WisePage() {
       setText('')
       setMessages((current) => [...current, { role: 'user', content: trimmed }])
       try {
-        const result = await sendWiseMessage({
+        const result = await sendMindoraMessage({
           text: trimmed,
           threadId: threadIdRef.current,
           localDate: localIsoDay(),
@@ -229,11 +227,11 @@ export default function WisePage() {
     setUnlockBusy(true)
     setUnlockError(null)
     try {
-      const result = await buyOffer({ offerSlug: 'wise-ai-coach' })
+      const result = await buyOffer({ offerSlug: COACH_OFFER_SLUG })
       if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
         setLocked(false)
-        const next = await fetchWiseUsage()
+        const next = await fetchMindoraUsage()
         setUsage(next)
         return
       }
@@ -268,9 +266,9 @@ export default function WisePage() {
           </svg>
         </Link>
         <div className="flex items-center gap-2.5">
-          <img src={WISE_AVATAR} alt="Wise" className="w-9 h-9 rounded-full object-cover" />
+          <img src={COACH_AVATAR} alt={COACH_NAME} className="w-9 h-9 rounded-full object-contain p-1" />
           <div>
-            <h1 className="text-base font-bold text-sw-dark leading-tight">Wise</h1>
+            <h1 className="text-base font-bold text-sw-dark leading-tight">{COACH_NAME}</h1>
             <p className="text-xs text-sw-grey">Your AI Coach</p>
           </div>
         </div>
@@ -287,7 +285,7 @@ export default function WisePage() {
             </svg>
           </button>
           <Link
-            to="/app/wise/history"
+            to="/app/mindora/history"
             title="Conversation history"
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 text-sw-grey transition-colors"
           >
@@ -330,7 +328,7 @@ export default function WisePage() {
           onClose={() => setGoalsOpen(false)}
           onAdd={addGoal}
           onRemove={removeGoal}
-          onAskWise={(prompt) => {
+          onAskMindora={(prompt) => {
             setGoalsOpen(false)
             void send(prompt)
           }}
@@ -344,8 +342,8 @@ export default function WisePage() {
           </div>
         ) : empty ? (
           <div className="flex flex-col items-center justify-center text-center py-12 px-4">
-            <img src={WISE_AVATAR} alt="Wise" className="w-16 h-16 rounded-full object-cover mb-4 shadow-md" />
-            <h2 className="text-lg font-bold text-sw-dark mb-2">Hey! I&apos;m Wise</h2>
+            <img src={COACH_AVATAR} alt={COACH_NAME} className="w-16 h-16 rounded-full object-contain p-1 mb-4 shadow-md" />
+            <h2 className="text-lg font-bold text-sw-dark mb-2">Hey! I&apos;m Mindora</h2>
             <p className="text-sm text-sw-grey max-w-[280px] leading-relaxed">
               Your personal AI coach. I know your goals, your progress, and what you&apos;re learning — ask me anything.
             </p>
@@ -364,7 +362,7 @@ export default function WisePage() {
             </div>
           </div>
         ) : (
-          <div className="max-w-md mx-auto space-y-3 px-4 py-6" aria-label="Conversation with Wise">
+          <div className="max-w-md mx-auto space-y-3 px-4 py-6" aria-label="Conversation with Mindora">
             {messages.map((message, index) =>
               message.role === 'user' ? (
                 <div key={`${message.role}-${index}`} className="flex justify-end animate-fade-in">
@@ -374,7 +372,7 @@ export default function WisePage() {
                 </div>
               ) : (
                 <div key={`${message.role}-${index}`} className="flex items-start gap-2.5 animate-fade-in">
-                  <img src={WISE_AVATAR} alt="Wise" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
+                  <img src={COACH_AVATAR} alt={COACH_NAME} className="w-7 h-7 rounded-full object-contain p-1 flex-shrink-0 mt-0.5" />
                   <div className="max-w-[80%] bg-sw-grey-light/60 text-sw-dark rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words">
                     {message.content}
                   </div>
@@ -383,8 +381,8 @@ export default function WisePage() {
             )}
             {busy ? (
               <div className="flex items-start gap-2.5">
-                <img src={WISE_AVATAR} alt="Wise" className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-0.5" />
-                <div className="bg-sw-grey-light/60 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-sw-grey">Wise is typing…</div>
+                <img src={COACH_AVATAR} alt={COACH_NAME} className="w-7 h-7 rounded-full object-contain p-1 flex-shrink-0 mt-0.5" />
+                <div className="bg-sw-grey-light/60 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-sw-grey">Mindora is typing…</div>
               </div>
             ) : locked ? null : (
               <div className="flex flex-wrap gap-2 pt-1">
@@ -424,8 +422,8 @@ export default function WisePage() {
             <textarea
               value={text}
               rows={1}
-              aria-label="Message to Wise"
-              placeholder="Ask Wise anything..."
+              aria-label="Message to Mindora"
+              placeholder="Ask Mindora anything..."
               disabled={busy || !hydrated}
               onChange={(event) => setText(event.target.value)}
               onKeyDown={(event) => {
@@ -510,12 +508,12 @@ function UnlockStrip({
                   Processing...
                 </span>
               ) : (
-                'YES! — UNLOCK WISE →'
+                'YES! — UNLOCK MINDORA →'
               )}
             </button>
             <div className="mt-2.5 px-2 py-2 bg-white/60 rounded-lg border border-sw-grey-border/40">
               <p className="text-[10px] text-sw-grey text-center leading-relaxed">
-                By tapping &quot;Unlock Wise&quot;, <span className="font-bold text-sw-dark">you agree to a one-time charge of $19.95</span>. Access is
+                By tapping &quot;Unlock Mindora&quot;, <span className="font-bold text-sw-dark">you agree to a one-time charge of $19.95</span>. Access is
                 instant.
               </p>
             </div>
@@ -527,7 +525,7 @@ function UnlockStrip({
               onClick={onUnlock}
               className="block w-full py-3.5 rounded-xl bg-gradient-to-r from-[hsl(var(--sw-blue))] to-[hsl(var(--sw-purple))] text-white text-sm font-bold shadow-lg active:scale-[0.97] transition-all text-center"
             >
-              UNLOCK WISE — $19.95 →
+              UNLOCK MINDORA — $19.95 →
             </button>
             <p className="text-[10px] text-sw-grey text-center mt-2">One-time payment • Secure checkout</p>
           </>
@@ -544,13 +542,13 @@ function GoalsPanel({
   onClose,
   onAdd,
   onRemove,
-  onAskWise,
+  onAskMindora,
 }: {
   goals: Goal[]
   onClose: () => void
   onAdd: (title: string) => void
   onRemove: (id: string) => void
-  onAskWise: (prompt: string) => void
+  onAskMindora: (prompt: string) => void
 }) {
   const [draft, setDraft] = useState('')
   const [adding, setAdding] = useState(false)
@@ -586,10 +584,10 @@ function GoalsPanel({
           </button>
           <button
             type="button"
-            onClick={() => onAskWise('Help me set a meaningful goal for this week')}
+            onClick={() => onAskMindora('Help me set a meaningful goal for this week')}
             className="block mx-auto mt-2 text-[11px] text-sw-grey hover:text-sw-blue transition-colors"
           >
-            Or ask Wise to help →
+            Or ask Mindora to help →
           </button>
         </div>
       ) : null}
