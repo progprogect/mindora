@@ -517,7 +517,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
           <img
             src={ASSETS.books}
             alt="The Ultimate AI Prompt Library — 8 expert guide books with 28,000+ prompts included"
-            className="w-full max-w-md mx-auto"
+            className="w-full"
           />
         </div>
         <div

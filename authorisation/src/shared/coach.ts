@@ -1,5 +1,5 @@
 export const COACH_NAME = 'Mindora'
-export const COACH_AVATAR = '/assets/mindora-owl.png'
+export const COACH_AVATAR = '/assets/mindora-owl.svg'
 export const COACH_OFFER_SLUG = 'mindora-ai-coach'
 export const COACH_OFFER_ALIAS = 'wise-ai-coach'
 export const COACH_GOALS_KEY = 'sw_mindora_goals'
