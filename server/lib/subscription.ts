@@ -1,6 +1,7 @@
 /** Trial webhook: find user by email and link Stripe customer. LMS portal/cancel lives in `successwise-app`. */
-import { desc, eq } from 'drizzle-orm'
+import { and, desc, eq, isNull } from 'drizzle-orm'
 import type Stripe from 'stripe'
+import { sendCancellationEmail } from 'successwise-app/mail'
 import { db } from '../db/index.js'
 import { profiles, subscriptions, users } from '../db/schema.js'
 import { loadEnv } from '../env.js'
@@ -204,6 +205,13 @@ export async function cancelOwnSubscription(userId: string, email: string) {
     : await stripe.subscriptions.update(local.stripeSubscriptionId, { cancel_at_period_end: true })
 
   await upsertLocal(userId, updated)
+  try {
+    if (updated.cancel_at_period_end || updated.status === 'canceled') {
+      await notifyScheduledCancellation(userId, updated)
+    }
+  } catch (error) {
+    console.error('[cancel-mail]', error)
+  }
   return { immediate: Boolean(immediate || updated.status === 'canceled') }
 }
 
@@ -221,4 +229,41 @@ export async function findUserIdByEmail(email: string): Promise<string | null> {
   if (authUser) return authUser.id
   const [profile] = await db.select().from(profiles).where(eq(profiles.email, normalised)).limit(1)
   return profile?.userId ?? null
+}
+
+async function emailForUser(userId: string): Promise<string | null> {
+  const [authUser] = await db.select({ email: users.email }).from(users).where(eq(users.id, userId)).limit(1)
+  if (authUser?.email) return authUser.email.trim().toLowerCase()
+  const [profile] = await db.select({ email: profiles.email }).from(profiles).where(eq(profiles.userId, userId)).limit(1)
+  return profile?.email?.trim().toLowerCase() || null
+}
+
+/** Portal / webhook: one Cancellation confirmed email when cancel is scheduled or already canceled. */
+export async function notifyScheduledCancellation(userId: string, stripeSub: Stripe.Subscription): Promise<void> {
+  if (!stripeSub.cancel_at_period_end && stripeSub.status !== 'canceled') return
+  const to = await emailForUser(userId)
+  if (!to) return
+
+  const [local] = await db
+    .select()
+    .from(subscriptions)
+    .where(eq(subscriptions.userId, userId))
+    .orderBy(desc(subscriptions.createdAt))
+    .limit(1)
+  if (!local || local.cancelEmailSentAt) return
+
+  const claimed = await db
+    .update(subscriptions)
+    .set({ cancelEmailSentAt: new Date() })
+    .where(and(eq(subscriptions.id, local.id), isNull(subscriptions.cancelEmailSentAt)))
+    .returning({ id: subscriptions.id })
+  if (!claimed[0]) return
+
+  const unix = periodEndUnix(stripeSub)
+  const accessUntil = unix ? new Date(unix * 1000) : new Date()
+  try {
+    await sendCancellationEmail({ to, accessUntil })
+  } catch (error) {
+    console.error('[cancel-mail]', error)
+  }
 }

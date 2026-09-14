@@ -11,7 +11,7 @@ import {
 } from '@stripe/react-stripe-js'
 import { getStripe, isStripeConfigured } from '@/shared/lib/stripeClient'
 import { ALREADY_SUBSCRIBED_ERROR, useCreateTrialPaymentIntent } from '@/shared/lib/backend'
-import { hasLocalCheckoutCompleted } from '@/shared/lib/checkoutSession'
+import { clearLocalCheckoutCompleted, markLocalCheckoutCompleted } from '@/shared/lib/checkoutSession'
 import { DEFAULT_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 
 interface InlineTrialCheckoutProps {
@@ -533,18 +533,20 @@ export default function InlineTrialCheckout({
 }: InlineTrialCheckoutProps) {
   const [clientSecret, setClientSecret] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [alreadyMember, setAlreadyMember] = useState(() => hasLocalCheckoutCompleted())
+  const [alreadyMember, setAlreadyMember] = useState(false)
   const createTrialPaymentIntent = useCreateTrialPaymentIntent()
   const setupPath = returnPath ?? defaultSetupPath(funnel)
 
   useEffect(() => {
     if (!isStripeConfigured) return
-    if (hasLocalCheckoutCompleted()) return
     let cancelled = false
 
     createTrialPaymentIntent({ email, productId, funnel })
       .then((res) => {
-        if (!cancelled) setClientSecret(res.clientSecret)
+        if (cancelled) return
+        clearLocalCheckoutCompleted()
+        setAlreadyMember(false)
+        setClientSecret(res.clientSecret)
       })
       .catch((err: unknown) => {
         if (cancelled) return
@@ -562,11 +564,7 @@ export default function InlineTrialCheckout({
   }, [createTrialPaymentIntent, email, productId, funnel])
 
   const handleSuccess = () => {
-    try {
-      window.localStorage.setItem('sw_checkout_completed', 'true')
-    } catch {
-      /* ignore */
-    }
+    markLocalCheckoutCompleted()
     onSuccess()
   }
 

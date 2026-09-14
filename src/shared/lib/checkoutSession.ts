@@ -105,3 +105,25 @@ export function hasLocalCheckoutCompleted(): boolean {
     return false
   }
 }
+
+/** After a successful card confirm — same session only. Server 409 is the membership source of truth. */
+export function markLocalCheckoutCompleted(): void {
+  if (typeof window === 'undefined') return
+  try {
+    window.localStorage.setItem('sw_checkout_completed', 'true')
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Resubscribe after expire/cancel: local flags must not hide the card when Stripe allows a new $1. */
+export function clearLocalCheckoutCompleted(): void {
+  if (typeof window === 'undefined') return
+  try {
+    for (const key of CHECKOUT_COMPLETED_KEYS) {
+      window.localStorage.removeItem(key)
+    }
+  } catch {
+    /* ignore */
+  }
+}

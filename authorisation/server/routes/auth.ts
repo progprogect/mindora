@@ -7,7 +7,7 @@ import { generateOtp, hashesEqual, hmacHex } from '../lib/crypto.js'
 import { sendOtpEmail } from '../lib/mail.js'
 import { isRateLimited, logFailedLogin, RATE_LIMIT_MESSAGE } from '../lib/rateLimit.js'
 import { createSession, destroySession, setSessionCookie } from '../lib/session.js'
-import { attachStripeCustomer } from '../lib/subscription.js'
+import { attachStripeCustomer, maybeSendTrialWelcomeEmail } from '../lib/subscription.js'
 
 const OTP_TTL_MS = 15 * 60 * 1000
 
@@ -79,6 +79,11 @@ authRoutes.post('/auth/otp/verify', async (c) => {
   const session = await createSession(userId)
   setSessionCookie(c, session.token, session.expiresAt)
   await attachStripeCustomer(userId, email)
+  try {
+    await maybeSendTrialWelcomeEmail(userId, email)
+  } catch (error) {
+    console.error('[auth] trial welcome email failed', error)
+  }
   return c.json({ ok: true })
 })
 

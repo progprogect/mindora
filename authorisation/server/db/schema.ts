@@ -68,6 +68,7 @@ export const profiles = pgTable(
     quizAnswers: jsonb('quiz_answers'),
     quizRole: text('quiz_role'),
     stripeCustomerId: text('stripe_customer_id'),
+    trialWelcomeEmailSentAt: timestamp('trial_welcome_email_sent_at', { withTimezone: true }),
   },
   (table) => [uniqueIndex('profiles_user_id_idx').on(table.userId)],
 )
@@ -114,6 +115,7 @@ export const subscriptions = pgTable('subscriptions', {
   renewsAt: timestamp('renews_at', { withTimezone: true }),
   stripeSubscriptionId: text('stripe_subscription_id'),
   cancelAtPeriodEnd: boolean('cancel_at_period_end').notNull().default(false),
+  cancelEmailSentAt: timestamp('cancel_email_sent_at', { withTimezone: true }),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 })
 

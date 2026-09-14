@@ -12,6 +12,7 @@ import {
   findBlockingSubscription,
   findUserIdByEmail,
   linkStripeCustomer,
+  notifyScheduledCancellation,
 } from '../lib/subscription.js'
 
 /** Stripe webhook payloads may send an id string or an expanded object. */
@@ -262,7 +263,19 @@ async function syncSubscriptionObject(object: Record<string, unknown>) {
   if (!customerId) return
   const [profile] = await db.select().from(profiles).where(eq(profiles.stripeCustomerId, customerId)).limit(1)
   if (!profile) return
-  await linkStripeCustomer(profile.userId, customerId, object as unknown as Stripe.Subscription)
+  const stripeSub = object as unknown as Stripe.Subscription
+  await linkStripeCustomer(profile.userId, customerId, stripeSub)
+  if (eventIsScheduledCancel(stripeSub)) {
+    try {
+      await notifyScheduledCancellation(profile.userId, stripeSub)
+    } catch (error) {
+      console.error('[cancel-mail]', error)
+    }
+  }
+}
+
+function eventIsScheduledCancel(sub: Stripe.Subscription): boolean {
+  return Boolean(sub.cancel_at_period_end)
 }
 
 export async function stripeWebhookHandler(c: Context) {

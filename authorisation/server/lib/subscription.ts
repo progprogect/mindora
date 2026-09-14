@@ -1,8 +1,9 @@
-import { desc, eq } from 'drizzle-orm'
+import { and, desc, eq, isNull } from 'drizzle-orm'
 import type Stripe from 'stripe'
 import { db } from '../db/index.js'
 import { profiles, subscriptions, users } from '../db/schema.js'
 import { loadEnv } from '../env.js'
+import { planLabelFromFunnel, sendCancellationEmail, sendTrialWelcomeEmail } from './mail.js'
 import { getStripe } from './stripe.js'
 
 export type SubscriptionDto = {
@@ -25,6 +26,7 @@ export class BillingError extends Error {
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
 const LIVE_SUB = new Set(['trialing', 'active'])
+const BLOCKING_SUB_STATUSES = new Set(['active', 'trialing', 'past_due'])
 const ANNUAL_OTO_CENTS = 5999
 
 function stripeConfigured() {
@@ -204,10 +206,91 @@ export async function cancelOwnSubscription(userId: string, email: string) {
     const updated = immediate
       ? await stripe.subscriptions.cancel(local.stripeSubscriptionId)
       : await stripe.subscriptions.update(local.stripeSubscriptionId, { cancel_at_period_end: true })
-    await upsertLocal(userId, updated)
+    const dto = await upsertLocal(userId, updated)
+    try {
+      await notifyScheduledCancellation(userId, email, accessUntilFromUnix(dto.currentPeriodEnd))
+    } catch (error) {
+      console.error('[cancel-mail]', error)
+    }
     return { immediate: Boolean(immediate || updated.status === 'canceled') }
   } catch (error) {
     throw toBillingError(error, 'Stripe could not cancel this subscription.')
+  }
+}
+
+function accessUntilFromUnix(unix: number | null): Date {
+  return unix ? new Date(unix * 1000) : new Date()
+}
+
+/** One Cancellation confirmed email per subscription row. Resend failure does not roll back Stripe. */
+export async function notifyScheduledCancellation(userId: string, email: string, accessUntil: Date): Promise<void> {
+  const to = email.trim().toLowerCase()
+  if (!userId || !to) return
+  const local = await loadLocalSubscription(userId)
+  if (!local || local.cancelEmailSentAt) return
+
+  const claimed = await db
+    .update(subscriptions)
+    .set({ cancelEmailSentAt: new Date() })
+    .where(and(eq(subscriptions.id, local.id), isNull(subscriptions.cancelEmailSentAt)))
+    .returning({ id: subscriptions.id })
+  if (!claimed[0]) return
+
+  try {
+    await sendCancellationEmail({ to, accessUntil })
+  } catch (error) {
+    console.error('[cancel-mail]', error)
+  }
+}
+
+async function loadOrCreateProfile(userId: string, email: string) {
+  const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
+  if (existing) return existing
+  try {
+    const [created] = await db.insert(profiles).values({ userId, name: '', email }).returning()
+    return created ?? null
+  } catch (error) {
+    console.error('[welcome-mail] profile insert raced', error)
+    const [again] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
+    return again ?? null
+  }
+}
+
+async function funnelFromStripe(userId: string): Promise<string | undefined> {
+  const local = await loadLocalSubscription(userId)
+  if (!local?.stripeSubscriptionId || !stripeConfigured()) return undefined
+  try {
+    const remote = await getStripe().subscriptions.retrieve(local.stripeSubscriptionId)
+    return remote.metadata?.funnel || undefined
+  } catch (error) {
+    console.error('[welcome-mail] stripe funnel lookup failed', error)
+    return undefined
+  }
+}
+
+/** First OTP after a live trial: one welcome email. Repeat logins do not send again. */
+export async function maybeSendTrialWelcomeEmail(userId: string, email: string): Promise<void> {
+  const to = email.trim().toLowerCase()
+  if (!userId || !to) return
+
+  const mine = await getMine(userId, to)
+  if (!mine || !BLOCKING_SUB_STATUSES.has(mine.status)) return
+
+  const profile = await loadOrCreateProfile(userId, to)
+  if (!profile || profile.trialWelcomeEmailSentAt) return
+
+  const claimed = await db
+    .update(profiles)
+    .set({ trialWelcomeEmailSentAt: new Date() })
+    .where(and(eq(profiles.id, profile.id), isNull(profiles.trialWelcomeEmailSentAt)))
+    .returning({ id: profiles.id })
+  if (!claimed[0]) return
+
+  const planLabel = planLabelFromFunnel(profile.funnelSource || (await funnelFromStripe(userId)))
+  try {
+    await sendTrialWelcomeEmail({ to, planLabel })
+  } catch (error) {
+    console.error('[welcome-mail]', error)
   }
 }
 

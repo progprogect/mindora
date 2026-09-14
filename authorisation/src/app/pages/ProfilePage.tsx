@@ -19,13 +19,22 @@ function formatRenew(unix: number | null) {
   return new Date(unix * 1000).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
 }
 
+function formatAccessUntil(unix: number | null) {
+  if (!unix) return null
+  return new Date(unix * 1000).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  })
+}
+
 function memberSince(joinDate?: number) {
   if (!joinDate) return null
   return new Date(joinDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 function statusLabel(status: string) {
-  if (status === 'trialing') return 'Trial'
+  if (status === 'trialing') return 'Free Trial'
   if (status === 'active') return 'Active'
   if (status === 'canceled') return 'Cancelled'
   if (PAST_DUE.has(status)) return 'Past Due'
@@ -118,11 +127,11 @@ export default function ProfilePage() {
 
   const statusClass = pastDue
     ? 'text-sw-amber'
-    : status === 'trialing'
-      ? 'text-sw-blue'
-      : status === 'active'
-        ? 'text-sw-success'
-        : 'text-sw-grey'
+    : status === 'trialing' || status === 'active'
+      ? 'text-sw-success'
+      : 'text-sw-grey'
+  const periodLabel = status === 'trialing' ? 'trial ends' : 'renews'
+  const accessUntil = formatAccessUntil(sub?.currentPeriodEnd ?? null) ?? renew
 
   return (
     <div className="min-h-screen bg-sw-grey-light pb-28">
@@ -178,26 +187,36 @@ export default function ProfilePage() {
               <p className="text-sm font-semibold text-sw-dark">MindoraAcademy Pro</p>
               <p className={`text-xs font-bold mt-0.5 ${statusClass}`}>
                 {statusLabel(status)}
-                {renew ? <span className="text-sw-grey font-medium"> · renews {renew}</span> : null}
+                {renew ? <span className="text-sw-grey font-medium"> · {periodLabel} {renew}</span> : null}
               </p>
             </div>
             <div className="text-2xl">💎</div>
           </div>
-          {sub?.cancelAtPeriodEnd ? (
-            <p className="mb-3 text-sm text-sw-grey" data-testid="cancel-scheduled">
-              Cancellation scheduled. You&apos;ll keep access until {renew ?? 'the end of the period'}.
-            </p>
+          {cancelMsg ? (
+            <div className="mb-3 rounded-xl bg-sw-success-light p-3" data-testid="cancel-banner-active">
+              <div className="flex items-start gap-2">
+                <span className="mt-0.5 font-bold text-sw-success" aria-hidden>
+                  ✓
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-bold text-sw-dark">Subscription cancelled</p>
+                  <p className="text-xs text-sw-grey mt-1">{cancelMsg}</p>
+                </div>
+                <button
+                  type="button"
+                  aria-label="Dismiss"
+                  onClick={() => setCancelMsg(null)}
+                  className="text-xs font-semibold text-sw-blue"
+                >
+                  Dismiss
+                </button>
+              </div>
+            </div>
           ) : null}
           {!cancellable ? (
             <p className="mb-3 text-sm text-sw-grey" data-testid="billing-unlinked">
               Billing isn&apos;t linked on this account, so Manage and Cancel aren&apos;t available.
             </p>
-          ) : null}
-          {cancelMsg ? (
-            <div className="mb-3 rounded-xl bg-sw-success-light p-3">
-              <p className="text-sm font-bold text-sw-dark">Subscription cancelled</p>
-              <p className="text-xs text-sw-grey mt-1">{cancelMsg}</p>
-            </div>
           ) : null}
           {billingError && !cancelOpen ? (
             <p className="mb-3 text-sm text-red-500" data-testid="billing-error">
@@ -213,6 +232,14 @@ export default function ProfilePage() {
             Manage Subscription
           </button>
           <p className="text-[11px] text-sw-grey text-center mt-2">Update payment method or view invoices</p>
+          {sub?.cancelAtPeriodEnd ? (
+            <p
+              className="mt-3 rounded-xl bg-sw-amber/10 px-4 py-2.5 text-center text-sm font-semibold text-sw-dark"
+              data-testid="cancel-scheduled"
+            >
+              Cancellation scheduled — access until {accessUntil ?? 'the end of the period'}
+            </p>
+          ) : null}
           {cancellable && !sub?.cancelAtPeriodEnd && status !== 'canceled' ? (
             <button
               type="button"
