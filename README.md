@@ -49,8 +49,8 @@ Copy `.env.example` → `.env` (or `.env.local`).
 | `STRIPE_SECRET_KEY` | runtime | PaymentIntents + webhook |
 | `STRIPE_WEBHOOK_SECRET` | runtime | `POST /stripe/webhook` |
 | `STRIPE_*_PRICE_ID` | runtime | Recurring prices after the $1 trial |
-| `AUTH_RESEND_KEY` | runtime | Resend API key for OTP (required in production) |
-| `AUTH_EMAIL` | runtime | OTP From header (default `MindoraAcademy.com <support@mindoraacademy.com>`) |
+| `AUTH_RESEND_KEY` | runtime | Resend API key for OTP and the $1 trial receipt (required in production) |
+| `AUTH_EMAIL` | runtime | OTP / receipt From header (default `MindoraAcademy.com <support@mindoraacademy.com>`) |
 | `META_ACCESS_TOKEN` | runtime | Conversions API |
 | `PUBLIC_ORIGIN` | runtime | Stripe Customer Portal return origin |
 | `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` | runtime | Wise LLM (canned replies if unset) |
@@ -70,12 +70,12 @@ Required Railway variables (service → Variables):
 
 - `DATABASE_URL` = `${{Postgres.DATABASE_URL}}` (private URL of a Postgres plugin in the **same** project)
 - `SESSION_SECRET` — 16+ random characters
-- `AUTH_RESEND_KEY` — Resend API key for OTP (`re_…`; domain `mindoraacademy.com` must be Verified)
+- `AUTH_RESEND_KEY` — Resend API key for OTP and the $1 trial receipt (`re_…`; domain `mindoraacademy.com` must be Verified)
 - `RAILPACK_NO_SPA=1` if the builder tries to serve `dist/` as a static site
 
 Without Postgres the HTTP server still listens and serves the SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
 
-Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial payments create a subscription; add-on payments with `metadata.offerSlug` write `purchases`.
+Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial `$1` payments create a subscription and send a Resend receipt (`MindoraAcademy.com — Trial payment receipt ($1.00)`); add-on payments with `metadata.offerSlug` write `purchases` and do not use that template.
 
 ## Routes
 

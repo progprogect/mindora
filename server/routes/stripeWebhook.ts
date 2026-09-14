@@ -1,6 +1,7 @@
 import { eq } from 'drizzle-orm'
 import type { Context } from 'hono'
 import type Stripe from 'stripe'
+import { sendTrialReceiptEmail } from 'successwise-app/mail'
 import { recordPurchase } from 'successwise-app/purchases'
 import { db } from '../db/index.js'
 import { processedStripePayments, products, profiles } from '../db/schema.js'
@@ -123,6 +124,7 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
     if (existingPi === paymentIntentId) {
       await markProcessedPayment(paymentIntentId, customerId, metadata.email, existing.id)
       await linkCustomerIfKnown(metadata.email, customerId, existing)
+      await sendTrialReceiptSafely(object, metadata.email, customerId)
       return
     }
     await refundDuplicateTrialPayment(paymentIntentId)
@@ -166,6 +168,47 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
 
   await markProcessedPayment(paymentIntentId, customerId, metadata.email, created.id)
   await linkCustomerIfKnown(metadata.email, customerId, created)
+  await sendTrialReceiptSafely(object, metadata.email, customerId)
+}
+
+async function sendTrialReceiptSafely(
+  object: Record<string, unknown>,
+  metadataEmail: string | undefined,
+  customerId: string,
+): Promise<void> {
+  const to = metadataEmail?.trim() || (await customerEmail(customerId))
+  if (!to) {
+    console.error('[stripe webhook] trial receipt skipped — no email', object.id)
+    return
+  }
+  const amountCents = typeof object.amount === 'number' && Number.isFinite(object.amount) ? object.amount : 100
+  const created = typeof object.created === 'number' ? object.created : Math.floor(Date.now() / 1000)
+  try {
+    await sendTrialReceiptEmail({
+      to,
+      amountCents,
+      paidAt: new Date(created * 1000),
+    })
+    console.log('[stripe webhook] trial receipt sent', object.id, to, formatReceiptAmount(amountCents))
+  } catch (error) {
+    console.error('[stripe webhook] trial receipt failed', object.id, error)
+  }
+}
+
+function formatReceiptAmount(amountCents: number): string {
+  return `$${(amountCents / 100).toFixed(2)}`
+}
+
+async function customerEmail(customerId: string): Promise<string | undefined> {
+  if (!customerId) return undefined
+  try {
+    const customer = await getStripe().customers.retrieve(customerId)
+    if ('deleted' in customer && customer.deleted) return undefined
+    return customer.email ?? undefined
+  } catch (error) {
+    console.error('[stripe webhook] customer email lookup failed', customerId, error)
+    return undefined
+  }
 }
 
 async function isPaymentAlreadyProcessed(paymentIntentId: string): Promise<boolean> {

@@ -19,10 +19,11 @@ import { buyOffer, recordUpsellEvent, recordUpsellFailure } from '@/lib/api'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
+import { COMPANY } from '@/shared/company'
 
 const OFFER = PLANNER_BUNDLE_SLUG
 const COMPARE_COUNT = 2
-const NEXT = '/account/upgrade-annual'
+const NEXT = '/account/upgrade-wise'
 
 const NOT_CHARGED = 'You have not been charged.'
 const CONTINUE = 'Continue without the planners — you can add them later from your dashboard.'
@@ -531,7 +532,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 That{"\u2019"}s {i - COMPARE_COUNT} extra planners — and you still pay less.
               </p>
               <p className="mt-3 text-center text-sm text-sw-grey">
-                All {i} individually inside MindoraAcademy:{' '}
+                All {i} individually inside {COMPANY.brandName}:{' '}
                 <span className="font-bold text-sw-blue">{list}</span>
               </p>
               {showCtas ? (
@@ -769,7 +770,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   {[
                     `All ${i} planners included`,
                     `${pages} printable pages`,
-                    'Instant access in MindoraAcademy',
+                    `Instant access in ${COMPANY.brandName}`,
                     'One-time payment — no subscription',
                     'Yours to keep',
                   ].map((item) => (

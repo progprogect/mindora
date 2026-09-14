@@ -13,6 +13,11 @@
       "types": "./server-dist/lib/purchases.d.ts",
       "import": "./server-dist/lib/purchases.js",
       "default": "./server-dist/lib/purchases.js"
+    },
+    "./mail": {
+      "types": "./server-dist/lib/mail.d.ts",
+      "import": "./server-dist/lib/mail.js",
+      "default": "./server-dist/lib/mail.js"
     }
   },
   "scripts": {

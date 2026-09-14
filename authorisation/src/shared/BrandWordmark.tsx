@@ -1,5 +1,4 @@
-const BRAND_NAME = 'MindoraAcademy'
-const TLD = '.com'
+import { COMPANY } from '@/shared/company'
 
 type BrandWordmarkProps = {
   variant?: 'dark' | 'light'
@@ -17,8 +16,8 @@ export default function BrandWordmark({
 
   return (
     <span className={`inline-flex items-baseline ${sizeClass} ${className}`.trim()}>
-      <span className={nameColor}>{BRAND_NAME}</span>
-      <span className="text-sw-blue">{TLD}</span>
+      <span className={nameColor}>{COMPANY.brandName}</span>
+      <span className="text-sw-blue">{COMPANY.tld}</span>
     </span>
   )
 }

@@ -3,6 +3,7 @@ import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import { useCurrentUser } from '@/auth/session'
 import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
+import { COMPANY } from '@/shared/company'
 
 function Spinner() {
   return (
@@ -141,7 +142,7 @@ function WelcomeLetter() {
               />
               <div>
                 <p className="text-sm font-bold text-sw-dark">Rob Wass</p>
-                <p className="text-xs text-sw-grey">Founder, MindoraAcademy.com</p>
+                <p className="text-xs text-sw-grey">Founder, {COMPANY.brand}</p>
               </div>
             </div>
           </div>

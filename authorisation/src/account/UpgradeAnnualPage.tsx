@@ -8,12 +8,12 @@ import { useHasSavedCard, useSubscription, useUpsellStatus } from '@/lib/lmsQuer
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
+import { MONEY_BACK_CHIP } from '@/shared/moneyBack'
 
 const OFFER = 'annual-upgrade'
 const PRICE = 59.99
 const WAS = 89.99
 const NEXT = '/account/upgrade-wise'
-const MONEY_BACK_DAYS = 14
 
 function UnauthRedirect() {
   useEffect(() => {
@@ -25,13 +25,6 @@ function UnauthRedirect() {
 function BounceWise() {
   useEffect(() => {
     window.location.href = NEXT
-  }, [])
-  return <AuthSpinner message="Almost there..." />
-}
-
-function BounceDashboard() {
-  useEffect(() => {
-    window.location.href = '/app/dashboard'
   }, [])
   return <AuthSpinner message="Almost there..." />
 }
@@ -138,7 +131,7 @@ function OfferCard({
           By clicking above, you switch your membership to{' '}
           <span className="font-bold text-sw-dark">${PRICE}/year</span>. Your trial is not cancelled and you
           are not billed the difference today. After the trial, you pay ${PRICE}/year instead of monthly.{' '}
-          {MONEY_BACK_DAYS}-day money-back guarantee.
+          {MONEY_BACK_CHIP}.
         </p>
       </div>
       <div className="text-center">
@@ -278,7 +271,7 @@ export function AnnualOffer() {
         <section className="mt-8 mb-8 rounded-2xl border border-sw-grey-border bg-white p-5 space-y-3">
           <Benefit text="Keep your trial — we do not charge the yearly amount today" />
           <Benefit text={`After the trial: $${PRICE}/year instead of monthly`} />
-          <Benefit text={`${MONEY_BACK_DAYS}-day money-back guarantee`} />
+          <Benefit text={MONEY_BACK_CHIP} />
           <Benefit text="Cancel anytime before renewal from Profile" />
         </section>
         <div>
@@ -307,7 +300,6 @@ function AnnualGate() {
   if (status === undefined || hasCard === undefined || user === undefined || sub === undefined) {
     return <AuthSpinner />
   }
-  if (user?.onboardingComplete && !review) return <BounceDashboard />
   if (review) return <AnnualOffer />
   if (!hasCard) return <BounceWise />
   if (status.status === 'purchased' || status.status === 'skipped') return <BounceWise />
