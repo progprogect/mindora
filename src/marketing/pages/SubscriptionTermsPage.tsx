@@ -46,7 +46,7 @@ export default function SubscriptionTermsPage() {
 
         <LegalSection title="2. Free Trial">
           <p>
-            We may offer a free trial period (typically 7 days) for new subscribers. During the trial, you
+            We may offer a free trial period (typically 3 days) for new subscribers. During the trial, you
             will have full access to the Platform. If you do not cancel before the trial ends, your
             subscription will automatically convert to a paid plan and your payment method will be charged.
           </p>

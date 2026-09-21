@@ -28,11 +28,11 @@ export default function PricingPage() {
       <section className="bg-sw-dark px-4 py-12 sm:py-16">
         <div className="animate-fade-up mx-auto max-w-3xl text-center">
           <h1 className="mb-3 text-3xl font-extrabold text-white sm:text-4xl">
-            Start with a <span style={{ color: 'hsl(var(--sw-success))' }}>$1 trial</span> for 7 days
+            Start with a <span style={{ color: 'hsl(var(--sw-success))' }}>$1 trial</span> for 3 days
           </h1>
           <p className="mx-auto max-w-xl text-base text-white/70">
             Full access to every course, your AI Coach, and personalised roadmap — normally{' '}
-            <span className="line-through">$29.99/mo</span>. Cancel any time before day 7 — you
+            <span className="line-through">$29.99/mo</span>. Cancel any time before day 3 — you
             won&apos;t be charged.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function PricingPage() {
               🎉
             </span>
             <span className="text-sm font-bold text-white sm:text-base">
-              Just $1 to start — full access for 7 days
+              Just $1 to start — full access for 3 days
             </span>
           </div>
         </div>

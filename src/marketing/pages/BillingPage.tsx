@@ -45,7 +45,7 @@ export default function BillingPage() {
             <h2 className="mb-2 text-xl font-bold text-sw-dark sm:text-2xl">Subscription Plans</h2>
             <p className="mb-4 text-sw-grey">
               All subscription plans start with a{' '}
-              <strong className="text-sw-dark">7-day trial for just $1.00</strong>. After your
+              <strong className="text-sw-dark">3-day trial for just $1.00</strong>. After your
               trial, you&apos;ll be billed at the full price according to the plan you chose. Every
               plan includes full access to every course, your AI Coach, personalised roadmap,
               certificates of completion, and every new course we add — at no extra charge.
@@ -110,8 +110,8 @@ export default function BillingPage() {
               </div>
             </div>
             <p className="mt-6 text-center text-sm leading-relaxed text-sw-grey">
-              All subscription plans include a 7-day trial for $1.00. After day 7, you&apos;ll be
-              billed at the full plan price. Cancel any time before day 7 and no further charges
+              All subscription plans include a 3-day trial for $1.00. After day 3, you&apos;ll be
+              billed at the full plan price. Cancel any time before day 3 and no further charges
               apply.
             </p>
           </div>
@@ -138,8 +138,8 @@ export default function BillingPage() {
               <h3 className="mb-2 font-semibold text-sw-dark">When will I be charged?</h3>
               <div className="space-y-2 leading-relaxed text-sw-grey">
                 <p>
-                  Subscription plans start with a <strong>7-day trial for $1.00</strong>. After day
-                  7, you will be billed automatically at the full price according to your chosen
+                  Subscription plans start with a <strong>3-day trial for $1.00</strong>. After day
+                  3, you will be billed automatically at the full price according to your chosen
                   plan (monthly, every 3 months, or annually). You&apos;ll receive an email receipt
                   after every payment. Cancel any time before your trial ends to avoid further
                   charges. One-time purchases are charged immediately at the listed price.

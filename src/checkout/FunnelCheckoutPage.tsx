@@ -20,7 +20,7 @@ const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progre
 const MONTHLY_ID = DEFAULT_PLANS.find((p) => p.intervalMonths === 1)?.id ?? 'monthly'
 
 const LINE_ITEMS = [
-  { label: '7-Day Trial', value: '$1', emphasis: 'dark' as const },
+  { label: '3-Day Trial', value: '$1', emphasis: 'dark' as const },
   { label: 'Full 28-day AI Challenge', value: 'Included', emphasis: 'success' as const },
   { label: 'All courses + 45 certificates', value: 'Included', emphasis: 'success' as const },
   { label: 'Mindora, your AI coach', value: 'Included', emphasis: 'success' as const },
@@ -113,7 +113,7 @@ export default function FunnelCheckoutPage() {
                 <span className="text-xl font-extrabold text-sw-dark">$1</span>
               </div>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Then $29.99 per month after your 7-day trial. Cancel any time from your profile page.
+                Then $29.99 per month after your 3-day trial. Cancel any time from your profile page.
               </p>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
                 Risk-free {MONEY_BACK_CHIP} included.

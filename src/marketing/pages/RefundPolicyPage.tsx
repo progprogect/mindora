@@ -114,7 +114,7 @@ export default function RefundPolicyPage() {
 
           <LegalSection title="Who This Applies To">
             <p>
-              All subscription plans start with a <strong>7-day trial for $1.00</strong>. The 14-day
+              All subscription plans start with a <strong>3-day trial for $1.00</strong>. The 14-day
               money-back guarantee applies from the date of your <strong>first full charge</strong>{' '}
               (i.e. the day your trial converts to a paid subscription at the full price).
             </p>
@@ -122,15 +122,15 @@ export default function RefundPolicyPage() {
             <ul className="list-disc space-y-2 pl-5 text-sw-grey">
               <li>
                 <strong>Monthly Plan</strong> — 14-day guarantee from the date of your first full
-                charge (after the 7-day $1 trial)
+                charge (after the 3-day $1 trial)
               </li>
               <li>
                 <strong>Quarterly Plan</strong> — 14-day guarantee from the date of your first full
-                charge (after the 7-day $1 trial)
+                charge (after the 3-day $1 trial)
               </li>
               <li>
                 <strong>Annual Plan</strong> — 14-day guarantee from the date of your first full
-                charge (after the 7-day $1 trial)
+                charge (after the 3-day $1 trial)
               </li>
             </ul>
             <p className="mt-4 mb-2 font-semibold text-sw-dark">One-Time Purchases:</p>
@@ -214,9 +214,9 @@ export default function RefundPolicyPage() {
 
           <LegalSection title="$1 Trial Period">
             <p>
-              All subscription plans include a <strong>7-day trial for $1.00</strong>. This gives
+              All subscription plans include a <strong>3-day trial for $1.00</strong>. This gives
               you full access to the platform at a reduced introductory price. If you do not cancel
-              before day 7, your subscription will automatically convert to a paid plan at the full
+              before day 3, your subscription will automatically convert to a paid plan at the full
               price and your payment method will be charged. Your{' '}
               <strong>14-day money-back guarantee begins from that first full charge date</strong>.
             </p>

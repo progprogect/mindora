@@ -132,7 +132,7 @@ export async function sendTrialWelcomeEmail(input: TrialWelcomeEmail): Promise<v
   const origin = publicOrigin()
   const year = new Date().getFullYear()
   const planLabel = input.planLabel || 'MindoraAcademy Pro'
-  const subject = `Welcome to ${BRAND}! Your 7-day trial has started`
+  const subject = `Welcome to ${BRAND}! Your 3-day trial has started`
 
   if (!env.AUTH_RESEND_KEY) {
     if (env.NODE_ENV === 'production') {
@@ -393,7 +393,7 @@ function trialWelcomeInnerHtml({ origin, planLabel }: { origin: string; planLabe
   const login = loginUrl(origin)
   return `<tr>
             <td style="padding:8px 28px 0;">
-              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your 7-day trial has started</h1>
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your 3-day trial has started</h1>
               <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">You've just taken the first step toward transforming your life. Your account is ready and waiting.</p>
               <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">There's no password to remember. Enter your email on the login page and we'll send you a one-time code.</p>
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
@@ -404,7 +404,7 @@ function trialWelcomeInnerHtml({ origin, planLabel }: { origin: string; planLabe
                   </td>
                   <td style="padding:16px 20px;width:50%;">
                     <p style="margin:0 0 4px;font-size:11px;letter-spacing:0.08em;font-weight:700;color:${GREY};">TRIAL LENGTH</p>
-                    <p style="margin:0;font-size:16px;font-weight:700;color:${DARK};">7 days</p>
+                    <p style="margin:0;font-size:16px;font-weight:700;color:${DARK};">3 days</p>
                   </td>
                 </tr>
               </table>
@@ -432,14 +432,14 @@ function trialWelcomeText({
     '',
     BRAND,
     '',
-    'Your 7-day trial has started',
+    'Your 3-day trial has started',
     '',
     "You've just taken the first step toward transforming your life. Your account is ready and waiting.",
     '',
     "There's no password to remember. Enter your email on the login page and we'll send you a one-time code.",
     '',
     `YOUR PLAN     ${planLabel}`,
-    'TRIAL LENGTH  7 days',
+    'TRIAL LENGTH  3 days',
     '',
     'Log in to MindoraAcademy:',
     login,

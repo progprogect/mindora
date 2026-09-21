@@ -7,6 +7,7 @@ import { db } from '../db/index.js'
 import { processedStripePayments, products, profiles } from '../db/schema.js'
 import { loadEnv } from '../env.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
+import { TRIAL_DAYS } from '../lib/trial.js'
 import {
   collapseDuplicateBlockingSubscriptions,
   findBlockingSubscription,
@@ -144,7 +145,7 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
       customer: customerId,
       default_payment_method: paymentMethod,
       items: [{ price: priceId }],
-      trial_period_days: 7,
+      trial_period_days: TRIAL_DAYS,
       metadata: {
         funnel: metadata.funnel ?? '28-day-ai-challenge',
         paymentIntentId,

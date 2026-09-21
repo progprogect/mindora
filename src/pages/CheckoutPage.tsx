@@ -170,7 +170,7 @@ export default function CheckoutPage() {
         </div>
         <div>
           <h1 className="mb-2 text-2xl font-extrabold text-sw-dark">Payment successful!</h1>
-          <p className="text-base text-sw-grey">Your 7-day trial is now active. Setting up your account…</p>
+          <p className="text-base text-sw-grey">Your 3-day trial is now active. Setting up your account…</p>
           <p className="mt-1 text-sm text-sw-grey">You&apos;ll be redirected automatically in a moment.</p>
         </div>
         <Link to={setupPath} className="text-sm font-semibold text-sw-blue">
@@ -228,7 +228,7 @@ export default function CheckoutPage() {
                 </span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-sw-dark">7-Day Trial</span>
+                <span className="text-sm text-sw-dark">3-Day Trial</span>
                 <span className="text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
                   $1.00
                 </span>
@@ -240,7 +240,7 @@ export default function CheckoutPage() {
                 <span className="text-xl font-extrabold text-sw-dark">$1.00</span>
               </div>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Then {formatUsd(plan.price)} {meta.periodLabel} after your 7-day trial.
+                Then {formatUsd(plan.price)} {meta.periodLabel} after your 3-day trial.
                 {meta.months > 1 ? ` That's just $${(monthly / 100).toFixed(2)}/month.` : null} Cancel any time.
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function CheckoutPage() {
           <span>✓ {MONEY_BACK_CHIP_CAP}</span>
         </div>
         <p className="px-2 text-center text-[11px] leading-relaxed text-sw-grey">
-          By proceeding, you agree to pay $1.00 today for a 7-day trial. After your trial, you&apos;ll be charged{' '}
+          By proceeding, you agree to pay $1.00 today for a 3-day trial. After your 3-day trial, you&apos;ll be charged{' '}
           {formatUsd(plan.price)} {meta.periodLabel} until you cancel. You can cancel at any time from your account
           settings. {MONEY_BACK_CHIP}.
         </p>

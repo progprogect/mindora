@@ -26,7 +26,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       {
         id: 'create-account',
         question: "How do I create an account?",
-        answer: "Tap \"Start Free Trial\" on our homepage or pricing page. You'll be asked for your email address — we'll send you a one-time code to verify it. That's it. No password to remember, no lengthy forms. Once verified, you're in and can start learning immediately during your 7-day free trial.",
+        answer: "Tap \"Start Free Trial\" on our homepage or pricing page. You'll be asked for your email address — we'll send you a one-time code to verify it. That's it. No password to remember, no lengthy forms. Once verified, you're in and can start learning immediately during your 3-day $1 trial.",
         categoryId: 'getting-started',
         categoryTitle: "Getting Started",
       },
@@ -55,21 +55,21 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       {
         id: 'plans-pricing',
         question: "What plans are available and how much do they cost?",
-        answer: "We offer three simple plans — all include full access to every course, feature, and future content:\n\n• 1-Month Plan — billed monthly\n• 6-Month Plan (Most Popular) — billed every 6 months at a significant discount\n• 12-Month Plan (Best Value) — billed annually at the lowest per-month price\n\nAll plans include a 7-day free trial. Visit our Pricing page for exact amounts in your currency. We believe in full transparency — the price you see is the price you pay. No hidden fees, ever.",
+        answer: "We offer three simple plans — all include full access to every course, feature, and future content:\n\n• 1-Month Plan — billed monthly\n• 6-Month Plan (Most Popular) — billed every 6 months at a significant discount\n• 12-Month Plan (Best Value) — billed annually at the lowest per-month price\n\nAll plans include a 3-day $1 trial. Visit our Pricing page for exact amounts in your currency. We believe in full transparency — the price you see is the price you pay. No hidden fees, ever.",
         categoryId: 'subscription-billing',
         categoryTitle: "Subscription & Billing",
       },
       {
         id: 'free-trial',
-        question: "How does the 7-day free trial work?",
-        answer: "When you sign up, you get 7 days of full, unrestricted access to everything — every course, every feature, no limitations. You won't be charged during the trial. On day 8, your chosen plan begins and your payment method is charged. If you cancel before the trial ends, you won't be charged a penny.",
+        question: "How does the 3-day $1 trial work?",
+        answer: "When you sign up, you pay $1 and get 3 days of full, unrestricted access to everything — every course, every feature, no limitations. On day 4, your chosen plan begins and your payment method is charged the full plan price. If you cancel before the trial ends, you won't be charged the full amount.",
         categoryId: 'subscription-billing',
         categoryTitle: "Subscription & Billing",
       },
       {
         id: 'when-charged',
         question: "When will I be charged?",
-        answer: "Your first charge happens on day 8 — the day after your 7-day free trial ends. After that, you're billed at the start of each billing cycle (monthly, every 6 months, or annually depending on your plan). We'll always send you a receipt by email when a payment is taken.",
+        answer: "You pay $1 today to start your 3-day trial. Your first full charge happens on day 4 — the day after your 3-day $1 trial ends. After that, you're billed at the start of each billing cycle (monthly, every 6 months, or annually depending on your plan). We'll always send you a receipt by email when a payment is taken.",
         categoryId: 'subscription-billing',
         categoryTitle: "Subscription & Billing",
       },
@@ -90,7 +90,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       {
         id: 'why-charged',
         question: "Why was I charged?",
-        answer: `If you see a charge from MindoraAcademy, it's likely because your 7-day free trial ended and your subscription began. Check your email for a receipt with the exact amount and date. If you believe the charge is incorrect, you're covered by our ${MONEY_BACK_CHIP} — just email us and we'll sort it out immediately.`,
+        answer: `If you see a charge from MindoraAcademy, it's likely because your 3-day $1 trial ended and your first full charge was taken on day 4 when your subscription began. Check your email for a receipt with the exact amount and date. If you believe the charge is incorrect, you're covered by our ${MONEY_BACK_CHIP} — just email us and we'll sort it out immediately.`,
         categoryId: 'subscription-billing',
         categoryTitle: "Subscription & Billing",
       },
@@ -119,7 +119,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       {
         id: 'guarantee-coverage',
         question: `What does the ${MONEY_BACK_CHIP} cover?`,
-        answer: `The guarantee covers your first subscription on any plan. The ${MONEY_BACK_DAYS}-day window starts from your first charge (day 8, after the free trial). It applies once per customer. It does not apply to repeat subscriptions (if you cancel, claim a refund, then resubscribe). After ${MONEY_BACK_DAYS} days, we don't offer refunds as standard — but we're always reasonable and will consider exceptional circumstances.`,
+        answer: `The guarantee covers your first subscription on any plan. The ${MONEY_BACK_DAYS}-day window starts from your first full charge (day 4, after the $1 trial). It applies once per customer. It does not apply to repeat subscriptions (if you cancel, claim a refund, then resubscribe). After ${MONEY_BACK_DAYS} days, we don't offer refunds as standard — but we're always reasonable and will consider exceptional circumstances.`,
         categoryId: 'refunds-guarantee',
         categoryTitle: "Refunds & Guarantee",
       },
@@ -376,6 +376,8 @@ export function matchFaqAnswer(message: string): string | null {
     'i want a refund': 'request-refund',
     "can't log in": 'how-to-login',
     'what does the trial include?': 'free-trial',
+    'how does the 3-day $1 trial work?': 'free-trial',
+    'how does the 7-day free trial work?': 'free-trial',
   }
   const aliasId = aliases[q]
   if (aliasId) {

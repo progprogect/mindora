@@ -5,8 +5,8 @@ export default function StatsSection() {
     <section className="relative overflow-hidden border-y border-sw-grey-border bg-white py-8">
       <div className="pointer-events-none absolute -bottom-1 left-4 z-10 hidden lg:block">
         <img
-          src="/assets/mascot.png"
-          alt="MindoraAcademy mascot"
+          src="/assets/mindora-owl.svg"
+          alt="MindoraAcademy owl"
           className="emoji-bounce w-14 opacity-90"
         />
       </div>

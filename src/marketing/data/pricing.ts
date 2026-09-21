@@ -58,12 +58,12 @@ export function pricingSummary(plan: PricingCatalogPlan): string {
   const total = formatPlanTotal(plan.price)
   const monthly = formatPerMonth(plan.price, plan.intervalMonths)
   if (plan.intervalMonths === 1) {
-    return `$1 for 7 days, then $${total}/month. Cancel any time.`
+    return `$1 for 3 days, then $${total}/month. Cancel any time.`
   }
   if (plan.intervalMonths === 12) {
-    return `$1 for 7 days, then $${total} per year ($${monthly}/month). Cancel any time.`
+    return `$1 for 3 days, then $${total} per year ($${monthly}/month). Cancel any time.`
   }
-  return `$1 for 7 days, then $${total} every ${plan.intervalMonths} months ($${monthly}/month). Cancel any time.`
+  return `$1 for 3 days, then $${total} every ${plan.intervalMonths} months ($${monthly}/month). Cancel any time.`
 }
 
 export function resolvePricingCatalog(
