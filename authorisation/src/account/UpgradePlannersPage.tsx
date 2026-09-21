@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import OtoChrome from '@/account/OtoChrome'
 import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
@@ -15,7 +16,8 @@ import {
   money,
   plannersInCategory,
 } from '@/content/planners'
-import { buyOffer, recordUpsellEvent, recordUpsellFailure } from '@/lib/api'
+import { buyOffer, recordUpsellEvent } from '@/lib/api'
+import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
@@ -24,25 +26,6 @@ import { COMPANY } from '@/shared/company'
 const OFFER = PLANNER_BUNDLE_SLUG
 const COMPARE_COUNT = 2
 const NEXT = '/account/upgrade-mindora'
-
-const NOT_CHARGED = 'You have not been charged.'
-const CONTINUE = 'Continue without the planners — you can add them later from your dashboard.'
-const ERROR_COPY: Record<string, string> = {
-  cardDeclined: `Your bank declined that payment, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
-  insufficientFunds: `Your bank declined that payment for insufficient funds, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
-  authenticationRequired: `Your bank wants to verify this payment, which the saved card cannot do on its own. ${NOT_CHARGED} ${CONTINUE}`,
-  noCard: `We do not have a saved card on this account. ${NOT_CHARGED} ${CONTINUE}`,
-  noSavedCard: `We do not have a saved card on this account. ${NOT_CHARGED} ${CONTINUE}`,
-  lookupFailed: `We could not read your saved payment method just now — that is our end, not yours. ${NOT_CHARGED} ${CONTINUE}`,
-  notAuthenticated: `Your session has expired, so ${NOT_CHARGED.toLowerCase()} Sign in again to add the planners, or continue without them.`,
-  configError: `Something is wrong at our end and the payment could not be taken. ${NOT_CHARGED} Please continue without the planners for now — you can add them later, and nothing is lost.`,
-  invalidRequest: `We could not set up that payment — that is our end, not yours. ${NOT_CHARGED} Please continue without the planners for now; you can add them later.`,
-  unknown: `That payment did not go through, so ${NOT_CHARGED.toLowerCase()} ${CONTINUE}`,
-}
-
-function errorCopy(reason: string | undefined) {
-  return ERROR_COPY[reason ?? ''] ?? ERROR_COPY.unknown
-}
 
 const ACCENT = {
   success: {
@@ -82,13 +65,6 @@ function UnauthRedirect() {
     window.location.href = '/login'
   }, [])
   return <AuthSpinner />
-}
-
-function BounceWise() {
-  useEffect(() => {
-    window.location.href = NEXT
-  }, [])
-  return <AuthSpinner message="Almost there..." />
 }
 
 function BounceDashboard() {
@@ -247,6 +223,7 @@ function CheckIcon({ variant }: { variant: 'tick' | 'minus' | 'pdf' }) {
 }
 
 export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
+  const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
   const [skipping, setSkipping] = useState(false)
@@ -275,19 +252,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   useEffect(() => {
     if (state !== 'success') return
     const timer = setTimeout(() => {
-      window.onbeforeunload = null
-      window.location.href = NEXT
+      goOtoNext(navigate, NEXT)
     }, 2500)
     return () => clearTimeout(timer)
-  }, [state])
-
-  const recordFail = (reason: string, extra?: unknown) => {
-    track('upsell_purchase_failed', { offer: OFFER, reason })
-    if (extra) console.error('[PlannerBundle] Purchase failed:', reason, extra)
-    void recordUpsellFailure({ offerSlug: OFFER, reason, source: 'upgrade_path' }).catch((err) =>
-      console.error('[PlannerBundle] Failed to record failure:', err),
-    )
-  }
+  }, [state, navigate])
 
   const buy = async () => {
     if (busy || state === 'success') return
@@ -311,26 +279,18 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
         track('upsell_purchased', { offer: OFFER, alreadyPurchased: result.alreadyPurchased })
         return
       }
-      const reason = result.reason || 'configError'
-      setState('idle')
-      setError(errorCopy(reason))
-      recordFail(reason)
-    } catch (err) {
-      setState('idle')
-      setError(errorCopy('unknown'))
-      recordFail('unknown', err)
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: result.reason || 'unknown', next: NEXT })
+    } catch {
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: 'unknown', next: NEXT })
     }
   }
 
   const skip = () => {
     if (busy || state === 'success') return
     setSkipping(true)
-    const go = () => {
-      window.onbeforeunload = null
-      window.location.href = NEXT
-    }
     track('upsell_skipped', { offer: OFFER })
-    void recordUpsellEvent({ offerSlug: OFFER, action: 'skipped' }).then(go).catch(go)
+    void recordUpsellEvent({ offerSlug: OFFER, action: 'skipped' }).catch(() => {})
+    goOtoNext(navigate, NEXT)
   }
 
   if (state === 'success') return <SuccessScreen />
@@ -832,11 +792,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               </div>
             </div>
             {error ? (
-              <p
-                role="alert"
-                data-testid="planner-purchase-error"
-                className="mt-6 rounded-xl border border-sw-warning bg-sw-grey-light p-4 text-sm text-sw-dark"
-              >
+              <p role="alert" className="mt-6 text-sm text-sw-dark">
                 {error}
               </p>
             ) : null}
@@ -958,7 +914,6 @@ function PlannersGate() {
     return <AuthSpinner />
   }
   if (user?.onboardingComplete && !review) return <BounceDashboard />
-  if (!review && (status.status === 'purchased' || status.status === 'skipped')) return <BounceWise />
   return <PlannerOffer hasSavedCard={Boolean(hasCard)} />
 }
 

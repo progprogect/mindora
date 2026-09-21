@@ -39,7 +39,7 @@ function CreateAuthenticated({ name, plan }: { name: string; plan: string }) {
       return
     }
     if (user?.planTier) {
-      navigate('/account/upgrade', { replace: true })
+      navigate('/account/upgrade')
       return
     }
 
@@ -59,9 +59,9 @@ function CreateAuthenticated({ name, plan }: { name: string; plan: string }) {
         } catch {
           /* ignore */
         }
-        navigate('/account/upgrade', { replace: true })
+        navigate('/account/upgrade')
       })
-      .catch(() => navigate('/account/upgrade', { replace: true }))
+      .catch(() => navigate('/account/upgrade'))
   }, [user, started, name, plan, navigate, refresh])
 
   return <AuthSpinner message="Setting up your account…" />

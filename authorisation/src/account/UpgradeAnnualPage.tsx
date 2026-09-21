@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import OtoChrome from '@/account/OtoChrome'
 import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser } from '@/auth/session'
 import { recordUpsellEvent, switchToAnnual } from '@/lib/api'
+import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useSubscription, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { track } from '@/lib/track'
@@ -52,7 +54,7 @@ function OfferCard({
   onPurchase,
   onSkip,
 }: {
-  purchaseState: 'idle' | 'processing' | 'success' | 'failed'
+  purchaseState: 'idle' | 'processing' | 'success'
   errorMessage: string
   onPurchase: () => void
   onSkip: () => void
@@ -105,27 +107,7 @@ function OfferCard({
         </svg>
         <span className="text-sm text-sw-grey font-medium">Uses your saved card · trial stays in place</span>
       </div>
-      {purchaseState === 'failed' && errorMessage ? (
-        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 mb-3">
-          <p className="text-sm text-red-700 text-center font-medium">{errorMessage}</p>
-          <div className="flex gap-3 mt-3">
-            <button
-              type="button"
-              onClick={onPurchase}
-              className="flex-1 py-2.5 text-sm font-semibold text-sw-blue border border-sw-blue rounded-full hover:bg-sw-blue-light transition-colors"
-            >
-              Try Again
-            </button>
-            <button
-              type="button"
-              onClick={onSkip}
-              className="flex-1 py-2.5 text-sm font-semibold text-white bg-sw-dark rounded-full hover:opacity-90 transition-opacity"
-            >
-              Keep monthly →
-            </button>
-          </div>
-        </div>
-      ) : null}
+      {errorMessage ? <p className="text-sm text-red-700 text-center font-medium mb-3">{errorMessage}</p> : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
           By clicking above, you switch your membership to{' '}
@@ -172,7 +154,8 @@ function SuccessScreen() {
 }
 
 export function AnnualOffer() {
-  const [state, setState] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle')
+  const navigate = useNavigate()
+  const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
   const skipped = useRef(false)
   const viewed = useRef(false)
@@ -198,11 +181,10 @@ export function AnnualOffer() {
   useEffect(() => {
     if (state !== 'success') return
     const timer = setTimeout(() => {
-      window.onbeforeunload = null
-      window.location.href = NEXT
+      goOtoNext(navigate, NEXT)
     }, 3000)
     return () => clearTimeout(timer)
-  }, [state])
+  }, [state, navigate])
 
   const buy = async () => {
     if (state === 'processing' || state === 'success') return
@@ -225,13 +207,9 @@ export function AnnualOffer() {
         })
         return
       }
-      setState('failed')
-      setError(result.error || 'Could not switch to annual. Keep your monthly plan for now.')
-      track('upsell_purchase_failed', { offer: OFFER, error: result.error, fallback_shown: false })
-    } catch (err) {
-      setState('failed')
-      setError('Something went wrong. Keep your monthly plan for now.')
-      track('upsell_purchase_error', { offer: OFFER, error: String(err), fallback_shown: false })
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: result.reason || 'unknown', next: NEXT })
+    } catch {
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: 'unknown', next: NEXT })
     }
   }
 
@@ -240,8 +218,7 @@ export function AnnualOffer() {
     skipped.current = true
     void recordUpsellEvent({ offerSlug: OFFER, action: 'skipped' })
     track('upsell_skipped', { offer: OFFER })
-    window.onbeforeunload = null
-    window.location.href = NEXT
+    goOtoNext(navigate, NEXT)
   }
 
   if (state === 'success') return <SuccessScreen />
@@ -302,7 +279,6 @@ function AnnualGate() {
   }
   if (review) return <AnnualOffer />
   if (!hasCard) return <BounceWise />
-  if (status.status === 'purchased' || status.status === 'skipped') return <BounceWise />
   if (sub?.isYearly) return <BounceWise />
   return <AnnualOffer />
 }

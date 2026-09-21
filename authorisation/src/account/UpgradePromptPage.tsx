@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import OtoChrome from '@/account/OtoChrome'
 import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser } from '@/auth/session'
 import { buyOffer, recordUpsellEvent } from '@/lib/api'
+import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
@@ -138,13 +140,6 @@ function UnauthRedirect() {
   return <AuthSpinner />
 }
 
-function BounceNext() {
-  useEffect(() => {
-    window.location.href = NEXT
-  }, [])
-  return <AuthSpinner message="Almost there..." />
-}
-
 function BounceDashboard() {
   useEffect(() => {
     window.location.href = '/app/dashboard'
@@ -246,7 +241,7 @@ function OfferCard({
   onPurchase,
   onSkip,
 }: {
-  purchaseState: 'idle' | 'processing' | 'success' | 'failed'
+  purchaseState: 'idle' | 'processing' | 'success'
   errorMessage: string
   hasSavedCard: boolean
   onPurchase: () => void
@@ -323,27 +318,7 @@ function OfferCard({
           No Subscription
         </span>
       </div>
-      {purchaseState === 'failed' && errorMessage ? (
-        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 mb-3">
-          <p className="text-sm text-red-700 text-center font-medium">{errorMessage}</p>
-          <div className="flex gap-3 mt-3">
-            <button
-              type="button"
-              onClick={onPurchase}
-              className="flex-1 py-2.5 text-sm font-semibold text-sw-blue border border-sw-blue rounded-full hover:bg-sw-blue-light transition-colors"
-            >
-              Try Again
-            </button>
-            <button
-              type="button"
-              onClick={onSkip}
-              className="flex-1 py-2.5 text-sm font-semibold text-white bg-sw-dark rounded-full hover:opacity-90 transition-opacity"
-            >
-              Continue →
-            </button>
-          </div>
-        </div>
-      ) : null}
+      {errorMessage ? <p className="text-sm text-red-700 text-center font-medium mb-3">{errorMessage}</p> : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
           By clicking above, <span className="font-bold text-sw-dark">you agree to a one-time charge of ${PRICE}</span>
@@ -391,7 +366,8 @@ function SuccessScreen() {
 }
 
 export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
-  const [state, setState] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle')
+  const navigate = useNavigate()
+  const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
   const [sticky, setSticky] = useState(false)
   const offerRef = useRef<HTMLDivElement | null>(null)
@@ -438,11 +414,10 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
   useEffect(() => {
     if (state !== 'success') return
     const timer = setTimeout(() => {
-      window.onbeforeunload = null
-      window.location.href = NEXT
+      goOtoNext(navigate, NEXT)
     }, 3000)
     return () => clearTimeout(timer)
-  }, [state])
+  }, [state, navigate])
 
   const buy = async () => {
     if (state === 'processing' || state === 'success') return
@@ -470,13 +445,9 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
         })
         return
       }
-      setState('failed')
-      setError(result.error || 'Payment failed. Continue without the library for now — you can add it later.')
-      track('upsell_purchase_failed', { offer: OFFER, error: result.error, fallback_shown: false })
-    } catch (err) {
-      setState('failed')
-      setError('Something went wrong. Continue without the library for now — you can add it later.')
-      track('upsell_purchase_error', { offer: OFFER, error: String(err), fallback_shown: false })
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: result.reason || 'unknown', next: NEXT })
+    } catch {
+      onOtoChargeFailed({ navigate, offerSlug: OFFER, reason: 'unknown', next: NEXT })
     }
   }
 
@@ -485,8 +456,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
     skipped.current = true
     void recordUpsellEvent({ offerSlug: OFFER, action: 'skipped' })
     track('upsell_skipped', { offer: OFFER })
-    window.onbeforeunload = null
-    window.location.href = NEXT
+    goOtoNext(navigate, NEXT)
   }
 
   if (state === 'success') return <SuccessScreen />
@@ -739,8 +709,6 @@ function PromptGate() {
     return <AuthSpinner />
   }
   if (user?.onboardingComplete && !review) return <BounceDashboard />
-  if (review) return <PromptOffer hasSavedCard={Boolean(hasCard)} />
-  if (status.status === 'purchased' || status.status === 'skipped') return <BounceNext />
   return <PromptOffer hasSavedCard={Boolean(hasCard)} />
 }
 
