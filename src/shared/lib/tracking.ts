@@ -8,58 +8,15 @@ declare global {
   }
 }
 
-const META_PIXEL_ID =
-  (import.meta.env.VITE_META_PIXEL_ID as string | undefined) || '2880471412354159'
-
-/** PageView only on these quiz landings (ad traffic). Other routes stay untracked. */
-const META_PIXEL_PATHS = new Set(['/', '/quiz/28-day-ai-challenge', '/quiz/claude-ai-certification'])
 const POSTHOG_KEY = import.meta.env.VITE_POSTHOG_KEY as string | undefined
 const POSTHOG_HOST = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ?? 'https://us.i.posthog.com'
 const CAPI_RELAY_ENABLED = (import.meta.env.VITE_META_CAPI_ENABLED as string | undefined) === 'true'
 
 let initialized = false
 
-/** Injects the Meta Pixel base snippet (browser-side only, standard pattern). */
-function injectMetaPixel(pixelId: string) {
-  if (window.fbq) return
-
-  const fbq = function fbq(...args: unknown[]) {
-    const self = fbq as unknown as { callMethod?: (...a: unknown[]) => void; queue: unknown[] }
-    if (self.callMethod) {
-      self.callMethod(...args)
-    } else {
-      self.queue.push(args)
-    }
-  } as unknown as Window['fbq'] & { queue: unknown[]; loaded: boolean; version: string }
-
-  if (!window._fbq) window._fbq = fbq
-  ;(fbq as unknown as { queue: unknown[] }).queue = []
-  ;(fbq as unknown as { loaded: boolean }).loaded = true
-  ;(fbq as unknown as { version: string }).version = '2.0'
-  window.fbq = fbq
-
-  const script = document.createElement('script')
-  script.async = true
-  script.src = 'https://connect.facebook.net/en_US/fbevents.js'
-  document.head.appendChild(script)
-
-  window.fbq?.('init', pixelId)
-  window.fbq?.('track', 'PageView')
-}
-
-/** Loads Meta Pixel when the visitor is on a quiz landing that should be tracked. */
-export function ensureQuizMetaPixel(): void {
-  if (typeof window === 'undefined' || !META_PIXEL_ID) return
-  const path = window.location.pathname.replace(/\/$/, '') || '/'
-  if (!META_PIXEL_PATHS.has(path)) return
-  injectMetaPixel(META_PIXEL_ID)
-}
-
 export function initTracking(): void {
   if (initialized || typeof window === 'undefined') return
   initialized = true
-
-  ensureQuizMetaPixel()
 
   if (POSTHOG_KEY) {
     posthog.init(POSTHOG_KEY, {
