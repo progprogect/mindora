@@ -8,7 +8,11 @@ declare global {
   }
 }
 
-const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID as string | undefined
+const META_PIXEL_ID =
+  (import.meta.env.VITE_META_PIXEL_ID as string | undefined) || '2880471412354159'
+
+/** PageView only on these quiz landings (ad traffic). Other routes stay untracked. */
+const META_PIXEL_PATHS = new Set(['/', '/quiz/28-day-ai-challenge', '/quiz/claude-ai-certification'])
 const POSTHOG_KEY = import.meta.env.VITE_POSTHOG_KEY as string | undefined
 const POSTHOG_HOST = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ?? 'https://us.i.posthog.com'
 const CAPI_RELAY_ENABLED = (import.meta.env.VITE_META_CAPI_ENABLED as string | undefined) === 'true'
@@ -43,13 +47,19 @@ function injectMetaPixel(pixelId: string) {
   window.fbq?.('track', 'PageView')
 }
 
+/** Loads Meta Pixel when the visitor is on a quiz landing that should be tracked. */
+export function ensureQuizMetaPixel(): void {
+  if (typeof window === 'undefined' || !META_PIXEL_ID) return
+  const path = window.location.pathname.replace(/\/$/, '') || '/'
+  if (!META_PIXEL_PATHS.has(path)) return
+  injectMetaPixel(META_PIXEL_ID)
+}
+
 export function initTracking(): void {
   if (initialized || typeof window === 'undefined') return
   initialized = true
 
-  if (META_PIXEL_ID) {
-    injectMetaPixel(META_PIXEL_ID)
-  }
+  ensureQuizMetaPixel()
 
   if (POSTHOG_KEY) {
     posthog.init(POSTHOG_KEY, {

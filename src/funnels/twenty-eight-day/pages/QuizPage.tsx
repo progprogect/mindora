@@ -10,7 +10,7 @@ import {
   persistSalesStep,
 } from '@/funnels/twenty-eight-day/lib/quizStorage'
 import { buildProfile, getDominantEcho, getInterstitial1Variant } from '@/funnels/twenty-eight-day/lib/scoring'
-import { trackEvent, identifyUser } from '@/shared/lib/tracking'
+import { trackEvent, identifyUser, ensureQuizMetaPixel } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useUpdateLeadName } from '@/shared/lib/backend'
 import { rememberCheckoutEmail } from '@/shared/lib/checkoutSession'
 
@@ -46,6 +46,9 @@ function findProgressStep(index: number): number {
 
 export default function QuizPage() {
   const navigate = useNavigate()
+  useEffect(() => {
+    ensureQuizMetaPixel()
+  }, [])
   const [quizState, setQuizState] = useState<QuizState>(() => loadQuizState())
   const [salesStep, setSalesStep] = useState<number>(() => loadSalesStep())
   const [percentOff, setPercentOff] = useState<number>(50)

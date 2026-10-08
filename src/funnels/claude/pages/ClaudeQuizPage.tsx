@@ -12,7 +12,7 @@ import {
   CLAUDE_SALES_TOTAL_STEPS,
 } from '@/funnels/claude/lib/claudeQuizStorage'
 import { buildClaudeProfile, CLAUDE_PROFILE_SCORE_BY_LEVEL } from '@/funnels/claude/lib/claudeProfile'
-import { trackEvent, identifyUser } from '@/shared/lib/tracking'
+import { trackEvent, identifyUser, ensureQuizMetaPixel } from '@/shared/lib/tracking'
 import { useCaptureLead, useSaveSurveyData, useSetCheckoutOfferPercentAction, useUpdateLeadName } from '@/shared/lib/backend'
 import { getCheckoutSessionKey, rememberCheckoutEmail } from '@/shared/lib/checkoutSession'
 
@@ -47,6 +47,9 @@ const SPIN_WHEEL_DISCOUNT_PERCENT = 97
  */
 export default function ClaudeQuizPage() {
   const navigate = useNavigate()
+  useEffect(() => {
+    ensureQuizMetaPixel()
+  }, [])
   const [quizState, setQuizState] = useState<ClaudeQuizState>(() => loadClaudeQuizState())
   const [salesStep, setSalesStep] = useState<number>(() => loadClaudeSalesStep())
   const [percentOff, setPercentOff] = useState<number>(50)
