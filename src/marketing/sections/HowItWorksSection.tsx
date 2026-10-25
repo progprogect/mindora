@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom'
-import { SYSTEM_STEPS } from '@/marketing/data/home'
+import { HOME_COPY, homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import { ROUTES } from '@/marketing/data/nav'
 
-function StepIcon({ icon, color }: { icon: (typeof SYSTEM_STEPS)[number]['icon']; color: string }) {
+function StepIcon({
+  icon,
+  color,
+}: {
+  icon: (typeof HOME_COPY.en.systemSteps)[number]['icon']
+  color: string
+}) {
   if (icon === 'shield') {
     return (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
@@ -65,21 +73,25 @@ function StepIcon({ icon, color }: { icon: (typeof SYSTEM_STEPS)[number]['icon']
 }
 
 export default function HowItWorksSection() {
+  const { locale } = useI18n()
+  const { systemSteps } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).howItWorks
+
   return (
     <section id="how-it-works" className="scroll-mt-20 bg-sw-grey-light/30 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="mb-14 text-center">
-          <p className="mb-3 text-sm font-semibold tracking-widest text-sw-blue uppercase">Our Learning System</p>
+          <p className="mb-3 text-sm font-semibold tracking-widest text-sw-blue uppercase">{copy.eyebrow}</p>
           <h2 className="mb-3 text-3xl font-extrabold text-sw-dark sm:text-4xl">
-            Every Lesson Follows the Same Proven System
+            {copy.title}
           </h2>
           <p className="mx-auto max-w-xl text-lg text-sw-grey">
-            Designed for real change — not just information. Every step is purposeful.
+            {copy.subtitle}
           </p>
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SYSTEM_STEPS.map((step) => (
+          {systemSteps.map((step) => (
             <article
               key={step.num}
               className="relative rounded-2xl border border-sw-grey-border bg-white p-6 transition-shadow hover:shadow-md"
@@ -115,12 +127,12 @@ export default function HowItWorksSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-6 text-base text-sw-grey">Ready to experience a lesson that actually changes something?</p>
+          <p className="mb-6 text-base text-sw-grey">{copy.ctaLead}</p>
           <Link
             to={ROUTES.quizSuccess}
             className="inline-block rounded-full bg-sw-blue px-8 py-4 font-bold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-lg hover:shadow-sw-blue/25"
           >
-            Start Your Roadmap →
+            {copy.cta}
           </Link>
         </div>
       </div>

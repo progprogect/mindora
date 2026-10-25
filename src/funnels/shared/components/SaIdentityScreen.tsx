@@ -1,5 +1,7 @@
 import QuizTermsFooter from '@/funnels/shared/components/QuizTermsFooter'
 import type { IdentitySaScreen } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface SaIdentityScreenProps {
   screen: IdentitySaScreen
@@ -7,6 +9,8 @@ interface SaIdentityScreenProps {
 }
 
 export default function SaIdentityScreen({ screen, onSelect }: SaIdentityScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const headlineLines = screen.headline.split('\n')
 
   return (
@@ -17,7 +21,7 @@ export default function SaIdentityScreen({ screen, onSelect }: SaIdentityScreenP
           style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.18)' }}
         >
           <span className="text-base leading-none">⭐⭐⭐⭐⭐</span>
-          <span className="text-xs font-semibold leading-none text-sw-blue">100,000+ people already transformed</span>
+          <span className="text-xs font-semibold leading-none text-sw-blue">{ui.saSocialProof}</span>
         </div>
       </div>
 

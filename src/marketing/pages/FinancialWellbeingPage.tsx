@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import FwFinder from '@/marketing/components/FwFinder'
 import FwLibrary from '@/marketing/components/FwLibrary'
 import {
-  FEATURED_PATHS,
-  FW_NAV,
-  FW_STATS,
-  FW_TESTIMONIALS,
-  HOW_POINTS,
+  financialWellbeingCopy,
   PATH_GRADIENTS,
+  syncFinancialWellbeingLocale,
 } from '@/marketing/data/financialWellbeing'
-import { FINAL_TRUST } from '@/marketing/data/home'
+import { homeCopy } from '@/marketing/data/home'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import useReveal from '@/marketing/hooks/useReveal'
+
+type FwContent = ReturnType<typeof financialWellbeingCopy>
+type PageCopy = FwContent['page']
 
 function Chevron() {
   return (
@@ -29,35 +30,36 @@ function Chevron() {
   )
 }
 
-function Breadcrumb() {
+function Breadcrumb({ fw }: { fw: FwContent }) {
+  const page = fw.page
   return (
     <div className="sticky top-16 z-40 border-b border-sw-grey-border bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center gap-2 py-2 text-xs text-sw-grey">
           <Link to={ROUTES.home} className="transition-colors hover:text-sw-blue">
-            Home
+            {page.breadcrumbHome}
           </Link>
           <Chevron />
-          <span className="font-medium text-sw-dark">Learn</span>
+          <span className="font-medium text-sw-dark">{page.breadcrumbLearn}</span>
           <Chevron />
-          <span className="font-medium text-sw-blue">Financial Wellbeing</span>
+          <span className="font-medium text-sw-blue">{page.breadcrumbCurrent}</span>
         </div>
         <div
           className="flex items-center gap-2 overflow-x-auto pb-3"
           style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}
-          aria-label="Learning categories"
+          aria-label={page.categoriesAria}
         >
-          {FW_NAV.map((item) =>
+          {fw.fwNav.map((item) =>
             item.active ? (
               <span
-                key={item.label}
+                key={item.href}
                 className="shrink-0 rounded-full bg-sw-amber px-4 py-1.5 text-sm font-semibold text-white"
               >
                 {item.label}
               </span>
             ) : (
               <Link
-                key={item.label}
+                key={item.href}
                 to={item.href}
                 className="shrink-0 rounded-full border border-sw-grey-border px-4 py-1.5 text-sm font-medium text-sw-grey transition-all hover:bg-sw-grey-light hover:text-sw-dark"
               >
@@ -71,7 +73,8 @@ function Breadcrumb() {
   )
 }
 
-function Hero() {
+function Hero({ fw }: { fw: FwContent }) {
+  const page = fw.page
   const ref = useReveal()
   return (
     <section
@@ -103,32 +106,32 @@ function Hero() {
           style={{ background: 'rgba(245,158,11,0.15)', borderColor: 'rgba(245,158,11,0.3)' }}
         >
           <span className="text-xs font-semibold tracking-wide uppercase" style={{ color: '#F59E0B' }}>
-            Financial Wellbeing
+            {page.heroKicker}
           </span>
           <span className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            29 courses
+            {page.heroCourses}
           </span>
         </div>
         <h1 className="reveal reveal-delay-1 mb-4 max-w-3xl text-3xl leading-tight font-extrabold text-white sm:text-4xl lg:text-5xl">
-          Build Real <span style={{ color: '#F59E0B' }}>Financial Confidence</span>
-          <br className="hidden sm:block" /> — Not Just Financial Knowledge.
+          {page.heroH1Prefix}
+          <span style={{ color: '#F59E0B' }}>{page.heroH1Accent}</span>
+          <br className="hidden sm:block" />
+          {page.heroH1Suffix}
         </h1>
         <p
           className="reveal reveal-delay-2 mb-4 max-w-2xl text-base leading-relaxed sm:text-lg"
           style={{ color: 'rgba(255,255,255,0.6)' }}
         >
-          Bite-sized courses on money habits, earning more, budgeting, and the psychology that drives
-          every financial decision you make.
+          {page.heroBody}
         </p>
         <p
           className="reveal reveal-delay-2 mb-8 inline-block rounded-lg px-3 py-2 text-xs"
           style={{ color: 'rgba(255,255,255,0.35)', background: 'rgba(255,255,255,0.04)' }}
         >
-          📚 Education only — not financial advice. Always consult a qualified professional for personal
-          financial decisions.
+          {page.heroDisclaimer}
         </p>
         <div className="reveal reveal-delay-3 mb-8 grid max-w-xl grid-cols-2 gap-4 sm:grid-cols-4">
-          {FW_STATS.map((stat) => (
+          {fw.fwStats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl font-extrabold text-white tabular-nums">{stat.value}</div>
               <div className="mt-0.5 text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
@@ -143,14 +146,14 @@ function Hero() {
             className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-center text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-lg"
             style={{ background: 'linear-gradient(135deg, #D97706 0%, #F59E0B 100%)' }}
           >
-            Find My Financial Path →
+            {page.ctaFindPath}
           </a>
           <a
             href="#course-library"
             className="inline-flex items-center justify-center gap-2 rounded-full border px-8 py-4 text-center text-base font-semibold text-white transition-all"
             style={{ background: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.15)' }}
           >
-            Browse All 29 Courses
+            {page.ctaBrowse}
           </a>
         </div>
       </div>
@@ -158,23 +161,22 @@ function Hero() {
   )
 }
 
-function FeaturedPaths() {
+function FeaturedPaths({ fw }: { fw: FwContent }) {
+  const page = fw.page
   const ref = useReveal(0.05)
-  const featured = FEATURED_PATHS[0]
-  const rest = FEATURED_PATHS.slice(1)
+  const featured = fw.featuredPaths[0]
+  const rest = fw.featuredPaths.slice(1)
   return (
     <section ref={ref} className="overflow-hidden bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="reveal mb-10 text-center">
           <p className="mb-3 text-sm font-semibold tracking-widest text-sw-amber uppercase">
-            Featured Paths
+            {page.featuredEyebrow}
           </p>
           <h2 className="mb-3 text-3xl font-extrabold text-sw-dark sm:text-4xl">
-            Your Fastest Route to Financial Confidence
+            {page.featuredTitle}
           </h2>
-          <p className="mx-auto max-w-xl text-lg text-sw-grey">
-            Curated learning paths that take you from where you are now to where you want to be.
-          </p>
+          <p className="mx-auto max-w-xl text-lg text-sw-grey">{page.featuredSubtitle}</p>
         </div>
         <div
           className="reveal reveal-delay-1 relative mb-6 overflow-hidden rounded-2xl shadow-lg"
@@ -193,7 +195,7 @@ function FeaturedPaths() {
             <div className="flex-1">
               <div className="mb-2 flex items-center gap-2">
                 <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold tracking-wide text-white uppercase">
-                  Most Popular
+                  {page.mostPopular}
                 </span>
               </div>
               <h3 className="mb-2 text-xl font-extrabold text-white sm:text-2xl">{featured.title}</h3>
@@ -201,8 +203,8 @@ function FeaturedPaths() {
                 {featured.description}
               </p>
               <div className="flex items-center gap-4 text-xs font-medium text-white/60">
-                <span>📚 {featured.lessons} lessons</span>
-                <span>⏱ {featured.weeks} weeks</span>
+                <span>📚 {featured.lessons} {page.lessons}</span>
+                <span>⏱ {featured.weeks} {page.weeks}</span>
               </div>
             </div>
             <div className="shrink-0">
@@ -210,7 +212,7 @@ function FeaturedPaths() {
                 type="button"
                 className="rounded-xl border border-white/30 bg-white/20 px-6 py-3 text-sm font-bold whitespace-nowrap text-white transition-all hover:bg-white/30"
               >
-                Start This Path →
+                {page.startPath}
               </button>
             </div>
           </div>
@@ -235,7 +237,7 @@ function FeaturedPaths() {
                       {path.title}
                     </h3>
                     <p className="mt-0.5 text-xs text-sw-grey">
-                      {path.lessons} lessons · {path.weeks} weeks
+                      {path.lessons} {page.lessons} · {path.weeks} {page.weeks}
                     </p>
                   </div>
                 </div>
@@ -249,24 +251,23 @@ function FeaturedPaths() {
   )
 }
 
-function Testimonials() {
+function Testimonials({ fw }: { fw: FwContent }) {
+  const page = fw.page
   const ref = useReveal()
   return (
     <section ref={ref} className="overflow-hidden bg-sw-dark py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="reveal mb-10 text-center">
           <p className="mb-3 text-sm font-semibold tracking-widest text-sw-amber uppercase">
-            Real Results
+            {page.testimonialsEyebrow}
           </p>
           <h2 className="mb-3 text-2xl font-extrabold text-white sm:text-3xl">
-            Real People. Real Financial Wins.
+            {page.testimonialsTitle}
           </h2>
-          <p className="mx-auto max-w-lg text-base text-white/50">
-            Not overnight miracles — real, sustainable change built one lesson at a time.
-          </p>
+          <p className="mx-auto max-w-lg text-base text-white/50">{page.testimonialsSubtitle}</p>
         </div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-          {FW_TESTIMONIALS.map((item, i) => (
+          {fw.testimonials.map((item, i) => (
             <div
               key={item.name}
               className={`reveal reveal-delay-${i + 1} rounded-2xl border border-white/10 p-6`}
@@ -301,17 +302,15 @@ function Testimonials() {
           ))}
         </div>
         <div className="reveal mt-10 text-center">
-          <p className="text-xs text-white/30">
-            Testimonials represent individual experiences. Results vary. MindoraAcademy provides financial
-            education only, not personalised financial advice.
-          </p>
+          <p className="text-xs text-white/30">{page.testimonialsFooter}</p>
         </div>
       </div>
     </section>
   )
 }
 
-function HowItWorks() {
+function HowItWorks({ fw }: { fw: FwContent }) {
+  const page = fw.page
   const ref = useReveal()
   return (
     <section ref={ref} className="overflow-hidden bg-sw-grey-light py-16 sm:py-20">
@@ -319,17 +318,16 @@ function HowItWorks() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div>
             <p className="reveal mb-3 text-sm font-semibold tracking-widest text-sw-amber uppercase">
-              How It Works
+              {page.howEyebrow}
             </p>
             <h2 className="reveal reveal-delay-1 mb-4 text-3xl leading-tight font-extrabold text-sw-dark sm:text-4xl">
-              Implementation, Not Just Information
+              {page.howTitle}
             </h2>
             <p className="reveal reveal-delay-2 mb-6 text-base leading-relaxed text-sw-grey">
-              Every lesson ends with a single practical action — not homework, just the one next step
-              that moves you forward. No theory without practice.
+              {page.howBody}
             </p>
             <ul className="reveal reveal-delay-3 space-y-3">
-              {HOW_POINTS.map((item) => (
+              {fw.howPoints.map((item) => (
                 <li key={item.text} className="flex items-start gap-3">
                   <span className="mt-0.5 shrink-0 text-xl">{item.icon}</span>
                   <span className="text-sm leading-snug text-sw-grey">{item.text}</span>
@@ -341,42 +339,33 @@ function HowItWorks() {
             <div className="overflow-hidden rounded-2xl border border-sw-grey-border bg-white shadow-xl">
               <div className="flex items-center gap-3 border-b border-sw-grey-border p-4">
                 <div className="h-2 w-2 rounded-full bg-sw-amber" />
-                <span className="text-xs font-medium text-sw-grey">The Money Habits System</span>
+                <span className="text-xs font-medium text-sw-grey">{page.mockCourse}</span>
                 <span className="ml-auto rounded-full bg-sw-grey-light px-2.5 py-1 text-xs font-semibold text-sw-grey">
-                  Day 7 of 21
+                  {page.mockProgress}
                 </span>
               </div>
               <div className="p-5">
                 <div className="mb-1 flex items-center gap-2">
                   <span className="text-xs font-bold tracking-wide text-sw-amber uppercase">
-                    Lesson 7
+                    {page.mockLesson}
                   </span>
                   <span className="text-xs text-sw-grey">·</span>
-                  <span className="text-xs text-sw-grey">8 min</span>
+                  <span className="text-xs text-sw-grey">{page.mockDuration}</span>
                 </div>
                 <h3 className="mb-3 text-lg leading-tight font-extrabold text-sw-dark">
-                  The 24-Hour Pause Rule
+                  {page.mockLessonTitle}
                 </h3>
-                <p className="mb-5 text-sm leading-relaxed text-sw-grey">
-                  Most impulsive spending happens in a gap between impulse and action. Learn the one
-                  habit that naturally closes that gap — without willpower.
-                </p>
+                <p className="mb-5 text-sm leading-relaxed text-sw-grey">{page.mockLessonBody}</p>
                 <div
                   className="mb-4 rounded-xl border-l-4 p-3"
                   style={{ background: 'rgba(245,158,11,0.06)', borderColor: '#F59E0B' }}
                 >
-                  <p className="mb-1 text-xs font-semibold text-sw-amber">💡 Today&apos;s Key Insight</p>
-                  <p className="text-sm leading-snug text-sw-dark">
-                    &quot;The urge to spend is usually about a feeling, not the thing. Wait 24 hours and
-                    ask: what am I actually trying to solve?&quot;
-                  </p>
+                  <p className="mb-1 text-xs font-semibold text-sw-amber">{page.mockInsightLabel}</p>
+                  <p className="text-sm leading-snug text-sw-dark">{page.mockInsight}</p>
                 </div>
                 <div className="mb-4 rounded-xl p-3" style={{ background: '#F0FDF4' }}>
-                  <p className="mb-1 text-xs font-semibold text-green-700">✅ Your One Action Today</p>
-                  <p className="text-sm leading-snug text-sw-dark">
-                    Add a 24-hour rule to your phone&apos;s shopping apps — move the icons to a folder
-                    labelled &quot;Tomorrow&apos;s Decision.&quot;
-                  </p>
+                  <p className="mb-1 text-xs font-semibold text-green-700">{page.mockActionLabel}</p>
+                  <p className="text-sm leading-snug text-sw-dark">{page.mockAction}</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 flex-1 overflow-hidden rounded-full bg-sw-grey-light">
@@ -389,7 +378,7 @@ function HowItWorks() {
                     />
                   </div>
                   <span className="text-xs font-medium whitespace-nowrap text-sw-grey">
-                    33% complete
+                    {page.mockComplete}
                   </span>
                 </div>
               </div>
@@ -399,7 +388,7 @@ function HowItWorks() {
                   className="w-full rounded-xl py-3 text-sm font-bold text-white transition-all"
                   style={{ background: 'linear-gradient(135deg, #D97706, #F59E0B)' }}
                 >
-                  Complete Lesson &amp; Continue →
+                  {page.mockCta}
                 </button>
               </div>
             </div>
@@ -410,8 +399,11 @@ function HowItWorks() {
   )
 }
 
-function FinalCta() {
+function FinalCta({ page }: { page: PageCopy }) {
   const ref = useReveal()
+  const { locale } = useI18n()
+  const { finalTrust } = homeCopy(locale)
+
   return (
     <section ref={ref} className="relative overflow-hidden bg-sw-dark py-24 sm:py-40">
       <div className="pointer-events-none absolute top-1/2 left-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-sw-blue/10 blur-3xl" />
@@ -431,24 +423,23 @@ function FinalCta() {
         <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5">
           <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-sw-blue" />
           <span className="text-xs font-semibold tracking-wide text-white/80 uppercase">
-            Your journey starts today
+            {page.finalBadge}
           </span>
         </div>
         <h2 className="mb-6 text-4xl leading-[1.08] font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-          The person you want to be
+          {page.finalTitleLine1}
           <br />
-          <span className="text-sw-blue">is already inside you.</span>
+          <span className="text-sw-blue">{page.finalTitleLine2}</span>
         </h2>
         <p className="reveal reveal-delay-1 mx-auto mb-10 max-w-xl text-lg leading-relaxed text-white/50 sm:text-xl">
-          All you need is the right system to bring them out. It starts with a 60-second quiz. It ends
-          with the life you&apos;ve been working towards.
+          {page.finalBody}
         </p>
         <div className="reveal reveal-delay-2 mb-10 flex flex-col items-center gap-3">
           <Link
             to={ROUTES.quizSuccess}
             className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-10 py-5 text-lg font-bold text-sw-blue shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/90 hover:shadow-2xl sm:w-auto"
           >
-            Start Your Success Quiz
+            {page.finalCta}
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path
                 d="M3 9h12M10 5l4 4-4 4"
@@ -459,10 +450,10 @@ function FinalCta() {
               />
             </svg>
           </Link>
-          <span className="text-sm text-white/30">60 seconds · Instant results</span>
+          <span className="text-sm text-white/30">{page.finalHint}</span>
         </div>
         <div className="reveal reveal-delay-3 flex flex-wrap items-center justify-center gap-5">
-          {FINAL_TRUST.map((item) => (
+          {finalTrust.map((item) => (
             <div key={item.label} className="flex items-center gap-1.5">
               <span className="text-base">{item.emoji}</span>
               <span className="text-sm font-medium text-white/40">{item.label}</span>
@@ -475,7 +466,14 @@ function FinalCta() {
 }
 
 export default function FinancialWellbeingPage() {
-  usePageTitle('Financial Wellbeing Courses — MindoraAcademy.com | Build Real Financial Confidence')
+  const { locale } = useI18n()
+  const fw = financialWellbeingCopy(locale)
+
+  usePageTitle(fw.page.pageTitle)
+  useLayoutEffect(() => {
+    syncFinancialWellbeingLocale(locale)
+  }, [locale])
+
   const [showSticky, setShowSticky] = useState(false)
 
   useEffect(() => {
@@ -487,14 +485,14 @@ export default function FinancialWellbeingPage() {
 
   return (
     <>
-      <Breadcrumb />
-      <Hero />
+      <Breadcrumb fw={fw} />
+      <Hero fw={fw} />
       <FwFinder />
-      <FeaturedPaths />
-      <Testimonials />
+      <FeaturedPaths fw={fw} />
+      <Testimonials fw={fw} />
       <FwLibrary />
-      <HowItWorks />
-      <FinalCta />
+      <HowItWorks fw={fw} />
+      <FinalCta page={fw.page} />
       <div
         className={`fixed right-0 bottom-0 left-0 z-50 border-t border-sw-grey-border bg-white px-4 py-3 transition-transform duration-300 sm:hidden ${
           showSticky ? 'translate-y-0' : 'translate-y-full'
@@ -506,7 +504,7 @@ export default function FinancialWellbeingPage() {
           className="block w-full rounded-full py-3.5 text-center text-sm font-bold text-white transition-colors"
           style={{ background: 'linear-gradient(135deg, #D97706, #F59E0B)' }}
         >
-          Find My Financial Path →
+          {fw.page.stickyCta}
         </a>
       </div>
     </>

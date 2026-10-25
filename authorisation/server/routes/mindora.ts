@@ -21,7 +21,7 @@ mindoraRoutes.get('/threads', requireAuth, async (c) => {
 
 mindoraRoutes.get('/threads/:id', requireAuth, async (c) => {
   const found = await getThread(c.get('userId'), c.req.param('id'))
-  if (!found) return c.json({ error: 'Not found' }, 404)
+  if (!found) return c.json({ error: 'Not found', code: 'not_found' }, 404)
   return c.json({
     id: found.thread.id,
     title: found.thread.title,
@@ -36,9 +36,12 @@ mindoraRoutes.get('/threads/:id', requireAuth, async (c) => {
 
 mindoraRoutes.post('/messages', requireAuth, async (c) => {
   const parsed = sendSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const result = await sendMindoraMessage({ userId: c.get('userId'), ...parsed.data })
-  if ('error' in result && result.error) return c.json({ error: result.error }, 400)
+  if ('error' in result && result.error) {
+    const code = result.error === 'Thread not found' ? 'thread_not_found' : 'could_not_start_chat'
+    return c.json({ error: result.error, code }, 400)
+  }
   if (result.locked) return c.json({ locked: true, quota: result.quota }, 402)
   return c.json(result)
 })

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { initialsFromName } from '@/app/mockUser'
-import { PROFILE_FOCUS, PROFILE_PACES } from '@/content/lms'
+import { focusLabel, paceDesc, paceLabel, PROFILE_FOCUS, PROFILE_PACES } from '@/content/lms'
 import { useCurrentUser, useSession } from '@/auth/session'
 import {
   apiErrorMessage,
@@ -10,6 +10,7 @@ import {
   updateName,
   updatePreferences,
 } from '@/lib/api'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useProgress, useSubscription } from '@/lib/lmsQueries'
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
@@ -33,15 +34,16 @@ function memberSince(joinDate?: number) {
   return new Date(joinDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
-function statusLabel(status: string) {
-  if (status === 'trialing') return 'Free Trial'
-  if (status === 'active') return 'Active'
-  if (status === 'canceled') return 'Cancelled'
-  if (PAST_DUE.has(status)) return 'Past Due'
+function statusLabel(status: string, t: (key: string) => string) {
+  if (status === 'trialing') return t('app.profile.statusTrialing')
+  if (status === 'active') return t('app.profile.statusActive')
+  if (status === 'canceled') return t('app.profile.statusCanceled')
+  if (PAST_DUE.has(status)) return t('app.profile.statusPastDue')
   return status
 }
 
 export default function ProfilePage() {
+  const { t, locale } = useI18n()
   const user = useCurrentUser()
   const { refresh, signOut } = useSession()
   const navigate = useNavigate()
@@ -63,7 +65,7 @@ export default function ProfilePage() {
     )
   }
 
-  const name = user?.name || 'Friend'
+  const name = user?.name || t('app.common.friend')
   const initials = initialsFromName(name)
   const status = sub?.status || 'trialing'
   const pastDue = PAST_DUE.has(status)
@@ -102,7 +104,7 @@ export default function ProfilePage() {
       const { url } = await openBillingPortal()
       window.location.href = url
     } catch (error) {
-      setBillingError(apiErrorMessage(error, 'Could not open billing portal.'))
+      setBillingError(apiErrorMessage(error, t, t('app.profile.billingPortalError')))
     } finally {
       setBusy(false)
     }
@@ -114,12 +116,10 @@ export default function ProfilePage() {
     try {
       await cancelSubscription()
       setCancelOpen(false)
-      setCancelMsg(
-        "You'll retain full access until the end of your current billing period. A confirmation email is on its way.",
-      )
+      setCancelMsg(t('app.profile.cancelBanner'))
       await Promise.all([refresh({ silent: true }), reloadSub()])
     } catch (error) {
-      setBillingError(apiErrorMessage(error, 'Could not cancel this subscription.'))
+      setBillingError(apiErrorMessage(error, t, t('app.profile.cancelSubError')))
     } finally {
       setBusy(false)
     }
@@ -130,14 +130,14 @@ export default function ProfilePage() {
     : status === 'trialing' || status === 'active'
       ? 'text-sw-success'
       : 'text-sw-grey'
-  const periodLabel = status === 'trialing' ? 'trial ends' : 'renews'
+  const periodLabel = status === 'trialing' ? t('app.profile.trialEnds') : t('app.profile.renews')
   const accessUntil = formatAccessUntil(sub?.currentPeriodEnd ?? null) ?? renew
 
   return (
     <div className="min-h-screen bg-sw-grey-light pb-28">
       <div className="bg-white border-b border-sw-grey-border px-4 pt-4 pb-4 sticky top-0 z-10">
-        <h1 className="text-xl font-bold text-sw-dark">My Profile</h1>
-        <p className="text-xs text-sw-grey mt-0.5">Manage your account &amp; preferences</p>
+        <h1 className="text-xl font-bold text-sw-dark">{t('app.profile.title')}</h1>
+        <p className="text-xs text-sw-grey mt-0.5">{t('app.profile.subtitle')}</p>
       </div>
       <div className="max-w-2xl mx-auto px-4 py-5 space-y-5">
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">
@@ -154,7 +154,7 @@ export default function ProfilePage() {
                     className="flex-1 border border-sw-grey-border rounded-xl px-3 py-2 text-sm font-bold"
                   />
                   <button type="button" onClick={() => void saveName()} className="text-xs font-semibold text-sw-blue">
-                    Save
+                    {t('app.common.save')}
                   </button>
                 </div>
               ) : (
@@ -168,25 +168,27 @@ export default function ProfilePage() {
                       setEditing(true)
                     }}
                   >
-                    Edit
+                    {t('app.common.edit')}
                   </button>
                 </div>
               )}
               <p className="text-sm text-sw-grey truncate mt-0.5">{user?.email}</p>
               {user?.joinDate ? (
-                <p className="text-xs text-sw-grey mt-1">Member since {memberSince(user.joinDate)}</p>
+                <p className="text-xs text-sw-grey mt-1">
+                  {t('app.profile.memberSince').replace('{date}', memberSince(user.joinDate) ?? '')}
+                </p>
               ) : null}
             </div>
           </div>
         </div>
 
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">
-          <h2 className="text-sm font-bold text-sw-dark mb-3">My Subscription</h2>
+          <h2 className="text-sm font-bold text-sw-dark mb-3">{t('app.profile.mySubscription')}</h2>
           <div className="flex items-center justify-between mb-3">
             <div>
-              <p className="text-sm font-semibold text-sw-dark">MindoraAcademy Pro</p>
+              <p className="text-sm font-semibold text-sw-dark">{t('app.profile.planName')}</p>
               <p className={`text-xs font-bold mt-0.5 ${statusClass}`}>
-                {statusLabel(status)}
+                {statusLabel(status, t)}
                 {renew ? <span className="text-sw-grey font-medium"> · {periodLabel} {renew}</span> : null}
               </p>
             </div>
@@ -199,23 +201,23 @@ export default function ProfilePage() {
                   ✓
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-sm font-bold text-sw-dark">Subscription cancelled</p>
+                  <p className="text-sm font-bold text-sw-dark">{t('app.profile.subscriptionCancelled')}</p>
                   <p className="text-xs text-sw-grey mt-1">{cancelMsg}</p>
                 </div>
                 <button
                   type="button"
-                  aria-label="Dismiss"
+                  aria-label={t('app.common.dismiss')}
                   onClick={() => setCancelMsg(null)}
                   className="text-xs font-semibold text-sw-blue"
                 >
-                  Dismiss
+                  {t('app.common.dismiss')}
                 </button>
               </div>
             </div>
           ) : null}
           {!cancellable ? (
             <p className="mb-3 text-sm text-sw-grey" data-testid="billing-unlinked">
-              Billing isn&apos;t linked on this account, so Manage and Cancel aren&apos;t available.
+              {t('app.profile.billingUnlinked')}
             </p>
           ) : null}
           {billingError && !cancelOpen ? (
@@ -229,15 +231,18 @@ export default function ProfilePage() {
             disabled={busy || !cancellable}
             className="w-full bg-sw-blue text-white text-sm font-bold rounded-xl py-3 hover:bg-sw-blue-hover transition-colors disabled:opacity-50"
           >
-            Manage Subscription
+            {t('app.profile.manageSubscription')}
           </button>
-          <p className="text-[11px] text-sw-grey text-center mt-2">Update payment method or view invoices</p>
+          <p className="text-[11px] text-sw-grey text-center mt-2">{t('app.profile.manageSubHint')}</p>
           {sub?.cancelAtPeriodEnd ? (
             <p
               className="mt-3 rounded-xl bg-sw-amber/10 px-4 py-2.5 text-center text-sm font-semibold text-sw-dark"
               data-testid="cancel-scheduled"
             >
-              Cancellation scheduled — access until {accessUntil ?? 'the end of the period'}
+              {t('app.profile.cancelScheduled').replace(
+                '{date}',
+                accessUntil ?? t('app.profile.cancelScheduledFallback'),
+              )}
             </p>
           ) : null}
           {cancellable && !sub?.cancelAtPeriodEnd && status !== 'canceled' ? (
@@ -250,15 +255,15 @@ export default function ProfilePage() {
               }}
               className="w-full mt-3 border-2 border-sw-grey-border text-sm font-semibold text-sw-grey rounded-xl py-2.5 hover:border-red-300 hover:text-red-500 transition-colors"
             >
-              Cancel Subscription
+              {t('app.profile.cancelSubscription')}
             </button>
           ) : null}
         </div>
 
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">
-          <h2 className="text-sm font-bold text-sw-dark mb-4">Learning Preferences</h2>
+          <h2 className="text-sm font-bold text-sw-dark mb-4">{t('app.profile.learningPreferences')}</h2>
           <div className="mb-5">
-            <label className="text-xs font-semibold text-sw-grey uppercase tracking-wide mb-2 block">Daily Pace</label>
+            <label className="text-xs font-semibold text-sw-grey uppercase tracking-wide mb-2 block">{t('app.profile.dailyPace')}</label>
             <div className="grid grid-cols-3 gap-2">
               {PROFILE_PACES.map((pace) => {
                 const on = user?.pacePreference === pace.value
@@ -271,15 +276,15 @@ export default function ProfilePage() {
                       on ? 'border-sw-blue bg-sw-blue-light' : 'border-sw-grey-border bg-white hover:border-sw-blue/30'
                     }`}
                   >
-                    <p className={`text-xs font-bold ${on ? 'text-sw-blue' : 'text-sw-dark'}`}>{pace.label}</p>
-                    <p className="text-[10px] text-sw-grey mt-0.5">{pace.desc}</p>
+                    <p className={`text-xs font-bold ${on ? 'text-sw-blue' : 'text-sw-dark'}`}>{paceLabel(locale, pace.value)}</p>
+                    <p className="text-[10px] text-sw-grey mt-0.5">{paceDesc(locale, pace.value)}</p>
                   </button>
                 )
               })}
             </div>
           </div>
           <div>
-            <label className="text-xs font-semibold text-sw-grey uppercase tracking-wide mb-2 block">Focus Category</label>
+            <label className="text-xs font-semibold text-sw-grey uppercase tracking-wide mb-2 block">{t('app.profile.focusCategory')}</label>
             <div className="grid grid-cols-2 gap-2">
               {PROFILE_FOCUS.map((item) => {
                 const on = user?.focusCategory === item.value
@@ -292,7 +297,7 @@ export default function ProfilePage() {
                       on ? 'border-sw-blue bg-sw-blue-light' : 'border-sw-grey-border bg-white hover:border-sw-blue/30'
                     }`}
                   >
-                    <p className={`text-xs font-bold ${on ? 'text-sw-blue' : 'text-sw-dark'}`}>{item.label}</p>
+                    <p className={`text-xs font-bold ${on ? 'text-sw-blue' : 'text-sw-dark'}`}>{focusLabel(locale, item.value)}</p>
                   </button>
                 )
               })}
@@ -301,15 +306,15 @@ export default function ProfilePage() {
         </div>
 
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">
-          <h2 className="text-sm font-bold text-sw-dark mb-3">Quick Stats</h2>
+          <h2 className="text-sm font-bold text-sw-dark mb-3">{t('app.profile.quickStats')}</h2>
           <div className="grid grid-cols-2 gap-3">
             <div className="bg-sw-grey-light rounded-xl p-3 text-center">
               <div className="text-lg font-extrabold text-sw-blue">{xp}</div>
-              <div className="text-[10px] text-sw-grey font-semibold">Total XP</div>
+              <div className="text-[10px] text-sw-grey font-semibold">{t('app.progress.totalXp')}</div>
             </div>
             <div className="bg-sw-grey-light rounded-xl p-3 text-center">
               <div className="text-lg font-extrabold text-sw-amber">{streak}</div>
-              <div className="text-[10px] text-sw-grey font-semibold">Day Streak 🔥</div>
+              <div className="text-[10px] text-sw-grey font-semibold">{t('app.common.dayStreakFire')}</div>
             </div>
           </div>
         </div>
@@ -317,7 +322,7 @@ export default function ProfilePage() {
         <Link to="/app/purchases" className="block w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border">
           <div className="flex items-center gap-3">
             <span className="text-lg">🛍️</span>
-            <span className="text-sm font-bold text-sw-dark">My Purchases</span>
+            <span className="text-sm font-bold text-sw-dark">{t('app.profile.myPurchases')}</span>
             <svg className="w-4 h-4 text-sw-grey ml-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
@@ -339,25 +344,28 @@ export default function ProfilePage() {
           }}
           className="w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border text-center transition-transform hover:bg-sw-grey-light active:scale-[0.98] disabled:opacity-70"
         >
-          <span className="text-sm font-bold text-red-500">{signingOut ? 'Signing out…' : 'Sign Out'}</span>
+          <span className="text-sm font-bold text-red-500">{signingOut ? t('app.profile.signingOut') : t('app.profile.signOut')}</span>
         </button>
 
         <a
           href="/support?chat=open"
           className="block w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border text-center"
         >
-          <span className="text-sm font-semibold text-sw-grey">Need help? Ask Maya — answers in minutes</span>
+          <span className="text-sm font-semibold text-sw-grey">{t('app.profile.needHelp')}</span>
         </a>
       </div>
 
       {cancelOpen ? (
         <div className="fixed inset-0 z-[60] bg-black/40 flex items-end sm:items-center justify-center p-4">
           <div className="bg-white rounded-2xl p-5 w-full max-w-md shadow-xl">
-            <h2 className="text-lg font-extrabold text-sw-dark">Cancel your subscription?</h2>
+            <h2 className="text-lg font-extrabold text-sw-dark">{t('app.profile.cancelModalTitle')}</h2>
             <p className="text-sm text-sw-grey mt-2">
               {pastDue
-                ? "Your subscription will be cancelled straight away and you won't be charged again. Any outstanding payment attempt will be stopped, so you can ignore any payment reminders."
-                : `You'll keep full access until ${renew ?? 'the end of your current billing period'}. You won't be charged again.`}
+                ? t('app.profile.cancelModalPastDue')
+                : t('app.profile.cancelModalActive').replace(
+                    '{date}',
+                    renew ?? t('app.profile.cancelModalDateFallback'),
+                  )}
             </p>
             {billingError ? (
               <p className="mt-3 text-sm text-red-500" data-testid="cancel-error">
@@ -372,7 +380,7 @@ export default function ProfilePage() {
               }}
               className="mt-4 w-full rounded-full bg-sw-blue text-white font-bold py-3"
             >
-              Keep my plan
+              {t('app.profile.keepPlan')}
             </button>
             <button
               type="button"
@@ -380,7 +388,7 @@ export default function ProfilePage() {
               onClick={() => void confirmCancel()}
               className="mt-2 w-full rounded-full py-3 font-bold text-sw-coral"
             >
-              {busy ? 'Cancelling…' : 'Yes, cancel'}
+              {busy ? t('app.profile.cancelling') : t('app.profile.yesCancel')}
             </button>
           </div>
         </div>

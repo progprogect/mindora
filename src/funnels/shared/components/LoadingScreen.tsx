@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import type { LoadingScreenDef } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import {
+  commitmentConfirmMessage,
+  funnelUiCopy,
+  loadingCommitmentOptions,
+  loadingDeviceOptions,
+} from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface LoadingScreenProps {
   screen: LoadingScreenDef
@@ -7,27 +14,6 @@ interface LoadingScreenProps {
 }
 
 type Phase = 'loading' | 'q1' | 'q1-confirm' | 'q2' | 'q2-confirm' | 'done'
-
-const DEVICE_OPTIONS = [
-  { id: 'phone', label: 'My phone', emoji: '📱' },
-  { id: 'laptop', label: 'My laptop', emoji: '💻' },
-  { id: 'desktop', label: 'My desktop', emoji: '🖥️' },
-  { id: 'mix', label: 'Mix of devices', emoji: '📱💻' },
-]
-
-const COMMITMENT_OPTIONS = [
-  { id: 'full', label: 'Fully committed', emoji: '🏆' },
-  { id: 'high', label: 'Very committed', emoji: '💪' },
-  { id: 'medium', label: 'Pretty committed', emoji: '🙂' },
-  { id: 'trying', label: "I'll try my best", emoji: '🤞' },
-]
-
-const COMMITMENT_CONFIRM: Record<string, string> = {
-  full: "🔥 That's the mindset. Your plan is almost ready!",
-  high: '💪 Love that. Your plan is almost ready!',
-  medium: '🙂 Every step counts. Your plan is almost ready!',
-  trying: "🤞 We've got you. Your plan is almost ready!",
-}
 
 const TICK_MS = 60
 const DEVICE_PAUSE = 40
@@ -47,6 +33,10 @@ function SelectedCheck() {
 }
 
 export default function LoadingScreen({ screen, onComplete }: LoadingScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
+  const deviceOptions = loadingDeviceOptions(locale)
+  const commitmentOptions = loadingCommitmentOptions(locale)
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState<Phase>('loading')
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
@@ -146,13 +136,13 @@ export default function LoadingScreen({ screen, onComplete }: LoadingScreenProps
 
       {showDevice ? (
         <div className="flex w-full flex-col animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Quick question</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{ui.loadingQuickQuestion}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-            Where will you mostly be learning?
+            {ui.loadingWhereLearn}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">We&apos;ll optimise your plan for it</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{ui.loadingOptimizePlan}</p>
           <div className="flex flex-col gap-3">
-            {DEVICE_OPTIONS.map(({ id, label, emoji }) => {
+            {deviceOptions.map(({ id, label, emoji }) => {
               const selected = selectedDevice === id && phase === 'q1-confirm'
               return (
                 <button
@@ -179,7 +169,7 @@ export default function LoadingScreen({ screen, onComplete }: LoadingScreenProps
           </div>
           {phase === 'q1-confirm' ? (
             <div className="mt-5 animate-fade-in rounded-2xl border border-sw-blue-border bg-sw-blue-light px-5 py-3 text-center">
-              <p className="text-sm font-bold text-sw-blue">✓ Perfect — we&apos;ll optimise your plan for that!</p>
+              <p className="text-sm font-bold text-sw-blue">{ui.loadingDeviceConfirm}</p>
             </div>
           ) : null}
         </div>
@@ -187,13 +177,13 @@ export default function LoadingScreen({ screen, onComplete }: LoadingScreenProps
 
       {showCommitment ? (
         <div className="flex w-full flex-col animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Almost there</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{ui.loadingAlmostThere}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
             {screen.commitmentQuestion}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">Be honest — your plan adapts to you</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{ui.loadingHonestHint}</p>
           <div className="flex flex-col gap-3">
-            {COMMITMENT_OPTIONS.map(({ id, label, emoji }) => {
+            {commitmentOptions.map(({ id, label, emoji }) => {
               const selected = selectedCommitment === id && phase === 'q2-confirm'
               return (
                 <button
@@ -221,7 +211,7 @@ export default function LoadingScreen({ screen, onComplete }: LoadingScreenProps
           {phase === 'q2-confirm' ? (
             <div className="mt-5 animate-fade-in rounded-2xl border border-sw-blue-border bg-sw-blue-light px-5 py-3 text-center">
               <p className="text-sm font-bold text-sw-blue">
-                {COMMITMENT_CONFIRM[selectedCommitment] ?? COMMITMENT_CONFIRM.trying}
+                {commitmentConfirmMessage(locale, selectedCommitment)}
               </p>
             </div>
           ) : null}

@@ -4,13 +4,16 @@ import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, sendOtp, verifyOtp } from '@/lib/api'
+import LanguageSwitcher from '@/i18n/LanguageSwitcher'
+import { useI18n } from '@/i18n/I18nProvider'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 function WordmarkHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
-      <div className="max-w-lg mx-auto px-4 h-14 flex items-center justify-center">
+      <div className="max-w-lg mx-auto px-4 h-14 flex items-center justify-between">
         <BrandWordmark />
+        <LanguageSwitcher />
       </div>
     </header>
   )
@@ -19,18 +22,20 @@ function WordmarkHeader() {
 function PostAuthRedirect() {
   const navigate = useNavigate()
   const user = useCurrentUser()
+  const { t } = useI18n()
   useEffect(() => {
     if (user === undefined) return
     if (user?.onboardingComplete) navigate('/app/dashboard', { replace: true })
     else navigate('/account/onboard', { replace: true })
   }, [user, navigate])
-  return <AuthSpinner message="Signing you in…" />
+  return <AuthSpinner message={t('auth.signingIn')} />
 }
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function LoginForm() {
   const { refresh } = useSession()
+  const { locale, t } = useI18n()
   const [step, setStep] = useState<'email' | 'code'>('email')
   const [email, setEmail] = useState(() => {
     try {
@@ -55,7 +60,7 @@ function LoginForm() {
     setError(null)
     setBusy(true)
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
       try {
         window.localStorage.setItem('sw_checkout_email', email.trim())
         window.localStorage.setItem('sw_login_email', email.trim())
@@ -64,7 +69,7 @@ function LoginForm() {
       }
       setStep('code')
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to send code. Please check your email and try again.'))
+      setError(apiErrorMessage(err, t, t('auth.errSendCode')))
     } finally {
       setBusy(false)
     }
@@ -78,7 +83,7 @@ function LoginForm() {
       await verifyOtp(email, code)
       await refresh()
     } catch (err) {
-      setError(apiErrorMessage(err, 'Invalid or expired code. Please try again.'))
+      setError(apiErrorMessage(err, t, t('auth.errInvalidCode')))
     } finally {
       setBusy(false)
     }
@@ -91,9 +96,9 @@ function LoginForm() {
     autoVerify.current = ''
     setBusy(true)
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to send code. Please check your email and try again.'))
+      setError(apiErrorMessage(err, t, t('auth.errSendCode')))
     } finally {
       setBusy(false)
     }
@@ -129,10 +134,11 @@ function LoginForm() {
               </svg>
             </div>
             <h1 className="text-3xl font-extrabold text-sw-dark text-center leading-tight mb-3">
-              Check your inbox
+              {t('auth.checkInbox')}
             </h1>
             <p className="text-sm text-sw-grey text-center mb-8 leading-relaxed">
-              We sent a 6-digit code to <span className="font-semibold text-sw-dark">{email}</span>
+              {t('auth.codeSentTo')}{' '}
+              <span className="font-semibold text-sw-dark">{email}</span>
             </p>
             <input
               type="text"
@@ -148,7 +154,7 @@ function LoginForm() {
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && code.length === 6) void verifyCode()
               }}
-              placeholder="000000"
+              placeholder={t('auth.codePlaceholder')}
               disabled={busy}
               autoFocus
               className="w-full border-2 border-sw-grey-border rounded-2xl px-5 py-4 text-3xl font-bold text-sw-dark text-center tracking-[0.5em] placeholder:text-sw-grey/30 placeholder:font-normal placeholder:tracking-normal focus:outline-none focus:border-sw-blue transition-colors bg-white"
@@ -160,11 +166,13 @@ function LoginForm() {
               disabled={busy}
               className="mt-6 text-sm text-sw-grey text-center w-full"
             >
-              Didn&apos;t receive it? <span className="text-sw-blue font-semibold">Send again</span>
+              {t('auth.didntReceive')}{' '}
+              <span className="text-sw-blue font-semibold">{t('auth.sendAgain')}</span>
             </button>
             <p className="mt-4 text-xs text-sw-grey/80 text-center leading-relaxed bg-sw-blue-light/40 rounded-xl px-4 py-3">
-              💡 Check your <span className="font-semibold text-sw-dark">spam or junk folder</span>{' '}
-              for an email from MindoraAcademy.com — some email providers filter sign-in codes.
+              {t('auth.spamTipBefore')}{' '}
+              <span className="font-semibold text-sw-dark">{t('auth.spamOrJunk')}</span>{' '}
+              {t('auth.spamTipAfter')}
             </p>
           </div>
         </main>
@@ -179,7 +187,7 @@ function LoginForm() {
               disabled={busy || code.length < 6}
               className="w-full bg-sw-blue hover:bg-sw-blue-hover text-white font-bold py-4 rounded-full text-base transition-all active:scale-[0.98] shadow-lg disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              {busy && code.length === 6 ? 'Signing you in…' : 'Sign In'}
+              {busy && code.length === 6 ? t('auth.signingIn') : t('auth.signIn')}
             </button>
           </div>
           <div
@@ -216,12 +224,12 @@ function LoginForm() {
             </svg>
           </div>
           <h1 className="text-3xl font-extrabold text-sw-dark text-center leading-tight mb-3">
-            Welcome back
+            {t('auth.welcomeBack')}
           </h1>
           <p className="text-sm text-sw-grey text-center mb-10 leading-relaxed">
-            Enter your email and we&apos;ll send a quick sign-in code — no password needed.
+            {t('auth.emailIntro')}
           </p>
-          <label className="block text-sm font-semibold text-sw-dark mb-2">Email address</label>
+          <label className="block text-sm font-semibold text-sw-dark mb-2">{t('auth.emailLabel')}</label>
           <input
             type="email"
             value={email}
@@ -229,7 +237,7 @@ function LoginForm() {
             onKeyDown={(e) => {
               if (e.key === 'Enter') void sendCode()
             }}
-            placeholder="you@example.com"
+            placeholder={t('auth.emailPlaceholder')}
             required
             disabled={busy}
             autoFocus
@@ -237,9 +245,9 @@ function LoginForm() {
           />
           {error ? <p className="mt-3 text-sm text-red-500">{error}</p> : null}
           <p className="mt-6 text-xs text-sw-grey text-center">
-            Don&apos;t have an account?{' '}
+            {t('auth.noAccount')}{' '}
             <Link to="/quiz/28-day-ai-challenge" className="text-sw-blue font-semibold">
-              Take the quiz
+              {t('auth.takeQuiz')}
             </Link>
           </p>
         </div>
@@ -255,7 +263,7 @@ function LoginForm() {
             disabled={busy || !emailValid}
             className="w-full bg-sw-blue hover:bg-sw-blue-hover text-white font-bold py-4 rounded-full text-base transition-all active:scale-[0.98] shadow-lg disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            {busy ? 'Sending code…' : 'Send Sign-In Code'}
+            {busy ? t('auth.sendingCode') : t('auth.sendSignInCode')}
           </button>
         </div>
         <div

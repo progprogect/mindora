@@ -16,11 +16,13 @@ export type SubscriptionDto = {
 
 export class BillingError extends Error {
   status: 400 | 409 | 503
+  code: string
 
-  constructor(message: string, status: 400 | 409 | 503) {
+  constructor(message: string, status: 400 | 409 | 503, code: string) {
     super(message)
     this.name = 'BillingError'
     this.status = status
+    this.code = code
   }
 }
 
@@ -167,11 +169,11 @@ export async function getMine(userId: string, email: string): Promise<Subscripti
 
 export async function createPortalSession(userId: string, email: string, returnUrl: string) {
   if (!stripeConfigured()) {
-    throw new BillingError('Billing is not configured on this environment.', 503)
+    throw new BillingError('Billing is not configured on this environment.', 503, 'billing_not_configured')
   }
   const customerId = await findStripeCustomerId(userId, email)
   if (!customerId) {
-    throw new BillingError('No billing customer is linked to this account yet.', 409)
+    throw new BillingError('No billing customer is linked to this account yet.', 409, 'no_billing_customer')
   }
   try {
     const stripe = getStripe()
@@ -181,13 +183,13 @@ export async function createPortalSession(userId: string, email: string, returnU
     })
     return { url: session.url }
   } catch (error) {
-    throw toBillingError(error, 'Could not open the billing portal.')
+    throw toBillingError(error, 'Could not open the billing portal.', 'billing_portal_unavailable')
   }
 }
 
 export async function cancelOwnSubscription(userId: string, email: string) {
   if (!stripeConfigured()) {
-    throw new BillingError('Billing is not configured on this environment.', 503)
+    throw new BillingError('Billing is not configured on this environment.', 503, 'billing_not_configured')
   }
   const mine = await getMine(userId, email)
   const local = await loadLocalSubscription(userId)
@@ -195,6 +197,7 @@ export async function cancelOwnSubscription(userId: string, email: string) {
     throw new BillingError(
       "No Stripe subscription is linked to this account. Cancel isn't available until billing is connected.",
       409,
+      'no_stripe_subscription',
     )
   }
 
@@ -214,7 +217,7 @@ export async function cancelOwnSubscription(userId: string, email: string) {
     }
     return { immediate: Boolean(immediate || updated.status === 'canceled') }
   } catch (error) {
-    throw toBillingError(error, 'Stripe could not cancel this subscription.')
+    throw toBillingError(error, 'Stripe could not cancel this subscription.', 'subscription_cancel_failed')
   }
 }
 
@@ -236,8 +239,14 @@ export async function notifyScheduledCancellation(userId: string, email: string,
     .returning({ id: subscriptions.id })
   if (!claimed[0]) return
 
+  const [profile] = await db
+    .select({ locale: profiles.locale })
+    .from(profiles)
+    .where(eq(profiles.userId, userId))
+    .limit(1)
+
   try {
-    await sendCancellationEmail({ to, accessUntil })
+    await sendCancellationEmail({ to, accessUntil, locale: profile?.locale === 'ru' ? 'ru' : 'en' })
   } catch (error) {
     console.error('[cancel-mail]', error)
   }
@@ -288,25 +297,30 @@ export async function maybeSendTrialWelcomeEmail(userId: string, email: string):
 
   const planLabel = planLabelFromFunnel(profile.funnelSource || (await funnelFromStripe(userId)))
   try {
-    await sendTrialWelcomeEmail({ to, planLabel })
+    await sendTrialWelcomeEmail({
+      to,
+      planLabel,
+      locale: profile.locale === 'ru' ? 'ru' : 'en',
+    })
   } catch (error) {
     console.error('[welcome-mail]', error)
   }
 }
 
-function toBillingError(error: unknown, fallback: string): BillingError {
+function toBillingError(error: unknown, fallback: string, fallbackCode: string): BillingError {
   if (error instanceof BillingError) return error
   const message = error instanceof Error && error.message ? error.message : fallback
   if (/not configured/i.test(message)) {
-    return new BillingError('Billing is not configured on this environment.', 503)
+    return new BillingError('Billing is not configured on this environment.', 503, 'billing_not_configured')
   }
   if (/^No subscription$/i.test(message)) {
     return new BillingError(
       "No Stripe subscription is linked to this account. Cancel isn't available until billing is connected.",
       409,
+      'no_stripe_subscription',
     )
   }
-  return new BillingError(message, 400)
+  return new BillingError(message, 400, fallbackCode)
 }
 
 export async function linkStripeCustomer(userId: string, customerId: string, stripeSub?: Stripe.Subscription) {
@@ -345,7 +359,7 @@ export function stripeSubscriptionIsYearly(sub: Stripe.Subscription): boolean {
 
 export type SwitchAnnualResult =
   | { success: true; alreadyPurchased: boolean }
-  | { success: false; reason: string; error: string }
+  | { success: false; reason: string; error: string; code: string }
 
 const ANNUAL_CONFIG_ERROR =
   'This annual upgrade is not available yet. Keep your monthly plan for now — you can switch later, and nothing is lost.'
@@ -383,7 +397,7 @@ function otoPriceLooksRight(price: Stripe.Price): boolean {
 export async function switchToAnnualPrice(userId: string, email: string): Promise<SwitchAnnualResult> {
   const priceId = loadEnv().STRIPE_ANNUAL_OTO_PRICE_ID.trim()
   if (!stripeConfigured() || !priceId) {
-    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR, code: 'annual_upgrade_unavailable' }
   }
 
   const stripe = getStripe()
@@ -392,7 +406,7 @@ export async function switchToAnnualPrice(userId: string, email: string): Promis
     otoPrice = await stripe.prices.retrieve(priceId)
   } catch (error) {
     console.error('[subscription] annual OTO price lookup failed', error)
-    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR, code: 'annual_upgrade_unavailable' }
   }
   if (!otoPriceLooksRight(otoPrice)) {
     console.error('[subscription] STRIPE_ANNUAL_OTO_PRICE_ID is not $59.99/year', {
@@ -400,7 +414,7 @@ export async function switchToAnnualPrice(userId: string, email: string): Promis
       interval: otoPrice.recurring?.interval,
       interval_count: otoPrice.recurring?.interval_count,
     })
-    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR, code: 'annual_upgrade_unavailable' }
   }
 
   const remote = await liveStripeSubscription(userId, email)
@@ -409,6 +423,7 @@ export async function switchToAnnualPrice(userId: string, email: string): Promis
       success: false,
       reason: 'configError',
       error: 'No active subscription is linked to this account yet. Keep your monthly plan for now.',
+      code: 'no_active_subscription',
     }
   }
   if (stripeSubscriptionIsYearly(remote) || remote.items.data.some((item) => item.price?.id === priceId)) {
@@ -418,7 +433,7 @@ export async function switchToAnnualPrice(userId: string, email: string): Promis
 
   const item = remote.items.data[0]
   if (!item?.id) {
-    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR }
+    return { success: false, reason: 'configError', error: ANNUAL_CONFIG_ERROR, code: 'annual_upgrade_unavailable' }
   }
 
   try {
@@ -433,6 +448,6 @@ export async function switchToAnnualPrice(userId: string, email: string): Promis
     await upsertLocal(userId, updated)
     return { success: true, alreadyPurchased: false }
   } catch (error) {
-    throw toBillingError(error, 'Stripe could not switch this subscription to annual.')
+    throw toBillingError(error, 'Stripe could not switch this subscription to annual.', 'switch_annual_failed')
   }
 }

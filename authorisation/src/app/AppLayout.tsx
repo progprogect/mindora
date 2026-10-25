@@ -4,6 +4,8 @@ import AppNavFooter from '@/app/AppNavFooter'
 import MindoraFab from '@/app/MindoraFab'
 import { initialsFromName, PLAN_TIERS } from '@/app/mockUser'
 import { useCurrentUser, useSession } from '@/auth/session'
+import LanguageSwitcher from '@/i18n/LanguageSwitcher'
+import { useI18n } from '@/i18n/I18nProvider'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 export default function AppLayout() {
@@ -16,6 +18,7 @@ export default function AppLayout() {
     if (menuOpen) setMenuOpen(false)
   }
   const { signOut } = useSession()
+  const { t } = useI18n()
   const user = useCurrentUser()
   const hideChrome =
     pathname.startsWith('/app/mindora') ||
@@ -57,7 +60,7 @@ export default function AppLayout() {
                   type="button"
                   onClick={() => setMenuOpen((open) => !open)}
                   className="w-9 h-9 rounded-full bg-sw-blue text-white font-bold text-sm flex items-center justify-center shadow-sm active:scale-95 transition-transform"
-                  aria-label="Open profile menu"
+                  aria-label={t('chrome.openProfileMenu')}
                 >
                   {initials}
                 </button>
@@ -67,12 +70,15 @@ export default function AppLayout() {
                       <p className="text-xs font-bold text-sw-dark truncate">{name}</p>
                       <p className="text-xs text-sw-grey mt-0.5">{plan.label}</p>
                     </div>
+                    <div className="px-3 py-2 border-b border-sw-grey-border">
+                      <LanguageSwitcher />
+                    </div>
                     <button
                       type="button"
                       onClick={() => void handleSignOut()}
                       className="w-full text-left px-3 py-2.5 text-sm font-semibold text-sw-coral hover:bg-sw-grey-light transition-colors rounded-b-xl"
                     >
-                      Sign out
+                      {t('chrome.signOut')}
                     </button>
                   </div>
                 ) : null}

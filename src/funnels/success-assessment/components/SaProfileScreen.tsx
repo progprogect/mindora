@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { saSalesCopy } from '@/funnels/success-assessment/data/saSalesCopy'
 import type { SaProfile } from '@/funnels/success-assessment/lib/scoring'
 
 interface SaProfileScreenProps {
@@ -10,8 +12,10 @@ const RING = 54
 const CIRC = 2 * Math.PI * RING
 
 export default function SaProfileScreen({ name, profile }: SaProfileScreenProps) {
+  const { locale } = useI18n()
+  const copy = saSalesCopy(locale).profile
   const [animated, setAnimated] = useState(0)
-  const displayName = name.trim() || 'Your'
+  const displayName = name.trim() || copy.defaultName
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -29,17 +33,29 @@ export default function SaProfileScreen({ name, profile }: SaProfileScreenProps)
 
   const offset = CIRC - (animated / 100) * CIRC
 
+  const gapAreaLabel = (id: string, label: string) => {
+    if (id === 'business') return copy.gapAreaNames.business
+    if (id === 'ai') return copy.gapAreaNames.ai
+    if (id === 'financial') return copy.gapAreaNames.financial
+    return label
+  }
+
+  const areasJoined = profile.gaps.map((g) => gapAreaLabel(g.id, g.label)).join(', ')
+
   return (
     <div className="px-4 pt-8 pb-40 animate-fade-up">
       <div className="mb-4 flex justify-center">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-sw-blue-light px-4 py-1.5 text-xs font-bold tracking-wide text-sw-blue uppercase">
-          ✨ {displayName}&apos;s Success Profile
+          {copy.badge(displayName)}
         </span>
       </div>
       <h1 className="mb-6 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-        {displayName}, here&apos;s your
-        <br />
-        personalised roadmap
+        {copy.headline(displayName).split('\n').map((line, i) => (
+          <span key={i}>
+            {i > 0 ? <br /> : null}
+            {line}
+          </span>
+        ))}
       </h1>
 
       <div className="mb-6 flex flex-col items-center">
@@ -60,7 +76,7 @@ export default function SaProfileScreen({ name, profile }: SaProfileScreenProps)
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <span className="text-3xl font-extrabold text-sw-dark">{animated}</span>
-            <span className="text-[10px] font-bold tracking-wide text-sw-grey uppercase">Overall score</span>
+            <span className="text-[10px] font-bold tracking-wide text-sw-grey uppercase">{copy.overallScore}</span>
           </div>
         </div>
         <p className="mt-2 text-lg font-extrabold text-sw-blue">{profile.scoreLabel}</p>
@@ -87,17 +103,14 @@ export default function SaProfileScreen({ name, profile }: SaProfileScreenProps)
         style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)) 0%, hsl(221 83% 38%) 100%)' }}
       >
         <p className="mb-1 text-xs font-bold tracking-wide text-white/70 uppercase">
-          {profile.archetypeEmoji} Your archetype
+          {profile.archetypeEmoji} {copy.archetypeKicker}
         </p>
         <p className="mb-2 text-xl font-extrabold">{profile.archetype}</p>
         <p className="text-sm leading-relaxed text-white/90">&ldquo;{profile.quote}&rdquo;</p>
       </div>
 
-      <p className="mb-3 text-sm font-extrabold text-sw-dark">🚀 YOUR TOP 3 GROWTH OPPORTUNITIES</p>
-      <p className="mb-4 text-sm text-sw-grey">
-        Based on your answers, these three areas give you the fastest path to your career breakthrough. Your plan
-        tackles all three simultaneously.
-      </p>
+      <p className="mb-3 text-sm font-extrabold text-sw-dark">{copy.topGapsTitle}</p>
+      <p className="mb-4 text-sm text-sw-grey">{copy.topGapsBody}</p>
       <div className="mb-6 flex flex-col gap-3">
         {profile.gaps.map((gap) => (
           <div key={gap.id} className="rounded-2xl border border-sw-grey-border p-4">
@@ -107,37 +120,27 @@ export default function SaProfileScreen({ name, profile }: SaProfileScreenProps)
               </p>
               <p className="text-sm font-bold text-sw-dark">{gap.score}%</p>
             </div>
-            <p className="mb-2 text-xs font-semibold text-sw-blue">🔓 {gap.unlock} points of growth ready to unlock</p>
+            <p className="mb-2 text-xs font-semibold text-sw-blue">{copy.unlock(gap.unlock)}</p>
             <ul className="mb-2 flex flex-col gap-1 text-sm text-sw-grey">
               {gap.bullets.map((b) => (
                 <li key={b}>✓ {b}</li>
               ))}
             </ul>
-            <p className="text-xs text-sw-grey">⏱ 5–10 mins/day · ✅ Included in your plan</p>
+            <p className="text-xs text-sw-grey">{copy.gapMeta}</p>
           </div>
         ))}
       </div>
 
       <div className="mb-6 rounded-2xl bg-sw-blue-light p-4">
-        <p className="mb-1 text-sm font-bold text-sw-dark">🎯 Why all three gaps at once?</p>
-        <p className="text-sm leading-relaxed text-sw-grey">
-          Working on{' '}
-          {profile.gaps
-            .map((g) => (g.id === 'business' ? 'Business' : g.id === 'ai' ? 'AI & Technology' : g.id === 'financial' ? 'Financial Wellbeing' : g.label))
-            .join(', ')}{' '}
-          together creates a compounding effect — progress in one area accelerates the others. This is why our members
-          see results 3× faster than tackling each area one at a time.
-        </p>
+        <p className="mb-1 text-sm font-bold text-sw-dark">{copy.whyAllThree}</p>
+        <p className="text-sm leading-relaxed text-sw-grey">{copy.whyAllThreeBody(areasJoined)}</p>
       </div>
 
       <div className="rounded-2xl bg-sw-grey-light p-4">
         <p className="mb-2 text-sw-amber">⭐⭐⭐⭐⭐</p>
-        <p className="mb-2 text-sm font-semibold text-sw-dark">94% of members see measurable progress within 30 days</p>
-        <p className="text-sm leading-relaxed text-sw-grey">
-          &ldquo;I&apos;d tried three times before and always quit. MindoraAcademy gave me a system that worked with my
-          life, not against it. Eight weeks in, I got a promotion and launched my first side income stream.&rdquo;
-        </p>
-        <p className="mt-2 text-xs font-semibold text-sw-grey">— Alex R., Operations Manager</p>
+        <p className="mb-2 text-sm font-semibold text-sw-dark">{copy.testimonialTitle}</p>
+        <p className="text-sm leading-relaxed text-sw-grey">&ldquo;{copy.testimonialQuote}&rdquo;</p>
+        <p className="mt-2 text-xs font-semibold text-sw-grey">{copy.testimonialAuthor}</p>
       </div>
     </div>
   )

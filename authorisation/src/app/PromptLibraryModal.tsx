@@ -1,17 +1,19 @@
 import { useState } from 'react'
-import { buyOffer } from '@/lib/api'
+import { buyOffer, chargeErrorMessage } from '@/lib/api'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useHasSavedCard } from '@/lib/lmsQueries'
 
-const VALUE_ROWS = [
-  { icon: '🔍', label: 'Online Searchable Prompt Library', sub: '28,000+ prompts', price: '$97' },
-  { icon: '📚', label: 'Expert PDF Prompt Guides (7 Books)', sub: '2,000+ curated prompts', price: '$47' },
-  { icon: '🎯', label: 'Goal & Productivity Frameworks', sub: 'Proven action plans', price: '$29' },
-  { icon: '✍️', label: 'Content Creation Templates', sub: 'Email, social, blog — done for you', price: '$19' },
-]
+const VALUE_ROW_KEYS = [
+  { icon: '🔍', labelKey: 'app.promptModal.row1Label', subKey: 'app.promptModal.row1Sub', price: '$97' },
+  { icon: '📚', labelKey: 'app.promptModal.row2Label', subKey: 'app.promptModal.row2Sub', price: '$47' },
+  { icon: '🎯', labelKey: 'app.promptModal.row3Label', subKey: 'app.promptModal.row3Sub', price: '$29' },
+  { icon: '✍️', labelKey: 'app.promptModal.row4Label', subKey: 'app.promptModal.row4Sub', price: '$19' },
+] as const
 
 type ChargePhase = 'idle' | 'processing' | 'success' | 'error'
 
 export default function PromptLibraryModal({ onClose }: { onClose: () => void }) {
+  const { t } = useI18n()
   const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState<string | null>(null)
   const hasCard = useHasSavedCard()
@@ -30,10 +32,10 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
         return
       }
       setPhase('error')
-      setError(result.error || 'Payment failed. Please try again.')
+      setError(chargeErrorMessage(result, t, t('app.common.paymentFailed')))
     } catch {
       setPhase('error')
-      setError('Something went wrong. Please try again.')
+      setError(t('app.common.somethingWrong'))
     }
   }
 
@@ -51,7 +53,7 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
           type="button"
           onClick={onClose}
           disabled={locked}
-          aria-label="Close"
+          aria-label={t('app.common.close')}
           className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full bg-sw-grey-light text-sw-grey transition-colors hover:bg-gray-200 disabled:opacity-40"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -66,37 +68,37 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
             ⚡
           </div>
           <h2 className="text-xl font-extrabold leading-tight text-sw-dark">
-            The Ultimate AI
+            {t('app.promptModal.titleLine1')}
             <br />
-            Prompt Library
+            {t('app.promptModal.titleLine2')}
           </h2>
-          <p className="mt-1.5 text-sm text-sw-grey">Instant access to 27,200+ expert-crafted prompts</p>
+          <p className="mt-1.5 text-sm text-sw-grey">{t('app.promptModal.subtitle')}</p>
         </div>
         <div className="mb-4 overflow-hidden rounded-xl border border-sw-grey-border/60">
           <p className="border-b border-sw-grey-border/40 bg-gray-50 py-2 text-center text-xs font-bold text-sw-dark">
-            Here&apos;s Everything You Get:
+            {t('app.promptModal.everythingYouGet')}
           </p>
           <div className="divide-y divide-sw-grey-border/30">
-            {VALUE_ROWS.map((row) => (
-              <div key={row.label} className="flex items-center gap-2.5 px-3 py-2">
+            {VALUE_ROW_KEYS.map((row) => (
+              <div key={row.labelKey} className="flex items-center gap-2.5 px-3 py-2">
                 <span className="flex-shrink-0 text-base">{row.icon}</span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-xs font-semibold leading-tight text-sw-dark">{row.label}</p>
-                  <p className="text-[10px] leading-tight text-sw-grey">{row.sub}</p>
+                  <p className="text-xs font-semibold leading-tight text-sw-dark">{t(row.labelKey)}</p>
+                  <p className="text-[10px] leading-tight text-sw-grey">{t(row.subKey)}</p>
                 </div>
                 <span className="flex-shrink-0 text-xs text-sw-grey">{row.price}</span>
               </div>
             ))}
           </div>
           <div className="border-t border-sw-grey-border/40 bg-gray-50 py-2 text-center">
-            <span className="text-xs text-sw-grey">Total Value: </span>
+            <span className="text-xs text-sw-grey">{t('app.common.totalValue')} </span>
             <span className="text-xs font-bold text-sw-dark">$192</span>
           </div>
         </div>
         <div className="text-center">
-          <p className="mb-1 text-xs text-sw-grey">Get everything above for just</p>
+          <p className="mb-1 text-xs text-sw-grey">{t('app.common.getEverythingFor')}</p>
           <span className="text-3xl font-extrabold text-sw-dark">$19.95</span>
-          <p className="mt-1 mb-4 text-[11px] text-sw-grey">One-time payment · Lifetime access · No subscription</p>
+          <p className="mt-1 mb-4 text-[11px] text-sw-grey">{t('app.common.oneTimePayment')}</p>
           {phase === 'success' ? (
             <div data-testid="prompt-library-modal-unlocked" className="py-4 text-center">
               <div
@@ -114,8 +116,8 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <p className="font-bold text-sw-dark">Unlocked!</p>
-              <p className="mt-1 text-xs text-sw-grey">Loading your library...</p>
+              <p className="font-bold text-sw-dark">{t('app.common.unlocked')}</p>
+              <p className="mt-1 text-xs text-sw-grey">{t('app.common.loadingLibrary')}</p>
             </div>
           ) : (
             <button
@@ -128,10 +130,10 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
               {phase === 'processing' ? (
                 <span className="flex items-center justify-center gap-2">
                   <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                  Processing...
+                  {t('app.common.processing')}
                 </span>
               ) : (
-                'Unlock Now — $19.95'
+                t('app.common.unlockNow')
               )}
             </button>
           )}
@@ -141,7 +143,7 @@ export default function PromptLibraryModal({ onClose }: { onClose: () => void })
             </div>
           ) : null}
           <p className="mt-3 text-[10px] text-sw-grey">
-            {hasCard === true ? '🔒 Secure one-click payment using your saved card' : '🔒 Secure payment via Stripe'}
+            {hasCard === true ? t('app.common.secureSavedCard') : t('app.common.secureStripe')}
           </p>
         </div>
       </div>

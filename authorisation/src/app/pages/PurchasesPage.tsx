@@ -1,25 +1,24 @@
 import { Link } from 'react-router-dom'
-import { PLANNERS } from '@/content/planners'
+import { plannerContent } from '@/content/planners'
+import { useI18n } from '@/i18n/I18nProvider'
 import { usePurchaseRecords, type PurchaseRecord } from '@/lib/lmsQueries'
-
-const LABELS: Record<string, string> = {
-  'planner-bundle': 'All 10 planners',
-  'planner-bundle-library': 'All 10 planners',
-  'ultimate-prompt-library': 'The Ultimate Prompt Library',
-  'mindora-ai-coach': 'Mindora AI Coach',
-  'wise-ai-coach': 'Mindora AI Coach',
-}
 
 const BUNDLE_SKUS = new Set(['planner-bundle', 'planner-bundle-library'])
 
-function labelFor(sku: string) {
-  if (LABELS[sku]) return LABELS[sku]
-  return PLANNERS.find((planner) => `planner-${planner.id}` === sku)?.name || sku
+function labelFor(sku: string, t: (key: string) => string, locale: 'en' | 'ru') {
+  if (sku === 'planner-bundle' || sku === 'planner-bundle-library') return t('app.purchases.skuPlanners')
+  if (sku === 'ultimate-prompt-library') return t('app.purchases.skuPromptLibrary')
+  if (sku === 'mindora-ai-coach' || sku === 'wise-ai-coach') return t('app.purchases.skuMindoraCoach')
+  return plannerContent(locale).planners.find((planner) => `planner-${planner.id}` === sku)?.name || sku
 }
 
-function formatDate(stamp: number) {
+function formatDate(stamp: number, locale: string) {
   if (!stamp) return ''
-  return new Date(stamp).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  return new Date(stamp).toLocaleDateString(locale === 'ru' ? 'ru-RU' : 'en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  })
 }
 
 function formatPrice(cents: number | null) {
@@ -37,6 +36,7 @@ function visibleRows(records: PurchaseRecord[]) {
 }
 
 export default function PurchasesPage() {
+  const { t, locale } = useI18n()
   const records = usePurchaseRecords()
   const rows = records ? visibleRows(records) : undefined
   const skus = new Set((rows ?? []).map((row) => row.sku))
@@ -52,7 +52,7 @@ export default function PurchasesPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </Link>
-          <h1 className="text-base font-bold text-sw-dark">My Purchases</h1>
+          <h1 className="text-base font-bold text-sw-dark">{t('app.purchases.title')}</h1>
         </div>
       </header>
       <main className="max-w-2xl mx-auto px-4 pt-5 space-y-4">
@@ -65,10 +65,10 @@ export default function PurchasesPage() {
             <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl">🛍️</span>
             </div>
-            <h2 className="text-lg font-bold text-sw-dark mb-1">No purchases yet</h2>
-            <p className="text-sm text-sw-grey mb-4">Your add-on purchases will appear here.</p>
+            <h2 className="text-lg font-bold text-sw-dark mb-1">{t('app.purchases.emptyTitle')}</h2>
+            <p className="text-sm text-sw-grey mb-4">{t('app.purchases.emptySub')}</p>
             <Link to="/app/dashboard" className="inline-flex items-center gap-1 text-sm font-semibold text-sw-blue">
-              ← Back to dashboard
+              {t('app.common.backToDashboardLink')}
             </Link>
           </div>
         ) : (
@@ -80,7 +80,7 @@ export default function PurchasesPage() {
                     to="/app/prompt-library"
                     className="block bg-white rounded-2xl p-4 border border-sw-grey-border text-sm font-semibold text-sw-dark"
                   >
-                    Open Prompt Library (27,000+)
+                    {t('app.purchases.openPromptLibrary')}
                   </Link>
                 ) : null}
                 {hasPlanners ? (
@@ -88,26 +88,26 @@ export default function PurchasesPage() {
                     to="/app/planners"
                     className="block bg-white rounded-2xl p-4 border border-sw-grey-border text-sm font-semibold text-sw-dark"
                   >
-                    Open your planners
+                    {t('app.purchases.openPlanners')}
                   </Link>
                 ) : null}
               </div>
             )}
             {rows.map((row) => {
               const price = formatPrice(row.amountCents)
-              const date = formatDate(row.createdAt)
+              const date = formatDate(row.createdAt, locale)
               return (
                 <div key={row.sku} className="bg-white rounded-2xl p-4 border border-sw-grey-border">
                   <div className="flex items-start justify-between gap-3">
-                    <p className="font-bold text-sw-dark">{labelFor(row.sku)}</p>
+                    <p className="font-bold text-sw-dark">{labelFor(row.sku, t, locale)}</p>
                     <span className="text-[10px] font-bold uppercase tracking-wide text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
-                      ACTIVE
+                      {t('app.common.active')}
                     </span>
                   </div>
                   <p className="text-xs text-sw-grey mt-1">
                     {[date, price].filter(Boolean).join(' · ')}
                     {date || price ? ' · ' : ''}
-                    Lifetime access
+                    {t('app.common.lifetimeAccess')}
                   </p>
                 </div>
               )

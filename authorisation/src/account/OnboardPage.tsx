@@ -6,35 +6,52 @@ import { useCurrentUser, useSession } from '@/auth/session'
 import { completeOnboarding } from '@/lib/api'
 import { focusFromQuiz } from '@/lib/quizResults'
 import { track } from '@/lib/track'
+import { useI18n } from '@/i18n/I18nProvider'
 import BrandWordmark from '@/shared/BrandWordmark'
 
-const PACES = [
-  { id: 'spark', label: 'Easy start', mins: '5 min/day', icon: '✨', accentColor: '#F59E0B' },
-  {
-    id: 'momentum',
-    label: 'Recommended',
-    mins: '15 min/day',
-    icon: '🚀',
-    accentColor: '#2563EB',
-    recommended: true,
-  },
-  { id: 'ignite', label: 'Fast-track', mins: '30 min/day', icon: '🔥', accentColor: '#EA580C' },
-]
+const PACE_IDS = ['spark', 'momentum', 'ignite'] as const
 
 function UnauthRedirect() {
+  const { t } = useI18n()
   useEffect(() => {
     window.location.href = '/login'
   }, [])
-  return <AuthSpinner message="Redirecting…" />
+  return <AuthSpinner message={t('account.common.redirecting')} />
 }
 
 function OnboardForm() {
   const navigate = useNavigate()
   const user = useCurrentUser()
   const { refresh } = useSession()
+  const { t } = useI18n()
   const [pace, setPace] = useState('momentum')
   const [busy, setBusy] = useState(false)
   const forwarded = useRef(false)
+
+  const paceMeta: Record<
+    string,
+    { labelKey: string; minsKey: string; icon: string; accentColor: string; recommended?: boolean }
+  > = {
+    spark: {
+      labelKey: 'account.onboard.paceSparkLabel',
+      minsKey: 'account.onboard.paceSparkMins',
+      icon: '✨',
+      accentColor: '#F59E0B',
+    },
+    momentum: {
+      labelKey: 'account.onboard.paceMomentumLabel',
+      minsKey: 'account.onboard.paceMomentumMins',
+      icon: '🚀',
+      accentColor: '#2563EB',
+      recommended: true,
+    },
+    ignite: {
+      labelKey: 'account.onboard.paceIgniteLabel',
+      minsKey: 'account.onboard.paceIgniteMins',
+      icon: '🔥',
+      accentColor: '#EA580C',
+    },
+  }
 
   useEffect(() => {
     if (user?.onboardingComplete && !forwarded.current) {
@@ -43,7 +60,7 @@ function OnboardForm() {
     }
   }, [user?.onboardingComplete, navigate])
 
-  const firstName = user?.name?.split(' ')[0] || 'there'
+  const firstName = user?.name?.split(' ')[0] || t('account.common.there')
   const focus = focusFromQuiz()
 
   const submit = async () => {
@@ -61,6 +78,12 @@ function OnboardForm() {
       setBusy(false)
     }
   }
+
+  const nextSteps = [
+    { icon: '✅', labelKey: 'account.onboard.stepAccountDone', done: true },
+    { icon: '📚', labelKey: 'account.onboard.stepFirstLesson', done: false },
+    { icon: '🏆', labelKey: 'account.onboard.stepFirstBadge', done: false },
+  ]
 
   if (user === undefined) return <AuthSpinner />
 
@@ -82,24 +105,23 @@ function OnboardForm() {
             <div className="relative p-6 pb-7">
               <div className="text-4xl mb-3">🎉</div>
               <h1 className="text-2xl font-extrabold text-white leading-tight mb-2">
-                Welcome, {firstName}!
+                {t('account.onboard.welcomeName').replace('{name}', firstName)}
               </h1>
-              <p className="text-blue-100 text-sm leading-relaxed">
-                Your plan is ready. One quick choice below and you&apos;re in.
-              </p>
+              <p className="text-blue-100 text-sm leading-relaxed">{t('account.onboard.planReady')}</p>
             </div>
           </div>
           <div className="mb-6">
-            <p className="text-sm font-bold text-sw-dark mb-1">How much time can you commit daily?</p>
-            <p className="text-xs text-sw-grey mb-4">You can change this anytime in settings</p>
+            <p className="text-sm font-bold text-sw-dark mb-1">{t('account.onboard.timeCommitTitle')}</p>
+            <p className="text-xs text-sw-grey mb-4">{t('account.onboard.timeCommitHint')}</p>
             <div className="space-y-2.5">
-              {PACES.map((item) => {
-                const active = pace === item.id
+              {PACE_IDS.map((id) => {
+                const item = paceMeta[id]
+                const active = pace === id
                 return (
                   <button
-                    key={item.id}
+                    key={id}
                     type="button"
-                    onClick={() => setPace(item.id)}
+                    onClick={() => setPace(id)}
                     className={`w-full flex items-center gap-4 p-4 rounded-2xl border-2 text-left transition-all active:scale-[0.98] ${
                       active ? 'border-sw-blue shadow-sm' : 'border-sw-grey-border hover:border-sw-blue/40'
                     }`}
@@ -113,14 +135,14 @@ function OnboardForm() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-sw-dark text-sm">{item.mins}</span>
+                        <span className="font-bold text-sw-dark text-sm">{t(item.minsKey)}</span>
                         {item.recommended ? (
                           <span className="text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-sw-blue/10 text-sw-blue">
-                            Popular
+                            {t('account.onboard.popular')}
                           </span>
                         ) : null}
                       </div>
-                      <p className="text-xs text-sw-grey mt-0.5">{item.label}</p>
+                      <p className="text-xs text-sw-grey mt-0.5">{t(item.labelKey)}</p>
                     </div>
                     <div
                       className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${
@@ -135,19 +157,17 @@ function OnboardForm() {
             </div>
           </div>
           <div className="rounded-xl border border-sw-grey-border p-4">
-            <p className="text-xs font-bold text-sw-grey uppercase tracking-widest mb-3">What&apos;s next</p>
+            <p className="text-xs font-bold text-sw-grey uppercase tracking-widest mb-3">
+              {t('account.onboard.whatsNext')}
+            </p>
             <div className="space-y-2.5">
-              {[
-                { icon: '✅', label: 'Account set up', done: true },
-                { icon: '📚', label: 'Start your first lesson', done: false },
-                { icon: '🏆', label: 'Earn your first badge', done: false },
-              ].map((row) => (
-                <div key={row.label} className="flex items-center gap-3">
+              {nextSteps.map((row) => (
+                <div key={row.labelKey} className="flex items-center gap-3">
                   <span className="text-base">{row.icon}</span>
                   <span
                     className={`text-sm ${row.done ? 'text-sw-grey line-through' : 'text-sw-dark font-semibold'}`}
                   >
-                    {row.label}
+                    {t(row.labelKey)}
                   </span>
                 </div>
               ))}
@@ -171,10 +191,10 @@ function OnboardForm() {
             {busy ? (
               <span className="flex items-center justify-center gap-2">
                 <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                Setting up…
+                {t('account.onboard.settingUp')}
               </span>
             ) : (
-              'Start My First Lesson →'
+              t('account.onboard.startFirstLesson')
             )}
           </button>
         </div>

@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 import { ArrowLeft } from 'lucide-react'
 import Logo from '@/funnels/claude/components/Logo'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeQuizLayoutProps {
   children: ReactNode
@@ -24,6 +26,8 @@ export default function ClaudeQuizLayout({
   showProgress = false,
   bgColor,
 }: ClaudeQuizLayoutProps) {
+  const { locale } = useI18n()
+  const copy = claudeQuizUiCopy(locale).layout
   const hasProgress = showProgress && typeof currentStep === 'number' && typeof totalSteps === 'number'
   const progressPercent = hasProgress ? Math.round(((currentStep! - 1) / totalSteps!) * 100) : 0
 
@@ -35,7 +39,7 @@ export default function ClaudeQuizLayout({
             <button
               type="button"
               onClick={onBack}
-              aria-label="Go back"
+              aria-label={copy.backAria}
               className="flex size-8 items-center justify-center rounded-full text-sw-dark transition-colors hover:bg-sw-grey-light"
             >
               <ArrowLeft className="size-[18px]" strokeWidth={2.5} />

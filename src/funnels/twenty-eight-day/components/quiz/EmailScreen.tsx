@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { EmailScreen as EmailScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
 import QuizStickyCta from '@/funnels/twenty-eight-day/components/quiz/QuizStickyCta'
+import { emailScreenCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface EmailScreenProps {
   screen: EmailScreenDef
@@ -9,13 +12,9 @@ interface EmailScreenProps {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-const FEATURES = [
-  { emoji: '📅', label: '28-day path' },
-  { emoji: '🎯', label: 'Personal plan' },
-  { emoji: '🏆', label: 'Exclusive access' },
-]
-
 export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => emailScreenCopy(locale as FunnelLocale), [locale])
   const [email, setEmail] = useState('')
   const [consent, setConsent] = useState(true)
   const [error, setError] = useState('')
@@ -24,7 +23,7 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
   const handleSubmit = () => {
     const trimmed = email.trim()
     if (!EMAIL_REGEX.test(trimmed)) {
-      setError('Please enter a valid email address')
+      setError(copy.invalidEmail)
       return
     }
     setError('')
@@ -37,7 +36,7 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
       <div className="flex w-full flex-1 flex-col px-4 pt-6 pb-32 animate-fade-up">
         <div className="mb-4 flex justify-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-sw-success/20 bg-sw-success/10 px-3 py-1.5 text-xs font-bold text-sw-success">
-            ✓ Your plan is ready
+            {copy.planReady}
           </span>
         </div>
 
@@ -49,7 +48,7 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
         </p>
 
         <div className="mb-6 flex justify-center gap-4">
-          {FEATURES.map((f) => (
+          {copy.features.map((f) => (
             <div key={f.label} className="flex flex-col items-center gap-1">
               <span className="text-xl" aria-hidden>
                 {f.emoji}
@@ -103,9 +102,7 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
               </svg>
             ) : null}
           </div>
-          <span className="text-xs leading-relaxed text-sw-grey">
-            I&apos;d like to receive my AI plan, personal tips, and exclusive offers straight to my inbox.
-          </span>
+          <span className="text-xs leading-relaxed text-sw-grey">{copy.consent}</span>
         </label>
 
         <div className="mb-2 flex items-center gap-3 rounded-2xl border border-sw-success/20 bg-sw-success/8 px-4 py-3">
@@ -113,17 +110,17 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
             🎁
           </span>
           <p className="text-sm leading-snug text-sw-dark">
-            Make sure your email is valid —{' '}
-            <span className="font-bold text-sw-success">don&apos;t miss your exclusive bonus!</span>
+            {copy.bonusLead}{' '}
+            <span className="font-bold text-sw-success">{copy.bonusBold}</span>
           </p>
         </div>
 
-        <p className="mt-2 text-center text-xs text-sw-grey">🔒 We never share your email. Unsubscribe any time.</p>
+        <p className="mt-2 text-center text-xs text-sw-grey">{copy.privacy}</p>
       </div>
 
       <QuizStickyCta>
         <button type="button" onClick={handleSubmit} disabled={submitting} className="sw-cta">
-          {submitting ? 'Unlocking your plan...' : 'UNLOCK MY PLAN →'}
+          {submitting ? copy.unlocking : copy.cta}
         </button>
       </QuizStickyCta>
     </>

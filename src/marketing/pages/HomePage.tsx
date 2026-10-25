@@ -8,10 +8,13 @@ import AiCoachSection from '@/marketing/sections/AiCoachSection'
 import SuccessStoriesSection from '@/marketing/sections/SuccessStoriesSection'
 import MoneyBackSection from '@/marketing/sections/MoneyBackSection'
 import FinalCtaSection from '@/marketing/sections/FinalCtaSection'
+import { companyPagesCopy } from '@/marketing/data/company'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function HomePage() {
-  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
+  const { locale } = useI18n()
+  usePageTitle(companyPagesCopy(locale).defaultPageTitle)
 
   return (
     <main>

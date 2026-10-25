@@ -1,5 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import QuizStickyCta from '@/funnels/twenty-eight-day/components/quiz/QuizStickyCta'
+import { salesSpinWheelCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface SalesSpinWheelScreenProps {
   name: string | null
@@ -72,7 +75,15 @@ function wedgePath(startAngle: number, endAngle: number): string {
   ].join(' ')
 }
 
-function Wheel({ rotation, spinning }: { rotation: number; spinning: boolean }) {
+function Wheel({
+  rotation,
+  spinning,
+  offSuffix,
+}: {
+  rotation: number
+  spinning: boolean
+  offSuffix: string
+}) {
   const dots = Array.from({ length: DOT_COUNT }).map((_, i) => pointOnCircle(DOT_RADIUS, (i * 360) / DOT_COUNT))
   const segmentAngle = 360 / SEGMENTS.length
 
@@ -111,7 +122,7 @@ function Wheel({ rotation, spinning }: { rotation: number; spinning: boolean }) 
                   {segment.label}
                 </tspan>
                 <tspan x={labelPoint.x} dy="16" style={{ fontSize: '11px', fontWeight: 600 }}>
-                  off
+                  {offSuffix}
                 </tspan>
               </text>
             </g>
@@ -137,14 +148,16 @@ function Wheel({ rotation, spinning }: { rotation: number; spinning: boolean }) 
 function DiscountPopup({
   name,
   onClaim,
+  copy,
 }: {
   name: string | null
   onClaim: () => void
+  copy: ReturnType<typeof salesSpinWheelCopy>
 }) {
   return (
     <div className="fixed right-0 bottom-0 left-0 z-50 rounded-t-3xl bg-white px-6 pt-8 pb-10">
       <div className="mx-auto mb-6 h-1 w-10 rounded-full bg-sw-grey-border" />
-      <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">Woo hoo! 🥳</h2>
+      <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">{copy.popupTitle}</h2>
       <div className="relative mb-4 overflow-hidden rounded-2xl border border-sw-blue-border bg-sw-blue-light">
         {CONFETTI.map((piece, i) => (
           <div
@@ -161,21 +174,21 @@ function DiscountPopup({
           />
         ))}
         <div className="relative z-10 py-7 text-center">
-          <p className="mb-1 text-base font-bold text-sw-dark">
-            {name ? `${name}, you won a discount` : 'You won a discount'}
-          </p>
-          <p className="text-5xl font-extrabold text-sw-blue">{PRIZE_PERCENT}% off</p>
+          <p className="mb-1 text-base font-bold text-sw-dark">{copy.wonDiscount(name)}</p>
+          <p className="text-5xl font-extrabold text-sw-blue">{PRIZE_PERCENT}% {copy.offSuffix}</p>
         </div>
       </div>
-      <p className="mb-6 text-center text-sm text-sw-grey">It will be applied automatically</p>
+      <p className="mb-6 text-center text-sm text-sw-grey">{copy.applied}</p>
       <button type="button" onClick={onClaim} className="sw-cta font-extrabold tracking-wide uppercase">
-        CLAIM MY DISCOUNT
+        {copy.claim}
       </button>
     </div>
   )
 }
 
 export default function SalesSpinWheelScreen({ name, onFinish }: SalesSpinWheelScreenProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => salesSpinWheelCopy(locale as FunnelLocale), [locale])
   const [rotation, setRotation] = useState(0)
   const [spinning, setSpinning] = useState(false)
   const [finished, setFinished] = useState(false)
@@ -204,15 +217,15 @@ export default function SalesSpinWheelScreen({ name, onFinish }: SalesSpinWheelS
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col overflow-x-hidden pb-32">
       <div className="mb-6 px-4 pt-8 text-center animate-fade-up">
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Spin &amp; Unlock Your
+          {copy.titleLine1}
           <br />
-          <span className="text-sw-blue">Personal Discount!</span>
+          <span className="text-sw-blue">{copy.titleLine2}</span>
         </h1>
-        <p className="text-sm text-sw-grey">Don&apos;t miss your chance to master AI with your personal reward 🎁</p>
+        <p className="text-sm text-sw-grey">{copy.subtitle}</p>
       </div>
 
       <div className="flex cursor-pointer justify-center px-4 animate-fade-up" onClick={handleSpin}>
-        <Wheel rotation={rotation} spinning={spinning} />
+        <Wheel rotation={rotation} spinning={spinning} offSuffix={copy.offSuffix} />
       </div>
 
       <QuizStickyCta zClass="z-30" compact>
@@ -222,11 +235,13 @@ export default function SalesSpinWheelScreen({ name, onFinish }: SalesSpinWheelS
           disabled={finished}
           className="sw-cta font-extrabold tracking-wider uppercase"
         >
-          {finished ? 'YOU WON 97% OFF! 🎉' : spinning ? 'SPINNING…' : 'SPIN'}
+          {finished ? copy.won : spinning ? copy.spinning : copy.spin}
         </button>
       </QuizStickyCta>
 
-      {showPopup ? <DiscountPopup name={name} onClaim={() => onFinish(PRIZE_PERCENT)} /> : null}
+      {showPopup ? (
+        <DiscountPopup name={name} onClaim={() => onFinish(PRIZE_PERCENT)} copy={copy} />
+      ) : null}
     </div>
   )
 }

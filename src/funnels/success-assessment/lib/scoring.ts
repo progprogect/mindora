@@ -1,4 +1,14 @@
 import type { FunnelAnswers } from '@/funnels/shared/types'
+import type { Locale } from '../../../../authorisation/src/i18n/locale'
+import {
+  archetypeFor,
+  dimLabels,
+  gapBullets,
+  gapDisplayLabel,
+  rewardLineCopy,
+  scoreLabelFor,
+  visionStruggleCopy,
+} from './scoringCopy'
 
 export interface SaDimension {
   id: string
@@ -28,41 +38,14 @@ export interface SaProfile {
   reward: string
 }
 
-const DIM_META: Array<{ id: string; emoji: string; label: string }> = [
-  { id: 'mindset', emoji: '🧠', label: 'Mindset' },
-  { id: 'career', emoji: '💼', label: 'Career' },
-  { id: 'business', emoji: '🏢', label: 'Business' },
-  { id: 'ai', emoji: '🤖', label: 'AI & Technology' },
-  { id: 'health', emoji: '💪', label: 'Health' },
-  { id: 'financial', emoji: '💰', label: 'Financial Wellbeing' },
-]
-
-const GAP_COPY: Record<string, string[]> = {
-  business: [
-    'Build systems that grow your income without your constant attention',
-    'Go from idea to working business model with a clear, proven path',
-  ],
-  ai: [
-    'Master AI tools in days — no tech background needed',
-    'Gain the edge that comes from mastering AI before most people even start',
-  ],
-  financial: [
-    'Build an income strategy that keeps growing even while you sleep',
-    'Replace financial stress with a clear, trackable plan you actually stick to',
-  ],
-  career: [
-    'Map a promotion-ready path with weekly actions you can actually finish',
-    'Stop guessing what to work on — follow a system matched to your role',
-  ],
-  health: [
-    'Rebuild energy with small daily habits that compound fast',
-    'Replace burnout cycles with a plan that fits a busy week',
-  ],
-  mindset: [
-    'Replace overthinking with a repeatable decision system',
-    'Build confidence through daily proof, not motivation spikes',
-  ],
-}
+const DIM_IDS = [
+  { id: 'mindset', emoji: '🧠' },
+  { id: 'career', emoji: '💼' },
+  { id: 'business', emoji: '🏢' },
+  { id: 'ai', emoji: '🤖' },
+  { id: 'health', emoji: '💪' },
+  { id: 'financial', emoji: '💰' },
+] as const
 
 function clamp(n: number) {
   return Math.max(28, Math.min(92, Math.round(n)))
@@ -72,7 +55,8 @@ function clamp(n: number) {
  * Six-dimension SA scoring. Wave 0 path (Career & Business → Building my career →
  * Stuck → …) produces overall 56 / Thriving / The Ambitious Achiever — matching live.
  */
-export function buildSaProfile(answers: FunnelAnswers): SaProfile {
+export function buildSaProfile(answers: FunnelAnswers, locale: Locale = 'en'): SaProfile {
+  const labels = dimLabels(locale)
   const focus = answers['q1-focus'] ?? 'career-business'
   const identity = answers['q2-identity'] ?? 'career-employee'
   const state = answers['q3-state'] ?? 'stuck'
@@ -137,8 +121,10 @@ export function buildSaProfile(answers: FunnelAnswers): SaProfile {
   if (focus === 'mindset-confidence') scores.mindset += 8
   if (focus === 'career-business' && identity !== 'business-founder') scores.business -= 3
 
-  const dimensions: SaDimension[] = DIM_META.map((d) => ({
-    ...d,
+  const dimensions: SaDimension[] = DIM_IDS.map((d) => ({
+    id: d.id,
+    emoji: d.emoji,
+    label: labels[d.id],
     score: clamp(scores[d.id] ?? 50),
   }))
 
@@ -163,7 +149,7 @@ export function buildSaProfile(answers: FunnelAnswers): SaProfile {
   }
 
   const overall = Math.round(dimensions.reduce((sum, d) => sum + d.score, 0) / dimensions.length)
-  const scoreLabel = overall <= 39 ? 'Building' : overall <= 54 ? 'Rising' : overall <= 69 ? 'Thriving' : 'Peak'
+  const scoreLabel = scoreLabelFor(overall, locale)
 
   const gaps = [...dimensions]
     .sort((a, b) => a.score - b.score)
@@ -171,30 +157,13 @@ export function buildSaProfile(answers: FunnelAnswers): SaProfile {
     .map((d) => ({
       id: d.id,
       emoji: d.emoji,
-      label: d.id === 'ai' ? 'AI & Technology' : d.id === 'financial' ? 'Financial Wellbeing' : `${d.label}${d.id === 'business' ? ' Mastery' : d.id === 'career' ? '' : ''}`,
+      label: gapDisplayLabel(locale, d.id, d.label),
       score: d.score,
       unlock: 100 - d.score,
-      bullets: GAP_COPY[d.id] ?? GAP_COPY.career,
+      bullets: gapBullets(locale, d.id),
     }))
 
-  gaps[0].label = gaps[0].id === 'business' ? 'Business Mastery' : gaps[0].label
-  gaps[1].label = gaps[1].id === 'ai' ? 'AI & Technology' : gaps[1].label
-  gaps[2].label = gaps[2].id === 'financial' ? 'Financial Wellbeing' : gaps[2].label
-
-  const archetype =
-    identity === 'business-founder'
-      ? { name: 'The Visionary Founder', emoji: '🏢', quote: "You're building something bigger than a job. MindoraAcademy gives it a system." }
-      : identity === 'starting-out'
-        ? { name: 'The Rising Starter', emoji: '🌱', quote: "You're early — and that's an advantage. We'll help you skip the wasted years." }
-        : identity === 'ready-to-change'
-          ? { name: 'The Bold Transformer', emoji: '🔄', quote: "You're ready for a rewrite. MindoraAcademy turns that itch into a 90-day plan." }
-          : focus === 'health-vitality'
-            ? { name: 'The Wellness Warrior', emoji: '💪', quote: 'Energy first. Everything else compounds from there.' }
-            : {
-                name: 'The Ambitious Achiever',
-                emoji: '🚀',
-                quote: "You're not just aiming for a job — you're building a legacy. MindoraAcademy will help you get there faster.",
-              }
+  const archetype = archetypeFor(locale, identity, focus)
 
   return {
     score: overall,
@@ -209,31 +178,24 @@ export function buildSaProfile(answers: FunnelAnswers): SaProfile {
   }
 }
 
-export function formatPlus90(from = new Date()): string {
+export function formatPlus90(from = new Date(), locale: Locale = 'en'): string {
   const d = new Date(from)
   d.setDate(d.getDate() + 90)
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  return d.toLocaleDateString(locale === 'ru' ? 'ru-RU' : 'en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 }
 
-export function rewardLine(reward: string): string {
-  if (reward === 'trip') return "Picture yourself booking that trip — that's what 90 days of momentum feels like."
-  if (reward === 'dinner') return "Picture that celebration dinner — that's what 90 days of momentum feels like."
-  if (reward === 'purchase') return "Picture unboxing that upgrade — that's what 90 days of momentum feels like."
-  if (reward === 'savings') return "Picture the balance climbing — that's what 90 days of momentum feels like."
-  return "Picture sharing that win with your family — that's what 90 days of momentum feels like."
+export function rewardLine(reward: string, locale: Locale = 'en'): string {
+  return rewardLineCopy(locale, reward)
 }
 
-export function visionStruggle(vision: string): { without: string[]; with: string[]; kicker: string } {
-  if (vision === 'financial-freedom') {
-    return {
-      kicker: "Feeling stuck with money won't last — here's what the next 90 days look like:",
-      without: ['Paycheque to paycheque with no buffer', 'No clear path to extra income', 'Financial freedom still out of reach'],
-      with: ['A written income plan you actually follow', 'A side stream started, not just discussed', 'A clear path to financial freedom mapped'],
-    }
-  }
-  return {
-    kicker: "Feeling stuck in your career won't last — here's what the next 90 days look like:",
-    without: ['Stuck while others get promoted', 'No clear path forward', 'Financial freedom still out of reach'],
-    with: ['Clear career acceleration plan', 'Promotion-ready with confidence', 'A clear path to financial freedom mapped'],
-  }
+export function visionStruggle(vision: string, locale: Locale = 'en'): {
+  without: string[]
+  with: string[]
+  kicker: string
+} {
+  return visionStruggleCopy(locale, vision)
 }

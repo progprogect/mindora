@@ -2,12 +2,15 @@ import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
+import { useI18n } from '../../authorisation/src/i18n/I18nProvider'
+import { checkoutUiCopy } from '@/shared/i18n/checkoutUiCopy'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progress'
 
 export default function CheckoutSetupPage() {
-  usePageTitle(PAGE_TITLE)
+  const { locale } = useI18n()
+  const ui = checkoutUiCopy(locale)
+  usePageTitle(ui.pageTitle)
   const [params] = useSearchParams()
   const [step, setStep] = useState<'email' | 'code'>('email')
   const [email, setEmail] = useState(() => params.get('email')?.trim() || resolveKnownEmail(params) || '')
@@ -26,7 +29,7 @@ export default function CheckoutSetupPage() {
     await new Promise((r) => setTimeout(r, 500))
     setBusy(false)
     if (!EMAIL_OK.test(email.trim())) {
-      setError('Please enter a valid email address.')
+      setError(ui.emailInvalid)
       return
     }
     rememberCheckoutEmail(email)
@@ -39,7 +42,7 @@ export default function CheckoutSetupPage() {
     setBusy(true)
     await new Promise((r) => setTimeout(r, 500))
     setBusy(false)
-    setError('Invalid or expired code. Please try again.')
+    setError(ui.verifyCodeError)
   }
 
   if (step === 'code') {
@@ -49,10 +52,10 @@ export default function CheckoutSetupPage() {
           <div className="animate-fade-up">
             <div className="mb-6 text-center text-4xl">🎉</div>
             <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark">
-              Check your inbox
+              {ui.checkInbox}
             </h1>
             <p className="mb-8 text-center text-sm leading-relaxed text-sw-grey">
-              We sent a 6-digit code to <span className="font-semibold text-sw-dark">{email}</span>
+              {ui.sentCodeTo} <span className="font-semibold text-sw-dark">{email}</span>
             </p>
             <input
               type="text"
@@ -68,7 +71,7 @@ export default function CheckoutSetupPage() {
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && code.length === 6) void verifyCode()
               }}
-              placeholder="000000"
+              placeholder={ui.codePlaceholder}
               disabled={busy}
               autoFocus
               className="w-full rounded-2xl border-2 border-sw-grey-border bg-white px-5 py-4 text-center text-3xl font-bold tracking-[0.5em] text-sw-dark transition-colors placeholder:font-normal placeholder:tracking-normal placeholder:text-sw-grey/30 focus:border-sw-blue focus:outline-none"
@@ -84,7 +87,7 @@ export default function CheckoutSetupPage() {
               disabled={busy}
               className="mt-6 w-full text-center text-sm text-sw-grey"
             >
-              Didn&apos;t receive it? <span className="font-semibold text-sw-blue">Send again</span>
+              {ui.didntReceive} <span className="font-semibold text-sw-blue">{ui.sendAgain}</span>
             </button>
             <button
               type="button"
@@ -92,7 +95,7 @@ export default function CheckoutSetupPage() {
               disabled={busy || code.length < 6}
               className="mt-6 w-full rounded-xl bg-sw-blue py-3.5 text-base font-bold text-white transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
             >
-              {busy ? 'Verifying…' : 'Continue'}
+              {busy ? ui.verifying : ui.continue}
             </button>
           </div>
         </main>
@@ -106,20 +109,16 @@ export default function CheckoutSetupPage() {
         <div className="animate-fade-up">
           <div className="mb-6 text-center text-4xl">🎉</div>
           <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark">
-            You&apos;re in! Set up your account
+            {ui.setupTitle}
           </h1>
-          <p className="mb-6 text-center text-sm leading-relaxed text-sw-grey">
-            Enter the email you&apos;d like to use for your account. We&apos;ll send a quick verification
-            code.
-          </p>
+          <p className="mb-6 text-center text-sm leading-relaxed text-sw-grey">{ui.setupBlurb}</p>
           <div
             className="mb-6 rounded-xl px-4 py-3 text-sm leading-relaxed text-sw-dark"
             style={{ backgroundColor: 'hsl(38 92% 95%)', border: '1px solid hsl(38 92% 80%)' }}
           >
-            ⚠️ All login codes and course access emails will be sent to this address. Make sure it&apos;s
-            an email you can access.
+            {ui.emailWarning}
           </div>
-          <label className="mb-2 block text-sm font-medium text-sw-dark">Email address</label>
+          <label className="mb-2 block text-sm font-medium text-sw-dark">{ui.emailAddress}</label>
           <input
             type="email"
             value={email}
@@ -127,7 +126,7 @@ export default function CheckoutSetupPage() {
             onKeyDown={(e) => {
               if (e.key === 'Enter') void sendCode()
             }}
-            placeholder="you@email.com"
+            placeholder={ui.emailPlaceholder}
             disabled={busy}
             autoFocus
             className="w-full rounded-xl border border-sw-grey-border px-4 py-3 text-base text-sw-dark focus:border-sw-blue focus:ring-1 focus:ring-sw-blue focus:outline-none"
@@ -139,11 +138,9 @@ export default function CheckoutSetupPage() {
             disabled={busy || !email.trim()}
             className="mt-5 w-full rounded-xl bg-sw-blue py-3.5 text-base font-bold text-white transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {busy ? 'Sending…' : 'Continue'}
+            {busy ? ui.sending : ui.continue}
           </button>
-          <p className="mt-4 text-center text-xs leading-relaxed text-sw-grey">
-            We&apos;ll send a 6-digit code to verify your email. No password needed.
-          </p>
+          <p className="mt-4 text-center text-xs leading-relaxed text-sw-grey">{ui.codeHint}</p>
         </div>
       </main>
     </div>

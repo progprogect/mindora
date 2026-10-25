@@ -1,0 +1,153 @@
+{
+  "singlePriceCents": 295,
+  "bundlePriceCents": 795,
+  "bundleOtoPriceCents": 495,
+  "bundleSlug": "planner-bundle",
+  "librarySlug": "planner-bundle-library",
+  "listValueCents": 2950,
+  "totalPdfPages": 289,
+  "planners": [
+    {
+      "id": "lets-get-productive",
+      "name": "Планер «Давайте продуктивно»",
+      "benefit": "Планируйте день вокруг работы, которая реально двигает дела вперёд.",
+      "priceCents": 295,
+      "order": 1,
+      "pdfPages": 29,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/eHuV-68fS6l_rBNZn9PKD/cover-lets-get-productive-m_WAf6nI.png"
+    },
+    {
+      "id": "deep-focus-at-work",
+      "name": "Планер «Глубокий фокус на работе»",
+      "benefit": "Выделяйте блоки настоящего фокуса в рабочий день, полный отвлечений.",
+      "priceCents": 295,
+      "order": 2,
+      "pdfPages": 30,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/CyY-HiWWuGu1zoFawjanq/cover-deep-focus-at-work-EYX4_NrU.png"
+    },
+    {
+      "id": "distraction-free",
+      "name": "Планер «Без отвлечений»",
+      "benefit": "Замечайте, что сбивает с задачи, и выстраивайте день так, чтобы этого было меньше.",
+      "priceCents": 295,
+      "order": 3,
+      "pdfPages": 27,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/MzFIHoFyjWC-qjC7moyc7/cover-distraction-free-e2tmkcCl.png"
+    },
+    {
+      "id": "overcoming-lazy-days",
+      "name": "Планер «Как пережить ленивые дни»",
+      "benefit": "Снова начинайте в те дни, когда мотивации совсем нет.",
+      "priceCents": 295,
+      "order": 4,
+      "pdfPages": 31,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/gTLFVnOpxLRar4KS-OeGB/cover-overcoming-lazy-days-rOvqEU0m.png"
+    },
+    {
+      "id": "personal-growth",
+      "name": "Планер «Личностный рост»",
+      "benefit": "Выберите, что хотите улучшить, и отслеживайте это неделя за неделей.",
+      "priceCents": 295,
+      "order": 5,
+      "pdfPages": 26,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/TguxKSL_lSj25gXUljE68/cover-personal-growth-A_jvXmhP.png"
+    },
+    {
+      "id": "self-reflection-journal",
+      "name": "Журнал саморефлексии",
+      "benefit": "Осмыслите, как на самом деле прошли день или неделя — с подсказками, которые ведут вас.",
+      "priceCents": 295,
+      "order": 6,
+      "pdfPages": 35,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/VhGuWaukyO6SUa9ukY4r0/cover-self-reflection-journal-xzQQFtMX.png"
+    },
+    {
+      "id": "dream-bigger",
+      "name": "Планер «Мечтай масштабнее»",
+      "benefit": "Превратите размытое желание в что-то конкретное, с чего можно начать.",
+      "priceCents": 295,
+      "order": 7,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/Utl5BPEK5dp_57A1ZkfEP/cover-dream-bigger-rMZCKIyX.png"
+    },
+    {
+      "id": "live-with-purpose",
+      "name": "Планер «Жизнь с целью»",
+      "benefit": "Поймите, что для вас важно, и планируйте вокруг этого, а не мимо.",
+      "priceCents": 295,
+      "order": 8,
+      "pdfPages": 27,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/cIj3kMximL9TUn5ScPWJS/cover-live-with-purpose-FPuQ9hYq.png"
+    },
+    {
+      "id": "find-your-passion",
+      "name": "Рабочая тетрадь «Найди своё призвание»",
+      "benefit": "Поймите, что вас по-настоящему увлекает — через вопросы, а не догадки.",
+      "priceCents": 295,
+      "order": 9,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/Oc0QCkNOynB5WsfXhrmTg/cover-find-your-passion-hKoWyrVR.png"
+    },
+    {
+      "id": "financial-discipline",
+      "name": "Планер «Финансовая дисциплина»",
+      "benefit": "Выработайте более устойчивые денежные привычки и увидьте, куда уходят деньги сейчас.",
+      "priceCents": 295,
+      "order": 10,
+      "pdfPages": 28,
+      "coverUrl": "https://assets.macaly-user-data.dev/fa0r54ycx08p340or5ninvvp/b6b7hxj9os64fn0my7zbdtx7/rHkYk7cnpnpJGJYfCcZdx/cover-financial-discipline-wpRH-6Vp.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": "productivity-and-focus",
+      "name": "Продуктивность и фокус",
+      "summary": "Планируйте день вокруг реальной работы и защищайте время, чтобы её делать.",
+      "plannerIds": [
+        "lets-get-productive",
+        "deep-focus-at-work",
+        "distraction-free",
+        "overcoming-lazy-days"
+      ],
+      "icon": "target",
+      "accent": "success"
+    },
+    {
+      "id": "purpose-and-direction",
+      "name": "Цель и направление",
+      "summary": "Поймите, чего вы на самом деле хотите, и превратите это в что-то конкретное.",
+      "plannerIds": [
+        "dream-bigger",
+        "live-with-purpose",
+        "find-your-passion"
+      ],
+      "icon": "rocket",
+      "accent": "purple"
+    },
+    {
+      "id": "growth-and-reflection",
+      "name": "Личностный рост",
+      "summary": "Выберите, что улучшать, и честно оглянитесь на то, как это получилось.",
+      "plannerIds": [
+        "personal-growth",
+        "self-reflection-journal"
+      ],
+      "icon": "compass",
+      "accent": "coral"
+    },
+    {
+      "id": "money-habits",
+      "name": "Денежные привычки",
+      "summary": "Увидьте, куда уходят деньги, и выработайте вокруг этого более устойчивые привычки.",
+      "plannerIds": [
+        "financial-discipline"
+      ],
+      "icon": "wallet",
+      "accent": "teal"
+    }
+  ],
+  "pdfsInBundle": false,
+  "localCovers": "extracted/planners/covers/{id}.png (10 files, downloaded from coverUrl)",
+  "placeholderPdfs": "extracted/planners/placeholders/{id}.pdf (1-page, cover art — not the 289-page product PDFs)",
+  "pdfGap": "Planner PDF files are not in the client bundle (only coverUrl). Placeholder 1-page PDFs from covers until Wave 7."
+}

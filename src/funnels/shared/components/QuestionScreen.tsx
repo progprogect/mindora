@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import type { QuestionScreenDef } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface QuestionScreenProps {
   screen: QuestionScreenDef
@@ -10,6 +12,8 @@ interface QuestionScreenProps {
 const AUTO_ADVANCE_DELAY_MS = 480
 
 export default function QuestionScreen({ screen, initialSelected, onAnswer }: QuestionScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const [selected, setSelected] = useState<string | null>(initialSelected ?? null)
 
   const handleSelect = (value: string) => {
@@ -21,7 +25,7 @@ export default function QuestionScreen({ screen, initialSelected, onAnswer }: Qu
   return (
     <div className="flex flex-1 flex-col animate-fade-up pt-8 pb-8">
       <p className="mb-4 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">
-        Question {screen.step} of {screen.totalSteps}
+        {ui.questionOf(screen.step, screen.totalSteps)}
       </p>
       <h2 className="mb-2 text-center text-2xl leading-tight font-bold text-sw-dark sm:text-3xl">{screen.question}</h2>
       {screen.subtext ? (

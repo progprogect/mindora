@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 import { ChevronLeft } from 'lucide-react'
 import BrandWordmark from '@/shared/components/BrandWordmark'
+import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeSalesFunnelLayoutProps {
   step: number
@@ -21,6 +23,8 @@ export default function ClaudeSalesFunnelLayout({
   onBack,
   children,
 }: ClaudeSalesFunnelLayoutProps) {
+  const { locale } = useI18n()
+  const layoutCopy = claudeSalesUiCopy(locale).layout
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden bg-sw-white">
       <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
@@ -29,7 +33,7 @@ export default function ClaudeSalesFunnelLayout({
             <button
               type="button"
               onClick={onBack}
-              aria-label="Go back"
+              aria-label={layoutCopy.backAria}
               className="-ml-2 p-2 text-sw-dark transition-colors hover:text-sw-blue"
             >
               <ChevronLeft className="size-5" strokeWidth={2.5} />

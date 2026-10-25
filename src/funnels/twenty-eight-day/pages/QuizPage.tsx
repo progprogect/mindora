@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { quizScreens } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { quizScreensFor, type FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { quizPageCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
 import type { QuizRole, QuizState } from '@/funnels/twenty-eight-day/types/quiz'
 import {
   loadQuizState,
@@ -33,12 +35,11 @@ import SalesSpinWheelScreen from '@/funnels/twenty-eight-day/components/sales/Sa
 import SalesPlanScreen from '@/funnels/twenty-eight-day/components/sales/SalesPlanScreen'
 
 const FUNNEL = '28-day-ai-challenge'
-const TOTAL_QUIZ_SCREENS = quizScreens.length
 const HIDE_PROGRESS_TYPES = new Set(['loading', 'social-proof', 'interstitial', 'email', 'name-capture'])
 
-function findProgressStep(index: number): number {
+function findProgressStep(screens: ReturnType<typeof quizScreensFor>, index: number): number {
   for (let i = index; i >= 0; i -= 1) {
-    const screen = quizScreens[i]
+    const screen = screens[i]
     if (screen.type === 'question' || screen.type === 'ai-tools') return screen.step
   }
   return 0
@@ -46,6 +47,11 @@ function findProgressStep(index: number): number {
 
 export default function QuizPage() {
   const navigate = useNavigate()
+  const { locale } = useI18n()
+  const funnelLocale = locale as FunnelLocale
+  const quizScreens = quizScreensFor(funnelLocale)
+  const pageCopy = quizPageCopy(funnelLocale)
+  const totalQuizScreens = quizScreens.length
   const [quizState, setQuizState] = useState<QuizState>(() => loadQuizState())
   const [salesStep, setSalesStep] = useState<number>(() => loadSalesStep())
   const [percentOff, setPercentOff] = useState<number>(50)
@@ -69,21 +75,22 @@ export default function QuizPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const quizFinished = quizState.step >= TOTAL_QUIZ_SCREENS
+  const quizFinished = quizState.step >= totalQuizScreens
   const currentScreen = quizFinished ? null : quizScreens[quizState.step]
 
   const profile = useMemo(
-    () => buildProfile(quizState.role, quizState.answers),
-    [quizState.role, quizState.answers],
+    () => buildProfile(quizState.role, quizState.answers, funnelLocale),
+    [quizState.role, quizState.answers, funnelLocale],
   )
 
   const handleBack = useCallback(() => {
     setQuizState((prev) => {
       let nextStep = prev.step - 1
-      if (nextStep >= 0 && quizScreens[nextStep]?.type === 'loading') nextStep -= 1
+      const screens = quizScreensFor(funnelLocale)
+      if (nextStep >= 0 && screens[nextStep]?.type === 'loading') nextStep -= 1
       return { ...prev, step: Math.max(0, nextStep) }
     })
-  }, [])
+  }, [funnelLocale])
 
   const handleIdentitySelect = useCallback(
     (optionId: string) => {
@@ -222,19 +229,19 @@ export default function QuizPage() {
         footer={
           salesStep === 0 ? (
             <button type="button" onClick={() => goToSalesStep(1)} className="sw-cta animate-pulse-cta">
-              See My Plan →
+              {pageCopy.seeMyPlan}
             </button>
           ) : salesStep === 1 ? (
             <button type="button" onClick={() => goToSalesStep(2)} className="sw-cta animate-pulse-cta">
-              Continue →
+              {pageCopy.continue}
             </button>
           ) : salesStep === 2 ? (
             <button type="button" onClick={() => goToSalesStep(3)} className="sw-cta animate-pulse-cta">
-              Continue →
+              {pageCopy.continue}
             </button>
           ) : salesStep === 3 ? (
             <button type="button" onClick={() => goToSalesStep(4)} className="sw-cta animate-pulse-cta">
-              Start My 28-Day AI Challenge →
+              {pageCopy.startChallenge}
             </button>
           ) : undefined
         }
@@ -267,7 +274,7 @@ export default function QuizPage() {
 
   if (!currentScreen) return null
 
-  const progressCurrent = findProgressStep(quizState.step)
+  const progressCurrent = findProgressStep(quizScreens, quizState.step)
   const showProgress = quizState.step > 0 && !HIDE_PROGRESS_TYPES.has(currentScreen.type)
   const dominantEcho = getDominantEcho(quizState.answers)
   const logoVariant = currentScreen.type === 'name-capture' ? 'text' : undefined

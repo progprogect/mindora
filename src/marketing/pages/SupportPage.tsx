@@ -3,18 +3,18 @@ import { Link, useSearchParams } from 'react-router-dom'
 import FaqAccordion from '@/marketing/components/FaqAccordion'
 import MayaChat, { OPEN_MAYA_EVENT } from '@/marketing/components/MayaChat'
 import SupportContactForm from '@/marketing/components/SupportContactForm'
-import {
-  FAQ_ARTICLES,
-  FAQ_CATEGORIES,
-  POPULAR_IDS,
-  searchFaq,
-} from '@/marketing/data/faq'
+import { faqCopy, searchFaq, supportUiCopy } from '@/marketing/data/faq'
+import { moneyBackCopy } from '@/marketing/data/moneyBack'
 import { ROUTES } from '@/marketing/data/nav'
-import { MONEY_BACK_CHIP } from '@/marketing/data/moneyBack'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function SupportPage() {
-  usePageTitle('Support Center — MindoraAcademy.com | Help, Billing, Refunds & FAQs')
+  const { locale } = useI18n()
+  const ui = supportUiCopy(locale)
+  const faq = faqCopy(locale)
+  const moneyBack = moneyBackCopy(locale)
+  usePageTitle(ui.pageTitle)
   const [params] = useSearchParams()
   const autoOpen = params.get('chat') === 'open'
   const [query, setQuery] = useState('')
@@ -22,10 +22,13 @@ export default function SupportPage() {
   const [transcript, setTranscript] = useState<string>()
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
 
-  const results = useMemo(() => (query.trim() ? searchFaq(query) : null), [query])
+  const results = useMemo(
+    () => (query.trim() ? searchFaq(query, locale) : null),
+    [query, locale],
+  )
   const popular = useMemo(
-    () => FAQ_ARTICLES.filter((a) => (POPULAR_IDS as readonly string[]).includes(a.id)),
-    [],
+    () => faq.articles.filter((a) => (faq.popularIds as readonly string[]).includes(a.id)),
+    [faq.articles, faq.popularIds],
   )
 
   useEffect(() => {
@@ -45,13 +48,13 @@ export default function SupportPage() {
       <section className="bg-sw-dark px-4 py-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-3 text-sm font-semibold tracking-widest text-white/50 uppercase">
-            Support Center
+            {ui.kicker}
           </p>
-          <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">How can we help you?</h1>
+          <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">{ui.heading}</h1>
           <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-sw-blue px-3 py-1.5 text-xs font-bold text-white">
               <span aria-hidden="true">⚡</span>
-              Chat with Maya for instant support
+              {ui.mayaBadge}
             </span>
           </div>
           <div className="relative mx-auto max-w-lg">
@@ -65,9 +68,9 @@ export default function SupportPage() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search for answers..."
+              placeholder={ui.searchPlaceholder}
               className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pr-4 pl-12 text-base text-white backdrop-blur-sm transition-all placeholder-white/40 focus:border-sw-blue/50 focus:ring-2 focus:ring-sw-blue/50 focus:outline-none"
-              aria-label="Search support articles"
+              aria-label={ui.searchAria}
             />
           </div>
         </div>
@@ -89,14 +92,14 @@ export default function SupportPage() {
         {results !== null ? (
           <section className="mb-10">
             <p className="mb-4 text-sm font-semibold text-sw-grey">
-              {results.length} result{results.length !== 1 ? 's' : ''} for &quot;{query}&quot;
+              {ui.resultsFor(results.length, query)}
             </p>
             {results.length === 0 ? (
               <div className="rounded-2xl border border-sw-grey-border bg-white p-8 text-center">
                 <p className="mb-3 text-2xl">🤔</p>
-                <p className="mb-2 font-semibold text-sw-dark">No articles found</p>
+                <p className="mb-2 font-semibold text-sw-dark">{ui.noArticlesTitle}</p>
                 <p className="text-sm text-sw-grey">
-                  Try different keywords, or{' '}
+                  {ui.noArticlesBody}{' '}
                   <a
                     href="#contact-form"
                     onClick={(e) => {
@@ -105,7 +108,7 @@ export default function SupportPage() {
                     }}
                     className="cursor-pointer font-semibold text-sw-blue hover:underline"
                   >
-                    contact our team
+                    {ui.contactTeam}
                   </a>
                   .
                 </p>
@@ -127,9 +130,9 @@ export default function SupportPage() {
         ) : (
           <>
             <section className="mb-12">
-              <h2 className="mb-5 text-lg font-extrabold text-sw-dark">Browse by topic</h2>
+              <h2 className="mb-5 text-lg font-extrabold text-sw-dark">{ui.browseByTopic}</h2>
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {FAQ_CATEGORIES.map((cat) => (
+                {faq.categories.map((cat) => (
                   <button
                     key={cat.id}
                     type="button"
@@ -147,7 +150,7 @@ export default function SupportPage() {
             </section>
 
             <section className="mb-12">
-              <h2 className="mb-5 text-lg font-extrabold text-sw-dark">Most popular questions</h2>
+              <h2 className="mb-5 text-lg font-extrabold text-sw-dark">{ui.popularHeading}</h2>
               <div className="space-y-3">
                 {popular.map((article) => (
                   <FaqAccordion
@@ -161,7 +164,7 @@ export default function SupportPage() {
               </div>
             </section>
 
-            {FAQ_CATEGORIES.map((cat) => (
+            {faq.categories.map((cat) => (
               <section
                 key={cat.id}
                 ref={(el) => {
@@ -189,7 +192,7 @@ export default function SupportPage() {
         )}
 
         <section className="mb-10">
-          <h2 className="mb-4 text-lg font-extrabold text-sw-dark">Quick actions</h2>
+          <h2 className="mb-4 text-lg font-extrabold text-sw-dark">{ui.quickActions}</h2>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <Link
               to="/app/profile"
@@ -200,9 +203,9 @@ export default function SupportPage() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-sw-dark transition-colors group-hover:text-sw-blue">
-                  Cancel subscription
+                  {ui.cancelSubscription}
                 </p>
-                <p className="text-[11px] text-sw-grey">Go to your profile to cancel</p>
+                <p className="text-[11px] text-sw-grey">{ui.cancelHint}</p>
               </div>
             </Link>
             <a
@@ -214,9 +217,9 @@ export default function SupportPage() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-sw-dark transition-colors group-hover:text-sw-blue">
-                  Request a refund
+                  {ui.requestRefund}
                 </p>
-                  <p className="text-[11px] text-sw-grey">{MONEY_BACK_CHIP}</p>
+                <p className="text-[11px] text-sw-grey">{moneyBack.chip}</p>
               </div>
             </a>
             <button
@@ -229,38 +232,38 @@ export default function SupportPage() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-sw-dark transition-colors group-hover:text-sw-blue">
-                  Can&apos;t log in?
+                  {ui.cantLogin}
                 </p>
-                <p className="text-[11px] text-sw-grey">Ask Maya — answers in minutes, 24/7</p>
+                <p className="text-[11px] text-sw-grey">{ui.cantLoginHint}</p>
               </div>
             </button>
           </div>
         </section>
 
         <section id="contact-form" className="mb-10 scroll-mt-24">
-          <h2 className="mb-3 text-lg font-extrabold text-sw-dark">Still need help?</h2>
+          <h2 className="mb-3 text-lg font-extrabold text-sw-dark">{ui.stillNeedHelp}</h2>
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-sw-blue/10 px-3 py-1.5 text-xs font-bold text-sw-blue">
               <span aria-hidden="true">⚡</span>
-              Chat with Maya for instant support
+              {ui.mayaBadge}
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-sw-grey-border bg-white px-3 py-1.5 text-xs font-semibold text-sw-grey">
               <span aria-hidden="true">✉️</span>
-              Email support for answers 1-3 business days
+              {ui.emailSupport}
             </span>
           </div>
           <SupportContactForm transcript={transcript} />
         </section>
 
         <div className="mb-10 flex flex-wrap justify-center gap-4 text-xs text-sw-grey">
-          <span className="flex items-center gap-1.5">✅ {MONEY_BACK_CHIP}</span>
-          <span className="flex items-center gap-1.5">💬 Maya answers in minutes, 24/7</span>
-          <span className="flex items-center gap-1.5">🔒 No hidden fees</span>
+          <span className="flex items-center gap-1.5">✅ {moneyBack.chip}</span>
+          <span className="flex items-center gap-1.5">💬 {ui.mayaFooter}</span>
+          <span className="flex items-center gap-1.5">🔒 {ui.noHiddenFees}</span>
         </div>
 
         <div className="pb-6 text-center">
           <Link to={ROUTES.home} className="text-sm text-sw-grey transition-colors hover:text-sw-blue">
-            ← Back to MindoraAcademy.com
+            {ui.backHome}
           </Link>
         </div>
       </div>

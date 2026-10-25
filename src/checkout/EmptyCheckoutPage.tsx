@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useI18n } from '../../authorisation/src/i18n/I18nProvider'
+import { checkoutUiCopy } from '@/shared/i18n/checkoutUiCopy'
 
 const CheckoutPage = lazy(() => import('@/pages/CheckoutPage'))
 
@@ -9,7 +11,8 @@ const CheckoutPage = lazy(() => import('@/pages/CheckoutPage'))
  * `?product=` is the expired-offer return from the mounted 28-day / Claude funnels.
  */
 export default function EmptyCheckoutPage() {
-  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
+  const { locale } = useI18n()
+  usePageTitle(checkoutUiCopy(locale).pageTitle)
   const [params] = useSearchParams()
   if (params.get('product')) {
     return (

@@ -1,4 +1,6 @@
 import type { SocialProofScreenDef } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface SocialProofScreenProps {
   screen: SocialProofScreenDef
@@ -8,6 +10,8 @@ interface SocialProofScreenProps {
 const AVATAR_COLORS = ['bg-indigo-600', 'bg-cyan-600', 'bg-emerald-600', 'bg-amber-600', 'bg-red-600']
 
 export default function SocialProofScreen({ screen, echoValue }: SocialProofScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const headline =
     (echoValue && screen.echoHeadline?.[echoValue]) || screen.headline
   const copy = (echoValue && screen.echoCopy?.[echoValue]) || screen.copy
@@ -16,7 +20,7 @@ export default function SocialProofScreen({ screen, echoValue }: SocialProofScre
   return (
     <div className="flex w-full flex-1 flex-col items-center justify-center px-4 pt-8 pb-24 animate-fade-up">
       {screen.heroImage ? (
-        <img src={screen.heroImage} alt="Claude AI" className="mb-4 h-auto w-28 object-contain" />
+        <img src={screen.heroImage} alt={ui.claudeHeroAlt} className="mb-4 h-auto w-28 object-contain" />
       ) : null}
 
       <h2 className="mb-4 text-center text-2xl leading-tight font-bold text-sw-dark sm:text-3xl">{headline}</h2>
@@ -38,7 +42,7 @@ export default function SocialProofScreen({ screen, echoValue }: SocialProofScre
             </div>
           ))}
         </div>
-        <p className="text-xs font-medium text-sw-grey">{screen.avatarsCaption ?? 'Joined this week'}</p>
+        <p className="text-xs font-medium text-sw-grey">{screen.avatarsCaption ?? ui.socialJoinedThisWeek}</p>
       </div>
 
       <p className="mb-8 max-w-xs text-center text-sm text-sw-grey">{copy}</p>
@@ -50,7 +54,7 @@ export default function SocialProofScreen({ screen, echoValue }: SocialProofScre
           </span>
         ))}
         <span className="ml-1 text-sm font-semibold text-sw-dark">
-          {screen.rating ?? '4.9 / 5 from 12,400+ learners'}
+          {screen.rating ?? ui.socialRatingDefault}
         </span>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import { COACH_BULLETS } from '@/marketing/data/home'
+import { homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import { ROUTES } from '@/marketing/data/nav'
 
 function SunIcon({ size }: { size: number }) {
@@ -40,6 +42,10 @@ function CoachDot() {
 }
 
 export default function AiCoachSection() {
+  const { locale } = useI18n()
+  const { coachBullets } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).aiCoach
+
   return (
     <section className="relative overflow-hidden bg-sw-dark py-20 sm:py-28">
       <div className="pointer-events-none absolute top-0 left-1/2 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-sw-blue/10 blur-3xl" />
@@ -52,10 +58,10 @@ export default function AiCoachSection() {
                   <SunIcon size={18} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-white">Your AI Coach</p>
+                  <p className="text-sm font-semibold text-white">{copy.chatTitle}</p>
                   <div className="flex items-center gap-1">
                     <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-400" />
-                    <span className="text-xs text-green-400">Online now</span>
+                    <span className="text-xs text-green-400">{copy.onlineNow}</span>
                   </div>
                 </div>
               </div>
@@ -63,28 +69,24 @@ export default function AiCoachSection() {
               <div className="max-h-80 space-y-4 overflow-y-auto p-5">
                 <div className="flex justify-end gap-3">
                   <div className="max-w-[80%] rounded-2xl rounded-br-sm bg-sw-blue px-4 py-3 text-sm leading-relaxed text-white">
-                    I&apos;ve been told to ask for a pay rise but I don&apos;t know how to start the conversation.
+                    {copy.userMsg1}
                   </div>
                 </div>
                 <div className="flex justify-start gap-3">
                   <CoachDot />
                   <div className="max-w-[80%] rounded-2xl rounded-bl-sm bg-white/10 px-4 py-3 text-sm leading-relaxed text-white/90">
-                    Great timing to work on this! Based on your roadmap, you&apos;re currently at the
-                    &apos;Confidence&apos; milestone in your Career path. Let&apos;s prepare you for exactly this
-                    conversation. When did you last have a performance review?
+                    {copy.coachMsg1}
                   </div>
                 </div>
                 <div className="flex justify-end gap-3">
                   <div className="max-w-[80%] rounded-2xl rounded-br-sm bg-sw-blue px-4 py-3 text-sm leading-relaxed text-white">
-                    6 months ago. It went well but I never followed up.
+                    {copy.userMsg2}
                   </div>
                 </div>
                 <div className="flex justify-start gap-3">
                   <CoachDot />
                   <div className="max-w-[80%] rounded-2xl rounded-bl-sm bg-white/10 px-4 py-3 text-sm leading-relaxed text-white/90">
-                    Perfect — that&apos;s your opening. Here&apos;s your specific action: Send this message to your
-                    manager today: &quot;Hi [Name], I&apos;d love to schedule 20 minutes to discuss my progress and
-                    trajectory. When works for you?&quot; Want me to help you customise it for your situation?
+                    {copy.coachMsg2}
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -107,12 +109,12 @@ export default function AiCoachSection() {
 
               <div className="flex items-center gap-3 border-t border-white/10 px-4 py-3">
                 <div className="flex-1 rounded-xl bg-white/10 px-4 py-2.5 text-sm text-white/40">
-                  Ask your AI Coach anything...
+                  {copy.inputPlaceholder}
                 </div>
                 <button
                   type="button"
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-sw-blue transition-colors hover:bg-sw-blue-hover"
-                  aria-label="Send"
+                  aria-label={copy.sendAria}
                 >
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -132,23 +134,23 @@ export default function AiCoachSection() {
             <div className="mb-6 flex items-center gap-4">
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5">
                 <div className="h-2 w-2 animate-pulse rounded-full bg-green-400" />
-                <span className="text-xs font-semibold tracking-wide text-white/70 uppercase">Meet Your AI Coach</span>
+                <span className="text-xs font-semibold tracking-wide text-white/70 uppercase">{copy.meetBadge}</span>
               </div>
               <span className="inline-flex size-12 items-center justify-center rounded-full bg-white">
-                <img src="/assets/mindora-owl.svg" alt="Mindora" className="emoji-float h-auto w-12 drop-shadow-lg" />
+                <img src="/assets/mindora-owl.svg" alt={copy.owlAlt} className="emoji-float h-auto w-12 drop-shadow-lg" />
               </span>
             </div>
             <h2 className="mb-4 text-3xl leading-tight font-extrabold text-white sm:text-4xl">
-              Knowledge without action is
+              {copy.titleLine1}
               <br />
-              just <span className="text-sw-blue">expensive entertainment.</span>
+              {copy.titleLine2}{' '}
+              <span className="text-sw-blue">{copy.titleHighlight}</span>
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-white/60">
-              After every lesson, your personal AI Coach converts what you just learned into one specific action for
-              your life — right now, for your exact situation. No vague suggestions. Real next steps.
+              {copy.body}
             </p>
             <div className="mb-8 space-y-4">
-              {COACH_BULLETS.map((line) => (
+              {coachBullets.map((line) => (
                 <div key={line} className="flex items-center gap-3">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sw-blue/20">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
@@ -169,7 +171,7 @@ export default function AiCoachSection() {
               to={ROUTES.quizSuccess}
               className="inline-block rounded-full bg-sw-blue px-8 py-4 font-bold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-lg hover:shadow-sw-blue/40"
             >
-              Meet Your AI Coach →
+              {copy.cta}
             </Link>
           </div>
         </div>

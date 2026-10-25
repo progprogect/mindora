@@ -7,6 +7,7 @@ export type CurrentUser = {
   funnelSource?: string
   joinDate?: number
   planTier?: string
+  locale?: 'en' | 'ru'
   streakCount: number
   xp: number
   lastActivityDate?: string | null
@@ -17,6 +18,7 @@ export type ChargeResult = {
   alreadyPurchased?: boolean
   reason?: string
   error?: string
+  code?: string
   checkoutUrl?: string
 }
 
@@ -56,8 +58,17 @@ async function apiJson<T>(path: string, init?: RequestInit): Promise<T> {
   return data as T
 }
 
-export function apiErrorMessage(error: unknown, fallback: string) {
-  if (error instanceof ApiError && error.message) return error.message
+export function apiErrorMessage(error: unknown, t: (key: string) => string, fallback: string) {
+  if (error instanceof ApiError && error.code) return t(`errors.${error.code}`)
+  return fallback
+}
+
+export function chargeErrorMessage(
+  result: { error?: string; code?: string },
+  t: (key: string) => string,
+  fallback: string,
+) {
+  if (result.code) return t(`errors.${result.code}`)
   return fallback
 }
 
@@ -71,10 +82,17 @@ export async function fetchCurrentUser(): Promise<CurrentUser | null> {
   return data as CurrentUser
 }
 
-export async function sendOtp(email: string) {
+export async function sendOtp(email: string, locale?: 'en' | 'ru') {
   await apiJson<{ ok: true }>('/api/auth/otp/send', {
     method: 'POST',
-    body: JSON.stringify({ email }),
+    body: JSON.stringify({ email, locale }),
+  })
+}
+
+export async function saveLocale(locale: 'en' | 'ru') {
+  await apiJson<{ ok: true }>('/api/me/locale', {
+    method: 'PATCH',
+    body: JSON.stringify({ locale }),
   })
 }
 
@@ -333,8 +351,9 @@ export async function sendMindoraMessage(args: { text: string; threadId?: string
     threadId?: string
     reply?: string
     error?: string
+    code?: string
   }
   if (response.status === 402) return { locked: true as const, quota: data.quota }
-  if (!response.ok) throw new ApiError(data.error || 'Mindora failed', response.status)
+  if (!response.ok) throw new ApiError(data.error || 'Mindora failed', response.status, data.code)
   return data
 }

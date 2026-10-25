@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
-import { MONEY_BACK_DAYS, MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
-
-const POINTS = ['Full refund', 'No questions asked', 'Any reason, any time'] as const
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function MoneyBackSection() {
+  const { locale } = useI18n()
+  const copy = homeSectionsCopy(locale).moneyBack
+
   return (
     <section className="overflow-hidden bg-white px-4 py-16 sm:py-20">
       <div className="mx-auto max-w-4xl">
@@ -45,25 +47,25 @@ export default function MoneyBackSection() {
               className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-bold tracking-widest uppercase"
               style={{ backgroundColor: 'hsl(142 71% 45% / 0.12)', color: 'hsl(142 71% 35%)' }}
             >
-              Zero Risk
+              {copy.zeroRisk}
             </div>
             <h2 className="mb-3 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-              {MONEY_BACK_TITLE}
+              {copy.title}
             </h2>
             <p className="mb-4 max-w-lg leading-relaxed text-sw-grey">
-              Try MindoraAcademy.com completely risk-free. If you don&apos;t feel the difference in your first{' '}
-              {MONEY_BACK_DAYS} days — for
-              any reason at all — we&apos;ll give you a full refund. No forms, no friction, no questions asked.
+              {copy.bodyPrefix}
+              {copy.bodyMid}
+              {copy.bodySuffix}
             </p>
             <p className="text-sm text-sw-grey">
-              We back our platform because we&apos;ve seen what it does for people. Your success is our only goal.{' '}
+              {copy.footerPrefix}
               <Link to={ROUTES.refund} className="font-medium text-sw-blue hover:underline">
-                Read the full guarantee →
+                {copy.guaranteeLink}
               </Link>
             </p>
           </div>
           <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:min-w-[180px]">
-            {POINTS.map((point) => (
+            {copy.points.map((point) => (
               <div key={point} className="flex items-center gap-3">
                 <div
                   className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold"

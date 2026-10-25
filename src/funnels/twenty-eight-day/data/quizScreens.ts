@@ -1,11 +1,14 @@
 import type { AIToolsQuestionScreen, QuestionScreen, QuizScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
+import { localizeQuizScreens } from '@/funnels/twenty-eight-day/data/quizScreens.i18n'
 
 /**
  * 1:1 port of the production 28-Day AI Challenge quiz flow
  * (`28-day-ai-challenge-d_h9ZrNh.js`). Screen/option IDs match production
  * `value` fields so scoring (`ce`/`ue`/`de`/`me`) resolves.
  */
-export const quizScreens: QuizScreenDef[] = [
+export type FunnelLocale = 'en' | 'ru'
+
+const quizScreensEn: QuizScreenDef[] = [
   {
     type: 'identity',
     id: 'identity',
@@ -341,12 +344,21 @@ export const quizScreens: QuizScreenDef[] = [
   },
 ]
 
-export function getScreenById(id: string): QuizScreenDef | undefined {
-  return quizScreens.find((screen) => screen.id === id)
+/** @deprecated Use `quizScreensFor(locale)` in UI code. */
+export const quizScreens = quizScreensEn
+
+export function quizScreensFor(locale: FunnelLocale): QuizScreenDef[] {
+  return localizeQuizScreens(quizScreensEn, locale)
 }
 
-export function getQuestionScreens(): Array<QuestionScreen | AIToolsQuestionScreen> {
-  return quizScreens.filter(
+export function getScreenById(id: string, locale: FunnelLocale = 'en'): QuizScreenDef | undefined {
+  return quizScreensFor(locale).find((screen) => screen.id === id)
+}
+
+export function getQuestionScreens(
+  locale: FunnelLocale = 'en',
+): Array<QuestionScreen | AIToolsQuestionScreen> {
+  return quizScreensFor(locale).filter(
     (s): s is QuestionScreen | AIToolsQuestionScreen => s.type === 'question' || s.type === 'ai-tools',
   )
 }

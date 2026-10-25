@@ -1,23 +1,24 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { buyOffer, upsellPaymentNote } from '@/lib/api'
+import { buyOffer, chargeErrorMessage, upsellPaymentNote } from '@/lib/api'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useHasSavedCard, usePromptVaultKey } from '@/lib/lmsQueries'
 
-const INCLUDED = [
-  'Social Media, Marketing & Sales prompts',
-  'Business, Career & Finance frameworks',
-  'Content creation & SEO templates',
-  'Personal development & productivity',
-  '11 downloadable PDF guides',
-  'Searchable online library with copy button',
-]
+const INCLUDED_KEYS = [
+  'app.promptPage.included1',
+  'app.promptPage.included2',
+  'app.promptPage.included3',
+  'app.promptPage.included4',
+  'app.promptPage.included5',
+  'app.promptPage.included6',
+] as const
 
 const VALUE_ROWS = [
-  { icon: '🔍', name: 'Online Searchable Prompt Library', value: '$97' },
-  { icon: '📚', name: 'Expert PDF Prompt Guides (7 Books)', value: '$47' },
-  { icon: '🎯', name: 'Goal & Productivity Frameworks', value: '$29' },
-  { icon: '✍️', name: 'Content Creation Templates', value: '$19' },
-]
+  { icon: '🔍', nameKey: 'app.promptModal.row1Label', value: '$97' },
+  { icon: '📚', nameKey: 'app.promptModal.row2Label', value: '$47' },
+  { icon: '🎯', nameKey: 'app.promptModal.row3Label', value: '$29' },
+  { icon: '✍️', nameKey: 'app.promptModal.row4Label', value: '$19' },
+] as const
 
 type ChargePhase = 'idle' | 'processing' | 'success' | 'error'
 
@@ -51,6 +52,7 @@ export default function PromptLibraryPage() {
 }
 
 function Paywall() {
+  const { t } = useI18n()
   const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState('')
   const hasCard = useHasSavedCard()
@@ -68,10 +70,10 @@ function Paywall() {
         return
       }
       setPhase('error')
-      setError(result.error || 'Payment failed. Please try again.')
+      setError(chargeErrorMessage(result, t, t('app.common.paymentFailed')))
     } catch {
       setPhase('error')
-      setError('Something went wrong. Please try again.')
+      setError(t('app.common.somethingWrong'))
     }
   }
 
@@ -84,8 +86,8 @@ function Paywall() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h2 className="text-2xl font-extrabold text-sw-dark mb-2">Unlocked!</h2>
-          <p className="text-sm text-sw-grey">Your Prompt Library is ready. Loading now...</p>
+          <h2 className="text-2xl font-extrabold text-sw-dark mb-2">{t('app.common.unlocked')}</h2>
+          <p className="text-sm text-sw-grey">{t('app.common.loadingPromptLibrary')}</p>
           <div className="mt-4">
             <Spinner className="w-6 h-6 border-sw-blue border-t-transparent mx-auto" />
           </div>
@@ -103,40 +105,40 @@ function Paywall() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </Link>
-          <h1 className="text-base font-bold text-sw-dark">Prompt Library</h1>
+          <h1 className="text-base font-bold text-sw-dark">{t('app.common.promptLibrary')}</h1>
         </div>
       </header>
 
       <main className="max-w-2xl mx-auto px-4 pt-8">
         <div className="bg-gradient-to-br from-sw-blue to-blue-700 rounded-2xl p-6 text-white text-center mb-6">
           <span className="text-4xl block mb-3">⚡</span>
-          <h2 className="text-xl font-bold mb-2">27,200+ AI Prompts</h2>
-          <p className="text-blue-100 text-sm mb-1">Ready to copy & use across 19 categories</p>
-          <p className="text-blue-200 text-xs">Works with ChatGPT, Claude & Gemini</p>
+          <h2 className="text-xl font-bold mb-2">{t('app.promptPage.paywallTitle')}</h2>
+          <p className="text-blue-100 text-sm mb-1">{t('app.promptPage.paywallSub')}</p>
+          <p className="text-blue-200 text-xs">{t('app.promptPage.paywallModels')}</p>
         </div>
 
         <div className="bg-white rounded-2xl border border-sw-grey-border p-5 mb-5">
-          <h3 className="font-bold text-sw-dark text-sm mb-3">What&apos;s included:</h3>
+          <h3 className="font-bold text-sw-dark text-sm mb-3">{t('app.promptPage.whatsIncluded')}</h3>
           <div className="space-y-2.5">
-            {INCLUDED.map((item) => (
-              <div key={item} className="flex items-center gap-2.5">
+            {INCLUDED_KEYS.map((key) => (
+              <div key={key} className="flex items-center gap-2.5">
                 <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-sm text-sw-dark">{item}</span>
+                <span className="text-sm text-sw-dark">{t(key)}</span>
               </div>
             ))}
           </div>
         </div>
 
         <div className="bg-white rounded-2xl border border-sw-grey-border p-5 mb-5">
-          <h3 className="font-bold text-sw-dark text-sm mb-3 text-center">Total Value: $192</h3>
+          <h3 className="font-bold text-sw-dark text-sm mb-3 text-center">{t('app.common.totalValue')} $192</h3>
           <div className="space-y-2">
             {VALUE_ROWS.map((row) => (
-              <div key={row.name} className="flex items-center justify-between">
+              <div key={row.nameKey} className="flex items-center justify-between">
                 <span className="flex items-center gap-2 text-sm text-sw-dark">
                   <span>{row.icon}</span>
-                  {row.name}
+                  {t(row.nameKey)}
                 </span>
                 <span className="text-xs text-sw-grey">{row.value}</span>
               </div>
@@ -145,9 +147,9 @@ function Paywall() {
         </div>
 
         <div className="bg-white rounded-2xl border-2 border-sw-blue/30 p-5 text-center mb-4">
-          <p className="text-xs text-sw-grey mb-1">Get everything above for just</p>
+          <p className="text-xs text-sw-grey mb-1">{t('app.common.getEverythingFor')}</p>
           <span className="text-3xl font-extrabold text-sw-dark">$19.95</span>
-          <p className="text-xs text-sw-grey mt-1 mb-4">One-time payment · Lifetime access</p>
+          <p className="text-xs text-sw-grey mt-1 mb-4">{t('app.common.oneTimePaymentShort')}</p>
           <button
             type="button"
             data-testid="prompt-library-buy"
@@ -158,10 +160,10 @@ function Paywall() {
             {phase === 'processing' ? (
               <span className="flex items-center justify-center gap-2">
                 <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                Processing...
+                {t('app.common.processing')}
               </span>
             ) : (
-              'Unlock Prompt Library — $19.95'
+              t('app.common.unlockPromptLibrary')
             )}
           </button>
           {phase === 'error' && error ? (
@@ -177,7 +179,7 @@ function Paywall() {
 
         <div className="text-center">
           <Link to="/app/dashboard" className="text-sm text-sw-grey underline underline-offset-2">
-            ← Back to Dashboard
+            {t('app.common.backToDashboardLink')}
           </Link>
         </div>
       </main>
@@ -186,7 +188,9 @@ function Paywall() {
 }
 
 function OwnedVault({ vaultKey }: { vaultKey: string }) {
+  const { t, locale } = useI18n()
   const base = `/data/${vaultKey}`
+  const suffix = locale === 'ru' ? '.ru.json' : '.json'
   const [categories, setCategories] = useState<VaultCategory[]>([])
   const [slug, setSlug] = useState<string | null>(null)
   const [prompts, setPrompts] = useState<VaultPrompt[]>([])
@@ -201,14 +205,14 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
   const [debouncedQuery, setDebouncedQuery] = useState('')
 
   useEffect(() => {
-    fetch(`${base}/index.json`)
+    fetch(`${base}/index${suffix}`)
       .then((response) => response.json())
       .then((data: VaultCategory[]) => {
         setCategories(Array.isArray(data) ? data : [])
         setIndexLoading(false)
       })
       .catch(() => setIndexLoading(false))
-  }, [base])
+  }, [base, suffix])
 
   useEffect(() => {
     if (!slug) return
@@ -218,7 +222,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
     setCategoryLoading(true)
     setPrompts([])
     setVisible(20)
-    fetch(`${base}/${encodeURIComponent(category.slug)}.json`)
+    fetch(`${base}/${encodeURIComponent(category.slug)}${suffix}`)
       .then((response) => response.json())
       .then((data: VaultPrompt[]) => {
         if (cancelled) return
@@ -231,7 +235,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
     return () => {
       cancelled = true
     }
-  }, [base, categories, slug])
+  }, [base, categories, slug, suffix])
 
   useEffect(() => {
     return () => {
@@ -269,7 +273,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
   const shown = filtered.slice(0, visible)
   const hasMore = visible < filtered.length
   const totalCount = categories.reduce((sum, item) => sum + item.count, 0)
-  const activeName = slug ? categories.find((item) => item.slug === slug)?.name || 'Prompts' : 'Prompt Library'
+  const activeName = slug ? categories.find((item) => item.slug === slug)?.name || t('app.promptPage.promptsFallback') : t('app.common.promptLibrary')
 
   const backToCatalog = () => {
     setSlug(null)
@@ -292,7 +296,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
       <header className="sticky top-0 z-40 bg-white border-b border-sw-grey-border">
         <div className="max-w-2xl mx-auto px-4 h-12 flex items-center gap-3">
           {slug ? (
-            <button type="button" onClick={backToCatalog} className="text-sw-grey active:scale-95 transition-transform" aria-label="Back to categories">
+            <button type="button" onClick={backToCatalog} className="text-sw-grey active:scale-95 transition-transform" aria-label={t('app.promptPage.backCategories')}>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
@@ -306,7 +310,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
           )}
           <h1 className="text-base font-bold text-sw-dark truncate">{activeName}</h1>
           <span className="ml-auto text-[10px] font-bold text-sw-blue bg-sw-blue-light px-2 py-0.5 rounded-full whitespace-nowrap">
-            {slug ? `${filtered.length.toLocaleString()} prompts` : `${totalCount.toLocaleString()} prompts`}
+            {slug ? t('app.promptPage.promptsCount').replace('{n}', filtered.length.toLocaleString()) : t('app.promptPage.promptsCount').replace('{n}', totalCount.toLocaleString())}
           </span>
         </div>
       </header>
@@ -323,7 +327,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
                 data-testid="prompt-library-search"
                 value={query}
                 onChange={(event) => onSearch(event.target.value)}
-                placeholder="Search prompts..."
+                placeholder={t('app.promptPage.searchPlaceholder')}
                 className="w-full pl-10 pr-4 py-2.5 text-sm bg-white border border-sw-grey-border rounded-xl focus:outline-none focus:ring-2 focus:ring-sw-blue/20 focus:border-sw-blue placeholder:text-sw-grey/60"
               />
               {query ? (
@@ -335,7 +339,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
                     setVisible(20)
                   }}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-sw-grey"
-                  aria-label="Clear search"
+                  aria-label={t('app.promptPage.clearSearch')}
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -363,7 +367,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
               <div className="text-center py-10">
                 <span className="text-2xl block mb-2">🔍</span>
                 <p className="text-sm text-sw-grey">
-                  {debouncedQuery ? `No prompts found for "${debouncedQuery}"` : 'No prompts found in this filter'}
+                  {debouncedQuery ? t('app.promptPage.noResultsQuery').replace('{q}', debouncedQuery) : t('app.promptPage.noResultsFilter')}
                 </p>
                 {debouncedQuery || subcategory ? (
                   <button
@@ -376,16 +380,16 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
                     }}
                     className="mt-3 text-sm font-semibold text-sw-blue"
                   >
-                    Clear filters
+                    {t('app.promptPage.clearFilters')}
                   </button>
                 ) : null}
               </div>
             ) : (
               <>
                 <p className="text-[11px] text-sw-grey mb-2">
-                  Showing {Math.min(visible, filtered.length).toLocaleString()} of {filtered.length.toLocaleString()} prompts
-                  {subcategory ? ` in "${subcategory}"` : null}
-                  {debouncedQuery ? ` matching "${debouncedQuery}"` : null}
+                  {t('app.promptPage.showing').replace('{shown}', Math.min(visible, filtered.length).toLocaleString()).replace('{total}', filtered.length.toLocaleString())}
+                  {subcategory ? t('app.promptPage.showingIn').replace('{cat}', subcategory) : null}
+                  {debouncedQuery ? t('app.promptPage.showingMatch').replace('{q}', debouncedQuery) : null}
                 </p>
                 <SubcategoryChips
                   prompts={prompts}
@@ -412,7 +416,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
                     onClick={() => setVisible((count) => count + 20)}
                     className="w-full mt-4 py-3 bg-white border border-sw-grey-border rounded-xl text-sm font-semibold text-sw-blue active:scale-[0.98] transition-transform"
                   >
-                    Show more ({(filtered.length - visible).toLocaleString()} remaining)
+                    {t('app.promptPage.showMore').replace('{n}', (filtered.length - visible).toLocaleString())}
                   </button>
                 ) : null}
               </>
@@ -424,9 +428,9 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
               <div className="flex items-start gap-3">
                 <span className="text-3xl">⚡</span>
                 <div>
-                  <h2 className="font-bold text-lg leading-tight">Your AI Prompt Vault</h2>
+                  <h2 className="font-bold text-lg leading-tight">{t('app.promptPage.vaultTitle')}</h2>
                   <p className="text-blue-100 text-sm mt-1">
-                    {totalCount.toLocaleString()} prompts across {categories.length} categories. Copy any prompt instantly.
+                    {t('app.promptPage.vaultSub').replace('{total}', totalCount.toLocaleString()).replace('{cats}', String(categories.length))}
                   </p>
                 </div>
               </div>
@@ -445,7 +449,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
                   >
                     <span className="text-2xl block mb-2">{category.emoji}</span>
                     <h3 className="font-bold text-sm text-sw-dark leading-tight">{category.name}</h3>
-                    <p className="text-[11px] text-sw-grey mt-1">{category.count.toLocaleString()} prompts</p>
+                    <p className="text-[11px] text-sw-grey mt-1">{t('app.promptPage.promptsCount').replace('{n}', category.count.toLocaleString())}</p>
                   </button>
                 ))}
             </div>
@@ -465,6 +469,7 @@ function SubcategoryChips({
   selected: string | null
   onFilter: (value: string | null) => void
 }) {
+  const { t } = useI18n()
   const counts = new Map<string, number>()
   for (const prompt of prompts) counts.set(prompt.c, (counts.get(prompt.c) || 0) + 1)
   const chips = [...counts.entries()].sort((left, right) => right[1] - left[1]).map(([name]) => name)
@@ -478,7 +483,7 @@ function SubcategoryChips({
           selected ? 'bg-white text-sw-grey border-sw-grey-border' : 'bg-sw-blue text-white border-sw-blue'
         }`}
       >
-        All
+        {t('app.common.all')}
       </button>
       {chips.map((name) => (
         <button
@@ -505,6 +510,7 @@ function PromptCard({
   copied: boolean
   onCopy: () => void
 }) {
+  const { t } = useI18n()
   const [expanded, setExpanded] = useState(false)
   const long = prompt.t.length > 200
   return (
@@ -527,7 +533,7 @@ function PromptCard({
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              Copied!
+              {t('app.promptPage.copied')}
             </>
           ) : (
             <>
@@ -538,7 +544,7 @@ function PromptCard({
                   d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
                 />
               </svg>
-              Tap to copy
+              {t('app.promptPage.tapToCopy')}
             </>
           )}
         </span>
@@ -555,7 +561,7 @@ function PromptCard({
           }}
           className="text-xs font-semibold text-sw-blue mt-2"
         >
-          {expanded ? 'Show less' : 'Show full prompt'}
+          {expanded ? t('app.promptPage.showLess') : t('app.promptPage.showFull')}
         </button>
       ) : null}
     </div>

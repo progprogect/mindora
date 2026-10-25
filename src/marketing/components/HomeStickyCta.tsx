@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
 import { ROUTES } from '@/marketing/data/nav'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function HomeStickyCta() {
   const { pathname } = useLocation()
+  const { locale } = useI18n()
+  const copy = homeSectionsCopy(locale).mobileStickyCta
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -25,14 +29,14 @@ export default function HomeStickyCta() {
     >
       <div className="flex items-center gap-3 rounded-2xl border border-sw-grey-border bg-white p-3 shadow-2xl">
         <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-bold text-sw-dark">Get Your Personal Roadmap</p>
-          <p className="text-xs text-sw-grey">60 Second Quiz</p>
+          <p className="truncate text-sm font-bold text-sw-dark">{copy.title}</p>
+          <p className="text-xs text-sw-grey">{copy.subtitle}</p>
         </div>
         <Link
           to={ROUTES.quizSuccess}
           className="shrink-0 rounded-xl bg-sw-blue px-5 py-2.5 text-sm font-bold whitespace-nowrap text-white hover:bg-sw-blue-hover"
         >
-          Start Now →
+          {copy.button}
         </Link>
       </div>
     </div>

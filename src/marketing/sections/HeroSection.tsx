@@ -2,9 +2,14 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import PhoneMock from '@/marketing/components/PhoneMock'
 import { ROUTES } from '@/marketing/data/nav'
-import { HERO_AVATARS, HERO_PILLS } from '@/marketing/data/home'
+import { HERO_AVATARS, homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function HeroSection() {
+  const { locale } = useI18n()
+  const { heroPills } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).hero
   return (
     <section className="relative flex min-h-screen w-full max-w-full items-start overflow-hidden bg-white pt-16">
       <div className="pointer-events-none absolute inset-0">
@@ -25,27 +30,26 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 rounded-full border border-sw-blue-border bg-sw-blue-light px-4 py-1.5">
               <span className="size-1.5 animate-pulse rounded-full bg-sw-blue" />
               <span className="text-xs font-semibold tracking-wide text-sw-blue uppercase">
-                The #1 Platform for Daily Self-Growth
+                {copy.badge}
               </span>
             </div>
 
             <h1 className="text-[38px] leading-[1.08] font-extrabold tracking-tight text-sw-dark sm:text-5xl lg:text-[58px]">
-              Become{' '}
+              {copy.h1Become}{' '}
               <span className="relative inline-block">
-                <span className="text-sw-blue">1% Better.</span>
+                <span className="text-sw-blue">{copy.h1Better}</span>
                 <span className="absolute right-0 -bottom-1 left-0 h-1 rounded-full bg-sw-blue/20" />
               </span>
               <br />
-              Every Single Day. <span className="emoji-pulse inline-block">✨</span>
+              {copy.h1EveryDay} <span className="emoji-pulse inline-block">✨</span>
             </h1>
 
             <p className="mx-auto text-base leading-relaxed text-sw-grey sm:max-w-lg sm:text-xl lg:mx-0">
-              Curated expert knowledge. A personalised daily system. An AI Coach that turns every
-              lesson into real action — in just 5 minutes a day.
+              {copy.subhead}
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
-              {HERO_PILLS.map((pill) => (
+              {heroPills.map((pill) => (
                 <div
                   key={pill.label}
                   className="flex items-center gap-1.5 rounded-full border border-sw-grey-border bg-sw-grey-light px-3 py-1.5"
@@ -61,11 +65,11 @@ export default function HeroSection() {
                 to={ROUTES.quizSuccess}
                 className="animate-pulse-glow inline-flex w-full items-center justify-center gap-2 rounded-full bg-sw-blue px-8 py-4 text-base font-bold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-lg hover:shadow-sw-blue/25"
               >
-                Start Your 60-Second Success Quiz
+                {copy.cta}
                 <ArrowRight className="size-4" />
               </Link>
               <span className="text-center text-xs text-sw-grey lg:text-left">
-                Takes 60 seconds · Instant results
+                {copy.ctaHint}
               </span>
             </div>
 
@@ -81,12 +85,13 @@ export default function HeroSection() {
                 ))}
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-sm leading-none text-sw-warning" aria-label="5 star rating">
+                <div className="text-sm leading-none text-sw-warning" aria-label={copy.starRatingAria}>
                   ★★★★★
                 </div>
                 <p className="mt-1 text-sm text-sw-grey">
-                  Trusted by <span className="font-bold text-sw-dark">100,000+ learners</span>{' '}
-                  worldwide
+                  {copy.trustedPrefix}{' '}
+                  <span className="font-bold text-sw-dark">{copy.trustedCount}</span>{' '}
+                  {copy.trustedSuffix}
                 </p>
               </div>
             </div>
@@ -102,7 +107,7 @@ export default function HeroSection() {
 
       <img
         src="/assets/mindora-owl.svg"
-        alt="Mindora"
+        alt={copy.owlAlt}
         className="animate-float pointer-events-none absolute right-4 bottom-16 z-20 hidden w-16 drop-shadow-lg sm:block lg:right-12 lg:w-24"
       />
     </section>

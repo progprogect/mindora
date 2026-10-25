@@ -1,6 +1,10 @@
 import BrandWordmark from '@/shared/BrandWordmark'
+import { useI18n } from '@/i18n/I18nProvider'
 
-export default function AccountStubPage({ title }: { title: string }) {
+export default function AccountStubPage({ title }: { title?: string }) {
+  const { t } = useI18n()
+  const heading = title ?? t('account.stub.defaultTitle')
+
   return (
     <div className="min-h-screen bg-white flex flex-col overflow-x-hidden">
       <header className="sticky top-0 z-50 bg-white border-b border-sw-grey-border">
@@ -9,7 +13,7 @@ export default function AccountStubPage({ title }: { title: string }) {
         </div>
       </header>
       <main className="flex-1 flex flex-col px-4 pt-12 max-w-lg mx-auto w-full">
-        <h1 className="text-2xl font-extrabold text-sw-dark text-center">{title}</h1>
+        <h1 className="text-2xl font-extrabold text-sw-dark text-center">{heading}</h1>
       </main>
     </div>
   )

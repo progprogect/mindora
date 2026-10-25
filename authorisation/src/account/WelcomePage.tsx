@@ -4,6 +4,7 @@ import { useCurrentUser } from '@/auth/session'
 import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COMPANY } from '@/shared/company'
+import { useI18n } from '@/i18n/I18nProvider'
 
 function Spinner() {
   return (
@@ -66,6 +67,7 @@ function Letter({ emoji, text }: { emoji: string; text: string }) {
 
 function WelcomeLetter() {
   const user = useCurrentUser()
+  const { t } = useI18n()
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -73,7 +75,7 @@ function WelcomeLetter() {
     track('welcome_letter_viewed')
   }, [])
 
-  const firstName = user?.name?.split(' ')[0] || 'Friend'
+  const firstName = user?.name?.split(' ')[0] || t('account.common.friend')
 
   const continueToUpgrade = () => {
     track('welcome_letter_continue_clicked')
@@ -91,11 +93,11 @@ function WelcomeLetter() {
       </header>
       <div className="bg-white py-4 px-4 border-b border-sw-grey-border">
         <div className="max-w-sm mx-auto flex items-center justify-between">
-          <Step number={1} label="Member" status="complete" />
+          <Step number={1} label={t('account.welcome.stepMember')} status="complete" />
           <div className="flex-1 h-0.5 bg-gray-200 mx-2 mt-[-12px]" />
-          <Step number={2} label="Welcome" status="active" />
+          <Step number={2} label={t('account.welcome.stepWelcome')} status="active" />
           <div className="flex-1 h-0.5 bg-gray-200 mx-2 mt-[-12px]" />
-          <Step number={3} label="Access" status="upcoming" />
+          <Step number={3} label={t('account.welcome.stepAccess')} status="upcoming" />
         </div>
       </div>
       <main className="max-w-lg mx-auto px-5 pt-8 pb-40">
@@ -103,54 +105,55 @@ function WelcomeLetter() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 mb-4">
             <span className="text-4xl">🎉</span>
           </div>
-          <h1 className="text-3xl font-extrabold text-sw-dark leading-tight">Welcome aboard, {firstName}!</h1>
-          <p className="text-sm text-sw-grey mt-2">You just made a brilliant decision.</p>
+          <h1 className="text-3xl font-extrabold text-sw-dark leading-tight">
+            {t('account.welcome.title').replace('{name}', firstName)}
+          </h1>
+          <p className="text-sm text-sw-grey mt-2">{t('account.welcome.subtitle')}</p>
         </div>
         <div className="rounded-2xl border border-sw-grey-border bg-gray-50/50 p-6 sm:p-8 space-y-4">
-          <p className="text-base text-sw-dark leading-relaxed">Hey {firstName},</p>
           <p className="text-base text-sw-dark leading-relaxed">
-            I&apos;m genuinely excited you&apos;re here. You&apos;re about to unlock a learning experience
-            that&apos;s helped thousands of people master AI, build better habits, and achieve their goals
-            faster than they ever thought possible.
+            {t('account.welcome.greeting').replace('{name}', firstName)}
           </p>
+          <p className="text-base text-sw-dark leading-relaxed">{t('account.welcome.p1')}</p>
           <p className="text-base text-sw-dark leading-relaxed">
-            Over the next 28 days, you&apos;ll get <span className="font-bold">daily micro-lessons</span>{' '}
-            designed to fit into your busiest schedule — just 5 minutes a day is all it takes.
+            {t('account.welcome.p2Lead')}{' '}
+            <span className="font-bold">{t('account.welcome.p2Bold')}</span>{' '}
+            {t('account.welcome.p2Tail')}
           </p>
-          <p className="text-base text-sw-dark leading-relaxed">Here&apos;s what&apos;s waiting for you:</p>
+          <p className="text-base text-sw-dark leading-relaxed">{t('account.welcome.p3')}</p>
           <div className="space-y-3 py-2">
-            <Letter emoji="📱" text="Daily bite-sized lessons delivered to your dashboard" />
-            <Letter emoji="🏆" text="XP points, streaks & badges to keep you motivated" />
-            <Letter emoji="🎯" text="Personalised learning path based on your goals" />
-            <Letter emoji="🤝" text="A community of driven learners just like you" />
+            <Letter emoji="📱" text={t('account.welcome.letter1')} />
+            <Letter emoji="🏆" text={t('account.welcome.letter2')} />
+            <Letter emoji="🎯" text={t('account.welcome.letter3')} />
+            <Letter emoji="🤝" text={t('account.welcome.letter4')} />
           </div>
           <p className="text-base text-sw-dark leading-relaxed">
-            But first — on the next page, I&apos;ve put together a{' '}
-            <span className="font-bold">special new-member offer</span> just for you. It&apos;s 100%
-            optional, but many members grab it because it complements your learning perfectly.
+            {t('account.welcome.p4Prefix')}{' '}
+            <span className="font-bold">{t('account.welcome.p4Bold')}</span>{' '}
+            {t('account.welcome.p4Suffix')}
           </p>
-          <p className="text-base text-sw-dark leading-relaxed">
-            Either way, you can skip straight through to your dashboard whenever you&apos;re ready.
-          </p>
+          <p className="text-base text-sw-dark leading-relaxed">{t('account.welcome.p5')}</p>
           <div className="pt-4 border-t border-sw-grey-border">
-            <p className="text-base text-sw-dark font-semibold">Let&apos;s make this your best year yet 🚀</p>
+            <p className="text-base text-sw-dark font-semibold">{t('account.welcome.signoff')}</p>
             <div className="mt-3 flex items-center gap-3">
               <img
                 src="/assets/rob-wass.jpg"
-                alt="Rob Wass"
+                alt={t('account.welcome.robAlt')}
                 className="w-10 h-10 rounded-full object-cover"
               />
               <div>
-                <p className="text-sm font-bold text-sw-dark">Rob Wass</p>
-                <p className="text-xs text-sw-grey">Founder, {COMPANY.brand}</p>
+                <p className="text-sm font-bold text-sw-dark">{t('account.welcome.founderName')}</p>
+                <p className="text-xs text-sw-grey">
+                  {t('account.welcome.founderTitle').replace('{brand}', COMPANY.brand)}
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-6 flex items-center justify-center gap-2 text-center">
-          <span className="text-sm text-sw-grey">Trusted by</span>
-          <span className="text-sm font-bold text-sw-dark">100,000+ members</span>
-          <span className="text-sm text-sw-grey">worldwide</span>
+          <span className="text-sm text-sw-grey">{t('account.welcome.trustedBy')}</span>
+          <span className="text-sm font-bold text-sw-dark">{t('account.welcome.membersCount')}</span>
+          <span className="text-sm text-sw-grey">{t('account.welcome.worldwide')}</span>
         </div>
       </main>
       <div
@@ -165,7 +168,7 @@ function WelcomeLetter() {
             onClick={continueToUpgrade}
             className="w-full py-4 rounded-full bg-sw-blue hover:bg-sw-blue-hover text-white font-bold text-lg transition-all active:scale-[0.98] shadow-lg"
           >
-            Continue →
+            {t('account.common.continueArrow')}
           </button>
         </div>
         <div

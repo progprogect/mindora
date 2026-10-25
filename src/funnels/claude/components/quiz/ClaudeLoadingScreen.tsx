@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Check } from 'lucide-react'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeLoadingScreenProps {
   onComplete: (micro: { device: string; commitment: string }) => void
@@ -11,66 +13,21 @@ interface OptionDef {
   value: string
 }
 
-const STEPS = [
-  'Analysing your Claude experience...',
-  'Mapping your skill gaps...',
-  'Selecting your certification modules...',
-  'Building your personalised path...',
-  'Your Claude AI Certification plan is ready!',
-]
+const DEVICE_OPTION_DEFS: Array<{ emoji: string; value: string; labelKey: keyof ReturnType<typeof claudeQuizUiCopy>['loading']['deviceOptions'] }> =
+  [
+    { emoji: '📱', value: 'phone', labelKey: 'phone' },
+    { emoji: '💻', value: 'laptop', labelKey: 'laptop' },
+    { emoji: '🖥️', value: 'desktop', labelKey: 'desktop' },
+    { emoji: '📱💻', value: 'mix', labelKey: 'mix' },
+  ]
 
-const HEADER_TEXT = 'Building your certification path...'
-const COMMITMENT_QUESTION = 'How committed are you to earning your Claude certification?'
-
-/** Default testimonials — the production bundle doesn't override these for the Claude funnel. */
-const TESTIMONIALS = [
-  {
-    name: 'Sarah M.',
-    role: 'Marketing Manager',
-    text: 'I went from knowing nothing about AI to automating half my weekly tasks. The 28-day structure made it feel completely achievable.',
-  },
-  {
-    name: 'James K.',
-    role: 'Software Engineer',
-    text: 'I thought I already knew AI pretty well, but MindoraAcademy showed me workflows I never even considered. Game-changer.',
-  },
-  {
-    name: 'Priya T.',
-    role: 'Freelance Designer',
-    text: 'Finally a course that respects my time. 10 minutes a day and I genuinely feel confident using AI in my projects now.',
-  },
-  {
-    name: 'David R.',
-    role: 'Operations Lead',
-    text: "The personal path was what sold it. It wasn't generic — it felt built for someone in my exact situation.",
-  },
-  {
-    name: 'Emma L.',
-    role: 'HR Director',
-    text: "I was terrified of being left behind by AI. MindoraAcademy completely transformed how I see it. Now I'm excited about it.",
-  },
-]
-
-const DEVICE_OPTIONS: OptionDef[] = [
-  { emoji: '📱', label: 'My phone', value: 'phone' },
-  { emoji: '💻', label: 'My laptop', value: 'laptop' },
-  { emoji: '🖥️', label: 'My desktop', value: 'desktop' },
-  { emoji: '📱💻', label: 'Mix of devices', value: 'mix' },
-]
-
-const COMMITMENT_OPTIONS: OptionDef[] = [
-  { emoji: '🏆', label: 'Fully committed', value: 'full' },
-  { emoji: '💪', label: 'Very committed', value: 'high' },
-  { emoji: '🙂', label: 'Pretty committed', value: 'medium' },
-  { emoji: '🤞', label: "I'll try my best", value: 'trying' },
-]
-
-const COMMITMENT_CONFIRM_COPY: Record<string, string> = {
-  full: "🔥 That's the mindset. Your plan is almost ready!",
-  high: '💪 Love that. Your plan is almost ready!',
-  medium: '🙂 Every step counts. Your plan is almost ready!',
-  trying: "🤞 We've got you. Your plan is almost ready!",
-}
+const COMMITMENT_OPTION_DEFS: Array<{ emoji: string; value: string; labelKey: keyof ReturnType<typeof claudeQuizUiCopy>['loading']['commitmentOptions'] }> =
+  [
+    { emoji: '🏆', value: 'full', labelKey: 'full' },
+    { emoji: '💪', value: 'high', labelKey: 'high' },
+    { emoji: '🙂', value: 'medium', labelKey: 'medium' },
+    { emoji: '🤞', value: 'trying', labelKey: 'trying' },
+  ]
 
 const PAUSE_AT_DEVICE = 40
 const PAUSE_AT_COMMITMENT = 70
@@ -84,6 +41,16 @@ type Phase = 'loading' | 'q1' | 'q1-confirm' | 'q2' | 'q2-confirm' | 'done'
  * rotating testimonials and a 5-step checklist.
  */
 export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenProps) {
+  const { locale } = useI18n()
+  const loadingCopy = claudeQuizUiCopy(locale).loading
+  const deviceOptions: OptionDef[] = useMemo(
+    () => DEVICE_OPTION_DEFS.map((opt) => ({ ...opt, label: loadingCopy.deviceOptions[opt.labelKey] })),
+    [loadingCopy],
+  )
+  const commitmentOptions: OptionDef[] = useMemo(
+    () => COMMITMENT_OPTION_DEFS.map((opt) => ({ ...opt, label: loadingCopy.commitmentOptions[opt.labelKey] })),
+    [loadingCopy],
+  )
   const [progress, setProgress] = useState(0)
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
   const [testimonialIndex, setTestimonialIndex] = useState(0)
@@ -139,10 +106,10 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
 
   useEffect(() => {
     const interval = window.setInterval(() => {
-      setTestimonialIndex((i) => (i + 1) % TESTIMONIALS.length)
+      setTestimonialIndex((i) => (i + 1) % loadingCopy.testimonials.length)
     }, 2200)
     return () => window.clearInterval(interval)
-  }, [])
+  }, [loadingCopy.testimonials.length])
 
   useEffect(() => {
     if (phase !== 'done') return
@@ -166,15 +133,16 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
 
   const handleCommitmentSelect = (value: string) => {
     setCommitmentValue(value)
-    setCommitmentCopy(COMMITMENT_CONFIRM_COPY[value] ?? COMMITMENT_CONFIRM_COPY.trying)
+    setCommitmentCopy(loadingCopy.commitmentConfirm[value as keyof typeof loadingCopy.commitmentConfirm] ?? loadingCopy.commitmentConfirm.trying)
     microRef.current = { ...microRef.current, commitment: value }
     phaseRef.current = 'q2-confirm'
     setPhase('q2-confirm')
     window.setTimeout(resumeTicking, 1800)
   }
 
-  const activeStepIndex = Math.min(Math.floor((progress / 100) * STEPS.length), STEPS.length - 1)
-  const testimonial = TESTIMONIALS[testimonialIndex % TESTIMONIALS.length]
+  const steps = loadingCopy.steps
+  const activeStepIndex = Math.min(Math.floor((progress / 100) * steps.length), steps.length - 1)
+  const testimonial = loadingCopy.testimonials[testimonialIndex % loadingCopy.testimonials.length]
   const showDeviceQuestion = phase === 'q1' || phase === 'q1-confirm'
   const showCommitmentQuestion = phase === 'q2' || phase === 'q2-confirm'
 
@@ -182,7 +150,7 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col items-center px-4 pt-8 pb-12">
       <div className="mb-8 w-full">
         <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs font-bold tracking-widest text-sw-blue uppercase">{HEADER_TEXT}</span>
+          <span className="text-xs font-bold tracking-widest text-sw-blue uppercase">{loadingCopy.header}</span>
           <span className="text-sm font-bold text-sw-dark">{progress}%</span>
         </div>
         <div className="h-2 overflow-hidden rounded-full bg-sw-grey-light">
@@ -192,13 +160,13 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
 
       {showDeviceQuestion ? (
         <div className="w-full animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Quick question</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{loadingCopy.quickQuestion}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-            Where will you mostly be learning?
+            {loadingCopy.deviceTitle}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">We&apos;ll optimise your plan for it</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{loadingCopy.deviceSubtext}</p>
           <div className="flex flex-col gap-3">
-            {DEVICE_OPTIONS.map((option) => {
+            {deviceOptions.map((option) => {
               const isSelected = deviceValue === option.value && phase === 'q1-confirm'
               return (
                 <button
@@ -231,7 +199,7 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
           </div>
           {phase === 'q1-confirm' ? (
             <div className="mt-5 animate-fade-in rounded-2xl border border-sw-blue/25 bg-sw-blue-light px-5 py-3 text-center">
-              <p className="text-sm font-bold text-sw-blue">✓ Perfect — we&apos;ll optimise your plan for that!</p>
+              <p className="text-sm font-bold text-sw-blue">{loadingCopy.deviceConfirm}</p>
             </div>
           ) : null}
         </div>
@@ -239,13 +207,13 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
 
       {showCommitmentQuestion ? (
         <div className="w-full animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Almost there</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{loadingCopy.almostThere}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-            {COMMITMENT_QUESTION}
+            {loadingCopy.commitmentQuestion}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">Be honest — your plan adapts to you</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{loadingCopy.commitmentSubtext}</p>
           <div className="flex flex-col gap-3">
-            {COMMITMENT_OPTIONS.map((option) => {
+            {commitmentOptions.map((option) => {
               const isSelected = commitmentValue === option.value && phase === 'q2-confirm'
               return (
                 <button
@@ -287,7 +255,7 @@ export default function ClaudeLoadingScreen({ onComplete }: ClaudeLoadingScreenP
       {!showDeviceQuestion && !showCommitmentQuestion ? (
         <>
           <div className="mb-8 flex w-full max-w-xs flex-col gap-2">
-            {STEPS.map((label, index) => {
+            {steps.map((label, index) => {
               const isComplete = completedSteps.includes(index)
               const isActive = index === activeStepIndex && !isComplete
               return (

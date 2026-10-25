@@ -1,3 +1,5 @@
+import type { ClaudeLocale } from '@/funnels/claude/i18n/locale'
+import { localizeClaudeQuizScreens } from '@/funnels/claude/i18n/claudeQuizScreensCopy'
 import type { ClaudeQuestionScreenDef, ClaudeQuizScreenDef } from '@/funnels/claude/types/claudeQuiz'
 
 /**
@@ -313,10 +315,14 @@ export const claudeQuizScreens: ClaudeQuizScreenDef[] = [
   },
 ]
 
-export function getClaudeScreenById(id: string): ClaudeQuizScreenDef | undefined {
-  return claudeQuizScreens.find((screen) => screen.id === id)
+export function getClaudeQuizScreens(locale: ClaudeLocale): ClaudeQuizScreenDef[] {
+  return localizeClaudeQuizScreens(claudeQuizScreens, locale)
 }
 
-export function getClaudeQuestionScreens(): ClaudeQuestionScreenDef[] {
-  return claudeQuizScreens.filter((s): s is ClaudeQuestionScreenDef => s.type === 'question')
+export function getClaudeScreenById(id: string, locale: ClaudeLocale = 'en'): ClaudeQuizScreenDef | undefined {
+  return getClaudeQuizScreens(locale).find((screen) => screen.id === id)
+}
+
+export function getClaudeQuestionScreens(locale: ClaudeLocale = 'en'): ClaudeQuestionScreenDef[] {
+  return getClaudeQuizScreens(locale).filter((s): s is ClaudeQuestionScreenDef => s.type === 'question')
 }

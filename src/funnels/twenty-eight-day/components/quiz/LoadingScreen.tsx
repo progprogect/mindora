@@ -1,67 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { loadingScreenCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface LoadingScreenProps {
   onComplete: (microAnswers: { device: string; commitment: string }) => void
 }
 
 type Phase = 'loading' | 'q1' | 'q1-confirm' | 'q2' | 'q2-confirm' | 'done'
-
-const DEVICE_OPTIONS = [
-  { id: 'phone', label: 'My phone', emoji: '📱' },
-  { id: 'laptop', label: 'My laptop', emoji: '💻' },
-  { id: 'desktop', label: 'My desktop', emoji: '🖥️' },
-  { id: 'mix', label: 'Mix of devices', emoji: '📱💻' },
-]
-
-const COMMITMENT_OPTIONS = [
-  { id: 'full', label: 'Fully committed', emoji: '🏆' },
-  { id: 'high', label: 'Very committed', emoji: '💪' },
-  { id: 'medium', label: 'Pretty committed', emoji: '🙂' },
-  { id: 'trying', label: "I'll try my best", emoji: '🤞' },
-]
-
-const COMMITMENT_CONFIRM: Record<string, string> = {
-  full: "🔥 That's the mindset. Your plan is almost ready!",
-  high: '💪 Love that. Your plan is almost ready!',
-  medium: '🙂 Every step counts. Your plan is almost ready!',
-  trying: "🤞 We've got you. Your plan is almost ready!",
-}
-
-const BUILD_STEPS = [
-  'Analysing your goals...',
-  'Matching your skill level...',
-  'Selecting your learning track...',
-  'Setting your daily schedule...',
-  'Your plan is ready!',
-]
-
-const TESTIMONIALS = [
-  {
-    name: 'Sarah M.',
-    role: 'Marketing Manager',
-    text: 'I went from knowing nothing about AI to automating half my weekly tasks. The 28-day structure made it feel completely achievable.',
-  },
-  {
-    name: 'James K.',
-    role: 'Software Engineer',
-    text: 'I thought I already knew AI pretty well, but MindoraAcademy showed me workflows I never even considered. Game-changer.',
-  },
-  {
-    name: 'Priya T.',
-    role: 'Freelance Designer',
-    text: 'Finally a course that respects my time. 10 minutes a day and I genuinely feel confident using AI in my projects now.',
-  },
-  {
-    name: 'David R.',
-    role: 'Operations Lead',
-    text: "The personal path was what sold it. It wasn't generic — it felt built for someone in my exact situation.",
-  },
-  {
-    name: 'Emma L.',
-    role: 'HR Director',
-    text: "I was terrified of being left behind by AI. MindoraAcademy completely transformed how I see it. Now I'm excited about it.",
-  },
-]
 
 const TICK_MS = 60
 const DEVICE_PAUSE = 40
@@ -81,6 +27,9 @@ function SelectedCheck() {
 }
 
 export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => loadingScreenCopy(locale as FunnelLocale), [locale])
+
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState<Phase>('loading')
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
@@ -140,10 +89,10 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
   useEffect(() => {
     const interval = window.setInterval(() => {
-      setTestimonialIndex((i) => (i + 1) % TESTIMONIALS.length)
+      setTestimonialIndex((i) => (i + 1) % copy.testimonials.length)
     }, 2200)
     return () => window.clearInterval(interval)
-  }, [])
+  }, [copy.testimonials.length])
 
   const resumeLoading = (delayMs: number) => {
     window.setTimeout(() => {
@@ -171,16 +120,16 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
     resumeLoading(Q2_CONFIRM_MS)
   }
 
-  const testimonial = TESTIMONIALS[testimonialIndex]
+  const testimonial = copy.testimonials[testimonialIndex]
   const showDevice = phase === 'q1' || phase === 'q1-confirm'
   const showCommitment = phase === 'q2' || phase === 'q2-confirm'
-  const activeStep = Math.min(Math.floor((progress / 100) * BUILD_STEPS.length), BUILD_STEPS.length - 1)
+  const activeStep = Math.min(Math.floor((progress / 100) * copy.buildSteps.length), copy.buildSteps.length - 1)
 
   return (
     <div className="flex w-full flex-1 flex-col items-center px-4 pt-8 pb-12">
       <div className="mb-8 w-full">
         <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs font-bold tracking-widest text-sw-blue uppercase">Building your plan...</span>
+          <span className="text-xs font-bold tracking-widest text-sw-blue uppercase">{copy.building}</span>
           <span className="text-sm font-bold text-sw-dark">{progress}%</span>
         </div>
         <div className="h-2 overflow-hidden rounded-full bg-sw-grey-light">
@@ -193,13 +142,13 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
       {showDevice ? (
         <div className="flex w-full flex-col animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Quick question</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{copy.quickQuestion}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-            Where will you mostly be learning?
+            {copy.deviceTitle}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">We&apos;ll optimise your plan for it</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{copy.deviceSubtitle}</p>
           <div className="flex flex-col gap-3">
-            {DEVICE_OPTIONS.map(({ id, label, emoji }) => {
+            {copy.deviceOptions.map(({ id, label, emoji }) => {
               const selected = selectedDevice === id && phase === 'q1-confirm'
               return (
                 <button
@@ -230,7 +179,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           </div>
           {phase === 'q1-confirm' ? (
             <div className="mt-5 animate-fade-in rounded-2xl border border-sw-blue-border bg-sw-blue-light px-5 py-3 text-center">
-              <p className="text-sm font-bold text-sw-blue">✓ Perfect — we&apos;ll optimise your plan for that!</p>
+              <p className="text-sm font-bold text-sw-blue">{copy.deviceConfirm}</p>
             </div>
           ) : null}
         </div>
@@ -238,13 +187,13 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
       {showCommitment ? (
         <div className="flex w-full flex-col animate-fade-up">
-          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">Almost there</p>
+          <p className="mb-3 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">{copy.almostThere}</p>
           <h2 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-            How committed are you to your 28-Day Challenge?
+            {copy.commitmentTitle}
           </h2>
-          <p className="mb-6 text-center text-sm text-sw-grey">Be honest — your plan adapts to you</p>
+          <p className="mb-6 text-center text-sm text-sw-grey">{copy.commitmentSubtitle}</p>
           <div className="flex flex-col gap-3">
-            {COMMITMENT_OPTIONS.map(({ id, label, emoji }) => {
+            {copy.commitmentOptions.map(({ id, label, emoji }) => {
               const selected = selectedCommitment === id && phase === 'q2-confirm'
               return (
                 <button
@@ -276,7 +225,8 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           {phase === 'q2-confirm' ? (
             <div className="mt-5 animate-fade-in rounded-2xl border border-sw-blue-border bg-sw-blue-light px-5 py-3 text-center">
               <p className="text-sm font-bold text-sw-blue">
-                {COMMITMENT_CONFIRM[selectedCommitment] ?? COMMITMENT_CONFIRM.trying}
+                {copy.commitmentConfirm[selectedCommitment as keyof typeof copy.commitmentConfirm] ??
+                  copy.commitmentConfirm.trying}
               </p>
             </div>
           ) : null}
@@ -286,7 +236,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       {!showDevice && !showCommitment ? (
         <>
           <div className="mb-8 flex w-full max-w-xs flex-col gap-2">
-            {BUILD_STEPS.map((label, index) => {
+            {copy.buildSteps.map((label, index) => {
               const isComplete = completedSteps.includes(index)
               const isActive = index === activeStep && !isComplete
               return (

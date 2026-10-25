@@ -1,23 +1,22 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { buyOffer, fetchMindoraThread, fetchMindoraThreads, fetchMindoraUsage, sendMindoraMessage } from '@/lib/api'
+import {
+  buyOffer,
+  chargeErrorMessage,
+  fetchMindoraThread,
+  fetchMindoraThreads,
+  fetchMindoraUsage,
+  sendMindoraMessage,
+} from '@/lib/api'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useHasSavedCard } from '@/lib/lmsQueries'
 import { COACH_AVATAR, COACH_GOALS_KEY, COACH_GOALS_LEGACY_KEY, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
 
-const CHIPS = [
-  'What should I focus on today?',
-  'Help me set a goal',
-  'Review my progress this week',
-  'I need motivation',
-]
+const CHIP_KEYS = ['app.mindora.chipFocus','app.mindora.chipGoal','app.mindora.chipReview','app.mindora.chipMotivation'] as const
 
-const LESSON_CHIPS = [
-  'Help me understand this lesson',
-  'How do I apply this?',
-  'Quiz me on the key ideas',
-]
+const LESSON_CHIP_KEYS = ['app.mindora.chipLessonUnderstand','app.mindora.chipLessonApply','app.mindora.chipLessonQuiz'] as const
 
-const FOLLOWUP_CHIPS = ['Tell me more', 'How do I apply this?', 'Set a goal for this']
+const FOLLOWUP_CHIP_KEYS = ['app.mindora.chipTellMore','app.mindora.chipFollowApply','app.mindora.chipFollowGoal'] as const
 
 const LESSON_QUERY_KEYS = ['lesson', 'task', 'concept', 'detail', 'prompt'] as const
 
@@ -68,6 +67,7 @@ function hasLessonQuery(params: URLSearchParams) {
 }
 
 export default function MindoraPage() {
+  const { t } = useI18n()
   const [params, setSearchParams] = useSearchParams()
   const conversationId = params.get('conversationId') || undefined
   const hasCard = useHasSavedCard()
@@ -235,14 +235,14 @@ export default function MindoraPage() {
         setUsage(next)
         return
       }
-      setUnlockError(result.error || 'Payment failed')
+      setUnlockError(chargeErrorMessage(result, t, t('app.mindora.paymentFailed')))
     } finally {
       setUnlockBusy(false)
     }
   }
 
   const empty = messages.length === 0
-  const emptyChips = hasLessonQuery(params) ? LESSON_CHIPS : CHIPS
+  const emptyChipKeys = hasLessonQuery(params) ? LESSON_CHIP_KEYS : CHIP_KEYS
   const addGoal = (title: string) => {
     const next = [...goals, { id: crypto.randomUUID(), title }]
     setGoals(next)
@@ -269,13 +269,13 @@ export default function MindoraPage() {
           <img src={COACH_AVATAR} alt={COACH_NAME} className="w-9 h-9 rounded-full object-contain p-1" />
           <div>
             <h1 className="text-base font-bold text-sw-dark leading-tight">{COACH_NAME}</h1>
-            <p className="text-xs text-sw-grey">Your AI Coach</p>
+            <p className="text-xs text-sw-grey">{t('app.mindora.yourAiCoach')}</p>
           </div>
         </div>
         <div className="ml-auto flex items-center gap-2">
           <button
             type="button"
-            title="New conversation"
+            title={t('app.mindora.newConversation')}
             onClick={resetConversation}
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 text-sw-grey transition-colors"
           >
@@ -286,7 +286,7 @@ export default function MindoraPage() {
           </button>
           <Link
             to="/app/mindora/history"
-            title="Conversation history"
+            title={t('app.mindora.history')}
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 text-sw-grey transition-colors"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -297,7 +297,7 @@ export default function MindoraPage() {
           </Link>
           <button
             type="button"
-            title="My Goals"
+            title={t('app.mindora.myGoals')}
             onClick={() => setGoalsOpen((open) => !open)}
             className={`relative w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
               goalsOpen ? 'bg-sw-blue/10 text-sw-blue' : 'hover:bg-sw-grey-light/50 text-sw-grey'
@@ -316,7 +316,7 @@ export default function MindoraPage() {
           </button>
           {usage ? (
             <div className="text-xs text-sw-grey bg-sw-grey-light/50 px-2.5 py-1 rounded-full">
-              {usage.used}/{usage.limit} today
+              {t('app.mindora.todayQuota').replace('{used}', String(usage.used)).replace('{limit}', String(usage.limit))}
             </div>
           ) : null}
         </div>
@@ -343,26 +343,26 @@ export default function MindoraPage() {
         ) : empty ? (
           <div className="flex flex-col items-center justify-center text-center py-12 px-4">
             <img src={COACH_AVATAR} alt={COACH_NAME} className="w-16 h-16 rounded-full object-contain p-1 mb-4 shadow-md" />
-            <h2 className="text-lg font-bold text-sw-dark mb-2">Hey! I&apos;m Mindora</h2>
+            <h2 className="text-lg font-bold text-sw-dark mb-2">{t('app.mindora.heyIm')}</h2>
             <p className="text-sm text-sw-grey max-w-[280px] leading-relaxed">
-              Your personal AI coach. I know your goals, your progress, and what you&apos;re learning — ask me anything.
+              {t('app.mindora.emptySub')}
             </p>
             <div className="flex flex-wrap gap-2 mt-5 justify-center max-w-[320px]">
-              {emptyChips.map((chip) => (
+              {emptyChipKeys.map((key) => (
                 <button
-                  key={chip}
+                  key={key}
                   type="button"
                   disabled={busy}
-                  onClick={() => void send(chip)}
+                  onClick={() => void send(t(key))}
                   className="text-xs bg-sw-grey-light/60 text-sw-grey border border-sw-grey-border/50 rounded-full px-3 py-1.5 hover:bg-sw-blue/5 hover:border-sw-blue/30 hover:text-sw-blue transition-colors active:scale-95 disabled:opacity-50"
                 >
-                  {chip}
+                  {t(key)}
                 </button>
               ))}
             </div>
           </div>
         ) : (
-          <div className="max-w-md mx-auto space-y-3 px-4 py-6" aria-label="Conversation with Mindora">
+          <div className="max-w-md mx-auto space-y-3 px-4 py-6" aria-label={t('app.mindora.conversationAria')}>
             {messages.map((message, index) =>
               message.role === 'user' ? (
                 <div key={`${message.role}-${index}`} className="flex justify-end animate-fade-in">
@@ -382,18 +382,18 @@ export default function MindoraPage() {
             {busy ? (
               <div className="flex items-start gap-2.5">
                 <img src={COACH_AVATAR} alt={COACH_NAME} className="w-7 h-7 rounded-full object-contain p-1 flex-shrink-0 mt-0.5" />
-                <div className="bg-sw-grey-light/60 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-sw-grey">Mindora is typing…</div>
+                <div className="bg-sw-grey-light/60 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-sw-grey">{t('app.mindora.typing')}</div>
               </div>
             ) : locked ? null : (
               <div className="flex flex-wrap gap-2 pt-1">
-                {FOLLOWUP_CHIPS.map((chip) => (
+                {FOLLOWUP_CHIP_KEYS.map((key) => (
                   <button
-                    key={chip}
+                    key={key}
                     type="button"
-                    onClick={() => void send(chip)}
+                    onClick={() => void send(t(key))}
                     className="text-xs bg-sw-grey-light/60 text-sw-grey border border-sw-grey-border/50 rounded-full px-3 py-1.5 hover:bg-sw-blue/5 hover:border-sw-blue/30 hover:text-sw-blue transition-colors active:scale-95"
                   >
-                    {chip}
+                    {t(key)}
                   </button>
                 ))}
               </div>
@@ -422,8 +422,8 @@ export default function MindoraPage() {
             <textarea
               value={text}
               rows={1}
-              aria-label="Message to Mindora"
-              placeholder="Ask Mindora anything..."
+              aria-label={t('app.mindora.messageAria')}
+              placeholder={t('app.mindora.placeholder')}
               disabled={busy || !hydrated}
               onChange={(event) => setText(event.target.value)}
               onKeyDown={(event) => {
@@ -462,6 +462,7 @@ function UnlockStrip({
   error: string | null
   onUnlock: () => void
 }) {
+  const { t } = useI18n()
   return (
     <div
       className="border-t border-sw-grey-border/40"
@@ -469,25 +470,29 @@ function UnlockStrip({
     >
       <div className="px-4 pt-4 pb-2">
         <div className="text-center mb-3">
-          <p className="text-sm font-bold text-sw-dark">You&apos;ve used your free message today</p>
-          <p className="text-xs text-sw-grey mt-0.5">Unlock unlimited AI coaching — one-time purchase</p>
+          <p className="text-sm font-bold text-sw-dark">{t('app.mindora.unlockUsedFree')}</p>
+          <p className="text-xs text-sw-grey mt-0.5">{t('app.mindora.unlockSub')}</p>
         </div>
         <div className="relative bg-white rounded-xl border-2 border-[hsl(var(--sw-blue)/0.2)] p-3 mb-3 shadow-sm">
           <div className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-[hsl(var(--sw-success))] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
-            One-Time Offer
+            {t('app.mindora.oneTimeOffer')}
           </div>
           <div className="flex items-center justify-between mt-1">
             <div>
-              <p className="text-xs text-sw-grey line-through">Normally $99</p>
-              <p className="text-[10px] text-sw-grey mt-0.5">Lifetime access</p>
+              <p className="text-xs text-sw-grey line-through">{t('app.mindora.normally')}</p>
+              <p className="text-[10px] text-sw-grey mt-0.5">{t('app.mindora.lifetimeUnlock').split('•').pop()?.trim()}</p>
             </div>
             <div className="text-right">
-              <p className="text-[10px] text-sw-grey uppercase font-medium">Today Only</p>
+              <p className="text-[10px] text-sw-grey uppercase font-medium">{t('app.mindora.todayOnly')}</p>
               <p className="text-2xl font-extrabold text-[hsl(var(--sw-blue))]">$19.95</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2 pt-2 border-t border-sw-grey-border/30">
-            {['20 chats/day', 'Personalised', 'Accountability'].map((item) => (
+            {[
+              t('app.mindora.perkChats'),
+              t('app.mindora.perkPersonalised'),
+              t('app.mindora.perkAccountability'),
+            ].map((item) => (
               <span key={item} className="text-[10px] text-sw-dark flex items-center gap-1">
                 <span className="text-[hsl(var(--sw-success))]">✓</span> {item}
               </span>
@@ -505,16 +510,15 @@ function UnlockStrip({
               {busy ? (
                 <span className="flex items-center justify-center gap-2">
                   <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  Processing...
+                  {t('app.common.processing')}
                 </span>
               ) : (
-                'YES! — UNLOCK MINDORA →'
+                t('app.mindora.yesUnlock')
               )}
             </button>
             <div className="mt-2.5 px-2 py-2 bg-white/60 rounded-lg border border-sw-grey-border/40">
               <p className="text-[10px] text-sw-grey text-center leading-relaxed">
-                By tapping &quot;Unlock Mindora&quot;, <span className="font-bold text-sw-dark">you agree to a one-time charge of $19.95</span>. Access is
-                instant.
+                {t('app.mindora.unlockAgreement')}
               </p>
             </div>
           </>
@@ -525,9 +529,9 @@ function UnlockStrip({
               onClick={onUnlock}
               className="block w-full py-3.5 rounded-xl bg-gradient-to-r from-[hsl(var(--sw-blue))] to-[hsl(var(--sw-purple))] text-white text-sm font-bold shadow-lg active:scale-[0.97] transition-all text-center"
             >
-              UNLOCK MINDORA — $19.95 →
+              {t('app.mindora.unlockCta')}
             </button>
-            <p className="text-[10px] text-sw-grey text-center mt-2">One-time payment • Secure checkout</p>
+            <p className="text-[10px] text-sw-grey text-center mt-2">{t('app.mindora.secureCheckout')}</p>
           </>
         )}
         {error ? <p className="text-[11px] text-red-500 text-center mt-2 font-medium">{error}</p> : null}
@@ -550,6 +554,7 @@ function GoalsPanel({
   onRemove: (id: string) => void
   onAskMindora: (prompt: string) => void
 }) {
+  const { t } = useI18n()
   const [draft, setDraft] = useState('')
   const [adding, setAdding] = useState(false)
 
@@ -565,9 +570,11 @@ function GoalsPanel({
     <div className="border-b border-sw-grey-border/30 bg-gradient-to-b from-sw-grey-light/30 to-white px-4 py-3 animate-fade-in">
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-sm font-bold text-sw-dark flex items-center gap-1.5">
-          🎯 My Goals
+          🎯 {t('app.mindora.myGoals')}
           {goals.length > 0 ? (
-            <span className="text-[10px] font-medium bg-sw-blue/10 text-sw-blue px-1.5 py-0.5 rounded-full">{goals.length} active</span>
+            <span className="text-[10px] font-medium bg-sw-blue/10 text-sw-blue px-1.5 py-0.5 rounded-full">
+              {t('app.mindora.goalsActive').replace('{n}', String(goals.length))}
+            </span>
           ) : null}
         </h3>
         <button type="button" onClick={onClose} className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-sw-grey-light text-sw-grey">
@@ -578,16 +585,16 @@ function GoalsPanel({
       </div>
       {goals.length === 0 && !adding ? (
         <div className="text-center py-4">
-          <p className="text-xs text-sw-grey mb-2">No active goals yet</p>
+          <p className="text-xs text-sw-grey mb-2">{t('app.mindora.noGoals')}</p>
           <button type="button" onClick={() => setAdding(true)} className="text-xs font-medium text-sw-blue hover:underline">
-            + Set your first goal
+            {t('app.mindora.setFirstGoal')}
           </button>
           <button
             type="button"
-            onClick={() => onAskMindora('Help me set a meaningful goal for this week')}
+            onClick={() => onAskMindora(t('app.mindora.chipGoal'))}
             className="block mx-auto mt-2 text-[11px] text-sw-grey hover:text-sw-blue transition-colors"
           >
-            Or ask Mindora to help →
+            {t('app.mindora.askGoalHelp')}
           </button>
         </div>
       ) : null}
@@ -598,7 +605,7 @@ function GoalsPanel({
               <div className="flex-1 min-w-0">
                 <p className="text-xs font-medium text-sw-dark leading-tight">{goal.title}</p>
               </div>
-              <button type="button" onClick={() => onRemove(goal.id)} className="text-sw-grey/50 hover:text-sw-coral transition-colors flex-shrink-0" title="Remove goal">
+              <button type="button" onClick={() => onRemove(goal.id)} className="text-sw-grey/50 hover:text-sw-coral transition-colors flex-shrink-0" title={t('app.mindora.removeGoal')}>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
@@ -616,11 +623,11 @@ function GoalsPanel({
             onKeyDown={(event) => {
               if (event.key === 'Enter') submit()
             }}
-            placeholder="Add a goal..."
+            placeholder={t('app.mindora.addGoalPlaceholder')}
             className="flex-1 text-xs bg-white border border-sw-grey-border/50 rounded-lg px-3 py-2 focus:outline-none focus:ring-1 focus:ring-sw-blue/30 focus:border-sw-blue/40 placeholder:text-sw-grey/50"
           />
           <button type="button" onClick={submit} disabled={!draft.trim()} className="text-xs font-medium text-white bg-sw-blue rounded-lg px-3 py-2 disabled:opacity-40 transition-opacity">
-            Add
+            {t('app.common.add')}
           </button>
         </div>
       ) : null}

@@ -1,9 +1,11 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Navigate } from 'react-router-dom'
 import AuthSpinner from '@/auth/AuthSpinner'
+import { useI18n } from '@/i18n/I18nProvider'
 import { fetchSubscription, type SubscriptionDto } from '@/lib/api'
 
 export default function RequireLmsAccess({ children }: { children: ReactNode }) {
+  const { t } = useI18n()
   const [subscription, setSubscription] = useState<SubscriptionDto | undefined>(undefined)
 
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function RequireLmsAccess({ children }: { children: ReactNode }) 
   }, [])
 
   if (subscription === undefined) {
-    return <AuthSpinner message="Activating your account…" />
+    return <AuthSpinner message={t('auth.activatingAccount')} />
   }
 
   if (subscription === null) {

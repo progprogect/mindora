@@ -1,12 +1,16 @@
 export const LEVELS = [
-  { level: 1, title: 'Beginner', min: 0, max: 500 },
-  { level: 2, title: 'Explorer', min: 500, max: 1500 },
-  { level: 3, title: 'Achiever', min: 1500, max: 3500 },
-  { level: 4, title: 'Trailblazer', min: 3500, max: 7000 },
-  { level: 5, title: 'Champion', min: 7000, max: 12000 },
-  { level: 6, title: 'Master', min: 12000, max: 20000 },
-  { level: 7, title: 'Legend', min: 20000, max: Infinity },
+  { level: 1, min: 0, max: 500 },
+  { level: 2, min: 500, max: 1500 },
+  { level: 3, min: 1500, max: 3500 },
+  { level: 4, min: 3500, max: 7000 },
+  { level: 5, min: 7000, max: 12000 },
+  { level: 6, min: 12000, max: 20000 },
+  { level: 7, min: 20000, max: Infinity },
 ] as const
+
+export function levelTitleKey(level: number) {
+  return `levels.${level}.title`
+}
 
 export function levelForXp(xp: number) {
   const reached = LEVELS.filter((level) => xp >= level.min)

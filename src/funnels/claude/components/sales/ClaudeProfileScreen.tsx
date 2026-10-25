@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import type { ClaudeProfile, ClaudeQuizAnswers, ClaudeSkillLevel } from '@/funnels/claude/types/claudeQuiz'
+import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
 import { trackEvent } from '@/shared/lib/tracking'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 const FUNNEL = 'claude-ai-certification'
 
@@ -76,11 +78,10 @@ const SKILL_SCORES: Record<string, { prompting: number; workflows: number; certR
   beginner: { prompting: 22, workflows: 15, certReady: 38 },
 }
 
-/**
- * Port of `ClaudeProfileScreen` (`ClaudeProfileScreen-BsMU0jYV.js`) — persona
- * badge, gradient level card, 3 animated score rings and certification path.
- */
 export default function ClaudeProfileScreen({ name, profile, answers, onContinue }: ClaudeProfileScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeSalesUiCopy(locale).profile
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
     trackEvent('PlanViewed', { funnel: FUNNEL })
@@ -97,11 +98,11 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
           <span className="text-xs font-bold tracking-wide text-sw-blue uppercase">{profile.persona}</span>
         </div>
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          {name}, here&apos;s your
+          {copy.titleName(name)}
           <br />
-          Claude AI Profile
+          {copy.titleRest}
         </h1>
-        <p className="text-sm text-sw-grey">Your personalised assessment results</p>
+        <p className="text-sm text-sw-grey">{copy.subtitle}</p>
       </div>
 
       <div
@@ -113,7 +114,7 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
             <span className="text-2xl">{LEVEL_EMOJI[profile.level]}</span>
           </div>
           <div>
-            <p className="text-xs font-bold tracking-wide text-white/70 uppercase">Current Level</p>
+            <p className="text-xs font-bold tracking-wide text-white/70 uppercase">{copy.currentLevel}</p>
             <p className="text-xl font-extrabold text-white">{profile.levelLabel}</p>
           </div>
         </div>
@@ -123,13 +124,13 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
       </div>
 
       <div className="mb-6 grid animate-fade-up grid-cols-3 gap-3">
-        <ScoreRing score={scores.prompting} label="Prompting" delay={200} />
-        <ScoreRing score={scores.workflows} label="Workflows" delay={400} />
-        <ScoreRing score={scores.certReady} label="Cert Ready" delay={600} />
+        <ScoreRing score={scores.prompting} label={copy.prompting} delay={200} />
+        <ScoreRing score={scores.workflows} label={copy.workflows} delay={400} />
+        <ScoreRing score={scores.certReady} label={copy.certReady} delay={600} />
       </div>
 
       <div className="mb-5 animate-fade-up rounded-2xl border-2 border-sw-blue/25 bg-sw-blue-light p-5">
-        <p className="mb-1 text-sm font-bold text-sw-dark">Your biggest opportunity:</p>
+        <p className="mb-1 text-sm font-bold text-sw-dark">{copy.opportunity}</p>
         <p className="text-sm leading-relaxed text-sw-grey">{profile.description}</p>
       </div>
 
@@ -138,9 +139,9 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
           <span className="text-xl">⏱️</span>
         </div>
         <div>
-          <p className="text-sm font-bold text-sw-dark">Potential time saved</p>
+          <p className="text-sm font-bold text-sw-dark">{copy.timeSaved}</p>
           <p className="text-sm text-sw-grey">
-            <span>{profile.weeklyTimeSaved}</span> per week with Claude mastery
+            <span>{profile.weeklyTimeSaved}</span> {copy.timeSavedSuffix}
           </p>
         </div>
       </div>
@@ -155,7 +156,7 @@ export default function ClaudeProfileScreen({ name, profile, answers, onContinue
             onClick={onContinue}
             className="w-full rounded-full bg-sw-blue py-4 text-base font-bold text-sw-white shadow-lg transition-all duration-150 hover:bg-sw-blue-hover active:scale-[0.98]"
           >
-            See My Certification Plan →
+            {copy.cta}
           </button>
         </div>
         <div style={{ paddingTop: '56px', paddingBottom: 'env(safe-area-inset-bottom)' }} />

@@ -5,15 +5,14 @@ import { Authenticated, AuthLoading, Unauthenticated } from '@/auth/authGates'
 import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser } from '@/auth/session'
 import {
-  PLANNER_CATEGORIES,
   PLANNER_COUNT,
   PLANNER_LIST_CENTS,
   PLANNER_OTO_CENTS,
   PLANNER_PAGES,
   PLANNER_SINGLE_CENTS,
   PLANNER_BUNDLE_SLUG,
-  PLANNERS,
   money,
+  plannerContent,
   plannersInCategory,
 } from '@/content/planners'
 import { buyOffer, recordUpsellEvent } from '@/lib/api'
@@ -22,6 +21,16 @@ import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
 import { COMPANY } from '@/shared/company'
+import { useI18n } from '@/i18n/I18nProvider'
+
+function tf(t: (key: string) => string, key: string, vars: Record<string, string | number | undefined> = {}) {
+  let s = t(key)
+  for (const [k, v] of Object.entries(vars)) {
+    if (v === undefined) continue
+    s = s.split(`{${k}}`).join(String(v))
+  }
+  return s
+}
 
 const OFFER = PLANNER_BUNDLE_SLUG
 const COMPARE_COUNT = 2
@@ -55,9 +64,9 @@ const ACCENT = {
 } as const
 
 const INTERIORS = [
-  { src: '/assets/oto/interior-1.png', alt: 'A page from inside one of the planners' },
-  { src: '/assets/oto/interior-2.png', alt: 'Another page from inside one of the planners' },
-  { src: '/assets/oto/interior-3.png', alt: 'A further page from inside one of the planners' },
+  { src: '/assets/oto/interior-1.png', altKey: 'account.planners.interiorAlt1' },
+  { src: '/assets/oto/interior-2.png', altKey: 'account.planners.interiorAlt2' },
+  { src: '/assets/oto/interior-3.png', altKey: 'account.planners.interiorAlt3' },
 ]
 
 function UnauthRedirect() {
@@ -71,7 +80,8 @@ function BounceDashboard() {
   useEffect(() => {
     window.location.href = '/app/dashboard'
   }, [])
-  return <AuthSpinner message="Almost there..." />
+  const { t } = useI18n()
+  return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
 function CategoryIcon({ icon }: { icon: string }) {
@@ -124,17 +134,16 @@ function CategoryIcon({ icon }: { icon: string }) {
 }
 
 function ChargeNote({ hasSavedCard }: { hasSavedCard: boolean }) {
+  const { t } = useI18n()
+  const price = money(PLANNER_OTO_CENTS)
+  const list = money(PLANNER_LIST_CENTS)
   return (
     <div className="mt-3 rounded-xl border border-sw-grey-border bg-white p-3">
       <p className="text-xs leading-relaxed text-sw-grey">
-        By clicking above,{' '}
-        <span className="font-bold text-sw-dark">
-          you agree to a one-time charge of {money(PLANNER_OTO_CENTS)}
-        </span>
-        {hasSavedCard
-          ? ' using your saved payment method. Access is granted instantly.'
-          : ' via Stripe. Access is granted after payment.'}{' '}
-        This offer reverts to {money(PLANNER_LIST_CENTS)} after you leave this page.
+        {t('account.common.chargeAgreeOneTime')}{' '}
+        <span className="font-bold text-sw-dark">{price}</span>
+        {hasSavedCard ? t('account.common.chargeSavedInstant') : t('account.common.chargeStripeAfter')}{' '}
+        {t('account.common.offerRevertsAfter')} {list} {t('account.common.afterYouLeave')}
       </p>
     </div>
   )
@@ -160,6 +169,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 }
 
 function SuccessScreen() {
+  const { t } = useI18n()
   return (
     <div className="flex min-h-screen items-center justify-center bg-white px-4">
       <div className="max-w-sm text-center">
@@ -175,17 +185,17 @@ function SuccessScreen() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="mb-2 text-2xl font-extrabold text-sw-dark">Payment successful</h2>
-        <p className="mb-1 text-base font-semibold text-sw-dark">All {PLANNER_COUNT} planners are yours</p>
-        <p className="text-sm text-sw-grey">
-          They are on the Purchases page in your dashboard, and they stay there permanently.
+        <h2 className="mb-2 text-2xl font-extrabold text-sw-dark">{t('account.planners.successTitle')}</h2>
+        <p className="mb-1 text-base font-semibold text-sw-dark">
+          {tf(t, 'account.planners.successSubtitle', { count: PLANNER_COUNT })}
         </p>
+        <p className="text-sm text-sw-grey">{t('account.planners.successBody')}</p>
         <div className="mt-6">
           <div
             aria-hidden="true"
             className="mx-auto h-6 w-6 animate-spin rounded-full border-2 border-sw-blue border-t-transparent"
           />
-          <p className="mt-2 text-xs text-sw-grey">Taking you to your next step...</p>
+          <p className="mt-2 text-xs text-sw-grey">{t('account.common.takingYouNext')}</p>
         </div>
       </div>
     </div>
@@ -223,6 +233,8 @@ function CheckIcon({ variant }: { variant: 'tick' | 'minus' | 'pdf' }) {
 }
 
 export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
+  const { t, locale } = useI18n()
+  const { planners: plannerList, categories: plannerCategories } = plannerContent(locale)
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -300,39 +312,37 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   const oto = money(PLANNER_OTO_CENTS)
   const list = money(PLANNER_LIST_CENTS)
   const single = money(PLANNER_SINGLE_CENTS)
-  const areas = PLANNER_CATEGORIES.length
+  const areas = plannerCategories.length
 
   return (
     <>
       <OtoChrome
         activeStep="Upgrades"
         pillTestId="planner-new-member-label"
-        pillLabel="⚡ Exclusive new-member bundle"
-        pillSubLabel="Only available during setup"
+        pillLabel={t('account.planners.pillLabel')}
+        pillSubLabel={t('account.planners.pillSubLabel')}
         pillClassName="bg-sw-amber"
       />
       <div className="min-h-screen overflow-x-hidden bg-white px-4 pt-4 pb-44">
         <div className="mx-auto max-w-2xl">
           <div className="px-1 sm:px-2">
             <h1 className="mt-6 text-balance text-center text-[2.5rem] font-extrabold leading-[1.1] text-sw-dark sm:text-5xl">
-              Plan Better. Focus Deeper.{' '}
-              <span className="text-sw-blue">Dream Bigger.</span>
+              {t('account.planners.heroTitle1')}{' '}
+              <span className="text-sw-blue">{t('account.planners.heroTitle2')}</span>
             </h1>
             <p className="mx-auto mt-4 max-w-md text-center text-base leading-relaxed text-sw-dark sm:text-lg">
-              Get all {i} Productivity & Personal Growth Planners for just{' '}
-              <span className="font-bold text-sw-blue">{oto}</span>.
+              {tf(t, 'account.planners.heroSub', { count: i, price: oto })}
             </p>
             <p
               data-testid="planner-hero-subline"
               className="mx-auto mt-3 max-w-lg text-center text-sm leading-relaxed text-sw-grey sm:text-base"
             >
-              {pages} printable pages to help you organise your days, beat procrastination, build
-              better habits, clarify your goals and turn bigger ambitions into action.
+              {tf(t, 'account.planners.heroSubline', { pages })}
             </p>
             <div className="relative mx-auto mt-6 w-full max-w-2xl">
               <img
                 src="/assets/oto/hero.png"
-                alt={`All ${i} printable planners in the bundle`}
+                alt={tf(t, 'account.planners.heroAlt', { count: i })}
                 loading="eager"
                 data-testid="planner-hero-image"
                 className="h-auto w-full"
@@ -343,15 +353,15 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               >
                 <span className="text-xl font-extrabold leading-none text-sw-blue sm:text-2xl">{i}</span>
                 <span className="text-[8px] font-bold uppercase tracking-wide text-sw-blue sm:text-[9px]">
-                  Planners
+                  {t('account.planners.badgePlanners')}
                 </span>
                 <span className="mt-0.5 text-[11px] font-extrabold leading-none text-sw-dark sm:text-sm">
                   {pages}
                 </span>
                 <span className="text-[7px] font-bold uppercase leading-tight tracking-wide text-sw-grey sm:text-[8px]">
-                  Printable
+                  {t('account.planners.badgePrintable')}
                   <br />
-                  pages
+                  {t('account.planners.badgePages')}
                 </span>
               </div>
             </div>
@@ -368,13 +378,13 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     {list}
                   </span>
                   <span className="mt-1 text-[11px] font-bold uppercase tracking-wide text-sw-grey">
-                    Individual value
+                    {t('account.planners.individualValue')}
                   </span>
                 </div>
                 <div aria-hidden="true" className="w-px bg-sw-grey-border" />
                 <div className="flex flex-1 flex-col items-center justify-center">
                   <span className="text-[11px] font-extrabold uppercase tracking-wide text-sw-dark">
-                    Today only
+                    {t('account.planners.todayOnly')}
                   </span>
                   <span
                     data-testid="planner-bundle-price"
@@ -385,13 +395,13 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 </div>
               </div>
               <p className="mt-4 text-sm font-semibold text-sw-dark">
-                {list} bought separately — a one-time payment, not a subscription
+                {tf(t, 'account.planners.boughtSeparately', { list })}
               </p>
               <p
                 data-testid="planner-savings"
                 className="mt-4 rounded-lg bg-sw-amber/25 px-4 py-2.5 text-base font-extrabold uppercase tracking-wide text-sw-amber-dark"
               >
-                Save {money(PLANNER_LIST_CENTS - PLANNER_OTO_CENTS)}
+                {tf(t, 'account.planners.save', { amount: money(PLANNER_LIST_CENTS - PLANNER_OTO_CENTS) })}
               </p>
               {showCtas ? (
                 <>
@@ -402,7 +412,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     data-testid="planner-hero-cta"
                     className="mt-4 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-7 py-3 text-center text-base font-bold leading-tight text-white shadow-lg shadow-sw-blue/25 transition-all hover:bg-sw-blue-hover active:scale-95 disabled:opacity-60"
                   >
-                    Yes! Unlock all {i} planners for {oto} →
+                    {tf(t, 'account.planners.heroCta', { count: i, price: oto })}
                   </button>
                   <ChargeNote hasSavedCard={hasSavedCard} />
                 </>
@@ -413,7 +423,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 data-testid="planner-hero-skip"
                 className="mx-auto mt-2 flex min-h-[44px] items-center justify-center px-2 text-sm font-semibold text-sw-blue underline decoration-1 underline-offset-2 transition hover:text-sw-blue-hover"
               >
-                No thanks, continue without the planners
+                {t('account.planners.skip')}
               </button>
             </div>
             <ul
@@ -422,15 +432,15 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             >
               <li className="flex items-center gap-1.5">
                 <CheckIcon variant="tick" />
-                Instant access in your dashboard
+                {t('account.planners.trustInstant')}
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckIcon variant="minus" />
-                Single charge, no subscription
+                {t('account.planners.trustSingle')}
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckIcon variant="pdf" />
-                {i} printable PDFs, yours to keep
+                {tf(t, 'account.planners.trustPdfs', { count: i })}
               </li>
             </ul>
             <section
@@ -438,16 +448,15 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               className="mt-8 rounded-2xl border border-sw-grey-border bg-white p-5 sm:p-6"
             >
               <p className="text-center text-[11px] font-extrabold uppercase tracking-[0.14em] text-sw-blue sm:text-xs">
-                Why this bundle is unbeatable value
+                {t('account.planners.compareEyebrow')}
               </p>
               <h2 className="mt-3 text-balance text-center text-2xl font-extrabold leading-[1.15] text-sw-dark sm:text-3xl">
-                Get {i - COMPARE_COUNT} More Planners
+                {tf(t, 'account.planners.compareTitle1', { extra: i - COMPARE_COUNT })}
                 <br />
-                <span className="text-sw-blue">And Still Pay Less.</span>
+                <span className="text-sw-blue">{t('account.planners.compareTitle2')}</span>
               </h2>
               <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-sw-grey sm:text-base">
-                Buying just {COMPARE_COUNT} planners later would cost more than getting all {i} today
-                at this special price.
+                {tf(t, 'account.planners.compareSub', { compare: COMPARE_COUNT, count: i })}
               </p>
               <div className="relative mt-6 grid grid-cols-2 gap-3 sm:gap-5">
                 <div className="rounded-2xl border border-sw-coral/30 bg-sw-coral/10 p-4 text-center">
@@ -458,7 +467,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     🛒
                   </span>
                   <p className="mt-2 text-[11px] font-extrabold uppercase tracking-wide text-sw-dark sm:text-xs">
-                    Buy just {COMPARE_COUNT} later
+                    {tf(t, 'account.planners.buyLater', { compare: COMPARE_COUNT })}
                   </p>
                   <p className="mt-1 text-xs font-semibold text-sw-grey">
                     {COMPARE_COUNT} × {single}
@@ -475,24 +484,26 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     🎁
                   </span>
                   <p className="mt-2 text-[11px] font-extrabold uppercase tracking-wide text-sw-dark sm:text-xs">
-                    Get all {i} now
+                    {tf(t, 'account.planners.getAllNow', { count: i })}
                   </p>
-                  <p className="mt-1 text-xs font-semibold text-sw-grey">{i} planners</p>
+                  <p className="mt-1 text-xs font-semibold text-sw-grey">
+                    {i} {t('account.planners.plannersWord')}
+                  </p>
                   <p className="mt-1 text-3xl font-extrabold text-sw-success sm:text-4xl">{oto}</p>
                 </div>
                 <span
                   aria-hidden="true"
                   className="pointer-events-none absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-sw-grey-border bg-white text-[11px] font-extrabold uppercase text-sw-grey shadow-sm sm:h-10 sm:w-10 sm:text-xs"
                 >
-                  vs
+                  {t('account.planners.vs')}
                 </span>
               </div>
               <p className="mx-auto mt-5 flex max-w-md items-center justify-center gap-2 rounded-full bg-sw-amber/20 px-4 py-2.5 text-center text-sm font-bold text-sw-amber-dark">
                 <span aria-hidden="true">⭐</span>
-                That{"\u2019"}s {i - COMPARE_COUNT} extra planners — and you still pay less.
+                {tf(t, 'account.planners.extraPayLess', { extra: i - COMPARE_COUNT })}
               </p>
               <p className="mt-3 text-center text-sm text-sw-grey">
-                All {i} individually inside {COMPANY.brandName}:{' '}
+                {tf(t, 'account.planners.allInsideBrand', { count: i, brand: COMPANY.brandName })}{' '}
                 <span className="font-bold text-sw-blue">{list}</span>
               </p>
               {showCtas ? (
@@ -504,7 +515,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     data-testid="planner-mid-cta"
                     className="mt-5 flex min-h-[44px] w-full items-center justify-center rounded-full bg-sw-blue px-6 py-3 text-center text-base font-extrabold text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60"
                   >
-                    Add all {i} for {oto}
+                    {tf(t, 'account.planners.midCta', { count: i, price: oto })}
                   </button>
                   <ChargeNote hasSavedCard={hasSavedCard} />
                 </>
@@ -512,20 +523,19 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             </section>
             <section data-testid="planner-categories" className="mt-10 border-t border-sw-grey-border pt-8">
               <p className="text-center text-xs font-extrabold uppercase tracking-[0.14em] text-sw-blue">
-                Why {i} planners?
+                {tf(t, 'account.planners.whyCount', { count: i })}
               </p>
               <h2 className="mt-3 text-center text-[1.75rem] font-extrabold leading-[1.1] text-sw-dark sm:text-4xl">
-                One Bundle.
+                {t('account.planners.oneBundle')}
                 <br />
-                <span className="text-sw-blue">{areas} Areas of Life.</span>
+                <span className="text-sw-blue">{tf(t, 'account.planners.areasOfLife', { areas })}</span>
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-balance text-center text-[15px] leading-relaxed text-sw-grey sm:text-base">
-                Each planner helps with a different part of your life — so you can stay focused, grow,
-                reflect and take action with the right tool at the right time.
+                {t('account.planners.categoriesSub')}
               </p>
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                {PLANNER_CATEGORIES.map((category) => {
-                  const planners = plannersInCategory(category.id)
+                {plannerCategories.map((category) => {
+                  const planners = plannersInCategory(category.id, locale)
                   const accent = ACCENT[category.accent as keyof typeof ACCENT]
                   return (
                     <div
@@ -548,7 +558,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                             <span
                               className={`rounded-full px-2.5 py-1 text-[11px] font-bold ${accent.badgeBg} ${accent.badgeText}`}
                             >
-                              {planners.length} {planners.length === 1 ? 'planner' : 'planners'}
+                              {planners.length}{' '}
+                              {planners.length === 1
+                                ? t('account.planners.plannerWord')
+                                : t('account.planners.plannersWord')}
                             </span>
                           </div>
                           <ul className="mt-2 space-y-1.5">
@@ -585,19 +598,18 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             </section>
             <div className="mt-8">
               <p className="text-center text-[11px] font-extrabold uppercase tracking-[0.14em] text-sw-blue">
-                Everything you get
+                {t('account.planners.everythingYouGet')}
               </p>
               <h2 className="mt-3 text-center text-2xl font-extrabold leading-[1.15] text-sw-dark sm:text-3xl">
-                {i} Practical Planners.
+                {tf(t, 'account.planners.practicalTitle1', { count: i })}
                 <br />
-                <span className="text-sw-blue">One Powerful Bundle.</span>
+                <span className="text-sw-blue">{t('account.planners.practicalTitle2')}</span>
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-sw-grey sm:text-base">
-                A complete set of printable planners to help you focus, take action, build better
-                habits and create progress in every area of life.
+                {t('account.planners.practicalSub')}
               </p>
               <ul data-testid="planner-value-stack" className="mt-6 grid grid-cols-2 gap-4 sm:gap-5">
-                {PLANNERS.map((planner) => (
+                {plannerList.map((planner) => (
                   <li
                     key={planner.id}
                     data-testid="planner-card"
@@ -615,7 +627,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                       <p className="text-sm font-bold leading-snug text-sw-dark">{planner.name}</p>
                       <p className="mt-1 text-xs leading-snug text-sw-grey">{planner.benefit}</p>
                       <p className="mt-auto pt-2 text-xs font-semibold text-sw-grey">
-                        {planner.pdfPages} printable pages
+                        {tf(t, 'account.planners.printablePages', { pages: planner.pdfPages })}
                       </p>
                     </div>
                   </li>
@@ -624,25 +636,28 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             </div>
             <div data-testid="planner-how-it-works" className="mt-8">
               <h2 className="text-center text-xl font-extrabold leading-tight text-sw-dark sm:text-2xl">
-                How it works
+                {t('account.planners.howItWorks')}
               </h2>
               <ol className="mt-6 space-y-4">
                 {[
                   {
-                    title: 'Download the whole set',
-                    body: `All ${i} planners land in your account as printable PDFs, ready straight away.`,
+                    titleKey: 'account.planners.how1Title',
+                    bodyKey: 'account.planners.how1Body',
+                    vars: { count: i },
                   },
                   {
-                    title: 'Pick the area you want to work on',
-                    body: `Start with whichever of the ${areas} areas matters most right now. There is no order to follow.`,
+                    titleKey: 'account.planners.how2Title',
+                    bodyKey: 'account.planners.how2Body',
+                    vars: { areas },
                   },
                   {
-                    title: 'Print a page, or fill it in on screen',
-                    body: 'Print the pages you want as often as you like, or type into them on your tablet or computer. They are yours to keep.',
+                    titleKey: 'account.planners.how3Title',
+                    bodyKey: 'account.planners.how3Body',
+                    vars: {},
                   },
                 ].map((step, index) => (
                   <li
-                    key={step.title}
+                    key={step.titleKey}
                     data-testid="planner-how-it-works-step"
                     className="flex gap-4 rounded-xl border border-sw-grey-border bg-white p-4"
                   >
@@ -653,8 +668,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                       {index + 1}
                     </span>
                     <div>
-                      <p className="text-sm font-bold leading-snug text-sw-dark">{step.title}</p>
-                      <p className="mt-1 text-sm leading-snug text-sw-grey">{step.body}</p>
+                      <p className="text-sm font-bold leading-snug text-sw-dark">{t(step.titleKey)}</p>
+                      <p className="mt-1 text-sm leading-snug text-sw-grey">
+                        {tf(t, step.bodyKey, step.vars)}
+                      </p>
                     </div>
                   </li>
                 ))}
@@ -662,10 +679,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             </div>
             <div data-testid="planner-interior-proof" className="mt-8">
               <h2 className="text-center text-xl font-extrabold leading-tight text-sw-dark sm:text-2xl">
-                A look inside
+                {t('account.planners.lookInside')}
               </h2>
               <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-sw-grey">
-                Real pages from the planners you get today.
+                {t('account.planners.lookInsideSub')}
               </p>
               <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
                 {INTERIORS.map((image) => (
@@ -673,7 +690,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                     key={image.src}
                     data-testid="planner-interior-image"
                     src={image.src}
-                    alt={image.alt}
+                    alt={t(image.altKey)}
                     loading="lazy"
                     className="w-full rounded-xl border border-sw-grey-border bg-white"
                   />
@@ -683,28 +700,28 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             <figure data-testid="planner-lifestyle" className="mt-8">
               <img
                 src="/assets/oto/lifestyle.png"
-                alt="The planners printed out and bound into booklets on a desk"
+                alt={t('account.planners.lifestyleAlt')}
                 loading="lazy"
                 className="w-full rounded-xl border border-sw-grey-border bg-white"
               />
               <figcaption className="mt-3 text-center text-sm leading-relaxed text-sw-grey">
-                Print the pages you want, as often as you like.
+                {t('account.planners.lifestyleCaption')}
               </figcaption>
             </figure>
             <div data-testid="planner-size-strip" className="mt-10">
               <p className="text-center text-xs font-extrabold uppercase tracking-[0.14em] text-sw-blue">
-                New member bundle
+                {t('account.planners.newMemberBundle')}
               </p>
               <h2 className="mt-3 text-balance text-center text-[1.75rem] font-extrabold leading-[1.15] text-sw-dark sm:text-4xl">
-                Your Best Deal Is Still <span className="text-sw-blue">Right Here.</span>
+                {t('account.planners.bestDealTitle')}{' '}
+                <span className="text-sw-blue">{t('account.planners.bestDealBlue')}</span>
               </h2>
               <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-sw-grey sm:text-base">
-                If you want all {i} planners, this is the lowest price you&apos;ll see on this page. Buy
-                them individually later and you&apos;ll pay more.
+                {tf(t, 'account.planners.bestDealSub', { count: i })}
               </p>
               <div className="mt-6 rounded-2xl border border-sw-grey-border bg-white p-5 shadow-sm sm:p-7">
                 <p className="inline-flex items-center rounded-full bg-sw-blue-light px-3 py-1.5 text-xs font-extrabold uppercase tracking-wide text-sw-blue">
-                  Special new-member pricing
+                  {t('account.planners.specialPricing')}
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-5 sm:gap-8">
                   <div className="text-center">
@@ -712,27 +729,29 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                       {list}
                     </p>
                     <p className="mt-2 text-[10px] font-semibold uppercase tracking-wide text-sw-grey sm:text-xs">
-                      Individual value
+                      {t('account.planners.individualValue')}
                     </p>
                   </div>
                   <div aria-hidden="true" className="h-14 w-px shrink-0 bg-sw-grey-border" />
                   <div className="text-center">
-                    <p className="text-xs font-extrabold uppercase tracking-wide text-sw-dark">Today</p>
+                    <p className="text-xs font-extrabold uppercase tracking-wide text-sw-dark">
+                      {t('account.planners.today')}
+                    </p>
                     <p className="mt-1 text-4xl font-extrabold leading-none text-sw-blue sm:text-5xl">
                       {oto}
                     </p>
                   </div>
                 </div>
                 <p className="mt-5 rounded-xl bg-sw-amber/15 px-4 py-3 text-center text-lg font-extrabold uppercase tracking-wide text-sw-amber-dark sm:text-xl">
-                  Save {money(PLANNER_LIST_CENTS - PLANNER_OTO_CENTS)}
+                  {tf(t, 'account.planners.save', { amount: money(PLANNER_LIST_CENTS - PLANNER_OTO_CENTS) })}
                 </p>
                 <ul className="mt-5 space-y-0 text-left">
                   {[
-                    `All ${i} planners included`,
-                    `${pages} printable pages`,
-                    `Instant access in ${COMPANY.brandName}`,
-                    'One-time payment — no subscription',
-                    'Yours to keep',
+                    tf(t, 'account.planners.stackAllIncluded', { count: i }),
+                    tf(t, 'account.planners.stackPages', { pages }),
+                    tf(t, 'account.planners.stackInstant', { brand: COMPANY.brandName }),
+                    t('account.planners.stackOneTime'),
+                    t('account.planners.stackYours'),
                   ].map((item) => (
                     <li
                       key={item}
@@ -757,7 +776,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                       data-testid="planner-stack-cta"
                       className="mt-6 flex min-h-[56px] w-full items-center justify-center rounded-full bg-sw-blue px-5 text-center text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60 sm:text-base"
                     >
-                      Yes! Unlock all {i} planners for {oto} →
+                      {tf(t, 'account.planners.heroCta', { count: i, price: oto })}
                     </button>
                     <ChargeNote hasSavedCard={hasSavedCard} />
                   </>
@@ -766,28 +785,25 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
             </div>
             <div data-testid="planner-faq" className="mt-8">
               <h2 className="text-center text-xl font-extrabold leading-tight text-sw-dark sm:text-2xl">
-                Questions before you decide
+                {t('account.planners.faqTitle')}
               </h2>
               <div className="mt-5 space-y-3">
                 <FaqItem
-                  question="Is this a subscription?"
-                  answer={`No. It is a single ${oto} payment for all ${i} planners, and it does not change what you already pay for your membership.`}
+                  question={t('account.planners.faqSubQ')}
+                  answer={tf(t, 'account.planners.faqSubA', { price: oto, count: i })}
                 />
                 <FaqItem
-                  question="What exactly do I get?"
-                  answer={`All ${i} planners as printable PDFs — ${pages} pages in total, across ${areas} areas. They appear in your account straight after payment and are yours to keep, so you can print any page as often as you like.`}
+                  question={t('account.planners.faqWhatQ')}
+                  answer={tf(t, 'account.planners.faqWhatA', { count: i, pages, areas })}
                 />
                 <FaqItem
-                  question="Can I just buy the one planner I want?"
-                  answer={`Yes. Every planner is available on its own for ${single} from your account at any time. The bundle only makes sense if you want more than one — two bought separately already cost more than all ${i} together.`}
+                  question={t('account.planners.faqOneQ')}
+                  answer={tf(t, 'account.planners.faqOneA', { single, count: i })}
                 />
+                <FaqItem question={t('account.planners.faqPrintQ')} answer={t('account.planners.faqPrintA')} />
                 <FaqItem
-                  question="Do I need to print them?"
-                  answer="No. Each planner works either way: print the pages you want, or fill them in on screen on a phone, tablet or computer."
-                />
-                <FaqItem
-                  question="Is this offer time-limited?"
-                  answer={`There is no countdown and nothing expires today. The ${oto} bundle price is part of setting up your account, so this page is the one place you will see it — afterwards the planners are still available individually at ${single} each.`}
+                  question={t('account.planners.faqTimeQ')}
+                  answer={tf(t, 'account.planners.faqTimeA', { price: oto, single })}
                 />
               </div>
             </div>
@@ -806,8 +822,8 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   className="w-full min-h-[56px] rounded-full bg-sw-blue px-7 py-3 text-base font-bold leading-tight text-white shadow-lg shadow-sw-blue/25 transition-all hover:bg-sw-blue-hover active:scale-95 disabled:opacity-60"
                 >
                   {state === 'processing'
-                    ? 'Taking payment...'
-                    : `Yes! Unlock all ${i} planners for ${oto} →`}
+                    ? t('account.planners.takingPayment')
+                    : tf(t, 'account.planners.heroCta', { count: i, price: oto })}
                 </button>
               ) : null}
               <button
@@ -817,7 +833,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 data-testid="planner-placeholder-decline"
                 className="flex w-full min-h-[44px] items-center justify-center rounded-xl bg-transparent px-6 py-3 text-sm font-semibold text-sw-blue underline underline-offset-2 transition-colors hover:text-sw-blue-hover disabled:opacity-60"
               >
-                No thanks, continue without the planners
+                {t('account.planners.skip')}
               </button>
             </div>
             <ul
@@ -828,31 +844,25 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 <span aria-hidden="true" className="text-sw-blue">
                   •
                 </span>
-                <span>
-                  A single {oto} payment. This is not a subscription and it does not change what you
-                  already pay.
-                </span>
+                <span>{tf(t, 'account.planners.reassurance1', { price: oto })}</span>
               </li>
               <li className="flex gap-2 text-sm text-sw-grey">
                 <span aria-hidden="true" className="text-sw-blue">
                   •
                 </span>
-                <span>Yours to keep, and you can print each planner as often as you like.</span>
+                <span>{t('account.planners.reassurance2')}</span>
               </li>
               <li className="flex gap-2 text-sm text-sw-grey">
                 <span aria-hidden="true" className="text-sw-blue">
                   •
                 </span>
-                <span>
-                  Saying no changes nothing else. Your account carries on exactly as it is, and the
-                  planners stay available individually at {single} each.
-                </span>
+                <span>{tf(t, 'account.planners.reassurance3', { single })}</span>
               </li>
             </ul>
             <p className="mt-5 text-center text-xs leading-relaxed text-sw-grey">
               {hasSavedCard
-                ? `Your saved payment method is charged once, ${oto} in total.`
-                : `Secure payment via Stripe. One-time charge of ${oto}.`}
+                ? tf(t, 'account.planners.paymentSaved', { price: oto })
+                : tf(t, 'account.planners.paymentStripe', { price: oto })}
             </p>
           </div>
         </div>
@@ -869,7 +879,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
           <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
             <div className="flex flex-col">
               <div className="flex items-baseline gap-1">
-                <span className="text-sm font-semibold text-sw-grey">Only</span>
+                <span className="text-sm font-semibold text-sw-grey">{t('account.common.only')}</span>
                 <span className="text-xl font-extrabold text-sw-dark">{oto}</span>
               </div>
               <button
@@ -879,7 +889,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 data-testid="planner-sticky-skip"
                 className="flex min-h-[44px] items-center text-left text-[11px] text-sw-grey underline underline-offset-2 transition-colors hover:text-sw-dark disabled:opacity-60"
               >
-                No thanks →
+                {t('account.planners.noThanksArrow')}
               </button>
             </div>
             <button
@@ -889,7 +899,9 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               data-testid="planner-sticky-accept"
               className="whitespace-nowrap rounded-full bg-sw-blue px-7 py-4 font-bold text-white shadow-lg shadow-sw-blue/25 transition-colors hover:bg-sw-blue-hover disabled:opacity-60"
             >
-              {state === 'processing' ? 'Taking payment...' : `Add all ${i} →`}
+              {state === 'processing'
+                ? t('account.planners.takingPayment')
+                : tf(t, 'account.planners.stickyAdd', { count: i })}
             </button>
           </div>
           <div

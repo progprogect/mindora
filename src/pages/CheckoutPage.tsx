@@ -16,13 +16,33 @@ import { loadClaudeQuizResults } from '@/funnels/claude/lib/claudeQuizStorage'
 import { useProductsList, type ProductDoc } from '@/shared/lib/backend'
 import { trackEvent } from '@/shared/lib/tracking'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
-import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
+import { claudeCheckoutHighlights } from '@/shared/lib/checkoutHighlights'
 import { PRICING_FALLBACK_PLANS } from '@/marketing/data/pricing'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
-import { MONEY_BACK_CHIP, MONEY_BACK_CHIP_CAP } from '@/marketing/data/moneyBack'
+import { moneyBackCopy } from '@/marketing/data/moneyBack'
+import { useI18n } from '../../authorisation/src/i18n/I18nProvider'
+import { checkoutUiCopy } from '@/shared/i18n/checkoutUiCopy'
 
 const FUNNEL_28 = '28-day-ai-challenge'
 const FUNNEL_CLAUDE = 'claude-ai-certification'
+
+const CHECKOUT_PLAN_NAME_RU: Record<string, string> = {
+  'Monthly Plan': 'Месячный план',
+  'Quarterly Plan': 'Квартальный',
+  'Annual Plan': 'Годовой',
+  '6-Month Plan': 'План на 6 месяцев',
+  '12-Month Plan': 'План на 12 месяцев',
+  Monthly: 'Месячный',
+  Quarterly: 'Квартальный',
+  Annual: 'Годовой',
+}
+
+function displayPlanName(plan: PlanView, locale: string): string {
+  if (locale === 'ru') {
+    return CHECKOUT_PLAN_NAME_RU[plan.name] ?? plan.name
+  }
+  return plan.name
+}
 const CHECKOUT_28DAY_KEY = 'sw_checkout_completed'
 const CHECKOUT_CLAUDE_KEY = 'sw_checkout_claude_completed'
 
@@ -70,8 +90,8 @@ function resolvePlan(
   return defaults.find((p) => p.id === productId) ?? pricingPlan ?? loadCachedPlan(productId, cacheKey)
 }
 
-function priceSuffix(months: number, periodLabel: string): string {
-  if (months === 1) return '/mo'
+function priceSuffix(months: number, periodLabel: string, perMonthLabel: string): string {
+  if (months === 1) return perMonthLabel
   return `/${periodLabel.replace('every ', '').replace('per ', '')}`
 }
 
@@ -80,6 +100,9 @@ function priceSuffix(months: number, periodLabel: string): string {
  * the expired-offer picker). Without `?funnel=`, copy and setup match the original.
  */
 export default function CheckoutPage() {
+  const { locale } = useI18n()
+  const ui = checkoutUiCopy(locale)
+  const moneyBack = moneyBackCopy(locale)
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
   const productId = searchParams.get('product') ?? searchParams.get('plan') ?? ''
@@ -108,8 +131,9 @@ export default function CheckoutPage() {
   const plan = productId
     ? resolvePlan(productId, products, defaults, cacheKey, !funnelParam)
     : null
-  const meta = plan ? planMeta(plan) : null
-  const monthly = plan && meta ? plan.price / meta.months : 0
+  const meta = plan ? planMeta(plan, locale) : null
+  const planMonths = meta?.months ?? 1
+  const monthly = plan && meta ? plan.price / planMonths : 0
 
   useEffect(() => {
     if (!plan) return
@@ -124,7 +148,7 @@ export default function CheckoutPage() {
 
   const startPayment = () => {
     if (!email.trim()) {
-      setEmailError('Please enter your email address.')
+      setEmailError(ui.emailRequired)
       return
     }
     setEmailError(null)
@@ -135,7 +159,7 @@ export default function CheckoutPage() {
   if (!productId) {
     return (
       <div className="flex min-h-dvh items-center justify-center px-4">
-        <p className="text-lg font-bold text-sw-dark">Invalid plan. Please go back and try again.</p>
+        <p className="text-lg font-bold text-sw-dark">{ui.invalidPlan}</p>
       </div>
     )
   }
@@ -151,7 +175,7 @@ export default function CheckoutPage() {
   if (!plan || !meta) {
     return (
       <div className="flex min-h-dvh items-center justify-center px-4">
-        <p className="text-lg font-bold text-sw-dark">Invalid plan. Please go back and try again.</p>
+        <p className="text-lg font-bold text-sw-dark">{ui.invalidPlan}</p>
       </div>
     )
   }
@@ -169,26 +193,30 @@ export default function CheckoutPage() {
           🎉
         </div>
         <div>
-          <h1 className="mb-2 text-2xl font-extrabold text-sw-dark">Payment successful!</h1>
-          <p className="text-base text-sw-grey">Your 3-day trial is now active. Setting up your account…</p>
-          <p className="mt-1 text-sm text-sw-grey">You&apos;ll be redirected automatically in a moment.</p>
+          <h1 className="mb-2 text-2xl font-extrabold text-sw-dark">{ui.paymentSuccessful}</h1>
+          <p className="text-base text-sw-grey">{ui.trialActive}</p>
+          <p className="mt-1 text-sm text-sw-grey">{ui.redirectHint}</p>
         </div>
         <Link to={setupPath} className="text-sm font-semibold text-sw-blue">
-          Continue now
+          {ui.continueNow}
         </Link>
       </div>
     )
   }
 
   const name = results?.name ?? ''
+  const monthlyExtra =
+    planMonths > 1 ? ` ${locale === 'ru' ? 'Это всего' : "That's just"} $${(monthly / 100).toFixed(2)}${ui.pricePerMonth}.` : null
 
   return (
     <div className="min-h-dvh overflow-x-hidden bg-white">
       <div className="mx-auto max-w-lg overflow-hidden px-4 pt-8 pb-8">
         <h1 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Join <span className="text-sw-blue">100,000+ users</span> to
+          {ui.joinHeadlinePrefix}
+          <span className="text-sw-blue">{ui.joinHeadlineHighlight}</span>
+          {ui.joinHeadlineTo}
           <br />
-          achieve your goals
+          {ui.joinHeadlineSuffix}
         </h1>
 
         <div
@@ -198,37 +226,35 @@ export default function CheckoutPage() {
           <span className="flex-shrink-0 text-3xl">🏆</span>
           <div>
             <p className="text-[0.9rem] font-bold text-sw-dark">
-              {professionalCerts ? 'Professional Certificates Included' : 'Certificate of Completion Included'}
+              {professionalCerts ? ui.professionalCertsTitle : ui.completionCertTitle}
             </p>
             <p className="text-xs leading-relaxed text-sw-grey">
-              {professionalCerts
-                ? 'Earn 30+ certifications, share them on LinkedIn and add them to your resume.'
-                : 'Earn your 28-Day AI Challenge certificate, share it on LinkedIn and add it to your resume.'}
+              {professionalCerts ? ui.professionalCertsBlurb : ui.completionCertBlurb}
             </p>
           </div>
         </div>
 
         <div className="mb-4 overflow-hidden rounded-2xl border border-sw-grey-border bg-white shadow-sm">
           <div className="px-5 pt-5 pb-4">
-            <h2 className="mb-4 text-center text-lg font-extrabold text-sw-dark">Safe checkout</h2>
+            <h2 className="mb-4 text-center text-lg font-extrabold text-sw-dark">{ui.safeCheckout}</h2>
             <div className="mb-3 space-y-2.5">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-sw-dark">{plan.name}</span>
+                <span className="text-sm text-sw-dark">{displayPlanName(plan, locale)}</span>
                 <span className="text-sm font-semibold text-sw-dark">
                   {formatUsd(plan.price)}
-                  {priceSuffix(meta.months, meta.periodLabel)}
+                  {priceSuffix(planMonths, meta.periodLabel, ui.pricePerMonth)}
                 </span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-sw-dark">
-                  {professionalCerts ? 'Professional Certificates' : 'Certificate of Completion'}
+                  {professionalCerts ? ui.professionalCertificates : ui.certificateOfCompletion}
                 </span>
                 <span className="text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
-                  FREE
+                  {ui.free}
                 </span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-sw-dark">3-Day Trial</span>
+                <span className="text-sm text-sw-dark">{ui.threeDayTrial}</span>
                 <span className="text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
                   $1.00
                 </span>
@@ -236,12 +262,11 @@ export default function CheckoutPage() {
             </div>
             <div className="border-t border-sw-grey-border pt-3 mb-1">
               <div className="flex items-center justify-between">
-                <span className="text-base font-extrabold text-sw-dark">Due Today</span>
+                <span className="text-base font-extrabold text-sw-dark">{ui.dueToday}</span>
                 <span className="text-xl font-extrabold text-sw-dark">$1.00</span>
               </div>
               <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Then {formatUsd(plan.price)} {meta.periodLabel} after your 3-day trial.
-                {meta.months > 1 ? ` That's just $${(monthly / 100).toFixed(2)}/month.` : null} Cancel any time.
+                {ui.thenAfterTrial(formatUsd(plan.price), meta.periodLabel, monthlyExtra)}
               </p>
             </div>
           </div>
@@ -255,16 +280,16 @@ export default function CheckoutPage() {
                 productId={plan.id}
                 funnel={funnel}
                 returnPath={setupPath}
-                highlights={claude ? CLAUDE_CHECKOUT_HIGHLIGHTS : undefined}
+                highlights={claude ? claudeCheckoutHighlights(locale) : undefined}
                 onSuccess={() => {
                   window.localStorage.setItem(checkoutKey, 'true')
                   setPaid(true)
                 }}
-                submitLabel="Confirm Payment"
+                submitLabel={ui.confirmPayment}
               />
             ) : (
               <div className="space-y-3">
-                <label className="block text-sm font-medium text-sw-dark">Email address</label>
+                <label className="block text-sm font-medium text-sw-dark">{ui.emailAddress}</label>
                 <input
                   type="email"
                   value={email}
@@ -275,7 +300,7 @@ export default function CheckoutPage() {
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') startPayment()
                   }}
-                  placeholder="you@email.com"
+                  placeholder={ui.emailPlaceholder}
                   className="w-full rounded-xl border border-sw-grey-border px-4 py-3 text-base focus:border-sw-blue focus:ring-1 focus:ring-sw-blue focus:outline-none"
                 />
                 {emailError ? (
@@ -293,7 +318,7 @@ export default function CheckoutPage() {
                   className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl py-3.5 text-base font-bold tracking-wide text-white uppercase transition-opacity disabled:cursor-not-allowed disabled:opacity-60"
                   style={{ backgroundColor: 'hsl(var(--sw-blue))' }}
                 >
-                  Continue to Payment
+                  {ui.continueToPayment}
                 </button>
               </div>
             )}
@@ -301,14 +326,12 @@ export default function CheckoutPage() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pb-6 text-xs text-sw-grey">
-          <span>🔒 256-bit encrypted</span>
-          <span>✓ Cancel any time</span>
-          <span>✓ {MONEY_BACK_CHIP_CAP}</span>
+          <span>{ui.encrypted256}</span>
+          <span>{ui.cancelAnyTime}</span>
+          <span>✓ {moneyBack.chipCap}</span>
         </div>
         <p className="px-2 text-center text-[11px] leading-relaxed text-sw-grey">
-          By proceeding, you agree to pay $1.00 today for a 3-day trial. After your 3-day trial, you&apos;ll be charged{' '}
-          {formatUsd(plan.price)} {meta.periodLabel} until you cancel. You can cancel at any time from your account
-          settings. {MONEY_BACK_CHIP}.
+          {ui.legalTrial(formatUsd(plan.price), meta.periodLabel, moneyBack.chip)}
         </p>
       </div>
     </div>

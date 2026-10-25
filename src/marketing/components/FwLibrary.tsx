@@ -1,14 +1,24 @@
-import { useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import {
   COURSE_GROUPS,
   LIBRARY_PREVIEW,
   LIBRARY_TABS,
   LIBRARY_THEME,
   TAB_TAGS,
+  financialWellbeingCopy,
+  syncFinancialWellbeingLocale,
 } from '@/marketing/data/financialWellbeing'
 import useReveal from '@/marketing/hooks/useReveal'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function FwLibrary() {
+  const { locale } = useI18n()
+  const page = financialWellbeingCopy(locale).page
+
+  useLayoutEffect(() => {
+    syncFinancialWellbeingLocale(locale)
+  }, [locale])
+
   const [tab, setTab] = useState('all')
   const [open, setOpen] = useState<Set<string>>(new Set())
   const revealRef = useReveal(0.05)
@@ -38,7 +48,7 @@ export default function FwLibrary() {
             className="flex items-center gap-2 overflow-x-auto"
             style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}
             role="tablist"
-            aria-label="Filter courses"
+            aria-label={page.filterAria}
           >
             {LIBRARY_TABS.map((item) => {
               const active = tab === item.id
@@ -77,11 +87,11 @@ export default function FwLibrary() {
 
       <div ref={revealRef} className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <p className="mb-8 text-sm text-sw-grey">
-          Showing{' '}
+          {page.libraryShowing}{' '}
           <span className="font-semibold text-sw-dark">
-            {count} courses
+            {count} {page.libraryCourses}
           </span>
-          {tab !== 'all' ? ' matching your filter' : null}
+          {tab !== 'all' ? page.libraryFilter : null}
         </p>
         <div className="space-y-10">
           {groups.map((group, i) => {
@@ -101,7 +111,7 @@ export default function FwLibrary() {
                     <p className="text-xs text-white/65">{group.subtitle}</p>
                   </div>
                   <div className="ml-auto shrink-0 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/60">
-                    {group.courses.length} courses
+                    {group.courses.length} {page.libraryGroupCourses}
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -120,19 +130,19 @@ export default function FwLibrary() {
                               className="rounded-full px-2 py-0.5 text-[10px] font-bold"
                               style={{ background: theme.badge, color: theme.badgeText }}
                             >
-                              Bestseller
+                              {page.libraryBestseller}
                             </span>
                           ) : null}
                           {course.isNew ? (
                             <span className="rounded-full bg-sw-blue-light px-2 py-0.5 text-[10px] font-bold text-sw-blue">
-                              New
+                              {page.libraryNew}
                             </span>
                           ) : null}
                         </div>
                       </div>
                       <p className="text-xs leading-relaxed text-sw-grey">{course.description}</p>
                       <div className="flex items-center gap-3 text-xs text-sw-grey">
-                        <span>📚 {course.lessons} lessons</span>
+                        <span>📚 {course.lessons} {page.lessons}</span>
                         <span>⏱ {course.duration}</span>
                         <span
                           className="ml-auto rounded-full px-2 py-0.5 text-[10px] font-semibold"
@@ -151,8 +161,11 @@ export default function FwLibrary() {
                     className="mt-4 w-full rounded-xl border border-sw-grey-border py-3 text-sm font-semibold text-sw-grey transition-all hover:bg-sw-grey-light hover:text-sw-dark"
                   >
                     {expanded
-                      ? '↑ Show less'
-                      : `↓ Show ${group.courses.length - LIBRARY_PREVIEW} more courses`}
+                      ? page.libraryShowLess
+                      : page.libraryShowMore.replace(
+                          '{count}',
+                          String(group.courses.length - LIBRARY_PREVIEW),
+                        )}
                   </button>
                 ) : null}
               </div>

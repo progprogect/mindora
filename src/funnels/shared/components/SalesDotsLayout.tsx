@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 import BrandWordmark from '@/shared/components/BrandWordmark'
 
 interface SalesDotsLayoutProps {
@@ -15,6 +17,8 @@ export default function SalesDotsLayout({
   onBack,
   children,
 }: SalesDotsLayoutProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden bg-sw-white">
       <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-sw-white">
@@ -23,7 +27,7 @@ export default function SalesDotsLayout({
             <button
               type="button"
               onClick={onBack}
-              aria-label="Go back"
+              aria-label={ui.goBack}
               className="-ml-2 p-2 text-sw-dark transition-colors hover:text-sw-blue"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>

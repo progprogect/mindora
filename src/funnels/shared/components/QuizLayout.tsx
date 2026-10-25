@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 import Logo from '@/funnels/shared/components/Logo'
 import QuizStickyCta from '@/funnels/shared/components/QuizStickyCta'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface QuizLayoutProps {
   children: ReactNode
@@ -23,6 +25,8 @@ export default function QuizLayout({
   pageClassName,
   logoVariant,
 }: QuizLayoutProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const showProgress = typeof currentStep === 'number' && typeof totalSteps === 'number'
   const hideSideSlots = !onBack && !showProgress
   const progressWidth = showProgress
@@ -37,7 +41,7 @@ export default function QuizLayout({
             <button
               type="button"
               onClick={onBack}
-              aria-label="Go back"
+              aria-label={ui.goBack}
               className="flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-sw-dark transition-colors hover:bg-sw-grey-light"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>

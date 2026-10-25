@@ -1,5 +1,9 @@
+import { useMemo } from 'react'
 import type { QuizAnswers, QuizProfile, QuizRole } from '@/funnels/twenty-eight-day/types/quiz'
 import AIScoreCard from '@/funnels/twenty-eight-day/components/AIScoreCard'
+import { personalProfileCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface PersonalProfileScreenProps {
   profile: QuizProfile
@@ -9,18 +13,21 @@ interface PersonalProfileScreenProps {
 }
 
 export default function PersonalProfileScreen({ profile, name }: PersonalProfileScreenProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => personalProfileCopy(locale as FunnelLocale), [locale])
+
   return (
     <div className="flex w-full flex-1 flex-col px-4 pt-8 pb-44 animate-fade-up">
       <div className="mb-8 text-center">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-sw-blue-border bg-sw-blue-light px-4 py-1.5">
           <span className="text-xs font-bold tracking-wide text-sw-blue uppercase">
-            {name ? `${name}'s AI Profile` : 'Your AI Profile'}
+            {copy.profileBadge(name)}
           </span>
         </div>
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          {name ? `${name}, here's your personal plan` : 'Your Personal AI Summary'}
+          {copy.title(name)}
         </h1>
-        <p className="text-sm text-sw-grey">Based on your answers, we&apos;ve built your custom 28-day roadmap</p>
+        <p className="text-sm text-sw-grey">{copy.subtitle}</p>
       </div>
 
       <AIScoreCard profile={profile} />
@@ -31,7 +38,7 @@ export default function PersonalProfileScreen({ profile, name }: PersonalProfile
             {profile.archetypeEmoji}
           </div>
           <div>
-            <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">Your AI Archetype</p>
+            <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">{copy.archetypeLabel}</p>
             <h2 className="text-lg leading-tight font-extrabold text-sw-dark">{profile.archetype}</h2>
             <p className="text-xs font-semibold text-sw-blue">{profile.archetypeFocus}</p>
           </div>

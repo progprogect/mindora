@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 import Logo from '@/funnels/shared/components/Logo'
 import QuizStickyCta from '@/funnels/shared/components/QuizStickyCta'
 
@@ -16,6 +18,8 @@ export default function SalesWordmarkLayout({
   footer,
   contentClassName,
 }: SalesWordmarkLayoutProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="flex min-h-dvh flex-col bg-sw-white">
       <header className="sticky top-0 z-50 border-b border-sw-grey-border bg-white">
@@ -24,7 +28,7 @@ export default function SalesWordmarkLayout({
             <button
               type="button"
               onClick={onBack}
-              aria-label="Go back"
+              aria-label={ui.goBack}
               className="flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-sw-dark transition-colors hover:bg-sw-grey-light"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>

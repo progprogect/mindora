@@ -1,18 +1,21 @@
-import { BADGES } from '@/content/badges'
-import { LEVELS, levelEmoji, levelForXp } from '@/content/levels'
+import { BADGES, badgeKey } from '@/content/badges'
+import { LEVELS, levelEmoji, levelForXp, levelTitleKey } from '@/content/levels'
 import { rollingWeek, todayIso } from '@/content/lms'
-import { PROGRESS_COURSES } from '@/content/progress-catalog'
+import { progressCourses } from '@/content/progress-catalog'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useProgress } from '@/lib/lmsQueries'
 
 export default function ProgressPage() {
+  const { t, locale } = useI18n()
   const progress = useProgress()
+  const dateLocale = locale === 'ru' ? 'ru-RU' : 'en-GB'
 
   if (progress === undefined) {
     return (
       <div className="min-h-screen bg-sw-grey-light flex items-center justify-center pb-20">
         <div className="flex flex-col items-center gap-3">
           <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
-          <p className="text-sm text-sw-grey font-medium">Loading your progress…</p>
+          <p className="text-sm text-sw-grey font-medium">{t('app.progress.loading')}</p>
         </div>
       </div>
     )
@@ -32,7 +35,7 @@ export default function ProgressPage() {
   }
   const courseRows = Object.entries(byCourse).sort((a, b) => b[1].xp - a[1].xp)
   const { current, next, progressPct, xpToNext } = levelForXp(xp)
-  const days = rollingWeek()
+  const days = rollingWeek(undefined, locale)
   const recent = new Set(
     completed
       .filter((lesson) => lesson.completedAt && lesson.completedAt > Date.now() - 7 * 86400000)
@@ -43,22 +46,22 @@ export default function ProgressPage() {
   return (
     <div className="min-h-screen bg-sw-grey-light pb-28">
       <div className="bg-white border-b border-sw-grey-border px-4 pt-4 pb-4 sticky top-0 z-10">
-        <h1 className="text-xl font-bold text-sw-dark">My Progress</h1>
-        <p className="text-xs text-sw-grey mt-0.5">Track your learning journey</p>
+        <h1 className="text-xl font-bold text-sw-dark">{t('app.progress.title')}</h1>
+        <p className="text-xs text-sw-grey mt-0.5">{t('app.progress.subtitle')}</p>
       </div>
       <div className="max-w-2xl mx-auto px-4 py-5 space-y-5">
         <div className="grid grid-cols-3 gap-3">
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-sw-grey-border">
             <div className="text-2xl font-extrabold text-sw-blue">{xp.toLocaleString()}</div>
-            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">Total XP</div>
+            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">{t('app.progress.totalXp')}</div>
           </div>
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-sw-grey-border">
             <div className="text-2xl font-extrabold text-sw-amber">{streak}</div>
-            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">Day Streak 🔥</div>
+            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">{t('app.common.dayStreakFire')}</div>
           </div>
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-sw-grey-border">
             <div className="text-2xl font-extrabold text-sw-success">{completed.length}</div>
-            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">Lessons Done</div>
+            <div className="text-[11px] text-sw-grey font-semibold mt-0.5">{t('app.progress.lessonsDone')}</div>
           </div>
         </div>
 
@@ -67,16 +70,17 @@ export default function ProgressPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold text-sw-blue bg-sw-blue-light px-2 py-0.5 rounded-full">
-                  Level {current.level}
+                  {t('app.progress.level').replace('{n}', String(current.level))}
                 </span>
-                <span className="text-base font-extrabold text-sw-dark">{current.title}</span>
+                <span className="text-base font-extrabold text-sw-dark">{t(levelTitleKey(current.level))}</span>
               </div>
               {next ? (
                 <p className="text-xs text-sw-grey mt-1">
-                  {xpToNext.toLocaleString()} XP to <strong className="text-sw-dark">{next.title}</strong>
+                  {t('app.progress.xpTo').replace('{xp}', xpToNext.toLocaleString())}{' '}
+                  <strong className="text-sw-dark">{t(levelTitleKey(next.level))}</strong>
                 </p>
               ) : (
-                <p className="text-xs text-sw-grey mt-1">You've reached the highest level! 🏆</p>
+                <p className="text-xs text-sw-grey mt-1">{t('app.progress.maxLevel')}</p>
               )}
             </div>
             <div className="text-3xl">{levelEmoji(current.level)}</div>
@@ -93,14 +97,16 @@ export default function ProgressPage() {
               <div
                 key={level.level}
                 className={`flex-1 rounded-full h-1.5 ${xp >= level.min ? 'bg-sw-blue' : 'bg-sw-grey-border'}`}
-                title={`Level ${level.level}: ${level.title}`}
+                title={t('app.progress.levelTooltip')
+                  .replace('{n}', String(level.level))
+                  .replace('{title}', t(levelTitleKey(level.level)))}
               />
             ))}
           </div>
         </div>
 
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">
-          <h2 className="text-sm font-bold text-sw-dark mb-4">This Week</h2>
+          <h2 className="text-sm font-bold text-sw-dark mb-4">{t('app.common.thisWeek')}</h2>
           <div className="flex justify-between">
             {days.map((day) => {
               const isToday = day.date === todayIso()
@@ -121,17 +127,17 @@ export default function ProgressPage() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold text-sw-dark mb-3 px-1">My Courses</h2>
+          <h2 className="text-sm font-bold text-sw-dark mb-3 px-1">{t('app.progress.myCourses')}</h2>
           {courseRows.length === 0 ? (
             <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-sw-grey-border">
               <div className="text-3xl mb-2">📚</div>
-              <p className="text-sm font-semibold text-sw-dark">No courses started yet</p>
-              <p className="text-xs text-sw-grey mt-1">Complete your first lesson to see progress here</p>
+              <p className="text-sm font-semibold text-sw-dark">{t('app.progress.noCourses')}</p>
+              <p className="text-xs text-sw-grey mt-1">{t('app.progress.noCoursesSub')}</p>
             </div>
           ) : (
             <div className="space-y-3">
               {courseRows.map(([slug, row]) => {
-                const catalog = PROGRESS_COURSES[slug]
+                const catalog = progressCourses(locale)[slug]
                 if (!catalog) return null
                 const pct = Math.min(100, Math.round((row.completed / catalog.totalLessons) * 100))
                 const complete = pct === 100
@@ -149,7 +155,7 @@ export default function ProgressPage() {
                       </div>
                       {complete ? (
                         <span className="text-[10px] font-bold text-sw-success bg-green-50 border border-sw-success/20 px-2 py-1 rounded-full whitespace-nowrap">
-                          ✓ Complete
+                          {t('app.common.completeCheck')}
                         </span>
                       ) : (
                         <span className="text-[10px] font-bold text-sw-blue whitespace-nowrap">
@@ -171,8 +177,10 @@ export default function ProgressPage() {
                       />
                     </div>
                     <div className="flex justify-between mt-1.5">
-                      <span className="text-[10px] text-sw-grey">{pct}% complete</span>
-                      <span className="text-[10px] text-sw-amber font-semibold">+{row.xp} XP earned</span>
+                      <span className="text-[10px] text-sw-grey">{t('app.progress.pctComplete').replace('{pct}', String(pct))}</span>
+                      <span className="text-[10px] text-sw-amber font-semibold">
+                        {t('app.common.xpEarnedPlus').replace('{n}', String(row.xp))}
+                      </span>
                     </div>
                   </div>
                 )
@@ -183,9 +191,11 @@ export default function ProgressPage() {
 
         <div>
           <h2 className="text-sm font-bold text-sw-dark mb-3 px-1">
-            Badges
+            {t('app.progress.badges')}
             <span className="ml-2 text-xs font-semibold text-sw-grey">
-              {earnedIds.size}/{BADGES.length} earned
+              {t('app.progress.badgesEarned')
+                .replace('{earned}', String(earnedIds.size))
+                .replace('{total}', String(BADGES.length))}
             </span>
           </h2>
           <div className="grid grid-cols-2 gap-3">
@@ -193,7 +203,7 @@ export default function ProgressPage() {
               const earned = earnedIds.has(badge.id)
               const row = badges.find((item) => item.badgeId === badge.id)
               const earnedOn = row
-                ? new Date(row.earnedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+                ? new Date(row.earnedAt).toLocaleDateString(dateLocale, { day: 'numeric', month: 'short', year: 'numeric' })
                 : null
               return (
                 <div
@@ -205,11 +215,15 @@ export default function ProgressPage() {
                     <div className={`text-2xl flex-shrink-0 ${earned ? '' : 'grayscale'}`}>{earned ? badge.emoji : '🔒'}</div>
                     <div className="min-w-0">
                       <p className={`text-sm font-bold leading-tight ${earned ? 'text-sw-dark' : 'text-sw-grey'}`}>
-                        {badge.label}
+                        {t(badgeKey(badge.id, 'label'))}
                       </p>
-                      <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">{earned ? badge.description : badge.unlock}</p>
+                      <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">
+                        {earned ? t(badgeKey(badge.id, 'description')) : t(badgeKey(badge.id, 'unlock'))}
+                      </p>
                       {earned && earnedOn ? (
-                        <p className="text-[10px] text-sw-blue font-semibold mt-1">Earned {earnedOn}</p>
+                        <p className="text-[10px] text-sw-blue font-semibold mt-1">
+                          {t('app.progress.earnedOn').replace('{date}', earnedOn)}
+                        </p>
                       ) : null}
                     </div>
                   </div>

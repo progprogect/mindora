@@ -1,3 +1,6 @@
+import { planDisplayCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+
 export interface PlanView {
   id: string
   name: string
@@ -57,15 +60,28 @@ export function expiredPickerPlans(products: PlanView[] | undefined): PlanView[]
   return [...source].sort((a, b) => a.price - b.price)
 }
 
-export function planMeta(plan: PlanView) {
-  const extra = PLAN_DISPLAY_META[plan.name] ?? META_BY_MONTHS[plan.intervalMonths]
+export function planMeta(plan: PlanView, locale: FunnelLocale = 'en') {
+  const copy = planDisplayCopy(locale)
+  const localizedByName = copy.plans[plan.name as keyof typeof copy.plans]
+  const localizedByMonths = copy.byMonths[plan.intervalMonths as keyof typeof copy.byMonths]
+  const extra = localizedByName ?? localizedByMonths ?? PLAN_DISPLAY_META[plan.name] ?? META_BY_MONTHS[plan.intervalMonths]
+  const badgeKey = plan.badge ?? extra?.badge
+  const badge =
+    badgeKey && copy.badges[badgeKey as keyof typeof copy.badges]
+      ? copy.badges[badgeKey as keyof typeof copy.badges]
+      : badgeKey
   if (extra) {
-    return { ...extra, badge: plan.badge ?? extra.badge }
+    return { ...extra, badge }
   }
   return {
     label: plan.name,
-    periodLabel: 'per period',
+    periodLabel: copy.perPeriod,
     months: plan.intervalMonths,
-    badge: plan.badge,
+    badge,
   }
+}
+
+export function defaultPlanDisplayName(planId: string, locale: FunnelLocale): string {
+  const names = planDisplayCopy(locale).defaultNames
+  return names[planId as keyof typeof names] ?? planId
 }

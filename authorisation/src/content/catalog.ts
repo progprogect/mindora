@@ -2,6 +2,10 @@ import hubChrome from './catalogs/hub-chrome.json'
 import hubs from './catalogs/hubs.json'
 import liveCards from './catalogs/live-cards.json'
 import paths from './catalogs/paths.json'
+import ruHubChrome from './catalogs/ru/hub-chrome.json'
+import ruHubs from './catalogs/ru/hubs.json'
+import ruLiveCards from './catalogs/ru/live-cards.json'
+import ruPaths from './catalogs/ru/paths.json'
 
 export type QuizQuestion = {
   question: string
@@ -58,16 +62,26 @@ export type Course = {
   lessons: CourseLesson[]
 }
 
-const courseLoaders = import.meta.glob('./courses/*.json')
+import type { Locale } from '@/i18n/locale'
+
+const courseLoaders = import.meta.glob(['./courses/*.json', './courses/ru/*.json'])
 
 const cache = new Map<string, Course>()
 
-function loaderPath(slug: string) {
-  return Object.keys(courseLoaders).find((path) => path.endsWith(`/${slug}.json`))
+function cacheKey(slug: string, locale: Locale) {
+  return `${locale}:${slug}`
 }
 
-export function hasCourseFile(slug: string) {
-  return Boolean(loaderPath(slug))
+function loaderPath(slug: string, locale: Locale = 'en') {
+  return Object.keys(courseLoaders).find((path) => {
+    const russian = path.includes('/courses/ru/')
+    if (locale === 'ru') return russian && path.endsWith(`/${slug}.json`)
+    return !russian && path.endsWith(`/${slug}.json`)
+  })
+}
+
+export function hasCourseFile(slug: string, locale: Locale = 'en') {
+  return Boolean(loaderPath(slug, locale))
 }
 
 export function orderedLessons(lessons: CourseLesson[]) {
@@ -164,18 +178,21 @@ export function pickPathContinueCard<T extends { id: string; lessons?: number }>
   return args.cards.find((card) => incomplete(card) && doneCount(card.id) > 0) ?? args.cards.find((card) => args.isLive(card.id))
 }
 
-export function getCachedCourse(slug: string): Course | undefined {
-  return cache.get(slug)
+export function getCachedCourse(slug: string, locale: Locale = 'en'): Course | undefined {
+  return cache.get(cacheKey(slug, locale))
 }
 
-export async function loadCourse(slug: string): Promise<Course | undefined> {
-  const hit = getCachedCourse(slug)
+export async function loadCourse(slug: string, locale: Locale = 'en'): Promise<Course | undefined> {
+  const hit = getCachedCourse(slug, locale)
   if (hit) return hit
-  const path = loaderPath(slug)
-  if (!path) return undefined
+  const path = loaderPath(slug, locale)
+  if (!path) {
+    if (locale === 'ru') throw new Error(`Missing ru course: ${slug}`)
+    return undefined
+  }
   const mod = (await courseLoaders[path]!()) as { default: Course }
   const course = normalizeCourse(mod.default)
-  cache.set(slug, course)
+  cache.set(cacheKey(slug, locale), course)
   return course
 }
 
@@ -200,23 +217,35 @@ export function moduleLessonIds(course: Course, module: CourseModule) {
 
 const TWENTY_EIGHT_DAY = '28-day-ai-challenge'
 
-const CERT_CHROME = {
-  kicker: hubChrome.certificateDefaults.kicker,
-  certificateKicker: hubChrome.certificateDefaults.certificateKicker,
-  awardedToPlaceholder: hubChrome.certificateDefaults.awardedToPlaceholder,
-  downloadComingSoon: hubChrome.certificateDefaults.downloadComingSoon,
-  unlocked: hubChrome.certificateDefaults.unlocked,
+function catalogBundle(locale: Locale = 'en') {
+  if (locale === 'ru') {
+    return {
+      hubChrome: ruHubChrome as typeof hubChrome,
+      hubs: ruHubs as typeof hubs,
+      liveCards: ruLiveCards as typeof liveCards,
+      paths: ruPaths as typeof paths,
+    }
+  }
+  return { hubChrome, hubs, liveCards, paths }
 }
 
-export function getHub(slug: string) {
-  const extra = (hubs as Record<string, Record<string, unknown>>)[slug] ?? {}
+export function getHub(slug: string, locale: Locale = 'en') {
+  const bundle = catalogBundle(locale)
+  const extra = (bundle.hubs as Record<string, Record<string, unknown>>)[slug] ?? {}
   const is28 = slug === TWENTY_EIGHT_DAY
+  const cert = {
+    kicker: bundle.hubChrome.certificateDefaults.kicker,
+    certificateKicker: bundle.hubChrome.certificateDefaults.certificateKicker,
+    awardedToPlaceholder: bundle.hubChrome.certificateDefaults.awardedToPlaceholder,
+    downloadComingSoon: bundle.hubChrome.certificateDefaults.downloadComingSoon,
+    unlocked: bundle.hubChrome.certificateDefaults.unlocked,
+  }
   return {
-    ...(is28 ? hubChrome.courseHeroDefaults : {}),
-    ...(is28 ? hubChrome.certificateDefaults : CERT_CHROME),
-    testimonials: is28 ? hubChrome.testimonialsDefault : [],
-    learningPathH2: hubChrome.learningPathH2,
-    learningPathSub: hubChrome.learningPathSub,
+    ...(is28 ? bundle.hubChrome.courseHeroDefaults : {}),
+    ...(is28 ? bundle.hubChrome.certificateDefaults : cert),
+    testimonials: is28 ? bundle.hubChrome.testimonialsDefault : [],
+    learningPathH2: bundle.hubChrome.learningPathH2,
+    learningPathSub: bundle.hubChrome.learningPathSub,
     unitLabel: is28 ? 'days' : 'lessons',
     ...extra,
   } as Record<string, unknown> & {
@@ -251,12 +280,13 @@ export type PathCatalog = {
   browseBySection?: Array<Record<string, unknown>>
 }
 
-export function getPath(key: string): PathCatalog | undefined {
-  return (paths as unknown as Record<string, PathCatalog>)[key]
+export function getPath(key: string, locale: Locale = 'en'): PathCatalog | undefined {
+  return (catalogBundle(locale).paths as unknown as Record<string, PathCatalog>)[key]
 }
 
-export function getLiveCards(key: string) {
-  return (liveCards as Record<string, { cards?: Array<Record<string, unknown>>; hero?: Record<string, string>; badge?: string; emptyCopy?: { title: string; sub: string }; comingSoonStrip?: Array<{ name: string; difficulty: string; time: string }> }>)[key]
+export function getLiveCards(key: string, locale: Locale = 'en') {
+  const cards = catalogBundle(locale).liveCards
+  return (cards as Record<string, { cards?: Array<Record<string, unknown>>; hero?: Record<string, string>; badge?: string; emptyCopy?: { title: string; sub: string }; comingSoonStrip?: Array<{ name: string; difficulty: string; time: string }> }>)[key]
 }
 
 export const liveSlugSet = new Set(

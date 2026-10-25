@@ -1,6 +1,12 @@
-import { PROBLEM_STATS } from '@/marketing/data/home'
+import { homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function ProblemSection() {
+  const { locale } = useI18n()
+  const { problemStats } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).problem
+
   return (
     <section className="relative overflow-hidden bg-sw-dark py-24 sm:py-36">
       <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
@@ -18,27 +24,27 @@ export default function ProblemSection() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
         <div className="mb-8 space-y-3">
           <p className="text-2xl leading-tight font-bold text-white/50 sm:text-3xl lg:text-4xl">
-            You&apos;ve read the <span className="emoji-wiggle inline-block">📚</span> books.
+            {copy.line1Prefix}<span className="emoji-wiggle inline-block">📚</span>{copy.line1Suffix}
           </p>
           <p className="text-2xl leading-tight font-bold text-white/50 sm:text-3xl lg:text-4xl">
-            Watched the <span className="emoji-bounce inline-block">🎬</span> videos.
+            {copy.line2Prefix}<span className="emoji-bounce inline-block">🎬</span>{copy.line2Suffix}
           </p>
           <p className="text-2xl leading-tight font-bold text-white/50 sm:text-3xl lg:text-4xl">
-            Started the <span className="emoji-float inline-block">📝</span> courses.
+            {copy.line3Prefix}<span className="emoji-float inline-block">📝</span>{copy.line3Suffix}
           </p>
         </div>
         <h2 className="mb-6 text-3xl leading-tight font-extrabold text-white sm:text-4xl lg:text-5xl">
-          And yet — nothing changed.
+          {copy.headline}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-white/50 sm:text-xl">
-          It&apos;s not a knowledge problem. It&apos;s a <span className="font-semibold text-white">system</span>{' '}
-          problem.
+          {copy.bodyPrefix}<span className="font-semibold text-white">{copy.bodyEmphasis}</span>
+          {copy.bodySuffix}
           <br className="hidden sm:block" />
-          Without a daily framework to act on what you learn, knowledge just piles up.
+          {copy.bodyLine2}
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          {PROBLEM_STATS.map((stat) => (
+          {problemStats.map((stat) => (
             <div
               key={stat.value}
               className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-left"
@@ -55,7 +61,7 @@ export default function ProblemSection() {
         <div className="mt-14 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3">
           <div className="h-2 w-2 animate-pulse rounded-full bg-sw-blue" />
           <p className="text-sm font-medium text-white/70">
-            MindoraAcademy gives you the system to finally act on what you learn.
+            {copy.closing}
           </p>
         </div>
       </div>

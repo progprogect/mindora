@@ -13,6 +13,7 @@ const OTP_TTL_MS = 15 * 60 * 1000
 
 const emailSchema = z.object({
   email: z.string().min(1),
+  locale: z.enum(['en', 'ru']).optional(),
 })
 
 const verifySchema = z.object({
@@ -28,7 +29,7 @@ export const authRoutes = new Hono()
 
 authRoutes.post('/auth/otp/send', async (c) => {
   const parsed = emailSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const email = normalizeEmail(parsed.data.email)
   if (await isRateLimited(email)) {
     return c.json({ error: RATE_LIMIT_MESSAGE, code: 'rate_limited' }, 429)
@@ -43,17 +44,17 @@ authRoutes.post('/auth/otp/send', async (c) => {
       set: { codeHash: hmacHex(code), expiresAt, createdAt: new Date() },
     })
   try {
-    await sendOtpEmail(email, code)
+    await sendOtpEmail(email, code, parsed.data.locale ?? 'en')
   } catch (error) {
     console.error('[auth] failed to send OTP', error)
-    return c.json({ error: 'Failed to send code' }, 502)
+    return c.json({ error: 'Failed to send code', code: 'failed_send_code' }, 502)
   }
   return c.json({ ok: true })
 })
 
 authRoutes.post('/auth/otp/verify', async (c) => {
   const parsed = verifySchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const email = normalizeEmail(parsed.data.email)
   const code = parsed.data.code.replace(/\D/g, '')
   if (await isRateLimited(email)) {
@@ -66,7 +67,7 @@ authRoutes.post('/auth/otp/verify', async (c) => {
     if (locked || (await isRateLimited(email))) {
       return c.json({ error: RATE_LIMIT_MESSAGE, code: 'rate_limited' }, 429)
     }
-    return c.json({ error: 'Invalid or expired code. Please try again.' }, 401)
+    return c.json({ error: 'Invalid or expired code. Please try again.', code: 'invalid_or_expired_code' }, 401)
   }
   await db.delete(otpCodes).where(eq(otpCodes.email, email))
   const [existing] = await db.select().from(users).where(eq(users.email, email)).limit(1)
@@ -75,7 +76,7 @@ authRoutes.post('/auth/otp/verify', async (c) => {
     const [created] = await db.insert(users).values({ email }).returning({ id: users.id })
     userId = created?.id
   }
-  if (!userId) return c.json({ error: 'Failed to create user' }, 500)
+  if (!userId) return c.json({ error: 'Failed to create user', code: 'failed_create_user' }, 500)
   const session = await createSession(userId)
   setSessionCookie(c, session.token, session.expiresAt)
   await attachStripeCustomer(userId, email)

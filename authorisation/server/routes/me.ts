@@ -31,6 +31,10 @@ const nameSchema = z.object({
   name: z.string().min(1).max(80),
 })
 
+const localeSchema = z.object({
+  locale: z.enum(['en', 'ru']),
+})
+
 const prefsSchema = z.object({
   pacePreference: z.string().optional(),
   focusCategory: z.string().optional(),
@@ -46,13 +50,13 @@ export const meRoutes = new Hono<SessionEnv>()
 
 meRoutes.get('/me', requireAuth, async (c) => {
   const user = await loadCurrentUser(c.get('userId'))
-  if (!user) return c.json({ error: 'Not authenticated' }, 401)
+  if (!user) return c.json({ error: 'Not authenticated', code: 'not_authenticated' }, 401)
   return c.json(user)
 })
 
 meRoutes.patch('/me', requireAuth, async (c) => {
   const parsed = profileSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const [authUser] = await db.select().from(users).where(eq(users.id, userId)).limit(1)
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
@@ -80,7 +84,7 @@ meRoutes.patch('/me', requireAuth, async (c) => {
 
 meRoutes.post('/me/onboard', requireAuth, async (c) => {
   const parsed = onboardSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   const [authUser] = await db.select().from(users).where(eq(users.id, userId)).limit(1)
@@ -111,7 +115,7 @@ meRoutes.post('/me/onboard', requireAuth, async (c) => {
 
 meRoutes.patch('/me/funnel-source', requireAuth, async (c) => {
   const parsed = funnelSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   if (!existing) return c.json({ id: null })
@@ -127,7 +131,7 @@ meRoutes.patch('/me/funnel-source', requireAuth, async (c) => {
 
 meRoutes.patch('/me/name', requireAuth, async (c) => {
   const parsed = nameSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const name = parsed.data.name.trim()
   await db.update(users).set({ name }).where(eq(users.id, userId))
@@ -136,9 +140,22 @@ meRoutes.patch('/me/name', requireAuth, async (c) => {
   return c.json({ ok: true, name })
 })
 
+meRoutes.patch('/me/locale', requireAuth, async (c) => {
+  const parsed = localeSchema.safeParse(await c.req.json())
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
+  const userId = c.get('userId')
+  const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
+  if (!existing) {
+    await db.insert(profiles).values({ userId, locale: parsed.data.locale })
+    return c.json({ ok: true })
+  }
+  await db.update(profiles).set({ locale: parsed.data.locale }).where(eq(profiles.id, existing.id))
+  return c.json({ ok: true })
+})
+
 meRoutes.patch('/me/preferences', requireAuth, async (c) => {
   const parsed = prefsSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   if (!existing) return c.json({ id: null })
@@ -155,7 +172,7 @@ meRoutes.patch('/me/preferences', requireAuth, async (c) => {
 /** Wave 8 wires Stripe customer email. Keep the call site 1:1. */
 meRoutes.post('/me/sync-email', requireAuth, async (c) => {
   const parsed = syncEmailSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   if (existing && parsed.data.newEmail) {

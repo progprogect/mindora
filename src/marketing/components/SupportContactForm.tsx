@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import FaqAccordion from './FaqAccordion'
-import {
-  CONTACT_CATEGORIES,
-  FAQ_ARTICLES,
-  type ContactCategory,
-} from '@/marketing/data/faq'
+import { faqCopy, supportUiCopy, type ContactCategory } from '@/marketing/data/faq'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 type Step = 'category' | 'deflection' | 'form' | 'submitted'
 
@@ -13,9 +10,12 @@ export default function SupportContactForm({
 }: {
   transcript?: string
 }) {
+  const { locale } = useI18n()
+  const faq = faqCopy(locale)
+  const formCopy = supportUiCopy(locale).form
   const [step, setStep] = useState<Step>(transcript ? 'form' : 'category')
   const [category, setCategory] = useState<ContactCategory | null>(
-    transcript ? (CONTACT_CATEGORIES.find((c) => c.id === 'other') ?? null) : null,
+    transcript ? (faq.contactCategories.find((c) => c.id === 'other') ?? null) : null,
   )
   const [subId, setSubId] = useState('')
   const [openFaq, setOpenFaq] = useState<string | null>(null)
@@ -28,13 +28,16 @@ export default function SupportContactForm({
 
   useEffect(() => {
     if (!transcript) return
-    setCategory(CONTACT_CATEGORIES.find((c) => c.id === 'other') ?? null)
+    setCategory(faq.contactCategories.find((c) => c.id === 'other') ?? null)
     setStep('form')
-  }, [transcript])
+  }, [transcript, faq.contactCategories])
 
   const deflection = useMemo(
-    () => (category ? FAQ_ARTICLES.filter((a) => category.deflectionArticleIds.includes(a.id)) : []),
-    [category],
+    () =>
+      category
+        ? faq.articles.filter((a) => category.deflectionArticleIds.includes(a.id))
+        : [],
+    [category, faq.articles],
   )
 
   const pickCategory = (item: ContactCategory) => {
@@ -82,8 +85,8 @@ export default function SupportContactForm({
             </svg>
           </div>
           <div>
-            <h2 className="text-base font-bold text-sw-dark">Contact Support</h2>
-            <p className="text-xs text-sw-grey">We typically respond within 1-3 business days.</p>
+            <h2 className="text-base font-bold text-sw-dark">{formCopy.title}</h2>
+            <p className="text-xs text-sw-grey">{formCopy.subtitle}</p>
           </div>
         </div>
       </div>
@@ -91,9 +94,9 @@ export default function SupportContactForm({
       <div className="px-5 py-5 sm:px-6">
         {step === 'category' ? (
           <div>
-            <p className="mb-4 text-sm font-semibold text-sw-dark">What do you need help with?</p>
+            <p className="mb-4 text-sm font-semibold text-sw-dark">{formCopy.whatNeed}</p>
             <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
-              {CONTACT_CATEGORIES.map((item) => (
+              {faq.contactCategories.map((item) => (
                 <button
                   key={item.id}
                   type="button"
@@ -117,7 +120,7 @@ export default function SupportContactForm({
               onClick={reset}
               className="mb-4 flex items-center gap-1 text-xs font-semibold text-sw-blue hover:underline"
             >
-              ← Change category
+              {formCopy.changeCategory}
             </button>
             <div className="mb-4 flex items-center gap-2">
               <span className="text-lg">{category.icon}</span>
@@ -125,7 +128,7 @@ export default function SupportContactForm({
             </div>
             {category.subCategories.length > 0 ? (
               <div className="mb-5">
-                <p className="mb-2 text-xs font-medium text-sw-grey">What specifically?</p>
+                <p className="mb-2 text-xs font-medium text-sw-grey">{formCopy.whatSpecifically}</p>
                 <div className="flex flex-wrap gap-2">
                   {category.subCategories.map((sub) => (
                     <button
@@ -147,10 +150,8 @@ export default function SupportContactForm({
             {deflection.length > 0 ? (
               <div className="mb-5">
                 <div className="mb-4 rounded-xl border border-amber-200/60 bg-amber-50/70 p-4">
-                  <p className="mb-0.5 text-xs font-bold text-amber-800">💡 These might help:</p>
-                  <p className="text-[11px] text-amber-700">
-                    Check if your question is answered below before contacting us.
-                  </p>
+                  <p className="mb-0.5 text-xs font-bold text-amber-800">{formCopy.mightHelp}</p>
+                  <p className="text-[11px] text-amber-700">{formCopy.checkBeforeContact}</p>
                 </div>
                 <div className="space-y-2">
                   {deflection.map((article) => (
@@ -165,13 +166,13 @@ export default function SupportContactForm({
               </div>
             ) : null}
             <div className="mt-4 border-t border-sw-grey-border pt-2">
-              <p className="mb-3 text-xs text-sw-grey">Didn&apos;t find your answer above?</p>
+              <p className="mb-3 text-xs text-sw-grey">{formCopy.didntFind}</p>
               <button
                 type="button"
                 onClick={() => setStep('form')}
                 className="w-full rounded-xl bg-sw-blue px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-sw-blue-hover sm:w-auto"
               >
-                I still need help →
+                {formCopy.stillNeedHelp}
               </button>
             </div>
           </div>
@@ -184,7 +185,7 @@ export default function SupportContactForm({
               onClick={reset}
               className="mb-4 flex items-center gap-1 text-xs font-semibold text-sw-blue hover:underline"
             >
-              ← Start over
+              {formCopy.startOver}
             </button>
             {category ? (
               <div className="mb-4 flex items-center gap-2 rounded-xl bg-sw-grey-light px-3 py-2">
@@ -195,21 +196,18 @@ export default function SupportContactForm({
             {transcript ? (
               <div className="mb-4 flex items-start justify-between gap-3 rounded-xl border border-sw-blue/20 bg-sw-blue/5 p-3">
                 <div>
-                  <p className="text-xs font-bold text-sw-dark">Chat transcript attached</p>
-                  <p className="mt-0.5 text-[11px] leading-relaxed text-sw-grey">
-                    Your conversation with Maya will be included so our team has full context. Just add any
-                    extra details below.
-                  </p>
+                  <p className="text-xs font-bold text-sw-dark">{formCopy.transcriptTitle}</p>
+                  <p className="mt-0.5 text-[11px] leading-relaxed text-sw-grey">{formCopy.transcriptBody}</p>
                 </div>
                 <span className="flex-shrink-0 rounded-full bg-sw-blue/10 px-2 py-0.5 text-[10px] font-semibold text-sw-blue">
-                  ✓ Attached
+                  {formCopy.attached}
                 </span>
               </div>
             ) : null}
             <form onSubmit={(e) => void onSubmit(e)} className="space-y-4">
               <div>
                 <label htmlFor="support-email" className="mb-1.5 block text-xs font-semibold text-sw-dark">
-                  Email address <span className="text-red-500">*</span>
+                  {formCopy.emailLabel} <span className="text-red-500">*</span>
                 </label>
                 <input
                   id="support-email"
@@ -221,12 +219,12 @@ export default function SupportContactForm({
                   className="w-full rounded-xl border border-sw-grey-border px-4 py-3 text-sm transition-all focus:border-sw-blue focus:ring-2 focus:ring-sw-blue/30 focus:outline-none"
                 />
                 <p className="mt-1 text-[10px] text-sw-grey">
-                  Use the email you signed up with so we can find your account.
+                  {formCopy.emailHint}
                 </p>
               </div>
               <div>
                 <label htmlFor="support-name" className="mb-1.5 block text-xs font-semibold text-sw-dark">
-                  Your name <span className="text-red-500">*</span>
+                  {formCopy.nameLabel} <span className="text-red-500">*</span>
                 </label>
                 <input
                   id="support-name"
@@ -234,24 +232,20 @@ export default function SupportContactForm({
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="First name is fine"
+                  placeholder={formCopy.namePlaceholder}
                   className="w-full rounded-xl border border-sw-grey-border px-4 py-3 text-sm transition-all focus:border-sw-blue focus:ring-2 focus:ring-sw-blue/30 focus:outline-none"
                 />
               </div>
               <div>
                 <label htmlFor="support-desc" className="mb-1.5 block text-xs font-semibold text-sw-dark">
-                  How can we help? <span className="text-red-500">*</span>
+                  {formCopy.helpLabel} <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="support-desc"
                   required
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
-                  placeholder={
-                    transcript
-                      ? 'Anything else we should know? (Your chat with Maya is already attached)'
-                      : "Tell us what's happening. The more detail you give, the faster we can help."
-                  }
+                  placeholder={transcript ? formCopy.placeholderWithTranscript : formCopy.placeholderDefault}
                   rows={transcript ? 3 : 4}
                   className="w-full resize-none rounded-xl border border-sw-grey-border px-4 py-3 text-sm transition-all focus:border-sw-blue focus:ring-2 focus:ring-sw-blue/30 focus:outline-none"
                 />
@@ -264,10 +258,10 @@ export default function SupportContactForm({
                 disabled={!email || !name || !description || sending}
                 className="w-full rounded-xl bg-sw-blue px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-sw-blue-hover disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {sending ? 'Sending...' : 'Send Message'}
+                {sending ? formCopy.sending : formCopy.sendMessage}
               </button>
               <p className="text-center text-[10px] text-sw-grey">
-                We&apos;ll respond to your email within 1-3 business days.
+                {formCopy.respondNote}
               </p>
             </form>
           </div>
@@ -286,19 +280,20 @@ export default function SupportContactForm({
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-lg font-bold text-sw-dark">Message sent!</h3>
+            <h3 className="mb-2 text-lg font-bold text-sw-dark">{formCopy.sentTitle}</h3>
             {ticket ? (
               <p className="mb-2 text-xs text-sw-grey">
-                Reference: <span className="font-mono font-semibold text-sw-dark">{ticket}</span>
+                {formCopy.reference}{' '}
+                <span className="font-mono font-semibold text-sw-dark">{ticket}</span>
               </p>
             ) : null}
             <p className="mb-1 text-sm text-sw-grey">
-              We&apos;ve received your message and will get back to you at{' '}
+              {formCopy.received}{' '}
               <span className="font-semibold text-sw-dark">{email}</span>.
             </p>
-            <p className="mb-6 text-xs text-sw-grey">Our team responds within 1-3 business days.</p>
+            <p className="mb-6 text-xs text-sw-grey">{formCopy.teamResponds}</p>
             <button type="button" onClick={reset} className="text-sm font-semibold text-sw-blue hover:underline">
-              ← Back to Support Center
+              {formCopy.backToSupport}
             </button>
           </div>
         ) : null}

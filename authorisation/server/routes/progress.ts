@@ -27,7 +27,7 @@ progressRoutes.get('/progress', requireAuth, async (c) => {
 
 progressRoutes.post('/progress/open', requireAuth, async (c) => {
   const parsed = openSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   return c.json(await openLesson({ userId: c.get('userId'), ...parsed.data }))
 })
 
@@ -46,7 +46,7 @@ progressRoutes.get('/progress/:courseSlug', requireAuth, async (c) => {
 
 progressRoutes.post('/progress/complete', requireAuth, async (c) => {
   const parsed = completeSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const result = await completeLesson({ userId: c.get('userId'), ...parsed.data })
   return c.json(result)
 })

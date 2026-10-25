@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeSpinWheelScreenProps {
   name: string
@@ -83,10 +85,12 @@ function Wheel({
   rotation,
   spinning,
   segments,
+  offLabel,
 }: {
   rotation: number
   spinning: boolean
   segments: WheelSegment[]
+  offLabel: string
 }) {
   const dots = Array.from({ length: DOT_COUNT }).map((_, i) => pointOnCircle(DOT_RADIUS, (i * 360) / DOT_COUNT))
   const segmentAngle = 360 / segments.length
@@ -126,7 +130,7 @@ function Wheel({
                   {segment.label}
                 </tspan>
                 <tspan x={labelPoint.x} dy="16" style={{ fontSize: '11px', fontWeight: 600 }}>
-                  off
+                  {offLabel}
                 </tspan>
               </text>
             </g>
@@ -153,10 +157,12 @@ function DiscountPopup({
   name,
   onClaim,
   discountPercent,
+  copy,
 }: {
   name: string
   onClaim: () => void
   discountPercent: number
+  copy: ReturnType<typeof claudeSalesUiCopy>['spinWheel']
 }) {
   const [visible, setVisible] = useState(false)
 
@@ -179,7 +185,7 @@ function DiscountPopup({
         }}
       >
         <div className="mx-auto mb-6 h-1 w-10 rounded-full bg-sw-border" />
-        <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">Woo hoo! 🥳</h2>
+        <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">{copy.popupTitle}</h2>
         <div className="relative mb-4 overflow-hidden rounded-2xl border border-sw-blue/25 bg-sw-blue-light">
           {CONFETTI.map((piece, i) => (
             <div
@@ -197,18 +203,18 @@ function DiscountPopup({
           ))}
           <div className="relative z-10 py-7 text-center">
             <p className="mb-1 text-base font-bold text-sw-dark">
-              {name ? `${name}, you won a discount` : 'You won a discount'}
+              {name ? copy.wonDiscountNamed(name) : copy.wonDiscount}
             </p>
-            <p className="text-5xl font-extrabold text-sw-blue">{discountPercent}% off</p>
+            <p className="text-5xl font-extrabold text-sw-blue">{copy.percentOff(discountPercent)}</p>
           </div>
         </div>
-        <p className="mb-6 text-center text-sm text-sw-grey">It will be applied automatically</p>
+        <p className="mb-6 text-center text-sm text-sw-grey">{copy.appliedAuto}</p>
         <button
           type="button"
           onClick={onClaim}
           className="w-full rounded-full bg-sw-blue py-4 text-base font-extrabold tracking-wide text-sw-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98]"
         >
-          Claim My Discount
+          {copy.claim}
         </button>
       </div>
     </>
@@ -221,6 +227,8 @@ function DiscountPopup({
  * then a slide-up popup CTA.
  */
 export default function ClaudeSpinWheelScreen({ name, onContinue, discountPercent = 97 }: ClaudeSpinWheelScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeSalesUiCopy(locale).spinWheel
   const [rotation, setRotation] = useState(0)
   const [spinning, setSpinning] = useState(false)
   const [finished, setFinished] = useState(false)
@@ -249,15 +257,15 @@ export default function ClaudeSpinWheelScreen({ name, onContinue, discountPercen
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col overflow-x-hidden pb-32">
       <div className="mb-6 animate-fade-up px-4 pt-8 text-center">
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Spin &amp; Unlock Your
+          {copy.titleLine1}
           <br />
-          <span className="text-sw-blue">Personal Discount!</span>
+          <span className="text-sw-blue">{copy.titleHighlight}</span>
         </h1>
-        <p className="text-sm text-sw-grey">Don&apos;t miss your chance to master AI with your personal reward 🎁</p>
+        <p className="text-sm text-sw-grey">{copy.subtitle}</p>
       </div>
 
       <div className="flex animate-fade-up cursor-pointer justify-center px-4" onClick={handleSpin}>
-        <Wheel rotation={rotation} spinning={spinning} segments={buildSegments(discountPercent)} />
+        <Wheel rotation={rotation} spinning={spinning} segments={buildSegments(discountPercent)} offLabel={copy.off} />
       </div>
 
       <div
@@ -271,12 +279,14 @@ export default function ClaudeSpinWheelScreen({ name, onContinue, discountPercen
             disabled={finished}
             className="w-full rounded-full bg-sw-blue py-4 text-base font-extrabold tracking-wider text-sw-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {finished ? `You won ${discountPercent}% off! 🎉` : spinning ? 'Spinning…' : 'Spin'}
+            {finished ? copy.won(discountPercent) : spinning ? copy.spinning : copy.spin}
           </button>
         </div>
       </div>
 
-      {showPopup ? <DiscountPopup name={name} onClaim={onContinue} discountPercent={discountPercent} /> : null}
+      {showPopup ? (
+        <DiscountPopup name={name} onClaim={onContinue} discountPercent={discountPercent} copy={copy} />
+      ) : null}
     </div>
   )
 }

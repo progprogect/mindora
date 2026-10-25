@@ -1,7 +1,9 @@
 import { ChevronRight } from 'lucide-react'
 import AssetImage from '@/shared/components/AssetImage'
 import QuizTermsFooter from '@/funnels/claude/components/quiz/QuizTermsFooter'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
 import type { ClaudeIdentity, ClaudeIdentityScreenDef } from '@/funnels/claude/types/claudeQuiz'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeIdentityScreenProps {
   screen: ClaudeIdentityScreenDef
@@ -15,14 +17,16 @@ const IDENTITY_ASSET_SRC: Record<ClaudeIdentity, string> = {
 
 /** Port of `oe()` — the bespoke Claude identity screen (lavender bg, 2 photo cards). */
 export default function ClaudeIdentityScreen({ screen, onSelect }: ClaudeIdentityScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeQuizUiCopy(locale).identity
   return (
     <div className="flex w-full flex-1 flex-col animate-fade-up" style={{ background: 'hsl(240 40% 95%)' }}>
       <div className="mx-auto flex w-full max-w-lg flex-col px-4">
         <div className="pt-8 pb-4 text-center">
           <h1 className="text-[clamp(1.5rem,6vw,1.95rem)] leading-[1.15] font-extrabold tracking-tight text-sw-dark uppercase">
-            Let&apos;s Create Your
+            {copy.titleLine1}
             <br />
-            <span className="text-sw-blue">Claude AI</span> Learning Plan
+            <span className="text-sw-blue">{copy.titleHighlight}</span> {copy.titleLine2}
           </h1>
         </div>
         <p className="mb-5 text-center text-lg font-semibold text-sw-dark sm:text-xl">{screen.subtext}</p>
@@ -38,7 +42,7 @@ export default function ClaudeIdentityScreen({ screen, onSelect }: ClaudeIdentit
               <div className="flex w-full flex-1 items-center justify-center p-3" style={{ minHeight: '160px' }}>
                 <AssetImage
                   src={IDENTITY_ASSET_SRC[option.value]}
-                  alt={`Claude AI - ${option.label}`}
+                  alt={copy.imageAlt(option.label)}
                   fallbackEmoji={option.emoji}
                   className="h-auto w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
                 />
@@ -56,7 +60,7 @@ export default function ClaudeIdentityScreen({ screen, onSelect }: ClaudeIdentit
             ✨
           </span>
           <p className="text-center text-sm leading-snug font-medium text-sw-dark/80 sm:text-[15px]">
-            Answer a few quick questions and get your personalised Claude learning plan in just 60 seconds.
+            {copy.hint}
           </p>
         </div>
 

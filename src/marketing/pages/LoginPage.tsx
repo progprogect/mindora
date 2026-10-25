@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { companyPagesCopy } from '@/marketing/data/company'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import BrandWordmark from '@/shared/components/BrandWordmark'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -53,7 +55,9 @@ function StickyCta({
 }
 
 export default function LoginPage() {
-  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
+  const { locale } = useI18n()
+  const copy = companyPagesCopy(locale).login
+  usePageTitle(copy.pageTitle)
   const [step, setStep] = useState<'email' | 'code'>('email')
   const [email, setEmail] = useState(() => resolveKnownEmail() || '')
   const [code, setCode] = useState('')
@@ -71,7 +75,7 @@ export default function LoginPage() {
     await new Promise((r) => setTimeout(r, 500))
     setBusy(false)
     if (!EMAIL_OK.test(email)) {
-      setError('Failed to send code. Please check your email and try again.')
+      setError(copy.sendCodeError)
       return
     }
     rememberCheckoutEmail(email)
@@ -84,7 +88,7 @@ export default function LoginPage() {
     setBusy(true)
     await new Promise((r) => setTimeout(r, 500))
     setBusy(false)
-    setError('Invalid or expired code. Please try again.')
+    setError(copy.invalidCode)
   }
 
   if (step === 'code') {
@@ -110,10 +114,10 @@ export default function LoginPage() {
               </svg>
             </div>
             <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark">
-              Check your inbox
+              {copy.checkInbox}
             </h1>
             <p className="mb-8 text-center text-sm leading-relaxed text-sw-grey">
-              We sent a 6-digit code to <span className="font-semibold text-sw-dark">{email}</span>
+              {copy.sentCode} <span className="font-semibold text-sw-dark">{email}</span>
             </p>
             <input
               type="text"
@@ -145,16 +149,23 @@ export default function LoginPage() {
               disabled={busy}
               className="mt-6 w-full text-center text-sm text-sw-grey"
             >
-              Didn&apos;t receive it? <span className="font-semibold text-sw-blue">Send again</span>
+              {copy.didntReceive}{' '}
+              <span className="font-semibold text-sw-blue">{copy.sendAgain}</span>
             </button>
             <p className="mt-4 rounded-xl bg-sw-blue-light/40 px-4 py-3 text-center text-xs leading-relaxed text-sw-grey/80">
-              💡 Check your <span className="font-semibold text-sw-dark">spam or junk folder</span> for an
-              email from MindoraAcademy.com — some email providers filter sign-in codes.
+              {locale === 'en' ? (
+                <>
+                  💡 Check your <span className="font-semibold text-sw-dark">{copy.spamFolder}</span> for an
+                  email from MindoraAcademy.com — some email providers filter sign-in codes.
+                </>
+              ) : (
+                copy.spamTip
+              )}
             </p>
           </div>
         </main>
         <StickyCta disabled={busy || code.length < 6} onClick={() => void verifyCode()}>
-          {busy ? 'Signing in…' : 'Sign In'}
+          {busy ? copy.signingIn : copy.signIn}
         </StickyCta>
       </div>
     )
@@ -182,12 +193,10 @@ export default function LoginPage() {
             </svg>
           </div>
           <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark">
-            Welcome back
+            {copy.welcomeBack}
           </h1>
-          <p className="mb-10 text-center text-sm leading-relaxed text-sw-grey">
-            Enter your email and we&apos;ll send a quick sign-in code — no password needed.
-          </p>
-          <label className="mb-2 block text-sm font-semibold text-sw-dark">Email address</label>
+          <p className="mb-10 text-center text-sm leading-relaxed text-sw-grey">{copy.emailPrompt}</p>
+          <label className="mb-2 block text-sm font-semibold text-sw-dark">{copy.emailLabel}</label>
           <input
             type="email"
             value={email}
@@ -203,15 +212,15 @@ export default function LoginPage() {
           />
           {error ? <p className="mt-3 text-sm text-red-500">{error}</p> : null}
           <p className="mt-6 text-center text-xs text-sw-grey">
-            Don&apos;t have an account?{' '}
+            {copy.noAccount}{' '}
             <Link to={ROUTES.quiz28} className="font-semibold text-sw-blue">
-              Take the quiz
+              {copy.takeQuiz}
             </Link>
           </p>
         </div>
       </main>
       <StickyCta disabled={busy || !EMAIL_OK.test(email)} onClick={() => void sendCode()}>
-        {busy ? 'Sending code…' : 'Send Sign-In Code'}
+        {busy ? copy.sendingCode : copy.sendSignInCode}
       </StickyCta>
     </div>
   )

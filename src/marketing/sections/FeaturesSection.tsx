@@ -1,4 +1,6 @@
-import { COMPARE_THEM, COMPARE_US, FEATURE_STEPS } from '@/marketing/data/home'
+import { homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 function FeatureIcon({ index, color }: { index: number; color: string }) {
   if (index === 0) {
@@ -55,25 +57,29 @@ function MiniCheck({ color }: { color: string }) {
 }
 
 export default function FeaturesSection() {
+  const { locale } = useI18n()
+  const { featureSteps, compareThem, compareUs } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).features
+
   return (
     <section id="features" className="scroll-mt-20 bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-14 text-center">
-          <p className="mb-4 text-sm font-semibold tracking-widest text-sw-blue uppercase">How It Works</p>
+          <p className="mb-4 text-sm font-semibold tracking-widest text-sw-blue uppercase">{copy.eyebrow}</p>
           <h2 className="mb-4 text-3xl leading-tight font-extrabold text-sw-dark sm:text-4xl lg:text-5xl">
-            Three steps to become
+            {copy.titleLine1}
             <br />
-            <span className="text-sw-blue">who you want to be.</span> <span className="emoji-bounce">🚀</span>
+            <span className="text-sw-blue">{copy.titleLine2}</span> <span className="emoji-bounce">🚀</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg leading-relaxed text-sw-grey">
-            A simple daily system. Personalised to you. Powered by expert knowledge and AI.
+            {copy.subtitle}
           </p>
         </div>
 
         <div className="relative">
           <div className="absolute top-[52px] right-[16.67%] left-[16.67%] z-0 hidden h-0.5 bg-sw-grey-border lg:block" />
           <div className="relative z-10 grid gap-6 sm:grid-cols-3 lg:gap-8">
-            {FEATURE_STEPS.map((step, i) => (
+            {featureSteps.map((step, i) => (
               <article
                 key={step.num}
                 className="group relative rounded-2xl border border-sw-grey-border bg-white p-7 transition-all duration-300 hover:shadow-lg"
@@ -107,17 +113,17 @@ export default function FeaturesSection() {
         </div>
 
         <div className="mt-12 rounded-2xl bg-sw-grey-light/40 p-6">
-          <p className="mb-5 text-center text-xs font-semibold tracking-widest text-sw-grey uppercase">How we compare</p>
+          <p className="mb-5 text-center text-xs font-semibold tracking-widest text-sw-grey uppercase">{copy.compareEyebrow}</p>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl border border-sw-grey-border bg-white p-5">
               <div className="mb-4 flex items-center gap-2">
                 <div className="flex h-6 w-6 items-center justify-center rounded-full bg-sw-grey/10">
                   <span className="text-xs font-bold text-sw-grey/50">✗</span>
                 </div>
-                <span className="text-xs font-semibold tracking-wide text-sw-grey uppercase">Every other platform</span>
+                <span className="text-xs font-semibold tracking-wide text-sw-grey uppercase">{copy.compareThemLabel}</span>
               </div>
               <div className="space-y-2">
-                {COMPARE_THEM.map((line) => (
+                {compareThem.map((line) => (
                   <div key={line} className="flex items-center gap-2 text-sm text-sw-grey/60">
                     <span className="shrink-0 text-xs text-red-400">✗</span>
                     {line}
@@ -130,10 +136,10 @@ export default function FeaturesSection() {
                 <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
                   <span className="text-xs font-bold text-white">✓</span>
                 </div>
-                <span className="text-xs font-semibold tracking-wide text-white/80">MindoraAcademy</span>
+                <span className="text-xs font-semibold tracking-wide text-white/80">{copy.compareUsLabel}</span>
               </div>
               <div className="space-y-2">
-                {COMPARE_US.map((line) => (
+                {compareUs.map((line) => (
                   <div key={line} className="flex items-center gap-2 text-sm text-white/90">
                     <span className="shrink-0 text-xs text-green-300">✓</span>
                     {line}

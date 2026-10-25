@@ -129,7 +129,7 @@ export interface QuizProfileStat {
 
 export interface QuizProfile {
   score: number
-  scoreLabel: ScoreLabel
+  scoreLabel: string
   scoreTone: string
   archetype: string
   archetypeEmoji: string

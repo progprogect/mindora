@@ -2,6 +2,9 @@ import { ChevronRight } from 'lucide-react'
 import type { IdentityScreen as IdentityScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
 import AssetImage from '@/shared/components/AssetImage'
 import QuizTermsFooter from '@/funnels/twenty-eight-day/components/quiz/QuizTermsFooter'
+import { identityFooterLegal } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface IdentityScreenProps {
   screen: IdentityScreenDef
@@ -9,6 +12,8 @@ interface IdentityScreenProps {
 }
 
 export default function IdentityScreen({ screen, onSelect }: IdentityScreenProps) {
+  const { locale } = useI18n()
+  const legalLine = identityFooterLegal(locale as FunnelLocale)
   const photoOptions = screen.options.filter((o) => o.variant === 'photo')
   const textOptions = screen.options.filter((o) => o.variant === 'text')
 
@@ -69,7 +74,7 @@ export default function IdentityScreen({ screen, onSelect }: IdentityScreenProps
 
       <div className="px-4">
         <QuizTermsFooter />
-        <p className="mt-2 text-center text-[11px] text-sw-grey">Scalion Ltd T/A. MindoraAcademy.com</p>
+        <p className="mt-2 text-center text-[11px] text-sw-grey">{legalLine}</p>
       </div>
     </div>
   )

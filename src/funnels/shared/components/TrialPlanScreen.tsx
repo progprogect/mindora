@@ -4,7 +4,9 @@ import { expiredPickerPlans, type PlanView } from '@/funnels/twenty-eight-day/da
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
-import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
+import { moneyBackCopy } from '@/marketing/data/moneyBack'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 export interface PathItem {
   emoji: string
@@ -44,8 +46,6 @@ interface TrialPlanScreenProps {
 }
 
 const COUNTDOWN_SECONDS = 10 * 60
-const LIVE_MINUTES = ['1 min ago', '2 min ago', '3 min ago', '4 min ago', '5 min ago', '6 min ago', '7 min ago', '8 min ago', '9 min ago', '10 min ago', '11 min ago', '12 min ago']
-
 function pad2(value: number): string {
   return String(value).padStart(2, '0')
 }
@@ -83,9 +83,11 @@ function ExpiredPlanPicker({
   onSelect: (id: string) => void
   onStart: () => void
 }) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="mx-auto max-w-lg px-4 pb-6">
-      <h2 className="mb-4 text-center text-xl font-extrabold text-sw-dark">Choose your plan</h2>
+      <h2 className="mb-4 text-center text-xl font-extrabold text-sw-dark">{ui.chooseYourPlan}</h2>
       <div className="mb-4 flex flex-col gap-2">
         {plans.map((plan) => (
           <button
@@ -101,7 +103,7 @@ function ExpiredPlanPicker({
         ))}
       </div>
       <button type="button" onClick={onStart} className="sw-cta">
-        GET STARTED →
+        {ui.getStarted}
       </button>
     </div>
   )
@@ -116,6 +118,9 @@ export default function TrialPlanScreen({
   onCheckoutSuccess,
   onExpiredPlanContinue,
 }: TrialPlanScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
+  const moneyBack = moneyBackCopy(locale)
   const products = useProductsList()
   const convexPlans: PlanView[] | undefined = products?.length
     ? products.map((p) => ({
@@ -178,7 +183,7 @@ export default function TrialPlanScreen({
         <div className="mx-auto flex h-14 max-w-lg items-center justify-between gap-3 px-4">
           <div className="flex flex-col items-start">
             <span className="mb-0.5 text-[10px] leading-none font-semibold tracking-wide text-sw-grey uppercase">
-              {expired ? 'Offer ended' : 'Offer expires'}
+              {expired ? ui.offerEnded : ui.offerExpires}
             </span>
             <span className={`text-xl font-extrabold tabular-nums ${expired ? 'text-sw-grey' : 'text-sw-dark'}`}>
               {minutes}:{seconds}
@@ -186,10 +191,10 @@ export default function TrialPlanScreen({
           </div>
           <span className="text-center text-base leading-tight font-extrabold text-sw-dark">
             {expired ? (
-              '🔄 Refresh for a new deal'
+              ui.refreshForDeal
             ) : (
               <>
-                Start for Just <span className="text-sw-blue">$1</span>
+                {ui.startForJust} <span className="text-sw-blue">$1</span>
               </>
             )}
           </span>
@@ -200,7 +205,7 @@ export default function TrialPlanScreen({
               className="rounded-full px-3 py-2 text-xs font-bold whitespace-nowrap text-white"
               style={{ backgroundColor: 'hsl(var(--sw-success))' }}
             >
-              REFRESH →
+              {ui.refreshCta}
             </button>
           ) : (
             <button
@@ -208,7 +213,7 @@ export default function TrialPlanScreen({
               onClick={scrollToCheckout}
               className="rounded-full bg-sw-blue px-3 py-2 text-xs font-bold whitespace-nowrap text-white hover:bg-sw-blue-hover"
             >
-              GET MY PLAN →
+              {ui.getMyPlan}
             </button>
           )}
         </div>
@@ -217,9 +222,9 @@ export default function TrialPlanScreen({
       <div className="mx-auto max-w-lg animate-fade-up px-4 pt-8 pb-6 text-center">
         {!expired ? (
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-sm font-bold text-orange-600">
-            🎁 Special Discount:{' '}
+            🎁 {ui.specialDiscount}{' '}
             <span className="rounded-full bg-orange-500 px-2 py-0.5 text-xs font-extrabold text-white">
-              {offerPercent}% OFF
+              {offerPercent}% {locale === 'ru' ? 'СКИДКА' : 'OFF'}
             </span>
           </div>
         ) : null}
@@ -285,7 +290,7 @@ export default function TrialPlanScreen({
                   className="flex flex-shrink-0 items-center gap-2 rounded-full bg-sw-grey-light px-4 py-2 text-xs font-semibold whitespace-nowrap text-sw-dark"
                 >
                   <span className="h-2 w-2 flex-shrink-0 rounded-full bg-sw-success" />
-                  {handle} just enrolled · {LIVE_MINUTES[i % LIVE_MINUTES.length]}
+                  {ui.justEnrolled(handle, ui.liveMinutesAgo[i % ui.liveMinutesAgo.length])}
                 </div>
               ))}
             </div>
@@ -316,7 +321,7 @@ export default function TrialPlanScreen({
           />
         ) : (
           <div className="mx-auto max-w-lg px-4 pb-6">
-            <p className="text-center text-xs text-sw-grey">Please enter your email earlier in the quiz to unlock checkout.</p>
+            <p className="text-center text-xs text-sw-grey">{ui.unlockCheckoutEmail}</p>
           </div>
         )}
       </div>
@@ -375,8 +380,8 @@ export default function TrialPlanScreen({
             🛡️
           </div>
           <div>
-            <p className="text-sm font-extrabold text-sw-dark">{MONEY_BACK_TITLE}</p>
-            <p className="mt-0.5 text-xs leading-snug text-sw-grey">Not right for you? Full refund, no questions asked.</p>
+            <p className="text-sm font-extrabold text-sw-dark">{moneyBack.title}</p>
+            <p className="mt-0.5 text-xs leading-snug text-sw-grey">{ui.moneyBackSubtitle}</p>
           </div>
         </div>
       </div>

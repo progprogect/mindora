@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import QuizStickyCta from '@/funnels/shared/components/QuizStickyCta'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface SpinWheelScreenProps {
   name: string | null
@@ -136,10 +138,12 @@ function Wheel({ rotation, spinning }: { rotation: number; spinning: boolean }) 
 }
 
 function DiscountPopup({ name, onClaim }: { name: string | null; onClaim: () => void }) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="fixed right-0 bottom-0 left-0 z-50 rounded-t-3xl bg-white px-6 pt-8 pb-10">
       <div className="mx-auto mb-6 h-1 w-10 rounded-full bg-sw-grey-border" />
-      <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">Woo hoo! 🥳</h2>
+      <h2 className="mb-5 text-center text-3xl font-extrabold text-sw-dark">{ui.spinWooHoo}</h2>
       <div className="relative mb-4 overflow-hidden rounded-2xl border border-sw-blue-border bg-sw-blue-light">
         {CONFETTI.map((piece, i) => (
           <div
@@ -157,20 +161,22 @@ function DiscountPopup({ name, onClaim }: { name: string | null; onClaim: () => 
         ))}
         <div className="relative z-10 py-7 text-center">
           <p className="mb-1 text-base font-bold text-sw-dark">
-            {name ? `${name}, you won a discount` : 'You won a discount'}
+            {ui.spinWonDiscount(name)}
           </p>
-          <p className="text-5xl font-extrabold text-sw-blue">{PRIZE_PERCENT}% off</p>
+          <p className="text-5xl font-extrabold text-sw-blue">{PRIZE_PERCENT}{ui.spinPercentOff}</p>
         </div>
       </div>
-      <p className="mb-6 text-center text-sm text-sw-grey">It will be applied automatically</p>
+      <p className="mb-6 text-center text-sm text-sw-grey">{ui.spinAppliedAuto}</p>
       <button type="button" onClick={onClaim} className="sw-cta font-extrabold tracking-wide uppercase">
-        CLAIM MY DISCOUNT
+        {ui.claimDiscount}
       </button>
     </div>
   )
 }
 
 export default function SpinWheelScreen({ name, subtitle, onFinish }: SpinWheelScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const [rotation, setRotation] = useState(0)
   const [spinning, setSpinning] = useState(false)
   const [finished, setFinished] = useState(false)
@@ -199,9 +205,9 @@ export default function SpinWheelScreen({ name, subtitle, onFinish }: SpinWheelS
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col overflow-x-hidden pb-32">
       <div className="mb-6 px-4 pt-8 text-center animate-fade-up">
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Spin &amp; Unlock Your
+          {ui.spinTitleLine1}
           <br />
-          <span className="text-sw-blue">Personal Discount!</span>
+          <span className="text-sw-blue">{ui.spinTitleHighlight}</span>
         </h1>
         <p className="text-sm text-sw-grey">{subtitle}</p>
       </div>
@@ -217,7 +223,7 @@ export default function SpinWheelScreen({ name, subtitle, onFinish }: SpinWheelS
           disabled={finished}
           className="sw-cta font-extrabold tracking-wider uppercase"
         >
-          {finished ? 'YOU WON 97% OFF! 🎉' : spinning ? 'SPINNING…' : 'SPIN'}
+          {finished ? ui.spinWonCta : spinning ? ui.spinning : ui.spin}
         </button>
       </QuizStickyCta>
 

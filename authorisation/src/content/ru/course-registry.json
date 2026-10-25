@@ -1,0 +1,227 @@
+{
+  "28-day-ai-challenge": {
+    "title": "28-дневный AI-челлендж",
+    "category": "ai-and-technology",
+    "lessonCount": 28
+  },
+  "ai-ads-accelerator": {
+    "title": "Ускоритель рекламы с ИИ",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "ai-automation-blueprint": {
+    "title": "План автоматизации с ИИ",
+    "category": "ai-and-technology",
+    "lessonCount": 28
+  },
+  "ai-content-creator-accelerator": {
+    "title": "Ускоритель AI-контент-мейкера",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "ai-digital-product-launch": {
+    "title": "48-часовой запуск цифрового продукта с использованием искусственного интеллекта",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "ai-filmmaking-studio": {
+    "title": "Студия кинопроизводства с ИИ",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "ai-productivity-system": {
+    "title": "Система продуктивности с ИИ",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "ai-side-hustle-accelerator": {
+    "title": "Акселератор подработки с ИИ",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "chatgpt-for-business": {
+    "title": "ChatGPT для бизнеса: от основ до своей системы",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "claude-ai-excel": {
+    "title": "Освойте Claude AI для Excel",
+    "category": "ai-and-technology",
+    "lessonCount": 15
+  },
+  "claude-ai-mastery": {
+    "title": "Claude: думайте точнее, работайте быстрее",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "master-ai-powerpoint": {
+    "title": "Освойте ИИ для PowerPoint",
+    "category": "ai-and-technology",
+    "lessonCount": 18
+  },
+  "master-ai-microsoft-365": {
+    "title": "Освойте ИИ для Microsoft 365",
+    "category": "ai-and-technology",
+    "lessonCount": 24
+  },
+  "master-gemini": {
+    "title": "Освойте Gemini: вся мощь ИИ Google",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "prompt-engineering-mastery": {
+    "title": "Искусство промптов: от слов к результату",
+    "category": "ai-and-technology",
+    "lessonCount": 21
+  },
+  "build-test-your-mvp": {
+    "title": "Создайте и протестируйте свой MVP",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "create-irresistible-offer": {
+    "title": "Создайте оффер, от которого невозможно отказаться",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "customer-research-validation": {
+    "title": "Исследование клиентов и валидация",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "design-your-business-model": {
+    "title": "Проектируйте бизнес-модель",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "entrepreneurial-mindset": {
+    "title": "Предпринимательское мышление",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "execution-founder-productivity": {
+    "title": "Исполнение и продуктивность основателя",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "find-your-profitable-idea": {
+    "title": "Найдите прибыльную идею",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "leadership-scaling-building-value": {
+    "title": "Лидерство, масштабирование и создание ценности",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "positioning-marketing-acquisition": {
+    "title": "Позиционирование, маркетинг и привлечение клиентов",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "pricing-monetisation-mastery": {
+    "title": "Мастерство ценообразования и монетизации",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "sales-persuasion-negotiation": {
+    "title": "Продажи, убеждение и переговоры",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "systems-delegation-operations": {
+    "title": "Системы, делегирование и операции",
+    "category": "business",
+    "lessonCount": 21
+  },
+  "28-day-career-accelerator": {
+    "title": "21-дневный карьерный акселератор",
+    "category": "career",
+    "lessonCount": 21
+  },
+  "deep-work-career-focus": {
+    "title": "Глубокая работа и карьерный фокус",
+    "category": "career",
+    "lessonCount": 21
+  },
+  "salary-promotion-playbook": {
+    "title": "Зарплата и повышение: практическое руководство",
+    "category": "career",
+    "lessonCount": 21
+  },
+  "squiggly-career-navigator": {
+    "title": "Навигатор нелинейной карьеры",
+    "category": "career",
+    "lessonCount": 21
+  },
+  "better-sleep": {
+    "title": "Здоровый сон и настройка биоритмов",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "brain-health-memory": {
+    "title": "Здоровье мозга и память",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "eat-well-live-well": {
+    "title": "Питайтесь правильно — живите полноценно",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "everyday-movement": {
+    "title": "Повседневное движение для лучшего здоровья",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "how-the-body-ages": {
+    "title": "Как стареет организм",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "living-longer": {
+    "title": "Жить дольше и лучше",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "managing-stress-resilience": {
+    "title": "Управление стрессом и развитие устойчивости",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "strength-fitness": {
+    "title": "Сила, фитнес и физическая независимость",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "your-metabolic-health": {
+    "title": "Ваше метаболическое здоровье",
+    "category": "health",
+    "lessonCount": 21
+  },
+  "28-day-success-mindset": {
+    "title": "28-дневный челлендж мышления успеха",
+    "category": "success-mindset",
+    "lessonCount": 28
+  },
+  "confidence-accelerator": {
+    "title": "Акселератор уверенности",
+    "category": "success-mindset",
+    "lessonCount": 21
+  },
+  "high-performance-accelerator": {
+    "title": "Акселератор высокой результативности",
+    "category": "success-mindset",
+    "lessonCount": 21
+  },
+  "millionaire-mindset": {
+    "title": "Мастер-класс миллионерского мышления",
+    "category": "success-mindset",
+    "lessonCount": 28
+  },
+  "unlock-growth-mindset": {
+    "title": "Пробудите мышление роста",
+    "category": "success-mindset",
+    "lessonCount": 18
+  }
+}

@@ -1,5 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { QuizProfile } from '@/funnels/twenty-eight-day/types/quiz'
+import { aiScoreCardCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
 
 interface AIScoreCardProps {
   profile: QuizProfile
@@ -52,6 +55,9 @@ function ScoreRing({ score, size, showLabel }: { score: number; size: number; sh
 }
 
 export default function AIScoreCard({ profile, compact = false }: AIScoreCardProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => aiScoreCardCopy(locale as FunnelLocale), [locale])
+
   if (compact) {
     return <ScoreRing score={profile.score} size={64} />
   }
@@ -61,7 +67,7 @@ export default function AIScoreCard({ profile, compact = false }: AIScoreCardPro
       <div className="flex items-center gap-6">
         <ScoreRing score={profile.score} size={128} showLabel={profile.scoreLabel} />
         <div className="flex-1">
-          <p className="mb-1 text-xs font-bold tracking-wide text-sw-grey uppercase">AI Readiness Score</p>
+          <p className="mb-1 text-xs font-bold tracking-wide text-sw-grey uppercase">{copy.readiness}</p>
           <p className="text-sm leading-snug text-sw-dark">{profile.scoreTone}</p>
         </div>
       </div>

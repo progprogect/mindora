@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Check } from 'lucide-react'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
 import type { ClaudeQuestionScreenDef } from '@/funnels/claude/types/claudeQuiz'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeQuestionScreenProps {
   screen: ClaudeQuestionScreenDef
@@ -12,6 +14,8 @@ const AUTO_ADVANCE_DELAY_MS = 480
 
 /** Port of `d()` (`QuestionScreen-*.js`) — emoji options, radio circles, 480ms auto-advance. */
 export default function ClaudeQuestionScreen({ screen, initialValue, onSelect }: ClaudeQuestionScreenProps) {
+  const { locale } = useI18n()
+  const questionCopy = claudeQuizUiCopy(locale).question
   const [selected, setSelected] = useState<string | null>(initialValue ?? null)
 
   const handleSelect = (value: string) => {
@@ -23,7 +27,7 @@ export default function ClaudeQuestionScreen({ screen, initialValue, onSelect }:
   return (
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-8 pb-8 animate-fade-up">
       <p className="mb-4 text-center text-xs font-bold tracking-widest text-sw-blue uppercase">
-        Question {screen.step} of {screen.totalSteps}
+        {questionCopy.questionOf(screen.step, screen.totalSteps)}
       </p>
       <h2 className="mb-2 text-center text-2xl leading-tight font-bold text-sw-dark sm:text-3xl">{screen.question}</h2>
       {screen.subtext ? (

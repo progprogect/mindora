@@ -12,7 +12,9 @@ import {
 import { getStripe, isStripeConfigured } from '@/shared/lib/stripeClient'
 import { ALREADY_SUBSCRIBED_ERROR, useCreateTrialPaymentIntent } from '@/shared/lib/backend'
 import { clearLocalCheckoutCompleted, markLocalCheckoutCompleted } from '@/shared/lib/checkoutSession'
-import { DEFAULT_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
+import { defaultCheckoutHighlights } from '@/shared/lib/checkoutHighlights'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
+import { checkoutUiCopy, stripeDeclineMessage, type CheckoutUiCopy } from '@/shared/i18n/checkoutUiCopy'
 
 interface InlineTrialCheckoutProps {
   email: string
@@ -43,25 +45,18 @@ const CARD_ELEMENT_STYLE = {
 
 const CARD_NUMBER_HINT = 'XXXX XXXX XXXX XXXX'
 
-const DECLINE_MESSAGES: Record<string, string> = {
-  card_declined: 'Your card was declined. Try another card or contact your bank.',
-  expired_card: 'This card has expired. Please use a different card.',
-  incorrect_cvc: 'The CVC code is incorrect. Please check and try again.',
-  incorrect_number: 'The card number is incorrect. Please check and try again.',
-  insufficient_funds: 'This card has insufficient funds. Try another card.',
-  processing_error: 'We could not process this payment. Please try again.',
-  generic_decline: 'Your card was declined. Try another card or contact your bank.',
-  authentication_required:
-    'Your bank requires additional verification. Please try again — you may see a pop-up from your bank.',
-}
-
-function messageForStripeError(error: { code?: string; decline_code?: string; message?: string }): string {
+function messageForStripeError(
+  ui: CheckoutUiCopy,
+  locale: 'en' | 'ru',
+  error: { code?: string; decline_code?: string; message?: string },
+): string {
   const code = error.decline_code ?? error.code
-  if (code && DECLINE_MESSAGES[code]) return DECLINE_MESSAGES[code]
-  if (error.message && error.message.length < 200) {
-    return `${error.message} Please try again or use a different payment method.`
+  const decline = code ? stripeDeclineMessage(locale, code) : undefined
+  if (decline) return decline
+  if (locale === 'en' && error.message && error.message.length < 200) {
+    return `${error.message}${ui.stripeErrorSuffix}`
   }
-  return "Payment didn't go through. Please try a different card or contact your bank and try again."
+  return ui.paymentFailedGeneric
 }
 
 function CheckDot() {
@@ -135,7 +130,7 @@ function CardFieldShell({
   )
 }
 
-function CheckoutFooter() {
+function CheckoutFooter({ ui }: { ui: CheckoutUiCopy }) {
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="flex items-center gap-1.5 text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
@@ -146,9 +141,9 @@ function CheckoutFooter() {
             d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
           />
         </svg>
-        Pay safe &amp; secure
+        {ui.paySafeSecure}
       </p>
-      <img src="/assets/pay-safe-strip.png" alt="Mastercard, Visa, Amex, Discover accepted" className="h-8 w-auto object-contain" />
+      <img src="/assets/pay-safe-strip.png" alt={ui.cardsAcceptedAlt} className="h-8 w-auto object-contain" />
       <div className="mt-2 flex items-center justify-center gap-4 text-xs text-sw-grey">
         <span className="flex items-center gap-1.5">
           <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -158,16 +153,24 @@ function CheckoutFooter() {
               d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
             />
           </svg>
-          Secure payment
+          {ui.securePayment}
         </span>
-        <span>Instant access</span>
-        <span>Cancel anytime</span>
+        <span>{ui.instantAccess}</span>
+        <span>{ui.cancelAnytime}</span>
       </div>
     </div>
   )
 }
 
-function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlights: string[] }) {
+function CheckoutIntro({
+  percentOff,
+  highlights,
+  ui,
+}: {
+  percentOff: number
+  highlights: string[]
+  ui: CheckoutUiCopy
+}) {
   return (
     <>
       <div className="mb-4 flex flex-col gap-3">
@@ -179,10 +182,7 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
         ))}
         <div className="flex items-start gap-3">
           <CheckDot />
-          <span className="text-sm leading-snug text-sw-dark">
-            Start today for <strong>just $1</strong>. After a 3-day trial, we&apos;ll charge $29.99/month until you
-            cancel. Cancel at any time via your MindoraAcademy dashboard or by contacting support.
-          </span>
+          <span className="text-sm leading-snug text-sw-dark">{ui.trialChargeBlurb}</span>
         </div>
       </div>
       <div className="my-4 border-t border-sw-grey-border" />
@@ -191,7 +191,7 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
         style={{ backgroundColor: 'hsl(142 71% 95%)', scrollMarginTop: 72 }}
       >
         <span className="text-sm font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
-          ⚡ Your Plan is Ready — Start Under 30 Seconds
+          {ui.planReadyBanner}
         </span>
       </div>
       <div
@@ -205,10 +205,8 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
           <span className="text-lg text-white">🎁</span>
         </div>
         <div className="flex-1">
-          <p className="text-sm font-bold text-sw-dark">
-            Promo Code <span style={{ color: 'hsl(var(--sw-success))' }}>TRIAL1</span> Applied
-          </p>
-          <p className="text-xs text-sw-grey">You save {percentOff}% today</p>
+          <p className="text-sm font-bold text-sw-dark">{ui.promoCodeApplied}</p>
+          <p className="text-xs text-sw-grey">{ui.youSaveToday(percentOff)}</p>
         </div>
         <div
           className="h-12 w-12 flex-shrink-0 rounded-full text-center text-xs leading-tight font-extrabold text-white"
@@ -217,17 +215,17 @@ function CheckoutIntro({ percentOff, highlights }: { percentOff: number; highlig
           <span className="flex h-full flex-col items-center justify-center">
             {percentOff}%
             <br />
-            OFF
+            {ui.off}
           </span>
         </div>
       </div>
       <div className="mb-5 flex items-center justify-between">
-        <span className="text-base font-bold text-sw-dark">Total due:</span>
+        <span className="text-base font-bold text-sw-dark">{ui.totalDue}</span>
         <div className="flex items-baseline gap-2">
           <span className="text-sm text-sw-grey line-through">$29.99</span>
           <span className="text-2xl font-extrabold text-sw-dark">$1</span>
           <span className="text-xs font-semibold" style={{ color: 'hsl(var(--sw-success))' }}>
-            You save {percentOff}%
+            {ui.youSaveToday(percentOff)}
           </span>
         </div>
       </div>
@@ -239,14 +237,16 @@ function StripeCardFields({
   ready,
   onNumberReady,
   onComplete,
+  ui,
 }: {
   ready: boolean
   onNumberReady: () => void
   onComplete: (field: 'number' | 'expiry' | 'cvc', complete: boolean) => void
+  ui: CheckoutUiCopy
 }) {
   return (
     <div className="space-y-3">
-      <CardFieldShell label="Card number" className="pr-[150px] pl-3" trailing={<CardBrandIcons />}>
+      <CardFieldShell label={ui.cardNumber} className="pr-[150px] pl-3" trailing={<CardBrandIcons />}>
         <FieldSkeleton show={!ready} />
         <div className="relative z-20 min-h-6">
           <CardNumberElement
@@ -260,7 +260,7 @@ function StripeCardFields({
         </div>
       </CardFieldShell>
       <div className="grid grid-cols-2 gap-3">
-        <CardFieldShell label="Expiry date">
+        <CardFieldShell label={ui.expiryDate}>
           <FieldSkeleton show={!ready} />
           <div className="relative z-20 min-h-6">
             <CardExpiryElement
@@ -269,7 +269,7 @@ function StripeCardFields({
             />
           </div>
         </CardFieldShell>
-        <CardFieldShell label="Security code" className="pr-10 pl-3" trailing={<CvcIcon />}>
+        <CardFieldShell label={ui.securityCode} className="pr-10 pl-3" trailing={<CvcIcon />}>
           <FieldSkeleton show={!ready} />
           <div className="relative z-20 min-h-6">
             <CardCvcElement options={CARD_ELEMENT_STYLE} onChange={(event) => onComplete('cvc', event.complete)} />
@@ -285,11 +285,13 @@ function ConfirmButton({
   ready,
   canSubmit,
   label,
+  ui,
 }: {
   submitting: boolean
   ready: boolean
   canSubmit: boolean
   label: string
+  ui: CheckoutUiCopy
 }) {
   return (
     <button
@@ -300,14 +302,14 @@ function ConfirmButton({
       {submitting ? (
         <span className="flex items-center justify-center gap-2">
           <span className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
-          Processing...
+          {ui.processing}
         </span>
       ) : ready ? (
         label
       ) : (
         <span className="flex items-center justify-center gap-2">
           <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/60 border-t-transparent" />
-          Loading payment form...
+          {ui.loadingPaymentForm}
         </span>
       )}
     </button>
@@ -318,11 +320,11 @@ function defaultSetupPath(funnel: string): string {
   return `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
 }
 
-function CardOrPayDivider() {
+function CardOrPayDivider({ ui }: { ui: CheckoutUiCopy }) {
   return (
     <div className="mb-4 flex items-center gap-3">
       <div className="h-px flex-1 bg-sw-grey-border" />
-      <span className="text-xs font-medium text-sw-grey">or pay with card</span>
+      <span className="text-xs font-medium text-sw-grey">{ui.orPayWithCard}</span>
       <div className="h-px flex-1 bg-sw-grey-border" />
     </div>
   )
@@ -338,12 +340,15 @@ function CheckoutForm({
   name,
   funnel,
   onSuccess,
-  submitLabel = 'CONFIRM PAYMENT — $1.00',
+  submitLabel,
   clientSecret,
   returnPath,
-}: InlineTrialCheckoutProps & { clientSecret: string }) {
+  ui,
+  locale,
+}: InlineTrialCheckoutProps & { clientSecret: string; ui: CheckoutUiCopy; locale: 'en' | 'ru' }) {
   const stripe = useStripe()
   const elements = useElements()
+  const resolvedSubmitLabel = submitLabel ?? ui.confirmPaymentDefault
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [expressReady, setExpressReady] = useState(false)
@@ -363,7 +368,7 @@ function CheckoutForm({
     if (!stripe || !elements) return
     const cardNumber = elements.getElement(CardNumberElement)
     if (!cardNumber) {
-      setError('Card form not found. Please refresh and try again.')
+      setError(ui.cardFormNotFound)
       return
     }
 
@@ -378,7 +383,7 @@ function CheckoutForm({
     })
 
     if (confirmError) {
-      setError(messageForStripeError(confirmError))
+      setError(messageForStripeError(ui, locale, confirmError))
       setSubmitting(false)
       return
     }
@@ -389,14 +394,12 @@ function CheckoutForm({
     }
 
     if (paymentIntent?.status === 'requires_action') {
-      setError(
-        'Your bank requires additional verification. Please try again — you may see a pop-up from your bank to confirm the payment.',
-      )
+      setError(ui.authRequired)
       setSubmitting(false)
       return
     }
 
-    setError('Payment could not be completed. Please try again or use a different payment method.')
+    setError(ui.paymentNotCompleted)
     setSubmitting(false)
   }
 
@@ -431,7 +434,7 @@ function CheckoutForm({
               redirect: 'if_required',
             })
             if (confirmError) {
-              setError(messageForStripeError(confirmError))
+              setError(messageForStripeError(ui, locale, confirmError))
               setSubmitting(false)
               return
             }
@@ -441,12 +444,13 @@ function CheckoutForm({
       </div>
 
       <form onSubmit={handleCardSubmit}>
-        {expressReady ? <CardOrPayDivider /> : null}
+        {expressReady ? <CardOrPayDivider ui={ui} /> : null}
 
         <StripeCardFields
           ready={cardReady}
           onNumberReady={() => setCardReady(true)}
           onComplete={(field, value) => setComplete((prev) => ({ ...prev, [field]: value }))}
+          ui={ui}
         />
 
         {error ? (
@@ -455,44 +459,43 @@ function CheckoutForm({
           </div>
         ) : null}
 
-        <ConfirmButton submitting={submitting} ready={cardReady} canSubmit={canSubmit} label={submitLabel} />
+        <ConfirmButton
+          submitting={submitting}
+          ready={cardReady}
+          canSubmit={canSubmit}
+          label={resolvedSubmitLabel}
+          ui={ui}
+        />
 
-        <p className="mt-3 text-center text-[11px] leading-relaxed text-sw-grey">
-          By providing your card information, you allow Scalion Ltd to charge your card for future
-          payments in accordance with their terms.
-        </p>
+        <p className="mt-3 text-center text-[11px] leading-relaxed text-sw-grey">{ui.scalionTerms}</p>
       </form>
     </div>
   )
 }
 
-function PaymentUnavailableNotice() {
+function PaymentUnavailableNotice({ ui }: { ui: CheckoutUiCopy }) {
   return (
     <div className="rounded-xl border border-sw-grey-border bg-sw-grey-light px-4 py-3 text-center">
-      <p className="text-sm font-semibold text-sw-dark">Payment unavailable</p>
-      <p className="mt-1 text-xs leading-relaxed text-sw-grey">
-        Card checkout is not configured on this environment.
-      </p>
+      <p className="text-sm font-semibold text-sw-dark">{ui.paymentUnavailable}</p>
+      <p className="mt-1 text-xs leading-relaxed text-sw-grey">{ui.paymentUnavailableBlurb}</p>
     </div>
   )
 }
 
-function AlreadyMemberNotice({ setupPath }: { setupPath: string }) {
+function AlreadyMemberNotice({ setupPath, ui }: { setupPath: string; ui: CheckoutUiCopy }) {
   return (
     <div className="rounded-2xl border border-sw-grey-border bg-white p-5 text-center">
-      <p className="text-base font-extrabold text-sw-dark">You already have a membership</p>
-      <p className="mt-2 text-sm leading-relaxed text-sw-grey">
-        This email is already on a Mindora Academy plan. Log in to continue — no extra payment needed.
-      </p>
+      <p className="text-base font-extrabold text-sw-dark">{ui.alreadyMemberTitle}</p>
+      <p className="mt-2 text-sm leading-relaxed text-sw-grey">{ui.alreadyMemberBlurb}</p>
       <div className="mt-4 flex flex-col gap-2">
         <Link
           to="/login"
           className="inline-flex w-full items-center justify-center rounded-full bg-sw-blue py-3 text-sm font-extrabold tracking-wide text-white uppercase transition-all hover:bg-sw-blue-hover active:scale-[0.98]"
         >
-          Log in
+          {ui.logIn}
         </Link>
         <Link to={setupPath} className="text-sm font-semibold text-sw-blue hover:underline">
-          Continue to your account
+          {ui.continueToAccount}
         </Link>
       </div>
     </div>
@@ -503,18 +506,20 @@ function CheckoutFrame({
   percentOff,
   highlights,
   children,
+  ui,
 }: {
   percentOff: number
   highlights: string[]
   children: ReactNode
+  ui: CheckoutUiCopy
 }) {
   return (
     <div className="mx-auto max-w-lg px-4 pb-6">
       <div className="mb-5 rounded-2xl border border-sw-grey-border p-5">
-        <CheckoutIntro percentOff={percentOff} highlights={highlights} />
+        <CheckoutIntro percentOff={percentOff} highlights={highlights} ui={ui} />
         {children}
       </div>
-      <CheckoutFooter />
+      <CheckoutFooter ui={ui} />
     </div>
   )
 }
@@ -528,9 +533,12 @@ export default function InlineTrialCheckout({
   onSuccess,
   submitLabel,
   framed = true,
-  highlights = DEFAULT_CHECKOUT_HIGHLIGHTS,
+  highlights,
   returnPath,
 }: InlineTrialCheckoutProps) {
+  const { locale } = useI18n()
+  const ui = checkoutUiCopy(locale)
+  const resolvedHighlights = highlights ?? defaultCheckoutHighlights(locale)
   const [clientSecret, setClientSecret] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [alreadyMember, setAlreadyMember] = useState(false)
@@ -550,12 +558,11 @@ export default function InlineTrialCheckout({
       })
       .catch((err: unknown) => {
         if (cancelled) return
-        const message = err instanceof Error ? err.message : 'Could not start checkout.'
-        if (message === ALREADY_SUBSCRIBED_ERROR) {
+        if (err instanceof Error && err.message === ALREADY_SUBSCRIBED_ERROR) {
           setAlreadyMember(true)
           return
         }
-        setError(message)
+        setError(ui.couldNotStartCheckout)
       })
 
     return () => {
@@ -570,7 +577,7 @@ export default function InlineTrialCheckout({
 
   const wrap = (children: ReactNode) =>
     framed ? (
-      <CheckoutFrame percentOff={percentOff} highlights={highlights}>
+      <CheckoutFrame percentOff={percentOff} highlights={resolvedHighlights} ui={ui}>
         {children}
       </CheckoutFrame>
     ) : (
@@ -580,7 +587,7 @@ export default function InlineTrialCheckout({
   if (alreadyMember) {
     return (
       <div className={framed ? 'mx-auto max-w-lg px-4 pb-6' : ''}>
-        <AlreadyMemberNotice setupPath={setupPath} />
+        <AlreadyMemberNotice setupPath={setupPath} ui={ui} />
       </div>
     )
   }
@@ -595,7 +602,7 @@ export default function InlineTrialCheckout({
             onClick={() => window.location.reload()}
             className="mt-3 text-sm font-bold text-sw-blue underline"
           >
-            Retry
+            {ui.retry}
           </button>
         </div>
       </div>
@@ -603,7 +610,7 @@ export default function InlineTrialCheckout({
   }
 
   if (!isStripeConfigured) {
-    return wrap(<PaymentUnavailableNotice />)
+    return wrap(<PaymentUnavailableNotice ui={ui} />)
   }
 
   if (!clientSecret) {
@@ -611,7 +618,7 @@ export default function InlineTrialCheckout({
       <div className={framed ? 'mx-auto max-w-lg px-4 pb-6' : 'py-6'}>
         <div className="flex flex-col items-center py-10">
           <div className="h-8 w-8 animate-spin rounded-full border-2 border-sw-blue border-t-transparent" />
-          <p className="mt-3 text-sm text-sw-grey">Loading payment form...</p>
+          <p className="mt-3 text-sm text-sw-grey">{ui.loadingPaymentForm}</p>
         </div>
       </div>
     )
@@ -639,8 +646,10 @@ export default function InlineTrialCheckout({
         funnel={funnel}
         returnPath={setupPath}
         onSuccess={handleSuccess}
-        submitLabel={submitLabel ?? 'CONFIRM PAYMENT — $1.00'}
+        submitLabel={submitLabel}
         clientSecret={clientSecret}
+        ui={ui}
+        locale={locale}
       />
     </Elements>,
   )

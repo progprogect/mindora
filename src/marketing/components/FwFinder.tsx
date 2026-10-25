@@ -1,5 +1,11 @@
-import { useState } from 'react'
-import { FINDER, FINDER_THEME } from '@/marketing/data/financialWellbeing'
+import { useLayoutEffect, useState } from 'react'
+import {
+  FINDER,
+  FINDER_THEME,
+  financialWellbeingCopy,
+  syncFinancialWellbeingLocale,
+} from '@/marketing/data/financialWellbeing'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 function pickResult(answers: Record<string, string>) {
   const q1 = answers.q1
@@ -12,6 +18,13 @@ function pickResult(answers: Record<string, string>) {
 }
 
 export default function FwFinder() {
+  const { locale } = useI18n()
+  const page = financialWellbeingCopy(locale).page
+
+  useLayoutEffect(() => {
+    syncFinancialWellbeingLocale(locale)
+  }, [locale])
+
   const [step, setStep] = useState<number | 'result'>(1)
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [selected, setSelected] = useState<string | null>(null)
@@ -44,14 +57,10 @@ export default function FwFinder() {
       <div className="mx-auto max-w-2xl px-4 sm:px-6">
         <div className="mb-8 text-center">
           <p className="mb-3 text-sm font-semibold tracking-widest text-sw-amber uppercase">
-            Money Profile Finder
+            {page.finderEyebrow}
           </p>
-          <h2 className="mb-3 text-2xl font-extrabold text-white sm:text-3xl">
-            Find Your Financial Starting Point
-          </h2>
-          <p className="text-base text-white/60">
-            3 quick questions → your personalised course recommendation
-          </p>
+          <h2 className="mb-3 text-2xl font-extrabold text-white sm:text-3xl">{page.finderTitle}</h2>
+          <p className="text-base text-white/60">{page.finderSubtitle}</p>
         </div>
 
         <div className="overflow-hidden rounded-2xl border border-sw-grey-border bg-white shadow-xl">
@@ -69,7 +78,7 @@ export default function FwFinder() {
               <div className="p-6 sm:p-8">
                 <div className="mb-6 flex items-center justify-between">
                   <span className="text-xs font-semibold tracking-wide text-sw-grey uppercase">
-                    Step {step} of 3
+                    {page.finderStep.replace('{step}', String(step))}
                   </span>
                   <div className="flex gap-1.5">
                     {[1, 2, 3].map((n) => (
@@ -134,7 +143,7 @@ export default function FwFinder() {
                     backgroundColor: selected ? undefined : '#E5E7EB',
                   }}
                 >
-                  {step === 3 ? 'See My Recommendation →' : 'Next Question →'}
+                  {step === 3 ? page.finderResult : page.finderNext}
                 </button>
               </div>
             </>
@@ -146,7 +155,7 @@ export default function FwFinder() {
                   className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-bold tracking-wide uppercase"
                   style={{ background: theme.badge, color: theme.text }}
                 >
-                  Your Recommended Path
+                  {page.finderRecommended}
                 </div>
                 <h3 className="mb-3 text-xl font-extrabold text-sw-dark sm:text-2xl">{result.title}</h3>
                 <p className="mx-auto max-w-sm text-sm leading-relaxed text-sw-grey">
@@ -159,7 +168,7 @@ export default function FwFinder() {
               >
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-sm font-bold" style={{ color: theme.text }}>
-                    Start with:
+                    {page.finderStartWith}
                   </span>
                 </div>
                 <div className="text-base font-extrabold text-sw-dark">{result.path}</div>
@@ -179,14 +188,14 @@ export default function FwFinder() {
                 className="mb-3 w-full rounded-xl py-4 text-base font-bold text-white"
                 style={{ background: `linear-gradient(135deg, ${theme.text}, ${theme.text}cc)` }}
               >
-                Start My Path — It&apos;s Free →
+                {page.finderStartCta}
               </button>
               <button
                 type="button"
                 onClick={retake}
                 className="w-full rounded-xl py-3 text-sm font-medium text-sw-grey transition-colors hover:text-sw-dark"
               >
-                ← Retake the quiz
+                {page.finderRetake}
               </button>
             </div>
           ) : null}

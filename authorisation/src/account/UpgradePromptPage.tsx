@@ -11,6 +11,7 @@ import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from 
 import { attributionPayload, track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COMPANY } from '@/shared/company'
+import { useI18n } from '@/i18n/I18nProvider'
 
 const OFFER = 'ultimate-prompt-library-oto'
 const PRICE = 9.97
@@ -31,107 +32,67 @@ const ASSETS = {
 } as const
 
 const VALUE_ROWS = [
-  {
-    emoji: '🔍',
-    title: 'Online Searchable Prompt Library',
-    subtitle: '28,000+ prompts — find the perfect one in seconds',
-    value: '$97',
-  },
-  {
-    emoji: '📚',
-    title: 'Expert PDF Prompt Guides (7 Books)',
-    subtitle: '2,000+ curated prompts, categorised & ready to use',
-    value: '$47',
-  },
-  {
-    emoji: '🎯',
-    title: 'Goal & Productivity Frameworks',
-    subtitle: 'Proven action plans for real results',
-    value: '$29',
-  },
-  {
-    emoji: '✍️',
-    title: 'Content Creation Templates',
-    subtitle: 'Email, social, blog — all done for you',
-    value: '$19',
-  },
+  { emoji: '🔍', titleKey: 'account.prompt.valueRow1Title', subtitleKey: 'account.prompt.valueRow1Sub', value: '$97' },
+  { emoji: '📚', titleKey: 'account.prompt.valueRow2Title', subtitleKey: 'account.prompt.valueRow2Sub', value: '$47' },
+  { emoji: '🎯', titleKey: 'account.prompt.valueRow3Title', subtitleKey: 'account.prompt.valueRow3Sub', value: '$29' },
+  { emoji: '✍️', titleKey: 'account.prompt.valueRow4Title', subtitleKey: 'account.prompt.valueRow4Sub', value: '$19' },
 ] as const
 
-const OFFER_CHECKS = [
-  '28,000+ prompts in searchable online library',
-  '2,000+ curated expert prompts (PDF downloads)',
-  'Works with Claude, ChatGPT, Gemini & all AI',
-  'Lifetime access — no subscription',
+const OFFER_CHECK_KEYS = [
+  'account.prompt.check1',
+  'account.prompt.check2',
+  'account.prompt.check3',
+  'account.prompt.check4',
 ] as const
 
 const HOW_STEPS = [
-  { emoji: '🔍', title: 'Search', subtitle: 'Find the perfect prompt instantly', tone: 'blue' },
-  { emoji: '📋', title: 'Copy', subtitle: 'One click to copy', tone: 'blue' },
-  { emoji: '✅', title: 'Results', subtitle: 'Paste into any AI & go', tone: 'green' },
+  { emoji: '🔍', titleKey: 'account.prompt.howSearchTitle', subtitleKey: 'account.prompt.howSearchSub', tone: 'blue' },
+  { emoji: '📋', titleKey: 'account.prompt.howCopyTitle', subtitleKey: 'account.prompt.howCopySub', tone: 'blue' },
+  { emoji: '✅', titleKey: 'account.prompt.howResultsTitle', subtitleKey: 'account.prompt.howResultsSub', tone: 'green' },
 ] as const
 
 const OUTPUTS = [
-  { src: ASSETS.sales, alt: 'Sales page created with AI prompts', title: 'Sales Pages', caption: 'High-converting copy' },
-  { src: ASSETS.ebook, alt: 'Ebook created with AI prompts', title: 'Guides & Ebooks', caption: 'Expert-level content' },
-  { src: ASSETS.social, alt: 'Social content created with AI prompts', title: 'Social Media', caption: 'Engagement-ready posts' },
+  {
+    src: ASSETS.sales,
+    altKey: 'account.prompt.outputSalesAlt',
+    titleKey: 'account.prompt.outputSalesTitle',
+    captionKey: 'account.prompt.outputSalesCap',
+  },
+  {
+    src: ASSETS.ebook,
+    altKey: 'account.prompt.outputEbookAlt',
+    titleKey: 'account.prompt.outputEbookTitle',
+    captionKey: 'account.prompt.outputEbookCap',
+  },
+  {
+    src: ASSETS.social,
+    altKey: 'account.prompt.outputSocialAlt',
+    titleKey: 'account.prompt.outputSocialTitle',
+    captionKey: 'account.prompt.outputSocialCap',
+  },
 ] as const
 
 const BENEFITS = [
-  {
-    emoji: '🚀',
-    color: 'bg-green-100',
-    title: 'Accelerate Your Learning',
-    desc: 'Extract key insights from any topic instantly with targeted prompts.',
-  },
-  {
-    emoji: '🎯',
-    color: 'bg-purple-100',
-    title: 'Apply Knowledge Immediately',
-    desc: 'Turn what you learn into action plans, summaries, and real outputs.',
-  },
-  {
-    emoji: '✍️',
-    color: 'bg-red-100',
-    title: 'Create Content That Impresses',
-    desc: 'Professional emails, LinkedIn posts, blog outlines — all done.',
-  },
-  {
-    emoji: '⏰',
-    color: 'bg-blue-100',
-    title: 'Save Hours Every Single Week',
-    desc: 'Stop staring at blank screens. Get expert-level results on demand.',
-  },
-  {
-    emoji: '💰',
-    color: 'bg-amber-100',
-    title: 'Generate Real Business Results',
-    desc: 'Sales copy, marketing campaigns, business strategies — ready to deploy.',
-  },
+  { emoji: '🚀', color: 'bg-green-100', titleKey: 'account.prompt.benefit1Title', descKey: 'account.prompt.benefit1Desc' },
+  { emoji: '🎯', color: 'bg-purple-100', titleKey: 'account.prompt.benefit2Title', descKey: 'account.prompt.benefit2Desc' },
+  { emoji: '✍️', color: 'bg-red-100', titleKey: 'account.prompt.benefit3Title', descKey: 'account.prompt.benefit3Desc' },
+  { emoji: '⏰', color: 'bg-blue-100', titleKey: 'account.prompt.benefit4Title', descKey: 'account.prompt.benefit4Desc' },
+  { emoji: '💰', color: 'bg-amber-100', titleKey: 'account.prompt.benefit5Title', descKey: 'account.prompt.benefit5Desc' },
 ] as const
 
-const FAQS = [
-  {
-    question: 'What if I already have prompts?',
-    answer:
-      'These are professionally crafted, categorised, and searchable. No more scrolling through notes or bookmarks — find the exact prompt you need in seconds.',
-  },
-  {
-    question: 'Do I have to pay again later?',
-    answer:
-      'No. This is a one-time payment. You get lifetime access with no recurring fees, ever. The price reverts to $39.95 after this page.',
-  },
-  {
-    question: 'Which AI tools does this work with?',
-    answer:
-      'All of them — Claude, ChatGPT, Gemini, Copilot, Perplexity, and any other AI tool that accepts text prompts.',
-  },
-  {
-    question: 'How do I access the online library?',
-    answer: `Instantly. As soon as your payment is confirmed, you'll have access to search all ${PROMPTS} prompts right inside your ${COMPANY.brandName} dashboard.`,
-  },
+const FAQ_KEYS = [
+  { q: 'account.prompt.faq1Q', a: 'account.prompt.faq1A' },
+  { q: 'account.prompt.faq2Q', a: 'account.prompt.faq2A' },
+  { q: 'account.prompt.faq3Q', a: 'account.prompt.faq3A' },
+  { q: 'account.prompt.faq4Q', a: 'account.prompt.faq4A' },
 ] as const
 
-const CHIPS = ['Instant access', '28,000+ prompts', 'One payment forever', 'Searchable library'] as const
+const CHIP_KEYS = [
+  'account.prompt.chipInstant',
+  'account.prompt.chipPrompts',
+  'account.prompt.chipOnePayment',
+  'account.prompt.chipSearchable',
+] as const
 
 function UnauthRedirect() {
   useEffect(() => {
@@ -144,7 +105,8 @@ function BounceDashboard() {
   useEffect(() => {
     window.location.href = '/app/dashboard'
   }, [])
-  return <AuthSpinner message="Almost there..." />
+  const { t } = useI18n()
+  return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
 function Tick({ className }: { className: string }) {
@@ -247,6 +209,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
+  const { t } = useI18n()
   return (
     <div className="rounded-2xl border-2 border-amber-300 bg-amber-50/30 p-5">
       <div className="flex items-center justify-between mb-3">
@@ -254,26 +217,26 @@ function OfferCard({
           <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-red-500 text-white text-[10px] font-extrabold leading-tight text-center">
             75%
             <br />
-            OFF
+            {t('account.common.off')}
           </span>
           <div>
-            <p className="text-sm font-bold text-green-600">New Member Pricing</p>
+            <p className="text-sm font-bold text-green-600">{t('account.prompt.newMemberPricing')}</p>
             <p className="text-xs text-sw-grey">
-              Reverts to <span className="line-through">${WAS}</span> after setup
+              {t('account.prompt.revertsTo')} <span className="line-through">${WAS}</span> {t('account.prompt.afterSetup')}
             </p>
           </div>
         </div>
         <div className="text-right">
-          <p className="text-xs font-semibold text-amber-600">Today Only</p>
+          <p className="text-xs font-semibold text-amber-600">{t('account.common.todayOnly')}</p>
           <p className="text-3xl font-extrabold text-green-600">${PRICE}</p>
         </div>
       </div>
       <div className="mb-4 py-3 px-4 rounded-xl bg-white border border-sw-grey-border">
         <div className="space-y-2">
-          {OFFER_CHECKS.map((item) => (
+          {OFFER_CHECK_KEYS.map((item) => (
             <div key={item} className="flex items-center gap-2">
               <Tick className="w-4 h-4 text-green-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-sw-dark">{item}</span>
+              <span className="text-xs font-medium text-sw-dark">{t(item)}</span>
             </div>
           ))}
         </div>
@@ -288,10 +251,10 @@ function OfferCard({
         {purchaseState === 'processing' ? (
           <span className="flex items-center justify-center gap-2">
             <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-            Processing...
+            {t('account.common.processing')}
           </span>
         ) : (
-          <span className="flex items-center justify-center gap-2">YES! Give Me Instant Access →</span>
+          <span className="flex items-center justify-center gap-2">{t('account.prompt.yesInstantAccess')}</span>
         )}
       </button>
       <div className="flex items-center justify-center gap-4 mb-3">
@@ -303,29 +266,28 @@ function OfferCard({
               d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
             />
           </svg>
-          Secure Payment
+          {t('account.common.securePayment')}
         </span>
         <span className="flex items-center gap-1 text-[10px] text-sw-grey font-medium">
           <svg className="w-3.5 h-3.5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
-          Instant Access
+          {t('account.common.instantAccess')}
         </span>
         <span className="flex items-center gap-1 text-[10px] text-sw-grey font-medium">
           <svg className="w-3.5 h-3.5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
-          No Subscription
+          {t('account.common.noSubscription')}
         </span>
       </div>
       {errorMessage ? <p className="text-sm text-red-700 text-center font-medium mb-3">{errorMessage}</p> : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
-          By clicking above, <span className="font-bold text-sw-dark">you agree to a one-time charge of ${PRICE}</span>
-          {hasSavedCard
-            ? ' using your saved payment method. Access is granted instantly.'
-            : ' via Stripe. Access is granted after payment.'}{' '}
-          This offer reverts to ${WAS} after you leave this page.
+          {t('account.common.chargeAgreeOneTime')}{' '}
+          <span className="font-bold text-sw-dark">${PRICE}</span>
+          {hasSavedCard ? t('account.common.chargeSavedInstant') : t('account.common.chargeStripeAfter')}{' '}
+          {t('account.common.offerRevertsAfter')} ${WAS} {t('account.common.afterYouLeave')}
         </p>
       </div>
       <div className="text-center">
@@ -335,7 +297,7 @@ function OfferCard({
           onClick={onSkip}
           className="text-sm text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors"
         >
-          No thanks, skip this offer
+          {t('account.common.noThanksSkipOffer')}
         </button>
       </div>
     </div>
@@ -343,6 +305,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
+  const { t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">
@@ -351,14 +314,14 @@ function SuccessScreen() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">Payment Successful!</h2>
-        <p className="text-sw-dark font-semibold text-base mb-1">⚡ Prompt Library Unlocked</p>
+        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">{t('account.common.paymentSuccessful')}</h2>
+        <p className="text-sw-dark font-semibold text-base mb-1">{t('account.prompt.successUnlocked')}</p>
         <p className="text-sw-grey text-sm mb-2">
-          {PROMPTS} prompts are ready in your dashboard. Copy, paste, and get instant results.
+          {t('account.prompt.successBody').replace('{prompts}', PROMPTS)}
         </p>
         <div className="mt-6">
           <div className="w-6 h-6 border-2 border-sw-blue border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-xs text-sw-grey mt-2">Taking you to your next step...</p>
+          <p className="text-xs text-sw-grey mt-2">{t('account.common.takingYouNext')}</p>
         </div>
       </div>
     </div>
@@ -366,6 +329,7 @@ function SuccessScreen() {
 }
 
 export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
+  const { t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -465,20 +429,20 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
     <div className="min-h-screen bg-white overflow-x-hidden">
       <OtoChrome
         activeStep="Upgrades"
-        pillLabel="🔥 New Member Pricing"
-        pillSubLabel="Only available right now"
+        pillLabel={t('account.prompt.pillLabel')}
+        pillSubLabel={t('account.prompt.pillSubLabel')}
         pillClassName="border-2 border-amber-300 bg-amber-50"
       />
       <main className="max-w-2xl mx-auto px-4 pb-32">
         <section className="text-center pt-5 pb-6">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-sw-dark leading-tight mb-3">
-            <span className="text-sw-blue">{PROMPTS}</span> AI Prompts.
+            <span className="text-sw-blue">{PROMPTS}</span> {t('account.prompt.heroTitle')}
             <br />
-            <span className="underline decoration-amber-400 decoration-[3px] underline-offset-4">Instant Results.</span>
+            <span className="underline decoration-amber-400 decoration-[3px] underline-offset-4">
+              {t('account.prompt.heroTitleUnderline')}
+            </span>
           </h1>
-          <p className="text-base text-sw-grey leading-relaxed max-w-md mx-auto">
-            Copy, paste and get better answers, ideas and content in minutes.
-          </p>
+          <p className="text-base text-sw-grey leading-relaxed max-w-md mx-auto">{t('account.prompt.heroSub')}</p>
         </section>
         <div
           className="rounded-2xl overflow-hidden mb-6"
@@ -486,7 +450,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
         >
           <img
             src={ASSETS.books}
-            alt="The Ultimate AI Prompt Library — 8 expert guide books with 28,000+ prompts included"
+            alt={t('account.prompt.heroAlt')}
             className="w-full"
           />
         </div>
@@ -496,7 +460,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
         >
           <p className="text-sm font-extrabold text-sw-dark text-center uppercase tracking-wider mb-5 flex items-center justify-center gap-2">
             <span className="text-sw-blue">✦</span>
-            Works instantly with
+            {t('account.prompt.worksWith')}
             <span className="text-sw-blue">✦</span>
           </p>
           <div className="grid grid-cols-3 gap-4 text-center">
@@ -520,33 +484,40 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
                   clipRule="evenodd"
                 />
               </svg>
-              & every other AI tool
+              {t('account.prompt.everyOtherAi')}
             </span>
           </div>
         </div>
         <section className="mb-6">
-          <h2 className="text-xl font-extrabold text-sw-dark text-center mb-4">Here&apos;s Everything You Get:</h2>
+          <h2 className="text-xl font-extrabold text-sw-dark text-center mb-4">{t('account.prompt.everythingYouGet')}</h2>
           <div className="rounded-2xl border border-sw-grey-border overflow-hidden">
             {VALUE_ROWS.map((row, index) => (
-              <ValueRow key={row.title} {...row} isLast={index === VALUE_ROWS.length - 1} />
+              <ValueRow
+                key={row.titleKey}
+                emoji={row.emoji}
+                title={t(row.titleKey)}
+                subtitle={t(row.subtitleKey)}
+                value={row.value}
+                isLast={index === VALUE_ROWS.length - 1}
+              />
             ))}
           </div>
           <div className="mt-4 text-center">
             <p className="text-sm text-sw-grey">
-              Total Value: <span className="line-through font-semibold">$192</span>
+              {t('account.prompt.totalValue')} <span className="line-through font-semibold">$192</span>
             </p>
             <div className="flex items-center justify-center gap-2 mt-1">
               <span className="text-3xl font-extrabold text-green-600">${PRICE}</span>
-              <span className="text-sm text-sw-grey">one-time payment</span>
+              <span className="text-sm text-sw-grey">{t('account.prompt.oneTimePayment')}</span>
             </div>
-            <p className="text-xs text-sw-grey mt-1 italic">That&apos;s less than a single coffee.</p>
+            <p className="text-xs text-sw-grey mt-1 italic">{t('account.prompt.lessThanCoffee')}</p>
           </div>
         </section>
         <div className="flex items-center justify-center gap-3 py-4 mb-6 rounded-xl bg-sw-blue-light/40 border border-sw-blue-border">
-          <img src={ASSETS.avatars} alt="Happy members" className="h-9 rounded-full" />
+          <img src={ASSETS.avatars} alt={t('account.prompt.happyMembersAlt')} className="h-9 rounded-full" />
           <div>
-            <span className="text-sm font-bold text-sw-dark">100,000+ members</span>
-            <span className="text-sm text-sw-grey"> already using this</span>
+            <span className="text-sm font-bold text-sw-dark">{t('account.welcome.membersCount')}</span>
+            <span className="text-sm text-sw-grey">{t('account.prompt.membersUsing')}</span>
           </div>
         </div>
         <div className="flex items-center justify-center gap-2 mb-6">
@@ -558,7 +529,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
             ))}
           </div>
           <span className="text-sm font-semibold text-sw-dark">4.9/5</span>
-          <span className="text-xs text-sw-grey">(2,847 ratings)</span>
+          <span className="text-xs text-sw-grey">{t('account.prompt.ratings')}</span>
         </div>
         <div ref={offerRef}>
           <OfferCard
@@ -570,11 +541,13 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
           />
         </div>
         <section className="mt-10 mb-8">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark text-center leading-tight mb-6">How It Works</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark text-center leading-tight mb-6">
+            {t('account.prompt.howItWorks')}
+          </h2>
           <div className="rounded-2xl p-6" style={{ background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)' }}>
             <div className="grid grid-cols-3 gap-3 text-center">
               {HOW_STEPS.map((step) => (
-                <div key={step.title}>
+                <div key={step.titleKey}>
                   <div
                     className={`w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 ${
                       step.tone === 'green'
@@ -584,61 +557,79 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
                   >
                     <span className="text-2xl">{step.emoji}</span>
                   </div>
-                  <p className="text-white font-bold text-sm">{step.title}</p>
-                  <p className="text-gray-400 text-xs mt-1">{step.subtitle}</p>
+                  <p className="text-white font-bold text-sm">{t(step.titleKey)}</p>
+                  <p className="text-gray-400 text-xs mt-1">{t(step.subtitleKey)}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Real Outputs From These Prompts</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">{t('account.prompt.realOutputs')}</h2>
           <div className="grid grid-cols-3 gap-2 rounded-2xl overflow-hidden border border-sw-grey-border p-3 bg-gray-50">
             {OUTPUTS.map((item) => (
-              <div key={item.title} className="text-center">
+              <div key={item.titleKey} className="text-center">
                 <div className="aspect-[3/4] rounded-lg overflow-hidden mb-1.5 bg-white border border-gray-200">
-                  <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
+                  <img src={item.src} alt={t(item.altKey)} className="w-full h-full object-cover" />
                 </div>
-                <p className="text-[10px] font-bold text-sw-dark uppercase tracking-wide">{item.title}</p>
-                <p className="text-[9px] text-sw-grey">{item.caption}</p>
+                <p className="text-[10px] font-bold text-sw-dark uppercase tracking-wide">{t(item.titleKey)}</p>
+                <p className="text-[9px] text-sw-grey">{t(item.captionKey)}</p>
               </div>
             ))}
           </div>
         </section>
         <section className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark text-center leading-tight mb-1">
-            Create Expert-Level Content{' '}
+            {t('account.prompt.createExpert')}{' '}
             <span
               className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, hsl(var(--sw-blue)), hsl(270, 70%, 55%))' }}
             >
-              In Minutes
+              {t('account.prompt.inMinutes')}
             </span>
           </h2>
-          <p className="text-sm text-sw-grey text-center mb-6">Not hours. Not days. Minutes.</p>
+          <p className="text-sm text-sw-grey text-center mb-6">{t('account.prompt.notHours')}</p>
           <div className="rounded-2xl border border-sw-grey-border p-5 bg-white space-y-4">
             {BENEFITS.map((item) => (
-              <Benefit key={item.title} {...item} />
+              <Benefit
+                key={item.titleKey}
+                emoji={item.emoji}
+                color={item.color}
+                title={t(item.titleKey)}
+                desc={t(item.descKey)}
+              />
             ))}
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-xl font-extrabold text-sw-dark text-center mb-4">Quick Questions</h2>
+          <h2 className="text-xl font-extrabold text-sw-dark text-center mb-4">{t('account.prompt.quickQuestions')}</h2>
           <div className="space-y-3">
-            {FAQS.map((item) => (
-              <FaqItem key={item.question} question={item.question} answer={item.answer} />
+            {FAQ_KEYS.map((item) => (
+              <FaqItem
+                key={item.q}
+                question={t(item.q)}
+                answer={
+                  item.a === 'account.prompt.faq4A'
+                    ? t(item.a).replace('{prompts}', PROMPTS).replace('{brand}', COMPANY.brandName)
+                    : t(item.a)
+                }
+              />
             ))}
           </div>
         </section>
         <section className="mb-6">
           <div className="text-center mb-4">
-            <img src={ASSETS.people} alt="Members getting results" className="w-full max-w-xs mx-auto rounded-2xl" />
-            <p className="text-xs text-sw-grey mt-2 font-medium">Join thousands already getting better results with AI</p>
+            <img
+              src={ASSETS.people}
+              alt={t('account.prompt.membersResultsAlt')}
+              className="w-full max-w-xs mx-auto rounded-2xl"
+            />
+            <p className="text-xs text-sw-grey mt-2 font-medium">{t('account.prompt.joinThousands')}</p>
           </div>
           <div className="text-center mb-4 py-3 px-4 rounded-xl bg-red-50 border border-red-200">
-            <p className="text-sm font-bold text-red-700">⚠️ This price is only available right now</p>
+            <p className="text-sm font-bold text-red-700">{t('account.prompt.priceOnlyNow')}</p>
             <p className="text-xs text-red-600 mt-1">
-              After setup, this offer reverts to ${WAS}. This is a genuine one-time discount.
+              {t('account.prompt.priceRevertNote').replace('${was}', `$${WAS}`)}
             </p>
           </div>
           <OfferCard
@@ -649,8 +640,8 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
             onSkip={skip}
           />
           <div className="flex flex-wrap justify-center gap-2 mt-5">
-            {CHIPS.map((label) => (
-              <Chip key={label} label={label} />
+            {CHIP_KEYS.map((label) => (
+              <Chip key={label} label={t(label)} />
             ))}
           </div>
           <div className="text-center mt-6">
@@ -659,7 +650,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
               onClick={skip}
               className="text-sm text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors"
             >
-              No thanks, skip this offer
+              {t('account.common.noThanksSkipOffer')}
             </button>
           </div>
         </section>
@@ -669,7 +660,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
           <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
             <div className="flex flex-col">
               <div className="flex items-baseline gap-1">
-                <span className="text-sm font-semibold text-sw-grey">Only</span>
+                <span className="text-sm font-semibold text-sw-grey">{t('account.common.only')}</span>
                 <span className="font-extrabold text-xl text-sw-dark">${PRICE}</span>
               </div>
               <button
@@ -677,7 +668,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
                 onClick={skip}
                 className="text-[11px] text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors text-left"
               >
-                Skip offer →
+                {t('account.common.skipOfferArrow')}
               </button>
             </div>
             <button
@@ -686,7 +677,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
               disabled={state === 'processing'}
               className="px-7 py-3 bg-sw-blue hover:bg-sw-blue-hover text-white text-base font-bold rounded-full transition-all active:scale-95 disabled:opacity-60 whitespace-nowrap"
             >
-              {state === 'processing' ? 'Processing...' : 'Get Instant Access →'}
+              {state === 'processing' ? t('account.common.processing') : t('account.prompt.getInstantAccess')}
             </button>
           </div>
           <div style={{ paddingBottom: 'env(safe-area-inset-bottom)', backgroundColor: 'white' }} />

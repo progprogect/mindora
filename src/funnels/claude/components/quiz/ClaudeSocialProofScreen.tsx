@@ -1,5 +1,7 @@
 import AssetImage from '@/shared/components/AssetImage'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
 import type { ClaudeQuizAnswers, ClaudeSocialProofScreenDef } from '@/funnels/claude/types/claudeQuiz'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeSocialProofScreenProps {
   screen: ClaudeSocialProofScreenDef
@@ -12,6 +14,8 @@ const AVATAR_LETTERS = ['S', 'A', 'M', 'J', 'R']
 
 /** Port of `r()` (`SocialProofScreen-*.js`) — Claude sparkles icon, avatar stack, identity echo copy. */
 export default function ClaudeSocialProofScreen({ screen, answers, onContinue }: ClaudeSocialProofScreenProps) {
+  const { locale } = useI18n()
+  const ui = claudeQuizUiCopy(locale).socialProof
   const echoValue = screen.echoKey ? answers[screen.echoKey] : undefined
   const headline = (echoValue && screen.echoHeadline?.[echoValue]) || screen.headline
   const copy = (echoValue && screen.echoCopy?.[echoValue]) || screen.copy
@@ -22,7 +26,7 @@ export default function ClaudeSocialProofScreen({ screen, answers, onContinue }:
         <div className="mb-6">
           <AssetImage
             src="/assets/claude-icon-sparkles.png"
-            alt="Claude AI"
+            alt={ui.claudeAlt}
             fallbackEmoji="✨"
             className="h-auto w-28"
           />
@@ -48,7 +52,7 @@ export default function ClaudeSocialProofScreen({ screen, answers, onContinue }:
               </div>
             ))}
           </div>
-          <p className="text-xs font-medium text-sw-grey">Joined this week</p>
+          <p className="text-xs font-medium text-sw-grey">{ui.joinedThisWeek}</p>
         </div>
 
         {copy ? <p className="mb-8 max-w-xs text-center text-sm text-sw-grey">{copy}</p> : null}
@@ -59,7 +63,7 @@ export default function ClaudeSocialProofScreen({ screen, answers, onContinue }:
               <span key={i}>★</span>
             ))}
           </span>
-          <span className="ml-1 text-xs font-medium text-sw-grey">4.9 / 5 from 12,400+ learners</span>
+          <span className="ml-1 text-xs font-medium text-sw-grey">{ui.rating}</span>
         </div>
       </div>
 

@@ -65,6 +65,7 @@ export const profiles = pgTable(
     funnelSource: text('funnel_source'),
     joinDate: timestamp('join_date', { withTimezone: true }).notNull().defaultNow(),
     planTier: text('plan_tier'),
+    locale: text('locale').notNull().default('en'),
     quizAnswers: jsonb('quiz_answers'),
     quizRole: text('quiz_role'),
     stripeCustomerId: text('stripe_customer_id'),

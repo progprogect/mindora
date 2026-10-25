@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import Logo from './Logo'
 import {
   FOOTER_COMPANY,
   FOOTER_LEARN,
   FOOTER_LEGAL,
   FOOTER_PLATFORM,
+  NAV_COPY,
   ROUTES,
+  type NavKey,
 } from '@/marketing/data/nav'
 
 const SOCIAL = [
@@ -18,23 +21,25 @@ const SOCIAL = [
 function FooterCol({
   title,
   links,
+  label,
 }: {
   title: string
-  links: readonly { label: string; href: string }[]
+  links: readonly { key: NavKey; href: string }[]
+  label: (key: NavKey) => string
 }) {
   return (
     <div>
       <h3 className="mb-4 text-sm font-semibold tracking-wide text-white uppercase">{title}</h3>
       <ul className="flex flex-col gap-2.5">
         {links.map((link) => (
-          <li key={`${title}-${link.label}`}>
+          <li key={`${title}-${link.key}`}>
             {link.href === '#' ? (
               <a href="#" className="text-sm transition-colors hover:text-white">
-                {link.label}
+                {label(link.key)}
               </a>
             ) : (
               <Link to={link.href} className="text-sm transition-colors hover:text-white">
-                {link.label}
+                {label(link.key)}
               </Link>
             )}
           </li>
@@ -45,18 +50,18 @@ function FooterCol({
 }
 
 export default function MarketingFooter() {
+  const { locale } = useI18n()
+  const copy = NAV_COPY[locale]
+  const label = (key: NavKey) => copy[key]
   return (
     <footer className="bg-sw-dark py-16 text-white/60">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-            <Link to={ROUTES.home} aria-label="MindoraAcademy.com home">
+            <Link to={ROUTES.home} aria-label={copy.homeAria}>
               <Logo variant="light" />
             </Link>
-            <p className="mt-4 mb-4 max-w-xs text-sm leading-relaxed">
-              Helping people become healthier, wealthier, and more successful through bite-sized
-              education that creates real results.
-            </p>
+            <p className="mt-4 mb-4 max-w-xs text-sm leading-relaxed">{copy.blurb}</p>
             <div className="flex gap-3">
               {SOCIAL.map((item) => (
                 <div
@@ -70,17 +75,15 @@ export default function MarketingFooter() {
             </div>
           </div>
 
-          <FooterCol title="PLATFORM" links={FOOTER_PLATFORM} />
-          <FooterCol title="LEARN" links={FOOTER_LEARN} />
-          <FooterCol title="COMPANY" links={FOOTER_COMPANY} />
-          <FooterCol title="LEGAL" links={FOOTER_LEGAL} />
+          <FooterCol title={copy.platform} links={FOOTER_PLATFORM} label={label} />
+          <FooterCol title={copy.learn} links={FOOTER_LEARN} label={label} />
+          <FooterCol title={copy.company} links={FOOTER_COMPANY} label={label} />
+          <FooterCol title={copy.legal} links={FOOTER_LEGAL} label={label} />
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-white/30">© 2026 MindoraAcademy.com — All rights reserved.</p>
-          <p className="text-center text-xs text-white/30 sm:text-right">
-            Built for people who want a better life. Starting today.
-          </p>
+          <p className="text-xs text-white/30">{copy.rights}</p>
+          <p className="text-center text-xs text-white/30 sm:text-right">{copy.tagline}</p>
         </div>
       </div>
     </footer>

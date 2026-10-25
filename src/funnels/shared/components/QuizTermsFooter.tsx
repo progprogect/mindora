@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface QuizTermsFooterProps {
   /** Master-* identity uses 404 `/terms` and `/privacy` — copy as on prod. */
@@ -14,28 +16,28 @@ export default function QuizTermsFooter({
   merchant = false,
   className = 'mt-4 px-2 text-center',
 }: QuizTermsFooterProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const termsTo = brokenLegal ? '/terms' : '/terms-and-conditions'
   const privacyTo = brokenLegal ? '/privacy' : '/privacy-policy'
 
   return (
     <div className={className}>
       <p className="text-[11px] leading-relaxed text-sw-grey">
-        By proceeding, you agree {agreeWith ? 'with' : 'to the'}{' '}
+        {ui.termsAgreePrefix(agreeWith)}{' '}
         <Link to={termsTo} className="text-sw-blue underline hover:text-sw-blue-hover">
-          Terms and Conditions
+          {ui.termsAndConditions}
         </Link>
         ,{' '}
         <Link to={privacyTo} className="text-sw-blue underline hover:text-sw-blue-hover">
-          Privacy Policy
+          {ui.privacyPolicy}
         </Link>
         ,{' '}
         <Link to="/subscription-terms" className="text-sw-blue underline hover:text-sw-blue-hover">
-          Subscription Terms
+          {ui.subscriptionTerms}
         </Link>
       </p>
-      {merchant ? (
-        <p className="mt-2 text-[11px] text-sw-grey">Scalion Ltd T/A. MindoraAcademy.com</p>
-      ) : null}
+      {merchant ? <p className="mt-2 text-[11px] text-sw-grey">{ui.merchantLine}</p> : null}
     </div>
   )
 }

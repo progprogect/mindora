@@ -63,12 +63,12 @@ purchaseRoutes.get('/certificates', requireAuth, async (c) => {
 
 purchaseRoutes.get('/planners/download', requireAuth, async (c) => {
   const planner = c.req.query('planner') ?? ''
-  if (!isPlannerId(planner)) return c.json({ error: 'Not found' }, 404)
+  if (!isPlannerId(planner)) return c.json({ error: 'Not found', code: 'not_found' }, 404)
   if (!(await hasSku(c.get('userId'), `planner-${planner}`))) {
-    return c.json({ error: 'Forbidden' }, 403)
+    return c.json({ error: 'Forbidden', code: 'forbidden' }, 403)
   }
   const absPath = plannerPdfPath(planner)
-  if (!absPath) return c.json({ error: 'Not found' }, 404)
+  if (!absPath) return c.json({ error: 'Not found', code: 'not_found' }, 404)
   const stats = statSync(absPath)
   c.header('Content-Type', 'application/pdf')
   c.header('Content-Disposition', `attachment; filename="${planner}.pdf"`)

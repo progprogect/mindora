@@ -12,9 +12,10 @@ import {
   type CourseModule,
 } from '@/content/catalog'
 import { useCourse } from '@/content/useCourse'
-import { CATEGORY_LABEL } from '@/content/lms'
-import { PROGRESS_COURSES } from '@/content/progress-catalog'
+import { categoryLabel } from '@/content/lms'
+import { progressCourses } from '@/content/progress-catalog'
 import registry from '@/content/course-registry.json'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useProgress } from '@/lib/lmsQueries'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
@@ -28,6 +29,7 @@ const MODULE_THEMES = [
 ]
 
 export default function CourseHubPage() {
+  const { t, locale } = useI18n()
   const { slug = '' } = useParams()
   const course = useCourse(slug)
   const progress = useProgress()
@@ -36,10 +38,10 @@ export default function CourseHubPage() {
     return (
       <main className="max-w-2xl mx-auto px-4 pt-8 pb-36 text-center">
         <p className="text-4xl">🔒</p>
-        <h1 className="text-xl font-extrabold mt-3">Coming soon</h1>
-        <p className="text-sm text-sw-grey mt-2">This course isn&apos;t live yet.</p>
+        <h1 className="text-xl font-extrabold mt-3">{t('app.common.comingSoon')}</h1>
+        <p className="text-sm text-sw-grey mt-2">{t('app.common.courseNotLive')}</p>
         <Link to="/app/ai-and-technology" className="inline-block mt-4 font-bold text-sw-blue">
-          Back to Learn
+          {t('app.common.backToLearn')}
         </Link>
       </main>
     )
@@ -53,11 +55,11 @@ export default function CourseHubPage() {
     )
   }
 
-  const hub = getHub(slug)
-  const catalog = PROGRESS_COURSES[slug]
+  const hub = getHub(slug, locale)
+  const catalog = progressCourses(locale)[slug]
   const categoryKey = (registry as Record<string, { category?: string }>)[slug]?.category || 'ai-and-technology'
   const categoryHref = `/app/${categoryKey}`
-  const categoryLabel = catalog?.category || CATEGORY_LABEL[categoryKey] || 'Learn'
+  const categoryLabelText = catalog?.category || categoryLabel(locale, categoryKey) || t('lms.fallback.learn')
   const done = new Set(
     progress.lessons.filter((row) => row.courseId === slug && row.status === 'completed').map((row) => row.lessonSlug),
   )
@@ -70,7 +72,7 @@ export default function CourseHubPage() {
   const remaining = Math.max(0, course.totalDays - completedCount)
   const pct = Math.round((completedCount / course.totalDays) * 100)
   const unit = (hub.unitLabel as string) || 'days'
-  const unitTitle = unit === 'days' ? 'Days' : 'Lessons'
+  const unitTitle = unit === 'days' ? t('app.courseHub.unitDays') : t('app.courseHub.unitLessons')
   const badge = hub.badge as { icon?: string; label?: string } | null
   const outcomes = (hub.outcomeBullets as Array<{ icon: string; text: string }>) || []
   const includes = (hub.includes as Array<{ icon: string; text: string }>)?.length
@@ -80,17 +82,17 @@ export default function CourseHubPage() {
   const continueHref = `/app/courses/${slug}/${next.id}`
   const started = completedCount > 0 || Boolean(preferSlug)
   const ctaLong = started
-    ? `Continue — ${unitTitle.slice(0, -1)} ${next.dayNumber}: ${next.title} →`
-    : `Start — ${unitTitle.slice(0, -1)} ${next.dayNumber}: ${next.title} →`
-  const ctaShort = started ? `Continue — ${unitTitle.slice(0, -1)} ${next.dayNumber} →` : `Start — ${unitTitle.slice(0, -1)} ${next.dayNumber} →`
+    ? t('app.courseHub.continueCta').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(next.dayNumber)).replace('{title}', next.title)
+    : t('app.courseHub.startCta').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(next.dayNumber)).replace('{title}', next.title)
+  const ctaShort = started
+    ? t('app.courseHub.continueShort').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(next.dayNumber))
+    : t('app.courseHub.startShort').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(next.dayNumber))
   const description = String(hub.description || course.subtitle || '')
   const socialProof = String(hub.socialProof || '')
-  const certificateChip = String(hub.certificateChip || `${course.title} Certificate`)
+  const certificateChip = String(hub.certificateChip || `${course.title}${t('app.courseHub.certificateSuffix')}`)
   const streak = progress.user.streakCount
   const meta = hubChrome.testimonialMeta
-  const mindoraTask = started
-    ? "You've made a strong start. Mindora can help you stay consistent and go deeper."
-    : 'Mindora can help you stay consistent and go deeper.'
+  const mindoraTask = started ? t('app.courseHub.mindoraTaskStarted') : t('app.courseHub.mindoraTaskNew')
   const mindoraHref = `/app/mindora?lesson=${encodeURIComponent(course.title)}&task=${encodeURIComponent(mindoraTask)}`
 
   return (
@@ -115,7 +117,7 @@ export default function CourseHubPage() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-14 sm:pb-16">
           <nav className="flex items-center gap-2 text-white/60 text-xs font-medium mb-6" aria-label="Breadcrumb">
             <Link to={categoryHref} className="hover:text-white/90 transition-colors">
-              {categoryLabel}
+              {categoryLabelText}
             </Link>
             <span>/</span>
             <span className="text-white/90">{course.title}</span>
@@ -139,7 +141,7 @@ export default function CourseHubPage() {
                 </HeroChip>
                 <HeroChip>
                   <span>📚</span>
-                  {course.modules.length} Modules
+                  {course.modules.length} {t('app.common.modules')}
                 </HeroChip>
                 <HeroChip>
                   <span>⚡</span>
@@ -153,14 +155,14 @@ export default function CourseHubPage() {
                 ) : null}
                 {streak > 0 ? (
                   <span className="inline-flex items-center gap-1.5 bg-sw-amber/20 border border-sw-amber/40 text-sw-amber text-xs font-bold px-3 py-1.5 rounded-full animate-pulse">
-                    🔥 {streak}-day streak
+                    {t('app.courseHub.dayStreak').replace('{n}', String(streak))}
                   </span>
                 ) : null}
               </div>
               <div className="mb-6">
                 <div className="flex justify-between text-white/70 text-xs font-medium mb-2">
                   <span>
-                    {unitTitle.slice(0, -1)} {completedCount} of {course.totalDays} complete
+                    {t('app.courseHub.completeOf').replace('{unit}', unitTitle.slice(0, -1)).replace('{done}', String(completedCount)).replace('{total}', String(course.totalDays))}
                   </span>
                   <span>{pct}%</span>
                 </div>
@@ -170,7 +172,7 @@ export default function CourseHubPage() {
                   aria-valuenow={pct}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  aria-label={`Course progress: ${pct}%`}
+                  aria-label={t('app.courseHub.courseProgressAria').replace('{pct}', String(pct))}
                 >
                   <div className="h-full bg-white rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
                 </div>
@@ -182,12 +184,12 @@ export default function CourseHubPage() {
                 {ctaLong}
               </Link>
               <p className="text-white/50 text-xs mt-3">
-                ✅ {completedCount} lessons complete · ⚡ {xpEarned} XP earned
+                ✅ {t('app.courseHub.lessonsComplete').replace('{n}', String(completedCount))} · {t('app.courseHub.xpEarnedLine').replace('{xp}', String(xpEarned))}
               </p>
             </div>
             <div className="hidden lg:flex justify-center items-center">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-72">
-                <div className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4">Course includes</div>
+                <div className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4">{t('app.courseHub.courseIncludes')}</div>
                 {includes.map((item) => (
                   <div key={item.text} className="flex items-start gap-3 mb-3 last:mb-0">
                     <span className="text-lg mt-0.5 shrink-0">{item.icon}</span>
@@ -207,10 +209,10 @@ export default function CourseHubPage() {
       <section className="bg-sw-dark py-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-3">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <DarkStat emoji="🔥" n={streak} label="Day streak" />
-            <DarkStat emoji="⚡" n={xpEarned} label={`of ${course.totalXp} XP`} />
-            <DarkStat emoji="✅" n={completedCount} label={`${unitTitle} complete`} />
-            <DarkStat emoji="📅" n={remaining} label={`${unitTitle} remaining`} />
+            <DarkStat emoji="🔥" n={streak} label={t('app.common.dayStreak')} />
+            <DarkStat emoji="⚡" n={xpEarned} label={t('app.courseHub.ofTotalXp').replace('{xp}', String(course.totalXp))} />
+            <DarkStat emoji="✅" n={completedCount} label={t('app.courseHub.completeUnit').replace('{unit}', unitTitle)} />
+            <DarkStat emoji="📅" n={remaining} label={t('app.courseHub.remainingUnit').replace('{unit}', unitTitle)} />
           </div>
           <Link
             to={mindoraHref}
@@ -221,7 +223,7 @@ export default function CourseHubPage() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-white/90 text-xs font-semibold leading-snug">{mindoraTask}</p>
-              <p className="text-white/40 text-[10px] mt-0.5">Tap to chat with Mindora →</p>
+              <p className="text-white/40 text-[10px] mt-0.5">{t('app.courseHub.tapChatMindora')}</p>
             </div>
           </Link>
         </div>
@@ -256,7 +258,7 @@ export default function CourseHubPage() {
                 </div>
                 <div className="text-white font-extrabold text-xl sm:text-2xl leading-tight mb-2">{course.title}</div>
                 <div className="text-white/60 text-xs mb-4">
-                  Awarded to <span className="italic text-white/30">{hubChrome.certificateDefaults.awardedToPlaceholder}</span>
+                  {t('app.courseHub.awardedTo')} <span className="italic text-white/30">{hubChrome.certificateDefaults.awardedToPlaceholder}</span>
                 </div>
                 <div className="text-white/40 text-xs leading-relaxed max-w-xs mx-auto">{String(hub.certificateDescription)}</div>
               </div>
@@ -264,7 +266,7 @@ export default function CourseHubPage() {
                 <div>
                   <div className="flex justify-between text-xs font-semibold text-sw-grey mb-2">
                     <span>
-                      🔒 {remaining} {unit} remaining to unlock
+                      {t('app.courseHub.remainingUnlock').replace('{n}', String(remaining)).replace('{unit}', unit)}
                     </span>
                     <span className="text-sw-blue">{pct}%</span>
                   </div>
@@ -274,12 +276,12 @@ export default function CourseHubPage() {
                     aria-valuenow={pct}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label={`Course completion: ${pct}%`}
+                    aria-label={t('app.courseHub.courseCompletionAria').replace('{pct}', String(pct))}
                   >
                     <div className="h-full bg-sw-blue rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
                   </div>
                   <p className="text-sw-grey text-xs mt-2 text-center">
-                    {started ? `${unitTitle.slice(0, -1)} ${completedCount} complete — keep going!` : 'Your certificate is waiting.'}
+                    {started ? t('app.courseHub.keepGoingCert').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(completedCount)) : t('app.courseHub.certWaiting')}
                   </p>
                 </div>
               </div>
@@ -324,9 +326,9 @@ export default function CourseHubPage() {
               <div className="flex items-center gap-4 p-4 rounded-2xl border-2 transition-all border-dashed border-sw-grey-border bg-sw-grey-light opacity-70">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 bg-sw-grey-border">🎓</div>
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-sw-grey mb-0.5">Final Goal</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-sw-grey mb-0.5">{t('app.courseHub.finalGoal')}</div>
                   <div className="text-sm font-extrabold text-sw-dark">{certificateChip}</div>
-                  <div className="text-xs text-sw-grey mt-0.5">Complete all {course.totalDays} lessons to earn your certificate</div>
+                  <div className="text-xs text-sw-grey mt-0.5">{t('app.courseHub.completeAllLessons').replace('{n}', String(course.totalDays))}</div>
                 </div>
               </div>
             </div>
@@ -387,7 +389,7 @@ export default function CourseHubPage() {
       <section className="py-14 sm:py-18 bg-sw-blue">
         <div className="max-w-xl mx-auto px-4 sm:px-6 text-center">
           <div className="text-4xl mb-4">🚀</div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">{hub.ctaH2 || 'Ready to start?'}</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">{hub.ctaH2 || t('app.courseHub.readyStart')}</h2>
           <p className="text-white/75 text-sm sm:text-base mb-7 leading-relaxed">{hub.ctaBody || course.subtitle}</p>
           <Link
             to={continueHref}
@@ -419,6 +421,7 @@ function ModuleBlock({
   nextId: string
   unit: string
 }) {
+  const { t } = useI18n()
   const theme = MODULE_THEMES[index % MODULE_THEMES.length]
   const ids = moduleLessonIds(course, module)
   const moduleDone = ids.filter((id) => done.has(id)).length
@@ -440,7 +443,7 @@ function ModuleBlock({
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-sw-grey">Module {number}</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-sw-grey">{t('app.common.module')} {number}</span>
             {module.days ? (
               <>
                 <span className="text-[10px] text-sw-grey">·</span>
@@ -457,7 +460,7 @@ function ModuleBlock({
           <div className="text-xs font-bold text-sw-dark">
             {moduleDone}/{ids.length || module.lessons?.length || 0}
           </div>
-          <div className="text-[10px] text-sw-grey">lessons</div>
+          <div className="text-[10px] text-sw-grey">{t('app.courseHub.lessonsLabel')}</div>
         </div>
       </div>
       <div className="space-y-2 pl-2 sm:pl-4 border-l-2 border-sw-grey-border ml-5">
@@ -500,6 +503,7 @@ function LessonRow({
   emoji: string
   unit: string
 }) {
+  const { t } = useI18n()
   const href = `/app/courses/${slug}/${lesson.id}`
   const xp = lessonXp(lesson)
   const duration = lesson.duration || '5 min'
@@ -522,7 +526,7 @@ function LessonRow({
             </div>
             <div className="min-w-0 flex-1">
               <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey mb-0.5">
-                {unit} {lesson.dayNumber} · Module Checkpoint
+                {unit} {lesson.dayNumber} · {t('app.courseHub.moduleCheckpoint')}
               </div>
               <div className={`text-sm font-extrabold leading-snug ${complete || isNext ? 'text-sw-dark' : 'text-sw-grey'}`}>{lesson.title}</div>
               <div className="flex items-center gap-2 mt-1">
@@ -530,7 +534,7 @@ function LessonRow({
                 <span className="text-[10px] font-bold text-sw-amber">⚡ {xp} XP</span>
               </div>
             </div>
-            {isNext ? <div className="bg-sw-blue text-white text-[9px] font-bold px-2 py-1 rounded-full">Next</div> : null}
+            {isNext ? <div className="bg-sw-blue text-white text-[9px] font-bold px-2 py-1 rounded-full">{t('app.common.next')}</div> : null}
           </div>
         </Link>
       </div>

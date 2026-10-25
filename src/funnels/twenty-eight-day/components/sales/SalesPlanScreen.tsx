@@ -1,12 +1,15 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { QuizAnswers, QuizProfile } from '@/funnels/twenty-eight-day/types/quiz'
 import { expiredPickerPlans, formatUsd, planMeta, type PlanView } from '@/funnels/twenty-eight-day/data/plans'
+import { salesPlanCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
 import { getCheckoutSessionKey } from '@/shared/lib/checkoutSession'
 import { trackEvent } from '@/shared/lib/tracking'
 import { getAnswerLabel } from '@/funnels/twenty-eight-day/lib/scoring'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
-import { MONEY_BACK_TITLE } from '@/marketing/data/moneyBack'
+import { moneyBackCopy } from '@/marketing/data/moneyBack'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface SalesPlanScreenProps {
   profile: QuizProfile
@@ -59,35 +62,6 @@ const PLAN_DAYS = [
   { day: 18, faded: true },
 ]
 
-const INCLUDED = [
-  '28 structured daily AI lessons (just 10 min/day)',
-  '150+ AI tools, templates & prompts library',
-  'Certificate of completion',
-  'New content added every week',
-  'Cancel anytime — no lock-in',
-]
-
-const MEMBER_TESTIMONIALS = [
-  {
-    name: 'Sophie R.',
-    role: 'Marketing Manager',
-    stars: 5,
-    quote: 'I went from knowing nothing about AI to building my own automated workflows in 28 days. Game-changer.',
-  },
-  {
-    name: 'Marcus T.',
-    role: 'Business Owner',
-    stars: 5,
-    quote: 'The daily structure kept me consistent. By week 2 I was saving 3 hours a day at work.',
-  },
-  {
-    name: 'Claire N.',
-    role: 'Operations Lead',
-    stars: 5,
-    quote: 'I was sceptical at first. Now I use AI every single day and my boss has noticed.',
-  },
-]
-
 const LIVE_HANDLES = [
   'sarah.m***',
   'james.k***',
@@ -101,21 +75,6 @@ const LIVE_HANDLES = [
   'ryan.h***',
   'zoe.p***',
   'ben.s***',
-]
-
-const LIVE_MINUTES = [
-  '1 min ago',
-  '2 min ago',
-  '3 min ago',
-  '4 min ago',
-  '5 min ago',
-  '6 min ago',
-  '7 min ago',
-  '8 min ago',
-  '9 min ago',
-  '10 min ago',
-  '11 min ago',
-  '12 min ago',
 ]
 
 function pad2(value: number): string {
@@ -136,35 +95,39 @@ function ExpiredPlanPicker({
   selectedPlanId,
   onSelect,
   onStart,
+  locale,
+  copy,
 }: {
   plans: PlanView[]
   selectedPlanId: string | undefined
   onSelect: (id: string) => void
   onStart: () => void
+  locale: FunnelLocale
+  copy: ReturnType<typeof salesPlanCopy>
 }) {
   const selected = plans.find((p) => p.id === selectedPlanId) ?? plans[0]
-  const meta = selected ? planMeta(selected) : null
+  const meta = selected ? planMeta(selected, locale) : null
   const periodPrice = selected ? selected.price : 0
   const monthly = selected && meta ? periodPrice / meta.months : 0
 
   return (
     <div className="mx-auto max-w-lg px-4 pb-6">
-      <h2 className="mb-1 text-center text-xl font-extrabold text-sw-dark">Choose your plan</h2>
+      <h2 className="mb-1 text-center text-xl font-extrabold text-sw-dark">{copy.choosePlan}</h2>
       <div className="mb-4 flex flex-col items-center gap-3">
-        <p className="text-center text-sm text-sw-grey">Select a plan to start your journey</p>
+        <p className="text-center text-sm text-sw-grey">{copy.selectPlan}</p>
         <button
           type="button"
           onClick={() => window.location.reload()}
           className="inline-flex cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-sw-blue transition-opacity hover:opacity-90"
           style={{ backgroundColor: 'hsl(var(--sw-blue-light))' }}
         >
-          🔄 Refresh page to unlock a new discount
+          {copy.refreshDiscount}
         </button>
       </div>
 
       <div className="mb-4 flex flex-col gap-3">
         {plans.map((plan) => {
-          const display = planMeta(plan)
+          const display = planMeta(plan, locale)
           const isSelected = plan.id === selected?.id
           const perMonth = plan.price / display.months
 
@@ -187,7 +150,7 @@ function ExpiredPlanPicker({
                   className="py-1 text-center text-[11px] font-bold tracking-wider text-sw-white uppercase"
                   style={{
                     backgroundColor:
-                      display.badge === 'BEST VALUE' ? 'hsl(var(--sw-success))' : 'hsl(var(--sw-blue))',
+                      plan.badge === 'BEST VALUE' ? 'hsl(var(--sw-success))' : 'hsl(var(--sw-blue))',
                   }}
                 >
                   {display.badge}
@@ -212,7 +175,7 @@ function ExpiredPlanPicker({
                   <div className="flex items-baseline gap-0.5">
                     <span className="text-sm font-medium text-sw-grey">$</span>
                     <span className="text-2xl font-extrabold text-sw-dark">{(perMonth / 100).toFixed(2)}</span>
-                    <span className="text-sm font-medium text-sw-grey"> /mo</span>
+                    <span className="text-sm font-medium text-sw-grey"> {copy.perMonth}</span>
                   </div>
                 </div>
               </div>
@@ -224,7 +187,7 @@ function ExpiredPlanPicker({
       {selected && meta ? (
         <p className="mb-5 text-center text-sm leading-relaxed text-sw-grey">
           {formatUsd(periodPrice)} {meta.periodLabel}
-          {meta.months > 1 ? ` (${(monthly / 100).toFixed(2)}/month)` : null}. Cancel any time.
+          {meta.months > 1 ? ` (${(monthly / 100).toFixed(2)}${copy.perMonth})` : null}. {copy.cancelAnyTime}
         </p>
       ) : null}
 
@@ -234,7 +197,7 @@ function ExpiredPlanPicker({
         disabled={!selected}
         className="mb-4 w-full cursor-pointer rounded-full bg-sw-blue py-4 text-lg font-extrabold tracking-wide text-sw-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
       >
-        GET STARTED
+        {copy.getStarted}
       </button>
 
       <div className="mb-2 flex flex-col items-center gap-2">
@@ -246,11 +209,11 @@ function ExpiredPlanPicker({
               d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
             />
           </svg>
-          Pay safe &amp; secure
+          {copy.paySafe}
         </p>
         <img
           src="/assets/pay-safe-strip.png"
-          alt="Mastercard, Visa, Amex, Discover accepted"
+          alt={copy.paySafeAlt}
           className="h-8 w-auto object-contain"
         />
       </div>
@@ -362,6 +325,10 @@ export default function SalesPlanScreen({
   onCheckoutSuccess,
   onExpiredPlanContinue,
 }: SalesPlanScreenProps) {
+  const { locale } = useI18n()
+  const funnelLocale = locale as FunnelLocale
+  const copy = useMemo(() => salesPlanCopy(funnelLocale), [funnelLocale])
+  const moneyBackTitle = moneyBackCopy(funnelLocale).title
   const products = useProductsList()
   const convexPlans: PlanView[] | undefined = products?.length
     ? products.map((p) => ({
@@ -382,7 +349,7 @@ export default function SalesPlanScreen({
   const trackCheckoutInitiated = useTrackCheckoutInitiated()
   const setCheckoutOfferPercent = useSetCheckoutOfferPercentAction()
 
-  const goalLabel = getAnswerLabel('q2-goal', answers['q2-goal'])
+  const goalLabel = getAnswerLabel('q2-goal', answers['q2-goal'], funnelLocale)
   const offerPercent = percentOff >= 97 ? percentOff : 97
 
   useEffect(() => {
@@ -428,7 +395,7 @@ export default function SalesPlanScreen({
           {expired ? (
             <div className="flex flex-col items-start">
               <span className="mb-0.5 text-[10px] leading-none font-semibold tracking-wide text-sw-grey uppercase">
-                Offer ended
+                {copy.offerEnded}
               </span>
               <div className="flex items-baseline gap-0.5">
                 <span className="text-xl font-extrabold text-sw-grey tabular-nums">00:00</span>
@@ -437,7 +404,7 @@ export default function SalesPlanScreen({
           ) : (
             <div className="flex flex-col items-start">
               <span className="mb-0.5 text-[10px] leading-none font-semibold tracking-wide text-sw-grey uppercase">
-                Offer expires
+                {copy.offerExpires}
               </span>
               <div className="flex items-baseline gap-0.5">
                 <span className="text-xl font-extrabold text-sw-dark tabular-nums">
@@ -449,10 +416,10 @@ export default function SalesPlanScreen({
 
           <span className="text-center text-base leading-tight font-extrabold text-sw-dark">
             {expired ? (
-              '🔄 Refresh for a new deal'
+              copy.refreshDeal
             ) : (
               <>
-                Start for Just <span className="text-sw-blue">$1</span>
+                {copy.startFor} <span className="text-sw-blue">$1</span>
               </>
             )}
           </span>
@@ -464,7 +431,7 @@ export default function SalesPlanScreen({
               className="rounded-full px-3 py-2 text-xs font-bold whitespace-nowrap text-white transition-all active:scale-[0.97]"
               style={{ backgroundColor: 'hsl(var(--sw-success))' }}
             >
-              REFRESH →
+              {copy.refreshCta}
             </button>
           ) : (
             <button
@@ -472,7 +439,7 @@ export default function SalesPlanScreen({
               onClick={scrollToCheckout}
               className="rounded-full bg-sw-blue px-3 py-2 text-xs font-bold whitespace-nowrap text-white transition-all hover:bg-sw-blue-hover active:scale-[0.97]"
             >
-              GET MY PLAN →
+              {copy.getPlan}
             </button>
           )}
         </div>
@@ -481,9 +448,9 @@ export default function SalesPlanScreen({
       <div className="mx-auto max-w-lg animate-fade-up px-4 pt-8 pb-6 text-center">
         {!expired ? (
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-sm font-bold text-orange-600">
-            🎁 Special Discount:{' '}
+            🎁 {copy.specialDiscount}{' '}
             <span className="rounded-full bg-orange-500 px-2 py-0.5 text-xs font-extrabold text-white">
-              {offerPercent}% OFF
+              {offerPercent}% {funnelLocale === 'ru' ? 'скидка' : 'OFF'}
             </span>
           </div>
         ) : (
@@ -492,22 +459,20 @@ export default function SalesPlanScreen({
             onClick={() => window.location.reload()}
             className="mb-5 inline-flex cursor-pointer items-center gap-2 rounded-full border border-sw-blue-border bg-sw-blue-light px-4 py-1.5 text-sm font-bold text-sw-blue transition-opacity hover:opacity-90"
           >
-            🔄 Offer expired — refresh page for a new deal
+            {copy.offerExpiredRefresh}
           </button>
         )}
 
         <h1 className="mb-3 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
+          {copy.planTitle}
+          <br />
           {name ? (
             <>
-              Your personal 28-Day AI Plan
-              <br />
-              is ready, <span className="text-sw-blue">{name}!</span>
+              <span className="text-sw-blue">{copy.planReadyWithName(name)}</span>
             </>
           ) : (
             <>
-              Your personal 28-Day AI Plan
-              <br />
-              is <span className="text-sw-blue">ready!</span>
+              <span className="text-sw-blue">{copy.planReadyHighlight}</span>
             </>
           )}
         </h1>
@@ -516,12 +481,12 @@ export default function SalesPlanScreen({
         <div className="mb-2 grid grid-cols-2 gap-3">
           {goalLabel ? (
             <div className="rounded-2xl bg-sw-grey-light px-4 py-3 text-left">
-              <p className="mb-1 text-xs font-semibold tracking-wide text-sw-grey uppercase">🎯 Your Goal</p>
+              <p className="mb-1 text-xs font-semibold tracking-wide text-sw-grey uppercase">{copy.yourGoal}</p>
               <p className="text-sm leading-snug font-bold text-sw-dark">{goalLabel}</p>
             </div>
           ) : null}
           <div className="rounded-2xl bg-sw-grey-light px-4 py-3 text-left">
-            <p className="mb-1 text-xs font-semibold tracking-wide text-sw-grey uppercase">⚡ Your Level</p>
+            <p className="mb-1 text-xs font-semibold tracking-wide text-sw-grey uppercase">{copy.yourLevel}</p>
             <p className="text-sm leading-snug font-bold text-sw-dark">{profile.scoreLabel}</p>
           </div>
         </div>
@@ -544,7 +509,9 @@ export default function SalesPlanScreen({
                     backgroundColor: faded ? 'hsl(var(--sw-blue) / 0.35)' : 'hsl(var(--sw-blue))',
                   }}
                 >
-                  <span className="text-[11px] leading-none font-extrabold tracking-wide text-white">DAY {day}</span>
+                  <span className="text-[11px] leading-none font-extrabold tracking-wide text-white">
+                    {copy.dayLabel} {day}
+                  </span>
                 </div>
                 <div className="flex flex-col items-center gap-2 px-2 pt-3 pb-3">
                   <ToolFavicon domain={tool.domain} name={tool.name} color={tool.color} />
@@ -564,13 +531,15 @@ export default function SalesPlanScreen({
           onClick={scrollToCheckout}
           className="animate-pulse-cta w-full rounded-full bg-sw-blue py-4 text-lg font-extrabold tracking-wide text-white uppercase shadow-lg transition-all hover:bg-sw-blue-hover active:scale-[0.98]"
         >
-          GET MY AI PLAN →
+          {copy.getAiPlan}
         </button>
       </div>
 
       <div className="overflow-hidden pb-8">
         <p className="mb-3 px-4 text-center text-base font-bold text-sw-dark">
-          🔥 <span className="text-sw-blue">1,247 people</span> started their plan this week
+          {copy.peopleStartedPrefix}
+          <span className="text-sw-blue">{copy.peopleStartedCount}</span>
+          {copy.peopleStartedSuffix}
         </p>
         <div className="overflow-hidden">
           <div className="marquee-track gap-3 px-2">
@@ -580,7 +549,7 @@ export default function SalesPlanScreen({
                 className="flex flex-shrink-0 items-center gap-2 rounded-full bg-sw-grey-light px-4 py-2 text-xs font-semibold whitespace-nowrap text-sw-dark"
               >
                 <span className="h-2 w-2 flex-shrink-0 rounded-full bg-sw-success" />
-                {handle} just enrolled · {LIVE_MINUTES[i % LIVE_MINUTES.length]}
+                {copy.liveEnrolled(handle, copy.liveMinutes[i % copy.liveMinutes.length])}
               </div>
             ))}
           </div>
@@ -602,6 +571,8 @@ export default function SalesPlanScreen({
             plans={plans}
             selectedPlanId={selectedPlan?.id}
             onSelect={setSelectedPlanId}
+            locale={funnelLocale}
+            copy={copy}
             onStart={() => {
               if (!selectedPlan) return
               trackEvent('CheckoutStarted', { funnel: FUNNEL, planId: selectedPlan.id })
@@ -616,7 +587,7 @@ export default function SalesPlanScreen({
         ) : (
           <div className="mx-auto max-w-lg px-4 pb-6">
             <p className="text-center text-xs text-sw-grey">
-              Please enter your email earlier in the quiz to unlock checkout.
+              {copy.emailMissing}
             </p>
           </div>
         )}
@@ -624,19 +595,19 @@ export default function SalesPlanScreen({
 
       <div className="mx-auto max-w-lg px-4 pb-8">
         <div className="rounded-2xl bg-sw-grey-light p-5">
-          <h3 className="mb-4 text-base font-extrabold text-sw-dark">What&apos;s included in your plan</h3>
+          <h3 className="mb-4 text-base font-extrabold text-sw-dark">{copy.includedTitle}</h3>
           <div className="flex flex-col gap-3">
             <div className="flex items-start gap-3">
               <CheckDot />
-              <span className="text-sm leading-snug text-sw-dark">{INCLUDED[0]}</span>
+              <span className="text-sm leading-snug text-sw-dark">{copy.included[0]}</span>
             </div>
             <div className="flex items-start gap-3">
               <CheckDot />
               <span className="text-sm leading-snug text-sw-dark">
-                Plan personalised for {profile.archetype} {profile.archetypeEmoji}
+                {copy.personalised(profile.archetype, profile.archetypeEmoji)}
               </span>
             </div>
-            {INCLUDED.slice(1).map((item) => (
+            {copy.included.slice(1).map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <CheckDot />
                 <span className="text-sm leading-snug text-sw-dark">{item}</span>
@@ -647,9 +618,9 @@ export default function SalesPlanScreen({
       </div>
 
       <div className="pb-8">
-        <h3 className="mb-4 px-4 text-center text-lg font-extrabold text-sw-dark">What members say</h3>
+        <h3 className="mb-4 px-4 text-center text-lg font-extrabold text-sw-dark">{copy.membersSay}</h3>
         <div className="scrollbar-none flex gap-3 overflow-x-auto px-4 pb-2 snap-x snap-mandatory sm:hidden">
-          {MEMBER_TESTIMONIALS.map((t) => (
+          {copy.memberTestimonials.map((t) => (
             <TestimonialCard
               key={t.name}
               {...t}
@@ -658,7 +629,7 @@ export default function SalesPlanScreen({
           ))}
         </div>
         <div className="mx-auto hidden max-w-3xl grid-cols-3 gap-4 px-4 sm:grid">
-          {MEMBER_TESTIMONIALS.map((t) => (
+          {copy.memberTestimonials.map((t) => (
             <TestimonialCard key={t.name} {...t} className="flex flex-col rounded-2xl bg-sw-grey-light p-5" />
           ))}
         </div>
@@ -691,8 +662,8 @@ export default function SalesPlanScreen({
             </svg>
           </div>
           <div>
-            <p className="text-sm font-extrabold text-sw-dark">{MONEY_BACK_TITLE}</p>
-            <p className="mt-0.5 text-xs leading-snug text-sw-grey">Not right for you? Full refund, no questions asked.</p>
+            <p className="text-sm font-extrabold text-sw-dark">{moneyBackTitle}</p>
+            <p className="mt-0.5 text-xs leading-snug text-sw-grey">{copy.moneyBackBody}</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { getLiveCards, getPath, liveSlugSet, pickPathContinueCard } from '@/content/catalog'
 import { PATH_META } from '@/content/lms'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useProgress } from '@/lib/lmsQueries'
 
 type Props = { pathKey: string }
@@ -51,8 +52,9 @@ function Chevron({ className }: { className?: string }) {
 }
 
 export default function PathCatalogPage({ pathKey }: Props) {
-  const path = getPath(pathKey)
-  const live = getLiveCards(pathKey)
+  const { t, locale } = useI18n()
+  const path = getPath(pathKey, locale)
+  const live = getLiveCards(pathKey, locale)
   const progress = useProgress()
   const meta = PATH_META[pathKey as keyof typeof PATH_META]
   const cards = (live?.cards ?? []) as LiveCard[]
@@ -79,7 +81,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
   if (!path) {
     return (
       <main className="max-w-2xl mx-auto px-4 pt-5 pb-36">
-        <h1 className="text-2xl font-extrabold">Path</h1>
+        <h1 className="text-2xl font-extrabold">{t('app.common.path')}</h1>
       </main>
     )
   }
@@ -95,7 +97,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
     typeof path.heroCourseCount === 'number'
       ? path.heroCourseCount
       : cards.length + comingSoonCount
-  const courseCountLabel = template === 'path-catalog-C' ? 'Courses' : 'courses'
+  const courseCountLabel = template === 'path-catalog-C' ? t('app.path.coursesLabel') : t('app.common.courses')
   const dashOffset = RING * (1 - pathPct / 100)
 
   return (
@@ -105,7 +107,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
           <div className="flex items-center gap-3">
             <Link
               to="/app/dashboard"
-              aria-label="Back to dashboard"
+              aria-label={t('app.path.backAria')}
               className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-sw-grey-light transition-colors"
             >
               <svg className="w-5 h-5 text-sw-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -155,11 +157,11 @@ export default function PathCatalogPage({ pathKey }: Props) {
               {courseCount} {courseCountLabel}
             </span>
             <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-white text-xs font-semibold">
-              {lessonsHere} lessons done
+              {t('app.path.lessonsDone').replace('{n}', String(lessonsHere))}
             </span>
             {xpHere > 0 ? (
               <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-white text-xs font-semibold">
-                ⚡ {xpHere} XP earned
+                {t('app.path.xpEarnedChip').replace('{xp}', String(xpHere))}
               </span>
             ) : null}
           </div>
@@ -167,9 +169,9 @@ export default function PathCatalogPage({ pathKey }: Props) {
 
         {template === 'path-catalog-C' ? (
           <div className="bg-white rounded-2xl p-6 text-center border border-sw-grey-border">
-            <p className="font-bold text-sw-dark">{live?.emptyCopy?.title ?? 'No courses started yet'}</p>
+            <p className="font-bold text-sw-dark">{live?.emptyCopy?.title ?? t('app.path.noCoursesStarted')}</p>
             <p className="text-sm text-sw-grey mt-1">
-              {live?.emptyCopy?.sub ?? 'Courses in this category are coming soon!'}
+              {live?.emptyCopy?.sub ?? t('app.path.comingSoonCategory')}
             </p>
           </div>
         ) : continueCard ? (
@@ -178,7 +180,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
             className="block rounded-2xl bg-white p-4 shadow-sm border-2 border-sw-blue/20 active:scale-[0.98] transition-all"
           >
             <p className="text-[10px] font-bold text-sw-blue uppercase tracking-[0.12em] mb-2">
-              {continueStarted ? '▶ Continue Learning' : '🚀 Start Here'}
+              {continueStarted ? t('app.path.continueLearning') : t('app.path.startHere')}
             </p>
             <div className="flex items-center gap-3">
               <div
@@ -190,9 +192,9 @@ export default function PathCatalogPage({ pathKey }: Props) {
                 <h3 className="text-sm font-bold text-sw-dark leading-tight truncate">{continueCard.title}</h3>
                 <p className="text-xs text-sw-grey mt-0.5">
                   {continueStarted
-                    ? `Day ${Math.min(continueDone + 1, continueTotal || continueDone + 1)} of ${continueTotal || '—'}`
+                    ? t('app.path.dayOf').replace('{current}', String(Math.min(continueDone + 1, continueTotal || continueDone + 1))).replace('{total}', String(continueTotal || '—'))
                     : [
-                        continueCard.lessons ? `${continueCard.lessons} lessons` : null,
+                        continueCard.lessons ? t('app.path.lessonsCount').replace('{n}', String(continueCard.lessons)) : null,
                         continueCard.duration,
                       ]
                         .filter(Boolean)
@@ -221,7 +223,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
 
         {template === 'path-catalog-B' ? (
           <>
-            <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Your Courses</p>
+            <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.yourCourses')}</p>
             <div className="space-y-3">
               {cards.map((card) => (
                 <CourseRow key={card.id} card={card} completed={completed} numbered />
@@ -233,19 +235,19 @@ export default function PathCatalogPage({ pathKey }: Props) {
                 difficulty: String(item.difficulty || ''),
                 time: String(item.time || ''),
               }))}
-              extraLabel="+8 more courses coming"
+              extraLabel={t('app.path.moreComing')}
             />
           </>
         ) : template === 'path-catalog-C' ? (
             <ComingSoonStrip
               items={live?.comingSoonStrip ?? path.comingSoonStrip ?? []}
-              extraLabel="+8 more courses coming"
+              extraLabel={t('app.path.moreComing')}
               heading="h3"
             />
         ) : (
           <>
             <div>
-              <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Your Courses</p>
+              <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.yourCourses')}</p>
               <div className="space-y-3">
                 {cards.map((card) => (
                   <CourseRow key={card.id} card={card} completed={completed} />
@@ -254,7 +256,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
             </div>
             {(path.comingSoonCards?.length ?? 0) > 0 ? (
               <div>
-                <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Coming soon</p>
+                <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.comingSoon')}</p>
                 <div className="space-y-3">
                   {path.comingSoonCards!.map((item) => {
                     const cardTitle = String(item.title || item.name || '')
@@ -290,9 +292,9 @@ export default function PathCatalogPage({ pathKey }: Props) {
         {Array.isArray(path.browseBySection) ? (
           <div>
             {template === 'path-catalog-C' ? (
-              <h3 className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Browse by Section</h3>
+              <h3 className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.browseBySection')}</h3>
             ) : (
-              <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">Browse by Section</p>
+              <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.browseBySection')}</p>
             )}
             <div className="grid grid-cols-2 gap-3">
               {path.browseBySection.map((section) => (
@@ -322,7 +324,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
                       ) : null}
                   {Array.isArray(section.courses) ? (
                     <span className="text-[10px] font-semibold text-sw-grey bg-sw-grey-light px-2 py-0.5 rounded-full">
-                      {section.courses.length} courses
+                      {t('app.path.sectionCourses').replace('{n}', String(section.courses.length))}
                     </span>
                   ) : null}
                 </div>
@@ -335,7 +337,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border/50 text-center">
             <span className="text-3xl mb-2 block">🏆</span>
             <p className="text-sm font-bold text-sw-dark mb-1">{live.badge}</p>
-            <p className="text-xs text-sw-grey mb-3">Complete 3 courses to earn this badge</p>
+            <p className="text-xs text-sw-grey mb-3">{t('app.path.badgeEarnHint')}</p>
             <div className="flex justify-center gap-1.5">
               {[1, 2, 3].map((n) => (
                 <div
@@ -362,6 +364,7 @@ function CourseRow({
   completed: Array<{ courseId: string; xpEarned: number; status: string }>
   numbered?: boolean
 }) {
+  const { t } = useI18n()
   const live = liveSlugSet.has(card.id)
   const done = completed.filter((row) => row.courseId === card.id)
   const xp = done.reduce((sum, row) => sum + row.xpEarned, 0)
@@ -400,13 +403,13 @@ function CourseRow({
             </>
           ) : (
             <>
-              <span>{card.lessons} lessons</span>
+              <span>{t('app.path.lessonsCount').replace('{n}', String(card.lessons))}</span>
               <span>·</span>
               <span>{card.xp} XP</span>
               {xp > 0 ? (
                 <>
                   <span>·</span>
-                  <span className="text-sw-blue font-semibold">⚡ {xp} earned</span>
+                  <span className="text-sw-blue font-semibold">{t('app.path.xpEarnedRow').replace('{xp}', String(xp))}</span>
                 </>
               ) : null}
             </>
@@ -416,7 +419,7 @@ function CourseRow({
           <div className="mt-2.5">
             <div className="flex justify-between items-center mb-1">
               <span className="text-[10px] font-semibold text-sw-grey">
-                {done.length}/{total} complete
+                {t('app.path.completeFraction').replace('{done}', String(done.length)).replace('{total}', String(total))}
               </span>
               <span className="text-[10px] font-bold text-sw-blue">{pct}%</span>
             </div>
@@ -460,13 +463,14 @@ function ComingSoonStrip({
   extraLabel?: string
   heading?: 'p' | 'h3'
 }) {
+  const { t } = useI18n()
   if (!items.length) return null
   const shown = extraLabel ? items.slice(0, 8) : items
   const Heading = heading
   return (
     <div>
       <Heading className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">
-        Coming Soon <span className="text-sw-grey font-semibold normal-case tracking-normal">{items.length} courses</span>
+        {t('app.common.comingSoonTitle')} <span className="text-sw-grey font-semibold normal-case tracking-normal">{t('app.path.comingSoonCourses').replace('{n}', String(items.length))}</span>
       </Heading>
       <div className="space-y-2">
         {shown.map((item) => (

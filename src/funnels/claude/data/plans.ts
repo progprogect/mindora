@@ -1,3 +1,6 @@
+import type { ClaudeLocale } from '@/funnels/claude/i18n/locale'
+import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
+
 export interface PlanView {
   id: string
   name: string
@@ -50,15 +53,28 @@ export function expiredPickerPlans(products: PlanView[] | undefined): PlanView[]
   return [...source].sort((a, b) => a.price - b.price)
 }
 
-export function planMeta(plan: PlanView) {
-  const extra = PLAN_DISPLAY_META[plan.name]
-  if (extra) {
-    return { ...extra, badge: plan.badge ?? extra.badge }
+export function planMeta(plan: PlanView, locale: ClaudeLocale = 'en') {
+  const sales = claudeSalesUiCopy(locale).plan.expired
+  const base = PLAN_DISPLAY_META[plan.name]
+  const localized = sales.planLabels[plan.name as keyof typeof sales.planLabels]
+  const badgeRaw = plan.badge ?? base?.badge
+  const badge =
+    badgeRaw && badgeRaw in sales.badges
+      ? sales.badges[badgeRaw as keyof typeof sales.badges]
+      : badgeRaw
+
+  if (base || localized) {
+    return {
+      label: localized?.label ?? base?.label ?? plan.name,
+      periodLabel: localized?.periodLabel ?? base?.periodLabel ?? sales.perPeriod,
+      months: base?.months ?? plan.intervalMonths,
+      badge,
+    }
   }
   return {
     label: plan.name,
-    periodLabel: 'per period',
+    periodLabel: sales.perPeriod,
     months: plan.intervalMonths,
-    badge: plan.badge,
+    badge,
   }
 }

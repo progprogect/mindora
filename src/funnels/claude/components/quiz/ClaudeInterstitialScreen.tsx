@@ -1,4 +1,6 @@
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
 import type { ClaudeInterstitialScreenDef, ClaudeQuizAnswers } from '@/funnels/claude/types/claudeQuiz'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeInterstitialScreenProps {
   screen: ClaudeInterstitialScreenDef
@@ -8,6 +10,8 @@ interface ClaudeInterstitialScreenProps {
 
 /** Port of `m()` (`InterstitialScreen-*.js`) — emoji circle, quote/stat blocks, echo variants. */
 export default function ClaudeInterstitialScreen({ screen, answers, onContinue }: ClaudeInterstitialScreenProps) {
+  const { locale } = useI18n()
+  const interstitialCopy = claudeQuizUiCopy(locale).interstitial
   let headline = screen.headline
   let copy = screen.copy ?? ''
 
@@ -60,7 +64,7 @@ export default function ClaudeInterstitialScreen({ screen, answers, onContinue }
             onClick={onContinue}
             className="w-full rounded-full bg-sw-blue py-4 text-base font-bold text-sw-white shadow-md transition-all duration-150 hover:bg-sw-blue-hover active:scale-[0.98]"
           >
-            {screen.ctaLabel ?? 'CONTINUE →'}
+            {screen.ctaLabel ?? interstitialCopy.continue}
           </button>
         </div>
         <div style={{ paddingTop: '56px', paddingBottom: 'env(safe-area-inset-bottom)' }} />

@@ -5,14 +5,16 @@ import AuthSpinner from '@/auth/AuthSpinner'
 import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, completeProfile, sendOtp, verifyOtp } from '@/lib/api'
 import { readQuizResults } from '@/lib/quizResults'
+import { useI18n } from '@/i18n/I18nProvider'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 const PLAN_IDS = ['week1', 'week4', 'week12', 'free'] as const
-const PLAN_LABELS: Record<string, string> = {
-  week1: '1-Week Plan',
-  week4: '28-Day Plan',
-  week12: '12-Week Plan',
-  free: 'Free Plan',
+
+function planLabelKey(plan: string): string {
+  if (plan === 'week1') return 'account.create.planWeek1'
+  if (plan === 'week4') return 'account.create.planWeek4'
+  if (plan === 'week12') return 'account.create.planWeek12'
+  return 'account.create.planFree'
 }
 
 function WordmarkHeader() {
@@ -64,7 +66,8 @@ function CreateAuthenticated({ name, plan }: { name: string; plan: string }) {
       .catch(() => navigate('/account/upgrade'))
   }, [user, started, name, plan, navigate, refresh])
 
-  return <AuthSpinner message="Setting up your account…" />
+  const { t } = useI18n()
+  return <AuthSpinner message={t('account.common.settingUpAccount')} />
 }
 
 function CreateForm({
@@ -77,6 +80,7 @@ function CreateForm({
   plan: string
 }) {
   const { refresh } = useSession()
+  const { locale, t } = useI18n()
   const [step, setStep] = useState<'send' | 'code'>('send')
   const [email, setEmail] = useState(initialEmail)
   const [digits, setDigits] = useState(['', '', '', '', '', ''])
@@ -115,12 +119,12 @@ function CreateForm({
     setError(null)
     setBusy(true)
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
       setStep('code')
       startCooldown()
       setTimeout(() => inputs.current[0]?.focus(), 200)
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to send code — please check your email address and try again.'))
+      setError(apiErrorMessage(err, t, t('account.common.failedSendCode')))
     } finally {
       setBusy(false)
     }
@@ -132,11 +136,11 @@ function CreateForm({
     setError(null)
     setBusy(true)
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
       startCooldown()
       setTimeout(() => inputs.current[0]?.focus(), 100)
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to resend code. Please try again.'))
+      setError(apiErrorMessage(err, t, t('account.common.failedResendCode')))
     } finally {
       setBusy(false)
     }
@@ -151,7 +155,7 @@ function CreateForm({
       await verifyOtp(email, code)
       await refresh()
     } catch (err) {
-      setError(apiErrorMessage(err, 'Invalid or expired code. Please try again.'))
+      setError(apiErrorMessage(err, t, t('account.common.invalidCode')))
       setDigits(['', '', '', '', '', ''])
       setTimeout(() => inputs.current[0]?.focus(), 100)
     } finally {
@@ -200,7 +204,7 @@ function CreateForm({
     }
   }
 
-  const planLabel = PLAN_LABELS[plan] || 'Free Plan'
+  const planLabel = t(planLabelKey(plan))
   const firstName = name ? name.split(' ')[0] : ''
   const filled = digits.filter(Boolean).length
 
@@ -233,10 +237,11 @@ function CreateForm({
               />
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-sw-dark text-center leading-tight mb-2">
-              Check your inbox
+              {t('account.common.checkInbox')}
             </h1>
             <p className="text-sm text-sw-grey text-center mb-8 leading-relaxed">
-              We sent a 6-digit code to <span className="font-semibold text-sw-dark">{email}</span>
+              {t('account.common.sentCodePrefix')}{' '}
+              <span className="font-semibold text-sw-dark">{email}</span>
             </p>
             <div className="flex gap-2 sm:gap-3 justify-center mb-6">
               {digits.map((digit, i) => (
@@ -255,7 +260,7 @@ function CreateForm({
                   onKeyDown={(e) => onKey(i, e)}
                   onFocus={(e) => e.target.select()}
                   disabled={busy}
-                  aria-label={`Digit ${i + 1}`}
+                  aria-label={`${t('account.common.digitAria')} ${i + 1}`}
                   className={`w-12 h-14 sm:w-14 sm:h-16 text-center text-2xl font-extrabold rounded-2xl border-2 transition-all outline-none ${
                     digit
                       ? 'border-sw-blue bg-sw-blue-light/40 text-sw-blue'
@@ -298,11 +303,13 @@ function CreateForm({
                 disabled={cooldown > 0 || busy}
                 className="text-sm text-sw-grey disabled:opacity-50"
               >
-                Didn&apos;t receive it?{' '}
+                {t('account.common.didntReceive')}{' '}
                 {cooldown > 0 ? (
-                  <span className="text-sw-grey font-semibold">Resend in {cooldown}s</span>
+                  <span className="text-sw-grey font-semibold">
+                    {t('account.common.resendIn')} {cooldown}s
+                  </span>
                 ) : (
-                  <span className="text-sw-blue font-semibold">Send again</span>
+                  <span className="text-sw-blue font-semibold">{t('account.common.sendAgain')}</span>
                 )}
               </button>
             </div>
@@ -316,7 +323,7 @@ function CreateForm({
               disabled={busy}
               className="mt-3 text-xs text-sw-grey text-center w-full"
             >
-              ← Use a different email
+              {t('account.common.useDifferentEmail')}
             </button>
           </div>
         </main>
@@ -343,10 +350,10 @@ function CreateForm({
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
                     />
                   </svg>
-                  Verifying…
+                  {t('account.common.verifying')}
                 </span>
               ) : (
-                'Verify & Create Account'
+                t('account.create.verifyCreateAccount')
               )}
             </button>
           </div>
@@ -380,18 +387,21 @@ function CreateForm({
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                {planLabel} selected
+                {planLabel} {t('account.create.planSelected')}
               </span>
             </div>
           ) : null}
           <h1 className="text-3xl sm:text-4xl font-extrabold text-sw-dark text-center leading-tight mb-3">
-            {firstName ? `Almost there, ${firstName}!` : "You're almost in!"}
+            {firstName
+              ? t('account.create.almostThereName').replace('{name}', firstName)
+              : t('account.create.almostIn')}
           </h1>
           <p className="text-sm text-sw-grey text-center mb-10 leading-relaxed">
-            We&apos;ll send a quick code to verify your email
-            <br className="hidden sm:block" /> and create your MindoraAcademy account.
+            {t('account.create.verifyEmailBlurb')}
           </p>
-          <label className="block text-sm font-semibold text-sw-dark mb-2">Your email address</label>
+          <label className="block text-sm font-semibold text-sw-dark mb-2">
+            {t('account.common.yourEmailAddress')}
+          </label>
           <input
             type="email"
             value={email}
@@ -399,14 +409,14 @@ function CreateForm({
             onKeyDown={(e) => {
               if (e.key === 'Enter') void sendCode()
             }}
-            placeholder="you@example.com"
+            placeholder={t('account.common.emailPlaceholder')}
             required
             disabled={busy}
             className="w-full border-2 border-sw-grey-border rounded-2xl px-5 py-4 text-base text-sw-dark placeholder:text-sw-grey/60 focus:outline-none focus:border-sw-blue transition-colors bg-white"
           />
           {error ? <p className="mt-3 text-sm text-red-500">{error}</p> : null}
           <p className="mt-6 text-xs text-sw-grey text-center">
-            🔒 No password needed · Your data is private & secure
+            {t('account.create.privacyHint')}
           </p>
         </div>
       </main>
@@ -421,7 +431,7 @@ function CreateForm({
             disabled={busy || !email}
             className="w-full bg-sw-blue hover:bg-sw-blue-hover text-white font-bold py-4 rounded-full text-base transition-all active:scale-[0.98] shadow-lg disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            {busy ? 'Sending code…' : 'Send Verification Code'}
+            {busy ? t('account.common.sendingCode') : t('account.create.sendVerificationCode')}
           </button>
         </div>
         <div

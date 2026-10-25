@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { LearnCategory, LearnCourse } from '@/marketing/data/learn'
+import { learnCategories, learnPageCopy } from '@/marketing/data/learn'
 import { ROUTES } from '@/marketing/data/nav'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import LearnStickyCta from '@/marketing/components/LearnStickyCta'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 
@@ -35,7 +37,13 @@ function useLearnSticky(threshold = 300) {
   return show
 }
 
-function ComingSoonCard({ course }: { course: LearnCourse }) {
+function ComingSoonCard({
+  course,
+  ui,
+}: {
+  course: LearnCourse
+  ui: ReturnType<typeof learnPageCopy>
+}) {
   return (
     <div
       className="relative overflow-hidden rounded-2xl shadow-md"
@@ -49,7 +57,7 @@ function ComingSoonCard({ course }: { course: LearnCourse }) {
           className="rounded-full px-2.5 py-1 text-[10px] font-bold text-white"
           style={{ backgroundColor: 'rgba(0,0,0,0.35)', backdropFilter: 'blur(4px)' }}
         >
-          🔒 COMING SOON
+          {ui.comingSoonBadge}
         </span>
       </div>
       <div className="p-5" style={{ opacity: 0.85 }}>
@@ -62,13 +70,15 @@ function ComingSoonCard({ course }: { course: LearnCourse }) {
         </div>
         <div className="mb-5 flex items-center gap-3">
           <div className="flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5">
-            <span className="text-xs font-semibold text-white">📚 {course.lessons} lessons</span>
+            <span className="text-xs font-semibold text-white">
+              📚 {course.lessons} {ui.lessons}
+            </span>
           </div>
           <div className="flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5">
             <span className="text-xs font-semibold text-white">⚡ {course.xp} XP</span>
           </div>
           <div className="flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5">
-            <span className="text-xs font-semibold text-white">⏱ 5 min/day</span>
+            <span className="text-xs font-semibold text-white">{ui.minPerDay}</span>
           </div>
         </div>
         <Link
@@ -83,16 +93,24 @@ function ComingSoonCard({ course }: { course: LearnCourse }) {
         className="flex items-center justify-between px-5 py-3"
         style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}
       >
-        <span className="text-xs font-medium text-white/60">Course launching soon</span>
+        <span className="text-xs font-medium text-white/60">{ui.courseLaunchingSoon}</span>
         <LearnLockIcon />
       </div>
     </div>
   )
 }
 
-function LiveCard({ course }: { course: LearnCourse }) {
+function LiveCard({
+  course,
+  ui,
+}: {
+  course: LearnCourse
+  ui: ReturnType<typeof learnPageCopy>
+}) {
   const countLabel =
-    course.days != null ? `📅 ${course.days} days` : `📚 ${course.lessons} lessons`
+    course.days != null
+      ? `📅 ${course.days} ${ui.days}`
+      : `📚 ${course.lessons} ${ui.lessons}`
   const ctaClass = course.accentColor
     ? 'inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-extrabold shadow-sm transition-transform hover:shadow-md active:scale-[0.97]'
     : 'inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-extrabold text-sw-blue shadow-sm transition-transform hover:shadow-md active:scale-[0.97]'
@@ -109,11 +127,11 @@ function LiveCard({ course }: { course: LearnCourse }) {
                 }`}
                 style={course.accentColor ? { color: course.accentColor } : undefined}
               >
-                LIVE
+                {ui.live}
               </span>
               {course.isNew ? (
                 <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold text-white">
-                  NEW
+                  {ui.new}
                 </span>
               ) : null}
             </div>
@@ -130,7 +148,7 @@ function LiveCard({ course }: { course: LearnCourse }) {
             <span className="text-xs font-semibold text-white">⚡ {course.xp} XP</span>
           </div>
           <div className="flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5">
-            <span className="text-xs font-semibold text-white">⏱ 5 min/day</span>
+            <span className="text-xs font-semibold text-white">{ui.minPerDay}</span>
           </div>
         </div>
         <Link
@@ -145,7 +163,10 @@ function LiveCard({ course }: { course: LearnCourse }) {
   )
 }
 
-export default function LearnCategoryPage({ category }: { category: LearnCategory }) {
+export default function LearnCategoryPage({ category: categoryProp }: { category: LearnCategory }) {
+  const { locale } = useI18n()
+  const category = learnCategories(locale)[categoryProp.slug] ?? categoryProp
+  const ui = learnPageCopy(locale)
   usePageTitle(category.pageTitle)
   const showSticky = useLearnSticky(300)
 
@@ -186,7 +207,7 @@ export default function LearnCategoryPage({ category }: { category: LearnCategor
               className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-white/65"
               style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}
             >
-              ⏱ 5 min/day
+              {ui.minPerDay}
             </span>
             <span
               className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-white/65"
@@ -269,11 +290,11 @@ export default function LearnCategoryPage({ category }: { category: LearnCategor
           <div>
             <div className="mb-3 flex items-center gap-2">
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-sw-success" />
-              <p className="text-xs font-bold tracking-widest text-sw-dark uppercase">Live Now</p>
+              <p className="text-xs font-bold tracking-widest text-sw-dark uppercase">{ui.liveNow}</p>
             </div>
             {category.courses.map((course, i) => (
               <div key={course.id} className={i === 0 ? undefined : 'mt-3'}>
-                <LiveCard course={course} />
+                <LiveCard course={course} ui={ui} />
               </div>
             ))}
           </div>
@@ -282,11 +303,11 @@ export default function LearnCategoryPage({ category }: { category: LearnCategor
             <div className="mb-3 flex items-center gap-2">
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-sw-amber" />
               <p className="text-xs font-bold tracking-widest text-sw-dark uppercase">
-                Coming Soon — Be First
+                {ui.comingSoonHeader}
               </p>
             </div>
             {category.courses.map((course) => (
-              <ComingSoonCard key={course.id} course={course} />
+              <ComingSoonCard key={course.id} course={course} ui={ui} />
             ))}
           </>
         )}
@@ -311,7 +332,7 @@ export default function LearnCategoryPage({ category }: { category: LearnCategor
               }`}
               style={category.certCtaColor ? { color: category.certCtaColor } : undefined}
             >
-              Get your certificate →
+              {ui.getCertificate}
             </Link>
           </div>
         </div>
@@ -320,7 +341,7 @@ export default function LearnCategoryPage({ category }: { category: LearnCategor
       {category.disclaimer ? (
         <div className="mx-auto max-w-2xl px-4 pb-6">
           <p className="text-center text-[10px] leading-relaxed text-sw-grey">
-            ⚕️ <strong>Health disclaimer:</strong> {category.disclaimer}
+            ⚕️ <strong>{ui.healthDisclaimerLabel}</strong> {category.disclaimer}
           </p>
         </div>
       ) : null}

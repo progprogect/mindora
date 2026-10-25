@@ -1,56 +1,15 @@
 import { useEffect } from 'react'
+import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeSocialProofScreenProps {
   onContinue: () => void
 }
 
-interface Testimonial {
-  name: string
-  role: string
-  text: string
-  stars: number
-  highlight: string
-}
-
-const TESTIMONIALS: Testimonial[] = [
-  {
-    name: 'David L.',
-    role: 'Marketing Director',
-    text: "I was skeptical about another AI course, but this one actually taught me Claude-specific techniques I couldn't find anywhere else. Saved me 8 hours in my first week.",
-    stars: 5,
-    highlight: '8 hours saved in week 1',
-  },
-  {
-    name: 'Emma R.',
-    role: 'Freelance Writer',
-    text: "The certification gave me credibility with clients. I now charge 40% more because I can offer 'AI-enhanced' services. Best investment I've made.",
-    stars: 5,
-    highlight: '40% higher rates',
-  },
-  {
-    name: 'James T.',
-    role: 'Software Engineer',
-    text: 'I thought I knew Claude well. Turns out I was using maybe 20% of its capabilities. The advanced prompting module alone was worth it.',
-    stars: 5,
-    highlight: 'Unlocked 80% more capability',
-  },
-  {
-    name: 'Aisha M.',
-    role: 'HR Manager',
-    text: 'Got my certification in 3 weeks doing 15 min/day. My boss noticed the difference in my work quality immediately. Got promoted 2 months later.',
-    stars: 5,
-    highlight: 'Promoted in 2 months',
-  },
-]
-
-const STATS: Array<{ value: string; label: string }> = [
-  { value: '4.9', label: 'Rating' },
-  { value: '50K+', label: 'Certified' },
-  { value: '93%', label: 'Recommend' },
-]
-
-/** Port of `ClaudeSocialProofScreen` (`ClaudeSocialProofScreen-BjuyRU6p.js`, sales-funnel variant). */
 export default function ClaudeSocialProofScreen({ onContinue }: ClaudeSocialProofScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeSalesUiCopy(locale).socialProof
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
@@ -59,15 +18,15 @@ export default function ClaudeSocialProofScreen({ onContinue }: ClaudeSocialProo
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-8 pb-44">
       <div className="mb-6 animate-fade-up text-center">
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Join 50,000+ Claude
+          {copy.titleLine1}
           <br />
-          Certified Professionals
+          {copy.titleLine2}
         </h1>
-        <p className="text-sm text-sw-grey">Real results from real people</p>
+        <p className="text-sm text-sw-grey">{copy.subtitle}</p>
       </div>
 
       <div className="mb-6 grid animate-fade-up grid-cols-3 gap-3">
-        {STATS.map((stat) => (
+        {copy.stats.map((stat) => (
           <div key={stat.label} className="rounded-xl bg-sw-blue-light p-3 text-center">
             <p className="text-xl font-extrabold text-sw-blue">{stat.value}</p>
             <p className="text-[10px] font-semibold text-sw-grey uppercase">{stat.label}</p>
@@ -76,10 +35,10 @@ export default function ClaudeSocialProofScreen({ onContinue }: ClaudeSocialProo
       </div>
 
       <div className="flex animate-fade-up flex-col gap-4">
-        {TESTIMONIALS.map((t) => (
+        {copy.testimonials.map((t) => (
           <div key={t.name} className="rounded-2xl border border-sw-border p-5">
             <div className="mb-2 flex gap-0.5 text-sw-amber">
-              {Array.from({ length: t.stars }).map((_, i) => (
+              {Array.from({ length: 5 }).map((_, i) => (
                 <span key={i} className="text-sm">
                   ★
                 </span>
@@ -112,7 +71,7 @@ export default function ClaudeSocialProofScreen({ onContinue }: ClaudeSocialProo
             onClick={onContinue}
             className="w-full rounded-full bg-sw-blue py-4 text-base font-bold text-sw-white shadow-lg transition-all duration-150 hover:bg-sw-blue-hover active:scale-[0.98]"
           >
-            Continue →
+            {copy.continue}
           </button>
         </div>
         <div style={{ paddingTop: '56px', paddingBottom: 'env(safe-area-inset-bottom)' }} />

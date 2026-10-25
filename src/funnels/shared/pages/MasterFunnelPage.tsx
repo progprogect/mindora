@@ -18,13 +18,23 @@ import {
   buildM365Profile,
   buildPptProfile,
 } from '@/funnels/shared/lib/masterProfile'
-import { excelPlan, m365Plan, M365_BEFORE_AFTER, M365_BENEFITS, PPT_BEFORE_AFTER, PPT_BENEFITS, pptPlan } from '@/funnels/shared/data/planCopy'
+import {
+  excelPlan,
+  m365BeforeAfter,
+  m365Benefits,
+  m365Plan,
+  pptBeforeAfter,
+  pptBenefits,
+  pptPlan,
+} from '@/funnels/shared/data/planCopy'
 import type { FunnelScreen } from '@/funnels/shared/types'
 import {
   ExcelBeforeAfterScreen,
   ExcelBenefitsScreen,
   ExcelSocialScreen,
 } from '@/funnels/master-claude-ai-excel/components/ExcelSalesScreens'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 export type MasterKind = 'ppt' | 'm365' | 'excel'
 
@@ -36,16 +46,22 @@ interface MasterFunnelPageProps {
 }
 
 export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }: MasterFunnelPageProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const navigate = useNavigate()
   const storage = useMemo(() => createFunnelStorage(funnelId), [funnelId])
   const [quizState, setQuizState] = useState(() => storage.loadState())
   const [salesStep, setSalesStep] = useState(() => storage.loadSalesStep())
   const [percentOff, setPercentOff] = useState(50)
-  const name = quizState.name ?? 'Alex'
+  const name = quizState.name ?? ui.defaultName
 
-  const pptProfile = useMemo(() => buildPptProfile(quizState.answers), [quizState.answers])
-  const excelProfile = useMemo(() => buildExcelProfile(quizState.answers), [quizState.answers])
-  const m365Profile = useMemo(() => buildM365Profile(quizState.answers), [quizState.answers])
+  const pptProfile = useMemo(() => buildPptProfile(quizState.answers, locale), [quizState.answers, locale])
+  const excelProfile = useMemo(() => buildExcelProfile(quizState.answers, locale), [quizState.answers, locale])
+  const m365Profile = useMemo(() => buildM365Profile(quizState.answers, locale), [quizState.answers, locale])
+  const pptBenefitsCopy = useMemo(() => pptBenefits(locale), [locale])
+  const pptBeforeAfterCopy = useMemo(() => pptBeforeAfter(locale), [locale])
+  const m365BenefitsCopy = useMemo(() => m365Benefits(locale), [locale])
+  const m365BeforeAfterCopy = useMemo(() => m365BeforeAfter(locale), [locale])
 
   useEffect(() => {
     document.title = pageTitle
@@ -70,10 +86,28 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
     if (salesStep === 5) {
       const copy =
         kind === 'ppt'
-          ? pptPlan(quizState.name, pptProfile.levelLabel, pptProfile.timeSavedShort, pptProfile.opportunity)
+          ? pptPlan(
+              quizState.name,
+              pptProfile.levelLabel,
+              pptProfile.timeSavedShort,
+              pptProfile.opportunity,
+              locale,
+            )
           : kind === 'm365'
-            ? m365Plan(quizState.name, m365Profile.readinessLabel, m365Profile.timeSavedShort, m365Profile.opportunity)
-            : excelPlan(quizState.name, excelProfile.levelLabel, excelProfile.timeSavedShort, excelProfile.opportunity)
+            ? m365Plan(
+                quizState.name,
+                m365Profile.readinessLabel,
+                m365Profile.timeSavedShort,
+                m365Profile.opportunity,
+                locale,
+              )
+            : excelPlan(
+                quizState.name,
+                excelProfile.levelLabel,
+                excelProfile.timeSavedShort,
+                excelProfile.opportunity,
+                locale,
+              )
 
       return (
         <TrialPlanScreen
@@ -97,7 +131,7 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
       const spin = (
         <SpinWheelScreen
           name={quizState.name}
-          subtitle="Don't miss your chance to master AI with your personal reward 🎁"
+          subtitle={ui.spinWheelSubtitle}
           onFinish={(pct) => {
             setPercentOff(pct)
             setSalesStep(5)
@@ -117,13 +151,13 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
     const continueLabel =
       salesStep === 0
         ? kind === 'ppt'
-          ? 'See My PowerPoint Mastery Plan →'
+          ? ui.seePptPlan
           : kind === 'excel'
-            ? 'See My Excel Mastery Plan →'
-            : 'Continue →'
+            ? ui.seeExcelPlan
+            : ui.continueArrow
         : kind === 'excel'
-          ? 'Continue →'
-          : 'Continue'
+          ? ui.continueArrow
+          : ui.continue
 
     if (kind === 'excel') {
       return (
@@ -138,8 +172,8 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
           {salesStep === 0 ? (
             <MasterSkillProfileScreen
               name={name}
-              titleLine="Excel + AI Profile"
-              levelKicker="Excel level"
+              titleLine={ui.excelProfileTitle}
+              levelKicker={ui.excelLevelKicker}
               profile={excelProfile}
               badgeEmoji="📊"
             />
@@ -159,46 +193,46 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
         {salesStep === 0 && kind === 'ppt' ? (
           <MasterSkillProfileScreen
             name={name}
-            titleLine="PowerPoint + AI Profile"
-            levelKicker="PowerPoint level"
+            titleLine={ui.pptProfileTitle}
+            levelKicker={ui.pptLevelKicker}
             profile={pptProfile}
           />
         ) : null}
         {salesStep === 0 && kind === 'm365' ? <M365ProfileScreen name={name} profile={m365Profile} /> : null}
         {salesStep === 1 && kind === 'ppt' ? (
           <BulletBenefitsScreen
-            kicker={PPT_BENEFITS.kicker}
-            title={PPT_BENEFITS.title(name)}
-            intro={PPT_BENEFITS.intro}
-            bullets={PPT_BENEFITS.bullets}
-            footer={PPT_BENEFITS.footer}
+            kicker={pptBenefitsCopy.kicker}
+            title={pptBenefitsCopy.title(name)}
+            intro={pptBenefitsCopy.intro}
+            bullets={pptBenefitsCopy.bullets}
+            footer={pptBenefitsCopy.footer}
           />
         ) : null}
         {salesStep === 1 && kind === 'm365' ? (
           <BulletBenefitsScreen
-            kicker={M365_BENEFITS.kicker}
-            title={M365_BENEFITS.title(name)}
-            intro={M365_BENEFITS.intro}
-            bullets={M365_BENEFITS.bullets}
-            footer={M365_BENEFITS.footer}
+            kicker={m365BenefitsCopy.kicker}
+            title={m365BenefitsCopy.title(name)}
+            intro={m365BenefitsCopy.intro}
+            bullets={m365BenefitsCopy.bullets}
+            footer={m365BenefitsCopy.footer}
           />
         ) : null}
         {salesStep === 2 && kind === 'ppt' ? (
           <BeforeAfterTable
-            kicker={PPT_BEFORE_AFTER.kicker}
-            title={PPT_BEFORE_AFTER.title(name)}
-            intro={PPT_BEFORE_AFTER.intro}
-            rows={PPT_BEFORE_AFTER.rows}
-            footer={PPT_BEFORE_AFTER.footer}
+            kicker={pptBeforeAfterCopy.kicker}
+            title={pptBeforeAfterCopy.title(name)}
+            intro={pptBeforeAfterCopy.intro}
+            rows={pptBeforeAfterCopy.rows}
+            footer={pptBeforeAfterCopy.footer}
           />
         ) : null}
         {salesStep === 2 && kind === 'm365' ? (
           <BeforeAfterTable
-            kicker={M365_BEFORE_AFTER.kicker}
-            title={M365_BEFORE_AFTER.title(name)}
-            intro={M365_BEFORE_AFTER.intro}
-            rows={M365_BEFORE_AFTER.rows}
-            footer={M365_BEFORE_AFTER.footer}
+            kicker={m365BeforeAfterCopy.kicker}
+            title={m365BeforeAfterCopy.title(name)}
+            intro={m365BeforeAfterCopy.intro}
+            rows={m365BeforeAfterCopy.rows}
+            footer={m365BeforeAfterCopy.footer}
           />
         ) : null}
         {salesStep === 3 ? <LegalSocialScreen name={name} /> : null}

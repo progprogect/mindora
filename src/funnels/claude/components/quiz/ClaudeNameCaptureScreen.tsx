@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import BrandWordmark from '@/shared/components/BrandWordmark'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeNameCaptureScreenProps {
   onSubmit: (name: string) => void
@@ -7,6 +9,8 @@ interface ClaudeNameCaptureScreenProps {
 
 /** Port of `ve()` — «What should we call you?» with text wordmark header (no Logo, no back). */
 export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeQuizUiCopy(locale).nameCapture
   const [name, setName] = useState('')
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -31,12 +35,8 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
       </header>
 
       <main className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-12 pb-40 animate-fade-up">
-        <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark sm:text-4xl">
-          What should we call you?
-        </h1>
-        <p className="mb-10 text-center text-sm text-sw-grey">
-          We&apos;ll personalise your Claude certification path with your name
-        </p>
+        <h1 className="mb-3 text-center text-3xl leading-tight font-extrabold text-sw-dark sm:text-4xl">{copy.title}</h1>
+        <p className="mb-10 text-center text-sm text-sw-grey">{copy.subtext}</p>
         <input
           ref={inputRef}
           type="text"
@@ -45,7 +45,7 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
           value={name}
           onChange={(e) => setName(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
-          placeholder="Enter your first name"
+          placeholder={copy.placeholder}
           autoComplete="given-name"
           className="w-full rounded-2xl border-2 border-sw-grey-border bg-sw-white px-5 py-4 text-lg text-sw-dark placeholder:text-sw-grey/60 outline-none transition-colors focus:border-sw-blue"
         />
@@ -62,7 +62,7 @@ export default function ClaudeNameCaptureScreen({ onSubmit }: ClaudeNameCaptureS
             disabled={!trimmed}
             className="w-full rounded-full bg-sw-blue py-4 text-base font-bold text-sw-white shadow-lg transition-all duration-150 hover:bg-sw-blue-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Continue
+            {copy.continue}
           </button>
         </div>
         <div style={{ paddingTop: '56px', paddingBottom: 'env(safe-area-inset-bottom)' }} />

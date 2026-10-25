@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { claudeQuizScreens } from '@/funnels/claude/data/claudeQuizScreens'
+import { getClaudeQuizScreens } from '@/funnels/claude/data/claudeQuizScreens'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
 import { CLAUDE_TOTAL_QUESTION_STEPS, type ClaudeIdentity, type ClaudeQuizState } from '@/funnels/claude/types/claudeQuiz'
 import {
   clearClaudeSalesStep,
@@ -46,7 +47,9 @@ const SPIN_WHEEL_DISCOUNT_PERCENT = 97
  * docs/claude_ai_certification/implementation-plan.md.
  */
 export default function ClaudeQuizPage() {
+  const { locale } = useI18n()
   const navigate = useNavigate()
+  const claudeQuizScreens = useMemo(() => getClaudeQuizScreens(locale), [locale])
   const [quizState, setQuizState] = useState<ClaudeQuizState>(() => loadClaudeQuizState())
   const [salesStep, setSalesStep] = useState<number>(() => loadClaudeSalesStep())
   const [percentOff, setPercentOff] = useState<number>(50)
@@ -76,8 +79,8 @@ export default function ClaudeQuizPage() {
   }, [])
 
   const profile = useMemo(
-    () => buildClaudeProfile(quizState.identity, quizState.answers),
-    [quizState.identity, quizState.answers],
+    () => buildClaudeProfile(quizState.identity, quizState.answers, locale),
+    [quizState.identity, quizState.answers, locale],
   )
 
   const currentScreen = quizState.step < claudeQuizScreens.length ? claudeQuizScreens[quizState.step] : null

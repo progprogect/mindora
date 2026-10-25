@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useI18n } from '@/i18n/I18nProvider'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
 export default function MindoraStubPage({ title }: { title: string }) {
+  const { t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex items-center gap-2 px-4 h-14 border-b border-sw-grey-border sticky top-0 z-10 bg-white">
         <Link
           to="/app/dashboard"
           className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 transition-colors"
-          aria-label="Back to dashboard"
+          aria-label={t('app.common.backToDashboard')}
         >
           <svg
             width="20"
@@ -28,7 +30,7 @@ export default function MindoraStubPage({ title }: { title: string }) {
           <img src={COACH_AVATAR} alt={COACH_NAME} className="w-9 h-9 rounded-full object-contain p-1" />
           <div>
             <h1 className="text-base font-bold text-sw-dark leading-tight">{title}</h1>
-            <p className="text-xs text-sw-grey">Your AI Coach</p>
+            <p className="text-xs text-sw-grey">{t('app.mindora.yourAiCoach')}</p>
           </div>
         </div>
       </div>

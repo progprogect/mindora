@@ -11,6 +11,7 @@ import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from 
 import { attributionPayload, track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COACH_AVATAR, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
+import { useI18n } from '@/i18n/I18nProvider'
 
 const OFFER = COACH_OFFER_SLUG
 const PRICE = 19.95
@@ -28,7 +29,8 @@ function BounceDashboard() {
   useEffect(() => {
     window.location.href = '/app/dashboard'
   }, [])
-  return <AuthSpinner message="Almost there..." />
+  const { t } = useI18n()
+  return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
 function Trait({ icon, label }: { icon: 'target' | 'brain' | 'shield' | 'clock'; label: string }) {
@@ -161,6 +163,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
+  const { t } = useI18n()
   return (
     <div
       className="rounded-2xl p-5 sm:p-6"
@@ -177,13 +180,15 @@ function OfferCard({
               clipRule="evenodd"
             />
           </svg>
-          ONE-TIME UNLOCK
+          {t('account.mindora.oneTimeUnlock')}
         </span>
       </div>
-      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">Unlock Mindora today</h3>
+      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">
+        {t('account.mindora.unlockTitle')}
+      </h3>
       <div className="flex items-center justify-center gap-3 mb-5">
         <span className="text-lg text-red-400 line-through font-bold decoration-2">${WAS}</span>
-        <span className="text-sm font-bold text-sw-blue">Today Only</span>
+        <span className="text-sm font-bold text-sw-blue">{t('account.common.todayOnly')}</span>
         <span className="text-4xl sm:text-5xl font-extrabold text-sw-blue">${PRICE}</span>
       </div>
       <button
@@ -198,10 +203,10 @@ function OfferCard({
         {purchaseState === 'processing' ? (
           <span className="flex items-center justify-center gap-2">
             <span className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-            Processing...
+            {t('account.common.processing')}
           </span>
         ) : (
-          <span className="flex items-center justify-center gap-2">🔓 Unlock Mindora Now →</span>
+          <span className="flex items-center justify-center gap-2">{t('account.mindora.unlockCta')}</span>
         )}
       </button>
       <div className="flex items-center justify-center gap-1.5 mb-3">
@@ -213,7 +218,7 @@ function OfferCard({
           />
         </svg>
         <span className="text-sm text-sw-grey font-medium">
-          {hasSavedCard ? 'Secure one-click upgrade' : 'Secure payment via Stripe'}
+          {hasSavedCard ? t('account.mindora.secureOneClick') : t('account.mindora.secureStripe')}
         </span>
       </div>
       {errorMessage ? (
@@ -221,11 +226,10 @@ function OfferCard({
       ) : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
-          By clicking above, <span className="font-bold text-sw-dark">you agree to a one-time charge of ${PRICE}</span>
-          {hasSavedCard
-            ? ' using your saved payment method. Access is granted instantly.'
-            : ' via Stripe. Access is granted after payment.'}{' '}
-          This offer reverts to ${WAS} after you leave this page.
+          {t('account.common.chargeAgreeOneTime')}{' '}
+          <span className="font-bold text-sw-dark">${PRICE}</span>
+          {hasSavedCard ? t('account.common.chargeSavedInstant') : t('account.common.chargeStripeAfter')}{' '}
+          {t('account.common.offerRevertsAfter')} ${WAS} {t('account.common.afterYouLeave')}
         </p>
       </div>
       <div className="text-center">
@@ -234,7 +238,7 @@ function OfferCard({
           onClick={onSkip}
           className="text-sm text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors"
         >
-          No thanks, skip this offer
+          {t('account.common.noThanksSkipOffer')}
         </button>
       </div>
     </div>
@@ -242,6 +246,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
+  const { t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">
@@ -250,14 +255,12 @@ function SuccessScreen() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">Payment Successful!</h2>
-        <p className="text-sw-dark font-semibold text-base mb-1">🎉 Mindora AI Coach Unlocked</p>
-        <p className="text-sw-grey text-sm mb-2">
-          Your personal AI coach is now ready. You&apos;ll find Mindora in your dashboard.
-        </p>
+        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">{t('account.common.paymentSuccessful')}</h2>
+        <p className="text-sw-dark font-semibold text-base mb-1">{t('account.mindora.successCoach')}</p>
+        <p className="text-sw-grey text-sm mb-2">{t('account.mindora.successBody')}</p>
         <div className="mt-6">
           <div className="w-6 h-6 border-2 border-sw-blue border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-xs text-sw-grey mt-2">Taking you to your next step...</p>
+          <p className="text-xs text-sw-grey mt-2">{t('account.common.takingYouNext')}</p>
         </div>
       </div>
     </div>
@@ -265,6 +268,7 @@ function SuccessScreen() {
 }
 
 export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
+  const { t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -366,7 +370,7 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
       <main className="max-w-2xl mx-auto px-4 pb-32">
         <section className="text-center pt-4 pb-0">
           <h1 className="text-[2.5rem] sm:text-5xl font-extrabold text-sw-dark leading-[1.1] mb-1">
-            Meet{' '}
+            {t('account.mindora.meet')}{' '}
             <span
               className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7)' }}
@@ -375,21 +379,21 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
             </span>
           </h1>
           <p className="text-[1.75rem] sm:text-4xl font-extrabold text-sw-dark leading-[1.15] mb-1">
-            The coach that turns
+            {t('account.mindora.coachTurns')}
           </p>
           <p className="text-[1.75rem] sm:text-4xl font-extrabold leading-[1.15] mb-2">
             <span
               className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7)' }}
             >
-              learning
+              {t('account.mindora.learning')}
             </span>{' '}
-            into{' '}
+            {t('account.mindora.into')}{' '}
             <span
               className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7)' }}
             >
-              results.
+              {t('account.mindora.results')}
             </span>
           </p>
           <div className="flex justify-center mb-5">
@@ -398,8 +402,10 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
             </svg>
           </div>
           <p className="text-base sm:text-lg text-sw-dark leading-relaxed max-w-sm mx-auto mb-0">
-            Every lesson ends with a personalised action plan — so you <span className="font-bold">actually apply</span>{' '}
-            what you learn and make <span className="font-bold">real progress.</span>
+            {t('account.mindora.heroSubLead')}{' '}
+            <span className="font-bold">{t('account.mindora.heroSubApply')}</span>{' '}
+            {t('account.mindora.heroSubMid')}{' '}
+            <span className="font-bold">{t('account.mindora.heroSubProgress')}</span>
           </p>
         </section>
         <section className="relative mt-2 mb-6">
@@ -414,23 +420,23 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
             <div className="flex w-full max-w-[320px] sm:max-w-[380px] items-center gap-1.5 sm:gap-2.5">
               <img
                 src={COACH_AVATAR}
-                alt="Mindora"
+                alt={t('account.mindora.altMindora')}
                 className="w-[52%] h-auto object-contain drop-shadow-sm"
               />
               <div className="relative flex-1 min-w-0">
                 <div className="absolute left-0 top-[42%] -translate-x-[7px] -translate-y-1/2 h-3.5 w-3.5 rotate-45 rounded-[2px] border-b border-l border-sw-grey-border bg-white shadow-sm" aria-hidden="true" />
                 <p className="relative rounded-[1.35rem] border border-sw-grey-border bg-white px-3 py-2.5 text-[13px] sm:px-3.5 sm:py-3 sm:text-sm font-semibold leading-snug text-slate-800 shadow-md">
-                  &ldquo;Let&apos;s turn today&apos;s lesson into real progress.&rdquo;
+                  &ldquo;{t('account.mindora.quote')}&rdquo;
                 </p>
               </div>
             </div>
           </div>
           <div className="relative rounded-2xl border border-sw-grey-border border-t-2 border-t-gray-300 bg-gray-50/80 pt-12 pb-4 px-4">
             <div className="grid grid-cols-4 gap-2 text-center">
-              <Trait icon="target" label="Personalised to you" />
-              <Trait icon="brain" label="Remembers your progress" />
-              <Trait icon="shield" label="Keeps you accountable" />
-              <Trait icon="clock" label="Available 24/7" />
+              <Trait icon="target" label={t('account.mindora.traitPersonalised')} />
+              <Trait icon="brain" label={t('account.mindora.traitRemembers')} />
+              <Trait icon="shield" label={t('account.mindora.traitAccountable')} />
+              <Trait icon="clock" label={t('account.mindora.trait247')} />
             </div>
           </div>
         </section>
@@ -445,38 +451,40 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
         </div>
         <section className="mt-10 mb-8">
           <h2 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center leading-tight mb-5">
-            Why Most People Never Change
+            {t('account.mindora.whyNeverChange')}
           </h2>
           <div className="space-y-3">
-            <Obstacle text="They don't know what to do next" />
-            <Obstacle text="They lose momentum after a few days" />
-            <Obstacle text="They overthink instead of taking action" />
+            <Obstacle text={t('account.mindora.obstacle1')} />
+            <Obstacle text={t('account.mindora.obstacle2')} />
+            <Obstacle text={t('account.mindora.obstacle3')} />
           </div>
           <div className="mt-6 text-center">
             <p className="text-base font-bold text-sw-dark">
-              Mindora removes <span className="text-sw-blue">every one</span> of those obstacles.
+              {t('account.mindora.removesLead')}{' '}
+              <span className="text-sw-blue">{t('account.mindora.removesEvery')}</span>{' '}
+              {t('account.mindora.removesTail')}
             </p>
           </div>
         </section>
         <section className="mb-8">
           <h2 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center leading-tight mb-5">
-            How Mindora Works
+            {t('account.mindora.howWorks')}
           </h2>
           <div
             className="rounded-2xl p-6"
             style={{ background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)' }}
           >
             <div className="flex flex-col items-center gap-1">
-              <FlowStep icon="lesson" title="Complete a Lesson" subtitle="Learn at your own pace" />
+              <FlowStep icon="lesson" title={t('account.mindora.flowLessonTitle')} subtitle={t('account.mindora.flowLessonSub')} />
               <FlowArrow />
-              <FlowStep icon="coach" title="Mindora Creates Your Action Plan" subtitle="Personalised to your goals" />
+              <FlowStep icon="coach" title={t('account.mindora.flowCoachTitle')} subtitle={t('account.mindora.flowCoachSub')} />
               <FlowArrow />
-              <FlowStep icon="rocket" title="Apply It Today" subtitle="Real progress, every day" />
+              <FlowStep icon="rocket" title={t('account.mindora.flowApplyTitle')} subtitle={t('account.mindora.flowApplySub')} />
             </div>
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Example Conversation</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">{t('account.mindora.exampleConvo')}</h2>
           <div className="rounded-2xl border border-sw-grey-border bg-gray-50 p-4 sm:p-5">
             <div className="flex gap-3 mb-4">
               <div className="w-8 h-8 rounded-full bg-sw-blue flex items-center justify-center flex-shrink-0 overflow-hidden">
@@ -485,52 +493,48 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
               <div className="flex-1 bg-white rounded-xl rounded-tl-sm p-4 border border-sw-grey-border shadow-sm">
                 <p className="text-sm font-bold text-sw-dark mb-2">{COACH_NAME}</p>
                 <p className="text-sm text-sw-dark leading-relaxed mb-3">
-                  Great job completing today&apos;s Claude lesson 👏
+                  {t('account.mindora.claudeLesson')}
                 </p>
-                <p className="text-sm text-sw-dark leading-relaxed mb-3">
-                  Based on your goal of becoming more productive...
-                </p>
+                <p className="text-sm text-sw-dark leading-relaxed mb-3">{t('account.mindora.basedOnGoal')}</p>
                 <div className="rounded-lg bg-sw-blue-light border border-sw-blue-border p-3 mb-3">
-                  <p className="text-xs font-bold text-sw-blue uppercase tracking-wide mb-1">Today&apos;s Challenge</p>
-                  <p className="text-sm text-sw-dark">
-                    Spend 15 minutes using Claude to automate one repetitive task you do every week.
+                  <p className="text-xs font-bold text-sw-blue uppercase tracking-wide mb-1">
+                    {t('account.mindora.todaysChallenge')}
                   </p>
+                  <p className="text-sm text-sw-dark">{t('account.mindora.challengeBody')}</p>
                 </div>
-                <p className="text-sm text-sw-dark leading-relaxed">
-                  When you&apos;ve finished, come back and I&apos;ll help you improve it even further. 🎯
-                </p>
+                <p className="text-sm text-sw-dark leading-relaxed">{t('account.mindora.comeBack')}</p>
               </div>
             </div>
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Why Members Unlock Mindora</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">{t('account.mindora.whyUnlock')}</h2>
           <div className="rounded-2xl border border-sw-grey-border p-5 bg-white space-y-3">
-            <MemberPoint text="Personalised to your goals" />
-            <MemberPoint text="Remembers your progress" />
-            <MemberPoint text="Keeps you accountable" />
-            <MemberPoint text="Available whenever you need guidance" />
+            <MemberPoint text={t('account.mindora.member1')} />
+            <MemberPoint text={t('account.mindora.member2')} />
+            <MemberPoint text={t('account.mindora.member3')} />
+            <MemberPoint text={t('account.mindora.member4')} />
           </div>
         </section>
         <section className="mb-8">
-          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">Generic AI vs Mindora</h2>
+          <h2 className="text-lg font-extrabold text-sw-dark text-center mb-4">{t('account.mindora.compareTitle')}</h2>
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-xl border border-sw-grey-border bg-gray-50 p-4">
-              <p className="text-sm font-bold text-sw-grey text-center mb-3">Generic AI</p>
+              <p className="text-sm font-bold text-sw-grey text-center mb-3">{t('account.mindora.genericAi')}</p>
               <div className="space-y-2.5">
-                <ComparePoint text="Generic answers" isNegative />
-                <ComparePoint text="Doesn't know your lessons" isNegative />
-                <ComparePoint text="Doesn't remember progress" isNegative />
-                <ComparePoint text="Waits for questions" isNegative />
+                <ComparePoint text={t('account.mindora.compareNeg1')} isNegative />
+                <ComparePoint text={t('account.mindora.compareNeg2')} isNegative />
+                <ComparePoint text={t('account.mindora.compareNeg3')} isNegative />
+                <ComparePoint text={t('account.mindora.compareNeg4')} isNegative />
               </div>
             </div>
             <div className="rounded-xl border-2 border-sw-blue/30 bg-sw-blue-light/20 p-4">
               <p className="text-sm font-bold text-sw-blue text-center mb-3">{COACH_NAME}</p>
               <div className="space-y-2.5">
-                <ComparePoint text="Personal coaching" />
-                <ComparePoint text="Understands your learning" />
-                <ComparePoint text="Learns as you improve" />
-                <ComparePoint text="Guides you proactively" />
+                <ComparePoint text={t('account.mindora.comparePos1')} />
+                <ComparePoint text={t('account.mindora.comparePos2')} />
+                <ComparePoint text={t('account.mindora.comparePos3')} />
+                <ComparePoint text={t('account.mindora.comparePos4')} />
               </div>
             </div>
           </div>
@@ -550,7 +554,7 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
           <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
             <div className="flex flex-col">
               <div className="flex items-baseline gap-1">
-                <span className="text-sm font-semibold text-sw-grey">Only</span>
+                <span className="text-sm font-semibold text-sw-grey">{t('account.common.only')}</span>
                 <span className="font-extrabold text-xl text-sw-dark">${PRICE}</span>
               </div>
               <button
@@ -558,7 +562,7 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
                 onClick={skip}
                 className="text-[11px] text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors text-left"
               >
-                Skip offer →
+                {t('account.common.skipOfferArrow')}
               </button>
             </div>
             <button
@@ -567,7 +571,7 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
               disabled={state === 'processing'}
               className="px-7 py-3 bg-sw-blue hover:bg-sw-blue-hover text-white text-base font-bold rounded-full transition-all active:scale-95 disabled:opacity-60 whitespace-nowrap"
             >
-              {state === 'processing' ? 'Processing...' : '🔓 Unlock Mindora →'}
+              {state === 'processing' ? t('account.common.processing') : t('account.mindora.unlockSticky')}
             </button>
           </div>
           <div style={{ paddingBottom: 'env(safe-area-inset-bottom)', backgroundColor: 'white' }} />

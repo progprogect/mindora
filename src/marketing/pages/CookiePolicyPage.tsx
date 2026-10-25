@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
 import { COMPANY } from '@/marketing/data/company'
+import { cookiePolicyCopy } from '@/marketing/data/cookiePolicyCopy'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 const BROWSERS = [
   { label: 'Microsoft Edge', href: 'https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09' },
@@ -21,59 +23,56 @@ function ExtLink({ href, children }: { href: string; children: string }) {
 }
 
 export default function CookiePolicyPage() {
-  usePageTitle('Cookie Policy — Mindora Academy')
+  const { locale } = useI18n()
+  const copy = cookiePolicyCopy(locale)
+  usePageTitle(copy.pageTitle)
+  const intro = copy.sections.introduction
+  const general = copy.sections.general
+  const used = copy.sections.used
+  const contact = copy.sections.contact
 
   return (
     <>
-      <LegalHero title="Cookie Policy" />
+      <LegalHero kicker={copy.kicker} title={copy.heroTitle} />
       <LegalCard>
-        <LegalSection title="Introduction">
+        <LegalSection title={intro.title}>
           <p>
-            This Cookie Policy describes the use of cookies and similar technologies on our website
-            — the {COMPANY.websiteHost} website (hereinafter — &quot;{COMPANY.websiteHost}&quot;).
-            It explains how cookies are used to improve your user experience and enhance the quality
-            of our services.
+            {intro.p1Start}
+            {COMPANY.websiteHost}
+            {intro.p1Mid}
+            {COMPANY.websiteHost}
+            {intro.p1End}
           </p>
           <p>
-            {COMPANY.websiteHost} collects information through cookies placed on your device. If you
-            have any questions or require additional information, please contact us through the{' '}
+            {COMPANY.websiteHost}
+            {intro.p2Start}
             <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
-              contact page
+              {intro.contactPageLink}
             </Link>
-            .
+            {intro.p2End}
           </p>
           <p>
-            This Cookie Policy should be read together with our{' '}
+            {intro.p3Start}
             <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
-              Privacy Policy
-            </Link>{' '}
-            and{' '}
-            <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
-              Terms of Use
+              {intro.privacyLink}
             </Link>
-            .
+            {intro.p3Mid}
+            <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
+              {intro.termsLink}
+            </Link>
+            {intro.p3End}
           </p>
           <p>
-            By interacting with the {COMPANY.websiteHost} website, you consent to the use of cookies
-            in accordance with this Policy.
+            {intro.p4Start}
+            {COMPANY.websiteHost}
+            {intro.p4End}
           </p>
         </LegalSection>
 
-        <LegalSection title="General Information">
-          <p>
-            If you prefer not to allow the use of cookies on your device, you can change your
-            internet browser settings to reject some or all cookies, as well as receive
-            notifications when they are installed. Please note that in this case, access to or
-            proper functioning of certain sections of the website may be limited. Detailed
-            instructions on changing browser settings can be found in the &quot;Help,&quot;
-            &quot;Tools,&quot; or &quot;Settings&quot; sections of your browser.
-          </p>
-          <p>
-            If you wish to delete cookies already stored on your device, you can do so manually at
-            any time. However, deleting existing cookies will not prevent new ones from being
-            installed unless you change the relevant browser settings.
-          </p>
-          <p>To manage and block cookies, please refer to the guides for the respective browsers:</p>
+        <LegalSection title={general.title}>
+          <p>{general.p1}</p>
+          <p>{general.p2}</p>
+          <p>{general.p3}</p>
           <ul className="list-disc space-y-2 pl-5">
             {BROWSERS.map((browser) => (
               <li key={browser.label}>
@@ -81,68 +80,64 @@ export default function CookiePolicyPage() {
               </li>
             ))}
           </ul>
-          <p>Mobile device users can manage cookies through their device settings:</p>
+          <p>{general.p4}</p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              For Android — see{' '}
-              <ExtLink href="https://support.google.com/accounts/answer/61416">Google Help</ExtLink>
-              .
+              {general.androidPrefix}
+              <ExtLink href="https://support.google.com/accounts/answer/61416">{general.googleHelp}</ExtLink>
+              {general.androidSuffix}
             </li>
             <li>
-              For iOS — visit{' '}
-              <ExtLink href="https://support.apple.com/HT201265">Apple Support</ExtLink>.
+              {general.iosPrefix}
+              <ExtLink href="https://support.apple.com/HT201265">{general.appleSupport}</ExtLink>
+              {general.iosSuffix}
             </li>
           </ul>
         </LegalSection>
 
-        <LegalSection title="Cookies Used by Mindora Academy">
+        <LegalSection title={used.title}>
           <p>
-            {COMPANY.websiteHost} uses various cookies necessary for the proper functioning of the
-            website, ensuring security, analyzing performance, and improving the user experience,
-            including, but not limited to, the following:
+            {COMPANY.websiteHost}
+            {used.p1Start}
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Type:</strong> required / security / analytical
+              <strong>{used.typeLabel}</strong> {used.typeValue}
             </li>
             <li>
-              <strong>Retention period:</strong> session / persistent
+              <strong>{used.retentionLabel}</strong> {used.retentionValue}
             </li>
             <li>
-              <strong>Purpose:</strong> ensuring the functioning and security of the website, as
-              well as collecting analytical data to improve our services.
+              <strong>{used.purposeLabel}</strong> {used.purposeValue}
             </li>
           </ul>
           <p>
-            We use Google Analytics to better understand how you interact with our website and to
-            improve the quality of the user experience. For more detailed information, please refer
-            to{' '}
-            <ExtLink href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</ExtLink>
-            .
+            {used.p2Start}
+            <ExtLink href="https://policies.google.com/privacy">{used.googlePrivacy}</ExtLink>
+            {used.p2End}
           </p>
         </LegalSection>
 
-        <LegalSection title="Contact Us">
+        <LegalSection title={contact.title}>
           <p>
-            If you have any questions or require clarification regarding this Cookie Policy or the
-            ways in which your data is processed, please contact us through the{' '}
+            {contact.p1Start}
             <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
-              contact page
+              {contact.contactPageLink}
             </Link>
-            .
+            {contact.p1End}
           </p>
           <p>
-            Related:{' '}
+            {contact.relatedPrefix}{' '}
             <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
-              Privacy Policy
+              {contact.privacyLink}
             </Link>{' '}
-            ·{' '}
+            {contact.relatedSeparator}{' '}
             <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
-              Terms &amp; Conditions
+              {contact.termsLink}
             </Link>{' '}
-            ·{' '}
+            {contact.relatedSeparator}{' '}
             <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
-              Contact
+              {contact.contactLink}
             </Link>
           </p>
         </LegalSection>

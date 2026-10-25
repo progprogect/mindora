@@ -1,0 +1,737 @@
+{
+  "ai-and-technology": {
+    "sourceChunk": "ai-and-technology-C2SJHC_I.js",
+    "template": "path-catalog-A",
+    "hero": {
+      "emoji": "🤖",
+      "h1": "ИИ и технологии",
+      "tagline": "Освойте инструменты ИИ, создайте источники дохода и обезопасьте карьеру на будущее.",
+      "courseCountLabel": "from courseCounts('ai-and-technology')"
+    },
+    "badge": "Значок исследователя ИИ",
+    "cards": [
+      {
+        "id": "28-day-ai-challenge",
+        "path": "/app/courses/28-day-ai-challenge",
+        "badge": "🔥 Самый популярный",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#1D4ED8] to-[#2563EB]",
+        "emoji": "🤖",
+        "duration": "28 дней · 5 мин/день",
+        "title": "28-дневный челлендж по ИИ",
+        "subtitle": "От новичка в ИИ до продвинутого пользователя. Один навык в день. Результат, который меняет жизнь.",
+        "lessons": 28,
+        "xp": 560
+      },
+      {
+        "id": "chatgpt-for-business",
+        "path": "/app/courses/chatgpt-for-business",
+        "badge": "💼 Бизнес",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#0891B2] to-[#0E7490]",
+        "emoji": "💬",
+        "duration": "21 день · 5 мин/день",
+        "title": "ChatGPT для бизнеса",
+        "subtitle": "Освойте ChatGPT, чтобы экономить время, общаться эффективнее и развивать бизнес.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "claude-ai-mastery",
+        "path": "/app/courses/claude-ai-mastery",
+        "badge": "⭐ Новинка",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#4F46E5] to-[#4338CA]",
+        "emoji": "🧠",
+        "duration": "21 день · 5 мин/день",
+        "title": "Claude AI: думайте умнее, работайте быстрее",
+        "subtitle": "От полного нуля до уверенного пользователя Claude за 21 урок. Пишите лучше, исследуйте эффективнее и успевайте больше каждый день.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "master-gemini",
+        "path": "/app/courses/master-gemini",
+        "badge": "✨ Популярный",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#4338CA] to-[#7C3AED]",
+        "emoji": "✨",
+        "duration": "21 день · 5 мин/день",
+        "title": "Освойте Gemini: ИИ-мощь Google",
+        "subtitle": "От первого промпта до продвинутых сценариев — раскройте весь потенциал ИИ Google за 21 день.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "claude-ai-excel",
+        "path": "/app/courses/claude-ai-excel",
+        "badge": "📊 Новинка",
+        "badgeColor": "bg-green-100 text-green-700",
+        "gradient": "from-[#059669] to-[#065F46]",
+        "emoji": "📊",
+        "duration": "15 уроков · 5 мин/день",
+        "title": "Claude AI для Excel",
+        "subtitle": "Используйте ИИ, чтобы понимать, исправлять и создавать таблицы — без продвинутых навыков Excel.",
+        "lessons": 15,
+        "xp": 375
+      },
+      {
+        "id": "master-ai-powerpoint",
+        "path": "/app/courses/master-ai-powerpoint",
+        "badge": "📽️ Новинка",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#EA580C] to-[#C2410C]",
+        "emoji": "📽️",
+        "duration": "18 уроков · 5 мин/день",
+        "title": "ИИ для PowerPoint",
+        "subtitle": "Планируйте, создавайте и проводите презентации, которые действительно «заходят», с помощью ИИ — без навыков дизайна.",
+        "lessons": 18,
+        "xp": 450
+      },
+      {
+        "id": "master-ai-microsoft-365",
+        "path": "/app/courses/master-ai-microsoft-365",
+        "badge": "🗂️ Новинка",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1D4ED8] to-[#1E3A8A]",
+        "emoji": "🗂️",
+        "duration": "24 урока · 5 мин/урок",
+        "title": "ИИ для Microsoft 365",
+        "subtitle": "Используйте ИИ в Word, Excel, PowerPoint, Outlook и Teams, чтобы быстрее и качественнее выполнять реальную работу.",
+        "lessons": 24,
+        "xp": 600
+      },
+      {
+        "id": "prompt-engineering-mastery",
+        "path": "/app/courses/prompt-engineering-mastery",
+        "badge": "🎯 Обязательно",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#059669] to-[#047857]",
+        "emoji": "✍️",
+        "duration": "21 день · 5 мин/день",
+        "title": "Мастерство промпт-инжиниринга",
+        "subtitle": "Пишите промпты, которые стабильно дают нужный результат.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "ai-productivity-system",
+        "path": "/app/courses/ai-productivity-system",
+        "badge": "⚡ Продуктивность",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#4F46E5] to-[#3730A3]",
+        "emoji": "⚡",
+        "duration": "21 день · 5 мин/день",
+        "title": "Система продуктивности на ИИ",
+        "subtitle": "Делайте в 2 раза больше за половину времени. Постройте систему продуктивности на ИИ и экономьте 10+ часов в неделю.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-automation-blueprint",
+        "path": "/app/courses/ai-automation-blueprint",
+        "badge": "🤖 Автоматизация",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#EA580C] to-[#9A3412]",
+        "emoji": "🤖",
+        "duration": "28 дней · 5 мин/день",
+        "title": "План автоматизации на ИИ",
+        "subtitle": "Автоматизируйте рутину и экономьте часы каждый день. Создавайте no-code сценарии на ИИ, которые работают 24/7 — от простых триггеров до умных многошаговых систем.",
+        "lessons": 28,
+        "xp": 700
+      },
+      {
+        "id": "ai-content-creator-accelerator",
+        "path": "/app/courses/ai-content-creator-accelerator",
+        "badge": "🎬 Для креаторов",
+        "badgeColor": "bg-pink-100 text-pink-700",
+        "gradient": "from-[#DB2777] to-[#BE185D]",
+        "emoji": "🎬",
+        "duration": "21 день · 5 мин/день",
+        "title": "Ускоритель креатора контента на ИИ",
+        "subtitle": "Создавайте и публикуйте контент в 10 раз быстрее с ИИ. Постройте монетизируемый faceless-бренд на ИИ за 90 дней.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "ai-side-hustle-accelerator",
+        "path": "/app/courses/ai-side-hustle-accelerator",
+        "badge": "💸 Подработка",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "💸",
+        "duration": "21 день · 5 мин/день",
+        "title": "Ускоритель подработки на ИИ",
+        "subtitle": "7 проверенных источников дохода на ИИ. Запустите первый за 48 часов.",
+        "lessons": 21,
+        "xp": 3150
+      },
+      {
+        "id": "ai-digital-product-launch",
+        "path": "/app/courses/ai-digital-product-launch",
+        "badge": "⚡ Спринт на выходные",
+        "badgeColor": "bg-amber-100 text-amber-700",
+        "gradient": "from-[#D97706] to-[#B45309]",
+        "emoji": "⚡",
+        "duration": "21 день · 5 мин/день",
+        "title": "Запуск цифрового продукта на ИИ за 48 часов",
+        "subtitle": "От идеи до первой продажи за одни выходные.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-ads-accelerator",
+        "path": "/app/courses/ai-ads-accelerator",
+        "badge": "📣 Реклама",
+        "badgeColor": "bg-red-100 text-red-700",
+        "gradient": "from-[#DC2626] to-[#B91C1C]",
+        "emoji": "📣",
+        "duration": "21 день · 5 мин/день",
+        "title": "Ускоритель рекламы на ИИ",
+        "subtitle": "Используйте ИИ для текстов объявлений, креативов и оптимизации кампаний. Снижайте стоимость привлечения на 40%+.",
+        "lessons": 21,
+        "xp": 525
+      },
+      {
+        "id": "ai-filmmaking-studio",
+        "path": "/app/courses/ai-filmmaking-studio",
+        "badge": "🎬 Премиум",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0891B2] to-[#0E7490]",
+        "emoji": "🎬",
+        "duration": "21 день · 5 мин/день",
+        "title": "Студия кинопроизводства на ИИ",
+        "subtitle": "Создавайте кинематографичные короткометражки, ролики для бренда и контент для YouTube с помощью ИИ-видеоинструментов. Камера не нужна.",
+        "lessons": 21,
+        "xp": 525
+      }
+    ]
+  },
+  "success-mindset": {
+    "sourceChunk": "success-mindset-Bg1nH8IL.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "unlock-growth-mindset",
+        "path": "/app/courses/unlock-growth-mindset",
+        "badge": "🌱 Новинка",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#92400e] to-[#d97706]",
+        "emoji": "🌱",
+        "duration": "18 дней · 5 мин/день",
+        "title": "Откройте mindset роста",
+        "subtitle": "Узнайте, как убеждения о таланте и усилиях влияют на всё — и научитесь перестраивать их для устойчивого успеха.",
+        "lessons": 18,
+        "xp": 360
+      },
+      {
+        "id": "confidence-accelerator",
+        "path": "/app/courses/confidence-accelerator",
+        "badge": "🔥 Меняет жизнь",
+        "badgeColor": "bg-amber-100 text-amber-700",
+        "gradient": "from-[#92400e] to-[#b45309]",
+        "emoji": "🔥",
+        "duration": "21 день · 10 мин/день",
+        "title": "Ускоритель уверенности",
+        "subtitle": "Преодолейте сомнения в себе, укрепите уверенность и раскройте потенциал с ежедневными микроупражнениями от психологов.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "28-day-success-mindset",
+        "path": "/app/courses/28-day-success-mindset",
+        "badge": "⚡ Флагман",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1e3a5f] to-[#2563eb]",
+        "emoji": "⚡",
+        "duration": "28 дней · 5 мин/день",
+        "title": "28-дневный челлендж mindset успеха",
+        "subtitle": "Измените мышление, выработайте сильные ежедневные привычки и постройте mindset для устойчивого успеха.",
+        "lessons": 28,
+        "xp": 560
+      },
+      {
+        "id": "high-performance-accelerator",
+        "path": "/app/courses/high-performance-accelerator",
+        "badge": "⚡ Средний уровень",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#3b1f6e] to-[#6366f1]",
+        "emoji": "🧠",
+        "duration": "21 день · 5 мин/день",
+        "title": "Ускоритель высокой эффективности",
+        "subtitle": "Развивайте фокус, дисциплину и привычки элитных исполнителей, чтобы стабильно достигать большего.",
+        "lessons": 21,
+        "xp": 440
+      },
+      {
+        "id": "millionaire-mindset",
+        "path": "/app/courses/millionaire-mindset",
+        "badge": "💰 Богатство",
+        "badgeColor": "bg-emerald-100 text-emerald-700",
+        "gradient": "from-[#166534] to-[#10b981]",
+        "emoji": "💰",
+        "duration": "28 дней · 5 мин/день",
+        "title": "Мастер-класс mindset миллионера",
+        "subtitle": "Узнайте, как успешные предприниматели думают о деньгах, возможностях, риске и долгосрочном создании богатства.",
+        "lessons": 28,
+        "xp": 580
+      }
+    ],
+    "badge": "Значок мастера mindset",
+    "hero": {
+      "emoji": "🧠",
+      "h1": "Mindset успеха",
+      "tagline": "Перестройте мышление. Укрепите непоколебимую уверенность. Развивайте психологию устойчивого успеха.",
+      "courseCountLabel": "34 курса"
+    }
+  },
+  "career": {
+    "sourceChunk": "career-CX6C-xd2.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "28-day-career-accelerator",
+        "path": "/app/courses/28-day-career-accelerator",
+        "badge": "🚀 Флагман",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "💼",
+        "duration": "21 день · 15 мин/день",
+        "title": "21-дневный ускоритель карьеры",
+        "subtitle": "Чётко определите карьерный вектор, развивайте редкие ценные навыки и набирайте неостановимый импульс — один сфокусированный день за раз.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "squiggly-career-navigator",
+        "path": "/app/courses/squiggly-career-navigator",
+        "badge": "🌀 Нелинейный путь",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#115E59]",
+        "emoji": "🌀",
+        "duration": "21 день · 15 мин/день",
+        "title": "Навигатор «извилистой» карьеры",
+        "subtitle": "Откажитесь от карьерной лестницы, примите нелинейный путь и спроектируйте карьеру с смыслом, разнообразием и возможностями.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "deep-work-career-focus",
+        "path": "/app/courses/deep-work-career-focus",
+        "badge": "🎯 Глубокий фокус",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#134E4A]",
+        "emoji": "🎯",
+        "duration": "21 день · 15 мин/день",
+        "title": "Глубокая работа и карьерный фокус",
+        "subtitle": "Освойте редкую способность концентрироваться без отвлечений, накапливайте карьерный капитал через целенаправленную практику и создавайте работу, которую невозможно игнорировать.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "salary-promotion-playbook",
+        "path": "/app/courses/salary-promotion-playbook",
+        "badge": "💰 Переговоры",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0C4A6E]",
+        "emoji": "💰",
+        "duration": "21 день · 15 мин/день",
+        "title": "Плейбук зарплаты и повышений",
+        "subtitle": "Освойте искусство и науку получать достойную оплату — через психологию переговоров, стратегическую видимость и накопительный эффект в карьере.",
+        "lessons": 21,
+        "xp": 420
+      }
+    ],
+    "badge": "Значок катализатора карьеры",
+    "hero": {
+      "emoji": "💼",
+      "h1": "Карьера",
+      "tagline": "Поднимите профессиональную жизнь на новый уровень — от повышения до смены направления.",
+      "courseCountLabel": "36 курсов"
+    }
+  },
+  "business": {
+    "sourceChunk": "business-DY_zOaeE.js",
+    "template": "path-catalog-B",
+    "hero": {
+      "emoji": "🚀",
+      "h1": "Бизнес",
+      "tagline": "Запускайте, развивайте и масштабируйте бизнес — от первой идеи до устойчивого дохода",
+      "courseCountLabel": "40 курсов"
+    },
+    "badge": "Значок строителя бизнеса",
+    "cards": [
+      {
+        "id": "entrepreneurial-mindset",
+        "path": "/app/courses/entrepreneurial-mindset",
+        "title": "Предпринимательский mindset",
+        "emoji": "🧠",
+        "courseNumber": "Курс 1",
+        "difficulty": "Начальный",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Поставьте под сомнение привычные взгляды на богатство и бизнес. Научитесь видеть возможности через создание ценности, а не обмен времени на деньги.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "find-your-profitable-idea",
+        "path": "/app/courses/find-your-profitable-idea",
+        "title": "Найдите прибыльную идею",
+        "emoji": "💡",
+        "courseNumber": "Курс 2",
+        "difficulty": "Начальный",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Хватит гадать — начните проверять. Узнайте, как тестировать бизнес-идеи с реальными людьми, прежде чем тратить время и деньги не на то.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "customer-research-validation",
+        "path": "/app/courses/customer-research-validation",
+        "title": "Исследование клиентов и валидация",
+        "emoji": "🔍",
+        "courseNumber": "Курс 3",
+        "difficulty": "Начальный",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Глубже поверхностной проверки. Поймите, КТО ваш клиент, КАКУЮ задачу он «нанимает» ваш продукт решать и КАК системно снижать риски бизнес-модели.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "design-your-business-model",
+        "path": "/app/courses/design-your-business-model",
+        "title": "Спроектируйте бизнес-модель",
+        "emoji": "🧩",
+        "courseNumber": "Курс 4",
+        "difficulty": "Начальный",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Опишите, протестируйте и подтвердите логику того, как бизнес создаёт, доставляет и захватывает ценность — с проверенными canvas-фреймворками.",
+        "lessons": 21,
+        "xp": 450
+      },
+      {
+        "id": "build-test-your-mvp",
+        "path": "/app/courses/build-test-your-mvp",
+        "title": "Создайте и протестируйте MVP",
+        "emoji": "🚀",
+        "courseNumber": "Курс 5",
+        "difficulty": "Начальный–средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "От идеи к работающему продукту по lean-методологии — создайте минимум, который проверяет главное допущение, и итерируйте на основе фактов.",
+        "lessons": 21,
+        "xp": 450
+      },
+      {
+        "id": "create-irresistible-offer",
+        "path": "/app/courses/create-irresistible-offer",
+        "title": "Создайте неотразимое предложение",
+        "emoji": "💎",
+        "courseNumber": "Курс 6",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Соберите предложения, от которых глупо отказываться. Освойте $100M-фреймворки ценности, позиционирования и ценообразования.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "pricing-monetisation-mastery",
+        "path": "/app/courses/pricing-monetisation-mastery",
+        "title": "Мастерство ценообразования и монетизации",
+        "emoji": "💰",
+        "courseNumber": "Курс 7",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Освойте психологию, стратегии и фреймворки, которые превращают цену из угадывания в мощный рычаг прибыли.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "positioning-marketing-acquisition",
+        "path": "/app/courses/positioning-marketing-acquisition",
+        "title": "Позиционирование, маркетинг и привлечение",
+        "emoji": "📣",
+        "courseNumber": "Курс 8",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Освойте фреймворки, благодаря которым клиенты находят вас, понимают вас и выбирают вас — от стратегического позиционирования до масштабируемых систем роста.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "sales-persuasion-negotiation",
+        "path": "/app/courses/sales-persuasion-negotiation",
+        "title": "Продажи, убеждение и переговоры",
+        "emoji": "🤝",
+        "courseNumber": "Курс 9",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Освойте психологию влияния, консультативные техники продаж и переговорные приёмы для win-win в каждом важном разговоре.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "execution-founder-productivity",
+        "path": "/app/courses/execution-founder-productivity",
+        "title": "Исполнение и продуктивность основателя",
+        "emoji": "⚡",
+        "courseNumber": "Курс 10",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Освойте фокус, действуйте точно и масштабируйте своё время",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "systems-delegation-operations",
+        "path": "/app/courses/systems-delegation-operations",
+        "title": "Системы, делегирование и операции",
+        "emoji": "⚙️",
+        "courseNumber": "Курс 11",
+        "difficulty": "Средний",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Постройте бизнес, который работает без вас",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "leadership-scaling-building-value",
+        "path": "/app/courses/leadership-scaling-building-value",
+        "title": "Лидерство, масштабирование и создание ценности",
+        "emoji": "🏆",
+        "courseNumber": "Курс 12",
+        "difficulty": "Продвинутый",
+        "lessonsModules": "21 урок · 3 модуля",
+        "subtitle": "Ведите с решимостью, масштабируйте системами, создавайте то, что останется",
+        "lessons": 21,
+        "xp": 420
+      }
+    ]
+  },
+  "health": {
+    "sourceChunk": "health-Bx6SvLVG.js",
+    "template": "path-catalog-A",
+    "cards": [
+      {
+        "id": "better-sleep",
+        "path": "/app/courses/better-sleep",
+        "badge": "😴 Сон",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0D9488] to-[#0F766E]",
+        "emoji": "😴",
+        "duration": "21 день · 10 мин/день",
+        "title": "Лучший сон и здоровые биоритмы",
+        "subtitle": "Улучшите качество сна, решите типичные проблемы со сном и просыпайтесь по-настоящему отдохнувшими — с опорой на науку.",
+        "lessons": 21,
+        "xp": 420
+      },
+      {
+        "id": "living-longer",
+        "path": "/app/courses/living-longer",
+        "badge": "🌿 Долголетие",
+        "badgeColor": "bg-teal-100 text-teal-700",
+        "gradient": "from-[#0E7490] to-[#155E75]",
+        "emoji": "🌿",
+        "duration": "21 день · 10 мин/день",
+        "title": "Жить дольше и лучше",
+        "subtitle": "Поймите, что действительно влияет на долгосрочное здоровье, и выработайте небольшие ежедневные привычки, которые дают десятилетия лучшей жизни.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "how-the-body-ages",
+        "path": "/app/courses/how-the-body-ages",
+        "badge": "🧬 Старение",
+        "badgeColor": "bg-purple-100 text-purple-700",
+        "gradient": "from-[#4C2A85] to-[#2D1A5E]",
+        "emoji": "🧬",
+        "duration": "21 день · 10 мин/день",
+        "title": "Как стареет тело",
+        "subtitle": "Поймите простым языком, что происходит в организме с возрастом, и какие практические шаги вы можете предпринять.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "everyday-movement",
+        "path": "/app/courses/everyday-movement",
+        "badge": "🏃 Фитнес",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#C2410C] to-[#7C2D12]",
+        "emoji": "🏃",
+        "duration": "21 день · 10 мин/день",
+        "title": "Ежедневное движение для здоровья",
+        "subtitle": "Узнайте, почему ежедневная активность — самая мощная привычка для здоровья, и как двигаться больше, сидеть меньше и чувствовать себя лучше без зала и плана тренировок.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "strength-fitness",
+        "path": "/app/courses/strength-fitness",
+        "badge": "💪 Фитнес",
+        "badgeColor": "bg-blue-100 text-blue-700",
+        "gradient": "from-[#1E5A7A] to-[#1A2F4A]",
+        "emoji": "💪",
+        "duration": "21 день · 10 мин/день",
+        "title": "Сила, выносливость и физическая независимость",
+        "subtitle": "Развивайте силу, кардиовыносливость и мобильность, чтобы оставаться активным, самостоятельным и энергичным всю жизнь.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "eat-well-live-well",
+        "path": "/app/courses/eat-well-live-well",
+        "badge": "🥗 Питание",
+        "badgeColor": "bg-green-100 text-green-700",
+        "gradient": "from-[#166534] to-[#14532D]",
+        "emoji": "🥗",
+        "duration": "21 день · 10 мин/день",
+        "title": "Питайтесь хорошо — живите хорошо",
+        "subtitle": "Полная база по питанию",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "your-metabolic-health",
+        "path": "/app/courses/your-metabolic-health",
+        "badge": "🔬 Метаболическое здоровье",
+        "badgeColor": "bg-orange-100 text-orange-700",
+        "gradient": "from-[#92400E] to-[#78350F]",
+        "emoji": "🔬",
+        "duration": "21 день · 10 мин/день",
+        "title": "Ваше метаболическое здоровье",
+        "subtitle": "Поймите, как организм перерабатывает энергию — от сахара и инсулина до холестерина и висцерального жира — и что реально сделать для долгосрочного здоровья.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "managing-stress-resilience",
+        "path": "/app/courses/managing-stress-resilience",
+        "badge": "🧠 Ментальное благополучие",
+        "badgeColor": "bg-indigo-100 text-indigo-700",
+        "gradient": "from-[#3730A3] to-[#312E81]",
+        "emoji": "🧠",
+        "duration": "21 день · 10 мин/день",
+        "title": "Управление стрессом и устойчивость",
+        "subtitle": "Поймите стресс, предотвращайте выгорание и развивайте долгосрочную психологическую устойчивость.",
+        "lessons": 21,
+        "xp": 2100
+      },
+      {
+        "id": "brain-health-memory",
+        "path": "/app/courses/brain-health-memory",
+        "badge": "🧠 Здоровье мозга",
+        "badgeColor": "bg-cyan-100 text-cyan-800",
+        "gradient": "from-[#0E7490] to-[#1E3A5F]",
+        "emoji": "🧠",
+        "duration": "21 день · 10 мин/день",
+        "title": "Здоровье мозга и память",
+        "subtitle": "Поймите, как стареет мозг, защитите когнитивное здоровье и снизьте риск ухудшения.",
+        "lessons": 21,
+        "xp": 2100
+      }
+    ],
+    "badge": "Значок чемпиона здоровья",
+    "hero": {
+      "emoji": "🌿",
+      "h1": "Здоровье",
+      "tagline": "Оптимизируйте сон, питание, фитнес и ментальное благополучие — по одному микроуроку за раз.",
+      "courseCountLabel": "36 курсов"
+    }
+  },
+  "financial-wellbeing": {
+    "sourceChunk": "financial-wellbeing-BOes51jq.js",
+    "template": "path-catalog-C",
+    "hero": {
+      "emoji": "💰",
+      "h1": "Финансовое благополучие",
+      "tagline": "Освойте отношение к деньгам, выработайте реальные привычки и укрепите финансовую уверенность",
+      "courseCountLabel": "16 курсов"
+    },
+    "emptyCopy": {
+      "title": "Вы ещё не начали ни одного курса",
+      "sub": "Курсы в этой категории скоро появятся!"
+    },
+    "liveSlugs": [],
+    "comingSoonStrip": [
+      {
+        "name": "Ваша денежная история",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Бюджет для реальной жизни",
+        "difficulty": "Начальный",
+        "time": "6 уроков · 2,5 ч"
+      },
+      {
+        "name": "Стратегия свободы от долгов",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2,5 ч"
+      },
+      {
+        "name": "Создание резервного фонда",
+        "difficulty": "Начальный",
+        "time": "4 урока · 1,5 ч"
+      },
+      {
+        "name": "Инвестиции для начинающих",
+        "difficulty": "Начальный",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Основы пассивного дохода",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2,5 ч"
+      },
+      {
+        "name": "Ускоритель финансовой уверенности",
+        "difficulty": "Все уровни",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Система денежных привычек",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Мастер-класс «Зарабатывайте больше»",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2,5 ч"
+      },
+      {
+        "name": "Mindset изобилия: деньги",
+        "difficulty": "Все уровни",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Основы планирования пенсии",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Умные привычки трат",
+        "difficulty": "Начальный",
+        "time": "4 урока · 1,5 ч"
+      },
+      {
+        "name": "Стратегии дополнительного дохода",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2,5 ч"
+      },
+      {
+        "name": "План финансовых целей",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Ведите переговоры выгоднее",
+        "difficulty": "Средний",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Деньги и отношения",
+        "difficulty": "Все уровни",
+        "time": "5 уроков · 2 ч"
+      }
+    ]
+  }
+}

@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { NameCaptureScreen as NameCaptureScreenDef } from '@/funnels/twenty-eight-day/types/quiz'
 import QuizStickyCta from '@/funnels/twenty-eight-day/components/quiz/QuizStickyCta'
+import { nameScreenCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
+import type { FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface NameCaptureScreenProps {
   screen: NameCaptureScreenDef
@@ -8,6 +11,8 @@ interface NameCaptureScreenProps {
 }
 
 export default function NameCaptureScreen({ screen, onSubmit }: NameCaptureScreenProps) {
+  const { locale } = useI18n()
+  const copy = useMemo(() => nameScreenCopy(locale as FunnelLocale), [locale])
   const [name, setName] = useState('')
 
   const handleSubmit = () => {
@@ -31,14 +36,14 @@ export default function NameCaptureScreen({ screen, onSubmit }: NameCaptureScree
           value={name}
           onChange={(e) => setName(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
-          placeholder="Enter your first name"
+          placeholder={copy.placeholder}
           className="w-full rounded-2xl border-2 border-sw-grey-border bg-white px-5 py-4 text-lg text-sw-dark outline-none transition-colors placeholder:text-sw-grey/60 focus:border-sw-blue"
         />
       </div>
 
       <QuizStickyCta>
         <button type="button" onClick={handleSubmit} disabled={!name.trim()} className="sw-cta">
-          Continue
+          {copy.continue}
         </button>
       </QuizStickyCta>
     </>

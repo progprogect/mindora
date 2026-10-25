@@ -12,10 +12,12 @@ import {
 } from '@/lib/api'
 import { FOCUS_FROM_QUIZ, readQuizResults } from '@/lib/quizResults'
 import { track } from '@/lib/track'
+import { useI18n } from '@/i18n/I18nProvider'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function InboxHint({ email }: { email: string }) {
+  const { t } = useI18n()
   const domain = email.split('@')[1]?.toLowerCase() || ''
   const provider =
     domain === 'gmail.com' || domain === 'googlemail.com'
@@ -39,7 +41,7 @@ function InboxHint({ email }: { email: string }) {
       className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border-2 border-sw-grey-border text-sm font-semibold text-sw-dark mb-5 active:scale-[0.98] transition-all hover:border-sw-blue/40"
     >
       <span className="text-base">{provider.icon}</span>
-      Open {provider.name}
+      {t('account.common.openInbox')} {provider.name}
     </a>
   )
 }
@@ -48,6 +50,7 @@ function SetupAuthenticated() {
   const navigate = useNavigate()
   const user = useCurrentUser()
   const { refresh } = useSession()
+  const { t } = useI18n()
   const ran = useRef(false)
 
   useEffect(() => {
@@ -149,7 +152,7 @@ function SetupAuthenticated() {
       </div>
       <div className="flex-1 flex flex-col items-center justify-center gap-3">
         <div className="w-8 h-8 border-4 border-sw-blue-border border-t-sw-blue rounded-full animate-spin" />
-        <p className="text-sm text-sw-grey">Setting up your account…</p>
+        <p className="text-sm text-sw-grey">{t('account.common.settingUpAccount')}</p>
       </div>
     </div>
   )
@@ -157,6 +160,7 @@ function SetupAuthenticated() {
 
 function SetupForm() {
   const { refresh } = useSession()
+  const { locale, t } = useI18n()
   const [step, setStep] = useState<'email' | 'code'>('email')
   const [email, setEmail] = useState('')
   const [code, setCode] = useState('')
@@ -190,7 +194,7 @@ function SetupForm() {
   useEffect(() => {
     if (code.length >= 6 && step === 'code' && !busy && !autoVerify.current) {
       autoVerify.current = true
-      const t = setTimeout(() => {
+      const timer = setTimeout(() => {
         setBusy(true)
         track('setup_code_submitted', { email, auto: true })
         void verifyOtp(email, code)
@@ -198,29 +202,29 @@ function SetupForm() {
             track('setup_verified', { email })
             return refresh()
           })
-          .catch((err) => setError(apiErrorMessage(err, 'Invalid or expired code. Please try again.')))
+          .catch((err) => setError(apiErrorMessage(err, t, t('account.common.invalidCode'))))
           .finally(() => {
             setBusy(false)
           })
       }, 300)
-      return () => clearTimeout(t)
+      return () => clearTimeout(timer)
     }
-  }, [code, step, busy, email, refresh])
+  }, [code, step, busy, email, refresh, t])
 
   const sendCode = async () => {
     if (!email || busy) return
     if (!EMAIL_OK.test(email)) {
-      setError('Please enter a valid email address.')
+      setError(t('account.common.validEmail'))
       return
     }
     setError(null)
     setBusy(true)
     track('setup_email_submitted', { email })
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
       setStep('code')
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to send verification code. Please check your email and try again.'))
+      setError(apiErrorMessage(err, t, t('account.common.failedSendVerification')))
     } finally {
       setBusy(false)
     }
@@ -236,7 +240,7 @@ function SetupForm() {
       track('setup_verified', { email })
       await refresh()
     } catch (err) {
-      setError(apiErrorMessage(err, 'Invalid or expired code. Please try again.'))
+      setError(apiErrorMessage(err, t, t('account.common.invalidCode')))
     } finally {
       setBusy(false)
     }
@@ -246,10 +250,10 @@ function SetupForm() {
     setError(null)
     setBusy(true)
     try {
-      await sendOtp(email)
+      await sendOtp(email, locale)
       setError(null)
     } catch (err) {
-      setError(apiErrorMessage(err, 'Failed to resend code.'))
+      setError(apiErrorMessage(err, t, t('account.common.failedResendShort')))
     } finally {
       setBusy(false)
     }
@@ -276,20 +280,20 @@ function SetupForm() {
               🎉
             </div>
             <h1 className="text-2xl font-extrabold text-sw-dark text-center mb-2">
-              You&apos;re in! Set up your account
+              {t('account.checkout.setupTitle')}
             </h1>
             <p className="text-sm text-sw-grey text-center mb-4 leading-relaxed">
-              Enter the email you&apos;d like to use for your account. We&apos;ll send a quick
-              verification code.
+              {t('account.checkout.setupBlurb')}
             </p>
             <div className="w-full bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-6">
               <p className="text-xs text-amber-800 text-center leading-relaxed font-medium">
-                ⚠️ All login codes and course access emails will be sent to this address. Make sure
-                it&apos;s an email you can access.
+                {t('account.checkout.emailWarning')}
               </p>
             </div>
             <div className="w-full mb-4">
-              <label className="block text-sm font-semibold text-sw-dark mb-1.5">Email address</label>
+              <label className="block text-sm font-semibold text-sw-dark mb-1.5">
+                {t('account.common.emailAddress')}
+              </label>
               <input
                 type="email"
                 value={email}
@@ -297,7 +301,7 @@ function SetupForm() {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') void sendCode()
                 }}
-                placeholder="your@email.com"
+                placeholder={t('account.common.emailPlaceholderAlt')}
                 className="w-full px-4 py-3.5 rounded-xl border-2 text-base text-sw-dark outline-none transition-colors"
                 style={{
                   borderColor: error ? 'hsl(0 72% 51%)' : 'hsl(var(--sw-grey-border))',
@@ -321,15 +325,13 @@ function SetupForm() {
               {busy ? (
                 <span className="flex items-center justify-center gap-2">
                   <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                  Sending code...
+                  {t('account.common.sendingCodeEllipsis')}
                 </span>
               ) : (
-                'Continue'
+                t('account.checkout.continue')
               )}
             </button>
-            <p className="text-xs text-sw-grey text-center mt-4">
-              We&apos;ll send a 6-digit code to verify your email. No password needed.
-            </p>
+            <p className="text-xs text-sw-grey text-center mt-4">{t('account.common.noPasswordHint')}</p>
           </>
         ) : (
           <>
@@ -339,15 +341,17 @@ function SetupForm() {
             >
               ✉️
             </div>
-            <h1 className="text-2xl font-extrabold text-sw-dark text-center mb-2">Check your inbox</h1>
+            <h1 className="text-2xl font-extrabold text-sw-dark text-center mb-2">
+              {t('account.common.checkInbox')}
+            </h1>
             <p className="text-sm text-sw-grey text-center mb-1 leading-relaxed">
-              We sent a 6-digit code to
+              {t('account.checkout.sentCodeTo')}
             </p>
             <p className="text-sm font-bold text-sw-dark text-center mb-4">{email}</p>
             <InboxHint email={email} />
             <div className="w-full mb-4">
               <label className="block text-xs font-semibold text-sw-grey uppercase tracking-wide mb-2 text-center">
-                Enter your 6-digit code
+                {t('account.common.enterSixDigitCode')}
               </label>
               <input
                 ref={codeRef}
@@ -358,7 +362,7 @@ function SetupForm() {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') void verifyCode()
                 }}
-                placeholder="• • • • • •"
+                placeholder={t('account.common.codePlaceholder')}
                 className="w-full px-4 py-4 rounded-xl border-2 text-center text-2xl font-bold tracking-[0.4em] text-sw-dark outline-none transition-colors"
                 style={{
                   borderColor: error
@@ -371,7 +375,7 @@ function SetupForm() {
               />
               {code.length > 0 && code.length < 6 ? (
                 <p className="text-xs text-sw-grey text-center mt-1.5">
-                  {6 - code.length} more digits needed
+                  {6 - code.length} {t('account.common.moreDigitsNeeded')}
                 </p>
               ) : null}
             </div>
@@ -390,10 +394,10 @@ function SetupForm() {
               {busy ? (
                 <span className="flex items-center justify-center gap-2">
                   <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                  Verifying...
+                  {t('account.common.verifyingEllipsis')}
                 </span>
               ) : (
-                'Verify & Complete Setup'
+                t('account.checkout.verifyCompleteSetup')
               )}
             </button>
             <div className="flex items-center justify-center gap-4 mt-4">
@@ -403,7 +407,7 @@ function SetupForm() {
                 disabled={busy}
                 className="text-sm text-sw-blue font-semibold disabled:opacity-50"
               >
-                Resend code
+                {t('account.common.resendCode')}
               </button>
               <span className="text-sw-grey-border">|</span>
               <button
@@ -415,11 +419,11 @@ function SetupForm() {
                 }}
                 className="text-sm text-sw-grey font-semibold"
               >
-                Change email
+                {t('account.common.changeEmail')}
               </button>
             </div>
             <p className="text-xs text-sw-grey text-center mt-5 leading-relaxed">
-              Code expires in 10 minutes. Check your spam folder if you don&apos;t see it.
+              {t('account.common.codeExpiresHint')}
             </p>
           </>
         )}
@@ -428,14 +432,21 @@ function SetupForm() {
   )
 }
 
+function CheckoutLoading() {
+  const { t } = useI18n()
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center gap-3">
+      <div className="w-8 h-8 border-4 border-sw-grey-border border-t-sw-blue rounded-full animate-spin" />
+      <p className="text-sm text-sw-grey">{t('account.common.loading')}</p>
+    </div>
+  )
+}
+
 export default function CheckoutSetupPage() {
   return (
     <>
       <AuthLoading>
-        <div className="min-h-screen flex flex-col items-center justify-center gap-3">
-          <div className="w-8 h-8 border-4 border-sw-grey-border border-t-sw-blue rounded-full animate-spin" />
-          <p className="text-sm text-sw-grey">Loading...</p>
-        </div>
+        <CheckoutLoading />
       </AuthLoading>
       <Authenticated>
         <SetupAuthenticated />

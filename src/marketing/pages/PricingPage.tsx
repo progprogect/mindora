@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
-  PRICING_FEATURES,
-  PRICING_TRUST,
   formatPerMonth,
+  formatPlanBadge,
+  pricingCopy,
   pricingLabel,
   pricingSavePercent,
   pricingSummary,
@@ -12,9 +12,12 @@ import {
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import { useProductsList } from '@/shared/lib/backend'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function PricingPage() {
-  usePageTitle('Pricing — MindoraAcademy.com | Simple Plans, Full Platform Access')
+  const { locale } = useI18n()
+  const copy = pricingCopy(locale)
+  usePageTitle(copy.pageTitle)
   const products = useProductsList()
   const plans = useMemo(() => resolvePricingCatalog(products), [products])
   const defaultId = plans.find((item) => item.badge === 'MOST POPULAR')?.id ?? plans[0]?.id ?? 'quarterly'
@@ -28,13 +31,11 @@ export default function PricingPage() {
       <section className="bg-sw-dark px-4 py-12 sm:py-16">
         <div className="animate-fade-up mx-auto max-w-3xl text-center">
           <h1 className="mb-3 text-3xl font-extrabold text-white sm:text-4xl">
-            Start with a <span style={{ color: 'hsl(var(--sw-success))' }}>$1 trial</span> for 3 days
+            {copy.heroTitlePrefix}
+            <span style={{ color: 'hsl(var(--sw-success))' }}>{copy.heroTitleHighlight}</span>
+            {copy.heroTitleSuffix}
           </h1>
-          <p className="mx-auto max-w-xl text-base text-white/70">
-            Full access to every course, your AI Coach, and personalised roadmap — normally{' '}
-            <span className="line-through">$29.99/mo</span>. Cancel any time before day 3 — you
-            won&apos;t be charged.
-          </p>
+          <p className="mx-auto max-w-xl text-base text-white/70">{copy.heroSubtitle}</p>
         </div>
       </section>
 
@@ -49,32 +50,27 @@ export default function PricingPage() {
             <span aria-hidden="true" className="text-lg">
               🎉
             </span>
-            <span className="text-sm font-bold text-white sm:text-base">
-              Just $1 to start — full access for 3 days
-            </span>
+            <span className="text-sm font-bold text-white sm:text-base">{copy.promoBanner}</span>
           </div>
         </div>
       </section>
 
       <main className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
-        <p className="mb-6 text-center text-sm text-sw-grey">
-          Choose the plan that continues after your trial:
-        </p>
+        <p className="mb-6 text-center text-sm text-sw-grey">{copy.choosePlan}</p>
 
         <div className="flex flex-col gap-3">
           {plans.map((item) => {
             const active = item.id === selectedId
             const perMonth = formatPerMonth(item.price, item.intervalMonths)
             const save = pricingSavePercent(item.price, item.intervalMonths)
+            const badge = formatPlanBadge(item.badge, locale)
             return (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => setSelected(item.id)}
                 className={`relative overflow-hidden rounded-2xl border-2 text-left transition-all duration-150 ${
-                  active
-                    ? 'shadow-md'
-                    : 'border-sw-grey-border hover:border-sw-grey'
+                  active ? 'shadow-md' : 'border-sw-grey-border hover:border-sw-grey'
                 }`}
                 style={
                   active
@@ -85,7 +81,7 @@ export default function PricingPage() {
                     : { backgroundColor: 'white' }
                 }
               >
-                {item.badge ? (
+                {badge ? (
                   <div
                     className="py-1 text-center text-[11px] font-bold tracking-wider text-white uppercase"
                     style={{
@@ -95,7 +91,7 @@ export default function PricingPage() {
                           : 'hsl(var(--sw-blue))',
                     }}
                   >
-                    {item.badge}
+                    {badge}
                   </div>
                 ) : null}
                 <div className="flex items-center justify-between px-5 py-5 sm:px-6">
@@ -118,7 +114,7 @@ export default function PricingPage() {
                     </span>
                     <div className="flex flex-col gap-1">
                       <span className="text-lg font-extrabold text-sw-dark">
-                        {pricingLabel(item.intervalMonths)}
+                        {pricingLabel(item.intervalMonths, locale)}
                       </span>
                       {save > 0 ? (
                         <span
@@ -128,14 +124,14 @@ export default function PricingPage() {
                             color: 'hsl(var(--sw-success))',
                           }}
                         >
-                          Save {save}%
+                          {copy.savePercent(save)}
                         </span>
                       ) : null}
                     </div>
                   </div>
                   <div className="flex flex-col items-end gap-1">
                     {save > 0 ? (
-                      <span className="text-xs text-sw-grey line-through">$29.99/mo</span>
+                      <span className="text-xs text-sw-grey line-through">$29.99{copy.perMonth}</span>
                     ) : null}
                     <div
                       className="rounded-xl px-3 py-1.5"
@@ -144,7 +140,7 @@ export default function PricingPage() {
                       <div className="flex items-baseline gap-0.5">
                         <span className="text-sm font-medium text-sw-grey">$</span>
                         <span className="text-2xl font-extrabold text-sw-dark">{perMonth}</span>
-                        <span className="text-sm font-medium text-sw-grey"> /mo</span>
+                        <span className="text-sm font-medium text-sw-grey"> {copy.perMonth}</span>
                       </div>
                     </div>
                   </div>
@@ -155,7 +151,7 @@ export default function PricingPage() {
         </div>
 
         <p className="mt-5 text-center text-sm leading-relaxed text-sw-grey">
-          {plan ? pricingSummary(plan) : null}
+          {plan ? pricingSummary(plan, locale) : null}
         </p>
 
         <button
@@ -166,11 +162,11 @@ export default function PricingPage() {
           }}
           className="mt-5 w-full rounded-full bg-sw-blue px-6 py-4 text-center text-lg font-extrabold tracking-wide text-white uppercase shadow-lg transition-all duration-200 hover:bg-sw-blue-hover disabled:opacity-50"
         >
-          Start my $1 trial
+          {copy.cta}
         </button>
 
         <ul className="mt-8 grid gap-2.5 text-sm text-sw-grey sm:grid-cols-2">
-          {PRICING_FEATURES.map((item) => (
+          {copy.features.map((item) => (
             <li key={item} className="flex items-start gap-2">
               <span className="mt-0.5 text-sw-blue">✓</span>
               {item}
@@ -179,7 +175,7 @@ export default function PricingPage() {
         </ul>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-sw-grey">
-          {PRICING_TRUST.map((item) => (
+          {copy.trust.map((item) => (
             <span key={item} className="flex items-center gap-2">
               <span className="text-sw-success">✓</span> {item}
             </span>
@@ -187,11 +183,11 @@ export default function PricingPage() {
         </div>
 
         <p className="mt-8 text-center text-sm text-sw-grey">
-          Questions about billing? Visit our{' '}
+          {copy.billingQuestions}{' '}
           <Link to={ROUTES.billing} className="font-medium text-sw-blue hover:underline">
-            Billing & Plans
+            {copy.billingLink}
           </Link>{' '}
-          page.
+          {copy.billingSuffix}
         </p>
       </main>
     </>

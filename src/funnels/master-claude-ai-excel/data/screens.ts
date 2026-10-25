@@ -1,62 +1,59 @@
-import catalog from './catalog.json'
 import { mapCatalogItem, type RawCatalogItem } from '@/funnels/shared/lib/mapCatalog'
 import type { FunnelScreen } from '@/funnels/shared/types'
+import type { Locale } from '../../../../authorisation/src/i18n/locale'
+import { catalogForLocale } from './catalogLocale'
+import { excelScreenCopy } from './screenCopy'
 
-const items = catalog as RawCatalogItem[]
+export function getExcelScreens(locale: Locale): FunnelScreen[] {
+  const copy = excelScreenCopy(locale)
+  const items = catalogForLocale(locale) as RawCatalogItem[]
 
-export const EXCEL_SCREENS: FunnelScreen[] = [
-  {
-    type: 'identity-master',
-    id: 'identity',
-    headline: 'Advance Your Excel Work With Claude',
-    subtext: 'Have you ever used Claude?',
-    collageSrc: '/assets/excel-collage.webp',
-    collageAlt: 'Claude AI + Microsoft Excel',
-    legal404: true,
-    options: [
-      { emoji: '✅', label: 'Yes', value: 'yes' },
-      { emoji: '🔍', label: 'No', value: 'not-yet' },
-    ],
-  },
-  ...items
-    .filter((item) => item.type !== 'identity' && item.type !== 'loading' && item.type !== 'email')
-    .map(mapCatalogItem)
-    .filter((s): s is FunnelScreen => s !== null),
-  {
-    type: 'loading',
-    id: 'loading',
-    header: 'Building your Excel + AI path...',
-    steps: [
-      'Analysing your Excel level...',
-      'Mapping your formula gaps...',
-      'Selecting your Claude workflows...',
-      'Building your personalised path...',
-      'Your Excel + AI plan is ready!',
-    ],
-    commitmentQuestion: 'How committed are you to mastering Excel with Claude?',
-    testimonial: {
-      name: 'Priya T.',
-      role: 'Freelance Designer',
-      text: 'Finally a course that respects my time. 10 minutes a day and I genuinely feel confident using AI in my projects now.',
+  return [
+    {
+      type: 'identity-master',
+      id: 'identity',
+      headline: copy.identity.headline,
+      subtext: copy.identity.subtext,
+      collageSrc: '/assets/excel-collage.webp',
+      collageAlt: copy.identity.collageAlt,
+      legal404: true,
+      options: [
+        { emoji: '✅', label: copy.identity.options[0].label, value: 'yes' },
+        { emoji: '🔍', label: copy.identity.options[1].label, value: 'not-yet' },
+      ],
     },
-  },
-  {
-    type: 'email',
-    id: 'email',
-    badge: '✓ Your plan is ready',
-    title: 'Enter your email to get:',
-    subtitle: 'Your personal Master\nClaude AI + Excel Plan',
-    features: [],
-    consent: "I'd like to receive my Claude AI + Excel plan, personal tips, and exclusive offers straight to my inbox.",
-    ctaLabel: 'UNLOCK MY PLAN →',
-  },
-  {
-    type: 'name-capture',
-    id: 'name-capture',
-    title: 'What should we call you?',
-    subtitle: "We'll personalise your Excel + AI mastery path with your name",
-    placeholder: 'Enter your first name',
-    ctaLabel: 'Continue',
-    chrome: 'wordmark',
-  },
-]
+    ...items
+      .filter((item) => item.type !== 'identity' && item.type !== 'loading' && item.type !== 'email')
+      .map(mapCatalogItem)
+      .filter((s): s is FunnelScreen => s !== null),
+    {
+      type: 'loading',
+      id: 'loading',
+      header: copy.loading.header,
+      steps: [...copy.loading.steps],
+      commitmentQuestion: copy.loading.commitmentQuestion,
+      testimonial: { ...copy.loading.testimonial },
+    },
+    {
+      type: 'email',
+      id: 'email',
+      badge: copy.email.badge,
+      title: copy.email.title,
+      subtitle: copy.email.subtitle,
+      features: [],
+      consent: copy.email.consent,
+      ctaLabel: copy.email.ctaLabel,
+    },
+    {
+      type: 'name-capture',
+      id: 'name-capture',
+      title: copy.nameCapture.title,
+      subtitle: copy.nameCapture.subtitle,
+      placeholder: copy.nameCapture.placeholder,
+      ctaLabel: copy.nameCapture.ctaLabel,
+      chrome: 'wordmark',
+    },
+  ]
+}
+
+export const EXCEL_SCREENS = getExcelScreens('en')

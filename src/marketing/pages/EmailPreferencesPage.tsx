@@ -1,9 +1,13 @@
 import { useSearchParams } from 'react-router-dom'
 import { COMPANY } from '@/marketing/data/company'
+import { emailPreferencesCopy } from '@/marketing/data/emailPreferencesCopy'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function EmailPreferencesPage() {
-  usePageTitle('MindoraAcademy.com — Turn Daily Learning Into Daily Progress')
+  const { locale } = useI18n()
+  const copy = emailPreferencesCopy(locale)
+  usePageTitle(copy.pageTitle)
   const [params] = useSearchParams()
   const email = params.get('email') || ''
   const token = params.get('token') || ''
@@ -23,7 +27,7 @@ export default function EmailPreferencesPage() {
     >
       <div style={{ maxWidth: 480, width: '100%' }}>
         <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8, color: '#1a1a1a' }}>
-          Email Preferences
+          {copy.heading}
         </h1>
         <div>
           <div
@@ -38,17 +42,16 @@ export default function EmailPreferencesPage() {
               <input type="checkbox" defaultChecked style={{ marginTop: 3, width: 18, height: 18 }} />
               <div>
                 <p style={{ margin: '0 0 4px', fontWeight: 600, fontSize: 15, color: '#1a1a1a' }}>
-                  Tips, insights & product updates
+                  {copy.optionTitle}
                 </p>
                 <p style={{ margin: 0, fontSize: 13, color: '#666' }}>
-                  Learning tips from your AI coach Mindora, progress celebrations, and platform updates.
+                  {copy.optionDescription}
                 </p>
               </div>
             </label>
           </div>
           <p style={{ fontSize: 13, color: '#666', marginBottom: 20 }}>
-            Note: Transactional emails (payment receipts, password resets, account alerts) will always be
-            sent regardless of your marketing preferences.
+            {copy.transactionalNote}
           </p>
           <button
             type="button"
@@ -66,11 +69,11 @@ export default function EmailPreferencesPage() {
               width: '100%',
             }}
           >
-            Save Preferences
+            {copy.saveButton}
           </button>
           {!valid ? (
             <p style={{ fontSize: 13, color: '#dc2626', marginTop: 12, textAlign: 'center' }}>
-              No email address provided. Please use the link from your email.
+              {copy.invalidLink}
             </p>
           ) : null}
         </div>

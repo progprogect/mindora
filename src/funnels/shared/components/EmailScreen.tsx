@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import QuizStickyCta from '@/funnels/shared/components/QuizStickyCta'
 import type { EmailScreenDef } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface EmailScreenProps {
   screen: EmailScreenDef
@@ -10,6 +12,8 @@ interface EmailScreenProps {
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const [email, setEmail] = useState('')
   const [consent, setConsent] = useState(true)
   const [error, setError] = useState('')
@@ -18,7 +22,7 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
   const handleSubmit = () => {
     const trimmed = email.trim()
     if (!EMAIL_REGEX.test(trimmed)) {
-      setError('Please enter a valid email address')
+      setError(ui.emailInvalid)
       return
     }
     setError('')
@@ -102,16 +106,16 @@ export default function EmailScreen({ screen, onSubmit }: EmailScreenProps) {
             🎁
           </span>
           <p className="text-sm leading-snug text-sw-dark">
-            Make sure your email is valid —{' '}
-            <span className="font-bold text-sw-success">don&apos;t miss your exclusive bonus!</span>
+            {ui.emailBonusLead}{' '}
+            <span className="font-bold text-sw-success">{ui.emailBonusHighlight}</span>
           </p>
         </div>
-        <p className="mt-2 text-center text-xs text-sw-grey">🔒 We never share your email. Unsubscribe any time.</p>
+        <p className="mt-2 text-center text-xs text-sw-grey">{ui.emailPrivacy}</p>
       </div>
 
       <QuizStickyCta>
         <button type="button" onClick={handleSubmit} disabled={submitting} className="sw-cta">
-          {submitting ? 'Unlocking your plan...' : screen.ctaLabel}
+          {submitting ? ui.unlockingPlan : screen.ctaLabel}
         </button>
       </QuizStickyCta>
     </>

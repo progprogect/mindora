@@ -1,0 +1,1315 @@
+{
+  "28-day-ai-challenge": {
+    "id": "28-day-ai-challenge",
+    "title": "28-дневный AI-челлендж",
+    "totalDays": 28,
+    "lessons": [
+      {
+        "id": "day-1-what-is-ai",
+        "dayNumber": 1,
+        "title": "Что такое AI? (По-настоящему)",
+        "subtitle": "Отделите hype от реальности и поймите, что такое AI — простым языком",
+        "duration": "5 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-2-meet-your-toolkit",
+        "dayNumber": 2,
+        "title": "Ваш набор AI-инструментов",
+        "subtitle": "Практический обзор трёх инструментов, которыми вы будете пользоваться каждый день — и когда какой выбирать",
+        "duration": "6 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-3-your-first-prompt",
+        "dayNumber": 3,
+        "title": "Ваш первый сильный промпт",
+        "subtitle": "Один навык, который отделяет тех, кто получает потрясающие результаты, от тех, кто получает посредственные",
+        "duration": "6 min",
+        "xpValue": 15
+      },
+      {
+        "id": "day-4-prompt-engineering",
+        "dayNumber": 4,
+        "title": "Инженерия промптов 101",
+        "subtitle": "Продвинутые техники, которые открывают совершенно другой уровень работы с AI",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-5-chatgpt-deep-dive",
+        "dayNumber": 5,
+        "title": "ChatGPT: глубокое погружение",
+        "subtitle": "Откройте всё, что умеет самый популярный AI в мире — большинство используют лишь верхушку",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-6-claude-vs-chatgpt",
+        "dayNumber": 6,
+        "title": "Claude: AI для вдумчивых",
+        "subtitle": "Почему Claude сильнее ChatGPT в отдельных задачах — и как выжать максимум",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Контрольная точка модуля 1",
+        "subtitle": "Закрепите неделю — и убедитесь, сколько вы уже знаете",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-8-ai-email",
+        "dayNumber": 8,
+        "title": "AI-помощник для email",
+        "subtitle": "Пишите, отвечайте и управляйте почтой в разы быстрее — без потери качества",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-9-ai-meetings",
+        "dayNumber": 9,
+        "title": "AI-заметки со встреч",
+        "subtitle": "Больше не конспектируйте вручную — и извлекайте больше из каждой встречи",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-10-ai-research",
+        "dayNumber": 10,
+        "title": "AI-ассистент для исследований",
+        "subtitle": "Находите, суммируйте и синтезируйте информацию за минуты вместо часов",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-11-ai-writing",
+        "dayNumber": 11,
+        "title": "AI-партнёр по текстам",
+        "subtitle": "Черновики чего угодно — отчёты, предложения, блоги, briefs — за минуты, не часы",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-12-ai-task-planner",
+        "dayNumber": 12,
+        "title": "AI-планировщик задач",
+        "subtitle": "Соберите умный реалистичный план дня — и реально следуйте ему",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-13-ai-decisions",
+        "dayNumber": 13,
+        "title": "AI для решений",
+        "subtitle": "Используйте AI как партнёра по мышлению — лучшие решения быстрее и с меньшим стрессом",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Контрольная точка модуля 2",
+        "subtitle": "Соберите личный AI-стек продуктивности — систему на каждый день",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-15-ai-images",
+        "dayNumber": 15,
+        "title": "Создание изображений с AI",
+        "subtitle": "Профессиональные визуалы за секунды — без навыков дизайна и без дизайнера",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-16-ai-social",
+        "dayNumber": 16,
+        "title": "AI для соцсетей",
+        "subtitle": "План, текст и расписание контента на неделю — меньше чем за 10 минут",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-17-ai-video-scripts",
+        "dayNumber": 17,
+        "title": "Сценарии видео с AI",
+        "subtitle": "Цепляющие сценарии для TikTok, Reels и YouTube Shorts — за минуты",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-18-ai-copywriting",
+        "dayNumber": 18,
+        "title": "AI-копирайтинг",
+        "subtitle": "Лендинги, реклама и письма, которые убеждают и конвертируют — на проверенных фреймворках",
+        "duration": "8 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-19-ai-presentations",
+        "dayNumber": 19,
+        "title": "AI для презентаций",
+        "subtitle": "Сильные презентации за 30 минут — структура, контент и визуал",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-20-ai-audio",
+        "dayNumber": 20,
+        "title": "AI-аудио и голос",
+        "subtitle": "Подкасты, озвучка и аудио без студии — и даже без своего голоса",
+        "duration": "6 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-21-module-3-checkpoint",
+        "dayNumber": 21,
+        "title": "Контрольная точка модуля 3",
+        "subtitle": "Подтвердите мастерство в контенте — и откройте модуль 4",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-22-ai-income-streams",
+        "dayNumber": 22,
+        "title": "Потоки дохода с AI",
+        "subtitle": "6 самых реалистичных способов зарабатывать на навыках AI прямо сейчас",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-23-ai-freelancing",
+        "dayNumber": 23,
+        "title": "Фриланс на AI",
+        "subtitle": "Первый платный заказ на AI — без портфолио, подписчиков и опыта",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-24-ai-digital-products",
+        "dayNumber": 24,
+        "title": "Цифровые продукты с AI",
+        "subtitle": "Создайте продукт раз — продавайте на автомате, AI делает большую часть работы",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-25-ai-automation",
+        "dayNumber": 25,
+        "title": "AI-автоматизация",
+        "subtitle": "Системы, которые работают 24/7 — без кода",
+        "duration": "7 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-26-ai-business-blueprint",
+        "dayNumber": 26,
+        "title": "Бизнес-план на AI",
+        "subtitle": "Продуманный жизнеспособный AI-бизнес за один послеобеденный блок",
+        "duration": "8 min",
+        "xpValue": 20
+      },
+      {
+        "id": "day-27-side-hustle-launch",
+        "dayNumber": 27,
+        "title": "День запуска side hustle",
+        "subtitle": "Хватит планировать. Пора зарабатывать. Сегодня — первый реальный шаг на рынок.",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "day-28-graduation",
+        "dayNumber": 28,
+        "title": "День 28: выпускной",
+        "subtitle": "Вы сделали это. 28 дней. Каждый. Вот что это на самом деле значит.",
+        "duration": "5 min",
+        "xpValue": 50
+      }
+    ]
+  },
+  "28-day-success-mindset": {
+    "id": "28-day-success-mindset",
+    "title": "28-дневный челлендж мышления успеха",
+    "totalDays": 28,
+    "lessons": [
+      {
+        "id": "smc-1-success-operating-system",
+        "dayNumber": 1,
+        "title": "Операционная система успеха",
+        "subtitle": "Перестаньте работать на устаревшем ментальном софте и начните обновлять свой внутренний код.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-2-identity-based-success",
+        "dayNumber": 2,
+        "title": "Успех через идентичность",
+        "subtitle": "Перестаньте гнаться за целями — начните становиться человеком, который их достигает.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-3-pain-pleasure-switch",
+        "dayNumber": 3,
+        "title": "Переключатель «боль — удовольствие»",
+        "subtitle": "Освойте эмоциональные рычаги, которые управляют каждым человеческим решением.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-4-definite-purpose",
+        "dayNumber": 4,
+        "title": "Определённая цель",
+        "subtitle": "Превратите смутные желания в пылающее, одержимое видение.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-5-empowering-beliefs",
+        "dayNumber": 5,
+        "title": "Усиливающие и ограничивающие убеждения",
+        "subtitle": "Разбейте невидимый потолок своего потенциала.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-6-questions-you-ask",
+        "dayNumber": 6,
+        "title": "Вопросы, которые вы задаёте",
+        "subtitle": "Освойте искусство управлять своим фокусом.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Контрольная точка модуля 1",
+        "subtitle": "Интегрируйте свою операционную систему успеха.",
+        "duration": "5 min",
+        "xpValue": 30
+      },
+      {
+        "id": "smc-8-the-one-percent-rule",
+        "dayNumber": 8,
+        "title": "Правило 1%",
+        "subtitle": "Накапливайте путь к величию",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-9-habit-stacking",
+        "dayNumber": 9,
+        "title": "Стекинг привычек",
+        "subtitle": "Используйте текущий распорядок, чтобы строить новый",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-10-power-hour",
+        "dayNumber": 10,
+        "title": "Сила часа",
+        "subtitle": "Выиграйте утро — выиграете день",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-11-the-elimination-game",
+        "dayNumber": 11,
+        "title": "Игра на исключение",
+        "subtitle": "Уберите шум, чтобы сфокусироваться.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-12-focus-and-flow-state",
+        "dayNumber": 12,
+        "title": "Фокус и состояние потока",
+        "subtitle": "Откройте глубокую работу и пиковую производительность.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-13-energy-management",
+        "dayNumber": 13,
+        "title": "Управление энергией",
+        "subtitle": "Перестаньте управлять временем — управляйте энергией.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Контрольная точка модуля 2",
+        "subtitle": "Интегрируйте новые системы высокой эффективности.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "smc-15-state-management",
+        "dayNumber": 15,
+        "title": "Управление состоянием",
+        "subtitle": "Освойте внутреннюю химию",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-16-obstacle-is-the-way",
+        "dayNumber": 16,
+        "title": "Препятствие — это путь",
+        "subtitle": "Превратите сопротивление в топливо",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-17-decision-speed",
+        "dayNumber": 17,
+        "title": "Скорость решений",
+        "subtitle": "Остановите паралич анализа",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-18-raising-standards",
+        "dayNumber": 18,
+        "title": "Повышение стандартов",
+        "subtitle": "Поднимите идентичность выше целей.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-19-clarity-under-chaos",
+        "dayNumber": 19,
+        "title": "Ясность в хаосе",
+        "subtitle": "Думайте чётко, когда всё неопределённо.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-20-persistence-formula",
+        "dayNumber": 20,
+        "title": "Формула настойчивости",
+        "subtitle": "Систематизируйте упорство на длинной дистанции.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-21-module-3-checkpoint",
+        "dayNumber": 21,
+        "title": "Контрольная точка модуля 3",
+        "subtitle": "Интегрируйте инструменты производительности.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "smc-22-vision-board",
+        "dayNumber": 22,
+        "title": "Доска видения 2.0",
+        "subtitle": "Спроектируйте идентичность идеального будущего",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-23-your-inner-circle",
+        "dayNumber": 23,
+        "title": "Ваш ближний круг",
+        "subtitle": "Курируйте окружение для роста",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-24-teaching-to-learn",
+        "dayNumber": 24,
+        "title": "Учить, чтобы учиться",
+        "subtitle": "Освойте знание через вклад другим",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-25-proactive-living",
+        "dayNumber": 25,
+        "title": "Проактивная жизнь",
+        "subtitle": "Перестаньте реагировать — ведите свою жизнь.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-26-success-environment",
+        "dayNumber": 26,
+        "title": "Среда успеха",
+        "subtitle": "Спроектируйте пространство — спроектируйте результат.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-27-compound-life",
+        "dayNumber": 27,
+        "title": "Жизнь сложного процента",
+        "subtitle": "Маленькие шаги со временем дают огромный эффект.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "smc-28-course-finale",
+        "dayNumber": 28,
+        "title": "Финал курса",
+        "subtitle": "Ваше путешествие начинается сейчас.",
+        "duration": "5 min",
+        "xpValue": 50
+      }
+    ]
+  },
+  "28-day-career-accelerator": {
+    "id": "28-day-career-accelerator",
+    "title": "21-дневный карьерный акселератор",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "ca-1-career-audit",
+        "dayNumber": 1,
+        "title": "Карьерный аудит",
+        "subtitle": "Честно посмотрите, где вы сейчас — чтобы проложить более умный путь вперёд.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-2-values-compass",
+        "dayNumber": 2,
+        "title": "Ваш компас ценностей",
+        "subtitle": "Определите ключевые ценности, которые должны направлять каждое карьерное решение.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-3-career-capital-inventory",
+        "dayNumber": 3,
+        "title": "Инвентаризация карьерного капитала",
+        "subtitle": "Узнайте, какие редкие ценные активы вы уже накопили — и какие пробелы стоит закрыть.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-4-personal-fit",
+        "dayNumber": 4,
+        "title": "Личное соответствие — ваше секретное оружие",
+        "subtitle": "Почему «лучшая» карьера для вас зависит от того, кто ВЫ, а не от трендов.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-5-three-prototypes",
+        "dayNumber": 5,
+        "title": "Три карьерных прототипа",
+        "subtitle": "Спроектируйте три возможных будущих — и проверьте их, не рискуя всем.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-6-decision-framework",
+        "dayNumber": 6,
+        "title": "Система принятия решений",
+        "subtitle": "Хватит зацикливаться — освойте систему, которая превращает карьерную путаницу в уверенные действия.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Контрольная точка модуля 1",
+        "subtitle": "Закрепите всё — зафиксируйте направление, прежде чем строить систему исполнения.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-8-craftsman-mindset",
+        "dayNumber": 8,
+        "title": "Мышление мастера",
+        "subtitle": "Перестаньте спрашивать «что карьера может дать мне?» и спросите «что редкого и ценного я могу предложить?»",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-9-deliberate-practice",
+        "dayNumber": 9,
+        "title": "Целенаправленная практика",
+        "subtitle": "Разница между 10 годами опыта и одним годом, повторённым 10 раз.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-10-deep-work-rituals",
+        "dayNumber": 10,
+        "title": "Ритуалы глубокой работы",
+        "subtitle": "Создайте условия, в которых вы стабильно делаете лучшую профессиональную работу.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-11-feedback-loops",
+        "dayNumber": 11,
+        "title": "Петли обратной связи",
+        "subtitle": "Ускоряйте рост, выстраивая системы, которые точно показывают, где улучшаться.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-12-skill-stacking",
+        "dayNumber": 12,
+        "title": "Стек навыков",
+        "subtitle": "Станьте уникально ценным, сочетая навыки так, что другим сложно повторить.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-13-stretch-projects",
+        "dayNumber": 13,
+        "title": "Проекты, которые никто не хочет — ваш золотой рудник",
+        "subtitle": "Работа, от которой слегка нервничаете — кросс-функциональная инициатива, презентация клиенту, внедрение системы — именно там карьерный капитал растёт быстрее всего. Коллеги избегают дискомфорта; вы будете искать его стратегически.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Вы строите то, что другим сложно скопировать",
+        "subtitle": "За 7 уроков вы собрали полную систему: мышление мастера, целенаправленная практика, ритуалы глубокой работы, петли обратной связи, стек навыков и stretch-проекты. Система накапливается — каждую неделю капитал растёт.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-15-visibility-strategy",
+        "dayNumber": 15,
+        "title": "Миф о меритократии",
+        "subtitle": "Одной усердной работы мало для повышения. Исследования: видимость и восприятие — большая часть карьерного роста, часто больше сырой компетентности. Это не хвастовство — чтобы те, кто решает, знали вашу ценность.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-16-career-network",
+        "dayNumber": 16,
+        "title": "Ваша сеть — ваш капитал связей",
+        "subtitle": "До 80% вакансий закрываются через нетворкинг, а не отклики. Эффективный нетворкинг — не коллекция визиток, а искренние отношения с людьми, расширяющими ваш мир. Многие ошибаются, начиная только когда что-то нужно.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-17-90-day-sprint",
+        "dayNumber": 17,
+        "title": "Превратите большие карьерные цели в сфокусированные 90-дневные спринты с видимым измеримым прогрессом.",
+        "subtitle": "Почему годовые цели проваливаются",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-18-opportunity-radar",
+        "dayNumber": 18,
+        "title": "Научитесь замечать скрытые возможности, мимо которых проходят другие.",
+        "subtitle": "Удача не случайна — её проектируют",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-19-momentum-habits",
+        "dayNumber": 19,
+        "title": "Привычки импульса",
+        "subtitle": "Маленькие ежедневные привычки, которые двигают карьеру даже в загруженные недели.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-20-resilience-system",
+        "dayNumber": 20,
+        "title": "Система устойчивости",
+        "subtitle": "Ментальная «броня», которая держит вас в движении через неудачи, отказы и сомнения.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "ca-21-course-finale",
+        "dayNumber": 21,
+        "title": "Финал курса",
+        "subtitle": "Соберите всё вместе — ваша система карьерного ускорения готова.",
+        "duration": "5 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "entrepreneurial-mindset": {
+    "id": "entrepreneurial-mindset",
+    "title": "Предпринимательское мышление",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "em-1-fastlane-vs-slowlane",
+        "dayNumber": 1,
+        "title": "Fastlane против Slowlane",
+        "subtitle": "Почему привычный путь к богатству не работает — и как на самом деле выглядит альтернатива.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-2-value-creation",
+        "dayNumber": 2,
+        "title": "Создание ценности — единственный бизнес, который имеет значение",
+        "subtitle": "Каждый успешный бизнес решает проблему. Думайте о доставленной ценности, а не о проданных продуктах.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-3-zero-to-one-thinking",
+        "dayNumber": 3,
+        "title": "Мышление «от нуля к единице»",
+        "subtitle": "Почему копирование работающего ведёт к гонке на дно — и как построить что-то по-настоящему новое.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-4-cents-framework",
+        "dayNumber": 4,
+        "title": "Каждая монополия начинается с малого. Доминируя в крошечной нише (как Facebook в Гарварде), вы строите защищённую позицию и расширяетесь с силы, а не в широкой конкуренции.",
+        "subtitle": "Рамка CENTS",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-5-personal-mba-lens",
+        "dayNumber": 5,
+        "title": "Когда доход не привязан ко времени И вы можете обслуживать неограниченно много клиентов одновременно, рост становится экспоненциальным, а не линейным.",
+        "subtitle": "Линза решений The Personal MBA",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-6-consumer-to-producer",
+        "dayNumber": 6,
+        "title": "От потребителя к производителю",
+        "subtitle": "Главный сдвиг идентичности, отделяющий предпринимателей от остальных — и как его сделать.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "Чертёж создателя",
+        "subtitle": "Соберите всё из модуля 1 в личную рамку действий для вашего предпринимательского пути.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-8-market-gaps",
+        "dayNumber": 8,
+        "title": "Как заметить пробел на рынке",
+        "subtitle": "Настройте мозг замечать возможности в бытовых раздражителях, жалобах и «костылях».",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-9-ten-x-thinking",
+        "dayNumber": 9,
+        "title": "Мышление 10x — почему инкремент проваливается",
+        "subtitle": "Почему быть на 10% лучше — ловушка, а цель 10x заставляет думать принципиально иначе.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-10-monopoly-mindset",
+        "dayNumber": 10,
+        "title": "Мышление монополии",
+        "subtitle": "Как занять позицию, где вы единственный реальный вариант — а не один из десятков.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-11-pain-point-radar",
+        "dayNumber": 11,
+        "title": "Радар болевых точек — где прячутся деньги",
+        "subtitle": "Самые прибыльные бизнесы не продают фичи — они убирают боль. Научитесь измерять и ранжировать интенсивность боли.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-12-value-equation",
+        "dayNumber": 12,
+        "title": "Уравнение ценности",
+        "subtitle": "Простая формула, определяющая, сколько заплатят — и как максимизировать воспринимаемую ценность.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-13-scoring-opportunities",
+        "dayNumber": 13,
+        "title": "Оценка возможностей",
+        "subtitle": "Системная рамка сравнения нескольких возможностей и выбора наиболее перспективной.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "Ваш шорт-лист возможностей",
+        "subtitle": "Соберите модуль 2 в ясный ранжированный список возможностей, готовых к действию.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-15-analysis-paralysis",
+        "dayNumber": 15,
+        "title": "Ловушка паралича анализа",
+        "subtitle": "Почему переобдумывание убивает больше бизнесов, чем плохие идеи — и простое лекарство.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-16-commitment-devices",
+        "dayNumber": 16,
+        "title": "Механизмы обязательств, которые заставляют действовать",
+        "subtitle": "Как сделать бездействие болезненнее действия — чтобы не оставалось выбора, кроме движения.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-17-first-dollar",
+        "dayNumber": 17,
+        "title": "Ваш первый $1 — простейший эксперимент",
+        "subtitle": "Быстрейший способ проверить идею — чтобы кто-то за неё заплатил.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-18-risk-reframed",
+        "dayNumber": 18,
+        "title": "Риск — не то, что вы думаете",
+        "subtitle": "Переосмыслите предпринимательский риск: не «поставить всё», а расчётные обратимые эксперименты.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-19-mvp-mindset",
+        "dayNumber": 19,
+        "title": "Мышление MVP",
+        "subtitle": "Выпустите самую уродливую рабочую версию — пусть клиенты скажут, что строить дальше.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-20-building-momentum",
+        "dayNumber": 20,
+        "title": "Построение неостановимого импульса",
+        "subtitle": "Как создать эффект маховика: каждая маленькая победа ускоряет следующую.",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "em-21-course-finale",
+        "dayNumber": 21,
+        "title": "Ваш план предпринимательских действий",
+        "subtitle": "Соберите всё в ясный 30-дневный план, который можно начать завтра.",
+        "duration": "5 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "claude-ai-mastery": {
+    "id": "claude-ai-mastery",
+    "title": "Claude: думайте точнее, работайте быстрее",
+    "totalDays": 21,
+    "lessons": [
+      {
+        "id": "cam-1-what-is-claude",
+        "dayNumber": 1,
+        "title": "Что такое Claude?",
+        "subtitle": "Познакомьтесь с ИИ, который думает, прежде чем говорить",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-2-your-first-conversation",
+        "dayNumber": 2,
+        "title": "Ваш первый диалог",
+        "subtitle": "Если умеете печатать — умеете пользоваться Claude",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-3-how-to-talk-to-claude",
+        "dayNumber": 3,
+        "title": "Как говорить с Claude",
+        "subtitle": "Формула из 3 частей для отличных ответов каждый раз",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-4-claudes-long-context-superpower",
+        "dayNumber": 4,
+        "title": "Суперсила Claude: длинный контекст",
+        "subtitle": "Прочитать целый отчёт, договор или книгу — и спросить о чём угодно",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-5-using-projects",
+        "dayNumber": 5,
+        "title": "Projects для порядка в работе",
+        "subtitle": "Дать Claude постоянную память для самой важной работы",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-6-artifacts",
+        "dayNumber": 6,
+        "title": "Artifacts: живая рабочая область",
+        "subtitle": "Создавать документы, таблицы и код, которые обновляются в реальном времени",
+        "duration": "4 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-7-module-1-checkpoint",
+        "dayNumber": 7,
+        "title": "✅ Контрольная точка модуля 1",
+        "subtitle": "Повторите главные идеи уроков 1–6 и закрепите их",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-8-writing-and-editing",
+        "dayNumber": 8,
+        "title": "Письмо и редактирование за минуты",
+        "subtitle": "Черновик, переписывание и полировка любого текста — быстро",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-9-emails-that-sound-like-you",
+        "dayNumber": 9,
+        "title": "Письма в вашем стиле",
+        "subtitle": "Любая ситуация в почте — за секунды, не минуты",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-10-research-without-rabbit-holes",
+        "dayNumber": 10,
+        "title": "Исследования без «кроличьих нор»",
+        "subtitle": "Глубокие сводки, ясные сравнения и ответы за минуты",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-11-summarising-long-documents",
+        "dayNumber": 11,
+        "title": "Краткое изложение длинных документов",
+        "subtitle": "Превратить любой отчёт, договор или статью в то, что действительно важно",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-12-content-and-social-media",
+        "dayNumber": 12,
+        "title": "Контент и соцсети",
+        "subtitle": "Стабильный контент в стиле бренда — за долю времени",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-13-spreadsheet-formulas-and-data",
+        "dayNumber": 13,
+        "title": "Формулы таблиц и помощь с данными",
+        "subtitle": "Освойте Excel и Google Sheets — без экспертизы в таблицах",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-14-module-2-checkpoint",
+        "dayNumber": 14,
+        "title": "✅ Контрольная точка модуля 2",
+        "subtitle": "Закрепите продуктивные привычки перед модулем для продвинутых",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-15-analysing-reports-and-data",
+        "dayNumber": 15,
+        "title": "Анализ отчётов и бизнес-данных",
+        "subtitle": "Превратить сырые цифры и плотные отчёты в ясные решения",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-16-strategy-and-planning",
+        "dayNumber": 16,
+        "title": "Стратегия и бизнес-планирование",
+        "subtitle": "Продумывать крупные решения с партнёром, который не устаёт",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-17-coding-without-being-a-developer",
+        "dayNumber": 17,
+        "title": "Код без роли разработчика",
+        "subtitle": "Скрипты, автоматизации и формулы — простым языком",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-18-reusable-prompts-and-templates",
+        "dayNumber": 18,
+        "title": "Повторяемые промпты и шаблоны",
+        "subtitle": "Хватит начинать с нуля — соберите библиотеку промптов",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-19-multi-document-analysis",
+        "dayNumber": 19,
+        "title": "Анализ нескольких документов",
+        "subtitle": "Сравнивать, перекрёстно сверять и находить пробелы в нескольких источниках",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-20-connecting-claude-to-your-workflow",
+        "dayNumber": 20,
+        "title": "Встроить Claude в ваш рабочий процесс",
+        "subtitle": "Привычки и системы, которые встраивают Claude в вашу работу",
+        "duration": "5 min",
+        "xpValue": 20
+      },
+      {
+        "id": "cam-21-graduation",
+        "dayNumber": 21,
+        "title": "🎓 Выпуск — ваш плейбук Claude",
+        "subtitle": "Вы справились. Теперь составьте личный план действий.",
+        "duration": "6 min",
+        "xpValue": 20
+      }
+    ]
+  },
+  "claude-ai-excel": {
+    "id": "claude-ai-excel",
+    "title": "Освойте Claude AI для Excel",
+    "totalDays": 15,
+    "lessons": [
+      {
+        "id": "lesson-1-what-is-claude-excel",
+        "dayNumber": 1,
+        "title": "Что такое Claude для Excel?",
+        "subtitle": "Узнайте, как ИИ может изменить вашу работу с таблицами",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-2-install-and-setup",
+        "dayNumber": 2,
+        "title": "Установка и настройка",
+        "subtitle": "Запустите Claude в Excel менее чем за 5 минут",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-3-first-conversation",
+        "dayNumber": 3,
+        "title": "Первый диалог",
+        "subtitle": "Как устроена боковая панель и первый вопрос",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-4-art-of-asking",
+        "dayNumber": 4,
+        "title": "Искусство вопросов",
+        "subtitle": "Формулируйте запросы так, чтобы получить нужный ответ",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-5-module-1-checkpoint",
+        "dayNumber": 5,
+        "title": "Мгновенно понять любую таблицу",
+        "subtitle": "Попросите Claude разобрать любую книгу — сколь угодно сложную или чужую",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-6-understand-any-formula",
+        "dayNumber": 6,
+        "title": "Понять любую формулу",
+        "subtitle": "Объяснения простым языком даже для самых сложных формул Excel",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-7-fix-errors-instantly",
+        "dayNumber": 7,
+        "title": "Мгновенно исправлять ошибки",
+        "subtitle": "Пусть Claude диагностирует и исправит #REF!, #VALUE!, #N/A и другие ошибки Excel",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-8-clean-messy-data",
+        "dayNumber": 8,
+        "title": "Очистка «грязных» данных",
+        "subtitle": "Исправляйте с Claude несогласованное форматирование, дубликаты и кривые импорты",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-9-build-formulas",
+        "dayNumber": 9,
+        "title": "Создавать формулы с нуля",
+        "subtitle": "Опишите задачу простым языком — Claude напишет формулу",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-10-module-2-checkpoint",
+        "dayNumber": 10,
+        "title": "Ваш повседневный набор в Excel",
+        "subtitle": "Соберите навыки модуля 2 в уверенный ежедневный процесс",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-11-analyse-data",
+        "dayNumber": 11,
+        "title": "Анализ данных и поиск инсайтов",
+        "subtitle": "Попросите Claude найти тренды, закономерности и выбросы в таблицах",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-12-create-charts",
+        "dayNumber": 12,
+        "title": "Диаграммы и визуальные сводки",
+        "subtitle": "Превратите числа в понятные визуалы с помощью Claude",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-13-build-templates",
+        "dayNumber": 13,
+        "title": "Переиспользуемые шаблоны",
+        "subtitle": "Создавайте с Claude профессиональные шаблоны на годы",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-14-automate-tasks",
+        "dayNumber": 14,
+        "title": "Автоматизация повторяющихся задач",
+        "subtitle": "Меньше рутины: пакетные операции и умные процессы с Claude",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-15-best-practices",
+        "dayNumber": 15,
+        "title": "Профессиональные практики и безопасность",
+        "subtitle": "Используйте Claude уверенно и ответственно на работе",
+        "duration": "5 min",
+        "xpValue": 25
+      }
+    ]
+  },
+  "master-ai-microsoft-365": {
+    "id": "master-ai-microsoft-365",
+    "title": "Освойте ИИ для Microsoft 365",
+    "totalDays": 24,
+    "lessons": [
+      {
+        "id": "lesson-1-your-microsoft-365-ai-toolkit",
+        "dayNumber": 1,
+        "title": "Ваш ИИ-набор для Microsoft 365",
+        "subtitle": "Какой инструмент ИИ выбрать и когда — включая честные ограничения каждого.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-2-choose-your-setup",
+        "dayNumber": 2,
+        "title": "Выберите свою настройку",
+        "subtitle": "Три честных пути — включая один, который ничего не стоит.",
+        "duration": "5 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-3-the-prompt-that-works-at-work",
+        "dayNumber": 3,
+        "title": "Бесплатные тарифы ограничивают число сообщений. Один полный бриф заменяет несколько уточнений и укладывается в лимит.",
+        "subtitle": "Бриф, который работает на работе",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-4-module-1-checkpoint",
+        "dayNumber": 4,
+        "title": "Полный бриф стоит одного более длинного сообщения и убирает раунды переписывания после расплывчатого запроса.",
+        "subtitle": "Контрольная точка модуля 1: ваша настройка и ваш бриф",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-5-create-professional-documents",
+        "dayNumber": 5,
+        "title": "ИИ может выдумывать цифры и цитаты. Всё, на чём вы опираетесь перед коллегой или клиентом, нужно сверить с реальным источником.",
+        "subtitle": "Создавайте профессиональные документы",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-6-rewrite-reshape-retarget",
+        "dayNumber": 6,
+        "title": "Аргумент в одном предложении — проверка, что мысль доведена. Текст вокруг смутного аргумента убеждает никого.",
+        "subtitle": "Переписать, перестроить, переориентировать",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-7-read-a-long-document-fast",
+        "dayNumber": 7,
+        "title": "Эти слова показывают силу доказательств. Убрав их, вы меняете утверждение, хотя текст читается чище.",
+        "subtitle": "Быстро прочитать длинный документ",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-8-module-2-checkpoint",
+        "dayNumber": 8,
+        "title": "Отсутствующие владельцы, даты, затраты и негативные сценарии — обычное место риска. Пропуск, прочитанный как согласие, вводит в заблуждение без лжи.",
+        "subtitle": "Контрольная точка модуля 2: документ, который вы отправите",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-9-understand-any-spreadsheet",
+        "dayNumber": 9,
+        "title": "При сокращении убирают оговорки и условия — остаётся утверждение, которого не поддерживают данные. Сравнение рядом — как это поймать.",
+        "subtitle": "Понять любую таблицу",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-10-find-the-insight",
+        "dayNumber": 10,
+        "title": "В таблицах обычно зарплаты, клиенты и коммерция. Многие разрешают внутренний инструмент и запрещают публичный; идентифицирующие столбцы убирайте, если анализу личность не нужна.",
+        "subtitle": "Найдите вывод, а не только резюме",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-11-insight-to-slides",
+        "dayNumber": 11,
+        "title": "Итог, существовавший только в чате, никто не проверял. Пересчёт в листе делает его безопасным перед руководителем или клиентом.",
+        "subtitle": "Превратите вывод в слайды",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-12-module-3-checkpoint",
+        "dayNumber": 12,
+        "title": "Иллюстрация полезна, но выдавать её за документальное свидетельство реального продукта, объекта или результата — искажать то, что показываете комнате.",
+        "subtitle": "Контрольная точка модуля 3: один вывод, один слайд",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-13-take-control-of-your-inbox",
+        "dayNumber": 13,
+        "title": "Назвать, чего данные не покрывают, ослабляет вашу позицию в зале.",
+        "subtitle": "Ограничение, названное вами, дешевле, чем найденное перед всеми; остальной анализ становится правдоподобнее, а не слабее.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-14-summarise-a-long-thread",
+        "dayNumber": 14,
+        "title": "Если ИИ поставил низкий приоритет, можно спокойно отложить.",
+        "subtitle": "Приоритет зависит от контекста, который инструмент не видит — кто кого подменяет, какой клиент уходит, чьё терпение кончилось. Мягкое письмо может быть самым срочным.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-15-write-better-emails-faster",
+        "dayNumber": 15,
+        "title": "Условие остаётся условием. Убрав его, вы привязываете команду к дате, которую никто не обещал — резюме при этом читается отлично.",
+        "subtitle": "Вопрос в длинной цепочке, на который никто не ответил, можно считать согласованным.",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-16-module-4-checkpoint",
+        "dayNumber": 16,
+        "title": "Черновик по умолчанию соглашается и уступит за вас, звуча при этом разумно. Поэтому каждый черновик читают на обязательства.",
+        "subtitle": "Можно писать от имени коллеги, будто это он написал.",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-17-prepare-for-any-meeting",
+        "dayNumber": 17,
+        "title": "Условие или владелец могли исчезнуть, не выглядя неправильно",
+        "subtitle": "Резюме нельзя цитировать",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-18-never-lose-a-meeting-action",
+        "dayNumber": 18,
+        "title": "Одностраничную структуру",
+        "subtitle": "Неписаную историю и кто во что вложился",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-19-catch-up-on-what-you-missed",
+        "dayNumber": 19,
+        "title": "Как неназначенное, с зафиксированным решением",
+        "subtitle": "Назначить того, кто больше говорил",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-20-module-5-checkpoint",
+        "dayNumber": 20,
+        "title": "Почему recap — не протокол решений?",
+        "subtitle": "Всегда слишком короткий",
+        "duration": "6 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-21-build-a-complete-business-report",
+        "dayNumber": 21,
+        "title": "Напишите каждому владельцу, подтвердив действие и дату, прежде чем считать готово.",
+        "subtitle": "Какой порядок даёт ценность от встречи?",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-22-design-your-ai-powered-workday",
+        "dayNumber": 22,
+        "title": "Какой порядок сборки отчёта через приложения правильный?",
+        "subtitle": "Сначала слайды, потом цифры под них",
+        "duration": "7 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-23-redesign-one-recurring-process",
+        "dayNumber": 23,
+        "title": "Почему ритм лучше решения в моменте?",
+        "subtitle": "Убирает решение — навык переживает загруженную неделю",
+        "duration": "8 min",
+        "xpValue": 25
+      },
+      {
+        "id": "lesson-24-capstone-your-microsoft-365-workflow",
+        "dayNumber": 24,
+        "title": "Что первое делать с повторяющимся процессом?",
+        "subtitle": "Автоматизировать самый медленный шаг",
+        "duration": "9 min",
+        "xpValue": 25
+      }
+    ]
+  }
+}

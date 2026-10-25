@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import LanguageSwitcher from '../../../authorisation/src/i18n/LanguageSwitcher'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 import Logo from './Logo'
-import { HEADER_NAV, ROUTES } from '@/marketing/data/nav'
+import { HEADER_NAV, NAV_COPY, ROUTES } from '@/marketing/data/nav'
 
 function hashHref(pathname: string, hash: string) {
   return pathname === '/' ? hash : `${pathname}${hash}`
@@ -17,6 +19,8 @@ function scrollToHash(hash: string) {
 
 export default function MarketingHeader() {
   const { pathname } = useLocation()
+  const { locale } = useI18n()
+  const copy = NAV_COPY[locale]
   const [open, setOpen] = useState(false)
   const [menuPath, setMenuPath] = useState(pathname)
   const [scrolled, setScrolled] = useState(false)
@@ -50,15 +54,16 @@ export default function MarketingHeader() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between sm:h-[72px]">
-          <Link to={ROUTES.home} className="shrink-0" aria-label="MindoraAcademy.com home">
+          <Link to={ROUTES.home} className="shrink-0" aria-label={copy.homeAria}>
             <Logo variant="dark" />
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">
+            <LanguageSwitcher />
             {HEADER_NAV.map((item) =>
               'hash' in item ? (
                 <a
-                  key={item.label}
+                  key={item.key}
                   href={hashHref(pathname, item.hash)}
                   className="text-sm font-medium text-sw-grey transition-colors hover:text-sw-dark"
                   onClick={(e) => {
@@ -68,15 +73,15 @@ export default function MarketingHeader() {
                     window.history.pushState(null, '', item.hash)
                   }}
                 >
-                  {item.label}
+                  {copy[item.key]}
                 </a>
               ) : (
                 <Link
-                  key={item.label}
+                  key={item.key}
                   to={item.href}
                   className="text-sm font-medium text-sw-grey transition-colors hover:text-sw-dark"
                 >
-                  {item.label}
+                  {copy[item.key]}
                 </Link>
               ),
             )}
@@ -87,20 +92,20 @@ export default function MarketingHeader() {
               to={ROUTES.login}
               className="px-3 py-2 text-sm font-semibold text-sw-dark transition-colors hover:text-sw-blue"
             >
-              Sign In
+              {copy.signIn}
             </Link>
             <Link
               to={ROUTES.quiz28}
               className="rounded-full bg-sw-blue px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-md"
             >
-              Get Started
+              {copy.getStarted}
             </Link>
           </div>
 
           <button
             type="button"
             className="rounded-lg p-2 transition-colors hover:bg-sw-grey-light md:hidden"
-            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-label={open ? copy.closeMenu : copy.openMenu}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
@@ -115,7 +120,7 @@ export default function MarketingHeader() {
             {HEADER_NAV.map((item) =>
               'hash' in item ? (
                 <a
-                  key={item.label}
+                  key={item.key}
                   href={hashHref(pathname, item.hash)}
                   className="px-2 py-3 text-base font-medium text-sw-grey"
                   onClick={(e) => {
@@ -126,16 +131,16 @@ export default function MarketingHeader() {
                     window.history.pushState(null, '', item.hash)
                   }}
                 >
-                  {item.label}
+                  {copy[item.key]}
                 </a>
               ) : (
                 <Link
-                  key={item.label}
+                  key={item.key}
                   to={item.href}
                   className="px-2 py-3 text-base font-medium text-sw-grey"
                   onClick={() => setOpen(false)}
                 >
-                  {item.label}
+                  {copy[item.key]}
                 </Link>
               ),
             )}
@@ -146,14 +151,14 @@ export default function MarketingHeader() {
               className="rounded-full border border-sw-grey-border py-3 text-center text-sm font-semibold text-sw-dark"
               onClick={() => setOpen(false)}
             >
-              Sign In
+              {copy.signIn}
             </Link>
             <Link
               to={ROUTES.quiz28}
               className="rounded-full bg-sw-blue py-3 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >
-              Get Started
+              {copy.getStarted}
             </Link>
           </div>
         </div>

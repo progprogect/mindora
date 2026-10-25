@@ -1,0 +1,458 @@
+[
+  {
+    "id": "q1-focus",
+    "type": "hero",
+    "step": 1,
+    "totalSteps": 12,
+    "question": "Что для вас сейчас главный приоритет?",
+    "options": [
+      {
+        "emoji": "🚀",
+        "label": "Карьера и бизнес",
+        "value": "career-business",
+        "gradient": "linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%)"
+      },
+      {
+        "emoji": "💰",
+        "label": "Богатство и свобода",
+        "value": "wealth-freedom",
+        "gradient": "linear-gradient(135deg, #065f46 0%, #059669 50%, #10b981 100%)"
+      },
+      {
+        "emoji": "💪",
+        "label": "Здоровье и энергия",
+        "value": "health-vitality",
+        "gradient": "linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #fb923c 100%)"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Мышление и уверенность",
+        "value": "mindset-confidence",
+        "gradient": "linear-gradient(135deg, #6b21a8 0%, #9333ea 50%, #a855f7 100%)"
+      }
+    ]
+  },
+  {
+    "id": "q2-identity",
+    "type": "large-card",
+    "step": 2,
+    "totalSteps": 12,
+    "question": "Как бы вы описали себя сейчас?",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Строю карьеру",
+        "value": "career-employee",
+        "gradient": "linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 60%, #3b82f6 100%)"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Веду бизнес",
+        "value": "business-founder",
+        "gradient": "linear-gradient(135deg, #14532d 0%, #16a34a 60%, #4ade80 100%)"
+      },
+      {
+        "emoji": "🌱",
+        "label": "Только начинаю",
+        "value": "starting-out",
+        "gradient": "linear-gradient(135deg, #0f4c5c 0%, #0891b2 60%, #22d3ee 100%)"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Готов(а) к большим переменам",
+        "value": "ready-to-change",
+        "gradient": "linear-gradient(135deg, #7c2d12 0%, #c2410c 60%, #fb923c 100%)"
+      }
+    ]
+  },
+  {
+    "id": "q3-state",
+    "type": "large-card",
+    "step": 3,
+    "totalSteps": 12,
+    "question": "Если честно — сейчас я чувствую…",
+    "options": [
+      {
+        "emoji": "🔥",
+        "label": "На подъёме",
+        "sublabel": "Готов(а) к большим переменам",
+        "value": "fired-up",
+        "gradient": "linear-gradient(135deg, #92400e 0%, #d97706 50%, #fbbf24 100%)"
+      },
+      {
+        "emoji": "📈",
+        "label": "Хорошо, но могу больше",
+        "sublabel": "Знаю, что могу больше",
+        "value": "doing-ok",
+        "gradient": "linear-gradient(135deg, #064e3b 0%, #059669 50%, #6ee7b7 100%)"
+      },
+      {
+        "emoji": "😤",
+        "label": "Застрял(а)",
+        "sublabel": "Нужны направление и план",
+        "value": "stuck",
+        "gradient": "linear-gradient(135deg, #1e293b 0%, #475569 50%, #94a3b8 100%)"
+      },
+      {
+        "emoji": "😴",
+        "label": "Перегружен(а)",
+        "sublabel": "Выгорание — нужен перезапуск",
+        "value": "overwhelmed",
+        "gradient": "linear-gradient(135deg, #4a1d96 0%, #7c3aed 50%, #a78bfa 100%)"
+      }
+    ]
+  },
+  {
+    "id": "social-proof-1",
+    "type": "social-proof",
+    "totalSteps": 12,
+    "headline": "Вы в отличной компании",
+    "stat": "Более 500 000 человек изменили жизнь с MindoraAcademy",
+    "copy": "Персональный план займёт ещё около 2 минут. Мы зададим несколько быстрых вопросов о ваших целях — и ваш профиль успеха будет готов.",
+    "ctaLabel": "СОЗДАТЬ МОЙ ПЛАН →"
+  },
+  {
+    "id": "q4-challenge",
+    "type": "question",
+    "step": 4,
+    "totalSteps": 12,
+    "question": "Что сейчас даётся вам труднее всего?",
+    "options": [
+      {
+        "emoji": "📈",
+        "label": "Карьера не движется достаточно быстро",
+        "value": "career-stuck"
+      },
+      {
+        "emoji": "💸",
+        "label": "Финансовое давление или мало дохода",
+        "value": "money-stress"
+      },
+      {
+        "emoji": "😴",
+        "label": "Мало энергии — выгорание",
+        "value": "energy-low"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Самокритика и сомнения",
+        "value": "mindset-blocks"
+      },
+      {
+        "emoji": "🤖",
+        "label": "Не использую ИИ и технологии в полную силу",
+        "value": "tech-behind"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Бизнес растёт слишком медленно",
+        "value": "business-slow"
+      }
+    ]
+  },
+  {
+    "id": "q5-motivation",
+    "type": "question",
+    "step": 5,
+    "totalSteps": 12,
+    "question": "Что подталкивает вас к переменам именно сейчас?",
+    "options": [
+      {
+        "emoji": "👨‍👩‍👧",
+        "label": "Больше для семьи",
+        "value": "family"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Личные амбиции — хочу большего",
+        "value": "ambition"
+      },
+      {
+        "emoji": "😰",
+        "label": "Страх отстать от других",
+        "value": "fear-behind"
+      },
+      {
+        "emoji": "💡",
+        "label": "Был тревожный сигнал",
+        "value": "wake-up-call"
+      },
+      {
+        "emoji": "🔥",
+        "label": "Сейчас или никогда — хватит ждать",
+        "value": "now-or-never"
+      }
+    ]
+  },
+  {
+    "id": "q6-mindset",
+    "type": "question",
+    "step": 6,
+    "totalSteps": 12,
+    "question": "Какая мысль больше всего похожа на вас?",
+    "options": [
+      {
+        "emoji": "💡",
+        "label": "«Знаю, что делать — нужно начать»",
+        "value": "know-need-start"
+      },
+      {
+        "emoji": "🗺️",
+        "label": "«Не знаю, с чего начать»",
+        "value": "dont-know"
+      },
+      {
+        "emoji": "🔁",
+        "label": "«Уже пробовал(а) — не получилось удержаться»",
+        "value": "tried-failed"
+      },
+      {
+        "emoji": "🛠️",
+        "label": "«Я способен(на) — нужна правильная система»",
+        "value": "need-tools"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-a",
+    "type": "interstitial",
+    "totalSteps": 12,
+    "headline": "Вы уже впереди большинства",
+    "copy": "Большинство понимают, что нужно что-то менять. То, что вы действуете, ставит вас в топ-10%.",
+    "stat": "87% участников MindoraAcademy отмечают прорыв в первые 2 недели",
+    "ctaLabel": "ПРОДОЛЖИТЬ →",
+    "echoKey": "q3-state",
+    "echoHeadline": {
+      "stuck": "Застой временен. План — нет.",
+      "overwhelmed": "Выгорание — сигнал, а не приговор",
+      "fired-up": "У вас уже есть всё необходимое — направим это в дело",
+      "doing-ok": "«Нормально» — враг «великолепно», и вы это знаете"
+    },
+    "echoCopy": {
+      "stuck": "Разница между прорывом и застоем — не талант, а чёткая структурированная система.",
+      "overwhelmed": "Вам не нужна сила воли — нужна более лёгкая нагрузка и умная система. Для этого и создан MindoraAcademy.",
+      "fired-up": "Самые целеустремлённые работают не больше всех — они работают над правильными вещами. Мы поможем найти ваши.",
+      "doing-ok": "Вы не застряли — вы готовы к новому уровню. MindoraAcademy покажет, куда сфокусироваться для максимального скачка."
+    }
+  },
+  {
+    "id": "q7-financial",
+    "type": "question",
+    "step": 7,
+    "totalSteps": 12,
+    "question": "Как бы вы описали своё финансовое положение сейчас?",
+    "options": [
+      {
+        "emoji": "😬",
+        "label": "Тесно — нужен больший доход",
+        "value": "tight"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Нормально, но хочу финансовой свободы",
+        "value": "ok-want-more"
+      },
+      {
+        "emoji": "📈",
+        "label": "Строю — активно работаю над этим",
+        "value": "building"
+      },
+      {
+        "emoji": "💎",
+        "label": "Комфортно — хочу наращивать капитал",
+        "value": "comfortable"
+      }
+    ]
+  },
+  {
+    "id": "q8-energy",
+    "type": "question",
+    "step": 8,
+    "totalSteps": 12,
+    "question": "Как обычно ваши энергия и самочувствие?",
+    "options": [
+      {
+        "emoji": "😴",
+        "label": "Постоянная усталость или выгорание",
+        "value": "burned-out"
+      },
+      {
+        "emoji": "🤷",
+        "label": "То вверх, то вниз — нестабильно",
+        "value": "inconsistent"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Неплохо, но не на пике",
+        "value": "decent"
+      },
+      {
+        "emoji": "⚡",
+        "label": "Много энергии — чувствую себя отлично",
+        "value": "high-energy"
+      }
+    ]
+  },
+  {
+    "id": "q9-time",
+    "type": "question",
+    "step": 9,
+    "totalSteps": 12,
+    "question": "Сколько времени в день вы можете уделять личному росту?",
+    "subtext": "Регулярность важнее интенсивности — 10 минут в день меняют всё",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "5–10 минут",
+        "value": "5-10min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "10–15 минут",
+        "value": "10-15min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "20–30 минут",
+        "value": "20-30min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "30+ минут",
+        "value": "30plus"
+      }
+    ]
+  },
+  {
+    "id": "q10-tech",
+    "type": "question",
+    "step": 10,
+    "totalSteps": 12,
+    "question": "Насколько вы уверенно чувствуете себя с технологиями и ИИ?",
+    "options": [
+      {
+        "emoji": "👀",
+        "label": "Почти не пользуюсь",
+        "value": "novice"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Справляюсь, но хочу знать больше",
+        "value": "basic"
+      },
+      {
+        "emoji": "⚡",
+        "label": "Пользуюсь регулярно",
+        "value": "regular"
+      },
+      {
+        "emoji": "🛠️",
+        "label": "Уверен(а) — хочу продвинутые навыки",
+        "value": "advanced"
+      }
+    ]
+  },
+  {
+    "id": "q11-vision",
+    "type": "question",
+    "step": 11,
+    "totalSteps": 12,
+    "question": "Как выглядит ваша жизнь через 12 месяцев?",
+    "subtext": "Выберите то, что вас больше всего вдохновляет",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Повышение, больший доход или карьерный скачок",
+        "value": "career-leap"
+      },
+      {
+        "emoji": "💰",
+        "label": "Финансовая свобода или рекордный доход",
+        "value": "financial-freedom"
+      },
+      {
+        "emoji": "💪",
+        "label": "Форма, энергия и здоровье",
+        "value": "health-transform"
+      },
+      {
+        "emoji": "🧠",
+        "label": "Уверенность, фокус и ясность ума",
+        "value": "mindset-shift"
+      },
+      {
+        "emoji": "🤖",
+        "label": "Владение ИИ и опережение отрасли",
+        "value": "tech-leader"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Растущий и процветающий бизнес",
+        "value": "business-success"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-b",
+    "type": "interstitial",
+    "totalSteps": 12,
+    "headline": "Ваш профиль успеха почти готов",
+    "copy": "Мы собираем последние детали. Ещё один вопрос — и персональный профиль успеха будет завершён.",
+    "stat": "Те, кто ставит чёткую цель и награду, в 3 раза чаще доводят дело до конца — Harvard Business Review",
+    "ctaLabel": "ПОЧТИ ГОТОВО →",
+    "echoKey": "q11-vision",
+    "echoHeadline": {
+      "career-leap": "Карьерный прорыв ближе, чем кажется",
+      "financial-freedom": "Финансовая свобода — навык, который можно освоить",
+      "health-transform": "Тело быстро откликается на стабильные действия",
+      "mindset-shift": "Уверенность — навык, который тренируют, а не черта с рождения",
+      "tech-leader": "Владение ИИ станет самым ценным карьерным навыком десятилетия",
+      "business-success": "Каждый успешный бизнес строит неутомимо любознательный основатель"
+    }
+  },
+  {
+    "id": "q12-reward",
+    "type": "question",
+    "step": 12,
+    "totalSteps": 12,
+    "question": "Как отпразднуете первую большую победу?",
+    "subtext": "Те, кто ставят награду, в 3 раза чаще доводят дело до конца",
+    "options": [
+      {
+        "emoji": "✈️",
+        "label": "Поездка или впечатление",
+        "value": "trip"
+      },
+      {
+        "emoji": "🍽️",
+        "label": "Отличный ужин в ресторане",
+        "value": "dinner"
+      },
+      {
+        "emoji": "💻",
+        "label": "Новая техника или давняя мечта",
+        "value": "purchase"
+      },
+      {
+        "emoji": "💰",
+        "label": "Отложить или инвестировать",
+        "value": "savings"
+      },
+      {
+        "emoji": "👨‍👩‍👧",
+        "label": "Больше для семьи",
+        "value": "family"
+      }
+    ]
+  },
+  {
+    "id": "loading",
+    "type": "loading",
+    "totalSteps": 12
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "totalSteps": 12
+  }
+]

@@ -14,6 +14,8 @@ import { useCourse } from '@/content/useCourse'
 import { todayIso } from '@/content/lms'
 import { completeLesson, openLesson } from '@/lib/api'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
+import { BADGES, badgeKey } from '@/content/badges'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useSession } from '@/auth/session'
 
 type Stage = 'cards' | 'quizIntro' | 'quiz' | 'result'
@@ -28,16 +30,6 @@ type CompletionData = {
 
 const SWIPE_MIN = 40
 const FOOTER_FADE = { background: 'linear-gradient(to bottom, rgba(255,255,255,0.85), white 20%)' }
-
-const RESULT_BADGES: Record<string, { label: string; icon: string; desc: string }> = {
-  'first-step': { label: 'First Step', icon: '👣', desc: 'Completed your first lesson!' },
-  'on-fire': { label: 'On Fire', icon: '🔥', desc: '7-day learning streak!' },
-  unstoppable: { label: 'Unstoppable', icon: '💥', desc: '30-day learning streak!' },
-  'module-master': { label: 'Module Master', icon: '🏅', desc: 'Completed a full module!' },
-  'course-graduate': { label: 'Course Graduate', icon: '🎓', desc: 'Completed the full course!' },
-  'perfect-score': { label: 'Perfect Score', icon: '⭐', desc: '100% on a quiz!' },
-  'week-warrior': { label: 'Week Warrior', icon: '🛡️', desc: '7 lessons in one week!' },
-}
 
 export default function LessonPage() {
   const { slug = '', lessonId = '' } = useParams()
@@ -60,10 +52,21 @@ function LessonGate({
   course: Course | null | undefined
 }) {
   if (course === undefined) return <LessonSpinner />
-  if (!course) return <LessonStatus slug={slug} title="Lesson failed to load" />
+  if (!course) return <LessonFailed slug={slug} />
   const lesson = course.lessons.find((item) => item.id === lessonId)
-  if (!lesson) return <LessonStatus slug={slug} title="Lesson not found" />
+  if (!lesson) return <LessonNotFound slug={slug} />
   return <LessonPlayer key={lessonId} slug={slug} course={course} lesson={lesson} />
+}
+
+
+function LessonFailed({ slug }: { slug: string }) {
+  const { t } = useI18n()
+  return <LessonStatus slug={slug} title={t('app.lesson.failedLoad')} />
+}
+
+function LessonNotFound({ slug }: { slug: string }) {
+  const { t } = useI18n()
+  return <LessonStatus slug={slug} title={t('app.lesson.notFound')} />
 }
 
 function LessonPlayer({
@@ -75,6 +78,7 @@ function LessonPlayer({
   course: Course
   lesson: CourseLesson
 }) {
+  const { t, locale } = useI18n()
   const lessonId = lesson.id
   const { refresh } = useSession()
   const [stage, setStage] = useState<Stage>('cards')
@@ -121,8 +125,8 @@ function LessonPlayer({
     return () => window.removeEventListener('keydown', onKey)
   }, [stage])
 
-  const hub = getHub(slug)
-  const unit = ((hub.unitLabel as string) || 'days') === 'days' ? 'Day' : 'Lesson'
+  const hub = getHub(slug, locale)
+  const unit = ((hub.unitLabel as string) || 'days') === 'days' ? t('app.common.day') : t('app.common.lesson')
   const cards = lesson.cards
   const quiz = lesson.quiz
   const card = cards[cardIndex]
@@ -263,7 +267,7 @@ function LessonPlayer({
           {showQuizChrome ? (
             <button
               type="button"
-              aria-label="Exit quiz"
+              aria-label={t('app.lesson.exitQuiz')}
               onClick={() => setStage('quizIntro')}
               className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-sw-grey-light transition-colors shrink-0"
             >
@@ -273,14 +277,14 @@ function LessonPlayer({
             <>
               <Link
                 to="/app/dashboard"
-                aria-label="Back to dashboard"
+                aria-label={t('app.common.backToDashboard')}
                 className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-sw-grey-light transition-colors shrink-0"
               >
                 <HomeIcon />
               </Link>
               <Link
                 to={`/app/courses/${slug}`}
-                aria-label="Back to course overview"
+                aria-label={t('app.lesson.backCourseOverview')}
                 className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-sw-grey-light transition-colors shrink-0"
               >
                 <BackChevron />
@@ -290,24 +294,24 @@ function LessonPlayer({
           <div className="flex-1 min-w-0">
             {showQuizChrome ? (
               <>
-                <div className="text-[10px] font-semibold text-sw-grey uppercase tracking-wider">Quick Quiz</div>
+                <div className="text-[10px] font-semibold text-sw-grey uppercase tracking-wider">{t('app.lesson.quickQuiz')}</div>
                 <div className="text-xs font-bold text-sw-dark">
-                  Question {qIndex + 1} of {quiz.length}
+                  {t('app.lesson.questionOf').replace('{n}', String(qIndex + 1)).replace('{total}', String(quiz.length))}
                 </div>
               </>
             ) : (
               <>
                 <div className="text-[10px] font-semibold text-sw-grey uppercase tracking-wider truncate">{module?.title ?? course.title}</div>
                 <div className="text-xs font-bold text-sw-dark">
-                  {unit} {lesson.dayNumber} of {course.totalDays}
+                  {t('app.lesson.dayOfTotal').replace('{unit}', unit).replace('{day}', String(lesson.dayNumber)).replace('{total}', String(course.totalDays))}
                 </div>
               </>
             )}
           </div>
           {showQuizChrome ? (
-            <Dots current={qIndex} total={quiz.length} label={`Question ${qIndex + 1} of ${quiz.length}`} />
+            <Dots current={qIndex} total={quiz.length} label={t('app.lesson.questionOf').replace('{n}', String(qIndex + 1)).replace('{total}', String(quiz.length))} />
           ) : (
-            <Dots current={chromeCard} total={cardCount} label={`Card ${chromeCard + 1} of ${cardCount}`} />
+            <Dots current={chromeCard} total={cardCount} label={t('app.lesson.cardOf').replace('{n}', String(chromeCard + 1)).replace('{total}', String(cardCount))} />
           )}
         </div>
         <div
@@ -316,7 +320,7 @@ function LessonPlayer({
           aria-valuenow={pct}
           aria-valuemin={0}
           aria-valuemax={100}
-          aria-label={showQuizChrome ? `Quiz progress: question ${qIndex + 1} of ${quiz.length}` : 'Lesson progress'}
+          aria-label={showQuizChrome ? t('app.lesson.quizProgressAria').replace('{n}', String(qIndex + 1)).replace('{total}', String(quiz.length)) : t('app.lesson.lessonProgressAria')}
         >
           <div className="h-full bg-sw-blue transition-all duration-500" style={{ width: `${pct}%` }} />
         </div>
@@ -335,15 +339,15 @@ function LessonPlayer({
           {cardIndex === 0 ? (
             <div className="mt-8 flex items-center justify-center gap-2 text-sw-grey text-xs opacity-60">
               <span>←</span>
-              <span>Swipe to navigate</span>
+              <span>{t('app.lesson.swipeNavigate')}</span>
               <span>→</span>
             </div>
           ) : null}
         </main>
       ) : stage === 'cards' ? (
         <LessonMissingBody
-          message="This lesson has no cards."
-          actionLabel={quiz.length ? 'Start Quiz' : 'Continue'}
+          message={t('app.lesson.noCards')}
+          actionLabel={quiz.length ? t('app.lesson.startQuiz') : t('app.lesson.continue')}
           onAction={() => {
             if (quiz.length) setStage('quizIntro')
             else void finish(0, 0)
@@ -353,6 +357,7 @@ function LessonPlayer({
 
       {stage === 'quizIntro' ? (
         <QuizIntro
+          t={t}
           unit={unit}
           day={lesson.dayNumber}
           totalDays={course.totalDays}
@@ -372,17 +377,19 @@ function LessonPlayer({
           key={qIndex}
           question={quiz[qIndex]}
           onAnswer={pickOption}
+          t={t}
         />
       ) : stage === 'quiz' ? (
         <LessonMissingBody
-          message="This question failed to load."
-          actionLabel="See results"
+          message={t('app.lesson.questionFailed')}
+          actionLabel={t('app.lesson.seeResults')}
           onAction={() => void finish(correctCountRef.current, quiz.length)}
         />
       ) : null}
 
       {stage === 'result' ? (
         <ResultView
+          t={t}
           unit={unit}
           day={lesson.dayNumber}
           totalDays={course.totalDays}
@@ -414,7 +421,7 @@ function LessonPlayer({
             />
             {correctCount < quiz.length && !busy ? (
               <button type="button" onClick={startQuiz} className="w-full text-sm font-semibold text-sw-grey hover:text-sw-blue transition-colors py-2">
-                Retry quiz
+                {t('app.lesson.retryQuiz')}
               </button>
             ) : null}
           </div>
@@ -433,12 +440,12 @@ function LessonPlayer({
             >
               {lastQuestion ? (
                 <>
-                  <span>See Results</span>
+                  <span>{t('app.lesson.seeResults')}</span>
                   <span>🏆</span>
                 </>
               ) : (
                 <>
-                  <span>Next Question</span>
+                  <span>{t('app.lesson.nextQuestion')}</span>
                   <NextChevron />
                 </>
               )}
@@ -452,7 +459,7 @@ function LessonPlayer({
             {cardIndex > 0 ? (
               <button
                 type="button"
-                aria-label="Previous card"
+                aria-label={t('app.lesson.previousCard')}
                 onClick={goPrevCard}
                 className="flex items-center justify-center w-12 h-12 rounded-full border border-sw-grey-border bg-white hover:bg-sw-grey-light transition-colors shrink-0"
               >
@@ -466,12 +473,12 @@ function LessonPlayer({
             >
               {lastCard ? (
                 <>
-                  <span>Start Quiz</span>
+                  <span>{t('app.lesson.startQuiz')}</span>
                   <span>📝</span>
                 </>
               ) : (
                 <>
-                  <span>Next</span>
+                  <span>{t('app.common.next')}</span>
                   <NextChevron />
                 </>
               )}
@@ -485,20 +492,22 @@ function LessonPlayer({
 }
 
 function LessonSpinner() {
+  const { t } = useI18n()
   return (
     <main className="min-h-screen bg-white flex items-center justify-center">
-      <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" aria-label="Loading lesson" />
+      <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" aria-label={t('app.lesson.loadingAria')} />
     </main>
   )
 }
 
 function LessonStatus({ slug, title }: { slug: string; title: string }) {
+  const { t } = useI18n()
   return (
     <main className="min-h-screen bg-white flex items-center justify-center px-4 text-center">
       <div>
         <p className="font-extrabold">{title}</p>
         <Link to={`/app/courses/${slug}`} className="mt-3 inline-block font-bold text-sw-blue">
-          Back to course
+          {t('app.lesson.backToCourse')}
         </Link>
       </div>
     </main>
@@ -546,13 +555,14 @@ function ResultLeaveCta({
   saveError: boolean
   onRetry: () => void
 }) {
-  const label = nextLessonId ? 'Next Lesson →' : '🏆 Back to Course'
+  const { t } = useI18n()
+  const label = nextLessonId ? t('app.lesson.nextLesson') : t('app.lesson.backToCourseTrophy')
   const href = nextLessonId ? `/app/courses/${slug}/${nextLessonId}` : `/app/courses/${slug}`
 
   if (busy) {
     return (
       <button type="button" disabled className={`${LEAVE_CTA} opacity-70 cursor-wait hover:bg-sw-blue active:scale-100`}>
-        Saving progress…
+        {t('app.lesson.savingProgress')}
       </button>
     )
   }
@@ -564,7 +574,7 @@ function ResultLeaveCta({
           <p className="text-sm text-center text-sw-coral font-semibold">Couldn&apos;t save this lesson. Try again.</p>
         ) : null}
         <button type="button" onClick={onRetry} className={LEAVE_CTA}>
-          Retry save
+          {t('app.lesson.retrySave')}
         </button>
       </>
     )
@@ -589,12 +599,13 @@ class LessonErrorBoundary extends Component<{ slug: string; children: ReactNode 
   }
 
   render() {
-    if (this.state.failed) return <LessonStatus slug={this.props.slug} title="Lesson failed to load" />
+    if (this.state.failed) return <LessonFailed slug={this.props.slug} />
     return this.props.children
   }
 }
 
 function QuizIntro({
+  t,
   unit,
   day,
   totalDays,
@@ -604,6 +615,7 @@ function QuizIntro({
   onStart,
   onReview,
 }: {
+  t: (key: string) => string
   unit: string
   day: number
   totalDays: number
@@ -619,18 +631,18 @@ function QuizIntro({
         <div className="w-20 h-20 rounded-2xl bg-sw-blue-light border border-sw-blue-border flex items-center justify-center text-4xl">📝</div>
         <div>
           <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey mb-2">
-            Cards complete · {unit} {day} of {totalDays}
+            {t('app.lesson.cardsComplete').replace('{unit}', unit).replace('{day}', String(day)).replace('{total}', String(totalDays))}
           </div>
-          <h2 className="text-2xl font-extrabold text-sw-dark leading-snug mb-3">Ready for the quiz?</h2>
+          <h2 className="text-2xl font-extrabold text-sw-dark leading-snug mb-3">{t('app.lesson.readyQuiz')}</h2>
           <p className="text-sw-grey text-base leading-relaxed max-w-sm">
-            You&apos;ve read all {cardCount} cards for today&apos;s lesson. Answer {questionCount} quick questions to lock in
-            what you&apos;ve learned and earn your <strong className="text-sw-dark">⚡{xp} XP</strong>.
+            {t('app.lesson.quizIntroBody').replace('{cards}', String(cardCount)).replace('{questions}', String(questionCount))}{' '}
+            <strong className="text-sw-dark">⚡{xp} XP</strong>.
           </p>
         </div>
         <div className="flex gap-4">
           <div className="flex flex-col items-center gap-1 bg-sw-grey-light rounded-xl px-4 py-3">
             <span className="text-xl">❓</span>
-            <span className="text-xs font-semibold text-sw-dark">{questionCount} questions</span>
+            <span className="text-xs font-semibold text-sw-dark">{t('app.lesson.questions').replace('{n}', String(questionCount))}</span>
           </div>
           <div className="flex flex-col items-center gap-1 bg-sw-grey-light rounded-xl px-4 py-3">
             <span className="text-xl">⚡</span>
@@ -638,7 +650,7 @@ function QuizIntro({
           </div>
           <div className="flex flex-col items-center gap-1 bg-sw-grey-light rounded-xl px-4 py-3">
             <span className="text-xl">⏱️</span>
-            <span className="text-xs font-semibold text-sw-dark">~2 min</span>
+            <span className="text-xs font-semibold text-sw-dark">{t('app.lesson.about2min')}</span>
           </div>
         </div>
         <div className="w-full space-y-3 max-w-sm">
@@ -647,11 +659,11 @@ function QuizIntro({
             onClick={onStart}
             className="w-full flex items-center justify-center gap-2 bg-sw-blue text-white font-extrabold text-base py-4 rounded-full shadow-md hover:bg-sw-blue-hover active:scale-[0.98] transition-all duration-200"
           >
-            <span>Start Quiz</span>
+            <span>{t('app.lesson.startQuiz')}</span>
             <span>📝</span>
           </button>
           <button type="button" onClick={onReview} className="w-full text-sm font-semibold text-sw-grey hover:text-sw-dark transition-colors py-2">
-            ← Review cards again
+            {t('app.lesson.reviewCards')}
           </button>
         </div>
       </div>
@@ -662,9 +674,11 @@ function QuizIntro({
 function QuizQuestion({
   question,
   onAnswer,
+  t,
 }: {
   question: { question: string; options: string[]; correctIndex: number; explanation?: string; type?: string }
   onAnswer: (correct: boolean) => void
+  t: (key: string) => string
 }) {
   const [picked, setPicked] = useState<number | null>(null)
   const [status, setStatus] = useState<'idle' | 'correct' | 'wrong'>('idle')
@@ -700,11 +714,11 @@ function QuizQuestion({
               color: trueFalse ? 'hsl(var(--sw-purple))' : 'hsl(var(--sw-blue))',
             }}
           >
-            {trueFalse ? '✓ True or False' : '⊙ Multiple Choice'}
+            {trueFalse ? t('app.lesson.trueFalse') : t('app.lesson.multipleChoice')}
           </div>
         </div>
         <h2 className="text-xl sm:text-2xl font-extrabold text-sw-dark leading-snug">{question.question}</h2>
-        <div className="flex flex-col gap-3" role="group" aria-label="Answer options">
+        <div className="flex flex-col gap-3" role="group" aria-label={t('app.lesson.answerOptions')}>
           {question.options.map((option, index) => {
             const letter = String.fromCharCode(65 + index)
             const mark =
@@ -757,7 +771,7 @@ function QuizQuestion({
                 className="text-sm font-extrabold"
                 style={{ color: status === 'correct' ? 'hsl(var(--sw-success))' : 'hsl(var(--sw-coral))' }}
               >
-                {status === 'correct' ? 'Correct!' : "Not quite — here's why:"}
+                {status === 'correct' ? t('app.lesson.correct') : t('app.lesson.notQuite')}
               </span>
             </div>
             {question.explanation ? <p className="text-sm text-sw-dark leading-relaxed">{question.explanation}</p> : null}
@@ -779,11 +793,12 @@ function CardView({
   onFlip: () => void
   lessonTitle: string
 }) {
+  const { t } = useI18n()
   if (isFlashcard(card)) {
     return (
       <button type="button" onClick={onFlip} className="w-full text-left">
         <article className="bg-white border border-sw-grey-border rounded-2xl p-5 sm:p-6">
-          <p className="text-[11px] font-bold tracking-[0.14em] text-sw-grey">{flipped ? 'ANSWER' : 'TAP TO FLIP'}</p>
+          <p className="text-[11px] font-bold tracking-[0.14em] text-sw-grey">{flipped ? t('app.lesson.answer') : t('app.lesson.tapToFlip')}</p>
           <h2 className="text-xl font-extrabold text-sw-dark mt-3">{flipped ? card.back : card.front}</h2>
         </article>
       </button>
@@ -794,14 +809,14 @@ function CardView({
     const prompt = card.bullets?.[0]
     const notes = card.bullets?.slice(1) ?? []
     return (
-      <article className="flex flex-col gap-4" aria-label="Today's task">
+      <article className="flex flex-col gap-4" aria-label={t('app.lesson.taskAria')}>
         <div className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-xl flex items-center justify-center text-xl" style={{ background: 'hsl(var(--sw-amber) / 0.15)' }}>
             🎯
           </div>
           <div>
-            <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey">Today&apos;s Task</div>
-            <div className="text-xs font-semibold text-sw-dark">Do this before moving on</div>
+            <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey">{t('app.lesson.todaysTask')}</div>
+            <div className="text-xs font-semibold text-sw-dark">{t('app.lesson.doBeforeMoving')}</div>
           </div>
         </div>
         <div className="rounded-2xl p-5 sm:p-6 border" style={{ background: 'hsl(var(--sw-amber) / 0.06)', borderColor: 'hsl(var(--sw-amber) / 0.25)' }}>
@@ -825,7 +840,7 @@ function CardView({
         <WiseTask lessonTitle={card.headline || lessonTitle} body={card.body} prompt={prompt} />
         <div className="flex items-start gap-2 text-sm text-sw-grey">
           <span className="mt-0.5">💡</span>
-          <span>Take your time with this. The practice is where the real learning happens.</span>
+          <span>{t('app.lesson.practiceTip')}</span>
         </div>
       </article>
     )
@@ -886,6 +901,7 @@ function CardView({
 }
 
 function PromptCopy({ text }: { text: string }) {
+  const { t } = useI18n()
   const [copied, setCopied] = useState(false)
   return (
     <div data-testid="lesson-prompt" className="bg-white border border-sw-grey-border rounded-xl p-4 flex flex-col gap-3">
@@ -895,7 +911,7 @@ function PromptCopy({ text }: { text: string }) {
       <button
         type="button"
         data-testid="lesson-prompt-copy"
-        aria-label="Copy prompt"
+        aria-label={t('app.lesson.copyPrompt')}
         onClick={() => {
           void navigator.clipboard.writeText(text.replace(/^["“]|["”]$/g, ''))
           setCopied(true)
@@ -903,13 +919,14 @@ function PromptCopy({ text }: { text: string }) {
         }}
         className="self-end min-h-[40px] px-4 rounded-full text-xs font-bold text-sw-blue bg-sw-blue-light border border-sw-blue-border active:scale-[0.98] transition-transform"
       >
-        {copied ? 'Copied' : 'Copy'}
+        {copied ? t('app.lesson.copiedShort') : t('app.lesson.copy')}
       </button>
     </div>
   )
 }
 
 function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonCard }) {
+  const { t } = useI18n()
   const detail = [card.body, ...(card.bullets ?? [])].filter(Boolean).join(' • ')
   const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&concept=${encodeURIComponent(card.headline || '')}&detail=${encodeURIComponent(detail)}`
   return (
@@ -923,8 +940,8 @@ function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonC
     >
       <WiseMark />
       <div className="flex-1 min-w-0">
-        <p className="text-xs font-bold text-sw-dark">Explore this deeper with Mindora</p>
-        <p className="text-[10px] text-sw-grey">Ask your AI coach to explain or expand on this</p>
+        <p className="text-xs font-bold text-sw-dark">{t('app.lesson.exploreMindora')}</p>
+        <p className="text-[10px] text-sw-grey">{t('app.lesson.exploreMindoraSub')}</p>
       </div>
       <Chevron />
     </Link>
@@ -932,6 +949,7 @@ function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonC
 }
 
 function WiseTask({ lessonTitle, body, prompt }: { lessonTitle: string; body?: string; prompt?: string }) {
+  const { t } = useI18n()
   const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(body || '')}&prompt=${encodeURIComponent(prompt || '')}`
   return (
     <Link
@@ -942,8 +960,8 @@ function WiseTask({ lessonTitle, body, prompt }: { lessonTitle: string; body?: s
         <img src={COACH_AVATAR} alt="" className="w-full h-full object-contain p-0.5" />
       </div>
       <div className="flex-1 min-w-0">
-        <p className="text-xs font-bold text-sw-dark">Need help? Ask Mindora</p>
-        <p className="text-[10px] text-sw-grey">Get personalised coaching on this task</p>
+        <p className="text-xs font-bold text-sw-dark">{t('app.lesson.needHelpMindora')}</p>
+        <p className="text-[10px] text-sw-grey">{t('app.lesson.needHelpSub')}</p>
       </div>
       <Chevron />
     </Link>
@@ -1014,6 +1032,7 @@ function Chevron() {
 }
 
 function ResultView({
+  t,
   unit,
   day,
   totalDays,
@@ -1025,6 +1044,7 @@ function ResultView({
   isSaving,
   onReview,
 }: {
+  t: (key: string) => string
   unit: string
   day: number
   totalDays: number
@@ -1059,12 +1079,15 @@ function ResultView({
   }, [xp])
 
   const emoji = perfect ? '🏆' : great ? '🎉' : '💪'
-  const headline = perfect ? 'Perfect score!' : great ? 'Great work!' : "Keep going — you're building!"
+  const headline = perfect ? t('app.lesson.perfectScore') : great ? t('app.lesson.greatWork') : t('app.lesson.keepGoing')
+  const dayLabel = t('app.common.day')
   const body = perfect
-    ? `You nailed every question. ${unit} ${day} is complete.`
+    ? t('app.lesson.resultPerfectBody').replace('{unit}', unit).replace('{day}', String(day))
     : great
-      ? `Solid effort on ${unit} ${day}. Review the cards to get to 100%.`
-      : `You got this. Re-read ${unit === 'Day' ? "today's" : 'these'} cards and try the quiz again anytime.`
+      ? t('app.lesson.resultGreatBody').replace('{unit}', unit).replace('{day}', String(day))
+      : unit === dayLabel
+        ? t('app.lesson.resultKeepBody')
+        : t('app.lesson.resultKeepBodyLesson')
   const gradient = perfect
     ? 'linear-gradient(135deg, hsl(var(--sw-amber)), hsl(var(--sw-amber) / 0.7))'
     : great
@@ -1081,16 +1104,16 @@ function ResultView({
         </div>
         <div>
           <div className="text-[11px] font-bold uppercase tracking-widest text-sw-grey mb-2">
-            {unit} {day} of {totalDays} · Quiz complete
+            {t('app.lesson.quizComplete').replace('{unit}', unit).replace('{day}', String(day)).replace('{total}', String(totalDays))}
           </div>
           <h2 className="text-3xl font-extrabold text-sw-dark leading-tight mb-2">{headline}</h2>
           <p className="text-sw-grey text-base leading-relaxed max-w-sm">{body}</p>
         </div>
         <div className="flex gap-3">
           {[
-            { label: 'Score', value: `${score}/${total}` },
-            { label: 'XP Earned', value: isSaving ? '…' : `⚡${shownXp}` },
-            { label: 'Accuracy', value: `${accuracy}%` },
+            { label: t('app.lesson.score'), value: `${score}/${total}` },
+            { label: t('app.lesson.xpEarnedStat'), value: isSaving ? '…' : `⚡${shownXp}` },
+            { label: t('app.lesson.accuracy'), value: `${accuracy}%` },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-1 bg-sw-grey-light rounded-xl px-4 py-3 min-w-[74px]">
               <span className="text-lg font-extrabold text-sw-dark">{stat.value}</span>
@@ -1101,17 +1124,17 @@ function ResultView({
         {badges.length > 0 ? (
           <div className="w-full max-w-sm space-y-2">
             {badges.map((id) => {
-              const badge = RESULT_BADGES[id]
-              return badge ? (
+              const badgeId = id
+              return badgeId ? (
                 <div
                   key={id}
                   className="flex items-center gap-3 rounded-2xl px-4 py-3 border"
                   style={{ background: 'hsl(var(--sw-amber) / 0.08)', borderColor: 'hsl(var(--sw-amber) / 0.35)' }}
                 >
-                  <span className="text-2xl shrink-0">{badge.icon}</span>
+                  <span className="text-2xl shrink-0">{BADGES.find((b) => b.id === badgeId)?.emoji ?? '🏅'}</span>
                   <div className="text-left">
-                    <div className="text-xs font-extrabold text-sw-dark">🏅 New badge: {badge.label}</div>
-                    <div className="text-[11px] text-sw-grey">{badge.desc}</div>
+                    <div className="text-xs font-extrabold text-sw-dark">{t('app.lesson.newBadge').replace('{label}', t(badgeKey(badgeId, 'label')))}</div>
+                    <div className="text-[11px] text-sw-grey">{t(badgeKey(badgeId, 'resultDesc'))}</div>
                   </div>
                 </div>
               ) : null
@@ -1122,12 +1145,14 @@ function ResultView({
           <div className="flex items-center gap-2 text-sm text-sw-dark font-semibold">
             <span>🔥</span>
             <span>
-              {completion.newStreak}-day streak{completion.dailyBonusApplied ? ' · +5 bonus XP' : ''}!
+              {t('app.lesson.streakBonus')
+                .replace('{n}', String(completion.newStreak))
+                .replace('{bonus}', completion.dailyBonusApplied ? t('app.lesson.streakBonusXp') : '')}
             </span>
           </div>
         ) : null}
         <div className="w-full max-w-sm bg-white border border-sw-grey-border rounded-2xl px-5 py-4 text-left">
-          <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey mb-1">Lesson completed</div>
+          <div className="text-[10px] font-bold uppercase tracking-widest text-sw-grey mb-1">{t('app.lesson.lessonCompleted')}</div>
           <div className="text-sm font-bold text-sw-dark">{lessonTitle}</div>
         </div>
         {completion ? (
@@ -1139,15 +1164,15 @@ function ResultView({
               <img src={COACH_AVATAR} alt={COACH_NAME} className="w-full h-full object-contain p-1" />
             </div>
             <div className="text-left flex-1 min-w-0">
-              <p className="text-xs font-bold text-sw-dark">Reflect with Mindora</p>
-              <p className="text-[10px] text-sw-grey leading-snug">Deepen your learning — let&apos;s discuss how to apply this</p>
+              <p className="text-xs font-bold text-sw-dark">{t('app.lesson.reflectMindora')}</p>
+              <p className="text-[10px] text-sw-grey leading-snug">{t('app.lesson.reflectSub')}</p>
             </div>
             <Chevron />
           </Link>
         ) : null}
         {perfect ? null : (
           <button type="button" onClick={onReview} className="text-sm font-semibold text-sw-grey hover:text-sw-blue transition-colors py-1">
-            ← Review {unit === 'Day' ? "today's" : 'the'} cards
+            {unit === dayLabel ? t('app.lesson.reviewCardsToday') : t('app.lesson.reviewCardsThe')}
           </button>
         )}
       </section>

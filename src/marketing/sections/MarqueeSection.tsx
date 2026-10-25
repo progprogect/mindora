@@ -1,4 +1,6 @@
-import { LIFE_AREAS_ROW_A, LIFE_AREAS_ROW_B } from '@/marketing/data/home'
+import { homeCopy } from '@/marketing/data/home'
+import { homeSectionsCopy } from '@/marketing/data/homeSections'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 function MarqueeRow({
   items,
@@ -31,21 +33,25 @@ function MarqueeRow({
 }
 
 export default function MarqueeSection() {
+  const { locale } = useI18n()
+  const { lifeAreasRowA, lifeAreasRowB } = homeCopy(locale)
+  const copy = homeSectionsCopy(locale).marquee
+
   return (
     <section className="overflow-hidden bg-white pt-4 pb-12 sm:pb-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="mb-8 text-center">
           <p className="text-sm font-medium tracking-wide text-sw-grey">
-            What do you want to improve?{' '}
-            <span className="font-semibold text-sw-blue">12 life areas. One system.</span>
+            {copy.intro}{' '}
+            <span className="font-semibold text-sw-blue">{copy.introHighlight}</span>
           </p>
         </div>
       </div>
       <div className="mb-3 overflow-hidden">
-        <MarqueeRow items={LIFE_AREAS_ROW_A} />
+        <MarqueeRow items={lifeAreasRowA} />
       </div>
       <div className="overflow-hidden">
-        <MarqueeRow items={LIFE_AREAS_ROW_B} reverse />
+        <MarqueeRow items={lifeAreasRowB} reverse />
       </div>
     </section>
   )

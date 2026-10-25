@@ -64,7 +64,7 @@ export async function destroySession(c: Context) {
 
 export const requireAuth: MiddlewareHandler<SessionEnv> = async (c, next) => {
   const userId = await readUserId(c)
-  if (!userId) return c.json({ error: 'Not authenticated' }, 401)
+  if (!userId) return c.json({ error: 'Not authenticated', code: 'not_authenticated' }, 401)
   c.set('userId', userId)
   await next()
 }

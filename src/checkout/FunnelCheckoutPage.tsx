@@ -6,7 +6,9 @@ import NotFoundPage from '@/marketing/pages/NotFoundPage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import { DEFAULT_PLANS } from '@/funnels/twenty-eight-day/data/plans'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
-import { MONEY_BACK_CHIP } from '@/marketing/data/moneyBack'
+import { moneyBackCopy } from '@/marketing/data/moneyBack'
+import { useI18n } from '../../authorisation/src/i18n/I18nProvider'
+import { checkoutUiCopy, funnelCheckoutLineItems, funnelCheckoutTrialNote } from '@/shared/i18n/checkoutUiCopy'
 
 const ORIGINAL_CHECKOUT_FUNNELS = new Set([
   '28-day-ai-challenge',
@@ -16,18 +18,14 @@ const ORIGINAL_CHECKOUT_FUNNELS = new Set([
 ])
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const PAGE_TITLE = 'MindoraAcademy.com — Turn Daily Learning Into Daily Progress'
 const MONTHLY_ID = DEFAULT_PLANS.find((p) => p.intervalMonths === 1)?.id ?? 'monthly'
 
-const LINE_ITEMS = [
-  { label: '3-Day Trial', value: '$1', emphasis: 'dark' as const },
-  { label: 'Full 28-day AI Challenge', value: 'Included', emphasis: 'success' as const },
-  { label: 'All courses + 45 certificates', value: 'Included', emphasis: 'success' as const },
-  { label: 'Mindora, your AI coach', value: 'Included', emphasis: 'success' as const },
-]
-
 export default function FunnelCheckoutPage() {
-  usePageTitle(PAGE_TITLE)
+  const { locale } = useI18n()
+  const ui = checkoutUiCopy(locale)
+  const moneyBack = moneyBackCopy(locale)
+  const lineItems = funnelCheckoutLineItems(locale)
+  usePageTitle(ui.pageTitle)
   const { funnel = '28-day-ai-challenge' } = useParams()
   const [params] = useSearchParams()
   const navigate = useNavigate()
@@ -40,11 +38,11 @@ export default function FunnelCheckoutPage() {
 
   const startPayment = () => {
     if (!email.trim()) {
-      setEmailError('Please enter your email address.')
+      setEmailError(ui.emailRequired)
       return
     }
     if (!EMAIL_OK.test(email.trim())) {
-      setEmailError('Please enter a valid email address.')
+      setEmailError(ui.emailInvalid)
       return
     }
     setEmailError(null)
@@ -56,7 +54,7 @@ export default function FunnelCheckoutPage() {
     <div className="min-h-dvh overflow-x-hidden bg-white">
       <div className="mx-auto max-w-lg overflow-hidden px-4 pt-8 pb-8">
         <h1 className="mb-2 text-center text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          Join the challenge and start today
+          {ui.funnelJoinTitle}
         </h1>
 
         <div
@@ -73,10 +71,8 @@ export default function FunnelCheckoutPage() {
             🎁
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold text-sw-dark">
-              Promo Code <span style={{ color: 'hsl(var(--sw-success))' }}>TRIAL1</span> Applied
-            </p>
-            <p className="text-xs text-sw-grey">You save 75% today</p>
+            <p className="text-sm font-bold text-sw-dark">{ui.promoApplied}</p>
+            <p className="text-xs text-sw-grey">{ui.youSavePercent(75)}</p>
           </div>
           <div
             className="flex h-12 w-12 flex-shrink-0 flex-col items-center justify-center rounded-full text-center text-xs leading-tight font-extrabold text-white"
@@ -84,15 +80,15 @@ export default function FunnelCheckoutPage() {
           >
             75%
             <br />
-            OFF
+            {ui.off}
           </div>
         </div>
 
         <div className="mb-4 overflow-hidden rounded-2xl border border-sw-grey-border bg-white shadow-sm">
           <div className="px-5 pt-5 pb-4">
-            <h2 className="mb-4 text-center text-lg font-extrabold text-sw-dark">Safe checkout</h2>
+            <h2 className="mb-4 text-center text-lg font-extrabold text-sw-dark">{ui.safeCheckout}</h2>
             <div className="mb-3 space-y-2.5">
-              {LINE_ITEMS.map((item) => (
+              {lineItems.map((item) => (
                 <div key={item.label} className="flex items-center justify-between gap-3">
                   <span className="text-sm text-sw-dark">{item.label}</span>
                   <span
@@ -109,15 +105,11 @@ export default function FunnelCheckoutPage() {
             </div>
             <div className="mb-1 border-t border-sw-grey-border pt-3">
               <div className="flex items-center justify-between">
-                <span className="text-base font-extrabold text-sw-dark">Due today</span>
+                <span className="text-base font-extrabold text-sw-dark">{ui.dueTodayLower}</span>
                 <span className="text-xl font-extrabold text-sw-dark">$1</span>
               </div>
-              <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Then $29.99 per month after your 3-day trial. Cancel any time from your profile page.
-              </p>
-              <p className="mt-2 text-xs leading-relaxed text-sw-grey">
-                Risk-free {MONEY_BACK_CHIP} included.
-              </p>
+              <p className="mt-2 text-xs leading-relaxed text-sw-grey">{funnelCheckoutTrialNote(locale)}</p>
+              <p className="mt-2 text-xs leading-relaxed text-sw-grey">{ui.riskFreeIncluded(moneyBack.chip)}</p>
             </div>
           </div>
 
@@ -133,11 +125,11 @@ export default function FunnelCheckoutPage() {
                 onSuccess={() => {
                   navigate(`/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`)
                 }}
-                submitLabel="Confirm Payment"
+                submitLabel={ui.confirmPayment}
               />
             ) : (
               <div className="space-y-3">
-                <label className="block text-sm font-medium text-sw-dark">Email address</label>
+                <label className="block text-sm font-medium text-sw-dark">{ui.emailAddress}</label>
                 <input
                   type="email"
                   value={email}
@@ -148,7 +140,7 @@ export default function FunnelCheckoutPage() {
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') startPayment()
                   }}
-                  placeholder="you@email.com"
+                  placeholder={ui.emailPlaceholder}
                   className="w-full rounded-xl border border-sw-grey-border px-4 py-3 text-base text-sw-dark focus:border-sw-blue focus:ring-1 focus:ring-sw-blue focus:outline-none"
                 />
                 {emailError ? (
@@ -166,33 +158,31 @@ export default function FunnelCheckoutPage() {
                   className="flex w-full cursor-pointer items-center justify-center rounded-xl py-3.5 text-base font-bold text-white transition-opacity disabled:cursor-not-allowed disabled:opacity-60"
                   style={{ backgroundColor: 'hsl(var(--sw-blue))' }}
                 >
-                  Continue to payment
+                  {ui.continueToPaymentLower}
                 </button>
-                <p className="text-center text-xs leading-relaxed text-sw-grey">
-                  We use this to send your receipt and set up your account.
-                </p>
+                <p className="text-center text-xs leading-relaxed text-sw-grey">{ui.receiptBlurb}</p>
               </div>
             )}
           </div>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pb-6 text-xs text-sw-grey">
-          <span>🔒 256-bit encrypted</span>
-          <span>✓ Cancel any time</span>
-          <span>✓ {MONEY_BACK_CHIP}</span>
+          <span>{ui.encrypted256}</span>
+          <span>{ui.cancelAnyTime}</span>
+          <span>✓ {moneyBack.chip}</span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-sw-grey">
           <Link to={ROUTES.terms} className="hover:text-sw-dark">
-            Terms
+            {ui.terms}
           </Link>
           <Link to={ROUTES.privacy} className="hover:text-sw-dark">
-            Privacy
+            {ui.privacy}
           </Link>
           <Link to={ROUTES.refund} className="hover:text-sw-dark">
-            Refunds
+            {ui.refunds}
           </Link>
           <Link to={ROUTES.subscription} className="hover:text-sw-dark">
-            Subscription terms
+            {ui.subscriptionTerms}
           </Link>
         </div>
       </div>

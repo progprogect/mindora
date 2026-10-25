@@ -1,16 +1,29 @@
+import { lmsEn, lmsRu } from '../i18n/chunks/lms'
+import type { Locale } from '@/i18n/locale'
+
+type LmsMessages = typeof lmsEn | typeof lmsRu
+
+function lmsTable(locale: Locale): LmsMessages {
+  return locale === 'ru' ? lmsRu : lmsEn
+}
+
+function dateLocaleTag(locale: Locale = 'en') {
+  return locale === 'ru' ? 'ru-RU' : 'en-GB'
+}
+
 export const PROFILE_PACES = [
-  { value: 'spark', label: 'Spark', desc: '5 min/day' },
-  { value: 'momentum', label: 'Momentum', desc: '10 min/day' },
-  { value: 'ignite', label: 'Ignite', desc: '15 min/day' },
+  { value: 'spark' },
+  { value: 'momentum' },
+  { value: 'ignite' },
 ] as const
 
 export const PROFILE_FOCUS = [
-  { value: 'ai', label: 'AI & Technology' },
-  { value: 'mindset', label: 'Success Mindset' },
-  { value: 'career', label: 'Career' },
-  { value: 'business', label: 'Business' },
-  { value: 'health', label: 'Health' },
-  { value: 'all', label: 'All Categories' },
+  { value: 'ai' },
+  { value: 'mindset' },
+  { value: 'career' },
+  { value: 'business' },
+  { value: 'health' },
+  { value: 'all' },
 ] as const
 
 export const FOCUS_PATHS: Record<string, string> = {
@@ -44,37 +57,74 @@ export const PATH_KEYS = [
 
 export const PATH_META: Record<
   (typeof PATH_KEYS)[number],
-  { emoji: string; short: string; focus: string }
+  { emoji: string; focus: string }
 > = {
-  'ai-and-technology': { emoji: '🤖', short: 'AI & Technology', focus: 'ai' },
-  'success-mindset': { emoji: '🧠', short: 'Success Mindset', focus: 'mindset' },
-  career: { emoji: '💼', short: 'Career Growth', focus: 'career' },
-  business: { emoji: '🚀', short: 'Business', focus: 'business' },
-  health: { emoji: '💪', short: 'Health & Energy', focus: 'health' },
-  'financial-wellbeing': { emoji: '💰', short: 'Financial Wellbeing', focus: 'financial' },
+  'ai-and-technology': { emoji: '🤖', focus: 'ai' },
+  'success-mindset': { emoji: '🧠', focus: 'mindset' },
+  career: { emoji: '💼', focus: 'career' },
+  business: { emoji: '🚀', focus: 'business' },
+  health: { emoji: '💪', focus: 'health' },
+  'financial-wellbeing': { emoji: '💰', focus: 'financial' },
 }
 
 export const CATEGORY_LABEL: Record<string, string> = {
-  'ai-and-technology': 'AI & Technology',
-  'success-mindset': 'Success Mindset',
-  career: 'Career',
-  business: 'Business',
-  health: 'Health',
-  'financial-wellbeing': 'Financial Wellbeing',
+  'ai-and-technology': 'ai-and-technology',
+  'success-mindset': 'success-mindset',
+  career: 'career',
+  business: 'business',
+  health: 'health',
+  'financial-wellbeing': 'financial-wellbeing',
 }
 
-export const AI_TIPS = [
-  "The best AI users aren't the ones who know all the tools — they're the ones who ask better questions.",
-  'One specific prompt beats ten vague ones. Tell the AI who it is, what you need, and what “done” looks like.',
-  'Save the prompts that work. Reuse beats reinventing every morning.',
-  'If the answer is generic, add context: your role, audience, and a real example.',
-]
+const PACE_VALUES = new Set(PROFILE_PACES.map((item) => item.value))
+const FOCUS_VALUES = new Set(PROFILE_FOCUS.map((item) => item.value))
+const AI_TIP_KEYS = ['lms.aiTip.0', 'lms.aiTip.1', 'lms.aiTip.2', 'lms.aiTip.3'] as const
 
-export function greetingLabel(now = new Date()) {
+export function paceLabel(locale: Locale, value: string) {
+  if (!PACE_VALUES.has(value as (typeof PROFILE_PACES)[number]['value'])) return value
+  const key = `lms.pace.${value}.label` as keyof LmsMessages
+  return lmsTable(locale)[key]
+}
+
+export function paceDesc(locale: Locale, value: string) {
+  if (!PACE_VALUES.has(value as (typeof PROFILE_PACES)[number]['value'])) {
+    return lmsTable(locale)['lms.fallback.paceDesc']
+  }
+  const key = `lms.pace.${value}.desc` as keyof LmsMessages
+  return lmsTable(locale)[key]
+}
+
+export function focusLabel(locale: Locale, value: string) {
+  if (!FOCUS_VALUES.has(value as (typeof PROFILE_FOCUS)[number]['value'])) return value
+  const key = `lms.focus.${value}` as keyof LmsMessages
+  return lmsTable(locale)[key]
+}
+
+export function pathShort(locale: Locale, key: string) {
+  const msgKey = `lms.pathShort.${key}` as keyof LmsMessages
+  const table = lmsTable(locale)
+  if (msgKey in table) return table[msgKey]
+  return key
+}
+
+export function categoryLabel(locale: Locale, key: string) {
+  const msgKey = `lms.category.${key}` as keyof LmsMessages
+  const table = lmsTable(locale)
+  if (msgKey in table) return table[msgKey]
+  return key
+}
+
+export function greetingLabel(now = new Date(), locale: Locale = 'en') {
   const hour = now.getHours()
-  if (hour < 12) return 'Good morning 👋'
-  if (hour < 17) return 'Good afternoon 👋'
-  return 'Good evening 👋'
+  const table = lmsTable(locale)
+  if (hour < 12) return table['lms.greeting.morning']
+  if (hour < 17) return table['lms.greeting.afternoon']
+  return table['lms.greeting.evening']
+}
+
+export function aiTips(locale: Locale = 'en') {
+  const table = lmsTable(locale)
+  return AI_TIP_KEYS.map((key) => table[key])
 }
 
 export function todayIso(now = new Date()) {
@@ -84,7 +134,8 @@ export function todayIso(now = new Date()) {
   return `${year}-${month}-${day}`
 }
 
-export function mondayWeek(now = new Date()) {
+export function mondayWeek(now = new Date(), locale: Locale = 'en') {
+  const tag = dateLocaleTag(locale)
   const days = []
   const day = now.getDay()
   const mondayOffset = day === 0 ? -6 : 1 - day
@@ -92,8 +143,8 @@ export function mondayWeek(now = new Date()) {
     const date = new Date(now)
     date.setDate(now.getDate() + mondayOffset + i)
     days.push({
-      label: date.toLocaleDateString('en-GB', { weekday: 'short' }).slice(0, 1),
-      long: date.toLocaleDateString('en-GB', { weekday: 'short' }),
+      label: date.toLocaleDateString(tag, { weekday: 'short' }).slice(0, 1),
+      long: date.toLocaleDateString(tag, { weekday: 'short' }),
       date: todayIso(date),
       num: date.getDate(),
     })
@@ -102,7 +153,8 @@ export function mondayWeek(now = new Date()) {
 }
 
 /** Last 7 days ending today — Progress page (Fri…Thu when today is Thursday). */
-export function rollingWeek(now = new Date()) {
+export function rollingWeek(now = new Date(), locale: Locale = 'en') {
+  const tag = dateLocaleTag(locale)
   const days = []
   const base = new Date(now)
   base.setHours(12, 0, 0, 0)
@@ -110,8 +162,8 @@ export function rollingWeek(now = new Date()) {
     const date = new Date(base)
     date.setDate(base.getDate() - i)
     days.push({
-      label: date.toLocaleDateString('en-GB', { weekday: 'short' }).slice(0, 1),
-      long: date.toLocaleDateString('en-GB', { weekday: 'short' }),
+      label: date.toLocaleDateString(tag, { weekday: 'short' }).slice(0, 1),
+      long: date.toLocaleDateString(tag, { weekday: 'short' }),
       date: todayIso(date),
       num: date.getDate(),
     })

@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { buyOffer } from '@/lib/api'
+import { buyOffer, chargeErrorMessage } from '@/lib/api'
+import { useI18n } from '@/i18n/I18nProvider'
 import { usePurchases } from '@/lib/lmsQueries'
 import { COACH_OFFER_SLUG, ownsCoachSku } from '@/shared/coach'
 
 export default function MindoraUnlockPage() {
+  const { t } = useI18n()
   const purchases = usePurchases()
   const navigate = useNavigate()
   const [busy, setBusy] = useState(false)
@@ -21,7 +23,7 @@ export default function MindoraUnlockPage() {
         navigate('/app/mindora')
         return
       }
-      setError(result.error || 'Payment failed')
+      setError(chargeErrorMessage(result, t, t('app.mindora.paymentFailed')))
     } finally {
       setBusy(false)
     }
@@ -30,38 +32,36 @@ export default function MindoraUnlockPage() {
   return (
     <div className="min-h-screen bg-white">
       <header className="flex items-center gap-2 px-4 h-14 border-b border-sw-grey-border">
-        <Link to="/app/mindora" className="w-8 h-8 flex items-center justify-center" aria-label="Back">
+        <Link to="/app/mindora" className="w-8 h-8 flex items-center justify-center" aria-label={t('app.mindora.back')}>
           ←
         </Link>
-        <h1 className="text-base font-bold text-sw-dark">Unlock Mindora</h1>
+        <h1 className="text-base font-bold text-sw-dark">{t('app.mindora.unlockPageTitle')}</h1>
       </header>
       <main className="max-w-lg mx-auto px-4 py-8 text-center">
         {unlocked ? (
           <>
-            <h2 className="text-xl font-extrabold">Mindora is already unlocked!</h2>
-            <p className="text-sm text-sw-grey mt-2">You have full access to 20 coaching conversations per day.</p>
+            <h2 className="text-xl font-extrabold">{t('app.mindora.alreadyUnlocked')}</h2>
+            <p className="text-sm text-sw-grey mt-2">{t('app.mindora.fullAccess')}</p>
             <Link to="/app/mindora" className="mt-6 inline-block rounded-full bg-sw-blue text-white font-bold px-6 py-3">
-              Chat with Mindora
+              {t('app.mindora.chatWith')}
             </Link>
           </>
         ) : (
           <>
-            <h2 className="text-2xl font-extrabold mt-2">Mindora AI Coach</h2>
-            <p className="text-sm text-sw-grey mt-1">One-time unlock • Lifetime access</p>
+            <h2 className="text-2xl font-extrabold mt-2">{t('app.mindora.coachTitle')}</h2>
+            <p className="text-sm text-sw-grey mt-1">{t('app.mindora.lifetimeUnlock')}</p>
             <p className="text-4xl font-extrabold mt-6">$19.95</p>
-            <p className="text-xs text-sw-grey">one-time payment</p>
+            <p className="text-xs text-sw-grey">{t('app.mindora.oneTimePayment')}</p>
             <button
               type="button"
               disabled={busy}
               onClick={() => void buy()}
               className="mt-6 w-full rounded-full bg-sw-blue text-white font-bold py-3.5 disabled:opacity-50"
             >
-              {busy ? 'Processing…' : 'UNLOCK MINDORA — $19.95 →'}
+              {busy ? t('app.common.processingEllipsis') : t('app.mindora.unlockButton')}
             </button>
             {error ? <p className="text-sm text-sw-coral mt-3">{error}</p> : null}
-            <p className="text-xs text-sw-grey mt-4">
-              Requires an active MindoraAcademy subscription. Your payment is processed securely by Stripe.
-            </p>
+            <p className="text-xs text-sw-grey mt-4">{t('app.mindora.requiresSub')}</p>
           </>
         )}
       </main>

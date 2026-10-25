@@ -9,29 +9,29 @@ import {
   greetingLabel,
   mondayWeek,
   PATH_META,
+  paceDesc,
+  pathShort,
   PROFILE_PACES,
   todayIso,
 } from '@/content/lms'
-import { PROGRESS_COURSES } from '@/content/progress-catalog'
+import { progressCourses } from '@/content/progress-catalog'
 import { useCourse } from '@/content/useCourse'
 import { useCurrentUser } from '@/auth/session'
+import { useI18n } from '@/i18n/I18nProvider'
 import { useProgress, usePurchases } from '@/lib/lmsQueries'
 
 const DASHBOARD_PATHS = ['ai-and-technology', 'success-mindset', 'career', 'business', 'health'] as const
 
-const COURSE_COUNTS: Record<(typeof DASHBOARD_PATHS)[number], string> = {
-  'ai-and-technology': '15 courses',
-  'success-mindset': '5 courses',
-  career: '4 courses',
-  business: '12 courses',
-  health: '9 courses',
+const COURSE_COUNT_KEYS: Record<(typeof DASHBOARD_PATHS)[number], string> = {
+  'ai-and-technology': 'app.common.courseCountAi',
+  'success-mindset': 'app.common.courseCountMindset',
+  career: 'app.common.courseCountCareer',
+  business: 'app.common.courseCountBusiness',
+  health: 'app.common.courseCountHealth',
 }
 
-const ASK_MINDORA_TIP =
-  "The best AI users aren't the ones who know all the tools — they're the ones who ask better questions."
-
-function firstName(name?: string) {
-  return name?.trim().split(' ')[0] || 'there'
+function firstName(name?: string, fallback = 'there') {
+  return name?.trim().split(' ')[0] || fallback
 }
 
 function Chevron({
@@ -60,9 +60,11 @@ function Chevron({
 function JourneyStep({
   label,
   state,
+  t,
 }: {
   label: string
   state: 'done' | 'next' | 'todo'
+  t: (key: string) => string
 }) {
   return (
     <li className="flex items-center gap-3 py-2.5 border-b border-sw-grey-border last:border-b-0">
@@ -72,7 +74,7 @@ function JourneyStep({
         </span>
       ) : state === 'next' ? (
         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sw-blue text-white text-[10px] font-bold">
-          Next
+          {t('app.common.next')}
         </span>
       ) : (
         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-sw-grey-border text-sw-grey text-sm">
@@ -95,6 +97,7 @@ function FirstRunHome({
   continueHref,
   badgeEarned,
   totalDays,
+  t,
 }: {
   name: string
   paceMinutes: string
@@ -104,14 +107,15 @@ function FirstRunHome({
   continueHref: string
   badgeEarned: boolean
   totalDays: number
+  t: (key: string) => string
 }) {
   const day = nextLesson?.dayNumber ?? 1
   return (
     <>
       <div data-testid="dashboard-first-run" className="pt-1 pb-0.5">
-        <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">You&apos;re all set, {name}!</h1>
+        <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">{t('app.common.allSetName').replace('{name}', name)}</h1>
         <p className="text-sm text-sw-grey mt-2 leading-relaxed">
-          Your personalised plan is ready. Start your first lesson below — it takes just {paceMinutes} minutes.
+          {t('app.common.firstRunBody').replace('{minutes}', paceMinutes)}
         </p>
       </div>
 
@@ -120,7 +124,7 @@ function FirstRunHome({
         style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)) 0%, hsl(224 70% 38%) 100%)' }}
       >
         <div className="p-5">
-          <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.14em] mb-3">Your First Lesson</p>
+          <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.14em] mb-3">{t('app.common.yourFirstLesson')}</p>
           <h2 className="text-white font-extrabold text-xl leading-tight mb-0.5">
             {nextLesson ? `${unit} ${day} · ${nextLesson.title}` : courseTitle}
           </h2>
@@ -131,19 +135,19 @@ function FirstRunHome({
             className="flex items-center justify-center gap-2 w-full bg-white font-extrabold text-sm px-5 py-3.5 rounded-xl shadow-sm active:scale-[0.98] transition-transform"
             style={{ color: 'hsl(var(--sw-blue))' }}
           >
-            Start Lesson {day}
+            {t('app.common.startLesson').replace('{n}', String(day))}
             <Chevron className="w-4 h-4 ml-auto" strokeWidth={2.5} />
           </Link>
         </div>
       </div>
 
       <div className="bg-white rounded-2xl px-4 py-4 shadow-sm">
-        <p className="text-[10px] font-bold text-sw-grey uppercase tracking-[0.12em] mb-1">Your journey</p>
+        <p className="text-[10px] font-bold text-sw-grey uppercase tracking-[0.12em] mb-1">{t('app.common.yourJourney')}</p>
         <ul>
-          <JourneyStep label="Create your account" state="done" />
-          <JourneyStep label="Personalise your plan" state="done" />
-          <JourneyStep label="Complete your first lesson" state="next" />
-          <JourneyStep label="Earn your first badge" state={badgeEarned ? 'done' : 'todo'} />
+          <JourneyStep label={t('app.common.journeyCreateAccount')} state="done" t={t} />
+          <JourneyStep label={t('app.common.journeyPersonalise')} state="done" t={t} />
+          <JourneyStep label={t('app.common.journeyFirstLesson')} state="next" t={t} />
+          <JourneyStep label={t('app.common.journeyFirstBadge')} state={badgeEarned ? 'done' : 'todo'} t={t} />
         </ul>
       </div>
 
@@ -155,7 +159,9 @@ function FirstRunHome({
         <span className="text-2xl flex-shrink-0">📚</span>
         <div className="flex-1 min-w-0">
           <p className="text-sm font-bold text-sw-dark leading-tight">{courseTitle}</p>
-          <p className="text-xs text-sw-grey mt-0.5">{totalDays} {unit === 'Day' ? 'days' : 'lessons'}</p>
+          <p className="text-xs text-sw-grey mt-0.5">
+            {totalDays} {unit === 'Day' ? t('app.common.days') : t('app.common.lessons')}
+          </p>
         </div>
         <Chevron className="w-5 h-5 text-sw-grey flex-shrink-0" />
       </Link>
@@ -164,6 +170,7 @@ function FirstRunHome({
 }
 
 export default function DashboardPage() {
+  const { t, locale } = useI18n()
   const [libraryOpen, setLibraryOpen] = useState(false)
   const user = useCurrentUser()
   const progress = useProgress()
@@ -182,7 +189,7 @@ export default function DashboardPage() {
     )
   }
 
-  const name = firstName(user?.name)
+  const name = firstName(user?.name, t('app.common.there'))
   const target = pickHomeContinue({
     lastOpened: progress.lastOpened,
     lastCourse,
@@ -192,20 +199,20 @@ export default function DashboardPage() {
   })
   const missionSlug = target?.courseSlug ?? fallbackSlug
   const nextLesson = target?.lesson
-  const catalog = PROGRESS_COURSES[missionSlug]
+  const catalog = progressCourses(locale)[missionSlug]
   const completed = new Set(
     progress.lessons.filter((row) => row.courseId === missionSlug && row.status === 'completed').map((row) => row.lessonSlug),
   )
   const missionDone = completed.size
   const totalDays = target?.course.totalDays ?? catalog?.totalLessons ?? 28
   const courseTitle = target?.course.title ?? catalog?.name ?? '28-Day AI Challenge'
-  const unit = ((getHub(missionSlug).unitLabel as string) || 'days') === 'days' ? 'Day' : 'Lesson'
+  const unit = ((getHub(missionSlug, locale).unitLabel as string) || 'days') === 'days' ? t('app.common.day') : t('app.common.lesson')
   const xp = progress.user.xp
   const streak = progress.user.streakCount
   const today = todayIso()
   const todayDone = progress.user.lastActivityDate === today
   const streakRisk = streak > 0 && !todayDone
-  const week = mondayWeek()
+  const week = mondayWeek(undefined, locale)
   const doneDays = new Set(
     progress.lessons
       .filter((row) => row.status === 'completed' && row.completedAt)
@@ -216,15 +223,21 @@ export default function DashboardPage() {
   const elapsed = user?.joinDate ? Math.floor((Date.now() - user.joinDate) / 86400000) + 1 : 1
   const planDay = plan.days > 0 ? Math.min(Math.max(elapsed, 1), plan.days) : elapsed
   const planPct = plan.days > 0 ? Math.min(100, Math.round((planDay / plan.days) * 100)) : 0
-  const pace = PROFILE_PACES.find((item) => item.value === user?.pacePreference)?.desc ?? '15 min/day'
-  const paceShort = pace.replace(/\/day$/, '')
+  const pacePref =
+    PROFILE_PACES.find((item) => item.value === user?.pacePreference)?.value ?? 'ignite'
+  const pace = paceDesc(locale, pacePref)
+  const paceShort = pace.replace(/\/(day|день)$/, '')
   const continueHref = nextLesson ? `/app/courses/${missionSlug}/${nextLesson.id}` : `/app/courses/${missionSlug}`
   const pathHref = FOCUS_PATHS[focus] || '/app/ai-and-technology'
   const missionPct = totalDays > 0 ? Math.round((missionDone / totalDays) * 100) : 0
   const startedHere = missionDone > 0 || progress.lastOpened?.courseId === missionSlug
   const ctaLabel = startedHere
-    ? `▶ Continue — ${unit} ${nextLesson?.dayNumber ?? missionDone + 1}`
-    : `▶ Start — ${unit} ${nextLesson?.dayNumber ?? 1}`
+    ? t('app.common.continueDay')
+        .replace('{unit}', unit)
+        .replace('{n}', String(nextLesson?.dayNumber ?? missionDone + 1))
+    : t('app.common.startDay')
+        .replace('{unit}', unit)
+        .replace('{n}', String(nextLesson?.dayNumber ?? 1))
   const featuredKey =
     DASHBOARD_PATHS.find((key) => PATH_META[key].focus === focus) ?? 'ai-and-technology'
   const gridKeys = DASHBOARD_PATHS.filter((key) => key !== featuredKey)
@@ -245,15 +258,18 @@ export default function DashboardPage() {
           continueHref={continueHref}
           badgeEarned={badgeEarned}
           totalDays={totalDays}
+          t={t}
         />
       ) : (
         <>
       <div className="pt-1 pb-0.5">
-        <p className="text-xs font-semibold text-sw-grey uppercase tracking-widest mb-0.5">{greetingLabel()}</p>
-        <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">Hey, {name}!</h1>
+        <p className="text-xs font-semibold text-sw-grey uppercase tracking-widest mb-0.5">{greetingLabel(undefined, locale)}</p>
+        <h1 className="text-2xl font-extrabold text-sw-dark leading-tight">{t('app.common.heyName').replace('{name}', name)}</h1>
         <p className="text-sm text-sw-grey mt-1">
-          Day <span className="font-bold text-sw-blue">{planDay}</span> of your {plan.label} ·{' '}
-          <span className="font-semibold">{pace}</span>
+          {t('app.common.dayOfPlan')
+            .replace('{day}', String(planDay))
+            .replace('{plan}', plan.label)
+            .replace('{pace}', pace)}
         </p>
       </div>
 
@@ -263,9 +279,9 @@ export default function DashboardPage() {
       >
         <div className="p-5 pb-5">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.14em]">Today&apos;s Mission</p>
+            <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.14em]">{t('app.common.todayMission')}</p>
             <span className="text-white/50 text-xs font-medium">
-              {missionDone}/{totalDays} days
+              {t('app.common.daysProgress').replace('{done}', String(missionDone)).replace('{total}', String(totalDays))}
             </span>
           </div>
           <h2 className="text-white font-extrabold text-xl leading-tight mb-0.5">
@@ -303,20 +319,20 @@ export default function DashboardPage() {
         <div className="bg-white rounded-xl px-4 py-3 shadow-sm flex items-center gap-3 border border-amber-200">
           <span className="text-xl flex-shrink-0">🔥</span>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-bold text-sw-dark leading-tight">{streak}-day streak at risk!</p>
-            <p className="text-xs text-sw-grey mt-0.5">Do today&apos;s lesson to keep it alive.</p>
+            <p className="text-sm font-bold text-sw-dark leading-tight">{t('app.common.streakAtRisk').replace('{n}', String(streak))}</p>
+            <p className="text-xs text-sw-grey mt-0.5">{t('app.common.streakKeepAlive')}</p>
           </div>
           <Link
             to={continueHref}
             className="flex-shrink-0 text-xs font-bold text-sw-blue bg-sw-blue-light px-3 py-1.5 rounded-full active:scale-95 transition-transform"
           >
-            Go →
+            {t('app.common.go')}
           </Link>
         </div>
       ) : null}
 
       <div className="bg-white rounded-2xl px-4 py-4 shadow-sm">
-        <p className="text-[10px] font-bold text-sw-grey uppercase tracking-[0.12em] mb-3">This Week</p>
+        <p className="text-[10px] font-bold text-sw-grey uppercase tracking-[0.12em] mb-3">{t('app.common.thisWeek')}</p>
         <div className="flex justify-between items-center">
           {week.map((day) => {
             const isToday = day.date === today
@@ -354,18 +370,18 @@ export default function DashboardPage() {
       <div className="grid grid-cols-3 gap-3">
         <div className="bg-white rounded-xl p-3.5 shadow-sm text-center">
           <p className="text-lg font-extrabold text-sw-blue leading-none">{xp}</p>
-          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">XP earned</p>
+          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">{t('app.common.xpEarnedLabel')}</p>
         </div>
         <div className="bg-white rounded-xl p-3.5 shadow-sm text-center">
           <div className="flex items-center justify-center gap-1 leading-none">
             <span className="text-base leading-none">🔥</span>
             <p className="text-lg font-extrabold text-sw-dark leading-none">{streak}</p>
           </div>
-          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">Day streak</p>
+          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">{t('app.common.dayStreak')}</p>
         </div>
         <div className="bg-white rounded-xl p-3.5 shadow-sm text-center">
           <p className="text-lg font-extrabold text-sw-dark leading-none">{planPct}%</p>
-          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">Plan</p>
+          <p className="text-[11px] text-sw-grey font-semibold mt-1.5 uppercase tracking-wide">{t('app.common.plan')}</p>
         </div>
       </div>
 
@@ -378,21 +394,21 @@ export default function DashboardPage() {
             🧠
           </span>
           <div className="flex-1 min-w-0">
-            <p className="text-white font-extrabold text-sm leading-tight">Ask Mindora</p>
-            <p className="text-white/70 text-xs mt-0.5 leading-snug">
-              Your AI coach — get personalised guidance, accountability &amp; motivation
-            </p>
+            <p className="text-white font-extrabold text-sm leading-tight">{t('app.common.askMindora')}</p>
+            <p className="text-white/70 text-xs mt-0.5 leading-snug">{t('app.common.askMindoraSub')}</p>
           </div>
           <Chevron className="w-5 h-5 text-white/60 flex-shrink-0" strokeWidth={2.5} />
         </div>
-        <p className="text-white/50 text-[11px] font-medium mt-2.5 pl-[52px]">AI tip of the day: {ASK_MINDORA_TIP}</p>
+        <p className="text-white/50 text-[11px] font-medium mt-2.5 pl-[52px]">
+          {t('app.common.aiTipOfDay')} {t('app.common.askMindoraTip')}
+        </p>
       </Link>
 
       <div>
         <div className="flex items-center justify-between mb-2.5">
-          <p className="text-sm font-bold text-sw-dark uppercase tracking-wide">Explore paths</p>
+          <p className="text-sm font-bold text-sw-dark uppercase tracking-wide">{t('app.common.explorePaths')}</p>
           <Link to={pathHref} className="text-xs font-semibold text-sw-blue">
-            See all →
+            {t('app.common.seeAll')}
           </Link>
         </div>
         <div className="space-y-2">
@@ -402,10 +418,10 @@ export default function DashboardPage() {
           >
             <span className="text-2xl flex-shrink-0">{featured.emoji}</span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-bold text-sw-dark leading-tight">{featured.short}</p>
-              <p className="text-xs text-sw-grey mt-0.5">{COURSE_COUNTS[featuredKey]} · Your path</p>
+              <p className="text-sm font-bold text-sw-dark leading-tight">{pathShort(locale, featuredKey)}</p>
+              <p className="text-xs text-sw-grey mt-0.5">{t(COURSE_COUNT_KEYS[featuredKey])} · {t('app.common.yourPath')}</p>
             </div>
-            <span className="text-[10px] font-bold text-sw-blue uppercase tracking-wide flex-shrink-0">Active ✓</span>
+            <span className="text-[10px] font-bold text-sw-blue uppercase tracking-wide flex-shrink-0">{t('app.common.activeCheck')}</span>
           </Link>
           <div className="grid grid-cols-2 gap-2">
             {gridKeys.map((key) => {
@@ -417,7 +433,7 @@ export default function DashboardPage() {
                   className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 shadow-sm border border-sw-grey-border/50 active:scale-[0.97] transition-all"
                 >
                   <span className="text-lg flex-shrink-0">{meta.emoji}</span>
-                  <span className="text-xs font-semibold text-sw-dark leading-tight truncate">{meta.short}</span>
+                  <span className="text-xs font-semibold text-sw-dark leading-tight truncate">{pathShort(locale, key)}</span>
                 </Link>
               )
             })}
@@ -433,8 +449,8 @@ export default function DashboardPage() {
         >
           <span className="text-2xl">⚡</span>
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-sm">Prompt Library</h3>
-            <p className="text-blue-100 text-[11px] mt-0.5">27,000+ AI prompts — copy &amp; use instantly</p>
+            <h3 className="font-bold text-sm">{t('app.common.promptLibrary')}</h3>
+            <p className="text-blue-100 text-[11px] mt-0.5">{t('app.common.promptLibrarySub')}</p>
           </div>
           <Chevron className="w-5 h-5 text-blue-200 flex-shrink-0" />
         </Link>
@@ -455,15 +471,15 @@ export default function DashboardPage() {
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-1.5">
-                <h3 className="font-extrabold text-sm text-sw-dark">AI Prompt Library</h3>
+                <h3 className="font-extrabold text-sm text-sw-dark">{t('app.common.aiPromptLibrary')}</h3>
                 <span
                   className="text-[9px] font-bold text-white px-1.5 py-0.5 rounded-full"
                   style={{ backgroundColor: 'hsl(var(--sw-coral))' }}
                 >
-                  NEW
+                  {t('app.common.new')}
                 </span>
               </div>
-              <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">27,200+ expert prompts · Copy &amp; paste ready</p>
+              <p className="text-[11px] text-sw-grey mt-0.5 leading-snug">{t('app.common.promptLibraryUpsell')}</p>
             </div>
             <Chevron className="w-5 h-5 flex-shrink-0" strokeWidth={2} style={{ color: 'rgb(195, 136, 34)' }} />
           </div>
@@ -477,8 +493,8 @@ export default function DashboardPage() {
       >
         <span className="text-2xl">🗓️</span>
         <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-sm">Your Planners</h3>
-          <p className="text-white/80 text-[11px] mt-0.5">Printable planners and journals — ready to download</p>
+          <h3 className="font-bold text-sm">{t('app.common.yourPlanners')}</h3>
+          <p className="text-white/80 text-[11px] mt-0.5">{t('app.common.plannersSub')}</p>
         </div>
         <Chevron className="w-5 h-5 text-white/70 flex-shrink-0" strokeWidth={2} />
       </Link>

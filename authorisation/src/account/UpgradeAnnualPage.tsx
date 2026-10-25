@@ -11,6 +11,7 @@ import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from 
 import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { MONEY_BACK_CHIP } from '@/shared/moneyBack'
+import { useI18n } from '@/i18n/I18nProvider'
 
 const OFFER = 'annual-upgrade'
 const PRICE = 59.99
@@ -28,7 +29,8 @@ function BounceWise() {
   useEffect(() => {
     window.location.href = NEXT
   }, [])
-  return <AuthSpinner message="Almost there..." />
+  const { t } = useI18n()
+  return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
 function Benefit({ text }: { text: string }) {
@@ -59,6 +61,9 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
+  const { t } = useI18n()
+  const priceStr = `$${PRICE}`
+  const wasStr = `$${WAS}`
   return (
     <div
       className="rounded-2xl p-5 sm:p-6"
@@ -68,16 +73,18 @@ function OfferCard({
     >
       <div className="flex justify-center mb-3">
         <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-sw-grey-border shadow-sm text-xs font-bold text-sw-dark">
-          SETUP ONLY
+          {t('account.annual.setupOnly')}
         </span>
       </div>
-      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">Switch to annual</h3>
+      <h3 className="text-xl sm:text-2xl font-extrabold text-sw-dark text-center mb-3">
+        {t('account.annual.switchTitle')}
+      </h3>
       <div className="flex items-center justify-center gap-3 mb-2">
-        <span className="text-lg text-red-400 line-through font-bold decoration-2">${WAS}</span>
-        <span className="text-sm font-bold text-sw-blue">Today Only</span>
-        <span className="text-4xl sm:text-5xl font-extrabold text-sw-blue">${PRICE}</span>
+        <span className="text-lg text-red-400 line-through font-bold decoration-2">{wasStr}</span>
+        <span className="text-sm font-bold text-sw-blue">{t('account.common.todayOnly')}</span>
+        <span className="text-4xl sm:text-5xl font-extrabold text-sw-blue">{priceStr}</span>
       </div>
-      <p className="text-center text-sm font-semibold text-sw-dark mb-5">per year · about $5.00/month</p>
+      <p className="text-center text-sm font-semibold text-sw-dark mb-5">{t('account.annual.perYear')}</p>
       <button
         type="button"
         data-testid="upgrade-annual-cta"
@@ -91,10 +98,10 @@ function OfferCard({
         {purchaseState === 'processing' ? (
           <span className="flex items-center justify-center gap-2">
             <span className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-            Processing...
+            {t('account.common.processing')}
           </span>
         ) : (
-          <span>YES — UPGRADE ME →</span>
+          <span>{t('account.annual.yesUpgrade')}</span>
         )}
       </button>
       <div className="flex items-center justify-center gap-1.5 mb-3">
@@ -105,15 +112,14 @@ function OfferCard({
             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
           />
         </svg>
-        <span className="text-sm text-sw-grey font-medium">Uses your saved card · trial stays in place</span>
+        <span className="text-sm text-sw-grey font-medium">{t('account.annual.savedCardTrial')}</span>
       </div>
       {errorMessage ? <p className="text-sm text-red-700 text-center font-medium mb-3">{errorMessage}</p> : null}
       <div className="rounded-xl border border-sw-grey-border bg-white p-3 mb-3">
         <p className="text-xs text-sw-grey text-center leading-relaxed">
-          By clicking above, you switch your membership to{' '}
-          <span className="font-bold text-sw-dark">${PRICE}/year</span>. Your trial is not cancelled and you
-          are not billed the difference today. After the trial, you pay ${PRICE}/year instead of monthly.{' '}
-          {MONEY_BACK_CHIP}.
+          {t('account.annual.chargeNote')
+            .replace('{price}', priceStr)
+            .replace('{guarantee}', MONEY_BACK_CHIP)}
         </p>
       </div>
       <div className="text-center">
@@ -123,7 +129,7 @@ function OfferCard({
           onClick={onSkip}
           className="text-sm text-sw-grey underline underline-offset-2 hover:text-sw-dark transition-colors"
         >
-          No thanks, keep my monthly plan
+          {t('account.annual.skipMonthly')}
         </button>
       </div>
     </div>
@@ -131,6 +137,8 @@ function OfferCard({
 }
 
 function SuccessScreen() {
+  const { t } = useI18n()
+  const priceStr = `$${PRICE}`
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">
@@ -139,14 +147,16 @@ function SuccessScreen() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">You&apos;re on annual</h2>
-        <p className="text-sw-dark font-semibold text-base mb-1">${PRICE}/year locked in</p>
+        <h2 className="text-2xl font-extrabold text-sw-dark mb-2">{t('account.annual.successTitle')}</h2>
+        <p className="text-sw-dark font-semibold text-base mb-1">
+          {t('account.annual.successLocked').replace('{price}', priceStr)}
+        </p>
         <p className="text-sw-grey text-sm mb-2">
-          Your trial continues. After it ends you&apos;ll pay ${PRICE}/year instead of the monthly plan.
+          {t('account.annual.successBody').replace('{price}', priceStr)}
         </p>
         <div className="mt-6">
           <div className="w-6 h-6 border-2 border-sw-blue border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-xs text-sw-grey mt-2">Taking you to your next step...</p>
+          <p className="text-xs text-sw-grey mt-2">{t('account.common.takingYouNext')}</p>
         </div>
       </div>
     </div>
@@ -154,6 +164,7 @@ function SuccessScreen() {
 }
 
 export function AnnualOffer() {
+  const { t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -229,12 +240,13 @@ export function AnnualOffer() {
       <main className="max-w-2xl mx-auto px-4 pb-32">
         <section className="text-center pt-6 pb-2">
           <h1 className="text-[2.5rem] sm:text-5xl font-extrabold text-sw-dark leading-[1.1] mb-3">
-            Lock in a year.{' '}
-            <span className="text-sw-blue">Pay less.</span>
+            {t('account.annual.heroTitle')}{' '}
+            <span className="text-sw-blue">{t('account.annual.heroTitleBlue')}</span>
           </h1>
           <p className="text-base sm:text-lg text-sw-dark leading-relaxed max-w-md mx-auto">
-            Switch from monthly to annual for <span className="font-extrabold text-sw-blue">${PRICE}</span> a
-            year — setup pricing, not the ${WAS} catalog rate.
+            {t('account.annual.heroSub')
+              .replace('{price}', `$${PRICE}`)
+              .replace('{was}', `$${WAS}`)}
           </p>
         </section>
         <div className="mt-6">
@@ -246,10 +258,10 @@ export function AnnualOffer() {
           />
         </div>
         <section className="mt-8 mb-8 rounded-2xl border border-sw-grey-border bg-white p-5 space-y-3">
-          <Benefit text="Keep your trial — we do not charge the yearly amount today" />
-          <Benefit text={`After the trial: $${PRICE}/year instead of monthly`} />
+          <Benefit text={t('account.annual.benefit1')} />
+          <Benefit text={t('account.annual.benefit2').replace('{price}', `$${PRICE}`)} />
           <Benefit text={MONEY_BACK_CHIP} />
-          <Benefit text="Cancel anytime before renewal from Profile" />
+          <Benefit text={t('account.annual.benefit3')} />
         </section>
         <div>
           <OfferCard

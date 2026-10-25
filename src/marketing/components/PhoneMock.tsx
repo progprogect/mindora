@@ -1,19 +1,10 @@
-const TRACKS = [
-  { emoji: '🧠', label: 'Mindset', pct: 75, delay: '0s', tile: '#8B5CF618', bar: '#8B5CF6' },
-  { emoji: '💼', label: 'Career', pct: 60, delay: '0.3s', tile: '#2563EB18', bar: '#2563EB' },
-  { emoji: '🤖', label: 'AI', pct: 80, delay: '0.6s', tile: '#06B6D418', bar: '#06B6D4' },
-  { emoji: '❤️', label: 'Health', pct: 65, delay: '0.9s', tile: '#10B98118', bar: '#10B981' },
-  { emoji: '💰', label: 'Finance', pct: 70, delay: '1.2s', tile: '#F59E0B18', bar: '#F59E0B' },
-] as const
-
-const BADGES = [
-  { emoji: '⭐', label: 'Consistent Learner', delay: '0s' },
-  { emoji: '🎯', label: 'Goal Getter', delay: '0.2s' },
-  { emoji: '📚', label: 'Knowledge Seeker', delay: '0.4s' },
-  { emoji: '👑', label: 'Growth Mindset', delay: '0.6s' },
-] as const
+import { homeCopy } from '@/marketing/data/home'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export default function PhoneMock() {
+  const { locale } = useI18n()
+  const copy = homeCopy(locale).phoneMock
+
   return (
     <div className="min-w-0 w-full">
       <div className="relative mx-auto w-full max-w-[480px] lg:mx-0">
@@ -29,9 +20,9 @@ export default function PhoneMock() {
                   className="size-8 shrink-0"
                 />
                 <div>
-                  <p className="text-xs text-sw-grey">Welcome back, Alex 👋</p>
+                  <p className="text-xs text-sw-grey">{copy.welcomeBack}</p>
                   <p className="max-w-[160px] truncate text-xs leading-tight font-semibold text-sw-dark">
-                    Your Personalised Roadmap
+                    {copy.roadmapTitle}
                   </p>
                 </div>
               </div>
@@ -41,7 +32,7 @@ export default function PhoneMock() {
                 </span>
                 <div>
                   <p className="text-sm leading-none font-bold text-orange-600">12</p>
-                  <p className="text-[10px] leading-none text-orange-400">day streak</p>
+                  <p className="text-[10px] leading-none text-orange-400">{copy.dayStreak}</p>
                 </div>
               </div>
             </div>
@@ -50,22 +41,24 @@ export default function PhoneMock() {
           <div className="space-y-4 px-5 py-4">
             <div>
               <div className="mb-2 flex items-center justify-between">
-                <span className="text-xs font-semibold text-sw-dark">Your Progress</span>
+                <span className="text-xs font-semibold text-sw-dark">{copy.yourProgress}</span>
                 <span className="text-xs font-bold text-sw-blue">72%</span>
               </div>
               <div className="h-2 overflow-hidden rounded-full bg-sw-grey-light">
                 <div className="h-full w-[72%] rounded-full bg-sw-blue" />
               </div>
-              <p className="mt-1 text-[11px] text-sw-grey">Keep going! You&apos;re doing great.</p>
+              <p className="mt-1 text-[11px] text-sw-grey">{copy.progressEncouragement}</p>
             </div>
 
             <div>
               <div className="mb-3 flex items-center justify-between">
-                <span className="text-xs font-semibold text-sw-dark">Learning Roadmap</span>
-                <span className="cursor-pointer text-xs font-medium text-sw-blue hover:underline">View All →</span>
+                <span className="text-xs font-semibold text-sw-dark">{copy.learningRoadmap}</span>
+                <span className="cursor-pointer text-xs font-medium text-sw-blue hover:underline">
+                  {copy.viewAllArrow}
+                </span>
               </div>
               <div className="grid grid-cols-5 gap-2">
-                {TRACKS.map((track) => (
+                {copy.tracks.map((track) => (
                   <div key={track.label} className="flex flex-col items-center gap-1">
                     <div
                       className="flex h-10 w-10 items-center justify-center rounded-xl text-base"
@@ -92,11 +85,13 @@ export default function PhoneMock() {
 
             <div>
               <div className="mb-2 flex items-center justify-between">
-                <span className="text-xs font-semibold text-sw-dark">Recent Achievements</span>
-                <span className="cursor-pointer text-xs font-medium text-sw-blue hover:underline">View All</span>
+                <span className="text-xs font-semibold text-sw-dark">{copy.recentAchievements}</span>
+                <span className="cursor-pointer text-xs font-medium text-sw-blue hover:underline">
+                  {copy.viewAll}
+                </span>
               </div>
               <div className="grid grid-cols-4 gap-2">
-                {BADGES.map((badge) => (
+                {copy.badges.map((badge) => (
                   <div
                     key={badge.label}
                     className="flex cursor-pointer flex-col items-center gap-1 rounded-xl bg-sw-grey-light/60 p-2 transition-colors hover:bg-sw-blue-light"
@@ -124,8 +119,8 @@ export default function PhoneMock() {
               </svg>
             </div>
             <div className="min-w-0 flex-1">
-              <p className="text-xs font-semibold text-sw-blue">Today&apos;s Action</p>
-              <p className="truncate text-[11px] text-sw-grey">Block 20 mins today to review your Q3 goals</p>
+              <p className="text-xs font-semibold text-sw-blue">{copy.todaysAction}</p>
+              <p className="truncate text-[11px] text-sw-grey">{copy.todaysActionBody}</p>
             </div>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0" aria-hidden="true">
               <path d="M5 3L9 7L5 11" stroke="#2563EB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

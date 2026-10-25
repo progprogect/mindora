@@ -1,0 +1,2640 @@
+{
+  "ai-and-technology": {
+    "path": "/app/ai-and-technology",
+    "template": "path-catalog-A",
+    "h1": "ИИ и технологии",
+    "tagline": "Освойте инструменты ИИ, создайте источники дохода и подготовьте карьеру к будущему.",
+    "liveSlugs": [
+      "28-day-ai-challenge",
+      "chatgpt-for-business",
+      "claude-ai-mastery",
+      "master-gemini",
+      "claude-ai-excel",
+      "master-ai-powerpoint",
+      "master-ai-microsoft-365",
+      "prompt-engineering-mastery",
+      "ai-productivity-system",
+      "ai-automation-blueprint",
+      "ai-content-creator-accelerator",
+      "ai-side-hustle-accelerator",
+      "ai-digital-product-launch",
+      "ai-ads-accelerator",
+      "ai-filmmaking-studio"
+    ],
+    "browseBySection": [
+      {
+        "id": "ai-tools",
+        "title": "Мастерство инструментов ИИ",
+        "description": "Углублённые курсы по самым мощным инструментам ИИ в мире",
+        "icon": "⚡",
+        "accent": "#2563EB",
+        "goals": [
+          "save-time",
+          "build-skills"
+        ],
+        "courses": [
+          {
+            "id": "master-chatgpt",
+            "title": "Освойте ChatGPT",
+            "subtitle": "Самый популярный в мире ИИ-ассистент",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 8934,
+            "rating": 4.8,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-claude",
+            "title": "Освойте Claude AI",
+            "subtitle": "Самый способный ИИ для рассуждений и письма",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 1934,
+            "rating": 4.9,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "master-gemini",
+            "title": "Освойте Gemini",
+            "subtitle": "ИИ Google, встроенный во всё, чем вы пользовались",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 3201,
+            "rating": 4.7,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-copilot",
+            "title": "Освойте Microsoft Copilot",
+            "subtitle": "ИИ для экосистемы Microsoft",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 2876,
+            "rating": 4.6,
+            "goals": [
+              "save-time",
+              "build-career"
+            ]
+          },
+          {
+            "id": "claude-ai-excel",
+            "title": "Освойте Claude AI для Excel",
+            "subtitle": "Используйте ИИ, чтобы понимать, исправлять и создавать таблицы",
+            "difficulty": "Начальный",
+            "duration": "15 дн.",
+            "learners": 812,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-perplexity",
+            "title": "Освойте Perplexity",
+            "subtitle": "ИИ-поисковик, который указывает источники",
+            "difficulty": "Начальный",
+            "duration": "1 нед.",
+            "learners": 2104,
+            "rating": 4.7,
+            "goals": [
+              "save-time",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-midjourney",
+            "title": "Освойте Midjourney",
+            "subtitle": "Самый популярный в мире генератор изображений ИИ",
+            "difficulty": "Средний",
+            "duration": "3 нед.",
+            "learners": 4521,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "build-skills"
+            ]
+          },
+          {
+            "id": "master-cursor",
+            "title": "Освойте Cursor",
+            "subtitle": "Редактор кода с приоритетом ИИ",
+            "difficulty": "Средний",
+            "duration": "4 нед.",
+            "learners": 1876,
+            "rating": 4.9,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "master-flux",
+            "title": "Освойте Flux",
+            "subtitle": "Новый ориентир для изображений, созданных ИИ",
+            "difficulty": "Средний",
+            "duration": "2 нед.",
+            "learners": 1102,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "create-content",
+              "build-skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-business",
+        "title": "ИИ для бизнеса",
+        "description": "Меняйте то, как вы работаете, руководите и растёте с помощью ИИ",
+        "icon": "📈",
+        "accent": "#7C3AED",
+        "goals": [
+          "make-money",
+          "save-time",
+          "build-career",
+          "start-business"
+        ],
+        "courses": [
+          {
+            "id": "ai-marketing",
+            "title": "Мастерство маркетинга с ИИ",
+            "subtitle": "Кампании, контент и воронки на автопилоте",
+            "difficulty": "Средний",
+            "duration": "4 нед.",
+            "learners": 3412,
+            "rating": 4.8,
+            "goals": [
+              "make-money",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-sales",
+            "title": "Ускоритель продаж с ИИ",
+            "subtitle": "Закрывайте больше сделок с умным outreach",
+            "difficulty": "Средний",
+            "duration": "3 нед.",
+            "learners": 2198,
+            "rating": 4.7,
+            "goals": [
+              "make-money",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-customer-service",
+            "title": "Сервис клиентов с ИИ",
+            "subtitle": "Создавайте умных ботов, которые радуют клиентов",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 1654,
+            "rating": 4.6,
+            "goals": [
+              "make-money",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-productivity",
+            "title": "Система продуктивности с ИИ",
+            "subtitle": "Делайте в 2 раза больше за половину времени",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 5621,
+            "rating": 4.9,
+            "goals": [
+              "save-time",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-automation",
+            "title": "План автоматизации с ИИ",
+            "subtitle": "Автоматизируйте рутину и экономьте часы каждый день",
+            "difficulty": "Средний",
+            "duration": "4 нед.",
+            "learners": 2876,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "save-time",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-strategy",
+            "title": "Бизнес-стратегия с ИИ",
+            "subtitle": "Ведите трансформацию с ИИ в вашей организации",
+            "difficulty": "Продвинутый",
+            "duration": "5 нед.",
+            "learners": 1201,
+            "rating": 4.9,
+            "goals": [
+              "build-career",
+              "start-business"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-creators",
+        "title": "ИИ для создателей контента",
+        "description": "Создавайте больше и быстрее — и аудиторию, которая платит",
+        "icon": "🎨",
+        "accent": "#EA580C",
+        "goals": [
+          "create-content",
+          "make-money"
+        ],
+        "courses": [
+          {
+            "id": "ai-images-course",
+            "title": "Создание изображений с ИИ",
+            "subtitle": "Эффектные визуалы за секунды, а не за часы",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 4312,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-video-creation",
+            "title": "Создание видео с ИИ",
+            "subtitle": "Кинематографичный контент без камеры",
+            "difficulty": "Начальный",
+            "duration": "4 нед.",
+            "learners": 3198,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-influencer",
+            "title": "План для ИИ-инфлюенсера",
+            "subtitle": "Создайте безликий бренд с пассивным доходом",
+            "difficulty": "Средний",
+            "duration": "6 нед.",
+            "learners": 2654,
+            "rating": 4.7,
+            "goals": [
+              "make-money",
+              "create-content",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-shorts",
+            "title": "Короткое видео с ИИ",
+            "subtitle": "Выходите в тренды в TikTok, Reels и YouTube Shorts",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 3876,
+            "rating": 4.8,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-youtube",
+            "title": "YouTube-канал с ИИ",
+            "subtitle": "Создайте монетизируемый канал за 90 дней",
+            "difficulty": "Средний",
+            "duration": "6 нед.",
+            "learners": 2341,
+            "rating": 4.8,
+            "isNew": true,
+            "goals": [
+              "make-money",
+              "create-content"
+            ]
+          },
+          {
+            "id": "ai-podcasts",
+            "title": "Продакшн подкастов с ИИ",
+            "subtitle": "Профессиональные подкасты без студийных затрат",
+            "difficulty": "Начальный",
+            "duration": "2 нед.",
+            "learners": 1432,
+            "rating": 4.7,
+            "goals": [
+              "create-content",
+              "make-money"
+            ]
+          },
+          {
+            "id": "ai-writing",
+            "title": "Письмо и копирайтинг с ИИ",
+            "subtitle": "Тексты, которые конвертируют — за минуты",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 5012,
+            "rating": 4.9,
+            "goals": [
+              "make-money",
+              "create-content",
+              "build-career"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-developers",
+        "title": "ИИ для разработчиков",
+        "description": "Собирайте быстрее, выпускайте больше и оставайтесь впереди",
+        "icon": "⌨️",
+        "accent": "#0891B2",
+        "goals": [
+          "build-skills",
+          "make-money",
+          "start-business",
+          "build-career"
+        ],
+        "courses": [
+          {
+            "id": "cursor-dev",
+            "title": "Cursor для разработчиков",
+            "subtitle": "Редактор с приоритетом ИИ, который увеличивает результат в 10 раз",
+            "difficulty": "Средний",
+            "duration": "4 нед.",
+            "learners": 1876,
+            "rating": 4.9,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "claude-code-dev",
+            "title": "Мастерство Claude Code",
+            "subtitle": "Создавайте реальные проекты с самым умным ИИ",
+            "difficulty": "Средний",
+            "duration": "4 нед.",
+            "learners": 1543,
+            "rating": 4.9,
+            "isNew": true,
+            "goals": [
+              "build-skills",
+              "build-career"
+            ]
+          },
+          {
+            "id": "ai-agents-course",
+            "title": "Создание ИИ-агентов",
+            "subtitle": "Автономные агенты, которые работают, пока вы спите",
+            "difficulty": "Продвинутый",
+            "duration": "6 нед.",
+            "learners": 1102,
+            "rating": 4.8,
+            "goals": [
+              "build-skills",
+              "make-money",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-automation-dev",
+            "title": "No-code автоматизация с ИИ",
+            "subtitle": "Мощная автоматизация без написания кода",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 3241,
+            "rating": 4.8,
+            "goals": [
+              "save-time",
+              "start-business"
+            ]
+          },
+          {
+            "id": "no-code-dev",
+            "title": "No-code разработка",
+            "subtitle": "Создавайте реальные приложения с ИИ — без кода",
+            "difficulty": "Начальный",
+            "duration": "3 нед.",
+            "learners": 2876,
+            "rating": 4.7,
+            "goals": [
+              "build-skills",
+              "start-business"
+            ]
+          },
+          {
+            "id": "ai-website-creation",
+            "title": "Создание сайтов с ИИ",
+            "subtitle": "Запустите профессиональный сайт за выходные",
+            "difficulty": "Начальный",
+            "duration": "1 нед.",
+            "learners": 4231,
+            "rating": 4.8,
+            "goals": [
+              "start-business",
+              "make-money"
+            ]
+          }
+        ]
+      }
+    ],
+    "heroCourseCount": 15
+  },
+  "success-mindset": {
+    "path": "/app/success-mindset",
+    "template": "path-catalog-A",
+    "h1": "Мышление успеха",
+    "tagline": "Перестройте мышление. Развивайте непоколебимую уверенность. Освойте психологию устойчивого успеха.",
+    "liveSlugs": [
+      "unlock-growth-mindset",
+      "confidence-accelerator",
+      "28-day-success-mindset",
+      "high-performance-accelerator",
+      "millionaire-mindset"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "calm-mind",
+        "title": "Ускоритель спокойного разума",
+        "badge": "Благополучие",
+        "badgeBg": "bg-sw-teal/20",
+        "badgeText": "text-sw-teal",
+        "headerGradient": "from-[#134e4a] to-[#0f766e]",
+        "description": "Снижайте стресс, укрепляйте устойчивость и осваивайте практики спокойствия под любым давлением.",
+        "outcomes": [
+          "Устойчивость к стрессу",
+          "Эмоциональная регуляция",
+          "Внутренний покой по запросу"
+        ],
+        "difficulty": "Начальный",
+        "time": "21 дн. · 10 мин/день",
+        "learnerCount": "14,600",
+        "rating": "4.9"
+      },
+      {
+        "id": "athlete-mindset",
+        "title": "Мышление атлета",
+        "badge": "Пиковая эффективность",
+        "badgeBg": "bg-sw-coral/20",
+        "badgeText": "text-sw-coral",
+        "headerGradient": "from-[#9a3412] to-[#ea580c]",
+        "description": "Развивайте силу духа, устойчивость и соревновательное мышление элитных спортсменов.",
+        "outcomes": [
+          "Непробиваемая устойчивость",
+          "Конкурентное преимущество",
+          "Побеждать под давлением"
+        ],
+        "difficulty": "Средний",
+        "time": "28 дн. · 15 мин/день",
+        "learnerCount": "7,300",
+        "rating": "4.8"
+      },
+      {
+        "id": "identity-reset",
+        "title": "Перезагрузка идентичности",
+        "badge": "Трансформационный",
+        "badgeBg": "bg-sw-purple/20",
+        "badgeText": "text-sw-purple",
+        "headerGradient": "from-[#4c1d95] to-[#7c3aed]",
+        "description": "Меняйте мышление, действия и образ себя, укрепляя личную идентичность.",
+        "outcomes": [
+          "Новый образ себя",
+          "Разорвать старые шаблоны",
+          "Стать тем, кем хотите быть"
+        ],
+        "difficulty": "Все уровни",
+        "time": "30 дн. · 15 мин/день",
+        "learnerCount": "8,900",
+        "rating": "4.9"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "think-better",
+        "label": "Думать лучше",
+        "tagline": "Обострите ум. Принимайте более умные решения.",
+        "colour": "sw-amber",
+        "bgLight": "bg-sw-amber/10",
+        "textColour": "text-sw-amber",
+        "borderColour": "border-sw-amber/30",
+        "filter": "focus",
+        "courses": [
+          {
+            "id": "critical-thinking",
+            "name": "Мастер-класс критического мышления",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Отсекайте шум, проверяйте допущения и принимайте более точные решения во всех сферах жизни.",
+            "skills": [
+              "Логика",
+              "Анализ",
+              "Решение проблем"
+            ],
+            "transformation": "From reactive to intentional",
+            "learnerCount": "6,200",
+            "rating": "4.8",
+            "filters": [
+              "focus",
+              "perform"
+            ]
+          },
+          {
+            "id": "decision-making",
+            "name": "Принятие решений под давлением",
+            "difficulty": "Средний",
+            "time": "2 нед. · 15 мин/день",
+            "description": "Принимайте уверенные качественные решения, когда ставки высоки, а времени мало.",
+            "skills": [
+              "Ясность",
+              "Уверенность",
+              "Оценка рисков"
+            ],
+            "transformation": "From hesitant to decisive",
+            "learnerCount": "4,800",
+            "rating": "4.7",
+            "filters": [
+              "focus",
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "mental-models",
+            "name": "Ментальные модели успеха",
+            "difficulty": "Средний",
+            "time": "4 нед. · 10 мин/день",
+            "description": "Освойте схемы мышления самых успешных людей мира для решения любых задач.",
+            "skills": [
+              "Системное мышление",
+              "Распознавание паттернов",
+              "Стратегия"
+            ],
+            "transformation": "From stuck to strategic",
+            "learnerCount": "5,100",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "focus",
+              "perform",
+              "wealth"
+            ]
+          },
+          {
+            "id": "emotional-intelligence",
+            "name": "Эмоциональный интеллект",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Понимайте и управляйте эмоциями для лучших отношений и более лёгкой жизни.",
+            "skills": [
+              "Самоосознанность",
+              "Эмпатия",
+              "Регуляция"
+            ],
+            "transformation": "From reactive to emotionally fluent",
+            "learnerCount": "7,400",
+            "rating": "4.9",
+            "filters": [
+              "confidence",
+              "calm",
+              "lead"
+            ]
+          },
+          {
+            "id": "creative-thinking",
+            "name": "Творческое мышление без границ",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Раскройте творческий потенциал и генерируйте прорывные идеи по запросу.",
+            "skills": [
+              "Генерация идей",
+              "Инновации",
+              "Латеральное мышление"
+            ],
+            "transformation": "From conventional to creative",
+            "learnerCount": "3,900",
+            "rating": "4.7",
+            "filters": [
+              "focus",
+              "purpose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "feel-better",
+        "label": "Чувствовать себя лучше",
+        "tagline": "Снижайте стресс. Укрепляйте устойчивость. Находите покой.",
+        "colour": "sw-teal",
+        "bgLight": "bg-sw-teal/10",
+        "textColour": "text-sw-teal",
+        "borderColour": "border-sw-teal/30",
+        "filter": "calm",
+        "courses": [
+          {
+            "id": "stress-management",
+            "name": "Набор инструментов управления стрессом",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Практики на научной основе, чтобы снижать стресс и сохранять спокойствие в хаосе.",
+            "skills": [
+              "Спокойствие",
+              "Дыхание",
+              "Регуляция"
+            ],
+            "transformation": "From overwhelmed to composed",
+            "learnerCount": "9,200",
+            "rating": "4.9",
+            "filters": [
+              "calm"
+            ]
+          },
+          {
+            "id": "happiness-blueprint",
+            "name": "План счастья",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Стройте по-настоящему более счастливую жизнь, меняя отношение к успеху, ожиданиям и благодарности.",
+            "skills": [
+              "Радость",
+              "Перспектива",
+              "Смысл"
+            ],
+            "transformation": "From chasing to appreciating",
+            "learnerCount": "11,500",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "purpose"
+            ]
+          },
+          {
+            "id": "mindfulness",
+            "name": "Осознанность для современной жизни",
+            "difficulty": "Начальный",
+            "time": "21 дн. · 5 мин/день",
+            "description": "Учитесь быть в моменте, снижать ментальный шум и находить покой в мире отвлечений.",
+            "skills": [
+              "Присутствие",
+              "Фокус",
+              "Покой"
+            ],
+            "transformation": "From distracted to present",
+            "learnerCount": "12,300",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "focus"
+            ]
+          },
+          {
+            "id": "gratitude",
+            "name": "Привычка благодарности",
+            "difficulty": "Начальный",
+            "time": "1 нед. · 5 мин/день",
+            "description": "Простая мощная ежедневная практика для позитивности, оптимизма и изобилия.",
+            "skills": [
+              "Благодарность",
+              "Оптимизм",
+              "Привычка"
+            ],
+            "transformation": "From scarcity to abundance",
+            "learnerCount": "8,700",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "calm",
+              "wealth"
+            ]
+          },
+          {
+            "id": "resilience",
+            "name": "Тренировка устойчивости",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Быстрее восстанавливайтесь после неудач, адаптируйтесь к переменам и укрепляйте ментальную силу успеха.",
+            "skills": [
+              "Устойчивость",
+              "Упорство",
+              "Адаптивность"
+            ],
+            "transformation": "From fragile to unbreakable",
+            "learnerCount": "7,600",
+            "rating": "4.8",
+            "filters": [
+              "calm",
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "anxiety-toolkit",
+            "name": "Преодоление тревоги",
+            "difficulty": "Начальный",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Поймите причины тревоги и освойте практики управления, снижения и движения вперёд.",
+            "skills": [
+              "Спокойствие",
+              "Смелость",
+              "Контроль"
+            ],
+            "transformation": "From anxious to grounded",
+            "learnerCount": "10,100",
+            "rating": "4.9",
+            "filters": [
+              "calm",
+              "confidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "perform-better",
+        "label": "Действовать эффективнее",
+        "tagline": "Формируйте привычки. Обостряйте фокус. Достигайте больше.",
+        "colour": "sw-blue",
+        "bgLight": "bg-sw-blue/10",
+        "textColour": "text-sw-blue",
+        "borderColour": "border-sw-blue/30",
+        "filter": "perform",
+        "courses": [
+          {
+            "id": "deep-focus",
+            "name": "Протокол глубокого фокуса",
+            "difficulty": "Все уровни",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Уберите отвлечения и концентрируйтесь глубоко 2–4 часа без перерывов.",
+            "skills": [
+              "Фокус",
+              "Концентрация",
+              "Состояние потока"
+            ],
+            "transformation": "From scattered to laser-focused",
+            "learnerCount": "8,900",
+            "rating": "4.8",
+            "filters": [
+              "focus",
+              "perform"
+            ]
+          },
+          {
+            "id": "atomic-habits",
+            "name": "Ускоритель атомных привычек",
+            "difficulty": "Начальный",
+            "time": "4 нед. · 10 мин/день",
+            "description": "Создавайте маленькие ежедневные привычки, которые дают выдающийся результат со временем.",
+            "skills": [
+              "Формирование привычек",
+              "Последовательность",
+              "Импульс"
+            ],
+            "transformation": "From inconsistent to unstoppable",
+            "learnerCount": "15,200",
+            "rating": "4.9",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "morning-routine",
+            "name": "Идеальное утреннее рутина",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 15 мин/день",
+            "description": "Создайте утро, которое задаёт тон сфокусированному и продуктивному дню — каждый день.",
+            "skills": [
+              "Ритуал",
+              "Энергия",
+              "Намерение"
+            ],
+            "transformation": "From chaotic mornings to intentional days",
+            "learnerCount": "13,800",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "productivity",
+            "name": "Система пиковой продуктивности",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Полная система: больше важного, меньше лишнего — без выгорания.",
+            "skills": [
+              "Мастерство времени",
+              "Приоритизация",
+              "Управление энергией"
+            ],
+            "transformation": "From busy to genuinely productive",
+            "learnerCount": "11,700",
+            "rating": "4.8",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          },
+          {
+            "id": "discipline",
+            "name": "Дисциплина важнее мотивации",
+            "difficulty": "Средний",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Перестаньте зависеть от мотивации и выработайте дисциплину движения вперёд.",
+            "skills": [
+              "Дисциплина",
+              "Сила воли",
+              "Доведение до конца"
+            ],
+            "transformation": "From motivation-dependent to self-directed",
+            "learnerCount": "9,400",
+            "rating": "4.8",
+            "filters": [
+              "perform",
+              "confidence"
+            ]
+          },
+          {
+            "id": "execution",
+            "name": "Безупречное исполнение",
+            "difficulty": "Средний",
+            "time": "2 нед. · 15 мин/день",
+            "description": "Соедините знание и действие — превратите цели в последовательные измеримые шаги.",
+            "skills": [
+              "Склонность к действию",
+              "Доведение до конца",
+              "Ответственность"
+            ],
+            "transformation": "From planning to doing",
+            "learnerCount": "6,100",
+            "rating": "4.7",
+            "filters": [
+              "perform",
+              "focus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "build-wealth-mindset",
+        "label": "Мышление богатства",
+        "tagline": "Меняйте отношение к деньгам и возможностям.",
+        "colour": "sw-success",
+        "bgLight": "bg-sw-success/10",
+        "textColour": "text-sw-success",
+        "borderColour": "border-sw-success/30",
+        "filter": "wealth",
+        "courses": [
+          {
+            "id": "money-psychology",
+            "name": "Психология денег",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Поймите отношения с деньгами, сломайте ограничивающие убеждения и укрепите финансовый образ себя.",
+            "skills": [
+              "Денежное мышление",
+              "Изобилие",
+              "Мышление богатства"
+            ],
+            "transformation": "From money fear to money confidence",
+            "learnerCount": "7,800",
+            "rating": "4.8",
+            "filters": [
+              "wealth"
+            ]
+          },
+          {
+            "id": "abundance-mindset",
+            "name": "Мышление изобилия",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Перейдите от дефицита к изобилию, которое притягивает возможности.",
+            "skills": [
+              "Изобилие",
+              "Возможность",
+              "Благодарность"
+            ],
+            "transformation": "From scarcity to abundance",
+            "learnerCount": "9,200",
+            "rating": "4.9",
+            "filters": [
+              "wealth",
+              "calm"
+            ]
+          },
+          {
+            "id": "financial-confidence",
+            "name": "Финансовая уверенность",
+            "difficulty": "Начальный",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Развивайте уверенность и ясность для верных финансовых решений и контроля над будущим.",
+            "skills": [
+              "Ясность",
+              "Уверенность",
+              "Принятие решений"
+            ],
+            "transformation": "From financially anxious to financially empowered",
+            "learnerCount": "5,500",
+            "rating": "4.7",
+            "isNew": true,
+            "filters": [
+              "wealth",
+              "confidence"
+            ]
+          },
+          {
+            "id": "entrepreneur-mindset",
+            "name": "Мышление предпринимателя",
+            "difficulty": "Средний",
+            "time": "4 нед. · 15 мин/день",
+            "description": "Думайте как основатель. Узнайте, как успешные предприниматели относятся к риску, неудачам и росту.",
+            "skills": [
+              "Толерантность к риску",
+              "Мышление возможностей",
+              "Устойчивость"
+            ],
+            "transformation": "From employee thinking to owner thinking",
+            "learnerCount": "8,100",
+            "rating": "4.8",
+            "filters": [
+              "wealth",
+              "perform"
+            ]
+          },
+          {
+            "id": "opportunity-thinking",
+            "name": "Мышление возможностей",
+            "difficulty": "Все уровни",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Тренируйте мозг замечать возможности и действовать с ясностью и смелостью.",
+            "skills": [
+              "Распознавание паттернов",
+              "Смелость",
+              "Действие"
+            ],
+            "transformation": "From overlooking to capitalising",
+            "learnerCount": "4,300",
+            "rating": "4.7",
+            "filters": [
+              "wealth",
+              "focus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lead-better",
+        "label": "Лидировать лучше",
+        "tagline": "Общайтесь мощно. Влияйте с честностью.",
+        "colour": "sw-coral",
+        "bgLight": "bg-sw-coral/10",
+        "textColour": "text-sw-coral",
+        "borderColour": "border-sw-coral/30",
+        "filter": "lead",
+        "courses": [
+          {
+            "id": "leadership",
+            "name": "Лидерство изнутри",
+            "difficulty": "Средний",
+            "time": "4 нед. · 15 мин/день",
+            "description": "Развивайте присутствие, эмпатию и стратегическое мышление великих лидеров.",
+            "skills": [
+              "Лидерство",
+              "Видение",
+              "Эмпатия"
+            ],
+            "transformation": "From manager to inspiring leader",
+            "learnerCount": "6,400",
+            "rating": "4.8",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "communication",
+            "name": "Коммуникация с высоким воздействием",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Говорите ясно и уверенно — от личных встреч до залов на тысячу человек.",
+            "skills": [
+              "Ясность",
+              "Уверенность",
+              "Связь"
+            ],
+            "transformation": "From hesitant to compelling",
+            "learnerCount": "10,200",
+            "rating": "4.9",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "influence",
+            "name": "Искусство влияния",
+            "difficulty": "Средний",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Этично убеждайте, мотивируйте и вдохновляйте людей действовать в духе вашего видения.",
+            "skills": [
+              "Влияние",
+              "Убеждение",
+              "Связь"
+            ],
+            "transformation": "From overlooked to influential",
+            "learnerCount": "5,900",
+            "rating": "4.7",
+            "isNew": true,
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          },
+          {
+            "id": "negotiation",
+            "name": "Уверенные переговоры",
+            "difficulty": "Средний",
+            "time": "2 нед. · 15 мин/день",
+            "description": "Добивайтесь целей, не сжигая мосты — практическая система уверенных переговоров.",
+            "skills": [
+              "Переговоры",
+              "Уверенность",
+              "Стратегия"
+            ],
+            "transformation": "From settling to winning",
+            "learnerCount": "4,700",
+            "rating": "4.7",
+            "filters": [
+              "lead",
+              "confidence",
+              "wealth"
+            ]
+          },
+          {
+            "id": "public-speaking",
+            "name": "Публичные выступления без страха",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Избавьтесь от страха сцены и развивайте сильное аутентичное присутствие перед любой аудиторией.",
+            "skills": [
+              "Уверенность",
+              "Присутствие",
+              "Подача"
+            ],
+            "transformation": "From terrified to captivating",
+            "learnerCount": "8,600",
+            "rating": "4.9",
+            "filters": [
+              "lead",
+              "confidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "become-your-best",
+        "label": "Стать лучшей версией себя",
+        "tagline": "Живите осмысленно. Растите без границ.",
+        "colour": "sw-purple",
+        "bgLight": "bg-sw-purple/10",
+        "textColour": "text-sw-purple",
+        "borderColour": "border-sw-purple/30",
+        "filter": "purpose",
+        "courses": [
+          {
+            "id": "find-your-purpose",
+            "name": "Найти своё предназначение",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 15 мин/день",
+            "description": "Откройте, что важно, согласуйте жизнь с ценностями и обретите глубокий смысл.",
+            "skills": [
+              "Ясность",
+              "Смысл",
+              "Ценности"
+            ],
+            "transformation": "From drifting to directed",
+            "learnerCount": "9,800",
+            "rating": "4.9",
+            "filters": [
+              "purpose"
+            ]
+          },
+          {
+            "id": "identity-blueprint",
+            "name": "План идентичности",
+            "difficulty": "Все уровни",
+            "time": "4 нед. · 15 мин/день",
+            "description": "Решите, кем хотите быть, и системно становитесь этим человеком ежедневными практиками.",
+            "skills": [
+              "Идентичность",
+              "Вера в себя",
+              "Изменение"
+            ],
+            "transformation": "From who I am to who I choose to be",
+            "learnerCount": "7,300",
+            "rating": "4.8",
+            "filters": [
+              "purpose",
+              "confidence"
+            ]
+          },
+          {
+            "id": "vision",
+            "name": "Видение и дизайн жизни",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 20 мин/день",
+            "description": "Создайте вдохновляющее видение жизни и убеждения с планами, чтобы воплотить его.",
+            "skills": [
+              "Видение",
+              "Планирование",
+              "Вера"
+            ],
+            "transformation": "From vague to vivid future",
+            "learnerCount": "6,600",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "purpose",
+              "wealth"
+            ]
+          },
+          {
+            "id": "goal-setting",
+            "name": "Система достижения целей",
+            "difficulty": "Начальный",
+            "time": "2 нед. · 10 мин/день",
+            "description": "Проверенная система целей, которые держатся, и импульса для их достижения.",
+            "skills": [
+              "Постановка целей",
+              "Импульс",
+              "Отслеживание"
+            ],
+            "transformation": "From setting to achieving",
+            "learnerCount": "11,400",
+            "rating": "4.8",
+            "filters": [
+              "purpose",
+              "perform"
+            ]
+          },
+          {
+            "id": "personal-growth",
+            "name": "Мышление роста на всю жизнь",
+            "difficulty": "Все уровни",
+            "time": "3 нед. · 10 мин/день",
+            "description": "Развивайте любовь к обучению и веру, что любой вызов — шанс расти.",
+            "skills": [
+              "Мышление роста",
+              "Любопытство",
+              "Устойчивость"
+            ],
+            "transformation": "From fixed to endlessly growing",
+            "learnerCount": "8,200",
+            "rating": "4.9",
+            "filters": [
+              "purpose",
+              "perform",
+              "confidence"
+            ]
+          }
+        ]
+      }
+    ],
+    "heroCourseCount": 34
+  },
+  "career": {
+    "path": "/app/career",
+    "template": "path-catalog-A",
+    "h1": "Карьера",
+    "tagline": "Прокачайте профессиональную жизнь — от повышения до смены направления.",
+    "liveSlugs": [
+      "28-day-career-accelerator",
+      "squiggly-career-navigator",
+      "deep-work-career-focus",
+      "salary-promotion-playbook"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "career-growth-accelerator",
+        "title": "Ускоритель карьерного роста",
+        "badge": "Самый популярный",
+        "badgeBg": "bg-sw-blue/20",
+        "badgeText": "text-sw-blue",
+        "headerGradient": "from-[#0f1f4a] to-[#2563eb]",
+        "description": "Развивайте навыки, уверенность и привычки, чтобы выделяться, расти быстрее и открывать новые возможности — уже с следующего рабочего дня.",
+        "outcomes": [
+          "Получайте признание и вознаграждение за работу",
+          "Создайте executive presence, которую замечают",
+          "Составьте чёткий план ускорения карьеры"
+        ],
+        "difficulty": "Все уровни",
+        "time": "4 нед. · 15 мин/день",
+        "learnerCount": "21,400",
+        "rating": "4.9",
+        "isHero": true
+      },
+      {
+        "id": "future-proof-ai",
+        "title": "Защитите карьеру с помощью ИИ",
+        "badge": "В тренде",
+        "badgeBg": "bg-emerald-100",
+        "badgeText": "text-emerald-700",
+        "headerGradient": "from-[#064e3b] to-[#059669]",
+        "description": "Освойте ИИ, чтобы быть продуктивнее, ценнее и готовым к будущему работы — раньше коллег.",
+        "outcomes": [
+          "Делайте в 3 раза больше за половину времени",
+          "Станьте главным по ИИ в команде",
+          "Защитите роль от автоматизации"
+        ],
+        "difficulty": "Все уровни",
+        "time": "3 нед. · 10 мин/день",
+        "learnerCount": "14,800",
+        "rating": "4.9",
+        "isHero": false
+      },
+      {
+        "id": "promotion-accelerator",
+        "title": "Ускоритель повышения",
+        "badge": "Любимый карьерный курс",
+        "badgeBg": "bg-sw-purple/20",
+        "badgeText": "text-sw-purple",
+        "headerGradient": "from-[#4c1d95] to-[#7c3aed]",
+        "description": "Развивайте коммуникацию, видимость и навыки для следующего повышения — чтобы вас нельзя было не заметить.",
+        "outcomes": [
+          "Знайте, что именно должен увидеть руководитель",
+          "Владейте своими performance review",
+          "Стройте отношения, которые открывают двери"
+        ],
+        "difficulty": "Средний",
+        "time": "4 нед. · 15 мин/день",
+        "learnerCount": "12,600",
+        "rating": "4.8",
+        "isHero": false
+      },
+      {
+        "id": "salary-negotiation-masterclass",
+        "title": "Мастер-класс переговоров о зарплате",
+        "badge": "Высокий эффект",
+        "badgeBg": "bg-sw-amber/20",
+        "badgeText": "text-sw-amber",
+        "headerGradient": "from-[#713f12] to-[#d97706]",
+        "description": "Освойте переговоры, чтобы уверенно показывать ценность и повышать доход — в текущей или новой роли.",
+        "outcomes": [
+          "Знайте рыночную стоимость с уверенностью",
+          "Используйте рабочие скрипты",
+          "Ведите переговоры без страха и неловкости"
+        ],
+        "difficulty": "Все уровни",
+        "time": "2 нед. · 10 мин/день",
+        "learnerCount": "9,200",
+        "rating": "4.9",
+        "isHero": false
+      },
+      {
+        "id": "workplace-confidence-accelerator",
+        "title": "Ускоритель уверенности на работе",
+        "badge": "Меняет жизнь",
+        "badgeBg": "bg-sw-teal/20",
+        "badgeText": "text-sw-teal",
+        "headerGradient": "from-[#0e4a4a] to-[#0d9488]",
+        "description": "Преодолейте синдром самозванца, говорите с авторитетом и показывайте лучший результат даже под давлением.",
+        "outcomes": [
+          "Избавьтесь от синдрома самозванца навсегда",
+          "Уверенно высказывайтесь в любой комнате",
+          "Транслируйте спокойный авторитет и присутствие"
+        ],
+        "difficulty": "Все уровни",
+        "time": "3 нед. · 10 мин/день",
+        "learnerCount": "16,900",
+        "rating": "4.9",
+        "isHero": false
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "foundations",
+        "label": "Основы карьеры",
+        "tagline": "Базовые навыки, на которых строится карьера каждого профессионала",
+        "colour": "sw-blue",
+        "bgLight": "bg-sw-blue/10",
+        "textColour": "text-sw-blue",
+        "borderColour": "border-sw-blue/30",
+        "filter": "promoted",
+        "courses": [
+          {
+            "id": "career-planning",
+            "name": "Планирование и направление карьеры",
+            "difficulty": "Начальный",
+            "time": "5 уроков · 2 ч",
+            "description": "Проясните цель и постройте практичный маршрут — не оставляя всё наудачу.",
+            "skills": [
+              "Постановка целей",
+              "Картирование карьеры",
+              "Формирование видения"
+            ],
+            "transformation": "You'll have a clear 12-month career plan and daily actions to move toward it.",
+            "learnerCount": "8,200",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "professional-communication-foundations",
+            "name": "Основы профессиональной коммуникации",
+            "difficulty": "Начальный",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Освойте основы ясной уверенной коммуникации, укрепляющей доверие в каждом контакте.",
+            "skills": [
+              "Активное слушание",
+              "Письменная коммуникация",
+              "Тон и ясность"
+            ],
+            "transformation": "You'll communicate with clarity and confidence in meetings, emails and conversations.",
+            "learnerCount": "11,400",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "time-mastery",
+            "name": "Мастерство времени для профессионалов",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Верните время, уберите утечки энергии и выстройте системы для стабильно лучшей работы.",
+            "skills": [
+              "Приоритизация",
+              "Глубокая работа",
+              "Управление энергией"
+            ],
+            "transformation": "You'll finish each week having moved the needle on what actually matters.",
+            "learnerCount": "9,700",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "workplace-productivity",
+            "name": "Система продуктивности на работе",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Создайте надёжную систему продуктивности без увеличения часов работы.",
+            "skills": [
+              "Управление задачами",
+              "Системы фокуса",
+              "Качество результата"
+            ],
+            "transformation": "You'll get more done in less time and feel in control of your workload.",
+            "learnerCount": "7,300",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "personal-brand-builder",
+            "name": "Создание личного бренда",
+            "difficulty": "Все уровни",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Постройте репутацию, которая открывает двери — онлайн и офлайн.",
+            "skills": [
+              "Присутствие в LinkedIn",
+              "Построение репутации",
+              "Стратегия видимости"
+            ],
+            "transformation": "You'll be known as a go-to expert in your field.",
+            "learnerCount": "6,800",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "all",
+              "earn-more",
+              "promoted"
+            ]
+          },
+          {
+            "id": "professional-relationships",
+            "name": "Профессиональные отношения",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Стройте искренние профессиональные связи на долгую перспективу — не только когда нужна помощь.",
+            "skills": [
+              "Построение отношений",
+              "Доверие",
+              "Сотрудничество"
+            ],
+            "transformation": "You'll have a strong professional network that supports your career goals.",
+            "learnerCount": "5,600",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Карьерный рост",
+        "tagline": "Стратегии ускорения повышений, роста дохода и признания",
+        "colour": "sw-purple",
+        "bgLight": "bg-sw-purple/10",
+        "textColour": "text-sw-purple",
+        "borderColour": "border-sw-purple/30",
+        "filter": "promoted",
+        "courses": [
+          {
+            "id": "promotion-strategies",
+            "name": "Стратегии повышения, которые работают",
+            "difficulty": "Средний",
+            "time": "6 уроков · 3 ч",
+            "description": "Узнайте, что ищут руководители, и как это стабильно показывать до следующего review.",
+            "skills": [
+              "Готовность к повышению",
+              "Управление стейкхолдерами",
+              "Видимость"
+            ],
+            "transformation": "You'll know precisely what to do to make yourself the obvious promotion choice.",
+            "learnerCount": "10,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "executive-presence",
+            "name": "Executive presence",
+            "difficulty": "Средний",
+            "time": "5 уроков · 2.5 ч",
+            "description": "Развивайте серьёзность, стиль общения и лидерскую ауру, нужные для топ-ролей.",
+            "skills": [
+              "Серьёзность и вес",
+              "Стратегическое мышление",
+              "Командное присутствие"
+            ],
+            "transformation": "You'll walk into any room and be taken seriously immediately.",
+            "learnerCount": "7,800",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted",
+              "lead"
+            ]
+          },
+          {
+            "id": "strategic-networking",
+            "name": "Стратегический нетворкинг",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Стройте сильную сеть искренне — с людьми, которые реально открывают возможности.",
+            "skills": [
+              "Стратегия нетворкинга",
+              "Поддержание отношений",
+              "Доведение до конца"
+            ],
+            "transformation": "You'll have a network that actively creates career opportunities for you.",
+            "learnerCount": "6,400",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "performance-review-mastery",
+            "name": "Мастерство performance review",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Приходите на каждый review подготовленными и готовыми вести разговор к нужному результату.",
+            "skills": [
+              "Самопрезентация",
+              "Подготовка к review",
+              "Переговоры о результате"
+            ],
+            "transformation": "You'll control the narrative of your performance reviews.",
+            "learnerCount": "8,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "promoted",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "office-politics",
+            "name": "Навигация в офисной политике",
+            "difficulty": "Средний",
+            "time": "5 уроков · 2 ч",
+            "description": "Разбирайтесь в динамике офиса спокойно — защищайте себя, находите союзников и создавайте условия для роста.",
+            "skills": [
+              "Политическая осознанность",
+              "Влияние",
+              "Построение альянсов"
+            ],
+            "transformation": "You'll turn workplace politics from a threat into a tool.",
+            "learnerCount": "5,200",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          },
+          {
+            "id": "career-visibility",
+            "name": "Видимость в карьере",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Перестаньте быть «секретом» компании. Учитесь быть заметным, получать заслуги и претендовать на большее.",
+            "skills": [
+              "Стратегическая видимость",
+              "Самопродвижение",
+              "Демонстрация вклада"
+            ],
+            "transformation": "The right people will know your name and your value.",
+            "isNew": true,
+            "learnerCount": "4,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "promoted"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "leadership",
+        "label": "Лидерство",
+        "tagline": "Ведите команды, влияйте на результаты и создавайте долгий эффект",
+        "colour": "sw-coral",
+        "bgLight": "bg-sw-coral/10",
+        "textColour": "text-sw-coral",
+        "borderColour": "border-sw-coral/30",
+        "filter": "lead",
+        "courses": [
+          {
+            "id": "leading-first-team",
+            "name": "Руководство первой командой",
+            "difficulty": "Начальный",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Пройдите путь от исполнителя к лидеру команды — с доверием и уверенностью с первого дня.",
+            "skills": [
+              "Управление людьми",
+              "Динамика команды",
+              "Уверенность нового лидера"
+            ],
+            "transformation": "You'll lead with calm authority and earn your team's respect from the start.",
+            "learnerCount": "9,600",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "art-of-delegation",
+            "name": "Искусство делегирования",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Перестаньте делать всё сами. Делегируйте ясно и уверенно — для работы большей ценности.",
+            "skills": [
+              "Делегирование",
+              "Построение доверия",
+              "Управление результатом"
+            ],
+            "transformation": "You'll multiply your impact through the people around you.",
+            "learnerCount": "5,800",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "conflict-resolution",
+            "name": "Разрешение конфликтов на работе",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Решайте конфликты спокойно и конструктивно — превращая трение в движение вперёд.",
+            "skills": [
+              "Управление конфликтами",
+              "Медиация",
+              "Сложные разговоры"
+            ],
+            "transformation": "You'll turn conflict situations into trust-building moments.",
+            "learnerCount": "7,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead",
+              "communicate"
+            ]
+          },
+          {
+            "id": "coaching-your-team",
+            "name": "Коучинг команды",
+            "difficulty": "Средний",
+            "time": "5 уроков · 2.5 ч",
+            "description": "Развивайте коучинг, раскрывающий потенциал команды и культуру, в которой хотят работать.",
+            "skills": [
+              "Коучинговые фреймворки",
+              "Мотивация команд",
+              "Разговоры о результатах"
+            ],
+            "transformation": "You'll be the kind of leader people fight to work for.",
+            "learnerCount": "4,900",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "decision-making",
+            "name": "Принятие решений под давлением",
+            "difficulty": "Средний",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Принимайте быстрые точные решения в неопределённости — без сожалений после.",
+            "skills": [
+              "Фреймворки решений",
+              "Оценка рисков",
+              "Ментальная ясность"
+            ],
+            "transformation": "You'll be known as someone who makes the right call, fast.",
+            "learnerCount": "4,400",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "lead"
+            ]
+          },
+          {
+            "id": "leading-with-influence",
+            "name": "Лидерство через влияние",
+            "difficulty": "Продвинутый",
+            "time": "6 уроков · 3 ч",
+            "description": "Ведите без опоры только на должность. Учитесь у лидеров, чьё влияние реально двигает дела.",
+            "skills": [
+              "Влияние",
+              "Убеждение",
+              "Лидерство без полномочий"
+            ],
+            "transformation": "You'll get buy-in from anyone — regardless of hierarchy.",
+            "learnerCount": "3,700",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "all",
+              "lead",
+              "promoted"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "label": "Коммуникация",
+        "tagline": "Говорите, пишите и презентуйте так, чтобы люди действовали",
+        "colour": "sw-teal",
+        "bgLight": "bg-sw-teal/10",
+        "textColour": "text-sw-teal",
+        "borderColour": "border-sw-teal/30",
+        "filter": "communicate",
+        "courses": [
+          {
+            "id": "public-speaking",
+            "name": "Уверенность в публичных выступлениях",
+            "difficulty": "Все уровни",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Измените отношение к выступлениям — от тревоги к суперсиле профессионала.",
+            "skills": [
+              "Уверенность в речи",
+              "Голос и подача",
+              "Работа с волнением"
+            ],
+            "transformation": "You'll love being asked to present — and people will love watching you.",
+            "learnerCount": "13,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "confidence"
+            ]
+          },
+          {
+            "id": "presentation-mastery",
+            "name": "Мастерство презентаций",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Создавайте презентации, которые убеждают и вдохновляют — со структурой, историей и дизайном.",
+            "skills": [
+              "Дизайн презентаций",
+              "Структура storytelling",
+              "Вовлечение аудитории"
+            ],
+            "transformation": "Your presentations will be the ones people remember and act on.",
+            "learnerCount": "8,600",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "negotiation-playbook",
+            "name": "Плейбук переговоров",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Освойте переговоры топ-профессионалов — в зарплате, контрактах и ежедневных решениях.",
+            "skills": [
+              "Тактики переговоров",
+              "Артикуляция ценности",
+              "Фрейм win-win"
+            ],
+            "transformation": "You'll negotiate confidently and consistently get what you deserve.",
+            "learnerCount": "7,400",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "earn-more"
+            ]
+          },
+          {
+            "id": "business-storytelling",
+            "name": "Бизнес-сторителлинг",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Рассказывайте истории, которые закрепляют идеи и делают вас убедительным коммуникатором.",
+            "skills": [
+              "Нарративная структура",
+              "Убеждение",
+              "Эмоциональное вовлечение"
+            ],
+            "transformation": "Your ideas will get funded, backed and remembered.",
+            "learnerCount": "5,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "business-writing",
+            "name": "Деловое письмо и email",
+            "difficulty": "Начальный",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Пишите точно и ясно — чтобы каждое сообщение отражало ваш профессионализм.",
+            "skills": [
+              "Чёткое письмо",
+              "Стратегия email",
+              "Профессиональный тон"
+            ],
+            "transformation": "Your written communication will build your reputation, not damage it.",
+            "learnerCount": "6,300",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "communicate"
+            ]
+          },
+          {
+            "id": "difficult-conversations",
+            "name": "Сложные разговоры",
+            "difficulty": "Средний",
+            "time": "5 уроков · 2 ч",
+            "description": "Ведите разговоры, которых избегают — о результатах, зарплате, разногласиях — спокойно и честно.",
+            "skills": [
+              "Эмоциональная регуляция",
+              "Прямота",
+              "Активное слушание"
+            ],
+            "transformation": "You'll handle any difficult conversation without it derailing relationships.",
+            "learnerCount": "8,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "communicate",
+              "lead"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "future-skills",
+        "label": "Навыки будущего",
+        "tagline": "Оставайтесь впереди и станьте незаменимым",
+        "colour": "sw-emerald",
+        "bgLight": "bg-sw-emerald/10",
+        "textColour": "text-sw-emerald",
+        "borderColour": "border-sw-emerald/30",
+        "filter": "future-proof",
+        "courses": [
+          {
+            "id": "ai-productivity-toolkit",
+            "name": "Набор продуктивности с ИИ",
+            "difficulty": "Начальный",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Используйте новейшие ИИ-инструменты для скорости, качества и высвобождения ума для важного.",
+            "skills": [
+              "Инструменты ИИ",
+              "Написание промптов",
+              "Интеграция в рабочие процессы"
+            ],
+            "transformation": "You'll do in 2 hours what used to take a full day.",
+            "learnerCount": "18,400",
+            "rating": "4.9",
+            "isNew": true,
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "ai-for-office",
+            "name": "ИИ для офисной работы",
+            "difficulty": "Начальный",
+            "time": "5 уроков · 2 ч",
+            "description": "Практические навыки ИИ для нетехнических специалистов — автоматизация, лучшие тексты и быстрее думать.",
+            "skills": [
+              "ChatGPT",
+              "Основы автоматизации",
+              "Письмо с ИИ"
+            ],
+            "transformation": "You'll be the person in your team who knows how to use AI effectively.",
+            "learnerCount": "14,200",
+            "rating": "4.8",
+            "isNew": true,
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "digital-skills-accelerator",
+            "name": "Ускоритель цифровых навыков",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Освойте цифровые навыки современного профессионала — от данных до инструментов.",
+            "skills": [
+              "Грамотность в данных",
+              "Цифровые инструменты",
+              "Уверенность в технологиях"
+            ],
+            "transformation": "You'll be fluent in the digital skills your workplace demands.",
+            "learnerCount": "7,600",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "workflow-automation",
+            "name": "Автоматизация рабочих процессов",
+            "difficulty": "Средний",
+            "time": "5 уроков · 2 ч",
+            "description": "Автоматизируйте задачи, съедающие время, no-code инструментами — для работы, которая создаёт ценность.",
+            "skills": [
+              "No-code автоматизация",
+              "Дизайн процессов",
+              "Интеграция инструментов"
+            ],
+            "transformation": "You'll eliminate hours of repetitive work every single week.",
+            "learnerCount": "5,400",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "future-proof"
+            ]
+          },
+          {
+            "id": "critical-thinking",
+            "name": "Критическое мышление для профессионалов",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Думайте яснее, проверяйте допущения и находите инсайты для лучших решений на работе.",
+            "skills": [
+              "Аналитическое мышление",
+              "Логические рассуждения",
+              "Формулировка проблем"
+            ],
+            "transformation": "You'll be known as the person who sees what others miss.",
+            "learnerCount": "6,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "future-proof",
+              "lead"
+            ]
+          },
+          {
+            "id": "problem-solving-frameworks",
+            "name": "Фреймворки решения проблем",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Применяйте структурированное мышление консультантов и руководителей для сложных задач.",
+            "skills": [
+              "Фреймворки",
+              "Анализ первопричин",
+              "Творческие решения"
+            ],
+            "transformation": "Complex problems will become opportunities to demonstrate your thinking.",
+            "learnerCount": "4,700",
+            "rating": "4.7",
+            "filters": [
+              "all",
+              "future-proof",
+              "lead"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "career-confidence",
+        "label": "Уверенность в карьере",
+        "tagline": "Выстройте внутреннюю игру, которая делает возможным всё остальное",
+        "colour": "sw-amber",
+        "bgLight": "bg-sw-amber/10",
+        "textColour": "text-sw-amber",
+        "borderColour": "border-sw-amber/30",
+        "filter": "confidence",
+        "courses": [
+          {
+            "id": "building-confidence",
+            "name": "Непоколебимая уверенность",
+            "difficulty": "Все уровни",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Развивайте уверенность, не зависящую от внешней оценки — чтобы быть лучшим под давлением.",
+            "skills": [
+              "Вера в себя",
+              "Привычки уверенности",
+              "Внутренняя сила"
+            ],
+            "transformation": "You'll back yourself in every professional situation.",
+            "learnerCount": "14,800",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "imposter-syndrome",
+            "name": "Победа над синдромом самозванца",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Перестаньте ждать, что вас «раскроют». Поймите синдром самозванца и снимите его власть.",
+            "skills": [
+              "Самоосознанность",
+              "Когнитивное переосмысление",
+              "Работа с идентичностью"
+            ],
+            "transformation": "You'll feel like you belong in every room you walk into.",
+            "learnerCount": "19,200",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "professional-resilience",
+            "name": "Профессиональная устойчивость",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Укрепляйте ментальную силу, чтобы восстанавливаться после неудач и критики.",
+            "skills": [
+              "Построение устойчивости",
+              "Эмоциональная регуляция",
+              "Мышление восстановления"
+            ],
+            "transformation": "Setbacks will make you stronger, not derail you.",
+            "learnerCount": "8,300",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "emotional-intelligence",
+            "name": "Эмоциональный интеллект на работе",
+            "difficulty": "Все уровни",
+            "time": "6 уроков · 2.5 ч",
+            "description": "Развивайте EQ, отличающий хороших профессионалов от выдающихся — и меняющий опыт работы с вами.",
+            "skills": [
+              "Самоосознанность",
+              "Эмпатия",
+              "Управление отношениями"
+            ],
+            "transformation": "People will actively want to work with and for you.",
+            "learnerCount": "10,700",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence",
+              "lead"
+            ]
+          },
+          {
+            "id": "stress-management",
+            "name": "Управление стрессом для профессионалов",
+            "difficulty": "Все уровни",
+            "time": "5 уроков · 2 ч",
+            "description": "Управляйте давлением, берегите энергию и показывайте лучший результат в самые напряжённые периоды.",
+            "skills": [
+              "Регуляция стресса",
+              "Управление энергией",
+              "Инструменты под давлением"
+            ],
+            "transformation": "You'll perform at your peak when everyone else is struggling.",
+            "learnerCount": "9,100",
+            "rating": "4.8",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          },
+          {
+            "id": "bouncing-back",
+            "name": "Восстановление сильнее",
+            "difficulty": "Все уровни",
+            "time": "4 уроков · 1.5 ч",
+            "description": "Превратите карьерные неудачи в топливо для следующей главы — с планом и ясностью.",
+            "skills": [
+              "Восстановление после неудачи",
+              "Перспектива",
+              "Восстановление импульса"
+            ],
+            "transformation": "Your biggest setback will become your greatest turning point.",
+            "isNew": true,
+            "learnerCount": "3,900",
+            "rating": "4.9",
+            "filters": [
+              "all",
+              "confidence"
+            ]
+          }
+        ]
+      }
+    ],
+    "heroCourseCount": 36
+  },
+  "business": {
+    "path": "/app/business",
+    "template": "path-catalog-B",
+    "h1": "Бизнес",
+    "tagline": "Запускайте, развивайте и масштабируйте бизнес — от идеи до устойчивого дохода",
+    "liveSlugs": [
+      "entrepreneurial-mindset",
+      "find-your-profitable-idea",
+      "customer-research-validation",
+      "design-your-business-model",
+      "build-test-your-mvp",
+      "create-irresistible-offer",
+      "pricing-monetisation-mastery",
+      "positioning-marketing-acquisition",
+      "sales-persuasion-negotiation",
+      "execution-founder-productivity",
+      "systems-delegation-operations",
+      "leadership-scaling-building-value"
+    ],
+    "comingSoonCards": [
+      {
+        "name": "Найдите бизнес-идею",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Проверьте идею до создания",
+        "difficulty": "Начальный",
+        "time": "4 уроков · 1.5 ч"
+      },
+      {
+        "name": "Запустите подработку",
+        "difficulty": "Начальный",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Первые 10 клиентов",
+        "difficulty": "Все уровни",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Соцсети для бизнеса",
+        "difficulty": "Начальный",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Основы email-маркетинга",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Продажи без навязчивости",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Мастер-класс ценовой стратегии",
+        "difficulty": "Средний",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Найм первой команды",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Системы и автоматизация",
+        "difficulty": "Средний",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Финансовый менеджмент для основателей",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Создайте личный бренд",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Двигатель контент-маркетинга",
+        "difficulty": "Все уровни",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Свобода фриланса",
+        "difficulty": "Начальный",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Создание цифровых продуктов",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Потоки пассивного дохода",
+        "difficulty": "Средний",
+        "time": "5 уроков · 2 ч"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "start",
+        "label": "🟢 Старт",
+        "title": "Старт",
+        "subtitle": "Проверьте идею, напишите план и совершите первую продажу.",
+        "colour": "text-emerald-700",
+        "bgLight": "bg-emerald-50",
+        "border": "border-emerald-200",
+        "dot": "bg-emerald-500"
+      },
+      {
+        "id": "grow",
+        "label": "🔵 Рост",
+        "title": "Рост",
+        "subtitle": "Привлекайте больше клиентов и укрепляйте бренд.",
+        "colour": "text-sw-blue",
+        "bgLight": "bg-sw-blue-light",
+        "border": "border-sw-blue-border",
+        "dot": "bg-sw-blue"
+      },
+      {
+        "id": "sell",
+        "label": "🔴 Продажи",
+        "title": "Продажи",
+        "subtitle": "Создавайте офферы, закрывайте уверенно и растите выручку.",
+        "colour": "text-red-700",
+        "bgLight": "bg-red-50",
+        "border": "border-red-200",
+        "dot": "bg-red-500"
+      },
+      {
+        "id": "scale",
+        "label": "⚡ Масштаб",
+        "title": "Масштаб",
+        "subtitle": "Автоматизируйте, нанимайте и стройте системы роста без вас.",
+        "colour": "text-amber-700",
+        "bgLight": "bg-amber-50",
+        "border": "border-amber-200",
+        "dot": "bg-sw-amber"
+      },
+      {
+        "id": "operate",
+        "label": "🟡 Операции",
+        "title": "Операции",
+        "subtitle": "Ведите бизнес с фокусом, ясностью и эффективностью.",
+        "colour": "text-teal-700",
+        "bgLight": "bg-teal-50",
+        "border": "border-teal-200",
+        "dot": "bg-sw-teal"
+      },
+      {
+        "id": "monetise",
+        "label": "💜 Монетизация",
+        "title": "Монетизация",
+        "subtitle": "Создавайте масштабируемые доходы помимо клиентской работы.",
+        "colour": "text-purple-700",
+        "bgLight": "bg-purple-50",
+        "border": "border-purple-200",
+        "dot": "bg-sw-purple"
+      }
+    ],
+    "heroCourseCount": 40
+  },
+  "health": {
+    "path": "/app/health",
+    "template": "path-catalog-A",
+    "h1": "Здоровье",
+    "tagline": "Оптимизируйте сон, питание, фитнес и ментальное благополучие — по одному микро-уроку за раз.",
+    "liveSlugs": [
+      "better-sleep",
+      "living-longer",
+      "how-the-body-ages",
+      "everyday-movement",
+      "strength-fitness",
+      "eat-well-live-well",
+      "your-metabolic-health",
+      "managing-stress-resilience",
+      "brain-health-memory"
+    ],
+    "comingSoonCards": [
+      {
+        "id": "habits-challenge",
+        "title": "28-дневный челлендж здоровых привычек",
+        "badge": "Самый популярный",
+        "badgeBg": "bg-teal-600/20",
+        "badgeText": "text-teal-100",
+        "description": "Формируйте простые ежедневные привычки для здоровья, энергии и благополучия — маленькими шагами за 28 дней.",
+        "difficulty": "Начальный",
+        "time": "28 дн. · 10 мин/день",
+        "outcomes": [
+          "Устойчивая ежедневная привычка для здоровья",
+          "Больше энергии и лучшее настроение за 2 недели",
+          "Персональная wellness-рутина, которая вам нравится"
+        ],
+        "rating": "4.9",
+        "learnerCount": "17,800",
+        "headerGradient": "from-[#070e12] to-[#0d9488]"
+      },
+      {
+        "id": "sleep-optimisation",
+        "title": "Ускоритель оптимизации сна",
+        "badge": "Выбор редакции",
+        "badgeBg": "bg-indigo-600/20",
+        "badgeText": "text-indigo-100",
+        "description": "Освойте научные стратегии для качественного сна и бодрого пробуждения.",
+        "difficulty": "Все уровни",
+        "time": "3 нед. · 10 мин/день",
+        "outcomes": [
+          "Спокойный вечерний ритуал, настраивающий на сон",
+          "Пробуждение с естественной энергией — без тяжести",
+          "Спальня, настроенная на глубокий отдых"
+        ],
+        "rating": "4.9",
+        "learnerCount": "14,200",
+        "headerGradient": "from-[#0f0a2e] to-[#4338ca]"
+      },
+      {
+        "id": "energy-accelerator",
+        "title": "Ускоритель энергии",
+        "badge": "В тренде",
+        "badgeBg": "bg-amber-600/20",
+        "badgeText": "text-amber-100",
+        "description": "Практичные способы больше энергии без кофеина, силы воли и быстрых костылей.",
+        "difficulty": "Все уровни",
+        "time": "3 нед. · 10 мин/день",
+        "outcomes": [
+          "Стабильная естественная энергия весь день",
+          "Меньше зависимости от кофеина и стимуляторов",
+          "Персональная стратегия управления энергией"
+        ],
+        "rating": "4.8",
+        "learnerCount": "12,600",
+        "headerGradient": "from-[#1a0a00] to-[#d97706]"
+      },
+      {
+        "id": "stress-resilience",
+        "title": "Мастер-класс стресс и устойчивость",
+        "badge": "Благополучие",
+        "badgeBg": "bg-rose-600/20",
+        "badgeText": "text-rose-100",
+        "description": "Снижайте стресс, укрепляйте устойчивость и эмоциональное благополучие ежедневными практиками.",
+        "difficulty": "Все уровни",
+        "time": "4 нед. · 10 мин/день",
+        "outcomes": [
+          "Ежедневная практика снижения стресса, на которую можно опереться",
+          "Больше эмоциональной устойчивости в трудные моменты",
+          "Инструменты, чтобы чувствовать спокойствие и контроль"
+        ],
+        "rating": "4.9",
+        "learnerCount": "11,400",
+        "headerGradient": "from-[#1a0510] to-[#e11d48]"
+      },
+      {
+        "id": "mental-clarity",
+        "title": "Ментальная ясность и фокус",
+        "badge": "Здоровье мозга",
+        "badgeBg": "bg-teal-600/20",
+        "badgeText": "text-teal-100",
+        "description": "Улучшайте концентрацию, когнитивные функции и ясность ума научно обоснованными привычками.",
+        "difficulty": "Все уровни",
+        "time": "3 нед. · 10 мин/день",
+        "outcomes": [
+          "Острее фокус и меньше ментального тумана",
+          "Ежедневные привычки для здоровья мозга",
+          "Утренняя рутина для когнитивной эффективности"
+        ],
+        "rating": "4.8",
+        "learnerCount": "9,800",
+        "headerGradient": "from-[#042f2e] to-[#0d9488]"
+      }
+    ],
+    "browseBySection": [
+      {
+        "id": "sleep",
+        "label": "🌙 Сон",
+        "title": "Сон",
+        "subtitle": "Лучше отдыхайте, просыпайтесь бодрыми и полностью восстанавливайтесь.",
+        "colour": "text-indigo-700",
+        "bgLight": "bg-indigo-50",
+        "border": "border-indigo-200",
+        "dot": "bg-indigo-500",
+        "courses": []
+      },
+      {
+        "id": "nutrition",
+        "label": "🥦 Питание",
+        "title": "Питание",
+        "subtitle": "Постройте более здоровые и простые отношения с едой.",
+        "colour": "text-sw-emerald",
+        "bgLight": "bg-emerald-50",
+        "border": "border-emerald-200",
+        "dot": "bg-sw-emerald",
+        "courses": []
+      },
+      {
+        "id": "fitness",
+        "label": "💪 Фитнес",
+        "title": "Фитнес",
+        "subtitle": "Формируйте привычки движения под реальную жизнь.",
+        "colour": "text-sw-coral",
+        "bgLight": "bg-orange-50",
+        "border": "border-orange-200",
+        "dot": "bg-sw-coral",
+        "courses": []
+      },
+      {
+        "id": "mental-wellbeing",
+        "label": "🧘 Ментальное благополучие",
+        "title": "Ментальное благополучие",
+        "subtitle": "Снижайте стресс, укрепляйте устойчивость и находите покой.",
+        "colour": "text-purple-700",
+        "bgLight": "bg-purple-50",
+        "border": "border-purple-200",
+        "dot": "bg-sw-purple",
+        "courses": []
+      },
+      {
+        "id": "energy-focus",
+        "label": "⚡ Энергия и фокус",
+        "title": "Энергия и фокус",
+        "subtitle": "Улучшайте ежедневную энергию и ментальную ясность.",
+        "colour": "text-amber-700",
+        "bgLight": "bg-amber-50",
+        "border": "border-amber-200",
+        "dot": "bg-sw-amber",
+        "courses": []
+      },
+      {
+        "id": "healthy-living",
+        "label": "🌿 Здоровый образ жизни",
+        "title": "Здоровый образ жизни",
+        "subtitle": "Устойчивые рутины для долгосрочного благополучия.",
+        "colour": "text-teal-700",
+        "bgLight": "bg-teal-50",
+        "border": "border-teal-200",
+        "dot": "bg-sw-teal",
+        "courses": []
+      }
+    ],
+    "heroCourseCount": 36
+  },
+  "financial-wellbeing": {
+    "path": "/app/financial-wellbeing",
+    "template": "path-catalog-C",
+    "h1": "Финансовое благополучие",
+    "tagline": "Освойте денежное мышление, реальные привычки и устойчивую финансовую уверенность",
+    "heroEmoji": "💰",
+    "heroGradient": "from-amber-400 to-amber-600",
+    "courseCountLabel": "16 курсов",
+    "emptyCopy": {
+      "title": "Вы ещё не начали курсы",
+      "sub": "Курсы в этой категории скоро появятся!"
+    },
+    "liveSlugs": [],
+    "comingSoonStrip": [
+      {
+        "name": "Ваша денежная история",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Бюджет для реальной жизни",
+        "difficulty": "Начальный",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Стратегия свободы от долгов",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Создание резервного фонда",
+        "difficulty": "Начальный",
+        "time": "4 уроков · 1.5 ч"
+      },
+      {
+        "name": "Инвестиции для начинающих",
+        "difficulty": "Начальный",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Основы пассивного дохода",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Ускоритель финансовой уверенности",
+        "difficulty": "Все уровни",
+        "time": "7 уроков · 3 ч"
+      },
+      {
+        "name": "Система денежных привычек",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Мастер-класс «Зарабатывайте больше»",
+        "difficulty": "Средний",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "Мышление изобилия: деньги",
+        "difficulty": "Все уровни",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Основы пенсионного планирования",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Умные привычки трат",
+        "difficulty": "Начальный",
+        "time": "4 уроков · 1.5 ч"
+      },
+      {
+        "name": "Стратегии дополнительного дохода",
+        "difficulty": "Все уровни",
+        "time": "6 уроков · 2.5 ч"
+      },
+      {
+        "name": "План финансовых целей",
+        "difficulty": "Начальный",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Ведите переговоры выгоднее",
+        "difficulty": "Средний",
+        "time": "5 уроков · 2 ч"
+      },
+      {
+        "name": "Деньги и отношения",
+        "difficulty": "Все уровни",
+        "time": "5 уроков · 2 ч"
+      }
+    ],
+    "comingSoon": [
+      {
+        "id": "confidence-accelerator",
+        "title": "Ускоритель финансовой уверенности",
+        "description": "Самый быстрый путь от денежной тревоги к ясности. Уверенность, разрыв паттернов, контроль.",
+        "lessons": 21,
+        "weeks": 4,
+        "emoji": "🚀",
+        "gradient": "from-amber-500 to-yellow-400",
+        "featured": true
+      },
+      {
+        "id": "money-habits",
+        "title": "Система денежных привычек",
+        "description": "Замените вредные финансовые привычки автоматическими, которые копят богатство без силы воли.",
+        "lessons": 18,
+        "weeks": 3,
+        "emoji": "🔄",
+        "gradient": "from-green-500 to-emerald-400",
+        "featured": false
+      },
+      {
+        "id": "earn-more",
+        "title": "Мастер-класс «Зарабатывайте больше»",
+        "description": "Практики роста дохода — переговоры о зарплате, подработка и раскрытие потенциала заработка.",
+        "lessons": 16,
+        "weeks": 3,
+        "emoji": "💼",
+        "gradient": "from-sw-blue to-cyan-400",
+        "featured": false
+      },
+      {
+        "id": "abundance-mindset",
+        "title": "Мышление изобилия: деньги",
+        "description": "Перестройте отношения с деньгами у корня. От дефицита к идентичности изобилия, притягивающей возможности.",
+        "lessons": 14,
+        "weeks": 2,
+        "emoji": "✨",
+        "gradient": "from-purple-500 to-violet-400",
+        "featured": false
+      },
+      {
+        "id": "budgeting-real-life",
+        "title": "Бюджет для реальной жизни",
+        "description": "Бюджет без стыда, который реально работает для занятых людей с реальными расходами и эмоциями.",
+        "lessons": 12,
+        "weeks": 2,
+        "emoji": "📊",
+        "gradient": "from-teal-500 to-cyan-400",
+        "featured": false
+      },
+      {
+        "id": "your-money-story",
+        "title": "Ваша денежная история",
+        "description": "Поймите, откуда ваши денежные убеждения — и перепишите историю в свою пользу.",
+        "lessons": 10,
+        "weeks": 2,
+        "emoji": "📖",
+        "gradient": "from-rose-500 to-pink-400",
+        "featured": false
+      },
+      {
+        "id": "freedom-blueprint",
+        "title": "План финансовой свободы",
+        "description": "Пошаговый маршрут от текущей точки к финансовой независимости — с управляемыми этапами.",
+        "lessons": 24,
+        "weeks": 5,
+        "emoji": "🗺️",
+        "gradient": "from-orange-500 to-amber-400",
+        "featured": false
+      }
+    ],
+    "note": "App catalog (financial-wellbeing-BOes51jq.js) shows 16 locked name/difficulty/time cards (comingSoonStrip) + browse sections from financial-wellbeing-courses-IFxSrlor.js. The featured 7 in comingSoon are the marketing library featured list (same chunk export F), not the app Coming Soon strip. No live lesson chunks.",
+    "heroCourseCount": 16,
+    "browseBySection": [
+      {
+        "id": "know-your-money-mind",
+        "label": "Познайте своё денежное мышление",
+        "tagline": "Поймите убеждения, эмоции и паттерны вокруг денег"
+      },
+      {
+        "id": "build-better-money-habits",
+        "label": "Выстройте лучшие денежные привычки",
+        "tagline": "Маленькие ежедневные действия, которые превращаются в финансовую трансформацию"
+      },
+      {
+        "id": "earn-more-keep-more",
+        "label": "Зарабатывайте больше, сохраняйте больше",
+        "tagline": "Практичные стратегии роста дохода и сохранения заработанного"
+      },
+      {
+        "id": "financial-foundations",
+        "label": "Финансовые основы",
+        "tagline": "Знания и уверенность для умных решений о деньгах"
+      }
+    ]
+  }
+}

@@ -1,18 +1,16 @@
 import { useState } from 'react'
 import { Check } from 'lucide-react'
+import { claudeQuizUiCopy } from '@/funnels/claude/i18n/claudeQuizUiCopy'
+import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
 interface ClaudeEmailScreenProps {
   onSubmit: (email: string, consent: boolean) => Promise<void> | void
 }
 
-const FEATURES = [
-  { icon: '📅', text: '28-day path' },
-  { icon: '🎯', text: 'Personal plan' },
-  { icon: '🏆', text: 'Exclusive access' },
-]
-
 /** Port of `y()` (`EmailScreen-*.js`, `variant="ai"`) — consent checkbox + UNLOCK MY PLAN CTA. */
 export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) {
+  const { locale } = useI18n()
+  const copy = claudeQuizUiCopy(locale).email
   const [email, setEmail] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -21,7 +19,7 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
   const handleSubmit = async () => {
     const trimmed = email.trim().toLowerCase()
     if (!trimmed || !trimmed.includes('@') || !trimmed.includes('.')) {
-      setError('Please enter a valid email address')
+      setError(copy.invalidEmail)
       return
     }
     setError('')
@@ -29,7 +27,7 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
     try {
       await onSubmit(trimmed, consent)
     } catch {
-      setError('Something went wrong. Please try again.')
+      setError(copy.submitError)
       setSubmitting(false)
     }
   }
@@ -39,18 +37,14 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
       <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-6 pb-32 animate-fade-up">
         <div className="mb-4 flex justify-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-sw-success/20 bg-sw-success-light px-3 py-1.5 text-xs font-bold text-sw-success">
-            ✓ Your plan is ready
+            {copy.planReady}
           </span>
         </div>
-        <h1 className="mb-2 text-center text-[1.75rem] leading-tight font-extrabold text-sw-dark sm:text-4xl">
-          Enter your email to get your
-        </h1>
-        <p className="mb-4 text-center text-[1.75rem] leading-tight font-extrabold text-sw-blue sm:text-4xl">
-          Personal AI Plan!
-        </p>
+        <h1 className="mb-2 text-center text-[1.75rem] leading-tight font-extrabold text-sw-dark sm:text-4xl">{copy.title}</h1>
+        <p className="mb-4 text-center text-[1.75rem] leading-tight font-extrabold text-sw-blue sm:text-4xl">{copy.titleHighlight}</p>
 
         <div className="mb-6 flex justify-center gap-4">
-          {FEATURES.map((f) => (
+          {copy.features.map((f) => (
             <div key={f.text} className="flex flex-col items-center gap-1">
               <span className="text-xl">{f.icon}</span>
               <span className="text-xs font-semibold text-sw-grey">{f.text}</span>
@@ -95,20 +89,17 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
           >
             {consent ? <Check className="size-3 text-sw-white" strokeWidth={2.5} /> : null}
           </span>
-          <span className="text-xs leading-relaxed text-sw-grey">
-            I&apos;d like to receive my AI plan, personal tips, and exclusive offers straight to my inbox.
-          </span>
+          <span className="text-xs leading-relaxed text-sw-grey">{copy.consent}</span>
         </label>
 
         <div className="mb-2 flex items-center gap-3 rounded-2xl border border-sw-success/20 bg-sw-success-light px-4 py-3">
           <span className="flex-shrink-0 text-2xl">🎁</span>
           <p className="text-sm leading-snug text-sw-dark">
-            Make sure your email is valid —{' '}
-            <span className="font-bold text-sw-success">don&apos;t miss your exclusive bonus!</span>
+            {copy.bonusPrefix} <span className="font-bold text-sw-success">{copy.bonusBold}</span>
           </p>
         </div>
 
-        <p className="mt-2 text-center text-xs text-sw-grey">🔒 We never share your email. Unsubscribe any time.</p>
+        <p className="mt-2 text-center text-xs text-sw-grey">{copy.privacy}</p>
       </div>
 
       <div
@@ -125,10 +116,10 @@ export default function ClaudeEmailScreen({ onSubmit }: ClaudeEmailScreenProps) 
             {submitting ? (
               <span className="flex items-center justify-center gap-2">
                 <span className="size-4 animate-spin rounded-full border-2 border-sw-white border-t-transparent" />
-                Unlocking your plan...
+                {copy.unlocking}
               </span>
             ) : (
-              'UNLOCK MY PLAN →'
+              copy.cta
             )}
           </button>
         </div>

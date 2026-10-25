@@ -135,6 +135,7 @@ upsellRoutes.get('/upsell/complete', requireAuth, async (c) => {
       reason: 'configError',
       error:
         'This offer cannot be charged yet. Continue without it for now — you can add it later, and nothing is lost.',
+      code: 'offer_not_chargeable',
     })
   }
   const userId = c.get('userId')
@@ -149,7 +150,7 @@ upsellRoutes.get('/upsell/complete', requireAuth, async (c) => {
       return c.json({ success: false, reason: 'mismatch' }, 403)
     }
     if (offerAmountCents(offerSlug) == null) {
-      return c.json({ success: false, reason: 'unknownOffer', error: 'Unknown offer.' })
+      return c.json({ success: false, reason: 'unknownOffer', error: 'Unknown offer.', code: 'unknown_offer' })
     }
     await recordPurchase(userId, offerSlug)
     await db.insert(upsellEvents).values({
@@ -173,7 +174,7 @@ upsellRoutes.get('/upsell/:slug', requireAuth, async (c) => {
 
 upsellRoutes.post('/upsell/event', requireAuth, async (c) => {
   const parsed = eventSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const [inserted] = await db
     .insert(upsellEvents)
     .values({
@@ -189,7 +190,7 @@ upsellRoutes.post('/upsell/event', requireAuth, async (c) => {
 
 upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
   const parsed = chargeSchema.safeParse(await c.req.json())
-  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
   const userId = c.get('userId')
   const offerSlug = parsed.data.offerSlug
   if (await ownsOffer(userId, offerSlug)) {
@@ -197,7 +198,7 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
   }
   const amount = offerAmountCents(offerSlug)
   if (amount == null) {
-    return c.json({ success: false, reason: 'unknownOffer', error: 'Unknown offer.' })
+    return c.json({ success: false, reason: 'unknownOffer', error: 'Unknown offer.', code: 'unknown_offer' })
   }
   if (!loadEnv().STRIPE_SECRET_KEY) {
     return c.json({
@@ -206,16 +207,22 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
       reason: 'configError',
       error:
         'This offer cannot be charged yet. Continue without it for now — you can add it later, and nothing is lost.',
+      code: 'offer_not_chargeable',
     })
   }
   const user = await loadCurrentUser(userId)
   if (!user?.email) {
-    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.' })
+    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.', code: 'no_email_on_account' })
   }
   try {
     const customerId = await ensureCustomerId(userId, user.email)
     if (!customerId) {
-      return c.json({ success: false, reason: 'configError', error: 'Could not create a billing customer.' })
+      return c.json({
+        success: false,
+        reason: 'configError',
+        error: 'Could not create a billing customer.',
+        code: 'could_not_create_billing_customer',
+      })
     }
     const paymentMethod = await cardPaymentMethodId(customerId)
     const stripe = getStripe()
@@ -272,13 +279,18 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
       cancel_url: cancelUrl,
     })
     if (!session.url) {
-      return c.json({ success: false, reason: 'stripeError', error: 'Checkout session has no URL.' })
+      return c.json({
+        success: false,
+        reason: 'stripeError',
+        error: 'Checkout session has no URL.',
+        code: 'checkout_session_no_url',
+      })
     }
     return c.json({ success: false, checkoutUrl: session.url })
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Charge failed'
     console.error('[upsell] charge failed', error)
-    return c.json({ success: false, reason: 'stripeError', error: message })
+    return c.json({ success: false, reason: 'stripeError', error: message, code: 'charge_failed' })
   }
 })
 
@@ -297,16 +309,22 @@ upsellRoutes.post('/upsell/switch-annual', requireAuth, async (c) => {
       reason: 'configError',
       error:
         'This annual upgrade is not available yet. Keep your monthly plan for now — you can switch later, and nothing is lost.',
+      code: 'annual_upgrade_unavailable',
     })
   }
   const user = await loadCurrentUser(userId)
   if (!user?.email) {
-    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.' })
+    return c.json({ success: false, reason: 'stripeError', error: 'No email on this account.', code: 'no_email_on_account' })
   }
   try {
     const customerId = await ensureCustomerId(userId, user.email)
     if (!customerId) {
-      return c.json({ success: false, reason: 'configError', error: 'Could not create a billing customer.' })
+      return c.json({
+        success: false,
+        reason: 'configError',
+        error: 'Could not create a billing customer.',
+        code: 'could_not_create_billing_customer',
+      })
     }
     const paymentMethod = await cardPaymentMethodId(customerId)
     if (!paymentMethod) {
@@ -314,6 +332,7 @@ upsellRoutes.post('/upsell/switch-annual', requireAuth, async (c) => {
         success: false,
         reason: 'noCard',
         error: 'We do not have a saved card on this account. Keep your monthly plan for now.',
+        code: 'no_saved_card',
       })
     }
     const result = await switchToAnnualPrice(userId, user.email)
@@ -333,6 +352,12 @@ upsellRoutes.post('/upsell/switch-annual', requireAuth, async (c) => {
           ? error.message
           : 'Annual switch failed'
     console.error('[upsell] switch-annual failed', error)
-    return c.json({ success: false, reason: 'stripeError', error: message })
+    const code =
+      error instanceof BillingError
+        ? error.code
+        : message === 'Annual switch failed'
+          ? 'switch_annual_failed'
+          : 'charge_failed'
+    return c.json({ success: false, reason: 'stripeError', error: message, code })
   }
 })

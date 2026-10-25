@@ -1,5 +1,16 @@
-import { getScreenById } from '@/funnels/twenty-eight-day/data/quizScreens'
+import { getScreenById, type FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
 import type { QuizAnswers, QuizProfile, QuizProfileStat, QuizRole, ScoreLabel } from '@/funnels/twenty-eight-day/types/quiz'
+import {
+  archetypeFor,
+  BLOCKER_STATS_RU,
+  GOAL_STATS_RU,
+  INCOME_STATS_RU,
+  insightFor,
+  profileStatLabels,
+  scoreLabelFor,
+  scoreToneFor,
+  STAGE_STATS_RU,
+} from '@/funnels/twenty-eight-day/lib/scoring.i18n'
 
 /**
  * Production 1:1 port of `ce` / `ue` / `de` / `me` / `R` from
@@ -85,18 +96,12 @@ export function calculateScore(answers: QuizAnswers, _role?: QuizRole | null): n
   return Math.round(((sum - 5) / 14) * 100)
 }
 
-export function getScoreLabel(score: number): ScoreLabel {
-  if (score <= 30) return 'AI Newcomer'
-  if (score <= 55) return 'AI Aware'
-  if (score <= 75) return 'AI Ready'
-  return 'AI Native'
+export function getScoreLabel(score: number, locale: FunnelLocale = 'en'): ScoreLabel | string {
+  return scoreLabelFor(score, locale) as ScoreLabel
 }
 
-function getScoreTone(score: number): string {
-  if (score <= 30) return "You're in exactly the right place — the Challenge starts from zero."
-  if (score <= 55) return "You have the foundation. Now it's time to build fast."
-  if (score <= 75) return "You're ahead of most people. Let's make that gap even bigger."
-  return 'You already get AI. Time to go further, faster.'
+function getScoreTone(score: number, locale: FunnelLocale = 'en'): string {
+  return scoreToneFor(score, locale)
 }
 
 export interface ArchetypeResult {
@@ -106,86 +111,68 @@ export interface ArchetypeResult {
 }
 
 /** Production `ue(role, answers)`. Independent of score. */
-export function getArchetype(role: QuizRole | null, answers: QuizAnswers): ArchetypeResult {
-  const skill = answers['q5-skill']
-  const experience = answers['q7-experience']
-  const goal = answers['q2-goal']
-
-  if ((skill === 'comfortable' || experience === 'builder' || experience === 'regular') && skill !== 'beginner') {
-    return { archetype: 'The AI Accelerator', archetypeEmoji: '⚡', archetypeFocus: 'Advanced AI mastery' }
-  }
-  if (role === 'business-owner' || goal === 'side-income') {
-    return { archetype: 'The Business Builder', archetypeEmoji: '💼', archetypeFocus: 'AI-powered business growth' }
-  }
-  if (goal === 'creative') {
-    return { archetype: 'The Creative Entrepreneur', archetypeEmoji: '🌟', archetypeFocus: 'AI for creative work & content' }
-  }
-  if (role === 'employee' && (goal === 'grow-role' || goal === 'switch-career')) {
-    return { archetype: 'The Ambitious Professional', archetypeEmoji: '🚀', archetypeFocus: 'Career-accelerating AI skills' }
-  }
-  return { archetype: 'The AI Newcomer', archetypeEmoji: '🎓', archetypeFocus: 'Building AI confidence from scratch' }
+export function getArchetype(role: QuizRole | null, answers: QuizAnswers, locale: FunnelLocale = 'en'): ArchetypeResult {
+  return archetypeFor(role, answers, locale)
 }
 
 /** Production `de(role, answers)`. */
-export function getInsight(role: QuizRole | null, answers: QuizAnswers): string {
-  const goal = answers['q2-goal']
-  const blocker = answers['q9-blocker']
-  const concern = answers['q12-concern']
-  const skill = answers['q5-skill']
+export function getInsight(role: QuizRole | null, answers: QuizAnswers, locale: FunnelLocale = 'en'): string {
+  return insightFor(role, answers, locale)
+}
 
-  if (concern === 'opportunity' || skill === 'comfortable') {
-    return "You already see AI as your edge. Now it's about moving faster than everyone else."
-  }
-  if (concern === 'automation' || concern === 'colleagues') {
-    return "The people who thrive through AI disruption are learning it now — that's exactly what you're doing."
-  }
-  if (goal === 'side-income' || role === 'business-owner') {
-    return "Your first AI skill could unlock a completely new income stream. Let's build it."
-  }
-  if (goal === 'creative') {
-    return "AI won't replace your creativity — it'll multiply it. Time to find out how."
-  }
-  if (blocker === 'too-complex' || blocker === 'no-start') {
-    return 'The 28-Day Challenge cuts through the noise — one clear skill, every day, no jargon.'
-  }
-  if (blocker === 'no-time') {
-    return 'Ten minutes a day is all it takes. Most learners see results by day 7.'
-  }
-  return "You're closer than you think. The 28-Day Challenge gives you the system to get there."
+function goalStatValue(id: string, locale: FunnelLocale): string {
+  return locale === 'ru' ? (GOAL_STATS_RU[id] ?? GOAL_STATS[id] ?? id) : (GOAL_STATS[id] ?? id)
+}
+
+function blockerStatValue(id: string, locale: FunnelLocale): string {
+  return locale === 'ru' ? (BLOCKER_STATS_RU[id] ?? BLOCKER_STATS[id] ?? id) : (BLOCKER_STATS[id] ?? id)
+}
+
+function incomeStatValue(id: string, locale: FunnelLocale): string {
+  return locale === 'ru' ? (INCOME_STATS_RU[id] ?? INCOME_STATS[id] ?? id) : (INCOME_STATS[id] ?? id)
+}
+
+function stageStatValue(id: string, locale: FunnelLocale): string {
+  return locale === 'ru' ? (STAGE_STATS_RU[id] ?? STAGE_STATS[id] ?? id) : (STAGE_STATS[id] ?? id)
 }
 
 /** Production `me(answers)` — display maps, not raw option labels. */
-export function getProfileStats(answers: QuizAnswers): QuizProfileStat[] {
+export function getProfileStats(answers: QuizAnswers, locale: FunnelLocale = 'en'): QuizProfileStat[] {
+  const labels = profileStatLabels(locale)
   const stats: QuizProfileStat[] = []
   if (answers['q2-goal']) {
-    stats.push({ label: 'Your #1 Goal', value: GOAL_STATS[answers['q2-goal']] ?? answers['q2-goal'] })
+    stats.push({ label: labels.goal, value: goalStatValue(answers['q2-goal'], locale) })
   }
   if (answers['q9-blocker']) {
-    stats.push({ label: 'Biggest Blocker', value: BLOCKER_STATS[answers['q9-blocker']] ?? answers['q9-blocker'] })
+    stats.push({ label: labels.blocker, value: blockerStatValue(answers['q9-blocker'], locale) })
   }
   if (answers['q16-income'] && answers['q16-income'] !== 'none') {
-    stats.push({ label: 'Income Target', value: INCOME_STATS[answers['q16-income']] ?? answers['q16-income'] })
+    stats.push({ label: labels.income, value: incomeStatValue(answers['q16-income'], locale) })
   }
   if (answers['q10-stage']) {
-    stats.push({ label: 'Career Stage', value: STAGE_STATS[answers['q10-stage']] ?? answers['q10-stage'] })
+    stats.push({ label: labels.stage, value: stageStatValue(answers['q10-stage'], locale) })
   }
   return stats.slice(0, 4)
 }
 
-function labelFor(screenId: string, answerId: string | undefined): string | null {
+function labelFor(screenId: string, answerId: string | undefined, locale: FunnelLocale = 'en'): string | null {
   if (!answerId) return null
-  if (screenId === 'q2-goal') return GOAL_STATS[answerId] ?? answerId
-  if (screenId === 'q9-blocker') return BLOCKER_STATS[answerId] ?? answerId
-  if (screenId === 'q16-income') return INCOME_STATS[answerId] ?? answerId
-  if (screenId === 'q10-stage') return STAGE_STATS[answerId] ?? answerId
-  const screen = getScreenById(screenId)
+  if (screenId === 'q2-goal') return goalStatValue(answerId, locale)
+  if (screenId === 'q9-blocker') return blockerStatValue(answerId, locale)
+  if (screenId === 'q16-income') return incomeStatValue(answerId, locale)
+  if (screenId === 'q10-stage') return stageStatValue(answerId, locale)
+  const screen = getScreenById(screenId, locale)
   if (!screen || (screen.type !== 'question' && screen.type !== 'ai-tools')) return null
   return screen.options.find((o) => o.id === answerId)?.label ?? null
 }
 
 /** Returns the display label for any question option by screen/answer id. */
-export function getAnswerLabel(screenId: string, answerId: string | undefined): string | null {
-  return labelFor(screenId, answerId)
+export function getAnswerLabel(
+  screenId: string,
+  answerId: string | undefined,
+  locale: FunnelLocale = 'en',
+): string | null {
+  return labelFor(screenId, answerId, locale)
 }
 
 export function getDominantEcho(answers: QuizAnswers): string | null {
@@ -205,18 +192,18 @@ export function getInterstitial1Variant(answers: QuizAnswers): Interstitial1Vari
 }
 
 /** Production `R(role, answers)`. */
-export function buildProfile(role: QuizRole | null, answers: QuizAnswers): QuizProfile {
+export function buildProfile(role: QuizRole | null, answers: QuizAnswers, locale: FunnelLocale = 'en'): QuizProfile {
   const score = calculateScore(answers)
-  const { archetype, archetypeEmoji, archetypeFocus } = getArchetype(role, answers)
+  const { archetype, archetypeEmoji, archetypeFocus } = getArchetype(role, answers, locale)
 
   return {
     score,
-    scoreLabel: getScoreLabel(score),
-    scoreTone: getScoreTone(score),
+    scoreLabel: scoreLabelFor(score, locale),
+    scoreTone: getScoreTone(score, locale),
     archetype,
     archetypeEmoji,
     archetypeFocus,
-    insight: getInsight(role, answers),
-    stats: getProfileStats(answers),
+    insight: getInsight(role, answers, locale),
+    stats: getProfileStats(answers, locale),
   }
 }

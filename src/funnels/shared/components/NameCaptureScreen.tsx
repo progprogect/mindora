@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import QuizStickyCta from '@/funnels/shared/components/QuizStickyCta'
 import type { NameScreenDef } from '@/funnels/shared/types'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 interface NameCaptureScreenProps {
   screen: NameScreenDef
@@ -8,6 +10,8 @@ interface NameCaptureScreenProps {
 }
 
 export default function NameCaptureScreen({ screen, onSubmit }: NameCaptureScreenProps) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   const [name, setName] = useState('')
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -29,7 +33,7 @@ export default function NameCaptureScreen({ screen, onSubmit }: NameCaptureScree
         {screen.showEmailConfirmed ? (
           <div className="mb-4 flex justify-center">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-sw-success/20 bg-sw-success-light px-3 py-1.5 text-xs font-bold text-sw-success">
-              ✓ Email confirmed
+              {ui.emailConfirmed}
             </span>
           </div>
         ) : null}

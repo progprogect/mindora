@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { MAYA_CHIPS, matchFaqAnswer } from '@/marketing/data/faq'
+import { faqCopy, matchFaqAnswer, mayaUiCopy } from '@/marketing/data/faq'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export const OPEN_MAYA_EVENT = 'successwise:open-support-chat'
 
@@ -21,6 +22,9 @@ export default function MayaChat({
   autoOpen?: boolean
   onEscalate?: (transcript: string) => void
 }) {
+  const { locale } = useI18n()
+  const ui = mayaUiCopy(locale)
+  const { mayaChips } = faqCopy(locale)
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const [input, setInput] = useState('')
@@ -37,13 +41,12 @@ export default function MayaChat({
         {
           id: 'welcome',
           role: 'assistant',
-          content:
-            "Hi! 👋 I'm Maya, your friendly AI support assistant. I can help you with billing questions, account access, refunds, cancellations, and more.\n\nWhat can I help you with today?",
+          content: ui.welcome,
           timestamp: Date.now(),
         },
       ]
     })
-  }, [])
+  }, [ui.welcome])
 
   useEffect(() => {
     if (autoOpen) openChat()
@@ -75,26 +78,24 @@ export default function MayaChat({
     setInput('')
     setBusy(true)
     await new Promise((r) => setTimeout(r, 450))
-    const matched = matchFaqAnswer(trimmed)
+    const matched = matchFaqAnswer(trimmed, locale)
     setMessages((prev) => [
       ...prev,
       {
         id: `assistant-${Date.now()}`,
         role: 'assistant',
-        content:
-          matched ??
-          "I'm sorry, I'm having trouble right now. Please try again or use the contact form below to reach our team directly.",
+        content: matched ?? ui.noMatch,
         timestamp: Date.now(),
       },
     ])
     setBusy(false)
-  }, [busy])
+  }, [busy, locale, ui.noMatch])
 
   const attachTranscript = () => {
     setAttached(true)
     const transcript = messages
       .filter((m) => m.id !== 'welcome')
-      .map((m) => `${m.role === 'user' ? 'Customer' : 'AI Assistant'}: ${m.content}`)
+      .map((m) => `${m.role === 'user' ? ui.customerLabel : ui.assistantLabel}: ${m.content}`)
       .join('\n\n')
     onEscalate?.(transcript)
   }
@@ -102,26 +103,24 @@ export default function MayaChat({
   if (!open) {
     return (
       <div className="overflow-hidden rounded-2xl border-2 border-sw-blue/25 bg-white shadow-md">
-        <button type="button" onClick={openChat} className="group w-full text-left" aria-label="Open chat with Maya">
+        <button type="button" onClick={openChat} className="group w-full text-left" aria-label={ui.openChatAria}>
           <div className="flex items-center gap-4 px-5 py-6 transition-colors hover:bg-sw-blue/[0.03] sm:px-6 sm:py-7">
             <img
               src="/assets/maya-desk.webp"
-              alt="Maya Bennett — AI Support Assistant"
+              alt={ui.deskImageAlt}
               className="h-24 w-24 flex-shrink-0 rounded-2xl object-cover shadow-sm sm:h-28 sm:w-28"
             />
             <div className="min-w-0 flex-1">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-sw-success/10 px-2.5 py-1 text-[11px] font-bold text-sw-success">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-sw-success" />
-                Online now
+                {ui.onlineNow}
               </span>
               <h3 className="mt-2 text-lg leading-tight font-extrabold text-sw-dark sm:text-2xl">
-                Chat with Maya
+                {ui.chatTitle}
               </h3>
-              <p className="mt-1 text-xs text-sw-grey sm:text-sm">
-                Your friendly AI assistant — ask anything, any time
-              </p>
+              <p className="mt-1 text-xs text-sw-grey sm:text-sm">{ui.chatSubtitle}</p>
               <span className="mt-3 inline-flex items-center gap-2 rounded-full bg-sw-blue px-4 py-2 text-xs font-bold text-white transition-colors group-hover:bg-sw-blue-hover sm:text-sm">
-                Ask Maya now
+                {ui.askNow}
                 <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                   <path
                     d="M5 3l4 4-4 4"
@@ -136,13 +135,13 @@ export default function MayaChat({
           </div>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 border-t border-sw-grey-border bg-sw-grey-light/40 px-5 py-3 text-[11px] sm:px-6 sm:text-xs">
             <span className="inline-flex items-center gap-1.5 font-bold text-sw-dark">
-              ⚡ Chat with Maya for instant support
+              ⚡ {ui.mayaBadge}
             </span>
             <span className="text-sw-grey-border" aria-hidden="true">
               |
             </span>
             <span className="inline-flex items-center gap-1.5 text-sw-grey">
-              ✉️ Email support for answers 1-3 business days
+              ✉️ {ui.emailSupport}
             </span>
           </div>
         </button>
@@ -163,13 +162,13 @@ export default function MayaChat({
         </div>
         <div className="min-w-0 flex-1">
           <h3 className="text-sm font-bold text-white">Maya Bennett</h3>
-          <p className="text-[11px] text-white/70">Your Friendly AI Assistant</p>
+          <p className="text-[11px] text-white/70">{ui.roleSubtitle}</p>
         </div>
         <button
           type="button"
           onClick={() => setOpen(false)}
           className="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-white/10"
-          aria-label="Minimize chat"
+          aria-label={ui.minimizeAria}
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 8h10" stroke="white" strokeWidth="2" strokeLinecap="round" />
@@ -210,10 +209,10 @@ export default function MayaChat({
       {messages.length === 1 && !busy ? (
         <div className="border-t border-sw-grey-border bg-white px-4 py-3">
           <p className="mb-2 text-[10px] font-medium tracking-wider text-sw-grey uppercase">
-            Common questions:
+            {ui.commonQuestions}
           </p>
           <div className="flex flex-wrap gap-1.5">
-            {MAYA_CHIPS.map((chip) => (
+            {mayaChips.map((chip) => (
               <button
                 key={chip}
                 type="button"
@@ -240,17 +239,17 @@ export default function MayaChat({
                 void reply(input)
               }
             }}
-            placeholder="Type your question..."
+            placeholder={ui.placeholder}
             disabled={busy}
             className="flex-1 rounded-xl border border-sw-grey-border px-4 py-2.5 text-sm transition-all focus:border-sw-blue focus:ring-2 focus:ring-sw-blue/30 focus:outline-none disabled:opacity-50"
-            aria-label="Type a message"
+            aria-label={ui.messageAria}
           />
           <button
             type="button"
             onClick={() => void reply(input)}
             disabled={!input.trim() || busy}
             className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-sw-blue transition-colors hover:bg-sw-blue-hover disabled:cursor-not-allowed disabled:opacity-40"
-            aria-label="Send message"
+            aria-label={ui.sendAria}
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
@@ -269,15 +268,15 @@ export default function MayaChat({
             onClick={attachTranscript}
             className="mt-2.5 w-full py-1.5 text-center text-[11px] font-medium text-sw-grey transition-colors hover:text-sw-blue"
           >
-            Maya can usually sort this in minutes — try rephrasing your question.{' '}
+            {ui.rephraseHint}{' '}
             <span className="font-semibold text-sw-blue underline underline-offset-2">
-              Pass it to a human instead →
+              {ui.passToHuman}
             </span>
           </button>
         ) : null}
         {attached ? (
           <p className="mt-2.5 text-center text-[11px] font-medium text-sw-success">
-            ✓ Transcript attached — scroll down to complete the form and we&apos;ll follow up personally.
+            {ui.transcriptAttached}
           </p>
         ) : null}
       </div>

@@ -1,0 +1,624 @@
+[
+  {
+    "id": "identity",
+    "type": "identity",
+    "totalSteps": 16,
+    "headline": "Освойте ИИ для Microsoft 365",
+    "subtext": "Вы уже использовали ИИ для Word, Excel, PowerPoint или Outlook?",
+    "options": [
+      {
+        "emoji": "✅",
+        "label": "Да",
+        "value": "yes"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Ещё нет",
+        "value": "not-yet"
+      }
+    ]
+  },
+  {
+    "id": "positive-reinforcement",
+    "type": "social-proof",
+    "totalSteps": 16,
+    "headline": "Вы впереди — большинство всё ещё делают это вручную",
+    "copy": "Знание, что ИИ может помочь, уже ставит вас впереди. Главное — применять его в приложениях, где вы уже живёте: Word, Excel, PowerPoint, Outlook и Teams — чтобы работа переходила из одного в другое, а не начиналась заново.",
+    "ctaLabel": "ПРОДОЛЖИТЬ →",
+    "echoKey": "identity",
+    "echoHeadline": {
+      "yes": "Вы впереди — большинство всё ещё делают это вручную",
+      "not-yet": "Идеальный момент — это самое большое изменение офисной работы за годы"
+    },
+    "echoCopy": {
+      "yes": "Знание, что ИИ может помочь, уже ставит вас впереди. Главное — применять его в приложениях, где вы уже живёте: Word, Excel, PowerPoint, Outlook и Teams.",
+      "not-yet": "Большинство перепечатывают одну и ту же информацию в четыре приложения. Вы узнаете, как один раз объяснить задачу ИИ и провести работу через Word, Excel, PowerPoint, Outlook и Teams."
+    }
+  },
+  {
+    "id": "q1-m365-level",
+    "type": "question",
+    "step": 1,
+    "totalSteps": 16,
+    "question": "Насколько вы уверенно чувствуете себя в Microsoft 365 в целом?",
+    "options": [
+      {
+        "emoji": "🌱",
+        "label": "Новичок — знаю основы пары приложений",
+        "value": "beginner"
+      },
+      {
+        "emoji": "🙂",
+        "label": "Средний — несколько приложений каждую неделю",
+        "value": "intermediate"
+      },
+      {
+        "emoji": "💪",
+        "label": "Продвинутый — формулы, шаблоны, общие файлы",
+        "value": "advanced"
+      },
+      {
+        "emoji": "🏆",
+        "label": "Эксперт — ко мне обращаются за помощью",
+        "value": "expert"
+      }
+    ]
+  },
+  {
+    "id": "q2-work-status",
+    "type": "question",
+    "step": 2,
+    "totalSteps": 16,
+    "question": "Какой у вас сейчас статус работы?",
+    "options": [
+      {
+        "emoji": "💼",
+        "label": "Штатный сотрудник",
+        "value": "full-time"
+      },
+      {
+        "emoji": "✍️",
+        "label": "Фрилансер / самозанятый",
+        "value": "freelancer"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Владелец бизнеса",
+        "value": "business-owner"
+      },
+      {
+        "emoji": "🔄",
+        "label": "Между работами / смена карьеры",
+        "value": "between-jobs"
+      },
+      {
+        "emoji": "🔍",
+        "label": "Изучаю варианты",
+        "value": "exploring"
+      }
+    ]
+  },
+  {
+    "id": "q3-industry",
+    "type": "question",
+    "step": 3,
+    "totalSteps": 16,
+    "question": "В какой сфере вы работаете?",
+    "options": [
+      {
+        "emoji": "💻",
+        "label": "IT и софт",
+        "value": "tech"
+      },
+      {
+        "emoji": "💳",
+        "label": "Финансы и бухучёт",
+        "value": "finance"
+      },
+      {
+        "emoji": "📣",
+        "label": "Маркетинг и продажи",
+        "value": "marketing"
+      },
+      {
+        "emoji": "🏢",
+        "label": "Консалтинг и стратегия",
+        "value": "consulting"
+      },
+      {
+        "emoji": "📋",
+        "label": "Администрирование и операции",
+        "value": "admin-ops"
+      },
+      {
+        "emoji": "🏥",
+        "label": "Здравоохранение",
+        "value": "healthcare"
+      },
+      {
+        "emoji": "🎓",
+        "label": "Образование и госсектор",
+        "value": "education"
+      },
+      {
+        "emoji": "🌐",
+        "label": "Другое",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "id": "q4-main-app",
+    "type": "question",
+    "step": 4,
+    "totalSteps": 16,
+    "question": "Какое приложение Microsoft 365 съедает больше всего времени?",
+    "options": [
+      {
+        "emoji": "📧",
+        "label": "Outlook — почта и календарь",
+        "value": "outlook"
+      },
+      {
+        "emoji": "📊",
+        "label": "Excel — данные, цифры и отчёты",
+        "value": "excel"
+      },
+      {
+        "emoji": "📄",
+        "label": "Word — документы, отчёты и предложения",
+        "value": "word"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "PowerPoint — слайды и презентации",
+        "value": "powerpoint"
+      },
+      {
+        "emoji": "👥",
+        "label": "Teams — встречи, чат и уточнения",
+        "value": "teams"
+      }
+    ]
+  },
+  {
+    "id": "q5-pain-point",
+    "type": "question",
+    "step": 5,
+    "totalSteps": 16,
+    "question": "Что больше всего раздражает в работе с Microsoft 365?",
+    "options": [
+      {
+        "emoji": "📥",
+        "label": "Почта управляет моим днём",
+        "value": "inbox"
+      },
+      {
+        "emoji": "🔁",
+        "label": "Перепечатываю одно и то же в разные приложения",
+        "value": "retyping"
+      },
+      {
+        "emoji": "🧱",
+        "label": "Пустая страница или пустой слайд",
+        "value": "blank-page"
+      },
+      {
+        "emoji": "📈",
+        "label": "Получить ясный ответ из данных",
+        "value": "data"
+      },
+      {
+        "emoji": "🗓️",
+        "label": "Встречи без последующих действий",
+        "value": "meetings"
+      },
+      {
+        "emoji": "💡",
+        "label": "Не знаю, что ИИ здесь умеет",
+        "value": "unknown"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-1",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Время уходит на перенос работы между приложениями",
+    "copy": "Большая часть офисной работы — одна и та же информация заново: таблица становится слайдом, слайд — письмом, встреча — документом, который никто не читает. ИИ полезнее всего именно здесь — провести одну хорошо сформулированную задачу из приложения в приложение.",
+    "ctaLabel": "ПРОДОЛЖАТЬ →",
+    "echoKey": "q5-pain-point",
+    "echoHeadline": {
+      "inbox": "Почта может перестать задавать ваш день",
+      "retyping": "Перепечатывание — то, что ИИ убирает первым",
+      "blank-page": "Пустая страница — самая простая проблема здесь",
+      "data": "Вы быстрее доберётесь до ответа в данных",
+      "meetings": "Встреча может закончиться планом с датами",
+      "unknown": "Вы сейчас увидите, что реально возможно"
+    },
+    "echoCopy": {
+      "inbox": "Вы узнаете, как сжать длинную переписку до решений, открытых вопросов и черновика ответа — и проверить его перед отправкой.",
+      "retyping": "Вы узнаете, как один раз объяснить задачу ИИ и провести работу через Word, Excel, PowerPoint и Outlook без трёх переписываний.",
+      "blank-page": "Вы узнаете, как из черновых заметок получить рабочую структуру в Word или PowerPoint.",
+      "data": "Вы узнаете, как задать таблице вопрос по-русски и проверить цифру в файле, прежде чем кому-то её сказать.",
+      "meetings": "Вы узнаете, как готовиться к встрече, фиксировать договорённости и превращать их в ответственных и даты.",
+      "unknown": "Большинство не видели, как ИИ меняет документ, объясняет формулу, чертит план деки, сжимает переписку и готовит бриф к встрече. Это весь курс."
+    }
+  },
+  {
+    "id": "q6-tasks",
+    "type": "question",
+    "step": 6,
+    "totalSteps": 16,
+    "question": "Что вы отдали бы ИИ в первую очередь?",
+    "subtext": "Выберите то, что важнее всего сейчас",
+    "options": [
+      {
+        "emoji": "📧",
+        "label": "Читать и отвечать на почту",
+        "value": "email"
+      },
+      {
+        "emoji": "📄",
+        "label": "Писать и перестраивать документы",
+        "value": "documents"
+      },
+      {
+        "emoji": "📊",
+        "label": "Анализировать данные и формулы",
+        "value": "analysis"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "Собирать слайды и презентации",
+        "value": "slides"
+      },
+      {
+        "emoji": "🗓️",
+        "label": "Подготовка к встречам, заметки и повторные письма",
+        "value": "meetings"
+      },
+      {
+        "emoji": "🔗",
+        "label": "Собрать всё в один повторяемый процесс",
+        "value": "workflow"
+      }
+    ]
+  },
+  {
+    "id": "q7-time-wasted",
+    "type": "question",
+    "step": 7,
+    "totalSteps": 16,
+    "question": "Сколько часов в неделю уходит на работу, с которой мог бы помочь ИИ?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "1–3 часа",
+        "value": "1-3"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "3–5 часов",
+        "value": "3-5"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "5–10 часов",
+        "value": "5-10"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "10+ часов — да, больно",
+        "value": "10-plus"
+      }
+    ]
+  },
+  {
+    "id": "q8-learning",
+    "type": "question",
+    "step": 8,
+    "totalSteps": 16,
+    "question": "Как вам удобнее учиться?",
+    "options": [
+      {
+        "emoji": "📱",
+        "label": "Короткие уроки на телефоне",
+        "value": "bite-sized"
+      },
+      {
+        "emoji": "🎯",
+        "label": "Готовые промпты, которые можно копировать",
+        "value": "examples"
+      },
+      {
+        "emoji": "🔨",
+        "label": "Практика на своих задачах",
+        "value": "projects"
+      },
+      {
+        "emoji": "📺",
+        "label": "Пошаговые разборы",
+        "value": "video"
+      }
+    ]
+  },
+  {
+    "id": "q9-career",
+    "type": "question",
+    "step": 9,
+    "totalSteps": 16,
+    "question": "Насколько важны навыки ИИ в Microsoft 365 для карьеры?",
+    "options": [
+      {
+        "emoji": "🚨",
+        "label": "Критично — эти приложения моя ежедневная работа",
+        "value": "critical"
+      },
+      {
+        "emoji": "📈",
+        "label": "Очень важно — выделит меня",
+        "value": "very"
+      },
+      {
+        "emoji": "🤔",
+        "label": "В некоторой степени — хочу быстрее",
+        "value": "somewhat"
+      },
+      {
+        "emoji": "🧪",
+        "label": "Интересно — хочу увидеть возможности",
+        "value": "curious"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-2",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Платная лицензия Copilot для этого не нужна",
+    "copy": "Microsoft продаёт Copilot как платное дополнение, и у большинства его нет. Курс покрывает три сценария — Copilot в приложениях, отдельный чат-ИИ рядом или только бесплатный уровень. Каждый урок можно пройти на бесплатном пути. Настройку вы выбираете во втором уроке.",
+    "ctaLabel": "ПРОДОЛЖИТЬ →"
+  },
+  {
+    "id": "q10-previous",
+    "type": "question",
+    "step": 10,
+    "totalSteps": 16,
+    "question": "Пробовали ли вы учиться этому раньше?",
+    "options": [
+      {
+        "emoji": "🆕",
+        "label": "Нет — это будет первый раз",
+        "value": "first-time"
+      },
+      {
+        "emoji": "📺",
+        "label": "Смотрел(а) бесплатные видео и статьи",
+        "value": "youtube"
+      },
+      {
+        "emoji": "💳",
+        "label": "Начинал(а) платный курс, но не закончил(а)",
+        "value": "paid-unfinished"
+      },
+      {
+        "emoji": "✅",
+        "label": "Да — хочу идти дальше",
+        "value": "completed"
+      }
+    ]
+  },
+  {
+    "id": "q11-blocker",
+    "type": "question",
+    "step": 11,
+    "totalSteps": 16,
+    "question": "Что вас сейчас останавливает?",
+    "options": [
+      {
+        "emoji": "🗺️",
+        "label": "Не знаю, с чего начать",
+        "value": "no-start"
+      },
+      {
+        "emoji": "⏰",
+        "label": "Нет часов на обучение",
+        "value": "no-time"
+      },
+      {
+        "emoji": "📚",
+        "label": "Бесплатные материалы разрознены и устарели",
+        "value": "scattered"
+      },
+      {
+        "emoji": "🔐",
+        "label": "Не уверен(а), что можно вставлять в ИИ",
+        "value": "unsure-rules"
+      },
+      {
+        "emoji": "💡",
+        "label": "Не знаю, что реально возможно",
+        "value": "no-vision"
+      }
+    ]
+  },
+  {
+    "id": "q12-time",
+    "type": "question",
+    "step": 12,
+    "totalSteps": 16,
+    "question": "Сколько времени готовы уделять обучению?",
+    "subtext": "Уроки короткие и в своём темпе",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "10 минут в день",
+        "value": "10min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "15 минут в день",
+        "value": "15min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "20 минут в день",
+        "value": "20min"
+      },
+      {
+        "emoji": "⏱️",
+        "label": "30+ минут в день",
+        "value": "30min"
+      }
+    ]
+  },
+  {
+    "id": "q13-outcome",
+    "type": "question",
+    "step": 13,
+    "totalSteps": 16,
+    "question": "Что для вас важнее всего к концу?",
+    "options": [
+      {
+        "emoji": "⏱️",
+        "label": "Вернуть время каждую неделю",
+        "value": "save-time"
+      },
+      {
+        "emoji": "🌟",
+        "label": "Быть тем, кто делает работу лучше",
+        "value": "impress"
+      },
+      {
+        "emoji": "💰",
+        "label": "Добавить навык, который повышает ценность на рынке",
+        "value": "earn-more"
+      },
+      {
+        "emoji": "💪",
+        "label": "Чувствовать контроль над нагрузкой",
+        "value": "confidence"
+      }
+    ]
+  },
+  {
+    "id": "q14-income",
+    "type": "question",
+    "step": 14,
+    "totalSteps": 16,
+    "question": "Сколько эти навыки были бы вам стоят?",
+    "options": [
+      {
+        "emoji": "🪙",
+        "label": "$500 / месяц",
+        "value": "500"
+      },
+      {
+        "emoji": "💵",
+        "label": "$1 000 – $2 000 / месяц",
+        "value": "1000-2000"
+      },
+      {
+        "emoji": "💰",
+        "label": "$3 000 – $5 000 / месяц",
+        "value": "3000-5000"
+      },
+      {
+        "emoji": "💎",
+        "label": "$5 000+ / месяц",
+        "value": "5000-plus"
+      },
+      {
+        "emoji": "😎",
+        "label": "Важны время и карьера, а не только деньги",
+        "value": "career-value"
+      }
+    ]
+  },
+  {
+    "id": "q15-app-spread",
+    "type": "question",
+    "step": 15,
+    "totalSteps": 16,
+    "question": "Сколько приложений Microsoft 365 затрагивает типичная задача?",
+    "options": [
+      {
+        "emoji": "1️⃣",
+        "label": "Обычно одно",
+        "value": "one"
+      },
+      {
+        "emoji": "2️⃣",
+        "label": "Два — переключаюсь между парой",
+        "value": "two"
+      },
+      {
+        "emoji": "3️⃣",
+        "label": "Три или четыре",
+        "value": "three-four"
+      },
+      {
+        "emoji": "🔗",
+        "label": "Все — всё связано со всем",
+        "value": "all"
+      }
+    ]
+  },
+  {
+    "id": "q16-biggest-win",
+    "type": "question",
+    "step": 16,
+    "totalSteps": 16,
+    "question": "Если ИИ мог бы сделать ОДНО для вашей работы, что бы это было?",
+    "options": [
+      {
+        "emoji": "📥",
+        "label": "Вернуть мне почту",
+        "value": "clear-inbox"
+      },
+      {
+        "emoji": "📄",
+        "label": "Превратить заметки в готовый документ",
+        "value": "draft-document"
+      },
+      {
+        "emoji": "📊",
+        "label": "Сказать, что на самом деле говорят данные",
+        "value": "explain-data"
+      },
+      {
+        "emoji": "🖥️",
+        "label": "Собрать первый черновик слайдов",
+        "value": "draft-slides"
+      },
+      {
+        "emoji": "🔗",
+        "label": "Провести один повторяющийся процесс от начала до конца",
+        "value": "run-process"
+      }
+    ]
+  },
+  {
+    "id": "interstitial-3",
+    "type": "interstitial",
+    "totalSteps": 16,
+    "headline": "Ваш план Microsoft 365 + ИИ почти готов",
+    "copy": "Мы сопоставляем ваши ответы с 24 уроками в шести модулях — Основы, Word, Excel и PowerPoint, Outlook, Teams и встречи, связанные процессы — начиная с приложения, которое отнимает больше всего времени.",
+    "ctaLabel": "СОЗДАТЬ МОЙ ПЛАН →"
+  },
+  {
+    "id": "loading",
+    "type": "loading",
+    "totalSteps": 16,
+    "headline": "Собираем ваш план Microsoft 365 + ИИ…"
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "totalSteps": 16,
+    "headline": "Ваш план Microsoft 365 + ИИ готов!",
+    "subtext": "Введите email, чтобы открыть персональный путь — бесплатно, без карты",
+    "ctaLabel": "ОТКРЫТЬ МОЙ ПЛАН →"
+  }
+]

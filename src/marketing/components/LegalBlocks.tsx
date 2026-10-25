@@ -1,24 +1,33 @@
 import type { ReactNode } from 'react'
-import { COMPANY } from '@/marketing/data/company'
+import { COMPANY, companyPagesCopy } from '@/marketing/data/company'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
 
 export function LegalHero({
   title,
   updated,
   subtitle,
-  kicker = 'Legal',
+  kicker,
 }: {
   title: string
   updated?: string
   subtitle?: ReactNode
   kicker?: string
 }) {
+  const { locale } = useI18n()
+  const legal = companyPagesCopy(locale).legal
+  const kickerText = kicker ?? legal.kicker
+
   return (
     <section className="bg-sw-dark px-4 py-14">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="mb-3 text-sm font-semibold tracking-widest text-white/50 uppercase">{kicker}</p>
+        <p className="mb-3 text-sm font-semibold tracking-widest text-white/50 uppercase">{kickerText}</p>
         <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">{title}</h1>
         {subtitle}
-        {updated ? <p className="text-sm text-white/60">Last updated: {updated}</p> : null}
+        {updated ? (
+          <p className="text-sm text-white/60">
+            {legal.lastUpdatedPrefix} {updated}
+          </p>
+        ) : null}
       </div>
     </section>
   )
@@ -52,31 +61,34 @@ export function CompanyBox({ children }: { children: ReactNode }) {
 }
 
 export function CompanyDetails() {
+  const { locale } = useI18n()
+  const details = companyPagesCopy(locale).contact.details
+
   return (
     <CompanyBox>
       <dl className="space-y-1.5 text-sm text-sw-grey">
         <div>
-          <dt className="inline font-semibold text-sw-dark">Legal entity: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.legalEntity} </dt>
           <dd className="inline">{COMPANY.legalName}</dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Registration: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.registration} </dt>
           <dd className="inline">{COMPANY.registration}</dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Company registration number: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.companyNumber} </dt>
           <dd className="inline">{COMPANY.companyNumber}</dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Address: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.address} </dt>
           <dd className="inline">{COMPANY.address}</dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Service name: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.serviceName} </dt>
           <dd className="inline">{COMPANY.serviceName}</dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Contact email: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.contactEmail} </dt>
           <dd className="inline">
             <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
               {COMPANY.email}
@@ -84,7 +96,7 @@ export function CompanyDetails() {
           </dd>
         </div>
         <div>
-          <dt className="inline font-semibold text-sw-dark">Website: </dt>
+          <dt className="inline font-semibold text-sw-dark">{details.website} </dt>
           <dd className="inline">
             <a
               href={COMPANY.website}

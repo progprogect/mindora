@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { MasterSkillProfile, M365Profile } from '@/funnels/shared/lib/masterProfile'
+import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
+import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
 
 const RING_RADIUS = 34
 const RING_CIRCUMFERENCE = 2 * Math.PI * RING_RADIUS
@@ -63,6 +65,8 @@ export function MasterSkillProfileScreen({
   profile: MasterSkillProfile
   badgeEmoji?: string
 }) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-8 pb-44">
       <div className="mb-6 text-center animate-fade-up">
@@ -71,11 +75,11 @@ export function MasterSkillProfileScreen({
           <span className="text-xs font-bold tracking-wide text-sw-blue uppercase">{profile.persona}</span>
         </div>
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          {name}, here&apos;s your
+          {ui.profileTitleSuffix(name)}
           <br />
           {titleLine}
         </h1>
-        <p className="text-sm text-sw-grey">Your personalised assessment results</p>
+        <p className="text-sm text-sw-grey">{ui.assessmentResults}</p>
       </div>
       <div
         className="mb-5 animate-fade-up rounded-2xl p-5"
@@ -98,13 +102,13 @@ export function MasterSkillProfileScreen({
         ))}
       </div>
       <div className="mb-5 animate-fade-up rounded-2xl border-2 border-sw-blue/25 bg-sw-blue-light p-5">
-        <p className="mb-1 text-sm font-bold text-sw-dark">Your biggest opportunity:</p>
+        <p className="mb-1 text-sm font-bold text-sw-dark">{ui.biggestOpportunity}</p>
         <p className="text-sm leading-relaxed text-sw-grey">{profile.opportunity}</p>
       </div>
       <div className="flex animate-fade-up items-center gap-4 rounded-2xl border border-sw-grey-border p-4">
         <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-sw-success-light text-xl">⏱️</div>
         <div>
-          <p className="text-sm font-bold text-sw-dark">Potential time saved</p>
+          <p className="text-sm font-bold text-sw-dark">{ui.potentialTimeSaved}</p>
           <p className="text-sm text-sw-grey">{profile.timeSaved}</p>
         </div>
       </div>
@@ -113,6 +117,8 @@ export function MasterSkillProfileScreen({
 }
 
 export function M365ProfileScreen({ name, profile }: { name: string; profile: M365Profile }) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-8 pb-44">
       <div className="mb-6 text-center animate-fade-up">
@@ -121,39 +127,39 @@ export function M365ProfileScreen({ name, profile }: { name: string; profile: M3
           <span className="text-xs font-bold tracking-wide text-sw-blue uppercase">{profile.persona}</span>
         </div>
         <h1 className="mb-2 text-2xl leading-tight font-extrabold text-sw-dark sm:text-3xl">
-          {name}, here&apos;s your
+          {ui.profileTitleSuffix(name)}
           <br />
-          Microsoft 365 + AI profile
+          {ui.m365ProfileTitle}
         </h1>
-        <p className="text-sm text-sw-grey">Built from the answers you just gave</p>
+        <p className="text-sm text-sw-grey">{ui.builtFromAnswers}</p>
       </div>
       <div className="mb-5 text-center animate-fade-up">
         <p className="text-5xl font-extrabold text-sw-dark">{profile.readiness}</p>
-        <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">out of 100</p>
-        <p className="mt-3 text-xs font-bold tracking-wide text-sw-grey uppercase">Your readiness</p>
+        <p className="text-xs font-bold tracking-wide text-sw-grey uppercase">{ui.outOf100}</p>
+        <p className="mt-3 text-xs font-bold tracking-wide text-sw-grey uppercase">{ui.yourReadiness}</p>
         <p className="mt-1 text-sm font-bold text-sw-blue">{profile.readinessLabel}</p>
-        <p className="mt-1 text-xs text-sw-grey">How much of this you already have in place, from your five key answers.</p>
+        <p className="mt-1 text-xs text-sw-grey">{ui.readinessExplainer}</p>
       </div>
       <div
         className="mb-4 rounded-2xl p-5 text-white"
         style={{ background: 'linear-gradient(135deg, hsl(var(--sw-blue)) 0%, hsl(221 83% 38%) 100%)' }}
       >
-        <p className="text-xs font-bold tracking-wide text-white/70 uppercase">⚡ Where we start you</p>
+        <p className="text-xs font-bold tracking-wide text-white/70 uppercase">{ui.whereWeStart}</p>
         <p className="text-sm font-bold">{profile.path}</p>
       </div>
       <div className="mb-4 rounded-2xl border border-sw-grey-border p-4">
-        <p className="text-sm font-bold text-sw-dark">📌 We start with {profile.startApp}</p>
+        <p className="text-sm font-bold text-sw-dark">{ui.weStartWith(profile.startApp)}</p>
         <p className="text-sm text-sw-grey">{profile.startCopy}</p>
       </div>
       <div className="mb-4 rounded-2xl bg-sw-blue-light p-4">
-        <p className="mb-1 text-sm font-bold text-sw-dark">Your plan to stop retyping the same work into four apps</p>
+        <p className="mb-1 text-sm font-bold text-sw-dark">{ui.m365OpportunityTitle}</p>
         <p className="text-sm leading-relaxed text-sw-grey">{profile.opportunity}</p>
       </div>
       <div className="flex items-center gap-4 rounded-2xl border border-sw-grey-border p-4">
         <span className="text-xl">⏱️</span>
         <div>
           <p className="text-sm font-bold text-sw-dark">{profile.timeSaved}</p>
-          <p className="text-sm text-sw-grey">That is the time going on work you said AI could help with.</p>
+          <p className="text-sm text-sw-grey">{ui.m365TimeExplainer}</p>
         </div>
       </div>
     </div>
@@ -224,41 +230,38 @@ export function BeforeAfterTable({
 }
 
 export function LegalSocialScreen({ name }: { name: string }) {
+  const { locale } = useI18n()
+  const ui = funnelUiCopy(locale)
   return (
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col px-4 pt-8 pb-44">
-      <p className="mb-2 text-center text-xs font-bold tracking-wide text-sw-blue uppercase">Others like you</p>
+      <p className="mb-2 text-center text-xs font-bold tracking-wide text-sw-blue uppercase">{ui.legalSocialKicker}</p>
       <h1 className="mb-3 text-center text-2xl leading-tight font-extrabold text-sw-dark">
-        {name}, you are not starting from scratch
+        {ui.legalSocialTitle(name)}
       </h1>
-      <p className="mb-6 text-center text-sm text-sw-grey">
-        What other learners have done so far, counted from our own records.
-      </p>
+      <p className="mb-6 text-center text-sm text-sw-grey">{ui.legalSocialIntro}</p>
       <div className="mb-6 grid grid-cols-3 gap-2 text-center">
         <div className="rounded-2xl bg-sw-grey-light px-2 py-3">
           <p className="text-lg font-extrabold text-sw-dark">631</p>
-          <p className="text-[10px] font-semibold text-sw-grey">certificates earned so far</p>
+          <p className="text-[10px] font-semibold text-sw-grey">{ui.statCertificates}</p>
         </div>
         <div className="rounded-2xl bg-sw-grey-light px-2 py-3">
           <p className="text-lg font-extrabold text-sw-dark">2,205</p>
-          <p className="text-[10px] font-semibold text-sw-grey">learners have completed lessons</p>
+          <p className="text-[10px] font-semibold text-sw-grey">{ui.statLearners}</p>
         </div>
         <div className="rounded-2xl bg-sw-grey-light px-2 py-3">
           <p className="text-lg font-extrabold text-sw-dark">45</p>
-          <p className="text-[10px] font-semibold text-sw-grey">courses included</p>
+          <p className="text-[10px] font-semibold text-sw-grey">{ui.statCourses}</p>
         </div>
       </div>
       <div className="mb-4 rounded-2xl bg-sw-grey-light p-4 text-sm text-sw-grey">
-        <p className="mb-2 font-bold text-sw-dark">WHAT THE NUMBERS ARE</p>
-        <p>Counted from our own records of learners who have completed lessons and earned certificates.</p>
-        <p className="mt-3 font-bold text-sw-dark">WHAT THEY ARE NOT</p>
-        <p>They are not a promise about your results, a rate of growth, or a claim that everyone finishes.</p>
-        <p className="mt-3 font-bold text-sw-dark">WHY THERE ARE NO QUOTES</p>
-        <p>We only publish figures we can show you the workings for, so there are no testimonials here.</p>
+        <p className="mb-2 font-bold text-sw-dark">{ui.whatNumbersAre}</p>
+        <p>{ui.whatNumbersAreBody}</p>
+        <p className="mt-3 font-bold text-sw-dark">{ui.whatNumbersNot}</p>
+        <p>{ui.whatNumbersNotBody}</p>
+        <p className="mt-3 font-bold text-sw-dark">{ui.whyNoQuotes}</p>
+        <p>{ui.whyNoQuotesBody}</p>
       </div>
-      <p className="text-sm leading-relaxed text-sw-grey">
-        You would be joining 2,205 learners who have completed lessons and 631 certificates earned so far. Your own
-        progress is yours to set — you learn at your own pace, with nothing scheduled.
-      </p>
+      <p className="text-sm leading-relaxed text-sw-grey">{ui.legalSocialClosing}</p>
     </div>
   )
 }

@@ -17,6 +17,7 @@ export async function loadCurrentUser(userId: string) {
     funnelSource: profile?.funnelSource ?? undefined,
     joinDate: profile?.joinDate.getTime(),
     planTier: profile?.planTier ?? undefined,
+    locale: profile?.locale === 'ru' ? 'ru' : 'en',
     streakCount: stats.streakCount,
     xp: stats.xp,
     lastActivityDate: stats.lastActivityDate ?? undefined,
