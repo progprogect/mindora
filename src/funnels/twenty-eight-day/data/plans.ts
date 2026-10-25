@@ -20,11 +20,16 @@ export const DEFAULT_PLANS: PlanView[] = [
   { id: '12month', name: '12-Month Plan', price: 23900, intervalMonths: 12, badge: 'BEST VALUE' },
 ]
 
+/** EN display contract — numbers and badge keys live here; locale copy only supplies strings. */
+export type PlanDisplayMeta = {
+  label: string
+  periodLabel: string
+  months: number
+  badge?: string
+}
+
 /** Display metadata keyed by plan name — same labels as Claude expired picker. */
-export const PLAN_DISPLAY_META: Record<
-  string,
-  { label: string; periodLabel: string; months: number; badge?: string }
-> = {
+export const PLAN_DISPLAY_META: Record<string, PlanDisplayMeta> = {
   'Monthly Plan': { label: '1 month', periodLabel: 'per month', months: 1 },
   'Quarterly Plan': { label: '3 months', periodLabel: 'every 3 months', months: 3, badge: 'MOST POPULAR' },
   'Annual Plan': { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
@@ -32,7 +37,7 @@ export const PLAN_DISPLAY_META: Record<
   '12-Month Plan': { label: '12 months', periodLabel: 'per year', months: 12, badge: 'BEST VALUE' },
 }
 
-const META_BY_MONTHS: Record<number, { label: string; periodLabel: string; months: number; badge?: string }> = {
+const META_BY_MONTHS: Record<number, PlanDisplayMeta> = {
   1: { label: '1 month', periodLabel: 'per month', months: 1 },
   3: { label: '3 months', periodLabel: 'every 3 months', months: 3, badge: 'MOST POPULAR' },
   6: { label: '6 months', periodLabel: 'every 6 months', months: 6, badge: 'MOST POPULAR' },
@@ -60,23 +65,26 @@ export function expiredPickerPlans(products: PlanView[] | undefined): PlanView[]
   return [...source].sort((a, b) => a.price - b.price)
 }
 
-export function planMeta(plan: PlanView, locale: FunnelLocale = 'en') {
+/**
+ * Numbers and badge keys follow EN meta (`PLAN_DISPLAY_META`); locale copy only overrides strings.
+ * Same assembly pattern as Claude `planMeta`.
+ */
+export function planMeta(plan: PlanView, locale: FunnelLocale = 'en'): PlanDisplayMeta {
   const copy = planDisplayCopy(locale)
-  const localizedByName = copy.plans[plan.name as keyof typeof copy.plans]
-  const localizedByMonths = copy.byMonths[plan.intervalMonths as keyof typeof copy.byMonths]
-  const extra = localizedByName ?? localizedByMonths ?? PLAN_DISPLAY_META[plan.name] ?? META_BY_MONTHS[plan.intervalMonths]
-  const badgeKey = plan.badge ?? extra?.badge
+  const base = PLAN_DISPLAY_META[plan.name] ?? META_BY_MONTHS[plan.intervalMonths]
+  const localized =
+    copy.plans[plan.name as keyof typeof copy.plans] ??
+    copy.byMonths[plan.intervalMonths as keyof typeof copy.byMonths]
+  const badgeKey = plan.badge ?? base?.badge
   const badge =
-    badgeKey && copy.badges[badgeKey as keyof typeof copy.badges]
+    badgeKey && badgeKey in copy.badges
       ? copy.badges[badgeKey as keyof typeof copy.badges]
       : badgeKey
-  if (extra) {
-    return { ...extra, badge }
-  }
+
   return {
-    label: plan.name,
-    periodLabel: copy.perPeriod,
-    months: plan.intervalMonths,
+    label: localized?.label ?? base?.label ?? plan.name,
+    periodLabel: localized?.periodLabel ?? base?.periodLabel ?? copy.perPeriod,
+    months: base?.months ?? plan.intervalMonths,
     badge,
   }
 }

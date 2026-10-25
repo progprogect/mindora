@@ -656,21 +656,35 @@ export function salesPlanCopy(locale: FunnelLocale) {
   }
 }
 
-export function planDisplayCopy(locale: FunnelLocale) {
+/** Locale strings only — months / badge keys stay on EN `PLAN_DISPLAY_META`. */
+type PlanLabelCopy = { label: string; periodLabel: string }
+
+type PlanDisplayCopy = {
+  plans: Record<
+    'Monthly Plan' | 'Quarterly Plan' | 'Annual Plan' | '6-Month Plan' | '12-Month Plan',
+    PlanLabelCopy
+  >
+  byMonths: Record<1 | 3 | 6 | 12, PlanLabelCopy>
+  perPeriod: string
+  badges: Record<'MOST POPULAR' | 'BEST VALUE', string>
+  defaultNames: Record<'monthly' | '6month' | '12month', string>
+}
+
+export function planDisplayCopy(locale: FunnelLocale): PlanDisplayCopy {
   if (locale === 'ru') {
     return {
       plans: {
         'Monthly Plan': { label: '1 месяц', periodLabel: 'в месяц' },
-        'Quarterly Plan': { label: '3 месяца', periodLabel: 'каждые 3 месяца', badge: 'САМЫЙ ПОПУЛЯРНЫЙ' },
-        'Annual Plan': { label: '12 месяцев', periodLabel: 'в год', badge: 'ЛУЧШАЯ ЦЕНА' },
-        '6-Month Plan': { label: '6 месяцев', periodLabel: 'каждые 6 месяцев', badge: 'САМЫЙ ПОПУЛЯРНЫЙ' },
-        '12-Month Plan': { label: '12 месяцев', periodLabel: 'в год', badge: 'ЛУЧШАЯ ЦЕНА' },
+        'Quarterly Plan': { label: '3 месяца', periodLabel: 'каждые 3 месяца' },
+        'Annual Plan': { label: '12 месяцев', periodLabel: 'в год' },
+        '6-Month Plan': { label: '6 месяцев', periodLabel: 'каждые 6 месяцев' },
+        '12-Month Plan': { label: '12 месяцев', periodLabel: 'в год' },
       },
       byMonths: {
         1: { label: '1 месяц', periodLabel: 'в месяц' },
-        3: { label: '3 месяца', periodLabel: 'каждые 3 месяца', badge: 'САМЫЙ ПОПУЛЯРНЫЙ' },
-        6: { label: '6 месяцев', periodLabel: 'каждые 6 месяцев', badge: 'САМЫЙ ПОПУЛЯРНЫЙ' },
-        12: { label: '12 месяцев', periodLabel: 'в год', badge: 'ЛУЧШАЯ ЦЕНА' },
+        3: { label: '3 месяца', periodLabel: 'каждые 3 месяца' },
+        6: { label: '6 месяцев', periodLabel: 'каждые 6 месяцев' },
+        12: { label: '12 месяцев', periodLabel: 'в год' },
       },
       perPeriod: 'за период',
       badges: {
@@ -687,16 +701,16 @@ export function planDisplayCopy(locale: FunnelLocale) {
   return {
     plans: {
       'Monthly Plan': { label: '1 month', periodLabel: 'per month' },
-      'Quarterly Plan': { label: '3 months', periodLabel: 'every 3 months', badge: 'MOST POPULAR' },
-      'Annual Plan': { label: '12 months', periodLabel: 'per year', badge: 'BEST VALUE' },
-      '6-Month Plan': { label: '6 months', periodLabel: 'every 6 months', badge: 'MOST POPULAR' },
-      '12-Month Plan': { label: '12 months', periodLabel: 'per year', badge: 'BEST VALUE' },
+      'Quarterly Plan': { label: '3 months', periodLabel: 'every 3 months' },
+      'Annual Plan': { label: '12 months', periodLabel: 'per year' },
+      '6-Month Plan': { label: '6 months', periodLabel: 'every 6 months' },
+      '12-Month Plan': { label: '12 months', periodLabel: 'per year' },
     },
     byMonths: {
       1: { label: '1 month', periodLabel: 'per month' },
-      3: { label: '3 months', periodLabel: 'every 3 months', badge: 'MOST POPULAR' },
-      6: { label: '6 months', periodLabel: 'every 6 months', badge: 'MOST POPULAR' },
-      12: { label: '12 months', periodLabel: 'per year', badge: 'BEST VALUE' },
+      3: { label: '3 months', periodLabel: 'every 3 months' },
+      6: { label: '6 months', periodLabel: 'every 6 months' },
+      12: { label: '12 months', periodLabel: 'per year' },
     },
     perPeriod: 'per period',
     badges: {

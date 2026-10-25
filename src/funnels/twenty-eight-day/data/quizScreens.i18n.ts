@@ -254,7 +254,19 @@ export function localizeQuizScreens(screens: QuizScreenDef[], locale: FunnelLoca
       }
     }
 
-    if (screen.type === 'question' || screen.type === 'ai-tools') {
+    if (screen.type === 'question') {
+      const withFields = fields ? applyScreenFields(screen, fields) : screen
+      if (!optionMap) return withFields
+      return {
+        ...withFields,
+        options: withFields.options.map((opt) => ({
+          ...opt,
+          label: optionMap[opt.id] ?? opt.label,
+        })),
+      }
+    }
+
+    if (screen.type === 'ai-tools') {
       const withFields = fields ? applyScreenFields(screen, fields) : screen
       if (!optionMap) return withFields
       return {
