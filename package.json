@@ -10,7 +10,7 @@
     "dev": "node scripts/ensure-lms-api.mjs && concurrently -k -n web,api -c cyan,magenta \"vite\" \"tsx watch server/index.ts\"",
     "dev:web": "vite",
     "dev:api": "node scripts/ensure-lms-api.mjs && tsx watch server/index.ts",
-    "check:i18n": "node ../authorisation/scripts/check-i18n.mjs",
+    "check:i18n": "node authorisation/scripts/check-i18n.mjs",
     "build": "npm run check:i18n && npm run build:lms && tsc -p tsconfig.server.json && tsc -b && vite build",
     "build:lms": "node scripts/build-lms.mjs",
     "sync:authorisation": "node scripts/sync-authorisation.mjs",
