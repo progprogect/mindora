@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import {
   DEFAULT_PLANS as DEFAULT_PLANS_28,
   formatUsd as formatUsd28,
@@ -104,7 +104,6 @@ export default function CheckoutPage() {
   const ui = checkoutUiCopy(locale)
   const moneyBack = moneyBackCopy(locale)
   const [searchParams] = useSearchParams()
-  const navigate = useNavigate()
   const productId = searchParams.get('product') ?? searchParams.get('plan') ?? ''
   const funnelParam = searchParams.get('funnel')
   const funnel = funnelParam || 'pricing'
@@ -142,9 +141,11 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     if (!paid) return
-    const timer = window.setTimeout(() => navigate(setupPath), 3000)
+    const timer = window.setTimeout(() => {
+      window.location.href = setupPath
+    }, 3000)
     return () => window.clearTimeout(timer)
-  }, [paid, navigate, setupPath])
+  }, [paid, setupPath])
 
   const startPayment = () => {
     if (!email.trim()) {

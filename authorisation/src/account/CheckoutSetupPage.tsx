@@ -12,6 +12,7 @@ import {
 } from '@/lib/api'
 import { FOCUS_FROM_QUIZ, readQuizResults } from '@/lib/quizResults'
 import { track } from '@/lib/track'
+import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -261,6 +262,9 @@ function SetupForm() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <div className="max-w-sm mx-auto w-full px-5 flex justify-end">
+        <LanguageSwitcher />
+      </div>
       <div className="w-full h-1" style={{ backgroundColor: 'hsl(var(--sw-grey-light))' }}>
         <div
           className="h-full transition-all duration-500"

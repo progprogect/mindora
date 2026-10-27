@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import NotFoundPage from '@/marketing/pages/NotFoundPage'
@@ -28,7 +28,6 @@ export default function FunnelCheckoutPage() {
   usePageTitle(ui.pageTitle)
   const { funnel = '28-day-ai-challenge' } = useParams()
   const [params] = useSearchParams()
-  const navigate = useNavigate()
   const [email, setEmail] = useState(() => params.get('email')?.trim() || resolveKnownEmail(params) || '')
   const name = params.get('name') ?? ''
   const [emailError, setEmailError] = useState<string | null>(null)
@@ -123,7 +122,7 @@ export default function FunnelCheckoutPage() {
                 funnel={funnel}
                 percentOff={75}
                 onSuccess={() => {
-                  navigate(`/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`)
+                  window.location.href = `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
                 }}
                 submitLabel={ui.confirmPayment}
               />

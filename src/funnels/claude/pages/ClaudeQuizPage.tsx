@@ -185,7 +185,7 @@ export default function ClaudeQuizPage() {
                 name: quizState.submittedName,
                 quizType: 'claude-ai-certification',
               })
-              navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
+              window.location.href = `/checkout/setup?trial=1&funnel=${FUNNEL}`
             }}
             onExpiredPlanContinue={(productId) => {
               persistClaudeQuizResults({
