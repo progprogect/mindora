@@ -7,6 +7,14 @@ export const PLAN_TIERS = {
 
 export type PlanTier = keyof typeof PLAN_TIERS
 
+/** i18n keys for plan labels — use with `t()` at display sites. */
+export const PLAN_TIER_LABEL_KEYS: Record<PlanTier, string> = {
+  week1: 'account.create.planWeek1',
+  week4: 'account.create.planWeek4',
+  week12: 'account.create.planWeek12',
+  free: 'account.create.planFree',
+}
+
 export const LEARN_PATHS: Record<string, string> = {
   ai: '/app/ai-and-technology',
   mindset: '/app/success-mindset',

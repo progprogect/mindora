@@ -1,3 +1,4 @@
+import { withLocale, type Locale } from '../../../authorisation/src/i18n/locale'
 import { Fragment, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
@@ -20,14 +21,14 @@ const SUBSCRIPTION_LINK_ROUTES: Record<SubscriptionTermsLinkRoute, string> = {
   support: ROUTES.support,
 }
 
-function renderInlineParts(parts: SubscriptionTermsInlinePart[]): ReactNode {
+function renderInlineParts(parts: SubscriptionTermsInlinePart[], locale: Locale): ReactNode {
   return parts.map((part, index) => {
     switch (part.kind) {
       case 'text':
         return <Fragment key={index}>{part.value}</Fragment>
       case 'link':
         return (
-          <Link key={index} to={SUBSCRIPTION_LINK_ROUTES[part.route]} className="text-sw-blue hover:underline">
+          <Link key={index} to={withLocale(locale, SUBSCRIPTION_LINK_ROUTES[part.route])} className="text-sw-blue hover:underline">
             {part.label}
           </Link>
         )
@@ -49,7 +50,7 @@ function renderInlineParts(parts: SubscriptionTermsInlinePart[]): ReactNode {
         )
       case 'supportLink':
         return (
-          <Link key={index} to={ROUTES.support} className="text-sw-blue hover:underline">
+          <Link key={index} to={withLocale(locale, ROUTES.support)} className="text-sw-blue hover:underline">
             {part.label}
           </Link>
         )
@@ -59,22 +60,22 @@ function renderInlineParts(parts: SubscriptionTermsInlinePart[]): ReactNode {
   })
 }
 
-function renderContent(content: SubscriptionTermsParagraphContent): ReactNode {
+function renderContent(content: SubscriptionTermsParagraphContent, locale: Locale): ReactNode {
   if (typeof content === 'string') {
     return content
   }
-  return renderInlineParts(content)
+  return renderInlineParts(content, locale)
 }
 
-function renderBlock(block: SubscriptionTermsBlock): ReactNode {
+function renderBlock(block: SubscriptionTermsBlock, locale: Locale): ReactNode {
   switch (block.kind) {
     case 'p':
-      return <p>{renderContent(block.content)}</p>
+      return <p>{renderContent(block.content, locale)}</p>
     case 'ul':
       return (
         <ul className="list-disc space-y-2 pl-5">
           {block.items.map((item, index) => (
-            <li key={index}>{renderContent(item)}</li>
+            <li key={index}>{renderContent(item, locale)}</li>
           ))}
         </ul>
       )
@@ -92,11 +93,11 @@ export default function SubscriptionTermsPage() {
     <>
       <LegalHero title={copy.heroTitle} updated={copy.heroUpdated} />
       <LegalCard>
-        <p className="leading-relaxed text-sw-grey">{renderContent(copy.intro)}</p>
+        <p className="leading-relaxed text-sw-grey">{renderContent(copy.intro, locale)}</p>
         {copy.sections.map((section) => (
           <LegalSection key={section.title} title={section.title}>
             {section.blocks.map((block, index) => (
-              <Fragment key={`${section.title}-${index}`}>{renderBlock(block)}</Fragment>
+              <Fragment key={`${section.title}-${index}`}>{renderBlock(block, locale)}</Fragment>
             ))}
           </LegalSection>
         ))}

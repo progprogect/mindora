@@ -7,6 +7,24 @@ async function seed() {
   const env = loadEnv()
   const defaults = [
     {
+      id: 'monthly_4999',
+      name: 'Monthly Plan ($49.99)',
+      stripePriceId: env.STRIPE_MONTHLY_4999_PRICE_ID || env.STRIPE_MONTHLY_PRICE_ID || 'price_REPLACE_MONTHLY_4999',
+      price: 4999,
+      intervalMonths: 1,
+      badge: null as string | null,
+      active: true,
+    },
+    {
+      id: 'monthly_2999',
+      name: 'Monthly Plan ($29.99)',
+      stripePriceId: env.STRIPE_MONTHLY_2999_PRICE_ID || env.STRIPE_MONTHLY_PRICE_ID || 'price_REPLACE_MONTHLY_2999',
+      price: 2999,
+      intervalMonths: 1,
+      badge: null as string | null,
+      active: true,
+    },
+    {
       id: 'monthly',
       name: 'Monthly Plan',
       stripePriceId: env.STRIPE_MONTHLY_PRICE_ID || 'price_REPLACE_MONTHLY',

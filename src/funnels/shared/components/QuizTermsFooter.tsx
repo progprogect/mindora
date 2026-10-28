@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
 import { funnelUiCopy } from '@/funnels/shared/i18n/funnelUiCopy'
@@ -33,7 +34,7 @@ export default function QuizTermsFooter({
           {ui.privacyPolicy}
         </Link>
         ,{' '}
-        <Link to="/subscription-terms" className="text-sw-blue underline hover:text-sw-blue-hover">
+        <Link to={withLocale(locale, "/subscription-terms")} className="text-sw-blue underline hover:text-sw-blue-hover">
           {ui.subscriptionTerms}
         </Link>
       </p>

@@ -1,3 +1,6 @@
+import { en, ru } from '@/i18n/messages'
+import { readStoredLocale, type Locale } from '@/i18n/locale'
+
 export type CurrentUser = {
   name: string
   email: string
@@ -212,9 +215,15 @@ export async function switchToAnnual(): Promise<ChargeResult> {
   })
 }
 
-export function upsellPaymentNote(hasSavedCard: boolean | undefined) {
-  if (hasSavedCard === true) return 'Charges your saved card. Instant access after purchase.'
-  return 'Secure payment via Stripe'
+function upsellMessage(locale: Locale, key: 'app.common.upsellSavedCardNote' | 'app.common.upsellStripeNote') {
+  const table = locale === 'ru' ? ru : en
+  return table[key]
+}
+
+export function upsellPaymentNote(hasSavedCard: boolean | undefined, locale?: Locale) {
+  const loc = locale ?? readStoredLocale()
+  if (hasSavedCard === true) return upsellMessage(loc, 'app.common.upsellSavedCardNote')
+  return upsellMessage(loc, 'app.common.upsellStripeNote')
 }
 
 export async function fetchPromptVaultKey() {
@@ -309,6 +318,33 @@ export async function updatePreferences(args: { pacePreference?: string; focusCa
 export async function fetchPurchases() {
   return apiJson<{ purchases: Array<{ sku: string; createdAt: number; amountCents: number | null }> }>(
     '/api/purchases',
+  )
+}
+
+export type MaterialListItem = {
+  slug: string
+  title: string
+  description: string | null
+  type: string
+  publishedAt: number | null
+  hasFile: boolean
+  localeFallback: boolean
+}
+
+export type MaterialDetail = MaterialListItem & {
+  body: string | null
+  fileUrl: string | null
+}
+
+export async function fetchMaterials(locale?: 'en' | 'ru') {
+  const q = locale ? `?locale=${locale}` : ''
+  return apiJson<{ materials: MaterialListItem[]; total: number; locale: 'en' | 'ru' }>(`/api/materials${q}`)
+}
+
+export async function fetchMaterial(slug: string, locale?: 'en' | 'ru') {
+  const q = locale ? `?locale=${locale}` : ''
+  return apiJson<{ material: MaterialDetail; locale: 'en' | 'ru' }>(
+    `/api/materials/${encodeURIComponent(slug)}${q}`,
   )
 }
 

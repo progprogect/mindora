@@ -7,14 +7,15 @@ import { completeOnboarding } from '@/lib/api'
 import { focusFromQuiz } from '@/lib/quizResults'
 import { track } from '@/lib/track'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 const PACE_IDS = ['spark', 'momentum', 'ignite'] as const
 
 function UnauthRedirect() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   useEffect(() => {
-    window.location.href = '/login'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/login')
   }, [])
   return <AuthSpinner message={t('account.common.redirecting')} />
 }
@@ -23,7 +24,7 @@ function OnboardForm() {
   const navigate = useNavigate()
   const user = useCurrentUser()
   const { refresh } = useSession()
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [pace, setPace] = useState('momentum')
   const [busy, setBusy] = useState(false)
   const forwarded = useRef(false)
@@ -56,7 +57,7 @@ function OnboardForm() {
   useEffect(() => {
     if (user?.onboardingComplete && !forwarded.current) {
       forwarded.current = true
-      navigate('/app/dashboard', { replace: true })
+      navigate(withLocale(locale, '/app/dashboard'), { replace: true })
     }
   }, [user?.onboardingComplete, navigate])
 
@@ -71,9 +72,9 @@ function OnboardForm() {
       await completeOnboarding({ pacePreference: pace, focusCategory: focus })
       await refresh({ silent: true })
       track('onboarding_completed', { pace, focus })
-      navigate('/app/dashboard', { replace: true })
+      navigate(withLocale(locale, '/app/dashboard'), { replace: true })
     } catch {
-      navigate('/app/dashboard', { replace: true })
+      navigate(withLocale(locale, '/app/dashboard'), { replace: true })
     } finally {
       setBusy(false)
     }

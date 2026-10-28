@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { plannerContent } from '@/content/planners'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { usePurchaseRecords, type PurchaseRecord } from '@/lib/lmsQueries'
 
 const BUNDLE_SKUS = new Set(['planner-bundle', 'planner-bundle-library'])
@@ -36,7 +37,7 @@ function visibleRows(records: PurchaseRecord[]) {
 }
 
 export default function PurchasesPage() {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const records = usePurchaseRecords()
   const rows = records ? visibleRows(records) : undefined
   const skus = new Set((rows ?? []).map((row) => row.sku))
@@ -47,7 +48,7 @@ export default function PurchasesPage() {
     <div className="min-h-screen bg-gray-50 pb-24">
       <header className="sticky top-0 z-40 bg-white border-b border-sw-grey-border">
         <div className="max-w-2xl mx-auto px-4 h-12 flex items-center gap-3">
-          <Link to="/app/profile" className="text-sw-grey active:scale-95 transition-transform">
+          <Link to={withLocale(locale, "/app/profile")} className="text-sw-grey active:scale-95 transition-transform">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
@@ -67,7 +68,7 @@ export default function PurchasesPage() {
             </div>
             <h2 className="text-lg font-bold text-sw-dark mb-1">{t('app.purchases.emptyTitle')}</h2>
             <p className="text-sm text-sw-grey mb-4">{t('app.purchases.emptySub')}</p>
-            <Link to="/app/dashboard" className="inline-flex items-center gap-1 text-sm font-semibold text-sw-blue">
+            <Link to={withLocale(locale, "/app/dashboard")} className="inline-flex items-center gap-1 text-sm font-semibold text-sw-blue">
               {t('app.common.backToDashboardLink')}
             </Link>
           </div>
@@ -77,7 +78,7 @@ export default function PurchasesPage() {
               <div className="flex flex-col gap-2">
                 {hasVault ? (
                   <Link
-                    to="/app/prompt-library"
+                    to={withLocale(locale, "/app/prompt-library")}
                     className="block bg-white rounded-2xl p-4 border border-sw-grey-border text-sm font-semibold text-sw-dark"
                   >
                     {t('app.purchases.openPromptLibrary')}
@@ -85,7 +86,7 @@ export default function PurchasesPage() {
                 ) : null}
                 {hasPlanners ? (
                   <Link
-                    to="/app/planners"
+                    to={withLocale(locale, "/app/planners")}
                     className="block bg-white rounded-2xl p-4 border border-sw-grey-border text-sm font-semibold text-sw-dark"
                   >
                     {t('app.purchases.openPlanners')}

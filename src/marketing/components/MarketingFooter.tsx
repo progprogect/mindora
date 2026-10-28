@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
+import { withLocale, type Locale } from '../../../authorisation/src/i18n/locale'
 import Logo from './Logo'
 import {
   FOOTER_COMPANY,
@@ -22,10 +23,12 @@ function FooterCol({
   title,
   links,
   label,
+  locale,
 }: {
   title: string
   links: readonly { key: NavKey; href: string }[]
   label: (key: NavKey) => string
+  locale: Locale
 }) {
   return (
     <div>
@@ -38,7 +41,7 @@ function FooterCol({
                 {label(link.key)}
               </a>
             ) : (
-              <Link to={link.href} className="text-sm transition-colors hover:text-white">
+              <Link to={withLocale(locale, link.href)} className="text-sm transition-colors hover:text-white">
                 {label(link.key)}
               </Link>
             )}
@@ -58,7 +61,7 @@ export default function MarketingFooter() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-            <Link to={ROUTES.home} aria-label={copy.homeAria}>
+            <Link to={withLocale(locale, ROUTES.home)} aria-label={copy.homeAria}>
               <Logo variant="light" />
             </Link>
             <p className="mt-4 mb-4 max-w-xs text-sm leading-relaxed">{copy.blurb}</p>
@@ -75,10 +78,10 @@ export default function MarketingFooter() {
             </div>
           </div>
 
-          <FooterCol title={copy.platform} links={FOOTER_PLATFORM} label={label} />
-          <FooterCol title={copy.learn} links={FOOTER_LEARN} label={label} />
-          <FooterCol title={copy.company} links={FOOTER_COMPANY} label={label} />
-          <FooterCol title={copy.legal} links={FOOTER_LEGAL} label={label} />
+          <FooterCol title={copy.platform} links={FOOTER_PLATFORM} label={label} locale={locale} />
+          <FooterCol title={copy.learn} links={FOOTER_LEARN} label={label} locale={locale} />
+          <FooterCol title={copy.company} links={FOOTER_COMPANY} label={label} locale={locale} />
+          <FooterCol title={copy.legal} links={FOOTER_LEGAL} label={label} locale={locale} />
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">

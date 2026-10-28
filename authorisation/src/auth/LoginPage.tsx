@@ -6,6 +6,7 @@ import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, sendOtp, verifyOtp } from '@/lib/api'
 import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 function WordmarkHeader() {
@@ -22,11 +23,11 @@ function WordmarkHeader() {
 function PostAuthRedirect() {
   const navigate = useNavigate()
   const user = useCurrentUser()
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   useEffect(() => {
     if (user === undefined) return
-    if (user?.onboardingComplete) navigate('/app/dashboard', { replace: true })
-    else navigate('/account/onboard', { replace: true })
+    if (user?.onboardingComplete) navigate(withLocale(locale, '/app/dashboard'), { replace: true })
+    else navigate(withLocale(locale, '/account/onboard'), { replace: true })
   }, [user, navigate])
   return <AuthSpinner message={t('auth.signingIn')} />
 }
@@ -246,7 +247,7 @@ function LoginForm() {
           {error ? <p className="mt-3 text-sm text-red-500">{error}</p> : null}
           <p className="mt-6 text-xs text-sw-grey text-center">
             {t('auth.noAccount')}{' '}
-            <Link to="/quiz/28-day-ai-challenge" className="text-sw-blue font-semibold">
+            <Link to={withLocale(locale, "/quiz/28-day-ai-challenge")} className="text-sw-blue font-semibold">
               {t('auth.takeQuiz')}
             </Link>
           </p>

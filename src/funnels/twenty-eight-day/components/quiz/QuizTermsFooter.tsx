@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../../authorisation/src/i18n/locale'
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { quizTermsCopy } from '@/funnels/twenty-eight-day/data/funnelCopy'
@@ -11,15 +12,15 @@ export default function QuizTermsFooter() {
   return (
     <p className="mt-4 text-center text-[11px] leading-relaxed text-sw-grey">
       {copy.prefix}{' '}
-      <Link to="/terms-and-conditions" className="underline text-sw-blue hover:text-sw-blue-hover">
+      <Link to={withLocale(locale, "/terms-and-conditions")} className="underline text-sw-blue hover:text-sw-blue-hover">
         {copy.terms}
       </Link>
       {copy.and}{' '}
-      <Link to="/privacy-policy" className="underline text-sw-blue hover:text-sw-blue-hover">
+      <Link to={withLocale(locale, "/privacy-policy")} className="underline text-sw-blue hover:text-sw-blue-hover">
         {copy.privacy}
       </Link>
       {copy.and}{' '}
-      <Link to="/subscription-terms" className="underline text-sw-blue hover:text-sw-blue-hover">
+      <Link to={withLocale(locale, "/subscription-terms")} className="underline text-sw-blue hover:text-sw-blue-hover">
         {copy.subscription}
       </Link>
     </p>

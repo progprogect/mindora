@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { getLiveCards, getPath, liveSlugSet, pickPathContinueCard } from '@/content/catalog'
 import { PATH_META } from '@/content/lms'
 import { useI18n } from '@/i18n/I18nProvider'
-import { useProgress } from '@/lib/lmsQueries'
+import { withLocale } from '@/i18n/locale'
+import { useCourseAccess, useProgress } from '@/lib/lmsQueries'
 
 type Props = { pathKey: string }
 
@@ -52,10 +53,11 @@ function Chevron({ className }: { className?: string }) {
 }
 
 export default function PathCatalogPage({ pathKey }: Props) {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const path = getPath(pathKey, locale)
   const live = getLiveCards(pathKey, locale)
   const progress = useProgress()
+  const access = useCourseAccess()
   const meta = PATH_META[pathKey as keyof typeof PATH_META]
   const cards = (live?.cards ?? []) as LiveCard[]
   const completed = progress?.lessons.filter((row) => row.status === 'completed') ?? []
@@ -70,7 +72,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
     cards,
     lastOpened: progress?.lastOpened,
     completed,
-    isLive: (id) => liveSlugSet.has(id),
+    isLive: (id) => liveSlugSet.has(id) && (!access.ready || access.canAccess(id)),
   })
 
   const continueDone = continueCard ? completed.filter((row) => row.courseId === continueCard.id).length : 0
@@ -106,7 +108,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
         <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
-              to="/app/dashboard"
+              to={withLocale(locale, "/app/dashboard")}
               aria-label={t('app.path.backAria')}
               className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-sw-grey-light transition-colors"
             >
@@ -176,7 +178,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
           </div>
         ) : continueCard ? (
           <Link
-            to={`/app/courses/${continueCard.id}`}
+            to={withLocale(locale, `/app/courses/${continueCard.id}`)}
             className="block rounded-2xl bg-white p-4 shadow-sm border-2 border-sw-blue/20 active:scale-[0.98] transition-all"
           >
             <p className="text-[10px] font-bold text-sw-blue uppercase tracking-[0.12em] mb-2">
@@ -207,7 +209,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
                     aria-valuenow={continuePct}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label={`${continueCard.title} progress`}
+                    aria-label={t('app.common.namedProgressShortAria').replace('{title}', continueCard.title)}
                   >
                     <div
                       className="h-full bg-sw-blue rounded-full transition-all duration-500"
@@ -226,7 +228,13 @@ export default function PathCatalogPage({ pathKey }: Props) {
             <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.yourCourses')}</p>
             <div className="space-y-3">
               {cards.map((card) => (
-                <CourseRow key={card.id} card={card} completed={completed} numbered />
+                <CourseRow
+                  key={card.id}
+                  card={card}
+                  completed={completed}
+                  numbered
+                  locked={access.ready ? !access.canAccess(card.id) : false}
+                />
               ))}
             </div>
             <ComingSoonStrip
@@ -250,7 +258,12 @@ export default function PathCatalogPage({ pathKey }: Props) {
               <p className="text-sm font-bold text-sw-dark mb-3 uppercase tracking-wide">{t('app.path.yourCourses')}</p>
               <div className="space-y-3">
                 {cards.map((card) => (
-                  <CourseRow key={card.id} card={card} completed={completed} />
+                  <CourseRow
+                    key={card.id}
+                    card={card}
+                    completed={completed}
+                    locked={access.ready ? !access.canAccess(card.id) : false}
+                  />
                 ))}
               </div>
             </div>
@@ -278,7 +291,7 @@ export default function PathCatalogPage({ pathKey }: Props) {
                         <p className="text-[11px] text-sw-grey mt-2">
                           {String(item.difficulty || '')} · {String(item.time || '')}
                           {rating ? ` · ⭐ ${rating}` : ''}
-                          {learners ? ` · ${learners} learners` : ''}
+                          {learners ? ` · ${learners} ${t('app.common.learners')}` : ''}
                         </p>
                       </div>
                     )
@@ -359,26 +372,33 @@ function CourseRow({
   card,
   completed,
   numbered,
+  locked,
 }: {
   card: LiveCard
   completed: Array<{ courseId: string; xpEarned: number; status: string }>
   numbered?: boolean
+  locked?: boolean
 }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const live = liveSlugSet.has(card.id)
+  const entitlementLocked = Boolean(locked)
   const done = completed.filter((row) => row.courseId === card.id)
   const xp = done.reduce((sum, row) => sum + row.xpEarned, 0)
   const total = card.lessons ?? 0
   const pct = total ? Math.min(100, Math.round((done.length / total) * 100)) : 0
   const inner = (
-    <div className="flex items-start gap-3">
+    <div className={`flex items-start gap-3${entitlementLocked ? ' opacity-80' : ''}`}>
       <div
         className={`w-12 h-12 rounded-xl bg-gradient-to-br ${card.gradient ?? 'from-sw-grey-light to-sw-grey-border'} flex items-center justify-center flex-shrink-0 shadow-sm`}
       >
-        <span className="text-xl">{card.emoji}</span>
+        <span className="text-xl">{entitlementLocked ? '🔒' : card.emoji}</span>
       </div>
       <div className="flex-1 min-w-0">
-        {card.badge ? (
+        {entitlementLocked ? (
+          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide mb-1 bg-sw-grey-light text-sw-grey">
+            {t('app.courseAccess.lockedBadge')}
+          </span>
+        ) : card.badge ? (
           <span
             className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide mb-1 ${card.badgeColor ?? 'bg-sw-blue-light text-sw-blue'}`}
           >
@@ -429,7 +449,7 @@ function CourseRow({
               aria-valuenow={pct}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={`${card.title} progress: ${pct}%`}
+              aria-label={t('app.common.namedProgressAria').replace('{title}', card.title).replace('{pct}', String(pct))}
             >
               <div className="h-full rounded-full transition-all duration-500 bg-sw-blue" style={{ width: `${pct}%` }} />
             </div>
@@ -444,9 +464,19 @@ function CourseRow({
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border/50 opacity-60">{inner}</div>
     )
   }
+  if (entitlementLocked) {
+    return (
+      <Link
+        to={withLocale(locale, "/pricing")}
+        className="block bg-white rounded-2xl p-4 shadow-sm active:scale-[0.98] transition-all border border-sw-grey-border/50"
+      >
+        {inner}
+      </Link>
+    )
+  }
   return (
     <Link
-      to={card.path || `/app/courses/${card.id}`}
+      to={withLocale(locale, card.path || `/app/courses/${card.id}`)}
       className="block bg-white rounded-2xl p-4 shadow-sm active:scale-[0.98] transition-all border border-sw-grey-border/50"
     >
       {inner}

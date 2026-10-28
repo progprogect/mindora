@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
 import { COMPANY } from '@/marketing/data/company'
@@ -27,13 +28,24 @@ export default function CookiePolicyPage() {
   const copy = cookiePolicyCopy(locale)
   usePageTitle(copy.pageTitle)
   const intro = copy.sections.introduction
+  const choices = copy.sections.choices
   const general = copy.sections.general
   const used = copy.sections.used
+  const optOut = copy.sections.optOut
   const contact = copy.sections.contact
 
   return (
     <>
-      <LegalHero kicker={copy.kicker} title={copy.heroTitle} />
+      <LegalHero
+        kicker={copy.kicker}
+        title={copy.heroTitle}
+        updated={locale === 'en' ? copy.updatedDate : undefined}
+        subtitle={
+          locale === 'ru' ? (
+            <p className="text-sm text-white/60">{copy.lastUpdatedLine}</p>
+          ) : undefined
+        }
+      />
       <LegalCard>
         <LegalSection title={intro.title}>
           <p>
@@ -46,27 +58,30 @@ export default function CookiePolicyPage() {
           <p>
             {COMPANY.websiteHost}
             {intro.p2Start}
-            <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+            <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
+              {COMPANY.email}
+            </a>
+            {intro.p2Or}
+            <Link to={withLocale(locale, ROUTES.contact)} className="text-sw-blue hover:underline">
               {intro.contactPageLink}
             </Link>
             {intro.p2End}
           </p>
           <p>
             {intro.p3Start}
-            <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.privacy)} className="text-sw-blue hover:underline">
               {intro.privacyLink}
             </Link>
             {intro.p3Mid}
-            <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.terms)} className="text-sw-blue hover:underline">
               {intro.termsLink}
             </Link>
             {intro.p3End}
           </p>
-          <p>
-            {intro.p4Start}
-            {COMPANY.websiteHost}
-            {intro.p4End}
-          </p>
+        </LegalSection>
+
+        <LegalSection title={choices.title}>
+          <p>{choices.body}</p>
         </LegalSection>
 
         <LegalSection title={general.title}>
@@ -98,45 +113,45 @@ export default function CookiePolicyPage() {
         <LegalSection title={used.title}>
           <p>
             {COMPANY.websiteHost}
-            {used.p1Start}
+            {used.introStart}
           </p>
-          <ul className="list-disc space-y-2 pl-5">
-            <li>
-              <strong>{used.typeLabel}</strong> {used.typeValue}
-            </li>
-            <li>
-              <strong>{used.retentionLabel}</strong> {used.retentionValue}
-            </li>
-            <li>
-              <strong>{used.purposeLabel}</strong> {used.purposeValue}
-            </li>
+          <ul className="list-disc space-y-3 pl-5">
+            {used.categories.map((category) => (
+              <li key={category.name}>
+                <strong>{category.name}</strong> — {category.description}
+              </li>
+            ))}
           </ul>
-          <p>
-            {used.p2Start}
-            <ExtLink href="https://policies.google.com/privacy">{used.googlePrivacy}</ExtLink>
-            {used.p2End}
-          </p>
+          <p>{used.providersNote}</p>
+        </LegalSection>
+
+        <LegalSection title={optOut.title}>
+          <p>{optOut.body}</p>
         </LegalSection>
 
         <LegalSection title={contact.title}>
           <p>
             {contact.p1Start}
-            <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+            <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
+              {COMPANY.email}
+            </a>
+            {contact.p1Or}
+            <Link to={withLocale(locale, ROUTES.contact)} className="text-sw-blue hover:underline">
               {contact.contactPageLink}
             </Link>
             {contact.p1End}
           </p>
           <p>
             {contact.relatedPrefix}{' '}
-            <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.privacy)} className="text-sw-blue hover:underline">
               {contact.privacyLink}
             </Link>{' '}
             {contact.relatedSeparator}{' '}
-            <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.terms)} className="text-sw-blue hover:underline">
               {contact.termsLink}
             </Link>{' '}
             {contact.relatedSeparator}{' '}
-            <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.contact)} className="text-sw-blue hover:underline">
               {contact.contactLink}
             </Link>
           </p>

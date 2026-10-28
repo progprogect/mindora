@@ -11,27 +11,36 @@ import {
   updatePreferences,
 } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { useProgress, useSubscription } from '@/lib/lmsQueries'
 
 const PAST_DUE = new Set(['past_due', 'unpaid', 'incomplete'])
 
-function formatRenew(unix: number | null) {
-  if (!unix) return null
-  return new Date(unix * 1000).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+function dateTag(locale: string) {
+  return locale === 'ru' ? 'ru-RU' : 'en-GB'
 }
 
-function formatAccessUntil(unix: number | null) {
+function formatRenew(unix: number | null, locale: string) {
   if (!unix) return null
-  return new Date(unix * 1000).toLocaleDateString('en-GB', {
+  return new Date(unix * 1000).toLocaleDateString(dateTag(locale), { day: 'numeric', month: 'short' })
+}
+
+function formatAccessUntil(unix: number | null, locale: string) {
+  if (!unix) return null
+  return new Date(unix * 1000).toLocaleDateString(dateTag(locale), {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
   })
 }
 
-function memberSince(joinDate?: number) {
+function memberSince(joinDate?: number, locale?: string) {
   if (!joinDate) return null
-  return new Date(joinDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  return new Date(joinDate).toLocaleDateString(dateTag(locale ?? 'en'), {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 }
 
 function statusLabel(status: string, t: (key: string) => string) {
@@ -43,7 +52,7 @@ function statusLabel(status: string, t: (key: string) => string) {
 }
 
 export default function ProfilePage() {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const user = useCurrentUser()
   const { refresh, signOut } = useSession()
   const navigate = useNavigate()
@@ -69,7 +78,7 @@ export default function ProfilePage() {
   const initials = initialsFromName(name)
   const status = sub?.status || 'trialing'
   const pastDue = PAST_DUE.has(status)
-  const renew = formatRenew(sub?.currentPeriodEnd ?? null)
+  const renew = formatRenew(sub?.currentPeriodEnd ?? null, locale)
   const cancellable = Boolean(sub?.cancellable)
   const xp = progress.user.xp
   const streak = progress.user.streakCount
@@ -131,7 +140,7 @@ export default function ProfilePage() {
       ? 'text-sw-success'
       : 'text-sw-grey'
   const periodLabel = status === 'trialing' ? t('app.profile.trialEnds') : t('app.profile.renews')
-  const accessUntil = formatAccessUntil(sub?.currentPeriodEnd ?? null) ?? renew
+  const accessUntil = formatAccessUntil(sub?.currentPeriodEnd ?? null, locale) ?? renew
 
   return (
     <div className="min-h-screen bg-sw-grey-light pb-28">
@@ -175,7 +184,7 @@ export default function ProfilePage() {
               <p className="text-sm text-sw-grey truncate mt-0.5">{user?.email}</p>
               {user?.joinDate ? (
                 <p className="text-xs text-sw-grey mt-1">
-                  {t('app.profile.memberSince').replace('{date}', memberSince(user.joinDate) ?? '')}
+                  {t('app.profile.memberSince').replace('{date}', memberSince(user.joinDate, locale) ?? '')}
                 </p>
               ) : null}
             </div>
@@ -319,7 +328,7 @@ export default function ProfilePage() {
           </div>
         </div>
 
-        <Link to="/app/purchases" className="block w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border">
+        <Link to={withLocale(locale, "/app/purchases")} className="block w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border">
           <div className="flex items-center gap-3">
             <span className="text-lg">🛍️</span>
             <span className="text-sm font-bold text-sw-dark">{t('app.profile.myPurchases')}</span>
@@ -337,7 +346,7 @@ export default function ProfilePage() {
             setSigningOut(true)
             try {
               await signOut()
-              navigate('/login', { replace: true })
+              navigate(withLocale(locale, '/login'), { replace: true })
             } catch {
               setSigningOut(false)
             }
@@ -348,7 +357,7 @@ export default function ProfilePage() {
         </button>
 
         <a
-          href="/support?chat=open"
+          href={withLocale(locale, "/support?chat=open")}
           className="block w-full bg-white rounded-2xl p-4 shadow-sm border border-sw-grey-border text-center"
         >
           <span className="text-sm font-semibold text-sw-grey">{t('app.profile.needHelp')}</span>

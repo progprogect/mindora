@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../authorisation/src/i18n/locale'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useI18n } from '../../../../authorisation/src/i18n/I18nProvider'
@@ -61,7 +62,7 @@ export default function SaQuizPage() {
       params.delete('redirect_status')
       const clean = params.toString()
       window.history.replaceState({}, '', window.location.pathname + (clean ? `?${clean}` : ''))
-      navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
+      navigate(withLocale(locale, `/checkout/setup?trial=1&funnel=${FUNNEL}`))
     }
   }, [navigate])
 
@@ -121,10 +122,10 @@ export default function SaQuizPage() {
           onPercentOffResolved={setPercentOff}
           onCheckoutSuccess={() => {
             window.localStorage.setItem('sw_checkout_completed', 'true')
-            window.location.href = `/checkout/setup?trial=1&funnel=${FUNNEL}`
+            window.location.href = withLocale(locale, `/checkout/setup?trial=1&funnel=${FUNNEL}`)
           }}
           onExpiredPlanContinue={(productId) => {
-            window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`
+            window.location.href = withLocale(locale, `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`)
           }}
         />
       )

@@ -25,7 +25,7 @@ const chargeSchema = z.object({
 })
 
 function sanitizeReturnPath(raw: string | undefined): string {
-  const fallback = '/app/dashboard'
+  const fallback = '/en/app/dashboard'
   if (!raw) return fallback
   const trimmed = raw.trim()
   if (

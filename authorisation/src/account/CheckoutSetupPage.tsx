@@ -14,11 +14,12 @@ import { FOCUS_FROM_QUIZ, readQuizResults } from '@/lib/quizResults'
 import { track } from '@/lib/track'
 import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function InboxHint({ email }: { email: string }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const domain = email.split('@')[1]?.toLowerCase() || ''
   const provider =
     domain === 'gmail.com' || domain === 'googlemail.com'
@@ -51,7 +52,7 @@ function SetupAuthenticated() {
   const navigate = useNavigate()
   const user = useCurrentUser()
   const { refresh } = useSession()
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const ran = useRef(false)
 
   useEffect(() => {
@@ -65,10 +66,10 @@ function SetupAuthenticated() {
       if (funnel) {
         const focus = FOCUS_FROM_QUIZ[funnel]
         void updateFunnelSource({ funnelSource: funnel, focusCategory: focus }).finally(() =>
-          navigate('/app/dashboard', { replace: true }),
+          navigate(withLocale(locale, '/app/dashboard'), { replace: true }),
         )
       } else {
-        navigate('/app/dashboard', { replace: true })
+        navigate(withLocale(locale, '/app/dashboard'), { replace: true })
       }
       return
     }
@@ -77,10 +78,10 @@ function SetupAuthenticated() {
       if (funnel) {
         const focus = FOCUS_FROM_QUIZ[funnel]
         void updateFunnelSource({ funnelSource: funnel, focusCategory: focus }).finally(() =>
-          navigate('/account/welcome', { replace: true }),
+          navigate(withLocale(locale, '/account/welcome'), { replace: true }),
         )
       } else {
-        navigate('/account/welcome', { replace: true })
+        navigate(withLocale(locale, '/account/welcome'), { replace: true })
       }
       return
     }
@@ -134,12 +135,12 @@ function SetupAuthenticated() {
         await sync()
         await refresh({ silent: true })
         track('otp')
-        navigate('/account/welcome', { replace: true })
+        navigate(withLocale(locale, '/account/welcome'), { replace: true })
       })
       .catch(async () => {
         await sync()
         track('otp_profile_error')
-        navigate('/account/welcome', { replace: true })
+        navigate(withLocale(locale, '/account/welcome'), { replace: true })
       })
   }, [user, navigate, refresh])
 
@@ -437,7 +438,7 @@ function SetupForm() {
 }
 
 function CheckoutLoading() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-3">
       <div className="w-8 h-8 border-4 border-sw-grey-border border-t-sw-blue rounded-full animate-spin" />

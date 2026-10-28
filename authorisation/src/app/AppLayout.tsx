@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import AppNavFooter from '@/app/AppNavFooter'
 import MindoraFab from '@/app/MindoraFab'
-import { initialsFromName, PLAN_TIERS } from '@/app/mockUser'
+import { initialsFromName, PLAN_TIER_LABEL_KEYS, PLAN_TIERS } from '@/app/mockUser'
 import { useCurrentUser, useSession } from '@/auth/session'
 import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 export default function AppLayout() {
@@ -18,7 +19,7 @@ export default function AppLayout() {
     if (menuOpen) setMenuOpen(false)
   }
   const { signOut } = useSession()
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const user = useCurrentUser()
   const hideChrome =
     pathname.startsWith('/app/mindora') ||
@@ -27,10 +28,10 @@ export default function AppLayout() {
     pathname.startsWith('/app/certificate/') ||
     /^\/app\/courses\/[^/]+\/[^/]+$/.test(pathname)
   const showWordmark = pathname === '/app/dashboard'
-  const name = user?.name || 'Friend'
+  const name = user?.name || t('app.common.friend')
   const initials = initialsFromName(name)
   const tierKey = user?.planTier && user.planTier in PLAN_TIERS ? (user.planTier as keyof typeof PLAN_TIERS) : 'week4'
-  const plan = PLAN_TIERS[tierKey]
+  const planLabel = t(PLAN_TIER_LABEL_KEYS[tierKey])
 
   useEffect(() => {
     if (!menuOpen) return
@@ -42,7 +43,7 @@ export default function AppLayout() {
   const handleSignOut = async () => {
     setMenuOpen(false)
     await signOut()
-    navigate('/login', { replace: true })
+    navigate(withLocale(locale, '/login'), { replace: true })
   }
 
   return (
@@ -68,7 +69,7 @@ export default function AppLayout() {
                   <div className="absolute right-0 top-11 bg-white rounded-xl shadow-xl border border-sw-grey-border py-1 w-44 z-50">
                     <div className="px-3 py-2.5 border-b border-sw-grey-border">
                       <p className="text-xs font-bold text-sw-dark truncate">{name}</p>
-                      <p className="text-xs text-sw-grey mt-0.5">{plan.label}</p>
+                      <p className="text-xs text-sw-grey mt-0.5">{planLabel}</p>
                     </div>
                     <div className="px-3 py-2 border-b border-sw-grey-border">
                       <LanguageSwitcher />

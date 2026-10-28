@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { CompanyDetails, LegalCard, LegalHero, LegalSection } from '@/marketing/components/LegalBlocks'
 import { COMPANY } from '@/marketing/data/company'
@@ -29,6 +30,8 @@ export default function PrivacyPolicyPage() {
   const { locale } = useI18n()
   const copy = privacyPolicyCopy(locale)
   const nav = NAV_COPY[locale]
+  const additional = copy.sections.additional
+  const rights = copy.sections.rights
   usePageTitle(copy.pageTitle)
 
   return (
@@ -45,6 +48,13 @@ export default function PrivacyPolicyPage() {
       />
       <LegalCard>
         <LegalSection title={copy.sections.processing.title}>
+          <p>
+            {copy.intro.p1Start}
+            <a href={COMPANY.website} className="text-sw-blue hover:underline">
+              {COMPANY.websiteHost}
+            </a>
+            {copy.intro.p1End}
+          </p>
           <p>{copy.sections.processing.intro}</p>
           {copy.processors.map((processor) => (
             <Processor
@@ -54,23 +64,38 @@ export default function PrivacyPolicyPage() {
               personalDataLabel={copy.personalDataLabel}
             />
           ))}
+          <p>
+            {copy.sections.processing.afterProcessorsBeforeLink}
+            <Link to={withLocale(locale, ROUTES.cookie)} className="text-sw-blue hover:underline">
+              {nav.cookies}
+            </Link>
+            {copy.sections.processing.afterProcessorsAfterLink}
+          </p>
         </LegalSection>
 
         <LegalSection title={copy.sections.optOut.title}>
           <p>
             {copy.sections.optOut.beforeLink}
-            <Link to={ROUTES.cookie} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.cookie)} className="text-sw-blue hover:underline">
               {nav.cookies}
             </Link>
             {copy.sections.optOut.afterLink}
           </p>
         </LegalSection>
 
-        <LegalSection title={copy.sections.additional.title}>
-          <h3 className="font-semibold text-sw-dark">{copy.sections.additional.retentionTitle}</h3>
-          <p>{copy.sections.additional.retentionBody}</p>
-          <h3 className="font-semibold text-sw-dark">{copy.sections.additional.onlineSaleTitle}</h3>
-          <p>{copy.sections.additional.onlineSaleBody}</p>
+        <LegalSection title={additional.title}>
+          <h3 className="font-semibold text-sw-dark">{additional.directCollectTitle}</h3>
+          <p>{additional.directCollectBody}</p>
+          <h3 className="font-semibold text-sw-dark">{additional.onlineSaleTitle}</h3>
+          <p>{additional.onlineSaleBody}</p>
+          <h3 className="font-semibold text-sw-dark">{additional.marketingTitle}</h3>
+          <p>{additional.marketingBody}</p>
+          <h3 className="font-semibold text-sw-dark">{additional.retentionTitle}</h3>
+          <p>{additional.retentionBody}</p>
+          <h3 className="font-semibold text-sw-dark">{additional.securityTitle}</h3>
+          <p>{additional.securityBody}</p>
+          <h3 className="font-semibold text-sw-dark">{additional.breachTitle}</h3>
+          <p>{additional.breachBody}</p>
         </LegalSection>
 
         <LegalSection title={copy.sections.legalBases.title}>
@@ -79,6 +104,31 @@ export default function PrivacyPolicyPage() {
 
         <LegalSection title={copy.sections.transfers.title}>
           <p>{copy.sections.transfers.body}</p>
+        </LegalSection>
+
+        <LegalSection title={rights.title}>
+          <p>{rights.intro}</p>
+          <ul className="list-disc space-y-2 pl-5">
+            {rights.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p>
+            {rights.exerciseBeforeEmail}
+            <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
+              {COMPANY.email}
+            </a>
+            {rights.exerciseAfterEmail}
+            <a
+              href="https://www.ico.org.uk"
+              className="text-sw-blue hover:underline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {rights.icoUrl}
+            </a>
+            {rights.exerciseEnd}
+          </p>
         </LegalSection>
 
         <LegalSection title={copy.sections.contact.title}>
@@ -95,15 +145,15 @@ export default function PrivacyPolicyPage() {
           <CompanyDetails />
           <p>
             {copy.sections.contact.relatedPrefix}{' '}
-            <Link to={ROUTES.cookie} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.cookie)} className="text-sw-blue hover:underline">
               {nav.cookies}
             </Link>{' '}
             {copy.sections.contact.relatedSeparator}{' '}
-            <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.terms)} className="text-sw-blue hover:underline">
               {nav.terms}
             </Link>{' '}
             {copy.sections.contact.relatedSeparator}{' '}
-            <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+            <Link to={withLocale(locale, ROUTES.contact)} className="text-sw-blue hover:underline">
               {nav.contact}
             </Link>
           </p>

@@ -18,10 +18,12 @@ import {
 import { buyOffer, recordUpsellEvent } from '@/lib/api'
 import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
-import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
+import { armReviewMode, isReviewPurchaseBlocked, reviewPurchaseBlockedMessage } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
 import { COMPANY } from '@/shared/company'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
+import { ruCount } from '@/i18n/ruPlural'
 
 function tf(t: (key: string) => string, key: string, vars: Record<string, string | number | undefined> = {}) {
   let s = t(key)
@@ -71,16 +73,16 @@ const INTERIORS = [
 
 function UnauthRedirect() {
   useEffect(() => {
-    window.location.href = '/login'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/login')
   }, [])
   return <AuthSpinner />
 }
 
 function BounceDashboard() {
   useEffect(() => {
-    window.location.href = '/app/dashboard'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/app/dashboard')
   }, [])
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -134,7 +136,7 @@ function CategoryIcon({ icon }: { icon: string }) {
 }
 
 function ChargeNote({ hasSavedCard }: { hasSavedCard: boolean }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const price = money(PLANNER_OTO_CENTS)
   const list = money(PLANNER_LIST_CENTS)
   return (
@@ -169,7 +171,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 }
 
 function SuccessScreen() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="flex min-h-screen items-center justify-center bg-white px-4">
       <div className="max-w-sm text-center">
@@ -233,7 +235,7 @@ function CheckIcon({ variant }: { variant: 'tick' | 'minus' | 'pdf' }) {
 }
 
 export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const { planners: plannerList, categories: plannerCategories } = plannerContent(locale)
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
@@ -272,7 +274,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   const buy = async () => {
     if (busy || state === 'success') return
     if (isReviewPurchaseBlocked()) {
-      setError(REVIEW_PURCHASE_BLOCKED)
+      setError(reviewPurchaseBlockedMessage(locale))
       return
     }
     setState('processing')
@@ -312,7 +314,11 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   const oto = money(PLANNER_OTO_CENTS)
   const list = money(PLANNER_LIST_CENTS)
   const single = money(PLANNER_SINGLE_CENTS)
-  const areas = plannerCategories.length
+  const areasCount = plannerCategories.length
+  const plannerCountLabel = (n: number) =>
+    locale === 'ru' ? ruCount(n, 'планер', 'планера', 'планеров') : String(n)
+  const areasLabel =
+    locale === 'ru' ? ruCount(areasCount, 'сфера', 'сферы', 'сфер') : String(areasCount)
 
   return (
     <>
@@ -331,7 +337,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               <span className="text-sw-blue">{t('account.planners.heroTitle2')}</span>
             </h1>
             <p className="mx-auto mt-4 max-w-md text-center text-base leading-relaxed text-sw-dark sm:text-lg">
-              {tf(t, 'account.planners.heroSub', { count: i, price: oto })}
+              {tf(t, 'account.planners.heroSub', { count: plannerCountLabel(i), price: oto })}
             </p>
             <p
               data-testid="planner-hero-subline"
@@ -456,7 +462,10 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 <span className="text-sw-blue">{t('account.planners.compareTitle2')}</span>
               </h2>
               <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-sw-grey sm:text-base">
-                {tf(t, 'account.planners.compareSub', { compare: COMPARE_COUNT, count: i })}
+                {tf(t, 'account.planners.compareSub', {
+                  compare: plannerCountLabel(COMPARE_COUNT),
+                  count: plannerCountLabel(i),
+                })}
               </p>
               <div className="relative mt-6 grid grid-cols-2 gap-3 sm:gap-5">
                 <div className="rounded-2xl border border-sw-coral/30 bg-sw-coral/10 p-4 text-center">
@@ -528,7 +537,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
               <h2 className="mt-3 text-center text-[1.75rem] font-extrabold leading-[1.1] text-sw-dark sm:text-4xl">
                 {t('account.planners.oneBundle')}
                 <br />
-                <span className="text-sw-blue">{tf(t, 'account.planners.areasOfLife', { areas })}</span>
+                <span className="text-sw-blue">{tf(t, 'account.planners.areasOfLife', { areas: areasLabel })}</span>
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-balance text-center text-[15px] leading-relaxed text-sw-grey sm:text-base">
                 {t('account.planners.categoriesSub')}
@@ -648,7 +657,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                   {
                     titleKey: 'account.planners.how2Title',
                     bodyKey: 'account.planners.how2Body',
-                    vars: { areas },
+                    vars: { areas: areasCount },
                   },
                   {
                     titleKey: 'account.planners.how3Title',
@@ -794,7 +803,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                 />
                 <FaqItem
                   question={t('account.planners.faqWhatQ')}
-                  answer={tf(t, 'account.planners.faqWhatA', { count: i, pages, areas })}
+                  answer={tf(t, 'account.planners.faqWhatA', { count: i, pages, areas: areasCount })}
                 />
                 <FaqItem
                   question={t('account.planners.faqOneQ')}

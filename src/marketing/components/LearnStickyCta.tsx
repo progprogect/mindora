@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
+import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 
 export default function LearnStickyCta({
   show,
@@ -14,6 +16,9 @@ export default function LearnStickyCta({
   backgroundColor?: string
   className?: string
 }) {
+  const { locale } = useI18n()
+  const target = withLocale(locale, href)
+
   return (
     <div
       className={`fixed right-0 bottom-0 left-0 z-50 transition-transform duration-300 sm:hidden ${
@@ -26,7 +31,7 @@ export default function LearnStickyCta({
     >
       <div className="px-4 pt-3 pb-3">
         <Link
-          to={href}
+          to={target}
           className={`flex items-center justify-center gap-2 rounded-full py-4 text-sm font-extrabold text-white shadow-lg transition-all active:scale-[0.98] ${className ?? ''}`}
           style={backgroundColor ? { backgroundColor } : undefined}
         >

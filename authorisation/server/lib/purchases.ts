@@ -1,4 +1,4 @@
-import { eq } from 'drizzle-orm'
+import { and, eq } from 'drizzle-orm'
 import { db } from '../db/index.js'
 import { purchases } from '../db/schema.js'
 
@@ -42,6 +42,39 @@ export const COACH_SKU = 'mindora-ai-coach'
 export const COACH_SKU_ALIAS = 'wise-ai-coach'
 const COACH_SKUS = [COACH_SKU, COACH_SKU_ALIAS] as const
 
+/**
+ * One-time $1 funnel kits — permanent access, independent of subscription.
+ * `kit-claudecert` / `kit-challenge` are retired (quizzes use trial-intent again) but kept
+ * so any already-recorded purchases continue to unlock courses.
+ */
+export const KIT_SKUS = ['kit-starter', 'kit-guide', 'kit-claudecert', 'kit-challenge'] as const
+export type KitSku = (typeof KIT_SKUS)[number]
+
+export function isKitSku(sku: string): sku is KitSku {
+  return (KIT_SKUS as readonly string[]).includes(sku)
+}
+
+export function kitSkuForKit(kit: string): KitSku | null {
+  if (kit === 'starter') return 'kit-starter'
+  if (kit === 'guide') return 'kit-guide'
+  if (kit === 'claudecert') return 'kit-claudecert'
+  if (kit === 'challenge') return 'kit-challenge'
+  return null
+}
+
+export function skusForKit(kit: string): string[] {
+  const kitSku = kitSkuForKit(kit)
+  if (!kitSku) return []
+  // Starter kit includes the Let's Get Productive planner (README).
+  if (kit === 'starter') return [kitSku, 'planner-lets-get-productive']
+  return [kitSku]
+}
+
+export async function hasAnyKit(userId: string): Promise<boolean> {
+  const rows = await listPurchases(userId)
+  return rows.some((row) => isKitSku(row.sku))
+}
+
 export function isCoachOffer(offerSlug: string) {
   return offerSlug === COACH_SKU || offerSlug === COACH_SKU_ALIAS
 }
@@ -52,6 +85,7 @@ export function offerSlugsForLookup(offerSlug: string): string[] {
 }
 
 export function offerAmountCents(offerSlug: string): number | null {
+  if (isKitSku(offerSlug)) return 100
   if (offerSlug === 'planner-bundle') return 495
   if (offerSlug === 'planner-bundle-library') return 795
   if (offerSlug === 'ultimate-prompt-library-oto') return 997
@@ -62,6 +96,10 @@ export function offerAmountCents(offerSlug: string): number | null {
 }
 
 export function offerCheckoutName(offerSlug: string): string {
+  if (offerSlug === 'kit-starter') return 'Mindora AI Starter Kit'
+  if (offerSlug === 'kit-guide') return 'Mindora Claude AI Guide Kit'
+  if (offerSlug === 'kit-claudecert') return 'Mindora Claude AI Learning Plan'
+  if (offerSlug === 'kit-challenge') return 'Mindora 28-Day AI Plan'
   if (offerSlug === 'ultimate-prompt-library' || offerSlug === 'ultimate-prompt-library-oto') {
     return 'Prompt Library'
   }
@@ -81,7 +119,17 @@ export function skusForOffer(offerSlug: string): string[] {
   }
   if (offerSlug === 'ultimate-prompt-library-oto') return ['ultimate-prompt-library']
   if (isCoachOffer(offerSlug)) return [...COACH_SKUS]
+  if (offerSlug.startsWith('kit-')) {
+    const kit = offerSlug.slice('kit-'.length)
+    return skusForKit(kit)
+  }
   return [offerSlug]
+}
+
+export async function recordKitPurchase(userId: string, kit: string) {
+  for (const sku of skusForKit(kit)) {
+    await recordPurchase(userId, sku)
+  }
 }
 
 export async function ownsOffer(userId: string, offerSlug: string) {
@@ -114,4 +162,30 @@ export async function recordPurchase(userId: string, offerSlug: string) {
       // unique — already owned
     }
   }
+}
+
+/**
+ * Revoke SKUs granted by an offer refund. Never removes kit SKUs or SKUs
+ * still owed by an owned kit (e.g. starter's Let's Get Productive planner).
+ */
+export async function revokeOfferPurchase(userId: string, offerSlug: string): Promise<string[]> {
+  const toRemove = new Set(skusForOffer(offerSlug))
+  for (const sku of KIT_SKUS) toRemove.delete(sku)
+
+  const owned = await listPurchases(userId)
+  for (const row of owned) {
+    if (!isKitSku(row.sku)) continue
+    const kit = row.sku.slice('kit-'.length)
+    for (const keep of skusForKit(kit)) toRemove.delete(keep)
+  }
+
+  const removed: string[] = []
+  for (const sku of toRemove) {
+    const deleted = await db
+      .delete(purchases)
+      .where(and(eq(purchases.userId, userId), eq(purchases.sku, sku)))
+      .returning({ sku: purchases.sku })
+    if (deleted[0]) removed.push(deleted[0].sku)
+  }
+  return removed
 }

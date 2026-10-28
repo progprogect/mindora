@@ -3,6 +3,8 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { checkoutOffers } from '../db/schema.js'
+import { createDollarCheckoutSession } from '../lib/funnelCheckout.js'
+import { landingProduct, resolveLandingKit } from '../lib/funnelKits.js'
 import { ALREADY_SUBSCRIBED_ERROR, findBlockingSubscription } from '../lib/subscription.js'
 import { getStripe, isStripeConfigured } from '../lib/stripe.js'
 
@@ -20,6 +22,15 @@ const trialSchema = z.object({
   email: z.string().min(1),
   productId: z.string().min(1),
   funnel: z.string().min(1),
+})
+
+const landingCheckoutSchema = z.object({
+  variant: z.string().optional(),
+  kit: z.string().optional(),
+  block: z.string().optional(),
+  exit_bonus: z.boolean().optional(),
+  lang: z.enum(['en', 'ru']).optional().default('en'),
+  utm: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
 })
 
 async function findOrCreateCustomer(email: string, funnel: string, productId: string) {
@@ -80,6 +91,56 @@ checkoutRoutes.post('/checkout/offer/percent', async (c) => {
     })
   }
   return c.json({ percentOff })
+})
+
+function appendUtmMetadata(
+  metadata: Record<string, string>,
+  utm: string | Record<string, string> | undefined,
+) {
+  if (!utm) return
+  if (typeof utm === 'string') {
+    const params = new URLSearchParams(utm.startsWith('?') ? utm.slice(1) : utm)
+    for (const [key, value] of params.entries()) {
+      if (key.startsWith('utm_') && value) metadata[key.slice(0, 40)] = value.slice(0, 500)
+    }
+    return
+  }
+  for (const [key, value] of Object.entries(utm)) {
+    if (value) metadata[key.slice(0, 40)] = String(value).slice(0, 500)
+  }
+}
+
+checkoutRoutes.post('/checkout', async (c) => {
+  const parsed = landingCheckoutSchema.safeParse(await c.req.json())
+  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  const kit = resolveLandingKit({ kit: parsed.data.kit, variant: parsed.data.variant })
+  if (!kit) return c.json({ error: 'Unknown funnel kit' }, 400)
+  if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
+  const product = landingProduct(kit)
+  const lang = parsed.data.lang
+  const metadata: Record<string, string> = {
+    kit,
+    lang,
+    funnel: product.funnelSource,
+  }
+  if (parsed.data.block) metadata.block = parsed.data.block
+  if (parsed.data.exit_bonus) metadata.exit_bonus = '1'
+  appendUtmMetadata(metadata, parsed.data.utm)
+  try {
+    const { url } = await createDollarCheckoutSession({
+      c,
+      kit,
+      productName: product.name,
+      productDescription: product.description,
+      lang,
+      cancelPath: product.cancelPath,
+      metadata,
+    })
+    return c.json({ url })
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Stripe request failed'
+    return c.json({ error: message }, 502)
+  }
 })
 
 checkoutRoutes.post('/checkout/trial-intent', async (c) => {

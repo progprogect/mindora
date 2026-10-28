@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- переходы между шагами: страница показывается только когда она уже наверху (без прыжка вниз-вверх) -->
+<style id="nav-hide">html{opacity:0}</style>
+<script>
+(function(){
+  try { history.scrollRestoration = 'manual'; } catch(e) {}
+  function top(){ window.scrollTo(0,0); document.documentElement.scrollTop = 0; if (document.body) document.body.scrollTop = 0;
+    try { document.documentElement.scrollIntoView({block:'start', behavior:'instant'}); } catch(e) {} }
+  function reveal(){ var s = document.getElementById('nav-hide'); if (s) s.remove(); }
+  function show(){ top(); requestAnimationFrame(function(){ top(); requestAnimationFrame(function(){ top(); reveal(); }); }); }
+  document.addEventListener('DOMContentLoaded', show);
+  addEventListener('pageshow', function(e){ if (e.persisted) { document.documentElement.style.opacity = ''; show(); } });
+  setTimeout(reveal, 1500);
+  window.mindoraTop = top;
+  /* переход на следующий шаг: прячем страницу, поднимаем наверх, ждём 2 кадра, уходим */
+  window.mindoraGo = function(url){ document.documentElement.style.opacity = '0'; top();
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ location.href = url; }); }); };
+})();
+</script>
+
+<title>Mindora Academy — Verify your email</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  DEV NOTES — /account/verify (success_url Stripe → сюда, потом /account/membership)
+  - Экран 1: email подставлен из Stripe Checkout (session.customer_details.email), можно исправить.
+    Continue → POST /api/verify/send {token, email}
+      → если email изменён: обновить email аккаунта и Stripe Customer.
+      → отправить письмо с 6-значным кодом (срок 10 минут, не более 5 попыток ввода).
+  - Экран 2: ввод кода. Verify & continue → POST /api/verify/check {token, code}
+      → ок: email подтверждён, логин в аккаунт → экран 3.
+  - Экран 3: имя. Continue → POST /api/account/name {token, name} → редирект на /account/membership (Step 2/6).
+    Воронка 3 (квизы): имя подставлено из квиза, дальше так же → /account/membership.
+    Имя используется в письмах, приветствии и на сертификате.
+      → ошибка: сообщение под полем, поле очищается.
+  - Resend code: доступно через 30 с (таймер на кнопке). Change email → экран 1.
+  - Open Gmail / Outlook: показываем по домену почты.
+  - Доступ к купленному продукту уже открыт после оплаты; верификация только подтверждает email.
+  - preview:true — без бэкенда подходит любой 6-значный код.
+-->
+<style>
+:root{--blue:#2D5BE3;--blue-d:#2147C2;--blue-soft:#EAF0FF;--ink:#0F1733;--muted:#5A6380;--line:#E2E7F1;--bg:#F6F8FC;--green:#1FA971;--green-soft:#E5F7EF;--red:#E5484D;--sun-soft:#FFF8E1}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid #FFC547;outline-offset:2px;border-radius:6px}
+header{display:flex;align-items:center;justify-content:center;height:68px;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:6px;font-weight:800;color:var(--blue);font-size:18px}
+.logo img{height:34px}
+.bar{height:4px;background:var(--line)}.bar i{display:block;height:100%;width:33%;background:var(--blue);transition:width .3s}
+main{max-width:460px;margin:0 auto;padding:56px 20px 64px;text-align:center}
+.step[hidden]{display:none}
+.ic{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;font-size:36px}
+.ic.party{background:var(--green-soft)}.ic.mail{background:var(--blue-soft)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15;text-wrap:balance}
+.sub{color:var(--muted);margin-top:10px;font-size:16px}
+.paid{display:inline-flex;gap:6px;align-items:center;margin-top:14px;background:var(--green-soft);color:#11744C;font-weight:700;font-size:13px;border-radius:999px;padding:6px 12px}
+.warn{margin-top:22px;background:var(--sun-soft);border:1px solid #F2D58A;border-radius:14px;padding:14px 16px;font-size:14px;color:#7A5200}
+label{display:block;text-align:left;font-weight:700;font-size:15px;margin:22px 0 8px}
+input.em{width:100%;font:500 18px 'Plus Jakarta Sans',sans-serif;color:var(--ink);border:2px solid var(--line);border-radius:14px;padding:16px 18px;outline:none}
+input.em:focus{border-color:var(--blue)}
+.bad input.em,.bad .code{border-color:var(--red)}
+.msg{display:none;color:var(--red);font-size:14px;margin-top:8px;text-align:left}
+.bad .msg{display:block}
+.btn{display:block;width:100%;margin-top:16px;background:var(--blue);color:#fff;font:700 18px/1.2 'Plus Jakarta Sans',sans-serif;border:0;border-radius:14px;padding:18px;cursor:pointer;transition:background .15s,opacity .15s}
+.btn:hover{background:var(--blue-d)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.note{color:var(--muted);font-size:13px;margin-top:14px}
+.to{font-weight:800;font-size:17px;margin-top:4px;word-break:break-all}
+.open{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;border:2px solid var(--line);border-radius:14px;padding:14px;font-weight:700;color:var(--ink);text-decoration:none}
+.open:hover{border-color:var(--blue)}
+.lbl{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--muted);margin:24px 0 8px}
+.code{display:flex;justify-content:center;gap:8px;border:2px solid var(--line);border-radius:14px;padding:14px}
+.code input{width:42px;height:52px;text-align:center;font:800 24px 'Plus Jakarta Sans',sans-serif;color:var(--ink);border:0;border-bottom:2px solid var(--line);outline:none;background:transparent}
+.code input:focus{border-bottom-color:var(--blue)}
+.code input::placeholder{color:#B6BDD0}
+.links{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:18px}
+.links button{background:none;border:0;font:600 15px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+.links .rs{color:var(--blue)}.links .rs:disabled{color:var(--muted);cursor:default}
+.links .ce{color:var(--muted)}
+.links i{width:1px;height:18px;background:var(--line)}
+.ok{display:none;margin-top:12px;color:#11744C;font-weight:600;font-size:14px}
+@media (max-width:400px){.code input{width:36px}}
+</style>
+</head>
+<body>
+<header><span class="logo"><img src="/funnel-assets/owl.png" alt="">Mindora academy</span></header>
+<div class="bar"><i id="bar"></i></div>
+
+<main>
+  <!-- STEP 1: confirm email -->
+  <section class="step" id="s1">
+    <div class="ic party">🎉</div>
+    <h1>You're in! Set up your account</h1>
+    <span class="paid">✓ Payment confirmed</span>
+    <p class="sub">Check the email you'd like to use for your account. We'll send a quick verification code.</p>
+    <div class="warn">⚠️ All login codes and course access emails will be sent to this address. Make sure it's an email you can access.</div>
+    <div id="f1">
+      <label for="email">Email address</label>
+      <input class="em" id="email" type="email" autocomplete="email" inputmode="email" placeholder="your@email.com">
+      <p class="msg">Enter a valid email address.</p>
+    </div>
+    <button class="btn" id="send">Continue</button>
+    <p class="note">We'll send a 6-digit code to verify your email. No password needed.</p>
+  </section>
+
+  <!-- STEP 2: enter code -->
+  <section class="step" id="s2" hidden>
+    <div class="ic mail">✉️</div>
+    <h1>Check your inbox</h1>
+    <p class="sub">We sent a 6-digit code to</p>
+    <p class="to" id="to"></p>
+    <a class="open" id="open" href="https://mail.google.com" target="_blank" rel="noopener">📧 <span id="openTxt">Open Gmail</span></a>
+    <p class="lbl">ENTER YOUR 6-DIGIT CODE</p>
+    <div id="f2">
+      <div class="code" id="code" role="group" aria-label="6-digit code">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 1" autocomplete="one-time-code">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 2">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 3">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 4">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 5">
+        <input inputmode="numeric" maxlength="1" placeholder="•" aria-label="Digit 6">
+      </div>
+      <p class="msg" id="codeMsg">That code doesn't match. Check the email and try again.</p>
+    </div>
+    <button class="btn" id="verify" disabled>Verify &amp; continue</button>
+    <p class="ok" id="sent">A new code is on its way.</p>
+    <div class="links"><button class="rs" id="resend">Resend code</button><i></i><button class="ce" id="change">Change email</button></div>
+    <p class="note">Code expires in 10 minutes. Check your spam folder if you don't see it.</p>
+  </section>
+
+  <!-- STEP 3: name -->
+  <section class="step" id="s3" hidden>
+    <div class="ic party">✅</div>
+    <span class="paid">✓ Email verified</span>
+    <h1 style="margin-top:14px">What should we call you?</h1>
+    <p class="sub">We'll personalise your AI plan and certificate with your name</p>
+    <div id="f3">
+      <input class="em" id="name" type="text" autocomplete="given-name" placeholder="Enter your first name" maxlength="40" aria-label="First name" style="margin-top:24px">
+      <p class="msg">Please enter your first name.</p>
+    </div>
+    <button class="btn" id="saveName" disabled>Continue</button>
+  </section>
+</main>
+
+<script>
+window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false, nextUrl:'/account/membership' };
+try { history.scrollRestoration = 'manual'; } catch(e) {}
+scrollTo(0,0);
+const $ = id => document.getElementById(id);
+const q = new URLSearchParams(location.search);
+$('email').value = q.get('email') || '';
+/* воронка 3 (квизы): имя уже известно из квиза — подставляем */
+try { if (q.get('kit')) sessionStorage.setItem('mindora_kit', q.get('kit')); } catch(e) {}
+const QUIZ = (()=>{ try { return ['challenge','claudecert'].includes(sessionStorage.getItem('mindora_kit')); } catch(e){ return false; } })();
+try { const n = sessionStorage.getItem('mindora_name'); if (QUIZ && n) { $('name').value = n; $('saveName').disabled = false; } } catch(e) {}
+const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
+const boxes = [...document.querySelectorAll('#code input')];
+const code = () => boxes.map(b => b.value).join('');
+
+function show(n){
+  $('s1').hidden = n !== 1; $('s2').hidden = n !== 2; $('s3').hidden = n !== 3;
+  $('bar').style.width = ['33%','66%','90%'][n-1];
+  scrollTo(0,0);
+  if (n === 1) $('email').focus(); else if (n === 2) { boxes.forEach(b => b.value=''); $('verify').disabled = true; boxes[0].focus(); } else $('name').focus();
+}
+function mailLink(e){
+  const d = e.split('@')[1] || '';
+  if (/gmail|googlemail/.test(d)) return ['https://mail.google.com','Open Gmail'];
+  if (/outlook|hotmail|live|msn/.test(d)) return ['https://outlook.live.com/mail','Open Outlook'];
+  if (/yahoo/.test(d)) return ['https://mail.yahoo.com','Open Yahoo Mail'];
+  if (/icloud|me\.com/.test(d)) return ['https://www.icloud.com/mail','Open iCloud Mail'];
+  return null;
+}
+async function post(url, body){
+  const r = await fetch(url, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)});
+  const d = await r.json().catch(() => ({})); if (!r.ok) throw new Error(d.message || 'Request failed'); return d;
+}
+
+let cooldown;
+function startCooldown(){
+  let t = 30; const b = $('resend'); b.disabled = true;
+  clearInterval(cooldown);
+  const tick = () => { b.textContent = t > 0 ? `Resend code (${t}s)` : 'Resend code'; if (t-- <= 0) { b.disabled = false; clearInterval(cooldown); } };
+  tick(); cooldown = setInterval(tick, 1000);
+}
+
+$('email').addEventListener('input', () => $('f1').classList.remove('bad'));
+$('email').addEventListener('keydown', e => { if (e.key === 'Enter') $('send').click(); });
+$('send').onclick = async () => {
+  const e = $('email').value.trim();
+  if (!validEmail(e)) { $('f1').classList.add('bad'); return; }
+  $('send').disabled = true; $('send').textContent = 'Sending code…';
+  try { await post('/api/verify/send', {token: FUNNEL.token, email: e}); }
+  catch(err) { if (!FUNNEL.preview) { $('send').disabled = false; $('send').textContent = 'Continue'; $('f1').classList.add('bad'); $('f1').querySelector('.msg').textContent = err.message + '. Please try again.'; return; } }
+  $('send').disabled = false; $('send').textContent = 'Continue';
+  $('to').textContent = e;
+  const m = mailLink(e); $('open').style.display = m ? 'flex' : 'none';
+  if (m) { $('open').href = m[0]; $('openTxt').textContent = m[1]; }
+  $('sent').style.display = 'none';
+  show(2); startCooldown();
+};
+
+boxes.forEach((b, i) => {
+  b.addEventListener('input', () => {
+    b.value = b.value.replace(/\D/g,'').slice(-1);
+    $('f2').classList.remove('bad');
+    if (b.value && i < 5) boxes[i+1].focus();
+    $('verify').disabled = code().length !== 6;
+    if (code().length === 6) $('verify').click();
+  });
+  b.addEventListener('keydown', e => { if (e.key === 'Backspace' && !b.value && i > 0) boxes[i-1].focus(); });
+  b.addEventListener('paste', e => {
+    const t = (e.clipboardData.getData('text') || '').replace(/\D/g,'').slice(0,6);
+    if (!t) return; e.preventDefault();
+    t.split('').forEach((c, j) => boxes[j] && (boxes[j].value = c));
+    boxes[Math.min(t.length,5)].focus();
+    $('verify').disabled = code().length !== 6;
+    if (code().length === 6) $('verify').click();
+  });
+});
+
+$('verify').onclick = async () => {
+  if (code().length !== 6 || $('verify').disabled && code().length !== 6) return;
+  $('verify').disabled = true; $('verify').textContent = 'Verifying…';
+  try { await post('/api/verify/check', {token: FUNNEL.token, code: code()}); }
+  catch(err) {
+    if (!FUNNEL.preview) {
+      $('verify').textContent = 'Verify & continue'; $('f2').classList.add('bad');
+      boxes.forEach(b => b.value=''); boxes[0].focus(); return;
+    }
+  }
+  $('verify').textContent = 'Verify & continue';
+  show(3);
+};
+const validName = v => /^[\p{L}][\p{L}' -]{0,39}$/u.test(v.trim());
+$('name').addEventListener('input', () => { $('f3').classList.remove('bad'); $('saveName').disabled = !validName($('name').value); });
+$('name').addEventListener('keydown', e => { if (e.key === 'Enter' && !$('saveName').disabled) $('saveName').click(); });
+$('saveName').onclick = async () => {
+  if (!validName($('name').value)) { $('f3').classList.add('bad'); return; }
+  $('saveName').disabled = true;
+  try { await post('/api/account/name', {token: FUNNEL.token, name: $('name').value.trim()}); } catch(e) {}
+  try { sessionStorage.setItem('mindora_name', $('name').value.trim()); sessionStorage.removeItem('mindora_owned'); } catch(e) {}
+  $('bar').style.width = '100%';
+  window.mindoraGo(FUNNEL.nextUrl);
+};
+$('resend').onclick = async () => {
+  try { await post('/api/verify/send', {token: FUNNEL.token, email: $('to').textContent}); } catch(e) {}
+  $('sent').style.display = 'block'; startCooldown();
+};
+$('change').onclick = () => show(1);
+show(1);
+</script>
+<script src="/funnel-assets/i18n.js"></script>
+</body>
+</html>

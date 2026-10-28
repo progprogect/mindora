@@ -7,11 +7,12 @@ import { useCurrentUser } from '@/auth/session'
 import { recordUpsellEvent, switchToAnnual } from '@/lib/api'
 import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useSubscription, useUpsellStatus } from '@/lib/lmsQueries'
-import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
+import { armReviewMode, isReviewPurchaseBlocked, reviewPurchaseBlockedMessage } from '@/lib/reviewMode'
 import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { MONEY_BACK_CHIP } from '@/shared/moneyBack'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 const OFFER = 'annual-upgrade'
 const PRICE = 59.99
@@ -20,16 +21,16 @@ const NEXT = '/account/upgrade-mindora'
 
 function UnauthRedirect() {
   useEffect(() => {
-    window.location.href = '/account/onboard'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/account/onboard')
   }, [])
   return <AuthSpinner />
 }
 
 function BounceWise() {
+  const { locale, t } = useI18n()
   useEffect(() => {
-    window.location.href = NEXT
-  }, [])
-  const { t } = useI18n()
+    window.location.href = withLocale(locale, NEXT)
+  }, [locale])
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -61,7 +62,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const priceStr = `$${PRICE}`
   const wasStr = `$${WAS}`
   return (
@@ -137,7 +138,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const priceStr = `$${PRICE}`
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
@@ -164,7 +165,7 @@ function SuccessScreen() {
 }
 
 export function AnnualOffer() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -200,7 +201,7 @@ export function AnnualOffer() {
   const buy = async () => {
     if (state === 'processing' || state === 'success') return
     if (isReviewPurchaseBlocked()) {
-      setError(REVIEW_PURCHASE_BLOCKED)
+      setError(reviewPurchaseBlockedMessage(locale))
       return
     }
     setState('processing')

@@ -29,6 +29,13 @@
       "when": 1761206400000,
       "tag": "0003_locale",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1761472800000,
+      "tag": "0004_materials",
+      "breakpoints": true
     }
   ]
 }

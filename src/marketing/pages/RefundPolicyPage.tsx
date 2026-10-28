@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { CompanyBox, CompanyDetails, LegalSection } from '@/marketing/components/LegalBlocks'
 import { COMPANY } from '@/marketing/data/company'
@@ -87,54 +88,105 @@ export default function RefundPolicyPage() {
 
       <main className="mx-auto max-w-3xl px-4 pt-10 pb-14 sm:px-6">
         <div className="space-y-10 rounded-2xl bg-white p-8 shadow-sm sm:p-12">
-          <LegalSection title={s.plainEnglish.title}>
-            <p>
-              {s.plainEnglish.p1Before}
-              {COMPANY.serviceName}
-              {s.plainEnglish.p1Mid}
-              <strong>{s.plainEnglish.p1Strong}</strong>
-              {s.plainEnglish.p1After}
-            </p>
-            <p>{s.plainEnglish.p2}</p>
-            <p>
-              {s.plainEnglish.p3Before}
-              <strong>{s.plainEnglish.p3Strong}</strong>
-              {s.plainEnglish.p3After}
-            </p>
-            <p>{s.plainEnglish.p4}</p>
+          <p>
+            {s.intro.p1Before}
+            {COMPANY.serviceName}
+            {s.intro.p1Mid}
+            <a href={COMPANY.website} className="text-sw-blue hover:underline">
+              {COMPANY.website}
+            </a>
+            {s.intro.p1After}
+          </p>
+
+          <LegalSection title={s.whatYouBuy.title}>
+            <p>{s.whatYouBuy.intro}</p>
+            <ul className="list-disc space-y-2 pl-5 text-sw-grey">
+              <li>
+                <strong>{s.whatYouBuy.entryLabel}</strong>
+                {s.whatYouBuy.entryDesc}
+              </li>
+              <li>
+                <strong>{s.whatYouBuy.paidTrialLabel}</strong>
+                {s.whatYouBuy.paidTrialDesc}
+              </li>
+              <li>
+                <strong>{s.whatYouBuy.membershipLabel}</strong>
+                {s.whatYouBuy.membershipDesc}
+              </li>
+              <li>
+                <strong>{s.whatYouBuy.upgradesLabel}</strong>
+                {s.whatYouBuy.upgradesDesc}
+              </li>
+              <li>
+                <strong>{s.whatYouBuy.addOnsLabel}</strong>
+                {s.whatYouBuy.addOnsDesc}
+              </li>
+              <li>
+                <strong>{s.whatYouBuy.coursesLabel}</strong>
+                {s.whatYouBuy.coursesDesc}
+              </li>
+            </ul>
+            <p>{s.whatYouBuy.note1}</p>
+            <p>{s.whatYouBuy.note2}</p>
           </LegalSection>
 
-          <LegalSection title={s.whoApplies.title}>
-            <p>
-              {s.whoApplies.p1Before}
-              <strong>{s.whoApplies.p1TrialStrong}</strong>
-              {s.whoApplies.p1Mid}
-              <strong>{s.whoApplies.p1ChargeStrong}</strong>
-              {s.whoApplies.p1After}
-            </p>
-            <p className="mt-4 mb-2 font-semibold text-sw-dark">{s.whoApplies.subscriptionsHeading}</p>
+          <LegalSection title={s.priceTrialRenewal.title}>
+            <p>{s.priceTrialRenewal.p1}</p>
+            <p>{s.priceTrialRenewal.p2}</p>
+          </LegalSection>
+
+          <LegalSection title={s.cancellations.title}>
+            <p>{s.cancellations.p1}</p>
+            <p>{s.cancellations.p2}</p>
+            <p>{s.cancellations.p3}</p>
+            <p>{s.cancellations.p4}</p>
+            <p>{s.cancellations.p5}</p>
+          </LegalSection>
+
+          <LegalSection title={s.refunds.title}>
+            <p>{s.refunds.intro}</p>
             <ul className="list-disc space-y-2 pl-5 text-sw-grey">
               <li>
-                <strong>{s.whoApplies.monthlyLabel}</strong> — {s.whoApplies.monthlyDesc}
+                <strong>{s.refunds.entryLabel}</strong>
+                {s.refunds.entryDesc}
               </li>
               <li>
-                <strong>{s.whoApplies.quarterlyLabel}</strong> — {s.whoApplies.quarterlyDesc}
+                <strong>{s.refunds.paidTrialLabel}</strong>
+                {s.refunds.paidTrialDesc}
               </li>
               <li>
-                <strong>{s.whoApplies.annualLabel}</strong> — {s.whoApplies.annualDesc}
+                <strong>{s.refunds.subscriptionsLabel}</strong>
+                {s.refunds.subscriptionsDesc}
+              </li>
+              <li>
+                <strong>{s.refunds.upgradesLabel}</strong>
+                {s.refunds.upgradesDesc}
+              </li>
+              <li>
+                <strong>{s.refunds.addOnsLabel}</strong>
+                {s.refunds.addOnsDesc}
+              </li>
+              <li>
+                <strong>{s.refunds.coursesLabel}</strong>
+                {s.refunds.coursesDesc}
               </li>
             </ul>
-            <p className="mt-4 mb-2 font-semibold text-sw-dark">{s.whoApplies.oneTimeHeading}</p>
+            <p>{s.refunds.note1}</p>
+            <p>{s.refunds.note2}</p>
+          </LegalSection>
+
+          <LegalSection title={s.consumerRights.title}>
+            <p>{s.consumerRights.p1}</p>
+            <p>{s.consumerRights.p2}</p>
             <ul className="list-disc space-y-2 pl-5 text-sw-grey">
-              <li>
-                <strong>{s.whoApplies.oneTimeItemLabel}</strong> — {s.whoApplies.oneTimeItemDesc}
-              </li>
+              <li>{s.consumerRights.duplicate}</li>
+              <li>{s.consumerRights.unauthorised}</li>
+              <li>{s.consumerRights.technical}</li>
             </ul>
-            <p className="mt-4">
-              {s.whoApplies.p2Before}
-              <strong>{s.whoApplies.p2OnceStrong}</strong>
-              {s.whoApplies.p2After}
-            </p>
+          </LegalSection>
+
+          <LegalSection title={s.earlierPurchases.title}>
+            <p>{s.earlierPurchases.body}</p>
           </LegalSection>
 
           <LegalSection title={s.howToRequest.title}>
@@ -145,66 +197,14 @@ export default function RefundPolicyPage() {
                   {COMPANY.email}
                 </a>
               </p>
-              <p className="mt-2 mb-1 text-sm text-sw-grey">{s.howToRequest.includeLabel}</p>
-              <ul className="list-disc space-y-1 pl-5 text-sm text-sw-grey">
-                <li>{s.howToRequest.includeName}</li>
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-sw-grey">
+                <li>{s.howToRequest.includeProduct}</li>
                 <li>{s.howToRequest.includeDate}</li>
-                <li>{s.howToRequest.includeReason}</li>
+                <li>{s.howToRequest.includeReceipt}</li>
+                <li>{s.howToRequest.includeDescription}</li>
               </ul>
             </CompanyBox>
-            <p>
-              {s.howToRequest.responseBefore}
-              <strong>{s.howToRequest.responseDaysStrong}</strong>
-              {s.howToRequest.responseMid}
-              <strong>{s.howToRequest.responseBankStrong}</strong>
-              {s.howToRequest.responseAfter}
-            </p>
-          </LegalSection>
-
-          <LegalSection title={s.afterWindow.title}>
-            <p>{s.afterWindow.intro}</p>
-            <ul className="list-disc space-y-2 pl-5 text-sw-grey">
-              <li>
-                <strong>{s.afterWindow.technicalLabel}</strong> — {s.afterWindow.technicalDesc}
-              </li>
-              <li>
-                <strong>{s.afterWindow.duplicateLabel}</strong> — {s.afterWindow.duplicateDesc}
-              </li>
-              <li>
-                <strong>{s.afterWindow.illnessLabel}</strong> — {s.afterWindow.illnessDesc}
-              </li>
-            </ul>
-          </LegalSection>
-
-          <LegalSection title={s.cancellations.title}>
-            <p>{s.cancellations.intro}</p>
-            <ul className="list-disc space-y-2 pl-5 text-sw-grey">
-              <li>{s.cancellations.access}</li>
-              <li>{s.cancellations.noCharges}</li>
-              <li>{s.cancellations.noAutoRefund}</li>
-            </ul>
-            <p>
-              {s.cancellations.cancelIntro}
-              <strong>{s.cancellations.profileStrong}</strong>
-              {s.cancellations.cancelMid}
-              <strong>{s.cancellations.cancelSubStrong}</strong>
-              {s.cancellations.cancelUnder}
-              <a href={`mailto:${COMPANY.email}`} className="text-sw-blue hover:underline">
-                {COMPANY.email}
-              </a>
-              {s.cancellations.cancelEnd}
-            </p>
-          </LegalSection>
-
-          <LegalSection title={s.trial.title}>
-            <p>
-              {s.trial.p1Before}
-              <strong>{s.trial.p1TrialStrong}</strong>
-              {s.trial.p1Mid}
-              <strong>{s.trial.p1GuaranteeStrong}</strong>
-              {s.trial.p1End}
-            </p>
-            <p>{s.trial.p2}</p>
+            <p>{s.howToRequest.response}</p>
           </LegalSection>
 
           <LegalSection title={s.chargebacks.title}>
@@ -216,19 +216,19 @@ export default function RefundPolicyPage() {
             <CompanyDetails />
             <p>
               {s.contact.relatedPrefix}{' '}
-              <Link to={ROUTES.terms} className="text-sw-blue hover:underline">
+              <Link to={withLocale(locale, ROUTES.terms)} className="text-sw-blue hover:underline">
                 {s.contact.termsLink}
               </Link>{' '}
               {s.contact.relatedSeparator}{' '}
-              <Link to={ROUTES.billing} className="text-sw-blue hover:underline">
+              <Link to={withLocale(locale, ROUTES.billing)} className="text-sw-blue hover:underline">
                 {s.contact.billingLink}
               </Link>{' '}
               {s.contact.relatedSeparator}{' '}
-              <Link to={ROUTES.privacy} className="text-sw-blue hover:underline">
+              <Link to={withLocale(locale, ROUTES.privacy)} className="text-sw-blue hover:underline">
                 {s.contact.privacyLink}
               </Link>{' '}
               {s.contact.relatedSeparator}{' '}
-              <Link to={ROUTES.contact} className="text-sw-blue hover:underline">
+              <Link to={withLocale(locale, ROUTES.contact)} className="text-sw-blue hover:underline">
                 {s.contact.contactLink}
               </Link>
             </p>

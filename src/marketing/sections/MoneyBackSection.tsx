@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
 import { homeSectionsCopy } from '@/marketing/data/homeSections'
@@ -59,7 +60,7 @@ export default function MoneyBackSection() {
             </p>
             <p className="text-sm text-sw-grey">
               {copy.footerPrefix}
-              <Link to={ROUTES.refund} className="font-medium text-sw-blue hover:underline">
+              <Link to={withLocale(locale, ROUTES.refund)} className="font-medium text-sw-blue hover:underline">
                 {copy.guaranteeLink}
               </Link>
             </p>

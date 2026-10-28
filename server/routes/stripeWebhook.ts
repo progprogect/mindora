@@ -2,10 +2,15 @@ import { eq } from 'drizzle-orm'
 import type { Context } from 'hono'
 import type Stripe from 'stripe'
 import { sendTrialReceiptEmail } from 'successwise-app/mail'
-import { recordPurchase } from 'successwise-app/purchases'
+import { recordPurchase, revokeOfferPurchase } from 'successwise-app/purchases'
 import { db } from '../db/index.js'
 import { processedStripePayments, products, profiles } from '../db/schema.js'
 import { loadEnv } from '../env.js'
+import {
+  fulfillDollarKitPurchase,
+  paymentMethodFromCheckoutSession,
+} from '../lib/funnelFulfillment.js'
+import { isKitCheckoutKey } from '../lib/funnelToken.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
 import { TRIAL_DAYS } from '../lib/trial.js'
 import {
@@ -96,6 +101,17 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
       console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
     }
     await markProcessedPayment(paymentIntentId, customerId, metadata.email)
+    return
+  }
+
+  // New $1 funnel Checkout — kit access only; subscription starts later on /account/membership.
+  // Fulfillment + markProcessed live on checkout.session.completed (do not mark here —
+  // PI often arrives first and would block kit grant).
+  if (metadata.kit && isKitCheckoutKey(metadata.kit)) {
+    console.log('[stripe webhook] kit payment_intent — subscription skipped', {
+      paymentIntentId,
+      kit: metadata.kit,
+    })
     return
   }
 
@@ -247,8 +263,15 @@ async function handleCheckoutSessionCompleted(object: Record<string, unknown>): 
   if (object.mode !== 'payment') return
   if (object.payment_status && object.payment_status !== 'paid') return
   const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
+  const session = object as unknown as Stripe.Checkout.Session
+
+  if (metadata.kit && isKitCheckoutKey(metadata.kit)) {
+    await fulfillKitCheckoutSession(session, metadata)
+    return
+  }
+
   if (!metadata.offerSlug) {
-    console.log('[stripe webhook] ignoring checkout.session without offerSlug')
+    console.log('[stripe webhook] ignoring checkout.session without offerSlug or kit')
     return
   }
   const userId = metadata.userId
@@ -256,6 +279,79 @@ async function handleCheckoutSessionCompleted(object: Record<string, unknown>): 
     await recordPurchase(userId, metadata.offerSlug)
   } else {
     console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
+  }
+}
+
+async function fulfillKitCheckoutSession(
+  session: Stripe.Checkout.Session,
+  metadata: Record<string, string>,
+): Promise<void> {
+  const kit = metadata.kit
+  if (!isKitCheckoutKey(kit)) return
+
+  const customerId = stripeRefId(session.customer)
+  const email =
+    metadata.email?.trim() ||
+    session.customer_details?.email?.trim() ||
+    session.customer_email?.trim() ||
+    ''
+  if (!customerId || !email) {
+    console.error('[stripe webhook] kit checkout missing customer or email', session.id, {
+      customerId,
+      email,
+    })
+    return
+  }
+
+  const paymentIntentId = stripeRefId(session.payment_intent)
+  if (paymentIntentId && (await isPaymentAlreadyProcessed(paymentIntentId))) {
+    console.log('[stripe webhook] kit checkout already processed', paymentIntentId)
+    return
+  }
+
+  const paymentMethodId = await paymentMethodFromCheckoutSession(session)
+  const lang = metadata.lang === 'ru' ? 'ru' : 'en'
+  const name = metadata.name?.trim() || session.customer_details?.name?.trim() || undefined
+
+  try {
+    const { userId } = await fulfillDollarKitPurchase({
+      kit,
+      email,
+      name,
+      lang,
+      stripeCustomerId: customerId,
+      paymentMethodId: paymentMethodId || undefined,
+    })
+    if (paymentIntentId) {
+      await markProcessedPayment(paymentIntentId, customerId, email)
+    }
+    await sendKitReceiptSafely(session, email)
+    console.log('[stripe webhook] kit fulfilled', {
+      sessionId: session.id,
+      kit,
+      userId,
+      customerId,
+    })
+  } catch (error) {
+    console.error('[stripe webhook] kit fulfillment failed', session.id, error)
+    throw error
+  }
+}
+
+async function sendKitReceiptSafely(session: Stripe.Checkout.Session, email: string): Promise<void> {
+  const amountCents =
+    typeof session.amount_total === 'number' && Number.isFinite(session.amount_total)
+      ? session.amount_total
+      : 100
+  const created = typeof session.created === 'number' ? session.created : Math.floor(Date.now() / 1000)
+  try {
+    await sendTrialReceiptEmail({
+      to: email,
+      amountCents,
+      paidAt: new Date(created * 1000),
+    })
+  } catch (error) {
+    console.error('[stripe webhook] kit receipt failed', session.id, error)
   }
 }
 
@@ -277,6 +373,67 @@ async function syncSubscriptionObject(object: Record<string, unknown>) {
 
 function eventIsScheduledCancel(sub: Stripe.Subscription): boolean {
   return Boolean(sub.cancel_at_period_end)
+}
+
+/** After retries exhaust (no next attempt), sync local status so catalog access closes; kit/upsells stay. */
+async function handleInvoicePaymentFailed(object: Record<string, unknown>): Promise<void> {
+  const customerId = stripeRefId(object.customer)
+  const subscriptionId = stripeRefId(object.subscription)
+  if (!customerId) return
+
+  const [profile] = await db.select().from(profiles).where(eq(profiles.stripeCustomerId, customerId)).limit(1)
+  if (!profile) return
+
+  const nextAttempt = object.next_payment_attempt
+  const attemptCount = typeof object.attempt_count === 'number' ? object.attempt_count : 0
+  console.log('[stripe webhook] invoice.payment_failed', {
+    invoice: object.id,
+    customerId,
+    subscriptionId,
+    attemptCount,
+    nextPaymentAttempt: nextAttempt ?? null,
+  })
+
+  if (!loadEnv().STRIPE_SECRET_KEY) return
+
+  try {
+    const stripe = getStripe()
+    if (subscriptionId) {
+      const remote = await stripe.subscriptions.retrieve(subscriptionId)
+      await linkStripeCustomer(profile.userId, customerId, remote)
+      return
+    }
+    const listed = await stripe.subscriptions.list({ customer: customerId, status: 'all', limit: 5 })
+    const remote = listed.data[0]
+    if (remote) await linkStripeCustomer(profile.userId, customerId, remote)
+  } catch (error) {
+    console.error('[stripe webhook] invoice.payment_failed sync failed', error)
+  }
+}
+
+/** Refund of a funnel/LMS upsell PI — revoke that offer only; kit purchases remain. */
+async function handleChargeRefunded(object: Record<string, unknown>): Promise<void> {
+  const paymentIntentId = stripeRefId(object.payment_intent)
+  if (!paymentIntentId || !loadEnv().STRIPE_SECRET_KEY) return
+
+  try {
+    const stripe = getStripe()
+    const pi = await stripe.paymentIntents.retrieve(paymentIntentId)
+    const offerSlug = pi.metadata?.offerSlug
+    const userId = pi.metadata?.userId
+    if (!offerSlug || !userId) {
+      console.log('[stripe webhook] charge.refunded without offerSlug/userId', paymentIntentId)
+      return
+    }
+    if (pi.metadata?.kit) {
+      console.log('[stripe webhook] charge.refunded kit — purchases kept', paymentIntentId)
+      return
+    }
+    const removed = await revokeOfferPurchase(userId, offerSlug)
+    console.log('[stripe webhook] charge.refunded revoked', { paymentIntentId, offerSlug, removed })
+  } catch (error) {
+    console.error('[stripe webhook] charge.refunded handler failed', error)
+  }
 }
 
 export async function stripeWebhookHandler(c: Context) {
@@ -337,6 +494,12 @@ export async function stripeWebhookHandler(c: Context) {
         console.log('[stripe webhook]', event.type, object.id ?? object.customer)
         break
       }
+      case 'invoice.payment_failed':
+        await handleInvoicePaymentFailed(event.data.object)
+        break
+      case 'charge.refunded':
+        await handleChargeRefunded(event.data.object)
+        break
       default:
         console.log('[stripe webhook] unhandled event', event.type)
     }

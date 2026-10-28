@@ -30,6 +30,7 @@ export const errorsEn = {
   'errors.could_not_start_chat': 'Could not start chat',
   'errors.not_found': 'Not found',
   'errors.forbidden': 'Forbidden',
+  'errors.course_locked': 'This course requires an active membership.',
 } as const
 
 export const errorsRu = {
@@ -63,4 +64,5 @@ export const errorsRu = {
   'errors.could_not_start_chat': 'Не удалось начать чат',
   'errors.not_found': 'Не найдено',
   'errors.forbidden': 'Доступ запрещён',
+  'errors.course_locked': 'Этот курс доступен только с активной подпиской.',
 } as const

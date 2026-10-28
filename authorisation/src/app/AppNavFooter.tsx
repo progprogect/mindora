@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { LEARN_PATHS } from '@/app/mockUser'
 import { useCurrentUser } from '@/auth/session'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 
 const LEARN_ACTIVE = [
   '/app/ai-and-technology',
@@ -21,7 +22,7 @@ function labelClass(active: boolean) {
 }
 
 export default function AppNavFooter() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const { pathname } = useLocation()
   const user = useCurrentUser()
   const focus = user?.focusCategory && user.focusCategory in LEARN_PATHS ? user.focusCategory : 'ai'
@@ -40,7 +41,7 @@ export default function AppNavFooter() {
       style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
       <div className="max-w-2xl mx-auto flex">
-        <Link to="/app/dashboard" className="flex-1">
+        <Link to={withLocale(locale, "/app/dashboard")} className="flex-1">
           <div className={tabClass(homeActive)}>
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
@@ -67,7 +68,7 @@ export default function AppNavFooter() {
             <span className={labelClass(learnActive)}>{t('app.nav.learn')}</span>
           </div>
         </Link>
-        <Link to="/app/progress" className="flex-1">
+        <Link to={withLocale(locale, "/app/progress")} className="flex-1">
           <div className={tabClass(progressActive)}>
             <svg
               className="w-5 h-5"
@@ -86,7 +87,7 @@ export default function AppNavFooter() {
             <span className={labelClass(progressActive)}>{t('app.nav.progress')}</span>
           </div>
         </Link>
-        <Link to="/app/profile" className="flex-1">
+        <Link to={withLocale(locale, "/app/profile")} className="flex-1">
           <div className={tabClass(profileActive)}>
             <svg
               className="w-5 h-5"

@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { LearnCategory, LearnCourse } from '@/marketing/data/learn'
@@ -326,7 +327,7 @@ export default function LearnCategoryPage({ category: categoryProp }: { category
             <h2 className="mb-2 text-xl font-extrabold text-white">{category.certTitle}</h2>
             <p className="mb-6 text-sm leading-relaxed text-white/75">{category.certBody}</p>
             <Link
-              to={ROUTES.quiz28}
+              to={withLocale(locale, ROUTES.quiz28)}
               className={`inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-extrabold shadow-sm transition-transform hover:shadow-md active:scale-[0.97] ${
                 category.certCtaColor ? '' : 'text-sw-blue'
               }`}

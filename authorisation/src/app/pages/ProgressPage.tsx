@@ -169,7 +169,7 @@ export default function ProgressPage() {
                       aria-valuenow={pct}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-label={`${catalog.name} progress: ${pct}%`}
+                      aria-label={t('app.common.namedProgressAria').replace('{title}', catalog.name).replace('{pct}', String(pct))}
                     >
                       <div
                         className={`h-2 rounded-full transition-all duration-500 ${complete ? 'bg-sw-success' : 'bg-sw-blue'}`}

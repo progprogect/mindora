@@ -1,5 +1,6 @@
 import { existsSync, statSync } from 'node:fs'
 import { relative, resolve, sep } from 'node:path'
+import { splitLocalePrefix } from '../lib/localePath.js'
 import { isSafePath, isWellKnownPath, looksLikeFile, normalizePathname } from './spaPaths.js'
 
 export type SpaRoots = {
@@ -35,7 +36,8 @@ function asset(absPath: string): SpaTarget {
 }
 
 export function resolveSpaTarget(pathname: string, roots: SpaRoots): SpaTarget {
-  const path = normalizePathname(pathname)
+  const { locale, path: withoutLocale } = splitLocalePrefix(pathname)
+  const path = normalizePathname(locale ? withoutLocale : pathname)
   if (!isSafePath(path)) return { kind: 'not_found' }
 
   const marketingFile = existingFile(roots.marketing, path)

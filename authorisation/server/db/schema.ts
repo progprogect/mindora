@@ -230,3 +230,29 @@ export const wiseMessages = pgTable(
   },
   (table) => [index('wise_messages_thread_idx').on(table.threadId)],
 )
+
+/** Free guides & materials on the dashboard (not funnel upsells). */
+export const materials = pgTable(
+  'materials',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    slug: text('slug').notNull(),
+    titleEn: text('title_en').notNull(),
+    titleRu: text('title_ru').notNull(),
+    descriptionEn: text('description_en'),
+    descriptionRu: text('description_ru'),
+    type: text('type').notNull().default('guide'),
+    bodyEn: text('body_en'),
+    bodyRu: text('body_ru'),
+    fileEn: text('file_en'),
+    fileRu: text('file_ru'),
+    sort: integer('sort').notNull().default(0),
+    isPublished: boolean('is_published').notNull().default(true),
+    publishedAt: timestamp('published_at', { withTimezone: true }),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('materials_slug_idx').on(table.slug),
+    index('materials_published_sort_idx').on(table.isPublished, table.sort),
+  ],
+)

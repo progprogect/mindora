@@ -1,3 +1,4 @@
+import { withLocale, type Locale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import {
@@ -316,8 +317,8 @@ function ConfirmButton({
   )
 }
 
-function defaultSetupPath(funnel: string): string {
-  return `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
+function defaultSetupPath(funnel: string, locale: Locale): string {
+  return withLocale(locale, `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`)
 }
 
 function CardOrPayDivider({ ui }: { ui: CheckoutUiCopy }) {
@@ -355,7 +356,7 @@ function CheckoutForm({
   const [cardReady, setCardReady] = useState(false)
   const [complete, setComplete] = useState({ number: false, expiry: false, cvc: false })
 
-  const setupUrl = toAbsoluteUrl(returnPath ?? defaultSetupPath(funnel))
+  const setupUrl = toAbsoluteUrl(returnPath ?? defaultSetupPath(funnel, locale))
 
   useEffect(() => {
     if (cardReady) return
@@ -483,13 +484,14 @@ function PaymentUnavailableNotice({ ui }: { ui: CheckoutUiCopy }) {
 }
 
 function AlreadyMemberNotice({ setupPath, ui }: { setupPath: string; ui: CheckoutUiCopy }) {
+  const { locale } = useI18n()
   return (
     <div className="rounded-2xl border border-sw-grey-border bg-white p-5 text-center">
       <p className="text-base font-extrabold text-sw-dark">{ui.alreadyMemberTitle}</p>
       <p className="mt-2 text-sm leading-relaxed text-sw-grey">{ui.alreadyMemberBlurb}</p>
       <div className="mt-4 flex flex-col gap-2">
         <Link
-          to="/login"
+          to={withLocale(locale, "/login")}
           className="inline-flex w-full items-center justify-center rounded-full bg-sw-blue py-3 text-sm font-extrabold tracking-wide text-white uppercase transition-all hover:bg-sw-blue-hover active:scale-[0.98]"
         >
           {ui.logIn}
@@ -543,7 +545,7 @@ export default function InlineTrialCheckout({
   const [error, setError] = useState<string | null>(null)
   const [alreadyMember, setAlreadyMember] = useState(false)
   const createTrialPaymentIntent = useCreateTrialPaymentIntent()
-  const setupPath = returnPath ?? defaultSetupPath(funnel)
+  const setupPath = returnPath ?? defaultSetupPath(funnel, locale)
 
   useEffect(() => {
     if (!isStripeConfigured) return

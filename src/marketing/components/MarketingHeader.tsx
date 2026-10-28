@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
@@ -54,7 +55,7 @@ export default function MarketingHeader() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between sm:h-[72px]">
-          <Link to={ROUTES.home} className="shrink-0" aria-label={copy.homeAria}>
+          <Link to={withLocale(locale, ROUTES.home)} className="shrink-0" aria-label={copy.homeAria}>
             <Logo variant="dark" />
           </Link>
 
@@ -78,7 +79,7 @@ export default function MarketingHeader() {
               ) : (
                 <Link
                   key={item.key}
-                  to={item.href}
+                  to={withLocale(locale, item.href)}
                   className="text-sm font-medium text-sw-grey transition-colors hover:text-sw-dark"
                 >
                   {copy[item.key]}
@@ -89,13 +90,13 @@ export default function MarketingHeader() {
 
           <div className="hidden items-center gap-1 md:flex">
             <Link
-              to={ROUTES.login}
+              to={withLocale(locale, ROUTES.login)}
               className="px-3 py-2 text-sm font-semibold text-sw-dark transition-colors hover:text-sw-blue"
             >
               {copy.signIn}
             </Link>
             <Link
-              to={ROUTES.quiz28}
+              to={withLocale(locale, ROUTES.quiz28)}
               className="rounded-full bg-sw-blue px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-md"
             >
               {copy.getStarted}
@@ -136,7 +137,7 @@ export default function MarketingHeader() {
               ) : (
                 <Link
                   key={item.key}
-                  to={item.href}
+                  to={withLocale(locale, item.href)}
                   className="px-2 py-3 text-base font-medium text-sw-grey"
                   onClick={() => setOpen(false)}
                 >
@@ -147,14 +148,14 @@ export default function MarketingHeader() {
           </nav>
           <div className="mt-4 flex flex-col gap-3">
             <Link
-              to={ROUTES.login}
+              to={withLocale(locale, ROUTES.login)}
               className="rounded-full border border-sw-grey-border py-3 text-center text-sm font-semibold text-sw-dark"
               onClick={() => setOpen(false)}
             >
               {copy.signIn}
             </Link>
             <Link
-              to={ROUTES.quiz28}
+              to={withLocale(locale, ROUTES.quiz28)}
               className="rounded-full bg-sw-blue py-3 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >

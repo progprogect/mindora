@@ -2,7 +2,6 @@ import { Navigate, Route, useLocation, useParams } from 'react-router-dom'
 import AccountCreatePage from '@/account/AccountCreatePage'
 import CheckoutSetupPage from '@/account/CheckoutSetupPage'
 import OnboardPage from '@/account/OnboardPage'
-import UpgradeAnnualPage from '@/account/UpgradeAnnualPage'
 import UpgradeMindoraPage from '@/account/UpgradeMindoraPage'
 import UpgradePlannersPage from '@/account/UpgradePlannersPage'
 import UpgradePromptPage from '@/account/UpgradePromptPage'
@@ -13,6 +12,8 @@ import CertificatesPage from '@/app/pages/CertificatesPage'
 import CourseHubPage from '@/app/pages/CourseHubPage'
 import DashboardPage from '@/app/pages/DashboardPage'
 import LessonPage from '@/app/pages/LessonPage'
+import MaterialsPage from '@/app/pages/MaterialsPage'
+import MaterialPage from '@/app/pages/MaterialPage'
 import PathCatalogPage from '@/app/pages/PathCatalogPage'
 import PlannersPage from '@/app/pages/PlannersPage'
 import ProfilePage from '@/app/pages/ProfilePage'
@@ -26,41 +27,51 @@ import LoginPage from '@/auth/LoginPage'
 import RequireAuth from '@/auth/RequireAuth'
 import RequireLmsAccess from '@/auth/RequireLmsAccess'
 import NotFoundPage from '@/pages/NotFoundPage'
+import { isLocale, withLocale, type Locale } from '@/i18n/locale'
 
 const PUBLIC_COURSE_SLUG = '28-day-ai-challenge'
 
+function localeFromParams(): Locale {
+  const { locale } = useParams()
+  return isLocale(locale) ? locale : 'en'
+}
+
 function RedirectPublicCourse() {
   const { slug, lessonId } = useParams()
+  const locale = localeFromParams()
   if (slug !== PUBLIC_COURSE_SLUG) return <NotFoundPage />
-  return (
-    <Navigate
-      to={lessonId ? `/app/courses/${slug}/${lessonId}` : `/app/courses/${slug}`}
-      replace
-    />
-  )
+  const target = lessonId ? `/app/courses/${slug}/${lessonId}` : `/app/courses/${slug}`
+  return <Navigate to={withLocale(locale, target)} replace />
 }
 
 function RedirectPreserve({ to }: { to: string }) {
   const { search } = useLocation()
-  return <Navigate to={`${to}${search}`} replace />
+  const locale = localeFromParams()
+  return <Navigate to={`${withLocale(locale, to)}${search}`} replace />
+}
+
+function RedirectToAppDashboard() {
+  const locale = localeFromParams()
+  return <Navigate to={withLocale(locale, '/app/dashboard')} replace />
 }
 
 export const lmsRoutes = (
   <>
-    <Route path="/login" element={<LoginPage />} />
-    <Route path="/dashboard" element={<Navigate to="/app/dashboard" replace />} />
-    <Route path="/checkout/setup" element={<CheckoutSetupPage />} />
-    <Route path="/account/create" element={<AccountCreatePage />} />
-    <Route path="/account/onboard" element={<OnboardPage />} />
-    <Route path="/account/welcome" element={<WelcomePage />} />
-    <Route path="/account/upgrade" element={<UpgradePromptPage />} />
-    <Route path="/account/upgrade-planners" element={<UpgradePlannersPage />} />
-    <Route path="/account/upgrade-annual" element={<UpgradeAnnualPage />} />
-    <Route path="/account/upgrade-mindora" element={<UpgradeMindoraPage />} />
-    <Route path="/account/upgrade-wise" element={<RedirectPreserve to="/account/upgrade-mindora" />} />
+    <Route path="login" element={<LoginPage />} />
+    <Route path="dashboard" element={<RedirectToAppDashboard />} />
+    <Route path="checkout/setup" element={<CheckoutSetupPage />} />
+    <Route path="account/create" element={<AccountCreatePage />} />
+    <Route path="account/onboard" element={<OnboardPage />} />
+    <Route path="account/welcome" element={<WelcomePage />} />
+    <Route path="account/upgrade" element={<UpgradePromptPage />} />
+    <Route path="account/upgrade-planners" element={<UpgradePlannersPage />} />
+    {/* Annual OTO removed from new $1 funnel path; keep URL as soft redirect for legacy links. */}
+    <Route path="account/upgrade-annual" element={<RedirectToAppDashboard />} />
+    <Route path="account/upgrade-mindora" element={<UpgradeMindoraPage />} />
+    <Route path="account/upgrade-wise" element={<RedirectPreserve to="/account/upgrade-mindora" />} />
 
     <Route
-      path="/app"
+      path="app"
       element={
         <RequireAuth>
           <RequireLmsAccess>
@@ -69,7 +80,7 @@ export const lmsRoutes = (
         </RequireAuth>
       }
     >
-      <Route index element={<Navigate to="/app/dashboard" replace />} />
+      <Route index element={<RedirectToAppDashboard />} />
       <Route path="dashboard" element={<DashboardPage />} />
       <Route path="progress" element={<ProgressPage />} />
       <Route path="profile" element={<ProfilePage />} />
@@ -86,6 +97,8 @@ export const lmsRoutes = (
       <Route path="wise/history" element={<RedirectPreserve to="/app/mindora/history" />} />
       <Route path="wise/unlock" element={<RedirectPreserve to="/app/mindora/unlock" />} />
       <Route path="planners" element={<PlannersPage />} />
+      <Route path="materials" element={<MaterialsPage />} />
+      <Route path="materials/:slug" element={<MaterialPage />} />
       <Route path="purchases" element={<PurchasesPage />} />
       <Route path="prompt-library" element={<PromptLibraryPage />} />
       <Route path="certificates" element={<CertificatesPage />} />
@@ -94,7 +107,7 @@ export const lmsRoutes = (
       <Route path="courses/:slug/:lessonId" element={<LessonPage />} />
     </Route>
 
-    <Route path="/courses/:slug" element={<RedirectPublicCourse />} />
-    <Route path="/courses/:slug/:lessonId" element={<RedirectPublicCourse />} />
+    <Route path="courses/:slug" element={<RedirectPublicCourse />} />
+    <Route path="courses/:slug/:lessonId" element={<RedirectPublicCourse />} />
   </>
 )

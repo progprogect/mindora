@@ -1,5 +1,7 @@
 import { Hono } from 'hono'
 import { z } from 'zod'
+import { userCanAccessCourse } from '../lib/courseAccess.js'
+import { loadCurrentUser } from '../lib/currentUser.js'
 import { completeLesson, getAllProgress, getCourseProgress, openLesson } from '../lib/progress.js'
 import { requireAuth, type SessionEnv } from '../lib/session.js'
 
@@ -28,6 +30,11 @@ progressRoutes.get('/progress', requireAuth, async (c) => {
 progressRoutes.post('/progress/open', requireAuth, async (c) => {
   const parsed = openSchema.safeParse(await c.req.json())
   if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
+  const user = await loadCurrentUser(c.get('userId'))
+  if (!user?.email) return c.json({ error: 'Not authenticated', code: 'not_authenticated' }, 401)
+  if (!(await userCanAccessCourse(c.get('userId'), user.email, parsed.data.courseSlug))) {
+    return c.json({ error: 'Course locked', code: 'course_locked' }, 403)
+  }
   return c.json(await openLesson({ userId: c.get('userId'), ...parsed.data }))
 })
 
@@ -47,6 +54,11 @@ progressRoutes.get('/progress/:courseSlug', requireAuth, async (c) => {
 progressRoutes.post('/progress/complete', requireAuth, async (c) => {
   const parsed = completeSchema.safeParse(await c.req.json())
   if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
+  const user = await loadCurrentUser(c.get('userId'))
+  if (!user?.email) return c.json({ error: 'Not authenticated', code: 'not_authenticated' }, 401)
+  if (!(await userCanAccessCourse(c.get('userId'), user.email, parsed.data.courseSlug))) {
+    return c.json({ error: 'Course locked', code: 'course_locked' }, 403)
+  }
   const result = await completeLesson({ userId: c.get('userId'), ...parsed.data })
   return c.json(result)
 })

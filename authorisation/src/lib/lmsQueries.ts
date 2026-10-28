@@ -1,14 +1,18 @@
+import { useI18n } from '@/i18n/I18nProvider'
 import { useCallback, useEffect, useState } from 'react'
 import {
   fetchHasSavedCard,
+  fetchMaterials,
   fetchProgress,
   fetchPromptVaultKey,
   fetchPurchases,
   fetchSubscription,
   fetchUpsellStatus,
+  type MaterialListItem,
   type ProgressPayload,
   type SubscriptionDto,
 } from '@/lib/api'
+import { canAccessCourse, hasFullCatalogAccess } from '@/shared/courseAccess'
 
 export function useUpsellStatus(offerSlug: string) {
   const [status, setStatus] = useState<{ status: string } | undefined>(undefined)
@@ -77,7 +81,7 @@ export function useProgress() {
 }
 
 export function useSubscription() {
-  const [sub, setSub] = useState<SubscriptionDto | undefined>(undefined)
+  const [sub, setSub] = useState<SubscriptionDto | null | undefined>(undefined)
 
   const reload = useCallback(async () => {
     try {
@@ -127,6 +131,22 @@ export function usePurchases() {
   return skus
 }
 
+/** Course entitlement: live sub → all; else kit allowlists only. */
+export function useCourseAccess() {
+  const { sub } = useSubscription()
+  const purchases = usePurchases()
+  const ready = sub !== undefined && purchases !== undefined
+  const fullCatalog = hasFullCatalogAccess(sub?.status)
+  const canAccess = useCallback(
+    (slug: string) => {
+      if (!ready) return false
+      return canAccessCourse(slug, { subscriptionStatus: sub?.status, purchases })
+    },
+    [ready, sub?.status, purchases],
+  )
+  return { ready, fullCatalog, canAccess, subscription: sub, purchases }
+}
+
 export function usePurchaseRecords() {
   const [rows, setRows] = useState<PurchaseRecord[] | undefined>(undefined)
   useEffect(() => {
@@ -163,4 +183,24 @@ export function usePromptVaultKey() {
     }
   }, [])
   return key
+}
+
+export function useMaterials() {
+  const { locale } = useI18n()
+  const [items, setItems] = useState<MaterialListItem[] | undefined>(undefined)
+  useEffect(() => {
+    let cancelled = false
+    fetchMaterials(locale === 'ru' ? 'ru' : 'en')
+      .then((data) => {
+        if (!cancelled) setItems(data.materials)
+      })
+      .catch((error) => {
+        console.warn('[api] materials failed', error)
+        if (!cancelled) setItems([])
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [locale])
+  return items
 }

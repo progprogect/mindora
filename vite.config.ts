@@ -30,6 +30,47 @@ function copyMissing(fromDir: string, toDir: string) {
   }
 }
 
+/** Proxy funnel HTML onboard to the API when a funnel session/preview is present. */
+function funnelOnboardProxy(): Plugin {
+  return {
+    name: 'funnel-onboard-proxy',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const rawUrl = req.url ?? ''
+        const qIndex = rawUrl.indexOf('?')
+        const pathname = qIndex >= 0 ? rawUrl.slice(0, qIndex) : rawUrl
+        if (pathname !== '/account/onboard' && pathname !== '/en/account/onboard' && pathname !== '/ru/account/onboard') {
+          next()
+          return
+        }
+        const search = qIndex >= 0 ? rawUrl.slice(qIndex + 1) : ''
+        const params = new URLSearchParams(search)
+        const cookie = req.headers.cookie ?? ''
+        const hasFunnel =
+          params.has('token') ||
+          params.get('preview') === '1' ||
+          /(?:^|;\s*)mindora_funnel=/.test(cookie)
+        if (!hasFunnel) {
+          next()
+          return
+        }
+        const target = `http://localhost:3000${rawUrl}`
+        fetch(target, { headers: { cookie, accept: req.headers.accept ?? '*/*' } })
+          .then(async (upstream) => {
+            res.statusCode = upstream.status
+            upstream.headers.forEach((value, key) => {
+              if (key === 'transfer-encoding') return
+              res.setHeader(key, value)
+            })
+            const buf = Buffer.from(await upstream.arrayBuffer())
+            res.end(buf)
+          })
+          .catch(() => next())
+      })
+    },
+  }
+}
+
 /** Serve LMS `authorisation/public` (planner covers, OTO art) from the github SPA. */
 function lmsPublicAssets(): Plugin {
   return {
@@ -98,7 +139,7 @@ function atAliasByImporter(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [atAliasByImporter(), lmsPublicAssets(), react(), tailwindcss()],
+  plugins: [atAliasByImporter(), funnelOnboardProxy(), lmsPublicAssets(), react(), tailwindcss()],
   resolve: {
     dedupe: ['react', 'react-dom', 'react-router-dom'],
   },
@@ -110,6 +151,24 @@ export default defineConfig({
     proxy: {
       '/api': { target: 'http://localhost:3000', changeOrigin: true },
       '/stripe': { target: 'http://localhost:3000', changeOrigin: true },
+      // HTML funnel pages (server injects window.FUNNEL).
+      // `/start-kit` before `/start` — Vite matches proxy keys as prefixes.
+      '/en/start-kit': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/start-kit': { target: 'http://localhost:3000', changeOrigin: true },
+      '/en/start': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/start': { target: 'http://localhost:3000', changeOrigin: true },
+      '/start-kit': { target: 'http://localhost:3000', changeOrigin: true },
+      '/start': { target: 'http://localhost:3000', changeOrigin: true },
+      '/en/account/verify': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/account/verify': { target: 'http://localhost:3000', changeOrigin: true },
+      '/en/account/membership': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/account/membership': { target: 'http://localhost:3000', changeOrigin: true },
+      '/en/account/upsell': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/account/upsell': { target: 'http://localhost:3000', changeOrigin: true },
+      '/account/verify': { target: 'http://localhost:3000', changeOrigin: true },
+      '/account/membership': { target: 'http://localhost:3000', changeOrigin: true },
+      '/account/upsell': { target: 'http://localhost:3000', changeOrigin: true },
+      '/dev/funnel-enter': { target: 'http://localhost:3000', changeOrigin: true },
     },
   },
 })

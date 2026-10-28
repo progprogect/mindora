@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import FaqAccordion from '@/marketing/components/FaqAccordion'
@@ -195,7 +196,7 @@ export default function SupportPage() {
           <h2 className="mb-4 text-lg font-extrabold text-sw-dark">{ui.quickActions}</h2>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <Link
-              to="/app/profile"
+              to={withLocale(locale, "/app/profile")}
               className="group flex items-center gap-3 rounded-xl border border-sw-grey-border bg-white p-4 transition-all hover:border-sw-blue/50 hover:shadow-sm"
             >
               <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-red-50">
@@ -262,7 +263,7 @@ export default function SupportPage() {
         </div>
 
         <div className="pb-6 text-center">
-          <Link to={ROUTES.home} className="text-sm text-sw-grey transition-colors hover:text-sw-blue">
+          <Link to={withLocale(locale, ROUTES.home)} className="text-sm text-sw-grey transition-colors hover:text-sw-blue">
             {ui.backHome}
           </Link>
         </div>

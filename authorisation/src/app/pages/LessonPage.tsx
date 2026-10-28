@@ -15,8 +15,12 @@ import { todayIso } from '@/content/lms'
 import { completeLesson, openLesson } from '@/lib/api'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 import { BADGES, badgeKey } from '@/content/badges'
+import CourseLockedPanel from '@/app/CourseLockedPanel'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, type Locale } from '@/i18n/locale'
+import { ruCount } from '@/i18n/ruPlural'
 import { useSession } from '@/auth/session'
+import { useCourseAccess } from '@/lib/lmsQueries'
 
 type Stage = 'cards' | 'quizIntro' | 'quiz' | 'result'
 type SlideDir = 'none' | 'forward' | 'back'
@@ -51,8 +55,10 @@ function LessonGate({
   lessonId: string
   course: Course | null | undefined
 }) {
-  if (course === undefined) return <LessonSpinner />
+  const access = useCourseAccess()
+  if (course === undefined || !access.ready) return <LessonSpinner />
   if (!course) return <LessonFailed slug={slug} />
+  if (!access.canAccess(slug)) return <CourseLockedPanel backHref="/app/dashboard" />
   const lesson = course.lessons.find((item) => item.id === lessonId)
   if (!lesson) return <LessonNotFound slug={slug} />
   return <LessonPlayer key={lessonId} slug={slug} course={course} lesson={lesson} />
@@ -78,7 +84,7 @@ function LessonPlayer({
   course: Course
   lesson: CourseLesson
 }) {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const lessonId = lesson.id
   const { refresh } = useSession()
   const [stage, setStage] = useState<Stage>('cards')
@@ -276,14 +282,14 @@ function LessonPlayer({
           ) : (
             <>
               <Link
-                to="/app/dashboard"
+                to={withLocale(locale, "/app/dashboard")}
                 aria-label={t('app.common.backToDashboard')}
                 className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-sw-grey-light transition-colors shrink-0"
               >
                 <HomeIcon />
               </Link>
               <Link
-                to={`/app/courses/${slug}`}
+                to={withLocale(locale, `/app/courses/${slug}`)}
                 aria-label={t('app.lesson.backCourseOverview')}
                 className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-sw-grey-light transition-colors shrink-0"
               >
@@ -358,6 +364,7 @@ function LessonPlayer({
       {stage === 'quizIntro' ? (
         <QuizIntro
           t={t}
+          locale={locale}
           unit={unit}
           day={lesson.dayNumber}
           totalDays={course.totalDays}
@@ -390,6 +397,7 @@ function LessonPlayer({
       {stage === 'result' ? (
         <ResultView
           t={t}
+          locale={locale}
           unit={unit}
           day={lesson.dayNumber}
           totalDays={course.totalDays}
@@ -492,7 +500,7 @@ function LessonPlayer({
 }
 
 function LessonSpinner() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <main className="min-h-screen bg-white flex items-center justify-center">
       <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" aria-label={t('app.lesson.loadingAria')} />
@@ -501,12 +509,12 @@ function LessonSpinner() {
 }
 
 function LessonStatus({ slug, title }: { slug: string; title: string }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <main className="min-h-screen bg-white flex items-center justify-center px-4 text-center">
       <div>
         <p className="font-extrabold">{title}</p>
-        <Link to={`/app/courses/${slug}`} className="mt-3 inline-block font-bold text-sw-blue">
+        <Link to={withLocale(locale, `/app/courses/${slug}`)} className="mt-3 inline-block font-bold text-sw-blue">
           {t('app.lesson.backToCourse')}
         </Link>
       </div>
@@ -571,7 +579,7 @@ function ResultLeaveCta({
     return (
       <>
         {saveError ? (
-          <p className="text-sm text-center text-sw-coral font-semibold">Couldn&apos;t save this lesson. Try again.</p>
+          <p className="text-sm text-center text-sw-coral font-semibold">{t('app.lesson.saveFailed')}</p>
         ) : null}
         <button type="button" onClick={onRetry} className={LEAVE_CTA}>
           {t('app.lesson.retrySave')}
@@ -604,8 +612,37 @@ class LessonErrorBoundary extends Component<{ slug: string; children: ReactNode 
   }
 }
 
+function quizIntroBodyText(
+  t: (key: string) => string,
+  locale: Locale,
+  cardCount: number,
+  questionCount: number,
+) {
+  const template = t('app.lesson.quizIntroBody')
+  if (locale === 'ru') {
+    const cards = ruCount(cardCount, 'карточка', 'карточки', 'карточек')
+    const questions = ruCount(questionCount, 'вопрос', 'вопроса', 'вопросов')
+    return template.replace('{cards}', cards).replace('{questions}', questions)
+  }
+  return template.replace('{cards}', String(cardCount)).replace('{questions}', String(questionCount))
+}
+
+function lessonCompletionMindoraTask(
+  locale: Locale,
+  unit: string,
+  day: number,
+  lessonTitle: string,
+  accuracy: number,
+) {
+  if (locale === 'ru') {
+    return `Я только что завершил(а) ${unit} ${day} «${lessonTitle}» с точностью ${accuracy}%. Помогите мне осмыслить изученное и применить это на практике.`
+  }
+  return `I just completed ${unit} ${day} "${lessonTitle}" with ${accuracy}% accuracy. Help me reflect on what I learned and how to apply it.`
+}
+
 function QuizIntro({
   t,
+  locale,
   unit,
   day,
   totalDays,
@@ -616,6 +653,7 @@ function QuizIntro({
   onReview,
 }: {
   t: (key: string) => string
+  locale: Locale
   unit: string
   day: number
   totalDays: number
@@ -635,7 +673,7 @@ function QuizIntro({
           </div>
           <h2 className="text-2xl font-extrabold text-sw-dark leading-snug mb-3">{t('app.lesson.readyQuiz')}</h2>
           <p className="text-sw-grey text-base leading-relaxed max-w-sm">
-            {t('app.lesson.quizIntroBody').replace('{cards}', String(cardCount)).replace('{questions}', String(questionCount))}{' '}
+            {quizIntroBodyText(t, locale, cardCount, questionCount)}{' '}
             <strong className="text-sw-dark">⚡{xp} XP</strong>.
           </p>
         </div>
@@ -741,7 +779,7 @@ function QuizQuestion({
                 type="button"
                 disabled={status !== 'idle'}
                 aria-pressed={picked === index}
-                aria-label={`Option ${letter}: ${option}`}
+                aria-label={t('app.lesson.optionAria').replace('{letter}', letter).replace('{text}', option)}
                 onClick={() => select(index)}
                 className={optionClass(index)}
               >
@@ -901,7 +939,7 @@ function CardView({
 }
 
 function PromptCopy({ text }: { text: string }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [copied, setCopied] = useState(false)
   return (
     <div data-testid="lesson-prompt" className="bg-white border border-sw-grey-border rounded-xl p-4 flex flex-col gap-3">
@@ -926,9 +964,9 @@ function PromptCopy({ text }: { text: string }) {
 }
 
 function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonCard }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const detail = [card.body, ...(card.bullets ?? [])].filter(Boolean).join(' • ')
-  const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&concept=${encodeURIComponent(card.headline || '')}&detail=${encodeURIComponent(detail)}`
+  const href = withLocale(locale, `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&concept=${encodeURIComponent(card.headline || '')}&detail=${encodeURIComponent(detail)}`)
   return (
     <Link
       to={href}
@@ -949,8 +987,8 @@ function WiseExplore({ lessonTitle, card }: { lessonTitle: string; card: LessonC
 }
 
 function WiseTask({ lessonTitle, body, prompt }: { lessonTitle: string; body?: string; prompt?: string }) {
-  const { t } = useI18n()
-  const href = `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(body || '')}&prompt=${encodeURIComponent(prompt || '')}`
+  const { locale, t } = useI18n()
+  const href = withLocale(locale, `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(body || '')}&prompt=${encodeURIComponent(prompt || '')}`)
   return (
     <Link
       to={href}
@@ -1033,6 +1071,7 @@ function Chevron() {
 
 function ResultView({
   t,
+  locale,
   unit,
   day,
   totalDays,
@@ -1045,6 +1084,7 @@ function ResultView({
   onReview,
 }: {
   t: (key: string) => string
+  locale: Locale
   unit: string
   day: number
   totalDays: number
@@ -1094,11 +1134,11 @@ function ResultView({
       ? 'linear-gradient(135deg, hsl(var(--sw-blue)), hsl(var(--sw-blue) / 0.7))'
       : 'linear-gradient(135deg, hsl(var(--sw-teal)), hsl(var(--sw-teal) / 0.7))'
   const badges = completion?.newBadges ?? []
-  const wiseTask = `I just completed ${unit} ${day} "${lessonTitle}" with ${accuracy}% accuracy. Help me reflect on what I learned and how to apply it.`
+  const wiseTask = lessonCompletionMindoraTask(locale, unit, day, lessonTitle, accuracy)
 
   return (
     <main className="flex-1 max-w-2xl mx-auto w-full px-4 sm:px-6 pt-20 pb-32" style={{ touchAction: 'pan-y' }}>
-      <section className="flex flex-col items-center text-center py-6 gap-6" aria-label="Quiz results">
+      <section className="flex flex-col items-center text-center py-6 gap-6" aria-label={t('app.lesson.quizResultsAria')}>
         <div className="w-24 h-24 rounded-3xl flex items-center justify-center text-5xl shadow-lg" style={{ background: gradient }}>
           {emoji}
         </div>
@@ -1157,7 +1197,7 @@ function ResultView({
         </div>
         {completion ? (
           <Link
-            to={`/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(wiseTask)}`}
+            to={withLocale(locale, `/app/mindora?lesson=${encodeURIComponent(lessonTitle)}&task=${encodeURIComponent(wiseTask)}`)}
             className="w-full max-w-sm flex items-center gap-3 bg-gradient-to-r from-[hsl(var(--sw-blue)/0.05)] to-[hsl(var(--sw-purple)/0.05)] border border-[hsl(var(--sw-blue)/0.2)] rounded-2xl px-4 py-3.5 active:scale-[0.98] transition-transform"
           >
             <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 bg-white">

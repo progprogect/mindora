@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
@@ -158,7 +159,7 @@ export default function PricingPage() {
           type="button"
           onClick={() => {
             if (!plan) return
-            navigate(`${ROUTES.checkout}?product=${encodeURIComponent(plan.id)}`)
+            navigate(withLocale(locale, `${ROUTES.checkout}?product=${encodeURIComponent(plan.id)}`))
           }}
           className="mt-5 w-full rounded-full bg-sw-blue px-6 py-4 text-center text-lg font-extrabold tracking-wide text-white uppercase shadow-lg transition-all duration-200 hover:bg-sw-blue-hover disabled:opacity-50"
         >
@@ -184,7 +185,7 @@ export default function PricingPage() {
 
         <p className="mt-8 text-center text-sm text-sw-grey">
           {copy.billingQuestions}{' '}
-          <Link to={ROUTES.billing} className="font-medium text-sw-blue hover:underline">
+          <Link to={withLocale(locale, ROUTES.billing)} className="font-medium text-sw-blue hover:underline">
             {copy.billingLink}
           </Link>{' '}
           {copy.billingSuffix}

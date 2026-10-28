@@ -1,7 +1,8 @@
 import { type CSSProperties, useState } from 'react'
 import { Link } from 'react-router-dom'
+import MaterialsBlock from '@/app/MaterialsBlock'
 import PromptLibraryModal from '@/app/PromptLibraryModal'
-import { PLAN_TIERS } from '@/app/mockUser'
+import { PLAN_TIER_LABEL_KEYS, PLAN_TIERS } from '@/app/mockUser'
 import { getHub, pickHomeContinue } from '@/content/catalog'
 import {
   FOCUS_MISSION,
@@ -18,7 +19,9 @@ import { progressCourses } from '@/content/progress-catalog'
 import { useCourse } from '@/content/useCourse'
 import { useCurrentUser } from '@/auth/session'
 import { useI18n } from '@/i18n/I18nProvider'
-import { useProgress, usePurchases } from '@/lib/lmsQueries'
+import { withLocale } from '@/i18n/locale'
+import { useCourseAccess, useProgress, usePurchases } from '@/lib/lmsQueries'
+import { courseSlugsForKits } from '@/shared/courseAccess'
 
 const DASHBOARD_PATHS = ['ai-and-technology', 'success-mindset', 'career', 'business', 'health'] as const
 
@@ -170,18 +173,25 @@ function FirstRunHome({
 }
 
 export default function DashboardPage() {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const [libraryOpen, setLibraryOpen] = useState(false)
   const user = useCurrentUser()
   const progress = useProgress()
   const purchases = usePurchases()
+  const access = useCourseAccess()
   const focus = user?.focusCategory && user.focusCategory in FOCUS_PATHS ? user.focusCategory : 'ai'
   const fallbackSlug = FOCUS_MISSION[focus] || '28-day-ai-challenge'
   const lastSlug = progress?.lastOpened?.courseId
   const lastCourse = useCourse(lastSlug)
   const fallbackCourse = useCourse(fallbackSlug)
   const waitingLast = Boolean(lastSlug) && lastCourse === undefined
-  if (user === undefined || progress === undefined || waitingLast || fallbackCourse === undefined) {
+  if (
+    user === undefined ||
+    progress === undefined ||
+    waitingLast ||
+    fallbackCourse === undefined ||
+    !access.ready
+  ) {
     return (
       <div className="min-h-screen flex items-center justify-center pb-20">
         <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
@@ -197,15 +207,21 @@ export default function DashboardPage() {
     fallbackCourse,
     progress: progress.lessons,
   })
-  const missionSlug = target?.courseSlug ?? fallbackSlug
-  const nextLesson = target?.lesson
+  let missionSlug = target?.courseSlug ?? fallbackSlug
+  if (!access.canAccess(missionSlug)) {
+    const kitSlugs = [...courseSlugsForKits(purchases)]
+    missionSlug = kitSlugs.find((slug) => access.canAccess(slug)) ?? kitSlugs[0] ?? missionSlug
+  }
+  const usingTarget = Boolean(target && target.courseSlug === missionSlug && access.canAccess(missionSlug))
+  const nextLesson = usingTarget ? target?.lesson : undefined
   const catalog = progressCourses(locale)[missionSlug]
   const completed = new Set(
     progress.lessons.filter((row) => row.courseId === missionSlug && row.status === 'completed').map((row) => row.lessonSlug),
   )
   const missionDone = completed.size
-  const totalDays = target?.course.totalDays ?? catalog?.totalLessons ?? 28
-  const courseTitle = target?.course.title ?? catalog?.name ?? '28-Day AI Challenge'
+  const totalDays = (usingTarget ? target?.course.totalDays : undefined) ?? catalog?.totalLessons ?? 28
+  const courseTitle =
+    (usingTarget ? target?.course.title : undefined) ?? catalog?.name ?? '28-Day AI Challenge'
   const unit = ((getHub(missionSlug, locale).unitLabel as string) || 'days') === 'days' ? t('app.common.day') : t('app.common.lesson')
   const xp = progress.user.xp
   const streak = progress.user.streakCount
@@ -220,6 +236,7 @@ export default function DashboardPage() {
   )
   const tierKey = user?.planTier && user.planTier in PLAN_TIERS ? user.planTier : 'week4'
   const plan = PLAN_TIERS[tierKey as keyof typeof PLAN_TIERS]
+  const planLabel = t(PLAN_TIER_LABEL_KEYS[tierKey as keyof typeof PLAN_TIER_LABEL_KEYS])
   const elapsed = user?.joinDate ? Math.floor((Date.now() - user.joinDate) / 86400000) + 1 : 1
   const planDay = plan.days > 0 ? Math.min(Math.max(elapsed, 1), plan.days) : elapsed
   const planPct = plan.days > 0 ? Math.min(100, Math.round((planDay / plan.days) * 100)) : 0
@@ -227,8 +244,15 @@ export default function DashboardPage() {
     PROFILE_PACES.find((item) => item.value === user?.pacePreference)?.value ?? 'ignite'
   const pace = paceDesc(locale, pacePref)
   const paceShort = pace.replace(/\/(day|день)$/, '')
-  const continueHref = nextLesson ? `/app/courses/${missionSlug}/${nextLesson.id}` : `/app/courses/${missionSlug}`
-  const pathHref = FOCUS_PATHS[focus] || '/app/ai-and-technology'
+  const continueHref = withLocale(
+    locale,
+    !access.canAccess(missionSlug)
+      ? '/pricing'
+      : nextLesson
+        ? `/app/courses/${missionSlug}/${nextLesson.id}`
+        : `/app/courses/${missionSlug}`,
+  )
+  const pathHref = withLocale(locale, FOCUS_PATHS[focus] || '/app/ai-and-technology')
   const missionPct = totalDays > 0 ? Math.round((missionDone / totalDays) * 100) : 0
   const startedHere = missionDone > 0 || progress.lastOpened?.courseId === missionSlug
   const ctaLabel = startedHere
@@ -268,7 +292,7 @@ export default function DashboardPage() {
         <p className="text-sm text-sw-grey mt-1">
           {t('app.common.dayOfPlan')
             .replace('{day}', String(planDay))
-            .replace('{plan}', plan.label)
+            .replace('{plan}', planLabel)
             .replace('{pace}', pace)}
         </p>
       </div>
@@ -289,7 +313,7 @@ export default function DashboardPage() {
           </h2>
           <p className="text-white/60 text-sm mb-1 leading-snug">{courseTitle}</p>
           <p className="text-white/45 text-xs mb-4">
-            {nextLesson?.duration ?? '5 min'} · {paceShort}
+            {nextLesson?.duration ?? t('app.common.durationFallback')} · {paceShort}
           </p>
           <div className="mb-4">
             <div
@@ -298,7 +322,7 @@ export default function DashboardPage() {
               aria-valuenow={missionPct}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={`${courseTitle} progress: ${missionPct}%`}
+              aria-label={t('app.common.namedProgressAria').replace('{title}', courseTitle).replace('{pct}', String(missionPct))}
               style={{ backgroundColor: 'rgba(255, 255, 255, 0.18)' }}
             >
               <div className="h-full bg-white rounded-full transition-all duration-700" style={{ width: `${missionPct}%` }} />
@@ -386,7 +410,7 @@ export default function DashboardPage() {
       </div>
 
       <Link
-        to="/app/mindora"
+        to={withLocale(locale, "/app/mindora")}
         className="block bg-gradient-to-br from-[hsl(var(--sw-blue))] to-[hsl(221,83%,42%)] rounded-2xl px-4 py-4 shadow-md active:scale-[0.98] transition-transform"
       >
         <div className="flex items-center gap-3">
@@ -413,7 +437,7 @@ export default function DashboardPage() {
         </div>
         <div className="space-y-2">
           <Link
-            to={`/app/${featuredKey}`}
+            to={withLocale(locale, `/app/${featuredKey}`)}
             className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 shadow-sm border-2 border-sw-blue/30 active:scale-[0.98] transition-all"
           >
             <span className="text-2xl flex-shrink-0">{featured.emoji}</span>
@@ -429,7 +453,7 @@ export default function DashboardPage() {
               return (
                 <Link
                   key={key}
-                  to={`/app/${key}`}
+                  to={withLocale(locale, `/app/${key}`)}
                   className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 shadow-sm border border-sw-grey-border/50 active:scale-[0.97] transition-all"
                 >
                   <span className="text-lg flex-shrink-0">{meta.emoji}</span>
@@ -444,7 +468,7 @@ export default function DashboardPage() {
       {purchases === undefined ? null : purchases.has('ultimate-prompt-library') ? (
         <Link
           data-testid="dashboard-prompt-library-link"
-          to="/app/prompt-library"
+          to={withLocale(locale, "/app/prompt-library")}
           className="flex items-center gap-3 bg-gradient-to-r from-sw-blue to-blue-700 rounded-2xl p-4 text-white active:scale-[0.98] transition-transform shadow-sm"
         >
           <span className="text-2xl">⚡</span>
@@ -488,7 +512,7 @@ export default function DashboardPage() {
 
       <Link
         data-testid="dashboard-planner-link"
-        to="/app/planners"
+        to={withLocale(locale, "/app/planners")}
         className="flex items-center gap-3 bg-gradient-to-r from-sw-teal to-sw-blue rounded-2xl p-4 text-white active:scale-[0.98] transition-transform shadow-sm"
       >
         <span className="text-2xl">🗓️</span>
@@ -498,6 +522,9 @@ export default function DashboardPage() {
         </div>
         <Chevron className="w-5 h-5 text-white/70 flex-shrink-0" strokeWidth={2} />
       </Link>
+
+      <MaterialsBlock />
+
       {libraryOpen ? <PromptLibraryModal onClose={() => setLibraryOpen(false)} /> : null}
     </main>
   )

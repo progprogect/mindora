@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import hubChrome from '@/content/catalogs/hub-chrome.json'
+import hubChromeEn from '@/content/catalogs/hub-chrome.json'
+import hubChromeRu from '@/content/catalogs/ru/hub-chrome.json'
 import {
   continueLessonInCourse,
   getHub,
@@ -15,8 +16,10 @@ import { useCourse } from '@/content/useCourse'
 import { categoryLabel } from '@/content/lms'
 import { progressCourses } from '@/content/progress-catalog'
 import registry from '@/content/course-registry.json'
+import CourseLockedPanel from '@/app/CourseLockedPanel'
 import { useI18n } from '@/i18n/I18nProvider'
-import { useProgress } from '@/lib/lmsQueries'
+import { withLocale } from '@/i18n/locale'
+import { useCourseAccess, useProgress } from '@/lib/lmsQueries'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
 const MODULE_THEMES = [
@@ -29,10 +32,11 @@ const MODULE_THEMES = [
 ]
 
 export default function CourseHubPage() {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const { slug = '' } = useParams()
   const course = useCourse(slug)
   const progress = useProgress()
+  const access = useCourseAccess()
 
   if (!liveSlugSet.has(slug) || course === null) {
     return (
@@ -40,14 +44,14 @@ export default function CourseHubPage() {
         <p className="text-4xl">🔒</p>
         <h1 className="text-xl font-extrabold mt-3">{t('app.common.comingSoon')}</h1>
         <p className="text-sm text-sw-grey mt-2">{t('app.common.courseNotLive')}</p>
-        <Link to="/app/ai-and-technology" className="inline-block mt-4 font-bold text-sw-blue">
+        <Link to={withLocale(locale, "/app/ai-and-technology")} className="inline-block mt-4 font-bold text-sw-blue">
           {t('app.common.backToLearn')}
         </Link>
       </main>
     )
   }
 
-  if (progress === undefined || course === undefined) {
+  if (progress === undefined || course === undefined || !access.ready) {
     return (
       <div className="min-h-screen flex items-center justify-center pb-20">
         <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" />
@@ -55,10 +59,15 @@ export default function CourseHubPage() {
     )
   }
 
+  if (!access.canAccess(slug)) {
+    const categoryKey = (registry as Record<string, { category?: string }>)[slug]?.category || 'ai-and-technology'
+    return <CourseLockedPanel backHref={`/app/${categoryKey}`} />
+  }
+
   const hub = getHub(slug, locale)
   const catalog = progressCourses(locale)[slug]
   const categoryKey = (registry as Record<string, { category?: string }>)[slug]?.category || 'ai-and-technology'
-  const categoryHref = `/app/${categoryKey}`
+  const categoryHref = withLocale(locale, `/app/${categoryKey}`)
   const categoryLabelText = catalog?.category || categoryLabel(locale, categoryKey) || t('lms.fallback.learn')
   const done = new Set(
     progress.lessons.filter((row) => row.courseId === slug && row.status === 'completed').map((row) => row.lessonSlug),
@@ -79,7 +88,7 @@ export default function CourseHubPage() {
     ? (hub.includes as Array<{ icon: string; text: string }>)
     : outcomes
   const testimonials = hub.testimonials || []
-  const continueHref = `/app/courses/${slug}/${next.id}`
+  const continueHref = withLocale(locale, `/app/courses/${slug}/${next.id}`)
   const started = completedCount > 0 || Boolean(preferSlug)
   const ctaLong = started
     ? t('app.courseHub.continueCta').replace('{unit}', unitTitle.slice(0, -1)).replace('{n}', String(next.dayNumber)).replace('{title}', next.title)
@@ -91,9 +100,13 @@ export default function CourseHubPage() {
   const socialProof = String(hub.socialProof || '')
   const certificateChip = String(hub.certificateChip || `${course.title}${t('app.courseHub.certificateSuffix')}`)
   const streak = progress.user.streakCount
+  const hubChrome = locale === 'ru' ? hubChromeRu : hubChromeEn
   const meta = hubChrome.testimonialMeta
+  const headingFallback = t('app.courseHub.completeAllEarnCert')
+    .replace('{n}', String(course.totalDays))
+    .replace('{unit}', unitTitle.toLowerCase())
   const mindoraTask = started ? t('app.courseHub.mindoraTaskStarted') : t('app.courseHub.mindoraTaskNew')
-  const mindoraHref = `/app/mindora?lesson=${encodeURIComponent(course.title)}&task=${encodeURIComponent(mindoraTask)}`
+  const mindoraHref = withLocale(locale, `/app/mindora?lesson=${encodeURIComponent(course.title)}&task=${encodeURIComponent(mindoraTask)}`)
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -115,7 +128,7 @@ export default function CourseHubPage() {
           style={{ background: 'radial-gradient(circle, white, transparent 70%)', transform: 'translate(-30%, 30%)' }}
         />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-14 sm:pb-16">
-          <nav className="flex items-center gap-2 text-white/60 text-xs font-medium mb-6" aria-label="Breadcrumb">
+          <nav className="flex items-center gap-2 text-white/60 text-xs font-medium mb-6" aria-label={t('app.common.breadcrumb')}>
             <Link to={categoryHref} className="hover:text-white/90 transition-colors">
               {categoryLabelText}
             </Link>
@@ -237,7 +250,7 @@ export default function CourseHubPage() {
               <span className="text-sw-dark text-xs font-bold tracking-wide uppercase">{hubChrome.certificateDefaults.kicker}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-sw-dark mb-3">
-              {String(hub.headingText || `Complete all ${course.totalDays} ${unit}. Earn your certificate.`)}
+              {String(hub.headingText || headingFallback)}
             </h2>
             <p className="text-sw-grey text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
               {String(hub.subText || '')}
@@ -503,10 +516,10 @@ function LessonRow({
   emoji: string
   unit: string
 }) {
-  const { t } = useI18n()
-  const href = `/app/courses/${slug}/${lesson.id}`
+  const { locale, t } = useI18n()
+  const href = withLocale(locale, `/app/courses/${slug}/${lesson.id}`)
   const xp = lessonXp(lesson)
-  const duration = lesson.duration || '5 min'
+  const duration = lesson.duration || t('app.common.durationFallback')
   const dot = complete || isNext ? 'bg-sw-blue' : 'bg-sw-grey-border'
   if (checkpoint) {
     return (
@@ -582,7 +595,7 @@ function LessonRow({
           </div>
           {isNext ? (
             <div className="shrink-0">
-              <div className="bg-sw-blue text-white text-[9px] font-bold px-2 py-1 rounded-full">Next</div>
+              <div className="bg-sw-blue text-white text-[9px] font-bold px-2 py-1 rounded-full">{t('app.common.next')}</div>
             </div>
           ) : null}
         </div>

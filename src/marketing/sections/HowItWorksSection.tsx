@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { HOME_COPY, homeCopy } from '@/marketing/data/home'
 import { homeSectionsCopy } from '@/marketing/data/homeSections'
@@ -129,7 +130,7 @@ export default function HowItWorksSection() {
         <div className="mt-12 text-center">
           <p className="mb-6 text-base text-sw-grey">{copy.ctaLead}</p>
           <Link
-            to={ROUTES.quizSuccess}
+            to={withLocale(locale, ROUTES.quizSuccess)}
             className="inline-block rounded-full bg-sw-blue px-8 py-4 font-bold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-lg hover:shadow-sw-blue/25"
           >
             {copy.cta}

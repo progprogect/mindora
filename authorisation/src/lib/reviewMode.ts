@@ -1,3 +1,5 @@
+import type { Locale } from '@/i18n/locale'
+
 const REVIEW_PARAM = 'review'
 const REVIEW_EMAILS = ['rob@inetsquared.com', 'rob@clicktech.com']
 
@@ -31,3 +33,9 @@ export function isReviewPurchaseBlocked() {
 }
 
 export const REVIEW_PURCHASE_BLOCKED = 'Review mode: purchases are disabled on this page.'
+
+export const REVIEW_PURCHASE_BLOCKED_RU = 'Режим ревью: покупки на этой странице отключены.'
+
+export function reviewPurchaseBlockedMessage(locale: Locale): string {
+  return locale === 'ru' ? REVIEW_PURCHASE_BLOCKED_RU : REVIEW_PURCHASE_BLOCKED
+}

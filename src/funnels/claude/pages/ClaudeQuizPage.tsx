@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../authorisation/src/i18n/locale'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getClaudeQuizScreens } from '@/funnels/claude/data/claudeQuizScreens'
@@ -73,7 +74,7 @@ export default function ClaudeQuizPage() {
       const cleanSearch = params.toString()
       window.history.replaceState({}, '', window.location.pathname + (cleanSearch ? `?${cleanSearch}` : ''))
       clearClaudeSalesStep()
-      navigate(`/checkout/setup?trial=1&funnel=${FUNNEL}`)
+      navigate(withLocale(locale, `/checkout/setup?trial=1&funnel=${FUNNEL}`))
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -185,7 +186,7 @@ export default function ClaudeQuizPage() {
                 name: quizState.submittedName,
                 quizType: 'claude-ai-certification',
               })
-              window.location.href = `/checkout/setup?trial=1&funnel=${FUNNEL}`
+              window.location.href = withLocale(locale, `/checkout/setup?trial=1&funnel=${FUNNEL}`)
             }}
             onExpiredPlanContinue={(productId) => {
               persistClaudeQuizResults({
@@ -196,7 +197,7 @@ export default function ClaudeQuizPage() {
                 product: productId,
                 quizType: 'claude-ai-certification',
               })
-              window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`
+              window.location.href = withLocale(locale, `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`)
             }}
         />
       )

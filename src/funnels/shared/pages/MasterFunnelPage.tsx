@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../authorisation/src/i18n/locale'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import FunnelQuizEngine from '@/funnels/shared/components/FunnelQuizEngine'
@@ -75,7 +76,7 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
       params.delete('redirect_status')
       const clean = params.toString()
       window.history.replaceState({}, '', window.location.pathname + (clean ? `?${clean}` : ''))
-      navigate(`/checkout/setup?trial=1&funnel=${funnelId}`)
+      navigate(withLocale(locale, `/checkout/setup?trial=1&funnel=${funnelId}`))
     }
   }, [funnelId, navigate])
 
@@ -118,10 +119,10 @@ export default function MasterFunnelPage({ kind, funnelId, pageTitle, screens }:
           onPercentOffResolved={setPercentOff}
           onCheckoutSuccess={() => {
             window.localStorage.setItem('sw_checkout_completed', 'true')
-            window.location.href = `/checkout/setup?trial=1&funnel=${funnelId}`
+            window.location.href = withLocale(locale, `/checkout/setup?trial=1&funnel=${funnelId}`)
           }}
           onExpiredPlanContinue={(productId) => {
-            window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${funnelId}`
+            window.location.href = withLocale(locale, `/checkout?product=${encodeURIComponent(productId)}&funnel=${funnelId}`)
           }}
         />
       )

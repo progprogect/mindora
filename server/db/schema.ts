@@ -69,6 +69,7 @@ export const profiles = pgTable(
     quizRole: text('quiz_role'),
     stripeCustomerId: text('stripe_customer_id'),
     trialWelcomeEmailSentAt: timestamp('trial_welcome_email_sent_at', { withTimezone: true }),
+    locale: text('locale').notNull().default('en'),
   },
   (table) => [uniqueIndex('profiles_user_id_idx').on(table.userId)],
 )
@@ -297,4 +298,47 @@ export const wiseMessages = pgTable(
     createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [index('wise_messages_thread_idx').on(table.threadId)],
+)
+
+/** Membership consent captured on /account/membership Continue. */
+export const funnelConsents = pgTable(
+  'funnel_consents',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    sid: text('sid').notNull(),
+    plan: text('plan').notNull(),
+    consentText: text('consent_text').notNull(),
+    ip: text('ip'),
+    userAgent: text('user_agent'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('funnel_consents_user_idx').on(table.userId),
+    index('funnel_consents_sid_idx').on(table.sid),
+  ],
+)
+
+/** Email ~24h before first post-trial subscription charge. */
+export const funnelTrialReminders = pgTable(
+  'funnel_trial_reminders',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    stripeSubscriptionId: text('stripe_subscription_id').notNull(),
+    email: text('email').notNull(),
+    amountCents: integer('amount_cents').notNull(),
+    sendAt: timestamp('send_at', { withTimezone: true }).notNull(),
+    sentAt: timestamp('sent_at', { withTimezone: true }),
+    locale: text('locale').notNull().default('en'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('funnel_trial_reminders_sub_idx').on(table.stripeSubscriptionId),
+    index('funnel_trial_reminders_send_idx').on(table.sendAt),
+  ],
 )

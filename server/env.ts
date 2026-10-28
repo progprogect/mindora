@@ -16,7 +16,13 @@ const EnvSchema = z.object({
   SESSION_SECRET: z.string().optional().default(''),
   STRIPE_SECRET_KEY: z.string().optional().default(''),
   STRIPE_WEBHOOK_SECRET: z.string().optional().default(''),
+  /** Publishable key for funnel HTML 3DS (handleNextAction). Falls back to VITE_ at runtime. */
+  STRIPE_PUBLISHABLE_KEY: z.string().optional().default(''),
   STRIPE_MONTHLY_PRICE_ID: z.string().optional().default(''),
+  /** Funnel membership main ($49.99/mo). Falls back to STRIPE_MONTHLY_PRICE_ID. */
+  STRIPE_MONTHLY_4999_PRICE_ID: z.string().optional().default(''),
+  /** Funnel membership downsell ($29.99/mo). Falls back to STRIPE_MONTHLY_PRICE_ID. */
+  STRIPE_MONTHLY_2999_PRICE_ID: z.string().optional().default(''),
   STRIPE_QUARTERLY_PRICE_ID: z.string().optional().default(''),
   STRIPE_ANNUAL_PRICE_ID: z.string().optional().default(''),
   STRIPE_SIX_MONTH_PRICE_ID: z.string().optional().default(''),

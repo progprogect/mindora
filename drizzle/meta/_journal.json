@@ -29,6 +29,13 @@
       "when": 1757860800000,
       "tag": "0003_email_flags",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1761468000000,
+      "tag": "0004_funnel_billing",
+      "breakpoints": true
     }
   ]
 }

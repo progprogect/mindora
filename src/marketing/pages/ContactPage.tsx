@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { CompanyBox, LegalCard, LegalHero } from '@/marketing/components/LegalBlocks'
 import { COMPANY, companyPagesCopy } from '@/marketing/data/company'
@@ -61,7 +62,7 @@ export default function ContactPage() {
         </CompanyBox>
         <p className="text-sm text-sw-grey">
           {copy.needHelp}{' '}
-          <Link to={ROUTES.support} className="font-medium text-sw-blue hover:underline">
+          <Link to={withLocale(locale, ROUTES.support)} className="font-medium text-sw-blue hover:underline">
             {copy.helpLink}
           </Link>
         </p>

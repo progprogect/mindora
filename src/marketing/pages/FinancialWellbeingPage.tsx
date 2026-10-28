@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useLayoutEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import FwFinder from '@/marketing/components/FwFinder'
@@ -31,12 +32,13 @@ function Chevron() {
 }
 
 function Breadcrumb({ fw }: { fw: FwContent }) {
+  const { locale } = useI18n()
   const page = fw.page
   return (
     <div className="sticky top-16 z-40 border-b border-sw-grey-border bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center gap-2 py-2 text-xs text-sw-grey">
-          <Link to={ROUTES.home} className="transition-colors hover:text-sw-blue">
+          <Link to={withLocale(locale, ROUTES.home)} className="transition-colors hover:text-sw-blue">
             {page.breadcrumbHome}
           </Link>
           <Chevron />
@@ -60,7 +62,7 @@ function Breadcrumb({ fw }: { fw: FwContent }) {
             ) : (
               <Link
                 key={item.href}
-                to={item.href}
+                to={withLocale(locale, item.href)}
                 className="shrink-0 rounded-full border border-sw-grey-border px-4 py-1.5 text-sm font-medium text-sw-grey transition-all hover:bg-sw-grey-light hover:text-sw-dark"
               >
                 {item.label}
@@ -436,7 +438,7 @@ function FinalCta({ page }: { page: PageCopy }) {
         </p>
         <div className="reveal reveal-delay-2 mb-10 flex flex-col items-center gap-3">
           <Link
-            to={ROUTES.quizSuccess}
+            to={withLocale(locale, ROUTES.quizSuccess)}
             className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-10 py-5 text-lg font-bold text-sw-blue shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/90 hover:shadow-2xl sm:w-auto"
           >
             {page.finalCta}

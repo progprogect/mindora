@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 
 export default function NotFoundPage() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div
       className="min-h-screen flex items-center justify-center px-4"
@@ -13,7 +14,7 @@ export default function NotFoundPage() {
         <h1 className="text-2xl font-bold text-sw-dark mb-2">{t('auth.notFoundTitle')}</h1>
         <p className="text-sw-grey mb-8">{t('auth.notFoundBody')}</p>
         <Link
-          to="/"
+          to={withLocale(locale, '/')}
           className="inline-block bg-sw-blue hover:bg-sw-blue-hover text-white font-semibold px-6 py-3 rounded-full transition-colors"
         >
           {t('auth.backToHome')}

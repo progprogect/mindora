@@ -10,6 +10,7 @@ import {
 import { ROUTES } from '@/marketing/data/nav'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
+import { withLocale, type Locale } from '../../../authorisation/src/i18n/locale'
 
 const BILLING_LINK_ROUTES: Record<BillingLinkRoute, string> = {
   terms: ROUTES.terms,
@@ -19,14 +20,14 @@ const BILLING_LINK_ROUTES: Record<BillingLinkRoute, string> = {
   support: ROUTES.support,
 }
 
-function renderInline(parts: BillingInlinePart[]): ReactNode {
+function renderInline(parts: BillingInlinePart[], locale: Locale): ReactNode {
   return parts.map((part, index) => {
     switch (part.kind) {
       case 'text':
         return <Fragment key={index}>{part.value}</Fragment>
       case 'link':
         return (
-          <Link key={index} to={BILLING_LINK_ROUTES[part.route]} className="font-medium text-sw-blue hover:underline">
+          <Link key={index} to={withLocale(locale, BILLING_LINK_ROUTES[part.route])} className="font-medium text-sw-blue hover:underline">
             {part.label}
           </Link>
         )
@@ -34,7 +35,7 @@ function renderInline(parts: BillingInlinePart[]): ReactNode {
         return (
           <Link
             key={index}
-            to={`${ROUTES.support}?chat=open`}
+            to={withLocale(locale, `${ROUTES.support}?chat=open`)}
             className="font-medium text-sw-blue hover:underline"
           >
             {part.label}
@@ -60,11 +61,11 @@ function renderInline(parts: BillingInlinePart[]): ReactNode {
   })
 }
 
-function renderText(text: BillingText): ReactNode {
+function renderText(text: BillingText, locale: Locale): ReactNode {
   if (typeof text === 'string') {
     return text
   }
-  return renderInline(text)
+  return renderInline(text, locale)
 }
 
 function CheckItem({ children }: { children: string }) {
@@ -86,7 +87,7 @@ export default function BillingPage() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-3 text-sm font-semibold tracking-widest text-white/50 uppercase">{copy.heroKicker}</p>
           <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl">{copy.heroTitle}</h1>
-          <p className="mx-auto max-w-xl text-base text-white/70">{renderText(copy.heroSubtitle)}</p>
+          <p className="mx-auto max-w-xl text-base text-white/70">{renderText(copy.heroSubtitle, locale)}</p>
         </div>
       </section>
 
@@ -94,7 +95,7 @@ export default function BillingPage() {
         <div className="space-y-6">
           <div className="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
             <h2 className="mb-2 text-xl font-bold text-sw-dark sm:text-2xl">{copy.subscriptionTitle}</h2>
-            <p className="mb-4 text-sw-grey">{renderText(copy.subscriptionIntro)}</p>
+            <p className="mb-4 text-sw-grey">{renderText(copy.subscriptionIntro, locale)}</p>
             <div className="grid gap-4 sm:grid-cols-3">
               {copy.plans.map((plan) => {
                 const borderStyle =
@@ -160,7 +161,7 @@ export default function BillingPage() {
               <div key={faq.question}>
                 <h3 className="mb-2 font-semibold text-sw-dark">{faq.question}</h3>
                 <div className="space-y-2 leading-relaxed text-sw-grey">
-                  <p>{renderText(faq.answer)}</p>
+                  <p>{renderText(faq.answer, locale)}</p>
                 </div>
               </div>
             ))}
@@ -173,7 +174,7 @@ export default function BillingPage() {
             <h3 className="mb-2 text-lg font-bold text-sw-dark">{copy.ctaTitle}</h3>
             <p className="mb-4 text-sm text-sw-grey">{copy.ctaBody}</p>
             <Link
-              to={`${ROUTES.support}?chat=open`}
+              to={withLocale(locale, `${ROUTES.support}?chat=open`)}
               className="inline-block rounded-full bg-sw-blue px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-sw-blue-hover"
             >
               {copy.ctaButton}
@@ -185,7 +186,7 @@ export default function BillingPage() {
             {copy.relatedLinks.map((link, index) => (
               <Fragment key={link.route}>
                 {index > 0 ? ' · ' : null}
-                <Link to={BILLING_LINK_ROUTES[link.route]} className="text-sw-blue hover:underline">
+                <Link to={withLocale(locale, BILLING_LINK_ROUTES[link.route])} className="text-sw-blue hover:underline">
                   {link.label}
                 </Link>
               </Fragment>

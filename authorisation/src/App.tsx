@@ -1,3 +1,4 @@
+import { withLocale } from '@/i18n/locale'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AnnualOffer } from '@/account/UpgradeAnnualPage'
 import { PlannerOffer } from '@/account/UpgradePlannersPage'
@@ -10,7 +11,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Navigate to={withLocale('en', '/login')} replace />} />
         {lmsRoutes}
 
         {import.meta.env.DEV ? (
@@ -20,7 +21,7 @@ export default function App() {
             <Route path="/__preview/upgrade-planners-nocard" element={<PlannerOffer hasSavedCard={false} />} />
             <Route path="/__preview/upgrade-annual" element={<AnnualOffer />} />
             <Route path="/__preview/upgrade-mindora" element={<MindoraOffer />} />
-            <Route path="/__preview/upgrade-wise" element={<Navigate to="/__preview/upgrade-mindora" replace />} />
+            <Route path="/__preview/upgrade-wise" element={<Navigate to={withLocale('en', '/__preview/upgrade-mindora')} replace />} />
           </>
         ) : null}
 

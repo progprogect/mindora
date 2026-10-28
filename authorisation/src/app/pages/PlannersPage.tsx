@@ -9,12 +9,13 @@ import {
 } from '@/content/planners'
 import { buyOffer, chargeErrorMessage } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { useHasSavedCard, usePurchases } from '@/lib/lmsQueries'
 
 const LIBRARY_SLUG = 'planner-bundle-library'
 
 export default function PlannersPage() {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const { planners: plannerList, categories: plannerCategories } = plannerContent(locale)
   const purchases = usePurchases()
   const hasCard = useHasSavedCard()
@@ -68,7 +69,7 @@ export default function PlannersPage() {
       <header className="sticky top-0 z-10 border-b border-sw-grey-border bg-white">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-4 sm:px-6">
           <Link
-            to="/app/dashboard"
+            to={withLocale(locale, "/app/dashboard")}
             aria-label={t('app.common.backToDashboard')}
             className="flex h-9 w-9 items-center justify-center rounded-full text-sw-dark hover:bg-sw-grey-light"
           >

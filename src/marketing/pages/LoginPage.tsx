@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { companyPagesCopy } from '@/marketing/data/company'
@@ -213,7 +214,7 @@ export default function LoginPage() {
           {error ? <p className="mt-3 text-sm text-red-500">{error}</p> : null}
           <p className="mt-6 text-center text-xs text-sw-grey">
             {copy.noAccount}{' '}
-            <Link to={ROUTES.quiz28} className="font-semibold text-sw-blue">
+            <Link to={withLocale(locale, ROUTES.quiz28)} className="font-semibold text-sw-blue">
               {copy.takeQuiz}
             </Link>
           </p>

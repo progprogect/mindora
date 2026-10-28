@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
 export default function MindoraStubPage({ title }: { title: string }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex items-center gap-2 px-4 h-14 border-b border-sw-grey-border sticky top-0 z-10 bg-white">
         <Link
-          to="/app/dashboard"
+          to={withLocale(locale, "/app/dashboard")}
           className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 transition-colors"
           aria-label={t('app.common.backToDashboard')}
         >

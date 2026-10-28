@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { homeSectionsCopy } from '@/marketing/data/homeSections'
@@ -33,7 +34,7 @@ export default function HomeStickyCta() {
           <p className="text-xs text-sw-grey">{copy.subtitle}</p>
         </div>
         <Link
-          to={ROUTES.quizSuccess}
+          to={withLocale(locale, ROUTES.quizSuccess)}
           className="shrink-0 rounded-xl bg-sw-blue px-5 py-2.5 text-sm font-bold whitespace-nowrap text-white hover:bg-sw-blue-hover"
         >
           {copy.button}

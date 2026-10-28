@@ -8,12 +8,17 @@ import { logger } from 'hono/logger'
 import { createLmsRoutes } from 'successwise-app/lms-api'
 import { runMigrations } from './db/migrate.js'
 import { loadEnv } from './env.js'
+import { startTrialReminderPoller } from './lib/funnelReminders.js'
 import { checkoutRoutes } from './routes/checkout.js'
+import { funnelBillingRoutes } from './routes/funnelBilling.js'
+import { funnelPageRoutes, maybeServeFunnelOnboard } from './routes/funnelPages.js'
 import { healthRoutes } from './routes/health.js'
 import { leadRoutes } from './routes/leads.js'
 import { metaRoutes } from './routes/meta.js'
 import { productRoutes } from './routes/products.js'
 import { stripeWebhookHandler } from './routes/stripeWebhook.js'
+import { withLocaleAwareFetch } from './lib/localeFetch.js'
+import { localeContextMiddleware } from './middleware/locale.js'
 import { createSpaGateway } from './spa/gateway.js'
 
 const env = loadEnv()
@@ -21,6 +26,7 @@ const env = loadEnv()
 export const app = new Hono()
 
 app.use('*', logger())
+app.use('*', localeContextMiddleware)
 if (env.NODE_ENV !== 'production') {
   app.use(
     '*',
@@ -39,8 +45,13 @@ api.route('/', createLmsRoutes())
 api.route('/', leadRoutes)
 api.route('/', productRoutes)
 api.route('/', checkoutRoutes)
+api.route('/', funnelBillingRoutes)
 api.route('/', metaRoutes)
 app.route('/api', api)
+
+// HTML funnels (inject window.FUNNEL) — before SPA catch-all.
+app.route('/', funnelPageRoutes)
+app.use('/account/onboard', maybeServeFunnelOnboard)
 
 function marketingDistPath(): string {
   if (env.MARKETING_DIST) return env.MARKETING_DIST
@@ -58,13 +69,14 @@ if (marketing) {
 
 async function main() {
   // Bind first so Railway healthchecks do not kill the process during migrations.
-  serve({ fetch: app.fetch, port: env.PORT, hostname: '0.0.0.0' }, (info) => {
+  serve({ fetch: withLocaleAwareFetch(app.fetch.bind(app)), port: env.PORT, hostname: '0.0.0.0' }, (info) => {
     console.log(`[api] listening on ${info.address}:${info.port}`)
   })
   if (!env.DATABASE_URL) return
   try {
     await runMigrations()
     console.log('[api] migrations applied')
+    startTrialReminderPoller()
   } catch (error: unknown) {
     console.error('[api] migrations failed; SPA is up, API needs a reachable Postgres', error)
   }

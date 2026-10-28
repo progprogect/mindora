@@ -1,3 +1,4 @@
+import { withLocale } from '../../../../authorisation/src/i18n/locale'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { quizScreensFor, type FunnelLocale } from '@/funnels/twenty-eight-day/data/quizScreens'
@@ -70,7 +71,7 @@ export default function QuizPage() {
       params.delete('redirect_status')
       const cleanSearch = params.toString()
       window.history.replaceState({}, '', window.location.pathname + (cleanSearch ? `?${cleanSearch}` : ''))
-      navigate('/checkout/setup?trial=1&funnel=' + FUNNEL)
+      navigate(withLocale(locale, '/checkout/setup?trial=1&funnel=' + FUNNEL))
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -204,7 +205,7 @@ export default function QuizPage() {
               savedAt: Date.now(),
             })
             window.localStorage.setItem('sw_checkout_completed', 'true')
-            window.location.href = `/checkout/setup?trial=1&funnel=${FUNNEL}`
+            window.location.href = withLocale(locale, `/checkout/setup?trial=1&funnel=${FUNNEL}`)
           }}
           onExpiredPlanContinue={(productId) => {
             persistQuizResults({
@@ -215,7 +216,7 @@ export default function QuizPage() {
               savedAt: Date.now(),
               product: productId,
             })
-            window.location.href = `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`
+            window.location.href = withLocale(locale, `/checkout?product=${encodeURIComponent(productId)}&funnel=${FUNNEL}`)
           }}
         />
       )

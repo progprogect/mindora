@@ -430,7 +430,7 @@
       "id": "cam-5-using-projects",
       "dayNumber": 5,
       "moduleId": "cam-module-1",
-      "title": "Projects для порядка в работе",
+      "title": "Проекты (Projects) для порядка в работе",
       "subtitle": "Дать Claude постоянную память для самой важной работы",
       "duration": "4 мин",
       "xpValue": 20,
@@ -524,7 +524,7 @@
       "id": "cam-6-artifacts",
       "dayNumber": 6,
       "moduleId": "cam-module-1",
-      "title": "Artifacts: живая рабочая область",
+      "title": "Артефакты (Artifacts): живая рабочая область",
       "subtitle": "Создавать документы, таблицы и код, которые обновляются в реальном времени",
       "duration": "4 мин",
       "xpValue": 20,
@@ -538,7 +538,7 @@
         },
         {
           "type": "content",
-          "headline": "Что такое Artifacts?",
+          "headline": "Что такое артефакты (Artifacts)?",
           "body": "Artifact — панель рядом с чатом, «верстак» для совместной доработки результата.",
           "bullets": [
             "📄 Document artifacts — посты, отчёты, предложения, письма, сценарии",
@@ -549,7 +549,7 @@
         },
         {
           "type": "content",
-          "headline": "Как эффективно использовать Artifacts",
+          "headline": "Как эффективно использовать артефакты (Artifacts)",
           "body": "Когда Artifact открыт, уточняйте в диалоге без потери версии. Как выжать максимум:",
           "bullets": [
             "«Добавь раздел о [теме]» — Claude обновляет artifact напрямую",
@@ -560,7 +560,7 @@
         },
         {
           "type": "content",
-          "headline": "Когда Artifacts появляются автоматически",
+          "headline": "Когда артефакты (Artifacts) появляются автоматически",
           "body": "Claude решает, когда создать Artifact. Некоторые запросы почти всегда его вызывают:",
           "bullets": [
             "Просьба о документе, отчёте или статье",

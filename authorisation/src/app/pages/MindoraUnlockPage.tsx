@@ -2,11 +2,12 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { buyOffer, chargeErrorMessage } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { usePurchases } from '@/lib/lmsQueries'
 import { COACH_OFFER_SLUG, ownsCoachSku } from '@/shared/coach'
 
 export default function MindoraUnlockPage() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const purchases = usePurchases()
   const navigate = useNavigate()
   const [busy, setBusy] = useState(false)
@@ -20,7 +21,7 @@ export default function MindoraUnlockPage() {
       const result = await buyOffer({ offerSlug: COACH_OFFER_SLUG })
       if (result.checkoutUrl) return
       if (result.success || result.alreadyPurchased) {
-        navigate('/app/mindora')
+        navigate(withLocale(locale, '/app/mindora'))
         return
       }
       setError(chargeErrorMessage(result, t, t('app.mindora.paymentFailed')))
@@ -32,7 +33,7 @@ export default function MindoraUnlockPage() {
   return (
     <div className="min-h-screen bg-white">
       <header className="flex items-center gap-2 px-4 h-14 border-b border-sw-grey-border">
-        <Link to="/app/mindora" className="w-8 h-8 flex items-center justify-center" aria-label={t('app.mindora.back')}>
+        <Link to={withLocale(locale, "/app/mindora")} className="w-8 h-8 flex items-center justify-center" aria-label={t('app.mindora.back')}>
           ←
         </Link>
         <h1 className="text-base font-bold text-sw-dark">{t('app.mindora.unlockPageTitle')}</h1>
@@ -42,7 +43,7 @@ export default function MindoraUnlockPage() {
           <>
             <h2 className="text-xl font-extrabold">{t('app.mindora.alreadyUnlocked')}</h2>
             <p className="text-sm text-sw-grey mt-2">{t('app.mindora.fullAccess')}</p>
-            <Link to="/app/mindora" className="mt-6 inline-block rounded-full bg-sw-blue text-white font-bold px-6 py-3">
+            <Link to={withLocale(locale, "/app/mindora")} className="mt-6 inline-block rounded-full bg-sw-blue text-white font-bold px-6 py-3">
               {t('app.mindora.chatWith')}
             </Link>
           </>

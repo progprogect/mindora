@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { buyOffer, chargeErrorMessage, upsellPaymentNote } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import { useHasSavedCard, usePromptVaultKey } from '@/lib/lmsQueries'
 
 const INCLUDED_KEYS = [
@@ -52,7 +53,7 @@ export default function PromptLibraryPage() {
 }
 
 function Paywall() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [phase, setPhase] = useState<ChargePhase>('idle')
   const [error, setError] = useState('')
   const hasCard = useHasSavedCard()
@@ -100,7 +101,7 @@ function Paywall() {
     <div data-testid="prompt-library-paywall" className="min-h-screen bg-gray-50 pb-24">
       <header className="sticky top-0 z-40 bg-white border-b border-sw-grey-border">
         <div className="max-w-2xl mx-auto px-4 h-12 flex items-center gap-3">
-          <Link to="/app/dashboard" className="text-sw-grey active:scale-95 transition-transform">
+          <Link to={withLocale(locale, "/app/dashboard")} className="text-sw-grey active:scale-95 transition-transform">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
@@ -178,7 +179,7 @@ function Paywall() {
         </div>
 
         <div className="text-center">
-          <Link to="/app/dashboard" className="text-sm text-sw-grey underline underline-offset-2">
+          <Link to={withLocale(locale, "/app/dashboard")} className="text-sm text-sw-grey underline underline-offset-2">
             {t('app.common.backToDashboardLink')}
           </Link>
         </div>
@@ -188,7 +189,7 @@ function Paywall() {
 }
 
 function OwnedVault({ vaultKey }: { vaultKey: string }) {
-  const { t, locale } = useI18n()
+  const { locale, t } = useI18n()
   const base = `/data/${vaultKey}`
   const suffix = locale === 'ru' ? '.ru.json' : '.json'
   const [categories, setCategories] = useState<VaultCategory[]>([])
@@ -302,7 +303,7 @@ function OwnedVault({ vaultKey }: { vaultKey: string }) {
               </svg>
             </button>
           ) : (
-            <Link to="/app/dashboard" className="text-sw-grey active:scale-95 transition-transform">
+            <Link to={withLocale(locale, "/app/dashboard")} className="text-sw-grey active:scale-95 transition-transform">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>

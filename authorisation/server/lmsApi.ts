@@ -11,6 +11,7 @@ import { stripeWebhookHandler } from './routes/stripeWebhook.js'
 import { subscriptionRoutes } from './routes/subscription.js'
 import { upsellRoutes } from './routes/upsell.js'
 import { mindoraRoutes } from './routes/mindora.js'
+import { materialRoutes } from './routes/materials.js'
 
 /** LMS `/api` routes only — no cors, logger, `/health`, or `/stripe/webhook`.
  *  Includes `GET /upsell/prompt-vault-key` and `GET /planners/download` (purchase-gated). */
@@ -21,6 +22,7 @@ export function createLmsRoutes(): Hono {
   api.route('/', subscriptionRoutes)
   api.route('/', progressRoutes)
   api.route('/', purchaseRoutes)
+  api.route('/', materialRoutes)
   api.route('/mindora', mindoraRoutes)
   api.route('/wise', mindoraRoutes)
   api.route('/', upsellRoutes)

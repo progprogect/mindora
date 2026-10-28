@@ -6,6 +6,7 @@ import { useCurrentUser, useSession } from '@/auth/session'
 import { apiErrorMessage, completeProfile, sendOtp, verifyOtp } from '@/lib/api'
 import { readQuizResults } from '@/lib/quizResults'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 const PLAN_IDS = ['week1', 'week4', 'week12', 'free'] as const
@@ -31,17 +32,18 @@ function CreateAuthenticated({ name, plan }: { name: string; plan: string }) {
   const navigate = useNavigate()
   const user = useCurrentUser()
   const { refresh } = useSession()
+  const { locale, t } = useI18n()
   const [started, setStarted] = useState(false)
 
   useEffect(() => {
     if (started || user === undefined) return
     setStarted(true)
     if (user?.onboardingComplete) {
-      navigate('/app/dashboard', { replace: true })
+      navigate(withLocale(locale, '/app/dashboard'), { replace: true })
       return
     }
     if (user?.planTier) {
-      navigate('/account/upgrade')
+      navigate(withLocale(locale, '/account/upgrade'))
       return
     }
 
@@ -61,12 +63,11 @@ function CreateAuthenticated({ name, plan }: { name: string; plan: string }) {
         } catch {
           /* ignore */
         }
-        navigate('/account/upgrade')
+        navigate(withLocale(locale, '/account/upgrade'))
       })
-      .catch(() => navigate('/account/upgrade'))
-  }, [user, started, name, plan, navigate, refresh])
+      .catch(() => navigate(withLocale(locale, '/account/upgrade')))
+  }, [user, started, name, plan, navigate, refresh, locale])
 
-  const { t } = useI18n()
   return <AuthSpinner message={t('account.common.settingUpAccount')} />
 }
 

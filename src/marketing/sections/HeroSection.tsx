@@ -1,3 +1,4 @@
+import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import PhoneMock from '@/marketing/components/PhoneMock'
@@ -62,7 +63,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col gap-2">
               <Link
-                to={ROUTES.quizSuccess}
+                to={withLocale(locale, ROUTES.quizSuccess)}
                 className="animate-pulse-glow inline-flex w-full items-center justify-center gap-2 rounded-full bg-sw-blue px-8 py-4 text-base font-bold text-white transition-all duration-200 hover:bg-sw-blue-hover hover:shadow-lg hover:shadow-sw-blue/25"
               >
                 {copy.cta}

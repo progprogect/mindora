@@ -7,11 +7,12 @@ import { useCurrentUser } from '@/auth/session'
 import { buyOffer, recordUpsellEvent } from '@/lib/api'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
 import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
-import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
+import { armReviewMode, isReviewPurchaseBlocked, reviewPurchaseBlockedMessage } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COACH_AVATAR, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 const OFFER = COACH_OFFER_SLUG
 const PRICE = 19.95
@@ -20,16 +21,16 @@ const NEXT = '/account/onboard'
 
 function UnauthRedirect() {
   useEffect(() => {
-    window.location.href = '/login'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/login')
   }, [])
   return <AuthSpinner />
 }
 
 function BounceDashboard() {
   useEffect(() => {
-    window.location.href = '/app/dashboard'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/app/dashboard')
   }, [])
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -163,7 +164,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div
       className="rounded-2xl p-5 sm:p-6"
@@ -246,7 +247,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">
@@ -268,7 +269,7 @@ function SuccessScreen() {
 }
 
 export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -325,7 +326,7 @@ export function MindoraOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }
   const buy = async () => {
     if (state === 'processing' || state === 'success') return
     if (isReviewPurchaseBlocked()) {
-      setError(REVIEW_PURCHASE_BLOCKED)
+      setError(reviewPurchaseBlockedMessage(locale))
       return
     }
     setState('processing')

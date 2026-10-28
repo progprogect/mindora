@@ -21,6 +21,7 @@ import { PRICING_FALLBACK_PLANS } from '@/marketing/data/pricing'
 import { rememberCheckoutEmail, resolveKnownEmail } from '@/shared/lib/checkoutSession'
 import { moneyBackCopy } from '@/marketing/data/moneyBack'
 import { useI18n } from '../../authorisation/src/i18n/I18nProvider'
+import { withLocale } from '../../authorisation/src/i18n/locale'
 import { checkoutUiCopy } from '@/shared/i18n/checkoutUiCopy'
 
 const FUNNEL_28 = '28-day-ai-challenge'
@@ -118,7 +119,10 @@ export default function CheckoutPage() {
   const planMeta = claude ? planMetaClaude : planMeta28
   const cacheKey = claude ? 'sw_claude_selected_plan' : 'sw_28day_selected_plan'
   const checkoutKey = claude ? CHECKOUT_CLAUDE_KEY : CHECKOUT_28DAY_KEY
-  const setupPath = funnelParam ? `/checkout/setup?trial=1&funnel=${funnelParam}` : '/checkout/setup'
+  const setupPath = withLocale(
+    locale,
+    funnelParam ? `/checkout/setup?trial=1&funnel=${funnelParam}` : '/checkout/setup',
+  )
 
   const [email, setEmail] = useState(
     () => results?.email?.trim() || resolveKnownEmail(searchParams) || '',

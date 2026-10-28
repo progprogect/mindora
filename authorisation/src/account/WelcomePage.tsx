@@ -5,6 +5,7 @@ import { track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COMPANY } from '@/shared/company'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 function Spinner() {
   return (
@@ -16,7 +17,7 @@ function Spinner() {
 
 function UnauthRedirect() {
   useEffect(() => {
-    window.location.href = '/checkout/setup'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/checkout/setup')
   }, [])
   return <Spinner />
 }
@@ -67,7 +68,7 @@ function Letter({ emoji, text }: { emoji: string; text: string }) {
 
 function WelcomeLetter() {
   const user = useCurrentUser()
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -79,7 +80,7 @@ function WelcomeLetter() {
 
   const continueToUpgrade = () => {
     track('welcome_letter_continue_clicked')
-    window.location.href = '/account/upgrade'
+    window.location.href = withLocale(locale, '/account/upgrade')
   }
 
   if (!ready) return <Spinner />

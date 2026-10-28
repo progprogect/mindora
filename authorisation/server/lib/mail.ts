@@ -38,6 +38,13 @@ export type TrialWelcomeEmail = {
   locale?: MailLocale
 }
 
+export type TrialChargeReminderEmail = {
+  to: string
+  amountCents: number
+  chargeAt: Date
+  locale?: MailLocale
+}
+
 export function planLabelFromFunnel(funnel?: string | null): string {
   if (!funnel) return 'MindoraAcademy Pro'
   return PLAN_LABELS[funnel] ?? 'MindoraAcademy Pro'
@@ -181,6 +188,46 @@ export async function sendTrialWelcomeEmail(input: TrialWelcomeEmail): Promise<v
   }
 }
 
+/** Sent ~24h before the first post-trial subscription charge. */
+export async function sendTrialChargeReminderEmail(input: TrialChargeReminderEmail): Promise<void> {
+  const env = loadEnv()
+  const locale = resolveMailLocale(input.locale)
+  const origin = publicOrigin()
+  const year = input.chargeAt.getFullYear()
+  const amount = formatUsd(input.amountCents)
+  const chargeDate = formatLongDate(input.chargeAt, locale)
+  const subject =
+    locale === 'ru'
+      ? `${BRAND} — Напоминание: завтра спишется ${amount}`
+      : `${BRAND} — Reminder: your membership charge of ${amount} is tomorrow`
+
+  if (!env.AUTH_RESEND_KEY) {
+    if (env.NODE_ENV === 'production') {
+      console.error(`[trial-reminder] AUTH_RESEND_KEY missing; skipped ${input.to}`)
+      return
+    }
+    console.log(`[trial-reminder] ${input.to} → ${amount} on ${chargeDate}`)
+    return
+  }
+
+  const resend = new Resend(env.AUTH_RESEND_KEY)
+  const { error } = await resend.emails.send({
+    from: env.AUTH_EMAIL,
+    to: input.to,
+    subject,
+    text: trialChargeReminderText({ amount, chargeDate, origin, year, locale }),
+    html: brandedEmailHtml({
+      origin,
+      year,
+      locale,
+      innerHtml: trialChargeReminderInnerHtml({ amount, chargeDate, origin, locale }),
+    }),
+  })
+  if (error) {
+    throw new Error(JSON.stringify(error))
+  }
+}
+
 function publicOrigin(): string {
   const origin = loadEnv().PUBLIC_ORIGIN.replace(/\/$/, '')
   return origin || DEFAULT_ORIGIN
@@ -199,12 +246,12 @@ function formatLongDate(date: Date, locale: MailLocale): string {
   return new Intl.DateTimeFormat(intlLocale, { day: 'numeric', month: 'long', year: 'numeric' }).format(date)
 }
 
-function chatUrl(origin: string): string {
-  return `${origin}/support?chat=open`
+function chatUrl(origin: string, locale: MailLocale): string {
+  return `${origin}/${locale}/support?chat=open`
 }
 
-function loginUrl(origin: string): string {
-  return `${origin}/login`
+function loginUrl(origin: string, locale: MailLocale): string {
+  return `${origin}/${locale}/login`
 }
 
 function ctaButton(href: string, label: string): string {
@@ -222,7 +269,7 @@ function brandedEmailHtml({
   locale: MailLocale
   innerHtml: string
 }): string {
-  const chat = chatUrl(origin)
+  const chat = chatUrl(origin, locale)
   const htmlLang = locale === 'ru' ? 'ru' : 'en'
   const helpBanner =
     locale === 'ru'
@@ -290,7 +337,7 @@ function trialReceiptInnerHtml({
   origin: string
   locale: MailLocale
 }): string {
-  const chat = chatUrl(origin)
+  const chat = chatUrl(origin, locale)
   const profile = `${origin}/app/profile`
   if (locale === 'ru') {
     return `<tr>
@@ -353,7 +400,7 @@ function trialReceiptText({
   year: number
   locale: MailLocale
 }): string {
-  const chat = chatUrl(origin)
+  const chat = chatUrl(origin, locale)
   const profile = `${origin}/app/profile`
   if (locale === 'ru') {
     return [
@@ -432,7 +479,7 @@ function cancellationInnerHtml({
   accessUntil: string
   locale: MailLocale
 }): string {
-  const login = loginUrl(origin)
+  const login = loginUrl(origin, locale)
   const support = `${origin}/support`
   if (locale === 'ru') {
     return `<tr>
@@ -493,8 +540,8 @@ function cancellationText({
   accessUntil: string
   locale: MailLocale
 }): string {
-  const chat = chatUrl(origin)
-  const login = loginUrl(origin)
+  const chat = chatUrl(origin, locale)
+  const login = loginUrl(origin, locale)
   if (locale === 'ru') {
     return [
       'Нужна помощь? Круглосуточная поддержка в чате',
@@ -566,7 +613,7 @@ function trialWelcomeInnerHtml({
   planLabel: string
   locale: MailLocale
 }): string {
-  const login = loginUrl(origin)
+  const login = loginUrl(origin, locale)
   if (locale === 'ru') {
     return `<tr>
             <td style="padding:8px 28px 0;">
@@ -615,6 +662,99 @@ function trialWelcomeInnerHtml({
           </tr>`
 }
 
+function trialChargeReminderInnerHtml({
+  amount,
+  chargeDate,
+  origin,
+  locale,
+}: {
+  amount: string
+  chargeDate: string
+  origin: string
+  locale: MailLocale
+}): string {
+  const profile = `${origin}/app/profile`
+  if (locale === 'ru') {
+    return `<tr>
+            <td style="padding:8px 28px 0;">
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Завтра спишется ${amount}</h1>
+              <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Ваш 3-дневный пробный период скоро закончится.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Первое списание членства <strong>${amount}</strong> запланировано на <strong>${chargeDate}</strong>. Отменить можно в любой момент до этой даты в настройках профиля — набор за $1 и купленные дополнения останутся у вас.</p>
+              <p style="margin:0 0 24px;text-align:center;">${ctaButton(profile, 'Управлять подпиской')}</p>
+              <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— Команда ${BRAND}</p>
+            </td>
+          </tr>`
+  }
+  return `<tr>
+            <td style="padding:8px 28px 0;">
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your ${amount} membership charge is tomorrow</h1>
+              <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Your 3-day trial is ending soon.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Your first membership charge of <strong>${amount}</strong> is scheduled for <strong>${chargeDate}</strong>. You can cancel any time before then in Your Profile Settings — your $1 kit and any purchased add-ons stay yours.</p>
+              <p style="margin:0 0 24px;text-align:center;">${ctaButton(profile, 'Manage subscription')}</p>
+              <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— The ${BRAND} Team</p>
+            </td>
+          </tr>`
+}
+
+function trialChargeReminderText({
+  amount,
+  chargeDate,
+  origin,
+  year,
+  locale,
+}: {
+  amount: string
+  chargeDate: string
+  origin: string
+  year: number
+  locale: MailLocale
+}): string {
+  const chat = chatUrl(origin, locale)
+  const profile = `${origin}/app/profile`
+  if (locale === 'ru') {
+    return [
+      'Нужна помощь? Круглосуточная поддержка в чате',
+      chat,
+      '',
+      BRAND,
+      '',
+      `Завтра спишется ${amount}`,
+      '',
+      'Ваш 3-дневный пробный период скоро закончится.',
+      '',
+      `Первое списание членства ${amount} запланировано на ${chargeDate}.`,
+      'Отменить можно в любой момент до этой даты в настройках профиля — набор за $1 и купленные дополнения останутся у вас.',
+      '',
+      'Управлять подпиской:',
+      profile,
+      '',
+      `— Команда ${BRAND}`,
+      '',
+      `© ${year} ${BRAND} · ${BRAND_HOST}`,
+    ].join('\n')
+  }
+  return [
+    'Need help? 24/7 Live Chat Support',
+    chat,
+    '',
+    BRAND,
+    '',
+    `Your ${amount} membership charge is tomorrow`,
+    '',
+    'Your 3-day trial is ending soon.',
+    '',
+    `Your first membership charge of ${amount} is scheduled for ${chargeDate}.`,
+    'You can cancel any time before then in Your Profile Settings — your $1 kit and any purchased add-ons stay yours.',
+    '',
+    'Manage subscription:',
+    profile,
+    '',
+    `— The ${BRAND} Team`,
+    '',
+    `© ${year} ${BRAND} · ${BRAND_HOST}`,
+  ].join('\n')
+}
+
 function trialWelcomeText({
   origin,
   year,
@@ -626,8 +766,8 @@ function trialWelcomeText({
   planLabel: string
   locale: MailLocale
 }): string {
-  const chat = chatUrl(origin)
-  const login = loginUrl(origin)
+  const chat = chatUrl(origin, locale)
+  const login = loginUrl(origin, locale)
   if (locale === 'ru') {
     return [
       'Нужна помощь? Круглосуточная поддержка в чате',

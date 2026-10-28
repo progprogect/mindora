@@ -7,11 +7,12 @@ import { useCurrentUser } from '@/auth/session'
 import { buyOffer, recordUpsellEvent } from '@/lib/api'
 import { goOtoNext, onOtoChargeFailed } from '@/lib/otoFlow'
 import { useHasSavedCard, useUpsellStatus } from '@/lib/lmsQueries'
-import { armReviewMode, isReviewPurchaseBlocked, REVIEW_PURCHASE_BLOCKED } from '@/lib/reviewMode'
+import { armReviewMode, isReviewPurchaseBlocked, reviewPurchaseBlockedMessage } from '@/lib/reviewMode'
 import { attributionPayload, track } from '@/lib/track'
 import BrandWordmark from '@/shared/BrandWordmark'
 import { COMPANY } from '@/shared/company'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 const OFFER = 'ultimate-prompt-library-oto'
 const PRICE = 9.97
@@ -96,16 +97,16 @@ const CHIP_KEYS = [
 
 function UnauthRedirect() {
   useEffect(() => {
-    window.location.href = '/login'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/login')
   }, [])
   return <AuthSpinner />
 }
 
 function BounceDashboard() {
   useEffect(() => {
-    window.location.href = '/app/dashboard'
+    window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/app/dashboard')
   }, [])
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -209,7 +210,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="rounded-2xl border-2 border-amber-300 bg-amber-50/30 p-5">
       <div className="flex items-center justify-between mb-3">
@@ -305,7 +306,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">
@@ -329,7 +330,7 @@ function SuccessScreen() {
 }
 
 export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const navigate = useNavigate()
   const [state, setState] = useState<'idle' | 'processing' | 'success'>('idle')
   const [error, setError] = useState('')
@@ -386,7 +387,7 @@ export function PromptOffer({ hasSavedCard = true }: { hasSavedCard?: boolean })
   const buy = async () => {
     if (state === 'processing' || state === 'success') return
     if (isReviewPurchaseBlocked()) {
-      setError(REVIEW_PURCHASE_BLOCKED)
+      setError(reviewPurchaseBlockedMessage(locale))
       return
     }
     setState('processing')

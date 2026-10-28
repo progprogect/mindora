@@ -13,6 +13,7 @@ import {
 } from '@/marketing/data/terms'
 import usePageTitle from '@/marketing/hooks/usePageTitle'
 import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
+import { withLocale, type Locale } from '../../../authorisation/src/i18n/locale'
 
 const TERMS_LINK_ROUTES: Record<TermsLinkRoute, string> = {
   privacy: ROUTES.privacy,
@@ -23,7 +24,7 @@ const TERMS_LINK_ROUTES: Record<TermsLinkRoute, string> = {
   terms: ROUTES.terms,
 }
 
-function renderInlineParts(parts: TermsInlinePart[], strongClassName?: string): ReactNode {
+function renderInlineParts(parts: TermsInlinePart[], locale: Locale, strongClassName?: string): ReactNode {
   return parts.map((part, index) => {
     switch (part.kind) {
       case 'text':
@@ -44,7 +45,7 @@ function renderInlineParts(parts: TermsInlinePart[], strongClassName?: string): 
         return <Fragment key={index}>{MONEY_BACK_DAYS}</Fragment>
       case 'link':
         return (
-          <Link key={index} to={TERMS_LINK_ROUTES[part.route]} className="text-sw-blue hover:underline">
+          <Link key={index} to={withLocale(locale, TERMS_LINK_ROUTES[part.route])} className="text-sw-blue hover:underline">
             {part.label}
           </Link>
         )
@@ -60,14 +61,14 @@ function renderInlineParts(parts: TermsInlinePart[], strongClassName?: string): 
   })
 }
 
-function renderParagraphContent(content: TermsParagraphContent): ReactNode {
+function renderParagraphContent(content: TermsParagraphContent, locale: Locale): ReactNode {
   if (typeof content === 'string') {
     return content
   }
-  return renderInlineParts(content)
+  return renderInlineParts(content, locale)
 }
 
-function renderBlock(block: TermsBlock): ReactNode {
+function renderBlock(block: TermsBlock, locale: Locale): ReactNode {
   switch (block.kind) {
     case 'companyDetails':
       return <CompanyDetails />
@@ -77,12 +78,12 @@ function renderBlock(block: TermsBlock): ReactNode {
       return (
         <ul className="list-disc space-y-2 pl-5">
           {block.items.map((item, index) => (
-            <li key={index}>{renderParagraphContent(item)}</li>
+            <li key={index}>{renderParagraphContent(item, locale)}</li>
           ))}
         </ul>
       )
     case 'p':
-      return <p>{renderParagraphContent(block.content)}</p>
+      return <p>{renderParagraphContent(block.content, locale)}</p>
     default:
       return null
   }
@@ -95,12 +96,12 @@ export default function TermsPage() {
 
   return (
     <>
-      <LegalHero title={copy.heroTitle} />
+      <LegalHero title={copy.heroTitle} updated={copy.updated} />
       <LegalCard>
         {copy.sections.map((section) => (
           <LegalSection key={section.title} title={section.title}>
             {section.blocks.map((block, index) => (
-              <Fragment key={`${section.title}-${index}`}>{renderBlock(block)}</Fragment>
+              <Fragment key={`${section.title}-${index}`}>{renderBlock(block, locale)}</Fragment>
             ))}
           </LegalSection>
         ))}

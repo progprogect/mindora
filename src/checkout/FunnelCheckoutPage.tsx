@@ -1,3 +1,4 @@
+import { withLocale } from '../../authorisation/src/i18n/locale'
 import { useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { ROUTES } from '@/marketing/data/nav'
@@ -122,7 +123,7 @@ export default function FunnelCheckoutPage() {
                 funnel={funnel}
                 percentOff={75}
                 onSuccess={() => {
-                  window.location.href = `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`
+                  window.location.href = withLocale(locale, `/checkout/setup?trial=1&funnel=${encodeURIComponent(funnel)}`)
                 }}
                 submitLabel={ui.confirmPayment}
               />
@@ -171,16 +172,16 @@ export default function FunnelCheckoutPage() {
           <span>✓ {moneyBack.chip}</span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-sw-grey">
-          <Link to={ROUTES.terms} className="hover:text-sw-dark">
+          <Link to={withLocale(locale, ROUTES.terms)} className="hover:text-sw-dark">
             {ui.terms}
           </Link>
-          <Link to={ROUTES.privacy} className="hover:text-sw-dark">
+          <Link to={withLocale(locale, ROUTES.privacy)} className="hover:text-sw-dark">
             {ui.privacy}
           </Link>
-          <Link to={ROUTES.refund} className="hover:text-sw-dark">
+          <Link to={withLocale(locale, ROUTES.refund)} className="hover:text-sw-dark">
             {ui.refunds}
           </Link>
-          <Link to={ROUTES.subscription} className="hover:text-sw-dark">
+          <Link to={withLocale(locale, ROUTES.subscription)} className="hover:text-sw-dark">
             {ui.subscriptionTerms}
           </Link>
         </div>

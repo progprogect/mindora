@@ -9,6 +9,7 @@ import {
   sendMindoraMessage,
 } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
+import { withLocale, type Locale } from '@/i18n/locale'
 import { useHasSavedCard } from '@/lib/lmsQueries'
 import { COACH_AVATAR, COACH_GOALS_KEY, COACH_GOALS_LEGACY_KEY, COACH_NAME, COACH_OFFER_SLUG } from '@/shared/coach'
 
@@ -43,22 +44,39 @@ function localIsoDay() {
   return `${now.getFullYear()}-${month}-${day}`
 }
 
-function composeLessonPrompt(params: URLSearchParams) {
+function composeLessonPrompt(params: URLSearchParams, locale: Locale) {
   const lesson = params.get('lesson')?.trim() || ''
   const concept = params.get('concept')?.trim() || ''
   const detail = params.get('detail')?.trim() || ''
   const task = params.get('task')?.trim() || ''
   const prompt = params.get('prompt')?.trim() || ''
   if (concept) {
-    const working = lesson ? `I'm working on "${lesson}" and I want to understand "${concept}".` : `I want to understand "${concept}".`
+    if (locale === 'ru') {
+      const working = lesson
+        ? `Я работаю над «${lesson}» и хочу понять «${concept}».`
+        : `Я хочу понять «${concept}».`
+      const said = detail ? ` В уроке сказано: ${detail}` : ''
+      return `${working}${said} — объясните проще и приведите пример?`
+    }
+    const working = lesson
+      ? `I'm working on "${lesson}" and I want to understand "${concept}".`
+      : `I want to understand "${concept}".`
     const said = detail ? ` The lesson says: ${detail}` : ''
     return `${working}${said} — can you explain it in simpler terms and give me an example?`
   }
   if (task) {
-    if (prompt) return `${task}\n\nHere's the prompt I'm using:\n${prompt}`
+    if (prompt) {
+      return locale === 'ru'
+        ? `${task}\n\nВот промпт, который я использую:\n${prompt}`
+        : `${task}\n\nHere's the prompt I'm using:\n${prompt}`
+    }
     return task
   }
-  if (lesson) return `I'm working on "${lesson}". Help me understand the key ideas and how to apply them.`
+  if (lesson) {
+    return locale === 'ru'
+      ? `Я работаю над «${lesson}». Помогите понять ключевые идеи и как их применить.`
+      : `I'm working on "${lesson}". Help me understand the key ideas and how to apply them.`
+  }
   return ''
 }
 
@@ -67,7 +85,7 @@ function hasLessonQuery(params: URLSearchParams) {
 }
 
 export default function MindoraPage() {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const [params, setSearchParams] = useSearchParams()
   const conversationId = params.get('conversationId') || undefined
   const hasCard = useHasSavedCard()
@@ -196,7 +214,7 @@ export default function MindoraPage() {
 
   useEffect(() => {
     if (!hydrated || autoSendLock.current) return
-    const composed = composeLessonPrompt(params)
+    const composed = composeLessonPrompt(params, locale)
     if (!composed) return
     if (usage === undefined) return
     autoSendLock.current = true
@@ -206,7 +224,7 @@ export default function MindoraPage() {
     }
     if (usage.used >= usage.limit) return
     void send(composed)
-  }, [hydrated, usage, params, persistThread, send])
+  }, [hydrated, usage, params, locale, persistThread, send])
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ block: 'end' })
@@ -258,7 +276,7 @@ export default function MindoraPage() {
     <div className="min-h-screen bg-white flex flex-col">
       <header className="flex items-center gap-3 px-4 py-3 border-b border-sw-grey-border/50 bg-white sticky top-0 z-10">
         <Link
-          to="/app/dashboard"
+          to={withLocale(locale, "/app/dashboard")}
           className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 transition-colors"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -285,7 +303,7 @@ export default function MindoraPage() {
             </svg>
           </button>
           <Link
-            to="/app/mindora/history"
+            to={withLocale(locale, "/app/mindora/history")}
             title={t('app.mindora.history')}
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sw-grey-light/50 text-sw-grey transition-colors"
           >
