@@ -106,7 +106,7 @@ function BounceDashboard() {
   useEffect(() => {
     window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/app/dashboard')
   }, [])
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -210,7 +210,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return (
     <div className="rounded-2xl border-2 border-amber-300 bg-amber-50/30 p-5">
       <div className="flex items-center justify-between mb-3">
@@ -306,7 +306,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-sm">

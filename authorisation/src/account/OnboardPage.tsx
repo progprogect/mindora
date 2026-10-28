@@ -13,7 +13,7 @@ import BrandWordmark from '@/shared/BrandWordmark'
 const PACE_IDS = ['spark', 'momentum', 'ignite'] as const
 
 function UnauthRedirect() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   useEffect(() => {
     window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/login')
   }, [])

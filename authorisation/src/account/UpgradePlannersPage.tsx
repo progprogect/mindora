@@ -82,7 +82,7 @@ function BounceDashboard() {
   useEffect(() => {
     window.location.href = withLocale(localeFromPathname(window.location.pathname) ?? 'en', '/app/dashboard')
   }, [])
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return <AuthSpinner message={t('account.common.almostThere')} />
 }
 
@@ -136,7 +136,7 @@ function CategoryIcon({ icon }: { icon: string }) {
 }
 
 function ChargeNote({ hasSavedCard }: { hasSavedCard: boolean }) {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   const price = money(PLANNER_OTO_CENTS)
   const list = money(PLANNER_LIST_CENTS)
   return (
@@ -171,7 +171,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 }
 
 function SuccessScreen() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return (
     <div className="flex min-h-screen items-center justify-center bg-white px-4">
       <div className="max-w-sm text-center">

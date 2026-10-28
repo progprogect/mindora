@@ -62,7 +62,7 @@ function OfferCard({
   onPurchase: () => void
   onSkip: () => void
 }) {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   const priceStr = `$${PRICE}`
   const wasStr = `$${WAS}`
   return (
@@ -138,7 +138,7 @@ function OfferCard({
 }
 
 function SuccessScreen() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   const priceStr = `$${PRICE}`
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4">

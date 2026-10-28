@@ -500,7 +500,7 @@ function LessonPlayer({
 }
 
 function LessonSpinner() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return (
     <main className="min-h-screen bg-white flex items-center justify-center">
       <div className="w-8 h-8 border-2 border-sw-blue border-t-transparent rounded-full animate-spin" aria-label={t('app.lesson.loadingAria')} />
@@ -939,7 +939,7 @@ function CardView({
 }
 
 function PromptCopy({ text }: { text: string }) {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   const [copied, setCopied] = useState(false)
   return (
     <div data-testid="lesson-prompt" className="bg-white border border-sw-grey-border rounded-xl p-4 flex flex-col gap-3">

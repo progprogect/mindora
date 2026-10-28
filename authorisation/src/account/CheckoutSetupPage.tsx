@@ -19,7 +19,7 @@ import { withLocale } from '@/i18n/locale'
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function InboxHint({ email }: { email: string }) {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   const domain = email.split('@')[1]?.toLowerCase() || ''
   const provider =
     domain === 'gmail.com' || domain === 'googlemail.com'
@@ -438,7 +438,7 @@ function SetupForm() {
 }
 
 function CheckoutLoading() {
-  const { locale, t } = useI18n()
+  const { t } = useI18n()
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-3">
       <div className="w-8 h-8 border-4 border-sw-grey-border border-t-sw-blue rounded-full animate-spin" />
