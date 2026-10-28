@@ -7,6 +7,7 @@ import { trackEvent } from '@/shared/lib/tracking'
 import { useCheckoutOfferAction, useProductsList, useTrackCheckoutInitiated } from '@/shared/lib/backend'
 import AssetImage from '@/shared/components/AssetImage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
+import QuizHostedCheckout from '@/shared/components/QuizHostedCheckout'
 import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
 import { moneyBackCopy } from '@/marketing/data/moneyBack'
 import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
@@ -21,6 +22,8 @@ interface ClaudeSalesPlanScreenProps {
   percentOff: number
   onPercentOffResolved: (percentOff: number) => void
   onCheckoutSuccess: () => void
+  /** `oneoff` = `-long` variant: $1 hosted Checkout, no subscription. Default keeps the trial flow. */
+  checkoutMode?: 'trial' | 'oneoff'
   /** Expired-offer GET STARTED — prod navigates to `/checkout?product=`. */
   onExpiredPlanContinue: (productId: string) => void
 }
@@ -221,6 +224,7 @@ export default function ClaudeSalesPlanScreen({
   percentOff,
   onPercentOffResolved,
   onCheckoutSuccess,
+  checkoutMode = 'trial',
   onExpiredPlanContinue,
 }: ClaudeSalesPlanScreenProps) {
   const { locale } = useI18n()
@@ -433,7 +437,15 @@ export default function ClaudeSalesPlanScreen({
       </div>
 
       <div id="checkout-anchor" ref={checkoutAnchorRef}>
-        {!expired && email && trialPlan ? (
+        {checkoutMode === 'oneoff' && email ? (
+          <QuizHostedCheckout
+            quiz="claudecert"
+            funnel={FUNNEL}
+            email={email}
+            name={name}
+            highlights={CLAUDE_CHECKOUT_HIGHLIGHTS}
+          />
+        ) : !expired && email && trialPlan ? (
           <InlineTrialCheckout
             email={email}
             name={name}
@@ -485,7 +497,7 @@ export default function ClaudeSalesPlanScreen({
         <div className="rounded-2xl bg-sw-grey-light p-5">
           <h3 className="mb-4 text-base font-extrabold text-sw-dark">{copy.includedTitle}</h3>
           <div className="flex flex-col gap-3">
-            {copy.includedItems.map((item) => (
+            {(checkoutMode === 'oneoff' ? copy.includedItems.slice(0, -1) : copy.includedItems).map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-sw-success">
                   <Check className="size-3 text-sw-white" strokeWidth={3} />

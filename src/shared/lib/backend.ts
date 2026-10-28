@@ -150,6 +150,25 @@ export function useCreateTrialPaymentIntent() {
   )
 }
 
+/** `-long` quiz variants: hosted Stripe Checkout, $1 one-time, no subscription. */
+export function useCreateQuizCheckout() {
+  return useCallback(
+    (args: {
+      quiz: 'claudecert' | 'challenge'
+      quiz_session_id?: string
+      name?: string
+      email?: string
+      lang: 'en' | 'ru'
+      utm?: string
+    }) =>
+      apiJson<{ url: string }>('/api/quiz/checkout', {
+        method: 'POST',
+        body: JSON.stringify(args),
+      }),
+    [],
+  )
+}
+
 /** @deprecated Alias of `useCreateTrialPaymentIntent`. */
 export function useCreateTrialSetupIntent() {
   return useCreateTrialPaymentIntent()

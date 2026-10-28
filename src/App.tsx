@@ -82,6 +82,8 @@ export default function App() {
           <Route path="/:locale" element={<LocaleLayout />}>
             <Route path="quiz/28-day-ai-challenge" element={<QuizPage />} />
             <Route path="quiz/claude-ai-certification" element={<ClaudeQuizPage />} />
+            <Route path="quiz/28-day-ai-challenge-long" element={<QuizPage checkoutMode="oneoff" />} />
+            <Route path="quiz/claude-ai-certification-long" element={<ClaudeQuizPage checkoutMode="oneoff" />} />
             <Route path="quiz/success-assessment" element={<SaQuizPage />} />
             <Route path="quiz/master-ai-for-powerpoint" element={<PptQuizPage />} />
             <Route path="quiz/master-ai-microsoft-365" element={<M365QuizPage />} />

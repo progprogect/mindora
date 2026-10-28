@@ -12,6 +12,7 @@ import {
   createFunnelSession,
   FUNNEL_COOKIE,
   FUNNEL_TTL_MS,
+  isFunnelKit,
   type FunnelKit,
   type FunnelSession,
   type FunnelStep,
@@ -204,9 +205,7 @@ export const funnelPageRoutes = new Hono()
 funnelPageRoutes.get('/dev/funnel-enter', (c) => {
   if (loadEnv().NODE_ENV === 'production') return c.text('Not found', 404)
   const kitRaw = c.req.query('kit') || 'guide'
-  const kit = (['starter', 'guide'] as const).includes(kitRaw as FunnelKit)
-    ? (kitRaw as FunnelKit)
-    : 'guide'
+  const kit = isFunnelKit(kitRaw) ? kitRaw : 'guide'
   const stepRaw = c.req.query('step') || 'verify'
   const step = (
     [

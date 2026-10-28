@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { db } from '../db/index.js'
 import { checkoutOffers } from '../db/schema.js'
 import { createDollarCheckoutSession } from '../lib/funnelCheckout.js'
-import { landingProduct, resolveLandingKit } from '../lib/funnelKits.js'
+import { landingProduct, quizProduct, resolveLandingKit } from '../lib/funnelKits.js'
 import { ALREADY_SUBSCRIBED_ERROR, findBlockingSubscription } from '../lib/subscription.js'
 import { getStripe, isStripeConfigured } from '../lib/stripe.js'
 
@@ -29,6 +29,15 @@ const landingCheckoutSchema = z.object({
   kit: z.string().optional(),
   block: z.string().optional(),
   exit_bonus: z.boolean().optional(),
+  lang: z.enum(['en', 'ru']).optional().default('en'),
+  utm: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
+})
+
+const quizCheckoutSchema = z.object({
+  quiz: z.enum(['claudecert', 'challenge']),
+  quiz_session_id: z.string().max(100).optional(),
+  name: z.string().max(200).optional(),
+  email: z.string().max(320).optional(),
   lang: z.enum(['en', 'ru']).optional().default('en'),
   utm: z.union([z.string(), z.record(z.string(), z.string())]).optional(),
 })
@@ -135,6 +144,46 @@ checkoutRoutes.post('/checkout', async (c) => {
       lang,
       cancelPath: product.cancelPath,
       metadata,
+    })
+    return c.json({ url })
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Stripe request failed'
+    return c.json({ error: message }, 502)
+  }
+})
+
+/** `-long` quiz variants: $1 one-time Checkout, no subscription. Original quiz routes keep trial-intent. */
+checkoutRoutes.post('/quiz/checkout', async (c) => {
+  const parsed = quizCheckoutSchema.safeParse(await c.req.json())
+  if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
+  if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
+  const { quiz, lang } = parsed.data
+  const product = quizProduct(quiz)
+  const email = parsed.data.email?.trim()
+  const name = parsed.data.name?.trim()
+  const quizSessionId = parsed.data.quiz_session_id?.trim()
+  const metadata: Record<string, string> = {
+    kit: quiz,
+    quiz,
+    variant: 'oneoff',
+    lang,
+    funnel: product.funnelSource,
+  }
+  if (quizSessionId) metadata.quiz_session_id = quizSessionId
+  if (name) metadata.name = name.slice(0, 200)
+  appendUtmMetadata(metadata, parsed.data.utm)
+  try {
+    const { url } = await createDollarCheckoutSession({
+      c,
+      kit: quiz,
+      productName: product.name,
+      productDescription: product.description,
+      lang,
+      cancelPath: product.cancelPath,
+      metadata,
+      email: email || undefined,
+      name: name || undefined,
+      quizSessionId: quizSessionId || undefined,
     })
     return c.json({ url })
   } catch (error) {

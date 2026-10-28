@@ -8,6 +8,8 @@ import { trackEvent } from '@/shared/lib/tracking'
 import { getAnswerLabel } from '@/funnels/twenty-eight-day/lib/scoring'
 import { useProductsList, useSetCheckoutOfferPercentAction, useTrackCheckoutInitiated } from '@/shared/lib/backend'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
+import QuizHostedCheckout from '@/shared/components/QuizHostedCheckout'
+import { defaultCheckoutHighlights } from '@/shared/lib/checkoutHighlights'
 import { moneyBackCopy } from '@/marketing/data/moneyBack'
 import { useI18n } from '../../../../../authorisation/src/i18n/I18nProvider'
 
@@ -19,6 +21,8 @@ interface SalesPlanScreenProps {
   percentOff: number
   onPercentOffResolved: (percentOff: number) => void
   onCheckoutSuccess: () => void
+  /** `oneoff` = `-long` variant: $1 hosted Checkout, no subscription. Default keeps the trial flow. */
+  checkoutMode?: 'trial' | 'oneoff'
   /** Expired-offer GET STARTED — navigates to `/checkout?product=`. */
   onExpiredPlanContinue: (productId: string) => void
 }
@@ -323,6 +327,7 @@ export default function SalesPlanScreen({
   percentOff,
   onPercentOffResolved,
   onCheckoutSuccess,
+  checkoutMode = 'trial',
   onExpiredPlanContinue,
 }: SalesPlanScreenProps) {
   const { locale } = useI18n()
@@ -557,7 +562,15 @@ export default function SalesPlanScreen({
       </div>
 
       <div id="checkout-anchor" ref={checkoutRef} style={{ scrollMarginTop: 72 }}>
-        {!expired && email && trialPlan ? (
+        {checkoutMode === 'oneoff' && email ? (
+          <QuizHostedCheckout
+            quiz="challenge"
+            funnel={FUNNEL}
+            email={email}
+            name={name}
+            highlights={defaultCheckoutHighlights(locale)}
+          />
+        ) : !expired && email && trialPlan ? (
           <InlineTrialCheckout
             email={email}
             name={name}
@@ -607,7 +620,7 @@ export default function SalesPlanScreen({
                 {copy.personalised(profile.archetype, profile.archetypeEmoji)}
               </span>
             </div>
-            {copy.included.slice(1).map((item) => (
+            {(checkoutMode === 'oneoff' ? copy.included.slice(1, -1) : copy.included.slice(1)).map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <CheckDot />
                 <span className="text-sm leading-snug text-sw-dark">{item}</span>

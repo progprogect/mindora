@@ -6,17 +6,13 @@ import { DEFAULT_LOCALE, withLocalePrefix, type AppLocale } from './localePath.j
 export const FUNNEL_TTL_MS = 2 * 60 * 60 * 1000
 export const FUNNEL_COOKIE = 'mindora_funnel'
 
-/** Active $1 Entry Product funnels (HTML landings). Quiz funnels use trial-intent, not kits. */
-export const FUNNEL_KITS = ['starter', 'guide'] as const
-export type FunnelKit = (typeof FUNNEL_KITS)[number]
-
 /**
- * Retired quiz kit keys — may still appear on in-flight Stripe metadata / purchased SKUs.
- * Do not mint new funnel sessions with these; keep recognising them so $1 PI does not create a trial sub.
+ * Active $1 Entry Product funnels: HTML landings (starter, guide) and the `-long` quiz
+ * variants (claudecert, challenge). The original quiz routes keep the trial-intent flow.
  */
-export const RETIRED_QUIZ_KITS = ['claudecert', 'challenge'] as const
-export type RetiredQuizKit = (typeof RETIRED_QUIZ_KITS)[number]
-export type KitCheckoutKey = FunnelKit | RetiredQuizKit
+export const FUNNEL_KITS = ['starter', 'guide', 'claudecert', 'challenge'] as const
+export type FunnelKit = (typeof FUNNEL_KITS)[number]
+export type KitCheckoutKey = FunnelKit
 
 export const FUNNEL_STEPS = [
   'verify',
@@ -59,10 +55,7 @@ export function isFunnelKit(value: unknown): value is FunnelKit {
 }
 
 export function isKitCheckoutKey(value: unknown): value is KitCheckoutKey {
-  return (
-    isFunnelKit(value) ||
-    (typeof value === 'string' && (RETIRED_QUIZ_KITS as readonly string[]).includes(value))
-  )
+  return isFunnelKit(value)
 }
 
 export function isFunnelStep(value: unknown): value is FunnelStep {

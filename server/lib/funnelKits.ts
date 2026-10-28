@@ -1,4 +1,4 @@
-import type { FunnelKit, KitCheckoutKey } from './funnelToken.js'
+import type { KitCheckoutKey } from './funnelToken.js'
 
 type KitProduct = {
   name: string
@@ -7,7 +7,7 @@ type KitProduct = {
   funnelSource: string
 }
 
-const LANDING_PRODUCTS: Record<FunnelKit, KitProduct> = {
+const LANDING_PRODUCTS: Record<'starter' | 'guide', KitProduct> = {
   starter: {
     name: 'Mindora AI Starter Kit',
     description:
@@ -24,36 +24,45 @@ const LANDING_PRODUCTS: Record<FunnelKit, KitProduct> = {
   },
 }
 
-/** Read-only product metadata for retired quiz kits (fulfill / receipts only). */
-const RETIRED_QUIZ_PRODUCTS: Record<'claudecert' | 'challenge', KitProduct> = {
+/** `-long` quiz variants: $1 one-time Checkout, no subscription (original quiz routes use trial-intent). */
+const QUIZ_PRODUCTS: Record<QuizKit, KitProduct> = {
   claudecert: {
     name: 'Mindora Claude AI Learning Plan',
     description:
       '7-day Claude AI mastery course · 50+ lessons & exercises · Certificate of Mastery · prompts & templates · one-time payment',
-    cancelPath: '/quiz/claude-ai-certification',
+    cancelPath: '/quiz/claude-ai-certification-long',
     funnelSource: 'claude-ai-certification',
   },
   challenge: {
     name: 'Mindora 28-Day AI Plan',
     description:
       'Your personalised 28-day AI plan · 28 daily 10-min lessons · a new AI tool every day · certificate · one-time payment',
-    cancelPath: '/quiz/28-day-ai-challenge',
+    cancelPath: '/quiz/28-day-ai-challenge-long',
     funnelSource: '28-day-ai-challenge',
   },
 }
 
-export function landingProduct(kit: FunnelKit) {
+export type QuizKit = 'claudecert' | 'challenge'
+
+export function isQuizKit(value: unknown): value is QuizKit {
+  return value === 'claudecert' || value === 'challenge'
+}
+
+export function landingProduct(kit: 'starter' | 'guide') {
   return LANDING_PRODUCTS[kit]
 }
 
-/** Active landing kits + retired quiz kits (webhook fulfill / skip-sub). */
+export function quizProduct(kit: QuizKit) {
+  return QUIZ_PRODUCTS[kit]
+}
+
+/** Landing kits + `-long` quiz kits (webhook fulfill / skip-sub). */
 export function kitProduct(kit: KitCheckoutKey) {
-  if (kit === 'claudecert' || kit === 'challenge') return RETIRED_QUIZ_PRODUCTS[kit]
-  return LANDING_PRODUCTS[kit]
+  return isQuizKit(kit) ? QUIZ_PRODUCTS[kit] : LANDING_PRODUCTS[kit]
 }
 
 /** Map landing `variant` / explicit `kit` to an active funnel kit (starter | guide only). */
-export function resolveLandingKit(input: { kit?: string; variant?: string }): FunnelKit | null {
+export function resolveLandingKit(input: { kit?: string; variant?: string }): 'starter' | 'guide' | null {
   const kit = input.kit?.trim()
   if (kit) {
     if (kit === 'starter' || kit === 'guide') return kit

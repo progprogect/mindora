@@ -47,7 +47,7 @@ const SPIN_WHEEL_DISCOUNT_PERCENT = 97
  * off to `/checkout/setup` (Этап 6). See
  * docs/claude_ai_certification/implementation-plan.md.
  */
-export default function ClaudeQuizPage() {
+export default function ClaudeQuizPage({ checkoutMode = 'trial' }: { checkoutMode?: 'trial' | 'oneoff' }) {
   const { locale } = useI18n()
   const navigate = useNavigate()
   const claudeQuizScreens = useMemo(() => getClaudeQuizScreens(locale), [locale])
@@ -178,6 +178,7 @@ export default function ClaudeQuizPage() {
           answers={quizState.answers}
           percentOff={percentOff}
           onPercentOffResolved={setPercentOff}
+          checkoutMode={checkoutMode}
             onCheckoutSuccess={() => {
               persistClaudeQuizResults({
                 answers: quizState.answers,

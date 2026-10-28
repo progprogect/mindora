@@ -46,7 +46,7 @@ function findProgressStep(screens: ReturnType<typeof quizScreensFor>, index: num
   return 0
 }
 
-export default function QuizPage() {
+export default function QuizPage({ checkoutMode = 'trial' }: { checkoutMode?: 'trial' | 'oneoff' }) {
   const navigate = useNavigate()
   const { locale } = useI18n()
   const funnelLocale = locale as FunnelLocale
@@ -196,6 +196,7 @@ export default function QuizPage() {
           answers={quizState.answers}
           percentOff={percentOff}
           onPercentOffResolved={setPercentOff}
+          checkoutMode={checkoutMode}
           onCheckoutSuccess={() => {
             persistQuizResults({
               role: quizState.role,
