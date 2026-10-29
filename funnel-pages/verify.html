@@ -176,10 +176,11 @@ function mailLink(e){
   if (/icloud|me\.com/.test(d)) return ['https://www.icloud.com/mail','Open iCloud Mail'];
   return null;
 }
-async function post(url, body){
-  const r = await fetch(url, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)});
-  const d = await r.json().catch(() => ({})); if (!r.ok) throw new Error(d.message || 'Request failed'); return d;
+async function post(url, body, method){
+  const r = await fetch(url, {method: method || 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)});
+  const d = await r.json().catch(() => ({})); if (!r.ok) throw new Error(d.error || d.message || 'Request failed'); return d;
 }
+let verifiedEmail = '';
 
 let cooldown;
 function startCooldown(){
@@ -195,7 +196,7 @@ $('send').onclick = async () => {
   const e = $('email').value.trim();
   if (!validEmail(e)) { $('f1').classList.add('bad'); return; }
   $('send').disabled = true; $('send').textContent = 'Sending code…';
-  try { await post('/api/verify/send', {token: FUNNEL.token, email: e}); }
+  try { await post('/api/auth/otp/send', {email: e, locale: FUNNEL.locale}); verifiedEmail = e; }
   catch(err) { if (!FUNNEL.preview) { $('send').disabled = false; $('send').textContent = 'Continue'; $('f1').classList.add('bad'); $('f1').querySelector('.msg').textContent = err.message + '. Please try again.'; return; } }
   $('send').disabled = false; $('send').textContent = 'Continue';
   $('to').textContent = e;
@@ -227,7 +228,7 @@ boxes.forEach((b, i) => {
 $('verify').onclick = async () => {
   if (code().length !== 6 || $('verify').disabled && code().length !== 6) return;
   $('verify').disabled = true; $('verify').textContent = 'Verifying…';
-  try { await post('/api/verify/check', {token: FUNNEL.token, code: code()}); }
+  try { await post('/api/auth/otp/verify', {email: verifiedEmail, code: code()}); await post('/api/funnel/bind', {token: FUNNEL.token}); }
   catch(err) {
     if (!FUNNEL.preview) {
       $('verify').textContent = 'Verify & continue'; $('f2').classList.add('bad');
@@ -243,18 +244,18 @@ $('name').addEventListener('keydown', e => { if (e.key === 'Enter' && !$('saveNa
 $('saveName').onclick = async () => {
   if (!validName($('name').value)) { $('f3').classList.add('bad'); return; }
   $('saveName').disabled = true;
-  try { await post('/api/account/name', {token: FUNNEL.token, name: $('name').value.trim()}); } catch(e) {}
+  try { await post('/api/me/name', {name: $('name').value.trim()}, 'PATCH'); await post('/api/funnel/bind', {token: FUNNEL.token, advance: true}); } catch(e) {}
   try { sessionStorage.setItem('mindora_name', $('name').value.trim()); sessionStorage.removeItem('mindora_owned'); } catch(e) {}
   $('bar').style.width = '100%';
   window.mindoraGo(FUNNEL.nextUrl);
 };
 $('resend').onclick = async () => {
-  try { await post('/api/verify/send', {token: FUNNEL.token, email: $('to').textContent}); } catch(e) {}
+  try { await post('/api/auth/otp/send', {email: $('to').textContent, locale: FUNNEL.locale}); } catch(e) {}
   $('sent').style.display = 'block'; startCooldown();
 };
 $('change').onclick = () => show(1);
 show(1);
 </script>
-<script src="/funnel-assets/i18n.js"></script>
+<script src="/funnel-assets/i18n.js?v=2"></script>
 </body>
 </html>

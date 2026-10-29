@@ -1,11 +1,13 @@
-import { eq } from 'drizzle-orm'
+import { createHmac } from 'node:crypto'
+import { and, eq, gt } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { getCookie } from 'hono/cookie'
 import type Stripe from 'stripe'
 import { z } from 'zod'
 import { ownsOffer, recordPurchase } from 'successwise-app/purchases'
 import { db } from '../db/index.js'
-import { funnelConsents, profiles, upsellEvents } from '../db/schema.js'
+import { funnelConsents, profiles, sessions, upsellEvents, users } from '../db/schema.js'
+import { loadEnv } from '../env.js'
 import {
   funnelChargeIdempotencyKey,
   funnelSubscribeIdempotencyKey,
@@ -400,4 +402,35 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
     console.error('[funnel] charge failed', error)
     return c.json({ success: false, message: stripeErrorMessage(error), code: 'charge_failed' }, 400)
   }
+})
+
+const bindSchema = z.object({
+  token: z.string().min(1),
+  advance: z.boolean().optional(),
+})
+
+/** After OTP login on /account/verify: tie the funnel session to the signed-in user. */
+funnelBillingRoutes.post('/funnel/bind', async (c) => {
+  const parsed = bindSchema.safeParse(await c.req.json())
+  if (!parsed.success) return c.json({ error: 'Invalid payload', code: 'invalid_payload' }, 400)
+  const session = verifyFunnelToken(parsed.data.token) || verifyFunnelToken(getCookie(c, FUNNEL_COOKIE))
+  if (!session) return c.json({ error: 'Funnel session expired', code: 'funnel_session_expired' }, 401)
+
+  const sw = getCookie(c, 'sw_session')
+  if (!sw) return c.json({ error: 'Not signed in', code: 'unauthorized' }, 401)
+  const tokenHash = createHmac('sha256', loadEnv().SESSION_SECRET).update(sw).digest('hex')
+  const [row] = await db
+    .select({ userId: sessions.userId, email: users.email, name: users.name })
+    .from(sessions)
+    .innerJoin(users, eq(users.id, sessions.userId))
+    .where(and(eq(sessions.tokenHash, tokenHash), gt(sessions.expiresAt, new Date())))
+    .limit(1)
+  if (!row) return c.json({ error: 'Not signed in', code: 'unauthorized' }, 401)
+
+  bumpFunnelCookie(
+    c,
+    { ...session, userId: row.userId, email: row.email, name: row.name ?? session.name },
+    parsed.data.advance ? 'membership' : session.step,
+  )
+  return c.json({ ok: true })
 })
