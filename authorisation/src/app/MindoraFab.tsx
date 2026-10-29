@@ -1,11 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useI18n } from '@/i18n/I18nProvider'
-import { withLocale } from '@/i18n/locale'
+import { stripLocale, withLocale } from '@/i18n/locale'
 import { COACH_AVATAR, COACH_NAME } from '@/shared/coach'
 
 export default function MindoraFab() {
   const { locale, t } = useI18n()
-  const { pathname } = useLocation()
+  const pathname = stripLocale(useLocation().pathname)
   if (
     pathname === '/app/mindora' ||
     pathname.startsWith('/app/mindora/unlock') ||

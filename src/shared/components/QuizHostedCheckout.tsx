@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { withLocale } from '../../../authorisation/src/i18n/locale'
 import { useI18n } from '../../../authorisation/src/i18n/I18nProvider'
@@ -45,6 +45,15 @@ export default function QuizHostedCheckout({ quiz, funnel, email, name, highligh
   const createQuizCheckout = useCreateQuizCheckout()
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // Back from Stripe restores this page from bfcache with `busy` still true.
+  useEffect(() => {
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) setBusy(false)
+    }
+    window.addEventListener('pageshow', onPageShow)
+    return () => window.removeEventListener('pageshow', onPageShow)
+  }, [])
 
   const start = async () => {
     if (busy) return

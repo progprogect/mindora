@@ -30,7 +30,8 @@
   DEV NOTES — шаги 3–5 из 6, один шаблон.
   - ?step=coach | prompts | planners. Контент и цены — в OFFERS ниже.
   - Структура как у конкурента: компактная карточка товара → "What you get" → "Why it's worth it" → нижний блок с кнопкой и отказом.
-  - Отказ (No thanks) только внизу → тот же экран в состоянии downsell (ниже цена) → второй отказ → next.
+  - Отказ (No thanks) только внизу → модалка с даунселлом (ниже цена) → принять: списание по цене downsell → next; отказаться (No thanks / Esc / фон) → next.
+  - ?state=downsell (старые ссылки): страница сразу в состоянии downsell, No thanks → next, без модалки.
   - "Add to order" → POST /api/funnel/charge {token, product, state, price} → PaymentIntent off_session, confirm:true,
     idempotency_key = sid+product+price. 3DS: stripe.handleNextAction + повторный POST.
   - Если продукт уже есть у пользователя — сразу редирект на next.
@@ -154,6 +155,20 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 .pgrid figcaption span{display:block;font-weight:500;color:var(--muted)}
 @media (max-width:560px){.feat4{grid-template-columns:repeat(2,1fr)}.dark3{grid-template-columns:1fr}.vs2{grid-template-columns:1fr}.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.coachhero img{width:110px}.seal{width:76px;height:76px}.seal b{font-size:18px}}
 @media (max-width:560px){.steps li+li{margin-left:12px}.steps li+li:before{width:12px}}
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,51,.55)}
+.modal.open{display:flex}
+.box{background:#fff;border-radius:var(--r-lg);max-width:440px;width:100%;padding:30px 26px 22px;animation:pop .25s ease-out;text-align:center}
+@keyframes pop{from{transform:scale(.94);opacity:0}}
+.box .tag{display:inline-block;background:var(--sun-soft);color:#8A5A00;font-weight:700;font-size:12px;border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.box h3{font-size:26px;margin-bottom:6px}
+.box .lead{color:var(--muted);margin-bottom:16px}
+.box ul{list-style:none;display:grid;gap:8px;margin:0 0 16px;text-align:left}
+.box li:before{content:"✓ ";color:var(--green);font-weight:800}
+.box .t{font-size:14px;margin-bottom:16px}
+.dsprice{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 16px}
+.dsprice s{color:var(--muted);font-size:16px}
+.dsprice b{font-size:28px;color:var(--green);font-weight:800}
+.box .no{margin-top:14px}
 </style>
 </head>
 <body>
@@ -165,6 +180,17 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 <div class="alert" id="alert"></div>
 <main class="wrap" id="app"></main>
 <div class="sticky"><button class="btn" data-buy>Add to order →</button></div>
+<div class="modal" id="dsModal" role="dialog" aria-modal="true" aria-labelledby="ds-title">
+  <div class="box">
+    <span class="tag" id="ds-tag"></span>
+    <h3 id="ds-title"></h3>
+    <p class="lead" id="ds-sub"></p>
+    <div class="dsprice" id="ds-price"></div>
+    <button class="btn" id="ds-buy" type="button">Add to order →</button>
+    <p class="err" id="ds-err" role="alert"></p>
+    <button class="no" id="ds-no" type="button">No thanks</button>
+  </div>
+</div>
 
 <script>
 /* DEV: заполняется сервером */
@@ -323,17 +349,21 @@ function bind(){
   document.querySelectorAll('[data-no]').forEach(b => b.onclick = decline);
 }
 function go(url){ window.mindoraGo(url); }
+function openDownsell(){
+  const S = O.downsell, save = (S.was - S.price).toFixed(2).replace(/\.00$/,'');
+  document.getElementById('ds-tag').textContent = S.badge;
+  document.getElementById('ds-title').textContent = S.h1;
+  document.getElementById('ds-sub').textContent = S.alert;
+  document.getElementById('ds-price').innerHTML = `<s>$${S.was}</s><b>$${S.price}</b><span class="save">−$${save} saved</span>`;
+  const err = document.getElementById('ds-err'); err.style.display = 'none'; err.textContent = '';
+  document.getElementById('ds-buy').disabled = false;
+  document.getElementById('dsModal').classList.add('open');
+  document.getElementById('ds-buy').focus();
+}
+function closeDownsell(){ document.getElementById('dsModal').classList.remove('open'); }
+function declineDownsell(){ closeDownsell(); go(O.next); }
 function decline(){
-  if (state === 'offer') {
-    const app = document.getElementById('app');
-    app.style.opacity = '0'; toTop();
-    state = 'downsell';
-    const qsKeep = new URLSearchParams(location.search);
-    qsKeep.set('step', key); qsKeep.set('state', 'downsell');
-    history.replaceState(null, '', '?' + qsKeep.toString());
-    render();
-    requestAnimationFrame(() => { app.style.opacity = '1'; });
-  }
+  if (state === 'offer') openDownsell();
   else go(O.next);
 }
 function remember(){ try { const k='mindora_owned', l=JSON.parse(sessionStorage.getItem(k)||'[]'), n=({mindora_coach:'Mindora AI coach', prompt_library:'Full Prompt Library (28,000+)', planners_bundle:'10 planners bundle'})[O.product]; if(!l.includes(n)) l.push(n); sessionStorage.setItem(k, JSON.stringify(l)); } catch(e) {} }
@@ -342,8 +372,8 @@ function mindoraStripe() {
   if (!window.__mindoraStripe) window.__mindoraStripe = Stripe(FUNNEL.stripePublishableKey);
   return window.__mindoraStripe;
 }
-async function funnelCharge(price) {
-  const body = { token: FUNNEL.token, product: O.product, state, price };
+async function funnelCharge(price, chargeState = state) {
+  const body = { token: FUNNEL.token, product: O.product, state: chargeState, price };
   let r = await fetch('/api/funnel/charge', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   let d = await r.json();
   if (d.requires_action && d.client_secret) {
@@ -371,6 +401,30 @@ async function buy(btn){
     document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
   }
 }
+async function buyDownsell(){
+  const btn = document.getElementById('ds-buy'), err = document.getElementById('ds-err');
+  btn.disabled = true; err.style.display = 'none';
+  try {
+    const d = await funnelCharge(O.downsell.price, 'downsell');
+    remember();
+    go(d.nextUrl || O.next);
+  } catch(e) {
+    if (FUNNEL.preview) { remember(); go(O.next); return; }
+    err.textContent = (e.message || 'Something went wrong') + '. Try again or skip this offer.'; err.style.display = 'block';
+    btn.disabled = false;
+  }
+}
+document.getElementById('ds-buy').addEventListener('click', buyDownsell);
+document.getElementById('ds-no').addEventListener('click', declineDownsell);
+document.getElementById('dsModal').addEventListener('click', e => { if (e.target.id === 'dsModal') declineDownsell(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElementById('dsModal').classList.contains('open')) declineDownsell(); });
+/* возврат кнопкой «Назад» из bfcache: страница возвращается с заблокированными кнопками и открытой модалкой */
+addEventListener('pageshow', e => {
+  if (!e.persisted) return;
+  document.documentElement.style.opacity = '';
+  closeDownsell();
+  document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
+});
 render();
 </script>
 <script src="https://js.stripe.com/v3/"></script>

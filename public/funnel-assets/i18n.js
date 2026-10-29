@@ -39,6 +39,7 @@ function urlWithLocale(l){
 }
 var lang=localeFromPath();
 store('mindora_lang',lang);
+try{ document.cookie='mindora_locale='+lang+'; path=/; max-age=31536000; SameSite=Lax'; }catch(e){}
 
 function tr(s){
   var key=s.replace(/\s+/g,' ').trim(); if(!key) return null;

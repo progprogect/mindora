@@ -1,6 +1,8 @@
 export const LOCALES = ['en', 'ru'] as const
 export type Locale = (typeof LOCALES)[number]
 export const LOCALE_STORAGE_KEY = 'mindora.locale'
+/** Mirrors the stored locale so the server can pick it for paths that arrive without a `/en` or `/ru` prefix. */
+export const LOCALE_COOKIE = 'mindora_locale'
 
 const LOCALE_PATH_PREFIXES = ['/api', '/stripe', '/funnel-assets', '/assets', '/dev/'] as const
 
@@ -22,13 +24,29 @@ export function readStoredLocale(): Locale {
 }
 
 export function writeStoredLocale(locale: Locale) {
-  localStorage.setItem(LOCALE_STORAGE_KEY, locale)
+  try {
+    localStorage.setItem(LOCALE_STORAGE_KEY, locale)
+  } catch {
+    /* storage can be blocked; the cookie below still works */
+  }
+  try {
+    document.cookie = `${LOCALE_COOKIE}=${locale}; path=/; max-age=31536000; SameSite=Lax`
+  } catch {
+    /* no document (SSR) */
+  }
 }
 
 export function localeFromPathname(pathname: string): Locale | null {
   const match = /^\/(en|ru)(\/|$)/.exec(pathname)
   if (match && isLocale(match[1])) return match[1]
   return null
+}
+
+/** Pathname without the leading `/en` or `/ru` segment, for matching route paths like `/app/dashboard`. */
+export function stripLocale(pathname: string): string {
+  const match = /^\/(en|ru)(\/.*)?$/.exec(pathname)
+  if (!match) return pathname
+  return match[2] || '/'
 }
 
 function splitPathSearchHash(to: string): { path: string; search: string; hash: string } {

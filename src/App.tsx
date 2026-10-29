@@ -5,7 +5,7 @@ import { PromptOffer } from '../authorisation/src/account/UpgradePromptPage'
 import { MindoraOffer } from '../authorisation/src/account/UpgradeMindoraPage'
 import { lmsRoutes } from '../authorisation/src/lmsRoutes.tsx'
 import { SyncLocaleFromUrl } from '../authorisation/src/i18n/I18nProvider'
-import { isLocale, localeFromPathname, withLocale, type Locale } from '../authorisation/src/i18n/locale'
+import { isLocale, localeFromPathname, readStoredLocale, withLocale, type Locale } from '../authorisation/src/i18n/locale'
 import MarketingLayout from '@/marketing/components/MarketingLayout'
 import HomePage from '@/marketing/pages/HomePage'
 import PricingPage from '@/marketing/pages/PricingPage'
@@ -42,7 +42,7 @@ function LocaleLayout() {
 
   if (!isLocale(locale)) {
     const current = `${location.pathname}${location.search}${location.hash}`
-    const target = withLocale('en', current)
+    const target = withLocale(readStoredLocale(), current)
     if (target === current) return <NotFoundPage />
     return <Navigate to={target} replace />
   }
@@ -66,7 +66,7 @@ function RedirectUnprefixedPath() {
   if (localeFromPathname(location.pathname)) {
     return <NotFoundPage />
   }
-  const target = withLocale('en', `${location.pathname}${location.search}${location.hash}`)
+  const target = withLocale(readStoredLocale(), `${location.pathname}${location.search}${location.hash}`)
   if (target === `${location.pathname}${location.search}${location.hash}`) {
     return <NotFoundPage />
   }

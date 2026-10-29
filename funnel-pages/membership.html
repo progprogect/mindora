@@ -558,7 +558,7 @@ async function funnelSubscribe(plan) {
 }
 document.querySelectorAll('[data-buy]').forEach(btn => btn.addEventListener('click', async () => {
   const scope = btn.closest('.box, .final') || document, err = scope.querySelector('.err'), label = btn.textContent;
-  document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true); btn.textContent = 'Processing…';
+  document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true); btn.dataset.label = label; btn.textContent = 'Processing…';
   try {
     const data = await funnelSubscribe(btn.dataset.buy);
     window.mindoraGo(data.nextUrl || FUNNEL.nextUrl);
@@ -568,6 +568,12 @@ document.querySelectorAll('[data-buy]').forEach(btn => btn.addEventListener('cli
     btn.textContent = label; document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
   }
 }));
+
+/* возврат кнопкой «Назад» из bfcache: кнопки остались заблокированными с «Processing…» */
+addEventListener('pageshow', e => {
+  if (!e.persisted) return;
+  document.querySelectorAll('[data-buy]').forEach(b => { b.disabled = false; if (b.dataset.label) { b.textContent = b.dataset.label; delete b.dataset.label; } });
+});
 
 /* прячем липкую кнопку, когда видна нижняя кнопка — без дубля */
 if ('IntersectionObserver' in window) {

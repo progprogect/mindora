@@ -6,11 +6,12 @@ import { initialsFromName, PLAN_TIER_LABEL_KEYS, PLAN_TIERS } from '@/app/mockUs
 import { useCurrentUser, useSession } from '@/auth/session'
 import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
-import { withLocale } from '@/i18n/locale'
+import { stripLocale, withLocale } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
 
 export default function AppLayout() {
-  const { pathname } = useLocation()
+  const { pathname: fullPathname } = useLocation()
+  const pathname = stripLocale(fullPathname)
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
   const [menuPath, setMenuPath] = useState(pathname)

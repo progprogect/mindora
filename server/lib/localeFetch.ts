@@ -1,6 +1,7 @@
 import {
   bypassesLocalePrefix,
   DEFAULT_LOCALE,
+  isLocale,
   LOCALE_REQUEST_HEADER,
   splitLocalePrefix,
   withLocalePrefix,
@@ -9,8 +10,14 @@ import {
 
 type FetchHandler = (request: Request, env?: unknown) => Response | Promise<Response>
 
-function redirectToDefaultLocale(pathname: string, search: string): Response {
-  const location = withLocalePrefix(DEFAULT_LOCALE, `${pathname}${search}`)
+/** Locale the visitor chose earlier (cookie written by the SPA and the funnel pages), else the default. */
+function preferredLocale(request: Request): AppLocale {
+  const match = /(?:^|;\s*)mindora_locale=([a-z]{2})(?:;|$)/.exec(request.headers.get('cookie') ?? '')
+  return match && isLocale(match[1]) ? match[1] : DEFAULT_LOCALE
+}
+
+function redirectToDefaultLocale(request: Request, pathname: string, search: string): Response {
+  const location = withLocalePrefix(preferredLocale(request), `${pathname}${search}`)
   return new Response(null, { status: 302, headers: { Location: location } })
 }
 
@@ -49,7 +56,7 @@ export function withLocaleAwareFetch(inner: FetchHandler): FetchHandler {
 
     const { locale, path } = splitLocalePrefix(pathname)
     if (!locale) {
-      return redirectToDefaultLocale(pathname, search)
+      return redirectToDefaultLocale(request, pathname, search)
     }
 
     return inner(rewriteRequestForLocale(request, locale, path), env)

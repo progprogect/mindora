@@ -374,7 +374,7 @@ export async function fetchMindoraThread(id: string) {
   }>(`/api/mindora/threads/${id}`)
 }
 
-export async function sendMindoraMessage(args: { text: string; threadId?: string; localDate?: string }) {
+export async function sendMindoraMessage(args: { text: string; threadId?: string; localDate?: string; locale?: 'en' | 'ru' }) {
   const response = await fetch('/api/mindora/messages', {
     method: 'POST',
     credentials: 'include',

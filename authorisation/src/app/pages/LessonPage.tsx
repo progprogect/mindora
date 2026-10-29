@@ -563,9 +563,9 @@ function ResultLeaveCta({
   saveError: boolean
   onRetry: () => void
 }) {
-  const { t } = useI18n()
+  const { locale, t } = useI18n()
   const label = nextLessonId ? t('app.lesson.nextLesson') : t('app.lesson.backToCourseTrophy')
-  const href = nextLessonId ? `/app/courses/${slug}/${nextLessonId}` : `/app/courses/${slug}`
+  const href = withLocale(locale, nextLessonId ? `/app/courses/${slug}/${nextLessonId}` : `/app/courses/${slug}`)
 
   if (busy) {
     return (

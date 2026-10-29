@@ -282,7 +282,8 @@ async function handleCheckoutSessionCompleted(object: Record<string, unknown>): 
   }
 }
 
-async function fulfillKitCheckoutSession(
+/** Shared by the webhook and by the Checkout return page (see `/account/verify`); skips already-processed payments. */
+export async function fulfillKitCheckoutSession(
   session: Stripe.Checkout.Session,
   metadata: Record<string, string>,
 ): Promise<void> {

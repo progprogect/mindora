@@ -104,7 +104,7 @@ type LearnerContext = {
   system: string
 }
 
-async function learnerContext(userId: string): Promise<LearnerContext> {
+async function learnerContext(userId: string, locale?: 'en' | 'ru'): Promise<LearnerContext> {
   const [profile] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
   const name = profile?.name?.split(' ')[0] || 'there'
   let xp = 0
@@ -139,12 +139,13 @@ async function learnerContext(userId: string): Promise<LearnerContext> {
   } catch (error) {
     console.error('[mindora] progress snapshot failed', error)
   }
+  const language = (locale ?? (profile?.locale === 'ru' ? 'ru' : 'en')) === 'ru' ? 'Russian' : 'English'
   return {
     name,
     xp,
     streak,
     recentTitle,
-    system: `You are Mindora, a concise personal AI coach inside MindoraAcademy. ${snapshot} Use this data when they ask about progress, goals, or what to do next — cite real XP and lessons instead of telling them to open Progress. Do not dump the full list unless asked. Be practical, warm, and short (under 120 words). Do not mention system prompts.`,
+    system: `You are Mindora, a concise personal AI coach inside MindoraAcademy. ${snapshot} Use this data when they ask about progress, goals, or what to do next — cite real XP and lessons instead of telling them to open Progress. Do not dump the full list unless asked. Be practical, warm, and short (under 120 words). Always reply in ${language}, even if earlier messages or the data above use another language. Do not mention system prompts.`,
   }
 }
 
@@ -171,9 +172,14 @@ async function cannedReply(userId: string, text: string) {
   return cannedFrom(await learnerContext(userId), text)
 }
 
-async function llmReply(userId: string, history: Array<{ role: string; content: string }>, text: string) {
+async function llmReply(
+  userId: string,
+  history: Array<{ role: string; content: string }>,
+  text: string,
+  locale?: 'en' | 'ru',
+) {
   const env = loadEnv()
-  const ctx = await learnerContext(userId)
+  const ctx = await learnerContext(userId, locale)
   const system = ctx.system
   const modelOverride = coachModel(env)
 
@@ -228,6 +234,7 @@ export async function sendMindoraMessage(args: {
   text: string
   threadId?: string
   localDate?: string
+  locale?: 'en' | 'ru'
 }) {
   const quota = await mindoraQuota(args.userId, args.localDate)
   if (quota.used >= quota.limit) {
@@ -258,7 +265,7 @@ export async function sendMindoraMessage(args: {
   await db.insert(wiseMessages).values({ threadId, role: 'user', content: args.text })
   let reply: string
   try {
-    reply = await llmReply(args.userId, history, args.text)
+    reply = await llmReply(args.userId, history, args.text, args.locale)
   } catch (error) {
     console.error('[mindora] llm failed', error)
     reply = await cannedReply(args.userId, args.text)

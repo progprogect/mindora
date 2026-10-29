@@ -45,6 +45,7 @@ function ComingSoonCard({
   course: LearnCourse
   ui: ReturnType<typeof learnPageCopy>
 }) {
+  const { locale } = useI18n()
   return (
     <div
       className="relative overflow-hidden rounded-2xl shadow-md"
@@ -83,7 +84,7 @@ function ComingSoonCard({
           </div>
         </div>
         <Link
-          to={course.href}
+          to={withLocale(locale, course.href)}
           className="inline-flex items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-extrabold shadow-sm transition-transform hover:shadow-md active:scale-[0.97]"
           style={{ color: course.accentColor }}
         >
@@ -108,6 +109,7 @@ function LiveCard({
   course: LearnCourse
   ui: ReturnType<typeof learnPageCopy>
 }) {
+  const { locale } = useI18n()
   const countLabel =
     course.days != null
       ? `📅 ${course.days} ${ui.days}`
@@ -153,7 +155,7 @@ function LiveCard({
           </div>
         </div>
         <Link
-          to={course.href}
+          to={withLocale(locale, course.href)}
           className={ctaClass}
           style={course.accentColor ? { color: course.accentColor } : undefined}
         >

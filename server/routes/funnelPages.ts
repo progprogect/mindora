@@ -6,6 +6,8 @@ import { Hono } from 'hono'
 import { deleteCookie, getCookie, setCookie } from 'hono/cookie'
 import { loadEnv } from '../env.js'
 import { getRequestLocale } from '../lib/localeContext.js'
+import { getStripe } from '../lib/stripe.js'
+import { fulfillKitCheckoutSession } from './stripeWebhook.js'
 import { withLocalePrefix, type AppLocale } from '../lib/localePath.js'
 import {
   advanceFunnelSession,
@@ -252,13 +254,36 @@ funnelPageRoutes.get('/start-kit', (c) => {
   return htmlResponse(c, html)
 })
 
-funnelPageRoutes.get('/account/verify', (c) =>
-  serveAccountPage(c, 'verify.html', 'verify', (session) => ({
+/**
+ * Safety net for a late or missing `checkout.session.completed` webhook: on return from Stripe Checkout,
+ * fulfil the kit purchase here so `/account/membership` finds the Stripe customer and saved card.
+ * Idempotent — `fulfillKitCheckoutSession` skips payments that were already processed.
+ */
+async function fulfillCheckoutReturn(c: Context): Promise<void> {
+  const sessionId = c.req.query('session_id')
+  if (!sessionId || previewAllowed(c)) return
+  const found = readSession(c)
+  if (!found) return
+  try {
+    const checkout = await getStripe().checkout.sessions.retrieve(sessionId)
+    const metadata = (checkout.metadata as Record<string, string> | null) ?? {}
+    if (checkout.mode !== 'payment' || checkout.payment_status !== 'paid') return
+    if (metadata.funnel_sid !== found.session.sid) return
+    await fulfillKitCheckoutSession(checkout, metadata)
+  } catch (error) {
+    // The webhook may still fulfil it; never block the verify page on this.
+    console.error('[funnel] checkout return fulfilment failed', sessionId, error)
+  }
+}
+
+funnelPageRoutes.get('/account/verify', async (c) => {
+  await fulfillCheckoutReturn(c)
+  return serveAccountPage(c, 'verify.html', 'verify', (session) => ({
     nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/membership'),
     email: session.email ?? c.req.query('email') ?? '',
     name: session.name ?? '',
-  })),
-)
+  }))
+})
 
 funnelPageRoutes.get('/account/membership', (c) =>
   serveAccountPage(c, 'membership.html', 'membership', (session) => ({

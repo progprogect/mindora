@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { LEARN_PATHS } from '@/app/mockUser'
 import { useCurrentUser } from '@/auth/session'
 import { useI18n } from '@/i18n/I18nProvider'
-import { withLocale } from '@/i18n/locale'
+import { stripLocale, withLocale } from '@/i18n/locale'
 
 const LEARN_ACTIVE = [
   '/app/ai-and-technology',
@@ -23,7 +23,7 @@ function labelClass(active: boolean) {
 
 export default function AppNavFooter() {
   const { locale, t } = useI18n()
-  const { pathname } = useLocation()
+  const pathname = stripLocale(useLocation().pathname)
   const user = useCurrentUser()
   const focus = user?.focusCategory && user.focusCategory in LEARN_PATHS ? user.focusCategory : 'ai'
   const learnHref = LEARN_PATHS[focus] || '/app/ai-and-technology'
@@ -49,7 +49,7 @@ export default function AppNavFooter() {
             <span className={labelClass(homeActive)}>{t('app.nav.home')}</span>
           </div>
         </Link>
-        <Link to={learnHref} className="flex-1">
+        <Link to={withLocale(locale, learnHref)} className="flex-1">
           <div className={tabClass(learnActive)}>
             <svg
               className="w-5 h-5"

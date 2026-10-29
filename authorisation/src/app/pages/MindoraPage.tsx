@@ -192,6 +192,7 @@ export default function MindoraPage() {
           text: trimmed,
           threadId: threadIdRef.current,
           localDate: localIsoDay(),
+          locale,
         })
         if ('locked' in result && result.locked) {
           setLocked(true)
@@ -209,7 +210,7 @@ export default function MindoraPage() {
         setBusy(false)
       }
     },
-    [persistThread],
+    [persistThread, locale],
   )
 
   useEffect(() => {

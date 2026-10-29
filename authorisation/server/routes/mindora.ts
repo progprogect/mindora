@@ -7,6 +7,7 @@ const sendSchema = z.object({
   text: z.string().min(1).max(4000),
   threadId: z.string().uuid().optional(),
   localDate: z.string().optional(),
+  locale: z.enum(['en', 'ru']).optional(),
 })
 
 export const mindoraRoutes = new Hono<SessionEnv>()

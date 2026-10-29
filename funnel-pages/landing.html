@@ -608,6 +608,8 @@ async function goCheckout(btn){
   }
 }
 document.querySelectorAll('[data-cta="checkout"]').forEach(b => b.addEventListener('click', () => goCheckout(b)));
+/* возврат кнопкой «Назад» из bfcache (например, со Stripe): кнопка осталась заблокированной */
+addEventListener('pageshow', e => { if (e.persisted) document.querySelectorAll('[data-cta="checkout"]').forEach(b => { b.disabled = false; }); });
 
 /* Exit-intent: десктоп — курсор к верхнему краю; мобайл — 35 с на странице после 50% скролла. 1 раз за сессию. */
 const modal = document.getElementById('exit');

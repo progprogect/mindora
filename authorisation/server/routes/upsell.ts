@@ -259,6 +259,8 @@ upsellRoutes.post('/upsell/charge', requireAuth, async (c) => {
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
+      // Card only: no Link opt-in checkbox; the card is saved via setup_future_usage below.
+      payment_method_types: ['card'],
       customer: customerId,
       line_items: [
         {

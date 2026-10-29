@@ -10,6 +10,7 @@ import {
   updateName,
   updatePreferences,
 } from '@/lib/api'
+import LanguageSwitcher from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
 import { withLocale } from '@/i18n/locale'
 import { useProgress, useSubscription } from '@/lib/lmsQueries'
@@ -145,8 +146,13 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen bg-sw-grey-light pb-28">
       <div className="bg-white border-b border-sw-grey-border px-4 pt-4 pb-4 sticky top-0 z-10">
-        <h1 className="text-xl font-bold text-sw-dark">{t('app.profile.title')}</h1>
-        <p className="text-xs text-sw-grey mt-0.5">{t('app.profile.subtitle')}</p>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h1 className="text-xl font-bold text-sw-dark">{t('app.profile.title')}</h1>
+            <p className="text-xs text-sw-grey mt-0.5">{t('app.profile.subtitle')}</p>
+          </div>
+          <LanguageSwitcher />
+        </div>
       </div>
       <div className="max-w-2xl mx-auto px-4 py-5 space-y-5">
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-sw-grey-border">

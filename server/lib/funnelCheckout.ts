@@ -40,7 +40,7 @@ export async function createDollarCheckoutSession(input: {
     lang: input.lang,
   })
   const token = signFunnelToken(session)
-  const verifyPath = withLocalePrefix(input.lang, `/account/verify?token=${encodeURIComponent(token)}`)
+  const verifyPath = withLocalePrefix(input.lang, `/account/verify?token=${encodeURIComponent(token)}&session_id={CHECKOUT_SESSION_ID}`)
   const successUrl = `${origin}${verifyPath}`
   const cancelSep = input.cancelPath.includes('?') ? '&' : '?'
   const cancelPath = withLocalePrefix(input.lang, input.cancelPath)
@@ -48,6 +48,8 @@ export async function createDollarCheckoutSession(input: {
 
   const checkout = await stripe.checkout.sessions.create({
     mode: 'payment',
+    // Card only: Link adds a "Save my information" opt-in checkbox; the card is saved via setup_future_usage below.
+    payment_method_types: ['card'],
     customer_creation: 'always',
     customer_email: input.email || undefined,
     locale: input.lang,
