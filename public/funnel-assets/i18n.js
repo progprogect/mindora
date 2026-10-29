@@ -150,6 +150,7 @@ function mindoraPreserveFunnelQuery(url){
   try {
     var cur = new URLSearchParams(location.search);
     var u = new URL(url, location.origin);
+    if (u.origin !== location.origin) return url;
     ['preview','kit','lang'].forEach(function(k){
       var v = cur.get(k); if (v && !u.searchParams.has(k)) u.searchParams.set(k, v);
     });
