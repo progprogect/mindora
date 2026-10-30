@@ -19,7 +19,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "db:migrate": "tsx server/db/migrate.ts",
-    "db:seed": "tsx server/scripts/seed-products.ts"
+    "db:seed": "tsx server/scripts/seed-products.ts",
+    "db:seed-materials": "tsx authorisation/server/scripts/seed-materials.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.6",

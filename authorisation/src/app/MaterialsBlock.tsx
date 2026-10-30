@@ -7,7 +7,6 @@ import { useMaterials } from '@/lib/lmsQueries'
 export default function MaterialsBlock() {
   const { locale, t } = useI18n()
   const materials = useMaterials()
-
   if (materials === undefined) {
     return (
       <section data-testid="dashboard-materials" className="rounded-2xl bg-white border border-sw-grey-border/60 shadow-sm p-4">

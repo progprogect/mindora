@@ -44,11 +44,8 @@ function stripForeignChrome(raw: string): string {
 
 function copyTextSource(rel: string, destRel: string): string | null {
   const abs = path.resolve(sourceRoot, rel)
-  if (!existsSync(abs)) {
-    console.warn(`[seed-materials] missing source: ${rel}`)
-    return null
-  }
   const destAbs = path.resolve(contentRoot, destRel)
+  if (!existsSync(abs)) return existsSync(destAbs) ? destRel : null
   if (!refreshText && existsSync(destAbs)) return destRel
   mkdirSync(path.dirname(destAbs), { recursive: true })
   const raw = readFileSync(abs, 'utf8')
@@ -58,21 +55,17 @@ function copyTextSource(rel: string, destRel: string): string | null {
 
 function copyBinarySource(rel: string, destRel: string): string | null {
   const abs = path.resolve(sourceRoot, rel)
-  if (!existsSync(abs)) {
-    console.warn(`[seed-materials] missing source: ${rel}`)
-    return null
-  }
   const destAbs = path.resolve(contentRoot, destRel)
+  if (!existsSync(abs)) return existsSync(destAbs) ? destRel : null
   mkdirSync(path.dirname(destAbs), { recursive: true })
   cpSync(abs, destAbs)
   return destRel
 }
 
 async function seed() {
-  if (!existsSync(sourceRoot)) {
-    console.error(`[seed-materials] source not found: ${sourceRoot}`)
-    process.exit(1)
-  }
+  // Deployed clones have no docs/ sources: fall back to the maintained content/materials/ files.
+  const hasSourceRoot = existsSync(sourceRoot)
+  if (!hasSourceRoot) console.warn(`[seed-materials] docs source not found, using content/materials only: ${sourceRoot}`)
   mkdirSync(contentRoot, { recursive: true })
 
   let upserted = 0

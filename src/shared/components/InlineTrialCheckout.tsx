@@ -416,6 +416,7 @@ function CheckoutForm({
           options={{
             buttonType: { applePay: 'buy', googlePay: 'buy' },
             buttonHeight: 48,
+            paymentMethods: { link: 'never' },
           }}
           onReady={(event) => {
             const methods = event.availablePaymentMethods

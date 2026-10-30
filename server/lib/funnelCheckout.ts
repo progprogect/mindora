@@ -53,6 +53,8 @@ export async function createDollarCheckoutSession(input: {
     customer_creation: 'always',
     customer_email: input.email || undefined,
     locale: input.lang,
+    // Card + Apple Pay only: hide Link and its "Save my information" box.
+    wallet_options: { link: { display: 'never' } },
     line_items: [
       {
         quantity: 1,
