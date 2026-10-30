@@ -8,7 +8,7 @@ import { useCheckoutOfferAction, useProductsList, useTrackCheckoutInitiated } fr
 import AssetImage from '@/shared/components/AssetImage'
 import InlineTrialCheckout from '@/shared/components/InlineTrialCheckout'
 import QuizHostedCheckout from '@/shared/components/QuizHostedCheckout'
-import { CLAUDE_CHECKOUT_HIGHLIGHTS } from '@/shared/lib/checkoutHighlights'
+import { CLAUDE_CHECKOUT_HIGHLIGHTS, claudeCheckoutHighlights } from '@/shared/lib/checkoutHighlights'
 import { moneyBackCopy } from '@/marketing/data/moneyBack'
 import { claudeSalesUiCopy } from '@/funnels/claude/i18n/claudeSalesUiCopy'
 import type { ClaudeLocale } from '@/funnels/claude/i18n/locale'
@@ -443,7 +443,7 @@ export default function ClaudeSalesPlanScreen({
             funnel={FUNNEL}
             email={email}
             name={name}
-            highlights={CLAUDE_CHECKOUT_HIGHLIGHTS}
+            highlights={claudeCheckoutHighlights(locale)}
           />
         ) : !expired && email && trialPlan ? (
           <InlineTrialCheckout

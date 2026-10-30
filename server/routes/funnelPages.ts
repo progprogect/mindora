@@ -110,9 +110,18 @@ function stripePublishableKey(): string {
   return env.STRIPE_PUBLISHABLE_KEY || process.env.VITE_STRIPE_PUBLISHABLE_KEY || ''
 }
 
-function funnelLocale(c: Context, session?: FunnelSession): AppLocale {
-  if (session?.lang === 'en' || session?.lang === 'ru') return session.lang
+/**
+ * The URL the visitor is on wins: `session.lang` is only the starting language picked at checkout,
+ * so a switch on an upsell page must not bounce the next step back to the old language.
+ */
+function funnelLocale(c: Context, _session?: FunnelSession): AppLocale {
   return getRequestLocale(c)
+}
+
+/** Keep the signed session's language in step with the page language (emails, Stripe, reminders follow it). */
+function syncSessionLang(c: Context, session: FunnelSession): FunnelSession {
+  const locale = getRequestLocale(c)
+  return session.lang === locale ? session : { ...session, lang: locale }
 }
 
 function funnelPayload(
@@ -187,16 +196,17 @@ function serveAccountPage(
   const found = readSession(c)
   if (!found) return c.redirect(withLocalePrefix(funnelLocale(c), '/start'), 302)
 
-  const blocked = guardStep(c, found.session, requested)
+  const session = syncSessionLang(c, found.session)
+  const blocked = guardStep(c, session, requested)
   if (blocked) return blocked
 
   // Refresh cookie when token arrived via query (Stripe success_url).
-  const token = signFunnelToken(found.session)
+  const token = signFunnelToken(session)
   setFunnelCookie(c, token)
 
   const html = injectFunnel(
     loadPage(pageFile),
-    funnelPayload(c, found.session, token, extras(found.session)),
+    funnelPayload(c, session, token, extras(session)),
   )
   return htmlResponse(c, html)
 }
@@ -334,15 +344,16 @@ export async function maybeServeFunnelOnboard(c: Context, next: () => Promise<vo
   const found = readSession(c)
   if (!found) return next()
 
-  const blocked = guardStep(c, found.session, 'onboard')
+  const session = syncSessionLang(c, found.session)
+  const blocked = guardStep(c, session, 'onboard')
   if (blocked) return blocked
 
-  const token = signFunnelToken(found.session)
+  const token = signFunnelToken(session)
   setFunnelCookie(c, token)
-  const locale = funnelLocale(c, found.session)
+  const locale = funnelLocale(c, session)
   const html = injectFunnel(
     loadPage('onboard.html'),
-    funnelPayload(c, found.session, token, {
+    funnelPayload(c, session, token, {
       nextUrl: withLocalePrefix(locale, '/app/dashboard'),
       dashboardUrl: withLocalePrefix(locale, '/app/dashboard'),
     }),

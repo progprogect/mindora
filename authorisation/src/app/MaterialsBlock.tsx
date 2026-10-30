@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BookIcon } from '@/app/MaterialCard'
+import { BookIcon, ChevronRightIcon } from '@/app/MaterialCard'
 import { useI18n } from '@/i18n/I18nProvider'
 import { withLocale } from '@/i18n/locale'
 import { useMaterials } from '@/lib/lmsQueries'
@@ -51,7 +51,7 @@ export default function MaterialsBlock() {
           </div>
           <p className="text-[12px] text-sw-grey mt-0.5 leading-snug">{t('app.materials.subtitle')}</p>
         </div>
-        <span aria-hidden="true" className="shrink-0 text-lg font-bold text-sw-blue">→</span>
+        <ChevronRightIcon className="h-5 w-5 shrink-0 text-sw-grey" />
       </div>
     </Link>
   )

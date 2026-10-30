@@ -144,6 +144,10 @@ details p{color:var(--muted);margin-top:8px}
 .final{max-width:520px;margin:28px auto 0}
 .legal{max-width:640px;margin:36px auto 0;font-size:12.5px;color:var(--muted);text-align:center}
 .no{display:block;margin:18px auto 0;background:none;border:0;color:var(--muted);font:500 14px 'Plus Jakarta Sans',sans-serif;text-decoration:underline;cursor:pointer}
+.agree{display:flex;gap:10px;align-items:flex-start;max-width:640px;margin:22px auto 0;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;font-size:12.5px;color:var(--muted);text-align:left;cursor:pointer}
+.agree input{margin-top:2px;width:16px;height:16px;flex:none;accent-color:#2D5BE3}
+.agree a{color:#2D5BE3;text-decoration:underline}
+.provider{max-width:640px;margin:10px auto 0;font-size:12px;color:var(--muted);text-align:center}
 .err{display:none;color:var(--red);font-size:14px;text-align:center;margin-top:10px}
 
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:14px 20px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 35%)}
@@ -253,7 +257,7 @@ details p{color:var(--muted);margin-top:8px}
 <section class="hero">
   <div class="wrap">
     <h1>New lessons every month, an AI coach and a plan built for you. Not another course — <span class="blue">a place where you keep growing.</span></h1>
-    <p><b>Mindora Academy Membership</b> — 5 learning paths, 40+ courses, daily challenges and certificates. What turns "I've heard of AI" into "I use AI every day".</p>
+    <p><b>Mindora Academy PRO</b> — 5 learning paths, 40+ courses, daily challenges and certificates. What turns "I've heard of AI" into "I use AI every day".</p>
     <p class="hook">You now own the Claude guide and 4 courses. Members get 44 courses across 5 paths — plus new ones every month.</p>
     <div class="chips"><span>🤖 15 AI courses</span><span>🚀 11 business courses</span><span>🏆 Certificates</span><span>🔥 Streaks &amp; XP</span></div>
   </div>
@@ -456,7 +460,9 @@ details p{color:var(--muted);margin-top:8px}
       <button class="btn" data-buy="monthly_4999">Continue →</button>
       <p class="err" role="alert"></p>
     </div>
-    <p class="legal">By clicking "Continue" you start a Mindora Academy Membership with a 3-day free trial. Nothing is charged today. Your first payment of $49.99 is taken on <span class="d8">day 4</span> from the card you used, then every month until you cancel. Cancel anytime in your account; cancel before <span class="d8">day 4</span> and you are never charged. <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a></p>
+    <p class="legal">By clicking "Continue" you start a Mindora Academy PRO with a 3-day free trial. Nothing is charged today. Your first payment of $49.99 is taken on <span class="d8">day 4</span> from the card you used, then every month until you cancel. Cancel anytime in your account; cancel before <span class="d8">day 4</span> and you are never charged. <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a></p>
+    <label class="agree"><input type="checkbox" id="agree" checked><span>By clicking "Continue", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a> and <a href="/cookie-policy">Cookie Policy</a>.</span></label>
+    <p class="provider"><b>Service provider:</b> Scalion Ltd · Company · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · support@mindoraacademy.com</p>
     <button class="no" data-decline>No thanks</button>
   </div>
 </section>
@@ -541,7 +547,10 @@ function mindoraStripe() {
   return window.__mindoraStripe;
 }
 async function funnelSubscribe(plan) {
-  const body = { token: FUNNEL.token, plan, consent: document.querySelector('.legal').innerText };
+  const agree = document.getElementById('agree');
+  if (agree && !agree.checked) throw new Error('Please accept the Terms of Use, Privacy Policy and Cookie Policy');
+  const consent = document.querySelector('.legal').innerText + '\n' + document.querySelector('.agree').innerText + '\n' + document.querySelector('.provider').innerText;
+  const body = { token: FUNNEL.token, plan, consent };
   let r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   let data = await r.json();
   if (data.requires_action && data.client_secret) {
@@ -586,6 +595,6 @@ document.getElementById('final-no').addEventListener('click', () => { window.min
 addEventListener('keydown', e => { if (e.key === 'Escape' && ds.classList.contains('open')) { window.mindoraGo(FUNNEL.nextUrl); } });
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=2"></script>
+<script src="/funnel-assets/i18n.js?v=4"></script>
 </body>
 </html>

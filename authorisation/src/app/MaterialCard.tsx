@@ -6,12 +6,16 @@ import type { MaterialListItem } from '@/lib/api'
 export function BookIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 004 16.5v-11z"
-      />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4 16.5A2.5 2.5 0 016.5 19H20" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.5C10.4 5.3 8.2 4.8 5 4.8v12.9c3.2 0 5.4.5 7 1.7 1.6-1.2 3.8-1.7 7-1.7V4.8c-3.2 0-5.4.5-7 1.7z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.5v12.9" />
+    </svg>
+  )
+}
+
+export function ChevronRightIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
     </svg>
   )
 }

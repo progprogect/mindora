@@ -32,7 +32,7 @@ import {
 } from '../lib/subscription.js'
 import { TRIAL_DAYS } from '../lib/trial.js'
 import { getRequestLocale } from '../lib/localeContext.js'
-import type { AppLocale } from '../lib/localePath.js'
+import { splitLocalePrefix, type AppLocale } from '../lib/localePath.js'
 import { bumpFunnelCookie } from './funnelPages.js'
 
 const subscribeSchema = z.object({
@@ -147,7 +147,20 @@ function nextStepAfterUpsell(product: string): FunnelStep {
   return 'onboard'
 }
 
+/**
+ * `/api/*` has no locale prefix, so take the language of the page that made the call (Referer path),
+ * then the session's starting language. Otherwise a switch on an upsell page is lost on the next step.
+ */
 function billingLocale(c: Parameters<typeof bumpFunnelCookie>[0], session: FunnelSession): AppLocale {
+  try {
+    const referer = c.req.header('referer')
+    if (referer) {
+      const { locale } = splitLocalePrefix(new URL(referer).pathname)
+      if (locale) return locale
+    }
+  } catch {
+    /* malformed Referer: fall through */
+  }
   if (session.lang === 'en' || session.lang === 'ru') return session.lang
   return getRequestLocale(c)
 }
@@ -158,8 +171,8 @@ function advanceResponse(
   next: FunnelStep,
   extra: Record<string, unknown> = {},
 ) {
-  const { token, session: updated } = bumpFunnelCookie(c, session, next)
-  const locale = billingLocale(c, updated)
+  const locale = billingLocale(c, session)
+  const { token, session: updated } = bumpFunnelCookie(c, { ...session, lang: locale }, next)
   return {
     success: true as const,
     nextUrl: urlForFunnelStep(updated.step, updated.kit, locale),
@@ -311,7 +324,7 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
         email: ctx.email,
         amountCents,
         trialEndUnix: trialEnd,
-        locale: ctx.session.lang,
+        locale: billingLocale(c, ctx.session),
       })
     } catch (error) {
       console.error('[funnel] schedule reminder failed', error)
