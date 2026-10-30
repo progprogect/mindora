@@ -50,6 +50,11 @@ function compareLesson(id, en, ru) {
     if (eb.length !== rb.length) issues.push(`${at}: bullets EN ${eb.length} vs RU ${rb.length}`)
     eb.forEach((b, j) => rb[j] !== undefined && compareText(`${at} bullet ${j + 1}`, b, rb[j], issues))
   })
+  // RU noticeably shorter than EN usually means the translation was abbreviated
+  en.cards.forEach((card, i) => {
+    const rb = ru.cards[i]?.body ?? ''
+    if (card.body && rb.length < card.body.length * 0.6) issues.push(`card ${i + 1} body: RU is ${Math.round((rb.length / card.body.length) * 100)}% of EN length`)
+  })
   const eq = Array.isArray(en.quiz) ? en.quiz : (en.quiz?.questions ?? [])
   const rq = Array.isArray(ru.quiz) ? ru.quiz : (ru.quiz?.questions ?? [])
   if (eq.length !== rq.length) issues.push(`quiz: EN ${eq.length} vs RU ${rq.length} questions`)
@@ -59,6 +64,8 @@ function compareLesson(id, en, ru) {
     const at = `quiz ${i + 1}`
     if (q.correctIndex !== r.correctIndex) issues.push(`${at}: correctIndex EN ${q.correctIndex} vs RU ${r.correctIndex}`)
     if ((q.options ?? []).length !== (r.options ?? []).length) issues.push(`${at}: options count differs`)
+    if (q.explanation && (r.explanation ?? '').length < q.explanation.length * 0.6)
+      issues.push(`${at} explanation: RU is ${Math.round(((r.explanation ?? '').length / q.explanation.length) * 100)}% of EN length`)
     if (q.type !== r.type) issues.push(`${at}: type RU ${r.type}`)
     compareText(`${at} question`, q.question, r.question, issues)
   })

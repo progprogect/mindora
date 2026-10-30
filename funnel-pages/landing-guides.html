@@ -654,12 +654,15 @@ document.querySelectorAll('[data-cta="checkout"]').forEach(b => b.addEventListen
 /* возврат кнопкой «Назад» из bfcache (например, со Stripe): кнопка осталась заблокированной */
 addEventListener('pageshow', e => { if (e.persisted) document.querySelectorAll('[data-cta="checkout"]').forEach(b => { b.disabled = false; }); });
 
-/* Exit-intent: десктоп — курсор к верхнему краю; мобайл — 35 с на странице после 50% скролла. 1 раз за сессию. */
+/* Exit-intent: десктоп — курсор к верхнему краю после прокрутки; мобайл — 35 с на странице после 50% скролла. 1 раз за сессию. */
 const modal = document.getElementById('exit');
 const seen = () => { try { return sessionStorage.getItem('exit_seen'); } catch(e) { return window._exitSeen; } };
 const mark = () => { try { sessionStorage.setItem('exit_seen','1'); } catch(e) { window._exitSeen = 1; } };
 function openExit(){ if (seen()) return; mark(); modal.classList.add('open'); }
-document.addEventListener('mouseout', e => { if (!e.relatedTarget && e.clientY < 10) openExit(); });
+/* десктоп-попап только после того, как человек прокрутил страницу: курсор у верхнего края на загрузке (адресная строка, полноэкранный режим) не считается уходом */
+let scrolledDown = false;
+addEventListener('scroll', () => { if (scrollY > 400) scrolledDown = true; }, {passive:true});
+document.addEventListener('mouseout', e => { if (scrolledDown && !e.relatedTarget && e.clientY < 10) openExit(); });
 let half = false;
 addEventListener('scroll', () => { if (!half && scrollY > document.body.scrollHeight / 2) { half = true; setTimeout(openExit, 35000); } }, {passive:true});
 if (new URLSearchParams(location.search).get('cancelled') === '1') openExit(); // cancel_url из Stripe
