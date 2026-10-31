@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!--
   DEV NOTES — шаги 3–5 из 6, один шаблон.
-  - ?step=coach | prompts | planners. Контент и цены — в OFFERS ниже.
+  - ?step=prompts | planners | coach (порядок 9 → 5 → 19). Контент и цены — в OFFERS ниже.
   - Структура как у конкурента: компактная карточка товара → "What you get" → "Why it's worth it" → нижний блок с кнопкой и отказом.
   - Отказ (No thanks) только внизу → модалка с даунселлом (ниже цена) → принять: списание по цене downsell → next; отказаться (No thanks / Esc / фон) → next.
   - ?state=downsell (старые ссылки): страница сразу в состоянии downsell, No thanks → next, без модалки.
@@ -198,7 +198,7 @@ window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false };
 
 const OFFERS = {
   coach: {
-    step:3, product:'mindora_coach', next:'/account/upsell?step=prompts',
+    step:5, product:'mindora_coach', next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/onboard',
     lead:'Most people stall in the first few days of a challenge — not because it\'s hard, but because no one tells them what to do next. Mindora checks in after every lesson, builds a 15-minute action plan around your goal and keeps your streak alive.',
     visual:`<div class="coachhero"><img src="/funnel-assets/owl.png" alt="Mindora, your AI coach"><div class="bubble">“Let's turn today's lesson into real progress.”</div></div>
       <div class="feat4"><div><i>🎯</i>Personalised to you</div><div><i>💡</i>Remembers your progress</div><div><i>🛡️</i>Keeps you accountable</div><div><i>🕐</i>Available 24/7</div></div>`,
@@ -225,7 +225,7 @@ const OFFERS = {
     why:['Access forever — no monthly payments','Built on top of the lessons you already have','Generic AI waits for questions — Mindora guides you','Activates instantly in your account']
   },
   prompts: {
-    step:4, product:'prompt_library', next:'/account/upsell?step=planners',
+    step:3, product:'prompt_library', next:'/account/upsell?step=planners',
     lead:'Your starter pack covers the basics. The full library covers everything else: sales emails, content calendars, business plans, study notes, job applications — 28,000+ tested prompts you copy, paste and get results from in seconds.',
     visual:`<div class="visual wide"><img src="/funnel-assets/prompt-books.jpg" alt="7 Mindora prompt guides and the 28,000+ prompt library"></div>
       <div class="works"><span>Works instantly with</span><b>Claude</b><b>ChatGPT</b><b>Gemini</b><span>&amp; every other AI</span></div>`,
@@ -250,9 +250,9 @@ const OFFERS = {
     why:['Access forever — no monthly payments','Your 1,000 starter prompts are included','Works with every AI chat tool','Appears in your account instantly']
   },
   planners: {
-    step:5, product:'planners_bundle',
+    step:4, product:'planners_bundle',
     lead:'Learning is half the work. These 10 planners turn what you learn into a plan for your day, your goals and your money — print a page or fill it in on screen, as often as you like.',
-    next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/onboard',
+    next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/upsell?step=coach',
     visual:`<div class="visual wide fan"><img src="/funnel-assets/planners-fan.jpg" alt="All 10 Mindora planners"><div class="seal"><b>10</b>planners<b>289</b>pages</div></div>`,
     items:[
       ['🎯','Productivity & Focus','4 printable planners · Forever'],
@@ -293,7 +293,7 @@ try { history.scrollRestoration = 'manual'; } catch(e) {}
 function toTop(){ window.mindoraTop(); }
 addEventListener('load', toTop); addEventListener('pageshow', toTop);
 const qs = new URLSearchParams(location.search);
-const key = OFFERS[qs.get('step')] ? qs.get('step') : 'coach';
+const key = OFFERS[qs.get('step')] ? qs.get('step') : 'prompts';
 const O = OFFERS[key];
 let state = qs.get('state') === 'downsell' ? 'downsell' : 'offer';
 

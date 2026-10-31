@@ -138,12 +138,12 @@ async function resolveBillingContext(
 }
 
 function nextStepAfterMembership(): FunnelStep {
-  return 'upsell_coach'
+  return 'upsell_prompts'
 }
 
 function nextStepAfterUpsell(product: string): FunnelStep {
-  if (product === 'mindora_coach') return 'upsell_prompts'
   if (product === 'prompt_library') return 'upsell_planners'
+  if (product === 'planners_bundle') return 'upsell_coach'
   return 'onboard'
 }
 

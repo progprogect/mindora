@@ -168,6 +168,8 @@ function FirstRunHome({
         </div>
         <Chevron className="w-5 h-5 text-sw-grey flex-shrink-0" />
       </Link>
+
+      <MaterialsBlock />
     </>
   )
 }
@@ -338,6 +340,8 @@ export default function DashboardPage() {
           </Link>
         </div>
       </div>
+
+      <MaterialsBlock />
 
       {streakRisk ? (
         <div className="bg-white rounded-xl px-4 py-3 shadow-sm flex items-center gap-3 border border-amber-200">
@@ -522,8 +526,6 @@ export default function DashboardPage() {
         </div>
         <Chevron className="w-5 h-5 text-white/70 flex-shrink-0" strokeWidth={2} />
       </Link>
-
-      <MaterialsBlock />
 
       {libraryOpen ? <PromptLibraryModal onClose={() => setLibraryOpen(false)} /> : null}
     </main>

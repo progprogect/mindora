@@ -17,9 +17,9 @@ export type KitCheckoutKey = FunnelKit
 export const FUNNEL_STEPS = [
   'verify',
   'membership',
-  'upsell_coach',
   'upsell_prompts',
   'upsell_planners',
+  'upsell_coach',
   'onboard',
   'done',
 ] as const

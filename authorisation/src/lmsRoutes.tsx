@@ -7,6 +7,7 @@ import UpgradePlannersPage from '@/account/UpgradePlannersPage'
 import UpgradePromptPage from '@/account/UpgradePromptPage'
 import WelcomePage from '@/account/WelcomePage'
 import AppLayout from '@/app/AppLayout'
+import { FloatingLanguageSwitcher } from '@/i18n/LanguageSwitcher'
 import CertificatePage from '@/app/pages/CertificatePage'
 import CertificatesPage from '@/app/pages/CertificatesPage'
 import CourseHubPage from '@/app/pages/CourseHubPage'
@@ -61,13 +62,13 @@ export const lmsRoutes = (
     <Route path="dashboard" element={<RedirectToAppDashboard />} />
     <Route path="checkout/setup" element={<CheckoutSetupPage />} />
     <Route path="account/create" element={<AccountCreatePage />} />
-    <Route path="account/onboard" element={<OnboardPage />} />
+    <Route path="account/onboard" element={<><FloatingLanguageSwitcher /><OnboardPage /></>} />
     <Route path="account/welcome" element={<WelcomePage />} />
-    <Route path="account/upgrade" element={<UpgradePromptPage />} />
-    <Route path="account/upgrade-planners" element={<UpgradePlannersPage />} />
+    <Route path="account/upgrade" element={<><FloatingLanguageSwitcher /><UpgradePromptPage /></>} />
+    <Route path="account/upgrade-planners" element={<><FloatingLanguageSwitcher /><UpgradePlannersPage /></>} />
     {/* Annual OTO removed from new $1 funnel path; keep URL as soft redirect for legacy links. */}
     <Route path="account/upgrade-annual" element={<RedirectToAppDashboard />} />
-    <Route path="account/upgrade-mindora" element={<UpgradeMindoraPage />} />
+    <Route path="account/upgrade-mindora" element={<><FloatingLanguageSwitcher /><UpgradeMindoraPage /></>} />
     <Route path="account/upgrade-wise" element={<RedirectPreserve to="/account/upgrade-mindora" />} />
 
     <Route

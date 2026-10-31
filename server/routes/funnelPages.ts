@@ -297,25 +297,25 @@ funnelPageRoutes.get('/account/verify', async (c) => {
 
 funnelPageRoutes.get('/account/membership', (c) =>
   serveAccountPage(c, 'membership.html', 'membership', (session) => ({
-    nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/upsell?step=coach'),
+    nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/upsell?step=prompts'),
     day8: day8Iso(),
   })),
 )
 
 funnelPageRoutes.get('/account/upsell', (c) => {
-  const q = c.req.query('step') || 'coach'
+  const q = c.req.query('step') || 'prompts'
   const requested = stepFromUpsellQuery(q)
   if (!requested) {
-    return c.redirect(withLocalePrefix(funnelLocale(c), '/account/upsell?step=coach'), 302)
+    return c.redirect(withLocalePrefix(funnelLocale(c), '/account/upsell?step=prompts'), 302)
   }
 
   return serveAccountPage(c, 'upsell.html', requested, (session) => {
     const locale = funnelLocale(c, session)
     const next =
-      requested === 'upsell_coach'
-        ? '/account/upsell?step=prompts'
-        : requested === 'upsell_prompts'
-          ? '/account/upsell?step=planners'
+      requested === 'upsell_prompts'
+        ? '/account/upsell?step=planners'
+        : requested === 'upsell_planners'
+          ? '/account/upsell?step=coach'
           : '/account/onboard'
     return { nextUrl: withLocalePrefix(locale, next), kit: session.kit }
   })

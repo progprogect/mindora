@@ -4,7 +4,7 @@ import AppNavFooter from '@/app/AppNavFooter'
 import MindoraFab from '@/app/MindoraFab'
 import { initialsFromName, PLAN_TIER_LABEL_KEYS, PLAN_TIERS } from '@/app/mockUser'
 import { useCurrentUser, useSession } from '@/auth/session'
-import LanguageSwitcher from '@/i18n/LanguageSwitcher'
+import LanguageSwitcher, { FloatingLanguageSwitcher } from '@/i18n/LanguageSwitcher'
 import { useI18n } from '@/i18n/I18nProvider'
 import { stripLocale, withLocale } from '@/i18n/locale'
 import BrandWordmark from '@/shared/BrandWordmark'
@@ -29,6 +29,8 @@ export default function AppLayout() {
     pathname.startsWith('/app/certificate/') ||
     /^\/app\/courses\/[^/]+\/[^/]+$/.test(pathname)
   const showWordmark = pathname === '/app/dashboard'
+  const hasOwnSwitcher = pathname.startsWith('/app/materials/')
+  const showFloatingSwitcher = !showWordmark && !hasOwnSwitcher
   const name = user?.name || t('app.common.friend')
   const initials = initialsFromName(name)
   const tierKey = user?.planTier && user.planTier in PLAN_TIERS ? (user.planTier as keyof typeof PLAN_TIERS) : 'week4'
@@ -57,6 +59,8 @@ export default function AppLayout() {
           <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-sw-grey-border">
             <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between">
               <BrandWordmark className="font-extrabold" />
+              <div className="flex items-center gap-3">
+              <LanguageSwitcher />
               <div className="relative" onClick={(e) => e.stopPropagation()}>
                 <button
                   type="button"
@@ -72,9 +76,6 @@ export default function AppLayout() {
                       <p className="text-xs font-bold text-sw-dark truncate">{name}</p>
                       <p className="text-xs text-sw-grey mt-0.5">{planLabel}</p>
                     </div>
-                    <div className="px-3 py-2 border-b border-sw-grey-border">
-                      <LanguageSwitcher />
-                    </div>
                     <button
                       type="button"
                       onClick={() => void handleSignOut()}
@@ -85,9 +86,11 @@ export default function AppLayout() {
                   </div>
                 ) : null}
               </div>
+              </div>
             </div>
           </header>
         )}
+        {showFloatingSwitcher ? <FloatingLanguageSwitcher belowHeader={hideChrome} /> : null}
         <Outlet />
       </div>
       {hideChrome ? null : <AppNavFooter />}
