@@ -21,17 +21,18 @@ export function money(cents: number) {
   return '$' + (cents / 100).toFixed(2)
 }
 
-function buildPlanners(source: typeof catalog) {
+/** Covers have the title and quote baked into the picture, so RU uses its own files in `covers/ru/`. */
+function buildPlanners(source: typeof catalog, coverDir = '/assets/oto/covers') {
   return {
     planners: source.planners.map((planner) => ({
       ...planner,
-      coverUrl: `/assets/oto/covers/${planner.id}.png`,
+      coverUrl: `${coverDir}/${planner.id}.png`,
     })),
     categories: source.categories,
   }
 }
 
-const ruPlanners = buildPlanners(ruCatalog as typeof catalog)
+const ruPlanners = buildPlanners(ruCatalog as typeof catalog, '/assets/oto/covers/ru')
 
 export function plannerContent(locale: Locale) {
   return locale === 'ru' ? ruPlanners : { planners: PLANNERS, categories: PLANNER_CATEGORIES }

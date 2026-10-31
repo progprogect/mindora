@@ -1,6 +1,8 @@
 // Compares EN and RU course lessons card by card and prints suspicious pairs.
 // Heuristics only (shape, leading emoji, quote marks, digits, quiz answers): a hit means "look at this
-// lesson", not "this is wrong". Usage: node scripts/check-course-parity.mjs [--course=<slug>] [--json]
+// lesson", not "this is wrong". Also compares this copy of the content with the sibling copy (github/authorisation <-> authorisation):
+// the two must stay identical, so any differing lesson is reported.
+// Usage: node scripts/check-course-parity.mjs [--course=<slug>] [--json]
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -73,11 +75,30 @@ function compareLesson(id, en, ru) {
 }
 
 const report = []
+// The content lives in two copies that must stay identical; find the other one and report differing lessons.
+const here = path.resolve(root, '../../..')
+const siblings = [path.resolve(here, '../../authorisation'), path.resolve(here, '../github/authorisation')]
+const sibling = siblings.find((d) => d !== here && existsSync(path.join(d, 'src/content/courses')))
+const siblingRoot = sibling && path.join(sibling, 'src/content/courses')
+function compareCopies(file, rel) {
+  const other = path.join(siblingRoot, rel)
+  if (!existsSync(other)) return report.push({ course: file.replace(/\.json$/, ''), lesson: rel, issues: ['file missing in the other copy'] })
+  const a = lessonsOf(JSON.parse(readFileSync(path.join(root, rel), 'utf8')))
+  const b = lessonsOf(JSON.parse(readFileSync(other, 'utf8')))
+  for (const id of new Set([...a.keys(), ...b.keys()])) {
+    if (JSON.stringify(a.get(id)) !== JSON.stringify(b.get(id)))
+      report.push({ course: file.replace(/\.json$/, ''), lesson: id, issues: [`differs from the other copy (${sibling}): ${rel}`] })
+  }
+}
 const files = readdirSync(path.join(root, 'ru')).filter((f) => f.endsWith('.json'))
 for (const file of files) {
   if (only && file !== `${only}.json`) continue
   const enPath = path.join(root, file)
   if (!existsSync(enPath)) continue
+  if (siblingRoot) {
+    compareCopies(file, file)
+    compareCopies(file, path.join('ru', file))
+  }
   const en = lessonsOf(JSON.parse(readFileSync(enPath, 'utf8')))
   const ru = lessonsOf(JSON.parse(readFileSync(path.join(root, 'ru', file), 'utf8')))
   for (const [id, lesson] of en) {
