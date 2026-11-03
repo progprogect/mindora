@@ -15,7 +15,7 @@ export default function MaterialShell({
   children: ReactNode
 }) {
   const { locale, t } = useI18n()
-  const list = useMaterials()
+  const { items: list } = useMaterials()
   const idx = list && slug ? list.findIndex((m) => m.slug === slug) : -1
   const prev = idx > 0 && list ? list[idx - 1] : null
   const next = idx >= 0 && list && idx < list.length - 1 ? list[idx + 1] : null

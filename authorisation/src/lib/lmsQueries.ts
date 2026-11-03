@@ -185,22 +185,28 @@ export function usePromptVaultKey() {
   return key
 }
 
-export function useMaterials() {
+export function useMaterials(): { items: MaterialListItem[] | undefined; error: boolean } {
   const { locale } = useI18n()
   const [items, setItems] = useState<MaterialListItem[] | undefined>(undefined)
+  const [error, setError] = useState(false)
   useEffect(() => {
     let cancelled = false
+    setItems(undefined)
+    setError(false)
     fetchMaterials(locale === 'ru' ? 'ru' : 'en')
       .then((data) => {
         if (!cancelled) setItems(data.materials)
       })
       .catch((error) => {
         console.warn('[api] materials failed', error)
-        if (!cancelled) setItems([])
+        if (!cancelled) {
+          setItems([])
+          setError(true)
+        }
       })
     return () => {
       cancelled = true
     }
   }, [locale])
-  return items
+  return { items, error }
 }

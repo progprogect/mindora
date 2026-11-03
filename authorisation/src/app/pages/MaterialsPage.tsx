@@ -6,7 +6,7 @@ import { useMaterials } from '@/lib/lmsQueries'
 
 export default function MaterialsPage() {
   const { locale, t } = useI18n()
-  const materials = useMaterials()
+  const { items: materials, error } = useMaterials()
 
   return (
     <main data-testid="materials-page" className="px-4 py-4 max-w-5xl mx-auto space-y-4 pb-24">
@@ -30,6 +30,8 @@ export default function MaterialsPage() {
 
       {materials === undefined ? (
         <p className="text-sm text-sw-grey">{t('app.materials.loading')}</p>
+      ) : error ? (
+        <p className="text-sm text-sw-grey">{t('app.materials.loadError')}</p>
       ) : materials.length === 0 ? (
         <p className="text-sm text-sw-grey">{t('app.materials.empty')}</p>
       ) : (
