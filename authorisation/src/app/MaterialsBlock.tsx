@@ -19,7 +19,7 @@ export default function MaterialsBlock() {
   const body = (
     <>
       <span className="text-2xl flex-shrink-0" aria-hidden>
-        📚
+        🗂️
       </span>
       <div className="flex-1 min-w-0">
         <p className="text-sm font-bold text-sw-dark leading-tight">{t('app.materials.title')}</p>
