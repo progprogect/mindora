@@ -32,7 +32,7 @@
   - Структура как у конкурента: компактная карточка товара → "What you get" → "Why it's worth it" → нижний блок с кнопкой и отказом.
   - Отказ (No thanks) только внизу → модалка с даунселлом (ниже цена) → принять: списание по цене downsell → next; отказаться (No thanks / Esc / фон) → next.
   - ?state=downsell (старые ссылки): страница сразу в состоянии downsell, No thanks → next, без модалки.
-  - "Add to order" → POST /api/funnel/charge {token, product, state, price} → PaymentIntent off_session, confirm:true,
+  - "Add" → POST /api/funnel/charge {token, product, state, price} → PaymentIntent off_session, confirm:true,
     idempotency_key = sid+product+price. 3DS: stripe.handleNextAction + повторный POST.
   - Если продукт уже есть у пользователя — сразу редирект на next.
   - preview:true — только для просмотра без бэкенда (кнопки просто ведут дальше).
@@ -179,14 +179,14 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 </div></div>
 <div class="alert" id="alert"></div>
 <main class="wrap" id="app"></main>
-<div class="sticky"><button class="btn" data-buy>Add to order →</button></div>
+<div class="sticky"><button class="btn" data-buy>Add →</button></div>
 <div class="modal" id="dsModal" role="dialog" aria-modal="true" aria-labelledby="ds-title">
   <div class="box">
     <span class="tag" id="ds-tag"></span>
     <h3 id="ds-title"></h3>
     <p class="lead" id="ds-sub"></p>
     <div class="dsprice" id="ds-price"></div>
-    <button class="btn" id="ds-buy" type="button">Add to order →</button>
+    <button class="btn" id="ds-buy" type="button">Add →</button>
     <p class="err" id="ds-err" role="alert"></p>
     <button class="no" id="ds-no" type="button">No thanks</button>
   </div>
@@ -331,7 +331,7 @@ function render(){
     <div class="bottom" id="bottom">
       <div class="pay"><span>stripe</span><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>G Pay</span></div>
       <p class="terms">One-time charge of $${S.price} to your saved card. Not a subscription.</p>
-      <div style="margin-top:16px"><button class="btn" data-buy>Add to order →</button></div>
+      <div style="margin-top:16px"><button class="btn" data-buy>Add →</button></div>
       <p class="err" role="alert"></p>
       <button class="no" data-no>No thanks</button>
     </div>`;
