@@ -1,0 +1,27 @@
+FROM node:22-bookworm-slim
+
+WORKDIR /app
+
+# Full build context (authorisation file: dep, drizzle SQL, scripts) via .dockerignore.
+COPY . .
+
+RUN npm ci
+
+ARG VITE_STRIPE_PUBLISHABLE_KEY=
+ARG VITE_META_PIXEL_ID=
+ARG VITE_POSTHOG_KEY=
+ARG VITE_POSTHOG_HOST=https://us.i.posthog.com
+
+ENV VITE_STRIPE_PUBLISHABLE_KEY=$VITE_STRIPE_PUBLISHABLE_KEY
+ENV VITE_META_PIXEL_ID=$VITE_META_PIXEL_ID
+ENV VITE_POSTHOG_KEY=$VITE_POSTHOG_KEY
+ENV VITE_POSTHOG_HOST=$VITE_POSTHOG_HOST
+
+RUN npm run build
+
+ENV NODE_ENV=production
+ENV PORT=8080
+
+EXPOSE 8080
+
+CMD ["node", "server-dist/index.js"]

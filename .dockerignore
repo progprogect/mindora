@@ -1,0 +1,12 @@
+node_modules
+dist
+lms-dist
+server-dist
+dist-ssr
+.env
+.env.local
+.env.*
+*.log
+.git
+authorisation/node_modules
+authorisation/dist
