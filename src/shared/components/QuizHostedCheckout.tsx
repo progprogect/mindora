@@ -19,7 +19,6 @@ const COPY = {
   en: {
     title: 'Get your plan for $1',
     cta: 'Continue to secure checkout — $1 →',
-    note: 'One-time payment of $1 — no subscription is started.',
     redirecting: 'Redirecting to secure checkout…',
     error: 'Could not start checkout. Please try again.',
     terms: 'Terms',
@@ -29,7 +28,6 @@ const COPY = {
   ru: {
     title: 'Получите свой план за $1',
     cta: 'Перейти к безопасной оплате — $1 →',
-    note: 'Разовый платёж $1 — подписка не оформляется.',
     redirecting: 'Переходим к безопасной оплате…',
     error: 'Не удалось начать оплату. Попробуйте ещё раз.',
     terms: 'Условия',
@@ -105,7 +103,6 @@ export default function QuizHostedCheckout({ quiz, funnel, email, name, highligh
         >
           {busy ? copy.redirecting : copy.cta}
         </button>
-        <p className="mt-3 text-center text-xs leading-relaxed text-sw-grey">{copy.note}</p>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-sw-grey">
         <Link to={withLocale(locale, ROUTES.terms)} className="hover:text-sw-dark">
