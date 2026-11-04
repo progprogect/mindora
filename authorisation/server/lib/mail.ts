@@ -84,8 +84,8 @@ export async function sendTrialReceiptEmail(receipt: TrialReceipt): Promise<void
   const year = receipt.paidAt.getFullYear()
   const subject =
     locale === 'ru'
-      ? `${BRAND} — Квитанция об оплате пробного периода (${amount})`
-      : `${BRAND} — Trial payment receipt (${amount})`
+      ? `${BRAND} — Чек на ${amount}`
+      : `${BRAND} — Your ${amount} receipt`
 
   if (!env.AUTH_RESEND_KEY) {
     if (env.NODE_ENV === 'production') {
@@ -342,9 +342,9 @@ function trialReceiptInnerHtml({
   if (locale === 'ru') {
     return `<tr>
             <td style="padding:8px 28px 0;">
-              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Квитанция об оплате пробного периода</h1>
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Ваш чек на один доллар</h1>
               <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Здравствуйте</p>
-              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Спасибо, что начали пробный период — подтверждаем ваш платёж. Вот ваша квитанция.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Спасибо за покупку! Это чек на один доллар: Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.</p>
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
                 <tr>
                   <td style="padding:16px 20px;width:50%;">
@@ -365,9 +365,9 @@ function trialReceiptInnerHtml({
   }
   return `<tr>
             <td style="padding:8px 28px 0;">
-              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your trial payment receipt</h1>
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your $1 receipt</h1>
               <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Hi there</p>
-              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Thanks for starting your trial — here's confirmation of your payment. Here's your receipt.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Thank you for your purchase! This is your receipt for one dollar: Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.</p>
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
                 <tr>
                   <td style="padding:16px 20px;width:50%;">
@@ -409,11 +409,11 @@ function trialReceiptText({
       '',
       BRAND,
       '',
-      'Квитанция об оплате пробного периода',
+      'Ваш чек на один доллар',
       '',
       'Здравствуйте',
       '',
-      'Спасибо, что начали пробный период — подтверждаем ваш платёж. Вот ваша квитанция.',
+      'Спасибо за покупку! Это чек на один доллар: Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.',
       '',
       `СУММА ОПЛАТЫ  ${amount}`,
       `ДАТА          ${date}`,
@@ -442,11 +442,11 @@ function trialReceiptText({
     '',
     BRAND,
     '',
-    'Your trial payment receipt',
+    'Your $1 receipt',
     '',
     'Hi there',
     '',
-    "Thanks for starting your trial — here's confirmation of your payment. Here's your receipt.",
+    "Thank you for your purchase! This is your receipt for one dollar: Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.",
     '',
     `AMOUNT PAID  ${amount}`,
     `DATE         ${date}`,

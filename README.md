@@ -76,7 +76,7 @@ Required Railway variables (service → Variables):
 
 Without Postgres the HTTP server still listens and serves the SPA; `/api/health` returns `{ ok: true, db: false }`. Node 22 is required (Vite 8).
 
-Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial `$1` payments create a subscription and send a Resend receipt (`MindoraAcademy.com — Trial payment receipt ($1.00)`); add-on payments with `metadata.offerSlug` write `purchases` and do not use that template.
+Stripe webhook URL: `https://<railway>/stripe/webhook`. Trial `$1` payments create a subscription and send a Resend receipt (`MindoraAcademy.com — Your $1.00 receipt`); add-on payments with `metadata.offerSlug` write `purchases` and do not use that template.
 
 ## Routes
 

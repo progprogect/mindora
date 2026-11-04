@@ -389,16 +389,16 @@ async function funnelCharge(price, chargeState = state) {
   return d;
 }
 async function buy(btn){
-  const S = O[state], err = document.querySelector('.err');
+  const S = O[state];
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true);
   try {
     const d = await funnelCharge(S.price);
     remember();
     go(d.nextUrl || O.next);
   } catch(e) {
-    if (FUNNEL.preview) { remember(); go(O.next); return; }
-    err.textContent = (e.message || 'Something went wrong') + '. Try again or skip this offer.'; err.style.display = 'block';
-    document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
+    if (FUNNEL.preview) remember();
+    /* отказ карты (в т.ч. нехватка средств): без текста ошибки сразу на следующий шаг, как в OTO */
+    go(O.next);
   }
 }
 async function buyDownsell(){
@@ -409,9 +409,9 @@ async function buyDownsell(){
     remember();
     go(d.nextUrl || O.next);
   } catch(e) {
-    if (FUNNEL.preview) { remember(); go(O.next); return; }
-    err.textContent = (e.message || 'Something went wrong') + '. Try again or skip this offer.'; err.style.display = 'block';
-    btn.disabled = false;
+    if (FUNNEL.preview) remember();
+    closeDownsell();
+    go(O.next);
   }
 }
 document.getElementById('ds-buy').addEventListener('click', buyDownsell);
@@ -428,6 +428,6 @@ addEventListener('pageshow', e => {
 render();
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=4"></script>
+<script src="/funnel-assets/i18n.js?v=5"></script>
 </body>
 </html>
