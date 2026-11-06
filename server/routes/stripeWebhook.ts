@@ -472,6 +472,7 @@ export async function stripeWebhookHandler(c: Context) {
         break
       }
       case 'invoice.paid':
+      case 'customer.subscription.created':
       case 'customer.subscription.updated':
       case 'customer.subscription.deleted': {
         const object = event.data.object

@@ -11,6 +11,7 @@ import { loadEnv } from '../env.js'
 import {
   funnelChargeIdempotencyKey,
   funnelSubscribeIdempotencyKey,
+  type FunnelUpsellOffer,
   membershipAmountCents,
   normalizeFunnelPlan,
   resolveFunnelUpsell,
@@ -39,13 +40,17 @@ const subscribeSchema = z.object({
   token: z.string().min(1),
   plan: z.string().min(1),
   consent: z.string().min(1),
+  /** Text of the terms checkbox the user saw; stored with the consent as dispute evidence. */
+  terms_accepted: z.string().optional(),
+  lang: z.enum(['en', 'ru']).optional(),
 })
 
 const chargeSchema = z.object({
   token: z.string().min(1),
   product: z.string().min(1),
-  state: z.enum(['offer', 'downsell']).optional(),
-  price: z.union([z.string(), z.number()]),
+  state: z.enum(['offer', 'downsell']).default('offer'),
+  /** Ignored: the amount is resolved on the server from product + state. */
+  price: z.union([z.string(), z.number()]).optional(),
   /** PaymentIntent already confirmed on-session after 3-D Secure; the server verifies it instead of charging again. */
   payment_intent: z.string().optional(),
 })
@@ -267,6 +272,25 @@ async function subscriptionAction(sub: Stripe.Subscription): Promise<ActionInten
   return null
 }
 
+/** Failed or abandoned PaymentIntents of this funnel session for this offer; see funnelChargeIdempotencyKey. */
+async function countFailedChargeAttempts(
+  stripe: Stripe,
+  customerId: string,
+  sid: string,
+  offer: FunnelUpsellOffer,
+): Promise<number> {
+  const recent = await stripe.paymentIntents.list({ customer: customerId, limit: 30 })
+  return recent.data.filter((pi) => {
+    const m = pi.metadata ?? {}
+    return (
+      m.funnel_sid === sid &&
+      m.funnel_product === offer.product &&
+      m.funnel_state === offer.state &&
+      (pi.status === 'requires_payment_method' || pi.status === 'canceled')
+    )
+  }).length
+}
+
 export const funnelBillingRoutes = new Hono()
 
 funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
@@ -305,11 +329,19 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
     )
   }
 
-  await db.insert(funnelConsents).values({
+  const [recorded] = await db
+    .select({ id: funnelConsents.id })
+    .from(funnelConsents)
+    .where(and(eq(funnelConsents.sid, ctx.session.sid), eq(funnelConsents.plan, plan)))
+    .limit(1)
+  // A retry after 3-D Secure re-posts the same consent; keep the first record.
+  if (!recorded) await db.insert(funnelConsents).values({
     userId: ctx.userId,
     sid: ctx.session.sid,
     plan,
     consentText: parsed.data.consent.trim(),
+    termsText: parsed.data.terms_accepted?.trim() || null,
+    lang: parsed.data.lang ?? billingLocale(c, ctx.session),
     ip: clientIp(c),
     userAgent: c.req.header('user-agent') || undefined,
   })
@@ -320,6 +352,21 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
     const pendingAuth = pendingSetupAction(fresh)
     if (pendingAuth) return c.json(requiresActionPayload(pendingAuth))
     await linkStripeCustomer(ctx.userId, ctx.customerId, existing)
+    // The first request may have stopped at 3-D Secure before scheduling the reminder; the upsert is idempotent.
+    if (typeof fresh.trial_end === 'number') {
+      try {
+        await scheduleTrialChargeReminder({
+          userId: ctx.userId,
+          stripeSubscriptionId: fresh.id,
+          email: ctx.email,
+          amountCents: fresh.items.data[0]?.price.unit_amount ?? membershipAmountCents(plan),
+          trialEndUnix: fresh.trial_end,
+          locale: billingLocale(c, ctx.session),
+        })
+      } catch (error) {
+        console.error('[funnel] schedule reminder failed', error)
+      }
+    }
     return c.json(advanceResponse(c, ctx.session, nextStepAfterMembership(), { alreadySubscribed: true }))
   }
 
@@ -388,7 +435,7 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
     return c.json({ success: false, message: 'Invalid payload', code: 'invalid_payload' }, 400)
   }
 
-  const offer = resolveFunnelUpsell(parsed.data.product, parsed.data.price)
+  const offer = resolveFunnelUpsell(parsed.data.product, parsed.data.state)
   if (!offer) {
     return c.json({ success: false, message: 'Unknown offer or price', code: 'unknown_offer' }, 400)
   }
@@ -409,7 +456,10 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
   }
 
   const stripe = getStripe()
-  const idempotencyKey = funnelChargeIdempotencyKey(ctx.session.sid, offer.product, offer.amountCents)
+  const failedAttempts = parsed.data.payment_intent
+    ? 0
+    : await countFailedChargeAttempts(stripe, ctx.customerId, ctx.session.sid, offer)
+  const idempotencyKey = funnelChargeIdempotencyKey(ctx.session.sid, offer.product, offer.state, failedAttempts)
 
   try {
     let pi: Stripe.PaymentIntent
@@ -439,6 +489,7 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
             offerSlug: offer.offerSlug,
             userId: ctx.userId,
             funnel_product: offer.product,
+            funnel_state: offer.state,
             funnel_sid: ctx.session.sid,
             amount_cents: String(offer.amountCents),
           },
@@ -467,12 +518,26 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
     }
 
     await recordPurchase(ctx.userId, offer.offerSlug)
-    await db.insert(upsellEvents).values({
-      userId: ctx.userId,
-      offerSlug: offer.offerSlug,
-      action: 'purchased',
-      source: `funnel-${parsed.data.state || 'offer'}`,
-    })
+    // Parallel requests share one PaymentIntent (idempotency key); count the purchase once.
+    const [loggedPurchase] = await db
+      .select({ id: upsellEvents.id })
+      .from(upsellEvents)
+      .where(
+        and(
+          eq(upsellEvents.userId, ctx.userId),
+          eq(upsellEvents.offerSlug, offer.offerSlug),
+          eq(upsellEvents.action, 'purchased'),
+        ),
+      )
+      .limit(1)
+    if (!loggedPurchase) {
+      await db.insert(upsellEvents).values({
+        userId: ctx.userId,
+        offerSlug: offer.offerSlug,
+        action: 'purchased',
+        source: `funnel-${offer.state}`,
+      })
+    }
 
     return c.json(advanceResponse(c, ctx.session, next))
   } catch (error) {

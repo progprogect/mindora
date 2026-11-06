@@ -50,6 +50,13 @@
       "when": 1762140000000,
       "tag": "0006_profile_locale",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1762226400000,
+      "tag": "0007_funnel_consent_terms_lang",
+      "breakpoints": true
     }
   ]
 }

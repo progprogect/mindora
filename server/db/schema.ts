@@ -311,6 +311,8 @@ export const funnelConsents = pgTable(
     sid: text('sid').notNull(),
     plan: text('plan').notNull(),
     consentText: text('consent_text').notNull(),
+    termsText: text('terms_text'),
+    lang: text('lang'),
     ip: text('ip'),
     userAgent: text('user_agent'),
     createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),

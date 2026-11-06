@@ -8,6 +8,7 @@ export type FunnelUpsellProduct = 'mindora_coach' | 'prompt_library' | 'planners
 
 export type FunnelUpsellOffer = {
   product: FunnelUpsellProduct
+  state: 'offer' | 'downsell'
   offerSlug: string
   amountCents: number
   checkoutName: string
@@ -22,7 +23,7 @@ const PLAN_ALIASES: Record<string, FunnelPlan> = {
 
 const UPSELL_BY_PRODUCT: Record<
   FunnelUpsellProduct,
-  { offerSlug: string; checkoutName: string; offerCents: number; downsellCents: number }
+  { offerSlug: string; checkoutName: string; offerCents: number; downsellCents?: number }
 > = {
   mindora_coach: {
     offerSlug: 'mindora-ai-coach',
@@ -34,13 +35,11 @@ const UPSELL_BY_PRODUCT: Record<
     offerSlug: 'ultimate-prompt-library-oto',
     checkoutName: 'Prompt Library',
     offerCents: 997,
-    downsellCents: 697,
   },
   planners_bundle: {
     offerSlug: 'planner-bundle',
     checkoutName: 'All 10 planners',
     offerCents: 495,
-    downsellCents: 295,
   },
 }
 
@@ -50,18 +49,6 @@ export function normalizeFunnelPlan(raw: string): FunnelPlan | null {
 
 export function isFunnelUpsellProduct(value: string): value is FunnelUpsellProduct {
   return value in UPSELL_BY_PRODUCT
-}
-
-/** Parse "$19.95" / "19.95" / 19.95 → cents. */
-export function parsePriceToCents(price: string | number): number | null {
-  if (typeof price === 'number' && Number.isFinite(price)) {
-    return Math.round(price < 1000 && !Number.isInteger(price) ? price * 100 : price)
-  }
-  const raw = String(price).trim().replace(/[^0-9.]/g, '')
-  if (!raw) return null
-  const dollars = Number(raw)
-  if (!Number.isFinite(dollars)) return null
-  return Math.round(dollars * 100)
 }
 
 export function resolveMembershipPriceId(plan: FunnelPlan): string | null {
@@ -78,26 +65,42 @@ export function membershipAmountCents(plan: FunnelPlan): number {
   return plan === 'main' ? 4999 : 2999
 }
 
+export type FunnelUpsellState = 'offer' | 'downsell'
+
+/**
+ * The amount always comes from this table, never from the request. Only the coach has a downsell;
+ * a `downsell` request for any other product is rejected.
+ */
 export function resolveFunnelUpsell(
   product: string,
-  price: string | number,
+  state: FunnelUpsellState,
 ): FunnelUpsellOffer | null {
   if (!isFunnelUpsellProduct(product)) return null
-  const cents = parsePriceToCents(price)
-  if (cents == null) return null
   const def = UPSELL_BY_PRODUCT[product]
-  if (cents !== def.offerCents && cents !== def.downsellCents) return null
+  const cents = state === 'downsell' ? def.downsellCents : def.offerCents
+  if (cents == null) return null
   return {
     product,
+    state,
     offerSlug: def.offerSlug,
     amountCents: cents,
     checkoutName: def.checkoutName,
   }
 }
 
-/** Idempotency: token sid + product + price (decline of full price must not block downsell). */
-export function funnelChargeIdempotencyKey(sid: string, product: string, amountCents: number): string {
-  return `funnel_ch_${sid}_${product}_${amountCents}`.slice(0, 255)
+/**
+ * Idempotency: token sid + product + state (double click / refresh must not charge twice; a declined offer
+ * must not block the coach downsell). Stripe replays the first result of a key, failures included, for 24h,
+ * so every retry after a failed payment needs a new key: `attempt` is the number of failed attempts so far.
+ */
+export function funnelChargeIdempotencyKey(
+  sid: string,
+  product: string,
+  state: FunnelUpsellState,
+  attempt = 0,
+): string {
+  const base = `funnel_ch_${sid}_${product}_${state}`
+  return (attempt > 0 ? `${base}_a${attempt}` : base).slice(0, 255)
 }
 
 export function funnelSubscribeIdempotencyKey(sid: string, plan: FunnelPlan): string {
