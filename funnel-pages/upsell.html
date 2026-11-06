@@ -35,12 +35,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!--
   DEV NOTES — шаги 3–5 из 6, один шаблон.
-  - ?step=prompts | planners | coach (порядок 9 → 5 → 19). Контент и цены — в OFFERS ниже.
+  - Порядок: ?step=prompts (шаг 3) → planners (4) → coach (5) → онбординг. Контент и цены — в OFFERS ниже.
+  - Цена: НЕ в заголовке и НЕ рядом с кнопкой — мелкой строкой внизу карточки товара (первый экран)
+    и сумма списания в тексте согласия внизу (обязательно оставить: one-click списание с сохранённой карты).
   - Структура как у конкурента: компактная карточка товара → "What you get" → "Why it's worth it" → нижний блок с кнопкой и отказом.
-  - Отказ (No thanks) только внизу → модалка с даунселлом (ниже цена) → принять: списание по цене downsell → next; отказаться (No thanks / Esc / фон) → next.
-  - ?state=downsell (старые ссылки): страница сразу в состоянии downsell, No thanks → next, без модалки.
-  - "Add" → POST /api/funnel/charge {token, product, state, price} → PaymentIntent off_session, confirm:true,
-    idempotency_key = sid+product+price. 3DS: stripe.handleNextAction + повторный POST.
+  - Отказ (No thanks): на промптах и планерах — сразу на следующий шаг, без даунсела.
+    Даунсел только один — поп-ап на последнем апсейле (coach, $12.95): «Continue» → charge state=downsell, «No thanks» → онбординг.
+  - Кнопка "Continue" → POST /api/funnel/charge {token, product, state} → PaymentIntent off_session, confirm:true,
+    idempotency_key = token+product+state. 3DS: stripe.handleNextAction.
   - Если продукт уже есть у пользователя — сразу редирект на next.
   - preview:true — только для просмотра без бэкенда (кнопки просто ведут дальше).
 -->
@@ -162,20 +164,49 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 .pgrid figcaption span{display:block;font-weight:500;color:var(--muted)}
 @media (max-width:560px){.feat4{grid-template-columns:repeat(2,1fr)}.dark3{grid-template-columns:1fr}.vs2{grid-template-columns:1fr}.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.coachhero img{width:110px}.seal{width:76px;height:76px}.seal b{font-size:18px}}
 @media (max-width:560px){.steps li+li{margin-left:12px}.steps li+li:before{width:12px}}
-.modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,51,.55)}
+.consent{border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;background:#fff;display:grid;gap:12px;margin-top:28px;text-align:left}
+.consent .ck{color:var(--muted);font-size:13px}
+.consent .ck input{flex:none;width:20px;height:20px;margin-top:1px;accent-color:var(--green)}
+.consent a{color:var(--blue);text-decoration:underline}
+.consent .prov{font-size:13px;color:var(--muted)}
+.consent .prov b{color:var(--ink)}
+.consent.need{border-color:var(--red);box-shadow:0 0 0 3px #FDF1F1}
+.copy{text-align:center;font-size:13px;color:var(--muted);margin:18px 0 8px}
+.whyprice{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
+.whyprice s{opacity:.75}.whyprice span{color:var(--ink);font-weight:600}
+/* первый экран: заголовок → карточка с ценой → «что вы получите», всё компактно */
+.hero{padding-top:18px}
+.hero h1{margin:12px 0 6px;font-size:clamp(26px,4.4vw,36px)}
+.hero p{font-size:15px}
+.pcard{margin-top:16px}
+.pitems{padding:10px;gap:6px}
+.pitem{padding:9px 12px}
+.pitem .ico{width:34px;height:34px;font-size:16px}
+.pitem b{font-size:14.5px}.pitem span{font-size:12.5px}
+.pprice{padding:8px 16px;background:#fff}
+.pprice s{font-size:12px;color:#9AA1B5}
+.pprice b{font-size:13px;font-weight:600;color:var(--muted)}
+.pprice .save{font-size:11.5px;padding:0;background:none;border:0;color:#9AA1B5;font-weight:500}
+.h2c{margin:20px 0 10px}
+.gets2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.gets2 div{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff}
+.gets2 b{display:block;font-size:14px;line-height:1.3}
+.gets2 span{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+@media (max-width:560px){.gets2{grid-template-columns:1fr}.gets2 div{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.gets2 span{margin:0;text-align:right}}
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,51,.55)}
 .modal.open{display:flex}
-.box{background:#fff;border-radius:var(--r-lg);max-width:440px;width:100%;padding:30px 26px 22px;animation:pop .25s ease-out;text-align:center}
-@keyframes pop{from{transform:scale(.94);opacity:0}}
-.box .tag{display:inline-block;background:var(--sun-soft);color:#8A5A00;font-weight:700;font-size:12px;border-radius:999px;padding:5px 12px;margin-bottom:12px}
-.box h3{font-size:26px;margin-bottom:6px}
-.box .lead{color:var(--muted);margin-bottom:16px}
-.box ul{list-style:none;display:grid;gap:8px;margin:0 0 16px;text-align:left}
-.box li:before{content:"✓ ";color:var(--green);font-weight:800}
-.box .t{font-size:14px;margin-bottom:16px}
-.dsprice{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 16px}
-.dsprice s{color:var(--muted);font-size:16px}
-.dsprice b{font-size:28px;color:var(--green);font-weight:800}
-.box .no{margin-top:14px}
+.modal .box{background:#fff;border-radius:24px;max-width:460px;width:100%;padding:28px 24px 20px;text-align:center;box-shadow:0 30px 60px -20px rgba(15,23,51,.5);animation:pop .22s ease-out}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.modal .tag{display:inline-block;background:var(--sun-soft);color:#7A5200;font-weight:700;font-size:13px;border-radius:999px;padding:6px 12px}
+.modal h3{font-size:26px;line-height:1.2;font-weight:800;margin:14px 0 8px;text-wrap:balance}
+.modal .lead{color:var(--muted);font-size:15px}
+.modal .pr{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px 0 18px;flex-wrap:wrap}
+.modal .pr s{color:var(--muted);font-size:18px}
+.modal .pr b{font-size:34px;font-weight:800;color:var(--green)}
+.modal .pr span{background:var(--green-soft);color:#11744C;font-weight:700;font-size:13px;border-radius:999px;padding:5px 12px}
+.modal .btn{width:100%}
+.modal .t{font-size:12px;color:var(--muted);margin-top:10px}
+.modal .no{margin-top:6px}
 </style>
 </head>
 <body>
@@ -190,16 +221,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div></div>
 <div class="alert" id="alert"></div>
 <main class="wrap" id="app"></main>
-<div class="sticky"><button class="btn" data-buy>Add →</button></div>
-<div class="modal" id="dsModal" role="dialog" aria-modal="true" aria-labelledby="ds-title">
+<div class="sticky"><button class="btn" data-buy>Continue →</button></div>
+<div class="modal" id="ds" role="dialog" aria-modal="true" aria-labelledby="ds-h">
   <div class="box">
-    <span class="tag" id="ds-tag"></span>
-    <h3 id="ds-title"></h3>
-    <p class="lead" id="ds-sub"></p>
-    <div class="dsprice" id="ds-price"></div>
-    <button class="btn" id="ds-buy" type="button">Add →</button>
-    <p class="err" id="ds-err" role="alert"></p>
-    <button class="no" id="ds-no" type="button">No thanks</button>
+    <span class="tag"></span>
+    <h3 id="ds-h"></h3>
+    <p class="lead"></p>
+    <div class="pr"></div>
+    <button class="btn" data-buy>Continue →</button>
+    <p class="t"></p>
+    <p class="err" role="alert"></p>
+    <button class="no" id="ds-no">No thanks</button>
   </div>
 </div>
 
@@ -209,7 +241,8 @@ window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false };
 
 const OFFERS = {
   coach: {
-    step:5, product:'mindora_coach', next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/onboard',
+    step:5, product:'mindora_coach',
+    next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/onboard',
     lead:'Most people stall in the first few days of a challenge — not because it\'s hard, but because no one tells them what to do next. Mindora checks in after every lesson, builds a 15-minute action plan around your goal and keeps your streak alive.',
     visual:`<div class="coachhero"><img src="/funnel-assets/owl.png" alt="Mindora, your AI coach"><div class="bubble">“Let's turn today's lesson into real progress.”</div></div>
       <div class="feat4"><div><i>🎯</i>Personalised to you</div><div><i>💡</i>Remembers your progress</div><div><i>🛡️</i>Keeps you accountable</div><div><i>🕐</i>Available 24/7</div></div>`,
@@ -236,7 +269,7 @@ const OFFERS = {
     why:['Access forever — no monthly payments','Built on top of the lessons you already have','Generic AI waits for questions — Mindora guides you','Activates instantly in your account']
   },
   prompts: {
-    step:3, product:'prompt_library', next:'/account/upsell?step=planners',
+    step:3, product:'prompt_library', next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/upsell?step=planners',
     lead:'Your starter pack covers the basics. The full library covers everything else: sales emails, content calendars, business plans, study notes, job applications — 28,000+ tested prompts you copy, paste and get results from in seconds.',
     visual:`<div class="visual wide"><img src="/funnel-assets/prompt-books.jpg" alt="7 Mindora prompt guides and the 28,000+ prompt library"></div>
       <div class="works"><span>Works instantly with</span><b>Claude</b><b>ChatGPT</b><b>Gemini</b><span>&amp; every other AI</span></div>`,
@@ -247,9 +280,7 @@ const OFFERS = {
     offer:{was:'39.95', price:'9.97', alert:'New-member price — only on this page.',
       badge:'🎁 One-time offer', h1:'You\'ve got 1,000 prompts. Add the other 27,000',
       sub:'The full library and 7 PDF guides. One charge to your saved card — no need to enter details again.'},
-    downsell:{was:'9.97', price:'6.97', alert:'Last chance — the lowest price for the full library.',
-      badge:'⚡ Discounted offer', h1:'Last chance: the full library for $6.97',
-      sub:'All 28,000+ prompts and 7 PDF guides at the lowest price we offer. One charge to your saved card.'},
+    
     gets:[
       ['28,000+ prompt library','Copy-paste ready','Find the right prompt for any task in seconds — work, content, business, study. Works with ChatGPT, Claude and Gemini.'],
       ['7 expert PDF guides','Read once, use forever','The Side Hustle Playbook, Content Creation Library, Sales & Marketing System, Digital Product Launch Guide and more.'],
@@ -261,9 +292,9 @@ const OFFERS = {
     why:['Access forever — no monthly payments','Your 1,000 starter prompts are included','Works with every AI chat tool','Appears in your account instantly']
   },
   planners: {
-    step:4, product:'planners_bundle',
+    step:4, product:'planners_bundle', next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/upsell?step=coach',
     lead:'Learning is half the work. These 10 planners turn what you learn into a plan for your day, your goals and your money — print a page or fill it in on screen, as often as you like.',
-    next:(window.FUNNEL && FUNNEL.nextUrl) || '/account/upsell?step=coach',
+    
     visual:`<div class="visual wide fan"><img src="/funnel-assets/planners-fan.jpg" alt="All 10 Mindora planners"><div class="seal"><b>10</b>planners<b>289</b>pages</div></div>`,
     items:[
       ['🎯','Productivity & Focus','4 printable planners · Forever'],
@@ -272,9 +303,7 @@ const OFFERS = {
     offer:{was:'29.50', price:'4.95', alert:'New-member bundle — only on this page.',
       badge:'🎁 One-time offer', h1:'Add all 10 planners for less than two',
       sub:'289 printable pages to plan your days, beat procrastination and turn goals into action. One charge to your saved card.'},
-    downsell:{was:'4.95', price:'2.95', alert:'Last chance — all 10 for the price of one.',
-      badge:'⚡ Discounted offer', h1:'All 10 planners for the price of one — $2.95',
-      sub:'The whole set for what a single planner costs later. One charge to your saved card.'},
+    
     gets:[
       ['Productivity & Focus','4 planners','Let\'s Get Productive, Deep Focus at Work, Distraction Free and Overcoming Lazy Days.'],
       ['Purpose & Direction','3 planners','Dream Bigger, Live With Purpose and the Find Your Passion Workbook.'],
@@ -295,7 +324,7 @@ const OFFERS = {
       </div>
       <h2>Print it or fill it in on screen</h2>
       <div class="visual wide"><img src="/funnel-assets/planners.jpg" alt="Printed Mindora planners on a desk"></div>`,
-    why:['Yours to keep — no subscription','Print as often as you like, or fill in on screen','Bought separately later: $2.95 each','Lands in your account as PDFs instantly']
+    why:['Yours to keep forever','Print as often as you like, or fill in on screen','Bought separately later: $2.95 each','Lands in your account as PDFs instantly']
   }
 };
 
@@ -306,7 +335,8 @@ addEventListener('load', toTop); addEventListener('pageshow', toTop);
 const qs = new URLSearchParams(location.search);
 const key = OFFERS[qs.get('step')] ? qs.get('step') : 'prompts';
 const O = OFFERS[key];
-let state = qs.get('state') === 'downsell' ? 'downsell' : 'offer';
+let state = 'offer'; /* страница всегда показывает основной оффер; даунсел — только поп-ап на последнем апсейле (coach) */
+const openPopup = qs.get('state') === 'downsell' && key === 'coach';
 
 /* DEV: в продакшене сервер отдаёт FUNNEL.kit */
 const KIT = qs.get('kit') || (window.FUNNEL && FUNNEL.kit) || (()=>{ try { return sessionStorage.getItem('mindora_kit'); } catch(e){ return null; } })() || 'guide';
@@ -322,30 +352,33 @@ document.querySelectorAll('#steps li').forEach((li,i) => {
 document.getElementById('steps').setAttribute('aria-label','Step ' + STEP + ' of ' + TOTAL);
 
 function card(S){
-  const save = (S.was - S.price).toFixed(2).replace(/\.00$/,'');
   return `<div class="pcard"><div class="pitems">${O.items.map(i => `<div class="pitem"><div class="ico">${i[0]}</div><div><b>${i[1]}</b><span>${i[2]}</span></div></div>`).join('')}</div>
-    <div class="pprice"><div class="pr"><s>$${S.was}</s><b>$${S.price}</b></div><span class="save">−$${save} saved</span></div></div>`;
+    <div class="pprice"><div class="pr"><s>$${S.was}</s><b>$${S.price}</b></div><span class="save">−$${(S.was - S.price).toFixed(2).replace(/\.00$/,'')} saved</span></div></div>`;
 }
 function render(){
   const S = O[state];
   document.body.classList.toggle('downsell', state === 'downsell');
   document.getElementById('alert').textContent = S.alert;
   document.getElementById('app').innerHTML = `
-    <section class="hero"><span class="badge">${S.badge}</span><h1>${S.h1}</h1><p>${S.sub}</p><p class="softprice">Today <s>$${S.was}</s> <b>$${S.price}</b> · one-time, not a subscription</p></section>
+    <section class="hero"><span class="badge">${S.badge}</span><h1>${S.h1}</h1><p>${S.sub}</p></section>
+    ${card(S)}
+    <h2 class="h2c">What you get</h2>
+    <div class="gets2">${O.gets.map(g => `<div><b>${g[0]}</b><span>${g[1]}</span></div>`).join('')}</div>
     ${O.visual}
     <p class="lead2">${O.lead}</p>
-    ${card(S)}
-    <h2>What you get</h2>
     <div class="gets">${O.gets.map(g => `<div class="get"><div class="hd"><b>${g[0]}</b><span>${g[1]}</span></div><p>${g[2]}</p></div>`).join('')}</div>
     ${O.extra.replace('__P__', S.price)}
     <div class="why"><b>Why it's worth it</b><ul>${O.why.map(w => `<li>${w}</li>`).join('')}</ul></div>
     <div class="bottom" id="bottom">
       <div class="pay"><span>stripe</span><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>G Pay</span></div>
-      <p class="terms">One-time charge of $${S.price} to your saved card. Not a subscription.</p>
-      <div style="margin-top:16px"><button class="btn" data-buy>Add →</button></div>
+      <div style="margin-top:16px"><button class="btn" data-buy>Continue →</button></div>
       <p class="err" role="alert"></p>
       <button class="no" data-no>No thanks</button>
-    </div>`;
+    </div>
+    <div class="consent">
+      <p class="prov"><b>Service provider:</b> Scalion Ltd · Company No. 17157142 · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · <a href="mailto:support@mindoraacademy.com">support@mindoraacademy.com</a></p>
+    </div>
+    <p class="copy">© 2026 Scalion Ltd · Mindora Academy</p>`;
   watchBottom();
   bind(); toTop();
 }
@@ -360,31 +393,30 @@ function bind(){
   document.querySelectorAll('[data-no]').forEach(b => b.onclick = decline);
 }
 function go(url){ window.mindoraGo(url); }
-function openDownsell(){
-  const S = O.downsell, save = (S.was - S.price).toFixed(2).replace(/\.00$/,'');
-  document.getElementById('ds-tag').textContent = S.badge;
-  document.getElementById('ds-title').textContent = S.h1;
-  document.getElementById('ds-sub').textContent = S.alert;
-  document.getElementById('ds-price').innerHTML = `<s>$${S.was}</s><b>$${S.price}</b><span class="save">−$${save} saved</span>`;
-  const err = document.getElementById('ds-err'); err.style.display = 'none'; err.textContent = '';
-  document.getElementById('ds-buy').disabled = false;
-  document.getElementById('dsModal').classList.add('open');
-  document.getElementById('ds-buy').focus();
-}
-function closeDownsell(){ document.getElementById('dsModal').classList.remove('open'); }
-function declineDownsell(){ closeDownsell(); go(O.next); }
 function decline(){
-  if (state === 'offer') openDownsell();
-  else go(O.next);
+  if (key === 'coach' && state === 'offer') { showPopup(); return; }
+  go(O.next);
 }
+/* единственный даунсел — поп-ап на последнем апсейле (AI-коуч) */
+function showPopup(){
+  const D = O.downsell, m = document.getElementById('ds');
+  m.querySelector('.tag').textContent = D.badge;
+  m.querySelector('h3').textContent = D.h1;
+  m.querySelector('.lead').textContent = D.alert;
+  m.querySelector('.pr').innerHTML = `<s>$${D.was}</s><b>$${D.price}</b><span>−$${(D.was - D.price).toFixed(2).replace(/\.00$/,'')} saved</span>`;
+  m.querySelector('.t').textContent = `One-time charge of $${D.price} to your saved card.`;
+  state = 'downsell'; m.classList.add('open'); m.querySelector('[data-buy]').focus();
+}
+function closePopup(){ document.getElementById('ds').classList.remove('open'); state = 'offer'; }
 function remember(){ try { const k='mindora_owned', l=JSON.parse(sessionStorage.getItem(k)||'[]'), n=({mindora_coach:'Mindora AI coach', prompt_library:'Full Prompt Library (28,000+)', planners_bundle:'10 planners bundle'})[O.product]; if(!l.includes(n)) l.push(n); sessionStorage.setItem(k, JSON.stringify(l)); } catch(e) {} }
 function mindoraStripe() {
   if (!FUNNEL.stripePublishableKey || typeof Stripe === 'undefined') return null;
   if (!window.__mindoraStripe) window.__mindoraStripe = Stripe(FUNNEL.stripePublishableKey);
   return window.__mindoraStripe;
 }
-async function funnelCharge(price, chargeState = state) {
-  const body = { token: FUNNEL.token, product: O.product, state: chargeState, price };
+async function funnelCharge(chargeState) {
+  const lang = (window.MindoraI18n && MindoraI18n.lang) || 'en';
+  const body = { token: FUNNEL.token, product: O.product, state: chargeState, price: O[chargeState].price, lang };
   let r = await fetch('/api/funnel/charge', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   let d = await r.json();
   if (d.requires_action && d.client_secret) {
@@ -400,45 +432,31 @@ async function funnelCharge(price, chargeState = state) {
   return d;
 }
 async function buy(btn){
-  const S = O[state];
+  const err = (btn.closest('.modal') || document).querySelector('.err');
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true);
   try {
-    const d = await funnelCharge(S.price);
+    const d = await funnelCharge(state);
     remember();
     go(d.nextUrl || O.next);
   } catch(e) {
-    if (FUNNEL.preview) remember();
-    /* отказ карты (в т.ч. нехватка средств): без текста ошибки сразу на следующий шаг, как в OTO */
-    go(O.next);
+    if (FUNNEL.preview) { remember(); go(O.next); return; }
+    if (err) { err.textContent = (e.message || 'Something went wrong') + '. Try again or skip this offer.'; err.style.display = 'block'; }
+    document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
   }
 }
-async function buyDownsell(){
-  const btn = document.getElementById('ds-buy'), err = document.getElementById('ds-err');
-  btn.disabled = true; err.style.display = 'none';
-  try {
-    const d = await funnelCharge(O.downsell.price, 'downsell');
-    remember();
-    go(d.nextUrl || O.next);
-  } catch(e) {
-    if (FUNNEL.preview) remember();
-    closeDownsell();
-    go(O.next);
-  }
-}
-document.getElementById('ds-buy').addEventListener('click', buyDownsell);
-document.getElementById('ds-no').addEventListener('click', declineDownsell);
-document.getElementById('dsModal').addEventListener('click', e => { if (e.target.id === 'dsModal') declineDownsell(); });
-addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElementById('dsModal').classList.contains('open')) declineDownsell(); });
-/* возврат кнопкой «Назад» из bfcache: страница возвращается с заблокированными кнопками и открытой модалкой */
+/* возврат кнопкой «Назад» из bfcache: страница возвращается с заблокированными кнопками */
 addEventListener('pageshow', e => {
   if (!e.persisted) return;
   document.documentElement.style.opacity = '';
-  closeDownsell();
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
 });
 render();
+document.getElementById('ds-no').onclick = () => go(O.next);
+document.getElementById('ds').addEventListener('click', e => { if (e.target.id === 'ds') go(O.next); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElementById('ds').classList.contains('open')) go(O.next); });
+if (openPopup) showPopup();
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=5"></script>
+<script src="/funnel-assets/i18n.js?v=6"></script>
 </body>
 </html>

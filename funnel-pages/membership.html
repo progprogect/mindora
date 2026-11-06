@@ -29,16 +29,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })();
 </script>
 
-<title>Mindora Academy — Membership</title>
+<title>Mindora Academy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
 <!--
-  DEV NOTES — /account/membership (шаг 2 из 6, сразу после оплаты $1)
-  - Структура как у конкурента: длинная страница + липкая кнопка Continue; отказ только внизу.
-  - Continue → POST /api/funnel/subscribe {plan:'monthly_4999'|'main'|…} → Stripe Subscription, trial_period_days: 3 (первое списание на 4-й день).
-    Сохранить consent_text (текст из .legal), время, IP, UA. 3DS: stripe.handleNextAction + повторный POST.
+  DEV NOTES — /account/membership (шаг 2 из 6, сразу после оплаты $1) — версия 2
+  - Слова «membership / подписка» на странице не используются — продукт называется «Mindora Academy», без приставки.
+    Условия (3 дня бесплатно → $49.99 в месяц автоматически до отмены) остаются: в FAQ, в модалке даунсела и над кнопкой внизу (.legal) — это требование Stripe/банков.
+  - Длинная страница + липкая кнопка «Продолжить»; отказ только внизу.
+  - Continue → POST /api/funnel/subscribe {plan:'monthly_4999'} → Stripe Subscription, trial_period_days: 3 (первое списание на 4-й день).
+    Сохранить consent_text_version (текст из .legal внизу страницы), время, IP, UA.
   - No thanks (внизу) → модалка даунсела $29.99 → её "No thanks" → nextUrl.
   - window.FUNNEL.day8 и nextUrl отдаёт сервер. preview:true только для просмотра без бэкенда.
   - Картинки — в папке /funnel-assets/ (см. README).
@@ -91,7 +93,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .terms-line{text-align:center;font-size:14px;color:var(--ink);margin-top:14px}
 .blocks{display:grid;gap:12px;margin-top:32px}
 .block{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
-.block .ico{flex:none;width:44px;height:44px;border-radius:12px;background:var(--blue-soft);display:grid;place-items:center;font-size:20px}
+.block .ico{font-weight:800;color:var(--blue);flex:none;width:44px;height:44px;border-radius:12px;background:var(--blue-soft);display:grid;place-items:center;font-size:20px}
 .block b{display:block}.block span{color:var(--blue);font-size:14px;font-weight:600}
 .note{text-align:center;color:var(--muted);margin-top:18px}
 
@@ -151,10 +153,6 @@ details p{color:var(--muted);margin-top:8px}
 .final{max-width:520px;margin:28px auto 0}
 .legal{max-width:640px;margin:36px auto 0;font-size:12.5px;color:var(--muted);text-align:center}
 .no{display:block;margin:18px auto 0;background:none;border:0;color:var(--muted);font:500 14px 'Plus Jakarta Sans',sans-serif;text-decoration:underline;cursor:pointer}
-.agree{display:flex;gap:10px;align-items:flex-start;max-width:640px;margin:22px auto 0;padding:12px 14px;border:1px solid #e5e7eb;border-radius:12px;font-size:12.5px;color:var(--muted);text-align:left;cursor:pointer}
-.agree input{margin-top:2px;width:16px;height:16px;flex:none;accent-color:#2D5BE3}
-.agree a{color:#2D5BE3;text-decoration:underline}
-.provider{max-width:640px;margin:10px auto 0;font-size:12px;color:var(--muted);text-align:center}
 .err{display:none;color:var(--red);font-size:14px;text-align:center;margin-top:10px}
 
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:14px 20px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 35%)}
@@ -248,6 +246,69 @@ details p{color:var(--muted);margin-top:8px}
 .mc-seal div{width:8.6cqw;height:8.6cqw;border-radius:50%;background:#2D5BE3;display:grid;place-items:center}
 .mc-seal img{width:6cqw}
 .mc-ribbon{position:absolute;bottom:-3.4cqw;left:50%;width:7cqw;height:5cqw;transform:translateX(-50%);z-index:-1;background:linear-gradient(90deg,#2147C2 0 48%,transparent 48% 52%,#2D5BE3 52%);clip-path:polygon(0 0,100% 0,100% 100%,75% 75%,50% 100%,25% 75%,0 100%)}
+
+/* v2 */
+.alert{background:#FFF6DD;border-bottom:1px solid #F2D58A;text-align:center;padding:10px 20px}
+.alert b{display:block;color:#7A5200;font-size:14px}
+.alert span{display:block;font-size:14px;font-weight:700;margin-top:2px}
+.hero .cta1{max-width:480px;margin:30px auto 0}
+.eyebrow{display:block;text-align:center;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--blue);margin-bottom:10px;text-transform:uppercase}
+.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:32px}
+.vid{position:relative;aspect-ratio:9/13;border-radius:var(--r-lg);overflow:hidden;background:var(--bg);border:1px solid var(--line)}
+.vid video,.vid img{width:100%;height:100%;object-fit:cover;display:block}
+.vid .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px;padding:16px}
+.vid .ph i{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#fff;box-shadow:0 6px 16px rgba(15,23,51,.15);font-style:normal;font-size:18px;color:var(--ink);margin:0 auto 10px}
+.revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:32px}
+.revc{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:#fff}
+.revc p{font-size:15px}.revc footer{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:14px}
+.revc footer i{width:32px;height:32px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-style:normal;font-weight:800}
+.revc footer span{display:block;color:var(--muted);font-size:12px}
+.ph-card{border:2px dashed var(--line);color:var(--muted);text-align:center;display:grid;place-items:center;min-height:150px;font-size:14px}
+.vrow s{color:var(--muted);font-weight:600;text-decoration-color:var(--red)}
+.vall small{display:block;color:var(--muted);font-weight:600;margin:2px 0 10px}
+.vall .free{display:block;border-top:1px solid #C9D6FA;padding-top:12px;margin-top:4px;font-weight:800}
+.risk{max-width:620px;margin:0 auto;text-align:center;border:2px solid var(--green);background:var(--green-soft);border-radius:var(--r-lg);padding:32px 26px}
+.risk .ic{font-size:40px}
+.risk h2{margin:8px 0 10px}
+.risk p{font-size:17px}
+.risk .ok{color:#11744C;font-weight:800;margin-top:14px}
+.later{background:var(--ink);color:#fff;text-align:center}
+.later h2{color:#fff}.later h2 span{color:#8FB0FF}
+.later p{color:#B9C1DB;max-width:620px;margin:0 auto}
+.faq{max-width:720px;margin:28px auto 0}
+.rate{text-align:center;margin-top:22px;font-weight:800}
+.rate span{display:block;font-weight:600;color:var(--muted);font-size:14px;margin-top:2px}.rate em{font-style:normal;color:#F5B100;letter-spacing:2px}
+.foot{border-top:1px solid var(--line);padding:40px 0 30px;font-size:14px;color:var(--muted)}
+.foot .wrap{display:grid;gap:14px}
+.foot .links a{color:var(--muted);margin-right:16px}
+.foot .pays{display:flex;gap:8px;flex-wrap:wrap}.foot .pays span{border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:700;color:var(--ink)}
+.foot .terms{color:var(--ink);font-weight:600}
+@media (max-width:720px){.vids,.revs{grid-template-columns:1fr 1fr}.vid:nth-child(n+5){display:none}}
+.wk-note{margin:22px 0 0}
+.mc-meta span,.mc-sig span{white-space:nowrap}
+.hero .hook .hl{color:var(--blue);font-style:normal}
+.consent{border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;background:#fff;display:grid;gap:12px}
+.consent .ck{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:14px;cursor:pointer}
+.consent .ck input{flex:none;width:20px;height:20px;margin-top:1px;accent-color:var(--green)}
+.consent a{color:var(--blue);text-decoration:underline}
+.consent .prov{border-top:1px solid var(--line);padding-top:12px;font-size:13px}
+.consent .prov b{color:var(--ink)}
+.consent.need{border-color:var(--red);box-shadow:0 0 0 3px var(--red-soft)}
+.foot .copy{text-align:center;font-size:13px}
+/* certificate grows with its text instead of clipping it */
+.mc-sheet{aspect-ratio:auto;min-height:calc(100cqw / 1.414)}
+.mc-in{position:relative;inset:auto;min-height:calc(100cqw / 1.414);box-sizing:border-box;padding:6cqw 8cqw 5.5cqw}
+.mc-name{max-width:100%;overflow-wrap:anywhere}
+/* app screens as whole phones */
+.shots{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:860px;margin:32px auto 0}
+.shots img{aspect-ratio:390/800;object-fit:cover;border:7px solid #0F1733;border-radius:34px;box-shadow:0 24px 48px -24px rgba(15,23,51,.45);background:#F3F4F7}
+@media (max-width:720px){
+  .shots{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:28px -16px 0;padding:4px 16px 18px;scrollbar-width:none}
+  .shots::-webkit-scrollbar{display:none}
+  .shots img{flex:0 0 62%;min-width:0;width:62%;scroll-snap-align:center}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .stats div{padding:14px 6px}.stats b{font-size:20px}.stats span{font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -263,48 +324,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li class="done">✓</li><li class="now" aria-current="step">2</li><li>3</li><li>4</li><li>5</li><li>6</li>
   </ol>
 </div></div>
-<div class="paid" role="status">✓ Payment confirmed — your <span class="kitname">Claude AI Guide Kit</span> is in your account. One more step to finish setup.</div>
+<div class="alert" role="status"><b>⚠ Don't close this page! Finish setup to activate your access.</b><span>🎁 We've prepared a bonus just for you.</span></div>
 
+<!-- 1. HERO -->
 <section class="hero">
   <div class="wrap">
     <h1>New lessons every month, an AI coach and a plan built for you. Not another course — <span class="blue">a place where you keep growing.</span></h1>
-    <p><b>Mindora Academy PRO</b> — 5 learning paths, 40+ courses, daily challenges and certificates. What turns "I've heard of AI" into "I use AI every day".</p>
-    <p class="hook">You now own the Claude guide and 4 courses. Members get 44 courses across 5 paths — plus new ones every month.</p>
+    <p><b>Mindora Academy</b> — courses, step-by-step breakdowns, ready-made templates and a personal AI coach. What turns "I know about AI" into "I earn with AI".</p>
+    <p class="hook">While you're still deciding, others are already saving <b class="hl">10+ hours a week</b> and taking paid AI projects.</p>
     <div class="chips"><span>🤖 15 AI courses</span><span>🚀 11 business courses</span><span>🏆 Certificates</span><span>🔥 Streaks &amp; XP</span></div>
+    <div class="cta1"><button class="btn" data-buy="monthly_4999">Continue →</button></div>
   </div>
 </section>
-<div class="strip" aria-label="Courses inside the membership"><div class="strip-track"><img src="/funnel-assets/c-ai-7step.jpg" alt=""><img src="/funnel-assets/c-ai-m365.jpg" alt=""><img src="/funnel-assets/c-millionaire.jpg" alt=""><img src="/funnel-assets/c-highperf.jpg" alt=""><img src="/funnel-assets/c-deepwork.jpg" alt=""><img src="/funnel-assets/c-salary.jpg" alt=""><img src="/funnel-assets/c-mvp.jpg" alt=""><img src="/funnel-assets/c-offer.jpg" alt=""><img src="/funnel-assets/c-research.jpg" alt=""><img src="/funnel-assets/c-bizmodel.jpg" alt=""><img src="/funnel-assets/c-execution.jpg" alt=""><img src="/funnel-assets/c-idea.jpg" alt=""><img src="/funnel-assets/c-positioning.jpg" alt=""><img src="/funnel-assets/c-leadership.jpg" alt=""><img src="/funnel-assets/c-stress.jpg" alt=""><img src="/funnel-assets/c-ai-7step.jpg" alt=""><img src="/funnel-assets/c-ai-m365.jpg" alt=""><img src="/funnel-assets/c-millionaire.jpg" alt=""><img src="/funnel-assets/c-highperf.jpg" alt=""><img src="/funnel-assets/c-deepwork.jpg" alt=""><img src="/funnel-assets/c-salary.jpg" alt=""><img src="/funnel-assets/c-mvp.jpg" alt=""><img src="/funnel-assets/c-offer.jpg" alt=""><img src="/funnel-assets/c-research.jpg" alt=""><img src="/funnel-assets/c-bizmodel.jpg" alt=""><img src="/funnel-assets/c-execution.jpg" alt=""><img src="/funnel-assets/c-idea.jpg" alt=""><img src="/funnel-assets/c-positioning.jpg" alt=""><img src="/funnel-assets/c-leadership.jpg" alt=""><img src="/funnel-assets/c-stress.jpg" alt=""></div></div>
+<div class="strip" aria-hidden="true"><div class="strip-track"><img src="/funnel-assets/c-ai-7step.jpg" alt=""><img src="/funnel-assets/c-ai-m365.jpg" alt=""><img src="/funnel-assets/c-millionaire.jpg" alt=""><img src="/funnel-assets/c-highperf.jpg" alt=""><img src="/funnel-assets/c-deepwork.jpg" alt=""><img src="/funnel-assets/c-salary.jpg" alt=""><img src="/funnel-assets/c-mvp.jpg" alt=""><img src="/funnel-assets/c-offer.jpg" alt=""><img src="/funnel-assets/c-research.jpg" alt=""><img src="/funnel-assets/c-bizmodel.jpg" alt=""><img src="/funnel-assets/c-execution.jpg" alt=""><img src="/funnel-assets/c-idea.jpg" alt=""><img src="/funnel-assets/c-positioning.jpg" alt=""><img src="/funnel-assets/c-leadership.jpg" alt=""><img src="/funnel-assets/c-stress.jpg" alt=""><img src="/funnel-assets/c-ai-7step.jpg" alt=""><img src="/funnel-assets/c-ai-m365.jpg" alt=""><img src="/funnel-assets/c-millionaire.jpg" alt=""><img src="/funnel-assets/c-highperf.jpg" alt=""><img src="/funnel-assets/c-deepwork.jpg" alt=""><img src="/funnel-assets/c-salary.jpg" alt=""><img src="/funnel-assets/c-mvp.jpg" alt=""><img src="/funnel-assets/c-offer.jpg" alt=""><img src="/funnel-assets/c-research.jpg" alt=""><img src="/funnel-assets/c-bizmodel.jpg" alt=""><img src="/funnel-assets/c-execution.jpg" alt=""><img src="/funnel-assets/c-idea.jpg" alt=""><img src="/funnel-assets/c-positioning.jpg" alt=""><img src="/funnel-assets/c-leadership.jpg" alt=""><img src="/funnel-assets/c-stress.jpg" alt=""></div></div>
 
-<!-- YOUR KIT vs MEMBERSHIP -->
-<section class="kitvs-sec">
-  <div class="wrap narrow">
-    <h2>You have the guide + 4 courses. <span class="blue">Unlock all 44.</span></h2>
-    <p class="sub">Your Claude AI Guide Kit is a great start. Membership opens everything else in Mindora Academy.</p>
-    <div class="kitvs">
-      <div class="kit">
-        <small>YOUR CLAUDE AI GUIDE KIT</small>
-        <b class="big">Guide + 4 courses</b>
-        <ul><li>The Complete Claude AI Guide</li><li>1,000+ prompts</li><li>Templates: work, business, family</li><li>Claude AI: Think Smarter, Work Faster</li><li>Master Claude for Excel</li><li>Prompt Engineering Mastery</li><li>7-Step AI Beginners Challenge</li></ul>
-      </div>
-      <div class="mem">
-        <small>WITH MEMBERSHIP</small>
-        <b class="big">44 courses <em>+ new every month</em></b>
-        <ul>
-          <li><b>Everything in your kit</b></li>
-          <li>28-Day AI Challenge</li>
-          <li>11 more AI courses — ChatGPT, Gemini, Automation, Content, Ads, Filmmaking…</li>
-          <li>11 Business courses</li>
-          <li>4 Career Growth courses</li>
-          <li>5 Success Mindset courses</li>
-          <li>9 Health &amp; Energy courses</li>
-          <li>Certificate for every course</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+<!-- 2. PAINS -->
 <section>
   <div class="wrap narrow">
     <h2>Sound familiar?</h2>
@@ -319,6 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- 4. SYSTEM -->
 <section>
   <div class="wrap narrow">
     <h2>You don't need another course.<br><span class="blue">You need a system.</span></h2>
@@ -330,10 +365,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="block"><div class="ico">💼</div><div><b>Turn skills into income</b><span>→ AI Side Hustle Accelerator, 48-Hour AI Digital Product Launch, 11 business courses</span></div></div>
       <div class="block"><div class="ico">🌱</div><div><b>A life that keeps up</b><span>→ Career, Mindset and Health paths for everything outside work</span></div></div>
     </div>
-    <p class="note">5 paths. 40+ courses. Each one covers a real need.</p>
+    <p class="note">5 paths. 44 courses. Each one covers a real need.</p>
   </div>
 </section>
 
+<!-- 5. 30 DAYS -->
 <section>
   <div class="wrap narrow">
     <h2>What changes in 30 days?</h2>
@@ -344,7 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Random tutorials, nothing sticks</li>
         <li>You start, then stop after a week</li>
         <li>You watch others use AI and feel behind</li></ul></div>
-      <div class="good"><h3>✓ With Mindora membership</h3><ul>
+      <div class="good"><h3>✓ With Mindora Academy</h3><ul>
         <li>You know which AI to open for which task</li>
         <li>Emails, reports and posts in minutes</li>
         <li>One clear path, 15 minutes a day</li>
@@ -354,8 +390,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- 6. FULL PROGRAM -->
 <section>
   <div class="wrap narrow">
+    <span class="eyebrow">Full program</span>
     <h2>Every path = <span class="blue">a real result</span></h2>
     <p class="sub">The full program you unlock today. New courses are added every month at no extra cost.</p>
     <div class="prog">
@@ -374,59 +412,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="showcase">
-  <div class="wrap">
-    <h2>Real courses. <span class="blue">Real results.</span></h2>
-    <p class="sub">Each one sells for $39–$59 on its own. As a member you get all of them.</p>
-    <div class="sgrid">
-      <figure><img src="/funnel-assets/c-ai-m365.jpg" alt=""><figcaption><b>Master AI for Microsoft 365</b><span>24 lessons · <s>$49</s> <em>Included</em></span></figcaption></figure>
-      <figure><img src="/funnel-assets/c-millionaire.jpg" alt=""><figcaption><b>Millionaire Mindset Masterclass</b><span>28 lessons · <s>$59</s> <em>Included</em></span></figcaption></figure>
-      <figure><img src="/funnel-assets/c-highperf.jpg" alt=""><figcaption><b>High Performance Accelerator</b><span>21 lessons · <s>$39</s> <em>Included</em></span></figcaption></figure>
-      <figure><img src="/funnel-assets/c-mvp.jpg" alt=""><figcaption><b>Build &amp; Test Your MVP</b><span>21 lessons · <s>$39</s> <em>Included</em></span></figcaption></figure>
-      <figure><img src="/funnel-assets/c-salary.jpg" alt=""><figcaption><b>Salary &amp; Promotion Playbook</b><span>21 lessons · <s>$39</s> <em>Included</em></span></figcaption></figure>
-      <figure><img src="/funnel-assets/c-stress.jpg" alt=""><figcaption><b>Managing Stress &amp; Building Resilience</b><span>21 lessons · <s>$39</s> <em>Included</em></span></figcaption></figure>
+<!-- 7. FIRST WEEK -->
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Your first week</span>
+    <h2>What the next 7 days <span class="blue">look like</span></h2>
+    <div class="blocks">
+      <div class="block"><div class="ico">1</div><div><b>Day 1 — your plan is ready</b><span>Pick your goal and start the 28-Day AI Challenge: what AI really is and how to use it</span></div></div>
+      <div class="block"><div class="ico">2</div><div><b>Day 2 — your first real task with AI</b><span>An email, a post or a report done in minutes instead of an hour</span></div></div>
+      <div class="block"><div class="ico">3</div><div><b>Day 3 — prompts that work the first time</b><span>Prompt Engineering Mastery: a simple formula for any task</span></div></div>
+      <div class="block"><div class="ico">5</div><div><b>Day 5 — AI in your daily tools</b><span>Claude for Excel, AI for PowerPoint and Microsoft 365</span></div></div>
+      <div class="block"><div class="ico">7</div><div><b>Day 7 — a 7-day streak and your first badge</b><span>You see your progress and choose your next path: business, career or mindset</span></div></div>
     </div>
+    <p class="sub wk-note">15 minutes a day is all it takes.</p>
   </div>
 </section>
 
-<section>
+<!-- 8. APP / PROOF -->
+<section class="showcase">
   <div class="wrap">
-    <h2>Join <span class="blue">100,000+ members</span> already learning</h2>
+    <h2>Join <span class="blue">100,000+ learners</span> already learning</h2>
     <p class="sub">This is what you open every morning.</p>
     <div class="stats">
-      <div><b>100,000+</b><span>members</span></div>
+      <div><b>100,000+</b><span>learners</span></div>
       <div><b>4.9/5</b><span>average rating</span></div>
       <div><b>5–15 min</b><span>per lesson</span></div>
     </div>
     <div class="shots">
-      <img src="/funnel-assets/app-dashboard.jpg" alt="Dashboard: Day 1 lesson ready">
-      <img src="/funnel-assets/app-home.jpg" alt="Home: streak, XP, paths, Ask Mindora">
-      <img src="/funnel-assets/app-path.jpg" alt="AI and Technology path with 15 courses">
+      <img src="/funnel-assets/phone-dashboard.jpg" alt="Dashboard: Day 1 lesson ready">
+      <img src="/funnel-assets/phone-home.jpg" alt="Home: streak, XP, paths, Ask Mindora">
+      <img src="/funnel-assets/phone-path.jpg" alt="AI and Technology path with 15 courses">
     </div>
   </div>
 </section>
 
+<!-- 10. CERTIFICATE -->
 <section>
   <div class="wrap narrow">
-    <h2>What would it take to <span style="color:var(--red)">piece this together</span> yourself?</h2>
-    <p class="sub">Separate AI courses, a business course, a career coach, a habit app — and still no single plan tying it together.</p>
-    <div class="value">
-      <div class="vrow"><b>AI tools course</b><span>15 courses ✓</span></div>
-      <div class="vrow"><b>Business course</b><span>11 courses ✓</span></div>
-      <div class="vrow"><b>Career &amp; mindset coaching</b><span>9 courses ✓</span></div>
-      <div class="vrow"><b>Health &amp; energy programme</b><span>9 courses ✓</span></div>
-      <div class="vrow"><b>Daily plan, streaks &amp; certificates</b><span>Included ✓</span></div>
-      <div class="vrow"><b>New courses every month</b><span>Included ✓</span></div>
-      <div class="vall"><b>All of it — in one membership</b><span>Try it all free for 3 days</span></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap narrow">
+    <span class="eyebrow">🏅 Official certificate</span>
     <h2>Finish a path — get a certificate</h2>
     <p class="sub" style="margin-bottom:32px">Every graduate gets a personal Mindora Academy certificate with a unique ID — ready for LinkedIn or your CV.</p>
-    <div class="mc" aria-label="Example Mindora Academy certificate">
+<div class="mc" aria-label="Example Mindora Academy certificate">
   <div class="mc-sheet">
     <img class="mc-wm" src="/funnel-assets/owl.png" alt="">
     <div class="mc-in">
@@ -446,20 +472,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+  
   </div>
 </section>
 
+<!-- 9. COST OF NOT STARTING -->
+<section class="vcost">
+  <div class="wrap narrow">
+    <h2>What would it cost to <span style="color:var(--red)">piece this together</span>?</h2>
+    <p class="sub">Each Mindora course sells for $39 on its own. Separately, the same program costs over $1,700.</p>
+    <div class="value">
+      <div class="vrow"><b>15 AI &amp; Technology courses</b><s>$585</s></div>
+      <div class="vrow"><b>11 Business courses</b><s>$429</s></div>
+      <div class="vrow"><b>9 Career &amp; Mindset courses</b><s>$351</s></div>
+      <div class="vrow"><b>9 Health &amp; Energy courses</b><s>$351</s></div>
+      <div class="vrow"><b>Personal plan, streaks &amp; certificates</b><s>Priceless</s></div>
+      <div class="vrow"><b>New courses every month</b><s>Priceless</s></div>
+      <div class="vall"><b>Everything — in Mindora Academy</b><small>Instead of $1,716+</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. A YEAR FROM NOW -->
+<section class="later">
+  <div class="wrap narrow">
+    <h2>A year from now you'll say:<br><span>"I wish I'd started today"</span></h2>
+    <p>People who use AI every day already save hours each week and get noticed at work. The gap grows every month.</p>
+  </div>
+</section>
+
+<!-- 11. RISK-FREE -->
+<section>
+  <div class="wrap">
+    <div class="risk">
+      <div class="ic">🛡️</div>
+      <h2>3 days free. Zero risk.</h2>
+      <p>Try the whole program for free. Take your first lessons. If it's not for you, just cancel before the trial ends — <b>no charge</b>, no questions asked.</p>
+      <p class="ok">Your card is already saved — nothing to enter.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 13. FAQ -->
 <section>
   <div class="wrap narrow">
-    <h2>Last questions</h2>
-    <details><summary>When will I be charged?</summary><p>Not today. You get 3 days free; the first $49.99 payment is on <span class="d8">day 4</span>, then monthly.</p></details>
-    <details><summary>How do I cancel?</summary><p>Account → Membership → Cancel. Two clicks. Cancel before <span class="d8">day 4</span> and you're never charged.</p></details>
-    <details><summary>Will I get a reminder?</summary><p>Yes — we email you 24 hours before your first payment.</p></details>
-    <details><summary>I'm a complete beginner. Is this for me?</summary><p>Yes. Every path starts from zero, and lessons take 5–15 minutes.</p></details>
-    <details><summary>Is there a refund?</summary><p>See our <a href="/refund">refund policy.</a></p></details>
+    <h2>Last doubts?</h2>
+    <div class="faq">
+      <details><summary>"I have no experience — can I do this?"</summary><p>Yes. Every path starts from zero, and lessons take 5–15 minutes.</p></details>
+      <details><summary>How does payment work?</summary><p>The first 3 days are free — try everything with zero risk. From <span class="d8">day 4</span> it's $49.99 a month from the card you used — less than two courses bought separately. Cancel anytime in your account in a couple of clicks.</p></details>
+      <details><summary>"Is this another empty course?"</summary><p>No. 44 courses in 5 paths, and every lesson ends with something you do today. New courses are added every month.</p></details>
+      <details><summary>"What if it doesn't work for me?"</summary><p>Cancel in your account before <span class="d8">day 4</span> — two clicks, and you're never charged.</p></details>
+      <details><summary>"How much time do I need?"</summary><p>15 minutes a day is enough. Your plan adapts to your pace.</p></details>
+      <details><summary>"AI will replace everyone soon — why learn?"</summary><p>AI replaces tasks, not people who know how to use it. That's exactly the skill you build here.</p></details>
+      <details><summary>Is there a refund?</summary><p>See our <a href="/refund">refund policy</a>.</p></details>
+    </div>
   </div>
 </section>
 
+<!-- 14. TWO OPTIONS -->
 <section>
   <div class="wrap narrow">
     <h2>You have two options</h2>
@@ -471,17 +541,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="btn" data-buy="monthly_4999">Continue →</button>
       <p class="err" role="alert"></p>
     </div>
-    <p class="legal">By clicking "Continue" you start a Mindora Academy PRO with a 3-day free trial. Nothing is charged today. Your first payment of $49.99 is taken on <span class="d8">day 4</span> from the card you used, then every month until you cancel. Cancel anytime in your account; cancel before <span class="d8">day 4</span> and you are never charged. <a href="/terms">Terms</a> · <a href="/refund">Refund policy</a></p>
-    <label class="agree"><input type="checkbox" id="agree" checked><span>By clicking "Continue", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a> and <a href="/cookie-policy">Cookie Policy</a>.</span></label>
-    <p class="provider"><b>Service provider:</b> Scalion Ltd · Company · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · support@mindoraacademy.com</p>
+    <p class="rate">3 days free<span><em>★★★★★</em> 4.9/5 from learners</span></p>
+    <p class="legal">By clicking "Continue" you start full access to Mindora Academy with a 3-day free trial. Nothing is charged today. On <span class="d8">day 4</span>, $49.99 is charged automatically from the card you used, then every month until you cancel. Cancel anytime in your account; cancel before <span class="d8">day 4</span> and you are never charged. <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/refund">Refund policy</a></p>
     <button class="no" data-decline>No thanks</button>
   </div>
 </section>
 
+<footer class="foot"><div class="wrap">
+  <span class="logo"><img src="/funnel-assets/owl.png" alt="">Mindora academy</span>
+  <div class="links"><a href="/terms">Terms</a><a href="/privacy">Privacy</a><a href="/refund">Refund policy</a><a href="/contact">Contact</a></div>
+  <div class="pays"><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span></div>
+  <div class="consent">
+    <label class="ck"><input type="checkbox" id="agree" checked><span>By clicking "Continue", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a>, <a href="/refund">Refund Policy</a> and <a href="/cookies">Cookie Policy</a>.</span></label>
+    <p class="prov"><b>Service provider:</b> Scalion Ltd · Company No. 17157142 · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · <a href="mailto:support@mindoraacademy.com">support@mindoraacademy.com</a></p>
+  </div>
+  <p class="copy">© 2026 Scalion Ltd · Mindora Academy</p>
+</div></footer>
+
 <div class="sticky">
   <button class="btn" data-buy="monthly_4999">Continue →</button>
 </div>
-
 <div class="modal" id="downsell" role="dialog" aria-modal="true" aria-labelledby="ds-title">
   <div class="box">
     <span class="tag">⚡ Special offer</span>
@@ -511,41 +590,16 @@ window.FUNNEL = window.FUNNEL || {
 /* после редиректа со Stripe всегда открываем страницу сверху */
 try { history.scrollRestoration = 'manual'; } catch(e) {}
 scrollTo(0,0); addEventListener('load', () => scrollTo(0,0)); addEventListener('pageshow', () => scrollTo(0,0));
-/* тексты под набор, купленный на лендинге (guide | starter). DEV: в бою брать из заказа */
+/* тексты под продукт, купленный за $1. DEV: в бою kit = FUNNEL.kit */
 (() => {
   let kit = (window.FUNNEL && FUNNEL.kit) || 'guide'; /* DEV: сервер отдаёт FUNNEL.kit = 'guide' | 'starter' по заказу $1 */
   const set = (sel, html) => { const el = document.querySelector(sel); if (el) el.innerHTML = html; };
-  /* воронка 3: за $1 куплен план из квиза */
-  const QZ = {
-    challenge:{name:'28-Day AI Plan', hook:'You now own your 28-Day AI Plan. Members get 44 courses across 5 paths — plus new ones every month.',
-      h2:'You have your 28-day plan. <span class="blue">Unlock all 44 courses.</span>', sub:'Your 28-Day AI Plan is a great start. Membership opens everything else in Mindora Academy.',
-      kit:'<small>YOUR 28-DAY AI PLAN</small><b class="big">28 daily lessons</b><ul><li>Personal plan for your goal</li><li>One AI tool a day, 10 min/day</li><li>ChatGPT, Claude, Canva, Midjourney and more</li><li>Certificate of completion</li></ul>',
-      li2:'15 AI courses — ChatGPT, Claude, Gemini, Prompt Engineering, Automation…',
-      opt:'Close this page. Keep your 28-day plan — and miss the other 43 courses and every new course.'},
-    claudecert:{name:'Claude AI Learning Plan', hook:'You now own your Claude AI Learning Plan. Members get 44 courses across 5 paths — plus new ones every month.',
-      h2:'You have your Claude plan. <span class="blue">Unlock all 44 courses.</span>', sub:'Your Claude AI Learning Plan is a great start. Membership opens everything else in Mindora Academy.',
-      kit:'<small>YOUR CLAUDE AI LEARNING PLAN</small><b class="big">7-day course + certificate</b><ul><li>7-day Claude AI mastery course</li><li>50+ lessons &amp; real-world exercises</li><li>Certificate of Mastery</li><li>Prompts &amp; templates</li></ul>',
-      li2:'28-Day AI Challenge + 14 more AI courses — ChatGPT, Gemini, Automation…',
-      opt:'Close this page. Keep your Claude plan — and miss the other 43 courses, the 28-Day AI Challenge and every new course.'}
+  const K = {
+    starter: {opt:'Close this page. Keep your 6 courses — and miss the other 38, the 28-Day AI Challenge and every new course.'},
+    challenge: {opt:'Close this page. Keep your 28-day plan — and miss the other 43 courses and every new course.'},
+    claudecert: {opt:'Close this page. Keep your Claude plan — and miss the other 43 courses, the 28-Day AI Challenge and every new course.'}
   };
-  if (QZ[kit]) {
-    const Z = QZ[kit];
-    document.querySelectorAll('.kitname').forEach(e => e.textContent = Z.name);
-    set('.hook', Z.hook); set('.kitvs-sec h2', Z.h2); set('.kitvs-sec .sub', Z.sub); set('.kitvs .kit', Z.kit);
-    set('.kitvs .mem li:nth-child(1)', '<b>Everything in your plan</b>');
-    set('.kitvs .mem li:nth-child(2)', Z.li2);
-    set('.kitvs .mem li:nth-child(3)', 'Claude for Excel, AI for PowerPoint, Side Hustle, Content, Ads…');
-    set('.options .opt:first-child p', Z.opt);
-    return;
-  }
-  if (kit !== 'starter') return;
-  document.querySelectorAll('.kitname').forEach(e => e.textContent = 'AI Starter Kit');
-  set('.hook', 'You now own 6 AI courses. Members get 44 courses across 5 paths — plus new ones every month.');
-  set('.kitvs-sec h2', 'You have 6 courses. <span class="blue">Unlock all 44.</span>');
-  set('.kitvs-sec .sub', 'Your AI Starter Kit is a great start. Membership opens everything else in Mindora Academy.');
-  set('.kitvs .kit', '<small>YOUR AI STARTER KIT</small><b class="big">6 courses</b><ul><li>7-Step AI Beginners Challenge</li><li>ChatGPT for Business</li><li>Claude AI</li><li>Master Gemini</li><li>Prompt Engineering Mastery</li><li>AI Productivity System</li><li>1,000+ prompts &amp; templates</li></ul>');
-  set('.kitvs .mem li:nth-child(3)', '9 more AI courses — Automation, Content, Ads, Filmmaking, Side Hustle…');
-  set('.options .opt:first-child p', 'Close this page. Keep your 6 courses — and miss the other 38, the 28-Day AI Challenge and every new course.');
+  if (K[kit]) { set('.options .opt:first-child p', K[kit].opt); }
 })();
 const d8Date = new Date(FUNNEL.day8);
 const d8Months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -558,10 +612,10 @@ function mindoraStripe() {
   return window.__mindoraStripe;
 }
 async function funnelSubscribe(plan) {
-  const agree = document.getElementById('agree');
-  if (agree && !agree.checked) throw new Error('Please accept the Terms of Use, Privacy Policy and Cookie Policy');
-  const consent = document.querySelector('.legal').innerText + '\n' + document.querySelector('.agree').innerText + '\n' + document.querySelector('.provider').innerText;
-  const body = { token: FUNNEL.token, plan, consent };
+  const consent = document.querySelector('.legal').innerText;
+  const terms_accepted = document.querySelector('.consent .ck').innerText;
+  const lang = (window.MindoraI18n && MindoraI18n.lang) || 'en';
+  const body = { token: FUNNEL.token, plan, consent, terms_accepted, lang };
   let r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   let data = await r.json();
   if (data.requires_action && data.client_secret) {
@@ -578,6 +632,8 @@ async function funnelSubscribe(plan) {
 }
 document.querySelectorAll('[data-buy]').forEach(btn => btn.addEventListener('click', async () => {
   const scope = btn.closest('.box, .final') || document, err = scope.querySelector('.err'), label = btn.textContent;
+  const agree = document.getElementById('agree');
+  if (agree && !agree.checked) { const c = agree.closest('.consent'); c.classList.add('need'); c.scrollIntoView({behavior:'smooth', block:'center'}); return; }
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true); btn.dataset.label = label; btn.textContent = 'Processing…';
   try {
     const data = await funnelSubscribe(btn.dataset.buy);
@@ -597,8 +653,10 @@ addEventListener('pageshow', e => {
 
 /* прячем липкую кнопку, когда видна нижняя кнопка — без дубля */
 if ('IntersectionObserver' in window) {
-  const st = document.querySelector('.sticky');
-  new IntersectionObserver(es => es.forEach(e => st.classList.toggle('gone', e.isIntersecting)), {rootMargin:'0px 0px -40px 0px'}).observe(document.querySelector('.final'));
+  const st = document.querySelector('.sticky'), seen = new Set();
+  /* липкая кнопка не показывается, пока видна кнопка первого экрана или нижняя кнопка */
+  const io = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)); st.classList.toggle('gone', seen.size > 0); }, {rootMargin:'0px 0px -40px 0px'});
+  io.observe(document.querySelector('.final')); io.observe(document.querySelector('.hero .cta1'));
 }
 const ds = document.getElementById('downsell');
 document.querySelectorAll('[data-decline]').forEach(b => b.addEventListener('click', () => ds.classList.add('open')));
@@ -606,6 +664,6 @@ document.getElementById('final-no').addEventListener('click', () => { window.min
 addEventListener('keydown', e => { if (e.key === 'Escape' && ds.classList.contains('open')) { window.mindoraGo(FUNNEL.nextUrl); } });
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=5"></script>
+<script src="/funnel-assets/i18n.js?v=6"></script>
 </body>
 </html>
