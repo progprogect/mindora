@@ -46,6 +46,8 @@ const chargeSchema = z.object({
   product: z.string().min(1),
   state: z.enum(['offer', 'downsell']).optional(),
   price: z.union([z.string(), z.number()]),
+  /** PaymentIntent already confirmed on-session after 3-D Secure; the server verifies it instead of charging again. */
+  payment_intent: z.string().optional(),
 })
 
 type BillingCtx = {
@@ -181,11 +183,24 @@ function advanceResponse(
   }
 }
 
-function requiresActionPayload(clientSecret: string) {
+type ActionIntent = {
+  secret: string
+  intent: 'payment' | 'setup'
+  id: string
+  /** `requires_action` → stripe.handleNextAction; `requires_payment_method` → stripe.confirmCardPayment. */
+  status: string
+  paymentMethod?: string
+}
+
+function requiresActionPayload(action: ActionIntent) {
   return {
     success: false as const,
     requires_action: true as const,
-    client_secret: clientSecret,
+    client_secret: action.secret,
+    intent: action.intent,
+    intent_id: action.id,
+    intent_status: action.status,
+    payment_method: action.paymentMethod,
   }
 }
 
@@ -196,25 +211,48 @@ function stripeErrorMessage(error: unknown): string {
   return error instanceof Error ? error.message : 'Payment failed'
 }
 
-function authenticationRequiredSecret(error: unknown): string | null {
+function authenticationRequiredAction(error: unknown): ActionIntent | null {
   if (!error || typeof error !== 'object') return null
-  const err = error as {
-    code?: string
-    payment_intent?: { client_secret?: string | null; status?: string }
-    raw?: { code?: string; payment_intent?: { client_secret?: string | null; status?: string } }
+  type PiLike = {
+    id?: string
+    client_secret?: string | null
+    status?: string
+    payment_method?: string | { id?: string } | null
+    last_payment_error?: { payment_method?: { id?: string } } | null
   }
+  const err = error as { code?: string; payment_intent?: PiLike; raw?: { code?: string; payment_intent?: PiLike } }
   const code = err.code || err.raw?.code
   const pi = err.payment_intent || err.raw?.payment_intent
-  if (!pi?.client_secret) return null
-  if (code === 'authentication_required' || pi.status === 'requires_action') return pi.client_secret
-  return null
+  if (!pi?.client_secret || !pi.id) return null
+  if (code !== 'authentication_required' && pi.status !== 'requires_action') return null
+  const pm = typeof pi.payment_method === 'string' ? pi.payment_method : pi.payment_method?.id
+  return {
+    secret: pi.client_secret,
+    intent: 'payment',
+    id: pi.id,
+    status: pi.status || 'requires_payment_method',
+    paymentMethod: pm || pi.last_payment_error?.payment_method?.id,
+  }
 }
 
-async function subscriptionClientSecret(sub: Stripe.Subscription): Promise<string | null> {
-  const pending = sub.pending_setup_intent
-  if (pending && typeof pending !== 'string') {
-    if (pending.status === 'requires_action' && pending.client_secret) return pending.client_secret
+/** Trial subscriptions carry a SetupIntent that must be authenticated now, or the first real charge fails. */
+function pendingSetupAction(sub: Stripe.Subscription): ActionIntent | null {
+  const si = sub.pending_setup_intent
+  if (!si || typeof si === 'string') return null
+  if (si.status === 'succeeded' || si.status === 'canceled' || !si.client_secret) return null
+  const pm = typeof si.payment_method === 'string' ? si.payment_method : si.payment_method?.id
+  return {
+    secret: si.client_secret,
+    intent: 'setup',
+    id: si.id,
+    status: si.status,
+    paymentMethod: pm || si.last_setup_error?.payment_method?.id,
   }
+}
+
+async function subscriptionAction(sub: Stripe.Subscription): Promise<ActionIntent | null> {
+  const setup = pendingSetupAction(sub)
+  if (setup) return setup
   const invoiceRef = sub.latest_invoice
   if (!invoiceRef) return null
   const stripe = getStripe()
@@ -223,7 +261,9 @@ async function subscriptionClientSecret(sub: Stripe.Subscription): Promise<strin
   const piRef = (invoice as Stripe.Invoice & { payment_intent?: string | Stripe.PaymentIntent | null }).payment_intent
   if (!piRef) return null
   const pi = typeof piRef === 'string' ? await stripe.paymentIntents.retrieve(piRef) : piRef
-  if (pi.status === 'requires_action' && pi.client_secret) return pi.client_secret
+  if (pi.status === 'requires_action' && pi.client_secret) {
+    return { secret: pi.client_secret, intent: 'payment', id: pi.id, status: pi.status }
+  }
   return null
 }
 
@@ -276,6 +316,9 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
 
   const existing = await findBlockingSubscription(ctx.customerId)
   if (existing) {
+    const fresh = await getStripe().subscriptions.retrieve(existing.id, { expand: ['pending_setup_intent'] })
+    const pendingAuth = pendingSetupAction(fresh)
+    if (pendingAuth) return c.json(requiresActionPayload(pendingAuth))
     await linkStripeCustomer(ctx.userId, ctx.customerId, existing)
     return c.json(advanceResponse(c, ctx.session, nextStepAfterMembership(), { alreadySubscribed: true }))
   }
@@ -302,9 +345,9 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
       { idempotencyKey: funnelSubscribeIdempotencyKey(ctx.session.sid, plan) },
     )
 
+    const action = await subscriptionAction(created)
+    if (action) return c.json(requiresActionPayload(action))
     if (created.status !== 'trialing' && created.status !== 'active') {
-      const actionSecret = await subscriptionClientSecret(created)
-      if (actionSecret) return c.json(requiresActionPayload(actionSecret))
       return c.json(
         { success: false, message: `Subscription status: ${created.status}`, code: 'subscribe_incomplete' },
         400,
@@ -332,8 +375,8 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
 
     return c.json(advanceResponse(c, ctx.session, nextStepAfterMembership()))
   } catch (error) {
-    const secret = authenticationRequiredSecret(error)
-    if (secret) return c.json(requiresActionPayload(secret))
+    const authAction = authenticationRequiredAction(error)
+    if (authAction) return c.json(requiresActionPayload(authAction))
     console.error('[funnel] subscribe failed', error)
     return c.json({ success: false, message: stripeErrorMessage(error), code: 'subscribe_failed' }, 400)
   }
@@ -369,28 +412,51 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
   const idempotencyKey = funnelChargeIdempotencyKey(ctx.session.sid, offer.product, offer.amountCents)
 
   try {
-    const pi = await stripe.paymentIntents.create(
-      {
-        amount: offer.amountCents,
-        currency: 'usd',
-        customer: ctx.customerId,
-        payment_method: ctx.paymentMethodId,
-        payment_method_types: ['card'],
-        off_session: true,
-        confirm: true,
-        metadata: {
-          offerSlug: offer.offerSlug,
-          userId: ctx.userId,
-          funnel_product: offer.product,
-          funnel_sid: ctx.session.sid,
-          amount_cents: String(offer.amountCents),
+    let pi: Stripe.PaymentIntent
+    if (parsed.data.payment_intent) {
+      // Back from on-session 3-D Secure: verify the confirmed PaymentIntent belongs to this session and offer.
+      pi = await stripe.paymentIntents.retrieve(parsed.data.payment_intent)
+      const m = pi.metadata ?? {}
+      if (
+        m.funnel_sid !== ctx.session.sid ||
+        m.funnel_product !== offer.product ||
+        pi.amount !== offer.amountCents ||
+        pi.customer !== ctx.customerId
+      ) {
+        return c.json({ success: false, message: 'Payment does not match this offer', code: 'payment_mismatch' }, 400)
+      }
+    } else {
+      pi = await stripe.paymentIntents.create(
+        {
+          amount: offer.amountCents,
+          currency: 'usd',
+          customer: ctx.customerId,
+          payment_method: ctx.paymentMethodId,
+          payment_method_types: ['card'],
+          off_session: true,
+          confirm: true,
+          metadata: {
+            offerSlug: offer.offerSlug,
+            userId: ctx.userId,
+            funnel_product: offer.product,
+            funnel_sid: ctx.session.sid,
+            amount_cents: String(offer.amountCents),
+          },
         },
-      },
-      { idempotencyKey },
-    )
+        { idempotencyKey },
+      )
+    }
 
     if (pi.status === 'requires_action' && pi.client_secret) {
-      return c.json(requiresActionPayload(pi.client_secret))
+      return c.json(
+        requiresActionPayload({
+          secret: pi.client_secret,
+          intent: 'payment',
+          id: pi.id,
+          status: pi.status,
+          paymentMethod: typeof pi.payment_method === 'string' ? pi.payment_method : pi.payment_method?.id,
+        }),
+      )
     }
 
     if (pi.status !== 'succeeded' && pi.status !== 'processing') {
@@ -410,8 +476,8 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
 
     return c.json(advanceResponse(c, ctx.session, next))
   } catch (error) {
-    const secret = authenticationRequiredSecret(error)
-    if (secret) return c.json(requiresActionPayload(secret))
+    const authAction = authenticationRequiredAction(error)
+    if (authAction) return c.json(requiresActionPayload(authAction))
     console.error('[funnel] charge failed', error)
     return c.json({ success: false, message: stripeErrorMessage(error), code: 'charge_failed' }, 400)
   }

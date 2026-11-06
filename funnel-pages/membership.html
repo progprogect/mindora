@@ -621,8 +621,12 @@ async function funnelSubscribe(plan) {
   if (data.requires_action && data.client_secret) {
     const stripe = mindoraStripe();
     if (!stripe) throw new Error('Card authentication required');
-    const { error } = await stripe.handleNextAction({ clientSecret: data.client_secret });
-    if (error) throw error;
+    /* trial: the saved card must be authenticated now (SetupIntent), otherwise the first real charge fails */
+    /* after a failed or dismissed attempt the SetupIntent is back in requires_payment_method: confirm it again */
+    const res = data.intent_status === 'requires_payment_method' && data.payment_method
+      ? await stripe.confirmCardSetup(data.client_secret, { payment_method: data.payment_method })
+      : await stripe.handleNextAction({ clientSecret: data.client_secret });
+    if (res.error) throw res.error;
     r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
     data = await r.json();
   }
@@ -664,6 +668,6 @@ document.getElementById('final-no').addEventListener('click', () => { window.min
 addEventListener('keydown', e => { if (e.key === 'Escape' && ds.classList.contains('open')) { window.mindoraGo(FUNNEL.nextUrl); } });
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=6"></script>
+<script src="/funnel-assets/i18n.js?v=7"></script>
 </body>
 </html>

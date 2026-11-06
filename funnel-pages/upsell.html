@@ -414,18 +414,23 @@ function mindoraStripe() {
   if (!window.__mindoraStripe) window.__mindoraStripe = Stripe(FUNNEL.stripePublishableKey);
   return window.__mindoraStripe;
 }
+async function postCharge(body) {
+  const r = await fetch('/api/funnel/charge', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  return { r, d: await r.json() };
+}
 async function funnelCharge(chargeState) {
   const lang = (window.MindoraI18n && MindoraI18n.lang) || 'en';
   const body = { token: FUNNEL.token, product: O.product, state: chargeState, price: O[chargeState].price, lang };
-  let r = await fetch('/api/funnel/charge', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-  let d = await r.json();
+  let { r, d } = await postCharge(body);
   if (d.requires_action && d.client_secret) {
     const stripe = mindoraStripe();
     if (!stripe) throw new Error('Card authentication required');
-    const { error } = await stripe.handleNextAction({ clientSecret: d.client_secret });
-    if (error) throw error;
-    r = await fetch('/api/funnel/charge', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    d = await r.json();
+    /* off-session charge that needs 3-D Secure leaves the PaymentIntent in requires_payment_method: confirm it on-session */
+    const res = d.intent_status === 'requires_payment_method' && d.payment_method
+      ? await stripe.confirmCardPayment(d.client_secret, { payment_method: d.payment_method })
+      : await stripe.handleNextAction({ clientSecret: d.client_secret });
+    if (res.error) throw res.error;
+    ({ r, d } = await postCharge({ ...body, payment_intent: d.intent_id }));
   }
   if (!r.ok || d.success === false) throw new Error(d.message || 'Payment failed');
   if (d.token) FUNNEL.token = d.token;
@@ -457,6 +462,6 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElement
 if (openPopup) showPopup();
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=6"></script>
+<script src="/funnel-assets/i18n.js?v=7"></script>
 </body>
 </html>

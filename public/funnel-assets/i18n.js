@@ -87,7 +87,7 @@ function walk(root){
   (root.querySelectorAll ? root.querySelectorAll('img') : []).forEach(doImg);
 }
 /* картинки с английским текстом: assets/x.jpg → assets/ru/x.jpg (обложки курсов и планеров, экраны, книги промптов) */
-var RU_IMG=/(^|\/|-)assets\/((?:c|p|app|out)-[a-z0-9-]+|planners|planners-fan|prompt-books)\.(jpg|png)$/;
+var RU_IMG=/(^|\/|-)assets\/((?:c|p|app|out|phone)-[a-z0-9-]+|planners|planners-fan|prompt-books)\.(jpg|png)$/;
 var iorig=new WeakMap(), ishown=new WeakMap();
 function doImg(el){
   var cur=el.getAttribute('src'); if(!cur) return;
