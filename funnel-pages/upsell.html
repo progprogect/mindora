@@ -437,16 +437,16 @@ async function funnelCharge(chargeState) {
   return d;
 }
 async function buy(btn){
-  const err = (btn.closest('.modal') || document).querySelector('.err');
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true);
   try {
     const d = await funnelCharge(state);
     remember();
     go(d.nextUrl || O.next);
   } catch(e) {
-    if (FUNNEL.preview) { remember(); go(O.next); return; }
-    if (err) { err.textContent = (e.message || 'Something went wrong') + '. Try again or skip this offer.'; err.style.display = 'block'; }
-    document.querySelectorAll('[data-buy]').forEach(b => b.disabled = false);
+    if (FUNNEL.preview) remember();
+    /* отказ карты (в т.ч. нехватка средств или непройденный 3DS): без текста ошибки сразу на следующий шаг, как в OTO.
+       Доступ не выдаётся: сервер записывает покупку только после успешного платежа. В поп-апе коуча это ведёт в онбординг. */
+    go(O.next);
   }
 }
 /* возврат кнопкой «Назад» из bfcache: страница возвращается с заблокированными кнопками */
