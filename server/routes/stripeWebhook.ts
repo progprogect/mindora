@@ -11,6 +11,7 @@ import {
   paymentMethodFromCheckoutSession,
 } from '../lib/funnelFulfillment.js'
 import { isKitCheckoutKey } from '../lib/funnelToken.js'
+import { isInvoicePayment, isTrialFunnelPayment, stripeRefId } from '../lib/invoicePayment.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
 import { TRIAL_DAYS } from '../lib/trial.js'
 import {
@@ -20,16 +21,6 @@ import {
   linkStripeCustomer,
   notifyScheduledCancellation,
 } from '../lib/subscription.js'
-
-/** Stripe webhook payloads may send an id string or an expanded object. */
-function stripeRefId(value: unknown): string {
-  if (typeof value === 'string' && value) return value
-  if (value && typeof value === 'object' && 'id' in value) {
-    const id = (value as { id: unknown }).id
-    if (typeof id === 'string') return id
-  }
-  return ''
-}
 
 /** Record after the side effect succeeds. Unique on `payment_intent_id`; retries upsert. */
 async function markProcessedPayment(
@@ -88,6 +79,13 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
 
   if (!paymentIntentId) return
 
+  // Subscription charges (first rebill after trial, renewals) are PIs created by an invoice.
+  // This handler is only for the $1 trial funnel PI; never treat invoice payments as duplicates.
+  if (isInvoicePayment(object)) {
+    console.log('[stripe webhook] invoice payment — trial handler skipped', paymentIntentId)
+    return
+  }
+
   if (await isPaymentAlreadyProcessed(paymentIntentId)) {
     console.log('[stripe webhook] already processed', paymentIntentId)
     return
@@ -112,6 +110,12 @@ async function handlePaymentIntentSucceeded(object: Record<string, unknown>): Pr
       paymentIntentId,
       kit: metadata.kit,
     })
+    return
+  }
+
+  // Only the $1 trial funnel PI may start (or be refunded as a duplicate of) a trial subscription.
+  if (!isTrialFunnelPayment(object)) {
+    console.log('[stripe webhook] not a trial funnel payment — skipped', paymentIntentId)
     return
   }
 
@@ -240,6 +244,12 @@ async function isPaymentAlreadyProcessed(paymentIntentId: string): Promise<boole
 
 async function refundDuplicateTrialPayment(paymentIntentId: string): Promise<void> {
   try {
+    // Safety net: only ever refund the $1 trial funnel PI, never an invoice/subscription charge.
+    const pi = await getStripe().paymentIntents.retrieve(paymentIntentId)
+    if (!isTrialFunnelPayment(pi as unknown as Record<string, unknown>)) {
+      console.warn('[stripe webhook] refusing to refund non-trial-funnel payment', paymentIntentId)
+      return
+    }
     await getStripe().refunds.create(
       { payment_intent: paymentIntentId },
       { idempotencyKey: `trial_dup_refund_${paymentIntentId}` },
