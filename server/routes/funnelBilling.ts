@@ -320,12 +320,15 @@ funnelBillingRoutes.post('/funnel/subscribe', async (c) => {
 
   const resolved = await resolveBillingContext(parsed.data.token, getCookie(c, FUNNEL_COOKIE))
   if (!resolved.ok) {
+    console.warn('[funnel] subscribe refused', { plan, code: resolved.code, status: resolved.status })
     return c.json({ success: false, message: resolved.message, code: resolved.code }, resolved.status)
   }
   const { ctx } = resolved
+  console.log('[funnel] subscribe', { plan, flow: ctx.session.flow ?? null, sid: ctx.session.sid })
 
   const priceId = resolveMembershipPriceId(plan)
   if (!priceId) {
+    console.error('[funnel] subscribe refused: membership price is not configured', { plan })
     return c.json(
       {
         success: false,

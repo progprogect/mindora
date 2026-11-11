@@ -679,7 +679,10 @@ async function funnelSubscribe(plan) {
   return data;
 }
 document.querySelectorAll('[data-buy]').forEach(btn => btn.addEventListener('click', async () => {
-  const scope = btn.closest('.box, .final') || document, err = scope.querySelector('.err'), label = btn.textContent;
+  const scope = btn.closest('.box, .final') || document, label = btn.textContent;
+  /* ошибка должна быть видна рядом с нажатой кнопкой, даже если в этом блоке нет своего .err */
+  let err = scope.querySelector('.err');
+  if (!err) { err = document.createElement('p'); err.className = 'err'; btn.insertAdjacentElement('afterend', err); }
   const agree = document.getElementById('agree');
   if (agree && !agree.checked) { const c = agree.closest('.consent'); c.classList.add('need'); c.scrollIntoView({behavior:'smooth', block:'center'}); return; }
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true); btn.dataset.label = label; btn.textContent = 'Processing…';

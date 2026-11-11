@@ -2,12 +2,14 @@ import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Context } from 'hono'
+import type Stripe from 'stripe'
 import { Hono } from 'hono'
 import { deleteCookie, getCookie, setCookie } from 'hono/cookie'
 import { loadEnv } from '../env.js'
 import { getRequestLocale } from '../lib/localeContext.js'
 import { findKnownName } from '../lib/funnelAccess.js'
 import { getStripe } from '../lib/stripe.js'
+import { findUserIdByEmail } from '../lib/subscription.js'
 import { fulfillKitCheckoutSession } from './stripeWebhook.js'
 import { withLocalePrefix, type AppLocale } from '../lib/localePath.js'
 import {
@@ -62,13 +64,22 @@ export function clearFunnelCookie(c: Context) {
   deleteCookie(c, FUNNEL_COOKIE, cookieOpts())
 }
 
+/**
+ * Sub Out has no email field on the landing: the buyer types it on Stripe. Once the return from Checkout is fulfilled,
+ * the account exists and its email / user id are added to the session for the rest of THIS request, so the page gets a
+ * token that already knows the user (the billing routes refuse a token without one: `funnel_user_missing`).
+ */
+const sessionPatches = new WeakMap<Request, Partial<FunnelSession>>()
+
 function readSession(c: Context): { session: FunnelSession; token: string } | null {
   const fromQuery = c.req.query('token')
   const fromCookie = getCookie(c, FUNNEL_COOKIE)
   const raw = fromQuery || fromCookie
-  const session = verifyFunnelToken(raw)
-  if (!session || !raw) return null
-  return { session, token: fromQuery ? signFunnelToken(session) : raw }
+  const verified = verifyFunnelToken(raw)
+  if (!verified || !raw) return null
+  const patch = sessionPatches.get(c.req.raw)
+  const session = patch ? { ...verified, ...patch } : verified
+  return { session, token: fromQuery || patch ? signFunnelToken(session) : raw }
 }
 
 function injectFunnel(html: string, funnel: Record<string, unknown>): string {
@@ -336,10 +347,37 @@ async function fulfillCheckoutReturn(c: Context): Promise<void> {
     if ((checkout.mode !== 'payment' && checkout.mode !== 'subscription') || !paid) return
     if (metadata.funnel_sid !== found.session.sid) return
     await fulfillKitCheckoutSession(checkout, metadata)
+    await bindSessionToBuyer(c, found.session, checkout, metadata)
   } catch (error) {
     // The webhook may still fulfil it; never block the verify page on this.
     console.error('[funnel] checkout return fulfilment failed', sessionId, error)
   }
+}
+
+/** Adds the buyer's email / name / user id (from the paid Checkout) to a funnel session that does not have them yet. */
+async function bindSessionToBuyer(
+  c: Context,
+  session: FunnelSession,
+  checkout: Stripe.Checkout.Session,
+  metadata: Record<string, string>,
+): Promise<void> {
+  if (session.email && session.userId) return
+  const email = (
+    session.email ||
+    metadata.email ||
+    checkout.customer_details?.email ||
+    checkout.customer_email ||
+    ''
+  )
+    .trim()
+    .toLowerCase()
+  if (!email) return
+  const patch: Partial<FunnelSession> = { email }
+  const name = session.name || metadata.name?.trim() || checkout.customer_details?.name?.trim()
+  if (name) patch.name = name
+  const userId = session.userId || (await findUserIdByEmail(email).catch(() => null)) || undefined
+  if (userId) patch.userId = userId
+  sessionPatches.set(c.req.raw, patch)
 }
 
 funnelPageRoutes.get('/account/verify', async (c) => {
