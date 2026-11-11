@@ -207,6 +207,24 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 .modal .btn{width:100%}
 .modal .t{font-size:12px;color:var(--muted);margin-top:10px}
 .modal .no{margin-top:6px}
+/* ВЕРСИИ «аккаунт в конце» (Sub Out / Sub In): подпись «до настройки аккаунта», компактный верх на телефоне */
+.toacc{order:99;flex-basis:100%;text-align:center;font-size:12.5px;font-weight:600;color:var(--muted);margin-top:-2px}
+.toacc b{color:var(--blue)}
+.steps li.acc{font-size:14px}
+.pprice .save.pct{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-weight:600}
+@media (max-width:560px){
+  body.alast .hero{padding-top:10px}
+  body.alast .hero .badge{display:none}
+  body.alast .hero h1{font-size:25px;margin:6px 0 6px}
+  body.alast .hero p{display:none}
+  body.alast .top{padding:8px 0}body.alast .top .wrap{gap:8px 14px}
+  body.alast .alert{font-size:12.5px;padding:7px 14px}
+  body.alast .pcard{margin-top:12px}
+  body.alast .pitems{padding:8px;gap:5px}
+  body.alast .pitem{padding:8px 10px}
+  body.alast .pitem .ico{width:30px;height:30px;font-size:15px}
+  body.alast .pitem b{font-size:14px}body.alast .pitem span{font-size:12px;line-height:1.35}
+}
 </style>
 </head>
 <body>
@@ -238,6 +256,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 /* DEV: заполняется сервером */
 window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false };
+const ACCOUNT_LAST = !!(window.FUNNEL && FUNNEL.accountLast);
+if (ACCOUNT_LAST) document.body.classList.add('alast');
+
+/* Sub In: первая страница после Stripe — засчитываем покупку $1 один раз на оплату (eventID = session_id Checkout) */
+(function(){ const q = new URLSearchParams(location.search), sid = q.get('session_id');
+  if (!(window.FUNNEL && FUNNEL.flow === 'sub_in') || q.get('step') !== 'prompts' || !sid) return;
+  const key = 'mindora_purchase_' + sid; try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch(e) {}
+  if (window.fbq) { fbq('track', 'Purchase', { value: 1.00, currency: 'USD', content_ids: ['starter'], content_type: 'product' }, { eventID: sid }); fbq('track', 'StartTrial', { value: 0, currency: 'USD', predicted_ltv: 49.99 }, { eventID: sid + '_trial' }); }
+  if (window.ttq) ttq.track('CompletePayment', { value: 1.00, currency: 'USD', content_id: 'starter' }, { event_id: sid });
+  if (window.gtag) gtag('event', 'purchase', { transaction_id: sid, value: 1.00, currency: 'USD', items: [{ item_id: 'starter', item_name: 'AI Starter Kit' }] });
+  if (window.dataLayer) dataLayer.push({ event: 'mindora_purchase', transaction_id: sid, value: 1.00, currency: 'USD', kit: 'starter', trial: true, funnel_flow: 'sub_in' });
+})();
 
 const OFFERS = {
   coach: {
@@ -301,7 +331,7 @@ const OFFERS = {
       ['🧭','Purpose & Direction','3 printable planners · Forever'],
       ['🌱','Personal Growth + Money Habits','3 printable planners · Forever']],
     offer:{was:'29.50', price:'4.95', alert:'New-member bundle — only on this page.',
-      badge:'🎁 One-time offer', h1:'Add all 10 planners for less than two',
+      badge:'🎁 One-time offer', h1:(window.FUNNEL && FUNNEL.accountLast) ? '10 planners are better than two' : 'Add all 10 planners for less than two',
       sub:'289 printable pages to plan your days, beat procrastination and turn goals into action. One charge to your saved card.'},
     
     gets:[
@@ -341,9 +371,9 @@ const openPopup = qs.get('state') === 'downsell' && key === 'coach';
 /* DEV: в продакшене сервер отдаёт FUNNEL.kit */
 const KIT = qs.get('kit') || (window.FUNNEL && FUNNEL.kit) || (()=>{ try { return sessionStorage.getItem('mindora_kit'); } catch(e){ return null; } })() || 'guide';
 try { if (qs.get('kit')) sessionStorage.setItem('mindora_kit', qs.get('kit')); } catch(e) {}
-const TOTAL = 6; /* во всех воронках 6 шагов */
+const TOTAL = (window.FUNNEL && FUNNEL.stepTotal) || 6; /* 6 шагов; Sub In — 5 (без страницы Mindora Academy) */
 const STEP = O.step - (6 - TOTAL);
-if (TOTAL === 5) document.querySelector('#steps li:last-child').remove();
+for (let n = 6; n > TOTAL; n--) document.querySelector('#steps li:last-child').remove();
 document.getElementById('steplabel').textContent = 'Step ' + STEP + '/' + TOTAL;
 document.querySelectorAll('#steps li').forEach((li,i) => {
   if (i < STEP - 1) { li.className = 'done'; li.textContent = '✓'; }
@@ -351,9 +381,21 @@ document.querySelectorAll('#steps li').forEach((li,i) => {
 });
 document.getElementById('steps').setAttribute('aria-label','Step ' + STEP + ' of ' + TOTAL);
 
+/* версии «аккаунт в конце»: последний шаг — настройка аккаунта, показываем сколько шагов до неё */
+function mindoraAccountSteps(step, total){
+  const ol = document.querySelector('.steps'); if (!ol) return;
+  const last = ol.querySelector('li:last-child');
+  if (step < total) { last.textContent = '👤'; last.classList.add('acc'); last.title = 'Account setup'; }
+  const p = document.createElement('p'); p.className = 'toacc';
+  const left = total - step;
+  p.textContent = left <= 0 ? 'Last step: account setup' : left === 1 ? 'Next step: account setup' : left + ' steps to account setup';
+  ol.closest('.wrap').appendChild(p);
+}
+if (ACCOUNT_LAST) mindoraAccountSteps(STEP, TOTAL);
+
 function card(S){
   return `<div class="pcard"><div class="pitems">${O.items.map(i => `<div class="pitem"><div class="ico">${i[0]}</div><div><b>${i[1]}</b><span>${i[2]}</span></div></div>`).join('')}</div>
-    <div class="pprice"><div class="pr"><s>$${S.was}</s><b>$${S.price}</b></div><span class="save">−$${(S.was - S.price).toFixed(2).replace(/\.00$/,'')} saved</span></div></div>`;
+    <div class="pprice"><div class="pr"><s>$${S.was}</s><b>$${S.price}</b></div><span class="save${ACCOUNT_LAST ? ' pct' : ''}">${ACCOUNT_LAST ? '−' + Math.round((1 - S.price / S.was) * 100) + '%' : '−$' + (S.was - S.price).toFixed(2).replace(/\.00$/,'') + ' saved'}</span></div></div>`;
 }
 function render(){
   const S = O[state];
@@ -462,6 +504,6 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElement
 if (openPopup) showPopup();
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=7"></script>
+<script src="/funnel-assets/i18n.js?v=8"></script>
 </body>
 </html>

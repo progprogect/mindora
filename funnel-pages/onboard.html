@@ -148,6 +148,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false, dashboardUrl:'/app/dashboard' };
 try { history.scrollRestoration = 'manual'; } catch(e) {}
 scrollTo(0,0);
+/* Starter Kit Sub Out / Sub In: активация была последним шагом воронки, здесь все шаги пройдены */
+if (window.FUNNEL && FUNNEL.accountLast) {
+  const total = FUNNEL.stepTotal || 5;
+  document.querySelector('.steplabel').textContent = 'Step ' + total + '/' + total;
+  const ol = document.querySelector('.steps');
+  ol.setAttribute('aria-label', 'Step ' + total + ' of ' + total);
+  ol.innerHTML = '<li>✓</li>'.repeat(total - 1) + '<li class="now" aria-current="step">✓</li>';
+}
 const get = k => { try { return sessionStorage.getItem(k); } catch(e) { return null; } };
 const name = get('mindora_name');
 if (name) document.getElementById('hi').textContent = 'Welcome, ' + name + '!';
@@ -179,6 +187,6 @@ document.getElementById('start').onclick = async () => {
   window.mindoraGo(FUNNEL.dashboardUrl);
 };
 </script>
-<script src="/funnel-assets/i18n.js?v=7"></script>
+<script src="/funnel-assets/i18n.js?v=8"></script>
 </body>
 </html>
