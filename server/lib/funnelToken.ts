@@ -14,6 +14,18 @@ export const FUNNEL_KITS = ['starter', 'guide', 'claudecert', 'challenge'] as co
 export type FunnelKit = (typeof FUNNEL_KITS)[number]
 export type KitCheckoutKey = FunnelKit
 
+/**
+ * Starter Kit "account last" funnels (registration after the upsells). `kit` stays `starter`;
+ * the flow only changes the step order, the landing URL and the Checkout shape.
+ * - sub_out: $1 payment, Mindora Academy page, 3 upsells, account activation.
+ * - sub_in:  one subscription Checkout ($1 kit + Academy trial), 3 upsells, account activation.
+ */
+export const FUNNEL_FLOWS = ['sub_out', 'sub_in'] as const
+export type FunnelFlow = (typeof FUNNEL_FLOWS)[number]
+
+/** Lifetime of the emailed "activate your account" link (decision: 5 days). */
+export const RECOVERY_TTL_MS = 5 * 24 * 60 * 60 * 1000
+
 export const FUNNEL_STEPS = [
   'verify',
   'membership',
@@ -24,6 +36,16 @@ export const FUNNEL_STEPS = [
   'done',
 ] as const
 export type FunnelStep = (typeof FUNNEL_STEPS)[number]
+
+const FLOW_STEPS: Record<FunnelFlow, readonly FunnelStep[]> = {
+  sub_out: ['membership', 'upsell_prompts', 'upsell_planners', 'upsell_coach', 'verify', 'onboard', 'done'],
+  sub_in: ['upsell_prompts', 'upsell_planners', 'upsell_coach', 'verify', 'onboard', 'done'],
+}
+
+/** Step order for a flow; funnels without a flow keep the original `FUNNEL_STEPS` order. */
+export function stepOrder(flow?: FunnelFlow): readonly FunnelStep[] {
+  return flow ? FLOW_STEPS[flow] : FUNNEL_STEPS
+}
 
 export type FunnelSession = {
   v: 1
@@ -36,6 +58,10 @@ export type FunnelSession = {
   name?: string
   quizSessionId?: string
   lang?: 'en' | 'ru'
+  /** Set for the Starter Kit Sub Out / Sub In funnels; absent for every other funnel. */
+  flow?: FunnelFlow
+  /** Emailed activation link: lives `RECOVERY_TTL_MS`, only opens `/account/verify`. */
+  recovery?: true
 }
 
 function b64url(buf: Buffer): string {
@@ -58,12 +84,16 @@ export function isKitCheckoutKey(value: unknown): value is KitCheckoutKey {
   return isFunnelKit(value)
 }
 
+export function isFunnelFlow(value: unknown): value is FunnelFlow {
+  return typeof value === 'string' && (FUNNEL_FLOWS as readonly string[]).includes(value)
+}
+
 export function isFunnelStep(value: unknown): value is FunnelStep {
   return typeof value === 'string' && (FUNNEL_STEPS as readonly string[]).includes(value)
 }
 
-export function stepIndex(step: FunnelStep): number {
-  return FUNNEL_STEPS.indexOf(step)
+export function stepIndex(step: FunnelStep, flow?: FunnelFlow): number {
+  return stepOrder(flow).indexOf(step)
 }
 
 export function createFunnelSession(
@@ -80,7 +110,21 @@ export function createFunnelSession(
     name: input.name,
     quizSessionId: input.quizSessionId,
     lang: input.lang,
+    flow: input.flow,
   }
+}
+
+/** Long-lived session for the "activate your account" email: opens `/account/verify` for an existing user. */
+export function createRecoverySession(input: {
+  kit: FunnelKit
+  flow?: FunnelFlow
+  email: string
+  name?: string
+  userId?: string
+  lang?: 'en' | 'ru'
+}): FunnelSession {
+  const session = createFunnelSession({ ...input, step: 'verify' })
+  return { ...session, recovery: true, exp: Date.now() + RECOVERY_TTL_MS }
 }
 
 export function signFunnelToken(session: FunnelSession): string {
@@ -112,6 +156,8 @@ export function verifyFunnelToken(token: string | undefined | null): FunnelSessi
   if (!isFunnelKit(row.kit)) return null
   if (!isFunnelStep(row.step)) return null
   if (typeof row.exp !== 'number' || row.exp <= Date.now()) return null
+  const flow = isFunnelFlow(row.flow) ? row.flow : undefined
+  if (flow && !stepOrder(flow).includes(row.step)) return null
   const session: FunnelSession = {
     v: 1,
     sid: row.sid,
@@ -124,15 +170,19 @@ export function verifyFunnelToken(token: string | undefined | null): FunnelSessi
   if (typeof row.name === 'string') session.name = row.name
   if (typeof row.quizSessionId === 'string') session.quizSessionId = row.quizSessionId
   if (row.lang === 'en' || row.lang === 'ru') session.lang = row.lang
+  if (flow) session.flow = flow
+  if (row.recovery === true) session.recovery = true
   return session
 }
 
 /** Move session forward; never moves backward. Extends TTL. */
 export function advanceFunnelSession(session: FunnelSession, next: FunnelStep): FunnelSession {
-  const current = stepIndex(session.step)
-  const target = stepIndex(next)
+  const current = stepIndex(session.step, session.flow)
+  const target = stepIndex(next, session.flow)
+  // A recovery link is single-purpose: once the visitor is verified it becomes a normal 2-hour session.
+  const { recovery: _recovery, ...rest } = session
   return {
-    ...session,
+    ...rest,
     step: target > current ? next : session.step,
     exp: Date.now() + FUNNEL_TTL_MS,
   }
@@ -178,8 +228,21 @@ export function nextUrlAfter(
   step: FunnelStep,
   kit: FunnelKit,
   locale: AppLocale = DEFAULT_LOCALE,
+  flow?: FunnelFlow,
 ): string {
-  const i = stepIndex(step)
-  const next = FUNNEL_STEPS[Math.min(i + 1, FUNNEL_STEPS.length - 1)]!
+  const order = stepOrder(flow)
+  const i = Math.max(order.indexOf(step), 0)
+  const next = order[Math.min(i + 1, order.length - 1)]!
   return urlForFunnelStep(next, kit, locale)
+}
+
+/** Landing page of a flow (where an expired funnel session is sent back to). */
+export function flowLandingPath(flow: FunnelFlow): string {
+  return flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'
+}
+
+/** Step number shown in the funnel header (checkout is step 1) and the total, per flow. */
+export function flowProgress(flow: FunnelFlow): { total: number; accountStep: number } {
+  const total = flow === 'sub_in' ? 5 : 6
+  return { total, accountStep: total }
 }

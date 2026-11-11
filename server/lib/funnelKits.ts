@@ -1,4 +1,4 @@
-import type { KitCheckoutKey } from './funnelToken.js'
+import type { FunnelFlow, KitCheckoutKey } from './funnelToken.js'
 
 type KitProduct = {
   name: string
@@ -73,4 +73,14 @@ export function resolveLandingKit(input: { kit?: string; variant?: string }): 's
   if (variant === 'guide-claude' || variant === 'guide') return 'guide'
   if (variant === 'starter' || variant === 'default' || variant === '') return 'starter'
   return null
+}
+
+/** `profiles.funnelSource` / Stripe `metadata.funnel` of the account-last Starter Kit funnels (A/B reporting). */
+export function flowFunnelSource(flow: FunnelFlow): string {
+  return flow === 'sub_in' ? 'start-kit-sub-in' : 'start-kit-sub-out'
+}
+
+/** Landing the Checkout `cancel_url` returns to. */
+export function flowCancelPath(flow: FunnelFlow): string {
+  return flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'
 }
