@@ -3,8 +3,14 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { db } from '../db/index.js'
 import { checkoutOffers } from '../db/schema.js'
-import { createDollarCheckoutSession } from '../lib/funnelCheckout.js'
-import { landingProduct, quizProduct, resolveLandingKit } from '../lib/funnelKits.js'
+import { findExistingAccess, sendExistingAccessEmail } from '../lib/funnelAccess.js'
+import {
+  createDollarCheckoutSession,
+  createSubInCheckoutSession,
+  PriceNotConfiguredError,
+  publicOrigin,
+} from '../lib/funnelCheckout.js'
+import { flowCancelPath, flowFunnelSource, landingProduct, quizProduct, resolveLandingKit } from '../lib/funnelKits.js'
 import { ALREADY_SUBSCRIBED_ERROR, findBlockingSubscription } from '../lib/subscription.js'
 import { getStripe, isStripeConfigured } from '../lib/stripe.js'
 
@@ -27,6 +33,10 @@ const trialSchema = z.object({
 const landingCheckoutSchema = z.object({
   variant: z.string().optional(),
   kit: z.string().optional(),
+  /** Starter Kit Sub Out / Sub In (registration after the upsells). */
+  flow: z.enum(['sub_out', 'sub_in']).optional(),
+  name: z.string().trim().max(200).optional(),
+  email: z.string().trim().max(320).optional(),
   block: z.string().optional(),
   exit_bonus: z.boolean().optional(),
   lang: z.enum(['en', 'ru']).optional().default('en'),
@@ -119,10 +129,13 @@ function appendUtmMetadata(
   }
 }
 
+const EMAIL_SHAPE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
+
 checkoutRoutes.post('/checkout', async (c) => {
-  const parsed = landingCheckoutSchema.safeParse(await c.req.json())
+  const parsed = landingCheckoutSchema.safeParse(await c.req.json().catch(() => null))
   if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
-  const kit = resolveLandingKit({ kit: parsed.data.kit, variant: parsed.data.variant })
+  const flow = parsed.data.flow
+  const kit = flow ? 'starter' : resolveLandingKit({ kit: parsed.data.kit, variant: parsed.data.variant })
   if (!kit) return c.json({ error: 'Unknown funnel kit' }, 400)
   if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
   const product = landingProduct(kit)
@@ -130,23 +143,49 @@ checkoutRoutes.post('/checkout', async (c) => {
   const metadata: Record<string, string> = {
     kit,
     lang,
-    funnel: product.funnelSource,
+    funnel: flow ? flowFunnelSource(flow) : product.funnelSource,
   }
+  if (flow) metadata.flow = flow
   if (parsed.data.block) metadata.block = parsed.data.block
   if (parsed.data.exit_bonus) metadata.exit_bonus = '1'
   appendUtmMetadata(metadata, parsed.data.utm)
   try {
+    if (flow === 'sub_in') {
+      const email = (parsed.data.email ?? '').toLowerCase()
+      const name = parsed.data.name ?? ''
+      if (!EMAIL_SHAPE.test(email) || !name) return c.json({ error: 'Name and email are required' }, 400)
+      // Already a member: no second subscription or $1 charge; email them a way in instead.
+      const access = await findExistingAccess(email)
+      if (access && (access.hasKit || access.hasSubscription)) {
+        await sendExistingAccessEmail({ email, access, kit, flow, lang, origin: publicOrigin(c) })
+        return c.json({ error: 'already_member', code: 'already_member' }, 409)
+      }
+      const { url } = await createSubInCheckoutSession({
+        c,
+        kit,
+        productName: product.name,
+        productDescription: product.description,
+        lang,
+        cancelPath: flowCancelPath(flow),
+        metadata,
+        email,
+        name,
+      })
+      return c.json({ url })
+    }
     const { url } = await createDollarCheckoutSession({
       c,
       kit,
       productName: product.name,
       productDescription: product.description,
       lang,
-      cancelPath: product.cancelPath,
+      cancelPath: flow ? flowCancelPath(flow) : product.cancelPath,
       metadata,
+      flow,
     })
     return c.json({ url })
   } catch (error) {
+    if (error instanceof PriceNotConfiguredError) return c.json({ error: error.message }, 503)
     const message = error instanceof Error ? error.message : 'Stripe request failed'
     return c.json({ error: message }, 502)
   }

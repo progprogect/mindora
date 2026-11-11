@@ -8,6 +8,7 @@ import { logger } from 'hono/logger'
 import { createLmsRoutes } from 'successwise-app/lms-api'
 import { runMigrations } from './db/migrate.js'
 import { loadEnv } from './env.js'
+import { startActivationEmailPoller } from './lib/funnelActivation.js'
 import { startTrialReminderPoller } from './lib/funnelReminders.js'
 import { checkoutRoutes } from './routes/checkout.js'
 import { funnelBillingRoutes } from './routes/funnelBilling.js'
@@ -77,6 +78,7 @@ async function main() {
     await runMigrations()
     console.log('[api] migrations applied')
     startTrialReminderPoller()
+    startActivationEmailPoller()
   } catch (error: unknown) {
     console.error('[api] migrations failed; SPA is up, API needs a reachable Postgres', error)
   }

@@ -18,6 +18,8 @@ export async function ensureFunnelUser(input: {
   kit: KitCheckoutKey
   lang?: 'en' | 'ru'
   stripeCustomerId: string
+  /** Overrides the kit's default `funnelSource` (A/B funnels report under their own source). */
+  funnelSource?: string
 }): Promise<{ userId: string; created: boolean }> {
   const email = normalizeEmail(input.email)
   let userId = await findUserIdByEmail(email)
@@ -30,7 +32,7 @@ export async function ensureFunnelUser(input: {
   if (!userId) throw new Error('Failed to create funnel user')
 
   const [existing] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1)
-  const funnelSource = kitProduct(input.kit).funnelSource
+  const funnelSource = input.funnelSource || kitProduct(input.kit).funnelSource
   const locale = input.lang === 'ru' ? 'ru' : 'en'
   const name = (input.name ?? '').trim()
 
@@ -88,6 +90,7 @@ export async function fulfillDollarKitPurchase(input: {
   lang?: 'en' | 'ru'
   stripeCustomerId: string
   paymentMethodId?: string
+  funnelSource?: string
 }): Promise<{ userId: string }> {
   const { userId } = await ensureFunnelUser(input)
   await recordKitPurchase(userId, input.kit)
@@ -103,7 +106,15 @@ export async function paymentMethodFromCheckoutSession(
   const stripe = getStripe()
   const piRef = session.payment_intent
   const piId = typeof piRef === 'string' ? piRef : piRef?.id
-  if (!piId) return ''
+  if (!piId) {
+    // Subscription Checkout (Sub In) has no PaymentIntent: the card sits on the subscription.
+    const subRef = session.subscription
+    const subId = typeof subRef === 'string' ? subRef : subRef?.id
+    if (!subId) return ''
+    const sub = await stripe.subscriptions.retrieve(subId)
+    const pm = sub.default_payment_method
+    return typeof pm === 'string' ? pm : pm?.id ?? ''
+  }
   const pi = await stripe.paymentIntents.retrieve(piId)
   return typeof pi.payment_method === 'string' ? pi.payment_method : pi.payment_method?.id ?? ''
 }

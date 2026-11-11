@@ -17,6 +17,7 @@ import {
   resolveFunnelUpsell,
   resolveMembershipPriceId,
 } from '../lib/funnelOffers.js'
+import { cancelActivationEmails } from '../lib/funnelActivation.js'
 import { scheduleTrialChargeReminder } from '../lib/funnelReminders.js'
 import {
   FUNNEL_COOKIE,
@@ -103,10 +104,15 @@ async function cardPaymentMethodId(customerId: string): Promise<string | null> {
 async function resolveBillingContext(
   token: string | undefined,
   cookieToken: string | undefined,
-): Promise<{ ok: true; ctx: BillingCtx } | { ok: false; status: 400 | 401 | 409; message: string; code: string }> {
+): Promise<{ ok: true; ctx: BillingCtx } | { ok: false; status: 400 | 401 | 403 | 409; message: string; code: string }> {
   const session = verifyFunnelToken(token) || verifyFunnelToken(cookieToken)
   if (!session) {
     return { ok: false, status: 401, message: 'Funnel session expired. Start again from your kit page.', code: 'funnel_session_expired' }
+  }
+  // The emailed activation link only opens /account/verify. Whoever holds it (a forwarded e-mail, a shared mailbox)
+  // must not be able to charge the saved card or start a subscription without signing in with the code.
+  if (session.recovery) {
+    return { ok: false, status: 403, message: 'This link only activates your account.', code: 'recovery_scope' }
   }
 
   const email = (session.email || '').trim().toLowerCase()
@@ -148,10 +154,11 @@ function nextStepAfterMembership(): FunnelStep {
   return 'upsell_prompts'
 }
 
-function nextStepAfterUpsell(product: string): FunnelStep {
+function nextStepAfterUpsell(product: string, flow?: FunnelSession['flow']): FunnelStep {
   if (product === 'prompt_library') return 'upsell_planners'
   if (product === 'planners_bundle') return 'upsell_coach'
-  return 'onboard'
+  // "Account last" flows activate the account after the last upsell.
+  return flow ? 'verify' : 'onboard'
 }
 
 /**
@@ -449,7 +456,7 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
     return c.json({ success: false, message: resolved.message, code: resolved.code }, resolved.status)
   }
   const { ctx } = resolved
-  const next = nextStepAfterUpsell(offer.product)
+  const next = nextStepAfterUpsell(offer.product, ctx.session.flow)
 
   if (await ownsOffer(ctx.userId, offer.offerSlug)) {
     return c.json(advanceResponse(c, ctx.session, next, { alreadyPurchased: true }))
@@ -571,10 +578,18 @@ funnelBillingRoutes.post('/funnel/bind', async (c) => {
     .limit(1)
   if (!row) return c.json({ error: 'Not signed in', code: 'unauthorized' }, 401)
 
+  // Signed in with the emailed code: the account is activated, so the "finish signing in" email is not needed.
+  try {
+    await cancelActivationEmails(row.userId)
+  } catch (error) {
+    console.error('[funnel] cancel activation email failed', error)
+  }
+
   bumpFunnelCookie(
     c,
     { ...session, userId: row.userId, email: row.email, name: row.name ?? session.name },
-    parsed.data.advance ? 'membership' : session.step,
+    // Activation is the last step of the "account last" flows (then onboard); elsewhere it is the first (then membership).
+    parsed.data.advance ? (session.flow ? 'onboard' : 'membership') : session.step,
   )
   return c.json({ ok: true })
 })

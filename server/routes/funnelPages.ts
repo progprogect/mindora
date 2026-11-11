@@ -6,6 +6,7 @@ import { Hono } from 'hono'
 import { deleteCookie, getCookie, setCookie } from 'hono/cookie'
 import { loadEnv } from '../env.js'
 import { getRequestLocale } from '../lib/localeContext.js'
+import { findKnownName } from '../lib/funnelAccess.js'
 import { getStripe } from '../lib/stripe.js'
 import { fulfillKitCheckoutSession } from './stripeWebhook.js'
 import { withLocalePrefix, type AppLocale } from '../lib/localePath.js'
@@ -14,7 +15,11 @@ import {
   createFunnelSession,
   FUNNEL_COOKIE,
   FUNNEL_TTL_MS,
+  flowLandingPath,
+  flowProgress,
+  isFunnelFlow,
   isFunnelKit,
+  type FunnelFlow,
   type FunnelKit,
   type FunnelSession,
   type FunnelStep,
@@ -102,6 +107,8 @@ function withPreviewQuery(c: Context, path: string): string {
   if (kit && !u.searchParams.has('kit')) u.searchParams.set('kit', kit)
   const lang = c.req.query('lang')
   if (lang && !u.searchParams.has('lang')) u.searchParams.set('lang', lang)
+  const flow = c.req.query('flow')
+  if (flow && !u.searchParams.has('flow')) u.searchParams.set('flow', flow)
   return `${u.pathname}${u.search}`
 }
 
@@ -136,14 +143,26 @@ function funnelPayload(
     kit: session.kit,
     locale,
     preview: false,
-    nextUrl: nextUrlAfter(session.step === 'done' ? 'onboard' : session.step, session.kit, locale),
+    nextUrl: nextUrlAfter(session.step === 'done' ? 'onboard' : session.step, session.kit, locale, session.flow),
     day8: day8Iso(),
     dashboardUrl: withLocalePrefix(locale, '/app/dashboard'),
     email: session.email ?? '',
     name: session.name ?? '',
     stripePublishableKey: stripePublishableKey(),
+    ...flowPayload(session.flow),
     ...extras,
   }
+}
+
+/** Header progress for the "account last" funnels: the pages show "Step N of total" from these. */
+function flowPayload(flow: FunnelFlow | undefined): Record<string, unknown> {
+  if (!flow) return {}
+  return { flow, accountLast: true, stepTotal: flowProgress(flow).total }
+}
+
+/** Where the signed-in-to-nothing visitor goes when the funnel session is missing or expired. */
+function landingFor(flow: FunnelFlow | undefined): string {
+  return flow ? flowLandingPath(flow) : '/start'
 }
 
 function redirectToCurrent(c: Context, session: FunnelSession) {
@@ -152,32 +171,45 @@ function redirectToCurrent(c: Context, session: FunnelSession) {
   return c.redirect(urlForFunnelStep(session.step, session.kit, locale), 302)
 }
 
+function requestedFlow(c: Context): FunnelFlow | undefined {
+  const raw = c.req.query('flow')
+  return isFunnelFlow(raw) ? raw : undefined
+}
+
 /** Requested page step vs session progress — skip already finished steps. */
 function guardStep(c: Context, session: FunnelSession, requested: FunnelStep): Response | null {
   if (session.step === 'done') {
     return c.redirect(withLocalePrefix(funnelLocale(c, session), '/app/dashboard'), 302)
   }
-  const have = stepIndex(session.step)
-  const want = stepIndex(requested)
-  if (want < have) return redirectToCurrent(c, session)
+  const have = stepIndex(session.step, session.flow)
+  const want = stepIndex(requested, session.flow)
+  // A page that is not part of this flow (e.g. /account/membership in Sub In) sends the visitor to their current step.
+  if (want < 0 || want < have) return redirectToCurrent(c, session)
   return null
+}
+
+type PageFile = string | ((flow: FunnelFlow | undefined) => string)
+
+function resolvePageFile(pageFile: PageFile, flow: FunnelFlow | undefined): string {
+  return typeof pageFile === 'string' ? pageFile : pageFile(flow)
 }
 
 function serveAccountPage(
   c: Context,
-  pageFile: string,
+  pageFile: PageFile,
   requested: FunnelStep,
   extras: (session: FunnelSession) => Record<string, unknown> = () => ({}),
 ) {
   if (previewAllowed(c)) {
-    const kit = (c.req.query('kit') as FunnelKit) || 'guide'
+    const flow = requestedFlow(c)
+    const kit = (c.req.query('kit') as FunnelKit) || (flow ? 'starter' : 'guide')
     const locale = funnelLocale(c)
-    const previewExtras = extras(createFunnelSession({ kit, step: requested }))
+    const previewExtras = extras(createFunnelSession({ kit, step: requested, flow }))
     const nextFromExtras =
       typeof previewExtras.nextUrl === 'string'
         ? previewExtras.nextUrl
-        : nextUrlAfter(requested, kit, locale)
-    const html = injectFunnel(loadPage(pageFile), {
+        : nextUrlAfter(requested, kit, locale, flow)
+    const html = injectFunnel(loadPage(resolvePageFile(pageFile, flow)), {
       token: 'PREVIEW',
       kit,
       locale,
@@ -187,6 +219,7 @@ function serveAccountPage(
       email: c.req.query('email') || 'preview@mindoraacademy.com',
       name: c.req.query('name') || '',
       stripePublishableKey: stripePublishableKey(),
+      ...flowPayload(flow),
       ...previewExtras,
       nextUrl: withPreviewQuery(c, nextFromExtras),
     })
@@ -194,7 +227,7 @@ function serveAccountPage(
   }
 
   const found = readSession(c)
-  if (!found) return c.redirect(withLocalePrefix(funnelLocale(c), '/start'), 302)
+  if (!found) return c.redirect(withLocalePrefix(funnelLocale(c), landingFor(requestedFlow(c))), 302)
 
   const session = syncSessionLang(c, found.session)
   const blocked = guardStep(c, session, requested)
@@ -205,7 +238,7 @@ function serveAccountPage(
   setFunnelCookie(c, token)
 
   const html = injectFunnel(
-    loadPage(pageFile),
+    loadPage(resolvePageFile(pageFile, session.flow)),
     funnelPayload(c, session, token, extras(session)),
   )
   return htmlResponse(c, html)
@@ -234,6 +267,7 @@ funnelPageRoutes.get('/dev/funnel-enter', (c) => {
     : 'verify'
   const { token } = mintFunnelToken(kit, {
     step,
+    flow: requestedFlow(c),
     email: c.req.query('email') || 'dev@mindoraacademy.com',
     name: c.req.query('name') || 'Dev User',
   })
@@ -264,6 +298,26 @@ funnelPageRoutes.get('/start-kit', (c) => {
   return htmlResponse(c, html)
 })
 
+funnelPageRoutes.get('/start-kit-sub-out', (c) => {
+  const html = injectFunnel(loadPage('landing-sub-out.html'), {
+    kit: 'starter',
+    flow: 'sub_out',
+    locale: getRequestLocale(c),
+    preview: false,
+  })
+  return htmlResponse(c, html)
+})
+
+funnelPageRoutes.get('/start-kit-sub-in', (c) => {
+  const html = injectFunnel(loadPage('landing-sub-in.html'), {
+    kit: 'starter',
+    flow: 'sub_in',
+    locale: getRequestLocale(c),
+    preview: false,
+  })
+  return htmlResponse(c, html)
+})
+
 /**
  * Safety net for a late or missing `checkout.session.completed` webhook: on return from Stripe Checkout,
  * fulfil the kit purchase here so `/account/membership` finds the Stripe customer and saved card.
@@ -277,7 +331,9 @@ async function fulfillCheckoutReturn(c: Context): Promise<void> {
   try {
     const checkout = await getStripe().checkout.sessions.retrieve(sessionId)
     const metadata = (checkout.metadata as Record<string, string> | null) ?? {}
-    if (checkout.mode !== 'payment' || checkout.payment_status !== 'paid') return
+    // Sub Out pays in `payment` mode; Sub In pays in `subscription` mode ($1 kit invoice, trial subscription).
+    const paid = checkout.payment_status === 'paid' || checkout.payment_status === 'no_payment_required'
+    if ((checkout.mode !== 'payment' && checkout.mode !== 'subscription') || !paid) return
     if (metadata.funnel_sid !== found.session.sid) return
     await fulfillKitCheckoutSession(checkout, metadata)
   } catch (error) {
@@ -288,21 +344,37 @@ async function fulfillCheckoutReturn(c: Context): Promise<void> {
 
 funnelPageRoutes.get('/account/verify', async (c) => {
   await fulfillCheckoutReturn(c)
+  // The emailed activation link carries no name; take it from the account so the page does not ask for it again.
+  const sessionForName = readSession(c)?.session
+  let knownName = sessionForName?.name ?? ''
+  if (!knownName && sessionForName?.flow && sessionForName.email) {
+    knownName = await findKnownName(sessionForName.email).catch(() => '')
+  }
   return serveAccountPage(c, 'verify.html', 'verify', (session) => ({
-    nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/membership'),
+    // "Account last" flows verify at the very end, then onboard; the other funnels verify first, then membership.
+    nextUrl: withLocalePrefix(funnelLocale(c, session), session.flow ? '/account/onboard' : '/account/membership'),
     email: session.email ?? c.req.query('email') ?? '',
-    name: session.name ?? '',
+    name: session.name || knownName,
   }))
 })
 
-funnelPageRoutes.get('/account/membership', (c) =>
-  serveAccountPage(c, 'membership.html', 'membership', (session) => ({
-    nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/upsell?step=prompts'),
-    day8: day8Iso(),
-  })),
-)
+funnelPageRoutes.get('/account/membership', async (c) => {
+  // Sub Out lands here straight from Stripe: make sure the account and the saved card exist before the trial is started.
+  await fulfillCheckoutReturn(c)
+  return serveAccountPage(
+    c,
+    (flow) => (flow === 'sub_out' ? 'membership-sub-out.html' : 'membership.html'),
+    'membership',
+    (session) => ({
+      nextUrl: withLocalePrefix(funnelLocale(c, session), '/account/upsell?step=prompts'),
+      day8: day8Iso(),
+    }),
+  )
+})
 
-funnelPageRoutes.get('/account/upsell', (c) => {
+funnelPageRoutes.get('/account/upsell', async (c) => {
+  // Sub In lands here straight from Stripe (step=prompts&session_id=...): fulfil if the webhook is late.
+  await fulfillCheckoutReturn(c)
   const q = c.req.query('step') || 'prompts'
   const requested = stepFromUpsellQuery(q)
   if (!requested) {
@@ -316,7 +388,9 @@ funnelPageRoutes.get('/account/upsell', (c) => {
         ? '/account/upsell?step=planners'
         : requested === 'upsell_planners'
           ? '/account/upsell?step=coach'
-          : '/account/onboard'
+          : session.flow
+            ? '/account/verify'
+            : '/account/onboard'
     return { nextUrl: withLocalePrefix(locale, next), kit: session.kit }
   })
 })
@@ -329,13 +403,15 @@ export async function maybeServeFunnelOnboard(c: Context, next: () => Promise<vo
   if (c.req.method !== 'GET' && c.req.method !== 'HEAD') return next()
 
   if (previewAllowed(c)) {
-    const kit = (c.req.query('kit') as FunnelKit) || 'guide'
+    const flow = requestedFlow(c)
+    const kit = (c.req.query('kit') as FunnelKit) || (flow ? 'starter' : 'guide')
     const locale = funnelLocale(c)
     const html = injectFunnel(loadPage('onboard.html'), {
       token: 'PREVIEW',
       kit,
       locale,
       preview: true,
+      ...flowPayload(flow),
       dashboardUrl: withLocalePrefix(locale, '/app/dashboard'),
     })
     return htmlResponse(c, html)

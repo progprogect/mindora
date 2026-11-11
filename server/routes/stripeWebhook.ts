@@ -10,7 +10,10 @@ import {
   fulfillDollarKitPurchase,
   paymentMethodFromCheckoutSession,
 } from '../lib/funnelFulfillment.js'
-import { isKitCheckoutKey } from '../lib/funnelToken.js'
+import { findExistingAccess, sendExistingAccessEmail } from '../lib/funnelAccess.js'
+import { scheduleActivationEmail } from '../lib/funnelActivation.js'
+import { flowFunnelSource } from '../lib/funnelKits.js'
+import { type FunnelFlow, isFunnelFlow, isKitCheckoutKey, type KitCheckoutKey } from '../lib/funnelToken.js'
 import { isInvoicePayment, isTrialFunnelPayment, stripeRefId } from '../lib/invoicePayment.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
 import { TRIAL_DAYS } from '../lib/trial.js'
@@ -270,10 +273,19 @@ async function linkCustomerIfKnown(
 }
 
 async function handleCheckoutSessionCompleted(object: Record<string, unknown>): Promise<void> {
-  if (object.mode !== 'payment') return
-  if (object.payment_status && object.payment_status !== 'paid') return
   const metadata = (object.metadata as Record<string, string> | undefined) ?? {}
   const session = object as unknown as Stripe.Checkout.Session
+
+  // Starter Kit Sub In pays in `subscription` mode ($1 kit invoice + trial subscription); every other kit, and
+  // Sub Out, pays in `payment` mode. A subscription session is only ours when it carries a funnel flow.
+  if (object.mode === 'subscription') {
+    if (!metadata.flow || !metadata.kit || !isKitCheckoutKey(metadata.kit)) return
+    if (session.payment_status !== 'paid' && session.payment_status !== 'no_payment_required') return
+    await fulfillKitCheckoutSession(session, metadata)
+    return
+  }
+  if (object.mode !== 'payment') return
+  if (object.payment_status && object.payment_status !== 'paid') return
 
   if (metadata.kit && isKitCheckoutKey(metadata.kit)) {
     await fulfillKitCheckoutSession(session, metadata)
@@ -290,6 +302,83 @@ async function handleCheckoutSessionCompleted(object: Record<string, unknown>): 
   } else {
     console.log('[stripe webhook] offerSlug without userId', metadata.offerSlug)
   }
+}
+
+/** Per-Checkout claim so the webhook and the return page cannot both fulfil (or both refund) one session. */
+async function claimKitSession(sessionId: string, customerId: string, email: string): Promise<boolean> {
+  const claimed = await db
+    .insert(processedStripePayments)
+    .values({ paymentIntentId: `kit_session:${sessionId}`, customerId, email })
+    .onConflictDoNothing({ target: processedStripePayments.paymentIntentId })
+    .returning({ id: processedStripePayments.id })
+  return claimed.length > 0
+}
+
+async function releaseKitSession(sessionId: string): Promise<void> {
+  await db
+    .delete(processedStripePayments)
+    .where(eq(processedStripePayments.paymentIntentId, `kit_session:${sessionId}`))
+}
+
+/** The PaymentIntent that paid THIS Checkout (Sub Out: the session PI; Sub In: the first invoice's PI). */
+async function sessionPaymentIntentId(session: Stripe.Checkout.Session): Promise<string> {
+  const direct = stripeRefId(session.payment_intent)
+  if (direct) return direct
+  let invoiceId = stripeRefId((session as unknown as { invoice?: unknown }).invoice)
+  if (!invoiceId) {
+    // Not every Checkout payload carries `invoice`; the subscription always knows its first invoice.
+    const subscriptionId = stripeRefId(session.subscription)
+    if (!subscriptionId) return ''
+    const sub = await getStripe().subscriptions.retrieve(subscriptionId)
+    invoiceId = stripeRefId(sub.latest_invoice)
+  }
+  if (!invoiceId) return ''
+  const payments = await getStripe().invoicePayments.list({ invoice: invoiceId, limit: 5 })
+  for (const row of payments.data) {
+    const pi = stripeRefId(row.payment?.payment_intent)
+    if (pi) return pi
+  }
+  return ''
+}
+
+/** Bought again while already owning the kit: undo the new charge/subscription, keep the original access. */
+async function undoDuplicateKitCheckout(
+  session: Stripe.Checkout.Session,
+  metadata: Record<string, string>,
+  existing: { userId: string; name: string },
+  email: string,
+  lang: 'en' | 'ru',
+): Promise<void> {
+  const stripe = getStripe()
+  const subscriptionId = stripeRefId(session.subscription)
+  if (subscriptionId) {
+    try {
+      await stripe.subscriptions.cancel(subscriptionId, undefined, { idempotencyKey: `kit_dup_cancel_${session.id}` })
+    } catch (error) {
+      console.error('[stripe webhook] duplicate kit: cancel subscription failed', subscriptionId, error)
+    }
+  }
+  try {
+    const paymentIntentId = await sessionPaymentIntentId(session)
+    if (paymentIntentId && (session.amount_total ?? 0) > 0) {
+      await stripe.refunds.create(
+        { payment_intent: paymentIntentId },
+        { idempotencyKey: `kit_dup_refund_${session.id}` },
+      )
+    }
+  } catch (error) {
+    console.error('[stripe webhook] duplicate kit: refund failed', session.id, error)
+  }
+  const kit = metadata.kit as KitCheckoutKey
+  const flow = isFunnelFlow(metadata.flow) ? metadata.flow : undefined
+  await sendExistingAccessEmail({
+    email,
+    access: { userId: existing.userId, name: existing.name, hasKit: true, hasSubscription: false },
+    kit,
+    flow,
+    lang,
+  })
+  console.log('[stripe webhook] duplicate kit purchase undone', { sessionId: session.id, kit, userId: existing.userId })
 }
 
 /** Shared by the webhook and by the Checkout return page (see `/account/verify`); skips already-processed payments. */
@@ -320,11 +409,26 @@ export async function fulfillKitCheckoutSession(
     return
   }
 
-  const paymentMethodId = await paymentMethodFromCheckoutSession(session)
+  const flow = isFunnelFlow(metadata.flow) ? metadata.flow : undefined
   const lang = metadata.lang === 'ru' ? 'ru' : 'en'
   const name = metadata.name?.trim() || session.customer_details?.name?.trim() || undefined
 
+  // Account-last funnels: one fulfilment per Checkout, whichever of webhook / return page gets here first.
+  if (flow && !(await claimKitSession(session.id, customerId, email))) {
+    console.log('[stripe webhook] kit checkout already handled', session.id)
+    return
+  }
+
   try {
+    if (flow) {
+      const existing = await findExistingAccess(email)
+      if (existing?.hasKit) {
+        await undoDuplicateKitCheckout(session, metadata, { userId: existing.userId, name: existing.name }, email, lang)
+        return
+      }
+    }
+
+    const paymentMethodId = await paymentMethodFromCheckoutSession(session)
     const { userId } = await fulfillDollarKitPurchase({
       kit,
       email,
@@ -332,20 +436,48 @@ export async function fulfillKitCheckoutSession(
       lang,
       stripeCustomerId: customerId,
       paymentMethodId: paymentMethodId || undefined,
+      funnelSource: flow ? flowFunnelSource(flow) : undefined,
     })
     if (paymentIntentId) {
       await markProcessedPayment(paymentIntentId, customerId, email)
     }
+    if (flow) await finishFlowFulfilment(session, metadata, { userId, email, lang, kit, flow })
     await sendKitReceiptSafely(session, email)
     console.log('[stripe webhook] kit fulfilled', {
       sessionId: session.id,
       kit,
+      flow,
       userId,
       customerId,
     })
   } catch (error) {
     console.error('[stripe webhook] kit fulfillment failed', session.id, error)
+    // Let the retry (Stripe re-delivery or the return page) run the whole fulfilment again.
+    if (flow) await releaseKitSession(session.id).catch(() => undefined)
     throw error
+  }
+}
+
+/** Account-last funnels: subscription link (Sub In) and the delayed "finish signing in" email. */
+async function finishFlowFulfilment(
+  session: Stripe.Checkout.Session,
+  metadata: Record<string, string>,
+  input: { userId: string; email: string; lang: 'en' | 'ru'; kit: KitCheckoutKey; flow: FunnelFlow },
+): Promise<void> {
+  const subscriptionId = stripeRefId(session.subscription)
+  if (subscriptionId) {
+    const sub = await getStripe().subscriptions.retrieve(subscriptionId)
+    await linkStripeCustomer(input.userId, stripeRefId(session.customer), sub)
+  }
+  if (metadata.funnel_sid) {
+    await scheduleActivationEmail({
+      userId: input.userId,
+      email: input.email,
+      sid: metadata.funnel_sid,
+      kit: input.kit,
+      flow: input.flow,
+      locale: input.lang,
+    })
   }
 }
 
