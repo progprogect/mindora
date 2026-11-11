@@ -188,6 +188,97 @@ export async function sendTrialWelcomeEmail(input: TrialWelcomeEmail): Promise<v
   }
 }
 
+export type FunnelAccessEmail = {
+  to: string
+  /** One-time-code sign-in page, signed link (valid 5 days). */
+  link: string
+  /** `activate`: left the funnel before activating. `access`: bought again but already has access. */
+  kind: 'activate' | 'access'
+  locale?: MailLocale
+}
+
+/** Starter Kit Sub Out / Sub In: gets the buyer into the platform (email confirmation by code, then sign-in). */
+export async function sendFunnelAccessEmail(input: FunnelAccessEmail): Promise<void> {
+  const env = loadEnv()
+  const locale = resolveMailLocale(input.locale)
+  const origin = publicOrigin()
+  const year = new Date().getFullYear()
+  const copy = funnelAccessCopy(input.kind, locale)
+
+  if (!env.AUTH_RESEND_KEY) {
+    if (env.NODE_ENV === 'production') {
+      console.error(`[funnel-access-mail] AUTH_RESEND_KEY missing; skipped ${input.to}`)
+      return
+    }
+    console.log(`[funnel-access-mail] ${input.to} (${input.kind}) → ${input.link}`)
+    return
+  }
+
+  const resend = new Resend(env.AUTH_RESEND_KEY)
+  const { error } = await resend.emails.send({
+    from: env.AUTH_EMAIL,
+    to: input.to,
+    subject: `${BRAND} — ${copy.subject}`,
+    text: [copy.title, '', copy.body, '', copy.step, '', `${copy.cta}:`, input.link, '', copy.expires, '', `— ${locale === 'ru' ? 'Команда' : 'The'} ${BRAND}`].join('\n'),
+    html: brandedEmailHtml({
+      origin,
+      year,
+      locale,
+      innerHtml: `<tr>
+            <td style="padding:8px 28px 0;">
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">${copy.title}</h1>
+              <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">${copy.body}</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">${copy.step}</p>
+              <p style="margin:0 0 24px;text-align:center;">${ctaButton(input.link, copy.cta)}</p>
+              <p style="margin:0 0 24px;font-size:13px;line-height:1.5;color:${GREY};">${copy.expires}</p>
+            </td>
+          </tr>`,
+    }),
+  })
+  if (error) {
+    throw new Error(JSON.stringify(error))
+  }
+}
+
+function funnelAccessCopy(kind: FunnelAccessEmail['kind'], locale: MailLocale) {
+  if (locale === 'ru') {
+    return kind === 'access'
+      ? {
+          subject: 'У вас уже есть доступ',
+          title: 'У вас уже есть доступ к Mindora Academy',
+          body: 'Мы заметили повторную оплату набора. Он уже есть в вашем аккаунте, поэтому платёж в $1 будет возвращён автоматически.',
+          step: 'Чтобы войти, нажмите кнопку: мы попросим подтвердить email кодом из письма.',
+          cta: 'Войти в Mindora Academy',
+          expires: 'Ссылка действует 5 дней.',
+        }
+      : {
+          subject: 'Завершите вход в Mindora Academy',
+          title: 'Ваш аккаунт готов — осталось подтвердить email',
+          body: 'Вы оплатили набор, но ещё не вошли в платформу. Весь купленный доступ уже ждёт вас в аккаунте.',
+          step: 'Нажмите кнопку, подтвердите email кодом из письма — и вы внутри.',
+          cta: 'Подтвердить email и войти',
+          expires: 'Ссылка действует 5 дней.',
+        }
+  }
+  return kind === 'access'
+    ? {
+        subject: 'You already have access',
+        title: 'You already have access to Mindora Academy',
+        body: 'We noticed a second payment for the kit. It is already in your account, so the $1 payment will be refunded automatically.',
+        step: 'Tap the button to sign in. We will ask you to confirm your email with a code.',
+        cta: 'Sign in to Mindora Academy',
+        expires: 'This link is valid for 5 days.',
+      }
+    : {
+        subject: 'Finish signing in to Mindora Academy',
+        title: 'Your account is ready — just confirm your email',
+        body: 'You paid for the kit but have not signed in to the platform yet. Everything you bought is already waiting in your account.',
+        step: 'Tap the button, confirm your email with the code we send, and you are in.',
+        cta: 'Confirm email and sign in',
+        expires: 'This link is valid for 5 days.',
+      }
+}
+
 /** Trial-end charge reminders are not sent. */
 export async function sendTrialChargeReminderEmail(_input: TrialChargeReminderEmail): Promise<void> {}
 
