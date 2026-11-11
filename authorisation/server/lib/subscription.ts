@@ -295,7 +295,10 @@ export async function maybeSendTrialWelcomeEmail(userId: string, email: string):
     .returning({ id: profiles.id })
   if (!claimed[0]) return
 
-  const planLabel = planLabelFromFunnel(profile.funnelSource || (await funnelFromStripe(userId)))
+  const source = profile.funnelSource || (await funnelFromStripe(userId))
+  // Account-last Starter Kit funnels (Sub In / Sub Out) do not send the "trial has started" email by agreement with the client.
+  if (source === 'start-kit-sub-in' || source === 'start-kit-sub-out') return
+  const planLabel = planLabelFromFunnel(source)
   try {
     await sendTrialWelcomeEmail({
       to,

@@ -646,13 +646,23 @@ function mindoraStripe() {
   if (!window.__mindoraStripe) window.__mindoraStripe = Stripe(FUNNEL.stripePublishableKey);
   return window.__mindoraStripe;
 }
+/* запрос не должен висеть вечно: через 45 с кнопка возвращается и показывает ошибку */
+async function postSubscribe(body) {
+  const ctrl = new AbortController(), t = setTimeout(() => ctrl.abort(), 45000);
+  try {
+    const r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: ctrl.signal });
+    const data = await r.json().catch(() => ({ success: false, message: 'Unexpected server response' }));
+    return { r, data };
+  } catch (e) {
+    throw new Error(e && e.name === 'AbortError' ? 'The request took too long' : 'Network error');
+  } finally { clearTimeout(t); }
+}
 async function funnelSubscribe(plan) {
   const consent = document.querySelector('.legal').innerText;
   const terms_accepted = document.querySelector('.consent .ck').innerText;
   const lang = (window.MindoraI18n && MindoraI18n.lang) || 'en';
   const body = { token: FUNNEL.token, plan, consent, terms_accepted, lang };
-  let r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-  let data = await r.json();
+  let { r, data } = await postSubscribe(body);
   if (data.requires_action && data.client_secret) {
     const stripe = mindoraStripe();
     if (!stripe) throw new Error('Card authentication required');
@@ -662,8 +672,7 @@ async function funnelSubscribe(plan) {
       ? await stripe.confirmCardSetup(data.client_secret, { payment_method: data.payment_method })
       : await stripe.handleNextAction({ clientSecret: data.client_secret });
     if (res.error) throw res.error;
-    r = await fetch('/api/funnel/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-    data = await r.json();
+    ({ r, data } = await postSubscribe(body));
   }
   if (!r.ok || data.success === false) throw new Error(data.message || 'Payment failed');
   if (data.token) FUNNEL.token = data.token;

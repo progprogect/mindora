@@ -10,6 +10,7 @@ const enabled = process.env.FUNNEL_DB_TESTS === '1' && Boolean(process.env.DATAB
 
 describe('kit checkout fulfilment for Sub In / Sub Out', { skip: !enabled }, async () => {
   process.env.STRIPE_SECRET_KEY ||= 'sk_test_stub'
+  process.env.STRIPE_MONTHLY_4999_PRICE_ID ||= 'price_test_4999'
   const { db, pool } = await import('../db/index.js')
   const { funnelActivationEmails, profiles, users } = await import('../db/schema.js')
   const { getStripe } = await import('./stripe.js')
@@ -114,5 +115,76 @@ describe('kit checkout fulfilment for Sub In / Sub Out', { skip: !enabled }, asy
     )
     assert.equal(calls.refunds.length, 1)
     assert.deepEqual((calls.refunds[0] as any[])[0], { payment_intent: 'pi_session_stub' })
+  })
+
+  describe('Sub In in `payment` mode: the webhook starts the trial subscription', () => {
+    const email2 = `flow-pay-${stamp}@example.test`
+    const created = [] as { params: any; opts: any }[]
+    let blocking: unknown[] = []
+    let failCreate = false
+    const payCheckout = (id: string) =>
+      ({
+        id,
+        mode: 'payment',
+        payment_status: 'paid',
+        customer: `cus_pay_${stamp}`,
+        subscription: null,
+        payment_intent: `pi_${id}`,
+        amount_total: 100,
+        created: Math.floor(Date.now() / 1000),
+        customer_details: { email: email2 },
+      }) as any
+    const payMeta = (sid: string) => ({ ...meta(sid), email: email2 })
+
+    stripe.paymentIntents.retrieve = async () => ({ payment_method: 'pm_saved' })
+    stripe.subscriptions.list = async () => ({ data: blocking })
+    stripe.subscriptions.create = async (params: any, opts: any) => {
+      if (failCreate) throw new Error('stripe down')
+      created.push({ params, opts })
+      return { id: `sub_new_${created.length}`, status: 'trialing', trial_end: Math.floor(Date.now() / 1000) + 3 * 86400, items: { data: [{ price: { unit_amount: 4999 } }] }, default_payment_method: 'pm_saved' }
+    }
+
+    after(async () => {
+      await db.delete(users).where(eq(users.email, email2))
+    })
+
+    it('starts the 3-day Academy PRO trial on the saved card, once', async () => {
+      await fulfillKitCheckoutSession(payCheckout(`cs_p1_${stamp}`), payMeta(`sid-p1-${stamp}`))
+      assert.equal(created.length, 1)
+      assert.equal(created[0]!.params.default_payment_method, 'pm_saved')
+      assert.equal(created[0]!.params.trial_period_days, 3)
+      assert.equal(created[0]!.params.items[0].price, 'price_test_4999')
+      assert.equal(created[0]!.opts.idempotencyKey, `kit_sub_cs_p1_${stamp}`)
+      await fulfillKitCheckoutSession(payCheckout(`cs_p1_${stamp}`), payMeta(`sid-p1-${stamp}`))
+      assert.equal(created.length, 1, 'webhook redelivery / return page does not start a second subscription')
+      const user = (await db.select().from(users).where(eq(users.email, email2)))[0]!
+      assert.equal(await hasSku(user.id, 'kit-starter'), true)
+    })
+
+    it('a Stripe failure while starting the trial is retried (no stuck claim)', async () => {
+      const retryEmail = `flow-retry-${stamp}@example.test`
+      const checkout = { ...payCheckout(`cs_p2_${stamp}`), customer_details: { email: retryEmail } }
+      const metadata = { ...payMeta(`sid-p2-${stamp}`), email: retryEmail }
+      failCreate = true
+      await assert.rejects(() => fulfillKitCheckoutSession(checkout, metadata), /stripe down/)
+      failCreate = false
+      const before = created.length
+      await fulfillKitCheckoutSession(checkout, metadata)
+      assert.equal(created.length, before + 1)
+      await db.delete(users).where(eq(users.email, retryEmail))
+    })
+
+    it('does not create a second subscription when the customer already has one', async () => {
+      blocking = [{ id: 'sub_existing', status: 'trialing', items: { data: [{ price: { unit_amount: 4999 } }] }, trial_end: Math.floor(Date.now() / 1000) + 86400 }]
+      const other = `flow-has-${stamp}@example.test`
+      const before = created.length
+      await fulfillKitCheckoutSession(
+        { ...payCheckout(`cs_p3_${stamp}`), customer_details: { email: other } },
+        { ...payMeta(`sid-p3-${stamp}`), email: other },
+      )
+      assert.equal(created.length, before)
+      blocking = []
+      await db.delete(users).where(eq(users.email, other))
+    })
   })
 })

@@ -331,7 +331,7 @@ async function fulfillCheckoutReturn(c: Context): Promise<void> {
   try {
     const checkout = await getStripe().checkout.sessions.retrieve(sessionId)
     const metadata = (checkout.metadata as Record<string, string> | null) ?? {}
-    // Sub Out pays in `payment` mode; Sub In pays in `subscription` mode ($1 kit invoice, trial subscription).
+    // Both funnels pay in `payment` mode; `subscription` is kept for Sub In Checkouts created before the switch.
     const paid = checkout.payment_status === 'paid' || checkout.payment_status === 'no_payment_required'
     if ((checkout.mode !== 'payment' && checkout.mode !== 'subscription') || !paid) return
     if (metadata.funnel_sid !== found.session.sid) return

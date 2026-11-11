@@ -9,7 +9,6 @@ import {
   signFunnelToken,
 } from './funnelToken.js'
 import { getStripe } from './stripe.js'
-import { TRIAL_DAYS } from './trial.js'
 
 export function publicOrigin(c: Context): string {
   const configured = loadEnv().PUBLIC_ORIGIN.replace(/\/$/, '')
@@ -136,10 +135,10 @@ async function assertAcademyPrice(priceId: string): Promise<void> {
 }
 
 /**
- * Sub In: ONE subscription Checkout with two items — the $1 kit (one-time, charged on the first invoice) and
- * Mindora Academy PRO ($49.99/month, 3-day trial, shown as $0.00). The visitor's name and email come from the
- * landing form, so the funnel token already knows both. The card is saved on the subscription and reused by the
- * one-click upsells; the account is created by the `checkout.session.completed` webhook.
+ * Sub In: ONE Checkout with two lines — the $1 kit and Mindora Academy PRO shown as $0.00 (the 3-day trial
+ * subscription, $49.99/month afterwards, is created by the webhook). The visitor's name and email come from the
+ * landing form, so the funnel token already knows both. The card is saved by the payment and reused by the
+ * one-click upsells and the trial subscription; the account is created by the `checkout.session.completed` webhook.
  */
 export async function createSubInCheckoutSession(input: {
   c: Context
@@ -183,10 +182,17 @@ export async function createSubInCheckoutSession(input: {
     email: input.email,
   }
 
+  const proDescription =
+    input.lang === 'ru'
+      ? '40+ курсов в 5 направлениях · персональный план · сертификаты'
+      : '40+ courses in 5 paths · personal plan · certificates'
   const checkout = await stripe.checkout.sessions.create({
-    mode: 'subscription',
+    // `payment` mode on purpose: Stripe's subscription Checkout always prints "3 days free", "$49.99 / month after" and
+    // "Pay and start trial". The client wants "$1.00 today" with Academy PRO as a $0.00 line, so the trial
+    // subscription is created by the webhook right after the $1 payment, on the card saved here.
+    mode: 'payment',
     payment_method_types: ['card'],
-    payment_method_collection: 'always',
+    customer_creation: 'always',
     customer_email: input.email,
     locale: input.lang,
     wallet_options: { link: { display: 'never' } },
@@ -199,12 +205,18 @@ export async function createSubInCheckoutSession(input: {
           product_data: { name: input.productName, description: input.productDescription },
         },
       },
-      { quantity: 1, price: priceId },
+      {
+        quantity: 1,
+        price_data: {
+          currency: 'usd',
+          unit_amount: 0,
+          product_data: { name: 'Mindora Academy PRO', description: proDescription },
+        },
+      },
     ],
-    subscription_data: {
-      trial_period_days: TRIAL_DAYS,
-      description: 'Mindora Academy PRO: free for 3 days, then $49.99 per month. Cancel anytime.',
-      metadata,
+    payment_intent_data: {
+      setup_future_usage: 'off_session',
+      metadata: { ...metadata, funnel_token_sid: session.sid },
     },
     custom_text: {
       submit: {

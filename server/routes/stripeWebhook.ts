@@ -13,6 +13,7 @@ import {
 import { findExistingAccess, sendExistingAccessEmail } from '../lib/funnelAccess.js'
 import { scheduleActivationEmail } from '../lib/funnelActivation.js'
 import { flowFunnelSource } from '../lib/funnelKits.js'
+import { resolveMembershipPriceId } from '../lib/funnelOffers.js'
 import { type FunnelFlow, isFunnelFlow, isKitCheckoutKey, type KitCheckoutKey } from '../lib/funnelToken.js'
 import { isInvoicePayment, isTrialFunnelPayment, stripeRefId } from '../lib/invoicePayment.js'
 import { getStripe, isPlaceholderPrice } from '../lib/stripe.js'
@@ -314,6 +315,26 @@ async function claimKitSession(sessionId: string, customerId: string, email: str
   return claimed.length > 0
 }
 
+/**
+ * Marks that THIS Checkout already granted the kit. A retry of a half-finished fulfilment (e.g. Stripe was down while
+ * starting the trial) then continues instead of mistaking its own account for "bought again" and refunding it.
+ */
+async function markKitGranted(sessionId: string, customerId: string, email: string): Promise<void> {
+  await db
+    .insert(processedStripePayments)
+    .values({ paymentIntentId: `kit_granted:${sessionId}`, customerId, email })
+    .onConflictDoNothing({ target: processedStripePayments.paymentIntentId })
+}
+
+async function wasKitGranted(sessionId: string): Promise<boolean> {
+  const [row] = await db
+    .select({ id: processedStripePayments.id })
+    .from(processedStripePayments)
+    .where(eq(processedStripePayments.paymentIntentId, `kit_granted:${sessionId}`))
+    .limit(1)
+  return Boolean(row)
+}
+
 async function releaseKitSession(sessionId: string): Promise<void> {
   await db
     .delete(processedStripePayments)
@@ -420,7 +441,7 @@ export async function fulfillKitCheckoutSession(
   }
 
   try {
-    if (flow) {
+    if (flow && !(await wasKitGranted(session.id))) {
       const existing = await findExistingAccess(email)
       if (existing?.hasKit) {
         await undoDuplicateKitCheckout(session, metadata, { userId: existing.userId, name: existing.name }, email, lang)
@@ -438,11 +459,16 @@ export async function fulfillKitCheckoutSession(
       paymentMethodId: paymentMethodId || undefined,
       funnelSource: flow ? flowFunnelSource(flow) : undefined,
     })
-    if (paymentIntentId) {
+    if (flow) await markKitGranted(session.id, customerId, email)
+    // Account-last funnels mark the PaymentIntent only after the trial/e-mail steps, so a retry still runs them.
+    if (paymentIntentId && !flow) {
       await markProcessedPayment(paymentIntentId, customerId, email)
     }
-    if (flow) await finishFlowFulfilment(session, metadata, { userId, email, lang, kit, flow })
-    await sendKitReceiptSafely(session, email)
+    if (flow) {
+      await finishFlowFulfilment(session, metadata, { userId, email, lang, kit, flow, paymentMethodId })
+      if (paymentIntentId) await markProcessedPayment(paymentIntentId, customerId, email)
+    }
+    await sendKitReceiptSafely(session, email, { flow, lang })
     console.log('[stripe webhook] kit fulfilled', {
       sessionId: session.id,
       kit,
@@ -458,16 +484,70 @@ export async function fulfillKitCheckoutSession(
   }
 }
 
+/**
+ * Sub In: the $1 payment is done and the card is saved; start Mindora Academy PRO with the 3-day trial on that card.
+ * Idempotent (Stripe idempotency key + "already has a blocking subscription" check), so a redelivered webhook or the
+ * return page cannot create a second subscription. A failure throws: the whole fulfilment is retried.
+ */
+async function startSubInTrialSubscription(
+  session: Stripe.Checkout.Session,
+  userId: string,
+  customerId: string,
+  paymentMethodId: string | undefined,
+): Promise<void> {
+  if (!customerId || !paymentMethodId) {
+    throw new Error(`Sub In ${session.id}: missing customer or saved card, cannot start the trial subscription`)
+  }
+  const priceId = resolveMembershipPriceId('main')
+  if (!priceId) throw new Error('Sub In: STRIPE_MONTHLY_4999_PRICE_ID is not configured')
+  const stripe = getStripe()
+  const existing = await findBlockingSubscription(customerId)
+  if (existing) {
+    await linkStripeCustomer(userId, customerId, existing)
+    return
+  }
+  const created = await stripe.subscriptions.create(
+    {
+      customer: customerId,
+      default_payment_method: paymentMethodId,
+      items: [{ price: priceId }],
+      trial_period_days: TRIAL_DAYS,
+      payment_settings: { save_default_payment_method: 'on_subscription' },
+      metadata: {
+        funnel: flowFunnelSource('sub_in'),
+        kit: 'starter',
+        plan: 'main',
+        funnel_sid: session.metadata?.funnel_sid ?? '',
+        checkout_session_id: session.id,
+        userId,
+      },
+    },
+    { idempotencyKey: `kit_sub_${session.id}` },
+  )
+  await linkStripeCustomer(userId, customerId, created)
+}
+
 /** Account-last funnels: subscription link (Sub In) and the delayed "finish signing in" email. */
 async function finishFlowFulfilment(
   session: Stripe.Checkout.Session,
   metadata: Record<string, string>,
-  input: { userId: string; email: string; lang: 'en' | 'ru'; kit: KitCheckoutKey; flow: FunnelFlow },
+  input: {
+    userId: string
+    email: string
+    lang: 'en' | 'ru'
+    kit: KitCheckoutKey
+    flow: FunnelFlow
+    paymentMethodId?: string
+  },
 ): Promise<void> {
+  const customerId = stripeRefId(session.customer)
   const subscriptionId = stripeRefId(session.subscription)
   if (subscriptionId) {
+    // Checkouts created before Sub In moved to `payment` mode carry the subscription themselves.
     const sub = await getStripe().subscriptions.retrieve(subscriptionId)
-    await linkStripeCustomer(input.userId, stripeRefId(session.customer), sub)
+    await linkStripeCustomer(input.userId, customerId, sub)
+  } else if (input.flow === 'sub_in') {
+    await startSubInTrialSubscription(session, input.userId, customerId, input.paymentMethodId)
   }
   if (metadata.funnel_sid) {
     await scheduleActivationEmail({
@@ -481,7 +561,25 @@ async function finishFlowFulfilment(
   }
 }
 
-async function sendKitReceiptSafely(session: Stripe.Checkout.Session, email: string): Promise<void> {
+/** Receipt lines shown for Sub In only (the $1 kit and the $0 Academy PRO trial); other funnels keep the plain receipt. */
+function kitReceiptItems(flow: FunnelFlow | undefined, lang: 'en' | 'ru') {
+  if (flow !== 'sub_in') return undefined
+  return lang === 'ru'
+    ? [
+        { name: 'Стартовый AI-набор Mindora', amount: '$1.00' },
+        { name: 'Mindora Academy PRO', amount: '$0.00' },
+      ]
+    : [
+        { name: 'Mindora AI Starter Kit', amount: '$1.00' },
+        { name: 'Mindora Academy PRO', amount: '$0.00' },
+      ]
+}
+
+async function sendKitReceiptSafely(
+  session: Stripe.Checkout.Session,
+  email: string,
+  opts: { flow?: FunnelFlow; lang?: 'en' | 'ru' } = {},
+): Promise<void> {
   const amountCents =
     typeof session.amount_total === 'number' && Number.isFinite(session.amount_total)
       ? session.amount_total
@@ -492,6 +590,8 @@ async function sendKitReceiptSafely(session: Stripe.Checkout.Session, email: str
       to: email,
       amountCents,
       paidAt: new Date(created * 1000),
+      locale: opts.lang,
+      items: kitReceiptItems(opts.flow, opts.lang ?? 'en'),
     })
   } catch (error) {
     console.error('[stripe webhook] kit receipt failed', session.id, error)

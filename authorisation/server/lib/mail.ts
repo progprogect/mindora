@@ -19,11 +19,41 @@ const PLAN_LABELS: Record<string, string> = {
 
 export type MailLocale = 'en' | 'ru'
 
+/** One line of the receipt ("what was in this order"); `amount` is already formatted, e.g. "$0.00". */
+export type ReceiptItem = { name: string; amount: string }
+
 export type TrialReceipt = {
   to: string
   amountCents: number
   paidAt: Date
   locale?: MailLocale
+  /** Optional order lines. Funnels without lines keep the plain amount/date receipt. */
+  items?: ReceiptItem[]
+}
+
+function receiptItemsHtml(items: ReceiptItem[] | undefined, locale: MailLocale): string {
+  if (!items?.length) return ''
+  const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  const rows = items
+    .map(
+      (item) => `<tr>
+                  <td style="padding:10px 20px;font-size:15px;color:${DARK};border-top:1px solid #e5e7eb;">${esc(item.name)}</td>
+                  <td align="right" style="padding:10px 20px;font-size:15px;font-weight:700;color:${DARK};border-top:1px solid #e5e7eb;">${esc(item.amount)}</td>
+                </tr>`,
+    )
+    .join('')
+  const title = locale === 'ru' ? 'СОСТАВ ЗАКАЗА' : 'ORDER SUMMARY'
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
+                <tr>
+                  <td colspan="2" style="padding:14px 20px 8px;"><p style="margin:0;font-size:11px;letter-spacing:0.08em;font-weight:700;color:${GREY};">${title}</p></td>
+                </tr>
+                ${rows}
+              </table>`
+}
+
+function receiptItemsText(items: ReceiptItem[] | undefined, locale: MailLocale): string[] {
+  if (!items?.length) return []
+  return ['', locale === 'ru' ? 'СОСТАВ ЗАКАЗА' : 'ORDER SUMMARY', ...items.map((item) => `${item.name}  ${item.amount}`)]
 }
 
 export type CancellationEmail = {
@@ -101,12 +131,12 @@ export async function sendTrialReceiptEmail(receipt: TrialReceipt): Promise<void
     from: env.AUTH_EMAIL,
     to: receipt.to,
     subject,
-    text: trialReceiptText({ amount, date, origin, year, locale }),
+    text: trialReceiptText({ amount, date, origin, year, locale, items: receipt.items }),
     html: brandedEmailHtml({
       origin,
       year,
       locale,
-      innerHtml: trialReceiptInnerHtml({ amount, date, origin, locale }),
+      innerHtml: trialReceiptInnerHtml({ amount, date, origin, locale, items: receipt.items }),
     }),
   })
   if (error) {
@@ -385,11 +415,13 @@ function trialReceiptInnerHtml({
   date,
   origin,
   locale,
+  items,
 }: {
   amount: string
   date: string
   origin: string
   locale: MailLocale
+  items?: ReceiptItem[]
 }): string {
   const chat = chatUrl(origin, locale)
   const profile = `${origin}/app/profile`
@@ -411,7 +443,7 @@ function trialReceiptInnerHtml({
                   </td>
                 </tr>
               </table>
-              <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Вы можете обновить способ оплаты, управлять планом или отменить подписку в любое время в настройках профиля: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
+              ${receiptItemsHtml(items, locale)}<p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Вы можете обновить способ оплаты, управлять планом или отменить подписку в любое время в настройках профиля: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
               <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Вопросы по этому списанию? <a href="${chat}" style="color:${BLUE};font-weight:600;">Напишите в чат 24/7</a>. Или ответьте на это письмо.</p>
               <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— Команда ${BRAND}</p>
             </td>
@@ -434,7 +466,7 @@ function trialReceiptInnerHtml({
                   </td>
                 </tr>
               </table>
-              <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">You can update your payment method or manage your plan, or cancel at any time in Your Profile Settings at: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
+              ${receiptItemsHtml(items, locale)}<p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">You can update your payment method or manage your plan, or cancel at any time in Your Profile Settings at: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
               <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Questions about this charge? <a href="${chat}" style="color:${BLUE};font-weight:600;">Chat live here 24/7</a>. Alternatively reply to this email.</p>
               <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— The ${BRAND} Team</p>
             </td>
@@ -447,12 +479,14 @@ function trialReceiptText({
   origin,
   year,
   locale,
+  items,
 }: {
   amount: string
   date: string
   origin: string
   year: number
   locale: MailLocale
+  items?: ReceiptItem[]
 }): string {
   const chat = chatUrl(origin, locale)
   const profile = `${origin}/app/profile`
@@ -471,6 +505,7 @@ function trialReceiptText({
       '',
       `СУММА ОПЛАТЫ  ${amount}`,
       `ДАТА          ${date}`,
+      ...receiptItemsText(items, locale),
       '',
       'Вы можете обновить способ оплаты, управлять планом или отменить подписку в любое время в настройках профиля:',
       profile,
@@ -504,6 +539,7 @@ function trialReceiptText({
     '',
     `AMOUNT PAID  ${amount}`,
     `DATE         ${date}`,
+    ...receiptItemsText(items, locale),
     '',
     'You can update your payment method or manage your plan, or cancel at any time in Your Profile Settings at:',
     profile,
