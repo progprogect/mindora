@@ -344,3 +344,39 @@ export const funnelTrialReminders = pgTable(
     index('funnel_trial_reminders_send_idx').on(table.sendAt),
   ],
 )
+
+/**
+ * "Activate your account" email for the account-last funnels (Starter Kit Sub Out / Sub In):
+ * queued by the Checkout webhook, sent ~10 min later unless the visitor already finished /account/verify.
+ */
+export const funnelActivationEmails = pgTable(
+  'funnel_activation_emails',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    email: text('email').notNull(),
+    /** Funnel session id: one email per purchase, a repeated webhook delivery cannot queue a second. */
+    sid: text('sid').notNull(),
+    kit: text('kit').notNull(),
+    flow: text('flow'),
+    locale: text('locale').notNull().default('en'),
+    sendAt: timestamp('send_at', { withTimezone: true }).notNull(),
+    sentAt: timestamp('sent_at', { withTimezone: true }),
+    cancelledAt: timestamp('cancelled_at', { withTimezone: true }),
+    attempts: integer('attempts').notNull().default(0),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('funnel_activation_emails_sid_idx').on(table.sid),
+    index('funnel_activation_emails_send_idx').on(table.sendAt),
+    index('funnel_activation_emails_user_idx').on(table.userId),
+  ],
+)
+
+/** Last "you already have access" email per address; the atomic upsert is the 5-minute cooldown shared by all instances. */
+export const funnelAccessEmailLog = pgTable('funnel_access_email_log', {
+  email: text('email').primaryKey(),
+  lastSentAt: timestamp('last_sent_at', { withTimezone: true }).notNull().defaultNow(),
+})

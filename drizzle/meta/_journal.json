@@ -57,6 +57,20 @@
       "when": 1762226400000,
       "tag": "0007_funnel_consent_terms_lang",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1762312800000,
+      "tag": "0008_funnel_activation_emails",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1762399200000,
+      "tag": "0009_funnel_access_email_log",
+      "breakpoints": true
     }
   ]
 }
