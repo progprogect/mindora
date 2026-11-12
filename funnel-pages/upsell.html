@@ -260,13 +260,12 @@ window.FUNNEL = window.FUNNEL || { token:'SIGNED_FUNNEL_TOKEN', preview:false };
 const ACCOUNT_LAST = !!(window.FUNNEL && FUNNEL.accountLast);
 if (ACCOUNT_LAST) document.body.classList.add('alast');
 
-/* Sub In: первая страница после Stripe — засчитываем покупку $1 один раз на оплату (eventID = session_id Checkout) */
+/* Sub In: покупку $1 считает GTM по URL (/account/upsell?step=prompts&session_id=…, eventID = session_id).
+   Прямых вызовов fbq / ttq / gtag на странице нет: они шли до инициализации пикселя и дублировали тег GTM.
+   В dataLayer остаётся событие mindora_purchase (однократно на оплату) для возможных тегов, например StartTrial. */
 (function(){ const q = new URLSearchParams(location.search), sid = q.get('session_id');
   if (!(window.FUNNEL && FUNNEL.flow === 'sub_in') || q.get('step') !== 'prompts' || !sid) return;
   const key = 'mindora_purchase_' + sid; try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch(e) {}
-  if (window.fbq) { fbq('track', 'Purchase', { value: 1.00, currency: 'USD', content_ids: ['starter'], content_type: 'product' }, { eventID: sid }); fbq('track', 'StartTrial', { value: 0, currency: 'USD', predicted_ltv: 49.99 }, { eventID: sid + '_trial' }); }
-  if (window.ttq) ttq.track('CompletePayment', { value: 1.00, currency: 'USD', content_id: 'starter' }, { event_id: sid });
-  if (window.gtag) gtag('event', 'purchase', { transaction_id: sid, value: 1.00, currency: 'USD', items: [{ item_id: 'starter', item_name: 'AI Starter Kit' }] });
   if (window.dataLayer) dataLayer.push({ event: 'mindora_purchase', transaction_id: sid, value: 1.00, currency: 'USD', kit: 'starter', trial: true, funnel_flow: 'sub_in' });
 })();
 

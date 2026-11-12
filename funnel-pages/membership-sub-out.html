@@ -602,16 +602,14 @@ function mindoraAccountSteps(step, total){
   ol.closest('.wrap').appendChild(p);
 }
 
-/* Sub Out: покупка $1 засчитывается здесь — один раз на оплату (eventID = Stripe Checkout session id) */
+/* Sub Out: покупку $1 считает GTM по URL (/account/membership?session_id=…, eventID = session_id).
+   Прямых вызовов fbq / ttq / gtag на странице нет: они шли до инициализации пикселя и дублировали тег GTM.
+   В dataLayer остаётся событие mindora_purchase (однократно на оплату) для возможных тегов. */
 (function mindoraPurchase(){
   const sid = new URLSearchParams(location.search).get('session_id');
   if (!sid) return;
   const key = 'mindora_purchase_' + sid;
   try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch(e) {}
-  const data = { value: 1.00, currency: 'USD', content_name: 'AI Starter Kit', content_ids: ['starter'], content_type: 'product' };
-  if (window.fbq) fbq('track', 'Purchase', data, { eventID: sid });
-  if (window.ttq) ttq.track('CompletePayment', { value: 1.00, currency: 'USD', content_id: 'starter' }, { event_id: sid });
-  if (window.gtag) gtag('event', 'purchase', { transaction_id: sid, value: 1.00, currency: 'USD', items: [{ item_id: 'starter', item_name: 'AI Starter Kit' }] });
   if (window.dataLayer) dataLayer.push({ event: 'mindora_purchase', transaction_id: sid, value: 1.00, currency: 'USD', kit: 'starter', funnel_flow: 'sub_out' });
 })();
 
