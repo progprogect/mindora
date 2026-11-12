@@ -182,10 +182,13 @@ export async function createSubInCheckoutSession(input: {
     email: input.email,
   }
 
+  // Stripe collapses a long line description behind a chevron: the short start stays visible, the whole text opens on
+  // click. The client's mock-up puts the subscription terms ("3 days free, then $49.99 per month") in that opened text,
+  // and nowhere else on the Checkout.
   const proDescription =
     input.lang === 'ru'
-      ? '40+ курсов в 5 направлениях · персональный план · сертификаты'
-      : '40+ courses in 5 paths · personal plan · certificates'
+      ? 'Полный доступ к Mindora Academy PRO: 40+ курсов в 5 направлениях (AI, бизнес, карьера, мышление, здоровье), персональный план обучения, сертификаты, серии и XP, новые курсы каждый месяц. Бесплатный доступ на 3 дня, далее $49.99 в месяц. Отмена в любой момент в один клик в кабинете.'
+      : 'Full access to Mindora Academy PRO: 40+ courses in 5 paths (AI, business, career, mindset, health), a personal learning plan, certificates, streaks and XP, new courses every month. Free access for 3 days, then $49.99 per month. Cancel anytime in one click in your account.'
   const checkout = await stripe.checkout.sessions.create({
     // `payment` mode on purpose: Stripe's subscription Checkout always prints "3 days free", "$49.99 / month after" and
     // "Pay and start trial". The client wants "$1.00 today" with Academy PRO as a $0.00 line, so the trial

@@ -54,6 +54,9 @@ const chargeSchema = z.object({
   price: z.union([z.string(), z.number()]).optional(),
   /** PaymentIntent already confirmed on-session after 3-D Secure; the server verifies it instead of charging again. */
   payment_intent: z.string().optional(),
+  /** Text of the consent checkbox shown on the upsell page (account-last funnels); stored as dispute evidence. */
+  terms_accepted: z.string().max(2000).optional(),
+  lang: z.enum(['en', 'ru']).optional(),
 })
 
 type BillingCtx = {
@@ -463,6 +466,33 @@ funnelBillingRoutes.post('/funnel/charge', async (c) => {
 
   if (await ownsOffer(ctx.userId, offer.offerSlug)) {
     return c.json(advanceResponse(c, ctx.session, next, { alreadyPurchased: true }))
+  }
+
+  // Account-last funnels show a consent checkbox next to the upsell button: keep what the visitor accepted, once per
+  // session and offer (the 3-D Secure retry re-posts the same request).
+  const acceptedText = parsed.data.terms_accepted?.trim()
+  if (acceptedText) {
+    const consentPlan = `upsell:${offer.product}:${offer.state}`
+    const [recorded] = await db
+      .select({ id: funnelConsents.id })
+      .from(funnelConsents)
+      .where(and(eq(funnelConsents.sid, ctx.session.sid), eq(funnelConsents.plan, consentPlan)))
+      .limit(1)
+    if (!recorded) {
+      await db
+        .insert(funnelConsents)
+        .values({
+          userId: ctx.userId,
+          sid: ctx.session.sid,
+          plan: consentPlan,
+          consentText: acceptedText,
+          termsText: acceptedText,
+          lang: parsed.data.lang ?? billingLocale(c, ctx.session),
+          ip: clientIp(c),
+          userAgent: c.req.header('user-agent') || undefined,
+        })
+        .catch((error) => console.error('[funnel] upsell consent not recorded', error))
+    }
   }
 
   const stripe = getStripe()

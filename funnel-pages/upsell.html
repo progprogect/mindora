@@ -171,6 +171,7 @@ h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:cente
 .consent .prov{font-size:13px;color:var(--muted)}
 .consent .prov b{color:var(--ink)}
 .consent.need{border-color:var(--red);box-shadow:0 0 0 3px #FDF1F1}
+.agreebox{margin-top:14px;padding:12px 14px;gap:0}.agreebox .ck{display:flex;gap:10px;align-items:flex-start;line-height:1.45;font-size:12.5px;cursor:pointer}.agreebox .ck input{width:18px;height:18px}.agreebox a{color:var(--muted)}
 .copy{text-align:center;font-size:13px;color:var(--muted);margin:18px 0 8px}
 .whyprice{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
 .whyprice s{opacity:.75}.whyprice span{color:var(--ink);font-weight:600}
@@ -416,6 +417,7 @@ function render(){
       <div style="margin-top:16px"><button class="btn" data-buy>Continue →</button></div>
       <p class="err" role="alert"></p>
       <button class="no" data-no>No thanks</button>
+      ${ACCOUNT_LAST ? `<div class="consent agreebox" id="agreebox"><label class="ck"><input type="checkbox" id="agree" checked><span>By clicking "Continue", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a>, <a href="/refund">Refund Policy</a> and <a href="/cookies">Cookie Policy</a>.</span></label></div>` : ''}
     </div>
     <div class="consent">
       <p class="prov"><b>Service provider:</b> Scalion Ltd · Company No. 17157142 · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · <a href="mailto:support@mindoraacademy.com">support@mindoraacademy.com</a></p>
@@ -462,7 +464,10 @@ async function postCharge(body) {
 }
 async function funnelCharge(chargeState) {
   const lang = (window.MindoraI18n && MindoraI18n.lang) || 'en';
-  const body = { token: FUNNEL.token, product: O.product, state: chargeState, price: O[chargeState].price, lang };
+  /* текст галочки согласия (новые воронки) уходит вместе с платежом и сохраняется как доказательство согласия */
+  const agreeEl = document.querySelector('#agree');
+  const terms_accepted = agreeEl && agreeEl.checked ? agreeEl.parentElement.innerText.trim() : undefined;
+  const body = { token: FUNNEL.token, product: O.product, state: chargeState, price: O[chargeState].price, lang, terms_accepted };
   let { r, d } = await postCharge(body);
   if (d.requires_action && d.client_secret) {
     const stripe = mindoraStripe();
@@ -479,6 +484,14 @@ async function funnelCharge(chargeState) {
   return d;
 }
 async function buy(btn){
+  /* новые воронки: без отмеченного согласия платёж не отправляем, подсвечиваем рамку и показываем её */
+  const agree = document.getElementById('agree');
+  if (agree && !agree.checked) {
+    const box = document.getElementById('agreebox');
+    const modal = document.querySelector('.modal.open'); if (modal) modal.classList.remove('open');
+    if (box) { box.classList.add('need'); box.scrollIntoView({behavior:'smooth', block:'center'}); }
+    return;
+  }
   document.querySelectorAll('[data-buy]').forEach(b => b.disabled = true);
   try {
     const d = await funnelCharge(state);
