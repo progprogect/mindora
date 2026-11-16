@@ -3,7 +3,7 @@ import type Stripe from 'stripe'
 import { db } from '../db/index.js'
 import { profiles, subscriptions, users } from '../db/schema.js'
 import { loadEnv } from '../env.js'
-import { planLabelFromFunnel, sendCancellationEmail, sendTrialWelcomeEmail } from './mail.js'
+import { sendCancellationEmail } from './mail.js'
 import { getStripe } from './stripe.js'
 
 export type SubscriptionDto = {
@@ -278,37 +278,8 @@ async function funnelFromStripe(userId: string): Promise<string | undefined> {
 }
 
 /** First OTP after a live trial: one welcome email. Repeat logins do not send again. */
-export async function maybeSendTrialWelcomeEmail(userId: string, email: string): Promise<void> {
-  const to = email.trim().toLowerCase()
-  if (!userId || !to) return
-
-  const mine = await getMine(userId, to)
-  if (!mine || !BLOCKING_SUB_STATUSES.has(mine.status)) return
-
-  const profile = await loadOrCreateProfile(userId, to)
-  if (!profile || profile.trialWelcomeEmailSentAt) return
-
-  const claimed = await db
-    .update(profiles)
-    .set({ trialWelcomeEmailSentAt: new Date() })
-    .where(and(eq(profiles.id, profile.id), isNull(profiles.trialWelcomeEmailSentAt)))
-    .returning({ id: profiles.id })
-  if (!claimed[0]) return
-
-  const source = profile.funnelSource || (await funnelFromStripe(userId))
-  // Account-last Starter Kit funnels (Sub In / Sub Out) do not send the "trial has started" email by agreement with the client.
-  if (source === 'start-kit-sub-in' || source === 'start-kit-sub-out') return
-  const planLabel = planLabelFromFunnel(source)
-  try {
-    await sendTrialWelcomeEmail({
-      to,
-      planLabel,
-      locale: profile.locale === 'ru' ? 'ru' : 'en',
-    })
-  } catch (error) {
-    console.error('[welcome-mail]', error)
-  }
-}
+/** Trial welcome emails are disabled (client decision, 2026-11-16): no mail, and no `trialWelcomeEmailSentAt` mark. */
+export async function maybeSendTrialWelcomeEmail(_userId: string, _email: string): Promise<void> {}
 
 function toBillingError(error: unknown, fallback: string, fallbackCode: string): BillingError {
   if (error instanceof BillingError) return error

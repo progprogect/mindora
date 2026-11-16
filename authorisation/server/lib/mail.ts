@@ -180,43 +180,8 @@ export async function sendCancellationEmail(input: CancellationEmail): Promise<v
   }
 }
 
-export async function sendTrialWelcomeEmail(input: TrialWelcomeEmail): Promise<void> {
-  const env = loadEnv()
-  const locale = resolveMailLocale(input.locale)
-  const origin = publicOrigin()
-  const year = new Date().getFullYear()
-  const planLabel = input.planLabel || 'MindoraAcademy Pro'
-  const subject =
-    locale === 'ru'
-      ? `Добро пожаловать в ${BRAND}! Ваш 3-дневный пробный период начался`
-      : `Welcome to ${BRAND}! Your 3-day trial has started`
-
-  if (!env.AUTH_RESEND_KEY) {
-    if (env.NODE_ENV === 'production') {
-      console.error(`[welcome-mail] AUTH_RESEND_KEY missing; skipped ${input.to}`)
-      return
-    }
-    console.log(`[welcome-mail] ${input.to} → ${planLabel}`)
-    return
-  }
-
-  const resend = new Resend(env.AUTH_RESEND_KEY)
-  const { error } = await resend.emails.send({
-    from: env.AUTH_EMAIL,
-    to: input.to,
-    subject,
-    text: trialWelcomeText({ origin, year, planLabel, locale }),
-    html: brandedEmailHtml({
-      origin,
-      year,
-      locale,
-      innerHtml: trialWelcomeInnerHtml({ origin, planLabel, locale }),
-    }),
-  })
-  if (error) {
-    throw new Error(JSON.stringify(error))
-  }
-}
+/** Trial welcome emails are not sent (client decision, 2026-11-16). Templates kept so the email can be restored. */
+export async function sendTrialWelcomeEmail(_input: TrialWelcomeEmail): Promise<void> {}
 
 export type FunnelAccessEmail = {
   to: string
@@ -424,7 +389,6 @@ function trialReceiptInnerHtml({
   items?: ReceiptItem[]
 }): string {
   const chat = chatUrl(origin, locale)
-  const profile = `${origin}/app/profile`
   if (locale === 'ru') {
     return `<tr>
             <td style="padding:8px 28px 0;">
@@ -443,7 +407,7 @@ function trialReceiptInnerHtml({
                   </td>
                 </tr>
               </table>
-              ${receiptItemsHtml(items, locale)}<p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Вы можете обновить способ оплаты, управлять планом или отменить подписку в любое время в настройках профиля: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
+              ${receiptItemsHtml(items, locale)}
               <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Вопросы по этому списанию? <a href="${chat}" style="color:${BLUE};font-weight:600;">Напишите в чат 24/7</a>. Или ответьте на это письмо.</p>
               <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— Команда ${BRAND}</p>
             </td>
@@ -466,7 +430,7 @@ function trialReceiptInnerHtml({
                   </td>
                 </tr>
               </table>
-              ${receiptItemsHtml(items, locale)}<p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">You can update your payment method or manage your plan, or cancel at any time in Your Profile Settings at: <a href="${profile}" style="color:${BLUE};font-weight:600;">${profile}</a></p>
+              ${receiptItemsHtml(items, locale)}
               <p style="margin:0 0 16px;font-size:15px;line-height:1.55;color:${DARK};">Questions about this charge? <a href="${chat}" style="color:${BLUE};font-weight:600;">Chat live here 24/7</a>. Alternatively reply to this email.</p>
               <p style="margin:0 0 24px;font-size:15px;line-height:1.55;color:${DARK};">— The ${BRAND} Team</p>
             </td>
@@ -489,7 +453,6 @@ function trialReceiptText({
   items?: ReceiptItem[]
 }): string {
   const chat = chatUrl(origin, locale)
-  const profile = `${origin}/app/profile`
   if (locale === 'ru') {
     return [
       'Нужна помощь? Круглосуточная поддержка в чате',
@@ -506,9 +469,6 @@ function trialReceiptText({
       `СУММА ОПЛАТЫ  ${amount}`,
       `ДАТА          ${date}`,
       ...receiptItemsText(items, locale),
-      '',
-      'Вы можете обновить способ оплаты, управлять планом или отменить подписку в любое время в настройках профиля:',
-      profile,
       '',
       'Вопросы по этому списанию? Напишите в чат 24/7:',
       chat,
@@ -540,9 +500,6 @@ function trialReceiptText({
     `AMOUNT PAID  ${amount}`,
     `DATE         ${date}`,
     ...receiptItemsText(items, locale),
-    '',
-    'You can update your payment method or manage your plan, or cancel at any time in Your Profile Settings at:',
-    profile,
     '',
     'Questions about this charge? Chat live here 24/7:',
     chat,
