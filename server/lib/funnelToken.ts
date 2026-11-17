@@ -1,6 +1,7 @@
 import { createHmac, randomBytes, timingSafeEqual } from 'node:crypto'
 import { loadEnv } from '../env.js'
 import { DEFAULT_LOCALE, withLocalePrefix, type AppLocale } from './localePath.js'
+import { isFunnelPriceVariant, variantSuffix, type FunnelPriceVariant } from './funnelVariant.js'
 
 /** Funnel session cookie + signed token TTL (~2 hours per README). */
 export const FUNNEL_TTL_MS = 2 * 60 * 60 * 1000
@@ -60,6 +61,8 @@ export type FunnelSession = {
   lang?: 'en' | 'ru'
   /** Set for the Starter Kit Sub Out / Sub In funnels; absent for every other funnel. */
   flow?: FunnelFlow
+  /** Price variant of the funnel (e.g. `offer` = $4.99); absent for the original $1 funnel. Survives every step. */
+  priceVariant?: FunnelPriceVariant
   /** Emailed activation link: lives `RECOVERY_TTL_MS`, only opens `/account/verify`. */
   recovery?: true
 }
@@ -111,6 +114,7 @@ export function createFunnelSession(
     quizSessionId: input.quizSessionId,
     lang: input.lang,
     flow: input.flow,
+    ...(input.priceVariant ? { priceVariant: input.priceVariant } : {}),
   }
 }
 
@@ -118,6 +122,7 @@ export function createFunnelSession(
 export function createRecoverySession(input: {
   kit: FunnelKit
   flow?: FunnelFlow
+  priceVariant?: FunnelPriceVariant
   email: string
   name?: string
   userId?: string
@@ -171,6 +176,7 @@ export function verifyFunnelToken(token: string | undefined | null): FunnelSessi
   if (typeof row.quizSessionId === 'string') session.quizSessionId = row.quizSessionId
   if (row.lang === 'en' || row.lang === 'ru') session.lang = row.lang
   if (flow) session.flow = flow
+  if (flow && isFunnelPriceVariant(row.priceVariant)) session.priceVariant = row.priceVariant
   if (row.recovery === true) session.recovery = true
   return session
 }
@@ -237,8 +243,8 @@ export function nextUrlAfter(
 }
 
 /** Landing page of a flow (where an expired funnel session is sent back to). */
-export function flowLandingPath(flow: FunnelFlow): string {
-  return flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'
+export function flowLandingPath(flow: FunnelFlow, priceVariant?: FunnelPriceVariant): string {
+  return `${flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'}${variantSuffix(priceVariant)}`
 }
 
 /** Step number shown in the funnel header (checkout is step 1) and the total, per flow. */

@@ -610,7 +610,7 @@ function mindoraAccountSteps(step, total){
   if (!sid) return;
   const key = 'mindora_purchase_' + sid;
   try { if (localStorage.getItem(key)) return; localStorage.setItem(key, '1'); } catch(e) {}
-  if (window.dataLayer) dataLayer.push({ event: 'mindora_purchase', transaction_id: sid, value: 1.00, currency: 'USD', kit: 'starter', funnel_flow: 'sub_out' });
+  if (window.dataLayer) dataLayer.push({ event: 'mindora_purchase', transaction_id: sid, value: (window.FUNNEL && FUNNEL.priceValue) || 1.00, currency: 'USD', kit: 'starter', funnel_flow: 'sub_out', funnel_variant: (window.FUNNEL && FUNNEL.priceVariant) || 'base' });
 })();
 
 window.FUNNEL = window.FUNNEL || {

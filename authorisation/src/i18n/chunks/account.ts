@@ -701,7 +701,7 @@ export const accountRu = {
   'account.planners.practicalTitle1': '{count} практичных планеров.',
   'account.planners.practicalTitle2': 'Один мощный набор.',
   'account.planners.practicalSub': 'Полный набор планеров для печати: фокус, действия, привычки и прогресс во всех сферах жизни.',
-  'account.planners.printablePages': '{pages} страниц для печати',
+  'account.planners.printablePages': '{pages} для печати',
   'account.planners.howItWorks': 'Как это работает',
   'account.planners.how1Title': 'Скачайте весь набор',
   'account.planners.how1Body': 'Все {count} планеров появятся в аккаунте как PDF для печати — сразу.',

@@ -187,4 +187,58 @@ describe('kit checkout fulfilment for Sub In / Sub Out', { skip: !enabled }, asy
       await db.delete(users).where(eq(users.email, other))
     })
   })
+  describe('Sub Out at $4.99 (price variant `offer`)', () => {
+    const offerEmail = `flow-offer-${stamp}@example.test`
+    const offerCheckout = (id: string) =>
+      session(`cs_o_${id}_${stamp}`, {
+        mode: 'payment',
+        subscription: null,
+        invoice: null,
+        payment_intent: `pi_o_${id}_${stamp}`,
+        amount_total: 499,
+        customer: `cus_offer_${stamp}`,
+        customer_details: { email: offerEmail },
+      })
+    const offerMeta = (id: string) => ({
+      kit: 'starter',
+      flow: 'sub_out',
+      price_variant: 'offer',
+      lang: 'en',
+      funnel: 'start-kit-sub-out-offer',
+      funnel_sid: `sid-o-${id}-${stamp}`,
+      name: 'Masha',
+      email: offerEmail,
+    })
+
+    it('a $4.99 payment grants the kit like the $1 one and reports under its own funnel source', async () => {
+      calls.refunds.length = 0
+      await fulfillKitCheckoutSession(offerCheckout('a'), offerMeta('a'))
+      const [user] = await db.select().from(users).where(eq(users.email, offerEmail))
+      assert.ok(user)
+      assert.equal(await hasSku(user.id, 'kit-starter'), true)
+      const [profile] = await db.select().from(profiles).where(eq(profiles.userId, user.id))
+      assert.equal(profile?.funnelSource, 'start-kit-sub-out-offer')
+      assert.equal(calls.refunds.length, 0, 'the $4.99 payment is a normal purchase, not a duplicate')
+    })
+
+    it('the same $4.99 Checkout is handled once', async () => {
+      const [user] = await db.select().from(users).where(eq(users.email, offerEmail))
+      const before = (await db.select().from(funnelActivationEmails).where(eq(funnelActivationEmails.userId, user!.id))).length
+      await fulfillKitCheckoutSession(offerCheckout('a'), offerMeta('a'))
+      assert.equal(calls.refunds.length, 0)
+      assert.equal((await db.select().from(funnelActivationEmails).where(eq(funnelActivationEmails.userId, user!.id))).length, before)
+    })
+
+    it('buying the $4.99 offer again refunds that payment in full and keeps the access', async () => {
+      await fulfillKitCheckoutSession(offerCheckout('b'), offerMeta('b'))
+      assert.equal(calls.refunds.length, 1)
+      assert.deepEqual((calls.refunds[0] as any[])[0], { payment_intent: `pi_o_b_${stamp}` })
+      const [user] = await db.select().from(users).where(eq(users.email, offerEmail))
+      assert.equal(await hasSku(user!.id, 'kit-starter'), true)
+    })
+
+    after(async () => {
+      await db.delete(users).where(eq(users.email, offerEmail))
+    })
+  })
 })

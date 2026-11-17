@@ -10,6 +10,7 @@ import {
 import { buyOffer, chargeErrorMessage } from '@/lib/api'
 import { useI18n } from '@/i18n/I18nProvider'
 import { withLocale } from '@/i18n/locale'
+import { ruCount } from '@/i18n/ruPlural'
 import { useHasSavedCard, usePurchases } from '@/lib/lmsQueries'
 
 const LIBRARY_SLUG = 'planner-bundle-library'
@@ -183,7 +184,7 @@ export default function PlannersPage() {
                 <div className="flex flex-1 flex-col p-3">
                   <h2 className="text-sm font-bold leading-snug text-sw-dark">{planner.name}</h2>
                   <p className="mt-1 text-[11px] font-bold uppercase tracking-wide text-sw-grey">
-                    {t('app.planners.printablePages').replace('{n}', String(planner.pdfPages))}
+                    {t('app.planners.printablePages').replace('{n}', locale === 'ru' ? ruCount(planner.pdfPages, 'страница', 'страницы', 'страниц') : String(planner.pdfPages))}
                   </p>
                   <p className="mt-2 text-xs leading-snug text-sw-grey">{planner.benefit}</p>
                   {showHero ? (

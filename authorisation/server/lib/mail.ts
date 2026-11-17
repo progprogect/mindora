@@ -190,6 +190,8 @@ export type FunnelAccessEmail = {
   /** `activate`: left the funnel before activating. `access`: bought again but already has access. */
   kind: 'activate' | 'access'
   locale?: MailLocale
+  /** Amount of the second payment that will be refunded (`access`); defaults to the $1 kit. */
+  amountCents?: number
 }
 
 /** Starter Kit Sub Out / Sub In: gets the buyer into the platform (email confirmation by code, then sign-in). */
@@ -198,7 +200,7 @@ export async function sendFunnelAccessEmail(input: FunnelAccessEmail): Promise<v
   const locale = resolveMailLocale(input.locale)
   const origin = publicOrigin()
   const year = new Date().getFullYear()
-  const copy = funnelAccessCopy(input.kind, locale)
+  const copy = funnelAccessCopy(input.kind, locale, input.amountCents)
 
   if (!env.AUTH_RESEND_KEY) {
     if (env.NODE_ENV === 'production') {
@@ -235,13 +237,14 @@ export async function sendFunnelAccessEmail(input: FunnelAccessEmail): Promise<v
   }
 }
 
-function funnelAccessCopy(kind: FunnelAccessEmail['kind'], locale: MailLocale) {
+function funnelAccessCopy(kind: FunnelAccessEmail['kind'], locale: MailLocale, amountCents?: number) {
+  const paid = amountCents && amountCents !== 100 ? formatUsd(amountCents) : '$1'
   if (locale === 'ru') {
     return kind === 'access'
       ? {
           subject: 'У вас уже есть доступ',
           title: 'У вас уже есть доступ к Mindora Academy',
-          body: 'Мы заметили повторную оплату набора. Он уже есть в вашем аккаунте, поэтому платёж в $1 будет возвращён автоматически.',
+          body: `Мы заметили повторную оплату набора. Он уже есть в вашем аккаунте, поэтому платёж в ${paid} будет возвращён автоматически.`,
           step: 'Чтобы войти, нажмите кнопку: мы попросим подтвердить email кодом из письма.',
           cta: 'Войти в Mindora Academy',
           expires: 'Ссылка действует 5 дней.',
@@ -259,7 +262,7 @@ function funnelAccessCopy(kind: FunnelAccessEmail['kind'], locale: MailLocale) {
     ? {
         subject: 'You already have access',
         title: 'You already have access to Mindora Academy',
-        body: 'We noticed a second payment for the kit. It is already in your account, so the $1 payment will be refunded automatically.',
+        body: `We noticed a second payment for the kit. It is already in your account, so the ${paid} payment will be refunded automatically.`,
         step: 'Tap the button to sign in. We will ask you to confirm your email with a code.',
         cta: 'Sign in to Mindora Academy',
         expires: 'This link is valid for 5 days.',
@@ -280,6 +283,19 @@ export async function sendTrialChargeReminderEmail(_input: TrialChargeReminderEm
 function publicOrigin(): string {
   const origin = loadEnv().PUBLIC_ORIGIN.replace(/\/$/, '')
   return origin || DEFAULT_ORIGIN
+}
+
+/** A $1 receipt keeps its original wording; any other amount (price variants) names the real amount. */
+function receiptHeading(amount: string, locale: MailLocale): string {
+  if (amount === '$1.00') return locale === 'ru' ? 'Ваш чек на один доллар' : 'Your $1 receipt'
+  return locale === 'ru' ? `Ваш чек на ${amount}` : `Your ${amount} receipt`
+}
+
+function receiptIntroLead(amount: string, locale: MailLocale): string {
+  if (amount === '$1.00') {
+    return locale === 'ru' ? 'Это чек на один доллар: ' : 'This is your receipt for one dollar: '
+  }
+  return locale === 'ru' ? `Это чек на ${amount}: ` : `This is your receipt for ${amount}: `
 }
 
 function formatUsd(cents: number): string {
@@ -392,9 +408,9 @@ function trialReceiptInnerHtml({
   if (locale === 'ru') {
     return `<tr>
             <td style="padding:8px 28px 0;">
-              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Ваш чек на один доллар</h1>
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">${receiptHeading(amount, 'ru')}</h1>
               <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Здравствуйте</p>
-              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Спасибо за покупку! Это чек на один доллар: Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Спасибо за покупку! ${receiptIntroLead(amount, 'ru')}Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.</p>
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
                 <tr>
                   <td style="padding:16px 20px;width:50%;">
@@ -415,9 +431,9 @@ function trialReceiptInnerHtml({
   }
   return `<tr>
             <td style="padding:8px 28px 0;">
-              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">Your $1 receipt</h1>
+              <h1 style="margin:0 0 16px;font-size:26px;line-height:1.2;font-weight:800;color:${DARK};">${receiptHeading(amount, 'en')}</h1>
               <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:${DARK};">Hi there</p>
-              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Thank you for your purchase! This is your receipt for one dollar: Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.</p>
+              <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:${DARK};">Thank you for your purchase! ${receiptIntroLead(amount, 'en')}Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.</p>
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;border:1px solid #e5e7eb;border-radius:12px;">
                 <tr>
                   <td style="padding:16px 20px;width:50%;">
@@ -460,11 +476,11 @@ function trialReceiptText({
       '',
       BRAND,
       '',
-      'Ваш чек на один доллар',
+      receiptHeading(amount, 'ru'),
       '',
       'Здравствуйте',
       '',
-      'Спасибо за покупку! Это чек на один доллар: Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.',
+      `Спасибо за покупку! ${receiptIntroLead(amount, 'ru')}Claude AI Guide · 1 000+ промптов · шаблоны · 3 практических курса + курс в подарок · пожизненный доступ.`,
       '',
       `СУММА ОПЛАТЫ  ${amount}`,
       `ДАТА          ${date}`,
@@ -491,11 +507,11 @@ function trialReceiptText({
     '',
     BRAND,
     '',
-    'Your $1 receipt',
+    receiptHeading(amount, 'en'),
     '',
     'Hi there',
     '',
-    "Thank you for your purchase! This is your receipt for one dollar: Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.",
+    `Thank you for your purchase! ${receiptIntroLead(amount, 'en')}Claude AI Guide · 1,000+ prompts · templates · 3 practical courses + gift course · lifetime access.`,
     '',
     `AMOUNT PAID  ${amount}`,
     `DATE         ${date}`,

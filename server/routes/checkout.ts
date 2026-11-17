@@ -10,6 +10,7 @@ import {
   PriceNotConfiguredError,
   publicOrigin,
 } from '../lib/funnelCheckout.js'
+import { FUNNEL_PRICE_VARIANTS } from '../lib/funnelVariant.js'
 import { flowCancelPath, flowFunnelSource, landingProduct, quizProduct, resolveLandingKit } from '../lib/funnelKits.js'
 import { ALREADY_SUBSCRIBED_ERROR, findBlockingSubscription } from '../lib/subscription.js'
 import { getStripe, isStripeConfigured } from '../lib/stripe.js'
@@ -35,6 +36,8 @@ const landingCheckoutSchema = z.object({
   kit: z.string().optional(),
   /** Starter Kit Sub Out / Sub In (registration after the upsells). */
   flow: z.enum(['sub_out', 'sub_in']).optional(),
+  /** Price variant of the Sub Out funnel (e.g. `offer`); the landing reads it from `window.FUNNEL.priceVariant`. */
+  price_variant: z.enum(FUNNEL_PRICE_VARIANTS).optional(),
   name: z.string().trim().max(200).optional(),
   email: z.string().trim().max(320).optional(),
   block: z.string().optional(),
@@ -135,6 +138,8 @@ checkoutRoutes.post('/checkout', async (c) => {
   const parsed = landingCheckoutSchema.safeParse(await c.req.json().catch(() => null))
   if (!parsed.success) return c.json({ error: 'Invalid payload' }, 400)
   const flow = parsed.data.flow
+  // Only Sub Out has a price variant; Sub In and the old funnels always stay on $1.
+  const priceVariant = flow === 'sub_out' ? parsed.data.price_variant : undefined
   const kit = flow ? 'starter' : resolveLandingKit({ kit: parsed.data.kit, variant: parsed.data.variant })
   if (!kit) return c.json({ error: 'Unknown funnel kit' }, 400)
   if (!isStripeConfigured()) return c.json({ error: STRIPE_UNAVAILABLE }, 503)
@@ -143,9 +148,10 @@ checkoutRoutes.post('/checkout', async (c) => {
   const metadata: Record<string, string> = {
     kit,
     lang,
-    funnel: flow ? flowFunnelSource(flow) : product.funnelSource,
+    funnel: flow ? flowFunnelSource(flow, priceVariant) : product.funnelSource,
   }
   if (flow) metadata.flow = flow
+  if (priceVariant) metadata.price_variant = priceVariant
   if (parsed.data.block) metadata.block = parsed.data.block
   if (parsed.data.exit_bonus) metadata.exit_bonus = '1'
   appendUtmMetadata(metadata, parsed.data.utm)
@@ -179,9 +185,10 @@ checkoutRoutes.post('/checkout', async (c) => {
       productName: product.name,
       productDescription: product.description,
       lang,
-      cancelPath: flow ? flowCancelPath(flow) : product.cancelPath,
+      cancelPath: flow ? flowCancelPath(flow, priceVariant) : product.cancelPath,
       metadata,
       flow,
+      priceVariant,
     })
     return c.json({ url })
   } catch (error) {

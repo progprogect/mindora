@@ -13,7 +13,7 @@ function run(command, args, cwd) {
 
 if (!existsSync(path.join(src, 'package.json'))) {
   console.error(
-    '[lms] missing ./authorisation. From the monorepo run: node scripts/sync-authorisation.mjs',
+    '[lms] missing ./authorisation (the LMS package is part of this repo; restore it from git)',
   )
   process.exit(1)
 }

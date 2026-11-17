@@ -1,4 +1,5 @@
 import type { FunnelFlow, KitCheckoutKey } from './funnelToken.js'
+import { variantSuffix, type FunnelPriceVariant } from './funnelVariant.js'
 
 type KitProduct = {
   name: string
@@ -76,11 +77,11 @@ export function resolveLandingKit(input: { kit?: string; variant?: string }): 's
 }
 
 /** `profiles.funnelSource` / Stripe `metadata.funnel` of the account-last Starter Kit funnels (A/B reporting). */
-export function flowFunnelSource(flow: FunnelFlow): string {
-  return flow === 'sub_in' ? 'start-kit-sub-in' : 'start-kit-sub-out'
+export function flowFunnelSource(flow: FunnelFlow, priceVariant?: FunnelPriceVariant): string {
+  return `${flow === 'sub_in' ? 'start-kit-sub-in' : 'start-kit-sub-out'}${variantSuffix(priceVariant)}`
 }
 
 /** Landing the Checkout `cancel_url` returns to. */
-export function flowCancelPath(flow: FunnelFlow): string {
-  return flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'
+export function flowCancelPath(flow: FunnelFlow, priceVariant?: FunnelPriceVariant): string {
+  return `${flow === 'sub_in' ? '/start-kit-sub-in' : '/start-kit-sub-out'}${variantSuffix(priceVariant)}`
 }

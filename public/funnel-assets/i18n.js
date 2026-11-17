@@ -44,9 +44,37 @@ var lang=localeFromPath();
 store('mindora_lang',lang);
 try{ document.cookie='mindora_locale='+lang+'; path=/; max-age=31536000; SameSite=Lax'; }catch(e){}
 
+/* Ценовой вариант воронки (window.FUNNEL.priceVariant, напр. «offer» = $4.99): страница показывает цену варианта,
+   а словарь написан под базовую цену. Для поиска перевода подставляем базовые числа, а в готовом переводе возвращаем цену варианта. */
+var PRICE_PAIRS=null;
+function pricePairs(){
+  if (PRICE_PAIRS!==null) return PRICE_PAIRS;
+  PRICE_PAIRS=[];
+  var F=window.FUNNEL||{};
+  if (F.priceVariant && F.price) {
+    [[F.oldTotal,'$391.95'],[F.savings,'$390.95'],[F.price,'$1']].forEach(function(p){ if(p[0] && p[0]!==p[1]) PRICE_PAIRS.push(p); });
+  }
+  return PRICE_PAIRS;
+}
+function escRe(x){ return x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+function toBasePrices(key){
+  var out=key;
+  pricePairs().forEach(function(p){ out=out.replace(new RegExp(escRe(p[0])+'(?!\\d)','g'),p[1]); });
+  return out;
+}
+function fromBasePrices(text){
+  var out=text;
+  pricePairs().forEach(function(p){
+    var re=p[1]==='$1' ? /\$1(?![\d.,]|\s\d)/g : new RegExp(escRe(p[1]),'g');
+    out=out.replace(re,function(){ return p[0]; });
+  });
+  return out;
+}
 function tr(s){
   var key=s.replace(/\s+/g,' ').trim(); if(!key) return null;
   if (Object.prototype.hasOwnProperty.call(RU,key)) return RU[key];
+  var base=toBasePrices(key);
+  if (base!==key && Object.prototype.hasOwnProperty.call(RU,base)) return fromBasePrices(RU[base]);
   for (var i=0;i<PATTERNS.length;i++){ var m=key.match(PATTERNS[i][0]); if(m) return PATTERNS[i][1](m); }
   return null;
 }

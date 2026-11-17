@@ -317,6 +317,8 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
   const areasCount = plannerCategories.length
   const plannerCountLabel = (n: number) =>
     locale === 'ru' ? ruCount(n, 'планер', 'планера', 'планеров') : String(n)
+  const pagesLabel = (n: number) =>
+    locale === 'ru' ? ruCount(n, 'страница', 'страницы', 'страниц') : String(n)
   const areasLabel =
     locale === 'ru' ? ruCount(areasCount, 'сфера', 'сферы', 'сфер') : String(areasCount)
 
@@ -567,10 +569,13 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                             <span
                               className={`rounded-full px-2.5 py-1 text-[11px] font-bold ${accent.badgeBg} ${accent.badgeText}`}
                             >
-                              {planners.length}{' '}
-                              {planners.length === 1
-                                ? t('account.planners.plannerWord')
-                                : t('account.planners.plannersWord')}
+                              {locale === 'ru'
+                                ? ruCount(planners.length, 'планер', 'планера', 'планеров')
+                                : `${planners.length} ${
+                                    planners.length === 1
+                                      ? t('account.planners.plannerWord')
+                                      : t('account.planners.plannersWord')
+                                  }`}
                             </span>
                           </div>
                           <ul className="mt-2 space-y-1.5">
@@ -636,7 +641,7 @@ export function PlannerOffer({ hasSavedCard }: { hasSavedCard: boolean }) {
                       <p className="text-sm font-bold leading-snug text-sw-dark">{planner.name}</p>
                       <p className="mt-1 text-xs leading-snug text-sw-grey">{planner.benefit}</p>
                       <p className="mt-auto pt-2 text-xs font-semibold text-sw-grey">
-                        {tf(t, 'account.planners.printablePages', { pages: planner.pdfPages })}
+                        {tf(t, 'account.planners.printablePages', { pages: pagesLabel(planner.pdfPages) })}
                       </p>
                     </div>
                   </li>

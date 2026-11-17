@@ -117,6 +117,8 @@ export async function sendExistingAccessEmail(input: {
   flow?: FunnelFlow
   lang: 'en' | 'ru'
   origin?: string
+  /** Amount of the duplicate payment being refunded (price variants); omitted = the $1 kit. */
+  amountCents?: number
 }): Promise<boolean> {
   const key = normalizeEmail(input.email)
   let slot: Awaited<ReturnType<typeof claimAccessEmailSlot>>
@@ -132,6 +134,7 @@ export async function sendExistingAccessEmail(input: {
       to: key,
       kind: 'access',
       locale: input.lang,
+      amountCents: input.amountCents,
       link: recoveryLink({
         kit: input.kit,
         flow: input.flow,

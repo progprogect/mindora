@@ -790,7 +790,7 @@ export const appRu = {
   'app.planners.oneAtATime': "По одному",
   'app.planners.ownedNone': "У вас пока нет планеров.",
   'app.planners.ownedSome': "{owned} из {total} в вашей библиотеке.",
-  'app.planners.printablePages': "{n} печатных страниц",
+  'app.planners.printablePages': "{n} для печати",
   'app.planners.save': "Экономия {amount}",
   'app.planners.title': "Планеры",
   'app.profile.billingPortalError': "Не удалось открыть портал оплаты.",

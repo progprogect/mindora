@@ -26,11 +26,7 @@ Seed catalog prices after the first start:
 npm run db:seed
 ```
 
-Canonical LMS **source** still lives in the monorepo `../authorisation/` (local `:5175` + `:3001`, its own `.env`). After changing that package, refresh the nested copy:
-
-```bash
-npm run sync:authorisation
-```
+The LMS package lives in `authorisation/` inside this repo and is the only source of truth (edit it here; there is no sync from a sibling folder).
 
 Do **not** apply `authorisation/drizzle/0000_lms.sql` on this database. Railway migrations are `drizzle/0000_init.sql` + `drizzle/0001_lms.sql`.
 

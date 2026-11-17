@@ -8,6 +8,7 @@ import {
   type FunnelKit,
   signFunnelToken,
 } from './funnelToken.js'
+import { kitPricing, type FunnelPriceVariant } from './funnelVariant.js'
 import { getStripe } from './stripe.js'
 
 export function publicOrigin(c: Context): string {
@@ -32,11 +33,15 @@ export async function createDollarCheckoutSession(input: {
   quizSessionId?: string
   /** Account-last funnel (Sub Out): lands on the Mindora Academy page; verification comes after the upsells. */
   flow?: FunnelFlow
+  /** Price variant of the Sub Out funnel (e.g. `offer` = $4.99); omitted for the original $1 funnel. */
+  priceVariant?: FunnelPriceVariant
 }): Promise<{ url: string; token: string; sessionId: string }> {
   const stripe = getStripe()
   const origin = publicOrigin(input.c)
+  const priceVariant = input.flow ? input.priceVariant : undefined
   const session = createFunnelSession({
     kit: input.kit,
+    priceVariant,
     step: input.flow ? 'membership' : 'verify',
     email: input.email,
     name: input.name,
@@ -66,7 +71,7 @@ export async function createDollarCheckoutSession(input: {
         quantity: 1,
         price_data: {
           currency: 'usd',
-          unit_amount: 100,
+          unit_amount: kitPricing(priceVariant).cents,
           product_data: {
             name: input.productName,
             description: input.productDescription,
@@ -88,6 +93,7 @@ export async function createDollarCheckoutSession(input: {
       lang: input.lang,
       funnel_sid: session.sid,
       ...(input.flow ? { flow: input.flow } : {}),
+      ...(priceVariant ? { price_variant: priceVariant } : {}),
     },
     success_url: successUrl,
     cancel_url: cancelUrl,

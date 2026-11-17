@@ -13,6 +13,7 @@ import {
 import { findExistingAccess, sendExistingAccessEmail } from '../lib/funnelAccess.js'
 import { scheduleActivationEmail } from '../lib/funnelActivation.js'
 import { flowFunnelSource } from '../lib/funnelKits.js'
+import { isFunnelPriceVariant } from '../lib/funnelVariant.js'
 import { resolveMembershipPriceId } from '../lib/funnelOffers.js'
 import { type FunnelFlow, isFunnelFlow, isKitCheckoutKey, type KitCheckoutKey } from '../lib/funnelToken.js'
 import { isInvoicePayment, isTrialFunnelPayment, stripeRefId } from '../lib/invoicePayment.js'
@@ -398,6 +399,7 @@ async function undoDuplicateKitCheckout(
     kit,
     flow,
     lang,
+    amountCents: session.amount_total ?? undefined,
   })
   console.log('[stripe webhook] duplicate kit purchase undone', { sessionId: session.id, kit, userId: existing.userId })
 }
@@ -457,7 +459,7 @@ export async function fulfillKitCheckoutSession(
       lang,
       stripeCustomerId: customerId,
       paymentMethodId: paymentMethodId || undefined,
-      funnelSource: flow ? flowFunnelSource(flow) : undefined,
+      funnelSource: flow ? flowFunnelSource(flow, isFunnelPriceVariant(metadata.price_variant) ? metadata.price_variant : undefined) : undefined,
     })
     if (flow) await markKitGranted(session.id, customerId, email)
     // Account-last funnels mark the PaymentIntent only after the trial/e-mail steps, so a retry still runs them.

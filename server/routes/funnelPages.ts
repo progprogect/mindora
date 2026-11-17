@@ -12,6 +12,7 @@ import { getStripe } from '../lib/stripe.js'
 import { findUserIdByEmail } from '../lib/subscription.js'
 import { fulfillKitCheckoutSession } from './stripeWebhook.js'
 import { withLocalePrefix, type AppLocale } from '../lib/localePath.js'
+import { isFunnelPriceVariant, kitPricing, pricePayload, type FunnelPriceVariant } from '../lib/funnelVariant.js'
 import {
   advanceFunnelSession,
   createFunnelSession,
@@ -82,7 +83,20 @@ function readSession(c: Context): { session: FunnelSession; token: string } | nu
   return { session, token: fromQuery || patch ? signFunnelToken(session) : raw }
 }
 
+/** Fills the `{{price}}`, `{{oldTotal}}`, `{{savings}}`, `{{off}}` placeholders of a price-aware page for its price variant. */
+export function applyPriceTokens(html: string, variant?: FunnelPriceVariant): string {
+  if (!html.includes('{{')) return html
+  const pricing = kitPricing(variant)
+  return html
+    .replaceAll('{{price}}', pricing.display)
+    .replaceAll('{{oldTotal}}', pricing.oldTotal)
+    .replaceAll('{{savings}}', pricing.savings)
+    .replaceAll('{{off}}', pricing.off)
+}
+
 function injectFunnel(html: string, funnel: Record<string, unknown>): string {
+  const variant = isFunnelPriceVariant(funnel.priceVariant) ? funnel.priceVariant : undefined
+  html = applyPriceTokens(html, variant)
   const json = JSON.stringify(funnel).replace(/</g, '\\u003c')
   const tag = `<script>window.FUNNEL=${json};</script>`
   if (html.includes('<head>')) return html.replace('<head>', `<head>\n${tag}`)
@@ -160,20 +174,20 @@ function funnelPayload(
     email: session.email ?? '',
     name: session.name ?? '',
     stripePublishableKey: stripePublishableKey(),
-    ...flowPayload(session.flow),
+    ...flowPayload(session.flow, session.priceVariant),
     ...extras,
   }
 }
 
 /** Header progress for the "account last" funnels: the pages show "Step N of total" from these. */
-function flowPayload(flow: FunnelFlow | undefined): Record<string, unknown> {
+function flowPayload(flow: FunnelFlow | undefined, priceVariant?: FunnelPriceVariant): Record<string, unknown> {
   if (!flow) return {}
-  return { flow, accountLast: true, stepTotal: flowProgress(flow).total }
+  return { flow, accountLast: true, stepTotal: flowProgress(flow).total, ...pricePayload(priceVariant) }
 }
 
 /** Where the signed-in-to-nothing visitor goes when the funnel session is missing or expired. */
-function landingFor(flow: FunnelFlow | undefined): string {
-  return flow ? flowLandingPath(flow) : '/start'
+function landingFor(flow: FunnelFlow | undefined, priceVariant?: FunnelPriceVariant): string {
+  return flow ? flowLandingPath(flow, priceVariant) : '/start'
 }
 
 function redirectToCurrent(c: Context, session: FunnelSession) {
@@ -185,6 +199,12 @@ function redirectToCurrent(c: Context, session: FunnelSession) {
 function requestedFlow(c: Context): FunnelFlow | undefined {
   const raw = c.req.query('flow')
   return isFunnelFlow(raw) ? raw : undefined
+}
+
+/** Preview / dev only: price variant asked in the query (`?price_variant=offer`). */
+function requestedPriceVariant(c: Context): FunnelPriceVariant | undefined {
+  const raw = c.req.query('price_variant')
+  return isFunnelPriceVariant(raw) ? raw : undefined
 }
 
 /** Requested page step vs session progress — skip already finished steps. */
@@ -213,9 +233,10 @@ function serveAccountPage(
 ) {
   if (previewAllowed(c)) {
     const flow = requestedFlow(c)
+    const priceVariant = flow ? requestedPriceVariant(c) : undefined
     const kit = (c.req.query('kit') as FunnelKit) || (flow ? 'starter' : 'guide')
     const locale = funnelLocale(c)
-    const previewExtras = extras(createFunnelSession({ kit, step: requested, flow }))
+    const previewExtras = extras(createFunnelSession({ kit, step: requested, flow, priceVariant }))
     const nextFromExtras =
       typeof previewExtras.nextUrl === 'string'
         ? previewExtras.nextUrl
@@ -230,7 +251,7 @@ function serveAccountPage(
       email: c.req.query('email') || 'preview@mindoraacademy.com',
       name: c.req.query('name') || '',
       stripePublishableKey: stripePublishableKey(),
-      ...flowPayload(flow),
+      ...flowPayload(flow, priceVariant),
       ...previewExtras,
       nextUrl: withPreviewQuery(c, nextFromExtras),
     })
@@ -279,6 +300,7 @@ funnelPageRoutes.get('/dev/funnel-enter', (c) => {
   const { token } = mintFunnelToken(kit, {
     step,
     flow: requestedFlow(c),
+    priceVariant: requestedFlow(c) ? requestedPriceVariant(c) : undefined,
     email: c.req.query('email') || 'dev@mindoraacademy.com',
     name: c.req.query('name') || 'Dev User',
   })
@@ -315,6 +337,19 @@ funnelPageRoutes.get('/start-kit-sub-out', (c) => {
     flow: 'sub_out',
     locale: getRequestLocale(c),
     preview: false,
+    ...pricePayload(),
+  })
+  return htmlResponse(c, html)
+})
+
+/** Sub Out at $4.99 (split test): the same landing and funnel, only the price variant differs. */
+funnelPageRoutes.get('/start-kit-sub-out-offer', (c) => {
+  const html = injectFunnel(loadPage('landing-sub-out.html'), {
+    kit: 'starter',
+    flow: 'sub_out',
+    locale: getRequestLocale(c),
+    preview: false,
+    ...pricePayload('offer'),
   })
   return htmlResponse(c, html)
 })
@@ -449,7 +484,7 @@ export async function maybeServeFunnelOnboard(c: Context, next: () => Promise<vo
       kit,
       locale,
       preview: true,
-      ...flowPayload(flow),
+      ...flowPayload(flow, flow ? requestedPriceVariant(c) : undefined),
       dashboardUrl: withLocalePrefix(locale, '/app/dashboard'),
     })
     return htmlResponse(c, html)
