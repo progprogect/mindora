@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <title>Mindora Academy — Start for {{price}}</title>
-<meta name="description" content="Mindora AI Starter Kit: 6 AI courses and 1,000+ prompts, yours forever — for $1.">
+<meta name="description" content="Mindora AI Starter Kit: 6 AI courses and 1,000+ prompts, yours forever — for {{price}}.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -451,7 +451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="pain">Your AI answers sound generic and robotic.</div>
       <div class="pain">You worry AI skills are becoming a job requirement — and you're behind.</div>
     </div>
-    <p class="answer">Mindora fixes this with <span>one short lesson a day</span>. Start with 6 AI courses for $1.</p>
+    <p class="answer">Mindora fixes this with <span>one short lesson a day</span>. Start with 6 AI courses for {{price}}.</p>
   </div>
 </section>
 
@@ -617,7 +617,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button class="close" data-close aria-label="Close">×</button>
     <div class="gift">🎁</div>
     <h3 id="exit-title">Wait — here's a free bonus</h3>
-    <p>Start today and we'll add our <b>50 Claude prompts for work</b> pack, free. Same $1.</p>
+    <p>Start today and we'll add our <b>50 Claude prompts for work</b> pack, free. Same {{price}}.</p>
     <button class="btn full" data-cta="checkout" data-block="exit" data-bonus="1">Claim my bonus — start for {{price}}</button>
     <button class="skip" data-close>No thanks, I'll leave</button>
   </div>
@@ -626,8 +626,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 /* Варианты первого экрана под креативы: ?v=certificate | ?v=claude */
 const VARIANTS = {
-  certificate:{h1:'Get AI-certified. Start for <span class="dollar">{{price}}</span>.',sub:'One AI tool at a time, from ChatGPT to Claude and Gemini. 6 AI courses, 1,000+ prompts and a certificate for every course — yours forever for $1.'},
-  claude:{kicker:'Claude by Anthropic — from basics to advanced',h1:'Learn Claude and 5 more AI tools. Start for <span class="dollar">{{price}}</span>.',sub:'Claude AI: Think Smarter, Work Faster — plus 5 more AI courses and 1,000+ prompts. Yours forever for $1.'}
+  certificate:{h1:'Get AI-certified. Start for <span class="dollar">{{price}}</span>.',sub:'One AI tool at a time, from ChatGPT to Claude and Gemini. 6 AI courses, 1,000+ prompts and a certificate for every course — yours forever for {{price}}.'},
+  claude:{kicker:'Claude by Anthropic — from basics to advanced',h1:'Learn Claude and 5 more AI tools. Start for <span class="dollar">{{price}}</span>.',sub:'Claude AI: Think Smarter, Work Faster — plus 5 more AI courses and 1,000+ prompts. Yours forever for {{price}}.'}
 };
 const v = new URLSearchParams(location.search).get('v');
 if (VARIANTS[v]) { document.getElementById('h1').innerHTML = VARIANTS[v].h1; document.getElementById('sub').textContent = VARIANTS[v].sub; if (VARIANTS[v].kicker) document.getElementById('kicker').textContent = VARIANTS[v].kicker; }
@@ -667,6 +667,6 @@ if (new URLSearchParams(location.search).get('cancelled') === '1') openExit(); /
 modal.addEventListener('click', e => { if (e.target === modal || e.target.hasAttribute('data-close')) modal.classList.remove('open'); });
 addEventListener('keydown', e => { if (e.key === 'Escape') modal.classList.remove('open'); });
 </script>
-<script src="/funnel-assets/i18n.js?v=10"></script>
+<script src="/funnel-assets/i18n.js?v=11"></script>
 </body>
 </html>

@@ -65,7 +65,7 @@ function toBasePrices(key){
 function fromBasePrices(text){
   var out=text;
   pricePairs().forEach(function(p){
-    var re=p[1]==='$1' ? /\$1(?![\d.,]|\s\d)/g : new RegExp(escRe(p[1]),'g');
+    var re=p[1]==='$1' ? /\$1(?!\d|[.,]\d|\s\d)/g : new RegExp(escRe(p[1]),'g');
     out=out.replace(re,function(){ return p[0]; });
   });
   return out;

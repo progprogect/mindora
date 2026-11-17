@@ -21,7 +21,7 @@ function withoutComments(html: string): string {
   return html.replace(/<!--[\s\S]*?-->/g, '').replace(/\/\*[\s\S]*?\*\//g, '')
 }
 
-const BASE_ONLY = /\$ ?1(?![\d.,])|\$391\.95|\$390\.95/
+const BASE_ONLY = /\$ ?1(?!\d|[.,]\d)|\$391\.95|\$390\.95/
 const OFFER_ONLY = /\$4\.99|\$500|\$495\.01/
 
 describe('price variants: table', () => {
@@ -139,6 +139,8 @@ describe('price variants: pages show the right price everywhere', async () => {
     assert.match(html, /You save \$495\.01/)
     assert.match(html, /<s>\$500<\/s>/)
     assert.match(html, /Today: \$4\.99/)
+    assert.match(html, /name="description" content="[^"]*for \$4\.99\./, 'link preview description')
+    assert.match(html, /Same \$4\.99\./)
   })
 
   it('the original landing still shows $1 / $391.95 / $390.95 and nothing of the offer', () => {
@@ -155,9 +157,9 @@ describe('price variants: pages show the right price everywhere', async () => {
     const member = withoutComments(read('funnel-pages/membership-sub-out.html'))
     assert.equal(/value: ?1\.00/.test(member), false, 'purchase value must come from FUNNEL.priceValue')
     assert.match(member, /FUNNEL\.priceValue/)
-    assert.equal(/\$ ?1(?![\d.,])/.test(member), false)
-    assert.equal(/\$ ?1(?![\d.,])/.test(withoutComments(read('funnel-pages/onboard.html'))), false)
-    assert.equal(/\$ ?1(?![\d.,])/.test(withoutComments(read('funnel-pages/verify.html'))), false)
+    assert.equal(/\$ ?1(?!\d|[.,]\d)/.test(member), false)
+    assert.equal(/\$ ?1(?!\d|[.,]\d)/.test(withoutComments(read('funnel-pages/onboard.html'))), false)
+    assert.equal(/\$ ?1(?!\d|[.,]\d)/.test(withoutComments(read('funnel-pages/verify.html'))), false)
   })
 
   it('the landing sends the variant with the checkout request', () => {
@@ -179,6 +181,8 @@ describe('price variants: pages show the right price everywhere', async () => {
     assert.equal(offer('You save $495.01 · yours forever'), 'Экономия $495.01 · навсегда ваше')
     assert.equal(offer('Mindora Academy — Start for $4.99'), 'Mindora Academy — начните за $4.99')
     assert.equal(offer('15 minutes a day. $4.99 to start.'), '15 минут в день. $4.99 на старт.')
+    assert.equal(offer('pack, free. Same $4.99.'), 'бесплатно. Всё тот же $4.99.')
+    assert.equal(offer('. Start with 6 AI courses for $4.99.'), '. Начните с 6 AI-курсов за $4.99.')
     // Unrelated dollar amounts are never rewritten.
     assert.equal(offer('Instead of $1,716+'), 'Вместо $1 716+')
     assert.equal(offer('Each Mindora course sells for $39 on its own. Separately, the same program costs over $1,700.'),
