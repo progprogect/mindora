@@ -1,0 +1,10308 @@
+[
+ {
+  "page": 1,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.6,
+      414.2,
+      544.4,
+      512.3,
+      485.1
+     ]
+    ],
+    "rot": 0,
+    "size": 82.7,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DISTRACTION-FREE",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      159.2,
+      476.2,
+      452.8,
+      594.4,
+      561.0
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "HalimunRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "planner",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      95.3,
+      620.6,
+      516.7,
+      656.3,
+      646.2
+     ]
+    ],
+    "rot": 0,
+    "size": 16.0,
+    "font": "HalimunRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "\"The successful warrior is the average",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      159.0,
+      655.1,
+      453.0,
+      690.8,
+      680.7
+     ]
+    ],
+    "rot": 0,
+    "size": 16.0,
+    "font": "HalimunRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "man, with laser-like focus.\"",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      236.0,
+      689.6,
+      382.1,
+      725.3,
+      715.2
+     ]
+    ],
+    "rot": 0,
+    "size": 16.0,
+    "font": "NotoSans-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "—Bruce Lee",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 2,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      26.7,
+      291.3,
+      79.3,
+      69.1
+     ],
+     [
+      37.1,
+      71.0,
+      218.7,
+      123.6,
+      113.3
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "get to know me time!",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.2,
+      155.4,
+      159.5,
+      169.5,
+      166.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Hello! My name is...",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.2,
+      216.3,
+      110.0,
+      230.4,
+      227.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nickname",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.2,
+      248.8,
+      72.1,
+      262.9,
+      260.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Age",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.2,
+      277.7,
+      96.0,
+      291.8,
+      289.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Address",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      50.1,
+      340.9,
+      101.5,
+      354.9,
+      352.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Birthday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      51.5,
+      373.7,
+      124.1,
+      387.8,
+      385.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Zodiac Sign",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      111.4,
+      415.1,
+      209.6,
+      429.2,
+      426.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Hobbies are",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      427.2,
+      423.5,
+      500.2,
+      437.6,
+      435.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Favorite",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      341.1,
+      457.2,
+      378.8,
+      471.3,
+      468.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Color:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      341.1,
+      493.8,
+      376.0,
+      507.9,
+      505.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Food:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      341.1,
+      526.6,
+      364.6,
+      540.7,
+      538.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Pet:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      341.1,
+      559.4,
+      375.5,
+      573.5,
+      570.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Song:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      341.1,
+      592.8,
+      382.8,
+      606.9,
+      604.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Movie:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      98.8,
+      600.5,
+      222.9,
+      614.6,
+      611.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Fun Facts About Me",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      402.7,
+      630.8,
+      503.1,
+      644.9,
+      642.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Motto in Life",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 3,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      27.0,
+      384.2,
+      79.6,
+      69.4
+     ],
+     [
+      37.1,
+      75.0,
+      141.9,
+      127.6,
+      117.4
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "distraction-free zone",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      149.4,
+      389.3,
+      164.1,
+      161.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Last week, I sat down to answer one email. Just one.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      169.6,
+      184.5,
+      184.4,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Two hours later, I had:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.6,
+      210.1,
+      306.9,
+      224.9,
+      222.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Googled “best socks for sweaty feet”",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.6,
+      230.4,
+      509.0,
+      245.1,
+      242.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Watched half a video essay about the rise and fall of fax machines",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.6,
+      250.6,
+      288.1,
+      265.4,
+      262.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Added a spatula to my online cart",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.6,
+      270.9,
+      320.5,
+      285.6,
+      282.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "And totally forgot to reply to the email.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      307.6,
+      139.8,
+      322.4,
+      319.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sound familiar?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      327.9,
+      575.8,
+      342.6,
+      339.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "If your brain has a habit of wandering, bouncing, or straight-up ditching you",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      348.1,
+      575.8,
+      362.9,
+      360.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "when you need it most, you‟re not alone. Focus isn‟t about willpower—it‟s about",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      368.4,
+      431.9,
+      383.1,
+      380.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "creating a space that works with your brain, not against it.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      403.6,
+      575.8,
+      418.4,
+      415.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "This is a space where you can quiet the noise, take back your time, and train",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.2,
+      423.9,
+      274.8,
+      438.6,
+      435.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "your focus without guilt or pressure.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.3,
+      458.9,
+      305.2,
+      473.6,
+      470.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What does “focus” feel like to me—",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      72.1,
+      479.1,
+      300.4,
+      493.9,
+      491.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "and what usually gets in the way?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      692.3,
+      576.7,
+      707.0,
+      704.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Some pages will help you get clear. Others will help you reset. All of them are",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      712.5,
+      576.7,
+      727.2,
+      724.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "here to support the version of you that wants to feel more present, intentional,",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      732.8,
+      220.4,
+      747.5,
+      744.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "and in control of your time.",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 4,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      26.4,
+      313.2,
+      77.9,
+      67.8
+     ],
+     [
+      37.1,
+      72.9,
+      228.6,
+      124.4,
+      114.3
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "today’s top 3 priorities",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      35.7,
+      140.4,
+      575.5,
+      154.1,
+      151.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "It‟s easy to get lost in a long to-do list. But some days, all you really need is clarity. This",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      35.7,
+      159.2,
+      575.5,
+      172.9,
+      170.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "page helps you focus on the three things that matter most—not everything, just the",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      35.7,
+      177.9,
+      330.7,
+      191.6,
+      189.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "right things. One page. Three priorities. That‟s it.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.2,
+      218.7,
+      114.6,
+      232.8,
+      230.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Priority 1",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      266.5,
+      177.0,
+      280.2,
+      277.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Why this matters today",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      324.8,
+      190.9,
+      338.6,
+      336.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "First small step I can take",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      62.1,
+      407.8,
+      115.5,
+      421.9,
+      419.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Priority 2",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      455.5,
+      178.0,
+      469.2,
+      466.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Why this matters today",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      513.9,
+      191.8,
+      527.6,
+      525.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "First small step I can take",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.1,
+      596.8,
+      116.4,
+      610.9,
+      608.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Priority 3",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.5,
+      644.6,
+      178.9,
+      658.3,
+      655.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Why this matters today",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.5,
+      702.9,
+      192.8,
+      716.7,
+      714.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "First small step I can take",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 5,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.4,
+      21.4,
+      431.3,
+      71.6,
+      61.8
+     ],
+     [
+      37.4,
+      64.9,
+      311.7,
+      115.1,
+      105.3
+     ]
+    ],
+    "rot": 0,
+    "size": 41.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "what i keep getting distracted by",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Distractions don‟t just “happen.” They sneak in through habits, thoughts, people, and",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "pings. This page is for calling them out. The more aware you are, the more control you",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      375.7,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "have. Be honest. Be specific. No judgment—just clarity.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      40.3,
+      202.4,
+      169.5,
+      216.6,
+      213.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Top 5 Distractions That",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      185.1,
+      202.0,
+      292.2,
+      216.2,
+      213.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "When They Usually",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      309.6,
+      208.4,
+      423.2,
+      222.5,
+      219.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "How I Usually React",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      440.4,
+      207.1,
+      567.2,
+      221.2,
+      218.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "What I’ll Try Next Time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      54.3,
+      218.9,
+      155.5,
+      233.1,
+      230.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Keep Showing Up",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      215.8,
+      219.1,
+      261.5,
+      233.2,
+      230.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Happen",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      192.4,
+      256.8,
+      282.6,
+      269.1,
+      266.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "(Use time ranges,",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      312.9,
+      256.8,
+      422.9,
+      269.1,
+      266.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "(What I do instead of",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      466.7,
+      256.8,
+      549.3,
+      269.1,
+      266.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "(One small shift,",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      183.7,
+      270.3,
+      291.3,
+      282.6,
+      280.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "situations, or moods)",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      327.1,
+      270.3,
+      408.7,
+      282.6,
+      280.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "staying on task)",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      456.8,
+      270.3,
+      559.1,
+      282.6,
+      280.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "boundary, or habit)",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 6,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      21.3,
+      220.6,
+      74.0,
+      63.7
+     ],
+     [
+      37.6,
+      63.3,
+      308.1,
+      116.0,
+      105.7
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "one task at a time log",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Multitasking is tempting, but it‟s not always helpful. This page is for moving through",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "your day one task at a time—with intention, pauses, and presence. You don‟t need to",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      273.3,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "rush. Just finish the task in front of you.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.1,
+      189.8,
+      394.8,
+      203.9,
+      201.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Time",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      444.8,
+      189.8,
+      471.5,
+      203.9,
+      201.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Time",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      508.0,
+      189.8,
+      565.3,
+      203.9,
+      201.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Paused or",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      54.8,
+      198.1,
+      85.0,
+      212.2,
+      209.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Done",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      220.0,
+      198.1,
+      244.8,
+      212.2,
+      209.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Task",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      360.9,
+      206.3,
+      401.9,
+      220.4,
+      217.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Started",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      434.4,
+      206.3,
+      481.8,
+      220.4,
+      217.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Finished",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      500.9,
+      206.3,
+      572.4,
+      220.4,
+      217.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Interrupted?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      260.8,
+      557.8,
+      274.5,
+      272.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      279.6,
+      556.4,
+      293.3,
+      290.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      315.1,
+      557.8,
+      328.8,
+      326.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      333.9,
+      556.4,
+      347.6,
+      345.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      371.8,
+      557.8,
+      385.5,
+      382.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      390.6,
+      556.4,
+      404.3,
+      401.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      426.1,
+      557.8,
+      439.8,
+      437.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      444.9,
+      556.4,
+      458.6,
+      456.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      481.9,
+      557.8,
+      495.7,
+      493.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      500.7,
+      556.4,
+      514.5,
+      511.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      536.2,
+      557.8,
+      550.0,
+      547.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      555.0,
+      556.4,
+      568.7,
+      566.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      539.0,
+      590.8,
+      557.8,
+      604.6,
+      602.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      540.3,
+      609.6,
+      556.4,
+      623.4,
+      620.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      97.2,
+      642.5,
+      516.5,
+      657.2,
+      654.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Focus Reset Space : What helped me get back on track today?",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 7,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.1,
+      23.7,
+      259.3,
+      76.3,
+      66.0
+     ],
+     [
+      37.1,
+      65.7,
+      270.9,
+      118.3,
+      108.0
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "20-minute deep focus",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No scrolling. No multitasking. No bouncing around. Just one task, one timer, and your",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "full attention. This is a simple way to train your brain to focus again—starting with just",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      104.8,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "20 minutes.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      324.6,
+      196.4,
+      440.7,
+      210.5,
+      207.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "My One Focus Task",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      236.2,
+      266.9,
+      336.3,
+      280.6,
+      278.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Timer Start Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      426.5,
+      266.9,
+      538.8,
+      280.6,
+      278.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Planned End Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.4,
+      365.4,
+      283.9,
+      379.1,
+      376.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Distractions That Tried to Interrupt Me",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      351.2,
+      365.7,
+      542.0,
+      379.5,
+      376.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What Helped Me Stay Focused",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      410.3,
+      148.2,
+      424.0,
+      421.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Phone buzzed",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      410.7,
+      387.1,
+      424.4,
+      421.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Silence",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      434.9,
+      168.3,
+      448.6,
+      446.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Email popped up",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      435.3,
+      466.4,
+      449.0,
+      446.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Music or white noise",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      462.2,
+      161.5,
+      475.9,
+      473.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Hungry or thirsty",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      462.6,
+      486.1,
+      476.3,
+      473.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Turning off notifications",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      488.5,
+      159.9,
+      502.2,
+      499.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Mind wandered",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      488.9,
+      453.3,
+      502.6,
+      500.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Closing extra tabs",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      513.3,
+      258.8,
+      527.0,
+      524.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Thought of something else to do",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      513.2,
+      571.1,
+      526.6,
+      524.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Reminding myself why this task matters",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.1,
+      539.6,
+      101.9,
+      553.3,
+      550.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      344.5,
+      540.0,
+      382.3,
+      553.7,
+      551.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      134.2,
+      590.3,
+      477.9,
+      604.0,
+      601.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "End of 20 Minutes — Reflection: Did I stay with the task?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      62.6,
+      615.8,
+      168.0,
+      629.5,
+      626.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes! Fully focused",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      244.1,
+      615.8,
+      343.6,
+      629.5,
+      626.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Mostly—few slips",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      408.7,
+      615.8,
+      574.3,
+      629.5,
+      626.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Not really (and that‟s okay)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      190.7,
+      665.7,
+      420.6,
+      679.5,
+      676.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What helped or hurt my focus today?",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 8,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.4,
+      18.8,
+      268.3,
+      69.1,
+      59.3
+     ],
+     [
+      36.4,
+      63.8,
+      208.2,
+      114.1,
+      104.3
+     ]
+    ],
+    "rot": 0,
+    "size": 41.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "phone-free hour log",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Stepping away from your phone—even just for an hour—can feel weird, freeing, or",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "even challenging. This page helps you track your experience, reflect, and build habits",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      216.0,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "that give your brain real rest.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      340.4,
+      201.1,
+      462.4,
+      216.5,
+      213.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "What I Did Instead",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      79.4,
+      248.4,
+      159.1,
+      262.1,
+      259.6
+     ],
+     [
+      81.5,
+      264.9,
+      157.0,
+      278.6,
+      276.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Time I Put My Phone Away",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      348.1,
+      165.1,
+      361.8,
+      359.2
+     ],
+     [
+      94.6,
+      364.6,
+      144.0,
+      378.3,
+      375.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Time I Picked It Back Up",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      253.7,
+      527.0,
+      354.6,
+      540.8,
+      538.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "How Did It Feel?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      62.7,
+      555.7,
+      101.3,
+      569.4,
+      566.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Restful",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      164.2,
+      555.8,
+      201.8,
+      569.6,
+      567.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Boring",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      263.5,
+      557.0,
+      308.1,
+      570.8,
+      568.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Freeing",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      365.0,
+      557.2,
+      435.1,
+      570.9,
+      568.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Hard at first",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      488.9,
+      557.0,
+      564.2,
+      570.8,
+      568.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Didn‟t miss it",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      62.7,
+      580.3,
+      167.9,
+      594.0,
+      591.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Anxious without it",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      263.0,
+      580.3,
+      297.0,
+      594.0,
+      591.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      225.7,
+      606.9,
+      383.8,
+      620.6,
+      618.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What Helped Me Stay Off",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.2,
+      635.5,
+      200.3,
+      649.2,
+      646.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Phone in another room",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      247.7,
+      636.4,
+      334.2,
+      650.2,
+      647.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Timer or alarm",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      382.2,
+      636.4,
+      572.8,
+      650.2,
+      647.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Told someone I was unplugging",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.4,
+      660.1,
+      317.3,
+      673.8,
+      671.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Kept hands busy (drawing, cleaning, etc.)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      384.8,
+      661.0,
+      418.8,
+      674.8,
+      672.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.3,
+      695.5,
+      170.0,
+      709.2,
+      706.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What surprised you",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      50.0,
+      715.8,
+      175.3,
+      729.5,
+      726.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "about being off your",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      89.7,
+      736.0,
+      135.6,
+      749.7,
+      747.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "phone?",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 9,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.8,
+      23.0,
+      459.9,
+      74.4,
+      64.4
+     ],
+     [
+      37.8,
+      64.2,
+      115.5,
+      115.6,
+      105.6
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "the “do not disturb” day",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.9,
+      91.6,
+      512.9,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sometimes, peace has to be planned. This page is for creating your own ‥Do Not",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Disturb‥ zone—whether it‟s an hour, an afternoon, or a full day. Protect your time like it",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      196.7,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "matters—because it does.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      244.9,
+      203.4,
+      369.1,
+      216.9,
+      214.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What This Time Is For",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      432.0,
+      203.4,
+      539.7,
+      216.9,
+      214.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Boundaries I‟ll Set",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      253.7,
+      246.6,
+      317.6,
+      260.1,
+      257.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Deep work",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      417.7,
+      246.6,
+      529.2,
+      260.1,
+      257.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Turn on DND mode",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      106.9,
+      256.2,
+      149.8,
+      271.0,
+      268.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Day or",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      253.1,
+      271.4,
+      351.5,
+      284.8,
+      282.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Rest or recharge",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.9,
+      271.4,
+      574.9,
+      284.8,
+      282.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Tell people I‟m unavailable",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.1,
+      275.6,
+      162.5,
+      290.3,
+      287.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Time Block",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      253.1,
+      295.0,
+      370.9,
+      308.5,
+      306.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Reading or learning",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.9,
+      295.0,
+      556.9,
+      308.5,
+      306.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Log out of social media",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      252.8,
+      317.3,
+      334.0,
+      330.7,
+      328.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Creative time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.5,
+      317.3,
+      571.5,
+      330.7,
+      328.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Put phone in another room",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      252.8,
+      341.9,
+      349.3,
+      355.4,
+      352.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Personal project",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.5,
+      341.9,
+      560.6,
+      355.4,
+      352.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No notifications allowed",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      252.8,
+      364.1,
+      373.6,
+      377.6,
+      375.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Mental health break",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.5,
+      364.1,
+      507.1,
+      377.6,
+      375.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "No multitasking",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      252.8,
+      387.6,
+      289.9,
+      401.0,
+      398.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.5,
+      387.6,
+      453.6,
+      401.0,
+      398.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      260.0,
+      414.2,
+      350.9,
+      427.7,
+      425.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Disruption Plan",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      193.7,
+      434.5,
+      417.3,
+      448.0,
+      445.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "If something does interrupt me, I will",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.6,
+      565.1,
+      268.6,
+      578.8,
+      576.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "How did it feel to protect my time?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      349.9,
+      565.1,
+      547.2,
+      578.8,
+      576.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What would I change next time?",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 10,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.8,
+      24.1,
+      397.6,
+      76.8,
+      66.5
+     ],
+     [
+      36.8,
+      66.1,
+      191.1,
+      118.8,
+      108.5
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "i’m most focused when…",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.0,
+      576.3,
+      146.7,
+      144.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Focus isn‟t just about willpower — it‟s about knowing what works for you. This page",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      151.7,
+      576.3,
+      165.4,
+      162.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "helps you notice your best focus conditions so you can recreate them with intention,",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.5,
+      110.8,
+      184.2,
+      181.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "not chance.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      232.5,
+      201.1,
+      379.5,
+      214.9,
+      212.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Best Time of Day for Me",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      98.2,
+      289.1,
+      233.2,
+      302.8,
+      300.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Ideal Environment",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.5,
+      287.0,
+      525.8,
+      300.7,
+      298.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Focus-Boosting Habits",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      355.8,
+      326.5,
+      448.0,
+      340.2,
+      337.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "To-do list ready",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.7,
+      351.8,
+      517.0,
+      365.6,
+      363.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Phone on silent or far away",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.7,
+      376.1,
+      514.7,
+      389.9,
+      387.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Timer set (Pomodoro, etc.)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.1,
+      398.9,
+      485.4,
+      412.7,
+      410.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Short break scheduled",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.1,
+      424.3,
+      486.3,
+      438.0,
+      435.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Task broken into steps",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.1,
+      447.0,
+      450.1,
+      460.8,
+      458.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Headphones on",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      354.1,
+      471.1,
+      391.9,
+      484.8,
+      482.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      229.3,
+      498.1,
+      386.8,
+      511.8,
+      509.2
+     ],
+     [
+      96.4,
+      513.1,
+      519.7,
+      526.8,
+      524.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What Doesn‟t Work for Me (List common distractions, moods, or habits that mess with your focus)",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      45.5,
+      662.9,
+      237.3,
+      676.6,
+      674.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "I Can Set Myself Up for Focus By",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 11,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      21.8,
+      401.6,
+      74.4,
+      64.1
+     ],
+     [
+      36.6,
+      69.0,
+      188.7,
+      121.7,
+      111.4
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "my focus routine builder",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.5,
+      576.3,
+      144.2,
+      141.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Great focus doesn‟t “just happen.” This page helps you build a step-by-step routine to",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      149.2,
+      576.3,
+      162.9,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "prepare your body, mind, and space before diving into a task—so focus feels natural,",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      168.0,
+      104.7,
+      181.7,
+      179.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "not forced.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      414.8,
+      215.8,
+      507.4,
+      231.7,
+      228.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Cut the Noise",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      126.1,
+      219.2,
+      246.3,
+      235.1,
+      232.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Clear Your Space",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      242.9,
+      539.9,
+      256.0,
+      253.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Turn on Do Not Disturb",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      135.0,
+      249.4,
+      269.7,
+      262.5,
+      260.0
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Tidy up desk/work area",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      259.9,
+      542.9,
+      271.9,
+      269.7
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Silence phone or put it in",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      135.0,
+      271.7,
+      282.3,
+      284.8,
+      282.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Put away unrelated items",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      273.6,
+      482.9,
+      285.5,
+      283.3
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "another room",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      290.1,
+      516.0,
+      302.0,
+      299.8
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Use noise-canceling",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      135.0,
+      293.9,
+      267.2,
+      307.0,
+      304.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Get rid of visual clutter",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      303.7,
+      476.8,
+      315.7,
+      313.4
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "headphones",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      135.0,
+      316.1,
+      266.2,
+      329.3,
+      326.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Light a candle / adjust",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      320.4,
+      536.8,
+      332.4,
+      330.1
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Play focus music / white",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      135.0,
+      330.5,
+      177.5,
+      343.6,
+      341.2
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "lighting",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      334.0,
+      437.7,
+      346.0,
+      343.8
+     ]
+    ],
+    "rot": 0,
+    "size": 9.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "noise",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      41.2,
+      434.5,
+      250.0,
+      447.6,
+      445.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Quick note about your space needs",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      312.3,
+      434.1,
+      518.8,
+      447.2,
+      444.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What helps you tune out the world?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      427.5,
+      505.8,
+      490.1,
+      521.7,
+      518.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Lock It In",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      128.4,
+      512.3,
+      264.5,
+      528.2,
+      525.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Get Mentally Ready",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.4,
+      533.2,
+      522.8,
+      546.3,
+      543.9
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Start with a small,",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.0,
+      538.1,
+      273.7,
+      551.2,
+      548.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Take 3 deep breaths",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.4,
+      547.6,
+      488.5,
+      560.7,
+      558.2
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "easy action",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.0,
+      561.7,
+      269.8,
+      574.8,
+      572.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Review your task list",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.1,
+      566.4,
+      535.0,
+      579.5,
+      577.1
+     ],
+     [
+      421.1,
+      580.8,
+      488.2,
+      593.9,
+      591.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Track distractions in a notebook",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.0,
+      585.4,
+      267.0,
+      598.5,
+      596.1
+     ],
+     [
+      155.0,
+      599.7,
+      203.7,
+      612.9,
+      610.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Choose one task to focus on",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.4,
+      599.7,
+      517.5,
+      612.9,
+      610.4
+     ],
+     [
+      421.4,
+      614.1,
+      524.5,
+      627.2,
+      624.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Schedule a short break in advance",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.0,
+      620.7,
+      288.0,
+      633.9,
+      631.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Set a timer (ex. 25 min)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.1,
+      632.9,
+      524.9,
+      646.1,
+      643.6
+     ],
+     [
+      421.1,
+      647.3,
+      493.5,
+      660.4,
+      657.9
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Promise yourself a reward after",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      42.1,
+      718.3,
+      260.4,
+      731.5,
+      729.0
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What…s your personal pre-focus ritual?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      312.7,
+      717.9,
+      566.9,
+      731.0,
+      728.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.7,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What keeps you in the zone once you start?",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 12,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      35.6,
+      19.1,
+      390.2,
+      71.7,
+      61.5
+     ],
+     [
+      35.6,
+      64.9,
+      252.6,
+      117.5,
+      107.2
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "nice ways to say “not now”",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.4,
+      426.9,
+      147.2,
+      144.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sometimes, you just need the right words to protect your focus.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      153.7,
+      576.4,
+      167.4,
+      164.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Use this page to write polite, confident ways to delay distractions—without feeling",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      173.9,
+      545.3,
+      187.7,
+      185.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "guilty or rude. Situations You Might Need a Script For: \u0007 Someone stops by to chat",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      194.2,
+      494.1,
+      207.9,
+      205.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "Type3 (642 0 R)",
+    "color": 0,
+    "flags": 0,
+    "text": "\u0007 You get a text while working, \u0007 A coworker asks for “just a minute” etc.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      99.4,
+      283.2,
+      162.7,
+      296.4,
+      293.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "“I‟m in the",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      264.2,
+      283.2,
+      345.8,
+      296.4,
+      293.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "“Let me write",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      436.5,
+      290.7,
+      529.5,
+      303.9,
+      301.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "“I‟m on a focus",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      102.0,
+      298.2,
+      160.2,
+      311.4,
+      308.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "middle of",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      261.8,
+      298.2,
+      348.3,
+      311.4,
+      308.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "that down so I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      433.7,
+      305.7,
+      532.2,
+      318.9,
+      316.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "sprint right now.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      78.0,
+      313.2,
+      184.2,
+      326.4,
+      323.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "something—can I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      257.2,
+      313.2,
+      352.8,
+      326.4,
+      323.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "don‟t forget. I‟ll",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      430.4,
+      320.7,
+      535.5,
+      333.9,
+      331.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "Mind if I check in",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      90.5,
+      328.2,
+      171.7,
+      341.4,
+      338.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "check in with",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      259.4,
+      328.2,
+      350.6,
+      341.4,
+      338.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "get to it once I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      434.4,
+      335.7,
+      531.6,
+      348.9,
+      346.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "with you later?”",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      97.1,
+      343.2,
+      165.1,
+      356.4,
+      353.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "you later?”",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      262.4,
+      343.2,
+      347.6,
+      356.4,
+      353.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic-It",
+    "color": 0,
+    "flags": 6,
+    "text": "wrap this up.”",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.8,
+      451.3,
+      188.1,
+      463.6,
+      461.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Now Write Your Own:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      245.8,
+      451.3,
+      363.1,
+      463.6,
+      461.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Now Write Your Own:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.4,
+      451.3,
+      538.7,
+      463.6,
+      461.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Now Write Your Own:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      92.4,
+      628.5,
+      163.0,
+      640.7,
+      638.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Escape Plan:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      269.8,
+      628.5,
+      340.4,
+      640.7,
+      638.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Escape Plan:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      445.3,
+      628.5,
+      515.8,
+      640.7,
+      638.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Escape Plan:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      60.3,
+      642.0,
+      198.7,
+      654.2,
+      651.9
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "(ex. put on headphones)",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 13,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      35.7,
+      20.4,
+      349.7,
+      71.8,
+      61.8
+     ],
+     [
+      35.7,
+      66.9,
+      222.4,
+      118.3,
+      108.3
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "my focus block schedule",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.5,
+      576.3,
+      144.2,
+      141.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Your time is precious—and your focus is limited. Use this page to break your day into",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      149.2,
+      449.5,
+      162.9,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "intentional blocks so you can work with your energy, not against it.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.8,
+      188.2,
+      83.0,
+      202.3,
+      199.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      178.8,
+      188.2,
+      284.6,
+      202.3,
+      199.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Task or Focus Area",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      385.0,
+      188.2,
+      456.8,
+      202.3,
+      199.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Priority Level",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      496.7,
+      188.2,
+      562.1,
+      202.3,
+      199.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic-Bd",
+    "color": 0,
+    "flags": 20,
+    "text": "Distractions",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      227.3,
+      388.7,
+      239.6,
+      237.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      227.3,
+      442.2,
+      239.6,
+      237.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      227.3,
+      475.2,
+      239.6,
+      237.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      259.3,
+      388.7,
+      271.6,
+      269.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      259.3,
+      442.2,
+      271.6,
+      269.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      259.3,
+      475.2,
+      271.6,
+      269.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      291.4,
+      388.7,
+      303.6,
+      301.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      291.4,
+      442.2,
+      303.6,
+      301.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      291.4,
+      475.2,
+      303.6,
+      301.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      323.4,
+      388.7,
+      335.7,
+      333.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      323.4,
+      442.2,
+      335.7,
+      333.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      323.4,
+      475.2,
+      335.7,
+      333.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      355.4,
+      388.7,
+      367.7,
+      365.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      355.4,
+      442.2,
+      367.7,
+      365.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      355.4,
+      475.2,
+      367.7,
+      365.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      387.5,
+      388.7,
+      399.7,
+      397.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      387.5,
+      442.2,
+      399.7,
+      397.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      387.5,
+      475.2,
+      399.7,
+      397.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      419.5,
+      388.7,
+      431.7,
+      429.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      419.5,
+      442.2,
+      431.7,
+      429.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      419.5,
+      475.2,
+      431.7,
+      429.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      451.5,
+      388.7,
+      463.8,
+      461.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      451.5,
+      442.2,
+      463.8,
+      461.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      451.5,
+      475.2,
+      463.8,
+      461.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      483.5,
+      388.7,
+      495.8,
+      493.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      483.5,
+      442.2,
+      495.8,
+      493.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      483.5,
+      475.2,
+      495.8,
+      493.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      515.6,
+      388.7,
+      527.8,
+      525.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      515.6,
+      442.2,
+      527.8,
+      525.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      515.6,
+      475.2,
+      527.8,
+      525.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      547.6,
+      388.7,
+      559.9,
+      557.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      547.6,
+      442.2,
+      559.9,
+      557.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      547.6,
+      475.2,
+      559.9,
+      557.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      579.6,
+      388.7,
+      591.9,
+      589.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      579.6,
+      442.2,
+      591.9,
+      589.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      579.6,
+      475.2,
+      591.9,
+      589.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      611.7,
+      388.7,
+      623.9,
+      621.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      611.7,
+      442.2,
+      623.9,
+      621.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      611.7,
+      475.2,
+      623.9,
+      621.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      643.7,
+      388.7,
+      655.9,
+      653.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      643.7,
+      442.2,
+      655.9,
+      653.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      643.7,
+      475.2,
+      655.9,
+      653.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      675.7,
+      388.7,
+      688.0,
+      685.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      675.7,
+      442.2,
+      688.0,
+      685.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      675.7,
+      475.2,
+      688.0,
+      685.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      707.7,
+      388.7,
+      720.0,
+      717.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      707.7,
+      442.2,
+      720.0,
+      717.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      707.7,
+      475.2,
+      720.0,
+      717.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      368.4,
+      739.8,
+      388.7,
+      752.0,
+      749.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Low",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      400.0,
+      739.8,
+      442.2,
+      752.0,
+      749.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Medium",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      452.1,
+      739.8,
+      475.2,
+      752.0,
+      749.7
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "High",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 14,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      16.3,
+      444.0,
+      67.7,
+      57.7
+     ],
+     [
+      36.6,
+      62.1,
+      195.2,
+      113.5,
+      103.5
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "my anti-distraction playlist",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.5,
+      576.3,
+      144.2,
+      141.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sometimes it‟s not about willpower—it‟s about the vibe. The right background sound",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      149.2,
+      576.3,
+      162.9,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "can flip the switch from “meh” to “let‟s go.” This playlist BINGO helps you figure out",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      168.0,
+      249.4,
+      181.7,
+      179.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "what actually works for your brain.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      180.5,
+      203.3,
+      296.0,
+      215.6,
+      213.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A song that makes my",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      317.7,
+      203.3,
+      433.4,
+      215.6,
+      213.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A background sound I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      458.8,
+      203.3,
+      566.4,
+      215.6,
+      213.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A playlist that makes",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.3,
+      211.1,
+      153.3,
+      230.7,
+      226.9
+     ]
+    ],
+    "rot": 0,
+    "size": 16.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHEN I NEED",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      200.9,
+      216.1,
+      275.5,
+      228.4,
+      226.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "brain go quiet",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      332.5,
+      216.1,
+      418.6,
+      228.4,
+      226.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "use while writing",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      493.7,
+      216.1,
+      531.5,
+      228.4,
+      226.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "time fly",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      58.9,
+      232.1,
+      142.7,
+      251.7,
+      247.9
+     ]
+    ],
+    "rot": 0,
+    "size": 16.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "TO FOCUS",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      179.8,
+      315.4,
+      297.9,
+      327.7,
+      325.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A song that feels like a",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      321.0,
+      315.4,
+      431.3,
+      327.7,
+      325.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A song that helps me",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      464.1,
+      316.4,
+      562.3,
+      327.5,
+      325.4
+     ]
+    ],
+    "rot": 0,
+    "size": 9.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Something soft I play",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.4,
+      317.8,
+      136.1,
+      336.1,
+      332.6
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHEN I'M",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      212.6,
+      328.1,
+      265.1,
+      340.4,
+      338.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "warm hug",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      337.7,
+      328.1,
+      414.6,
+      340.4,
+      338.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "breathe easier",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      457.9,
+      328.4,
+      568.6,
+      339.5,
+      337.4
+     ]
+    ],
+    "rot": 0,
+    "size": 9.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "when I‟m overwhelmed",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      54.6,
+      334.3,
+      148.8,
+      352.6,
+      349.1
+     ],
+     [
+      46.3,
+      350.8,
+      157.2,
+      369.1,
+      365.6
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "ANXIOUS OR OVERTHINKING",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      185.9,
+      428.6,
+      290.6,
+      440.9,
+      438.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A playlist that keeps",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      319.3,
+      428.6,
+      431.7,
+      440.9,
+      438.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A no-lyrics track I can",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      459.6,
+      429.6,
+      565.6,
+      440.7,
+      438.6
+     ]
+    ],
+    "rot": 0,
+    "size": 9.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A study mix I randomly",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.2,
+      430.9,
+      135.8,
+      449.3,
+      445.8
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHEN I'M",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      209.7,
+      441.3,
+      266.8,
+      453.6,
+      451.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "me on task",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      332.0,
+      441.3,
+      419.0,
+      453.6,
+      451.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "work to for hours",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      478.1,
+      441.6,
+      547.1,
+      452.7,
+      450.6
+     ]
+    ],
+    "rot": 0,
+    "size": 9.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "found but love",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.9,
+      447.4,
+      153.0,
+      465.8,
+      462.3
+     ],
+     [
+      65.6,
+      463.9,
+      137.3,
+      482.3,
+      478.8
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "STUDYING OR WORKING",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      52.3,
+      544.2,
+      150.9,
+      562.6,
+      559.1
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHEN I NEED",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      179.9,
+      541.8,
+      296.9,
+      554.1,
+      551.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A beat that makes me",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      327.3,
+      541.8,
+      424.0,
+      554.1,
+      551.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My go-to ‥get stuff",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      453.2,
+      541.8,
+      572.4,
+      554.1,
+      551.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My best “I‟m tired but I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      193.9,
+      554.6,
+      283.0,
+      566.9,
+      564.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "feel unstoppable",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      345.9,
+      554.6,
+      405.4,
+      566.9,
+      564.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "done‥ song",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      467.7,
+      554.6,
+      557.9,
+      566.9,
+      564.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "have to try” song",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      58.1,
+      560.7,
+      145.2,
+      579.1,
+      575.6
+     ],
+     [
+      54.2,
+      577.2,
+      149.1,
+      595.6,
+      592.1
+     ]
+    ],
+    "rot": 0,
+    "size": 15.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "ENERGY OR MOTIVATION",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      184.2,
+      655.0,
+      293.5,
+      667.3,
+      665.0
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A song I play to wind",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.8,
+      655.0,
+      429.5,
+      667.3,
+      665.0
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "A sound I use when I",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      459.1,
+      655.0,
+      567.4,
+      667.3,
+      665.0
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My comfort sound or",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      50.4,
+      658.0,
+      153.7,
+      677.6,
+      673.8
+     ]
+    ],
+    "rot": 0,
+    "size": 16.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHEN I JUST",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      224.3,
+      667.8,
+      253.4,
+      680.1,
+      677.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "down",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      334.1,
+      667.8,
+      418.2,
+      680.1,
+      677.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "can‟t fall asleep",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      500.0,
+      667.8,
+      526.4,
+      680.1,
+      677.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "track",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.7,
+      676.0,
+      140.5,
+      695.6,
+      691.8
+     ],
+     [
+      75.7,
+      694.0,
+      128.4,
+      713.6,
+      709.8
+     ]
+    ],
+    "rot": 0,
+    "size": 16.6,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WANT TO RELAX",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 15,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.7,
+      20.7,
+      255.9,
+      72.1,
+      62.1
+     ],
+     [
+      36.7,
+      62.0,
+      360.0,
+      113.4,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "fill in your “excuse wheel”",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.5,
+      576.3,
+      144.2,
+      141.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "We all have our favorite distractions… but which ones do you keep “spinning”? In each",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      149.2,
+      576.3,
+      162.9,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "slice, write the top 6 excuses or distractions you often turn to when avoiding",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      168.0,
+      103.5,
+      181.7,
+      179.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "something.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.2,
+      562.6,
+      230.0,
+      576.1,
+      573.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Which one shows up the most?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.1,
+      604.7,
+      366.0,
+      618.2,
+      615.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Which one feels like a lie you know you’re falling for?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.2,
+      688.0,
+      435.9,
+      701.5,
+      698.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Which excuse actually hides a real need (rest, motivation, etc.)?",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 16,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.0,
+      19.3,
+      181.4,
+      71.9,
+      61.7
+     ],
+     [
+      37.0,
+      59.1,
+      395.1,
+      111.7,
+      101.4
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "brain’s pop-up thoughts",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.5,
+      576.3,
+      144.2,
+      141.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "You‟re finally focusing… and BAM — your brain whispers, “Did you reply to that text?”",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      149.2,
+      576.3,
+      162.9,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "or “Maybe I should deep clean the fridge.” This page is your brain‟s holding zone. Not",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      168.0,
+      208.9,
+      181.7,
+      179.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "now. Maybe later. No stress.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.3,
+      326.6,
+      255.2,
+      339.6,
+      337.2
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.6,
+      326.3,
+      507.5,
+      339.2,
+      336.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      323.0,
+      514.2,
+      507.9,
+      527.2,
+      524.8
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.7,
+      514.6,
+      255.6,
+      527.5,
+      525.1
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.3,
+      705.7,
+      255.2,
+      718.6,
+      716.2
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.6,
+      705.3,
+      507.5,
+      718.3,
+      715.9
+     ]
+    ],
+    "rot": 0,
+    "size": 10.6,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Can this wait until later? When?",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 17,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      23.8,
+      345.5,
+      76.4,
+      66.2
+     ],
+     [
+      36.6,
+      63.6,
+      212.8,
+      116.2,
+      105.9
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "the after-task rewards",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.4,
+      576.3,
+      144.1,
+      141.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Staying focused is hard — let‟s make it worth it. The goal isn‟t to bribe yourself, but to",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      150.6,
+      576.3,
+      164.4,
+      161.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "celebrate small wins without turning your reward into another rabbit hole of",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.9,
+      353.5,
+      184.6,
+      182.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "distraction. Think simple, satisfying, and motivating.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      217.9,
+      205.8,
+      398.9,
+      219.3,
+      216.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What actually feels rewarding",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      285.4,
+      225.8,
+      331.3,
+      239.3,
+      236.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "for me?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      214.4,
+      255.0,
+      402.3,
+      268.4,
+      265.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "(List 6 ideas that feel like treats",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      218.8,
+      275.0,
+      398.0,
+      288.4,
+      285.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "but still respect your energy ‼",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      291.2,
+      295.0,
+      325.6,
+      308.4,
+      305.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "time.)",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.1,
+      406.2,
+      207.1,
+      420.0,
+      417.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Match the Task with a Treat",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.1,
+      425.0,
+      420.7,
+      438.7,
+      436.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sometimes the reward should fit the effort. Pair „em up below!",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.3,
+      456.0,
+      187.6,
+      469.5,
+      467.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Focus Task",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      396.2,
+      456.0,
+      514.0,
+      469.5,
+      467.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Chosen Reward",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 18,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      21.6,
+      263.9,
+      74.2,
+      63.9
+     ],
+     [
+      37.6,
+      61.3,
+      228.4,
+      113.9,
+      103.7
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "clean desk checklist",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.4,
+      420.6,
+      144.1,
+      141.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Wipe, clear, toss, organize. Reset your space, reset your brain.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      150.6,
+      576.3,
+      164.4,
+      161.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Let‟s be real—your desk didn‟t get this messy in one day. But you‟re one clean sweep",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.9,
+      270.0,
+      184.6,
+      182.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "away from feeling way more focused.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.6,
+      193.9,
+      355.8,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      366.4,
+      193.9,
+      399.6,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.4,
+      193.9,
+      443.6,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      454.4,
+      193.9,
+      487.6,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      498.3,
+      193.9,
+      531.6,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      542.3,
+      193.9,
+      575.6,
+      207.7,
+      205.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Week",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      104.6,
+      201.8,
+      236.4,
+      215.6,
+      213.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Clean Desk Checklist",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      103.7,
+      248.2,
+      241.0,
+      262.1,
+      259.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Disinfect desk surface",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      95.3,
+      278.1,
+      249.5,
+      291.9,
+      289.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Wipe keyboard ⁖ mouse",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      104.4,
+      308.0,
+      240.3,
+      321.8,
+      319.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Clean monitor screen",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      45.7,
+      337.8,
+      299.1,
+      351.7,
+      349.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Dust off lamp, shelves, and desk corners",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.7,
+      367.7,
+      265.6,
+      381.6,
+      379.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Throw away trash or old notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      87.7,
+      397.6,
+      254.5,
+      411.4,
+      408.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Remove empty cups/mugs",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      66.9,
+      427.5,
+      277.7,
+      441.3,
+      438.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Put away items that don‟t belong",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      75.9,
+      457.4,
+      268.6,
+      471.2,
+      468.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "File loose papers or notebooks",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.7,
+      490.2,
+      265.6,
+      504.1,
+      501.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Get rid of dry pens or markers",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      41.8,
+      520.1,
+      300.4,
+      534.0,
+      531.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Toss expired sticky notes or old to-do lists",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.6,
+      550.0,
+      283.0,
+      563.8,
+      561.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Throw away receipts and wrappers",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.5,
+      579.9,
+      283.1,
+      593.7,
+      591.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Recycle empty boxes or containers",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.9,
+      612.7,
+      286.4,
+      626.6,
+      624.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Clear out unused cables or chargers",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      80.2,
+      642.6,
+      262.1,
+      656.5,
+      653.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Neatly stack books or folders",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.9,
+      672.5,
+      279.6,
+      686.4,
+      683.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Create a space for essentials only",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      45.3,
+      702.4,
+      314.6,
+      716.2,
+      713.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Add one calming item (like a plant/photo)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      71.0,
+      732.3,
+      273.5,
+      746.1,
+      743.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.3,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sort your pens, paper, and tools",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 19,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      24.6,
+      338.0,
+      77.2,
+      66.9
+     ],
+     [
+      36.6,
+      64.3,
+      196.4,
+      116.9,
+      106.7
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "self-sabotage tracker",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.4,
+      576.3,
+      144.1,
+      141.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "We all get in our own way sometimes. This page is your safe space to notice how,",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      150.6,
+      262.5,
+      164.4,
+      161.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "when, and why — without judgment.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      96.9,
+      185.3,
+      228.9,
+      199.4,
+      196.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY USUAL PATTERNS",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      57.4,
+      209.6,
+      265.3,
+      221.9,
+      219.6
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What do I do that sabotages my own",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      387.8,
+      214.7,
+      505.6,
+      228.8,
+      226.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "TRIGGER MOMENTS",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      134.7,
+      225.4,
+      188.0,
+      237.6,
+      235.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "progress?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      336.9,
+      240.9,
+      556.5,
+      253.1,
+      250.8
+     ],
+     [
+      421.4,
+      257.4,
+      471.9,
+      269.6,
+      267.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "When do I notice these behaviors show up most?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      187.7,
+      459.3,
+      407.4,
+      478.2,
+      474.6
+     ]
+    ],
+    "rot": 0,
+    "size": 16.0,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "SELF-SABOTAGE TRACKER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      97.0,
+      548.8,
+      231.7,
+      563.0,
+      560.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "WHAT I TELL MYSELF",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      379.1,
+      568.8,
+      522.6,
+      583.0,
+      580.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "KinsleyRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "TINY SHIFTS I CAN TRY",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.2,
+      574.9,
+      275.9,
+      587.2,
+      584.9
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What excuses or thoughts pop up when",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.8,
+      591.4,
+      210.3,
+      603.7,
+      601.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "I self-sabotage?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      348.8,
+      598.3,
+      541.1,
+      610.6,
+      608.3
+     ]
+    ],
+    "rot": 0,
+    "size": 10.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "One small step to break the cycle.",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 20,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      24.6,
+      417.6,
+      77.2,
+      66.9
+     ],
+     [
+      36.6,
+      64.3,
+      140.1,
+      116.9,
+      106.7
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "survive the scroll wars",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      130.4,
+      405.4,
+      144.1,
+      141.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "You’re entering the Focus Arena, where your biggest",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      150.6,
+      405.4,
+      164.4,
+      161.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "enemies are: TikTok, Instagram, YouTube, Messenger, etc.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      170.9,
+      405.4,
+      184.6,
+      182.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "But you, Focus Warrior, must choose ONE app to conquer",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      191.1,
+      94.8,
+      204.9,
+      202.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "your task.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      182.8,
+      225.0,
+      340.1,
+      238.5,
+      236.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Focus App of the Day:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      139.1,
+      245.3,
+      383.7,
+      258.7,
+      256.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "I shall use only this app to slay my goals",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      160.0,
+      348.7,
+      454.1,
+      362.5,
+      359.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sneaky Distraction Bosses That Tried to Lure Me",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      75.7,
+      379.6,
+      140.7,
+      393.1,
+      390.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "App Name",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      222.8,
+      379.6,
+      295.1,
+      393.1,
+      390.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Did I Resist?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      348.8,
+      379.6,
+      552.7,
+      393.1,
+      390.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Distraction Defense Moves I Used",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      436.7,
+      246.0,
+      450.7,
+      448.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      436.7,
+      311.3,
+      450.7,
+      448.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      485.0,
+      246.0,
+      499.0,
+      496.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      485.0,
+      311.3,
+      499.0,
+      496.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      531.1,
+      246.0,
+      545.1,
+      542.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      531.1,
+      311.3,
+      545.1,
+      542.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      582.4,
+      246.0,
+      596.3,
+      593.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      582.4,
+      311.3,
+      596.3,
+      593.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      632.5,
+      246.0,
+      646.4,
+      643.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      632.5,
+      311.3,
+      646.4,
+      643.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      226.9,
+      678.6,
+      246.0,
+      692.5,
+      689.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Yes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      278.9,
+      678.6,
+      311.3,
+      692.5,
+      689.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.4,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Nope",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 21,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      25.3,
+      328.3,
+      77.9,
+      67.7
+     ],
+     [
+      36.6,
+      65.0,
+      203.4,
+      117.7,
+      107.4
+     ]
+    ],
+    "rot": 0,
+    "size": 43.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "task batching planner",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      134.1,
+      576.4,
+      147.9,
+      145.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Jumping from task to task drains your brain. Instead, group similar to-dos into",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      154.4,
+      349.5,
+      168.1,
+      165.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "“batches” so you can focus, flow, and finish faster.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      60.3,
+      178.6,
+      553.5,
+      192.1,
+      189.5
+     ],
+     [
+      113.7,
+      196.6,
+      496.2,
+      210.1,
+      207.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Name up to 5 categories of tasks you often do (e.g. emails, errands, deep work, creative work, admin). Decide when you’ll tackle each batch.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      91.7,
+      227.3,
+      166.9,
+      240.8,
+      238.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Batch Name",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      270.7,
+      227.3,
+      439.9,
+      240.8,
+      238.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Description / Task Examples",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      495.9,
+      227.3,
+      559.5,
+      240.8,
+      238.2
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Time Block",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 22,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      24.7,
+      467.5,
+      76.1,
+      66.1
+     ],
+     [
+      36.6,
+      66.7,
+      245.4,
+      118.1,
+      108.1
+     ]
+    ],
+    "rot": 0,
+    "size": 42.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "my usual distraction offenders",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.4,
+      576.4,
+      147.2,
+      144.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Plan your comebacks, clever escapes, and boundaries like a boss. Let’s stop getting",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      153.7,
+      576.4,
+      167.4,
+      164.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "sidetracked by every “Hey, got a sec?” and save your brainpower for what really",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      173.9,
+      464.8,
+      187.7,
+      185.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "matters. Let’s name 'em. What (or who /) tends to pull you off track?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.5,
+      209.4,
+      148.0,
+      222.9,
+      220.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Interruption",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      220.6,
+      209.4,
+      365.6,
+      222.9,
+      220.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "How it Usually Shows Up",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      425.9,
+      209.4,
+      549.8,
+      222.9,
+      220.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My Way to Handle It",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 23,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.2,
+      22.0,
+      373.6,
+      72.2,
+      62.4
+     ],
+     [
+      37.2,
+      67.0,
+      282.5,
+      117.2,
+      107.4
+     ]
+    ],
+    "rot": 0,
+    "size": 41.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "plan tomorrow’s focus today",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      133.4,
+      576.4,
+      147.2,
+      144.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "You know that frazzled feeling when you start the day already behind? Let’s avoid",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      153.7,
+      576.4,
+      167.4,
+      164.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "that. Take just a few minutes tonight to map out tomorrow’s top priorities. This is your",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      36.6,
+      173.9,
+      363.6,
+      187.7,
+      185.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "mini-routine for a smoother, more focused tomorrow.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      130.6,
+      206.7,
+      555.8,
+      220.4,
+      217.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Pick 1–3 Priority Tasks: What absolutely needs to get done tomorrow?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.2,
+      410.4,
+      386.4,
+      424.1,
+      421.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Pick Your Peak Focus Time: When are you usually most",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.2,
+      430.7,
+      173.3,
+      444.4,
+      441.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "alert and productive?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.7,
+      464.1,
+      157.9,
+      477.8,
+      475.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "My focus window:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.3,
+      517.2,
+      515.7,
+      530.6,
+      528.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Prep for Smooth Start: What can I do now to make tomorrow easier?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      89.8,
+      551.8,
+      280.9,
+      565.2,
+      562.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Set out materials/tools I’ll need",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      355.7,
+      551.8,
+      566.9,
+      565.3,
+      562.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Write down any lingering thoughts",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      114.5,
+      583.9,
+      255.2,
+      597.4,
+      594.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Clean or reset my desk",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.0,
+      584.0,
+      544.7,
+      597.5,
+      595.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Go to bed at a decent time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      351.7,
+      616.0,
+      389.9,
+      629.5,
+      627.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.1,
+      616.6,
+      275.6,
+      630.1,
+      627.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Close tabs/apps I won’t need",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      54.9,
+      652.4,
+      207.7,
+      665.8,
+      663.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Tomorrow’s Focus Mantra",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      62.2,
+      676.9,
+      414.3,
+      689.8,
+      687.4
+     ]
+    ],
+    "rot": 0,
+    "size": 10.5,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Write one simple sentence to stay grounded and intentional.",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 24,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.2,
+      19.1,
+      192.1,
+      72.9,
+      62.4
+     ],
+     [
+      37.2,
+      64.8,
+      207.9,
+      118.7,
+      108.2
+     ]
+    ],
+    "rot": 0,
+    "size": 44.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "weekly planner",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.4,
+      136.9,
+      576.3,
+      150.4,
+      147.8
+     ],
+     [
+      37.4,
+      154.1,
+      281.9,
+      167.6,
+      165.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "By planning your week, you can prioritize important tasks and maintain a balanced approach to achieving your objectives.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      143.9,
+      186.4,
+      192.7,
+      199.9,
+      197.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Monday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      430.1,
+      186.4,
+      478.4,
+      199.9,
+      197.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Tuesday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      133.1,
+      331.5,
+      203.5,
+      344.9,
+      342.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Wednesday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      425.0,
+      331.5,
+      477.3,
+      344.9,
+      342.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Thursday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      150.2,
+      476.5,
+      186.4,
+      490.0,
+      487.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Friday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      419.7,
+      476.5,
+      472.9,
+      490.0,
+      487.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Saturday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      146.5,
+      621.5,
+      190.1,
+      635.0,
+      632.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Sunday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      429.6,
+      621.5,
+      463.1,
+      635.0,
+      632.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Notes",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 25,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.2,
+      19.1,
+      221.0,
+      72.9,
+      62.4
+     ],
+     [
+      37.2,
+      64.8,
+      207.9,
+      118.7,
+      108.2
+     ]
+    ],
+    "rot": 0,
+    "size": 44.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "monthly planner",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.3,
+      142.4,
+      576.9,
+      156.1,
+      153.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "By planning your month, you can prioritize important tasks and maintain a balanced",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.3,
+      161.4,
+      285.8,
+      175.1,
+      172.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "approach to achieving your objectives.",
+    "align": "left"
+   },
+   {
+    "kind": "row",
+    "text": "Sun | Mon | Tue | Wed | Thu | Fri | Sat",
+    "rects": [
+     [
+      66.1,
+      195.8,
+      87.0,
+      209.5,
+      206.9
+     ],
+     [
+      139.7,
+      195.8,
+      166.0,
+      209.5,
+      206.9
+     ],
+     [
+      218.7,
+      195.8,
+      239.3,
+      209.5,
+      206.9
+     ],
+     [
+      292.1,
+      195.8,
+      319.5,
+      209.5,
+      206.9
+     ],
+     [
+      376.2,
+      195.8,
+      396.4,
+      209.5,
+      206.9
+     ],
+     [
+      453.1,
+      195.8,
+      466.5,
+      209.5,
+      206.9
+     ],
+     [
+      527.2,
+      195.8,
+      545.9,
+      209.5,
+      206.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 26,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      24.3,
+      139.7,
+      78.2,
+      67.7
+     ],
+     [
+      37.6,
+      69.3,
+      257.5,
+      123.2,
+      112.7
+     ]
+    ],
+    "rot": 0,
+    "size": 44.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "final reflection",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      38.1,
+      143.5,
+      574.8,
+      157.2,
+      154.6
+     ],
+     [
+      38.1,
+      161.0,
+      163.6,
+      174.6,
+      172.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.1,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "As you wrap up your journey with this planner, it‟s time to take a step back and reflect on your experiences.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.6,
+      193.5,
+      458.0,
+      207.2,
+      204.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.1,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What did I learn about my focus habits over time?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      104.3,
+      340.8,
+      510.2,
+      354.0,
+      351.5
+     ]
+    ],
+    "rot": 0,
+    "size": 10.8,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Which distractions showed up the most—and how did I handle them?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      118.4,
+      488.6,
+      496.1,
+      502.3,
+      499.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.1,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What small changes made the biggest difference in my focus?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.5,
+      629.6,
+      514.2,
+      643.2,
+      640.6
+     ]
+    ],
+    "rot": 0,
+    "size": 11.1,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "What would I tell my past self about staying focused and grounded?",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 27,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      37.6,
+      24.3,
+      286.3,
+      78.2,
+      67.7
+     ],
+     [
+      37.6,
+      69.3,
+      161.1,
+      123.2,
+      112.7
+     ]
+    ],
+    "rot": 0,
+    "size": 44.5,
+    "font": "FredokaOne-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "my planner notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      91.6,
+      513.2,
+      106.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.9,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      39.3,
+      147.5,
+      575.9,
+      161.2,
+      158.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "Use this space to jot down any important reminders, new insights, or strategies you",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      39.3,
+      166.2,
+      354.9,
+      180.0,
+      177.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.2,
+    "font": "CenturyGothic",
+    "color": 0,
+    "flags": 4,
+    "text": "want to revisit. Feel free to write freely and openly!",
+    "align": "left"
+   }
+  ]
+ }
+]

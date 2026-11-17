@@ -1,0 +1,9095 @@
+[
+ {
+  "page": 1,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      132.3,
+      374.7,
+      479.7,
+      484.6,
+      454.1
+     ],
+     [
+      175.7,
+      446.7,
+      436.3,
+      556.6,
+      526.1
+     ]
+    ],
+    "rot": 0,
+    "size": 92.7,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DEEP FOCUS AT WORK",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      150.8,
+      498.1,
+      461.2,
+      622.9,
+      587.7
+     ]
+    ],
+    "rot": 0,
+    "size": 56.0,
+    "font": "HalimunRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "planner",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      90.8,
+      635.1,
+      520.5,
+      668.5,
+      659.1
+     ]
+    ],
+    "rot": 0,
+    "size": 15.0,
+    "font": "NotoSans-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "“The key is not to prioritize what’s on your",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      87.5,
+      668.1,
+      523.8,
+      701.5,
+      692.1
+     ]
+    ],
+    "rot": 0,
+    "size": 15.0,
+    "font": "HalimunRegular",
+    "color": 0,
+    "flags": 4,
+    "text": "schedule, but to schedule your priorities.”",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      210.5,
+      701.1,
+      406.5,
+      734.5,
+      725.1
+     ]
+    ],
+    "rot": 0,
+    "size": 15.0,
+    "font": "NotoSans-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "— Stephen R. Covey",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "page": 2,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      141.1,
+      56.9,
+      465.2,
+      128.0,
+      108.3
+     ]
+    ],
+    "rot": 0,
+    "size": 60.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY WORK VALUES",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      51.8,
+      117.4,
+      560.3,
+      134.2,
+      130.3
+     ],
+     [
+      51.3,
+      136.2,
+      560.7,
+      152.9,
+      149.0
+     ],
+     [
+      291.4,
+      154.9,
+      320.6,
+      171.7,
+      167.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Your work values are the invisible compass that determines whether a day feels meaningful or hollow. Knowing them clearly helps you make better decisions about how to spend every hour.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      183.5,
+      307.4,
+      200.9,
+      196.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Check all that resonate, then circle your top 3:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.5,
+      210.8,
+      224.4,
+      227.5,
+      223.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Quality over speed",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.5,
+      236.4,
+      278.3,
+      253.1,
+      249.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Collaboration and teamwork",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.5,
+      261.1,
+      262.6,
+      277.9,
+      274.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Autonomy and ownership",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.5,
+      286.6,
+      299.4,
+      303.3,
+      299.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Learning and continuous growth",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.2,
+      312.0,
+      254.3,
+      328.8,
+      324.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Impact and contribution",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      334.2,
+      262.9,
+      350.9,
+      347.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Recognition and feedback",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.2,
+      359.7,
+      217.8,
+      376.4,
+      372.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Work-life balance",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.2,
+      384.4,
+      258.9,
+      401.2,
+      397.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Innovation and creativity",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      407.4,
+      285.1,
+      424.1,
+      420.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Reliability and follow-through",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      433.6,
+      270.9,
+      450.4,
+      446.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Leadership and mentorship",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      480.9,
+      270.1,
+      498.2,
+      493.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My top 3 work values in my own words:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.7,
+      592.5,
+      261.9,
+      609.2,
+      605.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "How my current role aligns with",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      320.5,
+      592.5,
+      557.2,
+      609.2,
+      605.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "One change I could make to bring my work",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      91.4,
+      611.2,
+      251.8,
+      627.9,
+      624.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "(or conflicts with) my values:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      359.0,
+      611.2,
+      515.4,
+      627.9,
+      624.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "more in line with my values:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 3,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      74.4,
+      60.9,
+      531.8,
+      127.4,
+      108.9
+     ]
+    ],
+    "rot": 0,
+    "size": 56.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY PROFESSIONAL MISSION",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      53.3,
+      120.1,
+      558.8,
+      136.8,
+      132.9
+     ],
+     [
+      57.1,
+      138.9,
+      555.0,
+      155.6,
+      151.7
+     ],
+     [
+      219.4,
+      157.6,
+      392.7,
+      174.3,
+      170.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "A one-sentence professional mission gives every workday a north star; it answers why your work matters beyond the tasks on your to-do list. Write yours and revisit it whenever you lose sight of the bigger picture.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      53.0,
+      177.2,
+      188.0,
+      195.3,
+      190.7
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Why do I do this work?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      53.0,
+      288.6,
+      343.9,
+      306.6,
+      302.1
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Who do I serve or impact most through my work?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      53.0,
+      399.0,
+      366.7,
+      417.1,
+      412.5
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "What would be lost if I stopped doing this work well?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.8,
+      544.9,
+      342.2,
+      562.2,
+      557.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My professional mission statement (1–2 sentences):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 4,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.2,
+      61.5,
+      530.0,
+      125.5,
+      107.8
+     ]
+    ],
+    "rot": 0,
+    "size": 54.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY IDEAL WORKDAY DESIGN",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      51.6,
+      115.8,
+      563.8,
+      132.5,
+      128.6
+     ],
+     [
+      45.2,
+      133.0,
+      566.9,
+      149.8,
+      145.9
+     ],
+     [
+      281.8,
+      150.3,
+      326.9,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Most people never consciously design their workday; they simply react to whatever arrives. Spending 10 minutes designing your ideal day is one of the highest-leverage activities you will ever do.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      181.6,
+      299.3,
+      196.3,
+      192.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I want to start work at:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      86.9,
+      190.5,
+      143.3,
+      207.9,
+      203.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Start time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      227.5,
+      309.6,
+      242.2,
+      238.8
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My peak focus hours are:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.3,
+      237.0,
+      146.3,
+      254.3,
+      250.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Peak hours",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      277.8,
+      322.6,
+      292.5,
+      289.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I want to take breaks every:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      74.6,
+      286.7,
+      156.0,
+      304.1,
+      299.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Break cadence",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      323.7,
+      332.7,
+      338.4,
+      335.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I will protect deep work from:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      85.1,
+      332.1,
+      145.5,
+      349.5,
+      345.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Deep work",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      373.1,
+      326.2,
+      387.8,
+      384.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I prefer meetings scheduled:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      89.3,
+      380.1,
+      141.3,
+      397.5,
+      393.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Meetings",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      419.1,
+      291.9,
+      433.8,
+      430.3
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I protect lunch break:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      99.0,
+      426.6,
+      131.6,
+      443.9,
+      439.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Lunch",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      468.6,
+      330.0,
+      483.3,
+      479.9
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I handle routine tasks during:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      83.2,
+      474.7,
+      147.4,
+      492.1,
+      487.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Low energy",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      514.3,
+      297.6,
+      529.0,
+      525.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I want to stop work at:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      90.5,
+      521.4,
+      140.1,
+      538.7,
+      534.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "End time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      563.8,
+      343.3,
+      578.5,
+      575.1
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My end-of-day routine includes:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.8,
+      569.5,
+      147.8,
+      586.8,
+      582.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Wind-down",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      186.8,
+      609.5,
+      317.1,
+      624.2,
+      620.7
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "I will not check work after:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.2,
+      616.2,
+      154.4,
+      633.5,
+      629.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "No work after",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      77.0,
+      661.7,
+      185.2,
+      677.8,
+      674.0
+     ],
+     [
+      58.7,
+      679.7,
+      203.6,
+      695.8,
+      692.0
+     ],
+     [
+      77.4,
+      697.7,
+      181.7,
+      713.8,
+      710.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What would need to change for this ideal day to become my reality?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 5,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      145.6,
+      59.9,
+      460.9,
+      122.8,
+      105.3
+     ],
+     [
+      184.7,
+      101.2,
+      421.9,
+      164.0,
+      146.6
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "STRENGTHS & PEAK PERFORMANCE",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.0,
+      154.5,
+      565.1,
+      171.2,
+      167.3
+     ],
+     [
+      48.2,
+      173.2,
+      563.9,
+      190.0,
+      186.1
+     ],
+     [
+      230.7,
+      192.0,
+      378.1,
+      208.7,
+      204.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Knowing when you are naturally sharpest lets you align your most demanding work with your highest-energy periods. This single alignment habit can double your effective output without adding a single extra hour.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      68.9,
+      240.4,
+      142.7,
+      257.8,
+      253.4
+     ],
+     [
+      55.4,
+      259.2,
+      156.2,
+      276.5,
+      272.2
+     ],
+     [
+      65.3,
+      277.9,
+      146.3,
+      295.3,
+      290.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My strongest professional skills and strengths:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      147.2,
+      319.5,
+      461.4,
+      336.2,
+      332.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time of day I feel most focused, creative, and energized:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.2,
+      425.8,
+      412.2,
+      443.2,
+      438.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Conditions that make me most productive (check all that apply):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.1,
+      455.4,
+      310.8,
+      472.2,
+      468.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Quiet environment with no interruptions",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      352.5,
+      456.3,
+      553.0,
+      473.0,
+      469.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Morning work sessions before 10am",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.1,
+      479.0,
+      281.7,
+      495.7,
+      491.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Background music or ambient noise",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      352.5,
+      479.8,
+      519.4,
+      496.5,
+      492.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Afternoon deep work sessions",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.1,
+      502.9,
+      260.7,
+      519.7,
+      515.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Working alone on a solo project",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      352.5,
+      503.8,
+      542.9,
+      520.5,
+      516.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Standing or walking while thinking",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      84.1,
+      527.6,
+      325.6,
+      544.4,
+      540.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Collaborating/thinking out loud with others",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      333.3,
+      561.0,
+      549.1,
+      577.7,
+      573.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What drains my energy most quickly at",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      72.9,
+      570.0,
+      268.4,
+      586.7,
+      582.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My ideal physical workspace setup:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      424.1,
+      579.7,
+      455.0,
+      596.5,
+      592.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "work:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 6,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      86.7,
+      61.5,
+      519.5,
+      125.5,
+      107.8
+     ]
+    ],
+    "rot": 0,
+    "size": 54.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "CURRENT WORKDAY AUDIT",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      50.6,
+      115.8,
+      564.8,
+      132.5,
+      128.6
+     ],
+     [
+      57.4,
+      133.0,
+      551.4,
+      149.8,
+      145.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Before redesigning your workday, it is essential to understand how you currently spend your time; honestly and without judgment. This audit is your starting line, not your finish line.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      166.8,
+      394.6,
+      184.1,
+      180.1
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "How I currently spend my workday (estimate hours per day):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      85.9,
+      206.5,
+      113.8,
+      224.5,
+      220.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      189.2,
+      206.5,
+      259.8,
+      224.5,
+      220.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Task / Focus",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      352.5,
+      206.5,
+      395.5,
+      224.5,
+      220.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Priority",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      482.9,
+      206.5,
+      516.2,
+      224.5,
+      220.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      65.1,
+      235.9,
+      124.6,
+      252.1,
+      248.7
+     ],
+     [
+      81.1,
+      253.1,
+      105.3,
+      269.4,
+      265.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Meetings / calls",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.6,
+      279.6,
+      116.1,
+      295.8,
+      292.4
+     ],
+     [
+      64.1,
+      296.8,
+      122.3,
+      313.1,
+      309.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Email & messaging",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.1,
+      323.6,
+      131.8,
+      339.8,
+      336.4
+     ],
+     [
+      59.1,
+      340.8,
+      133.7,
+      357.1,
+      353.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Deep focus / creative work",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      74.6,
+      367.6,
+      117.4,
+      383.8,
+      380.4
+     ],
+     [
+      49.3,
+      384.8,
+      142.8,
+      401.1,
+      397.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Admin / operational tasks",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.8,
+      411.6,
+      118.2,
+      427.8,
+      424.4
+     ],
+     [
+      67.2,
+      428.8,
+      124.8,
+      445.1,
+      441.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Breaks / transitions",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      69.0,
+      455.6,
+      123.0,
+      471.8,
+      468.4
+     ],
+     [
+      52.1,
+      472.8,
+      139.9,
+      489.1,
+      485.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Reactive / unplanned tasks",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      68.3,
+      500.7,
+      123.7,
+      517.0,
+      513.5
+     ],
+     [
+      64.1,
+      518.0,
+      127.9,
+      534.2,
+      530.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Planning / preparation",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      77.3,
+      553.3,
+      111.5,
+      569.6,
+      566.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Other:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      60.8,
+      590.8,
+      276.9,
+      607.6,
+      603.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "The biggest time wasters in my current",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      362.7,
+      601.3,
+      514.5,
+      618.0,
+      614.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I want more time for:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      141.9,
+      609.6,
+      192.5,
+      626.3,
+      622.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "workday:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 7,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      137.4,
+      60.9,
+      468.8,
+      127.4,
+      108.9
+     ]
+    ],
+    "rot": 0,
+    "size": 56.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DISTRACTION AUDIT",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      57.7,
+      115.8,
+      554.4,
+      132.5,
+      128.6
+     ],
+     [
+      55.0,
+      133.0,
+      557.1,
+      149.8,
+      145.9
+     ],
+     [
+      261.9,
+      150.3,
+      350.1,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Distractions are not a character flaw — they are a design problem. Understanding exactly what pulls your attention away from meaningful work is the first step to engineering them out of your day.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      175.6,
+      286.2,
+      193.6,
+      189.1
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Check your biggest workday distractions:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.7,
+      208.9,
+      328.8,
+      225.6,
+      221.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Phone notifications during focus time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.7,
+      234.6,
+      309.4,
+      251.3,
+      247.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Checking email every few minutes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.7,
+      259.3,
+      294.7,
+      276.0,
+      272.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Social media during work hours",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.8,
+      284.7,
+      376.8,
+      301.4,
+      297.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Unplanned drop-in conversations or messages",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.4,
+      307.5,
+      395.2,
+      324.2,
+      320.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Unclear priorities — not knowing what to do next",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      332.3,
+      350.2,
+      349.0,
+      345.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Noisy or distracting physical environment",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.3,
+      357.9,
+      388.9,
+      374.6,
+      370.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Internal overthinking, anxiety, or mental chatter",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      120.4,
+      382.6,
+      375.8,
+      399.3,
+      395.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Context-switching between too many projects",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      405.5,
+      402.9,
+      422.3,
+      418.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Unnecessary meetings breaking up deep work time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      119.9,
+      431.8,
+      379.1,
+      448.5,
+      444.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Procrastination on difficult or ambiguous tasks",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      475.8,
+      335.2,
+      493.1,
+      488.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My #1 distraction and my specific plan to reduce it:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      561.6,
+      338.3,
+      578.9,
+      574.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Three environmental changes I will make this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      669.6,
+      205.1,
+      686.9,
+      682.6
+     ],
+     [
+      44.7,
+      688.3,
+      186.8,
+      705.7,
+      701.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My distraction-free protocol during deep work blocks:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 8,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      105.7,
+      60.0,
+      506.1,
+      124.1,
+      106.3
+     ]
+    ],
+    "rot": 0,
+    "size": 54.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "WEEKLY TOP PRIORITIES",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      59.9,
+      115.8,
+      555.5,
+      132.5,
+      128.6
+     ],
+     [
+      61.3,
+      133.0,
+      550.8,
+      149.8,
+      145.9
+     ],
+     [
+      200.1,
+      150.3,
+      408.7,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Identifying your three most important outcomes for the week creates a decision filter for everything else; if it doesn't serve these priorities, it can wait. Clarity on priorities is the foundation of every productive week.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      122.8,
+      187.9,
+      151.4,
+      204.6,
+      200.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Goal:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.2,
+      217.0,
+      99.3,
+      269.0,
+      258.0
+     ]
+    ],
+    "rot": 0,
+    "size": 40.0,
+    "font": "Calibri-Italic",
+    "color": 16777215,
+    "flags": 6,
+    "text": "P1",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.5,
+      257.6,
+      225.3,
+      274.3,
+      270.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Deadline / Metric:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      122.9,
+      332.1,
+      151.6,
+      348.8,
+      344.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Goal:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.3,
+      361.2,
+      99.4,
+      413.2,
+      402.2
+     ]
+    ],
+    "rot": 0,
+    "size": 40.0,
+    "font": "Calibri-Italic",
+    "color": 16777215,
+    "flags": 6,
+    "text": "P2",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.6,
+      401.8,
+      225.5,
+      418.5,
+      414.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Deadline / Metric:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      123.0,
+      476.3,
+      151.7,
+      493.0,
+      489.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Goal:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.5,
+      505.4,
+      99.6,
+      557.5,
+      546.5
+     ]
+    ],
+    "rot": 0,
+    "size": 40.0,
+    "font": "Calibri-Italic",
+    "color": 16777215,
+    "flags": 6,
+    "text": "P3",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.7,
+      546.0,
+      225.6,
+      562.7,
+      558.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Deadline / Metric:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      321.3,
+      612.3,
+      555.1,
+      629.0,
+      625.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Who I need to connect with this week and",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.6,
+      618.8,
+      239.6,
+      635.5,
+      631.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "This week I will say NO to:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      423.5,
+      631.1,
+      449.5,
+      647.8,
+      643.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "why:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 9,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      127.9,
+      55.9,
+      478.6,
+      116.4,
+      99.6
+     ],
+     [
+      231.6,
+      95.7,
+      374.9,
+      156.2,
+      139.4
+     ]
+    ],
+    "rot": 0,
+    "size": 51.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "WEEKLY WORK HABITS TRACKER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      64.9,
+      145.4,
+      550.5,
+      162.1,
+      158.2
+     ],
+     [
+      60.0,
+      164.1,
+      552.1,
+      180.9,
+      177.0
+     ],
+     [
+      242.2,
+      182.9,
+      366.6,
+      199.6,
+      195.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Work habits performed consistently — even imperfectly — compound into dramatically better performance over months and years. Track yours here and let the visible progress keep you accountable.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      151.2,
+      215.7,
+      219.2,
+      233.0,
+      228.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Habit / Task",
+    "align": "left"
+   },
+   {
+    "kind": "row",
+    "text": "M | T | W | T | F | S | S",
+    "rects": [
+     [
+      336.2,
+      215.7,
+      347.2,
+      233.0,
+      228.7
+     ],
+     [
+      374.3,
+      215.7,
+      380.5,
+      233.0,
+      228.7
+     ],
+     [
+      407.6,
+      215.7,
+      418.9,
+      233.0,
+      228.7
+     ],
+     [
+      446.0,
+      215.7,
+      452.2,
+      233.0,
+      228.7
+     ],
+     [
+      479.3,
+      215.7,
+      485.0,
+      233.0,
+      228.7
+     ],
+     [
+      512.1,
+      215.7,
+      518.0,
+      233.0,
+      228.7
+     ],
+     [
+      545.1,
+      215.7,
+      551.0,
+      233.0,
+      228.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      253.3,
+      252.1,
+      269.6,
+      266.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Morning planning session (15 min)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      290.0,
+      247.2,
+      306.2,
+      302.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Deep work block — uninterrupted",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      330.4,
+      218.6,
+      346.7,
+      343.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Inbox zero or email batching",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      367.1,
+      214.9,
+      383.3,
+      379.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Reviewed priorities mid-day",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      406.0,
+      273.8,
+      422.3,
+      418.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "End-of-day wrap-up & shutdown ritual",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      442.7,
+      213.7,
+      458.9,
+      455.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "No phone during focus time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      483.1,
+      246.7,
+      499.4,
+      495.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Completed top 3 weekly priorities",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.4,
+      519.8,
+      251.4,
+      536.1,
+      532.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Exercised or moved during the day",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.2,
+      560.2,
+      205.3,
+      576.5,
+      573.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Adequate sleep (7+ hours)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.2,
+      596.9,
+      201.9,
+      613.2,
+      609.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Weekly review completed",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      69.0,
+      649.2,
+      151.9,
+      666.6,
+      662.2
+     ],
+     [
+      72.2,
+      668.0,
+      148.6,
+      685.3,
+      681.0
+     ],
+     [
+      56.9,
+      686.7,
+      163.9,
+      704.1,
+      699.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Habit I'm most committed to building this week:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 10,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      105.7,
+      55.8,
+      506.0,
+      123.4,
+      104.6
+     ]
+    ],
+    "rot": 0,
+    "size": 57.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "WEEKLY WORK REVIEW",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.8,
+      115.8,
+      562.3,
+      132.5,
+      128.6
+     ],
+     [
+      53.0,
+      133.0,
+      559.0,
+      149.8,
+      145.9
+     ],
+     [
+      269.8,
+      150.3,
+      338.9,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "The weekly review is the single highest-leverage habit in any productivity system — it closes open loops, captures lessons, and resets your compass. Done consistently, it will transform your results.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.9,
+      191.0,
+      245.6,
+      208.4,
+      204.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "What did I accomplish this week?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      324.8,
+      191.0,
+      474.9,
+      208.4,
+      204.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "What didn't I finish? Why?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.8,
+      352.3,
+      223.6,
+      369.6,
+      365.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "What slowed me down most?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      324.7,
+      352.3,
+      534.9,
+      369.6,
+      365.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "What will I do differently next week?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      513.7,
+      171.8,
+      530.4,
+      526.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Energy level this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.6,
+      545.2,
+      177.2,
+      561.9,
+      558.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Focus quality this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      576.4,
+      202.5,
+      593.2,
+      589.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Work-life balance this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      245.6,
+      576.4,
+      271.1,
+      593.2,
+      589.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Poor",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      311.9,
+      576.4,
+      332.3,
+      593.2,
+      589.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Fair",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      369.6,
+      576.4,
+      398.7,
+      593.2,
+      589.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Good",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      432.6,
+      576.4,
+      482.3,
+      593.2,
+      589.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Excellent",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      96.1,
+      619.1,
+      239.5,
+      635.8,
+      631.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My biggest win this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      357.3,
+      619.1,
+      519.3,
+      635.8,
+      631.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My #1 priority for next week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 11,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      102.6,
+      59.5,
+      509.4,
+      125.9,
+      107.5
+     ]
+    ],
+    "rot": 0,
+    "size": 56.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DEEP WORK PRINCIPLES",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.7,
+      115.8,
+      556.4,
+      132.5,
+      128.6
+     ],
+     [
+      59.4,
+      133.0,
+      552.7,
+      149.8,
+      145.9
+     ],
+     [
+      208.4,
+      150.3,
+      400.4,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Deep work — cognitively demanding, distraction-free work — is the activity that produces the most valuable professional output. Yet it is also the most fragile and most frequently sacrificed to shallow, urgent tasks.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      187.8,
+      456.7,
+      204.5,
+      200.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "1.Schedule deep work blocks in advance — at least the night before",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      208.8,
+      371.7,
+      225.5,
+      221.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "2.Start with the hardest or most important task first",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      229.8,
+      415.9,
+      246.5,
+      242.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "3.Work in focused sprints of 90 minutes maximum, then rest",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      250.8,
+      429.8,
+      267.5,
+      263.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "4.Remove all notifications before entering a deep work session",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      271.8,
+      406.1,
+      288.5,
+      284.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "5.Track time spent in deep work — aim for 3–4 hours daily",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      82.9,
+      292.8,
+      487.0,
+      309.5,
+      305.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "6.End each deep work block with a written record of what you completed",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      341.2,
+      161.9,
+      358.5,
+      354.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My deep work goals:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      374.8,
+      289.6,
+      391.6,
+      387.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Hours of deep work per day I am aiming for:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      406.1,
+      259.1,
+      422.8,
+      418.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My preferred deep work time window:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      192.4,
+      455.6,
+      412.2,
+      472.9,
+      468.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My deep work environment and setup:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      66.9,
+      562.7,
+      278.4,
+      579.4,
+      575.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I will do when I feel the urge to",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      337.5,
+      562.7,
+      540.9,
+      579.4,
+      575.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My personal protocol for protecting",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      138.2,
+      581.4,
+      207.2,
+      598.2,
+      594.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "break focus:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      386.5,
+      581.4,
+      488.5,
+      598.2,
+      594.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "deep work blocks:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 12,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      143.5,
+      55.9,
+      463.1,
+      116.4,
+      99.6
+     ],
+     [
+      231.6,
+      95.7,
+      374.9,
+      156.2,
+      139.4
+     ]
+    ],
+    "rot": 0,
+    "size": 51.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DEEP WORK SESSION TRACKER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      59.2,
+      145.4,
+      556.2,
+      162.1,
+      158.2
+     ],
+     [
+      47.4,
+      164.1,
+      564.6,
+      180.9,
+      177.0
+     ],
+     [
+      215.2,
+      182.9,
+      393.6,
+      199.6,
+      195.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What gets measured gets managed — tracking your deep work sessions makes your focus time visible and motivating. A consistent record of deep work is one of the most encouraging metrics a professional can keep.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      69.9,
+      217.3,
+      96.0,
+      234.6,
+      230.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Date",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      175.1,
+      217.3,
+      252.7,
+      234.6,
+      230.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Project / Task",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      328.4,
+      217.3,
+      355.6,
+      234.6,
+      230.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Start",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      393.0,
+      217.3,
+      413.5,
+      234.6,
+      230.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "End",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      451.1,
+      217.3,
+      547.5,
+      234.6,
+      230.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Notes / Outcome",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 13,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      85.0,
+      62.7,
+      527.0,
+      122.0,
+      105.5
+     ]
+    ],
+    "rot": 0,
+    "size": 50.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "TASK PRIORITIZATION MATRIX",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.3,
+      120.0,
+      554.1,
+      136.7,
+      132.8
+     ],
+     [
+      48.3,
+      137.2,
+      563.8,
+      153.9,
+      150.0
+     ],
+     [
+      245.7,
+      154.5,
+      363.1,
+      171.2,
+      167.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "The Eisenhower Matrix separates urgent tasks from important ones — a distinction most busy professionals fail to make until their highest-value work has been crowded out entirely. Think before you act.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      81.9,
+      199.9,
+      272.9,
+      217.2,
+      212.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "URGENT + IMPORTANT — Do First",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      325.4,
+      199.9,
+      544.7,
+      217.2,
+      212.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "IMPORTANT, NOT URGENT — Schedule",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.8,
+      458.5,
+      286.5,
+      475.9,
+      471.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "URGENT, NOT IMPORTANT — Delegate",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      319.5,
+      459.9,
+      550.5,
+      476.5,
+      472.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "NOT URGENT, NOT IMPORTANT — Eliminate",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 14,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      113.3,
+      59.9,
+      498.7,
+      122.8,
+      105.3
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "FOCUS SPRINT TRACKER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      52.9,
+      120.0,
+      562.5,
+      136.7,
+      132.8
+     ],
+     [
+      58.8,
+      137.2,
+      553.3,
+      153.9,
+      150.0
+     ],
+     [
+      168.5,
+      154.5,
+      440.3,
+      171.2,
+      167.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Working in focused sprints of 25–90 minutes with scheduled breaks is one of the most well-researched techniques for sustaining high-quality output across an entire workday. Track your sprints and watch your focus capacity grow.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      166.9,
+      197.5,
+      244.6,
+      214.9,
+      210.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Task / Project",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      320.3,
+      197.5,
+      369.8,
+      214.9,
+      210.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Duration",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      391.6,
+      197.5,
+      426.9,
+      214.9,
+      210.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Done?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      480.5,
+      197.5,
+      513.1,
+      214.9,
+      210.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      239.2,
+      373.6,
+      256.0,
+      252.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      286.4,
+      373.6,
+      303.2,
+      299.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      333.6,
+      373.6,
+      350.4,
+      346.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      382.0,
+      373.6,
+      398.8,
+      394.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      430.4,
+      373.6,
+      447.2,
+      443.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      478.8,
+      373.6,
+      495.6,
+      491.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      525.7,
+      373.6,
+      542.5,
+      538.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      572.6,
+      373.6,
+      589.4,
+      585.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      619.5,
+      373.6,
+      636.3,
+      632.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      353.2,
+      666.4,
+      373.6,
+      683.2,
+      679.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "min",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 15,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      80.9,
+      59.1,
+      525.9,
+      120.7,
+      103.6
+     ]
+    ],
+    "rot": 0,
+    "size": 52.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MEETING AGENDA TEMPLATE",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.5,
+      114.5,
+      556.6,
+      131.2,
+      127.3
+     ],
+     [
+      56.2,
+      131.7,
+      555.9,
+      148.5,
+      144.6
+     ],
+     [
+      227.9,
+      149.0,
+      384.1,
+      165.7,
+      161.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "A clear agenda shared before a meeting is the single most effective way to make meetings shorter, more productive, and less likely to be scheduled again unnecessarily. Always lead with the outcome you need.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      45.0,
+      178.7,
+      120.6,
+      195.5,
+      191.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Meeting title:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      411.9,
+      178.7,
+      441.3,
+      195.5,
+      191.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      202.5,
+      97.0,
+      219.2,
+      215.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Duration:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      360.5,
+      202.5,
+      414.4,
+      219.2,
+      215.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Location :",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      226.1,
+      106.3,
+      243.4,
+      239.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Attendees:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      58.3,
+      348.1,
+      185.6,
+      364.2,
+      360.5
+     ],
+     [
+      96.9,
+      366.1,
+      143.8,
+      382.2,
+      378.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Desired outcome of this meeting:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.3,
+      402.7,
+      126.9,
+      419.4,
+      415.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Agenda Items:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      427.5,
+      402.4,
+      443.6,
+      439.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      453.7,
+      402.4,
+      469.7,
+      466.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      479.9,
+      402.4,
+      495.9,
+      492.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      506.1,
+      402.4,
+      522.1,
+      518.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      532.3,
+      402.4,
+      548.3,
+      544.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      373.1,
+      558.5,
+      402.4,
+      574.5,
+      570.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      611.6,
+      221.4,
+      628.2,
+      624.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Pre-read / preparation required:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      45.0,
+      647.9,
+      165.0,
+      664.6,
+      660.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Key decisions needed:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.9,
+      684.2,
+      191.8,
+      700.9,
+      696.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Meeting notes / outcomes:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 16,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.0,
+      59.1,
+      543.5,
+      120.7,
+      103.6
+     ]
+    ],
+    "rot": 0,
+    "size": 52.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MEETING NOTES & ACTION LOG",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.6,
+      114.3,
+      556.9,
+      131.0,
+      127.1
+     ],
+     [
+      57.0,
+      133.0,
+      549.6,
+      149.7,
+      145.8
+     ],
+     [
+      264.2,
+      151.8,
+      342.3,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Meeting notes are only valuable if they capture decisions made and actions assigned — not just a summary of what was said. Use this log to record the outcomes that actually move work forward.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      181.3,
+      94.3,
+      198.0,
+      194.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Meeting:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      304.3,
+      179.8,
+      333.7,
+      196.5,
+      192.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      429.4,
+      179.8,
+      481.5,
+      196.5,
+      192.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Duration:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      217.5,
+      159.0,
+      234.9,
+      230.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Key decisions made:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      335.0,
+      171.7,
+      352.3,
+      348.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Action items assigned:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      121.8,
+      371.5,
+      187.3,
+      388.8,
+      384.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Action Item",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      303.3,
+      371.0,
+      340.5,
+      388.3,
+      384.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Owner",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      412.2,
+      371.0,
+      464.1,
+      388.3,
+      384.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Due Date",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      507.2,
+      371.0,
+      542.6,
+      388.3,
+      384.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Done?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 17,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      117.3,
+      58.0,
+      493.3,
+      116.1,
+      100.0
+     ],
+     [
+      230.8,
+      95.5,
+      379.8,
+      153.6,
+      137.5
+     ]
+    ],
+    "rot": 0,
+    "size": 49.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "EMAIL & COMMUNICATION BATCHING",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      46.5,
+      149.2,
+      565.5,
+      166.0,
+      162.1
+     ],
+     [
+      52.1,
+      168.0,
+      559.9,
+      184.7,
+      180.8
+     ],
+     [
+      174.7,
+      186.7,
+      434.1,
+      203.5,
+      199.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Checking email constantly is one of the most destructive habits in modern professional life — it fragments attention and prevents the deep work that generates real value. Batching your communications is a game-changing discipline.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      76.0,
+      231.1,
+      278.4,
+      247.8,
+      243.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Set 2–3 fixed email windows per day",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      346.7,
+      231.1,
+      515.9,
+      247.8,
+      243.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Turn off all email and message",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      74.7,
+      249.8,
+      279.8,
+      266.6,
+      262.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "(e.g. 9am, 1pm, 5pm) and stay out of",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      325.3,
+      249.8,
+      537.3,
+      266.6,
+      262.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "notifications during deep work blocks.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      95.1,
+      268.6,
+      256.0,
+      285.3,
+      281.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "your inbox at all other times.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.9,
+      268.6,
+      536.4,
+      285.3,
+      281.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Your output will improve dramatically.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.2,
+      326.3,
+      263.1,
+      343.6,
+      339.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My planned communication windows:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      106.4,
+      354.6,
+      156.7,
+      371.4,
+      367.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Morning:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      106.4,
+      380.0,
+      151.0,
+      396.7,
+      392.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Midday:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      106.4,
+      405.6,
+      168.2,
+      422.3,
+      418.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "End of day:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      46.9,
+      456.7,
+      383.6,
+      474.1,
+      469.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Messages and emails to send today (planned, not reactive):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      484.1,
+      333.2,
+      500.8,
+      496.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      485.5,
+      119.0,
+      502.2,
+      498.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      507.1,
+      119.0,
+      523.8,
+      519.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      505.7,
+      333.2,
+      522.4,
+      518.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      529.0,
+      333.2,
+      545.7,
+      541.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      530.4,
+      119.0,
+      547.1,
+      543.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      552.0,
+      119.0,
+      568.7,
+      564.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      550.6,
+      333.2,
+      567.3,
+      563.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      573.9,
+      333.2,
+      590.6,
+      586.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      575.3,
+      119.0,
+      592.0,
+      588.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      315.9,
+      595.5,
+      333.2,
+      612.2,
+      608.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Re:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.9,
+      596.9,
+      119.0,
+      613.6,
+      609.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "To:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      46.9,
+      634.3,
+      200.5,
+      651.7,
+      647.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Responses I am waiting on:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 18,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.2,
+      59.9,
+      477.0,
+      122.8,
+      105.3
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "FOLLOW-UP TRACKER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      43.2,
+      114.3,
+      563.3,
+      131.0,
+      127.1
+     ],
+     [
+      62.3,
+      133.0,
+      544.2,
+      149.7,
+      145.8
+     ],
+     [
+      209.3,
+      151.8,
+      393.9,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Dropped follow-ups are invisible productivity leaks — each one represents a stalled project, a missed opportunity, or a damaged professional relationship. This tracker makes what's outstanding impossible to forget.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      85.8,
+      189.4,
+      162.7,
+      206.7,
+      202.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Item / Person",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      227.9,
+      189.4,
+      313.6,
+      206.7,
+      202.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Context / Need",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      361.0,
+      188.9,
+      415.8,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Sent Date",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      434.2,
+      188.9,
+      552.2,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Follow Up By Done?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 19,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      106.9,
+      63.8,
+      494.3,
+      126.6,
+      109.2
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "DAILY ENERGY TRACKER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.7,
+      121.0,
+      565.8,
+      137.7,
+      133.8
+     ],
+     [
+      48.9,
+      139.7,
+      563.1,
+      156.4,
+      152.5
+     ],
+     [
+      244.1,
+      158.5,
+      368.0,
+      175.2,
+      171.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Tracking your daily energy levels across the week reveals patterns you cannot otherwise see; the connections between sleep, food, movement, stress, and cognitive performance become visible and actionable.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      124.5,
+      196.0,
+      193.0,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Habit / Task",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      277.5,
+      196.0,
+      288.5,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "M",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.4,
+      196.0,
+      328.7,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "T",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      362.7,
+      196.0,
+      374.1,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "W",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      408.0,
+      196.0,
+      414.3,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "T",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      451.1,
+      196.0,
+      456.8,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "F",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      496.0,
+      196.0,
+      501.9,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "S",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      538.8,
+      196.0,
+      544.7,
+      213.4,
+      209.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "S",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      83.3,
+      229.3,
+      234.2,
+      245.7,
+      242.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Morning energy (rate 1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      86.1,
+      262.4,
+      231.3,
+      278.8,
+      275.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Midday energy (rate 1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      80.6,
+      295.5,
+      240.2,
+      311.8,
+      308.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Afternoon energy (rate 1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      86.8,
+      331.5,
+      234.0,
+      347.9,
+      344.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Evening energy (rate 1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      80.3,
+      367.2,
+      243.9,
+      383.6,
+      380.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Sleep quality last night (1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      80.6,
+      403.1,
+      240.2,
+      419.5,
+      416.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Afternoon energy (rate 1–5):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      90.7,
+      439.0,
+      230.1,
+      455.4,
+      451.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Exercise today (duration)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      75.9,
+      472.0,
+      248.4,
+      488.4,
+      485.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Adequate hydration (8 glasses)",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.0,
+      507.7,
+      230.2,
+      524.1,
+      520.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Healthy, balanced meals",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.2,
+      540.8,
+      226.6,
+      557.2,
+      553.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Screen-free break taken",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      110.0,
+      576.5,
+      207.4,
+      592.9,
+      589.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.6,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "Left work on time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.5,
+      621.7,
+      282.8,
+      638.4,
+      634.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Patterns I notice in my energy this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 20,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      60.3,
+      59.9,
+      546.2,
+      122.8,
+      105.3
+     ]
+    ],
+    "rot": 0,
+    "size": 53.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "ENERGY MANAGEMENT PRIMER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      49.4,
+      114.3,
+      557.1,
+      131.0,
+      127.1
+     ],
+     [
+      53.5,
+      133.0,
+      553.0,
+      149.7,
+      145.8
+     ],
+     [
+      123.2,
+      151.8,
+      483.3,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Time management is dead — energy management is the real skill. You have a finite number of hours but you have even less high-quality cognitive energy, and learning to protect and restore it separates sustained performers from burned-out ones.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      187.6,
+      458.8,
+      204.4,
+      200.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "1. Identify your peak energy windows and protect them for deep work",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      208.6,
+      459.7,
+      225.4,
+      221.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "2. Take proper breaks — not scrolling breaks but genuine physical rest",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      229.6,
+      448.6,
+      246.4,
+      242.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "3. Eat and hydrate to support cognitive function throughout the day",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      250.6,
+      526.8,
+      267.4,
+      263.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "4. Exercise consistently — it is the most powerful energy investment you can make",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      271.6,
+      522.4,
+      288.4,
+      284.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "5. Sleep is non-negotiable — it is when performance is actually built and restored",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.4,
+      292.6,
+      500.0,
+      309.4,
+      305.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-BoldItalic",
+    "color": 0,
+    "flags": 22,
+    "text": "6. End work at a consistent time — recovery is not optional, it is performance",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      63.8,
+      350.3,
+      322.0,
+      371.1,
+      364.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "FreeSerif",
+    "color": 0,
+    "flags": 4,
+    "text": "✦ My current energy management strengths:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      91.8,
+      465.6,
+      255.1,
+      482.3,
+      478.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Where I lose the most energy",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      318.3,
+      465.6,
+      548.2,
+      482.3,
+      478.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My energy restoration rituals (things that",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      111.4,
+      484.3,
+      235.5,
+      501.0,
+      497.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "unnecessarily at work:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      364.5,
+      484.3,
+      498.7,
+      501.0,
+      497.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "genuinely recharge me):",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.5,
+      612.3,
+      379.8,
+      633.2,
+      626.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "FreeSerif",
+    "color": 0,
+    "flags": 4,
+    "text": "✦ One energy habit I will commit to starting this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 21,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      164.4,
+      58.9,
+      446.2,
+      118.2,
+      101.7
+     ],
+     [
+      189.3,
+      97.1,
+      421.3,
+      156.4,
+      140.0
+     ]
+    ],
+    "rot": 0,
+    "size": 50.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "BREAK PLANNER & RECOVERY LOG",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.0,
+      149.2,
+      556.1,
+      166.0,
+      162.1
+     ],
+     [
+      49.5,
+      168.0,
+      562.6,
+      184.7,
+      180.8
+     ],
+     [
+      210.5,
+      186.7,
+      401.5,
+      203.5,
+      199.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Strategic breaks are not a concession to weakness; they are the mechanism by which your brain consolidates learning, restores focus, and prevents the cognitive fatigue that degrades decision quality over the workday.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      477.6,
+      217.2,
+      547.9,
+      234.5,
+      230.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Energy After",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      79.6,
+      225.1,
+      106.8,
+      242.4,
+      238.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Time",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      179.2,
+      225.1,
+      241.5,
+      242.4,
+      238.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Break Type",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      358.0,
+      225.1,
+      400.9,
+      242.4,
+      238.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Activity",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.3,
+      571.3,
+      275.3,
+      588.0,
+      584.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Restorative activities that work best",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      360.5,
+      571.3,
+      518.0,
+      588.0,
+      584.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Signs I notice when I need a",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      150.6,
+      590.1,
+      191.5,
+      606.8,
+      602.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "for me:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      421.6,
+      590.1,
+      456.9,
+      606.8,
+      602.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "break:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 22,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      57.9,
+      59.7,
+      548.6,
+      120.2,
+      103.4
+     ]
+    ],
+    "rot": 0,
+    "size": 51.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "STRESS & WORKLOAD CHECK-IN",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      42.6,
+      114.3,
+      563.9,
+      131.0,
+      127.1
+     ],
+     [
+      63.0,
+      133.0,
+      543.5,
+      149.7,
+      145.8
+     ],
+     [
+      237.3,
+      151.8,
+      365.9,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Unchecked workplace stress quietly erodes cognitive performance, decision quality, and long-term health. Regular check ins allow early intervention before small pressure becomes unsustainable burnout.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      42.1,
+      181.0,
+      208.9,
+      198.3,
+      193.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "This week my workload feels:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      107.2,
+      211.2,
+      170.7,
+      227.9,
+      224.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Sustainable",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      207.4,
+      211.2,
+      353.4,
+      227.9,
+      224.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Stretched but manageable",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      389.6,
+      211.2,
+      453.3,
+      227.9,
+      224.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Overloaded",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      486.4,
+      210.5,
+      525.0,
+      227.2,
+      223.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Critical",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      51.7,
+      263.6,
+      159.8,
+      280.4,
+      276.5
+     ],
+     [
+      59.5,
+      282.4,
+      152.0,
+      299.1,
+      295.2
+     ],
+     [
+      89.4,
+      301.1,
+      118.8,
+      317.9,
+      314.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What is causing the most stress right now?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      50.9,
+      339.5,
+      286.9,
+      356.2,
+      352.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What is one thing I can do today to reduce",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      320.4,
+      340.3,
+      560.4,
+      357.0,
+      353.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Who can I ask for support or delegate work",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      142.0,
+      358.3,
+      195.8,
+      375.0,
+      371.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "pressure?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      429.9,
+      359.0,
+      447.5,
+      375.7,
+      371.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "to?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      501.1,
+      442.2,
+      518.5,
+      514.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Am I taking proper care of my basic needs? (check what you're doing):",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      99.7,
+      529.9,
+      267.9,
+      546.6,
+      542.7
+     ],
+     [
+      99.7,
+      549.4,
+      294.5,
+      566.1,
+      562.2
+     ],
+     [
+      99.7,
+      569.0,
+      329.4,
+      585.7,
+      581.8
+     ],
+     [
+      99.7,
+      588.5,
+      362.4,
+      605.2,
+      601.3
+     ],
+     [
+      99.7,
+      608.1,
+      287.0,
+      624.8,
+      620.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Sleeping 7+ hours consistently Eating proper meals during the day Moving or exercising at least 3x per week Taking real breaks — not just switching screens Protecting time off and weekends",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.7,
+      638.2,
+      286.8,
+      655.6,
+      651.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "My stress management strategy this week:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 23,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      103.5,
+      59.1,
+      503.0,
+      120.7,
+      103.6
+     ]
+    ],
+    "rot": 0,
+    "size": 52.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "END-OF-DAY REFLECTION",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      53.9,
+      114.3,
+      552.6,
+      131.0,
+      127.1
+     ],
+     [
+      66.1,
+      133.0,
+      540.5,
+      149.7,
+      145.8
+     ],
+     [
+      166.3,
+      151.8,
+      436.9,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "A five-minute end-of-day reflection is the simplest habit that separates professionals who grow continuously from those who repeat the same patterns indefinitely. Close every workday with intention; never just stop working.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      228.5,
+      198.9,
+      382.4,
+      215.6,
+      211.7
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I accomplished today:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      55.2,
+      384.3,
+      161.2,
+      401.0,
+      397.1
+     ],
+     [
+      83.2,
+      403.1,
+      133.1,
+      419.8,
+      415.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I didn't finish and why:",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      339.4,
+      457.0,
+      541.4,
+      473.7,
+      469.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I will prioritize first tomorrow:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      73.1,
+      457.7,
+      266.1,
+      474.5,
+      470.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My biggest lesson or insight today:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      98.2,
+      594.3,
+      300.1,
+      611.0,
+      607.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "One thing I can do better tomorrow:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      369.7,
+      597.2,
+      508.9,
+      614.5,
+      610.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Satisfaction score today:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      369.7,
+      655.9,
+      477.6,
+      673.2,
+      668.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Energy level today:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 24,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      58.7,
+      561.8,
+      116.9,
+      100.7
+     ]
+    ],
+    "rot": 0,
+    "size": 49.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "PROFESSIONAL DEVELOPMENT LOG",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.1,
+      114.3,
+      559.4,
+      131.0,
+      127.1
+     ],
+     [
+      63.9,
+      133.0,
+      542.6,
+      149.7,
+      145.8
+     ],
+     [
+      180.2,
+      151.8,
+      423.0,
+      168.5,
+      164.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Deliberate professional development — reading, courses, mentorship, experimentation — is what separates those who grow in their careers from those who plateau. Logging your development makes it real and measurable.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      78.9,
+      188.9,
+      214.1,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Book / Course / Activity",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      289.2,
+      188.9,
+      361.2,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Key Learning",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      433.6,
+      188.9,
+      483.0,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Applied?",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      509.9,
+      188.9,
+      545.6,
+      206.2,
+      201.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Rating",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 25,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      94.3,
+      55.8,
+      517.5,
+      123.4,
+      104.6
+     ]
+    ],
+    "rot": 0,
+    "size": 57.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MONTHLY WORK REVIEW",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      57.2,
+      115.8,
+      554.8,
+      132.5,
+      128.6
+     ],
+     [
+      63.6,
+      133.0,
+      548.5,
+      149.8,
+      145.9
+     ],
+     [
+      183.9,
+      150.3,
+      428.2,
+      167.0,
+      163.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "The monthly review is where daily habits and weekly progress crystallize into career-level insight. Taking 30 minutes at month's end to review patterns, celebrate wins, and reset direction compounds powerfully over years.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.9,
+      184.4,
+      270.9,
+      201.7,
+      197.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Top professional accomplishment this",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.9,
+      184.4,
+      521.1,
+      201.7,
+      197.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "Biggest challenge I faced and how I",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.9,
+      201.6,
+      97.5,
+      218.9,
+      214.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "month:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      322.9,
+      201.6,
+      383.9,
+      218.9,
+      214.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "handled it:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      56.8,
+      352.3,
+      218.3,
+      369.6,
+      365.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "Skill or habit I strengthened:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      324.7,
+      352.3,
+      533.0,
+      369.6,
+      365.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri-Bold",
+    "color": 16777215,
+    "flags": 20,
+    "text": "What I want to focus on next month:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.6,
+      508.9,
+      263.8,
+      525.7,
+      521.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "This month's overall productivity score:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.6,
+      539.7,
+      209.6,
+      556.4,
+      552.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Work-life balance this month:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      245.4,
+      539.7,
+      270.9,
+      556.4,
+      552.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Poor",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      311.6,
+      539.7,
+      332.1,
+      556.4,
+      552.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Fair",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      369.4,
+      539.7,
+      398.5,
+      556.4,
+      552.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Good",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      432.4,
+      539.7,
+      482.1,
+      556.4,
+      552.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Excellent",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      47.9,
+      585.4,
+      289.7,
+      602.1,
+      598.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "My biggest professional growth this month:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      331.0,
+      585.4,
+      540.9,
+      602.1,
+      598.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What I will do differently next month:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 26,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      67.6,
+      59.4,
+      544.2,
+      124.6,
+      106.5
+     ]
+    ],
+    "rot": 0,
+    "size": 55.0,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY WORKDAY COMMITMENTS",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      48.2,
+      117.5,
+      563.9,
+      134.2,
+      130.3
+     ],
+     [
+      47.7,
+      134.8,
+      561.1,
+      151.5,
+      147.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "A personal commitment to your workday structure is a professional contract with yourself — it defines the standard you are holding yourself to regardless of what the day throws at you.",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.4,
+      205.9,
+      276.4,
+      224.0,
+      219.4
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "I commit to starting each day with:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.4,
+      292.4,
+      357.7,
+      310.5,
+      305.9
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "I commit to protecting this time block every day:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.4,
+      379.0,
+      258.3,
+      397.0,
+      392.5
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "I commit to ending each day by:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.4,
+      465.5,
+      277.3,
+      483.5,
+      479.0
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "I commit to weekly planning every:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      70.4,
+      552.0,
+      288.8,
+      570.0,
+      565.5
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri-Bold",
+    "color": 0,
+    "flags": 20,
+    "text": "I commit to protecting my energy by:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      332.6,
+      638.1,
+      362.0,
+      654.9,
+      651.0
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Date:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      98.5,
+      641.0,
+      138.7,
+      657.7,
+      653.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Signed:",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 27,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.6,
+      59.7,
+      454.7,
+      124.1,
+      106.2
+     ]
+    ],
+    "rot": 0,
+    "size": 54.3,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "WEEKLY PLANNER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      79.3,
+      122.5,
+      532.2,
+      139.6,
+      135.6
+     ],
+     [
+      156.6,
+      141.0,
+      454.8,
+      158.1,
+      154.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "By planning your week, you can prioritize important tasks and maintain a balanced approach to achieving your objectives.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      155.1,
+      178.6,
+      202.7,
+      195.8,
+      191.8
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Monday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      416.1,
+      179.1,
+      464.6,
+      196.3,
+      192.3
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Tuesday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      144.6,
+      316.7,
+      213.2,
+      333.9,
+      329.9
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Wednesday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      413.8,
+      317.2,
+      468.0,
+      334.4,
+      330.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Thursday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      160.1,
+      455.3,
+      196.6,
+      472.4,
+      468.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Friday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      414.6,
+      455.3,
+      467.2,
+      472.4,
+      468.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Saturday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      157.6,
+      593.4,
+      200.2,
+      610.5,
+      606.5
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Sunday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      423.7,
+      592.9,
+      458.1,
+      610.1,
+      606.1
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.6,
+      742.1,
+      567.2,
+      756.4,
+      753.4
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 28,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      144.9,
+      65.1,
+      471.1,
+      130.6,
+      112.4
+     ]
+    ],
+    "rot": 0,
+    "size": 55.2,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MONTHLY PLANNER",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      78.3,
+      129.3,
+      537.8,
+      146.4,
+      142.4
+     ],
+     [
+      159.4,
+      147.3,
+      456.6,
+      164.4,
+      160.4
+     ]
+    ],
+    "rot": 0,
+    "size": 12.8,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "By planning your month, you can prioritize important tasks and maintain a balanced approach to achieving your objectives.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      68.8,
+      184.4,
+      109.5,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Sunday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      138.4,
+      184.4,
+      184.2,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Monday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      210.4,
+      184.4,
+      256.6,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Tuesday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      272.9,
+      184.4,
+      338.5,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Wednesday",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      352.1,
+      184.4,
+      403.7,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Thursday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      432.7,
+      184.4,
+      467.4,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Friday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      497.3,
+      184.4,
+      547.2,
+      201.6,
+      197.6
+     ]
+    ],
+    "rot": 0,
+    "size": 12.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Saturday",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      142.3,
+      563.4,
+      201.3,
+      580.1,
+      576.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Important",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      422.1,
+      563.4,
+      455.8,
+      580.1,
+      576.2
+     ]
+    ],
+    "rot": 0,
+    "size": 12.5,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Notes",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 29,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      145.1,
+      64.1,
+      465.3,
+      130.7,
+      112.2
+     ]
+    ],
+    "rot": 0,
+    "size": 56.2,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "FINAL REFLECTION",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      61.9,
+      129.9,
+      548.2,
+      148.5,
+      144.2
+     ],
+     [
+      198.9,
+      151.6,
+      407.1,
+      170.3,
+      165.9
+     ]
+    ],
+    "rot": 0,
+    "size": 13.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "As you wrap up your journey with this planner, it’s time to take a step back and reflect on your experiences.",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      99.1,
+      184.1,
+      511.4,
+      203.0,
+      198.6
+     ]
+    ],
+    "rot": 0,
+    "size": 14.1,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "How well did you follow your planned schedule or time blocks?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      157.5,
+      324.0,
+      453.4,
+      342.6,
+      338.3
+     ]
+    ],
+    "rot": 0,
+    "size": 13.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What helped you stay focused and organized?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      101.7,
+      464.8,
+      509.2,
+      483.4,
+      479.1
+     ]
+    ],
+    "rot": 0,
+    "size": 13.9,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "What is one thing you will do differently in your next workday?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      95.3,
+      598.2,
+      516.7,
+      617.4,
+      612.9
+     ]
+    ],
+    "rot": 0,
+    "size": 14.4,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "How can you make your workday smoother and more efficient?",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ },
+ {
+  "page": 30,
+  "units": [
+   {
+    "kind": "para",
+    "rects": [
+     [
+      44.8,
+      30.7,
+      201.5,
+      45.0,
+      42.0
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      131.7,
+      63.9,
+      480.3,
+      132.5,
+      113.5
+     ]
+    ],
+    "rot": 0,
+    "size": 57.9,
+    "font": "TanHarmoni-Regular",
+    "color": 0,
+    "flags": 4,
+    "text": "MY PLANNER NOTES",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      65.8,
+      131.3,
+      545.2,
+      148.7,
+      144.7
+     ],
+     [
+      135.9,
+      151.6,
+      475.2,
+      169.0,
+      164.9
+     ]
+    ],
+    "rot": 0,
+    "size": 13.0,
+    "font": "Calibri",
+    "color": 0,
+    "flags": 4,
+    "text": "Use this space to jot down any important reminders, new insights, or strategies you want to revisit. Feel free to write freely and openly!",
+    "align": "center"
+   },
+   {
+    "kind": "para",
+    "rects": [
+     [
+      410.5,
+      741.2,
+      567.2,
+      755.5,
+      752.5
+     ]
+    ],
+    "rot": 0,
+    "size": 11.0,
+    "font": "Calibri-Italic",
+    "color": 0,
+    "flags": 6,
+    "text": "DEEP FOCUS AT WORK PLANNER",
+    "align": "left"
+   }
+  ]
+ }
+]

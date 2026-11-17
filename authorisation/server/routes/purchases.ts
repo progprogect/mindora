@@ -31,9 +31,9 @@ function nodeReadableToWeb(stream: Readable): ReadableStream {
   })
 }
 
-function plannerPdfPath(plannerId: string): string | null {
-  const abs = path.resolve(PDF_DIR, `${plannerId}.pdf`)
-  const rel = relative(PDF_DIR, abs)
+function resolvePdf(dir: string, file: string): string | null {
+  const abs = path.resolve(dir, file)
+  const rel = relative(dir, abs)
   if (rel.startsWith('..') || rel.startsWith(`..${sep}`) || path.isAbsolute(rel)) return null
   if (!existsSync(abs)) return null
   try {
@@ -42,6 +42,16 @@ function plannerPdfPath(plannerId: string): string | null {
     return null
   }
   return abs
+}
+
+/** Russian files live in `pdfs/ru/<id>.pdf`; planners not translated yet fall back to the English PDF. */
+function plannerPdfPath(plannerId: string, locale: string): { abs: string; ru: boolean } | null {
+  if (locale === 'ru') {
+    const ru = resolvePdf(path.join(PDF_DIR, 'ru'), `${plannerId}.pdf`)
+    if (ru) return { abs: ru, ru: true }
+  }
+  const abs = resolvePdf(PDF_DIR, `${plannerId}.pdf`)
+  return abs ? { abs, ru: false } : null
 }
 
 export const purchaseRoutes = new Hono<SessionEnv>()
@@ -67,11 +77,12 @@ purchaseRoutes.get('/planners/download', requireAuth, async (c) => {
   if (!(await hasSku(c.get('userId'), `planner-${planner}`))) {
     return c.json({ error: 'Forbidden', code: 'forbidden' }, 403)
   }
-  const absPath = plannerPdfPath(planner)
-  if (!absPath) return c.json({ error: 'Not found', code: 'not_found' }, 404)
+  const file = plannerPdfPath(planner, c.req.query('locale') ?? 'en')
+  if (!file) return c.json({ error: 'Not found', code: 'not_found' }, 404)
+  const absPath = file.abs
   const stats = statSync(absPath)
   c.header('Content-Type', 'application/pdf')
-  c.header('Content-Disposition', `attachment; filename="${planner}.pdf"`)
+  c.header('Content-Disposition', `attachment; filename="${planner}${file.ru ? '.ru' : ''}.pdf"`)
   c.header('Content-Length', String(stats.size))
   c.header('Cache-Control', 'private, no-store')
   return c.body(nodeReadableToWeb(createReadStream(absPath)), 200)

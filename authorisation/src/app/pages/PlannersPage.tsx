@@ -195,7 +195,7 @@ export default function PlannersPage() {
                       <a
                         data-testid="planner-download"
                         data-planner-id={planner.id}
-                        href={`/api/planners/download?planner=${encodeURIComponent(planner.id)}`}
+                        href={`/api/planners/download?planner=${encodeURIComponent(planner.id)}&locale=${locale}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-3 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-sw-blue px-2 py-2 text-xs font-bold text-white sm:px-4"
