@@ -40,8 +40,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     и сумма списания в тексте согласия внизу (обязательно оставить: one-click списание с сохранённой карты).
   - Структура как у конкурента: компактная карточка товара → "What you get" → "Why it's worth it" → нижний блок с кнопкой и отказом.
   - Отказ (No thanks): на промптах и планерах — сразу на следующий шаг, без даунсела.
-    Даунсел только один — поп-ап на последнем апсейле (coach, $12.95): «Continue» → charge state=downsell, «No thanks» → онбординг.
-  - Кнопка "Continue" → POST /api/funnel/charge {token, product, state} → PaymentIntent off_session, confirm:true,
+    Даунсел только один — поп-ап на последнем апсейле (coach, $14.95): «Add to order» → charge state=downsell, «No thanks» → онбординг.
+  - Кнопка "Add to order" (RU: «Продолжить») → POST /api/funnel/charge {token, product, state} → PaymentIntent off_session, confirm:true,
     idempotency_key = token+product+state. 3DS: stripe.handleNextAction.
   - Если продукт уже есть у пользователя — сразу редирект на next.
   - preview:true — только для просмотра без бэкенда (кнопки просто ведут дальше).
@@ -240,14 +240,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div></div>
 <div class="alert" id="alert"></div>
 <main class="wrap" id="app"></main>
-<div class="sticky"><button class="btn" data-buy>Continue →</button></div>
+<div class="sticky"><button class="btn" data-buy>Add to order →</button></div>
 <div class="modal" id="ds" role="dialog" aria-modal="true" aria-labelledby="ds-h">
   <div class="box">
     <span class="tag"></span>
     <h3 id="ds-h"></h3>
     <p class="lead"></p>
     <div class="pr"></div>
-    <button class="btn" data-buy>Continue →</button>
+    <button class="btn" data-buy>Add to order →</button>
     <p class="t"></p>
     <p class="err" role="alert"></p>
     <button class="no" id="ds-no">No thanks</button>
@@ -280,11 +280,11 @@ const OFFERS = {
       ['🦉','Mindora AI coach','Your personal coach inside Mindora Academy · Forever'],
       ['🎯','Action plan after every lesson','15-minute task built around your goal'],
       ['🔥','Daily accountability','Keeps your streak alive when motivation dips']],
-    offer:{was:'29.95', price:'19.95', alert:'One-time offer for new members — only on this page.',
+    offer:{was:'57.90', price:'28.95', alert:'One-time offer for new members — only on this page.',
       badge:'🎁 One-time offer', h1:'Wait! Add a personal AI coach in one click',
       sub:'Mindora turns every lesson into a plan you actually follow. One charge to your saved card — no need to enter details again.'},
-    downsell:{was:'19.95', price:'12.95', alert:'Last chance — the lowest price for the coach.',
-      badge:'⚡ Discounted offer', h1:'Still want a coach? Get Mindora for $12.95',
+    downsell:{was:'28.95', price:'14.95', alert:'Last chance — the lowest price for the coach.',
+      badge:'⚡ Discounted offer', h1:'Still want a coach? Get Mindora for $14.95',
       sub:'The same personal AI coach at the lowest price you\'ll see. One charge to your saved card.'},
     gets:[
       ['Personal coaching','Knows your lessons','Mindora remembers what you\'ve learned and what you\'re aiming for, so its advice fits you, not everyone.'],
@@ -307,7 +307,7 @@ const OFFERS = {
       ['🔎','28,000+ prompt library','Searchable online library · Forever'],
       ['📕','7 expert PDF prompt guides','Side hustle, content, sales, launch & more · Forever'],
       ['✍️','Frameworks & content templates','Emails, posts, ads, planning · Forever']],
-    offer:{was:'39.95', price:'9.97', alert:'New-member price — only on this page.',
+    offer:{was:'39.95', price:'14.97', alert:'New-member price — only on this page.',
       badge:'🎁 One-time offer', h1:'You\'ve got 1,000 prompts. Add the other 27,000',
       sub:'The full library and 7 PDF guides. One charge to your saved card — no need to enter details again.'},
     
@@ -330,15 +330,15 @@ const OFFERS = {
       ['🎯','Productivity & Focus','4 printable planners · Forever'],
       ['🧭','Purpose & Direction','3 printable planners · Forever'],
       ['🌱','Personal Growth + Money Habits','3 printable planners · Forever']],
-    offer:{was:'29.50', price:'4.95', alert:'New-member bundle — only on this page.',
-      badge:'🎁 One-time offer', h1:(window.FUNNEL && FUNNEL.accountLast) ? '10 planners are better than two' : 'Add all 10 planners for less than two',
+    offer:{was:'29.50', price:'8.95', alert:'New-member bundle — only on this page.',
+      badge:'🎁 One-time offer', h1:(window.FUNNEL && FUNNEL.accountLast) ? '10 planners are better than four' : 'Add all 10 planners for $8.95',
       sub:'289 printable pages to plan your days, beat procrastination and turn goals into action. One charge to your saved card.'},
     
     gets:[
       ['Productivity & Focus','4 planners','Let\'s Get Productive, Deep Focus at Work, Distraction Free and Overcoming Lazy Days.'],
       ['Purpose & Direction','3 planners','Dream Bigger, Live With Purpose and the Find Your Passion Workbook.'],
       ['Personal Growth & Money','3 planners','Personal Growth Planner, Self Reflection Journal and Financial Discipline Planner.']],
-    extra:`<div class="cmp"><div><small>Buy 2 later</small><s>$5.90</s><span>for 2 planners</span></div><em>vs</em><div class="good"><small>All 10 now</small><b>$__P__</b><span>for 10 planners</span></div></div>
+    extra:`<div class="cmp"><div><small>Buy 4 later</small><s>$11.80</s><span>for 4 planners</span></div><em>vs</em><div class="good"><small>All 10 now</small><b>$__P__</b><span>for 10 planners</span></div></div>
       <h2>10 practical planners</h2>
       <div class="pgrid">
         <figure><img src="/funnel-assets/p-productive.jpg" alt=""><figcaption>Let's Get Productive<span>29 pages</span></figcaption></figure>
@@ -413,10 +413,10 @@ function render(){
     <div class="why"><b>Why it's worth it</b><ul>${O.why.map(w => `<li>${w}</li>`).join('')}</ul></div>
     <div class="bottom" id="bottom">
       <div class="pay"><span>stripe</span><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>G Pay</span></div>
-      <div style="margin-top:16px"><button class="btn" data-buy>Continue →</button></div>
+      <div style="margin-top:16px"><button class="btn" data-buy>Add to order →</button></div>
       <p class="err" role="alert"></p>
       <button class="no" data-no>No thanks</button>
-      ${ACCOUNT_LAST ? `<div class="consent agreebox" id="agreebox"><label class="ck"><input type="checkbox" id="agree" checked><span>By clicking "Continue", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a>, <a href="/refund">Refund Policy</a> and <a href="/cookies">Cookie Policy</a>.</span></label></div>` : ''}
+      ${ACCOUNT_LAST ? `<div class="consent agreebox" id="agreebox"><label class="ck"><input type="checkbox" id="agree" checked><span>By clicking "Add to order", I confirm that I have read and accept the <a href="/terms">Terms of Use</a>, <a href="/privacy">Privacy Policy</a>, <a href="/refund">Refund Policy</a> and <a href="/cookies">Cookie Policy</a>.</span></label></div>` : ''}
     </div>
     <div class="consent">
       <p class="prov"><b>Service provider:</b> Scalion Ltd · Company No. 17157142 · 50 Princes Street, Ipswich, Suffolk, IP1 1RJ, United Kingdom · <a href="mailto:support@mindoraacademy.com">support@mindoraacademy.com</a></p>
@@ -516,6 +516,6 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElement
 if (openPopup) showPopup();
 </script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="/funnel-assets/i18n.js?v=8"></script>
+<script src="/funnel-assets/i18n.js?v=9"></script>
 </body>
 </html>

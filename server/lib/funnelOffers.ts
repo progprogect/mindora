@@ -28,18 +28,18 @@ const UPSELL_BY_PRODUCT: Record<
   mindora_coach: {
     offerSlug: 'mindora-ai-coach',
     checkoutName: 'Mindora AI Coach',
-    offerCents: 1995,
-    downsellCents: 1295,
+    offerCents: 2895,
+    downsellCents: 1495,
   },
   prompt_library: {
     offerSlug: 'ultimate-prompt-library-oto',
     checkoutName: 'Prompt Library',
-    offerCents: 997,
+    offerCents: 1497,
   },
   planners_bundle: {
     offerSlug: 'planner-bundle',
     checkoutName: 'All 10 planners',
-    offerCents: 495,
+    offerCents: 895,
   },
 }
 

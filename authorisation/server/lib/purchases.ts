@@ -87,7 +87,7 @@ export function offerSlugsForLookup(offerSlug: string): string[] {
 export function offerAmountCents(offerSlug: string): number | null {
   if (isKitSku(offerSlug)) return 100
   if (offerSlug === 'planner-bundle') return 495
-  if (offerSlug === 'planner-bundle-library') return 795
+  if (offerSlug === 'planner-bundle-library') return 1180
   if (offerSlug === 'ultimate-prompt-library-oto') return 997
   if (offerSlug === 'ultimate-prompt-library') return 1995
   if (isCoachOffer(offerSlug)) return 1995

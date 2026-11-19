@@ -16,7 +16,7 @@ import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 const OFFER = 'ultimate-prompt-library-oto'
 const PRICE = 9.97
-const WAS = 39.95
+const WAS = 19.95
 const NEXT = '/account/upgrade-planners'
 const PROMPTS = '28,000+'
 

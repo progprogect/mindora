@@ -16,7 +16,7 @@ import { withLocale, localeFromPathname } from '@/i18n/locale'
 
 const OFFER = COACH_OFFER_SLUG
 const PRICE = 19.95
-const WAS = 29.95
+const WAS = 28.95
 const NEXT = '/account/onboard'
 
 function UnauthRedirect() {

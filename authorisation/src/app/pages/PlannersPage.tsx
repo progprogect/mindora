@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
+  PLANNER_BUNDLE_CENTS,
   PLANNER_COUNT,
   PLANNER_LIST_CENTS,
   PLANNER_SINGLE_CENTS,
@@ -108,9 +109,9 @@ export default function PlannersPage() {
                 <p className="text-[11px] font-bold uppercase tracking-wide text-sw-blue">
                   {t('app.planners.allTogether').replace('{n}', String(PLANNER_COUNT))}
                 </p>
-                <p className="mt-1 text-lg font-extrabold text-sw-dark sm:text-xl">$7.95</p>
+                <p className="mt-1 text-lg font-extrabold text-sw-dark sm:text-xl">{money(PLANNER_BUNDLE_CENTS)}</p>
                 <p className="mt-1 text-xs font-bold leading-snug text-sw-dark">
-                  {t('app.planners.save').replace('{amount}', money(PLANNER_LIST_CENTS - 795))}
+                  {t('app.planners.save').replace('{amount}', money(PLANNER_LIST_CENTS - PLANNER_BUNDLE_CENTS))}
                 </p>
               </div>
             </div>

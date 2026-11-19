@@ -13,6 +13,7 @@ export const PLANNER_CATEGORIES = catalog.categories
 export const PLANNER_COUNT = catalog.planners.length
 export const PLANNER_PAGES = catalog.totalPdfPages
 export const PLANNER_OTO_CENTS = catalog.bundleOtoPriceCents
+export const PLANNER_BUNDLE_CENTS = catalog.bundlePriceCents
 export const PLANNER_LIST_CENTS = catalog.listValueCents
 export const PLANNER_SINGLE_CENTS = catalog.singlePriceCents
 export const PLANNER_BUNDLE_SLUG = catalog.bundleSlug

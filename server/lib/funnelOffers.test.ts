@@ -10,13 +10,13 @@ import {
 
 describe('resolveFunnelUpsell', () => {
   it('prices every offer on the server', () => {
-    assert.equal(resolveFunnelUpsell('prompt_library', 'offer')?.amountCents, 997)
-    assert.equal(resolveFunnelUpsell('planners_bundle', 'offer')?.amountCents, 495)
-    assert.equal(resolveFunnelUpsell('mindora_coach', 'offer')?.amountCents, 1995)
+    assert.equal(resolveFunnelUpsell('prompt_library', 'offer')?.amountCents, 1497)
+    assert.equal(resolveFunnelUpsell('planners_bundle', 'offer')?.amountCents, 895)
+    assert.equal(resolveFunnelUpsell('mindora_coach', 'offer')?.amountCents, 2895)
   })
 
-  it('only the coach has a downsell ($12.95)', () => {
-    assert.equal(resolveFunnelUpsell('mindora_coach', 'downsell')?.amountCents, 1295)
+  it('only the coach has a downsell ($14.95)', () => {
+    assert.equal(resolveFunnelUpsell('mindora_coach', 'downsell')?.amountCents, 1495)
     assert.equal(resolveFunnelUpsell('prompt_library', 'downsell'), null)
     assert.equal(resolveFunnelUpsell('planners_bundle', 'downsell'), null)
   })
