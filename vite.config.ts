@@ -169,6 +169,8 @@ export default defineConfig({
       '/account/membership': { target: 'http://localhost:3000', changeOrigin: true },
       '/account/upsell': { target: 'http://localhost:3000', changeOrigin: true },
       '/dev/funnel-enter': { target: 'http://localhost:3000', changeOrigin: true },
+      '/ru/dev/funnel-enter': { target: 'http://localhost:3000', changeOrigin: true },
+      '/en/dev/funnel-enter': { target: 'http://localhost:3000', changeOrigin: true },
     },
   },
 })
